@@ -18,3 +18,7 @@ Where:
 
 - [TypeScript](../../packages/concepts/src/compoundInterest.ts)
 - [Tests](../../packages/concepts/tests/compoundInterest.test.ts)
+
+## Source
+
+- [Compound Interest](../sources/compound-interest.md)

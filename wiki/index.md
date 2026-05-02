@@ -1,6 +1,7 @@
 # Index
 
 ## Sources
+- [Compound Interest](sources/compound-interest.md)
 
 ## Concepts
 - [Compound Interest](concepts/compound-interest.md)

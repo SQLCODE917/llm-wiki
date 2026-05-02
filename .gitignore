@@ -2,7 +2,16 @@ node_modules/
 .venv/
 .env
 dist/
-raw/inbox/*
-raw/normalized/*
 __pycache__/
 *.pyc
+
+# raw pipeline (ignore contents, keep dirs)
+raw/inbox/*
+raw/imported/*
+raw/normalized/*
+raw/assets/*
+
+!raw/inbox/.keep
+!raw/imported/.keep
+!raw/normalized/.keep
+!raw/assets/.keep

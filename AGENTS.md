@@ -27,6 +27,14 @@ Never modify files under `/raw/imported`.
 8. Before finishing any code change, run:
    - `pnpm code:typecheck`
    - `pnpm code:test`
+9. Every source page must include:
+   - YAML frontmatter with `source_id`, `source_type`, `raw_path`, `normalized_path`, and `status`
+   - Summary
+   - Key claims
+   - Concepts
+   - Entities
+   - Open questions
+   - Related pages
 
 ## Query workflow
 1. Read `wiki/index.md` first.
