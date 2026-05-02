@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+.env
+dist/
+raw/inbox/*
+raw/normalized/*
+__pycache__/
+*.pyc

@@ -1,0 +1,10 @@
+{
+  "name": "llm-wiki",
+  "private": true,
+  "packageManager": "pnpm@10.33.2",
+  "scripts": {
+    "code:test": "pnpm --filter @llm-wiki/concepts test",
+    "code:typecheck": "pnpm --filter @llm-wiki/concepts typecheck",
+    "code:dev": "pnpm --filter @llm-wiki/concepts dev"
+  }
+}
