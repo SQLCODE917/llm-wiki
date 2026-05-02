@@ -68,6 +68,14 @@ Use these page types in YAML frontmatter:
 - `reference` — tables, formulas, constants, lookup facts
 - `analysis` — durable answer to a user question
 
+Special operational files are not content pages and do not require page-type frontmatter:
+
+- `wiki/index.md`
+- `wiki/log.md`
+- `wiki/_graph.json`
+- `wiki/_linter-report.md`
+- `wiki/_grounding-report.md`
+
 ---
 
 ## Required frontmatter
@@ -129,6 +137,21 @@ Every page in `wiki/sources/` must include:
 
 If a section has no content, write `None.` or `not covered in sources`.
 
+During ingest phase 1, synthesized pages usually do not exist yet. In that case, `## Related pages`
+must list candidate future pages as code-formatted intended paths in a table, not Markdown links.
+This records the planned graph without creating broken links.
+
+Example:
+
+```md
+| Candidate page | Intended path | Status |
+|---|---|---|
+| AoE2 Economy Balance | `../concepts/aoe2-economy-balance.md` | not created yet |
+```
+
+After the synthesized pages are created in phase 2, replace relevant candidate rows with real Markdown
+links to pages that exist.
+
 ---
 
 ## Concept/entity/procedure/reference page format
@@ -164,7 +187,8 @@ Use relative paths.
 
 Every synthesized page should link back to at least one source page.
 
-Every source page should link outward to the concept/entity/procedure/reference pages it produced or updated.
+Every source page should link outward to the concept/entity/procedure/reference pages it produced or updated
+once those pages exist. Before they exist, use the phase-1 candidate table described in Source page format.
 
 Avoid orphan pages.
 
@@ -174,7 +198,23 @@ Avoid orphan pages.
 
 Maintain `wiki/_graph.json`.
 
-Every wiki page should have one node.
+Every content page under `wiki/sources/`, `wiki/concepts/`, `wiki/entities/`, `wiki/procedures/`,
+`wiki/references/`, and `wiki/analyses/` should have one node.
+
+Prefer generating `_graph.json` with:
+
+```bash
+pnpm wiki:graph
+```
+
+Use this check before finishing graph-related work:
+
+```bash
+pnpm wiki:graph:check
+```
+
+Do not hand-edit `_graph.json` unless the generator cannot represent a needed relationship. If that happens,
+append a `schema-change` or `todo` entry to `wiki/log.md`.
 
 Minimum structure:
 
@@ -183,10 +223,11 @@ Minimum structure:
   "_meta": {
     "domain": "llm-wiki",
     "version": "0.1.0",
-    "updated": "YYYY-MM-DD"
+    "updated": "YYYY-MM-DD",
+    "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
-    "wiki:<slug>": {
+    "wiki:<dir>/<slug>": {
       "type": "source | entity | concept | procedure | reference | analysis",
       "path": "wiki/<dir>/<slug>.md",
       "description": "one-line summary",
@@ -197,7 +238,8 @@ Minimum structure:
 }
 ```
 
-Update `_graph.json` on every ingest, query filing, or lint cleanup that changes wiki structure.
+Update `_graph.json` on every ingest, query filing, or lint cleanup that changes wiki structure by running
+`pnpm wiki:graph`.
 
 ---
 
@@ -205,23 +247,61 @@ Update `_graph.json` on every ingest, query filing, or lint cleanup that changes
 
 Use this workflow for each new source.
 
+Local models must ingest in bounded phases. Do not ask a local model to perform all phases in one prompt.
+
+### Phase 0: normalize source
+
 1. If the source is a PDF, convert it to markdown from `raw/inbox/` into `raw/normalized/`.
 2. If the source is markdown, preserve the original in `raw/imported/` and work from `raw/normalized/`.
-3. Read the normalized source.
-4. Create or update `wiki/sources/<slug>.md`.
-5. Extract key claims.
-6. Identify major concepts, entities, procedures, and references.
-7. Create or update synthesized pages:
+3. Do not edit `raw/imported/`.
+
+### Phase 1: source page only
+
+1. Read the normalized source.
+2. Create or update `wiki/sources/<slug>.md`.
+3. Extract gameplay/content/domain claims, not just document metadata.
+4. Identify candidate concepts, entities, procedures, and references.
+5. List candidate future pages in `## Related pages` as code-formatted paths in a table.
+6. Do not create synthesized pages yet.
+7. Do not update `wiki/index.md`, `wiki/log.md`, or `_graph.json` in this phase unless explicitly asked.
+8. Validate the source page:
+
+```bash
+pnpm wiki:check-source <slug>
+```
+
+### Phase 2: synthesized pages
+
+1. Use the source page and normalized source as needed.
+2. Create or update synthesized pages:
    - `wiki/concepts/`
    - `wiki/entities/`
    - `wiki/procedures/`
    - `wiki/references/`
-8. Update cross-links between source and synthesized pages.
-9. Update `wiki/index.md`.
-10. Update `wiki/_graph.json`.
-11. Append one entry to `wiki/log.md`.
-12. If the source implies an executable concept, add or update TypeScript code and tests.
-13. Before finishing any code change, run:
+3. Each synthesized page must link back to at least one source page.
+4. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
+5. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
+6. Validate synthesized pages:
+
+```bash
+pnpm wiki:check-synthesis <slug>
+pnpm wiki:grounding
+```
+
+### Phase 3: navigation, graph, and log
+
+1. Update `wiki/index.md`.
+2. Run `pnpm wiki:graph`.
+3. Append one `ingest` entry to `wiki/log.md`.
+4. Run `pnpm wiki:lint` and address FAILs.
+
+### Phase 4: executable concepts
+
+If the source implies an executable concept:
+
+1. Add or update TypeScript code and tests.
+2. Link the wiki concept page to the implementation and tests.
+3. Before finishing any code change, run:
    - `pnpm code:typecheck`
    - `pnpm code:test`
 
@@ -249,7 +329,7 @@ A source page alone is not enough unless the source is tiny.
 
 Local models may stall or drift if given a large task.
 
-Prefer bounded phases:
+Use bounded phases:
 
 1. Create source page only.
 2. Extract concept/entity/procedure/reference candidates.
@@ -262,6 +342,36 @@ Prefer bounded phases:
 If the model stalls, narrow the task to one file or one phase.
 
 Do not keep planning forever. Write files.
+
+Prompts to local models should include:
+
+- exact files allowed to change
+- exact files forbidden to change
+- the validation command to run
+- a requirement to fix and rerun validation if it fails
+
+Prefer deterministic checks over long prose reminders:
+
+```bash
+pnpm wiki:check-source <slug>
+pnpm wiki:check-synthesis <slug>
+pnpm wiki:phase1-benchmark <slug>
+pnpm wiki:index
+pnpm wiki:index:check
+pnpm wiki:graph
+pnpm wiki:graph:check
+pnpm wiki:grounding
+pnpm wiki:lint
+```
+
+For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
+`tools/prompts/phase1-source-repair.md`. To compare candidates in disposable worktrees, run:
+
+```bash
+pnpm wiki:phase1-benchmark <slug> --candidate local-4090
+```
+
+If a local model ignores failed validation, stop the run and narrow the next prompt to the first failing check.
 
 ---
 
@@ -282,6 +392,12 @@ Do not keep planning forever. Write files.
 ## Lint workflow
 
 Run lint when asked, after major ingests, or before cleanup commits.
+
+Use the deterministic linter first:
+
+```bash
+pnpm wiki:lint
+```
 
 Check:
 
@@ -311,6 +427,13 @@ Append a lint entry to:
 wiki/log.md
 ```
 
+The linter writes `wiki/_linter-report.md`. If you are performing an actual lint operation rather than
+a quick local check, append the log entry after reviewing the report. For scheduled linting, run:
+
+```bash
+pnpm wiki:lint:log
+```
+
 Suggested log format:
 
 ```md
@@ -329,6 +452,12 @@ Suggested log format:
 ## Log format
 
 `wiki/log.md` is append-only.
+
+Prefer appending formatted entries with:
+
+```bash
+pnpm wiki:log <operation> "<short summary>" -d "<detail>"
+```
 
 Use this format:
 
@@ -395,9 +524,37 @@ If two sources disagree on an important factual, quantitative, or procedural cla
 
 ---
 
+## Grounding rules
+
+Run the grounding check after source repair, synthesis, or cleanup work that changes wiki content:
+
+```bash
+pnpm wiki:grounding
+```
+
+Source pages should keep key claims close to the normalized source vocabulary. Synthesized pages must include
+at least one source page in frontmatter `sources` and link to at least one source page in the body.
+
+`wiki/_grounding-report.md` records the latest grounding check. A lexical grounding pass is not proof of truth;
+it is a guardrail for catching unsupported-looking claims before the wiki grows around them.
+
+---
+
 ## Index rules
 
 `wiki/index.md` is the content catalog.
+
+Prefer generating `wiki/index.md` with:
+
+```bash
+pnpm wiki:index
+```
+
+Use this check before finishing index-related work:
+
+```bash
+pnpm wiki:index:check
+```
 
 Organize by type:
 
@@ -415,7 +572,7 @@ Each entry should include:
 - [Page title](relative/path.md) — one-line description
 ```
 
-Update it on every ingest, query filing, lint cleanup, or page rename.
+Update it on every ingest, query filing, lint cleanup, or page rename by running `pnpm wiki:index`.
 
 Never let it go stale.
 

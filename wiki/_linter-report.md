@@ -1,12 +1,17 @@
----
-title: Linter Report
-type: analysis
-tags: [lint, wiki-health]
-status: draft
-last_updated: 2026-05-02
-sources: []
----
+# Wiki Linter Report
 
-# Linter Report
+Generated: 2026-05-02
 
-No lint pass has been run yet.
+## Summary
+
+- PASS: 0
+- WARN: 1
+- FAIL: 0
+
+## FAIL
+
+None.
+
+## WARN
+
+- `wiki/sources/aoe2-basics.md` — Related pages lists candidate paths not created yet

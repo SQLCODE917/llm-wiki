@@ -15,3 +15,6 @@ raw/assets/*
 !raw/imported/.keep
 !raw/normalized/.keep
 !raw/assets/.keep
+
+Handoff.md
+Example_AGENTS.md

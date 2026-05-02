@@ -2,7 +2,40 @@
   "_meta": {
     "domain": "llm-wiki",
     "version": "0.1.0",
-    "updated": "2026-05-02"
+    "updated": "2026-05-02",
+    "generated_by": "tools/wiki_graph.py"
   },
-  "nodes": {}
+  "nodes": {
+    "wiki:concepts/compound-interest": {
+      "type": "concept",
+      "path": "wiki/concepts/compound-interest.md",
+      "description": "Compound interest is interest calculated on a principal amount after previous interest has been added back into that principal.",
+      "sources": [
+        "../sources/compound-interest.md"
+      ],
+      "depends_on": [
+        "wiki:sources/compound-interest"
+      ]
+    },
+    "wiki:sources/aoe2-basics": {
+      "type": "source",
+      "path": "wiki/sources/aoe2-basics.md",
+      "description": "This document is an organized arrangement of gameplay concepts simplified and explained out. It is categorized and each category will be written in order from most important to th\u2026",
+      "sources": [
+        "../../raw/imported/aoe2-basics/original.pdf"
+      ],
+      "depends_on": []
+    },
+    "wiki:sources/compound-interest": {
+      "type": "source",
+      "path": "wiki/sources/compound-interest.md",
+      "description": "This short source defines compound interest as interest added to principal so that future interest is calculated on the updated total. It also gives the standard compound interest\u2026",
+      "sources": [
+        "../../raw/imported/compound-interest/original.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/compound-interest"
+      ]
+    }
+  }
 }

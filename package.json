@@ -5,6 +5,17 @@
   "scripts": {
     "code:test": "pnpm --filter @llm-wiki/concepts test",
     "code:typecheck": "pnpm --filter @llm-wiki/concepts typecheck",
-    "code:dev": "pnpm --filter @llm-wiki/concepts dev"
+    "code:dev": "pnpm --filter @llm-wiki/concepts dev",
+    "wiki:check-source": "python3 tools/wiki_check_source.py",
+    "wiki:check-synthesis": "python3 tools/wiki_check_synthesis.py",
+    "wiki:phase1-benchmark": "python3 tools/wiki_phase1_benchmark.py",
+    "wiki:index": "python3 tools/wiki_index.py",
+    "wiki:index:check": "python3 tools/wiki_index.py --check",
+    "wiki:log": "python3 tools/wiki_log.py",
+    "wiki:graph": "python3 tools/wiki_graph.py",
+    "wiki:graph:check": "python3 tools/wiki_graph.py --check",
+    "wiki:grounding": "python3 tools/wiki_grounding.py",
+    "wiki:lint": "python3 tools/wiki_lint.py",
+    "wiki:lint:log": "python3 tools/wiki_lint.py --append-log"
   }
 }
