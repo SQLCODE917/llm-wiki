@@ -27,7 +27,7 @@ None.
 
 ## References
 
-None.
+- [AoE2 Economy Upgrades](references/aoe2-economy-upgrades.md) — This reference page lists economy-upgrade facts from the AoE2 basics guide.
 
 ## Analyses
 

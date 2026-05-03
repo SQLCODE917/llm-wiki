@@ -88,7 +88,23 @@ def snippets_for_candidate(candidate: str, chunks: list[SourceChunk], limit: int
 
 
 def candidate_tokens(candidate: str) -> set[str]:
-    ignored = {"aoe2", "wiki", "concept", "concepts", "entity", "entities", "procedure", "procedures", "reference", "references", "md"}
+    ignored = {
+        "aoe2",
+        "wiki",
+        "concept",
+        "concepts",
+        "entity",
+        "entities",
+        "procedure",
+        "procedures",
+        "reference",
+        "references",
+        "upgrade",
+        "upgrades",
+        "page",
+        "pages",
+        "md",
+    }
     tokens: set[str] = set()
     for raw in re.findall(r"[A-Za-z][A-Za-z0-9']*", candidate.replace("-", " ").lower()):
         token = raw.strip("'")

@@ -126,7 +126,7 @@ def run_single_candidate(
     selected_paths = [selected_candidate.path]
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
-    evidence_bank = build_evidence_bank(worktree, normalized_source, selected_paths)
+    evidence_bank = build_evidence_bank(worktree, normalized_source, [selected_candidate])
     selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),

@@ -104,8 +104,8 @@ Team coordination - This involves working with allies in team games.
 | AoE2 Team Play Strategies | [../concepts/aoe2-team-play-strategies.md](../concepts/aoe2-team-play-strategies.md) | Map and team contexts | must create | gold units, early trade, team aggression, coordination, slinging | created |
 | AoE2 Opening Interactions | [../concepts/aoe2-opening-interactions.md](../concepts/aoe2-opening-interactions.md) | Strategic synthesis | must create | early-game responses, openings, and interaction timing | created |
 | AoE2 Lanchester's Law | [../concepts/aoe2-lanchesters-law.md](../concepts/aoe2-lanchesters-law.md) | Core fundamentals | must create | army-size effectiveness and fight-taking implications | created |
-| AoE2 Economy Upgrades | `../references/aoe2-economy-upgrades.md` | Common edges | should create | gold mining, stone mining, farming, and resource production rates | not created yet |
-| AoE2 Military Upgrades | `../references/aoe2-military-upgrades.md` | Common edges | should create | sword upgrades, archer upgrades, and combat effectiveness | not created yet |
+| AoE2 Economy Upgrades | [../references/aoe2-economy-upgrades.md](../references/aoe2-economy-upgrades.md) | Common edges | should create | economy upgrade timing, lumbercamp and farm upgrades, wheelbarrow, handcart, and mining-camp upgrade timing | created |
+| AoE2 Military Upgrades | `../references/aoe2-military-upgrades.md` | Common edges | should create | archer-to-crossbow timing, bodkin, knight armor upgrades, damage reduction, and longsword tech | not created yet |
 | AoE2 Scouting Techniques | `../procedures/aoe2-scouting-techniques.md` | Foundation | should create | scouting enemy openings, army movement, and resource exposure | not created yet |
 | AoE2 Resource Management | `../concepts/aoe2-resource-management.md` | Core fundamentals | should create | resource allocation, villager production, economy balance, and spending | not created yet |
 | AoE2 Game Plans | `../procedures/aoe2-game-plans.md` | Strategic synthesis | should create | game plans, decision making, timings, and fitting elements together | not created yet |

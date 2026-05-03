@@ -105,6 +105,17 @@
         "wiki:sources/compound-interest"
       ]
     },
+    "wiki:references/aoe2-economy-upgrades": {
+      "type": "reference",
+      "path": "wiki/references/aoe2-economy-upgrades.md",
+      "description": "This reference page lists economy-upgrade facts from the AoE2 basics guide.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:sources/aoe2-basics": {
       "type": "source",
       "path": "wiki/sources/aoe2-basics.md",
@@ -120,7 +131,8 @@
         "wiki:concepts/aoe2-map-awareness",
         "wiki:concepts/aoe2-opening-interactions",
         "wiki:concepts/aoe2-team-play-strategies",
-        "wiki:concepts/aoe2-unit-counter-interactions"
+        "wiki:concepts/aoe2-unit-counter-interactions",
+        "wiki:references/aoe2-economy-upgrades"
       ]
     },
     "wiki:sources/compound-interest": {

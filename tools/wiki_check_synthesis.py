@@ -403,6 +403,9 @@ def check_evidence_table(
             failures.append(f"{page}: evidence row {index} claim is too short")
         if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
             failures.append(f"{page}: evidence row {index} uses weak generic claim language")
+        repeated = repeated_phrase(strip_markdown(claim))
+        if repeated:
+            failures.append(f"{page}: evidence row {index} repeats phrase {repeated!r}")
 
         excerpt = clean_evidence_excerpt(evidence)
         claim_norm = normalize_for_search(strip_markdown(claim))
@@ -507,11 +510,15 @@ def check_reference_data_table(
             for index, cell in enumerate(row)
             if index not in {evidence_index, locator_index, source_index}
         )
+        supported_fact_text = supported_fact_cell_text(header, row, evidence_index, locator_index, source_index)
         evidence = clean_evidence_excerpt(row[evidence_index])
         locator = row[locator_index]
         if any(re.search(pattern, fact_text, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
             failures.append(f"{page}: Reference data row {row_number} uses weak generic fact language")
-        fact_norm = normalize_for_search(fact_text)
+        repeated = repeated_phrase(fact_text)
+        if repeated:
+            failures.append(f"{page}: Reference data row {row_number} repeats phrase {repeated!r}")
+        fact_norm = normalize_for_search(supported_fact_text or fact_text)
         evidence_norm = normalize_for_search(evidence)
         if fact_norm in seen_facts:
             failures.append(
@@ -544,6 +551,41 @@ def check_reference_data_table(
                 f"{page}: Reference data row {row_number} likely overreaches evidence; unsupported terms: {', '.join(unsupported[:10])}"
             )
     return failures
+
+
+def supported_fact_cell_text(
+    header: list[str],
+    row: list[str],
+    evidence_index: int,
+    locator_index: int,
+    source_index: int | None,
+) -> str:
+    preferred = {"supported fact", "fact", "claim", "value", "description"}
+    ignored = {evidence_index, locator_index}
+    if source_index is not None:
+        ignored.add(source_index)
+    for index, name in enumerate(header):
+        if index not in ignored and name in preferred:
+            return strip_markdown(row[index]).strip()
+    return " ".join(strip_markdown(cell).strip() for index, cell in enumerate(row) if index not in ignored)
+
+
+def repeated_phrase(text: str) -> str | None:
+    words = [word.lower() for word in re.findall(r"[A-Za-z0-9']+", text)]
+    if len(words) < 6:
+        return None
+    for size in range(6, 1, -1):
+        counts: dict[tuple[str, ...], int] = {}
+        for index in range(0, len(words) - size + 1):
+            phrase = tuple(words[index : index + size])
+            counts[phrase] = counts.get(phrase, 0) + 1
+            if counts[phrase] >= 3:
+                return " ".join(phrase)
+    comma_parts = [normalize_for_search(part) for part in re.split(r"[,;]", text) if len(content_tokens(part)) >= 2]
+    for part in comma_parts:
+        if comma_parts.count(part) >= 3:
+            return part
+    return None
 
 
 def table_data_row_count(markdown: str) -> int:

@@ -468,6 +468,7 @@ pnpm wiki:grounding
 pnpm wiki:grounding:check
 pnpm wiki:judge-claims <page> --normalized-source <path> --candidate local-4090
 pnpm wiki:claim-hints <page> --normalized-source <path>
+pnpm wiki:repair-reference <page> --normalized-source <path>
 pnpm wiki:query "question" --plan-only
 pnpm wiki:fix-links <slug>
 pnpm wiki:normalize-ascii <slug>

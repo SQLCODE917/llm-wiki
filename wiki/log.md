@@ -85,3 +85,21 @@
 - AoE2 economy-upgrades trial showed qwen3-coder still struggles with weak repeated reference facts; do not adopt that page yet without a stronger model or deterministic table repair.
 
 ---
+
+## [2026-05-03] ingest | adopted AoE2 economy upgrades reference
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] schema-change | added deterministic reference repair and local model comparison
+
+- Added wiki:repair-reference and wired it into Phase 2 validation for selected reference pages.
+- Added repeated-phrase validation for synthesized claim and reference fact cells.
+- Carried Related pages evidence-basis text into Phase 2 evidence-bank retrieval to reduce generic upgrade drift.
+- Adopted wiki/references/aoe2-economy-upgrades.md after deterministic validation and local batch judge passed.
+- Compared qwen3-coder:30b and gpt-oss:20b on aoe2-military-upgrades; qwen was faster and more topical, while gpt-oss needed repetition cleanup and drifted into economy-upgrade content.
+
+---

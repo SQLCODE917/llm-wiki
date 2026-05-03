@@ -45,6 +45,7 @@ class RelatedCandidate:
     priority: str
     index: int
     group: str | None = None
+    evidence_basis: str | None = None
 
 
 def main() -> int:
@@ -135,7 +136,7 @@ def run_candidate(
     selected_paths = [candidate.path for candidate in selected_candidates]
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
-    evidence_bank = build_evidence_bank(worktree, normalized_source, selected_paths)
+    evidence_bank = build_evidence_bank(worktree, normalized_source, selected_candidates)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
         slug=slug,
@@ -274,11 +275,24 @@ def run_validation(
     if selected_paths:
         synthesis_command.append("--require-allowed-pages")
 
+    reference_repair_commands = [
+        [
+            "python3",
+            "tools/wiki_repair_reference.py",
+            source_relative_to_repo(path),
+            "--normalized-source",
+            normalized_source.as_posix(),
+        ]
+        for path in selected_paths
+        if source_relative_to_repo(path).startswith("wiki/references/")
+    ]
+
     commands = [
         ["python3", "tools/wiki_link_related.py", slug],
         ["python3", "tools/wiki_fix_broken_links.py", slug],
         ["python3", "tools/wiki_normalize_ascii.py", slug],
         ["python3", "tools/wiki_normalize_tables.py", slug],
+        *reference_repair_commands,
         synthesis_command,
         ["pnpm", "wiki:grounding:check"],
     ]
@@ -523,7 +537,8 @@ def related_candidate_rows(markdown: str) -> list[RelatedCandidate]:
             continue
         group = cells[2].strip() if len(cells) == 6 else None
         priority = cells[3].strip().lower() if len(cells) == 6 else cells[2].strip().lower() if len(cells) == 5 else "should create"
-        rows.append(RelatedCandidate(path=target, group=group, priority=priority, index=index))
+        evidence_basis = cells[4].strip() if len(cells) == 6 else cells[3].strip() if len(cells) == 5 else None
+        rows.append(RelatedCandidate(path=target, group=group, priority=priority, evidence_basis=evidence_basis, index=index))
     return rows
 
 
@@ -533,7 +548,8 @@ def render_selected_candidates(candidates: list[RelatedCandidate]) -> str:
     lines: list[str] = []
     for candidate in candidates:
         group = candidate.group or "unclassified"
-        lines.append(f"- `{candidate.path}` - group: {group}; priority: {candidate.priority}")
+        evidence_basis = f"; evidence basis: {candidate.evidence_basis}" if candidate.evidence_basis else ""
+        lines.append(f"- `{candidate.path}` - group: {group}; priority: {candidate.priority}{evidence_basis}")
     return "\n".join(lines)
 
 
@@ -543,11 +559,23 @@ def render_existing_pages(paths: list[str]) -> str:
     return "\n".join(f"- `{path}`" for path in paths)
 
 
-def build_evidence_bank(worktree: Path, normalized_source: Path, selected_paths: list[str]) -> str:
+def build_evidence_bank(worktree: Path, normalized_source: Path, selected_candidates: list[str | RelatedCandidate]) -> str:
     source_path = normalized_source if normalized_source.is_absolute() else worktree / normalized_source
     if not source_path.exists():
         return "No evidence bank available; normalized source was not found."
-    return render_source_evidence_bank(source_path.read_text(errors="ignore"), selected_paths, per_candidate=10)
+    queries = [evidence_query(candidate) for candidate in selected_candidates]
+    return render_source_evidence_bank(source_path.read_text(errors="ignore"), queries, per_candidate=10)
+
+
+def evidence_query(candidate: str | RelatedCandidate) -> str:
+    if isinstance(candidate, str):
+        return candidate
+    parts = [candidate.path]
+    if candidate.group:
+        parts.append(candidate.group)
+    if candidate.evidence_basis:
+        parts.append(candidate.evidence_basis)
+    return " ".join(parts)
 
 
 def split_table_row(line: str) -> list[str] | None:

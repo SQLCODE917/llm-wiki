@@ -68,6 +68,7 @@ Validation:
 - `pnpm wiki:fix-links <slug>`
 - `pnpm wiki:normalize-ascii <slug>`
 - `pnpm wiki:normalize-tables <slug>`
+- `pnpm wiki:repair-reference <page> --normalized-source <normalized-source>` for selected reference pages
 - `pnpm wiki:check-synthesis <slug>`
 - `pnpm wiki:grounding:check`
 - `pnpm wiki:judge-claims <page> --normalized-source <normalized-source> --candidate local-4090`
@@ -75,7 +76,9 @@ Validation:
 `pnpm wiki:phase2-single <slug> <candidate-path>` runs this unit in a disposable worktree and should
 return success only when deterministic validation and local judging pass. Use `--skip-judge` only for
 debugging the deterministic layer. It uses a reference-specific prompt for selected `wiki/references/**`
-pages so lookup tables are treated as auditable source-backed facts, not inferred taxonomies.
+pages so lookup tables are treated as auditable source-backed facts, not inferred taxonomies. Reference
+pages also pass through `wiki:repair-reference` before validation to fix mechanical locator/table issues
+without asking the model to reason again.
 
 ### Unit D: Claim Judge
 
@@ -123,6 +126,28 @@ pnpm wiki:claim-hints wiki/concepts/example.md --normalized-source raw/normalize
 
 `pnpm wiki:phase2-single` includes these hints in deterministic and judge repair prompts when the
 selected page exists.
+
+### Unit D3: Deterministic Reference Repair
+
+Input:
+- one reference page
+- its normalized source
+
+Output:
+- the same reference page with mechanical cleanup only
+
+Repairs:
+- move the H1 before other body content
+- remove stray frontmatter-like body lines
+- repair evidence locators when the exact excerpt can be found
+- shorten evidence to a source sentence from the cited locator when possible
+- rewrite weak or evidence-copying claim/fact cells from deterministic source patterns
+
+Command:
+
+```bash
+pnpm wiki:repair-reference wiki/references/example.md --normalized-source raw/normalized/<slug>/source.md
+```
 
 ### Unit F: Query Answer
 
