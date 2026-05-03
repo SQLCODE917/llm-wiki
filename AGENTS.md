@@ -509,6 +509,12 @@ pnpm wiki:query "What should I know about this topic?" --plan-only
 If the selected pages look right, run with `--candidate local-4090`. Add `--save-analysis` only for
 answers that should become durable wiki knowledge.
 
+To test the saved-analysis filing path without invoking a local model, run:
+
+```bash
+pnpm wiki:query:smoke
+```
+
 If a Phase 2 benchmark worktree is good enough to adopt, copy it into the real repo with:
 
 ```bash
@@ -578,6 +584,9 @@ a quick local check, append the log entry after reviewing the report. For schedu
 ```bash
 pnpm wiki:lint:log
 ```
+
+Lint `TODO` items are intentional backlog, not wiki-health failures. For example, uncreated Related-pages
+candidate paths should stay as TODO until a Phase 2 run creates and links those pages.
 
 Suggested log format:
 

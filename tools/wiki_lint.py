@@ -136,7 +136,7 @@ def lint_source_page(path: Path, fm) -> list[Issue]:
     if not related or related.lower() in {"none.", "not covered in sources"}:
         issues.append(Issue("WARN", path.as_posix(), "source page has no related pages or candidate pages"))
     if code_paths(related):
-        issues.append(Issue("WARN", path.as_posix(), "Related pages lists candidate paths not created yet"))
+        issues.append(Issue("TODO", path.as_posix(), "Related pages lists candidate paths not created yet"))
 
     if re.search(r"DE \(Dark Age\)", path.read_text(), flags=re.IGNORECASE):
         issues.append(Issue("FAIL", path.as_posix(), "contains unsupported expansion DE (Dark Age)"))
@@ -269,7 +269,7 @@ def render_report(issues: list[Issue]) -> str:
         "",
     ]
 
-    for level in ("FAIL", "WARN"):
+    for level in ("FAIL", "WARN", "TODO"):
         selected = [issue for issue in issues if issue.level == level]
         lines.extend([f"## {level}", ""])
         if not selected:
@@ -283,7 +283,7 @@ def render_report(issues: list[Issue]) -> str:
 
 def append_log(issues: list[Issue]) -> None:
     counts = Counter(issue.level for issue in issues)
-    summary = f"{counts.get('FAIL', 0)} FAIL | {counts.get('WARN', 0)} WARN"
+    summary = f"{counts.get('FAIL', 0)} FAIL | {counts.get('WARN', 0)} WARN | {counts.get('TODO', 0)} TODO"
     entry = "\n".join(
         [
             "",
@@ -291,6 +291,7 @@ def append_log(issues: list[Issue]) -> None:
             "",
             f"- FAIL: {counts.get('FAIL', 0)}",
             f"- WARN: {counts.get('WARN', 0)}",
+            f"- TODO: {counts.get('TODO', 0)}",
             "- Report: wiki/_linter-report.md",
             "",
             "---",

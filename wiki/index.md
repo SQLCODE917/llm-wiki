@@ -23,7 +23,7 @@ None.
 
 ## Procedures
 
-None.
+- [AoE2 Scouting Techniques](procedures/aoe2-scouting-techniques.md) — Scouting in Age of Empires II is the process of using the scout and later map vision to identify resources, enemy activity, base layout, tech choices, and upgrades.
 
 ## References
 

@@ -574,6 +574,7 @@ The local claim judge failed with this report:
 ```
 
 Repair rules:
+- Fix rows listed under `## Deterministic Flags`, even if the model verdict table marks the row as supported.
 - Fix only rows marked `too_broad`, `not_supported`, `unclear`, or `not judged`.
 - Prefer narrowing the claim to exactly what the cited evidence supports.
 - If the judge suggests a narrower claim, use it unless it conflicts with the evidence.

@@ -127,3 +127,42 @@
 - Report: wiki/_linter-report.md
 
 ---
+
+## [2026-05-03] ingest | adopted AoE2 scouting techniques procedure
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] schema-change | tracked candidate backlog and query filing smoke test
+
+- Changed linter output so uncreated Related-pages candidate paths are TODO backlog instead of WARN health issues.
+- Added wiki:query:smoke to test saved-analysis filing, analysis validation, index refresh, and graph refresh in a temp repo copy.
+- Adopted AoE2 scouting techniques after deterministic repair and row-wise local claim judging passed.
+
+---
+## [2026-05-03] lint | 0 FAIL | 0 WARN | 1 TODO
+
+- FAIL: 0
+- WARN: 0
+- TODO: 1
+- Report: wiki/_linter-report.md
+
+---
+
+## [2026-05-03] schema-change | tightened Phase 2 procedure repair prompts
+
+- Phase 2 synthesis prompts now require likely-sounding claims and procedure steps to be directly supported by evidence rows.
+- Judge repair prompts now explicitly repair rows listed under Deterministic Flags as well as failed semantic verdict rows.
+
+---
+## [2026-05-03] lint | 0 FAIL | 0 WARN | 1 TODO
+
+- FAIL: 0
+- WARN: 0
+- TODO: 1
+- Report: wiki/_linter-report.md
+
+---

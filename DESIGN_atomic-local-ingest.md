@@ -171,6 +171,19 @@ Purpose:
 - catch topical drift such as an economy-upgrade row inside a military-upgrades reference page
 - keep row-level reference data inside the source-native candidate boundary
 
+### Unit D5: Candidate Backlog
+
+Input:
+- source-page `## Related pages` tables
+- uncreated candidate paths written as code spans
+
+Output:
+- linter `TODO` entries for candidate pages that are planned but not created yet
+
+Purpose:
+- distinguish intentional growth backlog from wiki health warnings
+- keep the source page as the planning surface for future atomic Phase 2 runs
+
 ### Unit F: Query Answer
 
 Input:
@@ -192,7 +205,12 @@ Command:
 pnpm wiki:query "What should I know about this topic?" --plan-only
 pnpm wiki:query "What should I know about this topic?" --candidate local-4090
 pnpm wiki:check-analysis wiki/analyses/YYYY-MM-DD-example.md
+pnpm wiki:query:smoke
 ```
+
+`pnpm wiki:query:smoke` copies the repo to `/tmp`, files a deterministic analysis fixture, and checks
+analysis validation plus index and graph freshness. It tests the compounding query path without calling a
+local model.
 
 ### Unit E: Repair
 

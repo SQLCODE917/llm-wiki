@@ -29,6 +29,7 @@
     "wiki:repair-reference": "python3 tools/wiki_repair_reference.py",
     "wiki:query": "python3 tools/wiki_query.py",
     "wiki:check-analysis": "python3 tools/wiki_check_analysis.py",
+    "wiki:query:smoke": "python3 tools/wiki_query_smoke_test.py",
     "wiki:fix-links": "python3 tools/wiki_fix_broken_links.py",
     "wiki:normalize-ascii": "python3 tools/wiki_normalize_ascii.py",
     "wiki:normalize-tables": "python3 tools/wiki_normalize_tables.py",

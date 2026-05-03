@@ -105,6 +105,17 @@
         "wiki:sources/compound-interest"
       ]
     },
+    "wiki:procedures/aoe2-scouting-techniques": {
+      "type": "procedure",
+      "path": "wiki/procedures/aoe2-scouting-techniques.md",
+      "description": "Scouting in Age of Empires II is the process of using the scout and later map vision to identify resources, enemy activity, base layout, tech choices, and upgrades.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:references/aoe2-economy-upgrades": {
       "type": "reference",
       "path": "wiki/references/aoe2-economy-upgrades.md",
@@ -143,6 +154,7 @@
         "wiki:concepts/aoe2-opening-interactions",
         "wiki:concepts/aoe2-team-play-strategies",
         "wiki:concepts/aoe2-unit-counter-interactions",
+        "wiki:procedures/aoe2-scouting-techniques",
         "wiki:references/aoe2-economy-upgrades",
         "wiki:references/aoe2-military-upgrades"
       ]

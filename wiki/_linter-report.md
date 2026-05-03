@@ -5,7 +5,7 @@ Generated: 2026-05-03
 ## Summary
 
 - PASS: 0
-- WARN: 1
+- WARN: 0
 - FAIL: 0
 
 ## FAIL
@@ -13,5 +13,9 @@ Generated: 2026-05-03
 None.
 
 ## WARN
+
+None.
+
+## TODO
 
 - `wiki/sources/aoe2-basics.md` — Related pages lists candidate paths not created yet

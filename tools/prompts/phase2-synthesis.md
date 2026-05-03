@@ -62,6 +62,8 @@ Evidence bank:
 - Include at least 3 evidence rows per synthesized page.
 - Evidence cells must be short exact excerpts from `{{normalized_source}}`; do not paraphrase evidence cells.
 - Prefer using exact snippets from the evidence bank above.
+- Do not make a claim just because it sounds appropriate for the page title; every claim must be directly supported by its own Evidence cell.
+- If the evidence bank does not contain exact support for a likely-sounding claim, omit that claim.
 - Locator cells must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
 - Do not put pipe characters inside table cells.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
@@ -72,6 +74,7 @@ Evidence bank:
 - Do not duplicate headings.
 - Do not add `## Executable implementation` unless a real implementation file exists and is linked.
 - Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
+- Procedure steps must be traceable to the page's own evidence rows; do not add generic how-to advice from outside the cited excerpts.
 - Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
 - Reference data tables must include `Evidence` and `Locator` columns, and those cells must follow the same exact-quote and normalized-line rules as `## Source-backed details`.
 - Use bullets or short paragraphs under `## Source-backed details`; make the section substantial enough to preserve reusable source knowledge.
