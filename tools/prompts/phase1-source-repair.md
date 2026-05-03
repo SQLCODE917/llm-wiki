@@ -70,12 +70,29 @@ Mechanical content rules:
 - A bad claim is "The guide covers scouting."
 - A good claim is "Scouting gives the player information about enemy openings, army movement, and resource exposure."
 
+`## Major concepts` rules:
+- Study the source's natural groupings even if this is the only PDF ingested so far.
+- Natural groupings are source-native themes, chapters, or clusters of reusable knowledge.
+- Do not create new wiki directories from these groupings in Phase 1.
+- Include at least {{min_natural_groups}} natural groups in this exact table shape:
+
+```md
+### Natural groupings
+
+| Group | Scope | Evidence basis | Candidate page types |
+|---|---|---|---|
+| Source-native group name | clear non-overlapping scope | concrete sections, claims, examples, or procedures | concept, procedure |
+```
+
+- If the source is tiny and has fewer natural groups, write the real groups it contains and keep the scopes narrow.
+
 `## Related pages` rules:
 - If a related page does not already exist, do not use a Markdown link to it.
 - List future synthesized pages as a candidate table only.
 - Use code-formatted intended paths in the table.
 - List {{min_related_candidates}} to {{max_related_candidates}} strong candidate pages.
 - Prefer candidates with enough source evidence to support at least 3 later evidence-table rows.
+- Every related-page row must include a `Group` value copied exactly from the `## Major concepts` natural groupings table.
 - Set priority to one of: `must create`, `should create`, `could create`, `defer`.
 - Use `must create` only for high-evidence reusable pages that should be created in Phase 2.
 - Use `Evidence basis` to name the concrete source material that supports the candidate.
@@ -83,15 +100,15 @@ Mechanical content rules:
 - Use this table shape:
 
 ```md
-| Candidate page | Intended path | Priority | Evidence basis | Status |
-|---|---|---|---|---|
-| Example Concept | `../concepts/example-concept.md` | must create | concrete claims, examples, or procedure steps | not created yet |
+| Candidate page | Intended path | Group | Priority | Evidence basis | Status |
+|---|---|---|---|---|---|
+| Example Concept | `../concepts/example-concept.md` | Source-native group name | must create | concrete claims, examples, or procedure steps | not created yet |
 ```
 
 After writing, run exactly:
 
 ```bash
-python3 tools/wiki_check_source.py {{slug}} --min-claims {{min_claims}} --max-claims {{max_claims}} --min-claim-words {{min_claim_words}} --min-related-candidates {{min_related_candidates}} --max-related-candidates {{max_related_candidates}} {{weak_claims_flag}} {{grounding_flag}}
+python3 tools/wiki_check_source.py {{slug}} --min-claims {{min_claims}} --max-claims {{max_claims}} --min-claim-words {{min_claim_words}} --min-related-candidates {{min_related_candidates}} --max-related-candidates {{max_related_candidates}} --require-natural-groups --min-natural-groups {{min_natural_groups}} {{weak_claims_flag}} {{grounding_flag}}
 ```
 
 If validation fails, repair only `wiki/sources/{{slug}}.md` and rerun the same command.

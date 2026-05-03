@@ -64,7 +64,7 @@ def link_existing_candidates(source_path: Path, text: str) -> str:
 
 def normalize_related_row(source_path: Path, line: str) -> str | None:
     cells = split_table_row(line)
-    if cells is None or len(cells) not in {3, 5}:
+    if cells is None or len(cells) not in {3, 5, 6}:
         return None
     title_cell = cells[0]
     path_cell = cells[1]

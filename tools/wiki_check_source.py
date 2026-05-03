@@ -70,6 +70,8 @@ def main() -> int:
     parser.add_argument("--min-claim-words", type=int, default=0)
     parser.add_argument("--min-related-candidates", type=int, default=0)
     parser.add_argument("--max-related-candidates", type=int, default=24)
+    parser.add_argument("--require-natural-groups", action="store_true")
+    parser.add_argument("--min-natural-groups", type=int, default=0)
     parser.add_argument("--reject-weak-claims", action="store_true")
     parser.add_argument("--normalized-source", help="normalized source markdown for optional claim grounding checks")
     parser.add_argument(
@@ -159,6 +161,14 @@ def main() -> int:
             if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
                 failures.append(f"{path}: key claim {i} uses weak generic claim language")
 
+    major_concepts = section(fm.body, "## Major concepts")
+    natural_groups, group_failures = validate_natural_group_rows(path, major_concepts)
+    failures.extend(group_failures)
+    if args.require_natural_groups and len(natural_groups) < args.min_natural_groups:
+        failures.append(
+            f"{path}: only {len(natural_groups)} natural groups; expected at least {args.min_natural_groups}"
+        )
+
     if args.normalized_source and args.max_unsupported_claim_tokens:
         source_path = Path(args.normalized_source)
         if not source_path.exists():
@@ -178,7 +188,7 @@ def main() -> int:
             failures.append(f"{path}: forbidden pattern matched: {pattern}")
 
     related = section(fm.body, "## Related pages")
-    failures.extend(validate_related_rows(path, related))
+    failures.extend(validate_related_rows(path, related, natural_groups if natural_groups else None))
     related_markdown_links = [
         link for link in markdown_links(path) if link.line > _line_number_of_heading(text, "## Related pages")
     ]
@@ -228,7 +238,45 @@ def _strip_list_marker(line: str) -> str:
     return re.sub(r"^\s*(?:[-*]\s+|\d+[.]\s+)", "", line).strip()
 
 
-def validate_related_rows(path: Path, related: str) -> list[str]:
+def validate_natural_group_rows(path: Path, major_concepts: str) -> tuple[set[str], list[str]]:
+    failures: list[str] = []
+    groups: set[str] = set()
+    header_seen = False
+    for row_number, line in enumerate(major_concepts.splitlines(), start=1):
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        cells = split_table_row(stripped)
+        if cells is None:
+            continue
+        normalized = [cell.strip().lower() for cell in cells]
+        if normalized == ["group", "scope", "evidence basis", "candidate page types"]:
+            header_seen = True
+            continue
+        if not header_seen or is_separator_row(cells):
+            continue
+        if len(cells) != 4:
+            failures.append(f"{path}: natural group row {row_number} must have four cells")
+            continue
+        group, scope, evidence_basis, page_types = (cell.strip() for cell in cells)
+        if not group:
+            failures.append(f"{path}: natural group row {row_number} has an empty group")
+            continue
+        if len(re.findall(r"[A-Za-z0-9']+", scope)) < 3:
+            failures.append(f"{path}: natural group row {row_number} scope is too thin")
+        if len(re.findall(r"[A-Za-z0-9']+", evidence_basis)) < 3:
+            failures.append(f"{path}: natural group row {row_number} evidence basis is too thin")
+        page_type_values = {value.strip().lower() for value in page_types.split(",") if value.strip()}
+        invalid_page_types = sorted(page_type_values - {"concept", "entity", "procedure", "reference"})
+        if invalid_page_types:
+            failures.append(
+                f"{path}: natural group row {row_number} has invalid candidate page types: {', '.join(invalid_page_types)}"
+            )
+        groups.add(normalize_group_name(group))
+    return groups, failures
+
+
+def validate_related_rows(path: Path, related: str, natural_groups: set[str] | None = None) -> list[str]:
     failures: list[str] = []
     for row_number, line in enumerate(related.splitlines(), start=1):
         stripped = line.strip()
@@ -240,17 +288,34 @@ def validate_related_rows(path: Path, related: str) -> list[str]:
             continue
         if is_separator_row(cells) or cells[0].lower() in {"candidate page", "page"}:
             continue
-        if len(cells) not in {3, 5}:
-            failures.append(f"{path}: Related pages row {row_number} must have three or five cells")
+        if cells[0].strip().lower() == "page title":
+            failures.append(f"{path}: Related pages row {row_number} uses placeholder title 'Page title'")
+        if len(cells) not in {3, 5, 6}:
+            failures.append(f"{path}: Related pages row {row_number} must have three, five, or six cells")
             continue
+        group = None
+        priority_cell = None
+        evidence_basis = None
         if len(cells) == 5:
-            priority = cells[2].strip().lower()
+            priority_cell = cells[2].strip().lower()
             evidence_basis = cells[3].strip()
-            if priority not in RELATED_PRIORITIES:
+        elif len(cells) == 6:
+            group = cells[2].strip()
+            priority_cell = cells[3].strip().lower()
+            evidence_basis = cells[4].strip()
+            if not group:
+                failures.append(f"{path}: Related pages row {row_number} group must not be empty")
+            elif natural_groups is not None and normalize_group_name(group) not in natural_groups:
+                failures.append(
+                    f"{path}: Related pages row {row_number} group {group!r} is not listed in Major concepts natural groups"
+                )
+
+        if priority_cell is not None:
+            if priority_cell not in RELATED_PRIORITIES:
                 failures.append(
                     f"{path}: Related pages row {row_number} priority must be one of {sorted(RELATED_PRIORITIES)}"
                 )
-            if len(re.findall(r"[A-Za-z0-9']+", evidence_basis)) < 3:
+            if evidence_basis is not None and len(re.findall(r"[A-Za-z0-9']+", evidence_basis)) < 3:
                 failures.append(f"{path}: Related pages row {row_number} evidence basis is too thin")
         status = cells[-1].strip().lower()
         if status not in RELATED_STATUSES:
@@ -261,6 +326,10 @@ def validate_related_rows(path: Path, related: str) -> list[str]:
         if status == "created" and not re.fullmatch(r"\[[^\]]+\]\([^)]+\.md\)", path_cell):
             failures.append(f"{path}: Related pages row {row_number} created path must be a Markdown link")
     return failures
+
+
+def normalize_group_name(group: str) -> str:
+    return " ".join(group.strip().lower().split())
 
 
 def split_table_row(line: str) -> list[str] | None:

@@ -4,10 +4,12 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from dataclasses import dataclass
 from difflib import SequenceMatcher
 from pathlib import Path
 
 from wiki_common import (
+    bullet_count,
     code_paths,
     content_tokens,
     h2_headings,
@@ -29,6 +31,19 @@ WEAK_EVIDENCE_PATTERNS = [
     r"\bsummary: this document\b",
     r"\bthe guide (?:covers|mentions|discusses)\b",
 ]
+WEAK_CLAIM_PATTERNS = [
+    r"\bimportant\b",
+    r"\bcrucial\b",
+    r"\bfundamental\b",
+    r"\bessential\b",
+    r"\bsuccess\b",
+]
+LOCATOR_RE = re.compile(r"^(?:p\.\s*\d+\s*;\s*)?normalized:L(?P<start>\d+)(?:-L?(?P<end>\d+))?$", re.IGNORECASE)
+
+
+@dataclass(frozen=True)
+class EvidenceSource:
+    lines: list[str]
 
 
 def main() -> int:
@@ -90,7 +105,7 @@ def check_synthesis(
     if not source_path.exists():
         return [f"missing source page {source_path}"]
 
-    evidence_text = load_evidence_text(source_path, normalized_source) if check_evidence_text else None
+    evidence_source = load_evidence_source(source_path, normalized_source) if check_evidence_text else None
 
     linked_pages = linked_synthesized_pages(source_path)
     sourced_pages = sourced_synthesized_pages(source_path)
@@ -116,7 +131,7 @@ def check_synthesis(
         failures.append(f"{page}: page is linked from source but does not cite that source in frontmatter")
 
     for page in created_pages:
-        failures.extend(check_synthesized_page(page, source_path, min_evidence_rows, evidence_text))
+        failures.extend(check_synthesized_page(page, source_path, min_evidence_rows, evidence_source))
 
     related = section(parse_frontmatter(source_path).body, "## Related pages")
     failures.extend(check_related_table(source_path, related))
@@ -153,8 +168,8 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
         if not stripped.startswith("|"):
             continue
         cells = split_table_row(stripped)
-        if cells is None or len(cells) not in {3, 5}:
-            failures.append(f"{source_path}: Related pages row {row_number} must have three or five table cells")
+        if cells is None or len(cells) not in {3, 5, 6}:
+            failures.append(f"{source_path}: Related pages row {row_number} must have three, five, or six table cells")
             continue
 
         title = cells[0]
@@ -162,9 +177,21 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
         status_cell = cells[-1]
         if title.lower() in {"candidate page", "page"} or is_separator_row(cells):
             continue
+        if title.strip().lower() == "page title":
+            failures.append(f"{source_path}: Related pages row {row_number} uses placeholder title 'Page title'")
+        group = None
+        priority = None
+        evidence_basis = None
         if len(cells) == 5:
             priority = cells[2].strip().lower()
             evidence_basis = cells[3].strip()
+        elif len(cells) == 6:
+            group = cells[2].strip()
+            priority = cells[3].strip().lower()
+            evidence_basis = cells[4].strip()
+            if not group:
+                failures.append(f"{source_path}: Related pages row {row_number} group must not be empty")
+        if priority is not None:
             if priority not in RELATED_PRIORITIES:
                 failures.append(
                     f"{source_path}: Related pages row {row_number} priority must be one of {sorted(RELATED_PRIORITIES)}"
@@ -237,7 +264,7 @@ def check_synthesized_page(
     page: Path,
     source_path: Path,
     min_evidence_rows: int,
-    evidence_text: str | None,
+    evidence_source: EvidenceSource | None,
 ) -> list[str]:
     failures: list[str] = []
     text = page.read_text()
@@ -292,10 +319,12 @@ def check_synthesized_page(
         detail_tokens = content_tokens(details)
         if len(detail_tokens) < 25:
             failures.append(f"{page}: source-backed details section is too thin")
-        failures.extend(check_evidence_table(page, source_path, details, min_evidence_rows, evidence_text))
+        failures.extend(check_evidence_table(page, source_path, details, min_evidence_rows, evidence_source))
 
     if "## Source pages" not in body_headings and "## Sources" not in body_headings:
         failures.append(f"{page}: missing source page section")
+
+    failures.extend(check_type_specific_sections(page, fm.body, page_type))
     return failures
 
 
@@ -308,40 +337,45 @@ def check_evidence_table(
     source_path: Path,
     details: str,
     min_evidence_rows: int,
-    evidence_text: str | None,
+    evidence_source: EvidenceSource | None,
 ) -> list[str]:
     failures: list[str] = []
     rows = table_rows(details)
     if len(rows) < 2:
-        return [f"{page}: Source-backed details must include a Claim/Evidence/Source table"]
+        failures.append(f"{page}: Source-backed details must include a Claim/Evidence/Locator/Source table")
+        failures.extend(diff_marker_failures(page, details))
+        return failures
 
     header_index: int | None = None
     for index, cells in enumerate(rows):
         normalized = [cell.strip().lower() for cell in cells]
-        if normalized == ["claim", "evidence", "source"]:
+        if normalized == ["claim", "evidence", "locator", "source"]:
             header_index = index
             break
     if header_index is None:
-        return [f"{page}: evidence table header must be exactly | Claim | Evidence | Source |"]
+        return [f"{page}: evidence table header must be exactly | Claim | Evidence | Locator | Source |"]
 
-    data_rows: list[tuple[str, str, str]] = []
+    data_rows: list[tuple[str, str, str, str]] = []
     for cells in rows[header_index + 1 :]:
         if is_separator_row(cells):
             continue
-        if len(cells) != 3:
-            failures.append(f"{page}: evidence table row must have exactly three cells")
+        if len(cells) != 4:
+            failures.append(f"{page}: evidence table row must have exactly four cells")
             continue
-        claim, evidence, source = (cell.strip() for cell in cells)
-        if claim or evidence or source:
-            data_rows.append((claim, evidence, source))
+        claim, evidence, locator, source = (cell.strip() for cell in cells)
+        if claim or evidence or locator or source:
+            data_rows.append((claim, evidence, locator, source))
 
     if len(data_rows) < min_evidence_rows:
         failures.append(f"{page}: evidence table has {len(data_rows)} rows; expected at least {min_evidence_rows}")
+        failures.extend(diff_marker_failures(page, details))
 
-    for index, (claim, evidence, source) in enumerate(data_rows, start=1):
+    for index, (claim, evidence, locator, source) in enumerate(data_rows, start=1):
         claim_words = re.findall(r"[A-Za-z0-9']+", strip_markdown(claim))
         if len(claim_words) < 5:
             failures.append(f"{page}: evidence row {index} claim is too short")
+        if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
+            failures.append(f"{page}: evidence row {index} uses weak generic claim language")
 
         excerpt = clean_evidence_excerpt(evidence)
         claim_norm = normalize_for_search(strip_markdown(claim))
@@ -354,8 +388,24 @@ def check_evidence_table(
             failures.append(f"{page}: evidence row {index} excerpt is too short")
         if any(re.search(pattern, excerpt, flags=re.IGNORECASE) for pattern in WEAK_EVIDENCE_PATTERNS):
             failures.append(f"{page}: evidence row {index} excerpt is document navigation or metadata, not evidence")
-        elif evidence_text is not None and excerpt_norm not in normalize_for_search(evidence_text):
-            failures.append(f"{page}: evidence row {index} excerpt is not found in normalized source")
+
+        parsed_locator = parse_locator(locator)
+        if parsed_locator is None:
+            failures.append(
+                f"{page}: evidence row {index} locator must look like `normalized:L12` or `normalized:L12-L14`"
+            )
+        elif evidence_source is not None:
+            start, end = parsed_locator
+            if start < 1 or end < start or end > len(evidence_source.lines):
+                failures.append(
+                    f"{page}: evidence row {index} locator {clean_locator(locator)!r} is outside normalized source line range"
+                )
+            else:
+                locator_text = "\n".join(evidence_source.lines[start - 1 : end])
+                if excerpt_norm not in normalize_for_search(locator_text):
+                    failures.append(
+                        f"{page}: evidence row {index} excerpt is not found in locator range {clean_locator(locator)!r}"
+                    )
 
         source_target = first_markdown_target(source)
         if source_target is None:
@@ -366,7 +416,48 @@ def check_evidence_table(
     return failures
 
 
-def load_evidence_text(source_path: Path, normalized_source: str | None) -> str | None:
+def diff_marker_failures(page: Path, markdown: str) -> list[str]:
+    failures: list[str] = []
+    for line_number, line in enumerate(markdown.splitlines(), start=1):
+        stripped = line.strip()
+        if stripped.startswith(("+", "-")) and "|" in stripped and not stripped.startswith("|"):
+            failures.append(f"{page}: Source-backed details line {line_number} looks like a diff marker, not a table row")
+    return failures
+
+
+def check_type_specific_sections(page: Path, body: str, page_type: object) -> list[str]:
+    failures: list[str] = []
+    if page_type == "procedure":
+        steps = section(body, "## Steps") or section(body, "## Procedure")
+        if not steps:
+            failures.append(f"{page}: procedure pages must include a ## Steps or ## Procedure section")
+        elif bullet_count(steps) < 3:
+            failures.append(f"{page}: procedure steps section has {bullet_count(steps)} steps; expected at least 3")
+    elif page_type == "reference":
+        reference_data = section(body, "## Reference data")
+        if not reference_data:
+            failures.append(f"{page}: reference pages must include a ## Reference data section")
+        elif table_data_row_count(reference_data) < 2:
+            failures.append(f"{page}: Reference data table has fewer than 2 data rows")
+    return failures
+
+
+def table_data_row_count(markdown: str) -> int:
+    count = 0
+    header_seen = False
+    for row in table_rows(markdown):
+        normalized = [cell.strip().lower() for cell in row]
+        if is_separator_row(row):
+            continue
+        if not header_seen:
+            header_seen = True
+            continue
+        if any(cell for cell in normalized):
+            count += 1
+    return count
+
+
+def load_evidence_source(source_path: Path, normalized_source: str | None) -> EvidenceSource | None:
     if normalized_source:
         path = Path(normalized_source)
     else:
@@ -374,12 +465,28 @@ def load_evidence_text(source_path: Path, normalized_source: str | None) -> str 
         if path is None:
             return None
     if path.is_file():
-        return path.read_text(errors="ignore")
+        text = path.read_text(errors="ignore")
+        return EvidenceSource(lines=text.splitlines())
     if path.is_dir():
         markdown_files = sorted(path.rglob("*.md"), key=lambda candidate: candidate.stat().st_size, reverse=True)
         if markdown_files:
-            return markdown_files[0].read_text(errors="ignore")
+            text = markdown_files[0].read_text(errors="ignore")
+            return EvidenceSource(lines=text.splitlines())
     return None
+
+
+def parse_locator(locator: str) -> tuple[int, int] | None:
+    cleaned = clean_locator(locator)
+    match = LOCATOR_RE.fullmatch(cleaned)
+    if not match:
+        return None
+    start = int(match.group("start"))
+    end = int(match.group("end") or start)
+    return start, end
+
+
+def clean_locator(locator: str) -> str:
+    return strip_markdown(locator).strip()
 
 
 def normalized_markdown_from_source_page(source_path: Path) -> Path | None:

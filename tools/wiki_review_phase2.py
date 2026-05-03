@@ -27,6 +27,7 @@ WEAK_CLAIM_PATTERNS = [
 class EvidenceRow:
     claim: str
     evidence: str
+    locator: str
     source: str
 
 
@@ -130,6 +131,7 @@ def render_review_packet(
         [
             "- Do the selected pages match the source's strongest reusable concepts?",
             "- Does every claim follow from its evidence, rather than merely sharing words with it?",
+            "- Do the evidence locators take the curator to the right normalized-source lines?",
             "- Are any claims too broad and in need of qualification?",
             "- Does the source contradict an existing page or another source?",
             "- Should the adopted pages remain `draft`, or should any be marked `reviewed` after human reading?",
@@ -221,12 +223,14 @@ def render_page_section(rel: Path, page: Path, rows: list[EvidenceRow]) -> list[
         lines.extend(f"- {issue}" for issue in issues)
         lines.append("")
 
-    lines.extend(["Evidence:", "", "| Claim | Evidence | Source |", "|---|---|---|"])
+    lines.extend(["Evidence:", "", "| Claim | Evidence | Locator | Source |", "|---|---|---|---|"])
     if rows:
         for row in rows:
-            lines.append(f"| {escape_cell(row.claim)} | {escape_cell(row.evidence)} | {escape_cell(row.source)} |")
+            lines.append(
+                f"| {escape_cell(row.claim)} | {escape_cell(row.evidence)} | {escape_cell(row.locator)} | {escape_cell(row.source)} |"
+            )
     else:
-        lines.append("| MISSING | MISSING | MISSING |")
+        lines.append("| MISSING | MISSING | MISSING | MISSING |")
     lines.append("")
     return lines
 
@@ -241,12 +245,12 @@ def evidence_rows(page: Path) -> list[EvidenceRow]:
         if cells is None:
             continue
         normalized = [cell.strip().lower() for cell in cells]
-        if normalized == ["claim", "evidence", "source"]:
+        if normalized == ["claim", "evidence", "locator", "source"]:
             header_seen = True
             continue
-        if not header_seen or is_separator_row(cells) or len(cells) != 3:
+        if not header_seen or is_separator_row(cells) or len(cells) != 4:
             continue
-        rows.append(EvidenceRow(cells[0], cells[1], cells[2]))
+        rows.append(EvidenceRow(cells[0], cells[1], cells[2], cells[3]))
     return rows
 
 

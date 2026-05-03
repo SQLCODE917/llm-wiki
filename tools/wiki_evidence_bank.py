@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from dataclasses import dataclass
 from pathlib import Path
 
 from wiki_common import content_tokens
@@ -16,6 +17,12 @@ WEAK_SNIPPET_PATTERNS = [
     r"\bsummary: this document\b",
     r"\bthe guide (?:covers|mentions|discusses)\b",
 ]
+
+
+@dataclass(frozen=True)
+class SourceChunk:
+    text: str
+    locator: str
 
 
 def main() -> int:
@@ -42,37 +49,38 @@ def render_evidence_bank(source_text: str, candidates: list[str], per_candidate:
         snippets = snippets_for_candidate(candidate, chunks, per_candidate)
         sections.append(f"### {candidate}")
         if snippets:
-            sections.extend(f"- {snippet}" for snippet in snippets)
+            sections.extend(f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
         else:
             sections.append("- not covered in sources")
         sections.append("")
     return "\n".join(sections).rstrip()
 
 
-def snippets_for_candidate(candidate: str, chunks: list[str], limit: int) -> list[str]:
+def snippets_for_candidate(candidate: str, chunks: list[SourceChunk], limit: int) -> list[SourceChunk]:
     candidate_key = Path(candidate).stem if candidate.endswith(".md") else candidate
     query_tokens = candidate_tokens(candidate_key)
     if not query_tokens:
         query_tokens = set(content_tokens(candidate))
 
-    scored: list[tuple[int, int, str]] = []
+    scored: list[tuple[int, int, int, SourceChunk]] = []
     for index, chunk in enumerate(chunks):
-        tokens = evidence_tokens(chunk)
+        tokens = evidence_tokens(chunk.text)
         score = len(query_tokens & tokens)
         if score == 0:
             continue
-        if any(re.search(pattern, chunk, flags=re.IGNORECASE) for pattern in WEAK_SNIPPET_PATTERNS):
+        if any(re.search(pattern, chunk.text, flags=re.IGNORECASE) for pattern in WEAK_SNIPPET_PATTERNS):
             continue
         if any(token in tokens for token in query_tokens):
-            snippet = trim_chunk(chunk, query_tokens)
-            scored.append((score, -len(snippet), snippet))
+            snippet = SourceChunk(text=trim_chunk(chunk.text, query_tokens), locator=chunk.locator)
+            scored.append((score, -len(snippet.text), -index, snippet))
 
     seen: set[str] = set()
-    snippets: list[str] = []
-    for _score, _neg_len, snippet in sorted(scored, reverse=True):
-        if snippet in seen:
+    snippets: list[SourceChunk] = []
+    for _score, _neg_len, _neg_index, snippet in sorted(scored, reverse=True):
+        key = f"{snippet.locator}:{snippet.text}"
+        if key in seen:
             continue
-        seen.add(snippet)
+        seen.add(key)
         snippets.append(snippet)
         if len(snippets) >= limit:
             break
@@ -106,9 +114,9 @@ def evidence_tokens(text: str) -> set[str]:
     return tokens
 
 
-def source_chunks(text: str) -> list[str]:
-    chunks: list[str] = []
-    for raw in text.splitlines():
+def source_chunks(text: str) -> list[SourceChunk]:
+    chunks: list[SourceChunk] = []
+    for line_number, raw in enumerate(text.splitlines(), start=1):
         line = " ".join(raw.strip().split())
         if not line or line.startswith("#") or line.startswith("|") or set(line) <= {"-", " "}:
             continue
@@ -116,7 +124,7 @@ def source_chunks(text: str) -> list[str]:
             continue
         for sentence in split_sentences(line):
             if len(sentence) >= 40:
-                chunks.append(sentence)
+                chunks.append(SourceChunk(text=sentence, locator=f"normalized:L{line_number}"))
     return chunks
 
 

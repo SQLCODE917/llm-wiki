@@ -50,3 +50,11 @@
 - Added pnpm wiki:check-synthesis to validate synthesized page backlinks, frontmatter sources, and source-page related links.
 
 ---
+
+## [2026-05-02] ingest | adopted AoE2 basics synthesis
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---

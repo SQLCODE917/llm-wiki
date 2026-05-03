@@ -13,6 +13,8 @@
     "wiki:review-phase2": "python3 tools/wiki_review_phase2.py",
     "wiki:adopt-phase2": "python3 tools/wiki_adopt_phase2.py",
     "wiki:phase3": "python3 tools/wiki_phase3_finalize.py",
+    "wiki:add-locators": "python3 tools/wiki_add_evidence_locators.py",
+    "wiki:structure-proposal": "python3 tools/wiki_structure_proposal.py",
     "wiki:evidence-bank": "python3 tools/wiki_evidence_bank.py",
     "wiki:index": "python3 tools/wiki_index.py",
     "wiki:index:check": "python3 tools/wiki_index.py --check",
@@ -23,6 +25,7 @@
     "wiki:grounding:check": "python3 tools/wiki_grounding.py --check",
     "wiki:fix-links": "python3 tools/wiki_fix_broken_links.py",
     "wiki:normalize-ascii": "python3 tools/wiki_normalize_ascii.py",
+    "wiki:normalize-tables": "python3 tools/wiki_normalize_tables.py",
     "wiki:link-related": "python3 tools/wiki_link_related.py",
     "wiki:lint": "python3 tools/wiki_lint.py",
     "wiki:lint:log": "python3 tools/wiki_lint.py --append-log"

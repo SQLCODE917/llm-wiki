@@ -73,6 +73,7 @@ def main() -> int:
     parser.add_argument("--min-claim-words", type=int, default=10)
     parser.add_argument("--min-related-candidates", type=int, default=8)
     parser.add_argument("--max-related-candidates", type=int, default=16)
+    parser.add_argument("--min-natural-groups", type=int, default=2)
     parser.add_argument(
         "--allow-weak-claims",
         action="store_true",
@@ -121,6 +122,7 @@ def main() -> int:
             min_claim_words=args.min_claim_words,
             min_related_candidates=args.min_related_candidates,
             max_related_candidates=args.max_related_candidates,
+            min_natural_groups=args.min_natural_groups,
             reject_weak_claims=not args.allow_weak_claims,
             max_unsupported_claim_tokens=args.max_unsupported_claim_tokens,
             repair_attempts=args.repair_attempts,
@@ -167,6 +169,7 @@ def run_candidate(
     min_claim_words: int,
     min_related_candidates: int,
     max_related_candidates: int,
+    min_natural_groups: int,
     reject_weak_claims: bool,
     max_unsupported_claim_tokens: int,
     repair_attempts: int,
@@ -186,6 +189,7 @@ def run_candidate(
         min_claim_words=min_claim_words,
         min_related_candidates=min_related_candidates,
         max_related_candidates=max_related_candidates,
+        min_natural_groups=min_natural_groups,
         reject_weak_claims=reject_weak_claims,
         max_unsupported_claim_tokens=max_unsupported_claim_tokens,
     )
@@ -212,6 +216,7 @@ def run_candidate(
         min_claim_words,
         min_related_candidates,
         max_related_candidates,
+        min_natural_groups,
         reject_weak_claims,
         normalized_source,
         max_unsupported_claim_tokens,
@@ -228,6 +233,7 @@ def run_candidate(
             min_claim_words=min_claim_words,
             min_related_candidates=min_related_candidates,
             max_related_candidates=max_related_candidates,
+            min_natural_groups=min_natural_groups,
             reject_weak_claims=reject_weak_claims,
             normalized_source=normalized_source,
             max_unsupported_claim_tokens=max_unsupported_claim_tokens,
@@ -250,6 +256,7 @@ def run_candidate(
             min_claim_words,
             min_related_candidates,
             max_related_candidates,
+            min_natural_groups,
             reject_weak_claims,
             normalized_source,
             max_unsupported_claim_tokens,
@@ -363,6 +370,7 @@ def render_prompt(
     min_claim_words: int,
     min_related_candidates: int,
     max_related_candidates: int,
+    min_natural_groups: int,
     reject_weak_claims: bool,
     max_unsupported_claim_tokens: int,
 ) -> str:
@@ -375,6 +383,7 @@ def render_prompt(
         "{{min_claim_words}}": str(min_claim_words),
         "{{min_related_candidates}}": str(min_related_candidates),
         "{{max_related_candidates}}": str(max_related_candidates),
+        "{{min_natural_groups}}": str(min_natural_groups),
         "{{weak_claims_flag}}": "--reject-weak-claims" if reject_weak_claims else "",
         "{{grounding_flag}}": (
             f"--normalized-source {normalized_source} "
@@ -398,6 +407,7 @@ def render_repair_prompt(
     min_claim_words: int,
     min_related_candidates: int,
     max_related_candidates: int,
+    min_natural_groups: int,
     reject_weak_claims: bool,
     normalized_source: Path,
     max_unsupported_claim_tokens: int,
@@ -455,12 +465,14 @@ Fix the failures mechanically:
 {grounding_line.rstrip()}
 - Keep `## Related pages` as a candidate table with code-formatted intended paths only.
 - Keep {min_related_candidates} to {max_related_candidates} strong related-page candidates.
+- Keep at least {min_natural_groups} source-native natural groups under `## Major concepts` in the required table shape.
+- Every `## Related pages` row must include a Group cell copied from that natural group table.
 - Do not create related pages.
 
 After editing, run exactly:
 
 ```bash
-python3 tools/wiki_check_source.py {slug} --min-claims {min_claims} --max-claims {max_claims} --min-claim-words {min_claim_words} --min-related-candidates {min_related_candidates} --max-related-candidates {max_related_candidates}{weak_claims_flag}{grounding_flag}
+python3 tools/wiki_check_source.py {slug} --min-claims {min_claims} --max-claims {max_claims} --min-claim-words {min_claim_words} --min-related-candidates {min_related_candidates} --max-related-candidates {max_related_candidates} --require-natural-groups --min-natural-groups {min_natural_groups}{weak_claims_flag}{grounding_flag}
 ```
 
 If validation still fails, repair only `wiki/sources/{slug}.md` and rerun the same command.
@@ -475,25 +487,29 @@ def run_validation(
     min_claim_words: int,
     min_related_candidates: int,
     max_related_candidates: int,
+    min_natural_groups: int,
     reject_weak_claims: bool,
     normalized_source: Path,
     max_unsupported_claim_tokens: int,
 ) -> int:
     command = [
-            "python3",
-            "tools/wiki_check_source.py",
-            slug,
-            "--min-claims",
-            str(min_claims),
-            "--max-claims",
-            str(max_claims),
-            "--min-claim-words",
-            str(min_claim_words),
-            "--min-related-candidates",
-            str(min_related_candidates),
-            "--max-related-candidates",
-            str(max_related_candidates),
-        ]
+        "python3",
+        "tools/wiki_check_source.py",
+        slug,
+        "--min-claims",
+        str(min_claims),
+        "--max-claims",
+        str(max_claims),
+        "--min-claim-words",
+        str(min_claim_words),
+        "--min-related-candidates",
+        str(min_related_candidates),
+        "--max-related-candidates",
+        str(max_related_candidates),
+        "--require-natural-groups",
+        "--min-natural-groups",
+        str(min_natural_groups),
+    ]
     if reject_weak_claims:
         command.append("--reject-weak-claims")
     if max_unsupported_claim_tokens:

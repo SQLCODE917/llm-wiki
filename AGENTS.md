@@ -141,16 +141,37 @@ During ingest phase 1, synthesized pages usually do not exist yet. In that case,
 must list candidate future pages as code-formatted intended paths in a table, not Markdown links.
 This records the planned graph without creating broken links.
 
+Phase 1 must also study the source's natural groupings, even when ingesting a single PDF. Natural groupings
+are source-native themes, chapters, or clusters of reusable knowledge. Record them inside `## Major concepts`
+with a level-3 table, not as new wiki directories:
+
+```md
+### Natural groupings
+
+| Group | Scope | Evidence basis | Candidate page types |
+|---|---|---|---|
+| Source-native group name | clear non-overlapping scope | concrete sections, claims, examples, or procedures | concept, procedure |
+```
+
+Use those group names in `## Related pages` so Phase 2 can choose pages from the source's own structure.
+The physical wiki directories remain type-based unless the curator approves a directory-structure proposal.
+
 Example:
 
 ```md
-| Candidate page | Intended path | Status |
-|---|---|---|
-| AoE2 Economy Balance | `../concepts/aoe2-economy-balance.md` | not created yet |
+| Candidate page | Intended path | Group | Priority | Evidence basis | Status |
+|---|---|---|---|---|---|
+| AoE2 Economy Balance | `../concepts/aoe2-economy-balance.md` | Core fundamentals | must create | economy balance and resource allocation claims | not created yet |
 ```
 
 After the synthesized pages are created in phase 2, replace relevant candidate rows with real Markdown
 links to pages that exist.
+
+Directory structure should follow the content, not assumptions. After 2-3 non-trivial ingests, or after one
+large source makes the current structure clearly inadequate, run or draft a directory-structure proposal.
+The proposal should list source-native groupings observed so far, compare them to the current type-based
+directories, and recommend either keeping the current structure or changing it. Do not create new top-level
+wiki directories until the proposal is logged and the curator agrees.
 
 ---
 
@@ -172,6 +193,11 @@ Useful optional sections:
 - `## Examples`
 - `## Open questions`
 - `## Executable implementation`
+
+Type-specific required sections:
+
+- Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
+- Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
 
 ---
 
@@ -261,19 +287,20 @@ Local models must ingest in bounded phases. Do not ask a local model to perform 
 2. Create or update `wiki/sources/<slug>.md`.
 3. Extract gameplay/content/domain claims, not just document metadata.
 4. Identify candidate concepts, entities, procedures, and references.
-5. List candidate future pages in `## Related pages` as code-formatted paths in a table.
-6. Prefer the evidence-aware candidate table shape:
+5. Identify natural groupings from the source itself inside `## Major concepts`.
+6. List candidate future pages in `## Related pages` as code-formatted paths in a table.
+7. Prefer the evidence-aware candidate table shape with a source-native group column:
 
 ```md
-| Candidate page | Intended path | Priority | Evidence basis | Status |
-|---|---|---|---|---|
-| Example Concept | `../concepts/example-concept.md` | must create | concrete claims, examples, or procedure steps | not created yet |
+| Candidate page | Intended path | Group | Priority | Evidence basis | Status |
+|---|---|---|---|---|---|
+| Example Concept | `../concepts/example-concept.md` | Source-native group name | must create | concrete claims, examples, or procedure steps | not created yet |
 ```
 
-7. Use priorities `must create`, `should create`, `could create`, or `defer`; Phase 2 should prefer higher-priority candidates with enough evidence for at least 3 evidence rows.
-8. Do not create synthesized pages yet.
-9. Do not update `wiki/index.md`, `wiki/log.md`, or `_graph.json` in this phase unless explicitly asked.
-10. Validate the source page:
+8. Use priorities `must create`, `should create`, `could create`, or `defer`; Phase 2 should prefer higher-priority candidates with enough evidence for at least 3 evidence rows.
+9. Do not create synthesized pages yet.
+10. Do not update `wiki/index.md`, `wiki/log.md`, or `_graph.json` in this phase unless explicitly asked.
+11. Validate the source page:
 
 ```bash
 pnpm wiki:check-source <slug>
@@ -282,35 +309,37 @@ pnpm wiki:check-source <slug>
 ### Phase 2: synthesized pages
 
 1. Use the source page and normalized source as needed.
-2. Create or update synthesized pages:
+2. Use the source page's natural groupings as page-boundary and priority signals; do not turn group names into new directories.
+3. Create or update synthesized pages:
    - `wiki/concepts/`
    - `wiki/entities/`
    - `wiki/procedures/`
    - `wiki/references/`
-3. Each synthesized page must link back to at least one source page.
-4. Synthesized-page cross-links may point only to pages that already exist or pages created in the same phase.
-5. Each synthesized page must have `## Source-backed details` with an evidence table:
+4. Each synthesized page must link back to at least one source page.
+5. Synthesized-page cross-links may point only to pages that already exist or pages created in the same phase.
+6. Each synthesized page must have `## Source-backed details` with an evidence table:
 
 ```md
-| Claim | Evidence | Source |
-|---|---|---|
-| Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | [Source title](../sources/<slug>.md) |
+| Claim | Evidence | Locator | Source |
+|---|---|---|---|
+| Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/<slug>.md) |
 ```
 
-6. Evidence cells must be short exact excerpts from the normalized source, not paraphrases.
-7. Claim cells must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
-8. Synthesized pages must not contain empty headings, duplicate headings, or `## Executable implementation` unless a real implementation file is linked.
-9. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
-10. Use the canonical `Related pages` row format:
+7. Evidence cells must be short exact excerpts from the normalized source, not paraphrases.
+8. Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
+9. Claim cells must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
+10. Synthesized pages must not contain empty headings, duplicate headings, or `## Executable implementation` unless a real implementation file is linked.
+11. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
+12. Use the canonical `Related pages` row format:
 
 ```md
-| Page title | [../concepts/example.md](../concepts/example.md) | created |
-| Page title | `../concepts/example.md` | not created yet |
+| Page title | [../concepts/example.md](../concepts/example.md) | Source-native group name | must create | concrete evidence basis | created |
+| Page title | `../concepts/example.md` | Source-native group name | should create | concrete evidence basis | not created yet |
 ```
 
-11. Prefer doing that replacement with `pnpm wiki:link-related <slug>`.
-12. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
-13. Validate synthesized pages:
+13. Prefer doing that replacement with `pnpm wiki:link-related <slug>`.
+14. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
+15. Validate synthesized pages:
 
 ```bash
 pnpm wiki:link-related <slug>
@@ -410,6 +439,8 @@ pnpm wiki:phase2-benchmark <slug>
 pnpm wiki:review-phase2 <slug> <worktree>
 pnpm wiki:adopt-phase2 <slug> <worktree>
 pnpm wiki:phase3 <slug>
+pnpm wiki:add-locators <slug> --normalized-source <path>
+pnpm wiki:structure-proposal
 pnpm wiki:index
 pnpm wiki:index:check
 pnpm wiki:graph
@@ -418,6 +449,7 @@ pnpm wiki:grounding
 pnpm wiki:grounding:check
 pnpm wiki:fix-links <slug>
 pnpm wiki:normalize-ascii <slug>
+pnpm wiki:normalize-tables <slug>
 pnpm wiki:link-related <slug>
 pnpm wiki:lint
 ```

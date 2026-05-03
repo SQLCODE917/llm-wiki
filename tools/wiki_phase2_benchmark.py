@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 import sys
@@ -36,6 +37,14 @@ class Result:
     validation_returncode: int | None
     changed_files: list[str]
     log_paths: list[Path]
+
+
+@dataclass(frozen=True)
+class RelatedCandidate:
+    path: str
+    priority: str
+    index: int
+    group: str | None = None
 
 
 def main() -> int:
@@ -121,7 +130,11 @@ def run_candidate(
     init_git(worktree)
 
     source_page = worktree / "wiki/sources" / f"{slug}.md"
-    selected_paths = selected_candidate_paths(source_page, max_pages)
+    existing_paths = existing_created_paths(source_page)
+    selected_candidates = selected_candidate_paths(source_page, max_pages)
+    selected_paths = [candidate.path for candidate in selected_candidates]
+    allowed_paths = sorted(set(existing_paths + selected_paths))
+    expected_total_pages = len(allowed_paths)
     evidence_bank = build_evidence_bank(worktree, normalized_source, selected_paths)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
@@ -129,7 +142,9 @@ def run_candidate(
         normalized_source=normalized_source.as_posix(),
         min_pages=min_pages,
         max_pages=max_pages,
-        selected_paths=selected_paths,
+        existing_paths=existing_paths,
+        selected_candidates=selected_candidates,
+        expected_total_pages=expected_total_pages,
         evidence_bank=evidence_bank,
     )
 
@@ -147,7 +162,14 @@ def run_candidate(
     )
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
-    validation_returncode = run_validation(worktree, slug, min_pages, max_pages, selected_paths, normalized_source)
+    validation_returncode = run_validation(
+        worktree,
+        slug,
+        expected_total_pages,
+        expected_total_pages,
+        allowed_paths,
+        normalized_source,
+    )
 
     for attempt in range(1, repair_attempts + 1):
         if validation_returncode == 0:
@@ -155,9 +177,10 @@ def run_candidate(
         repair_prompt = render_repair_prompt(
             slug=slug,
             validation_output=(worktree / "phase2-validation.log").read_text(),
-            min_pages=min_pages,
-            max_pages=max_pages,
-            selected_paths=selected_paths,
+            min_pages=expected_total_pages,
+            max_pages=expected_total_pages,
+            selected_candidates=selected_candidates,
+            existing_paths=existing_paths,
             normalized_source=normalized_source,
             evidence_bank=evidence_bank,
         )
@@ -171,7 +194,14 @@ def run_candidate(
         )
         codex_returncodes.append(returncode)
         log_paths.extend(paths)
-        validation_returncode = run_validation(worktree, slug, min_pages, max_pages, selected_paths, normalized_source)
+        validation_returncode = run_validation(
+            worktree,
+            slug,
+            expected_total_pages,
+            expected_total_pages,
+            allowed_paths,
+            normalized_source,
+        )
 
     duration_s = time.monotonic() - start
     changed_files = git_changed_files(worktree)
@@ -194,19 +224,25 @@ def render_prompt(
     normalized_source: str,
     min_pages: int,
     max_pages: int,
-    selected_paths: list[str],
+    existing_paths: list[str],
+    selected_candidates: list[RelatedCandidate],
+    expected_total_pages: int,
     evidence_bank: str,
 ) -> str:
-    selected_candidates = render_selected_candidates(selected_paths)
+    selected_paths = [candidate.path for candidate in selected_candidates]
+    selected_text = render_selected_candidates(selected_candidates)
     replacements = {
         "{{current_date}}": date.today().isoformat(),
         "{{slug}}": slug,
         "{{normalized_source}}": normalized_source,
         "{{min_pages}}": str(min_pages),
         "{{max_pages}}": str(max_pages),
-        "{{selected_candidates}}": selected_candidates,
+        "{{existing_pages}}": render_existing_pages(existing_paths),
+        "{{selected_count}}": str(len(selected_paths)),
+        "{{expected_total_pages}}": str(expected_total_pages),
+        "{{selected_candidates}}": selected_text,
         "{{evidence_bank}}": evidence_bank,
-        "{{allowed_page_args}}": allowed_page_args(selected_paths),
+        "{{allowed_page_args}}": allowed_page_args(sorted(set(existing_paths + selected_paths))),
     }
     rendered = template
     for old, new in replacements.items():
@@ -242,6 +278,7 @@ def run_validation(
         ["python3", "tools/wiki_link_related.py", slug],
         ["python3", "tools/wiki_fix_broken_links.py", slug],
         ["python3", "tools/wiki_normalize_ascii.py", slug],
+        ["python3", "tools/wiki_normalize_tables.py", slug],
         synthesis_command,
         ["pnpm", "wiki:grounding:check"],
     ]
@@ -261,8 +298,33 @@ def run_validation(
         if completed.returncode != 0 and returncode == 0:
             returncode = completed.returncode
 
+    scope_failures = changed_file_scope_failures(worktree, slug, selected_paths)
+    if scope_failures:
+        outputs.append("$ changed-file scope check")
+        outputs.extend(f"FAIL: {failure}" for failure in scope_failures)
+        if returncode == 0:
+            returncode = 1
+
     (worktree / "phase2-validation.log").write_text("\n".join(outputs))
     return returncode
+
+
+def changed_file_scope_failures(worktree: Path, slug: str, allowed_paths: list[str]) -> list[str]:
+    allowed = {f"wiki/sources/{slug}.md"}
+    allowed.update(source_relative_to_repo(path) for path in allowed_paths)
+    failures: list[str] = []
+    for changed in git_changed_files(worktree):
+        path = changed_status_path(changed)
+        if path and path not in allowed:
+            failures.append(f"{path} changed outside Phase 2 allowed files")
+    return failures
+
+
+def changed_status_path(line: str) -> str:
+    value = line[3:].strip() if len(line) > 3 else line.strip()
+    if " -> " in value:
+        value = value.split(" -> ", 1)[1].strip()
+    return value
 
 
 def render_repair_prompt(
@@ -271,11 +333,15 @@ def render_repair_prompt(
     validation_output: str,
     min_pages: int,
     max_pages: int,
-    selected_paths: list[str],
+    selected_candidates: list[RelatedCandidate],
+    existing_paths: list[str],
     normalized_source: Path,
     evidence_bank: str,
 ) -> str:
-    selected = render_selected_candidates(selected_paths)
+    selected_paths = [candidate.path for candidate in selected_candidates]
+    allowed_paths = sorted(set(existing_paths + selected_paths))
+    selected = render_selected_candidates(selected_candidates)
+    existing = render_existing_pages(existing_paths)
     return f"""Read `AGENTS.md` fully before acting.
 
 Repair only Phase 2 synthesis for `wiki/sources/{slug}.md`.
@@ -306,27 +372,35 @@ Validation failed with this exact output:
 ```
 
 Fix the failures mechanically:
-- Keep {min_pages} to {max_pages} synthesized pages linked from `wiki/sources/{slug}.md`.
-- The only selected pages for this phase are:
+- Existing synthesized pages for this source that should remain linked:
+{existing}
+- Create or update exactly these selected pages in this repair:
 {selected}
 - Evidence bank with exact normalized-source snippets:
 {evidence_bank}
+- After repair, `wiki/sources/{slug}.md` should link to exactly {min_pages} synthesized pages total: existing pages plus selected pages.
 - If any other synthesized pages were created for this source, delete them and return their source-page `Related pages` rows to `not created yet`.
 - Each synthesized page must have correct frontmatter, a body link to the source page, and a source page section.
 - Each synthesized page must have exactly one `## Source-backed details` section and it must contain substantial source-backed content.
-- Each synthesized page must include a `## Source-backed details` evidence table with header `| Claim | Evidence | Source |`.
+- Each synthesized page must include a `## Source-backed details` evidence table with header `| Claim | Evidence | Locator | Source |`.
 - Each evidence cell must contain a short exact excerpt from the normalized source, not a paraphrase.
+- Each locator cell must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
+- Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
 - Remove empty headings, duplicate headings, and empty `## Executable implementation` sections.
+- Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
+- Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
 - Synthesized-page cross-links may point only to pages that already exist or pages created in this phase.
 - Do not create extra pages to repair broken cross-links; remove the broken Markdown link or change it to plain text instead.
 - Created pages and not-yet-created candidates must use this canonical `## Related pages` row shape:
 
 ```md
-| Page title | [../concepts/example.md](../concepts/example.md) | created |
-| Page title | `../concepts/example.md` | not created yet |
+| Page title | [../concepts/example.md](../concepts/example.md) | Source-native group name | must create | concrete evidence basis | created |
+| Page title | `../concepts/example.md` | Source-native group name | should create | concrete evidence basis | not created yet |
 ```
 
+- Preserve any Group, Priority, and Evidence basis cells already present in `## Related pages`.
+- Do not use placeholder text such as `Page title`; keep the real page titles in the first column.
 - Use ASCII punctuation unless the source requires otherwise.
 - Do not update index, graph, log, reports, raw files, code, or tools.
 
@@ -336,7 +410,8 @@ After editing, run exactly:
 python3 tools/wiki_link_related.py {slug}
 python3 tools/wiki_fix_broken_links.py {slug}
 python3 tools/wiki_normalize_ascii.py {slug}
-python3 tools/wiki_check_synthesis.py {slug} --min-pages {min_pages} --max-pages {max_pages}{allowed_page_args(selected_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+python3 tools/wiki_normalize_tables.py {slug}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {min_pages} --max-pages {max_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
 pnpm wiki:grounding:check
 ```
 
@@ -362,21 +437,41 @@ def print_result(result: Result) -> None:
     print(f"- logs: {log_list}, {result.worktree / 'phase2-validation.log'}")
 
 
-def selected_candidate_paths(source_page: Path, max_pages: int) -> list[str]:
+def selected_candidate_paths(source_page: Path, max_pages: int) -> list[RelatedCandidate]:
     fm = parse_frontmatter(source_page)
     related = section(fm.body, "## Related pages")
     rows = related_candidate_rows(related)
     if rows:
-        selected = sorted(rows, key=lambda row: (PRIORITY_ORDER.get(row[1], 1), row[2]))
-        return [path for path, _priority, _index in selected[:max_pages]]
-    return code_paths(related)[:max_pages]
+        return sorted(rows, key=lambda row: (PRIORITY_ORDER.get(row.priority, 1), row.index))[:max_pages]
+    return [
+        RelatedCandidate(path=path, priority="should create", index=index)
+        for index, path in enumerate(code_paths(related)[:max_pages])
+    ]
 
 
-def related_candidate_rows(markdown: str) -> list[tuple[str, str, int]]:
-    rows: list[tuple[str, str, int]] = []
+def existing_created_paths(source_page: Path) -> list[str]:
+    fm = parse_frontmatter(source_page)
+    related = section(fm.body, "## Related pages")
+    paths: list[str] = []
+    for line in related.splitlines():
+        cells = split_table_row(line)
+        if cells is None or is_separator_row(cells) or cells[0].lower() in {"candidate page", "page"}:
+            continue
+        if len(cells) not in {3, 5, 6}:
+            continue
+        if cells[-1].strip().lower() != "created":
+            continue
+        target = markdown_target(cells[1])
+        if target:
+            paths.append(target)
+    return sorted(set(paths))
+
+
+def related_candidate_rows(markdown: str) -> list[RelatedCandidate]:
+    rows: list[RelatedCandidate] = []
     for index, line in enumerate(markdown.splitlines()):
         cells = split_table_row(line)
-        if cells is None or len(cells) not in {3, 5}:
+        if cells is None or len(cells) not in {3, 5, 6}:
             continue
         if is_separator_row(cells) or cells[0].lower() in {"candidate page", "page"}:
             continue
@@ -384,14 +479,25 @@ def related_candidate_rows(markdown: str) -> list[tuple[str, str, int]]:
         target = code_cell_target(cells[1])
         if status != "not created yet" or target is None:
             continue
-        priority = cells[2].strip().lower() if len(cells) == 5 else "should create"
-        rows.append((target, priority, index))
+        group = cells[2].strip() if len(cells) == 6 else None
+        priority = cells[3].strip().lower() if len(cells) == 6 else cells[2].strip().lower() if len(cells) == 5 else "should create"
+        rows.append(RelatedCandidate(path=target, group=group, priority=priority, index=index))
     return rows
 
 
-def render_selected_candidates(paths: list[str]) -> str:
-    if not paths:
+def render_selected_candidates(candidates: list[RelatedCandidate]) -> str:
+    if not candidates:
         return "- No candidate paths found; stop and report this."
+    lines: list[str] = []
+    for candidate in candidates:
+        group = candidate.group or "unclassified"
+        lines.append(f"- `{candidate.path}` - group: {group}; priority: {candidate.priority}")
+    return "\n".join(lines)
+
+
+def render_existing_pages(paths: list[str]) -> str:
+    if not paths:
+        return "- None."
     return "\n".join(f"- `{path}`" for path in paths)
 
 
@@ -420,6 +526,11 @@ def code_cell_target(cell: str) -> str | None:
         if value.endswith(".md"):
             return value
     return None
+
+
+def markdown_target(cell: str) -> str | None:
+    match = re.fullmatch(r"\[[^\]]+\]\(([^)]+\.md)\)", cell.strip())
+    return match.group(1) if match else None
 
 
 def source_relative_to_repo(path: str) -> str:

@@ -6,6 +6,94 @@
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
+    "wiki:concepts/aoe2-army-composition": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-army-composition.md",
+      "description": "Army composition refers to the selection and arrangement of different unit types to create an effective fighting force.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-build-orders": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-build-orders.md",
+      "description": "A build order is a sequence of actions that guides players to efficiently reach specific ages in the game.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-economy-balance": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-economy-balance.md",
+      "description": "This balance of economy while producing and using your army is difficult to perfect.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-lanchesters-law": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-lanchesters-law.md",
+      "description": "Lanchester's Law is a mathematical model that describes combat effectiveness in military contexts, which applies to unit interactions in Age of Empires II.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-map-awareness": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-map-awareness.md",
+      "description": "Map awareness refers to a player's understanding of the current state of the map and the strategic implications of terrain and resource distribution.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-opening-interactions": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-opening-interactions.md",
+      "description": "Opening interactions in Age of Empires II refer to how players respond to each other during the early stages of a match, particularly in terms of resource gathering and unit deplo\u2026",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-team-play-strategies": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-team-play-strategies.md",
+      "description": "Team play strategies in Age of Empires II refer to coordinated tactics and approaches used by players working together in multiplayer matches.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-unit-counter-interactions": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-unit-counter-interactions.md",
+      "description": "Unit counter interactions refer to how different units in Age of Empires II interact with each other in combat, particularly in terms of which units can effectively counter others.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:concepts/compound-interest": {
       "type": "concept",
       "path": "wiki/concepts/compound-interest.md",
@@ -24,7 +112,16 @@
       "sources": [
         "../../raw/imported/aoe2-basics/original.pdf"
       ],
-      "depends_on": []
+      "depends_on": [
+        "wiki:concepts/aoe2-army-composition",
+        "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-economy-balance",
+        "wiki:concepts/aoe2-lanchesters-law",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-opening-interactions",
+        "wiki:concepts/aoe2-team-play-strategies",
+        "wiki:concepts/aoe2-unit-counter-interactions"
+      ]
     },
     "wiki:sources/compound-interest": {
       "type": "source",

@@ -52,11 +52,21 @@ This document is an organized arrangement of gameplay concepts simplified and ex
 
 ## Major concepts
 
-Foundation - Covers basic gameplay mechanics like hotkeys, controls, creating villagers, and build orders.
-Core fundamentals - Focuses on economy management, continuous production, Lanchester's law, and army usage.
-Common edges - Addresses military upgrades, counter units, uptimes, and unit interactions.
-Niches - Explores opening interactions, army composition planning, game plans, and decision making.
-Miscellaneous - Includes water maps, mixed maps, closed maps, and team games.
+Foundation - Covers basic gameplay mechanics like hotkeys, controls, creating villagers, building placement, scouting, and build orders.
+Core fundamentals - Focuses on economy balance, continuous production, Lanchester's law, army usage, and resource management.
+Common edges - Addresses economy upgrades, military upgrades, counter units, uptimes, and unit interactions.
+Strategic synthesis - Explores map awareness, opening interactions, army composition planning, game plans, decision making, and fitting gameplay elements together.
+Map and team contexts - Includes water maps, mixed maps, closed maps, team games, trading, trash-unit tradeoffs, ally coordination, and slinging.
+
+### Natural groupings
+
+| Group | Scope | Evidence basis | Candidate page types |
+|---|---|---|---|
+| Foundation | Early mechanical skills and opening execution that make later play possible. | hotkeys, controls, creating villagers, building placement, scouting, build orders | concept, procedure |
+| Core fundamentals | Recurring economy and combat principles that determine whether production and fights can be sustained. | economy balance, continuous production, Lanchester's law, army usage, resource management | concept, procedure, reference |
+| Common edges | Upgrade and unit-interaction knowledge used to sharpen otherwise standard play. | economy upgrades, military upgrades, counter units, uptimes, unit interactions | concept, reference |
+| Strategic synthesis | Higher-level decisions that combine scouting, map state, unit choices, openings, and plans. | map awareness, opening interactions, army composition, game plans, decision making | concept, procedure |
+| Map and team contexts | Mode- and map-specific adjustments for water, mixed, closed, and team games. | water maps, mixed maps, closed maps, team games, trade, slinging | concept, procedure |
 
 ## Entities
 
@@ -90,21 +100,21 @@ Team coordination - This involves working with allies in team games.
 
 ## Related pages
 
-| Candidate page | Intended path | Status |
-|---|---|---|
-| AoE2 Economy Balance | `../concepts/aoe2-economy-balance.md` | not created yet |
-| AoE2 Build Orders | `../concepts/aoe2-build-orders.md` | not created yet |
-| AoE2 Unit Counter Interactions | `../concepts/aoe2-unit-counter-interactions.md` | not created yet |
-| AoE2 Map Awareness | `../concepts/aoe2-map-awareness.md` | not created yet |
-| AoE2 Army Composition | `../concepts/aoe2-army-composition.md` | not created yet |
-| AoE2 Team Play Strategies | `../concepts/aoe2-team-play-strategies.md` | not created yet |
-| AoE2 Opening Interactions | `../concepts/aoe2-opening-interactions.md` | not created yet |
-| AoE2 Lanchester's Law | `../concepts/aoe2-lanchesters-law.md` | not created yet |
-| AoE2 Economy Upgrades | `../concepts/aoe2-economy-upgrades.md` | not created yet |
-| AoE2 Military Upgrades | `../concepts/aoe2-military-upgrades.md` | not created yet |
-| AoE2 Scouting Techniques | `../concepts/aoe2-scouting-techniques.md` | not created yet |
-| AoE2 Resource Management | `../concepts/aoe2-resource-management.md` | not created yet |
-| AoE2 Game Plans | `../concepts/aoe2-game-plans.md` | not created yet |
-| AoE2 Decision Making | `../concepts/aoe2-decision-making.md` | not created yet |
-| AoE2 Water Maps | `../concepts/aoe2-water-maps.md` | not created yet |
-| AoE2 Mixed Maps | `../concepts/aoe2-mixed-maps.md` | not created yet |
+| Candidate page | Intended path | Group | Priority | Evidence basis | Status |
+|---|---|---|---|---|---|
+| AoE2 Economy Balance | [../concepts/aoe2-economy-balance.md](../concepts/aoe2-economy-balance.md) | Core fundamentals | must create | balancing resource income while producing and using army | created |
+| AoE2 Build Orders | [../concepts/aoe2-build-orders.md](../concepts/aoe2-build-orders.md) | Foundation | must create | build-order definition, feudal timing, idle TC, villager movement | created |
+| AoE2 Unit Counter Interactions | [../concepts/aoe2-unit-counter-interactions.md](../concepts/aoe2-unit-counter-interactions.md) | Common edges | must create | counter units, unit interactions, upgrades, and combat positioning | created |
+| AoE2 Map Awareness | [../concepts/aoe2-map-awareness.md](../concepts/aoe2-map-awareness.md) | Strategic synthesis | must create | terrain, scouting information, resource exposure, and map state | created |
+| AoE2 Army Composition | [../concepts/aoe2-army-composition.md](../concepts/aoe2-army-composition.md) | Strategic synthesis | must create | unit-type combinations, army roles, and composition planning | created |
+| AoE2 Team Play Strategies | [../concepts/aoe2-team-play-strategies.md](../concepts/aoe2-team-play-strategies.md) | Map and team contexts | must create | gold units, early trade, team aggression, coordination, slinging | created |
+| AoE2 Opening Interactions | [../concepts/aoe2-opening-interactions.md](../concepts/aoe2-opening-interactions.md) | Strategic synthesis | must create | early-game responses, openings, and interaction timing | created |
+| AoE2 Lanchester's Law | [../concepts/aoe2-lanchesters-law.md](../concepts/aoe2-lanchesters-law.md) | Core fundamentals | must create | army-size effectiveness and fight-taking implications | created |
+| AoE2 Economy Upgrades | `../references/aoe2-economy-upgrades.md` | Common edges | should create | gold mining, stone mining, farming, and resource production rates | not created yet |
+| AoE2 Military Upgrades | `../references/aoe2-military-upgrades.md` | Common edges | should create | sword upgrades, archer upgrades, and combat effectiveness | not created yet |
+| AoE2 Scouting Techniques | `../procedures/aoe2-scouting-techniques.md` | Foundation | should create | scouting enemy openings, army movement, and resource exposure | not created yet |
+| AoE2 Resource Management | `../concepts/aoe2-resource-management.md` | Core fundamentals | should create | resource allocation, villager production, economy balance, and spending | not created yet |
+| AoE2 Game Plans | `../procedures/aoe2-game-plans.md` | Strategic synthesis | should create | game plans, decision making, timings, and fitting elements together | not created yet |
+| AoE2 Decision Making | `../concepts/aoe2-decision-making.md` | Strategic synthesis | should create | evaluating resources, timing, unit interactions, and map conditions | not created yet |
+| AoE2 Water Maps | `../concepts/aoe2-water-maps.md` | Map and team contexts | could create | limited building space, movement, and water-map strategic adjustments | not created yet |
+| AoE2 Mixed Maps | `../concepts/aoe2-mixed-maps.md` | Map and team contexts | could create | mixed terrain, resource management, and unit positioning adjustments | not created yet |
