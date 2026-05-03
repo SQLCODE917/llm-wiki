@@ -80,6 +80,14 @@ pages so lookup tables are treated as auditable source-backed facts, not inferre
 pages also pass through `wiki:repair-reference` before validation to fix mechanical locator/table issues
 without asking the model to reason again.
 
+Use `--report <path>` when comparing models or preserving a run summary. The report records the candidate,
+duration, worktree, validation status, changed files, and judge-report paths.
+
+When `--judge-batch` is used, `wiki:phase2-single` first tries one compact judge call for speed. If that
+call fails because the local model did not return parseable JSON, the runner automatically falls back to
+row-wise judging before asking the synthesis model to repair anything. This preserves the faster path when
+it works while keeping small per-row judge tasks available for weaker local models.
+
 ### Unit D: Claim Judge
 
 Input:
@@ -149,6 +157,20 @@ Command:
 pnpm wiki:repair-reference wiki/references/example.md --normalized-source raw/normalized/<slug>/source.md
 ```
 
+### Unit D4: Scope Check
+
+Input:
+- the source page `## Related pages` row for a created page
+- synthesized-page evidence rows
+
+Output:
+- deterministic failure if a reference-page row has no lexical overlap with the created page's title,
+  path, or Related-pages evidence basis
+
+Purpose:
+- catch topical drift such as an economy-upgrade row inside a military-upgrades reference page
+- keep row-level reference data inside the source-native candidate boundary
+
 ### Unit F: Query Answer
 
 Input:
@@ -161,6 +183,7 @@ Output:
 
 Validation:
 - inspect `pnpm wiki:query "<question>" --plan-only` before invoking a local model
+- run `pnpm wiki:check-analysis <page>` before filing an analysis into index/graph/log
 - if `--save-analysis` is used, regenerate `wiki/index.md` and `wiki/_graph.json`, then append a query log entry
 
 Command:
@@ -168,6 +191,7 @@ Command:
 ```bash
 pnpm wiki:query "What should I know about this topic?" --plan-only
 pnpm wiki:query "What should I know about this topic?" --candidate local-4090
+pnpm wiki:check-analysis wiki/analyses/YYYY-MM-DD-example.md
 ```
 
 ### Unit E: Repair

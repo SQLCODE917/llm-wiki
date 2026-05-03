@@ -214,6 +214,7 @@ def save_analysis(question: str, slug: str | None, answer: str, hits: list[PageH
 
 
 def finalize_analysis(path: Path, question: str, hits: list[PageHit]) -> None:
+    run(["python3", "tools/wiki_check_analysis.py", path.as_posix()])
     run(["python3", "tools/wiki_index.py"])
     run(["python3", "tools/wiki_graph.py"])
     details = [

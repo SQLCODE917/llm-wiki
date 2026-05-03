@@ -28,6 +28,7 @@ None.
 ## References
 
 - [AoE2 Economy Upgrades](references/aoe2-economy-upgrades.md) — This reference page lists economy-upgrade facts from the AoE2 basics guide.
+- [AoE2 Military Upgrades](references/aoe2-military-upgrades.md) — This reference page documents military upgrade facts from the source that affect Age of Empires II combat, especially archer, crossbow, bodkin, fletching, and knight armor interac…
 
 ## Analyses
 

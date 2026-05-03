@@ -454,7 +454,7 @@ pnpm wiki:check-source <slug>
 pnpm wiki:check-synthesis <slug>
 pnpm wiki:phase1-benchmark <slug>
 pnpm wiki:phase2-benchmark <slug>
-pnpm wiki:phase2-single <slug> <candidate-path>
+pnpm wiki:phase2-single <slug> <candidate-path> --report .tmp/phase2-run.md
 pnpm wiki:review-phase2 <slug> <worktree>
 pnpm wiki:adopt-phase2 <slug> <worktree>
 pnpm wiki:phase3 <slug>
@@ -470,6 +470,7 @@ pnpm wiki:judge-claims <page> --normalized-source <path> --candidate local-4090
 pnpm wiki:claim-hints <page> --normalized-source <path>
 pnpm wiki:repair-reference <page> --normalized-source <path>
 pnpm wiki:query "question" --plan-only
+pnpm wiki:check-analysis <page>
 pnpm wiki:fix-links <slug>
 pnpm wiki:normalize-ascii <slug>
 pnpm wiki:normalize-tables <slug>
@@ -492,6 +493,12 @@ worktrees, run:
 ```bash
 pnpm wiki:phase2-single <slug> ../concepts/example.md --candidate local-4090
 ```
+
+Add `--report <path>` to `wiki:phase2-single` or `wiki:phase2-benchmark` when comparing local models
+or preserving a disposable-worktree result for later review.
+
+`wiki:phase2-single --judge-batch` may use a faster one-call local judge first. If that judge fails because
+the local model does not return parseable JSON, the runner falls back to row-wise judging automatically.
 
 For query trials, first inspect the deterministic context selection:
 

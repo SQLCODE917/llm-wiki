@@ -73,6 +73,7 @@ def main() -> int:
         default=1,
         help="number of extra Codex repair prompts to run after failed validation",
     )
+    parser.add_argument("--report", help="write a Markdown benchmark report to this path")
     parser.add_argument("--keep", action="store_true", help="keep temp worktrees after the run")
     args = parser.parse_args()
 
@@ -107,6 +108,9 @@ def main() -> int:
         print_result(result)
         if not args.keep:
             shutil.rmtree(result.worktree, ignore_errors=True)
+
+    if args.report:
+        write_report(Path(args.report), args.slug, results)
 
     return 0 if all(result.validation_returncode == 0 for result in results) else 1
 
@@ -370,6 +374,8 @@ def changed_status_path(line: str) -> str:
 
 def is_runner_artifact(path: str) -> bool:
     name = Path(path).name
+    if path == "wiki/_claim-judge-report.md":
+        return True
     if name == "phase2-validation.log":
         return True
     if re.fullmatch(r"phase2-judge(?:-[A-Za-z0-9_.-]+)?\.(?:md|log)", name):
@@ -410,6 +416,7 @@ Forbidden writes:
 - `wiki/log.md`
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
+- `wiki/_claim-judge-report.md`
 - `wiki/_grounding-report.md`
 - `wiki/analyses/**`
 - `packages/**`
@@ -491,6 +498,35 @@ def print_result(result: Result) -> None:
         print("  - None")
     log_list = ", ".join(str(path) for path in result.log_paths)
     print(f"- logs: {log_list}, {result.worktree / 'phase2-validation.log'}")
+
+
+def write_report(path: Path, slug: str, results: list[Result]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lines = [
+        "# Phase 2 Benchmark Report",
+        "",
+        f"- Source slug: `{slug}`",
+        f"- Candidates: {len(results)}",
+        "",
+        "| Candidate | Duration | Codex | Validation | Worktree |",
+        "|---|---:|---|---|---|",
+    ]
+    for result in results:
+        codex_status = ", ".join("timeout" if code is None else str(code) for code in result.codex_returncodes)
+        validation_status = "pass" if result.validation_returncode == 0 else f"fail:{result.validation_returncode}"
+        lines.append(
+            f"| {result.candidate.label} | {result.duration_s:.1f}s | {codex_status} | {validation_status} | `{result.worktree}` |"
+        )
+    lines.extend(["", "## Changed Files", ""])
+    for result in results:
+        lines.extend([f"### {result.candidate.label}", ""])
+        if result.changed_files:
+            lines.extend(f"- `{changed}`" for changed in result.changed_files)
+        else:
+            lines.append("- None.")
+        lines.append("")
+    path.write_text("\n".join(lines).rstrip() + "\n")
+    print(f"wrote {path}")
 
 
 def selected_candidate_paths(source_page: Path, max_pages: int) -> list[RelatedCandidate]:

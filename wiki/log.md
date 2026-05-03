@@ -103,3 +103,27 @@
 - Compared qwen3-coder:30b and gpt-oss:20b on aoe2-military-upgrades; qwen was faster and more topical, while gpt-oss needed repetition cleanup and drifted into economy-upgrade content.
 
 ---
+
+## [2026-05-03] ingest | adopted AoE2 military upgrades reference
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] schema-change | strengthened local ingest verification
+
+- Added reference row scope validation to catch topical drift inside generated reference pages.
+- Added analysis-page validation and wired saved query analyses through it before index, graph, and log updates.
+- Added Phase 2 run reports and batch-judge-to-row-wise fallback for local judge JSON failures.
+- Adopted AoE2 military upgrades after deterministic synthesis validation and row-wise local claim judging passed.
+
+---
+## [2026-05-03] lint | 0 FAIL | 1 WARN
+
+- FAIL: 0
+- WARN: 1
+- Report: wiki/_linter-report.md
+
+---

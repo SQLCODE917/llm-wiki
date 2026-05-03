@@ -46,6 +46,14 @@ class EvidenceSource:
     lines: list[str]
 
 
+@dataclass(frozen=True)
+class RelatedScope:
+    title: str
+    path: str
+    group: str | None
+    evidence_basis: str | None
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate Phase 2 synthesized pages for one source.")
     parser.add_argument("slug", help="source slug, e.g. aoe2-basics")
@@ -130,10 +138,19 @@ def check_synthesis(
     for page in sorted(set(linked_pages) - set(sourced_pages)):
         failures.append(f"{page}: page is linked from source but does not cite that source in frontmatter")
 
-    for page in created_pages:
-        failures.extend(check_synthesized_page(page, source_path, min_evidence_rows, evidence_source))
-
     related = section(parse_frontmatter(source_path).body, "## Related pages")
+    scopes = related_scopes(source_path, related)
+    for page in created_pages:
+        failures.extend(
+            check_synthesized_page(
+                page,
+                source_path,
+                min_evidence_rows,
+                evidence_source,
+                scopes.get(page.as_posix()),
+            )
+        )
+
     failures.extend(check_related_table(source_path, related))
     for code_path in code_paths(related):
         candidate = (source_path.parent / code_path).resolve()
@@ -240,6 +257,34 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
     return failures
 
 
+def related_scopes(source_path: Path, related: str) -> dict[str, RelatedScope]:
+    scopes: dict[str, RelatedScope] = {}
+    for line in related.splitlines():
+        cells = split_table_row(line)
+        if cells is None or is_separator_row(cells) or cells[0].lower() in {"candidate page", "page"}:
+            continue
+        if len(cells) not in {3, 5, 6}:
+            continue
+        if cells[-1].strip().lower() != RELATED_CREATED:
+            continue
+        target = link_cell_target(cells[1])
+        if target is None:
+            continue
+        try:
+            rel = (source_path.parent / target).resolve().relative_to(Path.cwd().resolve()).as_posix()
+        except ValueError:
+            continue
+        group = cells[2].strip() if len(cells) == 6 else None
+        evidence_basis = cells[4].strip() if len(cells) == 6 else cells[3].strip() if len(cells) == 5 else None
+        scopes[rel] = RelatedScope(
+            title=strip_markdown(cells[0]).strip(),
+            path=rel,
+            group=group,
+            evidence_basis=evidence_basis,
+        )
+    return scopes
+
+
 def sourced_synthesized_pages(source_path: Path) -> list[Path]:
     pages: list[Path] = []
     for directory in ("wiki/concepts", "wiki/entities", "wiki/procedures", "wiki/references"):
@@ -265,6 +310,7 @@ def check_synthesized_page(
     source_path: Path,
     min_evidence_rows: int,
     evidence_source: EvidenceSource | None,
+    related_scope: RelatedScope | None,
 ) -> list[str]:
     failures: list[str] = []
     text = page.read_text()
@@ -323,12 +369,12 @@ def check_synthesized_page(
         detail_tokens = content_tokens(details)
         if len(detail_tokens) < 25:
             failures.append(f"{page}: source-backed details section is too thin")
-        failures.extend(check_evidence_table(page, source_path, details, min_evidence_rows, evidence_source))
+        failures.extend(check_evidence_table(page, source_path, details, min_evidence_rows, evidence_source, related_scope))
 
     if "## Source pages" not in body_headings and "## Sources" not in body_headings:
         failures.append(f"{page}: missing source page section")
 
-    failures.extend(check_type_specific_sections(page, fm.body, page_type, evidence_source))
+    failures.extend(check_type_specific_sections(page, fm.body, page_type, evidence_source, related_scope))
     return failures
 
 
@@ -365,6 +411,7 @@ def check_evidence_table(
     details: str,
     min_evidence_rows: int,
     evidence_source: EvidenceSource | None,
+    related_scope: RelatedScope | None,
 ) -> list[str]:
     failures: list[str] = []
     rows = table_rows(details)
@@ -408,6 +455,7 @@ def check_evidence_table(
             failures.append(f"{page}: evidence row {index} repeats phrase {repeated!r}")
 
         excerpt = clean_evidence_excerpt(evidence)
+        failures.extend(scope_failures(page, f"evidence row {index}", claim + " " + excerpt, related_scope))
         claim_norm = normalize_for_search(strip_markdown(claim))
         excerpt_norm = normalize_for_search(excerpt)
         if claim_norm == excerpt_norm or SequenceMatcher(None, claim_norm, excerpt_norm).ratio() > 0.88:
@@ -460,6 +508,7 @@ def check_type_specific_sections(
     body: str,
     page_type: object,
     evidence_source: EvidenceSource | None,
+    related_scope: RelatedScope | None,
 ) -> list[str]:
     failures: list[str] = []
     if page_type == "procedure":
@@ -475,7 +524,7 @@ def check_type_specific_sections(
         elif table_data_row_count(reference_data) < 2:
             failures.append(f"{page}: Reference data table has fewer than 2 data rows")
         else:
-            failures.extend(check_reference_data_table(page, reference_data, evidence_source))
+            failures.extend(check_reference_data_table(page, reference_data, evidence_source, related_scope))
     return failures
 
 
@@ -483,6 +532,7 @@ def check_reference_data_table(
     page: Path,
     markdown: str,
     evidence_source: EvidenceSource | None,
+    related_scope: RelatedScope | None,
 ) -> list[str]:
     failures: list[str] = []
     rows = table_rows(markdown)
@@ -518,6 +568,7 @@ def check_reference_data_table(
         repeated = repeated_phrase(fact_text)
         if repeated:
             failures.append(f"{page}: Reference data row {row_number} repeats phrase {repeated!r}")
+        failures.extend(scope_failures(page, f"Reference data row {row_number}", fact_text + " " + evidence, related_scope))
         fact_norm = normalize_for_search(supported_fact_text or fact_text)
         evidence_norm = normalize_for_search(evidence)
         if fact_norm in seen_facts:
@@ -551,6 +602,66 @@ def check_reference_data_table(
                 f"{page}: Reference data row {row_number} likely overreaches evidence; unsupported terms: {', '.join(unsupported[:10])}"
             )
     return failures
+
+
+def scope_failures(page: Path, row_label: str, row_text: str, related_scope: RelatedScope | None) -> list[str]:
+    if related_scope is None or page.parts[1] != "references":
+        return []
+    scope = scope_tokens(related_scope)
+    if len(scope) < 3:
+        return []
+    row = lexical_tokens(row_text)
+    if scope & row:
+        return []
+    return [
+        f"{page}: {row_label} appears outside Related-pages scope; expected one of {sorted(scope)[:12]}"
+    ]
+
+
+def scope_tokens(scope: RelatedScope) -> set[str]:
+    return lexical_tokens(" ".join(part for part in [scope.title, scope.path, scope.evidence_basis or ""] if part))
+
+
+def lexical_tokens(text: str) -> set[str]:
+    ignored = {
+        "aoe2",
+        "page",
+        "pages",
+        "source",
+        "sources",
+        "reference",
+        "references",
+        "concept",
+        "concepts",
+        "procedure",
+        "procedures",
+        "entity",
+        "entities",
+        "wiki",
+        "common",
+        "edge",
+        "edges",
+        "upgrade",
+        "upgrades",
+        "fact",
+        "facts",
+        "supported",
+        "guide",
+        "basics",
+        "noobs",
+        "and",
+        "or",
+    }
+    tokens = set(content_tokens(text.replace("-", " ")))
+    for raw in re.findall(r"[A-Za-z][A-Za-z0-9']*", text.replace("-", " ").lower()):
+        token = raw.strip("'")
+        if token.endswith("'s"):
+            token = token[:-2]
+        if len(token) > 4 and token.endswith("s"):
+            token = token[:-1]
+        if len(token) >= 3 and token not in ignored and "aoe2" not in token:
+            tokens.add(token)
+    return {token for token in tokens - ignored if "aoe2" not in token}
 
 
 def supported_fact_cell_text(

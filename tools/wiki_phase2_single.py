@@ -43,6 +43,7 @@ def main() -> int:
     parser.add_argument("--judge-repair-attempts", type=int, default=1)
     parser.add_argument("--judge-batch", action="store_true", help="judge all claim rows in one local-model call")
     parser.add_argument("--skip-judge", action="store_true", help="only run deterministic validation")
+    parser.add_argument("--report", help="write a Markdown run report to this path")
     parser.add_argument("--keep", action="store_true", help="keep temp worktree after the run")
     args = parser.parse_args()
 
@@ -80,6 +81,8 @@ def main() -> int:
             skip_judge=args.skip_judge,
         )
         print_result(result)
+        if args.report:
+            write_report(Path(args.report), args.slug, candidate_path, result)
         return 0 if result["validation_returncode"] == 0 and result["judge_returncode"] == 0 else 1
     finally:
         if not args.keep:
@@ -214,7 +217,7 @@ def run_single_candidate(
 
     judge_returncode = 0
     if validation_returncode == 0 and not skip_judge:
-        judge_returncode, judge_report = run_judge(
+        judge_returncode, judge_report, reports = run_judge_with_optional_row_fallback(
             worktree=worktree,
             page=selected_repo_path,
             normalized_source=normalized_source,
@@ -224,7 +227,7 @@ def run_single_candidate(
             batch=judge_batch,
             prefix="phase2-judge",
         )
-        judge_report_paths.append(judge_report)
+        judge_report_paths.extend(reports)
 
         for attempt in range(1, judge_repair_attempts + 1):
             if judge_returncode == 0:
@@ -265,7 +268,7 @@ def run_single_candidate(
             if validation_returncode != 0:
                 judge_returncode = 1
                 break
-            judge_returncode, judge_report = run_judge(
+            judge_returncode, judge_report, reports = run_judge_with_optional_row_fallback(
                 worktree=worktree,
                 page=selected_repo_path,
                 normalized_source=normalized_source,
@@ -275,7 +278,7 @@ def run_single_candidate(
                 batch=judge_batch,
                 prefix=f"phase2-judge-repair-{attempt}",
             )
-            judge_report_paths.append(judge_report)
+            judge_report_paths.extend(reports)
     elif validation_returncode != 0:
         judge_returncode = 1
 
@@ -344,6 +347,59 @@ def run_judge(
     return completed.returncode, output
 
 
+def run_judge_with_optional_row_fallback(
+    *,
+    worktree: Path,
+    page: str,
+    normalized_source: Path,
+    judge_candidate: str,
+    codex_bin: str,
+    timeout: int,
+    batch: bool,
+    prefix: str,
+) -> tuple[int, Path, list[Path]]:
+    returncode, report = run_judge(
+        worktree=worktree,
+        page=page,
+        normalized_source=normalized_source,
+        judge_candidate=judge_candidate,
+        codex_bin=codex_bin,
+        timeout=timeout,
+        batch=batch,
+        prefix=prefix,
+    )
+    reports = [report]
+    if not batch or returncode == 0 or not should_retry_batch_judge_rowwise(report):
+        return returncode, report, reports
+
+    rowwise_returncode, rowwise_report = run_judge(
+        worktree=worktree,
+        page=page,
+        normalized_source=normalized_source,
+        judge_candidate=judge_candidate,
+        codex_bin=codex_bin,
+        timeout=timeout,
+        batch=False,
+        prefix=f"{prefix}-rowwise",
+    )
+    reports.append(rowwise_report)
+    return rowwise_returncode, rowwise_report, reports
+
+
+def should_retry_batch_judge_rowwise(report: Path) -> bool:
+    if not report.exists():
+        return False
+    text = report.read_text(errors="ignore").lower()
+    batch_format_errors = [
+        "local judge did not return a json object",
+        "local judge json was not an object",
+        "local judge json missing claim_results list",
+        "local judge returned invalid page_verdict",
+        "local judge returned invalid claim verdict",
+    ]
+    return any(error in text for error in batch_format_errors)
+
+
 def claim_repair_hints(worktree: Path, page: str, normalized_source: Path) -> str:
     command = [
         "python3",
@@ -402,6 +458,7 @@ Forbidden writes:
 - `wiki/log.md`
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
+- `wiki/_claim-judge-report.md`
 - `wiki/_grounding-report.md`
 - `wiki/analyses/**`
 - `wiki/concepts/**`
@@ -493,6 +550,7 @@ Forbidden writes:
 - `wiki/log.md`
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
+- `wiki/_claim-judge-report.md`
 - `wiki/_grounding-report.md`
 - `wiki/analyses/**`
 - `packages/**`
@@ -600,6 +658,44 @@ def print_result(result: dict[str, object]) -> None:
     assert isinstance(judge_report_paths, list)
     if judge_report_paths:
         print(f"- judge_reports: {', '.join(str(path) for path in judge_report_paths)}")
+
+
+def write_report(path: Path, slug: str, candidate_path: str, result: dict[str, object]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    returncodes = result["codex_returncodes"]
+    changed_files = result["changed_files"]
+    log_paths = result["log_paths"]
+    judge_report_paths = result["judge_report_paths"]
+    assert isinstance(returncodes, list)
+    assert isinstance(changed_files, list)
+    assert isinstance(log_paths, list)
+    assert isinstance(judge_report_paths, list)
+    lines = [
+        "# Phase 2 Single Run Report",
+        "",
+        f"- Source slug: `{slug}`",
+        f"- Candidate path: `{candidate_path}`",
+        f"- Candidate model: `{result['candidate']}`",
+        f"- Worktree: `{result['worktree']}`",
+        f"- Duration: {float(result['duration_s']):.1f}s",
+        f"- Codex return codes: {', '.join('timeout' if code is None else str(code) for code in returncodes)}",
+        f"- Validation: {'pass' if result['validation_returncode'] == 0 else 'fail'}",
+        f"- Judge: {'pass' if result['judge_returncode'] == 0 else 'fail'}",
+        "",
+        "## Changed Files",
+        "",
+    ]
+    lines.extend(f"- `{changed}`" for changed in changed_files)
+    if not changed_files:
+        lines.append("- None.")
+    lines.extend(["", "## Logs", ""])
+    lines.extend(f"- `{log}`" for log in log_paths)
+    lines.append(f"- `{Path(result['worktree']) / 'phase2-validation.log'}`")
+    if judge_report_paths:
+        lines.extend(["", "## Judge Reports", ""])
+        lines.extend(f"- `{judge_report}`" for judge_report in judge_report_paths)
+    path.write_text("\n".join(lines) + "\n")
+    print(f"wrote {path}")
 
 
 if __name__ == "__main__":

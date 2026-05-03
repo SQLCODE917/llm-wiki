@@ -116,6 +116,17 @@
         "wiki:sources/aoe2-basics"
       ]
     },
+    "wiki:references/aoe2-military-upgrades": {
+      "type": "reference",
+      "path": "wiki/references/aoe2-military-upgrades.md",
+      "description": "This reference page documents military upgrade facts from the source that affect Age of Empires II combat, especially archer, crossbow, bodkin, fletching, and knight armor interac\u2026",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:sources/aoe2-basics": {
       "type": "source",
       "path": "wiki/sources/aoe2-basics.md",
@@ -132,7 +143,8 @@
         "wiki:concepts/aoe2-opening-interactions",
         "wiki:concepts/aoe2-team-play-strategies",
         "wiki:concepts/aoe2-unit-counter-interactions",
-        "wiki:references/aoe2-economy-upgrades"
+        "wiki:references/aoe2-economy-upgrades",
+        "wiki:references/aoe2-military-upgrades"
       ]
     },
     "wiki:sources/compound-interest": {

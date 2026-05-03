@@ -21,6 +21,7 @@ Forbidden writes:
 - `wiki/log.md`
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
+- `wiki/_claim-judge-report.md`
 - `wiki/_grounding-report.md`
 - `wiki/analyses/**`
 - `packages/**`
