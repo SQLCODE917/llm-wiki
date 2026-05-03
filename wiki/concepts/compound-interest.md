@@ -13,22 +13,18 @@ Compound interest is interest calculated on a principal amount after previous in
 
 ## Source-backed details
 
-The source states that compound interest adds interest to principal, then calculates future interest on the new total.
+| Claim | Evidence | Source |
+|---|---|---|
+| Compound interest adds interest to principal and then calculates future interest on the updated total. | "Compound interest means interest is added to the principal, and then future interest is calculated on the new total." | [Compound Interest Notes](../sources/compound-interest.md) |
+| The source gives the standard compound interest formula for calculating final amount. | "Formula: A = P(1 + r/n)^(nt)" | [Compound Interest Notes](../sources/compound-interest.md) |
+| Compound interest applies to finance, savings accounts, loans, and investing. | "Used in finance, savings accounts, loans, and investing." | [Compound Interest Notes](../sources/compound-interest.md) |
 
-The source gives the formula:
-
-```text
-A = P(1 + r/n)^(nt)
-```
-
-Where:
+Formula terms:
 
 - `P` = principal
 - `r` = annual interest rate
 - `n` = compounds per year
 - `t` = years
-
-Compound interest is used in finance, savings accounts, loans, and investing.
 
 ## Executable implementation
 

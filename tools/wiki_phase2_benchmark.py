@@ -1,0 +1,436 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
+from dataclasses import dataclass
+from datetime import date
+from pathlib import Path
+
+from wiki_common import code_paths, parse_frontmatter, section
+from wiki_evidence_bank import render_evidence_bank as render_source_evidence_bank
+from wiki_phase1_benchmark import (
+    Candidate,
+    copy_repo,
+    find_normalized_source,
+    git_changed_files,
+    init_git,
+    parse_candidate,
+    run_codex,
+)
+
+
+PRIORITY_ORDER = {"must create": 0, "should create": 1, "could create": 2, "defer": 3}
+
+
+@dataclass
+class Result:
+    candidate: Candidate
+    worktree: Path
+    duration_s: float
+    codex_returncodes: list[int | None]
+    validation_returncode: int | None
+    changed_files: list[str]
+    log_paths: list[Path]
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Benchmark local Codex candidates on one Phase 2 synthesis task."
+    )
+    parser.add_argument("slug", help="source slug, e.g. aoe2-basics")
+    parser.add_argument(
+        "--candidate",
+        action="append",
+        help=(
+            "Candidate as PROFILE or PROFILE:MODEL. Repeat to compare models. "
+            "Example: --candidate local-4090 --candidate local-4090:gpt-oss:20b"
+        ),
+    )
+    parser.add_argument("--normalized-source", help="explicit normalized markdown path")
+    parser.add_argument("--prompt-template", default="tools/prompts/phase2-synthesis.md")
+    parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument("--timeout", type=int, default=900)
+    parser.add_argument("--min-pages", type=int, default=5)
+    parser.add_argument("--max-pages", type=int, default=8)
+    parser.add_argument(
+        "--repair-attempts",
+        type=int,
+        default=1,
+        help="number of extra Codex repair prompts to run after failed validation",
+    )
+    parser.add_argument("--keep", action="store_true", help="keep temp worktrees after the run")
+    args = parser.parse_args()
+
+    repo_root = Path.cwd()
+    normalized_source = Path(args.normalized_source) if args.normalized_source else find_normalized_source(args.slug)
+    if not normalized_source.exists():
+        print(f"FAIL: normalized source does not exist: {normalized_source}", file=sys.stderr)
+        return 2
+
+    prompt_template = Path(args.prompt_template)
+    if not prompt_template.exists():
+        print(f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
+        return 2
+
+    candidates = [parse_candidate(raw) for raw in (args.candidate or ["local-4090"])]
+    results: list[Result] = []
+
+    for candidate in candidates:
+        result = run_candidate(
+            repo_root=repo_root,
+            slug=args.slug,
+            normalized_source=normalized_source,
+            prompt_template=prompt_template,
+            candidate=candidate,
+            codex_bin=args.codex_bin,
+            timeout=args.timeout,
+            min_pages=args.min_pages,
+            max_pages=args.max_pages,
+            repair_attempts=args.repair_attempts,
+        )
+        results.append(result)
+        print_result(result)
+        if not args.keep:
+            shutil.rmtree(result.worktree, ignore_errors=True)
+
+    return 0 if all(result.validation_returncode == 0 for result in results) else 1
+
+
+def run_candidate(
+    *,
+    repo_root: Path,
+    slug: str,
+    normalized_source: Path,
+    prompt_template: Path,
+    candidate: Candidate,
+    codex_bin: str,
+    timeout: int,
+    min_pages: int,
+    max_pages: int,
+    repair_attempts: int,
+) -> Result:
+    worktree = Path(
+        tempfile.mkdtemp(prefix=f"llm-wiki-phase2-{slug}-{candidate.safe_label}.", dir="/tmp")
+    )
+    copy_repo(repo_root, worktree)
+    init_git(worktree)
+
+    source_page = worktree / "wiki/sources" / f"{slug}.md"
+    selected_paths = selected_candidate_paths(source_page, max_pages)
+    evidence_bank = build_evidence_bank(worktree, normalized_source, selected_paths)
+    prompt = render_prompt(
+        template=(worktree / prompt_template).read_text(),
+        slug=slug,
+        normalized_source=normalized_source.as_posix(),
+        min_pages=min_pages,
+        max_pages=max_pages,
+        selected_paths=selected_paths,
+        evidence_bank=evidence_bank,
+    )
+
+    start = time.monotonic()
+    codex_returncodes: list[int | None] = []
+    log_paths: list[Path] = []
+
+    returncode, paths = run_codex(
+        worktree=worktree,
+        candidate=candidate,
+        codex_bin=codex_bin,
+        prompt=prompt,
+        timeout=timeout,
+        prefix="codex-initial",
+    )
+    codex_returncodes.append(returncode)
+    log_paths.extend(paths)
+    validation_returncode = run_validation(worktree, slug, min_pages, max_pages, selected_paths, normalized_source)
+
+    for attempt in range(1, repair_attempts + 1):
+        if validation_returncode == 0:
+            break
+        repair_prompt = render_repair_prompt(
+            slug=slug,
+            validation_output=(worktree / "phase2-validation.log").read_text(),
+            min_pages=min_pages,
+            max_pages=max_pages,
+            selected_paths=selected_paths,
+            normalized_source=normalized_source,
+            evidence_bank=evidence_bank,
+        )
+        returncode, paths = run_codex(
+            worktree=worktree,
+            candidate=candidate,
+            codex_bin=codex_bin,
+            prompt=repair_prompt,
+            timeout=timeout,
+            prefix=f"codex-repair-{attempt}",
+        )
+        codex_returncodes.append(returncode)
+        log_paths.extend(paths)
+        validation_returncode = run_validation(worktree, slug, min_pages, max_pages, selected_paths, normalized_source)
+
+    duration_s = time.monotonic() - start
+    changed_files = git_changed_files(worktree)
+
+    return Result(
+        candidate=candidate,
+        worktree=worktree,
+        duration_s=duration_s,
+        codex_returncodes=codex_returncodes,
+        validation_returncode=validation_returncode,
+        changed_files=changed_files,
+        log_paths=log_paths,
+    )
+
+
+def render_prompt(
+    *,
+    template: str,
+    slug: str,
+    normalized_source: str,
+    min_pages: int,
+    max_pages: int,
+    selected_paths: list[str],
+    evidence_bank: str,
+) -> str:
+    selected_candidates = render_selected_candidates(selected_paths)
+    replacements = {
+        "{{current_date}}": date.today().isoformat(),
+        "{{slug}}": slug,
+        "{{normalized_source}}": normalized_source,
+        "{{min_pages}}": str(min_pages),
+        "{{max_pages}}": str(max_pages),
+        "{{selected_candidates}}": selected_candidates,
+        "{{evidence_bank}}": evidence_bank,
+        "{{allowed_page_args}}": allowed_page_args(selected_paths),
+    }
+    rendered = template
+    for old, new in replacements.items():
+        rendered = rendered.replace(old, new)
+    return rendered
+
+
+def run_validation(
+    worktree: Path,
+    slug: str,
+    min_pages: int,
+    max_pages: int,
+    selected_paths: list[str],
+    normalized_source: Path,
+) -> int:
+    synthesis_command = [
+        "python3",
+        "tools/wiki_check_synthesis.py",
+        slug,
+        "--min-pages",
+        str(min_pages),
+        "--max-pages",
+        str(max_pages),
+        "--normalized-source",
+        normalized_source.as_posix(),
+    ]
+    for path in selected_paths:
+        synthesis_command.extend(["--allowed-page", source_relative_to_repo(path)])
+    if selected_paths:
+        synthesis_command.append("--require-allowed-pages")
+
+    commands = [
+        ["python3", "tools/wiki_link_related.py", slug],
+        ["python3", "tools/wiki_fix_broken_links.py", slug],
+        ["python3", "tools/wiki_normalize_ascii.py", slug],
+        synthesis_command,
+        ["pnpm", "wiki:grounding:check"],
+    ]
+
+    outputs: list[str] = []
+    returncode = 0
+    for command in commands:
+        completed = subprocess.run(
+            command,
+            cwd=worktree,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+        )
+        outputs.append("$ " + " ".join(command))
+        outputs.append(completed.stdout)
+        if completed.returncode != 0 and returncode == 0:
+            returncode = completed.returncode
+
+    (worktree / "phase2-validation.log").write_text("\n".join(outputs))
+    return returncode
+
+
+def render_repair_prompt(
+    *,
+    slug: str,
+    validation_output: str,
+    min_pages: int,
+    max_pages: int,
+    selected_paths: list[str],
+    normalized_source: Path,
+    evidence_bank: str,
+) -> str:
+    selected = render_selected_candidates(selected_paths)
+    return f"""Read `AGENTS.md` fully before acting.
+
+Repair only Phase 2 synthesis for `wiki/sources/{slug}.md`.
+
+Allowed writes:
+- `wiki/sources/{slug}.md`
+- `wiki/concepts/**`
+- `wiki/entities/**`
+- `wiki/procedures/**`
+- `wiki/references/**`
+
+Forbidden writes:
+- `raw/imported/**`
+- `raw/normalized/**`
+- `wiki/index.md`
+- `wiki/log.md`
+- `wiki/_graph.json`
+- `wiki/_linter-report.md`
+- `wiki/_grounding-report.md`
+- `wiki/analyses/**`
+- `packages/**`
+- `tools/**`
+
+Validation failed with this exact output:
+
+```text
+{validation_output.strip()}
+```
+
+Fix the failures mechanically:
+- Keep {min_pages} to {max_pages} synthesized pages linked from `wiki/sources/{slug}.md`.
+- The only selected pages for this phase are:
+{selected}
+- Evidence bank with exact normalized-source snippets:
+{evidence_bank}
+- If any other synthesized pages were created for this source, delete them and return their source-page `Related pages` rows to `not created yet`.
+- Each synthesized page must have correct frontmatter, a body link to the source page, and a source page section.
+- Each synthesized page must have exactly one `## Source-backed details` section and it must contain substantial source-backed content.
+- Each synthesized page must include a `## Source-backed details` evidence table with header `| Claim | Evidence | Source |`.
+- Each evidence cell must contain a short exact excerpt from the normalized source, not a paraphrase.
+- Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
+- Remove empty headings, duplicate headings, and empty `## Executable implementation` sections.
+- Synthesized-page cross-links may point only to pages that already exist or pages created in this phase.
+- Do not create extra pages to repair broken cross-links; remove the broken Markdown link or change it to plain text instead.
+- Created pages and not-yet-created candidates must use this canonical `## Related pages` row shape:
+
+```md
+| Page title | [../concepts/example.md](../concepts/example.md) | created |
+| Page title | `../concepts/example.md` | not created yet |
+```
+
+- Use ASCII punctuation unless the source requires otherwise.
+- Do not update index, graph, log, reports, raw files, code, or tools.
+
+After editing, run exactly:
+
+```bash
+python3 tools/wiki_link_related.py {slug}
+python3 tools/wiki_fix_broken_links.py {slug}
+python3 tools/wiki_normalize_ascii.py {slug}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {min_pages} --max-pages {max_pages}{allowed_page_args(selected_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+pnpm wiki:grounding:check
+```
+
+If validation still fails, repair only the allowed files and rerun the same commands.
+"""
+
+
+def print_result(result: Result) -> None:
+    codex_status = ", ".join("timeout" if code is None else str(code) for code in result.codex_returncodes)
+    validation_status = "pass" if result.validation_returncode == 0 else f"fail:{result.validation_returncode}"
+    print(f"\n## {result.candidate.label}")
+    print(f"- worktree: {result.worktree}")
+    print(f"- duration_s: {result.duration_s:.1f}")
+    print(f"- codex_returncodes: {codex_status}")
+    print(f"- validation: {validation_status}")
+    print("- changed_files:")
+    if result.changed_files:
+        for changed in result.changed_files:
+            print(f"  - {changed}")
+    else:
+        print("  - None")
+    log_list = ", ".join(str(path) for path in result.log_paths)
+    print(f"- logs: {log_list}, {result.worktree / 'phase2-validation.log'}")
+
+
+def selected_candidate_paths(source_page: Path, max_pages: int) -> list[str]:
+    fm = parse_frontmatter(source_page)
+    related = section(fm.body, "## Related pages")
+    rows = related_candidate_rows(related)
+    if rows:
+        selected = sorted(rows, key=lambda row: (PRIORITY_ORDER.get(row[1], 1), row[2]))
+        return [path for path, _priority, _index in selected[:max_pages]]
+    return code_paths(related)[:max_pages]
+
+
+def related_candidate_rows(markdown: str) -> list[tuple[str, str, int]]:
+    rows: list[tuple[str, str, int]] = []
+    for index, line in enumerate(markdown.splitlines()):
+        cells = split_table_row(line)
+        if cells is None or len(cells) not in {3, 5}:
+            continue
+        if is_separator_row(cells) or cells[0].lower() in {"candidate page", "page"}:
+            continue
+        status = cells[-1].strip().lower()
+        target = code_cell_target(cells[1])
+        if status != "not created yet" or target is None:
+            continue
+        priority = cells[2].strip().lower() if len(cells) == 5 else "should create"
+        rows.append((target, priority, index))
+    return rows
+
+
+def render_selected_candidates(paths: list[str]) -> str:
+    if not paths:
+        return "- No candidate paths found; stop and report this."
+    return "\n".join(f"- `{path}`" for path in paths)
+
+
+def build_evidence_bank(worktree: Path, normalized_source: Path, selected_paths: list[str]) -> str:
+    source_path = normalized_source if normalized_source.is_absolute() else worktree / normalized_source
+    if not source_path.exists():
+        return "No evidence bank available; normalized source was not found."
+    return render_source_evidence_bank(source_path.read_text(errors="ignore"), selected_paths, per_candidate=10)
+
+
+def split_table_row(line: str) -> list[str] | None:
+    stripped = line.strip()
+    if not stripped.startswith("|") or not stripped.endswith("|"):
+        return None
+    return [cell.strip() for cell in stripped[1:-1].split("|")]
+
+
+def is_separator_row(cells: list[str]) -> bool:
+    return all(cell and set(cell) <= {"-", ":", " "} for cell in cells)
+
+
+def code_cell_target(cell: str) -> str | None:
+    stripped = cell.strip()
+    if stripped.startswith("`") and stripped.endswith("`") and stripped.count("`") == 2:
+        value = stripped[1:-1].strip()
+        if value.endswith(".md"):
+            return value
+    return None
+
+
+def source_relative_to_repo(path: str) -> str:
+    return (Path("wiki/sources") / path).resolve().relative_to(Path.cwd().resolve()).as_posix()
+
+
+def allowed_page_args(paths: list[str]) -> str:
+    if not paths:
+        return ""
+    return "".join(f" --allowed-page {source_relative_to_repo(path)}" for path in paths)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

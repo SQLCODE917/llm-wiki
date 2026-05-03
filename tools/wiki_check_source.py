@@ -58,6 +58,9 @@ WEAK_CLAIM_PATTERNS = [
     r"\bsuccess\b",
 ]
 
+RELATED_PRIORITIES = {"must create", "should create", "could create", "defer"}
+RELATED_STATUSES = {"not created yet", "created"}
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate one wiki source page.")
@@ -175,6 +178,7 @@ def main() -> int:
             failures.append(f"{path}: forbidden pattern matched: {pattern}")
 
     related = section(fm.body, "## Related pages")
+    failures.extend(validate_related_rows(path, related))
     related_markdown_links = [
         link for link in markdown_links(path) if link.line > _line_number_of_heading(text, "## Related pages")
     ]
@@ -222,6 +226,52 @@ def _line_number_of_heading(text: str, heading: str) -> int:
 
 def _strip_list_marker(line: str) -> str:
     return re.sub(r"^\s*(?:[-*]\s+|\d+[.]\s+)", "", line).strip()
+
+
+def validate_related_rows(path: Path, related: str) -> list[str]:
+    failures: list[str] = []
+    for row_number, line in enumerate(related.splitlines(), start=1):
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        cells = split_table_row(stripped)
+        if cells is None:
+            failures.append(f"{path}: Related pages row {row_number} is not a valid Markdown table row")
+            continue
+        if is_separator_row(cells) or cells[0].lower() in {"candidate page", "page"}:
+            continue
+        if len(cells) not in {3, 5}:
+            failures.append(f"{path}: Related pages row {row_number} must have three or five cells")
+            continue
+        if len(cells) == 5:
+            priority = cells[2].strip().lower()
+            evidence_basis = cells[3].strip()
+            if priority not in RELATED_PRIORITIES:
+                failures.append(
+                    f"{path}: Related pages row {row_number} priority must be one of {sorted(RELATED_PRIORITIES)}"
+                )
+            if len(re.findall(r"[A-Za-z0-9']+", evidence_basis)) < 3:
+                failures.append(f"{path}: Related pages row {row_number} evidence basis is too thin")
+        status = cells[-1].strip().lower()
+        if status not in RELATED_STATUSES:
+            failures.append(f"{path}: Related pages row {row_number} status must be created or not created yet")
+        path_cell = cells[1].strip()
+        if status == "not created yet" and not re.fullmatch(r"`[^`]+\.md`", path_cell):
+            failures.append(f"{path}: Related pages row {row_number} uncreated path must be code-formatted")
+        if status == "created" and not re.fullmatch(r"\[[^\]]+\]\([^)]+\.md\)", path_cell):
+            failures.append(f"{path}: Related pages row {row_number} created path must be a Markdown link")
+    return failures
+
+
+def split_table_row(line: str) -> list[str] | None:
+    stripped = line.strip()
+    if not stripped.startswith("|") or not stripped.endswith("|"):
+        return None
+    return [cell.strip() for cell in stripped[1:-1].split("|")]
+
+
+def is_separator_row(cells: list[str]) -> bool:
+    return all(cell and set(cell) <= {"-", ":", " "} for cell in cells)
 
 
 

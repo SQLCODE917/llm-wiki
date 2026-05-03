@@ -262,9 +262,18 @@ Local models must ingest in bounded phases. Do not ask a local model to perform 
 3. Extract gameplay/content/domain claims, not just document metadata.
 4. Identify candidate concepts, entities, procedures, and references.
 5. List candidate future pages in `## Related pages` as code-formatted paths in a table.
-6. Do not create synthesized pages yet.
-7. Do not update `wiki/index.md`, `wiki/log.md`, or `_graph.json` in this phase unless explicitly asked.
-8. Validate the source page:
+6. Prefer the evidence-aware candidate table shape:
+
+```md
+| Candidate page | Intended path | Priority | Evidence basis | Status |
+|---|---|---|---|---|
+| Example Concept | `../concepts/example-concept.md` | must create | concrete claims, examples, or procedure steps | not created yet |
+```
+
+7. Use priorities `must create`, `should create`, `could create`, or `defer`; Phase 2 should prefer higher-priority candidates with enough evidence for at least 3 evidence rows.
+8. Do not create synthesized pages yet.
+9. Do not update `wiki/index.md`, `wiki/log.md`, or `_graph.json` in this phase unless explicitly asked.
+10. Validate the source page:
 
 ```bash
 pnpm wiki:check-source <slug>
@@ -279,21 +288,62 @@ pnpm wiki:check-source <slug>
    - `wiki/procedures/`
    - `wiki/references/`
 3. Each synthesized page must link back to at least one source page.
-4. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
-5. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
-6. Validate synthesized pages:
+4. Synthesized-page cross-links may point only to pages that already exist or pages created in the same phase.
+5. Each synthesized page must have `## Source-backed details` with an evidence table:
+
+```md
+| Claim | Evidence | Source |
+|---|---|---|
+| Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | [Source title](../sources/<slug>.md) |
+```
+
+6. Evidence cells must be short exact excerpts from the normalized source, not paraphrases.
+7. Claim cells must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
+8. Synthesized pages must not contain empty headings, duplicate headings, or `## Executable implementation` unless a real implementation file is linked.
+9. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
+10. Use the canonical `Related pages` row format:
+
+```md
+| Page title | [../concepts/example.md](../concepts/example.md) | created |
+| Page title | `../concepts/example.md` | not created yet |
+```
+
+11. Prefer doing that replacement with `pnpm wiki:link-related <slug>`.
+12. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
+13. Validate synthesized pages:
 
 ```bash
+pnpm wiki:link-related <slug>
+pnpm wiki:fix-links <slug>
+pnpm wiki:normalize-ascii <slug>
 pnpm wiki:check-synthesis <slug>
-pnpm wiki:grounding
+pnpm wiki:grounding:check
 ```
 
 ### Phase 3: navigation, graph, and log
 
-1. Update `wiki/index.md`.
-2. Run `pnpm wiki:graph`.
-3. Append one `ingest` entry to `wiki/log.md`.
-4. Run `pnpm wiki:lint` and address FAILs.
+1. Before adopting a Phase 2 benchmark worktree, generate a curator review packet:
+
+```bash
+pnpm wiki:review-phase2 <slug> <worktree>
+```
+
+2. The human curator chooses one action from the packet:
+   - adopt the worktree
+   - revise with another targeted Phase 2 prompt
+   - defer the synthesized pages
+   - record a contradiction and pause
+
+3. Prefer the deterministic finalizer after adoption:
+
+```bash
+pnpm wiki:phase3 <slug>
+```
+
+4. If doing the steps manually, update `wiki/index.md`.
+5. Run `pnpm wiki:graph`.
+6. Append one `ingest` entry to `wiki/log.md`.
+7. Run `pnpm wiki:lint` and address FAILs.
 
 ### Phase 4: executable concepts
 
@@ -356,11 +406,19 @@ Prefer deterministic checks over long prose reminders:
 pnpm wiki:check-source <slug>
 pnpm wiki:check-synthesis <slug>
 pnpm wiki:phase1-benchmark <slug>
+pnpm wiki:phase2-benchmark <slug>
+pnpm wiki:review-phase2 <slug> <worktree>
+pnpm wiki:adopt-phase2 <slug> <worktree>
+pnpm wiki:phase3 <slug>
 pnpm wiki:index
 pnpm wiki:index:check
 pnpm wiki:graph
 pnpm wiki:graph:check
 pnpm wiki:grounding
+pnpm wiki:grounding:check
+pnpm wiki:fix-links <slug>
+pnpm wiki:normalize-ascii <slug>
+pnpm wiki:link-related <slug>
 pnpm wiki:lint
 ```
 
@@ -369,6 +427,20 @@ For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
 
 ```bash
 pnpm wiki:phase1-benchmark <slug> --candidate local-4090
+```
+
+For local-model Phase 2 synthesis trials, prefer the mechanical prompt template in
+`tools/prompts/phase2-synthesis.md`. To compare candidates in disposable worktrees, run:
+
+```bash
+pnpm wiki:phase2-benchmark <slug> --candidate local-4090
+```
+
+If a Phase 2 benchmark worktree is good enough to adopt, copy it into the real repo with:
+
+```bash
+pnpm wiki:review-phase2 <slug> <worktree>
+pnpm wiki:adopt-phase2 <slug> <worktree>
 ```
 
 If a local model ignores failed validation, stop the run and narrow the next prompt to the first failing check.

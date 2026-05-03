@@ -22,12 +22,14 @@ class Issue:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Check wiki pages for source grounding.")
     parser.add_argument("--max-unsupported-claim-tokens", type=int, default=4)
+    parser.add_argument("--check", action="store_true", help="print report but do not write wiki/_grounding-report.md")
     args = parser.parse_args()
 
     issues = run_grounding(args.max_unsupported_claim_tokens)
     report = render_report(issues)
-    report_path = Path("wiki/_grounding-report.md")
-    report_path.write_text(report)
+    if not args.check:
+        report_path = Path("wiki/_grounding-report.md")
+        report_path.write_text(report)
     print(report)
     return 1 if any(issue.level == "FAIL" for issue in issues) else 0
 

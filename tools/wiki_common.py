@@ -87,6 +87,10 @@ def parse_frontmatter(path: Path) -> Frontmatter:
             else:
                 errors.append(f"frontmatter key {current_key!r} is not a list")
             continue
+        if line[0].isspace():
+            errors.append(f"frontmatter key line must not be indented: {line}")
+            current_key = None
+            continue
         if ":" not in line:
             errors.append(f"cannot parse frontmatter line: {line}")
             current_key = None
