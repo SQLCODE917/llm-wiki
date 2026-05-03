@@ -320,6 +320,8 @@ def changed_file_scope_failures(worktree: Path, slug: str, allowed_paths: list[s
     failures: list[str] = []
     for changed in git_changed_files(worktree):
         path = changed_status_path(changed)
+        if path and is_runner_artifact(path):
+            continue
         if path and path not in allowed:
             failures.append(f"{path} changed outside Phase 2 allowed files")
     return failures
@@ -328,7 +330,7 @@ def changed_file_scope_failures(worktree: Path, slug: str, allowed_paths: list[s
 def cleanup_backup_artifacts(worktree: Path, slug: str, allowed_paths: list[str]) -> list[str]:
     allowed = {f"wiki/sources/{slug}.md"}
     allowed.update(source_relative_to_repo(path) for path in allowed_paths)
-    suffixes = [".bak", ".orig", ".tmp", "~"]
+    suffixes = [".bak", ".orig", ".tmp", ".fixed", "~"]
     messages: list[str] = []
     for rel in sorted(allowed):
         base = worktree / rel
@@ -337,6 +339,11 @@ def cleanup_backup_artifacts(worktree: Path, slug: str, allowed_paths: list[str]
             if artifact.exists() and artifact.is_file():
                 artifact.unlink()
                 messages.append(f"removed {artifact.relative_to(worktree).as_posix()}")
+    for name in ("temp_file.md", "temp.md", "scratch.md"):
+        artifact = worktree / name
+        if artifact.exists() and artifact.is_file():
+            artifact.unlink()
+            messages.append(f"removed {artifact.relative_to(worktree).as_posix()}")
     return messages
 
 
@@ -345,6 +352,15 @@ def changed_status_path(line: str) -> str:
     if " -> " in value:
         value = value.split(" -> ", 1)[1].strip()
     return value
+
+
+def is_runner_artifact(path: str) -> bool:
+    name = Path(path).name
+    if name == "phase2-validation.log":
+        return True
+    if re.fullmatch(r"phase2-judge(?:-[A-Za-z0-9_.-]+)?\.(?:md|log)", name):
+        return True
+    return False
 
 
 def render_repair_prompt(
@@ -410,6 +426,7 @@ Fix the failures mechanically:
 - Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
 - Remove empty headings, duplicate headings, and empty `## Executable implementation` sections.
+- Do not put YAML/frontmatter keys such as `tags:`, `sources:`, `status:`, or `last_updated:` in the Markdown body.
 - Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
 - Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
 - Reference data tables must include `Evidence` and `Locator` columns with exact normalized-source excerpts.
@@ -427,6 +444,7 @@ Fix the failures mechanically:
 - Use ASCII punctuation unless the source requires otherwise.
 - Do not update index, graph, log, reports, raw files, code, or tools.
 - Do not create backup files.
+- Do not create scratch files such as `.fixed` files or `temp_file.md`.
 
 After editing, run exactly:
 

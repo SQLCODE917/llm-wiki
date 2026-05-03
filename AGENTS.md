@@ -467,6 +467,8 @@ pnpm wiki:graph:check
 pnpm wiki:grounding
 pnpm wiki:grounding:check
 pnpm wiki:judge-claims <page> --normalized-source <path> --candidate local-4090
+pnpm wiki:claim-hints <page> --normalized-source <path>
+pnpm wiki:query "question" --plan-only
 pnpm wiki:fix-links <slug>
 pnpm wiki:normalize-ascii <slug>
 pnpm wiki:normalize-tables <slug>
@@ -481,12 +483,23 @@ For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
 pnpm wiki:phase1-benchmark <slug> --candidate local-4090
 ```
 
-For local-model Phase 2 synthesis trials, prefer the mechanical prompt template in
-`tools/prompts/phase2-synthesis.md`. To compare candidates in disposable worktrees, run:
+For local-model Phase 2 synthesis trials, prefer `pnpm wiki:phase2-single`. It auto-selects
+`tools/prompts/phase2-reference-synthesis.md` for selected `wiki/references/**` pages and
+`tools/prompts/phase2-synthesis.md` for other page types. To compare candidates in disposable
+worktrees, run:
 
 ```bash
 pnpm wiki:phase2-single <slug> ../concepts/example.md --candidate local-4090
 ```
+
+For query trials, first inspect the deterministic context selection:
+
+```bash
+pnpm wiki:query "What should I know about this topic?" --plan-only
+```
+
+If the selected pages look right, run with `--candidate local-4090`. Add `--save-analysis` only for
+answers that should become durable wiki knowledge.
 
 If a Phase 2 benchmark worktree is good enough to adopt, copy it into the real repo with:
 

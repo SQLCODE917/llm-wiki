@@ -76,3 +76,12 @@
 - Phase 2 validation cleans obvious backup artifacts in disposable worktrees and prompts forbid backup files.
 
 ---
+
+## [2026-05-03] schema-change | strengthened local ingest and query tooling
+
+- Added reference-specific Phase 2 prompt and repair path for wiki/references pages.
+- Added deterministic claim repair hints and stricter reference-data validation.
+- Added bounded query helper with plan-only context selection and optional analysis filing.
+- AoE2 economy-upgrades trial showed qwen3-coder still struggles with weak repeated reference facts; do not adopt that page yet without a stronger model or deterministic table repair.
+
+---

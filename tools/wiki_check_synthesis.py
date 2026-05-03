@@ -284,8 +284,12 @@ def check_synthesized_page(
     if page_type not in SYNTH_TYPES:
         failures.append(f"{page}: type must be one of {sorted(SYNTH_TYPES)}")
 
+    first_body_line = first_nonblank_line(fm.body)
     if not re.search(r"^# .+", fm.body, re.MULTILINE):
         failures.append(f"{page}: missing H1 title")
+    elif first_body_line is not None and not first_body_line.startswith("# "):
+        failures.append(f"{page}: first nonblank body line must be the H1 title")
+    failures.extend(body_metadata_failures(page, fm.body))
 
     source_rel = relative_link(page, source_path)
     sources = fm.data.get("sources")
@@ -330,6 +334,29 @@ def check_synthesized_page(
 
 def relative_link(page: Path, target: Path) -> str:
     return Path("../" * (len(page.parent.relative_to("wiki").parts)) + target.relative_to("wiki").as_posix()).as_posix()
+
+
+def first_nonblank_line(markdown: str) -> str | None:
+    for line in markdown.splitlines():
+        stripped = line.strip()
+        if stripped:
+            return stripped
+    return None
+
+
+def body_metadata_failures(page: Path, body: str) -> list[str]:
+    failures: list[str] = []
+    in_code = False
+    for line_number, line in enumerate(body.splitlines(), start=1):
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+        if re.match(r"^(?:title|type|tags|status|last_updated|sources|source_id|source_type):\s*", stripped):
+            failures.append(f"{page}: body line {line_number} looks like stray frontmatter: {stripped}")
+    return failures
 
 
 def check_evidence_table(
@@ -467,14 +494,33 @@ def check_reference_data_table(
         return failures
     evidence_index = header.index("evidence")
     locator_index = header.index("locator")
+    source_index = header.index("source") if "source" in header else None
+    seen_facts: dict[str, int] = {}
     for row_number, row in enumerate(rows[header_index + 1 :], start=1):
         if is_separator_row(row):
             continue
         if len(row) != len(header):
             failures.append(f"{page}: Reference data row {row_number} must have {len(header)} cells")
             continue
+        fact_text = " ".join(
+            strip_markdown(cell).strip()
+            for index, cell in enumerate(row)
+            if index not in {evidence_index, locator_index, source_index}
+        )
         evidence = clean_evidence_excerpt(row[evidence_index])
         locator = row[locator_index]
+        if any(re.search(pattern, fact_text, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
+            failures.append(f"{page}: Reference data row {row_number} uses weak generic fact language")
+        fact_norm = normalize_for_search(fact_text)
+        evidence_norm = normalize_for_search(evidence)
+        if fact_norm in seen_facts:
+            failures.append(
+                f"{page}: Reference data row {row_number} duplicates the supported fact from row {seen_facts[fact_norm]}"
+            )
+        elif fact_norm:
+            seen_facts[fact_norm] = row_number
+        if fact_norm == evidence_norm or SequenceMatcher(None, fact_norm, evidence_norm).ratio() > 0.88:
+            failures.append(f"{page}: Reference data row {row_number} fact repeats the evidence instead of synthesizing it")
         if len(re.findall(r"[A-Za-z0-9']+", evidence)) < 4 or len(evidence) < 24:
             failures.append(f"{page}: Reference data row {row_number} evidence excerpt is too short")
         parsed_locator = parse_locator(locator)
@@ -492,6 +538,11 @@ def check_reference_data_table(
         locator_text = "\n".join(evidence_source.lines[start - 1 : end])
         if normalize_for_search(evidence) not in normalize_for_search(locator_text):
             failures.append(f"{page}: Reference data row {row_number} evidence is not found in locator range {clean_locator(locator)!r}")
+        unsupported = sorted(set(content_tokens(fact_text)) - set(content_tokens(evidence + " " + locator_text)))
+        if len(unsupported) >= 8:
+            failures.append(
+                f"{page}: Reference data row {row_number} likely overreaches evidence; unsupported terms: {', '.join(unsupported[:10])}"
+            )
     return failures
 
 

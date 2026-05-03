@@ -18,6 +18,7 @@ from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, p
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
 PAGE_VERDICTS = {"useful", "too_broad", "duplicate_or_overlap", "unclear"}
+WEAK_CLAIM_WORDS = {"important", "crucial", "fundamental", "essential", "success"}
 
 
 @dataclass(frozen=True)
@@ -167,11 +168,12 @@ def reference_data_rows(
         locator = strip_markdown(cells[locator_index]).strip()
         claim_parts: list[str] = []
         for index, cell in enumerate(cells):
-            if index in {evidence_index, locator_index}:
+            header_name = normalized_header[index]
+            if index in {evidence_index, locator_index} or header_name == "source":
                 continue
             value = strip_markdown(cell).strip()
             if value:
-                claim_parts.append(f"{header[index]}: {value}")
+                claim_parts.append(value)
         if not claim_parts:
             continue
         rows.append(
@@ -206,6 +208,15 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
             flags.append(DeterministicFlag(row.row, "warn", "claim is short"))
         if normalize_for_search(row.claim) == normalize_for_search(row.evidence):
             flags.append(DeterministicFlag(row.row, "warn", "claim repeats evidence exactly"))
+        weak_words = sorted(WEAK_CLAIM_WORDS & set(content_tokens(row.claim)))
+        if weak_words:
+            flags.append(
+                DeterministicFlag(
+                    row.row,
+                    "fail",
+                    "claim uses weak generic words: " + ", ".join(weak_words),
+                )
+            )
         unsupported = sorted(set(content_tokens(row.claim)) - set(content_tokens(row.evidence + " " + row.context)))
         if len(unsupported) >= 8:
             flags.append(
@@ -285,6 +296,9 @@ def render_prompt(page: Path, rows: list[EvidenceRow], siblings: list[str]) -> s
         )
 
     return f"""You are judging an LLM-Wiki synthesized page. Do not edit files. Return JSON only.
+
+The page exists in the caller's repository. You are not expected to access the filesystem.
+All content needed for judgment is included below. Do not return missing-file or inaccessible-file issues.
 
 Page path: {page.as_posix()}
 Page title: {title}
@@ -399,6 +413,7 @@ Important constraints:
 - The locator points to the source line range for that quote.
 - Judge only whether the claim is supported by the provided evidence and context.
 - Do not claim that the source lacks the evidence if the quote is shown below.
+- Do not return missing-file or inaccessible-file issues; all needed content is shown below.
 - If the claim is mostly right but too broad, use `too_broad` and provide a narrower suggested_claim.
 
 Page path: {page.as_posix()}

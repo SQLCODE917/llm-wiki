@@ -13,7 +13,9 @@ from wiki_phase1_benchmark import find_normalized_source, git_changed_files, ini
 from wiki_phase2_benchmark import (
     RelatedCandidate,
     build_evidence_bank,
+    changed_status_path,
     existing_created_paths,
+    is_runner_artifact,
     related_candidate_rows,
     render_prompt,
     render_repair_prompt,
@@ -28,13 +30,18 @@ def main() -> int:
     parser.add_argument("candidate_path", help="one Related pages candidate path, e.g. ../procedures/example.md")
     parser.add_argument("--candidate", default="local-4090", help="local Codex candidate profile or profile:model")
     parser.add_argument("--normalized-source", help="explicit normalized markdown path")
-    parser.add_argument("--prompt-template", default="tools/prompts/phase2-synthesis.md")
+    parser.add_argument(
+        "--prompt-template",
+        default="auto",
+        help="prompt template path, or 'auto' to choose by selected page type",
+    )
     parser.add_argument("--codex-bin", default="codex")
     parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--repair-attempts", type=int, default=1, help="repair attempts after deterministic validation failures")
     parser.add_argument("--judge-candidate", help="local Codex candidate for claim judging; defaults to --candidate")
     parser.add_argument("--judge-timeout", type=int, default=600)
     parser.add_argument("--judge-repair-attempts", type=int, default=1)
+    parser.add_argument("--judge-batch", action="store_true", help="judge all claim rows in one local-model call")
     parser.add_argument("--skip-judge", action="store_true", help="only run deterministic validation")
     parser.add_argument("--keep", action="store_true", help="keep temp worktree after the run")
     args = parser.parse_args()
@@ -45,7 +52,8 @@ def main() -> int:
         print(f"FAIL: normalized source does not exist: {normalized_source}", file=sys.stderr)
         return 2
 
-    prompt_template = Path(args.prompt_template)
+    candidate_path = source_relative_candidate(args.candidate_path)
+    prompt_template = resolve_prompt_template(candidate_path, args.prompt_template)
     if not prompt_template.exists():
         print(f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
         return 2
@@ -60,7 +68,7 @@ def main() -> int:
             slug=args.slug,
             normalized_source=normalized_source,
             prompt_template=prompt_template,
-            candidate_path=source_relative_candidate(args.candidate_path),
+            candidate_path=candidate_path,
             candidate=candidate,
             codex_bin=args.codex_bin,
             timeout=args.timeout,
@@ -68,6 +76,7 @@ def main() -> int:
             judge_candidate=args.judge_candidate or args.candidate,
             judge_timeout=args.judge_timeout,
             judge_repair_attempts=args.judge_repair_attempts,
+            judge_batch=args.judge_batch,
             skip_judge=args.skip_judge,
         )
         print_result(result)
@@ -81,6 +90,14 @@ def copy_repo_contents(src: Path, dst: Path) -> None:
     from wiki_phase1_benchmark import copy_repo
 
     copy_repo(src, dst)
+
+
+def resolve_prompt_template(candidate_path: str, raw_template: str) -> Path:
+    if raw_template != "auto":
+        return Path(raw_template)
+    if source_relative_to_repo(candidate_path).startswith("wiki/references/"):
+        return Path("tools/prompts/phase2-reference-synthesis.md")
+    return Path("tools/prompts/phase2-synthesis.md")
 
 
 def run_single_candidate(
@@ -97,6 +114,7 @@ def run_single_candidate(
     judge_candidate: str,
     judge_timeout: int,
     judge_repair_attempts: int,
+    judge_batch: bool,
     skip_judge: bool,
 ) -> dict[str, object]:
     source_page = worktree / "wiki/sources" / f"{slug}.md"
@@ -109,6 +127,7 @@ def run_single_candidate(
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
     evidence_bank = build_evidence_bank(worktree, normalized_source, selected_paths)
+    selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
         slug=slug,
@@ -148,16 +167,32 @@ def run_single_candidate(
     for attempt in range(1, repair_attempts + 1):
         if validation_returncode == 0:
             break
-        repair_prompt = render_repair_prompt(
-            slug=slug,
-            validation_output=(worktree / "phase2-validation.log").read_text(),
-            min_pages=expected_total_pages,
-            max_pages=expected_total_pages,
-            selected_candidates=[selected_candidate],
-            existing_paths=existing_paths,
-            normalized_source=normalized_source,
-            evidence_bank=evidence_bank,
-        )
+        validation_output = (worktree / "phase2-validation.log").read_text()
+        hints = claim_repair_hints(worktree, selected_repo_path, normalized_source)
+        if is_reference_candidate(selected_candidate.path):
+            repair_prompt = render_reference_repair_prompt(
+                slug=slug,
+                selected_candidate=selected_candidate,
+                selected_repo_path=selected_repo_path,
+                existing_paths=existing_paths,
+                expected_total_pages=expected_total_pages,
+                normalized_source=normalized_source,
+                evidence_bank=evidence_bank,
+                validation_output=validation_output,
+                claim_hints=hints,
+            )
+        else:
+            repair_prompt = render_repair_prompt(
+                slug=slug,
+                validation_output=validation_output,
+                min_pages=expected_total_pages,
+                max_pages=expected_total_pages,
+                selected_candidates=[selected_candidate],
+                existing_paths=existing_paths,
+                normalized_source=normalized_source,
+                evidence_bank=evidence_bank,
+            )
+            repair_prompt = append_claim_repair_hints(repair_prompt, hints)
         returncode, paths = run_codex(
             worktree=worktree,
             candidate=candidate,
@@ -178,7 +213,6 @@ def run_single_candidate(
         )
 
     judge_returncode = 0
-    selected_repo_path = source_relative_to_repo(selected_candidate.path)
     if validation_returncode == 0 and not skip_judge:
         judge_returncode, judge_report = run_judge(
             worktree=worktree,
@@ -187,6 +221,7 @@ def run_single_candidate(
             judge_candidate=judge_candidate,
             codex_bin=codex_bin,
             timeout=judge_timeout,
+            batch=judge_batch,
             prefix="phase2-judge",
         )
         judge_report_paths.append(judge_report)
@@ -204,6 +239,10 @@ def run_single_candidate(
                 evidence_bank=evidence_bank,
                 judge_report=judge_report.read_text(errors="ignore") if judge_report.exists() else "missing judge report",
                 judge_candidate=judge_candidate,
+            )
+            repair_prompt = append_claim_repair_hints(
+                repair_prompt,
+                claim_repair_hints(worktree, selected_repo_path, normalized_source),
             )
             returncode, paths = run_codex(
                 worktree=worktree,
@@ -233,6 +272,7 @@ def run_single_candidate(
                 judge_candidate=judge_candidate,
                 codex_bin=codex_bin,
                 timeout=judge_timeout,
+                batch=judge_batch,
                 prefix=f"phase2-judge-repair-{attempt}",
             )
             judge_report_paths.append(judge_report)
@@ -246,10 +286,20 @@ def run_single_candidate(
         "codex_returncodes": codex_returncodes,
         "validation_returncode": validation_returncode,
         "judge_returncode": judge_returncode,
-        "changed_files": git_changed_files(worktree),
+        "changed_files": phase2_changed_files(worktree),
         "log_paths": log_paths,
         "judge_report_paths": judge_report_paths,
     }
+
+
+def phase2_changed_files(worktree: Path) -> list[str]:
+    out: list[str] = []
+    for changed in git_changed_files(worktree):
+        path = changed_status_path(changed)
+        if path and is_runner_artifact(path):
+            continue
+        out.append(changed)
+    return out
 
 
 def run_judge(
@@ -260,6 +310,7 @@ def run_judge(
     judge_candidate: str,
     codex_bin: str,
     timeout: int,
+    batch: bool,
     prefix: str,
 ) -> tuple[int, Path]:
     output = worktree / f"{prefix}-{Path(page).stem}.md"
@@ -279,6 +330,8 @@ def run_judge(
         output.as_posix(),
         "--fail-on-issues",
     ]
+    if batch:
+        command.append("--batch")
     completed = subprocess.run(
         command,
         cwd=worktree,
@@ -289,6 +342,127 @@ def run_judge(
     )
     (worktree / f"{prefix}.log").write_text("$ " + " ".join(command) + "\n" + completed.stdout)
     return completed.returncode, output
+
+
+def claim_repair_hints(worktree: Path, page: str, normalized_source: Path) -> str:
+    command = [
+        "python3",
+        "tools/wiki_claim_repair_hints.py",
+        page,
+        "--normalized-source",
+        normalized_source.as_posix(),
+        "--allow-missing",
+    ]
+    completed = subprocess.run(
+        command,
+        cwd=worktree,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        check=False,
+    )
+    return completed.stdout.strip()
+
+
+def append_claim_repair_hints(prompt: str, hints: str) -> str:
+    if not hints:
+        return prompt
+    return prompt + "\n\nAdditional deterministic claim-repair hints:\n\n```text\n" + hints + "\n```\n"
+
+
+def is_reference_candidate(candidate_path: str) -> bool:
+    return source_relative_to_repo(candidate_path).startswith("wiki/references/")
+
+
+def render_reference_repair_prompt(
+    *,
+    slug: str,
+    selected_candidate: RelatedCandidate,
+    selected_repo_path: str,
+    existing_paths: list[str],
+    expected_total_pages: int,
+    normalized_source: Path,
+    evidence_bank: str,
+    validation_output: str,
+    claim_hints: str,
+) -> str:
+    allowed_paths = sorted(set(existing_paths + [selected_candidate.path]))
+    return f"""Read `AGENTS.md` fully before acting.
+
+Repair exactly one Phase 2 reference page. This is a narrow edit task, not a rewrite of the whole wiki.
+
+Allowed writes:
+- `wiki/sources/{slug}.md`
+- `{selected_repo_path}`
+
+Forbidden writes:
+- `raw/imported/**`
+- `raw/normalized/**`
+- `wiki/index.md`
+- `wiki/log.md`
+- `wiki/_graph.json`
+- `wiki/_linter-report.md`
+- `wiki/_grounding-report.md`
+- `wiki/analyses/**`
+- `wiki/concepts/**`
+- `wiki/entities/**`
+- `wiki/procedures/**`
+- `packages/**`
+- `tools/**`
+- any synthesized page other than `{selected_repo_path}`
+- backup files such as `*.bak`, `*.orig`, `*.tmp`, or `*~`
+
+Selected page:
+- `{selected_candidate.path}` - group: {selected_candidate.group or "unclassified"}; priority: {selected_candidate.priority}
+
+Existing synthesized pages for this source that must remain linked:
+{render_existing(existing_paths)}
+
+Validation failed with:
+
+```text
+{validation_output.strip()}
+```
+
+Deterministic claim hints:
+
+```text
+{claim_hints.strip() or "No claim-hint output."}
+```
+
+Evidence bank:
+{evidence_bank}
+
+Mechanical repair rules:
+- Edit `{selected_repo_path}` first. Touch `wiki/sources/{slug}.md` only if its Related pages row is incorrect.
+- Keep `{selected_repo_path}` as `type: reference`.
+- `## Reference data` must have at least 2 data rows and include `Evidence` and `Locator` columns.
+- `## Source-backed details` must have at least 3 rows with header `| Claim | Evidence | Locator | Source |`.
+- If a row fails "excerpt is not found in locator range", shorten the Evidence cell to an exact substring from that locator line, or remove the row if it is optional.
+- If a source line contains internal quotation marks, use a shorter exact excerpt that avoids those internal quotation marks.
+- If a row fails weak generic fact language, rewrite the fact or claim cell, not the Evidence cell.
+- Do not use these weak generic words in fact or claim cells: important, crucial, fundamental, essential, success.
+- Do not copy the Evidence sentence into the fact or claim cell.
+- Do not put YAML/frontmatter keys such as `tags:`, `sources:`, `status:`, or `last_updated:` in the Markdown body.
+- It is acceptable to remove failed optional rows as long as the page still has the minimum required rows.
+- Do not add new pages.
+- Do not create backup files.
+- Do not create scratch files such as `.fixed` files or `temp_file.md`.
+- Do not update index, graph, log, reports, raw files, code, or tools.
+
+After editing, run exactly:
+
+```bash
+python3 tools/wiki_link_related.py {slug}
+python3 tools/wiki_fix_broken_links.py {slug}
+python3 tools/wiki_normalize_ascii.py {slug}
+python3 tools/wiki_normalize_tables.py {slug}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {expected_total_pages} --max-pages {expected_total_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+pnpm wiki:grounding:check
+```
+
+If validation still fails, make another narrow edit to `{selected_repo_path}` and rerun the same commands.
+"""
 
 
 def render_judge_repair_prompt(

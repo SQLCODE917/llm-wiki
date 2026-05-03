@@ -74,7 +74,8 @@ Validation:
 
 `pnpm wiki:phase2-single <slug> <candidate-path>` runs this unit in a disposable worktree and should
 return success only when deterministic validation and local judging pass. Use `--skip-judge` only for
-debugging the deterministic layer.
+debugging the deterministic layer. It uses a reference-specific prompt for selected `wiki/references/**`
+pages so lookup tables are treated as auditable source-backed facts, not inferred taxonomies.
 
 ### Unit D: Claim Judge
 
@@ -102,6 +103,46 @@ Command:
 
 ```bash
 pnpm wiki:judge-claims wiki/concepts/example.md --normalized-source raw/normalized/<slug>/source.md --candidate local-4090 --fail-on-issues
+```
+
+### Unit D2: Deterministic Claim Hints
+
+Input:
+- one synthesized page
+- its normalized source
+
+Output:
+- row-level hints for claims that use weak generic words or appear to overreach the cited evidence/context
+- possible narrower claim wording based on the cited evidence
+
+Command:
+
+```bash
+pnpm wiki:claim-hints wiki/concepts/example.md --normalized-source raw/normalized/<slug>/source.md
+```
+
+`pnpm wiki:phase2-single` includes these hints in deterministic and judge repair prompts when the
+selected page exists.
+
+### Unit F: Query Answer
+
+Input:
+- one user question
+- deterministic selection of a small set of wiki pages
+
+Output:
+- an answer grounded in selected wiki pages
+- optionally, one filed `wiki/analyses/YYYY-MM-DD-<slug>.md` page
+
+Validation:
+- inspect `pnpm wiki:query "<question>" --plan-only` before invoking a local model
+- if `--save-analysis` is used, regenerate `wiki/index.md` and `wiki/_graph.json`, then append a query log entry
+
+Command:
+
+```bash
+pnpm wiki:query "What should I know about this topic?" --plan-only
+pnpm wiki:query "What should I know about this topic?" --candidate local-4090
 ```
 
 ### Unit E: Repair
@@ -182,8 +223,9 @@ For local models such as `local-4090`, use this default loop:
 4. Create or repair exactly that one page with `pnpm wiki:phase2-single <slug> <candidate-path>`.
 5. Run deterministic checks and normalizers.
 6. Run `wiki:judge-claims` with `local-4090`.
-7. Repair only flagged rows.
+7. Use `wiki:claim-hints` and the narrow repair prompts for flagged rows.
 8. Rerun checks and judge.
 9. Adopt and finalize only after the page passes.
+10. For queries, run `wiki:query --plan-only` before invoking the local model.
 
 This is slower than asking for many pages at once, but it is much more reliable and audit-friendly.

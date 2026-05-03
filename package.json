@@ -25,6 +25,8 @@
     "wiki:grounding": "python3 tools/wiki_grounding.py",
     "wiki:grounding:check": "python3 tools/wiki_grounding.py --check",
     "wiki:judge-claims": "python3 tools/wiki_judge_claims.py",
+    "wiki:claim-hints": "python3 tools/wiki_claim_repair_hints.py",
+    "wiki:query": "python3 tools/wiki_query.py",
     "wiki:fix-links": "python3 tools/wiki_fix_broken_links.py",
     "wiki:normalize-ascii": "python3 tools/wiki_normalize_ascii.py",
     "wiki:normalize-tables": "python3 tools/wiki_normalize_tables.py",
