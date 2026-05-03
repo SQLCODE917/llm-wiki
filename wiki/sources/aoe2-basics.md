@@ -6,7 +6,7 @@ source_type: pdf
 raw_path: ../../raw/imported/aoe2-basics/
 normalized_path: ../../raw/normalized/aoe2-basics/
 status: draft
-last_updated: 2026-05-02
+last_updated: 2026-05-03
 tags: []
 sources: [../../raw/imported/aoe2-basics/original.pdf]
 ---
@@ -19,36 +19,30 @@ This document is an organized arrangement of gameplay concepts simplified and ex
 
 ## Key claims
 
-1. Players should focus on fixing one gameplay issue at a time rather than trying to fix everything at once.
-2. Recording and reviewing games helps players identify major mistakes and find solutions.
-3. Creating villagers efficiently enables players to establish a strong early game foundation and effectively manage resources for sustained growth.
-4. Building placement is critical for defense and resource management in the game.
-5. Scouting provides players with information about enemy openings, army movement, and resource exposure.
-6. Economy upgrades such as gold mining, stone mining, and farming improve resource production rates.
-7. Maintaining economy balance ensures that players can sustain their military units and structures.
-8. Continuous production allows players to keep generating resources and units consistently.
-9. Lanchester's law states that the effectiveness of an army increases with the square of its size.
-10. Using the army effectively requires knowledge of unit counter interactions.
-11. Military upgrades such as sword upgrades and archer upgrades improve unit combat effectiveness.
-12. Understanding unit counter interactions enables players to make informed decisions about unit selection and positioning to effectively counter specific enemy units.
-13. Uptimes for military units affect their availability for combat and resource allocation.
-14. Map awareness helps players understand terrain advantages and plan strategic movements.
-15. Opening interactions determine the early game advantage and set the tone for the match.
-16. Army composition planning considers unit types and their synergies for effective gameplay.
-17. Game plans involve strategic decisions about resource allocation, unit production, and timing.
-18. Decision making in the game requires evaluating multiple factors like resources, timing, and unit interactions.
-19. Fitting everything together means integrating all gameplay elements into a cohesive strategy.
-20. Water maps require specific strategies due to limited building space and movement.
-21. Mixed maps have different gameplay elements that require strategic adjustments to ensure successful resource management and unit positioning on various terrain types.
-22. Closed maps affect unit movement and resource access, requiring strategic positioning.
-23. Team games require using only gold units to maintain resource efficiency.
-24. Starting trading early in team games prevents resource depletion and allows unit upgrades.
-25. Trash units in team games are disadvantageous because they weaken unit composition.
-26. Team games require coordination with allies and avoiding arguments that may cause players to quit.
-27. In team games, one player should maintain pressure while the other focuses on defense.
-28. Playing aggression in feudal age in team games is recommended to prevent losses.
-29. Slinging is a team game strategy where one player receives resources from allies.
-30. Slinging is banned in most professional tournaments due to its unfair advantage.
+| Claim | Evidence | Locator |
+|---|---|---|
+| Keeping the town center producing villagers avoids resource losses that grow across the match. | "42 minutes is 2520 seconds and each second a villager at worsts gathers wood at a rate of 0.39 per second." | `normalized:L177` |
+| Build orders turn practiced openings into written sequences that reduce villager movement between resources. | "Build orders are this exact thing written out, simplified, tuned into a format where villagers move between resources as little as possible." | `normalized:L189` |
+| Build order practice should review idle town center time and unit production timing. | "When you're learning build orders you want to pay attention to your idle TC time and the ability to produce the wanted units as soon as possible." | `normalized:L203` |
+| Extensive dark-age walling can delay uptime and hurt the build order. | "walling extensively in dark age will slow down your uptime and hurt your build order significantly." | `normalized:L234` |
+| Production buildings can shorten unit travel distance while also helping form walls. | "Similarly stables and ranges should be built in front in order to shorten distance for the units to travel and help with walling." | `normalized:L236` |
+| Scouting should look for player resources, enemy activity, and extra map resources. | "what you actually should be doing with the scout is actually looking for your resources, what enemy is doing and where are the extra resources in the map." | `normalized:L260` |
+| Later scouting identifies enemy buildings, tech choices, unit lines, and upgrades. | "Later in the game you want to use scouting to know what your opponent is doing, which buildings does he have or what units he is teching into and what sort of upgrades his units have." | `normalized:L268` |
+| Economy upgrades can improve resource income without stopping villager production. | "Best thing about these upgrades is that they do not cost TC time, so you do not need to stop producing villagers for them." | `normalized:L288` |
+| Economy balance means reducing excess resources so income becomes spent growth or army. | "The less excess you have the better your economy is balanced." | `normalized:L310` |
+| Continuous production keeps military buildings from idling after ranges or stables are placed. | "whenever you place down an archery range or stable, ideally it does not ever idle so you can have superior army for contesting map control." | `normalized:L324` |
+| Running one archery range continuously requires about four villagers on gold. | "you need 3.5 villagers on gold to run one archery range to produce archers." | `normalized:L326` |
+| Lanchester's square law says all-against-all fighting strength scales with the square of group size. | "where combat is all-against-all, fighting strength is proportional to the square of group size" | `normalized:L338` |
+| Larger numbers can overcome nominal counter units if the opponent cannot freely kill units. | "you can even win fights against counter units as long as your numbers are high enough." | `normalized:L352` |
+| A counter unit must work in the actual situation, not only in theory. | "It counters only on paper but not in actual situation because the opponent can micro." | `normalized:L382` |
+| Good castle-age timings depend on low wood count, farms, gold transition, and age-up buildings. | "just by keeping your wood count low and seeding farms and transitioning to gold at proper time and getting the buildings for age up right before you have the resources" | `normalized:L439` |
+| Army composition needs trash units, siege units, and a gold-unit power unit. | "To compose your army properly, you need a few different elements in it. Trash units (non-gold costing units), siege units and a power unit (gold unit)." | `normalized:L523` |
+| Game plans begin from map generation and civilization power spikes. | "We take into consideration map generation and civ power spikes and start moving from there, that is how we make game plans." | `normalized:L541` |
+| Decision making evaluates available information and missing information against the game state. | "Decision making refers to evaluating the information available to you and deriving from the lack of information as much." | `normalized:L557` |
+| Water-map play uses a build to gain water control and block transport attempts. | "you use the build and gain control of water and block any attempts to transport." | `normalized:L618` |
+| Mixed maps accelerate economy because fishing ships produce food from a separate building. | "Fishing ships cost only wood, which is much easier to gain than food and on top of that you produce them out of a separate building than TC." | `normalized:L636` |
+| Team games favor gold units because trade makes gold renewable if started before gold runs out. | "The reason why you use only gold units is because gold is unlimited through trade, you should always start trading before gold runs out" | `normalized:L677` |
+| Slinging sends resources through an early market to accelerate one or more allies. | "one or multiple players after reaching feudal age get market as soon as possible and start sending all their resources to their allies." | `normalized:L691` |
 
 ## Major concepts
 

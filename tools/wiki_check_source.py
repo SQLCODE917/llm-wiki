@@ -6,6 +6,7 @@ import re
 import sys
 from pathlib import Path
 
+from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, parse_locator, strip_markdown
 from wiki_common import (
     SOURCE_HEADINGS,
     bullet_count,
@@ -72,6 +73,7 @@ def main() -> int:
     parser.add_argument("--max-related-candidates", type=int, default=24)
     parser.add_argument("--require-natural-groups", action="store_true")
     parser.add_argument("--min-natural-groups", type=int, default=0)
+    parser.add_argument("--require-claim-evidence", action="store_true")
     parser.add_argument("--reject-weak-claims", action="store_true")
     parser.add_argument("--normalized-source", help="normalized source markdown for optional claim grounding checks")
     parser.add_argument(
@@ -132,7 +134,13 @@ def main() -> int:
         failures.append(f"{path}: source headings must exactly match required order")
 
     key_claims = section(fm.body, "## Key claims")
-    claims = [
+    claim_rows, claim_row_failures = parse_claim_evidence_rows(key_claims)
+    failures.extend(f"{path}: {failure}" for failure in claim_row_failures)
+    if args.require_claim_evidence and not args.normalized_source:
+        failures.append(f"{path}: --require-claim-evidence requires --normalized-source")
+    if args.require_claim_evidence and not claim_rows:
+        failures.append(f"{path}: Key claims must use a Claim/Evidence/Locator table")
+    claims = [row[0] for row in claim_rows] if claim_rows else [
         line
         for line in key_claims.splitlines()
         if re.match(r"^\s*(?:[-*]\s+|\d+[.]\s+)", line)
@@ -145,7 +153,8 @@ def main() -> int:
 
     if not args.allow_metadata_claims:
         for i, claim in enumerate(claims, start=1):
-            if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in METADATA_CLAIM_PATTERNS):
+            claim_text = _strip_list_marker(claim)
+            if any(re.search(pattern, claim_text, flags=re.IGNORECASE) for pattern in METADATA_CLAIM_PATTERNS):
                 failures.append(f"{path}: key claim {i} appears to be document metadata, not reusable content")
 
     if args.min_claim_words:
@@ -158,7 +167,7 @@ def main() -> int:
 
     if args.reject_weak_claims:
         for i, claim in enumerate(claims, start=1):
-            if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
+            if any(re.search(pattern, _strip_list_marker(claim), flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
                 failures.append(f"{path}: key claim {i} uses weak generic claim language")
 
     major_concepts = section(fm.body, "## Major concepts")
@@ -169,19 +178,23 @@ def main() -> int:
             f"{path}: only {len(natural_groups)} natural groups; expected at least {args.min_natural_groups}"
         )
 
-    if args.normalized_source and args.max_unsupported_claim_tokens:
+    if args.normalized_source:
         source_path = Path(args.normalized_source)
         if not source_path.exists():
             failures.append(f"{path}: normalized source does not exist: {source_path}")
         else:
-            source_tokens = set(content_tokens(source_path.read_text()))
-            for i, claim in enumerate(claims, start=1):
-                unsupported = sorted(set(content_tokens(_strip_list_marker(claim))) - source_tokens)
-                if len(unsupported) > args.max_unsupported_claim_tokens:
-                    sample = ", ".join(unsupported[:8])
-                    failures.append(
-                        f"{path}: key claim {i} has {len(unsupported)} tokens not found in normalized source: {sample}"
-                    )
+            source_text = source_path.read_text()
+            if claim_rows:
+                failures.extend(validate_claim_evidence_rows(path, claim_rows, source_text.splitlines()))
+            if args.max_unsupported_claim_tokens:
+                source_tokens = set(content_tokens(source_text))
+                for i, claim in enumerate(claims, start=1):
+                    unsupported = sorted(set(content_tokens(_strip_list_marker(claim))) - source_tokens)
+                    if len(unsupported) > args.max_unsupported_claim_tokens:
+                        sample = ", ".join(unsupported[:8])
+                        failures.append(
+                            f"{path}: key claim {i} has {len(unsupported)} tokens not found in normalized source: {sample}"
+                        )
 
     for pattern in FORBIDDEN_PATTERNS:
         if re.search(pattern, text, flags=re.IGNORECASE):
@@ -236,6 +249,54 @@ def _line_number_of_heading(text: str, heading: str) -> int:
 
 def _strip_list_marker(line: str) -> str:
     return re.sub(r"^\s*(?:[-*]\s+|\d+[.]\s+)", "", line).strip()
+
+
+def parse_claim_evidence_rows(markdown: str) -> tuple[list[tuple[str, str, str]], list[str]]:
+    rows: list[tuple[str, str, str]] = []
+    failures: list[str] = []
+    header_seen = False
+    for row_number, line in enumerate(markdown.splitlines(), start=1):
+        stripped = line.strip()
+        if not stripped.startswith("|"):
+            continue
+        cells = split_table_row(stripped)
+        if cells is None:
+            failures.append(f"Key claims row {row_number} is not a valid Markdown table row")
+            continue
+        normalized = [cell.strip().lower() for cell in cells]
+        if normalized == ["claim", "evidence", "locator"]:
+            header_seen = True
+            continue
+        if is_separator_row(cells):
+            continue
+        if not header_seen:
+            continue
+        if len(cells) != 3:
+            failures.append(f"Key claims row {row_number} must have Claim, Evidence, and Locator cells")
+            continue
+        claim, evidence, locator = (cell.strip() for cell in cells)
+        if claim or evidence or locator:
+            rows.append((strip_markdown(claim), clean_evidence_excerpt(evidence), strip_markdown(locator).strip()))
+    return rows, failures
+
+
+def validate_claim_evidence_rows(path: Path, rows: list[tuple[str, str, str]], source_lines: list[str]) -> list[str]:
+    failures: list[str] = []
+    for index, (_claim, evidence, locator) in enumerate(rows, start=1):
+        if len(re.findall(r"[A-Za-z0-9']+", evidence)) < 4 or len(evidence) < 24:
+            failures.append(f"{path}: key claim row {index} evidence excerpt is too short")
+        parsed = parse_locator(locator)
+        if parsed is None:
+            failures.append(f"{path}: key claim row {index} locator must look like `normalized:L12` or `normalized:L12-L14`")
+            continue
+        start, end = parsed
+        if start < 1 or end < start or end > len(source_lines):
+            failures.append(f"{path}: key claim row {index} locator {locator!r} is outside normalized source")
+            continue
+        locator_text = "\n".join(source_lines[start - 1 : end])
+        if normalize_for_search(evidence) not in normalize_for_search(locator_text):
+            failures.append(f"{path}: key claim row {index} evidence is not found in locator range {locator!r}")
+    return failures
 
 
 def validate_natural_group_rows(path: Path, major_concepts: str) -> tuple[set[str], list[str]]:

@@ -21,6 +21,13 @@ def main() -> int:
     parser.add_argument("--min-pages", type=int, default=5)
     parser.add_argument("--max-pages", type=int, default=15)
     parser.add_argument("--normalized-source", help="normalized source markdown for evidence excerpt checks")
+    parser.add_argument("--judge-candidate", default="local-4090", help="local Codex candidate for claim judging")
+    parser.add_argument("--judge-timeout", type=int, default=600)
+    parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument(
+        "--human-override-judge",
+        help="explicit curator reason for adopting without a passing local claim judge",
+    )
     parser.add_argument("--dry-run", action="store_true", help="show files that would be copied without writing")
     args = parser.parse_args()
 
@@ -39,8 +46,26 @@ def main() -> int:
         return validation
 
     files = [Path("wiki/sources") / f"{args.slug}.md"]
-    files.extend(linked_synthesized_pages(source))
+    synthesized_pages = linked_synthesized_pages(source)
+    files.extend(synthesized_pages)
     files = sorted(set(files))
+
+    if args.human_override_judge:
+        print(f"Judge override accepted: {args.human_override_judge}")
+    else:
+        if not args.normalized_source:
+            print("FAIL: --normalized-source is required unless --human-override-judge is provided")
+            return 1
+        judge_status = validate_judges(
+            worktree=worktree,
+            pages=synthesized_pages,
+            normalized_source=args.normalized_source,
+            candidate=args.judge_candidate,
+            codex_bin=args.codex_bin,
+            timeout=args.judge_timeout,
+        )
+        if judge_status != 0:
+            return judge_status
 
     if args.dry_run:
         print("Files that would be adopted:")
@@ -90,6 +115,54 @@ def validate_worktree(
     )
     print(completed.stdout, end="")
     return completed.returncode
+
+
+def validate_judges(
+    *,
+    worktree: Path,
+    pages: list[Path],
+    normalized_source: str,
+    candidate: str,
+    codex_bin: str,
+    timeout: int,
+) -> int:
+    if not pages:
+        print("FAIL: no synthesized pages found for judge validation")
+        return 1
+
+    status = 0
+    report_dir = worktree / "phase2-judge-reports"
+    report_dir.mkdir(exist_ok=True)
+    for page in pages:
+        output = report_dir / f"{page.stem}.md"
+        command = [
+            "python3",
+            "tools/wiki_judge_claims.py",
+            page.as_posix(),
+            "--normalized-source",
+            normalized_source,
+            "--candidate",
+            candidate,
+            "--codex-bin",
+            codex_bin,
+            "--timeout",
+            str(timeout),
+            "--output",
+            output.as_posix(),
+            "--fail-on-issues",
+        ]
+        completed = subprocess.run(
+            command,
+            cwd=worktree,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+        )
+        print(completed.stdout, end="")
+        if completed.returncode != 0:
+            print(f"FAIL: judge did not pass for {page.as_posix()} (report: {output.as_posix()})")
+            status = completed.returncode if status == 0 else status
+    return status
 
 
 def linked_synthesized_pages(source_page: Path) -> list[Path]:

@@ -128,9 +128,7 @@ def lint_source_page(path: Path, fm) -> list[Issue]:
         issues.append(Issue("FAIL", path.as_posix(), "normalized_path must point to normalized source directory"))
 
     key_claims = section(fm.body, "## Key claims")
-    claim_count = len(
-        [line for line in key_claims.splitlines() if re.match(r"^\s*(?:[-*]\s+|\d+[.]\s+)", line)]
-    )
+    claim_count = source_claim_count(key_claims)
     if claim_count == 0:
         issues.append(Issue("FAIL", path.as_posix(), "source page has no key claims"))
 
@@ -143,6 +141,36 @@ def lint_source_page(path: Path, fm) -> list[Issue]:
     if re.search(r"DE \(Dark Age\)", path.read_text(), flags=re.IGNORECASE):
         issues.append(Issue("FAIL", path.as_posix(), "contains unsupported expansion DE (Dark Age)"))
     return issues
+
+
+def source_claim_count(markdown: str) -> int:
+    list_count = len(
+        [line for line in markdown.splitlines() if re.match(r"^\s*(?:[-*]\s+|\d+[.]\s+)", line)]
+    )
+    if list_count:
+        return list_count
+    header_seen = False
+    count = 0
+    for line in markdown.splitlines():
+        cells = split_table_row(line)
+        if cells is None:
+            continue
+        normalized = [cell.strip().lower() for cell in cells]
+        if normalized == ["claim", "evidence", "locator"]:
+            header_seen = True
+            continue
+        if not header_seen or all(cell and set(cell) <= {"-", ":", " "} for cell in cells):
+            continue
+        if len(cells) == 3 and any(cell.strip() for cell in cells):
+            count += 1
+    return count
+
+
+def split_table_row(line: str) -> list[str] | None:
+    stripped = line.strip()
+    if not stripped.startswith("|") or not stripped.endswith("|"):
+        return None
+    return [cell.strip() for cell in stripped[1:-1].split("|")]
 
 
 def lint_links(paths: list[Path]) -> list[Issue]:

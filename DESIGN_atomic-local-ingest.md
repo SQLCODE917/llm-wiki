@@ -29,7 +29,7 @@ Output:
 - candidate related pages
 
 Validation:
-- `pnpm wiki:check-source <slug>`
+- `pnpm wiki:check-source <slug> --require-claim-evidence --normalized-source <normalized-source>`
 - optional source grounding flags
 
 ### Unit B: Evidence Bank
@@ -135,6 +135,8 @@ Deterministic tools should check:
 - exact evidence table shape
 - evidence quote appears in normalized source
 - evidence quote appears in cited locator range
+- source-page key claims have exact evidence and normalized locators
+- reference-page lookup rows have exact evidence and normalized locators
 - page-type sections, such as `## Steps` and `## Reference data`
 - placeholder text such as `Page title`
 - obvious malformed table rows
@@ -171,7 +173,7 @@ For local models such as `local-4090`, use this default loop:
 1. Phase 1 source page.
 2. Select one candidate page.
 3. Generate evidence bank for that one page.
-4. Create or repair exactly that one page.
+4. Create or repair exactly that one page with `pnpm wiki:phase2-single <slug> <candidate-path>`.
 5. Run deterministic checks and normalizers.
 6. Run `wiki:judge-claims` with `local-4090`.
 7. Repair only flagged rows.

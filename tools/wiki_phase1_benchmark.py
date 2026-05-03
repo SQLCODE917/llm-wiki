@@ -386,10 +386,12 @@ def render_prompt(
         "{{min_natural_groups}}": str(min_natural_groups),
         "{{weak_claims_flag}}": "--reject-weak-claims" if reject_weak_claims else "",
         "{{grounding_flag}}": (
-            f"--normalized-source {normalized_source} "
-            f"--max-unsupported-claim-tokens {max_unsupported_claim_tokens}"
-            if max_unsupported_claim_tokens
-            else ""
+            f"--normalized-source {normalized_source}"
+            + (
+                f" --max-unsupported-claim-tokens {max_unsupported_claim_tokens}"
+                if max_unsupported_claim_tokens
+                else ""
+            )
         ),
     }
     rendered = template
@@ -420,17 +422,16 @@ def render_repair_prompt(
             "failures in `## Key claims`.\n"
         )
         weak_claims_flag = " --reject-weak-claims"
-    grounding_line = ""
-    grounding_flag = ""
+    grounding_line = (
+        f"- Evidence excerpts and locators must resolve inside `{normalized_source.as_posix()}`.\n"
+    )
+    grounding_flag = f" --normalized-source {normalized_source.as_posix()}"
     if max_unsupported_claim_tokens:
-        grounding_line = (
+        grounding_line += (
             f"- Avoid introducing claim terms that are absent from `{normalized_source.as_posix()}`; "
             "reuse source vocabulary for specific units, timings, resources, and map mechanics.\n"
         )
-        grounding_flag = (
-            f" --normalized-source {normalized_source.as_posix()}"
-            f" --max-unsupported-claim-tokens {max_unsupported_claim_tokens}"
-        )
+        grounding_flag += f" --max-unsupported-claim-tokens {max_unsupported_claim_tokens}"
     return f"""Read `AGENTS.md` fully before acting.
 
 Repair only `wiki/sources/{slug}.md`.
@@ -460,6 +461,9 @@ Fix the failures mechanically:
 - If a key claim is flagged as document metadata, rewrite that claim as a direct gameplay fact.
 - In `## Key claims`, do not use these validation-failure words: guide, document, author, coached, coaching, Twitch, Google Docs, published.
 - Keep {min_claims} to {max_claims} key claims.
+- Write `## Key claims` as a `| Claim | Evidence | Locator |` table, not a numbered list.
+- Each evidence cell must contain a short exact excerpt from `{normalized_source.as_posix()}`.
+- Each locator must use `normalized:L12` or `normalized:L12-L14`, and the excerpt must appear inside that locator range.
 - Each key claim must be at least {min_claim_words} words.
 {weak_claims_line.rstrip()}
 {grounding_line.rstrip()}
@@ -472,7 +476,7 @@ Fix the failures mechanically:
 After editing, run exactly:
 
 ```bash
-python3 tools/wiki_check_source.py {slug} --min-claims {min_claims} --max-claims {max_claims} --min-claim-words {min_claim_words} --min-related-candidates {min_related_candidates} --max-related-candidates {max_related_candidates} --require-natural-groups --min-natural-groups {min_natural_groups}{weak_claims_flag}{grounding_flag}
+python3 tools/wiki_check_source.py {slug} --min-claims {min_claims} --max-claims {max_claims} --min-claim-words {min_claim_words} --min-related-candidates {min_related_candidates} --max-related-candidates {max_related_candidates} --require-natural-groups --min-natural-groups {min_natural_groups} --require-claim-evidence{weak_claims_flag}{grounding_flag}
 ```
 
 If validation still fails, repair only `wiki/sources/{slug}.md` and rerun the same command.
@@ -509,14 +513,15 @@ def run_validation(
         "--require-natural-groups",
         "--min-natural-groups",
         str(min_natural_groups),
+        "--require-claim-evidence",
+        "--normalized-source",
+        normalized_source.as_posix(),
     ]
     if reject_weak_claims:
         command.append("--reject-weak-claims")
     if max_unsupported_claim_tokens:
         command.extend(
             [
-                "--normalized-source",
-                normalized_source.as_posix(),
                 "--max-unsupported-claim-tokens",
                 str(max_unsupported_claim_tokens),
             ]
@@ -535,14 +540,14 @@ def run_validation(
 
 def git_changed_files(worktree: Path) -> list[str]:
     completed = subprocess.run(
-        ["git", "status", "--short"],
+        ["git", "status", "--short", "--untracked-files=all"],
         cwd=worktree,
         text=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.DEVNULL,
         check=False,
     )
-    return [line.strip() for line in completed.stdout.splitlines() if line.strip()]
+    return [line.rstrip() for line in completed.stdout.splitlines() if line.strip()]
 
 
 def run(command: list[str], cwd: Path) -> None:

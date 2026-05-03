@@ -58,3 +58,12 @@
 - Generated wiki/_linter-report.md.
 
 ---
+
+## [2026-05-03] schema-change | atomic local ingest gates strengthened
+
+- Source-page Key claims now use exact Evidence and Locator tables verified against normalized sources.
+- Phase 2 adoption now requires local claim-judge success or an explicit curator override reason.
+- Added wiki:phase2-single for one-candidate local synthesis worktrees.
+- Reference page lookup tables now require Evidence and Locator columns.
+
+---

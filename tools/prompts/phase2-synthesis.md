@@ -69,6 +69,7 @@ Evidence bank:
 - Do not add `## Executable implementation` unless a real implementation file exists and is linked.
 - Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
 - Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
+- Reference data tables must include `Evidence` and `Locator` columns, and those cells must follow the same exact-quote and normalized-line rules as `## Source-backed details`.
 - Use bullets or short paragraphs under `## Source-backed details`; make the section substantial enough to preserve reusable source knowledge.
 - Cross-links may point only to pages that already exist or pages created in this phase. Do not Markdown-link to candidate pages that remain uncreated.
 - Each synthesized page frontmatter `sources` must include a relative link to `../sources/{{slug}}.md` or equivalent correct relative path.

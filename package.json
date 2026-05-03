@@ -10,6 +10,7 @@
     "wiki:check-synthesis": "python3 tools/wiki_check_synthesis.py",
     "wiki:phase1-benchmark": "python3 tools/wiki_phase1_benchmark.py",
     "wiki:phase2-benchmark": "python3 tools/wiki_phase2_benchmark.py",
+    "wiki:phase2-single": "python3 tools/wiki_phase2_single.py",
     "wiki:review-phase2": "python3 tools/wiki_review_phase2.py",
     "wiki:adopt-phase2": "python3 tools/wiki_adopt_phase2.py",
     "wiki:phase3": "python3 tools/wiki_phase3_finalize.py",

@@ -58,12 +58,20 @@ Mechanical content rules:
 - If the source does not cover a section, write `not covered in sources` or `None.`
 
 `## Key claims` rules:
-- Write {{min_claims}} to {{max_claims}} numbered claims.
-- Use plain numbered sentences. Do not use bold labels in the claim list.
+- Write {{min_claims}} to {{max_claims}} source-backed claims in this exact table shape:
+
+```md
+| Claim | Evidence | Locator |
+|---|---|---|
+| Concrete reusable claim in your own words. | "Short exact excerpt copied from the normalized source." | `normalized:L12` |
+```
+
 - Each claim must be at least {{min_claim_words}} words.
 - The words important, crucial, fundamental, essential, and success are validation failures in `## Key claims`.
 - Each claim must include a concrete action, cause, effect, condition, tradeoff, timing, unit interaction, resource relationship, or map/team implication from the source.
 - Every key claim must be reusable gameplay/content/domain knowledge from the normalized source.
+- Evidence cells must be short exact excerpts from `{{normalized_source}}`; do not paraphrase evidence cells.
+- Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
 - Do not include document metadata as key claims.
 - In `## Key claims`, these words are validation failures: guide, document, author, coached, coaching, Twitch, Google Docs, published.
 - Claims should talk about game actions, strategy, economy, scouting, units, buildings, timings, resources, team play, or improvement procedures.
@@ -108,7 +116,7 @@ Mechanical content rules:
 After writing, run exactly:
 
 ```bash
-python3 tools/wiki_check_source.py {{slug}} --min-claims {{min_claims}} --max-claims {{max_claims}} --min-claim-words {{min_claim_words}} --min-related-candidates {{min_related_candidates}} --max-related-candidates {{max_related_candidates}} --require-natural-groups --min-natural-groups {{min_natural_groups}} {{weak_claims_flag}} {{grounding_flag}}
+python3 tools/wiki_check_source.py {{slug}} --min-claims {{min_claims}} --max-claims {{max_claims}} --min-claim-words {{min_claim_words}} --min-related-candidates {{min_related_candidates}} --max-related-candidates {{max_related_candidates}} --require-natural-groups --min-natural-groups {{min_natural_groups}} --require-claim-evidence {{weak_claims_flag}} {{grounding_flag}}
 ```
 
 If validation fails, repair only `wiki/sources/{{slug}}.md` and rerun the same command.

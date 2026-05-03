@@ -138,6 +138,17 @@ Every page in `wiki/sources/` must include:
 
 If a section has no content, write `None.` or `not covered in sources`.
 
+`## Key claims` must be auditable. Prefer this table shape over a plain list:
+
+```md
+| Claim | Evidence | Locator |
+|---|---|---|
+| Concrete reusable claim in the agent's own words. | "Short exact excerpt from the normalized source." | `normalized:L12` |
+```
+
+The evidence cell must be copied exactly from `raw/normalized/<slug>/`, and the locator must point to
+the normalized line or line range where that excerpt appears.
+
 During ingest phase 1, synthesized pages usually do not exist yet. In that case, `## Related pages`
 must list candidate future pages as code-formatted intended paths in a table, not Markdown links.
 This records the planned graph without creating broken links.
@@ -194,6 +205,9 @@ Useful optional sections:
 - `## Examples`
 - `## Open questions`
 - `## Executable implementation`
+
+Reference pages that include lookup tables must keep those tables auditable: include `Evidence` and
+`Locator` columns for source-derived rows.
 
 Type-specific required sections:
 
@@ -440,6 +454,7 @@ pnpm wiki:check-source <slug>
 pnpm wiki:check-synthesis <slug>
 pnpm wiki:phase1-benchmark <slug>
 pnpm wiki:phase2-benchmark <slug>
+pnpm wiki:phase2-single <slug> <candidate-path>
 pnpm wiki:review-phase2 <slug> <worktree>
 pnpm wiki:adopt-phase2 <slug> <worktree>
 pnpm wiki:phase3 <slug>
@@ -470,14 +485,14 @@ For local-model Phase 2 synthesis trials, prefer the mechanical prompt template 
 `tools/prompts/phase2-synthesis.md`. To compare candidates in disposable worktrees, run:
 
 ```bash
-pnpm wiki:phase2-benchmark <slug> --candidate local-4090
+pnpm wiki:phase2-single <slug> ../concepts/example.md --candidate local-4090
 ```
 
 If a Phase 2 benchmark worktree is good enough to adopt, copy it into the real repo with:
 
 ```bash
 pnpm wiki:review-phase2 <slug> <worktree>
-pnpm wiki:adopt-phase2 <slug> <worktree>
+pnpm wiki:adopt-phase2 <slug> <worktree> --normalized-source raw/normalized/<slug>/source.md
 ```
 
 If a local model ignores failed validation, stop the run and narrow the next prompt to the first failing check.

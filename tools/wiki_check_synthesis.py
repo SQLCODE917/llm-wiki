@@ -324,7 +324,7 @@ def check_synthesized_page(
     if "## Source pages" not in body_headings and "## Sources" not in body_headings:
         failures.append(f"{page}: missing source page section")
 
-    failures.extend(check_type_specific_sections(page, fm.body, page_type))
+    failures.extend(check_type_specific_sections(page, fm.body, page_type, evidence_source))
     return failures
 
 
@@ -425,7 +425,12 @@ def diff_marker_failures(page: Path, markdown: str) -> list[str]:
     return failures
 
 
-def check_type_specific_sections(page: Path, body: str, page_type: object) -> list[str]:
+def check_type_specific_sections(
+    page: Path,
+    body: str,
+    page_type: object,
+    evidence_source: EvidenceSource | None,
+) -> list[str]:
     failures: list[str] = []
     if page_type == "procedure":
         steps = section(body, "## Steps") or section(body, "## Procedure")
@@ -439,6 +444,54 @@ def check_type_specific_sections(page: Path, body: str, page_type: object) -> li
             failures.append(f"{page}: reference pages must include a ## Reference data section")
         elif table_data_row_count(reference_data) < 2:
             failures.append(f"{page}: Reference data table has fewer than 2 data rows")
+        else:
+            failures.extend(check_reference_data_table(page, reference_data, evidence_source))
+    return failures
+
+
+def check_reference_data_table(
+    page: Path,
+    markdown: str,
+    evidence_source: EvidenceSource | None,
+) -> list[str]:
+    failures: list[str] = []
+    rows = table_rows(markdown)
+    if len(rows) < 2:
+        return failures
+    header_index = next((index for index, row in enumerate(rows) if not is_separator_row(row)), None)
+    if header_index is None:
+        return failures
+    header = [cell.strip().lower() for cell in rows[header_index]]
+    if "evidence" not in header or "locator" not in header:
+        failures.append(f"{page}: Reference data table must include Evidence and Locator columns")
+        return failures
+    evidence_index = header.index("evidence")
+    locator_index = header.index("locator")
+    for row_number, row in enumerate(rows[header_index + 1 :], start=1):
+        if is_separator_row(row):
+            continue
+        if len(row) != len(header):
+            failures.append(f"{page}: Reference data row {row_number} must have {len(header)} cells")
+            continue
+        evidence = clean_evidence_excerpt(row[evidence_index])
+        locator = row[locator_index]
+        if len(re.findall(r"[A-Za-z0-9']+", evidence)) < 4 or len(evidence) < 24:
+            failures.append(f"{page}: Reference data row {row_number} evidence excerpt is too short")
+        parsed_locator = parse_locator(locator)
+        if parsed_locator is None:
+            failures.append(
+                f"{page}: Reference data row {row_number} locator must look like `normalized:L12` or `normalized:L12-L14`"
+            )
+            continue
+        if evidence_source is None:
+            continue
+        start, end = parsed_locator
+        if start < 1 or end < start or end > len(evidence_source.lines):
+            failures.append(f"{page}: Reference data row {row_number} locator {clean_locator(locator)!r} is outside normalized source line range")
+            continue
+        locator_text = "\n".join(evidence_source.lines[start - 1 : end])
+        if normalize_for_search(evidence) not in normalize_for_search(locator_text):
+            failures.append(f"{page}: Reference data row {row_number} evidence is not found in locator range {clean_locator(locator)!r}")
     return failures
 
 

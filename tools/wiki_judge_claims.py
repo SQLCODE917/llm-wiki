@@ -278,10 +278,28 @@ def run_row_judges(
             errors.append(f"row {row.row}: local judge exited with status {returncode}")
             continue
         try:
-            parsed = parse_row_json_result(raw)
+            parsed = parse_row_json_result(raw, allow_text_recovery=False)
         except ValueError as error:
-            errors.append(f"row {row.row}: {error}")
-            continue
+            retry_prompt = render_row_retry_prompt(row, raw, str(error))
+            retry_raw, retry_returncode = run_local_judge(codex_bin, candidate, retry_prompt, timeout)
+            raw_outputs.append(f"ROW {row.row} RETRY\n{retry_raw}")
+            if retry_returncode == 0:
+                try:
+                    parsed = parse_row_json_result(retry_raw, allow_text_recovery=False)
+                except ValueError as retry_error:
+                    recovered = row_verdict_from_text("\n".join([raw, retry_raw]))
+                    if recovered is None:
+                        errors.append(f"row {row.row}: {retry_error}")
+                        continue
+                    parsed = recovered
+                else:
+                    parsed.setdefault("issue", "judge needed JSON-only retry")
+            else:
+                recovered = row_verdict_from_text(raw)
+                if recovered is None:
+                    errors.append(f"row {row.row}: retry exited with status {retry_returncode} after {error}")
+                    continue
+                parsed = recovered
         parsed["row"] = row.row
         results.append(parsed)
     page_verdict = "useful"
@@ -340,6 +358,37 @@ Return this JSON object and nothing else:
 """
 
 
+def render_row_retry_prompt(row: EvidenceRow, previous_output: str, parse_error: str) -> str:
+    return f"""Your previous answer could not be parsed as JSON.
+
+Parse error:
+{parse_error}
+
+Previous answer:
+{previous_output}
+
+Return exactly one JSON object and no prose. Do not use Markdown fences.
+
+Claim: {row.claim}
+Evidence quote: {row.evidence}
+Source context:
+{row.context}
+
+Allowed verdicts:
+- supported
+- too_broad
+- not_supported
+- unclear
+
+JSON shape:
+{{
+  "verdict": "supported",
+  "issue": "",
+  "suggested_claim": ""
+}}
+"""
+
+
 def run_local_judge(codex_bin: str, candidate: str, prompt: str, timeout: int) -> tuple[str, int]:
     profile, model = parse_candidate(candidate)
     with tempfile.TemporaryDirectory(prefix="llm-wiki-judge.") as tmp:
@@ -384,18 +433,11 @@ def parse_candidate(raw: str) -> tuple[str, str | None]:
 
 
 def parse_json_result(raw: str) -> dict[str, Any]:
-    text = raw.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?", "", text).strip()
-        text = re.sub(r"```$", "", text).strip()
-    start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1 or end < start:
-        fallback = row_verdict_from_text(text)
-        if fallback is not None:
-            return fallback
+    text = strip_code_fence(raw.strip())
+    json_text = extract_json_object(text)
+    if json_text is None:
         raise ValueError("local judge did not return a JSON object")
-    parsed = json.loads(text[start : end + 1])
+    parsed = json.loads(json_text)
     if not isinstance(parsed, dict):
         raise ValueError("local judge JSON was not an object")
     page_verdict = parsed.get("page_verdict")
@@ -432,22 +474,58 @@ def row_verdict_from_text(text: str) -> dict[str, str] | None:
     }
 
 
-def parse_row_json_result(raw: str) -> dict[str, Any]:
-    text = raw.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?", "", text).strip()
-        text = re.sub(r"```$", "", text).strip()
-    start = text.find("{")
-    end = text.rfind("}")
-    if start == -1 or end == -1 or end < start:
+def parse_row_json_result(raw: str, *, allow_text_recovery: bool = True) -> dict[str, Any]:
+    text = strip_code_fence(raw.strip())
+    json_text = extract_json_object(text)
+    if json_text is None:
+        if allow_text_recovery:
+            recovered = row_verdict_from_text(text)
+            if recovered is not None:
+                return recovered
         raise ValueError("local judge did not return a JSON object")
-    parsed = json.loads(text[start : end + 1])
+    parsed = json.loads(json_text)
     if not isinstance(parsed, dict):
         raise ValueError("local judge JSON was not an object")
     verdict = parsed.get("verdict")
     if verdict not in VERDICTS:
         raise ValueError(f"local judge returned invalid verdict {verdict!r}")
     return parsed
+
+
+def strip_code_fence(text: str) -> str:
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json|text)?", "", text).strip()
+        text = re.sub(r"```$", "", text).strip()
+    return text
+
+
+def extract_json_object(text: str) -> str | None:
+    start = text.find("{")
+    if start == -1:
+        return None
+    depth = 0
+    in_string = False
+    escaped = False
+    for index in range(start, len(text)):
+        char = text[index]
+        if escaped:
+            escaped = False
+            continue
+        if char == "\\":
+            escaped = True
+            continue
+        if char == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if char == "{":
+            depth += 1
+        elif char == "}":
+            depth -= 1
+            if depth == 0:
+                return text[start : index + 1]
+    return None
 
 
 def render_report(

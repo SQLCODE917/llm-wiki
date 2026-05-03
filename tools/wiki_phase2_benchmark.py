@@ -321,7 +321,7 @@ def changed_file_scope_failures(worktree: Path, slug: str, allowed_paths: list[s
 
 
 def changed_status_path(line: str) -> str:
-    value = line[3:].strip() if len(line) > 3 else line.strip()
+    value = line[3:].strip() if len(line) > 3 and line[2] == " " else line[2:].strip()
     if " -> " in value:
         value = value.split(" -> ", 1)[1].strip()
     return value
@@ -390,6 +390,7 @@ Fix the failures mechanically:
 - Remove empty headings, duplicate headings, and empty `## Executable implementation` sections.
 - Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
 - Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
+- Reference data tables must include `Evidence` and `Locator` columns with exact normalized-source excerpts.
 - Synthesized-page cross-links may point only to pages that already exist or pages created in this phase.
 - Do not create extra pages to repair broken cross-links; remove the broken Markdown link or change it to plain text instead.
 - Created pages and not-yet-created candidates must use this canonical `## Related pages` row shape:
