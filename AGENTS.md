@@ -72,10 +72,13 @@ Special operational files are not content pages and do not require page-type fro
 
 - `wiki/index.md`
 - `wiki/log.md`
+- `wiki/_analysis-judge-report.md`
 - `wiki/_claim-judge-report.md`
+- `wiki/_contradiction-report.md`
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
 - `wiki/_grounding-report.md`
+- `wiki/_semantic-linter-report.md`
 
 ---
 
@@ -296,6 +299,24 @@ Local models must ingest in bounded phases. Do not ask a local model to perform 
 2. If the source is markdown, preserve the original in `raw/imported/` and work from `raw/normalized/`.
 3. Do not edit `raw/imported/`.
 
+Use the deterministic importer when possible:
+
+```bash
+pnpm wiki:phase0 raw/inbox/<file.pdf> <slug>
+pnpm wiki:phase0 raw/inbox/<file.md> <slug>
+```
+
+For PDFs, this wraps the local marker flow:
+
+```bash
+TORCH_DEVICE=cuda marker_single raw/inbox/<file.pdf> --output_format markdown --output_dir raw/normalized/<slug> --disable_tqdm
+```
+
+`wiki:phase0` copies the original once into `raw/imported/<slug>/original.pdf` or
+`raw/imported/<slug>/original.md`. It refuses to overwrite imported originals. If an earlier attempt copied
+the same original but normalization needs to be rerun, use `--reuse-imported --overwrite-normalized`; this
+checks that the imported original bytes match the inbox file before touching `raw/normalized/`.
+
 ### Phase 1: source page only
 
 1. Read the normalized source.
@@ -476,6 +497,8 @@ pnpm wiki:normalize-ascii <slug>
 pnpm wiki:normalize-tables <slug>
 pnpm wiki:link-related <slug>
 pnpm wiki:lint
+pnpm wiki:semantic-lint
+pnpm wiki:contradictions
 ```
 
 For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
@@ -559,6 +582,8 @@ Check:
 - broken Markdown links
 - orphan pages
 - duplicate pages covering the same concept
+- semantic overlap between synthesized pages
+- possible cross-source contradictions
 - source pages without related synthesized pages
 - claims marked `not covered in sources`
 - unresolved contradictions in `wiki/log.md`

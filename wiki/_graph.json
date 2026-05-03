@@ -28,6 +28,21 @@
         "wiki:sources/aoe2-basics"
       ]
     },
+    "wiki:concepts/aoe2-decision-making": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-decision-making.md",
+      "description": "Decision making in Age of Empires II is the use of available and missing information to choose actions in a game state where plans, unit use, attention, and timing can change the\u2026",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/aoe2-army-composition",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-opening-interactions",
+        "wiki:procedures/aoe2-game-plans",
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:concepts/aoe2-economy-balance": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-economy-balance.md",
@@ -72,6 +87,21 @@
         "wiki:sources/aoe2-basics"
       ]
     },
+    "wiki:concepts/aoe2-resource-management": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-resource-management.md",
+      "description": "Resource management in Age of Empires II is the ongoing work of turning income into economy growth, army production, age-up resources, and timely retasking instead of letting the\u2026",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-economy-balance",
+        "wiki:procedures/aoe2-scouting-techniques",
+        "wiki:references/aoe2-economy-upgrades",
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:concepts/aoe2-team-play-strategies": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-team-play-strategies.md",
@@ -103,6 +133,21 @@
       ],
       "depends_on": [
         "wiki:sources/compound-interest"
+      ]
+    },
+    "wiki:procedures/aoe2-game-plans": {
+      "type": "procedure",
+      "path": "wiki/procedures/aoe2-game-plans.md",
+      "description": "A game plan in Age of Empires II is a strategic plan built from map generation, civilization power spikes, resource advantages, and the opponent's likely responses.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/aoe2-army-composition",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-opening-interactions",
+        "wiki:concepts/aoe2-resource-management",
+        "wiki:sources/aoe2-basics"
       ]
     },
     "wiki:procedures/aoe2-scouting-techniques": {
@@ -148,12 +193,15 @@
       "depends_on": [
         "wiki:concepts/aoe2-army-composition",
         "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-decision-making",
         "wiki:concepts/aoe2-economy-balance",
         "wiki:concepts/aoe2-lanchesters-law",
         "wiki:concepts/aoe2-map-awareness",
         "wiki:concepts/aoe2-opening-interactions",
+        "wiki:concepts/aoe2-resource-management",
         "wiki:concepts/aoe2-team-play-strategies",
         "wiki:concepts/aoe2-unit-counter-interactions",
+        "wiki:procedures/aoe2-game-plans",
         "wiki:procedures/aoe2-scouting-techniques",
         "wiki:references/aoe2-economy-upgrades",
         "wiki:references/aoe2-military-upgrades"

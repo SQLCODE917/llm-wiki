@@ -166,3 +166,75 @@
 - Report: wiki/_linter-report.md
 
 ---
+
+## [2026-05-03] ingest | adopted AoE2 resource management concept
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] schema-change | added deterministic Phase 0 importer
+
+- Added wiki:phase0 for safe PDF and Markdown import from raw/inbox into raw/imported and raw/normalized.
+- PDF import wraps TORCH_DEVICE=cuda marker_single with markdown output and --disable_tqdm.
+- Imported originals are not overwritten; --reuse-imported requires matching bytes before rerunning normalization.
+- Added wiki:phase0:smoke to test markdown import, duplicate refusal, reuse, and PDF dry-run behavior in a temp repo.
+- Synthesis validation now rejects synthesized pages with placeholder Page title text, uncreated-candidate mentions, or executable sections without packages links.
+
+---
+## [2026-05-03] lint | 0 FAIL | 0 WARN | 1 TODO
+
+- FAIL: 0
+- WARN: 0
+- TODO: 1
+- Report: wiki/_linter-report.md
+
+---
+
+## [2026-05-03] ingest | adopted AoE2 game plans procedure
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] ingest | adopted AoE2 decision making concept
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] schema-change | added semantic maintenance and analysis judging
+
+- Added wiki:semantic-lint for deterministic duplicate/overlap triage across synthesized pages.
+- Added wiki:judge-analysis and wired the query smoke test through deterministic analysis judging.
+- Added wiki:contradictions to scan source claim tables for possible cross-source contradictions once multiple substantial sources exist.
+- Model comparison on AoE2 decision-making favored local-4090 qwen: qwen passed deterministic validation quickly; gpt-oss:20b timed out then failed validation.
+
+---
+
+## [2026-05-03] lint | 0 semantic overlap warning(s)
+
+- Semantic report: wiki/_semantic-linter-report.md
+- WARN: 0
+
+---
+## [2026-05-03] lint | 0 FAIL | 0 WARN | 1 TODO
+
+- FAIL: 0
+- WARN: 0
+- TODO: 1
+- Report: wiki/_linter-report.md
+
+---
+
+## [2026-05-03] lint | 0 candidate contradiction(s)
+
+- Contradiction report: wiki/_contradiction-report.md
+
+---

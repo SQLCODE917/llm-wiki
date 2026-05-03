@@ -49,8 +49,12 @@ VALID_TYPES = {"source", "entity", "concept", "procedure", "reference", "analysi
 SPECIAL_WIKI_FILES = {
     Path("wiki/index.md"),
     Path("wiki/log.md"),
+    Path("wiki/_analysis-judge-report.md"),
+    Path("wiki/_claim-judge-report.md"),
+    Path("wiki/_contradiction-report.md"),
     Path("wiki/_linter-report.md"),
     Path("wiki/_grounding-report.md"),
+    Path("wiki/_semantic-linter-report.md"),
 }
 
 

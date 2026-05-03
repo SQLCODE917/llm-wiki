@@ -16,6 +16,39 @@ The goal is an auditable wiki, not fast-looking summaries. A page is acceptable 
 
 The reliable unit for local synthesis is one source page or one synthesized page, not a whole source-to-wiki expansion.
 
+### Unit 0: Import and Normalize
+
+Input:
+- one source file under `raw/inbox/`
+- one source slug
+
+Output:
+- immutable copy at `raw/imported/<slug>/original.pdf` or `raw/imported/<slug>/original.md`
+- normalized markdown under `raw/normalized/<slug>/`
+
+Validation:
+- import refuses to overwrite an existing imported original
+- `--reuse-imported` is allowed only when the inbox file bytes match the imported original
+- markdown sources normalize to `raw/normalized/<slug>/source.md`
+- PDF sources run marker with `TORCH_DEVICE=cuda`, Markdown output, and `--disable_tqdm`
+
+Command:
+
+```bash
+pnpm wiki:phase0 raw/inbox/<file.pdf> <slug>
+pnpm wiki:phase0 raw/inbox/<file.md> <slug>
+pnpm wiki:phase0:smoke
+```
+
+For the AoE2 source, the equivalent explicit marker command was:
+
+```bash
+TORCH_DEVICE=cuda marker_single raw/inbox/AoE2_basics.pdf \
+  --output_format markdown \
+  --output_dir raw/normalized/aoe2-basics \
+  --disable_tqdm
+```
+
 ### Unit A: Source Page
 
 Input:
@@ -197,6 +230,7 @@ Output:
 Validation:
 - inspect `pnpm wiki:query "<question>" --plan-only` before invoking a local model
 - run `pnpm wiki:check-analysis <page>` before filing an analysis into index/graph/log
+- run `pnpm wiki:judge-analysis <page> --candidate local-4090 --fail-on-issues` before treating a saved analysis as reviewed
 - if `--save-analysis` is used, regenerate `wiki/index.md` and `wiki/_graph.json`, then append a query log entry
 
 Command:
@@ -205,6 +239,7 @@ Command:
 pnpm wiki:query "What should I know about this topic?" --plan-only
 pnpm wiki:query "What should I know about this topic?" --candidate local-4090
 pnpm wiki:check-analysis wiki/analyses/YYYY-MM-DD-example.md
+pnpm wiki:judge-analysis wiki/analyses/YYYY-MM-DD-example.md --candidate local-4090 --fail-on-issues
 pnpm wiki:query:smoke
 ```
 
@@ -224,6 +259,26 @@ Output:
 Validation:
 - rerun the deterministic checks
 - rerun the judge on repaired rows or the repaired page
+
+### Unit G: Semantic Maintenance
+
+Input:
+- synthesized wiki pages
+- source-page key claims
+
+Output:
+- `wiki/_semantic-linter-report.md` for likely duplicate or heavily overlapping synthesized pages
+- `wiki/_contradiction-report.md` for possible cross-source contradictions
+
+Commands:
+
+```bash
+pnpm wiki:semantic-lint
+pnpm wiki:contradictions
+```
+
+The semantic linter is deterministic and lexical. It is a triage tool, not proof of duplication.
+The contradiction scanner becomes meaningful after at least two substantial source pages exist.
 
 ## Adoption Gate
 

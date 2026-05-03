@@ -44,6 +44,7 @@ print(path.as_posix())
             print("FAIL: smoke analysis page was not created", file=sys.stderr)
             return 1
         run([sys.executable, "tools/wiki_check_analysis.py", analysis.as_posix()], cwd=worktree)
+        run([sys.executable, "tools/wiki_judge_analysis.py", analysis.as_posix(), "--deterministic-only"], cwd=worktree)
         run([sys.executable, "tools/wiki_index.py", "--check"], cwd=worktree)
         run([sys.executable, "tools/wiki_graph.py", "--check"], cwd=worktree)
         print(f"PASS: query analysis smoke test in {worktree}")

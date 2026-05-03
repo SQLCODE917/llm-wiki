@@ -362,6 +362,14 @@ def check_synthesized_page(
         if not section(fm.body, heading).strip():
             failures.append(f"{page}: empty section {heading!r}")
 
+    if "Page title" in fm.body:
+        failures.append(f"{page}: contains placeholder text 'Page title'")
+    if re.search(r"\bnot created yet\b", fm.body, flags=re.IGNORECASE):
+        failures.append(f"{page}: synthesized pages must not mention uncreated candidate pages")
+    executable = section(fm.body, "## Executable implementation")
+    if executable and not re.search(r"(?:\.\./)+packages/|packages/", executable):
+        failures.append(f"{page}: ## Executable implementation must link to a real packages/ implementation or be omitted")
+
     if "## Source-backed details" not in body_headings:
         failures.append(f"{page}: missing source-backed details section")
     else:

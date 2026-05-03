@@ -1,0 +1,194 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import hashlib
+import os
+import re
+import shutil
+import subprocess
+import sys
+from pathlib import Path
+
+
+MARKDOWN_SUFFIXES = {".md", ".markdown"}
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Phase 0 import and normalize one inbox source.")
+    parser.add_argument("source", help="source file, normally under raw/inbox/")
+    parser.add_argument("slug", help="source slug, e.g. aoe2-basics")
+    parser.add_argument("--source-type", choices=["auto", "pdf", "markdown"], default="auto")
+    parser.add_argument("--marker-bin", default="marker_single", help="PDF normalizer command")
+    parser.add_argument("--torch-device", default="cuda", help="TORCH_DEVICE value for marker_single")
+    parser.add_argument(
+        "--reuse-imported",
+        action="store_true",
+        help="allow an existing immutable imported original only if its bytes match the source",
+    )
+    parser.add_argument(
+        "--overwrite-normalized",
+        action="store_true",
+        help="replace raw/normalized/<slug>/ before writing normalized output",
+    )
+    parser.add_argument(
+        "--allow-outside-inbox",
+        action="store_true",
+        help="allow source paths outside raw/inbox/ for tests or controlled migrations",
+    )
+    parser.add_argument("--dry-run", action="store_true", help="print planned actions without writing files")
+    args = parser.parse_args()
+
+    repo = Path.cwd().resolve()
+    source = Path(args.source)
+    if not source.is_absolute():
+        source = (Path.cwd() / source).resolve()
+    if not source.is_file():
+        print(f"FAIL: source does not exist: {source}", file=sys.stderr)
+        return 2
+    if not valid_slug(args.slug):
+        print(f"FAIL: invalid slug {args.slug!r}; use lowercase letters, numbers, and hyphens", file=sys.stderr)
+        return 2
+    if not args.allow_outside_inbox and not is_relative_to(source, repo / "raw/inbox"):
+        print(f"FAIL: source must be under raw/inbox/ unless --allow-outside-inbox is used: {source}", file=sys.stderr)
+        return 2
+
+    source_type = detect_source_type(source, args.source_type)
+    imported_dir = repo / "raw/imported" / args.slug
+    normalized_dir = repo / "raw/normalized" / args.slug
+    imported_file = imported_dir / imported_filename(source_type)
+
+    actions = planned_actions(source, imported_file, normalized_dir, source_type, args)
+    if args.dry_run:
+        print("\n".join(actions))
+        return 0
+
+    try:
+        prepare_imported(source, imported_dir, imported_file, args.reuse_imported)
+        prepare_normalized(normalized_dir, args.overwrite_normalized)
+        if source_type == "markdown":
+            normalized_target = normalized_dir / "source.md"
+            shutil.copy2(source, normalized_target)
+        elif source_type == "pdf":
+            command = marker_command(args.marker_bin, source, normalized_dir)
+            env = os.environ.copy()
+            env["TORCH_DEVICE"] = args.torch_device
+            completed = subprocess.run(command, env=env, text=True, check=False)
+            if completed.returncode != 0:
+                print(f"FAIL: marker command exited with {completed.returncode}", file=sys.stderr)
+                return completed.returncode
+            if not list(normalized_dir.rglob("*.md")):
+                print(f"FAIL: marker command produced no markdown under {normalized_dir}", file=sys.stderr)
+                return 1
+        else:
+            raise AssertionError(f"unhandled source type {source_type}")
+    except Phase0Error as error:
+        print(f"FAIL: {error}", file=sys.stderr)
+        return 1
+
+    print(f"imported: {imported_file.relative_to(repo).as_posix()}")
+    print(f"normalized: {normalized_dir.relative_to(repo).as_posix()}/")
+    return 0
+
+
+class Phase0Error(Exception):
+    pass
+
+
+def valid_slug(slug: str) -> bool:
+    return re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug) is not None
+
+
+def detect_source_type(source: Path, requested: str) -> str:
+    if requested != "auto":
+        return requested
+    suffix = source.suffix.lower()
+    if suffix == ".pdf":
+        return "pdf"
+    if suffix in MARKDOWN_SUFFIXES:
+        return "markdown"
+    raise SystemExit(f"FAIL: cannot infer source type from {source.name!r}; pass --source-type")
+
+
+def imported_filename(source_type: str) -> str:
+    if source_type == "pdf":
+        return "original.pdf"
+    if source_type == "markdown":
+        return "original.md"
+    raise AssertionError(f"unhandled source type {source_type}")
+
+
+def planned_actions(source: Path, imported_file: Path, normalized_dir: Path, source_type: str, args) -> list[str]:
+    actions = [
+        f"source_type: {source_type}",
+        f"copy: {source.as_posix()} -> {imported_file.as_posix()}",
+    ]
+    if source_type == "markdown":
+        actions.append(f"copy: {source.as_posix()} -> {(normalized_dir / 'source.md').as_posix()}")
+    else:
+        command = " ".join(marker_command(args.marker_bin, source, normalized_dir))
+        actions.append(f"run: TORCH_DEVICE={args.torch_device} {command}")
+    if args.reuse_imported:
+        actions.append("reuse_imported: true")
+    if args.overwrite_normalized:
+        actions.append("overwrite_normalized: true")
+    return actions
+
+
+def prepare_imported(source: Path, imported_dir: Path, imported_file: Path, reuse_imported: bool) -> None:
+    imported_dir.mkdir(parents=True, exist_ok=True)
+    if imported_file.exists():
+        if not reuse_imported:
+            raise Phase0Error(
+                f"{imported_file} already exists; raw/imported is immutable, so use a new slug or --reuse-imported if bytes match"
+            )
+        if sha256(source) != sha256(imported_file):
+            raise Phase0Error(f"{imported_file} exists but does not match {source}")
+        return
+    existing = [path for path in imported_dir.iterdir() if path.name != ".keep"]
+    if existing:
+        names = ", ".join(path.name for path in existing)
+        raise Phase0Error(f"{imported_dir} contains unexpected files: {names}")
+    shutil.copy2(source, imported_file)
+
+
+def prepare_normalized(normalized_dir: Path, overwrite: bool) -> None:
+    if normalized_dir.exists():
+        existing = [path for path in normalized_dir.iterdir() if path.name != ".keep"]
+        if existing and not overwrite:
+            raise Phase0Error(f"{normalized_dir} already contains normalized output; pass --overwrite-normalized to replace it")
+        if existing and overwrite:
+            shutil.rmtree(normalized_dir)
+    normalized_dir.mkdir(parents=True, exist_ok=True)
+
+
+def marker_command(marker_bin: str, source: Path, output_dir: Path) -> list[str]:
+    return [
+        marker_bin,
+        source.as_posix(),
+        "--output_format",
+        "markdown",
+        "--output_dir",
+        output_dir.as_posix(),
+        "--disable_tqdm",
+    ]
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def is_relative_to(path: Path, root: Path) -> bool:
+    try:
+        path.resolve().relative_to(root.resolve())
+    except ValueError:
+        return False
+    return True
+
+
+if __name__ == "__main__":
+    sys.exit(main())
