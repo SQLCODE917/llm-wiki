@@ -299,6 +299,11 @@ def run_validation(
             returncode = completed.returncode
 
     scope_failures = changed_file_scope_failures(worktree, slug, selected_paths)
+    cleanup_messages = cleanup_backup_artifacts(worktree, slug, selected_paths)
+    if cleanup_messages:
+        outputs.append("$ backup artifact cleanup")
+        outputs.extend(cleanup_messages)
+        scope_failures = changed_file_scope_failures(worktree, slug, selected_paths)
     if scope_failures:
         outputs.append("$ changed-file scope check")
         outputs.extend(f"FAIL: {failure}" for failure in scope_failures)
@@ -318,6 +323,21 @@ def changed_file_scope_failures(worktree: Path, slug: str, allowed_paths: list[s
         if path and path not in allowed:
             failures.append(f"{path} changed outside Phase 2 allowed files")
     return failures
+
+
+def cleanup_backup_artifacts(worktree: Path, slug: str, allowed_paths: list[str]) -> list[str]:
+    allowed = {f"wiki/sources/{slug}.md"}
+    allowed.update(source_relative_to_repo(path) for path in allowed_paths)
+    suffixes = [".bak", ".orig", ".tmp", "~"]
+    messages: list[str] = []
+    for rel in sorted(allowed):
+        base = worktree / rel
+        for suffix in suffixes:
+            artifact = Path(str(base) + suffix)
+            if artifact.exists() and artifact.is_file():
+                artifact.unlink()
+                messages.append(f"removed {artifact.relative_to(worktree).as_posix()}")
+    return messages
 
 
 def changed_status_path(line: str) -> str:
@@ -364,6 +384,7 @@ Forbidden writes:
 - `wiki/analyses/**`
 - `packages/**`
 - `tools/**`
+- backup files such as `*.bak`, `*.orig`, `*.tmp`, or `*~`
 
 Validation failed with this exact output:
 
@@ -387,6 +408,7 @@ Fix the failures mechanically:
 - Each locator cell must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
+- Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
 - Remove empty headings, duplicate headings, and empty `## Executable implementation` sections.
 - Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
 - Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
@@ -404,6 +426,7 @@ Fix the failures mechanically:
 - Do not use placeholder text such as `Page title`; keep the real page titles in the first column.
 - Use ASCII punctuation unless the source requires otherwise.
 - Do not update index, graph, log, reports, raw files, code, or tools.
+- Do not create backup files.
 
 After editing, run exactly:
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -17,6 +18,7 @@ from wiki_phase2_benchmark import (
     render_prompt,
     render_repair_prompt,
     run_validation,
+    source_relative_to_repo,
 )
 
 
@@ -29,7 +31,11 @@ def main() -> int:
     parser.add_argument("--prompt-template", default="tools/prompts/phase2-synthesis.md")
     parser.add_argument("--codex-bin", default="codex")
     parser.add_argument("--timeout", type=int, default=900)
-    parser.add_argument("--repair-attempts", type=int, default=1)
+    parser.add_argument("--repair-attempts", type=int, default=1, help="repair attempts after deterministic validation failures")
+    parser.add_argument("--judge-candidate", help="local Codex candidate for claim judging; defaults to --candidate")
+    parser.add_argument("--judge-timeout", type=int, default=600)
+    parser.add_argument("--judge-repair-attempts", type=int, default=1)
+    parser.add_argument("--skip-judge", action="store_true", help="only run deterministic validation")
     parser.add_argument("--keep", action="store_true", help="keep temp worktree after the run")
     args = parser.parse_args()
 
@@ -59,9 +65,13 @@ def main() -> int:
             codex_bin=args.codex_bin,
             timeout=args.timeout,
             repair_attempts=args.repair_attempts,
+            judge_candidate=args.judge_candidate or args.candidate,
+            judge_timeout=args.judge_timeout,
+            judge_repair_attempts=args.judge_repair_attempts,
+            skip_judge=args.skip_judge,
         )
         print_result(result)
-        return 0 if result["validation_returncode"] == 0 else 1
+        return 0 if result["validation_returncode"] == 0 and result["judge_returncode"] == 0 else 1
     finally:
         if not args.keep:
             shutil.rmtree(worktree, ignore_errors=True)
@@ -84,6 +94,10 @@ def run_single_candidate(
     codex_bin: str,
     timeout: int,
     repair_attempts: int,
+    judge_candidate: str,
+    judge_timeout: int,
+    judge_repair_attempts: int,
+    skip_judge: bool,
 ) -> dict[str, object]:
     source_page = worktree / "wiki/sources" / f"{slug}.md"
     selected_candidate = find_related_candidate(source_page, candidate_path)
@@ -110,6 +124,7 @@ def run_single_candidate(
     start = time.monotonic()
     codex_returncodes: list[int | None] = []
     log_paths: list[Path] = []
+    judge_report_paths: list[Path] = []
 
     returncode, paths = run_codex(
         worktree=worktree,
@@ -162,15 +177,207 @@ def run_single_candidate(
             normalized_source,
         )
 
+    judge_returncode = 0
+    selected_repo_path = source_relative_to_repo(selected_candidate.path)
+    if validation_returncode == 0 and not skip_judge:
+        judge_returncode, judge_report = run_judge(
+            worktree=worktree,
+            page=selected_repo_path,
+            normalized_source=normalized_source,
+            judge_candidate=judge_candidate,
+            codex_bin=codex_bin,
+            timeout=judge_timeout,
+            prefix="phase2-judge",
+        )
+        judge_report_paths.append(judge_report)
+
+        for attempt in range(1, judge_repair_attempts + 1):
+            if judge_returncode == 0:
+                break
+            repair_prompt = render_judge_repair_prompt(
+                slug=slug,
+                selected_candidate=selected_candidate,
+                selected_repo_path=selected_repo_path,
+                existing_paths=existing_paths,
+                expected_total_pages=expected_total_pages,
+                normalized_source=normalized_source,
+                evidence_bank=evidence_bank,
+                judge_report=judge_report.read_text(errors="ignore") if judge_report.exists() else "missing judge report",
+                judge_candidate=judge_candidate,
+            )
+            returncode, paths = run_codex(
+                worktree=worktree,
+                candidate=candidate,
+                codex_bin=codex_bin,
+                prompt=repair_prompt,
+                timeout=timeout,
+                prefix=f"codex-judge-repair-{attempt}",
+            )
+            codex_returncodes.append(returncode)
+            log_paths.extend(paths)
+            validation_returncode = run_validation(
+                worktree,
+                slug,
+                expected_total_pages,
+                expected_total_pages,
+                allowed_paths,
+                normalized_source,
+            )
+            if validation_returncode != 0:
+                judge_returncode = 1
+                break
+            judge_returncode, judge_report = run_judge(
+                worktree=worktree,
+                page=selected_repo_path,
+                normalized_source=normalized_source,
+                judge_candidate=judge_candidate,
+                codex_bin=codex_bin,
+                timeout=judge_timeout,
+                prefix=f"phase2-judge-repair-{attempt}",
+            )
+            judge_report_paths.append(judge_report)
+    elif validation_returncode != 0:
+        judge_returncode = 1
+
     return {
         "candidate": candidate.label,
         "worktree": worktree,
         "duration_s": time.monotonic() - start,
         "codex_returncodes": codex_returncodes,
         "validation_returncode": validation_returncode,
+        "judge_returncode": judge_returncode,
         "changed_files": git_changed_files(worktree),
         "log_paths": log_paths,
+        "judge_report_paths": judge_report_paths,
     }
+
+
+def run_judge(
+    *,
+    worktree: Path,
+    page: str,
+    normalized_source: Path,
+    judge_candidate: str,
+    codex_bin: str,
+    timeout: int,
+    prefix: str,
+) -> tuple[int, Path]:
+    output = worktree / f"{prefix}-{Path(page).stem}.md"
+    command = [
+        "python3",
+        "tools/wiki_judge_claims.py",
+        page,
+        "--normalized-source",
+        normalized_source.as_posix(),
+        "--candidate",
+        judge_candidate,
+        "--codex-bin",
+        codex_bin,
+        "--timeout",
+        str(timeout),
+        "--output",
+        output.as_posix(),
+        "--fail-on-issues",
+    ]
+    completed = subprocess.run(
+        command,
+        cwd=worktree,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        check=False,
+    )
+    (worktree / f"{prefix}.log").write_text("$ " + " ".join(command) + "\n" + completed.stdout)
+    return completed.returncode, output
+
+
+def render_judge_repair_prompt(
+    *,
+    slug: str,
+    selected_candidate: RelatedCandidate,
+    selected_repo_path: str,
+    existing_paths: list[str],
+    expected_total_pages: int,
+    normalized_source: Path,
+    evidence_bank: str,
+    judge_report: str,
+    judge_candidate: str,
+) -> str:
+    allowed_paths = sorted(set(existing_paths + [selected_candidate.path]))
+    return f"""Read `AGENTS.md` fully before acting.
+
+Repair only the local-judge failures for one Phase 2 synthesized page.
+
+Allowed writes:
+- `wiki/sources/{slug}.md`
+- `{selected_repo_path}`
+
+Forbidden writes:
+- `raw/imported/**`
+- `raw/normalized/**`
+- `wiki/index.md`
+- `wiki/log.md`
+- `wiki/_graph.json`
+- `wiki/_linter-report.md`
+- `wiki/_grounding-report.md`
+- `wiki/analyses/**`
+- `packages/**`
+- `tools/**`
+- any synthesized page other than `{selected_repo_path}`
+- backup files such as `*.bak`, `*.orig`, `*.tmp`, or `*~`
+
+Selected page:
+- `{selected_candidate.path}` - group: {selected_candidate.group or "unclassified"}; priority: {selected_candidate.priority}
+
+Existing synthesized pages for this source that must remain linked:
+{render_existing(existing_paths)}
+
+Evidence bank:
+{evidence_bank}
+
+The local claim judge failed with this report:
+
+```md
+{judge_report.strip()}
+```
+
+Repair rules:
+- Fix only rows marked `too_broad`, `not_supported`, `unclear`, or `not judged`.
+- Prefer narrowing the claim to exactly what the cited evidence supports.
+- If the judge suggests a narrower claim, use it unless it conflicts with the evidence.
+- If the evidence is weak, replace that row with a stronger exact excerpt from the evidence bank.
+- Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
+- Keep all evidence cells as exact excerpts from `{normalized_source.as_posix()}`.
+- Keep all locators as `normalized:L12` or `normalized:L12-L14`, and ensure the excerpt appears in that range.
+- If this is a reference page, `## Reference data` must include `Evidence` and `Locator` columns for every source-derived row.
+- Do not add new pages.
+- Do not create backup files.
+- Do not remove existing linked pages for this source.
+
+After editing, run exactly:
+
+```bash
+python3 tools/wiki_link_related.py {slug}
+python3 tools/wiki_fix_broken_links.py {slug}
+python3 tools/wiki_normalize_ascii.py {slug}
+python3 tools/wiki_normalize_tables.py {slug}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {expected_total_pages} --max-pages {expected_total_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+pnpm wiki:grounding:check
+python3 tools/wiki_judge_claims.py {selected_repo_path} --normalized-source {normalized_source.as_posix()} --candidate {judge_candidate} --fail-on-issues
+```
+
+If validation or judging still fails, repair only `{selected_repo_path}` and `wiki/sources/{slug}.md`, then rerun the same commands.
+"""
+
+
+def render_existing(paths: list[str]) -> str:
+    if not paths:
+        return "- None."
+    return "\n".join(f"- `{path}`" for path in paths)
+
+
+def allowed_page_args(paths: list[str]) -> str:
+    return "".join(f" --allowed-page {source_relative_to_repo(path)}" for path in paths)
 
 
 def find_related_candidate(source_page: Path, candidate_path: str) -> RelatedCandidate:
@@ -196,11 +403,14 @@ def print_result(result: dict[str, object]) -> None:
     codex_status = ", ".join("timeout" if code is None else str(code) for code in returncodes)
     validation_returncode = result["validation_returncode"]
     validation_status = "pass" if validation_returncode == 0 else f"fail:{validation_returncode}"
+    judge_returncode = result["judge_returncode"]
+    judge_status = "pass" if judge_returncode == 0 else f"fail:{judge_returncode}"
     print(f"\n## {result['candidate']}")
     print(f"- worktree: {result['worktree']}")
     print(f"- duration_s: {float(result['duration_s']):.1f}")
     print(f"- codex_returncodes: {codex_status}")
     print(f"- validation: {validation_status}")
+    print(f"- judge: {judge_status}")
     print("- changed_files:")
     changed_files = result["changed_files"]
     assert isinstance(changed_files, list)
@@ -212,6 +422,10 @@ def print_result(result: dict[str, object]) -> None:
     log_paths = result["log_paths"]
     assert isinstance(log_paths, list)
     print(f"- logs: {', '.join(str(path) for path in log_paths)}, {Path(result['worktree']) / 'phase2-validation.log'}")
+    judge_report_paths = result["judge_report_paths"]
+    assert isinstance(judge_report_paths, list)
+    if judge_report_paths:
+        print(f"- judge_reports: {', '.join(str(path) for path in judge_report_paths)}")
 
 
 if __name__ == "__main__":

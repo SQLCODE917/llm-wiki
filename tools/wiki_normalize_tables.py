@@ -62,6 +62,7 @@ def synthesized_pages_for_source(source_page: Path) -> list[Path]:
 
 
 def normalize_tables(text: str) -> str:
+    text = text.replace("\n## Source page\n", "\n## Source pages\n")
     out: list[str] = []
     in_table = False
     for line in text.splitlines():

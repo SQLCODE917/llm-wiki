@@ -67,3 +67,12 @@
 - Reference page lookup tables now require Evidence and Locator columns.
 
 ---
+
+## [2026-05-03] schema-change | phase2 single-page judge gate tightened
+
+- wiki:phase2-single now runs local claim judging after deterministic validation unless --skip-judge is used.
+- Single-page runs can issue a judge-specific repair prompt scoped to the selected page.
+- The claim judge now applies deterministic overreach checks and includes reference-data rows.
+- Phase 2 validation cleans obvious backup artifacts in disposable worktrees and prompts forbid backup files.
+
+---

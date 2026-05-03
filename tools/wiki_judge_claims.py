@@ -12,7 +12,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from wiki_common import iter_content_pages, one_line, parse_frontmatter, section
+from wiki_common import content_tokens, iter_content_pages, one_line, parse_frontmatter, section
 from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, parse_locator, strip_markdown
 
 
@@ -99,6 +99,7 @@ def main() -> int:
 
 def evidence_rows(page: Path, source_lines: list[str], *, context_lines: int) -> list[EvidenceRow]:
     fm = parse_frontmatter(page)
+    page_type = fm.data.get("type")
     details = section(fm.body, "## Source-backed details")
     rows: list[EvidenceRow] = []
     header_seen = False
@@ -127,6 +128,63 @@ def evidence_rows(page: Path, source_lines: list[str], *, context_lines: int) ->
                 context=context_for_locator(source_lines, locator, context_lines=context_lines),
             )
         )
+    if page_type == "reference":
+        rows.extend(reference_data_rows(fm.body, source_lines, context_lines=context_lines, start_row=len(rows) + 1))
+    return rows
+
+
+def reference_data_rows(
+    body: str,
+    source_lines: list[str],
+    *,
+    context_lines: int,
+    start_row: int,
+) -> list[EvidenceRow]:
+    reference_data = section(body, "## Reference data")
+    table = table_rows(reference_data)
+    if len(table) < 2:
+        return []
+    header_index: int | None = None
+    for index, cells in enumerate(table):
+        if not is_separator_row(cells):
+            header_index = index
+            break
+    if header_index is None:
+        return []
+    header = [strip_markdown(cell).strip() for cell in table[header_index]]
+    normalized_header = [cell.lower() for cell in header]
+    if "evidence" not in normalized_header or "locator" not in normalized_header:
+        return []
+    evidence_index = normalized_header.index("evidence")
+    locator_index = normalized_header.index("locator")
+
+    rows: list[EvidenceRow] = []
+    row_number = start_row
+    for cells in table[header_index + 1 :]:
+        if is_separator_row(cells) or len(cells) != len(header):
+            continue
+        evidence = clean_evidence_excerpt(cells[evidence_index])
+        locator = strip_markdown(cells[locator_index]).strip()
+        claim_parts: list[str] = []
+        for index, cell in enumerate(cells):
+            if index in {evidence_index, locator_index}:
+                continue
+            value = strip_markdown(cell).strip()
+            if value:
+                claim_parts.append(f"{header[index]}: {value}")
+        if not claim_parts:
+            continue
+        rows.append(
+            EvidenceRow(
+                row=row_number,
+                claim="; ".join(claim_parts),
+                evidence=evidence,
+                locator=locator,
+                source="Reference data",
+                context=context_for_locator(source_lines, locator, context_lines=context_lines),
+            )
+        )
+        row_number += 1
     return rows
 
 
@@ -148,6 +206,15 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
             flags.append(DeterministicFlag(row.row, "warn", "claim is short"))
         if normalize_for_search(row.claim) == normalize_for_search(row.evidence):
             flags.append(DeterministicFlag(row.row, "warn", "claim repeats evidence exactly"))
+        unsupported = sorted(set(content_tokens(row.claim)) - set(content_tokens(row.evidence + " " + row.context)))
+        if len(unsupported) >= 8:
+            flags.append(
+                DeterministicFlag(
+                    row.row,
+                    "fail",
+                    "claim likely overreaches cited evidence/context; unsupported terms: " + ", ".join(unsupported[:10]),
+                )
+            )
     if not rows:
         flags.append(DeterministicFlag(0, "fail", "no evidence rows found"))
     return flags
@@ -648,6 +715,15 @@ def split_table_row(line: str) -> list[str] | None:
     if not stripped.startswith("|") or not stripped.endswith("|"):
         return None
     return [cell.strip() for cell in stripped[1:-1].split("|")]
+
+
+def table_rows(markdown: str) -> list[list[str]]:
+    rows: list[list[str]] = []
+    for line in markdown.splitlines():
+        row = split_table_row(line)
+        if row is not None:
+            rows.append(row)
+    return rows
 
 
 def is_separator_row(cells: list[str]) -> bool:

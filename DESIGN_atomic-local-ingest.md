@@ -70,6 +70,11 @@ Validation:
 - `pnpm wiki:normalize-tables <slug>`
 - `pnpm wiki:check-synthesis <slug>`
 - `pnpm wiki:grounding:check`
+- `pnpm wiki:judge-claims <page> --normalized-source <normalized-source> --candidate local-4090`
+
+`pnpm wiki:phase2-single <slug> <candidate-path>` runs this unit in a disposable worktree and should
+return success only when deterministic validation and local judging pass. Use `--skip-judge` only for
+debugging the deterministic layer.
 
 ### Unit D: Claim Judge
 
@@ -137,6 +142,7 @@ Deterministic tools should check:
 - evidence quote appears in cited locator range
 - source-page key claims have exact evidence and normalized locators
 - reference-page lookup rows have exact evidence and normalized locators
+- reference-page lookup rows are included in claim judging
 - page-type sections, such as `## Steps` and `## Reference data`
 - placeholder text such as `Page title`
 - obvious malformed table rows

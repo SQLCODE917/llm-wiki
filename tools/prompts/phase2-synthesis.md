@@ -25,6 +25,7 @@ Forbidden writes:
 - `wiki/analyses/**`
 - `packages/**`
 - `tools/**`
+- backup files such as `*.bak`, `*.orig`, `*.tmp`, or `*~`
 
 Do not update index, graph, or log. This is Phase 2 only.
 
@@ -42,6 +43,7 @@ Evidence bank:
 {{evidence_bank}}
 
 - Do not create pages for any other candidate rows.
+- Do not create backup files.
 - After this run, the source should have {{expected_total_pages}} synthesized pages total: existing pages plus selected pages.
 - Prefer small, specific pages over broad duplicates.
 - Use the source page's Group column as a page-boundary signal. Preserve source-native group names, but do not create new wiki directories from them.
@@ -63,6 +65,7 @@ Evidence bank:
 - Do not put pipe characters inside table cells.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - The claim cell must synthesize in your own words; do not copy the evidence sentence into the claim cell.
+- Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
 - The evidence cell must quote the source text exactly.
 - Do not add empty headings.
 - Do not duplicate headings.
