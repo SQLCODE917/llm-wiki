@@ -78,6 +78,7 @@ Special operational files are not content pages and do not require page-type fro
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
 - `wiki/_grounding-report.md`
+- `wiki/_maintenance-report.md`
 - `wiki/_semantic-linter-report.md`
 
 ---
@@ -499,6 +500,7 @@ pnpm wiki:link-related <slug>
 pnpm wiki:lint
 pnpm wiki:semantic-lint
 pnpm wiki:contradictions
+pnpm wiki:maintenance --append-log
 ```
 
 For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
@@ -612,6 +614,9 @@ pnpm wiki:lint:log
 
 Lint `TODO` items are intentional backlog, not wiki-health failures. For example, uncreated Related-pages
 candidate paths should stay as TODO until a Phase 2 run creates and links those pages.
+
+For scheduled maintenance, prefer `pnpm wiki:maintenance --append-log`. It runs index, graph, analysis,
+grounding, lint, semantic overlap, contradiction, and smoke checks, then writes `wiki/_maintenance-report.md`.
 
 Suggested log format:
 

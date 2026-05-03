@@ -275,10 +275,13 @@ Commands:
 ```bash
 pnpm wiki:semantic-lint
 pnpm wiki:contradictions
+pnpm wiki:maintenance --append-log
 ```
 
 The semantic linter is deterministic and lexical. It is a triage tool, not proof of duplication.
 The contradiction scanner becomes meaningful after at least two substantial source pages exist.
+`wiki:maintenance` bundles the deterministic health checks and smoke tests into one scheduled command and
+writes `wiki/_maintenance-report.md`.
 
 ## Adoption Gate
 

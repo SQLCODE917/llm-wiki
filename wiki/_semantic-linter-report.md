@@ -4,7 +4,7 @@ Generated: 2026-05-03
 
 ## Summary
 
-- Pages checked: 15
+- Pages checked: 17
 - WARN: 0
 
 ## WARN

@@ -35,6 +35,7 @@
     "wiki:query:smoke": "python3 tools/wiki_query_smoke_test.py",
     "wiki:semantic-lint": "python3 tools/wiki_semantic_lint.py",
     "wiki:contradictions": "python3 tools/wiki_contradictions.py",
+    "wiki:maintenance": "python3 tools/wiki_maintenance.py",
     "wiki:fix-links": "python3 tools/wiki_fix_broken_links.py",
     "wiki:normalize-ascii": "python3 tools/wiki_normalize_ascii.py",
     "wiki:normalize-tables": "python3 tools/wiki_normalize_tables.py",

@@ -54,6 +54,7 @@ SPECIAL_WIKI_FILES = {
     Path("wiki/_contradiction-report.md"),
     Path("wiki/_linter-report.md"),
     Path("wiki/_grounding-report.md"),
+    Path("wiki/_maintenance-report.md"),
     Path("wiki/_semantic-linter-report.md"),
 }
 

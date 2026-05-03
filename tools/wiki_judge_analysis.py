@@ -8,7 +8,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from wiki_common import parse_frontmatter, section
+from wiki_common import markdown_links, parse_frontmatter, section
 from wiki_judge_claims import extract_json_object, run_local_judge, strip_code_fence
 
 
@@ -78,11 +78,8 @@ def deterministic_failures(page: Path) -> list[str]:
 
 
 def render_prompt(page: Path) -> str:
-    fm = parse_frontmatter(page)
-    sources = [source for source in fm.data.get("sources") or [] if isinstance(source, str)]
     source_blocks: list[str] = []
-    for source in sources:
-        source_path = (page.parent / source).resolve()
+    for source_path in cited_wiki_pages(page):
         source_blocks.append(
             "\n".join(
                 [
@@ -116,6 +113,28 @@ Return this JSON object and nothing else:
   "unsupported_claims": []
 }}
 """
+
+
+def cited_wiki_pages(page: Path) -> list[Path]:
+    fm = parse_frontmatter(page)
+    paths: set[Path] = set()
+    cwd = Path.cwd().resolve()
+    for source in fm.data.get("sources") or []:
+        if not isinstance(source, str):
+            continue
+        resolved = (page.parent / source).resolve()
+        if resolved.exists():
+            paths.add(resolved)
+    for link in markdown_links(page):
+        if not link.resolved or not link.resolved.exists() or link.resolved.suffix != ".md":
+            continue
+        try:
+            rel = link.resolved.relative_to(cwd)
+        except ValueError:
+            continue
+        if len(rel.parts) >= 3 and rel.parts[0] == "wiki":
+            paths.add(link.resolved)
+    return sorted(paths, key=lambda candidate: candidate.as_posix())
 
 
 def answer_body(page: Path) -> str:

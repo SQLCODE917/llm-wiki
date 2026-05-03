@@ -6,6 +6,25 @@
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
+    "wiki:analyses/2026-05-03-aoe2-water-and-mixed-map-strategy": {
+      "type": "analysis",
+      "path": "wiki/analyses/2026-05-03-aoe2-water-and-mixed-map-strategy.md",
+      "description": "An AoE2 player should treat water maps and mixed maps as build-driven, execution-heavy map types, but adapt the focus differently.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/aoe2-army-composition",
+        "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-decision-making",
+        "wiki:concepts/aoe2-economy-balance",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-mixed-maps",
+        "wiki:concepts/aoe2-resource-management",
+        "wiki:concepts/aoe2-water-maps",
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:concepts/aoe2-army-composition": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-army-composition.md",
@@ -76,6 +95,22 @@
         "wiki:sources/aoe2-basics"
       ]
     },
+    "wiki:concepts/aoe2-mixed-maps": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-mixed-maps.md",
+      "description": "Mixed maps in Age of Empires II combine water and land, so players must manage fish economy, land army, water control, and map-specific build orders at the same time.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-economy-balance",
+        "wiki:concepts/aoe2-resource-management",
+        "wiki:concepts/aoe2-water-maps",
+        "wiki:procedures/aoe2-game-plans",
+        "wiki:sources/aoe2-basics"
+      ]
+    },
     "wiki:concepts/aoe2-opening-interactions": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-opening-interactions.md",
@@ -121,6 +156,21 @@
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
+        "wiki:sources/aoe2-basics"
+      ]
+    },
+    "wiki:concepts/aoe2-water-maps": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-water-maps.md",
+      "description": "Water maps in Age of Empires II are maps such as Islands and Team Islands where water control, transports, fishing economy, landings, and build execution shape the game.",
+      "sources": [
+        "../sources/aoe2-basics.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-resource-management",
+        "wiki:procedures/aoe2-game-plans",
+        "wiki:procedures/aoe2-scouting-techniques",
         "wiki:sources/aoe2-basics"
       ]
     },
@@ -197,10 +247,12 @@
         "wiki:concepts/aoe2-economy-balance",
         "wiki:concepts/aoe2-lanchesters-law",
         "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-mixed-maps",
         "wiki:concepts/aoe2-opening-interactions",
         "wiki:concepts/aoe2-resource-management",
         "wiki:concepts/aoe2-team-play-strategies",
         "wiki:concepts/aoe2-unit-counter-interactions",
+        "wiki:concepts/aoe2-water-maps",
         "wiki:procedures/aoe2-game-plans",
         "wiki:procedures/aoe2-scouting-techniques",
         "wiki:references/aoe2-economy-upgrades",

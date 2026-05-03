@@ -238,3 +238,41 @@
 - Contradiction report: wiki/_contradiction-report.md
 
 ---
+
+## [2026-05-03] ingest | added AoE2 water and mixed map concepts
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-03] query | filed 2026-05-03-aoe2-water-and-mixed-map-strategy
+
+- Question: How should an AoE2 player adapt strategy across water and mixed maps?
+- Analysis page: wiki/analyses/2026-05-03-aoe2-water-and-mixed-map-strategy.md
+- Pages used: wiki/sources/aoe2-basics.md, wiki/concepts/aoe2-mixed-maps.md, wiki/concepts/aoe2-map-awareness.md, wiki/concepts/aoe2-resource-management.md, wiki/concepts/aoe2-water-maps.md, wiki/concepts/aoe2-army-composition.md, wiki/concepts/aoe2-build-orders.md, wiki/concepts/aoe2-decision-making.md
+
+---
+
+## [2026-05-03] todo | need second substantial source for contradiction scanning
+
+- Contradiction scanner is implemented, but only aoe2-basics is substantial enough for meaningful cross-source comparison.
+
+---
+
+## [2026-05-03] lint | maintenance 1 failure(s)
+
+- Report: wiki/_maintenance-report.md
+- Checks run: 9
+- Failed: 1
+
+---
+
+## [2026-05-03] lint | maintenance 0 failure(s)
+
+- Report: wiki/_maintenance-report.md
+- Checks run: 9
+- Failed: 0
+
+---

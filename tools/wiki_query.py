@@ -184,8 +184,13 @@ def save_analysis(question: str, slug: str | None, answer: str, hits: list[PageH
     analysis_slug = slug or slugify(question)
     path = Path("wiki/analyses") / f"{date.today().isoformat()}-{analysis_slug}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
-    sources = "\n".join(f"  - ../{hit.path.relative_to('wiki').as_posix()}" for hit in hits)
-    related = "\n".join(f"- [{hit.title}](../{hit.path.relative_to('wiki').as_posix()})" for hit in hits)
+    source_pages = source_pages_for_hits(hits)
+    if not source_pages:
+        raise SystemExit("FAIL: cannot save analysis without at least one source page")
+    sources = "\n".join(f"  - ../{source.relative_to('wiki').as_posix()}" for source in source_pages)
+    source_links = "\n".join(f"- [{page_title(source)}](../{source.relative_to('wiki').as_posix()})" for source in source_pages)
+    related_hits = [hit for hit in hits if hit.path not in source_pages]
+    related = "\n".join(f"- [{hit.title}](../{hit.path.relative_to('wiki').as_posix()})" for hit in related_hits)
     path.write_text(
         "\n".join(
             [
@@ -205,12 +210,41 @@ def save_analysis(question: str, slug: str | None, answer: str, hits: list[PageH
                 "",
                 "## Source pages",
                 "",
-                related,
+                source_links,
+                "",
+                "## Related pages",
+                "",
+                related or "None.",
                 "",
             ]
         )
     )
     return path
+
+
+def source_pages_for_hits(hits: list[PageHit]) -> list[Path]:
+    source_pages: set[Path] = set()
+    cwd = Path.cwd().resolve()
+    for hit in hits:
+        if hit.page_type == "source":
+            source_pages.add(hit.path)
+        fm = parse_frontmatter(hit.path)
+        for source in fm.data.get("sources") or []:
+            if not isinstance(source, str):
+                continue
+            resolved = (hit.path.parent / source).resolve()
+            try:
+                rel = resolved.relative_to(cwd)
+            except ValueError:
+                continue
+            if len(rel.parts) >= 3 and rel.parts[0] == "wiki" and rel.parts[1] == "sources" and rel.suffix == ".md":
+                source_pages.add(rel)
+    return sorted(source_pages)
+
+
+def page_title(path: Path) -> str:
+    fm = parse_frontmatter(path)
+    return str(fm.data.get("title") or path.stem.replace("-", " ").title())
 
 
 def finalize_analysis(path: Path, question: str, hits: list[PageHit]) -> None:

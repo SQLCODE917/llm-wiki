@@ -110,5 +110,5 @@ Team coordination - This involves working with allies in team games.
 | AoE2 Resource Management | [../concepts/aoe2-resource-management.md](../concepts/aoe2-resource-management.md) | Core fundamentals | should create | resource allocation, villager production, economy balance, and spending | created |
 | AoE2 Game Plans | [../procedures/aoe2-game-plans.md](../procedures/aoe2-game-plans.md) | Strategic synthesis | should create | game plans, decision making, timings, and fitting elements together | created |
 | AoE2 Decision Making | [../concepts/aoe2-decision-making.md](../concepts/aoe2-decision-making.md) | Strategic synthesis | should create | evaluating resources, timing, unit interactions, and map conditions | created |
-| AoE2 Water Maps | `../concepts/aoe2-water-maps.md` | Map and team contexts | could create | limited building space, movement, and water-map strategic adjustments | not created yet |
-| AoE2 Mixed Maps | `../concepts/aoe2-mixed-maps.md` | Map and team contexts | could create | mixed terrain, resource management, and unit positioning adjustments | not created yet |
+| AoE2 Water Maps | [../concepts/aoe2-water-maps.md](../concepts/aoe2-water-maps.md) | Map and team contexts | could create | water control, transport denial, landings, galley play, and water-map execution | created |
+| AoE2 Mixed Maps | [../concepts/aoe2-mixed-maps.md](../concepts/aoe2-mixed-maps.md) | Map and team contexts | could create | water-and-land maps, fish economy, map-specific builds, and accelerated transitions | created |
