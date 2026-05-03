@@ -364,19 +364,27 @@ pnpm wiki:check-source <slug>
 
 7. Evidence cells must be short exact excerpts from the normalized source, not paraphrases.
 8. Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
-9. Claim cells must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
-10. Synthesized pages must not contain empty headings, duplicate headings, or `## Executable implementation` unless a real implementation file is linked.
-11. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
-12. Use the canonical `Related pages` row format:
+9. When a page is grounded in a bounded source section, add `source_ranges` frontmatter:
+
+```yaml
+source_ranges:
+  - <source-slug>:normalized:L12-L34
+```
+
+10. Range-gated Phase 2 validation requires every evidence locator on the selected page to stay inside declared `source_ranges` or a normalized-source heading range derived from the page title.
+11. Claim cells must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
+12. Synthesized pages must not contain empty headings, duplicate headings, or `## Executable implementation` unless a real implementation file is linked.
+13. Replace candidate rows in the source page with real Markdown links only for pages created in this phase.
+14. Use the canonical `Related pages` row format:
 
 ```md
 | Page title | [../concepts/example.md](../concepts/example.md) | Source-native group name | must create | concrete evidence basis | created |
 | Page title | `../concepts/example.md` | Source-native group name | should create | concrete evidence basis | not created yet |
 ```
 
-13. Prefer doing that replacement with `pnpm wiki:link-related <slug>`.
-14. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
-15. Validate synthesized pages:
+15. Prefer doing that replacement with `pnpm wiki:link-related <slug>`.
+16. Do not update `wiki/index.md` or `wiki/log.md` in this phase unless explicitly asked.
+17. Validate synthesized pages:
 
 ```bash
 pnpm wiki:link-related <slug>
@@ -474,6 +482,7 @@ Prefer deterministic checks over long prose reminders:
 ```bash
 pnpm wiki:check-source <slug>
 pnpm wiki:check-synthesis <slug>
+pnpm wiki:ingest raw/inbox/<file> --slug <slug>
 pnpm wiki:phase1-benchmark <slug>
 pnpm wiki:phase2-benchmark <slug>
 pnpm wiki:phase2-single <slug> <candidate-path> --report .tmp/phase2-run.md
@@ -493,6 +502,8 @@ pnpm wiki:claim-hints <page> --normalized-source <path>
 pnpm wiki:repair-reference <page> --normalized-source <path>
 pnpm wiki:query "question" --plan-only
 pnpm wiki:check-analysis <page>
+pnpm wiki:judge-analysis <page> --candidate local-4090 --fail-on-issues
+pnpm wiki:model-benchmark --candidate local-4090 --dry-run
 pnpm wiki:fix-links <slug>
 pnpm wiki:normalize-ascii <slug>
 pnpm wiki:normalize-tables <slug>
@@ -501,7 +512,19 @@ pnpm wiki:lint
 pnpm wiki:semantic-lint
 pnpm wiki:contradictions
 pnpm wiki:maintenance --append-log
+pnpm wiki:maintenance:systemd --dry-run
+pnpm wiki:executables
+pnpm wiki:curator-status --list
 ```
+
+For a full local ingest from inbox through Phase 3, prefer the orchestrator:
+
+```bash
+pnpm wiki:ingest raw/inbox/<file.pdf> --slug <slug> --max-phase2-pages 5
+```
+
+It runs Phase 0, Phase 1 source repair, atomic Phase 2 page creation, and Phase 3 finalization using
+the phase defaults in `tools/wiki_model_defaults.json`. Use `--dry-run` first for unfamiliar sources.
 
 For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
 `tools/prompts/phase1-source-repair.md`. To compare candidates in disposable worktrees, run:
@@ -539,6 +562,10 @@ To test the saved-analysis filing path without invoking a local model, run:
 ```bash
 pnpm wiki:query:smoke
 ```
+
+Saved analyses may use `normalized:L12` or `<source-slug>:normalized:L12` evidence locators. If multiple
+source pages are cited, prefix normalized locators with the source slug. Do not use wiki-page `#L12`
+anchors as evidence citations.
 
 If a Phase 2 benchmark worktree is good enough to adopt, copy it into the real repo with:
 
@@ -616,7 +643,12 @@ Lint `TODO` items are intentional backlog, not wiki-health failures. For example
 candidate paths should stay as TODO until a Phase 2 run creates and links those pages.
 
 For scheduled maintenance, prefer `pnpm wiki:maintenance --append-log`. It runs index, graph, analysis,
-grounding, lint, semantic overlap, contradiction, and smoke checks, then writes `wiki/_maintenance-report.md`.
+grounding, lint, semantic overlap, contradiction, executable-concept, curator-status, and smoke checks,
+then writes `wiki/_maintenance-report.md`. To install a user-level systemd timer, inspect:
+
+```bash
+pnpm wiki:maintenance:systemd --dry-run
+```
 
 Suggested log format:
 

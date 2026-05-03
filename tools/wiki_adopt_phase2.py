@@ -28,6 +28,10 @@ def main() -> int:
         "--human-override-judge",
         help="explicit curator reason for adopting without a passing local claim judge",
     )
+    parser.add_argument(
+        "--skip-judge",
+        help="machine-readable reason for skipping judge validation, usually because an upstream Phase 2 single run already passed it",
+    )
     parser.add_argument("--dry-run", action="store_true", help="show files that would be copied without writing")
     args = parser.parse_args()
 
@@ -52,6 +56,8 @@ def main() -> int:
 
     if args.human_override_judge:
         print(f"Judge override accepted: {args.human_override_judge}")
+    elif args.skip_judge:
+        print(f"Judge validation skipped: {args.skip_judge}")
     else:
         if not args.normalized_source:
             print("FAIL: --normalized-source is required unless --human-override-judge is provided")

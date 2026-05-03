@@ -5,6 +5,8 @@ tags: []
 status: draft
 last_updated: 2026-05-03
 sources: [../sources/aoe2-basics.md]
+source_ranges:
+  - aoe2-basics:normalized:L628-L646
 ---
 # AoE2 Mixed Maps
 

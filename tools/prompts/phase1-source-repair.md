@@ -33,13 +33,13 @@ The source page must include:
 - proper YAML frontmatter
 - `type: source`
 - `source_id: {{slug}}`
-- `source_type: pdf`
+- `source_type: {{source_type}}`
 - `raw_path: ../../raw/imported/{{slug}}/`
 - `normalized_path: ../../raw/normalized/{{slug}}/`
 - `status: draft`
 - `last_updated: {{current_date}}`
 - `tags: []`
-- `sources` containing `../../raw/imported/{{slug}}/original.pdf`
+- `sources` containing `../../raw/imported/{{slug}}/{{imported_original}}`
 - one H1 title
 - exactly these H2 headings, in this order:
   - `## Summary`
@@ -68,15 +68,15 @@ Mechanical content rules:
 
 - Each claim must be at least {{min_claim_words}} words.
 - The words important, crucial, fundamental, essential, and success are validation failures in `## Key claims`.
-- Each claim must include a concrete action, cause, effect, condition, tradeoff, timing, unit interaction, resource relationship, or map/team implication from the source.
+- Each claim must include a concrete action, cause, effect, condition, tradeoff, formula, definition, timing, procedure step, resource relationship, or domain-specific implication from the source.
 - Every key claim must be reusable gameplay/content/domain knowledge from the normalized source.
 - Evidence cells must be short exact excerpts from `{{normalized_source}}`; do not paraphrase evidence cells.
 - Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
 - Do not include document metadata as key claims.
 - In `## Key claims`, these words are validation failures: guide, document, author, coached, coaching, Twitch, Google Docs, published.
-- Claims should talk about game actions, strategy, economy, scouting, units, buildings, timings, resources, team play, or improvement procedures.
-- A bad claim is "The guide covers scouting."
-- A good claim is "Scouting gives the player information about enemy openings, army movement, and resource exposure."
+- Claims should talk about the source's reusable domain knowledge, not about the document as a document.
+- A bad claim is "The guide covers topic X."
+- A good claim is "Topic X causes Y under condition Z."
 
 `## Major concepts` rules:
 - Study the source's natural groupings even if this is the only PDF ingested so far.

@@ -16,7 +16,7 @@ On water maps, prioritize a practiced build that contests water, denies transpor
 
 On mixed maps, plan for water and land at the same time. The mixed-map page defines mixed maps as maps with both water and land (`normalized:L630`), notes that maps such as Mediterranean and Four Lakes demand different approaches to water (`normalized:L632`), and says these maps need builds because the starts are not all the same (`normalized:L634`). See [AoE2 Mixed Maps](../concepts/aoe2-mixed-maps.md).
 
-The main mixed-map economic adjustment is fish. Fishing ships cost wood, are produced outside the town center, and bring in food (`normalized:L636`), so a player can gain a major economy lead, but must also manage docks, the town center, military production, and resources at the same time (`normalized:L638`). The source warns that different mixed maps need different fish investment levels rather than one fixed approach (`normalized:L640`). See [AoE2 Resource Management](../concepts/aoe2-resource-management.md) and [AoE2 Economy Balance](../concepts/aoe2-economy-balance.md).
+The main mixed-map economic adjustment is fish. Fishing ships cost wood, are produced outside the town center, and bring in food (`normalized:L636`), so a player can gain a major economy lead, but must also manage docks, the town center, military production, and resources at the same time (`normalized:L638`). The source warns that different mixed maps need different fish investment levels rather than one fixed approach (`normalized:L640`). See [AoE2 Mixed Maps](../concepts/aoe2-mixed-maps.md), [AoE2 Resource Management](../concepts/aoe2-resource-management.md), and [AoE2 Economy Balance](../concepts/aoe2-economy-balance.md).
 
 The practical adaptation is:
 

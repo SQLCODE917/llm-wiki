@@ -17,6 +17,12 @@ from wiki_common import (
     parse_frontmatter,
     section,
 )
+from wiki_evidence_ranges import (
+    SourceRange,
+    format_ranges,
+    locator_within_ranges,
+    source_ranges_for_page,
+)
 
 
 SYNTH_TYPES = {"concept", "entity", "procedure", "reference"}
@@ -77,6 +83,17 @@ def main() -> int:
         action="store_true",
         help="fail if any --allowed-page path is not created and linked for this source",
     )
+    parser.add_argument(
+        "--range-page",
+        action="append",
+        default=[],
+        help="repo-relative page path whose evidence locators must stay inside a declared or derived source range",
+    )
+    parser.add_argument(
+        "--enforce-evidence-ranges",
+        action="store_true",
+        help="require declared or derived source ranges for every synthesized page checked",
+    )
     args = parser.parse_args()
 
     failures = check_synthesis(
@@ -88,6 +105,8 @@ def main() -> int:
         normalized_source=args.normalized_source,
         check_evidence_text=not args.skip_evidence_text_check,
         require_allowed_pages=args.require_allowed_pages,
+        range_pages=args.range_page,
+        enforce_evidence_ranges=args.enforce_evidence_ranges,
     )
     for failure in failures:
         print(f"FAIL: {failure}")
@@ -107,6 +126,8 @@ def check_synthesis(
     normalized_source: str | None = None,
     check_evidence_text: bool = True,
     require_allowed_pages: bool = False,
+    range_pages: list[str] | None = None,
+    enforce_evidence_ranges: bool = False,
 ) -> list[str]:
     source_path = Path("wiki/sources") / f"{slug}.md"
     failures: list[str] = []
@@ -140,6 +161,7 @@ def check_synthesis(
 
     related = section(parse_frontmatter(source_path).body, "## Related pages")
     scopes = related_scopes(source_path, related)
+    range_limited_pages = {Path(path).as_posix() for path in range_pages or []}
     for page in created_pages:
         failures.extend(
             check_synthesized_page(
@@ -148,6 +170,7 @@ def check_synthesis(
                 min_evidence_rows,
                 evidence_source,
                 scopes.get(page.as_posix()),
+                require_evidence_range=enforce_evidence_ranges or page.as_posix() in range_limited_pages,
             )
         )
 
@@ -311,6 +334,8 @@ def check_synthesized_page(
     min_evidence_rows: int,
     evidence_source: EvidenceSource | None,
     related_scope: RelatedScope | None,
+    *,
+    require_evidence_range: bool = False,
 ) -> list[str]:
     failures: list[str] = []
     text = page.read_text()
@@ -353,6 +378,24 @@ def check_synthesized_page(
     if source_path.resolve() not in body_links:
         failures.append(f"{page}: body must link back to {source_rel}")
 
+    allowed_ranges: list[SourceRange] = []
+    if evidence_source is not None:
+        range_result = source_ranges_for_page(
+            page=page,
+            frontmatter=fm.data,
+            source_slug=source_path.stem,
+            source_lines=evidence_source.lines,
+            related_title=related_scope.title if related_scope else None,
+        )
+        for invalid in range_result.invalid:
+            failures.append(f"{page}: invalid source range: {invalid}")
+        if range_result.ranges and (require_evidence_range or range_result.declared):
+            allowed_ranges = range_result.ranges
+        elif require_evidence_range and not range_result.ranges and not range_result.invalid:
+            failures.append(
+                f"{page}: no allowed source range found; add frontmatter source_ranges or match the page title to a normalized source heading"
+            )
+
     body_headings = h2_headings(fm.body)
     duplicate_headings = sorted({heading for heading in body_headings if body_headings.count(heading) > 1})
     for heading in duplicate_headings:
@@ -377,12 +420,22 @@ def check_synthesized_page(
         detail_tokens = content_tokens(details)
         if len(detail_tokens) < 25:
             failures.append(f"{page}: source-backed details section is too thin")
-        failures.extend(check_evidence_table(page, source_path, details, min_evidence_rows, evidence_source, related_scope))
+        failures.extend(
+            check_evidence_table(
+                page,
+                source_path,
+                details,
+                min_evidence_rows,
+                evidence_source,
+                related_scope,
+                allowed_ranges,
+            )
+        )
 
     if "## Source pages" not in body_headings and "## Sources" not in body_headings:
         failures.append(f"{page}: missing source page section")
 
-    failures.extend(check_type_specific_sections(page, fm.body, page_type, evidence_source, related_scope))
+    failures.extend(check_type_specific_sections(page, fm.body, page_type, evidence_source, related_scope, allowed_ranges))
     return failures
 
 
@@ -420,6 +473,7 @@ def check_evidence_table(
     min_evidence_rows: int,
     evidence_source: EvidenceSource | None,
     related_scope: RelatedScope | None,
+    allowed_ranges: list[SourceRange],
 ) -> list[str]:
     failures: list[str] = []
     rows = table_rows(details)
@@ -492,6 +546,10 @@ def check_evidence_table(
                     failures.append(
                         f"{page}: evidence row {index} excerpt is not found in locator range {clean_locator(locator)!r}"
                     )
+                if allowed_ranges and not locator_within_ranges(start, end, allowed_ranges):
+                    failures.append(
+                        f"{page}: evidence row {index} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}"
+                    )
 
         source_target = first_markdown_target(source)
         if source_target is None:
@@ -517,6 +575,7 @@ def check_type_specific_sections(
     page_type: object,
     evidence_source: EvidenceSource | None,
     related_scope: RelatedScope | None,
+    allowed_ranges: list[SourceRange],
 ) -> list[str]:
     failures: list[str] = []
     if page_type == "procedure":
@@ -532,7 +591,7 @@ def check_type_specific_sections(
         elif table_data_row_count(reference_data) < 2:
             failures.append(f"{page}: Reference data table has fewer than 2 data rows")
         else:
-            failures.extend(check_reference_data_table(page, reference_data, evidence_source, related_scope))
+            failures.extend(check_reference_data_table(page, reference_data, evidence_source, related_scope, allowed_ranges))
     return failures
 
 
@@ -541,6 +600,7 @@ def check_reference_data_table(
     markdown: str,
     evidence_source: EvidenceSource | None,
     related_scope: RelatedScope | None,
+    allowed_ranges: list[SourceRange],
 ) -> list[str]:
     failures: list[str] = []
     rows = table_rows(markdown)
@@ -604,6 +664,10 @@ def check_reference_data_table(
         locator_text = "\n".join(evidence_source.lines[start - 1 : end])
         if normalize_for_search(evidence) not in normalize_for_search(locator_text):
             failures.append(f"{page}: Reference data row {row_number} evidence is not found in locator range {clean_locator(locator)!r}")
+        if allowed_ranges and not locator_within_ranges(start, end, allowed_ranges):
+            failures.append(
+                f"{page}: Reference data row {row_number} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}"
+            )
         unsupported = sorted(set(content_tokens(fact_text)) - set(content_tokens(evidence + " " + locator_text)))
         if len(unsupported) >= 8:
             failures.append(

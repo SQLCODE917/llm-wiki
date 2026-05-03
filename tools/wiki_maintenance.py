@@ -30,6 +30,8 @@ def main() -> int:
         Check("lint", ["python3", "tools/wiki_lint.py"]),
         Check("semantic", ["python3", "tools/wiki_semantic_lint.py"]),
         Check("contradictions", ["python3", "tools/wiki_contradictions.py"]),
+        Check("executables", ["python3", "tools/wiki_executable_concepts.py", "--check"]),
+        Check("curator-status", ["python3", "tools/wiki_curator_status.py", "--check"]),
     ]
     if not args.skip_smoke:
         checks.extend(

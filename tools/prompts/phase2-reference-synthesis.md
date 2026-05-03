@@ -44,6 +44,11 @@ Evidence bank:
 
 {{evidence_bank}}
 
+- Use only evidence inside the selected page's allowed source range when one is shown in the evidence bank.
+- If no allowed source range is shown, either declare `source_ranges` in the reference page frontmatter or stop and report that the source section cannot be range-gated.
+- `source_ranges` values must look like `{{slug}}:normalized:L12-L34`.
+- Do not pull evidence from unrelated sections just because a keyword matches the page title.
+
 Reference-page rules:
 - The selected page must have `type: reference`.
 - The page should contain reusable lookup facts, not advice invented from general game knowledge.
@@ -121,7 +126,7 @@ python3 tools/wiki_link_related.py {{slug}}
 python3 tools/wiki_fix_broken_links.py {{slug}}
 python3 tools/wiki_normalize_ascii.py {{slug}}
 python3 tools/wiki_normalize_tables.py {{slug}}
-python3 tools/wiki_check_synthesis.py {{slug}} --min-pages {{expected_total_pages}} --max-pages {{expected_total_pages}}{{allowed_page_args}} --require-allowed-pages --normalized-source {{normalized_source}}
+python3 tools/wiki_check_synthesis.py {{slug}} --min-pages {{expected_total_pages}} --max-pages {{expected_total_pages}}{{allowed_page_args}} --require-allowed-pages --normalized-source {{normalized_source}}{{range_page_args}}
 pnpm wiki:grounding:check
 ```
 

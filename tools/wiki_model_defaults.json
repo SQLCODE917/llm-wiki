@@ -1,0 +1,14 @@
+{
+  "updated": "2026-05-03",
+  "default_candidate": "local-4090",
+  "phases": {
+    "phase1": "local-4090",
+    "phase2": "local-4090",
+    "claim_judge": "local-4090",
+    "query": "local-4090",
+    "analysis_judge": "local-4090"
+  },
+  "notes": [
+    "Initial local-only defaults. Run pnpm wiki:model-benchmark with candidate profiles to replace these with measured defaults."
+  ]
+}

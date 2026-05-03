@@ -13,7 +13,14 @@ from datetime import date
 from pathlib import Path
 
 from wiki_common import code_paths, parse_frontmatter, section
-from wiki_evidence_bank import render_evidence_bank as render_source_evidence_bank
+from wiki_evidence_bank import source_chunks, snippets_for_candidate
+from wiki_evidence_ranges import (
+    SourceRange,
+    format_ranges,
+    locator_within_ranges,
+    parse_locator_range,
+    source_ranges_for_candidate,
+)
 from wiki_phase1_benchmark import (
     Candidate,
     copy_repo,
@@ -151,6 +158,7 @@ def run_candidate(
         selected_candidates=selected_candidates,
         expected_total_pages=expected_total_pages,
         evidence_bank=evidence_bank,
+        range_page_args=range_page_args(selected_paths),
     )
 
     start = time.monotonic()
@@ -174,6 +182,7 @@ def run_candidate(
         expected_total_pages,
         allowed_paths,
         normalized_source,
+        range_paths=selected_paths,
     )
 
     for attempt in range(1, repair_attempts + 1):
@@ -206,6 +215,7 @@ def run_candidate(
             expected_total_pages,
             allowed_paths,
             normalized_source,
+            range_paths=selected_paths,
         )
 
     duration_s = time.monotonic() - start
@@ -233,6 +243,7 @@ def render_prompt(
     selected_candidates: list[RelatedCandidate],
     expected_total_pages: int,
     evidence_bank: str,
+    range_page_args: str = "",
 ) -> str:
     selected_paths = [candidate.path for candidate in selected_candidates]
     selected_text = render_selected_candidates(selected_candidates)
@@ -248,6 +259,7 @@ def render_prompt(
         "{{selected_candidates}}": selected_text,
         "{{evidence_bank}}": evidence_bank,
         "{{allowed_page_args}}": allowed_page_args(sorted(set(existing_paths + selected_paths))),
+        "{{range_page_args}}": range_page_args,
     }
     rendered = template
     for old, new in replacements.items():
@@ -262,6 +274,8 @@ def run_validation(
     max_pages: int,
     selected_paths: list[str],
     normalized_source: Path,
+    *,
+    range_paths: list[str] | None = None,
 ) -> int:
     synthesis_command = [
         "python3",
@@ -278,6 +292,8 @@ def run_validation(
         synthesis_command.extend(["--allowed-page", source_relative_to_repo(path)])
     if selected_paths:
         synthesis_command.append("--require-allowed-pages")
+    for path in range_paths or []:
+        synthesis_command.extend(["--range-page", source_relative_to_repo(path)])
 
     reference_repair_commands = [
         [
@@ -443,6 +459,7 @@ Fix the failures mechanically:
 - Each synthesized page must include a `## Source-backed details` evidence table with header `| Claim | Evidence | Locator | Source |`.
 - Each evidence cell must contain a short exact excerpt from the normalized source, not a paraphrase.
 - Each locator cell must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
+- Each selected page's evidence locators must stay inside the allowed source range shown in the evidence bank, unless the page declares a narrower/more exact `source_ranges` frontmatter value.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
@@ -474,7 +491,7 @@ python3 tools/wiki_link_related.py {slug}
 python3 tools/wiki_fix_broken_links.py {slug}
 python3 tools/wiki_normalize_ascii.py {slug}
 python3 tools/wiki_normalize_tables.py {slug}
-python3 tools/wiki_check_synthesis.py {slug} --min-pages {min_pages} --max-pages {max_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {min_pages} --max-pages {max_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}{range_page_args(selected_paths)}
 pnpm wiki:grounding:check
 ```
 
@@ -599,8 +616,28 @@ def build_evidence_bank(worktree: Path, normalized_source: Path, selected_candid
     source_path = normalized_source if normalized_source.is_absolute() else worktree / normalized_source
     if not source_path.exists():
         return "No evidence bank available; normalized source was not found."
-    queries = [evidence_query(candidate) for candidate in selected_candidates]
-    return render_source_evidence_bank(source_path.read_text(errors="ignore"), queries, per_candidate=10)
+    source_text = source_path.read_text(errors="ignore")
+    lines = source_text.splitlines()
+    chunks = source_chunks(source_text)
+    sections: list[str] = []
+    for candidate in selected_candidates:
+        query = evidence_query(candidate)
+        ranges = source_ranges_for_candidate(candidate_path(candidate), lines, candidate_title(candidate))
+        candidate_chunks = chunks_in_ranges(chunks, ranges) if ranges else chunks
+        snippets = snippets_for_candidate(query, candidate_chunks, limit=10)
+        sections.append(f"### {query}")
+        if ranges:
+            sections.append(f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
+        else:
+            sections.append(
+                "Allowed source range: not derived from headings. The created page must declare `source_ranges` if validation is range-gated."
+            )
+        if snippets:
+            sections.extend(f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
+        else:
+            sections.append("- not covered in sources")
+        sections.append("")
+    return "\n".join(sections).rstrip()
 
 
 def evidence_query(candidate: str | RelatedCandidate) -> str:
@@ -612,6 +649,28 @@ def evidence_query(candidate: str | RelatedCandidate) -> str:
     if candidate.evidence_basis:
         parts.append(candidate.evidence_basis)
     return " ".join(parts)
+
+
+def candidate_path(candidate: str | RelatedCandidate) -> str:
+    return candidate.path if isinstance(candidate, RelatedCandidate) else candidate
+
+
+def candidate_title(candidate: str | RelatedCandidate) -> str | None:
+    if not isinstance(candidate, RelatedCandidate):
+        return None
+    return Path(candidate.path).stem.replace("-", " ").title()
+
+
+def chunks_in_ranges(chunks, ranges: list[SourceRange]):
+    scoped = []
+    for chunk in chunks:
+        parsed = parse_locator_range(chunk.locator)
+        if parsed is None:
+            continue
+        start, end = parsed
+        if locator_within_ranges(start, end, ranges):
+            scoped.append(chunk)
+    return scoped
 
 
 def split_table_row(line: str) -> list[str] | None:
@@ -647,6 +706,12 @@ def allowed_page_args(paths: list[str]) -> str:
     if not paths:
         return ""
     return "".join(f" --allowed-page {source_relative_to_repo(path)}" for path in paths)
+
+
+def range_page_args(paths: list[str]) -> str:
+    if not paths:
+        return ""
+    return "".join(f" --range-page {source_relative_to_repo(path)}" for path in paths)
 
 
 if __name__ == "__main__":

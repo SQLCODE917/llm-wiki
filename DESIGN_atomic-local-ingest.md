@@ -204,6 +204,27 @@ Purpose:
 - catch topical drift such as an economy-upgrade row inside a military-upgrades reference page
 - keep row-level reference data inside the source-native candidate boundary
 
+### Unit D4b: Evidence Range Gate
+
+Input:
+- one selected Phase 2 page
+- its normalized source
+- optional page frontmatter `source_ranges`
+
+Output:
+- deterministic failure if any evidence locator falls outside the page's declared range or a range derived
+  from a matching normalized-source heading
+
+Purpose:
+- prevent keyword matches from unrelated sections from filling a narrow page
+- keep local-model Phase 2 tasks atomic enough for a 4090-sized model
+
+Command:
+
+```bash
+pnpm wiki:check-synthesis <slug> --range-page wiki/concepts/example.md --normalized-source raw/normalized/<slug>/source.md
+```
+
 ### Unit D5: Candidate Backlog
 
 Input:
@@ -230,6 +251,8 @@ Output:
 Validation:
 - inspect `pnpm wiki:query "<question>" --plan-only` before invoking a local model
 - run `pnpm wiki:check-analysis <page>` before filing an analysis into index/graph/log
+- use `normalized:L12` locators only when they resolve against cited source pages; prefix with
+  `<source-slug>:` when an analysis cites multiple source pages
 - run `pnpm wiki:judge-analysis <page> --candidate local-4090 --fail-on-issues` before treating a saved analysis as reviewed
 - if `--save-analysis` is used, regenerate `wiki/index.md` and `wiki/_graph.json`, then append a query log entry
 
@@ -276,12 +299,68 @@ Commands:
 pnpm wiki:semantic-lint
 pnpm wiki:contradictions
 pnpm wiki:maintenance --append-log
+pnpm wiki:maintenance:systemd --dry-run
 ```
 
 The semantic linter is deterministic and lexical. It is a triage tool, not proof of duplication.
 The contradiction scanner becomes meaningful after at least two substantial source pages exist.
 `wiki:maintenance` bundles the deterministic health checks and smoke tests into one scheduled command and
-writes `wiki/_maintenance-report.md`.
+writes `wiki/_maintenance-report.md`. `wiki:maintenance:systemd` prints or installs a user-level systemd
+timer for running that command outside an interactive agent session.
+
+### Unit H: End-to-End Ingest Orchestration
+
+Input:
+- one source in `raw/inbox/`
+- a slug
+- local model defaults from `tools/wiki_model_defaults.json`
+
+Output:
+- imported and normalized source
+- source page
+- bounded synthesized pages
+- refreshed index, graph, lint report, and log
+
+Command:
+
+```bash
+pnpm wiki:ingest raw/inbox/example.pdf --slug example --dry-run
+pnpm wiki:ingest raw/inbox/example.pdf --slug example --max-phase2-pages 5
+```
+
+The orchestrator is a wrapper around Phase 0, Phase 1, atomic Phase 2, and Phase 3. It does not replace
+the lower-level commands; it makes the common path repeatable once the lower-level checks are trusted.
+
+### Unit I: Model Defaults
+
+Input:
+- candidate local Codex profiles
+- one or more benchmark phases
+
+Output:
+- `wiki/_model-benchmark-report.md`
+- optionally updated `tools/wiki_model_defaults.json`
+
+Command:
+
+```bash
+pnpm wiki:model-benchmark --candidate local-4090 --dry-run
+pnpm wiki:model-benchmark --candidate local-4090 --update-defaults
+```
+
+### Unit J: Executable Concepts and Curator Status
+
+Commands:
+
+```bash
+pnpm wiki:executables
+pnpm wiki:curator-status --list
+pnpm wiki:curator-status wiki/concepts/example.md --set reviewed --reason "curator checked evidence"
+```
+
+Executable checks verify that pages with `## Executable implementation` link to TypeScript source and tests,
+and warn when formula-like pages lack executable implementations. Curator status updates are logged and move
+pages through `draft`, `reviewed`, and `stable`.
 
 ## Adoption Gate
 

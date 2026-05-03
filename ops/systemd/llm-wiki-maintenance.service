@@ -1,0 +1,7 @@
+[Unit]
+Description=Run LLM-Wiki maintenance checks
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/serdm/gits/llm-wiki
+ExecStart=/usr/bin/env pnpm wiki:maintenance --append-log

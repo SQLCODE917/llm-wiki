@@ -55,6 +55,8 @@ SPECIAL_WIKI_FILES = {
     Path("wiki/_linter-report.md"),
     Path("wiki/_grounding-report.md"),
     Path("wiki/_maintenance-report.md"),
+    Path("wiki/_model-benchmark-report.md"),
+    Path("wiki/_executable-report.md"),
     Path("wiki/_semantic-linter-report.md"),
 }
 

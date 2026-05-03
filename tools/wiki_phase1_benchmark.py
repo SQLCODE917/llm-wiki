@@ -184,6 +184,8 @@ def run_candidate(
         template=(worktree / prompt_template).read_text(),
         slug=slug,
         normalized_source=normalized_source.as_posix(),
+        source_type=source_type_for_slug(slug),
+        imported_original=imported_original_for_slug(slug),
         min_claims=min_claims,
         max_claims=max_claims,
         min_claim_words=min_claim_words,
@@ -365,6 +367,8 @@ def render_prompt(
     template: str,
     slug: str,
     normalized_source: str,
+    source_type: str,
+    imported_original: str,
     min_claims: int,
     max_claims: int,
     min_claim_words: int,
@@ -378,6 +382,8 @@ def render_prompt(
         "{{current_date}}": date.today().isoformat(),
         "{{slug}}": slug,
         "{{normalized_source}}": normalized_source,
+        "{{source_type}}": source_type,
+        "{{imported_original}}": imported_original,
         "{{min_claims}}": str(min_claims),
         "{{max_claims}}": str(max_claims),
         "{{min_claim_words}}": str(min_claim_words),
@@ -398,6 +404,24 @@ def render_prompt(
     for old, new in replacements.items():
         rendered = rendered.replace(old, new)
     return rendered
+
+
+def source_type_for_slug(slug: str) -> str:
+    imported = Path("raw/imported") / slug
+    if (imported / "original.pdf").exists():
+        return "pdf"
+    if (imported / "original.md").exists():
+        return "markdown"
+    return "other"
+
+
+def imported_original_for_slug(slug: str) -> str:
+    source_type = source_type_for_slug(slug)
+    if source_type == "pdf":
+        return "original.pdf"
+    if source_type == "markdown":
+        return "original.md"
+    return "original"
 
 
 def render_repair_prompt(

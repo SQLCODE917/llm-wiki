@@ -20,6 +20,7 @@ from wiki_phase2_benchmark import (
     render_prompt,
     render_repair_prompt,
     run_validation,
+    range_page_args,
     source_relative_to_repo,
 )
 
@@ -141,6 +142,7 @@ def run_single_candidate(
         selected_candidates=[selected_candidate],
         expected_total_pages=expected_total_pages,
         evidence_bank=evidence_bank,
+        range_page_args=range_page_args(selected_paths),
     )
 
     start = time.monotonic()
@@ -165,6 +167,7 @@ def run_single_candidate(
         expected_total_pages,
         allowed_paths,
         normalized_source,
+        range_paths=selected_paths,
     )
 
     for attempt in range(1, repair_attempts + 1):
@@ -213,6 +216,7 @@ def run_single_candidate(
             expected_total_pages,
             allowed_paths,
             normalized_source,
+            range_paths=selected_paths,
         )
 
     judge_returncode = 0
@@ -264,6 +268,7 @@ def run_single_candidate(
                 expected_total_pages,
                 allowed_paths,
                 normalized_source,
+                range_paths=selected_paths,
             )
             if validation_returncode != 0:
                 judge_returncode = 1
@@ -514,7 +519,7 @@ python3 tools/wiki_link_related.py {slug}
 python3 tools/wiki_fix_broken_links.py {slug}
 python3 tools/wiki_normalize_ascii.py {slug}
 python3 tools/wiki_normalize_tables.py {slug}
-python3 tools/wiki_check_synthesis.py {slug} --min-pages {expected_total_pages} --max-pages {expected_total_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {expected_total_pages} --max-pages {expected_total_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}{range_page_args([selected_candidate.path])}
 pnpm wiki:grounding:check
 ```
 
@@ -594,7 +599,7 @@ python3 tools/wiki_link_related.py {slug}
 python3 tools/wiki_fix_broken_links.py {slug}
 python3 tools/wiki_normalize_ascii.py {slug}
 python3 tools/wiki_normalize_tables.py {slug}
-python3 tools/wiki_check_synthesis.py {slug} --min-pages {expected_total_pages} --max-pages {expected_total_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}
+python3 tools/wiki_check_synthesis.py {slug} --min-pages {expected_total_pages} --max-pages {expected_total_pages}{allowed_page_args(allowed_paths)} --require-allowed-pages --normalized-source {normalized_source.as_posix()}{range_page_args([selected_candidate.path])}
 pnpm wiki:grounding:check
 python3 tools/wiki_judge_claims.py {selected_repo_path} --normalized-source {normalized_source.as_posix()} --candidate {judge_candidate} --fail-on-issues
 ```
