@@ -72,6 +72,7 @@ Special operational files are not content pages and do not require page-type fro
 
 - `wiki/index.md`
 - `wiki/log.md`
+- `wiki/_claim-judge-report.md`
 - `wiki/_graph.json`
 - `wiki/_linter-report.md`
 - `wiki/_grounding-report.md`
@@ -408,6 +409,9 @@ A source page alone is not enough unless the source is tiny.
 
 Local models may stall or drift if given a large task.
 
+The source of truth for the atomic local-model ingest and audit loop is
+`DESIGN_atomic-local-ingest.md`.
+
 Use bounded phases:
 
 1. Create source page only.
@@ -447,6 +451,7 @@ pnpm wiki:graph
 pnpm wiki:graph:check
 pnpm wiki:grounding
 pnpm wiki:grounding:check
+pnpm wiki:judge-claims <page> --normalized-source <path> --candidate local-4090
 pnpm wiki:fix-links <slug>
 pnpm wiki:normalize-ascii <slug>
 pnpm wiki:normalize-tables <slug>
