@@ -25,6 +25,7 @@ guard rails that make the work small enough for local models running on a 4090-c
 - [Operating Schema](#operating-schema)
 - [First Principles](#first-principles)
 - [Quick Start](#quick-start)
+- [Start Talking To The LLM-Wiki](#start-talking-to-the-llm-wiki)
 - [Ingest](#ingest)
 - [Query](#query)
 - [File Durable Analyses](#file-durable-analyses)
@@ -202,6 +203,195 @@ Expected postconditions:
 - Dry-run commands print the steps they would execute.
 - Query planning shows which wiki pages would be read before a model is invoked.
 - Status listing shows how many pages are `draft`, `reviewed`, and `stable`.
+
+## Start Talking To The LLM-Wiki
+
+The normal interactive workflow is: start Codex from the repo root, tell it to operate under the LLM-Wiki
+contract, ask questions, and explicitly file reusable knowledge back into the wiki when something should
+persist.
+
+### 1. Launch Codex Locally
+
+Run this from the repository root:
+
+```bash
+cd /home/serdm/gits/llm-wiki
+codex --profile local-4090
+```
+
+Expected postconditions:
+
+- Codex starts with access to this repository.
+- Local model execution uses the `local-4090` profile.
+- Future file edits happen in the LLM-Wiki working tree.
+
+### 2. Bootstrap The Session
+
+`AGENTS.md` is the operating contract, but local models do better when the first prompt is explicit. Use this
+at the start of a session:
+
+```text
+Read AGENTS.md fully before acting.
+
+You are maintaining this repository as an LLM-Wiki.
+Use wiki/index.md and wiki/_graph.json first.
+Prefer existing wiki pages over raw sources.
+Do not invent facts.
+Every durable claim must point back to source pages.
+If we uncover reusable knowledge, ask whether to file it back into the wiki, or file it if I explicitly request that.
+When changing wiki structure, update wiki/index.md, wiki/_graph.json, and wiki/log.md.
+Run the relevant checks before finishing.
+```
+
+Expected postconditions:
+
+- The agent treats `AGENTS.md` as the source of operating rules.
+- The agent answers from the wiki before falling back to raw sources.
+- The agent understands that reusable answers should become wiki pages only when requested or confirmed.
+
+### 3. Ask Without Changing Files
+
+Use this pattern for normal questions:
+
+```text
+Using the LLM-Wiki, explain AoE2 build orders and how they relate to economy balance.
+Cite the wiki pages you use.
+Do not update files yet.
+```
+
+Expected postconditions:
+
+- The agent reads `wiki/index.md` and relevant pages under `wiki/`.
+- The answer cites wiki pages and source pages when useful.
+- No files change.
+
+### 4. File A Durable Answer
+
+If an answer is reusable, tell the agent to file it:
+
+```text
+This answer is reusable. File it as a durable analysis page.
+Update wiki/index.md, wiki/_graph.json, and wiki/log.md.
+Run the relevant checks.
+```
+
+For a specific filename, use:
+
+```text
+File this as wiki/analyses/YYYY-MM-DD-aoe2-build-orders-and-economy-balance.md.
+Use type: analysis.
+Link to the source pages and related concept/procedure pages.
+Make sure important claims cite source pages.
+Update index, graph, and log.
+Run maintenance.
+```
+
+Expected postconditions:
+
+- A new page exists under `wiki/analyses/`.
+- The analysis links to source pages and related wiki pages.
+- Important claims cite source pages.
+- `wiki/index.md`, `wiki/_graph.json`, and `wiki/log.md` are updated.
+- Relevant checks pass.
+
+### 5. Ingest A New Source
+
+Put a PDF or Markdown file in `raw/inbox/` first:
+
+```bash
+cp ~/Downloads/my-source.pdf raw/inbox/my-source.pdf
+```
+
+Then ask Codex:
+
+```text
+Read AGENTS.md fully before acting.
+
+Ingest raw/inbox/my-source.pdf as slug my-source.
+Use the local-model phased workflow.
+Preserve raw/imported/.
+Create the source page, synthesize useful concept/entity/procedure/reference pages, update index, graph, and log.
+Run the relevant checks.
+```
+
+Or run the deterministic orchestrator directly:
+
+```bash
+pnpm wiki:ingest raw/inbox/my-source.pdf --slug my-source --dry-run
+pnpm wiki:ingest raw/inbox/my-source.pdf --slug my-source --max-phase2-pages 5
+```
+
+Expected postconditions:
+
+- `raw/imported/my-source/` preserves the original.
+- `raw/normalized/my-source/` contains normalized Markdown.
+- `wiki/sources/my-source.md` exists.
+- Useful synthesized pages are created or updated.
+- Wiki bookkeeping and checks are updated.
+
+### 6. Add Knowledge From Conversation
+
+Do not let chat-only facts silently become wiki facts. If something learned in conversation should become part
+of the wiki, first turn it into a source note.
+
+Example:
+
+```text
+I want to add the following curator note as a source, then synthesize it into the wiki:
+
+<your note here>
+
+Create a Markdown source in raw/inbox/curator-note-YYYY-MM-DD-topic.md.
+Then ingest it as a markdown source.
+Preserve the original under raw/imported/.
+Create or update relevant wiki pages.
+Update index, graph, and log.
+Run checks.
+```
+
+Expected postconditions:
+
+- The curator note is preserved as an auditable source.
+- Synthesized pages cite the new source page.
+- Future answers can distinguish source-document facts from curator notes.
+
+### 7. Useful Session Prompts
+
+Ask from the wiki only:
+
+```text
+Answer from the wiki only. Cite pages used. Do not update files.
+```
+
+Save a useful answer:
+
+```text
+File this answer as a durable analysis and update the wiki bookkeeping.
+```
+
+Ingest a new source:
+
+```text
+Ingest raw/inbox/example.pdf as slug example using the phased local workflow.
+```
+
+Clean up health:
+
+```text
+Run wiki maintenance, summarize failures, and fix only deterministic/wiki-structure issues.
+```
+
+Review pages:
+
+```text
+List draft pages that are ready for curator review.
+```
+
+Expected postconditions:
+
+- Conversation remains natural while durable knowledge is deliberately filed.
+- The wiki only changes when you ask for a change.
+- Filed knowledge has source links, index updates, graph updates, log entries, and checks.
 
 ## Ingest
 
