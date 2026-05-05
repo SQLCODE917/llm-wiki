@@ -300,3 +300,9 @@
 - Failed: 0
 
 ---
+
+## [2026-05-05] proposal | smart ingestion for large documents
+
+- Created DESIGN_smart-ingestion.md with 8 testable hypotheses: H1 chunked PDF normalization, H2 source outline extraction, H3 SQLite FTS evidence index, H4 vector embeddings, H5 hybrid search, H6 context budget tracking, H7 incremental source reading, H8 parallel processing. Priority order: reliability (H1, H6, H2), search quality (H3, H5), scalability (H7, H4, H8).
+
+---
