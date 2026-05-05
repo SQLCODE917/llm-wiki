@@ -275,7 +275,7 @@ def build_evidence_index(source_path: Path, db_path: Path) -> sqlite3.Connection
     conn.execute("INSERT INTO meta VALUES (?)", (source_path.stat().st_mtime,))
     conn.execute("""
         CREATE VIRTUAL TABLE evidence USING fts5(
-            line_no, content, tokenize='porter'
+            line_no UNINDEXED, content, tokenize='porter unicode61'
         )
     """)
     with open(source_path) as f:
@@ -285,7 +285,7 @@ def build_evidence_index(source_path: Path, db_path: Path) -> sqlite3.Connection
     conn.commit()
     return conn
 
-def bm25_search(source_path: Path, query: str, limit: int = 10) -> list[tuple[int, str, float]]:
+def bm25_search(source_path: Path, query: str, limit: int = 8) -> list[tuple[int, str, float]]:
     """BM25-ranked search over evidence index."""
     conn = get_or_build_index(source_path)
     rows = conn.execute("""
@@ -637,9 +637,9 @@ async def parallel_phase2(slug: str, candidates: list[str], max_parallel: int = 
 
 ### Phase C: Scalability (Medium impact, higher complexity)
 
-6. **H7: Incremental source reading** - Handle 1000+ page sources
-7. **H4: Vector embedding index** - Semantic search for edge cases
-8. **H8: Parallel chunk processing** - Speed improvement
+7. **H7: Incremental source reading** - Handle 1000+ page sources
+8. **H4: Vector embedding index** - Semantic search for edge cases
+9. **H8: Parallel chunk processing** - Speed improvement
 
 ---
 
