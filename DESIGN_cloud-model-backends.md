@@ -1,17 +1,20 @@
 # Cloud Model Backends: Cross-Platform LLM Support
 
 This document designs a unified model backend system that works across:
+
 - **Permissive environments**: Local GPU with codex/ollama
 - **Non-permissive environments**: Cloud APIs and AI coding assistants
 
 ## Problem Statement
 
 The current architecture assumes local `codex` CLI. Many environments don't permit this:
+
 - **GitHub Codespaces**: No persistent GPU, restricted installs
 - **Corporate environments**: No local model installation allowed
 - **Lightweight VMs**: Insufficient resources for local inference
 
 However, these environments typically have access to:
+
 - **Cloud LLM APIs**: OpenAI, Anthropic, AWS Bedrock
 - **AI coding assistants**: GitHub Copilot, Claude Code, Cursor
 
@@ -53,15 +56,15 @@ just needs to support both automated and interactive workflows.
 
 ## Target Configurations
 
-| Environment | Mode | Backend | Model |
-|---|---|---|---|
-| Local 4090 | Scripted | codex | Qwen 30B via ollama |
-| Codespaces + OpenAI | Scripted | openai | GPT-4o / o1 |
-| Codespaces + Anthropic | Scripted | anthropic | Claude Sonnet 4 |
-| Codespaces + Bedrock | Scripted | bedrock | Qwen3-coder 30B |
-| Any + GitHub Copilot | Agent | copilot | (Copilot's model) |
-| Any + Claude Code | Agent | claude-code | Claude Sonnet 4 |
-| Any + Cursor | Agent | cursor | (Cursor's model) |
+| Environment            | Mode     | Backend     | Model               |
+| ---------------------- | -------- | ----------- | ------------------- |
+| Local 4090             | Scripted | codex       | Qwen 30B via ollama |
+| Codespaces + OpenAI    | Scripted | openai      | GPT-4o / o1         |
+| Codespaces + Anthropic | Scripted | anthropic   | Claude Sonnet 4     |
+| Codespaces + Bedrock   | Scripted | bedrock     | Qwen3-coder 30B     |
+| Any + GitHub Copilot   | Agent    | copilot     | (Copilot's model)   |
+| Any + Claude Code      | Agent    | claude-code | Claude Sonnet 4     |
+| Any + Cursor           | Agent    | cursor      | (Cursor's model)    |
 
 ---
 
@@ -125,7 +128,7 @@ just needs to support both automated and interactive workflows.
     "bedrock": {
       "type": "scripted",
       "region": "us-east-1",
-      "model_id": "anthropic.claude-sonnet-4-20250514-v1:0",
+      "model_id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
       "max_tokens": 8192,
       "temperature": 0.1
     },
@@ -153,6 +156,7 @@ just needs to support both automated and interactive workflows.
 ```
 
 Environment variable overrides:
+
 ```bash
 # Backend selection
 export WIKI_MODEL_BACKEND=anthropic     # codex | openai | anthropic | bedrock
@@ -206,10 +210,10 @@ class OpenAIBackend(ModelBackend):
         self.max_tokens = max_tokens
         self.temperature = temperature
         self.client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    
+
     def run(self, prompt: str, config: ModelConfig) -> ModelResponse:
         log_context_stats(prompt, label=f"{config.prefix} prompt (openai)")
-        
+
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
@@ -220,12 +224,12 @@ class OpenAIBackend(ModelBackend):
                 max_tokens=self.max_tokens,
                 temperature=self.temperature,
             )
-            
+
             output_text = response.choices[0].message.content
             finish_reason = response.choices[0].finish_reason
-            
+
             log_paths = self._save_logs(config, prompt, output_text, response)
-            
+
             return ModelResponse(
                 success=finish_reason == "stop",
                 output=output_text,
@@ -236,10 +240,10 @@ class OpenAIBackend(ModelBackend):
                     "output_tokens": response.usage.completion_tokens,
                 },
             )
-            
+
         except Exception as e:
             return ModelResponse(success=False, output="", error=str(e), log_paths=[])
-    
+
     def _system_prompt(self, config: ModelConfig) -> str:
         agents_md = (config.worktree / "AGENTS.md").read_text()
         return f"""You are a wiki maintenance agent. Follow these rules exactly:
@@ -264,10 +268,10 @@ class AnthropicBackend(ModelBackend):
         self.max_tokens = max_tokens
         self.temperature = temperature
         self.client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    
+
     def run(self, prompt: str, config: ModelConfig) -> ModelResponse:
         log_context_stats(prompt, label=f"{config.prefix} prompt (anthropic)")
-        
+
         try:
             response = self.client.messages.create(
                 model=self.model,
@@ -276,12 +280,12 @@ class AnthropicBackend(ModelBackend):
                 system=self._system_prompt(config),
                 messages=[{"role": "user", "content": prompt}],
             )
-            
+
             output_text = response.content[0].text
             stop_reason = response.stop_reason
-            
+
             log_paths = self._save_logs(config, prompt, output_text, response)
-            
+
             return ModelResponse(
                 success=stop_reason == "end_turn",
                 output=output_text,
@@ -292,7 +296,7 @@ class AnthropicBackend(ModelBackend):
                     "output_tokens": response.usage.output_tokens,
                 },
             )
-            
+
         except Exception as e:
             return ModelResponse(success=False, output="", error=str(e), log_paths=[])
 ```
@@ -308,7 +312,7 @@ import os
 class BedrockBackend(ModelBackend):
     def __init__(
         self,
-        model_id: str = "anthropic.claude-sonnet-4-20250514-v1:0",
+        model_id: str = "us.anthropic.claude-sonnet-4-20250514-v1:0",
         region: str = None,
         max_tokens: int = 8192,
         temperature: float = 0.1,
@@ -318,10 +322,10 @@ class BedrockBackend(ModelBackend):
         self.temperature = temperature
         region = region or os.environ.get("AWS_REGION", "us-east-1")
         self.client = boto3.client("bedrock-runtime", region_name=region)
-    
+
     def run(self, prompt: str, config: ModelConfig) -> ModelResponse:
         log_context_stats(prompt, label=f"{config.prefix} prompt (bedrock)")
-        
+
         try:
             response = self.client.converse(
                 modelId=self.model_id,
@@ -332,12 +336,12 @@ class BedrockBackend(ModelBackend):
                 },
                 system=[{"text": self._system_prompt(config)}],
             )
-            
+
             output_text = response["output"]["message"]["content"][0]["text"]
             stop_reason = response["stopReason"]
-            
+
             log_paths = self._save_logs(config, prompt, output_text, response)
-            
+
             return ModelResponse(
                 success=stop_reason in ("end_turn", "stop_sequence"),
                 output=output_text,
@@ -345,7 +349,7 @@ class BedrockBackend(ModelBackend):
                 stop_reason=stop_reason,
                 usage=response.get("usage", {}),
             )
-            
+
         except Exception as e:
             return ModelResponse(success=False, output="", error=str(e), log_paths=[])
 ```
@@ -354,7 +358,7 @@ class BedrockBackend(ModelBackend):
 
 All scripted backends share these:
 
-```python
+````python
 class ModelBackend:
     def _system_prompt(self, config: ModelConfig) -> str:
         """Build system prompt from AGENTS.md."""
@@ -374,25 +378,25 @@ type: concept
 # Example
 Content here.
 ```"""
-    
+
     def _save_logs(self, config: ModelConfig, prompt: str, output: str, response) -> list[Path]:
         """Save prompt, output, and metadata for debugging."""
         prefix = config.prefix
         worktree = config.worktree
-        
+
         (worktree / f"{prefix}-prompt.md").write_text(prompt)
         (worktree / f"{prefix}-output.md").write_text(output)
         (worktree / f"{prefix}-meta.json").write_text(json.dumps({
             "backend": self.__class__.__name__,
             "usage": getattr(response, "usage", None) or response.get("usage", {}),
         }, indent=2))
-        
+
         return [
             worktree / f"{prefix}-prompt.md",
             worktree / f"{prefix}-output.md",
             worktree / f"{prefix}-meta.json",
         ]
-```
+````
 
 ---
 
@@ -411,22 +415,24 @@ No API calls needed — the agent reads AGENTS.md directly and executes tasks.
 
 Create instruction files that each tool reads automatically:
 
-| AI Assistant | Instruction File | Notes |
-|---|---|---|
+| AI Assistant   | Instruction File                  | Notes                  |
+| -------------- | --------------------------------- | ---------------------- |
 | GitHub Copilot | `.github/copilot-instructions.md` | Auto-loaded in VS Code |
-| Claude Code | `CLAUDE.md` | Claude's convention |
-| Cursor | `.cursorrules` | Cursor's convention |
-| OpenAI Codex | `AGENTS.md` | Codex's convention |
+| Claude Code    | `CLAUDE.md`                       | Claude's convention    |
+| Cursor         | `.cursorrules`                    | Cursor's convention    |
+| OpenAI Codex   | `AGENTS.md`                       | Codex's convention     |
 
 All can point to the same content:
 
 ```markdown
 <!-- .github/copilot-instructions.md -->
+
 # Copilot Instructions for llm-wiki
 
 Read and follow [AGENTS.md](../AGENTS.md) for all wiki maintenance tasks.
 
 Quick reference:
+
 - Ingest: `pnpm wiki:ingest raw/inbox/<file> --slug <slug>`
 - Validate source: `pnpm wiki:check-source <slug>`
 - Validate synthesis: `pnpm wiki:check-synthesis <slug>`
@@ -437,13 +443,13 @@ Quick reference:
 
 When scripted automation wants to delegate to an interactive agent:
 
-```python
+````python
 class AgentHandoffBackend(ModelBackend):
     """
     Generates a task file for human + AI assistant to execute.
     Used when scripted automation hits a task better suited for interactive work.
     """
-    
+
     def run(self, prompt: str, config: ModelConfig) -> ModelResponse:
         handoff_path = config.worktree / f"{config.prefix}-agent-task.md"
         handoff_path.write_text(f"""# Agent Task: {config.prefix}
@@ -460,34 +466,38 @@ class AgentHandoffBackend(ModelBackend):
 After completing, run:
 ```bash
 {config.validation_command}
-```
+````
 
 ## Mark Complete
+
 When done, create an empty file:
+
 ```bash
 touch {config.worktree}/{config.prefix}-complete
 ```
+
 """)
-        
+
         print(f"\n{'='*60}")
         print(f"AGENT HANDOFF: {handoff_path}")
         print(f"Ask your AI assistant (Copilot/Claude/Cursor) to execute this task.")
         print(f"{'='*60}\n")
-        
+
         # Wait for completion marker
         complete_marker = config.worktree / f"{config.prefix}-complete"
         while not complete_marker.exists():
             input("Press Enter after the agent completes (or Ctrl+C to abort)...")
             if complete_marker.exists():
                 break
-        
+
         complete_marker.unlink()
         return ModelResponse(
             success=True,
             output="(completed via agent handoff)",
             log_paths=[handoff_path],
         )
-```
+
+````
 
 ---
 
@@ -503,9 +513,9 @@ import json
 def get_backend(name: str = None) -> ModelBackend:
     """Get a model backend by name or from environment."""
     name = name or os.environ.get("WIKI_MODEL_BACKEND", "codex")
-    
+
     config = load_backend_config(name)
-    
+
     if name == "codex":
         return CodexBackend(**config)
     elif name == "openai":
@@ -527,7 +537,7 @@ def load_backend_config(name: str) -> dict:
         defaults = json.loads(defaults_path.read_text())
         return defaults.get("backends", {}).get(name, {})
     return {}
-```
+````
 
 ---
 
@@ -535,34 +545,34 @@ def load_backend_config(name: str) -> dict:
 
 ### Scripted Mode (codex, openai, anthropic, bedrock)
 
-| Aspect | Behavior |
-|---|---|
-| Execution | Python script calls API, parses response, writes files |
-| Sandbox | Worktree isolation (copy of repo) |
-| File writes | Parsed from model output, validated before write |
-| Tool calling | Text-only initially; tool use optional |
-| Human oversight | Validation commands run automatically |
+| Aspect          | Behavior                                               |
+| --------------- | ------------------------------------------------------ |
+| Execution       | Python script calls API, parses response, writes files |
+| Sandbox         | Worktree isolation (copy of repo)                      |
+| File writes     | Parsed from model output, validated before write       |
+| Tool calling    | Text-only initially; tool use optional                 |
+| Human oversight | Validation commands run automatically                  |
 
 ### Agent Mode (copilot, claude-code, cursor)
 
-| Aspect | Behavior |
-|---|---|
-| Execution | AI assistant runs commands directly in workspace |
-| Sandbox | None — operates on real files (use git for safety) |
-| File writes | Agent writes directly via editor/terminal |
-| Tool calling | Full access to terminal, file system, extensions |
-| Human oversight | User watches and approves in real-time |
+| Aspect          | Behavior                                           |
+| --------------- | -------------------------------------------------- |
+| Execution       | AI assistant runs commands directly in workspace   |
+| Sandbox         | None — operates on real files (use git for safety) |
+| File writes     | Agent writes directly via editor/terminal          |
+| Tool calling    | Full access to terminal, file system, extensions   |
+| Human oversight | User watches and approves in real-time             |
 
 ### Backend Comparison
 
-| Backend | Latency | Cost | Context | Best For |
-|---|---|---|---|---|
-| codex (local) | Low | ~$0/task | 32K+ | High-volume, privacy |
-| openai | Medium | ~$0.10/task | 128K | Quality, long context |
-| anthropic | Medium | ~$0.10/task | 200K | Quality, artifacts |
-| bedrock | Medium | ~$0.08/task | Varies | AWS integration, compliance |
-| copilot | Interactive | Subscription | Varies | Complex tasks, exploration |
-| claude-code | Interactive | Subscription | 200K | Complex tasks, artifacts |
+| Backend       | Latency     | Cost         | Context | Best For                    |
+| ------------- | ----------- | ------------ | ------- | --------------------------- |
+| codex (local) | Low         | ~$0/task     | 32K+    | High-volume, privacy        |
+| openai        | Medium      | ~$0.10/task  | 128K    | Quality, long context       |
+| anthropic     | Medium      | ~$0.10/task  | 200K    | Quality, artifacts          |
+| bedrock       | Medium      | ~$0.08/task  | Varies  | AWS integration, compliance |
+| copilot       | Interactive | Subscription | Varies  | Complex tasks, exploration  |
+| claude-code   | Interactive | Subscription | 200K    | Complex tasks, artifacts    |
 
 ---
 
@@ -570,11 +580,11 @@ def load_backend_config(name: str) -> dict:
 
 All scripted backends use the same output format:
 
-```python
+````python
 def parse_model_output(output: str, expected_files: list[str]) -> dict[str, str]:
     """
     Parse model output into file contents.
-    
+
     Expected format:
     ```wiki/path/to/file.md
     file contents here
@@ -583,7 +593,7 @@ def parse_model_output(output: str, expected_files: list[str]) -> dict[str, str]
     files = {}
     current_file = None
     current_content = []
-    
+
     for line in output.split("\n"):
         if line.startswith("```") and not line.startswith("```\n"):
             if current_file:
@@ -600,9 +610,9 @@ def parse_model_output(output: str, expected_files: list[str]) -> dict[str, str]
             current_content = []
         elif current_file:
             current_content.append(line)
-    
+
     return files
-```
+````
 
 ### Truncation Detection
 
@@ -730,7 +740,7 @@ cp .cursorrules.example .cursorrules
 
 ### Unit Tests
 
-```python
+````python
 def test_output_parsing():
     output = """Here's the wiki page:
 
@@ -743,22 +753,22 @@ type: concept
 # Test Concept
 
 This is a test.
-```
+````
 
 Done."""
-    
+
     files = parse_model_output(output, ["wiki/concepts/test-concept.md"])
     assert "wiki/concepts/test-concept.md" in files
     assert "# Test Concept" in files["wiki/concepts/test-concept.md"]
 
-
 def test_truncation_detection():
-    response = ModelResponse(output="Hi", stop_reason="max_tokens")
-    assert not check_response_completeness(response)
-    
+response = ModelResponse(output="Hi", stop_reason="max_tokens")
+assert not check_response_completeness(response)
+
     response = ModelResponse(output="Full content here...", stop_reason="stop")
     assert check_response_completeness(response)
-```
+
+````
 
 ### Integration Tests
 
@@ -781,20 +791,20 @@ print(f'Backend: {backend.__class__.__name__}')
 WIKI_MODEL_BACKEND=openai pnpm wiki:phase2-single aoe2-basics ../concepts/test.md --dry-run
 WIKI_MODEL_BACKEND=anthropic pnpm wiki:phase2-single aoe2-basics ../concepts/test.md --dry-run
 WIKI_MODEL_BACKEND=bedrock pnpm wiki:phase2-single aoe2-basics ../concepts/test.md --dry-run
-```
+````
 
 ---
 
 ## Cost Considerations
 
-| Backend | Cost Model | Approximate Cost/Task | Best For |
-|---|---|---|---|
-| codex (local) | Electricity | ~$0.01 | High-volume, privacy |
-| openai (GPT-4o) | Per-token | ~$0.05-0.15 | Quality, availability |
-| anthropic (Claude) | Per-token | ~$0.05-0.15 | Quality, long context |
-| bedrock | Per-token | ~$0.05-0.15 | AWS compliance |
-| copilot | Subscription | $0 (included) | Interactive, exploration |
-| claude-code | Subscription | $0 (included) | Interactive, artifacts |
+| Backend            | Cost Model   | Approximate Cost/Task | Best For                 |
+| ------------------ | ------------ | --------------------- | ------------------------ |
+| codex (local)      | Electricity  | ~$0.01                | High-volume, privacy     |
+| openai (GPT-4o)    | Per-token    | ~$0.05-0.15           | Quality, availability    |
+| anthropic (Claude) | Per-token    | ~$0.05-0.15           | Quality, long context    |
+| bedrock            | Per-token    | ~$0.05-0.15           | AWS compliance           |
+| copilot            | Subscription | $0 (included)         | Interactive, exploration |
+| claude-code        | Subscription | $0 (included)         | Interactive, artifacts   |
 
 For high-volume scripted ingestion, local codex or API backends are preferred.
 Agent mode is best for complex tasks requiring human judgment.
@@ -818,6 +828,7 @@ Agent mode is best for complex tasks requiring human judgment.
 ### Codespaces Secrets
 
 Store in GitHub repository secrets:
+
 - `OPENAI_API_KEY`
 - `ANTHROPIC_API_KEY`
 - `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY`
@@ -826,6 +837,7 @@ Store in GitHub repository secrets:
 ### Model Output Validation
 
 Never execute model output directly. Always:
+
 1. Parse into expected structure
 2. Validate paths are within worktree
 3. Run deterministic validation after writes

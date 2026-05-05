@@ -1,0 +1,31 @@
+{
+  "name": "llm-wiki",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20"
+    }
+  },
+  "postCreateCommand": "npm install -g pnpm && pnpm install && pip install boto3",
+  "containerEnv": {
+    "AWS_REGION": "us-east-1",
+    "AWS_PROFILE": "sdai-dev",
+    "WIKI_MODEL_BACKEND": "bedrock"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-python.python",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "editor.formatOnSave": true
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}

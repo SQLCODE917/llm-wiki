@@ -1,0 +1,10 @@
+# Core dependencies
+pyyaml>=6.0
+
+# Optional: Cloud model backends (install as needed)
+# pip install boto3      # For AWS Bedrock
+# pip install openai     # For OpenAI API
+# pip install anthropic  # For Anthropic API
+
+# Development
+pytest>=7.0

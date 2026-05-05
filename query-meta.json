@@ -1,0 +1,11 @@
+{
+  "backend": "bedrock",
+  "model_id": "qwen.qwen3-coder-30b-a3b-v1:0",
+  "region": "us-east-1",
+  "stop_reason": "end_turn",
+  "usage": {
+    "inputTokens": 11820,
+    "outputTokens": 240,
+    "totalTokens": 12060
+  }
+}

@@ -1,6 +1,35 @@
 {
-  "updated": "2026-05-03",
+  "updated": "2026-05-05",
+  "backend": "codex",
   "default_candidate": "local-4090",
+  "backends": {
+    "codex": {
+      "type": "scripted",
+      "bin": "codex",
+      "default_profile": "local-4090"
+    },
+    "bedrock": {
+      "type": "scripted",
+      "region": "us-east-1",
+      "model_id": "qwen.qwen3-coder-30b-a3b-v1:0",
+      "max_tokens": 8192,
+      "temperature": 0.1
+    },
+    "openai": {
+      "type": "scripted",
+      "api_key_env": "OPENAI_API_KEY",
+      "model": "gpt-4o",
+      "max_tokens": 8192,
+      "temperature": 0.1
+    },
+    "anthropic": {
+      "type": "scripted",
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "model": "claude-sonnet-4-20250514",
+      "max_tokens": 8192,
+      "temperature": 0.1
+    }
+  },
   "phases": {
     "phase1": "local-4090",
     "phase2": "local-4090",
@@ -9,6 +38,9 @@
     "analysis_judge": "local-4090"
   },
   "notes": [
-    "Initial local-only defaults. Run pnpm wiki:model-benchmark with candidate profiles to replace these with measured defaults."
+    "Backend selection: set WIKI_MODEL_BACKEND env var or use --backend flag.",
+    "For Bedrock: aws configure sso --profile sdai-dev && export AWS_PROFILE=sdai-dev",
+    "For OpenAI: export OPENAI_API_KEY=sk-...",
+    "For Anthropic: export ANTHROPIC_API_KEY=sk-ant-..."
   ]
 }

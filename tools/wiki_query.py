@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -25,6 +26,7 @@ class PageHit:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Answer a query from the wiki using a bounded local-model context.")
     parser.add_argument("question")
+    parser.add_argument("--backend", help="model backend: bedrock, openai, anthropic, codex (default: from WIKI_MODEL_BACKEND env or codex)")
     parser.add_argument("--candidate", help="local Codex candidate, e.g. local-4090 or local-4090:model")
     parser.add_argument("--codex-bin", default="codex")
     parser.add_argument("--timeout", type=int, default=600)
@@ -46,11 +48,24 @@ def main() -> int:
         return 1
 
     prompt = render_prompt(args.question, hits)
-    if args.plan_only or not args.candidate:
+    
+    # Determine backend
+    backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND")
+    
+    if args.plan_only:
+        print(render_plan(args.question, hits, prompt))
+        return 0
+    
+    # Use backend abstraction if specified, otherwise fall back to Codex
+    if backend_name and backend_name != "codex":
+        answer, returncode = run_backend_answer(backend_name, prompt, args.timeout)
+    elif args.candidate:
+        answer, returncode = run_codex_answer(args.codex_bin, args.candidate, prompt, args.timeout)
+    else:
+        # No backend or candidate specified - show plan
         print(render_plan(args.question, hits, prompt))
         return 0
 
-    answer, returncode = run_codex_answer(args.codex_bin, args.candidate, prompt, args.timeout)
     if returncode != 0:
         print(answer)
         return returncode
@@ -136,6 +151,29 @@ def trim_page(text: str, limit: int = 7000) -> str:
     if len(text) <= limit:
         return text
     return text[:limit].rstrip() + "\n\n[trimmed]"
+
+
+def run_backend_answer(backend_name: str, prompt: str, timeout: int) -> tuple[str, int]:
+    """Run query using the model backend abstraction (Bedrock, OpenAI, Anthropic)."""
+    try:
+        from wiki_model_backend import get_backend, ModelConfig
+    except ImportError as e:
+        return f"FAIL: could not import wiki_model_backend: {e}", 1
+    
+    try:
+        backend = get_backend(backend_name)
+        config = ModelConfig(
+            worktree=Path.cwd(),
+            prefix="query",
+            timeout=timeout,
+        )
+        response = backend.run(prompt, config)
+        if response.success:
+            return response.output, 0
+        else:
+            return f"FAIL: {response.error}", 1
+    except Exception as e:
+        return f"FAIL: backend error: {e}", 1
 
 
 def run_codex_answer(codex_bin: str, candidate: str, prompt: str, timeout: int) -> tuple[str, int]:
