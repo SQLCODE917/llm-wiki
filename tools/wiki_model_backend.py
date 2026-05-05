@@ -36,10 +36,26 @@ class ModelConfig:
     timeout: int = 600
     task_description: str = ""
     validation_command: str = ""
+    # Debug file handling
+    save_debug_files: bool = False  # Set True or WIKI_DEBUG=1 to save
+    debug_dir: Path | None = None  # Defaults to .tmp/model-runs/
     # Codex-specific
     codex_bin: str = "codex"
     codex_profile: str = "local-4090"
     codex_model: str | None = None
+    
+    def get_debug_dir(self) -> Path:
+        """Get the directory for debug files, creating if needed."""
+        if self.debug_dir:
+            d = self.debug_dir
+        else:
+            d = self.worktree / ".tmp" / "model-runs"
+        d.mkdir(parents=True, exist_ok=True)
+        return d
+    
+    def should_save_debug(self) -> bool:
+        """Check if debug files should be saved."""
+        return self.save_debug_files or os.environ.get("WIKI_DEBUG", "") == "1"
 
 
 @dataclass
@@ -94,13 +110,16 @@ Content here.
         output: str,
         metadata: dict[str, Any],
     ) -> list[Path]:
-        """Save prompt, output, and metadata for debugging."""
-        prefix = config.prefix
-        worktree = config.worktree
+        """Save prompt, output, and metadata for debugging (only if enabled)."""
+        if not config.should_save_debug():
+            return []
         
-        prompt_path = worktree / f"{prefix}-prompt.md"
-        output_path = worktree / f"{prefix}-output.md"
-        meta_path = worktree / f"{prefix}-meta.json"
+        debug_dir = config.get_debug_dir()
+        prefix = config.prefix
+        
+        prompt_path = debug_dir / f"{prefix}-prompt.md"
+        output_path = debug_dir / f"{prefix}-output.md"
+        meta_path = debug_dir / f"{prefix}-meta.json"
         
         prompt_path.write_text(prompt)
         output_path.write_text(output)
@@ -119,10 +138,12 @@ class CodexBackend(ModelBackend):
     def run(self, prompt: str, config: ModelConfig) -> ModelResponse:
         log_context_stats(prompt, label=f"{config.prefix} prompt (codex)")
         
-        stdout_path = config.worktree / f"{config.prefix}-stdout.log"
-        stderr_path = config.worktree / f"{config.prefix}-stderr.log"
-        last_message_path = config.worktree / f"{config.prefix}-last-message.md"
-        prompt_path = config.worktree / f"{config.prefix}-prompt.md"
+        # Use debug_dir for temp files
+        debug_dir = config.get_debug_dir()
+        stdout_path = debug_dir / f"{config.prefix}-stdout.log"
+        stderr_path = debug_dir / f"{config.prefix}-stderr.log"
+        last_message_path = debug_dir / f"{config.prefix}-last-message.md"
+        prompt_path = debug_dir / f"{config.prefix}-prompt.md"
         prompt_path.write_text(prompt)
         
         profile = config.codex_profile or self.default_profile
@@ -184,7 +205,7 @@ class BedrockBackend(ModelBackend):
         self,
         model_id: str = "qwen.qwen3-coder-30b-a3b-v1:0",
         region: str | None = None,
-        max_tokens: int = 8192,
+        max_tokens: int = 16384,
         temperature: float = 0.1,
         **kwargs,
     ):

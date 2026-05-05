@@ -240,7 +240,7 @@ def run_query(question: str, backend, timeout: int) -> str:
 
 
 def run_ingest_guide(path: str) -> str:
-    """Provide guided ingestion instructions."""
+    """Run cloud ingestion or provide guidance."""
     p = Path(path)
     if not p.exists():
         return f"File not found: {path}"
@@ -248,51 +248,22 @@ def run_ingest_guide(path: str) -> str:
     # Derive slug from filename
     slug = p.stem.lower().replace(" ", "-").replace("_", "-")
     
-    if p.suffix.lower() == ".pdf":
-        return f"""📥 PDF Ingestion Guide for: {path}
+    # Ask if user wants to run automated ingest
+    return f"""📥 Ready to ingest: {path}
+Slug: {slug}
 
-1. **Phase 0 - Normalize** (converts PDF to markdown):
-   ```bash
-   pnpm wiki:phase0 {path} {slug}
-   ```
+To run automated cloud ingestion:
+```bash
+AWS_PROFILE=sdai-dev pnpm wiki:ingest:cloud {path} --slug {slug}
+```
 
-2. **Phase 1 - Create source page**:
-   ```bash
-   # The source page will be at wiki/sources/{slug}.md
-   pnpm wiki:check-source {slug}
-   ```
+Or run phases manually:
+1. Phase 0: `pnpm wiki:phase0 {path} {slug}`
+2. Phase 1: Create wiki/sources/{slug}.md
+3. Phase 2: Synthesize concept pages
+4. Phase 3: `pnpm wiki:phase3 {slug}`
 
-3. **Phase 2 - Synthesize concept pages**:
-   ```bash
-   pnpm wiki:check-synthesis {slug}
-   ```
-
-4. **Phase 3 - Finalize** (updates index, graph, log):
-   ```bash
-   pnpm wiki:phase3 {slug}
-   ```
-
-Run these commands in order. Each phase validates before the next."""
-
-    elif p.suffix.lower() == ".md":
-        return f"""📥 Markdown Ingestion Guide for: {path}
-
-1. **Phase 0 - Import**:
-   ```bash
-   pnpm wiki:phase0 {path} {slug}
-   ```
-
-2. **Phase 1 - Create source page** at wiki/sources/{slug}.md
-
-3. **Phase 2 - Synthesize** concept/entity/procedure pages
-
-4. **Phase 3 - Finalize**:
-   ```bash
-   pnpm wiki:phase3 {slug}
-   ```"""
-
-    else:
-        return f"Unsupported file type: {p.suffix}. Use .pdf or .md files."
+Type `/run-ingest {slug}` to start automated ingestion now."""
 
 
 def run_lint() -> str:

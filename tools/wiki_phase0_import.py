@@ -22,6 +22,12 @@ def main() -> int:
     parser.add_argument("--marker-bin", default="marker_single", help="PDF normalizer command")
     parser.add_argument("--torch-device", default="cuda", help="TORCH_DEVICE value for marker_single")
     parser.add_argument(
+        "--pdf-extractor",
+        choices=["auto", "marker", "pymupdf", "pdfplumber"],
+        default="auto",
+        help="PDF extraction backend; auto tries marker first, then pymupdf",
+    )
+    parser.add_argument(
         "--reuse-imported",
         action="store_true",
         help="allow an existing immutable imported original only if its bytes match the source",
@@ -70,15 +76,26 @@ def main() -> int:
             normalized_target = normalized_dir / "source.md"
             shutil.copy2(source, normalized_target)
         elif source_type == "pdf":
-            command = marker_command(args.marker_bin, source, normalized_dir)
-            env = os.environ.copy()
-            env["TORCH_DEVICE"] = args.torch_device
-            completed = subprocess.run(command, env=env, text=True, check=False)
-            if completed.returncode != 0:
-                print(f"FAIL: marker command exited with {completed.returncode}", file=sys.stderr)
-                return completed.returncode
+            extractor = select_pdf_extractor(args.pdf_extractor, args.marker_bin)
+            if extractor == "marker":
+                command = marker_command(args.marker_bin, source, normalized_dir)
+                env = os.environ.copy()
+                env["TORCH_DEVICE"] = args.torch_device
+                completed = subprocess.run(command, env=env, text=True, check=False)
+                if completed.returncode != 0:
+                    print(f"FAIL: marker command exited with {completed.returncode}", file=sys.stderr)
+                    return completed.returncode
+            elif extractor == "pymupdf":
+                if not extract_pdf_pymupdf(source, normalized_dir):
+                    return 1
+            elif extractor == "pdfplumber":
+                if not extract_pdf_pdfplumber(source, normalized_dir):
+                    return 1
+            else:
+                print(f"FAIL: no PDF extractor available", file=sys.stderr)
+                return 1
             if not list(normalized_dir.rglob("*.md")):
-                print(f"FAIL: marker command produced no markdown under {normalized_dir}", file=sys.stderr)
+                print(f"FAIL: PDF extraction produced no markdown under {normalized_dir}", file=sys.stderr)
                 return 1
         else:
             raise AssertionError(f"unhandled source type {source_type}")
@@ -188,6 +205,122 @@ def is_relative_to(path: Path, root: Path) -> bool:
     except ValueError:
         return False
     return True
+
+
+def select_pdf_extractor(requested: str, marker_bin: str) -> str:
+    """Select the best available PDF extractor."""
+    if requested != "auto":
+        return requested
+    
+    # Try marker first (best quality)
+    if shutil.which(marker_bin):
+        return "marker"
+    
+    # Fallback to pymupdf (fast, good quality)
+    try:
+        import pymupdf  # noqa: F401
+        return "pymupdf"
+    except ImportError:
+        pass
+    
+    # Fallback to pdfplumber (slower but pure Python)
+    try:
+        import pdfplumber  # noqa: F401
+        return "pdfplumber"
+    except ImportError:
+        pass
+    
+    return "none"
+
+
+def extract_pdf_pymupdf(source: Path, output_dir: Path) -> bool:
+    """Extract PDF to markdown using PyMuPDF (fitz)."""
+    try:
+        import pymupdf
+    except ImportError:
+        print("FAIL: pymupdf not installed", file=sys.stderr)
+        return False
+    
+    try:
+        doc = pymupdf.open(source)
+        output_path = output_dir / "source.md"
+        page_count = doc.page_count
+        
+        lines = []
+        lines.append(f"# {source.stem}\n")
+        lines.append(f"*Extracted from {source.name} ({page_count} pages)*\n\n")
+        
+        for page_num in range(page_count):
+            page = doc[page_num]
+            text = page.get_text("text")
+            
+            if text.strip():
+                lines.append(f"\n---\n<!-- page {page_num + 1} -->\n\n")
+                # Clean up the text
+                cleaned = clean_extracted_text(text)
+                lines.append(cleaned)
+        
+        doc.close()
+        output_path.write_text("\n".join(lines))
+        print(f"Extracted {page_count} pages using pymupdf")
+        return True
+        
+    except Exception as e:
+        print(f"FAIL: pymupdf extraction error: {e}", file=sys.stderr)
+        return False
+
+
+def extract_pdf_pdfplumber(source: Path, output_dir: Path) -> bool:
+    """Extract PDF to markdown using pdfplumber."""
+    try:
+        import pdfplumber
+    except ImportError:
+        print("FAIL: pdfplumber not installed", file=sys.stderr)
+        return False
+    
+    try:
+        output_path = output_dir / "source.md"
+        lines = []
+        
+        with pdfplumber.open(source) as pdf:
+            lines.append(f"# {source.stem}\n")
+            lines.append(f"*Extracted from {source.name} ({len(pdf.pages)} pages)*\n\n")
+            
+            for page_num, page in enumerate(pdf.pages):
+                text = page.extract_text() or ""
+                
+                if text.strip():
+                    lines.append(f"\n---\n<!-- page {page_num + 1} -->\n\n")
+                    cleaned = clean_extracted_text(text)
+                    lines.append(cleaned)
+        
+        output_path.write_text("\n".join(lines))
+        print(f"Extracted {len(pdf.pages)} pages using pdfplumber")
+        return True
+        
+    except Exception as e:
+        print(f"FAIL: pdfplumber extraction error: {e}", file=sys.stderr)
+        return False
+
+
+def clean_extracted_text(text: str) -> str:
+    """Clean up extracted text for better markdown formatting."""
+    # Remove excessive whitespace
+    lines = text.splitlines()
+    cleaned_lines = []
+    
+    for line in lines:
+        stripped = line.strip()
+        if stripped:
+            cleaned_lines.append(stripped)
+        elif cleaned_lines and cleaned_lines[-1] != "":
+            cleaned_lines.append("")  # Keep single blank lines
+    
+    # Join and remove excessive newlines
+    result = "\n".join(cleaned_lines)
+    result = re.sub(r'\n{3,}', '\n\n', result)
+    
+    return result
 
 
 if __name__ == "__main__":

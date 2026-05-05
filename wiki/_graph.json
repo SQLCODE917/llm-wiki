@@ -2,7 +2,7 @@
   "_meta": {
     "domain": "llm-wiki",
     "version": "0.1.0",
-    "updated": "2026-05-03",
+    "updated": "2026-05-05",
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
@@ -185,6 +185,39 @@
         "wiki:sources/compound-interest"
       ]
     },
+    "wiki:concepts/destructuring-assignment": {
+      "type": "concept",
+      "path": "wiki/concepts/destructuring-assignment.md",
+      "description": "Destructuring assignment is a JavaScript feature that allows extracting values from arrays or objects into distinct variables, providing a concise syntax for accessing and assigni\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/javascript-functions": {
+      "type": "concept",
+      "path": "wiki/concepts/javascript-functions.md",
+      "description": "Functions are first-class citizens in JavaScript, enabling functional programming patterns where functions can be passed as arguments, returned from other functions, and assigned\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/logical-operators": {
+      "type": "concept",
+      "path": "wiki/concepts/logical-operators.md",
+      "description": "Logical operators in JavaScript are control-flow operators that operate on truthiness rather than strict boolean values, with short-circuit evaluation behavior.",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
     "wiki:procedures/aoe2-game-plans": {
       "type": "procedure",
       "path": "wiki/procedures/aoe2-game-plans.md",
@@ -268,6 +301,19 @@
       ],
       "depends_on": [
         "wiki:concepts/compound-interest"
+      ]
+    },
+    "wiki:sources/js-allonge": {
+      "type": "source",
+      "path": "wiki/sources/js-allonge.md",
+      "description": "JavaScript Allong\u00e9 is a comprehensive guide to functional programming concepts in JavaScript, focusing on the evolution from basic functions to advanced patterns like closures, cu\u2026",
+      "sources": [
+        "../../raw/imported/js-allonge/original.pdf"
+      ],
+      "depends_on": [
+        "wiki:concepts/destructuring-assignment",
+        "wiki:concepts/javascript-functions",
+        "wiki:concepts/logical-operators"
       ]
     }
   }

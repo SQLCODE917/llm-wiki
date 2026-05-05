@@ -3,6 +3,7 @@
 ## Sources
 
 - [Compound Interest Notes](sources/compound-interest.md) — This short source defines compound interest as interest added to principal so that future interest is calculated on the updated total. It also gives the standard compound interest…
+- [JavaScript Allongé - Six Edition](sources/js-allonge.md) — JavaScript Allongé is a comprehensive guide to functional programming concepts in JavaScript, focusing on the evolution from basic functions to advanced patterns like closures, cu…
 - [Noobs guide for AoE2](sources/aoe2-basics.md) — This document is an organized arrangement of gameplay concepts simplified and explained out. It is categorized and each category will be written in order from most important to th…
 
 ## Entities
@@ -24,6 +25,9 @@ None.
 - [AoE2 Unit Counter Interactions](concepts/aoe2-unit-counter-interactions.md) — Unit counter interactions refer to how different units in Age of Empires II interact with each other in combat, particularly in terms of which units can effectively counter others.
 - [AoE2 Water Maps](concepts/aoe2-water-maps.md) — Water maps in Age of Empires II are maps such as Islands and Team Islands where water control, transports, fishing economy, landings, and build execution shape the game.
 - [Compound Interest](concepts/compound-interest.md) — Compound interest is interest calculated on a principal amount after previous interest has been added back into that principal.
+- [Destructuring Assignment](concepts/destructuring-assignment.md) — Destructuring assignment is a JavaScript feature that allows extracting values from arrays or objects into distinct variables, providing a concise syntax for accessing and assigni…
+- [JavaScript Functions](concepts/javascript-functions.md) — Functions are first-class citizens in JavaScript, enabling functional programming patterns where functions can be passed as arguments, returned from other functions, and assigned…
+- [Logical Operators](concepts/logical-operators.md) — Logical operators in JavaScript are control-flow operators that operate on truthiness rather than strict boolean values, with short-circuit evaluation behavior.
 
 ## Procedures
 
