@@ -4,8 +4,8 @@
   "region": "us-east-1",
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 11820,
-    "outputTokens": 240,
-    "totalTokens": 12060
+    "inputTokens": 11918,
+    "outputTokens": 111,
+    "totalTokens": 12029
   }
 }

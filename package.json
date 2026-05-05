@@ -31,6 +31,7 @@
     "wiki:claim-hints": "python3 tools/wiki_claim_repair_hints.py",
     "wiki:repair-reference": "python3 tools/wiki_repair_reference.py",
     "wiki:query": "python3 tools/wiki_query.py",
+    "wiki:chat": "python3 tools/wiki_chat.py",
     "wiki:check-analysis": "python3 tools/wiki_check_analysis.py",
     "wiki:judge-analysis": "python3 tools/wiki_judge_analysis.py",
     "wiki:model-benchmark": "python3 tools/wiki_model_benchmark.py",

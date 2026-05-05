@@ -1,7 +1,7 @@
 You are answering a query from the existing LLM-Wiki. Do not edit files.
 
 Question:
-What are the key concepts in AoE2 economy?
+what are build orders?
 
 Use only the supplied wiki pages. If the supplied pages do not cover something, say `not covered in sources`.
 Answer concisely and cite the wiki pages you used with relative Markdown links.
@@ -67,12 +67,12 @@ Strategic synthesis - Explores map awareness, opening interactions, army composi
 Map and team contexts - Includes water maps, mixed maps, closed maps, team games, trading, trash-unit trade
 
 [trimmed]
-PAGE: wiki/concepts/aoe2-economy-balance.md
-TITLE: AoE2 Economy Balance
+PAGE: wiki/concepts/aoe2-build-orders.md
+TITLE: AoE2 Build Orders
 TYPE: concept
 CONTENT:
 ---
-title: AoE2 Economy Balance
+title: AoE2 Build Orders
 type: concept
 tags: []
 status: draft
@@ -80,18 +80,19 @@ last_updated: 2026-05-02
 sources: [../sources/aoe2-basics.md]
 ---
 
-# AoE2 Economy Balance
+# AoE2 Build Orders
 
-This balance of economy while producing and using your army is difficult to perfect.
+A build order is a sequence of actions that guides players to efficiently reach specific ages in the game.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 |---|---|---|---|
-| Economy balance refers to the amount of excess resources a player has. | "So what does economy balance mean, it's the amount of excess resources you are getting in." | `normalized:L310` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Wood shortages can halt the economy even when a temporary gold shortage is survivable. | "You can get away temporarily without gold, but without wood your whole economy just halts." | `normalized:L547` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Having a dock and ability to fish is beneficial for economy. | "This is why having a dock and being able to fish is extremely beneficial for your economy." | `normalized:L551` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Economy upgrades can create villager-equivalent resource advantages without stopping villager production. | "No but seriously, economy upgrades are really important. Imagine being ahead by 2 villagers?" | `normalized:L288` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| A build order is a written sequence of actions to reach specific game ages efficiently. | "So here is an explanation of what a build order is." | `normalized:L187` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Build orders help players get to feudal age efficiently. | "Build orders in themselves are fairly good guidance on how to get to the feudal age efficiently." | `normalized:L437` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Build orders are designed to minimize villager movement between resources. | "Build orders are this exact thing written out, simplified, tuned into a format where villagers move between resources as little as possible." | `normalized:L189` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Learning build orders requires paying attention to idle TC time and unit production. | "When you're learning build orders you want to pay attention to your idle TC time and the ability to produce the wanted units as soon as possible." | `normalized:L203` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Build orders should account for factors like civs, map generation, and unit usage. | "This is dependent on other factors like civs, map generation and how you are using your units from the initial timing the build order gave you." | `normalized:L201` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
 
 ## Source pages
 
@@ -230,12 +231,12 @@ Specific build orders, exact civilization picks for each water or mixed map, and
 - [AoE2 Build Orders](../concepts/aoe2-build-orders.md)
 - [AoE2 Decision Making](../concepts/aoe2-decision-making.md)
 
-PAGE: wiki/concepts/aoe2-army-composition.md
-TITLE: AoE2 Army Composition
+PAGE: wiki/concepts/aoe2-map-awareness.md
+TITLE: AoE2 Map Awareness
 TYPE: concept
 CONTENT:
 ---
-title: AoE2 Army Composition
+title: AoE2 Map Awareness
 type: concept
 tags: []
 status: draft
@@ -243,18 +244,19 @@ last_updated: 2026-05-02
 sources: [../sources/aoe2-basics.md]
 ---
 
-# AoE2 Army Composition
+# AoE2 Map Awareness
 
-Army composition refers to the selection and arrangement of different unit types to create an effective fighting force.
+Map awareness refers to a player's understanding of the current state of the map and the strategic implications of terrain and resource distribution.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 |---|---|---|---|
-| Army composition planning involves steps to transition from one stage to another in the game. | "So what does army composition planning mean? Well to get from A to B there has to be steps taken in between right?" | `normalized:L531` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Army composition planning considers unit types and their synergies for effective gameplay. | "If you start a game as Portuguese vs Mongols, you can already determine what is the ideal army composition you want to get into right?" | `normalized:L531` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Trash units are used to counter enemy army composition. | "The job of trash is to effectively attempt to counter enemy army composition, so if the enemy is playing halb and arbalest, you want skirms as it's the cost efficient trash unit." | `normalized:L525` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Army composition can be influenced by map awareness and opening interactions. | "Now you've got options like xbows, skirmishers, scorpions and even longswords you could start creating as a response to add to your army composition of full knights." | `normalized:L421` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Map awareness means being aware of what is going on in the map. | "Map awareness, what is this? It quite simply means being aware of what is going on in the map." | `normalized:L471` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Different maps have different resource distributions and strategic considerations. | "While something like Four Lakes is more of a land map with extra fish eco." | `normalized:L632` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Players need to learn specific strategies for playing on different maps. | "Also you need to learn map specifically how to play it and what civs are good for the map." | `normalized:L644` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Map-specific builds and strategies are common in Age of Empires II. | "Some of the builds are even map specific, not every mixed map plays the start even the same way." | `normalized:L634` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Playing aggression in feudal age is recommended on many maps. | "In general it is smart to play some aggression in feudal age, unless the map conditions do not allow it." | `normalized:L687` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
 
 ## Source pages
 
