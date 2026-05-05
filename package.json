@@ -18,6 +18,7 @@
     "wiki:phase3": "python3 tools/wiki_phase3_finalize.py",
     "wiki:ingest": "python3 tools/wiki_ingest.py",
     "wiki:ingest:cloud": "python3 tools/wiki_ingest_cloud.py",
+    "wiki:deep-extract": "python3 tools/wiki_deep_extract.py",
     "wiki:add-locators": "python3 tools/wiki_add_evidence_locators.py",
     "wiki:structure-proposal": "python3 tools/wiki_structure_proposal.py",
     "wiki:evidence-bank": "python3 tools/wiki_evidence_bank.py",

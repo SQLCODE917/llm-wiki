@@ -338,3 +338,9 @@
 - Synthesized pages: 3
 
 ---
+
+## [2026-05-05] ingest | Deep extraction of js-allonge
+
+- Chunks: 30, Claims: 274, Topics: 14, Pages: 11. Created: functions, es6-features, control-flow, data-types, arrays, +6 more
+
+---

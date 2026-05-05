@@ -84,3 +84,14 @@ None.
 | Closures | `../concepts/closures.md` | Closures and Function Values | must create | function values, closure examples | not created yet |
 | Functional Programming in JavaScript | `../concepts/functional-programming-js.md` | Basic Functions | should create | overall functional programming approach | not created yet |
 | Iterables and Generators | `../concepts/iterables-generators.md` | Iteration and Collections | should create | ordered collections, generators | not created yet |
+| Functions | [../concepts/functions.md](../concepts/functions.md) | Deep extraction | must create | 105 claims | created |
+| Es6 Features | [../concepts/es6-features.md](../concepts/es6-features.md) | Deep extraction | must create | 18 claims | created |
+| Control Flow | [../concepts/control-flow.md](../concepts/control-flow.md) | Deep extraction | must create | 17 claims | created |
+| Data Types | [../concepts/data-types.md](../concepts/data-types.md) | Deep extraction | must create | 25 claims | created |
+| Arrays | [../concepts/arrays.md](../concepts/arrays.md) | Deep extraction | must create | 13 claims | created |
+| Recursion | [../concepts/recursion.md](../concepts/recursion.md) | Deep extraction | must create | 11 claims | created |
+| Objects | [../concepts/objects.md](../concepts/objects.md) | Deep extraction | must create | 10 claims | created |
+| Mutation | [../concepts/mutation.md](../concepts/mutation.md) | Deep extraction | must create | 3 claims | created |
+| Variables | [../concepts/variables.md](../concepts/variables.md) | Deep extraction | must create | 3 claims | created |
+| Data Structures | [../concepts/data-structures.md](../concepts/data-structures.md) | Deep extraction | must create | 4 claims | created |
+| Iterators And Generators | [../concepts/iterators-and-generators.md](../concepts/iterators-and-generators.md) | Deep extraction | must create | 50 claims | created |

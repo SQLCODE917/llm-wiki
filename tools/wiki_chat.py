@@ -60,20 +60,23 @@ Tips:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Interactive chat REPL for llm-wiki")
+    parser = argparse.ArgumentParser(
+        description="Interactive chat REPL for llm-wiki")
     parser.add_argument(
         "--backend",
         default=os.environ.get("WIKI_MODEL_BACKEND", "bedrock"),
         help="Model backend: bedrock, openai, anthropic (default: from WIKI_MODEL_BACKEND or bedrock)",
     )
-    parser.add_argument("--timeout", type=int, default=120, help="Response timeout in seconds")
+    parser.add_argument("--timeout", type=int, default=120,
+                        help="Response timeout in seconds")
     args = parser.parse_args()
 
     # Initialize backend
     try:
         backend = get_backend(args.backend)
     except Exception as e:
-        print(f"Failed to initialize {args.backend} backend: {e}", file=sys.stderr)
+        print(
+            f"Failed to initialize {args.backend} backend: {e}", file=sys.stderr)
         return 1
 
     print(WELCOME)
@@ -110,24 +113,25 @@ def main() -> int:
 
         # Regular chat message
         conversation.append({"role": "user", "content": user_input})
-        
+
         # Build prompt with conversation history
         prompt = build_chat_prompt(system_context, conversation)
-        
+
         print("Thinking...", end="", flush=True)
         config = ModelConfig(
             worktree=Path.cwd(),
             prefix="chat",
             timeout=args.timeout,
         )
-        
+
         try:
             response = backend.run(prompt, config)
             print("\r" + " " * 12 + "\r", end="")  # Clear "Thinking..."
-            
+
             if response.success:
                 print(response.output)
-                conversation.append({"role": "assistant", "content": response.output})
+                conversation.append(
+                    {"role": "assistant", "content": response.output})
             else:
                 print(f"Error: {response.error}")
         except Exception as e:
@@ -139,15 +143,15 @@ def main() -> int:
 def load_system_context() -> str:
     """Load AGENTS.md and wiki index for system context."""
     parts = []
-    
+
     agents_path = Path("AGENTS.md")
     if agents_path.exists():
         parts.append(f"# Operating Rules\n\n{agents_path.read_text()}")
-    
+
     index_path = Path("wiki/index.md")
     if index_path.exists():
         parts.append(f"# Wiki Index\n\n{index_path.read_text()}")
-    
+
     return "\n\n---\n\n".join(parts)
 
 
@@ -158,9 +162,9 @@ def build_chat_prompt(system_context: str, conversation: list[dict[str, str]]) -
     for msg in conversation[-10:]:  # Keep last 10 messages for context
         role = msg["role"].upper()
         history_parts.append(f"{role}: {msg['content']}")
-    
+
     history = "\n\n".join(history_parts)
-    
+
     return f"""You are an interactive wiki maintenance assistant. Help the user query, maintain, and update the llm-wiki.
 
 {system_context}
@@ -216,22 +220,23 @@ def run_query(question: str, backend, timeout: int) -> str:
     """Run a wiki query using the query tool's page selection."""
     try:
         from wiki_query import select_pages, render_prompt
-        
+
         hits = select_pages(question, max_pages=6)
         if not hits:
             return "No relevant wiki pages found for that question."
-        
+
         prompt = render_prompt(question, hits)
         config = ModelConfig(
             worktree=Path.cwd(),
             prefix="query",
             timeout=timeout,
         )
-        
+
         response = backend.run(prompt, config)
         if response.success:
             # Add page citations
-            pages_used = "\n".join(f"  - {hit.path.as_posix()}" for hit in hits)
+            pages_used = "\n".join(
+                f"  - {hit.path.as_posix()}" for hit in hits)
             return f"{response.output}\n\n📚 Pages consulted:\n{pages_used}"
         else:
             return f"Query failed: {response.error}"
@@ -244,10 +249,10 @@ def run_ingest_guide(path: str) -> str:
     p = Path(path)
     if not p.exists():
         return f"File not found: {path}"
-    
+
     # Derive slug from filename
     slug = p.stem.lower().replace(" ", "-").replace("_", "-")
-    
+
     # Ask if user wants to run automated ingest
     return f"""📥 Ready to ingest: {path}
 Slug: {slug}
@@ -269,7 +274,7 @@ Type `/run-ingest {slug}` to start automated ingestion now."""
 def run_lint() -> str:
     """Run the wiki linter and return summary."""
     import subprocess
-    
+
     try:
         result = subprocess.run(
             ["python3", "tools/wiki_lint.py"],
@@ -277,7 +282,7 @@ def run_lint() -> str:
             text=True,
             timeout=60,
         )
-        
+
         # Read the report
         report_path = Path("wiki/_linter-report.md")
         if report_path.exists():
@@ -296,7 +301,7 @@ def run_lint() -> str:
 def run_status() -> str:
     """Show wiki health status summary."""
     status_parts = []
-    
+
     # Check index
     index_path = Path("wiki/index.md")
     if index_path.exists():
@@ -305,7 +310,7 @@ def run_status() -> str:
         status_parts.append(f"📑 Index: {page_count} pages listed")
     else:
         status_parts.append("❌ Index: missing")
-    
+
     # Check graph
     graph_path = Path("wiki/_graph.json")
     if graph_path.exists():
@@ -318,7 +323,7 @@ def run_status() -> str:
             status_parts.append("⚠️ Graph: exists but unreadable")
     else:
         status_parts.append("❌ Graph: missing")
-    
+
     # Check linter report
     linter_path = Path("wiki/_linter-report.md")
     if linter_path.exists():
@@ -328,14 +333,14 @@ def run_status() -> str:
         status_parts.append(f"🔍 Last lint: {fails} FAILs, {warns} WARNs")
     else:
         status_parts.append("⚠️ Linter: no report (run /lint)")
-    
+
     # Check grounding report
     grounding_path = Path("wiki/_grounding-report.md")
     if grounding_path.exists():
         status_parts.append("✅ Grounding: report exists")
     else:
         status_parts.append("⚠️ Grounding: no report")
-    
+
     # Count wiki pages by type
     page_counts: dict[str, int] = {}
     for subdir in ["sources", "concepts", "entities", "procedures", "references", "analyses"]:
@@ -344,11 +349,11 @@ def run_status() -> str:
             count = len(list(dir_path.glob("*.md")))
             if count > 0:
                 page_counts[subdir] = count
-    
+
     if page_counts:
         counts_str = ", ".join(f"{k}: {v}" for k, v in page_counts.items())
         status_parts.append(f"📄 Pages: {counts_str}")
-    
+
     return "📊 Wiki Status\n\n" + "\n".join(status_parts)
 
 
