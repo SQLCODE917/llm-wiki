@@ -1,6 +1,6 @@
 # Wiki Linter Report
 
-Generated: 2026-05-03
+Generated: 2026-05-05
 
 ## Summary
 

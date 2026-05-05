@@ -12,6 +12,8 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
+from wiki_common import log_context_stats
+
 
 IGNORE_NAMES = {
     ".git",
@@ -287,9 +289,13 @@ def run_codex(
     timeout: int,
     prefix: str,
 ) -> tuple[int | None, list[Path]]:
+    log_context_stats(prompt, label=f"{prefix} prompt")
     stdout_path = worktree / f"{prefix}-stdout.log"
     stderr_path = worktree / f"{prefix}-stderr.log"
     last_message_path = worktree / f"{prefix}-last-message.md"
+    # Also save the prompt for debugging
+    prompt_path = worktree / f"{prefix}-prompt.md"
+    prompt_path.write_text(prompt)
     command = [
         codex_bin,
         "exec",
@@ -318,10 +324,10 @@ def run_codex(
                 stderr=stderr,
                 timeout=timeout,
             )
-            return completed.returncode, [stdout_path, stderr_path, last_message_path]
+            return completed.returncode, [prompt_path, stdout_path, stderr_path, last_message_path]
         except subprocess.TimeoutExpired:
             stderr.write(f"\nTIMEOUT after {timeout} seconds\n")
-            return None, [stdout_path, stderr_path, last_message_path]
+            return None, [prompt_path, stdout_path, stderr_path, last_message_path]
 
 
 def copy_repo(src: Path, dst: Path) -> None:
