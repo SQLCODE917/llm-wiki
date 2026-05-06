@@ -589,7 +589,7 @@ def synthesize_single_page(
     timeout: int = 180,
 ) -> Path | None:
     """Synthesize a single wiki page from claims.
-    
+
     The LLM writes a 3-column table (Claim | Locator | Source).
     Evidence cells are filled deterministically from the normalized source.
     """
@@ -637,7 +637,8 @@ def synthesize_single_page(
 
     # Fill evidence cells deterministically from locators
     if normalized_source.exists():
-        source_lines = normalized_source.read_text(errors="ignore").splitlines()
+        source_lines = normalized_source.read_text(
+            errors="ignore").splitlines()
         content, changes = fill_evidence_in_page(content, source_lines)
         if changes:
             print(f"    Filled {len(changes)} evidence cells")
@@ -923,7 +924,8 @@ def create_source_page_from_topics(
             # Extract key terms from claim text
             words = re.findall(r'\b[a-z]{4,}\b', c.claim.lower())
             keywords.update(words[:2])
-        keyword_summary = ', '.join(sorted(keywords)[:3]) if keywords else 'various concepts'
+        keyword_summary = ', '.join(
+            sorted(keywords)[:3]) if keywords else 'various concepts'
         evidence_basis = f"{count} claims covering {keyword_summary}"
 
         related_rows.append(

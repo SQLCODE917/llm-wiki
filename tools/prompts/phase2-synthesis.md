@@ -51,10 +51,10 @@ CRITICAL FORMAT REQUIREMENTS:
 1. **Cite evidence by ID**: You write a **2-column table**. Cite evidence by ID (e.g., `[E01]`). The full table with evidence text, locators, and source links is rendered automatically.
 
    ```md
-   | Claim | Evidence |
-   | ----- | -------- |
-   | Your synthesized insight in your own words. | [E01] |
-   | Another insight you synthesized. | [E02] |
+   | Claim                                       | Evidence |
+   | ------------------------------------------- | -------- |
+   | Your synthesized insight in your own words. | [E01]    |
+   | Another insight you synthesized.            | [E02]    |
    ```
 
 2. **Synthesize claims**: Claims must be YOUR interpretation of what the source teaches. Do not copy the evidence text into claims.
@@ -72,7 +72,7 @@ CRITICAL FORMAT REQUIREMENTS:
    type: concept
    tags: []
    status: draft
-   last_updated: {{current_date}}
+   last_updated: { { current_date } }
    sources:
      - ../sources/{{slug}}.md
    ---
@@ -94,9 +94,9 @@ Additional rules:
 - `## Source-backed details` must contain a **2-column** Markdown table:
 
 ```md
-| Claim | Evidence |
-| ----- | -------- |
-| Concrete reusable insight in your own words. | [E01] |
+| Claim                                        | Evidence |
+| -------------------------------------------- | -------- |
+| Concrete reusable insight in your own words. | [E01]    |
 ```
 
 - Include at least 3 rows per synthesized page.

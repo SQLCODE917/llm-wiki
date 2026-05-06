@@ -82,7 +82,7 @@ class ModelBackend(ABC):
 
     def _build_system_prompt(self, config: ModelConfig) -> str:
         """Build system prompt based on config.system_prompt_style.
-        
+
         Supported styles:
         - "full": Complete AGENTS.md (~7K tokens)
         - "synthesis": Wiki page synthesis (~800 tokens)
@@ -92,7 +92,7 @@ class ModelBackend(ABC):
         - "judge": Claim judging (~400 tokens)
         """
         style = config.system_prompt_style
-        
+
         # Map style to prompt file
         prompt_files = {
             "synthesis": "tools/prompts/system-synthesis.md",
@@ -101,14 +101,14 @@ class ModelBackend(ABC):
             "query": "tools/prompts/system-query.md",
             "judge": "tools/prompts/system-judge.md",
         }
-        
+
         if style in prompt_files:
             prompt_path = Path(prompt_files[style])
             if config.worktree:
                 alt_path = config.worktree / prompt_files[style]
                 if alt_path.exists():
                     prompt_path = alt_path
-            
+
             if prompt_path.exists():
                 prompt_content = prompt_path.read_text()
             else:
@@ -128,7 +128,7 @@ Working directory: {config.worktree}
         agents_path = config.worktree / "AGENTS.md"
         if not agents_path.exists():
             agents_path = Path("AGENTS.md")
-        
+
         if agents_path.exists():
             return agents_path.read_text()
         return "You are a wiki maintenance agent."

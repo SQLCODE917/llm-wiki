@@ -667,12 +667,12 @@ def build_evidence_bank(
     slug: str = "",
 ) -> str | EvidenceBankResult:
     """Build evidence bank for synthesis prompt.
-    
+
     If use_ids is True (default), returns an EvidenceBankResult with:
     - prompt_text: ID-based format for efficient model output
     - items: dict mapping IDs to EvidenceItem objects
     - by_locator: dict mapping locators to EvidenceItem objects
-    
+
     If use_ids is False, returns the legacy string format.
     """
     source_path = normalized_source if normalized_source.is_absolute() else worktree / \
@@ -685,23 +685,23 @@ def build_evidence_bank(
                 by_locator={},
             )
         return "No evidence bank available; normalized source was not found."
-    
+
     source_text = source_path.read_text(errors="ignore")
     lines = source_text.splitlines()
-    
+
     # Only need chunks if we're not using extraction claims
     chunks = None if extraction_claims else source_chunks(source_text)
-    
+
     sections: list[str] = []
     items: dict[str, EvidenceItem] = {}
     by_locator: dict[str, EvidenceItem] = {}
     evidence_id = 1
-    
+
     for candidate in selected_candidates:
         query = evidence_query(candidate)
         ranges = source_ranges_for_candidate(candidate_path(
             candidate), lines, candidate_title(candidate))
-        
+
         # Try to get claims from extraction state by matching topic name
         matched_claims = None
         if extraction_claims:
@@ -711,14 +711,14 @@ def build_evidence_bank(
                 c for c in extraction_claims
                 if c.get("topic", "").lower() == candidate_title_text.lower()
             ]
-        
+
         sections.append(f"### {query}")
         if ranges and not use_ids:
             sections.append(
                 f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
-        
+
         evidence_items: list[tuple[str, str]] = []  # (locator, text)
-        
+
         if matched_claims:
             # Use full evidence from extraction state (preferred)
             for claim in matched_claims[:10]:
@@ -735,10 +735,11 @@ def build_evidence_bank(
                 chunks = source_chunks(source_text)
             candidate_chunks = chunks_in_ranges(
                 chunks, ranges) if ranges else chunks
-            snippets = snippets_for_candidate(query, candidate_chunks, limit=10)
+            snippets = snippets_for_candidate(
+                query, candidate_chunks, limit=10)
             for snippet in snippets:
                 evidence_items.append((snippet.locator, snippet.text))
-        
+
         if not evidence_items:
             sections.append("- not covered in sources")
         elif use_ids:
@@ -746,23 +747,24 @@ def build_evidence_bank(
             for locator, text in evidence_items:
                 eid = f"E{evidence_id:02d}"
                 evidence_id += 1
-                
+
                 # Truncate for prompt display
                 display_text = text[:150] + "..." if len(text) > 150 else text
                 sections.append(f'[{eid}] {locator} "{display_text}"')
-                
-                item = EvidenceItem(id=eid, locator=locator, text=text, candidate=query)
+
+                item = EvidenceItem(id=eid, locator=locator,
+                                    text=text, candidate=query)
                 items[eid] = item
                 by_locator[locator] = item
         else:
             # Legacy format
             for locator, text in evidence_items:
                 sections.append(f"- `{locator}` - {text}")
-        
+
         sections.append("")
-    
+
     prompt_text = "\n".join(sections).rstrip()
-    
+
     if use_ids:
         return EvidenceBankResult(
             prompt_text=prompt_text,

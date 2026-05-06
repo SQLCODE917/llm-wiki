@@ -8,10 +8,12 @@ Source page to read and update: `wiki/sources/{{slug}}.md`
 Normalized source to consult: `{{normalized_source}}`
 
 Allowed writes:
+
 - `wiki/sources/{{slug}}.md`
 - the single selected reference page listed below
 
 Forbidden writes:
+
 - `raw/imported/**`
 - `raw/normalized/**`
 - `wiki/index.md`
@@ -32,6 +34,7 @@ Forbidden writes:
 Do not update index, graph, or log. This is Phase 2 only.
 
 Task:
+
 - Existing synthesized pages for this source that should remain linked:
 
 {{existing_pages}}
@@ -49,6 +52,7 @@ Locators available (evidence will be filled automatically):
 - Do not use locators from unrelated sections.
 
 Reference-page rules:
+
 - The selected page must have `type: reference`.
 - The page should contain reusable lookup facts, not advice invented from general game knowledge.
 - Do not infer item categories, priority tiers, formulas, timings, costs, or upgrade names that the evidence does not state.
@@ -56,6 +60,7 @@ Reference-page rules:
 - Each reference data row must be a source-backed fact, not a model-generated classification.
 
 The selected page must include:
+
 - YAML frontmatter with `type: reference`, `status: draft`, `last_updated: {{current_date}}`, and `sources` linking to `../sources/{{slug}}.md`.
 - `# Title`
 - One short summary paragraph.
@@ -68,20 +73,21 @@ CRITICAL: Write **4-column** tables for reference data and **3-column** tables f
 `## Reference data` must contain this exact table shape:
 
 ```md
-| Item | Supported fact | Locator | Source |
-|---|---|---|---|
+| Item                     | Supported fact                             | Locator          | Source                                 |
+| ------------------------ | ------------------------------------------ | ---------------- | -------------------------------------- |
 | Source-native item name. | Narrow fact synthesized in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
 ```
 
 `## Source-backed details` must contain this exact table shape:
 
 ```md
-| Claim | Locator | Source |
-|---|---|---|
+| Claim                                      | Locator          | Source                                 |
+| ------------------------------------------ | ---------------- | -------------------------------------- |
 | Concrete reusable claim in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
 ```
 
 Rules:
+
 - Include at least 2 data rows in `## Reference data`.
 - Include at least 3 rows in `## Source-backed details`.
 - Do NOT write Evidence columns - they are filled automatically from locators.
@@ -90,6 +96,7 @@ Rules:
 - Claim and supported-fact cells must not use weak generic words: important, crucial, fundamental, essential, success.
 
 Source-page update rules:
+
 - After this run, the source should have {{expected_total_pages}} synthesized pages total: existing pages plus this selected page.
 - Replace only the candidate row for the page you actually created.
 - Keep not-yet-created candidate pages as code-formatted paths.
@@ -102,6 +109,7 @@ Source-page update rules:
 ```
 
 Cross-link rules:
+
 - Cross-links may point only to pages that already exist or pages created in this phase.
 - Each body link back to the source page must use a relative Markdown link.
 - Do not Markdown-link to candidate pages that remain uncreated.

@@ -19,6 +19,7 @@ You are answering queries from the llm-wiki knowledge base.
 ## Evidence Locators (if saving analysis)
 
 When creating a saved analysis page:
+
 - Use `normalized:L12` for single-source answers
 - Use `<slug>:normalized:L12` when citing multiple sources
 
@@ -27,6 +28,7 @@ When creating a saved analysis page:
 For simple queries: Direct prose answer with inline citations.
 
 For analysis queries: Use structured markdown:
+
 ```markdown
 # Topic
 

@@ -88,7 +88,7 @@ def main() -> int:
         return 2
 
     candidate = parse_candidate(args.candidate)
-    
+
     # Load extraction state claims if provided
     extraction_claims = None
     if args.extraction_state:
@@ -98,15 +98,17 @@ def main() -> int:
             state_data = json.loads(extraction_state_path.read_text())
             extraction_claims = state_data.get("claims", [])
         else:
-            print(f"WARN: extraction state not found: {extraction_state_path}", file=sys.stderr)
-    
+            print(
+                f"WARN: extraction state not found: {extraction_state_path}", file=sys.stderr)
+
     # Use backend name in temp directory when not using codex
-    backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND") or "codex"
+    backend_name = args.backend or os.environ.get(
+        "WIKI_MODEL_BACKEND") or "codex"
     if backend_name != "codex":
         dir_label = backend_name
     else:
         dir_label = candidate.safe_label
-    
+
     worktree = Path(tempfile.mkdtemp(
         prefix=f"llm-wiki-phase2-single-{args.slug}-{dir_label}.", dir="/tmp"))
     try:
@@ -232,9 +234,9 @@ def run_with_backend_json(
     expected_path: str,
 ) -> tuple[int | None, list[Path], WikiPageSchema | None]:
     """Run synthesis with JSON output mode.
-    
+
     Model outputs JSON, we parse and render to markdown deterministically.
-    
+
     Returns:
         Tuple of (returncode, log_paths, parsed_schema)
     """
@@ -270,75 +272,78 @@ def run_with_backend_json(
     # Parse JSON and render markdown
     markdown, page_schema, issues = parse_llm_response(
         response.output, evidence_bank, slug)
-    
+
     # Log validation issues
     errors = [i for i in issues if i.severity == "error"]
     warnings = [i for i in issues if i.severity == "warning"]
-    
+
     if errors:
         print(f"  Schema errors: {len(errors)}")
         for err in errors:
             print(f"    - {err.field}: {err.message}")
         return 1, log_paths, page_schema
-    
+
     if warnings:
         print(f"  Schema warnings: {len(warnings)}")
         for warn in warnings:
             print(f"    - {warn.field}: {warn.message}")
-    
+
     if not markdown:
         print("  Failed to render markdown from JSON")
         return 1, log_paths, page_schema
-    
+
     # Write the rendered markdown
     repo_path = source_relative_to_repo(expected_path)
     full_path = worktree / repo_path
     full_path.parent.mkdir(parents=True, exist_ok=True)
     full_path.write_text(markdown)
     print(f"  Rendered {repo_path} from JSON schema")
-    
+
     return 0, log_paths, page_schema
 
 
 def fix_synthesized_evidence(
-    worktree: Path, 
-    page_path: str, 
+    worktree: Path,
+    page_path: str,
     normalized_source: Path,
     evidence_bank: EvidenceBankResult | None = None,
     slug: str = "",
 ) -> int:
     """Fill evidence cells deterministically from locators or evidence IDs.
-    
+
     If evidence_bank is provided (with ID mapping), uses expand_evidence_ids
     for 2-column tables: | Claim | [E01] | -> | Claim | Evidence | Locator | Source |
-    
+
     Otherwise falls back to fill_evidence_in_page for 3-column tables:
     | Claim | Locator | Source | -> | Claim | Evidence | Locator | Source |
-    
+
     Returns number of evidence cells filled.
     """
     full_page_path = worktree / page_path
     if not full_page_path.exists():
         return 0
-    
+
     page_text = full_page_path.read_text()
-    
+
     # Try evidence ID expansion first if we have a bank
     if evidence_bank and isinstance(evidence_bank, EvidenceBankResult) and evidence_bank.items:
-        filled_text, changes = expand_evidence_ids(page_text, evidence_bank, slug)
+        filled_text, changes = expand_evidence_ids(
+            page_text, evidence_bank, slug)
         if changes:
             full_page_path.write_text(filled_text)
-            print(f"Expanded {len(changes)} evidence ID(s) in {page_path}", file=sys.stderr)
+            print(
+                f"Expanded {len(changes)} evidence ID(s) in {page_path}", file=sys.stderr)
             return len(changes)
-    
+
     # Fall back to locator-based filling
     source_lines = normalized_source.read_text().splitlines()
     filled_text, changes = fill_evidence_in_page(page_text, source_lines)
-    
+
     if changes:
         full_page_path.write_text(filled_text)
-        print(f"Filled {len(changes)} evidence cell(s) in {page_path}", file=sys.stderr)
-    
+        print(
+            f"Filled {len(changes)} evidence cell(s) in {page_path}", file=sys.stderr)
+
     return len(changes)
 
 
@@ -373,7 +378,7 @@ def run_single_candidate(
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
     evidence_bank = build_evidence_bank(
-        worktree, normalized_source, [selected_candidate], 
+        worktree, normalized_source, [selected_candidate],
         extraction_claims=extraction_claims, use_ids=True, slug=slug)
     selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
@@ -385,7 +390,8 @@ def run_single_candidate(
         existing_paths=existing_paths,
         selected_candidates=[selected_candidate],
         expected_total_pages=expected_total_pages,
-        evidence_bank=evidence_bank.prompt_text if isinstance(evidence_bank, EvidenceBankResult) else evidence_bank,
+        evidence_bank=evidence_bank.prompt_text if isinstance(
+            evidence_bank, EvidenceBankResult) else evidence_bank,
         range_page_args=range_page_args(selected_paths),
     )
 
@@ -407,7 +413,8 @@ def run_single_candidate(
             prompt=prompt,
             timeout=timeout,
             prefix="codex-initial",
-            evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
+            evidence_bank=evidence_bank if isinstance(
+                evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
             slug=slug,
             expected_path=selected_candidate.path,
         )
@@ -430,15 +437,16 @@ def run_single_candidate(
         )
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
-    
+
     # Skip evidence expansion for JSON output mode (already rendered in markdown)
     if not json_output:
         fix_synthesized_evidence(
             worktree, selected_repo_path, worktree / normalized_source,
-            evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+            evidence_bank=evidence_bank if isinstance(
+                evidence_bank, EvidenceBankResult) else None,
             slug=slug,
         )
-    
+
     validation_returncode = run_validation(
         worktree,
         slug,
@@ -498,14 +506,15 @@ def run_single_candidate(
             )
         codex_returncodes.append(returncode)
         log_paths.extend(paths)
-        
+
         # Expand evidence IDs or fill evidence from locators before validation
         fix_synthesized_evidence(
             worktree, selected_repo_path, worktree / normalized_source,
-            evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+            evidence_bank=evidence_bank if isinstance(
+                evidence_bank, EvidenceBankResult) else None,
             slug=slug,
         )
-        
+
         validation_returncode = run_validation(
             worktree,
             slug,
@@ -570,14 +579,15 @@ def run_single_candidate(
                 )
             codex_returncodes.append(returncode)
             log_paths.extend(paths)
-            
+
             # Expand evidence IDs or fill evidence from locators before validation
             fix_synthesized_evidence(
                 worktree, selected_repo_path, worktree / normalized_source,
-                evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+                evidence_bank=evidence_bank if isinstance(
+                    evidence_bank, EvidenceBankResult) else None,
                 slug=slug,
             )
-            
+
             validation_returncode = run_validation(
                 worktree,
                 slug,

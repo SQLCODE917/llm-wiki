@@ -19,7 +19,8 @@ from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, p
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
 PAGE_VERDICTS = {"useful", "too_broad", "duplicate_or_overlap", "unclear"}
-WEAK_CLAIM_WORDS = {"important", "crucial", "fundamental", "essential", "success"}
+WEAK_CLAIM_WORDS = {"important", "crucial",
+                    "fundamental", "essential", "success"}
 
 
 @dataclass(frozen=True)
@@ -40,18 +41,24 @@ class DeterministicFlag:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Judge whether synthesized page claims follow from cited evidence.")
+    parser = argparse.ArgumentParser(
+        description="Judge whether synthesized page claims follow from cited evidence.")
     parser.add_argument("page", help="wiki synthesized page to judge")
-    parser.add_argument("--normalized-source", required=True, help="normalized source markdown file")
-    parser.add_argument("--backend", help="model backend: codex, bedrock, openai, anthropic (default: WIKI_MODEL_BACKEND env or codex)")
-    parser.add_argument("--candidate", help="(codex backend only) profile, e.g. local-4090 or local-4090:model")
-    parser.add_argument("--codex-bin", default="codex", help="(deprecated, use --backend codex)")
+    parser.add_argument("--normalized-source", required=True,
+                        help="normalized source markdown file")
+    parser.add_argument(
+        "--backend", help="model backend: codex, bedrock, openai, anthropic (default: WIKI_MODEL_BACKEND env or codex)")
+    parser.add_argument(
+        "--candidate", help="(codex backend only) profile, e.g. local-4090 or local-4090:model")
+    parser.add_argument("--codex-bin", default="codex",
+                        help="(deprecated, use --backend codex)")
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--context-lines", type=int, default=2)
     parser.add_argument("--output", default="wiki/_claim-judge-report.md")
     parser.add_argument("--fail-on-issues", action="store_true")
     parser.add_argument("--deterministic-only", action="store_true")
-    parser.add_argument("--batch", action="store_true", help="judge all claims in one model call instead of one call per row")
+    parser.add_argument("--batch", action="store_true",
+                        help="judge all claims in one model call instead of one call per row")
     args = parser.parse_args()
 
     page = Path(args.page)
@@ -60,7 +67,8 @@ def main() -> int:
         print(f"FAIL: missing page {page}", file=sys.stderr)
         return 2
     if not normalized_source.exists():
-        print(f"FAIL: missing normalized source {normalized_source}", file=sys.stderr)
+        print(
+            f"FAIL: missing normalized source {normalized_source}", file=sys.stderr)
         return 2
 
     source_lines = normalized_source.read_text(errors="ignore").splitlines()
@@ -72,13 +80,15 @@ def main() -> int:
 
     if not args.deterministic_only:
         # Determine backend
-        backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND", "codex")
-        
+        backend_name = args.backend or os.environ.get(
+            "WIKI_MODEL_BACKEND", "codex")
+
         # For codex backend, require --candidate for backward compatibility
         if backend_name == "codex" and not args.candidate:
-            print("FAIL: pass --candidate for codex backend, or use --backend <other>", file=sys.stderr)
+            print(
+                "FAIL: pass --candidate for codex backend, or use --backend <other>", file=sys.stderr)
             return 2
-        
+
         if args.batch:
             prompt = render_prompt(page, rows, siblings)
             raw, returncode = run_judge_model(
@@ -107,7 +117,8 @@ def main() -> int:
                 candidate=args.candidate,
             )
 
-    report = render_report(page, normalized_source, rows, flags, siblings, judge_result, judge_error)
+    report = render_report(page, normalized_source, rows,
+                           flags, siblings, judge_result, judge_error)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(report)
@@ -146,11 +157,13 @@ def evidence_rows(page: Path, source_lines: list[str], *, context_lines: int) ->
                 evidence=clean_evidence_excerpt(evidence),
                 locator=strip_markdown(locator).strip(),
                 source=source,
-                context=context_for_locator(source_lines, locator, context_lines=context_lines),
+                context=context_for_locator(
+                    source_lines, locator, context_lines=context_lines),
             )
         )
     if page_type == "reference":
-        rows.extend(reference_data_rows(fm.body, source_lines, context_lines=context_lines, start_row=len(rows) + 1))
+        rows.extend(reference_data_rows(fm.body, source_lines,
+                    context_lines=context_lines, start_row=len(rows) + 1))
     return rows
 
 
@@ -181,7 +194,7 @@ def reference_data_rows(
 
     rows: list[EvidenceRow] = []
     row_number = start_row
-    for cells in table[header_index + 1 :]:
+    for cells in table[header_index + 1:]:
         if is_separator_row(cells) or len(cells) != len(header):
             continue
         evidence = clean_evidence_excerpt(cells[evidence_index])
@@ -203,7 +216,8 @@ def reference_data_rows(
                 evidence=evidence,
                 locator=locator,
                 source="Reference data",
-                context=context_for_locator(source_lines, locator, context_lines=context_lines),
+                context=context_for_locator(
+                    source_lines, locator, context_lines=context_lines),
             )
         )
         row_number += 1
@@ -215,19 +229,23 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
     for row in rows:
         parsed = parse_locator(row.locator)
         if parsed is None:
-            flags.append(DeterministicFlag(row.row, "fail", "locator is not parseable"))
+            flags.append(DeterministicFlag(
+                row.row, "fail", "locator is not parseable"))
             continue
         start, end = parsed
         if start < 1 or end > len(source_lines) or end < start:
-            flags.append(DeterministicFlag(row.row, "fail", "locator is outside normalized source"))
+            flags.append(DeterministicFlag(row.row, "fail",
+                         "locator is outside normalized source"))
             continue
-        located_text = "\n".join(source_lines[start - 1 : end])
+        located_text = "\n".join(source_lines[start - 1: end])
         if normalize_for_search(row.evidence) not in normalize_for_search(located_text):
-            flags.append(DeterministicFlag(row.row, "fail", "evidence is not found in locator range"))
+            flags.append(DeterministicFlag(row.row, "fail",
+                         "evidence is not found in locator range"))
         if len(re.findall(r"[A-Za-z0-9']+", row.claim)) < 5:
             flags.append(DeterministicFlag(row.row, "warn", "claim is short"))
         if normalize_for_search(row.claim) == normalize_for_search(row.evidence):
-            flags.append(DeterministicFlag(row.row, "warn", "claim repeats evidence exactly"))
+            flags.append(DeterministicFlag(row.row, "warn",
+                         "claim repeats evidence exactly"))
         weak_words = sorted(WEAK_CLAIM_WORDS & set(content_tokens(row.claim)))
         if weak_words:
             flags.append(
@@ -237,13 +255,15 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
                     "claim uses weak generic words: " + ", ".join(weak_words),
                 )
             )
-        unsupported = sorted(set(content_tokens(row.claim)) - set(content_tokens(row.evidence + " " + row.context)))
+        unsupported = sorted(set(content_tokens(row.claim)) -
+                             set(content_tokens(row.evidence + " " + row.context)))
         if len(unsupported) >= 8:
             flags.append(
                 DeterministicFlag(
                     row.row,
                     "fail",
-                    "claim likely overreaches cited evidence/context; unsupported terms: " + ", ".join(unsupported[:10]),
+                    "claim likely overreaches cited evidence/context; unsupported terms: " +
+                    ", ".join(unsupported[:10]),
                 )
             )
     if not rows:
@@ -373,22 +393,27 @@ def run_row_judges(
     errors: list[str] = []
     for row in rows:
         prompt = render_row_prompt(page, row)
-        raw, returncode = run_local_judge(codex_bin, candidate, prompt, timeout)
+        raw, returncode = run_local_judge(
+            codex_bin, candidate, prompt, timeout)
         raw_outputs.append(f"ROW {row.row}\n{raw}")
         if returncode != 0:
-            errors.append(f"row {row.row}: local judge exited with status {returncode}")
+            errors.append(
+                f"row {row.row}: local judge exited with status {returncode}")
             continue
         try:
             parsed = parse_row_json_result(raw, allow_text_recovery=False)
         except ValueError as error:
             retry_prompt = render_row_retry_prompt(row, raw, str(error))
-            retry_raw, retry_returncode = run_local_judge(codex_bin, candidate, retry_prompt, timeout)
+            retry_raw, retry_returncode = run_local_judge(
+                codex_bin, candidate, retry_prompt, timeout)
             raw_outputs.append(f"ROW {row.row} RETRY\n{retry_raw}")
             if retry_returncode == 0:
                 try:
-                    parsed = parse_row_json_result(retry_raw, allow_text_recovery=False)
+                    parsed = parse_row_json_result(
+                        retry_raw, allow_text_recovery=False)
                 except ValueError as retry_error:
-                    recovered = row_verdict_from_text("\n".join([raw, retry_raw]))
+                    recovered = row_verdict_from_text(
+                        "\n".join([raw, retry_raw]))
                     if recovered is None:
                         errors.append(f"row {row.row}: {retry_error}")
                         continue
@@ -398,7 +423,8 @@ def run_row_judges(
             else:
                 recovered = row_verdict_from_text(raw)
                 if recovered is None:
-                    errors.append(f"row {row.row}: retry exited with status {retry_returncode} after {error}")
+                    errors.append(
+                        f"row {row.row}: retry exited with status {retry_returncode} after {error}")
                     continue
                 parsed = recovered
         parsed["row"] = row.row
@@ -534,10 +560,10 @@ def run_judge_model(
     candidate: str | None = None,
 ) -> tuple[str, int]:
     """Run judge using the specified backend.
-    
+
     For codex backend, uses run_local_judge for backward compatibility.
     For other backends, uses the model backend abstraction.
-    
+
     Returns:
         Tuple of (output_text, returncode). returncode 0 means success.
     """
@@ -545,22 +571,22 @@ def run_judge_model(
         if not candidate:
             return "ERROR: codex backend requires --candidate", 1
         return run_local_judge(codex_bin, candidate, prompt, timeout)
-    
+
     # Use model backend abstraction for non-codex backends
     try:
         from wiki_model_backend import get_backend, ModelConfig
     except ImportError as e:
         return f"ERROR: failed to import model backend: {e}", 1
-    
+
     try:
         backend = get_backend(backend_name)
     except ValueError as e:
         return f"ERROR: {e}", 1
-    
+
     # Create a temporary directory for the model config
     with tempfile.TemporaryDirectory(prefix="llm-wiki-judge.") as tmp:
         tmp_path = Path(tmp)
-        
+
         config = ModelConfig(
             worktree=tmp_path,
             prefix="judge",
@@ -568,13 +594,13 @@ def run_judge_model(
             save_debug_files=True,
             system_prompt_style="judge",
         )
-        
+
         response = backend.run(prompt, config)
-        
+
         if not response.success:
             error_msg = response.error or "unknown error"
             return f"ERROR: {error_msg}", 1
-        
+
         return response.output, 0
 
 
@@ -591,7 +617,7 @@ def run_row_judges_with_backend(
     results: list[dict[str, Any]] = []
     raw_outputs: list[str] = []
     errors: list[str] = []
-    
+
     for row in rows:
         prompt = render_row_prompt(page, row)
         raw, returncode = run_judge_model(
@@ -602,11 +628,12 @@ def run_row_judges_with_backend(
             candidate=candidate,
         )
         raw_outputs.append(f"ROW {row.row}\n{raw}")
-        
+
         if returncode != 0:
-            errors.append(f"row {row.row}: judge exited with status {returncode}")
+            errors.append(
+                f"row {row.row}: judge exited with status {returncode}")
             continue
-        
+
         try:
             parsed = parse_row_json_result(raw, allow_text_recovery=False)
         except ValueError as error:
@@ -616,10 +643,10 @@ def run_row_judges_with_backend(
                 errors.append(f"row {row.row}: {error}")
                 continue
             parsed = recovered
-        
+
         parsed["row"] = row.row
         results.append(parsed)
-    
+
     page_verdict = "useful"
     page_issue = ""
     if not results:
@@ -631,7 +658,7 @@ def run_row_judges_with_backend(
     elif any(result.get("verdict") in {"not_supported", "unclear"} for result in results):
         page_verdict = "unclear"
         page_issue = "one or more claim judgments require repair or curator review"
-    
+
     return {
         "page_verdict": page_verdict,
         "page_issue": page_issue,
@@ -645,7 +672,8 @@ def parse_candidate(raw: str) -> tuple[str, str | None]:
         return raw, None
     profile, model = raw.split(":", 1)
     if not profile or not model:
-        raise SystemExit(f"invalid candidate {raw!r}; use PROFILE or PROFILE:MODEL")
+        raise SystemExit(
+            f"invalid candidate {raw!r}; use PROFILE or PROFILE:MODEL")
     return profile, model
 
 
@@ -659,7 +687,8 @@ def parse_json_result(raw: str) -> dict[str, Any]:
         raise ValueError("local judge JSON was not an object")
     page_verdict = parsed.get("page_verdict")
     if page_verdict not in PAGE_VERDICTS:
-        raise ValueError(f"local judge returned invalid page_verdict {page_verdict!r}")
+        raise ValueError(
+            f"local judge returned invalid page_verdict {page_verdict!r}")
     claim_results = parsed.get("claim_results")
     if not isinstance(claim_results, list):
         raise ValueError("local judge JSON missing claim_results list")
@@ -668,7 +697,8 @@ def parse_json_result(raw: str) -> dict[str, Any]:
             raise ValueError("claim_results item is not an object")
         verdict = item.get("verdict")
         if verdict not in VERDICTS:
-            raise ValueError(f"local judge returned invalid claim verdict {verdict!r}")
+            raise ValueError(
+                f"local judge returned invalid claim verdict {verdict!r}")
     return parsed
 
 
@@ -741,7 +771,7 @@ def extract_json_object(text: str) -> str | None:
         elif char == "}":
             depth -= 1
             if depth == 0:
-                return text[start : index + 1]
+                return text[start: index + 1]
     return None
 
 
@@ -804,7 +834,8 @@ def render_report(
         )
 
     if judge_result and "raw_output" in judge_result:
-        lines.extend(["", "## Raw Judge Output", "", "```text", str(judge_result["raw_output"]).strip(), "```"])
+        lines.extend(["", "## Raw Judge Output", "", "```text",
+                     str(judge_result["raw_output"]).strip(), "```"])
 
     return "\n".join(lines) + "\n"
 

@@ -34,9 +34,9 @@ Every synthesized page should include:
 4. `## Source-backed details` with a **2-column** evidence table:
 
 ```md
-| Claim | Evidence |
-| ----- | -------- |
-| Your synthesized claim in your own words. | [E01] |
+| Claim                                     | Evidence |
+| ----------------------------------------- | -------- |
+| Your synthesized claim in your own words. | [E01]    |
 ```
 
 5. Cross-links to related pages
@@ -45,6 +45,7 @@ Every synthesized page should include:
 **IMPORTANT**: You cite evidence by ID (e.g., `[E01]`). The full evidence table is rendered automatically by post-processing. Do NOT write evidence text or locators.
 
 Type-specific requirements:
+
 - **Procedure pages** must include `## Steps` with at least 3 numbered or bulleted steps
 - **Reference pages** must include `## Reference data` with a lookup table containing at least 2 data rows
 

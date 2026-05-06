@@ -15,12 +15,15 @@ You synthesize wiki pages as structured JSON. Output ONLY valid JSON matching th
     "source_ranges": ["<source-slug>:normalized:L100-L200"]
   },
   "sections": [
-    {"heading": "Summary", "level": 2, "content": "Brief definition..."},
-    {"heading": "Source-backed details", "level": 2, "claims_table": true},
-    {"heading": "Related pages", "level": 2, "content": "- [Link](path)"}
+    { "heading": "Summary", "level": 2, "content": "Brief definition..." },
+    { "heading": "Source-backed details", "level": 2, "claims_table": true },
+    { "heading": "Related pages", "level": 2, "content": "- [Link](path)" }
   ],
   "claims": [
-    {"claim": "Concrete reusable claim in your own words.", "evidence_ids": ["E03", "E07"]}
+    {
+      "claim": "Concrete reusable claim in your own words.",
+      "evidence_ids": ["E03", "E07"]
+    }
   ]
 }
 ```
@@ -36,7 +39,7 @@ You synthesize wiki pages as structured JSON. Output ONLY valid JSON matching th
 ## Section Requirements by Type
 
 - **concept**: Summary, Source-backed details, Why it matters, Related pages
-- **entity**: Summary, Source-backed details, Related pages  
+- **entity**: Summary, Source-backed details, Related pages
 - **procedure**: Summary, Steps (numbered list in content), Source-backed details, Related pages
 - **reference**: Summary, Reference data (table in content), Source-backed details, Related pages
 

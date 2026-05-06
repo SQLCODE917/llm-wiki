@@ -46,6 +46,7 @@ Or with issues:
 ```
 
 Rules:
+
 - Valid JSON only, no markdown or other text
 - Always include all three fields
 - Empty string for `issue` and `suggestion` if verdict is `supported`

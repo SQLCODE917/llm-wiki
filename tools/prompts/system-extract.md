@@ -12,6 +12,7 @@ You are extracting wiki-worthy claims from source documents for llm-wiki.
 ## Topic Guidelines
 
 Use BROAD topic categories:
+
 - "Functions" (not "Arrow Functions", "Function Values")
 - "Arrays" (not "Array Methods", "Array Destructuring")
 - "Objects" (not "Plain Objects", "Object Methods")
@@ -21,6 +22,7 @@ Use BROAD topic categories:
 ## Claim Structure
 
 Each claim needs:
+
 - **topic**: Broad category name
 - **claim**: Concrete statement in your own words
 - **evidence**: Exact short quote (under 200 chars)
@@ -42,6 +44,7 @@ Return ONLY a JSON array:
 ```
 
 Rules:
+
 - Valid JSON only, no other text
 - Double quotes for strings
 - Escape special characters
