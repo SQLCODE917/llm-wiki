@@ -495,7 +495,20 @@ def run_single_candidate(
                 evidence_bank=evidence_bank,
             )
             repair_prompt = append_claim_repair_hints(repair_prompt, hints)
-        if use_backend:
+        
+        # Use JSON mode for repairs too if initial was JSON
+        if json_output and use_backend:
+            returncode, paths, _ = run_with_backend_json(
+                worktree=worktree,
+                backend_name=backend_name,
+                prompt=repair_prompt,
+                timeout=timeout,
+                prefix=f"codex-repair-{attempt}",
+                evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
+                slug=slug,
+                expected_path=selected_candidate.path,
+            )
+        elif use_backend:
             returncode, paths = run_with_backend(
                 worktree=worktree,
                 backend_name=backend_name,
@@ -515,13 +528,14 @@ def run_single_candidate(
         codex_returncodes.append(returncode)
         log_paths.extend(paths)
 
-        # Expand evidence IDs or fill evidence from locators before validation
-        fix_synthesized_evidence(
-            worktree, selected_repo_path, worktree / normalized_source,
-            evidence_bank=evidence_bank if isinstance(
-                evidence_bank, EvidenceBankResult) else None,
-            slug=slug,
-        )
+        # Skip evidence expansion for JSON output mode (already rendered in markdown)
+        if not json_output:
+            fix_synthesized_evidence(
+                worktree, selected_repo_path, worktree / normalized_source,
+                evidence_bank=evidence_bank if isinstance(
+                    evidence_bank, EvidenceBankResult) else None,
+                slug=slug,
+            )
 
         validation_returncode = run_validation(
             worktree,
@@ -568,7 +582,20 @@ def run_single_candidate(
                 claim_repair_hints(
                     worktree, selected_repo_path, normalized_source),
             )
-            if use_backend:
+            
+            # Use JSON mode for judge-repairs too if initial was JSON
+            if json_output and use_backend:
+                returncode, paths, _ = run_with_backend_json(
+                    worktree=worktree,
+                    backend_name=backend_name,
+                    prompt=repair_prompt,
+                    timeout=timeout,
+                    prefix=f"codex-judge-repair-{attempt}",
+                    evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
+                    slug=slug,
+                    expected_path=selected_candidate.path,
+                )
+            elif use_backend:
                 returncode, paths = run_with_backend(
                     worktree=worktree,
                     backend_name=backend_name,
@@ -588,13 +615,14 @@ def run_single_candidate(
             codex_returncodes.append(returncode)
             log_paths.extend(paths)
 
-            # Expand evidence IDs or fill evidence from locators before validation
-            fix_synthesized_evidence(
-                worktree, selected_repo_path, worktree / normalized_source,
-                evidence_bank=evidence_bank if isinstance(
-                    evidence_bank, EvidenceBankResult) else None,
-                slug=slug,
-            )
+            # Skip evidence expansion for JSON output mode (already rendered in markdown)
+            if not json_output:
+                fix_synthesized_evidence(
+                    worktree, selected_repo_path, worktree / normalized_source,
+                    evidence_bank=evidence_bank if isinstance(
+                        evidence_bank, EvidenceBankResult) else None,
+                    slug=slug,
+                )
 
             validation_returncode = run_validation(
                 worktree,

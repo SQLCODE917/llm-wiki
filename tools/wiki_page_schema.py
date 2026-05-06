@@ -221,40 +221,40 @@ def render_claims_table(
     evidence_bank: "EvidenceBankResult | None",
     slug: str,
 ) -> str:
-    """Render claims as a 4-column evidence table."""
+    """Render claims as a 4-column evidence table.
+    
+    Each claim-evidence pair gets its own row. If a claim has multiple
+    evidence IDs, it's expanded into multiple rows.
+    """
     if not claims:
         return "No claims."
 
     lines = ["| Claim | Evidence | Locator | Source |"]
     lines.append("| --- | --- | --- | --- |")
 
+    source_cell = f"[Source](../sources/{slug}.md)" if slug else ""
+
     for claim in claims:
-        claim_text = claim.claim
-
-        # Collect evidence for all IDs
-        evidence_parts: list[str] = []
-        locator_parts: list[str] = []
-
+        claim_text = claim.claim.replace("|", "\\|")  # Escape pipes
+        
+        if not claim.evidence_ids:
+            # Claim without evidence
+            lines.append(f"| {claim_text} | N/A | N/A | {source_cell} |")
+            continue
+        
+        # One row per evidence ID
         for eid in claim.evidence_ids:
             eid_upper = eid.upper()
             if evidence_bank and eid_upper in evidence_bank.items:
                 item = evidence_bank.items[eid_upper]
-                evidence_parts.append(f'"{item.text}"')
-                locator_parts.append(f"`{item.locator}`")
+                evidence_text = item.text.replace("|", "\\|")
+                evidence_cell = f'"{evidence_text}"'
+                locator_cell = f"`{item.locator}`"
             else:
-                evidence_parts.append(f"[{eid}: not found]")
-                locator_parts.append("")
-
-        evidence_cell = " ".join(evidence_parts) if evidence_parts else "N/A"
-        locator_cell = " ".join(locator_parts) if locator_parts else "N/A"
-        source_cell = f"[Source](../sources/{slug}.md)" if slug else ""
-
-        # Escape pipes in claim text
-        claim_text = claim_text.replace("|", "\\|")
-        evidence_cell = evidence_cell.replace("|", "\\|")
-
-        lines.append(
-            f"| {claim_text} | {evidence_cell} | {locator_cell} | {source_cell} |")
+                evidence_cell = f"[{eid}: not found]"
+                locator_cell = "N/A"
+            
+            lines.append(f"| {claim_text} | {evidence_cell} | {locator_cell} | {source_cell} |")
 
     return "\n".join(lines)
 
