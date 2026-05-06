@@ -255,6 +255,7 @@ def run_ingest(config: IngestConfig) -> int:
 
             report = Path(tempfile.gettempdir()) / \
                 f"wiki-ingest-{config.slug}-{Path(page_path).stem}.md"
+            extraction_state_path = get_state_path(config.slug)
             command = [
                 "python3",
                 "tools/wiki_phase2_single.py",
@@ -268,6 +269,8 @@ def run_ingest(config: IngestConfig) -> int:
                 config.candidate_judge,
                 "--normalized-source",
                 normalized_source.as_posix(),
+                "--extraction-state",
+                extraction_state_path.as_posix(),
                 "--timeout",
                 str(config.timeout),
                 "--judge-timeout",

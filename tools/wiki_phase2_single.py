@@ -25,6 +25,7 @@ from wiki_phase2_benchmark import (
     range_page_args,
     source_relative_to_repo,
 )
+from wiki_fix_evidence import fix_evidence_in_page
 
 
 def main() -> int:
@@ -57,6 +58,10 @@ def main() -> int:
     parser.add_argument("--skip-judge", action="store_true",
                         help="only run deterministic validation")
     parser.add_argument(
+        "--extraction-state",
+        help="path to extraction state JSON (uses full evidence from claims instead of re-extracting)",
+    )
+    parser.add_argument(
         "--report", help="write a Markdown run report to this path")
     parser.add_argument("--keep", action="store_true",
                         help="keep temp worktree after the run")
@@ -79,8 +84,27 @@ def main() -> int:
         return 2
 
     candidate = parse_candidate(args.candidate)
+    
+    # Load extraction state claims if provided
+    extraction_claims = None
+    if args.extraction_state:
+        extraction_state_path = Path(args.extraction_state)
+        if extraction_state_path.exists():
+            import json
+            state_data = json.loads(extraction_state_path.read_text())
+            extraction_claims = state_data.get("claims", [])
+        else:
+            print(f"WARN: extraction state not found: {extraction_state_path}", file=sys.stderr)
+    
+    # Use backend name in temp directory when not using codex
+    backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND") or "codex"
+    if backend_name != "codex":
+        dir_label = backend_name
+    else:
+        dir_label = candidate.safe_label
+    
     worktree = Path(tempfile.mkdtemp(
-        prefix=f"llm-wiki-phase2-single-{args.slug}-{candidate.safe_label}.", dir="/tmp"))
+        prefix=f"llm-wiki-phase2-single-{args.slug}-{dir_label}.", dir="/tmp"))
     try:
         copy_repo_contents(repo_root, worktree)
         init_git(worktree)
@@ -100,6 +124,7 @@ def main() -> int:
             judge_repair_attempts=args.judge_repair_attempts,
             judge_batch=args.judge_batch,
             skip_judge=args.skip_judge,
+            extraction_claims=extraction_claims,
         )
         print_result(result)
         if args.report:
@@ -152,6 +177,7 @@ def run_with_backend(
         prefix=prefix,
         timeout=timeout,
         save_debug_files=True,
+        system_prompt_style="synthesis",  # Use slim synthesis-focused prompt
     )
 
     response = backend.run(prompt, config)
@@ -187,6 +213,27 @@ def run_with_backend(
     return 0, log_paths
 
 
+def fix_synthesized_evidence(worktree: Path, page_path: str, normalized_source: Path) -> int:
+    """Post-process a synthesized page to fix fabricated evidence.
+    
+    Returns number of evidence cells fixed.
+    """
+    full_page_path = worktree / page_path
+    if not full_page_path.exists():
+        return 0
+    
+    page_text = full_page_path.read_text()
+    source_lines = normalized_source.read_text().splitlines()
+    
+    fixed_text, changes = fix_evidence_in_page(page_text, source_lines, 200, force=False)
+    
+    if changes:
+        full_page_path.write_text(fixed_text)
+        print(f"Fixed {len(changes)} evidence cell(s) in {page_path}", file=sys.stderr)
+    
+    return len(changes)
+
+
 def run_single_candidate(
     *,
     worktree: Path,
@@ -204,6 +251,7 @@ def run_single_candidate(
     judge_repair_attempts: int,
     judge_batch: bool,
     skip_judge: bool,
+    extraction_claims: list[dict] | None = None,
 ) -> dict[str, object]:
     source_page = worktree / "wiki/sources" / f"{slug}.md"
     selected_candidate = find_related_candidate(source_page, candidate_path)
@@ -216,7 +264,7 @@ def run_single_candidate(
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
     evidence_bank = build_evidence_bank(
-        worktree, normalized_source, [selected_candidate])
+        worktree, normalized_source, [selected_candidate], extraction_claims=extraction_claims)
     selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
@@ -259,6 +307,10 @@ def run_single_candidate(
         )
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
+    
+    # Fix fabricated evidence before validation
+    fix_synthesized_evidence(worktree, selected_repo_path, worktree / normalized_source)
+    
     validation_returncode = run_validation(
         worktree,
         slug,
@@ -318,6 +370,10 @@ def run_single_candidate(
             )
         codex_returncodes.append(returncode)
         log_paths.extend(paths)
+        
+        # Fix fabricated evidence before validation
+        fix_synthesized_evidence(worktree, selected_repo_path, worktree / normalized_source)
+        
         validation_returncode = run_validation(
             worktree,
             slug,
@@ -334,6 +390,7 @@ def run_single_candidate(
             worktree=worktree,
             page=selected_repo_path,
             normalized_source=normalized_source,
+            backend_name=backend_name,
             judge_candidate=judge_candidate,
             codex_bin=codex_bin,
             timeout=judge_timeout,
@@ -381,6 +438,10 @@ def run_single_candidate(
                 )
             codex_returncodes.append(returncode)
             log_paths.extend(paths)
+            
+            # Fix fabricated evidence before validation
+            fix_synthesized_evidence(worktree, selected_repo_path, worktree / normalized_source)
+            
             validation_returncode = run_validation(
                 worktree,
                 slug,
@@ -397,6 +458,7 @@ def run_single_candidate(
                 worktree=worktree,
                 page=selected_repo_path,
                 normalized_source=normalized_source,
+                backend_name=backend_name,
                 judge_candidate=judge_candidate,
                 codex_bin=codex_bin,
                 timeout=judge_timeout,
@@ -407,8 +469,11 @@ def run_single_candidate(
     elif validation_returncode != 0:
         judge_returncode = 1
 
+    # Use backend name as label when not using codex
+    result_label = backend_name if backend_name and backend_name != "codex" else candidate.label
+
     return {
-        "candidate": candidate.label,
+        "candidate": result_label,
         "worktree": worktree,
         "duration_s": time.monotonic() - start,
         "codex_returncodes": codex_returncodes,
@@ -435,7 +500,8 @@ def run_judge(
     worktree: Path,
     page: str,
     normalized_source: Path,
-    judge_candidate: str,
+    backend_name: str | None,
+    judge_candidate: str | None,
     codex_bin: str,
     timeout: int,
     batch: bool,
@@ -448,16 +514,19 @@ def run_judge(
         page,
         "--normalized-source",
         normalized_source.as_posix(),
-        "--candidate",
-        judge_candidate,
-        "--codex-bin",
-        codex_bin,
         "--timeout",
         str(timeout),
         "--output",
         output.as_posix(),
         "--fail-on-issues",
     ]
+    # Use backend if specified, otherwise fall back to codex with candidate
+    if backend_name:
+        command.extend(["--backend", backend_name])
+    if judge_candidate:
+        command.extend(["--candidate", judge_candidate])
+    if codex_bin != "codex":
+        command.extend(["--codex-bin", codex_bin])
     if batch:
         command.append("--batch")
     completed = subprocess.run(
@@ -478,7 +547,8 @@ def run_judge_with_optional_row_fallback(
     worktree: Path,
     page: str,
     normalized_source: Path,
-    judge_candidate: str,
+    backend_name: str | None,
+    judge_candidate: str | None,
     codex_bin: str,
     timeout: int,
     batch: bool,
@@ -488,6 +558,7 @@ def run_judge_with_optional_row_fallback(
         worktree=worktree,
         page=page,
         normalized_source=normalized_source,
+        backend_name=backend_name,
         judge_candidate=judge_candidate,
         codex_bin=codex_bin,
         timeout=timeout,
@@ -502,6 +573,7 @@ def run_judge_with_optional_row_fallback(
         worktree=worktree,
         page=page,
         normalized_source=normalized_source,
+        backend_name=backend_name,
         judge_candidate=judge_candidate,
         codex_bin=codex_bin,
         timeout=timeout,

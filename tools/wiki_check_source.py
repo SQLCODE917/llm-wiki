@@ -394,10 +394,15 @@ def normalize_group_name(group: str) -> str:
 
 
 def split_table_row(line: str) -> list[str] | None:
+    """Split a Markdown table row into cells, handling escaped pipes."""
     stripped = line.strip()
     if not stripped.startswith("|") or not stripped.endswith("|"):
         return None
-    return [cell.strip() for cell in stripped[1:-1].split("|")]
+    # Replace escaped pipes with a placeholder, split, then restore
+    placeholder = "\x00PIPE\x00"
+    inner = stripped[1:-1].replace("\\|", placeholder)
+    cells = [cell.strip().replace(placeholder, "|") for cell in inner.split("|")]
+    return cells
 
 
 def is_separator_row(cells: list[str]) -> bool:

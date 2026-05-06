@@ -48,9 +48,31 @@ Evidence bank:
 
 CRITICAL FORMAT REQUIREMENTS:
 
-1. **Preserve source text exactly**: Evidence excerpts must match the source verbatim, including accented characters. If the source says "Allongé", write "Allongé". Use straight quotes ("") not curly quotes (""). Use hyphens (-) not em-dashes (—). Avoid mojibake (encoding errors like Ã©).
+1. **Synthesize claims, copy evidence**: The Claim column must be YOUR synthesis in different words. The Evidence column must be an EXACT quote from the source. If they are too similar, validation fails.
 
-2. **Complete frontmatter**: Every synthesized page MUST have this exact structure:
+   BAD (fails validation - 97% similar, just dropped prefix):
+   | JavaScript uses function declarations to bind... | "• JavaScript uses function declarations to bind..." |
+   
+   BAD (fails - 100% identical, copied technical syntax):
+   | The .iterator() method is defined with shorthand | "The .iterator() method is defined with shorthand..." |
+   
+   GOOD (passes - describes WHAT it does, not HOW it looks):
+   | Iterator methods can use shorthand function syntax. | "The .iterator() method is defined with shorthand equivalent to iterator: function iterator()" |
+   
+   GOOD (passes validation - 78% similar):
+   | JavaScript Allongé is fundamentally about programming with functions. | "JavaScript Allongé is a first and foremost, a book about programming with functions." |
+
+2. **Preserve source text exactly**: Evidence excerpts must match the source verbatim, including accented characters. If the source says "Allongé", write "Allongé". Use straight quotes ("") not curly quotes (""). Use hyphens (-) not em-dashes (—). Avoid mojibake (encoding errors like Ã©).
+
+3. **Copy evidence character-for-character from the evidence bank**: Do NOT retype or paraphrase evidence. Find the exact line in the evidence bank above and copy it precisely. Pay special attention to operators that look similar:
+   - `||` (logical OR) is NOT the same as `//` (comment)
+   - `&&` (logical AND) must stay as `&&`
+   - `?:` (ternary) must stay as `?:`
+   - `=>` (arrow function) must stay as `=>`
+   
+   If the evidence bank says `|| and &&`, write exactly `|| and &&`, not `// and &&`.
+
+4. **Complete frontmatter**: Every synthesized page MUST have this exact structure:
 
    ```yaml
    ---
@@ -69,7 +91,7 @@ CRITICAL FORMAT REQUIREMENTS:
 
    List EVERY line number you cite in evidence as a separate source_ranges entry.
 
-3. **Required sections**: Every synthesized page MUST have:
+5. **Required sections**: Every synthesized page MUST have:
    - `## Source-backed details` with evidence table
    - `## Source pages` with link to ../sources/{{slug}}.md
 

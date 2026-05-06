@@ -174,6 +174,17 @@
         "wiki:sources/aoe2-basics"
       ]
     },
+    "wiki:concepts/closures": {
+      "type": "concept",
+      "path": "wiki/concepts/closures.md",
+      "description": "A closure is a function that captures and retains access to variables from its outer (enclosing) scope, even after the outer function has finished executing.",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
     "wiki:concepts/compound-interest": {
       "type": "concept",
       "path": "wiki/concepts/compound-interest.md",
@@ -185,21 +196,10 @@
         "wiki:sources/compound-interest"
       ]
     },
-    "wiki:concepts/functions": {
+    "wiki:concepts/recursion": {
       "type": "concept",
-      "path": "wiki/concepts/functions.md",
-      "description": "In JavaScript, functions are first-class citizens that can be assigned to variables, passed as arguments to other functions, and returned from functions. They provide a way to enc\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/iterators": {
-      "type": "concept",
-      "path": "wiki/concepts/iterators.md",
-      "description": "An iterator is an object that provides a sequence of values, typically through a `next()` method that returns an object with `done` and `value` properties.",
+      "path": "wiki/concepts/recursion.md",
+      "description": "Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller subproblems.",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -295,11 +295,13 @@
     "wiki:sources/js-allonge": {
       "type": "source",
       "path": "wiki/sources/js-allonge.md",
-      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 267 claims from 30 chunks, organized into 13 viable topics.",
-      "sources": [],
+      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 268 claims from 30 chunks, organized into 11 viable topics.",
+      "sources": [
+        "../../raw/imported/js-allonge/original.pdf"
+      ],
       "depends_on": [
-        "wiki:concepts/functions",
-        "wiki:concepts/iterators"
+        "wiki:concepts/closures",
+        "wiki:concepts/recursion"
       ]
     }
   }

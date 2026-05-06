@@ -3,7 +3,7 @@
 ## Sources
 
 - [Compound Interest Notes](sources/compound-interest.md) — This short source defines compound interest as interest added to principal so that future interest is calculated on the updated total. It also gives the standard compound interest…
-- [js-allonge](sources/js-allonge.md) — *Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition Extracted 267 claims from 30 chunks, organized into 13 viable topics.
+- [js-allonge](sources/js-allonge.md) — *Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition Extracted 268 claims from 30 chunks, organized into 11 viable topics.
 - [Noobs guide for AoE2](sources/aoe2-basics.md) — This document is an organized arrangement of gameplay concepts simplified and explained out. It is categorized and each category will be written in order from most important to th…
 
 ## Entities
@@ -24,9 +24,9 @@ None.
 - [AoE2 Team Play Strategies](concepts/aoe2-team-play-strategies.md) — Team play strategies in Age of Empires II refer to coordinated tactics and approaches used by players working together in multiplayer matches.
 - [AoE2 Unit Counter Interactions](concepts/aoe2-unit-counter-interactions.md) — Unit counter interactions refer to how different units in Age of Empires II interact with each other in combat, particularly in terms of which units can effectively counter others.
 - [AoE2 Water Maps](concepts/aoe2-water-maps.md) — Water maps in Age of Empires II are maps such as Islands and Team Islands where water control, transports, fishing economy, landings, and build execution shape the game.
+- [Closures](concepts/closures.md) — A closure is a function that captures and retains access to variables from its outer (enclosing) scope, even after the outer function has finished executing.
 - [Compound Interest](concepts/compound-interest.md) — Compound interest is interest calculated on a principal amount after previous interest has been added back into that principal.
-- [Functions](concepts/functions.md) — In JavaScript, functions are first-class citizens that can be assigned to variables, passed as arguments to other functions, and returned from functions. They provide a way to enc…
-- [Iterators](concepts/iterators.md) — An iterator is an object that provides a sequence of values, typically through a `next()` method that returns an object with `done` and `value` properties.
+- [Recursion](concepts/recursion.md) — Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller subproblems.
 
 ## Procedures
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -42,8 +43,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Judge whether synthesized page claims follow from cited evidence.")
     parser.add_argument("page", help="wiki synthesized page to judge")
     parser.add_argument("--normalized-source", required=True, help="normalized source markdown file")
-    parser.add_argument("--candidate", help="local Codex candidate, e.g. local-4090 or local-4090:model")
-    parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument("--backend", help="model backend: codex, bedrock, openai, anthropic (default: WIKI_MODEL_BACKEND env or codex)")
+    parser.add_argument("--candidate", help="(codex backend only) profile, e.g. local-4090 or local-4090:model")
+    parser.add_argument("--codex-bin", default="codex", help="(deprecated, use --backend codex)")
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--context-lines", type=int, default=2)
     parser.add_argument("--output", default="wiki/_claim-judge-report.md")
@@ -69,14 +71,25 @@ def main() -> int:
     judge_error = ""
 
     if not args.deterministic_only:
-        if not args.candidate:
-            print("FAIL: pass --candidate or use --deterministic-only", file=sys.stderr)
+        # Determine backend
+        backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND", "codex")
+        
+        # For codex backend, require --candidate for backward compatibility
+        if backend_name == "codex" and not args.candidate:
+            print("FAIL: pass --candidate for codex backend, or use --backend <other>", file=sys.stderr)
             return 2
+        
         if args.batch:
             prompt = render_prompt(page, rows, siblings)
-            raw, returncode = run_local_judge(args.codex_bin, args.candidate, prompt, args.timeout)
+            raw, returncode = run_judge_model(
+                backend_name=backend_name,
+                prompt=prompt,
+                timeout=args.timeout,
+                codex_bin=args.codex_bin,
+                candidate=args.candidate,
+            )
             if returncode != 0:
-                judge_error = f"local judge exited with status {returncode}"
+                judge_error = f"judge exited with status {returncode}"
                 judge_result = {"raw_output": raw}
             else:
                 try:
@@ -85,7 +98,14 @@ def main() -> int:
                     judge_error = str(error)
                     judge_result = {"raw_output": raw}
         else:
-            judge_result, judge_error = run_row_judges(args.codex_bin, args.candidate, page, rows, args.timeout)
+            judge_result, judge_error = run_row_judges_with_backend(
+                backend_name=backend_name,
+                page=page,
+                rows=rows,
+                timeout=args.timeout,
+                codex_bin=args.codex_bin,
+                candidate=args.candidate,
+            )
 
     report = render_report(page, normalized_source, rows, flags, siblings, judge_result, judge_error)
     output = Path(args.output)
@@ -503,6 +523,121 @@ def run_local_judge(codex_bin: str, candidate: str, prompt: str, timeout: int) -
         )
         output = last_message.read_text() if last_message.exists() else completed.stdout
         return output, completed.returncode
+
+
+def run_judge_model(
+    *,
+    backend_name: str,
+    prompt: str,
+    timeout: int,
+    codex_bin: str = "codex",
+    candidate: str | None = None,
+) -> tuple[str, int]:
+    """Run judge using the specified backend.
+    
+    For codex backend, uses run_local_judge for backward compatibility.
+    For other backends, uses the model backend abstraction.
+    
+    Returns:
+        Tuple of (output_text, returncode). returncode 0 means success.
+    """
+    if backend_name == "codex":
+        if not candidate:
+            return "ERROR: codex backend requires --candidate", 1
+        return run_local_judge(codex_bin, candidate, prompt, timeout)
+    
+    # Use model backend abstraction for non-codex backends
+    try:
+        from wiki_model_backend import get_backend, ModelConfig
+    except ImportError as e:
+        return f"ERROR: failed to import model backend: {e}", 1
+    
+    try:
+        backend = get_backend(backend_name)
+    except ValueError as e:
+        return f"ERROR: {e}", 1
+    
+    # Create a temporary directory for the model config
+    with tempfile.TemporaryDirectory(prefix="llm-wiki-judge.") as tmp:
+        tmp_path = Path(tmp)
+        
+        config = ModelConfig(
+            worktree=tmp_path,
+            prefix="judge",
+            timeout=timeout,
+            save_debug_files=True,
+            system_prompt_style="judge",
+        )
+        
+        response = backend.run(prompt, config)
+        
+        if not response.success:
+            error_msg = response.error or "unknown error"
+            return f"ERROR: {error_msg}", 1
+        
+        return response.output, 0
+
+
+def run_row_judges_with_backend(
+    *,
+    backend_name: str,
+    page: Path,
+    rows: list[EvidenceRow],
+    timeout: int,
+    codex_bin: str = "codex",
+    candidate: str | None = None,
+) -> tuple[dict[str, Any], str]:
+    """Run per-row judges using the specified backend."""
+    results: list[dict[str, Any]] = []
+    raw_outputs: list[str] = []
+    errors: list[str] = []
+    
+    for row in rows:
+        prompt = render_row_prompt(page, row)
+        raw, returncode = run_judge_model(
+            backend_name=backend_name,
+            prompt=prompt,
+            timeout=timeout,
+            codex_bin=codex_bin,
+            candidate=candidate,
+        )
+        raw_outputs.append(f"ROW {row.row}\n{raw}")
+        
+        if returncode != 0:
+            errors.append(f"row {row.row}: judge exited with status {returncode}")
+            continue
+        
+        try:
+            parsed = parse_row_json_result(raw, allow_text_recovery=False)
+        except ValueError as error:
+            # Try recovery from text
+            recovered = row_verdict_from_text(raw)
+            if recovered is None:
+                errors.append(f"row {row.row}: {error}")
+                continue
+            parsed = recovered
+        
+        parsed["row"] = row.row
+        results.append(parsed)
+    
+    page_verdict = "useful"
+    page_issue = ""
+    if not results:
+        page_verdict = "unclear"
+        page_issue = "no claim judgments could be parsed"
+    elif errors:
+        page_verdict = "unclear"
+        page_issue = "one or more claim judgments could not be parsed"
+    elif any(result.get("verdict") in {"not_supported", "unclear"} for result in results):
+        page_verdict = "unclear"
+        page_issue = "one or more claim judgments require repair or curator review"
+    
+    return {
+        "page_verdict": page_verdict,
+        "page_issue": page_issue,
+        "claim_results": results,
+        "raw_output": "\n\n".join(raw_outputs),
+    }, "; ".join(errors)
 
 
 def parse_candidate(raw: str) -> tuple[str, str | None]:

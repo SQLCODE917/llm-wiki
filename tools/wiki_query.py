@@ -180,6 +180,7 @@ def run_backend_answer(backend_name: str, prompt: str, timeout: int) -> tuple[st
             worktree=Path.cwd(),
             prefix="query",
             timeout=timeout,
+            system_prompt_style="query",
         )
         response = backend.run(prompt, config)
         if response.success:

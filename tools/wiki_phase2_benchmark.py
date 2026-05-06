@@ -641,22 +641,45 @@ def render_existing_pages(paths: list[str]) -> str:
     return "\n".join(f"- `{path}`" for path in paths)
 
 
-def build_evidence_bank(worktree: Path, normalized_source: Path, selected_candidates: list[str | RelatedCandidate]) -> str:
+def build_evidence_bank(
+    worktree: Path,
+    normalized_source: Path,
+    selected_candidates: list[str | RelatedCandidate],
+    extraction_claims: list[dict] | None = None,
+) -> str:
+    """Build evidence bank for synthesis prompt.
+    
+    If extraction_claims is provided (from deep-extract state), use the full
+    evidence text from those claims instead of re-extracting truncated snippets.
+    This improves accuracy by giving the model the exact evidence that was
+    extracted during the deep-extraction phase.
+    """
     source_path = normalized_source if normalized_source.is_absolute() else worktree / \
         normalized_source
     if not source_path.exists():
         return "No evidence bank available; normalized source was not found."
     source_text = source_path.read_text(errors="ignore")
     lines = source_text.splitlines()
-    chunks = source_chunks(source_text)
+    
+    # Only need chunks if we're not using extraction claims
+    chunks = None if extraction_claims else source_chunks(source_text)
+    
     sections: list[str] = []
     for candidate in selected_candidates:
         query = evidence_query(candidate)
         ranges = source_ranges_for_candidate(candidate_path(
             candidate), lines, candidate_title(candidate))
-        candidate_chunks = chunks_in_ranges(
-            chunks, ranges) if ranges else chunks
-        snippets = snippets_for_candidate(query, candidate_chunks, limit=10)
+        
+        # Try to get claims from extraction state by matching topic name
+        matched_claims = None
+        if extraction_claims:
+            candidate_title_text = candidate_title(candidate) or ""
+            # Match by topic name (case-insensitive comparison)
+            matched_claims = [
+                c for c in extraction_claims
+                if c.get("topic", "").lower() == candidate_title_text.lower()
+            ]
+        
         sections.append(f"### {query}")
         if ranges:
             sections.append(
@@ -665,11 +688,29 @@ def build_evidence_bank(worktree: Path, normalized_source: Path, selected_candid
             sections.append(
                 "Allowed source range: not derived from headings. The created page must declare `source_ranges` if validation is range-gated."
             )
-        if snippets:
-            sections.extend(
-                f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
+        
+        if matched_claims:
+            # Use full evidence from extraction state (preferred)
+            for claim in matched_claims[:10]:
+                locator = claim.get("locator", "")
+                evidence = claim.get("evidence", "")
+                if evidence and locator:
+                    # Truncate very long evidence for readability but keep more than snippets
+                    if len(evidence) > 400:
+                        evidence = evidence[:400] + "..."
+                    sections.append(f"- `{locator}` - {evidence}")
         else:
-            sections.append("- not covered in sources")
+            # Fall back to re-extracting snippets (less accurate)
+            if chunks is None:
+                chunks = source_chunks(source_text)
+            candidate_chunks = chunks_in_ranges(
+                chunks, ranges) if ranges else chunks
+            snippets = snippets_for_candidate(query, candidate_chunks, limit=10)
+            if snippets:
+                sections.extend(
+                    f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
+            else:
+                sections.append("- not covered in sources")
         sections.append("")
     return "\n".join(sections).rstrip()
 

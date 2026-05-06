@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import shutil
 import subprocess
@@ -21,9 +22,10 @@ def main() -> int:
     parser.add_argument("--min-pages", type=int, default=5)
     parser.add_argument("--max-pages", type=int, default=15)
     parser.add_argument("--normalized-source", help="normalized source markdown for evidence excerpt checks")
-    parser.add_argument("--judge-candidate", default="local-4090", help="local Codex candidate for claim judging")
+    parser.add_argument("--backend", help="model backend: codex, bedrock, openai, anthropic (default: WIKI_MODEL_BACKEND env or codex)")
+    parser.add_argument("--judge-candidate", default="local-4090", help="(codex backend only) profile for claim judging")
     parser.add_argument("--judge-timeout", type=int, default=600)
-    parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument("--codex-bin", default="codex", help="(deprecated, use --backend codex)")
     parser.add_argument(
         "--human-override-judge",
         help="explicit curator reason for adopting without a passing local claim judge",
@@ -66,6 +68,7 @@ def main() -> int:
             worktree=worktree,
             pages=synthesized_pages,
             normalized_source=args.normalized_source,
+            backend=args.backend,
             candidate=args.judge_candidate,
             codex_bin=args.codex_bin,
             timeout=args.judge_timeout,
@@ -128,13 +131,17 @@ def validate_judges(
     worktree: Path,
     pages: list[Path],
     normalized_source: str,
-    candidate: str,
+    backend: str | None,
+    candidate: str | None,
     codex_bin: str,
     timeout: int,
 ) -> int:
     if not pages:
         print("FAIL: no synthesized pages found for judge validation")
         return 1
+
+    # Determine backend
+    backend_name = backend or os.environ.get("WIKI_MODEL_BACKEND", "codex")
 
     status = 0
     report_dir = worktree / "phase2-judge-reports"
@@ -147,16 +154,19 @@ def validate_judges(
             page.as_posix(),
             "--normalized-source",
             normalized_source,
-            "--candidate",
-            candidate,
-            "--codex-bin",
-            codex_bin,
+            "--backend",
+            backend_name,
             "--timeout",
             str(timeout),
             "--output",
             output.as_posix(),
             "--fail-on-issues",
         ]
+        # For codex backend, pass candidate
+        if backend_name == "codex" and candidate:
+            command.extend(["--candidate", candidate])
+        if codex_bin != "codex":
+            command.extend(["--codex-bin", codex_bin])
         completed = subprocess.run(
             command,
             cwd=worktree,
