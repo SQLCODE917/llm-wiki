@@ -63,8 +63,10 @@ def main() -> int:
         "--extraction-state",
         help="path to extraction state JSON (uses full evidence from claims instead of re-extracting)",
     )
-    parser.add_argument("--json-output", action="store_true",
-                        help="use JSON schema output format (model outputs JSON, code renders markdown)")
+    parser.add_argument("--json-output", action="store_true", default=True,
+                        help="use JSON schema output format (default for backends)")
+    parser.add_argument("--markdown-output", action="store_true",
+                        help="use markdown output format (legacy, for codex CLI)")
     parser.add_argument(
         "--report", help="write a Markdown run report to this path")
     parser.add_argument("--keep", action="store_true",
@@ -80,12 +82,6 @@ def main() -> int:
         return 2
 
     candidate_path = source_relative_candidate(args.candidate_path)
-    prompt_template = resolve_prompt_template(
-        candidate_path, args.prompt_template, json_output=args.json_output)
-    if not prompt_template.exists():
-        print(
-            f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
-        return 2
 
     candidate = parse_candidate(args.candidate)
 
@@ -104,10 +100,22 @@ def main() -> int:
     # Use backend name in temp directory when not using codex
     backend_name = args.backend or os.environ.get(
         "WIKI_MODEL_BACKEND") or "codex"
+    
+    # JSON output is default for backends, markdown for codex CLI
+    use_json = not args.markdown_output and backend_name != "codex"
+    
     if backend_name != "codex":
         dir_label = backend_name
     else:
         dir_label = candidate.safe_label
+    
+    # Re-resolve prompt template with correct json setting
+    prompt_template = resolve_prompt_template(
+        candidate_path, args.prompt_template, json_output=use_json)
+    if not prompt_template.exists():
+        print(
+            f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
+        return 2
 
     worktree = Path(tempfile.mkdtemp(
         prefix=f"llm-wiki-phase2-single-{args.slug}-{dir_label}.", dir="/tmp"))
@@ -131,7 +139,7 @@ def main() -> int:
             judge_batch=args.judge_batch,
             skip_judge=args.skip_judge,
             extraction_claims=extraction_claims,
-            json_output=args.json_output,
+            json_output=use_json,
         )
         print_result(result)
         if args.report:
