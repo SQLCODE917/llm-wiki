@@ -3,7 +3,7 @@
 ## Sources
 
 - [Compound Interest Notes](sources/compound-interest.md) — This short source defines compound interest as interest added to principal so that future interest is calculated on the updated total. It also gives the standard compound interest…
-- [js-allonge](sources/js-allonge.md) — *Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition Extracted 269 claims from 30 chunks, organized into 12 viable topics.
+- [js-allonge](sources/js-allonge.md) — *Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition Extracted 274 claims from 30 chunks, organized into 12 viable topics.
 - [Noobs guide for AoE2](sources/aoe2-basics.md) — This document is an organized arrangement of gameplay concepts simplified and explained out. It is categorized and each category will be written in order from most important to th…
 
 ## Entities
