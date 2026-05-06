@@ -222,7 +222,7 @@ def render_claims_table(
     slug: str,
 ) -> str:
     """Render claims as a 4-column evidence table.
-    
+
     Each claim-evidence pair gets its own row. If a claim has multiple
     evidence IDs, it's expanded into multiple rows.
     """
@@ -236,12 +236,12 @@ def render_claims_table(
 
     for claim in claims:
         claim_text = claim.claim.replace("|", "\\|")  # Escape pipes
-        
+
         if not claim.evidence_ids:
             # Claim without evidence
             lines.append(f"| {claim_text} | N/A | N/A | {source_cell} |")
             continue
-        
+
         # One row per evidence ID
         for eid in claim.evidence_ids:
             eid_upper = eid.upper()
@@ -253,8 +253,9 @@ def render_claims_table(
             else:
                 evidence_cell = f"[{eid}: not found]"
                 locator_cell = "N/A"
-            
-            lines.append(f"| {claim_text} | {evidence_cell} | {locator_cell} | {source_cell} |")
+
+            lines.append(
+                f"| {claim_text} | {evidence_cell} | {locator_cell} | {source_cell} |")
 
     return "\n".join(lines)
 

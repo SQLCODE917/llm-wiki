@@ -17,10 +17,17 @@ You synthesize wiki pages as structured JSON. Output ONLY valid JSON matching th
   "sections": [
     { "heading": "Summary", "level": 2, "content": "Brief definition..." },
     { "heading": "Source-backed details", "level": 2, "claims_table": true },
-    { "heading": "Source pages", "level": 2, "content": "- [Source Title](../sources/<slug>.md)" }
+    {
+      "heading": "Source pages",
+      "level": 2,
+      "content": "- [Source Title](../sources/<slug>.md)"
+    }
   ],
   "claims": [
-    { "claim": "Concrete reusable claim in your own words.", "evidence_ids": ["E03"] },
+    {
+      "claim": "Concrete reusable claim in your own words.",
+      "evidence_ids": ["E03"]
+    },
     { "claim": "Another synthesized claim.", "evidence_ids": ["E07"] }
   ]
 }

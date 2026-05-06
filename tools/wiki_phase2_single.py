@@ -100,15 +100,15 @@ def main() -> int:
     # Use backend name in temp directory when not using codex
     backend_name = args.backend or os.environ.get(
         "WIKI_MODEL_BACKEND") or "codex"
-    
+
     # JSON output is default for backends, markdown for codex CLI
     use_json = not args.markdown_output and backend_name != "codex"
-    
+
     if backend_name != "codex":
         dir_label = backend_name
     else:
         dir_label = candidate.safe_label
-    
+
     # Re-resolve prompt template with correct json setting
     prompt_template = resolve_prompt_template(
         candidate_path, args.prompt_template, json_output=use_json)
@@ -495,7 +495,7 @@ def run_single_candidate(
                 evidence_bank=evidence_bank,
             )
             repair_prompt = append_claim_repair_hints(repair_prompt, hints)
-        
+
         # Use JSON mode for repairs too if initial was JSON
         if json_output and use_backend:
             returncode, paths, _ = run_with_backend_json(
@@ -504,7 +504,8 @@ def run_single_candidate(
                 prompt=repair_prompt,
                 timeout=timeout,
                 prefix=f"codex-repair-{attempt}",
-                evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
+                evidence_bank=evidence_bank if isinstance(
+                    evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
                 slug=slug,
                 expected_path=selected_candidate.path,
             )
@@ -582,7 +583,7 @@ def run_single_candidate(
                 claim_repair_hints(
                     worktree, selected_repo_path, normalized_source),
             )
-            
+
             # Use JSON mode for judge-repairs too if initial was JSON
             if json_output and use_backend:
                 returncode, paths, _ = run_with_backend_json(
@@ -591,7 +592,8 @@ def run_single_candidate(
                     prompt=repair_prompt,
                     timeout=timeout,
                     prefix=f"codex-judge-repair-{attempt}",
-                    evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
+                    evidence_bank=evidence_bank if isinstance(
+                        evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
                     slug=slug,
                     expected_path=selected_candidate.path,
                 )
