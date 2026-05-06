@@ -44,7 +44,6 @@ class IngestConfig:
     backend: str
     candidate_phase2: str
     candidate_judge: str
-    max_phase2_pages: int
     normalized_source: Path | None
     dry_run: bool
     skip_phase0: bool
@@ -76,8 +75,6 @@ def main() -> int:
     parser.add_argument("--phase2-candidate")
     parser.add_argument("--judge-candidate")
     parser.add_argument("--normalized-source")
-    parser.add_argument("--max-phase2-pages", type=int,
-                        default=10, help="max pages to synthesize (default: 10)")
     parser.add_argument("--timeout", type=int, default=900,
                         help="timeout per synthesis call")
     parser.add_argument("--judge-timeout", type=int, default=900)
@@ -124,7 +121,6 @@ def main() -> int:
             phases.get("phase2") or fallback_candidate),
         candidate_judge=args.judge_candidate or args.candidate or str(
             phases.get("claim_judge") or fallback_candidate),
-        max_phase2_pages=args.max_phase2_pages,
         normalized_source=Path(
             args.normalized_source) if args.normalized_source else None,
         dry_run=args.dry_run,
@@ -245,12 +241,10 @@ def run_ingest(config: IngestConfig) -> int:
 
         # Get candidates from source page
         candidates = next_phase2_candidates_from_state(state, config)
-        print(
-            f"Candidates to synthesize: {len(candidates)} (max {config.max_phase2_pages})")
+        print(f"Candidates to synthesize: {len(candidates)}")
 
-        for i, (topic, page_path) in enumerate(candidates[:config.max_phase2_pages], 1):
-            print(
-                f"\n[{i}/{min(len(candidates), config.max_phase2_pages)}] {topic}")
+        for i, (topic, page_path) in enumerate(candidates, 1):
+            print(f"\n[{i}/{len(candidates)}] {topic}")
 
             # Skip if page already exists
             if Path(page_path.lstrip('../')).exists():
