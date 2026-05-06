@@ -414,6 +414,9 @@ def is_runner_artifact(path: str) -> bool:
         return True
     if re.fullmatch(r"phase2-judge(?:-[A-Za-z0-9_.-]+)?\.(?:md|log)", name):
         return True
+    # JSON output files from structured output mode
+    if re.fullmatch(r"codex-(?:initial|repair-\d+)-output\.json", name):
+        return True
     return False
 
 
