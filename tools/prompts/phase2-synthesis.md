@@ -8,6 +8,7 @@ Source page to read and update: `wiki/sources/{{slug}}.md`
 Normalized source to consult if needed: `{{normalized_source}}`
 
 Allowed writes:
+
 - `wiki/sources/{{slug}}.md`
 - `wiki/concepts/**`
 - `wiki/entities/**`
@@ -15,6 +16,7 @@ Allowed writes:
 - `wiki/references/**`
 
 Forbidden writes:
+
 - `raw/imported/**`
 - `raw/normalized/**`
 - `wiki/index.md`
@@ -31,6 +33,7 @@ Forbidden writes:
 Do not update index, graph, or log. This is Phase 2 only.
 
 Task:
+
 - Existing synthesized pages for this source that should remain linked:
 
 {{existing_pages}}
@@ -42,6 +45,33 @@ Task:
 Evidence bank:
 
 {{evidence_bank}}
+
+CRITICAL FORMAT REQUIREMENTS:
+
+1. **Preserve source text exactly**: Evidence excerpts must match the source verbatim, including accented characters. If the source says "Allongé", write "Allongé". Use straight quotes ("") not curly quotes (""). Use hyphens (-) not em-dashes (—). Avoid mojibake (encoding errors like Ã©).
+
+2. **Complete frontmatter**: Every synthesized page MUST have this exact structure:
+
+   ```yaml
+   ---
+   title: Page Title
+   type: concept
+   tags: []
+   status: draft
+   last_updated: {{current_date}}
+   sources:
+     - ../sources/{{slug}}.md
+   source_ranges:
+     - {{slug}}:normalized:L787-L787
+     - {{slug}}:normalized:L937-L937
+   ---
+   ```
+
+   List EVERY line number you cite in evidence as a separate source_ranges entry.
+
+3. **Required sections**: Every synthesized page MUST have:
+   - `## Source-backed details` with evidence table
+   - `## Source pages` with link to ../sources/{{slug}}.md
 
 - Use only evidence inside each selected page's allowed source range when one is shown in the evidence bank.
 - If no allowed source range is shown, either declare `source_ranges` in the synthesized page frontmatter or stop and report that the source section cannot be range-gated.
@@ -58,8 +88,8 @@ Evidence bank:
 - `## Source-backed details` must contain a Markdown evidence table with this exact header:
 
 ```md
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
+| Claim                    | Evidence                                                 | Locator          | Source                                 |
+| ------------------------ | -------------------------------------------------------- | ---------------- | -------------------------------------- |
 | Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
 ```
 

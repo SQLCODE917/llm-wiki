@@ -4,12 +4,29 @@ Read and follow [AGENTS.md](../AGENTS.md) for all wiki maintenance tasks.
 
 ## Quick Reference
 
-### Ingest a PDF (Phase 0-3)
+### Ingest a PDF (Unified Flow)
 
-1. **Phase 0 - Normalize**: `pnpm wiki:phase0 raw/inbox/<file.pdf> <slug>`
-2. **Phase 1 - Source page**: Create `wiki/sources/<slug>.md`, validate with `pnpm wiki:check-source <slug>`
-3. **Phase 2 - Synthesized pages**: Create concept/entity/procedure/reference pages, validate with `pnpm wiki:check-synthesis <slug>`
-4. **Phase 3 - Finalize**: `pnpm wiki:phase3 <slug>`
+**Preferred**: Use the unified orchestrator for complete ingestion:
+
+```bash
+pnpm wiki:ingest raw/inbox/<file.pdf> --slug <slug> --dry-run  # Preview
+pnpm wiki:ingest raw/inbox/<file.pdf> --slug <slug>            # Run
+```
+
+The unified flow:
+
+1. Phase 0: Normalizes source (PDF to markdown)
+2. Phase 1: Deep extracts claims from all chunks (100% coverage)
+3. Phase 2a: Creates source page from topics
+4. Phase 2b: Synthesizes pages with quality gates
+5. Phase 3: Updates index, graph, and log
+
+**Manual phases** (when needed):
+
+1. `pnpm wiki:phase0 raw/inbox/<file.pdf> <slug>` — normalize only
+2. `pnpm wiki:deep-extract <slug> --extract-only` — extract claims only
+3. `pnpm wiki:phase2-single <slug> <path>` — synthesize one page
+4. `pnpm wiki:phase3 <slug>` — finalize
 
 ### Query the Wiki
 

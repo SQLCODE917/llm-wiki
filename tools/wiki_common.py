@@ -71,7 +71,7 @@ def parse_frontmatter(path: Path) -> Frontmatter:
         return Frontmatter({}, text, ["unterminated YAML frontmatter"])
 
     raw = text[4:end].splitlines()
-    body = text[end + 5 :]
+    body = text[end + 5:]
     data: dict[str, object] = {}
     errors: list[str] = []
     current_key: str | None = None
@@ -103,7 +103,8 @@ def parse_frontmatter(path: Path) -> Frontmatter:
             data[key] = []
         elif value.startswith("[") and value.endswith("]"):
             inside = value[1:-1].strip()
-            data[key] = [] if not inside else [_parse_scalar(part.strip()) for part in inside.split(",")]
+            data[key] = [] if not inside else [_parse_scalar(
+                part.strip()) for part in inside.split(",")]
         else:
             data[key] = _parse_scalar(value)
 
@@ -167,7 +168,8 @@ def markdown_links(path: Path) -> list[MarkdownLink]:
                 links.append(MarkdownLink(target, line_no, None))
                 continue
             if clean.endswith(".md"):
-                links.append(MarkdownLink(target, line_no, (path.parent / clean).resolve()))
+                links.append(MarkdownLink(target, line_no,
+                             (path.parent / clean).resolve()))
             else:
                 links.append(MarkdownLink(target, line_no, None))
     return links
@@ -275,16 +277,19 @@ def context_stats(text: str, label: str = "prompt") -> dict[str, int | str]:
     }
 
 
-def log_context_stats(text: str, label: str = "prompt", warn_threshold: int = 24000) -> None:
+def log_context_stats(text: str, label: str = "prompt", warn_threshold: int = 10000) -> None:
     """Print context statistics. Warn if estimated tokens exceed threshold.
 
-    Default threshold of 24000 tokens is conservative for 30B models with 32K context.
+    Default threshold of 10000 tokens is conservative for 30B models with 32K context.
+    Qwen3-Coder-30B practical budget: 8k-12k input tokens.
     Adjust based on your model's effective context window.
     """
     stats = context_stats(text, label)
-    print(f"Context [{stats['label']}]: {stats['chars']:,} chars, ~{stats['tokens']:,} tokens, {stats['lines']:,} lines")
+    print(
+        f"Context [{stats['label']}]: {stats['chars']:,} chars, ~{stats['tokens']:,} tokens, {stats['lines']:,} lines")
     if stats["tokens"] > warn_threshold:
-        print(f"  WARNING: {stats['label']} exceeds {warn_threshold:,} token threshold - may degrade model performance")
+        print(
+            f"  WARNING: {stats['label']} exceeds {warn_threshold:,} token threshold - may degrade model performance")
 
 
 def truncate_to_tokens(text: str, max_tokens: int, suffix: str = "\n\n[truncated]") -> str:

@@ -8,20 +8,31 @@ from pathlib import Path
 from wiki_common import parse_frontmatter
 
 
-SYNTH_DIRS = ("wiki/concepts", "wiki/entities", "wiki/procedures", "wiki/references")
+SYNTH_DIRS = ("wiki/concepts", "wiki/entities",
+              "wiki/procedures", "wiki/references")
+# Only replace typography issues and mojibake (encoding errors).
+# Preserve legitimate accented characters (é, ñ, etc.) that appear in sources.
 REPLACEMENTS = {
-    "\u00a0": " ",
-    "\u2010": "-",
-    "\u2011": "-",
-    "\u2012": "-",
-    "\u2013": "-",
-    "\u2014": "-",
-    "\u2015": "-",
-    "\u2018": "'",
-    "\u2019": "'",
-    "\u201c": '"',
-    "\u201d": '"',
-    "\u2026": "...",
+    # Typography normalization
+    "\u00a0": " ",   # non-breaking space
+    "\u2010": "-",   # hyphen
+    "\u2011": "-",   # non-breaking hyphen
+    "\u2012": "-",   # figure dash
+    "\u2013": "-",   # en dash
+    "\u2014": "-",   # em dash
+    "\u2015": "-",   # horizontal bar
+    "\u2018": "'",   # left single quote
+    "\u2019": "'",   # right single quote
+    "\u201c": '"',   # left double quote
+    "\u201d": '"',   # right double quote
+    "\u2026": "...",  # ellipsis
+    # Mojibake patterns (UTF-8 misinterpreted as Latin-1)
+    "Ã©": "é",  # preserve accent
+    "Ã¨": "è",
+    "Ã ": "à",
+    "Ã¢": "â",
+    "Ã´": "ô",
+    "Ã§": "ç",
 }
 
 
@@ -30,7 +41,8 @@ def main() -> int:
         description="Normalize common Unicode punctuation to ASCII in synthesized pages for one source."
     )
     parser.add_argument("slug", help="source slug, e.g. aoe2-basics")
-    parser.add_argument("--check", action="store_true", help="do not write; fail if normalization would change files")
+    parser.add_argument("--check", action="store_true",
+                        help="do not write; fail if normalization would change files")
     args = parser.parse_args()
 
     source_path = Path("wiki/sources") / f"{args.slug}.md"
@@ -50,7 +62,8 @@ def main() -> int:
 
     if changed and args.check:
         for page in changed:
-            print(f"FAIL: {page} has common Unicode punctuation that can be normalized")
+            print(
+                f"FAIL: {page} has common Unicode punctuation that can be normalized")
         return 1
     if changed:
         for page in changed:

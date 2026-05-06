@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import shutil
 import subprocess
 import sys
@@ -9,6 +10,7 @@ import tempfile
 import time
 from pathlib import Path
 
+from wiki_model_backend import get_backend, ModelConfig, parse_model_output, write_parsed_files
 from wiki_phase1_benchmark import find_normalized_source, git_changed_files, init_git, parse_candidate, run_codex
 from wiki_phase2_benchmark import (
     RelatedCandidate,
@@ -26,42 +28,59 @@ from wiki_phase2_benchmark import (
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run one atomic Phase 2 synthesis task in a temp worktree.")
+    parser = argparse.ArgumentParser(
+        description="Run one atomic Phase 2 synthesis task in a temp worktree.")
     parser.add_argument("slug", help="source slug, e.g. aoe2-basics")
-    parser.add_argument("candidate_path", help="one Related pages candidate path, e.g. ../procedures/example.md")
-    parser.add_argument("--candidate", default="local-4090", help="local Codex candidate profile or profile:model")
-    parser.add_argument("--normalized-source", help="explicit normalized markdown path")
+    parser.add_argument(
+        "candidate_path", help="one Related pages candidate path, e.g. ../procedures/example.md")
+    parser.add_argument("--candidate", default="local-4090",
+                        help="local Codex candidate profile or profile:model")
+    parser.add_argument("--normalized-source",
+                        help="explicit normalized markdown path")
     parser.add_argument(
         "--prompt-template",
         default="auto",
         help="prompt template path, or 'auto' to choose by selected page type",
     )
     parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument(
+        "--backend", help="Model backend: bedrock, codex, openai, anthropic. Default from WIKI_MODEL_BACKEND or codex")
     parser.add_argument("--timeout", type=int, default=900)
-    parser.add_argument("--repair-attempts", type=int, default=1, help="repair attempts after deterministic validation failures")
-    parser.add_argument("--judge-candidate", help="local Codex candidate for claim judging; defaults to --candidate")
+    parser.add_argument("--repair-attempts", type=int, default=1,
+                        help="repair attempts after deterministic validation failures")
+    parser.add_argument(
+        "--judge-candidate", help="local Codex candidate for claim judging; defaults to --candidate")
     parser.add_argument("--judge-timeout", type=int, default=600)
     parser.add_argument("--judge-repair-attempts", type=int, default=1)
-    parser.add_argument("--judge-batch", action="store_true", help="judge all claim rows in one local-model call")
-    parser.add_argument("--skip-judge", action="store_true", help="only run deterministic validation")
-    parser.add_argument("--report", help="write a Markdown run report to this path")
-    parser.add_argument("--keep", action="store_true", help="keep temp worktree after the run")
+    parser.add_argument("--judge-batch", action="store_true",
+                        help="judge all claim rows in one local-model call")
+    parser.add_argument("--skip-judge", action="store_true",
+                        help="only run deterministic validation")
+    parser.add_argument(
+        "--report", help="write a Markdown run report to this path")
+    parser.add_argument("--keep", action="store_true",
+                        help="keep temp worktree after the run")
     args = parser.parse_args()
 
     repo_root = Path.cwd()
-    normalized_source = Path(args.normalized_source) if args.normalized_source else find_normalized_source(args.slug)
+    normalized_source = Path(
+        args.normalized_source) if args.normalized_source else find_normalized_source(args.slug)
     if not normalized_source.exists():
-        print(f"FAIL: normalized source does not exist: {normalized_source}", file=sys.stderr)
+        print(
+            f"FAIL: normalized source does not exist: {normalized_source}", file=sys.stderr)
         return 2
 
     candidate_path = source_relative_candidate(args.candidate_path)
-    prompt_template = resolve_prompt_template(candidate_path, args.prompt_template)
+    prompt_template = resolve_prompt_template(
+        candidate_path, args.prompt_template)
     if not prompt_template.exists():
-        print(f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
+        print(
+            f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
         return 2
 
     candidate = parse_candidate(args.candidate)
-    worktree = Path(tempfile.mkdtemp(prefix=f"llm-wiki-phase2-single-{args.slug}-{candidate.safe_label}.", dir="/tmp"))
+    worktree = Path(tempfile.mkdtemp(
+        prefix=f"llm-wiki-phase2-single-{args.slug}-{candidate.safe_label}.", dir="/tmp"))
     try:
         copy_repo_contents(repo_root, worktree)
         init_git(worktree)
@@ -73,6 +92,7 @@ def main() -> int:
             candidate_path=candidate_path,
             candidate=candidate,
             codex_bin=args.codex_bin,
+            backend_name=args.backend,
             timeout=args.timeout,
             repair_attempts=args.repair_attempts,
             judge_candidate=args.judge_candidate or args.candidate,
@@ -104,6 +124,69 @@ def resolve_prompt_template(candidate_path: str, raw_template: str) -> Path:
     return Path("tools/prompts/phase2-synthesis.md")
 
 
+def run_with_backend(
+    *,
+    worktree: Path,
+    backend_name: str | None,
+    prompt: str,
+    timeout: int,
+    prefix: str,
+) -> tuple[int | None, list[Path]]:
+    """Run synthesis using model backend abstraction.
+
+    Returns:
+        Tuple of (returncode, log_paths) compatible with run_codex output.
+        returncode is 0 on success, 1 on failure, None on timeout.
+    """
+    from wiki_common import log_context_stats
+
+    log_context_stats(prompt, label=f"{prefix} prompt")
+
+    # Determine backend from env if not specified
+    if backend_name is None:
+        backend_name = os.environ.get("WIKI_MODEL_BACKEND", "codex")
+
+    backend = get_backend(backend_name)
+    config = ModelConfig(
+        worktree=worktree,
+        prefix=prefix,
+        timeout=timeout,
+        save_debug_files=True,
+    )
+
+    response = backend.run(prompt, config)
+    log_paths = list(response.log_paths)
+
+    # Save response output for debugging
+    output_path = worktree / f"{prefix}-output.md"
+    output_path.write_text(response.output)
+    log_paths.append(output_path)
+
+    if not response.success:
+        print(f"  Model error: {response.error}")
+        return 1, log_paths
+
+    # Parse and write files from response
+    files = parse_model_output(response.output)
+    if not files:
+        print(f"  No files found in model output")
+        # Save last-message for compatibility
+        last_message_path = worktree / f"{prefix}-last-message.md"
+        last_message_path.write_text(response.output)
+        log_paths.append(last_message_path)
+        return 1, log_paths
+
+    print(f"  Parsed {len(files)} files from model output")
+    written = write_parsed_files(files, worktree)
+
+    # Save last-message for compatibility with existing code
+    last_message_path = worktree / f"{prefix}-last-message.md"
+    last_message_path.write_text(response.output)
+    log_paths.append(last_message_path)
+
+    return 0, log_paths
+
+
 def run_single_candidate(
     *,
     worktree: Path,
@@ -113,6 +196,7 @@ def run_single_candidate(
     candidate_path: str,
     candidate,
     codex_bin: str,
+    backend_name: str | None,
     timeout: int,
     repair_attempts: int,
     judge_candidate: str,
@@ -125,12 +209,14 @@ def run_single_candidate(
     selected_candidate = find_related_candidate(source_page, candidate_path)
     existing_paths = existing_created_paths(source_page)
     if selected_candidate.path in existing_paths:
-        raise SystemExit(f"candidate is already created: {selected_candidate.path}")
+        raise SystemExit(
+            f"candidate is already created: {selected_candidate.path}")
 
     selected_paths = [selected_candidate.path]
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
-    evidence_bank = build_evidence_bank(worktree, normalized_source, [selected_candidate])
+    evidence_bank = build_evidence_bank(
+        worktree, normalized_source, [selected_candidate])
     selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
@@ -150,14 +236,27 @@ def run_single_candidate(
     log_paths: list[Path] = []
     judge_report_paths: list[Path] = []
 
-    returncode, paths = run_codex(
-        worktree=worktree,
-        candidate=candidate,
-        codex_bin=codex_bin,
-        prompt=prompt,
-        timeout=timeout,
-        prefix="codex-initial",
-    )
+    # Use model backend if specified, otherwise use codex CLI
+    use_backend = backend_name is not None or os.environ.get(
+        "WIKI_MODEL_BACKEND") not in (None, "", "codex")
+
+    if use_backend:
+        returncode, paths = run_with_backend(
+            worktree=worktree,
+            backend_name=backend_name,
+            prompt=prompt,
+            timeout=timeout,
+            prefix="codex-initial",
+        )
+    else:
+        returncode, paths = run_codex(
+            worktree=worktree,
+            candidate=candidate,
+            codex_bin=codex_bin,
+            prompt=prompt,
+            timeout=timeout,
+            prefix="codex-initial",
+        )
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
     validation_returncode = run_validation(
@@ -174,7 +273,8 @@ def run_single_candidate(
         if validation_returncode == 0:
             break
         validation_output = (worktree / "phase2-validation.log").read_text()
-        hints = claim_repair_hints(worktree, selected_repo_path, normalized_source)
+        hints = claim_repair_hints(
+            worktree, selected_repo_path, normalized_source)
         if is_reference_candidate(selected_candidate.path):
             repair_prompt = render_reference_repair_prompt(
                 slug=slug,
@@ -199,14 +299,23 @@ def run_single_candidate(
                 evidence_bank=evidence_bank,
             )
             repair_prompt = append_claim_repair_hints(repair_prompt, hints)
-        returncode, paths = run_codex(
-            worktree=worktree,
-            candidate=candidate,
-            codex_bin=codex_bin,
-            prompt=repair_prompt,
-            timeout=timeout,
-            prefix=f"codex-repair-{attempt}",
-        )
+        if use_backend:
+            returncode, paths = run_with_backend(
+                worktree=worktree,
+                backend_name=backend_name,
+                prompt=repair_prompt,
+                timeout=timeout,
+                prefix=f"codex-repair-{attempt}",
+            )
+        else:
+            returncode, paths = run_codex(
+                worktree=worktree,
+                candidate=candidate,
+                codex_bin=codex_bin,
+                prompt=repair_prompt,
+                timeout=timeout,
+                prefix=f"codex-repair-{attempt}",
+            )
         codex_returncodes.append(returncode)
         log_paths.extend(paths)
         validation_returncode = run_validation(
@@ -244,21 +353,32 @@ def run_single_candidate(
                 expected_total_pages=expected_total_pages,
                 normalized_source=normalized_source,
                 evidence_bank=evidence_bank,
-                judge_report=judge_report.read_text(errors="ignore") if judge_report.exists() else "missing judge report",
+                judge_report=judge_report.read_text(
+                    errors="ignore") if judge_report.exists() else "missing judge report",
                 judge_candidate=judge_candidate,
             )
             repair_prompt = append_claim_repair_hints(
                 repair_prompt,
-                claim_repair_hints(worktree, selected_repo_path, normalized_source),
+                claim_repair_hints(
+                    worktree, selected_repo_path, normalized_source),
             )
-            returncode, paths = run_codex(
-                worktree=worktree,
-                candidate=candidate,
-                codex_bin=codex_bin,
-                prompt=repair_prompt,
-                timeout=timeout,
-                prefix=f"codex-judge-repair-{attempt}",
-            )
+            if use_backend:
+                returncode, paths = run_with_backend(
+                    worktree=worktree,
+                    backend_name=backend_name,
+                    prompt=repair_prompt,
+                    timeout=timeout,
+                    prefix=f"codex-judge-repair-{attempt}",
+                )
+            else:
+                returncode, paths = run_codex(
+                    worktree=worktree,
+                    candidate=candidate,
+                    codex_bin=codex_bin,
+                    prompt=repair_prompt,
+                    timeout=timeout,
+                    prefix=f"codex-judge-repair-{attempt}",
+                )
             codex_returncodes.append(returncode)
             log_paths.extend(paths)
             validation_returncode = run_validation(
@@ -348,7 +468,8 @@ def run_judge(
         stderr=subprocess.STDOUT,
         check=False,
     )
-    (worktree / f"{prefix}.log").write_text("$ " + " ".join(command) + "\n" + completed.stdout)
+    (worktree / f"{prefix}.log").write_text("$ " +
+                                            " ".join(command) + "\n" + completed.stdout)
     return completed.returncode, output
 
 
@@ -544,6 +665,11 @@ def render_judge_repair_prompt(
 
 Repair only the local-judge failures for one Phase 2 synthesized page.
 
+CRITICAL: Make minimal targeted edits only. DO NOT rewrite the page from scratch.
+- Keep the existing `## Source-backed details` and `## Source pages` sections.
+- Fix only the specific rows mentioned in the judge report.
+- Preserve all existing structure and content that passes validation.
+
 Allowed writes:
 - `wiki/sources/{slug}.md`
 - `{selected_repo_path}`
@@ -625,7 +751,8 @@ def find_related_candidate(source_page: Path, candidate_path: str) -> RelatedCan
         if row.path == candidate_path:
             return row
     available = "\n".join(f"- {row.path}" for row in rows) or "- none"
-    raise SystemExit(f"candidate path is not an uncreated Related pages candidate: {candidate_path}\nAvailable:\n{available}")
+    raise SystemExit(
+        f"candidate path is not an uncreated Related pages candidate: {candidate_path}\nAvailable:\n{available}")
 
 
 def source_relative_candidate(raw: str) -> str:
@@ -638,7 +765,8 @@ def source_relative_candidate(raw: str) -> str:
 def print_result(result: dict[str, object]) -> None:
     returncodes = result["codex_returncodes"]
     assert isinstance(returncodes, list)
-    codex_status = ", ".join("timeout" if code is None else str(code) for code in returncodes)
+    codex_status = ", ".join(
+        "timeout" if code is None else str(code) for code in returncodes)
     validation_returncode = result["validation_returncode"]
     validation_status = "pass" if validation_returncode == 0 else f"fail:{validation_returncode}"
     judge_returncode = result["judge_returncode"]
@@ -659,11 +787,13 @@ def print_result(result: dict[str, object]) -> None:
         print("  - None")
     log_paths = result["log_paths"]
     assert isinstance(log_paths, list)
-    print(f"- logs: {', '.join(str(path) for path in log_paths)}, {Path(result['worktree']) / 'phase2-validation.log'}")
+    print(
+        f"- logs: {', '.join(str(path) for path in log_paths)}, {Path(result['worktree']) / 'phase2-validation.log'}")
     judge_report_paths = result["judge_report_paths"]
     assert isinstance(judge_report_paths, list)
     if judge_report_paths:
-        print(f"- judge_reports: {', '.join(str(path) for path in judge_report_paths)}")
+        print(
+            f"- judge_reports: {', '.join(str(path) for path in judge_report_paths)}")
 
 
 def write_report(path: Path, slug: str, candidate_path: str, result: dict[str, object]) -> None:
@@ -699,7 +829,8 @@ def write_report(path: Path, slug: str, candidate_path: str, result: dict[str, o
     lines.append(f"- `{Path(result['worktree']) / 'phase2-validation.log'}`")
     if judge_report_paths:
         lines.extend(["", "## Judge Reports", ""])
-        lines.extend(f"- `{judge_report}`" for judge_report in judge_report_paths)
+        lines.extend(
+            f"- `{judge_report}`" for judge_report in judge_report_paths)
     path.write_text("\n".join(lines) + "\n")
     print(f"wrote {path}")
 

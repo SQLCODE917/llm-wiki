@@ -344,3 +344,59 @@
 - Chunks: 30, Claims: 274, Topics: 14, Pages: 11. Created: functions, es6-features, control-flow, data-types, arrays, +6 more
 
 ---
+
+## [2026-05-05] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-05] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-05] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-05] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-05] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-05] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-06] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---

@@ -2,7 +2,7 @@
   "_meta": {
     "domain": "llm-wiki",
     "version": "0.1.0",
-    "updated": "2026-05-05",
+    "updated": "2026-05-06",
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
@@ -174,17 +174,6 @@
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/arrays": {
-      "type": "concept",
-      "path": "wiki/concepts/arrays.md",
-      "description": "Arrays in JavaScript are zero-based indexed collections that store references to their elements rather than copies, enabling efficient memory usage but requiring careful considera\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
     "wiki:concepts/compound-interest": {
       "type": "concept",
       "path": "wiki/concepts/compound-interest.md",
@@ -196,65 +185,10 @@
         "wiki:sources/compound-interest"
       ]
     },
-    "wiki:concepts/control-flow": {
-      "type": "concept",
-      "path": "wiki/concepts/control-flow.md",
-      "description": "Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a program. In JavaScript, control flow is managed thr\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/data-structures": {
-      "type": "concept",
-      "path": "wiki/concepts/data-structures.md",
-      "description": "Data structures in programming involve strategies for managing how data is stored, accessed, and modified, particularly when multiple tasks or functions interact with shared data.\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/data-types": {
-      "type": "concept",
-      "path": "wiki/concepts/data-types.md",
-      "description": "Data types in JavaScript distinguish between primitive and reference types, where primitives are identical if they have the same type and content, while reference types are unique\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/destructuring-assignment": {
-      "type": "concept",
-      "path": "wiki/concepts/destructuring-assignment.md",
-      "description": "Destructuring assignment is a JavaScript feature that allows extracting values from arrays or objects into distinct variables, providing a concise syntax for accessing and assigni\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/es6-features": {
-      "type": "concept",
-      "path": "wiki/concepts/es6-features.md",
-      "description": "ECMAScript 2015 (ES6) introduced significant improvements that made JavaScript more expressive and easier to write small, powerful components. These enhancements included new synt\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
     "wiki:concepts/functions": {
       "type": "concept",
       "path": "wiki/concepts/functions.md",
-      "description": "In JavaScript, functions are first-class values that can be applied to zero or more arguments to produce a result, serving as fundamental building blocks for programming with func\u2026",
+      "description": "In JavaScript, functions are first-class citizens that can be assigned to variables, passed as arguments to other functions, and returned from functions. They provide a way to enc\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -262,76 +196,10 @@
         "wiki:sources/js-allonge"
       ]
     },
-    "wiki:concepts/iterators-and-generators": {
+    "wiki:concepts/iterators": {
       "type": "concept",
-      "path": "wiki/concepts/iterators-and-generators.md",
-      "description": "Iterators are objects or functions that enable sequential access to elements in a data structure, allowing for lazy evaluation and efficient handling of both finite and infinite c\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/javascript-functions": {
-      "type": "concept",
-      "path": "wiki/concepts/javascript-functions.md",
-      "description": "Functions are first-class citizens in JavaScript, enabling functional programming patterns where functions can be passed as arguments, returned from other functions, and assigned\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/logical-operators": {
-      "type": "concept",
-      "path": "wiki/concepts/logical-operators.md",
-      "description": "Logical operators in JavaScript are control-flow operators that operate on truthiness rather than strict boolean values, with short-circuit evaluation behavior.",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/mutation": {
-      "type": "concept",
-      "path": "wiki/concepts/mutation.md",
-      "description": "Mutation in JavaScript refers to the ability to modify the internal state of arrays and objects after their creation. This process occurs when values are reassigned or new propert\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/objects": {
-      "type": "concept",
-      "path": "wiki/concepts/objects.md",
-      "description": "In JavaScript, objects serve as flexible dictionaries that map string keys to values, enabling the storage of heterogeneous data through literal syntax and supporting various acce\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/recursion": {
-      "type": "concept",
-      "path": "wiki/concepts/recursion.md",
-      "description": "Recursion is a programming technique where a function calls itself to solve problems that exhibit self-similar structures, such as lists and trees. This approach aligns naturally\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/variables": {
-      "type": "concept",
-      "path": "wiki/concepts/variables.md",
-      "description": "In JavaScript, variables declared with `var` are function-scoped rather than block-scoped, meaning they are accessible throughout the entire function in which they are declared, u\u2026",
+      "path": "wiki/concepts/iterators.md",
+      "description": "An iterator is an object that provides a sequence of values, typically through a `next()` method that returns an object with `done` and `value` properties.",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -427,22 +295,11 @@
     "wiki:sources/js-allonge": {
       "type": "source",
       "path": "wiki/sources/js-allonge.md",
-      "description": "JavaScript Allong\u00e9 is a comprehensive guide to functional programming concepts in JavaScript, focusing on the evolution from basic functions to advanced patterns like closures, cu\u2026",
-      "sources": [
-        "../../raw/imported/js-allonge/original.pdf"
-      ],
+      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 267 claims from 30 chunks, organized into 13 viable topics.",
+      "sources": [],
       "depends_on": [
-        "wiki:concepts/arrays",
-        "wiki:concepts/control-flow",
-        "wiki:concepts/data-structures",
-        "wiki:concepts/data-types",
-        "wiki:concepts/es6-features",
         "wiki:concepts/functions",
-        "wiki:concepts/iterators-and-generators",
-        "wiki:concepts/mutation",
-        "wiki:concepts/objects",
-        "wiki:concepts/recursion",
-        "wiki:concepts/variables"
+        "wiki:concepts/iterators"
       ]
     }
   }

@@ -229,9 +229,11 @@ class BedrockBackend(ModelBackend):
         return self._client
 
     def run(self, prompt: str, config: ModelConfig) -> ModelResponse:
-        log_context_stats(prompt, label=f"{config.prefix} prompt (bedrock)")
+        log_context_stats(prompt, label=f"{config.prefix} user prompt")
 
         system_prompt = self._build_system_prompt(config)
+        log_context_stats(
+            system_prompt, label=f"{config.prefix} system prompt")
 
         try:
             response = self.client.converse(
@@ -247,6 +249,17 @@ class BedrockBackend(ModelBackend):
             output_text = response["output"]["message"]["content"][0]["text"]
             stop_reason = response["stopReason"]
             usage = response.get("usage", {})
+
+            # Log actual token usage from API response
+            input_tokens = usage.get("inputTokens", "?")
+            output_tokens = usage.get("outputTokens", "?")
+            total_tokens = usage.get("totalTokens", "?")
+            print(
+                f"  Bedrock API usage: input={input_tokens}, output={output_tokens}, total={total_tokens}")
+            print(f"  Stop reason: {stop_reason}")
+            if stop_reason in ("max_tokens", "length"):
+                print(
+                    f"  WARNING: Output was truncated (max_tokens={self.max_tokens})")
 
             log_paths = self._save_logs(config, prompt, output_text, {
                 "backend": "bedrock",

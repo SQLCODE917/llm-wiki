@@ -1,97 +1,93 @@
 ---
-title: JavaScript Allongé - Six Edition
+title: js-allonge
 type: source
 source_id: js-allonge
 source_type: pdf
 raw_path: ../../raw/imported/js-allonge/
 normalized_path: ../../raw/normalized/js-allonge/
 status: draft
-last_updated: 2026-05-05
+last_updated: 2026-05-06
 tags: []
-sources:
-  - ../../raw/imported/js-allonge/original.pdf
+sources: []
 ---
 
-# JavaScript Allongé - Six Edition
+# js-allonge
 
 ## Summary
 
-JavaScript Allongé is a comprehensive guide to functional programming concepts in JavaScript, focusing on the evolution from basic functions to advanced patterns like closures, currying, and lazy evaluation. The book emphasizes understanding JavaScript's functional capabilities through practical examples and exercises, covering topics such as function composition, data structures, iteration, and recursive algorithms. It explores how JavaScript's unique features enable functional programming styles while maintaining compatibility with traditional imperative approaches.
+*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition
+
+Extracted 267 claims from 30 chunks, organized into 13 viable topics.
 
 ## Key claims
 
 | Claim | Evidence | Locator |
 |---|---|---|
-| JavaScript treats statements and expressions differently, with statements belonging inside blocks and only inside blocks. | "Statements belong inside blocks and only inside blocks. Some languages simplify this by making everything an expression, but JavaScript maintains this distinction, so when learning JavaScript we also learn about statements like function declarations, for loops, if statements, and so forth." | `normalized:L1024` |
-| Function declarations are hoisted to the top of their enclosing scope, allowing helper functions to be defined after their usage. | "Although fizzbuzz is declared later in the function, JavaScript behaves as if we'd written: (function () { const fizzbuzz = function fizzbuzz () { return \"Fizz\" + \"Buzz\"; } return fizzbuzz(); })() The definition of the fizzbuzz is \"hoisted\" to the top of its enclosing scope (an IIFE in this case)." | `normalized:L2074` |
-| The logical OR ( OR ) and AND ( AND ) operators have short-circuit semantics, evaluating expressions only when necessary. | " OR  and  AND  have short-cut semantics. In this case, if n === 0, JavaScript does not evaluate (n !== 1  AND  even(n - 2)). Likewise, if n === 1, JavaScript evaluates n !== 1  AND  even(n - 2) as false without ever evaluating even(n - 2). This is more than just an optimization. It's best to think of  OR  and  AND  as control-flow operators." | `normalized:L3043` |
-| Function parameters are eagerly evaluated, unlike conditional operators which have short-circuit behavior. | "In contrast to the behaviour of the ternary operator,  OR , and  AND , function parameters are always eagerly evaluated:" | `normalized:L3065` |
-| Destructuring assignments support default values similar to function parameters. | "How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters." | `normalized:L4042` |
-| Iterables provide ordered collections where every iteration produces elements in the same sequence. | "The iterables we're discussing represent ordered collections. One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning." | `normalized:L7063` |
-| Lazy evaluation allows for efficient processing of potentially infinite sequences without memory overflow. | "append iterates over a collection of iterables, one element at a time. Things like arrays can be easily catenated, but append iterates lazily, so there's no need to construct intermediary results." | `normalized:L8070` |
-| Tail call optimization enables recursive functions to execute in constant space when properly implemented. | "We have now seen how to use Tail Calls to execute mapWith in constant space:" | `normalized:L4077` |
-| JavaScript's function values allow for powerful closure-based programming patterns. | "Hey, remember that functions in JavaScript are values? Let's get fancy!" | `normalized:L5044` |
+| JavaScript Allongé focuses on teaching fundamental programming concepts through functions, including | "JavaScript Allongé is a book about programming with functions. From functions flow many ideas, from decorators to methods to delegation to mixins, and" | `normalized:L291` |
+| In JavaScript, functions are values that can be passed around and manipulated like other data types. | "In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps. Fun" | `normalized:L757` |
+| In JavaScript, functions are values that can be applied to zero or more arguments to produce a resul | "Let’s put functions to work. The way we use functions is to apply them to zero or more values called arguments. Just as 2 + 2 produces a value (in thi" | `normalized:L794` |
+| Iterators are functions that traverse data structures and return elements one at a time. | "The arrayIterator function takes an array and returns a function we can call repeatedly to obtain the elements of the array." | `normalized:L5610` |
+| Iterator functions can be designed to work with different data structures like arrays and linked lis | "We can write a different iterator for a different data structure. Here's one for linked lists:" | `normalized:L5612` |
+| Iterators can generate data on-demand rather than working with pre-existing data. | "But they could just as easily manufacture the data as they go. Let's consider the simplest example:" | `normalized:L5657` |
+| JavaScript Allongé is a book about programming with functions and teaches how to handle complex code | "JavaScript Allongé is a first and foremost, a book about programming with functions. It's written in JavaScript, because JavaScript hits the perfect s" | `normalized:L169` |
+| The book covers functional programming techniques and shows how to make better use of ES6 features t | "JavaScript Allongé, the "Six" Edition is both a comprehensive tour of its features and a rich collection of techniques for making better use of them. " | `normalized:L390` |
+| Higher-order functions are functions that take functions as arguments, return functions, or both. | "Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a "higher-order" function." | `normalized:L2094` |
+| In JavaScript, all values are also expressions, but not all expressions are values. | "All values are expressions. Say you hand the barista a café Cubano. Yup, you hand over a cup with some coffee infused through partially caramelized su" | `normalized:L507` |
+| JavaScript distinguishes between primitive types (like strings, numbers, booleans) and reference typ | "In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator: 2 === 2 //=> " | `normalized:L554` |
+| Primitive types in JavaScript are identical if they have the same type and content, while reference  | "Third, some types of cups have no distinguishing marks on them. If they are the same kind of cup, and they hold the same contents, we have no way to t" | `normalized:L590` |
+| ECMAScript 2015 (ES6) introduced significant improvements to JavaScript including block-structured v | "ECMAScript 2015 (formerly called ECMAScript 6 or "ES6"), is ushering in a very large number of improvements to the way programmers can write small, po" | `normalized:L184` |
+| ES6 includes better syntax for existing features, new functionality in the standard library, and com | "ECMAScript 6 has three major groups of features: • Better syntax for features that already exist (e.g. via libraries). For example: classes and module" | `normalized:L382` |
+| ECMAScript 6 was developed as a successor to ECMAScript 3, replacing the abandoned ECMAScript 4 plan | "After internal conflict, a settlement was reached in July 2008 and a new plan was made – to abandon ECMAScript 4 and to replace it with two upgrades:" | `normalized:L375` |
+
 
 ## Major concepts
 
-- Functional programming in JavaScript
-- Statements vs expressions
-- Function hoisting and scope
-- Logical operators and short-circuit evaluation
-- Destructuring with defaults
-- Iterables and lazy evaluation
-- Tail call optimization
-- Closures and function values
-- Recursive algorithms
-- Data structure manipulation
-
 ### Natural groupings
 
-| Group | Scope | Evidence basis | Candidate page types |
-|---|---|---|---|
-| Basic Functions | Introduction to JavaScript functions and their behavior | function declarations, statements, expressions | concept |
-| Control Flow Operators | Logical OR ( OR ) and AND ( AND ) operators with short-circuit behavior | short-circuit semantics, conditional evaluation | concept |
-| Destructuring and Defaults | Pattern matching with default values for variables and parameters | destructuring assignments, default parameters | concept |
-| Iteration and Collections | Working with iterables, lazy evaluation, and ordered collections | iterables, generators, append function | concept |
-| Recursion and Tail Calls | Recursive algorithms and tail call optimization techniques | recursive functions, tail call elimination | concept |
-| Closures and Function Values | Using functions as values and creating closures | closure examples, function values | concept |
+- **Functions** (64 claims)
+- **Iterators** (48 claims)
+- **Functional Programming** (37 claims)
+- **Data Types** (20 claims)
+- **ES6 Features** (14 claims)
+- **Control Flow** (14 claims)
+- **Objects** (14 claims)
+- **Arrays** (12 claims)
+- **Recursion** (8 claims)
+- **Variables** (8 claims)
+- **Closures** (7 claims)
+- **Generators** (7 claims)
+- **Data Structures** (4 claims)
 
 ## Entities
 
-None.
+None identified.
 
 ## Procedures
 
-None.
+None identified.
 
 ## References
 
-None.
+None identified.
 
 ## Open questions
 
-None.
+- Additional topics may emerge from deeper analysis
 
 ## Related pages
 
 | Candidate page | Intended path | Group | Priority | Evidence basis | Status |
 |---|---|---|---|---|---|
-| JavaScript Functions | `../concepts/js-functions.md` | Basic Functions | must create | function declarations, statements, expressions | not created yet |
-| Short-Circuit Evaluation | `../concepts/short-circuit-evaluation.md` | Control Flow Operators | must create | logical operators  OR  and  AND  with short-circuit behavior | not created yet |
-| Destructuring with Defaults | `../concepts/destructuring-defaults.md` | Destructuring and Defaults | must create | destructuring assignments with defaults | not created yet |
-| Lazy Evaluation | `../concepts/lazy-evaluation.md` | Iteration and Collections | must create | iterables, lazy evaluation techniques | not created yet |
-| Tail Call Optimization | `../concepts/tail-call-optimization.md` | Recursion and Tail Calls | must create | tail call elimination, recursive functions | not created yet |
-| Closures | `../concepts/closures.md` | Closures and Function Values | must create | function values, closure examples | not created yet |
-| Functional Programming in JavaScript | `../concepts/functional-programming-js.md` | Basic Functions | should create | overall functional programming approach | not created yet |
-| Iterables and Generators | `../concepts/iterables-generators.md` | Iteration and Collections | should create | ordered collections, generators | not created yet |
-| Functions | [../concepts/functions.md](../concepts/functions.md) | Deep extraction | must create | 105 claims | created |
-| Es6 Features | [../concepts/es6-features.md](../concepts/es6-features.md) | Deep extraction | must create | 18 claims | created |
-| Control Flow | [../concepts/control-flow.md](../concepts/control-flow.md) | Deep extraction | must create | 17 claims | created |
-| Data Types | [../concepts/data-types.md](../concepts/data-types.md) | Deep extraction | must create | 25 claims | created |
-| Arrays | [../concepts/arrays.md](../concepts/arrays.md) | Deep extraction | must create | 13 claims | created |
-| Recursion | [../concepts/recursion.md](../concepts/recursion.md) | Deep extraction | must create | 11 claims | created |
-| Objects | [../concepts/objects.md](../concepts/objects.md) | Deep extraction | must create | 10 claims | created |
-| Mutation | [../concepts/mutation.md](../concepts/mutation.md) | Deep extraction | must create | 3 claims | created |
-| Variables | [../concepts/variables.md](../concepts/variables.md) | Deep extraction | must create | 3 claims | created |
-| Data Structures | [../concepts/data-structures.md](../concepts/data-structures.md) | Deep extraction | must create | 4 claims | created |
-| Iterators And Generators | [../concepts/iterators-and-generators.md](../concepts/iterators-and-generators.md) | Deep extraction | must create | 50 claims | created |
+| Arrays | `../concepts/arrays.md` | Deep extraction | must create | 12 claims | not created yet |
+| Closures | `../concepts/closures.md` | Deep extraction | should create | 7 claims | not created yet |
+| Control Flow | `../concepts/control-flow.md` | Deep extraction | must create | 14 claims | not created yet |
+| Data Structures | `../concepts/data-structures.md` | Deep extraction | could create | 4 claims | not created yet |
+| Data Types | `../concepts/data-types.md` | Deep extraction | must create | 20 claims | not created yet |
+| ES6 Features | `../concepts/es6-features.md` | Deep extraction | must create | 14 claims | not created yet |
+| Functional Programming | [../concepts/functional-programming.md](../concepts/functional-programming.md) | Deep extraction | must create | 37 claims | created |
+| Functions | [../concepts/functions.md](../concepts/functions.md) | Deep extraction | must create | 64 claims | created |
+| Generators | `../concepts/generators.md` | Deep extraction | should create | 7 claims | not created yet |
+| Iterators | [../concepts/iterators.md](../concepts/iterators.md) | Deep extraction | must create | 48 claims | created |
+| Objects | `../concepts/objects.md` | Deep extraction | must create | 14 claims | not created yet |
+| Recursion | `../concepts/recursion.md` | Deep extraction | must create | 8 claims | not created yet |
+| Variables | `../concepts/variables.md` | Deep extraction | must create | 8 claims | not created yet |

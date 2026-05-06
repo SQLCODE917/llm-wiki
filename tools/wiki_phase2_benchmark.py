@@ -32,7 +32,8 @@ from wiki_phase1_benchmark import (
 )
 
 
-PRIORITY_ORDER = {"must create": 0, "should create": 1, "could create": 2, "defer": 3}
+PRIORITY_ORDER = {"must create": 0,
+                  "should create": 1, "could create": 2, "defer": 3}
 
 
 @dataclass
@@ -68,8 +69,10 @@ def main() -> int:
             "Example: --candidate local-4090 --candidate local-4090:gpt-oss:20b"
         ),
     )
-    parser.add_argument("--normalized-source", help="explicit normalized markdown path")
-    parser.add_argument("--prompt-template", default="tools/prompts/phase2-synthesis.md")
+    parser.add_argument("--normalized-source",
+                        help="explicit normalized markdown path")
+    parser.add_argument("--prompt-template",
+                        default="tools/prompts/phase2-synthesis.md")
     parser.add_argument("--codex-bin", default="codex")
     parser.add_argument("--timeout", type=int, default=900)
     parser.add_argument("--min-pages", type=int, default=5)
@@ -80,22 +83,28 @@ def main() -> int:
         default=1,
         help="number of extra Codex repair prompts to run after failed validation",
     )
-    parser.add_argument("--report", help="write a Markdown benchmark report to this path")
-    parser.add_argument("--keep", action="store_true", help="keep temp worktrees after the run")
+    parser.add_argument(
+        "--report", help="write a Markdown benchmark report to this path")
+    parser.add_argument("--keep", action="store_true",
+                        help="keep temp worktrees after the run")
     args = parser.parse_args()
 
     repo_root = Path.cwd()
-    normalized_source = Path(args.normalized_source) if args.normalized_source else find_normalized_source(args.slug)
+    normalized_source = Path(
+        args.normalized_source) if args.normalized_source else find_normalized_source(args.slug)
     if not normalized_source.exists():
-        print(f"FAIL: normalized source does not exist: {normalized_source}", file=sys.stderr)
+        print(
+            f"FAIL: normalized source does not exist: {normalized_source}", file=sys.stderr)
         return 2
 
     prompt_template = Path(args.prompt_template)
     if not prompt_template.exists():
-        print(f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
+        print(
+            f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
         return 2
 
-    candidates = [parse_candidate(raw) for raw in (args.candidate or ["local-4090"])]
+    candidates = [parse_candidate(raw)
+                  for raw in (args.candidate or ["local-4090"])]
     results: list[Result] = []
 
     for candidate in candidates:
@@ -136,7 +145,8 @@ def run_candidate(
     repair_attempts: int,
 ) -> Result:
     worktree = Path(
-        tempfile.mkdtemp(prefix=f"llm-wiki-phase2-{slug}-{candidate.safe_label}.", dir="/tmp")
+        tempfile.mkdtemp(
+            prefix=f"llm-wiki-phase2-{slug}-{candidate.safe_label}.", dir="/tmp")
     )
     copy_repo(repo_root, worktree)
     init_git(worktree)
@@ -147,7 +157,8 @@ def run_candidate(
     selected_paths = [candidate.path for candidate in selected_candidates]
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
-    evidence_bank = build_evidence_bank(worktree, normalized_source, selected_candidates)
+    evidence_bank = build_evidence_bank(
+        worktree, normalized_source, selected_candidates)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
         slug=slug,
@@ -289,11 +300,13 @@ def run_validation(
         normalized_source.as_posix(),
     ]
     for path in selected_paths:
-        synthesis_command.extend(["--allowed-page", source_relative_to_repo(path)])
+        synthesis_command.extend(
+            ["--allowed-page", source_relative_to_repo(path)])
     if selected_paths:
         synthesis_command.append("--require-allowed-pages")
     for path in range_paths or []:
-        synthesis_command.extend(["--range-page", source_relative_to_repo(path)])
+        synthesis_command.extend(
+            ["--range-page", source_relative_to_repo(path)])
 
     reference_repair_commands = [
         [
@@ -332,12 +345,14 @@ def run_validation(
         if completed.returncode != 0 and returncode == 0:
             returncode = completed.returncode
 
-    scope_failures = changed_file_scope_failures(worktree, slug, selected_paths)
+    scope_failures = changed_file_scope_failures(
+        worktree, slug, selected_paths)
     cleanup_messages = cleanup_backup_artifacts(worktree, slug, selected_paths)
     if cleanup_messages:
         outputs.append("$ backup artifact cleanup")
         outputs.extend(cleanup_messages)
-        scope_failures = changed_file_scope_failures(worktree, slug, selected_paths)
+        scope_failures = changed_file_scope_failures(
+            worktree, slug, selected_paths)
     if scope_failures:
         outputs.append("$ changed-file scope check")
         outputs.extend(f"FAIL: {failure}" for failure in scope_failures)
@@ -372,17 +387,20 @@ def cleanup_backup_artifacts(worktree: Path, slug: str, allowed_paths: list[str]
             artifact = Path(str(base) + suffix)
             if artifact.exists() and artifact.is_file():
                 artifact.unlink()
-                messages.append(f"removed {artifact.relative_to(worktree).as_posix()}")
+                messages.append(
+                    f"removed {artifact.relative_to(worktree).as_posix()}")
     for name in ("temp_file.md", "temp.md", "scratch.md"):
         artifact = worktree / name
         if artifact.exists() and artifact.is_file():
             artifact.unlink()
-            messages.append(f"removed {artifact.relative_to(worktree).as_posix()}")
+            messages.append(
+                f"removed {artifact.relative_to(worktree).as_posix()}")
     return messages
 
 
 def changed_status_path(line: str) -> str:
-    value = line[3:].strip() if len(line) > 3 and line[2] == " " else line[2:].strip()
+    value = line[3:].strip() if len(
+        line) > 3 and line[2] == " " else line[2:].strip()
     if " -> " in value:
         value = value.split(" -> ", 1)[1].strip()
     return value
@@ -417,6 +435,11 @@ def render_repair_prompt(
     return f"""Read `AGENTS.md` fully before acting.
 
 Repair only Phase 2 synthesis for `wiki/sources/{slug}.md`.
+
+CRITICAL: Make minimal targeted edits only. DO NOT rewrite pages from scratch.
+- If a page has the required sections (`## Source-backed details`, `## Source pages`), keep them.
+- Fix only the specific FAIL items listed below.
+- Preserve all existing structure and content that passes validation.
 
 Allowed writes:
 - `wiki/sources/{slug}.md`
@@ -500,7 +523,8 @@ If validation still fails, repair only the allowed files and rerun the same comm
 
 
 def print_result(result: Result) -> None:
-    codex_status = ", ".join("timeout" if code is None else str(code) for code in result.codex_returncodes)
+    codex_status = ", ".join("timeout" if code is None else str(
+        code) for code in result.codex_returncodes)
     validation_status = "pass" if result.validation_returncode == 0 else f"fail:{result.validation_returncode}"
     print(f"\n## {result.candidate.label}")
     print(f"- worktree: {result.worktree}")
@@ -529,7 +553,8 @@ def write_report(path: Path, slug: str, results: list[Result]) -> None:
         "|---|---:|---|---|---|",
     ]
     for result in results:
-        codex_status = ", ".join("timeout" if code is None else str(code) for code in result.codex_returncodes)
+        codex_status = ", ".join("timeout" if code is None else str(
+            code) for code in result.codex_returncodes)
         validation_status = "pass" if result.validation_returncode == 0 else f"fail:{result.validation_returncode}"
         lines.append(
             f"| {result.candidate.label} | {result.duration_s:.1f}s | {codex_status} | {validation_status} | `{result.worktree}` |"
@@ -589,9 +614,12 @@ def related_candidate_rows(markdown: str) -> list[RelatedCandidate]:
         if status != "not created yet" or target is None:
             continue
         group = cells[2].strip() if len(cells) == 6 else None
-        priority = cells[3].strip().lower() if len(cells) == 6 else cells[2].strip().lower() if len(cells) == 5 else "should create"
-        evidence_basis = cells[4].strip() if len(cells) == 6 else cells[3].strip() if len(cells) == 5 else None
-        rows.append(RelatedCandidate(path=target, group=group, priority=priority, evidence_basis=evidence_basis, index=index))
+        priority = cells[3].strip().lower() if len(cells) == 6 else cells[2].strip(
+        ).lower() if len(cells) == 5 else "should create"
+        evidence_basis = cells[4].strip() if len(
+            cells) == 6 else cells[3].strip() if len(cells) == 5 else None
+        rows.append(RelatedCandidate(path=target, group=group,
+                    priority=priority, evidence_basis=evidence_basis, index=index))
     return rows
 
 
@@ -602,7 +630,8 @@ def render_selected_candidates(candidates: list[RelatedCandidate]) -> str:
     for candidate in candidates:
         group = candidate.group or "unclassified"
         evidence_basis = f"; evidence basis: {candidate.evidence_basis}" if candidate.evidence_basis else ""
-        lines.append(f"- `{candidate.path}` - group: {group}; priority: {candidate.priority}{evidence_basis}")
+        lines.append(
+            f"- `{candidate.path}` - group: {group}; priority: {candidate.priority}{evidence_basis}")
     return "\n".join(lines)
 
 
@@ -613,7 +642,8 @@ def render_existing_pages(paths: list[str]) -> str:
 
 
 def build_evidence_bank(worktree: Path, normalized_source: Path, selected_candidates: list[str | RelatedCandidate]) -> str:
-    source_path = normalized_source if normalized_source.is_absolute() else worktree / normalized_source
+    source_path = normalized_source if normalized_source.is_absolute() else worktree / \
+        normalized_source
     if not source_path.exists():
         return "No evidence bank available; normalized source was not found."
     source_text = source_path.read_text(errors="ignore")
@@ -622,18 +652,22 @@ def build_evidence_bank(worktree: Path, normalized_source: Path, selected_candid
     sections: list[str] = []
     for candidate in selected_candidates:
         query = evidence_query(candidate)
-        ranges = source_ranges_for_candidate(candidate_path(candidate), lines, candidate_title(candidate))
-        candidate_chunks = chunks_in_ranges(chunks, ranges) if ranges else chunks
+        ranges = source_ranges_for_candidate(candidate_path(
+            candidate), lines, candidate_title(candidate))
+        candidate_chunks = chunks_in_ranges(
+            chunks, ranges) if ranges else chunks
         snippets = snippets_for_candidate(query, candidate_chunks, limit=10)
         sections.append(f"### {query}")
         if ranges:
-            sections.append(f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
+            sections.append(
+                f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
         else:
             sections.append(
                 "Allowed source range: not derived from headings. The created page must declare `source_ranges` if validation is range-gated."
             )
         if snippets:
-            sections.extend(f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
+            sections.extend(
+                f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
         else:
             sections.append("- not covered in sources")
         sections.append("")

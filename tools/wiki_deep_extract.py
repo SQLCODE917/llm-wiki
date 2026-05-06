@@ -63,6 +63,15 @@ class Chunk:
             "title": self.title,
         }
 
+    @classmethod
+    def from_dict(cls, d: dict) -> "Chunk":
+        return cls(
+            index=d["index"],
+            start_line=d["start"],
+            end_line=d["end"],
+            title=d.get("title", ""),
+        )
+
 
 @dataclass
 class Claim:
@@ -127,7 +136,7 @@ class ExtractionState:
             slug=d["slug"],
             source_path=d["source_path"],
             total_lines=d["total_lines"],
-            chunks=[Chunk(**c) for c in d["chunks"]],
+            chunks=[Chunk.from_dict(c) for c in d["chunks"]],
             processed_chunks=set(d.get("processed_chunks", [])),
             claims=[Claim.from_dict(c) for c in d.get("claims", [])],
             pages_created=d.get("pages_created", []),
@@ -812,6 +821,158 @@ def update_source_related_pages(source_page: Path, state: ExtractionState):
 
 
 # ============================================================================
+# API for unified ingest
+# ============================================================================
+
+def get_state_path(slug: str) -> Path:
+    """Get the state file path for a slug."""
+    return Path(f".tmp/deep-extract/{slug}/state.json")
+
+
+def load_extraction_state(slug: str) -> ExtractionState | None:
+    """Load extraction state for a slug if it exists."""
+    state_path = get_state_path(slug)
+    if state_path.exists():
+        return ExtractionState.load(state_path)
+    return None
+
+
+def create_source_page_from_topics(
+    slug: str,
+    state: ExtractionState,
+    source_path: Path,
+    min_claims_per_topic: int = 3,
+) -> Path:
+    """Create a source page from extracted topics/claims.
+
+    This is used by the unified ingest flow to create the source page
+    after claim extraction, listing topics as Related pages candidates.
+    """
+    today = date.today().isoformat()
+
+    # Read source for summary
+    source_text = source_path.read_text()
+    source_lines = source_text.splitlines()
+
+    # Get first meaningful lines for summary
+    summary_lines = []
+    for line in source_lines[:100]:
+        if line.strip() and not line.startswith('#') and not line.startswith('<!--'):
+            summary_lines.append(line.strip())
+            if len(summary_lines) >= 3:
+                break
+    summary = ' '.join(summary_lines)[
+        :300] if summary_lines else 'No summary available.'
+
+    # Filter viable topics
+    viable_topics = {
+        topic: claims
+        for topic, claims in state.topics.items()
+        if len(claims) >= min_claims_per_topic
+    }
+
+    # Build key claims table from top claims across all topics
+    key_claims = []
+    for topic, claims in sorted(viable_topics.items(), key=lambda x: -len(x[1])):
+        for claim in claims[:3]:  # Top 3 from each topic
+            key_claims.append(claim)
+    key_claims = key_claims[:15]  # Limit total
+
+    claims_table = "| Claim | Evidence | Locator |\n|---|---|---|\n"
+    for c in key_claims:
+        # Clean evidence for table
+        evidence = c.evidence.replace('|', '\\|').replace('\n', ' ')[:150]
+        claims_table += f"| {c.claim[:100]} | \"{evidence}\" | `{c.locator}` |\n"
+
+    # Build Related pages candidate table
+    related_rows = []
+    for topic in sorted(viable_topics.keys()):
+        claims = viable_topics[topic]
+        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
+        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_path = f"../concepts/{page_slug}.md"
+
+        # Determine priority based on claim count
+        count = len(claims)
+        if count >= 8:
+            priority = "must create"
+        elif count >= 5:
+            priority = "should create"
+        else:
+            priority = "could create"
+
+        related_rows.append(
+            f"| {topic} | `{page_path}` | Deep extraction | {priority} | {count} claims | not created yet |"
+        )
+
+    related_table = "| Candidate page | Intended path | Group | Priority | Evidence basis | Status |\n|---|---|---|---|---|---|\n"
+    related_table += "\n".join(related_rows)
+
+    # Build topics list
+    topics_list = []
+    for topic, claims in sorted(viable_topics.items(), key=lambda x: -len(x[1])):
+        topics_list.append(f"- **{topic}** ({len(claims)} claims)")
+
+    content = f"""---
+title: {slug}
+type: source
+source_id: {slug}
+source_type: pdf
+raw_path: ../../raw/imported/{slug}/
+normalized_path: ../../raw/normalized/{slug}/
+status: draft
+last_updated: {today}
+tags: []
+sources: []
+---
+
+# {slug}
+
+## Summary
+
+{summary}
+
+Extracted {len(state.claims)} claims from {len(state.processed_chunks)} chunks, organized into {len(viable_topics)} viable topics.
+
+## Key claims
+
+{claims_table}
+
+## Major concepts
+
+### Natural groupings
+
+{chr(10).join(topics_list)}
+
+## Entities
+
+None identified.
+
+## Procedures
+
+None identified.
+
+## References
+
+None identified.
+
+## Open questions
+
+- Additional topics may emerge from deeper analysis
+
+## Related pages
+
+{related_table}
+"""
+
+    source_page = Path(f"wiki/sources/{slug}.md")
+    source_page.parent.mkdir(parents=True, exist_ok=True)
+    source_page.write_text(content)
+
+    return source_page
+
+
+# ============================================================================
 # Main Workflow
 # ============================================================================
 
@@ -984,7 +1145,14 @@ def main() -> int:
                         help="Skip page synthesis (extraction only)")
     parser.add_argument("--skip-finalize", action="store_true",
                         help="Skip finalization (index/graph/log)")
+    parser.add_argument("--extract-only", action="store_true",
+                        help="Extract claims only, no synthesis or finalization (alias for --skip-synthesis --skip-finalize)")
     args = parser.parse_args()
+
+    # --extract-only is shorthand for --skip-synthesis --skip-finalize
+    if args.extract_only:
+        args.skip_synthesis = True
+        args.skip_finalize = True
 
     if args.dry_run:
         # Just show chunks

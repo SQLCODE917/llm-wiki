@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-05",
+  "updated": "2026-05-06",
   "backend": "codex",
   "default_candidate": "local-4090",
   "backends": {
@@ -12,8 +12,14 @@
       "type": "scripted",
       "region": "us-east-1",
       "model_id": "qwen.qwen3-coder-30b-a3b-v1:0",
-      "max_tokens": 8192,
-      "temperature": 0.1
+      "max_tokens": 4096,
+      "temperature": 0.1,
+      "_notes": {
+        "context_window": "32768 total tokens",
+        "practical_input_budget": "8k-12k tokens",
+        "output_reserve": "2k-4k tokens",
+        "max_tokens_is_output_only": true
+      }
     },
     "openai": {
       "type": "scripted",

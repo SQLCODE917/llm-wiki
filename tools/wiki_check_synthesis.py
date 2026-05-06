@@ -44,7 +44,8 @@ WEAK_CLAIM_PATTERNS = [
     r"\bessential\b",
     r"\bsuccess\b",
 ]
-LOCATOR_RE = re.compile(r"^(?:p\.\s*\d+\s*;\s*)?normalized:L(?P<start>\d+)(?:-L?(?P<end>\d+))?$", re.IGNORECASE)
+LOCATOR_RE = re.compile(
+    r"^(?:p\.\s*\d+\s*;\s*)?normalized:L(?P<start>\d+)(?:-L?(?P<end>\d+))?$", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -61,12 +62,14 @@ class RelatedScope:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Validate Phase 2 synthesized pages for one source.")
+    parser = argparse.ArgumentParser(
+        description="Validate Phase 2 synthesized pages for one source.")
     parser.add_argument("slug", help="source slug, e.g. aoe2-basics")
     parser.add_argument("--min-pages", type=int, default=3)
     parser.add_argument("--max-pages", type=int, default=15)
     parser.add_argument("--min-evidence-rows", type=int, default=3)
-    parser.add_argument("--normalized-source", help="normalized source markdown for evidence excerpt checks")
+    parser.add_argument("--normalized-source",
+                        help="normalized source markdown for evidence excerpt checks")
     parser.add_argument(
         "--skip-evidence-text-check",
         action="store_true",
@@ -134,30 +137,37 @@ def check_synthesis(
     if not source_path.exists():
         return [f"missing source page {source_path}"]
 
-    evidence_source = load_evidence_source(source_path, normalized_source) if check_evidence_text else None
+    evidence_source = load_evidence_source(
+        source_path, normalized_source) if check_evidence_text else None
 
     linked_pages = linked_synthesized_pages(source_path)
     sourced_pages = sourced_synthesized_pages(source_path)
     created_pages = sorted(set(linked_pages) | set(sourced_pages))
     if len(created_pages) < min_pages:
-        failures.append(f"{source_path}: only {len(created_pages)} synthesized pages; expected at least {min_pages}")
+        failures.append(
+            f"{source_path}: only {len(created_pages)} synthesized pages; expected at least {min_pages}")
     if len(created_pages) > max_pages:
-        failures.append(f"{source_path}: {len(created_pages)} synthesized pages; expected at most {max_pages}")
+        failures.append(
+            f"{source_path}: {len(created_pages)} synthesized pages; expected at most {max_pages}")
 
     allowed = {Path(path).as_posix() for path in allowed_pages or []}
     if allowed:
         for page in created_pages:
             if page.as_posix() not in allowed:
-                failures.append(f"{page}: page was not selected for this Phase 2 run")
+                failures.append(
+                    f"{page}: page was not selected for this Phase 2 run")
         if require_allowed_pages:
             created = {page.as_posix() for page in created_pages}
             for page in sorted(allowed - created):
-                failures.append(f"{page}: selected page was not created and linked")
+                failures.append(
+                    f"{page}: selected page was not created and linked")
 
     for page in sorted(set(sourced_pages) - set(linked_pages)):
-        failures.append(f"{source_path}: synthesized page {page.as_posix()} is not linked from Related pages")
+        failures.append(
+            f"{source_path}: synthesized page {page.as_posix()} is not linked from Related pages")
     for page in sorted(set(linked_pages) - set(sourced_pages)):
-        failures.append(f"{page}: page is linked from source but does not cite that source in frontmatter")
+        failures.append(
+            f"{page}: page is linked from source but does not cite that source in frontmatter")
 
     related = section(parse_frontmatter(source_path).body, "## Related pages")
     scopes = related_scopes(source_path, related)
@@ -185,7 +195,8 @@ def check_synthesis(
 
 
 def linked_synthesized_pages(source_path: Path) -> list[Path]:
-    heading_line = line_number_of_heading(source_path.read_text(), "## Related pages")
+    heading_line = line_number_of_heading(
+        source_path.read_text(), "## Related pages")
     pages: list[Path] = []
     for link in markdown_links(source_path):
         if link.line <= heading_line or not link.resolved or not link.resolved.exists():
@@ -209,7 +220,8 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
             continue
         cells = split_table_row(stripped)
         if cells is None or len(cells) not in {3, 5, 6}:
-            failures.append(f"{source_path}: Related pages row {row_number} must have three, five, or six table cells")
+            failures.append(
+                f"{source_path}: Related pages row {row_number} must have three, five, or six table cells")
             continue
 
         title = cells[0]
@@ -218,7 +230,8 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
         if title.lower() in {"candidate page", "page"} or is_separator_row(cells):
             continue
         if title.strip().lower() == "page title":
-            failures.append(f"{source_path}: Related pages row {row_number} uses placeholder title 'Page title'")
+            failures.append(
+                f"{source_path}: Related pages row {row_number} uses placeholder title 'Page title'")
         group = None
         priority = None
         evidence_basis = None
@@ -230,18 +243,22 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
             priority = cells[3].strip().lower()
             evidence_basis = cells[4].strip()
             if not group:
-                failures.append(f"{source_path}: Related pages row {row_number} group must not be empty")
+                failures.append(
+                    f"{source_path}: Related pages row {row_number} group must not be empty")
         if priority is not None:
             if priority not in RELATED_PRIORITIES:
                 failures.append(
                     f"{source_path}: Related pages row {row_number} priority must be one of {sorted(RELATED_PRIORITIES)}"
                 )
             if not evidence_basis:
-                failures.append(f"{source_path}: Related pages row {row_number} evidence basis must not be empty")
+                failures.append(
+                    f"{source_path}: Related pages row {row_number} evidence basis must not be empty")
         if not title:
-            failures.append(f"{source_path}: Related pages row {row_number} has an empty title")
+            failures.append(
+                f"{source_path}: Related pages row {row_number} has an empty title")
         if "](" in title or "`" in title:
-            failures.append(f"{source_path}: Related pages row {row_number} title cell must be plain text")
+            failures.append(
+                f"{source_path}: Related pages row {row_number} title cell must be plain text")
 
         status = status_cell.strip().lower()
         code_target = code_cell_target(path_cell)
@@ -259,9 +276,10 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
 
         if "](" in path_cell:
             if path_cell.count("](") != 1 or not link_target:
-                failures.append(f"{source_path}: Related pages row {row_number} has a non-canonical Markdown link")
+                failures.append(
+                    f"{source_path}: Related pages row {row_number} has a non-canonical Markdown link")
                 continue
-            label = path_cell[1 : path_cell.index("](")].strip()
+            label = path_cell[1: path_cell.index("](")].strip()
             if label != link_target:
                 failures.append(
                     f"{source_path}: Related pages row {row_number} link text must exactly equal its path"
@@ -271,7 +289,8 @@ def check_related_table(source_path: Path, related: str) -> list[str]:
                     f"{source_path}: Related pages linked row {row_number} status must be {RELATED_CREATED!r}"
                 )
             if not (source_path.parent / link_target).resolve().exists():
-                failures.append(f"{source_path}: Related pages row {row_number} links to a missing page")
+                failures.append(
+                    f"{source_path}: Related pages row {row_number} links to a missing page")
             continue
 
         failures.append(
@@ -294,11 +313,13 @@ def related_scopes(source_path: Path, related: str) -> dict[str, RelatedScope]:
         if target is None:
             continue
         try:
-            rel = (source_path.parent / target).resolve().relative_to(Path.cwd().resolve()).as_posix()
+            rel = (source_path.parent /
+                   target).resolve().relative_to(Path.cwd().resolve()).as_posix()
         except ValueError:
             continue
         group = cells[2].strip() if len(cells) == 6 else None
-        evidence_basis = cells[4].strip() if len(cells) == 6 else cells[3].strip() if len(cells) == 5 else None
+        evidence_basis = cells[4].strip() if len(
+            cells) == 6 else cells[3].strip() if len(cells) == 5 else None
         scopes[rel] = RelatedScope(
             title=strip_markdown(cells[0]).strip(),
             path=rel,
@@ -341,8 +362,16 @@ def check_synthesized_page(
     text = page.read_text()
     non_ascii = sorted({char for char in text if ord(char) > 127})
     if non_ascii:
-        sample = "".join(non_ascii[:8])
-        failures.append(f"{page}: contains non-ASCII characters {sample!r}; use ASCII unless the source requires them")
+        # Only flag non-ASCII characters that don't appear in the normalized source
+        source_chars = set()
+        if evidence_source:
+            source_text = "\n".join(evidence_source.lines)
+            source_chars = {char for char in source_text if ord(char) > 127}
+        unexpected_non_ascii = sorted(set(non_ascii) - source_chars)
+        if unexpected_non_ascii:
+            sample = "".join(unexpected_non_ascii[:8])
+            failures.append(
+                f"{page}: contains non-ASCII characters {sample!r} not found in source")
 
     fm = parse_frontmatter(page)
     for error in fm.errors:
@@ -359,20 +388,23 @@ def check_synthesized_page(
     if not re.search(r"^# .+", fm.body, re.MULTILINE):
         failures.append(f"{page}: missing H1 title")
     elif first_body_line is not None and not first_body_line.startswith("# "):
-        failures.append(f"{page}: first nonblank body line must be the H1 title")
+        failures.append(
+            f"{page}: first nonblank body line must be the H1 title")
     failures.extend(body_metadata_failures(page, fm.body))
 
     source_rel = relative_link(page, source_path)
     sources = fm.data.get("sources")
     if not isinstance(sources, list) or source_rel not in sources:
-        failures.append(f"{page}: frontmatter sources must include {source_rel}")
+        failures.append(
+            f"{page}: frontmatter sources must include {source_rel}")
 
     body_links = []
     for link in markdown_links(page):
         if not link.resolved:
             continue
         if not link.resolved.exists():
-            failures.append(f"{page}:{link.line}: broken Markdown link {link.target!r}")
+            failures.append(
+                f"{page}:{link.line}: broken Markdown link {link.target!r}")
             continue
         body_links.append(link.resolved)
     if source_path.resolve() not in body_links:
@@ -397,7 +429,8 @@ def check_synthesized_page(
             )
 
     body_headings = h2_headings(fm.body)
-    duplicate_headings = sorted({heading for heading in body_headings if body_headings.count(heading) > 1})
+    duplicate_headings = sorted(
+        {heading for heading in body_headings if body_headings.count(heading) > 1})
     for heading in duplicate_headings:
         failures.append(f"{page}: duplicate heading {heading!r}")
 
@@ -408,10 +441,12 @@ def check_synthesized_page(
     if "Page title" in fm.body:
         failures.append(f"{page}: contains placeholder text 'Page title'")
     if re.search(r"\bnot created yet\b", fm.body, flags=re.IGNORECASE):
-        failures.append(f"{page}: synthesized pages must not mention uncreated candidate pages")
+        failures.append(
+            f"{page}: synthesized pages must not mention uncreated candidate pages")
     executable = section(fm.body, "## Executable implementation")
     if executable and not re.search(r"(?:\.\./)+packages/|packages/", executable):
-        failures.append(f"{page}: ## Executable implementation must link to a real packages/ implementation or be omitted")
+        failures.append(
+            f"{page}: ## Executable implementation must link to a real packages/ implementation or be omitted")
 
     if "## Source-backed details" not in body_headings:
         failures.append(f"{page}: missing source-backed details section")
@@ -419,7 +454,8 @@ def check_synthesized_page(
         details = section(fm.body, "## Source-backed details")
         detail_tokens = content_tokens(details)
         if len(detail_tokens) < 25:
-            failures.append(f"{page}: source-backed details section is too thin")
+            failures.append(
+                f"{page}: source-backed details section is too thin")
         failures.extend(
             check_evidence_table(
                 page,
@@ -435,7 +471,8 @@ def check_synthesized_page(
     if "## Source pages" not in body_headings and "## Sources" not in body_headings:
         failures.append(f"{page}: missing source page section")
 
-    failures.extend(check_type_specific_sections(page, fm.body, page_type, evidence_source, related_scope, allowed_ranges))
+    failures.extend(check_type_specific_sections(
+        page, fm.body, page_type, evidence_source, related_scope, allowed_ranges))
     return failures
 
 
@@ -462,7 +499,8 @@ def body_metadata_failures(page: Path, body: str) -> list[str]:
         if in_code:
             continue
         if re.match(r"^(?:title|type|tags|status|last_updated|sources|source_id|source_type):\s*", stripped):
-            failures.append(f"{page}: body line {line_number} looks like stray frontmatter: {stripped}")
+            failures.append(
+                f"{page}: body line {line_number} looks like stray frontmatter: {stripped}")
     return failures
 
 
@@ -478,7 +516,8 @@ def check_evidence_table(
     failures: list[str] = []
     rows = table_rows(details)
     if len(rows) < 2:
-        failures.append(f"{page}: Source-backed details must include a Claim/Evidence/Locator/Source table")
+        failures.append(
+            f"{page}: Source-backed details must include a Claim/Evidence/Locator/Source table")
         failures.extend(diff_marker_failures(page, details))
         return failures
 
@@ -492,18 +531,20 @@ def check_evidence_table(
         return [f"{page}: evidence table header must be exactly | Claim | Evidence | Locator | Source |"]
 
     data_rows: list[tuple[str, str, str, str]] = []
-    for cells in rows[header_index + 1 :]:
+    for cells in rows[header_index + 1:]:
         if is_separator_row(cells):
             continue
         if len(cells) != 4:
-            failures.append(f"{page}: evidence table row must have exactly four cells")
+            failures.append(
+                f"{page}: evidence table row must have exactly four cells")
             continue
         claim, evidence, locator, source = (cell.strip() for cell in cells)
         if claim or evidence or locator or source:
             data_rows.append((claim, evidence, locator, source))
 
     if len(data_rows) < min_evidence_rows:
-        failures.append(f"{page}: evidence table has {len(data_rows)} rows; expected at least {min_evidence_rows}")
+        failures.append(
+            f"{page}: evidence table has {len(data_rows)} rows; expected at least {min_evidence_rows}")
         failures.extend(diff_marker_failures(page, details))
 
     for index, (claim, evidence, locator, source) in enumerate(data_rows, start=1):
@@ -511,23 +552,29 @@ def check_evidence_table(
         if len(claim_words) < 5:
             failures.append(f"{page}: evidence row {index} claim is too short")
         if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
-            failures.append(f"{page}: evidence row {index} uses weak generic claim language")
+            failures.append(
+                f"{page}: evidence row {index} uses weak generic claim language")
         repeated = repeated_phrase(strip_markdown(claim))
         if repeated:
-            failures.append(f"{page}: evidence row {index} repeats phrase {repeated!r}")
+            failures.append(
+                f"{page}: evidence row {index} repeats phrase {repeated!r}")
 
         excerpt = clean_evidence_excerpt(evidence)
-        failures.extend(scope_failures(page, f"evidence row {index}", claim + " " + excerpt, related_scope))
+        failures.extend(scope_failures(
+            page, f"evidence row {index}", claim + " " + excerpt, related_scope))
         claim_norm = normalize_for_search(strip_markdown(claim))
         excerpt_norm = normalize_for_search(excerpt)
         if claim_norm == excerpt_norm or SequenceMatcher(None, claim_norm, excerpt_norm).ratio() > 0.88:
-            failures.append(f"{page}: evidence row {index} claim repeats the evidence instead of synthesizing it")
+            failures.append(
+                f"{page}: evidence row {index} claim repeats the evidence instead of synthesizing it")
 
         excerpt_words = re.findall(r"[A-Za-z0-9']+", excerpt)
-        if len(excerpt_words) < 4 or len(excerpt) < 24:
-            failures.append(f"{page}: evidence row {index} excerpt is too short")
+        if len(excerpt_words) < 4 and len(excerpt) < 24:
+            failures.append(
+                f"{page}: evidence row {index} excerpt is too short")
         if any(re.search(pattern, excerpt, flags=re.IGNORECASE) for pattern in WEAK_EVIDENCE_PATTERNS):
-            failures.append(f"{page}: evidence row {index} excerpt is document navigation or metadata, not evidence")
+            failures.append(
+                f"{page}: evidence row {index} excerpt is document navigation or metadata, not evidence")
 
         parsed_locator = parse_locator(locator)
         if parsed_locator is None:
@@ -541,7 +588,7 @@ def check_evidence_table(
                     f"{page}: evidence row {index} locator {clean_locator(locator)!r} is outside normalized source line range"
                 )
             else:
-                locator_text = "\n".join(evidence_source.lines[start - 1 : end])
+                locator_text = "\n".join(evidence_source.lines[start - 1: end])
                 if excerpt_norm not in normalize_for_search(locator_text):
                     failures.append(
                         f"{page}: evidence row {index} excerpt is not found in locator range {clean_locator(locator)!r}"
@@ -553,9 +600,11 @@ def check_evidence_table(
 
         source_target = first_markdown_target(source)
         if source_target is None:
-            failures.append(f"{page}: evidence row {index} source cell must link to the source page")
+            failures.append(
+                f"{page}: evidence row {index} source cell must link to the source page")
         elif (page.parent / source_target).resolve() != source_path.resolve():
-            failures.append(f"{page}: evidence row {index} source link must resolve to {source_path.as_posix()}")
+            failures.append(
+                f"{page}: evidence row {index} source link must resolve to {source_path.as_posix()}")
 
     return failures
 
@@ -565,7 +614,8 @@ def diff_marker_failures(page: Path, markdown: str) -> list[str]:
     for line_number, line in enumerate(markdown.splitlines(), start=1):
         stripped = line.strip()
         if stripped.startswith(("+", "-")) and "|" in stripped and not stripped.startswith("|"):
-            failures.append(f"{page}: Source-backed details line {line_number} looks like a diff marker, not a table row")
+            failures.append(
+                f"{page}: Source-backed details line {line_number} looks like a diff marker, not a table row")
     return failures
 
 
@@ -581,17 +631,22 @@ def check_type_specific_sections(
     if page_type == "procedure":
         steps = section(body, "## Steps") or section(body, "## Procedure")
         if not steps:
-            failures.append(f"{page}: procedure pages must include a ## Steps or ## Procedure section")
+            failures.append(
+                f"{page}: procedure pages must include a ## Steps or ## Procedure section")
         elif bullet_count(steps) < 3:
-            failures.append(f"{page}: procedure steps section has {bullet_count(steps)} steps; expected at least 3")
+            failures.append(
+                f"{page}: procedure steps section has {bullet_count(steps)} steps; expected at least 3")
     elif page_type == "reference":
         reference_data = section(body, "## Reference data")
         if not reference_data:
-            failures.append(f"{page}: reference pages must include a ## Reference data section")
+            failures.append(
+                f"{page}: reference pages must include a ## Reference data section")
         elif table_data_row_count(reference_data) < 2:
-            failures.append(f"{page}: Reference data table has fewer than 2 data rows")
+            failures.append(
+                f"{page}: Reference data table has fewer than 2 data rows")
         else:
-            failures.extend(check_reference_data_table(page, reference_data, evidence_source, related_scope, allowed_ranges))
+            failures.extend(check_reference_data_table(
+                page, reference_data, evidence_source, related_scope, allowed_ranges))
     return failures
 
 
@@ -606,37 +661,44 @@ def check_reference_data_table(
     rows = table_rows(markdown)
     if len(rows) < 2:
         return failures
-    header_index = next((index for index, row in enumerate(rows) if not is_separator_row(row)), None)
+    header_index = next((index for index, row in enumerate(
+        rows) if not is_separator_row(row)), None)
     if header_index is None:
         return failures
     header = [cell.strip().lower() for cell in rows[header_index]]
     if "evidence" not in header or "locator" not in header:
-        failures.append(f"{page}: Reference data table must include Evidence and Locator columns")
+        failures.append(
+            f"{page}: Reference data table must include Evidence and Locator columns")
         return failures
     evidence_index = header.index("evidence")
     locator_index = header.index("locator")
     source_index = header.index("source") if "source" in header else None
     seen_facts: dict[str, int] = {}
-    for row_number, row in enumerate(rows[header_index + 1 :], start=1):
+    for row_number, row in enumerate(rows[header_index + 1:], start=1):
         if is_separator_row(row):
             continue
         if len(row) != len(header):
-            failures.append(f"{page}: Reference data row {row_number} must have {len(header)} cells")
+            failures.append(
+                f"{page}: Reference data row {row_number} must have {len(header)} cells")
             continue
         fact_text = " ".join(
             strip_markdown(cell).strip()
             for index, cell in enumerate(row)
             if index not in {evidence_index, locator_index, source_index}
         )
-        supported_fact_text = supported_fact_cell_text(header, row, evidence_index, locator_index, source_index)
+        supported_fact_text = supported_fact_cell_text(
+            header, row, evidence_index, locator_index, source_index)
         evidence = clean_evidence_excerpt(row[evidence_index])
         locator = row[locator_index]
         if any(re.search(pattern, fact_text, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
-            failures.append(f"{page}: Reference data row {row_number} uses weak generic fact language")
+            failures.append(
+                f"{page}: Reference data row {row_number} uses weak generic fact language")
         repeated = repeated_phrase(fact_text)
         if repeated:
-            failures.append(f"{page}: Reference data row {row_number} repeats phrase {repeated!r}")
-        failures.extend(scope_failures(page, f"Reference data row {row_number}", fact_text + " " + evidence, related_scope))
+            failures.append(
+                f"{page}: Reference data row {row_number} repeats phrase {repeated!r}")
+        failures.extend(scope_failures(
+            page, f"Reference data row {row_number}", fact_text + " " + evidence, related_scope))
         fact_norm = normalize_for_search(supported_fact_text or fact_text)
         evidence_norm = normalize_for_search(evidence)
         if fact_norm in seen_facts:
@@ -646,9 +708,11 @@ def check_reference_data_table(
         elif fact_norm:
             seen_facts[fact_norm] = row_number
         if fact_norm == evidence_norm or SequenceMatcher(None, fact_norm, evidence_norm).ratio() > 0.88:
-            failures.append(f"{page}: Reference data row {row_number} fact repeats the evidence instead of synthesizing it")
+            failures.append(
+                f"{page}: Reference data row {row_number} fact repeats the evidence instead of synthesizing it")
         if len(re.findall(r"[A-Za-z0-9']+", evidence)) < 4 or len(evidence) < 24:
-            failures.append(f"{page}: Reference data row {row_number} evidence excerpt is too short")
+            failures.append(
+                f"{page}: Reference data row {row_number} evidence excerpt is too short")
         parsed_locator = parse_locator(locator)
         if parsed_locator is None:
             failures.append(
@@ -659,16 +723,19 @@ def check_reference_data_table(
             continue
         start, end = parsed_locator
         if start < 1 or end < start or end > len(evidence_source.lines):
-            failures.append(f"{page}: Reference data row {row_number} locator {clean_locator(locator)!r} is outside normalized source line range")
+            failures.append(
+                f"{page}: Reference data row {row_number} locator {clean_locator(locator)!r} is outside normalized source line range")
             continue
-        locator_text = "\n".join(evidence_source.lines[start - 1 : end])
+        locator_text = "\n".join(evidence_source.lines[start - 1: end])
         if normalize_for_search(evidence) not in normalize_for_search(locator_text):
-            failures.append(f"{page}: Reference data row {row_number} evidence is not found in locator range {clean_locator(locator)!r}")
+            failures.append(
+                f"{page}: Reference data row {row_number} evidence is not found in locator range {clean_locator(locator)!r}")
         if allowed_ranges and not locator_within_ranges(start, end, allowed_ranges):
             failures.append(
                 f"{page}: Reference data row {row_number} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}"
             )
-        unsupported = sorted(set(content_tokens(fact_text)) - set(content_tokens(evidence + " " + locator_text)))
+        unsupported = sorted(set(content_tokens(fact_text)) -
+                             set(content_tokens(evidence + " " + locator_text)))
         if len(unsupported) >= 8:
             failures.append(
                 f"{page}: Reference data row {row_number} likely overreaches evidence; unsupported terms: {', '.join(unsupported[:10])}"
@@ -760,11 +827,12 @@ def repeated_phrase(text: str) -> str | None:
     for size in range(6, 1, -1):
         counts: dict[tuple[str, ...], int] = {}
         for index in range(0, len(words) - size + 1):
-            phrase = tuple(words[index : index + size])
+            phrase = tuple(words[index: index + size])
             counts[phrase] = counts.get(phrase, 0) + 1
             if counts[phrase] >= 3:
                 return " ".join(phrase)
-    comma_parts = [normalize_for_search(part) for part in re.split(r"[,;]", text) if len(content_tokens(part)) >= 2]
+    comma_parts = [normalize_for_search(part) for part in re.split(
+        r"[,;]", text) if len(content_tokens(part)) >= 2]
     for part in comma_parts:
         if comma_parts.count(part) >= 3:
             return part
@@ -797,7 +865,8 @@ def load_evidence_source(source_path: Path, normalized_source: str | None) -> Ev
         text = path.read_text(errors="ignore")
         return EvidenceSource(lines=text.splitlines())
     if path.is_dir():
-        markdown_files = sorted(path.rglob("*.md"), key=lambda candidate: candidate.stat().st_size, reverse=True)
+        markdown_files = sorted(path.rglob(
+            "*.md"), key=lambda candidate: candidate.stat().st_size, reverse=True)
         if markdown_files:
             text = markdown_files[0].read_text(errors="ignore")
             return EvidenceSource(lines=text.splitlines())

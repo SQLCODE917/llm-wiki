@@ -75,17 +75,17 @@ Expected postconditions:
 The reference pattern has three layers: raw sources, wiki, and schema. This repository implements those
 layers as follows.
 
-| Layer | Path | Purpose | Who Edits It |
-|---|---|---|---|
-| Raw inbox | `raw/inbox/` | Drop new PDFs or Markdown files here. | Human |
-| Immutable originals | `raw/imported/` | Preserved source-of-truth files. | Tools only on initial import |
-| Normalized text | `raw/normalized/` | Markdown extracted from PDFs or copied from Markdown sources. | Tools |
-| Assets | `raw/assets/` | Extracted or locally saved media. | Human and tools |
-| Wiki | `wiki/` | Synthesized knowledge layer. | Agent and tools |
-| Operating schema | `AGENTS.md` | Rules for agents maintaining the wiki. | Human-approved edits |
-| Design source of truth | `DESIGN_atomic-local-ingest.md` | Local-model workflow design. | Human and agent |
-| Deterministic tools | `tools/` | Validators, orchestrators, judges, reports. | Agent, with tests |
-| Executable concepts | `packages/concepts/` | TypeScript implementations and tests. | Agent, with tests |
+| Layer                  | Path                            | Purpose                                                       | Who Edits It                 |
+| ---------------------- | ------------------------------- | ------------------------------------------------------------- | ---------------------------- |
+| Raw inbox              | `raw/inbox/`                    | Drop new PDFs or Markdown files here.                         | Human                        |
+| Immutable originals    | `raw/imported/`                 | Preserved source-of-truth files.                              | Tools only on initial import |
+| Normalized text        | `raw/normalized/`               | Markdown extracted from PDFs or copied from Markdown sources. | Tools                        |
+| Assets                 | `raw/assets/`                   | Extracted or locally saved media.                             | Human and tools              |
+| Wiki                   | `wiki/`                         | Synthesized knowledge layer.                                  | Agent and tools              |
+| Operating schema       | `AGENTS.md`                     | Rules for agents maintaining the wiki.                        | Human-approved edits         |
+| Design source of truth | `DESIGN_atomic-local-ingest.md` | Local-model workflow design.                                  | Human and agent              |
+| Deterministic tools    | `tools/`                        | Validators, orchestrators, judges, reports.                   | Agent, with tests            |
+| Executable concepts    | `packages/concepts/`            | TypeScript implementations and tests.                         | Agent, with tests            |
 
 Expected postconditions:
 
@@ -215,7 +215,7 @@ persist.
 Run this from the repository root:
 
 ```bash
-cd /home/serdm/gits/llm-wiki
+cd /llm-wiki
 codex --profile local-4090
 ```
 
@@ -395,38 +395,51 @@ Expected postconditions:
 
 ## Ingest
 
-Ingest turns one raw source into source-backed wiki knowledge. This implementation uses bounded phases so
-local models do not have to do everything in one prompt.
+Ingest turns one raw source into source-backed wiki knowledge. This implementation uses deep extraction
+to achieve 100% source coverage, then synthesizes pages with quality gates.
 
 ### Full Orchestrated Ingest
 
-Use the orchestrator for the normal path:
+Use the unified orchestrator for the normal path:
 
 ```bash
 pnpm wiki:ingest raw/inbox/example.pdf --slug example --dry-run
-pnpm wiki:ingest raw/inbox/example.pdf --slug example --max-phase2-pages 5
+pnpm wiki:ingest raw/inbox/example.pdf --slug example
 ```
 
 For Markdown:
 
 ```bash
 pnpm wiki:ingest raw/inbox/example.md --slug example --dry-run
-pnpm wiki:ingest raw/inbox/example.md --slug example --max-phase2-pages 5
+pnpm wiki:ingest raw/inbox/example.md --slug example
 ```
+
+The unified ingest flow:
+
+1. **Phase 0**: Normalizes the source (PDF to markdown via `marker_single`)
+2. **Phase 1**: Deep extracts claims from all chunks (100% source coverage)
+3. **Phase 2a**: Creates source page from extracted topics
+4. **Phase 2b**: Synthesizes each topic page with quality gates (validate + judge + repair)
+5. **Phase 3**: Updates index, graph, and log
+
+Key options:
+
+- `--max-phase2-pages N` — limit synthesized pages (default: 10)
+- `--min-claims-per-topic N` — minimum claims to create a page (default: 3)
+- `--chunk-size N` — lines per chunk (default: 400)
+- `--skip-extract` — skip extraction, use existing state
+- `--dry-run` — show what would happen
 
 Batch ingest is intentionally not the default. The reference allows batch ingestion, but this local-first
 implementation works best one source at a time because each source can create or update many pages.
 
-If you want to steer emphasis manually, stop after Phase 1, inspect `wiki/sources/<slug>.md`, then run one
-Phase 2 page at a time. That is the local-model version of the reference workflow where the human reads the
-summary, checks what matters, and guides what should be synthesized next.
+If you want to steer emphasis manually, run deep extraction only, inspect the state, then resume:
 
-The orchestrator wraps:
-
-1. Phase 0 import and normalization.
-2. Phase 1 source-page creation or repair.
-3. Atomic Phase 2 synthesized-page creation.
-4. Phase 3 finalization.
+```bash
+pnpm wiki:deep-extract example --extract-only
+# Inspect .tmp/deep-extract/example/state.json
+pnpm wiki:ingest --slug example --skip-extract --max-phase2-pages 3
+```
 
 Expected postconditions:
 
@@ -454,9 +467,28 @@ Expected postconditions:
 - Normalized Markdown exists under `raw/normalized/<slug>/`.
 - Existing imported originals are not overwritten unless `--reuse-imported` proves the bytes match.
 
+### Deep Extraction
+
+Deep extraction processes the source in chunks to achieve 100% coverage:
+
+```bash
+pnpm wiki:deep-extract example --dry-run   # Show chunks
+pnpm wiki:deep-extract example             # Full extraction + synthesis
+pnpm wiki:deep-extract example --extract-only  # Claims only, no pages
+pnpm wiki:deep-extract example --resume    # Continue interrupted extraction
+```
+
+The state is saved to `.tmp/deep-extract/<slug>/state.json` after each chunk, making extraction resumable.
+
+Expected postconditions:
+
+- All chunks are processed.
+- Claims are aggregated by topic.
+- State file records progress and all extracted claims.
+
 ### Phase 1: Source Page
 
-Phase 1 creates or repairs only the source page:
+For manual Phase 1 trials, use the benchmark tool:
 
 ```bash
 pnpm wiki:phase1-benchmark example --candidate local-4090
@@ -659,8 +691,8 @@ Every important synthesized claim should be auditable.
 Use this table shape in synthesized pages:
 
 ```md
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
+| Claim                    | Evidence                      | Locator          | Source                                |
+| ------------------------ | ----------------------------- | ---------------- | ------------------------------------- |
 | Concrete reusable claim. | "Short exact source excerpt." | `normalized:L12` | [Source title](../sources/example.md) |
 ```
 
