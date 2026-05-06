@@ -276,6 +276,12 @@ def attempt_deterministic_repairs(
             worktree, slug, validation_log, page_path, normalized_source
         )
 
+        # Filter out runner artifacts that aren't real page issues
+        failures = [
+            f for f in failures
+            if f.category != FailureCategory.FILE_SCOPE_VIOLATION
+        ]
+
         if not failures:
             return any_repairs_made, []
 
@@ -337,33 +343,10 @@ def get_structured_failures(
 ) -> list[ValidationFailure]:
     """Get structured failures from validation.
 
-    Prefers direct structured check; falls back to parsing log.
+    Parses the validation log produced by running checks in the worktree context.
+    The log is authoritative because it was generated with the correct paths.
     """
-    # Try to get structured failures directly
-    try:
-        source_path = worktree / "wiki/sources" / f"{slug}.md"
-        if source_path.exists():
-            # Get the repo-relative path
-            repo_page = page_path if not page_path.startswith(
-                str(worktree)) else str(Path(page_path).relative_to(worktree))
-
-            normalized_str = str(
-                normalized_source) if normalized_source else None
-            failures = check_synthesis_structured(
-                slug,
-                min_pages=1,
-                max_pages=20,
-                allowed_pages=[repo_page],
-                min_evidence_rows=3,
-                normalized_source=normalized_str,
-                check_evidence_text=normalized_source is not None,
-                require_allowed_pages=False,
-            )
-            return failures
-    except Exception as e:
-        print(f"    Warning: structured check failed: {e}")
-
-    # Fall back to parsing log
+    # Parse the validation log (produced in worktree context)
     if validation_log.exists():
         return parse_validation_output(validation_log.read_text())
 

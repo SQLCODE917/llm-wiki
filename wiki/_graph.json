@@ -273,7 +273,7 @@
     "wiki:sources/js-allonge": {
       "type": "source",
       "path": "wiki/sources/js-allonge.md",
-      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 275 claims from 30 chunks, organized into 12 viable topics.",
+      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 269 claims from 30 chunks, organized into 12 viable topics.",
       "sources": [
         "../../raw/imported/js-allonge/original.pdf"
       ],

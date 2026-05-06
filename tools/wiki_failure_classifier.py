@@ -150,12 +150,12 @@ DETERMINISTIC_CATEGORIES = {
     FailureCategory.EMPTY_SECTION,
     FailureCategory.INVALID_EVIDENCE_ID,
     FailureCategory.BAD_SOURCE_CELL,
-    FailureCategory.FILE_SCOPE_VIOLATION,
     FailureCategory.STRAY_FRONTMATTER,
     FailureCategory.CANDIDATE_PAGE_EXISTS,
     FailureCategory.NON_ASCII_CHARS,
     FailureCategory.WRONG_SOURCE_LINK,
     FailureCategory.EVIDENCE_NOT_IN_LOCATOR,  # Can fix by searching nearby lines
+    # Note: FILE_SCOPE_VIOLATION is a runner artifact, not a page issue - filtered out in repair loop
 }
 
 # Categories that can suggest fixes but may need LLM
