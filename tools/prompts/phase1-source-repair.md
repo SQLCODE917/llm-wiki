@@ -63,7 +63,7 @@ Mechanical content rules:
 ```md
 | Claim | Evidence | Locator |
 |---|---|---|
-| Concrete reusable claim in your own words. | "Short exact excerpt copied from the normalized source." | `normalized:L12` |
+| Concrete reusable claim in your own words. | "Short exact excerpt copied from the normalized source." | `normalized:L12-L12` |
 ```
 
 - Each claim must be at least {{min_claim_words}} words.
@@ -71,7 +71,7 @@ Mechanical content rules:
 - Each claim must include a concrete action, cause, effect, condition, tradeoff, formula, definition, timing, procedure step, resource relationship, or domain-specific implication from the source.
 - Every key claim must be reusable gameplay/content/domain knowledge from the normalized source.
 - Evidence cells must be short exact excerpts from `{{normalized_source}}`; do not paraphrase evidence cells.
-- Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
+- Locator cells must use range format `normalized:L<start>-L<end>` (single line: `L123-L123`).
 - Do not include document metadata as key claims.
 - In `## Key claims`, these words are validation failures: guide, document, author, coached, coaching, Twitch, Google Docs, published.
 - Claims should talk about the source's reusable domain knowledge, not about the document as a document.

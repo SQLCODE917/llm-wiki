@@ -18,6 +18,7 @@ from wiki_evidence_ranges import (
     SourceRange,
     format_ranges,
     locator_within_ranges,
+    normalize_locator,
     parse_locator_range,
     source_ranges_for_candidate,
 )
@@ -742,7 +743,8 @@ def build_evidence_bank(
                     # Truncate very long evidence for readability
                     if len(evidence) > 400:
                         evidence = evidence[:400] + "..."
-                    evidence_items.append((locator, evidence))
+                    # Normalize to always-range format
+                    evidence_items.append((normalize_locator(locator), evidence))
         else:
             # Fall back to re-extracting snippets (less accurate)
             if chunks is None:
@@ -752,7 +754,8 @@ def build_evidence_bank(
             snippets = snippets_for_candidate(
                 query, candidate_chunks, limit=10)
             for snippet in snippets:
-                evidence_items.append((snippet.locator, snippet.text))
+                # Normalize to always-range format (source_chunks already does this)
+                evidence_items.append((normalize_locator(snippet.locator), snippet.text))
 
         if not evidence_items:
             sections.append("- not covered in sources")

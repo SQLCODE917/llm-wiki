@@ -31,9 +31,9 @@ sources: []
 
 ## Evidence Locators
 
-- Format: `normalized:L12` or `normalized:L12-L14`
+- Always use range format: `normalized:L<start>-L<end>` (single line: `L123-L123`)
 - The cited text must appear verbatim at the cited line(s)
-- For multi-source contexts: `<source-slug>:normalized:L12`
+- For multi-source contexts: `<source-slug>:normalized:L123-L456`
 
 ## Output Format
 

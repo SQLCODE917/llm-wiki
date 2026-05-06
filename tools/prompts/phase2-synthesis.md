@@ -104,7 +104,7 @@ Additional rules:
 - Do NOT write evidence text, locators, or source links - they are filled automatically.
 - Do not make a claim just because it sounds appropriate for the page title; every claim must cite a specific evidence ID.
 - If the evidence bank does not contain support for a likely-sounding claim, omit that claim.
-- Locator cells must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
+- Locator cells must use range format `normalized:L<start>-L<end>` from the evidence bank (single line: `L123-L123`).
 - Do not put pipe characters inside table cells.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - The claim cell must synthesize in your own words; do not copy the evidence sentence into the claim cell.

@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from wiki_common import content_tokens
+from wiki_evidence_ranges import normalize_locator
 
 
 WEAK_SNIPPET_PATTERNS = [
@@ -140,7 +141,8 @@ def source_chunks(text: str) -> list[SourceChunk]:
             continue
         for sentence in split_sentences(line):
             if len(sentence) >= 40:
-                chunks.append(SourceChunk(text=sentence, locator=f"normalized:L{line_number}"))
+                # Always use range format: L123-L123 for single line
+                chunks.append(SourceChunk(text=sentence, locator=f"normalized:L{line_number}-L{line_number}"))
     return chunks
 
 

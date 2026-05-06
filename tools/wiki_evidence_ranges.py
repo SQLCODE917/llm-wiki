@@ -14,6 +14,23 @@ RANGE_RE = re.compile(
 HEADING_RE = re.compile(r"^(?P<marks>#{1,6})\s+(?P<title>.+?)\s*$")
 
 
+def normalize_locator(loc: str) -> str:
+    """Normalize locator to always-range format: L123 → L123-L123.
+
+    This ensures consistent format throughout the pipeline.
+    Single lines become trivial ranges (L123-L123).
+    """
+    match = re.search(r'L(\d+)(?:-L?(\d+))?', loc, re.IGNORECASE)
+    if not match:
+        return loc
+    start = int(match.group(1))
+    end = int(match.group(2)) if match.group(2) else start
+    # Preserve any prefix (like source slug)
+    prefix_match = re.match(r'^([A-Za-z0-9_-]+:)?normalized:', loc, re.IGNORECASE)
+    prefix = prefix_match.group(0) if prefix_match else "normalized:"
+    return f"{prefix}L{start}-L{end}"
+
+
 @dataclass(frozen=True)
 class SourceRange:
     start: int

@@ -38,7 +38,7 @@ Return ONLY a JSON array:
     "topic": "Functions",
     "claim": "What the reader should learn",
     "evidence": "Exact quote from source",
-    "locator": "normalized:L123"
+    "locator": "normalized:L123-L123"
   }
 ]
 ```
@@ -49,3 +49,4 @@ Rules:
 - Double quotes for strings
 - Escape special characters
 - Empty array `[]` if no claims found
+- Always use range format for locators: `normalized:L<start>-L<end>`

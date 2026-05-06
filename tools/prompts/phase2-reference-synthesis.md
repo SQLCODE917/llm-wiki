@@ -48,7 +48,7 @@ Locators available (evidence will be filled automatically):
 {{evidence_bank}}
 
 - Use only locators inside the selected page's allowed source range when one is shown.
-- `source_ranges` values must look like `{{slug}}:normalized:L12-L34`.
+- `source_ranges` values must look like `{{slug}}:normalized:L<start>-L<end>` (single line: `L123-L123`).
 - Do not use locators from unrelated sections.
 
 Reference-page rules:
@@ -73,17 +73,17 @@ CRITICAL: Write **4-column** tables for reference data and **3-column** tables f
 `## Reference data` must contain this exact table shape:
 
 ```md
-| Item                     | Supported fact                             | Locator          | Source                                 |
-| ------------------------ | ------------------------------------------ | ---------------- | -------------------------------------- |
-| Source-native item name. | Narrow fact synthesized in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
+| Item                     | Supported fact                             | Locator              | Source                                 |
+| ------------------------ | ------------------------------------------ | -------------------- | -------------------------------------- |
+| Source-native item name. | Narrow fact synthesized in your own words. | `normalized:L12-L12` | [Source title](../sources/{{slug}}.md) |
 ```
 
 `## Source-backed details` must contain this exact table shape:
 
 ```md
-| Claim                                      | Locator          | Source                                 |
-| ------------------------------------------ | ---------------- | -------------------------------------- |
-| Concrete reusable claim in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
+| Claim                                      | Locator              | Source                                 |
+| ------------------------------------------ | -------------------- | -------------------------------------- |
+| Concrete reusable claim in your own words. | `normalized:L12-L12` | [Source title](../sources/{{slug}}.md) |
 ```
 
 Rules:
@@ -91,7 +91,7 @@ Rules:
 - Include at least 2 data rows in `## Reference data`.
 - Include at least 3 rows in `## Source-backed details`.
 - Do NOT write Evidence columns - they are filled automatically from locators.
-- Locator cells must use `normalized:L12` format.
+- Locator cells must use range format `normalized:L<start>-L<end>` (single line: `L123-L123`).
 - The claim and supported-fact cells must synthesize in your own words; do not copy source text.
 - Claim and supported-fact cells must not use weak generic words: important, crucial, fundamental, essential, success.
 

@@ -20,8 +20,8 @@ You are answering queries from the llm-wiki knowledge base.
 
 When creating a saved analysis page:
 
-- Use `normalized:L12` for single-source answers
-- Use `<slug>:normalized:L12` when citing multiple sources
+- Always use range format: `normalized:L123-L123` for single line, `normalized:L123-L456` for range
+- Use `<slug>:normalized:L123-L456` when citing multiple sources
 
 ## Output Style
 
