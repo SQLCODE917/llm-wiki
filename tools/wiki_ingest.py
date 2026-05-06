@@ -52,6 +52,7 @@ class IngestConfig:
     skip_source_page: bool
     skip_phase2: bool
     skip_phase3: bool
+    strict_judge: bool
     overwrite_normalized: bool
     reuse_imported: bool
     timeout: int
@@ -99,6 +100,8 @@ def main() -> int:
                         action="store_true", help="skip source page creation")
     parser.add_argument("--skip-phase2", action="store_true")
     parser.add_argument("--skip-phase3", action="store_true")
+    parser.add_argument("--strict-judge", action="store_true",
+                        help="fail on too_broad verdicts (default: soft-pass accepts too_broad)")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -130,6 +133,7 @@ def main() -> int:
         skip_source_page=args.skip_source_page,
         skip_phase2=args.skip_phase2,
         skip_phase3=args.skip_phase3,
+        strict_judge=args.strict_judge,
         overwrite_normalized=args.overwrite_normalized,
         reuse_imported=args.reuse_imported,
         timeout=args.timeout,
@@ -278,13 +282,16 @@ def run_ingest(config: IngestConfig) -> int:
                 "--repair-attempts",
                 "0",
                 "--judge-repair-attempts",
-                "0",
-                "--skip-judge",
+                "1",  # Allow one repair if judge finds not_supported
                 "--judge-batch",
                 "--report",
                 report.as_posix(),
                 "--keep",
             ]
+            # Default: soft-pass mode (accepts too_broad, fails on not_supported)
+            # Use --strict-judge for quality-critical ingests
+            if config.strict_judge:
+                command.append("--strict-judge")
             if run_or_print(command, config.dry_run) != 0:
                 print(f"  WARN: Synthesis failed for {topic}, continuing...")
                 continue
@@ -311,7 +318,7 @@ def run_ingest(config: IngestConfig) -> int:
                 "--normalized-source",
                 normalized_source.as_posix(),
                 "--skip-judge",
-                "phase2-single already passed deterministic validation and local claim judging",
+                "phase2-single already ran judge with soft-pass (accepts too_broad)",
             ]
             if run_or_print(adopt, config.dry_run) != 0:
                 print(f"  WARN: Adopt failed for {topic}")

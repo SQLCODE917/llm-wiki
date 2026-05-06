@@ -108,6 +108,12 @@ Additional rules:
 - Do not put pipe characters inside table cells.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - The claim cell must synthesize in your own words; do not copy the evidence sentence into the claim cell.
+- SYNTHESIS means expressing the SAME MEANING as the evidence using DIFFERENT WORDS. Example:
+  - Evidence: "Linear recursion is a basic building block of algorithms."
+  - BAD claim (copies): "Linear recursion is a basic building block of algorithms."
+  - BAD claim (adds facts): "Linear recursion is a pattern where functions repeatedly call themselves."
+  - GOOD claim: "Linear recursion serves as a core component for constructing algorithms."
+- CONSERVATIVE CLAIMS: Each claim must be fully entailed by the cited evidence. Do NOT add details, qualifications, or explanations not present in the evidence.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
 - The evidence cell must quote the source text exactly.
 - Do not add empty headings.

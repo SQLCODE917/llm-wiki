@@ -415,7 +415,7 @@ def is_runner_artifact(path: str) -> bool:
     if re.fullmatch(r"phase2-judge(?:-[A-Za-z0-9_.-]+)?\.(?:md|log)", name):
         return True
     # JSON output files from structured output mode
-    if re.fullmatch(r"codex-(?:initial|repair-\d+)-output\.json", name):
+    if re.fullmatch(r"codex-(?:initial|repair-\d+|judge-repair-\d+)-output\.json", name):
         return True
     return False
 
@@ -488,6 +488,12 @@ Fix the failures mechanically:
 - Each selected page's evidence locators must stay inside the allowed source range shown in the evidence bank, unless the page declares a narrower/more exact `source_ranges` frontmatter value.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
+- SYNTHESIS means expressing the SAME MEANING as the evidence using DIFFERENT WORDS. Example:
+  - Evidence: "Linear recursion is a basic building block of algorithms."
+  - BAD claim (copies): "Linear recursion is a basic building block of algorithms."
+  - BAD claim (adds facts): "Linear recursion is a pattern where functions repeatedly call themselves."
+  - GOOD claim: "Linear recursion serves as a core component for constructing algorithms."
+- CONSERVATIVE CLAIMS: Each claim must be fully entailed by the cited evidence. Do NOT add details, qualifications, or explanations not present in the evidence.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
 - Remove empty headings, duplicate headings, and empty `## Executable implementation` sections.
 - Do not put YAML/frontmatter keys such as `tags:`, `sources:`, `status:`, or `last_updated:` in the Markdown body.

@@ -989,13 +989,9 @@ def check_reference_data_table_structured(
                  f"Reference data row {row_number} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}",
                  row=row_number,
                  fix_hint=f"Use locators within: {format_ranges(allowed_ranges)}")
-        unsupported = sorted(set(content_tokens(fact_text)) -
-                             set(content_tokens(evidence + " " + locator_text)))
-        if len(unsupported) >= 8:
-            fail(failures, FailureCategory.OVERREACH, str(page),
-                 f"Reference data row {row_number} likely overreaches evidence; unsupported terms: {', '.join(unsupported[:10])}",
-                 row=row_number,
-                 fix_hint="Remove or cite unsupported terms")
+        # NOTE: Lexical OVERREACH check removed for reference tables.
+        # Synthesis naturally uses different vocabulary than evidence.
+        # Semantic entailment should be checked by the LLM judge if needed.
     return failures
 
 

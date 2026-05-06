@@ -27,7 +27,7 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from datetime import date
 from typing import TYPE_CHECKING, Any, Literal
 
@@ -458,6 +458,39 @@ def render_section(
     return "\n".join(lines)
 
 
+def compute_source_ranges(
+    claims: list[Claim],
+    evidence_bank: "EvidenceBankResult | None",
+    slug: str,
+) -> list[str]:
+    """Compute source_ranges from evidence IDs used in claims.
+
+    Returns list of source ranges like 'slug:normalized:L123-L123'.
+    """
+    if not evidence_bank:
+        return []
+
+    locators = set()
+    for claim in claims:
+        for eid in claim.evidence_ids:
+            eid_upper = eid.upper()
+            if eid_upper in evidence_bank.items:
+                item = evidence_bank.items[eid_upper]
+                locators.add(item.locator)
+
+    # Convert locators to source_ranges format
+    ranges = []
+    for loc in sorted(locators):
+        # Parse the locator to extract line numbers
+        match = re.search(r'L(\d+)(?:-L(\d+))?', loc)
+        if match:
+            start = int(match.group(1))
+            end = int(match.group(2)) if match.group(2) else start
+            ranges.append(f"{slug}:normalized:L{start}-L{end}")
+
+    return ranges
+
+
 def render_page(
     page: WikiPageSchema,
     evidence_bank: "EvidenceBankResult | None" = None,
@@ -475,12 +508,20 @@ def render_page(
     """
     parts: list[str] = []
 
+    # Fix source_ranges to match evidence IDs used
+    frontmatter = page.frontmatter
+    if evidence_bank and slug and page.claims:
+        correct_ranges = compute_source_ranges(
+            page.claims, evidence_bank, slug)
+        if correct_ranges:
+            frontmatter = replace(frontmatter, source_ranges=correct_ranges)
+
     # Frontmatter
-    parts.append(render_frontmatter(page.frontmatter))
+    parts.append(render_frontmatter(frontmatter))
     parts.append("")
 
     # Title
-    parts.append(f"# {page.frontmatter.title}")
+    parts.append(f"# {frontmatter.title}")
     parts.append("")
 
     # Sections

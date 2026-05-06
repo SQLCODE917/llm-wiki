@@ -66,8 +66,11 @@ Return a single JSON object for the page. Example structure:
 Requirements:
 
 - Minimum 3 claims with evidence IDs
-- Claims must synthesize evidence, not copy it
-- Include source_ranges for the relevant source sections
+- **CRITICAL: Claims must be in your own words, NOT copied from evidence**
+  - BAD: "Functions are values" (copied from evidence)
+  - GOOD: "JavaScript treats functions as first-class citizens that can be assigned and passed" (synthesized)
+- **source_ranges must cover ALL evidence IDs used in claims**
+  - If you use E01 (L3528), E02 (L3620), E04 (L3617), your source_ranges must include all three locators
 - Set claims_table: true for the Source-backed details section
 
 Output valid JSON only. No markdown fences, no explanation.

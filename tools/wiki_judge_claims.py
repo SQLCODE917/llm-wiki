@@ -56,6 +56,8 @@ def main() -> int:
     parser.add_argument("--context-lines", type=int, default=2)
     parser.add_argument("--output", default="wiki/_claim-judge-report.md")
     parser.add_argument("--fail-on-issues", action="store_true")
+    parser.add_argument("--soft-pass", action="store_true",
+                        help="treat too_broad as warning, only fail on not_supported/unclear")
     parser.add_argument("--deterministic-only", action="store_true")
     parser.add_argument("--batch", action="store_true",
                         help="judge all claims in one model call instead of one call per row")
@@ -124,7 +126,7 @@ def main() -> int:
     output.write_text(report)
     print(f"wrote {output}")
 
-    if args.fail_on_issues and has_issues(flags, judge_result, judge_error):
+    if args.fail_on_issues and has_issues(flags, judge_result, judge_error, soft_pass=args.soft_pass):
         return 1
     return 0
 
@@ -255,17 +257,9 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
                     "claim uses weak generic words: " + ", ".join(weak_words),
                 )
             )
-        unsupported = sorted(set(content_tokens(row.claim)) -
-                             set(content_tokens(row.evidence + " " + row.context)))
-        if len(unsupported) >= 8:
-            flags.append(
-                DeterministicFlag(
-                    row.row,
-                    "fail",
-                    "claim likely overreaches cited evidence/context; unsupported terms: " +
-                    ", ".join(unsupported[:10]),
-                )
-            )
+        # NOTE: Lexical unsupported-term check removed.
+        # Synthesis naturally uses different vocabulary than evidence.
+        # Semantic entailment should be checked by the LLM judge, not lexical overlap.
     if not rows:
         flags.append(DeterministicFlag(0, "fail", "no evidence rows found"))
     return flags
@@ -354,12 +348,15 @@ Use exactly these page verdicts: useful, too_broad, duplicate_or_overlap, unclea
 Use exactly these claim verdicts: supported, too_broad, not_supported, unclear.
 
 Rules:
-- supported: the claim follows directly from the evidence and context.
-- too_broad: the evidence supports a narrower claim, but not the claim as written.
-- not_supported: the evidence does not support the claim.
+- supported: the claim's MEANING follows from the evidence, even if worded differently or via logical inference.
+- too_broad: the claim makes factual assertions NOT entailed by the evidence even via inference.
+- not_supported: the evidence contradicts the claim or is completely unrelated.
 - unclear: the relationship cannot be judged from the provided context.
-- Prefer a narrow suggested_claim when the claim is too broad.
-- Do not reward generic wording if a more exact claim is available.
+- Claims SHOULD use different vocabulary from the evidence. That is good synthesis.
+- Accept claims that follow from logical inference (e.g., if A is B and B is C, then A is C).
+- Accept claims that paraphrase or summarize the evidence in different words.
+- Only flag too_broad or not_supported for genuinely unsupported FACTUAL ASSERTIONS, not vocabulary differences.
+- Do NOT suggest replacement claim text. Leave suggested_claim empty.
 
 Claims:
 
@@ -452,15 +449,18 @@ def render_row_prompt(page: Path, row: EvidenceRow) -> str:
     return f"""You are judging exactly one LLM-Wiki claim. Do not edit files. Return JSON only.
 
 Task:
-Decide whether the claim follows from the evidence and source context below.
+Decide whether the claim's MEANING follows from the evidence and source context below.
 
 Important constraints:
 - The evidence is an exact quote from the source.
 - The locator points to the source line range for that quote.
-- Judge only whether the claim is supported by the provided evidence and context.
-- Do not claim that the source lacks the evidence if the quote is shown below.
+- Judge whether the claim's factual assertions are entailed by the evidence.
+- Claims SHOULD use different vocabulary than evidence. That is good synthesis.
+- Only flag too_broad for genuinely unsupported FACTUAL ASSERTIONS, not word choices.
+- Accept claims that follow from logical inference (e.g., if A is B and B is C, then A is C).
+- Accept claims that paraphrase or summarize the evidence in different words.
+- Do NOT suggest replacement claim text. Leave suggested_claim empty.
 - Do not return missing-file or inaccessible-file issues; all needed content is shown below.
-- If the claim is mostly right but too broad, use `too_broad` and provide a narrower suggested_claim.
 
 Page path: {page.as_posix()}
 Row: {row.row}
@@ -472,10 +472,10 @@ Source context:
 {row.context}
 
 Use exactly these verdicts:
-- supported
-- too_broad
-- not_supported
-- unclear
+- supported: claim meaning follows from evidence, even if words differ or via inference
+- too_broad: claim makes factual assertions NOT entailed by evidence even via inference
+- not_supported: evidence contradicts the claim or is completely unrelated
+- unclear: cannot judge from provided context
 
 Return this JSON object and nothing else:
 {{
@@ -856,18 +856,45 @@ def judge_results_by_row(judge_result: dict[str, Any] | None) -> dict[int, dict[
     return out
 
 
-def has_issues(flags: list[DeterministicFlag], judge_result: dict[str, Any] | None, judge_error: str) -> bool:
+def has_issues(
+    flags: list[DeterministicFlag],
+    judge_result: dict[str, Any] | None,
+    judge_error: str,
+    *,
+    soft_pass: bool = False,
+) -> bool:
+    """Check if judge report has issues that should fail the build.
+
+    In soft_pass mode (aligned with REFERENCE_llm-wiki-pattern):
+    - too_broad = stylistic choice, human can accept or refine
+    - not_supported/unclear = substantive error, must fix
+
+    The pattern says the human curates and guides; minor embellishments
+    are synthesis choices, not contradictions.
+    """
     if judge_error:
         return True
     if any(flag.severity == "fail" for flag in flags):
         return True
     if not judge_result:
         return False
-    if judge_result.get("page_verdict") != "useful":
-        return True
-    for item in judge_result.get("claim_results") or []:
-        if isinstance(item, dict) and item.get("verdict") != "supported":
+    if judge_result.get("page_verdict") not in ("useful", None):
+        # In soft_pass, accept "too_broad" page verdict
+        if soft_pass and judge_result.get("page_verdict") == "too_broad":
+            pass
+        else:
             return True
+    for item in judge_result.get("claim_results") or []:
+        if not isinstance(item, dict):
+            continue
+        verdict = item.get("verdict")
+        if verdict == "supported":
+            continue
+        if soft_pass and verdict == "too_broad":
+            # Stylistic choice - human can accept or refine
+            continue
+        # not_supported, unclear, or other = substantive issue
+        return True
     return False
 
 

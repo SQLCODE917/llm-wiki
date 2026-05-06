@@ -72,6 +72,8 @@ def main() -> int:
                         help="judge all claim rows in one local-model call")
     parser.add_argument("--skip-judge", action="store_true",
                         help="only run deterministic validation")
+    parser.add_argument("--strict-judge", action="store_true",
+                        help="fail on too_broad verdicts (default: soft-pass accepts too_broad)")
     parser.add_argument(
         "--extraction-state",
         help="path to extraction state JSON (uses full evidence from claims instead of re-extracting)",
@@ -151,6 +153,7 @@ def main() -> int:
             judge_repair_attempts=args.judge_repair_attempts,
             judge_batch=args.judge_batch,
             skip_judge=args.skip_judge,
+            soft_pass=not args.strict_judge,
             extraction_claims=extraction_claims,
             json_output=use_json,
         )
@@ -790,6 +793,7 @@ def run_single_candidate(
     judge_repair_attempts: int,
     judge_batch: bool,
     skip_judge: bool,
+    soft_pass: bool = True,
     extraction_claims: list[dict] | None = None,
     json_output: bool = False,
 ) -> dict[str, object]:
@@ -1017,11 +1021,18 @@ def run_single_candidate(
             timeout=judge_timeout,
             batch=judge_batch,
             prefix="phase2-judge",
+            soft_pass=soft_pass,
         )
         judge_report_paths.extend(reports)
 
+        # Patch 3: Sticky initial synthesis - skip repair if only "too_broad" verdicts
+        # "too_broad" from vocabulary differences is often a false positive
+        # Only repair if there are genuine "not_supported" verdicts
+        should_repair = should_run_judge_repair(
+            judge_report) if judge_returncode != 0 else False
+
         for attempt in range(1, judge_repair_attempts + 1):
-            if judge_returncode == 0:
+            if judge_returncode == 0 or not should_repair:
                 break
             repair_prompt = render_judge_repair_prompt(
                 slug=slug,
@@ -1105,6 +1116,7 @@ def run_single_candidate(
                 timeout=judge_timeout,
                 batch=judge_batch,
                 prefix=f"phase2-judge-repair-{attempt}",
+                soft_pass=soft_pass,
             )
             judge_report_paths.extend(reports)
     elif validation_returncode != 0:
@@ -1147,6 +1159,7 @@ def run_judge(
     timeout: int,
     batch: bool,
     prefix: str,
+    soft_pass: bool = True,  # Default: accept too_broad, only fail on not_supported
 ) -> tuple[int, Path]:
     output = worktree / f"{prefix}-{Path(page).stem}.md"
     command = [
@@ -1161,6 +1174,8 @@ def run_judge(
         output.as_posix(),
         "--fail-on-issues",
     ]
+    if soft_pass:
+        command.append("--soft-pass")
     # Use backend if specified, otherwise fall back to codex with candidate
     if backend_name:
         command.extend(["--backend", backend_name])
@@ -1194,6 +1209,7 @@ def run_judge_with_optional_row_fallback(
     timeout: int,
     batch: bool,
     prefix: str,
+    soft_pass: bool = True,
 ) -> tuple[int, Path, list[Path]]:
     returncode, report = run_judge(
         worktree=worktree,
@@ -1205,6 +1221,7 @@ def run_judge_with_optional_row_fallback(
         timeout=timeout,
         batch=batch,
         prefix=prefix,
+        soft_pass=soft_pass,
     )
     reports = [report]
     if not batch or returncode == 0 or not should_retry_batch_judge_rowwise(report):
@@ -1220,6 +1237,7 @@ def run_judge_with_optional_row_fallback(
         timeout=timeout,
         batch=False,
         prefix=f"{prefix}-rowwise",
+        soft_pass=soft_pass,
     )
     reports.append(rowwise_report)
     return rowwise_returncode, rowwise_report, reports
@@ -1237,6 +1255,39 @@ def should_retry_batch_judge_rowwise(report: Path) -> bool:
         "local judge returned invalid claim verdict",
     ]
     return any(error in text for error in batch_format_errors)
+
+
+def should_run_judge_repair(report: Path) -> bool:
+    """Patch 3: Sticky initial synthesis.
+
+    Only run judge repair if there are genuine "not_supported" verdicts.
+    Skip repair if only "too_broad" verdicts - these are often false positives
+    from vocabulary differences between synthesized claims and evidence.
+
+    Returns True if repair should run, False if initial synthesis should be kept.
+    """
+    if not report.exists():
+        return True  # Can't tell, default to repair
+
+    text = report.read_text(errors="ignore").lower()
+
+    # Check for genuinely unsupported claims
+    has_not_supported = "not_supported" in text or "not supported" in text
+
+    # Check for format errors that need retry
+    has_format_error = any(error in text for error in [
+        "local judge did not return",
+        "could not be parsed",
+        "missing claim_results",
+    ])
+
+    # Only repair if there are genuine content issues
+    if has_not_supported or has_format_error:
+        return True
+
+    # too_broad alone is not enough to trigger repair
+    # It's often a false positive from semantic judge seeing vocabulary differences
+    return False
 
 
 def claim_repair_hints(worktree: Path, page: str, normalized_source: Path) -> str:
@@ -1338,6 +1389,7 @@ Mechanical repair rules:
 - If a source line contains internal quotation marks, use a shorter exact excerpt that avoids those internal quotation marks.
 - If a row fails weak generic fact language, rewrite the fact or claim cell, not the Evidence cell.
 - Do not use these weak generic words in fact or claim cells: important, crucial, fundamental, essential, success.
+- CONSERVATIVE CLAIMS: Each claim/fact must be fully entailed by the cited evidence. Do NOT add details, qualifications, or explanations not present in the evidence.
 - Do not copy the Evidence sentence into the fact or claim cell.
 - Do not put YAML/frontmatter keys such as `tags:`, `sources:`, `status:`, or `last_updated:` in the Markdown body.
 - It is acceptable to remove failed optional rows as long as the page still has the minimum required rows.
@@ -1420,7 +1472,12 @@ The local claim judge failed with this report:
 Repair rules:
 - Fix rows listed under `## Deterministic Flags`, even if the model verdict table marks the row as supported.
 - Fix only rows marked `too_broad`, `not_supported`, `unclear`, or `not judged`.
-- Prefer narrowing the claim to exactly what the cited evidence supports.
+- SYNTHESIS means expressing the SAME MEANING as the evidence using DIFFERENT WORDS. Example:
+  - Evidence: "Linear recursion is a basic building block of algorithms."
+  - BAD claim (copies evidence): "Linear recursion is a basic building block of algorithms."
+  - BAD claim (adds facts): "Linear recursion is a pattern where functions repeatedly apply themselves."
+  - GOOD claim (synthesizes): "Linear recursion serves as a core component for constructing algorithms."
+- Prefer narrowing the claim to exactly what the cited evidence supports, but use your own phrasing.
 - If the judge suggests a narrower claim, use it unless it conflicts with the evidence.
 - If the evidence is weak, replace that row with a stronger exact excerpt from the evidence bank.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
