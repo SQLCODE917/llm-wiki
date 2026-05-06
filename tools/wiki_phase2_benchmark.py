@@ -651,6 +651,11 @@ class EvidenceItem:
     locator: str  # e.g., "normalized:L123"
     text: str  # The actual evidence text
     candidate: str  # Which candidate/topic this belongs to
+    # Enriched context (optional)
+    context_before: str = ""  # 3 lines before the evidence
+    evidence_line: str = ""  # The actual line at the locator
+    context_after: str = ""  # 3 lines after the evidence
+    line_start: int = 0  # Starting line number (1-indexed)
 
 
 @dataclass
@@ -751,12 +756,56 @@ def build_evidence_bank(
                 eid = f"E{evidence_id:02d}"
                 evidence_id += 1
 
+                # Extract line number from locator for context
+                # Locators are 1-indexed (L1 = first line), arrays are 0-indexed
+                line_start = 0
+                match = re.search(r"L(\d+)", locator)
+                if match:
+                    line_start = int(match.group(1))  # 1-indexed
+
+                # Get surrounding context (±3 lines)
+                context_before = ""
+                context_after = ""
+                evidence_line = ""
+                context_lines = 3
+
+                if line_start > 0:
+                    idx = line_start - 1  # Convert to 0-indexed
+
+                    # Context before (3 lines)
+                    before_start = max(0, idx - context_lines)
+                    context_before = "\n".join(lines[before_start:idx])
+
+                    # Evidence line itself
+                    if idx < len(lines):
+                        evidence_line = lines[idx]
+
+                    # Find end line (from range or single line)
+                    end_match = re.search(r"L\d+-L(\d+)", locator)
+                    line_end_1indexed = int(end_match.group(
+                        1)) if end_match else line_start
+                    line_end_idx = line_end_1indexed - 1  # Convert to 0-indexed
+
+                    # Context after (3 lines after the end)
+                    after_end = min(
+                        len(lines), line_end_idx + 1 + context_lines)
+                    context_after = "\n".join(
+                        lines[line_end_idx + 1:after_end])
+
                 # Truncate for prompt display
                 display_text = text[:150] + "..." if len(text) > 150 else text
                 sections.append(f'[{eid}] {locator} "{display_text}"')
 
-                item = EvidenceItem(id=eid, locator=locator,
-                                    text=text, candidate=query)
+                item = EvidenceItem(
+                    id=eid,
+                    locator=locator,
+                    text=text,
+                    candidate=query,
+                    context_before=context_before,
+                    evidence_line=evidence_line,
+                    context_after=context_after,
+                    line_start=line_start,
+                )
                 items[eid] = item
                 by_locator[locator] = item
         else:

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -28,6 +29,14 @@ from wiki_phase2_benchmark import (
     source_relative_to_repo,
 )
 from wiki_fill_evidence import expand_evidence_ids, fill_evidence_in_page
+from wiki_failure_classifier import (
+    FailureCategory,
+    ValidationFailure,
+    parse_validation_output,
+    group_failures_by_page,
+    summarize_failures,
+    DETERMINISTIC_CATEGORIES,
+)
 
 
 def main() -> int:
@@ -228,6 +237,111 @@ def run_with_backend(
     log_paths.append(last_message_path)
 
     return 0, log_paths
+
+
+def attempt_deterministic_repairs(
+    *,
+    worktree: Path,
+    slug: str,
+    page_path: str,
+    validation_log: Path,
+    page_schema: WikiPageSchema | None,
+    evidence_bank: EvidenceBankResult | None,
+) -> tuple[bool, list[ValidationFailure]]:
+    """Attempt deterministic repairs based on validation failures.
+
+    Returns:
+        Tuple of (repairs_made, remaining_failures)
+    """
+    if not validation_log.exists():
+        return False, []
+
+    validation_output = validation_log.read_text()
+    failures = parse_validation_output(validation_output)
+
+    if not failures:
+        return False, []
+
+    # Count deterministically fixable failures
+    det_failures = [
+        f for f in failures if f.category in DETERMINISTIC_CATEGORIES]
+    if not det_failures:
+        print(
+            f"  No deterministic repairs possible ({len(failures)} failures need LLM)")
+        return False, failures
+
+    print(
+        f"  {len(det_failures)} deterministic, {len(failures) - len(det_failures)} need LLM")
+
+    # Attempt repairs on the markdown file directly
+    full_page_path = worktree / page_path
+    if not full_page_path.exists():
+        return False, failures
+
+    page_text = full_page_path.read_text()
+    repairs_made = False
+
+    for failure in det_failures:
+        if failure.category == FailureCategory.MISSING_SOURCE_LINK:
+            # Add source to frontmatter
+            if f"sources/{slug}.md" not in page_text:
+                page_text = repair_missing_source_in_markdown(page_text, slug)
+                repairs_made = True
+        elif failure.category == FailureCategory.MISSING_SOURCE_SECTION:
+            # Add Source pages section
+            if "## Source pages" not in page_text:
+                title = slug.replace("-", " ").title()
+                page_text += f"\n\n## Source pages\n\n- [{title}](../sources/{slug}.md)\n"
+                repairs_made = True
+        elif failure.category == FailureCategory.PLACEHOLDER_TEXT:
+            # Remove placeholder text
+            page_text = re.sub(r"^.*Page title.*$", "",
+                               page_text, flags=re.MULTILINE)
+            page_text = re.sub(r"^.*Source-native group name.*$",
+                               "", page_text, flags=re.MULTILINE)
+            repairs_made = True
+        elif failure.category == FailureCategory.BAD_SOURCE_CELL:
+            # Fix source cell format in tables
+            title = slug.replace("-", " ").title()
+            page_text = re.sub(
+                r"\|\s*\[?Source\]?\s*\|",
+                f"| [{title}](../sources/{slug}.md) |",
+                page_text,
+            )
+            repairs_made = True
+
+    if repairs_made:
+        full_page_path.write_text(page_text)
+        print(f"  Applied deterministic repairs to {page_path}")
+
+    # Return remaining failures that still need LLM
+    remaining = [
+        f for f in failures if f.category not in DETERMINISTIC_CATEGORIES]
+    return repairs_made, remaining
+
+
+def repair_missing_source_in_markdown(text: str, slug: str) -> str:
+    """Add source page to frontmatter sources list."""
+    source_path = f"../sources/{slug}.md"
+
+    # Try to add to existing sources list
+    sources_match = re.search(r"(sources:\s*\n(?:\s+-[^\n]+\n)*)", text)
+    if sources_match:
+        # Append to list
+        old_block = sources_match.group(1)
+        new_block = old_block.rstrip() + f"\n  - {source_path}\n"
+        return text.replace(old_block, new_block)
+
+    # Try to add sources: key after frontmatter opening
+    if "sources:" not in text:
+        text = re.sub(
+            r"(---\n(?:.*\n)*?)(---)",
+            rf"\1sources:\n  - {source_path}\n\2",
+            text,
+            count=1,
+        )
+
+    return text
 
 
 def run_with_backend_json(
@@ -464,6 +578,29 @@ def run_single_candidate(
         normalized_source,
         range_paths=selected_paths,
     )
+
+    # Try deterministic repairs before LLM repair loop
+    if validation_returncode != 0:
+        repairs_made, remaining_failures = attempt_deterministic_repairs(
+            worktree=worktree,
+            slug=slug,
+            page_path=selected_repo_path,
+            validation_log=worktree / "phase2-validation.log",
+            page_schema=page_schema,
+            evidence_bank=evidence_bank if isinstance(
+                evidence_bank, EvidenceBankResult) else None,
+        )
+        if repairs_made:
+            # Re-validate after deterministic repairs
+            validation_returncode = run_validation(
+                worktree,
+                slug,
+                expected_total_pages,
+                expected_total_pages,
+                allowed_paths,
+                normalized_source,
+                range_paths=selected_paths,
+            )
 
     for attempt in range(1, repair_attempts + 1):
         if validation_returncode == 0:

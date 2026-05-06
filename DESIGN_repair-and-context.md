@@ -1,6 +1,7 @@
 # Design: Validation-Driven Repair and Richer Synthesis Context
 
 This document addresses two related issues:
+
 1. Validation failures don't trigger proper repair loops
 2. Phase 2b synthesis underuses available context (context starvation)
 
@@ -13,6 +14,7 @@ generate → validate → if fail: send validation log to LLM → regenerate →
 ```
 
 Issues:
+
 - Most failures can be fixed deterministically without LLM
 - Failures aren't classified; all get same repair treatment
 - No quarantine mechanism for unfixable pages
@@ -22,8 +24,8 @@ Issues:
 ### Target Flow
 
 ```
-generate → validate → classify failures → deterministic fixes → revalidate 
-→ if still failing: enrich context + targeted LLM repair → revalidate 
+generate → validate → classify failures → deterministic fixes → revalidate
+→ if still failing: enrich context + targeted LLM repair → revalidate
 → if still failing after N attempts: quarantine with specific reason
 ```
 
@@ -56,12 +58,12 @@ class FailureCategory(Enum):
     MISSING_SOURCE_SECTION = "missing_source_section"
     PLACEHOLDER_TEXT = "placeholder_text"
     EMPTY_SECTION = "empty_section"
-    
+
     # Partially deterministic
     LOCATOR_OUT_OF_RANGE = "locator_out_of_range"  # Can suggest valid locators
     EVIDENCE_MISMATCH = "evidence_mismatch"  # Can refresh from source
     DUPLICATE_HEADING = "duplicate_heading"  # Can merge/rename
-    
+
     # Requires LLM
     TOO_FEW_CLAIMS = "too_few_claims"
     WEAK_CLAIM_TEXT = "weak_claim_text"
@@ -91,7 +93,7 @@ def repair_missing_source_link(page: WikiPageSchema, slug: str) -> WikiPageSchem
 def repair_missing_source_section(page: WikiPageSchema, slug: str) -> WikiPageSchema:
     """Add Source pages section if missing."""
     has_source_section = any(
-        "source" in s.heading.lower() and "backed" not in s.heading.lower() 
+        "source" in s.heading.lower() and "backed" not in s.heading.lower()
         for s in page.sections
     )
     if not has_source_section:
@@ -110,7 +112,7 @@ def repair_placeholder_text(page: WikiPageSchema) -> WikiPageSchema:
     return page
 
 def repair_evidence_from_bank(
-    page: WikiPageSchema, 
+    page: WikiPageSchema,
     evidence_bank: EvidenceBankResult
 ) -> WikiPageSchema:
     """Re-expand evidence from bank to fix mismatches."""
@@ -166,7 +168,7 @@ def repair_pipeline(
     Apply deterministic fixes and return remaining failures that need LLM.
     """
     remaining: list[ValidationFailure] = []
-    
+
     for failure in failures:
         if failure.category == FailureCategory.FRONTMATTER_MISSING_KEY:
             page = repair_frontmatter_missing_key(page, failure.field, get_default(failure.field))
@@ -181,7 +183,7 @@ def repair_pipeline(
         else:
             # Needs LLM
             remaining.append(failure)
-    
+
     return page, remaining
 ```
 
@@ -193,7 +195,7 @@ def repair_pipeline(
 
 ```
 - System prompt (~500 tokens)
-- Evidence bank (~10 items × 150 chars = ~400 tokens)  
+- Evidence bank (~10 items × 150 chars = ~400 tokens)
 - User prompt template (~800 tokens)
 - Selected candidate info (~200 tokens)
 ```
@@ -215,11 +217,13 @@ def repair_pipeline(
 ### Evidence Bank Enhancement
 
 Current: Just the evidence text
+
 ```
 [E01] normalized:L1275 "Functions containing free variables are called closures."
 ```
 
 Enhanced: Evidence with surrounding context
+
 ```
 [E01] normalized:L1275
 Evidence: "Functions containing free variables are called closures."
@@ -253,28 +257,28 @@ def build_enriched_evidence_bank(
     """Build evidence bank with surrounding source context."""
     items = {}
     evidence_id = 1
-    
+
     for candidate in selected_candidates:
         matched_claims = match_claims_to_candidate(extraction_claims, candidate)
-        
+
         for claim in matched_claims[:10]:
             locator = claim.get("locator", "")
             evidence = claim.get("evidence", "")
-            
+
             # Parse line number from locator
             line = parse_line_from_locator(locator)
             if line is None:
                 continue
-            
+
             # Get surrounding context
             start = max(0, line - context_lines - 1)
             end = min(len(source_lines), line + context_lines)
             context_before = "\n".join(source_lines[start:line-1])
             context_after = "\n".join(source_lines[line:end])
-            
+
             eid = f"E{evidence_id:02d}"
             evidence_id += 1
-            
+
             items[eid] = EnrichedEvidenceItem(
                 id=eid,
                 locator=locator,
@@ -283,7 +287,7 @@ def build_enriched_evidence_bank(
                 context_after=context_after,
                 candidate=candidate.path,
             )
-    
+
     return EnrichedEvidenceBankResult(items=items, ...)
 
 
@@ -319,13 +323,13 @@ def get_neighboring_claims(
             if topic not in other_topics:
                 other_topics[topic] = []
             other_topics[topic].append(claim)
-    
+
     sections = ["## Claims from adjacent topics (for boundary awareness)"]
     for topic, claims in list(other_topics.items())[:3]:
         sections.append(f"\n### {topic}")
         for c in claims[:limit]:
             sections.append(f"- {c.get('claim', '')[:100]}")
-    
+
     return "\n".join(sections)
 ```
 
@@ -380,7 +384,7 @@ GOOD source cell (link):
 
 When LLM repair is needed, provide targeted context:
 
-```python
+````python
 def build_repair_prompt(
     page: WikiPageSchema,
     failures: list[ValidationFailure],
@@ -389,41 +393,41 @@ def build_repair_prompt(
     slug: str,
 ) -> str:
     """Build targeted repair prompt with rich context."""
-    
+
     sections = []
-    
+
     # 1. Specific failures to fix
     sections.append("## Failures to fix")
     for f in failures:
         sections.append(f"- {f.category.value}: {f.message}")
         if f.fix_hint:
             sections.append(f"  Hint: {f.fix_hint}")
-    
+
     # 2. Current page state (JSON)
     sections.append("\n## Current page (fix the issues above)")
     sections.append("```json")
     sections.append(json.dumps(asdict(page), indent=2))
     sections.append("```")
-    
+
     # 3. Evidence bank with context
     sections.append("\n## Available evidence")
     sections.append(render_enriched_evidence_bank(evidence_bank))
-    
+
     # 4. Validator requirements
     sections.append(VALIDATOR_REQUIREMENTS)
-    
+
     # 5. Common failures
     sections.append(COMMON_FAILURES)
-    
+
     # 6. Previous attempt failures (if any)
     if previous_attempts:
         sections.append("\n## Previous attempts (don't repeat these mistakes)")
         for i, attempt in enumerate(previous_attempts[-2:], 1):
             sections.append(f"\nAttempt {i}:")
             sections.append(attempt[:500])
-    
+
     return "\n".join(sections)
-```
+````
 
 ---
 
@@ -448,7 +452,7 @@ def quarantine_page(
     attempts: int,
 ) -> QuarantinedPage:
     """Move page to quarantine with detailed failure info."""
-    
+
     # Determine primary reason
     if any(f.category == FailureCategory.TOO_FEW_CLAIMS for f in failures):
         reason = "insufficient_evidence"
@@ -458,7 +462,7 @@ def quarantine_page(
         reason = "claims_not_grounded"
     else:
         reason = "validation_failures"
-    
+
     return QuarantinedPage(
         path=page_path,
         slug=slug,
@@ -471,7 +475,7 @@ def quarantine_page(
 def save_quarantine_report(quarantined: list[QuarantinedPage], output: Path):
     """Save quarantine report for human review."""
     lines = ["# Quarantined Pages", "", f"Generated: {date.today().isoformat()}", ""]
-    
+
     for q in quarantined:
         lines.append(f"## {q.path}")
         lines.append(f"- Reason: {q.reason}")
@@ -480,7 +484,7 @@ def save_quarantine_report(quarantined: list[QuarantinedPage], output: Path):
         for f in q.failures:
             lines.append(f"  - {f.category.value}: {f.message}")
         lines.append("")
-    
+
     output.write_text("\n".join(lines))
 ```
 
@@ -499,55 +503,55 @@ def run_single_candidate_with_repair(
 ) -> tuple[WikiPageSchema | None, list[ValidationFailure], bool]:
     """
     Generate page with full repair pipeline.
-    
+
     Returns:
         Tuple of (final_page, remaining_failures, success)
     """
-    
+
     # 1. Initial generation with rich context
     page = generate_with_rich_context(
         worktree, slug, candidate, evidence_bank
     )
-    
+
     # 2. Validate and classify failures
     failures = validate_and_classify(page, slug, evidence_bank)
-    
+
     if not failures:
         return page, [], True
-    
+
     # 3. Deterministic repair loop
     for _ in range(max_deterministic_repairs):
         page, remaining = repair_pipeline(page, failures, evidence_bank, slug)
-        
+
         # Re-render and revalidate
         render_page_to_file(page, worktree, evidence_bank, slug)
         failures = validate_and_classify(page, slug, evidence_bank)
-        
+
         if not failures:
             return page, [], True
-        
+
         # Stop if no progress
         if len(failures) >= len(remaining):
             break
-    
+
     # 4. LLM repair loop for remaining failures
     previous_attempts = []
     for attempt in range(max_llm_repairs):
         repair_prompt = build_repair_prompt(
             page, failures, evidence_bank, previous_attempts, slug
         )
-        
+
         page = llm_repair(repair_prompt, evidence_bank, slug)
-        
+
         # Record attempt
         previous_attempts.append(format_failures(failures))
-        
+
         # Revalidate
         failures = validate_and_classify(page, slug, evidence_bank)
-        
+
         if not failures:
             return page, [], True
-    
+
     # 5. Quarantine if still failing
     return page, failures, False
 ```
@@ -556,33 +560,39 @@ def run_single_candidate_with_repair(
 
 ## Implementation Plan
 
-### Phase 1: Failure Classification (tools/wiki_failure_classifier.py)
+### Phase 1: Failure Classification (tools/wiki_failure_classifier.py) ✓ IMPLEMENTED
+
 - Parse validation output into structured failures
 - Classify each failure by category
 - Mark which can be fixed deterministically
 
-### Phase 2: Deterministic Repair (tools/wiki_deterministic_repair.py)
+### Phase 2: Deterministic Repair (tools/wiki_deterministic_repair.py) ✓ IMPLEMENTED
+
 - Implement repair functions for each deterministic category
 - Operate on WikiPageSchema directly
 - Re-render after repairs
 
-### Phase 3: Enriched Evidence Bank (tools/wiki_phase2_benchmark.py)
-- Add context lines around evidence
+### Phase 3: Enriched Evidence Bank (tools/wiki_phase2_benchmark.py) ✓ IMPLEMENTED
+
+- Add context lines around evidence (±3 lines)
 - Include neighboring claims
 - Add validator requirements summary
 
-### Phase 4: Repair Prompt Enhancement (tools/wiki_phase2_single.py)
-- Build targeted repair prompts
-- Include failure-specific hints
+### Phase 4: Repair Pipeline Integration (tools/wiki_phase2_single.py) ✓ IMPLEMENTED
+
+- Added `attempt_deterministic_repairs()` function
+- Integrated into validation loop (runs before LLM repair)
+- Build targeted repair prompts with failure-specific hints
 - Track previous attempts
 
 ### Phase 5: Quarantine Mechanism (tools/wiki_quarantine.py)
+
 - Quarantine unfixable pages
 - Generate review report
 - Track quarantine reasons
 
 ### Phase 6: Integration
-- Update wiki_phase2_single.py to use new pipeline
+
 - Update wiki_ingest.py to handle quarantine
 - Add quarantine report to maintenance
 
@@ -600,14 +610,14 @@ def run_single_candidate_with_repair(
 
 ## File Changes
 
-| File | Change |
-|------|--------|
-| `tools/wiki_failure_classifier.py` | NEW: Classify validation failures |
-| `tools/wiki_deterministic_repair.py` | NEW: Deterministic repair functions |
-| `tools/wiki_quarantine.py` | NEW: Quarantine mechanism |
-| `tools/wiki_phase2_benchmark.py` | MODIFY: Enriched evidence bank |
-| `tools/wiki_phase2_single.py` | MODIFY: New repair pipeline |
-| `tools/wiki_page_schema.py` | MODIFY: Add repair helpers |
-| `tools/wiki_check_synthesis.py` | MODIFY: Return structured failures |
-| `tools/prompts/system-synthesis-json.md` | MODIFY: Add validation requirements |
-| `wiki/_quarantine-report.md` | NEW: Quarantine tracking |
+| File                                     | Change                                           | Status |
+| ---------------------------------------- | ------------------------------------------------ | ------ |
+| `tools/wiki_failure_classifier.py`       | NEW: Classify validation failures                | ✓ Done |
+| `tools/wiki_deterministic_repair.py`     | NEW: Deterministic repair functions              | ✓ Done |
+| `tools/wiki_quarantine.py`               | NEW: Quarantine mechanism                        | TODO   |
+| `tools/wiki_phase2_benchmark.py`         | MODIFY: Enriched evidence bank (±3 line context) | ✓ Done |
+| `tools/wiki_phase2_single.py`            | MODIFY: New repair pipeline integration          | ✓ Done |
+| `tools/wiki_page_schema.py`              | MODIFY: Add repair helpers                       | N/A    |
+| `tools/wiki_check_synthesis.py`          | MODIFY: Return structured failures               |
+| `tools/prompts/system-synthesis-json.md` | MODIFY: Add validation requirements              |
+| `wiki/_quarantine-report.md`             | NEW: Quarantine tracking                         |
