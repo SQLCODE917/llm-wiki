@@ -280,15 +280,19 @@ def attempt_deterministic_repairs(
             return any_repairs_made, []
 
         # Partition failures
-        det_failures = [f for f in failures if f.category in DETERMINISTIC_CATEGORIES]
-        llm_failures = [f for f in failures if f.category not in DETERMINISTIC_CATEGORIES]
+        det_failures = [
+            f for f in failures if f.category in DETERMINISTIC_CATEGORIES]
+        llm_failures = [
+            f for f in failures if f.category not in DETERMINISTIC_CATEGORIES]
 
         if not det_failures:
             if iteration == 0:
-                print(f"  No deterministic repairs possible ({len(llm_failures)} failures need LLM)")
+                print(
+                    f"  No deterministic repairs possible ({len(llm_failures)} failures need LLM)")
             return any_repairs_made, llm_failures
 
-        print(f"  Repair iteration {iteration + 1}: {len(det_failures)} deterministic, {len(llm_failures)} need LLM")
+        print(
+            f"  Repair iteration {iteration + 1}: {len(det_failures)} deterministic, {len(llm_failures)} need LLM")
 
         # Attempt schema-level repairs if we have the schema
         repairs_this_iteration = False
@@ -307,7 +311,7 @@ def attempt_deterministic_repairs(
         # Fall back to markdown-level repairs for anything not fixed
         if not repairs_this_iteration and full_page_path.exists():
             repairs_this_iteration = attempt_markdown_repairs(
-                full_page_path, det_failures, slug
+                full_page_path, det_failures, slug, normalized_source
             )
             if repairs_this_iteration:
                 print(f"    Applied markdown-level repairs")
@@ -340,9 +344,11 @@ def get_structured_failures(
         source_path = worktree / "wiki/sources" / f"{slug}.md"
         if source_path.exists():
             # Get the repo-relative path
-            repo_page = page_path if not page_path.startswith(str(worktree)) else str(Path(page_path).relative_to(worktree))
+            repo_page = page_path if not page_path.startswith(
+                str(worktree)) else str(Path(page_path).relative_to(worktree))
 
-            normalized_str = str(normalized_source) if normalized_source else None
+            normalized_str = str(
+                normalized_source) if normalized_source else None
             failures = check_synthesis_structured(
                 slug,
                 min_pages=1,
@@ -368,6 +374,7 @@ def attempt_markdown_repairs(
     page_path: Path,
     failures: list[ValidationFailure],
     slug: str,
+    normalized_source: Path | None = None,
 ) -> bool:
     """Apply markdown-level repairs for deterministic failures.
 
@@ -415,9 +422,12 @@ def attempt_markdown_repairs(
         elif failure.category == FailureCategory.PLACEHOLDER_TEXT:
             # Remove placeholder text patterns
             old_text = page_text
-            page_text = re.sub(r"^.*Page title.*$", "", page_text, flags=re.MULTILINE)
-            page_text = re.sub(r"^.*Source-native group name.*$", "", page_text, flags=re.MULTILINE)
-            page_text = re.sub(r"^.*concrete evidence basis.*$", "", page_text, flags=re.MULTILINE)
+            page_text = re.sub(r"^.*Page title.*$", "",
+                               page_text, flags=re.MULTILINE)
+            page_text = re.sub(r"^.*Source-native group name.*$",
+                               "", page_text, flags=re.MULTILINE)
+            page_text = re.sub(r"^.*concrete evidence basis.*$",
+                               "", page_text, flags=re.MULTILINE)
             if page_text != old_text:
                 repairs_made = True
 
@@ -460,7 +470,7 @@ def attempt_markdown_repairs(
                 "\u2019": "'",   # right single quote
                 "\u201c": '"',   # left double quote
                 "\u201d": '"',   # right double quote
-                "\u2026": "...", # ellipsis
+                "\u2026": "...",  # ellipsis
             }
             for old, new in replacements.items():
                 page_text = page_text.replace(old, new)
@@ -502,11 +512,119 @@ def attempt_markdown_repairs(
             if page_text != old_text:
                 repairs_made = True
 
+        elif failure.category == FailureCategory.EVIDENCE_NOT_IN_LOCATOR:
+            # Evidence text doesn't match the locator - search nearby lines
+            if normalized_source and normalized_source.exists() and failure.row:
+                old_text = page_text
+                page_text = repair_evidence_locator(
+                    page_text, failure.row, normalized_source
+                )
+                if page_text != old_text:
+                    repairs_made = True
+
     if repairs_made and page_text != original_text:
         page_path.write_text(page_text)
         return True
 
     return False
+
+
+def repair_evidence_locator(
+    page_text: str,
+    row: int,
+    normalized_source: Path,
+) -> str:
+    """Find correct locator for evidence row by searching normalized source.
+
+    When evidence text doesn't match the cited locator, search nearby lines
+    (and then the full document) to find where the text actually appears.
+    """
+    source_lines = normalized_source.read_text().splitlines()
+
+    # Parse the evidence table
+    table_match = re.search(
+        r'\|\s*Claim\s*\|\s*Evidence\s*\|\s*Locator\s*\|\s*Source\s*\|'
+        r'(.*?)(?=\n\n|\n##|\Z)',
+        page_text,
+        re.DOTALL | re.IGNORECASE
+    )
+    if not table_match:
+        return page_text
+
+    table_text = table_match.group(0)
+    table_lines = [l for l in table_text.splitlines()
+                   if l.strip().startswith('|')]
+
+    # Skip header and separator (first 2 lines)
+    data_rows = [l for l in table_lines[2:] if '---' not in l]
+
+    if row < 1 or row > len(data_rows):
+        return page_text
+
+    row_text = data_rows[row - 1]
+
+    # Parse the row: | Claim | Evidence | Locator | Source |
+    cells = [c.strip() for c in row_text.split('|')]
+    if len(cells) < 5:
+        return page_text
+
+    # 0=empty, 1=claim, 2=evidence, 3=locator, 4=source
+    evidence_cell = cells[2]
+    locator_cell = cells[3]
+
+    # Extract evidence text (remove quotes)
+    evidence_text = re.sub(r'^["\']|["\']$', '', evidence_cell.strip())
+    if not evidence_text or evidence_text == "N/A":
+        return page_text
+
+    # Parse current locator to get starting point
+    loc_match = re.search(r'L(\d+)(?:-L(\d+))?', locator_cell)
+    original_line = 1
+    if loc_match:
+        original_line = int(loc_match.group(1))
+
+    # Normalize for search
+    def normalize(s: str) -> str:
+        return re.sub(r'\s+', ' ', s.lower().strip())
+
+    evidence_norm = normalize(evidence_text)
+
+    # Search strategy: start from original locator line, expand outward
+    # This prefers tighter ranges around the original locator
+    max_distance = 20  # Max lines to search from original
+
+    def find_evidence_range(start_idx: int) -> tuple[int, int] | None:
+        """Try to find evidence starting from start_idx, return (start, end) 1-indexed or None."""
+        for end_offset in range(1, 6):  # Try 1-5 lines
+            if start_idx + end_offset > len(source_lines):
+                break
+            chunk = ' '.join(source_lines[start_idx:start_idx + end_offset])
+            if evidence_norm in normalize(chunk):
+                return (start_idx + 1, start_idx + end_offset)
+        return None
+
+    # Search outward from original line (prefer closer matches)
+    for distance in range(max_distance + 1):
+        # Try original line + distance
+        for offset in ([0] if distance == 0 else [distance, -distance]):
+            idx = original_line - 1 + offset  # 0-indexed
+            if 0 <= idx < len(source_lines):
+                result = find_evidence_range(idx)
+                if result:
+                    new_start, new_end = result
+                    if new_start == new_end:
+                        new_locator = f"`normalized:L{new_start}`"
+                    else:
+                        new_locator = f"`normalized:L{new_start}-L{new_end}`"
+
+                    # Replace the locator in the row
+                    old_locator_pattern = re.escape(locator_cell)
+                    new_row = re.sub(old_locator_pattern,
+                                     new_locator.strip('`'), row_text)
+                    page_text = page_text.replace(row_text, new_row)
+                    return page_text
+
+    return page_text
 
 
 def repair_missing_source_in_markdown(text: str, slug: str) -> str:

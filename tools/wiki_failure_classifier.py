@@ -155,6 +155,7 @@ DETERMINISTIC_CATEGORIES = {
     FailureCategory.CANDIDATE_PAGE_EXISTS,
     FailureCategory.NON_ASCII_CHARS,
     FailureCategory.WRONG_SOURCE_LINK,
+    FailureCategory.EVIDENCE_NOT_IN_LOCATOR,  # Can fix by searching nearby lines
 }
 
 # Categories that can suggest fixes but may need LLM
@@ -164,7 +165,6 @@ SEMI_DETERMINISTIC_CATEGORIES = {
     FailureCategory.LOCATOR_OUT_OF_RANGE,
     FailureCategory.LOCATOR_OUTSIDE_RANGE,
     FailureCategory.EVIDENCE_MISMATCH,
-    FailureCategory.EVIDENCE_NOT_IN_LOCATOR,
     FailureCategory.QUOTE_NOT_FOUND_AT_LOCATOR,
     FailureCategory.DUPLICATE_HEADING,
     FailureCategory.INVALID_SOURCE_RANGE,
