@@ -31,18 +31,18 @@ Every synthesized page should include:
 1. YAML frontmatter (see above)
 2. `# Title`
 3. Short definition or summary
-4. `## Source-backed details` with a **3-column** evidence table:
+4. `## Source-backed details` with a **2-column** evidence table:
 
 ```md
-| Claim | Locator | Source |
-| ----- | ------- | ------ |
-| Your synthesized claim in your own words. | `normalized:L12` | [Source title](../sources/<slug>.md) |
+| Claim | Evidence |
+| ----- | -------- |
+| Your synthesized claim in your own words. | [E01] |
 ```
 
 5. Cross-links to related pages
 6. `## Source pages` section linking back to source
 
-**IMPORTANT**: You output a 3-column table. Evidence cells are filled automatically by deterministic post-processing. Do NOT write evidence text.
+**IMPORTANT**: You cite evidence by ID (e.g., `[E01]`). The full evidence table is rendered automatically by post-processing. Do NOT write evidence text or locators.
 
 Type-specific requirements:
 - **Procedure pages** must include `## Steps` with at least 3 numbered or bulleted steps
@@ -51,10 +51,9 @@ Type-specific requirements:
 ## Evidence table rules
 
 1. **Claim cells**: Synthesize in YOUR OWN WORDS what the source teaches
-2. **Locator cells**: Use `normalized:L12` or `normalized:L12-L14` format
-3. **Source cells**: Link to the source page
-4. **NO evidence column**: Evidence is filled automatically from locators
-5. Minimum 5 rows per page
+2. **Evidence cells**: Cite by ID only, e.g., `[E01]`, `[E02]`
+3. Evidence IDs reference the evidence bank provided in the prompt
+4. Minimum 5 rows per page
 
 ## Cross-link rules
 
@@ -85,10 +84,10 @@ Brief definition.
 
 ## Source-backed details
 
-| Claim | Locator | Source |
-| ----- | ------- | ------ |
-| First key insight synthesized from the source. | `normalized:L123` | [Source](../sources/example-source.md) |
-| Second key insight in your own words. | `normalized:L145` | [Source](../sources/example-source.md) |
+| Claim | Evidence |
+| ----- | -------- |
+| First key insight synthesized from the source. | [E01] |
+| Second key insight in your own words. | [E02] |
 
 ## Source pages
 

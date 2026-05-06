@@ -42,26 +42,27 @@ Task:
 
 {{selected_candidates}}
 
-Locators available (evidence will be filled automatically):
+Evidence bank (cite by ID):
 
 {{evidence_bank}}
 
 CRITICAL FORMAT REQUIREMENTS:
 
-1. **Write claims, NOT evidence**: You write a **3-column table**. Evidence cells are filled automatically by deterministic post-processing. Do NOT write evidence text.
+1. **Cite evidence by ID**: You write a **2-column table**. Cite evidence by ID (e.g., `[E01]`). The full table with evidence text, locators, and source links is rendered automatically.
 
    ```md
-   | Claim | Locator | Source |
-   | ----- | ------- | ------ |
-   | Your synthesized insight in your own words. | `normalized:L123` | [Source](../sources/{{slug}}.md) |
+   | Claim | Evidence |
+   | ----- | -------- |
+   | Your synthesized insight in your own words. | [E01] |
+   | Another insight you synthesized. | [E02] |
    ```
 
-2. **Synthesize claims**: Claims must be YOUR interpretation of what the source teaches. Do not copy source text into claims.
+2. **Synthesize claims**: Claims must be YOUR interpretation of what the source teaches. Do not copy the evidence text into claims.
 
-   BAD: `| JavaScript uses function declarations to bind... |` (copying source)
+   BAD: `| JavaScript uses function declarations to bind... |` (copying evidence)
    GOOD: `| Function declarations create named bindings in scope. |` (your synthesis)
 
-3. **Use exact locators**: Copy locators exactly as provided in the evidence bank. Use `normalized:L123` format.
+3. **Use evidence IDs exactly**: Copy the ID from the evidence bank exactly as shown (e.g., `[E01]`, `[E07]`).
 
 4. **Complete frontmatter**: Every synthesized page MUST have this exact structure:
 
@@ -74,40 +75,35 @@ CRITICAL FORMAT REQUIREMENTS:
    last_updated: {{current_date}}
    sources:
      - ../sources/{{slug}}.md
-   source_ranges:
-     - {{slug}}:normalized:L787
-     - {{slug}}:normalized:L937
    ---
    ```
 
-   List EVERY line number you cite as a separate source_ranges entry.
-
 5. **Required sections**: Every synthesized page MUST have:
-   - `## Source-backed details` with 3-column evidence table
+   - `## Source-backed details` with 2-column evidence table
    - `## Source pages` with link to ../sources/{{slug}}.md
 
 Additional rules:
 
-- Use only locators inside each selected page's allowed source range when one is shown.
+- Only cite evidence IDs shown in the evidence bank for your page's topic.
 - Do not create pages for any other candidate rows.
 - Do not create backup files.
 - After this run, the source should have {{expected_total_pages}} synthesized pages total.
 - Prefer small, specific pages over broad duplicates.
 - Each synthesized page must be one of: concept, entity, procedure, reference.
 - Each synthesized page must include YAML frontmatter, an H1, a short definition, `## Source-backed details`, and `## Source pages`.
-- `## Source-backed details` must contain a **3-column** Markdown table:
+- `## Source-backed details` must contain a **2-column** Markdown table:
 
 ```md
-| Claim | Locator | Source |
-| ----- | ------- | ------ |
-| Concrete reusable insight in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
+| Claim | Evidence |
+| ----- | -------- |
+| Concrete reusable insight in your own words. | [E01] |
 ```
 
 - Include at least 3 rows per synthesized page.
-- Use locators from the evidence bank provided above.
-- Do NOT write an Evidence column - it is filled automatically from locators.
-- Do not make a claim just because it sounds appropriate for the page title; every claim must be directly supported by its own Evidence cell.
-- If the evidence bank does not contain exact support for a likely-sounding claim, omit that claim.
+- Only use evidence IDs from the evidence bank provided above.
+- Do NOT write evidence text, locators, or source links - they are filled automatically.
+- Do not make a claim just because it sounds appropriate for the page title; every claim must cite a specific evidence ID.
+- If the evidence bank does not contain support for a likely-sounding claim, omit that claim.
 - Locator cells must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
 - Do not put pipe characters inside table cells.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.

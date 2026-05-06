@@ -13,6 +13,7 @@ from pathlib import Path
 from wiki_model_backend import get_backend, ModelConfig, parse_model_output, write_parsed_files
 from wiki_phase1_benchmark import find_normalized_source, git_changed_files, init_git, parse_candidate, run_codex
 from wiki_phase2_benchmark import (
+    EvidenceBankResult,
     RelatedCandidate,
     build_evidence_bank,
     changed_status_path,
@@ -25,7 +26,7 @@ from wiki_phase2_benchmark import (
     range_page_args,
     source_relative_to_repo,
 )
-from wiki_fill_evidence import fill_evidence_in_page
+from wiki_fill_evidence import expand_evidence_ids, fill_evidence_in_page
 
 
 def main() -> int:
@@ -213,11 +214,20 @@ def run_with_backend(
     return 0, log_paths
 
 
-def fix_synthesized_evidence(worktree: Path, page_path: str, normalized_source: Path) -> int:
-    """Fill evidence cells deterministically from locators.
+def fix_synthesized_evidence(
+    worktree: Path, 
+    page_path: str, 
+    normalized_source: Path,
+    evidence_bank: EvidenceBankResult | None = None,
+    slug: str = "",
+) -> int:
+    """Fill evidence cells deterministically from locators or evidence IDs.
     
-    The LLM writes a 3-column table (Claim | Locator | Source).
-    This function expands it to 4-column by filling evidence from source.
+    If evidence_bank is provided (with ID mapping), uses expand_evidence_ids
+    for 2-column tables: | Claim | [E01] | -> | Claim | Evidence | Locator | Source |
+    
+    Otherwise falls back to fill_evidence_in_page for 3-column tables:
+    | Claim | Locator | Source | -> | Claim | Evidence | Locator | Source |
     
     Returns number of evidence cells filled.
     """
@@ -226,8 +236,17 @@ def fix_synthesized_evidence(worktree: Path, page_path: str, normalized_source: 
         return 0
     
     page_text = full_page_path.read_text()
-    source_lines = normalized_source.read_text().splitlines()
     
+    # Try evidence ID expansion first if we have a bank
+    if evidence_bank and isinstance(evidence_bank, EvidenceBankResult) and evidence_bank.items:
+        filled_text, changes = expand_evidence_ids(page_text, evidence_bank, slug)
+        if changes:
+            full_page_path.write_text(filled_text)
+            print(f"Expanded {len(changes)} evidence ID(s) in {page_path}", file=sys.stderr)
+            return len(changes)
+    
+    # Fall back to locator-based filling
+    source_lines = normalized_source.read_text().splitlines()
     filled_text, changes = fill_evidence_in_page(page_text, source_lines)
     
     if changes:
@@ -267,7 +286,8 @@ def run_single_candidate(
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
     evidence_bank = build_evidence_bank(
-        worktree, normalized_source, [selected_candidate], extraction_claims=extraction_claims)
+        worktree, normalized_source, [selected_candidate], 
+        extraction_claims=extraction_claims, use_ids=True, slug=slug)
     selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),
@@ -278,7 +298,7 @@ def run_single_candidate(
         existing_paths=existing_paths,
         selected_candidates=[selected_candidate],
         expected_total_pages=expected_total_pages,
-        evidence_bank=evidence_bank,
+        evidence_bank=evidence_bank.prompt_text if isinstance(evidence_bank, EvidenceBankResult) else evidence_bank,
         range_page_args=range_page_args(selected_paths),
     )
 
@@ -311,8 +331,12 @@ def run_single_candidate(
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
     
-    # Fix fabricated evidence before validation
-    fix_synthesized_evidence(worktree, selected_repo_path, worktree / normalized_source)
+    # Expand evidence IDs or fill evidence from locators before validation
+    fix_synthesized_evidence(
+        worktree, selected_repo_path, worktree / normalized_source,
+        evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+        slug=slug,
+    )
     
     validation_returncode = run_validation(
         worktree,
@@ -374,8 +398,12 @@ def run_single_candidate(
         codex_returncodes.append(returncode)
         log_paths.extend(paths)
         
-        # Fix fabricated evidence before validation
-        fix_synthesized_evidence(worktree, selected_repo_path, worktree / normalized_source)
+        # Expand evidence IDs or fill evidence from locators before validation
+        fix_synthesized_evidence(
+            worktree, selected_repo_path, worktree / normalized_source,
+            evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+            slug=slug,
+        )
         
         validation_returncode = run_validation(
             worktree,
@@ -442,8 +470,12 @@ def run_single_candidate(
             codex_returncodes.append(returncode)
             log_paths.extend(paths)
             
-            # Fix fabricated evidence before validation
-            fix_synthesized_evidence(worktree, selected_repo_path, worktree / normalized_source)
+            # Expand evidence IDs or fill evidence from locators before validation
+            fix_synthesized_evidence(
+                worktree, selected_repo_path, worktree / normalized_source,
+                evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+                slug=slug,
+            )
             
             validation_returncode = run_validation(
                 worktree,

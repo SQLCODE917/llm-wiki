@@ -641,23 +641,51 @@ def render_existing_pages(paths: list[str]) -> str:
     return "\n".join(f"- `{path}`" for path in paths)
 
 
+@dataclass
+class EvidenceItem:
+    """A single evidence snippet with an ID."""
+    id: str  # e.g., "E01", "E02"
+    locator: str  # e.g., "normalized:L123"
+    text: str  # The actual evidence text
+    candidate: str  # Which candidate/topic this belongs to
+
+
+@dataclass
+class EvidenceBankResult:
+    """Result of building an evidence bank."""
+    prompt_text: str  # Rendered text for the prompt
+    items: dict[str, EvidenceItem]  # ID -> EvidenceItem mapping
+    by_locator: dict[str, EvidenceItem]  # locator -> EvidenceItem mapping
+
+
 def build_evidence_bank(
     worktree: Path,
     normalized_source: Path,
     selected_candidates: list[str | RelatedCandidate],
     extraction_claims: list[dict] | None = None,
-) -> str:
+    use_ids: bool = True,
+    slug: str = "",
+) -> str | EvidenceBankResult:
     """Build evidence bank for synthesis prompt.
     
-    If extraction_claims is provided (from deep-extract state), use the full
-    evidence text from those claims instead of re-extracting truncated snippets.
-    This improves accuracy by giving the model the exact evidence that was
-    extracted during the deep-extraction phase.
+    If use_ids is True (default), returns an EvidenceBankResult with:
+    - prompt_text: ID-based format for efficient model output
+    - items: dict mapping IDs to EvidenceItem objects
+    - by_locator: dict mapping locators to EvidenceItem objects
+    
+    If use_ids is False, returns the legacy string format.
     """
     source_path = normalized_source if normalized_source.is_absolute() else worktree / \
         normalized_source
     if not source_path.exists():
+        if use_ids:
+            return EvidenceBankResult(
+                prompt_text="No evidence bank available; normalized source was not found.",
+                items={},
+                by_locator={},
+            )
         return "No evidence bank available; normalized source was not found."
+    
     source_text = source_path.read_text(errors="ignore")
     lines = source_text.splitlines()
     
@@ -665,6 +693,10 @@ def build_evidence_bank(
     chunks = None if extraction_claims else source_chunks(source_text)
     
     sections: list[str] = []
+    items: dict[str, EvidenceItem] = {}
+    by_locator: dict[str, EvidenceItem] = {}
+    evidence_id = 1
+    
     for candidate in selected_candidates:
         query = evidence_query(candidate)
         ranges = source_ranges_for_candidate(candidate_path(
@@ -681,13 +713,11 @@ def build_evidence_bank(
             ]
         
         sections.append(f"### {query}")
-        if ranges:
+        if ranges and not use_ids:
             sections.append(
                 f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
-        else:
-            sections.append(
-                "Allowed source range: not derived from headings. The created page must declare `source_ranges` if validation is range-gated."
-            )
+        
+        evidence_items: list[tuple[str, str]] = []  # (locator, text)
         
         if matched_claims:
             # Use full evidence from extraction state (preferred)
@@ -695,10 +725,10 @@ def build_evidence_bank(
                 locator = claim.get("locator", "")
                 evidence = claim.get("evidence", "")
                 if evidence and locator:
-                    # Truncate very long evidence for readability but keep more than snippets
+                    # Truncate very long evidence for readability
                     if len(evidence) > 400:
                         evidence = evidence[:400] + "..."
-                    sections.append(f"- `{locator}` - {evidence}")
+                    evidence_items.append((locator, evidence))
         else:
             # Fall back to re-extracting snippets (less accurate)
             if chunks is None:
@@ -706,13 +736,40 @@ def build_evidence_bank(
             candidate_chunks = chunks_in_ranges(
                 chunks, ranges) if ranges else chunks
             snippets = snippets_for_candidate(query, candidate_chunks, limit=10)
-            if snippets:
-                sections.extend(
-                    f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
-            else:
-                sections.append("- not covered in sources")
+            for snippet in snippets:
+                evidence_items.append((snippet.locator, snippet.text))
+        
+        if not evidence_items:
+            sections.append("- not covered in sources")
+        elif use_ids:
+            # Format with IDs
+            for locator, text in evidence_items:
+                eid = f"E{evidence_id:02d}"
+                evidence_id += 1
+                
+                # Truncate for prompt display
+                display_text = text[:150] + "..." if len(text) > 150 else text
+                sections.append(f'[{eid}] {locator} "{display_text}"')
+                
+                item = EvidenceItem(id=eid, locator=locator, text=text, candidate=query)
+                items[eid] = item
+                by_locator[locator] = item
+        else:
+            # Legacy format
+            for locator, text in evidence_items:
+                sections.append(f"- `{locator}` - {text}")
+        
         sections.append("")
-    return "\n".join(sections).rstrip()
+    
+    prompt_text = "\n".join(sections).rstrip()
+    
+    if use_ids:
+        return EvidenceBankResult(
+            prompt_text=prompt_text,
+            items=items,
+            by_locator=by_locator,
+        )
+    return prompt_text
 
 
 def evidence_query(candidate: str | RelatedCandidate) -> str:

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Fill evidence cells deterministically from locators.
+"""Fill evidence cells deterministically from locators or evidence IDs.
 
 This replaces the need for LLMs to write evidence text. The LLM outputs
-a 3-column table (Claim | Locator | Source), and this script expands it
-to a 4-column table by inserting evidence from the normalized source.
+a 2-column table (Claim | [E01]), and this script expands it to a 4-column
+table by inserting evidence text, locators, and source links.
 
 Usage:
     python3 tools/wiki_fill_evidence.py wiki/concepts/example.md --source raw/normalized/slug/source.md
@@ -13,7 +13,21 @@ from __future__ import annotations
 import argparse
 import re
 import sys
+from dataclasses import dataclass
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from wiki_phase2_benchmark import EvidenceBankResult
+
+
+@dataclass
+class EvidenceExpansion:
+    """Record of an evidence expansion."""
+    row: int
+    evidence_id: str | None
+    locator: str
+    evidence: str
 
 
 def main() -> int:
@@ -56,6 +70,101 @@ def main() -> int:
         page_path.write_text(result)
 
     return 0
+
+
+def expand_evidence_ids(
+    page_text: str,
+    evidence_bank: "EvidenceBankResult",
+    slug: str,
+) -> tuple[str, list[dict]]:
+    """Expand evidence IDs to full 4-column table format.
+    
+    Input: | Claim | [E01] |
+    Output: | Claim | Evidence | Locator | Source |
+    
+    Args:
+        page_text: Page content with evidence ID citations
+        evidence_bank: EvidenceBankResult with ID -> evidence mapping
+        slug: Source slug for generating source links
+    
+    Returns:
+        Tuple of (transformed_text, list of expansions)
+    """
+    lines = page_text.splitlines()
+    result_lines: list[str] = []
+    expansions: list[dict] = []
+    
+    in_table = False
+    table_type = None  # "2col_id", "3col_id"
+    row_num = 0
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        # Detect table start
+        if stripped.startswith("|") and stripped.endswith("|") and not in_table:
+            cols = parse_table_row(stripped)
+            if cols:
+                cols_lower = [c.lower() for c in cols]
+                
+                # Check for 2-column ID format: | Claim | Evidence |
+                # where Evidence column will contain [E01] etc
+                if len(cols) == 2 and "claim" in cols_lower and "evidence" in cols_lower:
+                    in_table = True
+                    table_type = "2col_id"
+                    row_num = 0
+                    # Transform to 4-column header
+                    result_lines.append("| Claim | Evidence | Locator | Source |")
+                    continue
+        
+        # Transform separator row
+        if in_table and is_separator_row(stripped):
+            result_lines.append("| --- | --- | --- | --- |")
+            continue
+        
+        # Process data rows with evidence IDs
+        if in_table and stripped.startswith("|") and stripped.endswith("|"):
+            cols = parse_table_row(stripped)
+            
+            if cols and table_type == "2col_id" and len(cols) == 2:
+                row_num += 1
+                claim = cols[0]
+                evidence_cell = cols[1].strip()
+                
+                # Extract evidence ID from cell (e.g., "[E01]" or "E01")
+                match = re.search(r'\[?(E\d+)\]?', evidence_cell, re.IGNORECASE)
+                if match:
+                    evidence_id = match.group(1).upper()
+                    item = evidence_bank.items.get(evidence_id)
+                    
+                    if item:
+                        new_cols = [
+                            claim,
+                            f'"{item.text}"',
+                            f"`{item.locator}`",
+                            f"[Source](../sources/{slug}.md)"
+                        ]
+                        result_lines.append(format_table_row(new_cols))
+                        expansions.append({
+                            "row": row_num,
+                            "id": evidence_id,
+                            "locator": item.locator,
+                            "evidence": item.text,
+                        })
+                        continue
+                
+                # If no valid ID found, keep the row as-is with placeholder
+                result_lines.append(line)
+                continue
+        
+        # End of table detection
+        if in_table and stripped and not stripped.startswith("|"):
+            in_table = False
+            table_type = None
+        
+        result_lines.append(line)
+    
+    return "\n".join(result_lines), expansions
 
 
 def fill_evidence_in_page(
