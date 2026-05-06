@@ -11,6 +11,7 @@ import time
 from pathlib import Path
 
 from wiki_model_backend import get_backend, ModelConfig, parse_model_output, write_parsed_files
+from wiki_page_schema import WikiPageSchema, parse_llm_response, render_page, validate_schema
 from wiki_phase1_benchmark import find_normalized_source, git_changed_files, init_git, parse_candidate, run_codex
 from wiki_phase2_benchmark import (
     EvidenceBankResult,
@@ -62,6 +63,8 @@ def main() -> int:
         "--extraction-state",
         help="path to extraction state JSON (uses full evidence from claims instead of re-extracting)",
     )
+    parser.add_argument("--json-output", action="store_true",
+                        help="use JSON schema output format (model outputs JSON, code renders markdown)")
     parser.add_argument(
         "--report", help="write a Markdown run report to this path")
     parser.add_argument("--keep", action="store_true",
@@ -78,7 +81,7 @@ def main() -> int:
 
     candidate_path = source_relative_candidate(args.candidate_path)
     prompt_template = resolve_prompt_template(
-        candidate_path, args.prompt_template)
+        candidate_path, args.prompt_template, json_output=args.json_output)
     if not prompt_template.exists():
         print(
             f"FAIL: prompt template does not exist: {prompt_template}", file=sys.stderr)
@@ -126,6 +129,7 @@ def main() -> int:
             judge_batch=args.judge_batch,
             skip_judge=args.skip_judge,
             extraction_claims=extraction_claims,
+            json_output=args.json_output,
         )
         print_result(result)
         if args.report:
@@ -142,9 +146,11 @@ def copy_repo_contents(src: Path, dst: Path) -> None:
     copy_repo(src, dst)
 
 
-def resolve_prompt_template(candidate_path: str, raw_template: str) -> Path:
+def resolve_prompt_template(candidate_path: str, raw_template: str, json_output: bool = False) -> Path:
     if raw_template != "auto":
         return Path(raw_template)
+    if json_output:
+        return Path("tools/prompts/phase2-synthesis-json.md")
     if source_relative_to_repo(candidate_path).startswith("wiki/references/"):
         return Path("tools/prompts/phase2-reference-synthesis.md")
     return Path("tools/prompts/phase2-synthesis.md")
@@ -214,6 +220,86 @@ def run_with_backend(
     return 0, log_paths
 
 
+def run_with_backend_json(
+    *,
+    worktree: Path,
+    backend_name: str | None,
+    prompt: str,
+    timeout: int,
+    prefix: str,
+    evidence_bank: EvidenceBankResult,
+    slug: str,
+    expected_path: str,
+) -> tuple[int | None, list[Path], WikiPageSchema | None]:
+    """Run synthesis with JSON output mode.
+    
+    Model outputs JSON, we parse and render to markdown deterministically.
+    
+    Returns:
+        Tuple of (returncode, log_paths, parsed_schema)
+    """
+    from wiki_common import log_context_stats
+
+    log_context_stats(prompt, label=f"{prefix} prompt")
+
+    # Determine backend from env if not specified
+    if backend_name is None:
+        backend_name = os.environ.get("WIKI_MODEL_BACKEND", "codex")
+
+    backend = get_backend(backend_name)
+    config = ModelConfig(
+        worktree=worktree,
+        prefix=prefix,
+        timeout=timeout,
+        save_debug_files=True,
+        system_prompt_style="synthesis-json",  # JSON output system prompt
+    )
+
+    response = backend.run(prompt, config)
+    log_paths = list(response.log_paths)
+
+    # Save raw response for debugging
+    output_path = worktree / f"{prefix}-output.json"
+    output_path.write_text(response.output)
+    log_paths.append(output_path)
+
+    if not response.success:
+        print(f"  Model error: {response.error}")
+        return 1, log_paths, None
+
+    # Parse JSON and render markdown
+    markdown, page_schema, issues = parse_llm_response(
+        response.output, evidence_bank, slug)
+    
+    # Log validation issues
+    errors = [i for i in issues if i.severity == "error"]
+    warnings = [i for i in issues if i.severity == "warning"]
+    
+    if errors:
+        print(f"  Schema errors: {len(errors)}")
+        for err in errors:
+            print(f"    - {err.field}: {err.message}")
+        return 1, log_paths, page_schema
+    
+    if warnings:
+        print(f"  Schema warnings: {len(warnings)}")
+        for warn in warnings:
+            print(f"    - {warn.field}: {warn.message}")
+    
+    if not markdown:
+        print("  Failed to render markdown from JSON")
+        return 1, log_paths, page_schema
+    
+    # Write the rendered markdown
+    repo_path = source_relative_to_repo(expected_path)
+    full_path = worktree / repo_path
+    full_path.parent.mkdir(parents=True, exist_ok=True)
+    full_path.write_text(markdown)
+    print(f"  Rendered {repo_path} from JSON schema")
+    
+    return 0, log_paths, page_schema
+
+
 def fix_synthesized_evidence(
     worktree: Path, 
     page_path: str, 
@@ -274,6 +360,7 @@ def run_single_candidate(
     judge_batch: bool,
     skip_judge: bool,
     extraction_claims: list[dict] | None = None,
+    json_output: bool = False,
 ) -> dict[str, object]:
     source_page = worktree / "wiki/sources" / f"{slug}.md"
     selected_candidate = find_related_candidate(source_page, candidate_path)
@@ -306,12 +393,25 @@ def run_single_candidate(
     codex_returncodes: list[int | None] = []
     log_paths: list[Path] = []
     judge_report_paths: list[Path] = []
+    page_schema: WikiPageSchema | None = None
 
     # Use model backend if specified, otherwise use codex CLI
     use_backend = backend_name is not None or os.environ.get(
         "WIKI_MODEL_BACKEND") not in (None, "", "codex")
 
-    if use_backend:
+    if json_output and use_backend:
+        # JSON output mode: model outputs JSON, we render markdown
+        returncode, paths, page_schema = run_with_backend_json(
+            worktree=worktree,
+            backend_name=backend_name,
+            prompt=prompt,
+            timeout=timeout,
+            prefix="codex-initial",
+            evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else EvidenceBankResult("", {}, {}),
+            slug=slug,
+            expected_path=selected_candidate.path,
+        )
+    elif use_backend:
         returncode, paths = run_with_backend(
             worktree=worktree,
             backend_name=backend_name,
@@ -331,12 +431,13 @@ def run_single_candidate(
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
     
-    # Expand evidence IDs or fill evidence from locators before validation
-    fix_synthesized_evidence(
-        worktree, selected_repo_path, worktree / normalized_source,
-        evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
-        slug=slug,
-    )
+    # Skip evidence expansion for JSON output mode (already rendered in markdown)
+    if not json_output:
+        fix_synthesized_evidence(
+            worktree, selected_repo_path, worktree / normalized_source,
+            evidence_bank=evidence_bank if isinstance(evidence_bank, EvidenceBankResult) else None,
+            slug=slug,
+        )
     
     validation_returncode = run_validation(
         worktree,

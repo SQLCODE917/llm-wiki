@@ -86,6 +86,7 @@ class ModelBackend(ABC):
         Supported styles:
         - "full": Complete AGENTS.md (~7K tokens)
         - "synthesis": Wiki page synthesis (~800 tokens)
+        - "synthesis-json": JSON schema output for synthesis (~500 tokens)
         - "extract": Claim extraction (~500 tokens)
         - "query": Query answering (~400 tokens)
         - "judge": Claim judging (~400 tokens)
@@ -95,6 +96,7 @@ class ModelBackend(ABC):
         # Map style to prompt file
         prompt_files = {
             "synthesis": "tools/prompts/system-synthesis.md",
+            "synthesis-json": "tools/prompts/system-synthesis-json.md",
             "extract": "tools/prompts/system-extract.md",
             "query": "tools/prompts/system-query.md",
             "judge": "tools/prompts/system-judge.md",
