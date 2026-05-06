@@ -3,7 +3,7 @@
 ## Sources
 
 - [Compound Interest Notes](sources/compound-interest.md) — This short source defines compound interest as interest added to principal so that future interest is calculated on the updated total. It also gives the standard compound interest…
-- [js-allonge](sources/js-allonge.md) — *Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition Extracted 274 claims from 30 chunks, organized into 12 viable topics.
+- [js-allonge](sources/js-allonge.md) — *Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allongé, the “Six” Edition Extracted 276 claims from 30 chunks, organized into 13 viable topics.
 - [Noobs guide for AoE2](sources/aoe2-basics.md) — This document is an organized arrangement of gameplay concepts simplified and explained out. It is categorized and each category will be written in order from most important to th…
 
 ## Entities
@@ -25,6 +25,10 @@ None.
 - [AoE2 Unit Counter Interactions](concepts/aoe2-unit-counter-interactions.md) — Unit counter interactions refer to how different units in Age of Empires II interact with each other in combat, particularly in terms of which units can effectively counter others.
 - [AoE2 Water Maps](concepts/aoe2-water-maps.md) — Water maps in Age of Empires II are maps such as Islands and Team Islands where water control, transports, fishing economy, landings, and build execution shape the game.
 - [Compound Interest](concepts/compound-interest.md) — Compound interest is interest calculated on a principal amount after previous interest has been added back into that principal.
+- [Functional Programming](concepts/functional-programming.md) — Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data. It treats functions as first-class citizens, allowing them to be pas…
+- [Functions](concepts/functions.md) — Functions are fundamental building blocks in JavaScript, serving as first-class citizens that can be assigned to variables, passed as arguments, and returned from other functions.…
+- [Objects](concepts/objects.md) — In JavaScript, objects are fundamental data structures that map string keys to values. They support various ways of creation, including literal syntax, and provide mechanisms for…
+- [Variables](concepts/variables.md) — Variables in JavaScript are containers for storing data values. Their behavior is influenced by how they are declared, particularly with respect to scope and hoisting.
 
 ## Procedures
 

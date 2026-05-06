@@ -26,7 +26,8 @@ def normalize_locator(loc: str) -> str:
     start = int(match.group(1))
     end = int(match.group(2)) if match.group(2) else start
     # Preserve any prefix (like source slug)
-    prefix_match = re.match(r'^([A-Za-z0-9_-]+:)?normalized:', loc, re.IGNORECASE)
+    prefix_match = re.match(
+        r'^([A-Za-z0-9_-]+:)?normalized:', loc, re.IGNORECASE)
     prefix = prefix_match.group(0) if prefix_match else "normalized:"
     return f"{prefix}L{start}-L{end}"
 
@@ -79,7 +80,8 @@ def source_ranges_for_candidate(candidate_path: str, source_lines: list[str], ti
 
 
 def declared_source_ranges(frontmatter: dict[str, object], source_slug: str) -> tuple[list[SourceRange], list[str]]:
-    raw_values = frontmatter.get("source_ranges") or frontmatter.get("evidence_ranges")
+    raw_values = frontmatter.get(
+        "source_ranges") or frontmatter.get("evidence_ranges")
     if raw_values is None:
         return [], []
     if isinstance(raw_values, str):
@@ -93,11 +95,13 @@ def declared_source_ranges(frontmatter: dict[str, object], source_slug: str) -> 
     invalid: list[str] = []
     for raw in values:
         if not isinstance(raw, str):
-            invalid.append(f"source range value must be a string, got {type(raw).__name__}")
+            invalid.append(
+                f"source range value must be a string, got {type(raw).__name__}")
             continue
         parsed = parse_source_range(raw, source_slug)
         if parsed is None:
-            invalid.append(f"could not parse source range {raw!r}; expected normalized:L12-L34 or {source_slug}:normalized:L12-L34")
+            invalid.append(
+                f"could not parse source range {raw!r}; expected normalized:L12-L34 or {source_slug}:normalized:L12-L34")
             continue
         ranges.append(parsed)
     return ranges, invalid
@@ -175,7 +179,7 @@ def derive_ranges_from_headings(source_lines: list[str], aliases: set[str]) -> l
         if key not in aliases:
             continue
         end = len(source_lines)
-        for next_heading in headings[index + 1 :]:
+        for next_heading in headings[index + 1:]:
             if next_heading.level <= heading.level:
                 end = next_heading.line - 1
                 break

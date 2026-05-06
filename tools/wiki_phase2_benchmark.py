@@ -744,7 +744,8 @@ def build_evidence_bank(
                     if len(evidence) > 400:
                         evidence = evidence[:400] + "..."
                     # Normalize to always-range format
-                    evidence_items.append((normalize_locator(locator), evidence))
+                    evidence_items.append(
+                        (normalize_locator(locator), evidence))
         else:
             # Fall back to re-extracting snippets (less accurate)
             if chunks is None:
@@ -755,7 +756,8 @@ def build_evidence_bank(
                 query, candidate_chunks, limit=10)
             for snippet in snippets:
                 # Normalize to always-range format (source_chunks already does this)
-                evidence_items.append((normalize_locator(snippet.locator), snippet.text))
+                evidence_items.append(
+                    (normalize_locator(snippet.locator), snippet.text))
 
         if not evidence_items:
             sections.append("- not covered in sources")

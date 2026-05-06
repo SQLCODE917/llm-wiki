@@ -185,6 +185,56 @@
         "wiki:sources/compound-interest"
       ]
     },
+    "wiki:concepts/functional-programming": {
+      "type": "concept",
+      "path": "wiki/concepts/functional-programming.md",
+      "description": "Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data. It treats functions as first-class citizens, allowing them to be pas\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/functions": {
+      "type": "concept",
+      "path": "wiki/concepts/functions.md",
+      "description": "Functions are fundamental building blocks in JavaScript, serving as first-class citizens that can be assigned to variables, passed as arguments, and returned from other functions.\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/objects": {
+      "type": "concept",
+      "path": "wiki/concepts/objects.md",
+      "description": "In JavaScript, objects are fundamental data structures that map string keys to values. They support various ways of creation, including literal syntax, and provide mechanisms for\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/variables": {
+      "type": "concept",
+      "path": "wiki/concepts/variables.md",
+      "description": "Variables in JavaScript are containers for storing data values. Their behavior is influenced by how they are declared, particularly with respect to scope and hoisting.",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
+        "wiki:concepts/objects",
+        "wiki:sources/js-allonge"
+      ]
+    },
     "wiki:procedures/aoe2-game-plans": {
       "type": "procedure",
       "path": "wiki/procedures/aoe2-game-plans.md",
@@ -273,11 +323,16 @@
     "wiki:sources/js-allonge": {
       "type": "source",
       "path": "wiki/sources/js-allonge.md",
-      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 274 claims from 30 chunks, organized into 12 viable topics.",
+      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 276 claims from 30 chunks, organized into 13 viable topics.",
       "sources": [
         "../../raw/imported/js-allonge/original.pdf"
       ],
-      "depends_on": []
+      "depends_on": [
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
+        "wiki:concepts/objects",
+        "wiki:concepts/variables"
+      ]
     }
   }
 }
