@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+"""Validate Phase 2 synthesized pages.
+
+TODO: After JSON-schema pipeline is stable, remove:
+- Legacy string-returning wrapper functions (*_structured -> rename to original)
+- Markdown table parsing that duplicates JSON schema validation
+- check_synthesis() compatibility wrapper (callers should use check_synthesis_structured)
+- check_related_table(), check_synthesized_page(), check_evidence_table(),
+  check_type_specific_sections(), check_reference_data_table(),
+  body_metadata_failures(), diff_marker_failures(), scope_failures()
+  (all compatibility wrappers that format structured failures to strings)
+"""
 from __future__ import annotations
 
 import argparse

@@ -37,6 +37,7 @@ from wiki_failure_classifier import (
     summarize_failures,
     DETERMINISTIC_CATEGORIES,
 )
+from wiki_context_packer import check_evidence_contract_violations
 
 
 def main() -> int:
@@ -559,6 +560,21 @@ def run_single_candidate(
         )
     codex_returncodes.append(returncode)
     log_paths.extend(paths)
+
+    # Check for evidence contract violations (model wrote forbidden fields)
+    contract_violations: list[ValidationFailure] = []
+    if not json_output:
+        # For markdown output, check the written page for contract violations
+        full_page_path = worktree / selected_repo_path
+        if full_page_path.exists():
+            page_text = full_page_path.read_text()
+            contract_violations = check_evidence_contract_violations(
+                page_text, selected_repo_path)
+            if contract_violations:
+                print(f"  Contract violations: {len(contract_violations)}")
+                for v in contract_violations:
+                    print(f"    - {v.message}")
+                # Don't fail immediately - let evidence expansion try to fix it
 
     # Skip evidence expansion for JSON output mode (already rendered in markdown)
     if not json_output:

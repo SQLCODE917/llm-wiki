@@ -123,14 +123,81 @@ BAD locator (outside range):
 Use only evidence IDs from the evidence bank. Do not write quote text or locators directly.
 """
 
-EVIDENCE_CONTRACT = """## Evidence contract
+EVIDENCE_CONTRACT = """## Evidence contract (CRITICAL)
 
-You may only cite evidence IDs from the evidence bank below.
-- Return evidence_ids as an array, e.g. ["E01", "E04"]
-- Do NOT write quote text in the Evidence column
-- Do NOT write locators - they are derived from evidence IDs
-- The renderer will expand evidence IDs to full table rows
+You may ONLY cite evidence IDs from the evidence bank.
+
+FORBIDDEN in your output:
+- Quoted text in Evidence column (e.g., "Functions are closures")
+- Locators like `normalized:L123`
+- 4-column tables (Claim|Evidence|Locator|Source)
+
+REQUIRED format:
+- 2-column table: | Claim | Evidence |
+- Evidence column contains ONLY IDs like [E01], [E07]
+- The renderer expands IDs to full evidence text and locators
+
+Example:
+| Claim | Evidence |
+|-------|----------|
+| Your synthesized insight. | [E01] |
+| Another insight. | [E03], [E07] |
 """
+
+# Patterns that indicate the model violated the evidence-ID-only contract
+EVIDENCE_CONTRACT_VIOLATION_PATTERNS = [
+    # Quoted text in evidence column
+    r'\|\s*["\'][^|]+["\']\s*\|',
+    # Locators in output (should be rendered, not written)
+    r'normalized:L\d+',
+    # 4-column evidence table header
+    r'\|\s*Claim\s*\|\s*Evidence\s*\|\s*Locator\s*\|\s*Source\s*\|',
+]
+
+
+def check_evidence_contract_violations(text: str, page: str) -> list["ValidationFailure"]:
+    """Check if model output violates the evidence-ID-only contract.
+    
+    Returns list of ValidationFailure for each violation found.
+    Violations indicate the model wrote forbidden fields that should
+    have been rendered by the deterministic renderer.
+    """
+    from wiki_failure_classifier import (
+        FailureCategory,
+        ValidationFailure,
+        fail,
+    )
+    
+    failures: list[ValidationFailure] = []
+    
+    # Check for 4-column table header (most serious - wrong table structure)
+    four_col_pattern = r'\|\s*Claim\s*\|\s*Evidence\s*\|\s*Locator\s*\|\s*Source\s*\|'
+    if re.search(four_col_pattern, text, re.IGNORECASE):
+        fail(failures, FailureCategory.SCHEMA_FORBIDDEN_FIELD, page,
+             "model wrote 4-column evidence table; should be 2-column (Claim|Evidence) with IDs only",
+             field="table_structure",
+             fix_hint="Use 2-column table: | Claim | Evidence | with [E01] style IDs")
+    
+    # Check for locators in output
+    locator_pattern = r'normalized:L\d+'
+    locator_matches = list(re.finditer(locator_pattern, text))
+    if locator_matches:
+        fail(failures, FailureCategory.SCHEMA_FORBIDDEN_FIELD, page,
+             f"model wrote {len(locator_matches)} locator(s) directly; should use evidence IDs only",
+             field="locator",
+             fix_hint="Do not write locators - cite evidence by ID like [E01] instead")
+    
+    # Check for quoted text that looks like evidence (in evidence column context)
+    # Pattern: | claim text | "quoted evidence" | or | claim | 'quoted' |
+    quote_in_evidence_pattern = r'\|[^|]+\|\s*["\'][^|]{10,}["\']\s*\|'
+    quote_matches = list(re.finditer(quote_in_evidence_pattern, text))
+    if quote_matches:
+        fail(failures, FailureCategory.SCHEMA_FORBIDDEN_FIELD, page,
+             f"model wrote {len(quote_matches)} quoted evidence excerpt(s); should use evidence IDs only",
+             field="evidence_text",
+             fix_hint="Replace quoted text with evidence IDs like [E01]")
+    
+    return failures
 
 
 def render_candidate_intent(
