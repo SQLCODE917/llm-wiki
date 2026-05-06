@@ -31,6 +31,7 @@ from wiki_phase2_benchmark import (
 from wiki_fill_evidence import expand_evidence_ids, fill_evidence_in_page
 from wiki_failure_classifier import (
     FailureCategory,
+    FailureSeverity,
     ValidationFailure,
     parse_validation_output,
     group_failures_by_page,
@@ -38,6 +39,8 @@ from wiki_failure_classifier import (
     DETERMINISTIC_CATEGORIES,
 )
 from wiki_context_packer import check_evidence_contract_violations
+from wiki_deterministic_repair import repair_page as repair_page_schema
+from wiki_check_synthesis import check_synthesis_structured
 
 
 def main() -> int:
@@ -248,77 +251,262 @@ def attempt_deterministic_repairs(
     validation_log: Path,
     page_schema: WikiPageSchema | None,
     evidence_bank: EvidenceBankResult | None,
+    normalized_source: Path | None = None,
+    max_iterations: int = 3,
 ) -> tuple[bool, list[ValidationFailure]]:
     """Attempt deterministic repairs based on validation failures.
 
+    This function runs repairs in a loop until:
+    - No more deterministic repairs are possible
+    - max_iterations is reached
+    - Only LLM-requiring failures remain
+
+    If page_schema is provided, uses schema-level repairs (more precise).
+    Otherwise falls back to markdown-level repairs.
+
     Returns:
-        Tuple of (repairs_made, remaining_failures)
+        Tuple of (any_repairs_made, remaining_failures)
     """
-    if not validation_log.exists():
-        return False, []
-
-    validation_output = validation_log.read_text()
-    failures = parse_validation_output(validation_output)
-
-    if not failures:
-        return False, []
-
-    # Count deterministically fixable failures
-    det_failures = [
-        f for f in failures if f.category in DETERMINISTIC_CATEGORIES]
-    if not det_failures:
-        print(
-            f"  No deterministic repairs possible ({len(failures)} failures need LLM)")
-        return False, failures
-
-    print(
-        f"  {len(det_failures)} deterministic, {len(failures) - len(det_failures)} need LLM")
-
-    # Attempt repairs on the markdown file directly
+    any_repairs_made = False
     full_page_path = worktree / page_path
-    if not full_page_path.exists():
-        return False, failures
 
-    page_text = full_page_path.read_text()
+    for iteration in range(max_iterations):
+        # Get structured failures
+        failures = get_structured_failures(
+            worktree, slug, validation_log, page_path, normalized_source
+        )
+
+        if not failures:
+            return any_repairs_made, []
+
+        # Partition failures
+        det_failures = [f for f in failures if f.category in DETERMINISTIC_CATEGORIES]
+        llm_failures = [f for f in failures if f.category not in DETERMINISTIC_CATEGORIES]
+
+        if not det_failures:
+            if iteration == 0:
+                print(f"  No deterministic repairs possible ({len(llm_failures)} failures need LLM)")
+            return any_repairs_made, llm_failures
+
+        print(f"  Repair iteration {iteration + 1}: {len(det_failures)} deterministic, {len(llm_failures)} need LLM")
+
+        # Attempt schema-level repairs if we have the schema
+        repairs_this_iteration = False
+        if page_schema is not None:
+            repaired_schema, remaining = repair_page_schema(
+                page_schema, det_failures, evidence_bank, slug
+            )
+            if repaired_schema is not page_schema:
+                # Re-render the repaired schema
+                markdown = render_page(repaired_schema, evidence_bank, slug)
+                full_page_path.write_text(markdown)
+                page_schema = repaired_schema
+                repairs_this_iteration = True
+                print(f"    Applied schema-level repairs")
+
+        # Fall back to markdown-level repairs for anything not fixed
+        if not repairs_this_iteration and full_page_path.exists():
+            repairs_this_iteration = attempt_markdown_repairs(
+                full_page_path, det_failures, slug
+            )
+            if repairs_this_iteration:
+                print(f"    Applied markdown-level repairs")
+
+        if repairs_this_iteration:
+            any_repairs_made = True
+        else:
+            # No progress - avoid infinite loop
+            return any_repairs_made, llm_failures
+
+    # Max iterations reached
+    return any_repairs_made, get_structured_failures(
+        worktree, slug, validation_log, page_path, normalized_source
+    )
+
+
+def get_structured_failures(
+    worktree: Path,
+    slug: str,
+    validation_log: Path,
+    page_path: str,
+    normalized_source: Path | None,
+) -> list[ValidationFailure]:
+    """Get structured failures from validation.
+
+    Prefers direct structured check; falls back to parsing log.
+    """
+    # Try to get structured failures directly
+    try:
+        source_path = worktree / "wiki/sources" / f"{slug}.md"
+        if source_path.exists():
+            # Get the repo-relative path
+            repo_page = page_path if not page_path.startswith(str(worktree)) else str(Path(page_path).relative_to(worktree))
+
+            normalized_str = str(normalized_source) if normalized_source else None
+            failures = check_synthesis_structured(
+                slug,
+                min_pages=1,
+                max_pages=20,
+                allowed_pages=[repo_page],
+                min_evidence_rows=3,
+                normalized_source=normalized_str,
+                check_evidence_text=normalized_source is not None,
+                require_allowed_pages=False,
+            )
+            return failures
+    except Exception as e:
+        print(f"    Warning: structured check failed: {e}")
+
+    # Fall back to parsing log
+    if validation_log.exists():
+        return parse_validation_output(validation_log.read_text())
+
+    return []
+
+
+def attempt_markdown_repairs(
+    page_path: Path,
+    failures: list[ValidationFailure],
+    slug: str,
+) -> bool:
+    """Apply markdown-level repairs for deterministic failures.
+
+    Returns True if any repairs were made.
+    """
+    if not page_path.exists():
+        return False
+
+    page_text = page_path.read_text()
+    original_text = page_text
     repairs_made = False
 
-    for failure in det_failures:
+    for failure in failures:
         if failure.category == FailureCategory.MISSING_SOURCE_LINK:
-            # Add source to frontmatter
             if f"sources/{slug}.md" not in page_text:
                 page_text = repair_missing_source_in_markdown(page_text, slug)
                 repairs_made = True
+
         elif failure.category == FailureCategory.MISSING_SOURCE_SECTION:
-            # Add Source pages section
-            if "## Source pages" not in page_text:
+            if "## Source pages" not in page_text and "## Sources" not in page_text:
                 title = slug.replace("-", " ").title()
                 page_text += f"\n\n## Source pages\n\n- [{title}](../sources/{slug}.md)\n"
                 repairs_made = True
+
+        elif failure.category == FailureCategory.MISSING_SOURCES_SECTION:
+            if "## Source pages" not in page_text and "## Sources" not in page_text:
+                title = slug.replace("-", " ").title()
+                page_text += f"\n\n## Source pages\n\n- [{title}](../sources/{slug}.md)\n"
+                repairs_made = True
+
+        elif failure.category == FailureCategory.MISSING_SOURCE_BACKLINK:
+            if f"../sources/{slug}.md" not in page_text:
+                title = slug.replace("-", " ").title()
+                # Add to Source pages section if it exists
+                if "## Source pages" in page_text:
+                    page_text = re.sub(
+                        r"(## Source pages\s*\n)",
+                        rf"\1\n- [{title}](../sources/{slug}.md)\n",
+                        page_text,
+                    )
+                else:
+                    page_text += f"\n\n## Source pages\n\n- [{title}](../sources/{slug}.md)\n"
+                repairs_made = True
+
         elif failure.category == FailureCategory.PLACEHOLDER_TEXT:
-            # Remove placeholder text
-            page_text = re.sub(r"^.*Page title.*$", "",
-                               page_text, flags=re.MULTILINE)
-            page_text = re.sub(r"^.*Source-native group name.*$",
-                               "", page_text, flags=re.MULTILINE)
-            repairs_made = True
+            # Remove placeholder text patterns
+            old_text = page_text
+            page_text = re.sub(r"^.*Page title.*$", "", page_text, flags=re.MULTILINE)
+            page_text = re.sub(r"^.*Source-native group name.*$", "", page_text, flags=re.MULTILINE)
+            page_text = re.sub(r"^.*concrete evidence basis.*$", "", page_text, flags=re.MULTILINE)
+            if page_text != old_text:
+                repairs_made = True
+
         elif failure.category == FailureCategory.BAD_SOURCE_CELL:
-            # Fix source cell format in tables
             title = slug.replace("-", " ").title()
+            old_text = page_text
             page_text = re.sub(
                 r"\|\s*\[?Source\]?\s*\|",
                 f"| [{title}](../sources/{slug}.md) |",
                 page_text,
             )
-            repairs_made = True
+            if page_text != old_text:
+                repairs_made = True
 
-    if repairs_made:
-        full_page_path.write_text(page_text)
-        print(f"  Applied deterministic repairs to {page_path}")
+        elif failure.category == FailureCategory.WRONG_SOURCE_LINK:
+            # Fix incorrect source links in tables
+            title = slug.replace("-", " ").title()
+            old_text = page_text
+            # Replace generic "Source" links with proper source link
+            page_text = re.sub(
+                r"\[Source\]\([^)]+\.md\)",
+                f"[{title}](../sources/{slug}.md)",
+                page_text,
+            )
+            if page_text != old_text:
+                repairs_made = True
 
-    # Return remaining failures that still need LLM
-    remaining = [
-        f for f in failures if f.category not in DETERMINISTIC_CATEGORIES]
-    return repairs_made, remaining
+        elif failure.category == FailureCategory.NON_ASCII_CHARS:
+            # Normalize common non-ASCII characters
+            old_text = page_text
+            replacements = {
+                "\u00a0": " ",   # non-breaking space
+                "\u2010": "-",   # hyphen
+                "\u2011": "-",   # non-breaking hyphen
+                "\u2012": "-",   # figure dash
+                "\u2013": "-",   # en dash
+                "\u2014": "-",   # em dash
+                "\u2015": "-",   # horizontal bar
+                "\u2018": "'",   # left single quote
+                "\u2019": "'",   # right single quote
+                "\u201c": '"',   # left double quote
+                "\u201d": '"',   # right double quote
+                "\u2026": "...", # ellipsis
+            }
+            for old, new in replacements.items():
+                page_text = page_text.replace(old, new)
+            if page_text != old_text:
+                repairs_made = True
+
+        elif failure.category == FailureCategory.STRAY_FRONTMATTER:
+            # Remove stray frontmatter lines from body
+            old_text = page_text
+            # Only remove outside of YAML frontmatter block
+            in_frontmatter = False
+            lines = page_text.splitlines()
+            new_lines = []
+            for i, line in enumerate(lines):
+                if line.strip() == "---":
+                    in_frontmatter = not in_frontmatter
+                    new_lines.append(line)
+                elif not in_frontmatter and re.match(
+                    r"^(?:title|type|tags|status|last_updated|sources):\s*",
+                    line.strip()
+                ):
+                    # Skip stray frontmatter line
+                    continue
+                else:
+                    new_lines.append(line)
+            page_text = "\n".join(new_lines)
+            if page_text != old_text:
+                repairs_made = True
+
+        elif failure.category == FailureCategory.CANDIDATE_PAGE_EXISTS:
+            # Convert candidate code format to link format
+            old_text = page_text
+            # Pattern: `../concepts/page.md` -> [../concepts/page.md](../concepts/page.md)
+            page_text = re.sub(
+                r'`(\.\./(?:concepts|entities|procedures|references)/[^`]+\.md)`',
+                r'[\1](\1)',
+                page_text,
+            )
+            if page_text != old_text:
+                repairs_made = True
+
+    if repairs_made and page_text != original_text:
+        page_path.write_text(page_text)
+        return True
+
+    return False
 
 
 def repair_missing_source_in_markdown(text: str, slug: str) -> str:
@@ -619,6 +807,7 @@ def run_single_candidate(
             page_schema=page_schema,
             evidence_bank=evidence_bank if isinstance(
                 evidence_bank, EvidenceBankResult) else None,
+            normalized_source=worktree / normalized_source,
         )
         if repairs_made:
             # Re-validate after deterministic repairs
