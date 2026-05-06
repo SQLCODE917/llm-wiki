@@ -763,7 +763,8 @@ def check_evidence_table_structured(
             if start < 1 or end < start or end > len(evidence_source.lines):
                 fail(failures, FailureCategory.LOCATOR_OUT_OF_RANGE, str(page),
                      f"evidence row {index} locator {clean_locator(locator)!r} is outside normalized source line range",
-                     row=index, value=(start, end), expected=(1, len(evidence_source.lines)),
+                     row=index, value=(start, end), expected=(
+                         1, len(evidence_source.lines)),
                      fix_hint=f"Locator must be within L1-L{len(evidence_source.lines)}")
             else:
                 locator_text = "\n".join(evidence_source.lines[start - 1: end])
@@ -973,7 +974,8 @@ def check_reference_data_table_structured(
         if start < 1 or end < start or end > len(evidence_source.lines):
             fail(failures, FailureCategory.LOCATOR_OUT_OF_RANGE, str(page),
                  f"Reference data row {row_number} locator {clean_locator(locator)!r} is outside normalized source line range",
-                 row=row_number, value=(start, end), expected=(1, len(evidence_source.lines)),
+                 row=row_number, value=(start, end), expected=(
+                     1, len(evidence_source.lines)),
                  fix_hint=f"Locator must be within L1-L{len(evidence_source.lines)}")
             continue
         locator_text = "\n".join(evidence_source.lines[start - 1: end])
@@ -1038,7 +1040,8 @@ def scope_failures_structured(
 
 def scope_failures(page: Path, row_label: str, row_text: str, related_scope: RelatedScope | None) -> list[str]:
     """Compatibility wrapper returning string failures."""
-    structured = scope_failures_structured(page, row_label, row_text, related_scope)
+    structured = scope_failures_structured(
+        page, row_label, row_text, related_scope)
     return [f"{f.page}: {f.message}" for f in structured]
 
 

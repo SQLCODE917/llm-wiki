@@ -187,7 +187,7 @@ RENDERER_BUG_CATEGORIES = {
 @dataclass(frozen=True)
 class ValidationFailure:
     """A classified validation failure.
-    
+
     frozen=True makes failures hashable for fingerprinting and deduplication.
     """
     category: FailureCategory
@@ -209,7 +209,7 @@ class ValidationFailure:
     def semi_deterministic(self) -> bool:
         """Whether this failure can suggest fixes."""
         return self.category in SEMI_DETERMINISTIC_CATEGORIES
-    
+
     @property
     def is_renderer_bug(self) -> bool:
         """Whether this failure indicates a renderer bug, not a model failure."""
@@ -239,7 +239,7 @@ def fail(
     fix_hint: str | None = None,
 ) -> None:
     """Append a ValidationFailure to the failures list.
-    
+
     This helper keeps call sites short and consistent.
     """
     failures.append(
@@ -263,7 +263,7 @@ def fail(
 
 def render_failures_log(failures: list[ValidationFailure]) -> str:
     """Render failures to human-readable log format.
-    
+
     This is the ONLY place that formats FAIL: text.
     Do not parse this output programmatically.
     """
@@ -275,17 +275,17 @@ def render_failures_log(failures: list[ValidationFailure]) -> str:
         # Main failure line
         prefix = "FAIL" if f.severity == FailureSeverity.ERROR else "WARN"
         parts = [f"{prefix}: {f.page}: {f.message}"]
-        
+
         # Additional details in parentheses
         details = [f"category={f.category.value}"]
         if f.row is not None:
             details.append(f"row={f.row}")
         if f.field is not None:
             details.append(f"field={f.field}")
-        
+
         parts.append(f" ({', '.join(details)})")
         lines.append("".join(parts))
-        
+
         # Fix hint on separate line
         if f.fix_hint:
             lines.append(f"  Hint: {f.fix_hint}")
@@ -295,7 +295,7 @@ def render_failures_log(failures: list[ValidationFailure]) -> str:
 
 def failure_fingerprint(failures: list[ValidationFailure]) -> tuple:
     """Create hashable fingerprint of failure set for progress detection.
-    
+
     Returns a sorted tuple that can be compared to detect no-progress.
     """
     return tuple(
@@ -422,7 +422,7 @@ PATTERNS = {
 
 def classify_failure(line: str, page: str = "") -> ValidationFailure | None:
     """Classify a single validation failure line.
-    
+
     LEGACY: Use for parsing existing log text only.
     New code should use check_synthesis_structured() directly.
     """
@@ -434,7 +434,7 @@ def classify_failure(line: str, page: str = "") -> ValidationFailure | None:
     page_match = re.search(r"FAIL:\s*([\w/.-]+\.md):", line)
     if page_match:
         page = page_match.group(1)
-    
+
     message = line.replace("FAIL:", "").strip()
 
     # Try each pattern
@@ -445,7 +445,7 @@ def classify_failure(line: str, page: str = "") -> ValidationFailure | None:
             field_val: str | None = None
             row_val: int | None = None
             value_val: str | None = None
-            
+
             if extract_type == "field" and match.groups():
                 field_val = match.group(1)
             elif extract_type == "row" and match.groups():
@@ -455,9 +455,10 @@ def classify_failure(line: str, page: str = "") -> ValidationFailure | None:
                 value_val = match.group(2)
             elif extract_type == "value" and match.groups():
                 value_val = match.group(1)
-            
+
             # Get fix hint (need a partial failure for the hint function)
-            fix_hint = _get_fix_hint_for_category(category, field_val, value_val)
+            fix_hint = _get_fix_hint_for_category(
+                category, field_val, value_val)
 
             return ValidationFailure(
                 category=category,
@@ -478,7 +479,7 @@ def classify_failure(line: str, page: str = "") -> ValidationFailure | None:
 
 
 def _get_fix_hint_for_category(
-    category: FailureCategory, 
+    category: FailureCategory,
     field: str | None = None,
     value: str | None = None,
 ) -> str | None:

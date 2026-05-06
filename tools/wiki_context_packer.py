@@ -157,7 +157,7 @@ EVIDENCE_CONTRACT_VIOLATION_PATTERNS = [
 
 def check_evidence_contract_violations(text: str, page: str) -> list["ValidationFailure"]:
     """Check if model output violates the evidence-ID-only contract.
-    
+
     Returns list of ValidationFailure for each violation found.
     Violations indicate the model wrote forbidden fields that should
     have been rendered by the deterministic renderer.
@@ -167,9 +167,9 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
         ValidationFailure,
         fail,
     )
-    
+
     failures: list[ValidationFailure] = []
-    
+
     # Check for 4-column table header (most serious - wrong table structure)
     four_col_pattern = r'\|\s*Claim\s*\|\s*Evidence\s*\|\s*Locator\s*\|\s*Source\s*\|'
     if re.search(four_col_pattern, text, re.IGNORECASE):
@@ -177,7 +177,7 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
              "model wrote 4-column evidence table; should be 2-column (Claim|Evidence) with IDs only",
              field="table_structure",
              fix_hint="Use 2-column table: | Claim | Evidence | with [E01] style IDs")
-    
+
     # Check for locators in output
     locator_pattern = r'normalized:L\d+'
     locator_matches = list(re.finditer(locator_pattern, text))
@@ -186,7 +186,7 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
              f"model wrote {len(locator_matches)} locator(s) directly; should use evidence IDs only",
              field="locator",
              fix_hint="Do not write locators - cite evidence by ID like [E01] instead")
-    
+
     # Check for quoted text that looks like evidence (in evidence column context)
     # Pattern: | claim text | "quoted evidence" | or | claim | 'quoted' |
     quote_in_evidence_pattern = r'\|[^|]+\|\s*["\'][^|]{10,}["\']\s*\|'
@@ -196,7 +196,7 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
              f"model wrote {len(quote_matches)} quoted evidence excerpt(s); should use evidence IDs only",
              field="evidence_text",
              fix_hint="Replace quoted text with evidence IDs like [E01]")
-    
+
     return failures
 
 

@@ -4,11 +4,24 @@
 The LLM outputs a JSON object conforming to WikiPageSchema.
 Deterministic code renders it to markdown and expands evidence IDs.
 
+Validation is split into two phases:
+1. Schema validation (validate_schema_structured) - validates JSON structure
+   - Runs BEFORE rendering
+   - Failures indicate model issues (bad JSON, missing fields, wrong types)
+   - Repair target: re-prompt model with specific field errors
+
+2. Render validation (validate_rendered_page) - validates rendered markdown
+   - Runs AFTER rendering
+   - Failures indicate potential renderer bugs (malformed tables, broken links)
+   - Repair target: fix the renderer, not the model
+
 Benefits:
-- Validation = schema validation (instant, precise)
+- Schema validation = instant, precise, identifies model errors
+- Render validation = catches code bugs before wiki/ corruption
 - Repair = patch specific fields, not re-prompt entire pages
 - Evidence expansion = trivial lookup in claims array
-- No markdown parsing errors
+
+TODO: Remove ValidationIssue and validate_schema() after callers migrate.
 """
 from __future__ import annotations
 
@@ -17,6 +30,13 @@ import re
 from dataclasses import dataclass, field
 from datetime import date
 from typing import TYPE_CHECKING, Any, Literal
+
+from wiki_failure_classifier import (
+    FailureCategory,
+    FailureSeverity,
+    ValidationFailure,
+    fail,
+)
 
 if TYPE_CHECKING:
     from wiki_phase2_benchmark import EvidenceBankResult
@@ -106,80 +126,236 @@ class WikiPageSchema:
 
 
 # -----------------------------------------------------------------------------
-# Schema Validation
+# Schema Validation (Pre-Render)
 # -----------------------------------------------------------------------------
 
 @dataclass
 class ValidationIssue:
-    """A schema validation issue."""
+    """A schema validation issue (legacy, use ValidationFailure instead)."""
     field: str
     message: str
     severity: Literal["error", "warning"] = "error"
 
 
-def validate_schema(page: WikiPageSchema) -> list[ValidationIssue]:
-    """Validate a WikiPageSchema for completeness and correctness."""
-    issues: list[ValidationIssue] = []
+def validate_schema_structured(
+    page: WikiPageSchema,
+    evidence_bank: "EvidenceBankResult | None" = None,
+) -> list[ValidationFailure]:
+    """Validate a WikiPageSchema with structured failures.
+
+    This is PRE-RENDER validation - it validates the JSON structure before
+    the deterministic renderer runs. Failures here indicate model issues.
+
+    Args:
+        page: The parsed page schema
+        evidence_bank: Evidence bank for validating evidence ID references
+
+    Returns:
+        List of ValidationFailure objects
+    """
+    failures: list[ValidationFailure] = []
+    page_path = page.path or "<unknown>"
 
     # Path validation
     if not page.path:
-        issues.append(ValidationIssue("path", "Missing path"))
+        fail(failures, FailureCategory.FRONTMATTER_MISSING_KEY, page_path,
+             "missing path in schema",
+             field="path",
+             fix_hint="Add path field to JSON output")
     elif not page.path.startswith("wiki/"):
-        issues.append(ValidationIssue(
-            "path", f"Path must start with wiki/: {page.path}"))
+        fail(failures, FailureCategory.FRONTMATTER_INVALID_VALUE, page_path,
+             f"path must start with wiki/: {page.path}",
+             field="path", value=page.path,
+             fix_hint="Path should be wiki/concepts/name.md or similar")
     elif not page.path.endswith(".md"):
-        issues.append(ValidationIssue(
-            "path", f"Path must end with .md: {page.path}"))
+        fail(failures, FailureCategory.FRONTMATTER_INVALID_VALUE, page_path,
+             f"path must end with .md: {page.path}",
+             field="path", value=page.path,
+             fix_hint="Path should end with .md")
 
     # Frontmatter validation
     if not page.frontmatter.title:
-        issues.append(ValidationIssue("frontmatter.title", "Missing title"))
+        fail(failures, FailureCategory.FRONTMATTER_MISSING_KEY, page_path,
+             "missing title in frontmatter",
+             field="frontmatter.title",
+             fix_hint="Add title to frontmatter")
 
-    if page.frontmatter.type not in ("source", "entity", "concept", "procedure", "reference", "analysis"):
-        issues.append(ValidationIssue("frontmatter.type",
-                      f"Invalid type: {page.frontmatter.type}"))
+    valid_types = ("source", "entity", "concept",
+                   "procedure", "reference", "analysis")
+    if page.frontmatter.type not in valid_types:
+        fail(failures, FailureCategory.FRONTMATTER_INVALID_VALUE, page_path,
+             f"invalid type: {page.frontmatter.type}",
+             field="frontmatter.type", value=page.frontmatter.type, expected=list(valid_types),
+             fix_hint=f"Type must be one of: {', '.join(valid_types)}")
 
     if not page.frontmatter.sources and page.frontmatter.type != "source":
-        issues.append(ValidationIssue("frontmatter.sources",
-                      "Synthesized pages must have sources", "warning"))
+        fail(failures, FailureCategory.FRONTMATTER_MISSING_KEY, page_path,
+             "synthesized pages must have sources",
+             field="frontmatter.sources",
+             severity=FailureSeverity.WARNING,
+             fix_hint="Add source page paths to frontmatter.sources")
 
     # Section validation
     has_claims_section = False
     for i, sec in enumerate(page.sections):
         if not sec.heading:
-            issues.append(ValidationIssue(
-                f"sections[{i}].heading", "Missing heading"))
+            fail(failures, FailureCategory.EMPTY_SECTION, page_path,
+                 f"section {i} has empty heading",
+                 field=f"sections[{i}].heading",
+                 fix_hint="Add heading text to section")
         if sec.claims_table:
             has_claims_section = True
 
     # Claims validation
     if page.claims and not has_claims_section:
-        issues.append(ValidationIssue(
-            "sections", "Claims exist but no section has claims_table=true"))
+        fail(failures, FailureCategory.STRUCTURE_VIOLATION, page_path,
+             "claims exist but no section has claims_table=true",
+             field="sections",
+             fix_hint="Set claims_table: true on the Source-backed details section")
 
     for i, claim in enumerate(page.claims):
         if not claim.claim:
-            issues.append(ValidationIssue(
-                f"claims[{i}].claim", "Empty claim text"))
+            fail(failures, FailureCategory.CLAIM_TOO_SHORT, page_path,
+                 f"claim {i} has empty text",
+                 row=i, field=f"claims[{i}].claim",
+                 fix_hint="Add claim text")
         if not claim.evidence_ids:
-            issues.append(ValidationIssue(
-                f"claims[{i}].evidence_ids", "Claim has no evidence IDs"))
+            fail(failures, FailureCategory.INVALID_EVIDENCE_ID, page_path,
+                 f"claim {i} has no evidence IDs",
+                 row=i, field=f"claims[{i}].evidence_ids",
+                 fix_hint="Add evidence_ids array with IDs like [\"E01\", \"E03\"]")
+        elif evidence_bank:
+            # Validate evidence IDs exist in bank
+            for eid in claim.evidence_ids:
+                eid_upper = eid.upper()
+                if eid_upper not in evidence_bank.items:
+                    fail(failures, FailureCategory.INVALID_EVIDENCE_ID, page_path,
+                         f"claim {i} references unknown evidence ID: {eid}",
+                         row=i, field=f"claims[{i}].evidence_ids", value=eid,
+                         fix_hint=f"Use only evidence IDs from the evidence bank")
 
     # Type-specific validation
     if page.frontmatter.type == "procedure":
         has_steps = any("step" in sec.heading.lower() for sec in page.sections)
         if not has_steps:
-            issues.append(ValidationIssue(
-                "sections", "Procedure pages require ## Steps section", "warning"))
+            fail(failures, FailureCategory.MISSING_REQUIRED_SECTION, page_path,
+                 "procedure pages require ## Steps section",
+                 field="sections",
+                 severity=FailureSeverity.WARNING,
+                 fix_hint="Add a section with heading 'Steps'")
 
     if page.frontmatter.type == "reference":
         has_reference = any("reference" in sec.heading.lower()
                             for sec in page.sections)
         if not has_reference:
-            issues.append(ValidationIssue(
-                "sections", "Reference pages require ## Reference data section", "warning"))
+            fail(failures, FailureCategory.MISSING_REQUIRED_SECTION, page_path,
+                 "reference pages require ## Reference data section",
+                 field="sections",
+                 severity=FailureSeverity.WARNING,
+                 fix_hint="Add a section with heading 'Reference data'")
 
+    return failures
+
+
+def validate_schema(page: WikiPageSchema) -> list[ValidationIssue]:
+    """Legacy wrapper - use validate_schema_structured instead."""
+    structured = validate_schema_structured(page)
+    issues: list[ValidationIssue] = []
+    for f in structured:
+        severity: Literal["error", "warning"] = (
+            "warning" if f.severity == FailureSeverity.WARNING else "error"
+        )
+        issues.append(ValidationIssue(
+            field=f.field or "unknown",
+            message=f.message,
+            severity=severity,
+        ))
     return issues
+
+
+# -----------------------------------------------------------------------------
+# Render Validation (Post-Render)
+# -----------------------------------------------------------------------------
+
+def validate_rendered_page(
+    markdown: str,
+    page: WikiPageSchema,
+    evidence_bank: "EvidenceBankResult | None" = None,
+) -> list[ValidationFailure]:
+    """Validate rendered markdown for potential renderer bugs.
+
+    This is POST-RENDER validation - it validates the markdown output
+    from the deterministic renderer. Failures here indicate CODE BUGS
+    in the renderer, not model issues.
+
+    If this function ever returns failures, it's a signal to fix
+    render_page(), not to re-prompt the model.
+
+    Args:
+        markdown: The rendered markdown content
+        page: The original schema (for cross-reference)
+        evidence_bank: Evidence bank used during rendering
+
+    Returns:
+        List of ValidationFailure objects (ideally empty)
+    """
+    failures: list[ValidationFailure] = []
+    page_path = page.path or "<unknown>"
+
+    # Check frontmatter was rendered
+    if not markdown.startswith("---"):
+        fail(failures, FailureCategory.MALFORMED_TABLE, page_path,
+             "rendered page missing YAML frontmatter",
+             field="frontmatter",
+             fix_hint="RENDERER BUG: render_frontmatter() failed")
+
+    # Check H1 title present
+    if f"# {page.frontmatter.title}" not in markdown:
+        fail(failures, FailureCategory.MISSING_H1_TITLE, page_path,
+             f"rendered page missing H1 title: {page.frontmatter.title}",
+             field="title",
+             fix_hint="RENDERER BUG: title not rendered")
+
+    # Check all sections were rendered
+    for sec in page.sections:
+        heading_prefix = "#" * sec.level
+        expected_heading = f"{heading_prefix} {sec.heading}"
+        if sec.heading and expected_heading not in markdown:
+            fail(failures, FailureCategory.MISSING_REQUIRED_SECTION, page_path,
+                 f"rendered page missing section: {sec.heading}",
+                 field=f"section:{sec.heading}",
+                 fix_hint=f"RENDERER BUG: section '{sec.heading}' not rendered")
+
+    # Check claims table structure if claims exist
+    if page.claims:
+        # Should have 4-column header
+        table_header = "| Claim | Evidence | Locator | Source |"
+        if table_header not in markdown:
+            fail(failures, FailureCategory.MALFORMED_TABLE, page_path,
+                 "claims table missing expected 4-column header",
+                 field="claims_table",
+                 fix_hint="RENDERER BUG: render_claims_table() header wrong")
+
+        # Each claim should appear in the table
+        for i, claim in enumerate(page.claims):
+            # Claims may have pipes escaped
+            claim_text = claim.claim.replace("|", "\\|")
+            if claim_text[:30] not in markdown:
+                fail(failures, FailureCategory.MALFORMED_TABLE, page_path,
+                     f"claim {i} not found in rendered output",
+                     row=i, field=f"claims[{i}]",
+                     fix_hint=f"RENDERER BUG: claim {i} not rendered")
+
+    # Check evidence IDs were expanded (not left as [E01])
+    evidence_id_pattern = r'\[E\d{2}\]'
+    unexpanded = re.findall(evidence_id_pattern, markdown)
+    if unexpanded:
+        fail(failures, FailureCategory.INVALID_EVIDENCE_ID, page_path,
+             f"rendered page contains unexpanded evidence IDs: {unexpanded[:3]}",
+             field="evidence_ids",
+             fix_hint=f"RENDERER BUG: {len(unexpanded)} evidence IDs not expanded")
+
+    return failures
 
 
 # -----------------------------------------------------------------------------
@@ -358,7 +534,9 @@ def parse_llm_response(
     evidence_bank: "EvidenceBankResult | None" = None,
     slug: str = "",
 ) -> tuple[str, WikiPageSchema | None, list[ValidationIssue]]:
-    """Parse LLM JSON response and render to markdown.
+    """Parse LLM JSON response and render to markdown (legacy wrapper).
+
+    Use parse_llm_response_structured() for new code.
 
     Returns:
         Tuple of (markdown_content, parsed_schema, validation_issues)
@@ -391,6 +569,116 @@ def parse_llm_response(
 
     markdown = render_page(page, evidence_bank, slug)
     return (markdown, page, issues)
+
+
+@dataclass
+class ParseResult:
+    """Result of parsing LLM response with structured validation."""
+    markdown: str
+    schema: WikiPageSchema | None
+    schema_failures: list[ValidationFailure]
+    render_failures: list[ValidationFailure]
+
+    @property
+    def success(self) -> bool:
+        """True if no error-level failures in schema validation."""
+        return not any(
+            f.severity == FailureSeverity.ERROR
+            for f in self.schema_failures
+        )
+
+    @property
+    def all_failures(self) -> list[ValidationFailure]:
+        """All failures from both schema and render validation."""
+        return self.schema_failures + self.render_failures
+
+    @property
+    def has_renderer_bugs(self) -> bool:
+        """True if any render validation failures exist."""
+        return len(self.render_failures) > 0
+
+
+def parse_llm_response_structured(
+    response: str,
+    evidence_bank: "EvidenceBankResult | None" = None,
+    slug: str = "",
+) -> ParseResult:
+    """Parse LLM JSON response with structured validation split.
+
+    Validation phases:
+    1. JSON extraction - can we find valid JSON?
+    2. Schema parsing - does the JSON match WikiPageSchema?
+    3. Schema validation - are all required fields present and valid?
+    4. Rendering - convert schema to markdown
+    5. Render validation - is the rendered markdown well-formed?
+
+    Phase 1-3 failures indicate model issues (re-prompt needed).
+    Phase 5 failures indicate renderer bugs (code fix needed).
+
+    Args:
+        response: Raw LLM output string
+        evidence_bank: Evidence bank for expanding IDs
+        slug: Source slug for generating source links
+
+    Returns:
+        ParseResult with markdown, schema, and categorized failures
+    """
+    # Phase 1: JSON extraction
+    data = extract_json_from_response(response)
+    if data is None:
+        return ParseResult(
+            markdown="",
+            schema=None,
+            schema_failures=[ValidationFailure(
+                category=FailureCategory.FRONTMATTER_PARSE_ERROR,
+                page="<response>",
+                message="Could not extract JSON from response",
+                fix_hint="Model output must be valid JSON or JSON in ```json block",
+            )],
+            render_failures=[],
+        )
+
+    # Phase 2: Schema parsing
+    try:
+        page = WikiPageSchema.from_json(data)
+    except Exception as e:
+        return ParseResult(
+            markdown="",
+            schema=None,
+            schema_failures=[ValidationFailure(
+                category=FailureCategory.FRONTMATTER_PARSE_ERROR,
+                page="<response>",
+                message=f"Schema parsing failed: {e}",
+                fix_hint="JSON structure doesn't match WikiPageSchema",
+            )],
+            render_failures=[],
+        )
+
+    # Phase 3: Schema validation (pre-render)
+    schema_failures = validate_schema_structured(page, evidence_bank)
+    errors = [f for f in schema_failures if f.severity == FailureSeverity.ERROR]
+
+    if errors:
+        # Don't render if schema has errors - return schema for repair
+        return ParseResult(
+            markdown="",
+            schema=page,
+            schema_failures=schema_failures,
+            render_failures=[],
+        )
+
+    # Phase 4: Rendering
+    markdown = render_page(page, evidence_bank, slug)
+
+    # Phase 5: Render validation (post-render)
+    render_failures = validate_rendered_page(markdown, page, evidence_bank)
+
+    return ParseResult(
+        markdown=markdown,
+        schema=page,
+        schema_failures=schema_failures,
+        render_failures=render_failures,
+    )
 
 
 # -----------------------------------------------------------------------------

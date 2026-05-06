@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 from wiki_model_backend import get_backend, ModelConfig, parse_model_output, write_parsed_files
-from wiki_page_schema import WikiPageSchema, parse_llm_response, render_page, validate_schema
+from wiki_page_schema import WikiPageSchema, parse_llm_response, parse_llm_response_structured, ParseResult, render_page, validate_schema
 from wiki_phase1_benchmark import find_normalized_source, git_changed_files, init_git, parse_candidate, run_codex
 from wiki_phase2_benchmark import (
     EvidenceBankResult,
@@ -360,10 +360,15 @@ def run_with_backend_json(
 
     Model outputs JSON, we parse and render to markdown deterministically.
 
+    Validation is split into phases:
+    - Schema validation (pre-render): catches model errors
+    - Render validation (post-render): catches renderer bugs
+
     Returns:
         Tuple of (returncode, log_paths, parsed_schema)
     """
     from wiki_common import log_context_stats
+    from wiki_failure_classifier import FailureSeverity
 
     log_context_stats(prompt, label=f"{prefix} prompt")
 
@@ -392,37 +397,46 @@ def run_with_backend_json(
         print(f"  Model error: {response.error}")
         return 1, log_paths, None
 
-    # Parse JSON and render markdown
-    markdown, page_schema, issues = parse_llm_response(
+    # Parse JSON and render markdown with structured validation
+    result = parse_llm_response_structured(
         response.output, evidence_bank, slug)
 
-    # Log validation issues
-    errors = [i for i in issues if i.severity == "error"]
-    warnings = [i for i in issues if i.severity == "warning"]
+    # Log schema validation issues (model errors)
+    schema_errors = [
+        f for f in result.schema_failures if f.severity == FailureSeverity.ERROR]
+    schema_warnings = [
+        f for f in result.schema_failures if f.severity == FailureSeverity.WARNING]
 
-    if errors:
-        print(f"  Schema errors: {len(errors)}")
-        for err in errors:
-            print(f"    - {err.field}: {err.message}")
-        return 1, log_paths, page_schema
+    if schema_errors:
+        print(f"  Schema errors: {len(schema_errors)} (model issue)")
+        for err in schema_errors:
+            print(f"    - {err.field or err.category.value}: {err.message}")
+        return 1, log_paths, result.schema
 
-    if warnings:
-        print(f"  Schema warnings: {len(warnings)}")
-        for warn in warnings:
-            print(f"    - {warn.field}: {warn.message}")
+    if schema_warnings:
+        print(f"  Schema warnings: {len(schema_warnings)}")
+        for warn in schema_warnings:
+            print(f"    - {warn.field or warn.category.value}: {warn.message}")
 
-    if not markdown:
+    if not result.markdown:
         print("  Failed to render markdown from JSON")
-        return 1, log_paths, page_schema
+        return 1, log_paths, result.schema
+
+    # Log render validation issues (renderer bugs - should never happen)
+    if result.has_renderer_bugs:
+        print(
+            f"  RENDERER BUGS: {len(result.render_failures)} (code issue, not model)")
+        for bug in result.render_failures:
+            print(f"    - {bug.fix_hint or bug.message}")
 
     # Write the rendered markdown
     repo_path = source_relative_to_repo(expected_path)
     full_path = worktree / repo_path
     full_path.parent.mkdir(parents=True, exist_ok=True)
-    full_path.write_text(markdown)
+    full_path.write_text(result.markdown)
     print(f"  Rendered {repo_path} from JSON schema")
 
-    return 0, log_paths, page_schema
+    return 0, log_paths, result.schema
 
 
 def fix_synthesized_evidence(
