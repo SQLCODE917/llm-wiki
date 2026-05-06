@@ -25,7 +25,7 @@ from wiki_phase2_benchmark import (
     range_page_args,
     source_relative_to_repo,
 )
-from wiki_fix_evidence import fix_evidence_in_page
+from wiki_fill_evidence import fill_evidence_in_page
 
 
 def main() -> int:
@@ -214,9 +214,12 @@ def run_with_backend(
 
 
 def fix_synthesized_evidence(worktree: Path, page_path: str, normalized_source: Path) -> int:
-    """Post-process a synthesized page to fix fabricated evidence.
+    """Fill evidence cells deterministically from locators.
     
-    Returns number of evidence cells fixed.
+    The LLM writes a 3-column table (Claim | Locator | Source).
+    This function expands it to 4-column by filling evidence from source.
+    
+    Returns number of evidence cells filled.
     """
     full_page_path = worktree / page_path
     if not full_page_path.exists():
@@ -225,11 +228,11 @@ def fix_synthesized_evidence(worktree: Path, page_path: str, normalized_source: 
     page_text = full_page_path.read_text()
     source_lines = normalized_source.read_text().splitlines()
     
-    fixed_text, changes = fix_evidence_in_page(page_text, source_lines, 200, force=False)
+    filled_text, changes = fill_evidence_in_page(page_text, source_lines)
     
     if changes:
-        full_page_path.write_text(fixed_text)
-        print(f"Fixed {len(changes)} evidence cell(s) in {page_path}", file=sys.stderr)
+        full_page_path.write_text(filled_text)
+        print(f"Filled {len(changes)} evidence cell(s) in {page_path}", file=sys.stderr)
     
     return len(changes)
 

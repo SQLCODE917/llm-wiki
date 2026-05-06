@@ -44,6 +44,7 @@
     "wiki:maintenance:systemd": "python3 tools/wiki_install_maintenance.py",
     "wiki:executables": "python3 tools/wiki_executable_concepts.py",
     "wiki:curator-status": "python3 tools/wiki_curator_status.py",
+    "wiki:fill-evidence": "python3 tools/wiki_fill_evidence.py",
     "wiki:fix-links": "python3 tools/wiki_fix_broken_links.py",
     "wiki:normalize-ascii": "python3 tools/wiki_normalize_ascii.py",
     "wiki:normalize-tables": "python3 tools/wiki_normalize_tables.py",

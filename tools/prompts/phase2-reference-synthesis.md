@@ -40,21 +40,18 @@ Task:
 
 {{selected_candidates}}
 
-Evidence bank:
+Locators available (evidence will be filled automatically):
 
 {{evidence_bank}}
 
-- Use only evidence inside the selected page's allowed source range when one is shown in the evidence bank.
-- If no allowed source range is shown, either declare `source_ranges` in the reference page frontmatter or stop and report that the source section cannot be range-gated.
+- Use only locators inside the selected page's allowed source range when one is shown.
 - `source_ranges` values must look like `{{slug}}:normalized:L12-L34`.
-- Do not pull evidence from unrelated sections just because a keyword matches the page title.
+- Do not use locators from unrelated sections.
 
 Reference-page rules:
 - The selected page must have `type: reference`.
 - The page should contain reusable lookup facts, not advice invented from general game knowledge.
-- Do not split one generic evidence sentence into multiple specific rows unless the source explicitly names each item.
 - Do not infer item categories, priority tiers, formulas, timings, costs, or upgrade names that the evidence does not state.
-- If the evidence bank is thin, create a narrow reference page with fewer supported facts rather than a broad lookup table.
 - If there are not at least 2 source-backed lookup rows, stop and report that the candidate lacks enough evidence.
 - Each reference data row must be a source-backed fact, not a model-generated classification.
 
@@ -66,34 +63,31 @@ The selected page must include:
 - `## Source-backed details`
 - `## Source pages`
 
+CRITICAL: Write **4-column** tables for reference data and **3-column** tables for source-backed details. Evidence is filled automatically - do NOT write evidence text.
+
 `## Reference data` must contain this exact table shape:
 
 ```md
-| Item | Supported fact | Evidence | Locator | Source |
-|---|---|---|---|---|
-| Source-native item name. | Narrow fact supported by the quoted evidence. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
+| Item | Supported fact | Locator | Source |
+|---|---|---|---|
+| Source-native item name. | Narrow fact synthesized in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
 ```
 
 `## Source-backed details` must contain this exact table shape:
 
 ```md
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
-| Concrete reusable claim in the agent's own words. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
+| Claim | Locator | Source |
+|---|---|---|
+| Concrete reusable claim in your own words. | `normalized:L12` | [Source title](../sources/{{slug}}.md) |
 ```
 
-Evidence and locator rules:
+Rules:
 - Include at least 2 data rows in `## Reference data`.
 - Include at least 3 rows in `## Source-backed details`.
-- Evidence cells must be short exact excerpts from `{{normalized_source}}`; do not paraphrase evidence cells.
-- If a source line contains internal quotation marks, choose a shorter exact excerpt that avoids those internal quotes.
-- Prefer exact snippets from the evidence bank above.
-- Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
-- Do not put pipe characters inside table cells.
-- Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
-- The claim and supported-fact cells must synthesize in your own words; do not copy the evidence sentence into those cells.
+- Do NOT write Evidence columns - they are filled automatically from locators.
+- Locator cells must use `normalized:L12` format.
+- The claim and supported-fact cells must synthesize in your own words; do not copy source text.
 - Claim and supported-fact cells must not use weak generic words: important, crucial, fundamental, essential, success.
-- If the source uses weak generic words, preserve the supported substance without those words. For example, use "should be prioritized highly" instead of "is important."
 
 Source-page update rules:
 - After this run, the source should have {{expected_total_pages}} synthesized pages total: existing pages plus this selected page.

@@ -35,6 +35,7 @@ from pathlib import Path
 from typing import Any
 
 from wiki_common import log_context_stats, section
+from wiki_fill_evidence import fill_evidence_in_page
 from wiki_model_backend import get_backend, ModelConfig, ModelResponse
 
 
@@ -555,7 +556,7 @@ def synthesize_pages(
             claims = select_diverse_claims(claims, max_claims_per_page)
 
         page_path = synthesize_single_page(
-            backend, state.slug, topic, claims, timeout)
+            backend, state.slug, topic, claims, Path(state.source_path), timeout)
         if page_path:
             created_pages.append(page_path)
             print(f"    Created: {page_path}")
@@ -584,9 +585,14 @@ def synthesize_single_page(
     slug: str,
     topic: str,
     claims: list[Claim],
+    normalized_source: Path,
     timeout: int = 180,
 ) -> Path | None:
-    """Synthesize a single wiki page from claims."""
+    """Synthesize a single wiki page from claims.
+    
+    The LLM writes a 3-column table (Claim | Locator | Source).
+    Evidence cells are filled deterministically from the normalized source.
+    """
     # Determine page type and path
     page_slug = topic.lower().replace(' ', '-').replace('/', '-')
     page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
@@ -597,12 +603,11 @@ def synthesize_single_page(
         print(f"    Skipping (exists): {page_path}")
         return page_path
 
-    # Build claims table for prompt
+    # Build claims table for prompt (include locators, LLM doesn't write evidence)
     claims_table = []
     for c in claims:
         claims_table.append(f"- Topic: {c.topic}")
         claims_table.append(f"  Claim: {c.claim}")
-        claims_table.append(f"  Evidence: \"{c.evidence}\"")
         claims_table.append(f"  Locator: {c.locator}")
         claims_table.append("")
 
@@ -630,6 +635,13 @@ def synthesize_single_page(
     # Post-process
     content = postprocess_page(content)
 
+    # Fill evidence cells deterministically from locators
+    if normalized_source.exists():
+        source_lines = normalized_source.read_text(errors="ignore").splitlines()
+        content, changes = fill_evidence_in_page(content, source_lines)
+        if changes:
+            print(f"    Filled {len(changes)} evidence cells")
+
     # Write page
     page_path.parent.mkdir(parents=True, exist_ok=True)
     page_path.write_text(content)
@@ -647,13 +659,13 @@ def build_synthesis_prompt(slug: str, topic: str, page_slug: str, claims_table: 
 TOPIC: {topic}
 SOURCE: {slug}
 
-EXTRACTED CLAIMS:
+EXTRACTED CLAIMS (with locators):
 {claims_text}
 
 CREATE: wiki/concepts/{page_slug}.md
 
 REQUIREMENTS:
-1. Use this exact structure:
+1. Use this exact structure with a **3-column table** (no Evidence column):
 
 ```markdown
 ---
@@ -672,9 +684,9 @@ sources:
 
 ## Source-backed details
 
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
-| <Rewrite claim clearly> | "<exact evidence quote>" | `<locator>` | [Source](../sources/{slug}.md) |
+| Claim | Locator | Source |
+|---|---|---|
+| <Synthesize the claim in your own words> | `<locator>` | [Source](../sources/{slug}.md) |
 
 ## Why it matters
 
@@ -685,10 +697,10 @@ sources:
 - [Source](../sources/{slug}.md)
 ```
 
-2. Include ALL provided claims in the evidence table
-3. Rewrite claims to be clear and self-contained
-4. Keep evidence quotes short and exact
-5. Use ASCII characters only (no smart quotes)
+2. Include ALL provided claims in the table
+3. Synthesize claims in YOUR OWN WORDS (do not copy verbatim)
+4. Use the locators exactly as provided
+5. Do NOT write an Evidence column - it is filled automatically
 6. Do NOT invent claims not in the provided list
 
 OUTPUT: Return ONLY the markdown content."""

@@ -31,16 +31,18 @@ Every synthesized page should include:
 1. YAML frontmatter (see above)
 2. `# Title`
 3. Short definition or summary
-4. `## Source-backed details` with an evidence table:
+4. `## Source-backed details` with a **3-column** evidence table:
 
 ```md
-| Claim                    | Evidence                                                 | Locator          | Source                               |
-| ------------------------ | -------------------------------------------------------- | ---------------- | ------------------------------------ |
-| Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/<slug>.md) |
+| Claim | Locator | Source |
+| ----- | ------- | ------ |
+| Your synthesized claim in your own words. | `normalized:L12` | [Source title](../sources/<slug>.md) |
 ```
 
 5. Cross-links to related pages
 6. `## Source pages` section linking back to source
+
+**IMPORTANT**: You output a 3-column table. Evidence cells are filled automatically by deterministic post-processing. Do NOT write evidence text.
 
 Type-specific requirements:
 - **Procedure pages** must include `## Steps` with at least 3 numbered or bulleted steps
@@ -48,16 +50,11 @@ Type-specific requirements:
 
 ## Evidence table rules
 
-1. **Claim cells** must synthesize the evidence in YOUR OWN WORDS. 
-   - NEVER copy the evidence text into the claim
-   - Write what the evidence MEANS, not what it SAYS
-   - Example: Evidence "Functions containing free variables are closures" → Claim "Closures are defined by capturing outer scope variables"
-2. **Evidence cells** must be short exact excerpts from the normalized source (40-150 chars)
-3. **Locator cells** must use `normalized:L12` or `normalized:L12-L14` format
-4. The evidence excerpt must appear verbatim in the normalized source at the cited line(s)
-5. Minimum 5 evidence rows per page
-
-CRITICAL: If your claim text matches your evidence text, the page will FAIL validation.
+1. **Claim cells**: Synthesize in YOUR OWN WORDS what the source teaches
+2. **Locator cells**: Use `normalized:L12` or `normalized:L12-L14` format
+3. **Source cells**: Link to the source page
+4. **NO evidence column**: Evidence is filled automatically from locators
+5. Minimum 5 rows per page
 
 ## Cross-link rules
 
@@ -88,9 +85,10 @@ Brief definition.
 
 ## Source-backed details
 
-| Claim | Evidence | Locator | Source |
-| ----- | -------- | ------- | ------ |
-| ... | "..." | `normalized:L123` | [Source](../sources/example-source.md) |
+| Claim | Locator | Source |
+| ----- | ------- | ------ |
+| First key insight synthesized from the source. | `normalized:L123` | [Source](../sources/example-source.md) |
+| Second key insight in your own words. | `normalized:L145` | [Source](../sources/example-source.md) |
 
 ## Source pages
 
