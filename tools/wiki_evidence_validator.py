@@ -110,6 +110,9 @@ def normalize_for_search(text: str) -> str:
     for old, new in replacements.items():
         text = text.replace(old, new)
 
+    # Un-escape Markdown pipes (model escapes them for table safety)
+    text = text.replace(r'\|', '|')
+
     # Join PDF line-break hyphenation: subprob-\nlems -> subproblems
     # Also handles subprob- lems (space after hyphen)
     text = re.sub(r"([A-Za-z])-\s*\n?\s*([a-z])", r"\1\2", text)

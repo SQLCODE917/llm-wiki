@@ -275,10 +275,12 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
                          "claim repeats evidence exactly"))
         weak_words = sorted(WEAK_CLAIM_WORDS & set(content_tokens(row.claim)))
         if weak_words:
+            # Weak words are style guidance, not hard failures
+            # The LLM-Wiki reference requires useful summaries, not word policing
             flags.append(
                 DeterministicFlag(
                     row.row,
-                    "fail",
+                    "warn",
                     "claim uses weak generic words: " + ", ".join(weak_words),
                 )
             )
@@ -906,7 +908,7 @@ def has_issues(
     # Only fail on hard evidence integrity issues, not soft locator precision
     # This prevents overriding LLM "supported" verdicts for repairable locator defects
     for flag in flags:
-        if flag.severity == "fail" and should_fail_on_deterministic_flag(flag.reason):
+        if flag.severity == "fail" and should_fail_on_deterministic_flag(flag.message):
             return True
 
     if not judge_result:

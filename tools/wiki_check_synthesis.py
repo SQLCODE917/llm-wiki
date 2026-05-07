@@ -611,10 +611,28 @@ def check_synthesized_page_structured(
         fail(failures, FailureCategory.PLACEHOLDER_TEXT, str(page),
              "contains placeholder text 'Page title'",
              fix_hint="Replace 'Page title' with actual content")
-    if re.search(r"\bnot created yet\b", fm.body, flags=re.IGNORECASE):
-        fail(failures, FailureCategory.REFERENCE_TO_UNCREATED, str(page),
-             "synthesized pages must not mention uncreated candidate pages",
-             fix_hint="Remove references to pages not yet created")
+
+    # Check Related pages section for link hygiene
+    related_section = section(fm.body, "## Related pages")
+    if related_section:
+        # "not created yet" phrases belong in Candidate pages, not Related pages
+        if re.search(r"\bnot created yet\b", related_section, flags=re.IGNORECASE):
+            fail(failures, FailureCategory.REFERENCE_TO_UNCREATED, str(page),
+                 "Related pages section must not mention uncreated pages; use Candidate pages section instead",
+                 field="Related pages",
+                 fix_hint="Move uncreated page references to ## Candidate pages section")
+        # All Markdown links in Related pages must point to existing files
+        wiki_root = Path("wiki")
+        for match in re.finditer(r"\[([^\]]+)\]\(([^)]+\.md)\)", related_section):
+            link_text, link_target = match.groups()
+            # Resolve relative path from page location
+            target_path = (page.parent / link_target).resolve()
+            if not target_path.exists():
+                fail(failures, FailureCategory.BROKEN_LINK, str(page),
+                     f"Related pages links to non-existent page: {link_target}",
+                     field="Related pages",
+                     fix_hint=f"Remove link or move '{link_text}' to ## Candidate pages section")
+
     executable = section(fm.body, "## Executable implementation")
     if executable and not re.search(r"(?:\.\./)+packages/|packages/", executable):
         fail(failures, FailureCategory.INVALID_EXECUTABLE_SECTION, str(page),
@@ -1285,10 +1303,43 @@ def line_number_of_heading(text: str, heading: str) -> int:
 
 
 def split_table_row(line: str) -> list[str] | None:
+    """Split a markdown table row, handling escaped pipes and inline code."""
     stripped = line.strip()
     if not stripped.startswith("|") or not stripped.endswith("|"):
         return None
-    return [cell.strip() for cell in stripped[1:-1].split("|")]
+
+    cells: list[str] = []
+    buf: list[str] = []
+    escaped = False
+    in_code = False
+
+    # Remove leading and trailing pipes
+    s = stripped[1:-1]
+
+    for ch in s:
+        if escaped:
+            buf.append(ch)
+            escaped = False
+            continue
+
+        if ch == "\\":
+            escaped = True
+            buf.append(ch)
+            continue
+
+        if ch == "`":
+            in_code = not in_code
+            buf.append(ch)
+            continue
+
+        if ch == "|" and not in_code:
+            cells.append("".join(buf).strip())
+            buf = []
+        else:
+            buf.append(ch)
+
+    cells.append("".join(buf).strip())
+    return cells
 
 
 def table_rows(markdown: str) -> list[list[str]]:

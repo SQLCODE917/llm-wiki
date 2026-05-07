@@ -326,6 +326,7 @@ def run_validation(
         ["python3", "tools/wiki_fix_broken_links.py", slug],
         ["python3", "tools/wiki_normalize_ascii.py", slug],
         ["python3", "tools/wiki_normalize_tables.py", slug],
+        ["python3", "tools/wiki_normalize_related.py", slug],
         *reference_repair_commands,
         synthesis_command,
         ["pnpm", "wiki:grounding:check"],

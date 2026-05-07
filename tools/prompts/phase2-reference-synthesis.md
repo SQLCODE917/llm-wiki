@@ -111,8 +111,11 @@ Source-page update rules:
 Cross-link rules:
 
 - Cross-links may point only to pages that already exist or pages created in this phase.
+- Synthesized pages must use TWO separate sections for page references:
+  - `## Related pages` — Only Markdown links to pages that exist. Example: `- [Functions](../concepts/functions.md)`
+  - `## Candidate pages` — Plain text names (no links) for concepts worth exploring later. Example: `- Scope`
+- Do NOT use phrases like "(not created yet)" or similar annotations. If a page doesn't exist, put its name in `## Candidate pages` without a link.
 - Each body link back to the source page must use a relative Markdown link.
-- Do not Markdown-link to candidate pages that remain uncreated.
 - Do not add empty headings.
 - Do not duplicate headings.
 - Do not put YAML/frontmatter keys such as `tags:`, `sources:`, `status:`, or `last_updated:` in the Markdown body.

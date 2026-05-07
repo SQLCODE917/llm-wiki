@@ -325,11 +325,19 @@ TOPIC GUIDELINES - Use BROAD topic categories like:
 
 RULES:
 1. Extract ONLY claims that teach something useful and reusable
-2. Each claim must have an exact quote as evidence from the numbered lines
+2. Each claim must have a VERBATIM quote as evidence from the numbered lines
 3. The locator must be a line range (e.g., "normalized:L100-L100" for one line, "normalized:L100-L102" for multiple)
 4. Use BROAD topic names from the guidelines above
 5. Skip: TOC entries, copyright notices, page numbers, marketing text, author bios
 6. If this chunk has no teachable content, return an empty array []
+
+EVIDENCE RULES (CRITICAL):
+- Evidence must be EXACT TEXT from the source - copy character-for-character
+- Do NOT add comments, annotations, or explanations to evidence
+- Do NOT paraphrase, summarize, or modify evidence text
+- For code snippets: copy ONLY the code that appears in the source
+- WRONG: "for (const ee of tree(e)) {{ yield ee; }} // yields all elements"
+- RIGHT: "for (const ee of tree(e)) {{ yield ee; }}"
 
 OUTPUT FORMAT - Return ONLY a JSON array:
 ```json
@@ -337,7 +345,7 @@ OUTPUT FORMAT - Return ONLY a JSON array:
   {{
     "topic": "Broad topic name (e.g., 'Functions', 'Arrays', 'Closures')",
     "claim": "Concrete statement in your own words - what the reader should learn",
-    "evidence": "Exact short quote from source (under 200 chars)",
+    "evidence": "VERBATIM quote from source (under 200 chars, no modifications)",
     "locator": "normalized:L<start>-L<end>"
   }}
 ]
