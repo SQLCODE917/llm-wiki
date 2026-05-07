@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import shutil
@@ -9,6 +10,8 @@ import subprocess
 import sys
 import tempfile
 import time
+from collections import defaultdict
+from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
 from wiki_model_backend import get_backend, ModelConfig, parse_model_output, write_parsed_files
@@ -18,6 +21,7 @@ from wiki_phase2_benchmark import (
     EvidenceBankResult,
     RelatedCandidate,
     build_evidence_bank,
+    candidate_title,
     changed_status_path,
     existing_created_paths,
     is_runner_artifact,
@@ -41,7 +45,265 @@ from wiki_failure_classifier import (
 from wiki_context_packer import check_evidence_contract_violations
 from wiki_deterministic_repair import repair_page as repair_page_schema
 from wiki_check_synthesis import check_synthesis_structured
+from wiki_deep_extract import Claim, extract_source_locator_map, get_heading_for_line
 
+
+# ---------------------------------------------------------------------------
+# Claim Selection / Clustering (v3 design: Task 3)
+# ---------------------------------------------------------------------------
+
+@dataclass
+class ClaimSelectionReport:
+    """Report of claim selection for audit trail."""
+    total_claims: int
+    selected_claims: int
+    headings_total: int
+    headings_covered: int
+    selection_log: list[dict] = field(default_factory=list)
+
+    def to_json(self) -> dict:
+        return asdict(self)
+
+
+def score_claim(claim: Claim) -> float:
+    """
+    Score a claim for specificity.
+    Higher scores = more concrete/useful.
+
+    Note: Coverage, novelty, and spread are handled via constraints
+    in the selection loop, not as score components.
+    """
+    score = 0.0
+    text = claim.claim.lower()
+    evidence = claim.evidence.lower() if claim.evidence else ""
+
+    # Contains numbers (concrete)
+    if re.search(r'\d+', text):
+        score += 0.15
+
+    # Contains code (concrete)
+    if re.search(r'`[^`]+`', claim.claim):
+        score += 0.15
+
+    # Technical terms
+    if any(term in text for term in ['function', 'returns', 'parameter', 'argument', 'closure', 'scope']):
+        score += 0.10
+
+    # Substantial evidence
+    if len(evidence) > 50:
+        score += 0.10
+
+    # Evidence contains code
+    if re.search(r'`[^`]+`', evidence):
+        score += 0.10
+
+    return min(score, 1.0)
+
+
+def is_redundant(claim: Claim, selected: list[Claim], threshold: float = 0.8) -> bool:
+    """
+    Check if claim is too similar to already-selected claims.
+    Uses simple word overlap as novelty heuristic.
+    """
+    claim_words = set(claim.claim.lower().split())
+    for existing in selected:
+        existing_words = set(existing.claim.lower().split())
+        if claim_words and existing_words:
+            overlap = len(claim_words & existing_words) / \
+                len(claim_words | existing_words)
+            if overlap > threshold:
+                return True
+    return False
+
+
+def get_nearest_heading(locator: str, locator_map: list[tuple[int, int, str]]) -> str:
+    """
+    Find the nearest source heading for a locator.
+
+    Uses locator_map from extract_source_locator_map().
+    """
+    match = re.match(r'normalized:L(\d+)', locator)
+    if not match:
+        return "unknown"
+
+    line = int(match.group(1))
+    heading = get_heading_for_line(line, locator_map)
+    return heading if heading else "unknown"
+
+
+def select_representative_claims(
+    claims: list[Claim],
+    locator_map: list[tuple[int, int, str]],
+    max_claims: int = 25,
+    min_section_coverage: float = 0.6,
+) -> tuple[list[Claim], ClaimSelectionReport]:
+    """
+    Select representative claims for synthesis.
+
+    Two-pass algorithm:
+    - Pass 1: Select for heading coverage until min_section_coverage is met.
+    - Pass 2: Fill remaining slots by score, regardless of heading.
+
+    Integration point: wiki_phase2_single.py, NOT wiki_deep_extract.py.
+    Extraction remains responsible for extraction.
+    Selection is a synthesis concern.
+
+    Returns selected claims AND a report for audit.
+    """
+    # Score each claim for specificity
+    scored = [(score_claim(c), c) for c in claims]
+    scored.sort(reverse=True, key=lambda x: x[0])
+
+    # Get source headings for coverage tracking
+    headings = {c.locator: get_nearest_heading(
+        c.locator, locator_map) for c in claims}
+    total_headings = len(set(headings.values()) - {"unknown"})
+    if total_headings == 0:
+        total_headings = 1  # Avoid division by zero
+
+    selected: list[Claim] = []
+    covered_headings: set[str] = set()
+    selection_log: list[dict] = []
+
+    # Pass 1: Select for heading coverage
+    for score, claim in scored:
+        if len(selected) >= max_claims:
+            break
+
+        heading = headings.get(claim.locator, "unknown")
+        coverage_ratio = len(covered_headings) / total_headings
+
+        # In pass 1, only accept claims that add heading coverage
+        is_new_heading = heading not in covered_headings and heading != "unknown"
+
+        if is_new_heading:
+            selected.append(claim)
+            covered_headings.add(heading)
+            selection_log.append({
+                "claim": claim.claim[:50],
+                "score": round(score, 3),
+                "heading": heading,
+                "pass": 1,
+                "reason": "new_heading",
+            })
+        elif coverage_ratio < min_section_coverage:
+            # Add even if not new heading, to fill coverage gap
+            selected.append(claim)
+            if heading != "unknown":
+                covered_headings.add(heading)
+            selection_log.append({
+                "claim": claim.claim[:50],
+                "score": round(score, 3),
+                "heading": heading,
+                "pass": 1,
+                "reason": "coverage_gap",
+            })
+
+    # Pass 2: Fill remaining slots by score (regardless of heading)
+    already_selected = set(id(c) for c in selected)
+    for score, claim in scored:
+        if len(selected) >= max_claims:
+            break
+        if id(claim) in already_selected:
+            continue
+
+        # Novelty check: skip if too similar to already-selected claim
+        if is_redundant(claim, selected):
+            continue
+
+        heading = headings.get(claim.locator, "unknown")
+        selected.append(claim)
+        selection_log.append({
+            "claim": claim.claim[:50],
+            "score": round(score, 3),
+            "heading": heading,
+            "pass": 2,
+            "reason": "fill_by_score",
+        })
+
+    report = ClaimSelectionReport(
+        total_claims=len(claims),
+        selected_claims=len(selected),
+        headings_total=total_headings,
+        headings_covered=len(covered_headings),
+        selection_log=selection_log,
+    )
+
+    return selected, report
+
+
+def cluster_by_heading(
+    topic: str,
+    claims: list[Claim],
+    locator_map: list[tuple[int, int, str]],
+    threshold: int = 50,
+) -> dict[str, list[Claim]]:
+    """
+    Split large topics into subtopics based on source headings.
+
+    Uses source headings as primary clustering signal, NOT locator windows.
+    """
+    if len(claims) < threshold:
+        return {topic: claims}
+
+    # Group by nearest source heading
+    heading_groups: dict[str, list[Claim]] = defaultdict(list)
+    for claim in claims:
+        heading = get_nearest_heading(claim.locator, locator_map)
+        heading_groups[heading].append(claim)
+
+    # Dedupe similar claims within each heading group
+    deduped_groups: dict[str, list[Claim]] = {}
+    for heading, group_claims in heading_groups.items():
+        deduped = dedupe_similar_claims(group_claims)
+        if deduped:
+            subtopic_name = f"{topic} - {heading}" if heading != "unknown" else topic
+            deduped_groups[subtopic_name] = deduped
+
+    return deduped_groups
+
+
+def dedupe_similar_claims(claims: list[Claim], threshold: float = 0.9) -> list[Claim]:
+    """Remove near-duplicate claims within a group."""
+    if not claims:
+        return []
+
+    deduped = [claims[0]]
+    for claim in claims[1:]:
+        if not is_redundant(claim, deduped, threshold=threshold):
+            deduped.append(claim)
+    return deduped
+
+
+def save_selection_report(
+    slug: str,
+    topic: str,
+    report: ClaimSelectionReport,
+    base_dir: Path | None = None,
+) -> Path:
+    """Persist selection report for audit trail."""
+    if base_dir is None:
+        base_dir = Path(".tmp/synthesis")
+
+    # Sanitize topic for filename
+    safe_topic = re.sub(r'[^\w\-]', '_', topic.lower())[:50]
+    report_dir = base_dir / slug / safe_topic
+    report_dir.mkdir(parents=True, exist_ok=True)
+
+    report_path = report_dir / "claim_selection.json"
+    report_path.write_text(json.dumps(report.to_json(), indent=2))
+    return report_path
+
+
+def load_locator_map(slug: str, normalized_source: Path) -> list[tuple[int, int, str]]:
+    """Load or compute the source locator map for claim selection."""
+    source_lines = normalized_source.read_text(errors="ignore").splitlines()
+    return extract_source_locator_map(source_lines)
+
+
+# ---------------------------------------------------------------------------
+# Original code continues below
+# ---------------------------------------------------------------------------
 
 def quarantine_failed_page(
     worktree: Path,
@@ -854,9 +1116,64 @@ def run_single_candidate(
     selected_paths = [selected_candidate.path]
     allowed_paths = sorted(set(existing_paths + selected_paths))
     expected_total_pages = len(allowed_paths)
+
+    # ---------------------------------------------------------------------------
+    # Claim Selection (v3 design: Task 3)
+    # For topics with many claims, select representative subset before synthesis.
+    # ---------------------------------------------------------------------------
+    selected_extraction_claims = extraction_claims
+    selection_report: ClaimSelectionReport | None = None
+
+    if extraction_claims:
+        # Get topic name from candidate path (e.g., ../concepts/functions.md -> "Functions")
+        topic_name = candidate_title(selected_candidate) or ""
+
+        # Filter claims by topic
+        topic_claims_dicts = [
+            c for c in extraction_claims
+            if c.get("topic", "").lower() == topic_name.lower()
+        ]
+
+        # Apply claim selection if we have many claims
+        if len(topic_claims_dicts) > 25:
+            print(
+                f"  Claim selection: {len(topic_claims_dicts)} claims for topic '{topic_name}'")
+
+            # Load locator map
+            locator_map = load_locator_map(slug, normalized_source)
+
+            # Convert dicts to Claim objects
+            topic_claims = [Claim.from_dict(c) for c in topic_claims_dicts]
+
+            # Select representative claims
+            selected_claims, selection_report = select_representative_claims(
+                topic_claims,
+                locator_map,
+                max_claims=25,
+                min_section_coverage=0.6,
+            )
+
+            print(f"  Selected {len(selected_claims)}/{len(topic_claims)} claims "
+                  f"({selection_report.headings_covered}/{selection_report.headings_total} headings)")
+
+            # Save selection report
+            report_path = save_selection_report(
+                slug, topic_name, selection_report)
+            print(f"  Selection report: {report_path}")
+
+            # Convert back to dicts for evidence_bank
+            selected_dicts = [c.to_dict() for c in selected_claims]
+
+            # Replace topic claims in extraction_claims with selected subset
+            other_claims = [
+                c for c in extraction_claims
+                if c.get("topic", "").lower() != topic_name.lower()
+            ]
+            selected_extraction_claims = other_claims + selected_dicts
+
     evidence_bank = build_evidence_bank(
         worktree, normalized_source, [selected_candidate],
-        extraction_claims=extraction_claims, use_ids=True, slug=slug)
+        extraction_claims=selected_extraction_claims, use_ids=True, slug=slug)
     selected_repo_path = source_relative_to_repo(selected_candidate.path)
     prompt = render_prompt(
         template=(worktree / prompt_template).read_text(),

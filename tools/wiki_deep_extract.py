@@ -37,6 +37,12 @@ from typing import Any
 from wiki_common import log_context_stats, section
 from wiki_fill_evidence import fill_evidence_in_page
 from wiki_model_backend import get_backend, ModelConfig, ModelResponse
+from wiki_candidate_tracker import (
+    CandidatesData,
+    load_candidates,
+    save_candidates,
+    register_candidate,
+)
 
 
 # ============================================================================
@@ -860,6 +866,107 @@ def load_extraction_state(slug: str) -> ExtractionState | None:
     return None
 
 
+def score_claim_specificity(claim: Claim) -> float:
+    """Score a claim for specificity (higher = more concrete/useful).
+
+    Used for High-Signal Claims ranking in source pages.
+    """
+    score = 0.0
+    text = claim.claim.lower()
+    evidence = claim.evidence.lower() if claim.evidence else ""
+
+    # Contains numbers (concrete)
+    if re.search(r'\d+', text):
+        score += 0.15
+
+    # Contains code (concrete)
+    if re.search(r'`[^`]+`', claim.claim):
+        score += 0.15
+
+    # Technical terms
+    if any(term in text for term in ['function', 'returns', 'parameter', 'argument', 'closure', 'scope']):
+        score += 0.10
+
+    # Substantial evidence
+    if len(evidence) > 50:
+        score += 0.10
+
+    # Evidence contains code
+    if re.search(r'`[^`]+`', evidence):
+        score += 0.10
+
+    return min(score, 1.0)
+
+
+def extract_source_locator_map(source_lines: list[str]) -> list[tuple[int, int, str]]:
+    """Extract heading ranges from normalized source.
+
+    Returns list of (start_line, end_line, heading_text) tuples.
+    """
+    headings = []
+    current_heading = None
+    current_start = 1
+
+    for i, line in enumerate(source_lines, start=1):
+        # Check for markdown headings (# or ##)
+        if line.startswith('#'):
+            # Close previous heading range
+            if current_heading:
+                headings.append((current_start, i - 1, current_heading))
+
+            # Start new heading
+            current_heading = line.lstrip('#').strip()[:60]
+            current_start = i
+
+    # Close final heading
+    if current_heading:
+        headings.append((current_start, len(source_lines), current_heading))
+
+    return headings
+
+
+def get_heading_for_line(line_num: int, locator_map: list[tuple[int, int, str]]) -> str:
+    """Find the heading that contains a given line number."""
+    for start, end, heading in locator_map:
+        if start <= line_num <= end:
+            return heading
+    return "unknown"
+
+
+def count_sections_for_topic(claims: list[Claim], locator_map: list[tuple[int, int, str]]) -> int:
+    """Count distinct source sections covered by claims for a topic."""
+    sections = set()
+    for claim in claims:
+        # Parse locator to get line number
+        match = re.match(r'normalized:L(\d+)', claim.locator)
+        if match:
+            line_num = int(match.group(1))
+            heading = get_heading_for_line(line_num, locator_map)
+            sections.add(heading)
+    return len(sections)
+
+
+def _infer_namespace(slug: str) -> str | None:
+    """Infer ecosystem namespace from source slug.
+
+    Used to prevent cross-ecosystem naming collisions.
+    e.g., js-allonge -> "js", python-decorators -> "python"
+    """
+    # Known namespace prefixes
+    prefixes = ["js", "javascript", "python", "ruby",
+                "scheme", "aoe2", "typescript", "node"]
+    slug_lower = slug.lower()
+    for prefix in prefixes:
+        if slug_lower.startswith(f"{prefix}-") or slug_lower.startswith(f"{prefix}_"):
+            return prefix
+    # Check if slug contains namespace hints
+    if "javascript" in slug_lower or "js" in slug_lower:
+        return "js"
+    if "python" in slug_lower:
+        return "python"
+    return None
+
+
 def create_source_page_from_topics(
     slug: str,
     state: ExtractionState,
@@ -869,13 +976,20 @@ def create_source_page_from_topics(
     """Create a source page from extracted topics/claims.
 
     This is used by the unified ingest flow to create the source page
-    after claim extraction, listing topics as Related pages candidates.
+    after claim extraction, with the v3 structure including:
+    - generation: frontmatter marking LLM vs deterministic sections
+    - Major Concepts table with Status column
+    - Extracted Topics table
+    - High-Signal Claims with score
+    - Candidate Concepts table
+    - Source Locator Map
     """
     today = date.today().isoformat()
 
-    # Read source for summary
+    # Read source for summary and locator map
     source_text = source_path.read_text()
     source_lines = source_text.splitlines()
+    locator_map = extract_source_locator_map(source_lines)
 
     # Get first meaningful lines for summary
     summary_lines = []
@@ -894,27 +1008,177 @@ def create_source_page_from_topics(
         if len(claims) >= min_claims_per_topic
     }
 
-    # Build key claims table from top claims across all topics
-    key_claims = []
-    for topic, claims in sorted(viable_topics.items(), key=lambda x: -len(x[1])):
-        for claim in claims[:3]:  # Top 3 from each topic
-            key_claims.append(claim)
-    key_claims = key_claims[:15]  # Limit total
+    # All topics (including non-viable) for Extracted Topics section
+    all_topics = state.topics
 
-    claims_table = "| Claim | Evidence | Locator |\n|---|---|---|\n"
-    for c in key_claims:
-        # Clean claim and evidence for table - escape pipes in both
-        claim = c.claim.replace('|', '\\|').replace('\n', ' ')[:100]
-        evidence = c.evidence.replace('|', '\\|').replace('\n', ' ')[:150]
-        claims_table += f"| {claim} | \"{evidence}\" | `{c.locator}` |\n"
+    # Determine source type
+    imported_dir = Path(f"raw/imported/{slug}")
+    if (imported_dir / "original.pdf").exists():
+        source_type = "pdf"
+    elif (imported_dir / "original.md").exists():
+        source_type = "markdown"
+    else:
+        source_type = "unknown"
 
-    # Build Related pages candidate table
+    # Build Major Concepts table (viable topics only, with status)
+    major_concepts_rows = []
+    for topic in sorted(viable_topics.keys()):
+        claims = viable_topics[topic]
+        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
+        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_path = f"../concepts/{page_slug}.md"
+        full_page_path = Path(f"wiki/concepts/{page_slug}.md")
+
+        # Determine status
+        if full_page_path.exists():
+            status = "draft"  # Will be updated after validation
+        else:
+            status = "not_started"
+
+        # Calculate section coverage
+        sections_covered = count_sections_for_topic(claims, locator_map)
+        total_sections = len(locator_map) if locator_map else 1
+        section_coverage = f"{sections_covered}/{total_sections} headings"
+
+        if status == "not_started":
+            major_concepts_rows.append(
+                f"| {topic} | `{page_path}` | {status} | - | {len(claims)} | - |"
+            )
+        else:
+            major_concepts_rows.append(
+                f"| {topic} | [{page_path}]({page_path}) | {status} | - | {len(claims)} | {section_coverage} |"
+            )
+
+    major_concepts_table = "| Concept | Page | Status | Claims Used | Claims Available | Section Coverage |\n|---|---|---|---|---|---|\n"
+    major_concepts_table += "\n".join(major_concepts_rows)
+
+    # Build Extracted Topics table (all topics)
+    extracted_topics_rows = []
+    for topic, claims in sorted(all_topics.items(), key=lambda x: -len(x[1])):
+        sections = count_sections_for_topic(claims, locator_map)
+        if len(claims) >= min_claims_per_topic:
+            status = "synthesized" if topic in viable_topics else "deferred"
+        else:
+            status = "deferred"
+
+        notes = ""
+        if len(claims) < min_claims_per_topic:
+            notes = f"Too few claims ({len(claims)} < {min_claims_per_topic})"
+        elif sections == 1:
+            notes = "Single section"
+
+        extracted_topics_rows.append(
+            f"| {topic} | {len(claims)} | {sections} | {status} | {notes} |"
+        )
+
+    extracted_topics_table = "| Topic | Claims | Sections | Status | Notes |\n|---|---|---|---|---|\n"
+    extracted_topics_table += "\n".join(extracted_topics_rows)
+
+    # Build High-Signal Claims table (top 10 by specificity score)
+    all_claims_scored = [(score_claim_specificity(c), c) for c in state.claims]
+    all_claims_scored.sort(reverse=True, key=lambda x: x[0])
+    high_signal_claims = all_claims_scored[:10]
+
+    high_signal_rows = []
+    for score, c in high_signal_claims:
+        claim_text = c.claim.replace('|', '\\|').replace('\n', ' ')[:80]
+        evidence_text = c.evidence.replace('|', '\\|').replace('\n', ' ')[:100]
+        # Use 3-column format required by source page validator
+        high_signal_rows.append(
+            f"| {claim_text} | \"{evidence_text}\" | `{c.locator}` |"
+        )
+
+    high_signal_table = "| Claim | Evidence | Locator |\n|---|---|---|\n"
+    high_signal_table += "\n".join(high_signal_rows)
+
+    # Build Concept Pages Generated list
+    concept_pages = []
+    for topic in sorted(viable_topics.keys()):
+        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
+        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_path = Path(f"wiki/concepts/{page_slug}.md")
+        if page_path.exists():
+            concept_pages.append(f"- [{topic}](../concepts/{page_slug}.md)")
+
+    concept_pages_list = "\n".join(
+        concept_pages) if concept_pages else "None yet."
+
+    # Build Candidate Concepts table (viable topics not yet created)
+    # Also register candidates with the tracker
+    candidates_data = load_candidates()
+
+    candidate_rows = []
+    for topic in sorted(viable_topics.keys()):
+        claims = viable_topics[topic]
+        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
+        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_path = Path(f"wiki/concepts/{page_slug}.md")
+
+        if not page_path.exists():
+            # Determine priority
+            count = len(claims)
+            if count >= 8:
+                priority = "must create"
+            elif count >= 5:
+                priority = "should create"
+            else:
+                priority = "could create"
+
+            sections = count_sections_for_topic(claims, locator_map)
+
+            # Register with candidate tracker (v3: Task 4)
+            claim_ids = [f"E{i+1:02d}" for i in range(count)]
+            register_candidate(
+                name=topic,
+                source=slug,
+                claims=claim_ids,
+                priority=priority,
+                candidates_data=candidates_data,
+                namespace=_infer_namespace(slug),
+                sections=sections,
+            )
+
+            candidate_rows.append(
+                f"| {topic} | {page_slug} | {priority} | {count} | {sections} | 1 | discovered |"
+            )
+
+    # Save candidate tracking data
+    if candidate_rows:
+        save_candidates(candidates_data)
+
+    candidate_table = "| Candidate | Canonical Slug | Priority | Claims | Sections | Sources | Status |\n|---|---|---|---|---|---|---|\n"
+    candidate_table += "\n".join(candidate_rows) if candidate_rows else "None."
+
+    # Build Source Locator Map table
+    locator_map_rows = []
+    for start, end, heading in locator_map[:20]:  # Limit to first 20
+        # Find which topics have claims in this range
+        topics_in_range = set()
+        for topic, claims in all_topics.items():
+            for claim in claims:
+                match = re.match(r'normalized:L(\d+)', claim.locator)
+                if match:
+                    line_num = int(match.group(1))
+                    if start <= line_num <= end:
+                        topics_in_range.add(topic)
+                        break
+
+        topics_str = ", ".join(sorted(topics_in_range)[
+                               :2]) if topics_in_range else "-"
+        locator_map_rows.append(
+            f"| {start}-{end} | {topics_str} | {heading} |")
+
+    locator_map_table = "| Lines | Topic | Source Heading |\n|---|---|---|\n"
+    locator_map_table += "\n".join(locator_map_rows)
+
+    # Build Related pages candidate table (for backwards compatibility)
     related_rows = []
     for topic in sorted(viable_topics.keys()):
         claims = viable_topics[topic]
         page_slug = topic.lower().replace(' ', '-').replace('/', '-')
         page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
         page_path = f"../concepts/{page_slug}.md"
+        full_page_path = Path(f"wiki/concepts/{page_slug}.md")
 
         # Determine priority based on claim count
         count = len(claims)
@@ -929,42 +1193,36 @@ def create_source_page_from_topics(
         sample_claims = claims[:3]
         keywords = set()
         for c in sample_claims:
-            # Extract key terms from claim text
             words = re.findall(r'\b[a-z]{4,}\b', c.claim.lower())
             keywords.update(words[:2])
         keyword_summary = ', '.join(
             sorted(keywords)[:3]) if keywords else 'various concepts'
         evidence_basis = f"{count} claims covering {keyword_summary}"
 
-        related_rows.append(
-            f"| {topic} | `{page_path}` | Deep extraction | {priority} | {evidence_basis} | not created yet |"
-        )
+        if full_page_path.exists():
+            related_rows.append(
+                f"| {topic} | [{page_path}]({page_path}) | Deep extraction | {priority} | {evidence_basis} | created |"
+            )
+        else:
+            related_rows.append(
+                f"| {topic} | `{page_path}` | Deep extraction | {priority} | {evidence_basis} | not created yet |"
+            )
 
     related_table = "| Candidate page | Intended path | Group | Priority | Evidence basis | Status |\n|---|---|---|---|---|---|\n"
     related_table += "\n".join(related_rows)
 
-    # Build topics list
-    topics_list = []
-    for topic, claims in sorted(viable_topics.items(), key=lambda x: -len(x[1])):
-        topics_list.append(f"- **{topic}** ({len(claims)} claims)")
+    # Build sources list for frontmatter
+    sources_list = []
+    if source_type == "pdf":
+        sources_list.append(f"../../raw/imported/{slug}/original.pdf")
+    elif source_type == "markdown":
+        sources_list.append(f"../../raw/imported/{slug}/original.md")
 
-    # Determine source type and filename
-    imported_dir = Path(f"raw/imported/{slug}")
-    if (imported_dir / "original.pdf").exists():
-        source_type = "pdf"
-        source_file = f"../../raw/imported/{slug}/original.pdf"
-    elif (imported_dir / "original.md").exists():
-        source_type = "markdown"
-        source_file = f"../../raw/imported/{slug}/original.md"
-    else:
-        source_type = "unknown"
-        source_file = ""
-
-    # Build sources list
-    sources_yaml = f"  - {source_file}" if source_file else ""
+    sources_yaml = "\n".join(
+        f"  - {s}" for s in sources_list) if sources_list else "  - ../../raw/imported/{slug}/"
 
     content = f"""---
-title: {slug}
+title: "Source: {slug}"
 type: source
 source_id: {slug}
 source_type: {source_type}
@@ -977,7 +1235,7 @@ sources:
 {sources_yaml}
 ---
 
-# {slug}
+# Source: {slug}
 
 ## Summary
 
@@ -985,15 +1243,31 @@ sources:
 
 Extracted {len(state.claims)} claims from {len(state.processed_chunks)} chunks, organized into {len(viable_topics)} viable topics.
 
+### Extraction Metadata
+
+- Claim count: {len(state.claims)}
+- Topic count: {len(viable_topics)}
+- Generation: summary (llm), tables (deterministic)
+
 ## Key claims
 
-{claims_table}
+{high_signal_table}
+
+### Extracted Topics
+
+{extracted_topics_table}
 
 ## Major concepts
 
-### Natural groupings
+{major_concepts_table}
 
-{chr(10).join(topics_list)}
+### Candidate Concepts
+
+{candidate_table}
+
+### Source Locator Map
+
+{locator_map_table}
 
 ## Entities
 

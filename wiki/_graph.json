@@ -174,14 +174,16 @@
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/arrays": {
+    "wiki:concepts/closures": {
       "type": "concept",
-      "path": "wiki/concepts/arrays.md",
-      "description": "Arrays in JavaScript are ordered collections of values that can hold elements of any type. They are reference types, meaning each array literal creates a new object, and elements\u2026",
+      "path": "wiki/concepts/closures.md",
+      "description": "A closure occurs when a function 'remembers' the variables from its outer (enclosing) scope even after the outer function has finished executing. This mechanism enables functions\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
         "wiki:sources/js-allonge"
       ]
     },
@@ -199,7 +201,7 @@
     "wiki:concepts/data-types": {
       "type": "concept",
       "path": "wiki/concepts/data-types.md",
-      "description": "JavaScript data types define how values are stored and manipulated. Primitive types like strings, numbers, and booleans are immutable and compared by value. Arrays and objects are\u2026",
+      "description": "JavaScript data types define how values are stored and manipulated. Primitive types include strings, numbers, and booleans, while objects and arrays are reference types. Understan\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -210,25 +212,50 @@
     "wiki:concepts/es6-features": {
       "type": "concept",
       "path": "wiki/concepts/es6-features.md",
-      "description": "ECMAScript 6 (ES6), also known as ES2015, introduced significant enhancements to JavaScript, including new syntax, improved variable scoping, and powerful new features like genera\u2026",
+      "description": "ECMAScript 2015 (ES6) introduced significant enhancements to JavaScript, including new syntax, built-in functionalities, and entirely new language features. These improvements aim\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
         "wiki:sources/js-allonge"
       ]
     },
     "wiki:concepts/functional-programming": {
       "type": "concept",
       "path": "wiki/concepts/functional-programming.md",
-      "description": "Functional programming is a paradigm that emphasizes the use of pure functions, immutability, and higher-order functions to build software. It focuses on describing what should be\u2026",
+      "description": "Functional programming is a paradigm that emphasizes the use of pure functions and immutable data. It focuses on composing functions to build complex operations and avoids changin\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
+        "wiki:concepts/data-types",
+        "wiki:concepts/functions",
+        "wiki:concepts/iterators",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/functions": {
+      "type": "concept",
+      "path": "wiki/concepts/functions.md",
+      "description": "Functions are fundamental constructs in JavaScript that serve as first-class citizens, enabling powerful programming paradigms such as functional programming. They encapsulate reu\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/generators": {
+      "type": "concept",
+      "path": "wiki/concepts/generators.md",
+      "description": "Generators are a special type of function in JavaScript that can be paused and resumed during execution, allowing for the creation of iterators with a clean and readable syntax.",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/closures",
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
         "wiki:concepts/iterators",
         "wiki:sources/js-allonge"
       ]
@@ -236,7 +263,7 @@
     "wiki:concepts/iterators": {
       "type": "concept",
       "path": "wiki/concepts/iterators.md",
-      "description": "An iterator is a mechanism for sequentially accessing elements of a collection without exposing the underlying structure. It provides a way to traverse data structures by returnin\u2026",
+      "description": "An iterator in JavaScript is a stateful object that produces a sequence of values on demand. It typically provides a function that, when called repeatedly, returns the next value\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -247,26 +274,29 @@
     "wiki:concepts/objects": {
       "type": "concept",
       "path": "wiki/concepts/objects.md",
-      "description": "In JavaScript, objects are collections of key-value pairs used to store and organize data. They serve as fundamental data structures that can hold various types of values, includi\u2026",
+      "description": "In JavaScript, objects serve as the primary mechanism for organizing and storing data. They function as dictionaries mapping string keys to values, allowing for flexible data stru\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
+        "wiki:concepts/data-types",
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
+        "wiki:concepts/iterators",
         "wiki:sources/js-allonge"
       ]
     },
     "wiki:concepts/recursion": {
       "type": "concept",
       "path": "wiki/concepts/recursion.md",
-      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for processing data structures like lists, where the solution can\u2026",
+      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for processing data structures like lists and trees, and can be op\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
-        "wiki:concepts/arrays",
         "wiki:concepts/data-types",
-        "wiki:concepts/es6-features",
         "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
         "wiki:concepts/iterators",
         "wiki:concepts/objects",
         "wiki:sources/js-allonge"
@@ -275,16 +305,14 @@
     "wiki:concepts/variables": {
       "type": "concept",
       "path": "wiki/concepts/variables.md",
-      "description": "Variables in JavaScript are used to store data values. The behavior of variable declarations differs based on the keyword used, such as var, let, or const, particularly concerning\u2026",
+      "description": "Variables in JavaScript are containers for storing data values. The behavior of variables differs based on how they are declared, particularly with respect to scoping and hoisting.",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
+        "wiki:concepts/closures",
         "wiki:concepts/data-types",
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
-        "wiki:concepts/recursion",
+        "wiki:concepts/functions",
         "wiki:sources/js-allonge"
       ]
     },
@@ -376,15 +404,17 @@
     "wiki:sources/js-allonge": {
       "type": "source",
       "path": "wiki/sources/js-allonge.md",
-      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 273 claims from 30 chunks, organized into 12 viable topics.",
+      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 273 claims from 30 chunks, organized into 12 viable topics. ### Extraction M\u2026",
       "sources": [
         "../../raw/imported/js-allonge/original.pdf"
       ],
       "depends_on": [
-        "wiki:concepts/arrays",
+        "wiki:concepts/closures",
         "wiki:concepts/data-types",
         "wiki:concepts/es6-features",
         "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
+        "wiki:concepts/generators",
         "wiki:concepts/iterators",
         "wiki:concepts/objects",
         "wiki:concepts/recursion",

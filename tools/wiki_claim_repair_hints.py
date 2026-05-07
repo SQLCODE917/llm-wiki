@@ -8,7 +8,14 @@ from pathlib import Path
 
 from wiki_common import content_tokens
 from wiki_check_synthesis import normalize_for_search, strip_markdown
-from wiki_judge_claims import EvidenceRow, deterministic_flags, evidence_rows
+from wiki_judge_claims import (
+    EvidenceRow,
+    deterministic_flags,
+    evidence_rows,
+    SEVERITY_ERROR,
+    SEVERITY_WARNING,
+    SEVERITY_INFO,
+)
 
 
 WEAK_WORDS = {"important", "crucial", "fundamental", "essential", "success"}
@@ -51,8 +58,8 @@ def render_hints(page: Path, rows: list[EvidenceRow], source_lines: list[str]) -
         f"- Evidence rows found: {len(rows)}",
     ]
     flags = deterministic_flags(rows, source_lines)
-    fail_flags = [flag for flag in flags if flag.severity == "fail"]
-    warn_flags = [flag for flag in flags if flag.severity == "warn"]
+    fail_flags = [flag for flag in flags if flag.severity == SEVERITY_ERROR]
+    warn_flags = [flag for flag in flags if flag.severity == SEVERITY_WARNING]
     lines.append(f"- Deterministic failures: {len(fail_flags)}")
     lines.append(f"- Deterministic warnings: {len(warn_flags)}")
     lines.append("")

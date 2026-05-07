@@ -27,6 +27,22 @@ PAGE_VERDICTS = {"useful", "too_broad", "duplicate_or_overlap", "unclear"}
 WEAK_CLAIM_WORDS = {"important", "crucial",
                     "fundamental", "essential", "success"}
 
+# Flag types for the warning taxonomy
+FLAG_TYPES = {
+    "grounding_fail",      # evidence not found, locator invalid, quote mismatch
+    "link_fail",           # broken link, page not found
+    "schema_fail",         # missing frontmatter, malformed table, missing required section
+    "coverage_warning",    # incomplete claim, missing context
+    "structure_warning",   # optional section missing, unusual heading order
+    "style_info",          # weak words, vague phrasing
+    "unclassified_warning",  # unknown patterns
+}
+
+# Severity levels
+SEVERITY_ERROR = "error"      # Blocks ingestion
+SEVERITY_WARNING = "warning"  # Logged for review
+SEVERITY_INFO = "info"        # Diagnostic only
+
 
 @dataclass(frozen=True)
 class EvidenceRow:
@@ -40,9 +56,108 @@ class EvidenceRow:
 
 @dataclass(frozen=True)
 class DeterministicFlag:
+    """A flag from deterministic validation.
+
+    Fields:
+        row: Row number in evidence table (0 for page-level issues)
+        type: Flag type (grounding_fail, link_fail, schema_fail, etc.)
+        severity: error | warning | info
+        source: Origin of the flag (deterministic_validator, llm_judge, etc.)
+        message: Human-readable description
+    """
     row: int
+    type: str
     severity: str
+    source: str
     message: str
+
+    def blocks_ingestion(self) -> bool:
+        """Only error severity blocks. No message-text special cases."""
+        return self.severity == SEVERITY_ERROR
+
+
+def classify_flag(message: str) -> tuple[str, str]:
+    """Classify a flag message into (type, severity).
+
+    Returns (flag_type, severity) tuple.
+    Defaults to unclassified_warning for unknown patterns.
+    """
+    message_lower = message.lower()
+
+    # schema_fail (error) - includes missing required sections
+    if any(term in message_lower for term in [
+        "malformed",
+        "render failure",
+        "json error",
+        "missing frontmatter",
+        "missing required",
+        "required section",
+        "claim without evidence",
+        "no evidence rows",
+        "not parseable",
+    ]):
+        return ("schema_fail", SEVERITY_ERROR)
+
+    # grounding_fail (error)
+    if any(term in message_lower for term in [
+        "evidence not found",
+        "evidence not in source",
+        "locator invalid",
+        "quote mismatch",
+        "not in source",
+        "locator out of range",
+        "outside normalized source",
+        "outside source",
+        "source_not_found",
+        "fabricated",
+        "contradicted",
+    ]):
+        return ("grounding_fail", SEVERITY_ERROR)
+
+    # link_fail (error)
+    if any(term in message_lower for term in [
+        "broken link",
+        "page not found",
+        "invalid path",
+        "link target missing",
+    ]):
+        return ("link_fail", SEVERITY_ERROR)
+
+    # coverage_warning (warning)
+    if any(term in message_lower for term in [
+        "incomplete",
+        "missing context",
+        "partial coverage",
+        "too short",
+        "short (prose)",
+        "claim is short",
+    ]):
+        return ("coverage_warning", SEVERITY_WARNING)
+
+    # structure_warning (warning) - only optional structural issues
+    if any(term in message_lower for term in [
+        "optional section",
+        "section order",
+        "extra heading",
+        "repeats evidence",
+    ]):
+        return ("structure_warning", SEVERITY_WARNING)
+
+    # style_info (info)
+    if any(term in message_lower for term in [
+        "weak word",
+        "weak generic",
+        "vague",
+        "promotional",
+        "essential",
+        "crucial",
+        "important",
+        "style",
+    ]):
+        return ("style_info", SEVERITY_INFO)
+
+    # Default: unknown patterns are warnings, not structure issues
+    return ("unclassified_warning", SEVERITY_WARNING)
 
 
 def main() -> int:
@@ -236,13 +351,22 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
 
     Uses shared validator to ensure consistency with wiki_check_synthesis.py.
     Distinguishes hard failures (fabricated evidence) from soft issues (locator precision).
+    Uses the v3 flag taxonomy with type, severity, and source fields.
     """
     flags: list[DeterministicFlag] = []
+    source_name = "deterministic_validator"
+
     for row in rows:
         parsed = parse_locator(row.locator)
         if parsed is None:
+            flag_type, severity = classify_flag("locator is not parseable")
             flags.append(DeterministicFlag(
-                row.row, "fail", "locator is not parseable"))
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="locator is not parseable",
+            ))
             continue
         start, end = parsed
 
@@ -253,42 +377,84 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
 
         if validation_result.is_hard_failure:
             # Hard failures (evidence fabricated, locator invalid)
+            flag_type, severity = classify_flag(validation_result.reason)
             flags.append(DeterministicFlag(
-                row.row, "fail", validation_result.reason))
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message=validation_result.reason,
+            ))
         elif validation_result.severity == "warn":
             # Soft issues (locator precision) - warn, don't fail
             reason = validation_result.reason
             if validation_result.suggested_locator:
                 reason += f" (suggested: {validation_result.suggested_locator})"
-            flags.append(DeterministicFlag(row.row, "warn", reason))
+            flag_type, severity = classify_flag(reason)
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message=reason,
+            ))
         # pass = no flag
 
         # Check evidence too short (allows code snippets)
         if is_evidence_too_short(row.evidence):
+            flag_type, severity = classify_flag("evidence is short (prose)")
             flags.append(DeterministicFlag(
-                row.row, "warn", "evidence is short (prose)"))
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="evidence is short (prose)",
+            ))
 
         if len(re.findall(r"[A-Za-z0-9']+", row.claim)) < 5:
-            flags.append(DeterministicFlag(row.row, "warn", "claim is short"))
+            flag_type, severity = classify_flag("claim is short")
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="claim is short",
+            ))
         if normalize_for_search(row.claim) == normalize_for_search(row.evidence):
-            flags.append(DeterministicFlag(row.row, "warn",
-                         "claim repeats evidence exactly"))
+            flag_type, severity = classify_flag(
+                "claim repeats evidence exactly")
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="claim repeats evidence exactly",
+            ))
         weak_words = sorted(WEAK_CLAIM_WORDS & set(content_tokens(row.claim)))
         if weak_words:
             # Weak words are style guidance, not hard failures
             # The LLM-Wiki reference requires useful summaries, not word policing
-            flags.append(
-                DeterministicFlag(
-                    row.row,
-                    "warn",
-                    "claim uses weak generic words: " + ", ".join(weak_words),
-                )
-            )
+            message = "claim uses weak generic words: " + ", ".join(weak_words)
+            flag_type, severity = classify_flag(message)
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message=message,
+            ))
         # NOTE: Lexical unsupported-term check removed.
         # Synthesis naturally uses different vocabulary than evidence.
         # Semantic entailment should be checked by the LLM judge, not lexical overlap.
     if not rows:
-        flags.append(DeterministicFlag(0, "fail", "no evidence rows found"))
+        flag_type, severity = classify_flag("no evidence rows found")
+        flags.append(DeterministicFlag(
+            row=0,
+            type=flag_type,
+            severity=severity,
+            source=source_name,
+            message="no evidence rows found",
+        ))
     return flags
 
 
@@ -830,13 +996,53 @@ def render_report(
         issue = str(judge_result.get("page_issue") or "")
         if issue:
             lines.append(f"- Page issue: {issue}")
+
+    # Group flags by severity for better reporting
+    error_flags = [f for f in flags if f.severity == SEVERITY_ERROR]
+    warning_flags = [f for f in flags if f.severity == SEVERITY_WARNING]
+    info_flags = [f for f in flags if f.severity == SEVERITY_INFO]
+
     lines.extend(["", "## Deterministic Flags", ""])
-    if flags:
-        for flag in flags:
-            row = "page" if flag.row == 0 else f"row {flag.row}"
-            lines.append(f"- {flag.severity.upper()} {row}: {flag.message}")
-    else:
+
+    if error_flags:
+        lines.append("### Errors (blocking)")
+        lines.append("")
+        lines.append("| Type | Source | Row | Message |")
+        lines.append("|---|---|---|---|")
+        for flag in error_flags:
+            row = "page" if flag.row == 0 else str(flag.row)
+            lines.append(
+                f"| {flag.type} | {flag.source} | {row} | {flag.message} |")
+        lines.append("")
+
+    if warning_flags:
+        lines.append("### Warnings (review)")
+        lines.append("")
+        lines.append("| Type | Source | Row | Message |")
+        lines.append("|---|---|---|---|")
+        for flag in warning_flags:
+            row = "page" if flag.row == 0 else str(flag.row)
+            lines.append(
+                f"| {flag.type} | {flag.source} | {row} | {flag.message} |")
+        lines.append("")
+
+    if info_flags:
+        lines.append("### Info (diagnostic)")
+        lines.append("")
+        lines.append("| Type | Source | Row | Message |")
+        lines.append("|---|---|---|---|")
+        for flag in info_flags:
+            row = "page" if flag.row == 0 else str(flag.row)
+            lines.append(
+                f"| {flag.type} | {flag.source} | {row} | {flag.message} |")
+        lines.append("")
+
+    if not flags:
         lines.append("None.")
+
+    lines.append("")
+    lines.append(
+        f"Summary: {len(error_flags)} errors, {len(warning_flags)} warnings, {len(info_flags)} info")
 
     lines.extend(["", "## Sibling Pages", ""])
     lines.extend(siblings or ["None."])
@@ -892,23 +1098,25 @@ def has_issues(
 ) -> bool:
     """Check if judge report has issues that should fail the build.
 
+    Uses the v3 warning taxonomy:
+    - Only error severity blocks ingestion
+    - style_info and coverage_warning do not block
+    - grounding_fail, link_fail, schema_fail block
+
     In soft_pass mode (aligned with REFERENCE_llm-wiki-pattern):
     - too_broad = stylistic choice, human can accept or refine
     - not_supported/unclear = substantive error, must fix
 
     The pattern says the human curates and guides; minor embellishments
     are synthesis choices, not contradictions.
-
-    Hard failures (fabricated evidence, invalid locator) override LLM verdicts.
-    Soft issues (locator precision, off-by-one) do not override "supported" verdicts.
     """
     if judge_error:
         return True
 
-    # Only fail on hard evidence integrity issues, not soft locator precision
-    # This prevents overriding LLM "supported" verdicts for repairable locator defects
+    # Use the new blocks_ingestion() method from v3 taxonomy
+    # Only error severity blocks ingestion
     for flag in flags:
-        if flag.severity == "fail" and should_fail_on_deterministic_flag(flag.message):
+        if flag.blocks_ingestion():
             return True
 
     if not judge_result:

@@ -49,6 +49,9 @@
     "wiki:normalize-ascii": "python3 tools/wiki_normalize_ascii.py",
     "wiki:normalize-tables": "python3 tools/wiki_normalize_tables.py",
     "wiki:link-related": "python3 tools/wiki_link_related.py",
+    "wiki:candidates": "python3 tools/wiki_candidate_tracker.py",
+    "wiki:candidates:check": "python3 tools/wiki_candidate_tracker.py check-promotion",
+    "wiki:candidates:status": "python3 tools/wiki_candidate_tracker.py status",
     "wiki:lint": "python3 tools/wiki_lint.py",
     "wiki:lint:log": "python3 tools/wiki_lint.py --append-log"
   }
