@@ -135,7 +135,31 @@ def parse_locator_range(locator: str) -> tuple[int, int] | None:
 
 
 def locator_within_ranges(start: int, end: int, ranges: list[SourceRange]) -> bool:
+    """Check if locator is strictly contained within any allowed range."""
     return any(start >= allowed.start and end <= allowed.end for allowed in ranges)
+
+
+# Maximum line slop for off-by-one tolerance
+MAX_LOCATOR_SLOP = 2
+
+
+def locator_within_tolerance(start: int, end: int, ranges: list[SourceRange]) -> SourceRange | None:
+    """Check if locator is within tolerance of any allowed range.
+
+    Returns the matching range if within tolerance, None otherwise.
+    This handles common off-by-one errors from model context expansion.
+    """
+    for allowed in ranges:
+        # Check if model's range overlaps with allowed range within tolerance
+        if (allowed.start - MAX_LOCATOR_SLOP <= start <= allowed.start + MAX_LOCATOR_SLOP
+                and allowed.end - MAX_LOCATOR_SLOP <= end <= allowed.end + MAX_LOCATOR_SLOP):
+            return allowed
+    return None
+
+
+def canonicalize_locator(start: int, end: int, canonical: SourceRange) -> str:
+    """Return the canonical locator string for the given range."""
+    return f"normalized:L{canonical.start}-L{canonical.end}"
 
 
 def format_ranges(ranges: list[SourceRange]) -> str:

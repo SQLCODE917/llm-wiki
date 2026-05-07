@@ -30,8 +30,10 @@ from wiki_common import (
 )
 from wiki_evidence_ranges import (
     SourceRange,
+    canonicalize_locator,
     format_ranges,
     locator_within_ranges,
+    locator_within_tolerance,
     source_ranges_for_page,
 )
 from wiki_failure_classifier import (
@@ -40,6 +42,12 @@ from wiki_failure_classifier import (
     ValidationFailure,
     fail,
     render_failures_log,
+)
+from wiki_evidence_validator import (
+    looks_like_code,
+    is_evidence_too_short,
+    validate_evidence_location,
+    is_weak_evidence,
 )
 
 
@@ -62,6 +70,40 @@ WEAK_CLAIM_PATTERNS = [
     r"\bessential\b",
     r"\bsuccess\b",
 ]
+
+# Words that indicate a claim has mechanism content (not just evaluation)
+MECHANISM_MARKERS = {
+    "because", "by", "through", "when", "where", "while", "if", "unless",
+    "consists", "enables", "requires", "differs", "causes", "allows",
+    "prevents", "returns", "takes", "creates", "uses", "calls", "produces",
+    "transforms", "converts", "maps", "reduces", "filters", "iterates",
+}
+
+
+def weak_claim_severity(claim: str) -> str:
+    """Classify weak claim language as 'ok', 'warn', or 'fail'.
+
+    - 'ok': No weak words
+    - 'warn': Weak words but has mechanism content
+    - 'fail': Weak words with no mechanism content (vacuous)
+    """
+    tokens = set(claim.lower().split())
+
+    # Check for weak words
+    has_weak = any(re.search(pattern, claim, flags=re.IGNORECASE)
+                   for pattern in WEAK_CLAIM_PATTERNS)
+    if not has_weak:
+        return "ok"
+
+    # Check for mechanism content
+    has_mechanism = bool(tokens & MECHANISM_MARKERS)
+    # Also consider claim length - longer claims usually have more substance
+    if has_mechanism or len(tokens) >= 18:
+        return "warn"
+
+    return "fail"
+
+
 LOCATOR_RE = re.compile(
     r"^(?:p\.\s*\d+\s*;\s*)?normalized:L(?P<start>\d+)(?:-L?(?P<end>\d+))?$", re.IGNORECASE)
 
@@ -134,12 +176,21 @@ def main() -> int:
         range_pages=args.range_page,
         enforce_evidence_ranges=args.enforce_evidence_ranges,
     )
+
+    # Separate errors from warnings
+    errors = [f for f in failures if f.severity == FailureSeverity.ERROR]
+    warnings = [f for f in failures if f.severity == FailureSeverity.WARNING]
+
     if args.structured:
         print(render_failures_log(failures))
     else:
-        for failure in failures:
+        for failure in errors:
             print(f"FAIL: {failure.page}: {failure.message}")
-    if failures:
+        for failure in warnings:
+            print(f"WARN: {failure.page}: {failure.message}")
+
+    # Only fail on errors, not warnings
+    if errors:
         return 1
     print(f"PASS: synthesis for {args.slug}")
     return 0
@@ -717,11 +768,18 @@ def check_evidence_table_structured(
                  f"evidence row {index} claim is too short",
                  row=index, value=len(claim_words), expected=5,
                  fix_hint="Expand claim to at least 5 words")
-        if any(re.search(pattern, claim, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
+        # Check weak claim language with severity
+        severity = weak_claim_severity(claim)
+        if severity == "fail":
+            fail(failures, FailureCategory.WEAK_CLAIM_LANGUAGE, str(page),
+                 f"evidence row {index} uses weak generic claim language without mechanism content",
+                 row=index,
+                 fix_hint="Replace generic words (important, crucial, etc.) with specific mechanism (because, enables, requires)")
+        elif severity == "warn":
             fail(failures, FailureCategory.WEAK_CLAIM_LANGUAGE, str(page),
                  f"evidence row {index} uses weak generic claim language",
-                 row=index,
-                 fix_hint="Replace generic words (important, crucial, etc.) with specific content")
+                 row=index, severity=FailureSeverity.WARNING,
+                 fix_hint="Consider replacing generic words with specific content")
         repeated = repeated_phrase(strip_markdown(claim))
         if repeated:
             fail(failures, FailureCategory.REPEATED_PHRASE, str(page),
@@ -740,13 +798,13 @@ def check_evidence_table_structured(
                  row=index,
                  fix_hint="Rewrite claim in your own words; do not copy the evidence excerpt")
 
-        excerpt_words = re.findall(r"[A-Za-z0-9']+", excerpt)
-        if len(excerpt_words) < 4 and len(excerpt) < 24:
+        # Check evidence length, allowing code snippets as valid evidence
+        if is_evidence_too_short(excerpt):
             fail(failures, FailureCategory.EVIDENCE_TOO_SHORT, str(page),
-                 f"evidence row {index} excerpt is too short",
-                 row=index, value=len(excerpt_words), expected=4,
-                 fix_hint="Include more context in the evidence excerpt")
-        if any(re.search(pattern, excerpt, flags=re.IGNORECASE) for pattern in WEAK_EVIDENCE_PATTERNS):
+                 f"evidence row {index} excerpt is too short (and not code)",
+                 row=index, value=len(re.findall(r"[A-Za-z0-9']+", excerpt)), expected=4,
+                 fix_hint="Include more context in the evidence excerpt, or use code as evidence")
+        if is_weak_evidence(excerpt):
             fail(failures, FailureCategory.WEAK_EVIDENCE, str(page),
                  f"evidence row {index} excerpt is document navigation or metadata, not evidence",
                  row=index,
@@ -760,24 +818,44 @@ def check_evidence_table_structured(
                  fix_hint="Use format: normalized:L123 or normalized:L123-L456")
         elif evidence_source is not None:
             start, end = parsed_locator
-            if start < 1 or end < start or end > len(evidence_source.lines):
-                fail(failures, FailureCategory.LOCATOR_OUT_OF_RANGE, str(page),
-                     f"evidence row {index} locator {clean_locator(locator)!r} is outside normalized source line range",
+            # Use shared evidence validator for consistent behavior with judge
+            validation_result = validate_evidence_location(
+                excerpt, start, end, evidence_source.lines, window_size=2
+            )
+
+            if validation_result.is_hard_failure:
+                fail(failures, FailureCategory.LOCATOR_OUT_OF_RANGE if "locator" in validation_result.reason else FailureCategory.EVIDENCE_NOT_IN_LOCATOR,
+                     str(page),
+                     f"evidence row {index}: {validation_result.reason}",
                      row=index, value=(start, end), expected=(
                          1, len(evidence_source.lines)),
                      fix_hint=f"Locator must be within L1-L{len(evidence_source.lines)}")
-            else:
-                locator_text = "\n".join(evidence_source.lines[start - 1: end])
-                if excerpt_norm not in normalize_for_search(locator_text):
-                    fail(failures, FailureCategory.EVIDENCE_NOT_IN_LOCATOR, str(page),
-                         f"evidence row {index} excerpt is not found in locator range {clean_locator(locator)!r}",
-                         row=index,
-                         fix_hint="Verify excerpt appears at the cited locator line range")
-                if allowed_ranges and not locator_within_ranges(start, end, allowed_ranges):
-                    fail(failures, FailureCategory.LOCATOR_OUTSIDE_RANGE, str(page),
-                         f"evidence row {index} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}",
-                         row=index,
-                         fix_hint=f"Use locators within: {format_ranges(allowed_ranges)}")
+            elif validation_result.severity == "warn":
+                hint = validation_result.suggested_locator or "Verify excerpt appears at the cited locator line range"
+                fail(failures, FailureCategory.EVIDENCE_NOT_IN_LOCATOR, str(page),
+                     f"evidence row {index}: {validation_result.reason}",
+                     row=index, severity=FailureSeverity.WARNING,
+                     fix_hint=f"Suggested locator: {hint}" if validation_result.suggested_locator else hint)
+            # pass = no failure recorded
+
+            if allowed_ranges:
+                if not locator_within_ranges(start, end, allowed_ranges):
+                    # Check if within tolerance (off-by-one is common)
+                    canonical_range = locator_within_tolerance(
+                        start, end, allowed_ranges)
+                    if canonical_range:
+                        # Warn but don't fail - this is a canonicalization issue
+                        canonical = canonicalize_locator(
+                            start, end, canonical_range)
+                        fail(failures, FailureCategory.LOCATOR_OUTSIDE_RANGE, str(page),
+                             f"evidence row {index} locator {clean_locator(locator)!r} is slightly outside allowed range (within tolerance), canonical: {canonical}",
+                             row=index, severity=FailureSeverity.WARNING,
+                             fix_hint=f"Consider using canonical locator: {canonical}")
+                    else:
+                        fail(failures, FailureCategory.LOCATOR_OUTSIDE_RANGE, str(page),
+                             f"evidence row {index} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}",
+                             row=index,
+                             fix_hint=f"Use locators within: {format_ranges(allowed_ranges)}")
 
         source_target = first_markdown_target(source)
         if source_target is None:
@@ -930,10 +1008,17 @@ def check_reference_data_table_structured(
         evidence = clean_evidence_excerpt(row[evidence_index])
         locator = row[locator_index]
         if any(re.search(pattern, fact_text, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
-            fail(failures, FailureCategory.WEAK_CLAIM_LANGUAGE, str(page),
-                 f"Reference data row {row_number} uses weak generic fact language",
-                 row=row_number,
-                 fix_hint="Replace generic words with specific content")
+            severity = weak_claim_severity(fact_text)
+            if severity == "fail":
+                fail(failures, FailureCategory.WEAK_CLAIM_LANGUAGE, str(page),
+                     f"Reference data row {row_number} uses weak generic fact language without mechanism content",
+                     row=row_number,
+                     fix_hint="Replace generic words with specific mechanism content")
+            elif severity == "warn":
+                fail(failures, FailureCategory.WEAK_CLAIM_LANGUAGE, str(page),
+                     f"Reference data row {row_number} uses weak generic fact language",
+                     row=row_number, severity=FailureSeverity.WARNING,
+                     fix_hint="Consider replacing generic words with specific content")
         repeated = repeated_phrase(fact_text)
         if repeated:
             fail(failures, FailureCategory.REPEATED_PHRASE, str(page),
@@ -984,11 +1069,24 @@ def check_reference_data_table_structured(
                  f"Reference data row {row_number} evidence is not found in locator range {clean_locator(locator)!r}",
                  row=row_number,
                  fix_hint="Verify evidence appears at the cited locator line range")
-        if allowed_ranges and not locator_within_ranges(start, end, allowed_ranges):
-            fail(failures, FailureCategory.LOCATOR_OUTSIDE_RANGE, str(page),
-                 f"Reference data row {row_number} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}",
-                 row=row_number,
-                 fix_hint=f"Use locators within: {format_ranges(allowed_ranges)}")
+        if allowed_ranges:
+            if not locator_within_ranges(start, end, allowed_ranges):
+                # Check if within tolerance (off-by-one is common)
+                canonical_range = locator_within_tolerance(
+                    start, end, allowed_ranges)
+                if canonical_range:
+                    # Warn but don't fail - this is a canonicalization issue
+                    canonical = canonicalize_locator(
+                        start, end, canonical_range)
+                    fail(failures, FailureCategory.LOCATOR_OUTSIDE_RANGE, str(page),
+                         f"Reference data row {row_number} locator {clean_locator(locator)!r} is slightly outside allowed range (within tolerance), canonical: {canonical}",
+                         row=row_number, severity=FailureSeverity.WARNING,
+                         fix_hint=f"Consider using canonical locator: {canonical}")
+                else:
+                    fail(failures, FailureCategory.LOCATOR_OUTSIDE_RANGE, str(page),
+                         f"Reference data row {row_number} locator {clean_locator(locator)!r} is outside allowed source range(s) {format_ranges(allowed_ranges)}",
+                         row=row_number,
+                         fix_hint=f"Use locators within: {format_ranges(allowed_ranges)}")
         # NOTE: Lexical OVERREACH check removed for reference tables.
         # Synthesis naturally uses different vocabulary than evidence.
         # Semantic entailment should be checked by the LLM judge if needed.
@@ -1234,6 +1332,15 @@ def strip_markdown(text: str) -> str:
 
 
 def normalize_for_search(text: str) -> str:
+    """Normalize text for fuzzy matching.
+
+    Handles:
+    - Unicode normalization
+    - Unicode dashes/quotes to ASCII
+    - PDF line-break hyphenation (subprob-\\nlems -> subproblems)
+    - Parenthetical phrases (removed to handle model paraphrasing)
+    - Whitespace collapse
+    """
     replacements = {
         "\u00a0": " ",
         "\u2010": "-",
@@ -1250,6 +1357,24 @@ def normalize_for_search(text: str) -> str:
     }
     for old, new in replacements.items():
         text = text.replace(old, new)
+
+    # Join PDF line-break hyphenation: subprob-\nlems -> subproblems
+    # Also handles subprob- lems (space after hyphen)
+    text = re.sub(r"([A-Za-z])-\s*\n?\s*([a-z])", r"\1\2", text)
+
+    # Remove parenthetical phrases - model may quote without parentheticals
+    # E.g., "expression (including typing) to create" -> "expression to create"
+    text = re.sub(r'\s*\([^)]*\)\s*', ' ', text)
+
+    # Strip trailing ellipsis from truncated evidence
+    # Evidence bank truncates long excerpts with "..."
+    text = re.sub(r'\.{3,}$', '', text)
+    text = re.sub(r'\.{3,}\s*$', '', text)
+
+    # Strip trailing punctuation for flexible matching
+    # Model may change colon to period when extracting evidence
+    text = re.sub(r'[.:;,!?]+$', '', text)
+
     return " ".join(text.lower().split())
 
 

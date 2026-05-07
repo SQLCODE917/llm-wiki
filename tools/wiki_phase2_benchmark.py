@@ -655,14 +655,26 @@ def render_existing_pages(paths: list[str]) -> str:
 class EvidenceItem:
     """A single evidence snippet with an ID."""
     id: str  # e.g., "E01", "E02"
-    locator: str  # e.g., "normalized:L123"
-    text: str  # The actual evidence text
+    locator: str  # e.g., "normalized:L123-L125"
+    exact_text: str  # Full untruncated evidence text from source
+    display_text: str  # Truncated text for prompts/display
     candidate: str  # Which candidate/topic this belongs to
+    start_line: int  # Starting line number (1-indexed)
+    end_line: int  # Ending line number (1-indexed)
     # Enriched context (optional)
     context_before: str = ""  # 3 lines before the evidence
     evidence_line: str = ""  # The actual line at the locator
     context_after: str = ""  # 3 lines after the evidence
-    line_start: int = 0  # Starting line number (1-indexed)
+
+    @property
+    def text(self) -> str:
+        """Alias for display_text for backwards compatibility."""
+        return self.display_text
+
+    @property
+    def line_start(self) -> int:
+        """Alias for backwards compatibility."""
+        return self.start_line
 
 
 @dataclass
@@ -736,13 +748,12 @@ def build_evidence_bank(
 
         if matched_claims:
             # Use full evidence from extraction state (preferred)
-            for claim in matched_claims[:10]:
+            # P3: Increased evidence budget - keep full text for exact_text
+            for claim in matched_claims[:25]:  # Increased from 10 to 25
                 locator = claim.get("locator", "")
                 evidence = claim.get("evidence", "")
                 if evidence and locator:
-                    # Truncate very long evidence for readability
-                    if len(evidence) > 400:
-                        evidence = evidence[:400] + "..."
+                    # Keep full evidence - truncation happens later in display_text
                     # Normalize to always-range format
                     evidence_items.append(
                         (normalize_locator(locator), evidence))
@@ -802,20 +813,25 @@ def build_evidence_bank(
                         len(lines), line_end_idx + 1 + context_lines)
                     context_after = "\n".join(
                         lines[line_end_idx + 1:after_end])
+                else:
+                    line_end_1indexed = line_start
 
-                # Truncate for prompt display
-                display_text = text[:150] + "..." if len(text) > 150 else text
+                # P3: Increased display budget from 150 to 500 chars
+                # Truncate for prompt display only - keep exact_text intact
+                display_text = text[:500] + "..." if len(text) > 500 else text
                 sections.append(f'[{eid}] {locator} "{display_text}"')
 
                 item = EvidenceItem(
                     id=eid,
                     locator=locator,
-                    text=text,
+                    exact_text=text,  # Full untruncated text for validation
+                    display_text=display_text,  # Truncated for prompts
                     candidate=query,
+                    start_line=line_start,
+                    end_line=line_end_1indexed,
                     context_before=context_before,
                     evidence_line=evidence_line,
                     context_after=context_after,
-                    line_start=line_start,
                 )
                 items[eid] = item
                 by_locator[locator] = item

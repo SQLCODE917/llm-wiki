@@ -15,6 +15,11 @@ from typing import Any
 
 from wiki_common import content_tokens, iter_content_pages, one_line, parse_frontmatter, section
 from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, parse_locator, strip_markdown
+from wiki_evidence_validator import (
+    validate_evidence_location,
+    is_evidence_too_short,
+    should_fail_on_deterministic_flag,
+)
 
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
@@ -227,6 +232,11 @@ def reference_data_rows(
 
 
 def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> list[DeterministicFlag]:
+    """Run deterministic checks on evidence rows.
+
+    Uses shared validator to ensure consistency with wiki_check_synthesis.py.
+    Distinguishes hard failures (fabricated evidence) from soft issues (locator precision).
+    """
     flags: list[DeterministicFlag] = []
     for row in rows:
         parsed = parse_locator(row.locator)
@@ -235,14 +245,29 @@ def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> lis
                 row.row, "fail", "locator is not parseable"))
             continue
         start, end = parsed
-        if start < 1 or end > len(source_lines) or end < start:
-            flags.append(DeterministicFlag(row.row, "fail",
-                         "locator is outside normalized source"))
-            continue
-        located_text = "\n".join(source_lines[start - 1: end])
-        if normalize_for_search(row.evidence) not in normalize_for_search(located_text):
-            flags.append(DeterministicFlag(row.row, "fail",
-                         "evidence is not found in locator range"))
+
+        # Use shared evidence validator for consistent behavior
+        validation_result = validate_evidence_location(
+            row.evidence, start, end, source_lines, window_size=2
+        )
+
+        if validation_result.is_hard_failure:
+            # Hard failures (evidence fabricated, locator invalid)
+            flags.append(DeterministicFlag(
+                row.row, "fail", validation_result.reason))
+        elif validation_result.severity == "warn":
+            # Soft issues (locator precision) - warn, don't fail
+            reason = validation_result.reason
+            if validation_result.suggested_locator:
+                reason += f" (suggested: {validation_result.suggested_locator})"
+            flags.append(DeterministicFlag(row.row, "warn", reason))
+        # pass = no flag
+
+        # Check evidence too short (allows code snippets)
+        if is_evidence_too_short(row.evidence):
+            flags.append(DeterministicFlag(
+                row.row, "warn", "evidence is short (prose)"))
+
         if len(re.findall(r"[A-Za-z0-9']+", row.claim)) < 5:
             flags.append(DeterministicFlag(row.row, "warn", "claim is short"))
         if normalize_for_search(row.claim) == normalize_for_search(row.evidence):
@@ -871,11 +896,19 @@ def has_issues(
 
     The pattern says the human curates and guides; minor embellishments
     are synthesis choices, not contradictions.
+
+    Hard failures (fabricated evidence, invalid locator) override LLM verdicts.
+    Soft issues (locator precision, off-by-one) do not override "supported" verdicts.
     """
     if judge_error:
         return True
-    if any(flag.severity == "fail" for flag in flags):
-        return True
+
+    # Only fail on hard evidence integrity issues, not soft locator precision
+    # This prevents overriding LLM "supported" verdicts for repairable locator defects
+    for flag in flags:
+        if flag.severity == "fail" and should_fail_on_deterministic_flag(flag.reason):
+            return True
+
     if not judge_result:
         return False
     if judge_result.get("page_verdict") not in ("useful", None):

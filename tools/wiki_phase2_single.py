@@ -43,6 +43,42 @@ from wiki_deterministic_repair import repair_page as repair_page_schema
 from wiki_check_synthesis import check_synthesis_structured
 
 
+def quarantine_failed_page(
+    worktree: Path,
+    candidate_path: str,
+    slug: str,
+    validation_log: Path | None = None,
+) -> Path | None:
+    """Copy failed page to wiki/.failed/<slug>/ for post-mortem analysis.
+
+    P4: Failed pages are quarantined instead of discarded, preserving
+    the synthesis attempt for debugging and potential manual rescue.
+
+    Returns the quarantine path if successful, None otherwise.
+    """
+    # Resolve the page path relative to worktree
+    rel_path = source_relative_to_repo(candidate_path)
+    page_path = worktree / rel_path
+
+    if not page_path.exists():
+        return None
+
+    # Create quarantine directory
+    quarantine_dir = worktree.parent.parent / "wiki" / ".failed" / slug
+    quarantine_dir.mkdir(parents=True, exist_ok=True)
+
+    # Copy the failed page
+    quarantine_path = quarantine_dir / page_path.name
+    shutil.copy2(page_path, quarantine_path)
+
+    # Also copy validation log if available
+    if validation_log and validation_log.exists():
+        log_dest = quarantine_dir / f"{page_path.stem}.validation.log"
+        shutil.copy2(validation_log, log_dest)
+
+    return quarantine_path
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Run one atomic Phase 2 synthesis task in a temp worktree.")
@@ -160,7 +196,18 @@ def main() -> int:
         print_result(result)
         if args.report:
             write_report(Path(args.report), args.slug, candidate_path, result)
-        return 0 if result["validation_returncode"] == 0 and result["judge_returncode"] == 0 else 1
+
+        # P4: Quarantine failed pages before cleanup
+        success = result["validation_returncode"] == 0 and result["judge_returncode"] == 0
+        if not success and not args.keep:
+            validation_log = worktree / "validation.log"
+            quarantine_path = quarantine_failed_page(
+                worktree, candidate_path, args.slug, validation_log
+            )
+            if quarantine_path:
+                print(f"  Quarantined failed page: {quarantine_path}")
+
+        return 0 if success else 1
     finally:
         if not args.keep:
             shutil.rmtree(worktree, ignore_errors=True)

@@ -30,6 +30,23 @@ class EvidenceExpansion:
     evidence: str
 
 
+def make_table_safe(text: str, max_len: int = 200) -> str:
+    """Make text safe for markdown table cells.
+
+    - Collapses all whitespace (including newlines) to single spaces
+    - Escapes pipe characters
+    - Truncates long text with ellipsis
+    """
+    # Collapse all whitespace to single spaces
+    safe = " ".join(text.split())
+    # Escape pipe characters
+    safe = safe.replace("|", "\\|")
+    # Truncate if too long
+    if len(safe) > max_len:
+        safe = safe[:max_len - 3].rsplit(" ", 1)[0] + "..."
+    return safe
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fill evidence cells from locators (deterministic)")
@@ -144,8 +161,8 @@ def expand_evidence_ids(
 
                     if item:
                         new_cols = [
-                            claim,
-                            f'"{item.text}"',
+                            make_table_safe(claim),
+                            f'"{make_table_safe(item.text)}"',
                             f"`{item.locator}`",
                             f"[Source](../sources/{slug}.md)"
                         ]
@@ -269,7 +286,8 @@ def fill_evidence_in_page(
                 evidence = get_evidence_for_locator(
                     locator, source_lines, max_chars)
                 if evidence:
-                    new_cols = [claim, f'"{evidence}"', locator, source]
+                    new_cols = [make_table_safe(
+                        claim), f'"{make_table_safe(evidence)}"', locator, source]
                     result_lines.append(format_table_row(new_cols))
                     changes.append({
                         "row": row_num,
@@ -289,7 +307,8 @@ def fill_evidence_in_page(
                 evidence = get_evidence_for_locator(
                     locator, source_lines, max_chars)
                 if evidence:
-                    new_cols = [item, fact, f'"{evidence}"', locator, source]
+                    new_cols = [make_table_safe(item), make_table_safe(
+                        fact), f'"{make_table_safe(evidence)}"', locator, source]
                     result_lines.append(format_table_row(new_cols))
                     changes.append({
                         "row": row_num,
@@ -309,7 +328,7 @@ def fill_evidence_in_page(
                     evidence = get_evidence_for_locator(
                         locator, source_lines, max_chars)
                     if evidence:
-                        cols[1] = f'"{evidence}"'
+                        cols[1] = f'"{make_table_safe(evidence)}"'
                         result_lines.append(format_table_row(cols))
                         changes.append({
                             "row": row_num,

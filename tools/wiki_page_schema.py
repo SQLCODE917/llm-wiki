@@ -392,6 +392,23 @@ def render_frontmatter(fm: Frontmatter) -> str:
     return "\n".join(lines)
 
 
+def make_table_safe(text: str, max_len: int = 200) -> str:
+    """Make text safe for markdown table cells.
+
+    - Collapses all whitespace (including newlines) to single spaces
+    - Escapes pipe characters
+    - Truncates long text with ellipsis
+    """
+    # Collapse all whitespace to single spaces
+    safe = " ".join(text.split())
+    # Escape pipe characters
+    safe = safe.replace("|", "\\|")
+    # Truncate if too long
+    if len(safe) > max_len:
+        safe = safe[:max_len - 3].rsplit(" ", 1)[0] + "..."
+    return safe
+
+
 def render_claims_table(
     claims: list[Claim],
     evidence_bank: "EvidenceBankResult | None",
@@ -411,7 +428,7 @@ def render_claims_table(
     source_cell = f"[Source](../sources/{slug}.md)" if slug else ""
 
     for claim in claims:
-        claim_text = claim.claim.replace("|", "\\|")  # Escape pipes
+        claim_text = make_table_safe(claim.claim)
 
         if not claim.evidence_ids:
             # Claim without evidence
@@ -423,8 +440,7 @@ def render_claims_table(
             eid_upper = eid.upper()
             if evidence_bank and eid_upper in evidence_bank.items:
                 item = evidence_bank.items[eid_upper]
-                evidence_text = item.text.replace("|", "\\|")
-                evidence_cell = f'"{evidence_text}"'
+                evidence_cell = f'"{make_table_safe(item.text)}"'
                 locator_cell = f"`{item.locator}`"
             else:
                 evidence_cell = f"[{eid}: not found]"
