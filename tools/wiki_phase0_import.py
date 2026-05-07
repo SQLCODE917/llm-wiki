@@ -112,6 +112,8 @@ def main() -> int:
                 print(
                     f"FAIL: PDF extraction produced no markdown under {normalized_dir}", file=sys.stderr)
                 return 1
+            # Apply PDF normalization cleanup
+            post_process_normalized_dir(normalized_dir)
         else:
             raise AssertionError(f"unhandled source type {source_type}")
     except Phase0Error as error:
@@ -345,6 +347,66 @@ def clean_extracted_text(text: str) -> str:
     result = re.sub(r'\n{3,}', '\n\n', result)
 
     return result
+
+
+def normalize_pdf_markdown(text: str) -> str:
+    """Normalize PDF-extracted markdown to improve evidence validation.
+
+    This is a Phase 0 cleanup that makes the normalized source easier to
+    work with during extraction and synthesis. It does NOT replace the
+    canonicalization done during validation, but it reduces common artifacts.
+
+    Safe transformations:
+    - Join soft-hyphenated line breaks: left-\\nhand -> left-hand
+    - Collapse excessive blank lines
+    - Normalize dash variants to ASCII hyphen
+
+    Unsafe/avoided transformations (done only during validation):
+    - Removing page break markers (<!-- page N -->)
+    - Removing page headers/footers
+    - Joining all line wraps (destroys paragraph structure)
+    """
+    # Normalize line endings
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    # Join soft-hyphenated line wraps:
+    # left-\nhand -> left-hand (preserve the hyphen in compounds)
+    # This makes evidence excerpts more likely to match
+    text = re.sub(r"(\w)-\n(\w)", r"\1-\2", text)
+
+    # Normalize Unicode dash variants to ASCII hyphen
+    dash_chars = [
+        "\u2010",  # Hyphen
+        "\u2011",  # Non-breaking hyphen
+        "\u2012",  # Figure dash
+        "\u2013",  # En dash
+        "\u2014",  # Em dash
+        "\u2015",  # Horizontal bar
+        "‐",       # Another hyphen variant
+    ]
+    for dash in dash_chars:
+        text = text.replace(dash, "-")
+
+    # Normalize Unicode quotes
+    text = text.replace("\u2018", "'")  # Left single quote
+    text = text.replace("\u2019", "'")  # Right single quote
+    text = text.replace("\u201c", '"')  # Left double quote
+    text = text.replace("\u201d", '"')  # Right double quote
+
+    # Collapse excessive blank lines
+    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    return text
+
+
+def post_process_normalized_dir(normalized_dir: Path) -> None:
+    """Apply normalization to all markdown files in the normalized directory."""
+    for md_file in normalized_dir.rglob("*.md"):
+        original = md_file.read_text()
+        normalized = normalize_pdf_markdown(original)
+        if normalized != original:
+            md_file.write_text(normalized)
+            print(f"  normalized: {md_file.name}")
 
 
 if __name__ == "__main__":

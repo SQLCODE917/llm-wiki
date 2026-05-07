@@ -1,50 +1,49 @@
 ---
 title: Objects
 type: concept
-tags: [javascript, data-structures, dictionaries]
+tags: [javascript, data-structures, literals]
 status: draft
 last_updated: 2026-05-07
 sources:
   - ../sources/js-allonge.md
 source_ranges:
-  - js-allonge:normalized:L4255-L4258
-  - js-allonge:normalized:L4268-L4270
+  - js-allonge:normalized:L4258-L4258
+  - js-allonge:normalized:L4267-L4270
   - js-allonge:normalized:L4274-L4276
-  - js-allonge:normalized:L4299-L4300
-  - js-allonge:normalized:L4391-L4401
-  - js-allonge:normalized:L4407-L4408
-  - js-allonge:normalized:L4428-L4429
+  - js-allonge:normalized:L4302-L4305
+  - js-allonge:normalized:L4306-L4311
+  - js-allonge:normalized:L4570-L4576
+  - js-allonge:normalized:L6484-L6484
+  - js-allonge:normalized:L9337-L9388
 ---
 
 # Objects
 
 ## Summary
 
-In JavaScript, objects serve as the primary mechanism for organizing and storing data. They function as dictionaries mapping string keys to values, allowing for flexible data structures that can hold both primitive values and references to other objects. Objects support dynamic property addition and retrieval, making them central to JavaScript's data manipulation capabilities.
+In JavaScript, objects are collections of key-value pairs used to store and organize data. They support various ways of defining properties, accessing values, and can contain nested structures including functions.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 | --- | --- | --- | --- |
-| JavaScript uses objects as dictionaries to map string keys to values, providing a flexible way to store and organize data. | "JavaScript has dictionaries, and it calls them "objects." The word "object" is loaded in programming circles, due to the widespread use of the term "object-oriented programming" that was coined by..." | `normalized:L4255-L4258` | [Source](../sources/js-allonge.md) |
-| Objects in JavaScript allow for dynamic access to properties using bracket notation or dot notation, enabling versatile data retrieval. | "{ year: 2012, month: 6, day: 14 }" | `normalized:L4268-L4270` | [Source](../sources/js-allonge.md) |
-| Objects in JavaScript allow for dynamic access to properties using bracket notation or dot notation, enabling versatile data retrieval. | "{ year: 2012, month: 6, day: 14 }['day']" | `normalized:L4274-L4276` | [Source](../sources/js-allonge.md) |
-| Objects in JavaScript allow for dynamic access to properties using bracket notation or dot notation, enabling versatile data retrieval. | "date['day'] === date.day" | `normalized:L4299-L4300` | [Source](../sources/js-allonge.md) |
-| JavaScript objects support nested structures and can contain complex data including arrays and other objects, facilitating rich data modeling. | "const user = { name: { first: "Reginald", last: "Braithwaite" }, occupation: { title: "Author", responsibilities: [ "JavaScript Allongé", "JavaScript Spessore", "CoffeeScript Ristretto" ] } };" | `normalized:L4391-L4401` | [Source](../sources/js-allonge.md) |
-| JavaScript objects support nested structures and can contain complex data including arrays and other objects, facilitating rich data modeling. | "const {name: { first: given, last: surname}, occupation: { title: title } } = user;" | `normalized:L4407-L4408` | [Source](../sources/js-allonge.md) |
-| JavaScript objects support nested structures and can contain complex data including arrays and other objects, facilitating rich data modeling. | "const description = ({name: { first }, occupation: { title } }) => `${first} is a ${title}`;" | `normalized:L4428-L4429` | [Source](../sources/js-allonge.md) |
+| An object in JavaScript is fundamentally a mapping from string keys to values, enabling flexible data organization. | "In JavaScript, an object is a map from string keys to values." | `normalized:L4258-L4258` | [Source](../sources/js-allonge.md) |
+| JavaScript provides a concise literal syntax for creating objects, allowing direct assignment of key-value pairs without explicit constructor calls. | "JavaScript has a literal syntax for creating objects. This object maps values to the keys year, month, and day: { year: 2012, month: 6, day: 14 }" | `normalized:L4267-L4270` | [Source](../sources/js-allonge.md) |
+| Properties within objects can be accessed using bracket notation, which supports both alphanumeric and non-alphanumeric key names when quoted. | "Objects use [] to access the values by name, using a string: { year: 2012, month: 6, day: 14 }['day']" | `normalized:L4274-L4276` | [Source](../sources/js-allonge.md) |
+| Object properties can hold any type of value, including functions, making them suitable for defining methods and encapsulating behavior. | "All containers can contain any value, including functions or other containers, like a fat arrow function: const Mathematics = { abs: (a) => a < 0 ? -a : a };" | `normalized:L4306-L4311` | [Source](../sources/js-allonge.md) |
+| Objects support dynamic property assignment and modification, allowing runtime changes to their structure. | "name.middleName = 'Austin' name //=> { firstName: 'Leonard', lastName: 'Braithwaite', middleName: 'Austin' }" | `normalized:L4570-L4576` | [Source](../sources/js-allonge.md) |
+| The Object.assign method facilitates copying properties from one object to another, useful for merging configurations or extending functionality. | "Object.assign(inventory, shipment)" | `normalized:L6484-L6484` | [Source](../sources/js-allonge.md) |
+| JavaScript objects can utilize computed property names via bracket expressions, enabling keys derived from expressions or variables. | "{ ["p" + "i"]: 3.14159265 } //=> {"pi":3.14159265}" | `normalized:L4302-L4305` | [Source](../sources/js-allonge.md) |
+| Objects can serve as maps where keys are not limited to strings but can be any expression, provided they are converted to strings. | "We can use a POJO to make a map from positions to moves. We'll use the [] notation for keys, it allows us to use any expression as a key, and JavaScript will convert it to a string. So if we..." | `normalized:L9337-L9388` | [Source](../sources/js-allonge.md) |
 
 ## Why it matters
 
-Objects are fundamental to JavaScript's design and are essential for structuring data and implementing behavior. Understanding how to create, access, and manipulate objects is crucial for writing effective JavaScript code. Their flexibility allows developers to model real-world entities and relationships, while features like destructuring and methods enable powerful patterns for data handling.
+Objects are fundamental to JavaScript's data modeling capabilities. They allow developers to represent complex real-world entities and relationships, encapsulate behavior through methods, and provide flexible storage mechanisms for dynamic applications.
 
 ## Related pages
 
-- [Data Types](../concepts/data-types.md)
-- [Functional Programming](../concepts/functional-programming.md)
-- [Functions](../concepts/functions.md)
 - [Iterators](../concepts/iterators.md)
 
 ## Source pages
 
-- [Js Allonge](../sources/js-allonge.md)
+- [JavaScript Allongé](../sources/js-allonge.md)

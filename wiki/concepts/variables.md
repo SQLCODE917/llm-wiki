@@ -1,5 +1,5 @@
 ---
-title: Variables in JavaScript
+title: Variables
 type: concept
 tags: [javascript, scope, declaration]
 status: draft
@@ -8,33 +8,37 @@ sources:
   - ../sources/js-allonge.md
 source_ranges:
   - js-allonge:normalized:L4931-L4931
+  - js-allonge:normalized:L4940-L4940
   - js-allonge:normalized:L4941-L4942
   - js-allonge:normalized:L5092-L5092
 ---
 
-# Variables in JavaScript
+# Variables
 
 ## Summary
 
-Variables in JavaScript are containers for storing data values. The behavior of variables differs based on how they are declared, particularly with respect to scoping and hoisting.
+Variables in JavaScript are containers for storing data values, with distinct scoping rules depending on how they are declared. The 'var' keyword has function-level scope and exhibits hoisting behavior, unlike 'let' and 'const' which have block-level scope.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 | --- | --- | --- | --- |
-| The var keyword creates variables that are function-scoped rather than block-scoped, meaning they are accessible throughout the entire function regardless of where they are declared. | "First, var is not block scoped, it's function scoped, just like function declarations:" | `normalized:L4931-L4931` | [Source](../sources/js-allonge.md) |
-| All variable declarations made with var are effectively moved to the top of their containing function during the compilation phase, a behavior known as hoisting. | "All var declarations behave as if they were hoisted to the top of the function, a little like function declarations." | `normalized:L4941-L4942` | [Source](../sources/js-allonge.md) |
-| Using let instead of var can prevent certain types of errors related to variable scope, particularly in scenarios involving loops and conditional blocks where var might cause unexpected behavior. | "The error wouldn't exist at all if we'd used let in the first place" | `normalized:L5092-L5092` | [Source](../sources/js-allonge.md) |
+| The var keyword creates variables with function-level scope rather than block-level scope, meaning they are accessible throughout the entire function regardless of where they are declared. | "var is not block scoped, it's function scoped, just like function declarations:" | `normalized:L4931-L4931` | [Source](../sources/js-allonge.md) |
+| Multiple declarations of the same variable name within the same function do not result in an error, and inner declarations do not override outer ones due to the hoisting behavior of var. | "Declaring age twice does not cause an error(!), and the inner declaration does not shadow the outer declaration." | `normalized:L4940-L4940` | [Source](../sources/js-allonge.md) |
+| Multiple declarations of the same variable name within the same function do not result in an error, and inner declarations do not override outer ones due to the hoisting behavior of var. | "All var declarations behave as if they were hoisted to the top of the function, a little like function declarations." | `normalized:L4941-L4942` | [Source](../sources/js-allonge.md) |
+| Using let instead of var prevents certain types of errors related to variable redeclaration and scope, as let provides block-level scoping which is more predictable. | "The error wouldn't exist at all if we'd used let in the first place" | `normalized:L5092-L5092` | [Source](../sources/js-allonge.md) |
 
 ## Why it matters
 
-Understanding variable scoping and hoisting is crucial for writing predictable JavaScript code. Misunderstanding these concepts can lead to unexpected behavior and bugs, especially when using 'var' declarations.
+Understanding variable scoping and hoisting is crucial for avoiding unexpected behavior in JavaScript programs. Misunderstanding the scope of 'var' can lead to bugs that are difficult to trace, especially when dealing with nested functions and loops. Using 'let' and 'const' instead can help prevent such issues due to their block-level scoping.
 
 ## Related pages
 
 - [Closures](../concepts/closures.md)
-- [Data Types](../concepts/data-types.md)
-- [Functions](../concepts/functions.md)
+- [Functional Programming](../concepts/functional-programming.md)
+- [Iterators](../concepts/iterators.md)
+- [Objects](../concepts/objects.md)
+- [Recursion](../concepts/recursion.md)
 
 ## Source pages
 

@@ -310,33 +310,90 @@ def quarantine_failed_page(
     candidate_path: str,
     slug: str,
     validation_log: Path | None = None,
+    log_paths: list[Path] | None = None,
+    judge_report_paths: list[Path] | None = None,
+    evidence_bank: str | None = None,
 ) -> Path | None:
-    """Copy failed page to wiki/.failed/<slug>/ for post-mortem analysis.
+    """Copy failed page and all synthesis artifacts for post-mortem analysis.
 
     P4: Failed pages are quarantined instead of discarded, preserving
     the synthesis attempt for debugging and potential manual rescue.
+
+    Artifacts preserved:
+    - The rendered page itself
+    - Validation log
+    - All prompts and responses (from .tmp/model-runs/)
+    - Judge reports
+    - Evidence bank used
 
     Returns the quarantine path if successful, None otherwise.
     """
     # Resolve the page path relative to worktree
     rel_path = source_relative_to_repo(candidate_path)
     page_path = worktree / rel_path
+    page_stem = Path(candidate_path).stem
 
-    if not page_path.exists():
-        return None
-
-    # Create quarantine directory
-    quarantine_dir = worktree.parent.parent / "wiki" / ".failed" / slug
+    # Create quarantine directory in repo's .tmp (not worktree)
+    # This survives both worktree cleanup and uningest
+    quarantine_dir = Path(".tmp") / "synthesis-failures" / slug / page_stem
     quarantine_dir.mkdir(parents=True, exist_ok=True)
 
-    # Copy the failed page
-    quarantine_path = quarantine_dir / page_path.name
-    shutil.copy2(page_path, quarantine_path)
+    # Copy the failed page if it exists
+    quarantine_path = None
+    if page_path.exists():
+        quarantine_path = quarantine_dir / page_path.name
+        shutil.copy2(page_path, quarantine_path)
 
-    # Also copy validation log if available
+    # Copy validation log if available
     if validation_log and validation_log.exists():
-        log_dest = quarantine_dir / f"{page_path.stem}.validation.log"
+        log_dest = quarantine_dir / "validation.log"
         shutil.copy2(validation_log, log_dest)
+
+    # Copy all model run logs (prompts, outputs, metadata)
+    model_runs_dir = worktree / ".tmp" / "model-runs"
+    if model_runs_dir.exists():
+        for item in model_runs_dir.iterdir():
+            if item.is_file():
+                shutil.copy2(item, quarantine_dir / item.name)
+
+    # Copy additional log paths that may be outside .tmp/model-runs/
+    if log_paths:
+        for log_path in log_paths:
+            if log_path.exists() and log_path.is_file():
+                dest = quarantine_dir / log_path.name
+                if not dest.exists():  # Avoid overwriting
+                    shutil.copy2(log_path, dest)
+
+    # Copy judge reports
+    if judge_report_paths:
+        for report_path in judge_report_paths:
+            if report_path.exists() and report_path.is_file():
+                shutil.copy2(report_path, quarantine_dir / report_path.name)
+
+    # Copy phase2-validation.log from worktree root
+    phase2_val_log = worktree / "phase2-validation.log"
+    if phase2_val_log.exists():
+        shutil.copy2(phase2_val_log, quarantine_dir / "phase2-validation.log")
+
+    # Save the evidence bank
+    if evidence_bank:
+        (quarantine_dir / "evidence-bank.md").write_text(evidence_bank)
+
+    # Write a summary file with metadata
+    summary = [
+        f"# Synthesis Failure: {page_stem}",
+        f"",
+        f"- Slug: {slug}",
+        f"- Candidate: {candidate_path}",
+        f"- Worktree: {worktree}",
+        f"- Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}",
+        f"",
+        f"## Files Preserved",
+        f"",
+    ]
+    for item in sorted(quarantine_dir.iterdir()):
+        summary.append(f"- {item.name}")
+    (quarantine_dir / "FAILURE_SUMMARY.md").write_text("\n".join(summary) + "\n")
 
     return quarantine_path
 
@@ -461,13 +518,17 @@ def main() -> int:
 
         # P4: Quarantine failed pages before cleanup
         success = result["validation_returncode"] == 0 and result["judge_returncode"] == 0
-        if not success and not args.keep:
+        if not success:
             validation_log = worktree / "validation.log"
             quarantine_path = quarantine_failed_page(
-                worktree, candidate_path, args.slug, validation_log
+                worktree, candidate_path, args.slug, validation_log,
+                log_paths=result.get("log_paths", []),
+                judge_report_paths=result.get("judge_report_paths", []),
+                evidence_bank=result.get("evidence_bank"),
             )
             if quarantine_path:
-                print(f"  Quarantined failed page: {quarantine_path}")
+                print(
+                    f"  Quarantined failed page to: .tmp/synthesis-failures/{args.slug}/{Path(candidate_path).stem}/")
 
         return 0 if success else 1
     finally:
@@ -1499,6 +1560,7 @@ def run_single_candidate(
         "changed_files": phase2_changed_files(worktree),
         "log_paths": log_paths,
         "judge_report_paths": judge_report_paths,
+        "evidence_bank": evidence_bank.prompt_text if isinstance(evidence_bank, EvidenceBankResult) else evidence_bank,
     }
 
 

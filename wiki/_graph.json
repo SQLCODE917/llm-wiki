@@ -177,13 +177,14 @@
     "wiki:concepts/closures": {
       "type": "concept",
       "path": "wiki/concepts/closures.md",
-      "description": "A closure occurs when a function 'remembers' the variables from its outer (enclosing) scope even after the outer function has finished executing. This mechanism enables functions\u2026",
+      "description": "A closure occurs when a function 'remembers' and has access to variables from its outer lexical scope, even after the outer function has finished executing. This mechanism enables\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
         "wiki:concepts/functional-programming",
-        "wiki:concepts/functions",
+        "wiki:concepts/iterators",
+        "wiki:concepts/objects",
         "wiki:sources/js-allonge"
       ]
     },
@@ -198,72 +199,23 @@
         "wiki:sources/compound-interest"
       ]
     },
-    "wiki:concepts/data-types": {
-      "type": "concept",
-      "path": "wiki/concepts/data-types.md",
-      "description": "JavaScript data types define how values are stored and manipulated. Primitive types include strings, numbers, and booleans, while objects and arrays are reference types. Understan\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/es6-features": {
-      "type": "concept",
-      "path": "wiki/concepts/es6-features.md",
-      "description": "ECMAScript 2015 (ES6) introduced significant enhancements to JavaScript, including new syntax, built-in functionalities, and entirely new language features. These improvements aim\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
     "wiki:concepts/functional-programming": {
       "type": "concept",
       "path": "wiki/concepts/functional-programming.md",
-      "description": "Functional programming is a paradigm that emphasizes the use of pure functions and immutable data. It focuses on composing functions to build complex operations and avoids changin\u2026",
+      "description": "Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data. It focuses on composing functions and treating functions as first-cl\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
-        "wiki:concepts/data-types",
-        "wiki:concepts/functions",
         "wiki:concepts/iterators",
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/functions": {
-      "type": "concept",
-      "path": "wiki/concepts/functions.md",
-      "description": "Functions are fundamental constructs in JavaScript that serve as first-class citizens, enabling powerful programming paradigms such as functional programming. They encapsulate reu\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/generators": {
-      "type": "concept",
-      "path": "wiki/concepts/generators.md",
-      "description": "Generators are a special type of function in JavaScript that can be paused and resumed during execution, allowing for the creation of iterators with a clean and readable syntax.",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:concepts/closures",
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/functions",
-        "wiki:concepts/iterators",
+        "wiki:concepts/objects",
         "wiki:sources/js-allonge"
       ]
     },
     "wiki:concepts/iterators": {
       "type": "concept",
       "path": "wiki/concepts/iterators.md",
-      "description": "An iterator in JavaScript is a stateful object that produces a sequence of values on demand. It typically provides a function that, when called repeatedly, returns the next value\u2026",
+      "description": "Iterators are functions that produce a sequence of values, either by traversing existing data structures or generating new values on demand. They maintain internal state to track\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -274,14 +226,11 @@
     "wiki:concepts/objects": {
       "type": "concept",
       "path": "wiki/concepts/objects.md",
-      "description": "In JavaScript, objects serve as the primary mechanism for organizing and storing data. They function as dictionaries mapping string keys to values, allowing for flexible data stru\u2026",
+      "description": "In JavaScript, objects are collections of key-value pairs used to store and organize data. They support various ways of defining properties, accessing values, and can contain nest\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
-        "wiki:concepts/data-types",
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/functions",
         "wiki:concepts/iterators",
         "wiki:sources/js-allonge"
       ]
@@ -289,30 +238,27 @@
     "wiki:concepts/recursion": {
       "type": "concept",
       "path": "wiki/concepts/recursion.md",
-      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for processing data structures like lists and trees, and can be op\u2026",
+      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is foundational in computer science and functional programming, often used to process dat\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
-        "wiki:concepts/data-types",
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/functions",
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
         "wiki:sources/js-allonge"
       ]
     },
     "wiki:concepts/variables": {
       "type": "concept",
       "path": "wiki/concepts/variables.md",
-      "description": "Variables in JavaScript are containers for storing data values. The behavior of variables differs based on how they are declared, particularly with respect to scoping and hoisting.",
+      "description": "Variables in JavaScript are containers for storing data values, with distinct scoping rules depending on how they are declared. The 'var' keyword has function-level scope and exhi\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
         "wiki:concepts/closures",
-        "wiki:concepts/data-types",
-        "wiki:concepts/functions",
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/iterators",
+        "wiki:concepts/objects",
+        "wiki:concepts/recursion",
         "wiki:sources/js-allonge"
       ]
     },
@@ -410,11 +356,7 @@
       ],
       "depends_on": [
         "wiki:concepts/closures",
-        "wiki:concepts/data-types",
-        "wiki:concepts/es6-features",
         "wiki:concepts/functional-programming",
-        "wiki:concepts/functions",
-        "wiki:concepts/generators",
         "wiki:concepts/iterators",
         "wiki:concepts/objects",
         "wiki:concepts/recursion",

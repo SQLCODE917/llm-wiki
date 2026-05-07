@@ -24,13 +24,22 @@ HARD_FAIL_REASONS = frozenset({
 
 
 EvidenceLocationResult = Literal[
-    "exact_match",        # Evidence found exactly in locator span
-    # Evidence found after normalization (hyphenation, whitespace)
-    "normalized_match",
-    "prefix_match",       # Evidence prefix found in locator span
-    "window_match",       # Evidence found within ±N lines of locator
-    "source_match",       # Evidence found elsewhere in source (wrong locator)
-    "not_found",          # Evidence not found anywhere in source
+    "exact_match",             # Evidence found byte-exact in locator span
+    "canonicalized_local",     # Evidence found after canonicalization in locator span
+    "canonicalized_window",    # Evidence found after canonicalization near locator (±N lines)
+    "canonicalized_global",    # Evidence found after canonicalization elsewhere in source
+    "prefix_match",            # Evidence prefix found in locator span
+    "window_match",            # Evidence found within ±N lines of locator (deprecated, use canonicalized_window)
+    "source_match",            # Evidence found elsewhere in source (deprecated, use canonicalized_global)
+    "not_found",               # Evidence not found anywhere in source
+]
+
+
+MatchConfidence = Literal[
+    "exact",                   # Byte-exact match
+    "canonicalized-local",     # Canonicalized match at or near locator
+    "canonicalized-global",    # Canonicalized match elsewhere in source
+    "none",                    # No match found
 ]
 
 
@@ -40,6 +49,7 @@ class EvidenceValidationResult:
     result: EvidenceLocationResult
     severity: Literal["pass", "warn", "fail"]
     reason: str
+    confidence: MatchConfidence = "none"
     suggested_locator: str | None = None
     is_hard_failure: bool = False
 
@@ -83,16 +93,55 @@ def looks_like_code(text: str) -> bool:
     return any(re.search(p, stripped) for p in code_signals)
 
 
-def normalize_for_search(text: str) -> str:
-    """Normalize text for fuzzy matching.
+def canonicalize_for_evidence_match(text: str) -> str:
+    """Canonicalize text for evidence validation.
 
-    Handles:
-    - Unicode normalization (dashes, quotes)
-    - PDF line-break hyphenation (subprob-\\nlems -> subproblems)
-    - Parenthetical phrases (removed to handle model paraphrasing)
-    - Whitespace collapse
-    - Trailing ellipsis/punctuation removal
+    This aggressive normalization handles PDF/Markdown extraction artifacts:
+    - Page break markers (---, <!-- page N -->)
+    - Hyphenated line wraps from column layouts
+    - Inconsistent bullets and dashes
+    - Whitespace and line wrap variations
+
+    Intended only for validator comparison, not for user-facing text.
     """
+    # Normalize line endings first
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    # Remove PDF page break artifacts:
+    # ---
+    # <!-- page 106 -->
+    # Optional nearby isolated headers/page numbers
+    text = re.sub(
+        r"\n---\n\s*<!--\s*page\s+\d+\s*-->\s*\n",
+        "\n",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    # Remove standalone HTML page comments
+    text = re.sub(
+        r"\n\s*<!--\s*page\s+\d+\s*-->\s*\n",
+        "\n",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    # Remove Markdown horizontal rules used as page separators
+    text = re.sub(r"\n\s*---\s*\n", "\n", text)
+
+    # Remove isolated page numbers/headers often left after page breaks
+    # Pattern 1: "Chapter Title\nNN" or "Chapter: Subtitle\nNN"
+    text = re.sub(r"\n[A-Z][A-Za-z :'-]{5,50}\n\d{1,4}\n", "\n", text)
+    # Pattern 2: "NN\nChapter Title"
+    text = re.sub(r"\n\d{1,4}\n(?=[A-Z])", "\n", text)
+    # Pattern 3: "Chapter Title\niii" (roman numerals)
+    text = re.sub(r"\n[A-Z][A-Za-z :'-]{5,50}\n[ivxlcdm]+\n", "\n", text, flags=re.IGNORECASE)
+    # Pattern 4: Isolated roman numerals
+    text = re.sub(r"\n[ivxlcdm]+\n", "\n", text, flags=re.IGNORECASE)
+    # Pattern 5: Short all-caps headers like "CHAPTER II"
+    text = re.sub(r"\n[A-Z ]{3,30}\n", "\n", text)
+
+    # Unicode normalization
     replacements = {
         "\u00a0": " ",   # Non-breaking space
         "\u2010": "-",   # Hyphen
@@ -110,12 +159,62 @@ def normalize_for_search(text: str) -> str:
     for old, new in replacements.items():
         text = text.replace(old, new)
 
-    # Un-escape Markdown pipes (model escapes them for table safety)
-    text = text.replace(r'\|', '|')
+    # Normalize ASCII dash variants that marker might emit
+    text = text.replace("‐", "-")
 
-    # Join PDF line-break hyphenation: subprob-\nlems -> subproblems
-    # Also handles subprob- lems (space after hyphen)
-    text = re.sub(r"([A-Za-z])-\s*\n?\s*([a-z])", r"\1\2", text)
+    # Un-escape Markdown table escapes
+    text = text.replace(r'\|', '|')
+    text = text.replace(r'\"', '"')
+    text = text.replace(r"\'", "'")
+
+    # Remove enclosing quotes around evidence text (model may quote evidence)
+    text = text.strip()
+    if (text.startswith('"') and text.endswith('"')) or \
+       (text.startswith("'") and text.endswith("'")):
+        text = text[1:-1]
+
+    # Strip trailing ellipsis from truncated evidence (before joining lines)
+    text = re.sub(r'\.{2,}\s*$', '', text)
+    text = re.sub(r'…\s*$', '', text)  # Unicode ellipsis
+
+    # Join PDF hyphenated line wraps:
+    # left-\nhand -> left-hand (preserve visible hyphen for readability)
+    # This handles the common case of word-\nword
+    text = re.sub(r"(?<=\w)-\n(?=\w)", "-", text)
+
+    # Join ordinary wrapped prose lines (single newline -> space)
+    # but preserve paragraph breaks (double newline)
+    text = re.sub(r"(?<!\n)\n(?!\n)", " ", text)
+
+    # Collapse all whitespace to single spaces
+    text = re.sub(r"\s+", " ", text)
+
+    # Normalize bullet variants
+    text = text.replace("●", "•").replace("* ", "• ")
+
+    # Remove intra-word hyphens for compound word matching:
+    # left-hand and lefthand should both match
+    text = re.sub(r"(?<=\w)-(?=\w)", "", text)
+
+    return text.strip().lower()
+
+
+def normalize_for_search(text: str) -> str:
+    """Normalize text for fuzzy matching.
+
+    Handles:
+    - Unicode normalization (dashes, quotes)
+    - PDF line-break hyphenation (subprob-\\nlems -> subproblems)
+    - Page break markers
+    - Parenthetical phrases (removed to handle model paraphrasing)
+    - Whitespace collapse
+    - Trailing ellipsis/punctuation removal
+
+    This function now uses canonicalize_for_evidence_match as its base
+    and adds additional normalization for search flexibility.
+    """
+    # Start with canonical form
+    text = canonicalize_for_evidence_match(text)
 
     # Remove parenthetical phrases - model may quote without parentheticals
     # E.g., "expression (including typing) to create" -> "expression to create"
@@ -127,7 +226,7 @@ def normalize_for_search(text: str) -> str:
     # Strip trailing punctuation for flexible matching
     text = re.sub(r'[.:;,!?]+$', '', text)
 
-    return " ".join(text.lower().split())
+    return " ".join(text.split())
 
 
 def validate_evidence_location(
@@ -140,6 +239,9 @@ def validate_evidence_location(
 ) -> EvidenceValidationResult:
     """Validate that evidence appears at or near the cited locator.
 
+    Uses artifact-tolerant canonicalization to handle PDF extraction issues
+    like line-wrapped hyphenation, page break markers, and whitespace variations.
+
     Args:
         evidence: The evidence text from the wiki page
         locator_start: Start line number (1-indexed)
@@ -148,12 +250,13 @@ def validate_evidence_location(
         window_size: Lines to expand when checking near-matches (default: 2)
 
     Returns:
-        EvidenceValidationResult with severity and reason
+        EvidenceValidationResult with severity, confidence, and reason
     """
     # Check locator validity first
     if locator_start < 1 or locator_end < locator_start:
         return EvidenceValidationResult(
             result="not_found",
+            confidence="none",
             severity="fail",
             reason="invalid_locator",
             is_hard_failure=True,
@@ -162,109 +265,129 @@ def validate_evidence_location(
     if locator_end > len(source_lines):
         return EvidenceValidationResult(
             result="not_found",
+            confidence="none",
             severity="fail",
             reason="locator_outside_source",
             is_hard_failure=True,
         )
 
-    # Normalize evidence
-    evidence_norm = normalize_for_search(evidence)
-    if not evidence_norm:
+    # Canonicalize evidence for artifact-tolerant comparison
+    evidence_canonical = canonicalize_for_evidence_match(evidence)
+    if not evidence_canonical:
         return EvidenceValidationResult(
             result="not_found",
+            confidence="none",
             severity="fail",
             reason="empty_evidence",
             is_hard_failure=True,
         )
 
-    # Get locator span text
+    # Get locator span text and canonicalize
     locator_text = "\n".join(source_lines[locator_start - 1:locator_end])
-    locator_norm = normalize_for_search(locator_text)
+    locator_canonical = canonicalize_for_evidence_match(locator_text)
 
-    # Check 1: Exact match in locator span
-    if evidence_norm in locator_norm:
+    # Check 1: Exact byte match in locator span (before canonicalization)
+    evidence_stripped = evidence.strip().lower()
+    locator_lower = locator_text.lower()
+    if evidence_stripped in locator_lower:
         return EvidenceValidationResult(
             result="exact_match",
+            confidence="exact",
             severity="pass",
-            reason="evidence found in locator span",
+            reason="evidence found byte-exact in locator span",
         )
 
-    # Check 2: Prefix match in locator span (for truncated evidence)
+    # Check 2: Canonicalized match in locator span
+    if evidence_canonical in locator_canonical:
+        return EvidenceValidationResult(
+            result="canonicalized_local",
+            confidence="canonicalized-local",
+            severity="pass",
+            reason="evidence found in locator span after canonicalization",
+        )
+
+    # Check 3: Prefix match in locator span (for truncated evidence)
     prefix_len = min(50, len(evidence))
-    evidence_prefix = normalize_for_search(evidence[:prefix_len])
-    if evidence_prefix and evidence_prefix in locator_norm:
+    evidence_prefix = canonicalize_for_evidence_match(evidence[:prefix_len])
+    if evidence_prefix and evidence_prefix in locator_canonical:
         return EvidenceValidationResult(
             result="prefix_match",
+            confidence="canonicalized-local",
             severity="pass",
             reason="evidence prefix found in locator span",
         )
 
-    # Check 3: Evidence in expanded window (±N lines)
+    # Check 4: Evidence in expanded window (±N lines)
     window_start = max(1, locator_start - window_size)
     window_end = min(len(source_lines), locator_end + window_size)
     window_text = "\n".join(source_lines[window_start - 1:window_end])
-    window_norm = normalize_for_search(window_text)
+    window_canonical = canonicalize_for_evidence_match(window_text)
 
-    if evidence_norm in window_norm:
+    if evidence_canonical in window_canonical:
         return EvidenceValidationResult(
-            result="window_match",
+            result="canonicalized_window",
+            confidence="canonicalized-local",
             severity="warn",
             reason=f"evidence found near locator (within ±{window_size} lines)",
             suggested_locator=f"L{window_start}-L{window_end}",
         )
 
-    if evidence_prefix and evidence_prefix in window_norm:
+    if evidence_prefix and evidence_prefix in window_canonical:
         return EvidenceValidationResult(
-            result="window_match",
+            result="canonicalized_window",
+            confidence="canonicalized-local",
             severity="warn",
             reason=f"evidence prefix found near locator (within ±{window_size} lines)",
             suggested_locator=f"L{window_start}-L{window_end}",
         )
 
-    # Check 4: Evidence found elsewhere in source (wrong locator)
+    # Check 5: Evidence found elsewhere in source (wrong locator)
     full_source = "\n".join(source_lines)
-    full_source_norm = normalize_for_search(full_source)
+    full_source_canonical = canonicalize_for_evidence_match(full_source)
 
-    if evidence_norm in full_source_norm:
+    if evidence_canonical in full_source_canonical:
         # Try to find the actual location
-        suggested = _find_evidence_location(evidence_norm, source_lines)
+        suggested = _find_evidence_location(evidence_canonical, source_lines)
         return EvidenceValidationResult(
-            result="source_match",
+            result="canonicalized_global",
+            confidence="canonicalized-global",
             severity="warn",
             reason="evidence found in source but not at locator; locator may be wrong",
             suggested_locator=suggested,
         )
 
-    if evidence_prefix and evidence_prefix in full_source_norm:
+    if evidence_prefix and evidence_prefix in full_source_canonical:
         suggested = _find_evidence_location(evidence_prefix, source_lines)
         return EvidenceValidationResult(
-            result="source_match",
+            result="canonicalized_global",
+            confidence="canonicalized-global",
             severity="warn",
             reason="evidence prefix found in source but not at locator",
             suggested_locator=suggested,
         )
 
-    # Check 5: Evidence not found anywhere
+    # Check 6: Evidence not found anywhere even with canonicalization
     return EvidenceValidationResult(
         result="not_found",
+        confidence="none",
         severity="fail",
         reason="evidence_not_in_source",
         is_hard_failure=True,
     )
 
 
-def _find_evidence_location(evidence_norm: str, source_lines: list[str]) -> str | None:
+def _find_evidence_location(evidence_canonical: str, source_lines: list[str]) -> str | None:
     """Try to find where evidence appears in source and return suggested locator."""
     for i, line in enumerate(source_lines):
-        line_norm = normalize_for_search(line)
-        if evidence_norm in line_norm:
+        line_canonical = canonicalize_for_evidence_match(line)
+        if evidence_canonical in line_canonical:
             return f"L{i + 1}"
 
     # Try multi-line search
     for i in range(len(source_lines) - 1):
         two_lines = "\n".join(source_lines[i:i + 2])
-        two_lines_norm = normalize_for_search(two_lines)
-        if evidence_norm in two_lines_norm:
+        two_lines_canonical = canonicalize_for_evidence_match(two_lines)
+        if evidence_canonical in two_lines_canonical:
             return f"L{i + 1}-L{i + 2}"
 
     return None
