@@ -1,8 +1,8 @@
 {
   "candidate_page": "../concepts/recursion.md",
-  "attempted_at": "2026-05-08T19:12:05.672454+00:00",
-  "draft_path": ".tmp/synthesis-failures/js-allonge/recursion/recursion.md",
-  "worktree_path": ".wiki-worktrees/js-allonge-concepts-recursion",
+  "attempted_at": "2026-05-08T19:20:29.772924+00:00",
+  "draft_path": "",
+  "worktree_path": "",
   "validation_result": {
     "passed": false,
     "errors": []
@@ -11,9 +11,9 @@
     "passed": false,
     "verdicts": []
   },
-  "repair_attempted": false,
+  "repair_attempted": true,
   "repair_result": "",
   "repair_errors_remaining": 0,
-  "worktree_preserved": true,
+  "worktree_preserved": false,
   "next_action": "retry"
 }

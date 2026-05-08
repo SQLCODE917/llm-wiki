@@ -281,6 +281,17 @@
         "wiki:sources/js-allonge"
       ]
     },
+    "wiki:concepts/recursion": {
+      "type": "concept",
+      "path": "wiki/concepts/recursion.md",
+      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for handling data structures that have a self-similar or nested na\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
     "wiki:procedures/aoe2-game-plans": {
       "type": "procedure",
       "path": "wiki/procedures/aoe2-game-plans.md",
