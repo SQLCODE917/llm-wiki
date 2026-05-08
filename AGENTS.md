@@ -558,12 +558,6 @@ Structured chunking extracts blocks (headings, code, tables, lists) and packs th
 token-bounded chunks that preserve document structure. Use `--dry-run --structured` to
 compare with line-based chunking.
 
-To evaluate PDF extraction tools, use:
-
-```bash
-pnpm wiki:extraction-harness raw/inbox/<file.pdf> --full-eval
-```
-
 For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
 `tools/prompts/phase1-source-repair.md`. To compare candidates in disposable worktrees, run:
 
