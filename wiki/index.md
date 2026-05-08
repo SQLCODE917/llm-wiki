@@ -39,7 +39,6 @@ None.
 ## Analyses
 
 - [How should an AoE2 player adapt strategy across water and mixed maps](analyses/2026-05-03-aoe2-water-and-mixed-map-strategy.md) — An AoE2 player should treat water maps and mixed maps as build-driven, execution-heavy map types, but adapt the focus differently.
-- [PDF Extractor Comparison - js-allonge](analyses/pdf-extractor-comparison.md) — Tested three PDF extractors on `javascriptallonge.pdf` (297 pages, ~350KB) using the wiki ingestion pipeline with AWS Bedrock backend. **Note**: Marker and Docling require NVIDIA…
 
 ## Code
 

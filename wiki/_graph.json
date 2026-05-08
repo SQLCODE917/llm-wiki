@@ -25,15 +25,6 @@
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:analyses/pdf-extractor-comparison": {
-      "type": "analysis",
-      "path": "wiki/analyses/pdf-extractor-comparison.md",
-      "description": "Tested three PDF extractors on `javascriptallonge.pdf` (297 pages, ~350KB) using the wiki ingestion pipeline with AWS Bedrock backend. **Note**: Marker and Docling require NVIDIA\u2026",
-      "sources": [
-        "js-allonge"
-      ],
-      "depends_on": []
-    },
     "wiki:concepts/aoe2-army-composition": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-army-composition.md",
