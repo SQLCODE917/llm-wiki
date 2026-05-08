@@ -592,7 +592,8 @@ def normalize_topic_name(topic: str) -> str:
         # Closures (separate from Functions - it's a key concept)
         (['closure', 'closures', 'lexical scope', 'free variable'], 'Closures'),
         # Combinators & Decorators (FP patterns)
-        (['combinator', 'combinators', 'decorator', 'decorators'], 'Combinators And Decorators'),
+        (['combinator', 'combinators', 'decorator',
+         'decorators'], 'Combinators And Decorators'),
         # Functional programming (check before Functions due to 'function' substring)
         (['functional programming', 'pure function', 'pure functions', 'immutable', 'compose',
          'curry', 'currying', 'partial application'], 'Functional Programming'),
@@ -602,7 +603,7 @@ def normalize_topic_name(topic: str) -> str:
         # Arrays
         (['array', 'arrays', 'destructur', 'spread', 'rest parameter'], 'Arrays'),
         # Iterators/Generators
-        (['iterator', 'iterators', 'generator', 'generators', 
+        (['iterator', 'iterators', 'generator', 'generators',
          'iterable', 'iterables', 'yield'], 'Iterators And Generators'),
         # Objects
         (['object', 'objects', 'property', 'prototype', 'method'], 'Objects'),
@@ -614,13 +615,14 @@ def normalize_topic_name(topic: str) -> str:
         (['type', 'types', 'value', 'reference', 'number', 'string',
          'undefined', 'null', 'boolean', 'primitive'], 'Data Types'),
         # Control flow
-        (['control flow', 'loop', 'loops', 'conditional', 'if statement', 
+        (['control flow', 'loop', 'loops', 'conditional', 'if statement',
          'while', 'for loop'], 'Control Flow'),
         # ES6 features
         (['es6', 'es2015', 'ecmascript', 'let keyword',
          'const keyword', 'block scope'], 'ES6 Features'),
         # Collections
-        (['collection', 'collections', 'map', 'set', 'weakmap', 'weakset'], 'Collections'),
+        (['collection', 'collections', 'map', 'set',
+         'weakmap', 'weakset'], 'Collections'),
         # Patterns
         (['pattern', 'patterns', 'mixin', 'mixins', 'module', 'modules'], 'Patterns'),
     ]
