@@ -423,7 +423,7 @@ TITLE: {chunk.title}
 CONTENT (lines starting with L### are line numbers, [ctx] marks context):
 {chunk_text}
 
-TASK: Extract 0-10 concrete, reusable claims from this chunk.
+TASK: Extract ALL concrete, reusable claims from this chunk. Do not limit yourself - capture every teachable fact.
 
 TOPIC GUIDELINES - Use BROAD topic categories like:
 - "Functions" (not "Arrow Functions", "Function Values", etc.)
@@ -587,39 +587,46 @@ def normalize_topic_name(topic: str) -> str:
 
     # Map detailed topics to broad categories
     # Each tuple: (keywords to match, normalized topic name)
+    # Note: word boundary matching is used, so include both singular and plural forms
     topic_mappings = [
+        # Closures (separate from Functions - it's a key concept)
+        (['closure', 'closures', 'lexical scope', 'free variable'], 'Closures'),
+        # Combinators & Decorators (FP patterns)
+        (['combinator', 'combinators', 'decorator', 'decorators'], 'Combinators And Decorators'),
+        # Functional programming (check before Functions due to 'function' substring)
+        (['functional programming', 'pure function', 'pure functions', 'immutable', 'compose',
+         'curry', 'currying', 'partial application'], 'Functional Programming'),
         # Functions
-        (['function', 'arrow', 'closure', 'call', 'apply',
+        (['function', 'functions', 'arrow', 'call', 'apply',
          'bind', 'higher-order', 'higher order'], 'Functions'),
         # Arrays
-        (['array', 'destructur', 'spread', 'rest parameter'], 'Arrays'),
+        (['array', 'arrays', 'destructur', 'spread', 'rest parameter'], 'Arrays'),
         # Iterators/Generators
-        (['iterator', 'generator', 'iterable', 'yield'], 'Iterators And Generators'),
+        (['iterator', 'iterators', 'generator', 'generators', 
+         'iterable', 'iterables', 'yield'], 'Iterators And Generators'),
         # Objects
-        (['object', 'property', 'prototype', 'method'], 'Objects'),
+        (['object', 'objects', 'property', 'prototype', 'method'], 'Objects'),
         # Classes
-        (['class', 'inherit', 'extends', 'constructor'], 'Classes'),
+        (['class', 'classes', 'inherit', 'extends', 'constructor'], 'Classes'),
         # Recursion
         (['recursion', 'recursive', 'tail call', 'trampoline'], 'Recursion'),
         # Data types
-        (['type', 'value', 'reference', 'number', 'string',
-         'undefined', 'null', 'boolean'], 'Data Types'),
+        (['type', 'types', 'value', 'reference', 'number', 'string',
+         'undefined', 'null', 'boolean', 'primitive'], 'Data Types'),
         # Control flow
-        (['control', 'loop', 'condition', 'if', 'while', 'for'], 'Control Flow'),
+        (['control flow', 'loop', 'loops', 'conditional', 'if statement', 
+         'while', 'for loop'], 'Control Flow'),
         # ES6 features
-        (['es6', 'es2015', 'ecmascript', 'let',
-         'const', 'block scope'], 'ES6 Features'),
-        # Functional programming
-        (['functional', 'pure', 'immutable', 'compose',
-         'curry', 'partial'], 'Functional Programming'),
+        (['es6', 'es2015', 'ecmascript', 'let keyword',
+         'const keyword', 'block scope'], 'ES6 Features'),
         # Collections
-        (['collection', 'map', 'set', 'weakmap', 'weakset'], 'Collections'),
+        (['collection', 'collections', 'map', 'set', 'weakmap', 'weakset'], 'Collections'),
         # Patterns
-        (['pattern', 'decorator', 'mixin', 'module'], 'Patterns'),
+        (['pattern', 'patterns', 'mixin', 'mixins', 'module', 'modules'], 'Patterns'),
     ]
 
     for keywords, normalized in topic_mappings:
-        if any(kw in lower for kw in keywords):
+        if any(re.search(r'\b' + re.escape(kw) + r'\b', lower) for kw in keywords):
             return normalized
 
     return topic
@@ -1636,8 +1643,8 @@ def main() -> int:
     # Structured chunking options
     parser.add_argument("--structured", action="store_true",
                         help="Use token-aware structural chunking instead of line-based")
-    parser.add_argument("--target-tokens", type=int, default=6500,
-                        help="Target source tokens per chunk (default: 6500)")
+    parser.add_argument("--target-tokens", type=int, default=3500,
+                        help="Target source tokens per chunk (default: 3500)")
     parser.add_argument("--soft-max-tokens", type=int, default=7500,
                         help="Soft max source tokens per chunk (default: 7500)")
     parser.add_argument("--hard-max-tokens", type=int, default=9000,

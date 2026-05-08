@@ -1,3 +1,12 @@
+---
+title: PDF Extractor Comparison - js-allonge
+type: analysis
+tags: [pdf, extraction, pymupdf, pdfplumber]
+status: complete
+last_updated: 2026-05-08
+sources: [js-allonge]
+---
+
 # PDF Extractor Comparison: js-allonge
 
 ## Summary
@@ -8,7 +17,16 @@ Tested three PDF extractors on `javascriptallonge.pdf` (297 pages, ~350KB) using
 
 ## Results with Structured Chunking (Recommended)
 
-Using `--structured --target-tokens 6500` for token-aware structural chunking:
+Using `--structured --target-tokens 3500` for token-aware structural chunking:
+
+| Target Tokens | Chunks | Truncated | Claims | Topics |
+| ------------- | ------ | --------- | ------ | ------ |
+| 6500          | 15     | 5 (33%)   | 182    | 12     |
+| **3500**      | 25     | 1 (4%)    | **396**| 14     |
+
+**Recommendation**: Use 3500 target tokens to avoid `max_tokens` truncation.
+
+### Extractor Comparison (6500 tokens)
 
 | Extractor       | Chunks | Claims | Topics | Pages Created | Success Rate |
 | --------------- | ------ | ------ | ------ | ------------- | ------------ |
@@ -60,7 +78,7 @@ Structured chunking kept most chunks within the 6,500-9,000 token target range, 
 
 ## Recommendations
 
-1. **Always use `--structured --target-tokens 6500`** for deep extraction
+1. **Always use `--structured --target-tokens 3500`** for deep extraction (default)
 2. **PyMuPDF4LLM** is the best choice for documents with tables and code
 3. **PyMuPDF (basic)** is a good fallback for simpler documents
 4. **pdfplumber** works but may lose some structural information

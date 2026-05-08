@@ -60,6 +60,8 @@ class IngestConfig:
     overlap: int
     extract_timeout: int
     min_claims_per_topic: int
+    use_structured_chunking: bool
+    target_tokens: int
 
 
 def main() -> int:
@@ -83,11 +85,15 @@ def main() -> int:
     parser.add_argument("--extract-timeout", type=int,
                         default=120, help="timeout per chunk extraction")
     parser.add_argument("--chunk-size", type=int, default=400,
-                        help="lines per chunk (default: 400)")
+                        help="lines per chunk for line-based chunking (default: 400)")
     parser.add_argument("--overlap", type=int, default=30,
-                        help="overlap between chunks (default: 30)")
+                        help="overlap between chunks for line-based chunking (default: 30)")
     parser.add_argument("--min-claims-per-topic", type=int,
                         default=3, help="minimum claims to create a page")
+    parser.add_argument("--structured", action="store_true",
+                        help="Use token-aware structural chunking instead of line-based (recommended)")
+    parser.add_argument("--target-tokens", type=int, default=3500,
+                        help="Target source tokens per chunk for structured chunking (default: 3500)")
     parser.add_argument("--reuse-imported", action="store_true")
     parser.add_argument("--overwrite-normalized", action="store_true")
     parser.add_argument("--skip-phase0", action="store_true")
@@ -138,6 +144,8 @@ def main() -> int:
         overlap=args.overlap,
         extract_timeout=args.extract_timeout,
         min_claims_per_topic=args.min_claims_per_topic,
+        use_structured_chunking=args.structured,
+        target_tokens=args.target_tokens,
     )
 
     return run_ingest(config)
@@ -184,6 +192,8 @@ def run_ingest(config: IngestConfig) -> int:
                 timeout=config.extract_timeout,
                 skip_synthesis=True,
                 skip_finalize=True,
+                use_structured_chunking=config.use_structured_chunking,
+                target_tokens=config.target_tokens,
             )
             if result != 0:
                 print("FAIL: Deep extraction failed", file=sys.stderr)
