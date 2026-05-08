@@ -440,7 +440,8 @@ def render_claims_table(
             eid_upper = eid.upper()
             if evidence_bank and eid_upper in evidence_bank.items:
                 item = evidence_bank.items[eid_upper]
-                evidence_cell = f'"{make_table_safe(item.text)}"'
+                # Use exact_text (full text) not text (truncated display_text)
+                evidence_cell = f'"{make_table_safe(item.exact_text)}"'
                 locator_cell = f"`{item.locator}`"
             else:
                 evidence_cell = f"[{eid}: not found]"

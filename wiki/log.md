@@ -652,3 +652,11 @@
 - Generated wiki/_linter-report.md.
 
 ---
+
+## [2026-05-08] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---

@@ -158,14 +158,15 @@ class EvidenceBank:
 
                     item = self.get_by_id(evidence_id)
                     if item:
+                        # Use exact_text (full text) not text (truncated display_text)
                         new_cols = [
-                            claim, f'"{item.text}"', f"`{item.locator}`", "[Source](../sources/source.md)"]
+                            claim, f'"{item.exact_text}"', f"`{item.locator}`", "[Source](../sources/source.md)"]
                         result_lines.append(self._format_table_row(new_cols))
                         expansions.append({
                             "row": row_num,
                             "id": item.id,
                             "locator": item.locator,
-                            "evidence": item.text,
+                            "evidence": item.exact_text,
                         })
                         continue
 
@@ -177,14 +178,15 @@ class EvidenceBank:
 
                     item = self.get_by_id(evidence_id)
                     if item:
-                        new_cols = [claim, f'"{item.text}"',
+                        # Use exact_text (full text) not text (truncated display_text)
+                        new_cols = [claim, f'"{item.exact_text}"',
                                     f"`{item.locator}`", source]
                         result_lines.append(self._format_table_row(new_cols))
                         expansions.append({
                             "row": row_num,
                             "id": item.id,
                             "locator": item.locator,
-                            "evidence": item.text,
+                            "evidence": item.exact_text,
                         })
                         continue
 

@@ -1,8 +1,8 @@
 {
-  "candidate_page": "../concepts/recursion.md",
-  "attempted_at": "2026-05-08T19:12:05.672454+00:00",
-  "draft_path": ".tmp/synthesis-failures/js-allonge/recursion/recursion.md",
-  "worktree_path": ".wiki-worktrees/js-allonge-concepts-recursion",
+  "candidate_page": "../concepts/closures.md",
+  "attempted_at": "2026-05-08T19:12:25.911209+00:00",
+  "draft_path": ".tmp/synthesis-failures/js-allonge/closures/closures.md",
+  "worktree_path": ".wiki-worktrees/js-allonge-concepts-closures",
   "validation_result": {
     "passed": false,
     "errors": []

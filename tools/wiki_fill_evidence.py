@@ -160,9 +160,10 @@ def expand_evidence_ids(
                     item = evidence_bank.items.get(evidence_id)
 
                     if item:
+                        # Use exact_text (full text) not display_text (truncated)
                         new_cols = [
                             make_table_safe(claim),
-                            f'"{make_table_safe(item.text)}"',
+                            f'"{make_table_safe(item.exact_text)}"',
                             f"`{item.locator}`",
                             f"[Source](../sources/{slug}.md)"
                         ]
@@ -171,7 +172,7 @@ def expand_evidence_ids(
                             "row": row_num,
                             "id": evidence_id,
                             "locator": item.locator,
-                            "evidence": item.text,
+                            "evidence": item.exact_text,
                         })
                         continue
 

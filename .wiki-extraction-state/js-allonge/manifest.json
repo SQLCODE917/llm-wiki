@@ -14,9 +14,9 @@
   "model_backend": "bedrock",
   "candidate": "local-4090",
   "allow_partial_pages": false,
-  "partial_success_reason": null,
+  "partial_success_reason": "2 of 10 candidates failed",
   "created_at": "2026-05-08T18:12:34.445111+00:00",
-  "updated_at": "2026-05-08T18:27:45.852694+00:00",
+  "updated_at": "2026-05-08T19:13:06.916564+00:00",
   "paths": {
     "imported_original": "raw/imported/js-allonge/original.pdf",
     "normalized_source": "raw/normalized/js-allonge/source.md",
@@ -30,18 +30,18 @@
     "phase1b_dedupe": "complete",
     "phase1c_candidates": "complete",
     "phase2a_source": "complete",
-    "phase2b_synthesize": "failed",
-    "phase2c_adopt": "failed",
+    "phase2b_synthesize": "partial",
+    "phase2c_adopt": "partial",
     "phase3a_index": "complete",
     "phase3b_graph": "complete",
     "phase3c_lint": "complete",
     "phase3d_log": "complete"
   },
   "phase2b_progress": {
-    "total_candidates": 11,
-    "synthesized": 0,
-    "adopted": 0,
-    "failed": 11,
+    "total_candidates": 10,
+    "synthesized": 8,
+    "adopted": 8,
+    "failed": 2,
     "pending": 0
   },
   "last_error": {
