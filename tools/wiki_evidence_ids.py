@@ -250,9 +250,12 @@ def build_evidence_bank_with_ids(
 
             for claim in matched:
                 locator = claim.get("locator", "")
-                evidence = claim.get("evidence", "")
-                if locator and evidence:
-                    bank.add(locator, evidence, candidate_name)
+                if locator:
+                    # Extract evidence directly from source at locator
+                    # This guarantees exact byte match - no LLM reformatting
+                    evidence = extract_evidence_at_locator(source_lines, locator)
+                    if evidence:
+                        bank.add(locator, evidence, candidate_name)
         else:
             # Fall back to extracting from source directly
             # This is a simplified version - real extraction would use keyword matching

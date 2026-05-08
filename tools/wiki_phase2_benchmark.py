@@ -14,6 +14,7 @@ from pathlib import Path
 
 from wiki_common import code_paths, parse_frontmatter, section
 from wiki_evidence_bank import source_chunks, snippets_for_candidate
+from wiki_fill_evidence import get_evidence_for_locator
 from wiki_evidence_ranges import (
     SourceRange,
     format_ranges,
@@ -326,7 +327,6 @@ def run_validation(
         ["python3", "tools/wiki_fix_broken_links.py", slug],
         ["python3", "tools/wiki_normalize_ascii.py", slug],
         ["python3", "tools/wiki_normalize_tables.py", slug],
-        ["python3", "tools/wiki_normalize_related.py", slug],
         *reference_repair_commands,
         synthesis_command,
         ["pnpm", "wiki:grounding:check"],
@@ -748,16 +748,18 @@ def build_evidence_bank(
         evidence_items: list[tuple[str, str]] = []  # (locator, text)
 
         if matched_claims:
-            # Use full evidence from extraction state (preferred)
+            # Extract evidence directly from source at locator (guaranteed match)
             # P3: Increased evidence budget - keep full text for exact_text
             for claim in matched_claims[:25]:  # Increased from 10 to 25
                 locator = claim.get("locator", "")
-                evidence = claim.get("evidence", "")
-                if evidence and locator:
-                    # Keep full evidence - truncation happens later in display_text
-                    # Normalize to always-range format
-                    evidence_items.append(
-                        (normalize_locator(locator), evidence))
+                if locator:
+                    # Extract evidence directly from source lines at locator
+                    # This guarantees exact byte match - no LLM reformatting
+                    evidence = get_evidence_for_locator(locator, lines, max_chars=500)
+                    if evidence:
+                        # Normalize to always-range format
+                        evidence_items.append(
+                            (normalize_locator(locator), evidence))
         else:
             # Fall back to re-extracting snippets (less accurate)
             if chunks is None:
