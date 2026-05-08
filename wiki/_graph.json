@@ -2,7 +2,7 @@
   "_meta": {
     "domain": "llm-wiki",
     "version": "0.1.0",
-    "updated": "2026-05-07",
+    "updated": "2026-05-08",
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
@@ -26,10 +26,12 @@
       ]
     },
     "wiki:analyses/pdf-extractor-comparison": {
-      "type": "unknown",
+      "type": "analysis",
       "path": "wiki/analyses/pdf-extractor-comparison.md",
       "description": "Tested three PDF extractors on `javascriptallonge.pdf` (297 pages, ~350KB) using the wiki ingestion pipeline with AWS Bedrock backend. **Note**: Marker and Docling require NVIDIA\u2026",
-      "sources": [],
+      "sources": [
+        "js-allonge"
+      ],
       "depends_on": []
     },
     "wiki:concepts/aoe2-army-composition": {
@@ -181,15 +183,6 @@
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/arrays": {
-      "type": "concept",
-      "path": "wiki/concepts/arrays.md",
-      "description": "Arrays in JavaScript are ordered collections that store references to objects rather than copies, and their literal syntax creates distinct instances even with identical content.\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
     "wiki:concepts/compound-interest": {
       "type": "concept",
       "path": "wiki/concepts/compound-interest.md",
@@ -200,69 +193,6 @@
       "depends_on": [
         "wiki:sources/compound-interest"
       ]
-    },
-    "wiki:concepts/control-flow": {
-      "type": "concept",
-      "path": "wiki/concepts/control-flow.md",
-      "description": "Control flow in JavaScript refers to the order in which statements are executed and how program execution can be altered through various constructs. Key aspects include the evolut\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
-    "wiki:concepts/data-types": {
-      "type": "concept",
-      "path": "wiki/concepts/data-types.md",
-      "description": "JavaScript's data type system includes both primitive and reference types, with distinct behaviors for equality, copying, and evaluation. Primitive types like strings, numbers, an\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
-    "wiki:concepts/es6-features": {
-      "type": "concept",
-      "path": "wiki/concepts/es6-features.md",
-      "description": "ECMAScript 2015 introduced several key features that improved JavaScript's handling of scope and function parameters, including block-scoped variables and rest syntax for collecti\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
-    "wiki:concepts/functions": {
-      "type": "concept",
-      "path": "wiki/concepts/functions.md",
-      "description": "Functions are fundamental building blocks in JavaScript that enable the composition of complex programs. They can be invoked with zero or more arguments to produce values, and sup\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
-    "wiki:concepts/iterators-and-generators": {
-      "type": "concept",
-      "path": "wiki/concepts/iterators-and-generators.md",
-      "description": "Iterators and generators are fundamental concepts in JavaScript that enable efficient traversal and manipulation of data sequences. Iterators provide a standardized way to access\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
-    "wiki:concepts/objects": {
-      "type": "concept",
-      "path": "wiki/concepts/objects.md",
-      "description": "In JavaScript, objects serve as fundamental data structures that map string keys to values, functioning as collections where each key-value pair represents a property of the objec\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
-    },
-    "wiki:concepts/recursion": {
-      "type": "concept",
-      "path": "wiki/concepts/recursion.md",
-      "description": "Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems. It serves as a fundamental approach in\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": []
     },
     "wiki:procedures/aoe2-game-plans": {
       "type": "procedure",
@@ -348,6 +278,15 @@
       "depends_on": [
         "wiki:concepts/compound-interest"
       ]
+    },
+    "wiki:sources/js-allonge": {
+      "type": "source",
+      "path": "wiki/sources/js-allonge.md",
+      "description": "**JavaScript Allong\u00e9, the \"Six\" Edition** Programming from Functions to Classes in ECMAScript 2015 This book is for sale at http://leanpub.com/javascriptallongesix This version wa\u2026",
+      "sources": [
+        "../../raw/imported/js-allonge/original.pdf"
+      ],
+      "depends_on": []
     }
   }
 }
