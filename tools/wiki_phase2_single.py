@@ -42,6 +42,12 @@ from wiki_failure_classifier import (
     summarize_failures,
     DETERMINISTIC_CATEGORIES,
 )
+from wiki_failure_artifacts import (
+    FailureArtifact,
+    save_failure,
+    preserve_worktree,
+    get_worktree_path,
+)
 from wiki_context_packer import check_evidence_contract_violations
 from wiki_deterministic_repair import repair_page as repair_page_schema
 from wiki_check_synthesis import check_synthesis_structured
@@ -313,6 +319,13 @@ def quarantine_failed_page(
     log_paths: list[Path] | None = None,
     judge_report_paths: list[Path] | None = None,
     evidence_bank: str | None = None,
+    validation_errors: list[dict] | None = None,
+    judge_verdicts: list[dict] | None = None,
+    validation_passed: bool = False,
+    judge_passed: bool = False,
+    repair_attempted: bool = False,
+    repair_result: str = "",
+    preserve_worktree_flag: bool = False,
 ) -> Path | None:
     """Copy failed page and all synthesis artifacts for post-mortem analysis.
 
@@ -325,6 +338,7 @@ def quarantine_failed_page(
     - All prompts and responses (from .tmp/model-runs/)
     - Judge reports
     - Evidence bank used
+    - Structured failure artifact (JSON)
 
     Returns the quarantine path if successful, None otherwise.
     """
@@ -379,6 +393,40 @@ def quarantine_failed_page(
     if evidence_bank:
         (quarantine_dir / "evidence-bank.md").write_text(evidence_bank)
 
+    # Create structured failure artifact
+    preserved_worktree_path = ""
+    if preserve_worktree_flag:
+        preserved_worktree_path = str(
+            preserve_worktree(worktree, slug, candidate_path))
+
+    failure = FailureArtifact.create(
+        slug=slug,
+        candidate_page=candidate_path,
+        draft_path=str(quarantine_path) if quarantine_path else "",
+        worktree_path=preserved_worktree_path,
+    )
+    failure.set_validation_result(
+        passed=validation_passed, errors=validation_errors)
+    failure.set_judge_result(passed=judge_passed, verdicts=judge_verdicts)
+    failure.set_repair_result(
+        attempted=repair_attempted,
+        result=repair_result,
+        errors_remaining=len(validation_errors or []
+                             ) if not validation_passed else 0,
+    )
+    failure.worktree_preserved = bool(preserved_worktree_path)
+
+    # Determine next action
+    if judge_verdicts and any(v.get("verdict") == "not_supported" for v in judge_verdicts):
+        failure.next_action = "needs_more_evidence"
+    elif validation_errors and all(e.get("type") in ("missing_section", "bad_locator") for e in validation_errors):
+        failure.next_action = "retry"
+    else:
+        failure.next_action = "retry"
+
+    # Save the structured failure artifact
+    save_failure(failure)
+
     # Write a summary file with metadata
     summary = [
         f"# Synthesis Failure: {page_stem}",
@@ -387,6 +435,7 @@ def quarantine_failed_page(
         f"- Candidate: {candidate_path}",
         f"- Worktree: {worktree}",
         f"- Timestamp: {time.strftime('%Y-%m-%d %H:%M:%S')}",
+        f"- Failure artifact: .wiki-extraction-state/{slug}/failures/{page_stem}.json",
         f"",
         f"## Files Preserved",
         f"",
@@ -520,15 +569,50 @@ def main() -> int:
         success = result["validation_returncode"] == 0 and result["judge_returncode"] == 0
         if not success:
             validation_log = worktree / "validation.log"
+
+            # Parse validation errors from log if available
+            validation_errors = []
+            if validation_log.exists():
+                log_content = validation_log.read_text()
+                for line in log_content.splitlines():
+                    if "FAIL:" in line or "ERROR:" in line:
+                        validation_errors.append({
+                            "type": "validation_error",
+                            "message": line.strip(),
+                        })
+
+            # Extract judge verdicts from report if available
+            judge_verdicts = []
+            for report_path in result.get("judge_report_paths", []):
+                if report_path.exists():
+                    try:
+                        report_content = report_path.read_text()
+                        # Try to parse JSON verdicts
+                        import json as _json
+                        if report_content.strip().startswith("{"):
+                            report_data = _json.loads(report_content)
+                            if "verdicts" in report_data:
+                                judge_verdicts.extend(report_data["verdicts"])
+                    except (ValueError, _json.JSONDecodeError):
+                        pass
+
             quarantine_path = quarantine_failed_page(
                 worktree, candidate_path, args.slug, validation_log,
                 log_paths=result.get("log_paths", []),
                 judge_report_paths=result.get("judge_report_paths", []),
                 evidence_bank=result.get("evidence_bank"),
+                validation_errors=validation_errors,
+                judge_verdicts=judge_verdicts,
+                validation_passed=(result["validation_returncode"] == 0),
+                judge_passed=(result["judge_returncode"] == 0),
+                repair_attempted=args.repair_attempts > 0,
+                preserve_worktree_flag=args.keep,
             )
             if quarantine_path:
                 print(
                     f"  Quarantined failed page to: .tmp/synthesis-failures/{args.slug}/{Path(candidate_path).stem}/")
+                print(
+                    f"  Failure artifact: .wiki-extraction-state/{args.slug}/failures/{Path(candidate_path).stem}.json")
 
         return 0 if success else 1
     finally:

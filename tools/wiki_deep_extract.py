@@ -24,6 +24,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -37,6 +38,19 @@ from typing import Any
 from wiki_common import log_context_stats, section
 from wiki_fill_evidence import fill_evidence_in_page
 from wiki_model_backend import get_backend, ModelConfig, ModelResponse
+
+# Import extraction state management for new state file format
+from wiki_extraction_state import (
+    RawClaim,
+    NormalizedClaim,
+    NormalizedClaimsData,
+    Candidate,
+    GeneratedCandidatesData,
+    append_raw_claims,
+    save_normalized_claims,
+    save_generated_candidates,
+    get_raw_claims_path,
+)
 from wiki_candidate_tracker import (
     CandidatesData,
     load_candidates,
@@ -64,6 +78,42 @@ except ImportError:
 # ============================================================================
 # Data Structures
 # ============================================================================
+
+
+def normalize_claim_text(text: str) -> str:
+    """Normalize claim text for hashing.
+
+    Trim whitespace, collapse repeated spaces, normalize Unicode.
+    Do NOT lowercase - code, symbols, and proper nouns may be case-sensitive.
+    """
+    import unicodedata
+    # Normalize Unicode to NFC form
+    text = unicodedata.normalize("NFC", text)
+    # Collapse whitespace
+    text = " ".join(text.split())
+    return text.strip()
+
+
+def generate_claim_id(slug: str, claim_text: str, locator: str, chunk_index: int) -> str:
+    """Generate a stable, deterministic claim ID.
+
+    Format: claim_<slug>_c<chunk-index>_<8-char-hash>
+
+    The hash is derived from normalized claim text + primary evidence locator.
+    This ensures:
+    - Same input → same ID (reproducible)
+    - Does not shift if earlier claims change (unlike sequence numbers)
+    - Chunk index visible in ID for debugging
+    """
+    normalized = normalize_claim_text(claim_text)
+    hash_input = f"{normalized}|{locator}"
+    hash_bytes = hashlib.sha256(hash_input.encode("utf-8")).digest()
+    hash_hex = hash_bytes[:4].hex()  # 8 hex chars
+
+    # Handle empty slug (will be updated later when slug is known)
+    slug_part = slug if slug else "unknown"
+    return f"claim_{slug_part}_c{chunk_index:03d}_{hash_hex}"
+
 
 @dataclass
 class Chunk:
@@ -104,9 +154,17 @@ class Claim:
     evidence: str
     locator: str
     chunk_index: int
+    claim_id: str = ""
+
+    def __post_init__(self):
+        """Generate claim_id if not set."""
+        if not self.claim_id:
+            self.claim_id = generate_claim_id(
+                "", self.claim, self.locator, self.chunk_index)
 
     def to_dict(self) -> dict:
         return {
+            "claim_id": self.claim_id,
             "topic": self.topic,
             "claim": self.claim,
             "evidence": self.evidence,
@@ -122,6 +180,7 @@ class Claim:
             evidence=d.get("evidence", ""),
             locator=d.get("locator", ""),
             chunk_index=d.get("chunk_index", 0),
+            claim_id=d.get("claim_id", ""),
         )
 
 
@@ -502,11 +561,11 @@ def extract_claims_from_chunk(
         return []
 
     # Parse JSON response
-    claims = parse_claims_response(response.output, chunk.index)
+    claims = parse_claims_response(response.output, chunk.index, state.slug)
     return claims
 
 
-def parse_claims_response(output: str, chunk_index: int) -> list[Claim]:
+def parse_claims_response(output: str, chunk_index: int, slug: str = "") -> list[Claim]:
     """Parse model output into Claim objects."""
     # Try to extract JSON from response
     json_match = re.search(r'```(?:json)?\s*\n?(.*?)```', output, re.DOTALL)
@@ -533,12 +592,17 @@ def parse_claims_response(output: str, chunk_index: int) -> list[Claim]:
         claims = []
         for item in data:
             if isinstance(item, dict) and all(k in item for k in ['topic', 'claim', 'evidence', 'locator']):
+                claim_text = str(item['claim']).strip()
+                locator = str(item['locator']).strip()
+                claim_id = generate_claim_id(
+                    slug, claim_text, locator, chunk_index)
                 claims.append(Claim(
                     topic=str(item['topic']).strip(),
-                    claim=str(item['claim']).strip(),
+                    claim=claim_text,
                     evidence=str(item['evidence']).strip(),
-                    locator=str(item['locator']).strip(),
+                    locator=locator,
                     chunk_index=chunk_index,
+                    claim_id=claim_id,
                 ))
         return claims
     except json.JSONDecodeError as e:
@@ -1558,6 +1622,20 @@ def run_deep_extraction(
             state.claims.extend(claims)
             state.processed_chunks.add(chunk.index)
 
+            # Also write to claims-raw.jsonl for new state format (resumable)
+            if claims:
+                raw_claims = [
+                    RawClaim(
+                        topic=c.topic,
+                        claim=c.claim,
+                        evidence=c.evidence,
+                        locator=c.locator,
+                        chunk_index=chunk.index,
+                    )
+                    for c in claims
+                ]
+                append_raw_claims(state.slug, raw_claims)
+
             # Save progress after each chunk
             state._rebuild_topics()
             state.save(state_path)
@@ -1584,6 +1662,43 @@ def run_deep_extraction(
     for topic, claims in sorted(state.topics.items(), key=lambda x: -len(x[1])):
         print(f"  {topic}: {len(claims)} claims")
 
+    # Write claims-normalized.json (new state format)
+    if state.claims:
+        normalized_claims = []
+        topic_claim_ids: dict[str, list[str]] = {}
+        for claim in state.claims:
+            claim_id = claim.claim_id or generate_claim_id(
+                state.slug, claim.chunk_index, claim.claim)
+            nc = NormalizedClaim(
+                claim_id=claim_id,
+                topic=claim.topic,
+                claim=claim.claim,
+                evidence=claim.evidence,
+                locator=claim.locator,
+                chunk_index=claim.chunk_index,
+            )
+            normalized_claims.append(nc)
+            if claim.topic not in topic_claim_ids:
+                topic_claim_ids[claim.topic] = []
+            topic_claim_ids[claim.topic].append(claim_id)
+
+        raw_claims_path = get_raw_claims_path(state.slug)
+        raw_count = 0
+        if raw_claims_path.exists():
+            with open(raw_claims_path, "r") as f:
+                raw_count = sum(1 for line in f if line.strip())
+
+        normalized_data = NormalizedClaimsData(
+            slug=state.slug,
+            claims=normalized_claims,
+            topics=topic_claim_ids,
+            raw_claims_count=raw_count,
+            deduped_count=len(normalized_claims),
+        )
+        save_normalized_claims(state.slug, normalized_data)
+        print(
+            f"\nWrote claims-normalized.json ({len(normalized_claims)} claims)")
+
     if skip_synthesis:
         print("\nSkipping synthesis (--skip-synthesis)")
     else:
@@ -1591,6 +1706,52 @@ def run_deep_extraction(
         print("\n" + "=" * 60)
         print("PHASE 3: Synthesize Wiki Pages")
         print("=" * 60)
+
+        # Generate candidates.generated.json before synthesis
+        min_claims_per_page = 3
+        viable_topics = {
+            topic: claims
+            for topic, claims in state.topics.items()
+            if len(claims) >= min_claims_per_page
+        }
+
+        # Build candidates list
+        generated_candidates = []
+        for topic, claims in viable_topics.items():
+            page_slug = topic.lower().replace(' ', '-').replace('/', '-')
+            page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+            page_path = f"../concepts/{page_slug}.md"
+
+            # Get claim IDs for this topic
+            claim_ids = [c.claim_id or generate_claim_id(
+                state.slug, c.chunk_index, c.claim) for c in claims]
+
+            # Determine priority based on claim count
+            if len(claims) >= 8:
+                priority = "must create"
+            elif len(claims) >= 5:
+                priority = "should create"
+            else:
+                priority = "could create"
+
+            generated_candidates.append(Candidate(
+                title=topic,
+                path=page_path,
+                page_type="concept",
+                priority=priority,
+                claim_ids=claim_ids,
+                evidence_basis=f"{len(claims)} claims from extraction",
+            ))
+
+        # Write candidates.generated.json
+        if generated_candidates:
+            candidates_data = GeneratedCandidatesData(
+                slug=state.slug,
+                candidates=generated_candidates,
+            )
+            save_generated_candidates(state.slug, candidates_data)
+            print(
+                f"\nWrote candidates.generated.json ({len(generated_candidates)} candidates)")
 
         created_pages = synthesize_pages(backend, state, timeout=timeout)
         state.pages_created = [str(p) for p in created_pages]

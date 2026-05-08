@@ -1,0 +1,3150 @@
+{
+  "_meta": {
+    "slug": "js-allonge",
+    "normalized_at": "2026-05-08T18:18:20.828185+00:00",
+    "raw_claims_count": 346,
+    "deduped_count": 346
+  },
+  "claims": [
+    {
+      "claim_id": "claim_js-allonge_c000_83041b92",
+      "topic": "Functions",
+      "claim": "JavaScript Allong\u00e9 is a book about programming with functions, emphasizing how functions flow into many programming ideas like decorators, methods, delegation, and mixins.",
+      "evidence": "JavaScript Allong\u00e9 is a book about _programming with functions_ . It's written in JavaScript, because JavaScript hits the perfect sweet spot of being both widely used, and of having proper first-class functions with lexical scope.",
+      "locator": "normalized:L109-L110",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_bf0e2dbd",
+      "topic": "Functions",
+      "claim": "Functions in JavaScript can be used to write software that is simpler, cleaner, and less complicated than alternative approaches that are object-centric or code-centric.",
+      "evidence": "JavaScript Allong\u00e9 teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down. As a result, _JavaScript Allong\u00e9_ is a rich read releasing many of JavaScript's subtleties, much like the Caf\u00e9 Allong\u00e9 beloved by coffee enthusiasts everywhere.",
+      "locator": "normalized:L113-L115",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_86fb24cc",
+      "topic": "Functions",
+      "claim": "Programming with functions involves working with small, independent entities that compose together to make bigger programs.",
+      "evidence": "Thus, the focus on things like writing decorators. As noted above, JavaScript was chosen as the language for Allong\u00e9 because it hit a sweet spot of having a large audience of programmers and having certain language features that happen to work well with this style of programming.",
+      "locator": "normalized:L179-L182",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_d15a7923",
+      "topic": "Functions",
+      "claim": "ECMAScript 2015 introduced features that make programming with functions easier and more expressive, such as block-structured variables and rest parameters.",
+      "evidence": "ECMAScript 2015 (formerly called ECMAScript 6 or \"ES6\"), is ushering in a very large number of improvements to the way programmers can write small, powerful components and combine them into larger, fully featured programs.",
+      "locator": "normalized:L119-L120",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_8c974675",
+      "topic": "Functions",
+      "claim": "Prior to ECMAScript 2015, JavaScript lacked block-structured variables, so programmers used IIFEs to simulate local scoping.",
+      "evidence": "Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a trick from the Scheme programming language, and would write: var i; for (i = 0; i < array.length; ++i) { (function (i) { // ...})(i) }",
+      "locator": "normalized:L131-L141",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_20775fbc",
+      "topic": "Functions",
+      "claim": "Before ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers had to use workarounds like slicing arguments.",
+      "evidence": "Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like: function foo () { var first = arguments[0], rest = [].slice.call(arguments, 1); // ... }",
+      "locator": "normalized:L147-L150",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_30f27462",
+      "topic": "Functions",
+      "claim": "ECMAScript 2015 allows for cleaner syntax for block-scoped variables using 'let' and for collecting remaining arguments using the spread operator (...rest).",
+      "evidence": "We can also write: function foo (first, ...rest) { // ... } And presto, rest collects the rest of the arguments without a lot of malarky involving slicing arguments.",
+      "locator": "normalized:L159-L168",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_427faa70",
+      "topic": "Functions",
+      "claim": "The 'Six' edition of JavaScript Allong\u00e9 introduces classes, mixins, private properties with symbols, iterators, and generators while maintaining focus on composing entities with functions.",
+      "evidence": "Thus, the \"six\" edition introduces classes and mixins. It introduces the notion of implementing private properties with symbols. It introduces iterators and generators. But the common thread that runs through all these things is that since they are all simple objects and simple functions, we can use the same set of \"programming with functions\" techniques to build programs by composing small, flexible, and decoupled entities.",
+      "locator": "normalized:L185-L188",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_09ce10e8",
+      "topic": "Functions",
+      "claim": "JavaScript Allong\u00e9 is not prescriptive about programming techniques, acknowledging that software development choices depend on social considerations, requirements, consistency, and tooling.",
+      "evidence": "But while JavaScript Allong\u00e9 attempts to be provocative, it is not _prescriptive_ . There is absolutely no suggestion that any of the techniques shown here are the only way to do something, the best way, or even an acceptable way to write programs that are intended to be used, read, and maintained by others.",
+      "locator": "normalized:L205-L207",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_613bcb85",
+      "topic": "Functions",
+      "claim": "JavaScript Allong\u00e9 focuses on fundamental programming ideas and how they combine to form new ideas, aiming to improve the way we think about programs.",
+      "evidence": "JavaScript Allong\u00e9 is a book about programming with functions. From functions flow many ideas, from decorators to methods to delegation to mixins, and onwards in so many fruitful directions. The focus in this book on the underlying ideas, what we might call the fundamentals, and how they combine to form new ideas. The intention is to improve the way we think about programs.",
+      "locator": "normalized:L201-L204",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_07ea6955",
+      "topic": "Functions",
+      "claim": "JavaScript Allong\u00e9 emphasizes teaching the 'why' and 'when' of programming techniques rather than just the 'how'.",
+      "evidence": "It can focus on the _why_ to do something and _when_ to do it, instead of on the how to make it work",
+      "locator": "normalized:L169-L170",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_2b80900e",
+      "topic": "Functions",
+      "claim": "The book introduces new aspects of programming with functions in each chapter, with code examples that emphasize exposition rather than serving as everyday patterns.",
+      "evidence": "_JavaScript Allong\u00e9_ introduces new aspects of programming with functions in each chapter, explaining exactly how JavaScript works. Code examples within each chapter are small and emphasize exposition rather than serving as patterns for everyday use.",
+      "locator": "normalized:L231-L232",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_d8eb00db",
+      "topic": "Functions",
+      "claim": "The book contains recipes that demonstrate practical applications of the chapter's ideas, drawing upon any aspect of the JavaScript programming language.",
+      "evidence": "Following some of the chapters are a series of recipes designed to show the application of the chapter's ideas in practical form. While the content of each chapter builds naturally on what was discussed in the previous chapter, the recipes may draw upon any aspect of the JavaScript programming language.",
+      "locator": "normalized:L239-L240",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_ba9fb1f7",
+      "topic": "Values",
+      "claim": "In JavaScript, all values are expressions, meaning they can be used to place an order or represent a computation that evaluates to a value.",
+      "evidence": "All values are expressions. Say you hand the barista a caf\u00e9 Cubano. Yup, you hand over a cup with some coffee infused through partially caramelized sugar. You say, \"I want one of these.\" The barista is no fool, she gives it straight back to you, and you get exactly what you want.",
+      "locator": "normalized:L354-L356",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_86286e69",
+      "topic": "Values",
+      "claim": "Expressions that are not values can be formed by combining values with operators, such as concatenating strings.",
+      "evidence": "Now we see that \"strings\" are values, and you can make an expression out of strings and an operator +. Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions.",
+      "locator": "normalized:L379-L381",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_fe257443",
+      "topic": "Values",
+      "claim": "In JavaScript, the === operator tests whether two values are identical, and !== tests whether they are not identical.",
+      "evidence": "In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:",
+      "locator": "normalized:L397-L398",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_574fe6da",
+      "topic": "Values",
+      "claim": "Two values in JavaScript are not identical if they have different types, such as a string versus a number.",
+      "evidence": "First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different _types_ . For example, the string \"2\" is not the same thing as the number 2. Strings and numbers are different types, so strings and numbers are never identical:",
+      "locator": "normalized:L401-L405",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_66bf4440",
+      "topic": "Values",
+      "claim": "Two values in JavaScript are not identical if they have the same type but different content, such as different numbers.",
+      "evidence": "Second, sometimes, the cups are of the same type-perhaps two espresso cups-but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different \"content.\" For example, the number 5 is not the same thing as the number 2.",
+      "locator": "normalized:L407-L409",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_f1a210e4",
+      "topic": "ES6 Features",
+      "claim": "ECMAScript 2015 (ES6) introduced three major groups of features: better syntax for existing features, new functionality in the standard library, and completely new features.",
+      "evidence": "ECMAScript 6 has three major groups of features: - Better syntax for features that already exist (e.g. via libraries). For example: classes and modules. - New functionality in the standard library. For example: New methods for strings and arrays - Promises (for asynchronous programming) - Maps and sets - Completely new features. For example: Generators, proxies and WeakMaps.",
+      "locator": "normalized:L253-L266",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_aeaf70a9",
+      "topic": "ES6 Features",
+      "claim": "ECMAScript 2015 brought significant improvements to JavaScript, including classes, modules, promises, maps, sets, generators, proxies, and weakmaps.",
+      "evidence": "ECMAScript 6 (short name: ES6; official name: ECMAScript 2015) was ratified as a standard on June 17. Getting there took a while... ECMAScript 6 has three major groups of features: - Better syntax for features that already exist (e.g. via libraries). For example: classes and modules. - New functionality in the standard library. For example: New methods for strings and arrays - Promises (for asynchronous programming) - Maps and sets - Completely new features. For example: Generators, proxies and WeakMaps.",
+      "locator": "normalized:L245-L266",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_27ad4435",
+      "topic": "ES6 Features",
+      "claim": "ECMAScript 2015 introduced block-structured variables using 'let' which allows variables to be scoped locally to the code within braces.",
+      "evidence": "We can write: for (let i = 0; i < array.length; ++i) { // ... } And i is scoped to the for loop.",
+      "locator": "normalized:L157-L158",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c000_51968cfa",
+      "topic": "ES6 Features",
+      "claim": "ECMAScript 2015 introduced rest parameters using the spread operator (...) which collects the rest of the arguments without needing to slice arguments.",
+      "evidence": "We can also write: function foo (first, ...rest) { // ... } And presto, rest collects the rest of the arguments without a lot of malarky involving slicing arguments.",
+      "locator": "normalized:L165-L168",
+      "chunk_index": 0
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_af460f5c",
+      "topic": "Data Types",
+      "claim": "All values in JavaScript are expressions.",
+      "evidence": "All values are expressions. That's easy!",
+      "locator": "normalized:L369-L369",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_c7f74379",
+      "topic": "Data Types",
+      "claim": "Some expressions are values, but not all expressions are values.",
+      "evidence": "Boiling water plus ground coffee is an expression. But it isn't a value.",
+      "locator": "normalized:L373-L373",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_63309ab2",
+      "topic": "Data Types",
+      "claim": "Strings are values and also expressions by themselves.",
+      "evidence": "Since strings are values, they are also expressions by themselves.",
+      "locator": "normalized:L389-L389",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_0af6cdc8",
+      "topic": "Data Types",
+      "claim": "Expressions combining strings with operators are not values, but are expressions.",
+      "evidence": "But strings with operators are not values, they are expressions.",
+      "locator": "normalized:L389-L389",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_91d046cb",
+      "topic": "Data Types",
+      "claim": "JavaScript uses the === operator to test if two values are identical.",
+      "evidence": "In JavaScript, we test whether two values are identical with the === operator",
+      "locator": "normalized:L397-L397",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_4a5169f2",
+      "topic": "Data Types",
+      "claim": "Two values are not identical if they have different types.",
+      "evidence": "First, sometimes, the cups are of different kinds. One is a demitasse, the other a mug. This corresponds to comparing two things in JavaScript that have different _types_.",
+      "locator": "normalized:L401-L403",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_e52d0c91",
+      "topic": "Data Types",
+      "claim": "Two values of the same type but different content are not identical.",
+      "evidence": "Second, sometimes, the cups are of the same type\u2014perhaps two espresso cups\u2014but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different \"content.\"",
+      "locator": "normalized:L407-L409",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_5ca691b6",
+      "topic": "Data Types",
+      "claim": "Values of primitive types like strings, numbers, and booleans are identical if they have the same type and content.",
+      "evidence": "Third, some types of cups have no distinguishing marks on them. If they are the same kind of cup, and they hold the same contents, we have no way to tell the difference between them. This is the case with the strings, numbers, and booleans we have seen so far.",
+      "locator": "normalized:L419-L420",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_f5177689",
+      "topic": "Data Types",
+      "claim": "Primitive types in JavaScript include strings, numbers, and booleans.",
+      "evidence": "Strings, numbers, and booleans are examples of what JavaScript calls \"value\" or \"primitive\" types.",
+      "locator": "normalized:L425-L425",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_a5bf1c30",
+      "topic": "Data Types",
+      "claim": "Arrays are reference types, not value types.",
+      "evidence": "Like arrays, every time you evaluate an expression to produce a function, you get a new function that is not identical to any other function, even if you use the same expression to generate it. \"Function\" is a reference type.",
+      "locator": "normalized:L569-L569",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_bd60a1c9",
+      "topic": "Data Types",
+      "claim": "Every time an array expression is evaluated, it creates a new unique array.",
+      "evidence": "Every time you evaluate an expression (including typing something in) to create an array, you're creating a new, distinct value even if it _appears_ to be the same as some other array value.",
+      "locator": "normalized:L451-L451",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_6113f4c9",
+      "topic": "Data Types",
+      "claim": "Functions are reference types in JavaScript.",
+      "evidence": "Like arrays, every time you evaluate an expression to produce a function, you get a new function that is not identical to any other function, even if you use the same expression to generate it. \"Function\" is a reference type.",
+      "locator": "normalized:L569-L569",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_f150c916",
+      "topic": "Data Types",
+      "claim": "The undefined value in JavaScript is its own type and acts like a value type.",
+      "evidence": "undefined is its own type of value, and it acts like a value type:",
+      "locator": "normalized:L663-L663",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_a486ff67",
+      "topic": "Data Types",
+      "claim": "The void operator always evaluates to undefined regardless of input.",
+      "evidence": "**void** 0 _//=> undefined_ **void** 1 _//=> undefined_ **void** (2 + 2) _//=> undefined_",
+      "locator": "normalized:L695-L695",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_d9e1633d",
+      "topic": "Functions",
+      "claim": "Functions in JavaScript are values.",
+      "evidence": "In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps.",
+      "locator": "normalized:L539-L540",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_967c92c8",
+      "topic": "Functions",
+      "claim": "Functions can be applied to zero or more arguments to produce a value.",
+      "evidence": "Let's put functions to work. The way we use functions is to _apply_ them to zero or more values called _arguments_. Just as 2 + 2 produces a value (in this case 4), applying a function to zero or more arguments produces a value as well.",
+      "locator": "normalized:L571-L574",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_f50b7168",
+      "topic": "Functions",
+      "claim": "Functions can return values or evaluate expressions.",
+      "evidence": "We can make a function that returns a value by putting the value to the right of the arrow.",
+      "locator": "normalized:L595-L595",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_26084f35",
+      "topic": "Functions",
+      "claim": "Functions can return the result of evaluating another function.",
+      "evidence": "Yes we can! Functions can return the value of evaluating another function.",
+      "locator": "normalized:L607-L607",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_f2f66e0e",
+      "topic": "Functions",
+      "claim": "Functions can contain blocks with statements.",
+      "evidence": "There's another thing we can put to the right of an arrow, a _block_. A block has zero or more _statements_, separated by semicolons.",
+      "locator": "normalized:L647-L648",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_6ac867c8",
+      "topic": "Functions",
+      "claim": "Blocks with statements evaluate to undefined unless a return statement is used.",
+      "evidence": "It returns the result of evaluating a block that has no statements. What would that be? Let's try it: (() => {})() _//=> undefined_",
+      "locator": "normalized:L653-L657",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_790fd0dd",
+      "topic": "Functions",
+      "claim": "The return statement immediately terminates function execution and returns a value.",
+      "evidence": "The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression.",
+      "locator": "normalized:L749-L750",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_44b6c953",
+      "topic": "Functions",
+      "claim": "Statements cannot be used as expressions in functions.",
+      "evidence": "Statements belong inside blocks and only inside blocks. Some languages simplify this by making everything an expression, but JavaScript maintains this distinction.",
+      "locator": "normalized:L771-L772",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_d092a8a7",
+      "topic": "Functions",
+      "claim": "Functions can be returned from other functions.",
+      "evidence": "If an expression that evaluates to a function is, well, an expression, and if a return statement can have any expression on its right side\u2026 _Can we put an expression that evaluates to a function on the right side of a function expression?_",
+      "locator": "normalized:L775-L775",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_1020b971",
+      "topic": "Data Types",
+      "claim": "JavaScript literals represent fixed values in source code.",
+      "evidence": "In computer science, a literal is a notation for representing a fixed value in source code.",
+      "locator": "normalized:L459-L459",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_312c59f3",
+      "topic": "Data Types",
+      "claim": "Numbers in JavaScript can be represented in different bases.",
+      "evidence": "If we start a literal with a zero, it is an octal literal. So the literal 042 is 42 base 8, which is actually 34 base 10.",
+      "locator": "normalized:L469-L469",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_91fb4102",
+      "topic": "Data Types",
+      "claim": "JavaScript numbers are internally represented as double-precision floating point.",
+      "evidence": "Internally, both 042 and 34 have the same representation, as double-precision floating point numbers.",
+      "locator": "normalized:L471-L471",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_0b3617a4",
+      "topic": "Data Types",
+      "claim": "JavaScript has a limit on the largest safe integer it can handle.",
+      "evidence": "The largest integer JavaScript can safely handle is 9007199254740991, or 2['53'] - 1.",
+      "locator": "normalized:L473-L473",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_59aff277",
+      "topic": "Data Types",
+      "claim": "Floating point numbers in JavaScript can lead to precision errors.",
+      "evidence": "This kind of \"inexactitude\" can be ignored when performing calculations that have an acceptable deviation.",
+      "locator": "normalized:L501-L501",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_0d06ba16",
+      "topic": "Data Types",
+      "claim": "JavaScript supports various arithmetic operators including modulus and unary negation.",
+      "evidence": "In addition to the common +, -, *, and /, JavaScript also supports modulus, %, and unary negation, -:",
+      "locator": "normalized:L515-L515",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_7d244f67",
+      "topic": "Control Flow",
+      "claim": "JavaScript operators have precedence rules similar to mathematical parsing.",
+      "evidence": "JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2)",
+      "locator": "normalized:L513-L513",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c001_0e695ad9",
+      "topic": "Control Flow",
+      "claim": "The comma operator evaluates both operands and returns the value of the right-hand operand.",
+      "evidence": "The comma operator in JavaScript is interesting. It takes two arguments, evaluates them both, and itself evaluates to the value of the right-hand argument.",
+      "locator": "normalized:L621-L621",
+      "chunk_index": 1
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_1bc1cdf2",
+      "topic": "Functions",
+      "claim": "A function block with one or more expressions evaluates to undefined",
+      "evidence": "But no matter how we arrange them, a block with one or more expressions still evaluates to undefined",
+      "locator": "normalized:L731-L731",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_6611cb1b",
+      "topic": "Functions",
+      "claim": "A function with a single expression in its body evaluates to that expression's value",
+      "evidence": "(() => 2 + 2)() _//=> 4_ (() => { 2 + 2 })() _//=> undefined_ (() => (1 + 1, 2 + 2))() _//=> 4_ (() => { 1 + 1; 2 + 2 })() _//=> undefined_",
+      "locator": "normalized:L747-L747",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_e3030089",
+      "topic": "Functions",
+      "claim": "Using the return keyword in a function block allows returning a specific value",
+      "evidence": "(() => { return 0 })() _//=> 0_ (() => { return 1 })() _//=> 1_ (() => { return 'Hello ' + 'World' })() _// 'Hello World'_",
+      "locator": "normalized:L751-L751",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_f34f59ce",
+      "topic": "Functions",
+      "claim": "The return statement immediately terminates function execution and returns the result of its expression",
+      "evidence": "The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression",
+      "locator": "normalized:L753-L753",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_e7a5d35d",
+      "topic": "Functions",
+      "claim": "A return statement cannot be used as an expression in a simple function",
+      "evidence": "(() => return 0)() _//=> ERROR_",
+      "locator": "normalized:L767-L767",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_07778a80",
+      "topic": "Functions",
+      "claim": "Functions can be nested to return other functions",
+      "evidence": "() => () => 0 _// a function, that returns a function, that returns zero_",
+      "locator": "normalized:L779-L779",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_ca2b6c7f",
+      "topic": "Functions",
+      "claim": "Functions can be defined with arguments",
+      "evidence": "(room) => {} _// a function with one argument, room_",
+      "locator": "normalized:L811-L811",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_3ae87b2f",
+      "topic": "Functions",
+      "claim": "Functions can be applied to arguments by placing them in parentheses after the function",
+      "evidence": "((diameter) => diameter * 3.14159265)(2) _//=> 6.2831853_",
+      "locator": "normalized:L825-L825",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_abe3137c",
+      "topic": "Functions",
+      "claim": "Functions can be applied to multiple arguments separated by commas",
+      "evidence": "((room, board) => room + board)(800, 150) _//=> 950_",
+      "locator": "normalized:L837-L837",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_520a0eb7",
+      "topic": "Functions",
+      "claim": "JavaScript uses call by value evaluation strategy",
+      "evidence": "Like most contemporary programming languages, JavaScript uses the \"call by value\" evaluation strategy",
+      "locator": "normalized:L863-L863",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_f52d858a",
+      "topic": "Functions",
+      "claim": "When applying a function, JavaScript evaluates all expressions and passes the resulting values to the function",
+      "evidence": "When you write some code that appears to apply a function to an expression or expressions, JavaScript evaluates all of those expressions and applies the functions to the resulting value(s)",
+      "locator": "normalized:L873-L873",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_d6c76f77",
+      "topic": "Functions",
+      "claim": "Every time a function is invoked, a new environment is created",
+      "evidence": "Every time a function is invoked (\"invoked\" means \"applied to zero or more arguments), a new _environment_ is created",
+      "locator": "normalized:L891-L891",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_a059bfca",
+      "topic": "Functions",
+      "claim": "Arguments are bound to names in the function's environment when the function is applied",
+      "evidence": "When you apply the function to the arguments, an entry is placed in the dictionary for each argument",
+      "locator": "normalized:L899-L899",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_80c0e9ec",
+      "topic": "Functions",
+      "claim": "Variables in a function are evaluated by looking up their value in the environment",
+      "evidence": "The expression 'x' (the right side of the function) is evaluated within the environment we just created",
+      "locator": "normalized:L919-L919",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_bea234b8",
+      "topic": "Functions",
+      "claim": "JavaScript implements call by sharing semantics for passing arguments",
+      "evidence": "JavaScript passes references as arguments, JavaScript can be said to implement \"call by sharing\" semantics",
+      "locator": "normalized:L943-L943",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_9477a948",
+      "topic": "Functions",
+      "claim": "Functions that contain free variables are called closures",
+      "evidence": "Functions containing one or more free variables are called _closures_",
+      "locator": "normalized:L999-L999",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_d44b5d6f",
+      "topic": "Functions",
+      "claim": "Pure functions contain no free variables and always produce the same output for the same input",
+      "evidence": "Functions containing no free variables are called _pure functions_",
+      "locator": "normalized:L997-L997",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_63f9b3c7",
+      "topic": "Functions",
+      "claim": "Closures can access variables from their outer function's environment",
+      "evidence": "The environment for ((y) => x)(2) is _actually_ {y: 2, '..': {x: 1, ...}}",
+      "locator": "normalized:L1029-L1029",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_c522b7da",
+      "topic": "Functions",
+      "claim": "When a variable has the same name as an ancestor environment's variable, it shadows the ancestor",
+      "evidence": "When a variable has the same name as an ancestor environment's binding, it is said to _shadow_ the ancestor",
+      "locator": "normalized:L1069-L1069",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_c61c6a3d",
+      "topic": "Functions",
+      "claim": "Functions can be named by wrapping them in an immediately invoked function expression",
+      "evidence": "((PI) => (diameter) => diameter * PI )(3.14159265)",
+      "locator": "normalized:L1121-L1121",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_ddb1805a",
+      "topic": "Functions",
+      "claim": "Variables can be bound in a function's environment by wrapping the function in an immediately invoked function",
+      "evidence": "We can bind anything we want in an expression by wrapping it in a function that is immediately invoked with the value we want to bind",
+      "locator": "normalized:L1137-L1137",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_a8cc9339",
+      "topic": "Functions",
+      "claim": "Functions can be written with nested expressions to bind variables inside their body",
+      "evidence": "(diameter) => ((PI) => diameter * PI)(3.14159265)",
+      "locator": "normalized:L1143-L1143",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_f3d5e401",
+      "topic": "Closures",
+      "claim": "A closure is a function that references variables from an outer function's scope",
+      "evidence": "The function (y) => x is interesting. It contains a _free variable_ , x",
+      "locator": "normalized:L993-L993",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_3b765009",
+      "topic": "Closures",
+      "claim": "Closures can access variables from their enclosing scopes through the environment chain",
+      "evidence": "Whenever a function is applied to arguments, its environment always has a reference to its parent environment",
+      "locator": "normalized:L1027-L1027",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_a411f43a",
+      "topic": "Closures",
+      "claim": "Closures maintain access to variables from their creation environment even after the outer function has returned",
+      "evidence": "The environment for ((y) => x)(2) is _actually_ {y: 2, '..': {x: 1, ...}}",
+      "locator": "normalized:L1029-L1029",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_1d902181",
+      "topic": "Data Types",
+      "claim": "JavaScript distinguishes between value types and reference types",
+      "evidence": "Earlier, we distinguished JavaScript's _value types_ from its _reference types_",
+      "locator": "normalized:L929-L929",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_48036f0d",
+      "topic": "Data Types",
+      "claim": "Value types are copied when bound to names in environments",
+      "evidence": "When JavaScript binds a value-type to a name, it makes a copy of the value and places the copy in the environment",
+      "locator": "normalized:L933-L933",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_6def7930",
+      "topic": "Data Types",
+      "claim": "Reference types are stored as references in environments rather than copies",
+      "evidence": "JavaScript does not place copies of reference values in any environment. JavaScript places _references_ to reference types in environments",
+      "locator": "normalized:L943-L943",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_3c661183",
+      "topic": "Control Flow",
+      "claim": "The return statement terminates function execution and returns a value",
+      "evidence": "The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression",
+      "locator": "normalized:L753-L753",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_d616260a",
+      "topic": "Control Flow",
+      "claim": "A function with a return statement evaluates to the value of the expression following return",
+      "evidence": "(() => { 1 + 1; return 2 + 2 })() _//=> 4_",
+      "locator": "normalized:L755-L755",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_bf34a545",
+      "topic": "Control Flow",
+      "claim": "If a return statement comes before other expressions, those expressions are not executed",
+      "evidence": "(() => { return 1 + 1; 2 + 2 })() _//=> 2_",
+      "locator": "normalized:L759-L759",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_65e0f4fb",
+      "topic": "Control Flow",
+      "claim": "Statements like return cannot be used as expressions in function bodies",
+      "evidence": "(() => return 0)() _//=> ERROR_",
+      "locator": "normalized:L767-L767",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_62edabcd",
+      "topic": "Control Flow",
+      "claim": "Functions with multiple expressions in their body evaluate to undefined unless a return statement is used",
+      "evidence": "(() => { 1 + 1; 2 + 2 })() _//=> undefined_",
+      "locator": "normalized:L735-L735",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c002_06e4be06",
+      "topic": "Control Flow",
+      "claim": "A block with multiple expressions behaves differently than a block with a single expression",
+      "evidence": "As you can see, a block with one expression does not behave like an expression, and a block with more than one expression does not behave like an expression constructed with the comma operator",
+      "locator": "normalized:L739-L739",
+      "chunk_index": 2
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_23ced35c",
+      "topic": "Functions",
+      "claim": "Functions in JavaScript are first-class entities that can be bound to names, passed as arguments, and returned from other functions.",
+      "evidence": "Amazing how such an important idea-naming functions-can be explained _en passant_ in just a few words. That emphasizes one of the things JavaScript gets really, really right: Functions as \"first class entities.\" Functions are values that can be bound to names like any other value, passed as arguments, returned from other functions, and so forth.",
+      "locator": "normalized:L1229-L1229",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_7d447afc",
+      "topic": "Functions",
+      "claim": "Anonymous functions can be named by binding them to identifiers using various techniques including Immediately Invoked Function Expressions (IIFE).",
+      "evidence": "Up to now, all we've really seen are _anonymous functions_ , functions that don't have a name. This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. Naming things is a critical part of programming, but all we've seen so far is how to name arguments.",
+      "locator": "normalized:L1105-L1105",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_f260d294",
+      "topic": "Functions",
+      "claim": "A function can be created by wrapping an expression in parentheses and immediately invoking it with arguments to bind values to names.",
+      "evidence": "In order to bind 3.14159265 to the name PI, we'll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265: ((PI) => _// ????_ )(3.14159265)",
+      "locator": "normalized:L1115-L1117",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_749bb9f4",
+      "topic": "Functions",
+      "claim": "An IIFE can be used to bind a value to a name and then return a function that uses that name.",
+      "evidence": "((PI) => (diameter) => diameter * PI )(3.14159265)",
+      "locator": "normalized:L1121-L1121",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_8c027be9",
+      "topic": "Functions",
+      "claim": "Functions can be written using either arrow syntax or the function keyword.",
+      "evidence": "Here's our repeat function written using a \"fat arrow\" (str) => str + str And here's (almost) the exact same function written using the function keyword: function (str) { return str + str }",
+      "locator": "normalized:L1415-L1421",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_36155d51",
+      "topic": "Functions",
+      "claim": "Named function expressions allow functions to be given a name that is separate from the identifier they are bound to in an environment.",
+      "evidence": "Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function.",
+      "locator": "normalized:L1453-L1453",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_75221f60",
+      "topic": "Functions",
+      "claim": "The name of a function defined with a named function expression becomes a property of the function object itself.",
+      "evidence": "In this book we are not examining JavaScript's tooling such as debuggers baked into browsers, but we will note that when you are navigating call stacks in all modern tools, the function's binding name is ignored but its actual name is displayed, so naming functions is very useful even if they don't get a formal binding, e.g.",
+      "locator": "normalized:L1465-L1465",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_ee84f682",
+      "topic": "Functions",
+      "claim": "A named function expression defines a function whose name is available only within its own body.",
+      "evidence": "The name even is bound to the function _within the function's body_. Is it bound to the function outside of the function's body?",
+      "locator": "normalized:L1487-L1487",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_02cce521",
+      "topic": "Functions",
+      "claim": "Function declarations are statements that define functions and can be hoisted to the top of their scope.",
+      "evidence": "There is another syntax for naming and/or defining a function. It's called a _function declaration statement_ , and it looks a lot like a named function expression, only we use it as a statement: function someName () { // ... }",
+      "locator": "normalized:L1499-L1502",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_9e51dd2b",
+      "topic": "Functions",
+      "claim": "Function declarations behave similarly to named function expressions but are treated as statements.",
+      "evidence": "This behaves a _little_ like: const someName = function someName () {",
+      "locator": "normalized:L1509-L1511",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_2dbe3760",
+      "topic": "Closures",
+      "claim": "Closures capture variables from their enclosing lexical scope, allowing inner functions to access variables from outer scopes even after the outer function has finished executing.",
+      "evidence": "We know this from the chapter on closures, but even though PI is not bound when we invoke diameter_fn by evaluating diameter_fn(2), PI _is_ bound when we evaluated (diameter) => diameter * PI, and thus the expression diameter * PI is able to access values for PI and diameter when we evaluate diameter_fn.",
+      "locator": "normalized:L1281-L1281",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_3f872ab4",
+      "topic": "Closures",
+      "claim": "Variables bound with const follow lexical scoping rules similar to parameters in closures.",
+      "evidence": "Yes. Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope.",
+      "locator": "normalized:L1303-L1303",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_d01cd38c",
+      "topic": "Closures",
+      "claim": "When a variable is bound in an inner scope with the same name as one in an outer scope, the inner binding shadows the outer one.",
+      "evidence": "We say that when we bind a variable using a parameter inside another binding, the inner binding _shadows_ the outer binding. It has effect inside its own scope, but does not affect the binding in the enclosing scope.",
+      "locator": "normalized:L1337-L1337",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_8175ced3",
+      "topic": "Closures",
+      "claim": "Variables bound with const can shadow variables in enclosing scopes, including those in nested blocks.",
+      "evidence": "Ah! const statements don't just shadow values bound within the environments created by functions, they shadow values bound within environments created by blocks!",
+      "locator": "normalized:L1363-L1363",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_02d44087",
+      "topic": "ES6 Features",
+      "claim": "The const keyword allows binding values to names within blocks without incurring the cost of a function invocation.",
+      "evidence": "The const keyword introduces one or more bindings in the block that encloses it. It doesn't incur the cost of a function invocation.",
+      "locator": "normalized:L1199-L1200",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_196da701",
+      "topic": "ES6 Features",
+      "claim": "Multiple constants can be declared in a single const statement by separating them with commas.",
+      "evidence": "We can bind more than one name-value pair by separating them with commas. For readability, most people put one binding per line:",
+      "locator": "normalized:L1231-L1231",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_1e8016e4",
+      "topic": "ES6 Features",
+      "claim": "Constants declared with const cannot be reassigned once they are bound.",
+      "evidence": "JavaScript does not permit us to rebind a name that has been bound with const.",
+      "locator": "normalized:L1395-L1395",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_6e3b242c",
+      "topic": "Control Flow",
+      "claim": "Blocks can contain const statements which introduce new bindings in the block's scope.",
+      "evidence": "const statements occur inside blocks, we can't use them when we write a fat arrow that has an expression as its body.",
+      "locator": "normalized:L1205-L1205",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_428cf457",
+      "topic": "Control Flow",
+      "claim": "If statements can contain blocks which themselves contain const statements.",
+      "evidence": "One of the places you can find blocks is in an if statement. In JavaScript, an if statement looks like this: (n) => { const even = (x) => { if (x === 0) return true; else return !even(x - 1); } return even(n) }",
+      "locator": "normalized:L1243-L1245",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_255ae4fa",
+      "topic": "Data Types",
+      "claim": "Functions are expressions in JavaScript and can be bound to identifiers.",
+      "evidence": "All of our \"functions\" are expressions. This one has a few more moving parts, that's all.",
+      "locator": "normalized:L1123-L1123",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c003_ce80c382",
+      "topic": "Data Types",
+      "claim": "The value of PI can be bound to a name using various techniques including IIFEs.",
+      "evidence": "What is this \"3.14159265\" number? PI[28] , obviously. We'd like to name it so that we can write something like: (diameter) => diameter * PI",
+      "locator": "normalized:L1111-L1111",
+      "chunk_index": 3
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_030568a4",
+      "topic": "Functions",
+      "claim": "In JavaScript, function names in function expressions are not bound in the environment where the function is used, but are bound within the function's own body.",
+      "evidence": "const bindingName = function actualName () { //... }; bindingName //= [Function: actualName] actualName //= ReferenceError: actualName is not defined",
+      "locator": "normalized:L1477-L1481",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_383d9044",
+      "topic": "Functions",
+      "claim": "Function names in function declarations are bound within the function's own body but not outside of it, enabling recursion.",
+      "evidence": "( function even (n) { if (n === 0) { return true } else return !even(n - 1) })(5) //= false ( function even (n) { if (n === 0) { return true } else return !even(n - 1) })(2) //= true even //= Can't find variable: even",
+      "locator": "normalized:L1485-L1495",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_b9a97c4f",
+      "topic": "Functions",
+      "claim": "Function declarations are hoisted to the top of their enclosing scope, allowing them to be used before their declaration in the code.",
+      "evidence": "( function () { return fizzbuzz(); const fizzbuzz = function fizzbuzz () { return \"Fizz\" + \"Buzz\"; } })() //= undefined is not a function (evaluating 'fizzbuzz()') ( function () { return fizzbuzz(); function fizzbuzz () { return \"Fizz\" + \"Buzz\"; } })() //= 'FizzBuzz'",
+      "locator": "normalized:L1521-L1535",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_6b13c230",
+      "topic": "Functions",
+      "claim": "Function declarations must be at the top level of a function or block, and should not be placed inside conditional statements or loops.",
+      "evidence": "( function (camelCase) { return fizzbuzz(); if (camelCase) { function fizzbuzz () { return \"Fizz\" + \"Buzz\"; } } else { function fizzbuzz () { return \"Fizz\" + \"Buzz\"; } } })( true ) //= 'FizzBuzz'? Or ERROR: Can't find variable: fizzbuzz?",
+      "locator": "normalized:L1553-L1555",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_6fc7e62f",
+      "topic": "Functions",
+      "claim": "A function declaration is distinguished from a function expression by the presence of parentheses, which make it an expression rather than a declaration.",
+      "evidence": "function trueDat () { return true } ( function trueDat () { return true })",
+      "locator": "normalized:L1561-L1565",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_536091e8",
+      "topic": "Functional Programming",
+      "claim": "Higher-order functions are functions that take other functions as arguments, return functions, or both.",
+      "evidence": "As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a \"higher-order\" function.",
+      "locator": "normalized:L1577-L1582",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_793dbd2d",
+      "topic": "Functional Programming",
+      "claim": "A combinator is a higher-order function that uses only function application and previously defined combinators to define a result from its arguments.",
+      "evidence": "A combinator is a higher-order function that uses only function application and earlier defined combinators to define a result from its arguments.-Wikipedia",
+      "locator": "normalized:L1587-L1590",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_2e81b4b8",
+      "topic": "Functional Programming",
+      "claim": "The compose combinator takes two functions and returns a new function that applies the second function to its argument and then applies the first function to the result.",
+      "evidence": "const compose = (a, b) => (c) => a(b(c))",
+      "locator": "normalized:L1605-L1605",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_efea46b0",
+      "topic": "Functional Programming",
+      "claim": "A function decorator is a higher-order function that takes one function as an argument and returns another function that is a variation of the original function.",
+      "evidence": "A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function.",
+      "locator": "normalized:L1627-L1630",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_daff5a65",
+      "topic": "Functional Programming",
+      "claim": "Function decorators can modify a function's behavior while maintaining strong semantic relationship to the original function.",
+      "evidence": "not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics.",
+      "locator": "normalized:L1653-L1653",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_156368ea",
+      "topic": "Functional Programming",
+      "claim": "Composition is a fundamental building block in functional programming where two or more functions are chained together.",
+      "evidence": "One of the most basic of these building blocks is composition const cookAndEat = (food) => eat(cook(food));",
+      "locator": "normalized:L1665-L1667",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_96af8ce9",
+      "topic": "Functional Programming",
+      "claim": "Partial application is a technique where a function is applied to some of its arguments, returning a new function that takes the remaining arguments.",
+      "evidence": "Another basic building block is partial application. When a function takes multiple arguments, we \"apply\" the function to the arguments by evaluating it with all of the arguments, producing a value. But what if we only supply some of the arguments? In that case, we can't get the final value, but we can get a function that represents part of our application.",
+      "locator": "normalized:L1689-L1692",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_4b102fd6",
+      "topic": "Functions",
+      "claim": "The arguments object in JavaScript contains all arguments passed to a function, regardless of how many are declared in the function signature.",
+      "evidence": "const plus = function (a, b) { return arguments[0] + arguments[1]; } plus(2,3) //= 5 const args = function (a, b) { return arguments; } args(2,3) //= { '0': 2, '1': 3 }",
+      "locator": "normalized:L1745-L1749",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_1321e781",
+      "topic": "Functions",
+      "claim": "The arguments object is not an array but resembles an object with numeric property names.",
+      "evidence": "Although arguments looks like an array, it isn't an array: It's more like an object that happens to bind some values to properties with names that look like integers starting with zero:",
+      "locator": "normalized:L1747-L1747",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_3c4f4a58",
+      "topic": "Functions",
+      "claim": "Fat arrow functions do not bind their own arguments object; instead, they inherit it from their enclosing scope.",
+      "evidence": "The magic names this and arguments have a different behaviour when you invoke a function that was defined with a fat arrow: Instead of being bound when the function is invoked, the fat arrow function always acquires the bindings for this and arguments from its enclosing scope, just like any other binding.",
+      "locator": "normalized:L1769-L1772",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_f32b8ee5",
+      "topic": "Functions",
+      "claim": "Functions in JavaScript are reference values that can be assigned to variables, passed as arguments, and returned from other functions.",
+      "evidence": "Functions are values that can be part of expressions, returned from other functions, and so forth. Functions are reference values.",
+      "locator": "normalized:L1819-L1821",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_555142d4",
+      "topic": "Functions",
+      "claim": "Function declarations are hoisted to the top of their containing scope, allowing them to be called before their definition in the code.",
+      "evidence": "JavaScript uses function declarations to bind functions to names within function scope. Function declarations are \"hoisted.\"",
+      "locator": "normalized:L1839-L1839",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_6bd97bcf",
+      "topic": "Functions",
+      "claim": "Fat arrow functions have expression bodies that evaluate to the value of the expression, while function keyword functions have block bodies that evaluate to the return value or undefined.",
+      "evidence": "Fat arrow functions have expressions or blocks as their bodies. function keyword functions always have blocks as their bodies. Expression bodies evaluate to the value of the expression. Block bodies evaluate to whatever is returned with the return keyword, or to undefined.",
+      "locator": "normalized:L1827-L1835",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c004_fb1d1998",
+      "topic": "Functional Programming",
+      "claim": "The callFirst and callLast recipes allow partial application of a function by fixing the leftmost or rightmost argument respectively.",
+      "evidence": "const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); }",
+      "locator": "normalized:L1871-L1871",
+      "chunk_index": 4
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_6815a951",
+      "topic": "Functions",
+      "claim": "Function application creates a scope.",
+      "evidence": "- Function application creates a scope.",
+      "locator": "normalized:L1841-L1841",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_e3d14cc5",
+      "topic": "Functions",
+      "claim": "Blocks create scopes when const statements are used within them.",
+      "evidence": "- Blocks also create scopes if const statements are within them.",
+      "locator": "normalized:L1843-L1843",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_0a2b6262",
+      "topic": "Functions",
+      "claim": "Scopes are nested and free variable references are closed over.",
+      "evidence": "- Scopes are nested and free variable references closed over.",
+      "locator": "normalized:L1845-L1845",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_cb5e23e6",
+      "topic": "Functions",
+      "claim": "Variables can shadow variables in an enclosing scope.",
+      "evidence": "- Variables can shadow variables in an enclosing scope.",
+      "locator": "normalized:L1847-L1847",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_61082c84",
+      "topic": "Functions",
+      "claim": "Function declarations are hoisted and bind functions to names within function scope.",
+      "evidence": "- JavaScript uses function declarations to bind functions to names within function scope. Function declarations are \"hoisted.\"",
+      "locator": "normalized:L1839-L1839",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_f8ff1530",
+      "topic": "Functions",
+      "claim": "A function body with zero or more statements evaluates to the value of the expression if it's an expression body.",
+      "evidence": "- Function bodies have zero or more statements. Expression bodies evaluate to the value of the expression.",
+      "locator": "normalized:L1831-L1833",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_8e9b2dc6",
+      "topic": "Functions",
+      "claim": "A function body with block statements evaluates to whatever is returned with the return keyword, or to undefined.",
+      "evidence": "- Block bodies evaluate to whatever is returned with the return keyword, or to undefined.",
+      "locator": "normalized:L1835-L1835",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_cb8e1777",
+      "topic": "Functions",
+      "claim": "Partial application can be implemented by binding arguments to the left or right of a function.",
+      "evidence": "const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); }",
+      "locator": "normalized:L1871-L1871",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_ab8e8b34",
+      "topic": "Functions",
+      "claim": "Unary decorator transforms a function to take exactly one argument.",
+      "evidence": "const unary = (fn) => fn.length === 1 ? fn : function (something) { return fn.call( this , something) }",
+      "locator": "normalized:L1937-L1941",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_dab630e2",
+      "topic": "Functions",
+      "claim": "Tap function allows performing side effects on a value while returning the value unchanged.",
+      "evidence": "const tap = (value) => (fn) => ( typeof (fn) === 'function' && fn(value), value )",
+      "locator": "normalized:L1961-L1961",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_9a92e28a",
+      "topic": "Functions",
+      "claim": "Maybe decorator prevents function execution when arguments are null or undefined.",
+      "evidence": "const maybe = (fn) => function (...args) { if (args.length === 0) { return } else { for ( let arg of args) { if (arg == null ) return ; } return fn.apply( this , args) } }",
+      "locator": "normalized:L2019-L2029",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_82c2f8d5",
+      "topic": "Functions",
+      "claim": "Once decorator ensures a function is only executed once.",
+      "evidence": "const once = (fn) => { let done = false ; return function () { return done ? void 0 : ((done = true ), fn.apply( this , arguments)) } }",
+      "locator": "normalized:L2051-L2051",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_bc63cac4",
+      "topic": "Functions",
+      "claim": "Left-variadic functions gather parameters from the left side of the parameter list.",
+      "evidence": "const leftVariadic = (fn) => { if (fn.length < 1) { return fn; } else { return function (...args) { const gathered = args.slice(0, args.length - fn.length + 1), spread = args.slice(args.length - fn.length + 1); return fn.apply( this , [gathered].concat(spread) ); } } };",
+      "locator": "normalized:L2127-L2133",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_29805156",
+      "topic": "Functions",
+      "claim": "Left-gather utility function can destructure arrays by gathering elements from the left.",
+      "evidence": "const leftGather = (outputArrayLength) => { return function (inputArray) { return [inputArray.slice(0, inputArray.length - outputArrayLength + 1)].concat( inputArray.slice(inputArray.length - outputArrayLength + 1) ) } };",
+      "locator": "normalized:L2165-L2165",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_7f2d2bae",
+      "topic": "Control Flow",
+      "claim": "The ternary operator evaluates to the second operand if the first is truthy, otherwise evaluates to the third operand.",
+      "evidence": "first ? second : third. It evaluates first, and if first is \"truthy\", it evaluates second and that is its value. If first is not truthy, it evaluates third and that is its value.",
+      "locator": "normalized:L2217-L2217",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_6e389585",
+      "topic": "Control Flow",
+      "claim": "Logical operators !, &&, and || operate on truthiness rather than boolean values.",
+      "evidence": "The reason why truthiness matters is that the various logical operators (!, &&, and ||) actually operate on truthiness, not on boolean values.",
+      "locator": "normalized:L2200-L2200",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c005_6b917a97",
+      "topic": "Data Types",
+      "claim": "In JavaScript, values are either truthy or falsy, with false, null, undefined, NaN, 0, and '' being falsy.",
+      "evidence": "Every value is either \"truthy\" or \"falsy\". Obviously, false is falsy. So are null and undefined, values that semantically represent \"no value.\" NaN is falsy, a value representing the result of a calculation that is not a number. And there are more: 0 is falsy, a value representing \"none of something.\" The empty string, '' is falsy, a value representing having no characters.",
+      "locator": "normalized:L2203-L2205",
+      "chunk_index": 5
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_7042d99c",
+      "topic": "Control Flow",
+      "claim": "Every value in JavaScript is either truthy or falsy, with specific values being falsy including false, null, undefined, NaN, 0, and empty string.",
+      "evidence": "In JavaScript, there is a notion of \"truthiness.\" Every value is either \"truthy\" or \"falsy.\" Obviously, false is falsy. So are null and undefined, values that semantically represent \"no value.\" NaN is falsy, a value representing the result of a calculation that is not a number. And there are more: 0 is falsy, a value representing \"none of something.\" The empty string, '' is falsy, a value representing having no characters.",
+      "locator": "normalized:L2203-L2205",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_92307b4c",
+      "topic": "Control Flow",
+      "claim": "The ternary operator is an expression that evaluates to either the second or third operand based on the truthiness of the first operand.",
+      "evidence": "JavaScript inherited an operator from the C family of languages, the _ternary_ operator. It's the only operator that takes _three_ arguments. It looks like this: first ? second : third. It evaluates first, and if first is \"truthy\", it evaluates second and that is its value. If first is not truthy, it evaluates third and that is its value.",
+      "locator": "normalized:L2209-L2217",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_21b2c562",
+      "topic": "Control Flow",
+      "claim": "The logical operators !, &&, and || operate on truthiness rather than strict boolean values.",
+      "evidence": "The reason why truthiness matters is that the various logical operators (as well as the if statement) actually operate on _truthiness_ , not on boolean values.",
+      "locator": "normalized:L2207-L2207",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_555227e5",
+      "topic": "Control Flow",
+      "claim": "The ! operator always returns true if its argument is falsy, and false if its argument is truthy.",
+      "evidence": "! is the simplest. It always returns false if its argument is truthy, and true is its argument is not truthy:",
+      "locator": "normalized:L2239-L2239",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_fe369706",
+      "topic": "Control Flow",
+      "claim": "The !! operator is used to convert any value to its boolean equivalent in JavaScript.",
+      "evidence": "Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is not.",
+      "locator": "normalized:L2249-L2249",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_43f1c25a",
+      "topic": "Control Flow",
+      "claim": "The && operator evaluates its left-hand expression and returns the left-hand value if it is falsy, otherwise it evaluates and returns the right-hand expression.",
+      "evidence": "- && evaluates its left-hand expression. - If its left-hand expression evaluates to something falsy, && returns the value of its lefthand expression without evaluating its right-hand expression. - If its left-hand expression evaluates to something truthy, && evaluates its right-hand expression and returns the value of the right-hand expression.",
+      "locator": "normalized:L2261-L2265",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_4fb4e865",
+      "topic": "Control Flow",
+      "claim": "The || operator evaluates its left-hand expression and returns the left-hand value if it is truthy, otherwise it evaluates and returns the right-hand expression.",
+      "evidence": "- || evaluates its left-hand expression. - If its left-hand expression evaluates to something truthy, || returns the value of its lefthand expression without evaluating its right-hand expression. - If its left-hand expression evaluates to something false, || evaluates its right-hand expression and returns the value of the right-hand expression.",
+      "locator": "normalized:L2267-L2271",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_d5c0ef52",
+      "topic": "Control Flow",
+      "claim": "The && and || operators have short-circuit semantics and are considered control-flow operators, not logical operators.",
+      "evidence": "In JavaScript, && and || aren't boolean logical operators in the logical sense. They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a, and the same goes for &&. This is not a subtle distinction.",
+      "locator": "normalized:L2285-L2285",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_36377358",
+      "topic": "Control Flow",
+      "claim": "The ternary operator, ||, and && are control-flow operators that do not always return true or false due to their short-circuit behavior.",
+      "evidence": "The ternary operator (?:), ||, and && are control flow operators, they do not always return true or false, and they have short-cut semantics.",
+      "locator": "normalized:L2343-L2343",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_a91c546a",
+      "topic": "Control Flow",
+      "claim": "Function parameters are eagerly evaluated, which can lead to infinite recursion when using control-flow operators directly.",
+      "evidence": "In contrast to the behaviour of the ternary operator, ||, and &&, function parameters are always : _eagerly evaluated_",
+      "locator": "normalized:L2315-L2315",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_b18758d6",
+      "topic": "Control Flow",
+      "claim": "To implement control-flow semantics in functions, one must pass functions instead of expressions to delay evaluation.",
+      "evidence": "If we need to have functions with control-flow semantics, we can pass anonymous functions. We obviously don't need anything like this for or and and, but to demonstrate the technique:",
+      "locator": "normalized:L2327-L2327",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_674aa832",
+      "topic": "Arrays",
+      "claim": "Array literals in JavaScript are expressions that create new, distinct arrays each time they are evaluated.",
+      "evidence": "Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:",
+      "locator": "normalized:L2397-L2397",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_26084188",
+      "topic": "Arrays",
+      "claim": "Array elements are stored as references to the objects they contain, not copies.",
+      "evidence": "a[0] === x _//=> true, arrays store references to the things you put in them.",
+      "locator": "normalized:L2425-L2427",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_61cd6038",
+      "topic": "Arrays",
+      "claim": "Destructuring allows extracting elements from arrays using patterns that mirror array literals.",
+      "evidence": "In JavaScript, we can actually _reverse_ the statement and place the template on the left and a value on the right: **const** [something] = wrapped;",
+      "locator": "normalized:L2445-L2447",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_a8ef2255",
+      "topic": "Arrays",
+      "claim": "Destructuring supports nested patterns for extracting complex data structures.",
+      "evidence": "Destructuring can nest: **const** [[first, last], occupation] = nameAndOccupation;",
+      "locator": "normalized:L2465-L2467",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_bfc95560",
+      "topic": "Arrays",
+      "claim": "The spread operator (...) can be used to gather remaining elements into an array during destructuring.",
+      "evidence": "**const** [car, ...cdr] = [1, 2, 3, 4, 5];",
+      "locator": "normalized:L2475-L2475",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_19132b68",
+      "topic": "Arrays",
+      "claim": "The spread operator can also be used to insert elements of an array into another array literal.",
+      "evidence": "**const** cons = [car, ...cdr];",
+      "locator": "normalized:L2507-L2507",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_d39a63fd",
+      "topic": "Arrays",
+      "claim": "JavaScript's destructuring does not perform pattern matching like some other languages; it assigns undefined when there are insufficient elements.",
+      "evidence": "In such a language, if you wrote something like: **const** [what] = []; That match would fail because the array doesn't have an element to assign to what. But this is not how JavaScript works. JavaScript tries its best to assign things, and if there isn't something that fits, JavaScript binds undefined to the name.",
+      "locator": "normalized:L2517-L2527",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_2c94fe92",
+      "topic": "Arrays",
+      "claim": "Destructuring can be used to simulate multiple return values from functions.",
+      "evidence": "Some languages support multiple return values: A function can return several things at once, like a value and an error code. This can easily be emulated in JavaScript with destructuring:",
+      "locator": "normalized:L2541-L2541",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_bebf4bbb",
+      "topic": "Arrays",
+      "claim": "Parameters can be destructured using the spread operator to collect remaining arguments into an array.",
+      "evidence": "**const** numbers = (...nums) => nums; numbers(1, 2, 3, 4, 5) _//=> [1,2,3,4,5]_ **const** headAndTail = (head, ...tail) => [head, tail]; headAndTail(1, 2, 3, 4, 5) _//=> [1,[2,3,4,5]]_",
+      "locator": "normalized:L2569-L2569",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c006_a97dcee6",
+      "topic": "Data Types",
+      "claim": "JavaScript arrays are zero-based indexed collections.",
+      "evidence": "As we can see, JavaScript Arrays are zero-based[56] .",
+      "locator": "normalized:L2413-L2413",
+      "chunk_index": 6
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_73162459",
+      "topic": "Functions",
+      "claim": "A function can use default arguments to provide fallback values for parameters when they are not supplied.",
+      "evidence": "const factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work);",
+      "locator": "normalized:L2969-L2969",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_05e31b8a",
+      "topic": "Functions",
+      "claim": "Default arguments allow functions to be called with fewer arguments than defined, providing sensible defaults.",
+      "evidence": "We want to write something like factorial(6), and have JavaScript automatically know that we really mean factorial(6, 1).",
+      "locator": "normalized:L2960-L2961",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_f9ea3f48",
+      "topic": "Recursion",
+      "claim": "Linear recursion is a form of recursion where a problem is divided into smaller subproblems, solved recursively, and then composed back together.",
+      "evidence": "This simpler form of \"divide and conquer\" is called _linear recursion_.",
+      "locator": "normalized:L2663-L2663",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_a28e505e",
+      "topic": "Recursion",
+      "claim": "Recursive functions can be used to process self-similar data structures like lists by breaking them into parts and solving each part.",
+      "evidence": "Our length function is _recursive_, it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.",
+      "locator": "normalized:L2637-L2637",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_c16dd271",
+      "topic": "Arrays",
+      "claim": "Arrays can be defined recursively as either empty or consisting of an element concatenated with another array.",
+      "evidence": "1. Empty, or; 2. Consists of an element concatenated with a list .",
+      "locator": "normalized:L2591-L2593",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_828a0bea",
+      "topic": "Arrays",
+      "claim": "Array literals combined with spread operators mirror the behavior of destructuring with rest parameters.",
+      "evidence": "Thanks to the parallel between array literals + spreads with destructuring + rests, we can also use the same rules to decompose lists:",
+      "locator": "normalized:L2599-L2600",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_91cbe02f",
+      "topic": "Functions",
+      "claim": "Functions can be written to accept a variable number of arguments using rest parameters.",
+      "evidence": "const headAndTail = (head, ...tail) => [head, tail];",
+      "locator": "normalized:L2569-L2569",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_71b34915",
+      "topic": "Functions",
+      "claim": "The rest parameter syntax allows capturing remaining arguments into an array.",
+      "evidence": "Gathering in parameters has a long history, and the usual terms are to call gathering \"pattern matching\" and to call a name that is bound to gathered values a \"rest parameter.\"",
+      "locator": "normalized:L2573-L2573",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_46e76d30",
+      "topic": "Functions",
+      "claim": "Functions can be designed to handle recursive calls in tail position to optimize memory usage.",
+      "evidence": "If a function makes a call in tail position, JavaScript optimizes away the function call overhead and stack space.",
+      "locator": "normalized:L2827-L2827",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_763dd911",
+      "topic": "Functions",
+      "claim": "Tail-call optimization allows recursive functions to avoid accumulating stack frames by passing accumulated results forward.",
+      "evidence": "The obvious solution? Push the 1 + work into the call to length.",
+      "locator": "normalized:L2837-L2837",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_8145b7fe",
+      "topic": "Functions",
+      "claim": "Tail-call optimized functions can process large datasets without running out of memory.",
+      "evidence": "We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls.",
+      "locator": "normalized:L2913-L2913",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_b3f83ae0",
+      "topic": "Functional Programming",
+      "claim": "Mapping is a special case of linear recursion where a function is applied to each element of a list.",
+      "evidence": "This specific case of linear recursion is called \"mapping,\"",
+      "locator": "normalized:L2711-L2711",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_96d287b2",
+      "topic": "Functional Programming",
+      "claim": "Folding is a generalization of mapping that combines elements using a function and an accumulator.",
+      "evidence": "Our foldWith function is a generalization of our mapWith function.",
+      "locator": "normalized:L2745-L2745",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_1bbe8d42",
+      "topic": "Functional Programming",
+      "claim": "Map operations can be expressed using fold operations by providing appropriate combining logic.",
+      "evidence": "We can represent a map as a fold, we just need to supply the array rebuilding code:",
+      "locator": "normalized:L2751-L2751",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_5973a384",
+      "topic": "Functional Programming",
+      "claim": "Length calculations can be expressed using fold operations with appropriate terminal and combining values.",
+      "evidence": "length = (array) => foldWith((first, rest) => 1 + rest, 0, array);",
+      "locator": "normalized:L2767-L2767",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_8031fad6",
+      "topic": "Arrays",
+      "claim": "Destructuring with rest parameters can split arrays into first element and the rest.",
+      "evidence": "const [first, ...rest] = [\"foo\", \"bar\", \"baz\"];",
+      "locator": "normalized:L2607-L2607",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_0038036d",
+      "topic": "Arrays",
+      "claim": "Empty arrays can be detected using destructuring with rest parameters.",
+      "evidence": "const isEmpty = ([first, ...rest]) => first === undefined ;",
+      "locator": "normalized:L2611-L2611",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_b4eaef99",
+      "topic": "Functions",
+      "claim": "Functions can be written to check for terminal cases in recursive algorithms.",
+      "evidence": "First, we pick what we call a _terminal case_. What is the length of an empty array? 0.",
+      "locator": "normalized:L2625-L2625",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_eef35f0b",
+      "topic": "Functions",
+      "claim": "Recursive functions can be transformed to use tail calls by passing accumulated values forward.",
+      "evidence": "const lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === undefined ? numberToBeAdded : lengthDelaysWork(rest, 1 + numberToBeAdded)",
+      "locator": "normalized:L2859-L2861",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c007_89131990",
+      "topic": "Functions",
+      "claim": "Tail-call optimized functions can be implemented using helper functions that accumulate results.",
+      "evidence": "const mapWithDelaysWork = (fn, [first, ...rest], prepend) => first === undefined ? prepend : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]);",
+      "locator": "normalized:L2879-L2885",
+      "chunk_index": 7
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_1b1846f8",
+      "topic": "Functions",
+      "claim": "A function can be created by partially applying another function with specific arguments using a helper function like callLast.",
+      "evidence": "const callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);",
+      "locator": "normalized:L2945-L2945",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_19597ba1",
+      "topic": "Functions",
+      "claim": "Partial application allows creating a new function with some arguments pre-filled.",
+      "evidence": "const factorial = callLast(factorialWithDelayedWork, 1);",
+      "locator": "normalized:L2947-L2947",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_a629186a",
+      "topic": "Functions",
+      "claim": "Default arguments provide fallback values for function parameters when they are not supplied.",
+      "evidence": "const factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work);",
+      "locator": "normalized:L2969-L2969",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_6790774e",
+      "topic": "Functions",
+      "claim": "Default arguments improve readability by hiding implementation details from users of the function.",
+      "evidence": "We want to write something like factorial(6), and have JavaScript automatically know that we really mean factorial(6, 1).",
+      "locator": "normalized:L2961-L2961",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_6ad1260d",
+      "topic": "Functions",
+      "claim": "Default parameters can be used with destructuring patterns to provide fallback values.",
+      "evidence": "const [first, second = \"two\"] = [\"one\"];",
+      "locator": "normalized:L2985-L2985",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_c8b221c2",
+      "topic": "Arrays",
+      "claim": "Using array destructuring with rest syntax creates temporary arrays which can be inefficient.",
+      "evidence": "Every time we call mapWith, we're calling [...prepend, fn(first)]. To do that, we take the array in prepend and push fn(first) onto the end, creating a new array that will be passed to the next invocation of mapWith.",
+      "locator": "normalized:L3017-L3017",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_91f47058",
+      "topic": "Arrays",
+      "claim": "Repeated creation and copying of arrays during recursion leads to performance issues due to garbage collection overhead.",
+      "evidence": "We are creating a lot of temporary arrays, and it spends an enormous amount of time copying elements into arrays that end up being discarded.",
+      "locator": "normalized:L3029-L3029",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_ebee323d",
+      "topic": "Recursion",
+      "claim": "Tail recursion can be used to implement functions like mapWith in constant space.",
+      "evidence": "We have now seen how to use Tail Calls to execute mapWith in constant space:",
+      "locator": "normalized:L3005-L3005",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_59f27fdc",
+      "topic": "Objects",
+      "claim": "JavaScript objects are mappings from string keys to values.",
+      "evidence": "In JavaScript, an object is a map from string keys to values.",
+      "locator": "normalized:L3159-L3159",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_7d531611",
+      "topic": "Objects",
+      "claim": "Objects can be created using literal syntax with key-value pairs.",
+      "evidence": "{ year: 2012, month: 6, day: 14 }",
+      "locator": "normalized:L3171-L3171",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_bdd03bd9",
+      "topic": "Objects",
+      "claim": "Object properties can be accessed using bracket notation with string keys.",
+      "evidence": "{ year: 2012, month: 6, day: 14 }['day']",
+      "locator": "normalized:L3179-L3179",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_097dc31e",
+      "topic": "Objects",
+      "claim": "Property access using dot notation is equivalent to bracket notation when property names are valid identifiers.",
+      "evidence": "date['day'] === date.day",
+      "locator": "normalized:L3205-L3205",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_cd9806d0",
+      "topic": "Objects",
+      "claim": "Object keys can be computed expressions enclosed in square brackets.",
+      "evidence": "{ [\"p\" + \"i\"]: 3.14159265 }",
+      "locator": "normalized:L3209-L3209",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_72751144",
+      "topic": "Objects",
+      "claim": "Objects can contain functions as values, which can be defined using various syntaxes including compact method syntax.",
+      "evidence": "const Mathematics = { abs: (a) => a < 0 ? -a : a };",
+      "locator": "normalized:L3213-L3213",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_1dea7a02",
+      "topic": "Data Types",
+      "claim": "JavaScript objects are collections of key-value pairs where keys are strings and values can be any type.",
+      "evidence": "JavaScript has dictionaries, and it calls them \"objects.\" The word \"object\" is loaded in programming circles, due to the widespread use of the term \"object-oriented programming\" that was coined by Alan Kay but has since come to mean many, many things to many different people.",
+      "locator": "normalized:L3157-L3157",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_1a1a5298",
+      "topic": "Destructuring",
+      "claim": "Object destructuring allows extracting values from objects using pattern matching.",
+      "evidence": "const {name: { first: given, last: surname}, occupation: { title: title } } = user;",
+      "locator": "normalized:L3245-L3245",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_eb781eda",
+      "topic": "Destructuring",
+      "claim": "When destructuring object properties with identical names, shorthand syntax can be used.",
+      "evidence": "const description = ({name: { first }, occupation: { title } }) => ` ${ first } is a ${ title } `;",
+      "locator": "normalized:L3263-L3263",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_ddc16c7a",
+      "topic": "ES6 Features",
+      "claim": "Default parameters allow specifying fallback values for function arguments.",
+      "evidence": "const factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work);",
+      "locator": "normalized:L2969-L2969",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_2b8ffe44",
+      "topic": "ES6 Features",
+      "claim": "Destructuring with default values provides fallbacks for missing properties.",
+      "evidence": "const [first, second = \"two\"] = [\"one\"];",
+      "locator": "normalized:L2985-L2985",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_680c36fd",
+      "topic": "Functional Programming",
+      "claim": "Tail recursion can be used to optimize recursive algorithms for better space efficiency.",
+      "evidence": "We have now seen how to use Tail Calls to execute mapWith in constant space:",
+      "locator": "normalized:L3005-L3005",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c008_098172e6",
+      "topic": "Functional Programming",
+      "claim": "Functional programming techniques can be applied to data structures like linked lists.",
+      "evidence": "We'll look at linked lists again when we look at Plain Old JavaScript Objects.",
+      "locator": "normalized:L3109-L3109",
+      "chunk_index": 8
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_c544514a",
+      "topic": "Functions",
+      "claim": "A function can be written to delay work by using a delayed parameter to accumulate results in reverse order.",
+      "evidence": "const copy2 = (node, delayed = EMPTY) => node === EMPTY ? delayed : copy2(node.rest, { first: node.first, rest: delayed });",
+      "locator": "normalized:L3319-L3321",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_b0ce324f",
+      "topic": "Functions",
+      "claim": "A reverse function can be implemented using tail recursion with an accumulator to build the reversed list.",
+      "evidence": "const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed });",
+      "locator": "normalized:L3329-L3329",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_37d95a79",
+      "topic": "Functions",
+      "claim": "A reverseMapWith function applies a transformation to each element and builds the result in reverse order.",
+      "evidence": "const reverseMapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? delayed : reverseMapWith(fn, node.rest, { first: fn(node.first), rest: delayed });",
+      "locator": "normalized:L3333-L3335",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_dae51800",
+      "topic": "Functions",
+      "claim": "A mapWith function can be implemented by applying a transformation and then reversing the result to maintain original order.",
+      "evidence": "const mapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? reverse(delayed) : mapWith(fn, node.rest, { first: fn(node.first), rest: delayed });",
+      "locator": "normalized:L3341-L3341",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_d730d811",
+      "topic": "Data Types",
+      "claim": "JavaScript arrays and objects can be mutated, changing their structure while maintaining the same identity.",
+      "evidence": "In JavaScript, almost every type of value can _mutate_. Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate.",
+      "locator": "normalized:L3363-L3363",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_c829e587",
+      "topic": "Data Types",
+      "claim": "Mutating an array element changes the value at that index in the shared array.",
+      "evidence": "oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3 ]",
+      "locator": "normalized:L3365-L3365",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_278bf611",
+      "topic": "Data Types",
+      "claim": "Adding an element to an array extends the array and modifies the shared array object.",
+      "evidence": "oneTwoThree[3] = 'four'; oneTwoThree //=> [ 1, 2, 3, 'four' ]",
+      "locator": "normalized:L3373-L3373",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_8a73052d",
+      "topic": "Data Types",
+      "claim": "Mutating an object property changes the value of that property in the shared object.",
+      "evidence": "name.middleName = 'Austin' name //=> { firstName: 'Leonard', lastName: 'Braithwaite', middleName: 'Austin' }",
+      "locator": "normalized:L3377-L3377",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_f0f82e5b",
+      "topic": "Data Types",
+      "claim": "Multiple variables can reference the same array or object, allowing mutations to affect all references.",
+      "evidence": "Both halloween and allHallowsEve are bound to the same array value within the local environment.",
+      "locator": "normalized:L3381-L3381",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_534805e3",
+      "topic": "Data Types",
+      "claim": "Reassigning a variable name to a new value does not affect other variables referencing the original value.",
+      "evidence": "halloween = [2013, 10, 31]; allHallowsEve //=> [2012, 10, 31]",
+      "locator": "normalized:L3397-L3399",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_cb7ac508",
+      "topic": "Data Types",
+      "claim": "Mutating a shared array through one reference affects all other references to that array.",
+      "evidence": "halloween[0] = 2013; allHallowsEve //=> [2013, 10, 31]",
+      "locator": "normalized:L3403-L3403",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_21c2cffd",
+      "topic": "Data Types",
+      "claim": "Declaring a variable with const prevents rebinding but not mutation of the value.",
+      "evidence": "Note well: Declaring a variable const does not prevent us from mutating its value, only from rebinding its name.",
+      "locator": "normalized:L3413-L3413",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_49621ae0",
+      "topic": "Data Types",
+      "claim": "Linked lists can share structure between different list instances, causing mutations to affect multiple lists.",
+      "evidence": "Changes made to ThreeToFive affect OneToFive, because they share the same structure.",
+      "locator": "normalized:L3449-L3449",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_7a20825b",
+      "topic": "Data Types",
+      "claim": "Destructuring an array creates a copy of the elements, so mutations to the original do not affect the copy.",
+      "evidence": "The gathering operation [a, b, ...ThreeToFive] is slower, but \"safer.\"",
+      "locator": "normalized:L3461-L3461",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_b8c83a29",
+      "topic": "Functions",
+      "claim": "A copy function can be implemented using mutation to avoid iterating twice and discarding intermediate results.",
+      "evidence": "const copy = (node, head = null , tail = null ) => { if (node === EMPTY) { return head; } else if (tail === null ) { const { first, rest } = node; const newNode = { first, rest }; return copy(rest, newNode, newNode); } else { const { first, rest } = node; const newNode = { first, rest }; tail.rest = newNode; return copy(node.rest, head, newNode); } }",
+      "locator": "normalized:L3479-L3480",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_46dd60d2",
+      "topic": "Functions",
+      "claim": "A mapWith function can be implemented using mutation to build the result efficiently.",
+      "evidence": "const mapWith = (fn, node, head = null , tail = null ) => { if (node === EMPTY) { return head; } else if (tail === null ) { const { first, rest } = node; const newNode = { first: fn(first), rest }; return mapWith(fn, rest, newNode, newNode); } else { const { first, rest } = node; const newNode = { first: fn(first), rest }; tail.rest = newNode; return mapWith(fn, node.rest, head, newNode); } }",
+      "locator": "normalized:L3485-L3485",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_b5dc76d4",
+      "topic": "Control Flow",
+      "claim": "Reassigning a parameter value within a function body rebinds the parameter to a new value.",
+      "evidence": "n = n - 2; return evenStevens(n);",
+      "locator": "normalized:L3505-L3505",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_5511bad5",
+      "topic": "Control Flow",
+      "claim": "Variables declared with const cannot be reassigned, but can be shadowed by variables in nested scopes.",
+      "evidence": "evenStevens = (n) => { if (n === 0) { return true; } else if (n == 1) { return false; } else { return evenStevens(n - 2); } } //=> ERROR, evenStevens is read-only",
+      "locator": "normalized:L3509-L3509",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_fe0b8198",
+      "topic": "Control Flow",
+      "claim": "Variables declared with let can be reassigned within their scope.",
+      "evidence": "let age = 52; age = 53; age //=> 53",
+      "locator": "normalized:L3519-L3521",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_c3aaf4d2",
+      "topic": "Control Flow",
+      "claim": "Shadowing a let variable with another let variable does not affect the original variable's value.",
+      "evidence": "(() => { let age = 49; if (true) { let age = 50; } return age; })() //=> 49",
+      "locator": "normalized:L3527-L3527",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_95d14210",
+      "topic": "Control Flow",
+      "claim": "Reassigning a let variable within a block updates the original variable's value.",
+      "evidence": "(() => { let age = 49; if (true) { age = 50; } return age; })() //=> 50",
+      "locator": "normalized:L3547-L3547",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_119a9247",
+      "topic": "Control Flow",
+      "claim": "Shadowing a let variable with a const variable does not prevent reassignment in the original scope.",
+      "evidence": "(() => { let age = 49; if (true) { const age = 50; } age = 51; return age; })() //=> 51",
+      "locator": "normalized:L3557-L3557",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_ca5feb61",
+      "topic": "Control Flow",
+      "claim": "Shadowing a const variable with a let variable does not allow reassignment in the original scope.",
+      "evidence": "(() => { const age = 49; if (true) { let age = 50; } age = 52; return age; })() //=> ERROR: age is read-only",
+      "locator": "normalized:L3565-L3565",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_b52cc39a",
+      "topic": "Control Flow",
+      "claim": "Variables declared with var are function-scoped, not block-scoped, and can be redeclared without error.",
+      "evidence": "(() => { var age = 49; if (true) { var age = 50; } return age; })() //=> 50",
+      "locator": "normalized:L3585-L3585",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_c960ad9b",
+      "topic": "Control Flow",
+      "claim": "Using var in loops can lead to closures capturing the same variable, causing unexpected behavior.",
+      "evidence": "introductions[1]('Raganwald') //=> 'Hello, Raganwald, my name is undefined'",
+      "locator": "normalized:L3649-L3649",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_150c49cc",
+      "topic": "Control Flow",
+      "claim": "Using let in loops ensures each iteration captures its own variable value in closures.",
+      "evidence": "introductions[1]('Raganwald') //=> 'Hello, Raganwald, my name is Friedrich'",
+      "locator": "normalized:L3663-L3663",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_541294fd",
+      "topic": "Data Types",
+      "claim": "Arrays and linked lists differ in how they handle copying when taking the rest of a list.",
+      "evidence": "- When you take the rest of an array with destructuring ([first, ...rest]), you are given a _copy_ of the elements of the array.\n- When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.",
+      "locator": "normalized:L3689-L3691",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_98ec1cf5",
+      "topic": "Data Types",
+      "claim": "Modifications to a parent array do not affect a child array created via destructuring.",
+      "evidence": "parentArray[2] = \"three\"; childArray[0] = \"two\"; parentArray //=> [1,2,\"three\"] childArray //=> [\"two\",3]",
+      "locator": "normalized:L3703-L3703",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c009_b15b682b",
+      "topic": "Data Types",
+      "claim": "Modifications to a parent linked list affect a child list that shares nodes with the parent.",
+      "evidence": "parentList.rest.rest.first = \"three\"; childList.first = \"two\";",
+      "locator": "normalized:L3705-L3705",
+      "chunk_index": 9
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_944d97d8",
+      "topic": "Data Types",
+      "claim": "When taking the rest of an array with destructuring, you receive a copy of the elements rather than the original elements.",
+      "evidence": "When you take the rest of an array with destructuring ([first, ...rest]), you are given a _copy_ of the elements of the array.",
+      "locator": "normalized:L3689-L3689",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_b59b8f39",
+      "topic": "Data Types",
+      "claim": "When taking the rest of a linked list with its reference, you receive the exact same nodes rather than copies of the elements.",
+      "evidence": "When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.",
+      "locator": "normalized:L3691-L3691",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_f6da5675",
+      "topic": "Data Types",
+      "claim": "Modifications to a parent array do not affect a child array created via destructuring because the child is a copy.",
+      "evidence": "And therefore, modifications to the parent do not affect the child, and modifications to the child do not affect the parent.",
+      "locator": "normalized:L3693-L3693",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_4c56b813",
+      "topic": "Data Types",
+      "claim": "Modifications to a parent linked list affect a child list because they share nodes.",
+      "evidence": "And therefore, modifications to the parent also modify the child, and modifications to the child also modify the parent.",
+      "locator": "normalized:L3699-L3699",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_91c09c90",
+      "topic": "Functions",
+      "claim": "The copy-on-write strategy delays copying until a modification is made to prevent unnecessary copying.",
+      "evidence": "This strategy of waiting to copy until you are writing is called copy-on-write, or \"COW:\"",
+      "locator": "normalized:L3773-L3773",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_2a8ddd81",
+      "topic": "Functions",
+      "claim": "Copy-on-write is a technique where a copy is made only when a write operation occurs.",
+      "evidence": "Copy-on-write is the name given to the policy that whenever a task attempts to make a change to the shared information, it should first create a separate (private) copy of that information to prevent its changes from becoming visible to all the other tasks.- Wikipedia[73]",
+      "locator": "normalized:L3779-L3779",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_613f1dbc",
+      "topic": "Functions",
+      "claim": "The copy-on-write approach trades performance for safety by only copying when necessary.",
+      "evidence": "Like all strategies, it makes a tradeoff: It's much cheaper than pessimistically copying structures when you make an infrequent number of small changes, but if you tend to make a lot of changes to some that you aren't sharing, it's more expensive.",
+      "locator": "normalized:L3781-L3781",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_e2a0f55e",
+      "topic": "Iterators",
+      "claim": "An iterator is a function that returns an object with done and value properties.",
+      "evidence": "A function that takes an iterator and returns another iterator. We can start with take, an easy function that returns an iterator that only returns a fixed number of elements:",
+      "locator": "normalized:L3981-L3981",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_cb08e7ae",
+      "topic": "Iterators",
+      "claim": "Mapping an iterator applies a function to each element and returns a new iterator with transformed values.",
+      "evidence": "We can map an iterator, just like we map a collection:",
+      "locator": "normalized:L3971-L3971",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_834acfa6",
+      "topic": "Iterators",
+      "claim": "Filtering an iterator creates a new iterator that only includes elements matching a condition.",
+      "evidence": "We can also write a filter for iterators to accompany our mapping function:",
+      "locator": "normalized:L3997-L3997",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_2722e287",
+      "topic": "Iterators",
+      "claim": "Iterators are stateful, meaning their internal state changes as they are consumed.",
+      "evidence": "Please note that unlike most of the other functions discussed in this book, iterators are _stateful_.",
+      "locator": "normalized:L4025-L4025",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_274995c4",
+      "topic": "Data Types",
+      "claim": "Lists can be modeled using functions instead of traditional data structures like arrays or objects.",
+      "evidence": "We can model lists just using functions.",
+      "locator": "normalized:L4059-L4059",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_17a89e61",
+      "topic": "Functions",
+      "claim": "The K combinator is a constant function that always returns the same value regardless of input.",
+      "evidence": "The kestrel, or K, is a function that makes constant functions. You give it a value, and it returns a constant function that gives that value.",
+      "locator": "normalized:L4079-L4079",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_9cbd8d88",
+      "topic": "Functions",
+      "claim": "The K combinator creates a constant function that ignores its second argument.",
+      "evidence": "**const** K = (x) => (y) => x;",
+      "locator": "normalized:L4075-L4075",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_76cc1995",
+      "topic": "Functions",
+      "claim": "The I combinator is the identity function that returns its input unchanged.",
+      "evidence": "**const** I = (x) => (x);",
+      "locator": "normalized:L4075-L4075",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c010_40bb6fb3",
+      "topic": "Functions",
+      "claim": "The V combinator is a function that takes three arguments and applies the first to the second and third.",
+      "evidence": "**const** V = (x) => (y) => (z) => z(x)(y);",
+      "locator": "normalized:L4075-L4075",
+      "chunk_index": 10
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_3d18fc26",
+      "topic": "Functions",
+      "claim": "mapWith is a curried function that takes a function first and a list second, reversing the argument order of the standard map function.",
+      "evidence": "const mapWith = (fn) => (list) => list.map(fn);",
+      "locator": "normalized:L4407-L4407",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_143e94ed",
+      "topic": "Functions",
+      "claim": "mapWith allows creating specialized functions by partially applying the mapping function, such as creating a squaresOf function.",
+      "evidence": "const squaresOf = mapWith(n => n * n);",
+      "locator": "normalized:L4425-L4425",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_a6984fbd",
+      "topic": "Functions",
+      "claim": "flipAndCurry is a higher-order function that takes a function and returns a new function with flipped and curried arguments.",
+      "evidence": "const flipAndCurry = (fn) => (first) => (second) => fn(second, first);",
+      "locator": "normalized:L4487-L4487",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_a8e2e2e2",
+      "topic": "Functions",
+      "claim": "flip is a higher-order function that takes a function and returns a new function with flipped arguments but without currying.",
+      "evidence": "const flip = (fn) => (first, second) => fn(second, first);",
+      "locator": "normalized:L4491-L4493",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_9d9b9f30",
+      "topic": "Functions",
+      "claim": "The flip function can be modified to support both curried and non-curried invocation patterns by checking the number of arguments passed.",
+      "evidence": "const flip = (fn) => function (first, second) { if (arguments.length === 2) { return fn(second, first); } else { return function (second) { return fn(second, first); }; }; };",
+      "locator": "normalized:L4503-L4507",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_f68232b2",
+      "topic": "Functions",
+      "claim": "flipAndCurry can be used to create mapWith by applying it to the built-in map function.",
+      "evidence": "var mapWith = flipAndCurry(map);",
+      "locator": "normalized:L4497-L4497",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_d4408233",
+      "topic": "Objects",
+      "claim": "Object.assign can be used to copy properties from one object to another, enabling object extension and cloning.",
+      "evidence": "Object.assign(inventory, shipment)",
+      "locator": "normalized:L4539-L4539",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_15ce8188",
+      "topic": "Objects",
+      "claim": "Object.assign can be used to initialize object properties by assigning to an empty object.",
+      "evidence": "Object.assign({}, { apples: 12, oranges: 12 })",
+      "locator": "normalized:L4535-L4535",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_c03d3739",
+      "topic": "Iterators",
+      "claim": "An iterator object has a next() method that returns an object with done and value properties.",
+      "evidence": "return { next () { if (iterationIndex > this.index) { iterationIndex = this.index; } if (iterationIndex < 0) { return {done: true }; } else { return {done: false , value: this.array[iterationIndex--]} } } }",
+      "locator": "normalized:L4761-L4770",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_d7021414",
+      "topic": "Iterators",
+      "claim": "The Symbol.iterator property is a special symbol used to define the method that returns an iterator object for an iterable.",
+      "evidence": "Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.",
+      "locator": "normalized:L4791-L4791",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_921e4f81",
+      "topic": "Iterators",
+      "claim": "The for...of loop works directly with iterable objects that have a Symbol.iterator method returning an iterator.",
+      "evidence": "The for...of loop works directly with any object that is _iterable_, meaning it works with any object that has a Symbol.iterator method that returns an object iterator.",
+      "locator": "normalized:L4815-L4815",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c012_756449d9",
+      "topic": "Iterators",
+      "claim": "The for...of loop can be used to iterate over iterable objects like stacks, simplifying iteration over collections.",
+      "evidence": "const iterableSum = (iterable) => { let sum = 0; for (const num of iterable) { sum += num; } return sum } iterableSum(stack)",
+      "locator": "normalized:L4819-L4822",
+      "chunk_index": 12
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_c2ac6de9",
+      "topic": "Iterators",
+      "claim": "JavaScript iterators are objects with a next() method that returns an object with done and value properties.",
+      "evidence": "return { next () { if (iterationIndex > this.index) { iterationIndex = this.index; } if (iterationIndex < 0) { return {done: true }; } else { return {done: false , value: this.array[iterationIndex--]} } } }",
+      "locator": "normalized:L4801-L4801",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_e2e41b3b",
+      "topic": "Iterators",
+      "claim": "An iterator's next() method returns an object indicating whether iteration is complete and the current value.",
+      "evidence": "return {done: false , value: this.array[iterationIndex--]}",
+      "locator": "normalized:L4801-L4801",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_ee3bebee",
+      "topic": "Iterators",
+      "claim": "The Symbol.iterator symbol is used to define the method that returns an iterator object for an iterable.",
+      "evidence": "Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.",
+      "locator": "normalized:L4791-L4791",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_8f82bf12",
+      "topic": "Iterators",
+      "claim": "Iterables are objects that implement the Symbol.iterator method which returns an iterator.",
+      "evidence": "The for...of loop works directly with any object that is _iterable_ , meaning it works with any object that has a Symbol.iterator method that returns an object iterator.",
+      "locator": "normalized:L4817-L4817",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_4d892c3e",
+      "topic": "Iterators",
+      "claim": "The for...of loop can be used with any iterable object that implements Symbol.iterator.",
+      "evidence": "The for...of loop works directly with any object that is _iterable_ , meaning it works with any object that has a Symbol.iterator method that returns an object iterator.",
+      "locator": "normalized:L4817-L4817",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_b5d4bd58",
+      "topic": "Iterators",
+      "claim": "The spread operator can be used with any iterable to spread its elements into an array or as function arguments.",
+      "evidence": "Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal: ['some squares', ...someSquares]",
+      "locator": "normalized:L4835-L4835",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_bf6abadd",
+      "topic": "Iterators",
+      "claim": "Spreading an infinite iterable will cause an infinite loop and crash the program.",
+      "evidence": "['all the numbers', ...Numbers] _//=> infinite loop!_",
+      "locator": "normalized:L4865-L4865",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_a0fbcfa2",
+      "topic": "Iterators",
+      "claim": "Ordered collections are iterables where every iteration produces elements in the same order.",
+      "evidence": "The iterables we're discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning.",
+      "locator": "normalized:L4873-L4873",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_8f7bc05a",
+      "topic": "Iterators",
+      "claim": "Operations on ordered collections return another ordered collection that preserves the iteration semantics.",
+      "evidence": "Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them.",
+      "locator": "normalized:L4909-L4909",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_1b9962a9",
+      "topic": "Iterators",
+      "claim": "A collection operation preserves the ordered collection semantics of the input iterable.",
+      "evidence": "So we call it a _collection operation_ .",
+      "locator": "normalized:L4927-L4927",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_84f37f86",
+      "topic": "Iterators",
+      "claim": "The first element of an iterable can be retrieved using the first function that calls next() on its iterator.",
+      "evidence": "const first = (iterable) => iterable[Symbol.iterator]().next().value;",
+      "locator": "normalized:L4965-L4965",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_539a97c3",
+      "topic": "Iterators",
+      "claim": "The rest of an iterable can be obtained using a function that skips the first element and returns the remaining iterator.",
+      "evidence": "const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); iterator.next(); return iterator; } });",
+      "locator": "normalized:L4965-L4965",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_3da981be",
+      "topic": "Iterators",
+      "claim": "The Array.from() method can convert any iterable into an array.",
+      "evidence": "Array.from(UpTo1000) _//=> [1,81,121,361,441,841,961]_",
+      "locator": "normalized:L4979-L4979",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_ec1a5c12",
+      "topic": "Iterators",
+      "claim": "Custom collections can implement a static from() method to create instances from iterables.",
+      "evidence": "Stack3.from = function (iterable) { const stack = this(); for ( let element of iterable) { stack.push(element); } return stack; }",
+      "locator": "normalized:L4985-L4985",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_513de41b",
+      "topic": "Iterators",
+      "claim": "Generators are functions that can be paused and resumed, yielding values one at a time.",
+      "evidence": "When we invoke the function, we get an iterator object back. Let's start with the degenerate example, the empty iterator:",
+      "locator": "normalized:L5147-L5147",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_2331e478",
+      "topic": "Iterators",
+      "claim": "Generator functions are declared with the function* syntax and use the yield keyword to produce values.",
+      "evidence": "We declare the function using the function * syntax. Not a fat arrow. Not a plain function. 2. We don't return values or output them to console.log. We \"yield\" values using the yield keyword.",
+      "locator": "normalized:L5143-L5143",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_38089bfa",
+      "topic": "Iterators",
+      "claim": "A generator function returns an iterator object when invoked.",
+      "evidence": "When we invoke empty, we get an iterator with no elements. This makes sense, because empty never yields anything.",
+      "locator": "normalized:L5155-L5155",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c013_7a7c99fd",
+      "topic": "Iterators",
+      "claim": "Generators can yield multiple values in sequence and maintain internal state between yields.",
+      "evidence": "oneTwoThree().next() _//=>_ {\"done\": false , value: 1} oneTwoThree().next() _//=>_ {\"done\": false , value: 1} oneTwoThree().next() _//=>_ {\"done\": false , value: 1}",
+      "locator": "normalized:L5187-L5187",
+      "chunk_index": 13
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_3e9f13d7",
+      "topic": "Functions",
+      "claim": "Generator functions are declared using the function * syntax and use yield keywords to produce values instead of return statements.",
+      "evidence": "function * empty () {};",
+      "locator": "normalized:L5149-L5149",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_8a097b72",
+      "topic": "Functions",
+      "claim": "Generator functions can take arguments and yield values that are returned by calling .next() on the iterator they produce.",
+      "evidence": "function * only (something) { yield something; }; only(\"you\").next()",
+      "locator": "normalized:L5165-L5165",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_2580bf52",
+      "topic": "Functions",
+      "claim": "When a generator function is invoked, it returns an iterator object that can be called with .next() to retrieve yielded values.",
+      "evidence": "only(\"you\").next() //=> {\"done\": false , value: \"you\"}",
+      "locator": "normalized:L5169-L5169",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_abfef47c",
+      "topic": "Functions",
+      "claim": "Multiple invocations of a generator function produce independent iterators that can be used separately.",
+      "evidence": "only(\"you\").next() //=> {\"done\": false , value: \"you\"} only(\"the lonely\").next() //=> {\"done\": false , value: \"the lonely\"}",
+      "locator": "normalized:L5169-L5169",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_43c39ab2",
+      "topic": "Functions",
+      "claim": "A generator function can yield multiple values sequentially, and each call to .next() advances the execution until the next yield statement.",
+      "evidence": "const oneTwoThree = function * () { yield 1; yield 2; yield 3; };",
+      "locator": "normalized:L5185-L5185",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_8f05433a",
+      "topic": "Functions",
+      "claim": "Generators behave as coroutines, allowing suspension and resumption of execution at yield points.",
+      "evidence": "This behaviour is not unique to JavaScript, generators are called coroutines in other languages:",
+      "locator": "normalized:L5239-L5239",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_3c468390",
+      "topic": "Functions",
+      "claim": "When a generator's .next() method is called, it executes until it hits a yield statement, then suspends and returns the yielded value wrapped in an object with done and value properties.",
+      "evidence": "The iterator wraps 1 in {done: false, value: 1} and returns that from the call to .next().",
+      "locator": "normalized:L5209-L5209",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_48e97577",
+      "topic": "Functions",
+      "claim": "After yielding a value, a generator suspends its execution and waits for the next call to .next() to resume.",
+      "evidence": "The iterator _suspends its execution_ .",
+      "locator": "normalized:L5207-L5207",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_3c476be2",
+      "topic": "Functions",
+      "claim": "When a generator function finishes executing, subsequent calls to .next() return an object with done=true.",
+      "evidence": "The iterator returns {done: true} from the call to .next(), and every call to this iterator's .next() method will return {done: true} from now on.",
+      "locator": "normalized:L5237-L5237",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_7493eb22",
+      "topic": "Functions",
+      "claim": "Generator functions can be used to create infinite sequences by using loops that never terminate.",
+      "evidence": "const Numbers = { [Symbol.iterator] () { let i = 0; while ( true ) { yield i++; } } };",
+      "locator": "normalized:L5295-L5295",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_36428576",
+      "topic": "Functions",
+      "claim": "Generator functions can be used recursively to traverse nested structures like trees.",
+      "evidence": "function * tree (iterable) { for ( const e of iterable) { if (isIterable(e)) { yield * tree(e); } else { yield e; } } };",
+      "locator": "normalized:L5379-L5379",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_6b59c9db",
+      "topic": "Functions",
+      "claim": "The yield* syntax allows a generator to delegate iteration to another iterable, yielding all elements from that iterable in order.",
+      "evidence": "yield * iterable;",
+      "locator": "normalized:L5369-L5369",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_7dc9ef6b",
+      "topic": "Functions",
+      "claim": "Generator functions simplify implementation of iterable operations compared to manually creating iterator objects.",
+      "evidence": "function * mapWith (fn, iterable) { for ( const element of iterable) { yield fn(element); } }",
+      "locator": "normalized:L5395-L5395",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_32c1d03c",
+      "topic": "Iterators",
+      "claim": "An iterator is an object with a next() method that returns values in sequence until it is done.",
+      "evidence": "When we invoke empty, we get an iterator with no elements. This makes sense, because empty never yields anything.",
+      "locator": "normalized:L5155-L5155",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_996b3712",
+      "topic": "Iterators",
+      "claim": "Calling .next() on an iterator returns an object with done and value properties indicating whether iteration is complete and what the current value is.",
+      "evidence": "_//=>_ {\"done\": true }",
+      "locator": "normalized:L5153-L5153",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_08dfba5e",
+      "topic": "Iterators",
+      "claim": "Iterators created from generator functions can be consumed using for...of loops or spread syntax.",
+      "evidence": "for ( const i of ThreeNumbers) { console.log(i); }",
+      "locator": "normalized:L5269-L5269",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_569b2784",
+      "topic": "Iterators",
+      "claim": "An iterable object has a Symbol.iterator method that returns an iterator when called.",
+      "evidence": "const ThreeNumbers = { [Symbol.iterator]: function * () { yield 1; yield 2; yield 3 } }",
+      "locator": "normalized:L5269-L5269",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_f2c5b4d6",
+      "topic": "Iterators",
+      "claim": "Generator methods provide a concise way to define iterable objects using the *[Symbol.iterator]() syntax.",
+      "evidence": "const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } }",
+      "locator": "normalized:L5285-L5285",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_71aef152",
+      "topic": "Iterators",
+      "claim": "Iterables can be used in for...of loops, spread syntax, and other constructs that expect iterable behavior.",
+      "evidence": "for ( const i of ThreeNumbers) { console.log(i); }",
+      "locator": "normalized:L5269-L5269",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_90f4551f",
+      "topic": "Iterators",
+      "claim": "The Symbol.iterator property defines how an object should be iterated over.",
+      "evidence": "[Symbol.iterator]",
+      "locator": "normalized:L5269-L5269",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_efb7dd0d",
+      "topic": "Iterators",
+      "claim": "Iterators can be used to implement lazy evaluation, where values are computed only when needed.",
+      "evidence": "Laziness is the characteristic of not doing any work until you know you need the result of the work.",
+      "locator": "normalized:L5513-L5513",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_d0a3816d",
+      "topic": "Iterators",
+      "claim": "Lazy evaluation avoids creating intermediate data structures, reducing memory usage during operations.",
+      "evidence": "This reduces the memory footprint. When working with very large collections and many operations, this can be important.",
+      "locator": "normalized:L5523-L5523",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_7f0f2d8d",
+      "topic": "Iterators",
+      "claim": "Lazy collections allow efficient processing of large datasets by computing values only when necessary.",
+      "evidence": "Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first()",
+      "locator": "normalized:L5531-L5531",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_ac8269ed",
+      "topic": "ES6 Features",
+      "claim": "Generator functions are declared using the function * syntax instead of regular function declarations.",
+      "evidence": "We declare the function using the function * syntax. Not a fat arrow. Not a plain function.",
+      "locator": "normalized:L5143-L5143",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_e4fda39d",
+      "topic": "ES6 Features",
+      "claim": "Generator functions use the yield keyword to produce values rather than return statements.",
+      "evidence": "We don't return values or output them to console.log. We \"yield\" values using the yield keyword.",
+      "locator": "normalized:L5145-L5145",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_0874e415",
+      "topic": "ES6 Features",
+      "claim": "Generator functions can be defined as named functions or anonymous functions assigned to variables.",
+      "evidence": "We wrote a _generator declaration_ . We can also write const empty = function * () {} to bind an anonymous generator to the empty keyword",
+      "locator": "normalized:L5159-L5159",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_f87f48a5",
+      "topic": "ES6 Features",
+      "claim": "Generator methods in objects can be defined using the shorthand syntax *[Symbol.iterator]().",
+      "evidence": "const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } }",
+      "locator": "normalized:L5285-L5285",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_28815d40",
+      "topic": "Functional Programming",
+      "claim": "Generators enable functional programming patterns by providing a way to create lazy, composable sequences.",
+      "evidence": "This is especially useful for making iterables.",
+      "locator": "normalized:L5423-L5423",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_f568a6ff",
+      "topic": "Functional Programming",
+      "claim": "Functional programming benefits from using generators to avoid building intermediate data structures.",
+      "evidence": "Composing an iterable with a mapIterable method cleaves the responsibility for knowing how to map from the fiddly bits of how a linked list differs from a stack.",
+      "locator": "normalized:L5431-L5431",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c014_80f99d22",
+      "topic": "Functional Programming",
+      "claim": "Lazy evaluation in functional programming helps optimize performance by deferring computation until results are needed.",
+      "evidence": "Laziness is a very pejorative word when applied to people. But it can be an excellent strategy for efficiency in algorithms.",
+      "locator": "normalized:L5513-L5513",
+      "chunk_index": 14
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_4ee456e4",
+      "topic": "Functions",
+      "claim": "Lazy evaluation delays computation until the result is actually needed, which can improve efficiency.",
+      "evidence": "Laziness\" is the characteristic of not doing any work until you know you need the result of the work.",
+      "locator": "normalized:L5513-L5513",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_8db0da8f",
+      "topic": "Iterators",
+      "claim": "Lazy collections use iterators that produce small iterable objects referring back to the original iteration, reducing memory footprint.",
+      "evidence": "The .map and .filter methods on Pair work with iterators. They produce small iterable objects that refer back to the original iteration.",
+      "locator": "normalized:L5523-L5523",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_9aca8ba7",
+      "topic": "Iterators",
+      "claim": "Lazy evaluation with iterators processes only the elements that are actually needed, rather than computing all intermediate results.",
+      "evidence": "Finally, we take the first element of that filtered, squared iterable and now JavaScript actually iterates over the stack's elements, and it only needs to square two of those elements, 29 and 28, to return the answer.",
+      "locator": "normalized:L5535-L5535",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_21d54170",
+      "topic": "Iterators",
+      "claim": "Lazy collections can handle infinite sequences because they compute values on-demand rather than storing all values.",
+      "evidence": "You recall we briefly touched on the idea of infinite collections? Let's make iterable numbers. They _have_ to be lazy, otherwise we couldn't write things like:",
+      "locator": "normalized:L5551-L5551",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_d8ad421b",
+      "topic": "Iterators",
+      "claim": "Lazy evaluation with iterators avoids unnecessary computation by only processing elements when required.",
+      "evidence": "If we write the almost identical thing with an array, we get a different behaviour: Arrays copy-on-read, so every time we perform a map or filter, we get a new array and perform all the computations.",
+      "locator": "normalized:L5549-L5549",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_183a6c86",
+      "topic": "Functions",
+      "claim": "Eager collections return a collection of their own type from each method, performing immediate computation.",
+      "evidence": "An _eager_ collection, like an array, returns a collection of its own type from each of the methods.",
+      "locator": "normalized:L5563-L5563",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_9093b9b1",
+      "topic": "Iterators",
+      "claim": "Eager collections create new collections immediately upon method calls, unlike lazy collections which defer computation.",
+      "evidence": "Arrays copy-on-read, so every time we perform a map or filter, we get a new array and perform all the computations.",
+      "locator": "normalized:L5549-L5549",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_734c6db5",
+      "topic": "Iterators",
+      "claim": "Lazy collections implement structure sharing, which means mutations after taking an iterable might lead to unexpected results.",
+      "evidence": "Our \"lazy collections\" use structure sharing. If we mutate a collection after taking an iterable, we might get an unexpected result.",
+      "locator": "normalized:L5559-L5559",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_ff8d1a4f",
+      "topic": "Iterators",
+      "claim": "Lazy evaluation enables efficient handling of large datasets by avoiding creation of intermediate arrays.",
+      "evidence": "Whereas the .map and .filter methods on Pair work with iterators. They produce small iterable objects that refer back to the original iteration. This reduces the memory footprint.",
+      "locator": "normalized:L5523-L5523",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_a7ade64d",
+      "topic": "Iterators",
+      "claim": "Lazy collections allow for efficient processing of large collections with many operations by deferring computation.",
+      "evidence": "When working with very large collections and many operations, this can be important.",
+      "locator": "normalized:L5524-L5524",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_03883d32",
+      "topic": "Iterators",
+      "claim": "Lazy evaluation with iterators can be implemented using generator functions that yield values on demand.",
+      "evidence": "We used generators to build iterators that maintain implicit state.",
+      "locator": "normalized:L5807-L5807",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_246a86d7",
+      "topic": "Iterators",
+      "claim": "Stateful iterators can be created using generator functions that preserve state between iterations.",
+      "evidence": "We saw how to use them for recursive unfolds and state machines.",
+      "locator": "normalized:L5809-L5809",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_91adea91",
+      "topic": "Iterators",
+      "claim": "The Tortoise and Hare algorithm detects cycles in iterables using two iterators moving at different speeds.",
+      "evidence": "const tortoiseAndHare = (iterable) => { const hare = iterable[Symbol.iterator](); let hareResult = (hare.next(), hare.next()); for (let tortoiseValue of iterable) { hareResult = hare.next(); if (hareResult.done) { return false; } if (tortoiseValue === hareResult.value) { return true; } hareResult = hare.next(); if (hareResult.done) { return false; } if (tortoiseValue === hareResult.value) { return true; } } return false; };",
+      "locator": "normalized:L5714-L5722",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_018f2483",
+      "topic": "Iterators",
+      "claim": "A teleported tortoise algorithm can detect cycles in iterables using a single iterator with increasing teleport distances.",
+      "evidence": "const hasCycle = (iterable) => { let iterator = iterable[Symbol.iterator](), teleportDistance = 1; while (true) { let {value, done} = iterator.next(), tortoise = value; if (done) return false; for (let i = 0; i < teleportDistance; ++i) { let {value, done} = iterator.next(), hare = value; if (done) return false; if (tortoise === hare) return true; } teleportDistance *= 2; } return false; };",
+      "locator": "normalized:L5785-L5787",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c015_ae0f8159",
+      "topic": "Iterators",
+      "claim": "Cycle detection in iterables can be achieved using a Set to track visited elements.",
+      "evidence": "const hasCycle = (orderedCollection) => { const visited = new Set(); for (let element of orderedCollection) { if (visited.has(element)) { return true; } visited.add(element); } return false; };",
+      "locator": "normalized:L5795-L5797",
+      "chunk_index": 15
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_96e1ed64",
+      "topic": "Arrays",
+      "claim": "An array can be used to represent the state of a tic-tac-toe game board, where each element corresponds to a position on the board.",
+      "evidence": "[ 'o', 'x', ' ', ' ' ' ' ' ' , , , ' ' ' ' ' ' , , ]",
+      "locator": "normalized:L5887-L5887",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_26dd47a3",
+      "topic": "Arrays",
+      "claim": "A tic-tac-toe board can be represented as an array of nine elements, with each element representing a cell in row-major order.",
+      "evidence": "[ 'o', 'x', ' ', 'x', ' ', ' ', 'o', ' ', ' ' ]",
+      "locator": "normalized:L5899-L5899",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_1e541ea8",
+      "topic": "Objects",
+      "claim": "A plain old JavaScript object (POJO) can be used as a lookup table to map board states to moves.",
+      "evidence": "const moveLookupTable = { [[",
+      "locator": "normalized:L5903-L5903",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_f01a0468",
+      "topic": "Objects",
+      "claim": "In a POJO, keys can be specified using bracket notation which allows any expression to be used as a key.",
+      "evidence": "We'll use the [] notation for keys, it allows us to use any expression as a key",
+      "locator": "normalized:L5901-L5901",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_2adb046d",
+      "topic": "Functions",
+      "claim": "A stateless function can be used to determine the next move in a tic-tac-toe game based on the current board state.",
+      "evidence": "statelessNaughtsAndCrosses([ 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' ]) _//=> 3_",
+      "locator": "normalized:L5937-L5940",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_25ea9e7c",
+      "topic": "Functions",
+      "claim": "A stateful function can be created by wrapping a stateless function inside another function that manages game state.",
+      "evidence": "const statefulNaughtsAndCrosses = () => { const state = [ ' ' ' ' ' ' , , , ' ' ' ' ' ' , , , ' ' ' ' ' ' , , ]; return (x = false ) => { if (x) { if (state[x] === ' ') { state[x] = 'x'; } else throw \"occupied!\" } let o = moveLookupTable[state]; state[o] = 'o'; return o; } };",
+      "locator": "normalized:L5957-L5963",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_d5875369",
+      "topic": "Iterators",
+      "claim": "Generators can be used to create interactive functions that maintain state implicitly through their control flow.",
+      "evidence": "function * generatorNaughtsAndCrosses () { const x1 = yield 0; switch (x1) { case 1: const x2 = yield 6; switch (x2) { case 2: case 4: case 5: case 7: case 8: yield 3; break ; case 3: const x3 = yield 8; switch (x3) { case 2: case 5: case 7: yield 4; break ; case 4: yield 7; break ; } } break ; // ... } }",
+      "locator": "normalized:L6007-L6017",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_e57a740c",
+      "topic": "Iterators",
+      "claim": "Generator functions can be called with .next() to advance execution and optionally pass values into the generator.",
+      "evidence": "aNaughtsAndCrossesGame.next(1).value _//=> 6_",
+      "locator": "normalized:L6027-L6029",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_4a31252e",
+      "topic": "Functions",
+      "claim": "A generator function can be used to implement a stateful game where moves are passed in and responses are yielded.",
+      "evidence": "function * generatorNaughtsAndCrosses () { const x1 = yield 0; switch (x1) { case 1: const x2 = yield 6; switch (x2) { case 2: case 4: case 5: case 7: case 8: yield 3; break ; case 3: const x3 = yield 8; switch (x3) { case 2: case 5: case 7: yield 4; break ; case 4: yield 7; break ; } } break ; // ... } }",
+      "locator": "normalized:L6007-L6017",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_b167d655",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to implement interactive state machines where state is maintained implicitly in control flow.",
+      "evidence": "Our generator function maintains state implicitly in its control flow, but returns an iterator that we call, it doesn't call us.",
+      "locator": "normalized:L6039-L6039",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_ab628883",
+      "topic": "Functions",
+      "claim": "A generator function can be used to implement a game that alternates between yielding a move and accepting a move from the caller.",
+      "evidence": "function * generatorNaughtsAndCrosses () { const x1 = yield 0; switch (x1) { case 1: const x2 = yield 6; switch (x2) { case 2: case 4: case 5: case 7: case 8: yield 3; break ; case 3: const x3 = yield 8; switch (x3) { case 2: case 5: case 7: yield 4; break ; case 4: yield 7; break ; } } break ; // ... } }",
+      "locator": "normalized:L6007-L6017",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_8f680201",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to create iterators that transform one iterable into another.",
+      "evidence": "function * mapWith(fn, iterable) { for ( const element of iterable) { yield fn(element); } }",
+      "locator": "normalized:L6058-L6060",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_6e2b0d0e",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to create iterators that filter elements from an iterable.",
+      "evidence": "function * filterWith (fn, iterable) { for ( const element of iterable) { if (!!fn(element)) yield element; } }",
+      "locator": "normalized:L6063-L6065",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_2073af55",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to create iterators that take a specific number of elements from an iterable.",
+      "evidence": "function * take (numberToTake, iterable) { const iterator = iterable[Symbol.iterator](); for ( let i = 0; i < numberToTake; ++i) { const { done, value } = iterator.next(); if (!done) yield value; } }",
+      "locator": "normalized:L6069-L6072",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_671ae205",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to create iterators that zip multiple iterables together.",
+      "evidence": "function * zip (...iterables) { const iterators = iterables.map(i => i[Symbol.iterator]()); while ( true ) { const pairs = iterators.map(j => j.next()), dones = pairs.map(p => p.done), values = pairs.map(p => p.value); if (dones.indexOf( true ) >= 0) break ; yield values; } };",
+      "locator": "normalized:L6075-L6077",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_39eb62a2",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to create iterators that reduce an iterable to a single value.",
+      "evidence": "const reduceWith = (fn, seed, iterable) => { let accumulator = seed; for ( const element of iterable) { accumulator = fn(accumulator, element); } return accumulator; };",
+      "locator": "normalized:L6089-L6091",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c016_af890237",
+      "topic": "Iterators",
+      "claim": "Generator functions can be used to memoize results of expensive computations by caching previous outputs.",
+      "evidence": "function memoize (generator) { const memos = {}, iterators = {}; return function * (...args) { const key = JSON.stringify(args); let i = 0; if (memos[key] == null ) { memos[key] = []; iterators[key] = generator(...args); } while ( true ) { if (i < memos[key].length) { yield memos[key][i++]; } else { const { done, value } = iterators[key].next(); if (done) { return ; } else { yield memos[key][i++] = value; } } } } }",
+      "locator": "normalized:L6095-L6103",
+      "chunk_index": 16
+    },
+    {
+      "claim_id": "claim_js-allonge_c018_88ef8aff",
+      "topic": "Functions",
+      "claim": "Reg Braithwaite has authored libraries for JavaScript, CoffeeScript, and Ruby programming.",
+      "evidence": "He writes about programming on \"Raganwald[222] ,\" as well as general-purpose ruminations on \"Braythwayt Dot Com[223] .",
+      "locator": "normalized:L6479-L6479",
+      "chunk_index": 18
+    },
+    {
+      "claim_id": "claim_js-allonge_c018_bb0135c8",
+      "topic": "Objects",
+      "claim": "Reg Braithwaite has authored libraries such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand.",
+      "evidence": "He has authored libraries[221] for JavaScript, CoffeeScript, and Ruby programming such as Allong.es, Method Combinators, Katy, JQuery Combinators, YouAreDaChef, andand, and others.",
+      "locator": "normalized:L6477-L6477",
+      "chunk_index": 18
+    },
+    {
+      "claim_id": "claim_js-allonge_c018_49c2b54e",
+      "topic": "Data Types",
+      "claim": "Reg Braithwaite works with JavaScript, Ruby, CoffeeScript and Java applications.",
+      "evidence": "When he's not shipping JavaScript, Ruby, CoffeeScript and Java applications scaling out to millions of users, Reg \"Raganwald\" Braithwaite has authored libraries",
+      "locator": "normalized:L6477-L6477",
+      "chunk_index": 18
+    }
+  ],
+  "topics": {
+    "Functions": [
+      "claim_js-allonge_c000_83041b92",
+      "claim_js-allonge_c000_bf0e2dbd",
+      "claim_js-allonge_c000_86fb24cc",
+      "claim_js-allonge_c000_d15a7923",
+      "claim_js-allonge_c000_8c974675",
+      "claim_js-allonge_c000_20775fbc",
+      "claim_js-allonge_c000_30f27462",
+      "claim_js-allonge_c000_427faa70",
+      "claim_js-allonge_c000_09ce10e8",
+      "claim_js-allonge_c000_613bcb85",
+      "claim_js-allonge_c000_07ea6955",
+      "claim_js-allonge_c000_2b80900e",
+      "claim_js-allonge_c000_d8eb00db",
+      "claim_js-allonge_c001_d9e1633d",
+      "claim_js-allonge_c001_967c92c8",
+      "claim_js-allonge_c001_f50b7168",
+      "claim_js-allonge_c001_26084f35",
+      "claim_js-allonge_c001_f2f66e0e",
+      "claim_js-allonge_c001_6ac867c8",
+      "claim_js-allonge_c001_790fd0dd",
+      "claim_js-allonge_c001_44b6c953",
+      "claim_js-allonge_c001_d092a8a7",
+      "claim_js-allonge_c002_1bc1cdf2",
+      "claim_js-allonge_c002_6611cb1b",
+      "claim_js-allonge_c002_e3030089",
+      "claim_js-allonge_c002_f34f59ce",
+      "claim_js-allonge_c002_e7a5d35d",
+      "claim_js-allonge_c002_07778a80",
+      "claim_js-allonge_c002_ca2b6c7f",
+      "claim_js-allonge_c002_3ae87b2f",
+      "claim_js-allonge_c002_abe3137c",
+      "claim_js-allonge_c002_520a0eb7",
+      "claim_js-allonge_c002_f52d858a",
+      "claim_js-allonge_c002_d6c76f77",
+      "claim_js-allonge_c002_a059bfca",
+      "claim_js-allonge_c002_80c0e9ec",
+      "claim_js-allonge_c002_bea234b8",
+      "claim_js-allonge_c002_9477a948",
+      "claim_js-allonge_c002_d44b5d6f",
+      "claim_js-allonge_c002_63f9b3c7",
+      "claim_js-allonge_c002_c522b7da",
+      "claim_js-allonge_c002_c61c6a3d",
+      "claim_js-allonge_c002_ddb1805a",
+      "claim_js-allonge_c002_a8cc9339",
+      "claim_js-allonge_c003_23ced35c",
+      "claim_js-allonge_c003_7d447afc",
+      "claim_js-allonge_c003_f260d294",
+      "claim_js-allonge_c003_749bb9f4",
+      "claim_js-allonge_c003_8c027be9",
+      "claim_js-allonge_c003_36155d51",
+      "claim_js-allonge_c003_75221f60",
+      "claim_js-allonge_c003_ee84f682",
+      "claim_js-allonge_c003_02cce521",
+      "claim_js-allonge_c003_9e51dd2b",
+      "claim_js-allonge_c004_030568a4",
+      "claim_js-allonge_c004_383d9044",
+      "claim_js-allonge_c004_b9a97c4f",
+      "claim_js-allonge_c004_6b13c230",
+      "claim_js-allonge_c004_6fc7e62f",
+      "claim_js-allonge_c004_4b102fd6",
+      "claim_js-allonge_c004_1321e781",
+      "claim_js-allonge_c004_3c4f4a58",
+      "claim_js-allonge_c004_f32b8ee5",
+      "claim_js-allonge_c004_555142d4",
+      "claim_js-allonge_c004_6bd97bcf",
+      "claim_js-allonge_c005_6815a951",
+      "claim_js-allonge_c005_e3d14cc5",
+      "claim_js-allonge_c005_0a2b6262",
+      "claim_js-allonge_c005_cb5e23e6",
+      "claim_js-allonge_c005_61082c84",
+      "claim_js-allonge_c005_f8ff1530",
+      "claim_js-allonge_c005_8e9b2dc6",
+      "claim_js-allonge_c005_cb8e1777",
+      "claim_js-allonge_c005_ab8e8b34",
+      "claim_js-allonge_c005_dab630e2",
+      "claim_js-allonge_c005_9a92e28a",
+      "claim_js-allonge_c005_82c2f8d5",
+      "claim_js-allonge_c005_bc63cac4",
+      "claim_js-allonge_c005_29805156",
+      "claim_js-allonge_c007_73162459",
+      "claim_js-allonge_c007_05e31b8a",
+      "claim_js-allonge_c007_91cbe02f",
+      "claim_js-allonge_c007_71b34915",
+      "claim_js-allonge_c007_46e76d30",
+      "claim_js-allonge_c007_763dd911",
+      "claim_js-allonge_c007_8145b7fe",
+      "claim_js-allonge_c007_b4eaef99",
+      "claim_js-allonge_c007_eef35f0b",
+      "claim_js-allonge_c007_89131990",
+      "claim_js-allonge_c008_1b1846f8",
+      "claim_js-allonge_c008_19597ba1",
+      "claim_js-allonge_c008_a629186a",
+      "claim_js-allonge_c008_6790774e",
+      "claim_js-allonge_c008_6ad1260d",
+      "claim_js-allonge_c009_c544514a",
+      "claim_js-allonge_c009_b0ce324f",
+      "claim_js-allonge_c009_37d95a79",
+      "claim_js-allonge_c009_dae51800",
+      "claim_js-allonge_c009_b8c83a29",
+      "claim_js-allonge_c009_46dd60d2",
+      "claim_js-allonge_c010_91c09c90",
+      "claim_js-allonge_c010_2a8ddd81",
+      "claim_js-allonge_c010_613f1dbc",
+      "claim_js-allonge_c010_17a89e61",
+      "claim_js-allonge_c010_9cbd8d88",
+      "claim_js-allonge_c010_76cc1995",
+      "claim_js-allonge_c010_40bb6fb3",
+      "claim_js-allonge_c012_3d18fc26",
+      "claim_js-allonge_c012_143e94ed",
+      "claim_js-allonge_c012_a6984fbd",
+      "claim_js-allonge_c012_a8e2e2e2",
+      "claim_js-allonge_c012_9d9b9f30",
+      "claim_js-allonge_c012_f68232b2",
+      "claim_js-allonge_c014_3e9f13d7",
+      "claim_js-allonge_c014_8a097b72",
+      "claim_js-allonge_c014_2580bf52",
+      "claim_js-allonge_c014_abfef47c",
+      "claim_js-allonge_c014_43c39ab2",
+      "claim_js-allonge_c014_8f05433a",
+      "claim_js-allonge_c014_3c468390",
+      "claim_js-allonge_c014_48e97577",
+      "claim_js-allonge_c014_3c476be2",
+      "claim_js-allonge_c014_7493eb22",
+      "claim_js-allonge_c014_36428576",
+      "claim_js-allonge_c014_6b59c9db",
+      "claim_js-allonge_c014_7dc9ef6b",
+      "claim_js-allonge_c015_4ee456e4",
+      "claim_js-allonge_c015_183a6c86",
+      "claim_js-allonge_c016_2adb046d",
+      "claim_js-allonge_c016_25ea9e7c",
+      "claim_js-allonge_c016_4a31252e",
+      "claim_js-allonge_c016_ab628883",
+      "claim_js-allonge_c018_88ef8aff"
+    ],
+    "Values": [
+      "claim_js-allonge_c000_ba9fb1f7",
+      "claim_js-allonge_c000_86286e69",
+      "claim_js-allonge_c000_fe257443",
+      "claim_js-allonge_c000_574fe6da",
+      "claim_js-allonge_c000_66bf4440"
+    ],
+    "ES6 Features": [
+      "claim_js-allonge_c000_f1a210e4",
+      "claim_js-allonge_c000_aeaf70a9",
+      "claim_js-allonge_c000_27ad4435",
+      "claim_js-allonge_c000_51968cfa",
+      "claim_js-allonge_c003_02d44087",
+      "claim_js-allonge_c003_196da701",
+      "claim_js-allonge_c003_1e8016e4",
+      "claim_js-allonge_c008_ddc16c7a",
+      "claim_js-allonge_c008_2b8ffe44",
+      "claim_js-allonge_c014_ac8269ed",
+      "claim_js-allonge_c014_e4fda39d",
+      "claim_js-allonge_c014_0874e415",
+      "claim_js-allonge_c014_f87f48a5"
+    ],
+    "Data Types": [
+      "claim_js-allonge_c001_af460f5c",
+      "claim_js-allonge_c001_c7f74379",
+      "claim_js-allonge_c001_63309ab2",
+      "claim_js-allonge_c001_0af6cdc8",
+      "claim_js-allonge_c001_91d046cb",
+      "claim_js-allonge_c001_4a5169f2",
+      "claim_js-allonge_c001_e52d0c91",
+      "claim_js-allonge_c001_5ca691b6",
+      "claim_js-allonge_c001_f5177689",
+      "claim_js-allonge_c001_a5bf1c30",
+      "claim_js-allonge_c001_bd60a1c9",
+      "claim_js-allonge_c001_6113f4c9",
+      "claim_js-allonge_c001_f150c916",
+      "claim_js-allonge_c001_a486ff67",
+      "claim_js-allonge_c001_1020b971",
+      "claim_js-allonge_c001_312c59f3",
+      "claim_js-allonge_c001_91fb4102",
+      "claim_js-allonge_c001_0b3617a4",
+      "claim_js-allonge_c001_59aff277",
+      "claim_js-allonge_c001_0d06ba16",
+      "claim_js-allonge_c002_1d902181",
+      "claim_js-allonge_c002_48036f0d",
+      "claim_js-allonge_c002_6def7930",
+      "claim_js-allonge_c003_255ae4fa",
+      "claim_js-allonge_c003_ce80c382",
+      "claim_js-allonge_c005_6b917a97",
+      "claim_js-allonge_c006_a97dcee6",
+      "claim_js-allonge_c008_1dea7a02",
+      "claim_js-allonge_c009_d730d811",
+      "claim_js-allonge_c009_c829e587",
+      "claim_js-allonge_c009_278bf611",
+      "claim_js-allonge_c009_8a73052d",
+      "claim_js-allonge_c009_f0f82e5b",
+      "claim_js-allonge_c009_534805e3",
+      "claim_js-allonge_c009_cb7ac508",
+      "claim_js-allonge_c009_21c2cffd",
+      "claim_js-allonge_c009_49621ae0",
+      "claim_js-allonge_c009_7a20825b",
+      "claim_js-allonge_c009_541294fd",
+      "claim_js-allonge_c009_98ec1cf5",
+      "claim_js-allonge_c009_b15b682b",
+      "claim_js-allonge_c010_944d97d8",
+      "claim_js-allonge_c010_b59b8f39",
+      "claim_js-allonge_c010_f6da5675",
+      "claim_js-allonge_c010_4c56b813",
+      "claim_js-allonge_c010_274995c4",
+      "claim_js-allonge_c018_49c2b54e"
+    ],
+    "Control Flow": [
+      "claim_js-allonge_c001_7d244f67",
+      "claim_js-allonge_c001_0e695ad9",
+      "claim_js-allonge_c002_3c661183",
+      "claim_js-allonge_c002_d616260a",
+      "claim_js-allonge_c002_bf34a545",
+      "claim_js-allonge_c002_65e0f4fb",
+      "claim_js-allonge_c002_62edabcd",
+      "claim_js-allonge_c002_06e4be06",
+      "claim_js-allonge_c003_6e3b242c",
+      "claim_js-allonge_c003_428cf457",
+      "claim_js-allonge_c005_7f2d2bae",
+      "claim_js-allonge_c005_6e389585",
+      "claim_js-allonge_c006_7042d99c",
+      "claim_js-allonge_c006_92307b4c",
+      "claim_js-allonge_c006_21b2c562",
+      "claim_js-allonge_c006_555227e5",
+      "claim_js-allonge_c006_fe369706",
+      "claim_js-allonge_c006_43f1c25a",
+      "claim_js-allonge_c006_4fb4e865",
+      "claim_js-allonge_c006_d5c0ef52",
+      "claim_js-allonge_c006_36377358",
+      "claim_js-allonge_c006_a91c546a",
+      "claim_js-allonge_c006_b18758d6",
+      "claim_js-allonge_c009_b5dc76d4",
+      "claim_js-allonge_c009_5511bad5",
+      "claim_js-allonge_c009_fe0b8198",
+      "claim_js-allonge_c009_c3aaf4d2",
+      "claim_js-allonge_c009_95d14210",
+      "claim_js-allonge_c009_119a9247",
+      "claim_js-allonge_c009_ca5feb61",
+      "claim_js-allonge_c009_b52cc39a",
+      "claim_js-allonge_c009_c960ad9b",
+      "claim_js-allonge_c009_150c49cc"
+    ],
+    "Closures": [
+      "claim_js-allonge_c002_f3d5e401",
+      "claim_js-allonge_c002_3b765009",
+      "claim_js-allonge_c002_a411f43a",
+      "claim_js-allonge_c003_2dbe3760",
+      "claim_js-allonge_c003_3f872ab4",
+      "claim_js-allonge_c003_d01cd38c",
+      "claim_js-allonge_c003_8175ced3"
+    ],
+    "Functional Programming": [
+      "claim_js-allonge_c004_536091e8",
+      "claim_js-allonge_c004_793dbd2d",
+      "claim_js-allonge_c004_2e81b4b8",
+      "claim_js-allonge_c004_efea46b0",
+      "claim_js-allonge_c004_daff5a65",
+      "claim_js-allonge_c004_156368ea",
+      "claim_js-allonge_c004_96af8ce9",
+      "claim_js-allonge_c004_fb1d1998",
+      "claim_js-allonge_c007_b3f83ae0",
+      "claim_js-allonge_c007_96d287b2",
+      "claim_js-allonge_c007_1bbe8d42",
+      "claim_js-allonge_c007_5973a384",
+      "claim_js-allonge_c008_680c36fd",
+      "claim_js-allonge_c008_098172e6",
+      "claim_js-allonge_c014_28815d40",
+      "claim_js-allonge_c014_f568a6ff",
+      "claim_js-allonge_c014_80f99d22"
+    ],
+    "Arrays": [
+      "claim_js-allonge_c006_674aa832",
+      "claim_js-allonge_c006_26084188",
+      "claim_js-allonge_c006_61cd6038",
+      "claim_js-allonge_c006_a8ef2255",
+      "claim_js-allonge_c006_bfc95560",
+      "claim_js-allonge_c006_19132b68",
+      "claim_js-allonge_c006_d39a63fd",
+      "claim_js-allonge_c006_2c94fe92",
+      "claim_js-allonge_c006_bebf4bbb",
+      "claim_js-allonge_c007_c16dd271",
+      "claim_js-allonge_c007_828a0bea",
+      "claim_js-allonge_c007_8031fad6",
+      "claim_js-allonge_c007_0038036d",
+      "claim_js-allonge_c008_c8b221c2",
+      "claim_js-allonge_c008_91f47058",
+      "claim_js-allonge_c016_96e1ed64",
+      "claim_js-allonge_c016_26dd47a3"
+    ],
+    "Recursion": [
+      "claim_js-allonge_c007_f9ea3f48",
+      "claim_js-allonge_c007_a28e505e",
+      "claim_js-allonge_c008_ebee323d"
+    ],
+    "Objects": [
+      "claim_js-allonge_c008_59f27fdc",
+      "claim_js-allonge_c008_7d531611",
+      "claim_js-allonge_c008_bdd03bd9",
+      "claim_js-allonge_c008_097dc31e",
+      "claim_js-allonge_c008_cd9806d0",
+      "claim_js-allonge_c008_72751144",
+      "claim_js-allonge_c012_d4408233",
+      "claim_js-allonge_c012_15ce8188",
+      "claim_js-allonge_c016_1e541ea8",
+      "claim_js-allonge_c016_f01a0468",
+      "claim_js-allonge_c018_bb0135c8"
+    ],
+    "Destructuring": [
+      "claim_js-allonge_c008_1a1a5298",
+      "claim_js-allonge_c008_eb781eda"
+    ],
+    "Iterators": [
+      "claim_js-allonge_c010_e2a0f55e",
+      "claim_js-allonge_c010_cb08e7ae",
+      "claim_js-allonge_c010_834acfa6",
+      "claim_js-allonge_c010_2722e287",
+      "claim_js-allonge_c012_c03d3739",
+      "claim_js-allonge_c012_d7021414",
+      "claim_js-allonge_c012_921e4f81",
+      "claim_js-allonge_c012_756449d9",
+      "claim_js-allonge_c013_c2ac6de9",
+      "claim_js-allonge_c013_e2e41b3b",
+      "claim_js-allonge_c013_ee3bebee",
+      "claim_js-allonge_c013_8f82bf12",
+      "claim_js-allonge_c013_4d892c3e",
+      "claim_js-allonge_c013_b5d4bd58",
+      "claim_js-allonge_c013_bf6abadd",
+      "claim_js-allonge_c013_a0fbcfa2",
+      "claim_js-allonge_c013_8f7bc05a",
+      "claim_js-allonge_c013_1b9962a9",
+      "claim_js-allonge_c013_84f37f86",
+      "claim_js-allonge_c013_539a97c3",
+      "claim_js-allonge_c013_3da981be",
+      "claim_js-allonge_c013_ec1a5c12",
+      "claim_js-allonge_c013_513de41b",
+      "claim_js-allonge_c013_2331e478",
+      "claim_js-allonge_c013_38089bfa",
+      "claim_js-allonge_c013_7a7c99fd",
+      "claim_js-allonge_c014_32c1d03c",
+      "claim_js-allonge_c014_996b3712",
+      "claim_js-allonge_c014_08dfba5e",
+      "claim_js-allonge_c014_569b2784",
+      "claim_js-allonge_c014_f2c5b4d6",
+      "claim_js-allonge_c014_71aef152",
+      "claim_js-allonge_c014_90f4551f",
+      "claim_js-allonge_c014_efb7dd0d",
+      "claim_js-allonge_c014_d0a3816d",
+      "claim_js-allonge_c014_7f0f2d8d",
+      "claim_js-allonge_c015_8db0da8f",
+      "claim_js-allonge_c015_9aca8ba7",
+      "claim_js-allonge_c015_21d54170",
+      "claim_js-allonge_c015_d8ad421b",
+      "claim_js-allonge_c015_9093b9b1",
+      "claim_js-allonge_c015_734c6db5",
+      "claim_js-allonge_c015_ff8d1a4f",
+      "claim_js-allonge_c015_a7ade64d",
+      "claim_js-allonge_c015_03883d32",
+      "claim_js-allonge_c015_246a86d7",
+      "claim_js-allonge_c015_91adea91",
+      "claim_js-allonge_c015_018f2483",
+      "claim_js-allonge_c015_ae0f8159",
+      "claim_js-allonge_c016_d5875369",
+      "claim_js-allonge_c016_e57a740c",
+      "claim_js-allonge_c016_b167d655",
+      "claim_js-allonge_c016_8f680201",
+      "claim_js-allonge_c016_6e2b0d0e",
+      "claim_js-allonge_c016_2073af55",
+      "claim_js-allonge_c016_671ae205",
+      "claim_js-allonge_c016_39eb62a2",
+      "claim_js-allonge_c016_af890237"
+    ]
+  }
+}

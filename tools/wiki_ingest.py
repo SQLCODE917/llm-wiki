@@ -32,6 +32,7 @@ from wiki_deep_extract import (
     get_state_path,
 )
 from wiki_common import parse_frontmatter, section
+from wiki_manifest import Manifest, PhaseStatus, load_or_create_manifest
 
 
 DEFAULTS_PATH = Path("tools/wiki_model_defaults.json")
@@ -155,12 +156,34 @@ def run_ingest(config: IngestConfig) -> int:
     """Run the unified ingestion pipeline."""
 
     # =========================================================================
+    # Initialize manifest
+    # =========================================================================
+    source_kind = "pdf" if config.source and config.source.suffix.lower(
+    ) == ".pdf" else "markdown"
+    manifest = load_or_create_manifest(
+        config.slug,
+        source_file=config.source,
+        source_kind=source_kind,
+        command=f"pnpm wiki:ingest {config.source or ''} --slug {config.slug}",
+        extractor="pymupdf4llm",
+        structured=config.use_structured_chunking,
+        target_tokens=config.target_tokens,
+        model_backend=config.backend,
+        candidate=config.candidate_phase2,
+    )
+    manifest.save()
+    print(f"Manifest: {manifest._state_dir / 'manifest.json'}")
+
+    # =========================================================================
     # Phase 0: Normalize source
     # =========================================================================
     if config.source and not config.skip_phase0:
         print("\n" + "=" * 60)
         print("PHASE 0: Normalize source")
         print("=" * 60)
+        manifest.set_phase_status("phase0_import", PhaseStatus.RUNNING)
+        manifest.save()
+
         phase0 = ["python3", "tools/wiki_phase0_import.py",
                   config.source.as_posix(), config.slug]
         if config.reuse_imported:
@@ -168,7 +191,23 @@ def run_ingest(config: IngestConfig) -> int:
         if config.overwrite_normalized:
             phase0.append("--overwrite-normalized")
         if run_or_print(phase0, config.dry_run) != 0:
+            manifest.record_error("phase0_import", "Phase 0 import failed")
+            manifest.save()
             return 1
+
+        manifest.set_phase_status("phase0_import", PhaseStatus.COMPLETE)
+        manifest.set_phase_status("phase0_normalize", PhaseStatus.COMPLETE)
+        # Record file hashes
+        imported_path = Path(
+            f"raw/imported/{config.slug}/original{config.source.suffix}")
+        normalized_path = Path(f"raw/normalized/{config.slug}/source.md")
+        manifest.set_original_hash(imported_path)
+        manifest.set_normalized_hash(normalized_path)
+        manifest.save()
+    elif config.skip_phase0:
+        manifest.set_phase_status("phase0_import", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase0_normalize", PhaseStatus.SKIPPED)
+        manifest.save()
 
     normalized_source = config.normalized_source or normalized_source_for_ingest(
         config)
@@ -180,6 +219,9 @@ def run_ingest(config: IngestConfig) -> int:
         print("\n" + "=" * 60)
         print("PHASE 1: Deep extract claims")
         print("=" * 60)
+        manifest.set_phase_status("phase1a_extract", PhaseStatus.RUNNING)
+        manifest.save()
+
         if config.dry_run:
             print(
                 f"$ python3 tools/wiki_deep_extract.py {config.slug} --extract-only")
@@ -196,8 +238,22 @@ def run_ingest(config: IngestConfig) -> int:
                 target_tokens=config.target_tokens,
             )
             if result != 0:
+                manifest.record_error(
+                    "phase1a_extract", "Deep extraction failed")
+                manifest.save()
                 print("FAIL: Deep extraction failed", file=sys.stderr)
                 return 1
+
+        manifest.set_phase_status("phase1a_extract", PhaseStatus.COMPLETE)
+        manifest.set_phase_status("phase1b_dedupe", PhaseStatus.COMPLETE)
+        manifest.set_phase_status("phase1c_candidates", PhaseStatus.COMPLETE)
+        manifest.save()
+    else:
+        # Phase 1 skipped - mark as skipped
+        manifest.set_phase_status("phase1a_extract", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase1b_dedupe", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase1c_candidates", PhaseStatus.SKIPPED)
+        manifest.save()
 
     # Load extraction state
     state = load_extraction_state(config.slug)
@@ -221,6 +277,9 @@ def run_ingest(config: IngestConfig) -> int:
         print("\n" + "=" * 60)
         print("PHASE 2a: Create source page")
         print("=" * 60)
+        manifest.set_phase_status("phase2a_source", PhaseStatus.RUNNING)
+        manifest.save()
+
         if config.dry_run:
             print(f"$ create_source_page_from_topics({config.slug})")
         else:
@@ -241,6 +300,12 @@ def run_ingest(config: IngestConfig) -> int:
                 print("WARN: Source page validation issues:")
                 print(result.stdout)
 
+        manifest.set_phase_status("phase2a_source", PhaseStatus.COMPLETE)
+        manifest.save()
+    else:
+        manifest.set_phase_status("phase2a_source", PhaseStatus.SKIPPED)
+        manifest.save()
+
     # =========================================================================
     # Phase 2b: Synthesize pages with quality gates
     # =========================================================================
@@ -248,10 +313,18 @@ def run_ingest(config: IngestConfig) -> int:
         print("\n" + "=" * 60)
         print("PHASE 2b: Synthesize pages with quality gates")
         print("=" * 60)
+        manifest.set_phase_status("phase2b_synthesize", PhaseStatus.RUNNING)
+        manifest.save()
 
         # Get candidates from source page
         candidates = next_phase2_candidates_from_state(state, config)
         print(f"Candidates to synthesize: {len(candidates)}")
+        manifest.update_phase2_progress(
+            total=len(candidates), pending=len(candidates))
+
+        synthesized_count = 0
+        adopted_count = 0
+        failed_count = 0
 
         for i, (topic, page_path) in enumerate(candidates, 1):
             print(f"\n[{i}/{len(candidates)}] {topic}")
@@ -298,7 +371,17 @@ def run_ingest(config: IngestConfig) -> int:
                 command.append("--strict-judge")
             if run_or_print(command, config.dry_run) != 0:
                 print(f"  WARN: Synthesis failed for {topic}, continuing...")
+                failed_count += 1
+                manifest.update_phase2_progress(
+                    synthesized=synthesized_count,
+                    adopted=adopted_count,
+                    failed=failed_count,
+                    pending=len(candidates) - i,
+                )
+                manifest.save()
                 continue
+
+            synthesized_count += 1
 
             if config.dry_run:
                 continue
@@ -326,9 +409,48 @@ def run_ingest(config: IngestConfig) -> int:
             ]
             if run_or_print(adopt, config.dry_run) != 0:
                 print(f"  WARN: Adopt failed for {topic}")
+                failed_count += 1
+                manifest.update_phase2_progress(
+                    synthesized=synthesized_count,
+                    adopted=adopted_count,
+                    failed=failed_count,
+                    pending=len(candidates) - i,
+                )
+                manifest.save()
                 continue
 
+            adopted_count += 1
+            manifest.update_phase2_progress(
+                synthesized=synthesized_count,
+                adopted=adopted_count,
+                failed=failed_count,
+                pending=len(candidates) - i,
+            )
+            manifest.save()
             print(f"  Adopted: {page_path}")
+
+        # Update final Phase 2b status
+        if adopted_count > 0:
+            if failed_count > 0:
+                manifest.set_phase_status(
+                    "phase2b_synthesize", PhaseStatus.PARTIAL)
+                manifest.set_phase_status("phase2c_adopt", PhaseStatus.PARTIAL)
+                manifest.partial_success_reason = f"{failed_count} of {len(candidates)} candidates failed"
+            else:
+                manifest.set_phase_status(
+                    "phase2b_synthesize", PhaseStatus.COMPLETE)
+                manifest.set_phase_status(
+                    "phase2c_adopt", PhaseStatus.COMPLETE)
+        else:
+            manifest.set_phase_status("phase2b_synthesize", PhaseStatus.FAILED)
+            manifest.set_phase_status("phase2c_adopt", PhaseStatus.FAILED)
+            manifest.record_error("phase2b_synthesize",
+                                  "No pages were adopted")
+        manifest.save()
+    else:
+        manifest.set_phase_status("phase2b_synthesize", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase2c_adopt", PhaseStatus.SKIPPED)
+        manifest.save()
 
     # =========================================================================
     # Phase 3: Finalize
@@ -337,12 +459,30 @@ def run_ingest(config: IngestConfig) -> int:
         print("\n" + "=" * 60)
         print("PHASE 3: Finalize")
         print("=" * 60)
+        manifest.set_phase_status("phase3a_index", PhaseStatus.RUNNING)
+        manifest.save()
+
         if run_or_print(["python3", "tools/wiki_phase3_finalize.py", config.slug], config.dry_run) != 0:
+            manifest.record_error("phase3a_index", "Phase 3 finalize failed")
+            manifest.save()
             return 1
+
+        manifest.set_phase_status("phase3a_index", PhaseStatus.COMPLETE)
+        manifest.set_phase_status("phase3b_graph", PhaseStatus.COMPLETE)
+        manifest.set_phase_status("phase3c_lint", PhaseStatus.COMPLETE)
+        manifest.set_phase_status("phase3d_log", PhaseStatus.COMPLETE)
+        manifest.save()
+    else:
+        manifest.set_phase_status("phase3a_index", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase3b_graph", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase3c_lint", PhaseStatus.SKIPPED)
+        manifest.set_phase_status("phase3d_log", PhaseStatus.SKIPPED)
+        manifest.save()
 
     print("\n" + "=" * 60)
     print("INGESTION COMPLETE")
     print("=" * 60)
+    print(f"Manifest: {manifest._state_dir / 'manifest.json'}")
     return 0
 
 

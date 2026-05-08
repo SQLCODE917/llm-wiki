@@ -1,0 +1,19 @@
+{
+  "candidate_page": "../concepts/iterators.md",
+  "attempted_at": "2026-05-08T18:18:39.208680+00:00",
+  "draft_path": ".tmp/synthesis-failures/js-allonge/iterators/iterators.md",
+  "worktree_path": ".wiki-worktrees/js-allonge-concepts-iterators",
+  "validation_result": {
+    "passed": false,
+    "errors": []
+  },
+  "judge_result": {
+    "passed": false,
+    "verdicts": []
+  },
+  "repair_attempted": false,
+  "repair_result": "",
+  "repair_errors_remaining": 0,
+  "worktree_preserved": true,
+  "next_action": "retry"
+}

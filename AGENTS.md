@@ -431,6 +431,34 @@ If the source implies an executable concept:
 
 ---
 
+## Idempotency rules
+
+Each phase has explicit rerun behavior to support safe resumption and debugging.
+
+| Phase               | Rerun Behavior  | Rule                                                                                        |
+| ------------------- | --------------- | ------------------------------------------------------------------------------------------- |
+| Phase 0 import      | **Fail**        | Never overwrite `raw/imported/<slug>/`; use a new slug or `--reuse-imported` if bytes match |
+| Phase 0 normalize   | **Conditional** | Overwrite only if original hash matches (`--reuse-imported --overwrite-normalized`)         |
+| Phase 1a extract    | **Resume**      | Skip completed chunks; `--force` redoes all                                                 |
+| Phase 1b dedupe     | **Overwrite**   | Always regenerate from claims-raw.jsonl                                                     |
+| Phase 1c candidates | **Overwrite**   | Always regenerate from claims-normalized.json                                               |
+| Phase 2a source     | **Overwrite**   | Regenerate from current extraction state                                                    |
+| Phase 2b synthesize | **Worktree**    | Always write to disposable worktree first                                                   |
+| Phase 2c adopt      | **Conditional** | Copy only if validation passes                                                              |
+| Phase 3a index      | **Rebuild**     | Deterministic rebuild from `wiki/**/*.md` frontmatter                                       |
+| Phase 3b graph      | **Rebuild**     | Deterministic rebuild from `wiki/**/*.md` links                                             |
+| Phase 3c lint       | **Rebuild**     | Deterministic rebuild from `wiki/**/*.md` validation                                        |
+| Phase 3d log        | **Append**      | Append-only, never overwrite                                                                |
+
+**Key invariants**:
+
+- `raw/imported/` is immutable after first write.
+- `wiki/log.md` is append-only.
+- All other generated files can be rebuilt from source of truth.
+- Interrupted ingests can be resumed via manifest status.
+
+---
+
 ## Ingest quality bar
 
 A non-trivial source should usually create or update several pages.
@@ -483,10 +511,15 @@ Prefer deterministic checks over long prose reminders:
 pnpm wiki:check-source <slug>
 pnpm wiki:check-synthesis <slug>
 pnpm wiki:ingest raw/inbox/<file> --slug <slug>
+pnpm wiki:verify-ingest <slug>
 pnpm wiki:deep-extract <slug> --extract-only
+pnpm wiki:extraction-state <slug>
+pnpm wiki:merge-candidates <slug>
 pnpm wiki:phase1-benchmark <slug>
 pnpm wiki:phase2-benchmark <slug>
 pnpm wiki:phase2-single <slug> <candidate-path> --report .tmp/phase2-run.md
+pnpm wiki:phase2-failures <slug>
+pnpm wiki:phase2-clean-failures <slug> --older-than 30
 pnpm wiki:review-phase2 <slug> <worktree>
 pnpm wiki:adopt-phase2 <slug> <worktree>
 pnpm wiki:phase3 <slug>
