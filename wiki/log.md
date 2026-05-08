@@ -576,3 +576,51 @@
 - Generated wiki/_linter-report.md.
 
 ---
+
+## [2026-05-07] ingest | Deep extraction of js-allonge
+
+- Chunks: 18, Claims: 170, Topics: 8, Pages: 8. Created: functions, es6-features, data-types, control-flow, arrays, +3 more
+
+---
+
+## [2026-05-07] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-07] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-07] ingest | finalized ingest for js-allonge
+
+- Finalized source `js-allonge` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-07] ingest | Deep extraction of js-allonge
+
+- Chunks: 15, Claims: 143, Topics: 8, Pages: 8. Created: functions, es6-features, control-flow, data-types, arrays, +3 more
+
+---
+
+## [2026-05-07] ingest | Deep extraction of js-allonge
+
+- Chunks: 13, Claims: 130, Topics: 9, Pages: 7. Created: functions, es6-features, data-types, control-flow, arrays, +2 more
+
+---
+
+## [2026-05-07] ingest | Deep extraction of js-allonge
+
+- Chunks: 13, Claims: 128, Topics: 8, Pages: 8. Created: functions, es6-features, data-types, control-flow, objects, +3 more
+
+---

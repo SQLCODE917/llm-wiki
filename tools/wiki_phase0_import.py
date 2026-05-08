@@ -28,9 +28,9 @@ def main() -> int:
                         help="TORCH_DEVICE value for marker_single")
     parser.add_argument(
         "--pdf-extractor",
-        choices=["auto", "marker", "pymupdf", "pdfplumber"],
+        choices=["auto", "marker", "pymupdf", "pymupdf4llm", "pdfplumber"],
         default="auto",
-        help="PDF extraction backend; auto tries marker first, then pymupdf",
+        help="PDF extraction backend; auto tries pymupdf4llm first, then marker, then pymupdf",
     )
     parser.add_argument(
         "--reuse-imported",
@@ -99,6 +99,9 @@ def main() -> int:
                     print(
                         f"FAIL: marker command exited with {completed.returncode}", file=sys.stderr)
                     return completed.returncode
+            elif extractor == "pymupdf4llm":
+                if not extract_pdf_pymupdf4llm(source, normalized_dir):
+                    return 1
             elif extractor == "pymupdf":
                 if not extract_pdf_pymupdf(source, normalized_dir):
                     return 1
@@ -236,7 +239,14 @@ def select_pdf_extractor(requested: str, marker_bin: str) -> str:
     if requested != "auto":
         return requested
 
-    # Try marker first (best quality)
+    # Try pymupdf4llm first (best structure recognition)
+    try:
+        import pymupdf4llm  # noqa: F401
+        return "pymupdf4llm"
+    except ImportError:
+        pass
+
+    # Try marker (good quality with ML)
     if shutil.which(marker_bin):
         return "marker"
 
@@ -292,6 +302,42 @@ def extract_pdf_pymupdf(source: Path, output_dir: Path) -> bool:
 
     except Exception as e:
         print(f"FAIL: pymupdf extraction error: {e}", file=sys.stderr)
+        return False
+
+
+def extract_pdf_pymupdf4llm(source: Path, output_dir: Path) -> bool:
+    """Extract PDF to markdown using PyMuPDF4LLM (optimized for LLM workflows)."""
+    try:
+        import pymupdf4llm
+    except ImportError:
+        print("FAIL: pymupdf4llm not installed (pip install pymupdf4llm)",
+              file=sys.stderr)
+        return False
+
+    try:
+        output_path = output_dir / "source.md"
+
+        # Use pymupdf4llm's markdown extraction - better structure detection
+        print("Extracting with pymupdf4llm (this may take a minute)...")
+        md_text = pymupdf4llm.to_markdown(str(source))
+
+        # Post-process to add page markers and clean up
+        # pymupdf4llm doesn't add page markers by default, but we can try to infer them
+        # For now, just use the output as-is since it has good structure
+
+        output_path.write_text(md_text)
+
+        # Count approximate pages by looking for page breaks or form feeds
+        import pymupdf
+        doc = pymupdf.open(source)
+        page_count = doc.page_count
+        doc.close()
+
+        print(f"Extracted {page_count} pages using pymupdf4llm")
+        return True
+
+    except Exception as e:
+        print(f"FAIL: pymupdf4llm extraction error: {e}", file=sys.stderr)
         return False
 
 

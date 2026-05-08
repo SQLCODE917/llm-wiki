@@ -44,6 +44,22 @@ from wiki_candidate_tracker import (
     register_candidate,
 )
 
+# Structured chunking support (optional import)
+try:
+    from wiki_structured_chunking import (
+        BlockExtractor,
+        StructuralChunker,
+        ChunkConfig,
+        StructuredChunk,
+        count_tokens,
+        assess_extraction_quality,
+        save_blocks,
+        save_chunks as save_structured_chunks,
+    )
+    HAS_STRUCTURED_CHUNKING = True
+except ImportError:
+    HAS_STRUCTURED_CHUNKING = False
+
 
 # ============================================================================
 # Data Structures
@@ -280,6 +296,98 @@ def extract_chunk_title(lines: list[str], start: int, end: int) -> str:
     return f"Chunk {start}-{end}"
 
 
+def create_structured_chunks(
+    source_path: Path,
+    doc_id: str,
+    target_tokens: int = 6500,
+    soft_max_tokens: int = 7500,
+    hard_max_tokens: int = 9000,
+) -> tuple[list[Chunk], dict]:
+    """Create chunks using token-aware structural packing.
+
+    Returns:
+        Tuple of (list of legacy Chunk objects, metadata dict)
+    """
+    if not HAS_STRUCTURED_CHUNKING:
+        raise ImportError("Structured chunking not available")
+
+    source_text = source_path.read_text()
+
+    # Extract blocks
+    extractor = BlockExtractor()
+    blocks = extractor.extract_from_markdown(source_text, doc_id)
+
+    # Pack into structured chunks
+    config = ChunkConfig(
+        target_tokens=target_tokens,
+        soft_max_tokens=soft_max_tokens,
+        hard_max_tokens=hard_max_tokens,
+    )
+    chunker = StructuralChunker(config)
+    structured_chunks = chunker.pack(blocks, doc_id)
+
+    # Assess quality
+    quality = assess_extraction_quality(blocks, structured_chunks)
+
+    # Convert to legacy Chunk format for compatibility
+    legacy_chunks = []
+    for i, sc in enumerate(structured_chunks):
+        legacy_chunks.append(Chunk(
+            index=i,
+            start_line=sc.line_start,
+            end_line=sc.line_end,
+            title=' > '.join(
+                sc.section_path) if sc.section_path else f"Chunk {i+1}",
+        ))
+
+    metadata = {
+        "block_count": len(blocks),
+        "chunk_count": len(structured_chunks),
+        "total_tokens": quality.total_tokens,
+        "avg_tokens_per_chunk": quality.total_tokens / len(structured_chunks) if structured_chunks else 0,
+        "pages_needing_review": quality.pages_needing_review,
+        "issues_by_type": quality.issues_by_type,
+        "structured_chunks": structured_chunks,  # Keep for later use
+        "blocks": blocks,
+    }
+
+    return legacy_chunks, metadata
+
+
+def get_structured_chunk_text(
+    source_path: Path,
+    chunk: Chunk,
+    metadata: dict,
+    context_lines: int = 0,  # Not used with structured chunking
+) -> str:
+    """Get chunk text for a structured chunk.
+
+    Uses the pre-packed structured chunk with context headers.
+    """
+    structured_chunks = metadata.get("structured_chunks", [])
+
+    if chunk.index < len(structured_chunks):
+        sc = structured_chunks[chunk.index]
+        # Render with context header and line numbers
+        lines = sc.text.split('\n')
+        result = []
+
+        # Add context header if present
+        if sc.context_header:
+            result.append(sc.context_header)
+            result.append("")
+
+        # Add content with line numbers
+        for i, line in enumerate(lines):
+            line_num = sc.line_start + i
+            result.append(f"L{line_num}: {line}")
+
+        return '\n'.join(result)
+
+    # Fallback to original method
+    return get_chunk_text(source_path, chunk, context_lines)
+
+
 def get_chunk_text(source_path: Path, chunk: Chunk, context_lines: int = 10) -> str:
     """Extract chunk text with line numbers for evidence locators."""
     lines = source_path.read_text().splitlines()
@@ -370,9 +478,11 @@ def extract_claims_from_chunk(
     chunk: Chunk,
     source_path: Path,
     timeout: int = 120,
+    chunk_text: str = "",
 ) -> list[Claim]:
     """Extract claims from a single chunk using the model backend."""
-    chunk_text = get_chunk_text(source_path, chunk)
+    if not chunk_text:
+        chunk_text = get_chunk_text(source_path, chunk)
     prompt = build_extraction_prompt(
         chunk, chunk_text, state.slug, len(state.chunks))
 
@@ -1311,6 +1421,10 @@ def run_deep_extraction(
     timeout: int = 120,
     skip_synthesis: bool = False,
     skip_finalize: bool = False,
+    use_structured_chunking: bool = False,
+    target_tokens: int = 6500,
+    soft_max_tokens: int = 7500,
+    hard_max_tokens: int = 9000,
 ) -> int:
     """Run the complete deep extraction workflow."""
     source_path = Path(f"raw/normalized/{slug}/source.md")
@@ -1319,6 +1433,9 @@ def run_deep_extraction(
     if not source_path.exists():
         print(f"FAIL: {source_path} not found", file=sys.stderr)
         return 1
+
+    # Track structured chunking metadata
+    structured_metadata = None
 
     # Load or create state
     if resume and state_path.exists():
@@ -1330,8 +1447,43 @@ def run_deep_extraction(
         print(f"  Topics found: {len(state.topics)}")
     else:
         print(f"Starting fresh extraction for {slug}")
-        chunks = create_chunks(
-            source_path, chunk_size=chunk_size, overlap=overlap)
+
+        if use_structured_chunking:
+            if not HAS_STRUCTURED_CHUNKING:
+                print(
+                    "WARN: Structured chunking not available, falling back to line-based chunking")
+                chunks = create_chunks(
+                    source_path, chunk_size=chunk_size, overlap=overlap)
+            else:
+                print(
+                    f"Using structured chunking (target: {target_tokens} tokens)")
+                chunks, structured_metadata = create_structured_chunks(
+                    source_path,
+                    doc_id=slug,
+                    target_tokens=target_tokens,
+                    soft_max_tokens=soft_max_tokens,
+                    hard_max_tokens=hard_max_tokens,
+                )
+                print(f"  Blocks: {structured_metadata['block_count']}")
+                print(
+                    f"  Total tokens: {structured_metadata['total_tokens']:,}")
+                print(
+                    f"  Avg tokens/chunk: {structured_metadata['avg_tokens_per_chunk']:.0f}")
+                if structured_metadata['issues_by_type']:
+                    print(
+                        f"  Quality issues: {structured_metadata['issues_by_type']}")
+
+                # Save structured chunks for reference
+                struct_dir = Path(f".tmp/deep-extract/{slug}/structured")
+                struct_dir.mkdir(parents=True, exist_ok=True)
+                save_blocks(
+                    structured_metadata['blocks'], struct_dir / "blocks.jsonl")
+                save_structured_chunks(
+                    structured_metadata['structured_chunks'], struct_dir / "chunks.jsonl")
+        else:
+            chunks = create_chunks(
+                source_path, chunk_size=chunk_size, overlap=overlap)
+
         state = ExtractionState(
             slug=slug,
             source_path=str(source_path),
@@ -1379,8 +1531,16 @@ def run_deep_extraction(
                 f"    Lines {chunk.start_line}-{chunk.end_line} ({chunk.line_count} lines)")
 
             start_time = time.time()
+
+            # Use structured chunk text if available
+            if structured_metadata:
+                chunk_text = get_structured_chunk_text(
+                    source_path, chunk, structured_metadata)
+            else:
+                chunk_text = get_chunk_text(source_path, chunk)
+
             claims = extract_claims_from_chunk(
-                backend, state, chunk, source_path, timeout)
+                backend, state, chunk, source_path, timeout, chunk_text=chunk_text)
             elapsed = time.time() - start_time
 
             print(f"    Extracted {len(claims)} claims in {elapsed:.1f}s")
@@ -1459,9 +1619,9 @@ def main() -> int:
     parser.add_argument("--max-chunks", type=int, default=0,
                         help="Limit chunks to process (0 = all)")
     parser.add_argument("--chunk-size", type=int, default=400,
-                        help="Lines per chunk (default: 400)")
+                        help="Lines per chunk for line-based chunking (default: 400)")
     parser.add_argument("--overlap", type=int, default=30,
-                        help="Overlap between chunks (default: 30)")
+                        help="Overlap between chunks for line-based chunking (default: 30)")
     parser.add_argument("--backend", type=str, default="",
                         help="Model backend (default: WIKI_MODEL_BACKEND or bedrock)")
     parser.add_argument("--timeout", type=int, default=120,
@@ -1472,6 +1632,17 @@ def main() -> int:
                         help="Skip finalization (index/graph/log)")
     parser.add_argument("--extract-only", action="store_true",
                         help="Extract claims only, no synthesis or finalization (alias for --skip-synthesis --skip-finalize)")
+
+    # Structured chunking options
+    parser.add_argument("--structured", action="store_true",
+                        help="Use token-aware structural chunking instead of line-based")
+    parser.add_argument("--target-tokens", type=int, default=6500,
+                        help="Target source tokens per chunk (default: 6500)")
+    parser.add_argument("--soft-max-tokens", type=int, default=7500,
+                        help="Soft max source tokens per chunk (default: 7500)")
+    parser.add_argument("--hard-max-tokens", type=int, default=9000,
+                        help="Hard max source tokens per chunk (default: 9000)")
+
     args = parser.parse_args()
 
     # --extract-only is shorthand for --skip-synthesis --skip-finalize
@@ -1486,18 +1657,50 @@ def main() -> int:
             print(f"FAIL: {source_path} not found", file=sys.stderr)
             return 1
 
-        chunks = create_chunks(
-            source_path, chunk_size=args.chunk_size, overlap=args.overlap)
-        total_lines = len(source_path.read_text().splitlines())
+        if args.structured:
+            if not HAS_STRUCTURED_CHUNKING:
+                print("FAIL: Structured chunking not available", file=sys.stderr)
+                return 1
 
-        est_time = len(chunks) * 30  # ~30 sec per chunk
-        est_min = est_time // 60
-        est_sec = est_time % 60
+            chunks, metadata = create_structured_chunks(
+                source_path,
+                doc_id=args.slug,
+                target_tokens=args.target_tokens,
+                soft_max_tokens=args.soft_max_tokens,
+                hard_max_tokens=args.hard_max_tokens,
+            )
+            total_lines = len(source_path.read_text().splitlines())
 
-        print(f"Source: {source_path}")
-        print(f"Total lines: {total_lines}")
-        print(f"Chunks: {len(chunks)}")
-        print(f"Estimated time: {est_min}m {est_sec}s")
+            print(f"Source: {source_path}")
+            print(f"Total lines: {total_lines}")
+            print(f"Chunking: STRUCTURED (token-aware)")
+            print(f"  Target tokens: {args.target_tokens}")
+            print(f"  Blocks: {metadata['block_count']}")
+            print(f"  Chunks: {len(chunks)}")
+            print(f"  Total tokens: {metadata['total_tokens']:,}")
+            print(
+                f"  Avg tokens/chunk: {metadata['avg_tokens_per_chunk']:.0f}")
+            if metadata['issues_by_type']:
+                print(f"  Quality issues: {metadata['issues_by_type']}")
+            if metadata['pages_needing_review']:
+                print(
+                    f"  Pages needing review: {metadata['pages_needing_review']}")
+        else:
+            chunks = create_chunks(
+                source_path, chunk_size=args.chunk_size, overlap=args.overlap)
+            total_lines = len(source_path.read_text().splitlines())
+
+            est_time = len(chunks) * 30  # ~30 sec per chunk
+            est_min = est_time // 60
+            est_sec = est_time % 60
+
+            print(f"Source: {source_path}")
+            print(f"Total lines: {total_lines}")
+            print(f"Chunking: LINE-BASED")
+            print(f"  Chunk size: {args.chunk_size} lines")
+            print(f"  Overlap: {args.overlap} lines")
+            print(f"  Chunks: {len(chunks)}")
+            print(f"Estimated time: {est_min}m {est_sec}s")
         print()
         print("Chunks:")
         for c in chunks[:30]:
@@ -1529,6 +1732,10 @@ def main() -> int:
         timeout=args.timeout,
         skip_synthesis=args.skip_synthesis,
         skip_finalize=args.skip_finalize,
+        use_structured_chunking=args.structured,
+        target_tokens=args.target_tokens,
+        soft_max_tokens=args.soft_max_tokens,
+        hard_max_tokens=args.hard_max_tokens,
     )
 
 

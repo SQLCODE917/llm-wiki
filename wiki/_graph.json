@@ -25,6 +25,13 @@
         "wiki:sources/aoe2-basics"
       ]
     },
+    "wiki:analyses/pdf-extractor-comparison": {
+      "type": "unknown",
+      "path": "wiki/analyses/pdf-extractor-comparison.md",
+      "description": "Tested three PDF extractors on `javascriptallonge.pdf` (297 pages, ~350KB) using the wiki ingestion pipeline with AWS Bedrock backend. **Note**: Marker and Docling require NVIDIA\u2026",
+      "sources": [],
+      "depends_on": []
+    },
     "wiki:concepts/aoe2-army-composition": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-army-composition.md",
@@ -174,19 +181,14 @@
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/closures": {
+    "wiki:concepts/arrays": {
       "type": "concept",
-      "path": "wiki/concepts/closures.md",
-      "description": "A closure occurs when a function 'remembers' and has access to variables from its outer lexical scope, even after the outer function has finished executing. This mechanism enables\u2026",
+      "path": "wiki/concepts/arrays.md",
+      "description": "Arrays in JavaScript are ordered collections that store references to objects rather than copies, and their literal syntax creates distinct instances even with identical content.\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
-      "depends_on": [
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
-        "wiki:sources/js-allonge"
-      ]
+      "depends_on": []
     },
     "wiki:concepts/compound-interest": {
       "type": "concept",
@@ -199,68 +201,68 @@
         "wiki:sources/compound-interest"
       ]
     },
-    "wiki:concepts/functional-programming": {
+    "wiki:concepts/control-flow": {
       "type": "concept",
-      "path": "wiki/concepts/functional-programming.md",
-      "description": "Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data. It focuses on composing functions and treating functions as first-cl\u2026",
+      "path": "wiki/concepts/control-flow.md",
+      "description": "Control flow in JavaScript refers to the order in which statements are executed and how program execution can be altered through various constructs. Key aspects include the evolut\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
-      "depends_on": [
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
-        "wiki:sources/js-allonge"
-      ]
+      "depends_on": []
     },
-    "wiki:concepts/iterators": {
+    "wiki:concepts/data-types": {
       "type": "concept",
-      "path": "wiki/concepts/iterators.md",
-      "description": "Iterators are functions that produce a sequence of values, either by traversing existing data structures or generating new values on demand. They maintain internal state to track\u2026",
+      "path": "wiki/concepts/data-types.md",
+      "description": "JavaScript's data type system includes both primitive and reference types, with distinct behaviors for equality, copying, and evaluation. Primitive types like strings, numbers, an\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
+      "depends_on": []
+    },
+    "wiki:concepts/es6-features": {
+      "type": "concept",
+      "path": "wiki/concepts/es6-features.md",
+      "description": "ECMAScript 2015 introduced several key features that improved JavaScript's handling of scope and function parameters, including block-scoped variables and rest syntax for collecti\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": []
+    },
+    "wiki:concepts/functions": {
+      "type": "concept",
+      "path": "wiki/concepts/functions.md",
+      "description": "Functions are fundamental building blocks in JavaScript that enable the composition of complex programs. They can be invoked with zero or more arguments to produce values, and sup\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": []
+    },
+    "wiki:concepts/iterators-and-generators": {
+      "type": "concept",
+      "path": "wiki/concepts/iterators-and-generators.md",
+      "description": "Iterators and generators are fundamental concepts in JavaScript that enable efficient traversal and manipulation of data sequences. Iterators provide a standardized way to access\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": []
     },
     "wiki:concepts/objects": {
       "type": "concept",
       "path": "wiki/concepts/objects.md",
-      "description": "In JavaScript, objects are collections of key-value pairs used to store and organize data. They support various ways of defining properties, accessing values, and can contain nest\u2026",
+      "description": "In JavaScript, objects serve as fundamental data structures that map string keys to values, functioning as collections where each key-value pair represents a property of the objec\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
-      "depends_on": [
-        "wiki:concepts/iterators",
-        "wiki:sources/js-allonge"
-      ]
+      "depends_on": []
     },
     "wiki:concepts/recursion": {
       "type": "concept",
       "path": "wiki/concepts/recursion.md",
-      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is foundational in computer science and functional programming, often used to process dat\u2026",
+      "description": "Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems. It serves as a fundamental approach in\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/variables": {
-      "type": "concept",
-      "path": "wiki/concepts/variables.md",
-      "description": "Variables in JavaScript are containers for storing data values, with distinct scoping rules depending on how they are declared. The 'var' keyword has function-level scope and exhi\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:concepts/closures",
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
-        "wiki:concepts/recursion",
-        "wiki:sources/js-allonge"
-      ]
+      "depends_on": []
     },
     "wiki:procedures/aoe2-game-plans": {
       "type": "procedure",
@@ -345,22 +347,6 @@
       ],
       "depends_on": [
         "wiki:concepts/compound-interest"
-      ]
-    },
-    "wiki:sources/js-allonge": {
-      "type": "source",
-      "path": "wiki/sources/js-allonge.md",
-      "description": "*Extracted from javascriptallonge.pdf (297 pages)* --- JavaScript Allong\u00e9, the \u201cSix\u201d Edition Extracted 273 claims from 30 chunks, organized into 12 viable topics. ### Extraction M\u2026",
-      "sources": [
-        "../../raw/imported/js-allonge/original.pdf"
-      ],
-      "depends_on": [
-        "wiki:concepts/closures",
-        "wiki:concepts/functional-programming",
-        "wiki:concepts/iterators",
-        "wiki:concepts/objects",
-        "wiki:concepts/recursion",
-        "wiki:concepts/variables"
       ]
     }
   }
