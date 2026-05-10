@@ -755,7 +755,8 @@ def build_evidence_bank(
                 if locator:
                     # Extract evidence directly from source lines at locator
                     # This guarantees exact byte match - no LLM reformatting
-                    evidence = get_evidence_for_locator(locator, lines, max_chars=500)
+                    evidence = get_evidence_for_locator(
+                        locator, lines, max_chars=500)
                     if evidence:
                         # Normalize to always-range format
                         evidence_items.append(

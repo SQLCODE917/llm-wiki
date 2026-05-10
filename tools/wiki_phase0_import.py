@@ -14,6 +14,25 @@ from pathlib import Path
 MARKDOWN_SUFFIXES = {".md", ".markdown"}
 
 
+def clean_pdf_artifacts(text: str) -> str:
+    """Clean up PDF extraction artifacts from normalized markdown.
+    
+    PDF extractors sometimes soft-wrap long lines with backslash-space or
+    backslash-newline sequences. These cause JSON parse errors when the
+    model quotes them as evidence. This function joins such broken lines.
+    
+    Examples:
+        'wh\\ y' -> 'why'
+        'conc\\ at(' -> 'concat('
+        'Forbid\\ den' -> 'Forbidden'
+    """
+    # Join backslash followed by space (soft line break in PDF)
+    text = re.sub(r'\\ ', '', text)
+    # Join backslash followed by newline (line continuation)
+    text = re.sub(r'\\\n', '', text)
+    return text
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Phase 0 import and normalize one inbox source.")
@@ -321,9 +340,8 @@ def extract_pdf_pymupdf4llm(source: Path, output_dir: Path) -> bool:
         print("Extracting with pymupdf4llm (this may take a minute)...")
         md_text = pymupdf4llm.to_markdown(str(source))
 
-        # Post-process to add page markers and clean up
-        # pymupdf4llm doesn't add page markers by default, but we can try to infer them
-        # For now, just use the output as-is since it has good structure
+        # Post-process to clean up PDF extraction artifacts
+        md_text = clean_pdf_artifacts(md_text)
 
         output_path.write_text(md_text)
 

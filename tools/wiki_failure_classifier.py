@@ -155,6 +155,8 @@ DETERMINISTIC_CATEGORIES = {
     FailureCategory.NON_ASCII_CHARS,
     FailureCategory.WRONG_SOURCE_LINK,
     FailureCategory.EVIDENCE_NOT_IN_LOCATOR,  # Can fix by searching nearby lines
+    FailureCategory.REFERENCE_TO_UNCREATED,  # Move to Candidate pages section
+    FailureCategory.BROKEN_LINK,  # Move broken links to Candidate pages section
     # Note: FILE_SCOPE_VIOLATION is a runner artifact, not a page issue - filtered out in repair loop
 }
 

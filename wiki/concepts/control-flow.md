@@ -1,53 +1,45 @@
 ---
 title: Control Flow
 type: concept
-tags: [javascript, programming, logic]
+tags: [javascript, operators, logic]
 status: draft
-last_updated: 2026-05-08
+last_updated: 2026-05-09
 sources:
   - ../sources/js-allonge.md
 source_ranges:
-  - js-allonge:normalized:L1205-L1205
-  - js-allonge:normalized:L1243-L1245
-  - js-allonge:normalized:L2203-L2205
-  - js-allonge:normalized:L2209-L2217
-  - js-allonge:normalized:L2239-L2240
-  - js-allonge:normalized:L2259-L2271
-  - js-allonge:normalized:L2273-L2283
-  - js-allonge:normalized:L2289-L2299
-  - js-allonge:normalized:L2315-L2315
-  - js-allonge:normalized:L2327-L2333
+  - js-allonge:normalized:L2195-L2195
+  - js-allonge:normalized:L2207-L2207
+  - js-allonge:normalized:L2209-L2210
+  - js-allonge:normalized:L2239-L2239
+  - js-allonge:normalized:L2261-L2265
+  - js-allonge:normalized:L2267-L2271
+  - js-allonge:normalized:L2957-L2957
 ---
 
 # Control Flow
 
 ## Summary
 
-Control flow refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a program. In JavaScript, control flow is managed through conditional logic, loops, and operators that influence execution paths based on boolean evaluations.
+Control flow in JavaScript refers to the order in which statements are executed and the mechanisms that alter this order, such as conditional logic and loops. Key operators like &&, ||, and the ternary operator serve dual roles as both logical operators and control-flow mechanisms.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 | --- | --- | --- | --- |
-| Blocks in JavaScript can be used in various contexts beyond function bodies, such as within conditional statements, enabling structured code organization. | "We use the const keyword in a _const statement_ . const statements occur inside blocks, we can't use them when we write a fat arrow that has an expression as its body." | `normalized:L1205-L1205` | [Source](../sources/js-allonge.md) |
-| Blocks in JavaScript can be used in various contexts beyond function bodies, such as within conditional statements, enabling structured code organization. | "Up to now, we've only ever seen blocks we use as the body of functions. But there are other kinds of blocks. One of the places you can find blocks is in an if statement. In JavaScript, an if..." | `normalized:L1243-L1245` | [Source](../sources/js-allonge.md) |
-| JavaScript's logical operators && and \|\| serve dual purposes as both logical operators and control-flow mechanisms, returning values based on truthiness rather than just boolean outcomes. | "In JavaScript, there is a notion of "truthiness." Every value is either "truthy" or "falsy." Obviously, false is falsy. So are null and undefined, values that semantically represent "no value."..." | `normalized:L2203-L2205` | [Source](../sources/js-allonge.md) |
-| JavaScript's logical operators && and \|\| serve dual purposes as both logical operators and control-flow mechanisms, returning values based on truthiness rather than just boolean outcomes. | "Our logical operators !, &&, and \|\| are a little more subtle than our examples above implied. ! is the simplest. It always returns false if its argument is truthy, and true is its argument is..." | `normalized:L2239-L2240` | [Source](../sources/js-allonge.md) |
-| JavaScript's logical operators && and \|\| serve dual purposes as both logical operators and control-flow mechanisms, returning values based on truthiness rather than just boolean outcomes. | "First, and unlike !, && and \|\| do not necessarily evaluate to true or false. To be precise: - && evaluates its left-hand expression. - If its left-hand expression evaluates to something falsy,..." | `normalized:L2259-L2271` | [Source](../sources/js-allonge.md) |
-| JavaScript's logical operators && and \|\| serve dual purposes as both logical operators and control-flow mechanisms, returning values based on truthiness rather than just boolean outcomes. | "If we look at our examples above, we see that when we pass true and false to && and \|\|, we do indeed get true or false as a result. But when we pass other values, we no longer get true or false:..." | `normalized:L2273-L2283` | [Source](../sources/js-allonge.md) |
-| JavaScript's logical operators && and \|\| serve dual purposes as both logical operators and control-flow mechanisms, returning values based on truthiness rather than just boolean outcomes. | "## **\|\| and && are control-flow operators** We've seen the ternary operator: It is a _control-flow_ operator, not a logical operator. The same is true of && and \|\|. Consider this..." | `normalized:L2289-L2299` | [Source](../sources/js-allonge.md) |
-| The ternary operator and logical operators && and \|\| are classified as control-flow operators because they can alter the execution path of a program based on evaluation results. | "JavaScript inherited an operator from the C family of languages, the _ternary_ operator. It's the only operator that takes _three_ arguments. It looks like this: first ? second : third. It..." | `normalized:L2209-L2217` | [Source](../sources/js-allonge.md) |
-| The ternary operator and logical operators && and \|\| are classified as control-flow operators because they can alter the execution path of a program based on evaluation results. | "## **\|\| and && are control-flow operators** We've seen the ternary operator: It is a _control-flow_ operator, not a logical operator. The same is true of && and \|\|. Consider this..." | `normalized:L2289-L2299` | [Source](../sources/js-allonge.md) |
-| The ternary operator and logical operators && and \|\| are classified as control-flow operators because they can alter the execution path of a program based on evaluation results. | "In contrast to the behaviour of the ternary operator, \|\|, and &&, function parameters are always : _eagerly evaluated_" | `normalized:L2315-L2315` | [Source](../sources/js-allonge.md) |
-| The ternary operator and logical operators && and \|\| are classified as control-flow operators because they can alter the execution path of a program based on evaluation results. | "If we need to have functions with control-flow semantics, we can pass anonymous functions. We obviously don't need anything like this for or and and, but to demonstrate the technique: 76 Picking..." | `normalized:L2327-L2333` | [Source](../sources/js-allonge.md) |
+| The logical AND (&&) and OR (\|\|) operators in JavaScript function as control-flow mechanisms, evaluating expressions lazily and returning the value of either the left or right operand based on... | "The && and \|\| operators are binary infix operators that perform "logical and" and "logical or" respectively:" | `normalized:L2195-L2195` | [Source](../sources/js-allonge.md) |
+| The logical AND (&&) and OR (\|\|) operators in JavaScript function as control-flow mechanisms, evaluating expressions lazily and returning the value of either the left or right operand based on... | "- && evaluates its left-hand expression. - If its left-hand expression evaluates to something falsy, && returns the value of its lefthand expression without evaluating its right-hand expression. -..." | `normalized:L2261-L2265` | [Source](../sources/js-allonge.md) |
+| The logical AND (&&) and OR (\|\|) operators in JavaScript function as control-flow mechanisms, evaluating expressions lazily and returning the value of either the left or right operand based on... | "- \|\| evaluates its left-hand expression. - If its left-hand expression evaluates to something truthy, \|\| returns the value of its lefthand expression without evaluating its right-hand..." | `normalized:L2267-L2271` | [Source](../sources/js-allonge.md) |
+| JavaScript's logical operators behave differently from traditional boolean operators due to their handling of truthiness, making them useful for conditional execution and default value assignment. | "Our logical operators !, &&, and \|\| are a little more subtle than our examples above implied. ! is the simplest. It always returns false if its argument is truthy, and true is its argument is..." | `normalized:L2239-L2239` | [Source](../sources/js-allonge.md) |
+| JavaScript's logical operators behave differently from traditional boolean operators due to their handling of truthiness, making them useful for conditional execution and default value assignment. | "The reason why truthiness matters is that the various logical operators (as well as the if statement) actually operate on _truthiness_ , not on boolean values. This affects the way the !, &&, and..." | `normalized:L2207-L2207` | [Source](../sources/js-allonge.md) |
+| The ternary operator serves as a concise alternative to if-else blocks for simple conditional assignments, and is often used in functional programming patterns to express control flow elegantly. | "JavaScript inherited an operator from the C family of languages, the _ternary_ operator. It's the only operator that takes _three_ arguments. It looks like this: first ? second : third. It..." | `normalized:L2209-L2210` | [Source](../sources/js-allonge.md) |
+| The ternary operator serves as a concise alternative to if-else blocks for simple conditional assignments, and is often used in functional programming patterns to express control flow elegantly. | "**const** factorial = (n, work) => n === 1 ? work : factorial(n - 1, n * work); factorial(1, 1) _//=> 1_ factorial(5, 1) _//=> 120_" | `normalized:L2957-L2957` | [Source](../sources/js-allonge.md) |
 
 ## Why it matters
 
-Understanding control flow is essential for writing dynamic and responsive code. It allows developers to make decisions, repeat actions, and manage program execution paths effectively, especially when dealing with complex logic involving truthiness and operator behavior.
+Understanding control flow is essential for writing expressive and efficient JavaScript code. Logical operators && and || are not just for boolean logic-they act as control structures that enable short-circuit evaluation, allowing developers to write concise conditional expressions. This behavior is fundamental to idiomatic JavaScript programming and supports functional programming techniques.
 
 ## Related pages
 
-- [Arrays](../concepts/arrays.md)
 - [Data Types](../concepts/data-types.md)
 - [Functions](../concepts/functions.md)
 - [Iterators](../concepts/iterators.md)

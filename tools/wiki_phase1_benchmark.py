@@ -24,6 +24,8 @@ IGNORE_NAMES = {
     "dist",
     "Example_AGENTS.md",
     "Handoff.md",
+    ".wiki-worktrees",  # Preserved worktrees - never copy to temp worktrees
+    ".tmp",  # Temporary files and quarantine artifacts
 }
 
 

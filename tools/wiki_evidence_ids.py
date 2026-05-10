@@ -255,7 +255,8 @@ def build_evidence_bank_with_ids(
                 if locator:
                     # Extract evidence directly from source at locator
                     # This guarantees exact byte match - no LLM reformatting
-                    evidence = extract_evidence_at_locator(source_lines, locator)
+                    evidence = extract_evidence_at_locator(
+                        source_lines, locator)
                     if evidence:
                         bank.add(locator, evidence, candidate_name)
         else:

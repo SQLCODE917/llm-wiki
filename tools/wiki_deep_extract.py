@@ -482,7 +482,7 @@ TITLE: {chunk.title}
 CONTENT (lines starting with L### are line numbers, [ctx] marks context):
 {chunk_text}
 
-TASK: Extract ALL concrete, reusable claims from this chunk. Do not limit yourself - capture every teachable fact.
+TASK: Extract the most important concrete, reusable claims from this chunk (up to 25 claims maximum). Prioritize claims that teach concepts, patterns, or techniques. If this chunk is dense with many potential claims, focus on the most foundational and widely applicable ones.
 
 TOPIC GUIDELINES - Use BROAD topic categories like:
 - "Functions" (not "Arrow Functions", "Function Values", etc.)
@@ -565,6 +565,63 @@ def extract_claims_from_chunk(
     return claims
 
 
+def repair_truncated_json(json_str: str) -> str:
+    """Attempt to repair truncated JSON arrays from max_tokens cutoff.
+    
+    When a model hits max_tokens, the JSON array may be truncated mid-object.
+    This function tries to recover the complete claims by:
+    1. Removing the last incomplete object
+    2. Closing the array properly
+    
+    Returns the repaired JSON string, or original if repair not applicable.
+    """
+    # Check if it looks like a truncated array
+    if not json_str.strip().startswith('['):
+        return json_str
+    
+    # If it already ends with ], nothing to repair
+    if json_str.rstrip().endswith(']'):
+        return json_str
+    
+    # Find the last complete object by looking for }, followed by potential whitespace
+    # Work backwards from end
+    last_complete = -1
+    depth = 0
+    in_string = False
+    escape_next = False
+    
+    for i, char in enumerate(json_str):
+        if escape_next:
+            escape_next = False
+            continue
+        if char == '\\' and in_string:
+            escape_next = True
+            continue
+        if char == '"' and not escape_next:
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if char == '{':
+            depth += 1
+        elif char == '}':
+            depth -= 1
+            if depth == 0:
+                # Found complete object at top level of array
+                last_complete = i
+    
+    if last_complete > 0:
+        # Truncate after last complete object and close the array
+        repaired = json_str[:last_complete + 1].rstrip()
+        # Remove trailing comma if present
+        if repaired.endswith(','):
+            repaired = repaired[:-1]
+        repaired += ']'
+        return repaired
+    
+    return json_str
+
+
 def parse_claims_response(output: str, chunk_index: int, slug: str = "") -> list[Claim]:
     """Parse model output into Claim objects."""
     # Try to extract JSON from response
@@ -606,6 +663,31 @@ def parse_claims_response(output: str, chunk_index: int, slug: str = "") -> list
                 ))
         return claims
     except json.JSONDecodeError as e:
+        # Try to repair truncated JSON (common with max_tokens cutoff)
+        repaired = repair_truncated_json(json_str)
+        if repaired != json_str:
+            try:
+                data = json.loads(repaired)
+                if isinstance(data, list):
+                    claims = []
+                    for item in data:
+                        if isinstance(item, dict) and all(k in item for k in ['topic', 'claim', 'evidence', 'locator']):
+                            claim_text = str(item['claim']).strip()
+                            locator = str(item['locator']).strip()
+                            claim_id = generate_claim_id(
+                                slug, claim_text, locator, chunk_index)
+                            claims.append(Claim(
+                                topic=str(item['topic']).strip(),
+                                claim=claim_text,
+                                evidence=str(item['evidence']).strip(),
+                                locator=locator,
+                                chunk_index=chunk_index,
+                                claim_id=claim_id,
+                            ))
+                    print(f"    Recovered {len(claims)} claims from truncated JSON")
+                    return claims
+            except json.JSONDecodeError:
+                pass
         print(f"    JSON parse error: {e}")
         return []
 

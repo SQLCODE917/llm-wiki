@@ -962,6 +962,16 @@ def attempt_markdown_repairs(
                 if page_text != old_text:
                     repairs_made = True
 
+        elif failure.category in (
+            FailureCategory.REFERENCE_TO_UNCREATED,
+            FailureCategory.BROKEN_LINK,
+        ):
+            # Move uncreated page references from Related pages to Candidate pages
+            old_text = page_text
+            page_text = repair_related_to_candidates_markdown(page_text, page_path)
+            if page_text != old_text:
+                repairs_made = True
+
     if repairs_made and page_text != original_text:
         page_path.write_text(page_text)
         return True
@@ -1089,6 +1099,117 @@ def repair_missing_source_in_markdown(text: str, slug: str) -> str:
         )
 
     return text
+
+
+def repair_related_to_candidates_markdown(page_text: str, page_path: Path) -> str:
+    """Move uncreated page references from Related pages to Candidate pages in markdown.
+    
+    This handles two cases:
+    1. "Page name (not created yet)" text references
+    2. Markdown links to non-existent files
+    
+    Moves these to a Candidate pages section as plain text bullet points.
+    """
+    link_pattern = re.compile(r"\[([^\]]+)\]\(([^)]+\.md)\)")
+    not_created_pattern = re.compile(r"([^-\n]+?)\s*\(not created yet\)", re.IGNORECASE)
+    
+    # Find Related pages section
+    related_match = re.search(
+        r"(## Related pages\s*\n)(.*?)(?=\n## |\Z)",
+        page_text,
+        re.DOTALL | re.IGNORECASE
+    )
+    
+    if not related_match:
+        return page_text
+    
+    related_header = related_match.group(1)
+    related_content = related_match.group(2)
+    
+    uncreated_pages: list[str] = []
+    valid_lines: list[str] = []
+    
+    for line in related_content.splitlines():
+        line_modified = line
+        
+        # Check for broken links (links to files that don't exist)
+        for match in link_pattern.finditer(line):
+            link_text, link_path = match.groups()
+            # Resolve relative to the page's location
+            target_path = (page_path.parent / link_path).resolve()
+            
+            if not target_path.exists():
+                uncreated_pages.append(link_text.strip())
+                # Remove the link from the line
+                line_modified = line_modified.replace(match.group(0), "").strip()
+        
+        # Check for "not created yet" patterns
+        for match in not_created_pattern.finditer(line_modified):
+            page_name = match.group(1).strip()
+            # Clean up bullet point or list marker
+            page_name = re.sub(r"^[-*]\s*", "", page_name).strip()
+            if page_name:
+                uncreated_pages.append(page_name)
+            # Remove the pattern from the line
+            line_modified = line_modified.replace(match.group(0), "").strip()
+        
+        # Keep line if it still has content
+        line_modified = line_modified.strip()
+        if line_modified and not re.match(r"^[-*•]\s*$", line_modified):
+            valid_lines.append(line_modified)
+    
+    if not uncreated_pages:
+        return page_text
+    
+    # Deduplicate uncreated pages
+    seen = set()
+    unique_uncreated = []
+    for p in uncreated_pages:
+        p_clean = p.strip()
+        if p_clean and p_clean.lower() not in seen:
+            seen.add(p_clean.lower())
+            unique_uncreated.append(p_clean)
+    
+    # Build new Related pages content
+    new_related_content = "\n".join(valid_lines) if valid_lines else "None."
+    new_related_section = related_header + new_related_content
+    
+    # Replace Related pages section
+    page_text = page_text[:related_match.start()] + new_related_section + page_text[related_match.end():]
+    
+    # Build Candidate pages content
+    candidate_bullets = "\n".join(f"- {p}" for p in unique_uncreated)
+    
+    # Check if Candidate pages section exists
+    candidate_match = re.search(
+        r"(## Candidate pages\s*\n)(.*?)(?=\n## |\Z)",
+        page_text,
+        re.DOTALL | re.IGNORECASE
+    )
+    
+    if candidate_match:
+        # Append to existing section
+        old_content = candidate_match.group(2).strip()
+        if old_content and old_content.lower() != "none.":
+            new_content = old_content + "\n" + candidate_bullets
+        else:
+            new_content = candidate_bullets
+        new_candidate = candidate_match.group(1) + new_content
+        page_text = page_text[:candidate_match.start()] + new_candidate + page_text[candidate_match.end():]
+    else:
+        # Insert new Candidate pages section after Related pages
+        # Find updated Related pages section position
+        related_match_new = re.search(
+            r"(## Related pages\s*\n.*?)(?=\n## |\Z)",
+            page_text,
+            re.DOTALL | re.IGNORECASE
+        )
+        if related_match_new:
+            insert_pos = related_match_new.end()
+            new_candidate = f"\n\n## Candidate pages\n\n{candidate_bullets}\n"
+            page_text = page_text[:insert_pos] + new_candidate + page_text[insert_pos:]
+    
+    return page_text
 
 
 def run_with_backend_json(

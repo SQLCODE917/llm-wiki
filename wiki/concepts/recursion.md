@@ -1,31 +1,42 @@
 ---
 title: Recursion
 type: concept
-tags: [recursion, linear-recursion, mapping, functional-programming]
+tags: [programming, functions, data-structures]
 status: draft
-last_updated: 2026-05-08
+last_updated: 2026-05-09
 sources:
   - ../sources/js-allonge.md
 source_ranges:
-  - js-allonge:normalized:L2637-L2637
-  - js-allonge:normalized:L2711-L2711
-  - js-allonge:normalized:L2773-L2773
+  - js-allonge:normalized:L2299-L2310
+  - js-allonge:normalized:L2589-L2593
+  - js-allonge:normalized:L2631-L2637
 ---
 
 # Recursion
 
 ## Summary
 
-Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for handling data structures that have a self-similar or nested nature, such as lists and trees. Linear recursion is a specific form where a function processes one element of a data structure at a time, making it intuitive and easy to understand.
+Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for processing self-similar data structures like lists and trees, and can be optimized in languages that support tail-call elimination.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 | --- | --- | --- | --- |
-| The length function exemplifies recursion by calling itself, aligning with the recursive definition of a list. | "Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is..." | `normalized:L2637-L2637` | [Source](../sources/js-allonge.md) |
-| Linear recursion acts as a core building block for algorithms, mirroring the construction of linear data structures. | "Linear recursion is a basic building block of algorithms. Its basic form parallels the way linear data structures like lists are constructed: This helps make it understandable." | `normalized:L2773-L2773` | [Source](../sources/js-allonge.md) |
-| Mapping represents a particular application of linear recursion, enabling the transformation of elements within a data structure. | "This specific case of linear recursion is called "mapping," and it is not necessary to constantly write out the same pattern again and again." | `normalized:L2711-L2711` | [Source](../sources/js-allonge.md) |
+| A recursive function can be designed such that it avoids infinite loops by using conditional logic that stops the recursion when a base case is met, like checking if a number equals zero. | "**const** even = (n) => n === 0 \|\| (n !== 1 && even(n - 2)) even(42) _//=> true_ If n === 0, JavaScript does not evaluate (n !== 1 && even(n - 2)). This is very important! Imagine that..." | `normalized:L2299-L2310` | [Source](../sources/js-allonge.md) |
+| Recursive definitions are common in computer science, such as defining a list as either empty or composed of an element concatenated with another list. | "But we can also define a list by describing a rule for building lists. One of the simplest, and longeststanding in computer science, is to say that a list is: 1. Empty, or; 2. Consists of an..." | `normalized:L2589-L2593` | [Source](../sources/js-allonge.md) |
+| Recursive algorithms often mirror the structure of the data they process, such as calculating the length of a list by recursively processing its elements until reaching the empty list. | "**const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest); Let's try it! length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_ Our..." | `normalized:L2631-L2637` | [Source](../sources/js-allonge.md) |
+
+## Why it matters
+
+Recursion allows for elegant and intuitive solutions to problems involving self-similar structures. It aligns well with mathematical definitions and can simplify code when dealing with recursive data types. Furthermore, in JavaScript, tail-recursive functions can be optimized to avoid excessive memory usage.
+
+## Related pages
+
+- [Arrays](../concepts/arrays.md)
+- [Control Flow](../concepts/control-flow.md)
+- [Functions](../concepts/functions.md)
+- [Iterators](../concepts/iterators.md)
 
 ## Source pages
 
-- [JavaScript Allongé](../sources/js-allonge.md)
+- [Js Allonge](../sources/js-allonge.md)
