@@ -188,17 +188,17 @@ class Claim:
 @dataclass
 class ExtractionState:
     """State of an extraction run, persisted for resumability.
-    
+
     CONSOLIDATION NOTE (2026-05):
     This class is still used during the extraction phase for:
     - Tracking which chunks have been processed
     - Accumulating claims in memory
     - Checkpoint saving to .tmp/deep-extract/<slug>/state.json
-    
+
     After extraction completes, claims-normalized.json in .wiki-extraction-state/
     is the canonical source. load_extraction_state() now loads from there,
     constructing an ExtractionState for backward compatibility with synthesis code.
-    
+
     The state.json in .tmp/ is ephemeral extraction checkpoint, not the source of truth.
     """
     slug: str
@@ -737,25 +737,27 @@ def aggregate_claims_by_topic(claims: list[Claim]) -> dict[str, list[Claim]]:
 
 def normalize_topic_name(topic: str) -> str:
     """Normalize topic names for consistent grouping.
-    
+
     Performs basic cleanup without domain-specific mappings.
     The extraction prompt now guides the model to choose broad topics upfront.
     """
     # Remove common prefixes/suffixes that add no information
     topic = topic.strip()
-    
+
     # Remove "Introduction to", "Basics of", etc.
-    topic = re.sub(r'^(Introduction to|Basics of|Overview of|Guide to)\s+', '', topic, flags=re.IGNORECASE)
-    
+    topic = re.sub(r'^(Introduction to|Basics of|Overview of|Guide to)\s+',
+                   '', topic, flags=re.IGNORECASE)
+
     # Remove trailing qualifiers
-    topic = re.sub(r'\s+(Basics|Overview|Introduction|Guide)$', '', topic, flags=re.IGNORECASE)
-    
+    topic = re.sub(r'\s+(Basics|Overview|Introduction|Guide)$',
+                   '', topic, flags=re.IGNORECASE)
+
     # Title case for consistency
     topic = topic.title()
-    
+
     # Collapse multiple spaces
     topic = re.sub(r'\s+', ' ', topic)
-    
+
     return topic.strip()
 
 
@@ -1099,7 +1101,7 @@ def update_source_related_pages(source_page: Path, state: ExtractionState):
 
 def get_state_path(slug: str) -> Path:
     """Get the legacy state file path for a slug.
-    
+
     DEPRECATED: State is now stored in claims-normalized.json.
     This path is only used for backward compatibility during migration.
     """
@@ -1108,10 +1110,10 @@ def get_state_path(slug: str) -> Path:
 
 def load_extraction_state(slug: str) -> ExtractionState | None:
     """Load extraction state for a slug.
-    
+
     This now loads from claims-normalized.json (the canonical source)
     and constructs an ExtractionState object for backward compatibility.
-    
+
     The old .tmp/deep-extract/<slug>/state.json is no longer used as
     the primary source - claims-normalized.json in .wiki-extraction-state/
     is the source of truth after extraction completes.
@@ -1122,7 +1124,7 @@ def load_extraction_state(slug: str) -> ExtractionState | None:
         get_processed_chunk_indices,
         get_normalized_claims_path,
     )
-    
+
     # Try to load from normalized claims (new canonical location)
     normalized = load_normalized_claims(slug)
     if normalized is None:
@@ -1131,7 +1133,7 @@ def load_extraction_state(slug: str) -> ExtractionState | None:
         if state_path.exists():
             return ExtractionState.load(state_path)
         return None
-    
+
     # Convert NormalizedClaim to Claim objects
     claims = [
         Claim(
@@ -1144,24 +1146,25 @@ def load_extraction_state(slug: str) -> ExtractionState | None:
         )
         for nc in normalized.claims
     ]
-    
+
     # Build topics dict with Claim objects
     claim_by_id = {c.claim_id: c for c in claims}
     topics: dict[str, list[Claim]] = {}
     for topic, claim_ids in normalized.topics.items():
-        claims_for_topic = [claim_by_id[cid] for cid in claim_ids if cid in claim_by_id]
+        claims_for_topic = [claim_by_id[cid]
+                            for cid in claim_ids if cid in claim_by_id]
         if claims_for_topic:
             topics[topic] = claims_for_topic
-    
+
     # Get processed chunks from raw claims
     processed_chunks = get_processed_chunk_indices(slug)
-    
+
     # Determine source path
     source_path = Path(f"raw/normalized/{slug}/source.md")
     total_lines = 0
     if source_path.exists():
         total_lines = len(source_path.read_text().splitlines())
-    
+
     # Create ExtractionState with derived data
     # Note: chunks list is empty as it's only needed during extraction, not synthesis
     state = ExtractionState(
@@ -1176,7 +1179,7 @@ def load_extraction_state(slug: str) -> ExtractionState | None:
         started_at=normalized.normalized_at,
         last_updated=normalized.normalized_at,
     )
-    
+
     return state
 
 
@@ -1391,7 +1394,8 @@ def create_source_page_from_topics(
         if len(claims) >= min_claims_per_topic:
             page_slug = page_slug_for_topic(topic, slug)
             page_path = Path(f"wiki/concepts/{page_slug}.md")
-            status = "created" if page_belongs_to_source(page_path, slug) else "not_started"
+            status = "created" if page_belongs_to_source(
+                page_path, slug) else "not_started"
         else:
             status = "deferred"
 

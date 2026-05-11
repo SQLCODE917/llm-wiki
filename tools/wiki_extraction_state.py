@@ -283,7 +283,7 @@ def load_normalized_claims(slug: str) -> NormalizedClaimsData | None:
 @dataclass
 class ExtractionDataForSynthesis:
     """Data needed for page synthesis, loaded from claims-normalized.json.
-    
+
     This replaces the old ExtractionState.load() pattern for synthesis workflows.
     ExtractionState is still used during the extraction phase itself for
     chunk tracking, but this lightweight structure is used afterwards.
@@ -297,21 +297,21 @@ class ExtractionDataForSynthesis:
 
 def load_extraction_data_for_synthesis(slug: str) -> ExtractionDataForSynthesis | None:
     """Load extraction data from claims-normalized.json for synthesis workflows.
-    
+
     This is the preferred way to load extraction results after Phase 1 completes.
     It replaces the old pattern of loading state.json via ExtractionState.load().
-    
+
     Returns:
         ExtractionDataForSynthesis with claims and topics, or None if not found.
     """
     normalized = load_normalized_claims(slug)
     if normalized is None:
         return None
-    
+
     # Build topics dict with full claim objects (not just IDs)
     claim_by_id = {c.claim_id: c for c in normalized.claims}
     topics: dict[str, list[NormalizedClaim]] = {}
-    
+
     for topic, claim_ids in normalized.topics.items():
         claims_for_topic = []
         for claim_id in claim_ids:
@@ -319,7 +319,7 @@ def load_extraction_data_for_synthesis(slug: str) -> ExtractionDataForSynthesis 
                 claims_for_topic.append(claim_by_id[claim_id])
         if claims_for_topic:
             topics[topic] = claims_for_topic
-    
+
     return ExtractionDataForSynthesis(
         slug=normalized.slug,
         claims=normalized.claims,
@@ -331,7 +331,7 @@ def load_extraction_data_for_synthesis(slug: str) -> ExtractionDataForSynthesis 
 
 def get_processed_chunk_indices(slug: str) -> set[int]:
     """Derive processed chunk indices from claims-raw.jsonl.
-    
+
     This replaces ExtractionState.processed_chunks by deriving the set
     from the chunk_index field of raw claims.
     """
