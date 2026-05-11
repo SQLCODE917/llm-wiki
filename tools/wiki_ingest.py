@@ -281,8 +281,9 @@ def run_ingest(config: IngestConfig) -> int:
     print(f"\nExtraction state loaded:")
     print(f"  Claims: {len(state.claims)}")
     print(f"  Topics: {len(state.topics)}")
-    print(
-        f"  Chunks processed: {len(state.processed_chunks)}/{len(state.chunks)}")
+    # chunks list may be empty when loaded from claims-normalized.json
+    chunk_total = len(state.chunks) if state.chunks else len(state.processed_chunks)
+    print(f"  Chunks processed: {len(state.processed_chunks)}/{chunk_total}")
 
     # =========================================================================
     # Phase 2a: Create source page
