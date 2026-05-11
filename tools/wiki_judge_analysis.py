@@ -3,13 +3,14 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from datetime import date
 from pathlib import Path
 from typing import Any
 
 from wiki_common import markdown_links, parse_frontmatter, section
-from wiki_judge_claims import extract_json_object, run_local_judge, strip_code_fence
+from wiki_judge_claims import extract_json_object, run_judge_model, strip_code_fence
 
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
@@ -18,8 +19,9 @@ VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
 def main() -> int:
     parser = argparse.ArgumentParser(description="Judge whether an analysis page is supported by its cited wiki pages.")
     parser.add_argument("page", help="wiki/analyses/*.md page")
-    parser.add_argument("--candidate", help="local Codex candidate, e.g. local-4090")
-    parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument("--backend", help="model backend: codex, bedrock, openai, anthropic (default: WIKI_MODEL_BACKEND env or codex)")
+    parser.add_argument("--candidate", help="(codex backend only) profile, e.g. local-4090")
+    parser.add_argument("--codex-bin", default="codex", help="(deprecated, use --backend codex)")
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--output", default="wiki/_analysis-judge-report.md")
     parser.add_argument("--deterministic-only", action="store_true")
@@ -31,13 +33,23 @@ def main() -> int:
     judge_result: dict[str, Any] | None = None
     judge_error = ""
     if not args.deterministic_only and not failures:
-        if not args.candidate:
-            print("FAIL: pass --candidate or use --deterministic-only", file=sys.stderr)
+        backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND", "codex")
+        
+        # For codex backend, require --candidate for backward compatibility
+        if backend_name == "codex" and not args.candidate:
+            print("FAIL: pass --candidate for codex backend, or use --backend <other>", file=sys.stderr)
             return 2
+        
         prompt = render_prompt(page)
-        raw, returncode = run_local_judge(args.codex_bin, args.candidate, prompt, args.timeout)
+        raw, returncode = run_judge_model(
+            backend_name=backend_name,
+            prompt=prompt,
+            timeout=args.timeout,
+            codex_bin=args.codex_bin,
+            candidate=args.candidate,
+        )
         if returncode != 0:
-            judge_error = f"local analysis judge exited with status {returncode}"
+            judge_error = f"analysis judge exited with status {returncode}"
             judge_result = {"raw_output": raw}
         else:
             try:

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -23,16 +24,24 @@ class PageHit:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Answer a query from the wiki using a bounded local-model context.")
+    parser = argparse.ArgumentParser(
+        description="Answer a query from the wiki using a bounded local-model context.")
     parser.add_argument("question")
-    parser.add_argument("--candidate", help="local Codex candidate, e.g. local-4090 or local-4090:model")
+    parser.add_argument(
+        "--backend", help="model backend: bedrock, openai, anthropic, codex (default: from WIKI_MODEL_BACKEND env or codex)")
+    parser.add_argument(
+        "--candidate", help="local Codex candidate, e.g. local-4090 or local-4090:model")
     parser.add_argument("--codex-bin", default="codex")
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--max-pages", type=int, default=6)
-    parser.add_argument("--output", help="write answer to this path instead of stdout")
-    parser.add_argument("--save-analysis", action="store_true", help="file the answer under wiki/analyses/")
-    parser.add_argument("--slug", help="analysis slug; default is derived from the question")
-    parser.add_argument("--plan-only", action="store_true", help="only print selected pages and prompt preview")
+    parser.add_argument(
+        "--output", help="write answer to this path instead of stdout")
+    parser.add_argument("--save-analysis", action="store_true",
+                        help="file the answer under wiki/analyses/")
+    parser.add_argument(
+        "--slug", help="analysis slug; default is derived from the question")
+    parser.add_argument("--plan-only", action="store_true",
+                        help="only print selected pages and prompt preview")
     args = parser.parse_args()
 
     index_path = Path("wiki/index.md")
@@ -46,11 +55,26 @@ def main() -> int:
         return 1
 
     prompt = render_prompt(args.question, hits)
-    if args.plan_only or not args.candidate:
+
+    # Determine backend
+    backend_name = args.backend or os.environ.get("WIKI_MODEL_BACKEND")
+
+    if args.plan_only:
         print(render_plan(args.question, hits, prompt))
         return 0
 
-    answer, returncode = run_codex_answer(args.codex_bin, args.candidate, prompt, args.timeout)
+    # Use backend abstraction if specified, otherwise fall back to Codex
+    if backend_name and backend_name != "codex":
+        answer, returncode = run_backend_answer(
+            backend_name, prompt, args.timeout)
+    elif args.candidate:
+        answer, returncode = run_codex_answer(
+            args.codex_bin, args.candidate, prompt, args.timeout)
+    else:
+        # No backend or candidate specified - show plan
+        print(render_plan(args.question, hits, prompt))
+        return 0
+
     if returncode != 0:
         print(answer)
         return returncode
@@ -74,17 +98,20 @@ def select_pages(question: str, max_pages: int) -> list[PageHit]:
     hits: list[PageHit] = []
     for path in iter_content_pages():
         fm = parse_frontmatter(path)
-        title = str(fm.data.get("title") or path.stem.replace("-", " ").title())
+        title = str(fm.data.get("title")
+                    or path.stem.replace("-", " ").title())
         page_type = str(fm.data.get("type") or "")
         summary = section(fm.body, "## Summary") or first_paragraph(fm.body)
-        text = " ".join([title, page_type, summary, path.read_text(errors="ignore")])
+        text = " ".join([title, page_type, summary,
+                        path.read_text(errors="ignore")])
         tokens = set(content_tokens(text))
         score = len(query_tokens & tokens)
         if score == 0:
             continue
         if page_type == "source":
             score += 1
-        hits.append(PageHit(path, title, page_type, score, one_line(summary, 180)))
+        hits.append(PageHit(path, title, page_type,
+                    score, one_line(summary, 180)))
     return sorted(hits, key=lambda hit: (-hit.score, hit.page_type != "source", hit.path.as_posix()))[:max_pages]
 
 
@@ -98,8 +125,10 @@ def render_plan(question: str, hits: list[PageHit], prompt: str) -> str:
         "",
     ]
     for hit in hits:
-        lines.append(f"- {hit.path.as_posix()} ({hit.page_type}, score {hit.score}) - {hit.summary}")
-    lines.extend(["", "## Prompt Preview", "", "```text", one_line(prompt, 3000), "```"])
+        lines.append(
+            f"- {hit.path.as_posix()} ({hit.page_type}, score {hit.score}) - {hit.summary}")
+    lines.extend(["", "## Prompt Preview", "", "```text",
+                 one_line(prompt, 3000), "```"])
     return "\n".join(lines) + "\n"
 
 
@@ -136,6 +165,30 @@ def trim_page(text: str, limit: int = 7000) -> str:
     if len(text) <= limit:
         return text
     return text[:limit].rstrip() + "\n\n[trimmed]"
+
+
+def run_backend_answer(backend_name: str, prompt: str, timeout: int) -> tuple[str, int]:
+    """Run query using the model backend abstraction (Bedrock, OpenAI, Anthropic)."""
+    try:
+        from wiki_model_backend import get_backend, ModelConfig
+    except ImportError as e:
+        return f"FAIL: could not import wiki_model_backend: {e}", 1
+
+    try:
+        backend = get_backend(backend_name)
+        config = ModelConfig(
+            worktree=Path.cwd(),
+            prefix="query",
+            timeout=timeout,
+            system_prompt_style="query",
+        )
+        response = backend.run(prompt, config)
+        if response.success:
+            return response.output, 0
+        else:
+            return f"FAIL: {response.error}", 1
+    except Exception as e:
+        return f"FAIL: backend error: {e}", 1
 
 
 def run_codex_answer(codex_bin: str, candidate: str, prompt: str, timeout: int) -> tuple[str, int]:
@@ -176,21 +229,27 @@ def parse_candidate(raw: str) -> tuple[str, str | None]:
         return raw, None
     profile, model = raw.split(":", 1)
     if not profile or not model:
-        raise SystemExit(f"invalid candidate {raw!r}; use PROFILE or PROFILE:MODEL")
+        raise SystemExit(
+            f"invalid candidate {raw!r}; use PROFILE or PROFILE:MODEL")
     return profile, model
 
 
 def save_analysis(question: str, slug: str | None, answer: str, hits: list[PageHit]) -> Path:
     analysis_slug = slug or slugify(question)
-    path = Path("wiki/analyses") / f"{date.today().isoformat()}-{analysis_slug}.md"
+    path = Path("wiki/analyses") / \
+        f"{date.today().isoformat()}-{analysis_slug}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     source_pages = source_pages_for_hits(hits)
     if not source_pages:
-        raise SystemExit("FAIL: cannot save analysis without at least one source page")
-    sources = "\n".join(f"  - ../{source.relative_to('wiki').as_posix()}" for source in source_pages)
-    source_links = "\n".join(f"- [{page_title(source)}](../{source.relative_to('wiki').as_posix()})" for source in source_pages)
+        raise SystemExit(
+            "FAIL: cannot save analysis without at least one source page")
+    sources = "\n".join(
+        f"  - ../{source.relative_to('wiki').as_posix()}" for source in source_pages)
+    source_links = "\n".join(
+        f"- [{page_title(source)}](../{source.relative_to('wiki').as_posix()})" for source in source_pages)
     related_hits = [hit for hit in hits if hit.path not in source_pages]
-    related = "\n".join(f"- [{hit.title}](../{hit.path.relative_to('wiki').as_posix()})" for hit in related_hits)
+    related = "\n".join(
+        f"- [{hit.title}](../{hit.path.relative_to('wiki').as_posix()})" for hit in related_hits)
     path.write_text(
         "\n".join(
             [

@@ -14,6 +14,24 @@ RANGE_RE = re.compile(
 HEADING_RE = re.compile(r"^(?P<marks>#{1,6})\s+(?P<title>.+?)\s*$")
 
 
+def normalize_locator(loc: str) -> str:
+    """Normalize locator to always-range format: L123 → L123-L123.
+
+    This ensures consistent format throughout the pipeline.
+    Single lines become trivial ranges (L123-L123).
+    """
+    match = re.search(r'L(\d+)(?:-L?(\d+))?', loc, re.IGNORECASE)
+    if not match:
+        return loc
+    start = int(match.group(1))
+    end = int(match.group(2)) if match.group(2) else start
+    # Preserve any prefix (like source slug)
+    prefix_match = re.match(
+        r'^([A-Za-z0-9_-]+:)?normalized:', loc, re.IGNORECASE)
+    prefix = prefix_match.group(0) if prefix_match else "normalized:"
+    return f"{prefix}L{start}-L{end}"
+
+
 @dataclass(frozen=True)
 class SourceRange:
     start: int
@@ -62,7 +80,8 @@ def source_ranges_for_candidate(candidate_path: str, source_lines: list[str], ti
 
 
 def declared_source_ranges(frontmatter: dict[str, object], source_slug: str) -> tuple[list[SourceRange], list[str]]:
-    raw_values = frontmatter.get("source_ranges") or frontmatter.get("evidence_ranges")
+    raw_values = frontmatter.get(
+        "source_ranges") or frontmatter.get("evidence_ranges")
     if raw_values is None:
         return [], []
     if isinstance(raw_values, str):
@@ -76,11 +95,13 @@ def declared_source_ranges(frontmatter: dict[str, object], source_slug: str) -> 
     invalid: list[str] = []
     for raw in values:
         if not isinstance(raw, str):
-            invalid.append(f"source range value must be a string, got {type(raw).__name__}")
+            invalid.append(
+                f"source range value must be a string, got {type(raw).__name__}")
             continue
         parsed = parse_source_range(raw, source_slug)
         if parsed is None:
-            invalid.append(f"could not parse source range {raw!r}; expected normalized:L12-L34 or {source_slug}:normalized:L12-L34")
+            invalid.append(
+                f"could not parse source range {raw!r}; expected normalized:L12-L34 or {source_slug}:normalized:L12-L34")
             continue
         ranges.append(parsed)
     return ranges, invalid
@@ -114,7 +135,31 @@ def parse_locator_range(locator: str) -> tuple[int, int] | None:
 
 
 def locator_within_ranges(start: int, end: int, ranges: list[SourceRange]) -> bool:
+    """Check if locator is strictly contained within any allowed range."""
     return any(start >= allowed.start and end <= allowed.end for allowed in ranges)
+
+
+# Maximum line slop for off-by-one tolerance
+MAX_LOCATOR_SLOP = 2
+
+
+def locator_within_tolerance(start: int, end: int, ranges: list[SourceRange]) -> SourceRange | None:
+    """Check if locator is within tolerance of any allowed range.
+
+    Returns the matching range if within tolerance, None otherwise.
+    This handles common off-by-one errors from model context expansion.
+    """
+    for allowed in ranges:
+        # Check if model's range overlaps with allowed range within tolerance
+        if (allowed.start - MAX_LOCATOR_SLOP <= start <= allowed.start + MAX_LOCATOR_SLOP
+                and allowed.end - MAX_LOCATOR_SLOP <= end <= allowed.end + MAX_LOCATOR_SLOP):
+            return allowed
+    return None
+
+
+def canonicalize_locator(start: int, end: int, canonical: SourceRange) -> str:
+    """Return the canonical locator string for the given range."""
+    return f"normalized:L{canonical.start}-L{canonical.end}"
 
 
 def format_ranges(ranges: list[SourceRange]) -> str:
@@ -158,7 +203,7 @@ def derive_ranges_from_headings(source_lines: list[str], aliases: set[str]) -> l
         if key not in aliases:
             continue
         end = len(source_lines)
-        for next_heading in headings[index + 1 :]:
+        for next_heading in headings[index + 1:]:
             if next_heading.level <= heading.level:
                 end = next_heading.line - 1
                 break

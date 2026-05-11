@@ -71,7 +71,7 @@ def parse_frontmatter(path: Path) -> Frontmatter:
         return Frontmatter({}, text, ["unterminated YAML frontmatter"])
 
     raw = text[4:end].splitlines()
-    body = text[end + 5 :]
+    body = text[end + 5:]
     data: dict[str, object] = {}
     errors: list[str] = []
     current_key: str | None = None
@@ -103,7 +103,8 @@ def parse_frontmatter(path: Path) -> Frontmatter:
             data[key] = []
         elif value.startswith("[") and value.endswith("]"):
             inside = value[1:-1].strip()
-            data[key] = [] if not inside else [_parse_scalar(part.strip()) for part in inside.split(",")]
+            data[key] = [] if not inside else [_parse_scalar(
+                part.strip()) for part in inside.split(",")]
         else:
             data[key] = _parse_scalar(value)
 
@@ -167,7 +168,8 @@ def markdown_links(path: Path) -> list[MarkdownLink]:
                 links.append(MarkdownLink(target, line_no, None))
                 continue
             if clean.endswith(".md"):
-                links.append(MarkdownLink(target, line_no, (path.parent / clean).resolve()))
+                links.append(MarkdownLink(target, line_no,
+                             (path.parent / clean).resolve()))
             else:
                 links.append(MarkdownLink(target, line_no, None))
     return links
@@ -248,3 +250,73 @@ def content_tokens(text: str) -> list[str]:
         if token and token not in STOPWORDS:
             tokens.append(token)
     return tokens
+
+
+# --- Context measurement utilities for local model debugging ---
+
+
+def estimate_tokens(text: str, chars_per_token: float = 3.7) -> int:
+    """Rough token estimate for mixed markdown/code content.
+
+    Default of 3.7 chars/token is calibrated for markdown with code blocks.
+    Use 4.0 for pure English prose, 3.5 for dense code.
+    """
+    return int(len(text) / chars_per_token)
+
+
+def context_stats(text: str, label: str = "prompt") -> dict[str, int | str]:
+    """Return context statistics for a prompt or text block."""
+    chars = len(text)
+    tokens = estimate_tokens(text)
+    lines = text.count("\n") + 1
+    return {
+        "label": label,
+        "chars": chars,
+        "tokens": tokens,
+        "lines": lines,
+    }
+
+
+def log_context_stats(text: str, label: str = "prompt", warn_threshold: int = 10000) -> None:
+    """Print context statistics. Warn if estimated tokens exceed threshold.
+
+    Default threshold of 10000 tokens is conservative for 30B models with 32K context.
+    Qwen3-Coder-30B practical budget: 8k-12k input tokens.
+    Adjust based on your model's effective context window.
+    """
+    stats = context_stats(text, label)
+    print(
+        f"Context [{stats['label']}]: {stats['chars']:,} chars, ~{stats['tokens']:,} tokens, {stats['lines']:,} lines")
+    if stats["tokens"] > warn_threshold:
+        print(
+            f"  WARNING: {stats['label']} exceeds {warn_threshold:,} token threshold - may degrade model performance")
+
+
+def truncate_to_tokens(text: str, max_tokens: int, suffix: str = "\n\n[truncated]") -> str:
+    """Truncate text to approximately max_tokens, preserving line boundaries."""
+    target_chars = int(max_tokens * 3.7)
+    if len(text) <= target_chars:
+        return text
+    truncated = text[:target_chars].rsplit("\n", 1)[0]
+    return truncated + suffix
+
+
+def extract_failure_lines(validation_output: str, context_lines: int = 2) -> str:
+    """Extract only lines containing FAIL/error with minimal context.
+
+    Useful for reducing validation output size in repair prompts.
+    """
+    lines = validation_output.splitlines()
+    relevant_indices: set[int] = set()
+    for i, line in enumerate(lines):
+        lower = line.lower()
+        if "fail" in lower or "error" in lower or line.startswith("FAIL"):
+            for j in range(max(0, i - context_lines), min(len(lines), i + context_lines + 1)):
+                relevant_indices.add(j)
+    if not relevant_indices:
+        return validation_output[:2000] + "\n[no FAIL/error lines found, showing first 2000 chars]"
+    result = [lines[i] for i in sorted(relevant_indices)]
+    omitted = len(lines) - len(result)
+    if omitted > 0:
+        result.append(f"\n[{omitted} additional lines omitted]")
+    return "\n".join(result)

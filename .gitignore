@@ -11,6 +11,15 @@ raw/imported/*
 raw/normalized/*
 raw/assets/*
 
+# Derived evidence indices (always rebuildable, never commit)
+**/.evidence.db
+**/.embeddings/
+
+# Wiki-level search indices (rebuildable from wiki pages)
+wiki/.wiki-index.db
+wiki/.wiki-index.stale
+wiki/.wiki-embeddings/
+
 !raw/inbox/.keep
 !raw/imported/.keep
 !raw/normalized/.keep
@@ -18,3 +27,8 @@ raw/assets/*
 
 Handoff.md
 Example_AGENTS.md
+
+# Temp files
+.tmp/
+.wiki-worktrees/
+.wiki-extraction-state/

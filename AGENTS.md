@@ -145,8 +145,8 @@ If a section has no content, write `None.` or `not covered in sources`.
 `## Key claims` must be auditable. Prefer this table shape over a plain list:
 
 ```md
-| Claim | Evidence | Locator |
-|---|---|---|
+| Claim                                             | Evidence                                          | Locator          |
+| ------------------------------------------------- | ------------------------------------------------- | ---------------- |
 | Concrete reusable claim in the agent's own words. | "Short exact excerpt from the normalized source." | `normalized:L12` |
 ```
 
@@ -164,9 +164,9 @@ with a level-3 table, not as new wiki directories:
 ```md
 ### Natural groupings
 
-| Group | Scope | Evidence basis | Candidate page types |
-|---|---|---|---|
-| Source-native group name | clear non-overlapping scope | concrete sections, claims, examples, or procedures | concept, procedure |
+| Group                    | Scope                       | Evidence basis                                     | Candidate page types |
+| ------------------------ | --------------------------- | -------------------------------------------------- | -------------------- |
+| Source-native group name | clear non-overlapping scope | concrete sections, claims, examples, or procedures | concept, procedure   |
 ```
 
 Use those group names in `## Related pages` so Phase 2 can choose pages from the source's own structure.
@@ -175,8 +175,8 @@ The physical wiki directories remain type-based unless the curator approves a di
 Example:
 
 ```md
-| Candidate page | Intended path | Group | Priority | Evidence basis | Status |
-|---|---|---|---|---|---|
+| Candidate page       | Intended path                         | Group             | Priority    | Evidence basis                                 | Status          |
+| -------------------- | ------------------------------------- | ----------------- | ----------- | ---------------------------------------------- | --------------- |
 | AoE2 Economy Balance | `../concepts/aoe2-economy-balance.md` | Core fundamentals | must create | economy balance and resource allocation claims | not created yet |
 ```
 
@@ -329,8 +329,8 @@ checks that the imported original bytes match the inbox file before touching `ra
 7. Prefer the evidence-aware candidate table shape with a source-native group column:
 
 ```md
-| Candidate page | Intended path | Group | Priority | Evidence basis | Status |
-|---|---|---|---|---|---|
+| Candidate page  | Intended path                    | Group                    | Priority    | Evidence basis                                | Status          |
+| --------------- | -------------------------------- | ------------------------ | ----------- | --------------------------------------------- | --------------- |
 | Example Concept | `../concepts/example-concept.md` | Source-native group name | must create | concrete claims, examples, or procedure steps | not created yet |
 ```
 
@@ -357,8 +357,8 @@ pnpm wiki:check-source <slug>
 6. Each synthesized page must have `## Source-backed details` with an evidence table:
 
 ```md
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
+| Claim                    | Evidence                                                 | Locator          | Source                               |
+| ------------------------ | -------------------------------------------------------- | ---------------- | ------------------------------------ |
 | Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/<slug>.md) |
 ```
 
@@ -431,6 +431,34 @@ If the source implies an executable concept:
 
 ---
 
+## Idempotency rules
+
+Each phase has explicit rerun behavior to support safe resumption and debugging.
+
+| Phase               | Rerun Behavior  | Rule                                                                                        |
+| ------------------- | --------------- | ------------------------------------------------------------------------------------------- |
+| Phase 0 import      | **Fail**        | Never overwrite `raw/imported/<slug>/`; use a new slug or `--reuse-imported` if bytes match |
+| Phase 0 normalize   | **Conditional** | Overwrite only if original hash matches (`--reuse-imported --overwrite-normalized`)         |
+| Phase 1a extract    | **Resume**      | Skip completed chunks; `--force` redoes all                                                 |
+| Phase 1b dedupe     | **Overwrite**   | Always regenerate from claims-raw.jsonl                                                     |
+| Phase 1c candidates | **Overwrite**   | Always regenerate from claims-normalized.json                                               |
+| Phase 2a source     | **Overwrite**   | Regenerate from current extraction state                                                    |
+| Phase 2b synthesize | **Worktree**    | Always write to disposable worktree first                                                   |
+| Phase 2c adopt      | **Conditional** | Copy only if validation passes                                                              |
+| Phase 3a index      | **Rebuild**     | Deterministic rebuild from `wiki/**/*.md` frontmatter                                       |
+| Phase 3b graph      | **Rebuild**     | Deterministic rebuild from `wiki/**/*.md` links                                             |
+| Phase 3c lint       | **Rebuild**     | Deterministic rebuild from `wiki/**/*.md` validation                                        |
+| Phase 3d log        | **Append**      | Append-only, never overwrite                                                                |
+
+**Key invariants**:
+
+- `raw/imported/` is immutable after first write.
+- `wiki/log.md` is append-only.
+- All other generated files can be rebuilt from source of truth.
+- Interrupted ingests can be resumed via manifest status.
+
+---
+
 ## Ingest quality bar
 
 A non-trivial source should usually create or update several pages.
@@ -483,9 +511,15 @@ Prefer deterministic checks over long prose reminders:
 pnpm wiki:check-source <slug>
 pnpm wiki:check-synthesis <slug>
 pnpm wiki:ingest raw/inbox/<file> --slug <slug>
+pnpm wiki:verify-ingest <slug>
+pnpm wiki:deep-extract <slug> --extract-only
+pnpm wiki:extraction-state <slug>
+pnpm wiki:merge-candidates <slug>
 pnpm wiki:phase1-benchmark <slug>
 pnpm wiki:phase2-benchmark <slug>
 pnpm wiki:phase2-single <slug> <candidate-path> --report .tmp/phase2-run.md
+pnpm wiki:phase2-failures <slug>
+pnpm wiki:phase2-clean-failures <slug> --older-than 30
 pnpm wiki:review-phase2 <slug> <worktree>
 pnpm wiki:adopt-phase2 <slug> <worktree>
 pnpm wiki:phase3 <slug>
@@ -520,11 +554,42 @@ pnpm wiki:curator-status --list
 For a full local ingest from inbox through Phase 3, prefer the orchestrator:
 
 ```bash
-pnpm wiki:ingest raw/inbox/<file.pdf> --slug <slug> --max-phase2-pages 5
+pnpm wiki:ingest raw/inbox/<file.pdf> --slug <slug>
 ```
 
-It runs Phase 0, Phase 1 source repair, atomic Phase 2 page creation, and Phase 3 finalization using
-the phase defaults in `tools/wiki_model_defaults.json`. Use `--dry-run` first for unfamiliar sources.
+The unified ingest flow:
+
+1. Phase 0: Normalizes the source (PDF to markdown)
+2. Phase 1: Deep extracts claims from all chunks (100% coverage)
+3. Phase 2a: Creates source page from extracted topics
+4. Phase 2b: Synthesizes each topic page with quality gates (validate + judge + repair)
+5. Phase 3: Updates index, graph, and log
+
+Key options:
+
+- `--max-phase2-pages N` — limit synthesized pages (default: 10)
+- `--min-claims-per-topic N` — minimum claims to create a page (default: 3)
+- `--chunk-size N` — lines per chunk (default: 400)
+- `--skip-extract` — skip extraction, use existing state
+- `--dry-run` — show what would happen
+
+Use `--dry-run` first for unfamiliar sources.
+
+For extraction only (no synthesis), use:
+
+```bash
+pnpm wiki:deep-extract <slug> --extract-only
+```
+
+For token-aware structural chunking (better for technical PDFs), use:
+
+```bash
+pnpm wiki:deep-extract <slug> --structured --target-tokens 6500
+```
+
+Structured chunking extracts blocks (headings, code, tables, lists) and packs them into
+token-bounded chunks that preserve document structure. Use `--dry-run --structured` to
+compare with line-based chunking.
 
 For local-model Phase 1 prompt trials, prefer the mechanical prompt template in
 `tools/prompts/phase1-source-repair.md`. To compare candidates in disposable worktrees, run:

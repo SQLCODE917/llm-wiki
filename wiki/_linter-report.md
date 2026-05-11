@@ -1,6 +1,6 @@
 # Wiki Linter Report
 
-Generated: 2026-05-03
+Generated: 2026-05-11
 
 ## Summary
 
@@ -18,4 +18,4 @@ None.
 
 ## TODO
 
-None.
+- `wiki/sources/js-allonge.md` — Related pages lists candidate paths not created yet

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -14,11 +15,33 @@ from typing import Any
 
 from wiki_common import content_tokens, iter_content_pages, one_line, parse_frontmatter, section
 from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, parse_locator, strip_markdown
+from wiki_evidence_validator import (
+    validate_evidence_location,
+    is_evidence_too_short,
+    should_fail_on_deterministic_flag,
+)
 
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
 PAGE_VERDICTS = {"useful", "too_broad", "duplicate_or_overlap", "unclear"}
-WEAK_CLAIM_WORDS = {"important", "crucial", "fundamental", "essential", "success"}
+WEAK_CLAIM_WORDS = {"important", "crucial",
+                    "fundamental", "essential", "success"}
+
+# Flag types for the warning taxonomy
+FLAG_TYPES = {
+    "grounding_fail",      # evidence not found, locator invalid, quote mismatch
+    "link_fail",           # broken link, page not found
+    "schema_fail",         # missing frontmatter, malformed table, missing required section
+    "coverage_warning",    # incomplete claim, missing context
+    "structure_warning",   # optional section missing, unusual heading order
+    "style_info",          # weak words, vague phrasing
+    "unclassified_warning",  # unknown patterns
+}
+
+# Severity levels
+SEVERITY_ERROR = "error"      # Blocks ingestion
+SEVERITY_WARNING = "warning"  # Logged for review
+SEVERITY_INFO = "info"        # Diagnostic only
 
 
 @dataclass(frozen=True)
@@ -33,23 +56,131 @@ class EvidenceRow:
 
 @dataclass(frozen=True)
 class DeterministicFlag:
+    """A flag from deterministic validation.
+
+    Fields:
+        row: Row number in evidence table (0 for page-level issues)
+        type: Flag type (grounding_fail, link_fail, schema_fail, etc.)
+        severity: error | warning | info
+        source: Origin of the flag (deterministic_validator, llm_judge, etc.)
+        message: Human-readable description
+    """
     row: int
+    type: str
     severity: str
+    source: str
     message: str
+
+    def blocks_ingestion(self) -> bool:
+        """Only error severity blocks. No message-text special cases."""
+        return self.severity == SEVERITY_ERROR
+
+
+def classify_flag(message: str) -> tuple[str, str]:
+    """Classify a flag message into (type, severity).
+
+    Returns (flag_type, severity) tuple.
+    Defaults to unclassified_warning for unknown patterns.
+    """
+    message_lower = message.lower()
+
+    # schema_fail (error) - includes missing required sections
+    if any(term in message_lower for term in [
+        "malformed",
+        "render failure",
+        "json error",
+        "missing frontmatter",
+        "missing required",
+        "required section",
+        "claim without evidence",
+        "no evidence rows",
+        "not parseable",
+    ]):
+        return ("schema_fail", SEVERITY_ERROR)
+
+    # grounding_fail (error)
+    if any(term in message_lower for term in [
+        "evidence not found",
+        "evidence not in source",
+        "locator invalid",
+        "quote mismatch",
+        "not in source",
+        "locator out of range",
+        "outside normalized source",
+        "outside source",
+        "source_not_found",
+        "fabricated",
+        "contradicted",
+    ]):
+        return ("grounding_fail", SEVERITY_ERROR)
+
+    # link_fail (error)
+    if any(term in message_lower for term in [
+        "broken link",
+        "page not found",
+        "invalid path",
+        "link target missing",
+    ]):
+        return ("link_fail", SEVERITY_ERROR)
+
+    # coverage_warning (warning)
+    if any(term in message_lower for term in [
+        "incomplete",
+        "missing context",
+        "partial coverage",
+        "too short",
+        "short (prose)",
+        "claim is short",
+    ]):
+        return ("coverage_warning", SEVERITY_WARNING)
+
+    # structure_warning (warning) - only optional structural issues
+    if any(term in message_lower for term in [
+        "optional section",
+        "section order",
+        "extra heading",
+        "repeats evidence",
+    ]):
+        return ("structure_warning", SEVERITY_WARNING)
+
+    # style_info (info)
+    if any(term in message_lower for term in [
+        "weak word",
+        "weak generic",
+        "vague",
+        "promotional",
+        "essential",
+        "crucial",
+        "important",
+        "style",
+    ]):
+        return ("style_info", SEVERITY_INFO)
+
+    # Default: unknown patterns are warnings, not structure issues
+    return ("unclassified_warning", SEVERITY_WARNING)
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Judge whether synthesized page claims follow from cited evidence.")
+    parser = argparse.ArgumentParser(
+        description="Judge whether synthesized page claims follow from cited evidence.")
     parser.add_argument("page", help="wiki synthesized page to judge")
-    parser.add_argument("--normalized-source", required=True, help="normalized source markdown file")
-    parser.add_argument("--candidate", help="local Codex candidate, e.g. local-4090 or local-4090:model")
-    parser.add_argument("--codex-bin", default="codex")
+    parser.add_argument("--normalized-source", required=True,
+                        help="normalized source markdown file")
+    parser.add_argument(
+        "--backend", help="model backend: codex, bedrock, openai, anthropic (default: WIKI_MODEL_BACKEND env or codex)")
+    parser.add_argument(
+        "--candidate", help="(codex backend only) profile, e.g. local-4090 or local-4090:model")
+    parser.add_argument("--codex-bin", default="codex",
+                        help="(deprecated, use --backend codex)")
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--context-lines", type=int, default=2)
     parser.add_argument("--output", default="wiki/_claim-judge-report.md")
     parser.add_argument("--fail-on-issues", action="store_true")
+    parser.add_argument("--soft-pass", action="store_true",
+                        help="treat too_broad as warning, only fail on not_supported/unclear")
     parser.add_argument("--deterministic-only", action="store_true")
-    parser.add_argument("--batch", action="store_true", help="judge all claims in one model call instead of one call per row")
+    parser.add_argument("--batch", action="store_true",
+                        help="judge all claims in one model call instead of one call per row")
     args = parser.parse_args()
 
     page = Path(args.page)
@@ -58,7 +189,8 @@ def main() -> int:
         print(f"FAIL: missing page {page}", file=sys.stderr)
         return 2
     if not normalized_source.exists():
-        print(f"FAIL: missing normalized source {normalized_source}", file=sys.stderr)
+        print(
+            f"FAIL: missing normalized source {normalized_source}", file=sys.stderr)
         return 2
 
     source_lines = normalized_source.read_text(errors="ignore").splitlines()
@@ -69,14 +201,27 @@ def main() -> int:
     judge_error = ""
 
     if not args.deterministic_only:
-        if not args.candidate:
-            print("FAIL: pass --candidate or use --deterministic-only", file=sys.stderr)
+        # Determine backend
+        backend_name = args.backend or os.environ.get(
+            "WIKI_MODEL_BACKEND", "codex")
+
+        # For codex backend, require --candidate for backward compatibility
+        if backend_name == "codex" and not args.candidate:
+            print(
+                "FAIL: pass --candidate for codex backend, or use --backend <other>", file=sys.stderr)
             return 2
+
         if args.batch:
             prompt = render_prompt(page, rows, siblings)
-            raw, returncode = run_local_judge(args.codex_bin, args.candidate, prompt, args.timeout)
+            raw, returncode = run_judge_model(
+                backend_name=backend_name,
+                prompt=prompt,
+                timeout=args.timeout,
+                codex_bin=args.codex_bin,
+                candidate=args.candidate,
+            )
             if returncode != 0:
-                judge_error = f"local judge exited with status {returncode}"
+                judge_error = f"judge exited with status {returncode}"
                 judge_result = {"raw_output": raw}
             else:
                 try:
@@ -85,15 +230,23 @@ def main() -> int:
                     judge_error = str(error)
                     judge_result = {"raw_output": raw}
         else:
-            judge_result, judge_error = run_row_judges(args.codex_bin, args.candidate, page, rows, args.timeout)
+            judge_result, judge_error = run_row_judges_with_backend(
+                backend_name=backend_name,
+                page=page,
+                rows=rows,
+                timeout=args.timeout,
+                codex_bin=args.codex_bin,
+                candidate=args.candidate,
+            )
 
-    report = render_report(page, normalized_source, rows, flags, siblings, judge_result, judge_error)
+    report = render_report(page, normalized_source, rows,
+                           flags, siblings, judge_result, judge_error)
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(report)
     print(f"wrote {output}")
 
-    if args.fail_on_issues and has_issues(flags, judge_result, judge_error):
+    if args.fail_on_issues and has_issues(flags, judge_result, judge_error, soft_pass=args.soft_pass):
         return 1
     return 0
 
@@ -126,11 +279,13 @@ def evidence_rows(page: Path, source_lines: list[str], *, context_lines: int) ->
                 evidence=clean_evidence_excerpt(evidence),
                 locator=strip_markdown(locator).strip(),
                 source=source,
-                context=context_for_locator(source_lines, locator, context_lines=context_lines),
+                context=context_for_locator(
+                    source_lines, locator, context_lines=context_lines),
             )
         )
     if page_type == "reference":
-        rows.extend(reference_data_rows(fm.body, source_lines, context_lines=context_lines, start_row=len(rows) + 1))
+        rows.extend(reference_data_rows(fm.body, source_lines,
+                    context_lines=context_lines, start_row=len(rows) + 1))
     return rows
 
 
@@ -161,7 +316,7 @@ def reference_data_rows(
 
     rows: list[EvidenceRow] = []
     row_number = start_row
-    for cells in table[header_index + 1 :]:
+    for cells in table[header_index + 1:]:
         if is_separator_row(cells) or len(cells) != len(header):
             continue
         evidence = clean_evidence_excerpt(cells[evidence_index])
@@ -183,7 +338,8 @@ def reference_data_rows(
                 evidence=evidence,
                 locator=locator,
                 source="Reference data",
-                context=context_for_locator(source_lines, locator, context_lines=context_lines),
+                context=context_for_locator(
+                    source_lines, locator, context_lines=context_lines),
             )
         )
         row_number += 1
@@ -191,43 +347,114 @@ def reference_data_rows(
 
 
 def deterministic_flags(rows: list[EvidenceRow], source_lines: list[str]) -> list[DeterministicFlag]:
+    """Run deterministic checks on evidence rows.
+
+    Uses shared validator to ensure consistency with wiki_check_synthesis.py.
+    Distinguishes hard failures (fabricated evidence) from soft issues (locator precision).
+    Uses the v3 flag taxonomy with type, severity, and source fields.
+    """
     flags: list[DeterministicFlag] = []
+    source_name = "deterministic_validator"
+
     for row in rows:
         parsed = parse_locator(row.locator)
         if parsed is None:
-            flags.append(DeterministicFlag(row.row, "fail", "locator is not parseable"))
+            flag_type, severity = classify_flag("locator is not parseable")
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="locator is not parseable",
+            ))
             continue
         start, end = parsed
-        if start < 1 or end > len(source_lines) or end < start:
-            flags.append(DeterministicFlag(row.row, "fail", "locator is outside normalized source"))
-            continue
-        located_text = "\n".join(source_lines[start - 1 : end])
-        if normalize_for_search(row.evidence) not in normalize_for_search(located_text):
-            flags.append(DeterministicFlag(row.row, "fail", "evidence is not found in locator range"))
+
+        # Use shared evidence validator for consistent behavior
+        validation_result = validate_evidence_location(
+            row.evidence, start, end, source_lines, window_size=2
+        )
+
+        if validation_result.is_hard_failure:
+            # Hard failures (evidence fabricated, locator invalid)
+            flag_type, severity = classify_flag(validation_result.reason)
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message=validation_result.reason,
+            ))
+        elif validation_result.severity == "warn":
+            # Soft issues (locator precision) - warn, don't fail
+            reason = validation_result.reason
+            if validation_result.suggested_locator:
+                reason += f" (suggested: {validation_result.suggested_locator})"
+            flag_type, severity = classify_flag(reason)
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message=reason,
+            ))
+        # pass = no flag
+
+        # Check evidence too short (allows code snippets)
+        if is_evidence_too_short(row.evidence):
+            flag_type, severity = classify_flag("evidence is short (prose)")
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="evidence is short (prose)",
+            ))
+
         if len(re.findall(r"[A-Za-z0-9']+", row.claim)) < 5:
-            flags.append(DeterministicFlag(row.row, "warn", "claim is short"))
+            flag_type, severity = classify_flag("claim is short")
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="claim is short",
+            ))
         if normalize_for_search(row.claim) == normalize_for_search(row.evidence):
-            flags.append(DeterministicFlag(row.row, "warn", "claim repeats evidence exactly"))
+            flag_type, severity = classify_flag(
+                "claim repeats evidence exactly")
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message="claim repeats evidence exactly",
+            ))
         weak_words = sorted(WEAK_CLAIM_WORDS & set(content_tokens(row.claim)))
         if weak_words:
-            flags.append(
-                DeterministicFlag(
-                    row.row,
-                    "fail",
-                    "claim uses weak generic words: " + ", ".join(weak_words),
-                )
-            )
-        unsupported = sorted(set(content_tokens(row.claim)) - set(content_tokens(row.evidence + " " + row.context)))
-        if len(unsupported) >= 8:
-            flags.append(
-                DeterministicFlag(
-                    row.row,
-                    "fail",
-                    "claim likely overreaches cited evidence/context; unsupported terms: " + ", ".join(unsupported[:10]),
-                )
-            )
+            # Weak words are style guidance, not hard failures
+            # The LLM-Wiki reference requires useful summaries, not word policing
+            message = "claim uses weak generic words: " + ", ".join(weak_words)
+            flag_type, severity = classify_flag(message)
+            flags.append(DeterministicFlag(
+                row=row.row,
+                type=flag_type,
+                severity=severity,
+                source=source_name,
+                message=message,
+            ))
+        # NOTE: Lexical unsupported-term check removed.
+        # Synthesis naturally uses different vocabulary than evidence.
+        # Semantic entailment should be checked by the LLM judge, not lexical overlap.
     if not rows:
-        flags.append(DeterministicFlag(0, "fail", "no evidence rows found"))
+        flag_type, severity = classify_flag("no evidence rows found")
+        flags.append(DeterministicFlag(
+            row=0,
+            type=flag_type,
+            severity=severity,
+            source=source_name,
+            message="no evidence rows found",
+        ))
     return flags
 
 
@@ -314,12 +541,15 @@ Use exactly these page verdicts: useful, too_broad, duplicate_or_overlap, unclea
 Use exactly these claim verdicts: supported, too_broad, not_supported, unclear.
 
 Rules:
-- supported: the claim follows directly from the evidence and context.
-- too_broad: the evidence supports a narrower claim, but not the claim as written.
-- not_supported: the evidence does not support the claim.
+- supported: the claim's MEANING follows from the evidence, even if worded differently or via logical inference.
+- too_broad: the claim makes factual assertions NOT entailed by the evidence even via inference.
+- not_supported: the evidence contradicts the claim or is completely unrelated.
 - unclear: the relationship cannot be judged from the provided context.
-- Prefer a narrow suggested_claim when the claim is too broad.
-- Do not reward generic wording if a more exact claim is available.
+- Claims SHOULD use different vocabulary from the evidence. That is good synthesis.
+- Accept claims that follow from logical inference (e.g., if A is B and B is C, then A is C).
+- Accept claims that paraphrase or summarize the evidence in different words.
+- Only flag too_broad or not_supported for genuinely unsupported FACTUAL ASSERTIONS, not vocabulary differences.
+- Do NOT suggest replacement claim text. Leave suggested_claim empty.
 
 Claims:
 
@@ -353,22 +583,27 @@ def run_row_judges(
     errors: list[str] = []
     for row in rows:
         prompt = render_row_prompt(page, row)
-        raw, returncode = run_local_judge(codex_bin, candidate, prompt, timeout)
+        raw, returncode = run_local_judge(
+            codex_bin, candidate, prompt, timeout)
         raw_outputs.append(f"ROW {row.row}\n{raw}")
         if returncode != 0:
-            errors.append(f"row {row.row}: local judge exited with status {returncode}")
+            errors.append(
+                f"row {row.row}: local judge exited with status {returncode}")
             continue
         try:
             parsed = parse_row_json_result(raw, allow_text_recovery=False)
         except ValueError as error:
             retry_prompt = render_row_retry_prompt(row, raw, str(error))
-            retry_raw, retry_returncode = run_local_judge(codex_bin, candidate, retry_prompt, timeout)
+            retry_raw, retry_returncode = run_local_judge(
+                codex_bin, candidate, retry_prompt, timeout)
             raw_outputs.append(f"ROW {row.row} RETRY\n{retry_raw}")
             if retry_returncode == 0:
                 try:
-                    parsed = parse_row_json_result(retry_raw, allow_text_recovery=False)
+                    parsed = parse_row_json_result(
+                        retry_raw, allow_text_recovery=False)
                 except ValueError as retry_error:
-                    recovered = row_verdict_from_text("\n".join([raw, retry_raw]))
+                    recovered = row_verdict_from_text(
+                        "\n".join([raw, retry_raw]))
                     if recovered is None:
                         errors.append(f"row {row.row}: {retry_error}")
                         continue
@@ -378,7 +613,8 @@ def run_row_judges(
             else:
                 recovered = row_verdict_from_text(raw)
                 if recovered is None:
-                    errors.append(f"row {row.row}: retry exited with status {retry_returncode} after {error}")
+                    errors.append(
+                        f"row {row.row}: retry exited with status {retry_returncode} after {error}")
                     continue
                 parsed = recovered
         parsed["row"] = row.row
@@ -406,15 +642,18 @@ def render_row_prompt(page: Path, row: EvidenceRow) -> str:
     return f"""You are judging exactly one LLM-Wiki claim. Do not edit files. Return JSON only.
 
 Task:
-Decide whether the claim follows from the evidence and source context below.
+Decide whether the claim's MEANING follows from the evidence and source context below.
 
 Important constraints:
 - The evidence is an exact quote from the source.
 - The locator points to the source line range for that quote.
-- Judge only whether the claim is supported by the provided evidence and context.
-- Do not claim that the source lacks the evidence if the quote is shown below.
+- Judge whether the claim's factual assertions are entailed by the evidence.
+- Claims SHOULD use different vocabulary than evidence. That is good synthesis.
+- Only flag too_broad for genuinely unsupported FACTUAL ASSERTIONS, not word choices.
+- Accept claims that follow from logical inference (e.g., if A is B and B is C, then A is C).
+- Accept claims that paraphrase or summarize the evidence in different words.
+- Do NOT suggest replacement claim text. Leave suggested_claim empty.
 - Do not return missing-file or inaccessible-file issues; all needed content is shown below.
-- If the claim is mostly right but too broad, use `too_broad` and provide a narrower suggested_claim.
 
 Page path: {page.as_posix()}
 Row: {row.row}
@@ -426,10 +665,10 @@ Source context:
 {row.context}
 
 Use exactly these verdicts:
-- supported
-- too_broad
-- not_supported
-- unclear
+- supported: claim meaning follows from evidence, even if words differ or via inference
+- too_broad: claim makes factual assertions NOT entailed by evidence even via inference
+- not_supported: evidence contradicts the claim or is completely unrelated
+- unclear: cannot judge from provided context
 
 Return this JSON object and nothing else:
 {{
@@ -505,12 +744,129 @@ def run_local_judge(codex_bin: str, candidate: str, prompt: str, timeout: int) -
         return output, completed.returncode
 
 
+def run_judge_model(
+    *,
+    backend_name: str,
+    prompt: str,
+    timeout: int,
+    codex_bin: str = "codex",
+    candidate: str | None = None,
+) -> tuple[str, int]:
+    """Run judge using the specified backend.
+
+    For codex backend, uses run_local_judge for backward compatibility.
+    For other backends, uses the model backend abstraction.
+
+    Returns:
+        Tuple of (output_text, returncode). returncode 0 means success.
+    """
+    if backend_name == "codex":
+        if not candidate:
+            return "ERROR: codex backend requires --candidate", 1
+        return run_local_judge(codex_bin, candidate, prompt, timeout)
+
+    # Use model backend abstraction for non-codex backends
+    try:
+        from wiki_model_backend import get_backend, ModelConfig
+    except ImportError as e:
+        return f"ERROR: failed to import model backend: {e}", 1
+
+    try:
+        backend = get_backend(backend_name)
+    except ValueError as e:
+        return f"ERROR: {e}", 1
+
+    # Create a temporary directory for the model config
+    with tempfile.TemporaryDirectory(prefix="llm-wiki-judge.") as tmp:
+        tmp_path = Path(tmp)
+
+        config = ModelConfig(
+            worktree=tmp_path,
+            prefix="judge",
+            timeout=timeout,
+            save_debug_files=True,
+            system_prompt_style="judge",
+        )
+
+        response = backend.run(prompt, config)
+
+        if not response.success:
+            error_msg = response.error or "unknown error"
+            return f"ERROR: {error_msg}", 1
+
+        return response.output, 0
+
+
+def run_row_judges_with_backend(
+    *,
+    backend_name: str,
+    page: Path,
+    rows: list[EvidenceRow],
+    timeout: int,
+    codex_bin: str = "codex",
+    candidate: str | None = None,
+) -> tuple[dict[str, Any], str]:
+    """Run per-row judges using the specified backend."""
+    results: list[dict[str, Any]] = []
+    raw_outputs: list[str] = []
+    errors: list[str] = []
+
+    for row in rows:
+        prompt = render_row_prompt(page, row)
+        raw, returncode = run_judge_model(
+            backend_name=backend_name,
+            prompt=prompt,
+            timeout=timeout,
+            codex_bin=codex_bin,
+            candidate=candidate,
+        )
+        raw_outputs.append(f"ROW {row.row}\n{raw}")
+
+        if returncode != 0:
+            errors.append(
+                f"row {row.row}: judge exited with status {returncode}")
+            continue
+
+        try:
+            parsed = parse_row_json_result(raw, allow_text_recovery=False)
+        except ValueError as error:
+            # Try recovery from text
+            recovered = row_verdict_from_text(raw)
+            if recovered is None:
+                errors.append(f"row {row.row}: {error}")
+                continue
+            parsed = recovered
+
+        parsed["row"] = row.row
+        results.append(parsed)
+
+    page_verdict = "useful"
+    page_issue = ""
+    if not results:
+        page_verdict = "unclear"
+        page_issue = "no claim judgments could be parsed"
+    elif errors:
+        page_verdict = "unclear"
+        page_issue = "one or more claim judgments could not be parsed"
+    elif any(result.get("verdict") in {"not_supported", "unclear"} for result in results):
+        page_verdict = "unclear"
+        page_issue = "one or more claim judgments require repair or curator review"
+
+    return {
+        "page_verdict": page_verdict,
+        "page_issue": page_issue,
+        "claim_results": results,
+        "raw_output": "\n\n".join(raw_outputs),
+    }, "; ".join(errors)
+
+
 def parse_candidate(raw: str) -> tuple[str, str | None]:
     if ":" not in raw:
         return raw, None
     profile, model = raw.split(":", 1)
     if not profile or not model:
-        raise SystemExit(f"invalid candidate {raw!r}; use PROFILE or PROFILE:MODEL")
+        raise SystemExit(
+            f"invalid candidate {raw!r}; use PROFILE or PROFILE:MODEL")
     return profile, model
 
 
@@ -524,7 +880,8 @@ def parse_json_result(raw: str) -> dict[str, Any]:
         raise ValueError("local judge JSON was not an object")
     page_verdict = parsed.get("page_verdict")
     if page_verdict not in PAGE_VERDICTS:
-        raise ValueError(f"local judge returned invalid page_verdict {page_verdict!r}")
+        raise ValueError(
+            f"local judge returned invalid page_verdict {page_verdict!r}")
     claim_results = parsed.get("claim_results")
     if not isinstance(claim_results, list):
         raise ValueError("local judge JSON missing claim_results list")
@@ -533,7 +890,8 @@ def parse_json_result(raw: str) -> dict[str, Any]:
             raise ValueError("claim_results item is not an object")
         verdict = item.get("verdict")
         if verdict not in VERDICTS:
-            raise ValueError(f"local judge returned invalid claim verdict {verdict!r}")
+            raise ValueError(
+                f"local judge returned invalid claim verdict {verdict!r}")
     return parsed
 
 
@@ -606,7 +964,7 @@ def extract_json_object(text: str) -> str | None:
         elif char == "}":
             depth -= 1
             if depth == 0:
-                return text[start : index + 1]
+                return text[start: index + 1]
     return None
 
 
@@ -638,13 +996,53 @@ def render_report(
         issue = str(judge_result.get("page_issue") or "")
         if issue:
             lines.append(f"- Page issue: {issue}")
+
+    # Group flags by severity for better reporting
+    error_flags = [f for f in flags if f.severity == SEVERITY_ERROR]
+    warning_flags = [f for f in flags if f.severity == SEVERITY_WARNING]
+    info_flags = [f for f in flags if f.severity == SEVERITY_INFO]
+
     lines.extend(["", "## Deterministic Flags", ""])
-    if flags:
-        for flag in flags:
-            row = "page" if flag.row == 0 else f"row {flag.row}"
-            lines.append(f"- {flag.severity.upper()} {row}: {flag.message}")
-    else:
+
+    if error_flags:
+        lines.append("### Errors (blocking)")
+        lines.append("")
+        lines.append("| Type | Source | Row | Message |")
+        lines.append("|---|---|---|---|")
+        for flag in error_flags:
+            row = "page" if flag.row == 0 else str(flag.row)
+            lines.append(
+                f"| {flag.type} | {flag.source} | {row} | {flag.message} |")
+        lines.append("")
+
+    if warning_flags:
+        lines.append("### Warnings (review)")
+        lines.append("")
+        lines.append("| Type | Source | Row | Message |")
+        lines.append("|---|---|---|---|")
+        for flag in warning_flags:
+            row = "page" if flag.row == 0 else str(flag.row)
+            lines.append(
+                f"| {flag.type} | {flag.source} | {row} | {flag.message} |")
+        lines.append("")
+
+    if info_flags:
+        lines.append("### Info (diagnostic)")
+        lines.append("")
+        lines.append("| Type | Source | Row | Message |")
+        lines.append("|---|---|---|---|")
+        for flag in info_flags:
+            row = "page" if flag.row == 0 else str(flag.row)
+            lines.append(
+                f"| {flag.type} | {flag.source} | {row} | {flag.message} |")
+        lines.append("")
+
+    if not flags:
         lines.append("None.")
+
+    lines.append("")
+    lines.append(
+        f"Summary: {len(error_flags)} errors, {len(warning_flags)} warnings, {len(info_flags)} info")
 
     lines.extend(["", "## Sibling Pages", ""])
     lines.extend(siblings or ["None."])
@@ -669,7 +1067,8 @@ def render_report(
         )
 
     if judge_result and "raw_output" in judge_result:
-        lines.extend(["", "## Raw Judge Output", "", "```text", str(judge_result["raw_output"]).strip(), "```"])
+        lines.extend(["", "## Raw Judge Output", "", "```text",
+                     str(judge_result["raw_output"]).strip(), "```"])
 
     return "\n".join(lines) + "\n"
 
@@ -690,18 +1089,55 @@ def judge_results_by_row(judge_result: dict[str, Any] | None) -> dict[int, dict[
     return out
 
 
-def has_issues(flags: list[DeterministicFlag], judge_result: dict[str, Any] | None, judge_error: str) -> bool:
+def has_issues(
+    flags: list[DeterministicFlag],
+    judge_result: dict[str, Any] | None,
+    judge_error: str,
+    *,
+    soft_pass: bool = False,
+) -> bool:
+    """Check if judge report has issues that should fail the build.
+
+    Uses the v3 warning taxonomy:
+    - Only error severity blocks ingestion
+    - style_info and coverage_warning do not block
+    - grounding_fail, link_fail, schema_fail block
+
+    In soft_pass mode (aligned with REFERENCE_llm-wiki-pattern):
+    - too_broad = stylistic choice, human can accept or refine
+    - not_supported/unclear = substantive error, must fix
+
+    The pattern says the human curates and guides; minor embellishments
+    are synthesis choices, not contradictions.
+    """
     if judge_error:
         return True
-    if any(flag.severity == "fail" for flag in flags):
-        return True
+
+    # Use the new blocks_ingestion() method from v3 taxonomy
+    # Only error severity blocks ingestion
+    for flag in flags:
+        if flag.blocks_ingestion():
+            return True
+
     if not judge_result:
         return False
-    if judge_result.get("page_verdict") != "useful":
-        return True
-    for item in judge_result.get("claim_results") or []:
-        if isinstance(item, dict) and item.get("verdict") != "supported":
+    if judge_result.get("page_verdict") not in ("useful", None):
+        # In soft_pass, accept "too_broad" page verdict
+        if soft_pass and judge_result.get("page_verdict") == "too_broad":
+            pass
+        else:
             return True
+    for item in judge_result.get("claim_results") or []:
+        if not isinstance(item, dict):
+            continue
+        verdict = item.get("verdict")
+        if verdict == "supported":
+            continue
+        if soft_pass and verdict == "too_broad":
+            # Stylistic choice - human can accept or refine
+            continue
+        # not_supported, unclear, or other = substantive issue
+        return True
     return False
 
 

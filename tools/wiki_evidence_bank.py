@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from wiki_common import content_tokens
+from wiki_evidence_ranges import normalize_locator
 
 
 WEAK_SNIPPET_PATTERNS = [
@@ -26,15 +27,19 @@ class SourceChunk:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Extract exact normalized-source evidence snippets for candidate pages.")
-    parser.add_argument("normalized_source", help="normalized markdown source file")
-    parser.add_argument("candidate", nargs="+", help="candidate path or title to retrieve evidence for")
+    parser = argparse.ArgumentParser(
+        description="Extract exact normalized-source evidence snippets for candidate pages.")
+    parser.add_argument("normalized_source",
+                        help="normalized markdown source file")
+    parser.add_argument("candidate", nargs="+",
+                        help="candidate path or title to retrieve evidence for")
     parser.add_argument("--per-candidate", type=int, default=8)
     args = parser.parse_args()
 
     source_path = Path(args.normalized_source)
     if not source_path.exists():
-        print(f"FAIL: missing normalized source {source_path}", file=sys.stderr)
+        print(
+            f"FAIL: missing normalized source {source_path}", file=sys.stderr)
         return 1
 
     text = source_path.read_text(errors="ignore")
@@ -49,7 +54,8 @@ def render_evidence_bank(source_text: str, candidates: list[str], per_candidate:
         snippets = snippets_for_candidate(candidate, chunks, per_candidate)
         sections.append(f"### {candidate}")
         if snippets:
-            sections.extend(f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
+            sections.extend(
+                f"- `{snippet.locator}` - {snippet.text}" for snippet in snippets)
         else:
             sections.append("- not covered in sources")
         sections.append("")
@@ -57,7 +63,8 @@ def render_evidence_bank(source_text: str, candidates: list[str], per_candidate:
 
 
 def snippets_for_candidate(candidate: str, chunks: list[SourceChunk], limit: int) -> list[SourceChunk]:
-    candidate_key = Path(candidate).stem if candidate.endswith(".md") else candidate
+    candidate_key = Path(candidate).stem if candidate.endswith(
+        ".md") else candidate
     query_tokens = candidate_tokens(candidate_key)
     if not query_tokens:
         query_tokens = set(content_tokens(candidate))
@@ -71,7 +78,8 @@ def snippets_for_candidate(candidate: str, chunks: list[SourceChunk], limit: int
         if any(re.search(pattern, chunk.text, flags=re.IGNORECASE) for pattern in WEAK_SNIPPET_PATTERNS):
             continue
         if any(token in tokens for token in query_tokens):
-            snippet = SourceChunk(text=trim_chunk(chunk.text, query_tokens), locator=chunk.locator)
+            snippet = SourceChunk(text=trim_chunk(
+                chunk.text, query_tokens), locator=chunk.locator)
             scored.append((score, -len(snippet.text), -index, snippet))
 
     seen: set[str] = set()
@@ -140,7 +148,9 @@ def source_chunks(text: str) -> list[SourceChunk]:
             continue
         for sentence in split_sentences(line):
             if len(sentence) >= 40:
-                chunks.append(SourceChunk(text=sentence, locator=f"normalized:L{line_number}"))
+                # Always use range format: L123-L123 for single line
+                chunks.append(SourceChunk(
+                    text=sentence, locator=f"normalized:L{line_number}-L{line_number}"))
     return chunks
 
 
@@ -167,7 +177,8 @@ def trim_chunk(chunk: str, query_tokens: set[str], limit: int = 240) -> str:
         return chunk.replace("|", "/")
 
     lowered = chunk.lower()
-    positions = [lowered.find(token) for token in query_tokens if lowered.find(token) != -1]
+    positions = [lowered.find(token)
+                 for token in query_tokens if lowered.find(token) != -1]
     center = min(positions) if positions else 0
     start = max(0, center - limit // 3)
     end = min(len(chunk), start + limit)
