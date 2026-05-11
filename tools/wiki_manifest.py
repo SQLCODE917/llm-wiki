@@ -392,8 +392,30 @@ def load_or_create_manifest(
     """Load existing manifest or create a new one."""
     manifest = Manifest.load(slug)
     if manifest is not None:
+        refresh_manifest_config(manifest, source_file, kwargs)
         return manifest
     return Manifest.create(slug, source_file, **kwargs)
+
+
+def refresh_manifest_config(manifest: Manifest, source_file: Path | None, kwargs: dict) -> None:
+    """Refresh rerun-sensitive manifest metadata without resetting phase state."""
+    if source_file is not None:
+        manifest.source_file = str(source_file)
+        source_ext = source_file.suffix
+        manifest.paths["imported_original"] = f"raw/imported/{manifest.slug}/original{source_ext}"
+    for key in (
+        "source_kind",
+        "command",
+        "extractor",
+        "structured",
+        "target_tokens",
+        "render_pages",
+        "model_backend",
+        "candidate",
+        "allow_partial_pages",
+    ):
+        if key in kwargs:
+            setattr(manifest, key, kwargs[key])
 
 
 def get_manifest_path(slug: str) -> Path:

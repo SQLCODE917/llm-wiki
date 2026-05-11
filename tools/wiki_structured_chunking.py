@@ -36,6 +36,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 from dataclasses import dataclass, field
 from enum import Enum
@@ -53,6 +54,10 @@ def _load_tokenizer():
     if _tokenizer_load_attempted:
         return _tokenizer
     _tokenizer_load_attempted = True
+
+    if os.environ.get("WIKI_APPROX_TOKENS") == "1":
+        print("Using approximate token counts (WIKI_APPROX_TOKENS=1)")
+        return None
 
     try:
         from transformers import AutoTokenizer

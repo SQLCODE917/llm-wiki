@@ -700,3 +700,49 @@
 - Generated wiki/_linter-report.md.
 
 ---
+
+## [2026-05-11] cleanup | removed AoE2 basics ingest artifacts
+
+- Removed wiki source, synthesized pages, saved analysis, normalized output, and rebuilt index/graph for aoe2-basics; preserved raw/imported/aoe2-basics/original.pdf because raw/imported is immutable under AGENTS.md.
+
+---
+
+## [2026-05-11] ingest | finalized ingest for aoe2-basics
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-11] ingest | finalized ingest for aoe2-basics
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-11] ingest | finalized ingest for aoe2-basics
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-11] ingest | finalized ingest for aoe2-basics
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---
+
+## [2026-05-11] ingest | finalized ingest for aoe2-basics
+
+- Finalized source `aoe2-basics` after phased ingest.
+- Updated wiki/index.md and wiki/_graph.json.
+- Generated wiki/_linter-report.md.
+
+---

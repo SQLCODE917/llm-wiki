@@ -30,6 +30,7 @@ from wiki_deep_extract import (
     load_extraction_state,
     create_source_page_from_topics,
     get_state_path,
+    page_slug_for_topic,
 )
 from wiki_common import parse_frontmatter, section
 from wiki_manifest import Manifest, PhaseStatus, load_or_create_manifest
@@ -55,8 +56,10 @@ class IngestConfig:
     strict_judge: bool
     overwrite_normalized: bool
     reuse_imported: bool
+    pdf_extractor: str
     timeout: int
     judge_timeout: int
+    phase2_repair_attempts: int
     chunk_size: int
     overlap: int
     extract_timeout: int
@@ -81,6 +84,8 @@ def main() -> int:
     parser.add_argument("--timeout", type=int, default=900,
                         help="timeout per synthesis call")
     parser.add_argument("--judge-timeout", type=int, default=900)
+    parser.add_argument("--phase2-repair-attempts", type=int, default=1,
+                        help="repair attempts after Phase 2 deterministic validation failures")
     parser.add_argument(
         "--backend", help="Model backend: bedrock, codex, openai, anthropic. Default from WIKI_MODEL_BACKEND or codex")
     parser.add_argument("--extract-timeout", type=int,
@@ -97,6 +102,12 @@ def main() -> int:
                         help="Target source tokens per chunk for structured chunking (default: 3500)")
     parser.add_argument("--reuse-imported", action="store_true")
     parser.add_argument("--overwrite-normalized", action="store_true")
+    parser.add_argument(
+        "--pdf-extractor",
+        choices=["auto", "marker", "pymupdf", "pymupdf4llm", "pdfplumber"],
+        default="pymupdf4llm",
+        help="PDF extraction backend for Phase 0 (default: pymupdf4llm)",
+    )
     parser.add_argument("--skip-phase0", action="store_true")
     parser.add_argument("--skip-extract", action="store_true",
                         help="skip deep extraction (use existing state)")
@@ -139,8 +150,10 @@ def main() -> int:
         strict_judge=args.strict_judge,
         overwrite_normalized=args.overwrite_normalized,
         reuse_imported=args.reuse_imported,
+        pdf_extractor=args.pdf_extractor,
         timeout=args.timeout,
         judge_timeout=args.judge_timeout,
+        phase2_repair_attempts=args.phase2_repair_attempts,
         chunk_size=args.chunk_size,
         overlap=args.overlap,
         extract_timeout=args.extract_timeout,
@@ -186,6 +199,7 @@ def run_ingest(config: IngestConfig) -> int:
 
         phase0 = ["python3", "tools/wiki_phase0_import.py",
                   config.source.as_posix(), config.slug]
+        phase0.extend(["--pdf-extractor", config.pdf_extractor])
         if config.reuse_imported:
             phase0.append("--reuse-imported")
         if config.overwrite_normalized:
@@ -231,6 +245,7 @@ def run_ingest(config: IngestConfig) -> int:
                 resume=True,  # Always resume if state exists
                 chunk_size=config.chunk_size,
                 overlap=config.overlap,
+                backend_name=config.backend,
                 timeout=config.extract_timeout,
                 skip_synthesis=True,
                 skip_finalize=True,
@@ -357,7 +372,7 @@ def run_ingest(config: IngestConfig) -> int:
                 "--judge-timeout",
                 str(config.judge_timeout),
                 "--repair-attempts",
-                "0",
+                str(config.phase2_repair_attempts),
                 "--judge-repair-attempts",
                 "1",  # Allow one repair if judge finds not_supported
                 "--judge-batch",
@@ -495,8 +510,7 @@ def next_phase2_candidates_from_state(state, config: IngestConfig) -> list[tuple
     for topic, claims in sorted(state.topics.items(), key=lambda x: -len(x[1])):
         if len(claims) < config.min_claims_per_topic:
             continue
-        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
-        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_slug = page_slug_for_topic(topic, config.slug)
         page_path = f"../concepts/{page_slug}.md"
         candidates.append((topic, page_path))
     return candidates

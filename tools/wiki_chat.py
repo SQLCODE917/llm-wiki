@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Interactive chat REPL for llm-wiki using cloud model backends.
+"""Interactive chat REPL for llm-wiki using model backends.
 
 Usage:
     pnpm wiki:chat
-    pnpm wiki:chat --backend bedrock
+    pnpm wiki:chat --backend codex
     
 Commands:
     /query <question>  - Search wiki and answer from pages
@@ -64,8 +64,8 @@ def main() -> int:
         description="Interactive chat REPL for llm-wiki")
     parser.add_argument(
         "--backend",
-        default=os.environ.get("WIKI_MODEL_BACKEND", "bedrock"),
-        help="Model backend: bedrock, openai, anthropic (default: from WIKI_MODEL_BACKEND or bedrock)",
+        default=os.environ.get("WIKI_MODEL_BACKEND", "codex"),
+        help="Model backend: codex, bedrock, openai, anthropic (default: from WIKI_MODEL_BACKEND or codex)",
     )
     parser.add_argument("--timeout", type=int, default=120,
                         help="Response timeout in seconds")
@@ -257,9 +257,9 @@ def run_ingest_guide(path: str) -> str:
     return f"""📥 Ready to ingest: {path}
 Slug: {slug}
 
-To run automated cloud ingestion:
+To run automated ingestion:
 ```bash
-AWS_PROFILE=sdai-dev pnpm wiki:ingest:cloud {path} --slug {slug}
+pnpm wiki:ingest {path} --slug {slug} --backend codex --candidate local-4090
 ```
 
 Or run phases manually:

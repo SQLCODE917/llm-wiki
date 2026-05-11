@@ -68,30 +68,30 @@ The selected page must include:
 - `## Source-backed details`
 - `## Source pages`
 
-CRITICAL: Write **4-column** tables for reference data and **3-column** tables for source-backed details. Evidence is filled automatically - do NOT write evidence text.
+CRITICAL: Write ID-based tables only. Evidence, locators, and source links are filled automatically - do NOT write evidence text, locators, or source links.
 
 `## Reference data` must contain this exact table shape:
 
 ```md
-| Item                     | Supported fact                             | Locator              | Source                                 |
-| ------------------------ | ------------------------------------------ | -------------------- | -------------------------------------- |
-| Source-native item name. | Narrow fact synthesized in your own words. | `normalized:L12-L12` | [Source title](../sources/{{slug}}.md) |
+| Item                     | Supported fact                             | Evidence |
+| ------------------------ | ------------------------------------------ | -------- |
+| Source-native item name. | Narrow fact synthesized in your own words. | [{{slug}}:claim_abc123] |
 ```
 
 `## Source-backed details` must contain this exact table shape:
 
 ```md
-| Claim                                      | Locator              | Source                                 |
-| ------------------------------------------ | -------------------- | -------------------------------------- |
-| Concrete reusable claim in your own words. | `normalized:L12-L12` | [Source title](../sources/{{slug}}.md) |
+| Claim                                      | Evidence |
+| ------------------------------------------ | -------- |
+| Concrete reusable claim in your own words. | [{{slug}}:claim_abc123] |
 ```
 
 Rules:
 
 - Include at least 2 data rows in `## Reference data`.
 - Include at least 3 rows in `## Source-backed details`.
-- Do NOT write Evidence columns - they are filled automatically from locators.
-- Locator cells must use range format `normalized:L<start>-L<end>` (single line: `L123-L123`).
+- Evidence cells must contain only one or more stable evidence IDs copied exactly from the evidence bank.
+- Do NOT write source quote text, locators, or source links in either table.
 - The claim and supported-fact cells must synthesize in your own words; do not copy source text.
 - Claim and supported-fact cells must not use weak generic words: important, crucial, fundamental, essential, success.
 

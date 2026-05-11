@@ -26,9 +26,9 @@ You synthesize wiki pages as structured JSON. Output ONLY valid JSON matching th
   "claims": [
     {
       "claim": "Concrete reusable claim in your own words.",
-      "evidence_ids": ["E03"]
+      "evidence_ids": ["source-slug:claim_abc123"]
     },
-    { "claim": "Another synthesized claim.", "evidence_ids": ["E07"] }
+    { "claim": "Another synthesized claim.", "evidence_ids": ["source-slug:claim_def456"] }
   ]
 }
 ```
@@ -36,7 +36,7 @@ You synthesize wiki pages as structured JSON. Output ONLY valid JSON matching th
 ## Rules
 
 1. **claims_table sections**: Set `"claims_table": true` - no `content` field. Claims render here.
-2. **Evidence IDs**: Reference `[E01]`, `[E02]` etc. Use ONE ID per claim for cleaner output.
+2. **Evidence IDs**: Reference stable IDs exactly as shown in the evidence bank. Use ONE ID per claim for cleaner output.
 3. **Claims must synthesize**: Write the claim in your own words. Do NOT copy evidence text.
 4. **Minimum 3 claims**: Each page needs at least 3 source-backed claims.
 5. **source_ranges**: Include line ranges that ground this page.

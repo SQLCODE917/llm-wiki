@@ -3,23 +3,36 @@ title: AoE2 Economy Balance
 type: concept
 tags: []
 status: draft
-last_updated: 2026-05-02
-sources: [../sources/aoe2-basics.md]
+last_updated: 2026-05-11
+sources:
+  - ../sources/aoe2-basics.md
 ---
-
 # AoE2 Economy Balance
-
-This balance of economy while producing and using your army is difficult to perfect.
 
 ## Source-backed details
 
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
-| Economy balance refers to the amount of excess resources a player has. | "So what does economy balance mean, it's the amount of excess resources you are getting in." | `normalized:L310` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Wood shortages can halt the economy even when a temporary gold shortage is survivable. | "You can get away temporarily without gold, but without wood your whole economy just halts." | `normalized:L547` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Having a dock and ability to fish is beneficial for economy. | "This is why having a dock and being able to fish is extremely beneficial for your economy." | `normalized:L551` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Economy upgrades can create villager-equivalent resource advantages without stopping villager production. | "No but seriously, economy upgrades are really important. Imagine being ahead by 2 villagers?" | `normalized:L288` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Claim | Evidence |
+| --- | --- |
+| Players should keep resource counts low to avoid unnecessary banking. | [aoe2-basics:claim_aoe2-basics_c002_56e8b40a] |
+| Tracking resource accumulation allows players to make informed decisions about resource allocation. | [aoe2-basics:claim_aoe2-basics_c002_e7c32f90] |
+| Preventing excess resources involves making new farms when there are 60 wood extra, unless other buildings are needed. | [aoe2-basics:claim_aoe2-basics_c002_e7c32f90] |
+
+## Why it matters
+
+Balancing resource accumulation is key to efficient gameplay in Age of Empires II. Proper management prevents waste while ensuring sufficient resources for progression.
 
 ## Source pages
 
-- [Noobs guide for AoE2](../sources/aoe2-basics.md)
+- [Source: aoe2-basics](../sources/aoe2-basics.md)
+
+## Related pages
+
+- [AoE2 Building Placement](../concepts/aoe2-building-placement.md)
+- [AoE2 Map Awareness](../concepts/aoe2-map-awareness.md)
+- [AoE2 Military Units](../concepts/aoe2-military-units.md)
+- [AoE2 Unit Interactions](../concepts/aoe2-unit-interactions.md)
+- [AoE2 Uptimes](../concepts/aoe2-uptimes.md)
+
+## Candidate pages
+
+- Economy Management

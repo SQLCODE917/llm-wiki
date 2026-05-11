@@ -101,9 +101,9 @@ Your output will be validated against these rules:
 1. **Frontmatter**: Must include title, type, tags, status, last_updated, sources
 2. **Source link**: frontmatter.sources must include path to source page
 3. **Source pages section**: Required section linking to source page(s)
-4. **Evidence table**: Minimum 3 rows with Claim|Evidence|Locator|Source columns
-5. **Locator format**: Must be `normalized:L123` or `normalized:L123-L456`
-6. **Locator range**: All locators must be within declared source_ranges
+4. **Evidence table**: Minimum 3 rows with Claim|Evidence columns
+5. **Evidence IDs**: Evidence cells must contain only stable IDs from the evidence bank
+6. **Source ranges**: Cite only IDs whose locators are within declared source_ranges
 7. **Claim synthesis**: Claims must be YOUR words, not copied from evidence
 8. **No placeholders**: No "Page title" or template text
 9. **No empty sections**: Every section needs content or "None."
@@ -111,11 +111,11 @@ Your output will be validated against these rules:
 
 COMMON_FAILURES = """## Common mistakes to avoid
 
-BAD claim (copies evidence):
+BAD claim (copies evidence and writes quote text):
 | Functions containing free variables are closures. | "Functions containing free variables are closures." |
 
-GOOD claim (synthesizes):
-| Functions that reference variables from outer scopes are termed closures. | "Functions containing free variables are closures." |
+GOOD claim (synthesizes and cites an ID):
+| Functions that reference variables from outer scopes are termed closures. | [source-slug:claim_abc123] |
 
 BAD locator (outside range):
 | ... | `normalized:L1709` | (when source_ranges is L1260-L1290)
@@ -134,14 +134,14 @@ FORBIDDEN in your output:
 
 REQUIRED format:
 - 2-column table: | Claim | Evidence |
-- Evidence column contains ONLY IDs like [E01], [E07]
+- Evidence column contains ONLY stable IDs from the evidence bank
 - The renderer expands IDs to full evidence text and locators
 
 Example:
 | Claim | Evidence |
 |-------|----------|
-| Your synthesized insight. | [E01] |
-| Another insight. | [E03], [E07] |
+| Your synthesized insight. | [source-slug:claim_abc123] |
+| Another insight. | [source-slug:claim_def456], [source-slug:claim_ghi789] |
 """
 
 # Patterns that indicate the model violated the evidence-ID-only contract
@@ -176,7 +176,7 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
         fail(failures, FailureCategory.SCHEMA_FORBIDDEN_FIELD, page,
              "model wrote 4-column evidence table; should be 2-column (Claim|Evidence) with IDs only",
              field="table_structure",
-             fix_hint="Use 2-column table: | Claim | Evidence | with [E01] style IDs")
+             fix_hint="Use 2-column table: | Claim | Evidence | with stable evidence IDs")
 
     # Check for locators in output
     locator_pattern = r'normalized:L\d+'
@@ -185,7 +185,7 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
         fail(failures, FailureCategory.SCHEMA_FORBIDDEN_FIELD, page,
              f"model wrote {len(locator_matches)} locator(s) directly; should use evidence IDs only",
              field="locator",
-             fix_hint="Do not write locators - cite evidence by ID like [E01] instead")
+             fix_hint="Do not write locators - cite evidence by stable ID instead")
 
     # Check for quoted text that looks like evidence (in evidence column context)
     # Pattern: | claim text | "quoted evidence" | or | claim | 'quoted' |
@@ -195,7 +195,7 @@ def check_evidence_contract_violations(text: str, page: str) -> list["Validation
         fail(failures, FailureCategory.SCHEMA_FORBIDDEN_FIELD, page,
              f"model wrote {len(quote_matches)} quoted evidence excerpt(s); should use evidence IDs only",
              field="evidence_text",
-             fix_hint="Replace quoted text with evidence IDs like [E01]")
+             fix_hint="Replace quoted text with stable evidence IDs")
 
     return failures
 

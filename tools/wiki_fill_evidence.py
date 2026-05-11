@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Fill evidence cells deterministically from locators or evidence IDs.
+"""Normalize evidence cells deterministically from locators or evidence IDs.
 
 This replaces the need for LLMs to write evidence text. The LLM outputs
-a 2-column table (Claim | [E01]), and this script expands it to a 4-column
-table by inserting evidence text, locators, and source links.
+a 2-column table (Claim | [stable-id]), and this script keeps that canonical
+2-column shape while normalizing any prompt-local or hybrid table output.
 
 Usage:
     python3 tools/wiki_fill_evidence.py wiki/concepts/example.md --source raw/normalized/slug/source.md
@@ -16,6 +16,9 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING
+
+from wiki_evidence_validator import canonicalize_for_evidence_match
+from wiki_evidence_resolver import EvidenceResolver
 
 if TYPE_CHECKING:
     from wiki_phase2_benchmark import EvidenceBankResult
@@ -97,15 +100,15 @@ def expand_evidence_ids(
     evidence_bank: "EvidenceBankResult",
     slug: str,
 ) -> tuple[str, list[dict]]:
-    """Expand evidence IDs to full 4-column table format.
+    """Normalize evidence-ID tables to the canonical 2-column wiki format.
 
-    Input: | Claim | [E01] |
-    Output: | Claim | Evidence | Locator | Source |
+    Input: | Claim | [source:claim_id] |
+    Output: | Claim | Evidence |
 
     Args:
         page_text: Page content with evidence ID citations
-        evidence_bank: EvidenceBankResult with ID -> evidence mapping
-        slug: Source slug for generating source links
+        evidence_bank: EvidenceBankResult with ID -> evidence mapping.
+        slug: Source slug.
 
     Returns:
         Tuple of (transformed_text, list of expansions)
@@ -115,7 +118,8 @@ def expand_evidence_ids(
     expansions: list[dict] = []
 
     in_table = False
-    table_type = None  # "2col_id", "3col_id"
+    table_type = None  # "2col_id", "reference_id"
+    evidence_index = -1
     row_num = 0
 
     for line in lines:
@@ -127,56 +131,122 @@ def expand_evidence_ids(
             if cols:
                 cols_lower = [c.lower() for c in cols]
 
-                # Check for 2-column ID format: | Claim | Evidence |
-                # where Evidence column will contain [E01] etc
+                # Check for canonical 2-column ID format: | Claim | Evidence |
                 if len(cols) == 2 and "claim" in cols_lower and "evidence" in cols_lower:
                     in_table = True
                     table_type = "2col_id"
+                    evidence_index = cols_lower.index("evidence")
                     row_num = 0
-                    # Transform to 4-column header
-                    result_lines.append(
-                        "| Claim | Evidence | Locator | Source |")
+                    result_lines.append("| Claim | Evidence |")
+                    continue
+
+                # Legacy/hybrid model output:
+                # | Claim | Evidence | Locator | Source |
+                # where Evidence is still an ID. Strip renderer-owned columns.
+                if len(cols) == 4 and cols_lower == ["claim", "evidence", "locator", "source"]:
+                    in_table = True
+                    table_type = "4col_id"
+                    evidence_index = 1
+                    row_num = 0
+                    result_lines.append("| Claim | Evidence |")
+                    continue
+
+                # Check for ID-based reference data:
+                # | Item | Supported fact | Evidence |
+                if len(cols) >= 3 and "evidence" in cols_lower and "locator" not in cols_lower:
+                    in_table = True
+                    table_type = "reference_id"
+                    evidence_index = cols_lower.index("evidence")
+                    row_num = 0
+                    result_lines.append(format_table_row(cols))
                     continue
 
         # Transform separator row
         if in_table and is_separator_row(stripped):
-            result_lines.append("| --- | --- | --- | --- |")
+            if table_type == "reference_id":
+                result_lines.append(line)
+            else:
+                result_lines.append("| --- | --- |")
             continue
 
         # Process data rows with evidence IDs
         if in_table and stripped.startswith("|") and stripped.endswith("|"):
             cols = parse_table_row(stripped)
 
-            if cols and table_type == "2col_id" and len(cols) == 2:
+            if cols and table_type in {"2col_id", "4col_id"} and len(cols) >= 2:
                 row_num += 1
                 claim = cols[0]
-                evidence_cell = cols[1].strip()
+                evidence_cell = cols[evidence_index].strip()
 
-                # Extract evidence ID from cell (e.g., "[E01]" or "E01")
-                match = re.search(
-                    r'\[?(E\d+)\]?', evidence_cell, re.IGNORECASE)
-                if match:
-                    evidence_id = match.group(1).upper()
-                    item = evidence_bank.items.get(evidence_id)
-
+                ids = evidence_ids_from_cell(evidence_cell)
+                had_ids = bool(ids)
+                if not ids:
+                    matched_id = evidence_id_for_excerpt(evidence_cell, evidence_bank, slug)
+                    ids = [matched_id] if matched_id else []
+                canonical_ids = []
+                for evidence_id in ids:
+                    item = resolved_evidence_tuple(evidence_id, evidence_bank, slug)
                     if item:
-                        # Use exact_text (full text) not display_text (truncated)
-                        new_cols = [
-                            make_table_safe(claim),
-                            f'"{make_table_safe(item.exact_text)}"',
-                            f"`{item.locator}`",
-                            f"[Source](../sources/{slug}.md)"
-                        ]
-                        result_lines.append(format_table_row(new_cols))
+                        item_id, locator, evidence = item
+                        canonical_ids.append(item_id)
                         expansions.append({
                             "row": row_num,
-                            "id": evidence_id,
-                            "locator": item.locator,
-                            "evidence": item.exact_text,
+                            "id": item_id,
+                            "locator": locator,
+                            "evidence": evidence,
                         })
-                        continue
+                if canonical_ids:
+                    new_cols = [
+                        make_table_safe(claim),
+                        ", ".join(f"[{eid}]" for eid in canonical_ids),
+                    ]
+                    result_lines.append(format_table_row(new_cols))
+                    continue
 
-                # If no valid ID found, keep the row as-is with placeholder
+                if not had_ids:
+                    # The model wrote an excerpt that is not backed by a known
+                    # claim ID. Drop it so validation does not adopt an
+                    # unresolvable evidence row.
+                    continue
+
+                # If an explicit ID was invalid, keep the row so validation
+                # reports the bad ID clearly.
+                result_lines.append(line)
+                continue
+
+            if cols and table_type == "reference_id" and len(cols) >= 3 and evidence_index < len(cols):
+                row_num += 1
+                evidence_cell = cols[evidence_index].strip()
+
+                ids = evidence_ids_from_cell(evidence_cell)
+                had_ids = bool(ids)
+                if not ids:
+                    matched_id = evidence_id_for_excerpt(evidence_cell, evidence_bank, slug)
+                    ids = [matched_id] if matched_id else []
+                canonical_ids = []
+                for evidence_id in ids:
+                    item = resolved_evidence_tuple(evidence_id, evidence_bank, slug)
+                    if item:
+                        item_id, locator, evidence = item
+                        canonical_ids.append(item_id)
+                        expansions.append({
+                            "row": row_num,
+                            "id": item_id,
+                            "locator": locator,
+                            "evidence": evidence,
+                        })
+                if canonical_ids:
+                    new_cols = (
+                        [make_table_safe(cell) for cell in cols[:evidence_index]]
+                        + [", ".join(f"[{eid}]" for eid in canonical_ids)]
+                        + [make_table_safe(cell) for cell in cols[evidence_index + 1:]]
+                    )
+                    result_lines.append(format_table_row(new_cols))
+                    continue
+
+                if not had_ids:
+                    continue
+
                 result_lines.append(line)
                 continue
 
@@ -188,6 +258,85 @@ def expand_evidence_ids(
         result_lines.append(line)
 
     return "\n".join(result_lines), expansions
+
+
+def evidence_ids_from_cell(cell: str) -> list[str]:
+    ids = re.findall(r"\[([A-Za-z0-9_:-]+)\]", cell)
+    if ids:
+        return ids
+    stripped = cell.strip().strip("`")
+    if re.fullmatch(r"[A-Za-z0-9_:-]+", stripped):
+        return [stripped]
+    return []
+
+
+def resolved_evidence_tuple(
+    evidence_id: str,
+    evidence_bank: "EvidenceBankResult",
+    slug: str,
+) -> tuple[str, str, str] | None:
+    item = evidence_bank.items.get(evidence_id) or evidence_bank.items.get(evidence_id.upper())
+    if item:
+        return item.id, item.locator, item.exact_text
+    resolver = EvidenceResolver.for_slug(slug) if slug else None
+    resolved = resolver.resolve(evidence_id) if resolver else None
+    if resolved:
+        return resolved.evidence_id, resolved.locator, resolved.evidence
+    return None
+
+
+def evidence_id_for_excerpt(cell: str, evidence_bank: "EvidenceBankResult", slug: str = "") -> str | None:
+    needle = evidence_match_key(cell)
+    if not needle:
+        return None
+    best_id: str | None = None
+    best_len = 0
+    for evidence_id, item in evidence_bank.items.items():
+        candidates = [
+            item.exact_text,
+            item.display_text,
+        ]
+        for candidate in candidates:
+            haystack = evidence_match_key(candidate)
+            if not haystack:
+                continue
+            if needle == haystack or needle in haystack or haystack in needle:
+                score = min(len(needle), len(haystack))
+                if score > best_len:
+                    best_id = evidence_id
+                    best_len = score
+    if best_id is not None or not slug:
+        return best_id
+
+    resolver = EvidenceResolver.for_slug(slug)
+    if resolver is None:
+        return None
+    for item in resolver._items.values():
+        haystack = evidence_match_key(item.evidence)
+        if not haystack:
+            continue
+        if needle == haystack or needle in haystack or haystack in needle:
+            score = min(len(needle), len(haystack))
+            if score > best_len:
+                best_id = item.evidence_id
+                best_len = score
+    return best_id
+
+
+def evidence_match_key(text: str) -> str:
+    key = canonicalize_for_evidence_match(strip_outer_quotes(text).replace("**", "").replace("*", ""))
+    key = key.replace('"', "").replace("'", "")
+    key = key.replace("•", "")
+    return " ".join(key.split())
+
+
+def strip_outer_quotes(text: str) -> str:
+    stripped = text.strip()
+    if (stripped.startswith('"') and stripped.endswith('"')) or (
+        stripped.startswith("'") and stripped.endswith("'")
+    ):
+        return stripped[1:-1].strip()
+    return stripped
 
 
 def fill_evidence_in_page(

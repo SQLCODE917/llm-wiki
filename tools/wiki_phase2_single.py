@@ -640,6 +640,7 @@ def run_with_backend(
     *,
     worktree: Path,
     backend_name: str | None,
+    candidate,
     prompt: str,
     timeout: int,
     prefix: str,
@@ -665,6 +666,8 @@ def run_with_backend(
         timeout=timeout,
         save_debug_files=True,
         system_prompt_style="synthesis",  # Use slim synthesis-focused prompt
+        codex_profile=candidate.profile,
+        codex_model=candidate.model,
     )
 
     response = backend.run(prompt, config)
@@ -1216,6 +1219,7 @@ def run_with_backend_json(
     *,
     worktree: Path,
     backend_name: str | None,
+    candidate,
     prompt: str,
     timeout: int,
     prefix: str,
@@ -1250,6 +1254,8 @@ def run_with_backend_json(
         timeout=timeout,
         save_debug_files=True,
         system_prompt_style="synthesis-json",  # JSON output system prompt
+        codex_profile=candidate.profile,
+        codex_model=candidate.model,
     )
 
     response = backend.run(prompt, config)
@@ -1316,10 +1322,9 @@ def fix_synthesized_evidence(
     """Fill evidence cells deterministically from locators or evidence IDs.
 
     If evidence_bank is provided (with ID mapping), uses expand_evidence_ids
-    for 2-column tables: | Claim | [E01] | -> | Claim | Evidence | Locator | Source |
+    to normalize model output to canonical 2-column stable-ID tables.
 
-    Otherwise falls back to fill_evidence_in_page for 3-column tables:
-    | Claim | Locator | Source | -> | Claim | Evidence | Locator | Source |
+    Otherwise falls back to fill_evidence_in_page for legacy locator-based tables.
 
     Returns number of evidence cells filled.
     """
@@ -1461,15 +1466,18 @@ def run_single_candidate(
     judge_report_paths: list[Path] = []
     page_schema: WikiPageSchema | None = None
 
-    # Use model backend if specified, otherwise use codex CLI
-    use_backend = backend_name is not None or os.environ.get(
-        "WIKI_MODEL_BACKEND") not in (None, "", "codex")
+    # Use the backend abstraction for cloud/API backends. Keep codex on the
+    # Codex CLI path because it may edit files directly rather than returning
+    # fenced file blocks for parse_model_output().
+    effective_backend = backend_name or os.environ.get("WIKI_MODEL_BACKEND")
+    use_backend = effective_backend not in (None, "", "codex")
 
     if json_output and use_backend:
         # JSON output mode: model outputs JSON, we render markdown
         returncode, paths, page_schema = run_with_backend_json(
             worktree=worktree,
             backend_name=backend_name,
+            candidate=candidate,
             prompt=prompt,
             timeout=timeout,
             prefix="codex-initial",
@@ -1482,6 +1490,7 @@ def run_single_candidate(
         returncode, paths = run_with_backend(
             worktree=worktree,
             backend_name=backend_name,
+            candidate=candidate,
             prompt=prompt,
             timeout=timeout,
             prefix="codex-initial",
@@ -1592,6 +1601,7 @@ def run_single_candidate(
             returncode, paths, _ = run_with_backend_json(
                 worktree=worktree,
                 backend_name=backend_name,
+                candidate=candidate,
                 prompt=repair_prompt,
                 timeout=timeout,
                 prefix=f"codex-repair-{attempt}",
@@ -1604,6 +1614,7 @@ def run_single_candidate(
             returncode, paths = run_with_backend(
                 worktree=worktree,
                 backend_name=backend_name,
+                candidate=candidate,
                 prompt=repair_prompt,
                 timeout=timeout,
                 prefix=f"codex-repair-{attempt}",
@@ -1687,6 +1698,7 @@ def run_single_candidate(
                 returncode, paths, _ = run_with_backend_json(
                     worktree=worktree,
                     backend_name=backend_name,
+                    candidate=candidate,
                     prompt=repair_prompt,
                     timeout=timeout,
                     prefix=f"codex-judge-repair-{attempt}",
@@ -1699,6 +1711,7 @@ def run_single_candidate(
                 returncode, paths = run_with_backend(
                     worktree=worktree,
                     backend_name=backend_name,
+                    candidate=candidate,
                     prompt=repair_prompt,
                     timeout=timeout,
                     prefix=f"codex-judge-repair-{attempt}",
@@ -2014,10 +2027,11 @@ Evidence bank:
 Mechanical repair rules:
 - Edit `{selected_repo_path}` first. Touch `wiki/sources/{slug}.md` only if its Related pages row is incorrect.
 - Keep `{selected_repo_path}` as `type: reference`.
-- `## Reference data` must have at least 2 data rows and include `Evidence` and `Locator` columns.
-- `## Source-backed details` must have at least 3 rows with header `| Claim | Evidence | Locator | Source |`.
-- If a row fails "excerpt is not found in locator range", shorten the Evidence cell to an exact substring from that locator line, or remove the row if it is optional.
-- If a source line contains internal quotation marks, use a shorter exact excerpt that avoids those internal quotation marks.
+- `## Reference data` must have at least 2 data rows with an `Evidence` column containing evidence IDs only.
+- `## Source-backed details` must have at least 3 rows with header `| Claim | Evidence |`.
+- In both tables, Evidence cells must contain stable evidence IDs copied from the evidence bank.
+- Do not write source quote text, locators, or source links in reference or source-backed tables; deterministic post-processing expands evidence IDs.
+- If a Source-backed details row fails evidence support, replace its Evidence cell with a stronger ID from the evidence bank, or remove the row if it is optional.
 - If a row fails weak generic fact language, rewrite the fact or claim cell, not the Evidence cell.
 - Do not use these weak generic words in fact or claim cells: important, crucial, fundamental, essential, success.
 - CONSERVATIVE CLAIMS: Each claim/fact must be fully entailed by the cited evidence. Do NOT add details, qualifications, or explanations not present in the evidence.
@@ -2110,11 +2124,11 @@ Repair rules:
   - GOOD claim (synthesizes): "Linear recursion serves as a core component for constructing algorithms."
 - Prefer narrowing the claim to exactly what the cited evidence supports, but use your own phrasing.
 - If the judge suggests a narrower claim, use it unless it conflicts with the evidence.
-- If the evidence is weak, replace that row with a stronger exact excerpt from the evidence bank.
+- If the evidence is weak, replace that row's Evidence cell with a stronger evidence ID from the evidence bank.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
-- Keep all evidence cells as exact excerpts from `{normalized_source.as_posix()}`.
-- Keep all locators as `normalized:L12` or `normalized:L12-L14`, and ensure the excerpt appears in that range.
-- If this is a reference page, `## Reference data` must include `Evidence` and `Locator` columns for every source-derived row.
+- In `## Source-backed details`, keep Evidence cells as stable evidence IDs copied from the evidence bank.
+- Do not write source quote text, locators, or source links in source-backed tables; deterministic post-processing expands evidence IDs.
+- If this is a reference page, `## Reference data` Evidence cells must also use evidence IDs only.
 - Do not add new pages.
 - Do not create backup files.
 - Do not remove existing linked pages for this source.

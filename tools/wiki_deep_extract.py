@@ -35,7 +35,7 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from wiki_common import log_context_stats, section
+from wiki_common import log_context_stats, parse_frontmatter, section
 from wiki_fill_evidence import fill_evidence_in_page
 from wiki_model_backend import get_backend, ModelConfig, ModelResponse
 
@@ -54,6 +54,7 @@ from wiki_extraction_state import (
 from wiki_candidate_tracker import (
     CandidatesData,
     load_candidates,
+    normalize_candidate_name,
     save_candidates,
     register_candidate,
 )
@@ -484,17 +485,17 @@ CONTENT (lines starting with L### are line numbers, [ctx] marks context):
 
 TASK: Extract the most important concrete, reusable claims from this chunk (up to 25 claims maximum). Prioritize claims that teach concepts, patterns, or techniques. If this chunk is dense with many potential claims, focus on the most foundational and widely applicable ones.
 
-TOPIC GUIDELINES - Use BROAD topic categories like:
-- "Functions" (not "Arrow Functions", "Function Values", etc.)
-- "Arrays" (not "Array Methods", "Array Destructuring", etc.)  
-- "Closures" (not "Closure Patterns", "Closure Examples", etc.)
-- "Iterators" (not "Iterator Protocol", "Custom Iterators", etc.)
-- "Objects" (not "Plain Objects", "Object Methods", etc.)
-- "Recursion" (not "Tail Recursion", "Recursive Patterns", etc.)
-- "Data Types" (not "Value Types", "Reference Types", etc.)
-- "Control Flow" (not "Conditionals", "Loops", etc.)
-- "ES6 Features" (for modern JavaScript syntax)
-- "Functional Programming" (for FP concepts)
+TOPIC GUIDELINES - Derive topics from the source material, using BROAD categories:
+- Prefer parent concepts over sub-variants (e.g., "Memory Management" not "Stack vs Heap")
+- Group related techniques under one umbrella (e.g., "Search Algorithms" not "Binary Search")
+- Use domain-appropriate terminology from the source itself
+- Aim for 5-15 distinct topics across the entire document
+
+Examples of the BROAD vs NARROW pattern (adapt to your domain):
+- Programming: "Functions" not "Arrow Functions", "Data Structures" not "Linked Lists"
+- Strategy games: "Economy" not "Wood Gathering", "Military Units" not "Archer Rush"  
+- Science: "Thermodynamics" not "Heat Transfer", "Cell Biology" not "Mitochondria"
+- History: "Political Systems" not "Roman Senate", "Trade Routes" not "Silk Road"
 
 RULES:
 1. Extract ONLY claims that teach something useful and reusable
@@ -516,7 +517,7 @@ OUTPUT FORMAT - Return ONLY a JSON array:
 ```json
 [
   {{
-    "topic": "Broad topic name (e.g., 'Functions', 'Arrays', 'Closures')",
+    "topic": "Broad topic name derived from source domain",
     "claim": "Concrete statement in your own words - what the reader should learn",
     "evidence": "VERBATIM quote from source (under 200 chars, no modifications)",
     "locator": "normalized:L<start>-L<end>"
@@ -567,29 +568,29 @@ def extract_claims_from_chunk(
 
 def repair_truncated_json(json_str: str) -> str:
     """Attempt to repair truncated JSON arrays from max_tokens cutoff.
-    
+
     When a model hits max_tokens, the JSON array may be truncated mid-object.
     This function tries to recover the complete claims by:
     1. Removing the last incomplete object
     2. Closing the array properly
-    
+
     Returns the repaired JSON string, or original if repair not applicable.
     """
     # Check if it looks like a truncated array
     if not json_str.strip().startswith('['):
         return json_str
-    
+
     # If it already ends with ], nothing to repair
     if json_str.rstrip().endswith(']'):
         return json_str
-    
+
     # Find the last complete object by looking for }, followed by potential whitespace
     # Work backwards from end
     last_complete = -1
     depth = 0
     in_string = False
     escape_next = False
-    
+
     for i, char in enumerate(json_str):
         if escape_next:
             escape_next = False
@@ -609,7 +610,7 @@ def repair_truncated_json(json_str: str) -> str:
             if depth == 0:
                 # Found complete object at top level of array
                 last_complete = i
-    
+
     if last_complete > 0:
         # Truncate after last complete object and close the array
         repaired = json_str[:last_complete + 1].rstrip()
@@ -618,7 +619,7 @@ def repair_truncated_json(json_str: str) -> str:
             repaired = repaired[:-1]
         repaired += ']'
         return repaired
-    
+
     return json_str
 
 
@@ -684,7 +685,8 @@ def parse_claims_response(output: str, chunk_index: int, slug: str = "") -> list
                                 chunk_index=chunk_index,
                                 claim_id=claim_id,
                             ))
-                    print(f"    Recovered {len(claims)} claims from truncated JSON")
+                    print(
+                        f"    Recovered {len(claims)} claims from truncated JSON")
                     return claims
             except json.JSONDecodeError:
                 pass
@@ -721,63 +723,27 @@ def aggregate_claims_by_topic(claims: list[Claim]) -> dict[str, list[Claim]]:
 
 
 def normalize_topic_name(topic: str) -> str:
-    """Normalize topic names for consistent grouping."""
-    # Remove common prefixes/suffixes
+    """Normalize topic names for consistent grouping.
+    
+    Performs basic cleanup without domain-specific mappings.
+    The extraction prompt now guides the model to choose broad topics upfront.
+    """
+    # Remove common prefixes/suffixes that add no information
     topic = topic.strip()
-    topic = re.sub(r'^(JavaScript\s+)?', '', topic, flags=re.IGNORECASE)
-    topic = re.sub(r'\s+in\s+JavaScript$', '', topic, flags=re.IGNORECASE)
-
-    # Title case
+    
+    # Remove "Introduction to", "Basics of", etc.
+    topic = re.sub(r'^(Introduction to|Basics of|Overview of|Guide to)\s+', '', topic, flags=re.IGNORECASE)
+    
+    # Remove trailing qualifiers
+    topic = re.sub(r'\s+(Basics|Overview|Introduction|Guide)$', '', topic, flags=re.IGNORECASE)
+    
+    # Title case for consistency
     topic = topic.title()
-    lower = topic.lower()
-
-    # Map detailed topics to broad categories
-    # Each tuple: (keywords to match, normalized topic name)
-    # Note: word boundary matching is used, so include both singular and plural forms
-    topic_mappings = [
-        # Closures (separate from Functions - it's a key concept)
-        (['closure', 'closures', 'lexical scope', 'free variable'], 'Closures'),
-        # Combinators & Decorators (FP patterns)
-        (['combinator', 'combinators', 'decorator',
-         'decorators'], 'Combinators And Decorators'),
-        # Functional programming (check before Functions due to 'function' substring)
-        (['functional programming', 'pure function', 'pure functions', 'immutable', 'compose',
-         'curry', 'currying', 'partial application'], 'Functional Programming'),
-        # Functions
-        (['function', 'functions', 'arrow', 'call', 'apply',
-         'bind', 'higher-order', 'higher order'], 'Functions'),
-        # Arrays
-        (['array', 'arrays', 'destructur', 'spread', 'rest parameter'], 'Arrays'),
-        # Iterators/Generators
-        (['iterator', 'iterators', 'generator', 'generators',
-         'iterable', 'iterables', 'yield'], 'Iterators And Generators'),
-        # Objects
-        (['object', 'objects', 'property', 'prototype', 'method'], 'Objects'),
-        # Classes
-        (['class', 'classes', 'inherit', 'extends', 'constructor'], 'Classes'),
-        # Recursion
-        (['recursion', 'recursive', 'tail call', 'trampoline'], 'Recursion'),
-        # Data types
-        (['type', 'types', 'value', 'reference', 'number', 'string',
-         'undefined', 'null', 'boolean', 'primitive'], 'Data Types'),
-        # Control flow
-        (['control flow', 'loop', 'loops', 'conditional', 'if statement',
-         'while', 'for loop'], 'Control Flow'),
-        # ES6 features
-        (['es6', 'es2015', 'ecmascript', 'let keyword',
-         'const keyword', 'block scope'], 'ES6 Features'),
-        # Collections
-        (['collection', 'collections', 'map', 'set',
-         'weakmap', 'weakset'], 'Collections'),
-        # Patterns
-        (['pattern', 'patterns', 'mixin', 'mixins', 'module', 'modules'], 'Patterns'),
-    ]
-
-    for keywords, normalized in topic_mappings:
-        if any(re.search(r'\b' + re.escape(kw) + r'\b', lower) for kw in keywords):
-            return normalized
-
-    return topic
+    
+    # Collapse multiple spaces
+    topic = re.sub(r'\s+', ' ', topic)
+    
+    return topic.strip()
 
 
 def is_similar_claim(a: Claim, b: Claim) -> bool:
@@ -1232,6 +1198,25 @@ def _infer_namespace(slug: str) -> str | None:
     return None
 
 
+def page_slug_for_topic(topic: str, source_slug: str) -> str:
+    """Return the canonical synthesized-page slug for a source topic."""
+    return normalize_candidate_name(topic, _infer_namespace(source_slug))
+
+
+def page_belongs_to_source(page_path: Path, source_slug: str) -> bool:
+    """Return True when an existing wiki page already cites this source."""
+    if not page_path.exists():
+        return False
+    try:
+        sources = parse_frontmatter(page_path).data.get("sources")
+    except Exception:
+        return False
+    if not isinstance(sources, list):
+        return False
+    expected = f"../sources/{source_slug}.md"
+    return expected in {str(source) for source in sources}
+
+
 def create_source_page_from_topics(
     slug: str,
     state: ExtractionState,
@@ -1289,13 +1274,12 @@ def create_source_page_from_topics(
     major_concepts_rows = []
     for topic in sorted(viable_topics.keys()):
         claims = viable_topics[topic]
-        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
-        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_slug = page_slug_for_topic(topic, slug)
         page_path = f"../concepts/{page_slug}.md"
         full_page_path = Path(f"wiki/concepts/{page_slug}.md")
 
         # Determine status
-        if full_page_path.exists():
+        if page_belongs_to_source(full_page_path, slug):
             status = "draft"  # Will be updated after validation
         else:
             status = "not_started"
@@ -1322,7 +1306,9 @@ def create_source_page_from_topics(
     for topic, claims in sorted(all_topics.items(), key=lambda x: -len(x[1])):
         sections = count_sections_for_topic(claims, locator_map)
         if len(claims) >= min_claims_per_topic:
-            status = "synthesized" if topic in viable_topics else "deferred"
+            page_slug = page_slug_for_topic(topic, slug)
+            page_path = Path(f"wiki/concepts/{page_slug}.md")
+            status = "created" if page_belongs_to_source(page_path, slug) else "not_started"
         else:
             status = "deferred"
 
@@ -1359,10 +1345,9 @@ def create_source_page_from_topics(
     # Build Concept Pages Generated list
     concept_pages = []
     for topic in sorted(viable_topics.keys()):
-        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
-        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_slug = page_slug_for_topic(topic, slug)
         page_path = Path(f"wiki/concepts/{page_slug}.md")
-        if page_path.exists():
+        if page_belongs_to_source(page_path, slug):
             concept_pages.append(f"- [{topic}](../concepts/{page_slug}.md)")
 
     concept_pages_list = "\n".join(
@@ -1375,11 +1360,10 @@ def create_source_page_from_topics(
     candidate_rows = []
     for topic in sorted(viable_topics.keys()):
         claims = viable_topics[topic]
-        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
-        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_slug = page_slug_for_topic(topic, slug)
         page_path = Path(f"wiki/concepts/{page_slug}.md")
 
-        if not page_path.exists():
+        if not page_belongs_to_source(page_path, slug):
             # Determine priority
             count = len(claims)
             if count >= 8:
@@ -1440,8 +1424,7 @@ def create_source_page_from_topics(
     related_rows = []
     for topic in sorted(viable_topics.keys()):
         claims = viable_topics[topic]
-        page_slug = topic.lower().replace(' ', '-').replace('/', '-')
-        page_slug = re.sub(r'[^a-z0-9-]', '', page_slug)
+        page_slug = page_slug_for_topic(topic, slug)
         page_path = f"../concepts/{page_slug}.md"
         full_page_path = Path(f"wiki/concepts/{page_slug}.md")
 
@@ -1464,7 +1447,7 @@ def create_source_page_from_topics(
             sorted(keywords)[:3]) if keywords else 'various concepts'
         evidence_basis = f"{count} claims covering {keyword_summary}"
 
-        if full_page_path.exists():
+        if page_belongs_to_source(full_page_path, slug):
             related_rows.append(
                 f"| {topic} | [{page_path}]({page_path}) | Deep extraction | {priority} | {evidence_basis} | created |"
             )
@@ -1518,11 +1501,11 @@ Extracted {len(state.claims)} claims from {len(state.processed_chunks)} chunks, 
 
 {high_signal_table}
 
+## Major concepts
+
 ### Extracted Topics
 
 {extracted_topics_table}
-
-## Major concepts
 
 {major_concepts_table}
 
@@ -1662,7 +1645,7 @@ def run_deep_extraction(
 
     # Initialize backend
     backend_name = backend_name or os.environ.get(
-        "WIKI_MODEL_BACKEND", "bedrock")
+        "WIKI_MODEL_BACKEND", "codex")
     print(f"\nUsing backend: {backend_name}")
 
     try:
@@ -1875,7 +1858,7 @@ def main() -> int:
     parser.add_argument("--overlap", type=int, default=30,
                         help="Overlap between chunks for line-based chunking (default: 30)")
     parser.add_argument("--backend", type=str, default="",
-                        help="Model backend (default: WIKI_MODEL_BACKEND or bedrock)")
+                        help="Model backend (default: WIKI_MODEL_BACKEND or codex)")
     parser.add_argument("--timeout", type=int, default=120,
                         help="Timeout per chunk in seconds")
     parser.add_argument("--skip-synthesis", action="store_true",

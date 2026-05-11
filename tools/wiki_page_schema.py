@@ -227,8 +227,7 @@ def validate_schema_structured(
         elif evidence_bank:
             # Validate evidence IDs exist in bank
             for eid in claim.evidence_ids:
-                eid_upper = eid.upper()
-                if eid_upper not in evidence_bank.items:
+                if eid not in evidence_bank.items and eid.upper() not in evidence_bank.items:
                     fail(failures, FailureCategory.INVALID_EVIDENCE_ID, page_path,
                          f"claim {i} references unknown evidence ID: {eid}",
                          row=i, field=f"claims[{i}].evidence_ids", value=eid,
@@ -328,11 +327,11 @@ def validate_rendered_page(
 
     # Check claims table structure if claims exist
     if page.claims:
-        # Should have 4-column header
-        table_header = "| Claim | Evidence | Locator | Source |"
+        # Should have canonical 2-column ID header
+        table_header = "| Claim | Evidence |"
         if table_header not in markdown:
             fail(failures, FailureCategory.MALFORMED_TABLE, page_path,
-                 "claims table missing expected 4-column header",
+                 "claims table missing expected 2-column ID header",
                  field="claims_table",
                  fix_hint="RENDERER BUG: render_claims_table() header wrong")
 
@@ -345,15 +344,6 @@ def validate_rendered_page(
                      f"claim {i} not found in rendered output",
                      row=i, field=f"claims[{i}]",
                      fix_hint=f"RENDERER BUG: claim {i} not rendered")
-
-    # Check evidence IDs were expanded (not left as [E01])
-    evidence_id_pattern = r'\[E\d{2}\]'
-    unexpanded = re.findall(evidence_id_pattern, markdown)
-    if unexpanded:
-        fail(failures, FailureCategory.INVALID_EVIDENCE_ID, page_path,
-             f"rendered page contains unexpanded evidence IDs: {unexpanded[:3]}",
-             field="evidence_ids",
-             fix_hint=f"RENDERER BUG: {len(unexpanded)} evidence IDs not expanded")
 
     return failures
 
@@ -414,41 +404,28 @@ def render_claims_table(
     evidence_bank: "EvidenceBankResult | None",
     slug: str,
 ) -> str:
-    """Render claims as a 4-column evidence table.
-
-    Each claim-evidence pair gets its own row. If a claim has multiple
-    evidence IDs, it's expanded into multiple rows.
-    """
+    """Render claims as the canonical 2-column evidence-ID table."""
     if not claims:
         return "No claims."
 
-    lines = ["| Claim | Evidence | Locator | Source |"]
-    lines.append("| --- | --- | --- | --- |")
-
-    source_cell = f"[Source](../sources/{slug}.md)" if slug else ""
+    lines = ["| Claim | Evidence |"]
+    lines.append("| --- | --- |")
 
     for claim in claims:
         claim_text = make_table_safe(claim.claim)
 
         if not claim.evidence_ids:
-            # Claim without evidence
-            lines.append(f"| {claim_text} | N/A | N/A | {source_cell} |")
+            lines.append(f"| {claim_text} | N/A |")
             continue
 
-        # One row per evidence ID
+        stable_ids = []
         for eid in claim.evidence_ids:
-            eid_upper = eid.upper()
-            if evidence_bank and eid_upper in evidence_bank.items:
-                item = evidence_bank.items[eid_upper]
-                # Use exact_text (full text) not text (truncated display_text)
-                evidence_cell = f'"{make_table_safe(item.exact_text)}"'
-                locator_cell = f"`{item.locator}`"
-            else:
-                evidence_cell = f"[{eid}: not found]"
-                locator_cell = "N/A"
-
-            lines.append(
-                f"| {claim_text} | {evidence_cell} | {locator_cell} | {source_cell} |")
+            item = None
+            if evidence_bank:
+                item = evidence_bank.items.get(eid) or evidence_bank.items.get(eid.upper())
+            stable_ids.append(item.id if item else eid)
+        evidence_cell = ", ".join(f"[{eid}]" for eid in stable_ids)
+        lines.append(f"| {claim_text} | {evidence_cell} |")
 
     return "\n".join(lines)
 
@@ -490,9 +467,8 @@ def compute_source_ranges(
     locators = set()
     for claim in claims:
         for eid in claim.evidence_ids:
-            eid_upper = eid.upper()
-            if eid_upper in evidence_bank.items:
-                item = evidence_bank.items[eid_upper]
+            item = evidence_bank.items.get(eid) or evidence_bank.items.get(eid.upper())
+            if item:
                 locators.add(item.locator)
 
     # Convert locators to source_ranges format

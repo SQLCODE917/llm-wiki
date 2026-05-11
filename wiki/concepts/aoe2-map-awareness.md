@@ -3,24 +3,37 @@ title: AoE2 Map Awareness
 type: concept
 tags: []
 status: draft
-last_updated: 2026-05-02
-sources: [../sources/aoe2-basics.md]
+last_updated: 2026-05-11
+sources:
+  - ../sources/aoe2-basics.md
 ---
 
 # AoE2 Map Awareness
 
-Map awareness refers to a player's understanding of the current state of the map and the strategic implications of terrain and resource distribution.
+Map awareness is a fundamental gameplay concept that involves staying alert to what's happening on the map during play.
 
 ## Source-backed details
 
-| Claim | Evidence | Locator | Source |
-|---|---|---|---|
-| Map awareness means being aware of what is going on in the map. | "Map awareness, what is this? It quite simply means being aware of what is going on in the map." | `normalized:L471` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Different maps have different resource distributions and strategic considerations. | "While something like Four Lakes is more of a land map with extra fish eco." | `normalized:L632` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Players need to learn specific strategies for playing on different maps. | "Also you need to learn map specifically how to play it and what civs are good for the map." | `normalized:L644` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Map-specific builds and strategies are common in Age of Empires II. | "Some of the builds are even map specific, not every mixed map plays the start even the same way." | `normalized:L634` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
-| Playing aggression in feudal age is recommended on many maps. | "In general it is smart to play some aggression in feudal age, unless the map conditions do not allow it." | `normalized:L687` | [Noobs guide for AoE2](../sources/aoe2-basics.md) |
+| Claim | Evidence |
+| --- | --- |
+| Map awareness means being conscious of ongoing events on the map. | [aoe2-basics:claim_aoe2-basics_c004_16ea7b9b] |
+| Players often miss important events because they are focused on micro-management. | [aoe2-basics:claim_aoe2-basics_c004_1d8dfb23] |
+| Regularly checking the minimap helps players avoid missing critical information. | [aoe2-basics:claim_aoe2-basics_c004_22b71e6e] |
+| Map awareness can be used strategically to launch surprise attacks. | [aoe2-basics:claim_aoe2-basics_c004_008419fd] |
 
 ## Source pages
 
-- [Noobs guide for AoE2](../sources/aoe2-basics.md)
+- [Source: aoe2-basics](../sources/aoe2-basics.md)
+
+## Related pages
+
+- [AoE2 Military Units](../concepts/aoe2-military-units.md)
+
+## Candidate pages
+
+- AoE2 Building Placement
+- AoE2 Economy Balance
+- AoE2 Economy Management
+- AoE2 Military Strategy
+- AoE2 Unit Interactions
+- AoE2 Uptimes

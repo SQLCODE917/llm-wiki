@@ -5,6 +5,8 @@ import argparse
 import sys
 from pathlib import Path
 
+from wiki_common import parse_frontmatter
+
 
 CREATED = "created"
 NOT_CREATED = "not created yet"
@@ -79,11 +81,23 @@ def normalize_related_row(source_path: Path, line: str) -> str | None:
         return None
 
     title = clean_cell_title(title_cell)
-    target_exists = (source_path.parent / target).resolve().exists()
+    target_path = (source_path.parent / target).resolve()
     extras = cells[2:-1]
-    if target_exists:
+    if page_belongs_to_source(target_path, source_path.stem):
         return format_related_row(title, f"[{target}]({target})", extras, CREATED)
     return format_related_row(title, f"`{target}`", extras, NOT_CREATED)
+
+
+def page_belongs_to_source(page_path: Path, source_slug: str) -> bool:
+    if not page_path.exists():
+        return False
+    try:
+        sources = parse_frontmatter(page_path).data.get("sources")
+    except Exception:
+        return False
+    if not isinstance(sources, list):
+        return False
+    return f"../sources/{source_slug}.md" in {str(source) for source in sources}
 
 
 def format_related_row(title: str, path_cell: str, extras: list[str], status: str) -> str:

@@ -36,13 +36,13 @@ Every synthesized page should include:
 ```md
 | Claim                                     | Evidence |
 | ----------------------------------------- | -------- |
-| Your synthesized claim in your own words. | [E01]    |
+| Your synthesized claim in your own words. | [source-slug:claim_abc123] |
 ```
 
 5. Cross-links to related pages
 6. `## Source pages` section linking back to source
 
-**IMPORTANT**: You cite evidence by ID (e.g., `[E01]`). The full evidence table is rendered automatically by post-processing. Do NOT write evidence text or locators.
+**IMPORTANT**: You cite evidence by stable ID copied exactly from the evidence bank. Do NOT write evidence text or locators.
 
 Type-specific requirements:
 
@@ -52,7 +52,7 @@ Type-specific requirements:
 ## Evidence table rules
 
 1. **Claim cells**: Synthesize in YOUR OWN WORDS what the source teaches
-2. **Evidence cells**: Cite by ID only, e.g., `[E01]`, `[E02]`
+2. **Evidence cells**: Cite by stable ID only, e.g., `[source-slug:claim_abc123]`
 3. Evidence IDs reference the evidence bank provided in the prompt
 4. Minimum 5 rows per page
 
@@ -87,8 +87,8 @@ Brief definition.
 
 | Claim | Evidence |
 | ----- | -------- |
-| First key insight synthesized from the source. | [E01] |
-| Second key insight in your own words. | [E02] |
+| First key insight synthesized from the source. | [source-slug:claim_abc123] |
+| Second key insight in your own words. | [source-slug:claim_def456] |
 
 ## Source pages
 

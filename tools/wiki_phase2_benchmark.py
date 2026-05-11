@@ -15,6 +15,7 @@ from pathlib import Path
 from wiki_common import code_paths, parse_frontmatter, section
 from wiki_evidence_bank import source_chunks, snippets_for_candidate
 from wiki_fill_evidence import get_evidence_for_locator
+from wiki_evidence_resolver import stable_evidence_id
 from wiki_evidence_ranges import (
     SourceRange,
     format_ranges,
@@ -54,6 +55,7 @@ class RelatedCandidate:
     path: str
     priority: str
     index: int
+    title: str | None = None
     group: str | None = None
     evidence_basis: str | None = None
 
@@ -484,10 +486,10 @@ Fix the failures mechanically:
 - If any other synthesized pages were created for this source, delete them and return their source-page `Related pages` rows to `not created yet`.
 - Each synthesized page must have correct frontmatter, a body link to the source page, and a source page section.
 - Each synthesized page must have exactly one `## Source-backed details` section and it must contain substantial source-backed content.
-- Each synthesized page must include a `## Source-backed details` evidence table with header `| Claim | Evidence | Locator | Source |`.
+- Each synthesized page must include a `## Source-backed details` evidence table with header `| Claim | Evidence |`.
 - Each evidence cell must contain a short exact excerpt from the normalized source, not a paraphrase.
 - Each locator cell must use `normalized:L12` or `normalized:L12-L14` from the evidence bank, and the evidence excerpt must appear inside that cited line range.
-- Each selected page's evidence locators must stay inside the allowed source range shown in the evidence bank, unless the page declares a narrower/more exact `source_ranges` frontmatter value.
+- Each selected page's evidence IDs must come from the evidence bank for that page.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - Each claim cell must synthesize the evidence in the page's own words; do not copy the evidence sentence into the claim cell.
 - SYNTHESIS means expressing the SAME MEANING as the evidence using DIFFERENT WORDS. Example:
@@ -629,7 +631,8 @@ def related_candidate_rows(markdown: str) -> list[RelatedCandidate]:
         ).lower() if len(cells) == 5 else "should create"
         evidence_basis = cells[4].strip() if len(
             cells) == 6 else cells[3].strip() if len(cells) == 5 else None
-        rows.append(RelatedCandidate(path=target, group=group,
+        title = clean_candidate_title(cells[0])
+        rows.append(RelatedCandidate(path=target, title=title, group=group,
                     priority=priority, evidence_basis=evidence_basis, index=index))
     return rows
 
@@ -734,18 +737,27 @@ def build_evidence_bank(
         matched_claims = None
         if extraction_claims:
             candidate_title_text = candidate_title(candidate) or ""
-            # Match by topic name (case-insensitive comparison)
+            title_aliases = topic_match_aliases(candidate_title_text, slug)
+            # Match by topic name (case-insensitive comparison), allowing the
+            # page title to carry a source disambiguator such as "AoE2".
             matched_claims = [
                 c for c in extraction_claims
-                if c.get("topic", "").lower() == candidate_title_text.lower()
+                if normalize_topic_key(c.get("topic", "")) in title_aliases
             ]
+            if not matched_claims:
+                print(
+                    "  DEBUG: matched 0 extraction claims for "
+                    f"{candidate_path(candidate)!r} using candidate title "
+                    f"{candidate_title_text!r} aliases={sorted(title_aliases)!r}",
+                    file=sys.stderr,
+                )
 
         sections.append(f"### {query}")
         if ranges and not use_ids:
             sections.append(
                 f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
 
-        evidence_items: list[tuple[str, str]] = []  # (locator, text)
+        evidence_items: list[tuple[str, str, str]] = []  # (locator, text, claim_id)
 
         if matched_claims:
             # Extract evidence directly from source at locator (guaranteed match)
@@ -760,8 +772,8 @@ def build_evidence_bank(
                     if evidence:
                         # Normalize to always-range format
                         evidence_items.append(
-                            (normalize_locator(locator), evidence))
-        else:
+                            (normalize_locator(locator), evidence, claim.get("claim_id", "")))
+        elif not use_ids:
             # Fall back to re-extracting snippets (less accurate)
             if chunks is None:
                 chunks = source_chunks(source_text)
@@ -772,14 +784,17 @@ def build_evidence_bank(
             for snippet in snippets:
                 # Normalize to always-range format (source_chunks already does this)
                 evidence_items.append(
-                    (normalize_locator(snippet.locator), snippet.text))
+                    (normalize_locator(snippet.locator), snippet.text, ""))
 
         if not evidence_items:
             sections.append("- not covered in sources")
         elif use_ids:
             # Format with IDs
-            for locator, text in evidence_items:
-                eid = f"E{evidence_id:02d}"
+            for locator, text, claim_id in evidence_items:
+                if claim_id:
+                    eid = stable_evidence_id(slug, claim_id)
+                else:
+                    eid = f"{slug}:snippet_{evidence_id:02d}"
                 evidence_id += 1
 
                 # Extract line number from locator for context
@@ -841,7 +856,7 @@ def build_evidence_bank(
                 by_locator[locator] = item
         else:
             # Legacy format
-            for locator, text in evidence_items:
+            for locator, text, _claim_id in evidence_items:
                 sections.append(f"- `{locator}` - {text}")
 
         sections.append("")
@@ -875,7 +890,35 @@ def candidate_path(candidate: str | RelatedCandidate) -> str:
 def candidate_title(candidate: str | RelatedCandidate) -> str | None:
     if not isinstance(candidate, RelatedCandidate):
         return None
+    if candidate.title:
+        return candidate.title
     return Path(candidate.path).stem.replace("-", " ").title()
+
+
+def normalize_topic_key(value: str) -> str:
+    return re.sub(r"\s+", " ", value.strip().lower())
+
+
+def topic_match_aliases(candidate_title_text: str, slug: str) -> set[str]:
+    aliases = {normalize_topic_key(candidate_title_text)}
+    slug_parts = [part for part in re.split(r"[-_\s]+", slug) if part]
+    if slug_parts:
+        prefix = slug_parts[0]
+        title_key = normalize_topic_key(candidate_title_text)
+        aliases.add(re.sub(rf"^{re.escape(prefix)}\s+", "", title_key).strip())
+        if prefix == "aoe2":
+            aliases.add(re.sub(r"^age of empires 2\s+", "", title_key).strip())
+    return {alias for alias in aliases if alias}
+
+
+def clean_candidate_title(cell: str) -> str | None:
+    stripped = cell.strip()
+    match = re.fullmatch(r"\[([^\]]+)\]\([^)]+\.md\)", stripped)
+    if match:
+        stripped = match.group(1).strip()
+    if stripped.startswith("`") and stripped.endswith("`") and stripped.count("`") == 2:
+        stripped = stripped[1:-1].strip()
+    return stripped or None
 
 
 def chunks_in_ranges(chunks, ranges: list[SourceRange]):

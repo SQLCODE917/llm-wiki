@@ -6,115 +6,70 @@
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
-    "wiki:analyses/2026-05-03-aoe2-water-and-mixed-map-strategy": {
-      "type": "analysis",
-      "path": "wiki/analyses/2026-05-03-aoe2-water-and-mixed-map-strategy.md",
-      "description": "An AoE2 player should treat water maps and mixed maps as build-driven, execution-heavy map types, but adapt the focus differently.",
+    "wiki:concepts/aoe2-building-placement": {
+      "type": "concept",
+      "path": "wiki/concepts/aoe2-building-placement.md",
+      "description": "Understanding effective building placement is crucial for maximizing your base's efficiency and defensive capabilities in Age of Empires II.",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
-        "wiki:concepts/aoe2-army-composition",
-        "wiki:concepts/aoe2-build-orders",
-        "wiki:concepts/aoe2-decision-making",
-        "wiki:concepts/aoe2-economy-balance",
         "wiki:concepts/aoe2-map-awareness",
-        "wiki:concepts/aoe2-mixed-maps",
-        "wiki:concepts/aoe2-resource-management",
-        "wiki:concepts/aoe2-water-maps",
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:concepts/aoe2-army-composition": {
-      "type": "concept",
-      "path": "wiki/concepts/aoe2-army-composition.md",
-      "description": "Army composition refers to the selection and arrangement of different unit types to create an effective fighting force.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:concepts/aoe2-build-orders": {
-      "type": "concept",
-      "path": "wiki/concepts/aoe2-build-orders.md",
-      "description": "A build order is a sequence of actions that guides players to efficiently reach specific ages in the game.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:concepts/aoe2-decision-making": {
-      "type": "concept",
-      "path": "wiki/concepts/aoe2-decision-making.md",
-      "description": "Decision making in Age of Empires II is the use of available and missing information to choose actions in a game state where plans, unit use, attention, and timing can change the\u2026",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:concepts/aoe2-army-composition",
-        "wiki:concepts/aoe2-map-awareness",
-        "wiki:concepts/aoe2-opening-interactions",
-        "wiki:procedures/aoe2-game-plans",
+        "wiki:concepts/aoe2-military-units",
+        "wiki:concepts/aoe2-unit-interactions",
+        "wiki:concepts/aoe2-uptimes",
         "wiki:sources/aoe2-basics"
       ]
     },
     "wiki:concepts/aoe2-economy-balance": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-economy-balance.md",
-      "description": "This balance of economy while producing and using your army is difficult to perfect.",
+      "description": "Balancing resource accumulation is key to efficient gameplay in Age of Empires II. Proper management prevents waste while ensuring sufficient resources for progression.",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:concepts/aoe2-lanchesters-law": {
-      "type": "concept",
-      "path": "wiki/concepts/aoe2-lanchesters-law.md",
-      "description": "Lanchester's Law is a mathematical model that describes combat effectiveness in military contexts, which applies to unit interactions in Age of Empires II.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
+        "wiki:concepts/aoe2-building-placement",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-military-units",
+        "wiki:concepts/aoe2-unit-interactions",
+        "wiki:concepts/aoe2-uptimes",
         "wiki:sources/aoe2-basics"
       ]
     },
     "wiki:concepts/aoe2-map-awareness": {
       "type": "concept",
       "path": "wiki/concepts/aoe2-map-awareness.md",
-      "description": "Map awareness refers to a player's understanding of the current state of the map and the strategic implications of terrain and resource distribution.",
+      "description": "Map awareness is a fundamental gameplay concept that involves staying alert to what's happening on the map during play.",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
+        "wiki:concepts/aoe2-military-units",
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/aoe2-mixed-maps": {
+    "wiki:concepts/aoe2-military-strategy": {
       "type": "concept",
-      "path": "wiki/concepts/aoe2-mixed-maps.md",
-      "description": "Mixed maps in Age of Empires II combine water and land, so players must manage fish economy, land army, water control, and map-specific build orders at the same time.",
+      "path": "wiki/concepts/aoe2-military-strategy.md",
+      "description": "Military strategy in Age of Empires II encompasses the principles of unit combat effectiveness, force multiplication, and tactical positioning that determine success in battles.",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
-        "wiki:concepts/aoe2-build-orders",
+        "wiki:concepts/aoe2-building-placement",
         "wiki:concepts/aoe2-economy-balance",
-        "wiki:concepts/aoe2-resource-management",
-        "wiki:concepts/aoe2-water-maps",
-        "wiki:procedures/aoe2-game-plans",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-military-units",
+        "wiki:concepts/aoe2-unit-interactions",
+        "wiki:concepts/aoe2-uptimes",
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/aoe2-opening-interactions": {
+    "wiki:concepts/aoe2-military-units": {
       "type": "concept",
-      "path": "wiki/concepts/aoe2-opening-interactions.md",
-      "description": "Opening interactions in Age of Empires II refer to how players respond to each other during the early stages of a match, particularly in terms of resource gathering and unit deplo\u2026",
+      "path": "wiki/concepts/aoe2-military-units.md",
+      "description": "AoE2 Military Units",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
@@ -122,55 +77,30 @@
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/aoe2-resource-management": {
+    "wiki:concepts/aoe2-unit-interactions": {
       "type": "concept",
-      "path": "wiki/concepts/aoe2-resource-management.md",
-      "description": "Resource management in Age of Empires II is the ongoing work of turning income into economy growth, army production, age-up resources, and timely retasking instead of letting the\u2026",
+      "path": "wiki/concepts/aoe2-unit-interactions.md",
+      "description": "Understanding how different units interact with each other is crucial for effective gameplay. Some unit matchups are straightforward, while others require strategic planning and s\u2026",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
-        "wiki:concepts/aoe2-build-orders",
-        "wiki:concepts/aoe2-economy-balance",
-        "wiki:procedures/aoe2-scouting-techniques",
-        "wiki:references/aoe2-economy-upgrades",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-military-units",
         "wiki:sources/aoe2-basics"
       ]
     },
-    "wiki:concepts/aoe2-team-play-strategies": {
+    "wiki:concepts/aoe2-uptimes": {
       "type": "concept",
-      "path": "wiki/concepts/aoe2-team-play-strategies.md",
-      "description": "Team play strategies in Age of Empires II refer to coordinated tactics and approaches used by players working together in multiplayer matches.",
+      "path": "wiki/concepts/aoe2-uptimes.md",
+      "description": "Uptimes refer to the timing and efficiency of upgrading from one age to the next in Age of Empires II.",
       "sources": [
         "../sources/aoe2-basics.md"
       ],
       "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:concepts/aoe2-unit-counter-interactions": {
-      "type": "concept",
-      "path": "wiki/concepts/aoe2-unit-counter-interactions.md",
-      "description": "Unit counter interactions refer to how different units in Age of Empires II interact with each other in combat, particularly in terms of which units can effectively counter others.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:concepts/aoe2-water-maps": {
-      "type": "concept",
-      "path": "wiki/concepts/aoe2-water-maps.md",
-      "description": "Water maps in Age of Empires II are maps such as Islands and Team Islands where water control, transports, fishing economy, landings, and build execution shape the game.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:concepts/aoe2-build-orders",
-        "wiki:concepts/aoe2-resource-management",
-        "wiki:procedures/aoe2-game-plans",
-        "wiki:procedures/aoe2-scouting-techniques",
+        "wiki:concepts/aoe2-map-awareness",
+        "wiki:concepts/aoe2-military-units",
+        "wiki:concepts/aoe2-unit-interactions",
         "wiki:sources/aoe2-basics"
       ]
     },
@@ -311,78 +241,21 @@
         "wiki:sources/js-allonge"
       ]
     },
-    "wiki:procedures/aoe2-game-plans": {
-      "type": "procedure",
-      "path": "wiki/procedures/aoe2-game-plans.md",
-      "description": "A game plan in Age of Empires II is a strategic plan built from map generation, civilization power spikes, resource advantages, and the opponent's likely responses.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:concepts/aoe2-army-composition",
-        "wiki:concepts/aoe2-map-awareness",
-        "wiki:concepts/aoe2-opening-interactions",
-        "wiki:concepts/aoe2-resource-management",
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:procedures/aoe2-scouting-techniques": {
-      "type": "procedure",
-      "path": "wiki/procedures/aoe2-scouting-techniques.md",
-      "description": "Scouting in Age of Empires II is the process of using the scout and later map vision to identify resources, enemy activity, base layout, tech choices, and upgrades.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:references/aoe2-economy-upgrades": {
-      "type": "reference",
-      "path": "wiki/references/aoe2-economy-upgrades.md",
-      "description": "This reference page lists economy-upgrade facts from the AoE2 basics guide.",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
-    "wiki:references/aoe2-military-upgrades": {
-      "type": "reference",
-      "path": "wiki/references/aoe2-military-upgrades.md",
-      "description": "This reference page documents military upgrade facts from the source that affect Age of Empires II combat, especially archer, crossbow, bodkin, fletching, and knight armor interac\u2026",
-      "sources": [
-        "../sources/aoe2-basics.md"
-      ],
-      "depends_on": [
-        "wiki:sources/aoe2-basics"
-      ]
-    },
     "wiki:sources/aoe2-basics": {
       "type": "source",
       "path": "wiki/sources/aoe2-basics.md",
-      "description": "This document is an organized arrangement of gameplay concepts simplified and explained out. It is categorized and each category will be written in order from most important to th\u2026",
+      "description": "Summary: This document is an organized arrangement of gameplay concepts simplified and explained out. It will be categorized and each category will be written in order from most i\u2026",
       "sources": [
         "../../raw/imported/aoe2-basics/original.pdf"
       ],
       "depends_on": [
-        "wiki:concepts/aoe2-army-composition",
-        "wiki:concepts/aoe2-build-orders",
-        "wiki:concepts/aoe2-decision-making",
+        "wiki:concepts/aoe2-building-placement",
         "wiki:concepts/aoe2-economy-balance",
-        "wiki:concepts/aoe2-lanchesters-law",
         "wiki:concepts/aoe2-map-awareness",
-        "wiki:concepts/aoe2-mixed-maps",
-        "wiki:concepts/aoe2-opening-interactions",
-        "wiki:concepts/aoe2-resource-management",
-        "wiki:concepts/aoe2-team-play-strategies",
-        "wiki:concepts/aoe2-unit-counter-interactions",
-        "wiki:concepts/aoe2-water-maps",
-        "wiki:procedures/aoe2-game-plans",
-        "wiki:procedures/aoe2-scouting-techniques",
-        "wiki:references/aoe2-economy-upgrades",
-        "wiki:references/aoe2-military-upgrades"
+        "wiki:concepts/aoe2-military-strategy",
+        "wiki:concepts/aoe2-military-units",
+        "wiki:concepts/aoe2-unit-interactions",
+        "wiki:concepts/aoe2-uptimes"
       ]
     },
     "wiki:sources/compound-interest": {

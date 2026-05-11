@@ -49,6 +49,7 @@ from wiki_evidence_validator import (
     validate_evidence_location,
     is_weak_evidence,
 )
+from wiki_evidence_resolver import EvidenceResolver
 
 
 SYNTH_TYPES = {"concept", "entity", "procedure", "reference"}
@@ -518,6 +519,7 @@ def check_synthesized_page_structured(
                  fix_hint="Normalize Unicode characters to ASCII equivalents")
 
     fm = parse_frontmatter(page)
+    evidence_resolver = EvidenceResolver.for_source_page(source_path)
     for error in fm.errors:
         fail(failures, FailureCategory.FRONTMATTER_PARSE_ERROR, str(page),
              error,
@@ -571,6 +573,13 @@ def check_synthesized_page_structured(
              f"body must link back to {source_rel}",
              fix_hint=f"Add link to source page: [{source_rel}]({source_rel})")
 
+    details_section = section(fm.body, "## Source-backed details") if "## Source-backed details" in h2_headings(fm.body) else ""
+    id_backed_details = bool(
+        details_section
+        and evidence_resolver is not None
+        and evidence_details_use_resolved_ids(details_section, evidence_resolver)
+    )
+
     allowed_ranges: list[SourceRange] = []
     if evidence_source is not None:
         range_result = source_ranges_for_page(
@@ -586,7 +595,7 @@ def check_synthesized_page_structured(
                  fix_hint="Fix source_ranges in frontmatter or page title")
         if range_result.ranges and (require_evidence_range or range_result.declared):
             allowed_ranges = range_result.ranges
-        elif require_evidence_range and not range_result.ranges and not range_result.invalid:
+        elif require_evidence_range and not id_backed_details and not range_result.ranges and not range_result.invalid:
             fail(failures, FailureCategory.MISSING_SOURCE_RANGE, str(page),
                  "no allowed source range found; add frontmatter source_ranges or match the page title to a normalized source heading",
                  fix_hint="Add source_ranges to frontmatter or ensure title matches a source heading")
@@ -659,6 +668,7 @@ def check_synthesized_page_structured(
                 details,
                 min_evidence_rows,
                 evidence_source,
+                evidence_resolver,
                 related_scope,
                 allowed_ranges,
             )
@@ -670,8 +680,37 @@ def check_synthesized_page_structured(
              fix_hint="Add ## Source pages or ## Sources section")
 
     failures.extend(check_type_specific_sections_structured(
-        page, fm.body, page_type, evidence_source, related_scope, allowed_ranges))
+        page, fm.body, page_type, evidence_source, evidence_resolver, related_scope, allowed_ranges))
     return failures
+
+
+def evidence_details_use_resolved_ids(details: str, evidence_resolver: EvidenceResolver) -> bool:
+    """Return true when Source-backed details is the canonical ID-backed table.
+
+    Stable evidence IDs already resolve to precise source locators, so pages
+    using this format do not need an additional title-derived source range.
+    """
+    rows = table_rows(details)
+    header_index: int | None = None
+    for index, cells in enumerate(rows):
+        if [cell.strip().lower() for cell in cells] == ["claim", "evidence"]:
+            header_index = index
+            break
+    if header_index is None:
+        return False
+    data_row_count = 0
+    for cells in rows[header_index + 1:]:
+        if is_separator_row(cells):
+            continue
+        if len(cells) != 2:
+            return False
+        claim, evidence_ids = (cell.strip() for cell in cells)
+        if not claim and not evidence_ids:
+            continue
+        data_row_count += 1
+        if not evidence_resolver.resolve_cell(evidence_ids):
+            return False
+    return data_row_count > 0
 
 
 def check_synthesized_page(
@@ -734,6 +773,7 @@ def check_evidence_table_structured(
     details: str,
     min_evidence_rows: int,
     evidence_source: EvidenceSource | None,
+    evidence_resolver: EvidenceResolver | None,
     related_scope: RelatedScope | None,
     allowed_ranges: list[SourceRange],
 ) -> list[ValidationFailure]:
@@ -742,35 +782,65 @@ def check_evidence_table_structured(
     rows = table_rows(details)
     if len(rows) < 2:
         fail(failures, FailureCategory.MISSING_EVIDENCE_TABLE, str(page),
-             "Source-backed details must include a Claim/Evidence/Locator/Source table",
-             fix_hint="Add markdown table with | Claim | Evidence | Locator | Source | header")
+             "Source-backed details must include a Claim/Evidence table",
+             fix_hint="Add markdown table with | Claim | Evidence | header")
         failures.extend(diff_marker_failures_structured(page, details))
         return failures
 
     header_index: int | None = None
+    table_format: str | None = None
     for index, cells in enumerate(rows):
         normalized = [cell.strip().lower() for cell in cells]
         if normalized == ["claim", "evidence", "locator", "source"]:
             header_index = index
+            table_format = "expanded"
+            break
+        if normalized == ["claim", "evidence"]:
+            header_index = index
+            table_format = "ids"
             break
     if header_index is None:
         fail(failures, FailureCategory.EVIDENCE_TABLE_HEADER, str(page),
-             "evidence table header must be exactly | Claim | Evidence | Locator | Source |",
-             fix_hint="Use exact header: | Claim | Evidence | Locator | Source |")
+             "evidence table header must be exactly | Claim | Evidence |",
+             fix_hint="Use exact header: | Claim | Evidence |")
         return failures
 
     data_rows: list[tuple[str, str, str, str]] = []
     for cells in rows[header_index + 1:]:
         if is_separator_row(cells):
             continue
-        if len(cells) != 4:
-            fail(failures, FailureCategory.EVIDENCE_TABLE_STRUCTURE, str(page),
-                 "evidence table row must have exactly four cells",
-                 fix_hint="Each row needs: | claim | evidence | locator | source |")
-            continue
-        claim, evidence, locator, source = (cell.strip() for cell in cells)
-        if claim or evidence or locator or source:
-            data_rows.append((claim, evidence, locator, source))
+        if table_format == "expanded":
+            if len(cells) != 4:
+                fail(failures, FailureCategory.EVIDENCE_TABLE_STRUCTURE, str(page),
+                     "evidence table row must have exactly four cells",
+                     fix_hint="Each row needs: | claim | evidence | locator | source |")
+                continue
+            claim, evidence, locator, source = (cell.strip() for cell in cells)
+            if claim or evidence or locator or source:
+                data_rows.append((claim, evidence, locator, source))
+        else:
+            if len(cells) != 2:
+                fail(failures, FailureCategory.EVIDENCE_TABLE_STRUCTURE, str(page),
+                     "evidence table row must have exactly two cells",
+                     fix_hint="Each row needs: | claim | evidence-id |")
+                continue
+            claim, evidence_ids = (cell.strip() for cell in cells)
+            if not claim and not evidence_ids:
+                continue
+            if evidence_resolver is None:
+                fail(failures, FailureCategory.INVALID_EVIDENCE_ID, str(page),
+                     "cannot resolve evidence IDs because claims-normalized.json is missing",
+                     fix_hint="Run Phase 1 extraction before Phase 2 validation")
+                continue
+            resolved = evidence_resolver.resolve_cell(evidence_ids)
+            if not resolved:
+                fail(failures, FailureCategory.INVALID_EVIDENCE_ID, str(page),
+                     f"evidence row uses unknown evidence ID(s): {evidence_ids}",
+                     fix_hint="Use stable evidence IDs from the evidence bank")
+                continue
+            source_link = f"[Source](../sources/{evidence_resolver.slug}.md)"
+            for item in resolved:
+                data_rows.append((claim, f'"{item.evidence}"', f"`{item.locator}`", source_link))
 
     if len(data_rows) < min_evidence_rows:
         fail(failures, FailureCategory.TOO_FEW_CLAIMS, str(page),
@@ -856,7 +926,7 @@ def check_evidence_table_structured(
                      fix_hint=f"Suggested locator: {hint}" if validation_result.suggested_locator else hint)
             # pass = no failure recorded
 
-            if allowed_ranges:
+            if allowed_ranges and table_format != "ids":
                 if not locator_within_ranges(start, end, allowed_ranges):
                     # Check if within tolerance (off-by-one is common)
                     canonical_range = locator_within_tolerance(
@@ -902,7 +972,7 @@ def check_evidence_table(
     """Compatibility wrapper returning string failures."""
     structured = check_evidence_table_structured(
         page, source_path, details, min_evidence_rows,
-        evidence_source, related_scope, allowed_ranges,
+        evidence_source, EvidenceResolver.for_source_page(source_path), related_scope, allowed_ranges,
     )
     return [f"{f.page}: {f.message}" for f in structured]
 
@@ -931,6 +1001,7 @@ def check_type_specific_sections_structured(
     body: str,
     page_type: object,
     evidence_source: EvidenceSource | None,
+    evidence_resolver: EvidenceResolver | None,
     related_scope: RelatedScope | None,
     allowed_ranges: list[SourceRange],
 ) -> list[ValidationFailure]:
@@ -962,7 +1033,7 @@ def check_type_specific_sections_structured(
                  fix_hint="Add at least 2 data rows to Reference data table")
         else:
             failures.extend(check_reference_data_table_structured(
-                page, reference_data, evidence_source, related_scope, allowed_ranges))
+                page, reference_data, evidence_source, evidence_resolver, related_scope, allowed_ranges))
     return failures
 
 
@@ -976,7 +1047,7 @@ def check_type_specific_sections(
 ) -> list[str]:
     """Compatibility wrapper returning string failures."""
     structured = check_type_specific_sections_structured(
-        page, body, page_type, evidence_source, related_scope, allowed_ranges,
+        page, body, page_type, evidence_source, None, related_scope, allowed_ranges,
     )
     return [f"{f.page}: {f.message}" for f in structured]
 
@@ -985,6 +1056,7 @@ def check_reference_data_table_structured(
     page: Path,
     markdown: str,
     evidence_source: EvidenceSource | None,
+    evidence_resolver: EvidenceResolver | None,
     related_scope: RelatedScope | None,
     allowed_ranges: list[SourceRange],
 ) -> list[ValidationFailure]:
@@ -998,14 +1070,14 @@ def check_reference_data_table_structured(
     if header_index is None:
         return failures
     header = [cell.strip().lower() for cell in rows[header_index]]
-    if "evidence" not in header or "locator" not in header:
+    if "evidence" not in header:
         fail(failures, FailureCategory.REFERENCE_TABLE_STRUCTURE, str(page),
-             "Reference data table must include Evidence and Locator columns",
+             "Reference data table must include an Evidence column",
              field="Reference data",
-             fix_hint="Add Evidence and Locator columns to Reference data table")
+             fix_hint="Add an Evidence column with stable evidence IDs")
         return failures
     evidence_index = header.index("evidence")
-    locator_index = header.index("locator")
+    locator_index = header.index("locator") if "locator" in header else None
     source_index = header.index("source") if "source" in header else None
     seen_facts: dict[str, int] = {}
     for row_number, row in enumerate(rows[header_index + 1:], start=1):
@@ -1022,9 +1094,25 @@ def check_reference_data_table_structured(
             if index not in {evidence_index, locator_index, source_index}
         )
         supported_fact_text = supported_fact_cell_text(
-            header, row, evidence_index, locator_index, source_index)
+            header, row, evidence_index, locator_index if locator_index is not None else -1, source_index)
         evidence = clean_evidence_excerpt(row[evidence_index])
-        locator = row[locator_index]
+        locator = row[locator_index] if locator_index is not None else ""
+        if locator_index is None:
+            if evidence_resolver is None:
+                fail(failures, FailureCategory.INVALID_EVIDENCE_ID, str(page),
+                     f"Reference data row {row_number} cannot resolve evidence ID(s): {row[evidence_index]}",
+                     row=row_number,
+                     fix_hint="Use stable evidence IDs from claims-normalized.json")
+                continue
+            resolved = evidence_resolver.resolve_cell(row[evidence_index])
+            if not resolved:
+                fail(failures, FailureCategory.INVALID_EVIDENCE_ID, str(page),
+                     f"Reference data row {row_number} uses unknown evidence ID(s): {row[evidence_index]}",
+                     row=row_number,
+                     fix_hint="Use stable evidence IDs from the evidence bank")
+                continue
+            evidence = clean_evidence_excerpt(resolved[0].evidence)
+            locator = resolved[0].locator
         if any(re.search(pattern, fact_text, flags=re.IGNORECASE) for pattern in WEAK_CLAIM_PATTERNS):
             severity = weak_claim_severity(fact_text)
             if severity == "fail":
@@ -1120,7 +1208,7 @@ def check_reference_data_table(
 ) -> list[str]:
     """Compatibility wrapper returning string failures."""
     structured = check_reference_data_table_structured(
-        page, markdown, evidence_source, related_scope, allowed_ranges,
+        page, markdown, evidence_source, None, related_scope, allowed_ranges,
     )
     return [f"{f.page}: {f.message}" for f in structured]
 

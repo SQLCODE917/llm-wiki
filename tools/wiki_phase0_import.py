@@ -184,9 +184,16 @@ def planned_actions(source: Path, imported_file: Path, normalized_dir: Path, sou
         actions.append(
             f"copy: {source.as_posix()} -> {(normalized_dir / 'source.md').as_posix()}")
     else:
-        command = " ".join(marker_command(
-            args.marker_bin, source, normalized_dir))
-        actions.append(f"run: TORCH_DEVICE={args.torch_device} {command}")
+        if args.pdf_extractor == "marker":
+            command = " ".join(marker_command(
+                args.marker_bin, source, normalized_dir))
+            actions.append(f"run: TORCH_DEVICE={args.torch_device} {command}")
+        elif args.pdf_extractor == "auto":
+            actions.append(
+                f"extract_pdf: auto (pymupdf4llm -> marker -> pymupdf -> pdfplumber) {source.as_posix()} -> {normalized_dir.as_posix()}/")
+        else:
+            actions.append(
+                f"extract_pdf: {args.pdf_extractor} {source.as_posix()} -> {normalized_dir.as_posix()}/")
     if args.reuse_imported:
         actions.append("reuse_imported: true")
     if args.overwrite_normalized:

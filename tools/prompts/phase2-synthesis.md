@@ -48,13 +48,13 @@ Evidence bank (cite by ID):
 
 CRITICAL FORMAT REQUIREMENTS:
 
-1. **Cite evidence by ID**: You write a **2-column table**. Cite evidence by ID (e.g., `[E01]`). The full table with evidence text, locators, and source links is rendered automatically.
+1. **Cite evidence by stable ID**: You write a **2-column table**. Copy bracketed evidence IDs exactly from the evidence bank (for example, `[{{slug}}:claim_abc123]`). Evidence text, locators, and source links are resolved automatically by validation tools.
 
    ```md
    | Claim                                       | Evidence |
    | ------------------------------------------- | -------- |
-   | Your synthesized insight in your own words. | [E01]    |
-   | Another insight you synthesized.            | [E02]    |
+   | Your synthesized insight in your own words. | [{{slug}}:claim_abc123] |
+   | Another insight you synthesized.            | [{{slug}}:claim_def456] |
    ```
 
 2. **Synthesize claims**: Claims must be YOUR interpretation of what the source teaches. Do not copy the evidence text into claims.
@@ -62,7 +62,7 @@ CRITICAL FORMAT REQUIREMENTS:
    BAD: `| JavaScript uses function declarations to bind... |` (copying evidence)
    GOOD: `| Function declarations create named bindings in scope. |` (your synthesis)
 
-3. **Use evidence IDs exactly**: Copy the ID from the evidence bank exactly as shown (e.g., `[E01]`, `[E07]`).
+3. **Use evidence IDs exactly**: Copy the full bracketed stable ID from the evidence bank exactly as shown.
 
 4. **Complete frontmatter**: Every synthesized page MUST have this exact structure:
 
@@ -96,7 +96,7 @@ Additional rules:
 ```md
 | Claim                                        | Evidence |
 | -------------------------------------------- | -------- |
-| Concrete reusable insight in your own words. | [E01]    |
+| Concrete reusable insight in your own words. | [{{slug}}:claim_abc123] |
 ```
 
 - Include at least 3 rows per synthesized page.
@@ -104,7 +104,6 @@ Additional rules:
 - Do NOT write evidence text, locators, or source links - they are filled automatically.
 - Do not make a claim just because it sounds appropriate for the page title; every claim must cite a specific evidence ID.
 - If the evidence bank does not contain support for a likely-sounding claim, omit that claim.
-- Locator cells must use range format `normalized:L<start>-L<end>` from the evidence bank (single line: `L123-L123`).
 - Do not put pipe characters inside table cells.
 - Evidence table data rows must start with `|`, not `+`, `-`, or diff-marker text.
 - The claim cell must synthesize in your own words; do not copy the evidence sentence into the claim cell.
@@ -115,14 +114,14 @@ Additional rules:
   - GOOD claim: "Linear recursion serves as a core component for constructing algorithms."
 - CONSERVATIVE CLAIMS: Each claim must be fully entailed by the cited evidence. Do NOT add details, qualifications, or explanations not present in the evidence.
 - Claim cells must not use weak generic words: important, crucial, fundamental, essential, success.
-- The evidence cell must quote the source text exactly.
+- The Evidence cell must contain only one or more stable evidence IDs copied from the evidence bank.
 - Do not add empty headings.
 - Do not duplicate headings.
 - Do not add `## Executable implementation` unless a real implementation file exists and is linked.
 - Procedure pages must include `## Steps` with at least 3 concrete numbered or bulleted steps.
 - Procedure steps must be traceable to the page's own evidence rows; do not add generic how-to advice from outside the cited excerpts.
 - Reference pages must include `## Reference data` with a Markdown lookup table containing at least 2 data rows.
-- Reference data tables must include `Evidence` and `Locator` columns, and those cells must follow the same exact-quote and normalized-line rules as `## Source-backed details`.
+- Reference data tables should cite evidence by ID; do not write source quotes, locators, or source links directly.
 - Use bullets or short paragraphs under `## Source-backed details`; make the section substantial enough to preserve reusable source knowledge.
 - Cross-links may point only to pages that already exist or pages created in this phase.
 - Synthesized pages must use TWO separate sections for page references:

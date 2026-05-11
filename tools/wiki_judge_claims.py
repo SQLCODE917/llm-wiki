@@ -20,6 +20,7 @@ from wiki_evidence_validator import (
     is_evidence_too_short,
     should_fail_on_deterministic_flag,
 )
+from wiki_evidence_resolver import EvidenceResolver
 
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
@@ -254,9 +255,11 @@ def main() -> int:
 def evidence_rows(page: Path, source_lines: list[str], *, context_lines: int) -> list[EvidenceRow]:
     fm = parse_frontmatter(page)
     page_type = fm.data.get("type")
+    resolver = evidence_resolver_for_page(fm.data)
     details = section(fm.body, "## Source-backed details")
     rows: list[EvidenceRow] = []
     header_seen = False
+    table_format = ""
     row_number = 0
     for line in details.splitlines():
         cells = split_table_row(line)
@@ -265,28 +268,62 @@ def evidence_rows(page: Path, source_lines: list[str], *, context_lines: int) ->
         normalized = [cell.strip().lower() for cell in cells]
         if normalized == ["claim", "evidence", "locator", "source"]:
             header_seen = True
+            table_format = "expanded"
+            continue
+        if normalized == ["claim", "evidence"]:
+            header_seen = True
+            table_format = "ids"
             continue
         if not header_seen or is_separator_row(cells):
             continue
-        if len(cells) != 4:
-            continue
         row_number += 1
-        claim, evidence, locator, source = (cell.strip() for cell in cells)
-        rows.append(
-            EvidenceRow(
-                row=row_number,
-                claim=strip_markdown(claim),
-                evidence=clean_evidence_excerpt(evidence),
-                locator=strip_markdown(locator).strip(),
-                source=source,
-                context=context_for_locator(
-                    source_lines, locator, context_lines=context_lines),
+        if table_format == "expanded":
+            if len(cells) != 4:
+                continue
+            claim, evidence, locator, source = (cell.strip() for cell in cells)
+            rows.append(
+                EvidenceRow(
+                    row=row_number,
+                    claim=strip_markdown(claim),
+                    evidence=clean_evidence_excerpt(evidence),
+                    locator=strip_markdown(locator).strip(),
+                    source=source,
+                    context=context_for_locator(
+                        source_lines, locator, context_lines=context_lines),
+                )
             )
-        )
+        elif table_format == "ids":
+            if len(cells) != 2 or resolver is None:
+                continue
+            claim, evidence_ids = (cell.strip() for cell in cells)
+            for item in resolver.resolve_cell(evidence_ids):
+                rows.append(
+                    EvidenceRow(
+                        row=row_number,
+                        claim=strip_markdown(claim),
+                        evidence=clean_evidence_excerpt(item.evidence),
+                        locator=item.locator,
+                        source=item.source_page,
+                        context=context_for_locator(
+                            source_lines, item.locator, context_lines=context_lines),
+                    )
+                )
     if page_type == "reference":
         rows.extend(reference_data_rows(fm.body, source_lines,
                     context_lines=context_lines, start_row=len(rows) + 1))
     return rows
+
+
+def evidence_resolver_for_page(frontmatter: dict[str, Any]) -> EvidenceResolver | None:
+    sources = frontmatter.get("sources")
+    if not isinstance(sources, list):
+        return None
+    for source in sources:
+        if not isinstance(source, str):
+            continue
+        if source.endswith(".md"):
+            return EvidenceResolver.for_slug(Path(source).stem)
+    return None
 
 
 def reference_data_rows(

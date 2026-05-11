@@ -210,8 +210,8 @@ Useful optional sections:
 - `## Open questions`
 - `## Executable implementation`
 
-Reference pages that include lookup tables must keep those tables auditable: include `Evidence` and
-`Locator` columns for source-derived rows.
+Reference pages that include lookup tables must keep those tables auditable: include an `Evidence`
+column with stable evidence IDs for source-derived rows. Validation tools resolve IDs to locators.
 
 Type-specific required sections:
 
@@ -354,16 +354,16 @@ pnpm wiki:check-source <slug>
    - `wiki/references/`
 4. Each synthesized page must link back to at least one source page.
 5. Synthesized-page cross-links may point only to pages that already exist or pages created in the same phase.
-6. Each synthesized page must have `## Source-backed details` with an evidence table:
+6. Each synthesized page must have `## Source-backed details` with a stable evidence-ID table:
 
 ```md
-| Claim                    | Evidence                                                 | Locator          | Source                               |
-| ------------------------ | -------------------------------------------------------- | ---------------- | ------------------------------------ |
-| Concrete reusable claim. | "Short exact excerpt copied from the normalized source." | `normalized:L12` | [Source title](../sources/<slug>.md) |
+| Claim                    | Evidence                          |
+| ------------------------ | --------------------------------- |
+| Concrete reusable claim. | [<source-slug>:<stable-claim-id>] |
 ```
 
-7. Evidence cells must be short exact excerpts from the normalized source, not paraphrases.
-8. Locator cells must use `normalized:L12` or `normalized:L12-L14`, and the evidence excerpt must appear inside that cited line range.
+7. Evidence cells must contain stable evidence IDs from `.wiki-extraction-state/<slug>/claims-normalized.json`.
+8. Validation tools resolve evidence IDs to exact excerpts and locators; synthesized pages should not write excerpt, locator, or source columns in `## Source-backed details`.
 9. When a page is grounded in a bounded source section, add `source_ranges` frontmatter:
 
 ```yaml

@@ -57,9 +57,9 @@ def main() -> int:
             stderr=subprocess.STDOUT,
             check=False,
         )
-        if dry_run.returncode != 0 or "marker_single" not in dry_run.stdout or "TORCH_DEVICE=cuda" not in dry_run.stdout:
+        if dry_run.returncode != 0 or "extract_pdf: auto" not in dry_run.stdout or "pymupdf4llm" not in dry_run.stdout:
             print(dry_run.stdout, file=sys.stderr)
-            print("FAIL: pdf dry-run did not show marker command", file=sys.stderr)
+            print("FAIL: pdf dry-run did not show extractor selection", file=sys.stderr)
             return 1
 
         print(f"PASS: phase0 smoke test in {worktree}")
