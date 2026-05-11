@@ -2,7 +2,7 @@
   "_meta": {
     "domain": "llm-wiki",
     "version": "0.1.0",
-    "updated": "2026-05-09",
+    "updated": "2026-05-11",
     "generated_by": "tools/wiki_graph.py"
   },
   "nodes": {
@@ -177,7 +177,7 @@
     "wiki:concepts/arrays": {
       "type": "concept",
       "path": "wiki/concepts/arrays.md",
-      "description": "Arrays in JavaScript are ordered collections of values that can hold elements of any type. They are reference types, meaning each array literal creates a new object, and elements\u2026",
+      "description": "Arrays in JavaScript are ordered collections of values that can hold elements of any type. They are reference types, meaning each array literal creates a new object, and they supp\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -199,79 +199,54 @@
     "wiki:concepts/control-flow": {
       "type": "concept",
       "path": "wiki/concepts/control-flow.md",
-      "description": "Control flow in JavaScript refers to the order in which statements are executed and the mechanisms that alter this order, such as conditional logic and loops. Key operators like &\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:concepts/data-types",
-        "wiki:concepts/functions",
-        "wiki:concepts/iterators",
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/data-types": {
-      "type": "concept",
-      "path": "wiki/concepts/data-types.md",
-      "description": "Data types in JavaScript define how values behave and what operations can be performed on them. JavaScript distinguishes between primitive types (like strings, numbers, booleans)\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/destructuring": {
-      "type": "concept",
-      "path": "wiki/concepts/destructuring.md",
-      "description": "Destructuring is a JavaScript syntax feature that allows extracting values from arrays or objects into distinct variables, making code more readable and concise.",
+      "description": "Control flow in programming refers to the order in which individual statements, instructions, or function calls are executed or evaluated. In JavaScript, control flow is managed t\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
         "wiki:concepts/arrays",
-        "wiki:concepts/control-flow",
-        "wiki:concepts/data-types",
-        "wiki:concepts/es6-features",
-        "wiki:concepts/functional-programming",
         "wiki:concepts/functions",
         "wiki:concepts/iterators",
-        "wiki:concepts/recursion",
         "wiki:sources/js-allonge"
       ]
     },
     "wiki:concepts/es6-features": {
       "type": "concept",
       "path": "wiki/concepts/es6-features.md",
-      "description": "ECMAScript 2015 (ES6) introduced significant enhancements to JavaScript, including new variable declarations, default parameters, destructuring assignment, and generator functions\u2026",
-      "sources": [
-        "../sources/js-allonge.md"
-      ],
-      "depends_on": [
-        "wiki:sources/js-allonge"
-      ]
-    },
-    "wiki:concepts/functional-programming": {
-      "type": "concept",
-      "path": "wiki/concepts/functional-programming.md",
-      "description": "Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data structures. It avoids changing state and mutable data, favoring decla\u2026",
+      "description": "ES6, also known as ECMAScript 2015, introduced significant enhancements to JavaScript, including new syntax, variable scoping, functional programming tools, and iterator protocols\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
         "wiki:concepts/arrays",
         "wiki:concepts/control-flow",
-        "wiki:concepts/data-types",
+        "wiki:concepts/functional-programming",
         "wiki:concepts/functions",
         "wiki:concepts/iterators",
-        "wiki:concepts/recursion",
+        "wiki:concepts/objects",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/functional-programming": {
+      "type": "concept",
+      "path": "wiki/concepts/functional-programming.md",
+      "description": "Functional programming is a paradigm centered on the use of functions, emphasizing immutability, pure functions, and the composition of functions to build complex behaviors. It le\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/arrays",
+        "wiki:concepts/control-flow",
+        "wiki:concepts/functions",
+        "wiki:concepts/iterators",
+        "wiki:concepts/objects",
         "wiki:sources/js-allonge"
       ]
     },
     "wiki:concepts/functions": {
       "type": "concept",
       "path": "wiki/concepts/functions.md",
-      "description": "Functions are fundamental building blocks in JavaScript, serving as first-class citizens that can be assigned to variables, passed as arguments, and returned from other functions.\u2026",
+      "description": "Functions are central to programming with functions, serving as first-class citizens in JavaScript that enable powerful abstractions like closures and lexical scoping. They allow\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -282,7 +257,18 @@
     "wiki:concepts/iterators": {
       "type": "concept",
       "path": "wiki/concepts/iterators.md",
-      "description": "An iterator is an object that provides a sequence of values, typically through a .next() method. Iterators are fundamental to JavaScript's iteration protocol and enable efficient\u2026",
+      "description": "Iterators are objects that provide a sequence of values through a standardized interface. They enable efficient traversal of data structures without loading all elements into memo\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/objects": {
+      "type": "concept",
+      "path": "wiki/concepts/objects.md",
+      "description": "In JavaScript, objects are fundamental data structures that map string keys to values. They serve as the primary mechanism for organizing and storing data, supporting both simple\u2026",
       "sources": [
         "../sources/js-allonge.md"
       ],
@@ -293,15 +279,35 @@
     "wiki:concepts/recursion": {
       "type": "concept",
       "path": "wiki/concepts/recursion.md",
-      "description": "Recursion is a programming technique where a function calls itself to solve a problem. It is particularly useful for processing self-similar data structures like lists and trees,\u2026",
+      "description": "Recursion is a programming technique where a function calls itself to solve a problem by breaking it down into smaller, similar subproblems.",
       "sources": [
         "../sources/js-allonge.md"
       ],
       "depends_on": [
         "wiki:concepts/arrays",
         "wiki:concepts/control-flow",
+        "wiki:concepts/functional-programming",
         "wiki:concepts/functions",
         "wiki:concepts/iterators",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/strings": {
+      "type": "concept",
+      "path": "wiki/concepts/strings.md",
+      "description": "Strings in JavaScript are sequences of characters used to represent text. They can be created using literal syntax or quasi-literals, which allow for interpolation of expressions\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/arrays",
+        "wiki:concepts/control-flow",
+        "wiki:concepts/es6-features",
+        "wiki:concepts/functional-programming",
+        "wiki:concepts/functions",
+        "wiki:concepts/iterators",
+        "wiki:concepts/objects",
+        "wiki:concepts/recursion",
         "wiki:sources/js-allonge"
       ]
     },
@@ -400,13 +406,13 @@
       "depends_on": [
         "wiki:concepts/arrays",
         "wiki:concepts/control-flow",
-        "wiki:concepts/data-types",
-        "wiki:concepts/destructuring",
         "wiki:concepts/es6-features",
         "wiki:concepts/functional-programming",
         "wiki:concepts/functions",
         "wiki:concepts/iterators",
-        "wiki:concepts/recursion"
+        "wiki:concepts/objects",
+        "wiki:concepts/recursion",
+        "wiki:concepts/strings"
       ]
     }
   }

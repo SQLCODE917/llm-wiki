@@ -1,63 +1,69 @@
 ---
 title: Functional Programming
 type: concept
-tags: [programming-paradigm, javascript, data-structures]
+tags: [programming-paradigm, functions, combinators, higher-order-functions]
 status: draft
-last_updated: 2026-05-09
+last_updated: 2026-05-11
 sources:
   - ../sources/js-allonge.md
 source_ranges:
-  - js-allonge:normalized:L159-L159
-  - js-allonge:normalized:L3071-L3071
-  - js-allonge:normalized:L3283-L3283
-  - js-allonge:normalized:L3299-L3299
-  - js-allonge:normalized:L3329-L3329
-  - js-allonge:normalized:L3341-L3341
-  - js-allonge:normalized:L3419-L3419
-  - js-allonge:normalized:L3463-L3463
-  - js-allonge:normalized:L3899-L3899
-  - js-allonge:normalized:L4057-L4057
+  - js-allonge:normalized:L1587-L1589
+  - js-allonge:normalized:L1605-L1605
+  - js-allonge:normalized:L1627-L1629
+  - js-allonge:normalized:L1691-L1693
+  - js-allonge:normalized:L185-L185
+  - js-allonge:normalized:L1871-L1871
+  - js-allonge:normalized:L201-L201
+  - js-allonge:normalized:L2945-L2945
+  - js-allonge:normalized:L3005-L3005
+  - js-allonge:normalized:L3131-L3132
+  - js-allonge:normalized:L3333-L3335
   - js-allonge:normalized:L4059-L4059
-  - js-allonge:normalized:L4909-L4909
-  - js-allonge:normalized:L5937-L5940
+  - js-allonge:normalized:L4075-L4075
+  - js-allonge:normalized:L4435-L4435
+  - js-allonge:normalized:L5955-L5963
 ---
 
 # Functional Programming
 
 ## Summary
 
-Functional programming is a programming paradigm that emphasizes the use of pure functions and immutable data structures. It avoids changing state and mutable data, favoring declarative and composable code patterns.
+Functional programming is a paradigm centered on the use of functions, emphasizing immutability, pure functions, and the composition of functions to build complex behaviors. It leverages concepts like higher-order functions, combinators, and function decorators to create flexible and modular code.
 
 ## Source-backed details
 
 | Claim | Evidence | Locator | Source |
 | --- | --- | --- | --- |
-| Linked lists can be implemented using recursive data structures where each node points to the next, enabling efficient construction and manipulation without direct array indexing. | "**const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));" | `normalized:L3071-L3071` | [Source](../sources/js-allonge.md) |
-| Linked lists can be implemented using recursive data structures where each node points to the next, enabling efficient construction and manipulation without direct array indexing. | "In that case, a linked list of the numbers 1, 2, and 3 will look like this: { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } } }." | `normalized:L3283-L3283` | [Source](../sources/js-allonge.md) |
-| Operations on linked lists such as length calculation and reversal can be elegantly expressed using recursion and immutable updates, which helps maintain data integrity and simplifies reasoning... | "**const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);" | `normalized:L3299-L3299` | [Source](../sources/js-allonge.md) |
-| Operations on linked lists such as length calculation and reversal can be elegantly expressed using recursion and immutable updates, which helps maintain data integrity and simplifies reasoning... | "**const** reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed });" | `normalized:L3329-L3329` | [Source](../sources/js-allonge.md) |
-| Operations on linked lists such as length calculation and reversal can be elegantly expressed using recursion and immutable updates, which helps maintain data integrity and simplifies reasoning... | "**const** mapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? reverse(delayed) : mapWith(fn, node.rest, { first: fn(node.first), rest: delayed });" | `normalized:L3341-L3341` | [Source](../sources/js-allonge.md) |
-| Functional programming principles advocate for minimizing mutation during data processing, favoring immutable data structures and pure functions to reduce bugs and improve code reliability. | "One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let's recall linked lists from Plain Old JavaScript..." | `normalized:L3419-L3419` | [Source](../sources/js-allonge.md) |
-| Functional programming principles advocate for minimizing mutation during data processing, favoring immutable data structures and pure functions to reduce bugs and improve code reliability. | "So back to avoiding mutation. In general, it's easier to reason about data that doesn't change. We don't have to remember to use copying operations when we pass it as a value to a function, or..." | `normalized:L3463-L3463` | [Source](../sources/js-allonge.md) |
-| The theoretical foundation of computation shows that complex operations can be modeled using simple constructs like functions, demonstrating that higher-level abstractions like arrays or objects... | "They established that arbitrary computations could be represented a small set of axiomatic components. For example, we don't need arrays to represent lists, or even POJOs to represent nodes in a..." | `normalized:L4059-L4059` | [Source](../sources/js-allonge.md) |
-| The theoretical foundation of computation shows that complex operations can be modeled using simple constructs like functions, demonstrating that higher-level abstractions like arrays or objects... | "A very long time ago, mathematicians like Alonzo Church, Moses Schönfinkel, Alan Turning, and Haskell Curry and asked themselves if we really needed all these features to perform computations...." | `normalized:L4057-L4057` | [Source](../sources/js-allonge.md) |
-| While iterative approaches like loops are common, functional programming often favors higher-order functions such as folds for expressing algorithms, providing a more declarative way to process... | "Folding is a universal operation, and with care we can accomplish any task with folds that could be accomplished with that stalwart of structured programming, the for loop. Nevertheless, there is..." | `normalized:L3899-L3899` | [Source](../sources/js-allonge.md) |
-| Collections in functional programming are made iterable through standard protocols, allowing for consistent traversal and interaction with various data structures using iterators. | "This illustrates the general pattern of working with ordered collections: We make them _iterables_ , meaning that they have a [Symbol.iterator] method, that returns an _iterator_ . An iterator is..." | `normalized:L4909-L4909` | [Source](../sources/js-allonge.md) |
-| Stateless implementations of algorithms, such as a game board evaluator, demonstrate how functional techniques can manage complex logic without relying on mutable internal states. | "statelessNaughtsAndCrosses([ 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' ]) _//=> 3_" | `normalized:L5937-L5940` | [Source](../sources/js-allonge.md) |
-| In functional contexts, variables are typically scoped to their enclosing blocks, supporting clean and predictable variable access patterns. | "And i is scoped to the for loop. We can also write:" | `normalized:L159-L159` | [Source](../sources/js-allonge.md) |
+| JavaScript's evolution includes features like classes, mixins, and iterators that are fundamentally built upon simple objects and functions, allowing programmers to apply functional programming... | "Thus, the "six" edition introduces classes and mixins. It introduces the notion of implementing private properties with symbols. It introduces iterators and generators. But the common thread that..." | `normalized:L185-L185` | [Source](../sources/js-allonge.md) |
+| The core philosophy of JavaScript Allongé is to explore programming with functions, where fundamental concepts like decorators, methods, and delegation stem from functional principles. | "JavaScript Allongé is a book about programming with functions. From functions flow many ideas, from decorators to methods to delegation to mixins, and onwards in so many fruitful directions." | `normalized:L201-L201` | [Source](../sources/js-allonge.md) |
+| In functional programming, a combinator is a higher-order function that constructs results using only function application and previously defined combinators, providing a rigorous mathematical... | "The word "combinator" has a precise technical meaning in mathematics: "A combinator is a higher-order function that uses only function application and earlier defined combinators to define a..." | `normalized:L1587-L1589` | [Source](../sources/js-allonge.md) |
+| Function composition is a key technique in functional programming, exemplified by a compose function that takes two functions and returns their sequential application. | "- **const** compose = (a, b) => (c) => a(b(c))" | `normalized:L1605-L1605` | [Source](../sources/js-allonge.md) |
+| Function decorators are higher-order functions that modify or enhance other functions, creating variations of the original function while preserving its core behavior. | "## **function decorators** A _function decorator_ is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the..." | `normalized:L1627-L1629` | [Source](../sources/js-allonge.md) |
+| Partial application allows a function to be applied to some of its arguments, returning a new function that expects the remaining arguments, enabling flexible function reuse. | "Another basic building block is _partial application_ . When a function takes multiple arguments, we "apply" the function to the arguments by evaluating it with all of the arguments, producing a..." | `normalized:L1691-L1693` | [Source](../sources/js-allonge.md) |
+| Utility functions like callFirst and callLast can be created to partially apply arguments to a given function, facilitating the construction of specialized function variants. | "**const** callFirst = (fn, larg) => **function** (...rest) { **return** fn.call( **this** , larg, ...rest); } **const** callLast = (fn, rarg) => **function** (...rest) { **return** fn.call(..." | `normalized:L1871-L1871` | [Source](../sources/js-allonge.md) |
+| Tail call optimization enables recursive functions to operate efficiently in constant space, which is crucial for implementing operations like mapping over large data structures without stack... | "We have now seen how to use Tail Calls to execute mapWith in constant space:" | `normalized:L3005-L3005` | [Source](../sources/js-allonge.md) |
+| While recursive patterns like mapWith using destructuring are illustrative of recursion, they are not the most idiomatic way to perform such operations in practice. | "Although we showed how to use tail calls to map and fold over arrays with [first, ...rest], in reality this is not how it ought to be done. But it is an extremely simple illustration of how..." | `normalized:L3131-L3132` | [Source](../sources/js-allonge.md) |
+| Recursive functions can be implemented to process data structures like linked lists in a tail-recursive manner, accumulating results to avoid growing the call stack. | "**const** reverseMapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? delayed : reverseMapWith(fn, node.rest, { first: fn(node.first), rest: delayed }); reverseMapWith((x) => x * x,..." | `normalized:L3333-L3335` | [Source](../sources/js-allonge.md) |
+| Higher-order functions such as callLast can be expressed using rest parameters to prepend arguments to a function call, demonstrating functional composition patterns. | "**const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);" | `normalized:L2945-L2945` | [Source](../sources/js-allonge.md) |
+| Fundamental data structures like lists can be modeled purely using functions, showing that complex behaviors can emerge from simple functional primitives. | "They established that arbitrary computations could be represented a small set of axiomatic components. For example, we don't need arrays to represent lists, or even POJOs to represent nodes in a..." | `normalized:L4059-L4059` | [Source](../sources/js-allonge.md) |
+| Basic combinators like K (constant), I (identity), and V (application) are foundational elements in lambda calculus and functional programming, representing core computational operations. | "**const** K = (x) => (y) => x; **const** I = (x) => (x); **const** V = (x) => (y) => (z) => z(x)(y);" | `normalized:L4075-L4075` | [Source](../sources/js-allonge.md) |
+| Both mapWith and similar recursive patterns demonstrate how functional programming encourages building abstractions from common, reusable components rather than crafting each operation from scratch. | "Both patterns take us to the same destination: Composing functions out of common pieces, rather than building them entirely from scratch. mapWith is a very convenient abstraction for a very common..." | `normalized:L4435-L4435` | [Source](../sources/js-allonge.md) |
+| Functional programming emphasizes the ability to construct complex systems by combining simpler functions, leading to more modular and composable code. | "Both patterns take us to the same destination: Composing functions out of common pieces, rather than building them entirely from scratch. mapWith is a very convenient abstraction for a very common..." | `normalized:L4435-L4435` | [Source](../sources/js-allonge.md) |
+| Stateful behaviors can be constructed using closures and functional techniques, allowing for encapsulation of state within function scopes while maintaining functional purity. | "We can build this out of our statelessNaughtsAndCrosses function: **const** statefulNaughtsAndCrosses = () => { **const** state = [ ' ' ' ' ' ' , , , ' ' ' ' ' ' , , , ' ' ' ' ' ' , , ];..." | `normalized:L5955-L5963` | [Source](../sources/js-allonge.md) |
 
 ## Why it matters
 
-Functional programming promotes code that is easier to reason about, test, and debug due to the absence of side effects and mutable state. It encourages writing programs as transformations of data, leading to more predictable behavior and reduced complexity.
+Functional programming techniques enable developers to write more predictable, testable, and maintainable code by focusing on the application of functions rather than changing state. It promotes composability and reusability of code elements, making large systems easier to reason about.
 
 ## Related pages
 
-- [Arrays](../concepts/arrays.md)
-- [Control Flow](../concepts/control-flow.md)
-- [Data Types](../concepts/data-types.md)
 - [Functions](../concepts/functions.md)
+- [Higher-Order Functions](../concepts/functions.md)
+- [Combinators](../concepts/functions.md)
 - [Iterators](../concepts/iterators.md)
-- [Recursion](../concepts/recursion.md)
+- [Objects](../concepts/objects.md)
+- [Control Flow](../concepts/control-flow.md)
+- [Arrays](../concepts/arrays.md)
 
 ## Source pages
 
