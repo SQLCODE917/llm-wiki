@@ -7,7 +7,11 @@ import sys
 from pathlib import Path
 
 from wiki_common import first_h1, markdown_links, parse_frontmatter, section
-from wiki_evidence_ranges import locator_within_ranges, parse_locator_range, source_ranges_for_page
+
+# Import from refactored packages where available
+from wiki_io.evidence import locator_within_ranges, parse_locator_range
+# Continue using legacy modules for functions not yet in packages
+from wiki_evidence_ranges import source_ranges_for_page
 
 
 def main() -> int:

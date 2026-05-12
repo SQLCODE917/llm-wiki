@@ -170,9 +170,9 @@ def trim_page(text: str, limit: int = 7000) -> str:
 def run_backend_answer(backend_name: str, prompt: str, timeout: int) -> tuple[str, int]:
     """Run query using the model backend abstraction (Bedrock, OpenAI, Anthropic)."""
     try:
-        from wiki_model_backend import get_backend, ModelConfig
+        from wiki_llm.backends import get_backend, ModelConfig
     except ImportError as e:
-        return f"FAIL: could not import wiki_model_backend: {e}", 1
+        return f"FAIL: could not import wiki_llm.backends: {e}", 1
 
     try:
         backend = get_backend(backend_name)

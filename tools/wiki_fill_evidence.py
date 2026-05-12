@@ -17,8 +17,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from wiki_evidence_validator import canonicalize_for_evidence_match
-from wiki_evidence_resolver import EvidenceResolver
+# Import from refactored packages
+from wiki_io.evidence import canonicalize_for_evidence_match, EvidenceResolver
 
 if TYPE_CHECKING:
     from wiki_phase2_benchmark import EvidenceBankResult

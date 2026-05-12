@@ -15,12 +15,17 @@ from typing import Any
 
 from wiki_common import content_tokens, iter_content_pages, one_line, parse_frontmatter, section
 from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, parse_locator, strip_markdown
-from wiki_evidence_validator import (
+
+# Import from refactored packages where available
+from wiki_io.evidence import (
     validate_evidence_location,
+    EvidenceResolver,
+)
+# Continue using legacy modules for functions not yet in packages
+from wiki_evidence_validator import (
     is_evidence_too_short,
     should_fail_on_deterministic_flag,
 )
-from wiki_evidence_resolver import EvidenceResolver
 
 
 VERDICTS = {"supported", "too_broad", "not_supported", "unclear"}
@@ -804,7 +809,7 @@ def run_judge_model(
 
     # Use model backend abstraction for non-codex backends
     try:
-        from wiki_model_backend import get_backend, ModelConfig
+        from wiki_llm.backends import get_backend, ModelConfig
     except ImportError as e:
         return f"ERROR: failed to import model backend: {e}", 1
 

@@ -13,17 +13,22 @@ from datetime import date
 from pathlib import Path
 
 from wiki_common import code_paths, parse_frontmatter, section
-from wiki_evidence_bank import source_chunks, snippets_for_candidate
 from wiki_fill_evidence import get_evidence_for_locator
-from wiki_evidence_resolver import stable_evidence_id
-from wiki_evidence_ranges import (
+
+# Import from refactored packages where available
+from wiki_io.evidence import (
     SourceRange,
-    format_ranges,
     locator_within_ranges,
     normalize_locator,
     parse_locator_range,
+    stable_evidence_id,
+)
+# Continue using legacy modules for functions not yet in packages
+from wiki_evidence_ranges import (
+    format_ranges,
     source_ranges_for_candidate,
 )
+from wiki_evidence_bank import source_chunks, snippets_for_candidate
 from wiki_phase1_benchmark import (
     Candidate,
     copy_repo,

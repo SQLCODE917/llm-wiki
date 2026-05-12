@@ -8,13 +8,15 @@ These tests ensure the evidence validator handles:
 - Fabricated evidence detection
 """
 import pytest
-from wiki_evidence_validator import (
+
+# Import from refactored packages where available
+from wiki_io.evidence import (
     looks_like_code,
-    normalize_for_search,
     validate_evidence_location,
-    is_evidence_too_short,
     EvidenceValidationResult,
 )
+# Continue using legacy modules for functions not yet in packages
+from wiki_evidence_validator import normalize_for_search, is_evidence_too_short
 
 
 class TestLooksLikeCode:
@@ -77,7 +79,7 @@ class TestNormalizeForSearch:
         assert "independent" in normalize_for_search(text)
 
     def test_unicode_quotes_normalized(self):
-        text = ""smart quotes""
+        text = "\u201csmart quotes\u201d"
         assert '"smart quotes"' in normalize_for_search(text)
 
     def test_unicode_dashes_normalized(self):

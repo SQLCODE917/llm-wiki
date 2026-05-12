@@ -33,7 +33,9 @@ from wiki_deep_extract import (
     page_slug_for_topic,
 )
 from wiki_common import parse_frontmatter, section
-from wiki_manifest import Manifest, PhaseStatus, load_or_create_manifest
+
+# Import from refactored packages
+from wiki_io.state import Manifest, PhaseStatus, load_or_create_manifest
 
 
 DEFAULTS_PATH = Path("tools/wiki_model_defaults.json")

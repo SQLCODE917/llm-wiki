@@ -8,7 +8,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 from wiki_common import content_tokens
-from wiki_evidence_ranges import normalize_locator
+
+# Import from refactored packages
+from wiki_io.evidence import normalize_locator
 
 
 WEAK_SNIPPET_PATTERNS = [

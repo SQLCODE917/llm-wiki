@@ -14,7 +14,9 @@ from collections import defaultdict
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
-from wiki_model_backend import get_backend, ModelConfig, parse_model_output, write_parsed_files
+# Import from refactored packages
+from wiki_llm.backends import get_backend, ModelConfig
+from wiki_llm.responses import parse_model_output, write_parsed_files
 from wiki_page_schema import WikiPageSchema, parse_llm_response, parse_llm_response_structured, ParseResult, render_page, validate_schema
 from wiki_phase1_benchmark import find_normalized_source, git_changed_files, init_git, parse_candidate, run_codex
 from wiki_phase2_benchmark import (

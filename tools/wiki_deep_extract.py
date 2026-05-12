@@ -37,10 +37,10 @@ from typing import Any
 
 from wiki_common import log_context_stats, parse_frontmatter, section
 from wiki_fill_evidence import fill_evidence_in_page
-from wiki_model_backend import get_backend, ModelConfig, ModelResponse
 
-# Import extraction state management for new state file format
-from wiki_extraction_state import (
+# Import from refactored packages
+from wiki_llm.backends import get_backend, ModelConfig, ModelResponse
+from wiki_io.state import (
     RawClaim,
     NormalizedClaim,
     NormalizedClaimsData,
@@ -1118,8 +1118,8 @@ def load_extraction_state(slug: str) -> ExtractionState | None:
     the primary source - claims-normalized.json in .wiki-extraction-state/
     is the source of truth after extraction completes.
     """
-    # Import here to avoid circular dependency
-    from wiki_extraction_state import (
+    # Import from refactored package
+    from wiki_io.state import (
         load_normalized_claims,
         get_processed_chunk_indices,
         get_normalized_claims_path,

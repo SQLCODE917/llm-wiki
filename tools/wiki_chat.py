@@ -23,7 +23,8 @@ import readline  # noqa: F401 - enables line editing in input()
 import sys
 from pathlib import Path
 
-from wiki_model_backend import get_backend, ModelConfig, ModelResponse
+# Import from refactored packages
+from wiki_llm.backends import get_backend, ModelConfig, ModelResponse
 
 
 WELCOME = """

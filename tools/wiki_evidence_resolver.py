@@ -17,7 +17,8 @@ import re
 from dataclasses import dataclass
 from pathlib import Path
 
-from wiki_extraction_state import NormalizedClaim, load_normalized_claims
+# Import from refactored packages
+from wiki_io.state import NormalizedClaim, load_normalized_claims
 
 
 LOCATOR_RE = re.compile(
