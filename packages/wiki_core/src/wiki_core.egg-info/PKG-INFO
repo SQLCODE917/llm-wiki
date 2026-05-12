@@ -1,0 +1,70 @@
+Metadata-Version: 2.4
+Name: wiki-core
+Version: 0.1.0
+Summary: Pure domain types for the wiki ingestion pipeline
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# wiki_core
+
+Pure domain types for the wiki ingestion pipeline.
+
+## Overview
+
+This package contains shared domain types with **no I/O or LLM dependencies**.
+All types are serializable and have explicit `to_dict()` and `from_dict()` methods.
+
+## Types
+
+### Claim Types
+
+- **`Claim`** — The canonical extracted claim with evidence and locator
+- **`RawClaim`** — Claim with extraction timestamp (extends Claim)
+- **`NormalizedClaim`** — Alias for Claim (post-deduplication)
+- **`SynthesisClaim`** — Claim with evidence ID references for page synthesis
+- **`SourceClaim`** — Frozen claim for analysis with precomputed tokens
+
+### Locator
+
+- **`Locator`** — Reference to a line range in normalized source
+- **`parse_locator()`** — Parse a locator string to (start, end) tuple
+- **`normalize_locator()`** — Convert to canonical range format
+
+### Frontmatter
+
+- **`Frontmatter`** — Typed schema for wiki page frontmatter
+- **`ParsedFrontmatter`** — Raw parsing result with data, body, errors
+
+## Usage
+
+```python
+from wiki_core.types import Claim, Locator, Frontmatter
+
+# Parse a locator
+loc = Locator.parse("normalized:L100-L105")
+print(loc.start_line)  # 100
+
+# Create a claim
+claim = Claim(
+    topic="Functions",
+    claim="Functions are first-class citizens",
+    evidence="In JavaScript, functions are first-class...",
+    locator="normalized:L100-L105",
+    chunk_index=0,
+)
+print(claim.claim_id)  # claim_unknown_c000_abc12345
+
+# Serialize to dict
+data = claim.to_dict()
+```
+
+## Design Principles
+
+1. **No I/O** — Types don't read from or write to files
+2. **No LLM calls** — Types are pure data structures
+3. **Explicit serialization** — `to_dict()` and `from_dict()` methods
+4. **Immutable where possible** — `@dataclass(frozen=True)` for analysis types
+5. **Typed** — Full type hints and `py.typed` marker

@@ -1,4 +1,16 @@
 #!/usr/bin/env python3
+"""Source range utilities for wiki ingestion pipeline.
+
+MIGRATION NOTE: These functions are also available in wiki_io.evidence.
+New code should prefer importing from the package:
+
+    from wiki_io.evidence import (
+        SourceRange,
+        normalize_locator,
+        parse_locator_range,
+        locator_within_ranges,
+    )
+"""
 from __future__ import annotations
 
 import re

@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 """Model backend abstraction for llm-wiki.
 
+MIGRATION NOTE: These classes are also available in wiki_llm.backends.
+New code should prefer importing from the package:
+
+    from wiki_llm.backends import get_backend, ModelConfig, ModelResponse
+    from wiki_llm.prompts import load_system_prompt
+    from wiki_llm.responses import parse_model_output
+
 Supports multiple backends:
 - codex: Local models via OpenAI Codex CLI
 - bedrock: AWS Bedrock managed inference

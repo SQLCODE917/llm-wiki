@@ -1,34 +1,22 @@
-#!/usr/bin/env python3
-"""Artifact manifest for wiki ingestion pipeline.
+"""Manifest tracking for wiki ingestion pipeline.
 
-MIGRATION NOTE: These classes are also available in wiki_io.state.
-New code should prefer importing from the package:
-
-    from wiki_io.state import Manifest, PhaseStatus, ErrorInfo
-
-This module provides manifest creation and tracking for the ingestion pipeline,
-implementing the schema from DESIGN_ingestion-improvements.md.
-
-The manifest tracks:
+The manifest tracks the overall state of an ingest operation:
 - Source file metadata and hashes
 - Configuration used for ingest
 - Phase status and progress
 - Error information for debugging
 
 Usage:
-    from wiki_manifest import Manifest, PhaseStatus
-
-    manifest = Manifest.create(slug, source_file, ...)
+    from wiki_io.state import Manifest, PhaseStatus
+    
+    manifest = Manifest.create(slug, source_file)
     manifest.set_phase_status("phase0_import", PhaseStatus.RUNNING)
-    manifest.set_phase_status("phase0_import", PhaseStatus.COMPLETE)
-    manifest.record_error("phase2b_synthesize", "Validation failed", artifact_path)
     manifest.save()
 """
 from __future__ import annotations
 
 import hashlib
 import json
-import os
 import subprocess
 import sys
 from dataclasses import dataclass, field, asdict
@@ -36,6 +24,8 @@ from datetime import datetime, timezone
 from enum import Enum
 from pathlib import Path
 from typing import Any
+
+from wiki_io.state.paths import get_state_dir, get_manifest_path, ensure_state_dir
 
 
 SCHEMA_VERSION = 1
@@ -115,6 +105,31 @@ class Phase2Progress:
         return cls(**data)
 
 
+def _get_git_commit() -> str | None:
+    """Get the current git commit hash."""
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            capture_output=True,
+            text=True,
+            check=True,
+        )
+        return result.stdout.strip()[:12]
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return None
+
+
+def _compute_file_hash(path: Path) -> str | None:
+    """Compute SHA256 hash of a file."""
+    if not path.exists():
+        return None
+    hasher = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+
 @dataclass
 class Manifest:
     """Artifact manifest for wiki ingestion pipeline."""
@@ -160,7 +175,7 @@ class Manifest:
     ) -> Manifest:
         """Create a new manifest for an ingest."""
         now = datetime.now(timezone.utc).isoformat()
-        state_dir = Path(f".wiki-extraction-state/{slug}")
+        state_dir = get_state_dir(slug)
 
         # Initialize phase status
         phase_status = {
@@ -180,7 +195,7 @@ class Manifest:
             source_file=str(source_file) if source_file else None,
             source_kind=source_kind,
             command=command,
-            git_commit=get_git_commit(),
+            git_commit=_get_git_commit(),
             original_sha256=None,
             normalized_sha256=None,
             extractor=extractor,
@@ -204,15 +219,13 @@ class Manifest:
     @classmethod
     def load(cls, slug: str) -> Manifest | None:
         """Load an existing manifest from disk."""
-        state_dir = Path(f".wiki-extraction-state/{slug}")
-        manifest_path = state_dir / "manifest.json"
-
+        manifest_path = get_manifest_path(slug)
         if not manifest_path.exists():
             return None
 
         try:
             data = json.loads(manifest_path.read_text())
-            return cls.from_dict(data, state_dir)
+            return cls.from_dict(data, get_state_dir(slug))
         except (json.JSONDecodeError, KeyError) as e:
             print(f"WARN: Failed to load manifest: {e}", file=sys.stderr)
             return None
@@ -277,176 +290,49 @@ class Manifest:
         }
 
     def save(self) -> Path:
-        """Write manifest to disk."""
+        """Save manifest to disk."""
         self.updated_at = datetime.now(timezone.utc).isoformat()
-        self._state_dir.mkdir(parents=True, exist_ok=True)
-        manifest_path = self._state_dir / "manifest.json"
+        ensure_state_dir(self.slug)
+        manifest_path = get_manifest_path(self.slug)
         manifest_path.write_text(json.dumps(self.to_dict(), indent=2) + "\n")
         return manifest_path
 
     def set_phase_status(self, phase: str, status: PhaseStatus) -> None:
-        """Update status for a phase."""
+        """Update a phase status."""
         if phase not in PHASE_NAMES:
             raise ValueError(f"Unknown phase: {phase}")
         self.phase_status[phase] = status.value
-        self.updated_at = datetime.now(timezone.utc).isoformat()
 
     def get_phase_status(self, phase: str) -> PhaseStatus:
-        """Get current status for a phase."""
-        return PhaseStatus(self.phase_status.get(phase, PhaseStatus.PENDING.value))
+        """Get the status of a phase."""
+        status_str = self.phase_status.get(phase, PhaseStatus.PENDING.value)
+        return PhaseStatus(status_str)
 
-    def record_error(
-        self,
-        phase: str,
-        message: str,
-        artifact: str | None = None,
-    ) -> None:
-        """Record an error for debugging."""
+    def record_error(self, phase: str, message: str, artifact: str | None = None) -> None:
+        """Record an error that occurred during a phase."""
         self.last_error = ErrorInfo(
-            phase=phase,
-            message=message,
-            artifact=artifact,
-        )
+            phase=phase, message=message, artifact=artifact)
         self.set_phase_status(phase, PhaseStatus.FAILED)
 
-    def clear_error(self) -> None:
-        """Clear the last error."""
-        self.last_error = None
+    def update_original_hash(self, path: Path) -> None:
+        """Update the original file hash."""
+        self.original_sha256 = _compute_file_hash(path)
 
-    def update_phase2_progress(
-        self,
-        total: int | None = None,
-        synthesized: int | None = None,
-        adopted: int | None = None,
-        failed: int | None = None,
-        pending: int | None = None,
-    ) -> None:
-        """Update Phase 2b progress counters."""
-        if total is not None:
-            self.phase2b_progress.total_candidates = total
-        if synthesized is not None:
-            self.phase2b_progress.synthesized = synthesized
-        if adopted is not None:
-            self.phase2b_progress.adopted = adopted
-        if failed is not None:
-            self.phase2b_progress.failed = failed
-        if pending is not None:
-            self.phase2b_progress.pending = pending
+    def update_normalized_hash(self, path: Path) -> None:
+        """Update the normalized file hash."""
+        self.normalized_sha256 = _compute_file_hash(path)
 
-    def set_original_hash(self, path: Path) -> None:
-        """Compute and store hash of original file."""
-        if path.exists():
-            self.original_sha256 = compute_sha256(path)
-
-    def set_normalized_hash(self, path: Path) -> None:
-        """Compute and store hash of normalized source."""
-        if path.exists():
-            self.normalized_sha256 = compute_sha256(path)
-
-    def is_phase_complete(self, phase: str) -> bool:
-        """Check if a phase is complete."""
-        status = self.get_phase_status(phase)
-        return status in (PhaseStatus.COMPLETE, PhaseStatus.SKIPPED)
-
-    def next_pending_phase(self) -> str | None:
-        """Get the next phase that needs to run."""
-        for phase in PHASE_NAMES:
-            status = self.get_phase_status(phase)
-            if status not in (PhaseStatus.COMPLETE, PhaseStatus.SKIPPED):
-                return phase
-        return None
-
-    def all_phases_complete(self) -> bool:
-        """Check if all phases are complete or skipped."""
+    def is_complete(self) -> bool:
+        """Check if all phases are complete."""
         return all(
-            self.is_phase_complete(phase)
+            self.get_phase_status(phase) in (
+                PhaseStatus.COMPLETE, PhaseStatus.SKIPPED)
             for phase in PHASE_NAMES
         )
 
-
-def get_git_commit() -> str | None:
-    """Get current git commit hash."""
-    try:
-        result = subprocess.run(
-            ["git", "rev-parse", "HEAD"],
-            capture_output=True,
-            text=True,
-            timeout=5,
-        )
-        if result.returncode == 0:
-            return result.stdout.strip()[:12]
-    except (subprocess.TimeoutExpired, FileNotFoundError):
-        pass
-    return None
-
-
-def compute_sha256(path: Path) -> str:
-    """Compute SHA-256 hash of a file."""
-    hasher = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(65536), b""):
-            hasher.update(chunk)
-    return hasher.hexdigest()
-
-
-def load_or_create_manifest(
-    slug: str,
-    source_file: Path | None = None,
-    **kwargs,
-) -> Manifest:
-    """Load existing manifest or create a new one."""
-    manifest = Manifest.load(slug)
-    if manifest is not None:
-        refresh_manifest_config(manifest, source_file, kwargs)
-        return manifest
-    return Manifest.create(slug, source_file, **kwargs)
-
-
-def refresh_manifest_config(manifest: Manifest, source_file: Path | None, kwargs: dict) -> None:
-    """Refresh rerun-sensitive manifest metadata without resetting phase state."""
-    if source_file is not None:
-        manifest.source_file = str(source_file)
-        source_ext = source_file.suffix
-        manifest.paths["imported_original"] = f"raw/imported/{manifest.slug}/original{source_ext}"
-    for key in (
-        "source_kind",
-        "command",
-        "extractor",
-        "structured",
-        "target_tokens",
-        "render_pages",
-        "model_backend",
-        "candidate",
-        "allow_partial_pages",
-    ):
-        if key in kwargs:
-            setattr(manifest, key, kwargs[key])
-
-
-def get_manifest_path(slug: str) -> Path:
-    """Get the path to a manifest file."""
-    return Path(f".wiki-extraction-state/{slug}/manifest.json")
-
-
-if __name__ == "__main__":
-    # Simple CLI for testing
-    import sys
-    if len(sys.argv) < 2:
-        print("Usage: wiki_manifest.py <slug>")
-        print("       wiki_manifest.py <slug> --create")
-        sys.exit(1)
-
-    slug = sys.argv[1]
-    create = "--create" in sys.argv
-
-    if create:
-        manifest = Manifest.create(slug, command=" ".join(sys.argv))
-        manifest.save()
-        print(f"Created manifest: {get_manifest_path(slug)}")
-    else:
-        manifest = Manifest.load(slug)
-        if manifest:
-            print(json.dumps(manifest.to_dict(), indent=2))
-        else:
-            print(f"No manifest found for {slug}")
-            sys.exit(1)
+    def get_incomplete_phases(self) -> list[str]:
+        """Get list of phases that are not complete or skipped."""
+        return [
+            phase for phase in PHASE_NAMES
+            if self.get_phase_status(phase) not in (PhaseStatus.COMPLETE, PhaseStatus.SKIPPED)
+        ]

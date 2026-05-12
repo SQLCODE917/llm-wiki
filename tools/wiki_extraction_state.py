@@ -1,8 +1,15 @@
 #!/usr/bin/env python3
 """Extraction state management for wiki ingestion pipeline.
 
-This module implements the separated extraction/candidate state from
-DESIGN_ingestion-improvements.md.
+MIGRATION NOTE: Core types and functions are also available in wiki_io.state.
+New code should prefer importing from the package:
+
+    from wiki_io.state import (
+        RawClaim, NormalizedClaim, Candidate,
+        append_raw_claim, load_normalized_claims, merge_candidates,
+    )
+
+This module remains functional for backward compatibility.
 
 State files:
 - claims-raw.jsonl: Append-only raw claims from extraction (Phase 1a)

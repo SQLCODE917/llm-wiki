@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 """Shared evidence validation utilities for wiki ingestion.
 
+MIGRATION NOTE: These functions are also available in wiki_io.evidence.
+New code should prefer importing from the package:
+
+    from wiki_io.evidence import (
+        validate_evidence_location,
+        canonicalize_for_evidence_match,
+        EvidenceValidationResult,
+    )
+
 This module provides unified evidence-in-locator validation logic used by both
 wiki_check_synthesis.py and wiki_judge_claims.py to ensure consistent behavior.
 
@@ -26,11 +35,14 @@ HARD_FAIL_REASONS = frozenset({
 EvidenceLocationResult = Literal[
     "exact_match",             # Evidence found byte-exact in locator span
     "canonicalized_local",     # Evidence found after canonicalization in locator span
-    "canonicalized_window",    # Evidence found after canonicalization near locator (±N lines)
+    # Evidence found after canonicalization near locator (±N lines)
+    "canonicalized_window",
     "canonicalized_global",    # Evidence found after canonicalization elsewhere in source
     "prefix_match",            # Evidence prefix found in locator span
-    "window_match",            # Evidence found within ±N lines of locator (deprecated, use canonicalized_window)
-    "source_match",            # Evidence found elsewhere in source (deprecated, use canonicalized_global)
+    # Evidence found within ±N lines of locator (deprecated, use canonicalized_window)
+    "window_match",
+    # Evidence found elsewhere in source (deprecated, use canonicalized_global)
+    "source_match",
     "not_found",               # Evidence not found anywhere in source
 ]
 
@@ -135,7 +147,8 @@ def canonicalize_for_evidence_match(text: str) -> str:
     # Pattern 2: "NN\nChapter Title"
     text = re.sub(r"\n\d{1,4}\n(?=[A-Z])", "\n", text)
     # Pattern 3: "Chapter Title\niii" (roman numerals)
-    text = re.sub(r"\n[A-Z][A-Za-z :'-]{5,50}\n[ivxlcdm]+\n", "\n", text, flags=re.IGNORECASE)
+    text = re.sub(
+        r"\n[A-Z][A-Za-z :'-]{5,50}\n[ivxlcdm]+\n", "\n", text, flags=re.IGNORECASE)
     # Pattern 4: Isolated roman numerals
     text = re.sub(r"\n[ivxlcdm]+\n", "\n", text, flags=re.IGNORECASE)
     # Pattern 5: Short all-caps headers like "CHAPTER II"

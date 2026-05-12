@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wiki_llm"
+version = "0.1.0"
+description = "LLM interaction layer for wiki ingestion pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "wiki_core",
+    "wiki_io",
+]
+
+[project.optional-dependencies]
+bedrock = ["boto3"]
+openai = ["openai"]
+anthropic = ["anthropic"]
+all = ["boto3", "openai", "anthropic"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wiki-io"
+version = "0.1.0"
+description = "I/O layer for the wiki ingestion pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["wiki-core"]
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

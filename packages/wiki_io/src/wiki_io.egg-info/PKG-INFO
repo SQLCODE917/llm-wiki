@@ -1,0 +1,93 @@
+Metadata-Version: 2.4
+Name: wiki-io
+Version: 0.1.0
+Summary: I/O layer for the wiki ingestion pipeline
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: wiki-core
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# wiki_io
+
+I/O layer for the wiki ingestion pipeline.
+
+## Overview
+
+This package contains all file I/O operations for the wiki ingestion pipeline.
+It depends on `wiki_core` for type definitions but handles all persistence.
+
+## State Management
+
+### Manifest (`wiki_io.state.manifest`)
+
+Tracks the overall ingest pipeline:
+- **`Manifest`** — Artifact manifest with phase status, paths, configuration
+- **`PhaseStatus`** — Enum for phase states (pending, running, complete, failed)
+- **`ErrorInfo`** — Error tracking with artifact pointers
+- **`Phase2Progress`** — Progress tracking for synthesis phase
+
+### Claims (`wiki_io.state.claims`)
+
+Storage for extracted claims:
+- **`append_raw_claim()`** — Append to claims-raw.jsonl (resumable)
+- **`load_raw_claims()`** — Load all raw claims
+- **`save_normalized_claims()`** — Save deduped claims
+- **`load_normalized_claims()`** — Load canonical claims data
+
+### Candidates (`wiki_io.state.candidates`)
+
+Page candidate management:
+- **`Candidate`** — Page proposal with claim_ids
+- **`save_generated_candidates()`** — Save machine-generated candidates
+- **`merge_candidates()`** — Apply human overrides to candidates
+
+### Extraction (`wiki_io.state.extraction`)
+
+Extraction process state:
+- **`Chunk`** — A chunk of source text
+- **`ExtractionState`** — Runtime state during extraction
+- **`load_extraction_state()`** — Load state for synthesis
+
+## Usage
+
+```python
+from wiki_io.state import (
+    Manifest,
+    PhaseStatus,
+    load_normalized_claims,
+    load_extraction_state,
+)
+
+# Load or create manifest
+manifest = Manifest.load(slug) or Manifest.create(slug, source_file)
+manifest.set_phase_status("phase1a_extract", PhaseStatus.RUNNING)
+
+# Load claims for synthesis
+claims_data = load_normalized_claims(slug)
+for claim in claims_data.claims:
+    print(f"{claim.topic}: {claim.claim}")
+
+# Load extraction state (backward compat)
+state = load_extraction_state(slug)
+```
+
+## File Layout
+
+```
+.wiki-extraction-state/<slug>/
+├── manifest.json           # Pipeline status and config
+├── claims-raw.jsonl        # Append-only raw claims (Phase 1a)
+├── claims-normalized.json  # Deduped claims with IDs (Phase 1b)
+├── candidates.generated.json  # Machine proposals (Phase 1c)
+├── candidates.override.json   # Human curator overrides
+└── candidates.json         # Merged candidates
+```
+
+## Design Principles
+
+1. **Separation of concerns** — Types in wiki_core, I/O here
+2. **Canonical sources** — claims-normalized.json is the source of truth
+3. **Resumability** — Append-only JSONL for crash recovery
+4. **Backward compatibility** — load_extraction_state() wraps new format
