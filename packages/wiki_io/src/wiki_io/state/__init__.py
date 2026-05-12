@@ -56,6 +56,7 @@ from wiki_io.state.manifest import (
     ErrorInfo,
     Phase2Progress,
     Manifest,
+    load_or_create_manifest,
 )
 
 # Claims
@@ -112,6 +113,7 @@ __all__ = [
     "ErrorInfo",
     "Phase2Progress",
     "Manifest",
+    "load_or_create_manifest",
     # Claims
     "RawClaim",
     "NormalizedClaim",

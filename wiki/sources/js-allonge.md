@@ -6,7 +6,7 @@ source_type: pdf
 raw_path: ../../raw/imported/js-allonge/
 normalized_path: ../../raw/normalized/js-allonge/
 status: draft
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: []
 sources:
   - ../../raw/imported/js-allonge/original.pdf
@@ -41,51 +41,51 @@ Extracted 445 claims from 19 chunks, organized into 10 viable topics.
 | Before ES6, JavaScript required workarounds like IIFEs to achieve block scoping. | "Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a tr" | `normalized:L137-L140` |
 | JavaScript supports iteration through iterables and generators introduced in ES6 | "Iteration and Iterables . . . . . . . . . . . . .\|. . . . . . . . . . . . . . . . . . . . . . . .\|" | `normalized:L79-L79` |
 
+## Major concepts
+
 ### Extracted Topics
 
 | Topic | Claims | Sections | Status | Notes |
 |---|---|---|---|---|
-| Functions | 206 | 72 | synthesized |  |
-| Iterators | 76 | 28 | synthesized |  |
-| Data Types | 44 | 21 | synthesized |  |
-| Arrays | 27 | 14 | synthesized |  |
-| Control Flow | 26 | 15 | synthesized |  |
-| Objects | 21 | 10 | synthesized |  |
-| Functional Programming | 20 | 14 | synthesized |  |
-| ES6 Features | 14 | 10 | synthesized |  |
-| Recursion | 6 | 4 | synthesized |  |
-| Strings | 3 | 2 | synthesized |  |
+| Functions | 206 | 72 | not_started |  |
+| Iterators | 76 | 28 | not_started |  |
+| Data Types | 44 | 21 | not_started |  |
+| Arrays | 27 | 14 | not_started |  |
+| Control Flow | 26 | 15 | not_started |  |
+| Objects | 21 | 10 | not_started |  |
+| Functional Programming | 20 | 14 | not_started |  |
+| ES6 Features | 14 | 10 | not_started |  |
+| Recursion | 6 | 4 | not_started |  |
+| Strings | 3 | 2 | not_started |  |
 | Closures | 2 | 2 | deferred | Too few claims (2 < 3) |
-
-## Major concepts
 
 | Concept | Page | Status | Claims Used | Claims Available | Section Coverage |
 |---|---|---|---|---|---|
-| Arrays | `../concepts/arrays.md` | not_started | - | 27 | - |
-| Control Flow | `../concepts/control-flow.md` | not_started | - | 26 | - |
-| Data Types | `../concepts/data-types.md` | not_started | - | 44 | - |
-| ES6 Features | `../concepts/es6-features.md` | not_started | - | 14 | - |
-| Functional Programming | `../concepts/functional-programming.md` | not_started | - | 20 | - |
-| Functions | `../concepts/functions.md` | not_started | - | 206 | - |
-| Iterators | `../concepts/iterators.md` | not_started | - | 76 | - |
-| Objects | `../concepts/objects.md` | not_started | - | 21 | - |
-| Recursion | `../concepts/recursion.md` | not_started | - | 6 | - |
-| Strings | `../concepts/strings.md` | not_started | - | 3 | - |
+| Arrays | `../concepts/js-arrays.md` | not_started | - | 27 | - |
+| Control Flow | `../concepts/js-control-flow.md` | not_started | - | 26 | - |
+| Data Types | `../concepts/js-data-types.md` | not_started | - | 44 | - |
+| ES6 Features | `../concepts/js-es6-features.md` | not_started | - | 14 | - |
+| Functional Programming | `../concepts/js-functional-programming.md` | not_started | - | 20 | - |
+| Functions | `../concepts/js-functions.md` | not_started | - | 206 | - |
+| Iterators | `../concepts/js-iterators.md` | not_started | - | 76 | - |
+| Objects | `../concepts/js-objects.md` | not_started | - | 21 | - |
+| Recursion | `../concepts/js-recursion.md` | not_started | - | 6 | - |
+| Strings | `../concepts/js-strings.md` | not_started | - | 3 | - |
 
 ### Candidate Concepts
 
 | Candidate | Canonical Slug | Priority | Claims | Sections | Sources | Status |
 |---|---|---|---|---|---|---|
-| Arrays | arrays | must create | 27 | 14 | 1 | discovered |
-| Control Flow | control-flow | must create | 26 | 15 | 1 | discovered |
-| Data Types | data-types | must create | 44 | 21 | 1 | discovered |
-| ES6 Features | es6-features | must create | 14 | 10 | 1 | discovered |
-| Functional Programming | functional-programming | must create | 20 | 14 | 1 | discovered |
-| Functions | functions | must create | 206 | 72 | 1 | discovered |
-| Iterators | iterators | must create | 76 | 28 | 1 | discovered |
-| Objects | objects | must create | 21 | 10 | 1 | discovered |
-| Recursion | recursion | should create | 6 | 4 | 1 | discovered |
-| Strings | strings | could create | 3 | 2 | 1 | discovered |
+| Arrays | js-arrays | must create | 27 | 14 | 1 | discovered |
+| Control Flow | js-control-flow | must create | 26 | 15 | 1 | discovered |
+| Data Types | js-data-types | must create | 44 | 21 | 1 | discovered |
+| ES6 Features | js-es6-features | must create | 14 | 10 | 1 | discovered |
+| Functional Programming | js-functional-programming | must create | 20 | 14 | 1 | discovered |
+| Functions | js-functions | must create | 206 | 72 | 1 | discovered |
+| Iterators | js-iterators | must create | 76 | 28 | 1 | discovered |
+| Objects | js-objects | must create | 21 | 10 | 1 | discovered |
+| Recursion | js-recursion | should create | 6 | 4 | 1 | discovered |
+| Strings | js-strings | could create | 3 | 2 | 1 | discovered |
 
 ### Source Locator Map
 
@@ -132,13 +132,13 @@ None identified.
 
 | Candidate page | Intended path | Group | Priority | Evidence basis | Status |
 |---|---|---|---|---|---|
-| Arrays | [../concepts/arrays.md](../concepts/arrays.md) | Deep extraction | must create | 27 claims covering array, arrays, javascript | created |
-| Control Flow | [../concepts/control-flow.md](../concepts/control-flow.md) | Deep extraction | must create | 26 claims covering argument, before, javascript | created |
-| Data Types | `../concepts/data-types.md` | Deep extraction | must create | 44 claims covering expressions, javascript, uses | not created yet |
-| ES6 Features | [../concepts/es6-features.md](../concepts/es6-features.md) | Deep extraction | must create | 14 claims covering adds, allows, ecmascript | created |
-| Functional Programming | [../concepts/functional-programming.md](../concepts/functional-programming.md) | Deep extraction | must create | 20 claims covering combinator, functional, higher | created |
-| Functions | [../concepts/functions.md](../concepts/functions.md) | Deep extraction | must create | 206 claims covering book, functions, javascript | created |
-| Iterators | [../concepts/iterators.md](../concepts/iterators.md) | Deep extraction | must create | 76 claims covering function, generators, iterator | created |
-| Objects | [../concepts/objects.md](../concepts/objects.md) | Deep extraction | must create | 21 claims covering javascript, objects | created |
-| Recursion | [../concepts/recursion.md](../concepts/recursion.md) | Deep extraction | should create | 6 claims covering function, functions, linear | created |
-| Strings | [../concepts/strings.md](../concepts/strings.md) | Deep extraction | could create | 3 claims covering literal, quasi | created |
+| Arrays | `../concepts/js-arrays.md` | Deep extraction | must create | 27 claims covering array, arrays, javascript | not created yet |
+| Control Flow | `../concepts/js-control-flow.md` | Deep extraction | must create | 26 claims covering argument, before, javascript | not created yet |
+| Data Types | `../concepts/js-data-types.md` | Deep extraction | must create | 44 claims covering expressions, javascript, uses | not created yet |
+| ES6 Features | `../concepts/js-es6-features.md` | Deep extraction | must create | 14 claims covering adds, allows, ecmascript | not created yet |
+| Functional Programming | `../concepts/js-functional-programming.md` | Deep extraction | must create | 20 claims covering combinator, functional, higher | not created yet |
+| Functions | `../concepts/js-functions.md` | Deep extraction | must create | 206 claims covering book, functions, javascript | not created yet |
+| Iterators | `../concepts/js-iterators.md` | Deep extraction | must create | 76 claims covering function, generators, iterator | not created yet |
+| Objects | `../concepts/js-objects.md` | Deep extraction | must create | 21 claims covering javascript, objects | not created yet |
+| Recursion | `../concepts/js-recursion.md` | Deep extraction | should create | 6 claims covering function, functions, linear | not created yet |
+| Strings | `../concepts/js-strings.md` | Deep extraction | could create | 3 claims covering literal, quasi | not created yet |
