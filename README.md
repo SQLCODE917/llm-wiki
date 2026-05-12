@@ -1,7 +1,7 @@
 # LLM-Wiki User Guide
 
 This repository is a local-first implementation of the LLM-Wiki pattern described in
-[REFERENCE_llm-wiki-pattern.md](REFERENCE_llm-wiki-pattern.md). The goal is not ordinary RAG. The goal is
+[REFERENCE_llm-wiki-pattern.md](docs/REFERENCE_llm-wiki-pattern.md). The goal is not ordinary RAG. The goal is
 a persistent Markdown wiki that grows over time as sources are ingested, queries are filed, contradictions
 are noticed, and maintenance passes clean up the knowledge graph.
 
