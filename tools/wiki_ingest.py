@@ -29,13 +29,17 @@ from wiki_deep_extract import (
     run_deep_extraction,
     load_extraction_state,
     create_source_page_from_topics,
-    get_state_path,
     page_slug_for_topic,
 )
 from wiki_common import parse_frontmatter, section
 
 # Import from refactored packages
-from wiki_io.state import Manifest, PhaseStatus, load_or_create_manifest
+from wiki_io.state import (
+    Manifest,
+    PhaseStatus,
+    get_normalized_claims_path,
+    load_or_create_manifest,
+)
 
 
 DEFAULTS_PATH = Path("tools/wiki_model_defaults.json")
@@ -355,7 +359,7 @@ def run_ingest(config: IngestConfig) -> int:
 
             report = Path(tempfile.gettempdir()) / \
                 f"wiki-ingest-{config.slug}-{Path(page_path).stem}.md"
-            extraction_state_path = get_state_path(config.slug)
+            extraction_state_path = get_normalized_claims_path(config.slug)
             command = [
                 "python3",
                 "tools/wiki_phase2_single.py",

@@ -115,6 +115,273 @@
         "wiki:sources/compound-interest"
       ]
     },
+    "wiki:concepts/js-algorithms": {
+      "type": "concept",
+      "path": "wiki/concepts/js-algorithms.md",
+      "description": "Algorithms in JavaScript refer to systematic procedures for solving problems, often involving data structures like arrays, objects, and iterables. They encompass techniques for it\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-iterables",
+        "wiki:concepts/js-iterators",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-arrays": {
+      "type": "concept",
+      "path": "wiki/concepts/js-arrays.md",
+      "description": "JavaScript arrays are versatile data structures that support various operations including destructuring, iteration, and functional programming patterns. They are reference types a\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-collections": {
+      "type": "concept",
+      "path": "wiki/concepts/js-collections.md",
+      "description": "JavaScript collections represent different ways to store and manipulate groups of data. These collections can be either eager, where operations return new collections immediately,\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-iterables",
+        "wiki:concepts/js-objects",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-control-flow": {
+      "type": "concept",
+      "path": "wiki/concepts/js-control-flow.md",
+      "description": "Control flow in JavaScript refers to the order in which statements are executed within a program. It includes constructs such as loops, conditionals, and function calls that deter\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-data-structures": {
+      "type": "concept",
+      "path": "wiki/concepts/js-data-structures.md",
+      "description": "JavaScript data structures encompass various ways to organize and store data, including built-in types like arrays and objects, as well as custom implementations such as linked li\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-data-types": {
+      "type": "concept",
+      "path": "wiki/concepts/js-data-types.md",
+      "description": "JavaScript data types categorize values into primitive types (like strings, numbers, booleans) and reference types (like arrays and functions). Primitive types are immutable and c\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-expressions": {
+      "type": "concept",
+      "path": "wiki/concepts/js-expressions.md",
+      "description": "In JavaScript, an expression is a unit of code that evaluates to a value. Every value in JavaScript is itself an expression. Expressions can be simple like a number or string lite\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-functional-programming": {
+      "type": "concept",
+      "path": "wiki/concepts/js-functional-programming.md",
+      "description": "Functional programming in JavaScript emphasizes the use of pure functions, immutability, and higher-order functions to build robust and maintainable code. It leverages concepts su\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-collections",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-iterables",
+        "wiki:concepts/js-memory-management",
+        "wiki:concepts/js-objects",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-functions": {
+      "type": "concept",
+      "path": "wiki/concepts/js-functions.md",
+      "description": "JavaScript functions are first-class entities that can be assigned to variables, passed as arguments, and returned from other functions. They support various features including de\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-generators": {
+      "type": "concept",
+      "path": "wiki/concepts/js-generators.md",
+      "description": "JavaScript generators are a special type of function that can be paused and resumed during execution, allowing for the creation of iterators in a more declarative way. They use th\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-iterables",
+        "wiki:concepts/js-iterators",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-iterables": {
+      "type": "concept",
+      "path": "wiki/concepts/js-iterables.md",
+      "description": "In JavaScript, iterables are objects that define how to sequence through their elements, typically using the Symbol.iterator method. This enables the use of constructs like for...\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-iterators": {
+      "type": "concept",
+      "path": "wiki/concepts/js-iterators.md",
+      "description": "JavaScript iterators are objects that provide a sequence of values, typically used to traverse collections. They enable lazy evaluation and composition of operations without immed\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-functional-programming",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-memory-management": {
+      "type": "concept",
+      "path": "wiki/concepts/js-memory-management.md",
+      "description": "JavaScript memory management involves understanding how recursion, array operations, and data structure sharing affect performance. Key concepts include tail call optimization, co\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-objects": {
+      "type": "concept",
+      "path": "wiki/concepts/js-objects.md",
+      "description": "JavaScript objects are fundamental data structures that store key-value pairs. They serve as the primary mechanism for organizing and manipulating data in JavaScript, enabling com\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-iterables",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-operations": {
+      "type": "concept",
+      "path": "wiki/concepts/js-operations.md",
+      "description": "JavaScript operations encompass arithmetic, comparison, and logical operations that manipulate values. These operations follow standard mathematical precedence and have specific b\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-programming-paradigms": {
+      "type": "concept",
+      "path": "wiki/concepts/js-programming-paradigms.md",
+      "description": "JavaScript supports multiple programming paradigms, including functional programming, where functions are treated as first-class citizens and data immutability is valued for easie\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-algorithms",
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-collections",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-functional-programming",
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-iterables",
+        "wiki:concepts/js-iterators",
+        "wiki:concepts/js-memory-management",
+        "wiki:concepts/js-objects",
+        "wiki:concepts/js-operations",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-recursion": {
+      "type": "concept",
+      "path": "wiki/concepts/js-recursion.md",
+      "description": "Recursion in JavaScript is a programming technique where a function calls itself to solve a problem. It is particularly useful for problems that exhibit self-similarity or can be\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-algorithms",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-functional-programming",
+        "wiki:concepts/js-functions",
+        "wiki:sources/js-allonge"
+      ]
+    },
+    "wiki:concepts/js-scopes": {
+      "type": "concept",
+      "path": "wiki/concepts/js-scopes.md",
+      "description": "Scope in JavaScript defines the accessibility and visibility of variables and functions within different parts of the code. Scopes can be nested, and variables defined in outer sc\u2026",
+      "sources": [
+        "../sources/js-allonge.md"
+      ],
+      "depends_on": [
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-memory-management",
+        "wiki:sources/js-allonge"
+      ]
+    },
     "wiki:sources/aoe2-basics": {
       "type": "source",
       "path": "wiki/sources/aoe2-basics.md",
@@ -150,7 +417,26 @@
       "sources": [
         "../../raw/imported/js-allonge/original.pdf"
       ],
-      "depends_on": []
+      "depends_on": [
+        "wiki:concepts/js-algorithms",
+        "wiki:concepts/js-arrays",
+        "wiki:concepts/js-collections",
+        "wiki:concepts/js-control-flow",
+        "wiki:concepts/js-data-structures",
+        "wiki:concepts/js-data-types",
+        "wiki:concepts/js-expressions",
+        "wiki:concepts/js-functional-programming",
+        "wiki:concepts/js-functions",
+        "wiki:concepts/js-generators",
+        "wiki:concepts/js-iterables",
+        "wiki:concepts/js-iterators",
+        "wiki:concepts/js-memory-management",
+        "wiki:concepts/js-objects",
+        "wiki:concepts/js-operations",
+        "wiki:concepts/js-programming-paradigms",
+        "wiki:concepts/js-recursion",
+        "wiki:concepts/js-scopes"
+      ]
     }
   }
 }
