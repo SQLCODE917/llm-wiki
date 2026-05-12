@@ -9,14 +9,14 @@ These tests ensure the evidence validator handles:
 """
 import pytest
 
-# Import from refactored packages where available
+# Import from refactored packages
 from wiki_io.evidence import (
     looks_like_code,
     validate_evidence_location,
     EvidenceValidationResult,
+    normalize_for_search,
+    is_evidence_too_short,
 )
-# Continue using legacy modules for functions not yet in packages
-from wiki_evidence_validator import normalize_for_search, is_evidence_too_short
 
 
 class TestLooksLikeCode:

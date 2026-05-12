@@ -16,13 +16,10 @@ from typing import Any
 from wiki_common import content_tokens, iter_content_pages, one_line, parse_frontmatter, section
 from wiki_check_synthesis import clean_evidence_excerpt, normalize_for_search, parse_locator, strip_markdown
 
-# Import from refactored packages where available
+# Import from refactored packages
 from wiki_io.evidence import (
     validate_evidence_location,
     EvidenceResolver,
-)
-# Continue using legacy modules for functions not yet in packages
-from wiki_evidence_validator import (
     is_evidence_too_short,
     should_fail_on_deterministic_flag,
 )

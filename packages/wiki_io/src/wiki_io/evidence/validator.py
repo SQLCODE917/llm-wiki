@@ -316,3 +316,93 @@ def _find_suggested_locator(evidence_canonical: str, source_lines: list[str]) ->
             if evidence_canonical in span_canonical:
                 return f"normalized:L{start_line + 1}-L{end_line + 1}"
     return None
+
+
+def normalize_for_search(text: str) -> str:
+    """Normalize text for fuzzy matching.
+
+    Handles:
+    - Unicode normalization (dashes, quotes)
+    - PDF line-break hyphenation (subprob-\\nlems -> subproblems)
+    - Page break markers
+    - Parenthetical phrases (removed to handle model paraphrasing)
+    - Whitespace collapse
+    - Trailing ellipsis/punctuation removal
+
+    This function uses canonicalize_for_evidence_match as its base
+    and adds additional normalization for search flexibility.
+    """
+    # Start with canonical form
+    text = canonicalize_for_evidence_match(text)
+
+    # Remove parenthetical phrases - model may quote without parentheticals
+    # E.g., "expression (including typing) to create" -> "expression to create"
+    text = re.sub(r'\s*\([^)]*\)\s*', ' ', text)
+
+    # Strip trailing ellipsis from truncated evidence
+    text = re.sub(r'\.{3,}\s*$', '', text)
+
+    # Strip trailing punctuation for flexible matching
+    text = re.sub(r'[.:;,!?]+$', '', text)
+
+    return " ".join(text.split())
+
+
+def is_evidence_too_short(evidence: str) -> bool:
+    """Check if evidence is too short, accounting for code snippets.
+
+    Code snippets like `() => 0` are valid evidence in programming books
+    even if they have few alphanumeric words.
+    """
+    excerpt_words = re.findall(r"[A-Za-z0-9']+", evidence)
+
+    # Short prose is suspicious, short code is not
+    if len(excerpt_words) < 4 and len(evidence) < 24:
+        if looks_like_code(evidence):
+            return False  # Code snippets are valid evidence
+        return True
+
+    return False
+
+
+def should_fail_on_deterministic_flag(reason: str) -> bool:
+    """Check if a deterministic flag reason should cause a hard failure.
+
+    Hard failures override LLM judge "supported" verdicts.
+    Soft issues (locator precision) do not.
+    """
+    # Normalize reason to check against hard fail reasons
+    reason_normalized = reason.lower().replace(" ", "_").replace("-", "_")
+
+    # Check for hard failure patterns
+    hard_patterns = [
+        "source_not_found",
+        "invalid_locator",
+        "evidence_not_in_source",
+        "locator_outside_source",
+        "not_parseable",
+        "outside_normalized_source",
+        "fabricated",
+        "contradicted",
+    ]
+
+    for pattern in hard_patterns:
+        if pattern in reason_normalized:
+            return True
+
+    return False
+
+
+# Weak evidence patterns that indicate navigation/metadata, not content
+WEAK_EVIDENCE_PATTERNS = [
+    r"^(chapter|section|part|page)\s+\d+",
+    r"^table\s+of\s+contents",
+    r"^\d+\.\d+",
+    r"^see\s+(also|chapter|section)",
+    r"^continued\s+(on|from)",
+]
+
+
+def is_weak_evidence(evidence: str) -> bool:
+    """Check if evidence is navigation/metadata rather than content."""
+    return any(re.search(p, evidence.strip(), re.IGNORECASE) for p in WEAK_EVIDENCE_PATTERNS)

@@ -29,22 +29,17 @@ from wiki_common import (
     section,
 )
 
-# Import from refactored packages where available
+# Import from refactored packages
 from wiki_io.evidence import (
     SourceRange,
     locator_within_ranges,
+    locator_within_tolerance,
     looks_like_code,
     validate_evidence_location,
     EvidenceResolver,
-)
-# Continue using legacy modules for functions not yet in packages
-from wiki_evidence_ranges import (
     canonicalize_locator,
     format_ranges,
-    locator_within_tolerance,
     source_ranges_for_page,
-)
-from wiki_evidence_validator import (
     is_evidence_too_short,
     is_weak_evidence,
 )
