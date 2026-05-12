@@ -73,6 +73,53 @@ If a needed directory does not exist, create it.
 
 ---
 
+## Environment setup
+
+### Python
+
+This repository uses pip with editable installs. The devcontainer provides Python 3.11.
+
+Install or reinstall packages:
+
+```bash
+pip install -e packages/wiki_core -e packages/wiki_io -e packages/wiki_llm
+pip install -r requirements.txt
+```
+
+Verify packages are installed:
+
+```bash
+pip list | grep wiki
+```
+
+### AWS Bedrock (for LLM calls)
+
+The default LLM backend is AWS Bedrock. Credentials require SSO authentication.
+
+```bash
+# First-time setup or after credential expiry
+aws configure sso --profile sdai-dev
+
+# Authenticate (refresh as needed)
+aws sso login --profile sdai-dev
+
+# Verify credentials work
+aws bedrock list-foundation-models --region us-east-1 --profile sdai-dev | head -5
+```
+
+Environment variables (set in devcontainer.json):
+
+```bash
+export AWS_PROFILE=sdai-dev
+export AWS_REGION=us-east-1
+export WIKI_MODEL_BACKEND=bedrock
+```
+
+If you see "Unable to locate credentials" errors during ingest, run `aws configure sso --profile sdai-dev`
+to refresh the SSO configuration.
+
+---
+
 ## Page types
 
 Use these page types in YAML frontmatter:
