@@ -762,7 +762,8 @@ def build_evidence_bank(
             sections.append(
                 f"Allowed source range: `{format_ranges(ranges)}` ({'; '.join(r.reason for r in ranges)})")
 
-        evidence_items: list[tuple[str, str, str]] = []  # (locator, text, claim_id)
+        # (locator, text, claim_id)
+        evidence_items: list[tuple[str, str, str]] = []
 
         if matched_claims:
             # Extract evidence directly from source at locator (guaranteed match)

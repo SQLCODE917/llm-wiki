@@ -181,11 +181,13 @@ def expand_evidence_ids(
                 ids = evidence_ids_from_cell(evidence_cell)
                 had_ids = bool(ids)
                 if not ids:
-                    matched_id = evidence_id_for_excerpt(evidence_cell, evidence_bank, slug)
+                    matched_id = evidence_id_for_excerpt(
+                        evidence_cell, evidence_bank, slug)
                     ids = [matched_id] if matched_id else []
                 canonical_ids = []
                 for evidence_id in ids:
-                    item = resolved_evidence_tuple(evidence_id, evidence_bank, slug)
+                    item = resolved_evidence_tuple(
+                        evidence_id, evidence_bank, slug)
                     if item:
                         item_id, locator, evidence = item
                         canonical_ids.append(item_id)
@@ -221,11 +223,13 @@ def expand_evidence_ids(
                 ids = evidence_ids_from_cell(evidence_cell)
                 had_ids = bool(ids)
                 if not ids:
-                    matched_id = evidence_id_for_excerpt(evidence_cell, evidence_bank, slug)
+                    matched_id = evidence_id_for_excerpt(
+                        evidence_cell, evidence_bank, slug)
                     ids = [matched_id] if matched_id else []
                 canonical_ids = []
                 for evidence_id in ids:
-                    item = resolved_evidence_tuple(evidence_id, evidence_bank, slug)
+                    item = resolved_evidence_tuple(
+                        evidence_id, evidence_bank, slug)
                     if item:
                         item_id, locator, evidence = item
                         canonical_ids.append(item_id)
@@ -237,9 +241,11 @@ def expand_evidence_ids(
                         })
                 if canonical_ids:
                     new_cols = (
-                        [make_table_safe(cell) for cell in cols[:evidence_index]]
+                        [make_table_safe(cell)
+                         for cell in cols[:evidence_index]]
                         + [", ".join(f"[{eid}]" for eid in canonical_ids)]
-                        + [make_table_safe(cell) for cell in cols[evidence_index + 1:]]
+                        + [make_table_safe(cell)
+                           for cell in cols[evidence_index + 1:]]
                     )
                     result_lines.append(format_table_row(new_cols))
                     continue
@@ -275,7 +281,8 @@ def resolved_evidence_tuple(
     evidence_bank: "EvidenceBankResult",
     slug: str,
 ) -> tuple[str, str, str] | None:
-    item = evidence_bank.items.get(evidence_id) or evidence_bank.items.get(evidence_id.upper())
+    item = evidence_bank.items.get(
+        evidence_id) or evidence_bank.items.get(evidence_id.upper())
     if item:
         return item.id, item.locator, item.exact_text
     resolver = EvidenceResolver.for_slug(slug) if slug else None
@@ -324,7 +331,8 @@ def evidence_id_for_excerpt(cell: str, evidence_bank: "EvidenceBankResult", slug
 
 
 def evidence_match_key(text: str) -> str:
-    key = canonicalize_for_evidence_match(strip_outer_quotes(text).replace("**", "").replace("*", ""))
+    key = canonicalize_for_evidence_match(
+        strip_outer_quotes(text).replace("**", "").replace("*", ""))
     key = key.replace('"', "").replace("'", "")
     key = key.replace("•", "")
     return " ".join(key.split())

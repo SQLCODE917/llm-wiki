@@ -578,7 +578,8 @@ def check_synthesized_page_structured(
              f"body must link back to {source_rel}",
              fix_hint=f"Add link to source page: [{source_rel}]({source_rel})")
 
-    details_section = section(fm.body, "## Source-backed details") if "## Source-backed details" in h2_headings(fm.body) else ""
+    details_section = section(
+        fm.body, "## Source-backed details") if "## Source-backed details" in h2_headings(fm.body) else ""
     id_backed_details = bool(
         details_section
         and evidence_resolver is not None
@@ -845,7 +846,8 @@ def check_evidence_table_structured(
                 continue
             source_link = f"[Source](../sources/{evidence_resolver.slug}.md)"
             for item in resolved:
-                data_rows.append((claim, f'"{item.evidence}"', f"`{item.locator}`", source_link))
+                data_rows.append(
+                    (claim, f'"{item.evidence}"', f"`{item.locator}`", source_link))
 
     if len(data_rows) < min_evidence_rows:
         fail(failures, FailureCategory.TOO_FEW_CLAIMS, str(page),
@@ -977,7 +979,8 @@ def check_evidence_table(
     """Compatibility wrapper returning string failures."""
     structured = check_evidence_table_structured(
         page, source_path, details, min_evidence_rows,
-        evidence_source, EvidenceResolver.for_source_page(source_path), related_scope, allowed_ranges,
+        evidence_source, EvidenceResolver.for_source_page(
+            source_path), related_scope, allowed_ranges,
     )
     return [f"{f.page}: {f.message}" for f in structured]
 
