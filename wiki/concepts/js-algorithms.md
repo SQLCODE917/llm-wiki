@@ -8,34 +8,33 @@ sources:
   - ../sources/js-allonge.md
 source_ranges:
   - js-allonge:normalized:L3821-L3821
-  - js-allonge:normalized:L3833-L3833
-  - js-allonge:normalized:L5714-L5722
+  - js-allonge:normalized:L5714-L5714
+  - js-allonge:normalized:L5785-L5785
 ---
 
 # JavaScript Algorithms
 
 ## Summary
 
-Algorithms in JavaScript refer to systematic procedures for solving problems, often involving data structures like arrays, objects, and iterables. They encompass techniques for iteration, searching, sorting, and detecting cycles within data sequences.
+Algorithms in JavaScript refer to systematic procedures for solving problems, often involving data structures like arrays, objects, and iterables. They can range from simple operations to complex implementations such as cycle detection in linked lists.
 
 ## Source-backed details
 
 | Claim | Evidence |
 | --- | --- |
-| A well-known cycle detection algorithm in JavaScript is Floyd's cycle-finding algorithm, also known as 'The Tortoise and the Hare'. | [js-allonge:claim_js-allonge_c010_87e0d717] |
-| An alternative cycle detection method, referred to as 'The Tale of the Teleporting Turtle', may offer performance advantages over the standard tortoise and hare approach under specific conditions. | [js-allonge:claim_js-allonge_c010_cfcb5e96] |
-| The implementation of the tortoise and hare algorithm involves using two iterators moving at different speeds to detect repeated elements in an iterable, indicating a cycle. | [js-allonge:claim_js-allonge_c015_9b2db849] |
+| The 'Tortoise and the Hare' algorithm is a well-known method for detecting cycles in sequences, developed by Robert Floyd in the 1960s. | [js-allonge:claim_js-allonge_c010_fcfd8170] |
+| A practical implementation of cycle detection uses a fast iterator moving twice as fast as a slow iterator to traverse an iterable. | [js-allonge:claim_js-allonge_c015_d2db713b] |
+| The algorithm known as 'Teleporting Tortoise' is designed to identify cycles within iterables by maintaining a distance between iterators. | [js-allonge:claim_js-allonge_c015_53362e76] |
 
 ## Why it matters
 
-Understanding algorithms is crucial for writing efficient and robust JavaScript code. It enables developers to optimize performance, avoid infinite loops, and effectively manipulate complex data structures such as linked lists or iterables.
+Understanding algorithms is crucial for writing efficient code and solving computational problems. In JavaScript, algorithms like the 'Tortoise and the Hare' help detect cycles in iterables, which is essential for preventing infinite loops and optimizing performance.
 
 ## Related pages
 
 - [JavaScript Arrays](../concepts/js-arrays.md)
 - [JavaScript Iterables](../concepts/js-iterables.md)
 - [JavaScript Iterators](../concepts/js-iterators.md)
-- [JavaScript Data Structures](../concepts/js-data-structures.md)
 
 ## Source pages
 

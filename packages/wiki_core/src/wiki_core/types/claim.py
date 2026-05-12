@@ -33,10 +33,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from wiki_core.serde import structure, unstructure
+
 
 def normalize_claim_text(text: str) -> str:
     """Normalize claim text for hashing.
-    
+
     Trim whitespace, collapse repeated spaces, normalize Unicode.
     Do NOT lowercase - code, symbols, and proper nouns may be case-sensitive.
     """
@@ -47,9 +49,9 @@ def normalize_claim_text(text: str) -> str:
 
 def generate_claim_id(slug: str, claim_text: str, locator: str, chunk_index: int) -> str:
     """Generate a stable, deterministic claim ID.
-    
+
     Format: claim_<slug>_c<chunk-index>_<8-char-hash>
-    
+
     The hash is derived from normalized claim text + primary evidence locator.
     This ensures:
     - Same input → same ID (reproducible)
@@ -60,7 +62,7 @@ def generate_claim_id(slug: str, claim_text: str, locator: str, chunk_index: int
     hash_input = f"{normalized}|{locator}"
     hash_bytes = hashlib.sha256(hash_input.encode("utf-8")).digest()
     hash_hex = hash_bytes[:4].hex()  # 8 hex chars
-    
+
     slug_part = slug if slug else "unknown"
     return f"claim_{slug_part}_c{chunk_index:03d}_{hash_hex}"
 
@@ -68,10 +70,10 @@ def generate_claim_id(slug: str, claim_text: str, locator: str, chunk_index: int
 @dataclass
 class Claim:
     """An extracted claim with evidence from a source.
-    
+
     This is the canonical claim type used throughout extraction and synthesis.
     It represents a concrete statement backed by verbatim source evidence.
-    
+
     Attributes:
         topic: Category/topic this claim belongs to
         claim: The claim statement in the agent's own words
@@ -86,14 +88,14 @@ class Claim:
     locator: str
     chunk_index: int
     claim_id: str = ""
-    
+
     def __post_init__(self):
         """Generate claim_id if not set."""
         if not self.claim_id:
             self.claim_id = generate_claim_id(
                 "", self.claim, self.locator, self.chunk_index
             )
-    
+
     def to_dict(self) -> dict[str, Any]:
         """Serialize to dictionary for JSON storage."""
         return {
@@ -104,7 +106,7 @@ class Claim:
             "locator": self.locator,
             "chunk_index": self.chunk_index,
         }
-    
+
     @classmethod
     def from_dict(cls, d: dict[str, Any]) -> Claim:
         """Deserialize from dictionary."""
@@ -116,15 +118,16 @@ class Claim:
             chunk_index=d.get("chunk_index", 0),
             claim_id=d.get("claim_id", ""),
         )
-    
+
     @staticmethod
     def generate_id(slug: str, claim_text: str, locator: str, chunk_index: int) -> str:
         """Generate a stable claim ID (static method for external use)."""
         return generate_claim_id(slug, claim_text, locator, chunk_index)
-    
+
     def with_id(self, slug: str) -> Claim:
         """Return a new Claim with a properly prefixed ID."""
-        new_id = generate_claim_id(slug, self.claim, self.locator, self.chunk_index)
+        new_id = generate_claim_id(
+            slug, self.claim, self.locator, self.chunk_index)
         return Claim(
             topic=self.topic,
             claim=self.claim,
@@ -138,22 +141,22 @@ class Claim:
 @dataclass
 class RawClaim(Claim):
     """A raw extracted claim before normalization.
-    
+
     Extends Claim with an extraction timestamp for audit purposes.
     """
     extracted_at: str = ""
-    
+
     def __post_init__(self):
         super().__post_init__()
         if not self.extracted_at:
             self.extracted_at = datetime.now(timezone.utc).isoformat()
-    
+
     def to_dict(self) -> dict[str, Any]:
         """Serialize to dictionary for JSON storage."""
         d = super().to_dict()
         d["extracted_at"] = self.extracted_at
         return d
-    
+
     @classmethod
     def from_dict(cls, d: dict[str, Any]) -> RawClaim:
         """Deserialize from dictionary."""
@@ -175,34 +178,28 @@ NormalizedClaim = Claim
 @dataclass
 class SynthesisClaim:
     """A claim in the synthesis output format with evidence ID references.
-    
+
     Used in WikiPageSchema for LLM-generated pages. Instead of including
     the full evidence text, it references evidence by ID (e.g., "E03").
-    
+
     Attributes:
         claim: The claim statement
         evidence_ids: List of evidence IDs (e.g., ["E03", "E07"])
     """
     claim: str
-    evidence_ids: list[str] = field(default_factory=list)
-    
+    evidence_ids: list[str] = field(default_factory=lambda: [])
+
     def to_dict(self) -> dict[str, Any]:
-        return {
-            "claim": self.claim,
-            "evidence_ids": self.evidence_ids,
-        }
-    
+        return unstructure(self)
+
     @classmethod
     def from_dict(cls, d: dict[str, Any]) -> SynthesisClaim:
-        return cls(
-            claim=d.get("claim", ""),
-            evidence_ids=d.get("evidence_ids", []),
-        )
+        return structure(d, cls)
 
 
 def tokenize_for_comparison(text: str) -> frozenset[str]:
     """Extract content tokens from text for comparison.
-    
+
     Used by SourceClaim for efficient similarity detection.
     """
     # Lowercase and extract word tokens
@@ -213,7 +210,7 @@ def tokenize_for_comparison(text: str) -> frozenset[str]:
 
 def extract_numbers(text: str) -> frozenset[str]:
     """Extract numeric values from text.
-    
+
     Used by SourceClaim for detecting contradictory numbers.
     """
     numbers = re.findall(r'\d+(?:\.\d+)?', text)
@@ -223,10 +220,10 @@ def extract_numbers(text: str) -> frozenset[str]:
 @dataclass(frozen=True)
 class SourceClaim:
     """A frozen claim for analysis and contradiction detection.
-    
+
     This is an immutable, hashable claim with precomputed tokens
     for efficient similarity comparison.
-    
+
     Attributes:
         page: Path to the source page containing this claim
         row: Row number in the evidence table
@@ -243,7 +240,7 @@ class SourceClaim:
     locator: str
     tokens: frozenset[str]
     numbers: frozenset[str]
-    
+
     @classmethod
     def from_claim(cls, claim: Claim, page: Path, row: int) -> SourceClaim:
         """Create a SourceClaim from a Claim with computed fields."""
@@ -257,7 +254,7 @@ class SourceClaim:
             tokens=tokenize_for_comparison(text),
             numbers=extract_numbers(text),
         )
-    
+
     @classmethod
     def from_row(
         cls,

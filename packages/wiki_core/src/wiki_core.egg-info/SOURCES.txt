@@ -2,6 +2,7 @@ README.md
 pyproject.toml
 src/wiki_core/__init__.py
 src/wiki_core/py.typed
+src/wiki_core/serde.py
 src/wiki_core.egg-info/PKG-INFO
 src/wiki_core.egg-info/SOURCES.txt
 src/wiki_core.egg-info/dependency_links.txt
@@ -15,3 +16,4 @@ src/wiki_core/types/__init__.py
 src/wiki_core/types/claim.py
 src/wiki_core/types/frontmatter.py
 src/wiki_core/types/locator.py
+tests/test_serde.py

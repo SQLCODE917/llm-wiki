@@ -23,6 +23,7 @@ It depends on `wiki_core` for type definitions but handles all persistence.
 ### Manifest (`wiki_io.state.manifest`)
 
 Tracks the overall ingest pipeline:
+
 - **`Manifest`** — Artifact manifest with phase status, paths, configuration
 - **`PhaseStatus`** — Enum for phase states (pending, running, complete, failed)
 - **`ErrorInfo`** — Error tracking with artifact pointers
@@ -31,6 +32,7 @@ Tracks the overall ingest pipeline:
 ### Claims (`wiki_io.state.claims`)
 
 Storage for extracted claims:
+
 - **`append_raw_claim()`** — Append to claims-raw.jsonl (resumable)
 - **`load_raw_claims()`** — Load all raw claims
 - **`save_normalized_claims()`** — Save deduped claims
@@ -39,6 +41,7 @@ Storage for extracted claims:
 ### Candidates (`wiki_io.state.candidates`)
 
 Page candidate management:
+
 - **`Candidate`** — Page proposal with claim_ids
 - **`save_generated_candidates()`** — Save machine-generated candidates
 - **`merge_candidates()`** — Apply human overrides to candidates
@@ -46,6 +49,7 @@ Page candidate management:
 ### Extraction (`wiki_io.state.extraction`)
 
 Extraction process state:
+
 - **`Chunk`** — A chunk of source text
 - **`ExtractionState`** — Runtime state during extraction
 - **`load_extraction_state()`** — Load state for synthesis

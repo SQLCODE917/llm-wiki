@@ -6,8 +6,16 @@ src/wiki_io.egg-info/SOURCES.txt
 src/wiki_io.egg-info/dependency_links.txt
 src/wiki_io.egg-info/requires.txt
 src/wiki_io.egg-info/top_level.txt
+src/wiki_io/evidence/__init__.py
+src/wiki_io/evidence/bank.py
+src/wiki_io/evidence/ranges.py
+src/wiki_io/evidence/resolver.py
+src/wiki_io/evidence/validator.py
 src/wiki_io/state/__init__.py
 src/wiki_io/state/candidates.py
 src/wiki_io/state/claims.py
 src/wiki_io/state/manifest.py
 src/wiki_io/state/paths.py
+tests/test_evidence_ranges.py
+tests/test_evidence_resolver.py
+tests/test_evidence_validator.py

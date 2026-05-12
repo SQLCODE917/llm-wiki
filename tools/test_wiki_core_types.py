@@ -244,8 +244,9 @@ def test_frontmatter_creation():
     yaml = fm.to_yaml()
     assert "title: Test Page" in yaml
     assert "type: concept" in yaml
-    assert "  - javascript" in yaml
-    assert "  - ../sources/test.md" in yaml
+    # PyYAML formats list items without leading indent in our config
+    assert "- javascript" in yaml
+    assert "- ../sources/test.md" in yaml
 
     print("✓ test_frontmatter_creation passed")
 

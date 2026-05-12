@@ -148,16 +148,32 @@ def extract_json_from_output(output: str) -> str | None:
     """Extract JSON content from model output.
 
     Handles both fenced code blocks and raw JSON.
+    Uses json-repair to fix common LLM JSON errors (trailing commas,
+    unquoted keys, etc.) when standard parsing fails.
 
     Returns:
         JSON string or None if not found
     """
     import json
 
+    from json_repair import repair_json
+
     # Try extracting from code blocks first
     blocks = extract_markdown_blocks(output, "json")
     if blocks:
-        return blocks[0]
+        candidate = blocks[0]
+        # Try parsing as-is first
+        try:
+            json.loads(candidate)
+            return candidate
+        except json.JSONDecodeError:
+            # Try repairing
+            repaired = repair_json(candidate, return_objects=False)
+            try:
+                json.loads(repaired)  # type: ignore[arg-type]
+                return repaired  # type: ignore[return-value]
+            except json.JSONDecodeError:
+                pass  # Fall through to raw JSON extraction
 
     # Try finding raw JSON object/array
     output = output.strip()
@@ -192,11 +208,17 @@ def extract_json_from_output(output: str) -> str | None:
             depth -= 1
             if depth == 0:
                 candidate = output[start:i + 1]
-                # Validate it's valid JSON
+                # Try parsing as-is first
                 try:
                     json.loads(candidate)
                     return candidate
                 except json.JSONDecodeError:
-                    continue
+                    # Try repairing (handles trailing commas, unquoted keys, etc.)
+                    repaired = repair_json(candidate, return_objects=False)
+                    try:
+                        json.loads(repaired)  # type: ignore[arg-type]
+                        return repaired  # type: ignore[return-value]
+                    except json.JSONDecodeError:
+                        continue
 
     return None

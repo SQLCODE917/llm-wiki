@@ -1,42 +1,39 @@
 ---
 title: JavaScript Iterators
 type: concept
-tags: [javascript, iteration, functional-programming]
+tags: [javascript, iteration, generators, functional programming]
 status: draft
 last_updated: 2026-05-12
 sources:
   - ../sources/js-allonge.md
 source_ranges:
-  - js-allonge:normalized:L3931-L3931
-  - js-allonge:normalized:L4005-L4005
-  - js-allonge:normalized:L4027-L4027
+  - js-allonge:normalized:L5523-L5523
+  - js-allonge:normalized:L5525-L5525
+  - js-allonge:normalized:L5807-L5807
+  - js-allonge:normalized:L6053-L6053
+  - js-allonge:normalized:L6069-L6071
+  - js-allonge:normalized:L6075-L6077
+  - js-allonge:normalized:L6089-L6091
 ---
 
 # JavaScript Iterators
 
 ## Summary
 
-JavaScript iterators are objects that provide a sequence of values, typically used to traverse collections. They enable lazy evaluation and composition of operations without immediately computing all results.
+Iterators in JavaScript provide a standardized way to traverse sequences of data. They enable lazy evaluation and efficient handling of large datasets by producing values on-demand rather than storing them all in memory.
 
 ## Source-backed details
 
 | Claim | Evidence |
 | --- | --- |
-| An iterator is a function that can be repeatedly called to retrieve elements from a collection, returning a done flag when exhausted. | [js-allonge:claim_js-allonge_c010_774eb80c] |
-| Iterator operations such as mapping and filtering can be composed to build complex transformations while maintaining memory efficiency. | [js-allonge:claim_js-allonge_c010_87dbec9f] |
-| Iterator-based operations are stateful, meaning that transformations like take() modify the underlying iterator's state rather than creating independent copies. | [js-allonge:claim_js-allonge_c010_e2809678] |
+| JavaScript iterators support lazy evaluation, allowing operations on large collections without loading all elements into memory simultaneously, which significantly reduces memory footprint. | [js-allonge:claim_js-allonge_c015_498802b7], [js-allonge:claim_js-allonge_c015_1c2c4917] |
+| Iterator-based implementations can be built using generator functions to manage implicit state, making it possible to create complex data processing workflows such as recursive unfolds and state... | [js-allonge:claim_js-allonge_c015_55b23688] |
+| Core iterator operations like take, zip, and reduce can be implemented using generator functions and the Symbol.iterator protocol, providing a foundation for functional programming practices in... | [js-allonge:claim_js-allonge_c016_02e9795a], [js-allonge:claim_js-allonge_c016_8a03da4e], [js-allonge:claim_js-allonge_c016_a3cc7cba], [js-allonge:claim_js-allonge_c016_80466c94] |
 
 ## Why it matters
 
-Iterators allow for efficient processing of large datasets by evaluating values on-demand. They support functional programming patterns like mapping and filtering, and enable stateful transformations that maintain context across iterations.
-
-## Related pages
-
-- [JavaScript Arrays](../concepts/js-arrays.md)
-- [JavaScript Functions](../concepts/js-functions.md)
-- [JavaScript Functional Programming](../concepts/js-functional-programming.md)
-- [JavaScript Control Flow](../concepts/js-control-flow.md)
+Iterators are fundamental to modern JavaScript, enabling functional programming patterns, efficient memory usage with large datasets, and the creation of composable data processing pipelines. They form the basis for constructs like for...of loops and the Symbol.iterator protocol.
 
 ## Source pages
 
-- [Js Allonge](../sources/js-allonge.md)
+- [JavaScript Allongé](../sources/js-allonge.md)

@@ -1,38 +1,47 @@
 ---
 title: JavaScript Memory Management
 type: concept
-tags: [javascript, memory, recursion, copy-on-write, copy-on-read, lazy-evaluation]
+tags: [javascript, memory, performance]
 status: draft
 last_updated: 2026-05-12
 sources:
   - ../sources/js-allonge.md
 source_ranges:
-  - js-allonge:normalized:L2781-L2781
-  - js-allonge:normalized:L2827-L2827
   - js-allonge:normalized:L3017-L3017
+  - js-allonge:normalized:L3349-L3350
   - js-allonge:normalized:L3741-L3741
   - js-allonge:normalized:L3773-L3773
-  - js-allonge:normalized:L5559-L5559
+  - js-allonge:normalized:L3781-L3781
+  - js-allonge:normalized:L5521-L5521
+  - js-allonge:normalized:L5523-L5523
+  - js-allonge:normalized:L5535-L5535
+  - js-allonge:normalized:L5549-L5549
 ---
 
 # JavaScript Memory Management
 
 ## Summary
 
-JavaScript memory management involves understanding how recursion, array operations, and data structure sharing affect performance. Key concepts include tail call optimization, copy-on-write and copy-on-read strategies, and lazy evaluation techniques for managing memory efficiently.
+JavaScript memory management involves how the language handles allocation, usage, and deallocation of memory during program execution. Key concepts include copying strategies like copy-on-write and copy-on-read, which affect performance and resource consumption when manipulating data structures such as arrays and iterators.
 
 ## Source-backed details
 
 | Claim | Evidence |
 | --- | --- |
-| Recursive implementations such as mapWith and foldWith are effective for demonstrating foundational recursion principles but lack production readiness due to memory consumption scaling linearly... | [js-allonge:claim_js-allonge_c007_4c4d8b15] |
-| JavaScript's tail call optimization eliminates unnecessary stack frame overhead when functions execute in tail position, enhancing memory efficiency during recursive calls. | [js-allonge:claim_js-allonge_c007_ab515242] |
-| Copy-on-write is a memory strategy that delays copying data structures until a write operation occurs, improving performance by avoiding premature duplication. | [js-allonge:claim_js-allonge_c010_e07693d1] |
-| Copy-on-read is a technique where data structures are duplicated upon reading rather than writing, enabling safe concurrent access to shared data. | [js-allonge:claim_js-allonge_c010_971969fb] |
-| Lazy collections utilize structure sharing to reduce memory usage, though this approach may lead to unexpected behavior if modifications occur after iteration begins. | [js-allonge:claim_js-allonge_c015_7fb69073] |
-| Iterative approaches to processing large datasets avoid the overhead of creating new arrays on each function call, which can significantly improve performance compared to recursive methods. | [js-allonge:claim_js-allonge_c008_843abd0d] |
-| Functional programming languages like Haskell combine lazy evaluation with immutable collections to balance flexibility and memory efficiency. | [js-allonge:claim_js-allonge_c015_7fb69073] |
+| Creating new arrays during operations like map or filter leads to increased memory usage and computational overhead due to the generation of temporary arrays. | [js-allonge:claim_js-allonge_c008_a903b936], [js-allonge:claim_js-allonge_c009_1b86f03c] |
+| Copy-on-write and copy-on-read strategies are employed to optimize memory usage by deferring actual copying until necessary, trading off between initial cost and subsequent modification efficiency. | [js-allonge:claim_js-allonge_c010_e07693d1], [js-allonge:claim_js-allonge_c010_b8296a58], [js-allonge:claim_js-allonge_c010_60c658d6] |
+| Using iterators instead of traditional array methods can reduce memory footprint by avoiding the creation of intermediate arrays, particularly beneficial when processing large collections. | [js-allonge:claim_js-allonge_c015_168020df], [js-allonge:claim_js-allonge_c015_b11391f9], [js-allonge:claim_js-allonge_c015_e37104d8], [js-allonge:claim_js-allonge_c015_666e23f2] |
+
+## Why it matters
+
+Understanding JavaScript memory management helps developers write more efficient code by choosing appropriate data manipulation techniques. Strategies like copy-on-write and copy-on-read can significantly impact performance, especially when dealing with large datasets or frequent modifications.
+
+## Related pages
+
+- [JavaScript Arrays](../concepts/js-arrays.md)
+- [JavaScript Iterables](../concepts/js-iterables.md)
+- [JavaScript Functional Programming](../concepts/js-functional-programming.md)
 
 ## Source pages
 
-- [JavaScript Allongé](../sources/js-allonge.md)
+- [Js Allonge](../sources/js-allonge.md)

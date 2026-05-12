@@ -20,6 +20,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterator
 
+from wiki_core.serde import structure, unstructure
+
 from wiki_io.state.paths import (
     get_raw_claims_path,
     get_normalized_claims_path,
@@ -51,25 +53,11 @@ class RawClaim:
             self.extracted_at = datetime.now(timezone.utc).isoformat()
 
     def to_dict(self) -> dict:
-        return {
-            "topic": self.topic,
-            "claim": self.claim,
-            "evidence": self.evidence,
-            "locator": self.locator,
-            "chunk_index": self.chunk_index,
-            "extracted_at": self.extracted_at,
-        }
+        return unstructure(self)
 
     @classmethod
     def from_dict(cls, d: dict) -> RawClaim:
-        return cls(
-            topic=d.get("topic", ""),
-            claim=d.get("claim", ""),
-            evidence=d.get("evidence", ""),
-            locator=d.get("locator", ""),
-            chunk_index=d.get("chunk_index", 0),
-            extracted_at=d.get("extracted_at", ""),
-        )
+        return structure(d, cls)
 
 
 def append_raw_claim(slug: str, claim: RawClaim) -> None:
@@ -165,25 +153,11 @@ class NormalizedClaim:
     chunk_index: int
 
     def to_dict(self) -> dict:
-        return {
-            "claim_id": self.claim_id,
-            "topic": self.topic,
-            "claim": self.claim,
-            "evidence": self.evidence,
-            "locator": self.locator,
-            "chunk_index": self.chunk_index,
-        }
+        return unstructure(self)
 
     @classmethod
     def from_dict(cls, d: dict) -> NormalizedClaim:
-        return cls(
-            claim_id=d.get("claim_id", ""),
-            topic=d.get("topic", ""),
-            claim=d.get("claim", ""),
-            evidence=d.get("evidence", ""),
-            locator=d.get("locator", ""),
-            chunk_index=d.get("chunk_index", 0),
-        )
+        return structure(d, cls)
 
 
 @dataclass

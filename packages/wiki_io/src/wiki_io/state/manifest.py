@@ -25,6 +25,8 @@ from enum import Enum
 from pathlib import Path
 from typing import Any
 
+from wiki_core.serde import structure, unstructure
+
 from wiki_io.state.paths import get_state_dir, get_manifest_path, ensure_state_dir
 
 
@@ -71,21 +73,11 @@ class ErrorInfo:
             self.occurred_at = datetime.now(timezone.utc).isoformat()
 
     def to_dict(self) -> dict:
-        return {
-            "phase": self.phase,
-            "message": self.message,
-            "artifact": self.artifact,
-            "occurred_at": self.occurred_at,
-        }
+        return unstructure(self)
 
     @classmethod
     def from_dict(cls, data: dict) -> ErrorInfo:
-        return cls(
-            phase=data["phase"],
-            message=data["message"],
-            artifact=data.get("artifact"),
-            occurred_at=data.get("occurred_at", ""),
-        )
+        return structure(data, cls)
 
 
 @dataclass
@@ -98,11 +90,11 @@ class Phase2Progress:
     pending: int = 0
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        return unstructure(self)
 
     @classmethod
     def from_dict(cls, data: dict) -> Phase2Progress:
-        return cls(**data)
+        return structure(data, cls)
 
 
 def _get_git_commit() -> str | None:

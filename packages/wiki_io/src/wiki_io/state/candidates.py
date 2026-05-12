@@ -21,6 +21,8 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
+from wiki_core.serde import structure, unstructure
+
 from wiki_io.state.paths import (
     get_generated_candidates_path,
     get_override_path,
@@ -36,35 +38,17 @@ class Candidate:
     path: str
     page_type: str  # concept, entity, procedure, reference
     priority: str   # must create, should create, could create, defer
-    claim_ids: list[str]
+    claim_ids: list[str] = field(default_factory=lambda: [])
     evidence_basis: str = ""
     group: str = ""  # Natural grouping from source
     status: str = "not created"  # not created, created, suppressed
 
     def to_dict(self) -> dict:
-        return {
-            "title": self.title,
-            "path": self.path,
-            "page_type": self.page_type,
-            "priority": self.priority,
-            "claim_ids": self.claim_ids,
-            "evidence_basis": self.evidence_basis,
-            "group": self.group,
-            "status": self.status,
-        }
+        return unstructure(self)
 
     @classmethod
     def from_dict(cls, d: dict) -> Candidate:
-        return cls(
-            title=d.get("title", ""),
-            path=d.get("path", ""),
-            page_type=d.get("page_type", "concept"),
-            priority=d.get("priority", "should create"),
-            claim_ids=d.get("claim_ids", []),
-            evidence_basis=d.get("evidence_basis", ""),
-            group=d.get("group", ""),
-            status=d.get("status", "not created"),
-        )
+        return structure(d, cls)
 
 
 # ============================================================================

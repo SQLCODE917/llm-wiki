@@ -16,8 +16,11 @@ Usage:
 from __future__ import annotations
 
 import re
+import unicodedata
 from dataclasses import dataclass
 from typing import Literal
+
+import ftfy
 
 
 # Hard failure reasons that should override LLM judge verdicts
@@ -63,23 +66,6 @@ class EvidenceValidationResult:
         return self.severity in ("pass", "warn")
 
 
-# Unicode character replacements for canonicalization
-_UNICODE_REPLACEMENTS = {
-    "\u00a0": " ",   # Non-breaking space
-    "\u2010": "-",   # Hyphen
-    "\u2011": "-",   # Non-breaking hyphen
-    "\u2012": "-",   # Figure dash
-    "\u2013": "-",   # En dash
-    "\u2014": "-",   # Em dash
-    "\u2015": "-",   # Horizontal bar
-    "\u2018": "'",   # Left single quote
-    "\u2019": "'",   # Right single quote
-    "\u201c": '"',   # Left double quote
-    "\u201d": '"',   # Right double quote
-    "\u2026": "...",  # Ellipsis
-}
-
-
 def looks_like_code(text: str) -> bool:
     """Check if text appears to be a code snippet.
 
@@ -113,6 +99,7 @@ def canonicalize_for_evidence_match(text: str) -> str:
     - Inconsistent bullets and dashes
     - Whitespace and line wrap variations
 
+    Uses ftfy for robust Unicode normalization (mojibake, quotes, dashes).
     Intended only for validator comparison, not for user-facing text.
     """
     # Normalize line endings first
@@ -141,12 +128,13 @@ def canonicalize_for_evidence_match(text: str) -> str:
     text = re.sub(r"\n[ivxlcdm]+\n", "\n", text, flags=re.IGNORECASE)
     text = re.sub(r"\n[A-Z ]{3,30}\n", "\n", text)
 
-    # Unicode normalization
-    for old, new in _UNICODE_REPLACEMENTS.items():
-        text = text.replace(old, new)
+    # Unicode normalization with ftfy (handles mojibake, smart quotes, etc.)
+    text = ftfy.fix_text(text)
+    text = unicodedata.normalize("NFKC", text)
 
-    # Normalize ASCII dash variants
-    text = text.replace("‐", "-")
+    # Normalize all dash variants to ASCII hyphen for permissive matching
+    # (ftfy preserves semantically-valid en/em dashes; we want them unified)
+    text = re.sub(r"[\u2010-\u2015\u2212]", "-", text)
 
     # Un-escape Markdown table escapes
     text = text.replace(r'\|', '|')
