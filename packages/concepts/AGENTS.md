@@ -42,6 +42,7 @@ concepts/
 ```
 
 Each concept gets:
+
 1. A source file in `src/` with the implementation
 2. A test file in `tests/` with the same base name
 3. An export in `src/index.ts`
@@ -86,6 +87,7 @@ pnpm code:typecheck
 ```
 
 Before merging changes:
+
 1. `pnpm code:typecheck` must pass.
 2. `pnpm code:test` must pass.
 3. New implementations must have corresponding tests.
@@ -95,11 +97,13 @@ Before merging changes:
 ## When to add code here
 
 Add code to `concepts/` when:
+
 - A wiki concept page describes something that can be computed
 - The implementation helps verify the concept's correctness
 - Tests can demonstrate the concept's behavior
 
 Do **not** add code here if it:
+
 - Is wiki infrastructure (use Python packages instead)
 - Has no corresponding wiki concept page
 - Is a one-off script (keep in `tools/`)

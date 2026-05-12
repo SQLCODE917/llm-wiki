@@ -7,6 +7,7 @@
 ## Purpose
 
 This package provides a unified interface for LLM interactions:
+
 - Multiple backend support (Bedrock, OpenAI, Anthropic, Codex CLI)
 - System prompt loading and template management
 - Model output parsing (file extraction, JSON extraction)
@@ -67,12 +68,12 @@ The `get_backend()` function selects a backend in this priority order:
 
 Supported backends:
 
-| Name | SDK | Environment Variables |
-|------|-----|----------------------|
-| `bedrock` | `boto3` | `AWS_PROFILE`, `AWS_REGION` |
-| `openai` | `openai` | `OPENAI_API_KEY` |
-| `anthropic` | `anthropic` | `ANTHROPIC_API_KEY` |
-| `codex` | (CLI) | None (uses local Codex CLI) |
+| Name        | SDK         | Environment Variables       |
+| ----------- | ----------- | --------------------------- |
+| `bedrock`   | `boto3`     | `AWS_PROFILE`, `AWS_REGION` |
+| `openai`    | `openai`    | `OPENAI_API_KEY`            |
+| `anthropic` | `anthropic` | `ANTHROPIC_API_KEY`         |
+| `codex`     | (CLI)       | None (uses local Codex CLI) |
 
 ---
 
@@ -80,14 +81,14 @@ Supported backends:
 
 The `load_system_prompt(style)` function supports these styles:
 
-| Style | Description | Token Budget |
-|-------|-------------|--------------|
-| `"full"` | Complete AGENTS.md | ~7K |
-| `"synthesis"` | Wiki page synthesis | ~800 |
-| `"synthesis-json"` | JSON schema output | ~500 |
-| `"extract"` | Claim extraction | ~500 |
-| `"query"` | Query answering | ~400 |
-| `"judge"` | Claim judging | ~400 |
+| Style              | Description         | Token Budget |
+| ------------------ | ------------------- | ------------ |
+| `"full"`           | Complete AGENTS.md  | ~7K          |
+| `"synthesis"`      | Wiki page synthesis | ~800         |
+| `"synthesis-json"` | JSON schema output  | ~500         |
+| `"extract"`        | Claim extraction    | ~500         |
+| `"query"`          | Query answering     | ~400         |
+| `"judge"`          | Claim judging       | ~400         |
 
 Prompt templates live in `tools/prompts/`.
 
@@ -97,7 +98,7 @@ Prompt templates live in `tools/prompts/`.
 
 Model outputs often contain fenced code blocks with file paths:
 
-```markdown
+````markdown
 Here's the updated page:
 
 ```wiki/concepts/example.md
@@ -109,6 +110,7 @@ title: Example
 Content here.
 `` `
 ```
+````
 
 Use `parse_model_output()` to extract files:
 
@@ -130,11 +132,13 @@ python -m pytest packages/wiki_llm/tests/ -v
 ```
 
 Tests do not make actual LLM API calls. They test:
+
 - Configuration handling
 - Response parsing
 - Prompt loading
 
 Before merging changes:
+
 1. All tests must pass.
 2. New backends must follow the `ModelBackend` interface.
 3. SDK imports must be lazy (inside methods, not at module level).
@@ -144,11 +148,13 @@ Before merging changes:
 ## When to add code here
 
 Add code to `wiki_llm` when:
+
 - It communicates with an LLM API
 - It parses LLM output into structured data
 - It manages prompts or model configuration
 
 Do **not** add code here if it:
+
 - Is a pure data type → use `wiki_core`
 - Reads/writes wiki state files → use `wiki_io`
 - Contains wiki-specific business logic → keep in `tools/`

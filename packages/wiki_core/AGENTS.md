@@ -60,6 +60,7 @@ cd tools && python -m pytest test_wiki_core_types.py test_wiki_core_parsing.py -
 ```
 
 Before merging changes to this package:
+
 1. All existing tests must pass.
 2. New public functions must have tests.
 3. Type hints are required on all public functions.
@@ -69,11 +70,13 @@ Before merging changes to this package:
 ## When to add code here
 
 Add code to `wiki_core` when:
+
 - It defines a data structure used across multiple tools
 - It performs text transformation without reading/writing files
 - It needs to be imported by both `wiki_io` and `wiki_llm`
 
 Do **not** add code here if it:
+
 - Reads or writes files → use `wiki_io`
 - Calls an LLM API → use `wiki_llm`
 - Is specific to one CLI tool → keep in `tools/`

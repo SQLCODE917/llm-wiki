@@ -7,6 +7,7 @@
 ## Purpose
 
 This package handles all file I/O for the wiki ingestion pipeline:
+
 - Reading and writing extraction state (manifests, claims, candidates)
 - Evidence resolution and validation
 - Path utilities for the `.wiki-extraction-state/` directory
@@ -83,6 +84,7 @@ the exact source excerpt and locator.
 ## Testing
 
 Tests live in:
+
 - `packages/wiki_io/tests/test_evidence_*.py` (unit tests)
 - `tools/test_wiki_io_state.py` (integration tests)
 
@@ -94,6 +96,7 @@ cd tools && python -m pytest test_wiki_io_state.py -v
 ```
 
 Before merging changes:
+
 1. All tests must pass.
 2. Changes to state file formats require updating `SCHEMA_VERSION`.
 3. Backward compatibility with existing `.wiki-extraction-state/` data is required.
@@ -103,11 +106,13 @@ Before merging changes:
 ## When to add code here
 
 Add code to `wiki_io` when:
+
 - It reads or writes files in `.wiki-extraction-state/`
 - It validates evidence against source files
 - It manages pipeline state (manifests, progress tracking)
 
 Do **not** add code here if it:
+
 - Is a pure data type with no I/O → use `wiki_core`
 - Calls an LLM API → use `wiki_llm`
 - Is a CLI entry point → keep in `tools/`
