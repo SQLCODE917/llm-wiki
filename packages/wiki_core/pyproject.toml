@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wiki-core"
+version = "0.1.0"
+description = "Pure domain types for the wiki ingestion pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml>=6.0",
+    "cattrs>=23.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "mypy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

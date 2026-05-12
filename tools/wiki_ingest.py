@@ -29,11 +29,17 @@ from wiki_deep_extract import (
     run_deep_extraction,
     load_extraction_state,
     create_source_page_from_topics,
-    get_state_path,
     page_slug_for_topic,
 )
 from wiki_common import parse_frontmatter, section
-from wiki_manifest import Manifest, PhaseStatus, load_or_create_manifest
+
+# Import from refactored packages
+from wiki_io.state import (
+    Manifest,
+    PhaseStatus,
+    get_normalized_claims_path,
+    load_or_create_manifest,
+)
 
 
 DEFAULTS_PATH = Path("tools/wiki_model_defaults.json")
@@ -281,8 +287,10 @@ def run_ingest(config: IngestConfig) -> int:
     print(f"\nExtraction state loaded:")
     print(f"  Claims: {len(state.claims)}")
     print(f"  Topics: {len(state.topics)}")
-    print(
-        f"  Chunks processed: {len(state.processed_chunks)}/{len(state.chunks)}")
+    # chunks list may be empty when loaded from claims-normalized.json
+    chunk_total = len(state.chunks) if state.chunks else len(
+        state.processed_chunks)
+    print(f"  Chunks processed: {len(state.processed_chunks)}/{chunk_total}")
 
     # =========================================================================
     # Phase 2a: Create source page
@@ -351,7 +359,7 @@ def run_ingest(config: IngestConfig) -> int:
 
             report = Path(tempfile.gettempdir()) / \
                 f"wiki-ingest-{config.slug}-{Path(page_path).stem}.md"
-            extraction_state_path = get_state_path(config.slug)
+            extraction_state_path = get_normalized_claims_path(config.slug)
             command = [
                 "python3",
                 "tools/wiki_phase2_single.py",

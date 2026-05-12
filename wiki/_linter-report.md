@@ -1,6 +1,6 @@
 # Wiki Linter Report
 
-Generated: 2026-05-11
+Generated: 2026-05-12
 
 ## Summary
 
@@ -19,4 +19,3 @@ None.
 ## TODO
 
 - `wiki/sources/aoe2-basics.md` — Related pages lists candidate paths not created yet
-- `wiki/sources/js-allonge.md` — Related pages lists candidate paths not created yet

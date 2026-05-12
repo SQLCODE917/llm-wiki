@@ -8,6 +8,20 @@
 
 ---
 
+## Read order
+
+Before changing code, read:
+
+1. This file (repo-level rules).
+2. The nearest package-level `AGENTS.md` (e.g., `packages/wiki_core/AGENTS.md`).
+3. Any referenced document in `docs/` that affects the task.
+
+Package-level AGENTS.md files contain design decisions, import conventions, and testing
+requirements specific to that package. The repo-level rules here always apply; package
+rules add constraints, not exceptions.
+
+---
+
 ## Mission
 
 Maintain the wiki in `/wiki` as the compiled knowledge layer for `/raw`.
@@ -49,11 +63,60 @@ Raw sources are preserved. The wiki is synthesized. Queries and lint passes shou
 - `wiki/procedures/`: workflows, how-tos, build orders, operating steps
 - `wiki/references/`: tables, formulas, constants, lookup facts
 - `wiki/analyses/`: durable analyses generated from questions
-- `packages/concepts/src/`: executable TypeScript implementations
-- `packages/concepts/tests/`: tests for implementations
-- `tools/`: repo helper scripts
+- `packages/wiki_core/`: pure Python types and parsing (no I/O, no LLM)
+- `packages/wiki_io/`: I/O layer — state management, evidence resolution
+- `packages/wiki_llm/`: LLM backends, prompts, response parsing
+- `packages/concepts/`: executable TypeScript implementations
+- `tools/`: CLI scripts (import from packages, add CLI wrappers)
 
 If a needed directory does not exist, create it.
+
+---
+
+## Environment setup
+
+### Python
+
+This repository uses pip with editable installs. The devcontainer provides Python 3.11.
+
+Install or reinstall packages:
+
+```bash
+pip install -e packages/wiki_core -e packages/wiki_io -e packages/wiki_llm
+pip install -r requirements.txt
+```
+
+Verify packages are installed:
+
+```bash
+pip list | grep wiki
+```
+
+### AWS Bedrock (for LLM calls)
+
+The default LLM backend is AWS Bedrock. Credentials require SSO authentication.
+
+```bash
+# First-time setup or after credential expiry
+aws configure sso --profile sdai-dev
+
+# Authenticate (refresh as needed)
+aws sso login --profile sdai-dev
+
+# Verify credentials work
+aws bedrock list-foundation-models --region us-east-1 --profile sdai-dev | head -5
+```
+
+Environment variables (set in devcontainer.json):
+
+```bash
+export AWS_PROFILE=sdai-dev
+export AWS_REGION=us-east-1
+export WIKI_MODEL_BACKEND=bedrock
+```
+
+If you see "Unable to locate credentials" errors during ingest, run `aws configure sso --profile sdai-dev`
+to refresh the SSO configuration.
 
 ---
 

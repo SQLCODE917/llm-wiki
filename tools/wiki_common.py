@@ -5,6 +5,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
+import frontmatter as fm
+
 
 CONTENT_DIRS = {
     "sources",
@@ -62,63 +64,21 @@ def page_node_id(path: Path) -> str:
 
 
 def parse_frontmatter(path: Path) -> Frontmatter:
+    """Parse YAML frontmatter from a markdown file.
+
+    Uses python-frontmatter for robust YAML parsing.
+    Returns a Frontmatter dataclass with data, body, and errors.
+    """
     text = path.read_text()
     if not text.startswith("---\n"):
         return Frontmatter({}, text, ["missing YAML frontmatter"])
 
-    end = text.find("\n---\n", 4)
-    if end == -1:
-        return Frontmatter({}, text, ["unterminated YAML frontmatter"])
-
-    raw = text[4:end].splitlines()
-    body = text[end + 5:]
-    data: dict[str, object] = {}
-    errors: list[str] = []
-    current_key: str | None = None
-
-    for line in raw:
-        if not line.strip():
-            continue
-        if line.startswith("  - ") and current_key:
-            value = line[4:].strip()
-            existing = data.setdefault(current_key, [])
-            if isinstance(existing, list):
-                existing.append(_parse_scalar(value))
-            else:
-                errors.append(f"frontmatter key {current_key!r} is not a list")
-            continue
-        if line[0].isspace():
-            errors.append(f"frontmatter key line must not be indented: {line}")
-            current_key = None
-            continue
-        if ":" not in line:
-            errors.append(f"cannot parse frontmatter line: {line}")
-            current_key = None
-            continue
-        key, value = line.split(":", 1)
-        key = key.strip()
-        value = value.strip()
-        current_key = key
-        if value == "":
-            data[key] = []
-        elif value.startswith("[") and value.endswith("]"):
-            inside = value[1:-1].strip()
-            data[key] = [] if not inside else [_parse_scalar(
-                part.strip()) for part in inside.split(",")]
-        else:
-            data[key] = _parse_scalar(value)
-
-    return Frontmatter(data, body, errors)
-
-
-def _parse_scalar(value: str) -> object:
-    if value in {"[]", ""}:
-        return []
-    if value in {"true", "false"}:
-        return value == "true"
-    if (value.startswith('"') and value.endswith('"')) or (value.startswith("'") and value.endswith("'")):
-        return value[1:-1]
-    return value
+    try:
+        post = fm.loads(text)
+        return Frontmatter(dict(post.metadata), post.content, [])
+    except Exception as e:
+        # Fall back to returning the text as body if parsing fails
+        return Frontmatter({}, text, [f"YAML parse error: {e}"])
 
 
 def section(body: str, heading: str) -> str:

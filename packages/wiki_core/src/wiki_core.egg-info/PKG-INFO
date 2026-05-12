@@ -1,0 +1,99 @@
+Metadata-Version: 2.4
+Name: wiki-core
+Version: 0.1.0
+Summary: Pure domain types for the wiki ingestion pipeline
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: cattrs>=23.0
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+
+# wiki_core
+
+Pure domain types and parsing utilities for the wiki ingestion pipeline.
+
+## Overview
+
+This package contains shared domain types and parsing utilities with **no I/O or LLM dependencies**.
+All types are serializable and have explicit `to_dict()` and `from_dict()` methods.
+
+## Types
+
+### Claim Types
+
+- **`Claim`** — The canonical extracted claim with evidence and locator
+- **`RawClaim`** — Claim with extraction timestamp (extends Claim)
+- **`NormalizedClaim`** — Alias for Claim (post-deduplication)
+- **`SynthesisClaim`** — Claim with evidence ID references for page synthesis
+- **`SourceClaim`** — Frozen claim for analysis with precomputed tokens
+
+### Locator
+
+- **`Locator`** — Reference to a line range in normalized source
+- **`parse_locator()`** — Parse a locator string to (start, end) tuple
+- **`normalize_locator()`** — Convert to canonical range format
+
+### Frontmatter
+
+- **`Frontmatter`** — Typed schema for wiki page frontmatter
+- **`ParsedFrontmatter`** — Raw parsing result with data, body, errors
+
+## Parsing
+
+### Markdown Processing
+
+- **`strip_markdown()`** — Remove Markdown formatting (links, code, bold/italic)
+- **`normalize_for_search()`** — Normalize text for fuzzy matching
+
+### Table Parsing
+
+- **`split_table_row()`** — Parse a Markdown table row into cells
+- **`table_rows()`** — Extract all table rows from Markdown text
+- **`is_separator_row()`** — Check if row is a separator (|---|---|)
+- **`code_cell_target()`** — Extract .md path from backtick-wrapped cell
+- **`link_cell_target()`** — Extract .md path from Markdown link cell
+- **`first_markdown_target()`** — Find first .md link target in text
+
+### Evidence Processing
+
+- **`clean_evidence_excerpt()`** — Clean evidence text for comparison
+
+## Usage
+
+```python
+from wiki_core.types import Claim, Locator, Frontmatter
+from wiki_core.parsing import strip_markdown, split_table_row, normalize_for_search
+
+# Parse a locator
+loc = Locator.parse("normalized:L100-L105")
+print(loc.start_line)  # 100
+
+# Create a claim
+claim = Claim(
+    topic="Functions",
+    claim="Functions are first-class citizens",
+    evidence="In JavaScript, functions are first-class...",
+    locator="normalized:L100-L105",
+    chunk_index=0,
+)
+print(claim.claim_id)  # claim_unknown_c000_abc12345
+
+# Parse a table row
+cells = split_table_row("| A | B | C |")  # ["A", "B", "C"]
+
+# Normalize text for search
+normalized = normalize_for_search("Some—Text")  # "sometext"
+
+# Strip markdown formatting
+plain = strip_markdown("[link](url)")  # "link"
+```
+
+## Design Principles
+
+1. **No I/O** — Types and functions don't read from or write to files
+2. **No LLM calls** — Pure data structures and transformations
+3. **Explicit serialization** — `to_dict()` and `from_dict()` methods
+4. **Immutable where possible** — `@dataclass(frozen=True)` for analysis types
+5. **Typed** — Full type hints and `py.typed` marker

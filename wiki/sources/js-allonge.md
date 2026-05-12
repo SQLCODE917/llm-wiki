@@ -6,7 +6,7 @@ source_type: pdf
 raw_path: ../../raw/imported/js-allonge/
 normalized_path: ../../raw/normalized/js-allonge/
 status: draft
-last_updated: 2026-05-11
+last_updated: 2026-05-12
 tags: []
 sources:
   - ../../raw/imported/js-allonge/original.pdf
@@ -18,74 +18,93 @@ sources:
 
 **JavaScript Allongé, the "Six" Edition** Programming from Functions to Classes in ECMAScript 2015 This book is for sale at http://leanpub.com/javascriptallongesix This version was published on 2017-11-03
 
-Extracted 445 claims from 19 chunks, organized into 10 viable topics.
+Extracted 453 claims from 19 chunks, organized into 16 viable topics.
 
 ### Extraction Metadata
 
-- Claim count: 445
-- Topic count: 10
+- Claim count: 453
+- Topic count: 16
 - Generation: summary (llm), tables (deterministic)
 
 ## Key claims
 
 | Claim | Evidence | Locator |
 |---|---|---|
-| ECMAScript 2015 allows collecting variable arguments into a parameter using rest | "We can also write:   **function** foo (first, ...rest) { _// ..._   }" | `normalized:L165-L167` |
-| Variable argument handling in JavaScript before ES6 required manual slicing of a | "Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into " | `normalized:L147-L150` |
-| Using let in loops avoids issues with closures capturing the final loop variable | "let introductions = [], names = ['Karl', 'Friedrich', 'Gauss']; for (let i = 0; i < 3; i++) { introd" | `normalized:L3663-L3663` |
-| Functions can be used to implement list printing functionality. | "print = (list) => list( () => "", (aPair) => ` ${ aPair(pairFirst) } ${ print(aPair(pairRest)) } ` )" | `normalized:L4277-L4277` |
-| Parameters in a function definition allow values to be passed into the function. | "function greet(name) { console.log(`Hello, ${name}!`); }" | `normalized:L100-L100` |
-| A function can have default parameter values assigned when no argument is provid | "function greet(name = 'World') { return `Hello, ${name}!`; }" | `normalized:L100-L100` |
-| ECMAScript 2015 introduced block-structured variables allowing local scoping in  | "With ECMASCript 2015, we can write:   **for** ( **let** i = 0; i < array.length; ++i) { _// ..._ }  " | `normalized:L157-L158` |
-| ECMAScript 2015 adds features that make programming techniques easier to explain | "ECMAScript 2015 does more than simply update the language with some simpler syntax for a few things " | `normalized:L183-L183` |
-| Before ES6, JavaScript required workarounds like IIFEs to achieve block scoping. | "Prior to ECMAScript 2015, JavaScript did not support block-structuring, so programmers borrowed a tr" | `normalized:L137-L140` |
-| JavaScript supports iteration through iterables and generators introduced in ES6 | "Iteration and Iterables . . . . . . . . . . . . .\|. . . . . . . . . . . . . . . . . . . . . . . .\|" | `normalized:L79-L79` |
+| ECMAScript 2015 introduced features that make programming with functions more ex | "ECMAScript 2015 (formerly called ECMAScript 6 or "ES6"), is ushering in a very large number of impro" | `normalized:L119-L119` |
+| ECMAScript 2015 allows for collecting a variable number of arguments into a para | "We can also write:   **function** foo (first, ...rest) { _// ..._   }" | `normalized:L165-L167` |
+| ECMAScript 6 introduced three major groups of features: better syntax, new funct | "ECMAScript 6 has three major groups of features:   - Better syntax for features that already exist (" | `normalized:L253-L265` |
+| ECMAScript 2015 allows functions to have a variable number of arguments collecte | "We can also write:   **function** foo (first, ...rest) { _// ..._   }" | `normalized:L165-L167` |
+| Prior to ECMAScript 2015, JavaScript required workarounds to collect variable ar | "Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into " | `normalized:L147-L150` |
+| Destructuring can be used to simulate multiple return values from functions | "**const** description = (nameAndOccupation) => { **if** (nameAndOccupation.length < 2) { **return** " | `normalized:L2547-L2551` |
+| The var keyword is function-scoped and hoisted, which can lead to unexpected beh | "var i = 0; i < 3; i++) { introductions[i] = (soAndSo) => `Hello, ${soAndSo}, my name is ${names[i]}`" | `normalized:L3641-L3641` |
+| Using let instead of var in loops ensures proper scoping of loop variables for c | "for (let i = 0; i < 3; i++) { introductions[i] = (soAndSo) => `Hello, ${soAndSo}, my name is ${names" | `normalized:L3663-L3663` |
+| Block-structured variables in ECMAScript 2015 allow for local scoping of variabl | "With ECMASCript 2015, we can write:   **for** ( **let** i = 0; i < array.length; ++i) { _// ..._ }  " | `normalized:L157-L157` |
+| ECMAScript 2015 introduced block-structured variables allowing local scoping wit | "With ECMASCript 2015, we can write:   **for** ( **let** i = 0; i < array.length; ++i) { _// ..._ }  " | `normalized:L157-L157` |
+
+## Major concepts
 
 ### Extracted Topics
 
 | Topic | Claims | Sections | Status | Notes |
 |---|---|---|---|---|
-| Functions | 206 | 72 | synthesized |  |
-| Iterators | 76 | 28 | synthesized |  |
-| Data Types | 44 | 21 | synthesized |  |
-| Arrays | 27 | 14 | synthesized |  |
-| Control Flow | 26 | 15 | synthesized |  |
-| Objects | 21 | 10 | synthesized |  |
-| Functional Programming | 20 | 14 | synthesized |  |
-| ES6 Features | 14 | 10 | synthesized |  |
-| Recursion | 6 | 4 | synthesized |  |
-| Strings | 3 | 2 | synthesized |  |
-| Closures | 2 | 2 | deferred | Too few claims (2 < 3) |
-
-## Major concepts
+| Functions | 162 | 69 | not_started |  |
+| Control Flow | 58 | 29 | not_started |  |
+| Data Types | 56 | 32 | not_started |  |
+| Data Structures | 34 | 14 | not_started |  |
+| Arrays | 27 | 16 | not_started |  |
+| Iterables | 22 | 12 | not_started |  |
+| Functional Programming | 15 | 10 | not_started |  |
+| Objects | 14 | 10 | not_started |  |
+| Variables | 13 | 3 | not_started |  |
+| Memory Management | 11 | 7 | not_started |  |
+| Collections | 10 | 6 | not_started |  |
+| Iterators | 10 | 7 | not_started |  |
+| Values | 5 | 3 | not_started |  |
+| Recursion | 5 | 4 | not_started |  |
+| Algorithms | 5 | 3 | not_started |  |
+| Scope | 3 | 1 | not_started | Single section |
+| Pattern Matching | 2 | 2 | deferred | Too few claims (2 < 3) |
+| Lazy Evaluation | 1 | 1 | deferred | Too few claims (1 < 3) |
 
 | Concept | Page | Status | Claims Used | Claims Available | Section Coverage |
 |---|---|---|---|---|---|
-| Arrays | `../concepts/arrays.md` | not_started | - | 27 | - |
-| Control Flow | `../concepts/control-flow.md` | not_started | - | 26 | - |
-| Data Types | `../concepts/data-types.md` | not_started | - | 44 | - |
-| ES6 Features | `../concepts/es6-features.md` | not_started | - | 14 | - |
-| Functional Programming | `../concepts/functional-programming.md` | not_started | - | 20 | - |
-| Functions | `../concepts/functions.md` | not_started | - | 206 | - |
-| Iterators | `../concepts/iterators.md` | not_started | - | 76 | - |
-| Objects | `../concepts/objects.md` | not_started | - | 21 | - |
-| Recursion | `../concepts/recursion.md` | not_started | - | 6 | - |
-| Strings | `../concepts/strings.md` | not_started | - | 3 | - |
+| Algorithms | `../concepts/js-algorithms.md` | not_started | - | 5 | - |
+| Arrays | `../concepts/js-arrays.md` | not_started | - | 27 | - |
+| Collections | `../concepts/js-collections.md` | not_started | - | 10 | - |
+| Control Flow | `../concepts/js-control-flow.md` | not_started | - | 58 | - |
+| Data Structures | `../concepts/js-data-structures.md` | not_started | - | 34 | - |
+| Data Types | `../concepts/js-data-types.md` | not_started | - | 56 | - |
+| Functional Programming | `../concepts/js-functional-programming.md` | not_started | - | 15 | - |
+| Functions | `../concepts/js-functions.md` | not_started | - | 162 | - |
+| Iterables | `../concepts/js-iterables.md` | not_started | - | 22 | - |
+| Iterators | `../concepts/js-iterators.md` | not_started | - | 10 | - |
+| Memory Management | `../concepts/js-memory-management.md` | not_started | - | 11 | - |
+| Objects | `../concepts/js-objects.md` | not_started | - | 14 | - |
+| Recursion | `../concepts/js-recursion.md` | not_started | - | 5 | - |
+| Scope | `../concepts/js-scope.md` | not_started | - | 3 | - |
+| Values | `../concepts/js-values.md` | not_started | - | 5 | - |
+| Variables | `../concepts/js-variables.md` | not_started | - | 13 | - |
 
 ### Candidate Concepts
 
 | Candidate | Canonical Slug | Priority | Claims | Sections | Sources | Status |
 |---|---|---|---|---|---|---|
-| Arrays | arrays | must create | 27 | 14 | 1 | discovered |
-| Control Flow | control-flow | must create | 26 | 15 | 1 | discovered |
-| Data Types | data-types | must create | 44 | 21 | 1 | discovered |
-| ES6 Features | es6-features | must create | 14 | 10 | 1 | discovered |
-| Functional Programming | functional-programming | must create | 20 | 14 | 1 | discovered |
-| Functions | functions | must create | 206 | 72 | 1 | discovered |
-| Iterators | iterators | must create | 76 | 28 | 1 | discovered |
-| Objects | objects | must create | 21 | 10 | 1 | discovered |
-| Recursion | recursion | should create | 6 | 4 | 1 | discovered |
-| Strings | strings | could create | 3 | 2 | 1 | discovered |
+| Algorithms | js-algorithms | should create | 5 | 3 | 1 | discovered |
+| Arrays | js-arrays | must create | 27 | 16 | 1 | discovered |
+| Collections | js-collections | must create | 10 | 6 | 1 | discovered |
+| Control Flow | js-control-flow | must create | 58 | 29 | 1 | discovered |
+| Data Structures | js-data-structures | must create | 34 | 14 | 1 | discovered |
+| Data Types | js-data-types | must create | 56 | 32 | 1 | discovered |
+| Functional Programming | js-functional-programming | must create | 15 | 10 | 1 | discovered |
+| Functions | js-functions | must create | 162 | 69 | 1 | discovered |
+| Iterables | js-iterables | must create | 22 | 12 | 1 | discovered |
+| Iterators | js-iterators | must create | 10 | 7 | 1 | discovered |
+| Memory Management | js-memory-management | must create | 11 | 7 | 1 | discovered |
+| Objects | js-objects | must create | 14 | 10 | 1 | discovered |
+| Recursion | js-recursion | should create | 5 | 4 | 1 | discovered |
+| Scope | js-scope | could create | 3 | 1 | 1 | discovered |
+| Values | js-values | should create | 5 | 3 | 1 | discovered |
+| Variables | js-variables | must create | 13 | 3 | 1 | discovered |
 
 ### Source Locator Map
 
@@ -93,23 +112,23 @@ Extracted 445 claims from 19 chunks, organized into 10 viable topics.
 |---|---|---|
 | 3-24 | - | Reg "raganwald" Braithwaite |
 | 25-56 | - | **Contents** |
-| 57-90 | Arrays, Iterators | CONTENTS |
-| 91-106 | Arrays, Closures | **A Pull of the Lever: Prefaces** |
-| 107-116 | Functions | **About JavaScript Allongé** |
-| 117-172 | Control Flow, ES6 Features | **why the "six" edition?** |
-| 173-194 | ES6 Features, Functional Programming | **that's nice. is that the only reason?** |
-| 195-228 | Functional Programming, Functions | **What JavaScript Allongé is. And isn't.** |
-| 229-244 | - | **how this book is organized** |
-| 245-280 | - | **Foreword to the "Six" edition** |
+| 57-90 | - | CONTENTS |
+| 91-106 | Arrays, Control Flow | **A Pull of the Lever: Prefaces** |
+| 107-116 | Arrays, Control Flow | **About JavaScript Allongé** |
+| 117-172 | Arrays, Control Flow | **why the "six" edition?** |
+| 173-194 | Functions, Objects | **that's nice. is that the only reason?** |
+| 195-228 | Functions, Objects | **What JavaScript Allongé is. And isn't.** |
+| 229-244 | Functions | **how this book is organized** |
+| 245-280 | Functions | **Foreword to the "Six" edition** |
 | 281-282 | - | **Forewords to the First Edition** |
 | 283-296 | - | **michael fogus** |
 | 297-320 | - | **matthew knox** |
 | 321-336 | - | **About The Sample PDF** |
 | 337-352 | - | **Prelude: Values and Expressions over Coffee** |
-| 353-358 | Data Types | **values are expressions** |
+| 353-358 | Values | **values are expressions** |
 | 359-364 | - | 42 |
-| 365-394 | Data Types | 42 |
-| 395-416 | Data Types | **values and identity** |
+| 365-394 | Data Types, Values | 42 |
+| 395-416 | Control Flow, Data Types | **values and identity** |
 | 417-432 | Data Types | **value types** |
 
 ## Entities
@@ -132,13 +151,19 @@ None identified.
 
 | Candidate page | Intended path | Group | Priority | Evidence basis | Status |
 |---|---|---|---|---|---|
-| Arrays | [../concepts/arrays.md](../concepts/arrays.md) | Deep extraction | must create | 27 claims covering array, arrays, javascript | created |
-| Control Flow | [../concepts/control-flow.md](../concepts/control-flow.md) | Deep extraction | must create | 26 claims covering argument, before, javascript | created |
-| Data Types | `../concepts/data-types.md` | Deep extraction | must create | 44 claims covering expressions, javascript, uses | not created yet |
-| ES6 Features | [../concepts/es6-features.md](../concepts/es6-features.md) | Deep extraction | must create | 14 claims covering adds, allows, ecmascript | created |
-| Functional Programming | [../concepts/functional-programming.md](../concepts/functional-programming.md) | Deep extraction | must create | 20 claims covering combinator, functional, higher | created |
-| Functions | [../concepts/functions.md](../concepts/functions.md) | Deep extraction | must create | 206 claims covering book, functions, javascript | created |
-| Iterators | [../concepts/iterators.md](../concepts/iterators.md) | Deep extraction | must create | 76 claims covering function, generators, iterator | created |
-| Objects | [../concepts/objects.md](../concepts/objects.md) | Deep extraction | must create | 21 claims covering javascript, objects | created |
-| Recursion | [../concepts/recursion.md](../concepts/recursion.md) | Deep extraction | should create | 6 claims covering function, functions, linear | created |
-| Strings | [../concepts/strings.md](../concepts/strings.md) | Deep extraction | could create | 3 claims covering literal, quasi | created |
+| Algorithms | [../concepts/js-algorithms.md](../concepts/js-algorithms.md) | Deep extraction | should create | 5 claims covering cycle, detection, hare | created |
+| Arrays | [../concepts/js-arrays.md](../concepts/js-arrays.md) | Deep extraction | must create | 27 claims covering allows, array, arrays | created |
+| Collections | [../concepts/js-collections.md](../concepts/js-collections.md) | Deep extraction | must create | 10 claims covering collections, eager, lazy | created |
+| Control Flow | [../concepts/js-control-flow.md](../concepts/js-control-flow.md) | Deep extraction | must create | 58 claims covering allows, ecmascript, introduced | created |
+| Data Structures | [../concepts/js-data-structures.md](../concepts/js-data-structures.md) | Deep extraction | must create | 34 claims covering cells, cons, linked | created |
+| Data Types | [../concepts/js-data-types.md](../concepts/js-data-types.md) | Deep extraction | must create | 56 claims covering javascript, numbers, strings | created |
+| Functional Programming | [../concepts/js-functional-programming.md](../concepts/js-functional-programming.md) | Deep extraction | must create | 15 claims covering allow, composed, folding | created |
+| Functions | [../concepts/js-functions.md](../concepts/js-functions.md) | Deep extraction | must create | 162 claims covering book, functions, javascript | created |
+| Iterables | [../concepts/js-iterables.md](../concepts/js-iterables.md) | Deep extraction | must create | 22 claims covering iterable, javascript, object | created |
+| Iterators | [../concepts/js-iterators.md](../concepts/js-iterators.md) | Deep extraction | must create | 10 claims covering allow, collections, eager | created |
+| Memory Management | [../concepts/js-memory-management.md](../concepts/js-memory-management.md) | Deep extraction | must create | 11 claims covering copy, copying, creating | created |
+| Objects | [../concepts/js-objects.md](../concepts/js-objects.md) | Deep extraction | must create | 14 claims covering edition, javascript, object | created |
+| Recursion | [../concepts/js-recursion.md](../concepts/js-recursion.md) | Deep extraction | should create | 5 claims covering functions, linear, recursion | created |
+| Scope | [../concepts/js-scope.md](../concepts/js-scope.md) | Deep extraction | could create | 3 claims covering blocks, create, nested | created |
+| Values | [../concepts/js-values.md](../concepts/js-values.md) | Deep extraction | should create | 5 claims covering expressions, javascript, uses | created |
+| Variables | [../concepts/js-variables.md](../concepts/js-variables.md) | Deep extraction | must create | 13 claims covering bindings, const, declarations | created |

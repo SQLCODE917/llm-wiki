@@ -7,15 +7,20 @@ import sys
 from pathlib import Path
 
 from wiki_common import first_h1, markdown_links, parse_frontmatter, section
-from wiki_evidence_ranges import locator_within_ranges, parse_locator_range, source_ranges_for_page
+
+# Import from refactored packages
+from wiki_io.evidence import locator_within_ranges, parse_locator_range, source_ranges_for_page
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Validate filed analysis pages.")
-    parser.add_argument("page", nargs="*", help="analysis page(s); defaults to all wiki/analyses/*.md")
+    parser = argparse.ArgumentParser(
+        description="Validate filed analysis pages.")
+    parser.add_argument(
+        "page", nargs="*", help="analysis page(s); defaults to all wiki/analyses/*.md")
     args = parser.parse_args()
 
-    pages = [Path(path) for path in args.page] if args.page else sorted(Path("wiki/analyses").glob("*.md"))
+    pages = [Path(path) for path in args.page] if args.page else sorted(
+        Path("wiki/analyses").glob("*.md"))
     failures: list[str] = []
     if not pages:
         print("PASS: no analysis pages")
@@ -47,7 +52,8 @@ def check_analysis(page: Path) -> list[str]:
 
     sources = fm.data.get("sources")
     if not isinstance(sources, list) or not sources:
-        failures.append(f"{page}: frontmatter sources must be a non-empty list")
+        failures.append(
+            f"{page}: frontmatter sources must be a non-empty list")
         sources = []
     resolved_sources = []
     for source in sources:
@@ -59,9 +65,11 @@ def check_analysis(page: Path) -> list[str]:
             failures.append(f"{page}: source {source!r} does not exist")
         else:
             try:
-                resolved_sources.append(resolved.relative_to(Path.cwd().resolve()))
+                resolved_sources.append(
+                    resolved.relative_to(Path.cwd().resolve()))
             except ValueError:
-                failures.append(f"{page}: source {source!r} is outside the repo")
+                failures.append(
+                    f"{page}: source {source!r} is outside the repo")
 
     source_pages = section(fm.body, "## Source pages")
     if not source_pages:
@@ -73,7 +81,8 @@ def check_analysis(page: Path) -> list[str]:
     }
     for source in resolved_sources:
         if source not in link_targets:
-            failures.append(f"{page}: body must link to source page {source.as_posix()}")
+            failures.append(
+                f"{page}: body must link to source page {source.as_posix()}")
     failures.extend(check_analysis_locators(page, fm.body, resolved_sources))
     if "not covered in sources" not in fm.body.lower() and len(fm.body.split()) < 80:
         failures.append(f"{page}: analysis body is too thin")
@@ -83,7 +92,8 @@ def check_analysis(page: Path) -> list[str]:
 def check_analysis_locators(page: Path, body: str, resolved_sources: list[Path]) -> list[str]:
     failures: list[str] = []
     source_contexts = source_contexts_for_analysis(resolved_sources)
-    locator_matches = list(re.finditer(r"(?:(?P<slug>[a-z0-9]+(?:-[a-z0-9]+)*):)?normalized:L\d+(?:-L?\d+)?", body))
+    locator_matches = list(re.finditer(
+        r"(?:(?P<slug>[a-z0-9]+(?:-[a-z0-9]+)*):)?normalized:L\d+(?:-L?\d+)?", body))
 
     for link in markdown_links(page):
         if re.search(r"#L\d+\b", link.target):
@@ -94,22 +104,27 @@ def check_analysis_locators(page: Path, body: str, resolved_sources: list[Path])
     if not locator_matches:
         return failures
     if not source_contexts:
-        failures.append(f"{page}: uses normalized locators but has no resolvable source-page context")
+        failures.append(
+            f"{page}: uses normalized locators but has no resolvable source-page context")
         return failures
 
     for match in locator_matches:
         raw_locator = match.group(0)
         parsed = parse_locator_range(raw_locator)
         if parsed is None:
-            failures.append(f"{page}: locator {raw_locator!r} is not parseable")
+            failures.append(
+                f"{page}: locator {raw_locator!r} is not parseable")
             continue
         source_slug = match.group("slug")
-        contexts = [context for context in source_contexts if source_slug in {None, context.slug}]
+        contexts = [context for context in source_contexts if source_slug in {
+            None, context.slug}]
         if source_slug is None and len(source_contexts) > 1:
-            failures.append(f"{page}: locator {raw_locator!r} is ambiguous; prefix with a source slug")
+            failures.append(
+                f"{page}: locator {raw_locator!r} is ambiguous; prefix with a source slug")
             continue
         if not contexts:
-            failures.append(f"{page}: locator {raw_locator!r} does not match an analysis source page")
+            failures.append(
+                f"{page}: locator {raw_locator!r} does not match an analysis source page")
             continue
         for context in contexts:
             start, end = parsed
@@ -119,7 +134,8 @@ def check_analysis_locators(page: Path, body: str, resolved_sources: list[Path])
                 )
                 continue
             line_text = line_containing_offset(body, match.start())
-            failures.extend(check_locator_against_linked_ranges(page, raw_locator, start, end, line_text, context))
+            failures.extend(check_locator_against_linked_ranges(
+                page, raw_locator, start, end, line_text, context))
     return failures
 
 

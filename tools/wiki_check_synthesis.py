@@ -28,13 +28,20 @@ from wiki_common import (
     parse_frontmatter,
     section,
 )
-from wiki_evidence_ranges import (
+
+# Import from refactored packages
+from wiki_io.evidence import (
     SourceRange,
-    canonicalize_locator,
-    format_ranges,
     locator_within_ranges,
     locator_within_tolerance,
+    looks_like_code,
+    validate_evidence_location,
+    EvidenceResolver,
+    canonicalize_locator,
+    format_ranges,
     source_ranges_for_page,
+    is_evidence_too_short,
+    is_weak_evidence,
 )
 from wiki_failure_classifier import (
     FailureCategory,
@@ -43,13 +50,6 @@ from wiki_failure_classifier import (
     fail,
     render_failures_log,
 )
-from wiki_evidence_validator import (
-    looks_like_code,
-    is_evidence_too_short,
-    validate_evidence_location,
-    is_weak_evidence,
-)
-from wiki_evidence_resolver import EvidenceResolver
 
 
 SYNTH_TYPES = {"concept", "entity", "procedure", "reference"}
@@ -573,7 +573,8 @@ def check_synthesized_page_structured(
              f"body must link back to {source_rel}",
              fix_hint=f"Add link to source page: [{source_rel}]({source_rel})")
 
-    details_section = section(fm.body, "## Source-backed details") if "## Source-backed details" in h2_headings(fm.body) else ""
+    details_section = section(
+        fm.body, "## Source-backed details") if "## Source-backed details" in h2_headings(fm.body) else ""
     id_backed_details = bool(
         details_section
         and evidence_resolver is not None
@@ -840,7 +841,8 @@ def check_evidence_table_structured(
                 continue
             source_link = f"[Source](../sources/{evidence_resolver.slug}.md)"
             for item in resolved:
-                data_rows.append((claim, f'"{item.evidence}"', f"`{item.locator}`", source_link))
+                data_rows.append(
+                    (claim, f'"{item.evidence}"', f"`{item.locator}`", source_link))
 
     if len(data_rows) < min_evidence_rows:
         fail(failures, FailureCategory.TOO_FEW_CLAIMS, str(page),
@@ -972,7 +974,8 @@ def check_evidence_table(
     """Compatibility wrapper returning string failures."""
     structured = check_evidence_table_structured(
         page, source_path, details, min_evidence_rows,
-        evidence_source, EvidenceResolver.for_source_page(source_path), related_scope, allowed_ranges,
+        evidence_source, EvidenceResolver.for_source_page(
+            source_path), related_scope, allowed_ranges,
     )
     return [f"{f.page}: {f.message}" for f in structured]
 

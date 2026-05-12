@@ -1,0 +1,5 @@
+wiki-core
+
+[dev]
+pytest
+mypy
