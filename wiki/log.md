@@ -50,3 +50,12 @@ Conversations: 20260612-132844. History in harness/chat.db; transcripts per turn
 
 ## [2026-06-12] chat | 1 turns across 1 conversation
 Conversations: 20260612-133300. History in harness/chat.db; transcripts per turn in harness/runs/.
+
+## [2026-06-13] query | What is this wiki about? Answer in one sentence from the wiki index. Do not sav…
+This wiki is about JavaScript, covering topics like functional programming, closures, scope chains, and data structures, as well as the history and mechanics of the language. [[javascript]]
+
+## [2026-06-13] query | What is this wiki about? Answer in one sentence from the wiki index. Do not sav…
+This wiki is about JavaScript, including its features like closures, scope chains, and global environment isolation, as well as functional programming concepts and patterns explored in the book *JavaScript Allongé*.
+
+## [2026-06-13] chat | 2 turns across 1 conversation
+Conversations: 20260613-222950. History in harness/chat.db; transcripts per turn in harness/runs/.

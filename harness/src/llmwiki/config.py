@@ -1,18 +1,26 @@
-"""Explicit application state: filesystem layout and backend settings."""
+"""Explicit application state: filesystem layout and runtime settings."""
 
 from __future__ import annotations
 
 import os
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Literal
 
 DEFAULT_CONTEXT_TOKENS = 16384
-DEFAULT_PORT = 8080
+DEFAULT_OLLAMA_ENDPOINT = "http://localhost:11434"
+DEFAULT_OLLAMA_MODEL = "qwen3-coder:30b"
+DEFAULT_4090_MODEL = "qwen3-coder:30b"
+DEFAULT_RUNTIME = "ollama-default"
 # Per-read cap on raw source text. Sources beyond this are truncated with an
 # explicit marker (chunked ingest is an open question in the design doc).
 SOURCE_READ_BUDGET_CHARS = 24_000
 
-_HF_CACHE_GLOB = ".cache/huggingface/hub/models--Qwen--Qwen3-14B-GGUF/snapshots/*/*.gguf"
+type RuntimeName = Literal["ollama-default", "local-4090"]
+type BackendKind = Literal["ollama"]
+type LifecycleMode = Literal["connect"]
+
+VALID_RUNTIMES: tuple[RuntimeName, ...] = ("ollama-default", "local-4090")
 
 
 class ConfigError(Exception):
@@ -63,30 +71,85 @@ class WikiPaths:
                 )
 
 
+def _env_int(name: str, default: int) -> int:
+    raw = os.environ.get(name)
+    if raw is None:
+        return default
+    try:
+        return int(raw)
+    except ValueError as exc:
+        raise ConfigError(f"{name} must be an integer, got {raw!r}.") from exc
+
+
+def _runtime_name(value: str) -> RuntimeName:
+    if value in VALID_RUNTIMES:
+        return value
+    valid = ", ".join(VALID_RUNTIMES)
+    raise ConfigError(f"Unknown runtime {value!r}. Valid runtimes: {valid}.")
+
+
+@dataclass(frozen=True)
+class RuntimeProfile:
+    """Structured local runtime settings; no shell fragments."""
+
+    name: RuntimeName
+    provider: BackendKind
+    model: str
+    context_tokens: int
+    endpoint: str
+    lifecycle: LifecycleMode = "connect"
+
+
 @dataclass(frozen=True)
 class BackendConfig:
-    """llama-server / model settings for the local Qwen3-14B."""
+    """Forge-compatible backend startup configuration."""
 
-    gguf_path: Path
-    port: int = DEFAULT_PORT
-    context_tokens: int = DEFAULT_CONTEXT_TOKENS
+    runtime_name: RuntimeName
+    backend_kind: BackendKind
+    model: str
+    context_tokens: int
+    endpoint: str
+    lifecycle: LifecycleMode = "connect"
 
-
-def find_qwen3_gguf() -> Path | None:
-    """Locate the Qwen3-14B GGUF in the Hugging Face hub cache."""
-    matches = sorted(Path.home().glob(_HF_CACHE_GLOB))
-    return matches[0] if matches else None
-
-
-def load_backend_config() -> BackendConfig:
-    """Resolve backend settings from the environment, failing loudly."""
-    env_path = os.environ.get("LLMWIKI_GGUF")
-    gguf = Path(env_path) if env_path else find_qwen3_gguf()
-    if gguf is None or not gguf.exists():
-        raise ConfigError(
-            "Qwen3-14B GGUF not found. Set LLMWIKI_GGUF to the model file, or "
-            "download it: llama-cli -hf Qwen/Qwen3-14B-GGUF:Q4_K_M"
+    def summary(self) -> str:
+        return (
+            f"{self.runtime_name} "
+            f"provider={self.backend_kind} model={self.model} ctx={self.context_tokens}"
         )
-    port = int(os.environ.get("LLMWIKI_PORT", str(DEFAULT_PORT)))
-    ctx = int(os.environ.get("LLMWIKI_CTX", str(DEFAULT_CONTEXT_TOKENS)))
-    return BackendConfig(gguf_path=gguf, port=port, context_tokens=ctx)
+
+
+def resolve_runtime_profile(runtime_name: str | None = None) -> RuntimeProfile:
+    """Resolve CLI/env/default runtime precedence into a structured profile."""
+    selected = _runtime_name(runtime_name or os.environ.get("LLMWIKI_RUNTIME") or DEFAULT_RUNTIME)
+    endpoint = os.environ.get("LLMWIKI_OLLAMA_URL", DEFAULT_OLLAMA_ENDPOINT)
+    if selected == "local-4090":
+        return RuntimeProfile(
+            name=selected,
+            provider="ollama",
+            model=os.environ.get("LLMWIKI_4090_MODEL", DEFAULT_4090_MODEL),
+            context_tokens=_env_int(
+                "LLMWIKI_4090_CTX",
+                _env_int("LLMWIKI_CTX", DEFAULT_CONTEXT_TOKENS),
+            ),
+            endpoint=endpoint,
+        )
+    return RuntimeProfile(
+        name=selected,
+        provider="ollama",
+        model=os.environ.get("LLMWIKI_OLLAMA_MODEL", DEFAULT_OLLAMA_MODEL),
+        context_tokens=_env_int("LLMWIKI_CTX", DEFAULT_CONTEXT_TOKENS),
+        endpoint=endpoint,
+    )
+
+
+def load_backend_config(runtime_name: str | None = None) -> BackendConfig:
+    """Resolve runtime settings for the forge backend."""
+    profile = resolve_runtime_profile(runtime_name)
+    return BackendConfig(
+        runtime_name=profile.name,
+        backend_kind=profile.provider,
+        model=profile.model,
+        context_tokens=profile.context_tokens,
+        endpoint=profile.endpoint,
+        lifecycle=profile.lifecycle,
+    )

@@ -26,13 +26,18 @@ from llmwiki.store.chat_store import ChatStore
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="llmwiki",
-        description="LLM-maintained local wiki (Qwen3-14B via forge + llama-server).",
+        description="LLM-maintained local wiki (Ollama via forge).",
     )
     parser.add_argument(
         "--root",
         type=Path,
         default=Path.cwd(),
         help="Project root containing raw/, wiki/, SCHEMA.md (default: cwd).",
+    )
+    parser.add_argument(
+        "--runtime",
+        help="Runtime profile: ollama-default or local-4090 "
+        "(default: LLMWIKI_RUNTIME or ollama-default).",
     )
     sub = parser.add_subparsers(dest="op", required=True)
 
@@ -84,11 +89,12 @@ def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
 async def _run(args: argparse.Namespace) -> OperationResult:
     paths = WikiPaths(root=args.root.resolve())
     paths.validate()
-    backend_config = load_backend_config()
+    backend_config = load_backend_config(args.runtime)
 
     now = datetime.now()
     backend = await start_backend(backend_config)
     try:
+        print(f"[runtime: {backend.summary}]", file=sys.stderr)
         session = Session(
             store=WikiStore(paths),
             client=backend.client,

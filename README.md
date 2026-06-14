@@ -7,11 +7,11 @@ re-retrieving from raw documents on every question (RAG), a local model
 Knowledge is compiled once and kept current — cross-references, contradiction
 flags, and synthesis compound with every source added.
 
-The maintainer model is **Qwen3-14B Q4_K_M** served by `llama-server`
-(llama.cpp, Metal), driven through **forge**'s guardrailed `WorkflowRunner`
-so a 14B model executes multi-step wiki maintenance reliably: step
-enforcement, tool prerequisites, rescue parsing, retry nudges, and context
-compaction.
+The maintainer model is served by **Ollama**, driven through **forge**'s
+guardrailed `WorkflowRunner` so local models execute multi-step wiki maintenance
+reliably: step enforcement, tool prerequisites, rescue parsing, retry nudges,
+and context compaction. The default runtime profile is `ollama-default`; the
+4090 profile is `local-4090`, defaulting to `qwen3-coder:30b`.
 
 This checkout was migrated onto the M5 foundation on 2026-06-14. The previous
 repo is preserved as read-only reference material under
@@ -28,18 +28,17 @@ Three layers (all invariants from the pattern hold by construction):
 
 ## How to Use it
 
-Prerequisites (already satisfied on this machine — see the design doc for
-how they were set up):
+Prerequisites:
 
-- `llama-server` on PATH (symlinked from `llama.cpp/build/bin/`).
-- The Qwen3-14B Q4_K_M GGUF — auto-discovered in the Hugging Face hub cache
-  (`~/.cache/huggingface/hub/models--Qwen--Qwen3-14B-GGUF/...`); override
-  with `LLMWIKI_GGUF=/path/to/model.gguf`.
+- Ollama running locally.
+- An Ollama model with tool support. `local-4090` defaults to
+  `qwen3-coder:30b`; override with `LLMWIKI_4090_MODEL`.
 - The Python env: `uv` with the repo-root `.venv` (forge and the harness
   installed editable).
 
-All commands run from the repo root. Each one boots `llama-server`, runs the
-operation, appends to `wiki/log.md`, and shuts the server down.
+All commands run from the repo root. Each one connects to Ollama, runs the
+operation, appends to `wiki/log.md`, and unloads the model through forge's
+backend manager when the command exits.
 
 **Ingest** — drop a source into `raw/`, then integrate it:
 
@@ -92,12 +91,12 @@ view shows the link structure) or any editor. Recent activity:
 transcript to `harness/runs/*.jsonl`, so any wiki edit is traceable to the
 model turn that produced it.
 
-**Knobs**: `LLMWIKI_GGUF` (model file), `LLMWIKI_PORT` (default 8080),
-`LLMWIKI_CTX` (context tokens, default 16384). The previous repo's
-`local-4090` Codex wiring is preserved in the migration reference and should
-be ported as an explicit harness backend before use.
+**Knobs**: `LLMWIKI_RUNTIME` (`ollama-default` or `local-4090`),
+`LLMWIKI_OLLAMA_MODEL`, `LLMWIKI_4090_MODEL`, `LLMWIKI_OLLAMA_URL`, and
+`LLMWIKI_CTX` (context tokens, default 16384). CLI `--runtime` overrides
+`LLMWIKI_RUNTIME`.
 
-**Development**: `uv run pytest harness/tests` (51 tests, no network — a
+**Development**: `uv run pytest harness/tests` (136 tests, no network — a
 scripted fake LLM client drives the real forge runner). Lint/typecheck:
 `uv run ruff check harness/src harness/tests` and `uv run mypy harness/src`
 (strict).
@@ -115,6 +114,10 @@ chronologically.
 | Deterministic salience | `docs/2026-06-12-deterministic-salience-design.md` | Code-computed importance (wiki inbound links + per-ingest write counts) fed to synthesis runs so the model never ranks from memory. Implemented; `--reintegrate` rebuilds a hub with current salience. |
 | Persistent chat | `docs/2026-06-12-persistent-chat-design.md` | `llmwiki chat`: warm-model REPL with follow-ups; SQLite session store, deterministic Q/A windowing (no model-curated memory). Phase 1 (read-only) implemented; Phase 2 (filing answers) designed. |
 | M5 foundation migration | `docs/2026-06-14-m5-foundation-migration.md` | Records the replacement of the previous repo, the backup location, and which old safeguards to port selectively. |
+| 4090 synthesis roadmap | `docs/2026-06-14-4090-feature-synthesis-roadmap.md` | Chain of independently shippable TDDs for 4090 runtime support and backup-feature synthesis. |
+| Runtime profiles / 4090 | `docs/2026-06-14-runtime-profiles-4090.md` | First TDD in the chain: runtime selection and `local-4090` as a forge-compatible target. |
+| Strict citation parser | `docs/2026-06-14-strict-citation-parser.md` | Second TDD in the chain: deterministic citation and locator findings for the flat M5 wiki. |
+| Evidence write/lint gates | `docs/2026-06-14-evidence-gates-for-writes-and-lint.md` | Third TDD in the chain: opt-in `off|warn|fail` evidence behavior for writes and lint. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
@@ -135,7 +138,7 @@ mode we hit.
 - **Source size is capped.** `read_source` truncates beyond ~24K characters
   with an explicit marker; a long PDF-dump won't be fully ingested. Chunked
   ingest is designed but not built.
-- **One-shot commands load the model per run** (~20–30 s for 8.4 GB).
+- **One-shot commands load/connect to the model per run**.
   `llmwiki chat` covers the burst case — one boot per session, prompt cache
   reused across turns — so this now only costs occasional standalone
   `query`/`lint` invocations.
@@ -149,8 +152,7 @@ mode we hit.
   questions get less reasoning than ingest/lint do.
 - **`wiki-health` is rewritten each lint.** Point-in-time reports live only
   in `log.md` and git history, not as dated pages.
-- **Single-user, single-op.** One llama-server on one port; no concurrent
-  operations.
+- **Single-user, single-op.** One local Ollama-backed operation at a time.
 
 ## Future improvements
 

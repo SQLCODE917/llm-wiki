@@ -7,11 +7,10 @@ The current foundation is the M5 harness: a small, Obsidian-friendly wiki
 driven through `forge` tools, with deterministic code owning bookkeeping and
 the model owning wiki prose.
 
-The default runtime remains Qwen3-14B Q4_K_M through `llama-server`, with
-`forge` providing tool-calling reliability for small/local models. The previous
-repo's local 4090/Codex wiring is preserved in the migration reference and
-should be ported as an explicit backend when needed, not reintroduced as a
-parallel ad hoc pipeline.
+The active local LLM provider is Ollama through `forge`'s native
+`OllamaClient`. The default profile is `ollama-default`; the 4090 profile is
+`local-4090`, defaulting to `qwen3-coder:30b`. Keep the provider boundary easy
+to swap later, but do not maintain parallel active providers in the harness.
 
 ## Migration state
 - This repo was replaced with the M5 foundation on 2026-06-14.
@@ -20,8 +19,8 @@ parallel ad hoc pipeline.
 - Treat that folder as read-only reference material during migration. Do not
   edit it; copy ideas out intentionally.
 - High-value material to port selectively from the backup:
-  - `packages/wiki_llm/src/wiki_llm/backends/codex.py` and
-    `tools/wiki_model_defaults.json` for local 4090/Codex profile wiring.
+  - `tools/wiki_model_defaults.json` for old `local-4090` naming and sampling
+    context. Do not restore direct Codex execution as the wiki runner.
   - evidence and locator validation from `packages/wiki_core/` and
     `packages/wiki_io/` for optional strict/high-stakes ingest gates.
   - deterministic lint ideas that protect against broken links,
@@ -30,12 +29,13 @@ parallel ad hoc pipeline.
   flat `wiki/*.md` structure and `[[page-name]]` links are now the default.
 
 ## Runtime targets
-- M5/macOS target: Qwen3-14B Q4_K_M served by `llama-server`; `LLMWIKI_GGUF`
-  may point at the GGUF file.
-- 4090/Linux target: preserve the old `local-4090` Codex profile behavior as
-  a future backend integration. Until that backend is explicitly wired into
-  the M5 `forge` workflow runner, do not bypass the harness with standalone
-  prompt scripts for ingest/query/lint.
+- `ollama-default`: default Ollama runtime profile. Override model with
+  `LLMWIKI_OLLAMA_MODEL`.
+- `local-4090`: Ollama runtime profile for the local 4090. Defaults to
+  `qwen3-coder:30b`; override with `LLMWIKI_4090_MODEL`.
+- Runtime selection uses `--runtime <name>` or `LLMWIKI_RUNTIME`; CLI wins over
+  environment. Do not bypass the harness with standalone prompt scripts for
+  ingest/query/lint.
 - Keep runtime-specific setup in docs and config. The wiki schema should stay
   about wiki behavior, not machine setup.
 
@@ -72,10 +72,10 @@ three operations (ingest, query, lint) plus index.md and log.md for navigation.
 ### forge — reliability layer for small-model tool calling
 The harness depends on `forge-guardrails`, the reliability layer for
 tool-calling and multi-step agentic workflows on self-hosted models.
-- **Prefer using forge directly as a dependency** (WorkflowRunner, the
-  guardrails middleware, or its OpenAI-compatible proxy in front of
-  llama-server) rather than re-implementing its ideas — re-implementation
-  of a maintained library counts as a workaround.
+- **Prefer using forge directly as a dependency** (WorkflowRunner,
+  `OllamaClient`, guardrails middleware, or its proxy mode) rather than
+  re-implementing its ideas — re-implementation of a maintained library counts
+  as a workaround.
 - Where direct use doesn't fit, mirror its techniques when designing the
   14B model's tool-calling: rescue parsing of malformed tool calls, retry
   nudges, required-step enforcement, the synthetic `respond` tool to keep
