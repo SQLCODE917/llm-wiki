@@ -1,34 +1,14 @@
-node_modules/
+.DS_Store
+*.swp
+llama.cpp/
+forge/
 .venv/
-.env
-dist/
+harness/runs/
 __pycache__/
-*.pyc
-
-# raw pipeline (ignore contents, keep dirs)
-raw/inbox/*
-raw/imported/*
-raw/normalized/*
-raw/assets/*
-
-# Derived evidence indices (always rebuildable, never commit)
-**/.evidence.db
-**/.embeddings/
-
-# Wiki-level search indices (rebuildable from wiki pages)
-wiki/.wiki-index.db
-wiki/.wiki-index.stale
-wiki/.wiki-embeddings/
-
-!raw/inbox/.keep
-!raw/imported/.keep
-!raw/normalized/.keep
-!raw/assets/.keep
-
-Handoff.md
-Example_AGENTS.md
-
-# Temp files
-.tmp/
-.wiki-worktrees/
-.wiki-extraction-state/
+*.egg-info/
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+harness/chat.db
+backup/

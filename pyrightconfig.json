@@ -1,0 +1,7 @@
+{
+    "venvPath": ".",
+    "venv": ".venv",
+    "pythonVersion": "3.12",
+    "extraPaths": ["harness/src", "harness/tests", "forge/src"],
+    "exclude": ["llama.cpp", ".venv", "**/__pycache__"]
+}

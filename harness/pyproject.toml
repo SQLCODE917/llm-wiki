@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llmwiki"
+version = "0.1.0"
+description = "Local LLM-Wiki harness: ingest/query/lint workflows on forge + llama-server + Qwen3-14B"
+requires-python = ">=3.12"
+dependencies = [
+    "forge-guardrails",
+    "pydantic>=2.0",
+    "pymupdf4llm>=0.0.20",
+    "pyobjc-framework-Vision; sys_platform == 'darwin'",
+    "pyobjc-framework-Quartz; sys_platform == 'darwin'",
+]
+
+[project.scripts]
+llmwiki = "llmwiki.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "ruff",
+    "mypy",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llmwiki"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.coverage.run]
+source = ["llmwiki"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+# forge-guardrails ships typed code but no py.typed marker propagation for
+# dynamic create_model factories; keep call sites checked, skip deep inference.
+[[tool.mypy.overrides]]
+module = "forge.*"
+follow_untyped_imports = true
+
+# pyobjc framework modules are dynamically populated and unstubbed; absent
+# entirely off-macOS.
+[[tool.mypy.overrides]]
+module = ["Foundation", "Vision", "Quartz"]
+ignore_missing_imports = true
