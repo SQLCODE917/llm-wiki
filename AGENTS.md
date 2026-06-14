@@ -16,15 +16,22 @@ to swap later, but do not maintain parallel active providers in the harness.
 - This repo was replaced with the M5 foundation on 2026-06-14.
 - The previous working tree is preserved at
   `backup/reference/llm-wiki-pre-m5-migration-2026-06-14/`.
-- Treat that folder as read-only reference material during migration. Do not
-  edit it; copy ideas out intentionally.
-- High-value material to port selectively from the backup:
-  - `tools/wiki_model_defaults.json` for old `local-4090` naming and sampling
-    context. Do not restore direct Codex execution as the wiki runner.
-  - evidence and locator validation from `packages/wiki_core/` and
-    `packages/wiki_io/` for optional strict/high-stakes ingest gates.
-  - deterministic lint ideas that protect against broken links,
-    contradictions, and stale navigation.
+- Treat that folder as read-only historical reference. Do not edit it, ingest
+  from it, or restore its architecture without a new design document.
+- Landed migration work:
+  - `local-4090` is now an Ollama runtime profile through Forge, not direct
+    Codex execution.
+  - strict citation parsing and optional `off|warn|fail` evidence gates are
+    implemented in the M5 flat-wiki model.
+  - lint has deterministic post-pass verification, delta reporting, and a
+    `link_orphan` helper for graph-only repairs.
+- Deferred backup ideas require fresh TDDs before implementation:
+  - contradiction detection beyond current lint/link/evidence checks; TDD:
+    `docs/2026-06-14-contradiction-detection.md`.
+  - higher-stakes evidence workflows such as stable evidence IDs or normalized
+    locator databases.
+  - broader maintenance automation beyond the current lint pass; TDD:
+    `docs/2026-06-14-maintenance-automation-curator-status.md`.
 - Do not restore the old type-directory schema by default. The M5 foundation's
   flat `wiki/*.md` structure and `[[page-name]]` links are now the default.
 

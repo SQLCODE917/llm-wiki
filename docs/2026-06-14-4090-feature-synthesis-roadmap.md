@@ -38,6 +38,20 @@ for all work at once.
      findings without rewriting whole pages.
    - Retires backup references for landed evidence features.
 
+## Follow-On TDDs
+
+These are deferred backup ideas that now have fresh M5-shaped designs. They are
+not part of the completed 4090 synthesis chain, but they are aligned with the
+REFERENCE pattern and can be implemented independently.
+
+1. `docs/2026-06-14-maintenance-automation-curator-status.md`
+   - Adds model-free curator status and filed maintenance reports.
+   - Makes routine wiki health inspection cheap without invoking repair.
+
+2. `docs/2026-06-14-contradiction-detection.md`
+   - Adds bounded, model-assisted contradiction audits.
+   - Files structured contradiction reports without auto-resolving conflicts.
+
 ## Global Constraints
 
 - `raw/` remains immutable.
@@ -67,8 +81,8 @@ for all work at once.
 
 ## Completion Signal
 
-The synthesis is complete when the three TDDs are implemented, the 4090 path can
-run at least one real wiki operation through Ollama and the harness, evidence
-strictness is available as an opt-in gate, lint reports include deterministic
-post-pass verification, and `AGENTS.md` no longer names backup files as active
-porting targets except for explicitly deferred work.
+The synthesis is complete when the first three TDDs are implemented, the 4090
+path can run at least one real wiki operation through Ollama and the harness,
+evidence strictness is available as an opt-in gate, lint reports include
+deterministic post-pass verification, and `AGENTS.md` no longer names backup
+files as active porting targets except for explicitly deferred work.
