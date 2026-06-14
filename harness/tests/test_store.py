@@ -33,6 +33,15 @@ class TestRawLayer:
         with pytest.raises(SourceNotFoundError, match="exists.md"):
             store.read_source("missing.md")
 
+    def test_source_inventory_lists_raw_citation_paths(
+        self, paths: WikiPaths, store: WikiStore
+    ) -> None:
+        (paths.raw_dir / "exists.md").write_text("x", encoding="utf-8")
+        (paths.raw_dir / "nested").mkdir()
+        (paths.raw_dir / "nested" / "book.pdf").write_bytes(b"%PDF")
+        inventory = store.source_inventory()
+        assert inventory.source_paths == frozenset({"raw/exists.md", "raw/nested/book.pdf"})
+
     def test_oversized_source_truncated_with_marker(
         self, paths: WikiPaths, store: WikiStore
     ) -> None:

@@ -103,6 +103,24 @@ tool-calling and multi-step agentic workflows on self-hosted models.
 - Keep strict evidence IDs and locator validation as optional gates for sources
   where auditability matters. Do not force them onto every page by default.
 
+## Open questions discipline
+
+- Use `docs/open-questions.md` as the durable backlog for unresolved design,
+  runtime, model-evaluation, ingest-quality, schema, and evidence-gating
+  questions discovered during migration or implementation work.
+- Add an open question when the uncertainty needs future evidence, an
+  experiment, curator input, or post-implementation observation and cannot be
+  responsibly resolved in the current task.
+- Do not use open questions as a loose TODO list. Record only uncertainties
+  that would materially affect future architecture, local-model behavior,
+  source fidelity, wiki health, or operating rules.
+- Keep immediate blockers in the relevant design document's halt conditions.
+  Move only durable follow-up questions into `docs/open-questions.md`.
+- Each open question should identify where it came from, what evidence or
+  experiment would resolve it, and its current status.
+- When a question is answered, move it to the resolved section with the
+  decision and the evidence that justified it.
+
 ## Working preferences
 - Prefer normative, pragmatic, idiomatic solutions over fast hacks.
   Do not accumulate workarounds; if the standard approach needs a rebuild

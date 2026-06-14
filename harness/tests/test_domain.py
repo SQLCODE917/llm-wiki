@@ -2,6 +2,7 @@
 
 import pytest
 
+from llmwiki.domain.citations import SourceInventory, inspect_citations, parse_citations
 from llmwiki.domain.index import index_page_names, parse_index, upsert_index_entry
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
@@ -123,6 +124,95 @@ class TestLinks:
     def test_single_page_is_not_an_orphan(self) -> None:
         findings = compute_findings({"only": "text"}, index_names={"only"})
         assert findings.orphan_pages == ()
+
+
+class TestCitations:
+    INVENTORY = SourceInventory.from_raw_relative_paths(
+        ["article.md", "book.pdf", "nested/source.md"]
+    )
+
+    def test_markdown_source_citation(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A supported claim. (raw/article.md)",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert [(c.source_path, c.page_range, c.line_range) for c in report.citations] == [
+            ("raw/article.md", None, None)
+        ]
+
+    def test_pdf_page_range(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A book claim. (raw/book.pdf p.28-41)",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert report.citations[0].page_range == (28, 41)
+
+    def test_normalized_line_range_with_source_context(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A line-backed claim. (raw/article.md normalized:L12-L20)",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert report.citations[0].line_range == (12, 20)
+
+    def test_standalone_normalized_locator_is_malformed(self) -> None:
+        report = parse_citations("alpha", "Line-only locator normalized:L12-L20.")
+        assert [finding.code for finding in report.findings] == ["malformed-line-range"]
+
+    def test_malformed_page_range(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A bad locator. (raw/book.pdf p.xx-41)",
+            self.INVENTORY,
+        )
+        assert [finding.code for finding in report.findings] == ["malformed-page-range"]
+        assert report.findings[0].severity == "fail"
+
+    def test_malformed_ordered_ranges(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "Ranges must increase. (raw/book.pdf p.41-28) (raw/article.md normalized:L20-L12)",
+            self.INVENTORY,
+        )
+        assert [finding.code for finding in report.findings] == [
+            "malformed-page-range",
+            "malformed-line-range",
+        ]
+
+    def test_missing_source(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "Missing source. (raw/missing.md)",
+            self.INVENTORY,
+        )
+        assert [finding.code for finding in report.findings] == ["missing-source"]
+        assert report.findings[0].citation_text == "raw/missing.md"
+
+    def test_path_traversal_attempt(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "No escape. (raw/../secret.md)",
+            self.INVENTORY,
+        )
+        assert [finding.code for finding in report.findings] == ["path-outside-raw"]
+        assert report.findings[0].severity == "fail"
+
+    def test_ocr_caveat_detection(self) -> None:
+        report = parse_citations(
+            "alpha",
+            'The exact label was "[figure text (OCR, unverified): ANTIDOTE DECAF]".',
+        )
+        assert [finding.code for finding in report.findings] == ["ocr-verbatim-risk"]
+        assert report.findings[0].severity == "warn"
+
+    def test_no_citations_is_valid_input(self) -> None:
+        report = inspect_citations("alpha", "No evidence cited here yet.", self.INVENTORY)
+        assert report == parse_citations("alpha", "No evidence cited here yet.")
 
 
 class TestSearch:

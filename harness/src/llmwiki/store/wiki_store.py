@@ -16,6 +16,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
+from llmwiki.domain.citations import SourceInventory
 from llmwiki.domain.index import index_page_names, upsert_index_entry
 from llmwiki.domain.log import format_log_entry
 from llmwiki.domain.pages import WikiPage, render_page, validate_page_name
@@ -72,6 +73,11 @@ class WikiStore:
             for p in raw.rglob("*")
             if p.is_file() and not p.name.startswith(".")
         )
+
+    def source_inventory(self) -> SourceInventory:
+        """Return raw-source existence facts for deterministic citation checks."""
+
+        return SourceInventory.from_raw_relative_paths(self.list_sources())
 
     # -- wiki layer ---------------------------------------------------------
 
