@@ -28,14 +28,22 @@ class TestParser:
         assert args.op == "lint"
         assert args.root == tmp_path
 
+    def test_curator_status_args(self) -> None:
+        args = _build_parser().parse_args(["curator-status", "--strict-evidence", "warn"])
+        assert args.op == "curator-status"
+        assert args.strict_evidence == "warn"
+
+    def test_maintenance_args(self) -> None:
+        args = _build_parser().parse_args(["maintenance", "--strict-evidence", "fail"])
+        assert args.op == "maintenance"
+        assert args.strict_evidence == "fail"
+
     def test_strict_evidence_arg(self) -> None:
         args = _build_parser().parse_args(["lint", "--strict-evidence", "warn"])
         assert args.strict_evidence == "warn"
 
     def test_runtime_arg(self) -> None:
-        args = _build_parser().parse_args(
-            ["--runtime", "local-4090", "query", "what happened?"]
-        )
+        args = _build_parser().parse_args(["--runtime", "local-4090", "query", "what happened?"])
         assert args.runtime == "local-4090"
 
     def test_op_is_required(self) -> None:

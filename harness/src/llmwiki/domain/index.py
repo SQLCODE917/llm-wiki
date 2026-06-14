@@ -31,6 +31,13 @@ def _entry_line(name: str, summary: str) -> str:
     return f"- [[{name}]] — {summary}"
 
 
+def empty_index() -> str:
+    lines = ["# Index", ""]
+    for heading in CATEGORY_HEADINGS.values():
+        lines.extend([heading, ""])
+    return "\n".join(lines)
+
+
 def parse_index(text: str) -> list[IndexEntry]:
     """Extract all entries with the category they appear under."""
     heading_to_category = {h: c for c, h in CATEGORY_HEADINGS.items()}

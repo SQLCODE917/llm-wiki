@@ -15,10 +15,17 @@ from pathlib import Path
 from llmwiki.config import (
     VALID_STRICT_EVIDENCE_MODES,
     ConfigError,
+    StrictEvidenceMode,
     WikiPaths,
     load_backend_config,
     resolve_strict_evidence_mode,
 )
+from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.index import index_page_names
+from llmwiki.domain.maintenance import build_curator_status, recent_log_entries
+from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.salience import compute_salience
+from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
 from llmwiki.pdf.vision import AppleVisionRecognizer
@@ -70,6 +77,18 @@ def _build_parser() -> argparse.ArgumentParser:
     lint = sub.add_parser("lint", help="Health-check the wiki.")
     _add_strict_evidence_arg(lint)
 
+    curator_status = sub.add_parser(
+        "curator-status",
+        help="Print deterministic wiki maintenance status without starting a model.",
+    )
+    _add_strict_evidence_arg(curator_status)
+
+    maintenance = sub.add_parser(
+        "maintenance",
+        help="File deterministic curator status and append a maintenance log entry.",
+    )
+    _add_strict_evidence_arg(maintenance)
+
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
     _add_strict_evidence_arg(chat)
     chat.add_argument(
@@ -107,11 +126,15 @@ def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
 
 async def _run(args: argparse.Namespace) -> OperationResult:
     paths = WikiPaths(root=args.root.resolve())
-    paths.validate()
-    backend_config = load_backend_config(args.runtime)
     strict_evidence = resolve_strict_evidence_mode(args.strict_evidence)
 
     now = datetime.now()
+    if args.op in {"curator-status", "maintenance"}:
+        paths.validate_status()
+        return _run_curator_operation(args.op, paths, strict_evidence, now.date().isoformat())
+
+    paths.validate()
+    backend_config = load_backend_config(args.runtime)
     backend = await start_backend(backend_config)
     try:
         print(f"[runtime: {backend.summary}]", file=sys.stderr)
@@ -138,6 +161,48 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         return await session.lint()
     finally:
         await backend.aclose()
+
+
+def _run_curator_operation(
+    op: str, paths: WikiPaths, strict_evidence: StrictEvidenceMode, today: str
+) -> OperationResult:
+    store = WikiStore(paths)
+    report = _curator_report(store, paths, strict_evidence)
+    if op == "maintenance":
+        store.ensure_navigation_files()
+        store.write_page(
+            WikiPage(
+                name=CURATOR_STATUS_PAGE,
+                category="synthesis",
+                summary=f"Deterministic curator status from {today}.",
+                body=report,
+                updated=today,
+            )
+        )
+        store.append_log(today, "maintenance", "curator status", report)
+    return OperationResult(op, "curator status", report, None)
+
+
+def _curator_report(store: WikiStore, paths: WikiPaths, strict_evidence: StrictEvidenceMode) -> str:
+    page_texts = store.page_texts()
+    index_exists = paths.index_path.is_file()
+    log_exists = paths.log_path.is_file()
+    index_text = paths.index_path.read_text(encoding="utf-8") if index_exists else ""
+    log_text = paths.log_path.read_text(encoding="utf-8") if log_exists else ""
+    evidence_policy = EvidencePolicy(mode=strict_evidence)
+    inventory = store.source_inventory() if evidence_policy.enabled else None
+    status = build_curator_status(
+        page_texts=page_texts,
+        index_names=index_page_names(index_text),
+        raw_source_count=len(store.list_sources()),
+        index_exists=index_exists,
+        log_exists=log_exists,
+        recent_log_entries=recent_log_entries(log_text),
+        evidence_report=evidence_policy.lint_pages(page_texts, inventory),
+        salience_report=compute_salience(page_texts),
+        strict_evidence=strict_evidence,
+    )
+    return status.render()
 
 
 async def _run_chat(session: Session, paths: WikiPaths, resume: str | None) -> OperationResult:

@@ -18,6 +18,7 @@ from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.links import compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page
 from llmwiki.domain.search import render_hits, search_pages
+from llmwiki.domain.system_pages import ORPHAN_EXEMPT_PAGES
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
 
@@ -227,14 +228,11 @@ def link_orphan_tool(store: WikiStore, today: str) -> ToolDef:
         store.read_page(params.orphan_page)  # verifies the target exists before writing.
         link = f"[[{params.orphan_page}]]"
         if link in source.body:
-            return (
-                f"wiki/{params.from_page}.md already links to {link}; "
-                "no change needed."
-            )
+            return f"wiki/{params.from_page}.md already links to {link}; no change needed."
         findings = compute_findings(
             store.page_texts(),
             store.index_names(),
-            exempt_from_orphans=frozenset({"wiki-health"}),
+            exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
         )
         if params.orphan_page not in findings.orphan_pages:
             raise WikiStoreError(

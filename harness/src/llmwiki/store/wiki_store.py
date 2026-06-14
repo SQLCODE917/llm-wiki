@@ -17,7 +17,7 @@ from pathlib import Path
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
 from llmwiki.domain.citations import SourceInventory
-from llmwiki.domain.index import index_page_names, upsert_index_entry
+from llmwiki.domain.index import empty_index, index_page_names, upsert_index_entry
 from llmwiki.domain.log import format_log_entry
 from llmwiki.domain.pages import WikiPage, render_page, validate_page_name
 
@@ -107,6 +107,13 @@ class WikiStore:
         index_text = upsert_index_entry(self.read_index(), page.name, page.category, page.summary)
         page_path.write_text(render_page(page), encoding="utf-8")
         self._paths.index_path.write_text(index_text, encoding="utf-8")
+
+    def ensure_navigation_files(self) -> None:
+        """Create missing harness-owned navigation files for maintenance runs."""
+        if not self._paths.index_path.exists():
+            self._paths.index_path.write_text(empty_index(), encoding="utf-8")
+        if not self._paths.log_path.exists():
+            self._paths.log_path.write_text("# Log\n", encoding="utf-8")
 
     # -- navigation files ----------------------------------------------------
 

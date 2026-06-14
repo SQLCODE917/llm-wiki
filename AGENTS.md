@@ -25,13 +25,13 @@ to swap later, but do not maintain parallel active providers in the harness.
     implemented in the M5 flat-wiki model.
   - lint has deterministic post-pass verification, delta reporting, and a
     `link_orphan` helper for graph-only repairs.
+  - maintenance automation now includes model-free `curator-status` and filed
+    `maintenance` reports through the M5 harness.
 - Deferred backup ideas require fresh TDDs before implementation:
   - contradiction detection beyond current lint/link/evidence checks; TDD:
     `docs/2026-06-14-contradiction-detection.md`.
   - higher-stakes evidence workflows such as stable evidence IDs or normalized
     locator databases.
-  - broader maintenance automation beyond the current lint pass; TDD:
-    `docs/2026-06-14-maintenance-automation-curator-status.md`.
 - Do not restore the old type-directory schema by default. The M5 foundation's
   flat `wiki/*.md` structure and `[[page-name]]` links are now the default.
 

@@ -23,6 +23,7 @@ from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
+from llmwiki.domain.system_pages import HEALTH_PAGE, ORPHAN_EXEMPT_PAGES
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import (
     ExtractionResult,
@@ -51,11 +52,6 @@ _MAX_ITERATIONS = {
 
 # (pdf_path, source_rel, reextract) -> ExtractionResult; injectable for tests.
 ExtractFn = Callable[[Path, str, bool], ExtractionResult]
-
-# Harness-maintained health report page: rewritten by every lint pass, so it
-# never accumulates inbound links and is exempted from orphan findings.
-# History lives in log.md (and git), not in dated page copies.
-HEALTH_PAGE = "wiki-health"
 
 # Bare text usually means the model finished its work and wants to report.
 # Name the terminal tool in the retry nudge so the model can exit the loop
@@ -334,7 +330,7 @@ class Session:
             link_findings=compute_findings(
                 page_texts,
                 self.store.index_names(),
-                exempt_from_orphans=frozenset({HEALTH_PAGE}),
+                exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
             ),
             evidence_report=evidence_policy.lint_pages(page_texts, inventory),
         )
@@ -399,11 +395,7 @@ class Session:
 
 
 def _broken_link_edges(findings: LintFindings) -> set[tuple[str, str]]:
-    return {
-        (page, target)
-        for page, targets in findings.broken_links.items()
-        for target in targets
-    }
+    return {(page, target) for page, targets in findings.broken_links.items() for target in targets}
 
 
 def _render_count_delta(label: str, before: int, after: int) -> str:

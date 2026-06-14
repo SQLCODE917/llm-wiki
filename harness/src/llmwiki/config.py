@@ -70,7 +70,16 @@ class WikiPaths:
             if not path.exists():
                 raise ConfigError(
                     f"Wiki layer missing: {path}. Run from the project root "
-                    "(or pass --root) — see SCHEMA.md for the expected layout."
+                    "(or pass --root) - see SCHEMA.md for the expected layout."
+                )
+
+    def validate_status(self) -> None:
+        """Validate only the layers required for read-only curator status."""
+        for path in (self.raw_dir, self.wiki_dir):
+            if not path.exists():
+                raise ConfigError(
+                    f"Wiki layer missing: {path}. Run from the project root "
+                    "(or pass --root) - see SCHEMA.md for the expected layout."
                 )
 
 

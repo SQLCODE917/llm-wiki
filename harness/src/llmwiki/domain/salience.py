@@ -24,11 +24,12 @@ from dataclasses import dataclass
 
 from llmwiki.domain.links import extract_links
 from llmwiki.domain.pages import PageError, WikiPage, parse_page
+from llmwiki.domain.system_pages import ORPHAN_EXEMPT_PAGES
 
 # Categories eligible for hub key-lists; sources are the chapter list and
 # syntheses are reports, neither belongs in "key entities/concepts".
 _RANKED_CATEGORIES = ("entity", "concept")
-_EXCLUDED_PAGES = frozenset({"wiki-health"})
+_EXCLUDED_PAGES = ORPHAN_EXEMPT_PAGES
 
 # Top entries shown per category. A constant pending evidence (design doc,
 # open questions): too small hides mid-tier concepts, too large

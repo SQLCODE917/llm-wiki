@@ -47,6 +47,7 @@ REFERENCE pattern and can be implemented independently.
 1. `docs/2026-06-14-maintenance-automation-curator-status.md`
    - Adds model-free curator status and filed maintenance reports.
    - Makes routine wiki health inspection cheap without invoking repair.
+   - Implemented as `llmwiki curator-status` and `llmwiki maintenance`.
 
 2. `docs/2026-06-14-contradiction-detection.md`
    - Adds bounded, model-assisted contradiction audits.

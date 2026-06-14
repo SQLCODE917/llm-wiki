@@ -37,8 +37,10 @@ Prerequisites:
   installed editable).
 
 All commands run from the repo root. Each one connects to Ollama, runs the
-operation, appends to `wiki/log.md`, and unloads the model through forge's
-backend manager when the command exits.
+model operation, appends to `wiki/log.md`, and unloads the model through
+forge's backend manager when the command exits. The deterministic status
+commands below are the exception: they do not load a runtime or contact
+Ollama.
 
 **Ingest** — drop a source into `raw/`, then integrate it:
 
@@ -79,11 +81,29 @@ a throwaway playground, not a knowledge store.
 
 ```bash
 uv run llmwiki lint
+uv run llmwiki lint --strict-evidence warn
 ```
 
 Deterministic checks run first in code (broken `[[links]]`, orphan pages,
-index drift); the model then reviews flagged pages, fixes what a page edit
-can fix, and files its report as the `wiki-health` page.
+index drift, citation evidence when enabled); the model then reviews flagged
+pages, fixes what a page edit can fix, and files its report as the
+`wiki-health` page. The final report includes a deterministic before/after
+verification and delta, so lint success is never only the model's self-report.
+
+**Curator status / maintenance** — model-free wiki dashboard:
+
+```bash
+uv run llmwiki curator-status
+uv run llmwiki curator-status --strict-evidence warn
+uv run llmwiki maintenance
+```
+
+`curator-status` prints deterministic wiki health without starting Ollama:
+page counts, raw-source counts, link/index/orphan findings, citation evidence
+findings, salience, recent log entries, and recommended next actions.
+`maintenance` files the same report as `wiki-curator-status` and appends a
+`maintenance` entry to `wiki/log.md`. Neither command repairs pages; use
+`lint` when you want the model to inspect and edit.
 
 **Reading the wiki**: it's just markdown — open `wiki/` in Obsidian (graph
 view shows the link structure) or any editor. Recent activity:
@@ -94,9 +114,11 @@ model turn that produced it.
 **Knobs**: `LLMWIKI_RUNTIME` (`ollama-default` or `local-4090`),
 `LLMWIKI_OLLAMA_MODEL`, `LLMWIKI_4090_MODEL`, `LLMWIKI_OLLAMA_URL`, and
 `LLMWIKI_CTX` (context tokens, default 16384). CLI `--runtime` overrides
-`LLMWIKI_RUNTIME`.
+`LLMWIKI_RUNTIME`. `LLMWIKI_STRICT_EVIDENCE` accepts `off`, `warn`, or
+`fail`; CLI `--strict-evidence` overrides it for commands that support
+evidence checks.
 
-**Development**: `uv run pytest harness/tests` (136 tests, no network — a
+**Development**: `uv run pytest harness/tests` (170 tests, no network — a
 scripted fake LLM client drives the real forge runner). Lint/typecheck:
 `uv run ruff check harness/src harness/tests` and `uv run mypy harness/src`
 (strict).
@@ -118,6 +140,8 @@ chronologically.
 | Runtime profiles / 4090 | `docs/2026-06-14-runtime-profiles-4090.md` | First TDD in the chain: runtime selection and `local-4090` as a forge-compatible target. |
 | Strict citation parser | `docs/2026-06-14-strict-citation-parser.md` | Second TDD in the chain: deterministic citation and locator findings for the flat M5 wiki. |
 | Evidence write/lint gates | `docs/2026-06-14-evidence-gates-for-writes-and-lint.md` | Third TDD in the chain: opt-in `off|warn|fail` evidence behavior for writes and lint. |
+| Maintenance automation / curator status | `docs/2026-06-14-maintenance-automation-curator-status.md` | Model-free `curator-status` report plus filed `maintenance` report/log entry. |
+| Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Follow-on TDD for bounded model-assisted contradiction audits; not implemented yet. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
@@ -141,7 +165,8 @@ mode we hit.
 - **One-shot commands load/connect to the model per run**.
   `llmwiki chat` covers the burst case — one boot per session, prompt cache
   reused across turns — so this now only costs occasional standalone
-  `query`/`lint` invocations.
+  `query`/`lint` invocations. `curator-status` and `maintenance` are
+  model-free.
 - **Search is naive.** Term-frequency scoring over page text plus the index —
   no embeddings, no BM25. Right answer at ~tens of pages; will degrade as
   the wiki grows (the design names qmd as the upgrade path).
@@ -152,6 +177,8 @@ mode we hit.
   questions get less reasoning than ingest/lint do.
 - **`wiki-health` is rewritten each lint.** Point-in-time reports live only
   in `log.md` and git history, not as dated pages.
+- **`wiki-curator-status` is rewritten each maintenance pass.** It is the
+  current deterministic dashboard, while history lives in `log.md` and git.
 - **Single-user, single-op.** One local Ollama-backed operation at a time.
 
 ## Future improvements
@@ -175,3 +202,5 @@ mode we hit.
   relying on defaults.
 - **Obsidian workflow** — Web Clipper for capturing sources into `raw/`,
   graph view as the lint companion.
+- **Contradiction detection** — bounded model-assisted audits that file
+  structured conflict reports without auto-resolving source disagreements.
