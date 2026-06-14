@@ -12,6 +12,7 @@ DEFAULT_OLLAMA_ENDPOINT = "http://localhost:11434"
 DEFAULT_OLLAMA_MODEL = "qwen3-coder:30b"
 DEFAULT_4090_MODEL = "qwen3-coder:30b"
 DEFAULT_RUNTIME = "ollama-default"
+DEFAULT_STRICT_EVIDENCE = "off"
 # Per-read cap on raw source text. Sources beyond this are truncated with an
 # explicit marker (chunked ingest is an open question in the design doc).
 SOURCE_READ_BUDGET_CHARS = 24_000
@@ -19,8 +20,10 @@ SOURCE_READ_BUDGET_CHARS = 24_000
 type RuntimeName = Literal["ollama-default", "local-4090"]
 type BackendKind = Literal["ollama"]
 type LifecycleMode = Literal["connect"]
+type StrictEvidenceMode = Literal["off", "warn", "fail"]
 
 VALID_RUNTIMES: tuple[RuntimeName, ...] = ("ollama-default", "local-4090")
+VALID_STRICT_EVIDENCE_MODES: tuple[StrictEvidenceMode, ...] = ("off", "warn", "fail")
 
 
 class ConfigError(Exception):
@@ -88,6 +91,13 @@ def _runtime_name(value: str) -> RuntimeName:
     raise ConfigError(f"Unknown runtime {value!r}. Valid runtimes: {valid}.")
 
 
+def _strict_evidence_mode(value: str) -> StrictEvidenceMode:
+    if value in VALID_STRICT_EVIDENCE_MODES:
+        return value
+    valid = ", ".join(VALID_STRICT_EVIDENCE_MODES)
+    raise ConfigError(f"Unknown strict evidence mode {value!r}. Valid modes: {valid}.")
+
+
 @dataclass(frozen=True)
 class RuntimeProfile:
     """Structured local runtime settings; no shell fragments."""
@@ -153,3 +163,10 @@ def load_backend_config(runtime_name: str | None = None) -> BackendConfig:
         endpoint=profile.endpoint,
         lifecycle=profile.lifecycle,
     )
+
+
+def resolve_strict_evidence_mode(mode: str | None = None) -> StrictEvidenceMode:
+    """Resolve CLI/env/default strict-evidence precedence."""
+
+    selected = mode or os.environ.get("LLMWIKI_STRICT_EVIDENCE") or DEFAULT_STRICT_EVIDENCE
+    return _strict_evidence_mode(selected)

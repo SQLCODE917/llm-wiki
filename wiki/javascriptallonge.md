@@ -2,7 +2,7 @@
 category: source
 summary: Hub page for JavaScript Allongé, summarizing the entire book and linking to chapter-specific source pages.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-12
+updated: 2026-06-13
 ---
 
 This is the hub page for *JavaScript Allongé*, a book focusing on functional programming with JavaScript, ECMAScript 2015 updates, and publishing via Leanpub. The following pages summarize its chapters and key concepts:
@@ -36,3 +36,17 @@ This is the hub page for *JavaScript Allongé*, a book focusing on functional pr
 **Key concepts:** [[function]], [[arrays]], [[const]], [[iterable]], [[linked-lists]], [[combinator]], [[functional-iterators]], [[mapping]]
 
 **Key entities:** [[javascript]], [[generator]], [[undefined]]
+
+Related: [[ecmascript-2015]].
+
+Related: [[functional-data-structures]].
+
+Related: [[object-destructuring]].
+
+Related: [[array-destructuring]].
+
+Related: [[partial-application]].
+
+Related: [[unary-functions]].
+
+Related: [[reference-types]].

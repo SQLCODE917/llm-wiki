@@ -8,12 +8,15 @@ tool-error channel for self-correction.
 
 from __future__ import annotations
 
+from dataclasses import replace
 from typing import Literal
 
 from forge.core.workflow import ToolDef, ToolSpec
 from pydantic import BaseModel, Field
 
-from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.links import compute_findings
+from llmwiki.domain.pages import WikiPage, parse_page
 from llmwiki.domain.search import render_hits, search_pages
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
@@ -63,6 +66,14 @@ class WritePageParams(BaseModel):
 
 class FinishParams(BaseModel):
     report: str = Field(description="Short report of what was done and what changed.")
+
+
+class LinkOrphanParams(BaseModel):
+    from_page: str = Field(
+        description="Existing page that should link to the orphan, e.g. "
+        "'javascriptallonge-closures-and-scope'."
+    )
+    orphan_page: str = Field(description="Existing orphan page to link to, e.g. 'closure'.")
 
 
 def read_source_tool(store: WikiStore) -> ToolDef:
@@ -141,6 +152,7 @@ def write_page_tool(
     prerequisites: list[str | dict[str, str]] | None = None,
     read_tracker: set[str] | None = None,
     write_log: list[str] | None = None,
+    evidence_policy: EvidencePolicy | None = None,
 ) -> ToolDef:
     """write_page, optionally guarded by a read-before-rewrite contract.
 
@@ -166,18 +178,30 @@ def write_page_tool(
                 f"it entirely. Call read_page(name='{params.name}') first, "
                 "then rewrite it carrying forward the content you keep."
             )
+        body = _strip_pipeline_markers(params.content)
+        policy = evidence_policy or EvidencePolicy()
+        inventory = store.source_inventory() if policy.enabled else None
+        evidence = policy.check_page(params.name, body, inventory)
+        if not evidence.allowed:
+            raise WikiStoreError(
+                evidence.render_for_tool(params.name)
+                + "\nCorrect the citation path, range, or cited raw source before retrying."
+            )
         page = WikiPage(
             name=params.name,
             category=params.category,
             summary=params.summary,
-            body=_strip_pipeline_markers(params.content),
+            body=body,
             sources=tuple(params.sources),
             updated=today,
         )
         store.write_page(page)
         if write_log is not None:
             write_log.append(params.name)
-        return f"Wrote wiki/{params.name}.md and updated its index entry."
+        response = f"Wrote wiki/{params.name}.md and updated its index entry."
+        if evidence.has_warnings:
+            response += "\n\n" + evidence.render_for_tool(params.name)
+        return response
 
     return ToolDef(
         spec=ToolSpec(
@@ -190,6 +214,54 @@ def write_page_tool(
         callable=_write_page,
         prerequisites=prerequisites or [],
     )
+
+
+def link_orphan_tool(store: WikiStore, today: str) -> ToolDef:
+    """Deterministically add one inbound wiki link to repair an orphan page."""
+
+    def _link_orphan(**kwargs: object) -> str:
+        params = LinkOrphanParams(**kwargs)  # type: ignore[arg-type]
+        if params.from_page == params.orphan_page:
+            raise WikiStoreError("from_page and orphan_page must be different pages.")
+        source = parse_page(params.from_page, store.read_page(params.from_page))
+        store.read_page(params.orphan_page)  # verifies the target exists before writing.
+        link = f"[[{params.orphan_page}]]"
+        if link in source.body:
+            return (
+                f"wiki/{params.from_page}.md already links to {link}; "
+                "no change needed."
+            )
+        findings = compute_findings(
+            store.page_texts(),
+            store.index_names(),
+            exempt_from_orphans=frozenset({"wiki-health"}),
+        )
+        if params.orphan_page not in findings.orphan_pages:
+            raise WikiStoreError(
+                f"Page '{params.orphan_page}' is not currently an orphan. "
+                "Use link_orphan only for pages listed in the deterministic orphan findings."
+            )
+        body = _append_related_link(source.body, link)
+        store.write_page(replace(source, body=body, updated=today))
+        return (
+            f"Added {link} to wiki/{params.from_page}.md. "
+            f"This creates an inbound link to {params.orphan_page}."
+        )
+
+    return ToolDef(
+        spec=ToolSpec(
+            name="link_orphan",
+            description="Fix one orphan page by adding a deterministic inbound "
+            "[[orphan-page]] link from a related existing page. Prefer this "
+            "over rewriting either page when the finding is only orphan status.",
+            parameters=LinkOrphanParams,
+        ),
+        callable=_link_orphan,
+    )
+
+
+def _append_related_link(body: str, link: str) -> str:
+    return body.rstrip() + f"\n\nRelated: {link}.\n"
 
 
 def finish_tool(name: str, description: str) -> ToolDef:

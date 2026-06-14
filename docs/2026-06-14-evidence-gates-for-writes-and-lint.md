@@ -13,6 +13,10 @@ to `write_page` and `lint` while keeping normal synthesis permissive by default.
 - Default strictness to `off`.
 - Surface deterministic citation findings in lint reports.
 - Let `fail` mode block invalid new page writes through tool errors.
+- Verify lint outcomes after the model pass with recomputed deterministic
+  findings.
+- Add a deterministic helper for orphan-link repairs so graph-only fixes do
+  not require whole-page rewrites.
 - Keep all enforcement inside the harness, not prompt instructions.
 
 ## Non-Goals & Forbidden Approaches
@@ -28,6 +32,10 @@ Forbidden approaches:
 
 - Do not make strict evidence the default.
 - Do not let the model decide whether a deterministic finding is fatal.
+- Do not let lint success be only model-reported when the harness can measure
+  the underlying graph, index, or citation state.
+- Do not require `write_page` for the common orphan-only repair of adding one
+  inbound `[[link]]`.
 - Do not write partial index/log updates for a page write that fails evidence
   enforcement.
 - Do not duplicate citation parsing logic inside workflow tools.
@@ -39,6 +47,15 @@ Forbidden approaches:
 - `warn` records findings but permits the operation.
 - `fail` rejects page writes with fatal findings.
 - Lint includes evidence findings alongside link/index/orphan findings.
+- Lint recomputes deterministic findings after the model calls `finish_lint`.
+- The final lint output, `wiki-health`, and `log.md` include both the model
+  report and the before/after deterministic verification.
+- The verified report includes a deterministic delta section listing resolved,
+  new, and remaining orphan pages plus count deltas for broken links, index
+  drift, and citation evidence findings.
+- Lint exposes an orphan-link helper that verifies both pages exist, verifies
+  the target is currently listed as an orphan, and inserts exactly one inbound
+  wiki link from a related page to that orphan page.
 - Evidence gates use the parser contract from
   `docs/2026-06-14-strict-citation-parser.md`.
 - Tool errors are actionable enough for forge to let the model self-correct.
@@ -50,6 +67,9 @@ Forbidden approaches:
 - Failed page writes do not append success messages.
 - Lint may write `wiki-health`, but evidence findings are deterministic inputs
   to that workflow.
+- `wiki-health` records verified lint state. If the model claims a fix that the
+  post-pass does not confirm, the residual deterministic finding remains
+  visible in the final report.
 - Existing commands work unchanged when strict mode is omitted.
 
 ## Proposed Architecture
@@ -88,6 +108,20 @@ Model       write_page       Policy        WikiStore
  |<------------ success + warning summary ----|
 ```
 
+Orphan repair:
+
+```
+Model       link_orphan       WikiStore       Post-pass lint
+ | choose edge |                |                 |
+ |------------>| read pages     |                 |
+ |             | append link    |                 |
+ |             |--------------->|                 |
+ |<------------ success --------|                 |
+ | finish_lint                                   |
+ |---------------------------------------------->|
+ |<--------------- recomputed orphan state ------|
+```
+
 Write in `fail`:
 
 ```
@@ -102,13 +136,15 @@ Model       write_page       Policy        WikiStore
 Lint:
 
 ```
-Session      Link lint      Evidence policy      Lint workflow
- | compute      |                |                    |
- |------------->|                |                    |
- | compute evidence findings     |                    |
- |------------------------------>|                    |
- | hand combined findings to model                    |
- |--------------------------------------------------->|
+Session      Deterministic lint      Lint workflow      Deterministic lint
+ | before            |                    | after               |
+ |------------------>|                    |                     |
+ | hand findings to model                 |                     |
+ |--------------------------------------->|                     |
+ |<------------------ model report -------|                     |
+ | recompute graph/index/evidence state                         |
+ |------------------------------------------------------------->|
+ | final report = model report + before/after verification      |
 ```
 
 ## Data Model
@@ -116,8 +152,12 @@ Session      Link lint      Evidence policy      Lint workflow
 - **StrictEvidenceMode** — `off`, `warn`, or `fail`.
 - **EvidencePolicyResult** — findings plus decision: allow, allow-with-warning,
   or reject.
-- **CombinedLintFindings** — existing link/index/orphan findings plus citation
-  findings.
+- **LintSnapshot** — existing link/index/orphan findings plus citation evidence
+  findings for one point in the lint operation.
+- **VerifiedLintReport** — model report plus deterministic delta and
+  before/after lint snapshots.
+- **OrphanLinkRepair** — chosen source page and currently orphaned target page
+  for one deterministic inbound-link insertion.
 
 Access pattern: writes validate one page; lint validates all pages.
 
@@ -127,6 +167,7 @@ Access pattern: writes validate one page; lint validates all pages.
 - Environment fallback: `LLMWIKI_STRICT_EVIDENCE=off|warn|fail`.
 - Tool behavior: `write_page` returns warning text in `warn`; raises a tool
   error in `fail`.
+- Lint-only tool: `link_orphan(from_page, orphan_page)`.
 
 CLI option precedence matches runtime precedence: CLI beats environment, which
 beats default.
@@ -137,6 +178,12 @@ beats default.
 - In `warn`, validation findings are visible but non-blocking.
 - In `fail`, findings with severity `fail` reject the write.
 - Lint never hides evidence findings from the model review message.
+- Lint never records the model's success claim alone. The harness records the
+  model report plus recomputed before/after deterministic state.
+- Orphan-only repair should use `link_orphan` when the fix is a single inbound
+  edge. The model chooses the related source page; the harness performs the
+  mechanical edit and rejects targets that are not current deterministic
+  orphans.
 - `wiki-health` itself is exempt from evidence enforcement unless explicitly
   selected later.
 
@@ -149,6 +196,10 @@ Examples:
   page/index update.
 - `llmwiki lint --strict-evidence warn` -> health report sees evidence findings
   but command can complete.
+- Model says "all orphans fixed" but the graph still has orphans after the
+  pass -> final report includes the model claim and the residual orphan list.
+- `link_orphan(from_page="chapter", orphan_page="closure")` -> `chapter` gains
+  `[[closure]]`; the post-pass verifies whether `closure` is still orphaned.
 
 ## Acceptance Criteria
 
@@ -157,6 +208,13 @@ Examples:
 - Tests cover `write_page` in `off`, `warn`, and `fail`.
 - Tests prove failed writes do not update page files or index entries.
 - Tests prove lint includes evidence findings in the model prompt.
+- Tests prove lint output and `wiki-health` include deterministic before/after
+  verification.
+- Tests prove the deterministic delta names resolved and remaining orphan
+  pages.
+- Tests prove a false model success claim remains contradicted by the
+  recomputed residual findings.
+- Tests prove `link_orphan` can remove an orphan from the post-pass findings.
 - Existing `uv run pytest harness/tests` passes.
 - `uv run ruff check harness/src harness/tests` passes.
 - `uv run mypy harness/src` passes.

@@ -63,26 +63,26 @@ automatically by the harness on every page write. See `SCHEMA.md`.
 - [[iterable]] — Defines iterables in JavaScript via Symbol.iterator, with emphasis on generator-based implementations.
 - [[lazy-evaluation]] — Evaluation strategy where expressions are evaluated only when needed.
 - [[leanpub]] — A publishing platform enabling iterative book development with reader feedback.
-- [[left-variadic-functions]] — Functions that accept a variable number of arguments on the left side of the call.
+- [[left-variadic-functions]] — JavaScript functions that accept a variable number of arguments, with the first argument fixed and the rest collected in an array.
 - [[lexical-scoping]] — JavaScript's mechanism for resolving variable names based on their position in the source code, rather than runtime context.
 - [[linked-lists]] — JavaScript linked lists use structure sharing, where mutation of one alias affects all shared nodes. Contrast with array destructuring which creates copies. See (raw/javascriptallonge.pdf p.158-176) for copy-on-write strategies.
-- [[logical-operators]] — JavaScript's logical operators (!, &&, ||) operate on truthiness, not strict booleans, with short-circuit evaluation.
+- [[logical-operators]] — JavaScript's logical operators (!, &&, ||) that operate on truthiness rather than strict booleans.
 - [[mapping]] — Applying a function to each element of a data structure.
 - [[mapwith-and-flip]] — mapWith curries functions for data transformation, while flip reverses argument order. Both enable functional programming patterns in JavaScript.
 - [[object-assign]] — JavaScript's Object.assign() method for shallow cloning and merging objects.
 - [[object-destructuring]] — JavaScript object destructuring syntax and examples, including compact method syntax. sources: raw/javascriptallonge.pdf p.126-140
 - [[ordered-collection]] — Describes ordered collections in JavaScript, which reset iteration on each access and support operations like mapWith.
-- [[partial-application]] — Function technique to fix arguments in JavaScript
+- [[partial-application]] — Partial application in JavaScript, where a function is called with fewer arguments than it expects, returning a new function.
 - [[quasi-literals]] — JavaScript template strings with backticks and interpolation using ${expression}.
 - [[reference-types]] — Non-primitive data types in JavaScript compared by reference identity.
 - [[saros-cycle]] — An 18-year astronomical period used to predict recurring solar and lunar eclipses.
 - [[stateful-map]] — A lazy mapping technique that preserves state between iterations, used to track position in the chequer game problem.
-- [[ternary-operator]] — JavaScript's ternary operator (?) is a control-flow expression that evaluates a condition and returns one of two values.
+- [[ternary-operator]] — JavaScript's ternary operator (? :) as a control-flow expression for conditional assignments.
 - [[tortoise-and-hare-algorithm]] — Algorithm to detect loops in linked lists using two pointers (tortoise and hare). See (raw/javascriptallonge.pdf p.158-176) for implementation details.
-- [[truthiness]] — JavaScript's truthiness determines behavior of logical operators and conditionals, with falsy values including false, null, undefined, NaN, 0, and empty string.
-- [[unary-functions]] — Decorator to enforce single-argument functions in JavaScript
+- [[truthiness]] — JavaScript's truthiness and falsiness, where values are evaluated as true or false in boolean contexts.
+- [[unary-functions]] — Unary functions in JavaScript, which accept exactly one argument, enforced via decorators.
 - [[value-types]] — Primitive data types in JavaScript compared by value equality.
 - [[void]] — A type of value representing the absence of any value or object.
 
 ## Syntheses
-- [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-12).
+- [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-13).

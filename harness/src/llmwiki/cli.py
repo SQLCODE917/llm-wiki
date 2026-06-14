@@ -12,7 +12,13 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from llmwiki.config import ConfigError, WikiPaths, load_backend_config
+from llmwiki.config import (
+    VALID_STRICT_EVIDENCE_MODES,
+    ConfigError,
+    WikiPaths,
+    load_backend_config,
+    resolve_strict_evidence_mode,
+)
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
 from llmwiki.pdf.vision import AppleVisionRecognizer
@@ -42,6 +48,7 @@ def _build_parser() -> argparse.ArgumentParser:
     sub = parser.add_subparsers(dest="op", required=True)
 
     ingest = sub.add_parser("ingest", help="Integrate one raw source into the wiki.")
+    _add_strict_evidence_arg(ingest)
     ingest.add_argument("source", help="Source path relative to raw/, e.g. article.md")
     ingest.add_argument(
         "--reextract",
@@ -57,11 +64,14 @@ def _build_parser() -> argparse.ArgumentParser:
     )
 
     query = sub.add_parser("query", help="Answer a question from the wiki.")
+    _add_strict_evidence_arg(query)
     query.add_argument("question", help="The question to answer.")
 
-    sub.add_parser("lint", help="Health-check the wiki.")
+    lint = sub.add_parser("lint", help="Health-check the wiki.")
+    _add_strict_evidence_arg(lint)
 
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
+    _add_strict_evidence_arg(chat)
     chat.add_argument(
         "--resume",
         nargs="?",
@@ -71,6 +81,15 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Continue a conversation (default: the most recent one).",
     )
     return parser
+
+
+def _add_strict_evidence_arg(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--strict-evidence",
+        choices=VALID_STRICT_EVIDENCE_MODES,
+        help="Citation evidence validation: off, warn, or fail "
+        "(default: LLMWIKI_STRICT_EVIDENCE or off).",
+    )
 
 
 def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
@@ -90,11 +109,13 @@ async def _run(args: argparse.Namespace) -> OperationResult:
     paths = WikiPaths(root=args.root.resolve())
     paths.validate()
     backend_config = load_backend_config(args.runtime)
+    strict_evidence = resolve_strict_evidence_mode(args.strict_evidence)
 
     now = datetime.now()
     backend = await start_backend(backend_config)
     try:
         print(f"[runtime: {backend.summary}]", file=sys.stderr)
+        print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
         session = Session(
             store=WikiStore(paths),
             client=backend.client,
@@ -104,6 +125,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             run_id=now.strftime("%Y-%m-%d-%H%M%S"),
             extract_pdf=_pdf_extractor(paths),
             on_chunk_note=lambda note: print(note, flush=True),
+            strict_evidence=strict_evidence,
         )
         if args.op == "ingest":
             return await session.ingest(

@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from forge.core.workflow import Workflow
 
+from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.tools import (
@@ -22,13 +23,22 @@ from llmwiki.workflows.tools import (
 
 
 def build_map_workflow(
-    store: WikiStore, today: str, write_log: list[str] | None = None
+    store: WikiStore,
+    today: str,
+    write_log: list[str] | None = None,
+    evidence_policy: EvidencePolicy | None = None,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     tools = [
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
-        write_page_tool(store, today, read_tracker=seen, write_log=write_log),
+        write_page_tool(
+            store,
+            today,
+            read_tracker=seen,
+            write_log=write_log,
+            evidence_policy=evidence_policy,
+        ),
         finish_tool(
             "finish_chunk",
             "Finish this chunk after the wiki reflects it. Report concise "
@@ -45,12 +55,14 @@ def build_map_workflow(
     )
 
 
-def build_integrate_workflow(store: WikiStore, today: str) -> Workflow:
+def build_integrate_workflow(
+    store: WikiStore, today: str, evidence_policy: EvidencePolicy | None = None
+) -> Workflow:
     seen: set[str] = set()
     tools = [
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
-        write_page_tool(store, today, read_tracker=seen),
+        write_page_tool(store, today, read_tracker=seen, evidence_policy=evidence_policy),
         finish_tool(
             "finish_ingest",
             "Finish the chunked ingest after the hub source page exists and "

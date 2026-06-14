@@ -12,10 +12,12 @@ from __future__ import annotations
 from forge.core.workflow import Workflow
 from forge.tools.respond import respond_tool
 
+from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.tools import (
     finish_tool,
+    link_orphan_tool,
     read_index_tool,
     read_page_tool,
     read_source_tool,
@@ -24,13 +26,21 @@ from llmwiki.workflows.tools import (
 )
 
 
-def build_ingest_workflow(store: WikiStore, today: str) -> Workflow:
+def build_ingest_workflow(
+    store: WikiStore, today: str, evidence_policy: EvidencePolicy | None = None
+) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     tools = [
         read_source_tool(store),
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
-        write_page_tool(store, today, prerequisites=["read_source"], read_tracker=seen),
+        write_page_tool(
+            store,
+            today,
+            prerequisites=["read_source"],
+            read_tracker=seen,
+            evidence_policy=evidence_policy,
+        ),
         finish_tool(
             "finish_ingest",
             "Finish the ingest after the wiki fully reflects the source. "
@@ -47,13 +57,15 @@ def build_ingest_workflow(store: WikiStore, today: str) -> Workflow:
     )
 
 
-def build_query_workflow(store: WikiStore, today: str) -> Workflow:
+def build_query_workflow(
+    store: WikiStore, today: str, evidence_policy: EvidencePolicy | None = None
+) -> Workflow:
     seen: set[str] = set()
     tools = [
         search_wiki_tool(store),
         read_index_tool(store),
         read_page_tool(store, read_tracker=seen),
-        write_page_tool(store, today, read_tracker=seen),
+        write_page_tool(store, today, read_tracker=seen, evidence_policy=evidence_policy),
         respond_tool(),
     ]
     return Workflow(
@@ -92,12 +104,15 @@ def build_chat_workflow(store: WikiStore) -> Workflow:
     )
 
 
-def build_lint_workflow(store: WikiStore, today: str) -> Workflow:
+def build_lint_workflow(
+    store: WikiStore, today: str, evidence_policy: EvidencePolicy | None = None
+) -> Workflow:
     seen: set[str] = set()
     tools = [
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
-        write_page_tool(store, today, read_tracker=seen),
+        link_orphan_tool(store, today),
+        write_page_tool(store, today, read_tracker=seen, evidence_policy=evidence_policy),
         finish_tool(
             "finish_lint",
             "Finish the lint pass with a concise wiki health report: issues "

@@ -1,9 +1,22 @@
 ---
 category: concept
-summary: JavaScript's logical operators (!, &&, ||) operate on truthiness, not strict booleans, with short-circuit evaluation.
-sources: javascriptallonge-picking-the-bean-choice-and-truthiness
-updated: 2026-06-11
+summary: JavaScript's logical operators (!, &&, ||) that operate on truthiness rather than strict booleans.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-13
 ---
+
+JavaScript's logical operators (`!`, `&&`, `||`) operate on truthiness rather than strict booleans. These operators are used for control flow and boolean expressions.
+
+- `!` (not): Negates truthiness.
+- `&&` (and): Returns the first falsy value or the last value if all are truthy.
+- `||` (or): Returns the first truthy value or the last value if all are falsy.
+
+Short-circuit evaluation prevents unnecessary computations. For example:
+
+- `null && undefined` → `null`
+- `1 || 2` → `1`
+
+See [[javascriptallonge-picking-the-bean-choice-and-truthiness]] for more details.
 
 JavaScript's logical operators `!`, `&&`, and `||` evaluate based on **truthiness**, not strict boolean values. Key behaviors:
 

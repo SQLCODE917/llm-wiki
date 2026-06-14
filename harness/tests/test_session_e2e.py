@@ -11,9 +11,11 @@ from forge.context import ContextManager, NoCompact
 from forge.core.workflow import TextResponse, ToolCall
 
 from llmwiki.config import WikiPaths
+from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.pages import WikiPage
 from llmwiki.runtime.session import Session
-from llmwiki.store import WikiStore
+from llmwiki.store import PageNotFoundError, WikiStore, WikiStoreError
+from llmwiki.workflows.tools import write_page_tool
 
 TODAY = "2026-06-10"
 
@@ -247,6 +249,51 @@ class TestIngest:
         assert any("finish_ingest" in content for content in nudges)
 
 
+class TestStrictEvidenceWrites:
+    def test_off_mode_skips_validation(self, store: WikiStore) -> None:
+        tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="off"))
+        result = tool.callable(
+            name="moon",
+            category="source",
+            summary="Lunar notes.",
+            content="Claim cites a missing source. (raw/missing.md)",
+            sources=[],
+        )
+        assert "Wrote wiki/moon.md" in result
+        assert "missing-source" not in result
+        assert "moon" in store.list_pages()
+
+    def test_warn_mode_permits_write_and_returns_findings(self, store: WikiStore) -> None:
+        tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="warn"))
+        result = tool.callable(
+            name="moon",
+            category="source",
+            summary="Lunar notes.",
+            content="Claim cites a missing source. (raw/missing.md)",
+            sources=[],
+        )
+        assert "Wrote wiki/moon.md" in result
+        assert "Strict evidence findings" in result
+        assert "missing-source" in result
+        assert "moon" in store.list_pages()
+
+    def test_fail_mode_rejects_and_leaves_index_unchanged(self, store: WikiStore) -> None:
+        before_index = store.read_index()
+        tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="fail"))
+        with pytest.raises(WikiStoreError, match="missing-source"):
+            tool.callable(
+                name="moon",
+                category="source",
+                summary="Lunar notes.",
+                content="Claim cites a missing source. (raw/missing.md)",
+                sources=[],
+            )
+        assert store.read_index() == before_index
+        assert "moon" not in store.list_pages()
+        with pytest.raises(PageNotFoundError):
+            store.read_page("moon")
+
+
 class TestQuery:
     async def test_search_then_respond_and_logged(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(
@@ -291,14 +338,169 @@ class TestLint:
         ]
         session = _session(store, script, paths)
         result = await session.lint()
-        assert result.output == "ghost link is broken."
+        assert "## Model report" in result.output
+        assert "ghost link is broken." in result.output
+        assert "## Deterministic verification" in result.output
+        assert "### Delta" in result.output
+        assert "### Before model pass" in result.output
+        assert "### After model pass" in result.output
         assert "wiki-health" in store.list_pages()
+        assert "Deterministic verification" in store.read_page("wiki-health")
         assert f"## [{TODAY}] lint | wiki health" in paths.log_path.read_text()
         # The deterministic findings reached the model in the user message.
         fake: FakeClient = session.client
         first_turn = fake.sent[0]
         user_msgs = [m["content"] for m in first_turn if m.get("role") == "user"]
         assert any("ghost" in content for content in user_msgs)
+
+    async def test_lint_output_does_not_trust_model_success_claim(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="No links.",
+                updated=TODAY,
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="No links.",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="finish_lint", args={"report": "All orphan pages fixed."})],
+        ]
+        result = await _session(store, script, paths).lint()
+
+        assert "All orphan pages fixed." in result.output
+        delta = result.output.split("### Delta", maxsplit=1)[1].split(
+            "### Before model pass", maxsplit=1
+        )[0]
+        assert "Resolved orphan pages: None." in delta
+        assert "Remaining orphan pages" in delta
+        assert "- alpha" in delta
+        assert "- beta" in delta
+        after = result.output.split("### After model pass", maxsplit=1)[1]
+        assert "Orphan pages" in after
+        assert "- alpha" in after
+        assert "- beta" in after
+
+    async def test_lint_can_fix_orphan_with_deterministic_link_tool(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="Related source page: [[gamma]].",
+                updated=TODAY,
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="Initially orphaned.",
+                updated=TODAY,
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="gamma",
+                category="source",
+                summary="G.",
+                body="Backlink to [[alpha]].",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="link_orphan", args={"from_page": "alpha", "orphan_page": "beta"})],
+            [ToolCall(tool="finish_lint", args={"report": "Linked beta from alpha."})],
+        ]
+        result = await _session(store, script, paths).lint()
+
+        assert "[[beta]]" in store.read_page("alpha")
+        assert "Linked beta from alpha." in result.output
+        delta = result.output.split("### Delta", maxsplit=1)[1].split(
+            "### Before model pass", maxsplit=1
+        )[0]
+        assert "Resolved orphan pages:\n- beta" in delta
+        assert "Remaining orphan pages: None." in delta
+        after = result.output.split("### After model pass", maxsplit=1)[1]
+        assert "No deterministic issues found" in after
+        assert "- beta" not in after
+
+    async def test_link_orphan_rejects_non_orphan_target(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(name="alpha", category="concept", summary="A.", body="[[beta]]", updated=TODAY)
+        )
+        store.write_page(
+            WikiPage(name="beta", category="concept", summary="B.", body="[[alpha]]", updated=TODAY)
+        )
+        store.write_page(
+            WikiPage(
+                name="gamma",
+                category="concept",
+                summary="G.",
+                body="[[alpha]]",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "gamma"})],
+            [ToolCall(tool="link_orphan", args={"from_page": "gamma", "orphan_page": "beta"})],
+            [ToolCall(tool="finish_lint", args={"report": "beta was not an orphan."})],
+        ]
+        result = await _session(store, script, paths).lint()
+
+        assert "beta was not an orphan." in result.output
+        assert store.read_page("gamma").count("[[beta]]") == 0
+
+    async def test_lint_prompt_includes_evidence_findings(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="Claim cites a missing source. (raw/missing.md)",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="finish_lint", args={"report": "missing source citation found."})],
+        ]
+        session = _session(store, script, paths)
+        session = Session(
+            store=session.store,
+            client=session.client,
+            context_manager=session.context_manager,
+            today=session.today,
+            runs_dir=session.runs_dir,
+            run_id=session.run_id,
+            strict_evidence="warn",
+        )
+        await session.lint()
+        fake: FakeClient = session.client
+        user_msgs = [m["content"] for m in fake.sent[0] if m.get("role") == "user"]
+        assert any("Citation evidence findings" in content for content in user_msgs)
+        assert any("missing-source" in content for content in user_msgs)
+        assert any("Strict evidence mode: warn" in content for content in user_msgs)
 
     async def test_health_page_is_not_reported_as_orphan(
         self, store: WikiStore, paths: WikiPaths

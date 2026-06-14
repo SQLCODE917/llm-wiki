@@ -1,9 +1,17 @@
 ---
 category: concept
-summary: JavaScript's truthiness determines behavior of logical operators and conditionals, with falsy values including false, null, undefined, NaN, 0, and empty string.
-sources: javascriptallonge-picking-the-bean-choice-and-truthiness
-updated: 2026-06-11
+summary: JavaScript's truthiness and falsiness, where values are evaluated as true or false in boolean contexts.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-13
 ---
+
+JavaScript's truthiness and falsiness refer to how values are evaluated in boolean contexts. Falsy values include `false`, `null`, `undefined`, `NaN`, `0`, and `''`. All other values are truthy. This behavior is fundamental to control flow and logical operations in JavaScript.
+
+- `!5` → `false`
+- `null && undefined` → `null`
+- `1 || 2` → `1`
+
+See [[javascriptallonge-picking-the-bean-choice-and-truthiness]] for more details.
 
 In JavaScript, every value is either **truthy** or **falsy**. Falsy values include:
 

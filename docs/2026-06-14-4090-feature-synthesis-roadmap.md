@@ -29,6 +29,13 @@ for all work at once.
    - Wires citation findings into `write_page` and `lint` behind
      `off|warn|fail` strictness.
    - Preserves normal wiki synthesis by defaulting strictness to `off`.
+   - Verifies lint outcomes with a deterministic post-pass so `wiki-health`
+     and `log.md` never depend only on the model's self-report when the
+     harness can measure the result.
+   - Reports deterministic lint deltas so resolved and remaining findings are
+     visible without trusting the model narrative.
+   - Adds a deterministic orphan-link helper so lint can repair graph-only
+     findings without rewriting whole pages.
    - Retires backup references for landed evidence features.
 
 ## Global Constraints
@@ -37,6 +44,12 @@ for all work at once.
 - Wiki content is written only through `write_page`.
 - `index.md`, `log.md`, frontmatter, salience, chat windows, and transcripts
   remain deterministic harness-owned bookkeeping.
+- Lint success is never only model-reported when the harness can recompute the
+  affected fact. The model may repair pages, but link/index/orphan and citation
+  evidence state must be measured before and after the model pass.
+- For orphan repairs, the model chooses the relationship and the harness should
+  perform the mechanical link insertion. Do not ask the model to rewrite a
+  whole page merely to add one graph edge.
 - The backup tree remains reference-only and ignored by git.
 - The flat `wiki/*.md` page model remains canonical.
 - Existing commands keep their names: `llmwiki ingest`, `llmwiki query`,
@@ -56,5 +69,6 @@ for all work at once.
 
 The synthesis is complete when the three TDDs are implemented, the 4090 path can
 run at least one real wiki operation through Ollama and the harness, evidence
-strictness is available as an opt-in gate, and `AGENTS.md` no longer names
-backup files as active porting targets except for explicitly deferred work.
+strictness is available as an opt-in gate, lint reports include deterministic
+post-pass verification, and `AGENTS.md` no longer names backup files as active
+porting targets except for explicitly deferred work.

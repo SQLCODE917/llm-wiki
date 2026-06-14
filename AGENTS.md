@@ -102,6 +102,13 @@ tool-calling and multi-step agentic workflows on self-hosted models.
   chat windowing.
 - Keep strict evidence IDs and locator validation as optional gates for sources
   where auditability matters. Do not force them onto every page by default.
+- Never let lint success be only model-reported when the harness can measure
+  the result. Recompute deterministic link/index/orphan and citation evidence
+  findings after a lint repair pass, and record residual findings in
+  `wiki-health` and `wiki/log.md`.
+- For orphan-only lint repairs, prefer deterministic link insertion over
+  whole-page rewrites. The model should choose the related page and orphan
+  target; the harness should perform the mechanical `[[link]]` edit.
 
 ## Open questions discipline
 

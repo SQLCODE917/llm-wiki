@@ -17,8 +17,10 @@ from forge.context import ContextManager
 from forge.core.messages import Message, MessageMeta, MessageRole, MessageType
 from forge.core.runner import WorkflowRunner
 
+from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.chatwindow import QAPair
-from llmwiki.domain.links import compute_findings
+from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
+from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
 from llmwiki.pdf import PdfError
@@ -92,6 +94,64 @@ class OperationResult:
 
 
 @dataclass(frozen=True)
+class LintSnapshot:
+    """Deterministic lint state at one point in the operation."""
+
+    link_findings: LintFindings
+    evidence_report: EvidenceLintReport
+
+    def render(self) -> str:
+        return (
+            "Link/index/orphan findings:\n"
+            f"{self.link_findings.render()}\n\n"
+            "Citation evidence findings:\n"
+            f"{self.evidence_report.render()}"
+        )
+
+
+@dataclass(frozen=True)
+class LintDelta:
+    """Deterministic before/after change summary for a lint operation."""
+
+    before: LintSnapshot
+    after: LintSnapshot
+
+    def render(self) -> str:
+        before_orphans = set(self.before.link_findings.orphan_pages)
+        after_orphans = set(self.after.link_findings.orphan_pages)
+        before_broken = _broken_link_edges(self.before.link_findings)
+        after_broken = _broken_link_edges(self.after.link_findings)
+        before_evidence = set(self.before.evidence_report.findings)
+        after_evidence = set(self.after.evidence_report.findings)
+        return "\n\n".join(
+            [
+                _render_name_delta(
+                    "Resolved orphan pages",
+                    sorted(before_orphans - after_orphans),
+                ),
+                _render_name_delta("New orphan pages", sorted(after_orphans - before_orphans)),
+                _render_name_delta("Remaining orphan pages", sorted(after_orphans)),
+                _render_count_delta("Broken link findings", len(before_broken), len(after_broken)),
+                _render_count_delta(
+                    "Pages missing from index.md",
+                    len(self.before.link_findings.missing_from_index),
+                    len(self.after.link_findings.missing_from_index),
+                ),
+                _render_count_delta(
+                    "Stale index entries",
+                    len(self.before.link_findings.stale_index_entries),
+                    len(self.after.link_findings.stale_index_entries),
+                ),
+                _render_count_delta(
+                    "Citation evidence findings",
+                    len(before_evidence),
+                    len(after_evidence),
+                ),
+            ]
+        )
+
+
+@dataclass(frozen=True)
 class Session:
     """One operation run: explicit dependencies, one public method per op."""
 
@@ -103,6 +163,10 @@ class Session:
     run_id: str = ""  # unique per run (e.g. timestamp); falls back to date
     extract_pdf: ExtractFn | None = None  # required for PDF ingest; CLI wires it
     on_chunk_note: Callable[[str], None] | None = None  # per-chunk supervision
+    strict_evidence: StrictEvidenceMode = "off"
+
+    def _evidence_policy(self) -> EvidencePolicy:
+        return EvidencePolicy(mode=self.strict_evidence)
 
     async def ingest(
         self, source_path: str, reextract: bool = False, reintegrate: bool = False
@@ -111,7 +175,7 @@ class Session:
             return await self._ingest_pdf(source_path, reextract, reintegrate)
         if reintegrate:
             raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
-        workflow = build_ingest_workflow(self.store, self.today)
+        workflow = build_ingest_workflow(self.store, self.today, self._evidence_policy())
         message = (
             f"Ingest the source 'raw/{source_path}' into the wiki. "
             f"Pass path='{source_path}' to read_source."
@@ -144,7 +208,12 @@ class Session:
             )
             write_log: list[str] = []
             notes, _ = await self._run(
-                build_map_workflow(self.store, self.today, write_log=write_log),
+                build_map_workflow(
+                    self.store,
+                    self.today,
+                    write_log=write_log,
+                    evidence_policy=self._evidence_policy(),
+                ),
                 message,
                 "pdf-chunk",
                 tag=f"pdf-chunk-{record.chunk_id:04d}",
@@ -172,7 +241,7 @@ class Session:
             f"Per-chunk notes:\n\n<notes>\n{manifest.digest()}\n</notes>"
         )
         report, transcript = await self._run(
-            build_integrate_workflow(self.store, self.today),
+            build_integrate_workflow(self.store, self.today, self._evidence_policy()),
             message,
             "pdf-integrate",
             tag="pdf-integrate",
@@ -195,7 +264,7 @@ class Session:
             self.store.write_page(replace(page, body=body, updated=self.today))
 
     async def query(self, question: str) -> OperationResult:
-        workflow = build_query_workflow(self.store, self.today)
+        workflow = build_query_workflow(self.store, self.today, self._evidence_policy())
         # Factual lookups don't benefit from Qwen3's thinking preamble.
         answer, transcript = await self._run(workflow, question + " /no_think", "query")
         self.store.append_log(self.today, "query", question, answer)
@@ -233,29 +302,57 @@ class Session:
         return await self._run(workflow, message, "chat", tag=tag, initial_messages=seed)
 
     async def lint(self) -> OperationResult:
-        findings = compute_findings(
-            self.store.page_texts(),
-            self.store.index_names(),
-            exempt_from_orphans=frozenset({HEALTH_PAGE}),
-        )
         if not self.store.list_pages():
             report = "Wiki is empty — nothing to lint."
             self.store.append_log(self.today, "lint", "empty wiki", report)
             return OperationResult("lint", "wiki health", report, None)
-        workflow = build_lint_workflow(self.store, self.today)
+        evidence_policy = self._evidence_policy()
+        before = self._lint_snapshot(evidence_policy)
+        workflow = build_lint_workflow(self.store, self.today, evidence_policy)
         salience_block = compute_salience(self.store.page_texts()).render()
         message = (
             "Run a lint pass. Deterministic findings from the harness:\n\n"
-            f"{findings.render()}\n\n"
+            f"{before.link_findings.render()}\n\n"
+            "Citation evidence findings:\n\n"
+            f"{before.evidence_report.render()}\n\n"
             f"{salience_block}\n"
             "The salience report names the most load-bearing pages — protect "
             "their content. Review the affected pages (and spot-check "
             "others), then call finish_lint with the health report."
         )
-        report, transcript = await self._run(workflow, message, "lint")
-        self._file_lint_report(report)
-        self.store.append_log(self.today, "lint", "wiki health", report)
-        return OperationResult("lint", "wiki health", report, transcript)
+        model_report, transcript = await self._run(workflow, message, "lint")
+        after = self._lint_snapshot(evidence_policy)
+        verified_report = self._verified_lint_report(model_report, before, after)
+        self._file_lint_report(verified_report)
+        self.store.append_log(self.today, "lint", "wiki health", verified_report)
+        return OperationResult("lint", "wiki health", verified_report, transcript)
+
+    def _lint_snapshot(self, evidence_policy: EvidencePolicy) -> LintSnapshot:
+        page_texts = self.store.page_texts()
+        inventory = self.store.source_inventory() if evidence_policy.enabled else None
+        return LintSnapshot(
+            link_findings=compute_findings(
+                page_texts,
+                self.store.index_names(),
+                exempt_from_orphans=frozenset({HEALTH_PAGE}),
+            ),
+            evidence_report=evidence_policy.lint_pages(page_texts, inventory),
+        )
+
+    def _verified_lint_report(
+        self, model_report: str, before: LintSnapshot, after: LintSnapshot
+    ) -> str:
+        return (
+            "## Model report\n\n"
+            f"{model_report.strip() or 'No model report.'}\n\n"
+            "## Deterministic verification\n\n"
+            "### Delta\n\n"
+            f"{LintDelta(before, after).render()}\n\n"
+            "### Before model pass\n\n"
+            f"{before.render()}\n\n"
+            "### After model pass\n\n"
+            f"{after.render()}"
+        )
 
     async def _run(
         self,
@@ -299,3 +396,21 @@ class Session:
                 updated=self.today,
             )
         )
+
+
+def _broken_link_edges(findings: LintFindings) -> set[tuple[str, str]]:
+    return {
+        (page, target)
+        for page, targets in findings.broken_links.items()
+        for target in targets
+    }
+
+
+def _render_count_delta(label: str, before: int, after: int) -> str:
+    return f"{label}: {before} -> {after}"
+
+
+def _render_name_delta(label: str, names: list[str]) -> str:
+    if not names:
+        return f"{label}: None."
+    return label + ":\n" + "\n".join(f"- {name}" for name in names)

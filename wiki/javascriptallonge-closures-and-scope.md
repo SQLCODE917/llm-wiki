@@ -2,7 +2,7 @@
 category: source
 summary: JavaScript closures, scope chains, pure functions, and environment hierarchy (pages 44-48).
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-11
+updated: 2026-06-13
 ---
 
 ## Closures and Scope
@@ -16,3 +16,5 @@ This chapter explores how nested functions access variables from outer scopes, d
 - **Global environment**: All functions have access to a global environment, which can be isolated using IIFEs (e.g., `(() => { ... })()`).
 
 Examples include the K Combinator `(x) => (y) => x` and currying/partial application patterns. The chapter also discusses how closures enable functional programming techniques.
+
+Related: [[closure]].

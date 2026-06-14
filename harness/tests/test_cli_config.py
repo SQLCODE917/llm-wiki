@@ -10,6 +10,7 @@ from llmwiki.config import (
     WikiPaths,
     load_backend_config,
     resolve_runtime_profile,
+    resolve_strict_evidence_mode,
 )
 
 
@@ -26,6 +27,10 @@ class TestParser:
         args = _build_parser().parse_args(["--root", str(tmp_path), "lint"])
         assert args.op == "lint"
         assert args.root == tmp_path
+
+    def test_strict_evidence_arg(self) -> None:
+        args = _build_parser().parse_args(["lint", "--strict-evidence", "warn"])
+        assert args.strict_evidence == "warn"
 
     def test_runtime_arg(self) -> None:
         args = _build_parser().parse_args(
@@ -88,6 +93,25 @@ class TestBackendConfig:
         monkeypatch.setenv("LLMWIKI_CTX", "many")
         with pytest.raises(ConfigError, match="LLMWIKI_CTX must be an integer"):
             load_backend_config()
+
+
+class TestStrictEvidenceConfig:
+    def test_default_strict_evidence_is_off(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.delenv("LLMWIKI_STRICT_EVIDENCE", raising=False)
+        assert resolve_strict_evidence_mode() == "off"
+
+    def test_env_strict_evidence(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("LLMWIKI_STRICT_EVIDENCE", "warn")
+        assert resolve_strict_evidence_mode() == "warn"
+
+    def test_cli_strict_evidence_overrides_env(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("LLMWIKI_STRICT_EVIDENCE", "fail")
+        assert resolve_strict_evidence_mode("warn") == "warn"
+
+    def test_invalid_strict_evidence_fails_loudly(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("LLMWIKI_STRICT_EVIDENCE", "strictest")
+        with pytest.raises(ConfigError, match="Valid modes"):
+            resolve_strict_evidence_mode()
 
 
 class TestWikiPathsValidation:

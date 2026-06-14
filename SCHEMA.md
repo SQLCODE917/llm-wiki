@@ -79,10 +79,16 @@ Entry prefix: `## [YYYY-MM-DD] <op> | <subject>` so that
 ### lint
 
 1. The harness reports deterministic findings first: broken `[[links]]`,
-   orphan pages, index drift.
+   orphan pages, index drift, and citation evidence findings when enabled.
 2. Review flagged pages: resolve or document contradictions, add missing
    cross-references, propose pages for concepts mentioned often but never
    given a page.
-3. Call `finish_lint` with the health report; the harness files it as the
-   `wiki-health` synthesis page (rewritten each lint pass; history is in
-   log.md). `wiki-health` is exempt from orphan checks.
+   - For orphan-only repairs, use `link_orphan(from_page, orphan_page)` to add
+     the inbound `[[orphan-page]]` link from a related existing page. Do not
+     rewrite a whole page merely to add one graph edge.
+3. Call `finish_lint` with the health report. The harness recomputes
+   deterministic findings after the model pass and files a verified report:
+   model report, deterministic delta, and before/after deterministic state. The
+   harness files that verified report as the `wiki-health` synthesis page
+   (rewritten each lint pass; history is in log.md). `wiki-health` is exempt
+   from orphan checks.

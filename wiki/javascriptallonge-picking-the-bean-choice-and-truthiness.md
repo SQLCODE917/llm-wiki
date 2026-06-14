@@ -2,7 +2,7 @@
 category: source
 summary: JavaScript's truthiness, logical operators (!, &&, ||), ternary operator, and control-flow semantics explained with examples.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-11
+updated: 2026-06-13
 ---
 
 ## Picking the Bean: Choice and Truthiness
@@ -15,3 +15,9 @@ JavaScript treats values as truthy or falsy, not just boolean. Falsy values incl
 - `||` and `&&` short-circuit evaluation prevents unnecessary computations.
 
 **Sources**: [raw/javascriptallonge.pdf p.94-108]
+
+Related: [[truthiness]].
+
+Related: [[logical-operators]].
+
+Related: [[ternary-operator]].
