@@ -28,6 +28,13 @@ from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
 from llmwiki.domain.pages import PageError, WikiPage, parse_page, render_page
 from llmwiki.domain.search import render_hits, search_pages
+from llmwiki.domain.semantic_lint import (
+    SemanticFinding,
+    SemanticLintCandidate,
+    SemanticLintReport,
+    SemanticLintSelection,
+    select_semantic_lint_candidates,
+)
 
 
 class InMemorySourceResolver:
@@ -183,6 +190,115 @@ class TestCandidates:
         )
 
         assert CandidateBacklog.from_json_text(backlog.to_json_text()) == backlog
+
+
+class TestSemanticLint:
+    def test_selection_is_bounded_and_reasoned_from_overlapping_pages(self) -> None:
+        pages = {
+            "alpha": render_page(
+                WikiPage(
+                    "alpha",
+                    "concept",
+                    "A.",
+                    "Feature arrived in ES2015. See [[beta]]. (raw/book.md)",
+                    sources=("book.md",),
+                    updated="2026-06-10",
+                )
+            ),
+            "beta": render_page(
+                WikiPage(
+                    "beta",
+                    "concept",
+                    "B.",
+                    "Feature details changed later. See [[alpha]]. (raw/book.md)",
+                    sources=("book.md",),
+                    updated="2026-06-15",
+                )
+            ),
+            "gamma": render_page(
+                WikiPage("gamma", "concept", "G.", "Unrelated.", updated="2026-06-15")
+            ),
+        }
+
+        selection = select_semantic_lint_candidates(
+            pages,
+            CandidateBacklog(),
+            max_items=1,
+        )
+
+        assert selection.candidate_count == 1
+        assert selection.audited_count == 1
+        assert selection.skipped_count == 0
+        assert selection.candidates[0].page_names == ("alpha", "beta")
+        assert "shared raw citations" in selection.candidates[0].reason
+
+    def test_selection_includes_candidate_backlog_data_gaps(self) -> None:
+        backlog = update_candidate_backlog(
+            CandidateBacklog(),
+            (
+                CandidateSignal("iterable", "concept", "linked from alpha", "alpha"),
+                CandidateSignal("iterable", "concept", "linked from beta", "beta"),
+            ),
+            existing_pages=set(),
+            today="2026-06-15",
+        )
+        pages = {
+            "alpha": render_page(WikiPage("alpha", "concept", "A.", "Mentions [[iterable]].")),
+            "beta": render_page(WikiPage("beta", "concept", "B.", "Mentions [[iterable]].")),
+        }
+
+        selection = select_semantic_lint_candidates(pages, backlog, max_items=5)
+
+        data_gap = next(item for item in selection.candidates if item.missing_concept)
+        assert data_gap.missing_concept == "iterable"
+        assert "data gap candidate" in data_gap.reason
+
+    def test_broad_shared_source_alone_does_not_create_candidate(self) -> None:
+        pages = {
+            "alpha": render_page(
+                WikiPage("alpha", "concept", "A.", "General notes.", sources=("book.pdf",))
+            ),
+            "beta": render_page(
+                WikiPage("beta", "concept", "B.", "Other notes.", sources=("book.pdf",))
+            ),
+        }
+
+        selection = select_semantic_lint_candidates(pages, CandidateBacklog(), max_items=5)
+
+        assert selection.candidate_count == 0
+
+    def test_report_includes_scope_findings_and_uncertainty(self) -> None:
+        selection = SemanticLintSelection(
+            candidates=(
+                SemanticLintCandidate(
+                    reason="data gap candidate",
+                    page_names=("alpha",),
+                    missing_concept="iterable",
+                    excerpt="[[alpha]] mentions iterable.",
+                    score=5,
+                ),
+            ),
+            candidate_count=3,
+            max_items=1,
+        )
+        report = SemanticLintReport(
+            selection=selection,
+            findings=(
+                SemanticFinding(
+                    kind="data_gap",
+                    affected_pages=("alpha",),
+                    rationale="Repeated missing topic.",
+                    evidence_consulted="[[alpha]]",
+                    recommended_action="Consider ingesting a source.",
+                ),
+            ),
+            model_report="Audited one item.",
+        ).render()
+
+        assert "Candidate items discovered: 3" in report
+        assert "Skipped by cap: 2" in report
+        assert "Finding 1: data_gap" in report
+        assert "bounded semantic lint pass" in report
 
 
 class TestLog:

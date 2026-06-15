@@ -616,3 +616,217 @@ None.
 ## Recommended Next Actions
 
 - Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.
+
+## [2026-06-15] semantic-lint | semantic audit
+# Semantic Lint
+
+## Audit Scope
+
+Candidate items discovered: 1749
+Audited items: 2
+Skipped by cap: 1747
+Max items: 2
+
+## Findings
+
+### Finding 1: stale_claim
+
+- Pages: [[nan]]
+- Rationale: The page [[nan]] was updated on 2026-06-11, while the related page [[void]] was updated on 2026-06-12. The content of [[nan]] mentions [[void]] as a related operator, but there is no clear indication that the relationship or the concept of void in JavaScript is fully explained or integrated in the current context of NaN.
+- Evidence consulted: Page [[nan]] and [[void]]
+- Recommended action: Review the relationship between NaN and void in JavaScript. Consider expanding or clarifying the connection in [[nan]] or [[void]] to ensure conceptual completeness.
+
+### Finding 2: possible_supersession
+
+- Pages: [[array-destructuring]]
+- Rationale: The page [[array-destructuring]] references [[javascriptallonge-copy-on-write]] for a contrast with linked lists. However, the content of [[javascriptallonge-copy-on-write]] is more comprehensive and includes a detailed discussion of copy-on-write strategies and trade-offs. The current page [[array-destructuring]] may not fully capture the nuances of copy-on-write as discussed in the source material.
+- Evidence consulted: Page [[array-destructuring]] and [[javascriptallonge-copy-on-write]]
+- Recommended action: Evaluate whether [[array-destructuring]] needs to be updated or expanded to better reflect the concepts and strategies discussed in [[javascriptallonge-copy-on-write]]. Consider integrating more details from the copy-on-write chapter to enrich the understanding of array destructuring.
+
+## Model Report
+
+Audited 2 items from the candidate list. Found 1 stale claim and 1 possible supersession. Both findings relate to inconsistencies in conceptual integration and completeness between related pages. No pages were edited; curator review is recommended for the identified leads.
+
+## Uncertainty
+
+This is a bounded semantic lint pass over selected leads, not proof that the wiki has no stale claims or data gaps.
+
+## [2026-06-15] semantic-lint | semantic audit
+# Semantic Lint
+
+## Audit Scope
+
+Candidate items discovered: 74
+Audited items: 2
+Skipped by cap: 72
+Max items: 2
+
+## Findings
+
+### Finding 1: stale_claim
+
+- Pages: [[partial-application]]
+- Rationale: The page [[partial-application]] contains a stale claim about the implementation of partial application. It mentions `callFirst(fn, larg)` as an example of partial application, but the implementation details in [[javascriptallonge-recipes-with-basic-functions]] show that `callFirst` is part of a broader set of partial application techniques (callFirst, callLast, callLeft, callRight) without explicitly defining `callFirst` as a standalone function. The example in [[partial-application]] is not directly supported by the source material.
+- Evidence consulted: [[javascriptallonge-recipes-with-basic-functions]], [[partial-application]]
+- Recommended action: Review the implementation examples in [[partial-application]] to ensure they align with the source material in [[javascriptallonge-recipes-with-basic-functions]]. The example for `callFirst` should be either removed or verified against the actual source code.
+
+### Finding 2: stale_claim
+
+- Pages: [[unary-functions]]
+- Rationale: The page [[unary-functions]] contains a stale claim about the `unary` decorator. It includes an example implementation that is not directly supported by the source material in [[javascriptallonge-recipes-with-basic-functions]]. The example shows `const unary = (fn) => fn.length === 1 ? fn : something => fn.call(this, something);` which is not consistent with the explanation provided in the source material.
+- Evidence consulted: [[javascriptallonge-recipes-with-basic-functions]], [[unary-functions]]
+- Recommended action: Verify the implementation of the `unary` decorator in [[unary-functions]] against the source material. Ensure that the example code aligns with the explanation and implementation in [[javascriptallonge-recipes-with-basic-functions]].
+
+## Model Report
+
+Audited 2 items for semantic linting. Found 2 stale claims in the pages [[partial-application]] and [[unary-functions]] that need review to ensure alignment with the source material in [[javascriptallonge-recipes-with-basic-functions]]. No edits were made; findings are reported for curator review.
+
+## Uncertainty
+
+This is a bounded semantic lint pass over selected leads, not proof that the wiki has no stale claims or data gaps.
+
+## [2026-06-15] maintenance | curator status
+# Curator Status
+
+Strict evidence mode: off
+
+## Wiki Shape
+
+Total wiki pages: 80
+Raw source files: 2
+Source pages: 24
+index.md: present
+log.md: present
+Pages with invalid frontmatter: 0
+
+Pages by category:
+- source: 24
+- entity: 12
+- concept: 39
+- synthesis: 5
+
+## Deterministic Findings
+
+Orphan pages (no inbound links from any other page):
+- axel-rauschmayer
+- call-by-value
+- floating-point-numbers
+- javascriptallonge-picking-the-bean
+- left-variadic-functions
+- mapwith-and-flip
+- nan
+- node-js
+- object-assign
+- ordered-collection
+- quasi-literals
+
+## Citation Evidence
+
+Strict evidence mode: off. Citation validation skipped.
+
+## Salience
+
+Salience report — computed per page as (links: inbound wiki links, writes: times written this ingest, mentions: occurrences in the source text):
+Concepts: [[array-destructuring]] (links 2, writes 0, mentions 0), [[arrays]] (links 2, writes 0, mentions 0), [[combinator]] (links 2, writes 0, mentions 0), [[const]] (links 2, writes 0, mentions 0), [[iterable]] (links 2, writes 0, mentions 0), [[linked-lists]] (links 2, writes 0, mentions 0), [[closure]] (links 1, writes 0, mentions 0), [[coroutine]] (links 1, writes 0, mentions 0)
+Entities: [[generator]] (links 2, writes 0, mentions 0), [[javascript]] (links 2, writes 0, mentions 0), [[archimedes]] (links 1, writes 0, mentions 0), [[corinth]] (links 1, writes 0, mentions 0), [[matthew-knox]] (links 1, writes 0, mentions 0), [[michael-fogus]] (links 1, writes 0, mentions 0), [[reg-raganwald-braithwaite]] (links 1, writes 0, mentions 0), [[syracuse]] (links 1, writes 0, mentions 0)
+
+## Candidate Page Backlog
+
+No active candidate pages from explicit missing double-bracket links.
+
+## Latest Semantic Lint
+
+category: synthesis
+summary: Semantic lint report from 2026-06-15.
+updated: 2026-06-15
+Candidate items discovered: 74
+Audited items: 2
+
+## Recent Log Entries
+
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] semantic-lint | semantic audit
+- ## [2026-06-15] semantic-lint | semantic audit
+
+## Navigation Warnings
+
+None.
+
+## Recommended Next Actions
+
+- Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.
+
+## [2026-06-15] maintenance | curator status
+# Curator Status
+
+Strict evidence mode: off
+
+## Wiki Shape
+
+Total wiki pages: 80
+Raw source files: 2
+Source pages: 24
+index.md: present
+log.md: present
+Pages with invalid frontmatter: 0
+
+Pages by category:
+- source: 24
+- entity: 12
+- concept: 39
+- synthesis: 5
+
+## Deterministic Findings
+
+Orphan pages (no inbound links from any other page):
+- axel-rauschmayer
+- call-by-value
+- floating-point-numbers
+- javascriptallonge-picking-the-bean
+- left-variadic-functions
+- mapwith-and-flip
+- nan
+- node-js
+- object-assign
+- ordered-collection
+- quasi-literals
+
+## Citation Evidence
+
+Strict evidence mode: off. Citation validation skipped.
+
+## Salience
+
+Salience report — computed per page as (links: inbound wiki links, writes: times written this ingest, mentions: occurrences in the source text):
+Concepts: [[array-destructuring]] (links 2, writes 0, mentions 0), [[arrays]] (links 2, writes 0, mentions 0), [[combinator]] (links 2, writes 0, mentions 0), [[const]] (links 2, writes 0, mentions 0), [[iterable]] (links 2, writes 0, mentions 0), [[linked-lists]] (links 2, writes 0, mentions 0), [[closure]] (links 1, writes 0, mentions 0), [[coroutine]] (links 1, writes 0, mentions 0)
+Entities: [[generator]] (links 2, writes 0, mentions 0), [[javascript]] (links 2, writes 0, mentions 0), [[archimedes]] (links 1, writes 0, mentions 0), [[corinth]] (links 1, writes 0, mentions 0), [[matthew-knox]] (links 1, writes 0, mentions 0), [[michael-fogus]] (links 1, writes 0, mentions 0), [[reg-raganwald-braithwaite]] (links 1, writes 0, mentions 0), [[syracuse]] (links 1, writes 0, mentions 0)
+
+## Candidate Page Backlog
+
+No active candidate pages from explicit missing double-bracket links.
+
+## Latest Semantic Lint
+
+Candidate items discovered: 74
+Audited items: 2
+Skipped by cap: 72
+Max items: 2
+- Pages: [[partial-application]]
+
+## Recent Log Entries
+
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] semantic-lint | semantic audit
+- ## [2026-06-15] semantic-lint | semantic audit
+- ## [2026-06-15] maintenance | curator status
+
+## Navigation Warnings
+
+None.
+
+## Recommended Next Actions
+
+- Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.

@@ -8,6 +8,7 @@ from llmwiki.workflows.definitions import (
     build_ingest_workflow,
     build_lint_workflow,
     build_query_workflow,
+    build_semantic_lint_workflow,
 )
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
     "build_ingest_workflow",
     "build_lint_workflow",
     "build_query_workflow",
+    "build_semantic_lint_workflow",
 ]

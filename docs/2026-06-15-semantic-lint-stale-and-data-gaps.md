@@ -151,3 +151,40 @@ report so repeated runs can be compared.
 
 - If implementation needs internet access to decide a finding, stop and split
   source-discovery into a separate design.
+
+## Implementation Notes
+
+- Implemented `uv run llmwiki semantic-lint` with `--max-items`.
+- Added deterministic candidate selection in `llmwiki.domain.semantic_lint`.
+- Added `record_semantic_finding` with fixed finding types:
+  `stale_claim`, `possible_supersession`, and `data_gap`.
+- Added `wiki-semantic-lint` as a harness-owned synthesis report page exempt
+  from graph health checks.
+- Curator status now includes a latest semantic-lint summary when the report
+  page exists.
+- The selector deliberately ignores broad shared book-level sources by default;
+  exact citation overlap, direct links, updated-date differences, and
+  candidate-backlog data gaps carry the audit.
+
+## Verification Plan
+
+- Unit tests for bounded candidate selection, broad-source filtering, backlog
+  data gaps, and report rendering.
+- Session E2E tests for structured finding recording, no-candidate
+  short-circuiting, and invalid page recovery.
+- CLI tests for parser arguments and non-positive `--max-items`.
+- Live `uv run llmwiki semantic-lint --max-items 2` over the current wiki,
+  followed by report inspection.
+
+## Verification Results
+
+- Focused domain/session/maintenance/CLI tests pass.
+- First live run completed but exposed an over-broad selector: broad
+  `raw/javascriptallonge.pdf` overlap produced 1,749 candidate pairs and weak
+  leads.
+- Tightened selector to prefer exact citations/page-range sources and direct
+  links; second live run produced 74 candidates and concrete stale-claim leads
+  involving `partial-application`, `unary-functions`, and
+  `javascriptallonge-recipes-with-basic-functions`.
+- No ordinary wiki pages were edited; only `wiki-semantic-lint` and `wiki/log.md`
+  were updated by the live command.

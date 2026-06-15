@@ -142,3 +142,14 @@ GROUNDING_TEMPLATE = _BASE + (
     "When finished, call finish_grounding with audited scope, uncertainty, and "
     "curator next steps."
 )
+
+SEMANTIC_LINT_TEMPLATE = _BASE + (
+    "\nTask: run a bounded semantic lint audit. The user message contains "
+    "candidate items selected deterministically by the harness. Inspect items "
+    "in order; read the relevant pages before recording a finding. Use "
+    "record_semantic_finding only for stale_claim, possible_supersession, or "
+    "data_gap leads that a curator should review. Do not rewrite pages, do not "
+    "invent missing sources, and do not perform web search. Compatible wording "
+    "differences are not findings. Finish with finish_semantic_lint: audited "
+    "scope, findings recorded, uncertainty, and curator next steps."
+)

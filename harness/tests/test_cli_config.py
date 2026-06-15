@@ -13,6 +13,7 @@ from llmwiki.config import (
     resolve_strict_evidence_mode,
 )
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS
+from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS
 
 
 class TestParser:
@@ -61,6 +62,15 @@ class TestParser:
     def test_contradictions_default_pair_cap(self) -> None:
         args = _build_parser().parse_args(["contradictions"])
         assert args.max_pairs == DEFAULT_MAX_PAIRS
+
+    def test_semantic_lint_args(self) -> None:
+        args = _build_parser().parse_args(["semantic-lint", "--max-items", "3"])
+        assert args.op == "semantic-lint"
+        assert args.max_items == 3
+
+    def test_semantic_lint_default_item_cap(self) -> None:
+        args = _build_parser().parse_args(["semantic-lint"])
+        assert args.max_items == DEFAULT_MAX_ITEMS
 
     def test_strict_evidence_arg(self) -> None:
         args = _build_parser().parse_args(["lint", "--strict-evidence", "warn"])

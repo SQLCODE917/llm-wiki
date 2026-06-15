@@ -29,11 +29,17 @@ from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, G
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
+from llmwiki.domain.semantic_lint import (
+    SemanticFinding,
+    SemanticLintReport,
+    SemanticLintSelection,
+)
 from llmwiki.domain.system_pages import (
     CONTRADICTIONS_PAGE,
     GROUNDING_PAGE,
     HEALTH_PAGE,
     ORPHAN_EXEMPT_PAGES,
+    SEMANTIC_LINT_PAGE,
 )
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import (
@@ -52,6 +58,7 @@ from llmwiki.workflows import (
     build_ingest_workflow,
     build_lint_workflow,
     build_query_workflow,
+    build_semantic_lint_workflow,
 )
 from llmwiki.workflows.pdf_ingest import build_integrate_workflow, build_map_workflow
 
@@ -61,6 +68,7 @@ _MAX_ITERATIONS = {
     "lint": 24,
     "contradictions": 18,
     "grounding": 18,
+    "semantic-lint": 18,
     "pdf-chunk": 24,
     "pdf-integrate": 20,
     "chat": 12,
@@ -91,6 +99,11 @@ _RETRY_NUDGES = {
     "grounding": (
         "Reply with exactly one tool call. If the audit is complete, call "
         "finish_grounding with the audit report; otherwise call record_grounding_verdict."
+    ),
+    "semantic-lint": (
+        "Reply with exactly one tool call. If the audit is complete, call "
+        "finish_semantic_lint with the audit report; otherwise call "
+        "record_semantic_finding or read_page."
     ),
     "pdf-chunk": (
         "Reply with exactly one tool call. If the wiki now reflects this "
@@ -424,6 +437,32 @@ class Session:
         self.store.append_log(self.today, "grounding", "grounding audit", report)
         return OperationResult("grounding", "grounding audit", report, transcript)
 
+    async def semantic_lint(self, selection: SemanticLintSelection) -> OperationResult:
+        findings: list[SemanticFinding] = []
+        if not selection.candidates:
+            report = self._semantic_lint_report(
+                selection, (), "No semantic lint candidates to audit."
+            )
+            self._file_semantic_lint_report(report)
+            self.store.append_log(self.today, "semantic-lint", "semantic audit", report)
+            return OperationResult("semantic-lint", "semantic audit", report, None)
+        workflow = build_semantic_lint_workflow(self.store, findings)
+        message = (
+            "Run a bounded semantic lint audit over these candidate items. "
+            "Read relevant pages before recording findings. Record only stale "
+            "claims, possible supersessions, or data gaps that deserve curator "
+            "review; do not edit pages.\n\n"
+            f"Candidate items discovered: {selection.candidate_count}\n"
+            f"Audited items: {selection.audited_count}\n"
+            f"Skipped by cap: {selection.skipped_count}\n\n"
+            f"{selection.render_for_prompt()}"
+        )
+        model_report, transcript = await self._run(workflow, message, "semantic-lint")
+        report = self._semantic_lint_report(selection, tuple(findings), model_report)
+        self._file_semantic_lint_report(report)
+        self.store.append_log(self.today, "semantic-lint", "semantic audit", report)
+        return OperationResult("semantic-lint", "semantic audit", report, transcript)
+
     def _lint_snapshot(self, evidence_policy: EvidencePolicy) -> LintSnapshot:
         page_texts = self.store.page_texts()
         inventory = self.store.source_inventory() if evidence_policy.enabled else None
@@ -539,6 +578,29 @@ class Session:
                 name=GROUNDING_PAGE,
                 category="synthesis",
                 summary=f"Grounding audit report from {self.today}.",
+                body=report,
+                updated=self.today,
+            )
+        )
+
+    def _semantic_lint_report(
+        self,
+        selection: SemanticLintSelection,
+        findings: tuple[SemanticFinding, ...],
+        model_report: str,
+    ) -> str:
+        return SemanticLintReport(
+            selection=selection,
+            findings=findings,
+            model_report=model_report,
+        ).render()
+
+    def _file_semantic_lint_report(self, report: str) -> None:
+        self.store.write_page(
+            WikiPage(
+                name=SEMANTIC_LINT_PAGE,
+                category="synthesis",
+                summary=f"Semantic lint report from {self.today}.",
                 body=report,
                 updated=self.today,
             )

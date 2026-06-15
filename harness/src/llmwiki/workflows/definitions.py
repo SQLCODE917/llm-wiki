@@ -16,12 +16,14 @@ from forge.tools.respond import respond_tool
 from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import ClaimCandidate, GroundingVerdict
+from llmwiki.domain.semantic_lint import SemanticFinding
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.grounding_tools import record_grounding_verdict_tool
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
+from llmwiki.workflows.semantic_lint_tools import record_semantic_finding_tool
 from llmwiki.workflows.tools import (
     finish_tool,
     link_orphan_tool,
@@ -206,4 +208,26 @@ def build_grounding_workflow(
         required_steps=[],
         terminal_tool="finish_grounding",
         system_prompt_template=prompts.GROUNDING_TEMPLATE,
+    )
+
+
+def build_semantic_lint_workflow(
+    store: WikiStore, findings: list[SemanticFinding]
+) -> Workflow:
+    tools = [
+        read_page_tool(store),
+        record_semantic_finding_tool(store, findings),
+        finish_tool(
+            "finish_semantic_lint",
+            "Finish the semantic lint audit with scope, findings recorded, "
+            "uncertainty, and curator next steps.",
+        ),
+    ]
+    return Workflow(
+        name="semantic-lint",
+        description="Audit selected wiki leads for stale claims and data gaps.",
+        tools={t.name: t for t in tools},
+        required_steps=["read_page"],
+        terminal_tool="finish_semantic_lint",
+        system_prompt_template=prompts.SEMANTIC_LINT_TEMPLATE,
     )

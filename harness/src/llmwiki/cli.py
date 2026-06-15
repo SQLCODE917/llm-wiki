@@ -33,9 +33,10 @@ from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
 from llmwiki.domain.index import index_page_names
 from llmwiki.domain.links import compute_findings
 from llmwiki.domain.maintenance import build_curator_status, recent_log_entries
-from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.pages import WikiPage, parse_page
 from llmwiki.domain.salience import compute_salience
-from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES
+from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint_candidates
+from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES, SEMANTIC_LINT_PAGE
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
 from llmwiki.pdf.vision import AppleVisionRecognizer
@@ -135,6 +136,17 @@ def _build_parser() -> argparse.ArgumentParser:
         help=f"Maximum claim candidates to judge (default: {DEFAULT_MAX_CLAIMS}).",
     )
 
+    semantic_lint = sub.add_parser(
+        "semantic-lint",
+        help="Audit bounded semantic leads for stale claims and data gaps.",
+    )
+    semantic_lint.add_argument(
+        "--max-items",
+        type=int,
+        default=DEFAULT_MAX_ITEMS,
+        help=f"Maximum semantic lint items to audit (default: {DEFAULT_MAX_ITEMS}).",
+    )
+
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
     _add_strict_evidence_arg(chat)
     chat.add_argument(
@@ -186,6 +198,8 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         return await _run_contradictions(args, paths, now)
     if args.op == "grounding":
         return await _run_grounding(args, paths, now)
+    if args.op == "semantic-lint":
+        return await _run_semantic_lint(args, paths, now)
 
     paths.validate()
     backend_config = load_backend_config(args.runtime)
@@ -290,6 +304,44 @@ async def _run_grounding(
         await backend.aclose()
 
 
+async def _run_semantic_lint(
+    args: argparse.Namespace, paths: WikiPaths, now: datetime
+) -> OperationResult:
+    if args.max_items < 1:
+        raise ConfigError("--max-items must be at least 1.")
+    paths.validate()
+    store = WikiStore(paths)
+    selection = select_semantic_lint_candidates(
+        store.page_texts(),
+        store.read_candidate_backlog(),
+        max_items=args.max_items,
+    )
+    if not selection.candidates:
+        session = Session(
+            store=store,
+            client=None,
+            context_manager=ContextManager(strategy=NoCompact(), budget_tokens=1),
+            today=now.date().isoformat(),
+        )
+        return await session.semantic_lint(selection)
+
+    backend_config = load_backend_config(args.runtime)
+    backend = await start_backend(backend_config)
+    try:
+        print(f"[runtime: {backend.summary}]", file=sys.stderr)
+        session = Session(
+            store=store,
+            client=backend.client,
+            context_manager=backend.context_manager,
+            today=now.date().isoformat(),
+            runs_dir=paths.runs_dir,
+            run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+        )
+        return await session.semantic_lint(selection)
+    finally:
+        await backend.aclose()
+
+
 def _run_curator_operation(
     op: str, paths: WikiPaths, strict_evidence: StrictEvidenceMode, today: str
 ) -> OperationResult:
@@ -356,9 +408,22 @@ def _curator_report(
         salience_report=compute_salience(page_texts),
         candidate_backlog=candidate_backlog,
         strict_evidence=strict_evidence,
+        semantic_lint_summary=_semantic_lint_summary(store),
         link_findings=link_findings,
     )
     return status.render()
+
+
+def _semantic_lint_summary(store: WikiStore) -> str:
+    if SEMANTIC_LINT_PAGE not in store.list_pages():
+        return ""
+    text = parse_page(SEMANTIC_LINT_PAGE, store.read_page(SEMANTIC_LINT_PAGE)).body
+    lines = [
+        line.strip()
+        for line in text.splitlines()
+        if line.strip() and not line.startswith("---") and not line.startswith("#")
+    ]
+    return "\n".join(lines[:5])
 
 
 def _run_candidates(args: argparse.Namespace, paths: WikiPaths, today: str) -> OperationResult:

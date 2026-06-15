@@ -126,6 +126,20 @@ call `record_contradiction` for claims that cannot both be true as written. Use
 `wiki-contradictions` and appends a `contradiction` log entry. It does not
 rewrite pages or decide which source wins.
 
+**Semantic lint** — bounded stale-claim/data-gap audit:
+
+```bash
+uv run llmwiki semantic-lint
+uv run llmwiki semantic-lint --max-items 10
+```
+
+The harness selects a bounded set of semantic maintenance leads from exact
+citation/source overlap, direct links, date differences, and the candidate-page
+backlog. The model reads relevant pages and may record structured findings:
+`stale_claim`, `possible_supersession`, or `data_gap`. The command files
+`wiki-semantic-lint` and appends a `semantic-lint` log entry. It is report-only
+and does not rewrite content pages or perform web search.
+
 **Grounding** — bounded claim support audit:
 
 ```bash
@@ -184,6 +198,7 @@ chronologically.
 | Maintenance automation / curator status | `docs/2026-06-14-maintenance-automation-curator-status.md` | Model-free `curator-status` report plus filed `maintenance` report/log entry. |
 | Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Bounded model-assisted audits through `llmwiki contradictions`; files structured reports without auto-resolving conflicts. |
 | Grounding claim audit | `docs/2026-06-15-grounding-claim-audit.md` | Bounded model-assisted support checks for selected cited claims; files `wiki-grounding` without rewriting content pages. |
+| Semantic lint | `docs/2026-06-15-semantic-lint-stale-and-data-gaps.md` | Bounded model-assisted leads for stale claims, possible supersessions, and data gaps; files `wiki-semantic-lint`. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
@@ -230,6 +245,9 @@ mode we hit.
 - **`wiki-grounding` is rewritten each grounding audit.** The audit is bounded
   by citation-bearing claim selection and is not proof that every wiki claim is
   supported. Broad uncited-claim detection remains a separate, noisier problem.
+- **`wiki-semantic-lint` is rewritten each semantic lint pass.** It records
+  curator leads, not final truth judgments, and the selector is intentionally
+  conservative about broad shared sources.
 - **Single-user, single-op.** One local Ollama-backed operation at a time.
 
 ## Future improvements

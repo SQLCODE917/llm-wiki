@@ -42,6 +42,8 @@ The index and log formats below are also enforced in harness code
 - Grounding audits are report-only: judge selected cited claims against
   resolved evidence excerpts and record curator actions without rewriting
   content pages.
+- Semantic lint audits are report-only: record stale-claim, supersession, and
+  data-gap leads for curator review without rewriting content pages.
 - Frontmatter (category, summary, sources, updated date) is composed by the
   harness from `write_page` arguments — do not write it in page content.
 - `write_page` replaces the entire page. When updating an existing page,
@@ -149,3 +151,19 @@ as source evidence or as existing wiki coverage.
    steps. The harness files the structured report as the `wiki-grounding`
    synthesis page (rewritten each audit pass; history is in log.md).
    `wiki-grounding` is exempt from orphan checks.
+
+### semantic-lint
+
+1. The harness selects a bounded set of semantic maintenance leads before the
+   model is invoked. Candidate reasons can include exact shared citations,
+   direct links, updated-date differences, or candidate-page backlog entries.
+2. Read the relevant pages before deciding whether a lead is actionable.
+3. Use `record_semantic_finding` only for `stale_claim`,
+   `possible_supersession`, or `data_gap` findings. These are curator leads,
+   not final truth declarations.
+4. Do not rewrite pages, invent missing sources, or perform web search.
+   Compatible wording differences are not findings.
+5. Call `finish_semantic_lint` with audited scope, findings recorded,
+   uncertainty, and curator next steps. The harness files the structured report
+   as the `wiki-semantic-lint` synthesis page (rewritten each pass; history is
+   in log.md). `wiki-semantic-lint` is exempt from orphan checks.

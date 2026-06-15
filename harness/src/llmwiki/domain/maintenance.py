@@ -62,6 +62,7 @@ class CuratorStatus:
     evidence_report: EvidenceLintReport
     salience_report: SalienceReport
     candidate_backlog: CandidateBacklog
+    semantic_lint_summary: str
     recent_log_entries: tuple[str, ...]
     navigation_warnings: tuple[str, ...]
     recommended_actions: tuple[RecommendedAction, ...]
@@ -76,6 +77,8 @@ class CuratorStatus:
                 "## Citation Evidence\n\n" + self.evidence_report.render(),
                 "## Salience\n\n" + (self.salience_report.render() or "No salience entries."),
                 "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
+                "## Latest Semantic Lint\n\n"
+                + (self.semantic_lint_summary or "No semantic lint report."),
                 "## Recent Log Entries\n\n" + _render_lines(self.recent_log_entries),
                 "## Navigation Warnings\n\n" + _render_lines(self.navigation_warnings),
                 "## Recommended Next Actions\n\n"
@@ -96,6 +99,7 @@ def build_curator_status(
     salience_report: SalienceReport,
     candidate_backlog: CandidateBacklog,
     strict_evidence: StrictEvidenceMode,
+    semantic_lint_summary: str = "",
     link_findings: LintFindings | None = None,
 ) -> CuratorStatus:
     if link_findings is None:
@@ -124,6 +128,7 @@ def build_curator_status(
         evidence_report=evidence_report,
         salience_report=salience_report,
         candidate_backlog=candidate_backlog,
+        semantic_lint_summary=semantic_lint_summary,
         recent_log_entries=tuple(recent_log_entries),
         navigation_warnings=navigation_warnings,
         recommended_actions=_recommended_actions(

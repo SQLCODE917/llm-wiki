@@ -89,3 +89,4 @@ automatically by the harness on every page write. See `SCHEMA.md`.
 - [[wiki-curator-status]] — Deterministic curator status from 2026-06-15.
 - [[wiki-grounding]] — Grounding audit report from 2026-06-15.
 - [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-13).
+- [[wiki-semantic-lint]] — Semantic lint report from 2026-06-15.

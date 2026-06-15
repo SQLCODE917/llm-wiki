@@ -10,7 +10,7 @@ Strict evidence mode: off
 
 ## Wiki Shape
 
-Total wiki pages: 79
+Total wiki pages: 80
 Raw source files: 2
 Source pages: 24
 index.md: present
@@ -21,7 +21,7 @@ Pages by category:
 - source: 24
 - entity: 12
 - concept: 39
-- synthesis: 4
+- synthesis: 5
 
 ## Deterministic Findings
 
@@ -52,12 +52,20 @@ Entities: [[generator]] (links 2, writes 0, mentions 0), [[javascript]] (links 2
 
 No active candidate pages from explicit missing double-bracket links.
 
+## Latest Semantic Lint
+
+Candidate items discovered: 74
+Audited items: 2
+Skipped by cap: 72
+Max items: 2
+- Pages: [[partial-application]]
+
 ## Recent Log Entries
 
-- ## [2026-06-15] grounding | grounding audit
-- ## [2026-06-15] grounding | grounding audit
 - ## [2026-06-15] maintenance | curator status
 - ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] semantic-lint | semantic audit
+- ## [2026-06-15] semantic-lint | semantic audit
 - ## [2026-06-15] maintenance | curator status
 
 ## Navigation Warnings

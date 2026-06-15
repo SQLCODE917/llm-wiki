@@ -15,6 +15,7 @@ from llmwiki.domain.contradictions import select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import GroundingSelection, select_grounding_claims
 from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.semantic_lint import SemanticLintSelection, select_semantic_lint_candidates
 from llmwiki.runtime.session import Session
 from llmwiki.store import PageNotFoundError, WikiStore, WikiStoreError
 from llmwiki.workflows.tools import write_page_tool
@@ -982,3 +983,135 @@ class TestGrounding:
         assert result.transcript_path is None
         assert "evidence-not-found" in result.output
         assert "No model grounding verdicts were recorded" in result.output
+
+
+class TestSemanticLint:
+    async def test_records_findings_without_rewriting_content_pages(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="Feature arrived in ES2015. See [[beta]]. (raw/book.md)",
+                sources=("book.md",),
+                updated=TODAY,
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="Feature details changed later. See [[alpha]]. (raw/book.md)",
+                sources=("book.md",),
+                updated=TODAY,
+            )
+        )
+        before_alpha = store.read_page("alpha")
+        selection = select_semantic_lint_candidates(
+            store.page_texts(),
+            store.read_candidate_backlog(),
+            max_items=3,
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"name": "beta"})],
+            [
+                ToolCall(
+                    tool="record_semantic_finding",
+                    args={
+                        "kind": "possible_supersession",
+                        "affected_pages": ["alpha", "beta"],
+                        "rationale": "The newer page may change the context of alpha.",
+                        "evidence_consulted": "[[alpha]] and [[beta]]",
+                        "recommended_action": "Review source dates and qualify the claim.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_semantic_lint", args={"report": "Recorded one lead."})],
+        ]
+
+        result = await _session(store, script, paths).semantic_lint(selection)
+
+        assert result.op == "semantic-lint"
+        assert "Finding 1: possible_supersession" in result.output
+        assert "wiki-semantic-lint" in store.list_pages()
+        assert "Semantic Lint" in store.read_page("wiki-semantic-lint")
+        assert f"## [{TODAY}] semantic-lint | semantic audit" in paths.log_path.read_text()
+        assert store.read_page("alpha") == before_alpha
+
+    async def test_no_candidate_audit_short_circuits_without_llm(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        selection = SemanticLintSelection(candidates=(), candidate_count=0, max_items=5)
+
+        result = await _session(store, [], paths).semantic_lint(selection)
+
+        assert result.transcript_path is None
+        assert "Candidate items discovered: 0" in result.output
+        assert "No semantic lint findings were recorded" in result.output
+        assert "wiki-semantic-lint" in store.list_pages()
+
+    async def test_record_semantic_finding_rejects_missing_page_then_recovers(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="Feature arrived in ES2015. (raw/book.md)",
+                sources=("book.md",),
+                updated=TODAY,
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="Feature details changed later. [[alpha]] (raw/book.md)",
+                sources=("book.md",),
+                updated=TODAY,
+            )
+        )
+        selection = select_semantic_lint_candidates(
+            store.page_texts(),
+            store.read_candidate_backlog(),
+            max_items=3,
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [
+                ToolCall(
+                    tool="record_semantic_finding",
+                    args={
+                        "kind": "data_gap",
+                        "affected_pages": ["missing"],
+                        "rationale": "Bad page.",
+                        "evidence_consulted": "No valid page.",
+                        "recommended_action": "Retry.",
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="record_semantic_finding",
+                    args={
+                        "kind": "data_gap",
+                        "affected_pages": ["alpha"],
+                        "rationale": "Coverage needs review.",
+                        "evidence_consulted": "[[alpha]]",
+                        "recommended_action": "Consider a source search.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_semantic_lint", args={"report": "Recovered."})],
+        ]
+
+        result = await _session(store, script, paths).semantic_lint(selection)
+
+        assert "Finding 1: data_gap" in result.output
+        assert "missing" not in result.output

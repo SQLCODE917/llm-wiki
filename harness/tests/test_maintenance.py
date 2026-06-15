@@ -84,6 +84,23 @@ class TestCuratorReport:
         assert "iterable" in report
         assert "discovered" in report
 
+    def test_curator_status_includes_latest_semantic_lint_summary(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            _page(
+                "wiki-semantic-lint",
+                "# Semantic Lint\n\n## Audit Scope\n\nAudited items: 1\n\n## Findings\n\nNone.",
+                category="synthesis",
+            )
+        )
+
+        report = _curator_report(store, paths, "off")
+
+        assert "## Latest Semantic Lint" in report
+        assert "Audited items: 1" in report
+        assert "category: synthesis" not in report
+
     def test_report_surfaces_citation_warnings(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(_page("alpha", "Claim cites a missing source. (raw/missing.md)"))
 
@@ -261,10 +278,36 @@ class TestCuratorCli:
         assert "Candidate pairs discovered: 0" in result.output
         assert (paths.wiki_dir / "wiki-contradictions.md").exists()
 
+    async def test_empty_semantic_lint_does_not_start_backend(
+        self, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        def fail_backend(*args: object, **kwargs: object) -> NoReturn:
+            raise AssertionError("empty semantic lint must not load backend config")
+
+        monkeypatch.setattr("llmwiki.cli.load_backend_config", fail_backend)
+        monkeypatch.setattr("llmwiki.cli.start_backend", fail_backend)
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "--runtime", "not-needed", "semantic-lint"]
+        )
+
+        result = await _run(args)
+
+        assert result.op == "semantic-lint"
+        assert "Candidate items discovered: 0" in result.output
+        assert (paths.wiki_dir / "wiki-semantic-lint.md").exists()
+
     async def test_contradictions_rejects_non_positive_max_pairs(self, paths: WikiPaths) -> None:
         args = _build_parser().parse_args(
             ["--root", str(paths.root), "contradictions", "--max-pairs", "0"]
         )
 
         with pytest.raises(ConfigError, match="max-pairs"):
+            await _run(args)
+
+    async def test_semantic_lint_rejects_non_positive_max_items(self, paths: WikiPaths) -> None:
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "semantic-lint", "--max-items", "0"]
+        )
+
+        with pytest.raises(ConfigError, match="max-items"):
             await _run(args)
