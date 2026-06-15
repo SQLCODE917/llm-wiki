@@ -109,12 +109,14 @@ def search_wiki_tool(store: WikiStore) -> ToolDef:
     )
 
 
-def read_index_tool(store: WikiStore) -> ToolDef:
+def read_index_tool(store: WikiStore, read_tracker: set[str] | None = None) -> ToolDef:
     """Index-first navigation (pattern doc): the catalog answers questions
     about the wiki itself and its coverage that content search cannot."""
 
     def _read_index(**kwargs: object) -> str:
         ReadIndexParams(**kwargs)
+        if read_tracker is not None:
+            read_tracker.add("index.md")
         return store.read_index()
 
     return ToolDef(

@@ -71,11 +71,14 @@ Entry prefix: `## [YYYY-MM-DD] <op> | <subject>` so that
 
 ### query
 
-1. Search the wiki (`search_wiki`), then read the relevant pages.
+1. For content questions, search the wiki (`search_wiki`), then read the
+   relevant pages. For questions about the wiki itself or its coverage,
+   `read_index` is the relevant wiki document.
 2. Answer from wiki content with page and source citations.
 3. If the answer is a new synthesis worth keeping (a comparison, an analysis,
    a connection not yet recorded), file it with `write_page` (category
-   `synthesis`) before responding.
+   `synthesis`) before responding. Do not write pages for simple coverage,
+   status, or catalog answers.
 4. Call `respond` with the answer.
 
 ### lint

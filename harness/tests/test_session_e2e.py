@@ -46,6 +46,7 @@ class TestIngest:
     ) -> None:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon lunar formation"})],
             [
                 ToolCall(
                     tool="write_page",
@@ -77,6 +78,7 @@ class TestIngest:
         script = [
             [ToolCall(tool="finish_ingest", args={"report": "done!"})],
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [
                 ToolCall(
                     tool="write_page",
@@ -112,6 +114,7 @@ class TestIngest:
                 )
             ],
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [
                 ToolCall(
                     tool="write_page",
@@ -129,11 +132,48 @@ class TestIngest:
         # The blocked first write must not have touched the wiki layer.
         assert store.read_index().count("[[moon]]") == 1
 
+    async def test_write_page_requires_prior_search_wiki(
+        self, store: WikiStore, paths: WikiPaths, source: str
+    ) -> None:
+        # Ingest must consult the existing wiki before it writes. A source
+        # read alone is not enough for compounding wiki maintenance.
+        script = [
+            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "moon",
+                        "category": "source",
+                        "summary": "Lunar notes.",
+                        "content": "Body.",
+                    },
+                )
+            ],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "moon",
+                        "category": "source",
+                        "summary": "Lunar notes.",
+                        "content": "Body. (raw/moon.md)",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
+        ]
+        await _session(store, script, paths).ingest(source)
+
+        assert store.read_index().count("[[moon]]") == 1
+
     async def test_bad_tool_args_fed_back_for_self_correction(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [
                 ToolCall(  # invalid category — tool error, model retries
                     tool="write_page",
@@ -169,6 +209,7 @@ class TestIngest:
         )
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [
                 ToolCall(  # blind rewrite — must be rejected
                     tool="write_page",
@@ -203,6 +244,7 @@ class TestIngest:
         # into a wiki page despite the schema — stripped at the boundary now.
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [
                 ToolCall(
                     tool="write_page",
@@ -231,6 +273,7 @@ class TestIngest:
         # retry nudge must name the terminal tool and the run must recover.
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [
                 ToolCall(
                     tool="write_page",
@@ -308,11 +351,57 @@ class TestQuery:
         )
         script = [
             [ToolCall(tool="search_wiki", args={"query": "moon formation"})],
+            [ToolCall(tool="read_page", args={"name": "moon"})],
             [ToolCall(tool="respond", args={"message": "A giant impact — see [[moon]]."})],
         ]
         result = await _session(store, script, paths).query("How did the Moon form?")
         assert result.output == "A giant impact — see [[moon]]."
         assert f"## [{TODAY}] query | How did the Moon form?" in paths.log_path.read_text()
+
+    async def test_respond_requires_prior_page_or_index_read(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="moon",
+                category="source",
+                summary="Lunar notes.",
+                body="Giant impact formed the Moon.",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="search_wiki", args={"query": "moon formation"})],
+            [ToolCall(tool="respond", args={"message": "A giant impact — see [[moon]]."})],
+            [ToolCall(tool="read_page", args={"name": "moon"})],
+            [ToolCall(tool="respond", args={"message": "A giant impact — see [[moon]]."})],
+        ]
+        result = await _session(store, script, paths).query("How did the Moon form?")
+        assert result.output == "A giant impact — see [[moon]]."
+
+    async def test_respond_allows_index_read_for_coverage_question(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="moon",
+                category="source",
+                summary="Lunar notes.",
+                body="Giant impact formed the Moon.",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="read_index", args={})],
+            [
+                ToolCall(
+                    tool="respond",
+                    args={"message": "The wiki currently covers lunar notes via [[moon]]."},
+                )
+            ],
+        ]
+        result = await _session(store, script, paths).query("What does this wiki cover?")
+        assert result.output == "The wiki currently covers lunar notes via [[moon]]."
 
 
 class TestLint:

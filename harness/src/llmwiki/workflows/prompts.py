@@ -27,12 +27,14 @@ INGEST_TEMPLATE = _BASE + (
 
 QUERY_TEMPLATE = _BASE + (
     "\nTask: answer the user's question from the wiki, following the "
-    "schema's query workflow. Search first, then read the relevant pages "
-    "(for questions about the wiki itself or its coverage, read_index "
-    "shows the catalog of every page). "
+    "schema's query workflow. For content questions, search first, then read "
+    "the relevant pages. For questions about the wiki itself or its coverage, "
+    "read_index shows the catalog of every page and is enough grounding. "
     "Cite pages as [[page-name]] and sources as (raw/<path>) in your answer. "
-    "If the answer is a synthesis worth keeping (a comparison, analysis, or "
-    "connection not yet recorded), file it with write_page before responding. "
+    "File a synthesis page only when the user asks for reusable analysis or "
+    "the answer clearly creates a durable comparison/connection not already "
+    "recorded; do not write pages for simple coverage, status, or catalog "
+    "answers. "
     "Answer with the respond tool. If the wiki does not contain the answer, "
     "say so plainly — do not invent facts."
 )

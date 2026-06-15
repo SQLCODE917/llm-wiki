@@ -91,7 +91,6 @@ Model -> respond: cited answer
 Query about wiki coverage:
 
 ```
-Model -> search_wiki: broad question
 Model -> read_index: catalog
 Model -> respond: coverage answer
 ```
@@ -106,7 +105,15 @@ No persistent data model changes.
   and `write_page`.
 - `build_query_workflow` enforces a pre-response read of either `read_page` or
   `read_index`.
+- Query does not force `search_wiki` after a successful `read_index`: coverage
+  answers should be able to follow the pattern document's index-first path
+  without a corrective nudge that sends the model into tangential search.
+- `SCHEMA.md` mirrors this contract so the standing workflow instructions do
+  not contradict the harness guardrail.
 - Tool names remain unchanged.
+- Forge only supports conjunctive prerequisite lists, so the query disjunction
+  is implemented as a harness-owned `respond` wrapper that keeps the public
+  tool name and schema unchanged while rejecting snippet-only answers.
 
 ## Behavior & Domain Rules
 
@@ -123,6 +130,9 @@ Examples:
   `read_page` or `read_index`.
 - Query asks "what is this wiki about?", calls `read_index`, then `respond` ->
   allowed.
+- Query asks "what is this wiki about?", reads the index, then writes a new
+  topical synthesis page -> discouraged by prompt because catalog/status
+  answers are not durable syntheses.
 
 ## Acceptance Criteria
 
@@ -137,6 +147,11 @@ Examples:
 
 Error handling: rely on forge step/prerequisite errors so the local model can
 self-correct in the next tool turn.
+
+Implementation note: ingest uses Forge prerequisites directly
+(`write_page` requires `read_source` and `search_wiki`). Query tracks successful
+`read_page` and `read_index` calls in the run and lets `respond` succeed only
+after one of them has happened.
 
 ## Reference Implementations
 
@@ -156,3 +171,7 @@ self-correct in the next tool turn.
 - If forge cannot express "read_page OR read_index" as a required pre-response
   condition, stop and design a small wrapper tool or enforcement extension
   before implementing a workaround.
+
+Resolved: Forge prerequisites are conjunctive only. The selected enforcement
+extension is `respond_after_wiki_read_tool`, a narrow wrapper around Forge's
+synthetic `respond` tool.

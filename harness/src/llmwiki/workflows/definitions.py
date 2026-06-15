@@ -1,9 +1,10 @@
 """The three wiki operations as forge Workflows.
 
 Guardrail contracts (enforced by forge's StepEnforcer, not by prompting):
-- ingest: must read_source and write_page before finish_ingest; write_page
-  is gated on a prior read_source.
-- query: must search_wiki before respond (index-first navigation).
+- ingest: must read_source, search_wiki, and write_page before finish_ingest;
+  write_page is gated on a prior source read and wiki search.
+- query: respond is gated on a prior read_page or read_index call; search is
+  available for finding pages but is not forced after a valid index read.
 - lint: must read_page before finish_lint (no drive-by sign-off).
 """
 
@@ -17,6 +18,7 @@ from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
+from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.tools import (
     finish_tool,
     link_orphan_tool,
@@ -39,7 +41,7 @@ def build_ingest_workflow(
         write_page_tool(
             store,
             today,
-            prerequisites=["read_source"],
+            prerequisites=["read_source", "search_wiki"],
             read_tracker=seen,
             evidence_policy=evidence_policy,
         ),
@@ -53,7 +55,7 @@ def build_ingest_workflow(
         name="ingest",
         description="Integrate one raw source into the wiki.",
         tools={t.name: t for t in tools},
-        required_steps=["read_source", "write_page"],
+        required_steps=["read_source", "search_wiki", "write_page"],
         terminal_tool="finish_ingest",
         system_prompt_template=prompts.INGEST_TEMPLATE,
     )
@@ -65,16 +67,16 @@ def build_query_workflow(
     seen: set[str] = set()
     tools = [
         search_wiki_tool(store),
-        read_index_tool(store),
+        read_index_tool(store, read_tracker=seen),
         read_page_tool(store, read_tracker=seen),
         write_page_tool(store, today, read_tracker=seen, evidence_policy=evidence_policy),
-        respond_tool(),
+        respond_after_wiki_read_tool(seen),
     ]
     return Workflow(
         name="query",
         description="Answer a question from the wiki with citations.",
         tools={t.name: t for t in tools},
-        required_steps=["search_wiki"],
+        required_steps=[],
         terminal_tool="respond",
         system_prompt_template=prompts.QUERY_TEMPLATE,
     )
