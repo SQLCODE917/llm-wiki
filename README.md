@@ -132,8 +132,8 @@ model turn that produced it.
 `fail`; CLI `--strict-evidence` overrides it for commands that support
 evidence checks.
 
-**Development**: `uv run pytest harness/tests` (182 tests, no network — a
-scripted fake LLM client drives the real forge runner). Lint/typecheck:
+**Development**: `uv run pytest harness/tests` (no network — a scripted fake
+LLM client drives the real forge runner). Lint/typecheck:
 `uv run ruff check harness/src harness/tests` and `uv run mypy harness/src`
 (strict).
 
@@ -144,7 +144,7 @@ chronologically.
 
 | Feature | Document | Role |
 |---|---|---|
-| The pattern itself | `docs/llm-wiki.md` / `docs/REFERENCE_llm-wiki-pattern.md` | Alignment document (Karpathy's LLM Wiki idea). The north star every task is checked against. |
+| The pattern itself | `docs/llm-wiki.md` | Alignment document (Karpathy's LLM Wiki idea). The north star every task is checked against. |
 | Local LLM-Wiki system | `docs/2026-06-10-local-llm-wiki-design.md` | The system design: three layers, three operations, forge harness, determinism boundary, data model. |
 | PDF ingestion | `docs/2026-06-11-pdf-ingestion-design.md` | Book-scale PDF ingest: PyMuPDF extraction, text-vs-scanned detection (OCR path), TOC-aware semantic chunking, bounded map/integrate runs. Test fixture: `raw/javascriptallonge.pdf`. |
 | Deterministic salience | `docs/2026-06-12-deterministic-salience-design.md` | Code-computed importance (wiki inbound links + per-ingest write counts) fed to synthesis runs so the model never ranks from memory. Implemented; `--reintegrate` rebuilds a hub with current salience. |
@@ -173,9 +173,9 @@ mode we hit.
 - **One source per ingest, supervised.** No batch mode; the alignment doc's
   recommended flow is one-at-a-time with a human reading the results, and
   that's all the CLI offers.
-- **Source size is capped.** `read_source` truncates beyond ~24K characters
-  with an explicit marker; a long PDF-dump won't be fully ingested. Chunked
-  ingest is designed but not built.
+- **Non-PDF source size is capped.** `read_source` truncates plain text sources
+  beyond ~24K characters with an explicit marker. PDFs use the chunked
+  map/integrate ingest path.
 - **One-shot commands load/connect to the model per run**.
   `llmwiki chat` covers the burst case — one boot per session, prompt cache
   reused across turns — so this now only costs occasional standalone
@@ -203,8 +203,9 @@ mode we hit.
 - **Chat Phase 2** — filing answers back into the wiki mid-conversation
   (`write_page` returns to the chat workflow, per the pattern doc's "good
   answers can be filed back" guidance).
-- **Chunked ingest** — map-then-integrate flow for sources beyond the read
-  budget; designed (see the PDF ingestion design doc), not yet implemented.
+- **Chunked ingest hardening** — the PDF map-then-integrate flow is implemented;
+  future work is improving source fidelity, code-block extraction, and
+  normalized evidence support.
 - **Real search** — swap the naive scorer for qmd (local hybrid BM25/vector
   with CLI + MCP) once the index outgrows flat scanning.
 - **Batch ingest** — lower-supervision mode for backfilling many sources,

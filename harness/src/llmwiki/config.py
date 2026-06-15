@@ -13,8 +13,7 @@ DEFAULT_OLLAMA_MODEL = "qwen3-coder:30b"
 DEFAULT_4090_MODEL = "qwen3-coder:30b"
 DEFAULT_RUNTIME = "ollama-default"
 DEFAULT_STRICT_EVIDENCE = "off"
-# Per-read cap on raw source text. Sources beyond this are truncated with an
-# explicit marker (chunked ingest is an open question in the design doc).
+# Per-read cap on plain raw source text. PDFs use the chunked map/integrate path.
 SOURCE_READ_BUDGET_CHARS = 24_000
 
 type RuntimeName = Literal["ollama-default", "local-4090"]

@@ -2,7 +2,7 @@
 
 ## Goal
 Maintain an "LLM-Wiki": a persistent, LLM-maintained knowledge base following
-the pattern in `docs/llm-wiki.md` and `docs/REFERENCE_llm-wiki-pattern.md`.
+the pattern in `docs/llm-wiki.md`.
 The current foundation is the M5 harness: a small, Obsidian-friendly wiki
 driven through `forge` tools, with deterministic code owning bookkeeping and
 the model owning wiki prose.
@@ -55,15 +55,14 @@ This file lives at the project root (`llm-wiki/`). Subdirectories:
 - `wiki/` — model-authored markdown pages plus deterministic `index.md` and
   append-only `log.md`.
 - `docs/` — design documents, including the alignment document
-  `docs/llm-wiki.md` and compatibility copy
-  `docs/REFERENCE_llm-wiki-pattern.md`.
+  `docs/llm-wiki.md`.
 - `SCHEMA.md` — the live wiki schema rendered into the model's system prompt.
 - `backup/reference/` — migration-only reference material; do not ingest from
   or write into it.
 
 ## Reference material (consult these — they are load-bearing)
 
-### docs/llm-wiki.md / docs/REFERENCE_llm-wiki-pattern.md
+### docs/llm-wiki.md
 The alignment document (Karpathy's LLM Wiki pattern).
 This is the design north star for the LLM-Wiki. Its core pattern: three layers
 (immutable raw sources → an LLM-built-and-maintained wiki of interlinked

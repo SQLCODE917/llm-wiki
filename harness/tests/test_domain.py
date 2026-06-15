@@ -12,7 +12,7 @@ from llmwiki.domain.index import index_page_names, parse_index, upsert_index_ent
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
 from llmwiki.domain.pages import PageError, WikiPage, parse_page, render_page
-from llmwiki.domain.search import search_pages
+from llmwiki.domain.search import render_hits, search_pages
 
 INDEX = """# Index
 
@@ -310,6 +310,11 @@ class TestSearch:
 
     def test_no_match_returns_empty(self) -> None:
         assert search_pages(self.PAGES, "quasar") == []
+
+    def test_no_match_message_points_to_index_tool(self) -> None:
+        message = render_hits([])
+        assert "read_index" in message
+        assert "read_page" not in message
 
     def test_snippet_contains_context(self) -> None:
         hits = search_pages(self.PAGES, "hittites")

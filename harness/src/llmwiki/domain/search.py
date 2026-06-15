@@ -57,6 +57,6 @@ def _snippet(text: str, terms: set[str]) -> str:
 
 def render_hits(hits: list[SearchHit]) -> str:
     if not hits:
-        return "No pages matched. Try different terms, or check the index with read_page."
+        return "No pages matched. Try different terms, or check the index with read_index."
     lines = [f"[[{h.name}]] (score {h.score}): {h.snippet}" for h in hits]
     return "\n".join(lines)

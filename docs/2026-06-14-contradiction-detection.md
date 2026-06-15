@@ -221,7 +221,7 @@ review easy without turning the model into an authority on which source wins.
 - Link/citation deterministic scans: `harness/src/llmwiki/domain/links.py`
   and `harness/src/llmwiki/domain/citations.py`
 - Report filing pattern: `harness/src/llmwiki/runtime/session.py`
-- Pattern north star: `docs/REFERENCE_llm-wiki-pattern.md`
+- Pattern north star: `docs/llm-wiki.md`
 
 ## Alternatives Considered
 
