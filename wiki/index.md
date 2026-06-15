@@ -85,4 +85,5 @@ automatically by the harness on every page write. See `SCHEMA.md`.
 - [[void]] — A type of value representing the absence of any value or object.
 
 ## Syntheses
+- [[wiki-contradictions]] — Contradiction audit report from 2026-06-14.
 - [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-13).

@@ -27,9 +27,10 @@ to swap later, but do not maintain parallel active providers in the harness.
     `link_orphan` helper for graph-only repairs.
   - maintenance automation now includes model-free `curator-status` and filed
     `maintenance` reports through the M5 harness.
+  - contradiction detection now includes bounded candidate selection,
+    structured `record_contradiction` findings, and filed
+    `wiki-contradictions` reports.
 - Deferred backup ideas require fresh TDDs before implementation:
-  - contradiction detection beyond current lint/link/evidence checks; TDD:
-    `docs/2026-06-14-contradiction-detection.md`.
   - higher-stakes evidence workflows such as stable evidence IDs or normalized
     locator databases.
 - Do not restore the old type-directory schema by default. The M5 foundation's

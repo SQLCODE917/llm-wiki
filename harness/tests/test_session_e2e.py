@@ -11,6 +11,7 @@ from forge.context import ContextManager, NoCompact
 from forge.core.workflow import TextResponse, ToolCall
 
 from llmwiki.config import WikiPaths
+from llmwiki.domain.contradictions import select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.pages import WikiPage
 from llmwiki.runtime.session import Session
@@ -530,3 +531,112 @@ class TestLint:
         fake: FakeClient = session.client
         user_msgs = [m["content"] for m in fake.sent[0] if m.get("role") == "user"]
         assert not any("Orphan" in content for content in user_msgs)
+
+
+class TestContradictions:
+    async def test_records_findings_without_rewriting_content_pages(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="The feature was introduced in ES2015. See [[beta]].",
+                updated=TODAY,
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="The feature was introduced in ES2019. See [[alpha]].",
+                updated=TODAY,
+            )
+        )
+        before_alpha = store.read_page("alpha")
+        before_beta = store.read_page("beta")
+        selection = select_contradiction_candidates(store.page_texts(), max_pairs=5)
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"name": "beta"})],
+            [
+                ToolCall(
+                    tool="record_contradiction",
+                    args={
+                        "page_a": "alpha",
+                        "claim_a": "The feature was introduced in ES2015.",
+                        "page_b": "beta",
+                        "claim_b": "The feature was introduced in ES2019.",
+                        "severity": "medium",
+                        "rationale": "The introduction years conflict.",
+                        "recommended_action": "Inspect the cited sources and qualify the date.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_contradictions", args={"report": "Recorded one conflict."})],
+        ]
+        session = _session(store, script, paths)
+
+        result = await session.contradictions(selection)
+
+        assert result.op == "contradictions"
+        assert "Candidate pairs discovered:" in result.output
+        assert "Finding 1: MEDIUM" in result.output
+        assert "wiki-contradictions" in store.list_pages()
+        assert "Contradiction Audit" in store.read_page("wiki-contradictions")
+        assert f"## [{TODAY}] contradiction | contradiction audit" in paths.log_path.read_text()
+        assert store.read_page("alpha") == before_alpha
+        assert store.read_page("beta") == before_beta
+        fake: FakeClient = session.client
+        user_msgs = [m["content"] for m in fake.sent[0] if m.get("role") == "user"]
+        assert any(
+            "Pair 1" in content and "Candidate pairs discovered" in content for content in user_msgs
+        )
+
+    async def test_no_candidate_audit_short_circuits_without_llm(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        selection = select_contradiction_candidates(store.page_texts())
+        result = await _session(store, [], paths).contradictions(selection)
+
+        assert result.transcript_path is None
+        assert "Candidate pairs discovered: 0" in result.output
+        assert "not proof that the wiki has no contradictions" in result.output
+        assert "wiki-contradictions" in store.list_pages()
+
+    async def test_record_contradiction_rejects_missing_page(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(name="alpha", category="concept", summary="A.", body="Claim.", updated=TODAY)
+        )
+        selection = select_contradiction_candidates(
+            {
+                "alpha": "---\ncategory: concept\nsummary: A.\n---\n\nSee [[beta]].",
+                "beta": "---\ncategory: concept\nsummary: B.\n---\n\nClaim.",
+            }
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [
+                ToolCall(
+                    tool="record_contradiction",
+                    args={
+                        "page_a": "alpha",
+                        "claim_a": "A claim.",
+                        "page_b": "missing",
+                        "claim_b": "Missing claim.",
+                        "severity": "high",
+                        "rationale": "Would conflict.",
+                        "recommended_action": "No action.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_contradictions", args={"report": "No valid findings."})],
+        ]
+        result = await _session(store, script, paths).contradictions(selection)
+
+        assert "No valid findings." in result.output
+        assert "No contradictions were recorded" in result.output

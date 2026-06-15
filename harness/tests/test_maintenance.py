@@ -5,7 +5,7 @@ from typing import NoReturn
 import pytest
 
 from llmwiki.cli import _build_parser, _curator_report, _run
-from llmwiki.config import WikiPaths
+from llmwiki.config import ConfigError, WikiPaths
 from llmwiki.domain.index import empty_index
 from llmwiki.domain.pages import WikiPage, render_page
 from llmwiki.store import WikiStore
@@ -167,3 +167,29 @@ class TestCuratorCli:
         assert paths.index_path.exists()
         assert paths.log_path.exists()
         assert "[[wiki-curator-status]]" in paths.index_path.read_text(encoding="utf-8")
+
+    async def test_empty_contradiction_audit_does_not_start_backend(
+        self, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        def fail_backend(*args: object, **kwargs: object) -> NoReturn:
+            raise AssertionError("empty contradiction audit must not load backend config")
+
+        monkeypatch.setattr("llmwiki.cli.load_backend_config", fail_backend)
+        monkeypatch.setattr("llmwiki.cli.start_backend", fail_backend)
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "--runtime", "not-needed", "contradictions"]
+        )
+
+        result = await _run(args)
+
+        assert result.op == "contradictions"
+        assert "Candidate pairs discovered: 0" in result.output
+        assert (paths.wiki_dir / "wiki-contradictions.md").exists()
+
+    async def test_contradictions_rejects_non_positive_max_pairs(self, paths: WikiPaths) -> None:
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "contradictions", "--max-pairs", "0"]
+        )
+
+        with pytest.raises(ConfigError, match="max-pairs"):
+            await _run(args)

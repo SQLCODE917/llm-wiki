@@ -100,3 +100,16 @@ LINT_TEMPLATE = _BASE + (
     "lint runs repeatedly and converges. Finish with finish_lint: issues "
     "found, fixes applied, what remains, suggested next steps."
 )
+
+CONTRADICTIONS_TEMPLATE = _BASE + (
+    "\nTask: run a bounded contradiction audit. The user message contains "
+    "candidate page pairs selected deterministically by the harness. Inspect "
+    "pairs in order; for each pair, read the relevant pages before deciding. "
+    "Use record_contradiction only when two claims cannot both be true as "
+    "written. Differences in emphasis, scope, terminology, or abstraction "
+    "level are not contradictions. Do not decide which source wins, do not "
+    "rewrite pages, and do not invent missing evidence. If no contradiction is "
+    "clear in the inspected pairs, record nothing. Finish before the tool "
+    "budget is exhausted with finish_contradictions: audited scope, findings "
+    "recorded, uncertainty, and curator next steps."
+)

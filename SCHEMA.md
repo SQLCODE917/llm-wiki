@@ -32,6 +32,8 @@ The index and log formats below are also enforced in harness code
 - When a new source contradicts an existing claim, do not overwrite silently:
   state both claims, mark the conflict with `**Contradiction:**`, and cite
   both sources.
+- Contradiction audits are report-only: record conflicts for curator review
+  without deciding which source wins and without rewriting content pages.
 - Frontmatter (category, summary, sources, updated date) is composed by the
   harness from `write_page` arguments — do not write it in page content.
 - `write_page` replaces the entire page. When updating an existing page,
@@ -92,3 +94,20 @@ Entry prefix: `## [YYYY-MM-DD] <op> | <subject>` so that
    harness files that verified report as the `wiki-health` synthesis page
    (rewritten each lint pass; history is in log.md). `wiki-health` is exempt
    from orphan checks.
+
+### contradictions
+
+1. The harness selects a bounded set of candidate page pairs before the model
+   is invoked. Candidate reasons include shared sources, direct links, shared
+   raw citations, and keyword overlap.
+2. Read the relevant pages before deciding whether a pair contains a real
+   contradiction.
+3. Use `record_contradiction` only when two claims cannot both be true as
+   written. Differences in emphasis, scope, terminology, or abstraction level
+   are not contradictions.
+4. Do not rewrite pages, resolve the conflict, or decide which source wins.
+   The human curator resolves contradictions.
+5. Call `finish_contradictions` with audited scope, findings recorded,
+   uncertainty, and curator next steps. The harness files the structured report
+   as the `wiki-contradictions` synthesis page (rewritten each audit pass;
+   history is in log.md). `wiki-contradictions` is exempt from orphan checks.

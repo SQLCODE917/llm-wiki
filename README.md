@@ -36,11 +36,10 @@ Prerequisites:
 - The Python env: `uv` with the repo-root `.venv` (forge and the harness
   installed editable).
 
-All commands run from the repo root. Each one connects to Ollama, runs the
-model operation, appends to `wiki/log.md`, and unloads the model through
+All commands run from the repo root. Model-backed commands connect to Ollama,
+run the operation, append to `wiki/log.md`, and unload the model through
 forge's backend manager when the command exits. The deterministic status
-commands below are the exception: they do not load a runtime or contact
-Ollama.
+commands below do not load a runtime or contact Ollama.
 
 **Ingest** — drop a source into `raw/`, then integrate it:
 
@@ -105,6 +104,21 @@ findings, salience, recent log entries, and recommended next actions.
 `maintenance` entry to `wiki/log.md`. Neither command repairs pages; use
 `lint` when you want the model to inspect and edit.
 
+**Contradictions** — bounded semantic audit:
+
+```bash
+uv run llmwiki contradictions
+uv run llmwiki contradictions --max-pairs 20
+```
+
+The harness first selects candidate page pairs deterministically from shared
+sources, direct links, shared raw citations, and keyword overlap. If candidates
+exist, the model reads relevant pages from a small default audit batch and may
+call `record_contradiction` for claims that cannot both be true as written. Use
+`--max-pairs` for an explicitly larger sweep. The command files
+`wiki-contradictions` and appends a `contradiction` log entry. It does not
+rewrite pages or decide which source wins.
+
 **Reading the wiki**: it's just markdown — open `wiki/` in Obsidian (graph
 view shows the link structure) or any editor. Recent activity:
 `grep "^## \[" wiki/log.md | tail -5`. Every run writes a full conversation
@@ -118,7 +132,7 @@ model turn that produced it.
 `fail`; CLI `--strict-evidence` overrides it for commands that support
 evidence checks.
 
-**Development**: `uv run pytest harness/tests` (170 tests, no network — a
+**Development**: `uv run pytest harness/tests` (182 tests, no network — a
 scripted fake LLM client drives the real forge runner). Lint/typecheck:
 `uv run ruff check harness/src harness/tests` and `uv run mypy harness/src`
 (strict).
@@ -141,7 +155,7 @@ chronologically.
 | Strict citation parser | `docs/2026-06-14-strict-citation-parser.md` | Second TDD in the chain: deterministic citation and locator findings for the flat M5 wiki. |
 | Evidence write/lint gates | `docs/2026-06-14-evidence-gates-for-writes-and-lint.md` | Third TDD in the chain: opt-in `off|warn|fail` evidence behavior for writes and lint. |
 | Maintenance automation / curator status | `docs/2026-06-14-maintenance-automation-curator-status.md` | Model-free `curator-status` report plus filed `maintenance` report/log entry. |
-| Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Follow-on TDD for bounded model-assisted contradiction audits; not implemented yet. |
+| Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Bounded model-assisted audits through `llmwiki contradictions`; files structured reports without auto-resolving conflicts. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
@@ -179,6 +193,9 @@ mode we hit.
   in `log.md` and git history, not as dated pages.
 - **`wiki-curator-status` is rewritten each maintenance pass.** It is the
   current deterministic dashboard, while history lives in `log.md` and git.
+- **`wiki-contradictions` is rewritten each contradiction audit.** The audit
+  is bounded by candidate-pair selection and is not proof that no other
+  contradictions exist.
 - **Single-user, single-op.** One local Ollama-backed operation at a time.
 
 ## Future improvements
@@ -202,5 +219,3 @@ mode we hit.
   relying on defaults.
 - **Obsidian workflow** — Web Clipper for capturing sources into `raw/`,
   graph view as the lint companion.
-- **Contradiction detection** — bounded model-assisted audits that file
-  structured conflict reports without auto-resolving source disagreements.

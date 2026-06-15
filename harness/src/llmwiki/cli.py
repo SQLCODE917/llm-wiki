@@ -12,6 +12,8 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+from forge.context import ContextManager, NoCompact
+
 from llmwiki.config import (
     VALID_STRICT_EVIDENCE_MODES,
     ConfigError,
@@ -20,6 +22,7 @@ from llmwiki.config import (
     load_backend_config,
     resolve_strict_evidence_mode,
 )
+from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.index import index_page_names
 from llmwiki.domain.maintenance import build_curator_status, recent_log_entries
@@ -89,6 +92,17 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     _add_strict_evidence_arg(maintenance)
 
+    contradictions = sub.add_parser(
+        "contradictions",
+        help="Audit bounded candidate page pairs for semantic contradictions.",
+    )
+    contradictions.add_argument(
+        "--max-pairs",
+        type=int,
+        default=DEFAULT_MAX_PAIRS,
+        help=f"Maximum candidate pairs to audit (default: {DEFAULT_MAX_PAIRS}).",
+    )
+
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
     _add_strict_evidence_arg(chat)
     chat.add_argument(
@@ -126,12 +140,15 @@ def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
 
 async def _run(args: argparse.Namespace) -> OperationResult:
     paths = WikiPaths(root=args.root.resolve())
-    strict_evidence = resolve_strict_evidence_mode(args.strict_evidence)
+    strict_evidence = resolve_strict_evidence_mode(getattr(args, "strict_evidence", None))
 
     now = datetime.now()
     if args.op in {"curator-status", "maintenance"}:
         paths.validate_status()
         return _run_curator_operation(args.op, paths, strict_evidence, now.date().isoformat())
+
+    if args.op == "contradictions":
+        return await _run_contradictions(args, paths, now)
 
     paths.validate()
     backend_config = load_backend_config(args.runtime)
@@ -159,6 +176,40 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         if args.op == "chat":
             return await _run_chat(session, paths, args.resume)
         return await session.lint()
+    finally:
+        await backend.aclose()
+
+
+async def _run_contradictions(
+    args: argparse.Namespace, paths: WikiPaths, now: datetime
+) -> OperationResult:
+    if args.max_pairs < 1:
+        raise ConfigError("--max-pairs must be at least 1.")
+    paths.validate()
+    store = WikiStore(paths)
+    selection = select_contradiction_candidates(store.page_texts(), max_pairs=args.max_pairs)
+    if not selection.candidates:
+        session = Session(
+            store=store,
+            client=None,
+            context_manager=ContextManager(strategy=NoCompact(), budget_tokens=1),
+            today=now.date().isoformat(),
+        )
+        return await session.contradictions(selection)
+
+    backend_config = load_backend_config(args.runtime)
+    backend = await start_backend(backend_config)
+    try:
+        print(f"[runtime: {backend.summary}]", file=sys.stderr)
+        session = Session(
+            store=store,
+            client=backend.client,
+            context_manager=backend.context_manager,
+            today=now.date().isoformat(),
+            runs_dir=paths.runs_dir,
+            run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+        )
+        return await session.contradictions(selection)
     finally:
         await backend.aclose()
 

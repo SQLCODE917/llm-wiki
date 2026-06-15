@@ -186,3 +186,25 @@ Orphan pages (no inbound links from any other page):
 Citation evidence findings:
 Strict evidence mode: warn. Citation findings: 0 (0 fail, 0 warn).
 No deterministic citation evidence findings.
+
+## [2026-06-14] contradiction | contradiction audit
+# Contradiction Audit
+
+## Audit Scope
+
+Candidate pairs discovered: 2430
+Audited pairs: 5
+Skipped by cap: 2425
+Max pairs: 5
+
+## Findings
+
+No contradictions were recorded in the audited candidate set.
+
+## Model Report
+
+Audited 5 pairs from the candidate set. No contradictions were found where two claims cannot both be true as written. All pages were consistent with each other in their descriptions of array destructuring, evaluation strategies, functions, and related concepts. No findings recorded.
+
+## Caveat
+
+This is a bounded audit over selected candidate pairs, not proof that the wiki has no contradictions.

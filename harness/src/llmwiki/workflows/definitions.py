@@ -12,9 +12,11 @@ from __future__ import annotations
 from forge.core.workflow import Workflow
 from forge.tools.respond import respond_tool
 
+from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
+from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.tools import (
     finish_tool,
     link_orphan_tool,
@@ -126,4 +128,26 @@ def build_lint_workflow(
         required_steps=["read_page"],
         terminal_tool="finish_lint",
         system_prompt_template=prompts.LINT_TEMPLATE,
+    )
+
+
+def build_contradiction_workflow(
+    store: WikiStore, findings: list[ContradictionFinding]
+) -> Workflow:
+    tools = [
+        read_page_tool(store),
+        record_contradiction_tool(store, findings),
+        finish_tool(
+            "finish_contradictions",
+            "Finish the contradiction audit with scope, findings recorded, "
+            "uncertainty, and curator next steps.",
+        ),
+    ]
+    return Workflow(
+        name="contradictions",
+        description="Audit selected wiki page pairs for semantic contradictions.",
+        tools={t.name: t for t in tools},
+        required_steps=["read_page"],
+        terminal_tool="finish_contradictions",
+        system_prompt_template=prompts.CONTRADICTIONS_TEMPLATE,
     )

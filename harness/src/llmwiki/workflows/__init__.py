@@ -2,6 +2,7 @@
 
 from llmwiki.workflows.definitions import (
     build_chat_workflow,
+    build_contradiction_workflow,
     build_ingest_workflow,
     build_lint_workflow,
     build_query_workflow,
@@ -9,6 +10,7 @@ from llmwiki.workflows.definitions import (
 
 __all__ = [
     "build_chat_workflow",
+    "build_contradiction_workflow",
     "build_ingest_workflow",
     "build_lint_workflow",
     "build_query_workflow",

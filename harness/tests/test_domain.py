@@ -3,6 +3,11 @@
 import pytest
 
 from llmwiki.domain.citations import SourceInventory, inspect_citations, parse_citations
+from llmwiki.domain.contradictions import (
+    ContradictionFinding,
+    collapse_findings,
+    select_contradiction_candidates,
+)
 from llmwiki.domain.index import index_page_names, parse_index, upsert_index_entry
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
@@ -213,6 +218,83 @@ class TestCitations:
     def test_no_citations_is_valid_input(self) -> None:
         report = inspect_citations("alpha", "No evidence cited here yet.", self.INVENTORY)
         assert report == parse_citations("alpha", "No evidence cited here yet.")
+
+
+class TestContradictions:
+    def test_candidate_selection_shared_sources(self) -> None:
+        pages = {
+            "alpha": render_page(
+                WikiPage("alpha", "concept", "A.", "Alpha claim.", sources=("book.md",))
+            ),
+            "beta": render_page(
+                WikiPage("beta", "concept", "B.", "Beta claim.", sources=("book.md",))
+            ),
+        }
+        selection = select_contradiction_candidates(pages)
+        assert selection.candidate_count == 1
+        assert selection.candidates[0].reasons[0] == "shared sources: book.md"
+
+    def test_candidate_selection_direct_link(self) -> None:
+        pages = {
+            "alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[beta]].")),
+            "beta": render_page(WikiPage("beta", "concept", "B.", "Beta claim.")),
+        }
+        selection = select_contradiction_candidates(pages)
+        assert selection.candidate_count == 1
+        assert "direct wiki link" in selection.candidates[0].reasons
+
+    def test_candidate_selection_shared_raw_citations(self) -> None:
+        pages = {
+            "alpha": render_page(WikiPage("alpha", "concept", "A.", "Claim. (raw/book.md)")),
+            "beta": render_page(WikiPage("beta", "concept", "B.", "Other claim. (raw/book.md)")),
+        }
+        selection = select_contradiction_candidates(pages)
+        assert selection.candidate_count == 1
+        assert selection.candidates[0].reasons[0] == "shared raw citations: raw/book.md"
+
+    def test_candidate_selection_keyword_overlap(self) -> None:
+        pages = {
+            "alpha": render_page(
+                WikiPage("alpha", "concept", "A.", "Orbit mechanics require transfer windows.")
+            ),
+            "beta": render_page(
+                WikiPage("beta", "concept", "B.", "Transfer windows shape orbit mechanics.")
+            ),
+        }
+        selection = select_contradiction_candidates(pages)
+        assert selection.candidate_count == 1
+        assert selection.candidates[0].reasons[0].startswith("keyword overlap:")
+
+    def test_candidate_selection_cap_reports_skipped(self) -> None:
+        pages = {
+            name: render_page(WikiPage(name, "concept", f"{name}.", "Claim.", sources=("book.md",)))
+            for name in ("alpha", "beta", "gamma", "delta")
+        }
+        selection = select_contradiction_candidates(pages, max_pairs=2)
+        assert selection.candidate_count == 6
+        assert selection.audited_count == 2
+        assert selection.skipped_count == 4
+
+    def test_duplicate_findings_are_collapsed(self) -> None:
+        finding = ContradictionFinding(
+            page_a="alpha",
+            claim_a="ES2015 introduced the feature.",
+            page_b="beta",
+            claim_b="ES2019 introduced the feature.",
+            severity="medium",
+            rationale="The years conflict.",
+            recommended_action="Inspect source dates.",
+        )
+        duplicate = ContradictionFinding(
+            page_a="beta",
+            claim_a="ES2019 introduced the feature.",
+            page_b="alpha",
+            claim_b="ES2015 introduced the feature.",
+            severity="high",
+            rationale="Same conflict.",
+            recommended_action="Inspect source dates.",
+        )
+        assert collapse_findings((finding, duplicate)) == (finding,)
 
 
 class TestSearch:

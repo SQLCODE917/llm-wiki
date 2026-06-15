@@ -12,6 +12,7 @@ from llmwiki.config import (
     resolve_runtime_profile,
     resolve_strict_evidence_mode,
 )
+from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS
 
 
 class TestParser:
@@ -37,6 +38,15 @@ class TestParser:
         args = _build_parser().parse_args(["maintenance", "--strict-evidence", "fail"])
         assert args.op == "maintenance"
         assert args.strict_evidence == "fail"
+
+    def test_contradictions_args(self) -> None:
+        args = _build_parser().parse_args(["contradictions", "--max-pairs", "7"])
+        assert args.op == "contradictions"
+        assert args.max_pairs == 7
+
+    def test_contradictions_default_pair_cap(self) -> None:
+        args = _build_parser().parse_args(["contradictions"])
+        assert args.max_pairs == DEFAULT_MAX_PAIRS
 
     def test_strict_evidence_arg(self) -> None:
         args = _build_parser().parse_args(["lint", "--strict-evidence", "warn"])

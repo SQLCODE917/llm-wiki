@@ -19,11 +19,16 @@ from forge.core.runner import WorkflowRunner
 
 from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.chatwindow import QAPair
+from llmwiki.domain.contradictions import (
+    ContradictionAuditReport,
+    ContradictionFinding,
+    ContradictionSelection,
+)
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
-from llmwiki.domain.system_pages import HEALTH_PAGE, ORPHAN_EXEMPT_PAGES
+from llmwiki.domain.system_pages import CONTRADICTIONS_PAGE, HEALTH_PAGE, ORPHAN_EXEMPT_PAGES
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import (
     ExtractionResult,
@@ -35,6 +40,7 @@ from llmwiki.runtime.transcript import TranscriptWriter
 from llmwiki.store import WikiStore
 from llmwiki.workflows import (
     build_chat_workflow,
+    build_contradiction_workflow,
     build_ingest_workflow,
     build_lint_workflow,
     build_query_workflow,
@@ -45,6 +51,7 @@ _MAX_ITERATIONS = {
     "ingest": 24,
     "query": 12,
     "lint": 24,
+    "contradictions": 18,
     "pdf-chunk": 24,
     "pdf-integrate": 20,
     "chat": 12,
@@ -66,6 +73,10 @@ _RETRY_NUDGES = {
     "lint": (
         "Reply with exactly one tool call. If the review is complete, call "
         "finish_lint with the health report; otherwise call the next tool you need."
+    ),
+    "contradictions": (
+        "Reply with exactly one tool call. If the audit is complete, call "
+        "finish_contradictions with the audit report; otherwise call the next tool you need."
     ),
     "pdf-chunk": (
         "Reply with exactly one tool call. If the wiki now reflects this "
@@ -323,6 +334,31 @@ class Session:
         self.store.append_log(self.today, "lint", "wiki health", verified_report)
         return OperationResult("lint", "wiki health", verified_report, transcript)
 
+    async def contradictions(self, selection: ContradictionSelection) -> OperationResult:
+        findings: list[ContradictionFinding] = []
+        if not selection.candidates:
+            report = self._contradiction_report(selection, (), "No candidate pairs to audit.")
+            self._file_contradiction_report(report)
+            self.store.append_log(self.today, "contradiction", "contradiction audit", report)
+            return OperationResult("contradictions", "contradiction audit", report, None)
+        workflow = build_contradiction_workflow(self.store, findings)
+        message = (
+            "Run a contradiction audit over these bounded candidate pairs. "
+            "Inspect pairs in order. Read the pages for the current pair before "
+            "recording a finding, then either continue to the next pair or finish. "
+            "Do not spend the whole tool budget trying to exhaust the wiki. Record "
+            "only claims that cannot both be true as written.\n\n"
+            f"Candidate pairs discovered: {selection.candidate_count}\n"
+            f"Audited pairs: {selection.audited_count}\n"
+            f"Skipped by cap: {selection.skipped_count}\n\n"
+            f"{selection.render_for_prompt()}"
+        )
+        model_report, transcript = await self._run(workflow, message, "contradictions")
+        report = self._contradiction_report(selection, tuple(findings), model_report)
+        self._file_contradiction_report(report)
+        self.store.append_log(self.today, "contradiction", "contradiction audit", report)
+        return OperationResult("contradictions", "contradiction audit", report, transcript)
+
     def _lint_snapshot(self, evidence_policy: EvidencePolicy) -> LintSnapshot:
         page_texts = self.store.page_texts()
         inventory = self.store.source_inventory() if evidence_policy.enabled else None
@@ -388,6 +424,29 @@ class Session:
                 name=HEALTH_PAGE,
                 category="synthesis",
                 summary=f"Wiki health report from the latest lint pass ({self.today}).",
+                body=report,
+                updated=self.today,
+            )
+        )
+
+    def _contradiction_report(
+        self,
+        selection: ContradictionSelection,
+        findings: tuple[ContradictionFinding, ...],
+        model_report: str,
+    ) -> str:
+        return ContradictionAuditReport(
+            selection=selection,
+            findings=findings,
+            model_report=model_report,
+        ).render()
+
+    def _file_contradiction_report(self, report: str) -> None:
+        self.store.write_page(
+            WikiPage(
+                name=CONTRADICTIONS_PAGE,
+                category="synthesis",
+                summary=f"Contradiction audit report from {self.today}.",
                 body=report,
                 updated=self.today,
             )

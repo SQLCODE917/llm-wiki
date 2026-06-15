@@ -52,6 +52,7 @@ REFERENCE pattern and can be implemented independently.
 2. `docs/2026-06-14-contradiction-detection.md`
    - Adds bounded, model-assisted contradiction audits.
    - Files structured contradiction reports without auto-resolving conflicts.
+   - Implemented as `llmwiki contradictions`.
 
 ## Global Constraints
 

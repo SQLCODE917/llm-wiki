@@ -180,8 +180,10 @@ Examples:
 - Page A has no source citation and page B has a cited disagreement -> record
   only if the claims are incompatible; the recommended action should ask the
   curator to inspect sources, not declare a winner.
+- Candidate selector finds 200 possible pairs and the default cap is 5 -> audit
+  5, report 195 skipped by cap.
 - Candidate selector finds 200 possible pairs and `--max-pairs 25` -> audit 25,
-  report 175 skipped by cap.
+  report 175 skipped by cap; this is an explicit larger sweep, not the default.
 
 ## Acceptance Criteria
 
