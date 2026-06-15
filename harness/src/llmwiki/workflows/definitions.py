@@ -15,10 +15,12 @@ from forge.tools.respond import respond_tool
 
 from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.grounding import ClaimCandidate, GroundingVerdict
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
+from llmwiki.workflows.grounding_tools import record_grounding_verdict_tool
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.tools import (
     finish_tool,
@@ -181,4 +183,27 @@ def build_contradiction_workflow(
         required_steps=["read_page"],
         terminal_tool="finish_contradictions",
         system_prompt_template=prompts.CONTRADICTIONS_TEMPLATE,
+    )
+
+
+def build_grounding_workflow(
+    store: WikiStore,
+    verdicts: list[GroundingVerdict],
+    candidates: tuple[ClaimCandidate, ...],
+) -> Workflow:
+    tools = [
+        record_grounding_verdict_tool(store, verdicts, candidates),
+        finish_tool(
+            "finish_grounding",
+            "Finish the grounding audit with audited scope, uncertainty, and "
+            "curator next steps.",
+        ),
+    ]
+    return Workflow(
+        name="grounding",
+        description="Audit selected wiki claims for support by cited evidence.",
+        tools={t.name: t for t in tools},
+        required_steps=[],
+        terminal_tool="finish_grounding",
+        system_prompt_template=prompts.GROUNDING_TEMPLATE,
     )

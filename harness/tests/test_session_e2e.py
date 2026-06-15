@@ -13,6 +13,7 @@ from forge.core.workflow import TextResponse, ToolCall
 from llmwiki.config import WikiPaths
 from llmwiki.domain.contradictions import select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.grounding import GroundingSelection, select_grounding_claims
 from llmwiki.domain.pages import WikiPage
 from llmwiki.runtime.session import Session
 from llmwiki.store import PageNotFoundError, WikiStore, WikiStoreError
@@ -783,3 +784,201 @@ class TestContradictions:
 
         assert "No valid findings." in result.output
         assert "No contradictions were recorded" in result.output
+
+
+class TestGrounding:
+    async def test_records_verdicts_without_rewriting_content_pages(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text(
+            "Array destructuring binds positions to names.", encoding="utf-8"
+        )
+        store.write_page(
+            WikiPage(
+                name="arrays",
+                category="concept",
+                summary="Array notes.",
+                body="Array destructuring binds positions to names. "
+                "(raw/article.md normalized:L1)",
+                updated=TODAY,
+            )
+        )
+        before = store.read_page("arrays")
+        selection = select_grounding_claims(
+            store.page_texts(),
+            store.source_inventory(),
+            store.source_resolver(),
+            max_claims=1,
+        )
+        script = [
+            [
+                ToolCall(
+                    tool="record_grounding_verdict",
+                    args={
+                        "page_name": "arrays",
+                        "claim_text": "Array destructuring binds positions to names.",
+                        "verdict": "supported",
+                        "rationale": "The resolved excerpt states the same claim.",
+                        "recommended_action": "No page change needed.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_grounding", args={"report": "One claim supported."})],
+        ]
+
+        result = await _session(store, script, paths).grounding(selection)
+
+        assert result.op == "grounding"
+        assert "Claim candidates discovered: 1" in result.output
+        assert "Verdict 1: INFO - supported" in result.output
+        assert "wiki-grounding" in store.list_pages()
+        assert "Grounding Audit" in store.read_page("wiki-grounding")
+        assert f"## [{TODAY}] grounding | grounding audit" in paths.log_path.read_text()
+        assert store.read_page("arrays") == before
+
+    async def test_no_candidate_audit_short_circuits_without_llm(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        selection = GroundingSelection(
+            candidates=(),
+            deterministic_findings=(),
+            candidate_count=0,
+            max_claims=5,
+        )
+
+        result = await _session(store, [], paths).grounding(selection)
+
+        assert result.transcript_path is None
+        assert "Claim candidates discovered: 0" in result.output
+        assert "No model grounding verdicts were recorded" in result.output
+        assert "wiki-grounding" in store.list_pages()
+
+    async def test_invalid_verdict_label_is_rejected_then_recovers(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text("A supported fact.", encoding="utf-8")
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="A supported fact. (raw/article.md normalized:L1)",
+                updated=TODAY,
+            )
+        )
+        selection = select_grounding_claims(
+            store.page_texts(),
+            store.source_inventory(),
+            store.source_resolver(),
+            max_claims=1,
+        )
+        script = [
+            [
+                ToolCall(
+                    tool="record_grounding_verdict",
+                    args={
+                        "page_name": "alpha",
+                        "claim_text": "A supported fact.",
+                        "verdict": "maybe",
+                        "rationale": "Invalid label.",
+                        "recommended_action": "No action.",
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="record_grounding_verdict",
+                    args={
+                        "page_name": "alpha",
+                        "claim_text": "A supported fact.",
+                        "verdict": "supported",
+                        "rationale": "The excerpt directly supports the claim.",
+                        "recommended_action": "No action.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_grounding", args={"report": "Recovered."})],
+        ]
+
+        result = await _session(store, script, paths).grounding(selection)
+
+        assert "Invalid label" not in result.output
+        assert result.output.count("Verdict 1: INFO - supported") == 1
+
+    async def test_non_unclear_verdict_without_evidence_excerpt_is_rejected(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text("A supported fact.", encoding="utf-8")
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="A supported fact. (raw/article.md)",
+                updated=TODAY,
+            )
+        )
+        selection = select_grounding_claims(
+            store.page_texts(),
+            store.source_inventory(),
+            store.source_resolver(),
+            max_claims=1,
+        )
+        script = [
+            [
+                ToolCall(
+                    tool="record_grounding_verdict",
+                    args={
+                        "page_name": "alpha",
+                        "claim_text": "A supported fact.",
+                        "verdict": "supported",
+                        "rationale": "The citation exists.",
+                        "recommended_action": "No action.",
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="record_grounding_verdict",
+                    args={
+                        "page_name": "alpha",
+                        "claim_text": "A supported fact.",
+                        "verdict": "unclear",
+                        "rationale": "No normalized evidence excerpt was available.",
+                        "recommended_action": "Review the raw source or add a locator.",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_grounding", args={"report": "Recovered."})],
+        ]
+
+        result = await _session(store, script, paths).grounding(selection)
+
+        assert "Verdict 1: WARN - unclear" in result.output
+        assert "INFO - supported" not in result.output
+
+    async def test_deterministic_failures_skip_model_judgment(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text("Actual source line.", encoding="utf-8")
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body='"Fabricated source line." (raw/article.md normalized:L1)',
+                updated=TODAY,
+            )
+        )
+        selection = select_grounding_claims(
+            store.page_texts(),
+            store.source_inventory(),
+            store.source_resolver(),
+            max_claims=5,
+        )
+
+        result = await _session(store, [], paths).grounding(selection)
+
+        assert result.transcript_path is None
+        assert "evidence-not-found" in result.output
+        assert "No model grounding verdicts were recorded" in result.output

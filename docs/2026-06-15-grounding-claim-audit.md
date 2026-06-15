@@ -110,7 +110,10 @@ Report -> curator action: narrow claim or add evidence
 
 ## Behavior & Domain Rules
 
-- Claims without citations are findings, not model-judge prompts.
+- Claims without citations are findings, not model-judge prompts. This first
+  implementation intentionally audits citation-bearing claims only; broad
+  uncited-prose detection is deferred because a noisy claim detector would
+  violate the selector halt condition.
 - Model judges claim support, not writing quality.
 - `unclear` is a warning unless deterministic evidence failed.
 
@@ -151,3 +154,38 @@ report so a curator can inspect the page and evidence.
 
 - If the selector cannot identify claim candidates without excessive false
   positives, stop and write a smaller claim-selection TDD first.
+
+## Implementation Notes
+
+- Implemented `llmwiki grounding` as a report-only command.
+- Added deterministic claim selection in `llmwiki.domain.grounding`.
+- Added `record_grounding_verdict` with the fixed verdict enum:
+  `supported`, `too_broad`, `not_supported`, `unclear`.
+- Added `wiki-grounding` as a harness-owned synthesis page exempt from orphan
+  checks.
+- Fatal deterministic evidence findings skip model judgment and are rendered
+  before model verdicts.
+- Non-`unclear` verdicts are rejected when the harness could not provide a
+  normalized evidence excerpt for the selected claim.
+- Current selector is deliberately narrow: it selects citation-bearing lines
+  with valid deterministic evidence context. It does not attempt general
+  uncited-claim detection yet.
+
+## Verification Plan
+
+- Run focused domain/session tests for grounding selection, verdict validation,
+  short-circuiting, report filing, and log appends.
+- Run the full test suite, formatter/linter/typecheck, and diff check.
+- Run `uv run llmwiki grounding --max-claims 2` over the current wiki and
+  inspect `wiki/wiki-grounding.md` for a coherent bounded report.
+
+## Verification Results
+
+- Focused domain/session tests pass.
+- Live `uv run llmwiki grounding --max-claims 2` completed without a
+  max-iteration failure.
+- Initial live runs exposed citation-list/navigation line false positives and
+  overconfident support verdicts without evidence excerpts. Fixed with
+  selector filters and a `record_grounding_verdict` boundary check.
+- Final live report selected actual prose claims and recorded `unclear` when
+  PDF citations lacked normalized evidence excerpts.

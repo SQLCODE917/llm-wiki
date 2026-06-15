@@ -25,10 +25,16 @@ from llmwiki.domain.contradictions import (
     ContradictionSelection,
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
+from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
-from llmwiki.domain.system_pages import CONTRADICTIONS_PAGE, HEALTH_PAGE, ORPHAN_EXEMPT_PAGES
+from llmwiki.domain.system_pages import (
+    CONTRADICTIONS_PAGE,
+    GROUNDING_PAGE,
+    HEALTH_PAGE,
+    ORPHAN_EXEMPT_PAGES,
+)
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import (
     ExtractionResult,
@@ -42,6 +48,7 @@ from llmwiki.workflows import (
     build_chat_file_workflow,
     build_chat_workflow,
     build_contradiction_workflow,
+    build_grounding_workflow,
     build_ingest_workflow,
     build_lint_workflow,
     build_query_workflow,
@@ -53,6 +60,7 @@ _MAX_ITERATIONS = {
     "query": 12,
     "lint": 24,
     "contradictions": 18,
+    "grounding": 18,
     "pdf-chunk": 24,
     "pdf-integrate": 20,
     "chat": 12,
@@ -79,6 +87,10 @@ _RETRY_NUDGES = {
     "contradictions": (
         "Reply with exactly one tool call. If the audit is complete, call "
         "finish_contradictions with the audit report; otherwise call the next tool you need."
+    ),
+    "grounding": (
+        "Reply with exactly one tool call. If the audit is complete, call "
+        "finish_grounding with the audit report; otherwise call record_grounding_verdict."
     ),
     "pdf-chunk": (
         "Reply with exactly one tool call. If the wiki now reflects this "
@@ -388,6 +400,30 @@ class Session:
         self.store.append_log(self.today, "contradiction", "contradiction audit", report)
         return OperationResult("contradictions", "contradiction audit", report, transcript)
 
+    async def grounding(self, selection: GroundingSelection) -> OperationResult:
+        verdicts: list[GroundingVerdict] = []
+        if not selection.candidates:
+            report = self._grounding_report(selection, (), "No claim candidates to audit.")
+            self._file_grounding_report(report)
+            self.store.append_log(self.today, "grounding", "grounding audit", report)
+            return OperationResult("grounding", "grounding audit", report, None)
+        workflow = build_grounding_workflow(self.store, verdicts, selection.candidates)
+        message = (
+            "Run a grounding audit over these bounded claim candidates. "
+            "Do not judge claims with deterministic citation failures; those are "
+            "already reported by the harness. For each selected claim, decide "
+            "whether the evidence supports the claim as written.\n\n"
+            f"Claim candidates discovered: {selection.candidate_count}\n"
+            f"Audited claims: {selection.audited_count}\n"
+            f"Skipped by cap: {selection.skipped_count}\n\n"
+            f"{selection.render_for_prompt()}"
+        )
+        model_report, transcript = await self._run(workflow, message, "grounding")
+        report = self._grounding_report(selection, tuple(verdicts), model_report)
+        self._file_grounding_report(report)
+        self.store.append_log(self.today, "grounding", "grounding audit", report)
+        return OperationResult("grounding", "grounding audit", report, transcript)
+
     def _lint_snapshot(self, evidence_policy: EvidencePolicy) -> LintSnapshot:
         page_texts = self.store.page_texts()
         inventory = self.store.source_inventory() if evidence_policy.enabled else None
@@ -480,6 +516,29 @@ class Session:
                 name=CONTRADICTIONS_PAGE,
                 category="synthesis",
                 summary=f"Contradiction audit report from {self.today}.",
+                body=report,
+                updated=self.today,
+            )
+        )
+
+    def _grounding_report(
+        self,
+        selection: GroundingSelection,
+        verdicts: tuple[GroundingVerdict, ...],
+        model_report: str,
+    ) -> str:
+        return GroundingAuditReport(
+            selection=selection,
+            verdicts=verdicts,
+            model_report=model_report,
+        ).render()
+
+    def _file_grounding_report(self, report: str) -> None:
+        self.store.write_page(
+            WikiPage(
+                name=GROUNDING_PAGE,
+                category="synthesis",
+                summary=f"Grounding audit report from {self.today}.",
                 body=report,
                 updated=self.today,
             )

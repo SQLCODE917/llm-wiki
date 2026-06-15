@@ -56,6 +56,10 @@ class WikiPaths:
         return self.wiki_dir / "log.md"
 
     @property
+    def candidates_path(self) -> Path:
+        return self.wiki_dir / "wiki-candidates.json"
+
+    @property
     def runs_dir(self) -> Path:
         return self.root / "harness" / "runs"
 

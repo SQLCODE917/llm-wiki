@@ -8,6 +8,7 @@ from collections.abc import Sequence
 from dataclasses import dataclass
 
 from llmwiki.config import StrictEvidenceMode
+from llmwiki.domain.candidates import CandidateBacklog
 from llmwiki.domain.evidence import EvidenceLintReport
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import PAGE_CATEGORIES, PageError, parse_page
@@ -60,6 +61,7 @@ class CuratorStatus:
     link_findings: LintFindings
     evidence_report: EvidenceLintReport
     salience_report: SalienceReport
+    candidate_backlog: CandidateBacklog
     recent_log_entries: tuple[str, ...]
     navigation_warnings: tuple[str, ...]
     recommended_actions: tuple[RecommendedAction, ...]
@@ -73,6 +75,7 @@ class CuratorStatus:
                 "## Deterministic Findings\n\n" + self.link_findings.render(),
                 "## Citation Evidence\n\n" + self.evidence_report.render(),
                 "## Salience\n\n" + (self.salience_report.render() or "No salience entries."),
+                "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
                 "## Recent Log Entries\n\n" + _render_lines(self.recent_log_entries),
                 "## Navigation Warnings\n\n" + _render_lines(self.navigation_warnings),
                 "## Recommended Next Actions\n\n"
@@ -91,13 +94,16 @@ def build_curator_status(
     recent_log_entries: Sequence[str],
     evidence_report: EvidenceLintReport,
     salience_report: SalienceReport,
+    candidate_backlog: CandidateBacklog,
     strict_evidence: StrictEvidenceMode,
+    link_findings: LintFindings | None = None,
 ) -> CuratorStatus:
-    link_findings = compute_findings(
-        page_texts,
-        index_names,
-        exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
-    )
+    if link_findings is None:
+        link_findings = compute_findings(
+            page_texts,
+            index_names,
+            exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
+        )
     invalid_pages, category_counts = _category_counts(page_texts)
     shape = WikiShapeSummary(
         page_count=len(page_texts),
@@ -117,9 +123,12 @@ def build_curator_status(
         link_findings=link_findings,
         evidence_report=evidence_report,
         salience_report=salience_report,
+        candidate_backlog=candidate_backlog,
         recent_log_entries=tuple(recent_log_entries),
         navigation_warnings=navigation_warnings,
-        recommended_actions=_recommended_actions(shape, link_findings, evidence_report),
+        recommended_actions=_recommended_actions(
+            shape, link_findings, evidence_report, candidate_backlog
+        ),
     )
 
 
@@ -154,6 +163,7 @@ def _recommended_actions(
     shape: WikiShapeSummary,
     findings: LintFindings,
     evidence_report: EvidenceLintReport,
+    candidate_backlog: CandidateBacklog,
 ) -> tuple[RecommendedAction, ...]:
     actions: list[RecommendedAction] = []
     if shape.page_count == 0:
@@ -194,6 +204,15 @@ def _recommended_actions(
                 "Review orphan pages",
                 f"{len(findings.orphan_pages)} page(s) have no inbound links.",
                 "uv run llmwiki lint",
+            )
+        )
+    queued = [record for record in candidate_backlog.records if record.status == "queued"]
+    if queued:
+        actions.append(
+            RecommendedAction(
+                "Review candidate pages",
+                f"{len(queued)} candidate page(s) are queued for curator review.",
+                "uv run llmwiki candidates",
             )
         )
     if shape.page_count and not actions:

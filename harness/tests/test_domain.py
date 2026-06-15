@@ -2,6 +2,13 @@
 
 import pytest
 
+from llmwiki.domain.candidates import (
+    CandidateBacklog,
+    CandidateRecord,
+    CandidateSignal,
+    reject_candidate,
+    update_candidate_backlog,
+)
 from llmwiki.domain.citations import SourceInventory, inspect_citations, parse_citations
 from llmwiki.domain.contradictions import (
     ContradictionFinding,
@@ -9,6 +16,13 @@ from llmwiki.domain.contradictions import (
     select_contradiction_candidates,
 )
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.grounding import (
+    ClaimCandidate,
+    GroundingAuditReport,
+    GroundingSelection,
+    GroundingVerdict,
+    select_grounding_claims,
+)
 from llmwiki.domain.index import index_page_names, parse_index, upsert_index_entry
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
@@ -99,6 +113,78 @@ class TestIndex:
         assert index_page_names(INDEX) == {"alpha-source", "bravo", "delta"}
 
 
+class TestCandidates:
+    def test_candidate_canonicalization_and_alias_deduplication(self) -> None:
+        backlog = update_candidate_backlog(
+            CandidateBacklog(),
+            (
+                CandidateSignal("NaN", "concept", "linked from alpha", "alpha"),
+                CandidateSignal("nan", "concept", "linked from beta", "beta"),
+            ),
+            existing_pages=set(),
+            today="2026-06-15",
+        )
+
+        assert len(backlog.records) == 1
+        record = backlog.records[0]
+        assert record.slug == "nan"
+        assert record.mention_count == 2
+        assert record.status == "queued"
+        assert record.source_pages == ("alpha", "beta")
+
+    def test_existing_pages_are_marked_promoted_not_reported_active(self) -> None:
+        backlog = CandidateBacklog(
+            (
+                CandidateRecord(
+                    slug="iterable",
+                    display_name="iterable",
+                    category_guess="concept",
+                    aliases=(),
+                    reasons=("linked from alpha",),
+                    source_pages=("alpha",),
+                    mention_count=1,
+                    status="queued",
+                    first_seen="2026-06-14",
+                    last_seen="2026-06-14",
+                ),
+            )
+        )
+
+        updated = update_candidate_backlog(
+            backlog,
+            (),
+            existing_pages={"iterable"},
+            today="2026-06-15",
+        )
+
+        assert updated.records[0].status == "promoted"
+        assert updated.top() == ()
+
+    def test_rejected_candidates_stay_rejected_across_updates(self) -> None:
+        rejected = reject_candidate(CandidateBacklog(), "nan", "covered by number", "2026-06-14")
+
+        updated = update_candidate_backlog(
+            rejected,
+            (CandidateSignal("nan", "concept", "linked from alpha", "alpha"),),
+            existing_pages=set(),
+            today="2026-06-15",
+        )
+
+        assert updated.records[0].status == "rejected"
+        assert updated.records[0].status_reason == "covered by number"
+        assert updated.records[0].mention_count == 1
+
+    def test_backlog_json_roundtrip(self) -> None:
+        backlog = update_candidate_backlog(
+            CandidateBacklog(),
+            (CandidateSignal("left variadic functions", "concept", "linked", "alpha"),),
+            existing_pages=set(),
+            today="2026-06-15",
+        )
+
+        assert CandidateBacklog.from_json_text(backlog.to_json_text()) == backlog
+
+
 class TestLog:
     def test_entry_has_greppable_prefix(self) -> None:
         entry = format_log_entry("2026-06-10", "ingest", "article.md", "Wrote 3 pages.")
@@ -138,6 +224,18 @@ class TestLinks:
     def test_single_page_is_not_an_orphan(self) -> None:
         findings = compute_findings({"only": "text"}, index_names={"only"})
         assert findings.orphan_pages == ()
+
+    def test_exempt_pages_do_not_create_graph_findings_or_inbound_credit(self) -> None:
+        findings = compute_findings(
+            {
+                "alpha": "No links.",
+                "wiki-health": "Report mentions [[alpha]] and [[ghost]].",
+            },
+            index_names={"alpha", "wiki-health"},
+            exempt_from_orphans=frozenset({"wiki-health"}),
+        )
+        assert findings.broken_links == {}
+        assert findings.orphan_pages == ("alpha",)
 
 
 class TestCitations:
@@ -298,6 +396,131 @@ class TestCitations:
             resolver,
         )
         assert result.findings == ()
+
+
+class TestGrounding:
+    INVENTORY = SourceInventory.from_raw_relative_paths(["article.md"])
+
+    def test_selector_skips_pages_with_fatal_evidence_findings(self) -> None:
+        resolver = InMemorySourceResolver({"raw/article.md": "Actual source line."})
+        pages = {
+            "alpha": render_page(
+                WikiPage(
+                    "alpha",
+                    "concept",
+                    "A.",
+                    '"Fabricated source line." (raw/article.md normalized:L1)',
+                )
+            )
+        }
+
+        selection = select_grounding_claims(
+            pages,
+            self.INVENTORY,
+            resolver,
+            max_claims=5,
+        )
+
+        assert selection.candidates == ()
+        assert selection.candidate_count == 0
+        assert [finding.code for finding in selection.deterministic_findings] == [
+            "evidence-not-found"
+        ]
+
+    def test_selector_bounds_claims_and_reports_skipped_count(self) -> None:
+        resolver = InMemorySourceResolver(
+            {
+                "raw/article.md": (
+                    "Alpha evidence supports the first claim.\n"
+                    "Beta evidence supports the second claim."
+                )
+            }
+        )
+        pages = {
+            "alpha": render_page(
+                WikiPage(
+                    "alpha",
+                    "concept",
+                    "A.",
+                    "Alpha evidence supports the first claim. "
+                    "(raw/article.md normalized:L1)\n"
+                    "Beta evidence supports the second claim. "
+                    "(raw/article.md normalized:L2)",
+                )
+            )
+        }
+
+        selection = select_grounding_claims(
+            pages,
+            self.INVENTORY,
+            resolver,
+            max_claims=1,
+        )
+
+        assert selection.candidate_count == 2
+        assert selection.audited_count == 1
+        assert selection.skipped_count == 1
+        assert "Alpha evidence" in selection.candidates[0].evidence_excerpt
+
+    def test_selector_ignores_citation_labels_and_citation_only_lines(self) -> None:
+        resolver = InMemorySourceResolver({"raw/article.md": "Actual claim evidence."})
+        pages = {
+            "alpha": render_page(
+                WikiPage(
+                    "alpha",
+                    "concept",
+                    "A.",
+                    "Citations: (raw/article.md normalized:L1)\n"
+                    "- (raw/article.md normalized:L1)\n"
+                    "Cited in: [[related-page]] (raw/article.md normalized:L1)\n"
+                    "Actual claim evidence. (raw/article.md normalized:L1)",
+                )
+            )
+        }
+
+        selection = select_grounding_claims(
+            pages,
+            self.INVENTORY,
+            resolver,
+            max_claims=5,
+        )
+
+        assert selection.candidate_count == 1
+        assert selection.candidates[0].claim_text == "Actual claim evidence."
+
+    def test_report_renders_scope_deterministic_findings_and_verdicts(self) -> None:
+        selection = GroundingSelection(
+            candidates=(
+                ClaimCandidate(
+                    page_name="alpha",
+                    claim_text="The claim is broader than the excerpt.",
+                    local_context="The claim is broader than the excerpt. (raw/article.md)",
+                    citation_text="raw/article.md",
+                    evidence_excerpt="The excerpt supports only part.",
+                ),
+            ),
+            deterministic_findings=(),
+            candidate_count=2,
+            max_claims=1,
+        )
+        report = GroundingAuditReport(
+            selection=selection,
+            verdicts=(
+                GroundingVerdict(
+                    page_name="alpha",
+                    claim_text="The claim is broader than the excerpt.",
+                    verdict="too_broad",
+                    rationale="The citation supports only part of the statement.",
+                    recommended_action="Narrow the page claim or add stronger evidence.",
+                ),
+            ),
+            model_report="Audited one claim.",
+        ).render()
+
+        assert "Claim candidates discovered: 2" in report
+        assert "Skipped by cap: 1" in report
+        assert "Verdict 1: WARN - too_broad" in report
+        assert "Audited one claim." in report
 
 
 class TestContradictions:

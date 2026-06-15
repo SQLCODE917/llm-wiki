@@ -60,6 +60,11 @@ class TestMetricV2:
         assert [e.name for e in report.top("entity")] == ["generator", "matthew-knox"]
         assert generator.score > knox.score
 
+    def test_harness_report_links_do_not_feed_the_ranking(self) -> None:
+        report = self._report()
+        leanpub = next(e for e in report.entries if e.name == "leanpub")
+        assert leanpub.inbound_links == 0  # wiki-health is a report, not wiki evidence
+
     def test_scope_excludes_other_sources(self) -> None:
         ranked = {e.name for e in self._report().entries}
         assert "antikythera" not in ranked

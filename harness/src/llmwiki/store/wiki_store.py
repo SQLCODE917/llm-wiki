@@ -16,6 +16,7 @@ from __future__ import annotations
 from pathlib import Path
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
+from llmwiki.domain.candidates import CandidateBacklog, backlog_from_json_text
 from llmwiki.domain.citations import SourceInventory
 from llmwiki.domain.index import empty_index, index_page_names, upsert_index_entry
 from llmwiki.domain.log import format_log_entry
@@ -120,6 +121,16 @@ class WikiStore:
             self._paths.index_path.write_text(empty_index(), encoding="utf-8")
         if not self._paths.log_path.exists():
             self._paths.log_path.write_text("# Log\n", encoding="utf-8")
+
+    # -- harness-owned candidate backlog ------------------------------------
+
+    def read_candidate_backlog(self) -> CandidateBacklog:
+        if not self._paths.candidates_path.exists():
+            return CandidateBacklog()
+        return backlog_from_json_text(self._paths.candidates_path.read_text(encoding="utf-8"))
+
+    def write_candidate_backlog(self, backlog: CandidateBacklog) -> None:
+        self._paths.candidates_path.write_text(backlog.to_json_text(), encoding="utf-8")
 
     # -- navigation files ----------------------------------------------------
 

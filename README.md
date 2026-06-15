@@ -97,14 +97,19 @@ verification and delta, so lint success is never only the model's self-report.
 uv run llmwiki curator-status
 uv run llmwiki curator-status --strict-evidence warn
 uv run llmwiki maintenance
+uv run llmwiki candidates
+uv run llmwiki candidates reject <slug> --reason "covered elsewhere"
 ```
 
 `curator-status` prints deterministic wiki health without starting Ollama:
 page counts, raw-source counts, link/index/orphan findings, citation evidence
-findings, salience, recent log entries, and recommended next actions.
-`maintenance` files the same report as `wiki-curator-status` and appends a
-`maintenance` entry to `wiki/log.md`. Neither command repairs pages; use
-`lint` when you want the model to inspect and edit.
+findings, salience, candidate-page backlog, recent log entries, and recommended
+next actions. `maintenance` refreshes `wiki/wiki-candidates.json` from
+deterministic missing-link signals, files the same report as
+`wiki-curator-status`, and appends a `maintenance` entry to `wiki/log.md`.
+`candidates` lists active candidate pages or rejects one explicitly. None of
+these commands repair pages; use `lint` when you want the model to inspect and
+edit.
 
 **Contradictions** — bounded semantic audit:
 
@@ -120,6 +125,20 @@ call `record_contradiction` for claims that cannot both be true as written. Use
 `--max-pairs` for an explicitly larger sweep. The command files
 `wiki-contradictions` and appends a `contradiction` log entry. It does not
 rewrite pages or decide which source wins.
+
+**Grounding** — bounded claim support audit:
+
+```bash
+uv run llmwiki grounding
+uv run llmwiki grounding --max-claims 10
+```
+
+The harness selects citation-bearing claim candidates, resolves available
+evidence excerpts, and asks the model to record whether the cited evidence
+supports each claim as written: `supported`, `too_broad`, `not_supported`, or
+`unclear`. Fatal deterministic citation evidence findings skip model judgment.
+The command files `wiki-grounding` and appends a `grounding` log entry. It is
+report-only and does not rewrite content pages.
 
 **Reading the wiki**: it's just markdown — open `wiki/` in Obsidian (graph
 view shows the link structure) or any editor. Recent activity:
@@ -155,6 +174,7 @@ chronologically.
 | Deterministic salience | `docs/2026-06-12-deterministic-salience-design.md` | Code-computed importance (wiki inbound links + per-ingest write counts) fed to synthesis runs so the model never ranks from memory. Implemented; `--reintegrate` rebuilds a hub with current salience. |
 | Persistent chat | `docs/2026-06-12-persistent-chat-design.md` | `llmwiki chat`: warm-model REPL with follow-ups; SQLite session store, deterministic Q/A windowing (no model-curated memory). |
 | Chat filing | `docs/2026-06-15-chat-phase2-file-synthesis.md` | Explicit `/file <page-name> [scope]` path for turning the latest chat answer into a durable `synthesis` page after re-reading wiki evidence. |
+| Candidate page backlog | `docs/2026-06-15-candidate-page-backlog.md` | Harness-owned `wiki/wiki-candidates.json` for recurring missing page candidates discovered during maintenance. |
 | M5 foundation migration | `docs/2026-06-14-m5-foundation-migration.md` | Records the replacement of the previous repo, the backup location, and which old safeguards to port selectively. |
 | 4090 synthesis roadmap | `docs/2026-06-14-4090-feature-synthesis-roadmap.md` | Chain of independently shippable TDDs for 4090 runtime support and backup-feature synthesis. |
 | Runtime profiles / 4090 | `docs/2026-06-14-runtime-profiles-4090.md` | First TDD in the chain: runtime selection and `local-4090` as a forge-compatible target. |
@@ -163,6 +183,7 @@ chronologically.
 | Normalized evidence resolver | `docs/2026-06-15-normalized-evidence-resolver.md` | Optional `raw/... normalized:Lx-Ly` locator checks against raw Markdown and cached PDF text. |
 | Maintenance automation / curator status | `docs/2026-06-14-maintenance-automation-curator-status.md` | Model-free `curator-status` report plus filed `maintenance` report/log entry. |
 | Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Bounded model-assisted audits through `llmwiki contradictions`; files structured reports without auto-resolving conflicts. |
+| Grounding claim audit | `docs/2026-06-15-grounding-claim-audit.md` | Bounded model-assisted support checks for selected cited claims; files `wiki-grounding` without rewriting content pages. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
@@ -200,9 +221,15 @@ mode we hit.
   in `log.md` and git history, not as dated pages.
 - **`wiki-curator-status` is rewritten each maintenance pass.** It is the
   current deterministic dashboard, while history lives in `log.md` and git.
+- **`wiki/wiki-candidates.json` is bookkeeping, not wiki knowledge.** It is
+  refreshed from explicit missing `[[links]]`; general mention-only candidate
+  discovery is deferred until its precision can be measured.
 - **`wiki-contradictions` is rewritten each contradiction audit.** The audit
   is bounded by candidate-pair selection and is not proof that no other
   contradictions exist.
+- **`wiki-grounding` is rewritten each grounding audit.** The audit is bounded
+  by citation-bearing claim selection and is not proof that every wiki claim is
+  supported. Broad uncited-claim detection remains a separate, noisier problem.
 - **Single-user, single-op.** One local Ollama-backed operation at a time.
 
 ## Future improvements

@@ -75,7 +75,10 @@ def compute_findings(
     (e.g. the harness-maintained health report) and shouldn't be reported.
     """
     page_names = set(pages)
-    outbound = {name: extract_links(text) for name, text in pages.items()}
+    outbound = {
+        name: set() if name in exempt_from_orphans else extract_links(text)
+        for name, text in pages.items()
+    }
 
     broken = {
         name: tuple(sorted(targets - page_names))

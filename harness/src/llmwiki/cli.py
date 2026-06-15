@@ -22,13 +22,20 @@ from llmwiki.config import (
     load_backend_config,
     resolve_strict_evidence_mode,
 )
+from llmwiki.domain.candidates import (
+    reject_candidate,
+    signals_from_broken_links,
+    update_candidate_backlog,
+)
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
 from llmwiki.domain.index import index_page_names
+from llmwiki.domain.links import compute_findings
 from llmwiki.domain.maintenance import build_curator_status, recent_log_entries
 from llmwiki.domain.pages import WikiPage
 from llmwiki.domain.salience import compute_salience
-from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE
+from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
 from llmwiki.pdf.vision import AppleVisionRecognizer
@@ -92,6 +99,20 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     _add_strict_evidence_arg(maintenance)
 
+    candidates = sub.add_parser(
+        "candidates",
+        help="List or update the harness-owned candidate page backlog.",
+    )
+    candidate_sub = candidates.add_subparsers(dest="candidate_op")
+    candidate_sub.add_parser("list", help="List active candidate pages.")
+    reject = candidate_sub.add_parser("reject", help="Reject a candidate page slug.")
+    reject.add_argument("slug", help="Candidate slug to reject.")
+    reject.add_argument(
+        "--reason",
+        required=True,
+        help="Why this candidate should not be promoted.",
+    )
+
     contradictions = sub.add_parser(
         "contradictions",
         help="Audit bounded candidate page pairs for semantic contradictions.",
@@ -101,6 +122,17 @@ def _build_parser() -> argparse.ArgumentParser:
         type=int,
         default=DEFAULT_MAX_PAIRS,
         help=f"Maximum candidate pairs to audit (default: {DEFAULT_MAX_PAIRS}).",
+    )
+
+    grounding = sub.add_parser(
+        "grounding",
+        help="Audit bounded wiki claims for support by cited evidence.",
+    )
+    grounding.add_argument(
+        "--max-claims",
+        type=int,
+        default=DEFAULT_MAX_CLAIMS,
+        help=f"Maximum claim candidates to judge (default: {DEFAULT_MAX_CLAIMS}).",
     )
 
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
@@ -146,9 +178,14 @@ async def _run(args: argparse.Namespace) -> OperationResult:
     if args.op in {"curator-status", "maintenance"}:
         paths.validate_status()
         return _run_curator_operation(args.op, paths, strict_evidence, now.date().isoformat())
+    if args.op == "candidates":
+        paths.validate_status()
+        return _run_candidates(args, paths, now.date().isoformat())
 
     if args.op == "contradictions":
         return await _run_contradictions(args, paths, now)
+    if args.op == "grounding":
+        return await _run_grounding(args, paths, now)
 
     paths.validate()
     backend_config = load_backend_config(args.runtime)
@@ -214,12 +251,51 @@ async def _run_contradictions(
         await backend.aclose()
 
 
+async def _run_grounding(
+    args: argparse.Namespace, paths: WikiPaths, now: datetime
+) -> OperationResult:
+    if args.max_claims < 1:
+        raise ConfigError("--max-claims must be at least 1.")
+    paths.validate()
+    store = WikiStore(paths)
+    selection = select_grounding_claims(
+        store.page_texts(),
+        store.source_inventory(),
+        store.source_resolver(),
+        max_claims=args.max_claims,
+    )
+    if not selection.candidates:
+        session = Session(
+            store=store,
+            client=None,
+            context_manager=ContextManager(strategy=NoCompact(), budget_tokens=1),
+            today=now.date().isoformat(),
+        )
+        return await session.grounding(selection)
+
+    backend_config = load_backend_config(args.runtime)
+    backend = await start_backend(backend_config)
+    try:
+        print(f"[runtime: {backend.summary}]", file=sys.stderr)
+        session = Session(
+            store=store,
+            client=backend.client,
+            context_manager=backend.context_manager,
+            today=now.date().isoformat(),
+            runs_dir=paths.runs_dir,
+            run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+        )
+        return await session.grounding(selection)
+    finally:
+        await backend.aclose()
+
+
 def _run_curator_operation(
     op: str, paths: WikiPaths, strict_evidence: StrictEvidenceMode, today: str
 ) -> OperationResult:
     store = WikiStore(paths)
-    report = _curator_report(store, paths, strict_evidence)
     if op == "maintenance":
+        report = _curator_report(store, paths, strict_evidence, update_candidates=True, today=today)
         store.ensure_navigation_files()
         store.write_page(
             WikiPage(
@@ -231,15 +307,38 @@ def _run_curator_operation(
             )
         )
         store.append_log(today, "maintenance", "curator status", report)
+    else:
+        report = _curator_report(store, paths, strict_evidence)
     return OperationResult(op, "curator status", report, None)
 
 
-def _curator_report(store: WikiStore, paths: WikiPaths, strict_evidence: StrictEvidenceMode) -> str:
+def _curator_report(
+    store: WikiStore,
+    paths: WikiPaths,
+    strict_evidence: StrictEvidenceMode,
+    *,
+    update_candidates: bool = False,
+    today: str = "",
+) -> str:
     page_texts = store.page_texts()
     index_exists = paths.index_path.is_file()
     log_exists = paths.log_path.is_file()
     index_text = paths.index_path.read_text(encoding="utf-8") if index_exists else ""
     log_text = paths.log_path.read_text(encoding="utf-8") if log_exists else ""
+    link_findings = compute_findings(
+        page_texts,
+        index_page_names(index_text),
+        exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
+    )
+    candidate_backlog = store.read_candidate_backlog()
+    if update_candidates:
+        candidate_backlog = update_candidate_backlog(
+            candidate_backlog,
+            signals_from_broken_links(link_findings.broken_links),
+            existing_pages=set(page_texts),
+            today=today,
+        )
+        store.write_candidate_backlog(candidate_backlog)
     evidence_policy = EvidencePolicy(mode=strict_evidence)
     inventory = store.source_inventory() if evidence_policy.enabled else None
     status = build_curator_status(
@@ -255,9 +354,26 @@ def _curator_report(store: WikiStore, paths: WikiPaths, strict_evidence: StrictE
             store.source_resolver() if evidence_policy.enabled else None,
         ),
         salience_report=compute_salience(page_texts),
+        candidate_backlog=candidate_backlog,
         strict_evidence=strict_evidence,
+        link_findings=link_findings,
     )
     return status.render()
+
+
+def _run_candidates(args: argparse.Namespace, paths: WikiPaths, today: str) -> OperationResult:
+    store = WikiStore(paths)
+    backlog = store.read_candidate_backlog()
+    op = args.candidate_op or "list"
+    if op == "reject":
+        slug = str(args.slug)
+        backlog = reject_candidate(backlog, slug, args.reason, today)
+        store.write_candidate_backlog(backlog)
+        store.ensure_navigation_files()
+        detail = f"Rejected candidate `{slug}`: {args.reason}"
+        store.append_log(today, "candidates", slug, detail)
+        return OperationResult("candidates", slug, detail, None)
+    return OperationResult("candidates", "candidate backlog", backlog.render(), None)
 
 
 async def _run_chat(session: Session, paths: WikiPaths, resume: str | None) -> OperationResult:

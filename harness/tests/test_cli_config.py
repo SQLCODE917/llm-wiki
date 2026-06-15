@@ -39,6 +39,20 @@ class TestParser:
         assert args.op == "maintenance"
         assert args.strict_evidence == "fail"
 
+    def test_candidates_list_args(self) -> None:
+        args = _build_parser().parse_args(["candidates"])
+        assert args.op == "candidates"
+        assert args.candidate_op is None
+
+    def test_candidates_reject_args(self) -> None:
+        args = _build_parser().parse_args(
+            ["candidates", "reject", "iterable", "--reason", "covered elsewhere"]
+        )
+        assert args.op == "candidates"
+        assert args.candidate_op == "reject"
+        assert args.slug == "iterable"
+        assert args.reason == "covered elsewhere"
+
     def test_contradictions_args(self) -> None:
         args = _build_parser().parse_args(["contradictions", "--max-pairs", "7"])
         assert args.op == "contradictions"

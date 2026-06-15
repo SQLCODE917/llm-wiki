@@ -208,3 +208,411 @@ Audited 5 pairs from the candidate set. No contradictions were found where two c
 ## Caveat
 
 This is a bounded audit over selected candidate pairs, not proof that the wiki has no contradictions.
+
+## [2026-06-15] grounding | grounding audit
+# Grounding Audit
+
+## Audit Scope
+
+Claim candidates discovered: 43
+Audited claims: 2
+Skipped by cap: 41
+Max claims: 2
+
+## Deterministic Evidence Findings
+
+No fatal deterministic citation evidence findings in selected scope.
+
+## Model Verdicts
+
+### Verdict 1: WARN - unclear on [[array-destructuring]]
+
+- Claim: - (raw/javascriptallonge.pdf p.158-176)
+- Rationale: The evidence excerpt is unavailable for this claim. Without access to the specific content from pages 158-176 of 'javascriptallonge.pdf', it is not possible to determine if the cited material supports the claim as written.
+- Recommended action: The curator should review the cited pages (158-176) of 'javascriptallonge.pdf' to assess whether the content supports or contradicts the claim related to array destructuring.
+
+### Verdict 2: WARN - unclear on [[axel-rauschmayer]]
+
+- Claim: Citations:
+- Rationale: The evidence excerpt is unavailable for this claim. Without access to the specific content from pages 1-13 of 'javascriptallonge.pdf', it is not possible to determine if the cited material supports the claim as written.
+- Recommended action: The curator should review the cited pages (1-13) of 'javascriptallonge.pdf' to assess whether the content supports or contradicts the claim related to Axel Rauschmayer.
+
+## Model Report
+
+Audited 2 claims from the bounded set. Both claims were marked as 'unclear' due to the unavailability of specific evidence excerpts. The curator should review the cited pages in 'javascriptallonge.pdf' to determine support for each claim.
+
+## Caveat
+
+This is a bounded grounding audit over selected claims, not proof that every wiki claim is supported.
+
+## [2026-06-15] grounding | grounding audit
+# Grounding Audit
+
+## Audit Scope
+
+Claim candidates discovered: 22
+Audited claims: 2
+Skipped by cap: 20
+Max claims: 2
+
+## Deterministic Evidence Findings
+
+No fatal deterministic citation evidence findings in selected scope.
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on [[closure]]
+
+- Claim: A **closure** is a function or block that captures and retains references to variables from its lexical scope. In JavaScript, closures are created when a function is defined inside another function, allowing the inner function to access the outer function's variables even after the outer function has completed execution. This concept is central to functional programming patterns and is discussed in *JavaScript Allongé* .
+- Rationale: The claim accurately describes closures in JavaScript, which is a well-established concept in functional programming. The description matches the definition of closures as functions that capture and retain references to variables from their lexical scope. The citation to *JavaScript Allongé* (p.30-43) supports this claim as it is a primary source discussing closures.
+- Recommended action: No action required. The claim is supported by the cited source.
+
+### Verdict 2: INFO - supported on [[eager-evaluation]]
+
+- Claim: Cited in: [[javascriptallonge-lazy-eager-collections]]
+- Rationale: The claim is a citation reference to another page, and the citation points to *JavaScript Allongé* (p.246-260). While no specific content excerpt is provided, the citation itself is sufficient to validate that the concept of eager evaluation is discussed in the referenced source, and it is appropriately cited in the context of lazy vs. eager collections.
+- Recommended action: No action required. The citation supports the claim as a reference to a discussion in *JavaScript Allongé*.
+
+## Model Report
+
+Audited 2 claims from the bounded set. Both claims were supported by the cited sources. No claims were skipped due to deterministic citation failures. No actions are required for the curator.
+
+## Caveat
+
+This is a bounded grounding audit over selected claims, not proof that every wiki claim is supported.
+
+## [2026-06-15] grounding | grounding audit
+# Grounding Audit
+
+## Audit Scope
+
+Claim candidates discovered: 22
+Audited claims: 2
+Skipped by cap: 20
+Max claims: 2
+
+## Deterministic Evidence Findings
+
+No fatal deterministic citation evidence findings in selected scope.
+
+## Model Verdicts
+
+### Verdict 1: WARN - unclear on [[closure]]
+
+- Claim: A **closure** is a function or block that captures and retains references to variables from its lexical scope. In JavaScript, closures are created when a function is defined inside another function, allowing the inner function to access the outer function's variables even after the outer function has completed execution. This concept is central to functional programming patterns and is discussed in *JavaScript Allongé* .
+- Rationale: The evidence excerpt indicates that no normalized evidence is available for this claim. The citation points to a specific page range in *JavaScript Allongé*, but without a verifiable excerpt, the claim cannot be confirmed or denied based on the provided evidence.
+- Recommended action: The curator should verify the content of *JavaScript Allongé* (p.30-43) to confirm whether the description of closures matches the claim.
+
+### Verdict 2: WARN - unclear on [[eager-evaluation]]
+
+- Claim: Cited in: [[javascriptallonge-lazy-eager-collections]]
+- Rationale: The evidence excerpt indicates that no normalized evidence is available for this claim. The citation points to a specific page range in *JavaScript Allongé*, but without a verifiable excerpt, the claim cannot be confirmed or denied based on the provided evidence.
+- Recommended action: The curator should verify the content of *JavaScript Allongé* (p.246-260) to confirm whether the description of eager evaluation matches the claim.
+
+## Model Report
+
+Audited 2 claims from the bounded set. Both claims were marked as 'unclear' due to the absence of normalized evidence excerpts. The curator should verify the relevant sections in *JavaScript Allongé* to confirm the accuracy of the claims.
+
+## Caveat
+
+This is a bounded grounding audit over selected claims, not proof that every wiki claim is supported.
+
+## [2026-06-15] grounding | grounding audit
+# Grounding Audit
+
+## Audit Scope
+
+Claim candidates discovered: 21
+Audited claims: 2
+Skipped by cap: 19
+Max claims: 2
+
+## Deterministic Evidence Findings
+
+No fatal deterministic citation evidence findings in selected scope.
+
+## Model Verdicts
+
+### Verdict 1: WARN - unclear on [[closure]]
+
+- Claim: A **closure** is a function or block that captures and retains references to variables from its lexical scope. In JavaScript, closures are created when a function is defined inside another function, allowing the inner function to access the outer function's variables even after the outer function has completed execution. This concept is central to functional programming patterns and is discussed in *JavaScript Allongé* .
+- Rationale: The evidence excerpt indicates that no normalized evidence is available for this claim. The citation points to a specific page range in *JavaScript Allongé*, but without a verifiable excerpt, the support cannot be determined.
+- Recommended action: Review the cited pages in *JavaScript Allongé* to verify the claim's accuracy.
+
+### Verdict 2: WARN - unclear on [[floyd-s-cycle-finding-algorithm]]
+
+- Claim: The **Floyd's cycle-finding algorithm** (also known as the **tortoise and hare algorithm**) is used to detect cycles in a sequence or linked list. It employs two pointers moving at different speeds to identify loops. This algorithm is discussed in *JavaScript Allongé* .
+- Rationale: The evidence excerpt indicates that no normalized evidence is available for this claim. The citation points to a specific page range in *JavaScript Allongé*, but without a verifiable excerpt, the support cannot be determined.
+- Recommended action: Review the cited pages in *JavaScript Allongé* to verify the claim's accuracy.
+
+## Model Report
+
+Audited 2 claims from the bounded set. Both claims were marked as 'unclear' due to the absence of normalized evidence excerpts. Curators should review the cited pages in *JavaScript Allongé* to verify the claims.
+
+## Caveat
+
+This is a bounded grounding audit over selected claims, not proof that every wiki claim is supported.
+
+## [2026-06-15] maintenance | curator status
+# Curator Status
+
+Strict evidence mode: off
+
+## Wiki Shape
+
+Total wiki pages: 78
+Raw source files: 2
+Source pages: 24
+index.md: present
+log.md: present
+Pages with invalid frontmatter: 0
+
+Pages by category:
+- source: 24
+- entity: 12
+- concept: 39
+- synthesis: 3
+
+## Deterministic Findings
+
+Orphan pages (no inbound links from any other page):
+- axel-rauschmayer
+- call-by-value
+- floating-point-numbers
+- javascriptallonge-picking-the-bean
+- left-variadic-functions
+- mapwith-and-flip
+- nan
+- node-js
+- object-assign
+- ordered-collection
+- quasi-literals
+
+## Citation Evidence
+
+Strict evidence mode: off. Citation validation skipped.
+
+## Salience
+
+Salience report — computed per page as (links: inbound wiki links, writes: times written this ingest, mentions: occurrences in the source text):
+Concepts: [[array-destructuring]] (links 2, writes 0, mentions 0), [[arrays]] (links 2, writes 0, mentions 0), [[closure]] (links 2, writes 0, mentions 0), [[combinator]] (links 2, writes 0, mentions 0), [[const]] (links 2, writes 0, mentions 0), [[floyd-s-cycle-finding-algorithm]] (links 2, writes 0, mentions 0), [[iterable]] (links 2, writes 0, mentions 0), [[linked-lists]] (links 2, writes 0, mentions 0)
+Entities: [[generator]] (links 2, writes 0, mentions 0), [[javascript]] (links 2, writes 0, mentions 0), [[archimedes]] (links 1, writes 0, mentions 0), [[corinth]] (links 1, writes 0, mentions 0), [[matthew-knox]] (links 1, writes 0, mentions 0), [[michael-fogus]] (links 1, writes 0, mentions 0), [[reg-raganwald-braithwaite]] (links 1, writes 0, mentions 0), [[syracuse]] (links 1, writes 0, mentions 0)
+
+## Candidate Page Backlog
+
+No active candidate pages. Run `uv run llmwiki maintenance` to refresh.
+
+## Recent Log Entries
+
+- ## [2026-06-14] contradiction | contradiction audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+
+## Navigation Warnings
+
+None.
+
+## Recommended Next Actions
+
+- Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.
+
+## [2026-06-15] maintenance | curator status
+# Curator Status
+
+Strict evidence mode: off
+
+## Wiki Shape
+
+Total wiki pages: 79
+Raw source files: 2
+Source pages: 24
+index.md: present
+log.md: present
+Pages with invalid frontmatter: 0
+
+Pages by category:
+- source: 24
+- entity: 12
+- concept: 39
+- synthesis: 4
+
+## Deterministic Findings
+
+Orphan pages (no inbound links from any other page):
+- axel-rauschmayer
+- call-by-value
+- floating-point-numbers
+- javascriptallonge-picking-the-bean
+- left-variadic-functions
+- mapwith-and-flip
+- nan
+- node-js
+- object-assign
+- ordered-collection
+- quasi-literals
+
+## Citation Evidence
+
+Strict evidence mode: off. Citation validation skipped.
+
+## Salience
+
+Salience report — computed per page as (links: inbound wiki links, writes: times written this ingest, mentions: occurrences in the source text):
+Concepts: [[array-destructuring]] (links 3, writes 0, mentions 0), [[arrays]] (links 3, writes 0, mentions 0), [[closure]] (links 3, writes 0, mentions 0), [[combinator]] (links 3, writes 0, mentions 0), [[const]] (links 3, writes 0, mentions 0), [[floyd-s-cycle-finding-algorithm]] (links 3, writes 0, mentions 0), [[iterable]] (links 3, writes 0, mentions 0), [[linked-lists]] (links 3, writes 0, mentions 0)
+Entities: [[generator]] (links 3, writes 0, mentions 0), [[javascript]] (links 3, writes 0, mentions 0), [[archimedes]] (links 2, writes 0, mentions 0), [[corinth]] (links 2, writes 0, mentions 0), [[matthew-knox]] (links 2, writes 0, mentions 0), [[michael-fogus]] (links 2, writes 0, mentions 0), [[reg-raganwald-braithwaite]] (links 2, writes 0, mentions 0), [[syracuse]] (links 2, writes 0, mentions 0)
+
+## Candidate Page Backlog
+
+No active candidate pages from explicit missing [[links]].
+
+## Recent Log Entries
+
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] maintenance | curator status
+
+## Navigation Warnings
+
+None.
+
+## Recommended Next Actions
+
+- Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.
+
+## [2026-06-15] maintenance | curator status
+# Curator Status
+
+Strict evidence mode: off
+
+## Wiki Shape
+
+Total wiki pages: 79
+Raw source files: 2
+Source pages: 24
+index.md: present
+log.md: present
+Pages with invalid frontmatter: 0
+
+Pages by category:
+- source: 24
+- entity: 12
+- concept: 39
+- synthesis: 4
+
+## Deterministic Findings
+
+Broken [[links]] (target page does not exist):
+- wiki-curator-status links to missing page(s): links
+
+Orphan pages (no inbound links from any other page):
+- axel-rauschmayer
+- call-by-value
+- floating-point-numbers
+- javascriptallonge-picking-the-bean
+- left-variadic-functions
+- mapwith-and-flip
+- nan
+- node-js
+- object-assign
+- ordered-collection
+- quasi-literals
+
+## Citation Evidence
+
+Strict evidence mode: off. Citation validation skipped.
+
+## Salience
+
+Salience report — computed per page as (links: inbound wiki links, writes: times written this ingest, mentions: occurrences in the source text):
+Concepts: [[array-destructuring]] (links 2, writes 0, mentions 0), [[arrays]] (links 2, writes 0, mentions 0), [[combinator]] (links 2, writes 0, mentions 0), [[const]] (links 2, writes 0, mentions 0), [[iterable]] (links 2, writes 0, mentions 0), [[linked-lists]] (links 2, writes 0, mentions 0), [[closure]] (links 1, writes 0, mentions 0), [[coroutine]] (links 1, writes 0, mentions 0)
+Entities: [[generator]] (links 2, writes 0, mentions 0), [[javascript]] (links 2, writes 0, mentions 0), [[archimedes]] (links 1, writes 0, mentions 0), [[corinth]] (links 1, writes 0, mentions 0), [[matthew-knox]] (links 1, writes 0, mentions 0), [[michael-fogus]] (links 1, writes 0, mentions 0), [[reg-raganwald-braithwaite]] (links 1, writes 0, mentions 0), [[syracuse]] (links 1, writes 0, mentions 0)
+
+## Candidate Page Backlog
+
+- links (`links`, concept) — discovered; mentions 1; sources 1
+
+## Recent Log Entries
+
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+
+## Navigation Warnings
+
+None.
+
+## Recommended Next Actions
+
+- Repair broken links: 1 broken link(s) found. Suggested command: `uv run llmwiki lint`.
+- Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.
+
+## [2026-06-15] maintenance | curator status
+# Curator Status
+
+Strict evidence mode: off
+
+## Wiki Shape
+
+Total wiki pages: 79
+Raw source files: 2
+Source pages: 24
+index.md: present
+log.md: present
+Pages with invalid frontmatter: 0
+
+Pages by category:
+- source: 24
+- entity: 12
+- concept: 39
+- synthesis: 4
+
+## Deterministic Findings
+
+Orphan pages (no inbound links from any other page):
+- axel-rauschmayer
+- call-by-value
+- floating-point-numbers
+- javascriptallonge-picking-the-bean
+- left-variadic-functions
+- mapwith-and-flip
+- nan
+- node-js
+- object-assign
+- ordered-collection
+- quasi-literals
+
+## Citation Evidence
+
+Strict evidence mode: off. Citation validation skipped.
+
+## Salience
+
+Salience report — computed per page as (links: inbound wiki links, writes: times written this ingest, mentions: occurrences in the source text):
+Concepts: [[array-destructuring]] (links 2, writes 0, mentions 0), [[arrays]] (links 2, writes 0, mentions 0), [[combinator]] (links 2, writes 0, mentions 0), [[const]] (links 2, writes 0, mentions 0), [[iterable]] (links 2, writes 0, mentions 0), [[linked-lists]] (links 2, writes 0, mentions 0), [[closure]] (links 1, writes 0, mentions 0), [[coroutine]] (links 1, writes 0, mentions 0)
+Entities: [[generator]] (links 2, writes 0, mentions 0), [[javascript]] (links 2, writes 0, mentions 0), [[archimedes]] (links 1, writes 0, mentions 0), [[corinth]] (links 1, writes 0, mentions 0), [[matthew-knox]] (links 1, writes 0, mentions 0), [[michael-fogus]] (links 1, writes 0, mentions 0), [[reg-raganwald-braithwaite]] (links 1, writes 0, mentions 0), [[syracuse]] (links 1, writes 0, mentions 0)
+
+## Candidate Page Backlog
+
+No active candidate pages from explicit missing double-bracket links.
+
+## Recent Log Entries
+
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] grounding | grounding audit
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+
+## Navigation Warnings
+
+None.
+
+## Recommended Next Actions
+
+- Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.

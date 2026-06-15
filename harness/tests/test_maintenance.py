@@ -72,6 +72,18 @@ class TestCuratorReport:
         assert "Review index drift" in report
         assert "Review orphan pages" in report
 
+    def test_curator_status_reads_existing_candidate_backlog(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page("alpha", "Links to [[iterable]]."))
+        _curator_report(store, paths, "off", update_candidates=True, today=TODAY)
+
+        report = _curator_report(store, paths, "off")
+
+        assert "## Candidate Page Backlog" in report
+        assert "iterable" in report
+        assert "discovered" in report
+
     def test_report_surfaces_citation_warnings(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(_page("alpha", "Claim cites a missing source. (raw/missing.md)"))
 
@@ -151,6 +163,69 @@ class TestCuratorCli:
         log_text = paths.log_path.read_text(encoding="utf-8")
         assert "## [" in log_text
         assert "maintenance | curator status" in log_text
+
+    async def test_maintenance_updates_candidate_backlog_without_creating_pages(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page("alpha", "Links to [[iterable]]."))
+        args = _build_parser().parse_args(["--root", str(paths.root), "maintenance"])
+
+        result = await _run(args)
+
+        assert "iterable" in result.output
+        assert (paths.wiki_dir / "wiki-candidates.json").exists()
+        assert not (paths.wiki_dir / "iterable.md").exists()
+        assert "iterable.md" not in paths.index_path.read_text(encoding="utf-8")
+
+    async def test_maintenance_keeps_rejected_candidate_rejected(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page("alpha", "Links to [[iterable]]."))
+        reject_args = _build_parser().parse_args(
+            ["--root", str(paths.root), "candidates", "reject", "iterable", "--reason", "too thin"]
+        )
+        await _run(reject_args)
+        maintenance_args = _build_parser().parse_args(["--root", str(paths.root), "maintenance"])
+
+        await _run(maintenance_args)
+
+        text = (paths.wiki_dir / "wiki-candidates.json").read_text(encoding="utf-8")
+        assert '"status": "rejected"' in text
+        assert "too thin" in text
+
+    async def test_candidates_reject_updates_backlog_and_log(
+        self, paths: WikiPaths
+    ) -> None:
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "candidates", "reject", "maybe-page", "--reason", "nope"]
+        )
+
+        result = await _run(args)
+
+        assert result.op == "candidates"
+        assert "Rejected candidate `maybe-page`: nope" in result.output
+        assert "maybe-page" in (paths.wiki_dir / "wiki-candidates.json").read_text(
+            encoding="utf-8"
+        )
+        assert "candidates | maybe-page" in paths.log_path.read_text(encoding="utf-8")
+
+    async def test_candidates_list_is_backend_free(
+        self, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        def fail_backend(*args: object, **kwargs: object) -> NoReturn:
+            raise AssertionError("candidate listing must not load backend config")
+
+        monkeypatch.setattr("llmwiki.cli.load_backend_config", fail_backend)
+        monkeypatch.setattr("llmwiki.cli.start_backend", fail_backend)
+        args = _build_parser().parse_args(["--root", str(paths.root), "candidates"])
+
+        result = await _run(args)
+
+        assert result.op == "candidates"
+        assert (
+            "No active candidate pages from explicit missing double-bracket links"
+            in result.output
+        )
 
     async def test_maintenance_creates_missing_navigation_files(self, paths: WikiPaths) -> None:
         paths.index_path.unlink()

@@ -128,3 +128,17 @@ CONTRADICTIONS_TEMPLATE = _BASE + (
     "budget is exhausted with finish_contradictions: audited scope, findings "
     "recorded, uncertainty, and curator next steps."
 )
+
+GROUNDING_TEMPLATE = _BASE + (
+    "\nTask: run a bounded grounding audit. The user message contains selected "
+    "claim candidates, local page context, citations, and evidence excerpts. "
+    "Judge only whether the cited evidence supports the claim. Use "
+    "record_grounding_verdict with one verdict per inspected claim: supported, "
+    "too_broad, not_supported, or unclear. Do not rewrite pages, do not invent "
+    "missing evidence, and do not override deterministic citation failures. "
+    "If the evidence excerpt says no normalized evidence excerpt is available, "
+    "record unclear; do not call it supported from general knowledge or from "
+    "the citation alone. "
+    "When finished, call finish_grounding with audited scope, uncertainty, and "
+    "curator next steps."
+)

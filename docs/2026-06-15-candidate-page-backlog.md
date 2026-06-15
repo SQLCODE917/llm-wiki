@@ -46,6 +46,9 @@ Forbidden approaches:
   `promoted`, `rejected`, and `merged`.
 - Curator status reports top candidates and recommended next action.
 - Lint or maintenance can update candidates from salience and broken-link data.
+- V1 updates candidates from explicit broken `[[links]]` during maintenance.
+  Mention-only extraction from salience/source text is deferred until precision
+  can be measured.
 
 ## Invariants
 
@@ -150,3 +153,39 @@ by an explicit user command.
 
 - If candidate status changes require human-review workflow semantics, stop and
   design curator review statuses separately.
+
+## Implementation Notes
+
+- Implemented `wiki/wiki-candidates.json` as harness-owned JSON bookkeeping.
+- Added deterministic candidate records with finite statuses:
+  `discovered`, `queued`, `promoted`, `rejected`, and `merged`.
+- `uv run llmwiki maintenance` refreshes candidates from broken-link signals,
+  files `wiki-curator-status`, and logs the maintenance operation.
+- `uv run llmwiki curator-status` reads the current backlog without writing it.
+- `uv run llmwiki candidates` lists active candidates.
+- `uv run llmwiki candidates reject <slug> --reason <reason>` records an
+  explicit rejection and appends `wiki/log.md`.
+- Existing pages supersede candidates by moving active records to `promoted`.
+- Rejected records stay rejected across future maintenance refreshes.
+
+## Verification Plan
+
+- Unit tests for canonicalization, alias deduplication, promotion, rejection,
+  and JSON round-trip.
+- Maintenance tests proving refresh updates counts without creating pages.
+- CLI tests proving candidate list/reject behavior is model-free and logged.
+- Live `uv run llmwiki maintenance` and `uv run llmwiki candidates` over the
+  current wiki, followed by inspection of `wiki/wiki-candidates.json` and
+  `wiki-curator-status`.
+
+## Verification Results
+
+- Focused domain, salience, maintenance, and CLI tests pass.
+- Live `uv run llmwiki maintenance` refreshed `wiki/wiki-candidates.json`,
+  filed `wiki-curator-status`, and appended `wiki/log.md` without starting a
+  model.
+- Live `uv run llmwiki candidates` lists the current backlog. The present wiki
+  has no explicit missing-link candidates, so the backlog is empty.
+- Live maintenance exposed a report-feedback loop: harness-owned report pages
+  could create graph findings or inflate salience by linking to pages. Fixed by
+  making system pages graph-neutral for broken-link/inbound-link computation.

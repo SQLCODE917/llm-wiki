@@ -167,7 +167,7 @@ def compute_salience(
     inbound: Counter[str] = Counter()
     parsed: dict[str, WikiPage] = {}
     for name, text in page_texts.items():
-        if name not in exclude_inbound_from:
+        if name not in exclude_inbound_from and name not in _EXCLUDED_PAGES:
             for target in extract_links(text) & page_names - {name}:
                 inbound[target] += 1
         try:

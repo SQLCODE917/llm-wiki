@@ -10,6 +10,8 @@ The index and log formats below are also enforced in harness code
 - `raw/` — immutable source documents. Read-only. Never edit, never delete.
 - `wiki/` — the knowledge base: interlinked markdown pages. The model writes
   this layer exclusively through the `write_page` tool.
+- `wiki/wiki-candidates.json` — harness-owned bookkeeping for missing page
+  candidates. It is not wiki knowledge and is never cited as evidence.
 - `SCHEMA.md` — this file. Conventions and workflows. Revisions are logged.
 
 ## Page conventions
@@ -37,6 +39,9 @@ The index and log formats below are also enforced in harness code
   both sources.
 - Contradiction audits are report-only: record conflicts for curator review
   without deciding which source wins and without rewriting content pages.
+- Grounding audits are report-only: judge selected cited claims against
+  resolved evidence excerpts and record curator actions without rewriting
+  content pages.
 - Frontmatter (category, summary, sources, updated date) is composed by the
   harness from `write_page` arguments — do not write it in page content.
 - `write_page` replaces the entire page. When updating an existing page,
@@ -45,6 +50,9 @@ The index and log formats below are also enforced in harness code
   derived navigation maintained by the harness — like index.md entries,
   never write or edit key-entity/key-concept lists yourself; they are
   replaced from computed evidence after every ingest.
+- Candidate page backlog entries are not pages. Promote a candidate only by
+  writing a real `entity`/`concept`/`synthesis` page through the normal
+  workflow.
 
 ## index.md
 
@@ -59,6 +67,14 @@ Entry format: `- [[page-name]] — one-line summary`.
 Append-only chronology, written by the harness when an operation completes.
 Entry prefix: `## [YYYY-MM-DD] <op> | <subject>` so that
 `grep "^## \[" wiki/log.md | tail -5` lists recent activity.
+
+## Candidate page backlog
+
+`wiki/wiki-candidates.json` records recurring missing page candidates detected
+by the harness, currently from explicit `[[links]]` whose target page does not
+exist. Candidate statuses are finite: `discovered`, `queued`, `promoted`,
+`rejected`, and `merged`. The backlog supports curator review, but never counts
+as source evidence or as existing wiki coverage.
 
 ## Workflows
 
@@ -117,3 +133,19 @@ Entry prefix: `## [YYYY-MM-DD] <op> | <subject>` so that
    uncertainty, and curator next steps. The harness files the structured report
    as the `wiki-contradictions` synthesis page (rewritten each audit pass;
    history is in log.md). `wiki-contradictions` is exempt from orphan checks.
+
+### grounding
+
+1. The harness selects a bounded set of citation-bearing claim candidates and
+   resolves available evidence excerpts before the model is invoked.
+2. Judge only whether the cited evidence supports the selected claim as
+   written. Do not judge style, importance, or whether the page is complete.
+3. Use `record_grounding_verdict` for each inspected claim with exactly one
+   verdict: `supported`, `too_broad`, `not_supported`, or `unclear`.
+4. Do not rewrite pages, add sources, or decide silently that a claim is fine
+   when deterministic citation evidence failed. Fatal deterministic evidence
+   findings skip model judgment.
+5. Call `finish_grounding` with audited scope, uncertainty, and curator next
+   steps. The harness files the structured report as the `wiki-grounding`
+   synthesis page (rewritten each audit pass; history is in log.md).
+   `wiki-grounding` is exempt from orphan checks.
