@@ -132,7 +132,10 @@ model turn that produced it.
 `LLMWIKI_CTX` (context tokens, default 16384). CLI `--runtime` overrides
 `LLMWIKI_RUNTIME`. `LLMWIKI_STRICT_EVIDENCE` accepts `off`, `warn`, or
 `fail`; CLI `--strict-evidence` overrides it for commands that support
-evidence checks.
+evidence checks. When strict evidence is on, ordinary `(raw/...)` citations
+are checked for source existence; optional `normalized:Lx-Ly` locators are
+also resolved against raw Markdown or cached PDF extraction text, and adjacent
+quoted/table evidence is checked against the cited lines.
 
 **Development**: `uv run pytest harness/tests` (no network — a scripted fake
 LLM client drives the real forge runner). Lint/typecheck:
@@ -157,6 +160,7 @@ chronologically.
 | Runtime profiles / 4090 | `docs/2026-06-14-runtime-profiles-4090.md` | First TDD in the chain: runtime selection and `local-4090` as a forge-compatible target. |
 | Strict citation parser | `docs/2026-06-14-strict-citation-parser.md` | Second TDD in the chain: deterministic citation and locator findings for the flat M5 wiki. |
 | Evidence write/lint gates | `docs/2026-06-14-evidence-gates-for-writes-and-lint.md` | Third TDD in the chain: opt-in `off|warn|fail` evidence behavior for writes and lint. |
+| Normalized evidence resolver | `docs/2026-06-15-normalized-evidence-resolver.md` | Optional `raw/... normalized:Lx-Ly` locator checks against raw Markdown and cached PDF text. |
 | Maintenance automation / curator status | `docs/2026-06-14-maintenance-automation-curator-status.md` | Model-free `curator-status` report plus filed `maintenance` report/log entry. |
 | Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Bounded model-assisted audits through `llmwiki contradictions`; files structured reports without auto-resolving conflicts. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |

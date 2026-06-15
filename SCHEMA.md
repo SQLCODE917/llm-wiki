@@ -24,6 +24,9 @@ The index and log formats below are also enforced in harness code
   pages that do not exist yet mark pages worth creating.
 - Cite evidence by raw source path, e.g. `(raw/some-article.md)`. For paged
   sources (PDFs), include the page range: `(raw/book.pdf p.28-41)`.
+- For high-audit claims, you may add an optional normalized line locator after
+  the source path, e.g. `(raw/article.md normalized:L12-L18)`. Do not add
+  normalized locators unless you have line-addressed source text.
 - Book-scale sources get a hub `source` page named after the file (e.g.
   `javascriptallonge`) that summarizes the whole source and links
   per-chapter source pages named `<hub>-<chapter-slug>`.

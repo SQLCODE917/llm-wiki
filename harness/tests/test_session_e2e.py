@@ -337,6 +337,25 @@ class TestStrictEvidenceWrites:
         with pytest.raises(PageNotFoundError):
             store.read_page("moon")
 
+    def test_fail_mode_rejects_fabricated_normalized_evidence(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text("Actual source line.", encoding="utf-8")
+        before_index = store.read_index()
+        tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="fail"))
+
+        with pytest.raises(WikiStoreError, match="evidence-not-found"):
+            tool.callable(
+                name="moon",
+                category="source",
+                summary="Lunar notes.",
+                content='"Fabricated source line." (raw/article.md normalized:L1)',
+                sources=[],
+            )
+
+        assert store.read_index() == before_index
+        assert "moon" not in store.list_pages()
+
 
 class TestQuery:
     async def test_search_then_respond_and_logged(self, store: WikiStore, paths: WikiPaths) -> None:
@@ -591,6 +610,41 @@ class TestLint:
         assert any("Citation evidence findings" in content for content in user_msgs)
         assert any("missing-source" in content for content in user_msgs)
         assert any("Strict evidence mode: warn" in content for content in user_msgs)
+
+    async def test_lint_prompt_includes_normalized_resolver_findings(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text("Actual source line.", encoding="utf-8")
+        store.write_page(
+            WikiPage(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body='"Fabricated source line." (raw/article.md normalized:L1)',
+                updated=TODAY,
+            )
+        )
+        script = [
+            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="finish_lint", args={"report": "fabricated evidence found."})],
+        ]
+        session = _session(store, script, paths)
+        session = Session(
+            store=session.store,
+            client=session.client,
+            context_manager=session.context_manager,
+            today=session.today,
+            runs_dir=session.runs_dir,
+            run_id=session.run_id,
+            strict_evidence="warn",
+        )
+
+        result = await session.lint()
+
+        assert "evidence-not-found" in result.output
+        fake: FakeClient = session.client
+        user_msgs = [m["content"] for m in fake.sent[0] if m.get("role") == "user"]
+        assert any("evidence-not-found" in content for content in user_msgs)
 
     async def test_health_page_is_not_reported_as_orphan(
         self, store: WikiStore, paths: WikiPaths

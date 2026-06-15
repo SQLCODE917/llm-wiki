@@ -20,6 +20,7 @@ from llmwiki.domain.citations import SourceInventory
 from llmwiki.domain.index import empty_index, index_page_names, upsert_index_entry
 from llmwiki.domain.log import format_log_entry
 from llmwiki.domain.pages import WikiPage, render_page, validate_page_name
+from llmwiki.store.source_resolver import FileSourceTextResolver
 
 _RESERVED_NAMES = frozenset({"index", "log"})
 _TRUNCATION_MARKER = "\n\n[TRUNCATED: source exceeds the read budget; summarize what is shown]"
@@ -78,6 +79,11 @@ class WikiStore:
         """Return raw-source existence facts for deterministic citation checks."""
 
         return SourceInventory.from_raw_relative_paths(self.list_sources())
+
+    def source_resolver(self) -> FileSourceTextResolver:
+        """Return line-addressable raw/cached source text for evidence checks."""
+
+        return FileSourceTextResolver(self._paths.raw_dir, self._paths.cache_dir)
 
     # -- wiki layer ---------------------------------------------------------
 

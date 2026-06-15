@@ -1,5 +1,7 @@
 """WikiStore boundary tests: confinement, immutability, index coupling."""
 
+import json
+
 import pytest
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
@@ -49,6 +51,24 @@ class TestRawLayer:
         text = store.read_source("big.md")
         assert "[TRUNCATED" in text
         assert len(text) < SOURCE_READ_BUDGET_CHARS + 200
+
+    def test_source_resolver_reads_cached_pdf_chunks(
+        self, paths: WikiPaths, store: WikiStore
+    ) -> None:
+        (paths.raw_dir / "book.pdf").write_bytes(b"%PDF")
+        cache_dir = paths.cache_dir / "abc123"
+        chunks_dir = cache_dir / "chunks"
+        chunks_dir.mkdir(parents=True)
+        (cache_dir / "manifest.json").write_text(
+            json.dumps({"source": "book.pdf"}),
+            encoding="utf-8",
+        )
+        (chunks_dir / "0001.md").write_text("Line one.\nLine two.", encoding="utf-8")
+
+        assert store.source_resolver().source_lines("raw/book.pdf") == (
+            "Line one.",
+            "Line two.",
+        )
 
 
 class TestWikiLayer:

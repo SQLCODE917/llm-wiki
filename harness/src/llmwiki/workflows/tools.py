@@ -184,7 +184,8 @@ def write_page_tool(
         body = _strip_pipeline_markers(params.content)
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
-        evidence = policy.check_page(params.name, body, inventory)
+        resolver = store.source_resolver() if policy.enabled else None
+        evidence = policy.check_page(params.name, body, inventory, resolver)
         if not evidence.allowed:
             raise WikiStoreError(
                 evidence.render_for_tool(params.name)

@@ -249,7 +249,11 @@ def _curator_report(store: WikiStore, paths: WikiPaths, strict_evidence: StrictE
         index_exists=index_exists,
         log_exists=log_exists,
         recent_log_entries=recent_log_entries(log_text),
-        evidence_report=evidence_policy.lint_pages(page_texts, inventory),
+        evidence_report=evidence_policy.lint_pages(
+            page_texts,
+            inventory,
+            store.source_resolver() if evidence_policy.enabled else None,
+        ),
         salience_report=compute_salience(page_texts),
         strict_evidence=strict_evidence,
     )

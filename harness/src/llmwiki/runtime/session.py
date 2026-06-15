@@ -397,7 +397,11 @@ class Session:
                 self.store.index_names(),
                 exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
             ),
-            evidence_report=evidence_policy.lint_pages(page_texts, inventory),
+            evidence_report=evidence_policy.lint_pages(
+                page_texts,
+                inventory,
+                self.store.source_resolver() if evidence_policy.enabled else None,
+            ),
         )
 
     def _verified_lint_report(

@@ -7,6 +7,7 @@ from dataclasses import dataclass
 
 from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.citations import CitationFinding, SourceInventory, inspect_citations
+from llmwiki.domain.evidence_resolver import SourceTextResolver, resolve_normalized_evidence
 
 
 @dataclass(frozen=True)
@@ -70,17 +71,30 @@ class EvidencePolicy:
         return self.mode != "off"
 
     def check_page(
-        self, page_name: str, body: str, inventory: SourceInventory | None
+        self,
+        page_name: str,
+        body: str,
+        inventory: SourceInventory | None,
+        source_resolver: SourceTextResolver | None = None,
     ) -> EvidencePolicyResult:
         if self.mode == "off":
             return EvidencePolicyResult(mode=self.mode)
         if inventory is None:
             raise ValueError("Source inventory is required when strict evidence is enabled.")
         report = inspect_citations(page_name, body, inventory)
-        return EvidencePolicyResult(mode=self.mode, findings=report.findings)
+        findings = list(report.findings)
+        if source_resolver is not None:
+            for citation in report.citations:
+                _, finding = resolve_normalized_evidence(citation, source_resolver)
+                if finding is not None:
+                    findings.append(finding)
+        return EvidencePolicyResult(mode=self.mode, findings=tuple(findings))
 
     def lint_pages(
-        self, pages: Mapping[str, str], inventory: SourceInventory | None
+        self,
+        pages: Mapping[str, str],
+        inventory: SourceInventory | None,
+        source_resolver: SourceTextResolver | None = None,
     ) -> EvidenceLintReport:
         if self.mode == "off":
             return EvidenceLintReport(mode=self.mode)
@@ -88,8 +102,8 @@ class EvidencePolicy:
             raise ValueError("Source inventory is required when strict evidence is enabled.")
         findings: list[CitationFinding] = []
         for page_name in sorted(pages):
-            report = inspect_citations(page_name, pages[page_name], inventory)
-            findings.extend(report.findings)
+            result = self.check_page(page_name, pages[page_name], inventory, source_resolver)
+            findings.extend(result.findings)
         return EvidenceLintReport(mode=self.mode, findings=tuple(findings))
 
 

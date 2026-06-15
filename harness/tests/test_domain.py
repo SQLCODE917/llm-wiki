@@ -8,11 +8,20 @@ from llmwiki.domain.contradictions import (
     collapse_findings,
     select_contradiction_candidates,
 )
+from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.index import index_page_names, parse_index, upsert_index_entry
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
 from llmwiki.domain.pages import PageError, WikiPage, parse_page, render_page
 from llmwiki.domain.search import render_hits, search_pages
+
+
+class InMemorySourceResolver:
+    def __init__(self, sources: dict[str, str]) -> None:
+        self._sources = {path: tuple(text.splitlines()) for path, text in sources.items()}
+
+    def source_lines(self, source_path: str) -> tuple[str, ...] | None:
+        return self._sources.get(source_path)
 
 INDEX = """# Index
 
@@ -218,6 +227,77 @@ class TestCitations:
     def test_no_citations_is_valid_input(self) -> None:
         report = inspect_citations("alpha", "No evidence cited here yet.", self.INVENTORY)
         assert report == parse_citations("alpha", "No evidence cited here yet.")
+
+    def test_normalized_locator_exact_quoted_evidence_passes(self) -> None:
+        policy = EvidencePolicy(mode="fail")
+        resolver = InMemorySourceResolver({"raw/article.md": "Intro\nAlpha beta evidence.\nEnd"})
+        result = policy.check_page(
+            "alpha",
+            '"Alpha beta evidence." (raw/article.md normalized:L2)',
+            self.INVENTORY,
+            resolver,
+        )
+        assert result.allowed
+        assert result.findings == ()
+
+    def test_normalized_locator_canonicalized_local_warns(self) -> None:
+        policy = EvidencePolicy(mode="warn")
+        resolver = InMemorySourceResolver({"raw/article.md": "Intro\nAlpha   beta evidence.\nEnd"})
+        result = policy.check_page(
+            "alpha",
+            '"Alpha beta evidence." (raw/article.md normalized:L2)',
+            self.INVENTORY,
+            resolver,
+        )
+        assert [finding.code for finding in result.findings] == ["evidence-canonicalized"]
+        assert result.findings[0].severity == "warn"
+
+    def test_normalized_locator_global_match_warns_with_suggestion(self) -> None:
+        policy = EvidencePolicy(mode="warn")
+        resolver = InMemorySourceResolver({"raw/article.md": "Wrong line.\nElsewhere evidence."})
+        result = policy.check_page(
+            "alpha",
+            '"Elsewhere evidence." (raw/article.md normalized:L1)',
+            self.INVENTORY,
+            resolver,
+        )
+        assert [finding.code for finding in result.findings] == ["evidence-outside-locator"]
+        assert "Suggested locator: normalized:L2" in result.findings[0].message
+
+    def test_normalized_locator_out_of_range_fails(self) -> None:
+        policy = EvidencePolicy(mode="fail")
+        resolver = InMemorySourceResolver({"raw/article.md": "Only one line."})
+        result = policy.check_page(
+            "alpha",
+            '"Only one line." (raw/article.md normalized:L2)',
+            self.INVENTORY,
+            resolver,
+        )
+        assert [finding.code for finding in result.findings] == ["locator-out-of-range"]
+        assert not result.allowed
+
+    def test_normalized_locator_fabricated_quote_fails(self) -> None:
+        policy = EvidencePolicy(mode="fail")
+        resolver = InMemorySourceResolver({"raw/article.md": "Real source text."})
+        result = policy.check_page(
+            "alpha",
+            '"Fabricated quote." (raw/article.md normalized:L1)',
+            self.INVENTORY,
+            resolver,
+        )
+        assert [finding.code for finding in result.findings] == ["evidence-not-found"]
+        assert not result.allowed
+
+    def test_normalized_locator_table_cell_evidence(self) -> None:
+        policy = EvidencePolicy(mode="fail")
+        resolver = InMemorySourceResolver({"raw/article.md": "Table evidence text."})
+        result = policy.check_page(
+            "alpha",
+            "| Claim | Table evidence text. | raw/article.md normalized:L1 |",
+            self.INVENTORY,
+            resolver,
+        )
+        assert result.findings == ()
 
 
 class TestContradictions:

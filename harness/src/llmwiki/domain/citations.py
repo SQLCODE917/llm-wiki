@@ -1,10 +1,4 @@
-"""Deterministic parsing and validation for raw-source citations.
-
-The M5 wiki keeps citations lightweight: prose cites raw sources directly
-with forms like ``(raw/article.md)`` or ``(raw/book.pdf p.28-41)``. This
-module turns those spans into data for later write/lint gates without deciding
-policy itself.
-"""
+"""Deterministic parsing and validation for lightweight raw-source citations."""
 
 from __future__ import annotations
 
@@ -14,8 +8,19 @@ from dataclasses import dataclass, field
 from pathlib import PurePosixPath
 from typing import Literal
 
+from llmwiki.domain.citation_context import (
+    citation_caveats,
+    evidence_text_near_citation,
+    ocr_caveat_texts,
+)
+
 FindingSeverity = Literal["info", "warn", "fail"]
 FindingCode = Literal[
+    "evidence-canonicalized",
+    "evidence-not-found",
+    "evidence-outside-locator",
+    "invalid-locator",
+    "locator-out-of-range",
     "missing-source",
     "malformed-page-range",
     "malformed-line-range",
@@ -30,7 +35,6 @@ _RAW_CITATION_RE = re.compile(
 _PAGE_RANGE_RE = re.compile(r"^p\.(?P<start>[0-9]+)(?:-(?P<end>[0-9]+))?$")
 _LINE_RANGE_RE = re.compile(r"^normalized:L(?P<start>[0-9]+)(?:-L?(?P<end>[0-9]+))?$")
 _NORMALIZED_TOKEN_RE = re.compile(r"normalized:[^\s)\],;]+")
-_OCR_CAVEAT_RE = re.compile(r"\[figure text \(OCR, unverified\)(?::[^\]]*)?\]")
 
 
 @dataclass(frozen=True)
@@ -42,6 +46,7 @@ class Citation:
     raw_text: str
     page_range: tuple[int, int] | None = None
     line_range: tuple[int, int] | None = None
+    evidence_text: str | None = None
     caveat_flags: tuple[str, ...] = ()
 
 
@@ -120,7 +125,8 @@ def parse_citations(page_name: str, body: str) -> CitationReport:
             raw_text=raw_text,
             page_range=page_range,
             line_range=line_range,
-            caveat_flags=_citation_caveats(body, match.start(), match.end()),
+            evidence_text=evidence_text_near_citation(body, match.start(), match.end()),
+            caveat_flags=citation_caveats(body, match.start(), match.end()),
         )
         spans.append(_CitationSpan(citation=citation, start=match.start(), end=match.end()))
 
@@ -255,22 +261,12 @@ def _ocr_caveat_findings(page_name: str, body: str) -> tuple[CitationFinding, ..
         _finding(
             page_name,
             "warn",
-            match.group(0),
+            text,
             "ocr-verbatim-risk",
             "OCR caveat text may be used only as caveated evidence, not a verbatim quote.",
         )
-        for match in _OCR_CAVEAT_RE.finditer(body)
+        for text in ocr_caveat_texts(body)
     )
-
-
-def _citation_caveats(body: str, start: int, end: int) -> tuple[str, ...]:
-    line_start = body.rfind("\n", 0, start) + 1
-    line_end = body.find("\n", end)
-    if line_end == -1:
-        line_end = len(body)
-    if _OCR_CAVEAT_RE.search(body[line_start:line_end]):
-        return ("ocr-unverified",)
-    return ()
 
 
 def _finding(

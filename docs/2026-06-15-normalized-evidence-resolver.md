@@ -110,13 +110,20 @@ Report -> wiki-health: deterministic evidence section
 - Supported locator form: `raw/<path> normalized:L<start>-L<end>`.
 - Finding codes include at least `missing-source`, `invalid-locator`,
   `locator-out-of-range`, and `evidence-not-found`.
+- Implemented source lookup reads raw Markdown directly and reads PDF text from
+  the existing extraction cache (`harness/cache/*/manifest.json` plus chunk
+  files). No `raw/normalized` directory is introduced.
 
 ## Behavior & Domain Rules
 
 - Exact local match passes.
-- Canonicalized local match passes or warns, depending on confidence.
-- Global match outside the cited locator warns with a suggested locator.
-- No match fails in `fail` mode.
+- Canonicalized local match warns with `evidence-canonicalized`.
+- Global match outside the cited locator warns with
+  `evidence-outside-locator` and a suggested locator when possible.
+- No match fails with `evidence-not-found` in `fail` mode.
+- Ordinary prose citations without adjacent quoted or table-cell evidence still
+  validate only syntax, source existence, and locator range; this keeps
+  lightweight citations valid.
 
 Examples:
 
@@ -137,6 +144,16 @@ Examples:
 
 Performance: resolver source text should be loaded once per policy run where
 practical; correctness wins over caching complexity.
+
+Implementation note: `FileSourceTextResolver` caches source lines per policy
+run. `write_page` and lint/curator evidence reports pass it only when strict
+evidence mode is enabled.
+
+Verification note: a temp-root `curator-status --strict-evidence warn` reported
+the expected `evidence-not-found` finding for a fabricated quote at
+`raw/article.md normalized:L1`. A temp-root live `lint --strict-evidence warn`
+carried the finding through deterministic before/after verification. The real
+wiki currently reports 0 citation evidence findings in warn mode.
 
 ## Reference Implementations
 
