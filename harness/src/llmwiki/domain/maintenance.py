@@ -10,6 +10,7 @@ from dataclasses import dataclass
 from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.candidates import CandidateBacklog
 from llmwiki.domain.evidence import EvidenceLintReport
+from llmwiki.domain.graph import GraphStatus
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import PAGE_CATEGORIES, PageError, parse_page
 from llmwiki.domain.salience import SalienceReport
@@ -63,6 +64,7 @@ class CuratorStatus:
     salience_report: SalienceReport
     candidate_backlog: CandidateBacklog
     semantic_lint_summary: str
+    graph_status: GraphStatus | None
     recent_log_entries: tuple[str, ...]
     navigation_warnings: tuple[str, ...]
     recommended_actions: tuple[RecommendedAction, ...]
@@ -79,6 +81,7 @@ class CuratorStatus:
                 "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
                 "## Latest Semantic Lint\n\n"
                 + (self.semantic_lint_summary or "No semantic lint report."),
+                "## Graph Export\n\n" + _render_graph_status(self.graph_status),
                 "## Recent Log Entries\n\n" + _render_lines(self.recent_log_entries),
                 "## Navigation Warnings\n\n" + _render_lines(self.navigation_warnings),
                 "## Recommended Next Actions\n\n"
@@ -100,6 +103,7 @@ def build_curator_status(
     candidate_backlog: CandidateBacklog,
     strict_evidence: StrictEvidenceMode,
     semantic_lint_summary: str = "",
+    graph_status: GraphStatus | None = None,
     link_findings: LintFindings | None = None,
 ) -> CuratorStatus:
     if link_findings is None:
@@ -129,6 +133,7 @@ def build_curator_status(
         salience_report=salience_report,
         candidate_backlog=candidate_backlog,
         semantic_lint_summary=semantic_lint_summary,
+        graph_status=graph_status,
         recent_log_entries=tuple(recent_log_entries),
         navigation_warnings=navigation_warnings,
         recommended_actions=_recommended_actions(
@@ -235,6 +240,12 @@ def _render_lines(lines: Sequence[str]) -> str:
     if not lines:
         return "None."
     return "\n".join(f"- {line}" for line in lines)
+
+
+def _render_graph_status(status: GraphStatus | None) -> str:
+    if status is None:
+        return "Graph status not computed."
+    return status.render()
 
 
 def _present(value: bool) -> str:

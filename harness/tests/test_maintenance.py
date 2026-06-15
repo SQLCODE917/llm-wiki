@@ -6,6 +6,7 @@ import pytest
 
 from llmwiki.cli import _build_parser, _curator_report, _run
 from llmwiki.config import ConfigError, WikiPaths
+from llmwiki.domain.graph import build_wiki_graph
 from llmwiki.domain.index import empty_index
 from llmwiki.domain.pages import WikiPage, render_page
 from llmwiki.store import WikiStore
@@ -100,6 +101,21 @@ class TestCuratorReport:
         assert "## Latest Semantic Lint" in report
         assert "Audited items: 1" in report
         assert "category: synthesis" not in report
+
+    def test_curator_status_reports_graph_missing_and_current(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page("alpha", "See [[beta]]."))
+        store.write_page(_page("beta", "Back to [[alpha]]."))
+
+        missing = _curator_report(store, paths, "off")
+        store.write_graph_json(
+            build_wiki_graph(store.page_texts(), generated_date=TODAY).to_json_text()
+        )
+        current = _curator_report(store, paths, "off")
+
+        assert "Graph export: missing" in missing
+        assert "Graph export: current" in current
 
     def test_report_surfaces_citation_warnings(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(_page("alpha", "Claim cites a missing source. (raw/missing.md)"))
@@ -243,6 +259,37 @@ class TestCuratorCli:
             "No active candidate pages from explicit missing double-bracket links"
             in result.output
         )
+
+    async def test_graph_writes_artifact_and_log_without_backend(
+        self, store: WikiStore, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        def fail_backend(*args: object, **kwargs: object) -> NoReturn:
+            raise AssertionError("graph export must not load backend config")
+
+        monkeypatch.setattr("llmwiki.cli.load_backend_config", fail_backend)
+        monkeypatch.setattr("llmwiki.cli.start_backend", fail_backend)
+        store.write_page(_page("alpha", "See [[ghost]]."))
+        args = _build_parser().parse_args(["--root", str(paths.root), "graph"])
+
+        result = await _run(args)
+
+        assert result.op == "graph"
+        assert "Graph export: current" in result.output
+        assert "Unresolved edges: 1" in result.output
+        assert (paths.wiki_dir / "wiki-graph.json").exists()
+        assert "graph | wiki graph" in paths.log_path.read_text(encoding="utf-8")
+
+    async def test_graph_check_detects_stale_artifact(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page("alpha", "See [[beta]]."))
+        write_args = _build_parser().parse_args(["--root", str(paths.root), "graph"])
+        await _run(write_args)
+        store.write_page(_page("beta", "New page."))
+        check_args = _build_parser().parse_args(["--root", str(paths.root), "graph", "--check"])
+
+        with pytest.raises(ConfigError, match="stale"):
+            await _run(check_args)
 
     async def test_maintenance_creates_missing_navigation_files(self, paths: WikiPaths) -> None:
         paths.index_path.unlink()

@@ -72,6 +72,11 @@ class TestParser:
         args = _build_parser().parse_args(["semantic-lint"])
         assert args.max_items == DEFAULT_MAX_ITEMS
 
+    def test_graph_args(self) -> None:
+        args = _build_parser().parse_args(["graph", "--check"])
+        assert args.op == "graph"
+        assert args.check
+
     def test_strict_evidence_arg(self) -> None:
         args = _build_parser().parse_args(["lint", "--strict-evidence", "warn"])
         assert args.strict_evidence == "warn"

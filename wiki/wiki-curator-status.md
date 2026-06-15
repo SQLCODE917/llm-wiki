@@ -60,13 +60,21 @@ Skipped by cap: 72
 Max items: 2
 - Pages: [[partial-application]]
 
+## Graph Export
+
+Graph export: current
+Nodes: 75
+Edges: 107
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
+
 ## Recent Log Entries
 
-- ## [2026-06-15] maintenance | curator status
-- ## [2026-06-15] maintenance | curator status
 - ## [2026-06-15] semantic-lint | semantic audit
 - ## [2026-06-15] semantic-lint | semantic audit
 - ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] maintenance | curator status
+- ## [2026-06-15] graph | wiki graph
 
 ## Navigation Warnings
 

@@ -1,0 +1,1378 @@
+{
+  "edges": [
+    {
+      "resolved": true,
+      "source": "antikythera-mechanism",
+      "target": "corinth"
+    },
+    {
+      "resolved": true,
+      "source": "antikythera-mechanism",
+      "target": "saros-cycle"
+    },
+    {
+      "resolved": true,
+      "source": "archimedes",
+      "target": "antikythera-mechanism"
+    },
+    {
+      "resolved": true,
+      "source": "archimedes",
+      "target": "syracuse"
+    },
+    {
+      "resolved": true,
+      "source": "array-destructuring",
+      "target": "javascriptallonge-copy-on-write"
+    },
+    {
+      "resolved": true,
+      "source": "array-destructuring",
+      "target": "linked-lists"
+    },
+    {
+      "resolved": true,
+      "source": "arrays",
+      "target": "javascriptallonge-mutation"
+    },
+    {
+      "resolved": true,
+      "source": "combinator",
+      "target": "javascriptallonge-making-data-out-of-functions"
+    },
+    {
+      "resolved": true,
+      "source": "const",
+      "target": "javascriptallonge-chapter-5"
+    },
+    {
+      "resolved": true,
+      "source": "corinth",
+      "target": "antikythera-mechanism"
+    },
+    {
+      "resolved": true,
+      "source": "coroutine",
+      "target": "javascriptallonge-generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "eager-evaluation",
+      "target": "javascriptallonge-lazy-eager-collections"
+    },
+    {
+      "resolved": true,
+      "source": "floating-point-numbers",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "floating-point-numbers",
+      "target": "value-types"
+    },
+    {
+      "resolved": true,
+      "source": "function",
+      "target": "combinator"
+    },
+    {
+      "resolved": true,
+      "source": "function",
+      "target": "function-decorator"
+    },
+    {
+      "resolved": true,
+      "source": "functional-programming",
+      "target": "javascriptallonge-closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "generator",
+      "target": "coroutine"
+    },
+    {
+      "resolved": true,
+      "source": "generator",
+      "target": "iterable"
+    },
+    {
+      "resolved": true,
+      "source": "generator",
+      "target": "javascriptallonge-generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "iterable",
+      "target": "generator"
+    },
+    {
+      "resolved": true,
+      "source": "iterable",
+      "target": "javascriptallonge-generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascript",
+      "target": "javascriptallonge-closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "array-destructuring"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "arrays"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "combinator"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "const"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "ecmascript-2015"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "floyd-s-cycle-finding-algorithm"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "function"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "functional-data-structures"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "functional-iterators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "generator"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "iterable"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascript"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-chapter-5"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-composing-and-decomposing-data"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-copy-on-write"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-copyright-notice"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-frontend"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-garbage-garbage-everywhere"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-interactive-generators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-interlude-the-carpenter-interviews-for-a-job"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-lazy-eager-collections"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-making-data-out-of-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-mutation"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-naming-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-object-assign"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-recipes-with-basic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-self-similarity"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "linked-lists"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "mapping"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "object-destructuring"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "partial-application"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "reference-types"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "stateful-map"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "tortoise-and-hare-algorithm"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "unary-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "undefined"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-chapter-5",
+      "target": "const"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-chapter-5",
+      "target": "lexical-scoping"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-closures-and-scope",
+      "target": "closure"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-copyright-notice",
+      "target": "javascriptallonge"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-copyright-notice",
+      "target": "reg-raganwald-braithwaite"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-forewords-to-the-first-edition",
+      "target": "functional-programming"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-forewords-to-the-first-edition",
+      "target": "leanpub"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-forewords-to-the-first-edition",
+      "target": "matthew-knox"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-forewords-to-the-first-edition",
+      "target": "michael-fogus"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-lazy-eager-collections",
+      "target": "eager-evaluation"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-lazy-eager-collections",
+      "target": "lazy-evaluation"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "target": "logical-operators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "target": "ternary-operator"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "target": "truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "leanpub",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "left-variadic-functions",
+      "target": "javascriptallonge-recipes-with-basic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "lexical-scoping",
+      "target": "javascriptallonge-chapter-5"
+    },
+    {
+      "resolved": true,
+      "source": "linked-lists",
+      "target": "array-destructuring"
+    },
+    {
+      "resolved": true,
+      "source": "linked-lists",
+      "target": "arrays"
+    },
+    {
+      "resolved": true,
+      "source": "linked-lists",
+      "target": "javascriptallonge-copy-on-write"
+    },
+    {
+      "resolved": true,
+      "source": "logical-operators",
+      "target": "javascriptallonge-picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "mapping",
+      "target": "javascriptallonge-self-similarity"
+    },
+    {
+      "resolved": true,
+      "source": "mapwith-and-flip",
+      "target": "javascriptallonge-making-data-out-of-functions"
+    },
+    {
+      "resolved": true,
+      "source": "matthew-knox",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "michael-fogus",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "nan",
+      "target": "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "nan",
+      "target": "void"
+    },
+    {
+      "resolved": true,
+      "source": "node-js",
+      "target": "javascript"
+    },
+    {
+      "resolved": true,
+      "source": "node-js",
+      "target": "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "object-assign",
+      "target": "javascriptallonge-object-assign"
+    },
+    {
+      "resolved": true,
+      "source": "ordered-collection",
+      "target": "javascriptallonge-iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "partial-application",
+      "target": "javascriptallonge-recipes-with-basic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "quasi-literals",
+      "target": "javascriptallonge-object-assign"
+    },
+    {
+      "resolved": true,
+      "source": "reference-types",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "reg-raganwald-braithwaite",
+      "target": "javascriptallonge-copyright-notice"
+    },
+    {
+      "resolved": true,
+      "source": "saros-cycle",
+      "target": "antikythera-mechanism"
+    },
+    {
+      "resolved": true,
+      "source": "syracuse",
+      "target": "antikythera-mechanism"
+    },
+    {
+      "resolved": true,
+      "source": "syracuse",
+      "target": "archimedes"
+    },
+    {
+      "resolved": true,
+      "source": "ternary-operator",
+      "target": "javascriptallonge-picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "truthiness",
+      "target": "javascriptallonge-picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "unary-functions",
+      "target": "javascriptallonge-recipes-with-basic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "value-types",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    }
+  ],
+  "metadata": {
+    "generated_date": "2026-06-15",
+    "generator": "llmwiki.graph.v1",
+    "schema_version": 1,
+    "system_pages": "excluded"
+  },
+  "nodes": [
+    {
+      "category": "source",
+      "name": "antikythera-mechanism",
+      "outbound_links": [
+        "corinth",
+        "saros-cycle"
+      ],
+      "sources": [
+        "raw/antikythera-mechanism.md"
+      ],
+      "summary": "The oldest known analog computer, an ancient Greek device for tracking astronomical events."
+    },
+    {
+      "category": "entity",
+      "name": "archimedes",
+      "outbound_links": [
+        "antikythera-mechanism",
+        "syracuse"
+      ],
+      "sources": [
+        "raw/antikythera-mechanism.md"
+      ],
+      "summary": "Ancient Greek mathematician and engineer, known for inventions like the Archimedean screw and principles of buoyancy."
+    },
+    {
+      "category": "concept",
+      "name": "array-destructuring",
+      "outbound_links": [
+        "javascriptallonge-copy-on-write",
+        "linked-lists"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf",
+        "raw/javascriptallonge.pdf p.158-176"
+      ],
+      "summary": "Array destructuring creates a copy of elements, unlike linked list structure sharing which references the same nodes. See (raw/javascriptallonge.pdf p.158-176) for copy-on-write strategies."
+    },
+    {
+      "category": "concept",
+      "name": "arrays",
+      "outbound_links": [
+        "javascriptallonge-mutation"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.141-157"
+      ],
+      "summary": "JavaScript arrays allow mutation via element reassignment even with `const`, and destructuring creates copies (unlike linked lists)."
+    },
+    {
+      "category": "entity",
+      "name": "axel-rauschmayer",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Author of \"Exploring ES6\" and foreword for JavaScript Allong\u00e9's Six Edition."
+    },
+    {
+      "category": "concept",
+      "name": "call-by-value",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's evaluation strategy where arguments are evaluated before passing, with reference types sharing values (call-by-sharing)."
+    },
+    {
+      "category": "concept",
+      "name": "closure",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "A function or block that captures and retains references to variables from its lexical scope."
+    },
+    {
+      "category": "concept",
+      "name": "combinator",
+      "outbound_links": [
+        "javascriptallonge-making-data-out-of-functions"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Combinators like K (Kestrel), I (Idiot Bird), and V (Vireo) enable creating functions that manipulate data without arrays/objects. Used in functional programming for data structure creation."
+    },
+    {
+      "category": "concept",
+      "name": "const",
+      "outbound_links": [
+        "javascriptallonge-chapter-5"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.49-61"
+      ],
+      "summary": "JavaScript's block-scoped variable declaration that prevents reassignment but allows shadowing in nested blocks."
+    },
+    {
+      "category": "entity",
+      "name": "corinth",
+      "outbound_links": [
+        "antikythera-mechanism"
+      ],
+      "sources": [
+        "raw/antikythera-mechanism.md"
+      ],
+      "summary": "Ancient Greek city-state in the Peloponnese, known for its strategic location and historical significance."
+    },
+    {
+      "category": "concept",
+      "name": "coroutine",
+      "outbound_links": [
+        "javascriptallonge-generating-iterables"
+      ],
+      "sources": [
+        "javascriptallonge.pdf p.224-245"
+      ],
+      "summary": "A computational construct enabling suspension and resumption of execution, implemented via JavaScript generators."
+    },
+    {
+      "category": "concept",
+      "name": "eager-evaluation",
+      "outbound_links": [
+        "javascriptallonge-lazy-eager-collections"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Describes eager evaluation in JavaScript, where operations on collections are processed immediately, creating new data structures at each step."
+    },
+    {
+      "category": "concept",
+      "name": "ecmascript-2015",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "ECMAScript 2015 (ES6) language features and their impact on JavaScript."
+    },
+    {
+      "category": "concept",
+      "name": "floating-point-numbers",
+      "outbound_links": [
+        "javascriptallonge-forewords-to-the-first-edition",
+        "value-types"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's representation of real numbers using IEEE 754 standard, with precision limitations."
+    },
+    {
+      "category": "concept",
+      "name": "floyd-s-cycle-finding-algorithm",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Algorithm for detecting cycles in a sequence using two pointers."
+    },
+    {
+      "category": "concept",
+      "name": "function",
+      "outbound_links": [
+        "combinator",
+        "function-decorator"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript functions, pure functions, closures, and declaration hoisting."
+    },
+    {
+      "category": "concept",
+      "name": "function-decorator",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Higher-order functions that modify or wrap another function's behavior."
+    },
+    {
+      "category": "concept",
+      "name": "functional-data-structures",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Immutable data structures that persist previous states upon modification."
+    },
+    {
+      "category": "concept",
+      "name": "functional-iterators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Iterators that process collections in a functional programming style."
+    },
+    {
+      "category": "concept",
+      "name": "functional-programming",
+      "outbound_links": [
+        "javascriptallonge-closures-and-scope"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Functional programming concepts including closures and scope chains in JavaScript."
+    },
+    {
+      "category": "entity",
+      "name": "generator",
+      "outbound_links": [
+        "coroutine",
+        "iterable",
+        "javascriptallonge-generating-iterables"
+      ],
+      "sources": [
+        "javascriptallonge.pdf p.224-245"
+      ],
+      "summary": "A function that produces values via yield, enabling coroutine-like behavior in JavaScript."
+    },
+    {
+      "category": "concept",
+      "name": "iterable",
+      "outbound_links": [
+        "generator",
+        "javascriptallonge-generating-iterables"
+      ],
+      "sources": [
+        "javascriptallonge.pdf",
+        "javascriptallonge.pdf p.224-245"
+      ],
+      "summary": "Defines iterables in JavaScript via Symbol.iterator, with emphasis on generator-based implementations."
+    },
+    {
+      "category": "entity",
+      "name": "javascript",
+      "outbound_links": [
+        "javascriptallonge-closures-and-scope"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript features including closures, scope chains, and global environment isolation."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge",
+      "outbound_links": [
+        "array-destructuring",
+        "arrays",
+        "combinator",
+        "const",
+        "ecmascript-2015",
+        "floyd-s-cycle-finding-algorithm",
+        "function",
+        "functional-data-structures",
+        "functional-iterators",
+        "generator",
+        "iterable",
+        "javascript",
+        "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+        "javascriptallonge-chapter-5",
+        "javascriptallonge-closures-and-scope",
+        "javascriptallonge-composing-and-decomposing-data",
+        "javascriptallonge-copy-on-write",
+        "javascriptallonge-copyright-notice",
+        "javascriptallonge-forewords-to-the-first-edition",
+        "javascriptallonge-frontend",
+        "javascriptallonge-garbage-garbage-everywhere",
+        "javascriptallonge-generating-iterables",
+        "javascriptallonge-interactive-generators",
+        "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+        "javascriptallonge-iteration-and-iterables",
+        "javascriptallonge-lazy-eager-collections",
+        "javascriptallonge-making-data-out-of-functions",
+        "javascriptallonge-mutation",
+        "javascriptallonge-naming-functions",
+        "javascriptallonge-object-assign",
+        "javascriptallonge-picking-the-bean-choice-and-truthiness",
+        "javascriptallonge-recipes-with-basic-functions",
+        "javascriptallonge-self-similarity",
+        "linked-lists",
+        "mapping",
+        "object-destructuring",
+        "partial-application",
+        "reference-types",
+        "stateful-map",
+        "tortoise-and-hare-algorithm",
+        "unary-functions",
+        "undefined"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Hub page for JavaScript Allong\u00e9, summarizing the entire book and linking to chapter-specific source pages."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript functions as values, reference types, and function application mechanics (pages 30-43)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-chapter-5",
+      "outbound_links": [
+        "const",
+        "lexical-scoping"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.49-61"
+      ],
+      "summary": "Explains JavaScript's const keyword, lexical scoping, and function binding patterns like IIFEs."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-closures-and-scope",
+      "outbound_links": [
+        "closure"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript closures, scope chains, pure functions, and environment hierarchy (pages 44-48)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-composing-and-decomposing-data",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Chapter on composing and decomposing data in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-copy-on-write",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Explains copy-on-write strategy for linked lists vs arrays, structure sharing, and trade-offs with copy-on-read. Includes code examples and the tortoise-and-hare loop detection algorithm."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-copyright-notice",
+      "outbound_links": [
+        "javascriptallonge",
+        "reg-raganwald-braithwaite"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Copyright information for *JavaScript Allonge*, including authorship, image credits, and licensing details (raw/javascriptallonge.pdf p.293-297)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-forewords-to-the-first-edition",
+      "outbound_links": [
+        "functional-programming",
+        "leanpub",
+        "matthew-knox",
+        "michael-fogus"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Forewords to the first edition of JavaScript Allong\u00e9 by Michael Fogus and Matthew Knox, discussing the Leanpub model and book content."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-frontend",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Front matter of JavaScript Allong\u00e9, including prefaces, table of contents, and author information."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-garbage-garbage-everywhere",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Analysis of JavaScript array recursion inefficiency, comparison to Lisp's linked lists, and object-based cons cell implementations. sources: raw/javascriptallonge.pdf p.126-140"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-generating-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Updated to include interactive generators and stateful function examples from the Naughts and Crosses game."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-interactive-generators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Explores interactive generators for stateful functions, using Naughts and Crosses as an example, and operations on iterables (map, filter, zip, etc.)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "A chapter where The Carpenter solves a cycle detection problem using iterables and Floyd's algorithm during a job interview."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-iteration-and-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Updated to include iterable operations from the chunk: mapWith, filterWith, zip, zipWith, memoize, and reduceWith."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-lazy-eager-collections",
+      "outbound_links": [
+        "eager-evaluation",
+        "lazy-evaluation"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Discusses lazy and eager collections in JavaScript, their implementations via iterators, and efficiency tradeoffs between on-demand computation and immediate data processing."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-making-data-out-of-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Explores using combinators (K, I, V) and functions to create data structures like lists and pairs, avoiding arrays/objects. Introduces mapWith and flip functions."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-mutation",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript mutation mechanics: array/object mutation, aliases, const/let reassignment, and var pitfalls (pages 141-157)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-naming-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript function naming conventions, declarations, and combinators (pages 62-78)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-object-assign",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript Object.assign method for shallow cloning and merging objects (pages 198-205)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-picking-the-bean",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Chapter on picking the bean pattern in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "outbound_links": [
+        "logical-operators",
+        "ternary-operator",
+        "truthiness"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's truthiness, logical operators (!, &&, ||), ternary operator, and control-flow semantics explained with examples."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-recipes-with-basic-functions",
+      "outbound_links": [],
+      "sources": [
+        "javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript functional programming recipes: partial application, unary functions, tap, maybe, once, and left-variadic functions."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-self-similarity",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Chapter on self-similar data structures in JavaScript."
+    },
+    {
+      "category": "concept",
+      "name": "lazy-evaluation",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Evaluation strategy where expressions are evaluated only when needed."
+    },
+    {
+      "category": "concept",
+      "name": "leanpub",
+      "outbound_links": [
+        "javascriptallonge-forewords-to-the-first-edition"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "A publishing platform enabling iterative book development with reader feedback."
+    },
+    {
+      "category": "concept",
+      "name": "left-variadic-functions",
+      "outbound_links": [
+        "javascriptallonge-recipes-with-basic-functions"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript functions that accept a variable number of arguments, with the first argument fixed and the rest collected in an array."
+    },
+    {
+      "category": "concept",
+      "name": "lexical-scoping",
+      "outbound_links": [
+        "javascriptallonge-chapter-5"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.49-61"
+      ],
+      "summary": "JavaScript's mechanism for resolving variable names based on their position in the source code, rather than runtime context."
+    },
+    {
+      "category": "concept",
+      "name": "linked-lists",
+      "outbound_links": [
+        "array-destructuring",
+        "arrays",
+        "javascriptallonge-copy-on-write"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf",
+        "raw/javascriptallonge.pdf p.158-176"
+      ],
+      "summary": "JavaScript linked lists use structure sharing, where mutation of one alias affects all shared nodes. Contrast with array destructuring which creates copies. See (raw/javascriptallonge.pdf p.158-176) for copy-on-write strategies."
+    },
+    {
+      "category": "concept",
+      "name": "logical-operators",
+      "outbound_links": [
+        "javascriptallonge-picking-the-bean-choice-and-truthiness"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's logical operators (!, &&, ||) that operate on truthiness rather than strict booleans."
+    },
+    {
+      "category": "concept",
+      "name": "mapping",
+      "outbound_links": [
+        "javascriptallonge-self-similarity"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.109-125"
+      ],
+      "summary": "Applying a function to each element of a data structure."
+    },
+    {
+      "category": "concept",
+      "name": "mapwith-and-flip",
+      "outbound_links": [
+        "javascriptallonge-making-data-out-of-functions"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "mapWith curries functions for data transformation, while flip reverses argument order. Both enable functional programming patterns in JavaScript."
+    },
+    {
+      "category": "entity",
+      "name": "matthew-knox",
+      "outbound_links": [
+        "javascriptallonge-forewords-to-the-first-edition"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Software developer and author who praised JavaScript Allong\u00e9's exploration of JavaScript's depth."
+    },
+    {
+      "category": "entity",
+      "name": "michael-fogus",
+      "outbound_links": [
+        "javascriptallonge-forewords-to-the-first-edition"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Software developer and author known for advocating functional programming."
+    },
+    {
+      "category": "entity",
+      "name": "nan",
+      "outbound_links": [
+        "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+        "void"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript value representing an invalid or undefined numerical result."
+    },
+    {
+      "category": "entity",
+      "name": "node-js",
+      "outbound_links": [
+        "javascript",
+        "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript runtime environment for server-side and CLI applications."
+    },
+    {
+      "category": "concept",
+      "name": "object-assign",
+      "outbound_links": [
+        "javascriptallonge-object-assign"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's Object.assign() method for shallow cloning and merging objects."
+    },
+    {
+      "category": "concept",
+      "name": "object-destructuring",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript object destructuring syntax and examples, including compact method syntax. sources: raw/javascriptallonge.pdf p.126-140"
+    },
+    {
+      "category": "concept",
+      "name": "ordered-collection",
+      "outbound_links": [
+        "javascriptallonge-iteration-and-iterables"
+      ],
+      "sources": [
+        "javascriptallonge.pdf"
+      ],
+      "summary": "Describes ordered collections in JavaScript, which reset iteration on each access and support operations like mapWith."
+    },
+    {
+      "category": "concept",
+      "name": "partial-application",
+      "outbound_links": [
+        "javascriptallonge-recipes-with-basic-functions"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Partial application in JavaScript, where a function is called with fewer arguments than it expects, returning a new function."
+    },
+    {
+      "category": "concept",
+      "name": "quasi-literals",
+      "outbound_links": [
+        "javascriptallonge-object-assign"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript template strings with backticks and interpolation using ${expression}."
+    },
+    {
+      "category": "concept",
+      "name": "reference-types",
+      "outbound_links": [
+        "javascriptallonge-forewords-to-the-first-edition"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Non-primitive data types in JavaScript compared by reference identity."
+    },
+    {
+      "category": "entity",
+      "name": "reg-raganwald-braithwaite",
+      "outbound_links": [
+        "javascriptallonge-copyright-notice"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Reginald Braithwaite, software developer and author of *JavaScript Allonge*, known for functional programming and JavaScript."
+    },
+    {
+      "category": "concept",
+      "name": "saros-cycle",
+      "outbound_links": [
+        "antikythera-mechanism"
+      ],
+      "sources": [
+        "antikythera-mechanism"
+      ],
+      "summary": "An 18-year astronomical period used to predict recurring solar and lunar eclipses."
+    },
+    {
+      "category": "concept",
+      "name": "stateful-map",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "A lazy mapping technique that preserves state between iterations, used to track position in the chequer game problem."
+    },
+    {
+      "category": "entity",
+      "name": "syracuse",
+      "outbound_links": [
+        "antikythera-mechanism",
+        "archimedes"
+      ],
+      "sources": [
+        "raw/antikythera-mechanism.md"
+      ],
+      "summary": "Ancient Greek city-state in Sicily, renowned as the birthplace of Archimedes and a center of engineering."
+    },
+    {
+      "category": "concept",
+      "name": "ternary-operator",
+      "outbound_links": [
+        "javascriptallonge-picking-the-bean-choice-and-truthiness"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's ternary operator (? :) as a control-flow expression for conditional assignments."
+    },
+    {
+      "category": "concept",
+      "name": "tortoise-and-hare-algorithm",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf",
+        "raw/javascriptallonge.pdf p.158-176"
+      ],
+      "summary": "Algorithm to detect loops in linked lists using two pointers (tortoise and hare). See (raw/javascriptallonge.pdf p.158-176) for implementation details."
+    },
+    {
+      "category": "concept",
+      "name": "truthiness",
+      "outbound_links": [
+        "javascriptallonge-picking-the-bean-choice-and-truthiness"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript's truthiness and falsiness, where values are evaluated as true or false in boolean contexts."
+    },
+    {
+      "category": "concept",
+      "name": "unary-functions",
+      "outbound_links": [
+        "javascriptallonge-recipes-with-basic-functions"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Unary functions in JavaScript, which accept exactly one argument, enforced via decorators."
+    },
+    {
+      "category": "entity",
+      "name": "undefined",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript value representing the absence of a defined value; distinct from SQL NULL."
+    },
+    {
+      "category": "concept",
+      "name": "value-types",
+      "outbound_links": [
+        "javascriptallonge-forewords-to-the-first-edition"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Primitive data types in JavaScript compared by value equality."
+    },
+    {
+      "category": "concept",
+      "name": "void",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "A type of value representing the absence of any value or object."
+    }
+  ]
+}

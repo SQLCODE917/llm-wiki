@@ -60,6 +60,10 @@ class WikiPaths:
         return self.wiki_dir / "wiki-candidates.json"
 
     @property
+    def graph_path(self) -> Path:
+        return self.wiki_dir / "wiki-graph.json"
+
+    @property
     def runs_dir(self) -> Path:
         return self.root / "harness" / "runs"
 

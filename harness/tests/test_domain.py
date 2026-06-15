@@ -16,6 +16,7 @@ from llmwiki.domain.contradictions import (
     select_contradiction_candidates,
 )
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import (
     ClaimCandidate,
     GroundingAuditReport,
@@ -352,6 +353,55 @@ class TestLinks:
         )
         assert findings.broken_links == {}
         assert findings.orphan_pages == ("alpha",)
+
+
+class TestGraph:
+    def test_graph_output_is_deterministic_and_excludes_system_pages(self) -> None:
+        pages = {
+            "alpha": render_page(
+                WikiPage(
+                    "alpha",
+                    "concept",
+                    "Alpha summary.",
+                    "See [[beta]].",
+                    sources=("article.md",),
+                )
+            ),
+            "beta": render_page(WikiPage("beta", "entity", "Beta summary.", "Back.")),
+            "wiki-health": render_page(
+                WikiPage("wiki-health", "synthesis", "Report.", "Links [[ghost]].")
+            ),
+        }
+
+        first = build_wiki_graph(pages, generated_date="2026-06-15")
+        second = build_wiki_graph(pages, generated_date="2026-06-15")
+
+        assert first.to_json_text() == second.to_json_text()
+        assert [node.name for node in first.nodes] == ["alpha", "beta"]
+        assert first.edges[0].source == "alpha"
+        assert first.edges[0].target == "beta"
+        assert first.edges[0].resolved
+
+    def test_graph_represents_unresolved_edges(self) -> None:
+        pages = {"alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[ghost]]."))}
+
+        graph = build_wiki_graph(pages, generated_date="2026-06-15")
+
+        assert len(graph.edges) == 1
+        assert graph.edges[0].target == "ghost"
+        assert not graph.edges[0].resolved
+
+    def test_graph_status_ignores_generated_date_but_detects_stale_content(self) -> None:
+        pages = {"alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[beta]]."))}
+        graph = build_wiki_graph(pages, generated_date="2026-06-15")
+        same_graph_new_date = build_wiki_graph(pages, generated_date="2026-06-16")
+        changed_graph = build_wiki_graph(
+            {"alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[gamma]]."))},
+            generated_date="2026-06-16",
+        )
+
+        assert graph_status(same_graph_new_date, graph.to_json_text()).status == "current"
+        assert graph_status(changed_graph, graph.to_json_text()).status == "stale"
 
 
 class TestCitations:

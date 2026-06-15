@@ -132,6 +132,14 @@ class WikiStore:
     def write_candidate_backlog(self, backlog: CandidateBacklog) -> None:
         self._paths.candidates_path.write_text(backlog.to_json_text(), encoding="utf-8")
 
+    def read_graph_json(self) -> str | None:
+        if not self._paths.graph_path.exists():
+            return None
+        return self._paths.graph_path.read_text(encoding="utf-8")
+
+    def write_graph_json(self, text: str) -> None:
+        self._paths.graph_path.write_text(text, encoding="utf-8")
+
     # -- navigation files ----------------------------------------------------
 
     def read_index(self) -> str:

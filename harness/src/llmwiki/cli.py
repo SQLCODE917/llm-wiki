@@ -29,6 +29,7 @@ from llmwiki.domain.candidates import (
 )
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
 from llmwiki.domain.index import index_page_names
 from llmwiki.domain.links import compute_findings
@@ -147,6 +148,13 @@ def _build_parser() -> argparse.ArgumentParser:
         help=f"Maximum semantic lint items to audit (default: {DEFAULT_MAX_ITEMS}).",
     )
 
+    graph = sub.add_parser("graph", help="Write or check the deterministic wiki graph export.")
+    graph.add_argument(
+        "--check",
+        action="store_true",
+        help="Fail if wiki/wiki-graph.json is missing, invalid, or stale.",
+    )
+
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
     _add_strict_evidence_arg(chat)
     chat.add_argument(
@@ -193,6 +201,9 @@ async def _run(args: argparse.Namespace) -> OperationResult:
     if args.op == "candidates":
         paths.validate_status()
         return _run_candidates(args, paths, now.date().isoformat())
+    if args.op == "graph":
+        paths.validate_status()
+        return _run_graph(args, paths, now.date().isoformat())
 
     if args.op == "contradictions":
         return await _run_contradictions(args, paths, now)
@@ -409,6 +420,10 @@ def _curator_report(
         candidate_backlog=candidate_backlog,
         strict_evidence=strict_evidence,
         semantic_lint_summary=_semantic_lint_summary(store),
+        graph_status=graph_status(
+            build_wiki_graph(page_texts, generated_date=today or "status-check"),
+            store.read_graph_json(),
+        ),
         link_findings=link_findings,
     )
     return status.render()
@@ -424,6 +439,22 @@ def _semantic_lint_summary(store: WikiStore) -> str:
         if line.strip() and not line.startswith("---") and not line.startswith("#")
     ]
     return "\n".join(lines[:5])
+
+
+def _run_graph(args: argparse.Namespace, paths: WikiPaths, today: str) -> OperationResult:
+    store = WikiStore(paths)
+    graph = build_wiki_graph(store.page_texts(), generated_date=today)
+    status = graph_status(graph, store.read_graph_json())
+    if args.check:
+        if not status.is_current:
+            raise ConfigError(status.render())
+        return OperationResult("graph", "wiki graph", status.render(), None)
+    store.write_graph_json(graph.to_json_text())
+    store.ensure_navigation_files()
+    status = graph_status(graph, store.read_graph_json())
+    report = status.render()
+    store.append_log(today, "graph", "wiki graph", report)
+    return OperationResult("graph", "wiki graph", report, None)
 
 
 def _run_candidates(args: argparse.Namespace, paths: WikiPaths, today: str) -> OperationResult:

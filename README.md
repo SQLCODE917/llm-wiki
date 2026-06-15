@@ -111,6 +111,19 @@ deterministic missing-link signals, files the same report as
 these commands repair pages; use `lint` when you want the model to inspect and
 edit.
 
+**Graph export** — deterministic machine-readable wiki graph:
+
+```bash
+uv run llmwiki graph
+uv run llmwiki graph --check
+```
+
+`graph` writes `wiki/wiki-graph.json` from current page frontmatter and
+double-bracket links, then appends a `graph` entry to `wiki/log.md`.
+`--check` fails if the artifact is missing, invalid, or stale. System report
+pages are excluded so the export reflects the content wiki, not maintenance
+reports.
+
 **Contradictions** — bounded semantic audit:
 
 ```bash
@@ -199,6 +212,7 @@ chronologically.
 | Contradiction detection | `docs/2026-06-14-contradiction-detection.md` | Bounded model-assisted audits through `llmwiki contradictions`; files structured reports without auto-resolving conflicts. |
 | Grounding claim audit | `docs/2026-06-15-grounding-claim-audit.md` | Bounded model-assisted support checks for selected cited claims; files `wiki-grounding` without rewriting content pages. |
 | Semantic lint | `docs/2026-06-15-semantic-lint-stale-and-data-gaps.md` | Bounded model-assisted leads for stale claims, possible supersessions, and data gaps; files `wiki-semantic-lint`. |
+| Wiki graph export | `docs/2026-06-15-wiki-graph-export.md` | Deterministic `wiki/wiki-graph.json` export plus `llmwiki graph --check` and curator-status freshness reporting. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
@@ -239,6 +253,8 @@ mode we hit.
 - **`wiki/wiki-candidates.json` is bookkeeping, not wiki knowledge.** It is
   refreshed from explicit missing `[[links]]`; general mention-only candidate
   discovery is deferred until its precision can be measured.
+- **`wiki/wiki-graph.json` is derived bookkeeping.** Regenerate it with
+  `uv run llmwiki graph`; check freshness with `uv run llmwiki graph --check`.
 - **`wiki-contradictions` is rewritten each contradiction audit.** The audit
   is bounded by candidate-pair selection and is not proof that no other
   contradictions exist.

@@ -145,3 +145,33 @@ changes.
 
 - If the graph artifact name conflicts with Obsidian or existing wiki pages,
   stop and choose a different harness-owned filename.
+
+## Implementation Notes
+
+- Implemented `uv run llmwiki graph` and `uv run llmwiki graph --check`.
+- Added deterministic graph building in `llmwiki.domain.graph`.
+- The artifact path is `wiki/wiki-graph.json`.
+- The graph includes content-page nodes, resolved/unresolved edges, and
+  metadata: schema version, generator, generated date, and system-page policy.
+- Harness-owned system report pages are excluded from the graph so reports do
+  not reshape the content graph.
+- `--check` compares graph content while ignoring generated date, so a graph
+  does not become stale merely because the date changed.
+- Curator status reports graph missing/current/stale/invalid.
+
+## Verification Plan
+
+- Unit tests for deterministic output, unresolved edges, generated-date-insensitive
+  status checks, and system-page exclusion.
+- CLI tests for `graph`, `graph --check`, stale detection, and no-backend
+  operation.
+- Live `uv run llmwiki graph`, `uv run llmwiki graph --check`, and
+  `uv run llmwiki maintenance` over the current wiki.
+
+## Verification Results
+
+- Focused graph/domain/maintenance/parser tests pass.
+- Live `uv run llmwiki graph` wrote `wiki/wiki-graph.json` with 75 nodes,
+  107 edges, and 0 unresolved edges.
+- Live `uv run llmwiki graph --check` passed.
+- The graph refresh appended a `graph | wiki graph` entry to `wiki/log.md`.
