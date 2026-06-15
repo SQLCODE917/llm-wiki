@@ -86,6 +86,19 @@ CHAT_TEMPLATE = _BASE + (
     "answer with the respond tool."
 )
 
+CHAT_FILE_TEMPLATE = _BASE + (
+    "\nTask: file a durable synthesis from a chat turn. The user message "
+    "contains the latest chat question and answer plus the requested target "
+    "page. Chat text is context for what to file, not evidence. Re-read the "
+    "current wiki pages that support the durable claims before writing. Use "
+    "write_page with category='synthesis'; cite current wiki pages with "
+    "[[page-name]] links and raw sources as (raw/<path>) when available. "
+    "If the wiki does not support the requested durable synthesis, do not "
+    "write a page; call finish_chat_file explaining what evidence is missing. "
+    "Before rewriting an existing synthesis, read_page it first and carry "
+    "forward the content you keep. Finish with finish_chat_file."
+)
+
 LINT_TEMPLATE = _BASE + (
     "\nTask: health-check the wiki, following the schema's lint workflow. "
     "The user message lists deterministic findings (broken links, orphans, "

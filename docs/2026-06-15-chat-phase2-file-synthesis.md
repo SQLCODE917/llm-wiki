@@ -109,6 +109,8 @@ Model -> write_page: replacement carrying forward kept content
 ## APIs / Interfaces
 
 - `llmwiki chat` gains a filing interface.
+- Implemented as `/file <page-name> [scope]`, which files the latest completed
+  chat answer into a dedicated `chat-file` workflow.
 - Filing workflow exposes `search_wiki`, `read_index`, `read_page`,
   `write_page`, and a terminal finish tool.
 - The file workflow receives the current turn text and selected prior Q/A pairs
@@ -120,6 +122,9 @@ Model -> write_page: replacement carrying forward kept content
 - A durable synthesis must cite wiki/raw evidence.
 - If current wiki evidence is insufficient, the filed page must say so or the
   model must decline to file.
+- `write_page.sources` is raw-source metadata. The chat filing write gate
+  rejects wiki page slugs in `sources`; wiki pages must be cited in the body
+  with `[[page-name]]`.
 
 Examples:
 
@@ -142,6 +147,11 @@ Examples:
 
 Observability: filed chat runs write transcripts like other workflows, tagged so
 the page write can be traced to the chat turn.
+
+Live verification note: the first smoke run successfully wrote a page but put
+wiki page names in `sources`. The implementation now rejects that shape and the
+second smoke run produced a synthesis with `sources: raw/javascriptallonge.pdf`,
+body citations, an index entry, and a `chat-file` log entry.
 
 ## Reference Implementations
 

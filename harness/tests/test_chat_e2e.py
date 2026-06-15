@@ -12,7 +12,7 @@ from llmwiki.runtime.chat_repl import ChatRepl
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 from llmwiki.store.chat_store import ChatStore
-from llmwiki.workflows import build_chat_workflow
+from llmwiki.workflows import build_chat_file_workflow, build_chat_workflow
 
 TODAY = "2026-06-12"
 
@@ -50,6 +50,12 @@ class TestChatWorkflow:
         # A required-search step was removed on live evidence: it interrupted
         # a correct index-first flow and the forced junk search won by recency.
         assert build_chat_workflow(store).required_steps == []
+
+    def test_chat_file_workflow_is_explicit_write_path(self, store: WikiStore) -> None:
+        workflow = build_chat_file_workflow(store, TODAY)
+        assert "write_page" in workflow.tools
+        assert "finish_chat_file" in workflow.tools
+        assert workflow.required_steps == ["read_page"]
 
     async def test_grounded_turn_carries_index_so_coverage_answers_work(
         self, store: WikiStore, paths: WikiPaths
@@ -121,6 +127,161 @@ class TestChatTurn:
         assert "say that shorter" in sent[-1]["content"]
 
 
+class TestChatFile:
+    async def test_files_latest_answer_as_synthesis(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        _seed_wiki(store)
+        script = [
+            [ToolCall(tool="search_wiki", args={"query": "closure"})],
+            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "closure-summary",
+                        "category": "synthesis",
+                        "summary": "Durable chat synthesis about closures.",
+                        "content": "Closures preserve scope; see [[closure]].",
+                        "sources": [],
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_chat_file", args={"report": "Filed [[closure-summary]]."})],
+        ]
+        session = _session(store, script, paths)
+        result = await session.file_chat_synthesis(
+            page_name="closure-summary",
+            question="explain closures",
+            answer="Closures preserve scope.",
+            scope="short durable note",
+        )
+
+        assert result.output == "Filed [[closure-summary]]."
+        assert "Closures preserve scope" in store.read_page("closure-summary")
+        assert "[[closure-summary]] — Durable chat synthesis about closures." in store.read_index()
+        assert f"## [{TODAY}] chat-file | closure-summary" in paths.log_path.read_text()
+
+    async def test_existing_page_filing_requires_read_before_rewrite(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="closure-summary",
+                category="synthesis",
+                summary="Original.",
+                body="Old sentence.",
+                updated=TODAY,
+            )
+        )
+        script = [
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "closure-summary",
+                        "category": "synthesis",
+                        "summary": "Blind.",
+                        "content": "Blind rewrite [[closure]].",
+                        "sources": [],
+                    },
+                )
+            ],
+            [ToolCall(tool="read_page", args={"name": "closure-summary"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "closure-summary",
+                        "category": "synthesis",
+                        "summary": "Updated.",
+                        "content": "Old sentence.\n\nNew closure synthesis links [[closure]].",
+                        "sources": [],
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_chat_file", args={"report": "Updated page."})],
+        ]
+        await _session(store, script, paths).file_chat_synthesis(
+            page_name="closure-summary",
+            question="make this durable",
+            answer="New closure synthesis",
+        )
+
+        page = store.read_page("closure-summary")
+        assert "Old sentence." in page
+        assert "New closure synthesis" in page
+        assert "Blind rewrite" not in page
+
+    async def test_chat_history_is_not_accepted_as_evidence(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        _seed_wiki(store)
+        script = [
+            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "chat-only-claim",
+                        "category": "synthesis",
+                        "summary": "Invalid chat-only claim.",
+                        "content": "The prior answer said this was important. (chat history)",
+                        "sources": ["chat history"],
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="finish_chat_file",
+                    args={"report": "Declined: chat history is not source evidence."},
+                )
+            ],
+        ]
+        result = await _session(store, script, paths).file_chat_synthesis(
+            page_name="chat-only-claim",
+            question="remember that",
+            answer="This was important.",
+        )
+
+        assert "Declined" in result.output
+        assert "chat-only-claim" not in store.list_pages()
+
+    async def test_wiki_page_names_are_not_accepted_as_sources(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        _seed_wiki(store)
+        script = [
+            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "bad-sources",
+                        "category": "synthesis",
+                        "summary": "Invalid source metadata.",
+                        "content": "This cites the current wiki page [[closure]].",
+                        "sources": ["closure"],
+                    },
+                )
+            ],
+            [
+                ToolCall(
+                    tool="finish_chat_file",
+                    args={"report": "Declined: sources must be raw files."},
+                )
+            ],
+        ]
+        result = await _session(store, script, paths).file_chat_synthesis(
+            page_name="bad-sources",
+            question="file this",
+            answer="Closure note.",
+        )
+
+        assert "Declined" in result.output
+        assert "bad-sources" not in store.list_pages()
+
+
 class TestChatRepl:
     def _repl(self, store: WikiStore, paths: WikiPaths, script: list) -> tuple[ChatRepl, list[str]]:
         emitted: list[str] = []
@@ -162,6 +323,52 @@ class TestChatRepl:
         repl.finish()
         log = paths.log_path.read_text(encoding="utf-8")
         assert "chat | 1 turns across 1 conversation" in log
+
+    async def test_file_command_files_latest_turn(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        _seed_wiki(store)
+        script = [
+            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "closure-note",
+                        "category": "synthesis",
+                        "summary": "Filed closure note.",
+                        "content": "A durable note linked to [[closure]].",
+                        "sources": [],
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_chat_file", args={"report": "Filed [[closure-note]]."})],
+        ]
+        repl, emitted = self._repl(store, paths, script)
+        repl.start(resume=None)
+        repl.chat_store.append_turn(
+            repl.active_id,
+            "what is a closure?",
+            "A closure captures scope.",
+            "",
+            10,
+            "2026-06-12T12:00:00",
+        )
+
+        assert await repl.handle("/file closure-note keep it short") is True
+
+        assert "Filed [[closure-note]]." in emitted
+        assert "A durable note linked to [[closure]]." in store.read_page("closure-note")
+
+    async def test_file_command_requires_prior_turn(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        repl, emitted = self._repl(store, paths, script=[])
+        repl.start(resume=None)
+
+        assert await repl.handle("/file empty-note") is True
+
+        assert any("nothing to file yet" in line for line in emitted)
 
     async def test_failed_turn_persists_nothing_and_continues(
         self, store: WikiStore, paths: WikiPaths

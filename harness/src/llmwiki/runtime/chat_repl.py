@@ -20,6 +20,7 @@ _HELP = """commands:
   /new            start a new conversation
   /sessions       list conversations (most recent first)
   /switch <id>    make another conversation active
+  /file <page>    file the latest answer as a durable synthesis page
   /ingest <file>  ingest a raw source (own workflow, warm server)
   /lint           health-check the wiki (own workflow, warm server)
   /help           this text
@@ -74,6 +75,8 @@ class ChatRepl:
             self._list_sessions()
         elif text.startswith("/switch"):
             self._switch(text.removeprefix("/switch").strip())
+        elif text.startswith("/file"):
+            await self._file(text.removeprefix("/file").strip())
         elif text.startswith("/ingest"):
             await self._operation("ingest", text.removeprefix("/ingest").strip())
         elif text == "/lint":
@@ -152,6 +155,33 @@ class ChatRepl:
         self.turns += 1
         self.conversations_touched.add(self.active_id)
         self.emit(answer)
+
+    async def _file(self, argument: str) -> None:
+        parts = argument.split(maxsplit=1)
+        if not parts:
+            self.emit("usage: /file <page-name> [scope]")
+            return
+        history = self.chat_store.history(self.active_id)
+        if not history:
+            self.emit("nothing to file yet — ask a question first")
+            return
+        latest = history[-1]
+        page_name = parts[0]
+        scope = parts[1] if len(parts) > 1 else ""
+        tag = f"chat-file-{self.active_id}-{self.chat_store.turn_count(self.active_id):04d}"
+        try:
+            result = await self.session.file_chat_synthesis(
+                page_name=page_name,
+                question=latest.question,
+                answer=latest.answer,
+                scope=scope,
+                tag=tag,
+            )
+        except Exception as exc:  # filing failure must not kill the REPL
+            self.emit(f"[file failed] {type(exc).__name__}: {exc}")
+            return
+        self.conversations_touched.add(self.active_id)
+        self.emit(result.output)
 
     async def _operation(self, op: str, argument: str) -> None:
         if op == "ingest" and not argument:

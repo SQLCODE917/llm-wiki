@@ -17,6 +17,7 @@ from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
+from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.tools import (
@@ -105,6 +106,34 @@ def build_chat_workflow(store: WikiStore) -> Workflow:
         required_steps=[],
         terminal_tool="respond",
         system_prompt_template=prompts.CHAT_TEMPLATE,
+    )
+
+
+def build_chat_file_workflow(store: WikiStore, today: str) -> Workflow:
+    seen: set[str] = set()
+    tools = [
+        search_wiki_tool(store),
+        read_index_tool(store),
+        read_page_tool(store, read_tracker=seen),
+        chat_file_write_page_tool(
+            store,
+            today,
+            read_tracker=seen,
+            prerequisites=["read_page"],
+        ),
+        finish_tool(
+            "finish_chat_file",
+            "Finish filing a chat synthesis. Report the page written or why no "
+            "durable page was filed.",
+        ),
+    ]
+    return Workflow(
+        name="chat-file",
+        description="File an explicit chat synthesis into the wiki.",
+        tools={t.name: t for t in tools},
+        required_steps=["read_page"],
+        terminal_tool="finish_chat_file",
+        system_prompt_template=prompts.CHAT_FILE_TEMPLATE,
     )
 
 

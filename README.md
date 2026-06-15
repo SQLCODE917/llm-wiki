@@ -70,11 +70,13 @@ uv run llmwiki chat --resume   # continue the most recent one
 ```
 
 Follow-up questions work; `/new`, `/sessions`, and `/switch <id>` manage
-multiple conversations; `/ingest` and `/lint` run inside chat on the warm
-server; `/exit`, Ctrl-C, or Ctrl-D leave gracefully. Phase 1 is read-only —
-answers cite the wiki but nothing is written back (filing is Phase 2).
+multiple conversations; `/file <page-name> [scope]` files the latest answer
+through a dedicated synthesis workflow; `/ingest` and `/lint` run inside chat
+on the warm server; `/exit`, Ctrl-C, or Ctrl-D leave gracefully. Ordinary chat
+turns stay read-oriented. Filing is explicit, re-reads current wiki evidence,
+and writes through `write_page` so `index.md` and `log.md` stay deterministic.
 History lives in `harness/chat.db` (verbatim, gitignored); conversations are
-a throwaway playground, not a knowledge store.
+continuity, not source evidence.
 
 **Lint** — periodic health check:
 
@@ -148,7 +150,8 @@ chronologically.
 | Local LLM-Wiki system | `docs/2026-06-10-local-llm-wiki-design.md` | The system design: three layers, three operations, forge harness, determinism boundary, data model. |
 | PDF ingestion | `docs/2026-06-11-pdf-ingestion-design.md` | Book-scale PDF ingest: PyMuPDF extraction, text-vs-scanned detection (OCR path), TOC-aware semantic chunking, bounded map/integrate runs. Test fixture: `raw/javascriptallonge.pdf`. |
 | Deterministic salience | `docs/2026-06-12-deterministic-salience-design.md` | Code-computed importance (wiki inbound links + per-ingest write counts) fed to synthesis runs so the model never ranks from memory. Implemented; `--reintegrate` rebuilds a hub with current salience. |
-| Persistent chat | `docs/2026-06-12-persistent-chat-design.md` | `llmwiki chat`: warm-model REPL with follow-ups; SQLite session store, deterministic Q/A windowing (no model-curated memory). Phase 1 (read-only) implemented; Phase 2 (filing answers) designed. |
+| Persistent chat | `docs/2026-06-12-persistent-chat-design.md` | `llmwiki chat`: warm-model REPL with follow-ups; SQLite session store, deterministic Q/A windowing (no model-curated memory). |
+| Chat filing | `docs/2026-06-15-chat-phase2-file-synthesis.md` | Explicit `/file <page-name> [scope]` path for turning the latest chat answer into a durable `synthesis` page after re-reading wiki evidence. |
 | M5 foundation migration | `docs/2026-06-14-m5-foundation-migration.md` | Records the replacement of the previous repo, the backup location, and which old safeguards to port selectively. |
 | 4090 synthesis roadmap | `docs/2026-06-14-4090-feature-synthesis-roadmap.md` | Chain of independently shippable TDDs for 4090 runtime support and backup-feature synthesis. |
 | Runtime profiles / 4090 | `docs/2026-06-14-runtime-profiles-4090.md` | First TDD in the chain: runtime selection and `local-4090` as a forge-compatible target. |
@@ -200,9 +203,6 @@ mode we hit.
 
 ## Future improvements
 
-- **Chat Phase 2** — filing answers back into the wiki mid-conversation
-  (`write_page` returns to the chat workflow, per the pattern doc's "good
-  answers can be filed back" guidance).
 - **Chunked ingest hardening** — the PDF map-then-integrate flow is implemented;
   future work is improving source fidelity, code-block extraction, and
   normalized evidence support.

@@ -39,6 +39,7 @@ from llmwiki.pdf.pipeline import (
 from llmwiki.runtime.transcript import TranscriptWriter
 from llmwiki.store import WikiStore
 from llmwiki.workflows import (
+    build_chat_file_workflow,
     build_chat_workflow,
     build_contradiction_workflow,
     build_ingest_workflow,
@@ -55,6 +56,7 @@ _MAX_ITERATIONS = {
     "pdf-chunk": 24,
     "pdf-integrate": 20,
     "chat": 12,
+    "chat-file": 14,
 }
 
 # (pdf_path, source_rel, reextract) -> ExtractionResult; injectable for tests.
@@ -89,6 +91,11 @@ _RETRY_NUDGES = {
         "the next tool you need."
     ),
     "chat": ("Reply with exactly one tool call. Use respond to deliver your answer to the user."),
+    "chat-file": (
+        "Reply with exactly one tool call. If the durable synthesis is filed "
+        "or cannot be supported, call finish_chat_file; otherwise call the "
+        "next tool you need."
+    ),
 }
 
 
@@ -307,6 +314,28 @@ class Session:
             )
         seed.append(Message(MessageRole.USER, message, MessageMeta(MessageType.USER_INPUT)))
         return await self._run(workflow, message, "chat", tag=tag, initial_messages=seed)
+
+    async def file_chat_synthesis(
+        self,
+        page_name: str,
+        question: str,
+        answer: str,
+        scope: str = "",
+        tag: str = "chat-file",
+    ) -> OperationResult:
+        workflow = build_chat_file_workflow(self.store, self.today)
+        slug = slugify(page_name)
+        message = (
+            f"File a durable synthesis page named '{slug}' from the latest chat turn. "
+            "Use category='synthesis'. Chat text is context only; re-read current "
+            "wiki pages before writing and cite wiki/raw evidence.\n\n"
+            f"Requested scope: {scope or '(none provided)'}\n\n"
+            f"Latest chat question:\n{question}\n\n"
+            f"Latest chat answer:\n{answer}"
+        )
+        report, transcript = await self._run(workflow, message, "chat-file", tag=tag)
+        self.store.append_log(self.today, "chat-file", slug, report)
+        return OperationResult("chat-file", slug, report, transcript)
 
     async def lint(self) -> OperationResult:
         if not self.store.list_pages():
