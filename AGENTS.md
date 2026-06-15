@@ -30,6 +30,11 @@ to swap later, but do not maintain parallel active providers in the harness.
   - contradiction detection now includes bounded candidate selection,
     structured `record_contradiction` findings, and filed
     `wiki-contradictions` reports.
+  - chat filing now includes explicit `/file <page>` synthesis after re-reading
+    current wiki evidence.
+  - maintenance now tracks missing-page candidates in
+    `wiki/wiki-candidates.json`, exports `wiki/wiki-graph.json`, and files
+    report-only grounding and semantic-lint audits.
 - Deferred backup ideas require fresh TDDs before implementation:
   - higher-stakes evidence workflows such as stable evidence IDs or normalized
     locator databases.
@@ -84,7 +89,7 @@ tool-calling and multi-step agentic workflows on self-hosted models.
   re-implementing its ideas — re-implementation of a maintained library counts
   as a workaround.
 - Where direct use doesn't fit, mirror its techniques when designing the
-  14B model's tool-calling: rescue parsing of malformed tool calls, retry
+  local model's tool-calling: rescue parsing of malformed tool calls, retry
   nudges, required-step enforcement, the synthetic `respond` tool to keep
   the model in tool-calling mode, and token-budgeted tiered context
   compaction.

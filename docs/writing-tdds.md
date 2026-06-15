@@ -1,7 +1,7 @@
 # Writing Technical Design Documents (TDDs)
 
 Instructions for any design document written in this repo. Referenced from
-CLAUDE.md ("Design Documents") — read this file in full before writing a
+AGENTS.md ("Design Documents") — read this file in full before writing a
 TDD, and follow it exactly.
 
 You are writing a Technical Design Document (TDD). The TDD will be reviewed by a

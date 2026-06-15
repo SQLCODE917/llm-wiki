@@ -113,6 +113,16 @@ as source evidence or as existing wiki coverage.
    status, or catalog answers.
 4. Call `respond` with the answer.
 
+### chat-file
+
+1. Ordinary chat answers are conversational context, not source evidence.
+2. When the curator explicitly files an answer with `/file <page-name>`, re-read
+   the current wiki pages that support the durable claims.
+3. Write only synthesis pages through `write_page`; cite current wiki pages and
+   raw sources when available.
+4. If the current wiki does not support the requested synthesis, do not write a
+   page. Finish with the missing evidence or curator action needed.
+
 ### lint
 
 1. The harness reports deterministic findings first: broken `[[links]]`,

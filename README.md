@@ -215,7 +215,7 @@ chronologically.
 | Wiki graph export | `docs/2026-06-15-wiki-graph-export.md` | Deterministic `wiki/wiki-graph.json` export plus `llmwiki graph --check` and curator-status freshness reporting. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
-| TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from CLAUDE.md; read before writing any TDD. |
+| TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from AGENTS.md; read before writing any TDD. |
 
 Decisions deferred pending more sources live in `docs/open-questions.md` —
 each with the experiment that would resolve it.
@@ -241,7 +241,7 @@ mode we hit.
 - **Search is naive.** Term-frequency scoring over page text plus the index —
   no embeddings, no BM25. Right answer at ~tens of pages; will degrade as
   the wiki grows (the design names qmd as the upgrade path).
-- **It's a 14B at Q4.** Even with forge's guardrails, expect occasional
+- **It's a local model behind forge.** Even with guardrails, expect occasional
   mis-filed pages, thin summaries, or missed cross-references — that's what
   `lint` is for, and `raw/` remains the immutable source of truth.
 - **Query runs with `/no_think`.** Fast factual lookups; complex multi-hop

@@ -114,6 +114,32 @@ Examples:
 - `uv run ruff check harness/src harness/tests` passes.
 - Relevant tests pass.
 
+## Implementation Notes
+
+- Active docs now name `docs/llm-wiki.md` as the only pattern source; the only
+  active reference to the deleted duplicate is this TDD's own historical
+  problem statement.
+- README and `docs/writing-tdds.md` now point TDD readers at AGENTS.md instead
+  of the old Claude-oriented schema file name.
+- Local-model wording replaced stale 14B-specific user-facing guidance in the
+  live README, AGENTS.md, and workflow prompt docstring.
+- Chat prompt and SCHEMA.md now distinguish ordinary read-only chat from the
+  explicit `/file` synthesis path.
+- `search_wiki` already returned the correct `read_index` no-hit guidance, and
+  `harness/tests/test_domain.py` already covers that contract.
+
+## Verification
+
+- `rg -n --glob '!backup/**' "REFERENCE_llm-wiki-pattern" .` returns only this
+  TDD's historical context.
+- `uv run ruff check harness/src harness/tests` passed.
+- `uv run mypy harness/src` passed.
+- `uv run pytest harness/tests` passed: 244 tests.
+- `uv run llmwiki curator-status` completed and reported the graph export as
+  current.
+- `uv run llmwiki graph --check` passed: 75 nodes, 107 edges, 0 unresolved
+  edges.
+
 ## Cross-Cutting Concerns
 
 Observability: no new logs; this is a wording-only correction.

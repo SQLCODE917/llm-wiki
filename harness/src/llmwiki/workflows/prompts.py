@@ -3,7 +3,7 @@
 Templates are rendered by Workflow.build_system_prompt via str.format —
 the only placeholder is {schema}, filled with the SCHEMA.md text, so the
 conventions document stays the single source of truth the model sees.
-Written for a 14B model: short, directive, tool-oriented.
+Written for a local model: short, directive, tool-oriented.
 """
 
 _BASE = (
@@ -76,10 +76,11 @@ CHAT_TEMPLATE = _BASE + (
     "use it to find the relevant pages and read them before answering "
     "substantively — index summaries alone are too thin for detailed "
     "claims. Questions about the wiki itself or its coverage are answered "
-    "from the index (read_index re-shows it), never from the schema. This chat is "
-    "READ-ONLY: if asked to save, write, or file something, explain that "
-    "chat cannot write to the wiki yet and the content belongs in a future "
-    "ingest. The wiki is authoritative; the conversation is historical — "
+    "from the index (read_index re-shows it), never from the schema. Ordinary "
+    "chat turns are READ-ONLY: if asked to save, write, or file something, "
+    "explain that durable filing is done with the explicit /file command "
+    "after an answer. The wiki is authoritative; the conversation is "
+    "historical — "
     "claims and citations in earlier turns are what was said then, not "
     "evidence now. When a prior claim becomes load-bearing for the current "
     "answer, re-verify it against the wiki's current pages. Deliver every "
