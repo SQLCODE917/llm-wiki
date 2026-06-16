@@ -2,7 +2,7 @@
 category: concept
 summary: The person who creates and facilitates the scenario in a role-playing game, making decisions and interpreting rules during gameplay.
 sources: Sword World RPG - Complete Edition.pdf
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 # Game Master
@@ -43,6 +43,6 @@ In the context of Sword World RPG, the GM is responsible for creating scenarios 
 ## Related Concepts
 
 - [[role-playing-game]]
-- [[character]]
-- [[success-roll]]
-- [[dice]]
+- [[sword-world-rpg-complete-edition-character-creation|character]]
+- [[sword-world-rpg-complete-edition-chapter-2-3|success-roll]]
+- [[sword-world-rpg-complete-edition-chapter-2-3|dice]]

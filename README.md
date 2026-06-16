@@ -138,11 +138,12 @@ reports.
 ```bash
 uv run llmwiki pages rename old-page new-page --summary "Updated summary."
 uv run llmwiki pages merge duplicate-page target-page --summary "Updated summary."
+uv run llmwiki pages relink page old-target new-target --alias "display text"
 ```
 
 These commands rewrite inbound links, update `index.md`, remove stale page
-files, and append a log entry. They are for precise cleanup after curator
-review, not a substitute for careful ingest.
+files, replace broken link targets, and append a log entry. They are for
+precise cleanup after curator review, not a substitute for careful ingest.
 
 **Contradictions** — bounded semantic audit:
 

@@ -2,7 +2,7 @@
 category: concept
 summary: Control Weather is an ancient magic spell that changes the weather within a specified area of effect.
 sources: sword-world-rpg-complete-edition.pdf
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 ## **Control Weather**
@@ -36,5 +36,5 @@ Weather you can change to includes sunny, cloudy, rainy, foggy, or snowy. It has
 
 ### **Related Concepts**
 
-- [[sword-world-rpg-complete-edition-ancient-magic-list]]
-- [[sword-world-rpg-complete-edition-magic-system]]
+- [[sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list|ancient-magic-list]]
+- [[sword-world-rpg-complete-edition-chapter-5-1-1-types-of-magic|magic-system]]

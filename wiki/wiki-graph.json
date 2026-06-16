@@ -86,24 +86,19 @@
       "target": "javascriptallonge-closures-and-scope"
     },
     {
-      "resolved": false,
-      "source": "game-master",
-      "target": "character"
-    },
-    {
-      "resolved": false,
-      "source": "game-master",
-      "target": "dice"
-    },
-    {
       "resolved": true,
       "source": "game-master",
       "target": "role-playing-game"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "game-master",
-      "target": "success-roll"
+      "target": "sword-world-rpg-complete-edition-chapter-2-3"
+    },
+    {
+      "resolved": true,
+      "source": "game-master",
+      "target": "sword-world-rpg-complete-edition-character-creation"
     },
     {
       "resolved": true,
@@ -531,24 +526,19 @@
       "target": "sword-world-rpg-complete-edition-books-related"
     },
     {
-      "resolved": false,
-      "source": "role-playing-game",
-      "target": "character"
-    },
-    {
-      "resolved": false,
-      "source": "role-playing-game",
-      "target": "dice"
-    },
-    {
       "resolved": true,
       "source": "role-playing-game",
       "target": "game-master"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "role-playing-game",
-      "target": "success-roll"
+      "target": "sword-world-rpg-complete-edition-chapter-2-3"
+    },
+    {
+      "resolved": true,
+      "source": "role-playing-game",
+      "target": "sword-world-rpg-complete-edition-character-creation"
     },
     {
       "resolved": true,
@@ -771,14 +761,14 @@
       "target": "sword-world-rpg-complete-edition-chapter-2-7"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-control-weather",
-      "target": "sword-world-rpg-complete-edition-ancient-magic-list"
+      "target": "sword-world-rpg-complete-edition-chapter-5-1-1-types-of-magic"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-control-weather",
-      "target": "sword-world-rpg-complete-edition-magic-system"
+      "target": "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list"
     },
     {
       "resolved": true,
@@ -786,14 +776,14 @@
       "target": "sword-world-rpg-complete-edition-monsters"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-daemon-monster-type",
-      "target": "sword-world-rpg-complete-edition-shaman"
+      "target": "sword-world-rpg-complete-edition-shaman-skill"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-daemon-monster-type",
-      "target": "sword-world-rpg-complete-edition-sorcerer"
+      "target": "sword-world-rpg-complete-edition-sorcerer-skill"
     },
     {
       "resolved": true,
@@ -931,9 +921,9 @@
       "target": "sword-world-rpg-complete-edition-daemon-monster-type"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-maligdorai",
-      "target": "sword-world-rpg-complete-edition-illusion"
+      "target": "sword-world-rpg-complete-edition-illusion-magic"
     },
     {
       "resolved": true,
@@ -1026,9 +1016,9 @@
       "target": "sword-world-rpg-complete-edition-analyze-enchantment"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-seal-enchantment",
-      "target": "sword-world-rpg-complete-edition-ancient-magic-list"
+      "target": "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list"
     },
     {
       "resolved": false,
@@ -1101,9 +1091,9 @@
       "target": "sword-world-rpg-complete-edition-monsters"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-spirits",
-      "target": "sword-world-rpg-complete-edition-shaman"
+      "target": "sword-world-rpg-complete-edition-shaman-skill"
     },
     {
       "resolved": true,
@@ -1146,14 +1136,14 @@
       "target": "sword-world-rpg-complete-edition-monsters"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-undead",
-      "target": "sword-world-rpg-complete-edition-shaman"
+      "target": "sword-world-rpg-complete-edition-shaman-skill"
     },
     {
-      "resolved": false,
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition-undead",
-      "target": "sword-world-rpg-complete-edition-sorcerer"
+      "target": "sword-world-rpg-complete-edition-sorcerer-skill"
     },
     {
       "resolved": false,
@@ -1422,10 +1412,9 @@
       "category": "concept",
       "name": "game-master",
       "outbound_links": [
-        "character",
-        "dice",
         "role-playing-game",
-        "success-roll"
+        "sword-world-rpg-complete-edition-chapter-2-3",
+        "sword-world-rpg-complete-edition-character-creation"
       ],
       "sources": [
         "Sword World RPG - Complete Edition.pdf"
@@ -1975,10 +1964,9 @@
       "category": "concept",
       "name": "role-playing-game",
       "outbound_links": [
-        "character",
-        "dice",
         "game-master",
-        "success-roll"
+        "sword-world-rpg-complete-edition-chapter-2-3",
+        "sword-world-rpg-complete-edition-character-creation"
       ],
       "sources": [
         "Sword World RPG - Complete Edition.pdf"
@@ -2751,8 +2739,8 @@
       "category": "concept",
       "name": "sword-world-rpg-complete-edition-control-weather",
       "outbound_links": [
-        "sword-world-rpg-complete-edition-ancient-magic-list",
-        "sword-world-rpg-complete-edition-magic-system"
+        "sword-world-rpg-complete-edition-chapter-5-1-1-types-of-magic",
+        "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list"
       ],
       "sources": [
         "sword-world-rpg-complete-edition.pdf"
@@ -2773,8 +2761,8 @@
       "name": "sword-world-rpg-complete-edition-daemon-monster-type",
       "outbound_links": [
         "sword-world-rpg-complete-edition-monsters",
-        "sword-world-rpg-complete-edition-shaman",
-        "sword-world-rpg-complete-edition-sorcerer"
+        "sword-world-rpg-complete-edition-shaman-skill",
+        "sword-world-rpg-complete-edition-sorcerer-skill"
       ],
       "sources": [
         "Sword World RPG - Complete Edition.pdf"
@@ -3316,7 +3304,7 @@
       "name": "sword-world-rpg-complete-edition-maligdorai",
       "outbound_links": [
         "sword-world-rpg-complete-edition-daemon-monster-type",
-        "sword-world-rpg-complete-edition-illusion"
+        "sword-world-rpg-complete-edition-illusion-magic"
       ],
       "sources": [
         "Sword World RPG - Complete Edition.pdf"
@@ -3675,7 +3663,7 @@
       "name": "sword-world-rpg-complete-edition-seal-enchantment",
       "outbound_links": [
         "sword-world-rpg-complete-edition-analyze-enchantment",
-        "sword-world-rpg-complete-edition-ancient-magic-list",
+        "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list",
         "sword-world-rpg-complete-edition-sense-aura",
         "sword-world-rpg-complete-edition-sense-magic"
       ],
@@ -3841,7 +3829,7 @@
       "name": "sword-world-rpg-complete-edition-spirits",
       "outbound_links": [
         "sword-world-rpg-complete-edition-monsters",
-        "sword-world-rpg-complete-edition-shaman"
+        "sword-world-rpg-complete-edition-shaman-skill"
       ],
       "sources": [
         "Sword World RPG - Complete Edition.pdf"
@@ -3947,8 +3935,8 @@
       "name": "sword-world-rpg-complete-edition-undead",
       "outbound_links": [
         "sword-world-rpg-complete-edition-monsters",
-        "sword-world-rpg-complete-edition-shaman",
-        "sword-world-rpg-complete-edition-sorcerer"
+        "sword-world-rpg-complete-edition-shaman-skill",
+        "sword-world-rpg-complete-edition-sorcerer-skill"
       ],
       "sources": [
         "Sword World RPG - Complete Edition.pdf"

@@ -36,5 +36,5 @@ Undead are not affected by poison or illness. Many spells with mental effects ar
 ## Related Pages
 
 - [[sword-world-rpg-complete-edition-monsters]]
-- [[sword-world-rpg-complete-edition-shaman]]
-- [[sword-world-rpg-complete-edition-sorcerer]]
+- [[sword-world-rpg-complete-edition-shaman-skill|shaman]]
+- [[sword-world-rpg-complete-edition-sorcerer-skill|sorcerer]]

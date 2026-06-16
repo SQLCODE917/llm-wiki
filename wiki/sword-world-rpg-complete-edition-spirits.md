@@ -39,4 +39,4 @@ Regardless of a spirit's rarity (a score related to how well-known the monster i
 ## Related Pages
 
 - [[sword-world-rpg-complete-edition-monsters]]
-- [[sword-world-rpg-complete-edition-shaman]]
+- [[sword-world-rpg-complete-edition-shaman-skill|shaman]]

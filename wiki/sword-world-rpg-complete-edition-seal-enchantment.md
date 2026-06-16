@@ -2,7 +2,7 @@
 category: concept
 summary: Seal Enchantment is an ancient magic spell that hides the presence of magical power applied to an object, making it undetectable by Sense Magic or Sense Aura.
 sources: sword-world-rpg-complete-edition.pdf
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 ## **Seal Enchantment**
@@ -31,7 +31,7 @@ This spell has no effect when using the sage skill to appraise an item (however,
 
 ### **Related Concepts**
 
-- [[sword-world-rpg-complete-edition-ancient-magic-list]]
+- [[sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list|ancient-magic-list]]
 - [[sword-world-rpg-complete-edition-analyze-enchantment]]
 - [[sword-world-rpg-complete-edition-sense-magic]]
 - [[sword-world-rpg-complete-edition-sense-aura]]

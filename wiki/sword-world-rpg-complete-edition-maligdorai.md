@@ -47,4 +47,4 @@ Perception=Five senses (Darkvision)
 
 The Maligdorai is a type of [[sword-world-rpg-complete-edition-daemon-monster-type|daemon]] in the Sword World RPG. It is particularly noted for its mind-manipulating illusion ability, which can turn victims into beings under its control. This makes it a dangerous adversary for characters who rely heavily on mental powers or are susceptible to fear-based psychological attacks.
 
-[[sword-world-rpg-complete-edition-illusion|Illusion]] is a key ability for the Maligdorai, and understanding its mechanics is crucial for both game masters and players when encountering this creature.
+[[sword-world-rpg-complete-edition-illusion-magic|Illusion]] is a key ability for the Maligdorai, and understanding its mechanics is crucial for both game masters and players when encountering this creature.

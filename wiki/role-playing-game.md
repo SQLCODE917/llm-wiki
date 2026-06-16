@@ -2,7 +2,7 @@
 category: concept
 summary: A game where players act out roles within a fictional world, guided by a game master who facilitates the scenario.
 sources: Sword World RPG - Complete Edition.pdf
-updated: 2026-06-15
+updated: 2026-06-16
 ---
 
 # Role-Playing Game
@@ -36,6 +36,6 @@ In the context of Sword World RPG, players might encounter a scenario where they
 ## Related Concepts
 
 - [[game-master]]
-- [[character]]
-- [[success-roll]]
-- [[dice]]
+- [[sword-world-rpg-complete-edition-character-creation|character]]
+- [[sword-world-rpg-complete-edition-chapter-2-3|success-roll]]
+- [[sword-world-rpg-complete-edition-chapter-2-3|dice]]

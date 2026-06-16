@@ -173,6 +173,44 @@ class TestWikiLayer:
         assert "raw/book.pdf p.2" in target
         assert "[[daemons]]" in store.read_page("hub")
 
+    def test_replace_page_link_preserves_alias_and_rewrites_index(
+        self, store: WikiStore
+    ) -> None:
+        store.write_page(_page(name="new-target"))
+        store.write_page(
+            WikiPage(
+                name="hub",
+                category="source",
+                summary="Hub.",
+                body="See [[old-target]] and [[old-target|old label]].",
+                updated="2026-06-10",
+            )
+        )
+
+        store.replace_page_link("hub", "old-target", "new-target", today="2026-06-16")
+
+        hub = store.read_page("hub")
+        assert "[[new-target]]" in hub
+        assert "[[new-target|old label]]" in hub
+        assert "[[old-target]]" not in hub
+        assert "updated: 2026-06-16" in hub
+
+    def test_replace_page_link_can_add_alias(self, store: WikiStore) -> None:
+        store.write_page(_page(name="new-target"))
+        store.write_page(
+            WikiPage(
+                name="hub",
+                category="source",
+                summary="Hub.",
+                body="See [[old-target]].",
+                updated="2026-06-10",
+            )
+        )
+
+        store.replace_page_link("hub", "old-target", "new-target", alias="old label")
+
+        assert "[[new-target|old label]]" in store.read_page("hub")
+
 
 class TestLog:
     def test_append_log_is_append_only(self, store: WikiStore, paths: WikiPaths) -> None:

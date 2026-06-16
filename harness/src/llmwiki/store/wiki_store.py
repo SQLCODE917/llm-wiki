@@ -168,6 +168,30 @@ class WikiStore:
         self._rewrite_links(old_name, target_name)
         self._delete_page_file_and_index(old_name)
 
+    def replace_page_link(
+        self,
+        page_name: str,
+        old_target: str,
+        new_target: str,
+        *,
+        alias: str | None = None,
+        today: str = "",
+    ) -> None:
+        if alias is not None and ("]" in alias or "\n" in alias):
+            raise WikiStoreError("Link aliases cannot contain ']' or newlines.")
+        page = parse_page(page_name, self.read_page(page_name))
+        self.read_page(new_target)
+        pattern = re.compile(rf"\[\[{re.escape(old_target)}(?P<alias>\|[^\]]+)?\]\]")
+        body = pattern.sub(
+            lambda match: f"[[{new_target}{match['alias'] or (f'|{alias}' if alias else '')}]]",
+            page.body,
+        )
+        if body == page.body:
+            raise WikiStoreError(
+                f"Page {page_name!r} does not link to {old_target!r}."
+            )
+        self.write_page(replace(page, body=body, updated=today or page.updated))
+
     def _rewrite_links(self, old_name: str, new_name: str) -> None:
         pattern = re.compile(rf"\[\[{re.escape(old_name)}(?P<alias>\|[^\]]+)?\]\]")
         for page_name in self.list_pages():

@@ -182,6 +182,14 @@ def _build_parser() -> argparse.ArgumentParser:
     merge.add_argument("old", help="Existing page slug to remove.")
     merge.add_argument("target", help="Existing page slug to keep.")
     merge.add_argument("--summary", help="Replacement index summary for the target page.")
+    relink = page_sub.add_parser(
+        "relink",
+        help="Replace one page's broken link target with an existing page target.",
+    )
+    relink.add_argument("page", help="Existing page containing the link.")
+    relink.add_argument("old_target", help="Broken link target to replace.")
+    relink.add_argument("new_target", help="Existing page target to link instead.")
+    relink.add_argument("--alias", help="Alias label to use when the old link had none.")
 
     sub.add_parser(
         "profiles",
@@ -533,6 +541,20 @@ def _run_pages(args: argparse.Namespace, paths: WikiPaths, today: str) -> Operat
         detail = f"Merged [[{args.old}]] into [[{args.target}]] and rewrote inbound links."
         store.append_log(today, "pages", args.target, detail)
         return OperationResult("pages", args.target, detail, None)
+    if args.page_op == "relink":
+        store.replace_page_link(
+            args.page,
+            args.old_target,
+            args.new_target,
+            alias=args.alias,
+            today=today,
+        )
+        detail = (
+            f"Replaced [[{args.old_target}]] with [[{args.new_target}]] "
+            f"in [[{args.page}]]."
+        )
+        store.append_log(today, "pages", args.page, detail)
+        return OperationResult("pages", args.page, detail, None)
     raise ConfigError(f"Unknown pages operation {args.page_op!r}.")
 
 

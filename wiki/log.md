@@ -981,3 +981,55 @@ Nodes: 283
 Edges: 240
 Unresolved edges: 29
 wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-16] pages | game-master
+Replaced [[character]] with [[sword-world-rpg-complete-edition-character-creation]] in [[game-master]].
+
+## [2026-06-16] pages | game-master
+Replaced [[success-roll]] with [[sword-world-rpg-complete-edition-chapter-2-3]] in [[game-master]].
+
+## [2026-06-16] pages | game-master
+Replaced [[dice]] with [[sword-world-rpg-complete-edition-chapter-2-3]] in [[game-master]].
+
+## [2026-06-16] pages | role-playing-game
+Replaced [[character]] with [[sword-world-rpg-complete-edition-character-creation]] in [[role-playing-game]].
+
+## [2026-06-16] pages | role-playing-game
+Replaced [[success-roll]] with [[sword-world-rpg-complete-edition-chapter-2-3]] in [[role-playing-game]].
+
+## [2026-06-16] pages | role-playing-game
+Replaced [[dice]] with [[sword-world-rpg-complete-edition-chapter-2-3]] in [[role-playing-game]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-daemon-monster-type
+Replaced [[sword-world-rpg-complete-edition-shaman]] with [[sword-world-rpg-complete-edition-shaman-skill]] in [[sword-world-rpg-complete-edition-daemon-monster-type]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-daemon-monster-type
+Replaced [[sword-world-rpg-complete-edition-sorcerer]] with [[sword-world-rpg-complete-edition-sorcerer-skill]] in [[sword-world-rpg-complete-edition-daemon-monster-type]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-spirits
+Replaced [[sword-world-rpg-complete-edition-shaman]] with [[sword-world-rpg-complete-edition-shaman-skill]] in [[sword-world-rpg-complete-edition-spirits]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-undead
+Replaced [[sword-world-rpg-complete-edition-shaman]] with [[sword-world-rpg-complete-edition-shaman-skill]] in [[sword-world-rpg-complete-edition-undead]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-undead
+Replaced [[sword-world-rpg-complete-edition-sorcerer]] with [[sword-world-rpg-complete-edition-sorcerer-skill]] in [[sword-world-rpg-complete-edition-undead]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-control-weather
+Replaced [[sword-world-rpg-complete-edition-ancient-magic-list]] with [[sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list]] in [[sword-world-rpg-complete-edition-control-weather]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-control-weather
+Replaced [[sword-world-rpg-complete-edition-magic-system]] with [[sword-world-rpg-complete-edition-chapter-5-1-1-types-of-magic]] in [[sword-world-rpg-complete-edition-control-weather]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-seal-enchantment
+Replaced [[sword-world-rpg-complete-edition-ancient-magic-list]] with [[sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list]] in [[sword-world-rpg-complete-edition-seal-enchantment]].
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-maligdorai
+Replaced [[sword-world-rpg-complete-edition-illusion]] with [[sword-world-rpg-complete-edition-illusion-magic]] in [[sword-world-rpg-complete-edition-maligdorai]].
+
+## [2026-06-16] graph | wiki graph
+Graph export: current
+Nodes: 283
+Edges: 238
+Unresolved edges: 14
+wiki/wiki-graph.json matches the current wiki graph.
