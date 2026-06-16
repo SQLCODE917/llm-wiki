@@ -72,6 +72,11 @@ class WikiPaths:
         """Derived extraction artifacts (disposable; not a wiki layer)."""
         return self.root / "harness" / "cache"
 
+    @property
+    def ingest_profiles_dir(self) -> Path:
+        """Curator-editable ingest strategy profiles."""
+        return self.root / "profiles" / "ingest"
+
     def validate(self) -> None:
         for path in (self.raw_dir, self.wiki_dir, self.schema_path, self.index_path, self.log_path):
             if not path.exists():

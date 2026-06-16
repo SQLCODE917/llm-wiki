@@ -216,6 +216,30 @@ Examples:
 - `uv run ruff check harness/src harness/tests` passes.
 - Relevant tests pass.
 
+## Implementation Notes
+
+- Added `llmwiki.domain.ingest_profiles` as the pure profile registry and prompt
+  composition boundary.
+- Added `profiles/ingest/rulebook.toml` as the first data-defined profile.
+- Added repeatable `llmwiki ingest --profile <id>` selection and
+  `llmwiki profiles` discovery.
+- Profile selection happens before backend startup, PDF extraction, or model
+  calls.
+- Selected profile ids print on ingest stderr as `[ingest-profiles: ...]`.
+- Existing no-profile ingest prompt templates remain unchanged.
+
+## Verification
+
+- `uv run pytest harness/tests/test_ingest_profiles.py harness/tests/test_cli_config.py`
+  passed: 42 tests.
+- `uv run ruff check harness/src harness/tests` passed.
+- `uv run mypy harness/src` passed.
+- `uv run pytest harness/tests` passed: 258 tests.
+- `uv run llmwiki profiles` listed the enabled `rulebook` profile without
+  starting the model.
+- `uv run llmwiki ingest --help` shows repeatable `--profile PROFILE`.
+- `git diff --check` passed.
+
 ## Cross-Cutting Concerns
 
 Observability: ingest stderr should print selected profile ids next to runtime

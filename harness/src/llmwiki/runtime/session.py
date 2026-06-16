@@ -26,6 +26,7 @@ from llmwiki.domain.contradictions import (
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
+from llmwiki.domain.ingest_profiles import IngestProfile
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
@@ -203,6 +204,7 @@ class Session:
     extract_pdf: ExtractFn | None = None  # required for PDF ingest; CLI wires it
     on_chunk_note: Callable[[str], None] | None = None  # per-chunk supervision
     strict_evidence: StrictEvidenceMode = "off"
+    ingest_profiles: tuple[IngestProfile, ...] = ()
 
     def _evidence_policy(self) -> EvidencePolicy:
         return EvidencePolicy(mode=self.strict_evidence)
@@ -214,7 +216,13 @@ class Session:
             return await self._ingest_pdf(source_path, reextract, reintegrate)
         if reintegrate:
             raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
-        workflow = build_ingest_workflow(self.store, self.today, self._evidence_policy())
+        workflow = build_ingest_workflow(
+            self.store,
+            self.today,
+            self._evidence_policy(),
+            profiles=self.ingest_profiles,
+            source_path=source_path,
+        )
         message = (
             f"Ingest the source 'raw/{source_path}' into the wiki. "
             f"Pass path='{source_path}' to read_source."
@@ -252,6 +260,8 @@ class Session:
                     self.today,
                     write_log=write_log,
                     evidence_policy=self._evidence_policy(),
+                    profiles=self.ingest_profiles,
+                    source_path=source_path,
                 ),
                 message,
                 "pdf-chunk",
@@ -280,7 +290,13 @@ class Session:
             f"Per-chunk notes:\n\n<notes>\n{manifest.digest()}\n</notes>"
         )
         report, transcript = await self._run(
-            build_integrate_workflow(self.store, self.today, self._evidence_policy()),
+            build_integrate_workflow(
+                self.store,
+                self.today,
+                self._evidence_policy(),
+                profiles=self.ingest_profiles,
+                source_path=source_path,
+            ),
             message,
             "pdf-integrate",
             tag="pdf-integrate",

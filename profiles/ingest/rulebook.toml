@@ -1,0 +1,51 @@
+id = "rulebook"
+enabled = true
+description = "Operational rules, procedures, catalogs, exceptions, and lookup tables."
+priority = 100
+
+[namespace]
+mode = "source-slug"
+
+[overlays]
+ingest = """
+This source is an operational rulebook. Use `{source_namespace}` as the naming
+namespace for ambiguous domain pages, e.g. `{source_namespace}-core-rules`
+rather than generic names like `core-rules`.
+
+Preserve procedures, prerequisites, exceptions, examples, and table lookup
+meaning. Prefer durable lookup pages over broad prose summaries when a section
+explains how to run or adjudicate the game.
+
+Do not create one page per catalog row, spell, monster, item, or table entry by
+default. Create overview/index pages for catalogs, and promote a specific entry
+only when the source section deeply explains it.
+"""
+
+pdf_map = """
+This chunk is part of an operational rulebook selected with profile(s):
+{profile_ids}. Use `{source_namespace}` as the naming namespace for ambiguous
+rule pages created from this source.
+
+When writing chunk pages, preserve the rule purpose, procedure, prerequisites,
+exceptions, examples, and page-range citations. For tables and charts, capture
+what the table is for, the columns/lookup axes, and when to consult it; do not
+pretend to reproduce every row unless the chunk is specifically about that row.
+
+For catalogs such as spells, monsters, items, skills, or weapons, prefer
+overview/index pages and cross-links. Do not create one page per entry by
+default; create or update only entries the chunk treats in depth.
+"""
+
+pdf_integrate = """
+Finish this rulebook ingest as a navigable rules reference. Ensure the hub page
+for `{source_slug}` links the major rules areas, catalogs, charts, and setting
+sections written during chunking.
+
+Use `{source_namespace}` for ambiguous source-domain page names. In the hub and
+cross-links, distinguish player-facing rules, game-master guidance, optional
+rules, catalogs, charts, and setting/lore material when the source supports that
+structure.
+
+Do not turn computed key lists into hand-written catalogs. The harness owns hub
+key lists; the model should write prose navigation and links.
+"""

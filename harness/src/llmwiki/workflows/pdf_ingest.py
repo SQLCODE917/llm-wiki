@@ -12,6 +12,7 @@ from __future__ import annotations
 from forge.core.workflow import Workflow
 
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.ingest_profiles import IngestProfile, compose_prompt
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.tools import (
@@ -27,6 +28,8 @@ def build_map_workflow(
     today: str,
     write_log: list[str] | None = None,
     evidence_policy: EvidencePolicy | None = None,
+    profiles: tuple[IngestProfile, ...] = (),
+    source_path: str = "",
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     tools = [
@@ -51,12 +54,21 @@ def build_map_workflow(
         tools={t.name: t for t in tools},
         required_steps=["search_wiki", "write_page"],
         terminal_tool="finish_chunk",
-        system_prompt_template=prompts.MAP_TEMPLATE,
+        system_prompt_template=compose_prompt(
+            prompts.MAP_TEMPLATE,
+            profiles,
+            "pdf_map",
+            source_path,
+        ),
     )
 
 
 def build_integrate_workflow(
-    store: WikiStore, today: str, evidence_policy: EvidencePolicy | None = None
+    store: WikiStore,
+    today: str,
+    evidence_policy: EvidencePolicy | None = None,
+    profiles: tuple[IngestProfile, ...] = (),
+    source_path: str = "",
 ) -> Workflow:
     seen: set[str] = set()
     tools = [
@@ -75,5 +87,10 @@ def build_integrate_workflow(
         tools={t.name: t for t in tools},
         required_steps=["write_page"],
         terminal_tool="finish_ingest",
-        system_prompt_template=prompts.INTEGRATE_TEMPLATE,
+        system_prompt_template=compose_prompt(
+            prompts.INTEGRATE_TEMPLATE,
+            profiles,
+            "pdf_integrate",
+            source_path,
+        ),
     )

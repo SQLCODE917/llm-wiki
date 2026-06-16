@@ -4,7 +4,7 @@ from pathlib import Path
 
 import pytest
 
-from llmwiki.cli import _build_parser
+from llmwiki.cli import _build_parser, _run
 from llmwiki.config import (
     ConfigError,
     WikiPaths,
@@ -20,6 +20,12 @@ class TestParser:
     def test_ingest_args(self) -> None:
         args = _build_parser().parse_args(["ingest", "article.md"])
         assert (args.op, args.source) == ("ingest", "article.md")
+
+    def test_ingest_profile_args(self) -> None:
+        args = _build_parser().parse_args(
+            ["ingest", "book.pdf", "--profile", "rulebook", "--profile", "table-heavy"]
+        )
+        assert args.profile == ["rulebook", "table-heavy"]
 
     def test_query_args(self) -> None:
         args = _build_parser().parse_args(["query", "what happened?"])
@@ -76,6 +82,10 @@ class TestParser:
         args = _build_parser().parse_args(["graph", "--check"])
         assert args.op == "graph"
         assert args.check
+
+    def test_profiles_args(self) -> None:
+        args = _build_parser().parse_args(["profiles"])
+        assert args.op == "profiles"
 
     def test_strict_evidence_arg(self) -> None:
         args = _build_parser().parse_args(["lint", "--strict-evidence", "warn"])
@@ -168,3 +178,85 @@ class TestWikiPathsValidation:
     def test_missing_layer_raises(self, tmp_path: Path) -> None:
         with pytest.raises(ConfigError, match="Wiki layer missing"):
             WikiPaths(root=tmp_path).validate()
+
+
+class TestProfileCli:
+    async def test_profiles_lists_without_backend(self, paths: WikiPaths) -> None:
+        profile_dir = paths.ingest_profiles_dir
+        profile_dir.mkdir(parents=True)
+        (profile_dir / "rulebook.toml").write_text(
+            """
+id = "rulebook"
+enabled = true
+description = "Rules."
+priority = 100
+
+[namespace]
+mode = "source-slug"
+
+[overlays]
+ingest = "Use {source_namespace}."
+""".strip(),
+            encoding="utf-8",
+        )
+        args = _build_parser().parse_args(["--root", str(paths.root), "profiles"])
+
+        result = await _run(args)
+
+        assert result.op == "profiles"
+        assert "rulebook [enabled" in result.output
+
+    async def test_unknown_profile_fails_before_backend(
+        self, monkeypatch: pytest.MonkeyPatch, paths: WikiPaths
+    ) -> None:
+        called = False
+
+        async def fake_start_backend(config: object) -> object:
+            nonlocal called
+            called = True
+            raise AssertionError("backend should not start")
+
+        monkeypatch.setattr("llmwiki.cli.start_backend", fake_start_backend)
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "ingest", "book.pdf", "--profile", "missing"]
+        )
+
+        with pytest.raises(ConfigError, match="Unknown ingest profile"):
+            await _run(args)
+        assert not called
+
+    async def test_disabled_profile_fails_before_backend(
+        self, monkeypatch: pytest.MonkeyPatch, paths: WikiPaths
+    ) -> None:
+        profile_dir = paths.ingest_profiles_dir
+        profile_dir.mkdir(parents=True)
+        (profile_dir / "draft.toml").write_text(
+            """
+id = "draft"
+enabled = false
+description = "Disabled."
+priority = 100
+
+[namespace]
+mode = "source-slug"
+
+[overlays]
+ingest = "Use {source_namespace}."
+""".strip(),
+            encoding="utf-8",
+        )
+        called = False
+
+        async def fake_start_backend(config: object) -> object:
+            nonlocal called
+            called = True
+            raise AssertionError("backend should not start")
+
+        monkeypatch.setattr("llmwiki.cli.start_backend", fake_start_backend)
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "ingest", "book.pdf", "--profile", "draft"]
+        )
+
+        with pytest.raises(ConfigError, match="disabled"):
+            await _run(args)
+        assert not called

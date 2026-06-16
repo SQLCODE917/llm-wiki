@@ -16,6 +16,7 @@ from forge.tools.respond import respond_tool
 from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import ClaimCandidate, GroundingVerdict
+from llmwiki.domain.ingest_profiles import IngestProfile, compose_prompt
 from llmwiki.domain.semantic_lint import SemanticFinding
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
@@ -36,7 +37,11 @@ from llmwiki.workflows.tools import (
 
 
 def build_ingest_workflow(
-    store: WikiStore, today: str, evidence_policy: EvidencePolicy | None = None
+    store: WikiStore,
+    today: str,
+    evidence_policy: EvidencePolicy | None = None,
+    profiles: tuple[IngestProfile, ...] = (),
+    source_path: str = "",
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     tools = [
@@ -62,7 +67,12 @@ def build_ingest_workflow(
         tools={t.name: t for t in tools},
         required_steps=["read_source", "search_wiki", "write_page"],
         terminal_tool="finish_ingest",
-        system_prompt_template=prompts.INGEST_TEMPLATE,
+        system_prompt_template=compose_prompt(
+            prompts.INGEST_TEMPLATE,
+            profiles,
+            "ingest",
+            source_path,
+        ),
     )
 
 

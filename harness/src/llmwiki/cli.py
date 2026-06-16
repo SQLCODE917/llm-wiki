@@ -32,6 +32,13 @@ from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
 from llmwiki.domain.index import index_page_names
+from llmwiki.domain.ingest_profiles import (
+    IngestProfile,
+    load_ingest_profiles,
+    profile_summary,
+    render_profiles,
+    select_ingest_profiles,
+)
 from llmwiki.domain.links import compute_findings
 from llmwiki.domain.maintenance import build_curator_status, recent_log_entries
 from llmwiki.domain.pages import WikiPage, parse_page
@@ -69,6 +76,12 @@ def _build_parser() -> argparse.ArgumentParser:
     ingest = sub.add_parser("ingest", help="Integrate one raw source into the wiki.")
     _add_strict_evidence_arg(ingest)
     ingest.add_argument("source", help="Source path relative to raw/, e.g. article.md")
+    ingest.add_argument(
+        "--profile",
+        action="append",
+        default=[],
+        help="Ingest profile id from profiles/ingest/*.toml. Repeat to compose profiles.",
+    )
     ingest.add_argument(
         "--reextract",
         action="store_true",
@@ -155,6 +168,11 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Fail if wiki/wiki-graph.json is missing, invalid, or stale.",
     )
 
+    sub.add_parser(
+        "profiles",
+        help="List configured ingest profiles without starting a model.",
+    )
+
     chat = sub.add_parser("chat", help="Converse with the wiki (model stays loaded).")
     _add_strict_evidence_arg(chat)
     chat.add_argument(
@@ -195,6 +213,8 @@ async def _run(args: argparse.Namespace) -> OperationResult:
     strict_evidence = resolve_strict_evidence_mode(getattr(args, "strict_evidence", None))
 
     now = datetime.now()
+    if args.op == "profiles":
+        return _run_profiles(paths)
     if args.op in {"curator-status", "maintenance"}:
         paths.validate_status()
         return _run_curator_operation(args.op, paths, strict_evidence, now.date().isoformat())
@@ -213,11 +233,16 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         return await _run_semantic_lint(args, paths, now)
 
     paths.validate()
+    ingest_profiles: tuple[IngestProfile, ...] = ()
+    if args.op == "ingest":
+        ingest_profiles = _select_profiles(paths, args.profile)
     backend_config = load_backend_config(args.runtime)
     backend = await start_backend(backend_config)
     try:
         print(f"[runtime: {backend.summary}]", file=sys.stderr)
         print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
+        if args.op == "ingest":
+            print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
         session = Session(
             store=WikiStore(paths),
             client=backend.client,
@@ -228,6 +253,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             extract_pdf=_pdf_extractor(paths),
             on_chunk_note=lambda note: print(note, flush=True),
             strict_evidence=strict_evidence,
+            ingest_profiles=ingest_profiles,
         )
         if args.op == "ingest":
             return await session.ingest(
@@ -240,6 +266,16 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         return await session.lint()
     finally:
         await backend.aclose()
+
+
+def _select_profiles(paths: WikiPaths, requested: list[str]) -> tuple[IngestProfile, ...]:
+    available = load_ingest_profiles(paths.ingest_profiles_dir)
+    return select_ingest_profiles(available, requested)
+
+
+def _run_profiles(paths: WikiPaths) -> OperationResult:
+    profiles = load_ingest_profiles(paths.ingest_profiles_dir)
+    return OperationResult("profiles", "ingest profiles", render_profiles(profiles), None)
 
 
 async def _run_contradictions(

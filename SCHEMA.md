@@ -57,6 +57,9 @@ The index and log formats below are also enforced in harness code
 - Candidate page backlog entries are not pages. Promote a candidate only by
   writing a real `entity`/`concept`/`synthesis` page through the normal
   workflow.
+- Ingest profiles are optional prompt overlays selected by the curator for a
+  source type. They add guidance, but do not replace this schema, change page
+  categories, or bypass any tool/workflow rule.
 
 ## Graph export
 
@@ -100,6 +103,10 @@ as source evidence or as existing wiki coverage.
    facts, add cross-references, flag contradictions. Create pages for
    important entities or concepts that lack one.
 5. Call `finish_ingest` with a short report of what changed.
+
+When an ingest profile is active, follow its additional source-type guidance
+inside the same workflow. If profile guidance and this schema conflict, this
+schema wins.
 
 ### query
 

@@ -46,11 +46,17 @@ commands below do not load a runtime or contact Ollama.
 ```bash
 cp ~/Downloads/some-article.md raw/
 uv run llmwiki ingest some-article.md
+uv run llmwiki profiles
+uv run llmwiki ingest "Sword World RPG - Complete Edition.pdf" --profile rulebook
 ```
 
 The model reads the source, searches the wiki for related pages, writes or
 updates a `source` page plus affected `entity`/`concept` pages, and reports
 what changed. Expect 5–10 minutes (~16 tok/s generation, thinking mode on).
+Ingest profiles are curator-editable TOML files in `profiles/ingest/*.toml`;
+they add source-type guidance without changing the base schema or tool
+contracts. `rulebook` is the first profile and derives ambiguous page
+namespacing from the source filename.
 
 **Query** — ask questions against the wiki:
 
@@ -213,6 +219,7 @@ chronologically.
 | Grounding claim audit | `docs/2026-06-15-grounding-claim-audit.md` | Bounded model-assisted support checks for selected cited claims; files `wiki-grounding` without rewriting content pages. |
 | Semantic lint | `docs/2026-06-15-semantic-lint-stale-and-data-gaps.md` | Bounded model-assisted leads for stale claims, possible supersessions, and data gaps; files `wiki-semantic-lint`. |
 | Wiki graph export | `docs/2026-06-15-wiki-graph-export.md` | Deterministic `wiki/wiki-graph.json` export plus `llmwiki graph --check` and curator-status freshness reporting. |
+| Ingest profiles | `docs/2026-06-16-ingest-profiles.md` | Config-driven prompt overlays selected with `llmwiki ingest --profile`; first profile is `rulebook`. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from AGENTS.md; read before writing any TDD. |
@@ -255,6 +262,9 @@ mode we hit.
   discovery is deferred until its precision can be measured.
 - **`wiki/wiki-graph.json` is derived bookkeeping.** Regenerate it with
   `uv run llmwiki graph`; check freshness with `uv run llmwiki graph --check`.
+- **Ingest profiles are prompt guidance, not separate wikis.** They are
+  selected explicitly with `--profile` and share the same flat page namespace,
+  evidence gates, index/log updates, and write guardrails.
 - **`wiki-contradictions` is rewritten each contradiction audit.** The audit
   is bounded by candidate-pair selection and is not proof that no other
   contradictions exist.
