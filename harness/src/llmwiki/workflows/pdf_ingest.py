@@ -12,9 +12,15 @@ from __future__ import annotations
 from forge.core.workflow import Workflow
 
 from llmwiki.domain.evidence import EvidencePolicy
-from llmwiki.domain.ingest_profiles import IngestProfile, compose_prompt
+from llmwiki.domain.ingest_profiles import (
+    IngestProfile,
+    compose_prompt,
+    prevents_singular_plural_siblings,
+)
+from llmwiki.domain.pages import slugify
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
+from llmwiki.workflows.fixed_page_tools import write_fixed_source_page_tool
 from llmwiki.workflows.tools import (
     finish_tool,
     read_page_tool,
@@ -30,17 +36,25 @@ def build_map_workflow(
     evidence_policy: EvidencePolicy | None = None,
     profiles: tuple[IngestProfile, ...] = (),
     source_path: str = "",
+    new_page_prefix: str | None = None,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     tools = [
         search_wiki_tool(store),
-        read_page_tool(store, read_tracker=seen),
+        read_page_tool(
+            store,
+            read_tracker=seen,
+            max_chars=2000,
+            track_truncated_reads=False,
+        ),
         write_page_tool(
             store,
             today,
             read_tracker=seen,
             write_log=write_log,
             evidence_policy=evidence_policy,
+            new_page_prefix=new_page_prefix,
+            prevent_singular_plural_siblings=prevents_singular_plural_siblings(profiles),
         ),
         finish_tool(
             "finish_chunk",
@@ -69,12 +83,30 @@ def build_integrate_workflow(
     evidence_policy: EvidencePolicy | None = None,
     profiles: tuple[IngestProfile, ...] = (),
     source_path: str = "",
+    new_page_prefix: str | None = None,
+    required_link_targets: tuple[str, ...] = (),
+    min_required_links: int = 0,
 ) -> Workflow:
     seen: set[str] = set()
+    hub_page = slugify(source_path.rsplit(".", maxsplit=1)[0]) if source_path else ""
     tools = [
         search_wiki_tool(store),
-        read_page_tool(store, read_tracker=seen),
-        write_page_tool(store, today, read_tracker=seen, evidence_policy=evidence_policy),
+        read_page_tool(
+            store,
+            read_tracker=seen,
+            max_chars=4000,
+            track_truncated_reads=False,
+        ),
+        write_fixed_source_page_tool(
+            store,
+            today,
+            page_name=hub_page,
+            read_tracker=seen,
+            evidence_policy=evidence_policy,
+            new_page_prefix=new_page_prefix,
+            required_link_targets=required_link_targets,
+            min_required_links=min_required_links,
+        ),
         finish_tool(
             "finish_ingest",
             "Finish the chunked ingest after the hub source page exists and "

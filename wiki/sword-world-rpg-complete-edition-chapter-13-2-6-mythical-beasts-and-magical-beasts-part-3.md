@@ -1,0 +1,128 @@
+---
+category: source
+summary: Chapter 13.2.6 of Sword World RPG - Complete Edition, covering mythical beasts and magical beasts (part 3), including humbaba, roc, and dragon types.
+sources: Sword World RPG - Complete Edition.pdf
+updated: 2026-06-16
+---
+
+## **13.2.6 Mythical Beasts and Magical Beasts (part 3)**
+
+This section covers various mythical and magical beasts, including the humbaba, roc, and different types of dragons.
+
+## **[ Humbaba ]**
+
+## Monster Level=10 Rarity=10 Agility=10 
+
+Movement Speed=10 Number=One Frequency=Very Rare Intellect=Low Reaction=Neutral Attack Points=Claw:17 (10)/Fang:18 (11) Strike Points=22/21 
+
+Evasion Points=15 (8) Defense Points=15 Life Points/Resistance=40/24 (17) Mental Points/Resistance=20/21 (14) 
+
+Special Abilities=Fire breath in a 20 meter forward radius (Resist target score=17, strike power 20, bonus damage 10) 
+
+Habitat=Mountains, caves, other 
+
+Languages=None Perception=Five senses 
+
+A humbaba can also spit fire from its large mouth, which takes up half of its face, once every 3 rounds. The fire is large enough to cover one person, and those hit by the fire will suffer damage resulting from a strike power 20 strike roll plus bonus damage 10. However, if you succeed on a mental power resistance roll against target score 17, the strike power becomes 10. This damage can only be reduced by adventurer level and magical defense. The humbaba's fire deals damage and at the same time causes a terrible disease. Anyone who suffers even 1 point of damage from the humbaba's fire has a chance of contracting a dreadful illness called _humbaba curse_ . You must roll 2D and if you don't roll a 7 or greater, you will become infected. 
+
+Please refer to page 166 for details on this disease. 
+
+A humbaba cannot use gaze, fire, and normal attacks at the same time. Only one of these attacks can be performed per round. 
+
+## **[ Roc ]** 
+
+## Monster Level=12 Rarity=13 Agility=10 
+
+Movement Speed=10/40 (air) Number=One Frequency=Very Rare Intellect=Animal Reaction=Neutral Attack Points=Beak:19 (12)/Talons:20 (13) Strike Points=22/22 
+
+Evasion Points=17 (10) Defense Points=16 Life Points/Resistance=40/24 (17) Mental Points/Resistance=20/21 (14) 
+
+## Special Abilities=Capture 
+
+Habitat=Rarely seen on the distant southern islands of Alecrast 
+
+Languages=None Perception=Five senses 
+
+The most feared beast second only to the dragon, the roc is a gigantic bird resembling an eagle, with a wingspan of 20 meters. Once every few years, they may be swept close to the continent by the wind, and are the subject of gossip among sailors. 
+
+A roc's talons alone are over 1 meter long, and it can lift and carry humansized animals with one foot, or a cow or horse with both feet. Those hit by a roc's talon attacks will be grabbed by the talons, lifted into the air, and carried to its nest. Besides roc infants, its nest is said to be full of treasure. Like the griffon, it may have a habit of collecting shiny objects. 
+
+Rock eggs can measure up to 2 meters in diameter, making even newborn infants larger than humans. Here is the data of an infant for your reference. 
+
+## **Infant** 
+
+Monster Level=3 Rarity=13 Agility=6 Movement Speed=6 Number=One to several 
+
+Frequency=Very Rare Intellect=Animal Reaction=Neutral Attack Points=Beak:10 (3) Strike Points=10 Evasion Points=9 (2) Defense Points=6 Life Points/Resistance=20/12 (5) Mental Points/Resistance=8/10 (3) Special Abilities=None in particular Habitat=Rarely seen on the distant southern islands of Alecrast Languages=None Perception=Five Senses 
+
+## **[ Dragon ]** 
+
+There are three main types of dragons in Forcelia: ancient dragons (drakes), elder dragons, and lesser dragons. 
+
+All of these dragons are similar in appearance. Their entire body is covered with hard scales, and the color of these scales varies depending on the individual. 
+
+They have a snake-like head and tail, with horns and spikes growing along their spine. Their legs are thick and sturdy, for bipedal walking on the ground. By contrast, their hands are slender, but they can move them dexterously. They have bat-like wings on their backs. These wings are comparatively small for their body size. 
+
+The 30 meter long drake, feared as a _god slayer_ monster, and also a master of a variety of magic, is nowhere to be seen in Forcelia today. It is said that there is no way for a human to ever take on a drake. Even the elder and lesser species, which are weaker than drakes, are far too powerful enemies for humans to face, and those who defeat these dragons are hailed as _dragon slayer_ heroes. 
+
+## **Lesser Dragon** 
+
+Monster Level=10 Rarity=10 Agility=10 Movement Speed=10/30 (air) 
+
+Number=One Frequency=Very Rare Intellect=Low Reaction=Neutral Attack Points=Fangs:17 (10)/Talon:18 (11)/ Talon:18 (11)/Tail:17 (10) Strike Points=22/21/21/21 
+
+Evasion Points=15 (8) Defense Points=15 Life Points/Resistance=50/24 (17) Mental Points/Resistance=20/19 (12) Special Abilities=Fire breath in a 20 meter forward radius (Resist target score=17, strike power 20, bonus damage 10) 
+
+Roar of fear (Resist target score=17) Fire immunity 
+
+Not affected by poison and illness Sleepless 
+
+Habitat=Mountains, caves, other 
+
+Languages=Lizardman Perception=Five senses (darkvision) 
+
+Lesser dragons are about 15 meters long. They have low intellect, and do not use magic. There is an outlook that they are like giant beasts, living according to instinct rather than thought. 
+
+Lesser dragons have the ability to breathe fire, and are also resistant to fire. The lesser dragon's flames spread out in a semicircle, with a 20 meter forward radius. Those within range must make a mental power resistance roll against target score 17. If you fail, you’ll suffer 
+
+197 
+
+damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire. 
+
+the word and cannot be put to sleep by magic. 
+
+## **Elder Dragon** 
+
+Monster Level=15 Rarity=10 Agility=10 
+
+Movement Speed=10/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Fangs:22 (15)/Talon:23 (16)/Talon:23 (16)/Tail:22 (15) Strike Points=28/27/27/27 
+
+A dragon's roar also brings intense fear to those who hear it. Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17. If you fail, determine the effect using Table 5-5: Fears (see p. 89). Treat this the same as magic that belongs to _mind_ . A dragon cannot breathe fire or attack with their fangs or claws on the same round in which it roars. 
+
+Evasion Points=20 (13) Defense Points=21 Life Points/Resistance=70/32 (25) Mental Points/Resistance=30/26 (19) 
+
+Special Abilities=10th level ancient magic (Magic Intensity/Magic Power=20/13) 
+
+10th level dragon roar magic (Magic Intensity/Magic Power=20/13) Fire breath in a 30 meter forward radius (Resist target score=22, strike power 30, bonus damage 15) 
+
+Dragons may take long periods of rest called _dormant season_ , but they do not require sleep in the normal sense of 
+
+Roar of fear (Resist target score=22) 
+
+
+![](harness/cache/e5870dca757ef182/images/Sword_World_RPG_-_Complete_Edition.pdf-0198-11.jpg)
+
+
+## Fire immunity 
+
+Not affected by poison and illness Sleepless 
+
+Habitat=Mountains, caves, other Languages=Lizardman, low ancient Perception=Five senses (darkvision) 
+
+Elder dragons are about 20 meters long. Unlike lesser dragons, they have high intellect and sometimes use ancient magic. Some sages claim that this is based on the lost dragon roar, and should not be called _ancient_ magic, although the results are the same. Furthermore, they can also use dragon roar magic that uses the lost dragon roar (though they possess most of their abilities without using magic). 
+
+Elder dragons also have the ability to breathe fire. Elder-species' fire spreads in a 30-meter forward radius, and those who fail a mental power resistance roll against target score 22 will suffer damage resulting from a strike power 30 strike roll plus bonus damage 15. They also have the _roar_ ability which causes fear. The target score to resist is 22. 
+
+Like lesser-species, elder-species can only use one of fire, roar, or physical attack (or magic) in one round. 
+
+198

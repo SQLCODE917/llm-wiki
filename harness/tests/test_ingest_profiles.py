@@ -7,9 +7,12 @@ from llmwiki.domain.ingest_profiles import (
     IngestProfile,
     compose_prompt,
     load_ingest_profiles,
+    prevents_singular_plural_siblings,
     render_profiles,
+    required_new_page_prefix,
     select_ingest_profiles,
 )
+from llmwiki.domain.pages import WikiPage
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.definitions import build_ingest_workflow
@@ -24,6 +27,7 @@ def _write_profile(
     enabled: bool = True,
     priority: int = 100,
     overlay: str = "Use {source_namespace} for {source_path}.",
+    prevent_siblings: bool = False,
 ) -> Path:
     directory.mkdir(parents=True, exist_ok=True)
     path = directory / f"{stem}.toml"
@@ -36,6 +40,9 @@ priority = {priority}
 
 [namespace]
 mode = "source-slug"
+
+[naming]
+prevent_singular_plural_siblings = {str(prevent_siblings).lower()}
 
 [overlays]
 pdf_map = "{overlay}"
@@ -117,6 +124,45 @@ class TestIngestProfiles:
         assert "sword-world-rpg-complete-edition" in prompt
         assert "ids rulebook" in prompt
 
+    def test_required_new_page_prefix_comes_from_profile_flag(self, tmp_path: Path) -> None:
+        directory = tmp_path / "profiles" / "ingest"
+        _write_profile(directory, "loose")
+        strict = _write_profile(directory, "strict")
+        text = strict.read_text(encoding="utf-8")
+        strict.write_text(
+            text.replace(
+                'mode = "source-slug"',
+                'mode = "source-slug"\nrequire_for_new_pages = true',
+            ),
+            encoding="utf-8",
+        )
+        profiles = load_ingest_profiles(directory)
+
+        assert required_new_page_prefix(
+            select_ingest_profiles(profiles, ["loose"]),
+            "Sword World RPG - Complete Edition.pdf",
+        ) is None
+        assert (
+            required_new_page_prefix(
+                select_ingest_profiles(profiles, ["strict"]),
+                "Sword World RPG - Complete Edition.pdf",
+            )
+            == "sword-world-rpg-complete-edition"
+        )
+
+    def test_naming_guard_comes_from_profile_flag(self, tmp_path: Path) -> None:
+        directory = tmp_path / "profiles" / "ingest"
+        _write_profile(directory, "loose")
+        _write_profile(directory, "guarded", prevent_siblings=True)
+        profiles = load_ingest_profiles(directory)
+
+        assert not prevents_singular_plural_siblings(
+            select_ingest_profiles(profiles, ["loose"])
+        )
+        assert prevents_singular_plural_siblings(
+            select_ingest_profiles(profiles, ["guarded"])
+        )
+
     def test_no_profile_prompt_is_unchanged(self) -> None:
         assert compose_prompt("Base prompt.", (), "ingest", "anything.md") == "Base prompt."
 
@@ -134,6 +180,8 @@ class TestProfiledWorkflows:
             description="Rules.",
             priority=100,
             namespace_mode="source-slug",
+            require_namespace_for_new_pages=True,
+            prevent_singular_plural_siblings=False,
             overlays={
                 "pdf_map": "map {source_namespace}",
                 "pdf_integrate": "integrate {source_namespace}",
@@ -157,4 +205,231 @@ class TestProfiledWorkflows:
         assert (
             "integrate sword-world-rpg-complete-edition"
             in integrate_workflow.system_prompt_template
+        )
+
+    def test_namespace_profile_blocks_new_generic_pages(self, store: WikiStore) -> None:
+        workflow = build_ingest_workflow(
+            store,
+            "2026-06-16",
+            new_page_prefix="sword-world-rpg-complete-edition",
+        )
+        write = workflow.tools["write_page"].callable
+
+        with pytest.raises(Exception, match="namespace prefix"):
+            write(
+                name="half-elf",
+                category="concept",
+                summary="Half-elf rules.",
+                content="Body.",
+            )
+
+        result = write(
+            name="sword-world-rpg-complete-edition-half-elf",
+            category="concept",
+            summary="Half-elf rules.",
+            content="Body.",
+        )
+        assert "sword-world-rpg-complete-edition-half-elf" in result
+
+    def test_profile_naming_guard_blocks_singular_plural_siblings(
+        self, store: WikiStore
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="sword-world-rpg-complete-edition-wraiths",
+                category="entity",
+                summary="Wraith monster entry.",
+                body="Monster body.",
+                updated="2026-06-16",
+            )
+        )
+        profile = IngestProfile(
+            id="rulebook",
+            enabled=True,
+            description="Rules.",
+            priority=100,
+            namespace_mode="source-slug",
+            require_namespace_for_new_pages=True,
+            prevent_singular_plural_siblings=True,
+            overlays={"ingest": "Use {source_namespace}."},
+        )
+        workflow = build_ingest_workflow(
+            store,
+            "2026-06-16",
+            profiles=(profile,),
+            source_path="Sword World RPG - Complete Edition.pdf",
+            new_page_prefix="sword-world-rpg-complete-edition",
+        )
+        write = workflow.tools["write_page"].callable
+
+        with pytest.raises(Exception, match="singular/plural normalization"):
+            write(
+                name="sword-world-rpg-complete-edition-wraith",
+                category="concept",
+                summary="Wraith Form concept.",
+                content="Body.",
+            )
+
+        result = write(
+            name="sword-world-rpg-complete-edition-wraith-form",
+            category="concept",
+            summary="Wraith Form concept.",
+            content="Body.",
+        )
+        assert "sword-world-rpg-complete-edition-wraith-form" in result
+
+    def test_namespace_profile_allows_existing_generic_page_after_read(
+        self, store: WikiStore
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="role-playing-game",
+                category="concept",
+                summary="Existing generic page.",
+                body="Old body.",
+                updated="2026-06-16",
+            )
+        )
+        workflow = build_ingest_workflow(
+            store,
+            "2026-06-16",
+            new_page_prefix="sword-world-rpg-complete-edition",
+        )
+        workflow.tools["read_page"].callable(name="role-playing-game")
+
+        result = workflow.tools["write_page"].callable(
+            name="role-playing-game",
+            category="concept",
+            summary="Existing generic page.",
+            content="Old body plus sourced context.",
+        )
+
+        assert "role-playing-game" in result
+
+    def test_pdf_map_large_page_preview_does_not_authorize_rewrite(
+        self, store: WikiStore
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="big-chapter",
+                category="source",
+                summary="Large prior chapter.",
+                body="Large body.\n" + ("x" * 7000),
+                updated="2026-06-16",
+            )
+        )
+        workflow = build_map_workflow(store, "2026-06-16")
+
+        preview = workflow.tools["read_page"].callable(name="big-chapter")
+
+        assert "[TRUNCATED: page preview" in preview
+        repeated = workflow.tools["read_page"].callable(name="big-chapter")
+        assert "already previewed" in repeated
+        with pytest.raises(Exception, match="write_page replaces"):
+            workflow.tools["write_page"].callable(
+                name="big-chapter",
+                category="source",
+                summary="Large prior chapter.",
+                content="Accidental rewrite from preview.",
+            )
+
+    def test_pdf_integrate_writes_only_hub_page(self, store: WikiStore) -> None:
+        store.write_page(
+            WikiPage(
+                name="sword-world-rpg-complete-edition",
+                category="source",
+                summary="Old hub.",
+                body="Old hub body.",
+                updated="2026-06-16",
+            )
+        )
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_path="Sword World RPG - Complete Edition.pdf",
+        )
+
+        result = workflow.tools["write_page"].callable(
+            name="sword-world-rpg-complete-edition-chapter-13-2-1-humans",
+            category="source",
+            summary="Hub page.",
+            content="Hub body.",
+        )
+
+        assert "sword-world-rpg-complete-edition" in result
+        assert "sword-world-rpg-complete-edition" in store.list_pages()
+        assert "sword-world-rpg-complete-edition-chapter-13-2-1-humans" not in store.list_pages()
+        assert "Hub body." in store.read_page("sword-world-rpg-complete-edition")
+
+    def test_pdf_integrate_recovers_content_embedded_in_summary(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_path="Sword World RPG - Complete Edition.pdf",
+        )
+
+        workflow.tools["write_page"].callable(
+            summary="Hub summary.\nparameter=content>\n# Hub\n\n[[linked-page]]",
+            **{" sources": '["Sword World RPG - Complete Edition.pdf"]'},
+        )
+
+        hub = store.read_page("sword-world-rpg-complete-edition")
+        assert "summary: Hub summary." in hub
+        assert "[[linked-page]]" in hub
+        assert "Sword World RPG - Complete Edition.pdf" in hub
+
+    def test_pdf_integrate_supplements_sparse_page_map_links(self, store: WikiStore) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_path="Sword World RPG - Complete Edition.pdf",
+            required_link_targets=("alpha", "beta", "gamma"),
+            min_required_links=2,
+        )
+
+        workflow.tools["write_page"].callable(
+            summary="Sparse hub.",
+            content="Only links [[alpha]].",
+        )
+
+        hub = store.read_page("sword-world-rpg-complete-edition")
+        assert "Only links [[alpha]]." in hub
+        assert "## Page-Map Navigation" in hub
+        assert "[[beta]]" in hub
+
+    def test_pdf_integrate_does_not_add_navigation_when_linked(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_path="Sword World RPG - Complete Edition.pdf",
+            required_link_targets=("alpha", "beta", "gamma"),
+            min_required_links=2,
+        )
+
+        workflow.tools["write_page"].callable(
+            summary="Linked hub.",
+            content="Links [[alpha]] and [[beta]].",
+        )
+
+        hub = store.read_page("sword-world-rpg-complete-edition")
+        assert "[[alpha]] and [[beta]]" in hub
+        assert "## Page-Map Navigation" not in hub
+
+    def test_write_page_accepts_single_source_string(self, store: WikiStore) -> None:
+        workflow = build_map_workflow(store, "2026-06-16")
+
+        workflow.tools["write_page"].callable(
+            name="sword-world-rpg-complete-edition-test",
+            category="source",
+            summary="Test source.",
+            content="Body.",
+            sources="[Sword World RPG](raw/Sword World RPG - Complete Edition.pdf)",
+        )
+
+        assert "Sword World RPG - Complete Edition.pdf" in store.read_page(
+            "sword-world-rpg-complete-edition-test"
         )

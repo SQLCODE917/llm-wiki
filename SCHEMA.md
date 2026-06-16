@@ -19,6 +19,11 @@ The index and log formats below are also enforced in harness code
 ## Page conventions
 
 - Page names are kebab-case slugs, unique across the wiki: `bronze-age-collapse`.
+- If a source uses the same noun for different roles, make the page name
+  describe the role. Prefer names like `<source>-<topic>-rules`,
+  `<source>-<topic>-spell`, `<source>-<topic>-monster`,
+  `<source>-<topic>-item`, or `<source>-<topic>-lore` over bare
+  singular/plural sibling pages.
 - Every page belongs to one category:
   - `source` — summary of one raw source; named after the source.
   - `entity` — a person, place, organization, system, or thing.
@@ -54,6 +59,10 @@ The index and log formats below are also enforced in harness code
   derived navigation maintained by the harness — like index.md entries,
   never write or edit key-entity/key-concept lists yourself; they are
   replaced from computed evidence after every ingest.
+- On book-scale hub source pages, the harness may add a `Page-Map Navigation`
+  section from the chunk manifest when model-authored prose under-links the
+  pages written during chunking. Treat that section as deterministic
+  navigation, like index.md entries and hub key lists.
 - Candidate page backlog entries are not pages. Promote a candidate only by
   writing a real `entity`/`concept`/`synthesis` page through the normal
   workflow.

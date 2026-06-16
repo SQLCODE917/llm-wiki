@@ -1,0 +1,346 @@
+---
+category: source
+summary: Chapter 5.1.14 of Sword World RPG - Complete Edition, detailing the spirit magic list including spells like Wind Voice, Snare, Destruction, Purification, Firebolt, Brownie, and others.
+sources: Sword World RPG - Complete Edition.pdf
+updated: 2026-06-15
+---
+
+## 5.1.14 Spirit Magic List
+
+This section details spirit magic spells, organized by level.
+
+### 1st Level Spirit Magic List
+
+#### [ Wind Voice ] (Sylph/Wind Spirit)
+
+Base Mental Power Cost=3 
+
+Distance=500 meters 
+
+Area=A space with a 5 meter radius Duration=1 hour 
+
+Effect=Hears sounds occurring at the target location 
+
+Type=Detection Expansion=Duration, distance, area Resist=None 
+
+This spell has the effect of commanding a sylph to deliver air vibrations (sounds) to the caster without weakening them. As a result, you can specify a point in space within 500 meters and hear every conversation and sound exchanged within a radius of 5 meters from that point. Conversely, you can also transmit your voice to the location. Since it can be used to narrow the area of effect, it's also possible to communicate with just a single target. 
+
+There must always be a passage of wind between the target and the caster. Sound travels along that path (over the shortest possible distance). Therefore, those in the path can hear the sounds carried by _Wind Voice_ . 
+
+#### [ Snare ] (Gnome/Earth Spirit)
+
+Base Mental Power Cost=3 Distance=10 meters Area=One 
+
+Duration=Instant Effect=Knocks the target prone Type=- 
+
+Expansion=Final score, distance, targets Resist=Negated effect 
+
+Use this spell against a target during movement or combat. If the target fails to resist, they will trip on the ground raised by gnome and fall _prone_ . A fallen target must suffer a -2 penalty to evasion speed (points). The target must spend one round in order to get back up. 
+
+#### [ Destruction ] (Leprechaun/Mind Spirit)
+
+Base Mental Power Cost=3 Distance=10 meters 
+
+Area=One 
+
+Duration=1 round Effect=Disturb the opponent's focus Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect 
+
+_Destruction_ has the effect of evoking distractions in the target's mind and disrupting their focus. As a result, the target is subject to the following constraints for the remainder of the round and for the entire next round: 
+
+1. Magic cannot be used (if you're attempting to use magic at a later action order during the round, you must cancel your action) 
+
+2. A -1 penalty to attack power (points) and evasion speed (points) 
+
+3. Spells that require focus cannot be maintained 
+
+#### [ Purification ] (Undine/Water Spirit)
+
+Base Mental Power Cost=3 
+
+Distance=10 meters Area=10 liters of water 
+
+Duration=Instant 
+
+Effect=Removes impurities from water and creates perfectly fresh water 
+
+Type=- 
+
+Expansion=Final score, distance, target volume 
+
+Resist=None 
+
+When you chant this spell, any kind of muddy or poisonous water instantly turns back into pure water. You can also target magical potions (liquid medicine) and poisons, but you must attempt a success roll to do so. Unless otherwise specified, the target score for this type of potion is _15_ . In the case of poison, its _toxicity score_ is the target score. 
+
+This spell _cannot_ be used on a creature's bodily fluids as a way to deal damage to that creature. 
+
+#### [ Firebolt ] (Salamander/Fire Spirit)
+
+Base Mental Power Cost=5 Distance=10 meters 
+
+Area=One Duration=Instant 
+
+Effect=Deals strike power 10 fire damage to the target 
+
+Type=Damage (Fire-type) 
+
+Expansion=Final score, distance, targets, damage certainty 
+
+Resist=Reduced effect 
+
+To use this spell, there must be a fire (or a controlled salamander) large enough to burn a torch within at least 10 meters around the caster. A line of fire up to 10 meters will reach out from that fire and catch the target. This magical fire will always hit, and the target will suffer strike power 10 damage (strike power 0 and no criticals if they successfully resist). 
+
+#### [ Brownie ] (Brownie/Building Spirit)
+
+Base Mental Power Cost=3 Distance=Inside a building Area=Inside a building Duration=While the caster is asleep Effect=Do chores around the house Type=Expansion=Resist=None 
+
+Brownies are spirits that live in old houses and castles that were built over 50 years ago. They may clean the house while the family members are sleeping. This spell has the effect of giving a command to a brownie, specifying a chore the caster would like them to do while they're asleep. However, the requested job must be a simple one. If you request something too complicated, it's too much for them and you can't expect a good result. 
+
+### 2nd Level Spirit Magic List
+
+#### [ Will-O-Wisp ] (Will-O-Wisp/Light Spirit)
+
+Base Mental Power Cost=6 
+
+Distance=20 meters 
+
+Area=A space with a 5 meter radius Duration=1 hour 
+
+Effect=Illuminates the space within the area of effect 
+
+Type=Damage (Pure energy-type) Counters (Negates): _Shade_ , _Spirit Wall: Shade_ Countered (Negated) By: _Shade_ , _Spirit Wall: Shade_ 
+
+Countered (Overpowered) By: _Darkness_ 
+
+Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect 
+
+Will-o-wisp is a spirit of light, spherical in shape and emitting pale blue-white light. The light can illuminate a space within a 5 meter radius. However, in places affected by the ancient magic _Darkness_ , the light emitted by a will-owisp will have no effect, and if it overlaps with the darkness created by a shade, they will negate each other's effects. This spirit flies around in the sky according to the caster's commands. However, if it moves more than 20 meters away from the caster, they will no longer be able to control it. This spirit can be easily destroyed by applying a small amount of force, and when it does, it emits powerful energy. If the will-o-wisp hits an opponent, the target will receive damage from the energy generated when the will-o-wisp disintegrates. Make this damage check using the strike power 10 column. When used for this purpose, a will-o-wisp disintegrates immediately, even during its duration. 
+
+Furthermore, if someone destroys a will-o-wisp with a weapon they're holding, the one who took that action will also suffer the same damage. 
+
+If a will-o-wisp itself comes into contact with a shade's body or enters the area of effect of _Darkness_ , it'll vanish without emitting any energy. 
+
+#### [ Water Screen ] (Undine/Water Spirit)
+
+Base Mental Power Cost=6 Distance=10 meters Area=One Duration=18 rounds 
+
+Effect=Reduce fire damage by 1 point Type=- 
+
+Expansion=Duration, distance, targets Resist=None 
+
+This spell forms a thin film of water on the surface of the target's body, reducing fire damage by 1 point. It doesn't matter what kind of fire. Whether it's magical fire or natural fire, it takes effect. The same applies for attacks with weapons that have _Fire Weapon_ cast on them. 
+
+#### [ Confusion ] (Leprechaun/Mind Spirit)
+
+Base Mental Power Cost=6 
+
+Distance=10 meters 
+
+Area=One Duration=18 rounds Effect=Confuses the target Type=Mind Expansion=Final score, duration, distance, targets 
+
+Resist=Negated effect 
+
+If you have this spell cast on you and you fail to resist, you'll be unable to understand your current situation. You'll also lose your ability to make accurate judgments. As a result, you won't be able to take any assertive action, and will be completely unable to attack or use magic on your opponents. However, you'll still be able to respond appropriately to actions taken against you, so if someone attacks you, you can conclude that the opponent is your enemy. You can make similar judgments about those who cast magic on you. At this time, even if an ally casts magic on you in order to help you, you will consider it a _hostile_ act. Of course, this is not the case if _Confusion_ is removed by that magic's effect. 
+
+If you're caught by this spell, you can still use magic to strengthen or protect yourself. You can also cast _Dispel Magic_ , _Sanity_ , or other magic that belongs to _mind_ on yourself. Also, it doesn't mean you've become stupid, so you won't trust an opponent just because they yell _I'm your friend!_ . 
+
+#### [ Shade ] (Shade/Dark Spirit)
+
+Base Mental Power Cost=6 Distance=20 meters 
+
+Area=A space with a 5 meter radius Duration=1 hour 
+
+Effect=Negates natural light within the area of effect, closing it in darkness Type=Damage (Mind-type) 
+
+Counters (Negates): _Will-O-Wisp_ , _Spirit Wall: Wisp_ 
+
+Countered (Negated) By: _Will-O-Wisp_ , _Spirit Wall: Wisp_ 
+
+Countered (Overpowered) By: _Light_ , _Holy Light_ 
+
+Expansion=Final score, duration, distance, targets, damage certainty 
+
+85 
+
+## Resist=Reduced effect 
+
+Shade is the spirit of darkness that opposes will-o-wisp, and is also the spirit that controls fear. It is said to have a spherical shape like the will-o-wisp, but this is not certain (because like a crow in the pitch-black night, it cannot be seen). All natural light within a 5 meter radius of this spirit is negated, closing it in complete darkness. The darkness created by a shade has no effect in a space where the ancient magic _Light_ is at work. In addition, if the light emitted by a will-owisp and the darkness produced by a shade overlap, the powers of both will be negated. The shade will fly freely in the air according to the caster's commands, but can no longer be controlled if it moves more than 20 meters away from the caster. The shade is also very fragile and will easily disintegrate with the slightest force. At this time, it emits an energy completely different from a willo-wisp. This has no physical effect, but it impairs mental activity and has the effect of reducing mental power (points). Make a strike power 10 damage check, and subtract the result from mental power (points). The damage is _only_ dealt to mental power (points), the rest of the check is the same as for magic that deals normal damage. If mental power (points) becomes 0 or negative, the target loses consciousness. Furthermore, if an opponent destroys a shade with a weapon they're holding, the one who took that action will also suffer the same damage. 
+
+If a shade itself comes into contact with a will-o-wisp's body or enters the area of effect of the ancient magic _Light_ , it'll vanish without emitting any energy. 
+
+#### [ Fanaticism ] (Valkyrie/Mind Spirit)
+
+Base Mental Power Cost=6 Distance=10 meters Area=One Duration=18 rounds Effect=Raise the target's spirit Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect 
+
+_Fanaticism_ heightens the courage of the target to the utmost limit, completely erasing fear. As a result, you can add a +2 bonus to attack power (points) in combat. However, as a recoil, you will suffer a -2 penalty to your evasion speed (points). This can be cast on others, but the target can attempt to resist the spell. 
+
+This spell cannot be cast _by_ women. 
+
+#### [ Forget ] (Leprechaun/Mind Spirit)
+
+Base Mental Power Cost=8 
+
+Distance=10 meters 
+
+Area=One Duration=18 rounds Effect=Target loses their memory Type=Mind Expansion=Final score, duration, distance, targets 
+
+Resist=Negated effect 
+
+This spell is used by borrowing the power of a leprechaun, but humans and elves cannot use it. _Only_ featherfolk (fae) and gremlins (youma) can use it. Among sages, the reason for this is thought to be that the spell doesn't just require a hand, but a _wing_ . 
+
+Those who have this spell cast on them will lose their memory, and be unable to make normal decisions. A gremlin casting this spell on a pegasus carrying the hero Grax, and flinging Grax off of it, is a very well-known tragic episode in Alecrast. 
+
+You will no longer be able to remember your name, where you were born and raised, or your friends and colleagues, but you will still be able to use language, etc. and specialized knowledge. Therefore, skill levels, etc. are not affected. 
+
+#### **The Tragedy of the Hero Grax** 
+
+_Around 200 years ago, a kingdom by the_ 
+
+_name of Zanty flourished in western Alecrast._ 
+
+_In that kingdom, there was a knight named Grax who was hailed as a hero by all for protecting the kingdom from the invasion of the "Land of Chaos"._ 
+
+_Legend has it that Grax, astride a pegasus, single-handedly defeated hundreds of enemy soldiers. This is worthy of special mention even among the many tales of bravery passed down in Alecrast._ 
+
+#### [ Hold ] (Gnome/Earth Spirit)
+
+Base Mental Power Cost=10 
+
+Distance=10 meters Area=One 
+
+Duration=18 rounds 
+
+Effect=Stops an opponent’s movement Type=- 
+
+Expansion=Final score, duration, distance, targets 
+
+Resist=Negated effect 
+
+This spell causes a gnome to rise from the earth and wrap itself around the lower body of a target that fails to resist, sealing their movement. As a result, the target will be unable to move and must take a -2 penalty to attack power (points) and evasion speed (points). 
+
+### 3rd Level Spirit Magic List
+
+#### [ Invisibility ] (Sprite/Mind Spirit)
+
+Base Mental Power Cost=12 
+
+Distance=Caster 
+
+Area=Caster Duration=Until focus ends Effect=Makes the caster invisible Type=Focus, Illusion Expansion=Resist=None 
+
+By casting this spell,  the caster can turn invisible. 
+
+If you cast _Invisibility_ during combat and then attempt to cancel it voluntarily (in order to take another action), by the definition of _focus_ magic, at the beginning of that round, you _must_ declare it when no one has yet made their action announcements. Therefore, you _cannot_ attack unopposed or use magic 
+
+_However, Grax's end was a pitiful one. After emerging victorious from a battle, he was on his way back to report to the kingdom ahead of the others, when he encountered a lone gremlin. Grax paid no heed to this little youma, but quite unexpectedly, the gremlin cast a "Forget" spell on the pegasus he was riding and fled._ 
+
+_Caught off-guard, the pegasus was struck by the spell, and without realizing what it was doing, it flung its master off its back, and flew off. The hero Grax slammed into the ground far below, and perished._ 
+
+_Ever since, gremlins have come to be known as "the Goblins of the Sky"._ 
+
+86 
+
+from a hidden state at the beginning of a round without being noticed by your opponent. 
+
+#### [ Water Breathing ] (Undine/Water Spirit)
+
+Base Mental Power Cost=9 Distance=10 meters 
+
+Area=One Duration=1 hour Effect=Allows breathing underwater Type=Target score Expansion=Final score, duration, distance, targets 
+
+Resist=None 
+
+Targets who have had this spell cast on them will be able to breathe in water without drowning. During this time, you can breathe normally, so you don't have to worry about suffocating to death on land. 
+
+#### [ Control Spirit ] (Various lesser spirits)
+
+Base Mental Power Cost=15 Distance=10 meters 
+
+Area=One lesser spirit Duration=Permanent Effect=Summon and control one type of spirit Type=Target score Counter (Overpowers): _Full Control Spirit_ Countered (Overpowered) By: _Full Control Spirit_ Expansion=Final score, distance Resist=None 
+
+This is a spell that summons a spirit and lets you control it as your servant (you're free to call it your friend). The only spirits you can summon are those that belong to the lesser spirits (monster level 4 or lower). Of course, it can only be summoned in a place where spirit power is at work, and summoning also requires a three-hour magical ritual. 
+
+Spirits that have been successfully summoned and controlled can be sealed in items, etc. It is up to the game master's discretion to decide what kind of item the spirit will be sealed in (for example, an undine in a water bag, etc.). A shaman can only control one kind of spirit at a time. A controlled spirit can communicate with its caster using silent spirit, and will carry out simple commands, but cannot do much. It cannot attack others directly. 
+
+The biggest advantage of controlling spirits is that you can cast spirit magic that belongs to them, even in places where spirit power would not normally be at work. It's always possible to release a controlled spirit. A controlled spirit can only be used by its controller. 
+
+The main spirits that can be controlled are: Gnomes, Salamanders, Undines, Sylphs, Dryads, and Valrises. 
+
+#### [ Healing ] (The Unknown Spirit of Life)
+
+Base Mental Power Cost=15 
+
+Distance=Touch 
+
+Area=One 
+
+Duration=Instant 
+
+Effect=Completely heal the target's wounds Type=Expansion=- 
+
+Resist=Negated effect 
+
+This is a spell that heals the body by borrowing the power of an unknown spirit of life. When you cast this spell, it can completely heal any wound instantly, but it cannot regenerate a severed arm or leg. Also, although this spell can only be cast _by_ women, you _can_ choose a man as the _target_ of the spell. 
+
+This spell can deal damage to undead. Undead that fail to resist this spell will immediately have their life points become 0 and cease all activity. 
+
+#### [ Mute ] (Sylph/Wind Spirit)
+
+Base Mental Power Cost=9 Distance=10 meters 
+
+Area=One Duration=18 rounds Effect=Negate sounds made by the target Type=Expansion=Final score, duration, distance, targets Resist=Negated effect 
+
+This spell differs from _Silence_ in that it can be used on an individual to silence only the voices and sounds _they_ make. The target can hear sounds from outside. Those under the influence of this spell can act without making any sound at all. However, they will no longer be able to use spells. 
+
+### 4th Level Spirit Magic List
+
+#### [ Water Walking ] (Undine/Water Spirit)
+
+Base Mental Power Cost=12 Distance=10 meters 
+
+Area=One Duration=1 hour Effect=Become able to walk on water Type=Counters (Negates): _Sink_ Countered (Negated) By: _Sink_ 
+
+Expansion=Final score, duration, distance, targets Resist=Negated effect 
+
+This spell allows you to walk on water. Those who've had this spell cast on them can walk on water as if they were walking on solid ground. Of course, it doesn't matter how heavy their equipment is. However, when transporting someone else, you must always carry that person on your back. This spell is also a counter spell to _Sink_ , so if you cast this spell after _Sink_ has been cast, the effects of both will be negated, just as if they had been removed by a _Dispel Magic_ spell. 
+
+If you cast this spell on something underwater, it will immediately rise to the surface. 
+
+#### [ Sink ] (Undine/Water Spirit)
+
+Base Mental Power Cost=16 Distance=10 meters 
+
+Area=One, or a boat-sized object Duration=1 hour Effect=Eliminates the buoyancy of water, causing floating people and objects to sink Type=Counters (Negates): _Water Walking_ Countered (Negated) By: _Water Walking_ Countered (Overpowered) By: _Create Ghost Ship_ 
+
+Expansion=Final score, duration, distance, targets Resist=Negated effect 
+
+Those who've had this spell cast on them lose their liquid buoyancy and sink completely to the bottom. This spell's effect only works on objects up to the size of a small boat. If you cast this spell on something under the influence of _Water Walking_ , their effects will negate each other, removing the effects of both spells. 
+
+#### [ Sleep ] (Sandman/Mind Spirit)
+
+Base Mental Power Cost=20 Distance=Touch 
+
+Area=One 
+
+Duration=Permanent 
+
+Effect=Put an opponent into eternal sleep Type=Mind, target score Expansion=Final score, distance Resist=Negated effect 
+
+This spell has the effect of putting the target into eternal sleep. The target will 
+
+remain asleep forever unless it's removed by _Dispel Magic_ , another _mind_ spell, etc. but in the meantime, the target does not starve or grow. They remain asleep forever in the same state they were in when the spell was cast. 
+
+#### [ Tunnel ] (Gnome/Earth Spirit)
+
+Base Mental Power Cost=16 
+
+Distance=10 meters 
+
+Area=1 meter radius, 10 meter length Duration=18 rounds 
+
+Effect=Drill a hole in the ground, a stone wall, etc. 
+
+Type=Counters (Overpowers): _Spirit Wall: Gnome_ 
+
+Expansion=Final score, duration, target score Resist=Special (see description) 
+
+This is a spell that creates a hole with a 1 meter radius in walls and ground made of stone or earth, as well as the sides and ceilings of caves. This spell allows you to create holes up to 10 meters in length. However, if the wall is less than 10 meters thick, the spell's effect ends there. In other words, you can't open holes in two walls with one spell. The effect of this spell can be expanded regarding the size of the hole being made (target volume).

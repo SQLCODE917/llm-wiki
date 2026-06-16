@@ -26,7 +26,7 @@ from llmwiki.domain.contradictions import (
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
-from llmwiki.domain.ingest_profiles import IngestProfile
+from llmwiki.domain.ingest_profiles import IngestProfile, required_new_page_prefix
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
@@ -222,6 +222,7 @@ class Session:
             self._evidence_policy(),
             profiles=self.ingest_profiles,
             source_path=source_path,
+            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
         )
         message = (
             f"Ingest the source 'raw/{source_path}' into the wiki. "
@@ -262,6 +263,7 @@ class Session:
                     evidence_policy=self._evidence_policy(),
                     profiles=self.ingest_profiles,
                     source_path=source_path,
+                    new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
                 ),
                 message,
                 "pdf-chunk",
@@ -287,8 +289,16 @@ class Session:
             f"All {total} chunks of 'raw/{source_path}' are ingested. Ensure the hub "
             f"source page '{hub}' exists and links the pages written during "
             f"chunking.\n\n{salience_block}\n\n"
-            f"Per-chunk notes:\n\n<notes>\n{manifest.digest()}\n</notes>"
+            f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
         )
+        link_targets: list[str] = []
+        seen_targets: set[str] = set()
+        for chunk in manifest.chunks:
+            for page in chunk.pages_written:
+                if page != hub and page not in seen_targets:
+                    link_targets.append(page)
+                    seen_targets.add(page)
+        required_link_targets = tuple(link_targets)
         report, transcript = await self._run(
             build_integrate_workflow(
                 self.store,
@@ -296,6 +306,9 @@ class Session:
                 self._evidence_policy(),
                 profiles=self.ingest_profiles,
                 source_path=source_path,
+                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+                required_link_targets=required_link_targets,
+                min_required_links=min(12, len(required_link_targets)),
             ),
             message,
             "pdf-integrate",

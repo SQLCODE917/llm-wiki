@@ -82,6 +82,19 @@ class Manifest:
             parts.append(entry)
         return "\n\n".join(parts)
 
+    def page_map(self) -> str:
+        """Compact machine record for integration prompts."""
+        parts = []
+        for c in self.chunks:
+            if c.status != "done":
+                continue
+            pages = ", ".join(f"[[{p}]]" for p in c.pages_written) or "(none recorded)"
+            parts.append(
+                f"Chunk {c.chunk_id} — {c.heading} "
+                f"(p.{c.start_page}-{c.end_page}): {pages}"
+            )
+        return "\n".join(parts)
+
     def write_counts(self) -> dict[str, int]:
         """Per-page write totals across done chunks (salience input)."""
         counts: dict[str, int] = {}

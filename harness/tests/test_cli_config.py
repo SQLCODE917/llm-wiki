@@ -1,10 +1,11 @@
 """CLI argument contract and explicit config resolution."""
 
 from pathlib import Path
+from typing import Any
 
 import pytest
 
-from llmwiki.cli import _build_parser, _run
+from llmwiki.cli import _build_parser, _default_text_recognizer, _run
 from llmwiki.config import (
     ConfigError,
     WikiPaths,
@@ -14,6 +15,7 @@ from llmwiki.config import (
 )
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS
 from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS
+from llmwiki.pdf.recognizer import NullRecognizer
 
 
 class TestParser:
@@ -105,6 +107,7 @@ class TestBackendConfig:
         monkeypatch.delenv("LLMWIKI_RUNTIME", raising=False)
         monkeypatch.delenv("LLMWIKI_OLLAMA_MODEL", raising=False)
         monkeypatch.delenv("LLMWIKI_OLLAMA_URL", raising=False)
+        monkeypatch.delenv("LLMWIKI_OLLAMA_TIMEOUT", raising=False)
         monkeypatch.delenv("LLMWIKI_CTX", raising=False)
         config = load_backend_config()
         assert config.runtime_name == "ollama-default"
@@ -112,6 +115,7 @@ class TestBackendConfig:
         assert config.model == "qwen3-coder:30b"
         assert config.endpoint == "http://localhost:11434"
         assert config.context_tokens == 16384
+        assert config.timeout_seconds == 900
 
     def test_env_runtime_selects_local_4090(self, monkeypatch: pytest.MonkeyPatch) -> None:
         monkeypatch.setenv("LLMWIKI_RUNTIME", "local-4090")
@@ -141,6 +145,11 @@ class TestBackendConfig:
         monkeypatch.setenv("LLMWIKI_OLLAMA_URL", "http://127.0.0.1:11434")
         config = load_backend_config()
         assert config.endpoint == "http://127.0.0.1:11434"
+
+    def test_ollama_timeout_override(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        monkeypatch.setenv("LLMWIKI_OLLAMA_TIMEOUT", "1200")
+        config = load_backend_config()
+        assert config.timeout_seconds == 1200
 
     def test_invalid_runtime_fails_loudly(self) -> None:
         with pytest.raises(ConfigError, match="Valid runtimes"):
@@ -260,3 +269,17 @@ ingest = "Use {source_namespace}."
         with pytest.raises(ConfigError, match="disabled"):
             await _run(args)
         assert not called
+
+
+class TestPdfRecognizerSelection:
+    def test_missing_vision_uses_null_recognizer(self, monkeypatch: pytest.MonkeyPatch) -> None:
+        real_import = __import__
+
+        def fake_import(name: str, *args: Any, **kwargs: Any) -> Any:
+            if name in {"Foundation", "Vision"}:
+                raise ImportError(name)
+            return real_import(name, *args, **kwargs)
+
+        monkeypatch.setattr("builtins.__import__", fake_import)
+
+        assert isinstance(_default_text_recognizer(), NullRecognizer)

@@ -137,6 +137,11 @@ CLI -> User: fail before extraction or model call
 - `priority`: integer; lower numbers compose earlier when multiple profiles are
   selected.
 - `namespace.mode`: initially only `source-slug`.
+- `namespace.require_for_new_pages`: optional boolean; when true, new pages
+  must use the active source namespace.
+- `naming.prevent_singular_plural_siblings`: optional boolean; when true, new
+  pages under the active source namespace cannot be bare singular/plural
+  siblings of existing pages.
 - `overlays.ingest`: optional prompt overlay for normal source ingest.
 - `overlays.pdf_map`: optional prompt overlay for PDF chunk map runs.
 - `overlays.pdf_integrate`: optional prompt overlay for PDF integrate runs.
@@ -148,6 +153,8 @@ The first shipped profile is `rulebook`. Its overlays instruct the model to:
 - Treat catalogs as overview/index pages unless the chunk deeply explains a
   specific entry.
 - Avoid one page per spell, monster, item, or table row by default.
+- Avoid singular/plural sibling pages; use descriptive role suffixes when the
+  same noun names different rulebook roles.
 - Prefer durable lookup pages over broad prose summaries when the source section
   is operational rules.
 
@@ -169,6 +176,10 @@ priority = 100
 
 [namespace]
 mode = "source-slug"
+require_for_new_pages = true
+
+[naming]
+prevent_singular_plural_siblings = true
 
 [overlays]
 ingest = "..."
@@ -227,6 +238,24 @@ Examples:
   calls.
 - Selected profile ids print on ingest stderr as `[ingest-profiles: ...]`.
 - Existing no-profile ingest prompt templates remain unchanged.
+- Live Sword World validation added several profile-adjacent guardrails:
+  - non-Apple platforms fall back to text-layer PDF extraction without requiring
+    Apple Vision OCR;
+  - namespace enforcement can be enabled from profile data with
+    `namespace.require_for_new_pages = true`;
+  - rulebook naming can block new same-namespace singular/plural sibling pages
+    with `naming.prevent_singular_plural_siblings = true`;
+  - chunk map runs use bounded page previews so a large prior chunk page cannot
+    consume the local model's context;
+  - final PDF integration writes through a fixed hub-page adapter, so the model
+    cannot accidentally create `*-hub` or unrelated chapter pages during the hub
+    pass;
+  - the hub writer rescues two observed small-model tool-call malformations:
+    source strings supplied as a single value and `content` embedded in the
+    `summary` field after a `parameter=content>` marker;
+  - the final hub writer now measures links against the chunk manifest and adds
+    a deterministic `Page-Map Navigation` section when the model-authored prose
+    under-links the pages written during chunking.
 
 ## Verification
 
@@ -239,6 +268,13 @@ Examples:
   starting the model.
 - `uv run llmwiki ingest --help` shows repeatable `--profile PROFILE`.
 - `git diff --check` passed.
+- Live validation on `raw/Sword World RPG - Complete Edition.pdf`:
+  - all 69 chunks completed and the manifest was reused with `--reintegrate`
+    while fixing the hub phase;
+  - final hub `wiki/sword-world-rpg-complete-edition.md` was written with 34
+    wiki links, including the deterministic `Page-Map Navigation` fallback;
+  - no stray `sword-world-rpg-complete-edition-hub` or
+    `sword-world-rpg-complete-edition-chapter-13-2-1-humans` page/link remains.
 
 ## Cross-Cutting Concerns
 

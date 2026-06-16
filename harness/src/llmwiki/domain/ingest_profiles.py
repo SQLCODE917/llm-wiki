@@ -29,6 +29,8 @@ class IngestProfile:
     description: str
     priority: int
     namespace_mode: str
+    require_namespace_for_new_pages: bool
+    prevent_singular_plural_siblings: bool
     overlays: dict[OverlayName, str]
 
 
@@ -115,6 +117,16 @@ def profile_summary(profiles: tuple[IngestProfile, ...]) -> str:
     return ", ".join(profile.id for profile in profiles)
 
 
+def required_new_page_prefix(profiles: tuple[IngestProfile, ...], source_path: str) -> str | None:
+    if not any(profile.require_namespace_for_new_pages for profile in profiles):
+        return None
+    return slugify(Path(source_path).stem)
+
+
+def prevents_singular_plural_siblings(profiles: tuple[IngestProfile, ...]) -> bool:
+    return any(profile.prevent_singular_plural_siblings for profile in profiles)
+
+
 def _load_profile(path: Path) -> IngestProfile:
     try:
         data = tomllib.loads(path.read_text(encoding="utf-8"))
@@ -137,6 +149,20 @@ def _load_profile(path: Path) -> IngestProfile:
         raise ConfigError(
             f"Ingest profile {profile_id!r} namespace.mode must be 'source-slug'."
         )
+    require_namespace = namespace.get("require_for_new_pages", False)
+    if not isinstance(require_namespace, bool):
+        raise ConfigError(
+            f"Ingest profile {profile_id!r} namespace.require_for_new_pages must be boolean."
+        )
+    naming = data.get("naming", {})
+    if not isinstance(naming, dict):
+        raise ConfigError(f"Ingest profile {profile_id!r} [naming] must be a table.")
+    prevent_siblings = naming.get("prevent_singular_plural_siblings", False)
+    if not isinstance(prevent_siblings, bool):
+        raise ConfigError(
+            f"Ingest profile {profile_id!r} "
+            "naming.prevent_singular_plural_siblings must be boolean."
+        )
     overlays = _load_overlays(profile_id, data.get("overlays"))
     if not overlays:
         raise ConfigError(f"Ingest profile {profile_id!r} must define at least one overlay.")
@@ -146,6 +172,8 @@ def _load_profile(path: Path) -> IngestProfile:
         description=description,
         priority=priority,
         namespace_mode=namespace_mode,
+        require_namespace_for_new_pages=require_namespace,
+        prevent_singular_plural_siblings=prevent_siblings,
         overlays=overlays,
     )
 

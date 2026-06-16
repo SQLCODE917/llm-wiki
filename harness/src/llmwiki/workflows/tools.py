@@ -1,26 +1,23 @@
-"""Wiki tools exposed to the model, bound to a WikiStore.
-
-Each callable validates its arguments with the same Pydantic model that the
-LLM sees as the tool schema, then delegates to the store. Domain/store
-errors raise with corrective messages — forge feeds them back on the
-tool-error channel for self-correction.
-"""
+"""Wiki tools exposed to the model, bound to a WikiStore."""
 
 from __future__ import annotations
 
-from dataclasses import replace
 from typing import Literal
 
 from forge.core.workflow import ToolDef, ToolSpec
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
-from llmwiki.domain.links import compute_findings
-from llmwiki.domain.pages import WikiPage, parse_page
+from llmwiki.domain.naming import singular_plural_collision
+from llmwiki.domain.pages import WikiPage
 from llmwiki.domain.search import render_hits, search_pages
-from llmwiki.domain.system_pages import ORPHAN_EXEMPT_PAGES
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
+
+_PAGE_PREVIEW_MARKER = (
+    "\n\n[TRUNCATED: page preview; do not rewrite from this partial read. "
+    "For this chunk, write a separate source page instead of rereading this page.]"
+)
 
 
 def _strip_pipeline_markers(content: str) -> str:
@@ -28,6 +25,13 @@ def _strip_pipeline_markers(content: str) -> str:
     (e.g. the OCR caveat tag) are internal plumbing, never wiki content —
     observed quoted verbatim into a page despite the schema forbidding it."""
     return "\n".join(line for line in content.splitlines() if OCR_MARKER not in line)
+
+
+def _normalize_source_value(value: str) -> str:
+    stripped = value.strip()
+    if "(raw/" in stripped and ")" in stripped:
+        stripped = stripped.split("(raw/", 1)[1].split(")", 1)[0]
+    return stripped.removeprefix("raw/")
 
 
 class ReadSourceParams(BaseModel):
@@ -64,17 +68,16 @@ class WritePageParams(BaseModel):
         description="Raw source paths this page draws on, e.g. ['article.md'].",
     )
 
+    @field_validator("sources", mode="before")
+    @classmethod
+    def coerce_single_source(cls, value: object) -> object:
+        if isinstance(value, str):
+            return [_normalize_source_value(value)]
+        return value
+
 
 class FinishParams(BaseModel):
     report: str = Field(description="Short report of what was done and what changed.")
-
-
-class LinkOrphanParams(BaseModel):
-    from_page: str = Field(
-        description="Existing page that should link to the orphan, e.g. "
-        "'javascriptallonge-closures-and-scope'."
-    )
-    orphan_page: str = Field(description="Existing orphan page to link to, e.g. 'closure'.")
 
 
 def read_source_tool(store: WikiStore) -> ToolDef:
@@ -131,18 +134,42 @@ def read_index_tool(store: WikiStore, read_tracker: set[str] | None = None) -> T
     )
 
 
-def read_page_tool(store: WikiStore, read_tracker: set[str] | None = None) -> ToolDef:
+def read_page_tool(
+    store: WikiStore,
+    read_tracker: set[str] | None = None,
+    max_chars: int | None = None,
+    track_truncated_reads: bool = True,
+) -> ToolDef:
+    previewed: set[str] = set()
+
     def _read_page(**kwargs: object) -> str:
         params = ReadPageParams(**kwargs)  # type: ignore[arg-type]
         text = store.read_page(params.name)
-        if read_tracker is not None:
+        truncated = max_chars is not None and len(text) > max_chars
+        if truncated and params.name in previewed:
+            return (
+                f"Page '{params.name}' is too large for this chunk run and was "
+                "already previewed. Do not call read_page for it again; write "
+                "a separate source page for the current chunk or inspect a "
+                "smaller related page."
+            )
+        if read_tracker is not None and (track_truncated_reads or not truncated):
             read_tracker.add(params.name)
+        if truncated and max_chars is not None:
+            previewed.add(params.name)
+            return text[:max_chars] + _PAGE_PREVIEW_MARKER
         return text
 
+    description = "Read the full text of one wiki page."
+    if max_chars is not None:
+        description = (
+            "Read a bounded preview of one wiki page. If the result is marked "
+            "TRUNCATED, do not rewrite that page from the preview."
+        )
     return ToolDef(
         spec=ToolSpec(
             name="read_page",
-            description="Read the full text of one wiki page.",
+            description=description,
             parameters=ReadPageParams,
         ),
         callable=_read_page,
@@ -156,6 +183,8 @@ def write_page_tool(
     read_tracker: set[str] | None = None,
     write_log: list[str] | None = None,
     evidence_policy: EvidencePolicy | None = None,
+    new_page_prefix: str | None = None,
+    prevent_singular_plural_siblings: bool = False,
 ) -> ToolDef:
     """write_page, optionally guarded by a read-before-rewrite contract.
 
@@ -181,6 +210,26 @@ def write_page_tool(
                 f"it entirely. Call read_page(name='{params.name}') first, "
                 "then rewrite it carrying forward the content you keep."
             )
+        if new_page_prefix is not None and params.name not in store.list_pages():
+            valid = params.name == new_page_prefix or params.name.startswith(f"{new_page_prefix}-")
+            if not valid:
+                raise WikiStoreError(
+                    f"New page '{params.name}' must use the active ingest profile "
+                    f"namespace prefix '{new_page_prefix}'. Use '{new_page_prefix}-{params.name}' "
+                    "or update an existing generic page only after reading it first."
+                )
+        if (
+            prevent_singular_plural_siblings
+            and new_page_prefix is not None
+            and params.name not in store.list_pages()
+        ):
+            collision = singular_plural_collision(
+                params.name,
+                set(store.list_pages()),
+                namespace=new_page_prefix,
+            )
+            if collision is not None:
+                raise WikiStoreError(collision.render_for_tool())
         body = _strip_pipeline_markers(params.content)
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
@@ -218,51 +267,6 @@ def write_page_tool(
         callable=_write_page,
         prerequisites=prerequisites or [],
     )
-
-
-def link_orphan_tool(store: WikiStore, today: str) -> ToolDef:
-    """Deterministically add one inbound wiki link to repair an orphan page."""
-
-    def _link_orphan(**kwargs: object) -> str:
-        params = LinkOrphanParams(**kwargs)  # type: ignore[arg-type]
-        if params.from_page == params.orphan_page:
-            raise WikiStoreError("from_page and orphan_page must be different pages.")
-        source = parse_page(params.from_page, store.read_page(params.from_page))
-        store.read_page(params.orphan_page)  # verifies the target exists before writing.
-        link = f"[[{params.orphan_page}]]"
-        if link in source.body:
-            return f"wiki/{params.from_page}.md already links to {link}; no change needed."
-        findings = compute_findings(
-            store.page_texts(),
-            store.index_names(),
-            exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
-        )
-        if params.orphan_page not in findings.orphan_pages:
-            raise WikiStoreError(
-                f"Page '{params.orphan_page}' is not currently an orphan. "
-                "Use link_orphan only for pages listed in the deterministic orphan findings."
-            )
-        body = _append_related_link(source.body, link)
-        store.write_page(replace(source, body=body, updated=today))
-        return (
-            f"Added {link} to wiki/{params.from_page}.md. "
-            f"This creates an inbound link to {params.orphan_page}."
-        )
-
-    return ToolDef(
-        spec=ToolSpec(
-            name="link_orphan",
-            description="Fix one orphan page by adding a deterministic inbound "
-            "[[orphan-page]] link from a related existing page. Prefer this "
-            "over rewriting either page when the finding is only orphan status.",
-            parameters=LinkOrphanParams,
-        ),
-        callable=_link_orphan,
-    )
-
-
-def _append_related_link(body: str, link: str) -> str:
-    return body.rstrip() + f"\n\nRelated: {link}.\n"
 
 
 def finish_tool(name: str, description: str) -> ToolDef:

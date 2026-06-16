@@ -27,6 +27,7 @@ async def start_backend(config: BackendConfig) -> ActiveBackend:
     client = OllamaClient(
         model=config.model,
         base_url=config.endpoint,
+        timeout=float(config.timeout_seconds),
         think=False,
     )
     server, context_manager = await setup_backend(

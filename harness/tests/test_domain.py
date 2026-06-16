@@ -317,7 +317,9 @@ class TestLog:
 
 class TestLinks:
     def test_extract_links(self) -> None:
-        assert extract_links("See [[alpha]] and [[beta-2]]. Not [link].") == {"alpha", "beta-2"}
+        assert extract_links(
+            "See [[alpha]], [[beta-2|shown label]], and [[gamma]]. Not [link]."
+        ) == {"alpha", "beta-2", "gamma"}
 
     def test_findings_detect_all_issue_kinds(self) -> None:
         pages = {

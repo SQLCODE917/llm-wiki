@@ -106,6 +106,73 @@ class TestWikiLayer:
     def test_index_and_log_not_listed_as_pages(self, store: WikiStore) -> None:
         assert store.list_pages() == []
 
+    def test_rename_page_rewrites_inbound_links_and_index(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page(name="wraith"))
+        store.write_page(
+            WikiPage(
+                name="hub",
+                category="source",
+                summary="Hub.",
+                body="See [[wraith]] and [[wraith|old label]].",
+                updated="2026-06-10",
+            )
+        )
+
+        store.rename_page("wraith", "wraith-form", summary="Spell effect.", today="2026-06-16")
+
+        assert not (paths.wiki_dir / "wraith.md").exists()
+        assert (paths.wiki_dir / "wraith-form.md").exists()
+        assert "[[wraith-form]]" in store.read_index()
+        assert "[[wraith]]" not in store.read_index()
+        hub = store.read_page("hub")
+        assert "[[wraith-form]]" in hub
+        assert "[[wraith-form|old label]]" in hub
+
+    def test_merge_page_removes_old_page_and_preserves_target(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            WikiPage(
+                name="daemons",
+                category="entity",
+                summary="Plural target.",
+                body="Target body.",
+                sources=("raw/book.pdf p.1",),
+                updated="2026-06-10",
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="daemon",
+                category="entity",
+                summary="Duplicate drift.",
+                body="Duplicate body.",
+                sources=("raw/book.pdf p.2",),
+                updated="2026-06-11",
+            )
+        )
+        store.write_page(
+            WikiPage(
+                name="hub",
+                category="source",
+                summary="Hub.",
+                body="See [[daemon]].",
+                updated="2026-06-10",
+            )
+        )
+
+        store.merge_page("daemon", "daemons", summary="Merged daemon type.", today="2026-06-16")
+
+        assert not (paths.wiki_dir / "daemon.md").exists()
+        target = store.read_page("daemons")
+        assert "Target body." in target
+        assert "Duplicate body." not in target
+        assert "raw/book.pdf p.1" in target
+        assert "raw/book.pdf p.2" in target
+        assert "[[daemons]]" in store.read_page("hub")
+
 
 class TestLog:
     def test_append_log_is_append_only(self, store: WikiStore, paths: WikiPaths) -> None:

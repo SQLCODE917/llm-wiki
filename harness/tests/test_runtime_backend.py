@@ -15,10 +15,12 @@ class FakeClient:
         self,
         model: str,
         base_url: str,
+        timeout: float,
         think: bool,
     ) -> None:
         self.model = model
         self.base_url = base_url
+        self.timeout = timeout
         self.think = think
         self.closed = False
 
@@ -38,9 +40,14 @@ class FakeServer:
 async def test_start_backend_uses_ollama_profile(monkeypatch: pytest.MonkeyPatch) -> None:
     calls: dict[str, Any] = {}
 
-    def fake_client(model: str, base_url: str, think: bool) -> FakeClient:
-        calls["client"] = {"model": model, "base_url": base_url, "think": think}
-        return FakeClient(model=model, base_url=base_url, think=think)
+    def fake_client(model: str, base_url: str, timeout: float, think: bool) -> FakeClient:
+        calls["client"] = {
+            "model": model,
+            "base_url": base_url,
+            "timeout": timeout,
+            "think": think,
+        }
+        return FakeClient(model=model, base_url=base_url, timeout=timeout, think=think)
 
     async def fake_setup_backend(**kwargs: Any) -> tuple[FakeServer, object]:
         calls["setup"] = kwargs
@@ -55,12 +62,14 @@ async def test_start_backend_uses_ollama_profile(monkeypatch: pytest.MonkeyPatch
         model="qwen3-coder:30b",
         context_tokens=32768,
         endpoint="http://127.0.0.1:11434",
+        timeout_seconds=1200,
     )
     active = await backend_module.start_backend(config)
 
     assert calls["client"] == {
         "model": "qwen3-coder:30b",
         "base_url": "http://127.0.0.1:11434",
+        "timeout": 1200.0,
         "think": False,
     }
     assert calls["setup"]["backend"] == "ollama"

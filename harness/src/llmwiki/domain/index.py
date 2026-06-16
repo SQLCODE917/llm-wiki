@@ -102,3 +102,13 @@ def upsert_index_entry(text: str, name: str, category: str, summary: str) -> str
             result.pop()
         result.append(_entry_line(name, summary))
     return "\n".join(result) + "\n"
+
+
+def remove_index_entry(text: str, name: str) -> str:
+    """Remove the entry for *name* from index.md, if present."""
+    lines = [
+        line
+        for line in text.splitlines()
+        if not (_ENTRY_RE.match(line.strip()) and _ENTRY_RE.match(line.strip())["name"] == name)  # type: ignore[index]
+    ]
+    return "\n".join(lines) + "\n"

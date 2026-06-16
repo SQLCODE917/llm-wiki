@@ -47,6 +47,7 @@ from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint
 from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES, SEMANTIC_LINT_PAGE
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
+from llmwiki.pdf.recognizer import NullRecognizer, TextRecognizer
 from llmwiki.pdf.vision import AppleVisionRecognizer
 from llmwiki.runtime.backend import start_backend
 from llmwiki.runtime.chat_repl import ChatRepl
@@ -168,6 +169,20 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Fail if wiki/wiki-graph.json is missing, invalid, or stale.",
     )
 
+    pages = sub.add_parser(
+        "pages",
+        help="Deterministic page maintenance operations.",
+    )
+    page_sub = pages.add_subparsers(dest="page_op", required=True)
+    rename = page_sub.add_parser("rename", help="Rename a page and rewrite inbound links.")
+    rename.add_argument("old", help="Existing page slug.")
+    rename.add_argument("new", help="New page slug.")
+    rename.add_argument("--summary", help="Replacement index summary for the renamed page.")
+    merge = page_sub.add_parser("merge", help="Merge an old page into an existing target page.")
+    merge.add_argument("old", help="Existing page slug to remove.")
+    merge.add_argument("target", help="Existing page slug to keep.")
+    merge.add_argument("--summary", help="Replacement index summary for the target page.")
+
     sub.add_parser(
         "profiles",
         help="List configured ingest profiles without starting a model.",
@@ -201,11 +216,20 @@ def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
             pdf_path,
             source_rel,
             cache_root=paths.cache_dir,
-            recognizer=AppleVisionRecognizer(),
+            recognizer=_default_text_recognizer(),
             reextract=reextract,
         )
 
     return extract
+
+
+def _default_text_recognizer() -> TextRecognizer:
+    try:
+        import Foundation  # noqa: F401
+        import Vision  # noqa: F401
+    except ImportError:
+        return NullRecognizer()
+    return AppleVisionRecognizer()
 
 
 async def _run(args: argparse.Namespace) -> OperationResult:
@@ -224,6 +248,9 @@ async def _run(args: argparse.Namespace) -> OperationResult:
     if args.op == "graph":
         paths.validate_status()
         return _run_graph(args, paths, now.date().isoformat())
+    if args.op == "pages":
+        paths.validate_status()
+        return _run_pages(args, paths, now.date().isoformat())
 
     if args.op == "contradictions":
         return await _run_contradictions(args, paths, now)
@@ -491,6 +518,22 @@ def _run_graph(args: argparse.Namespace, paths: WikiPaths, today: str) -> Operat
     report = status.render()
     store.append_log(today, "graph", "wiki graph", report)
     return OperationResult("graph", "wiki graph", report, None)
+
+
+def _run_pages(args: argparse.Namespace, paths: WikiPaths, today: str) -> OperationResult:
+    store = WikiStore(paths)
+    store.ensure_navigation_files()
+    if args.page_op == "rename":
+        store.rename_page(args.old, args.new, summary=args.summary, today=today)
+        detail = f"Renamed [[{args.old}]] to [[{args.new}]] and rewrote inbound links."
+        store.append_log(today, "pages", args.new, detail)
+        return OperationResult("pages", args.new, detail, None)
+    if args.page_op == "merge":
+        store.merge_page(args.old, args.target, summary=args.summary, today=today)
+        detail = f"Merged [[{args.old}]] into [[{args.target}]] and rewrote inbound links."
+        store.append_log(today, "pages", args.target, detail)
+        return OperationResult("pages", args.target, detail, None)
+    raise ConfigError(f"Unknown pages operation {args.page_op!r}.")
 
 
 def _run_candidates(args: argparse.Namespace, paths: WikiPaths, today: str) -> OperationResult:

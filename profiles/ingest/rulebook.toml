@@ -5,12 +5,18 @@ priority = 100
 
 [namespace]
 mode = "source-slug"
+require_for_new_pages = true
+
+[naming]
+prevent_singular_plural_siblings = true
 
 [overlays]
 ingest = """
-This source is an operational rulebook. Use `{source_namespace}` as the naming
-namespace for ambiguous domain pages, e.g. `{source_namespace}-core-rules`
-rather than generic names like `core-rules`.
+This source is an operational rulebook. New pages that are specific to this
+source MUST use `{source_namespace}` as a prefix, e.g.
+`{source_namespace}-core-rules` rather than generic names like `core-rules`.
+Only update a generic page when it already exists and you read it first because
+it is a genuinely cross-domain concept.
 
 Preserve procedures, prerequisites, exceptions, examples, and table lookup
 meaning. Prefer durable lookup pages over broad prose summaries when a section
@@ -19,12 +25,22 @@ explains how to run or adjudicate the game.
 Do not create one page per catalog row, spell, monster, item, or table entry by
 default. Create overview/index pages for catalogs, and promote a specific entry
 only when the source section deeply explains it.
+
+When the same noun can refer to multiple rulebook roles, use a descriptive
+role suffix rather than a bare singular/plural page pair. Prefer names like
+`{source_namespace}-<topic>-rules`, `{source_namespace}-<topic>-spell`,
+`{source_namespace}-<topic>-monster`, `{source_namespace}-<topic>-item`, or
+`{source_namespace}-<topic>-lore` when the distinction matters.
 """
 
 pdf_map = """
 This chunk is part of an operational rulebook selected with profile(s):
-{profile_ids}. Use `{source_namespace}` as the naming namespace for ambiguous
-rule pages created from this source.
+{profile_ids}. New pages that are specific to this source MUST use
+`{source_namespace}` as a prefix. Do not create generic pages such as
+`skills`, `magic`, `replay-collections`, `scenario-collections`, `weapons`,
+`monsters`, or `character-creation`; use source-prefixed names instead. Only
+update a generic page when it already exists and you read it first because it is
+a genuinely cross-domain concept.
 
 When writing chunk pages, preserve the rule purpose, procedure, prerequisites,
 exceptions, examples, and page-range citations. For tables and charts, capture
@@ -34,6 +50,11 @@ pretend to reproduce every row unless the chunk is specifically about that row.
 For catalogs such as spells, monsters, items, skills, or weapons, prefer
 overview/index pages and cross-links. Do not create one page per entry by
 default; create or update only entries the chunk treats in depth.
+
+Do not create singular/plural sibling pages to distinguish meanings. If a
+bare noun already exists in this source namespace, update it when it is the
+same topic; otherwise choose a descriptive suffix such as `rules`, `spell`,
+`monster`, `item`, `lore`, `class`, `skill`, or `chart`.
 """
 
 pdf_integrate = """
@@ -41,10 +62,10 @@ Finish this rulebook ingest as a navigable rules reference. Ensure the hub page
 for `{source_slug}` links the major rules areas, catalogs, charts, and setting
 sections written during chunking.
 
-Use `{source_namespace}` for ambiguous source-domain page names. In the hub and
-cross-links, distinguish player-facing rules, game-master guidance, optional
-rules, catalogs, charts, and setting/lore material when the source supports that
-structure.
+Use `{source_namespace}` as the source-specific page prefix when adding or
+linking rulebook pages. In the hub and cross-links, distinguish player-facing
+rules, game-master guidance, optional rules, catalogs, charts, and setting/lore
+material when the source supports that structure.
 
 Do not turn computed key lists into hand-written catalogs. The harness owns hub
 key lists; the model should write prose navigation and links.

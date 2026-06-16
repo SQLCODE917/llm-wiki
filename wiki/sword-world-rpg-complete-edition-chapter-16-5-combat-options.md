@@ -1,0 +1,223 @@
+---
+category: source
+summary: Optional rules for combat options in Sword World RPG, including full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim.
+sources: Sword World RPG - Complete Edition.pdf
+updated: 2026-06-16
+---
+
+## Chapter 16.5: Combat Options
+
+This section presents optional rules that allow for a variety of attack methods, rather than just simple attacks.
+
+### Full Defense
+
+When an opponent is too strong, and fighting normally is of no use, an adventurer can **focus wholly on defense**. When focusing on defense, an adventurer _cannot_ attack or use any magic during that round. In return, you'll gain a +2 bonus to your _evasion speed_.
+
+### Strong Blow
+
+When a foe cannot evade, or if they're so cornered they have no choice but to defend, an adventurer can put everything they have into their attack. When the opponent is unable to evade, or the adventurer is cornered and there is no point in defending, the adventurer can use all his or her attacks.
+
+At this time, you can choose one of the following:
+1. Bonus Damage +2
+2. Critical Target -1
+
+This action can be performed in combination with the _mow down_, _ram_, and _area aim_ actions (all described below). You cannot declare _mercy_ (of course!). However, if you're attacked during the round in which you took this action, your _evasion speed_ will be reduced by -4.
+
+When using this optional rule, ignore the _critical target -1 when attacking a sleeping or defenseless target_ rule (see p. 139). This is because it's automatically assumed to be a strong blow. You can choose _critical target -1_, or you can choose _bonus damage +2_ instead.
+
+### Charge
+
+When an adventurer is armed with a spear, etc. he or she can **charge** an opponent and use his or her weight and speed to deal great damage. Since you can attack and move at the same time, you'll also be able to attack from a slightly distant position (you can attack while performing _full movement_). This is resolved as follows.
+
+Weapons that can perform a _charge_ are limited to spears, pole weapons (which can _thrust_, see below), and lances.
+
+First there must be a _margin_ of _**weapon length (requires strength x 15 cm) x 2**_ **to** _**adventurer's agility x 3**_ meters between the adventurer and the opponent. If you're any closer than this, it's not possible to charge, and if you're any further away, you cannot reach your opponent.
+
+The hit check for the charge is made at the _end_ of the round (at action order 0). However, if the one _being_ charged attempts to counterattack the one _performing_ the charge, his or her action will be _delayed_. Magic, projectiles, etc. are resolved _before_ the charge takes place. If you're attacked by a projectile in the middle of a charge, your evasion against it _always_ suffers a -4 penalty.
+
+There are _no_ score modifiers to the _hit check_ of a charge. If it hits, add +10 to strike power when determining damage.
+
+An opponent who's struck by a charge can take a counterattack action in response. _Regardless_ of whether the charge was a hit or a failure, the opponent _can_ attack at the _end of the round_. If you charged, you'll suffer a -4 penalty to your evasion when dodging this attack. Of course, this is _not_ possible if you're taking a different action, such as casting magic, etc.
+
+If your opponent's weapon is a spear, etc., you may _both_ charge each other - this includes cases where you're waiting. In this case, attack order is determined by the weapons' _length_. A weapon's length is proportional to its _required strength_, so make your hit checks based on the weapon with the _greater_ required strength.
+
+### Snipe
+
+Bows and crossbows can be **aimed and fired at a vital point** if the target is completely unaware and not moving around much (they _cannot_ be aimed and fired if the target is aware of the sniper's presence and is alert to their surroundings, or if they're fervently moving around).
+
+In this case, if you spend one round aiming, you can reduce the _critical target_ by 1 if the shot hits. You may spend up to **4** rounds aiming and the critical target may go as low as **-4**. In this case, you will _not_ gain a bonus to your hit check using this method (since your opponent is not aware of you, your _opponent_ suffers an automatic -4 penalty to _evasion_).
+
+However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_.
+
+#### Example:
+The adventurer Ducard II sneaks close to a goblin's cave and hides in the bushes. There's a guard standing at the entrance, but he doesn't seem to notice Ducard II. Ducard II loads an arrow into his short bow, spends three rounds aiming, and fires on the fourth round. If it hits, the critical target will be reduced by -3, making it 7.
+
+Ducard II makes a strike roll. It's an 8. That's a _critical_. He _can_ continue to roll to increase the damage, but from here on the critical target will be determined as the normal _10_. If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
+
+However, while _aiming_, there's a chance that your opponent will sense your presence. To prevent this, you can use the thief skill's _hide_ ability or the ranger skill's _camouflage_ ability. You must make a success roll each round. The _difficulty_ is the opponent's _monster level_. If you fail, your opponent will notice you, you'll _no longer_ receive bonuses from aiming, and you'll also _miss_ the chance for a _surprise attack_.
+
+When your opponent is a character, he or she can notice you by using the _sense danger_ ability. The target must make a success roll using _ranger skill level + intelligence bonus_ as the baseline score, and compare his or her final score with that of the sniper's _hide_ / _camouflage_. If the target's final score is greater, or if they're equal, the sniper's presence will be noticed.
+
+Please note that with other projectiles such as slings, etc. you _cannot_ reduce the critical target by aiming.
+
+### Mow Down
+
+A character can only do this if he or she has a two-handed weapon and it's the type that cuts (sword, ax, pole weapon that can _cut_). When there are multiple enemies in front of you, you can swing your weapon horizontally and **attack them all at once**.
+
+When taking on this attack, the _number of enemies you target at once_ will equal a penalty to your attack power. It'll be _-2_ if you attack _two_ at a time, _-3_ if you attack _three_ at the same time, etc. If it hits, damage is determined as normal.
+
+_Mow down_ can only be performed against enemies in _front_ of you. Usually there won't be more than three. If you do decide to mow down, you _must_ attack _all_ enemies in front of you. For example, if there are _three_, you _cannot_ attack only _two_ of them.
+
+### Grapple
+
+This action is like wrestling, in which you attempt to fight by grappling with your opponent.
+
+To attempt a **grapple**, you must first _not_ be holding any large weapons or shields in your hands. Then, any attempt to grapple will automatically occur at the _end_ of the round.
+
+Anyone who attempts to grapple will suffer a -2 penalty to his or her attack power, then must make a hit check for their attack. If you succeed (and your opponent fails to evade), you'll enter a grapple.
+
+Once you've entered a grapple, the _only_ weapons you can use are daggers and garrotes (described below). Large weapons must be kept out of hand. When grappling, both sides automatically become _prone_.
+
+Actions that characters in a grapple can take are limited to the following.
+
+#### 1. Normal Attack
+
+Attack with a dagger, barehanded (claws, talons), cestus, etc. If a monster has fangs, it can also bite. Opponents have a -2 penalty to evasion.
+
+#### 2. Strangle/Continue to Strangle/Escape
+
+**Strangle** your opponent barehanded or with a garrote. Opponents have a -2 penalty to evasion. Once strangling, the strangler can automatically deal damage every round. If you're barehanded, strike power is 0 (critical target 12), and if you're using a garrote, strike power is 10 (critical target 10). Only _adventurer level_ can reduce strangling damage.
+
+If you're being strangled, the _only_ thing you can do in the rounds onward is attempt to break free. To resolve breaking free, the one being strangled must make a success roll using _adventurer level + strength bonus_ as the baseline score, while the strangler must make one using _fighter/thief skill level + strength bonus_ . If the final score of the one trying to break free is greater, or if there's a tie, he or she will escape. While being strangled, you cannot make any sound at all, so you _cannot_ use magic.
+
+Also, even if your character doesn't suffer damage, if or she remains strangled for a _number of rounds equal to his or her life force_, life force will immediately fall to 0, he or she will fall _unconscious_, and you'll need to make a _death check_.
+
+You _must_ make a death check _every_ round so long as the strangling continues, even if you do _not_ suffer any damage.
+
+However, you _cannot_ attack monsters that _don't breathe_ (undead, etc.), monsters that are _much larger than your character_ (ogres, etc.), or those that wear _metal armor_, by strangling. You cannot deal damage to these, nor can you suffocate them.
+
+#### 3. Pin Down
+
+Use your strength and weight to **pin down** your opponent. To resolve this, the one attempting to pin down must make a success roll using _fighter/thief skill level + strength bonus_ as the baseline score, while the one resisting must make one using _adventurer level + strength bonus_ . If the pinner's is greater, the pin is successful.
+
+Once pinning, the pinner will automatically continue in that state and can perform normal attacks (of course, weapons are restricted). However, the one being pinned can attempt to break free. At this time, please make the same check.
+
+#### 4. Using Holy Magic or Common Runes
+
+Even while grappling, you can use holy magic so long as you can speak. It's _not_ possible while being _strangled_, but if you're merely being _pinned down_, you _can_ use holy magic. Common runes require you to not only be able to speak, but to _also_ be able to use a catalyst. It's usually a ring, so you _can_ use it.
+
+Ancient magic, spirit magic, and spellsongs _cannot_ be used.
+
+#### 5. Escape from Grapple
+
+To escape from a grapple, make a success roll check using _adventurer level + agility bonus_ as the baseline score. An opponent who is trying to maintain the grapple may counter this by making one using _adventurer level + agility bonus_ _**or** adventure level + strength bonus_ as the baseline score, whichever is greater. If the one trying to escape's final score is greater, or if there's a tie, the grapple will be broken. Both sides will fall _prone_, with a short distance between them. Weapons you dropped when entering the grapple will probably be lying around nearby.
+
+Those being strangled or pinned down _cannot_ attempt to escape from a grapple unless they _first_ escape from _those_ conditions. If the strangler or pinner attempts to escape, he or she will automatically succeed.
+
+It's fine for the game master to have certain monsters attempt to grapple. Wolves, tigers, etc. perform such attacks. For adventurers who rely on weapons, this may pose a threat. Of course, a monster that does not have hands cannot _strangle_.
+
+### Attacks and Magic Against Grapplers
+
+When attacking a target who is grappling from outside with a melee weapon, roll 1D. If you roll 1~3, you can aim at your enemy. Perform a hit check as normal. At this time, your enemy suffers a penalty (-2) for being _prone_. Even if this attack misses, it will _not_ hit your allies.
+
+If you roll 4~5, you _cannot_ attack. This is because both your enemies _and_ allies are fervently moving around. However, if your enemy is being _strangled_ or _pinned down_, you _can_ attack them.
+
+If you roll a 6, you will unfortunately attack your _ally_ by accident. This is an automatic hit. Please make a damage check immediately.
+
+When attacking a grappler with a projectile or casting (shooting-type) single-target magic, you must decide who your target will be completely at _random_.
+
+### Ram
+
+This is an attack method where you knock an opponent **prone** by charging forward. This can _only_ be performed with the _fighter skill_, it _cannot_ be used with the _thief skill_. If your attack hits, make a strike power 0 and critical target 12 damage check. At the same time, the opponent must determine whether he or she fell _prone_.
+
+The attacker must make a success roll using _fighter skill level + strength bonus_ as the baseline score, while the defender must make one using either _adventurer level + strength bonus_ _**or** adventurer level + life force bonus_ ( _life point resistance - 7_ for monsters), whichever is greater. If the attacker's final score is greater, the opponent will fall _prone_. Conditions such as poor footing, etc. will impose a penalty on the attacker's success roll.
+
+However, this only applies to those who walk on two legs. It's also _not_ possible to knock a _huge_ opponent prone, such as one of the _titans_ type.
+
+If you use this optional rule, then if successfully hit by a monster whose attack method is _ram_ , a character must determine whether he or she has fallen _prone_.
+
+### Area Aim
+
+This is an attack method that **targets a specific body part of an opponent**. You'll suffer a penalty to your attack power, but if you hit, you'll attain a _special effect_. Damage calculation remains exactly the same as usual. If you don't want to kill your opponent, you can declare _mercy_ (if it's a blunt weapon).
+
+#### Head Aim
+
+Attack power modifier: -4
+
+If it hits and further deals damage, there is a chance that your opponent will fall **unconscious**. The opponent must make a life force (points) resistance roll against a target score of 10, with _damage dealt to life force (points)_ as a penalty.
+
+If he or she fails, they'll fall unconscious. Recovery takes _2D x 10_ minutes.
+
+Monsters with _mental attack immunity_ cannot be knocked unconscious.
+
+#### Arm Aim
+
+Attack power modifier: -2
+
+If it hits and further deals damage, your opponent may **drop what he or she** **was holding**. Your opponent must make a life force (points) resistance roll against a target score of 10 and with _damage dealt to life force_ as a penalty. If he or she fails, they'll drop what they were holding. Since you can only aim at _one_ arm at a time, you _cannot_ make your opponent drop a _two-handed_ weapon using this method (if you make _two_ attacks with _two_ weapons, each aimed at a _different_ arm, and hit, they'll drop _both_ if they fail _both_ resistance rolls, as described below).
+
+#### Leg Aim
+
+Attack power modifier: -2
+
+If it hits and further deals damage, your opponent may fall **prone**. Your opponent must make a life force (points) resistance roll against a target score of 10 and with _damage dealt to life force (points)_ as a penalty. If he or she fails, they will fall _prone_.
+
+#### Weapon Aim
+
+Attack power modifier: -2
+
+Aim at your opponent's weapon. In this case, you _cannot_ deal damage to your opponent's life force. If it hits, your opponent must make a success roll against target score 10, using _adventurer level + strength bonus_ as the baseline score. At this time, if the defender is holding a _two-handed_ weapon, he or she will gain a +2 bonus.
+
+On the other hand, this success roll also suffers a penalty depending on how forcefully the attacker's weapon strikes.
+
+Calculate the penalty as follows:
+1. Make a strike roll the same as you would for a normal attack. However, this strike roll _cannot_ result in a _critical_.
+2. Add the attacker's bonus damage to the result in 1.
+3. Subtract the defender's adventurer level from the result in 2. This final result is the penalty for the success roll.
+
+These processes are for when the opponent is a human or a similar race. If an area aim is declared against other monsters, the game master should refer to these and use common sense when making decisions. For example, you probably won't be able to knock a four-legged monster _prone_ even if you aim for its legs. Aiming for a weapon will be in vain against monsters that attack with fangs and claws on their bodies.
+
+## Chapter 16.6: Holding Weapons in Both Hands
+
+In the basic rules, characters cannot hold separate weapons in each hand. However, there are many people who admire dual wielding. This section presents extended rules for **holding weapons in both hands**.
+
+### 16.6.1 Character's Dominant Hand
+
+Characters are generally righthanded or left-handed, but in actuality there are also people who are _ambidextrous_. Therefore, when creating an adventurer, let's say that if you roll 2D and get _double sixes_, they'll be ambidextrous.
+
+Left-handed or right-handedness is decided by the player's preference.
+
+### 16.6.2 Two-Handed Attacks
+
+If a character has weapons in both hands, he or she has three options for attacking.
+
+**Attack with the weapon in your dominant hand** = Same as basic rules. **Attack with the weapon in your opposite hand** = -2 penalty to attack power.
+
+**Attack with both hands at the same time** = _-2_ penalty to attack with _dominant_ hand, _-4_ penalty to attack with _opposite_ hand. Also, the required strength for _one_ of the weapons is limited to _half your own strength (rounded up)_ . If you're fighting with the thief skill, the required strength for _both_ weapons is only _half_ the character's strength. There's _no_ need to reduce one to a quarter.
+
+When a character is ambidextrous, there is _no_ opposite hand. If you attack with only _one_ hand, there is _no_ penalty, and if you attack with _both_ hands, the penalty is only _-2_ for each.
+
+## Chapter 16.7: Throwing Multiple Darts or Daggers
+
+It's possible to throw **multiple** darts or daggers at once. However, the following restrictions occur in this case:
+
+1. All objects thrown at the same time must have the _same weight_ (required strength).
+2. The _total required strength_ must be up to the _character's strength_ (or _half_ that if it's the thief skill).
+3. The _number_ thrown at the same time becomes a _penalty_ to attack power. For example, if you throw _three_ at the same time, that'll incur a -3 penalty to your attack power for each hit check.
+4. You _cannot_ choose _multiple_ targets. There must _always_ be _one_ target.
+
+This optional rule increases the chance that a high-level character will defeat a low-level character or monster in one blow.
+
+Never forget the limitation of projectiles: they _cannot_ be used while in an _engagement_.
+
+## Chapter 16.8: Weapons and Armor That Are Too Heavy
+
+A Character can also use weapons and armor whose required strength **exceeds** his or her own strength. However, at this time, you'll suffer a penalty to your _attack power_ or _evasion speed_.
+
+### If a Weapon or Shield's Required Strength Exceeds Your Strength
+
+For each point of required strength, reduce _attack power_ by -1. If one in _one hand_ is too heavy, you will receive a penalty, but there will be _no_ stacking. For example, if your sword is 3 too heavy in required strength and your shield is 2 too heavy in required strength, your penalty is **-3**.
+
+### If Armor's Required Strength Exceeds Your Strength
+
+For each point of required strength, reduce _evasion speed_ by 1. At the game master's decision, any success roll that uses _agility bonus_ as a baseline score may be subject to an _equal_ penalty.

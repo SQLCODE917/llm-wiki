@@ -11,7 +11,7 @@ import re
 from collections.abc import Mapping
 from dataclasses import dataclass, field
 
-_LINK_RE = re.compile(r"\[\[([a-z0-9-]+)\]\]")
+_LINK_RE = re.compile(r"\[\[([a-z0-9-]+)(?:\|[^\]]+)?\]\]")
 
 
 def extract_links(text: str) -> set[str]:

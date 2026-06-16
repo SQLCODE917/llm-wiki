@@ -47,9 +47,12 @@ def _fake_extraction(
 
 
 def _write_page_call(name: str) -> ToolCall:
+    content = "Body."
+    if name == "book":
+        content = "Hub links [[functions]] and [[closures]]."
     return ToolCall(
         tool="write_page",
-        args={"name": name, "category": "source", "summary": f"About {name}.", "content": "Body."},
+        args={"name": name, "category": "source", "summary": f"About {name}.", "content": content},
     )
 
 
@@ -80,7 +83,7 @@ def _map_turns(page: str, note: str) -> list:
 
 
 _INTEGRATE_TURNS = [
-    [_write_page_call("javascriptallonge")],
+    [_write_page_call("book")],
     [ToolCall(tool="finish_ingest", args={"report": "Hub linked to 2 chapter pages."})],
 ]
 
@@ -101,7 +104,7 @@ class TestPdfIngest:
 
         assert result.output == "Hub linked to 2 chapter pages."
         # Both map chunks wrote pages; integrate wrote the hub.
-        assert {"functions", "closures", "javascriptallonge"} <= set(store.list_pages())
+        assert {"functions", "closures", "book"} <= set(store.list_pages())
         # Manifest on disk: all done + integrated, notes captured.
         saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
         assert saved.all_done and saved.integrated
@@ -127,7 +130,9 @@ class TestPdfIngest:
         assert saved.chunks[0].notes == "done already"
         assert saved.chunks[1].notes == "resumed fine"
 
-    async def test_digest_reaches_integrate_run(self, store: WikiStore, paths: WikiPaths) -> None:
+    async def test_page_map_reaches_integrate_run(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths)
         script = (
@@ -141,9 +146,8 @@ class TestPdfIngest:
         fake: FakeClient = session.client
         integrate_first_turn = fake.sent[-2]  # first integrate request
         user_msgs = [m["content"] for m in integrate_first_turn if m.get("role") == "user"]
-        assert any(
-            "claims about functions" in c and "claims about closures" in c for c in user_msgs
-        )
+        assert any("Machine-recorded chunk page map" in c for c in user_msgs)
+        assert any("[[functions]]" in c and "[[closures]]" in c for c in user_msgs)
         assert any("p.1-10" in c for c in user_msgs)
 
     async def test_chunk_text_and_citation_reach_map_run(
@@ -212,7 +216,7 @@ class TestPdfIngest:
         fake: FakeClient = session.client
         integrate_msgs = [m["content"] for m in fake.sent[-2] if m.get("role") == "user"]
         assert any("Salience report" in c and "[[iterable]] (links 2" in c for c in integrate_msgs)
-        assert any("Pages written (recorded): [[functions]]" in c for c in integrate_msgs)
+        assert any("Chunk 1" in c and "[[functions]]" in c for c in integrate_msgs)
 
     async def test_hub_key_lists_reconciled_after_integrate(
         self, store: WikiStore, paths: WikiPaths

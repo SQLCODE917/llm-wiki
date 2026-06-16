@@ -918,3 +918,66 @@ None.
 ## Recommended Next Actions
 
 - Review orphan pages: 11 page(s) have no inbound links. Suggested command: `uv run llmwiki lint`.
+
+## [2026-06-16] ingest | Sword World RPG - Complete Edition.pdf
+Created the main hub page for 'Sword World RPG Complete Edition' and updated related chapter pages. The hub page links to the following sections: Chapter 13.2.1 Humans, Chapter 13.2.9 Undead, Chapter 13.2.12 Humans, and Chapter 14.4 Magical Item List Part 3. Cross-references have been added to link related concepts and entities within the rulebook. No contradictions were found in the ingested material.
+
+## [2026-06-16] ingest | Sword World RPG - Complete Edition.pdf
+The hub source page 'sword-world-rpg-complete-edition' has been written and links the major rulebook sections, catalogs, charts, and setting sections. The page summarizes the whole source and provides navigation to the 69 chunked pages, including character creation rules, combat mechanics, magic systems, monster catalog, treasure and rewards, and optional rules. The page links to key concepts like game-master, role-playing-game, and spirit-magic, as well as specific sections like books-related, guide-to-forcelia-alecrast-part-1, and chapter-charts.
+
+## [2026-06-16] ingest | Sword World RPG - Complete Edition.pdf
+Created the hub source page 'sword-world-rpg-complete-edition' with links to all major rulebook sections. The page summarizes the complete edition and organizes content into player rules (character creation, combat, magic, skills), game master support material (optional rules, monster catalog, treasure/rewards), and setting/lore (world guide, related materials). Cross-linked key concepts and entities as identified in the salience report.
+
+## [2026-06-16] ingest | Sword World RPG - Complete Edition.pdf
+The hub source page 'sword-world-rpg-complete-edition' has been written and links all major rulebook sections from the chunked ingest. The page structure includes sections for Player Rules (Character Creation, Combat, Magic, Skills), Game Master Support Material (Optional Rules, Monster Catalog, Treasure and Rewards), and Setting and Lore (World Guide, Related Materials). Cross-links have been added for key concepts identified in the salience report.
+
+## [2026-06-16] graph | wiki graph
+Graph export: current
+Nodes: 286
+Edges: 240
+Unresolved edges: 26
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-wraith-form
+Renamed [[sword-world-rpg-complete-edition-wraith]] to [[sword-world-rpg-complete-edition-wraith-form]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-wraith-monster
+Renamed [[sword-world-rpg-complete-edition-wraiths]] to [[sword-world-rpg-complete-edition-wraith-monster]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-daemon-monster-type
+Renamed [[sword-world-rpg-complete-edition-daemons]] to [[sword-world-rpg-complete-edition-daemon-monster-type]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-daemon-monster-type
+Merged [[sword-world-rpg-complete-edition-daemon]] into [[sword-world-rpg-complete-edition-daemon-monster-type]] and rewrote inbound links.
+
+## [2026-06-16] graph | wiki graph
+Graph export: current
+Nodes: 285
+Edges: 244
+Unresolved edges: 29
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-ability-score-rules
+Renamed [[sword-world-rpg-complete-edition-ability-scores]] to [[sword-world-rpg-complete-edition-ability-score-rules]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-ability-score-rules
+Merged [[sword-world-rpg-complete-edition-ability-score]] into [[sword-world-rpg-complete-edition-ability-score-rules]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-magical-item-rules
+Renamed [[sword-world-rpg-complete-edition-magical-items]] to [[sword-world-rpg-complete-edition-magical-item-rules]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-magical-item-examples
+Renamed [[sword-world-rpg-complete-edition-magical-item]] to [[sword-world-rpg-complete-edition-magical-item-examples]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-playable-race-rules
+Renamed [[sword-world-rpg-complete-edition-races]] to [[sword-world-rpg-complete-edition-playable-race-rules]] and rewrote inbound links.
+
+## [2026-06-16] pages | sword-world-rpg-complete-edition-playable-race-rules
+Merged [[sword-world-rpg-complete-edition-race]] into [[sword-world-rpg-complete-edition-playable-race-rules]] and rewrote inbound links.
+
+## [2026-06-16] graph | wiki graph
+Graph export: current
+Nodes: 283
+Edges: 240
+Unresolved edges: 29
+wiki/wiki-graph.json matches the current wiki graph.

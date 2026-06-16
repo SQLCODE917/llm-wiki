@@ -16,18 +16,22 @@ from forge.tools.respond import respond_tool
 from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import ClaimCandidate, GroundingVerdict
-from llmwiki.domain.ingest_profiles import IngestProfile, compose_prompt
+from llmwiki.domain.ingest_profiles import (
+    IngestProfile,
+    compose_prompt,
+    prevents_singular_plural_siblings,
+)
 from llmwiki.domain.semantic_lint import SemanticFinding
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
+from llmwiki.workflows.graph_tools import link_orphan_tool
 from llmwiki.workflows.grounding_tools import record_grounding_verdict_tool
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.semantic_lint_tools import record_semantic_finding_tool
 from llmwiki.workflows.tools import (
     finish_tool,
-    link_orphan_tool,
     read_index_tool,
     read_page_tool,
     read_source_tool,
@@ -42,6 +46,7 @@ def build_ingest_workflow(
     evidence_policy: EvidencePolicy | None = None,
     profiles: tuple[IngestProfile, ...] = (),
     source_path: str = "",
+    new_page_prefix: str | None = None,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     tools = [
@@ -54,6 +59,8 @@ def build_ingest_workflow(
             prerequisites=["read_source", "search_wiki"],
             read_tracker=seen,
             evidence_policy=evidence_policy,
+            new_page_prefix=new_page_prefix,
+            prevent_singular_plural_siblings=prevents_singular_plural_siblings(profiles),
         ),
         finish_tool(
             "finish_ingest",

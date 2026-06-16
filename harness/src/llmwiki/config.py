@@ -11,6 +11,7 @@ DEFAULT_CONTEXT_TOKENS = 16384
 DEFAULT_OLLAMA_ENDPOINT = "http://localhost:11434"
 DEFAULT_OLLAMA_MODEL = "qwen3-coder:30b"
 DEFAULT_4090_MODEL = "qwen3-coder:30b"
+DEFAULT_OLLAMA_TIMEOUT_SECONDS = 900
 DEFAULT_RUNTIME = "ollama-default"
 DEFAULT_STRICT_EVIDENCE = "off"
 # Per-read cap on plain raw source text. PDFs use the chunked map/integrate path.
@@ -128,6 +129,7 @@ class RuntimeProfile:
     model: str
     context_tokens: int
     endpoint: str
+    timeout_seconds: int
     lifecycle: LifecycleMode = "connect"
 
 
@@ -140,6 +142,7 @@ class BackendConfig:
     model: str
     context_tokens: int
     endpoint: str
+    timeout_seconds: int
     lifecycle: LifecycleMode = "connect"
 
     def summary(self) -> str:
@@ -153,6 +156,7 @@ def resolve_runtime_profile(runtime_name: str | None = None) -> RuntimeProfile:
     """Resolve CLI/env/default runtime precedence into a structured profile."""
     selected = _runtime_name(runtime_name or os.environ.get("LLMWIKI_RUNTIME") or DEFAULT_RUNTIME)
     endpoint = os.environ.get("LLMWIKI_OLLAMA_URL", DEFAULT_OLLAMA_ENDPOINT)
+    timeout_seconds = _env_int("LLMWIKI_OLLAMA_TIMEOUT", DEFAULT_OLLAMA_TIMEOUT_SECONDS)
     if selected == "local-4090":
         return RuntimeProfile(
             name=selected,
@@ -163,6 +167,7 @@ def resolve_runtime_profile(runtime_name: str | None = None) -> RuntimeProfile:
                 _env_int("LLMWIKI_CTX", DEFAULT_CONTEXT_TOKENS),
             ),
             endpoint=endpoint,
+            timeout_seconds=timeout_seconds,
         )
     return RuntimeProfile(
         name=selected,
@@ -170,6 +175,7 @@ def resolve_runtime_profile(runtime_name: str | None = None) -> RuntimeProfile:
         model=os.environ.get("LLMWIKI_OLLAMA_MODEL", DEFAULT_OLLAMA_MODEL),
         context_tokens=_env_int("LLMWIKI_CTX", DEFAULT_CONTEXT_TOKENS),
         endpoint=endpoint,
+        timeout_seconds=timeout_seconds,
     )
 
 
@@ -182,6 +188,7 @@ def load_backend_config(runtime_name: str | None = None) -> BackendConfig:
         model=profile.model,
         context_tokens=profile.context_tokens,
         endpoint=profile.endpoint,
+        timeout_seconds=profile.timeout_seconds,
         lifecycle=profile.lifecycle,
     )
 

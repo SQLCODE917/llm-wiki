@@ -57,6 +57,9 @@ Ingest profiles are curator-editable TOML files in `profiles/ingest/*.toml`;
 they add source-type guidance without changing the base schema or tool
 contracts. `rulebook` is the first profile and derives ambiguous page
 namespacing from the source filename.
+Rulebook profiles also block new bare singular/plural sibling pages within the
+same source namespace, nudging the model toward descriptive role names such as
+`source-wraith-form` or `source-wraith-monster`.
 
 **Query** — ask questions against the wiki:
 
@@ -129,6 +132,17 @@ double-bracket links, then appends a `graph` entry to `wiki/log.md`.
 `--check` fails if the artifact is missing, invalid, or stale. System report
 pages are excluded so the export reflects the content wiki, not maintenance
 reports.
+
+**Page maintenance** — deterministic cleanup for curator-approved page moves:
+
+```bash
+uv run llmwiki pages rename old-page new-page --summary "Updated summary."
+uv run llmwiki pages merge duplicate-page target-page --summary "Updated summary."
+```
+
+These commands rewrite inbound links, update `index.md`, remove stale page
+files, and append a log entry. They are for precise cleanup after curator
+review, not a substitute for careful ingest.
 
 **Contradictions** — bounded semantic audit:
 
@@ -220,6 +234,7 @@ chronologically.
 | Semantic lint | `docs/2026-06-15-semantic-lint-stale-and-data-gaps.md` | Bounded model-assisted leads for stale claims, possible supersessions, and data gaps; files `wiki-semantic-lint`. |
 | Wiki graph export | `docs/2026-06-15-wiki-graph-export.md` | Deterministic `wiki/wiki-graph.json` export plus `llmwiki graph --check` and curator-status freshness reporting. |
 | Ingest profiles | `docs/2026-06-16-ingest-profiles.md` | Config-driven prompt overlays selected with `llmwiki ingest --profile`; first profile is `rulebook`. |
+| Page alias and descriptive naming | `docs/2026-06-16-page-alias-and-descriptive-naming.md` | Deterministic page rename/merge plus profile-configured singular/plural sibling prevention. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from AGENTS.md; read before writing any TDD. |

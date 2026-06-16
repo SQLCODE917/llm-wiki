@@ -13,14 +13,21 @@ tool-error channel, so they are written as corrective instructions.
 
 from __future__ import annotations
 
+import re
+from dataclasses import replace
 from pathlib import Path
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
 from llmwiki.domain.candidates import CandidateBacklog, backlog_from_json_text
 from llmwiki.domain.citations import SourceInventory
-from llmwiki.domain.index import empty_index, index_page_names, upsert_index_entry
+from llmwiki.domain.index import (
+    empty_index,
+    index_page_names,
+    remove_index_entry,
+    upsert_index_entry,
+)
 from llmwiki.domain.log import format_log_entry
-from llmwiki.domain.pages import WikiPage, render_page, validate_page_name
+from llmwiki.domain.pages import WikiPage, parse_page, render_page, validate_page_name
 from llmwiki.store.source_resolver import FileSourceTextResolver
 
 _RESERVED_NAMES = frozenset({"index", "log"})
@@ -113,6 +120,70 @@ class WikiStore:
         page_path = self._paths.wiki_dir / f"{page.name}.md"
         index_text = upsert_index_entry(self.read_index(), page.name, page.category, page.summary)
         page_path.write_text(render_page(page), encoding="utf-8")
+        self._paths.index_path.write_text(index_text, encoding="utf-8")
+
+    def rename_page(
+        self,
+        old_name: str,
+        new_name: str,
+        *,
+        summary: str | None = None,
+        today: str = "",
+    ) -> None:
+        old_page = parse_page(old_name, self.read_page(old_name))
+        if old_name == new_name:
+            raise WikiStoreError("Old and new page names are the same.")
+        if new_name in self.list_pages():
+            raise WikiStoreError(
+                f"Page {new_name!r} already exists. Use merge_page to combine pages."
+            )
+        renamed = replace(
+            old_page,
+            name=new_name,
+            summary=summary or old_page.summary,
+            updated=today or old_page.updated,
+        )
+        self.write_page(renamed)
+        self._rewrite_links(old_name, new_name)
+        self._delete_page_file_and_index(old_name)
+
+    def merge_page(
+        self,
+        old_name: str,
+        target_name: str,
+        *,
+        summary: str | None = None,
+        today: str = "",
+    ) -> None:
+        old_page = parse_page(old_name, self.read_page(old_name))
+        target_page = parse_page(target_name, self.read_page(target_name))
+        sources = tuple(dict.fromkeys((*target_page.sources, *old_page.sources)))
+        merged = replace(
+            target_page,
+            summary=summary or target_page.summary,
+            sources=sources,
+            updated=today or target_page.updated,
+        )
+        self.write_page(merged)
+        self._rewrite_links(old_name, target_name)
+        self._delete_page_file_and_index(old_name)
+
+    def _rewrite_links(self, old_name: str, new_name: str) -> None:
+        pattern = re.compile(rf"\[\[{re.escape(old_name)}(?P<alias>\|[^\]]+)?\]\]")
+        for page_name in self.list_pages():
+            path = self._paths.wiki_dir / f"{page_name}.md"
+            text = path.read_text(encoding="utf-8")
+            rewritten = pattern.sub(lambda match: f"[[{new_name}{match['alias'] or ''}]]", text)
+            if rewritten != text:
+                path.write_text(rewritten, encoding="utf-8")
+
+    def _delete_page_file_and_index(self, name: str) -> None:
+        if name in _RESERVED_NAMES:
+            raise WikiStoreError(f"{name!r} is reserved and cannot be deleted.")
+        path = self._paths.wiki_dir / f"{name}.md"
+        if path.is_file():
+            path.unlink()
+        index_text = remove_index_entry(self.read_index(), name)
         self._paths.index_path.write_text(index_text, encoding="utf-8")
 
     def ensure_navigation_files(self) -> None:

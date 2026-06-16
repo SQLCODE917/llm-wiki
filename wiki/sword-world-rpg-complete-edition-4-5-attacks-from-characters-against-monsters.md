@@ -1,0 +1,346 @@
+---
+category: source
+summary: Chapter 4.5 of the Sword World RPG Complete Edition, detailing combat rules for characters attacking monsters including hit checks, damage calculation, and defense points.
+sources: Sword World RPG - Complete Edition.pdf
+updated: 2026-06-15
+---
+
+## **4.5 Attacks From Characters Against Monsters**
+
+This section details the rules for characters attacking monsters in the Sword World RPG.
+
+### **4.5.1 Hit Checks**
+
+When a character attacks a monster, they must make a success roll hit check, using _attack power_ as the baseline score.
+
+In other words, you roll 2D and add the result to your attack power (fighter/thief/ranger skill level + dexterity bonus) in order to meet or exceed a certain target score.
+
+The target score at this time varies depending on the monster. In the monsters' data, there is a score called **evasion points**, which becomes the target score.
+
+character's attack power + 2D ≥ monster's evasion points → **attack hits**
+
+character's attack power + 2D < monster's evasion points → **attack fails**
+
+※ Double sixes will automatically hit, and double ones will automatically fail.
+
+Since a hit check is _also_ a type of success roll, double ones is an _automatic failure_ and double sixes is an _automatic success_.
+
+#### **Example:**
+
+Ducard II is fighting a goblin. His attack power is 4 (fighter skill level 2, dexterity bonus 2) and the goblin's evasion points are 10.
+
+His player rolls the dice to make a hit check. The roll is 8. 4+8= **12**, which is more than 10. The attack hit the target perfectly.
+
+**Table 4-1: Rating Table**
+
+[Figure text (OCR, unverified): Table 4-1: Rating Table with key numbers from 0 to 50 and 2D roll outcomes]
+
+### **4.5.2 Determining Base Damage (Strike Roll)**
+
+If your hit check is a success and you're able to hit your target, the damage dealt to your opponent can be determined next.
+
+Damage calculation takes three steps: ① **Determine base damage**, ② **Add bonus damage**, and ③ **Subtract the monster's defense points**.
+
+The first step is to determine base damage. Use Table 4-1: Rating Table to determine base damage.
+
+The numbers are listed in a row, but of course there is no need to memorize them at all.
+
+On the table, look at the column where the **key number** equals your character's _strike power_. For example, if your character's strike power is 14, you only need to look at key number column 14.
+
+**Table 4-2: Rating Table, Key Number Column 14**
+
+14 ** 1 2 3 4 4 4 5 6 7 8
+
+The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_. That's the **base damage**. This process is called a **strike roll**.
+
+#### **Example:**
+
+Now that he's hit the goblin, Ducard II must determine how much damage his strike dealt. His weapon is a broadsword (a one-handed weapon) with required strength 14, so his strike power is _14_.
+
+The result of his 2D roll is 6, so the number on row _6_ under key number column _14_ on the Rating Table is **4**. Base damage is **4 points**.
+
+#### **0 Damage!**
+
+When making a strike roll, if your 2D roll is 2 (double ones), the result is ＊＊ regardless of the key number. This means your attack hit the target, but failed to deal any damage!
+
+Maybe it hit the hardest part of their armor, or maybe it only hit the hilt of a spear or ax, but _no_ damage was dealt.
+
+#### **Criticals**
+
+When making a strike roll, if your 2D roll is equal to or greater than the critical target (usually _10_, _9_ if using the thief skill), the strike is **critical**. In other words, you have landed a greater strike than would normally be expected.
+
+Make a note of the score you got on the Rating Table. Then, roll 2D again and look under the same key number on the Rating Table. Add _that_ result to the previous result. This is your base damage.
+
+If the second 2D roll is _also_ greater than or equal to the critical target, you can make a third roll to add even _more_ damage. This process can continue as long as you keep rolling greater than or equal to the critical target. In theory, this could deal an infinite amount of damage.
+
+If a critical occurs, but you roll _double ones_ on the second and subsequent damage checks, _0_ is added to the previous result (i.e., the previous result remains the _same_ ), and the base damage check will end. It can _never_ be 0 damage. Rest assured.
+
+goblin with an attack, rolls a _10_ when determining base damage. This is a critical. The number on row 10 under key number column 14 on the Rating Table is **6**. We'll make a note of the 6 and roll the dice a second time. The roll is _12_!
+
+That's still greater than the critical target. The number on row 12 is **8**, so we'll make a note of the 8 and roll a third time. The roll is _6_. This did not reach the critical target, so the base damage check ends here. Since the number on row 6 is **4**, the base damage dealt by Ducard `Ⅱ` is 6+8+4= **18**.
+
+If the third roll were a _2_ (double ones), the base damage would instead be 6+8+0= _14_.
+
+### **4.5.3 Bonus Damage**
+
+Once you've determined base damage, you must then add your character's bonus damage. This will be the total amount of damage the character _deals_ the monster.
+
+#### **Example:**
+
+Ducard II's bonus damage is **4** (fighter skill level 2, strength bonus 2). If base damage is 4, the total damage is 4+4= **8**,
+
+- If base damage is 18, the total damage
+
+- is 18+4= **22**,
+
+- If base damage is 14, the total damage
+
+- is 14+4= **18**.
+
+When determining base damage (strike roll), if you suddenly roll double ones, the damage will always be _0_. No matter how much bonus damage you have, it means nothing.
+
+### **4.5.4 Monster Defense Points**
+
+Monsters can repel and hold off attacks with their thick skins and hard scales. In monster data, this represented by **defense points**. This indicates the amount of damage a monster can reduce. Please note that a monster's _defense points_ are treated differently from a character's _defense power_.
+
+#### **Example:**
+
+A goblin has 4 defense points. The goblin can prevent **4 points of damage** with its skin.
+
+### **4.5.5 Final Damage**
+
+The total amount of damage a character deals ( _base damage + bonus damage_ ), minus the monster's _defense points_ , equals the **final damage** they're able to deal to the monster.
+
+**final damage** = base damage + bonus damage - monster's defense points
+
+#### **Example:**
+
+If the base damage dealt by Ducard II is _4, 18_ , or _14_ , respectively, the final damage he could deal to the goblin would be:
+
+4 (base damage) +4 (bonus damage)
+
+- -4 (goblin's defense points) = **4**
+
+18 (base damage) +4 (bonus damage)
+
+- -4 (goblin's defense points) = **18** 14 (base damage) +4 (bonus damage)
+
+- -4 (goblin's defense points) = **14**
+
+If final damage is _0 or negative_ , it means that _no damage_ was dealt. The attack was prevented by thick skin or hard scales.
+
+#### **Example:**
+
+Ducard II's critical target is 10. Suppose that Ducard `Ⅱ` , having hit the
+
+## **4.6 Attacks From Monsters Against Characters**
+
+### **4.6.1 Hit (Evasion) Checks**
+
+When a monster attacks a character, whether or not the attack hits is determined from the perspective of _did the character dodge the monster's attack?_.
+
+This check is also made with a success roll.
+
+The baseline score is the character's _evasion speed_. The target score is still different for each monster, but it's called the monster's **attack points**.
+
+evasion speed + 2D ≥ monster's attack points → **evasion success (monster's attack fails)**
+
+evasion speed + 2D < monster's attack points → **evasion failure (monster's attack hits)**
+
+※ Double sixes will automatically evade, and double ones will automatically fail
+
+Since this is a success roll, double sixes and double ones are _automatic successes_ and _automatic failures_ , respectively.
+
+#### **Example:**
+
+Ducard II has an evasion speed of _5_ (fighter level 2, agility bonus +2, has a shield). On the other hand, the goblin has _10_ attack points.
+
+The player rolls the dice to determine if they evade the goblin's attack. The roll is **4**. 5+4= **9**, which is short of the target score (the goblin's attack points) of 10. Ducard II is hit by the goblin.
+
+### **4.6.2 Damage Dealt by Monsters**
+
+If a monster's attack hits (or if a character fails to evade), you must look for the base damage dealt by the monster.
+
+This is determined for each monster by the monster's **strike points**. Strike points are fixed and do not change.
+
+#### **Example:**
+
+A goblin has _7_ strike points.
+
+### **4.6.3 Defense Rolls**
+
+Characters can reduce the damage they receive from monsters by means of armor. You can determine the amount of _damage reduction_ by using Table 4-1: Rating Table. On the _Rating Table_ , look at the column where the key number equals your character's _defense power_. For example, if your defense power is 7, you would look at key number column 7 with on the _Rating Table_.
+
+**Table 4-3: Rating Table, Key Number Column 7**
+
+7 ** 0 1 1 2 3 4 4 5 5 6
+
+Roll 2D and follow the row next to the result. Then, look for the number under the appropriate column. This process is specifically called a **defense roll**.
+
+#### **Example:**
+
+Let's find out how much damage Ducard II is able to prevent with his armor after being attacked by the goblin. Since Ducard II has a defense power of _7_ , we'll use key number column 7. We roll 2D, and the result is _3_ . The number on row 3 under key number column 7 is **0**. This is the damage that Ducard II is able to prevent with his armor.
+
+#### **Failure!**
+
+When making a defense roll, if your roll is double ones, that means that you've been hit _extremely_ hard. Maybe the monster's attack hit a gap in your character's armor, or one of their vital points. In this case, your character _cannot_ reduce the monster's damage (strike points) at all.
+
+#### **Criticals?**
+
+When making a defense roll, criticals do _not_ occur like they do with a strike roll. No matter how high the roll, _only_ the amount of _damage reduction_ indicated by that roll is used, _nothing_ is added to it.
+
+#### **Example:**
+
+Suppose Ducard II's defense roll came up 12 (double sixes!). The number on row 12 under key number column 7 is **6**. Unlike a strike roll, a defense roll is made only once. You _cannot_ roll the dice again to increase this number further.
+
+### **4.6.4 Damage Reduction**
+
+Characters can also reduce damage using their _adventurer level_. The result of your defense roll plus this **damage reduction** equals the _final_ amount of damage your character can reduce.
+
+However, if the result of your defense roll is _double ones_ , your character's damage reduction is _meaningless_. No matter how high your character's damage reduction (adventurer level), that damage _cannot_ be reduced at all.
+
+### **4.6.5 Final Damage**
+
+The final damage your character suffers from a monster equals the monster's _strike points_ minus the result of your _defense roll_ plus your character's _damage reduction_.
+
+**Final damage** = monster's strike points - (defense roll result + damage reduction)
+
+#### **Example:**
+
+If the result of Ducard II's defense roll is _0_ (roll 3) or _6_ (roll 12), respectively, the final damage he will suffer is calculated to be:
+
+7 (goblin's strike points) – {0 (defense roll) +2 (damage reduction)} = 5
+
+7 (goblin's strike points) – {6 (defense roll) +2 (damage reduction)} = -1
+
+If the defense roll came up _double ones_ , no such calculation would be made, and the goblin's **7** strike points would be the damage.
+
+If final damage is _0 or negative_ , that means you took _no_ damage at all. The monster's attack was completely blocked by your armor.
+
+## **4.7 Attacks From Characters Against Characters**
+
+While infighting between player characters is something you should avoid at all costs, fights against _nonplayer characters_ are common. Sometimes, especially when the mastermind behind an incident is a dark priest, you'll have to fight against someone whose data was created for a character.
+
+In a fight between these characters, proceed as follows:
+
+### **4.7.1 Hit Checks**
+
+To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their _attack power_, and the defender adds their roll to their _evasion speed_.
+
+**attacker's final score** = attack power + 2D
+
+**defender's final score** = evasion speed + 2D
+
+If the attacker's final score exceeds that of the defender, the attack _hits_. If there is a tie or the defender's is greater, the attack _fails_.
+
+attacker's attack power + 2D > defender's evasion speed +2D → **attack hits**
+
+attacker's attack power + 2D ≤ defender's evasion speed +2D → **attack fails**
+
+#### **Example:**
+
+Ducard II suddenly found himself in a dispute with another adventurer, Bucky. Ducard II has higher agility, so he attacks first. Ducard II 's attack power is _4_, while Bucky's evasion speed is _5_.
+
+Ducard II rolls a _7_, and Bucky rolls a
+
+In combat between characters, a tie is considered an attack failure. Ducard II 's attack was narrowly dodged.
+
+#### **Double Sixes and Double Ones**
+
+If a roll comes up _double sixes_ or _double ones_ during combat between characters, the situation is resolved as follows:
+
+If the attacker's roll is _double ones_ , the attack _fails_ without question. The defender doesn't even have to roll the dice.
+
+If the attacker's roll is _double sixes_ , it's basically an automatic hit. However, if the defender's roll is _also_ double sixes, the attack _fails_.
+
+If the defender's roll is _double ones_ , it's basically an automatic hit. However, if the attacker's roll is _also_ double ones, the attack _fails_.
+
+If the defender's roll is _double sixes_ , the attack will _always_ fail. It doesn't matter even if the attacker rolls double sixes.
+
+Please refer to Table 4-4: Attack Checks.
+
+### **4.7.2 Damage Checks**
+
+If your attack hits, you must then determine damage. This procedure is exactly the _same_ for characters as it was during combat with monsters.
+
+The attacker must make a strike roll to determine their base damage, then add their bonus damage.
+
+The defender must make a defense roll, then add their damage reduction to the result to determine how much damage they reduced.
+
+The difference is the damage dealt to the defender.
+
+#### **Example:**
+
+Let's go back to the fight between Ducard II and Bucky. Bucky dodges Ducard II's attack, then counterattacks. As a result of his hit check, it's a hit.
+
+Bucky then determines the damage he deals. Bucky is wielding a battle-ax (required strength 15) with both hands, so he has a strike power of _20_. The result of his strike roll is _11_ (base damage _9_). That's a _critical_. His following 2D roll is _9_ (base damage _7_). His bonus damage is _5_ (fighter skill level 3, strength bonus +2), which brings the total amount of damage to 9+7+5= **21**.
+
+Ducard II now determines how much damage his armor prevents. His defense roll result is _7_, and his armor's defense power is 7, so the damage that'll be reduced by his armor is _3_. After adding his damage reduction of _2_, 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
+
+As a result, the damage that Ducard II suffers is 21-5= **16 points**.
+
+**Table 4-4: Attack Checks**
+
+[Figure text (OCR, unverified): Table 4-4: Attack Checks with columns for Defender's Roll and rows for Attacker's Roll, showing outcomes for different combinations]
+
+## **4.8 Applying Damage**
+
+If you suffer damage and your life force (points) is reduced, then suffer more damage, your life force (points) will be further reduced from there.
+
+Damage reduces a character's life force (or a monster's life points). This reduction is temporary and can be recovered naturally or by magic.
+
+After damage is applied, a character (monster) can still act if they have at least _1_ life force (point) remaining.
+
+## **4.9 Unconscious and Death Checks**
+
+If, as a result of damage (accumulated damage), a character's (monster's) life force (points) becomes _0 or negative_ , that character (monster) will fall **unconscious**. It is no longer possible for them to act. Also, that character (monster) is now in danger of _dying_.
+
+### **4.9.1 Death Checks**
+
+#### **Example:**
+
+Ducard II, with a life force of _-4_ , must make a **death check**. His life force resistance is _5_ (adventurer level 2, life force bonus +3). Since Ducard II has a life force of _-4_ , that will also be the penalty. His result after rolling 2D is _7_.
+
+5 (life force resistance) + 7 (roll) - 4 (penalty) = **8**, which is greater or equal than 7. Ducard II survives. If the result of this death check had been 6 or lower, Ducard II would have met an _untimely end_.
+
+#### **Example:**
+
+Ducard II, with 2 points of life force left, was hit by Bucky's ax again in the next round, suffering 6 points of damage. As a result, Ducard II now has a life force of **-4**. Ducard II _faints and collapses_.
+
+### **4.9.2 Death Checks Every Hour**
+
+### **4.9.1 Adventurer Death Checks**
+
+Characters with 0 or negative life force remain unconscious, even if they successfully survived a death check. If they're given treatment by magic, etc. and have their life force increased by up to at least 1 (positive) point, they will regain consciousness, but if they're left unconscious, they may die.
+
+Any adventurer who falls to _0 or negative_ life force is now at risk of _dying_ . You must roll the dice to determine if your character survives.
+
+This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ .
+
+Characters with 0 or negative life force must make a death check every _hour_ . The target score is still _7_ , and if their life force is still _negative_ , it's still a _penalty_ .
+
+life force resistance + 2D - (damage applied beyond life force) ≥ 7 → **survival**
+
+If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
+
+life force resistance + 2D - (damage applied beyond life force) < 7 → **death**
+
+#### **Example:**
+
+Ducard II has 18 life force. Ducard II is hit by Bucky's attack and suffers 16 points of damage, reducing his life force to 2 points. It's still possible for him to act.
+
+but remains unconscious. In _one hour_ , they must make another death check.
+
+If the result is failure, the character will die.
+
+### **4.9.3 Monster Death Check**
+
+Monsters with 0 or negative life points must also make a check to see if they live or die. Do not roll the dice at this time. A score called the monster's **life point resistance** is used instead. Subtract the amount of negative life points, if any, from life point resistance, and if the result is _7 or greater_ , the monster is _alive_ . If the result is _6 or lower_ , the monster is _dead_ .
+
+#### **Example:**
+
+A goblin, Scarnose, was hit by an adventurer's sword and fell down with _-6_ life points. A goblin's life point resistance score is _10_ . 10-6= **4**, which is _less than 7_ . Scarnose draws his last breath.
+
+A monster's first death check determines whether or not it survives. If it's alive after a death check, it recovers 1 life point every _hour_ , and will regain consciousness when it reaches (positive) _1_ life point.
+
+If the result is any success _other_ than double sixes, the character is alive
