@@ -111,20 +111,33 @@ class TestManifest:
         assert "Ch 1" in digest and "p.1-5" in digest and "[[functions]]" in digest
         assert "Ch 2" not in digest  # pending chunks contribute nothing
 
-    def test_pages_written_roundtrip_and_digest_record(self) -> None:
-        manifest = self._manifest().mark_done(1, "notes", pages_written=("functions", "scope"))
+    def test_pages_written_and_route_plan_roundtrip_and_digest_record(self) -> None:
+        manifest = self._manifest().mark_done(
+            1,
+            "notes",
+            pages_written=("functions", "scope"),
+            route_plan_pages=2,
+            route_plan_gaps=1,
+            route_gap_summaries=("Minor aside folded into chapter page.",),
+        )
         assert from_json(to_json(manifest)) == manifest
         assert "Pages written (recorded): [[functions]], [[scope]]" in manifest.digest()
+        assert "Ingest route plan: 2 planned page(s), 1 route gap(s)" in manifest.digest()
         assert manifest.write_counts() == {"functions": 1, "scope": 1}
 
-    def test_legacy_manifest_without_pages_written_loads(self) -> None:
+    def test_legacy_manifest_without_page_write_or_route_plan_fields_loads(self) -> None:
         import json
 
         data = json.loads(to_json(self._manifest()))
         for chunk in data["chunks"]:
             del chunk["pages_written"]  # manifests predating the salience design
+            del chunk["route_plan_pages"]
+            del chunk["route_plan_gaps"]
+            del chunk["route_gap_summaries"]
         manifest = from_json(json.dumps(data))
         assert manifest.chunks[0].pages_written == ()
+        assert manifest.chunks[0].route_plan_pages == 0
+        assert manifest.chunks[0].route_plan_gaps == 0
 
     def test_write_counts_accumulate_across_chunks(self) -> None:
         manifest = (

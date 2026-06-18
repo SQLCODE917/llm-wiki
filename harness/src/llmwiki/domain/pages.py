@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+from pathlib import PurePosixPath
 
 PAGE_CATEGORIES = ("source", "entity", "concept", "synthesis")
 
@@ -52,6 +53,43 @@ def validate_summary(summary: str) -> str:
 
 
 @dataclass(frozen=True)
+class PageMetadata:
+    """Stable identity and queryable fields for a wiki page."""
+
+    page_id: str
+    page_kind: str
+    summary: str
+    sources: tuple[str, ...] = field(default=())
+    updated: str = ""
+
+    def __post_init__(self) -> None:
+        validate_page_name(self.page_id)
+        validate_category(self.page_kind)
+        object.__setattr__(self, "summary", validate_summary(self.summary))
+
+
+@dataclass(frozen=True)
+class WikiStructure:
+    """Path projection for the current wiki."""
+
+    structure_id: str
+    path_template: str
+
+    def render_path(self, metadata: PageMetadata) -> PurePosixPath:
+        path_text = self.path_template.format(page_id=metadata.page_id)
+        path = PurePosixPath(path_text)
+        if path.is_absolute() or ".." in path.parts or path.suffix != ".md":
+            raise PageError(f"Invalid rendered page path {path_text!r}.")
+        return path
+
+
+LOCAL_FLAT_STRUCTURE = WikiStructure(
+    structure_id="local-flat",
+    path_template="{page_id}.md",
+)
+
+
+@dataclass(frozen=True)
 class WikiPage:
     """A wiki page as explicit state; rendering is derived, never stored."""
 
@@ -65,7 +103,31 @@ class WikiPage:
     def __post_init__(self) -> None:
         validate_page_name(self.name)
         validate_category(self.category)
-        validate_summary(self.summary)
+        object.__setattr__(self, "summary", validate_summary(self.summary))
+
+    @property
+    def page_metadata(self) -> PageMetadata:
+        return PageMetadata(
+            page_id=self.name,
+            page_kind=self.category,
+            summary=self.summary,
+            sources=self.sources,
+            updated=self.updated,
+        )
+
+    def page_path(self, structure: WikiStructure = LOCAL_FLAT_STRUCTURE) -> PurePosixPath:
+        return structure.render_path(self.page_metadata)
+
+    @classmethod
+    def from_metadata(cls, metadata: PageMetadata, body: str) -> WikiPage:
+        return cls(
+            name=metadata.page_id,
+            category=metadata.page_kind,
+            summary=metadata.summary,
+            body=body,
+            sources=metadata.sources,
+            updated=metadata.updated,
+        )
 
 
 def render_page(page: WikiPage) -> str:

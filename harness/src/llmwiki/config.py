@@ -74,6 +74,11 @@ class WikiPaths:
         return self.root / "harness" / "cache"
 
     @property
+    def route_plan_history_path(self) -> Path:
+        """Harness-owned ingest route plan observations."""
+        return self.cache_dir / "ingest-route-plans.jsonl"
+
+    @property
     def ingest_profiles_dir(self) -> Path:
         """Curator-editable ingest strategy profiles."""
         return self.root / "profiles" / "ingest"

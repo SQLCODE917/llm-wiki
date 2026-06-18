@@ -8,7 +8,9 @@ from llmwiki.cli import _build_parser, _curator_report, _run
 from llmwiki.config import ConfigError, WikiPaths
 from llmwiki.domain.graph import build_wiki_graph
 from llmwiki.domain.index import empty_index
+from llmwiki.domain.ingest_route_history import IngestRoutePlanRecord
 from llmwiki.domain.pages import WikiPage, render_page
+from llmwiki.pdf.manifest import ChunkRecord, Manifest, to_json
 from llmwiki.store import WikiStore
 
 TODAY = "2026-06-10"
@@ -116,6 +118,62 @@ class TestCuratorReport:
 
         assert "Graph export: missing" in missing
         assert "Graph export: current" in current
+
+    def test_curator_status_reports_ingest_route_plan_gaps(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        manifest_dir = paths.cache_dir / "deadbeef"
+        manifest_dir.mkdir(parents=True)
+        manifest = Manifest(
+            source="book.pdf",
+            sha256="deadbeef" * 8,
+            chunks=(
+                ChunkRecord(
+                    chunk_id=1,
+                    heading="Functions",
+                    start_page=1,
+                    end_page=10,
+                    token_estimate=4000,
+                    status="done",
+                    route_plan_pages=2,
+                    route_plan_gaps=1,
+                    route_gap_summaries=("Minor syntax aside folded into chapter page.",),
+                ),
+            ),
+        )
+        (manifest_dir / "manifest.json").write_text(to_json(manifest), encoding="utf-8")
+
+        report = _curator_report(store, paths, "off")
+
+        assert "## Ingest Route Plans" in report
+        assert "Planned pages recorded: 2" in report
+        assert "Route gaps recorded: 1" in report
+        assert "raw/book.pdf chunk 1: Minor syntax aside folded into chapter page." in report
+
+    def test_curator_status_reports_markdown_ingest_route_plan_gaps(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        paths.route_plan_history_path.parent.mkdir(parents=True)
+        record = IngestRoutePlanRecord(
+            date=TODAY,
+            run_id="run-1",
+            source_path="article.md",
+            scope="source",
+            chunk_id=None,
+            profile_ids=(),
+            planned_page_count=1,
+            route_gap_count=1,
+            route_gap_summaries=("Minor aside stayed inside the source page.",),
+            planned_page_ids=("article",),
+            page_writes=("article",),
+        )
+        paths.route_plan_history_path.write_text(record.to_json_line() + "\n", encoding="utf-8")
+
+        report = _curator_report(store, paths, "off")
+
+        assert "Planned pages recorded: 1" in report
+        assert "Route gaps recorded: 1" in report
+        assert "raw/article.md: Minor aside stayed inside the source page." in report
 
     def test_report_surfaces_citation_warnings(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(_page("alpha", "Claim cites a missing source. (raw/missing.md)"))
@@ -226,9 +284,7 @@ class TestCuratorCli:
         assert '"status": "rejected"' in text
         assert "too thin" in text
 
-    async def test_candidates_reject_updates_backlog_and_log(
-        self, paths: WikiPaths
-    ) -> None:
+    async def test_candidates_reject_updates_backlog_and_log(self, paths: WikiPaths) -> None:
         args = _build_parser().parse_args(
             ["--root", str(paths.root), "candidates", "reject", "maybe-page", "--reason", "nope"]
         )
@@ -237,9 +293,7 @@ class TestCuratorCli:
 
         assert result.op == "candidates"
         assert "Rejected candidate `maybe-page`: nope" in result.output
-        assert "maybe-page" in (paths.wiki_dir / "wiki-candidates.json").read_text(
-            encoding="utf-8"
-        )
+        assert "maybe-page" in (paths.wiki_dir / "wiki-candidates.json").read_text(encoding="utf-8")
         assert "candidates | maybe-page" in paths.log_path.read_text(encoding="utf-8")
 
     async def test_candidates_list_is_backend_free(
@@ -256,8 +310,7 @@ class TestCuratorCli:
 
         assert result.op == "candidates"
         assert (
-            "No active candidate pages from explicit missing double-bracket links"
-            in result.output
+            "No active candidate pages from explicit missing double-bracket links" in result.output
         )
 
     async def test_graph_writes_artifact_and_log_without_backend(

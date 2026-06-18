@@ -324,9 +324,7 @@ class TestChatRepl:
         log = paths.log_path.read_text(encoding="utf-8")
         assert "chat | 1 turns across 1 conversation" in log
 
-    async def test_file_command_files_latest_turn(
-        self, store: WikiStore, paths: WikiPaths
-    ) -> None:
+    async def test_file_command_files_latest_turn(self, store: WikiStore, paths: WikiPaths) -> None:
         _seed_wiki(store)
         script = [
             [ToolCall(tool="read_page", args={"name": "closure"})],

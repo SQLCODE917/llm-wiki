@@ -214,8 +214,7 @@ def _overlap_candidate(
     if score < 5:
         return None
     excerpt = (
-        f"[[{left}]]: {_excerpt(left_signals.body)}\n\n"
-        f"[[{right}]]: {_excerpt(right_signals.body)}"
+        f"[[{left}]]: {_excerpt(left_signals.body)}\n\n[[{right}]]: {_excerpt(right_signals.body)}"
     )
     return SemanticLintCandidate(
         reason="; ".join(reasons),

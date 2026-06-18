@@ -26,8 +26,16 @@ from llmwiki.domain.index import (
     remove_index_entry,
     upsert_index_entry,
 )
+from llmwiki.domain.ingest_route_history import IngestRoutePlanRecord
 from llmwiki.domain.log import format_log_entry
-from llmwiki.domain.pages import WikiPage, parse_page, render_page, validate_page_name
+from llmwiki.domain.pages import (
+    LOCAL_FLAT_STRUCTURE,
+    WikiPage,
+    WikiStructure,
+    parse_page,
+    render_page,
+    validate_page_name,
+)
 from llmwiki.store.source_resolver import FileSourceTextResolver
 
 _RESERVED_NAMES = frozenset({"index", "log"})
@@ -47,8 +55,13 @@ class SourceNotFoundError(WikiStoreError):
 
 
 class WikiStore:
-    def __init__(self, paths: WikiPaths) -> None:
+    def __init__(self, paths: WikiPaths, structure: WikiStructure = LOCAL_FLAT_STRUCTURE) -> None:
         self._paths = paths
+        self._structure = structure
+
+    @property
+    def structure(self) -> WikiStructure:
+        return self._structure
 
     # -- schema layer -----------------------------------------------------
 
@@ -102,7 +115,9 @@ class WikiStore:
 
     def read_page(self, name: str) -> str:
         validate_page_name(name)
-        path = self._paths.wiki_dir / f"{name}.md"
+        path = self._paths.wiki_dir / self._structure.render_path(
+            WikiPage(name=name, category="source", summary="placeholder", body="").page_metadata
+        )
         if name in _RESERVED_NAMES or not path.is_file():
             raise PageNotFoundError(
                 f"No page named {name!r}. Use search_wiki to find existing pages."
@@ -117,7 +132,7 @@ class WikiStore:
             raise WikiStoreError(
                 f"{page.name!r} is reserved (maintained by the harness); choose another name."
             )
-        page_path = self._paths.wiki_dir / f"{page.name}.md"
+        page_path = self._paths.wiki_dir / page.page_path(self._structure)
         index_text = upsert_index_entry(self.read_index(), page.name, page.category, page.summary)
         page_path.write_text(render_page(page), encoding="utf-8")
         self._paths.index_path.write_text(index_text, encoding="utf-8")
@@ -187,9 +202,7 @@ class WikiStore:
             page.body,
         )
         if body == page.body:
-            raise WikiStoreError(
-                f"Page {page_name!r} does not link to {old_target!r}."
-            )
+            raise WikiStoreError(f"Page {page_name!r} does not link to {old_target!r}.")
         self.write_page(replace(page, body=body, updated=today or page.updated))
 
     def _rewrite_links(self, old_name: str, new_name: str) -> None:
@@ -234,6 +247,13 @@ class WikiStore:
 
     def write_graph_json(self, text: str) -> None:
         self._paths.graph_path.write_text(text, encoding="utf-8")
+
+    # -- harness-owned ingest route plan history ----------------------------
+
+    def append_ingest_route_plan_record(self, record: IngestRoutePlanRecord) -> None:
+        self._paths.route_plan_history_path.parent.mkdir(parents=True, exist_ok=True)
+        with self._paths.route_plan_history_path.open("a", encoding="utf-8") as fh:
+            fh.write(record.to_json_line() + "\n")
 
     # -- navigation files ----------------------------------------------------
 

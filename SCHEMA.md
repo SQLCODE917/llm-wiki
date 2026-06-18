@@ -55,6 +55,11 @@ The index and log formats below are also enforced in harness code
   harness from `write_page` arguments — do not write it in page content.
 - `write_page` replaces the entire page. When updating an existing page,
   `read_page` it first and carry forward the content you are not changing.
+- In ingest workflows, call `plan_pages` before any `write_page`. The ingest
+  route plan is a page write allowlist for the current run: each page write
+  must match a planned page ID and category. Use route gaps for source material
+  that should not become a page in the current run. The ingest route plan is
+  not source evidence and never supports wiki claims by itself.
 - On hub source pages, the `Key concepts:` / `Key entities:` lines are
   derived navigation maintained by the harness — like index.md entries,
   never write or edit key-entity/key-concept lists yourself; they are
@@ -107,11 +112,12 @@ as source evidence or as existing wiki coverage.
 
 1. Read the source with `read_source`.
 2. Search the wiki for related pages (`search_wiki`, `read_page`).
-3. Write or update a `source` page summarizing the key information.
-4. Update every affected `entity`/`concept`/`synthesis` page: integrate new
+3. Call `plan_pages` with the page targets for this source and any route gaps.
+4. Write or update a `source` page summarizing the key information.
+5. Update every affected `entity`/`concept`/`synthesis` page: integrate new
    facts, add cross-references, flag contradictions. Create pages for
    important entities or concepts that lack one.
-5. Call `finish_ingest` with a short report of what changed.
+6. Call `finish_ingest` with a short report of what changed.
 
 When an ingest profile is active, follow its additional source-type guidance
 inside the same workflow. If profile guidance and this schema conflict, this

@@ -36,8 +36,7 @@ def record_grounding_verdict_tool(
         params = RecordGroundingVerdictParams(**kwargs)  # type: ignore[arg-type]
         if params.page_name not in store.list_pages():
             raise WikiStoreError(
-                "Grounding verdicts must reference existing pages. "
-                f"Missing: {params.page_name}."
+                f"Grounding verdicts must reference existing pages. Missing: {params.page_name}."
             )
         candidate = candidate_map.get((params.page_name, params.claim_text))
         if candidate_map and candidate is None:

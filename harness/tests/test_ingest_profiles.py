@@ -1,4 +1,5 @@
 from pathlib import Path
+from typing import Any
 
 import pytest
 
@@ -50,6 +51,35 @@ pdf_map = "{overlay}"
         encoding="utf-8",
     )
     return path
+
+
+def _plan_page(
+    workflow: Any,
+    name: str,
+    *,
+    category: str = "source",
+    summary: str = "Planned page.",
+    action: str = "create",
+) -> str:
+    plan_pages = workflow.tools["plan_pages"].callable
+    return plan_pages(
+        planned_pages=[
+            {
+                "metadata": {
+                    "page_id": name,
+                    "page_kind": category,
+                    "summary": summary,
+                    "sources": ["Sword World RPG - Complete Edition.pdf"],
+                },
+                "role": "planned test page",
+                "action": action,
+                "source_scope": "test scope",
+                "confidence": "high",
+                "rationale": "The test establishes an active ingest route plan.",
+            }
+        ],
+        gaps=[],
+    )
 
 
 class TestIngestProfiles:
@@ -138,10 +168,13 @@ class TestIngestProfiles:
         )
         profiles = load_ingest_profiles(directory)
 
-        assert required_new_page_prefix(
-            select_ingest_profiles(profiles, ["loose"]),
-            "Sword World RPG - Complete Edition.pdf",
-        ) is None
+        assert (
+            required_new_page_prefix(
+                select_ingest_profiles(profiles, ["loose"]),
+                "Sword World RPG - Complete Edition.pdf",
+            )
+            is None
+        )
         assert (
             required_new_page_prefix(
                 select_ingest_profiles(profiles, ["strict"]),
@@ -156,12 +189,8 @@ class TestIngestProfiles:
         _write_profile(directory, "guarded", prevent_siblings=True)
         profiles = load_ingest_profiles(directory)
 
-        assert not prevents_singular_plural_siblings(
-            select_ingest_profiles(profiles, ["loose"])
-        )
-        assert prevents_singular_plural_siblings(
-            select_ingest_profiles(profiles, ["guarded"])
-        )
+        assert not prevents_singular_plural_siblings(select_ingest_profiles(profiles, ["loose"]))
+        assert prevents_singular_plural_siblings(select_ingest_profiles(profiles, ["guarded"]))
 
     def test_no_profile_prompt_is_unchanged(self) -> None:
         assert compose_prompt("Base prompt.", (), "ingest", "anything.md") == "Base prompt."
@@ -216,13 +245,14 @@ class TestProfiledWorkflows:
         write = workflow.tools["write_page"].callable
 
         with pytest.raises(Exception, match="namespace prefix"):
-            write(
-                name="half-elf",
-                category="concept",
-                summary="Half-elf rules.",
-                content="Body.",
-            )
+            _plan_page(workflow, "half-elf", category="concept", summary="Half-elf rules.")
 
+        _plan_page(
+            workflow,
+            "sword-world-rpg-complete-edition-half-elf",
+            category="concept",
+            summary="Half-elf rules.",
+        )
         result = write(
             name="sword-world-rpg-complete-edition-half-elf",
             category="concept",
@@ -231,9 +261,7 @@ class TestProfiledWorkflows:
         )
         assert "sword-world-rpg-complete-edition-half-elf" in result
 
-    def test_profile_naming_guard_blocks_singular_plural_siblings(
-        self, store: WikiStore
-    ) -> None:
+    def test_profile_naming_guard_blocks_singular_plural_siblings(self, store: WikiStore) -> None:
         store.write_page(
             WikiPage(
                 name="sword-world-rpg-complete-edition-wraiths",
@@ -263,13 +291,19 @@ class TestProfiledWorkflows:
         write = workflow.tools["write_page"].callable
 
         with pytest.raises(Exception, match="singular/plural normalization"):
-            write(
-                name="sword-world-rpg-complete-edition-wraith",
+            _plan_page(
+                workflow,
+                "sword-world-rpg-complete-edition-wraith",
                 category="concept",
                 summary="Wraith Form concept.",
-                content="Body.",
             )
 
+        _plan_page(
+            workflow,
+            "sword-world-rpg-complete-edition-wraith-form",
+            category="concept",
+            summary="Wraith Form concept.",
+        )
         result = write(
             name="sword-world-rpg-complete-edition-wraith-form",
             category="concept",
@@ -296,6 +330,13 @@ class TestProfiledWorkflows:
             new_page_prefix="sword-world-rpg-complete-edition",
         )
         workflow.tools["read_page"].callable(name="role-playing-game")
+        _plan_page(
+            workflow,
+            "role-playing-game",
+            category="concept",
+            summary="Existing generic page.",
+            action="enrich",
+        )
 
         result = workflow.tools["write_page"].callable(
             name="role-playing-game",
@@ -306,9 +347,7 @@ class TestProfiledWorkflows:
 
         assert "role-playing-game" in result
 
-    def test_pdf_map_large_page_preview_does_not_authorize_rewrite(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_map_large_page_preview_does_not_authorize_rewrite(self, store: WikiStore) -> None:
         store.write_page(
             WikiPage(
                 name="big-chapter",
@@ -325,6 +364,12 @@ class TestProfiledWorkflows:
         assert "[TRUNCATED: page preview" in preview
         repeated = workflow.tools["read_page"].callable(name="big-chapter")
         assert "already previewed" in repeated
+        _plan_page(
+            workflow,
+            "big-chapter",
+            summary="Large prior chapter.",
+            action="enrich",
+        )
         with pytest.raises(Exception, match="write_page replaces"):
             workflow.tools["write_page"].callable(
                 name="big-chapter",
@@ -348,6 +393,13 @@ class TestProfiledWorkflows:
             "2026-06-16",
             source_path="Sword World RPG - Complete Edition.pdf",
         )
+        _plan_page(
+            workflow,
+            "sword-world-rpg-complete-edition",
+            summary="Hub page.",
+            action="enrich",
+        )
+        workflow.tools["read_page"].callable(name="sword-world-rpg-complete-edition")
 
         result = workflow.tools["write_page"].callable(
             name="sword-world-rpg-complete-edition-chapter-13-2-1-humans",
@@ -361,14 +413,13 @@ class TestProfiledWorkflows:
         assert "sword-world-rpg-complete-edition-chapter-13-2-1-humans" not in store.list_pages()
         assert "Hub body." in store.read_page("sword-world-rpg-complete-edition")
 
-    def test_pdf_integrate_recovers_content_embedded_in_summary(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_recovers_content_embedded_in_summary(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
             source_path="Sword World RPG - Complete Edition.pdf",
         )
+        _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Hub summary.")
 
         workflow.tools["write_page"].callable(
             summary="Hub summary.\nparameter=content>\n# Hub\n\n[[linked-page]]",
@@ -388,6 +439,7 @@ class TestProfiledWorkflows:
             required_link_targets=("alpha", "beta", "gamma"),
             min_required_links=2,
         )
+        _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Sparse hub.")
 
         workflow.tools["write_page"].callable(
             summary="Sparse hub.",
@@ -399,9 +451,7 @@ class TestProfiledWorkflows:
         assert "## Page-Map Navigation" in hub
         assert "[[beta]]" in hub
 
-    def test_pdf_integrate_does_not_add_navigation_when_linked(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_does_not_add_navigation_when_linked(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
@@ -409,6 +459,7 @@ class TestProfiledWorkflows:
             required_link_targets=("alpha", "beta", "gamma"),
             min_required_links=2,
         )
+        _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Linked hub.")
 
         workflow.tools["write_page"].callable(
             summary="Linked hub.",
@@ -421,6 +472,11 @@ class TestProfiledWorkflows:
 
     def test_write_page_accepts_single_source_string(self, store: WikiStore) -> None:
         workflow = build_map_workflow(store, "2026-06-16")
+        _plan_page(
+            workflow,
+            "sword-world-rpg-complete-edition-test",
+            summary="Test source.",
+        )
 
         workflow.tools["write_page"].callable(
             name="sword-world-rpg-complete-edition-test",

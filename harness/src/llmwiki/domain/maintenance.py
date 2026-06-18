@@ -56,6 +56,25 @@ class RecommendedAction:
 
 
 @dataclass(frozen=True)
+class RoutePlanStatus:
+    total_planned_pages: int = 0
+    total_route_gaps: int = 0
+    recent_route_gaps: tuple[str, ...] = ()
+
+    def render(self) -> str:
+        lines = [
+            f"Planned pages recorded: {self.total_planned_pages}",
+            f"Route gaps recorded: {self.total_route_gaps}",
+        ]
+        if self.recent_route_gaps:
+            lines.append("Recent route gaps:")
+            lines.extend(f"- {gap}" for gap in self.recent_route_gaps)
+        else:
+            lines.append("Recent route gaps: None.")
+        return "\n".join(lines)
+
+
+@dataclass(frozen=True)
 class CuratorStatus:
     strict_evidence: StrictEvidenceMode
     shape: WikiShapeSummary
@@ -64,6 +83,7 @@ class CuratorStatus:
     salience_report: SalienceReport
     candidate_backlog: CandidateBacklog
     semantic_lint_summary: str
+    route_plan_status: RoutePlanStatus
     graph_status: GraphStatus | None
     recent_log_entries: tuple[str, ...]
     navigation_warnings: tuple[str, ...]
@@ -79,6 +99,7 @@ class CuratorStatus:
                 "## Citation Evidence\n\n" + self.evidence_report.render(),
                 "## Salience\n\n" + (self.salience_report.render() or "No salience entries."),
                 "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
+                "## Ingest Route Plans\n\n" + self.route_plan_status.render(),
                 "## Latest Semantic Lint\n\n"
                 + (self.semantic_lint_summary or "No semantic lint report."),
                 "## Graph Export\n\n" + _render_graph_status(self.graph_status),
@@ -103,6 +124,7 @@ def build_curator_status(
     candidate_backlog: CandidateBacklog,
     strict_evidence: StrictEvidenceMode,
     semantic_lint_summary: str = "",
+    route_plan_status: RoutePlanStatus | None = None,
     graph_status: GraphStatus | None = None,
     link_findings: LintFindings | None = None,
 ) -> CuratorStatus:
@@ -133,6 +155,7 @@ def build_curator_status(
         salience_report=salience_report,
         candidate_backlog=candidate_backlog,
         semantic_lint_summary=semantic_lint_summary,
+        route_plan_status=route_plan_status or RoutePlanStatus(),
         graph_status=graph_status,
         recent_log_entries=tuple(recent_log_entries),
         navigation_warnings=navigation_warnings,

@@ -14,6 +14,13 @@ from llmwiki.config import WikiPaths
 from llmwiki.domain.contradictions import select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import GroundingSelection, select_grounding_claims
+from llmwiki.domain.ingest_route_history import ingest_route_plan_records_from_jsonl
+from llmwiki.domain.ingest_route_plan import (
+    IngestRouteContext,
+    IngestRoutePlan,
+    IngestRoutePlanState,
+    PlannedPage,
+)
 from llmwiki.domain.pages import WikiPage
 from llmwiki.domain.semantic_lint import SemanticLintSelection, select_semantic_lint_candidates
 from llmwiki.runtime.session import Session
@@ -42,6 +49,39 @@ def source(paths: WikiPaths) -> str:
     return "moon.md"
 
 
+def _plan_page_call(
+    name: str,
+    *,
+    category: str = "source",
+    summary: str = "Lunar notes.",
+    action: str = "create",
+    source_scope: str = "moon.md",
+    sources: tuple[str, ...] = ("moon.md",),
+    gaps: list[dict[str, str]] | None = None,
+) -> ToolCall:
+    return ToolCall(
+        tool="plan_pages",
+        args={
+            "planned_pages": [
+                {
+                    "metadata": {
+                        "page_id": name,
+                        "page_kind": category,
+                        "summary": summary,
+                        "sources": list(sources),
+                    },
+                    "role": "primary page for this source",
+                    "action": action,
+                    "source_scope": source_scope,
+                    "confidence": "high",
+                    "rationale": f"{name} is the durable wiki target for this ingest.",
+                }
+            ],
+            "gaps": gaps or [],
+        },
+    )
+
+
 class TestIngest:
     async def test_happy_path_updates_all_layers(
         self, store: WikiStore, paths: WikiPaths, source: str
@@ -49,6 +89,7 @@ class TestIngest:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon lunar formation"})],
+            [_plan_page_call("moon", summary="Notes on lunar formation.")],
             [
                 ToolCall(
                     tool="write_page",
@@ -71,6 +112,52 @@ class TestIngest:
         log = paths.log_path.read_text(encoding="utf-8")
         assert f"## [{TODAY}] ingest | moon.md" in log
         assert result.transcript_path is not None and result.transcript_path.exists()
+        route_records = ingest_route_plan_records_from_jsonl(
+            paths.route_plan_history_path.read_text(encoding="utf-8")
+        )
+        assert len(route_records) == 1
+        assert route_records[0].source_path == "moon.md"
+        assert route_records[0].planned_page_ids == ("moon",)
+        assert route_records[0].page_writes == ("moon",)
+        assert route_records[0].route_gap_count == 0
+
+    async def test_markdown_route_plan_gaps_are_persisted(
+        self, store: WikiStore, paths: WikiPaths, source: str
+    ) -> None:
+        gaps = [
+            {
+                "reason": "too-granular",
+                "source_scope": "moon.md",
+                "summary": "Minor aside stayed inside the source page.",
+            }
+        ]
+        script = [
+            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon", gaps=gaps)],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "moon",
+                        "category": "source",
+                        "summary": "Lunar notes.",
+                        "content": "Body. (raw/moon.md)",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
+        ]
+
+        await _session(store, script, paths).ingest(source)
+
+        route_records = ingest_route_plan_records_from_jsonl(
+            paths.route_plan_history_path.read_text(encoding="utf-8")
+        )
+        assert route_records[0].route_gap_count == 1
+        assert route_records[0].route_gap_summaries == (
+            "Minor aside stayed inside the source page.",
+        )
 
     async def test_premature_finish_is_blocked_then_recovers(
         self, store: WikiStore, paths: WikiPaths, source: str
@@ -81,6 +168,7 @@ class TestIngest:
             [ToolCall(tool="finish_ingest", args={"report": "done!"})],
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
@@ -117,6 +205,7 @@ class TestIngest:
             ],
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
@@ -153,6 +242,7 @@ class TestIngest:
                 )
             ],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
@@ -170,12 +260,51 @@ class TestIngest:
 
         assert store.read_index().count("[[moon]]") == 1
 
+    async def test_write_page_must_match_active_ingest_route_plan(
+        self, store: WikiStore, paths: WikiPaths, source: str
+    ) -> None:
+        script = [
+            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon-summary")],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "moon",
+                        "category": "source",
+                        "summary": "Lunar notes.",
+                        "content": "Body. (raw/moon.md)",
+                    },
+                )
+            ],
+            [_plan_page_call("moon")],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args={
+                        "name": "moon",
+                        "category": "source",
+                        "summary": "Lunar notes.",
+                        "content": "Body. (raw/moon.md)",
+                    },
+                )
+            ],
+            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
+        ]
+
+        await _session(store, script, paths).ingest(source)
+
+        assert store.list_pages() == ["moon"]
+        assert "moon-summary" not in store.read_index()
+
     async def test_bad_tool_args_fed_back_for_self_correction(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
             [
                 ToolCall(  # invalid category — tool error, model retries
                     tool="write_page",
@@ -212,6 +341,7 @@ class TestIngest:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon", action="enrich")],
             [
                 ToolCall(  # blind rewrite — must be rejected
                     tool="write_page",
@@ -247,6 +377,7 @@ class TestIngest:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
@@ -276,6 +407,7 @@ class TestIngest:
         script = [
             [ToolCall(tool="read_source", args={"path": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon", summary="s")],
             [
                 ToolCall(
                     tool="write_page",
@@ -296,6 +428,43 @@ class TestIngest:
 
 
 class TestStrictEvidenceWrites:
+    def test_write_guard_accepts_non_tool_ingest_route_plan(self, store: WikiStore) -> None:
+        state = IngestRoutePlanState(IngestRouteContext(source_path="moon.md", scope="source"))
+        state.accept(
+            IngestRoutePlan(
+                source_path="moon.md",
+                scope="source",
+                profile_ids=(),
+                planned_pages=(
+                    PlannedPage(
+                        metadata=WikiPage(
+                            name="moon",
+                            category="source",
+                            summary="Lunar notes.",
+                            body="",
+                        ).page_metadata,
+                        role="primary source page",
+                        action="create",
+                        source_scope="moon.md",
+                        confidence="high",
+                        rationale="The source is about the Moon.",
+                    ),
+                ),
+            )
+        )
+        tool = write_page_tool(store, TODAY, ingest_route_plan_state=state)
+
+        result = tool.callable(
+            name="moon",
+            category="source",
+            summary="Lunar notes.",
+            content="Claim. (raw/moon.md)",
+            sources=[],
+        )
+
+        assert "Wrote wiki/moon.md" in result
+        assert "moon" in store.list_pages()
+
     def test_off_mode_skips_validation(self, store: WikiStore) -> None:
         tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="off"))
         result = tool.callable(
@@ -799,8 +968,7 @@ class TestGrounding:
                 name="arrays",
                 category="concept",
                 summary="Array notes.",
-                body="Array destructuring binds positions to names. "
-                "(raw/article.md normalized:L1)",
+                body="Array destructuring binds positions to names. (raw/article.md normalized:L1)",
                 updated=TODAY,
             )
         )

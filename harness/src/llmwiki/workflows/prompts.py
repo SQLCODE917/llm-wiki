@@ -19,9 +19,10 @@ _BASE = (
 INGEST_TEMPLATE = _BASE + (
     "\nTask: ingest one raw source into the wiki, following the schema's "
     "ingest workflow. Read the source first. Search the wiki for related "
-    "pages before writing. Write a source page, then update or create the "
-    "entity/concept pages the source affects. Keep each page focused; link "
-    "pages with [[page-name]]. When the wiki fully reflects the source, "
+    "pages before writing. Call plan_pages with the page targets and any "
+    "route gaps before write_page. Write a source page, then update or create "
+    "the entity/concept pages the source affects. Keep each page focused; "
+    "link pages with [[page-name]]. When the wiki fully reflects the source, "
     "call finish_ingest with a report of the pages you wrote."
 )
 
@@ -43,6 +44,8 @@ MAP_TEMPLATE = _BASE + (
     "\nTask: ingest ONE CHUNK of a larger source (a book-scale PDF) into the "
     "wiki. The chunk text, its section heading, and its page range are in "
     "the user message. Search the wiki for related pages before writing. "
+    "Call plan_pages with the chunk's page targets and any route gaps before "
+    "write_page. "
     "Write the chapter source page, then AT MOST 3 other pages — only the "
     "concepts this chunk treats in depth. Not every term deserves a page: "
     "prefer enriching an existing page or a [[link]] to a page that doesn't "
@@ -62,7 +65,8 @@ INTEGRATE_TEMPLATE = _BASE + (
     "ingested; the user message carries a computed salience report and the "
     "machine-recorded page map. Write ONLY the hub source page. Ensure it "
     "summarizes the whole source and links the chapter/topic pages written "
-    "during chunking; do not create, rewrite, or repair chapter pages here. "
+    "during chunking; call plan_pages for that hub page before write_page. "
+    "Do not create, rewrite, or repair chapter pages here. "
     "Use the page map as the authoritative navigation outline: copy actual "
     "[[page-name]] links from it into grouped hub sections such as player "
     "rules, combat, magic, GM/support material, catalogs/charts, and "

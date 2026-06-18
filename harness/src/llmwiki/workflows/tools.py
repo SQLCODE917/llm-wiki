@@ -8,6 +8,7 @@ from forge.core.workflow import ToolDef, ToolSpec
 from pydantic import BaseModel, Field, field_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.ingest_route_plan import IngestRoutePlanState
 from llmwiki.domain.naming import singular_plural_collision
 from llmwiki.domain.pages import WikiPage
 from llmwiki.domain.search import render_hits, search_pages
@@ -185,6 +186,7 @@ def write_page_tool(
     evidence_policy: EvidencePolicy | None = None,
     new_page_prefix: str | None = None,
     prevent_singular_plural_siblings: bool = False,
+    ingest_route_plan_state: IngestRoutePlanState | None = None,
 ) -> ToolDef:
     """write_page, optionally guarded by a read-before-rewrite contract.
 
@@ -200,6 +202,8 @@ def write_page_tool(
 
     def _write_page(**kwargs: object) -> str:
         params = WritePageParams(**kwargs)  # type: ignore[arg-type]
+        if ingest_route_plan_state is not None:
+            ingest_route_plan_state.authorize_page_write(params.name, params.category)
         if (
             read_tracker is not None
             and params.name not in read_tracker

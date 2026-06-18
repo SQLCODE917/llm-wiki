@@ -105,8 +105,7 @@ def render_profiles(profiles: tuple[IngestProfile, ...]) -> str:
     for profile in profiles:
         status = "enabled" if profile.enabled else "disabled"
         lines.append(
-            f"- {profile.id} [{status}, priority {profile.priority}] — "
-            f"{profile.description}"
+            f"- {profile.id} [{status}, priority {profile.priority}] — {profile.description}"
         )
     return "\n".join(lines)
 
@@ -146,9 +145,7 @@ def _load_profile(path: Path) -> IngestProfile:
         raise ConfigError(f"Ingest profile {profile_id!r} must define [namespace].")
     namespace_mode = namespace.get("mode")
     if namespace_mode != "source-slug":
-        raise ConfigError(
-            f"Ingest profile {profile_id!r} namespace.mode must be 'source-slug'."
-        )
+        raise ConfigError(f"Ingest profile {profile_id!r} namespace.mode must be 'source-slug'.")
     require_namespace = namespace.get("require_for_new_pages", False)
     if not isinstance(require_namespace, bool):
         raise ConfigError(

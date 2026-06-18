@@ -25,9 +25,33 @@ from llmwiki.domain.grounding import (
     select_grounding_claims,
 )
 from llmwiki.domain.index import index_page_names, parse_index, upsert_index_entry
+from llmwiki.domain.ingest_route_history import (
+    IngestRoutePlanRecord,
+    ingest_route_plan_record_from_json_line,
+    ingest_route_plan_records_from_jsonl,
+)
+from llmwiki.domain.ingest_route_plan import (
+    IngestRouteContext,
+    IngestRoutePlan,
+    IngestRoutePlanError,
+    IngestRoutePlanState,
+    IngestRun,
+    PlannedPage,
+    RawSource,
+    RouteGap,
+    SourceBundle,
+    validate_ingest_route_plan,
+)
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
-from llmwiki.domain.pages import PageError, WikiPage, parse_page, render_page
+from llmwiki.domain.pages import (
+    LOCAL_FLAT_STRUCTURE,
+    PageError,
+    PageMetadata,
+    WikiPage,
+    parse_page,
+    render_page,
+)
 from llmwiki.domain.search import render_hits, search_pages
 from llmwiki.domain.semantic_lint import (
     SemanticFinding,
@@ -44,6 +68,7 @@ class InMemorySourceResolver:
 
     def source_lines(self, source_path: str) -> tuple[str, ...] | None:
         return self._sources.get(source_path)
+
 
 INDEX = """# Index
 
@@ -86,6 +111,142 @@ class TestPages:
     def test_summary_collapsed_to_one_line(self) -> None:
         with pytest.raises(PageError):
             WikiPage(name="ok", category="entity", summary="  \n ", body="b")
+
+
+class TestIngestRoutePlans:
+    def test_domain_objects_cover_local_flat_wiki(self) -> None:
+        source = RawSource.from_source_path("rules/book.pdf")
+        bundle = SourceBundle.one(source)
+        metadata = PageMetadata(
+            page_id="rules-book",
+            page_kind="source",
+            summary="Rules book.",
+            sources=("rules/book.pdf",),
+        )
+        run = IngestRun(source_bundle=bundle, page_writes=("rules-book",))
+
+        assert source.source_format == "pdf"
+        assert LOCAL_FLAT_STRUCTURE.render_path(metadata).as_posix() == "rules-book.md"
+        assert run.source_bundle == bundle
+        assert run.wiki_structure == LOCAL_FLAT_STRUCTURE
+
+    def test_valid_route_plan_is_accepted_and_authorizes_page_write(self) -> None:
+        state = IngestRoutePlanState(IngestRouteContext(source_path="moon.md", scope="source"))
+        plan = _route_plan("moon")
+
+        summary = state.accept(plan)
+        authorized = state.authorize_page_write("moon", "source")
+
+        assert summary.planned_page_count == 1
+        assert authorized.metadata.page_id == "moon"
+
+    def test_route_plan_rejects_invalid_category(self) -> None:
+        with pytest.raises(PageError):
+            _planned_page("moon", page_kind="article")
+
+    def test_route_plan_must_match_run_context(self) -> None:
+        context = IngestRouteContext(source_path="moon.md", scope="source", profile_ids=("rules",))
+        plan = _route_plan("moon", profile_ids=())
+
+        with pytest.raises(IngestRoutePlanError, match="profile_ids"):
+            validate_ingest_route_plan(plan, context)
+
+    def test_route_plan_rejects_duplicate_page_ids(self) -> None:
+        page = _planned_page("moon")
+        plan = IngestRoutePlan(
+            source_path="moon.md",
+            scope="source",
+            profile_ids=(),
+            planned_pages=(page, page),
+        )
+
+        with pytest.raises(IngestRoutePlanError, match="Duplicate"):
+            validate_ingest_route_plan(plan, IngestRouteContext("moon.md", "source"))
+
+    def test_route_plan_rejects_action_that_disagrees_with_existing_page(self) -> None:
+        plan = _route_plan("moon")
+        context = IngestRouteContext("moon.md", "source", existing_pages=frozenset({"moon"}))
+
+        with pytest.raises(IngestRoutePlanError, match="exists"):
+            validate_ingest_route_plan(plan, context)
+
+    def test_route_plan_rejects_new_page_outside_namespace(self) -> None:
+        plan = _route_plan("moon")
+        context = IngestRouteContext("moon.md", "source", new_page_prefix="lunar-notes")
+
+        with pytest.raises(IngestRoutePlanError, match="namespace prefix"):
+            validate_ingest_route_plan(plan, context)
+
+    def test_route_gaps_are_validated_and_summarized(self) -> None:
+        plan = _route_plan(
+            "moon",
+            gaps=(
+                RouteGap(
+                    reason="too-granular",
+                    source_scope="moon.md",
+                    summary="Minor aside belongs inside the source page.",
+                ),
+            ),
+        )
+
+        summary = plan.summary()
+
+        assert summary.route_gap_count == 1
+        assert summary.route_gap_summaries == ("Minor aside belongs inside the source page.",)
+
+    def test_route_plan_record_jsonl_roundtrip(self) -> None:
+        plan = _route_plan(
+            "moon",
+            gaps=(
+                RouteGap(
+                    reason="too-granular",
+                    source_scope="moon.md",
+                    summary="Minor aside belongs inside the source page.",
+                ),
+            ),
+        )
+        record = IngestRoutePlanRecord.from_plan(
+            plan,
+            date="2026-06-18",
+            run_id="run-1",
+            page_writes=("moon",),
+        )
+
+        line = record.to_json_line()
+
+        assert ingest_route_plan_record_from_json_line(line) == record
+        assert ingest_route_plan_records_from_jsonl(line + "\n") == (record,)
+
+
+def _planned_page(
+    page_id: str,
+    *,
+    page_kind: str = "source",
+    action: str = "create",
+) -> PlannedPage:
+    return PlannedPage(
+        metadata=PageMetadata(page_id=page_id, page_kind=page_kind, summary="Lunar notes."),
+        role="primary source page",
+        action=action,  # type: ignore[arg-type]
+        source_scope="moon.md",
+        confidence="high",
+        rationale="The source is about the Moon.",
+    )
+
+
+def _route_plan(
+    page_id: str,
+    *,
+    profile_ids: tuple[str, ...] = (),
+    gaps: tuple[RouteGap, ...] = (),
+) -> IngestRoutePlan:
+    return IngestRoutePlan(
+        source_path="moon.md",
+        scope="source",
+        profile_ids=profile_ids,
+        planned_pages=(_planned_page(page_id),),
+        gaps=gaps,
+    )
 
 
 class TestIndex:

@@ -28,6 +28,9 @@ class ChunkRecord:
     # Machine record of pages the chunk run actually wrote (captured at the
     # write_page tool) — ground truth where notes have over-claimed.
     pages_written: tuple[str, ...] = ()
+    route_plan_pages: int = 0
+    route_plan_gaps: int = 0
+    route_gap_summaries: tuple[str, ...] = ()
 
     def __post_init__(self) -> None:
         if self.status not in _STATUSES:
@@ -49,10 +52,26 @@ class Manifest:
     def all_done(self) -> bool:
         return not self.pending
 
-    def mark_done(self, chunk_id: int, notes: str, pages_written: tuple[str, ...] = ()) -> Manifest:
+    def mark_done(
+        self,
+        chunk_id: int,
+        notes: str,
+        pages_written: tuple[str, ...] = (),
+        route_plan_pages: int = 0,
+        route_plan_gaps: int = 0,
+        route_gap_summaries: tuple[str, ...] = (),
+    ) -> Manifest:
         capped = notes if len(notes) <= NOTE_CAP_CHARS else notes[: NOTE_CAP_CHARS - 1] + "…"
         chunks = tuple(
-            replace(c, status="done", notes=capped, pages_written=pages_written)
+            replace(
+                c,
+                status="done",
+                notes=capped,
+                pages_written=pages_written,
+                route_plan_pages=route_plan_pages,
+                route_plan_gaps=route_plan_gaps,
+                route_gap_summaries=route_gap_summaries,
+            )
             if c.chunk_id == chunk_id
             else c
             for c in self.chunks
@@ -79,6 +98,11 @@ class Manifest:
                 entry += "\nPages written (recorded): " + ", ".join(
                     f"[[{p}]]" for p in c.pages_written
                 )
+            if c.route_plan_pages or c.route_plan_gaps:
+                entry += (
+                    "\nIngest route plan: "
+                    f"{c.route_plan_pages} planned page(s), {c.route_plan_gaps} route gap(s)"
+                )
             parts.append(entry)
         return "\n\n".join(parts)
 
@@ -89,9 +113,15 @@ class Manifest:
             if c.status != "done":
                 continue
             pages = ", ".join(f"[[{p}]]" for p in c.pages_written) or "(none recorded)"
+            route_plan = ""
+            if c.route_plan_pages or c.route_plan_gaps:
+                route_plan = (
+                    f"; route plan: {c.route_plan_pages} planned page(s), "
+                    f"{c.route_plan_gaps} route gap(s)"
+                )
             parts.append(
                 f"Chunk {c.chunk_id} — {c.heading} "
-                f"(p.{c.start_page}-{c.end_page}): {pages}"
+                f"(p.{c.start_page}-{c.end_page}): {pages}{route_plan}"
             )
         return "\n".join(parts)
 
@@ -119,6 +149,9 @@ def to_json(manifest: Manifest) -> str:
                     "status": c.status,
                     "notes": c.notes,
                     "pages_written": list(c.pages_written),
+                    "route_plan_pages": c.route_plan_pages,
+                    "route_plan_gaps": c.route_plan_gaps,
+                    "route_gap_summaries": list(c.route_gap_summaries),
                 }
                 for c in manifest.chunks
             ],
@@ -145,6 +178,9 @@ def from_json(text: str) -> Manifest:
                 notes=c["notes"],
                 # absent in manifests written before the salience design
                 pages_written=tuple(c.get("pages_written", [])),
+                route_plan_pages=c.get("route_plan_pages", 0),
+                route_plan_gaps=c.get("route_plan_gaps", 0),
+                route_gap_summaries=tuple(c.get("route_gap_summaries", [])),
             )
             for c in data["chunks"]
         ),

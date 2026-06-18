@@ -56,6 +56,30 @@ def _write_page_call(name: str) -> ToolCall:
     )
 
 
+def _plan_page_call(name: str, gaps: list[dict[str, str]] | None = None) -> ToolCall:
+    return ToolCall(
+        tool="plan_pages",
+        args={
+            "planned_pages": [
+                {
+                    "metadata": {
+                        "page_id": name,
+                        "page_kind": "source",
+                        "summary": f"About {name}.",
+                        "sources": ["book.pdf"],
+                    },
+                    "role": "source page for this PDF ingest stage",
+                    "action": "create",
+                    "source_scope": "book.pdf",
+                    "confidence": "high",
+                    "rationale": f"{name} is the durable page for this PDF ingest stage.",
+                }
+            ],
+            "gaps": gaps or [],
+        },
+    )
+
+
 def _session(
     store: WikiStore, script: list, paths: WikiPaths, extraction: ExtractionResult
 ) -> Session:
@@ -74,15 +98,17 @@ def _session(
     return session
 
 
-def _map_turns(page: str, note: str) -> list:
+def _map_turns(page: str, note: str, gaps: list[dict[str, str]] | None = None) -> list:
     return [
         [ToolCall(tool="search_wiki", args={"query": page})],
+        [_plan_page_call(page, gaps=gaps)],
         [_write_page_call(page)],
         [ToolCall(tool="finish_chunk", args={"report": note})],
     ]
 
 
 _INTEGRATE_TURNS = [
+    [_plan_page_call("book")],
     [_write_page_call("book")],
     [ToolCall(tool="finish_ingest", args={"report": "Hub linked to 2 chapter pages."})],
 ]
@@ -109,6 +135,8 @@ class TestPdfIngest:
         saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
         assert saved.all_done and saved.integrated
         assert saved.chunks[0].notes == "noted functions"
+        assert saved.chunks[0].route_plan_pages == 1
+        assert saved.chunks[0].route_plan_gaps == 0
         # One log entry for the whole ingest.
         log = paths.log_path.read_text(encoding="utf-8")
         assert log.count("ingest | book.pdf") == 1
@@ -130,9 +158,7 @@ class TestPdfIngest:
         assert saved.chunks[0].notes == "done already"
         assert saved.chunks[1].notes == "resumed fine"
 
-    async def test_page_map_reaches_integrate_run(
-        self, store: WikiStore, paths: WikiPaths
-    ) -> None:
+    async def test_page_map_reaches_integrate_run(self, store: WikiStore, paths: WikiPaths) -> None:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths)
         script = (
@@ -197,9 +223,11 @@ class TestPdfIngest:
 
         script = [
             [ToolCall(tool="search_wiki", args={"query": "functions"})],
+            [_plan_page_call("functions")],
             [_linked_write("functions")],
             [ToolCall(tool="finish_chunk", args={"report": "n1"})],
             [ToolCall(tool="search_wiki", args={"query": "closures"})],
+            [_plan_page_call("closures")],
             [_linked_write("closures")],
             [ToolCall(tool="finish_chunk", args={"report": "n2"})],
             *_INTEGRATE_TURNS,
@@ -217,6 +245,33 @@ class TestPdfIngest:
         integrate_msgs = [m["content"] for m in fake.sent[-2] if m.get("role") == "user"]
         assert any("Salience report" in c and "[[iterable]] (links 2" in c for c in integrate_msgs)
         assert any("Chunk 1" in c and "[[functions]]" in c for c in integrate_msgs)
+
+    async def test_route_plan_gaps_are_recorded_in_manifest(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+        extraction = _fake_extraction(paths)
+        gaps = [
+            {
+                "reason": "too-granular",
+                "source_scope": "book.pdf p.1-10",
+                "summary": "Minor syntax aside folded into the chapter page.",
+            }
+        ]
+        script = (
+            _map_turns("functions", "n1", gaps=gaps)
+            + _map_turns("closures", "n2")
+            + _INTEGRATE_TURNS
+        )
+        session = _session(store, script, paths, extraction)
+        await session.ingest("book.pdf")
+
+        saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
+        assert saved.chunks[0].route_plan_pages == 1
+        assert saved.chunks[0].route_plan_gaps == 1
+        assert saved.chunks[0].route_gap_summaries == (
+            "Minor syntax aside folded into the chapter page.",
+        )
 
     async def test_hub_key_lists_reconciled_after_integrate(
         self, store: WikiStore, paths: WikiPaths
@@ -238,6 +293,7 @@ class TestPdfIngest:
             )
         )
         script = [
+            [_plan_page_call("book")],
             [
                 ToolCall(
                     tool="write_page",

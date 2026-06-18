@@ -17,10 +17,12 @@ from llmwiki.domain.ingest_profiles import (
     compose_prompt,
     prevents_singular_plural_siblings,
 )
+from llmwiki.domain.ingest_route_plan import IngestRouteContext, IngestRoutePlanState
 from llmwiki.domain.pages import slugify
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.fixed_page_tools import write_fixed_source_page_tool
+from llmwiki.workflows.ingest_route_tools import plan_pages_tool
 from llmwiki.workflows.tools import (
     finish_tool,
     read_page_tool,
@@ -37,8 +39,23 @@ def build_map_workflow(
     profiles: tuple[IngestProfile, ...] = (),
     source_path: str = "",
     new_page_prefix: str | None = None,
+    chunk_id: int | None = None,
+    ingest_route_plan_state: IngestRoutePlanState | None = None,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
+    prevent_siblings = prevents_singular_plural_siblings(profiles)
+    if ingest_route_plan_state is None:
+        ingest_route_plan_state = IngestRoutePlanState(
+            IngestRouteContext(
+                source_path=source_path,
+                scope="pdf-chunk",
+                profile_ids=tuple(profile.id for profile in profiles),
+                chunk_id=chunk_id,
+                existing_pages=frozenset(store.list_pages()),
+                new_page_prefix=new_page_prefix,
+                prevent_singular_plural_siblings=prevent_siblings,
+            )
+        )
     tools = [
         search_wiki_tool(store),
         read_page_tool(
@@ -47,14 +64,17 @@ def build_map_workflow(
             max_chars=2000,
             track_truncated_reads=False,
         ),
+        plan_pages_tool(ingest_route_plan_state),
         write_page_tool(
             store,
             today,
+            prerequisites=["search_wiki", "plan_pages"],
             read_tracker=seen,
             write_log=write_log,
             evidence_policy=evidence_policy,
             new_page_prefix=new_page_prefix,
-            prevent_singular_plural_siblings=prevents_singular_plural_siblings(profiles),
+            prevent_singular_plural_siblings=prevent_siblings,
+            ingest_route_plan_state=ingest_route_plan_state,
         ),
         finish_tool(
             "finish_chunk",
@@ -66,7 +86,7 @@ def build_map_workflow(
         name="pdf-map",
         description="Integrate one chunk of a larger source into the wiki.",
         tools={t.name: t for t in tools},
-        required_steps=["search_wiki", "write_page"],
+        required_steps=["search_wiki", "plan_pages", "write_page"],
         terminal_tool="finish_chunk",
         system_prompt_template=compose_prompt(
             prompts.MAP_TEMPLATE,
@@ -86,9 +106,21 @@ def build_integrate_workflow(
     new_page_prefix: str | None = None,
     required_link_targets: tuple[str, ...] = (),
     min_required_links: int = 0,
+    ingest_route_plan_state: IngestRoutePlanState | None = None,
 ) -> Workflow:
     seen: set[str] = set()
     hub_page = slugify(source_path.rsplit(".", maxsplit=1)[0]) if source_path else ""
+    if ingest_route_plan_state is None:
+        ingest_route_plan_state = IngestRoutePlanState(
+            IngestRouteContext(
+                source_path=source_path,
+                scope="pdf-integrate",
+                profile_ids=tuple(profile.id for profile in profiles),
+                existing_pages=frozenset(store.list_pages()),
+                new_page_prefix=new_page_prefix,
+                prevent_singular_plural_siblings=prevents_singular_plural_siblings(profiles),
+            )
+        )
     tools = [
         search_wiki_tool(store),
         read_page_tool(
@@ -97,6 +129,7 @@ def build_integrate_workflow(
             max_chars=4000,
             track_truncated_reads=False,
         ),
+        plan_pages_tool(ingest_route_plan_state),
         write_fixed_source_page_tool(
             store,
             today,
@@ -106,6 +139,7 @@ def build_integrate_workflow(
             new_page_prefix=new_page_prefix,
             required_link_targets=required_link_targets,
             min_required_links=min_required_links,
+            ingest_route_plan_state=ingest_route_plan_state,
         ),
         finish_tool(
             "finish_ingest",
@@ -117,7 +151,7 @@ def build_integrate_workflow(
         name="pdf-integrate",
         description="Consolidate a chunked ingest into a coherent source hub.",
         tools={t.name: t for t in tools},
-        required_steps=["write_page"],
+        required_steps=["plan_pages", "write_page"],
         terminal_tool="finish_ingest",
         system_prompt_template=compose_prompt(
             prompts.INTEGRATE_TEMPLATE,

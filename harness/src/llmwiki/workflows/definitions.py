@@ -21,6 +21,7 @@ from llmwiki.domain.ingest_profiles import (
     compose_prompt,
     prevents_singular_plural_siblings,
 )
+from llmwiki.domain.ingest_route_plan import IngestRouteContext, IngestRoutePlanState
 from llmwiki.domain.semantic_lint import SemanticFinding
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
@@ -28,6 +29,7 @@ from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.graph_tools import link_orphan_tool
 from llmwiki.workflows.grounding_tools import record_grounding_verdict_tool
+from llmwiki.workflows.ingest_route_tools import plan_pages_tool
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.semantic_lint_tools import record_semantic_finding_tool
 from llmwiki.workflows.tools import (
@@ -47,20 +49,37 @@ def build_ingest_workflow(
     profiles: tuple[IngestProfile, ...] = (),
     source_path: str = "",
     new_page_prefix: str | None = None,
+    write_log: list[str] | None = None,
+    ingest_route_plan_state: IngestRoutePlanState | None = None,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
+    prevent_siblings = prevents_singular_plural_siblings(profiles)
+    if ingest_route_plan_state is None:
+        ingest_route_plan_state = IngestRoutePlanState(
+            IngestRouteContext(
+                source_path=source_path,
+                scope="source",
+                profile_ids=tuple(profile.id for profile in profiles),
+                existing_pages=frozenset(store.list_pages()),
+                new_page_prefix=new_page_prefix,
+                prevent_singular_plural_siblings=prevent_siblings,
+            )
+        )
     tools = [
         read_source_tool(store),
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
+        plan_pages_tool(ingest_route_plan_state),
         write_page_tool(
             store,
             today,
-            prerequisites=["read_source", "search_wiki"],
+            prerequisites=["read_source", "search_wiki", "plan_pages"],
             read_tracker=seen,
+            write_log=write_log,
             evidence_policy=evidence_policy,
             new_page_prefix=new_page_prefix,
-            prevent_singular_plural_siblings=prevents_singular_plural_siblings(profiles),
+            prevent_singular_plural_siblings=prevent_siblings,
+            ingest_route_plan_state=ingest_route_plan_state,
         ),
         finish_tool(
             "finish_ingest",
@@ -72,7 +91,7 @@ def build_ingest_workflow(
         name="ingest",
         description="Integrate one raw source into the wiki.",
         tools={t.name: t for t in tools},
-        required_steps=["read_source", "search_wiki", "write_page"],
+        required_steps=["read_source", "search_wiki", "plan_pages", "write_page"],
         terminal_tool="finish_ingest",
         system_prompt_template=compose_prompt(
             prompts.INGEST_TEMPLATE,
@@ -214,8 +233,7 @@ def build_grounding_workflow(
         record_grounding_verdict_tool(store, verdicts, candidates),
         finish_tool(
             "finish_grounding",
-            "Finish the grounding audit with audited scope, uncertainty, and "
-            "curator next steps.",
+            "Finish the grounding audit with audited scope, uncertainty, and curator next steps.",
         ),
     ]
     return Workflow(
@@ -228,9 +246,7 @@ def build_grounding_workflow(
     )
 
 
-def build_semantic_lint_workflow(
-    store: WikiStore, findings: list[SemanticFinding]
-) -> Workflow:
+def build_semantic_lint_workflow(store: WikiStore, findings: list[SemanticFinding]) -> Workflow:
     tools = [
         read_page_tool(store),
         record_semantic_finding_tool(store, findings),

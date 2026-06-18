@@ -39,13 +39,15 @@ from llmwiki.domain.ingest_profiles import (
     render_profiles,
     select_ingest_profiles,
 )
+from llmwiki.domain.ingest_route_history import ingest_route_plan_records_from_jsonl
 from llmwiki.domain.links import compute_findings
-from llmwiki.domain.maintenance import build_curator_status, recent_log_entries
+from llmwiki.domain.maintenance import RoutePlanStatus, build_curator_status, recent_log_entries
 from llmwiki.domain.pages import WikiPage, parse_page
 from llmwiki.domain.salience import compute_salience
 from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint_candidates
 from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES, SEMANTIC_LINT_PAGE
 from llmwiki.pdf import PdfError
+from llmwiki.pdf.manifest import from_json as manifest_from_json
 from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
 from llmwiki.pdf.recognizer import NullRecognizer, TextRecognizer
 from llmwiki.pdf.vision import AppleVisionRecognizer
@@ -491,6 +493,7 @@ def _curator_report(
         candidate_backlog=candidate_backlog,
         strict_evidence=strict_evidence,
         semantic_lint_summary=_semantic_lint_summary(store),
+        route_plan_status=_route_plan_status(paths),
         graph_status=graph_status(
             build_wiki_graph(page_texts, generated_date=today or "status-check"),
             store.read_graph_json(),
@@ -498,6 +501,33 @@ def _curator_report(
         link_findings=link_findings,
     )
     return status.render()
+
+
+def _route_plan_status(paths: WikiPaths) -> RoutePlanStatus:
+    total_planned_pages = 0
+    total_route_gaps = 0
+    recent_route_gaps: list[str] = []
+    if paths.route_plan_history_path.exists():
+        records = ingest_route_plan_records_from_jsonl(
+            paths.route_plan_history_path.read_text(encoding="utf-8")
+        )
+        for record in records:
+            total_planned_pages += record.planned_page_count
+            total_route_gaps += record.route_gap_count
+            for summary in record.route_gap_summaries:
+                recent_route_gaps.append(f"raw/{record.source_path}: {summary}")
+    for manifest_path in sorted(paths.cache_dir.glob("*/manifest.json")):
+        manifest = manifest_from_json(manifest_path.read_text(encoding="utf-8"))
+        for chunk in manifest.chunks:
+            total_planned_pages += chunk.route_plan_pages
+            total_route_gaps += chunk.route_plan_gaps
+            for summary in chunk.route_gap_summaries:
+                recent_route_gaps.append(f"raw/{manifest.source} chunk {chunk.chunk_id}: {summary}")
+    return RoutePlanStatus(
+        total_planned_pages=total_planned_pages,
+        total_route_gaps=total_route_gaps,
+        recent_route_gaps=tuple(recent_route_gaps[-5:]),
+    )
 
 
 def _semantic_lint_summary(store: WikiStore) -> str:
@@ -549,10 +579,7 @@ def _run_pages(args: argparse.Namespace, paths: WikiPaths, today: str) -> Operat
             alias=args.alias,
             today=today,
         )
-        detail = (
-            f"Replaced [[{args.old_target}]] with [[{args.new_target}]] "
-            f"in [[{args.page}]]."
-        )
+        detail = f"Replaced [[{args.old_target}]] with [[{args.new_target}]] in [[{args.page}]]."
         store.append_log(today, "pages", args.page, detail)
         return OperationResult("pages", args.page, detail, None)
     raise ConfigError(f"Unknown pages operation {args.page_op!r}.")

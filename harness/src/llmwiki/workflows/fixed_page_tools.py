@@ -9,6 +9,7 @@ from forge.core.workflow import ToolDef, ToolSpec
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.ingest_route_plan import IngestRoutePlanState
 from llmwiki.domain.links import extract_links
 from llmwiki.store import WikiStore
 from llmwiki.workflows.tools import _normalize_source_value, write_page_tool
@@ -70,14 +71,16 @@ def write_fixed_source_page_tool(
     new_page_prefix: str | None = None,
     required_link_targets: tuple[str, ...] = (),
     min_required_links: int = 0,
+    ingest_route_plan_state: IngestRoutePlanState | None = None,
 ) -> ToolDef:
     required_target_set = frozenset(required_link_targets)
     base = write_page_tool(
         store,
         today,
-        read_tracker=None,
+        read_tracker=read_tracker,
         evidence_policy=evidence_policy,
         new_page_prefix=new_page_prefix,
+        ingest_route_plan_state=ingest_route_plan_state,
     )
 
     def _write_page(**kwargs: object) -> str:

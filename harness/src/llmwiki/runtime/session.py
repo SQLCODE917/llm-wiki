@@ -26,7 +26,17 @@ from llmwiki.domain.contradictions import (
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
-from llmwiki.domain.ingest_profiles import IngestProfile, required_new_page_prefix
+from llmwiki.domain.ingest_profiles import (
+    IngestProfile,
+    prevents_singular_plural_siblings,
+    required_new_page_prefix,
+)
+from llmwiki.domain.ingest_route_history import IngestRoutePlanRecord
+from llmwiki.domain.ingest_route_plan import (
+    IngestRouteContext,
+    IngestRoutePlanScope,
+    IngestRoutePlanState,
+)
 from llmwiki.domain.links import LintFindings, compute_findings
 from llmwiki.domain.pages import WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
@@ -84,9 +94,9 @@ ExtractFn = Callable[[Path, str, bool], ExtractionResult]
 # (forge ADR-013: small models need the structured way out spelled out).
 _RETRY_NUDGES = {
     "ingest": (
-        "Reply with exactly one tool call. If the wiki now fully reflects the "
-        "source, call finish_ingest with your report; otherwise call the next "
-        "tool you need."
+        "Reply with exactly one tool call. Call plan_pages before write_page. "
+        "If the wiki now fully reflects the source, call finish_ingest with "
+        "your report; otherwise call the next tool you need."
     ),
     "query": ("Reply with exactly one tool call. Use respond to deliver your answer to the user."),
     "lint": (
@@ -107,14 +117,14 @@ _RETRY_NUDGES = {
         "record_semantic_finding or read_page."
     ),
     "pdf-chunk": (
-        "Reply with exactly one tool call. If the wiki now reflects this "
-        "chunk, call finish_chunk with your notes; otherwise call the next "
-        "tool you need."
+        "Reply with exactly one tool call. Call plan_pages before write_page. "
+        "If the wiki now reflects this chunk, call finish_chunk with your "
+        "notes; otherwise call the next tool you need."
     ),
     "pdf-integrate": (
-        "Reply with exactly one tool call. If the hub page and cross-links "
-        "are in place, call finish_ingest with your report; otherwise call "
-        "the next tool you need."
+        "Reply with exactly one tool call. Call plan_pages before write_page. "
+        "If the hub page and cross-links are in place, call finish_ingest "
+        "with your report; otherwise call the next tool you need."
     ),
     "chat": ("Reply with exactly one tool call. Use respond to deliver your answer to the user."),
     "chat-file": (
@@ -216,6 +226,8 @@ class Session:
             return await self._ingest_pdf(source_path, reextract, reintegrate)
         if reintegrate:
             raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
+        ingest_route_plan_state = self._ingest_route_plan_state(source_path, "source")
+        write_log: list[str] = []
         workflow = build_ingest_workflow(
             self.store,
             self.today,
@@ -223,12 +235,18 @@ class Session:
             profiles=self.ingest_profiles,
             source_path=source_path,
             new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+            write_log=write_log,
+            ingest_route_plan_state=ingest_route_plan_state,
         )
         message = (
             f"Ingest the source 'raw/{source_path}' into the wiki. "
             f"Pass path='{source_path}' to read_source."
         )
         report, transcript = await self._run(workflow, message, "ingest")
+        self._record_ingest_route_plan(
+            ingest_route_plan_state,
+            page_writes=tuple(dict.fromkeys(write_log)),
+        )
         self.store.append_log(self.today, "ingest", source_path, report)
         return OperationResult("ingest", source_path, report, transcript)
 
@@ -248,6 +266,11 @@ class Session:
 
         for record in manifest.pending:
             text = chunk_file(result.cache_dir, record.chunk_id).read_text(encoding="utf-8")
+            ingest_route_plan_state = self._ingest_route_plan_state(
+                source_path,
+                "pdf-chunk",
+                chunk_id=record.chunk_id,
+            )
             message = (
                 f"Ingest chunk {record.chunk_id} of {total} from 'raw/{source_path}'.\n"
                 f"Section: {record.heading} (pages {record.start_page}-{record.end_page}).\n"
@@ -264,13 +287,21 @@ class Session:
                     profiles=self.ingest_profiles,
                     source_path=source_path,
                     new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+                    chunk_id=record.chunk_id,
+                    ingest_route_plan_state=ingest_route_plan_state,
                 ),
                 message,
                 "pdf-chunk",
                 tag=f"pdf-chunk-{record.chunk_id:04d}",
             )
+            route_summary = ingest_route_plan_state.summary()
             manifest = manifest.mark_done(
-                record.chunk_id, notes, pages_written=tuple(dict.fromkeys(write_log))
+                record.chunk_id,
+                notes,
+                pages_written=tuple(dict.fromkeys(write_log)),
+                route_plan_pages=route_summary.planned_page_count,
+                route_plan_gaps=route_summary.route_gap_count,
+                route_gap_summaries=route_summary.route_gap_summaries,
             )
             save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
             if self.on_chunk_note is not None:
@@ -299,6 +330,7 @@ class Session:
                     link_targets.append(page)
                     seen_targets.add(page)
         required_link_targets = tuple(link_targets)
+        ingest_route_plan_state = self._ingest_route_plan_state(source_path, "pdf-integrate")
         report, transcript = await self._run(
             build_integrate_workflow(
                 self.store,
@@ -309,6 +341,7 @@ class Session:
                 new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
                 required_link_targets=required_link_targets,
                 min_required_links=min(12, len(required_link_targets)),
+                ingest_route_plan_state=ingest_route_plan_state,
             ),
             message,
             "pdf-integrate",
@@ -320,6 +353,44 @@ class Session:
         )
         self.store.append_log(self.today, "ingest", source_path, report)
         return OperationResult("ingest", source_path, report, transcript)
+
+    def _record_ingest_route_plan(
+        self,
+        state: IngestRoutePlanState,
+        *,
+        page_writes: tuple[str, ...] = (),
+    ) -> None:
+        if state.active_plan is None:
+            return
+        self.store.append_ingest_route_plan_record(
+            IngestRoutePlanRecord.from_plan(
+                state.active_plan,
+                date=self.today,
+                run_id=self.run_id,
+                page_writes=page_writes,
+            )
+        )
+
+    def _ingest_route_plan_state(
+        self,
+        source_path: str,
+        scope: IngestRoutePlanScope,
+        *,
+        chunk_id: int | None = None,
+    ) -> IngestRoutePlanState:
+        return IngestRoutePlanState(
+            IngestRouteContext(
+                source_path=source_path,
+                scope=scope,
+                profile_ids=tuple(profile.id for profile in self.ingest_profiles),
+                chunk_id=chunk_id,
+                existing_pages=frozenset(self.store.list_pages()),
+                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+                prevent_singular_plural_siblings=prevents_singular_plural_siblings(
+                    self.ingest_profiles
+                ),
+            )
+        )
 
     def _reconcile_hub_key_lists(self, hub: str, salience: SalienceReport) -> None:
         """Harness-owned bookkeeping: the hub's key-lists mirror the salience

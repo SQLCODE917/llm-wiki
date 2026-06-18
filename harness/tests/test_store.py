@@ -173,9 +173,7 @@ class TestWikiLayer:
         assert "raw/book.pdf p.2" in target
         assert "[[daemons]]" in store.read_page("hub")
 
-    def test_replace_page_link_preserves_alias_and_rewrites_index(
-        self, store: WikiStore
-    ) -> None:
+    def test_replace_page_link_preserves_alias_and_rewrites_index(self, store: WikiStore) -> None:
         store.write_page(_page(name="new-target"))
         store.write_page(
             WikiPage(

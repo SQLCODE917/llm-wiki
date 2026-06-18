@@ -16,6 +16,23 @@ more than 3–4 sequence diagrams, or any diagram cannot be drawn in simple ASCI
 the scope is too big or too low-level. Stop and propose a split into multiple
 TDDs instead of writing one.
 
+**Terminology Discipline***
+
+Use stable domain terms exactly. Do not creatively rephrase domain operations,
+objects, or workflow stages once a term is established.
+
+- Define each new domain term once, preferably in Data Model or Requirements.
+- Use that exact term everywhere else in the document.
+- Do not alternate between near-synonyms such as "page write", "ingest page write",
+  "wiki write", "page update", or "write operation" unless the doc explicitly
+  defines them as different concepts.
+- Prefer existing code/tool names when they already exist, e.g. `write_page` or
+  "page write".
+- Before finishing a TDD, scan for terminology drift and normalize synonyms to
+  the canonical term.
+- If a term needs to vary by context, define the distinction explicitly before
+  using both forms.
+
 **Structure (use these sections, in order):**
 
 1. **Context & Problem** — 2–4 sentences on what exists today and what's broken
@@ -24,11 +41,8 @@ TDDs instead of writing one.
 2. **Goals** — bulleted, measurable where possible.
 
 3. **Non-Goals & Forbidden Approaches** — two explicit lists:
-   - *Non-goals*: scope this design will not address.
-   - *Forbidden approaches*: solutions the implementer must NOT use, even where
-     they seem natural (e.g. "do not add a GSI", "do not introduce a new Lambda",
-     "do not denormalize this table"). Include the common/obvious approach if it
-     was considered and rejected.
+   - *Non-goals*: what is outside the scope of this TDD, even if it may be useful later, or seems to belong here.
+   - *Forbidden approaches*: Ways to not solve the problem: that a smart agent could reasonably infer from the TDD, not knowing it is harmful. This section should be about stopping a clever-but-wrong implementation.
 
 4. **Requirements** — the constraints driving the design. Each requirement must
    be unambiguous (one possible reading) and verifiable (a finite check could
@@ -88,8 +102,8 @@ TDDs instead of writing one.
 - State technology choices as decisions, not arguments. "Uses DynamoDB" — not
   three paragraphs comparing it to Postgres. If a choice needs justification,
   write a one-line ADR pointer.
-- Hard cap: ~300 lines. If a section would exceed half a page, ask whether to
-  split it into a separate doc or ADR rather than expanding inline.
+- Hard cap: ~300 lines. If a TDD exceeds 300 lines, ask whether to
+  split it into smaller independently deliverable features.
 - Write for an engineer who already knows the stack. Don't explain what GitHub
   Actions or DynamoDB is.
 - Prefer prose for design rationale; bullets for enumerable lists.

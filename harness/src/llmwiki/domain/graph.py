@@ -122,9 +122,7 @@ def build_wiki_graph(page_texts: Mapping[str, str], *, generated_date: str) -> W
     )
 
 
-def graph_status(
-    current_graph: WikiGraph, existing_json: str | None
-) -> GraphStatus:
+def graph_status(current_graph: WikiGraph, existing_json: str | None) -> GraphStatus:
     unresolved = sum(1 for edge in current_graph.edges if not edge.resolved)
     if existing_json is None:
         return GraphStatus(

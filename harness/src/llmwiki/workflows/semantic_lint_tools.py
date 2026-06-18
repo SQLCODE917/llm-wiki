@@ -19,9 +19,7 @@ class RecordSemanticFindingParams(BaseModel):
     recommended_action: str = Field(description="Curator-facing next action.")
 
 
-def record_semantic_finding_tool(
-    store: WikiStore, findings: list[SemanticFinding]
-) -> ToolDef:
+def record_semantic_finding_tool(store: WikiStore, findings: list[SemanticFinding]) -> ToolDef:
     """Record one structured semantic lint finding; never edits wiki pages."""
 
     def _record_semantic_finding(**kwargs: object) -> str:
@@ -32,8 +30,7 @@ def record_semantic_finding_tool(
         missing = sorted(set(params.affected_pages) - existing)
         if missing:
             raise WikiStoreError(
-                "Semantic findings must reference existing pages. "
-                f"Missing: {', '.join(missing)}."
+                f"Semantic findings must reference existing pages. Missing: {', '.join(missing)}."
             )
         finding = SemanticFinding(
             kind=params.kind,
