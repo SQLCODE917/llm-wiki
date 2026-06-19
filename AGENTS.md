@@ -3,14 +3,91 @@
 ## Goal
 Maintain an "LLM-Wiki": a persistent, LLM-maintained knowledge base following
 the pattern in `docs/llm-wiki.md`.
-The current foundation is the M5 harness: a small, Obsidian-friendly wiki
-driven through `forge` tools, with deterministic code owning bookkeeping and
-the model owning wiki prose.
+The project should co-evolve with `~/gits/llm-wiki-m5-24gb`: take the most
+robust and best-architected parts of both repos, keep sharing code where it is
+clean to do so, and let the implementation converge on the stronger feature
+set. The only intended long-term difference is runtime hardware: this repo runs
+on a 4090, while `llm-wiki-m5-24gb` runs on an M5.
 
 The active local LLM provider is Ollama through `forge`'s native
 `OllamaClient`. The default profile is `ollama-default`; the 4090 profile is
 `local-4090`, defaulting to `qwen3-coder:30b`. Keep the provider boundary easy
 to swap later, but do not maintain parallel active providers in the harness.
+
+## Project status: greenfield, pre-release
+
+There are no paid users of any API, schema, file format, or database in this
+repository.
+Nothing here is a published contract.
+No version of anything has shipped.
+This is all under active iterative development.
+
+The `/wiki` data is disposable test data.
+It is regenerated, not migrated.
+It preserves no information that matters and can be used only as a reference to
+compare previous wiki outcomes to current ones.
+If a change makes it invalid, delete it and regenerate it — never write code to
+add legacy support for its obsolescent shape.
+
+Because of this, when making changes:
+
+- Prefer breaking changes.
+- Change schemas, signatures, and formats freely to reach the right design.
+- Delete superseded code.
+- Do not leave the old version beside the new one.
+- When old and new conflict, the old is wrong — replace it.
+- When data and code disagree, the data is stale — regenerate it, don't adapt
+  the code to it.
+- Do not add migration logic, compatibility shims, version flags, fallback
+  branches, deprecation markers, dual-read/dual-write paths, or anything
+  labeled "legacy."
+- If you find yourself preserving an old behavior "just in case," stop: there
+  is no case.
+- Make the clean change instead.
+
+## Feature convergence
+
+This repo and `~/gits/llm-wiki-m5-24gb` should converge on the best shared
+LLM-Wiki harness. Prefer code and TDDs that can move between both repos with
+only runtime-profile changes.
+
+Best features already present in this repo:
+
+- Ollama runtime profiles, including `local-4090` for the 4090.
+- Strict citation parsing and optional `off|warn|fail` evidence gates.
+- Deterministic lint post-pass verification, delta reporting, and graph-only
+  orphan repair through `link_orphan`.
+- Curator status, maintenance reports, missing-page candidates,
+  `wiki/wiki-candidates.json`, and `wiki/wiki-graph.json`.
+- Bounded contradiction detection with structured `record_contradiction`
+  findings and filed `wiki-contradictions` reports.
+- Report-only grounding and semantic-lint audits.
+- Chat filing with explicit `/file <page>` synthesis after re-reading current
+  wiki evidence.
+
+Best features from `llm-wiki-m5-24gb` to adopt or keep compatible with:
+
+- Greenfield generated-state posture: change schemas and regenerate wiki data
+  instead of preserving obsolete shapes.
+- Strong domain object boundaries for `RawSource`, `SourceBundle`,
+  `PageMetadata`, `WikiStructure`, `WikiPage`, `IngestRun`, `PagePlan`,
+  `SourcePlan`, and `PlannedPageWrite`.
+- Domain language consistency: one `DomainTerm`, one `CodeName`, and static
+  tests that fail on unapproved synonyms.
+- `PageMetadata` as the page identity authority and `WikiStructure` as the only
+  `PagePath` renderer.
+- `Schema` as the authority for allowed `PageKind` and page metadata fields.
+- Planning objects that separate source handling from planned page-write
+  targets.
+- Page body contracts, source-summary coverage checks, source-claim coverage,
+  and copied-phrase guards.
+- Generated frontmatter that uses domain code names rather than legacy display
+  names.
+
+When the two repos disagree, prefer the design that gives clearer domain
+objects, fewer compatibility branches, stronger deterministic verification, and
+better model-tool reliability. Keep runtime-specific setup isolated in config
+and docs.
 
 ## Migration state
 - This repo was replaced with the M5 foundation on 2026-06-14.
@@ -38,8 +115,11 @@ to swap later, but do not maintain parallel active providers in the harness.
 - Deferred backup ideas require fresh TDDs before implementation:
   - higher-stakes evidence workflows such as stable evidence IDs or normalized
     locator databases.
-- Do not restore the old type-directory schema by default. The M5 foundation's
-  flat `wiki/*.md` structure and `[[page-name]]` links are now the default.
+- The M5 foundation's flat `wiki/*.md` structure and `[[page-name]]` links are
+  the current baseline, not a permanent contract.
+- Do not restore the old type-directory schema by default, but do not preserve
+  the current flat schema merely for compatibility if a new TDD chooses a
+  stronger design.
 
 ## Runtime targets
 - `ollama-default`: default Ollama runtime profile. Override model with
@@ -101,14 +181,18 @@ tool-calling and multi-step agentic workflows on self-hosted models.
 ## Wiki operating rules
 - `raw/` is immutable. Never edit, reorganize, rename, or delete sources as
   part of an ingest.
-- `wiki/` is the compiled knowledge layer. Prefer updating existing pages over
-  creating duplicates.
+- `wiki/` is the compiled knowledge layer during operation and disposable
+  generated test data during development.
+- Prefer updating existing pages during ordinary ingest/query work, but prefer
+  regeneration over migration when schema or domain-object changes obsolete the
+  current wiki shape.
 - Important claims need source citations. If a source does not cover a point,
   say so plainly.
 - If two sources disagree, document the contradiction in the affected page and
   in `wiki/log.md`; do not silently pick one.
 - `index.md` and `log.md` are harness-maintained navigation/history files.
-  Do not hand-edit them unless you are repairing the harness itself.
+  Do not hand-edit them unless you are repairing the harness itself or
+  intentionally rebuilding generated test data.
 - The model writes wiki content only through `write_page`; the harness owns
   frontmatter, index updates, log appends, link checks, salience reports, and
   chat windowing.
