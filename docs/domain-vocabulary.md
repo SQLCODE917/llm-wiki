@@ -40,6 +40,13 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `Schema` | `schema` |
 | `WikiStructure` | `wiki_structure` |
 | `IngestRun` | `ingest_run` |
+| `ExtractedUnit` | `extracted_unit` |
+| `CandidateClaim` | `candidate_claim` |
+| `CandidateTopic` | `candidate_topic` |
+| `CandidateEntity` | `candidate_entity` |
+| `TopicCluster` | `topic_cluster` |
+| `WikiMatch` | `wiki_match` |
+| `ClaimComparison` | `claim_comparison` |
 | `PagePlan` | `page_plan` |
 | `SourcePlan` | `source_plan` |
 | `PlannedPageWrite` | `planned_page_write` |
@@ -60,6 +67,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | WikiPage | Exists | `llmwiki.domain.pages` |
 | WikiStructure | Exists | `llmwiki.domain.pages`; local flat value is `LOCAL_FLAT_STRUCTURE` |
 | IngestRun | Exists | `llmwiki.domain.objects` |
+| PagePlan | Exists | `llmwiki.domain.objects`; built by `llmwiki.domain.planning` |
 | WikiGraph | Exists | `llmwiki.domain.graph` |
 | CandidateBacklog | Exists | `llmwiki.domain.candidates` |
 | ChatSession | Existing concept | `llmwiki.store.chat_store` SQLite rows and `llmwiki.runtime.chat_repl` flows |
@@ -77,6 +85,15 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | IngestRoutePlan | Exists | `llmwiki.domain.ingest_route_plan` |
 | PlannedPage | Exists | `llmwiki.domain.ingest_route_plan` |
 | RouteGap | Exists | `llmwiki.domain.ingest_route_plan` |
+| ExtractedUnit | Exists | `llmwiki.domain.objects` |
+| CandidateClaim | Exists | `llmwiki.domain.objects` |
+| CandidateTopic | Exists | `llmwiki.domain.objects` |
+| CandidateEntity | Exists | `llmwiki.domain.objects` |
+| TopicCluster | Exists | `llmwiki.domain.objects` |
+| WikiMatch | Exists | `llmwiki.domain.objects` |
+| ClaimComparison | Exists | `llmwiki.domain.objects` |
+| PlannedPageWrite | Exists | `llmwiki.domain.objects` |
+| Evidence | Exists | `llmwiki.domain.objects`; citation evidence policy remains separate |
 | GroundingVerdict | Exists | `llmwiki.domain.grounding` |
 | ContradictionFinding | Exists | `llmwiki.domain.contradictions` |
 | CandidateRecord | Exists | `llmwiki.domain.candidates` |

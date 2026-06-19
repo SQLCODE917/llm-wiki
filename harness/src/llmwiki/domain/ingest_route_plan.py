@@ -6,7 +6,7 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from llmwiki.domain.naming import singular_plural_collision
-from llmwiki.domain.objects import IngestRun, RawSource, SourceBundle
+from llmwiki.domain.objects import IngestRun, PagePlan, RawSource, SourceBundle
 from llmwiki.domain.pages import (
     PageMetadata,
     validate_page_id,
@@ -119,6 +119,7 @@ class IngestRouteContext:
     scope: IngestRoutePlanScope
     profile_ids: tuple[str, ...] = ()
     chunk_id: int | None = None
+    page_plan: PagePlan | None = None
     existing_pages: frozenset[str] = field(default_factory=frozenset)
     new_page_prefix: str | None = None
     prevent_singular_plural_siblings: bool = False
@@ -180,9 +181,32 @@ def validate_ingest_route_plan(
         if page_id in seen:
             raise IngestRoutePlanError(f"Duplicate planned page ID {page_id!r}.")
         seen.add(page_id)
+        _validate_page_plan_target(planned_page, context.page_plan)
         _validate_action_for_existing_page(planned_page, context.existing_pages)
         _validate_new_page_id(planned_page, context)
     return plan
+
+
+def _validate_page_plan_target(planned_page: PlannedPage, page_plan: PagePlan | None) -> None:
+    if page_plan is None:
+        return
+    planned_targets = {
+        write.page_metadata.page_id: write.page_metadata.page_kind
+        for write in page_plan.planned_writes
+        if write.action != "defer"
+    }
+    page_id = planned_page.metadata.page_id
+    if page_id not in planned_targets:
+        allowed = ", ".join(sorted(planned_targets)) or "none"
+        raise IngestRoutePlanError(
+            f"PagePlan does not authorize PageId {page_id!r}. Allowed PageIds: {allowed}."
+        )
+    expected_page_kind = planned_targets[page_id]
+    if planned_page.metadata.page_kind != expected_page_kind:
+        raise IngestRoutePlanError(
+            f"PagePlan authorizes PageId {page_id!r} as PageKind {expected_page_kind!r}, "
+            f"not {planned_page.metadata.page_kind!r}."
+        )
 
 
 def _validate_action_for_existing_page(

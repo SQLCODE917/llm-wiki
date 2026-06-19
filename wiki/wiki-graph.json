@@ -1,5 +1,16 @@
 {
-  "edges": [],
+  "edges": [
+    {
+      "resolved": true,
+      "source": "antikythera-mechanism",
+      "target": "archimedes"
+    },
+    {
+      "resolved": true,
+      "source": "archimedes",
+      "target": "antikythera-mechanism"
+    }
+  ],
   "metadata": {
     "generated_date": "2026-06-19",
     "generator": "llmwiki.graph.v1",
@@ -10,11 +21,24 @@
     {
       "category": "source",
       "name": "antikythera-mechanism",
-      "outbound_links": [],
+      "outbound_links": [
+        "archimedes"
+      ],
       "sources": [
         "antikythera-mechanism.md"
       ],
       "summary": "Summary of the Antikythera mechanism, an ancient Greek analog computer."
+    },
+    {
+      "category": "entity",
+      "name": "archimedes",
+      "outbound_links": [
+        "antikythera-mechanism"
+      ],
+      "sources": [
+        "antikythera-mechanism.md"
+      ],
+      "summary": "Ancient Greek mathematician and engineer, known for contributions to geometry, statics, and hydrostatics."
     }
   ]
 }

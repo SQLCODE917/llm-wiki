@@ -13,6 +13,7 @@ tool-error channel, so they are written as corrective instructions.
 
 from __future__ import annotations
 
+import hashlib
 import re
 from dataclasses import replace
 from pathlib import Path
@@ -291,6 +292,24 @@ class WikiStore:
 
     def write_graph_json(self, text: str) -> None:
         self._paths.graph_path.write_text(text, encoding="utf-8")
+
+    # -- harness-owned global ingest planning artifacts ---------------------
+
+    def page_plan_artifact_dir(self, source_locator: str) -> Path:
+        digest = hashlib.sha256(source_locator.encode("utf-8")).hexdigest()[:12]
+        stem = re.sub(r"[^a-z0-9]+", "-", Path(source_locator).stem.lower()).strip("-")
+        return self._paths.cache_dir / "page-plans" / f"{stem or 'source'}-{digest}"
+
+    def write_page_plan_artifacts(
+        self, source_locator: str, page_plan_json: str, observation_report: str
+    ) -> tuple[Path, Path]:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        plan_path = artifact_dir / "page-plan.json"
+        report_path = artifact_dir / "observation-report.md"
+        plan_path.write_text(page_plan_json, encoding="utf-8")
+        report_path.write_text(observation_report, encoding="utf-8")
+        return plan_path, report_path
 
     # -- harness-owned ingest route plan history ----------------------------
 

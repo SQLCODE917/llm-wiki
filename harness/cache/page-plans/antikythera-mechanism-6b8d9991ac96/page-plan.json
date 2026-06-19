@@ -1,0 +1,514 @@
+{
+  "candidate_claims": [
+    {
+      "claim_id": "claim-unit-0001-0001",
+      "confidence": 0.55,
+      "evidence": {
+        "claim": "The Antikythera mechanism is an ancient Greek hand-powered orrery, often described as the oldest known analog computer.",
+        "locator": "document s.1",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "The Antikythera mechanism is an ancient Greek hand-powered orrery, often described as the oldest known analog computer."
+    },
+    {
+      "claim_id": "claim-unit-0001-0002",
+      "confidence": 0.5416666666666666,
+      "evidence": {
+        "claim": "It was retrieved from the sea in 1901 from a shipwreck off the coast of the Greek island of Antikythera, and is dated to roughly 150–100 BC.",
+        "locator": "document s.2",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "It was retrieved from the sea in 1901 from a shipwreck off the coast of the Greek island of Antikythera, and is dated to roughly 150–100 BC."
+    },
+    {
+      "claim_id": "claim-unit-0001-0003",
+      "confidence": 0.55,
+      "evidence": {
+        "claim": "The device consists of at least 30 meshing bronze gears housed in a wooden case roughly the size of a shoebox.",
+        "locator": "document s.3",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "The device consists of at least 30 meshing bronze gears housed in a wooden case roughly the size of a shoebox."
+    },
+    {
+      "claim_id": "claim-unit-0001-0004",
+      "confidence": 0.6416666666666667,
+      "evidence": {
+        "claim": "By turning a hand crank, the user could advance a pointer across a dial showing the position of the Sun and Moon in the zodiac, the phase of the Moon, and the dates of solar and lunar eclipses predicted by the Saros cycle.",
+        "locator": "document s.4",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "By turning a hand crank, the user could advance a pointer across a dial showing the position of the Sun and Moon in the zodiac, the phase of the Moon, and the dates of solar and lunar eclipses predicted by the Saros cycle."
+    },
+    {
+      "claim_id": "claim-unit-0001-0005",
+      "confidence": 0.525,
+      "evidence": {
+        "claim": "A separate dial tracked the four-year cycle of the Olympiad and other Panhellenic games.",
+        "locator": "document s.5",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "A separate dial tracked the four-year cycle of the Olympiad and other Panhellenic games."
+    },
+    {
+      "claim_id": "claim-unit-0001-0006",
+      "confidence": 0.5916666666666667,
+      "evidence": {
+        "claim": "The mechanism's sophistication was not matched in the surviving record until the astronomical clocks of medieval Europe, more than a thousand years later.",
+        "locator": "document s.6",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "The mechanism's sophistication was not matched in the surviving record until the astronomical clocks of medieval Europe, more than a thousand years later."
+    },
+    {
+      "claim_id": "claim-unit-0001-0007",
+      "confidence": 0.5666666666666667,
+      "evidence": {
+        "claim": "Its gear-cutting precision implies an established workshop tradition, yet no comparable device or workshop has been found.",
+        "locator": "document s.7",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "Its gear-cutting precision implies an established workshop tradition, yet no comparable device or workshop has been found."
+    },
+    {
+      "claim_id": "claim-unit-0001-0008",
+      "confidence": 0.5666666666666667,
+      "evidence": {
+        "claim": "Derek de Solla Price published the first detailed scientific study in 1974, using X-ray imaging to count gear teeth.",
+        "locator": "document s.8",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "Derek de Solla Price published the first detailed scientific study in 1974, using X-ray imaging to count gear teeth."
+    },
+    {
+      "claim_id": "claim-unit-0001-0009",
+      "confidence": 0.6333333333333333,
+      "evidence": {
+        "claim": "The Antikythera Mechanism Research Project, beginning in 2005, used microfocus X-ray computed tomography to read inscriptions hidden inside the corroded fragments — effectively a user's manual engraved on the device's plates.",
+        "locator": "document s.9",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "The Antikythera Mechanism Research Project, beginning in 2005, used microfocus X-ray computed tomography to read inscriptions hidden inside the corroded fragments — effectively a user's manual engraved on the device's plates."
+    },
+    {
+      "claim_id": "claim-unit-0001-0010",
+      "confidence": 0.5583333333333333,
+      "evidence": {
+        "claim": "The inscriptions suggest the device may have originated in Corinth or its colonies, possibly linking it to the school of Archimedes in Syracuse.",
+        "locator": "document s.10",
+        "page_id": "",
+        "raw_source": {
+          "immutable": true,
+          "source_assets": [],
+          "source_content": "",
+          "source_format": "markdown",
+          "source_locator": "antikythera-mechanism.md"
+        }
+      },
+      "statement": "The inscriptions suggest the device may have originated in Corinth or its colonies, possibly linking it to the school of Archimedes in Syracuse."
+    }
+  ],
+  "candidate_entities": [
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0003",
+        "claim-unit-0001-0006",
+        "claim-unit-0001-0009",
+        "claim-unit-0001-0010"
+      ],
+      "entity_id": "entity-the",
+      "label": "The"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0009"
+      ],
+      "entity_id": "entity-the-antikythera-mechanism",
+      "label": "The Antikythera Mechanism"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0002"
+      ],
+      "entity_id": "entity-greek",
+      "label": "Greek"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004"
+      ],
+      "entity_id": "entity-moon",
+      "label": "Moon"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0009"
+      ],
+      "entity_id": "entity-the-antikythera",
+      "label": "The Antikythera"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0002",
+        "claim-unit-0001-0007"
+      ],
+      "entity_id": "entity-it",
+      "label": "It"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0002",
+        "claim-unit-0001-0009"
+      ],
+      "entity_id": "entity-antikythera",
+      "label": "Antikythera"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0002"
+      ],
+      "entity_id": "entity-bc",
+      "label": "BC"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004"
+      ],
+      "entity_id": "entity-by",
+      "label": "By"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004"
+      ],
+      "entity_id": "entity-sun",
+      "label": "Sun"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004"
+      ],
+      "entity_id": "entity-saros",
+      "label": "Saros"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0005"
+      ],
+      "entity_id": "entity-olympiad",
+      "label": "Olympiad"
+    }
+  ],
+  "candidate_topics": [
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0002",
+        "claim-unit-0001-0009"
+      ],
+      "label": "antikythera",
+      "topic_id": "topic-antikythera"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0006",
+        "claim-unit-0001-0009"
+      ],
+      "label": "mechanism",
+      "topic_id": "topic-mechanism"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0003",
+        "claim-unit-0001-0007",
+        "claim-unit-0001-0009",
+        "claim-unit-0001-0010"
+      ],
+      "label": "device",
+      "topic_id": "topic-device"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0002"
+      ],
+      "label": "greek",
+      "topic_id": "topic-greek"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0002",
+        "claim-unit-0001-0006"
+      ],
+      "label": "was",
+      "topic_id": "topic-was"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0002",
+        "claim-unit-0001-0003"
+      ],
+      "label": "roughly",
+      "topic_id": "topic-roughly"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004",
+        "claim-unit-0001-0009"
+      ],
+      "label": "user",
+      "topic_id": "topic-user"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004",
+        "claim-unit-0001-0005"
+      ],
+      "label": "dial",
+      "topic_id": "topic-dial"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004"
+      ],
+      "label": "moon",
+      "topic_id": "topic-moon"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0004",
+        "claim-unit-0001-0005"
+      ],
+      "label": "cycle",
+      "topic_id": "topic-cycle"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0007",
+        "claim-unit-0001-0010"
+      ],
+      "label": "its",
+      "topic_id": "topic-its"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0007"
+      ],
+      "label": "workshop",
+      "topic_id": "topic-workshop"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0008",
+        "claim-unit-0001-0009"
+      ],
+      "label": "x-ray",
+      "topic_id": "topic-x-ray"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0009",
+        "claim-unit-0001-0010"
+      ],
+      "label": "inscriptions",
+      "topic_id": "topic-inscriptions"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001"
+      ],
+      "label": "ancient",
+      "topic_id": "topic-ancient"
+    },
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001"
+      ],
+      "label": "hand-powered",
+      "topic_id": "topic-hand-powered"
+    }
+  ],
+  "claim_comparisons": [],
+  "extracted_units": [
+    {
+      "extraction_status": "ok",
+      "heading_path": "The Antikythera Mechanism",
+      "locator": "document",
+      "raw_source": {
+        "immutable": true,
+        "source_assets": [],
+        "source_content": "",
+        "source_format": "markdown",
+        "source_locator": "antikythera-mechanism.md"
+      },
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "text": "# The Antikythera Mechanism\n\nThe Antikythera mechanism is an ancient Greek hand-powered orrery, often\ndescribed as the oldest known analog computer. It was retrieved from the sea\nin 1901 from a shipwreck off the coast of the Greek island of Antikythera,\nand is dated to roughly 150–100 BC.\n\nThe device consists of at least 30 meshing bronze gears housed in a wooden\ncase roughly the size of a shoebox. By turning a hand crank, the user could\nadvance a pointer across a dial showing the position of the Sun and Moon in\nthe zodiac, the phase of the Moon, and the dates of solar and lunar eclipses\npredicted by the Saros cycle. A separate dial tracked the four-year cycle of\nthe Olympiad and other Panhellenic games.\n\nThe mechanism's sophistication was not matched in the surviving record until\nthe astronomical clocks of medieval Europe, more than a thousand years later.\nIts gear-cutting precision implies an established workshop tradition, yet no\ncomparable device or workshop has been found.\n\nDerek de Solla Price published the first detailed scientific study in 1974,\nusing X-ray imaging to count gear teeth. The Antikythera Mechanism Research\nProject, beginning in 2005, used microfocus X-ray computed tomography to read\ninscriptions hidden inside the corroded fragments — effectively a user's\nmanual engraved on the device's plates. The inscriptions suggest the device\nmay have originated in Corinth or its colonies, possibly linking it to the\nschool of Archimedes in Syracuse.\n",
+      "unit_id": "unit-0001"
+    }
+  ],
+  "plan_id": "2026-06-19-171446-source-antikythera-mechanism",
+  "planned_writes": [
+    {
+      "action": "create-new",
+      "claim_comparisons": [],
+      "evidence": [
+        {
+          "claim": "",
+          "locator": "",
+          "page_id": "",
+          "raw_source": {
+            "immutable": true,
+            "source_assets": [],
+            "source_content": "",
+            "source_format": "markdown",
+            "source_locator": "antikythera-mechanism.md"
+          }
+        }
+      ],
+      "existing_page_id": "",
+      "extracted_units": [
+        "unit-0001"
+      ],
+      "page_metadata": {
+        "aliases": [],
+        "category_path": "",
+        "domain": "",
+        "page_id": "antikythera-mechanism",
+        "page_kind": "source",
+        "project_id": "",
+        "source_id": "antikythera-mechanism.md",
+        "sources": [
+          "raw/antikythera-mechanism.md"
+        ],
+        "summary": "Hub page for raw/antikythera-mechanism.md.",
+        "tags": [],
+        "updated": "2026-06-19"
+      },
+      "projection": {
+        "page_metadata": {
+          "aliases": [],
+          "category_path": "",
+          "domain": "",
+          "page_id": "antikythera-mechanism",
+          "page_kind": "source",
+          "project_id": "",
+          "source_id": "antikythera-mechanism.md",
+          "sources": [
+            "raw/antikythera-mechanism.md"
+          ],
+          "summary": "Hub page for raw/antikythera-mechanism.md.",
+          "tags": [],
+          "updated": "2026-06-19"
+        },
+        "page_path": "antikythera-mechanism.md"
+      },
+      "wiki_matches": [],
+      "write_id": "write-antikythera-mechanism"
+    }
+  ],
+  "source_bundle": {
+    "raw_sources": [
+      {
+        "immutable": true,
+        "source_assets": [],
+        "source_content": "",
+        "source_format": "markdown",
+        "source_locator": "antikythera-mechanism.md"
+      }
+    ]
+  },
+  "topic_clusters": [
+    {
+      "candidate_claims": [
+        "claim-unit-0001-0001",
+        "claim-unit-0001-0002",
+        "claim-unit-0001-0003",
+        "claim-unit-0001-0004",
+        "claim-unit-0001-0005",
+        "claim-unit-0001-0006",
+        "claim-unit-0001-0007",
+        "claim-unit-0001-0008",
+        "claim-unit-0001-0009",
+        "claim-unit-0001-0010"
+      ],
+      "candidate_entities": [],
+      "candidate_topics": [
+        "topic-antikythera"
+      ],
+      "cluster_id": "cluster-1",
+      "extracted_units": [
+        "unit-0001"
+      ],
+      "label": "antikythera"
+    }
+  ],
+  "wiki_matches": []
+}

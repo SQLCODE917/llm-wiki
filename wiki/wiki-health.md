@@ -1,16 +1,10 @@
-# Log
+---
+page_id: wiki-health
+page_kind: synthesis
+summary: Wiki health report from the latest lint pass (2026-06-19).
+updated: 2026-06-19
+---
 
-## [2026-06-19] ingest | antikythera-mechanism.md
-Created a source page for the Antikythera mechanism. The page summarizes the key facts about the ancient Greek analog computer, including its discovery, construction, and historical significance. The page also links to the relevant entity page for Archimedes, as the mechanism may have originated from the school of Archimedes in Syracuse.
-
-## [2026-06-19] graph | wiki graph
-Graph export: current
-Nodes: 1
-Edges: 1
-Unresolved edges: 1
-wiki/wiki-graph.json matches the current wiki graph.
-
-## [2026-06-19] lint | wiki health
 ## Model report
 
 Fixed broken link in 'antikythera-mechanism' page by creating missing 'archimedes' entity page. No other deterministic findings of consequence identified; no further repairs needed at this time.
@@ -49,10 +43,3 @@ No deterministic issues found (links, orphans, and index are consistent).
 
 Citation evidence findings:
 Strict evidence mode: off. Citation validation skipped.
-
-## [2026-06-19] graph | wiki graph
-Graph export: current
-Nodes: 2
-Edges: 2
-Unresolved edges: 0
-wiki/wiki-graph.json matches the current wiki graph.

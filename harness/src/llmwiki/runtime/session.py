@@ -38,8 +38,15 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanState,
 )
 from llmwiki.domain.links import compute_findings
-from llmwiki.domain.objects import IngestRun, LintRun, SourceBundle
+from llmwiki.domain.objects import IngestRun, LintRun, PagePlan, RawSource, SourceBundle
 from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page, slugify
+from llmwiki.domain.planning import (
+    build_markdown_page_plan,
+    build_page_plan,
+    observation_report,
+    page_plan_to_json,
+)
+from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
 from llmwiki.domain.semantic_lint import (
     SemanticFinding,
@@ -229,7 +236,11 @@ class Session:
             return await self._ingest_pdf(source_locator, reextract, reintegrate, ingest_run)
         if reintegrate:
             raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
-        ingest_route_plan_state = self._ingest_route_plan_state(source_locator, "source")
+        page_plan = self._markdown_page_plan(ingest_run, source_locator)
+        plan_report = self._persist_page_plan(source_locator, page_plan)
+        ingest_route_plan_state = self._ingest_route_plan_state(
+            source_locator, "source", page_plan=page_plan
+        )
         write_log: list[str] = []
         workflow = build_ingest_workflow(
             self.store,
@@ -243,7 +254,10 @@ class Session:
         )
         message = (
             f"Ingest the source 'raw/{source_locator}' into the wiki. "
-            f"Pass source_locator='{source_locator}' to read_source."
+            f"Pass source_locator='{source_locator}' to read_source.\n\n"
+            "A deterministic PagePlan has already been built and persisted. "
+            "Call plan_pages only for PageIds authorized by this PagePlan.\n\n"
+            f"{plan_report}"
         )
         report, transcript = await self._run(workflow, message, "ingest")
         self._record_ingest_route_plan(
@@ -269,6 +283,8 @@ class Session:
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
         manifest, total = result.manifest, len(result.manifest.chunks)
+        page_plan = self._pdf_page_plan(ingest_run, source_locator, result)
+        plan_report = self._persist_page_plan(source_locator, page_plan)
         if reintegrate and manifest.pending:
             raise PdfError(
                 f"--reintegrate requires a completed ingest; raw/{source_locator} "
@@ -282,12 +298,16 @@ class Session:
                 source_locator,
                 "pdf-chunk",
                 chunk_id=record.chunk_id,
+                page_plan=page_plan,
             )
             message = (
                 f"Ingest chunk {record.chunk_id} of {total} from 'raw/{source_locator}'.\n"
                 f"Section: {record.heading} (pages {record.start_page}-{record.end_page}).\n"
                 f"Cite this material as (raw/{source_locator} "
-                f"p.{record.start_page}-{record.end_page}).\n\n<chunk>\n{text}\n</chunk>"
+                f"p.{record.start_page}-{record.end_page}).\n\n"
+                "A deterministic PagePlan has already been built and persisted. "
+                "Call plan_pages only for PageIds authorized by this PagePlan.\n\n"
+                f"{plan_report}\n\n<chunk>\n{text}\n</chunk>"
             )
             write_log: list[str] = []
             notes, _ = await self._run(
@@ -332,6 +352,9 @@ class Session:
             f"All {total} chunks of 'raw/{source_locator}' are ingested. Ensure the hub "
             f"source page '{hub}' exists and links the pages written during "
             f"chunking.\n\n{salience_block}\n\n"
+            "A deterministic PagePlan has already been built and persisted. "
+            "Call plan_pages only for PageIds authorized by this PagePlan.\n\n"
+            f"{plan_report}\n\n"
             f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
         )
         link_targets: list[str] = []
@@ -342,7 +365,9 @@ class Session:
                     link_targets.append(page)
                     seen_targets.add(page)
         required_link_targets = tuple(link_targets)
-        ingest_route_plan_state = self._ingest_route_plan_state(source_locator, "pdf-integrate")
+        ingest_route_plan_state = self._ingest_route_plan_state(
+            source_locator, "pdf-integrate", page_plan=page_plan
+        )
         report, transcript = await self._run(
             build_integrate_workflow(
                 self.store,
@@ -370,6 +395,50 @@ class Session:
         raw_source = self.store.raw_source(source_locator)
         return IngestRun(source_bundle=SourceBundle.one(raw_source))
 
+    def _markdown_page_plan(self, ingest_run: IngestRun, source_locator: str) -> PagePlan:
+        raw_source = _single_raw_source(ingest_run)
+        return build_markdown_page_plan(
+            plan_id=self._page_plan_id(source_locator, "source"),
+            source_bundle=ingest_run.source_bundle,
+            raw_source=raw_source,
+            source_text=self.store.read_source(source_locator),
+            existing_pages=self.store.page_texts(),
+            wiki_structure=ingest_run.wiki_structure,
+            today=self.today,
+        )
+
+    def _pdf_page_plan(
+        self, ingest_run: IngestRun, source_locator: str, result: ExtractionResult
+    ) -> PagePlan:
+        raw_source = _single_raw_source(ingest_run)
+        units = tuple(
+            build_extracted_unit(
+                unit_id=f"unit-{record.chunk_id:04d}",
+                raw_source=raw_source,
+                locator=f"p.{record.start_page}-{record.end_page}",
+                heading_path=record.heading,
+                text=chunk_file(result.cache_dir, record.chunk_id).read_text(encoding="utf-8"),
+            )
+            for record in result.manifest.chunks
+        )
+        return build_page_plan(
+            plan_id=self._page_plan_id(source_locator, "pdf"),
+            source_bundle=ingest_run.source_bundle,
+            raw_source=raw_source,
+            extracted_units=units,
+            existing_pages=self.store.page_texts(),
+            wiki_structure=ingest_run.wiki_structure,
+            today=self.today,
+        )
+
+    def _persist_page_plan(self, source_locator: str, page_plan: PagePlan) -> str:
+        report = observation_report(page_plan)
+        self.store.write_page_plan_artifacts(source_locator, page_plan_to_json(page_plan), report)
+        return report
+
+    def _page_plan_id(self, source_locator: str, scope: str) -> str:
+        return f"{self.run_id or self.today}-{scope}-{slugify(Path(source_locator).stem)}"
+
     def _record_ingest_route_plan(
         self,
         state: IngestRoutePlanState,
@@ -393,6 +462,7 @@ class Session:
         scope: IngestRoutePlanScope,
         *,
         chunk_id: int | None = None,
+        page_plan: PagePlan | None = None,
     ) -> IngestRoutePlanState:
         return IngestRoutePlanState(
             IngestRouteContext(
@@ -400,6 +470,7 @@ class Session:
                 scope=scope,
                 profile_ids=tuple(profile.id for profile in self.ingest_profiles),
                 chunk_id=chunk_id,
+                page_plan=page_plan,
                 existing_pages=frozenset(self.store.list_pages()),
                 new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
                 prevent_singular_plural_siblings=prevents_singular_plural_siblings(
@@ -737,7 +808,11 @@ def _broken_link_edges(findings: LintRun) -> set[tuple[str, str]]:
 
 
 def _single_source_locator(ingest_run: IngestRun) -> str:
-    return ingest_run.source_bundle.raw_sources[0].source_locator
+    return _single_raw_source(ingest_run).source_locator
+
+
+def _single_raw_source(ingest_run: IngestRun) -> RawSource:
+    return ingest_run.source_bundle.raw_sources[0]
 
 
 def _render_count_delta(label: str, before: int, after: int) -> str:
