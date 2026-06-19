@@ -3,15 +3,15 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from pathlib import PurePosixPath
 from typing import Literal
 
 from llmwiki.domain.naming import singular_plural_collision
+from llmwiki.domain.objects import RawSource, SourceBundle
 from llmwiki.domain.pages import (
     LOCAL_FLAT_STRUCTURE,
     PageMetadata,
     WikiStructure,
-    validate_page_name,
+    validate_page_id,
 )
 
 INGEST_ROUTE_PLAN_VERSION = "ingest-route-plan.v1"
@@ -36,36 +36,23 @@ type RouteGapReason = Literal[
 ]
 type IngestRoutePlanScope = Literal["source", "pdf-chunk", "pdf-integrate"]
 
+__all__ = [
+    "RawSource",
+    "SourceBundle",
+    "IngestRouteContext",
+    "IngestRoutePlan",
+    "IngestRoutePlanError",
+    "IngestRoutePlanState",
+    "IngestRoutePlanSummary",
+    "IngestRun",
+    "PlannedPage",
+    "RouteGap",
+    "validate_ingest_route_plan",
+]
+
 
 class IngestRoutePlanError(ValueError):
     """Invalid ingest route plan; message is safe to feed back to the model."""
-
-
-@dataclass(frozen=True)
-class RawSource:
-    source_path: str
-    source_format: str
-
-    @classmethod
-    def from_source_path(cls, source_path: str) -> RawSource:
-        suffix = PurePosixPath(source_path).suffix.lower().lstrip(".")
-        return cls(
-            source_path=source_path,
-            source_format="markdown" if suffix == "md" else suffix or "unknown",
-        )
-
-
-@dataclass(frozen=True)
-class SourceBundle:
-    raw_sources: tuple[RawSource, ...]
-
-    def __post_init__(self) -> None:
-        if not self.raw_sources:
-            raise IngestRoutePlanError("SourceBundle requires at least one RawSource.")
-
-    @classmethod
-    def one(cls, raw_source: RawSource) -> SourceBundle:
-        return cls(raw_sources=(raw_source,))
 
 
 @dataclass(frozen=True)
@@ -200,7 +187,7 @@ def validate_ingest_route_plan(
         raise IngestRoutePlanError("Ingest route plan profile_ids do not match this run.")
     seen: set[str] = set()
     for planned_page in plan.planned_pages:
-        page_id = validate_page_name(planned_page.metadata.page_id)
+        page_id = validate_page_id(planned_page.metadata.page_id)
         if page_id in seen:
             raise IngestRoutePlanError(f"Duplicate planned page ID {page_id!r}.")
         seen.add(page_id)

@@ -8,7 +8,7 @@ from forge.core.workflow import ToolDef, ToolSpec
 from pydantic import BaseModel, Field
 
 from llmwiki.domain.links import compute_findings
-from llmwiki.domain.pages import parse_page
+from llmwiki.domain.pages import WikiPage, parse_page
 from llmwiki.domain.system_pages import ORPHAN_EXEMPT_PAGES
 from llmwiki.store import WikiStore, WikiStoreError
 
@@ -28,7 +28,7 @@ def link_orphan_tool(store: WikiStore, today: str) -> ToolDef:
         params = LinkOrphanParams(**kwargs)  # type: ignore[arg-type]
         if params.from_page == params.orphan_page:
             raise WikiStoreError("from_page and orphan_page must be different pages.")
-        source = parse_page(params.from_page, store.read_page(params.from_page))
+        source = parse_page(store.read_page(params.from_page))
         store.read_page(params.orphan_page)  # verifies the target exists before writing.
         link = f"[[{params.orphan_page}]]"
         if link in source.body:
@@ -43,8 +43,9 @@ def link_orphan_tool(store: WikiStore, today: str) -> ToolDef:
                 f"Page '{params.orphan_page}' is not currently an orphan. "
                 "Use link_orphan only for pages listed in the deterministic orphan findings."
             )
-        body = source.body.rstrip() + f"\n\nRelated: {link}.\n"
-        store.write_page(replace(source, body=body, updated=today))
+        body = source.page_body.rstrip() + f"\n\nRelated: {link}.\n"
+        metadata = replace(source.page_metadata, updated=today)
+        store.write_page(WikiPage.from_metadata(metadata, body))
         return (
             f"Added {link} to wiki/{params.from_page}.md. "
             f"This creates an inbound link to {params.orphan_page}."

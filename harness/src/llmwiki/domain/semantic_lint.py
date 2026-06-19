@@ -227,8 +227,8 @@ def _overlap_candidate(
 
 def _page_signals(name: str, text: str) -> _PageSignals:
     try:
-        page = parse_page(name, text)
-        body = page.body
+        page = parse_page(text)
+        body = page.page_body
         sources = frozenset(page.sources)
         updated = page.updated
     except PageError:

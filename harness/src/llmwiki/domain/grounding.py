@@ -194,7 +194,7 @@ def _claim_candidates(
 
 def _body(page_name: str, text: str) -> str:
     try:
-        return parse_page(page_name, text).body
+        return parse_page(text).page_body
     except PageError:
         return text
 

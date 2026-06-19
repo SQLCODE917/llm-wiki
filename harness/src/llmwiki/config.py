@@ -84,7 +84,7 @@ class WikiPaths:
         return self.root / "profiles" / "ingest"
 
     def validate(self) -> None:
-        for path in (self.raw_dir, self.wiki_dir, self.schema_path, self.index_path, self.log_path):
+        for path in (self.raw_dir, self.wiki_dir, self.schema_path):
             if not path.exists():
                 raise ConfigError(
                     f"Wiki layer missing: {path}. Run from the project root "

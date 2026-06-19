@@ -42,7 +42,7 @@ from llmwiki.domain.ingest_profiles import (
 from llmwiki.domain.ingest_route_history import ingest_route_plan_records_from_jsonl
 from llmwiki.domain.links import compute_findings
 from llmwiki.domain.maintenance import RoutePlanStatus, build_curator_status, recent_log_entries
-from llmwiki.domain.pages import WikiPage, parse_page
+from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page
 from llmwiki.domain.salience import compute_salience
 from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint_candidates
 from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES, SEMANTIC_LINT_PAGE
@@ -280,8 +280,10 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
         if args.op == "ingest":
             print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
+        store = WikiStore(paths)
+        store.ensure_navigation_files()
         session = Session(
-            store=WikiStore(paths),
+            store=store,
             client=backend.client,
             context_manager=backend.context_manager,
             today=now.date().isoformat(),
@@ -435,11 +437,13 @@ def _run_curator_operation(
         store.ensure_navigation_files()
         store.write_page(
             WikiPage(
-                name=CURATOR_STATUS_PAGE,
-                category="synthesis",
-                summary=f"Deterministic curator status from {today}.",
-                body=report,
-                updated=today,
+                page_metadata=PageMetadata(
+                    page_id=CURATOR_STATUS_PAGE,
+                    page_kind="synthesis",
+                    summary=f"Deterministic curator status from {today}.",
+                    updated=today,
+                ),
+                page_body=report,
             )
         )
         store.append_log(today, "maintenance", "curator status", report)
@@ -533,7 +537,7 @@ def _route_plan_status(paths: WikiPaths) -> RoutePlanStatus:
 def _semantic_lint_summary(store: WikiStore) -> str:
     if SEMANTIC_LINT_PAGE not in store.list_pages():
         return ""
-    text = parse_page(SEMANTIC_LINT_PAGE, store.read_page(SEMANTIC_LINT_PAGE)).body
+    text = parse_page(store.read_page(SEMANTIC_LINT_PAGE)).page_body
     lines = [
         line.strip()
         for line in text.splitlines()

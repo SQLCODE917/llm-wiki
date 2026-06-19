@@ -12,8 +12,9 @@ from llmwiki.domain.candidates import CandidateBacklog
 from llmwiki.domain.evidence import EvidenceLintReport
 from llmwiki.domain.graph import GraphStatus
 from llmwiki.domain.links import LintFindings, compute_findings
-from llmwiki.domain.pages import PAGE_CATEGORIES, PageError, parse_page
+from llmwiki.domain.pages import PageError, parse_page
 from llmwiki.domain.salience import SalienceReport
+from llmwiki.domain.schema import PAGE_KINDS
 from llmwiki.domain.system_pages import ORPHAN_EXEMPT_PAGES
 
 _LOG_HEADING_RE = re.compile(r"^## \[[^\]]+\] .+")
@@ -22,7 +23,7 @@ _LOG_HEADING_RE = re.compile(r"^## \[[^\]]+\] .+")
 @dataclass(frozen=True)
 class WikiShapeSummary:
     page_count: int
-    page_counts_by_category: tuple[tuple[str, int], ...]
+    page_counts_by_page_kind: tuple[tuple[str, int], ...]
     source_page_count: int
     raw_source_count: int
     index_exists: bool
@@ -30,8 +31,8 @@ class WikiShapeSummary:
     invalid_page_count: int
 
     def render(self) -> str:
-        category_lines = "\n".join(
-            f"- {category}: {count}" for category, count in self.page_counts_by_category
+        page_kind_lines = "\n".join(
+            f"- {page_kind}: {count}" for page_kind, count in self.page_counts_by_page_kind
         )
         return (
             f"Total wiki pages: {self.page_count}\n"
@@ -40,8 +41,8 @@ class WikiShapeSummary:
             f"index.md: {_present(self.index_exists)}\n"
             f"log.md: {_present(self.log_exists)}\n"
             f"Pages with invalid frontmatter: {self.invalid_page_count}\n\n"
-            "Pages by category:\n"
-            f"{category_lines}"
+            "Pages by page kind:\n"
+            f"{page_kind_lines}"
         )
 
 
@@ -134,13 +135,13 @@ def build_curator_status(
             index_names,
             exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
         )
-    invalid_pages, category_counts = _category_counts(page_texts)
+    invalid_pages, page_kind_counts = _page_kind_counts(page_texts)
     shape = WikiShapeSummary(
         page_count=len(page_texts),
-        page_counts_by_category=tuple(
-            (category, category_counts[category]) for category in PAGE_CATEGORIES
+        page_counts_by_page_kind=tuple(
+            (page_kind, page_kind_counts[page_kind]) for page_kind in PAGE_KINDS
         ),
-        source_page_count=category_counts["source"],
+        source_page_count=page_kind_counts["source"],
         raw_source_count=raw_source_count,
         index_exists=index_exists,
         log_exists=log_exists,
@@ -170,16 +171,16 @@ def recent_log_entries(log_text: str, limit: int = 5) -> tuple[str, ...]:
     return tuple(entries[-limit:])
 
 
-def _category_counts(page_texts: dict[str, str]) -> tuple[int, Counter[str]]:
+def _page_kind_counts(page_texts: dict[str, str]) -> tuple[int, Counter[str]]:
     invalid = 0
-    counts: Counter[str] = Counter({category: 0 for category in PAGE_CATEGORIES})
-    for name, text in page_texts.items():
+    counts: Counter[str] = Counter({page_kind: 0 for page_kind in PAGE_KINDS})
+    for text in page_texts.values():
         try:
-            page = parse_page(name, text)
+            page = parse_page(text)
         except PageError:
             invalid += 1
             continue
-        counts[page.category] += 1
+        counts[page.page_kind] += 1
     return invalid, counts
 
 

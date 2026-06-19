@@ -18,13 +18,13 @@ The index and log formats below are also enforced in harness code
 
 ## Page conventions
 
-- Page names are kebab-case slugs, unique across the wiki: `bronze-age-collapse`.
+- Page IDs are kebab-case slugs, unique across the wiki: `bronze-age-collapse`.
 - If a source uses the same noun for different roles, make the page name
   describe the role. Prefer names like `<source>-<topic>-rules`,
   `<source>-<topic>-spell`, `<source>-<topic>-monster`,
   `<source>-<topic>-item`, or `<source>-<topic>-lore` over bare
   singular/plural sibling pages.
-- Every page belongs to one category:
+- Every page has one page kind:
   - `source` — summary of one raw source; named after the source.
   - `entity` — a person, place, organization, system, or thing.
   - `concept` — an idea, theme, claim, or recurring pattern.
@@ -51,13 +51,13 @@ The index and log formats below are also enforced in harness code
   content pages.
 - Semantic lint audits are report-only: record stale-claim, supersession, and
   data-gap leads for curator review without rewriting content pages.
-- Frontmatter (category, summary, sources, updated date) is composed by the
+- Frontmatter (`page_id`, `page_kind`, summary, sources, updated date) is composed by the
   harness from `write_page` arguments — do not write it in page content.
 - `write_page` replaces the entire page. When updating an existing page,
   `read_page` it first and carry forward the content you are not changing.
 - In ingest workflows, call `plan_pages` before any `write_page`. The ingest
   route plan is a page write allowlist for the current run: each page write
-  must match a planned page ID and category. Use route gaps for source material
+  must match a planned page ID and page kind. Use route gaps for source material
   that should not become a page in the current run. The ingest route plan is
   not source evidence and never supports wiki claims by itself.
 - On hub source pages, the `Key concepts:` / `Key entities:` lines are
@@ -86,11 +86,11 @@ the artifact matches the current wiki.
 
 ## index.md
 
-One entry per page, grouped by category. Maintained deterministically by the
+One entry per page, grouped by page kind. Maintained deterministically by the
 harness on every `write_page` — never edited by hand or by the model directly,
 but readable via the `read_index` tool: it is the catalog to consult for
 questions about the wiki itself or its overall coverage.
-Entry format: `- [[page-name]] — one-line summary`.
+Entry format: `- [[page-id]] — one-line summary`.
 
 ## log.md
 

@@ -5,18 +5,20 @@ import json
 import pytest
 
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
-from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.store import PageNotFoundError, SourceNotFoundError, WikiStore, WikiStoreError
 
 
 def _page(name: str = "hittites", category: str = "entity") -> WikiPage:
     return WikiPage(
-        name=name,
-        category=category,
-        summary=f"About {name}.",
-        body=f"The {name} page. See [[other]].",
-        sources=("article.md",),
-        updated="2026-06-10",
+        page_metadata=PageMetadata(
+            page_id=name,
+            page_kind=category,
+            summary=f"About {name}.",
+            sources=("article.md",),
+            updated="2026-06-10",
+        ),
+        page_body=f"The {name} page. See [[other]].",
     )
 
 
@@ -70,6 +72,15 @@ class TestRawLayer:
             "Line two.",
         )
 
+    def test_raw_source_uses_source_locator(self, paths: WikiPaths, store: WikiStore) -> None:
+        (paths.raw_dir / "article.md").write_text("Source text.", encoding="utf-8")
+
+        raw_source = store.raw_source("article.md")
+
+        assert raw_source.source_locator == "article.md"
+        assert raw_source.source_format == "markdown"
+        assert raw_source.immutable is True
+
 
 class TestWikiLayer:
     def test_write_page_creates_file_and_index_entry(
@@ -84,16 +95,21 @@ class TestWikiLayer:
         store.write_page(_page())
         store.write_page(
             WikiPage(
-                name="hittites",
-                category="entity",
-                summary="Updated summary.",
-                body="New body.",
-                updated="2026-06-11",
+                page_metadata=PageMetadata(
+                    page_id="hittites",
+                    page_kind="entity",
+                    summary="Updated summary.",
+                    updated="2026-06-11",
+                ),
+                page_body="New body.",
             )
         )
         assert store.read_index().count("[[hittites]]") == 1
         assert "Updated summary." in store.read_index()
         assert "New body." in store.read_page("hittites")
+        assert "page_id: hittites" in store.read_page("hittites")
+        assert "page_kind: entity" in store.read_page("hittites")
+        assert "category:" not in store.read_page("hittites")
 
     def test_reserved_names_rejected(self, store: WikiStore) -> None:
         with pytest.raises(WikiStoreError, match="reserved"):

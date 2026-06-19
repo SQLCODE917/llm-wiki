@@ -4,6 +4,7 @@ llama.cpp/
 forge/
 .venv/
 harness/runs/
+harness/cache/ingest-route-plans.jsonl
 __pycache__/
 *.egg-info/
 .coverage

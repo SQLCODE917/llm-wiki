@@ -90,7 +90,7 @@ def test_writing_tdds_references_domain_vocabulary() -> None:
 
 
 def test_page_metadata_rejects_invalid_page_id() -> None:
-    with pytest.raises(PageError, match="Invalid page name"):
+    with pytest.raises(PageError, match="Invalid page_id"):
         PageMetadata(page_id="Bad Name", page_kind="source", summary="Bad page.")
 
 

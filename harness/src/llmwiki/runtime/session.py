@@ -38,7 +38,7 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanState,
 )
 from llmwiki.domain.links import LintFindings, compute_findings
-from llmwiki.domain.pages import WikiPage, parse_page, slugify
+from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
 from llmwiki.domain.semantic_lint import (
     SemanticFinding,
@@ -397,10 +397,11 @@ class Session:
         report by construction (same contract as index.md entries)."""
         if hub not in self.store.list_pages():
             return  # no hub page; lint's findings will surface it
-        page = parse_page(hub, self.store.read_page(hub))
-        body = reconcile_key_lists(page.body, salience)
-        if body != page.body:
-            self.store.write_page(replace(page, body=body, updated=self.today))
+        page = parse_page(self.store.read_page(hub))
+        body = reconcile_key_lists(page.page_body, salience)
+        if body != page.page_body:
+            metadata = replace(page.page_metadata, updated=self.today)
+            self.store.write_page(WikiPage.from_metadata(metadata, body))
 
     async def query(self, question: str) -> OperationResult:
         workflow = build_query_workflow(self.store, self.today, self._evidence_policy())
@@ -629,11 +630,13 @@ class Session:
     def _file_lint_report(self, report: str) -> None:
         self.store.write_page(
             WikiPage(
-                name=HEALTH_PAGE,
-                category="synthesis",
-                summary=f"Wiki health report from the latest lint pass ({self.today}).",
-                body=report,
-                updated=self.today,
+                page_metadata=PageMetadata(
+                    page_id=HEALTH_PAGE,
+                    page_kind="synthesis",
+                    summary=f"Wiki health report from the latest lint pass ({self.today}).",
+                    updated=self.today,
+                ),
+                page_body=report,
             )
         )
 
@@ -652,11 +655,13 @@ class Session:
     def _file_contradiction_report(self, report: str) -> None:
         self.store.write_page(
             WikiPage(
-                name=CONTRADICTIONS_PAGE,
-                category="synthesis",
-                summary=f"Contradiction audit report from {self.today}.",
-                body=report,
-                updated=self.today,
+                page_metadata=PageMetadata(
+                    page_id=CONTRADICTIONS_PAGE,
+                    page_kind="synthesis",
+                    summary=f"Contradiction audit report from {self.today}.",
+                    updated=self.today,
+                ),
+                page_body=report,
             )
         )
 
@@ -675,11 +680,13 @@ class Session:
     def _file_grounding_report(self, report: str) -> None:
         self.store.write_page(
             WikiPage(
-                name=GROUNDING_PAGE,
-                category="synthesis",
-                summary=f"Grounding audit report from {self.today}.",
-                body=report,
-                updated=self.today,
+                page_metadata=PageMetadata(
+                    page_id=GROUNDING_PAGE,
+                    page_kind="synthesis",
+                    summary=f"Grounding audit report from {self.today}.",
+                    updated=self.today,
+                ),
+                page_body=report,
             )
         )
 
@@ -698,11 +705,13 @@ class Session:
     def _file_semantic_lint_report(self, report: str) -> None:
         self.store.write_page(
             WikiPage(
-                name=SEMANTIC_LINT_PAGE,
-                category="synthesis",
-                summary=f"Semantic lint report from {self.today}.",
-                body=report,
-                updated=self.today,
+                page_metadata=PageMetadata(
+                    page_id=SEMANTIC_LINT_PAGE,
+                    page_kind="synthesis",
+                    summary=f"Semantic lint report from {self.today}.",
+                    updated=self.today,
+                ),
+                page_body=report,
             )
         )
 

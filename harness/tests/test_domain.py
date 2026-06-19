@@ -1,5 +1,7 @@
 """Data-in/data-out tests for the pure domain layer."""
 
+from pathlib import Path
+
 import pytest
 
 from llmwiki.domain.candidates import (
@@ -48,7 +50,9 @@ from llmwiki.domain.pages import (
     LOCAL_FLAT_STRUCTURE,
     PageError,
     PageMetadata,
+    PathTemplate,
     WikiPage,
+    WikiStructure,
     parse_page,
     render_page,
 )
@@ -90,27 +94,45 @@ INDEX = """# Index
 class TestPages:
     def test_render_parse_roundtrip(self) -> None:
         page = WikiPage(
-            name="bronze-age",
-            category="concept",
-            summary="The Bronze Age collapse.",
-            body="Linked to [[sea-peoples]].\n\nEvidence: (raw/article.md)",
-            sources=("article.md",),
-            updated="2026-06-10",
+            page_metadata=PageMetadata(
+                page_id="bronze-age",
+                page_kind="concept",
+                summary="The Bronze Age collapse.",
+                sources=("article.md",),
+                updated="2026-06-10",
+            ),
+            page_body="Linked to [[sea-peoples]].\n\nEvidence: (raw/article.md)",
         )
-        assert parse_page("bronze-age", render_page(page)) == page
+        rendered = render_page(page)
+        assert "page_id: bronze-age" in rendered
+        assert "page_kind: concept" in rendered
+        assert "category:" not in rendered
+        assert parse_page(rendered) == page
 
     @pytest.mark.parametrize("name", ["Bad Name", "UPPER", "trailing-", "-leading", "a--b", ""])
     def test_invalid_names_rejected(self, name: str) -> None:
         with pytest.raises(PageError):
-            WikiPage(name=name, category="entity", summary="s", body="b")
+            PageMetadata(page_id=name, page_kind="entity", summary="s")
 
     def test_invalid_category_rejected(self) -> None:
         with pytest.raises(PageError):
-            WikiPage(name="ok", category="article", summary="s", body="b")
+            PageMetadata(page_id="ok", page_kind="article", summary="s")
 
     def test_summary_collapsed_to_one_line(self) -> None:
         with pytest.raises(PageError):
-            WikiPage(name="ok", category="entity", summary="  \n ", body="b")
+            PageMetadata(page_id="ok", page_kind="entity", summary="  \n ")
+
+    def test_nested_structure_renders_from_metadata(self) -> None:
+        structure = WikiStructure(
+            structure_id="nested",
+            default_path_template=PathTemplate(
+                template_text="{PageKind}/{PageId}.md",
+                required_page_metadata_fields=("PageKind", "PageId"),
+            ),
+        )
+        metadata = PageMetadata(page_id="closure", page_kind="concept", summary="Closure.")
+
+        assert structure.render_path(metadata).as_posix() == "concept/closure.md"
 
 
 class TestIngestRoutePlans:
@@ -125,10 +147,15 @@ class TestIngestRoutePlans:
         )
         run = IngestRun(source_bundle=bundle, page_writes=("rules-book",))
 
+        assert source.source_locator == "rules/book.pdf"
         assert source.source_format == "pdf"
         assert LOCAL_FLAT_STRUCTURE.render_path(metadata).as_posix() == "rules-book.md"
         assert run.source_bundle == bundle
         assert run.wiki_structure == LOCAL_FLAT_STRUCTURE
+
+    def test_source_bundle_rejects_empty_raw_sources(self) -> None:
+        with pytest.raises(ValueError, match="SourceBundle"):
+            SourceBundle(raw_sources=())
 
     def test_valid_route_plan_is_accepted_and_authorizes_page_write(self) -> None:
         state = IngestRoutePlanState(IngestRouteContext(source_path="moon.md", scope="source"))
@@ -259,24 +286,45 @@ class TestIndex:
         ]
 
     def test_upsert_inserts_sorted_within_category(self) -> None:
-        updated = upsert_index_entry(INDEX, "charlie", "concept", "concept c")
+        updated = upsert_index_entry(
+            INDEX,
+            PageMetadata(page_id="charlie", page_kind="concept", summary="concept c"),
+        )
         names = [e.name for e in parse_index(updated) if e.category == "concept"]
         assert names == ["bravo", "charlie", "delta"]
 
     def test_upsert_replaces_existing_entry(self) -> None:
-        updated = upsert_index_entry(INDEX, "bravo", "concept", "new summary")
+        updated = upsert_index_entry(
+            INDEX,
+            PageMetadata(page_id="bravo", page_kind="concept", summary="new summary"),
+        )
         entries = {e.name: e.summary for e in parse_index(updated)}
         assert entries["bravo"] == "new summary"
         assert len([e for e in parse_index(updated) if e.name == "bravo"]) == 1
 
     def test_upsert_moves_page_between_categories(self) -> None:
-        updated = upsert_index_entry(INDEX, "bravo", "synthesis", "now a synthesis")
+        updated = upsert_index_entry(
+            INDEX,
+            PageMetadata(page_id="bravo", page_kind="synthesis", summary="now a synthesis"),
+        )
         entries = {e.name: e.category for e in parse_index(updated)}
         assert entries["bravo"] == "synthesis"
 
     def test_upsert_into_empty_category(self) -> None:
-        updated = upsert_index_entry(INDEX, "ada", "entity", "a person")
+        updated = upsert_index_entry(
+            INDEX,
+            PageMetadata(page_id="ada", page_kind="entity", summary="a person"),
+        )
         assert ("ada", "entity") in [(e.name, e.category) for e in parse_index(updated)]
+
+
+class TestSharedObjectBoundaryLanguage:
+    def test_old_page_validation_names_are_not_defined(self) -> None:
+        pages_text = Path("harness/src/llmwiki/domain/pages.py").read_text(encoding="utf-8")
+
+        assert "PAGE_CATEGORIES" not in pages_text
+        assert "validate_page_name" not in pages_text
+        assert "validate_category" not in pages_text
 
     def test_index_page_names(self) -> None:
         assert index_page_names(INDEX) == {"alpha-source", "bravo", "delta"}

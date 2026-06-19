@@ -171,7 +171,7 @@ def compute_salience(
             for target in extract_links(text) & page_names - {name}:
                 inbound[target] += 1
         try:
-            parsed[name] = parse_page(name, text)
+            parsed[name] = parse_page(text)
         except PageError:
             continue  # unparseable page: counted as a linker, never ranked
 

@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field, field_validator
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.ingest_route_plan import IngestRoutePlanState
 from llmwiki.domain.naming import singular_plural_collision
-from llmwiki.domain.pages import WikiPage
+from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.search import render_hits, search_pages
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
@@ -245,12 +245,14 @@ def write_page_tool(
                 + "\nCorrect the citation path, range, or cited raw source before retrying."
             )
         page = WikiPage(
-            name=params.name,
-            category=params.category,
-            summary=params.summary,
-            body=body,
-            sources=tuple(params.sources),
-            updated=today,
+            page_metadata=PageMetadata(
+                page_id=params.name,
+                page_kind=params.category,
+                summary=params.summary,
+                sources=tuple(params.sources),
+                updated=today,
+            ),
+            page_body=body,
         )
         store.write_page(page)
         if write_log is not None:
