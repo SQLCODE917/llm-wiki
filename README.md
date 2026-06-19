@@ -240,6 +240,7 @@ chronologically.
 | Ingest profiles | `docs/2026-06-16-ingest-profiles.md` | Config-driven prompt overlays selected with `llmwiki ingest --profile`; first profile is `rulebook`. |
 | Page alias and descriptive naming | `docs/2026-06-16-page-alias-and-descriptive-naming.md` | Deterministic page rename/merge plus profile-configured singular/plural sibling prevention. |
 | Ingest route plans | `docs/2026-06-16-ingest-page-plans.md` | Validated page write allowlists before page writes in ingest, plus route gap observability and starter domain objects. |
+| Domain vocabulary | `docs/domain-vocabulary.md` | Canonical first-level and second-level domain object terms, boundary shape classifications, and adoption rules for new features. |
 | Wiki conventions (live) | `SCHEMA.md` (repo root) | The pattern's "schema" layer — page categories, link/citation rules, per-operation workflows. Fed to the model verbatim; revised as usage teaches us. |
 | Dev environment | `docs/vim-tmux-unified-lsp-setup.md` | Replication guide for the no-root vim/tmux/LSP setup used to work on this repo. |
 | TDD conventions | `docs/writing-tdds.md` | How design docs in this repo are written: sizing gate, required sections, style constraints. Referenced from AGENTS.md; read before writing any TDD. |

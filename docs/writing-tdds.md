@@ -21,6 +21,13 @@ TDDs instead of writing one.
 Use stable domain terms exactly. Do not creatively rephrase domain operations,
 objects, or workflow stages once a term is established.
 
+- Before defining a domain term, check `docs/domain-vocabulary.md`.
+- Reuse canonical terms from `docs/domain-vocabulary.md` when they already
+  cover the concept.
+- If a new cross-boundary shape appears, classify it as a domain object,
+  boundary DTO, persistence model, or view model in Data Model.
+- If a TDD introduces or changes a durable LLM-Wiki term, update
+  `docs/domain-vocabulary.md` as part of the same work.
 - Define each new domain term once, preferably in Data Model or Requirements.
 - Use that exact term everywhere else in the document.
 - Do not alternate between near-synonyms such as "page write", "ingest page write",
