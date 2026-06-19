@@ -87,7 +87,7 @@ class RouteGap:
 
 @dataclass(frozen=True)
 class IngestRoutePlan:
-    source_path: str
+    source_locator: str
     scope: IngestRoutePlanScope
     profile_ids: tuple[str, ...]
     planned_pages: tuple[PlannedPage, ...]
@@ -115,7 +115,7 @@ class IngestRoutePlanSummary:
 
 @dataclass(frozen=True)
 class IngestRouteContext:
-    source_path: str
+    source_locator: str
     scope: IngestRoutePlanScope
     profile_ids: tuple[str, ...] = ()
     chunk_id: int | None = None
@@ -155,7 +155,7 @@ class IngestRoutePlanState:
         planned = matches[0]
         if planned.metadata.page_kind != page_kind:
             raise IngestRoutePlanError(
-                f"Page write for {page_id!r} used category {page_kind!r}, "
+                f"Page write for {page_id!r} used page_kind {page_kind!r}, "
                 f"but the active ingest route plan uses {planned.metadata.page_kind!r}."
             )
         return planned
@@ -166,8 +166,8 @@ def validate_ingest_route_plan(
 ) -> IngestRoutePlan:
     if plan.version != INGEST_ROUTE_PLAN_VERSION:
         raise IngestRoutePlanError(f"Invalid ingest route plan version {plan.version!r}.")
-    if plan.source_path != context.source_path:
-        raise IngestRoutePlanError("Ingest route plan source_path does not match this run.")
+    if plan.source_locator != context.source_locator:
+        raise IngestRoutePlanError("Ingest route plan source_locator does not match this run.")
     if plan.scope != context.scope:
         raise IngestRoutePlanError("Ingest route plan scope does not match this run.")
     if plan.chunk_id != context.chunk_id:
@@ -181,7 +181,7 @@ def validate_ingest_route_plan(
             raise IngestRoutePlanError(f"Duplicate planned page ID {page_id!r}.")
         seen.add(page_id)
         _validate_action_for_existing_page(planned_page, context.existing_pages)
-        _validate_new_page_name(planned_page, context)
+        _validate_new_page_id(planned_page, context)
     return plan
 
 
@@ -196,7 +196,7 @@ def _validate_action_for_existing_page(
         raise IngestRoutePlanError(f"Planned page {page_id!r} is missing; use action 'create'.")
 
 
-def _validate_new_page_name(planned_page: PlannedPage, context: IngestRouteContext) -> None:
+def _validate_new_page_id(planned_page: PlannedPage, context: IngestRouteContext) -> None:
     page_id = planned_page.metadata.page_id
     if planned_page.action != "create":
         return
@@ -206,7 +206,7 @@ def _validate_new_page_name(planned_page: PlannedPage, context: IngestRouteConte
         )
         if not valid:
             raise IngestRoutePlanError(
-                f"New page {page_id!r} must use namespace prefix {context.new_page_prefix!r}."
+                f"New WikiPage {page_id!r} must use namespace prefix {context.new_page_prefix!r}."
             )
     if context.prevent_singular_plural_siblings and context.new_page_prefix is not None:
         collision = singular_plural_collision(

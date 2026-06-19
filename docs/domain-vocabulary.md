@@ -21,8 +21,33 @@ interlinked, and maintained.
 | local flat wiki structure | The current flat `wiki/*.md` projection, represented by `LOCAL_FLAT_STRUCTURE`. |
 
 Transport, persistence, and report labels may be reader-facing, but domain rules
-must use the canonical domain term. For example, `category` is a tool payload
-field, but the domain term is `page_kind` through `PageMetadata`.
+and model-facing ToolDTOs must use the canonical domain term and code name.
+
+## DomainTerm And CodeName Table
+
+| DomainTerm | CodeName |
+|---|---|
+| `PageId` | `page_id` |
+| `PageKind` | `page_kind` |
+| `PagePath` | `page_path` |
+| `PageBody` | `page_body` |
+| `PageMetadata` | `page_metadata` |
+| `DomainFrontmatter` | `domain_frontmatter` |
+| `GeneratedWikiState` | `generated_wiki_state` |
+| `SourceLocator` | `source_locator` |
+| `RawSource` | `raw_source` |
+| `SourceBundle` | `source_bundle` |
+| `Schema` | `schema` |
+| `WikiStructure` | `wiki_structure` |
+| `IngestRun` | `ingest_run` |
+| `PagePlan` | `page_plan` |
+| `SourcePlan` | `source_plan` |
+| `PlannedPageWrite` | `planned_page_write` |
+| `Evidence` | `evidence` |
+| `IndexEntry` | `index_entry` |
+| `LogEntry` | `log_entry` |
+| `LintRun` | `lint_run` |
+| `LintFinding` | `lint_finding` |
 
 ## Domain Object Inventory
 
@@ -30,18 +55,18 @@ field, but the domain term is `page_kind` through `PageMetadata`.
 
 | Term | Status | Canonical owner or current surface |
 |---|---|---|
-| RawSource | Exists | `llmwiki.domain.ingest_route_plan` |
-| SourceBundle | Exists | `llmwiki.domain.ingest_route_plan` |
+| RawSource | Exists | `llmwiki.domain.objects` |
+| SourceBundle | Exists | `llmwiki.domain.objects` |
 | WikiPage | Exists | `llmwiki.domain.pages` |
 | WikiStructure | Exists | `llmwiki.domain.pages`; local flat value is `LOCAL_FLAT_STRUCTURE` |
-| IngestRun | Exists | `llmwiki.domain.ingest_route_plan` |
+| IngestRun | Exists | `llmwiki.domain.objects` |
 | WikiGraph | Exists | `llmwiki.domain.graph` |
 | CandidateBacklog | Exists | `llmwiki.domain.candidates` |
 | ChatSession | Existing concept | `llmwiki.store.chat_store` SQLite rows and `llmwiki.runtime.chat_repl` flows |
 | PdfIngestManifest | Existing concept | `llmwiki.pdf.manifest.Manifest` |
 | SchemaDocument | Deferred | Introduce when schema parsing, versioning, or validation becomes a domain rule. |
 | QueryRun | Deferred | Introduce when query lifecycle state needs domain validation beyond orchestration. |
-| LintRun | Deferred | Introduce when lint lifecycle state needs domain validation beyond snapshots and deltas. |
+| LintRun | Exists | `llmwiki.domain.objects` |
 | MaintenanceRun | Deferred | Introduce when maintenance lifecycle state needs domain validation beyond report filing. |
 
 ### Second-Level Domain Objects
@@ -58,7 +83,7 @@ field, but the domain term is `page_kind` through `PageMetadata`.
 | Citation | Existing concept | `llmwiki.domain.citations.Citation` |
 | EvidenceLocator | Existing concept | `Citation.page_range`, `Citation.line_range`, and `llmwiki.domain.evidence_resolver.ResolvedLocator` |
 | SourceExcerpt | Existing concept | `ClaimCandidate.evidence_excerpt` in `llmwiki.domain.grounding` |
-| LintFinding | Existing concept | `llmwiki.domain.links.LintFindings` and citation/semantic finding records |
+| LintFinding | Exists | `llmwiki.domain.objects`; citation/semantic findings remain separate concepts |
 | SalienceSignal | Existing concept | `SalienceEntry` inputs in `llmwiki.domain.salience` |
 | PageLink | Deferred | Introduce when individual `[[link]]` edges need validation beyond extraction. |
 | PageWrite | Deferred | Introduce when a page write needs a durable domain record beyond current tool and log state. |

@@ -37,7 +37,7 @@ def build_map_workflow(
     write_log: list[str] | None = None,
     evidence_policy: EvidencePolicy | None = None,
     profiles: tuple[IngestProfile, ...] = (),
-    source_path: str = "",
+    source_locator: str = "",
     new_page_prefix: str | None = None,
     chunk_id: int | None = None,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
@@ -47,7 +47,7 @@ def build_map_workflow(
     if ingest_route_plan_state is None:
         ingest_route_plan_state = IngestRoutePlanState(
             IngestRouteContext(
-                source_path=source_path,
+                source_locator=source_locator,
                 scope="pdf-chunk",
                 profile_ids=tuple(profile.id for profile in profiles),
                 chunk_id=chunk_id,
@@ -92,7 +92,7 @@ def build_map_workflow(
             prompts.MAP_TEMPLATE,
             profiles,
             "pdf_map",
-            source_path,
+            source_locator,
         ),
     )
 
@@ -102,18 +102,18 @@ def build_integrate_workflow(
     today: str,
     evidence_policy: EvidencePolicy | None = None,
     profiles: tuple[IngestProfile, ...] = (),
-    source_path: str = "",
+    source_locator: str = "",
     new_page_prefix: str | None = None,
     required_link_targets: tuple[str, ...] = (),
     min_required_links: int = 0,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
 ) -> Workflow:
     seen: set[str] = set()
-    hub_page = slugify(source_path.rsplit(".", maxsplit=1)[0]) if source_path else ""
+    hub_page = slugify(source_locator.rsplit(".", maxsplit=1)[0]) if source_locator else ""
     if ingest_route_plan_state is None:
         ingest_route_plan_state = IngestRoutePlanState(
             IngestRouteContext(
-                source_path=source_path,
+                source_locator=source_locator,
                 scope="pdf-integrate",
                 profile_ids=tuple(profile.id for profile in profiles),
                 existing_pages=frozenset(store.list_pages()),
@@ -133,7 +133,7 @@ def build_integrate_workflow(
         write_fixed_source_page_tool(
             store,
             today,
-            page_name=hub_page,
+            page_id=hub_page,
             read_tracker=seen,
             evidence_policy=evidence_policy,
             new_page_prefix=new_page_prefix,
@@ -157,6 +157,6 @@ def build_integrate_workflow(
             prompts.INTEGRATE_TEMPLATE,
             profiles,
             "pdf_integrate",
-            source_path,
+            source_locator,
         ),
     )

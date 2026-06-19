@@ -83,21 +83,30 @@ def _plan_page_call(
 
 
 class TestIngest:
+    def test_ingest_run_uses_raw_source_boundary(
+        self, store: WikiStore, paths: WikiPaths, source: str
+    ) -> None:
+        ingest_run = _session(store, [], paths)._ingest_run(source)
+
+        assert ingest_run.source_bundle.raw_sources[0].source_locator == "moon.md"
+        assert ingest_run.source_bundle.raw_sources[0].source_format == "markdown"
+        assert ingest_run.wiki_structure.structure_id == "local-flat"
+
     async def test_happy_path_updates_all_layers(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon lunar formation"})],
             [_plan_page_call("moon", summary="Notes on lunar formation.")],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Notes on lunar formation.",
-                        "content": "Giant impact origin. See [[giant-impact]]. (raw/moon.md)",
+                        "page_body": "Giant impact origin. See [[giant-impact]]. (raw/moon.md)",
                         "sources": ["moon.md"],
                     },
                 )
@@ -116,7 +125,7 @@ class TestIngest:
             paths.route_plan_history_path.read_text(encoding="utf-8")
         )
         assert len(route_records) == 1
-        assert route_records[0].source_path == "moon.md"
+        assert route_records[0].source_locator == "moon.md"
         assert route_records[0].planned_page_ids == ("moon",)
         assert route_records[0].page_writes == ("moon",)
         assert route_records[0].route_gap_count == 0
@@ -132,17 +141,17 @@ class TestIngest:
             }
         ]
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon", gaps=gaps)],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body. (raw/moon.md)",
+                        "page_body": "Body. (raw/moon.md)",
                     },
                 )
             ],
@@ -166,17 +175,17 @@ class TestIngest:
         # block it (tool-error nudge), and the workflow still completes.
         script = [
             [ToolCall(tool="finish_ingest", args={"report": "done!"})],
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body. (raw/moon.md)",
+                        "page_body": "Body. (raw/moon.md)",
                     },
                 )
             ],
@@ -196,24 +205,24 @@ class TestIngest:
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body.",
+                        "page_body": "Body.",
                     },
                 )
             ],
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body. (raw/moon.md)",
+                        "page_body": "Body. (raw/moon.md)",
                     },
                 )
             ],
@@ -229,15 +238,15 @@ class TestIngest:
         # Ingest must consult the existing wiki before it writes. A source
         # read alone is not enough for compounding wiki maintenance.
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body.",
+                        "page_body": "Body.",
                     },
                 )
             ],
@@ -247,10 +256,10 @@ class TestIngest:
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body. (raw/moon.md)",
+                        "page_body": "Body. (raw/moon.md)",
                     },
                 )
             ],
@@ -264,17 +273,17 @@ class TestIngest:
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon-summary")],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body. (raw/moon.md)",
+                        "page_body": "Body. (raw/moon.md)",
                     },
                 )
             ],
@@ -283,10 +292,10 @@ class TestIngest:
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Body. (raw/moon.md)",
+                        "page_body": "Body. (raw/moon.md)",
                     },
                 )
             ],
@@ -302,19 +311,29 @@ class TestIngest:
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon")],
             [
                 ToolCall(  # invalid category — tool error, model retries
                     tool="write_page",
-                    args={"name": "moon", "category": "article", "summary": "s", "content": "b"},
+                    args={
+                        "page_id": "moon",
+                        "page_kind": "article",
+                        "summary": "s",
+                        "page_body": "b",
+                    },
                 )
             ],
             [
                 ToolCall(
                     tool="write_page",
-                    args={"name": "moon", "category": "source", "summary": "s", "content": "b"},
+                    args={
+                        "page_id": "moon",
+                        "page_kind": "source",
+                        "summary": "s",
+                        "page_body": "b",
+                    },
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -339,24 +358,29 @@ class TestIngest:
             )
         )
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon", action="enrich")],
             [
                 ToolCall(  # blind rewrite — must be rejected
                     tool="write_page",
-                    args={"name": "moon", "category": "source", "summary": "thin", "content": "x"},
+                    args={
+                        "page_id": "moon",
+                        "page_kind": "source",
+                        "summary": "thin",
+                        "page_body": "x",
+                    },
                 )
             ],
-            [ToolCall(tool="read_page", args={"name": "moon"})],
+            [ToolCall(tool="read_page", args={"page_id": "moon"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Updated.",
-                        "content": "Original rich body with [[links]]. Plus new facts.",
+                        "page_body": "Original rich body with [[links]]. Plus new facts.",
                     },
                 )
             ],
@@ -375,17 +399,17 @@ class TestIngest:
         # The OCR caveat tag is extraction plumbing; observed quoted verbatim
         # into a wiki page despite the schema — stripped at the boundary now.
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "moon",
-                        "category": "source",
+                        "page_id": "moon",
+                        "page_kind": "source",
                         "summary": "Lunar notes.",
-                        "content": "Real claim.\n\n"
+                        "page_body": "Real claim.\n\n"
                         "[figure text (OCR, unverified): NOISE ON A MUG]\n\n"
                         "Another claim.",
                     },
@@ -405,13 +429,18 @@ class TestIngest:
         # then "reports" in bare text instead of calling finish_ingest. The
         # retry nudge must name the terminal tool and the run must recover.
         script = [
-            [ToolCall(tool="read_source", args={"path": "moon.md"})],
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
             [ToolCall(tool="search_wiki", args={"query": "moon"})],
             [_plan_page_call("moon", summary="s")],
             [
                 ToolCall(
                     tool="write_page",
-                    args={"name": "moon", "category": "source", "summary": "s", "content": "b"},
+                    args={
+                        "page_id": "moon",
+                        "page_kind": "source",
+                        "summary": "s",
+                        "page_body": "b",
+                    },
                 )
             ],
             TextResponse(content="I have finished ingesting the source."),
@@ -429,10 +458,10 @@ class TestIngest:
 
 class TestStrictEvidenceWrites:
     def test_write_guard_accepts_non_tool_ingest_route_plan(self, store: WikiStore) -> None:
-        state = IngestRoutePlanState(IngestRouteContext(source_path="moon.md", scope="source"))
+        state = IngestRoutePlanState(IngestRouteContext(source_locator="moon.md", scope="source"))
         state.accept(
             IngestRoutePlan(
-                source_path="moon.md",
+                source_locator="moon.md",
                 scope="source",
                 profile_ids=(),
                 planned_pages=(
@@ -455,10 +484,10 @@ class TestStrictEvidenceWrites:
         tool = write_page_tool(store, TODAY, ingest_route_plan_state=state)
 
         result = tool.callable(
-            name="moon",
-            category="source",
+            page_id="moon",
+            page_kind="source",
             summary="Lunar notes.",
-            content="Claim. (raw/moon.md)",
+            page_body="Claim. (raw/moon.md)",
             sources=[],
         )
 
@@ -468,10 +497,10 @@ class TestStrictEvidenceWrites:
     def test_off_mode_skips_validation(self, store: WikiStore) -> None:
         tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="off"))
         result = tool.callable(
-            name="moon",
-            category="source",
+            page_id="moon",
+            page_kind="source",
             summary="Lunar notes.",
-            content="Claim cites a missing source. (raw/missing.md)",
+            page_body="Claim cites a missing source. (raw/missing.md)",
             sources=[],
         )
         assert "Wrote wiki/moon.md" in result
@@ -481,10 +510,10 @@ class TestStrictEvidenceWrites:
     def test_warn_mode_permits_write_and_returns_findings(self, store: WikiStore) -> None:
         tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="warn"))
         result = tool.callable(
-            name="moon",
-            category="source",
+            page_id="moon",
+            page_kind="source",
             summary="Lunar notes.",
-            content="Claim cites a missing source. (raw/missing.md)",
+            page_body="Claim cites a missing source. (raw/missing.md)",
             sources=[],
         )
         assert "Wrote wiki/moon.md" in result
@@ -497,10 +526,10 @@ class TestStrictEvidenceWrites:
         tool = write_page_tool(store, TODAY, evidence_policy=EvidencePolicy(mode="fail"))
         with pytest.raises(WikiStoreError, match="missing-source"):
             tool.callable(
-                name="moon",
-                category="source",
+                page_id="moon",
+                page_kind="source",
                 summary="Lunar notes.",
-                content="Claim cites a missing source. (raw/missing.md)",
+                page_body="Claim cites a missing source. (raw/missing.md)",
                 sources=[],
             )
         assert store.read_index() == before_index
@@ -517,10 +546,10 @@ class TestStrictEvidenceWrites:
 
         with pytest.raises(WikiStoreError, match="evidence-not-found"):
             tool.callable(
-                name="moon",
-                category="source",
+                page_id="moon",
+                page_kind="source",
                 summary="Lunar notes.",
-                content='"Fabricated source line." (raw/article.md normalized:L1)',
+                page_body='"Fabricated source line." (raw/article.md normalized:L1)',
                 sources=[],
             )
 
@@ -541,7 +570,7 @@ class TestQuery:
         )
         script = [
             [ToolCall(tool="search_wiki", args={"query": "moon formation"})],
-            [ToolCall(tool="read_page", args={"name": "moon"})],
+            [ToolCall(tool="read_page", args={"page_id": "moon"})],
             [ToolCall(tool="respond", args={"message": "A giant impact — see [[moon]]."})],
         ]
         result = await _session(store, script, paths).query("How did the Moon form?")
@@ -563,7 +592,7 @@ class TestQuery:
         script = [
             [ToolCall(tool="search_wiki", args={"query": "moon formation"})],
             [ToolCall(tool="respond", args={"message": "A giant impact — see [[moon]]."})],
-            [ToolCall(tool="read_page", args={"name": "moon"})],
+            [ToolCall(tool="read_page", args={"page_id": "moon"})],
             [ToolCall(tool="respond", args={"message": "A giant impact — see [[moon]]."})],
         ]
         result = await _session(store, script, paths).query("How did the Moon form?")
@@ -613,7 +642,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [ToolCall(tool="finish_lint", args={"report": "ghost link is broken."})],
         ]
         session = _session(store, script, paths)
@@ -655,7 +684,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [ToolCall(tool="finish_lint", args={"report": "All orphan pages fixed."})],
         ]
         result = await _session(store, script, paths).lint()
@@ -704,7 +733,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [ToolCall(tool="link_orphan", args={"from_page": "alpha", "orphan_page": "beta"})],
             [ToolCall(tool="finish_lint", args={"report": "Linked beta from alpha."})],
         ]
@@ -752,7 +781,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "gamma"})],
+            [ToolCall(tool="read_page", args={"page_id": "gamma"})],
             [ToolCall(tool="link_orphan", args={"from_page": "gamma", "orphan_page": "beta"})],
             [ToolCall(tool="finish_lint", args={"report": "beta was not an orphan."})],
         ]
@@ -774,7 +803,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [ToolCall(tool="finish_lint", args={"report": "missing source citation found."})],
         ]
         session = _session(store, script, paths)
@@ -808,7 +837,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [ToolCall(tool="finish_lint", args={"report": "fabricated evidence found."})],
         ]
         session = _session(store, script, paths)
@@ -861,7 +890,7 @@ class TestLint:
             )
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [ToolCall(tool="finish_lint", args={"report": "Still clean."})],
         ]
         session = _session(store, script, paths)
@@ -897,8 +926,8 @@ class TestContradictions:
         before_beta = store.read_page("beta")
         selection = select_contradiction_candidates(store.page_texts(), max_pairs=5)
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
-            [ToolCall(tool="read_page", args={"name": "beta"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "beta"})],
             [
                 ToolCall(
                     tool="record_contradiction",
@@ -957,7 +986,7 @@ class TestContradictions:
             }
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [
                 ToolCall(
                     tool="record_contradiction",
@@ -1208,8 +1237,8 @@ class TestSemanticLint:
             max_items=3,
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
-            [ToolCall(tool="read_page", args={"name": "beta"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "beta"})],
             [
                 ToolCall(
                     tool="record_semantic_finding",
@@ -1275,7 +1304,7 @@ class TestSemanticLint:
             max_items=3,
         )
         script = [
-            [ToolCall(tool="read_page", args={"name": "alpha"})],
+            [ToolCall(tool="read_page", args={"page_id": "alpha"})],
             [
                 ToolCall(
                     tool="record_semantic_finding",

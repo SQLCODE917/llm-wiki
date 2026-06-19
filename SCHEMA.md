@@ -19,8 +19,8 @@ The index and log formats below are also enforced in harness code
 ## Page conventions
 
 - Page IDs are kebab-case slugs, unique across the wiki: `bronze-age-collapse`.
-- If a source uses the same noun for different roles, make the page name
-  describe the role. Prefer names like `<source>-<topic>-rules`,
+- If a source uses the same noun for different roles, make the PageId
+  describe the role. Prefer PageIds like `<source>-<topic>-rules`,
   `<source>-<topic>-spell`, `<source>-<topic>-monster`,
   `<source>-<topic>-item`, or `<source>-<topic>-lore` over bare
   singular/plural sibling pages.
@@ -29,14 +29,14 @@ The index and log formats below are also enforced in harness code
   - `entity` — a person, place, organization, system, or thing.
   - `concept` — an idea, theme, claim, or recurring pattern.
   - `synthesis` — cross-source analysis, comparisons, answers worth keeping.
-- Link to other pages inline with `[[page-name]]`. Link liberally — links to
+- Link to other pages inline with `[[page-id]]`. Link liberally — links to
   pages that do not exist yet mark pages worth creating.
-- Cite evidence by raw source path, e.g. `(raw/some-article.md)`. For paged
+- Cite evidence by SourceLocator, e.g. `(raw/some-article.md)`. For paged
   sources (PDFs), include the page range: `(raw/book.pdf p.28-41)`.
 - For high-audit claims, you may add an optional normalized line locator after
   the source path, e.g. `(raw/article.md normalized:L12-L18)`. Do not add
   normalized locators unless you have line-addressed source text.
-- Book-scale sources get a hub `source` page named after the file (e.g.
+- Book-scale sources get a hub `source` WikiPage with a PageId after the file (e.g.
   `javascriptallonge`) that summarizes the whole source and links
   per-chapter source pages named `<hub>-<chapter-slug>`.
 - Text marked `[figure text (OCR, unverified)]` was machine-recognized from
@@ -73,7 +73,7 @@ The index and log formats below are also enforced in harness code
   workflow.
 - Ingest profiles are optional prompt overlays selected by the curator for a
   source type. They add guidance, but do not replace this schema, change page
-  categories, or bypass any tool/workflow rule.
+  kinds, or bypass any tool/workflow rule.
 
 ## Graph export
 
@@ -130,7 +130,7 @@ schema wins.
    `read_index` is the relevant wiki document.
 2. Answer from wiki content with page and source citations.
 3. If the answer is a new synthesis worth keeping (a comparison, an analysis,
-   a connection not yet recorded), file it with `write_page` (category
+   a connection not yet recorded), file it with `write_page` (`page_kind`
    `synthesis`) before responding. Do not write pages for simple coverage,
    status, or catalog answers.
 4. Call `respond` with the answer.
@@ -138,7 +138,7 @@ schema wins.
 ### chat-file
 
 1. Ordinary chat answers are conversational context, not source evidence.
-2. When the curator explicitly files an answer with `/file <page-name>`, re-read
+2. When the curator explicitly files an answer with `/file <page-id>`, re-read
    the current wiki pages that support the durable claims.
 3. Write only synthesis pages through `write_page`; cite current wiki pages and
    raw sources when available.

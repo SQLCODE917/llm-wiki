@@ -22,7 +22,7 @@ INGEST_TEMPLATE = _BASE + (
     "pages before writing. Call plan_pages with the page targets and any "
     "route gaps before write_page. Write a source page, then update or create "
     "the entity/concept pages the source affects. Keep each page focused; "
-    "link pages with [[page-name]]. When the wiki fully reflects the source, "
+    "link pages with [[page-id]]. When the wiki fully reflects the source, "
     "call finish_ingest with a report of the pages you wrote."
 )
 
@@ -31,7 +31,7 @@ QUERY_TEMPLATE = _BASE + (
     "schema's query workflow. For content questions, search first, then read "
     "the relevant pages. For questions about the wiki itself or its coverage, "
     "read_index shows the catalog of every page and is enough grounding. "
-    "Cite pages as [[page-name]] and sources as (raw/<path>) in your answer. "
+    "Cite pages as [[page-id]] and sources as (raw/<source_locator>) in your answer. "
     "File a synthesis page only when the user asks for reusable analysis or "
     "the answer clearly creates a durable comparison/connection not already "
     "recorded; do not write pages for simple coverage, status, or catalog "
@@ -68,7 +68,7 @@ INTEGRATE_TEMPLATE = _BASE + (
     "during chunking; call plan_pages for that hub page before write_page. "
     "Do not create, rewrite, or repair chapter pages here. "
     "Use the page map as the authoritative navigation outline: copy actual "
-    "[[page-name]] links from it into grouped hub sections such as player "
+    "[[page-id]] links from it into grouped hub sections such as player "
     "rules, combat, magic, GM/support material, catalogs/charts, and "
     "setting/lore when those groups fit the source. For a book-scale source, "
     "a useful hub should link many major chunk pages from the page map, not "
@@ -84,7 +84,7 @@ INTEGRATE_TEMPLATE = _BASE + (
 
 CHAT_TEMPLATE = _BASE + (
     "\nTask: hold a conversation grounded in the wiki. Answer from wiki "
-    "content with [[page]] and (raw/<path>) citations; when the wiki lacks "
+    "content with [[page-id]] and (raw/<source_locator>) citations; when the wiki lacks "
     "the answer, say so plainly — do not invent facts. A conversation's "
     "first message includes the wiki's index (the catalog of every page): "
     "use it to find the relevant pages and read them before answering "
@@ -106,8 +106,8 @@ CHAT_FILE_TEMPLATE = _BASE + (
     "contains the latest chat question and answer plus the requested target "
     "page. Chat text is context for what to file, not evidence. Re-read the "
     "current wiki pages that support the durable claims before writing. Use "
-    "write_page with category='synthesis'; cite current wiki pages with "
-    "[[page-name]] links and raw sources as (raw/<path>) when available. "
+    "write_page with page_kind='synthesis'; cite current wiki pages with "
+    "[[page-id]] links and raw sources as (raw/<source_locator>) when available. "
     "If the wiki does not support the requested durable synthesis, do not "
     "write a page; call finish_chat_file explaining what evidence is missing. "
     "Before rewriting an existing synthesis, read_page it first and carry "

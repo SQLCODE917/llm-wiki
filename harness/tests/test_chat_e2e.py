@@ -134,15 +134,15 @@ class TestChatFile:
         _seed_wiki(store)
         script = [
             [ToolCall(tool="search_wiki", args={"query": "closure"})],
-            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "closure-summary",
-                        "category": "synthesis",
+                        "page_id": "closure-summary",
+                        "page_kind": "synthesis",
                         "summary": "Durable chat synthesis about closures.",
-                        "content": "Closures preserve scope; see [[closure]].",
+                        "page_body": "Closures preserve scope; see [[closure]].",
                         "sources": [],
                     },
                 )
@@ -151,7 +151,7 @@ class TestChatFile:
         ]
         session = _session(store, script, paths)
         result = await session.file_chat_synthesis(
-            page_name="closure-summary",
+            page_id="closure-summary",
             question="explain closures",
             answer="Closures preserve scope.",
             scope="short durable note",
@@ -179,23 +179,23 @@ class TestChatFile:
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "closure-summary",
-                        "category": "synthesis",
+                        "page_id": "closure-summary",
+                        "page_kind": "synthesis",
                         "summary": "Blind.",
-                        "content": "Blind rewrite [[closure]].",
+                        "page_body": "Blind rewrite [[closure]].",
                         "sources": [],
                     },
                 )
             ],
-            [ToolCall(tool="read_page", args={"name": "closure-summary"})],
+            [ToolCall(tool="read_page", args={"page_id": "closure-summary"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "closure-summary",
-                        "category": "synthesis",
+                        "page_id": "closure-summary",
+                        "page_kind": "synthesis",
                         "summary": "Updated.",
-                        "content": "Old sentence.\n\nNew closure synthesis links [[closure]].",
+                        "page_body": "Old sentence.\n\nNew closure synthesis links [[closure]].",
                         "sources": [],
                     },
                 )
@@ -203,7 +203,7 @@ class TestChatFile:
             [ToolCall(tool="finish_chat_file", args={"report": "Updated page."})],
         ]
         await _session(store, script, paths).file_chat_synthesis(
-            page_name="closure-summary",
+            page_id="closure-summary",
             question="make this durable",
             answer="New closure synthesis",
         )
@@ -218,15 +218,15 @@ class TestChatFile:
     ) -> None:
         _seed_wiki(store)
         script = [
-            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "chat-only-claim",
-                        "category": "synthesis",
+                        "page_id": "chat-only-claim",
+                        "page_kind": "synthesis",
                         "summary": "Invalid chat-only claim.",
-                        "content": "The prior answer said this was important. (chat history)",
+                        "page_body": "The prior answer said this was important. (chat history)",
                         "sources": ["chat history"],
                     },
                 )
@@ -239,7 +239,7 @@ class TestChatFile:
             ],
         ]
         result = await _session(store, script, paths).file_chat_synthesis(
-            page_name="chat-only-claim",
+            page_id="chat-only-claim",
             question="remember that",
             answer="This was important.",
         )
@@ -252,15 +252,15 @@ class TestChatFile:
     ) -> None:
         _seed_wiki(store)
         script = [
-            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "bad-sources",
-                        "category": "synthesis",
+                        "page_id": "bad-sources",
+                        "page_kind": "synthesis",
                         "summary": "Invalid source metadata.",
-                        "content": "This cites the current wiki page [[closure]].",
+                        "page_body": "This cites the current wiki page [[closure]].",
                         "sources": ["closure"],
                     },
                 )
@@ -273,7 +273,7 @@ class TestChatFile:
             ],
         ]
         result = await _session(store, script, paths).file_chat_synthesis(
-            page_name="bad-sources",
+            page_id="bad-sources",
             question="file this",
             answer="Closure note.",
         )
@@ -327,15 +327,15 @@ class TestChatRepl:
     async def test_file_command_files_latest_turn(self, store: WikiStore, paths: WikiPaths) -> None:
         _seed_wiki(store)
         script = [
-            [ToolCall(tool="read_page", args={"name": "closure"})],
+            [ToolCall(tool="read_page", args={"page_id": "closure"})],
             [
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "closure-note",
-                        "category": "synthesis",
+                        "page_id": "closure-note",
+                        "page_kind": "synthesis",
                         "summary": "Filed closure note.",
-                        "content": "A durable note linked to [[closure]].",
+                        "page_body": "A durable note linked to [[closure]].",
                         "sources": [],
                     },
                 )

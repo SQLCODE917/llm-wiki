@@ -1,0 +1,20 @@
+{
+  "edges": [],
+  "metadata": {
+    "generated_date": "2026-06-19",
+    "generator": "llmwiki.graph.v1",
+    "schema_version": 1,
+    "system_pages": "excluded"
+  },
+  "nodes": [
+    {
+      "category": "source",
+      "name": "antikythera-mechanism",
+      "outbound_links": [],
+      "sources": [
+        "antikythera-mechanism.md"
+      ],
+      "summary": "Summary of the Antikythera mechanism, an ancient Greek analog computer."
+    }
+  ]
+}

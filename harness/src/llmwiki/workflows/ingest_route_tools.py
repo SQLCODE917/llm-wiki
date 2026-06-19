@@ -20,7 +20,7 @@ from llmwiki.workflows.tools import _normalize_source_value
 class PlannedPageMetadataParams(BaseModel):
     page_id: str = Field(description="Kebab-case wiki page ID.")
     page_kind: Literal["source", "entity", "concept", "synthesis"] = Field(
-        description="Wiki page category."
+        description="WikiPage page_kind."
     )
     summary: str = Field(description="One-line index summary.")
     sources: list[str] = Field(default_factory=list, description="Raw source references.")
@@ -68,7 +68,7 @@ def plan_pages_tool(state: IngestRoutePlanState) -> ToolDef:
     def _plan_pages(**kwargs: object) -> str:
         params = PlanPagesParams(**kwargs)  # type: ignore[arg-type]
         plan = IngestRoutePlan(
-            source_path=state.context.source_path,
+            source_locator=state.context.source_locator,
             scope=state.context.scope,
             chunk_id=state.context.chunk_id,
             profile_ids=state.context.profile_ids,
@@ -95,7 +95,7 @@ def plan_pages_tool(state: IngestRoutePlanState) -> ToolDef:
             name="plan_pages",
             description=(
                 "Submit the ingest route plan before page writes. The harness "
-                "validates planned page IDs, categories, actions, source scope, "
+                "validates planned page IDs, page kinds, actions, source scope, "
                 "naming rules, and route gaps."
             ),
             parameters=PlanPagesParams,

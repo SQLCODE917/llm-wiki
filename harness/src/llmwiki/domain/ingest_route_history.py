@@ -14,7 +14,7 @@ INGEST_ROUTE_PLAN_RECORD_VERSION = "ingest-route-plan-record.v1"
 class IngestRoutePlanRecord:
     date: str
     run_id: str
-    source_path: str
+    source_locator: str
     scope: IngestRoutePlanScope
     chunk_id: int | None
     profile_ids: tuple[str, ...]
@@ -38,7 +38,7 @@ class IngestRoutePlanRecord:
         return cls(
             date=date,
             run_id=run_id,
-            source_path=plan.source_path,
+            source_locator=plan.source_locator,
             scope=plan.scope,
             chunk_id=plan.chunk_id,
             profile_ids=plan.profile_ids,
@@ -55,7 +55,7 @@ class IngestRoutePlanRecord:
                 "version": self.version,
                 "date": self.date,
                 "run_id": self.run_id,
-                "source_path": self.source_path,
+                "source_locator": self.source_locator,
                 "scope": self.scope,
                 "chunk_id": self.chunk_id,
                 "profile_ids": list(self.profile_ids),
@@ -76,7 +76,7 @@ def ingest_route_plan_record_from_json_line(line: str) -> IngestRoutePlanRecord:
         version=data.get("version", INGEST_ROUTE_PLAN_RECORD_VERSION),
         date=data["date"],
         run_id=data.get("run_id", ""),
-        source_path=data["source_path"],
+        source_locator=data["source_locator"],
         scope=data["scope"],
         chunk_id=data.get("chunk_id"),
         profile_ids=tuple(data.get("profile_ids", [])),

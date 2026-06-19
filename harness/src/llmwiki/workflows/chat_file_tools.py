@@ -33,7 +33,7 @@ def chat_file_write_page_tool(
 
     def _write_page(**kwargs: object) -> str:
         params = WritePageParams(**kwargs)  # type: ignore[arg-type]
-        evidence_text = "\n".join([params.content, *params.sources])
+        evidence_text = "\n".join([params.page_body, *params.sources])
         slug_sources = [source for source in params.sources if _looks_like_wiki_slug(source)]
         if slug_sources:
             joined = ", ".join(slug_sources)
@@ -48,12 +48,12 @@ def chat_file_write_page_tool(
                 "wiki pages and cite those pages or raw sources instead."
             )
         if (
-            _WIKI_LINK_RE.search(params.content) is None
-            and _RAW_CITATION_RE.search(params.content) is None
+            _WIKI_LINK_RE.search(params.page_body) is None
+            and _RAW_CITATION_RE.search(params.page_body) is None
         ):
             raise WikiStoreError(
                 "Filed chat syntheses must cite current wiki pages with [[page]] "
-                "links or raw sources with raw/<path> citations."
+                "links or raw sources with raw/<source_locator> citations."
             )
         return str(base.callable(**kwargs))
 

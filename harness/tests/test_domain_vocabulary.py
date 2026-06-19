@@ -95,7 +95,7 @@ def test_page_metadata_rejects_invalid_page_id() -> None:
 
 
 def test_plan_pages_boundary_dto_maps_transport_sources_into_page_metadata() -> None:
-    state = IngestRoutePlanState(IngestRouteContext(source_path="moon.md", scope="source"))
+    state = IngestRoutePlanState(IngestRouteContext(source_locator="moon.md", scope="source"))
     tool = plan_pages_tool(state)
 
     result = tool.callable(
@@ -129,7 +129,7 @@ def test_plan_pages_boundary_dto_maps_transport_sources_into_page_metadata() -> 
 def test_plan_pages_boundary_dto_reaches_domain_rule_after_mapping() -> None:
     state = IngestRoutePlanState(
         IngestRouteContext(
-            source_path="moon.md",
+            source_locator="moon.md",
             scope="source",
             existing_pages=frozenset({"moon"}),
         )

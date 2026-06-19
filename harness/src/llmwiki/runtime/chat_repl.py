@@ -20,7 +20,7 @@ _HELP = """commands:
   /new            start a new conversation
   /sessions       list conversations (most recent first)
   /switch <id>    make another conversation active
-  /file <page>    file the latest answer as a durable synthesis page
+  /file <page-id> file the latest answer as a durable synthesis page
   /ingest <file>  ingest a raw source (own workflow, warm server)
   /lint           health-check the wiki (own workflow, warm server)
   /help           this text
@@ -159,19 +159,19 @@ class ChatRepl:
     async def _file(self, argument: str) -> None:
         parts = argument.split(maxsplit=1)
         if not parts:
-            self.emit("usage: /file <page-name> [scope]")
+            self.emit("usage: /file <page-id> [scope]")
             return
         history = self.chat_store.history(self.active_id)
         if not history:
             self.emit("nothing to file yet — ask a question first")
             return
         latest = history[-1]
-        page_name = parts[0]
+        page_id = parts[0]
         scope = parts[1] if len(parts) > 1 else ""
         tag = f"chat-file-{self.active_id}-{self.chat_store.turn_count(self.active_id):04d}"
         try:
             result = await self.session.file_chat_synthesis(
-                page_name=page_name,
+                page_id=page_id,
                 question=latest.question,
                 answer=latest.answer,
                 scope=scope,

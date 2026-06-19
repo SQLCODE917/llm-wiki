@@ -11,6 +11,7 @@ import asyncio
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from forge.context import ContextManager, NoCompact
 
@@ -47,15 +48,15 @@ from llmwiki.domain.salience import compute_salience
 from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint_candidates
 from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES, SEMANTIC_LINT_PAGE
 from llmwiki.pdf import PdfError
-from llmwiki.pdf.manifest import from_json as manifest_from_json
-from llmwiki.pdf.pipeline import ExtractionResult, ensure_extracted
-from llmwiki.pdf.recognizer import NullRecognizer, TextRecognizer
-from llmwiki.pdf.vision import AppleVisionRecognizer
 from llmwiki.runtime.backend import start_backend
 from llmwiki.runtime.chat_repl import ChatRepl
 from llmwiki.runtime.session import ExtractFn, OperationResult, Session
 from llmwiki.store import WikiStore
 from llmwiki.store.chat_store import ChatStore
+
+if TYPE_CHECKING:
+    from llmwiki.pdf.pipeline import ExtractionResult
+    from llmwiki.pdf.recognizer import TextRecognizer
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -222,6 +223,8 @@ def _add_strict_evidence_arg(parser: argparse.ArgumentParser) -> None:
 
 def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
     def extract(pdf_path: Path, source_rel: str, reextract: bool) -> ExtractionResult:
+        from llmwiki.pdf.pipeline import ensure_extracted
+
         return ensure_extracted(
             pdf_path,
             source_rel,
@@ -238,7 +241,11 @@ def _default_text_recognizer() -> TextRecognizer:
         import Foundation  # noqa: F401
         import Vision  # noqa: F401
     except ImportError:
+        from llmwiki.pdf.recognizer import NullRecognizer
+
         return NullRecognizer()
+    from llmwiki.pdf.vision import AppleVisionRecognizer
+
     return AppleVisionRecognizer()
 
 
@@ -465,7 +472,7 @@ def _curator_report(
     log_exists = paths.log_path.is_file()
     index_text = paths.index_path.read_text(encoding="utf-8") if index_exists else ""
     log_text = paths.log_path.read_text(encoding="utf-8") if log_exists else ""
-    link_findings = compute_findings(
+    lint_run = compute_findings(
         page_texts,
         index_page_ids(index_text),
         exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
@@ -474,7 +481,7 @@ def _curator_report(
     if update_candidates:
         candidate_backlog = update_candidate_backlog(
             candidate_backlog,
-            signals_from_broken_links(link_findings.broken_links),
+            signals_from_broken_links(lint_run.broken_links),
             existing_pages=set(page_texts),
             today=today,
         )
@@ -483,7 +490,7 @@ def _curator_report(
     inventory = store.source_inventory() if evidence_policy.enabled else None
     status = build_curator_status(
         page_texts=page_texts,
-        index_names=index_page_ids(index_text),
+        index_page_ids=index_page_ids(index_text),
         raw_source_count=len(store.list_sources()),
         index_exists=index_exists,
         log_exists=log_exists,
@@ -502,7 +509,7 @@ def _curator_report(
             build_wiki_graph(page_texts, generated_date=today or "status-check"),
             store.read_graph_json(),
         ),
-        link_findings=link_findings,
+        lint_run=lint_run,
     )
     return status.render()
 
@@ -519,8 +526,10 @@ def _route_plan_status(paths: WikiPaths) -> RoutePlanStatus:
             total_planned_pages += record.planned_page_count
             total_route_gaps += record.route_gap_count
             for summary in record.route_gap_summaries:
-                recent_route_gaps.append(f"raw/{record.source_path}: {summary}")
+                recent_route_gaps.append(f"raw/{record.source_locator}: {summary}")
     for manifest_path in sorted(paths.cache_dir.glob("*/manifest.json")):
+        from llmwiki.pdf.manifest import from_json as manifest_from_json
+
         manifest = manifest_from_json(manifest_path.read_text(encoding="utf-8"))
         for chunk in manifest.chunks:
             total_planned_pages += chunk.route_plan_pages

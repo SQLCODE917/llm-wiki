@@ -159,7 +159,7 @@ class TestCuratorReport:
         record = IngestRoutePlanRecord(
             date=TODAY,
             run_id="run-1",
-            source_path="article.md",
+            source_locator="article.md",
             scope="source",
             chunk_id=None,
             profile_ids=(),

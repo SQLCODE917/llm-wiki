@@ -11,7 +11,8 @@ from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.candidates import CandidateBacklog
 from llmwiki.domain.evidence import EvidenceLintReport
 from llmwiki.domain.graph import GraphStatus
-from llmwiki.domain.links import LintFindings, compute_findings
+from llmwiki.domain.links import compute_findings
+from llmwiki.domain.objects import LintRun
 from llmwiki.domain.pages import PageError, parse_page
 from llmwiki.domain.salience import SalienceReport
 from llmwiki.domain.schema import PAGE_KINDS
@@ -79,7 +80,7 @@ class RoutePlanStatus:
 class CuratorStatus:
     strict_evidence: StrictEvidenceMode
     shape: WikiShapeSummary
-    link_findings: LintFindings
+    lint_run: LintRun
     evidence_report: EvidenceLintReport
     salience_report: SalienceReport
     candidate_backlog: CandidateBacklog
@@ -96,7 +97,7 @@ class CuratorStatus:
                 "# Curator Status",
                 f"Strict evidence mode: {self.strict_evidence}",
                 "## Wiki Shape\n\n" + self.shape.render(),
-                "## Deterministic Findings\n\n" + self.link_findings.render(),
+                "## Deterministic Findings\n\n" + self.lint_run.render(),
                 "## Citation Evidence\n\n" + self.evidence_report.render(),
                 "## Salience\n\n" + (self.salience_report.render() or "No salience entries."),
                 "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
@@ -115,7 +116,7 @@ class CuratorStatus:
 def build_curator_status(
     *,
     page_texts: dict[str, str],
-    index_names: set[str],
+    index_page_ids: set[str],
     raw_source_count: int,
     index_exists: bool,
     log_exists: bool,
@@ -127,12 +128,12 @@ def build_curator_status(
     semantic_lint_summary: str = "",
     route_plan_status: RoutePlanStatus | None = None,
     graph_status: GraphStatus | None = None,
-    link_findings: LintFindings | None = None,
+    lint_run: LintRun | None = None,
 ) -> CuratorStatus:
-    if link_findings is None:
-        link_findings = compute_findings(
+    if lint_run is None:
+        lint_run = compute_findings(
             page_texts,
-            index_names,
+            index_page_ids,
             exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
         )
     invalid_pages, page_kind_counts = _page_kind_counts(page_texts)
@@ -151,7 +152,7 @@ def build_curator_status(
     return CuratorStatus(
         strict_evidence=strict_evidence,
         shape=shape,
-        link_findings=link_findings,
+        lint_run=lint_run,
         evidence_report=evidence_report,
         salience_report=salience_report,
         candidate_backlog=candidate_backlog,
@@ -161,7 +162,7 @@ def build_curator_status(
         recent_log_entries=tuple(recent_log_entries),
         navigation_warnings=navigation_warnings,
         recommended_actions=_recommended_actions(
-            shape, link_findings, evidence_report, candidate_backlog
+            shape, lint_run, evidence_report, candidate_backlog
         ),
     )
 
@@ -195,7 +196,7 @@ def _navigation_warnings(index_exists: bool, log_exists: bool) -> tuple[str, ...
 
 def _recommended_actions(
     shape: WikiShapeSummary,
-    findings: LintFindings,
+    findings: LintRun,
     evidence_report: EvidenceLintReport,
     candidate_backlog: CandidateBacklog,
 ) -> tuple[RecommendedAction, ...]:

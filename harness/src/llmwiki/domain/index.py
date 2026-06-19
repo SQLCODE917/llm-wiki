@@ -122,8 +122,7 @@ def remove_index_entry(text: str, page_id: str) -> str:
         line
         for line in text.splitlines()
         if not (
-            _ENTRY_RE.match(line.strip())
-            and _ENTRY_RE.match(line.strip())["page_id"] == page_id  # type: ignore[index]
+            _ENTRY_RE.match(line.strip()) and _ENTRY_RE.match(line.strip())["page_id"] == page_id  # type: ignore[index]
         )
     ]
     return "\n".join(lines) + "\n"

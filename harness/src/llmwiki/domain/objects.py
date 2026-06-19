@@ -43,6 +43,15 @@ class SourceBundle:
 
 
 @dataclass(frozen=True)
+class SourcePlan:
+    raw_source: RawSource
+    source_classification: str
+    ingest_disposition: str
+    planned_page_write_ids: tuple[str, ...] = ()
+    handling_notes: str = ""
+
+
+@dataclass(frozen=True)
 class Schema:
     schema_id: str = "local-llm-wiki"
     page_kinds: tuple[str, ...] = PAGE_KINDS
@@ -60,3 +69,81 @@ class IngestRun:
     def __post_init__(self) -> None:
         if self.ingest_topology != "serial":
             raise ValueError("Local LLM-Wiki supports only serial IngestRun topology.")
+
+
+@dataclass(frozen=True)
+class LintFinding:
+    finding_type: str
+    page_id: str = ""
+    claim: str = ""
+    cross_reference: str = ""
+    resolution_runs: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class LintRun:
+    lint_findings: tuple[LintFinding, ...] = ()
+    page_ids: tuple[str, ...] = ()
+
+    @property
+    def is_clean(self) -> bool:
+        return not self.lint_findings
+
+    @property
+    def broken_links(self) -> dict[str, tuple[str, ...]]:
+        grouped: dict[str, list[str]] = {}
+        for lint_finding in self.lint_findings:
+            if lint_finding.finding_type == "broken link":
+                grouped.setdefault(lint_finding.page_id, []).append(lint_finding.cross_reference)
+        return {page_id: tuple(cross_references) for page_id, cross_references in grouped.items()}
+
+    @property
+    def orphan_pages(self) -> tuple[str, ...]:
+        return tuple(
+            lint_finding.page_id
+            for lint_finding in self.lint_findings
+            if lint_finding.finding_type == "orphan page"
+        )
+
+    @property
+    def missing_from_index(self) -> tuple[str, ...]:
+        return tuple(
+            lint_finding.page_id
+            for lint_finding in self.lint_findings
+            if lint_finding.finding_type == "missing from index"
+        )
+
+    @property
+    def stale_index_entries(self) -> tuple[str, ...]:
+        return tuple(
+            lint_finding.page_id
+            for lint_finding in self.lint_findings
+            if lint_finding.finding_type == "stale index entry"
+        )
+
+    def render(self) -> str:
+        if self.is_clean:
+            return "No deterministic issues found (links, orphans, and index are consistent)."
+        sections: list[str] = []
+        if self.broken_links:
+            lines = [
+                f"- {page_id} links to missing page(s): {', '.join(targets)}"
+                for page_id, targets in sorted(self.broken_links.items())
+            ]
+            sections.append("Broken [[links]] (target page does not exist):\n" + "\n".join(lines))
+        if self.orphan_pages:
+            sections.append(
+                "Orphan pages (no inbound links from any other page):\n"
+                + "\n".join(f"- {page_id}" for page_id in self.orphan_pages)
+            )
+        if self.missing_from_index:
+            sections.append(
+                "Pages missing from index.md:\n"
+                + "\n".join(f"- {page_id}" for page_id in self.missing_from_index)
+            )
+        if self.stale_index_entries:
+            sections.append(
+                "index.md entries whose page does not exist:\n"
+                + "\n".join(f"- {page_id}" for page_id in self.stale_index_entries)
+            )
+        return "\n\n".join(sections)

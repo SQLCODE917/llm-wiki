@@ -17,7 +17,7 @@ type OverlayName = Literal["ingest", "pdf_map", "pdf_integrate"]
 _ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 _ALLOWED_OVERLAYS: frozenset[str] = frozenset({"ingest", "pdf_map", "pdf_integrate"})
 _ALLOWED_VARS: frozenset[str] = frozenset(
-    {"source_path", "source_slug", "source_namespace", "profile_ids"}
+    {"source_locator", "source_slug", "source_namespace", "profile_ids"}
 )
 _FORMATTER = string.Formatter()
 
@@ -73,12 +73,12 @@ def compose_prompt(
     base_template: str,
     profiles: tuple[IngestProfile, ...],
     overlay_name: OverlayName,
-    source_path: str,
+    source_locator: str,
 ) -> str:
     """Append rendered profile overlays to an existing prompt template."""
     if not profiles:
         return base_template
-    context = _render_context(source_path, profiles)
+    context = _render_context(source_locator, profiles)
     blocks = [
         f"Profile `{profile.id}`:\n{render_overlay(profile, overlay_name, context)}"
         for profile in profiles
@@ -116,10 +116,12 @@ def profile_summary(profiles: tuple[IngestProfile, ...]) -> str:
     return ", ".join(profile.id for profile in profiles)
 
 
-def required_new_page_prefix(profiles: tuple[IngestProfile, ...], source_path: str) -> str | None:
+def required_new_page_prefix(
+    profiles: tuple[IngestProfile, ...], source_locator: str
+) -> str | None:
     if not any(profile.require_namespace_for_new_pages for profile in profiles):
         return None
-    return slugify(Path(source_path).stem)
+    return slugify(Path(source_locator).stem)
 
 
 def prevents_singular_plural_siblings(profiles: tuple[IngestProfile, ...]) -> bool:
@@ -191,10 +193,10 @@ def _load_overlays(profile_id: str, raw: object) -> dict[OverlayName, str]:
     return overlays
 
 
-def _render_context(source_path: str, profiles: tuple[IngestProfile, ...]) -> dict[str, str]:
-    source_slug = slugify(Path(source_path).stem)
+def _render_context(source_locator: str, profiles: tuple[IngestProfile, ...]) -> dict[str, str]:
+    source_slug = slugify(Path(source_locator).stem)
     return {
-        "source_path": source_path,
+        "source_locator": source_locator,
         "source_slug": source_slug,
         "source_namespace": source_slug,
         "profile_ids": ", ".join(profile.id for profile in profiles),

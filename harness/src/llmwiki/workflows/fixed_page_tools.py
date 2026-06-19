@@ -17,9 +17,9 @@ from llmwiki.workflows.tools import _normalize_source_value, write_page_tool
 
 class WriteFixedSourcePageParams(BaseModel):
     summary: str = Field(description="One-line source hub summary, used in the wiki index.")
-    content: str = Field(
-        description="Full markdown body for the source hub. Link related pages "
-        "inline with [[page-name]]. Cite evidence as (raw/<source-path>). "
+    page_body: str = Field(
+        description="Full PageBody markdown for the source hub. Link related pages "
+        "inline with [[page_id]]. Cite evidence as (raw/<source_locator>). "
         "Do not include frontmatter."
     )
     sources: list[str] = Field(
@@ -34,17 +34,12 @@ class WriteFixedSourcePageParams(BaseModel):
             return value
         data: dict[str, Any] = {str(key).strip(): item for key, item in value.items()}
         summary = data.get("summary")
-        if "content" not in data and isinstance(summary, str):
-            marker = "\nparameter=content>\n"
+        if "page_body" not in data and isinstance(summary, str):
+            marker = "\nparameter=page_body>\n"
             if marker in summary:
-                clean_summary, content = summary.split(marker, maxsplit=1)
+                clean_summary, page_body = summary.split(marker, maxsplit=1)
                 data["summary"] = clean_summary.strip()
-                data["content"] = content
-        if "content" not in data:
-            for alias in ("body", "page_content", "markdown"):
-                if alias in data:
-                    data["content"] = data[alias]
-                    break
+                data["page_body"] = page_body
         return data
 
     @field_validator("sources", mode="before")
@@ -65,7 +60,7 @@ def write_fixed_source_page_tool(
     store: WikiStore,
     today: str,
     *,
-    page_name: str,
+    page_id: str,
     read_tracker: set[str] | None = None,
     evidence_policy: EvidencePolicy | None = None,
     new_page_prefix: str | None = None,
@@ -85,14 +80,16 @@ def write_fixed_source_page_tool(
 
     def _write_page(**kwargs: object) -> str:
         params = WriteFixedSourcePageParams(**kwargs)  # type: ignore[arg-type]
-        body = params.content
+        body = params.page_body
         if min_required_links > 0:
             linked_targets = extract_links(body) & required_target_set
             if len(linked_targets) < min_required_links:
                 target_count = min(24, len(required_link_targets))
-                missing = [name for name in required_link_targets if name not in linked_targets]
+                missing = [
+                    page_id for page_id in required_link_targets if page_id not in linked_targets
+                ]
                 fill_count = max(min_required_links - len(linked_targets), target_count)
-                links = "\n".join(f"- [[{name}]]" for name in missing[:fill_count])
+                links = "\n".join(f"- [[{page_id}]]" for page_id in missing[:fill_count])
                 body += (
                     "\n\n## Page-Map Navigation\n\n"
                     "The harness added these links from the chunk page map so "
@@ -102,10 +99,10 @@ def write_fixed_source_page_tool(
         return cast(
             str,
             base.callable(
-                name=page_name,
-                category="source",
+                page_id=page_id,
+                page_kind="source",
                 summary=params.summary,
-                content=body,
+                page_body=body,
                 sources=params.sources,
             ),
         )
@@ -114,7 +111,7 @@ def write_fixed_source_page_tool(
         spec=ToolSpec(
             name="write_page",
             description=(
-                f"Write the fixed source hub page '{page_name}'. This workflow "
+                f"Write the fixed source hub WikiPage '{page_id}'. This workflow "
                 "does not create or update chapter pages."
             ),
             parameters=WriteFixedSourcePageParams,

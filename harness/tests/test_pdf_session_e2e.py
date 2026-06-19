@@ -52,7 +52,12 @@ def _write_page_call(name: str) -> ToolCall:
         content = "Hub links [[functions]] and [[closures]]."
     return ToolCall(
         tool="write_page",
-        args={"name": name, "category": "source", "summary": f"About {name}.", "content": content},
+        args={
+            "page_id": name,
+            "page_kind": "source",
+            "summary": f"About {name}.",
+            "page_body": content,
+        },
     )
 
 
@@ -116,7 +121,7 @@ _INTEGRATE_TURNS = [
 
 class TestPdfIngest:
     async def test_full_map_then_integrate(self, store: WikiStore, paths: WikiPaths) -> None:
-        # The PDF must exist for source_path resolution in the real flow; the
+        # The PDF must exist for source_locator resolution in the real flow; the
         # fake extractor ignores it but Session resolves the raw path first.
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths)
@@ -213,10 +218,10 @@ class TestPdfIngest:
             return ToolCall(
                 tool="write_page",
                 args={
-                    "name": name,
-                    "category": "source",
+                    "page_id": name,
+                    "page_kind": "source",
                     "summary": f"About {name}.",
-                    "content": "Builds on [[iterable]].",
+                    "page_body": "Builds on [[iterable]].",
                     "sources": ["raw/book.pdf"],
                 },
             )
@@ -298,10 +303,10 @@ class TestPdfIngest:
                 ToolCall(
                     tool="write_page",
                     args={
-                        "name": "book",  # slugify('book.pdf'.stem) == the hub
-                        "category": "source",
+                        "page_id": "book",  # slugify('book.pdf'.stem) == the hub
+                        "page_kind": "source",
                         "summary": "Hub.",
-                        "content": "Summary prose.\n\n**Key entities**: [[matthew-knox]].",
+                        "page_body": "Summary prose.\n\n**Key entities**: [[matthew-knox]].",
                         "sources": ["raw/book.pdf"],
                     },
                 )

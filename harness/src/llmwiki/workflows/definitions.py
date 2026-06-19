@@ -47,7 +47,7 @@ def build_ingest_workflow(
     today: str,
     evidence_policy: EvidencePolicy | None = None,
     profiles: tuple[IngestProfile, ...] = (),
-    source_path: str = "",
+    source_locator: str = "",
     new_page_prefix: str | None = None,
     write_log: list[str] | None = None,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
@@ -57,7 +57,7 @@ def build_ingest_workflow(
     if ingest_route_plan_state is None:
         ingest_route_plan_state = IngestRoutePlanState(
             IngestRouteContext(
-                source_path=source_path,
+                source_locator=source_locator,
                 scope="source",
                 profile_ids=tuple(profile.id for profile in profiles),
                 existing_pages=frozenset(store.list_pages()),
@@ -97,7 +97,7 @@ def build_ingest_workflow(
             prompts.INGEST_TEMPLATE,
             profiles,
             "ingest",
-            source_path,
+            source_locator,
         ),
     )
 

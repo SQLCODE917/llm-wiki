@@ -37,7 +37,8 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanScope,
     IngestRoutePlanState,
 )
-from llmwiki.domain.links import LintFindings, compute_findings
+from llmwiki.domain.links import compute_findings
+from llmwiki.domain.objects import IngestRun, LintRun, SourceBundle
 from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page, slugify
 from llmwiki.domain.salience import SalienceReport, compute_salience, reconcile_key_lists
 from llmwiki.domain.semantic_lint import (
@@ -147,13 +148,13 @@ class OperationResult:
 class LintSnapshot:
     """Deterministic lint state at one point in the operation."""
 
-    link_findings: LintFindings
+    lint_run: LintRun
     evidence_report: EvidenceLintReport
 
     def render(self) -> str:
         return (
             "Link/index/orphan findings:\n"
-            f"{self.link_findings.render()}\n\n"
+            f"{self.lint_run.render()}\n\n"
             "Citation evidence findings:\n"
             f"{self.evidence_report.render()}"
         )
@@ -167,10 +168,10 @@ class LintDelta:
     after: LintSnapshot
 
     def render(self) -> str:
-        before_orphans = set(self.before.link_findings.orphan_pages)
-        after_orphans = set(self.after.link_findings.orphan_pages)
-        before_broken = _broken_link_edges(self.before.link_findings)
-        after_broken = _broken_link_edges(self.after.link_findings)
+        before_orphans = set(self.before.lint_run.orphan_pages)
+        after_orphans = set(self.after.lint_run.orphan_pages)
+        before_broken = _broken_link_edges(self.before.lint_run)
+        after_broken = _broken_link_edges(self.after.lint_run)
         before_evidence = set(self.before.evidence_report.findings)
         after_evidence = set(self.after.evidence_report.findings)
         return "\n\n".join(
@@ -184,13 +185,13 @@ class LintDelta:
                 _render_count_delta("Broken link findings", len(before_broken), len(after_broken)),
                 _render_count_delta(
                     "Pages missing from index.md",
-                    len(self.before.link_findings.missing_from_index),
-                    len(self.after.link_findings.missing_from_index),
+                    len(self.before.lint_run.missing_from_index),
+                    len(self.after.lint_run.missing_from_index),
                 ),
                 _render_count_delta(
                     "Stale index entries",
-                    len(self.before.link_findings.stale_index_entries),
-                    len(self.after.link_findings.stale_index_entries),
+                    len(self.before.lint_run.stale_index_entries),
+                    len(self.after.lint_run.stale_index_entries),
                 ),
                 _render_count_delta(
                     "Citation evidence findings",
@@ -220,46 +221,57 @@ class Session:
         return EvidencePolicy(mode=self.strict_evidence)
 
     async def ingest(
-        self, source_path: str, reextract: bool = False, reintegrate: bool = False
+        self, source_locator: str, reextract: bool = False, reintegrate: bool = False
     ) -> OperationResult:
-        if source_path.lower().endswith(".pdf"):
-            return await self._ingest_pdf(source_path, reextract, reintegrate)
+        ingest_run = self._ingest_run(source_locator)
+        source_locator = _single_source_locator(ingest_run)
+        if source_locator.lower().endswith(".pdf"):
+            return await self._ingest_pdf(source_locator, reextract, reintegrate, ingest_run)
         if reintegrate:
             raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
-        ingest_route_plan_state = self._ingest_route_plan_state(source_path, "source")
+        ingest_route_plan_state = self._ingest_route_plan_state(source_locator, "source")
         write_log: list[str] = []
         workflow = build_ingest_workflow(
             self.store,
             self.today,
             self._evidence_policy(),
             profiles=self.ingest_profiles,
-            source_path=source_path,
-            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+            source_locator=source_locator,
+            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
             write_log=write_log,
             ingest_route_plan_state=ingest_route_plan_state,
         )
         message = (
-            f"Ingest the source 'raw/{source_path}' into the wiki. "
-            f"Pass path='{source_path}' to read_source."
+            f"Ingest the source 'raw/{source_locator}' into the wiki. "
+            f"Pass source_locator='{source_locator}' to read_source."
         )
         report, transcript = await self._run(workflow, message, "ingest")
         self._record_ingest_route_plan(
             ingest_route_plan_state,
             page_writes=tuple(dict.fromkeys(write_log)),
         )
-        self.store.append_log(self.today, "ingest", source_path, report)
-        return OperationResult("ingest", source_path, report, transcript)
+        self.store.append_log(self.today, "ingest", source_locator, report)
+        return OperationResult("ingest", source_locator, report, transcript)
 
     async def _ingest_pdf(
-        self, source_path: str, reextract: bool, reintegrate: bool = False
+        self,
+        source_locator: str,
+        reextract: bool,
+        reintegrate: bool = False,
+        ingest_run: IngestRun | None = None,
     ) -> OperationResult:
+        if ingest_run is None:
+            ingest_run = self._ingest_run(source_locator)
+        source_locator = _single_source_locator(ingest_run)
         if self.extract_pdf is None:
             raise RuntimeError("Session has no PDF extractor wired (extract_pdf).")
-        result = self.extract_pdf(self.store.raw_source_path(source_path), source_path, reextract)
+        result = self.extract_pdf(
+            self.store.raw_source_path(source_locator), source_locator, reextract
+        )
         manifest, total = result.manifest, len(result.manifest.chunks)
         if reintegrate and manifest.pending:
             raise PdfError(
-                f"--reintegrate requires a completed ingest; raw/{source_path} "
+                f"--reintegrate requires a completed ingest; raw/{source_locator} "
                 f"has {len(manifest.pending)} pending chunk(s) — run a plain "
                 "ingest to finish them first."
             )
@@ -267,14 +279,14 @@ class Session:
         for record in manifest.pending:
             text = chunk_file(result.cache_dir, record.chunk_id).read_text(encoding="utf-8")
             ingest_route_plan_state = self._ingest_route_plan_state(
-                source_path,
+                source_locator,
                 "pdf-chunk",
                 chunk_id=record.chunk_id,
             )
             message = (
-                f"Ingest chunk {record.chunk_id} of {total} from 'raw/{source_path}'.\n"
+                f"Ingest chunk {record.chunk_id} of {total} from 'raw/{source_locator}'.\n"
                 f"Section: {record.heading} (pages {record.start_page}-{record.end_page}).\n"
-                f"Cite this material as (raw/{source_path} "
+                f"Cite this material as (raw/{source_locator} "
                 f"p.{record.start_page}-{record.end_page}).\n\n<chunk>\n{text}\n</chunk>"
             )
             write_log: list[str] = []
@@ -285,8 +297,8 @@ class Session:
                     write_log=write_log,
                     evidence_policy=self._evidence_policy(),
                     profiles=self.ingest_profiles,
-                    source_path=source_path,
-                    new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+                    source_locator=source_locator,
+                    new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
                     chunk_id=record.chunk_id,
                     ingest_route_plan_state=ingest_route_plan_state,
                 ),
@@ -307,17 +319,17 @@ class Session:
             if self.on_chunk_note is not None:
                 self.on_chunk_note(f"[chunk {record.chunk_id}/{total}] {notes}")
 
-        hub = slugify(Path(source_path).stem)
+        hub = slugify(Path(source_locator).stem)
         salience = compute_salience(
             self.store.page_texts(),
             manifest.write_counts(),
             source_text=read_source_text(result.cache_dir),
-            scope_source=source_path,
+            scope_source=source_locator,
             exclude_inbound_from=frozenset({hub}),
         )
         salience_block = salience.render()
         message = (
-            f"All {total} chunks of 'raw/{source_path}' are ingested. Ensure the hub "
+            f"All {total} chunks of 'raw/{source_locator}' are ingested. Ensure the hub "
             f"source page '{hub}' exists and links the pages written during "
             f"chunking.\n\n{salience_block}\n\n"
             f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
@@ -330,15 +342,15 @@ class Session:
                     link_targets.append(page)
                     seen_targets.add(page)
         required_link_targets = tuple(link_targets)
-        ingest_route_plan_state = self._ingest_route_plan_state(source_path, "pdf-integrate")
+        ingest_route_plan_state = self._ingest_route_plan_state(source_locator, "pdf-integrate")
         report, transcript = await self._run(
             build_integrate_workflow(
                 self.store,
                 self.today,
                 self._evidence_policy(),
                 profiles=self.ingest_profiles,
-                source_path=source_path,
-                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+                source_locator=source_locator,
+                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
                 required_link_targets=required_link_targets,
                 min_required_links=min(12, len(required_link_targets)),
                 ingest_route_plan_state=ingest_route_plan_state,
@@ -351,8 +363,12 @@ class Session:
         save_manifest(
             ExtractionResult(manifest=manifest.mark_integrated(), cache_dir=result.cache_dir)
         )
-        self.store.append_log(self.today, "ingest", source_path, report)
-        return OperationResult("ingest", source_path, report, transcript)
+        self.store.append_log(self.today, "ingest", source_locator, report)
+        return OperationResult("ingest", source_locator, report, transcript)
+
+    def _ingest_run(self, source_locator: str) -> IngestRun:
+        raw_source = self.store.raw_source(source_locator)
+        return IngestRun(source_bundle=SourceBundle.one(raw_source))
 
     def _record_ingest_route_plan(
         self,
@@ -373,19 +389,19 @@ class Session:
 
     def _ingest_route_plan_state(
         self,
-        source_path: str,
+        source_locator: str,
         scope: IngestRoutePlanScope,
         *,
         chunk_id: int | None = None,
     ) -> IngestRoutePlanState:
         return IngestRoutePlanState(
             IngestRouteContext(
-                source_path=source_path,
+                source_locator=source_locator,
                 scope=scope,
                 profile_ids=tuple(profile.id for profile in self.ingest_profiles),
                 chunk_id=chunk_id,
                 existing_pages=frozenset(self.store.list_pages()),
-                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_path),
+                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
                 prevent_singular_plural_siblings=prevents_singular_plural_siblings(
                     self.ingest_profiles
                 ),
@@ -443,17 +459,17 @@ class Session:
 
     async def file_chat_synthesis(
         self,
-        page_name: str,
+        page_id: str,
         question: str,
         answer: str,
         scope: str = "",
         tag: str = "chat-file",
     ) -> OperationResult:
         workflow = build_chat_file_workflow(self.store, self.today)
-        slug = slugify(page_name)
+        slug = slugify(page_id)
         message = (
-            f"File a durable synthesis page named '{slug}' from the latest chat turn. "
-            "Use category='synthesis'. Chat text is context only; re-read current "
+            f"File a durable synthesis WikiPage with PageId '{slug}' from the latest chat turn. "
+            "Use page_kind='synthesis'. Chat text is context only; re-read current "
             "wiki pages before writing and cite wiki/raw evidence.\n\n"
             f"Requested scope: {scope or '(none provided)'}\n\n"
             f"Latest chat question:\n{question}\n\n"
@@ -474,7 +490,7 @@ class Session:
         salience_block = compute_salience(self.store.page_texts()).render()
         message = (
             "Run a lint pass. Deterministic findings from the harness:\n\n"
-            f"{before.link_findings.render()}\n\n"
+            f"{before.lint_run.render()}\n\n"
             "Citation evidence findings:\n\n"
             f"{before.evidence_report.render()}\n\n"
             f"{salience_block}\n"
@@ -568,7 +584,7 @@ class Session:
         page_texts = self.store.page_texts()
         inventory = self.store.source_inventory() if evidence_policy.enabled else None
         return LintSnapshot(
-            link_findings=compute_findings(
+            lint_run=compute_findings(
                 page_texts,
                 self.store.index_page_ids(),
                 exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
@@ -716,8 +732,12 @@ class Session:
         )
 
 
-def _broken_link_edges(findings: LintFindings) -> set[tuple[str, str]]:
+def _broken_link_edges(findings: LintRun) -> set[tuple[str, str]]:
     return {(page, target) for page, targets in findings.broken_links.items() for target in targets}
+
+
+def _single_source_locator(ingest_run: IngestRun) -> str:
+    return ingest_run.source_bundle.raw_sources[0].source_locator
 
 
 def _render_count_delta(label: str, before: int, after: int) -> str:

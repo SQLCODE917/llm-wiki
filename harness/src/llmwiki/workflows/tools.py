@@ -21,11 +21,11 @@ _PAGE_PREVIEW_MARKER = (
 )
 
 
-def _strip_pipeline_markers(content: str) -> str:
-    """Content hygiene at the wiki boundary: extraction-pipeline markers
-    (e.g. the OCR caveat tag) are internal plumbing, never wiki content —
+def _strip_pipeline_markers(page_body: str) -> str:
+    """PageBody hygiene at the wiki boundary: extraction-pipeline markers
+    (e.g. the OCR caveat tag) are internal plumbing, never PageBody content —
     observed quoted verbatim into a page despite the schema forbidding it."""
-    return "\n".join(line for line in content.splitlines() if OCR_MARKER not in line)
+    return "\n".join(line for line in page_body.splitlines() if OCR_MARKER not in line)
 
 
 def _normalize_source_value(value: str) -> str:
@@ -36,11 +36,13 @@ def _normalize_source_value(value: str) -> str:
 
 
 class ReadSourceParams(BaseModel):
-    path: str = Field(description="Source path relative to raw/, e.g. 'article.md'.")
+    source_locator: str = Field(
+        description="RawSource locator relative to raw/, e.g. 'article.md'."
+    )
 
 
 class SearchWikiParams(BaseModel):
-    query: str = Field(description="Search terms to match against wiki page names and content.")
+    query: str = Field(description="Search terms to match against WikiPage page_ids and content.")
 
 
 class ReadIndexParams(BaseModel):
@@ -48,25 +50,25 @@ class ReadIndexParams(BaseModel):
 
 
 class ReadPageParams(BaseModel):
-    name: str = Field(description="Wiki page name (kebab-case slug), e.g. 'bronze-age-collapse'.")
+    page_id: str = Field(description="WikiPage page_id, e.g. 'bronze-age-collapse'.")
 
 
 class WritePageParams(BaseModel):
-    name: str = Field(
-        description="Page name as a kebab-case slug. Reuse an existing name to update that page."
+    page_id: str = Field(
+        description="WikiPage page_id as a kebab-case slug. Reuse an existing page_id to update."
     )
-    category: Literal["source", "entity", "concept", "synthesis"] = Field(
-        description="Page category: source (summary of one raw source), entity, "
+    page_kind: Literal["source", "entity", "concept", "synthesis"] = Field(
+        description="WikiPage page_kind: source (summary of one raw source), entity, "
         "concept, or synthesis (cross-source analysis)."
     )
     summary: str = Field(description="One-line summary of the page, used in the wiki index.")
-    content: str = Field(
-        description="Full markdown body. Link related pages inline with [[page-name]]. "
-        "Cite evidence as (raw/<source-path>). Do not include frontmatter."
+    page_body: str = Field(
+        description="Full PageBody markdown. Link related pages inline with [[page_id]]. "
+        "Cite evidence as (raw/<source_locator>). Do not include frontmatter."
     )
     sources: list[str] = Field(
         default_factory=list,
-        description="Raw source paths this page draws on, e.g. ['article.md'].",
+        description="RawSource locators this page draws on, e.g. ['article.md'].",
     )
 
     @field_validator("sources", mode="before")
@@ -84,7 +86,7 @@ class FinishParams(BaseModel):
 def read_source_tool(store: WikiStore) -> ToolDef:
     def _read_source(**kwargs: object) -> str:
         params = ReadSourceParams(**kwargs)  # type: ignore[arg-type]
-        return store.read_source(params.path)
+        return store.read_source(params.source_locator)
 
     return ToolDef(
         spec=ToolSpec(
@@ -105,8 +107,8 @@ def search_wiki_tool(store: WikiStore) -> ToolDef:
     return ToolDef(
         spec=ToolSpec(
             name="search_wiki",
-            description="Search wiki pages by name and content; returns matching "
-            "page names with snippets.",
+            description="Search wiki pages by page_id and content; returns matching "
+            "page_ids with snippets.",
             parameters=SearchWikiParams,
         ),
         callable=_search_wiki,
@@ -127,7 +129,7 @@ def read_index_tool(store: WikiStore, read_tracker: set[str] | None = None) -> T
         spec=ToolSpec(
             name="read_index",
             description="Read the wiki's index: the catalog of every page "
-            "with a one-line summary, grouped by category. Use this for "
+            "with a one-line summary, grouped by page_kind. Use this for "
             "questions about the wiki itself or what it covers.",
             parameters=ReadIndexParams,
         ),
@@ -145,19 +147,19 @@ def read_page_tool(
 
     def _read_page(**kwargs: object) -> str:
         params = ReadPageParams(**kwargs)  # type: ignore[arg-type]
-        text = store.read_page(params.name)
+        text = store.read_page(params.page_id)
         truncated = max_chars is not None and len(text) > max_chars
-        if truncated and params.name in previewed:
+        if truncated and params.page_id in previewed:
             return (
-                f"Page '{params.name}' is too large for this chunk run and was "
+                f"WikiPage '{params.page_id}' is too large for this chunk run and was "
                 "already previewed. Do not call read_page for it again; write "
                 "a separate source page for the current chunk or inspect a "
                 "smaller related page."
             )
         if read_tracker is not None and (track_truncated_reads or not truncated):
-            read_tracker.add(params.name)
+            read_tracker.add(params.page_id)
         if truncated and max_chars is not None:
-            previewed.add(params.name)
+            previewed.add(params.page_id)
             return text[:max_chars] + _PAGE_PREVIEW_MARKER
         return text
 
@@ -195,7 +197,7 @@ def write_page_tool(
     page, and a 14B reliably "reconstructs" content it never saw (observed
     live twice; docs/open-questions.md #10). New pages are unaffected.
 
-    *write_log*, when provided, records each successfully written page name
+    *write_log*, when provided, records each successfully written page_id
     — the machine record behind manifest.pages_written and the salience
     write-count signal.
     """
@@ -203,51 +205,54 @@ def write_page_tool(
     def _write_page(**kwargs: object) -> str:
         params = WritePageParams(**kwargs)  # type: ignore[arg-type]
         if ingest_route_plan_state is not None:
-            ingest_route_plan_state.authorize_page_write(params.name, params.category)
+            ingest_route_plan_state.authorize_page_write(params.page_id, params.page_kind)
         if (
             read_tracker is not None
-            and params.name not in read_tracker
-            and params.name in store.list_pages()
+            and params.page_id not in read_tracker
+            and params.page_id in store.list_pages()
         ):
             raise WikiStoreError(
-                f"Page '{params.name}' already exists and write_page replaces "
-                f"it entirely. Call read_page(name='{params.name}') first, "
+                f"WikiPage '{params.page_id}' already exists and write_page replaces "
+                f"it entirely. Call read_page(page_id='{params.page_id}') first, "
                 "then rewrite it carrying forward the content you keep."
             )
-        if new_page_prefix is not None and params.name not in store.list_pages():
-            valid = params.name == new_page_prefix or params.name.startswith(f"{new_page_prefix}-")
+        if new_page_prefix is not None and params.page_id not in store.list_pages():
+            valid = params.page_id == new_page_prefix or params.page_id.startswith(
+                f"{new_page_prefix}-"
+            )
             if not valid:
                 raise WikiStoreError(
-                    f"New page '{params.name}' must use the active ingest profile "
-                    f"namespace prefix '{new_page_prefix}'. Use '{new_page_prefix}-{params.name}' "
+                    f"New WikiPage '{params.page_id}' must use the active ingest profile "
+                    f"namespace prefix '{new_page_prefix}'. Use "
+                    f"'{new_page_prefix}-{params.page_id}' "
                     "or update an existing generic page only after reading it first."
                 )
         if (
             prevent_singular_plural_siblings
             and new_page_prefix is not None
-            and params.name not in store.list_pages()
+            and params.page_id not in store.list_pages()
         ):
             collision = singular_plural_collision(
-                params.name,
+                params.page_id,
                 set(store.list_pages()),
                 namespace=new_page_prefix,
             )
             if collision is not None:
                 raise WikiStoreError(collision.render_for_tool())
-        body = _strip_pipeline_markers(params.content)
+        body = _strip_pipeline_markers(params.page_body)
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
         resolver = store.source_resolver() if policy.enabled else None
-        evidence = policy.check_page(params.name, body, inventory, resolver)
+        evidence = policy.check_page(params.page_id, body, inventory, resolver)
         if not evidence.allowed:
             raise WikiStoreError(
-                evidence.render_for_tool(params.name)
+                evidence.render_for_tool(params.page_id)
                 + "\nCorrect the citation path, range, or cited raw source before retrying."
             )
         page = WikiPage(
             page_metadata=PageMetadata(
-                page_id=params.name,
-                page_kind=params.category,
+                page_id=params.page_id,
+                page_kind=params.page_kind,
                 summary=params.summary,
                 sources=tuple(params.sources),
                 updated=today,
@@ -256,10 +261,10 @@ def write_page_tool(
         )
         store.write_page(page)
         if write_log is not None:
-            write_log.append(params.name)
-        response = f"Wrote wiki/{params.name}.md and updated its index entry."
+            write_log.append(params.page_id)
+        response = f"Wrote wiki/{params.page_id}.md and updated its index entry."
         if evidence.has_warnings:
-            response += "\n\n" + evidence.render_for_tool(params.name)
+            response += "\n\n" + evidence.render_for_tool(params.page_id)
         return response
 
     return ToolDef(

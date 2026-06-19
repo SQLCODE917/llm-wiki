@@ -27,7 +27,7 @@ def _write_profile(
     profile_id: str | None = None,
     enabled: bool = True,
     priority: int = 100,
-    overlay: str = "Use {source_namespace} for {source_path}.",
+    overlay: str = "Use {source_namespace} for {source_locator}.",
     prevent_siblings: bool = False,
 ) -> Path:
     directory.mkdir(parents=True, exist_ok=True)
@@ -221,13 +221,13 @@ class TestProfiledWorkflows:
             store,
             "2026-06-16",
             profiles=(profile,),
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
         )
         integrate_workflow = build_integrate_workflow(
             store,
             "2026-06-16",
             profiles=(profile,),
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
         )
 
         assert "map sword-world-rpg-complete-edition" in map_workflow.system_prompt_template
@@ -254,10 +254,10 @@ class TestProfiledWorkflows:
             summary="Half-elf rules.",
         )
         result = write(
-            name="sword-world-rpg-complete-edition-half-elf",
-            category="concept",
+            page_id="sword-world-rpg-complete-edition-half-elf",
+            page_kind="concept",
             summary="Half-elf rules.",
-            content="Body.",
+            page_body="Body.",
         )
         assert "sword-world-rpg-complete-edition-half-elf" in result
 
@@ -285,7 +285,7 @@ class TestProfiledWorkflows:
             store,
             "2026-06-16",
             profiles=(profile,),
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
             new_page_prefix="sword-world-rpg-complete-edition",
         )
         write = workflow.tools["write_page"].callable
@@ -305,10 +305,10 @@ class TestProfiledWorkflows:
             summary="Wraith Form concept.",
         )
         result = write(
-            name="sword-world-rpg-complete-edition-wraith-form",
-            category="concept",
+            page_id="sword-world-rpg-complete-edition-wraith-form",
+            page_kind="concept",
             summary="Wraith Form concept.",
-            content="Body.",
+            page_body="Body.",
         )
         assert "sword-world-rpg-complete-edition-wraith-form" in result
 
@@ -329,7 +329,7 @@ class TestProfiledWorkflows:
             "2026-06-16",
             new_page_prefix="sword-world-rpg-complete-edition",
         )
-        workflow.tools["read_page"].callable(name="role-playing-game")
+        workflow.tools["read_page"].callable(page_id="role-playing-game")
         _plan_page(
             workflow,
             "role-playing-game",
@@ -339,10 +339,10 @@ class TestProfiledWorkflows:
         )
 
         result = workflow.tools["write_page"].callable(
-            name="role-playing-game",
-            category="concept",
+            page_id="role-playing-game",
+            page_kind="concept",
             summary="Existing generic page.",
-            content="Old body plus sourced context.",
+            page_body="Old body plus sourced context.",
         )
 
         assert "role-playing-game" in result
@@ -359,10 +359,10 @@ class TestProfiledWorkflows:
         )
         workflow = build_map_workflow(store, "2026-06-16")
 
-        preview = workflow.tools["read_page"].callable(name="big-chapter")
+        preview = workflow.tools["read_page"].callable(page_id="big-chapter")
 
         assert "[TRUNCATED: page preview" in preview
-        repeated = workflow.tools["read_page"].callable(name="big-chapter")
+        repeated = workflow.tools["read_page"].callable(page_id="big-chapter")
         assert "already previewed" in repeated
         _plan_page(
             workflow,
@@ -372,10 +372,10 @@ class TestProfiledWorkflows:
         )
         with pytest.raises(Exception, match="write_page replaces"):
             workflow.tools["write_page"].callable(
-                name="big-chapter",
-                category="source",
+                page_id="big-chapter",
+                page_kind="source",
                 summary="Large prior chapter.",
-                content="Accidental rewrite from preview.",
+                page_body="Accidental rewrite from preview.",
             )
 
     def test_pdf_integrate_writes_only_hub_page(self, store: WikiStore) -> None:
@@ -391,7 +391,7 @@ class TestProfiledWorkflows:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
         )
         _plan_page(
             workflow,
@@ -399,13 +399,13 @@ class TestProfiledWorkflows:
             summary="Hub page.",
             action="enrich",
         )
-        workflow.tools["read_page"].callable(name="sword-world-rpg-complete-edition")
+        workflow.tools["read_page"].callable(page_id="sword-world-rpg-complete-edition")
 
         result = workflow.tools["write_page"].callable(
-            name="sword-world-rpg-complete-edition-chapter-13-2-1-humans",
-            category="source",
+            page_id="sword-world-rpg-complete-edition-chapter-13-2-1-humans",
+            page_kind="source",
             summary="Hub page.",
-            content="Hub body.",
+            page_body="Hub body.",
         )
 
         assert "sword-world-rpg-complete-edition" in result
@@ -417,12 +417,12 @@ class TestProfiledWorkflows:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
         )
         _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Hub summary.")
 
         workflow.tools["write_page"].callable(
-            summary="Hub summary.\nparameter=content>\n# Hub\n\n[[linked-page]]",
+            summary="Hub summary.\nparameter=page_body>\n# Hub\n\n[[linked-page]]",
             **{" sources": '["Sword World RPG - Complete Edition.pdf"]'},
         )
 
@@ -435,7 +435,7 @@ class TestProfiledWorkflows:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
             required_link_targets=("alpha", "beta", "gamma"),
             min_required_links=2,
         )
@@ -443,7 +443,7 @@ class TestProfiledWorkflows:
 
         workflow.tools["write_page"].callable(
             summary="Sparse hub.",
-            content="Only links [[alpha]].",
+            page_body="Only links [[alpha]].",
         )
 
         hub = store.read_page("sword-world-rpg-complete-edition")
@@ -455,7 +455,7 @@ class TestProfiledWorkflows:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
-            source_path="Sword World RPG - Complete Edition.pdf",
+            source_locator="Sword World RPG - Complete Edition.pdf",
             required_link_targets=("alpha", "beta", "gamma"),
             min_required_links=2,
         )
@@ -463,7 +463,7 @@ class TestProfiledWorkflows:
 
         workflow.tools["write_page"].callable(
             summary="Linked hub.",
-            content="Links [[alpha]] and [[beta]].",
+            page_body="Links [[alpha]] and [[beta]].",
         )
 
         hub = store.read_page("sword-world-rpg-complete-edition")
@@ -479,10 +479,10 @@ class TestProfiledWorkflows:
         )
 
         workflow.tools["write_page"].callable(
-            name="sword-world-rpg-complete-edition-test",
-            category="source",
+            page_id="sword-world-rpg-complete-edition-test",
+            page_kind="source",
             summary="Test source.",
-            content="Body.",
+            page_body="Body.",
             sources="[Sword World RPG](raw/Sword World RPG - Complete Edition.pdf)",
         )
 

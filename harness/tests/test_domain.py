@@ -177,7 +177,7 @@ class TestIngestRoutePlans:
             SourceBundle(raw_sources=())
 
     def test_valid_route_plan_is_accepted_and_authorizes_page_write(self) -> None:
-        state = IngestRoutePlanState(IngestRouteContext(source_path="moon.md", scope="source"))
+        state = IngestRoutePlanState(IngestRouteContext(source_locator="moon.md", scope="source"))
         plan = _route_plan("moon")
 
         summary = state.accept(plan)
@@ -191,7 +191,9 @@ class TestIngestRoutePlans:
             _planned_page("moon", page_kind="article")
 
     def test_route_plan_must_match_run_context(self) -> None:
-        context = IngestRouteContext(source_path="moon.md", scope="source", profile_ids=("rules",))
+        context = IngestRouteContext(
+            source_locator="moon.md", scope="source", profile_ids=("rules",)
+        )
         plan = _route_plan("moon", profile_ids=())
 
         with pytest.raises(IngestRoutePlanError, match="profile_ids"):
@@ -200,7 +202,7 @@ class TestIngestRoutePlans:
     def test_route_plan_rejects_duplicate_page_ids(self) -> None:
         page = _planned_page("moon")
         plan = IngestRoutePlan(
-            source_path="moon.md",
+            source_locator="moon.md",
             scope="source",
             profile_ids=(),
             planned_pages=(page, page),
@@ -287,7 +289,7 @@ def _route_plan(
     gaps: tuple[RouteGap, ...] = (),
 ) -> IngestRoutePlan:
     return IngestRoutePlan(
-        source_path="moon.md",
+        source_locator="moon.md",
         scope="source",
         profile_ids=profile_ids,
         planned_pages=(_planned_page(page_id),),
@@ -557,7 +559,7 @@ class TestLinks:
             "beta": "no links here",
             "gamma": "links to [[alpha]]",
         }
-        findings = compute_findings(pages, index_names={"alpha", "beta", "zombie"})
+        findings = compute_findings(pages, index_page_ids={"alpha", "beta", "zombie"})
         assert findings.broken_links == {"alpha": ("ghost",)}
         assert findings.orphan_pages == ("gamma",)
         assert findings.missing_from_index == ("gamma",)
@@ -567,11 +569,11 @@ class TestLinks:
 
     def test_clean_wiki_is_clean(self) -> None:
         pages = {"alpha": "see [[beta]]", "beta": "see [[alpha]]"}
-        findings = compute_findings(pages, index_names={"alpha", "beta"})
+        findings = compute_findings(pages, index_page_ids={"alpha", "beta"})
         assert findings.is_clean
 
     def test_single_page_is_not_an_orphan(self) -> None:
-        findings = compute_findings({"only": "text"}, index_names={"only"})
+        findings = compute_findings({"only": "text"}, index_page_ids={"only"})
         assert findings.orphan_pages == ()
 
     def test_exempt_pages_do_not_create_graph_findings_or_inbound_credit(self) -> None:
@@ -580,7 +582,7 @@ class TestLinks:
                 "alpha": "No links.",
                 "wiki-health": "Report mentions [[alpha]] and [[ghost]].",
             },
-            index_names={"alpha", "wiki-health"},
+            index_page_ids={"alpha", "wiki-health"},
             exempt_from_orphans=frozenset({"wiki-health"}),
         )
         assert findings.broken_links == {}
