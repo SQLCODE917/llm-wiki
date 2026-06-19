@@ -1,308 +1,205 @@
-# Domain Object Vocabulary
+# M5-Wiki Adoption Deliverables
 
 ## Context & Problem
 
-The harness has useful domain objects, but future features still introduce
-important LLM-Wiki concepts as loosely shaped payloads, ad hoc dictionaries, or
-near-synonym terms. That makes TDDs, prompts, tests, reports, and code drift away
-from shared LLM-Wiki meaning. This TDD establishes a canonical domain object
-vocabulary so future feature work names first-level domain objects and
-second-level domain objects before crossing code, tool, persistence, or report
-boundaries.
+Glossary:
 
-This serves `docs/llm-wiki.md` by making the pattern's raw source layer, wiki
-layer, schema layer, and operations explicit in code and design language. Raw
-sources remain immutable, the wiki remains the compiled knowledge layer, and the
-harness gains stable names for the bookkeeping that lets knowledge compound.
+| Term | Meaning |
+|---|---|
+| `our wiki` | This repository. |
+| `m5-wiki` | The repository at `~/gits/llm-wiki-m5-24gb`. |
+| `shared harness` | Domain and workflow code that both repos can port with runtime-only changes. |
+| `generated state` | `wiki/`, `index.md`, `log.md`, and disposable ingest cache. |
+| `adoption TDD` | One independently shippable TDD listed by this document. |
+| `DomainTerm` | Exact name of one domain concept. |
+| `runtime profile` | Machine-specific model setup outside shared domain code. |
 
-Classification reflects current architectural role, not eternal ontology. A term may move between deferred, second-level, and first-level status in a later TDD if its lifecycle changes.
-Domain objects validate context-free local invariants. Domain services validate rules that require context, stores, profiles, schema documents, or multiple domain objects.
-Canonical code owner means the module where the term's domain object or primary domain rules are defined. Boundary adapters, persistence models, and reports may use the term but do not own it.
-Boundary DTOs and persistence models must map into domain objects before domain rules run. Pure transport, logging, or pass-through rendering may remain DTO-shaped when no domain rule is applied.
+Our wiki now treats generated state as disposable test data. The old domain
+object vocabulary TDD was too small for the new goal. This document splits
+adoption of m5-wiki's strongest domain and ingest features into separate TDDs.
+The split keeps each deliverable small while guiding both repos toward a shared
+harness.
 
 ## Goals
 
-- Create one canonical domain object vocabulary for LLM-Wiki concepts.
-- Define the difference between a first-level domain object, second-level
-  domain object, boundary DTO, persistence model, and view model.
-- Require future TDDs to reuse existing domain terms or define new domain terms.
-- Classify existing high-value LLM-Wiki concepts into first-level domain objects
-  and second-level domain objects.
-- Make the adoption rule incremental: new features and touched code use domain
-  objects, while unrelated working code is not churned.
-- Give implementers finite checks for terminology drift and object-boundary
-  drift.
+- Replace the vocabulary-only TDD with an implementation split.
+- Adopt m5-wiki domain object boundaries.
+- Adopt m5-wiki domain language enforcement.
+- Adopt m5-wiki global ingest planning.
+- Adopt m5-wiki planned write and page body contracts.
+- Adopt m5-wiki source summary coverage.
+- Preserve our wiki evidence, audit, maintenance, graph, and runtime strengths.
+- Keep code portable between our wiki and m5-wiki.
 
 ## Non-Goals & Forbidden Approaches
 
 Non-goals:
 
-- No mass refactor of the whole harness in this TDD.
-- No renaming every existing class, function, file, test, or markdown heading.
-- No new runtime workflow behavior.
-- No schema migration for existing wiki pages.
-- No generated ORM, universal base class, or reflection registry.
-- No replacement for Pydantic tool parameters, CLI args, JSON payloads, or forge
-  tool schemas.
+- This document does not implement code changes.
+- This document does not define a permanent wiki schema.
+- This document does not preserve generated state.
+- This document does not design m5 hardware setup.
 
 Forbidden approaches:
 
-- Do not convert every dictionary or dataclass into a domain object.
-- Do not treat boundary DTOs as domain objects.
-- Do not let transport or persistence field names define domain terms.
-- Do not introduce near-synonyms for established domain terms.
-- Do not move side effects into domain objects.
-- Do not make one generic `Record`, `Item`, `Entity`, `Node`, or `Object`
-  abstraction stand in for specific LLM-Wiki meaning.
-- Do not refactor unrelated code only to satisfy vocabulary aesthetics.
+- Do not combine all adoption work into one large TDD.
+- Do not keep compatibility branches for old generated state.
+- Do not use our current flat schema as a permanent constraint.
+- Do not fork shared domain code for the 4090 runtime.
+- Do not fork shared domain code for the M5 runtime.
 
 ## Requirements
 
-- `docs/domain-vocabulary.md` must define all domain terms introduced by this TDD.
-- `docs/domain-vocabulary.md` must classify each listed term as exactly one of:
-  first-level domain object, second-level domain object, boundary DTO,
-  persistence model, or view model.
-- `docs/domain-vocabulary.md` must identify the canonical code owner for each
-  existing first-level domain object and second-level domain object.
-  Canonical code owner means the module where the domain object or its primary domain rules are defined.
-  Persistence and boundary adapters may reference it but do not own the term.
-- `docs/domain-vocabulary.md` must identify deferred domain objects.
-- `docs/writing-tdds.md` must reference `docs/domain-vocabulary.md` from
-  Terminology Discipline.
-- Future TDDs must reuse a domain term from `docs/domain-vocabulary.md` or define
-  the new domain term in their Data Model section.
-- Future TDDs must classify every new cross-boundary shape.
-- Domain objects must live in `harness/src/llmwiki/domain/` unless a later TDD
-  defines a more specific domain package boundary.
-- Boundary DTOs and persistence models must map explicitly into domain objects before domain rules run.
-- Pure transport, logging, or pass-through display may remain DTO-shaped if no domain rule is applied.
-- View models must be derived from domain objects or deterministic findings.
-- Domain objects must validate their own local invariants at construction time.
-- Domain objects validate context-free local invariants. Domain services validate context-dependent rules.
-- Orchestrators must own side effects and arrange domain services.
-- Tests for new behavior must use domain terms in test names and assertions.
+- Each adoption TDD must stay under 300 lines.
+- Each adoption TDD must use m5-wiki names when a matching concept exists.
+- Each adoption TDD must list m5-wiki reference files.
+- Each adoption TDD must preserve `raw/` immutability.
+- Each adoption TDD must treat generated state as disposable.
+- Each adoption TDD must isolate runtime-specific behavior outside domain code.
+- Each adoption TDD must define acceptance criteria that can become tests.
+- Each adoption TDD must name portability checks for our wiki and m5-wiki.
 
 ## Invariants
 
 - `raw/` remains immutable.
-- The wiki remains the compiled knowledge layer written through harness tools.
-- `SCHEMA.md`, `index.md`, and `log.md` keep their current ownership boundaries.
-- Existing successful workflows must keep working during incremental adoption.
-- The domain object vocabulary does not make planning artifacts source evidence.
-- The domain object vocabulary does not create new wiki page categories.
-- The domain object vocabulary does not force folder routing or nested wiki paths.
-- The canonical term for a `write_page` call that creates or replaces one wiki
-  page remains `page write`.
+- `SCHEMA.md` remains a wiki configuration input until a later TDD replaces it.
+- `wiki/` remains generated knowledge.
+- `index.md` remains deterministic navigation.
+- `log.md` remains operation history.
+- Runtime profiles remain outside shared domain code.
+- m5-wiki remains the reference for adopted domain names.
 
 ## Proposed Architecture
 
+The adoption program creates five shippable TDDs. Each TDD moves one boundary
+toward the shared harness.
+
 ```
-+--------------------+       +--------------------------+
-| feature TDD        |------>| domain object vocabulary |
-+--------------------+       +------------+-------------+
-                                           |
-                                           v
-                              +------------+-------------+
-                              | domain layer             |
-                              +------------+-------------+
-                                           |
-              +----------------------------+----------------------------+
-              v                                                         v
- +------------+-------------+                             +-------------+------------+
- | boundary adapters        |                             | reports and prompts      |
- +------------+-------------+                             +-------------+------------+
++-------------------+     +------------------+
+| m5-wiki reference |---->| adoption TDDs    |
++-------------------+     +--------+---------+
+                                  |
+                                  v
++-------------------+     +--------+---------+
+| our wiki audits   |<----| shared harness   |
++-------------------+     +------------------+
 ```
 
-`feature TDD` introduces or reuses domain terms before implementation.
-
-`domain object vocabulary` is the canonical glossary and classification table.
-
-`domain layer` contains first-level domain objects, second-level domain objects,
-and domain services.
-
-`boundary adapters` map boundary DTOs and persistence models into domain objects.
-
-`reports and prompts` render domain objects and view models with canonical terms.
+`m5-wiki reference` supplies proven domain names and boundary shapes.
+`adoption TDDs` define shippable implementation slices.
+`shared harness` is the target code surface for both repos.
+`our wiki audits` supply evidence, graph, maintenance, and runtime features.
 
 ## Key Interactions
 
-### New Feature Defines a Domain Term
+### Adopt A Deliverable
 
 ```
-Engineer -> domain object vocabulary: check existing domain term
-Engineer -> feature TDD: reuse domain term or define new domain term
-Reviewer -> feature TDD: verify term classification
-Implementer -> domain layer: add or reuse domain object
+adoption TDD -> shared harness: constrains one boundary
+tests -> shared harness: enforce contract
+generated state -> rebuild: verify outcome
 ```
 
-### Boundary DTO Enters a Workflow
+### Share Code Back
 
 ```
-Model -> boundary DTO: tool payload
-Boundary adapter -> domain object: explicit mapping
-Domain object -> domain object: local invariant validation
-Workflow -> store: side effect after domain validation
-```
-
-### Persistence Model Feeds a Report
-
-```
-Store -> persistence model: read stored artifact
-Boundary adapter -> domain object: explicit mapping
-Domain service -> view model: compute report state
-Report -> view model: render canonical terms
+Shared harness -> our wiki: run with 4090 profile
+Shared harness -> m5-wiki: run with M5 profile
+Tests -> both repos: enforce same domain names
 ```
 
 ## Data Model
 
-`domain object vocabulary` is the canonical set of named LLM-Wiki concepts and
-their classifications.
+| Deliverable | TDD |
+|---|---|
+| Object boundaries | `docs/2026-06-19-shared-object-boundaries.md` |
+| Domain language | `docs/2026-06-19-domain-language-consistency.md` |
+| Global planning | `docs/2026-06-19-global-ingest-planning.md` |
+| Planned writes | `docs/2026-06-19-planned-write-page-body-contracts.md` |
+| Source coverage | `docs/2026-06-19-source-summary-coverage.md` |
 
-`first-level domain object` is a durable LLM-Wiki noun that can anchor a
-feature, workflow, or lifecycle.
+Adoption order:
 
-Initial first-level domain objects marked `Exists`: `RawSource`, `SourceBundle`,
-`WikiPage`, `WikiStructure`, `IngestRun`, `WikiGraph`, `CandidateBacklog`.
+- Implement object boundaries first.
+- Implement domain language second.
+- Implement global planning third.
+- Implement planned writes and page body contracts fourth.
+- Implement source summary coverage fifth.
 
-Initial first-level domain objects marked `Existing concept`: `ChatSession`,
-`PdfIngestManifest`.
+Portability targets:
 
-Initial first-level domain objects marked `Deferred`: `SchemaDocument`,
-`QueryRun`, `LintRun`, `MaintenanceRun`.
-
-`second-level domain object` is a meaningful part of a first-level domain object
-or domain service.
-
-Initial second-level domain objects marked `Exists`: `PageMetadata`,
-`IngestRoutePlan`, `PlannedPage`, `RouteGap`, `GroundingVerdict`,
-`ContradictionFinding`, `CandidateRecord`.
-
-Initial second-level domain objects marked `Existing concept`: `Citation`,
-`EvidenceLocator`, `SourceExcerpt`, `LintFinding`, `SalienceSignal`.
-
-Initial second-level domain objects marked `Deferred`: `PageLink`, `PageWrite`.
-
-`boundary DTO` is an inbound or outbound transport shape, such as CLI args,
-Pydantic tool parameters, or forge tool payloads.
-
-`persistence model` is an on-disk storage shape, such as JSON, JSONL, SQLite row,
-or PDF manifest data.
-
-`view model` is a rendered or render-ready shape for curator status, reports,
-prompts, transcripts, or CLI output.
+- Shared domain files use the same class names as m5-wiki.
+- Shared tests use the same assertion shape as m5-wiki.
+- Runtime adapters translate only model startup and client construction.
+- Our wiki audit modules consume shared domain objects.
 
 ## APIs / Interfaces
 
-`docs/domain-vocabulary.md` is the public design interface for domain terms. It
-must contain these headings: `Canonical Terms`, `Domain Object Inventory`,
-`Boundary Shape Inventory`, and `Adoption Rules`.
+`harness/src/llmwiki/domain/` is the shared domain interface.
 
-`docs/writing-tdds.md` must instruct TDD authors to consult
-`docs/domain-vocabulary.md` before defining new domain terms.
+`harness/src/llmwiki/workflows/tools.py` is the model tool interface.
 
-`harness/src/llmwiki/domain/` remains the code interface for domain objects and
-domain services.
+`harness/src/llmwiki/store/wiki_store.py` is the file boundary.
 
-`harness/tests/` remains the verification interface for domain object invariants,
-boundary DTO mapping, persistence model mapping, and view model rendering.
+`harness/tests/test_domain_language_consistency.py` is the static portability
+test interface.
 
 ## Behavior & Domain Rules
 
-Every cross-boundary shape has one classification.
+Rule: an adoption TDD owns one shippable boundary.
 
-Example: `PlanPagesParams` is a boundary DTO, `IngestRoutePlan` is a domain
-object, and `IngestRoutePlanRecord` is a persistence model. The boundary DTO does
-not enforce page write rules; the domain object and domain service do.
+Example: input `PageMetadata` refactor -> expected object-boundaries TDD owns
+the change.
 
-Every domain rule uses the canonical domain term.
+Example: input `PageBodyContract` validation -> expected planned-write TDD owns
+the change.
 
-Example: a test name says `test_page_write_requires_ingest_route_plan`; it does
-not say `test_wiki_write_requires_route`, because the canonical term is `page
-write`.
+Rule: generated state never blocks a clean contract.
 
-Every new domain object has local invariants.
+Example: input generated frontmatter uses `category` -> expected implementation
+rebuilds generated state with `page_kind`.
 
-Example: `PageMetadata` rejects an invalid page ID or page kind at construction
-time. A boundary DTO may accept raw text temporarily, but it must map into
-`PageMetadata` before page identity rules run.
-
-Ugliest edge case: a stored JSON record uses `page_kind`, a tool payload uses
-`category`, and a report says `page type`. Expected outcome: the boundary adapter
-maps both payload fields into the canonical domain term `page_kind`, and the
-report renders the canonical term or a documented human-facing label.
+Ugliest edge case: input old page parses only through a compatibility branch ->
+expected implementation deletes generated state and removes the branch.
 
 ## Acceptance Criteria
 
-Milestone 1: Canonical vocabulary
-
-- `docs/domain-vocabulary.md` exists and contains all required headings.
-- `docs/domain-vocabulary.md` defines first-level domain object, second-level
-  domain object, boundary DTO, persistence model, and view model.
-- `docs/domain-vocabulary.md` classifies every term listed in this TDD.
-- `docs/writing-tdds.md` references `docs/domain-vocabulary.md` in Terminology
-  Discipline.
-
-Milestone 2: Existing object audit
-
-- Every existing term marked `Exists` has a canonical code owner listed in
-  `docs/domain-vocabulary.md`.
-- Every existing term marked `Existing concept` has its current module or report
-  surface listed.
-- Every term marked `Deferred` has a trigger for when code should be introduced.
-
-Milestone 3: Adoption rules
-
-- `docs/domain-vocabulary.md` states that new features must reuse a domain term
-  or define a new domain term before implementation.
-- `docs/domain-vocabulary.md` states that boundary DTOs, persistence models, and
-  view models must map explicitly to domain objects before domain rules run.
-- At least one representative test checks that a boundary DTO maps into a domain
-  object before a domain rule runs.
-- A test proving a domain object rejects a local invariant violation, e.g. invalid PageMetadata.page_id.
-- A test proving a boundary DTO can contain raw/transport names but maps into canonical domain names before validation.
-- A doc/lint-ish test proving docs/domain-vocabulary.md contains required headings and classifications.
+- This document lists all five adoption TDDs.
+- Each listed TDD exists.
+- Each listed TDD is under 300 lines.
+- Each listed TDD names m5-wiki references.
+- Each listed TDD includes portability acceptance criteria.
+- No listed TDD requires legacy generated-state support.
 
 ## Cross-Cutting Concerns
 
-Observability: curator-facing reports should render canonical domain terms where
-they expose harness bookkeeping. Human-facing labels may differ only when the
-domain vocabulary records the label.
+Observability: adoption work must keep transcripts, run artifacts, and reports
+available after generated state rebuilds.
 
-Error handling: validation errors raised by domain objects and domain services
-must use canonical domain terms because forge feeds tool errors back to the
-model.
+Error handling: domain errors must use shared `DomainTerm` names so both repos
+can reuse tool retry behavior.
 
-Migration: adoption is incremental. A feature that touches an area must align
-that area's domain terms, but unrelated modules stay unchanged.
+Runtime: domain code must not import 4090, Ollama, M5, or llama-server setup.
 
 ## Reference Implementations
 
-- Domain object validation: `harness/src/llmwiki/domain/pages.py`.
-- Ingest route plan domain rules: `harness/src/llmwiki/domain/ingest_route_plan.py`.
-- Boundary DTO mapping: `harness/src/llmwiki/workflows/ingest_route_tools.py`.
-- Persistence model mapping: `harness/src/llmwiki/domain/ingest_route_history.py`.
-- Curator view model rendering: `harness/src/llmwiki/domain/maintenance.py`.
-- Existing TDD terminology discipline: `docs/2026-06-16-ingest-page-plans.md`.
+- m5 object boundaries: `~/gits/llm-wiki-m5-24gb/harness/src/llmwiki/domain/pages.py`.
+- m5 domain objects: `~/gits/llm-wiki-m5-24gb/harness/src/llmwiki/domain/objects.py`.
+- m5 planning: `~/gits/llm-wiki-m5-24gb/harness/src/llmwiki/domain/planning.py`.
+- m5 body contracts: `~/gits/llm-wiki-m5-24gb/harness/src/llmwiki/domain/page_body_contracts.py`.
+- our evidence gates: `harness/src/llmwiki/domain/evidence.py`.
+- our maintenance: `harness/src/llmwiki/domain/maintenance.py`.
 
 ## Alternatives Considered
 
-- Chosen: canonical vocabulary plus incremental adoption, because it guides
-  future work without destabilizing working flows.
-- Rejected: mass refactor, because it is not independently shippable and creates
-  unrelated churn.
-- Rejected: generated type registry, because LLM-Wiki meaning is semantic, not
-  reflection metadata.
-- Rejected: documentation-only glossary with no code ownership, because it would
-  not constrain future implementation.
+- Chosen: five adoption TDDs, because each boundary can ship alone.
+- Rejected: one large convergence TDD, because it exceeds the sizing gate.
+- Rejected: vocabulary-only adoption, because tests must enforce code language.
+- Rejected: compatibility-first adoption, because generated state is disposable.
 
 ## Halt Conditions
 
-- If implementation requires renaming more than one existing workflow operation,
-  stop and ask before proceeding.
-- If implementation changes wiki page schema or page categories, stop and ask
-  before proceeding.
-- If implementation changes raw source layout, stop and ask before proceeding.
-- If implementation would make boundary DTOs import domain services directly,
-  stop and ask before proceeding.
-- If the domain object inventory exceeds this TDD's listed terms, stop and split
-  the new terms into a follow-up TDD.
+- If one adoption TDD exceeds 300 lines, stop and split it.
+- If a change needs runtime-specific domain code, stop and split the runtime adapter.
+- If a change preserves old generated state, stop and remove the compatibility path.
+- If m5-wiki and our wiki need different domain class names, stop and choose one shared name.
