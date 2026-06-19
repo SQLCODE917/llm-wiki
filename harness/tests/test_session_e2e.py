@@ -9,6 +9,7 @@ import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import TextResponse, ToolCall
+from helpers import wiki_page
 
 from llmwiki.config import WikiPaths
 from llmwiki.domain.contradictions import select_contradiction_candidates
@@ -21,7 +22,6 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanState,
     PlannedPage,
 )
-from llmwiki.domain.pages import WikiPage
 from llmwiki.domain.semantic_lint import SemanticLintSelection, select_semantic_lint_candidates
 from llmwiki.runtime.session import Session
 from llmwiki.store import PageNotFoundError, WikiStore, WikiStoreError
@@ -330,7 +330,7 @@ class TestIngest:
         # read this run must fail with a corrective error (open question #10),
         # and succeed after read_page.
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="moon",
                 category="source",
                 summary="Original.",
@@ -437,7 +437,7 @@ class TestStrictEvidenceWrites:
                 profile_ids=(),
                 planned_pages=(
                     PlannedPage(
-                        metadata=WikiPage(
+                        metadata=wiki_page(
                             name="moon",
                             category="source",
                             summary="Lunar notes.",
@@ -531,7 +531,7 @@ class TestStrictEvidenceWrites:
 class TestQuery:
     async def test_search_then_respond_and_logged(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="moon",
                 category="source",
                 summary="Lunar notes.",
@@ -552,7 +552,7 @@ class TestQuery:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="moon",
                 category="source",
                 summary="Lunar notes.",
@@ -573,7 +573,7 @@ class TestQuery:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="moon",
                 category="source",
                 summary="Lunar notes.",
@@ -604,7 +604,7 @@ class TestLint:
 
     async def test_lint_files_report_page_and_log(self, store: WikiStore, paths: WikiPaths) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -637,7 +637,7 @@ class TestLint:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -646,7 +646,7 @@ class TestLint:
             )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="beta",
                 category="concept",
                 summary="B.",
@@ -677,7 +677,7 @@ class TestLint:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -686,7 +686,7 @@ class TestLint:
             )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="beta",
                 category="concept",
                 summary="B.",
@@ -695,7 +695,7 @@ class TestLint:
             )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="gamma",
                 category="source",
                 summary="G.",
@@ -725,13 +725,25 @@ class TestLint:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(name="alpha", category="concept", summary="A.", body="[[beta]]", updated=TODAY)
+            wiki_page(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="[[beta]]",
+                updated=TODAY,
+            )
         )
         store.write_page(
-            WikiPage(name="beta", category="concept", summary="B.", body="[[alpha]]", updated=TODAY)
+            wiki_page(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="[[alpha]]",
+                updated=TODAY,
+            )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="gamma",
                 category="concept",
                 summary="G.",
@@ -753,7 +765,7 @@ class TestLint:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -787,7 +799,7 @@ class TestLint:
     ) -> None:
         (paths.raw_dir / "article.md").write_text("Actual source line.", encoding="utf-8")
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -822,13 +834,25 @@ class TestLint:
     ) -> None:
         # A prior lint filed wiki-health; the next lint must not flag it.
         store.write_page(
-            WikiPage(name="alpha", category="concept", summary="A.", body="[[beta]]", updated=TODAY)
+            wiki_page(
+                name="alpha",
+                category="concept",
+                summary="A.",
+                body="[[beta]]",
+                updated=TODAY,
+            )
         )
         store.write_page(
-            WikiPage(name="beta", category="concept", summary="B.", body="[[alpha]]", updated=TODAY)
+            wiki_page(
+                name="beta",
+                category="concept",
+                summary="B.",
+                body="[[alpha]]",
+                updated=TODAY,
+            )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="wiki-health",
                 category="synthesis",
                 summary="Old report.",
@@ -852,7 +876,7 @@ class TestContradictions:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -861,7 +885,7 @@ class TestContradictions:
             )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="beta",
                 category="concept",
                 summary="B.",
@@ -924,7 +948,7 @@ class TestContradictions:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(name="alpha", category="concept", summary="A.", body="Claim.", updated=TODAY)
+            wiki_page(name="alpha", category="concept", summary="A.", body="Claim.", updated=TODAY)
         )
         selection = select_contradiction_candidates(
             {
@@ -964,7 +988,7 @@ class TestGrounding:
             "Array destructuring binds positions to names.", encoding="utf-8"
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="arrays",
                 category="concept",
                 summary="Array notes.",
@@ -1027,7 +1051,7 @@ class TestGrounding:
     ) -> None:
         (paths.raw_dir / "article.md").write_text("A supported fact.", encoding="utf-8")
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -1079,7 +1103,7 @@ class TestGrounding:
     ) -> None:
         (paths.raw_dir / "article.md").write_text("A supported fact.", encoding="utf-8")
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -1131,7 +1155,7 @@ class TestGrounding:
     ) -> None:
         (paths.raw_dir / "article.md").write_text("Actual source line.", encoding="utf-8")
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -1158,7 +1182,7 @@ class TestSemanticLint:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -1168,7 +1192,7 @@ class TestSemanticLint:
             )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="beta",
                 category="concept",
                 summary="B.",
@@ -1226,7 +1250,7 @@ class TestSemanticLint:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="alpha",
                 category="concept",
                 summary="A.",
@@ -1236,7 +1260,7 @@ class TestSemanticLint:
             )
         )
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="beta",
                 category="concept",
                 summary="B.",

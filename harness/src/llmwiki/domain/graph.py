@@ -97,7 +97,7 @@ def build_wiki_graph(page_texts: Mapping[str, str], *, generated_date: str) -> W
         links = tuple(sorted(extract_links(text)))
         try:
             page = parse_page(text)
-            category = page.category
+            category = page.page_kind
             summary = page.summary
             sources = page.sources
         except PageError:

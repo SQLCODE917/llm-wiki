@@ -28,14 +28,6 @@ class RawSource:
     def from_locator(cls, source_locator: str) -> RawSource:
         return cls(source_locator=source_locator, source_format=_source_format(source_locator))
 
-    @classmethod
-    def from_source_path(cls, source_path: str) -> RawSource:
-        return cls.from_locator(source_path)
-
-    @property
-    def source_path(self) -> str:
-        return self.source_locator
-
 
 @dataclass(frozen=True)
 class SourceBundle:

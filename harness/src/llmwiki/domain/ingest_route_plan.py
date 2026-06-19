@@ -6,11 +6,9 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 from llmwiki.domain.naming import singular_plural_collision
-from llmwiki.domain.objects import RawSource, SourceBundle
+from llmwiki.domain.objects import IngestRun, RawSource, SourceBundle
 from llmwiki.domain.pages import (
-    LOCAL_FLAT_STRUCTURE,
     PageMetadata,
-    WikiStructure,
     validate_page_id,
 )
 
@@ -124,15 +122,6 @@ class IngestRouteContext:
     existing_pages: frozenset[str] = field(default_factory=frozenset)
     new_page_prefix: str | None = None
     prevent_singular_plural_siblings: bool = False
-
-
-@dataclass(frozen=True)
-class IngestRun:
-    source_bundle: SourceBundle
-    wiki_structure: WikiStructure = LOCAL_FLAT_STRUCTURE
-    profile_ids: tuple[str, ...] = ()
-    route_plan_summary: IngestRoutePlanSummary = field(default_factory=IngestRoutePlanSummary)
-    page_writes: tuple[str, ...] = ()
 
 
 @dataclass

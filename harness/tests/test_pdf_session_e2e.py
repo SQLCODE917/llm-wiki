@@ -7,9 +7,9 @@ import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
+from helpers import wiki_page
 
 from llmwiki.config import WikiPaths
-from llmwiki.domain.pages import WikiPage
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
 from llmwiki.pdf.pipeline import ExtractionResult
@@ -197,7 +197,7 @@ class TestPdfIngest:
         # A pre-existing concept page that both chunk pages link to — it must
         # appear ranked in the computed salience block handed to integrate.
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="iterable",
                 category="concept",
                 summary="Core protocol.",
@@ -283,7 +283,7 @@ class TestPdfIngest:
         chunks_dir = extraction.cache_dir / "chunks"
         (chunks_dir / "0001.md").write_text("iterable " * 12, encoding="utf-8")
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="iterable",
                 category="concept",
                 summary="Core protocol.",

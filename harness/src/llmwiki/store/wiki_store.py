@@ -23,7 +23,6 @@ from llmwiki.domain.citations import SourceInventory
 from llmwiki.domain.index import (
     empty_index,
     index_page_ids,
-    index_page_names,
     remove_index_entry,
     upsert_index_entry,
 )
@@ -87,9 +86,6 @@ class WikiStore:
                 f"No RawSource at raw/{source_locator}. Available: {available}."
             )
         return path
-
-    def source_path(self, source_locator: str) -> Path:
-        return self.raw_source_path(source_locator)
 
     def raw_source(self, source_locator: str) -> RawSource:
         self.raw_source_path(source_locator)
@@ -307,9 +303,6 @@ class WikiStore:
 
     def read_index(self) -> str:
         return self._paths.index_path.read_text(encoding="utf-8")
-
-    def index_names(self) -> set[str]:
-        return index_page_names(self.read_index())
 
     def index_page_ids(self) -> set[str]:
         return index_page_ids(self.read_index())

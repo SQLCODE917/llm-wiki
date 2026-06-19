@@ -31,7 +31,7 @@ from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradictio
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
-from llmwiki.domain.index import index_page_names
+from llmwiki.domain.index import index_page_ids
 from llmwiki.domain.ingest_profiles import (
     IngestProfile,
     load_ingest_profiles,
@@ -467,7 +467,7 @@ def _curator_report(
     log_text = paths.log_path.read_text(encoding="utf-8") if log_exists else ""
     link_findings = compute_findings(
         page_texts,
-        index_page_names(index_text),
+        index_page_ids(index_text),
         exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
     )
     candidate_backlog = store.read_candidate_backlog()
@@ -483,7 +483,7 @@ def _curator_report(
     inventory = store.source_inventory() if evidence_policy.enabled else None
     status = build_curator_status(
         page_texts=page_texts,
-        index_names=index_page_names(index_text),
+        index_names=index_page_ids(index_text),
         raw_source_count=len(store.list_sources()),
         index_exists=index_exists,
         log_exists=log_exists,

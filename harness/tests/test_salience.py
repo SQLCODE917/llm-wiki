@@ -1,13 +1,21 @@
 """Deterministic salience v2: scoping, hub exclusion, mentions, ranking,
 and harness-owned key-list reconciliation."""
 
-from llmwiki.domain.pages import WikiPage, render_page
+from llmwiki.domain.pages import PageMetadata, WikiPage, render_page
 from llmwiki.domain.salience import compute_salience, reconcile_key_lists
 
 
 def _page(name: str, category: str, body: str, sources: tuple[str, ...] = ()) -> str:
     return render_page(
-        WikiPage(name=name, category=category, summary=f"About {name}.", body=body, sources=sources)
+        WikiPage(
+            page_metadata=PageMetadata(
+                page_id=name,
+                page_kind=category,
+                summary=f"About {name}.",
+                sources=sources,
+            ),
+            page_body=body,
+        )
     )
 
 

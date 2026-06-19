@@ -18,17 +18,19 @@ _ENTRY_RE = re.compile(r"^- \[\[(?P<page_id>[a-z0-9-]+)\]\] — (?P<summary>.*)$
 
 @dataclass(frozen=True)
 class IndexEntry:
-    page_id: str
-    page_kind: str
-    summary: str
+    page_metadata: PageMetadata
 
     @property
-    def name(self) -> str:
-        return self.page_id
+    def page_id(self) -> str:
+        return self.page_metadata.page_id
 
     @property
-    def category(self) -> str:
-        return self.page_kind
+    def page_kind(self) -> str:
+        return self.page_metadata.page_kind
+
+    @property
+    def summary(self) -> str:
+        return self.page_metadata.summary
 
 
 def _entry_line(metadata: PageMetadata) -> str:
@@ -53,22 +55,17 @@ def parse_index(text: str) -> list[IndexEntry]:
             continue
         match = _ENTRY_RE.match(line.strip())
         if match and page_kind is not None:
-            entries.append(
-                IndexEntry(
-                    page_id=match["page_id"],
-                    page_kind=page_kind,
-                    summary=match["summary"],
-                )
+            metadata = PageMetadata(
+                page_id=match["page_id"],
+                page_kind=page_kind,
+                summary=match["summary"],
             )
+            entries.append(IndexEntry(page_metadata=metadata))
     return entries
 
 
 def index_page_ids(text: str) -> set[str]:
     return {entry.page_id for entry in parse_index(text)}
-
-
-def index_page_names(text: str) -> set[str]:
-    return index_page_ids(text)
 
 
 def upsert_index_entry(text: str, metadata: PageMetadata) -> str:

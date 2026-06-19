@@ -5,7 +5,6 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 from pathlib import PurePosixPath
-from typing import Any
 
 from llmwiki.domain.schema import PAGE_KINDS
 
@@ -134,32 +133,12 @@ LOCAL_FLAT_STRUCTURE = WikiStructure(
 )
 
 
-@dataclass(frozen=True, init=False)
+@dataclass(frozen=True)
 class WikiPage:
     """A wiki page is one PageMetadata object plus one page_body."""
 
     page_metadata: PageMetadata
     page_body: str
-
-    def __init__(self, *args: Any, **kwargs: Any) -> None:
-        if args and isinstance(args[0], PageMetadata):
-            page_metadata = args[0]
-            page_body = args[1] if len(args) > 1 else kwargs.pop("page_body", "")
-            if len(args) > 2:
-                raise TypeError("WikiPage accepts PageMetadata and page_body only.")
-        elif "page_metadata" in kwargs:
-            page_metadata = kwargs.pop("page_metadata")
-            page_body = kwargs.pop("page_body", "")
-        else:
-            page_metadata, page_body = _legacy_page_args(*args, **kwargs)
-            kwargs = {}
-        if kwargs:
-            unexpected = ", ".join(sorted(kwargs))
-            raise TypeError(f"Unexpected WikiPage fields: {unexpected}.")
-        if not isinstance(page_metadata, PageMetadata):
-            raise TypeError("WikiPage requires PageMetadata.")
-        object.__setattr__(self, "page_metadata", page_metadata)
-        object.__setattr__(self, "page_body", str(page_body))
 
     @property
     def page_id(self) -> str:
@@ -180,18 +159,6 @@ class WikiPage:
     @property
     def updated(self) -> str:
         return self.page_metadata.updated
-
-    @property
-    def name(self) -> str:
-        return self.page_id
-
-    @property
-    def category(self) -> str:
-        return self.page_kind
-
-    @property
-    def body(self) -> str:
-        return self.page_body
 
     def page_path(self, structure: WikiStructure = LOCAL_FLAT_STRUCTURE) -> PurePosixPath:
         return structure.render_path(self.page_metadata)
@@ -269,24 +236,6 @@ def parse_page(text: str) -> WikiPage:
         aliases=_split_frontmatter_list(fields.get("aliases", "")),
     )
     return WikiPage(page_metadata=metadata, page_body="\n".join(lines[body_start:]).strip())
-
-
-def _legacy_page_args(*args: Any, **kwargs: Any) -> tuple[PageMetadata, str]:
-    field_names = ("name", "category", "summary", "body")
-    values = dict(zip(field_names, args, strict=False))
-    if len(args) > len(field_names):
-        raise TypeError("Legacy WikiPage accepts name, category, summary, and body.")
-    for field_name in field_names:
-        if field_name in kwargs:
-            values[field_name] = kwargs.pop(field_name)
-    metadata = PageMetadata(
-        page_id=str(values.get("name", "")),
-        page_kind=str(values.get("category", "")),
-        summary=str(values.get("summary", "")),
-        sources=tuple(kwargs.pop("sources", ())),
-        updated=str(kwargs.pop("updated", "")),
-    )
-    return metadata, str(values.get("body", ""))
 
 
 def _split_frontmatter_list(value: str) -> tuple[str, ...]:

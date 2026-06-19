@@ -31,11 +31,11 @@ def link_orphan_tool(store: WikiStore, today: str) -> ToolDef:
         source = parse_page(store.read_page(params.from_page))
         store.read_page(params.orphan_page)  # verifies the target exists before writing.
         link = f"[[{params.orphan_page}]]"
-        if link in source.body:
+        if link in source.page_body:
             return f"wiki/{params.from_page}.md already links to {link}; no change needed."
         findings = compute_findings(
             store.page_texts(),
-            store.index_names(),
+            store.index_page_ids(),
             exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
         )
         if params.orphan_page not in findings.orphan_pages:

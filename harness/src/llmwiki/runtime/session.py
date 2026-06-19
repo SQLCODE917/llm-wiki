@@ -255,7 +255,7 @@ class Session:
     ) -> OperationResult:
         if self.extract_pdf is None:
             raise RuntimeError("Session has no PDF extractor wired (extract_pdf).")
-        result = self.extract_pdf(self.store.source_path(source_path), source_path, reextract)
+        result = self.extract_pdf(self.store.raw_source_path(source_path), source_path, reextract)
         manifest, total = result.manifest, len(result.manifest.chunks)
         if reintegrate and manifest.pending:
             raise PdfError(
@@ -570,7 +570,7 @@ class Session:
         return LintSnapshot(
             link_findings=compute_findings(
                 page_texts,
-                self.store.index_names(),
+                self.store.index_page_ids(),
                 exempt_from_orphans=ORPHAN_EXEMPT_PAGES,
             ),
             evidence_report=evidence_policy.lint_pages(

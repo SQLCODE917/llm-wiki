@@ -177,7 +177,7 @@ def compute_salience(
 
     def eligible(name: str) -> bool:
         page = parsed.get(name)
-        if page is None or page.category not in _RANKED_CATEGORIES:
+        if page is None or page.page_kind not in _RANKED_CATEGORIES:
             return False
         if name in _EXCLUDED_PAGES:
             return False
@@ -187,7 +187,7 @@ def compute_salience(
         (
             SalienceEntry(
                 name=name,
-                category=parsed[name].category,
+                category=parsed[name].page_kind,
                 inbound_links=inbound[name],
                 ingest_writes=writes.get(name, 0),
                 source_mentions=_mention_count(name, text_lower),

@@ -2,6 +2,7 @@ from pathlib import Path
 from typing import Any
 
 import pytest
+from helpers import wiki_page
 
 from llmwiki.config import ConfigError
 from llmwiki.domain.ingest_profiles import (
@@ -13,7 +14,6 @@ from llmwiki.domain.ingest_profiles import (
     required_new_page_prefix,
     select_ingest_profiles,
 )
-from llmwiki.domain.pages import WikiPage
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.definitions import build_ingest_workflow
@@ -263,7 +263,7 @@ class TestProfiledWorkflows:
 
     def test_profile_naming_guard_blocks_singular_plural_siblings(self, store: WikiStore) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="sword-world-rpg-complete-edition-wraiths",
                 category="entity",
                 summary="Wraith monster entry.",
@@ -316,7 +316,7 @@ class TestProfiledWorkflows:
         self, store: WikiStore
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="role-playing-game",
                 category="concept",
                 summary="Existing generic page.",
@@ -349,7 +349,7 @@ class TestProfiledWorkflows:
 
     def test_pdf_map_large_page_preview_does_not_authorize_rewrite(self, store: WikiStore) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="big-chapter",
                 category="source",
                 summary="Large prior chapter.",
@@ -380,7 +380,7 @@ class TestProfiledWorkflows:
 
     def test_pdf_integrate_writes_only_hub_page(self, store: WikiStore) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="sword-world-rpg-complete-edition",
                 category="source",
                 summary="Old hub.",

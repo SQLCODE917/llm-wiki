@@ -26,7 +26,7 @@ from llmwiki.domain.grounding import (
     GroundingVerdict,
     select_grounding_claims,
 )
-from llmwiki.domain.index import index_page_names, parse_index, upsert_index_entry
+from llmwiki.domain.index import index_page_ids, parse_index, upsert_index_entry
 from llmwiki.domain.ingest_route_history import (
     IngestRoutePlanRecord,
     ingest_route_plan_record_from_json_line,
@@ -37,15 +37,13 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlan,
     IngestRoutePlanError,
     IngestRoutePlanState,
-    IngestRun,
     PlannedPage,
-    RawSource,
     RouteGap,
-    SourceBundle,
     validate_ingest_route_plan,
 )
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.log import format_log_entry
+from llmwiki.domain.objects import IngestRun, RawSource, SourceBundle
 from llmwiki.domain.pages import (
     LOCAL_FLAT_STRUCTURE,
     PageError,
@@ -89,6 +87,27 @@ INDEX = """# Index
 
 ## Syntheses
 """
+
+
+def _wiki_page(
+    page_id: str,
+    page_kind: str,
+    summary: str,
+    page_body: str,
+    *,
+    sources: tuple[str, ...] = (),
+    updated: str = "",
+) -> WikiPage:
+    return WikiPage(
+        page_metadata=PageMetadata(
+            page_id=page_id,
+            page_kind=page_kind,
+            summary=summary,
+            sources=sources,
+            updated=updated,
+        ),
+        page_body=page_body,
+    )
 
 
 class TestPages:
@@ -137,7 +156,7 @@ class TestPages:
 
 class TestIngestRoutePlans:
     def test_domain_objects_cover_local_flat_wiki(self) -> None:
-        source = RawSource.from_source_path("rules/book.pdf")
+        source = RawSource.from_locator("rules/book.pdf")
         bundle = SourceBundle.one(source)
         metadata = PageMetadata(
             page_id="rules-book",
@@ -145,7 +164,7 @@ class TestIngestRoutePlans:
             summary="Rules book.",
             sources=("rules/book.pdf",),
         )
-        run = IngestRun(source_bundle=bundle, page_writes=("rules-book",))
+        run = IngestRun(source_bundle=bundle)
 
         assert source.source_locator == "rules/book.pdf"
         assert source.source_format == "pdf"
@@ -279,7 +298,7 @@ def _route_plan(
 class TestIndex:
     def test_parse_extracts_entries_with_categories(self) -> None:
         entries = parse_index(INDEX)
-        assert [(e.name, e.category) for e in entries] == [
+        assert [(e.page_id, e.page_kind) for e in entries] == [
             ("alpha-source", "source"),
             ("bravo", "concept"),
             ("delta", "concept"),
@@ -290,24 +309,24 @@ class TestIndex:
             INDEX,
             PageMetadata(page_id="charlie", page_kind="concept", summary="concept c"),
         )
-        names = [e.name for e in parse_index(updated) if e.category == "concept"]
-        assert names == ["bravo", "charlie", "delta"]
+        page_ids = [e.page_id for e in parse_index(updated) if e.page_kind == "concept"]
+        assert page_ids == ["bravo", "charlie", "delta"]
 
     def test_upsert_replaces_existing_entry(self) -> None:
         updated = upsert_index_entry(
             INDEX,
             PageMetadata(page_id="bravo", page_kind="concept", summary="new summary"),
         )
-        entries = {e.name: e.summary for e in parse_index(updated)}
+        entries = {e.page_id: e.summary for e in parse_index(updated)}
         assert entries["bravo"] == "new summary"
-        assert len([e for e in parse_index(updated) if e.name == "bravo"]) == 1
+        assert len([e for e in parse_index(updated) if e.page_id == "bravo"]) == 1
 
     def test_upsert_moves_page_between_categories(self) -> None:
         updated = upsert_index_entry(
             INDEX,
             PageMetadata(page_id="bravo", page_kind="synthesis", summary="now a synthesis"),
         )
-        entries = {e.name: e.category for e in parse_index(updated)}
+        entries = {e.page_id: e.page_kind for e in parse_index(updated)}
         assert entries["bravo"] == "synthesis"
 
     def test_upsert_into_empty_category(self) -> None:
@@ -315,7 +334,7 @@ class TestIndex:
             INDEX,
             PageMetadata(page_id="ada", page_kind="entity", summary="a person"),
         )
-        assert ("ada", "entity") in [(e.name, e.category) for e in parse_index(updated)]
+        assert ("ada", "entity") in [(e.page_id, e.page_kind) for e in parse_index(updated)]
 
 
 class TestSharedObjectBoundaryLanguage:
@@ -325,9 +344,11 @@ class TestSharedObjectBoundaryLanguage:
         assert "PAGE_CATEGORIES" not in pages_text
         assert "validate_page_name" not in pages_text
         assert "validate_category" not in pages_text
+        assert "_legacy_page_args" not in pages_text
+        assert "def __init__" not in pages_text
 
-    def test_index_page_names(self) -> None:
-        assert index_page_names(INDEX) == {"alpha-source", "bravo", "delta"}
+    def test_index_page_ids(self) -> None:
+        assert index_page_ids(INDEX) == {"alpha-source", "bravo", "delta"}
 
 
 class TestCandidates:
@@ -406,7 +427,7 @@ class TestSemanticLint:
     def test_selection_is_bounded_and_reasoned_from_overlapping_pages(self) -> None:
         pages = {
             "alpha": render_page(
-                WikiPage(
+                _wiki_page(
                     "alpha",
                     "concept",
                     "A.",
@@ -416,7 +437,7 @@ class TestSemanticLint:
                 )
             ),
             "beta": render_page(
-                WikiPage(
+                _wiki_page(
                     "beta",
                     "concept",
                     "B.",
@@ -426,7 +447,7 @@ class TestSemanticLint:
                 )
             ),
             "gamma": render_page(
-                WikiPage("gamma", "concept", "G.", "Unrelated.", updated="2026-06-15")
+                _wiki_page("gamma", "concept", "G.", "Unrelated.", updated="2026-06-15")
             ),
         }
 
@@ -453,8 +474,8 @@ class TestSemanticLint:
             today="2026-06-15",
         )
         pages = {
-            "alpha": render_page(WikiPage("alpha", "concept", "A.", "Mentions [[iterable]].")),
-            "beta": render_page(WikiPage("beta", "concept", "B.", "Mentions [[iterable]].")),
+            "alpha": render_page(_wiki_page("alpha", "concept", "A.", "Mentions [[iterable]].")),
+            "beta": render_page(_wiki_page("beta", "concept", "B.", "Mentions [[iterable]].")),
         }
 
         selection = select_semantic_lint_candidates(pages, backlog, max_items=5)
@@ -466,10 +487,10 @@ class TestSemanticLint:
     def test_broad_shared_source_alone_does_not_create_candidate(self) -> None:
         pages = {
             "alpha": render_page(
-                WikiPage("alpha", "concept", "A.", "General notes.", sources=("book.pdf",))
+                _wiki_page("alpha", "concept", "A.", "General notes.", sources=("book.pdf",))
             ),
             "beta": render_page(
-                WikiPage("beta", "concept", "B.", "Other notes.", sources=("book.pdf",))
+                _wiki_page("beta", "concept", "B.", "Other notes.", sources=("book.pdf",))
             ),
         }
 
@@ -570,7 +591,7 @@ class TestGraph:
     def test_graph_output_is_deterministic_and_excludes_system_pages(self) -> None:
         pages = {
             "alpha": render_page(
-                WikiPage(
+                _wiki_page(
                     "alpha",
                     "concept",
                     "Alpha summary.",
@@ -578,9 +599,9 @@ class TestGraph:
                     sources=("article.md",),
                 )
             ),
-            "beta": render_page(WikiPage("beta", "entity", "Beta summary.", "Back.")),
+            "beta": render_page(_wiki_page("beta", "entity", "Beta summary.", "Back.")),
             "wiki-health": render_page(
-                WikiPage("wiki-health", "synthesis", "Report.", "Links [[ghost]].")
+                _wiki_page("wiki-health", "synthesis", "Report.", "Links [[ghost]].")
             ),
         }
 
@@ -594,7 +615,7 @@ class TestGraph:
         assert first.edges[0].resolved
 
     def test_graph_represents_unresolved_edges(self) -> None:
-        pages = {"alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[ghost]]."))}
+        pages = {"alpha": render_page(_wiki_page("alpha", "concept", "A.", "See [[ghost]]."))}
 
         graph = build_wiki_graph(pages, generated_date="2026-06-15")
 
@@ -603,11 +624,11 @@ class TestGraph:
         assert not graph.edges[0].resolved
 
     def test_graph_status_ignores_generated_date_but_detects_stale_content(self) -> None:
-        pages = {"alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[beta]]."))}
+        pages = {"alpha": render_page(_wiki_page("alpha", "concept", "A.", "See [[beta]]."))}
         graph = build_wiki_graph(pages, generated_date="2026-06-15")
         same_graph_new_date = build_wiki_graph(pages, generated_date="2026-06-16")
         changed_graph = build_wiki_graph(
-            {"alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[gamma]]."))},
+            {"alpha": render_page(_wiki_page("alpha", "concept", "A.", "See [[gamma]]."))},
             generated_date="2026-06-16",
         )
 
@@ -782,7 +803,7 @@ class TestGrounding:
         resolver = InMemorySourceResolver({"raw/article.md": "Actual source line."})
         pages = {
             "alpha": render_page(
-                WikiPage(
+                _wiki_page(
                     "alpha",
                     "concept",
                     "A.",
@@ -815,7 +836,7 @@ class TestGrounding:
         )
         pages = {
             "alpha": render_page(
-                WikiPage(
+                _wiki_page(
                     "alpha",
                     "concept",
                     "A.",
@@ -843,7 +864,7 @@ class TestGrounding:
         resolver = InMemorySourceResolver({"raw/article.md": "Actual claim evidence."})
         pages = {
             "alpha": render_page(
-                WikiPage(
+                _wiki_page(
                     "alpha",
                     "concept",
                     "A.",
@@ -904,10 +925,10 @@ class TestContradictions:
     def test_candidate_selection_shared_sources(self) -> None:
         pages = {
             "alpha": render_page(
-                WikiPage("alpha", "concept", "A.", "Alpha claim.", sources=("book.md",))
+                _wiki_page("alpha", "concept", "A.", "Alpha claim.", sources=("book.md",))
             ),
             "beta": render_page(
-                WikiPage("beta", "concept", "B.", "Beta claim.", sources=("book.md",))
+                _wiki_page("beta", "concept", "B.", "Beta claim.", sources=("book.md",))
             ),
         }
         selection = select_contradiction_candidates(pages)
@@ -916,8 +937,8 @@ class TestContradictions:
 
     def test_candidate_selection_direct_link(self) -> None:
         pages = {
-            "alpha": render_page(WikiPage("alpha", "concept", "A.", "See [[beta]].")),
-            "beta": render_page(WikiPage("beta", "concept", "B.", "Beta claim.")),
+            "alpha": render_page(_wiki_page("alpha", "concept", "A.", "See [[beta]].")),
+            "beta": render_page(_wiki_page("beta", "concept", "B.", "Beta claim.")),
         }
         selection = select_contradiction_candidates(pages)
         assert selection.candidate_count == 1
@@ -925,8 +946,8 @@ class TestContradictions:
 
     def test_candidate_selection_shared_raw_citations(self) -> None:
         pages = {
-            "alpha": render_page(WikiPage("alpha", "concept", "A.", "Claim. (raw/book.md)")),
-            "beta": render_page(WikiPage("beta", "concept", "B.", "Other claim. (raw/book.md)")),
+            "alpha": render_page(_wiki_page("alpha", "concept", "A.", "Claim. (raw/book.md)")),
+            "beta": render_page(_wiki_page("beta", "concept", "B.", "Other claim. (raw/book.md)")),
         }
         selection = select_contradiction_candidates(pages)
         assert selection.candidate_count == 1
@@ -935,10 +956,10 @@ class TestContradictions:
     def test_candidate_selection_keyword_overlap(self) -> None:
         pages = {
             "alpha": render_page(
-                WikiPage("alpha", "concept", "A.", "Orbit mechanics require transfer windows.")
+                _wiki_page("alpha", "concept", "A.", "Orbit mechanics require transfer windows.")
             ),
             "beta": render_page(
-                WikiPage("beta", "concept", "B.", "Transfer windows shape orbit mechanics.")
+                _wiki_page("beta", "concept", "B.", "Transfer windows shape orbit mechanics.")
             ),
         }
         selection = select_contradiction_candidates(pages)
@@ -947,7 +968,9 @@ class TestContradictions:
 
     def test_candidate_selection_cap_reports_skipped(self) -> None:
         pages = {
-            name: render_page(WikiPage(name, "concept", f"{name}.", "Claim.", sources=("book.md",)))
+            name: render_page(
+                _wiki_page(name, "concept", f"{name}.", "Claim.", sources=("book.md",))
+            )
             for name in ("alpha", "beta", "gamma", "delta")
         }
         selection = select_contradiction_candidates(pages, max_pairs=2)

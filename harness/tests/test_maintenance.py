@@ -9,7 +9,7 @@ from llmwiki.config import ConfigError, WikiPaths
 from llmwiki.domain.graph import build_wiki_graph
 from llmwiki.domain.index import empty_index
 from llmwiki.domain.ingest_route_history import IngestRoutePlanRecord
-from llmwiki.domain.pages import WikiPage, render_page
+from llmwiki.domain.pages import PageMetadata, WikiPage, render_page
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, to_json
 from llmwiki.store import WikiStore
 
@@ -24,12 +24,14 @@ def _page(
     sources: tuple[str, ...] = (),
 ) -> WikiPage:
     return WikiPage(
-        name=name,
-        category=category,
-        summary=summary or f"{name} summary.",
-        body=body,
-        sources=sources,
-        updated=TODAY,
+        page_metadata=PageMetadata(
+            page_id=name,
+            page_kind=category,
+            summary=summary or f"{name} summary.",
+            sources=sources,
+            updated=TODAY,
+        ),
+        page_body=body,
     )
 
 

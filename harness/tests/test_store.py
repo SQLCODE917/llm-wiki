@@ -9,16 +9,24 @@ from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.store import PageNotFoundError, SourceNotFoundError, WikiStore, WikiStoreError
 
 
-def _page(name: str = "hittites", category: str = "entity") -> WikiPage:
+def _page(
+    name: str = "hittites",
+    category: str = "entity",
+    *,
+    summary: str | None = None,
+    body: str | None = None,
+    sources: tuple[str, ...] = ("article.md",),
+    updated: str = "2026-06-10",
+) -> WikiPage:
     return WikiPage(
         page_metadata=PageMetadata(
             page_id=name,
             page_kind=category,
-            summary=f"About {name}.",
-            sources=("article.md",),
-            updated="2026-06-10",
+            summary=summary or f"About {name}.",
+            sources=sources,
+            updated=updated,
         ),
-        page_body=f"The {name} page. See [[other]].",
+        page_body=body or f"The {name} page. See [[other]].",
     )
 
 
@@ -127,12 +135,11 @@ class TestWikiLayer:
     ) -> None:
         store.write_page(_page(name="wraith"))
         store.write_page(
-            WikiPage(
-                name="hub",
-                category="source",
+            _page(
+                "hub",
+                "source",
                 summary="Hub.",
                 body="See [[wraith]] and [[wraith|old label]].",
-                updated="2026-06-10",
             )
         )
 
@@ -150,34 +157,25 @@ class TestWikiLayer:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
-                name="daemons",
-                category="entity",
+            _page(
+                "daemons",
+                "entity",
                 summary="Plural target.",
                 body="Target body.",
                 sources=("raw/book.pdf p.1",),
-                updated="2026-06-10",
             )
         )
         store.write_page(
-            WikiPage(
-                name="daemon",
-                category="entity",
+            _page(
+                "daemon",
+                "entity",
                 summary="Duplicate drift.",
                 body="Duplicate body.",
                 sources=("raw/book.pdf p.2",),
                 updated="2026-06-11",
             )
         )
-        store.write_page(
-            WikiPage(
-                name="hub",
-                category="source",
-                summary="Hub.",
-                body="See [[daemon]].",
-                updated="2026-06-10",
-            )
-        )
+        store.write_page(_page("hub", "source", summary="Hub.", body="See [[daemon]]."))
 
         store.merge_page("daemon", "daemons", summary="Merged daemon type.", today="2026-06-16")
 
@@ -192,12 +190,11 @@ class TestWikiLayer:
     def test_replace_page_link_preserves_alias_and_rewrites_index(self, store: WikiStore) -> None:
         store.write_page(_page(name="new-target"))
         store.write_page(
-            WikiPage(
-                name="hub",
-                category="source",
+            _page(
+                "hub",
+                "source",
                 summary="Hub.",
                 body="See [[old-target]] and [[old-target|old label]].",
-                updated="2026-06-10",
             )
         )
 
@@ -211,15 +208,7 @@ class TestWikiLayer:
 
     def test_replace_page_link_can_add_alias(self, store: WikiStore) -> None:
         store.write_page(_page(name="new-target"))
-        store.write_page(
-            WikiPage(
-                name="hub",
-                category="source",
-                summary="Hub.",
-                body="See [[old-target]].",
-                updated="2026-06-10",
-            )
-        )
+        store.write_page(_page("hub", "source", summary="Hub.", body="See [[old-target]]."))
 
         store.replace_page_link("hub", "old-target", "new-target", alias="old label")
 

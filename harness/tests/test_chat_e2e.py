@@ -4,10 +4,10 @@
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
+from helpers import wiki_page
 
 from llmwiki.config import WikiPaths
 from llmwiki.domain.chatwindow import QAPair
-from llmwiki.domain.pages import WikiPage
 from llmwiki.runtime.chat_repl import ChatRepl
 from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
@@ -30,7 +30,7 @@ def _session(store: WikiStore, script: list, paths: WikiPaths) -> Session:
 
 def _seed_wiki(store: WikiStore) -> None:
     store.write_page(
-        WikiPage(
+        wiki_page(
             name="closure",
             category="concept",
             summary="Functions capturing scope.",
@@ -166,7 +166,7 @@ class TestChatFile:
         self, store: WikiStore, paths: WikiPaths
     ) -> None:
         store.write_page(
-            WikiPage(
+            wiki_page(
                 name="closure-summary",
                 category="synthesis",
                 summary="Original.",
