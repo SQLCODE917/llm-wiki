@@ -7,7 +7,14 @@ import re
 from dataclasses import asdict
 from pathlib import Path
 
-from llmwiki.domain.objects import ExtractedUnit, PagePlan, RawSource, SourceBundle
+from llmwiki.domain.objects import (
+    ExtractedUnit,
+    PagePlan,
+    RawSource,
+    Schema,
+    SourceBundle,
+    SourcePlan,
+)
 from llmwiki.domain.pages import WikiStructure
 from llmwiki.domain.planning_analysis import (
     build_extracted_unit,
@@ -32,6 +39,8 @@ def build_markdown_page_plan(
     existing_pages: dict[str, str],
     wiki_structure: WikiStructure,
     today: str,
+    schema: Schema | None = None,
+    source_plan: SourcePlan | None = None,
 ) -> PagePlan:
     unit = build_extracted_unit(
         unit_id="unit-0001",
@@ -48,6 +57,8 @@ def build_markdown_page_plan(
         existing_pages=existing_pages,
         wiki_structure=wiki_structure,
         today=today,
+        schema=schema,
+        source_plan=source_plan,
         include_markdown_subject=True,
     )
 
@@ -62,6 +73,8 @@ def build_page_plan(
     wiki_structure: WikiStructure,
     today: str,
     include_markdown_subject: bool = False,
+    schema: Schema | None = None,
+    source_plan: SourcePlan | None = None,
 ) -> PagePlan:
     claims = candidate_claims(extracted_units)
     topics = candidate_topics(extracted_units, claims)
@@ -78,6 +91,8 @@ def build_page_plan(
         wiki_structure=wiki_structure,
         today=today,
         include_markdown_subject=include_markdown_subject,
+        schema=schema,
+        source_plan=source_plan,
     )
     return PagePlan(
         plan_id=plan_id,
@@ -108,6 +123,7 @@ def observation_report(plan: PagePlan) -> str:
         f"- `{write.page_metadata.page_id}` | plan_pages action "
         f"`{_route_action(write.action)}` | PagePlan action `{write.action}` | "
         f"PageKind `{write.page_metadata.page_kind}` | "
+        f"ResolvedPageBodyContract `{write.resolved_page_body_contract.contract_id}` | "
         f"sources `{', '.join(write.page_metadata.sources)}` | "
         f"path `{write.projection.page_path if write.projection else ''}`"
         for write in plan.planned_writes

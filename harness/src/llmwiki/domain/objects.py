@@ -5,6 +5,17 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from pathlib import PurePosixPath
 
+from llmwiki.domain.page_body_contracts import (
+    PageBodyContract,
+    ResolvedPageBodyContract,
+    SourcePlanContractSelection,
+    default_page_body_contract_by_page_kind,
+    default_page_body_contracts,
+    default_resolved_page_body_contract,
+)
+from llmwiki.domain.page_body_contracts import (
+    PageBodyFinding as PageBodyFinding,
+)
 from llmwiki.domain.pages import LOCAL_FLAT_STRUCTURE, PageMetadata, WikiPage, WikiStructure
 from llmwiki.domain.schema import PAGE_KINDS, PAGE_METADATA_FIELDS
 
@@ -48,6 +59,7 @@ class SourcePlan:
     source_classification: str
     ingest_disposition: str
     planned_page_write_ids: tuple[str, ...] = ()
+    page_body_contract_selections: tuple[SourcePlanContractSelection, ...] = ()
     handling_notes: str = ""
 
 
@@ -135,6 +147,9 @@ class PlannedPageWrite:
     claim_comparisons: tuple[ClaimComparison, ...] = ()
     projection: ProjectionMetadata | None = None
     existing_page_id: str = ""
+    resolved_page_body_contract: ResolvedPageBodyContract = field(
+        default_factory=default_resolved_page_body_contract
+    )
 
 
 @dataclass(frozen=True)
@@ -156,6 +171,12 @@ class Schema:
     schema_id: str = "local-llm-wiki"
     page_kinds: tuple[str, ...] = PAGE_KINDS
     page_metadata_fields: tuple[str, ...] = PAGE_METADATA_FIELDS
+    page_body_contracts: tuple[PageBodyContract, ...] = field(
+        default_factory=default_page_body_contracts
+    )
+    page_body_contract_by_page_kind: tuple[tuple[str, str], ...] = field(
+        default_factory=default_page_body_contract_by_page_kind
+    )
 
 
 @dataclass(frozen=True)
@@ -164,6 +185,7 @@ class IngestRun:
     wiki_structure: WikiStructure = LOCAL_FLAT_STRUCTURE
     schema: Schema = field(default_factory=Schema)
     ingest_topology: str = "serial"
+    source_plans: tuple[SourcePlan, ...] = ()
     page_plan: PagePlan | None = None
     wiki_pages: tuple[WikiPage, ...] = ()
 

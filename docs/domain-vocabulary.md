@@ -31,6 +31,9 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `PageKind` | `page_kind` |
 | `PagePath` | `page_path` |
 | `PageBody` | `page_body` |
+| `PageBodyContract` | `page_body_contract` |
+| `ResolvedPageBodyContract` | `resolved_page_body_contract` |
+| `PageBodyFinding` | `page_body_finding` |
 | `PageMetadata` | `page_metadata` |
 | `DomainFrontmatter` | `domain_frontmatter` |
 | `GeneratedWikiState` | `generated_wiki_state` |
@@ -49,6 +52,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ClaimComparison` | `claim_comparison` |
 | `PagePlan` | `page_plan` |
 | `SourcePlan` | `source_plan` |
+| `SourcePlanContractSelection` | `source_plan_contract_selection` |
 | `PlannedPageWrite` | `planned_page_write` |
 | `Evidence` | `evidence` |
 | `IndexEntry` | `index_entry` |
@@ -85,6 +89,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | IngestRoutePlan | Exists | `llmwiki.domain.ingest_route_plan` |
 | PlannedPage | Exists | `llmwiki.domain.ingest_route_plan` |
 | RouteGap | Exists | `llmwiki.domain.ingest_route_plan` |
+| PageBodyContract | Exists | `llmwiki.domain.page_body_contracts`; owned by `Schema` |
+| ResolvedPageBodyContract | Exists | `llmwiki.domain.page_body_contracts`; bound to one `PlannedPageWrite` |
+| PageBodyFinding | Exists | `llmwiki.domain.page_body_contracts`; returned by body validation |
+| SourcePlanContractSelection | Exists | `llmwiki.domain.page_body_contracts`; selected through `SourcePlan` |
 | ExtractedUnit | Exists | `llmwiki.domain.objects` |
 | CandidateClaim | Exists | `llmwiki.domain.objects` |
 | CandidateTopic | Exists | `llmwiki.domain.objects` |
@@ -115,6 +123,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | PlannedPageParams | `llmwiki.workflows.ingest_route_tools` | `PlannedPage` |
 | PlannedPageMetadataParams | `llmwiki.workflows.ingest_route_tools` | `PageMetadata` |
 | RouteGapParams | `llmwiki.workflows.ingest_route_tools` | `RouteGap` |
+| PlannedWritePageParams | `llmwiki.workflows.planned_write_tools` | `PageBody` for one authorized `PlannedPageWrite` |
 | WritePageParams | `llmwiki.workflows.tools` and `llmwiki.workflows.chat_file_tools` | `WikiPage` and page write validation |
 | ReadPageParams | `llmwiki.workflows.tools` | page lookup inputs |
 | ReadSourceParams | `llmwiki.workflows.tools` | raw source lookup inputs |

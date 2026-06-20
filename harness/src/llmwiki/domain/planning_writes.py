@@ -11,7 +11,17 @@ from llmwiki.domain.objects import (
     PlannedPageWrite,
     ProjectionMetadata,
     RawSource,
+    Schema,
+    SourcePlan,
     WikiMatch,
+)
+from llmwiki.domain.page_body_contracts import (
+    ResolvedPageBodyContract,
+    SourcePlanContractSelection,
+    contract_by_id,
+    contract_for_page_kind,
+    resolve_page_body_contract,
+    uncertainty_terms_in_text,
 )
 from llmwiki.domain.pages import PageMetadata, WikiStructure, slugify
 from llmwiki.domain.planning_analysis import same_section_identity, unit_match
@@ -27,7 +37,11 @@ def planned_writes(
     wiki_structure: WikiStructure,
     today: str,
     include_markdown_subject: bool,
+    schema: Schema | None = None,
+    source_plan: SourcePlan | None = None,
 ) -> tuple[PlannedPageWrite, ...]:
+    active_schema = schema or Schema()
+    selections = source_plan.page_body_contract_selections if source_plan is not None else ()
     writes: list[PlannedPageWrite] = []
     if not include_markdown_subject:
         writes.extend(
@@ -39,11 +53,20 @@ def planned_writes(
                 claim_comparisons,
                 wiki_structure,
                 today,
+                active_schema,
+                selections,
             )
             for unit in extracted_units
         )
     hub = _hub_write(
-        raw_source, extracted_units, existing_pages, wiki_matches, wiki_structure, today
+        raw_source,
+        extracted_units,
+        existing_pages,
+        wiki_matches,
+        wiki_structure,
+        today,
+        active_schema,
+        selections,
     )
     writes.append(hub)
     return tuple(writes)
@@ -57,6 +80,8 @@ def _planned_write_for_unit(
     comparisons: tuple[ClaimComparison, ...],
     structure: WikiStructure,
     today: str,
+    schema: Schema,
+    contract_selections: tuple[SourcePlanContractSelection, ...],
 ) -> PlannedPageWrite:
     page_id = _target_page_id(unit, existing_pages)
     metadata = PageMetadata(
@@ -76,6 +101,9 @@ def _planned_write_for_unit(
         evidence=(Evidence(raw_source, unit.locator),),
         wiki_matches=tuple(match for match in wiki_matches if unit_match(match, unit.unit_id)),
         comparisons=tuple(item for item in comparisons if item.page_id == page_id),
+        schema=schema,
+        contract_selections=contract_selections,
+        required_uncertainty_terms=uncertainty_terms_in_text(unit.text),
     )
 
 
@@ -86,6 +114,8 @@ def _hub_write(
     matches: tuple[WikiMatch, ...],
     structure: WikiStructure,
     today: str,
+    schema: Schema,
+    contract_selections: tuple[SourcePlanContractSelection, ...],
 ) -> PlannedPageWrite:
     page_id = _hub_page_id(raw_source)
     metadata = PageMetadata(
@@ -105,6 +135,11 @@ def _hub_write(
         evidence=(Evidence(raw_source),),
         wiki_matches=matches[:8],
         comparisons=(),
+        schema=schema,
+        contract_selections=contract_selections,
+        required_uncertainty_terms=uncertainty_terms_in_text(
+            "\n\n".join(unit.text for unit in units)
+        ),
     )
 
 
@@ -118,7 +153,19 @@ def _planned_write(
     evidence: tuple[Evidence, ...],
     wiki_matches: tuple[WikiMatch, ...],
     comparisons: tuple[ClaimComparison, ...],
+    schema: Schema,
+    contract_selections: tuple[SourcePlanContractSelection, ...],
+    required_uncertainty_terms: tuple[str, ...],
 ) -> PlannedPageWrite:
+    resolved_contract = _resolved_page_body_contract(
+        schema=schema,
+        selections=contract_selections,
+        page_id=metadata.page_id,
+        page_kind=metadata.page_kind,
+        required_link_page_ids=_required_link_page_ids(metadata.page_id, wiki_matches),
+        required_source_citations=tuple(dict.fromkeys(metadata.sources)),
+        required_uncertainty_terms=required_uncertainty_terms,
+    )
     return PlannedPageWrite(
         write_id=write_id,
         action=action,
@@ -129,7 +176,51 @@ def _planned_write(
         claim_comparisons=comparisons,
         projection=ProjectionMetadata(metadata, str(structure.render_path(metadata))),
         existing_page_id=metadata.page_id if action == "enrich-existing" else "",
+        resolved_page_body_contract=resolved_contract,
     )
+
+
+def _resolved_page_body_contract(
+    *,
+    schema: Schema,
+    selections: tuple[SourcePlanContractSelection, ...],
+    page_id: str,
+    page_kind: str,
+    required_link_page_ids: tuple[str, ...],
+    required_source_citations: tuple[str, ...],
+    required_uncertainty_terms: tuple[str, ...],
+) -> ResolvedPageBodyContract:
+    selection = _source_plan_contract_selection(selections, page_id, page_kind)
+    contract = (
+        contract_by_id(schema, selection.contract_id)
+        if selection
+        else contract_for_page_kind(schema, page_kind)
+    )
+    return resolve_page_body_contract(
+        contract,
+        required_link_page_ids=required_link_page_ids,
+        required_source_citations=required_source_citations,
+        required_uncertainty_terms=required_uncertainty_terms,
+        selection=selection,
+    )
+
+
+def _source_plan_contract_selection(
+    selections: tuple[SourcePlanContractSelection, ...],
+    page_id: str,
+    page_kind: str,
+) -> SourcePlanContractSelection | None:
+    for selection in selections:
+        if page_id in selection.page_ids:
+            return selection
+    for selection in selections:
+        if page_kind in selection.match_page_kinds:
+            return selection
+    return None
+
+
+def _required_link_page_ids(page_id: str, wiki_matches: tuple[WikiMatch, ...]) -> tuple[str, ...]:
+    return tuple(dict.fromkeys(match.page_id for match in wiki_matches if match.page_id != page_id))
 
 
 def _target_page_id(unit: ExtractedUnit, existing_pages: dict[str, str]) -> str:

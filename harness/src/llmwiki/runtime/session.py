@@ -38,7 +38,14 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanState,
 )
 from llmwiki.domain.links import compute_findings
-from llmwiki.domain.objects import IngestRun, LintRun, PagePlan, RawSource, SourceBundle
+from llmwiki.domain.objects import (
+    IngestRun,
+    LintRun,
+    PagePlan,
+    RawSource,
+    SourceBundle,
+    SourcePlan,
+)
 from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page, slugify
 from llmwiki.domain.planning import (
     build_markdown_page_plan,
@@ -415,7 +422,16 @@ class Session:
 
     def _ingest_run(self, source_locator: str) -> IngestRun:
         raw_source = self.store.raw_source(source_locator)
-        return IngestRun(source_bundle=SourceBundle.one(raw_source))
+        return IngestRun(
+            source_bundle=SourceBundle.one(raw_source),
+            source_plans=(
+                SourcePlan(
+                    raw_source=raw_source,
+                    source_classification=raw_source.source_format,
+                    ingest_disposition="plan-pages",
+                ),
+            ),
+        )
 
     def _markdown_page_plan(self, ingest_run: IngestRun, source_locator: str) -> PagePlan:
         raw_source = _single_raw_source(ingest_run)
@@ -427,6 +443,8 @@ class Session:
             existing_pages=self.store.page_texts(),
             wiki_structure=ingest_run.wiki_structure,
             today=self.today,
+            schema=ingest_run.schema,
+            source_plan=_source_plan_for(ingest_run, raw_source),
         )
 
     def _pdf_page_plan(
@@ -451,6 +469,8 @@ class Session:
             existing_pages=self.store.page_texts(),
             wiki_structure=ingest_run.wiki_structure,
             today=self.today,
+            schema=ingest_run.schema,
+            source_plan=_source_plan_for(ingest_run, raw_source),
         )
 
     def _persist_page_plan(self, source_locator: str, page_plan: PagePlan) -> str:
@@ -851,6 +871,13 @@ def _single_source_locator(ingest_run: IngestRun) -> str:
 
 def _single_raw_source(ingest_run: IngestRun) -> RawSource:
     return ingest_run.source_bundle.raw_sources[0]
+
+
+def _source_plan_for(ingest_run: IngestRun, raw_source: RawSource) -> SourcePlan | None:
+    for source_plan in ingest_run.source_plans:
+        if source_plan.raw_source == raw_source:
+            return source_plan
+    return None
 
 
 def _page_plan_targets_for_chunk(
