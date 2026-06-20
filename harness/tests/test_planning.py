@@ -60,6 +60,9 @@ def test_markdown_page_plan_creates_units_claims_writes_and_paths() -> None:
     report = observation_report(plan)
     assert "ExtractedUnits: 1" in report
     assert "`antikythera-mechanism.md`" in report
+    assert "PageKind `source`" in report
+    assert "plan_pages action `create`" in report
+    assert "PagePlan action `create-new`" in report
 
 
 def test_existing_page_match_enriches_existing_page() -> None:

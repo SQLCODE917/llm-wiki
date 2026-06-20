@@ -12,15 +12,13 @@
       ],
       "tokens": 5123,
       "status": "done",
-      "notes": "Ingested front matter of JavaScript Allongé (pages 1-13). Key claims: Book focuses on functional programming with JavaScript, explains ECMAScript 2015 updates, and uses Leanpub for publishing. Entities added: reg-raganwald-braithwaite, axel-rauschmayer. Concepts created: functional-programming, ecmascript-2015, leanpub. Pages written: javascriptallonge-frontend, reg-raganwald-braithwaite, axel-rauschmayer, functional-programming, ecmascript-2015, leanpub.",
+      "notes": "Created the front-matter source page for JavaScript Allongé. This page summarizes the book's title, author, publisher, publication date, and prefaces including the introduction to the \"Six\" edition, the book's purpose, and its organization. No other pages were created as part of this chunk's ingest, as the front matter does not contain in-depth content on specific programming concepts that would warrant dedicated pages.",
       "pages_written": [
-        "javascriptallonge-frontend",
-        "reg-raganwald-braithwaite",
-        "axel-rauschmayer",
-        "functional-programming",
-        "ecmascript-2015",
-        "leanpub"
-      ]
+        "front-matter"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 2,
@@ -31,17 +29,13 @@
       ],
       "tokens": 4982,
       "status": "done",
-      "notes": "Processed forewords of JavaScript Allongé (pages 14-29). Created source page for forewords, updated leanpub concept, and added entity pages for Michael Fogus and Matthew Knox. Introduced concept pages for value-types, reference-types, arrays, and floating-point-numbers. Cited all content with (raw/javascriptallonge.pdf p.14-29).",
+      "notes": "Key claims: The forewords introduce the book's approach to functional programming with JavaScript, emphasizing its value as a tool for understanding programming concepts. The Prelude discusses values and expressions in JavaScript, using a coffee shop metaphor. Basic numbers and functions are introduced, with attention to identity, types, and operations.\n\nEntities touched: Michael Fogus, Matthew Knox, Reginald \"Raganwald\" Braithwaite, JavaScript Allongé, Café Allongé.\n\nPages written: forewords-to-the-first-edition",
       "pages_written": [
-        "javascriptallonge-forewords-to-the-first-edition",
-        "leanpub",
-        "michael-fogus",
-        "matthew-knox",
-        "value-types",
-        "reference-types",
-        "arrays",
-        "floating-point-numbers"
-      ]
+        "forewords-to-the-first-edition"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 3,
@@ -52,13 +46,13 @@
       ],
       "tokens": 5570,
       "status": "done",
-      "notes": "Key claims: Functions are reference types (non-identical on redefinition), `void` operator generates `undefined`, call-by-value with call-by-sharing for references. Entities touched: function, undefined, call-by-value. Pages written: javascriptallonge-as-little-as-possible-about-functions-but-no-less (source), function (entity), undefined (entity), call-by-value (concept).",
+      "notes": "Created the chapter source page 'as-little-as-possible-about-functions-but-no-less' covering basic JavaScript functions, their evaluation, and fundamentals of function application. Key claims include functions as values, function application, identity of functions, return statements, and call by value/sharing semantics. No additional entity or concept pages were created as the chunk's content was adequately covered by the source page.",
       "pages_written": [
-        "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
-        "function",
-        "undefined",
-        "call-by-value"
-      ]
+        "as-little-as-possible-about-functions-but-no-less"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 4,
@@ -69,13 +63,13 @@
       ],
       "tokens": 2136,
       "status": "done",
-      "notes": "Wrote source page [[javascriptallonge-closures-and-scope]] on closures, scope chains, and pure functions. Updated [[functional-programming]], [[function]], and [[javascript]] pages with closure mechanics, scope hierarchy, and IIFE patterns. Key claims: closures capture outer variables, scope chains enable nested access, pure functions vs. closures, shadowing, and global environment isolation.",
+      "notes": "Created the chapter page 'closures-and-scope' detailing JavaScript closures and scope. The page covers function nesting, free variables, pure functions vs closures, environment handling, and the Kestrel combinator. No additional entity or concept pages were created as the chunk focused primarily on foundational concepts without introducing new named entities or complex ideas requiring separate treatment.",
       "pages_written": [
-        "javascriptallonge-closures-and-scope",
-        "functional-programming",
-        "function",
-        "javascript"
-      ]
+        "closures-and-scope"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 5,
@@ -86,12 +80,13 @@
       ],
       "tokens": 4202,
       "status": "done",
-      "notes": "Created source page [[javascriptallonge-chapter-5]] and concept pages [[const]], [[lexical-scoping]], [[IIFE]] to document JavaScript's const keyword, lexical scoping rules, and IIFE pattern. Key claims: const provides block-scoped bindings that shadow but don't overwrite outer variables; lexical scoping resolves names based on static code structure; IIFEs enable isolated value binding but are less readable than const.",
+      "notes": "Recovered existing wiki page(s): that-constant-coffee-craving",
       "pages_written": [
-        "javascriptallonge-chapter-5",
-        "const",
-        "lexical-scoping"
-      ]
+        "that-constant-coffee-craving"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 6,
@@ -102,13 +97,13 @@
       ],
       "tokens": 5967,
       "status": "done",
-      "notes": "Wrote source page [[javascriptallonge-naming-functions]] and updated concept pages [[function]], [[combinator]], and [[function-decorator]]. Key claims: function declaration hoisting, named function expressions, combinators like compose, and decorators like not. Entities: function declarations, combinators, decorators.",
+      "notes": "Recovered existing wiki page(s): naming-functions",
       "pages_written": [
-        "javascriptallonge-naming-functions",
-        "function",
-        "combinator",
-        "function-decorator"
-      ]
+        "naming-functions"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 7,
@@ -119,13 +114,13 @@
       ],
       "tokens": 3980,
       "status": "done",
-      "notes": "Created source page [[javascriptallonge-recipes-with-basic-functions]] and concept pages for partial-application, unary-functions, and left-variadic-functions. Key claims include partial application techniques, unary function decorators, and left-variadic function patterns from JavaScriptAllonge (p.79-93).",
+      "notes": "Written the chapter page 'recipes-with-basic-functions' covering basic function recipes including partial application, unary, tap, maybe, once, and left-variadic functions. Key entities touched: callFirst, callLast, callLeft, callRight, unary, tap, maybe, once, leftVariadic, leftGather. No additional pages created as the chunk content was integrated into the chapter page and existing pages were not updated in this run.",
       "pages_written": [
-        "javascriptallonge-recipes-with-basic-functions",
-        "partial-application",
-        "unary-functions",
-        "left-variadic-functions"
-      ]
+        "recipes-with-basic-functions"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 8,
@@ -136,15 +131,13 @@
       ],
       "tokens": 4782,
       "status": "done",
-      "notes": "Key claims: JavaScript's truthiness determines logical operators (!, &&, ||) and conditionals; ternary operator as control-flow; array destructuring with gathering. Pages written: source pages for 'picking-the-bean' and 'composing-and-decomposing-data', concept pages for truthiness, logical-operators, ternary-operator, and array-destructuring.",
+      "notes": "Recovered existing wiki page(s): picking-the-bean-choice-and-truthiness",
       "pages_written": [
-        "javascriptallonge-picking-the-bean-choice-and-truthiness",
-        "javascriptallonge-composing-and-decomposing-data",
-        "truthiness",
-        "logical-operators",
-        "ternary-operator",
-        "array-destructuring"
-      ]
+        "picking-the-bean-choice-and-truthiness"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 9,
@@ -155,9 +148,14 @@
       ],
       "tokens": 5965,
       "status": "done",
-      "notes": "Created source page [[javascriptallonge-self-similarity]] and concept pages [[linear-recursion]], [[tail-call-optimization]], [[folding]], and [[mapping]]. Key claims: recursion in array operations, linear recursion patterns, tail-call optimization for performance, and default arguments in recursive functions.",
+      "notes": "Key claims: This chunk introduces self-similarity in recursive algorithms, linear recursion, mapping and folding functions, tail-call optimization, and factorial computation. It explains how recursive functions can be used to work with self-similar data structures like lists, and how tail-call optimization can make recursive functions more memory-efficient. Entities touched: lists, arrays, recursion, linear recursion, tail-call optimization, map function, fold function, factorial computation. Pages written: self-similarity.",
       "pages_written": [
-        "mapping"
+        "self-similarity"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Linear recursion concept, tail-call optimization, and map function are important concepts but not in scope for this ingest run."
       ]
     },
     {
@@ -169,12 +167,14 @@
       ],
       "tokens": 5199,
       "status": "done",
-      "notes": "Key claims: JavaScript array recursion is inefficient due to temporary array copying; Lisp's linked lists (cons cells) offer better performance. Pages written: source [[javascriptallonge-garbage-garbage-everywhere]], concept pages [[arrays]], [[linked-lists]], [[object-destructuring]].",
+      "notes": "The chapter 'Garbage, Garbage Everywhere' from 'javascriptallonge.pdf' (p.126-140) was ingested. Key claims: The [first, ...rest] approach to recursion is slow due to creating temporary arrays and copying elements, leading to memory thrashing. The chapter contrasts this with Lisp's linked list implementation (using cons cells) which is more memory-efficient. It also discusses why JavaScript uses arrays instead of linked lists, citing performance and cache considerations. Pages written: garbage-garbage-everywhere (chapter summary). No concept pages were created for linked lists, garbage collection, or recursion as they were not authorized by the page plan.",
       "pages_written": [
-        "javascriptallonge-garbage-garbage-everywhere",
-        "arrays",
-        "linked-lists",
-        "object-destructuring"
+        "garbage-garbage-everywhere"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Concept pages for linked lists, garbage collection, and recursion are not authorized by the PagePlan for this chunk."
       ]
     },
     {
@@ -186,13 +186,13 @@
       ],
       "tokens": 4883,
       "status": "done",
-      "notes": "Wrote source page [[javascriptallonge-mutation]] on JavaScript mutation mechanics. Updated [[arrays]], [[linked-lists]], and [[array-destructuring]] with insights on mutation, aliases, and destructuring. Key claims: `const` allows mutation but not rebinding; `let` vs `var` scope differences; linked list structure sharing vs array copying.",
+      "notes": "Recovered existing wiki page(s): mutation",
       "pages_written": [
-        "javascriptallonge-mutation",
-        "arrays",
-        "linked-lists",
-        "array-destructuring"
-      ]
+        "mutation"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 12,
@@ -203,14 +203,13 @@
       ],
       "tokens": 5849,
       "status": "done",
-      "notes": "Ingested chapter on Copy on Write (pages 158-176) from JavaScriptAllonge. Created source page [[javascriptallonge-copy-on-write]] and updated [[linked-lists]], [[array-destructuring]]. Added new concept pages [[tortoise-and-hare-algorithm]] and [[functional-iterators]] for loop detection and iterator patterns. Key claims: copy-on-write tradeoffs, structure sharing in linked lists vs arrays, and functional iterators for lazy evaluation.",
+      "notes": "Created a new source page 'copy-on-write' covering copy-on-write strategies for data structures. The page discusses the contrast between copy-on-write and copy-on-read approaches, uses the 'coffee cow' metaphor to illustrate array vs. linked list behavior, and presents a COW implementation for linked lists. Key concepts include structure sharing, tradeoffs between approaches, and related topics like functional iterators and loop detection algorithms. No other pages were created as the chunk focused primarily on this single topic.",
       "pages_written": [
-        "javascriptallonge-copy-on-write",
-        "linked-lists",
-        "array-destructuring",
-        "tortoise-and-hare-algorithm",
-        "functional-iterators"
-      ]
+        "copy-on-write"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 13,
@@ -221,13 +220,13 @@
       ],
       "tokens": 5977,
       "status": "done",
-      "notes": "Ingested chapter on functional data structures and combinators from JavaScriptAllonge. Key claims: 1) K, I, V combinators enable data structures without arrays/objects. 2) Vireo (V) creates pairs/lists via function application. 3) mapWith/flip demonstrate currying and functional composition. Pages created: [[javascriptallonge-making-data-out-of-functions]] (source), [[combinator]], [[functional-data-structures]], [[mapwith-and-flip]].",
+      "notes": "Recovered existing wiki page(s): making-data-out-of-functions",
       "pages_written": [
-        "javascriptallonge-making-data-out-of-functions",
-        "combinator",
-        "functional-data-structures",
-        "mapwith-and-flip"
-      ]
+        "making-data-out-of-functions"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 14,
@@ -238,12 +237,13 @@
       ],
       "tokens": 1800,
       "status": "done",
-      "notes": "Wrote source page [[javascriptallonge-object-assign]] on Object.assign for shallow cloning/merging and quasi-literals (template strings). Created concept pages [[object-assign]] and [[quasi-literals]]. Key claims: Object.assign enables shallow copying, quasi-literals improve string interpolation readability. Entities touched: JavaScript features.",
+      "notes": "Created a new source page 'object-assign' detailing the Object.assign function in JavaScript, including its usage for extending objects and cloning, with examples from the chunk (raw/javascriptallonge.pdf p.198-205). The page covers how Object.assign can be used to copy objects, extend one object with another, and its application in prototype manipulation. No other pages were created or updated as part of this chunk's content.",
       "pages_written": [
-        "javascriptallonge-object-assign",
-        "object-assign",
-        "quasi-literals"
-      ]
+        "object-assign"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 15,
@@ -254,13 +254,13 @@
       ],
       "tokens": 5213,
       "status": "done",
-      "notes": "Key claims: Introduced iterators (functional/object-based), iterables via Symbol.iterator, and ordered collections with operations like mapWith. Pages written: [[javascriptallonge-iteration-and-iterables]] (source), [[functional-iterators]], [[iterable]], [[ordered-collection]].",
+      "notes": "Recovered existing wiki page(s): iteration-and-iterables",
       "pages_written": [
-        "javascriptallonge-iteration-and-iterables",
-        "functional-iterators",
-        "iterable",
-        "ordered-collection"
-      ]
+        "iteration-and-iterables"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 16,
@@ -271,13 +271,13 @@
       ],
       "tokens": 5687,
       "status": "done",
-      "notes": "Ingested chapter on JavaScript generators (pages 224-245). Key claims: Generators simplify iterators via implicit state management, enable coroutines, and streamline iterable creation. Pages written/updated: [[javascriptallonge-generating-iterables]] (source), [[generator]] (entity), [[coroutine]] (concept), and [[iterable]] (concept).",
+      "notes": "Written the main chapter page 'generating-iterables' covering JavaScript generators and iterable objects. The chunk focused on how generators simplify implementation of iterators, especially for recursive structures and state machines. Key examples included recursive iterators for tree traversal and Fibonacci sequence generation. No additional pages were created beyond the main chapter page as per the plan.",
       "pages_written": [
-        "javascriptallonge-generating-iterables",
-        "generator",
-        "coroutine",
-        "iterable"
-      ]
+        "generating-iterables"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 17,
@@ -288,12 +288,14 @@
       ],
       "tokens": 3722,
       "status": "done",
-      "notes": "Created source page [[javascriptallonge-lazy-eager-collections]] and concept pages [[lazy-evaluation]] and [[eager-evaluation]]. Updated [[javascriptallonge-iteration-and-iterables]] to link to lazy/eager collections. Key claims: lazy collections use iterators for memory efficiency, eager collections process data immediately with copy-on-read. Entities touched: Pair, Stack, Numbers, LazyCollection, EagerCollection.",
+      "notes": "Created the main chapter page 'lazy-and-eager-collections' covering lazy and eager collections in JavaScript Allongé. The page explains the concepts of lazy vs eager evaluation, their benefits, and provides examples using Numbers, Pair, and Stack. Linked to existing pages on iterables and generating iterables for foundational context. No additional concept pages were created as the existing ones cover the relevant material adequately.",
       "pages_written": [
-        "javascriptallonge-lazy-eager-collections",
-        "lazy-evaluation",
-        "eager-evaluation",
-        "javascriptallonge-iteration-and-iterables"
+        "lazy-and-eager-collections"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Lazy and eager collections chapter content"
       ]
     },
     {
@@ -305,11 +307,14 @@
       ],
       "tokens": 3530,
       "status": "done",
-      "notes": "Wrote source page for 'javascriptallonge-interlude-the-carpenter-interviews-for-a-job' and concept pages for 'floyd-s-cycle-finding-algorithm' and 'stateful-map'. Updated 'iterable' and 'lazy-evaluation' concepts with details from the chapter. Key claims: Using iterables and stateful mapping to detect cycles via Floyd's algorithm. Entities touched: The Carpenter, Christine, Bob Plissken. Pages written: 3.",
+      "notes": "Wrote a new source page 'interlude-the-carpenter-interviews-for-a-job' summarizing the interview scenario where the Carpenter solves a checkerboard game halting problem using cycle detection algorithms. The chunk focused on the problem, the Carpenter's solution using the Tortoise and Hare algorithm, and the aftermath of the interview. No other pages were updated or created as part of this chunk.",
       "pages_written": [
-        "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
-        "floyd-s-cycle-finding-algorithm",
-        "stateful-map"
+        "interlude-the-carpenter-interviews-for-a-job"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Discussion of iterables, generators, and lazy evaluation that should be covered in separate pages."
       ]
     },
     {
@@ -321,12 +326,13 @@
       ],
       "tokens": 4643,
       "status": "done",
-      "notes": "Key claims: Interactive generators enable stateful functions (e.g., Naughts and Crosses game), contrasting stateless lookups with stateful control flow. Iterable operations (mapWith, zip, memoize) are detailed. Entities: generators, stateful functions, iterables. Pages written: javascriptallonge-interactive-generators (source), updated javascriptallonge-generating-iterables and javascriptallonge-iteration-and-iterables.",
+      "notes": "The chunk focused on interactive generators and their use in stateful functions, using naughts and crosses as an example. Key claims included the use of generators for implicit state management, and the ability to pass values in and out of generator functions. Entities touched included the naughts and crosses game. Pages written include 'interactive-generators'.",
       "pages_written": [
-        "javascriptallonge-interactive-generators",
-        "javascriptallonge-generating-iterables",
-        "javascriptallonge-iteration-and-iterables"
-      ]
+        "interactive-generators"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 20,
@@ -337,11 +343,13 @@
       ],
       "tokens": 3102,
       "status": "done",
-      "notes": "Wrote source page [[javascriptallonge-copyright-notice]] summarizing copyright details, authorship, and image licenses from pages 293-297. Updated entity page [[reg-raganwald-braithwaite]] with author's contact information and websites. No further pages needed; chunk fully integrated.",
+      "notes": "Recovered existing wiki page(s): copyright-notice",
       "pages_written": [
-        "javascriptallonge-copyright-notice",
-        "reg-raganwald-braithwaite"
-      ]
+        "copyright-notice"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     }
   ]
 }

@@ -83,6 +83,16 @@ class Manifest:
     def mark_integrated(self) -> Manifest:
         return replace(self, integrated=True)
 
+    def requeue_missing_pages(
+        self, existing_pages: frozenset[str], hub_page_id: str = ""
+    ) -> Manifest:
+        chunks = tuple(
+            _requeue_if_missing_pages(chunk, existing_pages, hub_page_id) for chunk in self.chunks
+        )
+        if chunks == self.chunks:
+            return self
+        return replace(self, chunks=chunks, integrated=False)
+
     def digest(self) -> str:
         """Concatenated per-chunk notes for the integrate run.
 
@@ -132,6 +142,34 @@ class Manifest:
             for page in c.pages_written:
                 counts[page] = counts.get(page, 0) + 1
         return counts
+
+
+def _requeue_if_missing_pages(
+    chunk: ChunkRecord, existing_pages: frozenset[str], hub_page_id: str
+) -> ChunkRecord:
+    if chunk.status != "done":
+        return chunk
+    if chunk.route_plan_pages and not chunk.pages_written:
+        return _pending_chunk(chunk)
+    if hub_page_id and set(chunk.pages_written) == {hub_page_id}:
+        return _pending_chunk(chunk)
+    if not chunk.pages_written:
+        return chunk
+    if all(page in existing_pages for page in chunk.pages_written):
+        return chunk
+    return _pending_chunk(chunk)
+
+
+def _pending_chunk(chunk: ChunkRecord) -> ChunkRecord:
+    return replace(
+        chunk,
+        status="pending",
+        notes="",
+        pages_written=(),
+        route_plan_pages=0,
+        route_plan_gaps=0,
+        route_gap_summaries=(),
+    )
 
 
 def to_json(manifest: Manifest) -> str:

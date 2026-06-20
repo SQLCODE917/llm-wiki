@@ -8,7 +8,7 @@ from forge.core.workflow import ToolDef, ToolSpec
 from pydantic import BaseModel, Field, field_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
-from llmwiki.domain.ingest_route_plan import IngestRoutePlanState
+from llmwiki.domain.ingest_route_plan import IngestRoutePlanError, IngestRoutePlanState
 from llmwiki.domain.naming import singular_plural_collision
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.search import render_hits, search_pages
@@ -189,6 +189,7 @@ def write_page_tool(
     new_page_prefix: str | None = None,
     prevent_singular_plural_siblings: bool = False,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
+    recoverable_errors: bool = False,
 ) -> ToolDef:
     """write_page, optionally guarded by a read-before-rewrite contract.
 
@@ -205,16 +206,36 @@ def write_page_tool(
     def _write_page(**kwargs: object) -> str:
         params = WritePageParams(**kwargs)  # type: ignore[arg-type]
         if ingest_route_plan_state is not None:
-            ingest_route_plan_state.authorize_page_write(params.page_id, params.page_kind)
+            try:
+                ingest_route_plan_state.authorize_page_write(params.page_id, params.page_kind)
+            except IngestRoutePlanError as exc:
+                if not recoverable_errors:
+                    raise
+                return (
+                    "No page was written. The active ingest route plan rejected "
+                    f"write_page: {exc} Use a PageId and PageKind authorized by "
+                    "the deterministic PagePlan, or record the material as a route "
+                    "gap in plan_pages before continuing. You must successfully "
+                    "write an authorized page before finish_chunk. "
+                    f"Authorized targets: {_active_plan_targets(ingest_route_plan_state)}"
+                )
         if (
             read_tracker is not None
             and params.page_id not in read_tracker
             and params.page_id in store.list_pages()
         ):
-            raise WikiStoreError(
+            if not recoverable_errors:
+                raise WikiStoreError(
+                    f"WikiPage '{params.page_id}' already exists and write_page replaces "
+                    f"it entirely. Call read_page(page_id='{params.page_id}') first, "
+                    "then rewrite it carrying forward the content you keep."
+                )
+            return (
+                "No page was written. "
                 f"WikiPage '{params.page_id}' already exists and write_page replaces "
                 f"it entirely. Call read_page(page_id='{params.page_id}') first, "
-                "then rewrite it carrying forward the content you keep."
+                "then call write_page again carrying forward the content you keep. "
+                "You must successfully write the authorized page before finishing."
             )
         if new_page_prefix is not None and params.page_id not in store.list_pages():
             valid = params.page_id == new_page_prefix or params.page_id.startswith(
@@ -288,4 +309,13 @@ def finish_tool(name: str, description: str) -> ToolDef:
     return ToolDef(
         spec=ToolSpec(name=name, description=description, parameters=FinishParams),
         callable=_finish,
+    )
+
+
+def _active_plan_targets(state: IngestRoutePlanState) -> str:
+    if state.active_plan is None:
+        return "none; call plan_pages again."
+    return ", ".join(
+        f"{page.metadata.page_id} (PageKind {page.metadata.page_kind})"
+        for page in state.active_plan.planned_pages
     )

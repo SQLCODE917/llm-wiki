@@ -41,6 +41,7 @@ def build_map_workflow(
     new_page_prefix: str | None = None,
     chunk_id: int | None = None,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
+    recoverable_tool_errors: bool = False,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     prevent_siblings = prevents_singular_plural_siblings(profiles)
@@ -64,7 +65,7 @@ def build_map_workflow(
             max_chars=2000,
             track_truncated_reads=False,
         ),
-        plan_pages_tool(ingest_route_plan_state),
+        plan_pages_tool(ingest_route_plan_state, recoverable_errors=recoverable_tool_errors),
         write_page_tool(
             store,
             today,
@@ -75,6 +76,7 @@ def build_map_workflow(
             new_page_prefix=new_page_prefix,
             prevent_singular_plural_siblings=prevent_siblings,
             ingest_route_plan_state=ingest_route_plan_state,
+            recoverable_errors=recoverable_tool_errors,
         ),
         finish_tool(
             "finish_chunk",
@@ -107,6 +109,7 @@ def build_integrate_workflow(
     required_link_targets: tuple[str, ...] = (),
     min_required_links: int = 0,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
+    recoverable_tool_errors: bool = False,
 ) -> Workflow:
     seen: set[str] = set()
     hub_page = slugify(source_locator.rsplit(".", maxsplit=1)[0]) if source_locator else ""
@@ -129,7 +132,7 @@ def build_integrate_workflow(
             max_chars=4000,
             track_truncated_reads=False,
         ),
-        plan_pages_tool(ingest_route_plan_state),
+        plan_pages_tool(ingest_route_plan_state, recoverable_errors=recoverable_tool_errors),
         write_fixed_source_page_tool(
             store,
             today,
@@ -140,6 +143,7 @@ def build_integrate_workflow(
             required_link_targets=required_link_targets,
             min_required_links=min_required_links,
             ingest_route_plan_state=ingest_route_plan_state,
+            recoverable_errors=recoverable_tool_errors,
         ),
         finish_tool(
             "finish_ingest",

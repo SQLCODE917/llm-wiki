@@ -9,6 +9,7 @@ from pydantic import BaseModel, Field, field_validator
 
 from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlan,
+    IngestRoutePlanError,
     IngestRoutePlanState,
     PlannedPage,
     RouteGap,
@@ -64,7 +65,7 @@ class PlanPagesParams(BaseModel):
     )
 
 
-def plan_pages_tool(state: IngestRoutePlanState) -> ToolDef:
+def plan_pages_tool(state: IngestRoutePlanState, recoverable_errors: bool = False) -> ToolDef:
     def _plan_pages(**kwargs: object) -> str:
         params = PlanPagesParams(**kwargs)  # type: ignore[arg-type]
         plan = IngestRoutePlan(
@@ -82,7 +83,17 @@ def plan_pages_tool(state: IngestRoutePlanState) -> ToolDef:
                 for gap in params.gaps
             ),
         )
-        summary = state.accept(plan)
+        try:
+            summary = state.accept(plan)
+        except IngestRoutePlanError as exc:
+            if not recoverable_errors:
+                raise
+            return (
+                "No ingest route plan was accepted. The deterministic PagePlan "
+                f"rejected plan_pages: {exc} Submit a new plan using only "
+                "authorized PageIds, PageKinds, and plan_pages actions, or record "
+                "unsupported material as a route gap."
+            )
         gap_lines = "\n".join(f"- {gap.summary}" for gap in plan.gaps)
         return (
             "Validated ingest route plan: "

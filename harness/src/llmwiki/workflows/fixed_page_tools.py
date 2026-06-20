@@ -67,6 +67,7 @@ def write_fixed_source_page_tool(
     required_link_targets: tuple[str, ...] = (),
     min_required_links: int = 0,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
+    recoverable_errors: bool = False,
 ) -> ToolDef:
     required_target_set = frozenset(required_link_targets)
     base = write_page_tool(
@@ -76,6 +77,7 @@ def write_fixed_source_page_tool(
         evidence_policy=evidence_policy,
         new_page_prefix=new_page_prefix,
         ingest_route_plan_state=ingest_route_plan_state,
+        recoverable_errors=recoverable_errors,
     )
 
     def _write_page(**kwargs: object) -> str:

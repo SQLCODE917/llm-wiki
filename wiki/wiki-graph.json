@@ -9,6 +9,131 @@
       "resolved": true,
       "source": "archimedes",
       "target": "antikythera-mechanism"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "copy-on-write"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "copyright-notice"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "front-matter"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "garbage-garbage-everywhere"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "interactive-generators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "interlude-the-carpenter-interviews-for-a-job"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "lazy-and-eager-collections"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "making-data-out-of-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "mutation"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "naming-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "object-assign"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "recipes-with-basic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "self-similarity"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "that-constant-coffee-craving"
+    },
+    {
+      "resolved": true,
+      "source": "lazy-and-eager-collections",
+      "target": "generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "lazy-and-eager-collections",
+      "target": "iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "recipes-with-basic-functions",
+      "target": "as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "recipes-with-basic-functions",
+      "target": "closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "recipes-with-basic-functions",
+      "target": "javascriptallonge"
     }
   ],
   "metadata": {
@@ -39,6 +164,219 @@
         "antikythera-mechanism.md"
       ],
       "summary": "Ancient Greek mathematician and engineer, known for contributions to geometry, statics, and hydrostatics."
+    },
+    {
+      "category": "source",
+      "name": "as-little-as-possible-about-functions-but-no-less",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.30-43"
+      ],
+      "summary": "Chapter covering basic JavaScript functions, their evaluation, and fundamentals of function application."
+    },
+    {
+      "category": "source",
+      "name": "closures-and-scope",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.44-48"
+      ],
+      "summary": "Chapter on closures and scope in JavaScriptAllonge."
+    },
+    {
+      "category": "source",
+      "name": "copy-on-write",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.158-176"
+      ],
+      "summary": "Chapter on copy-on-write strategies for data structures."
+    },
+    {
+      "category": "source",
+      "name": "copyright-notice",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.293-297"
+      ],
+      "summary": "Copyright and image attribution information for JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "forewords-to-the-first-edition",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.14-29"
+      ],
+      "summary": "Forewords to the first edition of JavaScript Allong\u00e9, including contributions by Michael Fogus and Matthew Knox."
+    },
+    {
+      "category": "source",
+      "name": "front-matter",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.1-13"
+      ],
+      "summary": "Front matter of JavaScript Allong\u00e9, including title, author, and prefaces."
+    },
+    {
+      "category": "source",
+      "name": "garbage-garbage-everywhere",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.126-140"
+      ],
+      "summary": "Chapter on garbage collection and memory inefficiency in JavaScript recursion"
+    },
+    {
+      "category": "source",
+      "name": "generating-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.224-245"
+      ],
+      "summary": "Chapter on generating iterables using JavaScript generators."
+    },
+    {
+      "category": "source",
+      "name": "interactive-generators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.273-292"
+      ],
+      "summary": "Chapter on interactive generators and their use in stateful functions."
+    },
+    {
+      "category": "source",
+      "name": "interlude-the-carpenter-interviews-for-a-job",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.261-272"
+      ],
+      "summary": "Interview scenario where the Carpenter solves a checkerboard game halting problem using cycle detection algorithms."
+    },
+    {
+      "category": "source",
+      "name": "iteration-and-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.206-223"
+      ],
+      "summary": "Chapter on iteration and iterables in JavaScriptAllonge, covering functional iterators, iterator objects, and the for...of loop."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge",
+      "outbound_links": [
+        "as-little-as-possible-about-functions-but-no-less",
+        "closures-and-scope",
+        "copy-on-write",
+        "copyright-notice",
+        "forewords-to-the-first-edition",
+        "front-matter",
+        "garbage-garbage-everywhere",
+        "generating-iterables",
+        "interactive-generators",
+        "interlude-the-carpenter-interviews-for-a-job",
+        "iteration-and-iterables",
+        "lazy-and-eager-collections",
+        "making-data-out-of-functions",
+        "mutation",
+        "naming-functions",
+        "object-assign",
+        "picking-the-bean-choice-and-truthiness",
+        "recipes-with-basic-functions",
+        "self-similarity",
+        "that-constant-coffee-craving"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "Hub page for the source 'JavaScript Allong\u00e9', summarizing the whole book and linking chapter pages."
+    },
+    {
+      "category": "source",
+      "name": "lazy-and-eager-collections",
+      "outbound_links": [
+        "generating-iterables",
+        "iteration-and-iterables"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.246-260"
+      ],
+      "summary": "Chapter on lazy and eager collections in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "making-data-out-of-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.177-197"
+      ],
+      "summary": "Chapter on creating data structures using functions and combinatory logic."
+    },
+    {
+      "category": "source",
+      "name": "mutation",
+      "outbound_links": [],
+      "sources": [],
+      "summary": "Chapter on mutation in JavaScript, covering mutability of arrays and objects, aliases, and implications of mutation."
+    },
+    {
+      "category": "source",
+      "name": "naming-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.62-78"
+      ],
+      "summary": "Summary of the Naming Functions chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "object-assign",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.198-205"
+      ],
+      "summary": "Chapter on Object.assign function and its usage in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "picking-the-bean-choice-and-truthiness",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.94-108"
+      ],
+      "summary": "Chapter on choice and truthiness in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "recipes-with-basic-functions",
+      "outbound_links": [
+        "as-little-as-possible-about-functions-but-no-less",
+        "closures-and-scope",
+        "javascriptallonge"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.79-93"
+      ],
+      "summary": "Chapter on basic function recipes including partial application, unary, tap, maybe, once, and left-variadic functions."
+    },
+    {
+      "category": "source",
+      "name": "self-similarity",
+      "outbound_links": [],
+      "sources": [],
+      "summary": "Chapter on self-similarity and recursive algorithms in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "that-constant-coffee-craving",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.49-61"
+      ],
+      "summary": "Chapter on naming functions and using const for bindings in JavaScript."
     }
   ]
 }

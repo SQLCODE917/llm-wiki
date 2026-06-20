@@ -3,12 +3,14 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Literal
 
 from llmwiki.domain.naming import singular_plural_collision
 from llmwiki.domain.objects import IngestRun, PagePlan, RawSource, SourceBundle
 from llmwiki.domain.pages import (
     PageMetadata,
+    slugify,
     validate_page_id,
 )
 
@@ -181,20 +183,16 @@ def validate_ingest_route_plan(
         if page_id in seen:
             raise IngestRoutePlanError(f"Duplicate planned page ID {page_id!r}.")
         seen.add(page_id)
-        _validate_page_plan_target(planned_page, context.page_plan)
+        _validate_page_plan_target(planned_page, context)
         _validate_action_for_existing_page(planned_page, context.existing_pages)
         _validate_new_page_id(planned_page, context)
     return plan
 
 
-def _validate_page_plan_target(planned_page: PlannedPage, page_plan: PagePlan | None) -> None:
-    if page_plan is None:
+def _validate_page_plan_target(planned_page: PlannedPage, context: IngestRouteContext) -> None:
+    if context.page_plan is None:
         return
-    planned_targets = {
-        write.page_metadata.page_id: write.page_metadata.page_kind
-        for write in page_plan.planned_writes
-        if write.action != "defer"
-    }
+    planned_targets = _authorized_page_plan_targets(context)
     page_id = planned_page.metadata.page_id
     if page_id not in planned_targets:
         allowed = ", ".join(sorted(planned_targets)) or "none"
@@ -207,6 +205,29 @@ def _validate_page_plan_target(planned_page: PlannedPage, page_plan: PagePlan | 
             f"PagePlan authorizes PageId {page_id!r} as PageKind {expected_page_kind!r}, "
             f"not {planned_page.metadata.page_kind!r}."
         )
+
+
+def _authorized_page_plan_targets(context: IngestRouteContext) -> dict[str, str]:
+    if context.page_plan is None:
+        return {}
+    hub_page_id = slugify(Path(context.source_locator).stem)
+    targets = {
+        write.page_metadata.page_id: write.page_metadata.page_kind
+        for write in context.page_plan.planned_writes
+        if write.action != "defer"
+    }
+    if context.scope == "pdf-integrate":
+        return {hub_page_id: targets[hub_page_id]} if hub_page_id in targets else {}
+    if context.scope != "pdf-chunk" or context.chunk_id is None:
+        return targets
+    unit_id = f"unit-{context.chunk_id:04d}"
+    return {
+        write.page_metadata.page_id: write.page_metadata.page_kind
+        for write in context.page_plan.planned_writes
+        if write.action != "defer"
+        and write.page_metadata.page_id != hub_page_id
+        and unit_id in write.extracted_units
+    }
 
 
 def _validate_action_for_existing_page(

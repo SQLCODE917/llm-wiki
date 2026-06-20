@@ -61,6 +61,7 @@ from llmwiki.domain.system_pages import (
     SEMANTIC_LINT_PAGE,
 )
 from llmwiki.pdf import PdfError
+from llmwiki.pdf.manifest import Manifest
 from llmwiki.pdf.pipeline import (
     ExtractionResult,
     chunk_file,
@@ -89,7 +90,7 @@ _MAX_ITERATIONS = {
     "grounding": 18,
     "semantic-lint": 18,
     "pdf-chunk": 24,
-    "pdf-integrate": 20,
+    "pdf-integrate": 32,
     "chat": 12,
     "chat-file": 14,
 }
@@ -251,6 +252,7 @@ class Session:
             new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
             write_log=write_log,
             ingest_route_plan_state=ingest_route_plan_state,
+            recoverable_tool_errors=True,
         )
         message = (
             f"Ingest the source 'raw/{source_locator}' into the wiki. "
@@ -282,9 +284,21 @@ class Session:
         result = self.extract_pdf(
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
-        manifest, total = result.manifest, len(result.manifest.chunks)
+        hub = slugify(Path(source_locator).stem)
+        manifest = result.manifest.requeue_missing_pages(
+            frozenset(self.store.list_pages()), hub_page_id=hub
+        )
+        if manifest != result.manifest:
+            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
+            save_manifest(result)
+        total = len(manifest.chunks)
         page_plan = self._pdf_page_plan(ingest_run, source_locator, result)
         plan_report = self._persist_page_plan(source_locator, page_plan)
+        recovered = self._recover_pending_pdf_chunks(manifest, source_locator, page_plan)
+        if recovered != manifest:
+            manifest = recovered
+            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
+            save_manifest(result)
         if reintegrate and manifest.pending:
             raise PdfError(
                 f"--reintegrate requires a completed ingest; raw/{source_locator} "
@@ -321,16 +335,24 @@ class Session:
                     new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
                     chunk_id=record.chunk_id,
                     ingest_route_plan_state=ingest_route_plan_state,
+                    recoverable_tool_errors=True,
                 ),
                 message,
                 "pdf-chunk",
                 tag=f"pdf-chunk-{record.chunk_id:04d}",
             )
             route_summary = ingest_route_plan_state.summary()
+            written_pages = tuple(dict.fromkeys(write_log))
+            if route_summary.planned_page_count and not written_pages:
+                raise PdfError(
+                    f"Chunk {record.chunk_id} finished without any successful page writes. "
+                    "The model must write an authorized PagePlan target or move unsupported "
+                    "material into route gaps before finish_chunk."
+                )
             manifest = manifest.mark_done(
                 record.chunk_id,
                 notes,
-                pages_written=tuple(dict.fromkeys(write_log)),
+                pages_written=written_pages,
                 route_plan_pages=route_summary.planned_page_count,
                 route_plan_gaps=route_summary.route_gap_count,
                 route_gap_summaries=route_summary.route_gap_summaries,
@@ -339,7 +361,6 @@ class Session:
             if self.on_chunk_note is not None:
                 self.on_chunk_note(f"[chunk {record.chunk_id}/{total}] {notes}")
 
-        hub = slugify(Path(source_locator).stem)
         salience = compute_salience(
             self.store.page_texts(),
             manifest.write_counts(),
@@ -379,6 +400,7 @@ class Session:
                 required_link_targets=required_link_targets,
                 min_required_links=min(12, len(required_link_targets)),
                 ingest_route_plan_state=ingest_route_plan_state,
+                recoverable_tool_errors=True,
             ),
             message,
             "pdf-integrate",
@@ -435,6 +457,22 @@ class Session:
         report = observation_report(page_plan)
         self.store.write_page_plan_artifacts(source_locator, page_plan_to_json(page_plan), report)
         return report
+
+    def _recover_pending_pdf_chunks(
+        self, manifest: Manifest, source_locator: str, page_plan: PagePlan
+    ) -> Manifest:
+        existing_pages = set(self.store.list_pages())
+        hub = slugify(Path(source_locator).stem)
+        for record in manifest.pending:
+            targets = _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
+            if targets and all(target in existing_pages for target in targets):
+                manifest = manifest.mark_done(
+                    record.chunk_id,
+                    "Recovered existing wiki page(s): " + ", ".join(targets),
+                    pages_written=targets,
+                    route_plan_pages=len(targets),
+                )
+        return manifest
 
     def _page_plan_id(self, source_locator: str, scope: str) -> str:
         return f"{self.run_id or self.today}-{scope}-{slugify(Path(source_locator).stem)}"
@@ -813,6 +851,19 @@ def _single_source_locator(ingest_run: IngestRun) -> str:
 
 def _single_raw_source(ingest_run: IngestRun) -> RawSource:
     return ingest_run.source_bundle.raw_sources[0]
+
+
+def _page_plan_targets_for_chunk(
+    page_plan: PagePlan, chunk_id: int, hub_page_id: str
+) -> tuple[str, ...]:
+    unit_id = f"unit-{chunk_id:04d}"
+    return tuple(
+        write.page_metadata.page_id
+        for write in page_plan.planned_writes
+        if write.action != "defer"
+        and write.page_metadata.page_id != hub_page_id
+        and unit_id in write.extracted_units
+    )
 
 
 def _render_count_delta(label: str, before: int, after: int) -> str:

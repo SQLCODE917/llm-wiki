@@ -51,6 +51,7 @@ def build_ingest_workflow(
     new_page_prefix: str | None = None,
     write_log: list[str] | None = None,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
+    recoverable_tool_errors: bool = False,
 ) -> Workflow:
     seen: set[str] = set()  # read-before-rewrite contract, per run
     prevent_siblings = prevents_singular_plural_siblings(profiles)
@@ -69,7 +70,7 @@ def build_ingest_workflow(
         read_source_tool(store),
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
-        plan_pages_tool(ingest_route_plan_state),
+        plan_pages_tool(ingest_route_plan_state, recoverable_errors=recoverable_tool_errors),
         write_page_tool(
             store,
             today,
@@ -80,6 +81,7 @@ def build_ingest_workflow(
             new_page_prefix=new_page_prefix,
             prevent_singular_plural_siblings=prevent_siblings,
             ingest_route_plan_state=ingest_route_plan_state,
+            recoverable_errors=recoverable_tool_errors,
         ),
         finish_tool(
             "finish_ingest",

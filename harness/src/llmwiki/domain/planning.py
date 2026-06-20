@@ -105,8 +105,11 @@ def observation_report(plan: PagePlan) -> str:
         1 for comparison in plan.claim_comparisons if comparison.relation == "contradiction"
     )
     paths = "\n".join(
-        f"- `{write.page_metadata.page_id}` -> "
-        f"`{write.projection.page_path if write.projection else ''}`"
+        f"- `{write.page_metadata.page_id}` | plan_pages action "
+        f"`{_route_action(write.action)}` | PagePlan action `{write.action}` | "
+        f"PageKind `{write.page_metadata.page_kind}` | "
+        f"sources `{', '.join(write.page_metadata.sources)}` | "
+        f"path `{write.projection.page_path if write.projection else ''}`"
         for write in plan.planned_writes
     )
     return (
@@ -117,7 +120,7 @@ def observation_report(plan: PagePlan) -> str:
         f"- Pages created: {created}\n"
         f"- Contradictions: {contradictions}\n"
         f"- Deferrals: {deferred}\n\n"
-        "## Final Page Paths\n\n"
+        "## Planned Page Targets\n\n"
         f"{paths}\n"
     )
 
@@ -127,3 +130,11 @@ def _document_title(source_text: str, source_locator: str) -> str:
     if match:
         return match.group(1).strip()
     return Path(source_locator).stem.replace("-", " ").replace("_", " ").strip()
+
+
+def _route_action(page_plan_action: str) -> str:
+    if page_plan_action == "enrich-existing":
+        return "enrich"
+    if page_plan_action == "create-new":
+        return "create"
+    return "route-gap"

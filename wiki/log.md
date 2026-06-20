@@ -56,3 +56,32 @@ Nodes: 2
 Edges: 2
 Unresolved edges: 0
 wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-19] ingest | javascriptallonge.pdf
+The hub source page 'javascriptallonge' has been created and links all the chapter pages written during chunking. The page is organized into sections for Player Rules, Combat, Magic, GM/support material, Catalogs/charts, and Setting/lore, as per the page map navigation.
+
+## [2026-06-19] ingest | javascriptallonge.pdf
+The hub source page 'javascriptallonge' has been updated to link all chapter pages created during chunking. The page organizes content into categories like Player Rules, Combat, Magic, GM/Support Material, Setting/Lore, and Catalogs/Charts, providing a structured overview of the source material.
+
+## [2026-06-19] ingest | javascriptallonge.pdf
+The hub source page 'javascriptallonge' has been updated to summarize the whole source and link all chapter pages written during chunking. The page is organized into sections for Player Rules, Combat, Magic, and GM/Support Material, with cross-links to the relevant chapter pages.
+
+## [2026-06-19] ingest | javascriptallonge.pdf
+The hub source page 'javascriptallonge' has been updated to link all chapter pages created during the chunking process. The page now includes links to all 20 chapter pages organized into Player Rules, Combat, Magic, and GM/Support Material sections as per the page map.
+
+## [2026-06-19] graph | wiki graph
+Graph export: current
+Nodes: 23
+Edges: 27
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-19] ingest | javascriptallonge.pdf
+The hub source page 'javascriptallonge' has been created and updated to summarize the whole source and link all chapter pages written during chunking. The page is organized into sections for Player Rules, Combat, GM/Support Material, Catalogs/Charts, and Setting/Lore, with appropriate cross-links to the relevant chapter pages.
+
+## [2026-06-19] graph | wiki graph
+Graph export: current
+Nodes: 23
+Edges: 27
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
