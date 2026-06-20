@@ -588,6 +588,32 @@ class TestLinks:
         assert findings.broken_links == {}
         assert findings.orphan_pages == ("alpha",)
 
+    def test_source_hubs_are_not_reported_as_orphans(self) -> None:
+        pages = {
+            "book": render_page(
+                _wiki_page(
+                    "book",
+                    "source",
+                    "Book hub.",
+                    "Hub source page.",
+                    sources=("raw/book.pdf",),
+                )
+            ),
+            "book-functions": render_page(
+                _wiki_page(
+                    "book-functions",
+                    "source",
+                    "Functions chapter.",
+                    "Unlinked chapter page.",
+                    sources=("raw/book.pdf p.1-10",),
+                )
+            ),
+        }
+
+        findings = compute_findings(pages, index_page_ids={"book", "book-functions"})
+
+        assert findings.orphan_pages == ("book-functions",)
+
 
 class TestGraph:
     def test_graph_output_is_deterministic_and_excludes_system_pages(self) -> None:
@@ -640,7 +666,13 @@ class TestGraph:
 
 class TestCitations:
     INVENTORY = SourceInventory.from_raw_relative_paths(
-        ["article.md", "book.pdf", "nested/source.md"]
+        [
+            "article.md",
+            "book.pdf",
+            "nested/source.md",
+            "Sword World RPG - Complete Edition.pdf",
+            "javascriptallonge.pdf",
+        ]
     )
 
     def test_markdown_source_citation(self) -> None:
@@ -662,6 +694,45 @@ class TestCitations:
         )
         assert report.is_clean
         assert report.citations[0].page_range == (28, 41)
+
+    def test_pdf_path_with_spaces(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A rulebook claim. (raw/Sword World RPG - Complete Edition.pdf p.50-56)",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert report.citations[0].source_path == (
+            "raw/Sword World RPG - Complete Edition.pdf"
+        )
+        assert report.citations[0].page_range == (50, 56)
+
+    def test_citation_trailing_sentence_period_is_not_part_of_path(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A source-level claim cites raw/javascriptallonge.pdf.",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert report.citations[0].source_path == "raw/javascriptallonge.pdf"
+
+    def test_extra_uncertainty_text_after_locator_does_not_break_citation(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A narrative claim. (raw/javascriptallonge.pdf p.261-272, may)",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert report.citations[0].page_range == (261, 272)
+
+    def test_non_ascii_page_range_hyphen_is_normalized(self) -> None:
+        report = inspect_citations(
+            "alpha",
+            "A generated citation. (raw/book.pdf p.113‑117)",
+            self.INVENTORY,
+        )
+        assert report.is_clean
+        assert report.citations[0].page_range == (113, 117)
 
     def test_normalized_line_range_with_source_context(self) -> None:
         report = inspect_citations(

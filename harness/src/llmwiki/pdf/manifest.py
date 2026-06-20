@@ -104,6 +104,17 @@ class Manifest:
             return self
         return replace(self, chunks=chunks, integrated=False)
 
+    def requeue_pages_with_wrong_source(
+        self, sources_by_page: dict[str, tuple[str, ...]], source_locator: str
+    ) -> Manifest:
+        chunks = tuple(
+            _requeue_if_wrong_source(chunk, sources_by_page, source_locator)
+            for chunk in self.chunks
+        )
+        if chunks == self.chunks:
+            return self
+        return replace(self, chunks=chunks, integrated=False)
+
     def digest(self) -> str:
         """Concatenated per-chunk notes for the integrate run.
 
@@ -179,6 +190,29 @@ def _requeue_if_mismatched_pages(
     if set(chunk.pages_written) == set(expected_pages):
         return chunk
     return _pending_chunk(chunk)
+
+
+def _requeue_if_wrong_source(
+    chunk: ChunkRecord, sources_by_page: dict[str, tuple[str, ...]], source_locator: str
+) -> ChunkRecord:
+    if chunk.status != "done" or not chunk.pages_written:
+        return chunk
+    if all(
+        _page_sources_cover_locator(sources_by_page.get(page_id, ()), source_locator)
+        for page_id in chunk.pages_written
+    ):
+        return chunk
+    return _pending_chunk(chunk)
+
+
+def _page_sources_cover_locator(sources: tuple[str, ...], source_locator: str) -> bool:
+    target = _normalize_source_locator(source_locator)
+    return any(_normalize_source_locator(source) == target for source in sources)
+
+
+def _normalize_source_locator(source: str) -> str:
+    normalized = source.strip().removeprefix("raw/").strip()
+    return normalized.split(" p.", maxsplit=1)[0].strip()
 
 
 def _pending_chunk(chunk: ChunkRecord) -> ChunkRecord:

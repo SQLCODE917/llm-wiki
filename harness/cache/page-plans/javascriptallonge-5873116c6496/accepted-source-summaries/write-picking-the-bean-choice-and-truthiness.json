@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript Boolean values true and false are the fundamental truth types. (raw/javascriptallonge.pdf p.94-108)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0011"
+      ]
+    },
+    {
+      "bullet_text": "The && and || operators are binary infix operators performing logical AND and OR. (raw/javascriptallonge.pdf p.94-108)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0012"
+      ]
+    },
+    {
+      "bullet_text": "Passing non-Boolean expressions to logical operators yields results based on truthiness, not strict Boolean logic. (raw/javascriptallonge.pdf p.94-108)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0014"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter discusses Boolean values, truthiness, and control flow operators in JavaScript."
+}

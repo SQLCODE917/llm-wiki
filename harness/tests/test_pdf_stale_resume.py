@@ -17,6 +17,9 @@ from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
 TODAY = "2026-06-19"
+BOOK_HUB = "book"
+FUNCTIONS_PAGE = "book-functions"
+CLOSURES_PAGE = "book-closures"
 
 
 def _extraction_with_stale_done_chunk(paths: WikiPaths) -> ExtractionResult:
@@ -38,7 +41,7 @@ def _extraction_with_stale_done_chunk(paths: WikiPaths) -> ExtractionResult:
                     4000,
                     status="done",
                     notes="done in a cleared wiki",
-                    pages_written=("functions",),
+                    pages_written=(FUNCTIONS_PAGE,),
                 ),
                 ChunkRecord(2, "Closures", 11, 20, 3800),
             ),
@@ -104,8 +107,8 @@ def _source_summary_write_args(
 ) -> dict[str, object]:
     active_claim_ids = claim_ids or _source_claim_ids_for(page_id)
     citation = _citation_for(page_id)
-    claim_text = "Hub links [[functions]] and [[closures]]."
-    if page_id != "book":
+    claim_text = f"Hub links [[{FUNCTIONS_PAGE}]] and [[{CLOSURES_PAGE}]]."
+    if page_id != BOOK_HUB:
         claim_text = f"The {page_id} source page summarizes this PDF stage."
     return {
         "page_id": page_id,
@@ -157,17 +160,17 @@ def _write_source_summary_artifact(
 
 
 def _citation_for(page_id: str) -> str:
-    if page_id == "functions":
+    if page_id == FUNCTIONS_PAGE:
         return "raw/book.pdf p.1-10"
-    if page_id == "closures":
+    if page_id == CLOSURES_PAGE:
         return "raw/book.pdf p.11-20"
     return "raw/book.pdf"
 
 
 def _source_claim_ids_for(page_id: str) -> tuple[str, ...]:
-    if page_id == "functions":
+    if page_id == FUNCTIONS_PAGE:
         return ("source-claim-unit-0001-0001",)
-    if page_id == "closures":
+    if page_id == CLOSURES_PAGE:
         return ("source-claim-unit-0002-0001",)
     return ("source-claim-unit-0001-0001", "source-claim-unit-0002-0001")
 
@@ -199,11 +202,11 @@ async def test_plain_pdf_ingest_requeues_done_chunks_with_missing_pages(
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     extraction = _extraction_with_stale_done_chunk(paths)
     script = (
-        _map_turns("functions", "rewritten functions")
-        + _map_turns("closures", "written closures")
+        _map_turns(FUNCTIONS_PAGE, "rewritten functions")
+        + _map_turns(CLOSURES_PAGE, "written closures")
         + [
-            [_plan_page_call("book")],
-            [_write_page_call("book")],
+            [_plan_page_call(BOOK_HUB)],
+            [_write_page_call(BOOK_HUB)],
             [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
         ]
     )
@@ -222,8 +225,8 @@ async def test_plain_pdf_ingest_requeues_done_chunks_with_missing_pages(
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.integrated
     assert saved.chunks[0].notes == "rewritten functions"
-    assert saved.chunks[0].pages_written == ("functions",)
-    assert {"functions", "closures", "book"} <= set(store.list_pages())
+    assert saved.chunks[0].pages_written == (FUNCTIONS_PAGE,)
+    assert {FUNCTIONS_PAGE, CLOSURES_PAGE, BOOK_HUB} <= set(store.list_pages())
 
 
 def test_manifest_requeues_planned_done_chunk_without_recorded_writes() -> None:
@@ -303,14 +306,42 @@ def test_manifest_requeues_done_chunk_when_page_plan_target_changes() -> None:
     assert not repaired.integrated
 
 
+def test_manifest_requeues_done_chunk_when_page_source_does_not_match() -> None:
+    manifest = Manifest(
+        source="book.pdf",
+        sha256="deadbeef" * 8,
+        chunks=(
+            ChunkRecord(
+                1,
+                "Front matter",
+                1,
+                10,
+                4000,
+                status="done",
+                notes="wrong source page was present",
+                pages_written=("book-front-matter",),
+                route_plan_pages=1,
+            ),
+        ),
+        integrated=True,
+    )
+
+    repaired = manifest.requeue_pages_with_wrong_source(
+        {"book-front-matter": ("raw/other.pdf p.1-10",)}, "book.pdf"
+    )
+
+    assert repaired.pending[0].chunk_id == 1
+    assert not repaired.integrated
+
+
 async def test_pdf_chunk_without_successful_write_is_not_marked_done(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     extraction = _one_chunk_extraction(paths)
     script = [
-        [ToolCall(tool="search_wiki", args={"query": "functions"})],
-        [_plan_page_call("functions")],
+        [ToolCall(tool="search_wiki", args={"query": FUNCTIONS_PAGE})],
+        [_plan_page_call(FUNCTIONS_PAGE)],
         [
             ToolCall(
                 tool="write_page",
@@ -344,22 +375,26 @@ async def test_pending_pdf_chunk_rewrites_existing_source_summary_page(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
-    args = _source_summary_write_args("functions")
+    args = _source_summary_write_args(FUNCTIONS_PAGE)
     store.write_page(
         WikiPage.from_metadata(
-            PageMetadata(page_id="functions", page_kind="source", summary="Existing functions."),
+            PageMetadata(
+                page_id=FUNCTIONS_PAGE,
+                page_kind="source",
+                summary="Existing functions.",
+            ),
             _source_summary_body(args),
         )
     )
-    _write_source_summary_artifact(store, "book.pdf", "functions", args)
+    _write_source_summary_artifact(store, "book.pdf", FUNCTIONS_PAGE, args)
     extraction = _one_chunk_extraction(paths)
     script = [
-        [ToolCall(tool="search_wiki", args={"query": "functions"})],
-        [_plan_page_call("functions", action="enrich")],
-        [ToolCall(tool="read_page", args={"page_id": "functions"})],
-        [_write_page_call("functions")],
+        [ToolCall(tool="search_wiki", args={"query": FUNCTIONS_PAGE})],
+        [_plan_page_call(FUNCTIONS_PAGE, action="enrich")],
+        [ToolCall(tool="read_page", args={"page_id": FUNCTIONS_PAGE})],
+        [_write_page_call(FUNCTIONS_PAGE)],
         [ToolCall(tool="finish_chunk", args={"report": "rewritten functions"})],
-        [_plan_page_call("book")],
+        [_plan_page_call(BOOK_HUB)],
         [_book_write_for_one_chunk()],
         [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
     ]
@@ -378,29 +413,35 @@ async def test_pending_pdf_chunk_rewrites_existing_source_summary_page(
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.all_done
     assert saved.chunks[0].notes == "rewritten functions"
-    assert saved.chunks[0].pages_written == ("functions",)
+    assert saved.chunks[0].pages_written == (FUNCTIONS_PAGE,)
 
 
 async def test_pending_pdf_chunk_rewrites_stale_source_summary_artifact(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
-    stale_args = _source_summary_write_args("functions", claim_ids=("source-claim-stale",))
+    stale_args = _source_summary_write_args(
+        FUNCTIONS_PAGE, claim_ids=("source-claim-stale",)
+    )
     store.write_page(
         WikiPage.from_metadata(
-            PageMetadata(page_id="functions", page_kind="source", summary="Stale functions."),
+            PageMetadata(
+                page_id=FUNCTIONS_PAGE,
+                page_kind="source",
+                summary="Stale functions.",
+            ),
             _source_summary_body(stale_args),
         )
     )
-    _write_source_summary_artifact(store, "book.pdf", "functions", stale_args)
+    _write_source_summary_artifact(store, "book.pdf", FUNCTIONS_PAGE, stale_args)
     extraction = _one_chunk_extraction(paths)
     script = [
-        [ToolCall(tool="search_wiki", args={"query": "functions"})],
-        [_plan_page_call("functions", action="enrich")],
-        [ToolCall(tool="read_page", args={"page_id": "functions"})],
-        [_write_page_call("functions")],
+        [ToolCall(tool="search_wiki", args={"query": FUNCTIONS_PAGE})],
+        [_plan_page_call(FUNCTIONS_PAGE, action="enrich")],
+        [ToolCall(tool="read_page", args={"page_id": FUNCTIONS_PAGE})],
+        [_write_page_call(FUNCTIONS_PAGE)],
         [ToolCall(tool="finish_chunk", args={"report": "rewritten functions"})],
-        [_plan_page_call("book")],
+        [_plan_page_call(BOOK_HUB)],
         [_book_write_for_one_chunk()],
         [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
     ]
@@ -422,5 +463,5 @@ async def test_pending_pdf_chunk_rewrites_stale_source_summary_artifact(
     assert "source-claim-stale" not in (
         store.page_plan_artifact_dir("book.pdf")
         / "accepted-source-summaries"
-        / "write-functions.json"
+        / f"write-{FUNCTIONS_PAGE}.json"
     ).read_text(encoding="utf-8")

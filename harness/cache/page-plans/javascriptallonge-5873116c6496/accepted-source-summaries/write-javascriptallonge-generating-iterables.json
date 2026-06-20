@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Might be a simple functional iterator or an iterable object with a .next() method; an iterator is repeatedly called until it reports done. (raw/javascriptallonge.pdf p.224-245)",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0007"
+      ]
+    },
+    {
+      "bullet_text": "Possible illustration shown in Figure 1: an image from the source cache. (raw/javascriptallonge.pdf p.224-245)",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0002"
+      ]
+    },
+    {
+      "bullet_text": "Iterables look cool, yet examples can make them seem even more impressive. (raw/javascriptallonge.pdf p.224-245)",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0004"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how iterables and generators work in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax."
+}

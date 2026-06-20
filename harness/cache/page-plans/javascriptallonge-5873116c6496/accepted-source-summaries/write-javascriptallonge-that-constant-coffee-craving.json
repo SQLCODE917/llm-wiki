@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s almost what we wanted all along: a way to bind 3.14159265 to a readable name (raw/javascriptallonge.pdf p.49-61) **may**",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0044"
+      ]
+    },
+    {
+      "bullet_text": "We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const (raw/javascriptallonge.pdf p.49-61) **possible**",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0046"
+      ]
+    },
+    {
+      "bullet_text": "The const keyword introduces one or more bindings in the block that encloses it (raw/javascriptallonge.pdf p.49-61) **may**",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0047"
+      ]
+    }
+  ],
+  "source_record_text": "Section covers const keyword, IIFE, lexical and block scope, and const semantics."
+}

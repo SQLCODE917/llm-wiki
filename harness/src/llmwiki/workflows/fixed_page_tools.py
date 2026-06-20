@@ -6,14 +6,17 @@ import json
 from typing import Any, cast
 
 from forge.core.workflow import ToolDef, ToolSpec
-from pydantic import BaseModel, Field, field_validator, model_validator
+from pydantic import BaseModel, Field, ValidationError, field_validator, model_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.ingest_route_plan import IngestRoutePlanState
 from llmwiki.domain.links import extract_links
 from llmwiki.store import WikiStore, WikiStoreError
+from llmwiki.workflows.claim_bullet_rescue import rescue_claim_bullet
 from llmwiki.workflows.source_summary_write import SourceSummaryBulletParams
 from llmwiki.workflows.tools import _normalize_source_value, write_page_tool
+
+PageMapEntries = tuple[tuple[str, str], ...]
 
 
 class WriteFixedSourcePageParams(BaseModel):
@@ -50,6 +53,10 @@ class WriteFixedSourcePageParams(BaseModel):
                 clean_summary, page_body = summary.split(marker, maxsplit=1)
                 data["summary"] = clean_summary.strip()
                 data["page_body"] = page_body
+        if isinstance(data.get("claim_bullets"), list):
+            data["claim_bullets"] = [
+                rescue_claim_bullet(item) for item in data["claim_bullets"]
+            ]
         return data
 
     @field_validator("sources", mode="before")
@@ -65,7 +72,6 @@ class WriteFixedSourcePageParams(BaseModel):
             return [_normalize_source_value(value)]
         return value
 
-
 def write_fixed_source_page_tool(
     store: WikiStore,
     today: str,
@@ -75,6 +81,7 @@ def write_fixed_source_page_tool(
     evidence_policy: EvidencePolicy | None = None,
     new_page_prefix: str | None = None,
     required_link_targets: tuple[str, ...] = (),
+    required_page_map_entries: PageMapEntries = (),
     min_required_links: int = 0,
     ingest_route_plan_state: IngestRoutePlanState | None = None,
     recoverable_errors: bool = False,
@@ -91,7 +98,15 @@ def write_fixed_source_page_tool(
     )
 
     def _write_page(**kwargs: object) -> str:
-        params = WriteFixedSourcePageParams(**kwargs)  # type: ignore[arg-type]
+        try:
+            params = WriteFixedSourcePageParams(**kwargs)  # type: ignore[arg-type]
+        except ValidationError as exc:
+            if not recoverable_errors:
+                raise
+            return (
+                "No page was written. Fixed source hub write_page arguments "
+                f"did not match the required schema:\n{exc}"
+            )
         if params.source_record_text is not None or params.claim_bullets:
             if params.source_record_text is None or not params.claim_bullets:
                 raise WikiStoreError(
@@ -101,11 +116,14 @@ def write_fixed_source_page_tool(
                 _source_summary_fields_to_page_body(
                     params.source_record_text,
                     params.claim_bullets,
+                    params.sources,
                 ),
                 required_link_targets,
+                required_page_map_entries,
                 required_target_set,
                 min_required_links,
             )
+            _mark_fixed_hub_read(read_tracker, page_id)
             return cast(
                 str,
                 base.callable(
@@ -121,9 +139,11 @@ def write_fixed_source_page_tool(
         body = _page_body_with_required_links(
             params.page_body,
             required_link_targets,
+            required_page_map_entries,
             required_target_set,
             min_required_links,
         )
+        _mark_fixed_hub_read(read_tracker, page_id)
         return cast(
             str,
             base.callable(
@@ -151,8 +171,13 @@ def write_fixed_source_page_tool(
 def _source_summary_fields_to_page_body(
     source_record_text: str,
     claim_bullets: list[SourceSummaryBulletParams],
+    sources: list[str],
 ) -> str:
-    bullets = "\n".join(f"- {bullet.bullet_text.strip()}" for bullet in claim_bullets)
+    default_citation = _default_raw_citation(sources)
+    bullets = "\n".join(
+        f"- {_bullet_with_citation(bullet.bullet_text.strip(), default_citation)}"
+        for bullet in claim_bullets
+    )
     return (
         "## Source record\n\n"
         f"{source_record_text.strip()}\n\n"
@@ -161,30 +186,22 @@ def _source_summary_fields_to_page_body(
     )
 
 
-def _source_record_with_required_links(
-    source_record_text: str,
-    claim_bullets: list[SourceSummaryBulletParams],
-    required_link_targets: tuple[str, ...],
-    required_target_set: frozenset[str],
-    min_required_links: int,
-) -> str:
-    if min_required_links <= 0:
-        return source_record_text
-    draft_text = "\n".join([source_record_text, *(bullet.bullet_text for bullet in claim_bullets)])
-    linked_targets = extract_links(draft_text) & required_target_set
-    if len(linked_targets) >= min_required_links:
-        return source_record_text
-    return _append_page_map_links(
-        source_record_text,
-        required_link_targets,
-        linked_targets,
-        min_required_links,
-    )
+def _default_raw_citation(sources: list[str]) -> str:
+    if not sources:
+        return ""
+    return f"raw/{sources[0].removeprefix('raw/')}"
+
+
+def _bullet_with_citation(bullet_text: str, default_citation: str) -> str:
+    if "(raw/" in bullet_text or not default_citation:
+        return bullet_text
+    return f"{bullet_text} ({default_citation})"
 
 
 def _page_body_with_required_links(
     page_body: str,
     required_link_targets: tuple[str, ...],
+    required_page_map_entries: PageMapEntries,
     required_target_set: frozenset[str],
     min_required_links: int,
 ) -> str:
@@ -196,6 +213,7 @@ def _page_body_with_required_links(
     return _append_page_map_links(
         page_body,
         required_link_targets,
+        required_page_map_entries,
         linked_targets,
         min_required_links,
     )
@@ -204,12 +222,16 @@ def _page_body_with_required_links(
 def _append_page_map_links(
     text: str,
     required_link_targets: tuple[str, ...],
+    required_page_map_entries: PageMapEntries,
     linked_targets: set[str] | frozenset[str],
     min_required_links: int,
 ) -> str:
     missing = [page_id for page_id in required_link_targets if page_id not in linked_targets]
     fill_count = max(min_required_links - len(linked_targets), len(missing))
-    links = "\n".join(f"- [[{page_id}]]" for page_id in missing[:fill_count])
+    labels = dict(required_page_map_entries)
+    links = "\n".join(
+        _page_map_link(page_id, labels.get(page_id, "")) for page_id in missing[:fill_count]
+    )
     return (
         f"{text.rstrip()}\n\n"
         "## Page-Map Navigation\n\n"
@@ -217,3 +239,14 @@ def _append_page_map_links(
         "the book-scale hub remains navigable:\n\n"
         f"{links}"
     )
+
+
+def _page_map_link(page_id: str, label: str) -> str:
+    if not label:
+        return f"- [[{page_id}]]"
+    return f"- [[{page_id}]] — {label}"
+
+
+def _mark_fixed_hub_read(read_tracker: set[str] | None, page_id: str) -> None:
+    if read_tracker is not None:
+        read_tracker.add(page_id)

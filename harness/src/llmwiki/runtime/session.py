@@ -301,6 +301,7 @@ class Session:
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
         hub = slugify(Path(source_locator).stem)
+        pdf_page_prefix = self._pdf_page_prefix(source_locator)
         manifest = result.manifest.requeue_missing_pages(
             frozenset(self.store.list_pages()), hub_page_id=hub
         )
@@ -315,6 +316,12 @@ class Session:
                 record.chunk_id: _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
                 for record in manifest.chunks
             }
+        )
+        if manifest != result.manifest:
+            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
+            save_manifest(result)
+        manifest = manifest.requeue_pages_with_wrong_source(
+            self._page_sources_by_id(), source_locator
         )
         if manifest != result.manifest:
             result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
@@ -360,7 +367,7 @@ class Session:
                     evidence_policy=self._evidence_policy(),
                     profiles=self.ingest_profiles,
                     source_locator=source_locator,
-                    new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
+                    new_page_prefix=pdf_page_prefix,
                     chunk_id=record.chunk_id,
                     ingest_route_plan_state=ingest_route_plan_state,
                     recoverable_tool_errors=True,
@@ -408,13 +415,16 @@ class Session:
             f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
         )
         link_targets: list[str] = []
+        page_map_entries: list[tuple[str, str]] = []
         seen_targets: set[str] = set()
         for chunk in manifest.chunks:
             for page in chunk.pages_written:
                 if page != hub and page not in seen_targets:
                     link_targets.append(page)
+                    page_map_entries.append((page, chunk.heading))
                     seen_targets.add(page)
         required_link_targets = tuple(link_targets)
+        required_page_map_entries = tuple(page_map_entries)
         ingest_route_plan_state = self._ingest_route_plan_state(
             source_locator, "pdf-integrate", page_plan=page_plan
         )
@@ -425,8 +435,9 @@ class Session:
                 self._evidence_policy(),
                 profiles=self.ingest_profiles,
                 source_locator=source_locator,
-                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
+                new_page_prefix=pdf_page_prefix,
                 required_link_targets=required_link_targets,
+                required_page_map_entries=required_page_map_entries,
                 min_required_links=len(required_link_targets),
                 ingest_route_plan_state=ingest_route_plan_state,
                 recoverable_tool_errors=True,
@@ -499,7 +510,7 @@ class Session:
             today=self.today,
             schema=ingest_run.schema,
             source_plan=_source_plan_for(ingest_run, raw_source),
-            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
+            new_page_prefix=self._pdf_page_prefix(source_locator),
         )
 
     def _persist_page_plan(self, source_locator: str, page_plan: PagePlan) -> str:
@@ -590,12 +601,30 @@ class Session:
                 chunk_id=chunk_id,
                 page_plan=page_plan,
                 existing_pages=frozenset(self.store.list_pages()),
-                new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
+                new_page_prefix=(
+                    self._pdf_page_prefix(source_locator)
+                    if scope in {"pdf-chunk", "pdf-integrate"}
+                    else required_new_page_prefix(self.ingest_profiles, source_locator)
+                ),
                 prevent_singular_plural_siblings=prevents_singular_plural_siblings(
                     self.ingest_profiles
                 ),
             )
         )
+
+    def _pdf_page_prefix(self, source_locator: str) -> str:
+        return required_new_page_prefix(self.ingest_profiles, source_locator) or slugify(
+            Path(source_locator).stem
+        )
+
+    def _page_sources_by_id(self) -> dict[str, tuple[str, ...]]:
+        sources: dict[str, tuple[str, ...]] = {}
+        for page_id in self.store.list_pages():
+            try:
+                sources[page_id] = self.store.read_wiki_page(page_id).page_metadata.sources
+            except Exception:
+                sources[page_id] = ()
+        return sources
 
     def _reconcile_hub_key_lists(self, hub: str, salience: SalienceReport) -> None:
         """Harness-owned bookkeeping: the hub's key-lists mirror the salience

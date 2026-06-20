@@ -419,7 +419,11 @@ class TestProfiledWorkflows:
             "2026-06-16",
             source_locator="Sword World RPG - Complete Edition.pdf",
         )
-        _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Hub summary.")
+        _plan_page(
+            workflow,
+            "sword-world-rpg-complete-edition",
+            summary="Hub summary.",
+        )
 
         workflow.tools["write_page"].callable(
             summary="Hub summary.\nparameter=page_body>\n# Hub\n\n[[linked-page]]",
@@ -437,6 +441,11 @@ class TestProfiledWorkflows:
             "2026-06-16",
             source_locator="Sword World RPG - Complete Edition.pdf",
             required_link_targets=("alpha", "beta", "gamma"),
+            required_page_map_entries=(
+                ("alpha", "Opening"),
+                ("beta", "Functions"),
+                ("gamma", "Objects"),
+            ),
             min_required_links=2,
         )
         _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Sparse hub.")
@@ -449,8 +458,8 @@ class TestProfiledWorkflows:
         hub = store.read_page("sword-world-rpg-complete-edition")
         assert "Only links [[alpha]]." in hub
         assert "## Page-Map Navigation" in hub
-        assert "[[beta]]" in hub
-        assert "[[gamma]]" in hub
+        assert "[[beta]] — Functions" in hub
+        assert "[[gamma]] — Objects" in hub
 
     def test_pdf_integrate_renders_source_summary_fields_as_hub_body(
         self, store: WikiStore
@@ -460,6 +469,11 @@ class TestProfiledWorkflows:
             "2026-06-16",
             source_locator="Sword World RPG - Complete Edition.pdf",
             required_link_targets=("alpha", "beta", "gamma"),
+            required_page_map_entries=(
+                ("alpha", "Opening"),
+                ("beta", "Rules"),
+                ("gamma", "Catalog"),
+            ),
             min_required_links=2,
         )
         _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Hub summary.")
@@ -481,11 +495,90 @@ class TestProfiledWorkflows:
 
         hub = store.read_page("sword-world-rpg-complete-edition")
         assert "## Source record" in hub
-        assert "A compact supported claim." in hub
+        assert (
+            "A compact supported claim. (raw/Sword World RPG - Complete Edition.pdf)"
+            in hub
+        )
         assert "## Page-Map Navigation" in hub
         assert "[[alpha]]" in hub
-        assert "[[beta]]" in hub
-        assert "[[gamma]]" in hub
+        assert "[[beta]] — Rules" in hub
+        assert "[[gamma]] — Catalog" in hub
+
+    def test_pdf_integrate_rewrites_existing_fixed_hub_without_model_read(
+        self, store: WikiStore
+    ) -> None:
+        store.write_page(
+            wiki_page(
+                name="sword-world-rpg-complete-edition",
+                category="source",
+                summary="Existing hub.",
+                body="Old body.",
+            )
+        )
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="Sword World RPG - Complete Edition.pdf",
+            required_link_targets=("alpha",),
+            required_page_map_entries=(("alpha", "Opening"),),
+            min_required_links=1,
+            recoverable_tool_errors=True,
+        )
+        _plan_page(
+            workflow,
+            "sword-world-rpg-complete-edition",
+            summary="Hub summary.",
+            action="enrich",
+        )
+
+        workflow.tools["write_page"].callable(
+            summary="Hub summary.",
+            source_record_text="Short source record.",
+            claim_bullets=[
+                {
+                    "bullet_text": "A compact supported claim.",
+                    "covered_source_claims": ["source-claim-unit-0001-0001"],
+                }
+            ],
+            sources=["Sword World RPG - Complete Edition.pdf"],
+        )
+
+        hub = store.read_page("sword-world-rpg-complete-edition")
+        assert "Old body." not in hub
+        assert "A compact supported claim. (raw/Sword World RPG - Complete Edition.pdf)" in hub
+        assert "[[alpha]] — Opening" in hub
+
+    def test_pdf_integrate_rescues_alternate_claim_bullet_shape(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="javascriptallonge.pdf",
+            required_link_targets=("javascriptallonge-functions",),
+            required_page_map_entries=(("javascriptallonge-functions", "Functions"),),
+            min_required_links=1,
+            recoverable_tool_errors=True,
+        )
+        _plan_page(workflow, "javascriptallonge", summary="Hub summary.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub summary.",
+            source_record_text="Short source record.",
+            claim_bullets=[
+                {
+                    "source_claim_id": "source-claim-unit-0001-0001",
+                    "text": "Functions are treated as first-class values.",
+                },
+                "Closures preserve access to surrounding lexical bindings.",
+            ],
+            sources=["javascriptallonge.pdf"],
+        )
+
+        hub = store.read_page("javascriptallonge")
+        assert "Functions are treated as first-class values. (raw/javascriptallonge.pdf)" in hub
+        assert "Closures preserve access to surrounding lexical bindings." in hub
+        assert "[[javascriptallonge-functions]] — Functions" in hub
 
     def test_pdf_integrate_does_not_add_navigation_when_linked(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(

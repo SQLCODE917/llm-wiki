@@ -17,6 +17,9 @@ from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
 TODAY = "2026-06-11"
+BOOK_HUB = "book"
+FUNCTIONS_PAGE = "book-functions"
+CLOSURES_PAGE = "book-closures"
 
 
 def _fake_extraction(
@@ -48,8 +51,8 @@ def _fake_extraction(
 
 def _write_page_call(name: str) -> ToolCall:
     content = "The source page summarizes this PDF stage."
-    if name == "book":
-        content = "Hub links [[functions]] and [[closures]]."
+    if name == BOOK_HUB:
+        content = f"Hub links [[{FUNCTIONS_PAGE}]] and [[{CLOSURES_PAGE}]]."
     return ToolCall(
         tool="write_page",
         args=_source_summary_write_args(name, claim_text=content),
@@ -89,17 +92,17 @@ def _source_summary_write_args(
 
 
 def _citation_for(name: str) -> str:
-    if name == "functions":
+    if name == FUNCTIONS_PAGE:
         return "raw/book.pdf p.1-10"
-    if name == "closures":
+    if name == CLOSURES_PAGE:
         return "raw/book.pdf p.11-20"
     return "raw/book.pdf"
 
 
 def _source_claim_ids_for(name: str) -> tuple[str, ...]:
-    if name == "functions":
+    if name == FUNCTIONS_PAGE:
         return ("source-claim-unit-0001-0001",)
-    if name == "closures":
+    if name == CLOSURES_PAGE:
         return ("source-claim-unit-0002-0001",)
     return ("source-claim-unit-0001-0001", "source-claim-unit-0002-0001")
 
@@ -157,14 +160,14 @@ def _map_turns(page: str, note: str, gaps: list[dict[str, str]] | None = None) -
 
 def _integrate_turns(
     *,
-    claim_text: str = "Hub links [[functions]] and [[closures]].",
+    claim_text: str = f"Hub links [[{FUNCTIONS_PAGE}]] and [[{CLOSURES_PAGE}]].",
 ) -> list:
     return [
-        [_plan_page_call("book")],
+        [_plan_page_call(BOOK_HUB)],
         [
             ToolCall(
                 tool="write_page",
-                args=_source_summary_write_args("book", claim_text=claim_text),
+                args=_source_summary_write_args(BOOK_HUB, claim_text=claim_text),
             )
         ],
         [ToolCall(tool="finish_ingest", args={"report": "Hub linked to 2 chapter pages."})],
@@ -181,8 +184,8 @@ class TestPdfIngest:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths)
         script = (
-            _map_turns("functions", "noted functions")
-            + _map_turns("closures", "noted closures")
+            _map_turns(FUNCTIONS_PAGE, "noted functions")
+            + _map_turns(CLOSURES_PAGE, "noted closures")
             + _INTEGRATE_TURNS
         )
         session = _session(store, script, paths, extraction)
@@ -190,7 +193,7 @@ class TestPdfIngest:
 
         assert result.output == "Hub linked to 2 chapter pages."
         # Both map chunks wrote pages; integrate wrote the hub.
-        assert {"functions", "closures", "book"} <= set(store.list_pages())
+        assert {FUNCTIONS_PAGE, CLOSURES_PAGE, BOOK_HUB} <= set(store.list_pages())
         # Manifest on disk: all done + integrated, notes captured.
         saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
         assert saved.all_done and saved.integrated
@@ -207,7 +210,7 @@ class TestPdfIngest:
     async def test_resume_skips_done_chunks(self, store: WikiStore, paths: WikiPaths) -> None:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths, statuses=("done", "pending"))
-        script = _map_turns("closures", "resumed fine") + _INTEGRATE_TURNS
+        script = _map_turns(CLOSURES_PAGE, "resumed fine") + _INTEGRATE_TURNS
         session = _session(store, script, paths, extraction)
         result = await session.ingest("book.pdf")
 
@@ -222,8 +225,8 @@ class TestPdfIngest:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths)
         script = (
-            _map_turns("functions", "claims about functions")
-            + _map_turns("closures", "claims about closures")
+            _map_turns(FUNCTIONS_PAGE, "claims about functions")
+            + _map_turns(CLOSURES_PAGE, "claims about closures")
             + _INTEGRATE_TURNS
         )
         session = _session(store, script, paths, extraction)
@@ -233,7 +236,10 @@ class TestPdfIngest:
         integrate_first_turn = fake.sent[-2]  # first integrate request
         user_msgs = [m["content"] for m in integrate_first_turn if m.get("role") == "user"]
         assert any("Machine-recorded chunk page map" in c for c in user_msgs)
-        assert any("[[functions]]" in c and "[[closures]]" in c for c in user_msgs)
+        assert any(
+            f"[[{FUNCTIONS_PAGE}]]" in c and f"[[{CLOSURES_PAGE}]]" in c
+            for c in user_msgs
+        )
         assert any("p.1-10" in c for c in user_msgs)
 
     async def test_chunk_text_and_citation_reach_map_run(
@@ -241,7 +247,11 @@ class TestPdfIngest:
     ) -> None:
         (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
         extraction = _fake_extraction(paths)
-        script = _map_turns("functions", "n1") + _map_turns("closures", "n2") + _INTEGRATE_TURNS
+        script = (
+            _map_turns(FUNCTIONS_PAGE, "n1")
+            + _map_turns(CLOSURES_PAGE, "n2")
+            + _INTEGRATE_TURNS
+        )
         session = _session(store, script, paths, extraction)
         await session.ingest("book.pdf")
 
@@ -279,16 +289,19 @@ class TestPdfIngest:
             )
 
         script = [
-            [ToolCall(tool="search_wiki", args={"query": "functions"})],
-            [_plan_page_call("functions")],
-            [_linked_write("functions")],
+            [ToolCall(tool="search_wiki", args={"query": FUNCTIONS_PAGE})],
+            [_plan_page_call(FUNCTIONS_PAGE)],
+            [_linked_write(FUNCTIONS_PAGE)],
             [ToolCall(tool="finish_chunk", args={"report": "n1"})],
-            [ToolCall(tool="search_wiki", args={"query": "closures"})],
-            [_plan_page_call("closures")],
-            [_linked_write("closures")],
+            [ToolCall(tool="search_wiki", args={"query": CLOSURES_PAGE})],
+            [_plan_page_call(CLOSURES_PAGE)],
+            [_linked_write(CLOSURES_PAGE)],
             [ToolCall(tool="finish_chunk", args={"report": "n2"})],
             *_integrate_turns(
-                claim_text="Hub links [[functions]], [[closures]], and [[iterable]].",
+                claim_text=(
+                    f"Hub links [[{FUNCTIONS_PAGE}]], [[{CLOSURES_PAGE}]], "
+                    "and [[iterable]]."
+                ),
             ),
         ]
         session = _session(store, script, paths, extraction)
@@ -296,14 +309,14 @@ class TestPdfIngest:
 
         # Machine record landed in the manifest.
         saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
-        assert saved.chunks[0].pages_written == ("functions",)
-        assert saved.chunks[1].pages_written == ("closures",)
+        assert saved.chunks[0].pages_written == (FUNCTIONS_PAGE,)
+        assert saved.chunks[1].pages_written == (CLOSURES_PAGE,)
         # The integrate run received the computed salience block with the
         # linked concept ranked in it, plus the per-chunk machine record.
         fake: FakeClient = session.client
         integrate_msgs = [m["content"] for m in fake.sent[-2] if m.get("role") == "user"]
         assert any("Salience report" in c and "[[iterable]] (links 2" in c for c in integrate_msgs)
-        assert any("Chunk 1" in c and "[[functions]]" in c for c in integrate_msgs)
+        assert any("Chunk 1" in c and f"[[{FUNCTIONS_PAGE}]]" in c for c in integrate_msgs)
 
     async def test_route_plan_gaps_are_recorded_in_manifest(
         self, store: WikiStore, paths: WikiPaths
@@ -318,8 +331,8 @@ class TestPdfIngest:
             }
         ]
         script = (
-            _map_turns("functions", "n1", gaps=gaps)
-            + _map_turns("closures", "n2")
+            _map_turns(FUNCTIONS_PAGE, "n1", gaps=gaps)
+            + _map_turns(CLOSURES_PAGE, "n2")
             + _INTEGRATE_TURNS
         )
         session = _session(store, script, paths, extraction)

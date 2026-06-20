@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Recursion is the root of computation since it trades description for time—Alan Perlis (raw/javascriptallonge.pdf p.109-125) (may).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0002"
+      ]
+    },
+    {
+      "bullet_text": "Consists of an element concatenated with a list (raw/javascriptallonge.pdf p.109-125) (might).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0010"
+      ]
+    },
+    {
+      "bullet_text": "We can express that using a spread (raw/javascriptallonge.pdf p.109-125) (possible).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0014"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter discusses self‑similar data structures, recursion, and tail‑call optimization in JavaScript."
+}

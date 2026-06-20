@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Mutating existing objects when two bindings refer to the same value causes both to observe changes. (raw/javascriptallonge.pdf p.141-157)",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0031"
+      ]
+    },
+    {
+      "bullet_text": "Alias creation is demonstrated by assigning one array to another name and then mutating through either reference. (raw/javascriptallonge.pdf p.141-157)",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0028"
+      ]
+    },
+    {
+      "bullet_text": "Illustrative code snippets and images are provided to help visualize mutation behavior (possible, suggest). (raw/javascriptallonge.pdf p.141-157)",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0029"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the mutation chapter in JavaScript Allongé, covering aliasing, mutating objects, linked lists, reassignment, and variable declaration differences."
+}

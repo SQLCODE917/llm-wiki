@@ -188,6 +188,24 @@ def test_source_summary_rejects_placeholder_ellipsis() -> None:
     ]
 
 
+def test_source_summary_allows_javascript_rest_syntax() -> None:
+    citation = "raw/javascriptallonge.pdf p.126-140"
+    contract = resolve_page_body_contract(
+        contract_for_page_kind(Schema(), "source"),
+        required_source_citations=(citation,),
+    )
+    body = (
+        "## Source record\n\n"
+        f"This source page discusses array copying in recursive JavaScript. ({citation})\n\n"
+        "## Key supported claims\n\n"
+        f"- The pattern [first, ...rest] may copy arrays during recursion. ({citation})\n"
+        f"- Rest parameters such as ...args collect trailing arguments. ({citation})\n"
+        f"- Memory pressure can increase when repeated copies are short-lived. ({citation})"
+    )
+
+    assert validate_page_body(body, contract) == ()
+
+
 def test_user_defined_contract_controls_page_shape() -> None:
     contract = PageBodyContract(
         contract_id="product-page",
@@ -224,7 +242,7 @@ def test_planned_write_rejects_invalid_page_body_before_store_write(
     assert store.list_pages() == []
 
 
-def test_recoverable_write_page_schema_error_names_source_summary_fields(
+def test_recoverable_write_page_rescues_claim_bullets_before_body_error(
     paths: WikiPaths,
 ) -> None:
     store = SpyStore(paths)
@@ -238,8 +256,8 @@ def test_recoverable_write_page_schema_error_names_source_summary_fields(
         sources=["raw/alpha.md"],
     )
 
-    assert "write_page arguments did not match the required schema" in result
-    assert "`bullet_text` and `covered_source_claims`" in result
+    assert "write_page requires page_body" in result
+    assert "source-summary PlannedPageWrites" in result
     assert store.write_count == 0
 
 

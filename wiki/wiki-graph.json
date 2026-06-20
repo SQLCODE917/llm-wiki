@@ -2,6 +2,106 @@
   "edges": [
     {
       "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-copy-on-write"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-copyright-notice"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-forewords-to-the-first-edition"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-front-matter"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-garbage-garbage-everywhere"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-interactive-generators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-interlude-the-carpenter-interviews-for-a-job"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-lazy-and-eager-collections"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-making-data-out-of-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-mutation"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-naming-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-object-assign"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-recipes-with-basic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-self-similarity"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-that-constant-coffee-craving"
+    },
+    {
+      "resolved": true,
       "source": "sword-world-rpg-complete-edition",
       "target": "sword-world-rpg-complete-edition-1-3-skills"
     },
@@ -364,6 +464,216 @@
     },
     {
       "category": "source",
+      "name": "javascriptallonge",
+      "outbound_links": [
+        "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+        "javascriptallonge-closures-and-scope",
+        "javascriptallonge-copy-on-write",
+        "javascriptallonge-copyright-notice",
+        "javascriptallonge-forewords-to-the-first-edition",
+        "javascriptallonge-front-matter",
+        "javascriptallonge-garbage-garbage-everywhere",
+        "javascriptallonge-generating-iterables",
+        "javascriptallonge-interactive-generators",
+        "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+        "javascriptallonge-iteration-and-iterables",
+        "javascriptallonge-lazy-and-eager-collections",
+        "javascriptallonge-making-data-out-of-functions",
+        "javascriptallonge-mutation",
+        "javascriptallonge-naming-functions",
+        "javascriptallonge-object-assign",
+        "javascriptallonge-picking-the-bean-choice-and-truthiness",
+        "javascriptallonge-recipes-with-basic-functions",
+        "javascriptallonge-self-similarity",
+        "javascriptallonge-that-constant-coffee-craving"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf"
+      ],
+      "summary": "JavaScript Allonge \u2013 A modular guide to JavaScript fundamentals and advanced techniques."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.30-43"
+      ],
+      "summary": "Functions in JavaScript are values with richer behavior and identity, exemplified by arrow syntax and evaluation of arguments."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-closures-and-scope",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.44-48"
+      ],
+      "summary": "Source summary of closures and scope from JavaScript Allong\u00e9, covering free variables, closures, and environments."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-copy-on-write",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.158-176"
+      ],
+      "summary": "Copy\u2011on\u2011write strategies for array and list mutation in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-copyright-notice",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.293-297"
+      ],
+      "summary": "\u00a9 2012\u20112015 Reginald Braithwaite copyright notice for JavaScriptAllonge"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-forewords-to-the-first-edition",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.14-29"
+      ],
+      "summary": "Forewords and prefaces from the first edition."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-front-matter",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.1-13"
+      ],
+      "summary": "Summary of the front matter of JavaScript Allong\u00e9, the Six Edition."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-garbage-garbage-everywhere",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.126-140"
+      ],
+      "summary": "Chapter covering tail\u2011call recursion, array vs. Lisp linked list performance."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-generating-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.224-245"
+      ],
+      "summary": "Chapter on iterables and generators in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-interactive-generators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.273-292"
+      ],
+      "summary": "Interactive Generators \u2013 chapter covering generators, stateful functions, and examples (p.273\u2011292)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.261-272"
+      ],
+      "summary": "The Carpenter interview at Thing Software, whiteboard coding challenge"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-iteration-and-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.206-223"
+      ],
+      "summary": "Chapter covering JavaScript collection iteration, functional and iterable patterns."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-lazy-and-eager-collections",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.246-260"
+      ],
+      "summary": "Lazy vs eager collection designs and the LazyCollection mixin"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-making-data-out-of-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.177-197"
+      ],
+      "summary": "Chapter on constructing data structures using pure functions, focusing on combinatory logic and list representation."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-mutation",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.141-157"
+      ],
+      "summary": "Source summary of the Mutation chapter in JavaScript Allong\u00e9 (p.141\u2011157)."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-naming-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.62-78"
+      ],
+      "summary": "Source summary of JavaScript Allong\u00e9 chapter on naming functions."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-object-assign",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.198-205"
+      ],
+      "summary": "Object.assign \u2013 object copying, extending, and prototype mixins"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.94-108"
+      ],
+      "summary": "JavaScript Allonge chapter on booleans, truthiness, and logical operators."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-recipes-with-basic-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.79-93"
+      ],
+      "summary": "Recipes with Basic Functions from raw/javascriptallonge.pdf."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-self-similarity",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.109-125"
+      ],
+      "summary": "Source summary of Self\u2011Similarity chapter covering recursion, linear recursion, tail\u2011call optimization, and related concepts."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-that-constant-coffee-craving",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.49-61"
+      ],
+      "summary": "Source summary of const keyword and scope concepts."
+    },
+    {
+      "category": "source",
       "name": "sword-world-rpg-complete-edition",
       "outbound_links": [
         "sword-world-rpg-complete-edition-1-3-skills",
@@ -439,7 +749,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf"
       ],
-      "summary": "Hub page for raw/Sword World RPG - Complete Edition.pdf."
+      "summary": "Complete rulebook for Sword World RPG."
     },
     {
       "category": "source",
@@ -1042,7 +1352,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.1-7"
       ],
-      "summary": "Front matter overview of Sword World RPG, covering introduction, basic RPG concepts, rulebook purpose, and structure."
+      "summary": "Front matter of Sword World RPG covering introduction, roles, rulebook meaning, and structure."
     },
     {
       "category": "source",

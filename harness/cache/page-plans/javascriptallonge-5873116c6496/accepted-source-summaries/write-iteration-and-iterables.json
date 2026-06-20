@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Iteration for functions and objects has been around for many, many decades. (raw/javascriptallonge.pdf p.206-223)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0043"
+      ]
+    },
+    {
+      "bullet_text": "Our functions don’t need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects. (raw/javascriptallonge.pdf p.206-223)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0042"
+      ]
+    },
+    {
+      "bullet_text": "The mechanics of iterating can then be factored using the same tools that are used to factor the mechanics of all other objects in the system. (raw/javascriptallonge.pdf p.206-223) Might be possible that newer patterns alter this.",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0046"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how JavaScript’s iterator and iterable protocols enable functional programming over collections, from early functional iterators to modern iterable objects and Symbol.iterator, illustrating use with stacks, linked lists, and infinite sequences."
+}

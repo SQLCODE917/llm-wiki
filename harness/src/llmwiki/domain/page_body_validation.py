@@ -129,7 +129,7 @@ def _section_findings(
 
 
 def _placeholder_findings(page_body: str) -> tuple[PageBodyFinding, ...]:
-    if "…" not in page_body and "..." not in page_body:
+    if "…" not in page_body and not _contains_placeholder_ascii_ellipsis(page_body):
         return ()
     return (
         PageBodyFinding(
@@ -137,6 +137,15 @@ def _placeholder_findings(page_body: str) -> tuple[PageBodyFinding, ...]:
             "remove ellipses or truncation placeholders from PageBody prose",
         ),
     )
+
+
+def _contains_placeholder_ascii_ellipsis(page_body: str) -> bool:
+    for match in re.finditer(r"\.\.\.", page_body):
+        next_char = page_body[match.end() : match.end() + 1]
+        if next_char and (next_char.isalpha() or next_char in {"_", "$"}):
+            continue
+        return True
+    return False
 
 
 def _markdown_shape_findings(

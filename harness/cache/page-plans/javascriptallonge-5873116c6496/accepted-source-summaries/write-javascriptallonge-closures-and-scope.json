@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Functions containing one or more free variables are called **closures** (raw/javascriptallonge.pdf p.44-48). (may)",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0022"
+      ]
+    },
+    {
+      "bullet_text": "Pure functions are easiest to understand (raw/javascriptallonge.pdf p.44-48). (may)",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0023"
+      ]
+    },
+    {
+      "bullet_text": "Functions containing no free variables are called **pure functions** (raw/javascriptallonge.pdf p.44-48). (may)",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0025"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of closures and scope concepts from JavaScript Allongé, covering free variables, closures, and environments."
+}

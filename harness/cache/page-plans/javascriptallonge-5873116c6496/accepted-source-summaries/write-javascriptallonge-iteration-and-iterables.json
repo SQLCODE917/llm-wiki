@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Collections in JavaScript can model sets of items, and iterating over them is achieved via iterator methods. (raw/javascriptallonge.pdf p.206-223)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0005"
+      ]
+    },
+    {
+      "bullet_text": "A functional iterator can be defined on an object, returning a function that yields successive values, and this approach might simplify certain algorithms. (raw/javascriptallonge.pdf p.206-223)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0003"
+      ]
+    },
+    {
+      "bullet_text": "The Symbol.iterator protocol enables for...of loops and spread syntax, but spreading infinite iterables may cause infinite loops. (raw/javascriptallonge.pdf p.206-223)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0002"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter explains JavaScript collection iteration, functional iterators, iterables, and operations on ordered collections."
+}

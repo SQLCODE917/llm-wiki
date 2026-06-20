@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Functions with one or more free variables are called **closures** (raw/javascriptallonge.pdf p.44-48).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0022"
+      ]
+    },
+    {
+      "bullet_text": "Pure functions, which have no free variables, are the easiest to understand and **may contain closures** (raw/javascriptallonge.pdf p.44-48).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0025"
+      ]
+    },
+    {
+      "bullet_text": "A free variable is a name that is not bound within a function; it is resolved from a parent environment (raw/javascriptallonge.pdf p.44-48).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0023"
+      ]
+    }
+  ],
+  "source_record_text": "This section explains how nested functions in JavaScript capture free variables, defining closures and pure functions, and discusses environments and scope chains."
+}

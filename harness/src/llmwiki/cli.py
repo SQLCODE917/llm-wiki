@@ -185,6 +185,8 @@ def _build_parser() -> argparse.ArgumentParser:
     merge.add_argument("old", help="Existing page slug to remove.")
     merge.add_argument("target", help="Existing page slug to keep.")
     merge.add_argument("--summary", help="Replacement index summary for the target page.")
+    delete = page_sub.add_parser("delete", help="Delete page(s) and remove index entries.")
+    delete.add_argument("page", nargs="+", help="Existing page slug to delete.")
     relink = page_sub.add_parser(
         "relink",
         help="Replace one page's broken link target with an existing page target.",
@@ -584,6 +586,14 @@ def _run_pages(args: argparse.Namespace, paths: WikiPaths, today: str) -> Operat
         detail = f"Merged [[{args.old}]] into [[{args.target}]] and rewrote inbound links."
         store.append_log(today, "pages", args.target, detail)
         return OperationResult("pages", args.target, detail, None)
+    if args.page_op == "delete":
+        for page in args.page:
+            store.delete_page(page)
+        pages = ", ".join(f"[[{page}]]" for page in args.page)
+        detail = f"Deleted {pages} and removed their index entries."
+        subject = ", ".join(args.page)
+        store.append_log(today, "pages", subject, detail)
+        return OperationResult("pages", subject, detail, None)
     if args.page_op == "relink":
         store.replace_page_link(
             args.page,

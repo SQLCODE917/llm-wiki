@@ -28,13 +28,20 @@ FindingCode = Literal[
     "ocr-verbatim-risk",
 ]
 
-_RAW_CITATION_RE = re.compile(
-    r"raw/(?P<path>[A-Za-z0-9._@+\-/]+)"
-    r"(?P<locators>(?:[ \t]+(?:p\.[^\s)\],;]+|normalized:[^\s)\],;]+))*)"
-)
+_RAW_CITATION_RE = re.compile(r"raw/(?P<body>[^\n)\]]+)")
 _PAGE_RANGE_RE = re.compile(r"^p\.(?P<start>[0-9]+)(?:-(?P<end>[0-9]+))?$")
 _LINE_RANGE_RE = re.compile(r"^normalized:L(?P<start>[0-9]+)(?:-L?(?P<end>[0-9]+))?$")
 _NORMALIZED_TOKEN_RE = re.compile(r"normalized:[^\s)\],;]+")
+_LOCATOR_TRANSLATION = str.maketrans(
+    {
+        "\u2010": "-",
+        "\u2011": "-",
+        "\u2012": "-",
+        "\u2013": "-",
+        "\u2014": "-",
+        "\u2212": "-",
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -104,11 +111,10 @@ def parse_citations(page_name: str, body: str) -> CitationReport:
     spans: list[_CitationSpan] = []
     findings: list[CitationFinding] = []
     for match in _RAW_CITATION_RE.finditer(body):
-        source_path = "raw/" + match.group("path")
-        raw_text = match.group(0)
+        source_path, raw_text, locators = _citation_parts(match.group("body"))
         page_range: tuple[int, int] | None = None
         line_range: tuple[int, int] | None = None
-        for locator in match.group("locators").split():
+        for locator in locators:
             if locator.startswith("p."):
                 parsed = _parse_page_range(page_name, locator)
                 page_range = parsed.value
@@ -136,6 +142,27 @@ def parse_citations(page_name: str, body: str) -> CitationReport:
         citations=tuple(span.citation for span in spans),
         findings=tuple(findings),
     )
+
+
+def _citation_parts(body: str) -> tuple[str, str, tuple[str, ...]]:
+    path_tokens: list[str] = []
+    locators: list[str] = []
+    found_locator = False
+    for token in body.strip().split():
+        normalized = token.translate(_LOCATOR_TRANSLATION).rstrip(".,;")
+        if normalized.startswith("p.") or normalized.startswith("normalized:"):
+            found_locator = True
+            locators.append(normalized)
+        elif found_locator:
+            break
+        else:
+            path_tokens.append(token)
+    path = " ".join(path_tokens).rstrip(".,;")
+    source_path = f"raw/{path}"
+    raw_text = source_path
+    if locators:
+        raw_text += " " + " ".join(locators)
+    return source_path, raw_text, tuple(locators)
 
 
 def validate_citations(report: CitationReport, inventory: SourceInventory) -> CitationReport:

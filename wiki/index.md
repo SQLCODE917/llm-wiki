@@ -2,7 +2,28 @@
 
 ## Sources
 - [[antikythera-mechanism]] — Source summarizing the Antikythera Mechanism, an ancient Greek analog computer.
-- [[sword-world-rpg-complete-edition]] — Hub page for raw/Sword World RPG - Complete Edition.pdf.
+- [[javascriptallonge]] — JavaScript Allonge – A modular guide to JavaScript fundamentals and advanced techniques.
+- [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — Functions in JavaScript are values with richer behavior and identity, exemplified by arrow syntax and evaluation of arguments.
+- [[javascriptallonge-closures-and-scope]] — Source summary of closures and scope from JavaScript Allongé, covering free variables, closures, and environments.
+- [[javascriptallonge-copy-on-write]] — Copy‑on‑write strategies for array and list mutation in JavaScript.
+- [[javascriptallonge-copyright-notice]] — © 2012‑2015 Reginald Braithwaite copyright notice for JavaScriptAllonge
+- [[javascriptallonge-forewords-to-the-first-edition]] — Forewords and prefaces from the first edition.
+- [[javascriptallonge-front-matter]] — Summary of the front matter of JavaScript Allongé, the Six Edition.
+- [[javascriptallonge-garbage-garbage-everywhere]] — Chapter covering tail‑call recursion, array vs. Lisp linked list performance.
+- [[javascriptallonge-generating-iterables]] — Chapter on iterables and generators in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax.
+- [[javascriptallonge-interactive-generators]] — Interactive Generators – chapter covering generators, stateful functions, and examples (p.273‑292).
+- [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — The Carpenter interview at Thing Software, whiteboard coding challenge
+- [[javascriptallonge-iteration-and-iterables]] — Chapter covering JavaScript collection iteration, functional and iterable patterns.
+- [[javascriptallonge-lazy-and-eager-collections]] — Lazy vs eager collection designs and the LazyCollection mixin
+- [[javascriptallonge-making-data-out-of-functions]] — Chapter on constructing data structures using pure functions, focusing on combinatory logic and list representation.
+- [[javascriptallonge-mutation]] — Source summary of the Mutation chapter in JavaScript Allongé (p.141‑157).
+- [[javascriptallonge-naming-functions]] — Source summary of JavaScript Allongé chapter on naming functions.
+- [[javascriptallonge-object-assign]] — Object.assign – object copying, extending, and prototype mixins
+- [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — JavaScript Allonge chapter on booleans, truthiness, and logical operators.
+- [[javascriptallonge-recipes-with-basic-functions]] — Recipes with Basic Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-self-similarity]] — Source summary of Self‑Similarity chapter covering recursion, linear recursion, tail‑call optimization, and related concepts.
+- [[javascriptallonge-that-constant-coffee-craving]] — Source summary of const keyword and scope concepts.
+- [[sword-world-rpg-complete-edition]] — Complete rulebook for Sword World RPG.
 - [[sword-world-rpg-complete-edition-1-3-skills]] — Chapter 1.3 Skills – numeric levels, skill types, rune‑master distinction, half‑elf notes.
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — Character Creation part 1 summary
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — Character Creation part 2: equipment selection, skill restrictions, and price calculation
@@ -69,7 +90,7 @@
 - [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — Guidance on choosing target score vs. difficulty checks in Sword World RPG.
 - [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Overview of supplementary books linked to Sword World RPG, covering replay collections, scenario collections, world guide, novels, adventures, collection series, old rules, and game master screen.
 - [[sword-world-rpg-complete-edition-charts]] — Charts from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-front-matter]] — Front matter overview of Sword World RPG, covering introduction, basic RPG concepts, rulebook purpose, and structure.
+- [[sword-world-rpg-complete-edition-front-matter]] — Front matter of Sword World RPG covering introduction, roles, rulebook meaning, and structure.
 - [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf.
 

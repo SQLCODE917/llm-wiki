@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Functions in JavaScript are values that represent computations, not just numbers or strings (raw/javascriptallonge.pdf p.30-43).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0002"
+      ]
+    },
+    {
+      "bullet_text": "Applying a function to zero or more arguments produces a value, just as 2 + 2 yields 4 (raw/javascriptallonge.pdf p.30-43).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0027"
+      ]
+    },
+    {
+      "bullet_text": "The simplest possible function is `() => 0`, which returns 0 when applied (raw/javascriptallonge.pdf p.30-43).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0005"
+      ]
+    },
+    {
+      "bullet_text": "Evaluating the same function expression repeatedly creates new, distinct functions, illustrating that functions are reference types (raw/javascriptallonge.pdf p.30-43).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0016"
+      ]
+    },
+    {
+      "bullet_text": "In JavaScript, parentheses might be used both to group expressions and to invoke functions, a pattern common in other languages (raw/javascriptallonge.pdf p.30-43).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0034"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript function fundamentals, pages 30‑43."
+}

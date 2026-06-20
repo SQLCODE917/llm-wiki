@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript Allongé explains terms such as functions, scopes, and closures so readers can grasp their meaning (raw/javascriptallonge.pdf p.1-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0053"
+      ]
+    },
+    {
+      "bullet_text": "It may provide recipes that use functions to write software that is simpler, cleaner, and less complicated than object‑centric or code‑centric approaches (raw/javascriptallonge.pdf p.1-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0055"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript Allongé may begin at the basics—values and expressions—and build to topics like types, identity, functions, closures, scopes, collections, and iterators (raw/javascriptallonge.pdf p.1-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0054"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé, the 'Six' Edition, introduces programming with functions and the evolution to ECMAScript 2015."
+}

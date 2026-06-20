@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The front matter contains the cover image of the book (raw/javascriptallonge.pdf p.1-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0004"
+      ]
+    },
+    {
+      "bullet_text": "Lean Publishing is described as publishing an in-progress e‑book with lightweight tools and iterative feedback to pivot until the right book is achieved (raw/javascriptallonge.pdf p.1-13). May be an iterative process.",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0006"
+      ]
+    },
+    {
+      "bullet_text": "Lean Publishing empowers authors and publishers with this process (raw/javascriptallonge.pdf p.1-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0005"
+      ]
+    }
+  ],
+  "source_record_text": "Front matter of JavaScript Allongé, the ‘Six’ Edition, covering title, author, publishing info, and initial prefaces. May include a cover image."
+}

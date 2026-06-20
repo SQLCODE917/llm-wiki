@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Kestrel combinator creates constant functions; demonstrates use of K to bind values to names (raw/javascriptallonge.pdf p.177-197)",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0006"
+      ]
+    },
+    {
+      "bullet_text": "Illustrates caching of images and use of a ternary operator for base-case termination (raw/javascriptallonge.pdf p.177-197)",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0002"
+      ]
+    },
+    {
+      "bullet_text": "Discusses composing and decomposing data via functions, arrays, and objects (raw/javascriptallonge.pdf p.177-197)",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0001"
+      ]
+    },
+    {
+      "bullet_text": "Shows extensive use of ternary operator and arrays/objects for data structures, hinting at possible simplification (raw/javascriptallonge.pdf p.177-197)",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0005"
+      ]
+    },
+    {
+      "bullet_text": "Reiterates theme of composing and decomposing data, suggesting modular function design (raw/javascriptallonge.pdf p.177-197)",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on building data structures using pure functions, focusing on combinatory logic and list representation."
+}

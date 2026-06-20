@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "- Functions are values that can be invoked, not just primitive types. (raw/javascriptallonge.pdf p.30-43)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0002"
+      ]
+    },
+    {
+      "bullet_text": "- Applying a function to arguments might produce a value, analogous to arithmetic operations. (raw/javascriptallonge.pdf p.30-43)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0027"
+      ]
+    },
+    {
+      "bullet_text": "- The simplest function syntax is `() => 0`, returning zero. (raw/javascriptallonge.pdf p.30-43)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0005"
+      ]
+    },
+    {
+      "bullet_text": "- In REPLs, functions print as `[Function]`; the representation can vary by environment. (raw/javascriptallonge.pdf p.30-43)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0034"
+      ]
+    },
+    {
+      "bullet_text": "- Functions, whether arrow or constructor, are full objects internally. (raw/javascriptallonge.pdf p.30-43)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0016"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript functions are values that evaluate expressions, return values, and have identity semantics."
+}

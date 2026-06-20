@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Recursion is the root of computation, trading description for time—may be illustrated by Alan Perlis’s epigram (raw/javascriptallonge.pdf p.109-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0002"
+      ]
+    },
+    {
+      "bullet_text": "A list can be defined as an element concatenated with a list—might be demonstrated by the array literal and spread syntax (raw/javascriptallonge.pdf p.109-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0010"
+      ]
+    },
+    {
+      "bullet_text": "The spread operator can express list construction, allowing recursive definitions of length, map, and flatten functions—might be seen in the examples (raw/javascriptallonge.pdf p.109-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0014"
+      ]
+    }
+  ],
+  "source_record_text": "This chunk introduces recursion as the root of computation and explores self‑similar data structures, linear recursion, tail‑call optimization, and default arguments in JavaScript."
+}

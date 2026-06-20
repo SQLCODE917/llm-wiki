@@ -27,6 +27,9 @@ from llmwiki.runtime.session import Session
 from llmwiki.store import WikiStore
 
 TODAY = "2026-06-19"
+BOOK_HUB = "book"
+FUNCTIONS_PAGE = "book-functions"
+CLOSURES_PAGE = "book-closures"
 
 
 def _page(page_id: str, page_body: str, page_kind: str = "source") -> str:
@@ -105,6 +108,38 @@ def test_pdf_page_plan_can_prefix_new_chunk_pages() -> None:
     ]
     assert plan.planned_writes[0].source_summary_plan is not None
     assert plan.planned_writes[1].source_summary_plan is None
+
+
+def test_prefixed_pdf_page_plan_ignores_existing_generic_section_page() -> None:
+    raw_source = RawSource.from_locator("javascriptallonge.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0001",
+        raw_source=raw_source,
+        locator="p.1-13",
+        heading_path="Front matter",
+        text="JavaScript Allonge introduces functions and closures.",
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(unit,),
+        existing_pages={
+            "front-matter": _page("front-matter", "A generic front matter page."),
+            "sword-world-rpg-complete-edition-front-matter": _page(
+                "sword-world-rpg-complete-edition-front-matter",
+                "A different PDF source page.",
+            ),
+        },
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+        new_page_prefix="javascriptallonge",
+    )
+
+    write = plan.planned_writes[0]
+    assert write.page_metadata.page_id == "javascriptallonge-front-matter"
+    assert write.action == "create-new"
 
 
 def test_prefixed_pdf_page_plan_does_not_match_source_prefix_terms() -> None:
@@ -337,8 +372,8 @@ def _write_page_call(page_id: str) -> ToolCall:
 def _source_summary_write_args(page_id: str) -> dict[str, object]:
     citation = _citation_for(page_id)
     claim_ids = _source_claim_ids_for(page_id)
-    claim_text = "Hub links [[functions]] and [[closures]]."
-    if page_id != "book":
+    claim_text = f"Hub links [[{FUNCTIONS_PAGE}]] and [[{CLOSURES_PAGE}]]."
+    if page_id != BOOK_HUB:
         claim_text = f"The {page_id} source page summarizes this PDF stage."
     return {
         "page_id": page_id,
@@ -364,17 +399,17 @@ def _source_summary_write_args(page_id: str) -> dict[str, object]:
 
 
 def _citation_for(page_id: str) -> str:
-    if page_id == "functions":
+    if page_id == FUNCTIONS_PAGE:
         return "raw/book.pdf p.1-10"
-    if page_id == "closures":
+    if page_id == CLOSURES_PAGE:
         return "raw/book.pdf p.11-20"
     return "raw/book.pdf"
 
 
 def _source_claim_ids_for(page_id: str) -> tuple[str, ...]:
-    if page_id == "functions":
+    if page_id == FUNCTIONS_PAGE:
         return ("source-claim-unit-0001-0001",)
-    if page_id == "closures":
+    if page_id == CLOSURES_PAGE:
         return ("source-claim-unit-0002-0001",)
     return ("source-claim-unit-0001-0001", "source-claim-unit-0002-0001")
 
@@ -395,9 +430,9 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
     store = PagePlanSpyStore(paths)
     extraction = _fake_extraction(paths)
     script = (
-        _turns("functions", "finish_chunk", "noted functions")
-        + _turns("closures", "finish_chunk", "noted closures")
-        + _turns("book", "finish_ingest", "hub written")
+        _turns(FUNCTIONS_PAGE, "finish_chunk", "noted functions")
+        + _turns(CLOSURES_PAGE, "finish_chunk", "noted closures")
+        + _turns(BOOK_HUB, "finish_ingest", "hub written")
     )
     session = Session(
         store=store,
@@ -411,7 +446,7 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
 
     await session.ingest("book.pdf")
 
-    assert store.write_checks == ["functions", "closures", "book"]
+    assert store.write_checks == [FUNCTIONS_PAGE, CLOSURES_PAGE, BOOK_HUB]
     plan_json = (store.page_plan_artifact_dir("book.pdf") / "page-plan.json").read_text(
         encoding="utf-8"
     )

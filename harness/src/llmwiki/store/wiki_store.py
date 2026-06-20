@@ -227,6 +227,9 @@ class WikiStore:
         self._rewrite_links(old_name, target_name)
         self._delete_page_file_and_index(old_name)
 
+    def delete_page(self, name: str) -> None:
+        self._delete_page_file_and_index(name)
+
     def replace_page_link(
         self,
         page_name: str,

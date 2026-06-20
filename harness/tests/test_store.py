@@ -187,6 +187,17 @@ class TestWikiLayer:
         assert "raw/book.pdf p.2" in target
         assert "[[daemons]]" in store.read_page("hub")
 
+    def test_delete_page_removes_file_and_index_entry(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(_page("draft-page", "source", summary="Draft.", body="Temporary."))
+
+        store.delete_page("draft-page")
+
+        assert not (paths.wiki_dir / "draft-page.md").exists()
+        assert "draft-page" not in store.list_pages()
+        assert "[[draft-page]]" not in store.read_index()
+
     def test_replace_page_link_preserves_alias_and_rewrites_index(self, store: WikiStore) -> None:
         store.write_page(_page(name="new-target"))
         store.write_page(

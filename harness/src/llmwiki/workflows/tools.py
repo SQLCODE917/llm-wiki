@@ -3,10 +3,10 @@
 from __future__ import annotations
 
 from dataclasses import replace
-from typing import Literal
+from typing import Any, Literal
 
 from forge.core.workflow import ToolDef, ToolSpec
-from pydantic import BaseModel, Field, ValidationError, field_validator
+from pydantic import BaseModel, Field, ValidationError, field_validator, model_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.ingest_route_plan import IngestRoutePlanError, IngestRoutePlanState
@@ -15,6 +15,7 @@ from llmwiki.domain.objects import PlannedPageWrite, SourceSummaryDraft
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.search import render_hits, search_pages
 from llmwiki.store import WikiStore, WikiStoreError
+from llmwiki.workflows.claim_bullet_rescue import rescue_claim_bullet
 from llmwiki.workflows.planned_write_tools import (
     PlannedWritePageParams as PlannedWritePageParams,
 )
@@ -89,6 +90,18 @@ class WritePageParams(BaseModel):
         default_factory=list,
         description="RawSource locators this page draws on, e.g. ['article.md'].",
     )
+
+    @model_validator(mode="before")
+    @classmethod
+    def rescue_malformed_args(cls, value: object) -> object:
+        if not isinstance(value, dict):
+            return value
+        data: dict[str, Any] = {str(key).strip(): item for key, item in value.items()}
+        if isinstance(data.get("claim_bullets"), list):
+            data["claim_bullets"] = [
+                rescue_claim_bullet(item) for item in data["claim_bullets"]
+            ]
+        return data
 
     @field_validator("sources", mode="before")
     @classmethod

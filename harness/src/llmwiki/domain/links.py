@@ -9,8 +9,10 @@ from __future__ import annotations
 
 import re
 from collections.abc import Mapping
+from pathlib import Path
 
 from llmwiki.domain.objects import LintFinding, LintRun
+from llmwiki.domain.pages import PageError, parse_page, slugify
 
 _LINK_RE = re.compile(r"\[\[([a-z0-9-]+)(?:\|[^\]]+)?\]\]")
 
@@ -41,7 +43,8 @@ def compute_findings(
         if targets - page_ids
     }
     linked_to = set().union(*outbound.values()) if outbound else set()
-    orphan_candidates = page_ids - linked_to - exempt_from_orphans
+    source_hubs = _source_hub_page_ids(pages)
+    orphan_candidates = page_ids - linked_to - exempt_from_orphans - source_hubs
     orphans = tuple(sorted(orphan_candidates)) if len(page_ids) > 1 else ()
     lint_findings: list[LintFinding] = []
     for page_id, links in sorted(broken.items()):
@@ -58,3 +61,25 @@ def compute_findings(
         for page_id in sorted(index_page_ids - page_ids)
     )
     return LintRun(lint_findings=tuple(lint_findings), page_ids=tuple(sorted(page_ids)))
+
+
+def _source_hub_page_ids(pages: Mapping[str, str]) -> frozenset[str]:
+    hubs: set[str] = set()
+    for page_id, text in pages.items():
+        try:
+            page = parse_page(text)
+        except PageError:
+            continue
+        if page.page_kind != "source":
+            continue
+        source_locators = page.sources
+        if page.page_metadata.source_id:
+            source_locators = (*source_locators, page.page_metadata.source_id)
+        if any(_source_locator_stem(locator) == page_id for locator in source_locators):
+            hubs.add(page_id)
+    return frozenset(hubs)
+
+
+def _source_locator_stem(locator: str) -> str:
+    raw_locator = locator.strip().removeprefix("raw/").split(" p.", maxsplit=1)[0].strip()
+    return slugify(Path(raw_locator).stem)

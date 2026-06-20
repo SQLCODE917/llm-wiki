@@ -8,6 +8,7 @@ from llmwiki.domain.ingest_route_plan import (
 )
 from llmwiki.domain.objects import PagePlan, PlannedPageWrite, RawSource, SourceBundle
 from llmwiki.domain.pages import PageMetadata
+from llmwiki.domain.source_summary import SourceSummaryPlan
 from llmwiki.store import WikiStore
 from llmwiki.workflows.ingest_route_tools import plan_pages_tool
 from llmwiki.workflows.tools import write_page_tool
@@ -250,3 +251,104 @@ def test_planned_write_uses_page_plan_metadata_after_route_authorization(
     assert "sources: raw/book.pdf p.1-7" in page
     assert "Model summary …" not in page
     assert "Write-time model summary …" not in page
+
+
+def test_write_page_rescues_claim_id_bullets_for_source_summary(
+    store: WikiStore,
+) -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    selected_claims = (
+        "source-claim-unit-0001-0001",
+        "source-claim-unit-0001-0002",
+        "source-claim-unit-0001-0003",
+    )
+    planned_write = PlannedPageWrite(
+        write_id="write-book-copyright",
+        action="create-new",
+        page_metadata=PageMetadata(
+            page_id="book-copyright",
+            page_kind="source",
+            summary="Book copyright notice.",
+            sources=("raw/book.pdf p.1-2",),
+        ),
+        extracted_units=("unit-0001",),
+        source_summary_plan=SourceSummaryPlan(
+            source_summary_plan_id="source-summary-plan-book-copyright",
+            page_id="book-copyright",
+            selected_source_claims=selected_claims,
+            required_source_citations=("raw/book.pdf p.1-2",),
+        ),
+    )
+    page_plan = PagePlan(
+        plan_id="plan-book",
+        source_bundle=SourceBundle.one(raw_source),
+        extracted_units=(),
+        source_claims=(),
+        source_claim_groups=(),
+        candidate_claims=(),
+        candidate_topics=(),
+        candidate_entities=(),
+        topic_clusters=(),
+        wiki_matches=(),
+        claim_comparisons=(),
+        planned_writes=(planned_write,),
+    )
+    state = IngestRoutePlanState(
+        IngestRouteContext(
+            source_locator="book.pdf",
+            scope="pdf-chunk",
+            chunk_id=1,
+            page_plan=page_plan,
+        )
+    )
+    state.accept(
+        IngestRoutePlan(
+            source_locator="book.pdf",
+            scope="pdf-chunk",
+            chunk_id=1,
+            profile_ids=(),
+            planned_pages=(
+                PlannedPage(
+                    metadata=planned_write.page_metadata,
+                    role="source-summary",
+                    action="create",
+                    source_scope="book.pdf p.1-2",
+                    confidence="high",
+                    rationale="The deterministic PagePlan authorizes this page.",
+                ),
+            ),
+        )
+    )
+    tool = write_page_tool(
+        store,
+        today="2026-06-20",
+        ingest_route_plan_state=state,
+        recoverable_errors=True,
+    )
+
+    result = tool.callable(
+        page_id="book-copyright",
+        page_kind="source",
+        summary="Book copyright notice.",
+        sources=["raw/book.pdf p.1-2"],
+        source_record_text="Copyright and author note for the book.",
+        claim_bullets=[
+            {
+                "claim_id": selected_claims[0],
+                "text": "The book has a copyright notice. (raw/book.pdf p.1-2)",
+            },
+            {
+                "claim_id": selected_claims[1],
+                "text": "Image rights are listed separately. (raw/book.pdf p.1-2)",
+            },
+            {
+                "claim_id": selected_claims[2],
+                "text": "Author contact details are included. (raw/book.pdf p.1-2)",
+            },
+        ],
+    )
+
+    page = store.read_page("book-copyright")
+    assert "Wrote wiki/book-copyright.md" in result
+    assert "Image rights are listed separately." in page
+    assert "source-claim-unit" not in page

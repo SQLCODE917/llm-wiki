@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Magic may not grant unlimited power, and monsters may not all be equally strong or frightening. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "bullet_text": "Unconscious and Death rules explain character status conditions and suggest role‑play implications (raw/Sword World RPG - Complete Edition.pdf p.1-7).",
       "covered_source_claims": [
-        "source-claim-unit-0001-0127"
+        "source-claim-unit-0001-0002"
       ]
     },
     {
-      "bullet_text": "A character sheet may be used to track a player’s character within the fictional world. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "bullet_text": "Precautions When Using skills provide guidance for players and the GM, stressing careful skill application (raw/Sword World RPG - Complete Edition.pdf p.1-7).",
       "covered_source_claims": [
-        "source-claim-unit-0001-0187"
+        "source-claim-unit-0001-0011"
       ]
     },
     {
-      "bullet_text": "An RPG may be played by several people, with only one game master and the rest as players. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "bullet_text": "Other Tan Combat And Magic outlines combat abilities and magic interactions, possibly influencing combat outcomes (raw/Sword World RPG - Complete Edition.pdf p.1-7).",
       "covered_source_claims": [
-        "source-claim-unit-0001-0064"
-      ]
-    },
-    {
-      "bullet_text": "Even in real life, a fight’s outcome may only be known by actually engaging. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
-      "covered_source_claims": [
-        "source-claim-unit-0001-0110"
-      ]
-    },
-    {
-      "bullet_text": "A role-playing game may progress by having participants act out roles, while the game master facilitates the scenario. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
-      "covered_source_claims": [
-        "source-claim-unit-0001-0062"
+        "source-claim-unit-0001-0010"
       ]
     }
   ],
-  "source_record_text": "The front matter introduces Sword World RPG, defines RPG basics, explains the rulebook’s role, and outlines the book’s structure."
+  "source_record_text": "Front matter of Sword World RPG: introduction, game roles, rulebook meaning, structure, and basic gameplay concepts."
 }

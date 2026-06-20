@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Rest of array via destructuring yields a copy of elements. (raw/javascriptallonge.pdf p.158-176) possible",
+      "covered_source_claims": [
+        "source-claim-unit-0012-0006"
+      ]
+    },
+    {
+      "bullet_text": "Rest of linked list returns same nodes. (raw/javascriptallonge.pdf p.158-176)",
+      "covered_source_claims": [
+        "source-claim-unit-0012-0008"
+      ]
+    },
+    {
+      "bullet_text": "Copying prevents parent-child mutations from affecting each other. (raw/javascriptallonge.pdf p.158-176) possible",
+      "covered_source_claims": [
+        "source-claim-unit-0012-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Copy‑on‑write strategy for arrays and linked lists."
+}

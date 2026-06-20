@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Arrow functions bind anonymous functions; the function stays unnamed (raw/javascriptallonge.pdf p.62-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0006-0034"
+      ]
+    },
+    {
+      "bullet_text": "`function` keyword with a name creates an internal name separate from the environment binding (raw/javascriptallonge.pdf p.62-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0006-0022"
+      ]
+    },
+    {
+      "bullet_text": "Named function expressions give the function an internal name for recursion, but the outer variable is the environment binding; might help debugging (raw/javascriptallonge.pdf p.62-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0006-0026"
+      ]
+    },
+    {
+      "bullet_text": "Function declarations are hoisted to the top of the scope; cannot appear inside blocks and can be called before declaration (raw/javascriptallonge.pdf p.62-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0006-0007"
+      ]
+    },
+    {
+      "bullet_text": "Functions always use a block; writing `function (str) str + str` is invalid (raw/javascriptallonge.pdf p.62-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0006-0018"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on naming functions in JavaScript Allongé, covering arrow functions, function keyword, named function expressions, and hoisting."
+}

@@ -89,3 +89,22 @@ Nodes: 71
 Edges: 69
 Unresolved edges: 0
 wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
+Hub source page sword-world-rpg-complete-edition created with source-summary bullets linking key rulebook sections. All 69 chunk pages remain unchanged.
+
+## [2026-06-20] pages | forewords-to-the-first-edition, as-little-as-possible-about-functions-but-no-le…
+Deleted [[forewords-to-the-first-edition]], [[as-little-as-possible-about-functions-but-no-less]], [[closures-and-scope]], [[that-constant-coffee-craving]], [[naming-functions]], [[recipes-with-basic-functions]], [[picking-the-bean-choice-and-truthiness]], [[self-similarity]], [[garbage-garbage-everywhere]], [[mutation]], [[copy-on-write]], [[making-data-out-of-functions]], [[object-assign]], [[iteration-and-iterables]], [[generating-iterables]], [[lazy-and-eager-collections]], [[interlude-the-carpenter-interviews-for-a-job]], [[interactive-generators]], [[copyright-notice]] and removed their index entries.
+
+## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
+Created or updated source hub page 'sword‑world‑sword‑...?
+
+## [2026-06-20] ingest | javascriptallonge.pdf
+Created new hub source page 'javascriptallonge.md' with summary and cross‑links to 14 chapter pages; the hub page includes structured claims and 3 bullet points.
+
+## [2026-06-20] graph | wiki graph
+Graph export: current
+Nodes: 92
+Edges: 89
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Arrays and objects can mutate, changing structure while keeping identity (raw/javascriptallonge.pdf p.141-157).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0002"
+      ]
+    },
+    {
+      "bullet_text": "In JavaScript, almost every value can mutate, but identities stay the same (raw/javascriptallonge.pdf p.141-157).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0003"
+      ]
+    },
+    {
+      "bullet_text": "Alias bindings refer to the same value; mutation changes that shared value (raw/javascriptallonge.pdf p.141-157).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0004"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how mutation works in JavaScript, covering arrays, objects, aliases, and assignment semantics, with possible nuances."
+}

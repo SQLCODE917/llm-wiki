@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Generators build iterators that maintain implicit state, useful for recursive unfolds and state machines (raw/javascriptallonge.pdf p.273-292).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0002"
+      ]
+    },
+    {
+      "bullet_text": "There are other situations where functions must maintain implicit state, and generators might help (raw/javascriptallonge.pdf p.273-292).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0004"
+      ]
+    },
+    {
+      "bullet_text": "A stateful naughts‑and‑crosses game example shows how state can be kept in control flow, rather than data, illustrating interactive generator potential (raw/javascriptallonge.pdf p.273-292).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0005"
+      ]
+    }
+  ],
+  "source_record_text": "Explores interactive generators, contrasts with stateful functions, and illustrates with a naughts‑and‑crosses example."
+}

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript offers a binding in the environment for a constant value, allowing efficient reuse of a value such as PI across multiple function calls (raw/javascriptallonge.pdf p.49-61).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0044"
+      ]
+    },
+    {
+      "bullet_text": "The const keyword introduces one or more bindings in the block that encloses it, enabling a constant value to be accessed without invoking a new function (raw/javascriptallonge.pdf p.49-61).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0046"
+      ]
+    },
+    {
+      "bullet_text": "The const keyword introduces one or more bindings in the block that encloses it, ensuring that a name is bound as close to its use as possible (raw/javascriptallonge.pdf p.49-61).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0047"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of const keyword usage in the That Constant Coffee Craving chapter."
+}

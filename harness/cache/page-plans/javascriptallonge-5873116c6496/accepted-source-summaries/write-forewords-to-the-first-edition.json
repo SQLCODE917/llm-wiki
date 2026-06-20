@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "I’m very conservative about books, and would be first in line to buy a book scented like a used book store (raw/javascriptallonge.pdf p.14‑29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0003"
+      ]
+    },
+    {
+      "bullet_text": "Reg sent me a copy of his book and I was humbled (might be skeptical?) (raw/javascriptallonge.pdf p.14‑29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0005"
+      ]
+    },
+    {
+      "bullet_text": "I was skeptical about releasing JavaScript Allongé as an ongoing ebook with a pay‑what‑you‑want model (raw/javascriptallonge.pdf p.14‑29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Forewords to the first edition of JavaScript Allongé. The author, a lifelong bibliophile, expresses a conservative attitude toward books, initial skepticism about the pay‑what‑you‑want model, and praise for Reg’s generosity and the Leanpub iterative feedback loop (raw/javascriptallonge.pdf p.14‑29)."
+}

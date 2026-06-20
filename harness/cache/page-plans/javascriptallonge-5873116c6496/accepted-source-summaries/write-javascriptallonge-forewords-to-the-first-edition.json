@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Fogus is a lifelong bibliophile excited by Reg’s writing, yet he remains conservative about books, preferring a scent like a \"Used Book Store\" before buying (raw/javascriptallonge.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0003"
+      ]
+    },
+    {
+      "bullet_text": "Reg sent Fogus a copy of the book, which humbled him, contrasting Fogus’s skepticism about the ebook model (raw/javascriptallonge.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0005"
+      ]
+    },
+    {
+      "bullet_text": "Reg’s Leanpub model facilitates rapid feedback loops, making the book improve continuously; Fogus describes this as efficient and transformative, noting it may change future publishing (raw/javascriptallonge.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Forewords and prefaces to the First Edition of JavaScript Allongé"
+}

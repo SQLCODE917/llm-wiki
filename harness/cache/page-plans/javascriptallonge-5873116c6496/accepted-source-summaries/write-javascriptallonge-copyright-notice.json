@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Image credit: Joseph Hurtado (c 2008) (raw/javascriptallonge.pdf p.293-297)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0171"
+      ]
+    },
+    {
+      "bullet_text": "Author’s GitHub: http://github.com/raganwald (raw/javascriptallonge.pdf p.293-297)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0173"
+      ]
+    },
+    {
+      "bullet_text": "Reg \"Raganwald\" Braithwaite (c 2012‑2015) (raw/javascriptallonge.pdf p.293-297)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0172"
+      ]
+    }
+  ],
+  "source_record_text": "Reginald Braithwaite holds the © 2012‑2015 copyright for this book, all rights reserved."
+}

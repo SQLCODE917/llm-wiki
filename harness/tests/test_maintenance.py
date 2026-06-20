@@ -334,6 +334,29 @@ class TestCuratorCli:
         assert (paths.wiki_dir / "wiki-graph.json").exists()
         assert "graph | wiki graph" in paths.log_path.read_text(encoding="utf-8")
 
+    async def test_pages_delete_removes_page_without_backend(
+        self, store: WikiStore, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        def fail_backend(*args: object, **kwargs: object) -> NoReturn:
+            raise AssertionError("page deletion must not load backend config")
+
+        monkeypatch.setattr("llmwiki.cli.load_backend_config", fail_backend)
+        monkeypatch.setattr("llmwiki.cli.start_backend", fail_backend)
+        store.write_page(_page("scratch", "Temporary."))
+        store.write_page(_page("scratch-two", "Temporary."))
+        args = _build_parser().parse_args(
+            ["--root", str(paths.root), "pages", "delete", "scratch", "scratch-two"]
+        )
+
+        result = await _run(args)
+
+        assert result.op == "pages"
+        assert "Deleted [[scratch]]" in result.output
+        assert not (paths.wiki_dir / "scratch.md").exists()
+        assert not (paths.wiki_dir / "scratch-two.md").exists()
+        assert "[[scratch]]" not in paths.index_path.read_text(encoding="utf-8")
+        assert "[[scratch-two]]" not in paths.index_path.read_text(encoding="utf-8")
+
     async def test_graph_check_detects_stale_artifact(
         self, store: WikiStore, paths: WikiPaths
     ) -> None:

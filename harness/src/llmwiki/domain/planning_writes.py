@@ -267,13 +267,12 @@ def _target_page_id(
     unit: ExtractedUnit, existing_pages: dict[str, str], new_page_prefix: str | None
 ) -> str:
     default_page_id = slugify(unit.heading_path)
-    if default_page_id in existing_pages:
-        return default_page_id
     if new_page_prefix is None:
+        if default_page_id in existing_pages:
+            return default_page_id
         for page_id in existing_pages:
             if same_section_identity(unit.heading_path, page_id):
                 return page_id
-    if new_page_prefix is None:
         return default_page_id
     if default_page_id == new_page_prefix or default_page_id.startswith(f"{new_page_prefix}-"):
         return default_page_id
