@@ -93,6 +93,17 @@ class Manifest:
             return self
         return replace(self, chunks=chunks, integrated=False)
 
+    def requeue_mismatched_pages(
+        self, expected_pages_by_chunk: dict[int, tuple[str, ...]]
+    ) -> Manifest:
+        chunks = tuple(
+            _requeue_if_mismatched_pages(chunk, expected_pages_by_chunk.get(chunk.chunk_id, ()))
+            for chunk in self.chunks
+        )
+        if chunks == self.chunks:
+            return self
+        return replace(self, chunks=chunks, integrated=False)
+
     def digest(self) -> str:
         """Concatenated per-chunk notes for the integrate run.
 
@@ -156,6 +167,16 @@ def _requeue_if_missing_pages(
     if not chunk.pages_written:
         return chunk
     if all(page in existing_pages for page in chunk.pages_written):
+        return chunk
+    return _pending_chunk(chunk)
+
+
+def _requeue_if_mismatched_pages(
+    chunk: ChunkRecord, expected_pages: tuple[str, ...]
+) -> ChunkRecord:
+    if chunk.status != "done" or not chunk.route_plan_pages or not expected_pages:
+        return chunk
+    if set(chunk.pages_written) == set(expected_pages):
         return chunk
     return _pending_chunk(chunk)
 

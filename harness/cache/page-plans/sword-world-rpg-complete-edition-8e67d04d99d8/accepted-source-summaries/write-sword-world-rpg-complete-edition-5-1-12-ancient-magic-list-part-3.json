@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Sometimes there are items from the ancient kingdom period that have this [Seal Enchantment] (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
+      "covered_source_claims": [
+        "source-claim-unit-0017-0014"
+      ]
+    },
+    {
+      "bullet_text": "Golems in a state without commands are extremely rarely found, but might be found in the ruins of the ancient kingdom (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
+      "covered_source_claims": [
+        "source-claim-unit-0017-0215"
+      ]
+    },
+    {
+      "bullet_text": "The final score of commands given during the ancient kingdom period is very high; a final score of at least 30 might be required (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
+      "covered_source_claims": [
+        "source-claim-unit-0017-0065"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of Ancient Magic List part 3, covering spells from the ancient kingdom period, including Seal Enchantment and other magic."
+}

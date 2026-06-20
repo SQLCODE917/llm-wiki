@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "All thrown objects must have the same weight (required strength). (raw/Sword World RPG - Complete Edition.pdf p.268-273)",
+      "covered_source_claims": [
+        "source-claim-unit-0064-0020"
+      ]
+    },
+    {
+      "bullet_text": "Total required strength may not exceed character’s strength (or half when using thief skill). (raw/Sword World RPG - Complete Edition.pdf p.268-273)",
+      "covered_source_claims": [
+        "source-claim-unit-0064-0021"
+      ]
+    },
+    {
+      "bullet_text": "Number of objects thrown at once incurs a penalty to attack power; e.g., three darts = -3 per hit check. (raw/Sword World RPG - Complete Edition.pdf p.268-273)",
+      "covered_source_claims": [
+        "source-claim-unit-0064-0018"
+      ]
+    },
+    {
+      "bullet_text": "One target must be chosen; multiple targets are not allowed. (raw/Sword World RPG - Complete Edition.pdf p.268-273)",
+      "covered_source_claims": [
+        "source-claim-unit-0064-0022"
+      ]
+    },
+    {
+      "bullet_text": "It is possible to throw multiple darts or daggers at once, though the rule is optional. (raw/Sword World RPG - Complete Edition.pdf p.268-273)",
+      "covered_source_claims": [
+        "source-claim-unit-0064-0016"
+      ]
+    }
+  ],
+  "source_record_text": "Rule on throwing multiple darts or daggers, covering weight, strength limits, attack penalties, single‑target restriction, and optional nature."
+}

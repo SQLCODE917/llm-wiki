@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The spells listed here are available to characters with the priest (dark priest) skill without exception. (raw/Sword World RPG - Complete Edition.pdf p.99-104)",
+      "covered_source_claims": [
+        "source-claim-unit-0023-0005"
+      ]
+    },
+    {
+      "bullet_text": "The spell Cure Deafness is a counter spell to the dark magic _Deafness_. (raw/Sword World RPG - Complete Edition.pdf p.99-104)",
+      "covered_source_claims": [
+        "source-claim-unit-0023-0060"
+      ]
+    },
+    {
+      "bullet_text": "If the spell you want to remove has a target score, you must attempt a success roll against it using magic power as the baseline score. (raw/Sword World RPG - Complete Edition.pdf p.99-104)",
+      "covered_source_claims": [
+        "source-claim-unit-0023-0024"
+      ]
+    },
+    {
+      "bullet_text": "For undead that can only be wounded by magic weapons, strike power will be 10 regardless of the strike power of the weapon itself. (raw/Sword World RPG - Complete Edition.pdf p.99-104)",
+      "covered_source_claims": [
+        "source-claim-unit-0023-0078"
+      ]
+    },
+    {
+      "bullet_text": "If a priest of Marfa and his wife make a vow to never divorce at the time of their marriage, but then the relationship turns sour, they may end up having a child together; no vow can violate your faith. (raw/Sword World RPG - Complete Edition.pdf p.99-104)",
+      "covered_source_claims": [
+        "source-claim-unit-0023-0002"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of Basic Holy Magic List part 1 (pages 99‑104) covering priest spells, spell‑removal rules, undead damage limits, and vow restrictions."
+}

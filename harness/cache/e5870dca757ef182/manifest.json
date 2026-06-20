@@ -12,12 +12,13 @@
       ],
       "tokens": 5780,
       "status": "done",
-      "notes": "Ingested front matter of Sword World RPG - Complete Edition. Created source page for the complete rulebook and two concept pages: role-playing-game and game-master. All pages cite the front matter section (raw/Sword World RPG - Complete Edition.pdf p.1-7). No entities were touched in this chunk.",
+      "notes": "Created source page sword-world-rpg-complete‑… (1 page). No other entity or concept pages updated. The front‑matter page summarizes key introductory claims and cites the 1‑7 range.",
       "pages_written": [
-        "sword-world-rpg-complete-edition",
-        "role-playing-game",
-        "game-master"
-      ]
+        "sword-world-rpg-complete-edition-front-matter"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 2,
@@ -28,13 +29,13 @@
       ],
       "tokens": 4037,
       "status": "done",
-      "notes": "Written the main source page 'sword-world-rpg-complete-edition-books-related' and three concept pages: 'replay-collections', 'scenario-collections', and 'races-sword-world'. Key claims covered include the different types of supplementary books for Sword World RPG, their purposes, limitations, and the characteristics of the four main races (dwarf, grassrunner, elf) in the game's setting. The pages touch on important entities like the Duda RPG Replay Collection series and the concept of ability scores.",
+      "notes": "Created source page sword-world-rpg-complete-edition-books-related-to-sword-world-rpg with 5 claim bullets covering key related books and Elf lore. No concept pages created. No contradictions. Page indexed.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-books-related",
-        "replay-collections",
-        "scenario-collections",
-        "races-sword-world"
-      ]
+        "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 3,
@@ -45,12 +46,13 @@
       ],
       "tokens": 2850,
       "status": "done",
-      "notes": "Ingested Chapter 1.3 on Skills from Sword World RPG - Complete Edition. Wrote source page for the chapter and updated concept pages for Half-Elf and Adventurer Skills. Key entities touched: half-elf, changeling, adventurer skills (fighter, thief, sage, bard, ranger, sorcerer, shaman, priest, dark priest, dragon priest). The half-elf page includes information on their characteristics, lifespan, and upbringing, while the adventurer skills page details the various classes available to adventurers.",
+      "notes": "Created source page sword-world-rpg-complete-edition-1-3-skills covering numeric skill system, skill types, adventurer level calculation, rune‑master distinction, and half‑elf skill notes. No additional entity or concept pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-1-3",
-        "sword-world-rpg-complete-edition-half-elf",
-        "sword-world-rpg-complete-edition-adventurer-skills"
-      ]
+        "sword-world-rpg-complete-edition-1-3-skills"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 4,
@@ -61,12 +63,13 @@
       ],
       "tokens": 5700,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-character-creation' and updated concept pages 'sword-world-rpg-complete-edition-races' and 'sword-world-rpg-complete-edition-ability-scores'. Key claims covered include race selection process, ability score determination, starting skills and experience points, and character details. Entities touched include humans, dwarves, grassrunners, elves, half-elves, and various ability scores.",
+      "notes": "Created source page sword-world-rpg-complete-edition-1-4-character-creation-part-1. Added 5 claim bullets covering starting experience, weapon strength rule, race skill restrictions, race-specific restrictions, age/gender neutrality. No existing pages updated. Chunk written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-character-creation",
-        "sword-world-rpg-complete-edition-races",
-        "sword-world-rpg-complete-edition-ability-scores"
-      ]
+        "sword-world-rpg-complete-edition-1-4-character-creation-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 5,
@@ -77,13 +80,13 @@
       ],
       "tokens": 5932,
       "status": "done",
-      "notes": "Written the chapter 1.4 source page for character creation and updated three related concept pages: race, ability score, and skill. The chunk covered character creation including race selection, ability scores, starting skills, and character details. Key entities touched include human, dwarf, grassrunner, elf, and half-elf races, as well as ability scores and skill acquisition.",
+      "notes": "Created source page sword-world-rpg-complete‑edition‑1‑4‑character‑creation‑part‑2 summarizing equipment selection rules, skill‑based restrictions, and price calculation. No new entity or concept pages written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-character-creation-chapter-1-4",
-        "sword-world-rpg-complete-edition-race",
-        "sword-world-rpg-complete-edition-ability-score",
-        "sword-world-rpg-complete-edition-skill"
-      ]
+        "sword-world-rpg-complete-edition-1-4-character-creation-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 6,
@@ -94,12 +97,13 @@
       ],
       "tokens": 5255,
       "status": "done",
-      "notes": "Written the chapter source page for 2.3 Checks and updated related concepts: baseline score and target score. The chunk covered the core mechanics of success rolls, including baseline scores, target scores, automatic success/failure, bonuses/penalties, and difficulty checks. Key entities touched include Ducard II (used in examples) and the game master's role in determining target scores. Pages written: sword-world-rpg-complete-edition-chapter-2-3, sword-world-rpg-complete-edition-baseline-score, sword-world-rpg-complete-edition-target-score.",
+      "notes": "Created source page sword-world-rpg-complete-edition-2-3-checks. No other pages written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-2-3",
-        "sword-world-rpg-complete-edition-baseline-score",
-        "sword-world-rpg-complete-edition-target-score"
-      ]
+        "sword-world-rpg-complete-edition-2-3-checks"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 7,
@@ -110,13 +114,13 @@
       ],
       "tokens": 4292,
       "status": "done",
-      "notes": "Written the chapter page for 2.7 Resistance Rolls and three related concept pages: resistance roll, life force resistance roll, and mental power resistance roll. Key claims covered include the calculation of baseline scores for resistance rolls using adventurer level plus ability bonuses, the distinction between life force and mental power resistance rolls, and examples of these rolls in action. Entities touched include Ducard II as an example character.",
+      "notes": "Wrote source page sword-world-rpg-complete-edition-2-7-resistance-rolls; key claims: resistance roll definitions, action cancellation rules, spell declaration limits, companion aid during rounds, two action choices. No other pages touched.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-2-7",
-        "sword-world-rpg-complete-edition-resistance-roll",
-        "sword-world-rpg-complete-edition-life-force-resistance-roll",
-        "sword-world-rpg-complete-edition-mental-power-resistance-roll"
-      ]
+        "sword-world-rpg-complete-edition-2-7-resistance-rolls"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 8,
@@ -127,12 +131,13 @@
       ],
       "tokens": 5986,
       "status": "done",
-      "notes": "Written the chapter source page for Movement and Actions (Chapter 3-4) and updated related concepts: agility and withdrawal from engagement. The chapter covers movement options (full, normal, stand still) and their action restrictions, combat skills (fighter, thief, ranger), weapon combat rules, and projectile restrictions. Key entities touched include character creation elements, combat mechanics, and ability scores.",
+      "notes": "Source page sword-world-rpg-complete-edition-3-4-movement-and-actions created. No additional pages written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-3-4-movement-and-actions",
-        "sword-world-rpg-complete-edition-agility",
-        "sword-world-rpg-complete-edition-withdrawal-from-engagement"
-      ]
+        "sword-world-rpg-complete-edition-3-4-movement-and-actions"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 9,
@@ -143,13 +148,13 @@
       ],
       "tokens": 5592,
       "status": "done",
-      "notes": "Written the main chapter page for 4.5 Attacks From Characters Against Monsters and updated related concepts: attack power, evasion points, and strike power. These pages cover key combat mechanics from the chunk, including hit checks, damage calculation, and defense points.",
+      "notes": "Created source page sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters. Added claim bullets summarizing hit checks, strike rolls, criticals, double‑ones rules, and life‑force effects. No new concept or entity pages were created in this ingest.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters",
-        "sword-world-rpg-complete-edition-attack-power",
-        "sword-world-rpg-complete-edition-evasion-points",
-        "sword-world-rpg-complete-edition-strike-power"
-      ]
+        "sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 10,
@@ -160,12 +165,13 @@
       ],
       "tokens": 5901,
       "status": "done",
-      "notes": "Written the chapter source page for 4.9 Unconscious and Death Checks. Updated the life force resistance roll concept page with new details from the chapter. Created a new concept page for death checks. All pages cite the relevant section (p. 4-51 to 4-53) from the source.",
+      "notes": "Created source page sword-world-rpg-complete‑… ‑unconscious‑and‑death‑checks and added 5 claim bullets covering armor color magic, mithril silver color processing, crown color limits, mercy rule, and treatment recovery.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks",
-        "sword-world-rpg-complete-edition-life-force-resistance-roll",
-        "sword-world-rpg-complete-edition-death-check"
-      ]
+        "sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 11,
@@ -176,12 +182,13 @@
       ],
       "tokens": 3049,
       "status": "done",
-      "notes": "Wrote the chapter page for 5.1.1 Types of Magic and updated related concepts: rune masters and magic spells. Key claims: There are five types of magic (ancient, spirit, holy, dark, dragon roar) each with different runes and sources; rune masters are divided into five types based on magic used; magic power = skill level + intelligence bonus; characters cannot have more than one type of holy, dark, or dragon roar magic simultaneously; spell levels range from 1-10 with higher levels requiring higher skill.",
+      "notes": "Created source page sword-world-rpg-complete‑… … 5 %?",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-1-types-of-magic",
-        "sword-world-rpg-complete-edition-rune-masters",
-        "sword-world-rpg-complete-edition-magic-spells"
-      ]
+        "sword-world-rpg-complete-edition-5-1-1-types-of-magic"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 12,
@@ -192,12 +199,13 @@
       ],
       "tokens": 5768,
       "status": "done",
-      "notes": "Wrote the chapter page for \"How to Use Magic\" (5.1.4) and updated related concepts. Key pages created: sword-world-rpg-complete-edition-chapter-5-1-4-how-to-use-magic, sword-world-rpg-complete-edition-magic-power, and sword-world-rpg-complete-edition-resistible-magic. The chunk covered magic power calculation, resistible vs non-resistible magic, casting procedures for adventurers and monsters, and resistance checks.",
+      "notes": "Created source page sword-world-rpg-complete-edition-5-1-4-how-to-use-magic with five claim bullets covering spell mechanics, resistance rules, rune master limits, rune equivalence, and enemy magic casting. No other pages updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-4-how-to-use-magic",
-        "sword-world-rpg-complete-edition-magic-power",
-        "sword-world-rpg-complete-edition-resistible-magic"
-      ]
+        "sword-world-rpg-complete-edition-5-1-4-how-to-use-magic"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 13,
@@ -208,12 +216,13 @@
       ],
       "tokens": 5088,
       "status": "done",
-      "notes": "Ingested chunk 13/69 from 'Sword World RPG - Complete Edition.pdf' (p.61-64). Created or updated three pages: 'sword-world-rpg-complete-edition-magic-expansion' (concept), 'sword-world-rpg-complete-edition-magic-contraction' (concept), and 'sword-world-rpg-complete-edition-chapter-5-1-7-magic-expansion' (source). Key claims covered include magic expansion types (targets, area, volume, duration, distance, damage, final score, effect), combined expansion mechanics, magic contraction types (area, volume, duration, power decrease, effect), and magic types (damage, target score, counters, mind, physical ability, weapon enhancement, non-removable, curse, detection, focus, illusion). The pages cover the core mechanics of how rune masters can manipulate magic effects through expansion and contraction, with detailed examples and tables for area and size expansion.",
+      "notes": "Ingested Magic Expansion rules (p.61‑64). Created source page sword-world-rpg-complete-edition-5-1-7-magic-expansion. No new concept or entity pages needed. Updated index. No conflicts noted.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-magic-expansion",
-        "sword-world-rpg-complete-edition-magic-contraction",
-        "sword-world-rpg-complete-edition-chapter-5-1-7-magic-expansion"
-      ]
+        "sword-world-rpg-complete-edition-5-1-7-magic-expansion"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 14,
@@ -224,12 +233,13 @@
       ],
       "tokens": 3231,
       "status": "done",
-      "notes": "Written the chapter source page for 'How to Read Magic Details' (5.1.10) and two concept pages: 'illusion magic' and 'ritual magic'. Updated existing pages with new cross-references. Key claims covered include: how to read magic details, types of senses affected by illusion magic, detection of illusions, ritual magic benefits and limitations, and how ritual bonuses stack. Entities touched: illusion magic, ritual magic, five senses, pseudo senses, magic senses, spellbook, magical catalyst.",
+      "notes": "Created source summary page sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details. Key claims: illusion mechanics, ritual bonuses, lost spells, magic detail format. Updated wiki index.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-10-how-to-read-magic-details",
-        "sword-world-rpg-complete-edition-illusion-magic",
-        "sword-world-rpg-complete-edition-ritual-magic"
-      ]
+        "sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 15,
@@ -240,13 +250,13 @@
       ],
       "tokens": 5984,
       "status": "done",
-      "notes": "Written the main chapter page for the ancient magic list (5.1.12) and three concept pages: Enchant Weapon, Magic Protection, and Familiar. Key claims covered include the effects and limitations of each spell, with cross-references to the main source and other relevant pages. Entities touched include weapons, objects, creatures, and spell mechanics.",
+      "notes": "Created source page sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1 with 5 claim bullets covering Unlock, Energy Bolt, Enchant Weapon, Counterspell, Sense Magic. No other pages updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list",
-        "sword-world-rpg-complete-edition-enchant-weapon",
-        "sword-world-rpg-complete-edition-magic-protection",
-        "sword-world-rpg-complete-edition-familiar"
-      ]
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 16,
@@ -257,12 +267,13 @@
       ],
       "tokens": 5973,
       "status": "done",
-      "notes": "Ingested Chapter 5.1.12 part 2 of Sword World RPG - Complete Edition, detailing 4th, 5th, and 6th level ancient magic spells. Updated the existing Magic Protection concept page and created a new Physical Enchant concept page. The chapter source page was updated to reflect the full list of spells. Key entities touched: Magic Protection, Physical Enchant, Bone Servant, Lightning, Levitation, Counter Sense, Conceal Self, Shape Change, Sense Aura, Tongue, Paralyze, Fireball, Location, Apport, Illusion, Suppress Elemental, Skeleton Warrior, Sense Lie, Translate, Vision, Flight, Blizzard, Acid Cloud, Analyze Enchantment, Geas, Create Undead, Create Device, Create Buau Zombie, and See-Through.",
+      "notes": "Wrote source summary page sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2. No additional concept or entity pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list-part-2",
-        "sword-world-rpg-complete-edition-magic-protection",
-        "sword-world-rpg-complete-edition-physical-enchant"
-      ]
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 17,
@@ -273,13 +284,13 @@
       ],
       "tokens": 5930,
       "status": "done",
-      "notes": "Written the 5th part of the ancient magic list chapter (4th-9th level spells), and updated related concepts: Seal Enchantment, Wraith, and Control Weather. Key entities touched include magic spells, magical power, and the ancient kingdom period.",
+      "notes": "Created source page sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3 with 3 claim bullets citing p.68-82. No concept/entity pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list-part-3",
-        "sword-world-rpg-complete-edition-seal-enchantment",
-        "sword-world-rpg-complete-edition-wraith",
-        "sword-world-rpg-complete-edition-control-weather"
-      ]
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 18,
@@ -290,13 +301,13 @@
       ],
       "tokens": 2521,
       "status": "done",
-      "notes": "Written the 4th level ancient magic list chapter page and updated related concepts. Key claims: Petrify spell turns targets to stone, Rune Shield blocks magic, and shaman skill requires specific restrictions for use. Entities touched: Petrify, Rune Shield, shaman skill, spirit magic. Pages written: 3 (including source chapter and 2 concepts).",
+      "notes": "Created source page sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4 summarizing ancient magic spells and spirit rules. Added claim bullets covering water, earth, wind spirits, GM declarations, weapon use, and Dispel Magic. No other pages touched.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-12-ancient-magic-list",
-        "sword-world-rpg-complete-edition-petrify",
-        "sword-world-rpg-complete-edition-rune-shield",
-        "sword-world-rpg-complete-edition-shaman-skill"
-      ]
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 19,
@@ -307,12 +318,13 @@
       ],
       "tokens": 5994,
       "status": "done",
-      "notes": "Ingested chapter 5.1.14 \"Spirit Magic List\" from Sword World RPG - Complete Edition. Created source page for the chapter and updated related concept pages: shaman skill and spirit magic. Key entities touched: Wind Voice, Snare, Destruction, Purification, Firebolt, Brownie, Will-O-Wisp, Water Screen, Confusion, Shade, Fanaticism, Forget, Hold, Invisibility, Water Breathing, Control Spirit, Healing, Mute, Water Walking, Sink, Sleep, Tunnel. The shaman skill page was updated to include information about spirit magic spells and restrictions.",
+      "notes": "Created source page sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1 with concise claim bullets on spirit power sensing, rune usage, area resist, will‑o‑wisp vanishing, and weak‑power detection. No other pages modified. Key claims captured.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-14-spirit-magic-list",
-        "sword-world-rpg-complete-edition-shaman-skill",
-        "sword-world-rpg-complete-edition-spirit-magic"
-      ]
+        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 20,
@@ -323,12 +335,13 @@
       ],
       "tokens": 5983,
       "status": "done",
-      "notes": "Written the chapter source page 'sword-world-rpg-complete-edition-chapter-5-1-14-spirit-magic-list-part-2' detailing spirit magic spells from 5th to 7th level. Updated the 'sword-world-rpg-complete-edition-spirit-magic' concept page with comprehensive information on spirit magic types, spell levels, and key spells. Updated the 'sword-world-rpg-complete-edition-shaman-skill' concept page to include additional information on the shaman skill's usage and abilities beyond spirit magic casting.",
+      "notes": "Wrote source page sword-world‑…‑part-2 summarizing 5‑1‑14 Spirit Magic List part 2 with 5 claim bullets. Updated index. No entity or concept pages written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-14-spirit-magic-list-part-2",
-        "sword-world-rpg-complete-edition-spirit-magic",
-        "sword-world-rpg-complete-edition-shaman-skill"
-      ]
+        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 21,
@@ -339,12 +352,13 @@
       ],
       "tokens": 3199,
       "status": "done",
-      "notes": "Written the chapter source page for part 3 of the spirit magic list (5.1.14) and updated the main spirit magic concept page with new spells. Created two new concept pages for the Plant Shell and Full Control Spirit spells that were detailed in this chunk. Key entities touched: Ent/Greater Plant Spirit, Various lesser spirits. All pages cite the appropriate source material.",
+      "notes": "Wrote source page sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3 summarizing spirit control and protective light rules. 5 claim bullets, 1 source page written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-14-spirit-magic-list-part-3",
-        "sword-world-rpg-complete-edition-spirit-magic-spell-plant-shell",
-        "sword-world-rpg-complete-edition-spirit-magic-spell-full-control-spirit"
-      ]
+        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 22,
@@ -355,12 +369,13 @@
       ],
       "tokens": 3913,
       "status": "done",
-      "notes": "Written the chapter page for 5.1.15 Holy Magic and the Priest Skill, and updated related concepts: priest skill, holy magic. No new entities created. Key claims: holy magic requires faith, priests must worship one god, wicked gods are forbidden, priests have divination and vow abilities. Pages written: sword-world-rpg-complete-edition-chapter-5-1-15-holy-magic-and-the-priest-skill, sword-world-rpg-complete-edition-priest-skill, sword-world-rpg-complete-edition-holy-magic.",
+      "notes": "Created source page sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill with 5 claim bullets. No other pages touched. This chunk is now reflected in the wiki.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-15-holy-magic-and-the-priest-skill",
-        "sword-world-rpg-complete-edition-priest-skill",
-        "sword-world-rpg-complete-edition-holy-magic"
-      ]
+        "sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 23,
@@ -371,12 +386,13 @@
       ],
       "tokens": 5940,
       "status": "done",
-      "notes": "Written the chapter page for 5.1.16 (Basic Holy Magic List) and updated related pages: priest-skill and holy-magic. The key claims covered include the priest skill's requirements, restrictions, and abilities, as well as the basic holy magic spells up to 7th level. Entities touched include the priest skill, holy magic, and various spells like Cure Wounds, Turn Undead, and Resurrection.",
+      "notes": "Created source‑page sword‑world‑rpg‑complete‑… – 0 / 1 ? …………?",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-16-basic-holy-magic-list-part-1",
-        "sword-world-rpg-complete-edition-priest-skill",
-        "sword-world-rpg-complete-edition-holy-magic"
-      ]
+        "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 24,
@@ -387,12 +403,13 @@
       ],
       "tokens": 4948,
       "status": "done",
-      "notes": "Written the second part of the basic holy magic list chapter, and updated the reincarnation and resurrection concepts. Key entities touched: reincarnation, resurrection, save soul, call god, and others. Pages written: sword-world-rpg-complete-edition-chapter-5-1-16-basic-holy-magic-list-part-2.md, sword-world-rpg-complete-edition-reincarnation.md, sword-world-rpg-complete-edition-resurrection.md.",
+      "notes": "Created source page sword-world-rpg-complete‑… and bullets covering 5 claims including mindless‑beings, defense roll, duration, resurrection week, undead‑resurrection restriction.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-1-16-basic-holy-magic-list-part-2",
-        "sword-world-rpg-complete-edition-reincarnation",
-        "sword-world-rpg-complete-edition-resurrection"
-      ]
+        "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 25,
@@ -403,12 +420,13 @@
       ],
       "tokens": 3974,
       "status": "done",
-      "notes": "Written the main chapter page for 5.3 Spellsongs and two related concept pages: Bard skill and Spellsong List. Key entities touched: bard, spellsongs, mind-type magic. No new entities created beyond existing ones in the wiki.",
+      "notes": "Created source page sword‑world‑rpg‑complete‑edition‑5‑3‑spellsongs. No entity or concept pages written. Key claims: resistance‑rolls, types‑and‑effects, grassrunners, GM discretion, mental‑power use. Pages touched: source page. ",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-5-3-spellsongs",
-        "sword-world-rpg-complete-edition-bard",
-        "sword-world-rpg-complete-edition-spellsong-list"
-      ]
+        "sword-world-rpg-complete-edition-5-3-spellsongs"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 26,
@@ -419,12 +437,13 @@
       ],
       "tokens": 5578,
       "status": "done",
-      "notes": "Written the thief skill chapter page (sword-world-rpg-complete-edition-thief-skill) and three related concept pages: thieves' guild, lockpicking, and equipment restrictions. Key claims covered include the guild's requirements, penalties for outsiders, lockpicking tools and modifiers, and the not retriable nature of certain abilities like lockpicking. Entities touched include the thieves' guild, lockpicking tools, and various thief skill abilities.",
+      "notes": "Created source page sword-world-rpg-complete-edition-6-2-thief-skill covering equipment limits, lockpicking, trap setting, and listen checks. No other pages touched. ",
       "pages_written": [
-        "sword-world-rpg-complete-edition-thief-skill",
-        "sword-world-rpg-complete-edition-thieves-guild",
-        "sword-world-rpg-complete-edition-lockpicking"
-      ]
+        "sword-world-rpg-complete-edition-6-2-thief-skill"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 27,
@@ -435,12 +454,13 @@
       ],
       "tokens": 2233,
       "status": "done",
-      "notes": "Written the main 'sword-world-rpg-complete-edition-sage-skill' page, and related concepts 'sword-world-rpg-complete-edition-bard-skill' and 'sword-world-rpg-complete-edition-monster-check'. Key claims covered include the sage skill's abilities (Monster Check, Languages, Astrology, Knowledge, Research, Treasure Appraisal, Medicines), the bard skill's abilities (Sing, Play Instrument, Languages (Spoken), Spellsongs, Folklore Knowledge), and the specific rules for Monster Check including rarity scores and success rolls. Pages written: 3.",
+      "notes": "Created source page sword‑world‑...‐6‑4‑sage‑skill; 5 claim bullets; 0 other pages; no contradictions. Pages written: sword‑world‑…‑6‑-…..",
       "pages_written": [
-        "sword-world-rpg-complete-edition-sage-skill",
-        "sword-world-rpg-complete-edition-bard-skill",
-        "sword-world-rpg-complete-edition-monster-check"
-      ]
+        "sword-world-rpg-complete-edition-6-4-sage-skill"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 28,
@@ -451,12 +471,13 @@
       ],
       "tokens": 5377,
       "status": "done",
-      "notes": "Ingested Chapter 6.6 \"Common Adventurer Abilities\" from Sword World RPG - Complete Edition (pages 120-125). Created a source page for the chapter and two concept pages for key skills mentioned: Folklore Knowledge and Spellsongs. The chapter covers common abilities like Riding, Swim, Ship Steering, Climb, and Jump, with detailed rules for each. Folklore Knowledge is a bard skill providing familiarity with regional myths and legends, while Spellsongs are magical songs from the ancient kingdom period. Both skills are described in detail with their mechanics and limitations.",
+      "notes": "Key claims: baseline checks use adventurer level + ability bonus; drowning risk; breath limit equals life force rounds; climb rules from Table 6-1; long/high jump tables. Pages: sword-world-rpg-complete-edition-6-6-common-adventurer-abilities. No new entity or concept pages needed.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-6-6-common-adventurer-abilities",
-        "sword-world-rpg-complete-edition-folklore-knowledge",
-        "sword-world-rpg-complete-edition-spellsongs"
-      ]
+        "sword-world-rpg-complete-edition-6-6-common-adventurer-abilities"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 29,
@@ -467,13 +488,13 @@
       ],
       "tokens": 5359,
       "status": "done",
-      "notes": "Written the merchant skill concept page, the craftsman skill concept page, the hunter skill concept page, and the chapter 7.2 source page. Key claims: Merchant skill enables trade and negotiation, Craftsman skill enables item creation and valuation, Hunter skill enables hunting and pre-processing. Entities touched: merchant, craftsman, hunter. Pages written: 4.",
+      "notes": "Created source page sword‑world‑...‑merchant‑skill. No other pages modified. Key claims: merchant freedom, check limits, merchant level rule, merchant trade specialization.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-merchant-skill",
-        "sword-world-rpg-complete-edition-craftsman-skill",
-        "sword-world-rpg-complete-edition-hunter-skill",
-        "sword-world-rpg-complete-edition-chapter-7-2-merchant-skill"
-      ]
+        "sword-world-rpg-complete-edition-7-2-merchant-skill"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 30,
@@ -484,12 +505,13 @@
       ],
       "tokens": 5074,
       "status": "done",
-      "notes": "Written the chapter source page for 4.5 Attacks From Characters Against Monsters and updated related concepts: experience points, sorcerer skill. No new entity pages created; existing pages were updated to reflect new information on skill interactions and experience point usage.",
+      "notes": "Key claims: experience points grant skill progress, capped at level 10; sorcerer and sage skills grant point reductions or zero-cost acquisition; carry‑over of unused experience is allowed. Pages touched: sword-world-rpg-complete-edition-8-1-experience-points.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-experience-points",
-        "sword-world-rpg-complete-edition-sorcerer-skill",
-        "sword-world-rpg-complete-edition-chapter-4-5-attacks-from-characters-against-monsters"
-      ]
+        "sword-world-rpg-complete-edition-8-1-experience-points"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 31,
@@ -500,12 +522,13 @@
       ],
       "tokens": 5173,
       "status": "done",
-      "notes": "Written chapter page sword-world-rpg-complete-edition-chapter-9-2-target-score-vs-difficulty.md and updated target-score and difficulty-check concept pages. Key concepts covered: target score checks for actions with clear outcomes, difficulty checks for ambiguous outcomes, and the distinction between them. The chunk also introduced success roll modifiers and automatic success rules.",
+      "notes": "Created source page for chapter 9.2 with 5 bullets and summary. No other pages updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-9-2-target-score-vs-difficulty",
-        "sword-world-rpg-complete-edition-target-score",
-        "sword-world-rpg-complete-edition-difficulty-check"
-      ]
+        "sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 32,
@@ -516,13 +539,13 @@
       ],
       "tokens": 4665,
       "status": "done",
-      "notes": "Written the chapter source page for '10.3 Surprise Attacks' and updated related concepts: 'surprise attack', 'stealthy step', and 'ranger skill'. Key claims include the mechanics of surprise attacks involving 2D rolls, monster level, and ranger skill/intelligence bonus. Entities touched include monster level, ranger skill, and thief skill.",
+      "notes": "Created source page sword-world-rpg-complete-edition-10-3-surprise-attacks with five claim bullets. Key concepts: attack power modifiers, surprise attack check, sleeping monster attacks, surprise attack eligibility, post‑surprise action options.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-10-3-surprise-attacks",
-        "sword-world-rpg-complete-edition-surprise-attack",
-        "sword-world-rpg-complete-edition-stealthy-step",
-        "sword-world-rpg-complete-edition-ranger-skill"
-      ]
+        "sword-world-rpg-complete-edition-10-3-surprise-attacks"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 33,
@@ -533,12 +556,13 @@
       ],
       "tokens": 5970,
       "status": "done",
-      "notes": "Written the chapter page for dark magic (sword-world-rpg-complete-edition-chapter-11-2-dark-magic) and updated related concepts: dark priest (sword-world-rpg-complete-edition-dark-priest) and dark magic spells (sword-world-rpg-complete-edition-dark-magic-spells). Key claims covered include the nature of dark magic, the role of dark priests, and a list of basic dark magic spells from 1st to 10th level. Entities touched include dark priests, wicked gods, and specific spells like Wounds, Mental Attack, Deafness, Blindness, Poison, Control Imp, Steal Life, Curse, Create Zombie, Mesmerize, Rot, Cripple, Summon Servant, Plague, Recall Spirit, and Call God.",
+      "notes": "Created source page sword‑world‑… and key claims about dark magic rules and dark priests. No entity pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-11-2-dark-magic",
-        "sword-world-rpg-complete-edition-dark-priest",
-        "sword-world-rpg-complete-edition-dark-magic-spells"
-      ]
+        "sword-world-rpg-complete-edition-11-2-dark-magic-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 34,
@@ -549,13 +573,13 @@
       ],
       "tokens": 1491,
       "status": "done",
-      "notes": "Wrote the chapter page for 11.2 Dark Magic (part 2) and three concept pages: Evil Impulse, Berserk, and Lunatic Seed. All pages cite the source material (raw/Sword World RPG - Complete Edition.pdf p.142-148). The chapter page covers special dark magic spells for Phalaris, The Nameless God of Madness, Kardis, and Mirleaf, while the concept pages focus on the key spells that demonstrate different aspects of dark magic - from impulse-based evil acts to berserk rage to controlling curses.",
+      "notes": "Created source page sword-world-rpg‑… ; added claims about dark magic spell lists, casting without chanting, etc.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-11-2-dark-magic-part-2",
-        "sword-world-rpg-complete-edition-evil-impulse",
-        "sword-world-rpg-complete-edition-berserk",
-        "sword-world-rpg-complete-edition-lunatic-seed"
-      ]
+        "sword-world-rpg-complete-edition-11-2-dark-magic-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 35,
@@ -566,12 +590,13 @@
       ],
       "tokens": 5737,
       "status": "done",
-      "notes": "Written the main chapter page for dragon roar magic (sword-world-rpg-complete-edition-dragon-roar-magic), and updated related concepts: dragon priest skill (sword-world-rpg-complete-edition-dragon-priest-skill) and dragon roar magic spells (sword-world-rpg-complete-edition-dragon-roar-magic-spells). Key claims covered include the nature of dragon roar magic, the dragon priest skill's acquisition and restrictions, and the various spells available including summoning, transformation, and elemental magic. Entities touched include dragon priests, dragons, reptiles, and specific spells like Fire Breath and Reborn Dragon.",
+      "notes": "Created source page sword‑world‑rpg‑complete‑edition‑11‑3‑dragon‑roar‑magic\n- 5 claim bullets with 5–8 k‑w. (… )",
       "pages_written": [
-        "sword-world-rpg-complete-edition-dragon-roar-magic",
-        "sword-world-rpg-complete-edition-dragon-priest-skill",
-        "sword-world-rpg-complete-edition-dragon-roar-magic-spells"
-      ]
+        "sword-world-rpg-complete-edition-11-3-dragon-roar-magic"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 36,
@@ -582,12 +607,13 @@
       ],
       "tokens": 3704,
       "status": "done",
-      "notes": "Written chapter page 'sword-world-rpg-complete-edition-chapter-11-5-asking-npcs-to-use-magic' and updated concept pages 'sword-world-rpg-complete-edition-dark-priest-skill' and 'sword-world-rpg-complete-edition-rune-masters'. Key claims: NPC magic services require high-level rune masters, costs are calculated as skill level × base mental power × 20, and rituals/expansions increase costs. Entities touched: dark priest skill, rune masters, magic cost calculation. Pages written: 3.",
+      "notes": "Key claims: NPCs can be requested to cast spells; cost formula for Resurrection; NPC services listed; NPCs cannot cast with ordinary words; Table 11‑2 shows NPC presence by level. Pages touched: sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic (source).",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-11-5-asking-npcs-to-use-magic",
-        "sword-world-rpg-complete-edition-dark-priest-skill",
-        "sword-world-rpg-complete-edition-rune-masters"
-      ]
+        "sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 37,
@@ -598,12 +624,13 @@
       ],
       "tokens": 5999,
       "status": "done",
-      "notes": "Written the chapter source page for Sword World RPG - Complete Edition, Chapter 12.2 on poison, illness, and infection. Updated the concept pages for poison and illness. No entities were touched directly in this chunk.",
+      "notes": "Created source page for poison/illness rules (p.159-167).",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-12-2-rules-for-poison-illness-and-infection",
-        "sword-world-rpg-complete-edition-poison",
-        "sword-world-rpg-complete-edition-illness"
-      ]
+        "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 38,
@@ -614,12 +641,13 @@
       ],
       "tokens": 5337,
       "status": "done",
-      "notes": "Ingested Chapter 12.2 of Sword World RPG - Complete Edition on poison, illness, and infection. Updated concept pages for 'illness' and 'poison' to incorporate detailed rules from the chapter. Also updated the source page for the chapter itself. No new entities or synthesis pages created beyond the scope of this chunk.",
+      "notes": "Created source page sword‑world‑... and updated bullets…",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-12-2-rules-for-poison-illness-and-infection-part-2",
-        "sword-world-rpg-complete-edition-illness",
-        "sword-world-rpg-complete-edition-poison"
-      ]
+        "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 39,
@@ -630,13 +658,13 @@
       ],
       "tokens": 3771,
       "status": "done",
-      "notes": "Written the main monster types source page (sword-world-rpg-complete-edition-monsters) and three concept pages: spirits, daemons, and undead. These cover the key monster categories discussed in the chunk. The pages integrate the specific details about each monster type's characteristics, abilities, and interactions as described in the text (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
+      "notes": "Created source page sword-world-rpg-complete‑edition-13‑1-types‑of‑monsters with 5 claim bullets covering monster type list, undead definition, escape rule, and daemon description. No additional pages were written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-monsters",
-        "sword-world-rpg-complete-edition-spirits",
-        "sword-world-rpg-complete-edition-daemons",
-        "sword-world-rpg-complete-edition-undead"
-      ]
+        "sword-world-rpg-complete-edition-13-1-types-of-monsters"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 40,
@@ -647,13 +675,13 @@
       ],
       "tokens": 5122,
       "status": "done",
-      "notes": "Written the chapter source page for Chapter 13.2.1 \"How to Read the Monster Catalog\" and updated related concepts: Monster Level, Rarity, and Intellect. These pages explain key data points in the monster catalog including how monster level indicates strength, how rarity affects identification difficulty, and how intellect levels determine monster behavior and abilities. The concepts were integrated into the existing monster catalog page and sage skill page.",
+      "notes": "Created source page sword‑world‑…‑13‑2‑1‑how‑to‑read‑… 5 claim bullets; no other pages updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-1-how-to-read-the-monster-catalog",
-        "sword-world-rpg-complete-edition-monster-level",
-        "sword-world-rpg-complete-edition-rarity",
-        "sword-world-rpg-complete-edition-intellect"
-      ]
+        "sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 41,
@@ -664,13 +692,13 @@
       ],
       "tokens": 5420,
       "status": "done",
-      "notes": "Ingested chunk 41/69 from 'raw/Sword World RPG - Complete Edition.pdf' (Section 13.2.2 Fae, pages 176-180). Wrote 4 pages: concept 'fae' and entities 'pixie', 'fairy', 'pooka'. Key claims: Fae are generally friendly but avoid interaction; pixies use invisibility and pranks; fairies use 3rd level spirit magic; pookas shapeshift into forest animals. Entities touched: pixie, fairy, pooka, featherfolk (mentioned but not detailed), mermen (mentioned but not detailed), imps, goblins, dark elves (mentioned but not detailed). Pages written: sword-world-rpg-complete-edition-fae, sword-world-rpg-complete-edition-pixie, sword-world-rpg-complete-edition-fairy, sword-world-rpg-complete-edition-pooka.",
+      "notes": "Created source page sword-world-rpg-13-2-2-fae summary. No entity or concept pages written.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-fae",
-        "sword-world-rpg-complete-edition-pixie",
-        "sword-world-rpg-complete-edition-fairy",
-        "sword-world-rpg-complete-edition-pooka"
-      ]
+        "sword-world-rpg-complete-edition-13-2-2-fae"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 42,
@@ -681,10 +709,13 @@
       ],
       "tokens": 5247,
       "status": "done",
-      "notes": "Updated the spirit magic concept page with additional spells and details from the chapter. Created a new source page for the spirit magic list. No other pages were updated or created as the chunk focused on the spirit magic system itself.",
+      "notes": "Created source page sword‑world‑… ; no entity or concept pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-spirit-magic-list"
-      ]
+        "sword-world-rpg-complete-edition-13-2-4-spirits"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 43,
@@ -695,12 +726,13 @@
       ],
       "tokens": 3903,
       "status": "done",
-      "notes": "Ingested chunk 43/69 from 'raw/Sword World RPG - Complete Edition.pdf' (section 13.2.5, pages 185-187). Wrote the chapter source page 'sword-world-rpg-complete-edition-chapter-13-2-5-titans' and 3 concept/entity pages: 'sword-world-rpg-complete-edition-mad-spirit-of-life', 'sword-world-rpg-complete-edition-valkyrie', and 'sword-world-rpg-complete-edition-giants'. Key claims covered include the mad spirit of life's age-shifting effects, valkyrie's spells (Valkyrie Javelin, Fanaticism), and various titan monsters with their unique abilities and characteristics. The pages touch on entities like mad spirit of life, valkyrie, and giants.",
+      "notes": "Created source page sword‑world‑rpg‑complete‑‑‑‑13‑2‑5‑titans and updated 5 claim bullets. No other entity or concept pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-5-titans",
-        "sword-world-rpg-complete-edition-mad-spirit-of-life",
-        "sword-world-rpg-complete-edition-valkyrie"
-      ]
+        "sword-world-rpg-complete-edition-13-2-5-titans"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 44,
@@ -711,13 +743,13 @@
       ],
       "tokens": 5981,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-chapter-13-2-6-mythical-beasts-and-magical-beasts' and three entity pages: 'sword-world-rpg-complete-edition-satyr', 'sword-world-rpg-complete-edition-medusa', and 'sword-world-rpg-complete-edition-ceiling-hanger'. Key claims covered include satyr emotional manipulation, medusa petrification abilities, and ceiling hanger surprise attacks. All pages cite the specified source range (p.188-198).",
+      "notes": "Written source summary page for chapter 13.2.6, with five claims on ceiling hanger, magical beasts, telengines? telengines mis? included. No other entity or concept pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-6-mythical-beasts-and-magical-beasts",
-        "sword-world-rpg-complete-edition-satyr",
-        "sword-world-rpg-complete-edition-medusa",
-        "sword-world-rpg-complete-edition-ceiling-hanger"
-      ]
+        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 45,
@@ -728,14 +760,13 @@
       ],
       "tokens": 5939,
       "status": "done",
-      "notes": "Ingested Chapter 13.2.6 \"Mythical Beasts and Magical Beasts\" (pages 188-198) from Sword World RPG - Complete Edition. Created or updated 4 pages: the chapter source page, and 3 entity pages (lamia, lizardman, unicorn, sphinx). Key claims covered include lamia's blood-sucking behavior and illusion abilities, lizardmen's slave/noble divide and dragon roar magic, unicorn's healing abilities and horn as magical item, and sphinx's riddle-solving behavior and knowledge guardianship. All pages cite the source material appropriately.",
+      "notes": "Created source page for \"sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2\" summarizing griffons, sphinxes, lizardmen, Ramliearth guard regiments, and buckbairds. No new entity or concept pages were written. All claims are cited to pages 188‑198.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-6-mythical-beasts-and-magical-beasts",
-        "sword-world-rpg-complete-edition-lamia",
-        "sword-world-rpg-complete-edition-lizardman",
-        "sword-world-rpg-complete-edition-unicorn",
-        "sword-world-rpg-complete-edition-sphinx"
-      ]
+        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 46,
@@ -746,12 +777,13 @@
       ],
       "tokens": 1861,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-chapter-13-2-6-mythical-beasts-and-magical-beasts-part-3' and updated concept pages 'sword-world-rpg-complete-edition-humbaba-curse' and 'sword-world-rpg-complete-edition-dragon-types'. Key entities touched: humbaba, roc, lesser dragon, elder dragon, ancient dragon (drake). Key claims: humbaba's fire attack causes 'humbaba curse' disease, dragons have specific fire breath and roar abilities with resistance scores, different dragon types have different characteristics and abilities.",
+      "notes": "Wrote source page sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3 (source). Key claims: roc’s size and fear ranking, instinctual nature, talon capture. No new entity or concept pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-6-mythical-beasts-and-magical-beasts-part-3",
-        "sword-world-rpg-complete-edition-humbaba-curse",
-        "sword-world-rpg-complete-edition-dragon-types"
-      ]
+        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 47,
@@ -762,12 +794,13 @@
       ],
       "tokens": 5971,
       "status": "done",
-      "notes": "Ingested chapter section 13.2.7 'Animals' from Sword World RPG - Complete Edition. Created source page for the chapter section, a concept page for 'animal monster', and an entity page for 'hanger leg'. Key entities touched: wolf, giant rat, eagle, giant centipede, horse, wardog, killer shark, crocodile, giant scorpion, giant mantis, scarlet vulture, tiger, bat, vampire bat, giant bat, grizzly. The pages integrate new facts, add cross-references, and flag contradictions where necessary.",
+      "notes": "Key claims: wolves attack isolated animals, omnivorous wolves may target livestock/humans when starving; hanger leg parasite infects large animals; giant rat disease ability. Entities touched: wolves, giant rat, hanger leg. Pages written: sword-world-rpg-complete-edition-13-2-7-animals-part-1.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-7-animals",
-        "sword-world-rpg-complete-edition-animal-monster",
-        "sword-world-rpg-complete-edition-hanger-leg"
-      ]
+        "sword-world-rpg-complete-edition-13-2-7-animals-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 48,
@@ -778,12 +811,13 @@
       ],
       "tokens": 5989,
       "status": "done",
-      "notes": "Written the chapter source page for Animals (part 2) and updated related pages. Key claims: Grizzlies are powerful forest-dwelling bears with bear hug attacks; Giant ants are dangerous insects with multiple forms including worker, soldier, and queen; Lions are carnivorous beasts that live in family groups. Entities touched: Grizzly, Giant Ant, Lion. Pages written: sword-world-rpg-complete-edition-chapter-13-2-7-animals-part-2, sword-world-rpg-complete-edition-grizzly, sword-world-rpg-complete-edition-giant-ant.",
+      "notes": "Created source page sword-world-rpg-complete‑… and bullet‑claim for grizzly bear … included female‑‑male ‐ ..",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-7-animals-part-2",
-        "sword-world-rpg-complete-edition-grizzly",
-        "sword-world-rpg-complete-edition-giant-ant"
-      ]
+        "sword-world-rpg-complete-edition-13-2-7-animals-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 49,
@@ -794,13 +828,13 @@
       ],
       "tokens": 3584,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-chapter-13-2-7-animals-part-3' and three entity/concept pages: 'sword-world-rpg-complete-edition-sand-worm', 'sword-world-rpg-complete-edition-giant-seal', and 'sword-world-rpg-complete-edition-snake'. Key claims include sand worms' underground behavior and lack of interest in precious metals, giant seals' polygamous structure and value of their hides, and the different types of dangerous snakes in Forcelia.",
+      "notes": "Added source page for Chapter 13.2.7 part 3 with 5 bullets covering sand‑worm stats, giant seal behavior, and income. Updated index. No entity pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-7-animals-part-3",
-        "sword-world-rpg-complete-edition-sand-worm",
-        "sword-world-rpg-complete-edition-giant-seal",
-        "sword-world-rpg-complete-edition-snake"
-      ]
+        "sword-world-rpg-complete-edition-13-2-7-animals-part-3"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 50,
@@ -811,12 +845,13 @@
       ],
       "tokens": 2613,
       "status": "done",
-      "notes": "Ingested chunk 50/69 from 'raw/Sword World RPG - Complete Edition.pdf' (p. 212-213). Wrote source page for Chapter 13.2.8 Plants, and updated related concepts. Key entities touched: killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, alraune. Key concepts: strangling, spirit magic. Pages written: sword-world-rpg-complete-edition-chapter-13-2-8-plants, sword-world-rpg-complete-edition-strangling, sword-world-rpg-complete-edition-mandrake.",
+      "notes": "Created source page sword-world-rpg-complete-edition-13-2-8-plants summarizing plant monsters, their fire weakness, intellect, and spirit magic use. Added claim bullets covering ethnoa, mandrake, and fire vulnerability. No other pages modified.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-8-plants",
-        "sword-world-rpg-complete-edition-strangling",
-        "sword-world-rpg-complete-edition-mandrake"
-      ]
+        "sword-world-rpg-complete-edition-13-2-8-plants"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 51,
@@ -827,10 +862,13 @@
       ],
       "tokens": 5916,
       "status": "done",
-      "notes": "Ingested Chapter 13.2.9 'Undead' from Sword World RPG Complete Edition. Wrote source page for the chapter and updated the general undead concept page. Key entities touched: undead, alraunes, bloody petal, fungus, buau zombie, skeleton, zombie, ash, ghoul, sin, wight, haunt, ghost, specter, phantom, jack-o'-lantern, dullahan, chariot of dullahan, headless horse. Pages written: sword-world-rpg-complete-edition-chapter-13-2-9-undead, sword-world-rpg-complete-edition-undead.",
+      "notes": "Created source page sword-world-rpg-complete‑...‐part‑1 and added 5 bullets covering undead types and rules.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-9-undead"
-      ]
+        "sword-world-rpg-complete-edition-13-2-9-undead-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 52,
@@ -841,13 +879,13 @@
       ],
       "tokens": 4450,
       "status": "done",
-      "notes": "Written source page for Chapter 13.2.9 Undead. Updated concept page for undead. Created pages for headless horses, undead knights, wraiths, mummies, and vampires. Key entities touched: undead knights, wraiths, mummies, vampires, lesser vampires, undead kings, headless horses, dullahans. Key claims: undead characteristics, abilities, weaknesses, habitats, and interactions with living beings.",
+      "notes": "Key claims: undead knight, undead king, wight accompaniment, mental‑power damage, undead attack damage. Entities touched: undead knight, undead king, wight. Pages written: sword-world-rpg-complete-edition-13-2-9-undead-part-2.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-headless-horses",
-        "sword-world-rpg-complete-edition-undead-knights",
-        "sword-world-rpg-complete-edition-wraiths",
-        "sword-world-rpg-complete-edition-mummies"
-      ]
+        "sword-world-rpg-complete-edition-13-2-9-undead-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 53,
@@ -858,13 +896,13 @@
       ],
       "tokens": 5984,
       "status": "done",
-      "notes": "Wrote the source page for Chapter 13.2.10 on Magical Creatures and updated or created 3 related entity pages: simulacra, homunculus, and imitator. The chunk covered various pseudo-life forms and artificial creatures created through ancient magic, including their creation, behavior, and combat traits.",
+      "notes": "Created source page sword‑world‑rpg‑complete‑edition‑13‑2‑10‑magical‑creatures‑part‑1 with 5 claim bullets; no entity or concept pages updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-10-magical-creatures",
-        "sword-world-rpg-complete-edition-simulacra",
-        "sword-world-rpg-complete-edition-homunculus",
-        "sword-world-rpg-complete-edition-imitator"
-      ]
+        "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 54,
@@ -875,13 +913,13 @@
       ],
       "tokens": 3860,
       "status": "done",
-      "notes": "Wrote chapter source page 'sword-world-rpg-complete-edition-chapter-13-2-10-magical-creatures-part-2' covering air stalkers, mutant monsters, golems, and underworld creatures. Updated concept pages for 'golem' and 'daemon'. Created entity page for 'air-stalker'. Key claims: air stalkers are invisible gas creatures with attack immunity, golems are ancient pseudo-life statues with varying materials and abilities, and daemons are underworld monsters with hierarchical structure and dark magic. Entities touched: air stalker, golem, daemon, grunel, zalbard, doubleburg, ragnakang.",
+      "notes": "Created source page sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2. No entity or concept pages updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-10-magical-creatures-part-2",
-        "sword-world-rpg-complete-edition-air-stalker",
-        "sword-world-rpg-complete-edition-golem",
-        "sword-world-rpg-complete-edition-daemon"
-      ]
+        "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 55,
@@ -892,13 +930,13 @@
       ],
       "tokens": 5531,
       "status": "done",
-      "notes": "Written the chapter source page for humans (13.2.12) and updated related entity pages for Maligdorai, Doppelganger, and Lycanthrope. Key claims covered include daemon abilities like illusion and shapeshifting, lycanthrope transformation mechanics, and monster stats for various human and daemon types. Pages written: sword-world-rpg-complete-edition-chapter-13-2-12-humans, sword-world-rpg-complete-edition-maligdorai, sword-world-rpg-complete-edition-doppelganger, sword-world-rpg-complete-edition-lycanthrope.",
+      "notes": "Created source page sword-world-rpg-13-2-12-humans. Key claims: - 3‑level dark‑magic for lycanthropes; - GM control of human‑form abilities;  etc. 1 page written",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-2-12-humans",
-        "sword-world-rpg-complete-edition-maligdorai",
-        "sword-world-rpg-complete-edition-doppelganger",
-        "sword-world-rpg-complete-edition-lycanthrope"
-      ]
+        "sword-world-rpg-complete-edition-13-2-12-humans"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 56,
@@ -909,13 +947,13 @@
       ],
       "tokens": 850,
       "status": "done",
-      "notes": "Ingested chunk 56/69 from 'raw/Sword World RPG - Complete Edition.pdf' (p.234-234). Wrote source pages for Chapter 13.4 and 13.5, detailing monster sub-ability scores and monster/adventurer level relationships. Updated the defense-points and evasion-points concept pages with new information from this chunk. Key entities touched: monster level, adventurer level, defense points, evasion points, life points, mental points, resistance scores. Pages written: sword-world-rpg-complete-edition-chapter-13-5-monster-level-and-adventurer-level, sword-world-rpg-complete-edition-chapter-13-4-representing-special-monsters-with-character-data, sword-world-rpg-complete-edition-defense-points, sword-world-rpg-complete-edition-evasion-points.",
+      "notes": "Written source page sword-world-rpg-complete‑…‑and‑adventurer‑level for monster‑level scaling; 5 bullets, 0 other pages created.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-5-monster-level-and-adventurer-level",
-        "sword-world-rpg-complete-edition-chapter-13-4-representing-special-monsters-with-character-data",
-        "sword-world-rpg-complete-edition-defense-points",
-        "sword-world-rpg-complete-edition-evasion-points"
-      ]
+        "sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 57,
@@ -926,12 +964,13 @@
       ],
       "tokens": 5448,
       "status": "done",
-      "notes": "Written a new source page for Chapter 13.6 on handling monster special abilities, and updated two concept pages: mental power resistance and special attacks. The source page covers all the special attack types that require mental power or life force resistance rolls, including detailed rules for magic, hypnotism, gaze/ray attacks, possession, curses, screams, roars, fire breath, poison, parasitism, disease, strangling, capture, entangling, swallowing whole, bloodsucking, acid, corrosion, stealing mental power, and iron corrosion. The concept pages provide conceptual overviews of mental power resistance and special attacks in the context of monster encounters.",
+      "notes": "Written source summary page for monsters …",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-13-6-handling-monster-special-abilities",
-        "sword-world-rpg-complete-edition-mental-power-resistance",
-        "sword-world-rpg-complete-edition-special-attacks"
-      ]
+        "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 58,
@@ -942,13 +981,13 @@
       ],
       "tokens": 3381,
       "status": "done",
-      "notes": "Ingested chunk 58/69 from 'raw/Sword World RPG - Complete Edition.pdf' (p.241-242). Wrote source pages for chapters 14.1, 14.2, and 14.4 covering treasure types, reward calculations, and magical item lists. Updated concept page for 'adventurer's shop'. Key entities touched: Alecrast, ancient kingdom, gamels, adventurer's shops, magical items, treasure appraisal. Pages written: sword-world-rpg-complete-edition-chapter-14-1-treasure-and-rewards, sword-world-rpg-complete-edition-chapter-14-2-adventure-treasure-and-reward-amounts, sword-world-rpg-complete-edition-chapter-14-4-magical-item-list, sword-world-rpg-complete-edition-adventurer-s-shop.",
+      "notes": "Created source page sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world. Added five claim bullets summarizing reward rules, appraisal limits, and value of ancient goods. No entity or concept pages created in this chunk.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-14-1-treasure-and-rewards",
-        "sword-world-rpg-complete-edition-chapter-14-2-adventure-treasure-and-reward-amounts",
-        "sword-world-rpg-complete-edition-chapter-14-4-magical-item-list",
-        "sword-world-rpg-complete-edition-adventurer-s-shop"
-      ]
+        "sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 59,
@@ -959,12 +998,13 @@
       ],
       "tokens": 5968,
       "status": "done",
-      "notes": "Ingested Chapter 14.4 \"Magical Item List\" from Sword World RPG - Complete Edition. Created source page for the chapter, and concept pages for Magical Items, Treasure Appraisal, and Magical Weapons. Key entities touched include various magical weapons like Magic Sword (+1/2/3), Undead Ruler, Van Blade, Crusher, Sea Slayer, Shy Blade, Stone Statue, Twisted Sling, and others. The chunk provided detailed information on item rarity, appraisal, enchanters, and base trade prices for a variety of magical items.",
+      "notes": "Created source summary page sword-world-rpg-complete-edition-14-4-magical-item-list-part-1. No existing entity or concept pages were updated. Key claims: city trade restrictions, appraisal mechanics, permanent magic, data table extensions, and sorcerer requirements. Pages written: 1.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-magical-items",
-        "sword-world-rpg-complete-edition-treasure-appraisal",
-        "sword-world-rpg-complete-edition-magical-weapons"
-      ]
+        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 60,
@@ -975,12 +1015,13 @@
       ],
       "tokens": 5987,
       "status": "done",
-      "notes": "Wrote the chapter source page for Magical Item List (part 2) and updated related concepts: shield and magical item. Key claims include detailed properties of shields, cloaks, and accessories, with specific rarities, enchanters, forms, required strengths, and base trade prices. Entities touched include various magical items such as shields, cloaks, earrings, bracelets, and amulets. Pages written: sword-world-rpg-complete-edition-chapter-14-4-magical-item-list-part-2, sword-world-rpg-complete-edition-shield, sword-world-rpg-complete-edition-magical-item.",
+      "notes": "Created source page sword‑world‑…",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-14-4-magical-item-list-part-2",
-        "sword-world-rpg-complete-edition-shield",
-        "sword-world-rpg-complete-edition-magical-item"
-      ]
+        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 61,
@@ -991,10 +1032,13 @@
       ],
       "tokens": 5402,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-chapter-14-4-magical-item-list-part-3' and updated concept page 'sword-world-rpg-complete-edition-magical-item' with detailed information on magical items, their rarities, enchanters, forms, required strength, base trade prices, and specific powers. Key entities touched include Guard Glove, Candlestick of Infinite (Un)Luck, Crystal Orb of Clairvoyance, and others. The pages reflect the content of the provided chunk covering magical items from the Sword World RPG Complete Edition.",
+      "notes": "Created source page sword-world-rpg-complete-edition-14-4-magical-item-list-part-3 summarizing transport rules, trade restrictions, and item scarcity for the listed magical items (pages 242‑260).",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-14-4-magical-item-list-part-3"
-      ]
+        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-3"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 62,
@@ -1005,13 +1049,13 @@
       ],
       "tokens": 3111,
       "status": "done",
-      "notes": "Written source page for chapter 16.1 \"Combat in Which Monsters Roll Dice\" and three concept pages: \"Weapon Modifiers\", \"Armor Modifiers\", and \"Projectile Bonus Damage\". The chunk introduced optional rules for monster dice rolling in combat, weapon and armor modifiers, and projectile damage calculations. Key entities touched include attack points, evasion points, strike points, defense points, critical targets, and various weapon types.",
+      "notes": "We …",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-16-1-combat-in-which-monsters-roll-dice",
-        "sword-world-rpg-complete-edition-weapon-modifiers",
-        "sword-world-rpg-complete-edition-armor-modifiers",
-        "sword-world-rpg-complete-edition-projectile-bonus-damage"
-      ]
+        "sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 63,
@@ -1022,12 +1066,13 @@
       ],
       "tokens": 5343,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-chapter-16-5-combat-options' and two concept pages: 'sword-world-rpg-complete-edition-projectile-range-extension' and 'sword-world-rpg-complete-edition-grapple'. Key claims covered include optional combat rules for grapple, projectile range extension, and various attack methods like charge, snipe, mow down, ram, and area aim. Entities touched include weapons, combat actions, and game mechanics.",
+      "notes": "Created source page sword-world-rpg-complete-edition-16-5-combat-options with 3 claim bullets. No other entity/concept pages touched.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-16-5-combat-options",
-        "sword-world-rpg-complete-edition-projectile-range-extension",
-        "sword-world-rpg-complete-edition-grapple"
-      ]
+        "sword-world-rpg-complete-edition-16-5-combat-options"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 64,
@@ -1038,12 +1083,13 @@
       ],
       "tokens": 5650,
       "status": "done",
-      "notes": "Ingested chunk 64/69 from 'raw/Sword World RPG - Complete Edition.pdf' (p.268-273). Wrote source page for chapter 16.7 'Throwing Multiple Darts or Daggers' and updated concept pages for 'Throwing Multiple Darts or Daggers' and 'Holding Weapons in Both Hands'. Key claims: Multiple dart/dagger throwing requires same weight, strength limit, and incurs penalty based on number thrown; characters with weapons in both hands have three attack options with specific penalties; ambidextrous characters have different penalties. Entities touched: dominant hand, ambidextrous, attack power penalties.",
+      "notes": "Updated source summary page sword-world-rpg-complete‑… (17 words). Key claims – weight ‑ strength ‑ penalty ‑ single‑target ‑ optional rule – cited by pages 268‑273. Page written for source ; no entity or concept pages created due to scope limits.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-16-7-throwing-multiple-darts-or-daggers",
-        "sword-world-rpg-complete-edition-throwing-multiple-darts-or-daggers",
-        "sword-world-rpg-complete-edition-holding-weapons-in-both-hands"
-      ]
+        "sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 65,
@@ -1054,12 +1100,13 @@
       ],
       "tokens": 5496,
       "status": "done",
-      "notes": "Written the chapter source page for 17.2 Lost Spells and updated related concepts. Key pages created: sword-world-rpg-complete-edition-chapter-17-2-lost-spells.md, sword-world-rpg-complete-edition-lost-spells-concept.md, and sword-world-rpg-complete-edition-monster-magic-power.md. The chunk covered lost spells, their acquisition methods, usage restrictions, and monster magic power rules.",
+      "notes": "Created source page sword-world-rpg-complete-edition-17-2-lost-spells summarizing lost spell rules, learning methods, and GM discretion. Key claims: limited knowledge of lost spells, acquisition by sorcerers, -2 penalty and failure conditions, catalyst flexibility, GM designation of lost spells. No entity or concept pages were added because existing pages cover broader magic concepts. Updated index accordingly.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-17-2-lost-spells",
-        "sword-world-rpg-complete-edition-lost-spells-concept",
-        "sword-world-rpg-complete-edition-monster-magic-power"
-      ]
+        "sword-world-rpg-complete-edition-17-2-lost-spells"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 66,
@@ -1070,12 +1117,13 @@
       ],
       "tokens": 2501,
       "status": "done",
-      "notes": "Written the main chapter page for 'Rules for Destroying Structures' (sword-world-rpg-complete-edition-chapter-18-3-rules-for-destroying-structures) and two concept pages: 'Fire Weapon Magic' and 'Spirit Wall'. The chunk covered structure strength tables, material-specific rules, and special cases for different materials including paper, wood, brick, stone, iron, ice, and vegetation. It also detailed the handling of Spirit Walls with specific examples for Gnome, Frau, and Dryad types, including regeneration properties.",
+      "notes": "Created source page sword‑... …",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-18-3-rules-for-destroying-structures",
-        "sword-world-rpg-complete-edition-concept-fire-weapon-magic",
-        "sword-world-rpg-complete-edition-concept-spirit-wall"
-      ]
+        "sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 67,
@@ -1086,13 +1134,13 @@
       ],
       "tokens": 5978,
       "status": "done",
-      "notes": "Wrote source page for chapter 13.2.9 (Undead) and updated related entity pages for the six major gods (Pharis, Myrii, Cha Za) based on their roles in the world's creation and holy magic system. Key claims covered include the origin of gods from the Titan's body, their association with specific domains (war, fortune, sun), and their roles in the game's holy magic system. Pages written: sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1, sword-world-rpg-complete-edition-pharis, sword-world-rpg-complete-edition-myrii, sword-world-rpg-complete-edition-cha-za.",
+      "notes": "Created source page sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1. Added 5 claim bullets covering ancient races, geography, cosmology, and time rules. No entity or concept pages updated. No conflicts noted.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1",
-        "sword-world-rpg-complete-edition-pharis",
-        "sword-world-rpg-complete-edition-myrii",
-        "sword-world-rpg-complete-edition-cha-za"
-      ]
+        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 68,
@@ -1103,13 +1151,13 @@
       ],
       "tokens": 3635,
       "status": "done",
-      "notes": "Written chapter source page 'sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2' and three concept/entity pages: 'sword-world-rpg-complete-edition-sorcerers-guild', 'sword-world-rpg-complete-edition-mana-rai', and 'sword-world-rpg-complete-edition-ramliearth'. Key claims include the history and structure of the Sorcerers' Guild, the role of Mana Rai as Grand Master, and the magical nature of Ramliearth including its Unicorn Forest and druids.",
+      "notes": "Wrote source page sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2, covering regional overview, political structures, key claims, and citations. No other pages were created in this ingest step.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2",
-        "sword-world-rpg-complete-edition-sorcerers-guild",
-        "sword-world-rpg-complete-edition-mana-rai",
-        "sword-world-rpg-complete-edition-ramliearth"
-      ]
+        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
       "id": 69,
@@ -1120,10 +1168,13 @@
       ],
       "tokens": 5653,
       "status": "done",
-      "notes": "Written source page for chapter 13.2.9 Undead. Updated the main Sword World RPG source page with a link to the new chapter page. No other pages needed updating as this was a standalone chapter.",
+      "notes": "Created source page sword-world-rpg-complete-edition-charts summarizing skill ability charts for thieves, rangers, sages, and other classes with ability scores, equipment restrictions, and retry rules for success rolls. No entity or concept pages added. All claims cited to raw/Sword World RPG - Complete Edition.pdf p.294-311.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-chapter-charts"
-      ]
+        "sword-world-rpg-complete-edition-charts"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     }
   ]
 }

@@ -37,11 +37,12 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanScope,
     IngestRoutePlanState,
 )
-from llmwiki.domain.links import compute_findings
+from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.objects import (
     IngestRun,
     LintRun,
     PagePlan,
+    PlannedPageWrite,
     RawSource,
     SourceBundle,
     SourcePlan,
@@ -269,9 +270,17 @@ class Session:
             f"{plan_report}"
         )
         report, transcript = await self._run(workflow, message, "ingest")
+        route_summary = ingest_route_plan_state.summary()
+        written_pages = tuple(dict.fromkeys(write_log))
+        if route_summary.planned_page_count and not written_pages:
+            raise RuntimeError(
+                "Ingest finished without any successful page writes. "
+                "The model must write an authorized PagePlan target or move unsupported "
+                "material into route gaps before finish_ingest."
+            )
         self._record_ingest_route_plan(
             ingest_route_plan_state,
-            page_writes=tuple(dict.fromkeys(write_log)),
+            page_writes=written_pages,
         )
         self.store.append_log(self.today, "ingest", source_locator, report)
         return OperationResult("ingest", source_locator, report, transcript)
@@ -300,7 +309,16 @@ class Session:
             save_manifest(result)
         total = len(manifest.chunks)
         page_plan = self._pdf_page_plan(ingest_run, source_locator, result)
-        plan_report = self._persist_page_plan(source_locator, page_plan)
+        self._persist_page_plan(source_locator, page_plan)
+        manifest = manifest.requeue_mismatched_pages(
+            {
+                record.chunk_id: _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
+                for record in manifest.chunks
+            }
+        )
+        if manifest != result.manifest:
+            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
+            save_manifest(result)
         recovered = self._recover_pending_pdf_chunks(manifest, source_locator, page_plan)
         if recovered != manifest:
             manifest = recovered
@@ -315,6 +333,8 @@ class Session:
 
         for record in manifest.pending:
             text = chunk_file(result.cache_dir, record.chunk_id).read_text(encoding="utf-8")
+            chunk_targets = _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
+            chunk_plan_report = observation_report(page_plan, target_page_ids=chunk_targets)
             ingest_route_plan_state = self._ingest_route_plan_state(
                 source_locator,
                 "pdf-chunk",
@@ -327,8 +347,9 @@ class Session:
                 f"Cite this material as (raw/{source_locator} "
                 f"p.{record.start_page}-{record.end_page}).\n\n"
                 "A deterministic PagePlan has already been built and persisted. "
-                "Call plan_pages only for PageIds authorized by this PagePlan.\n\n"
-                f"{plan_report}\n\n<chunk>\n{text}\n</chunk>"
+                "For this chunk, call plan_pages using only the PageIds listed "
+                "in this scoped PagePlan report.\n\n"
+                f"{chunk_plan_report}\n\n<chunk>\n{text}\n</chunk>"
             )
             write_log: list[str] = []
             notes, _ = await self._run(
@@ -381,8 +402,9 @@ class Session:
             f"source page '{hub}' exists and links the pages written during "
             f"chunking.\n\n{salience_block}\n\n"
             "A deterministic PagePlan has already been built and persisted. "
-            "Call plan_pages only for PageIds authorized by this PagePlan.\n\n"
-            f"{plan_report}\n\n"
+            "Call plan_pages using only the hub PageId listed in this scoped "
+            "PagePlan report.\n\n"
+            f"{observation_report(page_plan, target_page_ids=(hub,))}\n\n"
             f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
         )
         link_targets: list[str] = []
@@ -405,13 +427,18 @@ class Session:
                 source_locator=source_locator,
                 new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
                 required_link_targets=required_link_targets,
-                min_required_links=min(12, len(required_link_targets)),
+                min_required_links=len(required_link_targets),
                 ingest_route_plan_state=ingest_route_plan_state,
                 recoverable_tool_errors=True,
             ),
             message,
             "pdf-integrate",
             tag="pdf-integrate",
+        )
+        self._verify_pdf_hub(
+            hub,
+            required_link_targets,
+            min_required_links=len(required_link_targets),
         )
         self._reconcile_hub_key_lists(hub, salience)
         save_manifest(
@@ -445,6 +472,7 @@ class Session:
             today=self.today,
             schema=ingest_run.schema,
             source_plan=_source_plan_for(ingest_run, raw_source),
+            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
         )
 
     def _pdf_page_plan(
@@ -471,6 +499,7 @@ class Session:
             today=self.today,
             schema=ingest_run.schema,
             source_plan=_source_plan_for(ingest_run, raw_source),
+            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
         )
 
     def _persist_page_plan(self, source_locator: str, page_plan: PagePlan) -> str:
@@ -483,9 +512,16 @@ class Session:
     ) -> Manifest:
         existing_pages = set(self.store.list_pages())
         hub = slugify(Path(source_locator).stem)
+        planned_writes_by_page = {
+            write.page_metadata.page_id: write for write in page_plan.planned_writes
+        }
         for record in manifest.pending:
             targets = _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
-            if targets and all(target in existing_pages for target in targets):
+            if targets and all(
+                target in existing_pages
+                and self._pending_pdf_page_is_recoverable(planned_writes_by_page.get(target))
+                for target in targets
+            ):
                 manifest = manifest.mark_done(
                     record.chunk_id,
                     "Recovered existing wiki page(s): " + ", ".join(targets),
@@ -493,6 +529,30 @@ class Session:
                     route_plan_pages=len(targets),
                 )
         return manifest
+
+    @staticmethod
+    def _pending_pdf_page_is_recoverable(planned_write: PlannedPageWrite | None) -> bool:
+        return planned_write is None or planned_write.source_summary_plan is None
+
+    def _verify_pdf_hub(
+        self,
+        hub_page_id: str,
+        required_link_targets: tuple[str, ...],
+        *,
+        min_required_links: int,
+    ) -> None:
+        try:
+            hub_text = self.store.read_page(hub_page_id)
+        except Exception as exc:
+            raise PdfError(
+                f"PDF integration finished without writing hub page {hub_page_id!r}."
+            ) from exc
+        linked_targets = extract_links(hub_text) & frozenset(required_link_targets)
+        if len(linked_targets) < min_required_links:
+            raise PdfError(
+                f"PDF integration hub {hub_page_id!r} links {len(linked_targets)} "
+                f"chunk page(s), expected at least {min_required_links}."
+            )
 
     def _page_plan_id(self, source_locator: str, scope: str) -> str:
         return f"{self.run_id or self.today}-{scope}-{slugify(Path(source_locator).stem)}"

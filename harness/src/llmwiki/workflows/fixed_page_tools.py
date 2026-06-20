@@ -97,9 +97,11 @@ def write_fixed_source_page_tool(
                 raise WikiStoreError(
                     "Source-summary hub writes require source_record_text and claim_bullets."
                 )
-            source_record_text = _source_record_with_required_links(
-                params.source_record_text,
-                params.claim_bullets,
+            body = _page_body_with_required_links(
+                _source_summary_fields_to_page_body(
+                    params.source_record_text,
+                    params.claim_bullets,
+                ),
                 required_link_targets,
                 required_target_set,
                 min_required_links,
@@ -110,8 +112,7 @@ def write_fixed_source_page_tool(
                     page_id=page_id,
                     page_kind="source",
                     summary=params.summary,
-                    source_record_text=source_record_text,
-                    claim_bullets=[bullet.model_dump() for bullet in params.claim_bullets],
+                    page_body=body,
                     sources=params.sources,
                 ),
             )
@@ -144,6 +145,19 @@ def write_fixed_source_page_tool(
             parameters=WriteFixedSourcePageParams,
         ),
         callable=_write_page,
+    )
+
+
+def _source_summary_fields_to_page_body(
+    source_record_text: str,
+    claim_bullets: list[SourceSummaryBulletParams],
+) -> str:
+    bullets = "\n".join(f"- {bullet.bullet_text.strip()}" for bullet in claim_bullets)
+    return (
+        "## Source record\n\n"
+        f"{source_record_text.strip()}\n\n"
+        "## Key supported claims\n\n"
+        f"{bullets}"
     )
 
 
@@ -193,9 +207,8 @@ def _append_page_map_links(
     linked_targets: set[str] | frozenset[str],
     min_required_links: int,
 ) -> str:
-    target_count = min(24, len(required_link_targets))
     missing = [page_id for page_id in required_link_targets if page_id not in linked_targets]
-    fill_count = max(min_required_links - len(linked_targets), target_count)
+    fill_count = max(min_required_links - len(linked_targets), len(missing))
     links = "\n".join(f"- [[{page_id}]]" for page_id in missing[:fill_count])
     return (
         f"{text.rstrip()}\n\n"

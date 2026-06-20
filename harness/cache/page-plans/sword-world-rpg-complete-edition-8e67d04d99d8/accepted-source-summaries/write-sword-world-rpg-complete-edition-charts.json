@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Thief skill table lists abilities with relevant ability scores and equipment restrictions, noting that retrying success rolls is only allowed for some skills such as Acrobatics. (raw/Sword World RPG - Complete Edition.pdf p.294-311)",
+      "covered_source_claims": [
+        "source-claim-unit-0069-0003"
+      ]
+    },
+    {
+      "bullet_text": "Ranger skill table allows retrying for abilities like Camoufage and Listen, but not for Search or Map Creation. (raw/Sword World RPG - Complete Edition.pdf p.294-311)",
+      "covered_source_claims": [
+        "source-claim-unit-0069-0010"
+      ]
+    },
+    {
+      "bullet_text": "Sage skill abilities such as Monster Check and Languages are one‑shot checks with no retry possibility. (raw/Sword World RPG - Complete Edition.pdf p.294-311)",
+      "covered_source_claims": [
+        "source-claim-unit-0069-0011"
+      ]
+    }
+  ],
+  "source_record_text": "Skill ability charts with retry rules for success rolls (possible)."
+}

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Resistance rolls against spellsongs are generally made only once at the beginning of the song, possibly on the fourth round. (raw/Sword World RPG - Complete Edition.pdf p.109-113)",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0021"
+      ]
+    },
+    {
+      "bullet_text": "Spellsongs were created during the ancient kingdom period; their types and effects are listed in a table. (raw/Sword World RPG - Complete Edition.pdf p.109-113)",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0034"
+      ]
+    },
+    {
+      "bullet_text": "Even grassrunners with no magical background can use spellsongs by preparing the superficial form. (raw/Sword World RPG - Complete Edition.pdf p.109-113)",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0016"
+      ]
+    },
+    {
+      "bullet_text": "The game master may add other common runes or spellsongs at their discretion. (raw/Sword World RPG - Complete Edition.pdf p.109-113)",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0006"
+      ]
+    },
+    {
+      "bullet_text": "Using spellsongs does not consume a bard's mental power. (raw/Sword World RPG - Complete Edition.pdf p.109-113)",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0012"
+      ]
+    }
+  ],
+  "source_record_text": "This section describes spellsongs, a bardic magic system based on song performance."
+}

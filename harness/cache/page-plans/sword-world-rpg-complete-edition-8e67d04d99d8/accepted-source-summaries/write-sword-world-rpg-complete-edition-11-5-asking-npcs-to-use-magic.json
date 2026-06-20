@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Adventurers may sometimes need NPCs to save them from dire situations beyond their control (raw/Sword World RPG - Complete Edition.pdf p.154-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0013"
+      ]
+    },
+    {
+      "bullet_text": "Casting Resurrection normally requires 10×45×20=9,000 gamels for a priest of level 10 (raw/Sword World RPG - Complete Edition.pdf p.154-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0043"
+      ]
+    },
+    {
+      "bullet_text": "NPCs can offer services such as Remove Curse, Resurrection, and Analyze Enchantment to appraise items (raw/Sword World RPG - Complete Edition.pdf p.154-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0014"
+      ]
+    },
+    {
+      "bullet_text": "NPCs generally cannot cast magic using ordinary words and may refuse service (raw/Sword World RPG - Complete Edition.pdf p.154-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0079"
+      ]
+    },
+    {
+      "bullet_text": "Table 11‑2 shows NPC presence by level, helping determine how many rune masters exist for each adventurer level (raw/Sword World RPG - Complete Edition.pdf p.154-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0025"
+      ]
+    }
+  ],
+  "source_record_text": "Section 11.5 describes requesting NPCs to cast spells, costs, and availability limits."
+}

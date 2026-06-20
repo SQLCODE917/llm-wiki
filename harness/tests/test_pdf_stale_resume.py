@@ -1,5 +1,8 @@
 """PDF resume safety when generated wiki pages were cleared."""
 
+import json
+from typing import cast
+
 import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
@@ -59,7 +62,7 @@ def _one_chunk_extraction(paths: WikiPaths) -> ExtractionResult:
     )
 
 
-def _plan_page_call(page_id: str) -> ToolCall:
+def _plan_page_call(page_id: str, *, action: str = "create") -> ToolCall:
     return ToolCall(
         tool="plan_pages",
         args={
@@ -72,7 +75,7 @@ def _plan_page_call(page_id: str) -> ToolCall:
                         "sources": ["book.pdf"],
                     },
                     "role": "source page for this PDF ingest stage",
-                    "action": "create",
+                    "action": action,
                     "source_scope": "book.pdf",
                     "confidence": "high",
                     "rationale": f"{page_id} is the durable page for this PDF ingest stage.",
@@ -125,6 +128,32 @@ def _source_summary_write_args(
         ],
         "sources": ["book.pdf"],
     }
+
+
+def _source_summary_body(args: dict[str, object]) -> str:
+    claim_bullets = cast(list[dict[str, object]], args["claim_bullets"])
+    bullets = "\n".join(f"- {bullet['bullet_text']}" for bullet in claim_bullets)
+    return (
+        f"## Source record\n\n{args['source_record_text']}\n\n"
+        f"## Key supported claims\n\n{bullets}"
+    )
+
+
+def _write_source_summary_artifact(
+    store: WikiStore,
+    source_locator: str,
+    page_id: str,
+    args: dict[str, object],
+) -> None:
+    draft = {
+        "source_record_text": args["source_record_text"],
+        "claim_bullets": args["claim_bullets"],
+    }
+    store.write_source_summary_draft_artifact(
+        source_locator,
+        f"write-{page_id}",
+        json.dumps(draft, indent=2, ensure_ascii=False, sort_keys=True),
+    )
 
 
 def _citation_for(page_id: str) -> str:
@@ -248,6 +277,32 @@ def test_manifest_requeues_done_chunk_that_only_wrote_hub() -> None:
     assert not repaired.integrated
 
 
+def test_manifest_requeues_done_chunk_when_page_plan_target_changes() -> None:
+    manifest = Manifest(
+        source="book.pdf",
+        sha256="deadbeef" * 8,
+        chunks=(
+            ChunkRecord(
+                58,
+                "Treasure and Rewards",
+                241,
+                242,
+                4000,
+                status="done",
+                notes="Recovered existing wiki page(s): skills",
+                pages_written=("skills",),
+                route_plan_pages=1,
+            ),
+        ),
+        integrated=True,
+    )
+
+    repaired = manifest.requeue_mismatched_pages({58: ("treasure-and-rewards",)})
+
+    assert repaired.pending[0].chunk_id == 58
+    assert not repaired.integrated
+
+
 async def test_pdf_chunk_without_successful_write_is_not_marked_done(
     store: WikiStore, paths: WikiPaths
 ) -> None:
@@ -285,18 +340,25 @@ async def test_pdf_chunk_without_successful_write_is_not_marked_done(
     assert store.list_pages() == []
 
 
-async def test_pending_pdf_chunk_recovers_when_planned_page_exists(
+async def test_pending_pdf_chunk_rewrites_existing_source_summary_page(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+    args = _source_summary_write_args("functions")
     store.write_page(
         WikiPage.from_metadata(
             PageMetadata(page_id="functions", page_kind="source", summary="Existing functions."),
-            "Existing page. (raw/book.pdf p.1-10)",
+            _source_summary_body(args),
         )
     )
+    _write_source_summary_artifact(store, "book.pdf", "functions", args)
     extraction = _one_chunk_extraction(paths)
     script = [
+        [ToolCall(tool="search_wiki", args={"query": "functions"})],
+        [_plan_page_call("functions", action="enrich")],
+        [ToolCall(tool="read_page", args={"page_id": "functions"})],
+        [_write_page_call("functions")],
+        [ToolCall(tool="finish_chunk", args={"report": "rewritten functions"})],
         [_plan_page_call("book")],
         [_book_write_for_one_chunk()],
         [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
@@ -315,4 +377,50 @@ async def test_pending_pdf_chunk_recovers_when_planned_page_exists(
 
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.all_done
+    assert saved.chunks[0].notes == "rewritten functions"
     assert saved.chunks[0].pages_written == ("functions",)
+
+
+async def test_pending_pdf_chunk_rewrites_stale_source_summary_artifact(
+    store: WikiStore, paths: WikiPaths
+) -> None:
+    (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+    stale_args = _source_summary_write_args("functions", claim_ids=("source-claim-stale",))
+    store.write_page(
+        WikiPage.from_metadata(
+            PageMetadata(page_id="functions", page_kind="source", summary="Stale functions."),
+            _source_summary_body(stale_args),
+        )
+    )
+    _write_source_summary_artifact(store, "book.pdf", "functions", stale_args)
+    extraction = _one_chunk_extraction(paths)
+    script = [
+        [ToolCall(tool="search_wiki", args={"query": "functions"})],
+        [_plan_page_call("functions", action="enrich")],
+        [ToolCall(tool="read_page", args={"page_id": "functions"})],
+        [_write_page_call("functions")],
+        [ToolCall(tool="finish_chunk", args={"report": "rewritten functions"})],
+        [_plan_page_call("book")],
+        [_book_write_for_one_chunk()],
+        [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
+    ]
+    session = Session(
+        store=store,
+        client=FakeClient(script),
+        context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
+        today=TODAY,
+        runs_dir=paths.root / "runs",
+        run_id="pdf-stale-artifact-test",
+        extract_pdf=lambda _pdf, _rel, _reextract: extraction,
+    )
+
+    await session.ingest("book.pdf")
+
+    saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
+    assert saved.all_done
+    assert saved.chunks[0].notes == "rewritten functions"
+    assert "source-claim-stale" not in (
+        store.page_plan_artifact_dir("book.pdf")
+        / "accepted-source-summaries"
+        / "write-functions.json"
+    ).read_text(encoding="utf-8")

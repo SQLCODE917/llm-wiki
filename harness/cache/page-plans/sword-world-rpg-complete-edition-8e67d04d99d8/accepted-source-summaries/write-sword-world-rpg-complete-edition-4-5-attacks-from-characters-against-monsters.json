@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Attackers roll 2D and add attack power; hit if result ≥ evasion points (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0002"
+      ]
+    },
+    {
+      "bullet_text": "Base damage is taken from the Rating Table column matching strike power; roll 2D for the strike roll (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0024"
+      ]
+    },
+    {
+      "bullet_text": "A double‑ones strike roll deals 0 damage even if the hit check succeeds (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0035"
+      ]
+    },
+    {
+      "bullet_text": "A double‑ones hit roll automatically fails the attack (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0148"
+      ]
+    },
+    {
+      "bullet_text": "Life‑force increases may restore consciousness; otherwise, unconscious characters risk death (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "covered_source_claims": [
+        "source-claim-unit-0009-0196"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how characters attack monsters, covering hit checks, strike rolls, damage calculation, criticals, and defense rolls."
+}

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Spells are limited to a defined set of effects (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0028"
+      ]
+    },
+    {
+      "bullet_text": "Types of magic stem from belief in gods, wicked gods, and dragons (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0015"
+      ]
+    },
+    {
+      "bullet_text": "The five runes—ancient, spirit, holy, daemon, dragon—each have unique power sources (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0068"
+      ]
+    },
+    {
+      "bullet_text": "Holy prayer and daemon scream share the same power, differing only in nature (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0108"
+      ]
+    },
+    {
+      "bullet_text": "Races may not learn all runes, and a character cannot hold more than one belief in each god type (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Magic is produced by chanting runes and performing procedures, distinguishing five primary types—ancient, spirit, holy, dark, and dragon—each tied to a belief in gods, wicked gods, or dragons."
+}

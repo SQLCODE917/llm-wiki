@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Full Control Spirit mirrors Control Spirit: a three‑hour ritual, one spirit type, can override will—may cause disappearance. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0021-0024"
+      ]
+    },
+    {
+      "bullet_text": "Caster moves freely and may free any identified object from the spell’s effects. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0021-0104"
+      ]
+    },
+    {
+      "bullet_text": "Resistance roll may be made only once per round in which the spell is cast. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0021-0117"
+      ]
+    },
+    {
+      "bullet_text": "If a spirit acts contrary to its nature, it may disappear after the command. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0021-0030"
+      ]
+    },
+    {
+      "bullet_text": "Protective light absorbs up to 50 damage; excess damage is not transferred and the protection ends. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0021-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the spirit magic list part 3 from Sword World RPG – Complete Edition."
+}

@@ -110,6 +110,203 @@ def test_source_summary_plan_selects_limits_uncertainty_and_groups() -> None:
     assert plan.required_source_citations == ("raw/antikythera-mechanism.md",)
 
 
+def test_source_summary_plan_prefers_early_claims_in_mixed_chunks() -> None:
+    raw_source = RawSource.from_locator("rulebook.pdf")
+    filler = " ".join(f"Filler sentence {index} records ordinary context." for index in range(30))
+    unit = build_extracted_unit(
+        unit_id="unit-0010",
+        raw_source=raw_source,
+        locator="p.50-56",
+        heading_path="Unconscious and Death Checks",
+        text=(
+            "Damage reduces life force. "
+            "If life force becomes 0 or negative, the character falls unconscious. "
+            "You must make a death check to determine survival. "
+            "A character may die if left untreated. "
+            "Only treatment to positive life force restores consciousness. "
+            f"{filler} "
+            "The Crimson breastplate is said to glow redder than enemy blood. "
+            "Mithril silver can be processed into colors that never fade. "
+            "If all colors mix together, the result is only black."
+        ),
+    )
+    claims = source_claims((unit,), Schema())
+    plan = source_summary_plan(
+        page_id="rulebook-unconscious-and-death-checks",
+        contract=resolve_page_body_contract(contract_for_page_kind(Schema(), "source")),
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+
+    assert plan is not None
+    selected_statements = [
+        claim.statement
+        for claim in claims
+        if claim.source_claim_id in plan.selected_source_claims
+    ]
+    assert any("death check" in statement for statement in selected_statements)
+    assert not any("Crimson breastplate" in statement for statement in selected_statements)
+    assert not any("Mithril silver" in statement for statement in selected_statements)
+
+
+def test_source_summary_plan_ignores_generic_page_terms_in_section_titles() -> None:
+    raw_source = RawSource.from_locator("rulebook.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0029",
+        raw_source=raw_source,
+        locator="p.125-129",
+        heading_path="7.2 Merchant Skill",
+        text=(
+            "The hunter skill is very similar to the ranger skill. "
+            "Being a hunter is a respectable profession, so you should never look down on it. "
+            "Merchants are a class with a lot of freedom and often travel for trade. "
+            "Merchants are usually issued a merchant pass as proof of status. "
+            "Some merchants may sell arts and crafts while others sell fresh produce. "
+            "You can only make a check for items that the merchant deals with. "
+            "In this case, make a success roll using the captain's sailor skill level."
+        ),
+    )
+    claims = source_claims((unit,), Schema())
+    plan = source_summary_plan(
+        page_id="sword-world-rpg-complete-edition-7-2-merchant-skill",
+        contract=resolve_page_body_contract(contract_for_page_kind(Schema(), "source")),
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+
+    assert plan is not None
+    selected_statements = [
+        claim.statement
+        for claim in claims
+        if claim.source_claim_id in plan.selected_source_claims
+    ]
+    assert any("Merchants are a class" in statement for statement in selected_statements)
+    assert any("merchant deals" in statement for statement in selected_statements)
+    assert not any("hunter" in statement.lower() for statement in selected_statements)
+    assert not any("sailor skill" in statement for statement in selected_statements)
+
+
+def test_source_summary_plan_uses_first_relevant_claim_as_mixed_chunk_boundary() -> None:
+    raw_source = RawSource.from_locator("rulebook.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0036",
+        raw_source=raw_source,
+        locator="p.154-158",
+        heading_path="11.5 Asking NPCs to Use Magic",
+        text=(
+            "This is only possible if you're part of a group of people who believe in dragons. "
+            "In some cases, adventurers may need to rely on NPCs to save them. "
+            "A certain price is required in order to have the magic cast. "
+            "You may want to have Remove Curse cast or a magical item appraised. "
+            "Runes have magical power, and by chanting them a rune master can use magic."
+        ),
+    )
+    claims = source_claims((unit,), Schema())
+    plan = source_summary_plan(
+        page_id="sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic",
+        contract=resolve_page_body_contract(contract_for_page_kind(Schema(), "source")),
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+
+    assert plan is not None
+    selected_statements = [
+        claim.statement
+        for claim in claims
+        if claim.source_claim_id in plan.selected_source_claims
+    ]
+    assert any("NPCs" in statement for statement in selected_statements)
+    assert any("price is required" in statement for statement in selected_statements)
+    assert any("Remove Curse" in statement for statement in selected_statements)
+    assert not any("believe in dragons" in statement for statement in selected_statements)
+    assert not any("Runes have magical power" in statement for statement in selected_statements)
+
+
+def test_source_summary_plan_does_not_fill_with_late_generic_service_claims() -> None:
+    raw_source = RawSource.from_locator("rulebook.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0038",
+        raw_source=raw_source,
+        locator="p.159-169",
+        heading_path="12.2 Rules for Poison, Illness and Infection (part 2)",
+        text=(
+            "This score is used when making a check to see if you know the illness. "
+            "However, this must be at each progression speed of the illness. "
+            "Immediately after the illness progression check, only one success roll is allowed. "
+            "Adventurer level may also be hero level, but even heroes cannot win against illness. "
+            "For requests for such work, you'd usually give 10% to 30% as an advance payment."
+        ),
+    )
+    claims = source_claims((unit,), Schema())
+    plan = source_summary_plan(
+        page_id="sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2",
+        contract=resolve_page_body_contract(contract_for_page_kind(Schema(), "source")),
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+
+    assert plan is not None
+    selected_statements = [
+        claim.statement
+        for claim in claims
+        if claim.source_claim_id in plan.selected_source_claims
+    ]
+    assert any("know the illness" in statement for statement in selected_statements)
+    assert any("progression speed" in statement for statement in selected_statements)
+    assert not any("advance payment" in statement for statement in selected_statements)
+
+
+def test_source_summary_plan_uses_local_topic_window_for_narrow_rule_titles() -> None:
+    raw_source = RawSource.from_locator("rulebook.pdf")
+    filler = " ".join(
+        f"Filler sentence {index} records unrelated equipment context." for index in range(10)
+    )
+    unit = build_extracted_unit(
+        unit_id="unit-0064",
+        raw_source=raw_source,
+        locator="p.268-273",
+        heading_path="16.7 Throwing Multiple Darts or Daggers",
+        text=(
+            "In the basic rules, characters cannot hold separate weapons in each hand. "
+            "It’s possible to throw multiple darts or daggers at once. "
+            "However, the following restrictions occur in this case. "
+            "All objects thrown at the same time must have the same weight. "
+            "The total required strength must be up to the character's strength. "
+            "The number thrown at the same time becomes a penalty to attack power. "
+            "For example, if you throw three at the same time, that incurs a penalty. "
+            "You cannot choose multiple targets. "
+            "There must always be one target. "
+            "Never forget that projectiles cannot be used while in an engagement. "
+            f"{filler} "
+            "For those with multiple attack methods, you must declare one each round. "
+            "A main-gauche is a dagger held in the left hand for parrying. "
+            "You gain a +1 bonus to evasion speed only if the opponent's weapon is a dagger. "
+            "Of course, your opponent's weapons are limited to daggers, rapiers, and short swords. "
+            "It is used in melee, but you can also use it by throwing it."
+        ),
+    )
+    claims = source_claims((unit,), Schema())
+    plan = source_summary_plan(
+        page_id="sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers",
+        contract=resolve_page_body_contract(contract_for_page_kind(Schema(), "source")),
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+
+    assert plan is not None
+    selected_statements = [
+        claim.statement
+        for claim in claims
+        if claim.source_claim_id in plan.selected_source_claims
+    ]
+    assert any("throw multiple darts or daggers" in statement for statement in selected_statements)
+    assert any("same weight" in statement for statement in selected_statements)
+    assert any("multiple targets" in statement for statement in selected_statements)
+    assert not any("multiple attack methods" in statement for statement in selected_statements)
+    assert not any("evasion speed" in statement for statement in selected_statements)
+    assert not any("opponent's weapons" in statement for statement in selected_statements)
+
+
 def test_source_summary_draft_validation_requires_selected_claim_coverage() -> None:
     plan = _source_summary_plan(
         selected_source_claims=("source-claim-unit-0001-0001", "source-claim-unit-0001-0002")
@@ -179,6 +376,26 @@ def test_source_summary_draft_validation_requires_selected_claim_coverage() -> N
     ] == ["CopiedSourcePhrase"]
     assert validate_source_summary_draft(valid, plan) == ()
     assert "source-claim-unit" not in render_source_summary_draft(valid)
+
+
+def test_source_summary_citation_matching_normalizes_unicode_dashes() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-book",
+        page_id="book-front-matter",
+        selected_source_claims=("source-claim-unit-0001-0001",),
+        required_source_citations=("raw/book.pdf p.1-7",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[book-front-matter]].",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "The front matter is summarized with a nonbreaking page dash (raw/book.pdf p.1‑7).",
+                ("source-claim-unit-0001-0001",),
+            ),
+        ),
+    )
+
+    assert validate_source_summary_draft(draft, plan) == ()
 
 
 def test_planned_source_summary_tool_accepts_draft_and_retains_artifact(

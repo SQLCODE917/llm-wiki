@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Monsters that use magic are, without exception, more formidable enemies than their level suggests (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0001"
+      ]
+    },
+    {
+      "bullet_text": "When attacked by these monsters, you must make a life force resistance roll using the indicated toxicity score as the target score (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0052"
+      ]
+    },
+    {
+      "bullet_text": "Even in combat between monsters, those that only have attack methods similar to weapons (e.g., fangs or claws) cannot fight each other (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0120"
+      ]
+    },
+    {
+      "bullet_text": "Monsters with this ability can act underwater without any penalty, while others cannot (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0138"
+      ]
+    },
+    {
+      "bullet_text": "Depending on the monster, the penalty may be smaller, or it might be possible to still make sound; if this is the case it will be specified (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0074"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter outlines how to handle monster special abilities, including mental power and life force resistance rolls, special attack methods, and defensive immunities."
+}

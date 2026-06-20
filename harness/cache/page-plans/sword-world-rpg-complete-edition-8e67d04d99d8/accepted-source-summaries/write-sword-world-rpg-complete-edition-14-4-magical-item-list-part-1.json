@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Game masters may limit purchases to cities like Lomar, Reide, or the black market, yet still sell at adventurer shops (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0030"
+      ]
+    },
+    {
+      "bullet_text": "Even high‑power items require sorcerers with high‑ancient; non‑sorcerers cannot command them, preventing excessive power (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0041"
+      ]
+    },
+    {
+      "bullet_text": "Items survive rust‑free, indicating permanent magic from ancient sorcerers (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0012"
+      ]
+    },
+    {
+      "bullet_text": "Tables may include extra entries such as required strength or other data (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0070"
+      ]
+    },
+    {
+      "bullet_text": "Sage with treasure appraisal can determine value and cost, including low‑ancient commands (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0037"
+      ]
+    }
+  ],
+  "source_record_text": "Magical item list in Alecrast, trade price guidelines, appraisal rules, and city restrictions."
+}

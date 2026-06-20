@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A wound may become infected, treated as an illness. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0026"
+      ]
+    },
+    {
+      "bullet_text": "The unknown spirit of life restores balance by guiding other spirits. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0034"
+      ]
+    },
+    {
+      "bullet_text": "This poison only affects you if you lose at least one life‑force point from a poisoned blade. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0069"
+      ]
+    },
+    {
+      "bullet_text": "Once a poison has entered, it cannot be driven out. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0048"
+      ]
+    },
+    {
+      "bullet_text": "Inhaled poisons in gas or powder activate when breathed in. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0072"
+      ]
+    }
+  ],
+  "source_record_text": "This source details Sword World RPG rules governing poison, illness, infection, and their treatments, including definitions, contagion, and resistance mechanics."
+}

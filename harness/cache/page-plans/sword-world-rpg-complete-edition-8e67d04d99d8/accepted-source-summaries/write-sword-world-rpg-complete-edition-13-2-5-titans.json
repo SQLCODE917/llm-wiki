@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Ogres, also known as _jikininki_, are ferocious, carnivorous titans that particularly enjoy human flesh. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "covered_source_claims": [
+        "source-claim-unit-0043-0040"
+      ]
+    },
+    {
+      "bullet_text": "Although called the hundredhanded titan, they actually possess only 12 arms. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "covered_source_claims": [
+        "source-claim-unit-0043-0091"
+      ]
+    },
+    {
+      "bullet_text": "Although on the smaller side of titans, ogres stand over 2 m tall and have strong bodies. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "covered_source_claims": [
+        "source-claim-unit-0043-0043"
+      ]
+    },
+    {
+      "bullet_text": "Among the giants, the race called _Giants_ is one of the ancient races that originated from the primordial titan. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "covered_source_claims": [
+        "source-claim-unit-0043-0099"
+      ]
+    },
+    {
+      "bullet_text": "A spriggan may revert to its true, ugly 3‑meter‑tall titan form when alone with a human who believes it to be a normal child. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "covered_source_claims": [
+        "source-claim-unit-0043-0062"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 13.2.5 Titans describes ogres, spriggans, and the ancient Giant race, covering size, arm count, and behavior."
+}

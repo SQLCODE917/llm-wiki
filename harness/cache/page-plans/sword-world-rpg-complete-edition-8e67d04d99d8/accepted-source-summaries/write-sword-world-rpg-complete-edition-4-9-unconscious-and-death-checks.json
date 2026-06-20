@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A character who falls unconscious with 0 or negative life force from a mercy‑declared attack fails a death check only on double ones (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0055"
+      ]
+    },
+    {
+      "bullet_text": "Ducard II, life force ‑4, must roll a death check (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0008"
+      ]
+    },
+    {
+      "bullet_text": "Failure on a death check leaves a character unconscious unless double ones are rolled (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0060"
+      ]
+    },
+    {
+      "bullet_text": "Increasing life force by at least 1 point lets a character regain consciousness; otherwise they may die (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0019"
+      ]
+    },
+    {
+      "bullet_text": "Damage lowers life force, and more damage lowers it further (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0001"
+      ]
+    }
+  ],
+  "source_record_text": "Section 4.9 covers unconsciousness, death checks, mercy, and life force recovery rules."
+}

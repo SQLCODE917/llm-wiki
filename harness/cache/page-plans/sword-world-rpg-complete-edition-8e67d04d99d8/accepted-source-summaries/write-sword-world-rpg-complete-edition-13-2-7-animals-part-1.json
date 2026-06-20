@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Wolves attack animals that are separated from their herd, avoiding stronger foes. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0047-0006"
+      ]
+    },
+    {
+      "bullet_text": "Omnivorous wolves eat small prey and may target livestock or humans when starving. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0047-0199"
+      ]
+    },
+    {
+      "bullet_text": "The hanger leg is a headless octopus‑like parasite that infects large animals, indistinguishable by sex. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0047-0026"
+      ]
+    },
+    {
+      "bullet_text": "Wolf: level 1, rarity 5, agility 16, movement speed 24. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0047-0001"
+      ]
+    },
+    {
+      "bullet_text": "Giant rat: moderate frequency, neutral animal intellect, disease (Intensity 5). (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0047-0011"
+      ]
+    }
+  ],
+  "source_record_text": "This section covers a variety of animal monsters in the Sword World setting, detailing stats, behavior, and special abilities."
+}

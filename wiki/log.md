@@ -1,19 +1,47 @@
 # Log
 
-## [2026-06-19] ingest | antikythera-mechanism.md
-Created a source page for the Antikythera mechanism. The page summarizes the key facts about the ancient Greek analog computer, including its discovery, construction, and historical significance. The page also links to the relevant entity page for Archimedes, as the mechanism may have originated from the school of Archimedes in Syracuse.
+## [2026-06-20] ingest | antikythera-mechanism.md
+Created source page [[antikythera-mechanism]] summarizing the Antikythera Mechanism. No entity or concept pages were modified or created.
 
-## [2026-06-19] graph | wiki graph
+## [2026-06-20] graph | wiki graph
 Graph export: current
 Nodes: 1
-Edges: 1
-Unresolved edges: 1
+Edges: 0
+Unresolved edges: 0
 wiki/wiki-graph.json matches the current wiki graph.
 
-## [2026-06-19] lint | wiki health
+## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
+Hub page sword-world-rpg-complete-edition written successfully with source summary and cross-links.
+
+## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
+Hub page sword-world-rpg-complete-edition fully updated with navigation links to all relevant rulebook sections, catalogs, charts, and setting lore. Ingest complete.
+
+## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
+Updated hub source page sword‑world‑rpg‑complete‑edition with content … and links …
+
+## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
+Source hub sword-world-rpg-complete-edition written with cross‑links to chapter pages. No other pages created in this run.
+
+## [2026-06-20] lint | wiki health
 ## Model report
 
-Fixed broken link in 'antikythera-mechanism' page by creating missing 'archimedes' entity page. No other deterministic findings of consequence identified; no further repairs needed at this time.
+Orphan pages identified: 
+1. **antikythera-mechanism** – a source page with no inbound links. 
+2. **sword-world-rpg-complete-edition** – a hub source page with no inbound links. 
+No broken links were found in the current set of pages. 
+
+**Action taken**: none of the orphan pages were linked from an existing page because we could not locate a related page with an appropriate context to reference them. 
+
+**Remaining issues**:
+- No inbound link for antikythera-mechanism. Suggested source for linkage: a page about ancient Greek technology or a related entity such as [[ancient-greece]] (to be created). 
+- No inbound link for sword-world-rpg-complete-edition. Suggested source for linkage: a page summarizing the Sword World RPG series, or a concept page that discusses RPG systems.
+
+**Next steps**: 
+1. Create a new concept or entity page such as [[ancient-greek-technology]] that includes a link to [[antikythera-mechanism]]. 
+2. Create a concept or entity page such as [[sword-world-rpg-system]] that includes a link to [[sword-world-rpg-complete-edition]]. 
+3. Re‑run lint after adding these links to verify that both orphan pages are no longer orphaned.
+
+**Health report**: The wiki currently has two orphan source pages; no broken or stale links. The page graph is otherwise consistent.
 
 ## Deterministic verification
 
@@ -23,9 +51,11 @@ Resolved orphan pages: None.
 
 New orphan pages: None.
 
-Remaining orphan pages: None.
+Remaining orphan pages:
+- antikythera-mechanism
+- sword-world-rpg-complete-edition
 
-Broken link findings: 1 -> 0
+Broken link findings: 0 -> 0
 
 Pages missing from index.md: 0 -> 0
 
@@ -36,8 +66,9 @@ Citation evidence findings: 0 -> 0
 ### Before model pass
 
 Link/index/orphan findings:
-Broken [[links]] (target page does not exist):
-- antikythera-mechanism links to missing page(s): archimedes
+Orphan pages (no inbound links from any other page):
+- antikythera-mechanism
+- sword-world-rpg-complete-edition
 
 Citation evidence findings:
 Strict evidence mode: off. Citation validation skipped.
@@ -45,43 +76,16 @@ Strict evidence mode: off. Citation validation skipped.
 ### After model pass
 
 Link/index/orphan findings:
-No deterministic issues found (links, orphans, and index are consistent).
+Orphan pages (no inbound links from any other page):
+- antikythera-mechanism
+- sword-world-rpg-complete-edition
 
 Citation evidence findings:
 Strict evidence mode: off. Citation validation skipped.
 
-## [2026-06-19] graph | wiki graph
+## [2026-06-20] graph | wiki graph
 Graph export: current
-Nodes: 2
-Edges: 2
-Unresolved edges: 0
-wiki/wiki-graph.json matches the current wiki graph.
-
-## [2026-06-19] ingest | javascriptallonge.pdf
-The hub source page 'javascriptallonge' has been created and links all the chapter pages written during chunking. The page is organized into sections for Player Rules, Combat, Magic, GM/support material, Catalogs/charts, and Setting/lore, as per the page map navigation.
-
-## [2026-06-19] ingest | javascriptallonge.pdf
-The hub source page 'javascriptallonge' has been updated to link all chapter pages created during chunking. The page organizes content into categories like Player Rules, Combat, Magic, GM/Support Material, Setting/Lore, and Catalogs/Charts, providing a structured overview of the source material.
-
-## [2026-06-19] ingest | javascriptallonge.pdf
-The hub source page 'javascriptallonge' has been updated to summarize the whole source and link all chapter pages written during chunking. The page is organized into sections for Player Rules, Combat, Magic, and GM/Support Material, with cross-links to the relevant chapter pages.
-
-## [2026-06-19] ingest | javascriptallonge.pdf
-The hub source page 'javascriptallonge' has been updated to link all chapter pages created during the chunking process. The page now includes links to all 20 chapter pages organized into Player Rules, Combat, Magic, and GM/Support Material sections as per the page map.
-
-## [2026-06-19] graph | wiki graph
-Graph export: current
-Nodes: 23
-Edges: 27
-Unresolved edges: 0
-wiki/wiki-graph.json matches the current wiki graph.
-
-## [2026-06-19] ingest | javascriptallonge.pdf
-The hub source page 'javascriptallonge' has been created and updated to summarize the whole source and link all chapter pages written during chunking. The page is organized into sections for Player Rules, Combat, GM/Support Material, Catalogs/Charts, and Setting/Lore, with appropriate cross-links to the relevant chapter pages.
-
-## [2026-06-19] graph | wiki graph
-Graph export: current
-Nodes: 23
-Edges: 27
+Nodes: 71
+Edges: 69
 Unresolved edges: 0
 wiki/wiki-graph.json matches the current wiki graph.

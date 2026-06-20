@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Spells may target only desired recipients; area-of-effect is optional. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0095"
+      ]
+    },
+    {
+      "bullet_text": "Success roll lets caster pass through wall; failure blows them away. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0177"
+      ]
+    },
+    {
+      "bullet_text": "Success roll allows passage with little wetness; failure results in being swallowed. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0149"
+      ]
+    },
+    {
+      "bullet_text": "Example: allies hear spellsong for morale, enemies not advantaged. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0104"
+      ]
+    },
+    {
+      "bullet_text": "Caster can control echoes of any sound within 30 m radius. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0100"
+      ]
+    }
+  ],
+  "source_record_text": "Spirit Magic List part 2 summarizes spirit-based spells, wall effects, and related mechanics from pages 84–95 of the Sword World RPG Complete Edition."
+}

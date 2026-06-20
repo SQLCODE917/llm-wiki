@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "If an enemy in front of you attacks, attacking another enemy several meters away is not possible (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "covered_source_claims": [
+        "source-claim-unit-0007-0047"
+      ]
+    },
+    {
+      "bullet_text": "In such a case, a character may cancel their intended action (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "covered_source_claims": [
+        "source-claim-unit-0007-0106"
+      ]
+    },
+    {
+      "bullet_text": "You may only declare ‘I’m preparing to cast a spell’ without naming the spell (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "covered_source_claims": [
+        "source-claim-unit-0007-0072"
+      ]
+    },
+    {
+      "bullet_text": "In the middle of a round, a companion may ask you to help with money or goods (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "covered_source_claims": [
+        "source-claim-unit-0007-0105"
+      ]
+    },
+    {
+      "bullet_text": "A character has only two choices: carry out their action as is or cancel it (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "covered_source_claims": [
+        "source-claim-unit-0007-0107"
+      ]
+    }
+  ],
+  "source_record_text": "This chunk outlines rules for resistance rolls and action cancellation, including restrictions on declaring spell names and the possibility of canceling actions."
+}

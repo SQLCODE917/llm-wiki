@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "If an identical _type_ of spell or a spell with an identical _name_ appears in dark magic, only that version can be used. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0023"
+      ]
+    },
+    {
+      "bullet_text": "Magic power is added to damage as usual. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0074"
+      ]
+    },
+    {
+      "bullet_text": "In a narrow sense, only priests of Phalaris are sometimes called dark priests. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0013"
+      ]
+    },
+    {
+      "bullet_text": "Some believe that if their numbers rise, the age of darkness may come again. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0007"
+      ]
+    },
+    {
+      "bullet_text": "Dark magic cannot be used to force intense movements such as combat or casting magic. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0191"
+      ]
+    }
+  ],
+  "source_record_text": "Summarizes rules for dark magic and dark priests, spell usage limits, and the distinction of dark priests among Phalaris worshippers."
+}

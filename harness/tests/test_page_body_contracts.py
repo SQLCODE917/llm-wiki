@@ -24,7 +24,7 @@ from llmwiki.domain.pages import LOCAL_FLAT_STRUCTURE, PageMetadata, WikiPage
 from llmwiki.domain.planning import build_page_plan, observation_report
 from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.store import WikiStore, WikiStoreError
-from llmwiki.workflows.tools import planned_write_page_tool
+from llmwiki.workflows.tools import planned_write_page_tool, write_page_tool
 
 TODAY = "2026-06-19"
 
@@ -44,7 +44,9 @@ def test_schema_owns_default_page_body_contracts_and_raw_source_has_none() -> No
     contract_ids = {contract.contract_id for contract in schema.page_body_contracts}
 
     assert {"source-summary", "entity-page", "concept-page", "synthesis-page"} <= contract_ids
-    assert contract_for_page_kind(schema, "source").contract_id == "source-summary"
+    source_contract = contract_for_page_kind(schema, "source")
+    assert source_contract.contract_id == "source-summary"
+    assert source_contract.required_link_policy == "none"
     assert PageBodyFinding("RequiredSections", "missing Source record").finding_type
     assert not hasattr(RawSource.from_locator("article.md"), "page_body_contract_selections")
 
@@ -114,6 +116,7 @@ def test_source_summary_rejects_copy_and_accepts_compact_claims() -> None:
         required_source_citations=("raw/antikythera-mechanism.md",),
         required_uncertainty_terms=("may", "suggest", "possible"),
     )
+    assert contract.required_link_page_ids == ()
     copied = (
         "The Antikythera mechanism may have tracked astronomical cycles. "
         "The device was recovered from a shipwreck and its inscriptions "
@@ -139,6 +142,50 @@ def test_source_summary_rejects_copy_and_accepts_compact_claims() -> None:
         "MaxCopiedNGramRatio",
     }
     assert validate_page_body(compact, contract, source_text=source_text) == ()
+
+
+def test_source_summary_allows_five_cited_claims_with_long_pdf_locator() -> None:
+    citation = "raw/Sword World RPG - Complete Edition.pdf p.99-104"
+    contract = resolve_page_body_contract(
+        contract_for_page_kind(Schema(), "source"),
+        required_source_citations=(citation,),
+        required_uncertainty_terms=("may",),
+    )
+    body = (
+        "## Source record\n\n"
+        "This source page summarizes the listed holy magic and its limits. "
+        f"The rules may vary by spell. ({citation})\n\n"
+        "## Key supported claims\n\n"
+        f"- Cure Deafness counters dark magic that removes hearing. ({citation})\n"
+        f"- Removing a scored spell requires a magic-power roll. ({citation})\n"
+        f"- Some undead use fixed strike power against holy effects. ({citation})\n"
+        f"- Listed spells are broadly available to priest characters. ({citation})\n"
+        f"- A Marfa vow may constrain later character choices. ({citation})"
+    )
+
+    assert contract.max_words == 220
+    assert validate_page_body(body, contract) == ()
+
+
+def test_source_summary_rejects_placeholder_ellipsis() -> None:
+    citation = "raw/book.pdf p.212-213"
+    contract = resolve_page_body_contract(
+        contract_for_page_kind(Schema(), "source"),
+        required_source_citations=(citation,),
+        required_uncertainty_terms=("may",),
+    )
+    body = (
+        "## Source record\n\n"
+        f"Plants section describes plant monsters … ({citation})\n\n"
+        "## Key supported claims\n\n"
+        f"- The source may describe a plant weakness. ({citation})\n"
+        f"- The source describes a tall plant creature. ({citation})\n"
+        f"- The source describes a walking root. ({citation})"
+    )
+
+    assert [finding.finding_type for finding in validate_page_body(body, contract)] == [
+        "PlaceholderText"
+    ]
 
 
 def test_user_defined_contract_controls_page_shape() -> None:
@@ -175,6 +222,25 @@ def test_planned_write_rejects_invalid_page_body_before_store_write(
 
     assert store.write_count == 0
     assert store.list_pages() == []
+
+
+def test_recoverable_write_page_schema_error_names_source_summary_fields(
+    paths: WikiPaths,
+) -> None:
+    store = SpyStore(paths)
+    tool = write_page_tool(store, TODAY, recoverable_errors=True)
+
+    result = tool.callable(
+        page_id="alpha",
+        page_kind="source",
+        summary="Alpha source.",
+        claim_bullets=[{"text": "Bad bullet.", "source_claims": []}],
+        sources=["raw/alpha.md"],
+    )
+
+    assert "write_page arguments did not match the required schema" in result
+    assert "`bullet_text` and `covered_source_claims`" in result
+    assert store.write_count == 0
 
 
 def test_planned_write_retry_succeeds_after_corrected_page_body(paths: WikiPaths) -> None:

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The **Rarity** score is used when making a check to see if you know an illness – higher rarity makes identification harder (raw/Sword World RPG - Complete Edition.pdf p.159-169).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0011"
+      ]
+    },
+    {
+      "bullet_text": "Illness progression checks must be performed at each **progression speed** interval; you roll dice after the set time passes (raw/Sword World RPG - Complete Edition.pdf p.159-169).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0036"
+      ]
+    },
+    {
+      "bullet_text": "Only **one** success roll is allowed immediately after an illness’s progression check; additional rolls wait until the next interval (raw/Sword World RPG - Complete Edition.pdf p.159-169).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0037"
+      ]
+    },
+    {
+      "bullet_text": "Adventurer level may also be hero level, but even if you’re a hero, you cannot win against illness – checks are unaffected by level (raw/Sword World RPG - Complete Edition.pdf p.159-169).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0025"
+      ]
+    },
+    {
+      "bullet_text": "An **Infection Power** of Very strong (e.g., infection through gaze) signals plague‑level contagion; Moderate or Weak denotes lesser spread (raw/Sword World RPG - Complete Edition.pdf p.159-169).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0142"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter details illness progression, healing checks, and infection power mechanics."
+}

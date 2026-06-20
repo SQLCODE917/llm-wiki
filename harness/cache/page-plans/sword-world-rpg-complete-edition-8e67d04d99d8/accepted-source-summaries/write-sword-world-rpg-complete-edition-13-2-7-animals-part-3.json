@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Including the price of meat, fat (used for fuel, etc.) and tusks, the average income for one animal is 10,000 gamels (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0016"
+      ]
+    },
+    {
+      "bullet_text": "Giant seals can also use their fins to advance over ice fields, but they do not eat land animals, so they won't attack you unless you attack them (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0012"
+      ]
+    },
+    {
+      "bullet_text": "They usually feed on small animals such as rabbits, but if they can’t stand their hunger they may attack larger creatures than themselves such as humans, etc. (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0077"
+      ]
+    },
+    {
+      "bullet_text": "Sand worm stats: Number=One to several, Frequency=Rare, Attack Points=Mouth:13 (6), Strike Points=14, Life Points=30/17, no special abilities, habitat deserts (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0004"
+      ]
+    },
+    {
+      "bullet_text": "Female giant seal stats: Number=Several to over a hundred, Frequency=Moderate, Attack Points=Ram:13 (6), Life Points=20/14, habitat ice fields, neutral reaction (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0021"
+      ]
+    }
+  ],
+  "source_record_text": "Rules and stats for various creatures found in Sword World RPG, including sand worms, giant seals, and other dangerous monsters."
+}

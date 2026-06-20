@@ -70,10 +70,10 @@ def default_page_body_contracts() -> tuple[PageBodyContract, ...]:
             required_markdown_shape="claim-bullets",
             min_claim_bullets=3,
             coverage_policy="main-supported-claims-and-explicit-limits",
-            max_words=160,
+            max_words=220,
             max_source_word_ratio=0.65,
             max_copied_ngram_ratio=0.50,
-            required_link_policy="planned-related-pages",
+            required_link_policy="none",
             required_citation_policy="all-raw-sources",
             required_uncertainty_policy="preserve-source-uncertainty",
         ),
@@ -169,7 +169,11 @@ def resolve_page_body_contract(
         max_words=max_words or contract.max_words,
         max_source_word_ratio=max_source_word_ratio or contract.max_source_word_ratio,
         max_copied_ngram_ratio=max_copied_ngram_ratio or contract.max_copied_ngram_ratio,
-        required_link_page_ids=required_link_page_ids,
+        required_link_page_ids=(
+            required_link_page_ids
+            if contract.required_link_policy == "planned-related-pages"
+            else ()
+        ),
         required_source_citations=required_source_citations,
         required_uncertainty_terms=required_uncertainty_terms,
     )

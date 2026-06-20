@@ -6,6 +6,7 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanState,
     PlannedPage,
 )
+from llmwiki.domain.objects import PagePlan, PlannedPageWrite, RawSource, SourceBundle
 from llmwiki.domain.pages import PageMetadata
 from llmwiki.store import WikiStore
 from llmwiki.workflows.ingest_route_tools import plan_pages_tool
@@ -42,6 +43,90 @@ def test_plan_pages_route_plan_miss_is_model_correctable() -> None:
 
     assert "No ingest route plan was accepted" in result
     assert state.active_plan is None
+
+
+def test_plan_pages_schema_error_is_model_correctable() -> None:
+    state = IngestRoutePlanState(IngestRouteContext(source_locator="book.pdf", scope="pdf-chunk"))
+    tool = plan_pages_tool(state, recoverable_errors=True)
+
+    result = tool.callable(
+        planned_pages=[
+            {
+                "metadata": {
+                    "page_id": "book-front-matter",
+                    "page_kind": "source",
+                    "summary": "Book front matter.",
+                },
+                "role": "source section",
+                "action": "create",
+                "source_scope": "book.pdf p.1-7",
+                "confidence": "high",
+            }
+        ],
+        gaps=[],
+    )
+
+    assert "arguments did not match" in result
+    assert "rationale" in result
+    assert state.active_plan is None
+
+
+def test_plan_pages_shorthand_is_rescued_from_page_plan() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    page_plan = PagePlan(
+        plan_id="plan-book",
+        source_bundle=SourceBundle.one(raw_source),
+        extracted_units=(),
+        source_claims=(),
+        source_claim_groups=(),
+        candidate_claims=(),
+        candidate_topics=(),
+        candidate_entities=(),
+        topic_clusters=(),
+        wiki_matches=(),
+        claim_comparisons=(),
+        planned_writes=(
+            PlannedPageWrite(
+                write_id="write-book-front-matter",
+                action="create-new",
+                page_metadata=PageMetadata(
+                    page_id="book-front-matter",
+                    page_kind="source",
+                    summary="Book front matter.",
+                    sources=("raw/book.pdf p.1-7",),
+                ),
+                extracted_units=("unit-0001",),
+            ),
+        ),
+    )
+    state = IngestRoutePlanState(
+        IngestRouteContext(
+            source_locator="book.pdf",
+            scope="pdf-chunk",
+            chunk_id=1,
+            page_plan=page_plan,
+        )
+    )
+    tool = plan_pages_tool(state, recoverable_errors=True)
+
+    result = tool.callable(
+        planned_pages=[
+            {
+                "page_id": "book-front-matter",
+                "page_kind": "source",
+                "action": "create",
+                "confidence": 1,
+            }
+        ],
+        gaps=[],
+    )
+
+    assert "Validated ingest route plan" in result
+    assert state.active_plan is not None
+    planned = state.active_plan.planned_pages[0]
+    assert planned.metadata.summary == "Book front matter."
+    assert planned.metadata.sources == ("raw/book.pdf p.1-7",)
+    assert planned.confidence == "high"
 
 
 def test_write_page_route_plan_miss_is_model_correctable(store: WikiStore) -> None:
@@ -83,3 +168,85 @@ def test_write_page_route_plan_miss_is_model_correctable(store: WikiStore) -> No
 
     assert "No page was written" in result
     assert store.list_pages() == []
+
+
+def test_planned_write_uses_page_plan_metadata_after_route_authorization(
+    store: WikiStore,
+) -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    planned_write = PlannedPageWrite(
+        write_id="write-book-front-matter",
+        action="create-new",
+        page_metadata=PageMetadata(
+            page_id="book-front-matter",
+            page_kind="source",
+            summary="Book front matter from deterministic PagePlan.",
+            sources=("raw/book.pdf p.1-7",),
+        ),
+        extracted_units=("unit-0001",),
+    )
+    page_plan = PagePlan(
+        plan_id="plan-book",
+        source_bundle=SourceBundle.one(raw_source),
+        extracted_units=(),
+        source_claims=(),
+        source_claim_groups=(),
+        candidate_claims=(),
+        candidate_topics=(),
+        candidate_entities=(),
+        topic_clusters=(),
+        wiki_matches=(),
+        claim_comparisons=(),
+        planned_writes=(planned_write,),
+    )
+    state = IngestRoutePlanState(
+        IngestRouteContext(
+            source_locator="book.pdf",
+            scope="pdf-chunk",
+            chunk_id=1,
+            page_plan=page_plan,
+        )
+    )
+    state.accept(
+        IngestRoutePlan(
+            source_locator="book.pdf",
+            scope="pdf-chunk",
+            chunk_id=1,
+            profile_ids=(),
+            planned_pages=(
+                PlannedPage(
+                    metadata=PageMetadata(
+                        page_id="book-front-matter",
+                        page_kind="source",
+                        summary="Model summary …",
+                        sources=("raw/book.pdf",),
+                    ),
+                    role="source-summary",
+                    action="create",
+                    source_scope="book.pdf p.1-7",
+                    confidence="high",
+                    rationale="The deterministic PagePlan authorizes this page.",
+                ),
+            ),
+        )
+    )
+    tool = write_page_tool(
+        store,
+        today="2026-06-20",
+        ingest_route_plan_state=state,
+    )
+
+    result = tool.callable(
+        page_id="book-front-matter",
+        page_kind="source",
+        summary="Write-time model summary …",
+        sources=["raw/book.pdf"],
+        page_body="## Source record\n\nClean body.\n\n## Key supported claims\n\n- Claim.",
+    )
+
+    page = store.read_page("book-front-matter")
+    assert "Wrote wiki/book-front-matter.md" in result
+    assert "summary: Book front matter from deterministic PagePlan." in page
+    assert "sources: raw/book.pdf p.1-7" in page
+    assert "Model summary …" not in page
+    assert "Write-time model summary …" not in page

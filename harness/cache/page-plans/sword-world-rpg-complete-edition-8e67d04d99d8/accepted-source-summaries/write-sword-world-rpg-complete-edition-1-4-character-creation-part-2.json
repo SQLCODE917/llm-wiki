@@ -1,0 +1,25 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Characters select equipment whose required strength matches their own, with skills possibly imposing extra limits. (raw/Sword World RPG - Complete Edition.pdf p.17-30)",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0017",
+        "source-claim-unit-0005-0056"
+      ]
+    },
+    {
+      "bullet_text": "Metal armor other than ring mail is disallowed regardless of strength. (raw/Sword World RPG - Complete Edition.pdf p.17-30)",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0027",
+        "source-claim-unit-0005-0041"
+      ]
+    },
+    {
+      "bullet_text": "If a character lacks a skill related to an action, the baseline score is 0, independent of ability scores. (raw/Sword World RPG - Complete Edition.pdf p.17-30)",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0177"
+      ]
+    }
+  ],
+  "source_record_text": "This section explains how to choose weapons, armor, shields, and other equipment based on a character’s strength and skills, including price calculations and restrictions."
+}

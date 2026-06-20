@@ -2,142 +2,352 @@
   "edges": [
     {
       "resolved": true,
-      "source": "antikythera-mechanism",
-      "target": "archimedes"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-1-3-skills"
     },
     {
       "resolved": true,
-      "source": "archimedes",
-      "target": "antikythera-mechanism"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-1-4-character-creation-part-1"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "as-little-as-possible-about-functions-but-no-less"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-1-4-character-creation-part-2"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "closures-and-scope"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-10-3-surprise-attacks"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "copy-on-write"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-11-2-dark-magic-part-1"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "copyright-notice"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-11-2-dark-magic-part-2"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "forewords-to-the-first-edition"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-11-3-dragon-roar-magic"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "front-matter"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "garbage-garbage-everywhere"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "generating-iterables"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "interactive-generators"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-1-types-of-monsters"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "interlude-the-carpenter-interviews-for-a-job"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "iteration-and-iterables"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "lazy-and-eager-collections"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "making-data-out-of-functions"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-12-humans"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "mutation"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-2-fae"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "naming-functions"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-4-spirits"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "object-assign"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-5-titans"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "picking-the-bean-choice-and-truthiness"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "recipes-with-basic-functions"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "self-similarity"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3"
     },
     {
       "resolved": true,
-      "source": "javascriptallonge",
-      "target": "that-constant-coffee-craving"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-7-animals-part-1"
     },
     {
       "resolved": true,
-      "source": "lazy-and-eager-collections",
-      "target": "generating-iterables"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-7-animals-part-2"
     },
     {
       "resolved": true,
-      "source": "lazy-and-eager-collections",
-      "target": "iteration-and-iterables"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-7-animals-part-3"
     },
     {
       "resolved": true,
-      "source": "recipes-with-basic-functions",
-      "target": "as-little-as-possible-about-functions-but-no-less"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-8-plants"
     },
     {
       "resolved": true,
-      "source": "recipes-with-basic-functions",
-      "target": "closures-and-scope"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-9-undead-part-1"
     },
     {
       "resolved": true,
-      "source": "recipes-with-basic-functions",
-      "target": "javascriptallonge"
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-2-9-undead-part-2"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-14-4-magical-item-list-part-1"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-14-4-magical-item-list-part-2"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-14-4-magical-item-list-part-3"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-16-5-combat-options"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-17-2-lost-spells"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-2-3-checks"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-2-7-resistance-rolls"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-3-4-movement-and-actions"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-1-types-of-magic"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-4-how-to-use-magic"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-1-7-magic-expansion"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-5-3-spellsongs"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-6-2-thief-skill"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-6-4-sage-skill"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-6-6-common-adventurer-abilities"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-7-2-merchant-skill"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-8-1-experience-points"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-charts"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-front-matter"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1"
+    },
+    {
+      "resolved": true,
+      "source": "sword-world-rpg-complete-edition",
+      "target": "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2"
     }
   ],
   "metadata": {
-    "generated_date": "2026-06-19",
+    "generated_date": "2026-06-20",
     "generator": "llmwiki.graph.v1",
     "schema_version": 1,
     "system_pages": "excluded"
@@ -146,237 +356,711 @@
     {
       "category": "source",
       "name": "antikythera-mechanism",
+      "outbound_links": [],
+      "sources": [
+        "raw/antikythera-mechanism.md"
+      ],
+      "summary": "Source summarizing the Antikythera Mechanism, an ancient Greek analog computer."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition",
       "outbound_links": [
-        "archimedes"
+        "sword-world-rpg-complete-edition-1-3-skills",
+        "sword-world-rpg-complete-edition-1-4-character-creation-part-1",
+        "sword-world-rpg-complete-edition-1-4-character-creation-part-2",
+        "sword-world-rpg-complete-edition-10-3-surprise-attacks",
+        "sword-world-rpg-complete-edition-11-2-dark-magic-part-1",
+        "sword-world-rpg-complete-edition-11-2-dark-magic-part-2",
+        "sword-world-rpg-complete-edition-11-3-dragon-roar-magic",
+        "sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic",
+        "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1",
+        "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2",
+        "sword-world-rpg-complete-edition-13-1-types-of-monsters",
+        "sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog",
+        "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1",
+        "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2",
+        "sword-world-rpg-complete-edition-13-2-12-humans",
+        "sword-world-rpg-complete-edition-13-2-2-fae",
+        "sword-world-rpg-complete-edition-13-2-4-spirits",
+        "sword-world-rpg-complete-edition-13-2-5-titans",
+        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1",
+        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2",
+        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3",
+        "sword-world-rpg-complete-edition-13-2-7-animals-part-1",
+        "sword-world-rpg-complete-edition-13-2-7-animals-part-2",
+        "sword-world-rpg-complete-edition-13-2-7-animals-part-3",
+        "sword-world-rpg-complete-edition-13-2-8-plants",
+        "sword-world-rpg-complete-edition-13-2-9-undead-part-1",
+        "sword-world-rpg-complete-edition-13-2-9-undead-part-2",
+        "sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level",
+        "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
+        "sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world",
+        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-1",
+        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-2",
+        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-3",
+        "sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice",
+        "sword-world-rpg-complete-edition-16-5-combat-options",
+        "sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers",
+        "sword-world-rpg-complete-edition-17-2-lost-spells",
+        "sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures",
+        "sword-world-rpg-complete-edition-2-3-checks",
+        "sword-world-rpg-complete-edition-2-7-resistance-rolls",
+        "sword-world-rpg-complete-edition-3-4-movement-and-actions",
+        "sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters",
+        "sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks",
+        "sword-world-rpg-complete-edition-5-1-1-types-of-magic",
+        "sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details",
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1",
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2",
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3",
+        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4",
+        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1",
+        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2",
+        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3",
+        "sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill",
+        "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1",
+        "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2",
+        "sword-world-rpg-complete-edition-5-1-4-how-to-use-magic",
+        "sword-world-rpg-complete-edition-5-1-7-magic-expansion",
+        "sword-world-rpg-complete-edition-5-3-spellsongs",
+        "sword-world-rpg-complete-edition-6-2-thief-skill",
+        "sword-world-rpg-complete-edition-6-4-sage-skill",
+        "sword-world-rpg-complete-edition-6-6-common-adventurer-abilities",
+        "sword-world-rpg-complete-edition-7-2-merchant-skill",
+        "sword-world-rpg-complete-edition-8-1-experience-points",
+        "sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check",
+        "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg",
+        "sword-world-rpg-complete-edition-charts",
+        "sword-world-rpg-complete-edition-front-matter",
+        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1",
+        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2"
       ],
       "sources": [
-        "antikythera-mechanism.md"
+        "raw/Sword World RPG - Complete Edition.pdf"
       ],
-      "summary": "Summary of the Antikythera mechanism, an ancient Greek analog computer."
-    },
-    {
-      "category": "entity",
-      "name": "archimedes",
-      "outbound_links": [
-        "antikythera-mechanism"
-      ],
-      "sources": [
-        "antikythera-mechanism.md"
-      ],
-      "summary": "Ancient Greek mathematician and engineer, known for contributions to geometry, statics, and hydrostatics."
+      "summary": "Hub page for raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
-      "name": "as-little-as-possible-about-functions-but-no-less",
+      "name": "sword-world-rpg-complete-edition-1-3-skills",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.30-43"
+        "raw/Sword World RPG - Complete Edition.pdf p.14-16"
       ],
-      "summary": "Chapter covering basic JavaScript functions, their evaluation, and fundamentals of function application."
+      "summary": "Chapter 1.3 Skills \u2013 numeric levels, skill types, rune\u2011master distinction, half\u2011elf notes."
     },
     {
       "category": "source",
-      "name": "closures-and-scope",
+      "name": "sword-world-rpg-complete-edition-1-4-character-creation-part-1",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.44-48"
+        "raw/Sword World RPG - Complete Edition.pdf p.17-28"
       ],
-      "summary": "Chapter on closures and scope in JavaScriptAllonge."
+      "summary": "Character Creation part 1 summary"
     },
     {
       "category": "source",
-      "name": "copy-on-write",
+      "name": "sword-world-rpg-complete-edition-1-4-character-creation-part-2",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.158-176"
+        "raw/Sword World RPG - Complete Edition.pdf p.17-30"
       ],
-      "summary": "Chapter on copy-on-write strategies for data structures."
+      "summary": "Character Creation part 2: equipment selection, skill restrictions, and price calculation"
     },
     {
       "category": "source",
-      "name": "copyright-notice",
+      "name": "sword-world-rpg-complete-edition-10-3-surprise-attacks",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.293-297"
+        "raw/Sword World RPG - Complete Edition.pdf p.138-142"
       ],
-      "summary": "Copyright and image attribution information for JavaScript Allong\u00e9."
+      "summary": "Surprise Attack rules and check tables from the Sword World RPG Complete Edition."
     },
     {
       "category": "source",
-      "name": "forewords-to-the-first-edition",
+      "name": "sword-world-rpg-complete-edition-11-2-dark-magic-part-1",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.14-29"
+        "raw/Sword World RPG - Complete Edition.pdf p.142-148"
       ],
-      "summary": "Forewords to the first edition of JavaScript Allong\u00e9, including contributions by Michael Fogus and Matthew Knox."
+      "summary": "Source summary for Dark Magic rules and dark priest distinctions."
     },
     {
       "category": "source",
-      "name": "front-matter",
+      "name": "sword-world-rpg-complete-edition-11-2-dark-magic-part-2",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.1-13"
+        "raw/Sword World RPG - Complete Edition.pdf p.142-148"
       ],
-      "summary": "Front matter of JavaScript Allong\u00e9, including title, author, and prefaces."
+      "summary": "Special dark magic spells unique to wicked gods, covering mechanics, effects, and constraints."
     },
     {
       "category": "source",
-      "name": "garbage-garbage-everywhere",
+      "name": "sword-world-rpg-complete-edition-11-3-dragon-roar-magic",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.126-140"
+        "raw/Sword World RPG - Complete Edition.pdf p.149-153"
       ],
-      "summary": "Chapter on garbage collection and memory inefficiency in JavaScript recursion"
+      "summary": "Source summary for Dragon Roar Magic rules, including rune usage, training, and summon mechanics."
     },
     {
       "category": "source",
-      "name": "generating-iterables",
+      "name": "sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.224-245"
+        "raw/Sword World RPG - Complete Edition.pdf p.154-158"
       ],
-      "summary": "Chapter on generating iterables using JavaScript generators."
+      "summary": "Source summary of section 11.5 on requesting NPCs to use magic."
     },
     {
       "category": "source",
-      "name": "interactive-generators",
+      "name": "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.273-292"
+        "raw/Sword World RPG - Complete Edition.pdf p.159-167"
       ],
-      "summary": "Chapter on interactive generators and their use in stateful functions."
+      "summary": "Sword World RPG rules for poison, illness and infection."
     },
     {
       "category": "source",
-      "name": "interlude-the-carpenter-interviews-for-a-job",
+      "name": "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.261-272"
+        "raw/Sword World RPG - Complete Edition.pdf p.159-169"
       ],
-      "summary": "Interview scenario where the Carpenter solves a checkerboard game halting problem using cycle detection algorithms."
+      "summary": "Rules for poison, illness, and infection \u2013 part 2."
     },
     {
       "category": "source",
-      "name": "iteration-and-iterables",
+      "name": "sword-world-rpg-complete-edition-13-1-types-of-monsters",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.206-223"
+        "raw/Sword World RPG - Complete Edition.pdf p.170-172"
       ],
-      "summary": "Chapter on iteration and iterables in JavaScriptAllonge, covering functional iterators, iterator objects, and the for...of loop."
+      "summary": "A brief overview of 12 monster types and its content."
     },
     {
       "category": "source",
-      "name": "javascriptallonge",
-      "outbound_links": [
-        "as-little-as-possible-about-functions-but-no-less",
-        "closures-and-scope",
-        "copy-on-write",
-        "copyright-notice",
-        "forewords-to-the-first-edition",
-        "front-matter",
-        "garbage-garbage-everywhere",
-        "generating-iterables",
-        "interactive-generators",
-        "interlude-the-carpenter-interviews-for-a-job",
-        "iteration-and-iterables",
-        "lazy-and-eager-collections",
-        "making-data-out-of-functions",
-        "mutation",
-        "naming-functions",
-        "object-assign",
-        "picking-the-bean-choice-and-truthiness",
-        "recipes-with-basic-functions",
-        "self-similarity",
-        "that-constant-coffee-craving"
-      ],
-      "sources": [
-        "raw/javascriptallonge.pdf"
-      ],
-      "summary": "Hub page for the source 'JavaScript Allong\u00e9', summarizing the whole book and linking chapter pages."
-    },
-    {
-      "category": "source",
-      "name": "lazy-and-eager-collections",
-      "outbound_links": [
-        "generating-iterables",
-        "iteration-and-iterables"
-      ],
-      "sources": [
-        "raw/javascriptallonge.pdf p.246-260"
-      ],
-      "summary": "Chapter on lazy and eager collections in JavaScript Allong\u00e9."
-    },
-    {
-      "category": "source",
-      "name": "making-data-out-of-functions",
+      "name": "sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.177-197"
+        "raw/Sword World RPG - Complete Edition.pdf p.172-175"
       ],
-      "summary": "Chapter on creating data structures using functions and combinatory logic."
+      "summary": "How to read the monster catalog: data format, movement, attack, and special rules."
     },
     {
       "category": "source",
-      "name": "mutation",
-      "outbound_links": [],
-      "sources": [],
-      "summary": "Chapter on mutation in JavaScript, covering mutability of arrays and objects, aliases, and implications of mutation."
-    },
-    {
-      "category": "source",
-      "name": "naming-functions",
+      "name": "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.62-78"
+        "raw/Sword World RPG - Complete Edition.pdf p.222-227"
       ],
-      "summary": "Summary of the Naming Functions chapter from JavaScript Allong\u00e9."
+      "summary": "Summary of magical creature types and lore from the Sword World RPG Complete Edition, covering golems, homunculi, and other anomalous beings."
     },
     {
       "category": "source",
-      "name": "object-assign",
+      "name": "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.198-205"
+        "raw/Sword World RPG - Complete Edition.pdf p.222-229"
       ],
-      "summary": "Chapter on Object.assign function and its usage in JavaScript"
+      "summary": "Summary of magical creature rules and statistics for golems, air stalkers, and mutant monsters."
     },
     {
       "category": "source",
-      "name": "picking-the-bean-choice-and-truthiness",
+      "name": "sword-world-rpg-complete-edition-13-2-12-humans",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.94-108"
+        "raw/Sword World RPG - Complete Edition.pdf p.230-234"
       ],
-      "summary": "Chapter on choice and truthiness in JavaScript"
+      "summary": "Human and lycanthrope rules in chapter 13.2.12"
     },
     {
       "category": "source",
-      "name": "recipes-with-basic-functions",
-      "outbound_links": [
-        "as-little-as-possible-about-functions-but-no-less",
-        "closures-and-scope",
-        "javascriptallonge"
-      ],
-      "sources": [
-        "raw/javascriptallonge.pdf p.79-93"
-      ],
-      "summary": "Chapter on basic function recipes including partial application, unary, tap, maybe, once, and left-variadic functions."
-    },
-    {
-      "category": "source",
-      "name": "self-similarity",
-      "outbound_links": [],
-      "sources": [],
-      "summary": "Chapter on self-similarity and recursive algorithms in JavaScript."
-    },
-    {
-      "category": "source",
-      "name": "that-constant-coffee-craving",
+      "name": "sword-world-rpg-complete-edition-13-2-2-fae",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.49-61"
+        "raw/Sword World RPG - Complete Edition.pdf p.176-180"
       ],
-      "summary": "Chapter on naming functions and using const for bindings in JavaScript."
+      "summary": "Summary of Fae content from chapter 13.2.2."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-4-spirits",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.181-184"
+      ],
+      "summary": "Summary of spirit rules and abilities in chapter 13.2.4."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-5-titans",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.185-187"
+      ],
+      "summary": "Titan species\u2014ogres, spriggans, and Giants\u2014with size, arm count, and behavior details."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.188-198"
+      ],
+      "summary": "Summary of key creatures and behaviors described in chapter 13.2.6 of the Sword World RPG Complete Edition."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.188-198"
+      ],
+      "summary": "Mythical and magical beasts from Sword World, pages 188-198."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.188-198"
+      ],
+      "summary": "Summary of mythical and magical beasts chapter 13.2.6, covering roc, humbaba, and dragons."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-7-animals-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.199-211"
+      ],
+      "summary": "Source summary of animals section (wolves, giant rat, hanger leg)"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-7-animals-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.199-211"
+      ],
+      "summary": "Animal stat blocks and combat rules from Sword World RPG chapter 13.2.7 (part 2)."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-7-animals-part-3",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.199-211"
+      ],
+      "summary": "Chapter 13.2.7 part 3: Rules for various animals, including sand worms, giant seals, and other creatures."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-8-plants",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.212-213"
+      ],
+      "summary": "13.2.8 Plants from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-9-undead-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.214-221"
+      ],
+      "summary": "Undead types and rules from chapter 13.2.9 part 1."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-2-9-undead-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.214-221"
+      ],
+      "summary": "Undead type rules: undead knights, king, wights, and related mechanics."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.234-234"
+      ],
+      "summary": "Explains monster level scaling relative to adventurer level and encounter frequency."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.235-240"
+      ],
+      "summary": "13.6 Handling Monster Special Abilities from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.241-242"
+      ],
+      "summary": "14.1 Treasure and Rewards in Sword World from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-14-4-magical-item-list-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.242-256"
+      ],
+      "summary": "14.4 Magical Item List (part 1) from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-14-4-magical-item-list-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.242-256"
+      ],
+      "summary": "14.4 Magical Item List (part 2) from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-14-4-magical-item-list-part-3",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.242-260"
+      ],
+      "summary": "14.4 Magical Item List (part 3) from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.261-264"
+      ],
+      "summary": "16.1 Combat in Which Monsters Roll Dice from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-16-5-combat-options",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.264-268"
+      ],
+      "summary": "16.5 Combat Options from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.268-273"
+      ],
+      "summary": "16.7 Throwing Multiple Darts or Daggers from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-17-2-lost-spells",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.273-276"
+      ],
+      "summary": "17.2 Lost Spells from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.277-279"
+      ],
+      "summary": "18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-2-3-checks",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.30-33"
+      ],
+      "summary": "2.3 Checks from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-2-7-resistance-rolls",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.33-36"
+      ],
+      "summary": "Resistance rolls: life force and mental power rolls based on adventurer level and bonuses."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-3-4-movement-and-actions",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.37-42"
+      ],
+      "summary": "Movement and Actions rules covering full, normal movement, and standing still."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.43-50"
+      ],
+      "summary": "Character attack mechanics against monsters \u2013 hit checks, damage rolls, criticals, and defense interactions (pages 43\u201150)."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.50-56"
+      ],
+      "summary": "summary of section 4.9 Unconscious and Death Checks"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-1-types-of-magic",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.56-56"
+      ],
+      "summary": "Source summary for Types of Magic (p.56)."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.65-67"
+      ],
+      "summary": "How to Read Magic Details section covering magic types, rituals, lost spells, and magic detail format."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.68-82"
+      ],
+      "summary": "Ancient Magic List part 1 source summary"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.68-82"
+      ],
+      "summary": "Ancient Magic List part 2 source summary"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.68-82"
+      ],
+      "summary": "5.1.12 Ancient Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.68-83"
+      ],
+      "summary": "Source summary of Ancient Magic List part 4."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.84-95"
+      ],
+      "summary": "Spirit Magic List part 1, covering first\u2011level spirit spells and rules"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.84-95"
+      ],
+      "summary": "Spirit Magic List part 2, covering spirit-based spells and wall effects p.84\u201195"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.84-95"
+      ],
+      "summary": "Spirit Magic List part 3 (chapter 5.1.14) \u2013 key rules, prerequisites, and spell mechanics for controlling spirits and protective light spells."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf"
+      ],
+      "summary": "Source summary for Holy Magic and the Priest Skill"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.99-104"
+      ],
+      "summary": "Basic Holy Magic List part 1 \u2013 spells for priests, spell\u2011removal rules, undead damage, and vows."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.99-108"
+      ],
+      "summary": "Summary of Basic Holy Magic List part 2 (pages 99\u2011108) from Sword World RPG Complete Edition."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-4-how-to-use-magic",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.56-60"
+      ],
+      "summary": "Source summary for How to Use Magic (p.56-60)."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-1-7-magic-expansion",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.61-64"
+      ],
+      "summary": "Source summary for Magic Expansion rules (p.61-64)."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-5-3-spellsongs",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.109-113"
+      ],
+      "summary": "Spellsongs rules and effects in Sword World RPG Complete Edition"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-6-2-thief-skill",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.113-117"
+      ],
+      "summary": "Thief Skill rules covering equipment restrictions, lockpicking, trap setting and listening."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-6-4-sage-skill",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.118-119"
+      ],
+      "summary": "Summary of Sage Skill rules, including language learning limits, monster check mechanics, and other abilities."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-6-6-common-adventurer-abilities",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.120-125"
+      ],
+      "summary": "Summary of common adventurer abilities rules in Sword World RPG."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-7-2-merchant-skill",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.125-129"
+      ],
+      "summary": "Merchant skill source summary"
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-8-1-experience-points",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.130-135"
+      ],
+      "summary": "Experience Points rules for character growth and skill advancement."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.135-138"
+      ],
+      "summary": "Guidance on choosing target score vs. difficulty checks in Sword World RPG."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.8-13"
+      ],
+      "summary": "Overview of supplementary books linked to Sword World RPG, covering replay collections, scenario collections, world guide, novels, adventures, collection series, old rules, and game master screen."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-charts",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.294-311"
+      ],
+      "summary": "Charts from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-front-matter",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.1-7"
+      ],
+      "summary": "Front matter overview of Sword World RPG, covering introduction, basic RPG concepts, rulebook purpose, and structure."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.280-290"
+      ],
+      "summary": "Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf."
+    },
+    {
+      "category": "source",
+      "name": "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/Sword World RPG - Complete Edition.pdf p.280-293"
+      ],
+      "summary": "Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     }
   ]
 }

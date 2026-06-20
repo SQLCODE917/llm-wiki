@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Spirit power cannot be pinpointed unless you are very close. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0003"
+      ]
+    },
+    {
+      "bullet_text": "Spirits speak directly to the mind; when commanding, runes must be spoken aloud. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0007"
+      ]
+    },
+    {
+      "bullet_text": "Within the area of effect, resist attempts let only the caster’s own voices be heard. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0177"
+      ]
+    },
+    {
+      "bullet_text": "A will‑o‑wisp touching a shade or Darkness vanishes without emitting energy. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0073"
+      ]
+    },
+    {
+      "bullet_text": "Strong spirit power may mask weaker power, preventing detection of faint spirit influence. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of Spirit Magic List part 1, including first‑level spirit spells, rules on sensing spirit power, silent spirit rune usage, and interaction with other spirits."
+}

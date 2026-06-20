@@ -20,7 +20,7 @@ from llmwiki.domain.planning import (
     observation_report,
     page_plan_to_json,
 )
-from llmwiki.domain.planning_analysis import build_extracted_unit
+from llmwiki.domain.planning_analysis import build_extracted_unit, same_section_identity
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
 from llmwiki.pdf.pipeline import ExtractionResult
 from llmwiki.runtime.session import Session
@@ -67,11 +67,123 @@ def test_markdown_page_plan_creates_units_claims_writes_and_paths() -> None:
     assert "ExtractedUnits: 1" in report
     assert "SourceClaims: 1" in report
     assert "SourceClaimGroups: 1" in report
-    assert "SourceSummaryPlan `source-summary-plan-antikythera-mechanism`" in report
+    assert "SourceSummaryPlan selected claims" in report
     assert "`antikythera-mechanism.md`" in report
     assert "PageKind `source`" in report
     assert "plan_pages action `create`" in report
     assert "PagePlan action `create-new`" in report
+    assert "claim_id `source-claim-unit-0001-0001`" in report
+    assert "statement `The device may predict eclipses.`" in report
+    assert "span `" not in report
+    assert "source-summary-plan-antikythera-mechanism" not in report
+
+
+def test_pdf_page_plan_can_prefix_new_chunk_pages() -> None:
+    raw_source = RawSource.from_locator("Sword World RPG - Complete Edition.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0001",
+        raw_source=raw_source,
+        locator="p.1-7",
+        heading_path="Front matter",
+        text="The rulebook introduces Sword World RPG.",
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(unit,),
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+        new_page_prefix="sword-world-rpg-complete-edition",
+    )
+
+    assert [write.page_metadata.page_id for write in plan.planned_writes] == [
+        "sword-world-rpg-complete-edition-front-matter",
+        "sword-world-rpg-complete-edition",
+    ]
+    assert plan.planned_writes[0].source_summary_plan is not None
+    assert plan.planned_writes[1].source_summary_plan is None
+
+
+def test_prefixed_pdf_page_plan_does_not_match_source_prefix_terms() -> None:
+    raw_source = RawSource.from_locator("Sword World RPG - Complete Edition.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0058",
+        raw_source=raw_source,
+        locator="p.241-242",
+        heading_path="14.1 Treasure and Rewards in Sword World",
+        text="Adventurers may recover treasure and rewards from ancient ruins.",
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(unit,),
+        existing_pages={
+            "sword-world-rpg-complete-edition-1-3-skills": _page(
+                "sword-world-rpg-complete-edition-1-3-skills",
+                "Skills in Sword World RPG.",
+            )
+        },
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+        new_page_prefix="sword-world-rpg-complete-edition",
+    )
+
+    unit_write = plan.planned_writes[0]
+    assert unit_write.page_metadata.page_id == (
+        "sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world"
+    )
+    assert unit_write.action == "create-new"
+
+
+def test_section_identity_uses_slug_identity_not_shared_terms() -> None:
+    assert same_section_identity("Self-Similarity", "book-self-similarity")
+    assert not same_section_identity(
+        "1.4 Character Creation (part 2)",
+        "sword-world-rpg-complete-edition-1-4-character-creation-part-1",
+    )
+    assert not same_section_identity(
+        "14.1 Treasure and Rewards in Sword World",
+        "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg",
+    )
+
+
+def test_observation_report_can_scope_planned_targets() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    functions = build_extracted_unit(
+        unit_id="unit-0001",
+        raw_source=raw_source,
+        locator="p.1-10",
+        heading_path="Functions",
+        text="Functions are values.",
+    )
+    closures = build_extracted_unit(
+        unit_id="unit-0002",
+        raw_source=raw_source,
+        locator="p.11-20",
+        heading_path="Closures",
+        text="Closures capture lexical scope.",
+    )
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(functions, closures),
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+
+    report = observation_report(plan, target_page_ids=("functions",))
+
+    assert "Planned page targets shown: 1 of 3" in report
+    assert "`functions`" in report
+    assert "`closures`" not in report
+    assert "`book`" not in report
 
 
 def test_existing_page_match_enriches_existing_page() -> None:

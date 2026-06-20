@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Spell is a powerful version of Dispel Magic that removes all spell effects (raw/Sword World RPG - Complete Edition.pdf p.68-83)",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0041"
+      ]
+    },
+    {
+      "bullet_text": "Casting rules are unchanged, but to use the shaman skill you must avoid metal armor, free both hands, and may have active spirit power (raw/Sword World RPG - Complete Edition.pdf p.68-83)",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0059"
+      ]
+    },
+    {
+      "bullet_text": "Counters (Overpowers) include curses on the caster; all magic except non-removable types is countered (raw/Sword World RPG - Complete Edition.pdf p.68-83)",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0009"
+      ]
+    },
+    {
+      "bullet_text": "Rune Shield can be removed by Dispel Magic, but other spells are blocked by the barrier (raw/Sword World RPG - Complete Edition.pdf p.68-83)",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0013"
+      ]
+    },
+    {
+      "bullet_text": "Skill for spirit magic is the shaman skill; those with it are shamans (raw/Sword World RPG - Complete Edition.pdf p.68-83)",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0057"
+      ]
+    }
+  ],
+  "source_record_text": "Chunk covering spells and spirit magic rules from the Sword World RPG Complete Edition."
+}

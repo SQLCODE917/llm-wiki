@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The thief skill’s proficiency is measured by success rolls (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0001"
+      ]
+    },
+    {
+      "bullet_text": "Equipment must be no more than half the thief’s strength (rounded up) and must be ring mail or non‑metal; this applies to armor, weapons, and shields (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0029"
+      ]
+    },
+    {
+      "bullet_text": "Lockpicking is a non‑retriable ability: once a lock is failed, no further attempts are allowed (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0077"
+      ]
+    },
+    {
+      "bullet_text": "A thief may set traps only up to a difficulty equal to their skill level; higher‑level traps cannot be set (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0127"
+      ]
+    },
+    {
+      "bullet_text": "When hearing a sound, a thief can make a listen check using thief skill level plus intelligence bonus to learn details about the source (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0060"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the Thief Skill rules from Sword World RPG Complete Edition, covering equipment restrictions, lockpicking, trap setting, and listening. (raw/Sword World RPG - Complete Edition.pdf p.113‑117)"
+}

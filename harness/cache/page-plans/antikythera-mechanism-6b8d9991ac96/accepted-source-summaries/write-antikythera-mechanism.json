@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The mechanism is an ancient Greek hand‑powered orrery (raw/antikythera-mechanism.md)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0001"
+      ]
+    },
+    {
+      "bullet_text": "By turning a crank it displays the Sun, Moon, phases, eclipses, and Olympic cycle (raw/antikythera-mechanism.md)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0004"
+      ]
+    },
+    {
+      "bullet_text": "Its gear precision implies a sophisticated workshop tradition (raw/antikythera-mechanism.md)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0007"
+      ]
+    },
+    {
+      "bullet_text": "Inscription evidence suggests it may have originated in Corinth or Syracuse (raw/antikythera-mechanism.md)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0010"
+      ]
+    },
+    {
+      "bullet_text": "Research used micro‑focus X‑ray tomography to read hidden inscriptions (raw/antikythera-mechanism.md)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0009"
+      ]
+    }
+  ],
+  "source_record_text": "An ancient Greek hand‑powered device from ~150‑100 BC that tracks celestial bodies and eclipses."
+}

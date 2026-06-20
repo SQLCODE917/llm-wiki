@@ -10,6 +10,7 @@ from pathlib import Path
 from llmwiki.domain.objects import (
     ExtractedUnit,
     PagePlan,
+    PlannedPageWrite,
     RawSource,
     Schema,
     SourceBundle,
@@ -46,6 +47,7 @@ def build_markdown_page_plan(
     today: str,
     schema: Schema | None = None,
     source_plan: SourcePlan | None = None,
+    new_page_prefix: str | None = None,
 ) -> PagePlan:
     unit = build_extracted_unit(
         unit_id="unit-0001",
@@ -65,6 +67,7 @@ def build_markdown_page_plan(
         schema=schema,
         source_plan=source_plan,
         include_markdown_subject=True,
+        new_page_prefix=new_page_prefix,
     )
 
 
@@ -80,6 +83,7 @@ def build_page_plan(
     include_markdown_subject: bool = False,
     schema: Schema | None = None,
     source_plan: SourcePlan | None = None,
+    new_page_prefix: str | None = None,
 ) -> PagePlan:
     active_schema = schema or Schema()
     source_claim_items = source_claims(extracted_units, active_schema)
@@ -103,6 +107,7 @@ def build_page_plan(
         source_plan=source_plan,
         source_claims=source_claim_items,
         source_claim_groups=source_claim_group_items,
+        new_page_prefix=new_page_prefix,
     )
     return PagePlan(
         plan_id=plan_id,
@@ -124,10 +129,11 @@ def page_plan_to_json(plan: PagePlan) -> str:
     return json.dumps(asdict(plan), indent=2, ensure_ascii=False, sort_keys=True)
 
 
-def observation_report(plan: PagePlan) -> str:
-    enriched = sum(1 for write in plan.planned_writes if write.action == "enrich-existing")
-    created = sum(1 for write in plan.planned_writes if write.action == "create-new")
-    deferred = sum(1 for write in plan.planned_writes if write.action == "defer")
+def observation_report(plan: PagePlan, target_page_ids: tuple[str, ...] | None = None) -> str:
+    visible_writes = _visible_writes(plan, target_page_ids)
+    enriched = sum(1 for write in visible_writes if write.action == "enrich-existing")
+    created = sum(1 for write in visible_writes if write.action == "create-new")
+    deferred = sum(1 for write in visible_writes if write.action == "defer")
     contradictions = sum(
         1 for comparison in plan.claim_comparisons if comparison.relation == "contradiction"
     )
@@ -140,20 +146,34 @@ def observation_report(plan: PagePlan) -> str:
         f"{_source_summary_plan_label(write, source_claims)}"
         f"sources `{', '.join(write.page_metadata.sources)}` | "
         f"path `{write.projection.page_path if write.projection else ''}`"
-        for write in plan.planned_writes
+        for write in visible_writes
     )
+    if not paths:
+        paths = "- None."
     return (
         "# Ingest Observation Report\n\n"
         f"- ExtractedUnits: {len(plan.extracted_units)}\n"
         f"- SourceClaims: {len(plan.source_claims)}\n"
         f"- SourceClaimGroups: {len(plan.source_claim_groups)}\n"
         f"- TopicClusters: {len(plan.topic_clusters)}\n"
+        f"- Planned page targets shown: {len(visible_writes)} of {len(plan.planned_writes)}\n"
         f"- Pages enriched: {enriched}\n"
         f"- Pages created: {created}\n"
         f"- Contradictions: {contradictions}\n"
         f"- Deferrals: {deferred}\n\n"
         "## Planned Page Targets\n\n"
         f"{paths}\n"
+    )
+
+
+def _visible_writes(
+    plan: PagePlan, target_page_ids: tuple[str, ...] | None
+) -> tuple[PlannedPageWrite, ...]:
+    if target_page_ids is None:
+        return plan.planned_writes
+    target_set = frozenset(target_page_ids)
+    return tuple(
+        write for write in plan.planned_writes if write.page_metadata.page_id in target_set
     )
 
 
@@ -176,14 +196,41 @@ def _source_summary_plan_label(write: object, source_claims: dict[str, SourceCla
     summary_plan = getattr(write, "source_summary_plan", None)
     if summary_plan is None:
         return ""
+    contract = getattr(write, "resolved_page_body_contract", None)
+    citations = ", ".join(getattr(contract, "required_source_citations", ()))
+    uncertainty_terms = ", ".join(getattr(contract, "required_uncertainty_terms", ()))
+    constraints = []
+    if citations:
+        constraints.append(f"put citation `{citations}` in every bullet_text")
+    if uncertainty_terms:
+        constraints.append(f"include one uncertainty term `{uncertainty_terms}`")
+    max_words = getattr(contract, "max_words", 0) if contract is not None else 0
+    if max_words:
+        constraints.append(f"stay under {max_words} words")
+    constraint_text = "; ".join(constraints) or "use source-summary fields"
     claims = "; ".join(
         _source_claim_label(source_claims[claim_id])
         for claim_id in summary_plan.selected_source_claims
         if claim_id in source_claims
     )
-    return f"SourceSummaryPlan `{summary_plan.source_summary_plan_id}` selected `{claims}` | "
+    return (
+        "SourceSummaryPlan selected claims "
+        "(use claim_id only in covered_source_claims): "
+        f"{claims} | constraints: {constraint_text} | "
+    )
 
 
 def _source_claim_label(claim: SourceClaim) -> str:
     roles = ", ".join(claim.claim_role_tags) or "unlabeled"
-    return f"{claim.source_claim_id} [{roles}] {claim.statement}"
+    terms = ", ".join(claim.subject_terms) or "no subject terms"
+    return (
+        f"claim_id `{claim.source_claim_id}` [{roles}] terms `{terms}` "
+        f"statement `{_compact_statement(claim.statement)}`"
+    )
+
+
+def _compact_statement(statement: str) -> str:
+    words = statement.split()
+    if len(words) <= 28:
+        return " ".join(words)
+    return " ".join(words[:28]) + "..."

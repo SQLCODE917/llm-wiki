@@ -20,7 +20,8 @@ from llmwiki.store import WikiStore, WikiStoreError
 
 class SourceSummaryBulletParams(BaseModel):
     bullet_text: str = Field(
-        description="One concise paraphrased claim bullet with required source citation."
+        description="One short paraphrased claim bullet with required source citation. "
+        "Do not copy eight or more consecutive source words."
     )
     covered_source_claims: list[str] = Field(
         description="SourceClaim ids from the SourceSummaryPlan covered by this bullet."
@@ -29,7 +30,8 @@ class SourceSummaryBulletParams(BaseModel):
 
 class PlannedWriteSourceSummaryParams(BaseModel):
     source_record_text: str = Field(
-        description="Short source record paragraph. Do not include internal SourceClaim ids."
+        description="One or two short paraphrased source record sentences. "
+        "Do not include internal SourceClaim ids or copied source paragraphs."
     )
     claim_bullets: list[SourceSummaryBulletParams] = Field(
         description="Three to five concise claim bullets covering every selected SourceClaim."

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Dragon roar magic uses runes worshiped by dragon guardians rather than gods (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0004"
+      ]
+    },
+    {
+      "bullet_text": "Through repeated training, users can master the physical, mental, and magical transcendental abilities of dragons (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0014"
+      ]
+    },
+    {
+      "bullet_text": "Those who believe in dragons aim to be reborn as dragons (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0011"
+      ]
+    },
+    {
+      "bullet_text": "Using Pharis's holy magic Banish may drive summoned creatures back to their origin (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0041"
+      ]
+    },
+    {
+      "bullet_text": "Even if Silence or Mute spirit magic is cast, you can still use dragon roar magic (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0003"
+      ]
+    }
+  ],
+  "source_record_text": "Dragon Roar Magic is a rune-based system for dragon worshipers, offering transcendental abilities and summon spells."
+}

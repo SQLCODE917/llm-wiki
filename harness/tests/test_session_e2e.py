@@ -345,6 +345,61 @@ class TestIngest:
         assert result.output == "ok"
         assert store.list_pages() == ["moon"]
 
+    async def test_source_summary_validation_error_recovers(
+        self, store: WikiStore, paths: WikiPaths, source: str
+    ) -> None:
+        script = [
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args=_source_summary_write_args(
+                        claim_text="The Moon formed 4.5 billion years ago from a giant impact."
+                    ),
+                )
+            ],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args=_source_summary_write_args(
+                        claim_text="A compact lunar-origin note keeps the impact claim."
+                    ),
+                )
+            ],
+            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
+        ]
+        result = await _session(store, script, paths).ingest(source)
+
+        assert result.output == "ok"
+        assert store.list_pages() == ["moon"]
+        assert "source-claim-unit" not in store.read_page("moon")
+
+    async def test_markdown_ingest_without_successful_write_is_not_logged(
+        self, store: WikiStore, paths: WikiPaths, source: str
+    ) -> None:
+        script = [
+            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
+            [ToolCall(tool="search_wiki", args={"query": "moon"})],
+            [_plan_page_call("moon")],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args=_source_summary_write_args(
+                        claim_text="The Moon formed 4.5 billion years ago from a giant impact."
+                    ),
+                )
+            ],
+            [ToolCall(tool="finish_ingest", args={"report": "claimed done"})],
+        ]
+
+        with pytest.raises(RuntimeError, match="successful page writes"):
+            await _session(store, script, paths).ingest(source)
+
+        assert store.list_pages() == []
+        assert "claimed done" not in paths.log_path.read_text(encoding="utf-8")
+
     async def test_rewrite_without_read_is_blocked_then_recovers(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:

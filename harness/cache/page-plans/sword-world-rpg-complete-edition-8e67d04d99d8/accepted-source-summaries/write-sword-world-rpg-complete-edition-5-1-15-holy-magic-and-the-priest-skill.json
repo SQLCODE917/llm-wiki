@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The skill for using holy magic is called the **priest skill**, and those who have it are called **priests** (raw/Sword World RPG - Complete Edition.pdf p.96-98)",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0045"
+      ]
+    },
+    {
+      "bullet_text": "Priests must choose only **one god** to worship; multiple gods are not allowed (raw/Sword World RPG - Complete Edition.pdf p.96-98)",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0057"
+      ]
+    },
+    {
+      "bullet_text": "Each holy magic has **special spells** that can only be used by believers of a specific god (raw/Sword World RPG - Complete Edition.pdf p.96-98)",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0043"
+      ]
+    },
+    {
+      "bullet_text": "If a priest attempts to use magic **far removed** from their god’s will, it **may** fail (raw/Sword World RPG - Complete Edition.pdf p.96-98)",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0054"
+      ]
+    },
+    {
+      "bullet_text": "The priest skill can be **confiscated** when a character repeatedly commits unjust acts or shows no remorse (raw/Sword World RPG - Complete Edition.pdf p.96-98)",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0096"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains the priest skill for holy magic, its requirements, special god‑specific spells, faith dependence, and disciplinary rules."
+}

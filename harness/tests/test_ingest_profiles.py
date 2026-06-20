@@ -450,6 +450,42 @@ class TestProfiledWorkflows:
         assert "Only links [[alpha]]." in hub
         assert "## Page-Map Navigation" in hub
         assert "[[beta]]" in hub
+        assert "[[gamma]]" in hub
+
+    def test_pdf_integrate_renders_source_summary_fields_as_hub_body(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="Sword World RPG - Complete Edition.pdf",
+            required_link_targets=("alpha", "beta", "gamma"),
+            min_required_links=2,
+        )
+        _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Hub summary.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub summary.",
+            source_record_text="Short source record.",
+            claim_bullets=[
+                {
+                    "bullet_text": (
+                        "A compact supported claim. "
+                        "(raw/Sword World RPG - Complete Edition.pdf)"
+                    ),
+                    "covered_source_claims": ["source-claim-unit-0001-0001"],
+                }
+            ],
+            sources=["Sword World RPG - Complete Edition.pdf"],
+        )
+
+        hub = store.read_page("sword-world-rpg-complete-edition")
+        assert "## Source record" in hub
+        assert "A compact supported claim." in hub
+        assert "## Page-Map Navigation" in hub
+        assert "[[alpha]]" in hub
+        assert "[[beta]]" in hub
+        assert "[[gamma]]" in hub
 
     def test_pdf_integrate_does_not_add_navigation_when_linked(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(

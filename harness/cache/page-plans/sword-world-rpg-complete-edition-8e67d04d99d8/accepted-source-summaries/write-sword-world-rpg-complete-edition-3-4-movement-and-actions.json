@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Movement restricts actions; you cannot wield weapons or cast spells while running at full speed. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0005"
+      ]
+    },
+    {
+      "bullet_text": "You can advance farther, but the restrictions on your actions grow greater with distance. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0007"
+      ]
+    },
+    {
+      "bullet_text": "Full movement means the character runs without looking aside, limiting other actions. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0045"
+      ]
+    },
+    {
+      "bullet_text": "The following actions may be possible during full movement, such as readying weapons or dropping items. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0042"
+      ]
+    },
+    {
+      "bullet_text": "Movement is also restricted when using projectiles, preventing attacks while moving. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0109"
+      ]
+    }
+  ],
+  "source_record_text": "This section explains movement rules, covering full, normal movement, and standing still options, and how movement limits actions."
+}

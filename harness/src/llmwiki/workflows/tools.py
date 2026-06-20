@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 
+from dataclasses import replace
 from typing import Literal
 
 from forge.core.workflow import ToolDef, ToolSpec
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, ValidationError, field_validator
 
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.ingest_route_plan import IngestRoutePlanError, IngestRoutePlanState
@@ -222,7 +223,19 @@ def write_page_tool(
     """
 
     def _write_page(**kwargs: object) -> str:
-        params = WritePageParams(**kwargs)  # type: ignore[arg-type]
+        try:
+            params = WritePageParams(**kwargs)  # type: ignore[arg-type]
+        except ValidationError as exc:
+            if not recoverable_errors:
+                raise
+            return _recoverable_write_error(
+                "write_page arguments did not match the required schema:\n"
+                f"{exc}\n"
+                "For source-summary writes, each claim_bullets item must use "
+                "`bullet_text` and `covered_source_claims`. "
+                "`covered_source_claims` must contain the selected claim_id values "
+                "from the SourceSummaryPlan."
+            )
         planned_write: PlannedPageWrite | None = None
         if ingest_route_plan_state is not None:
             try:
@@ -280,30 +293,46 @@ def write_page_tool(
             )
             if collision is not None:
                 raise WikiStoreError(collision.render_for_tool())
-        body, source_summary_draft = _page_body_from_write_params(
-            store,
-            params,
-            planned_write,
-        )
+        try:
+            body, source_summary_draft = _page_body_from_write_params(
+                store,
+                params,
+                planned_write,
+            )
+        except WikiStoreError as exc:
+            if not recoverable_errors:
+                raise
+            return _recoverable_write_error(str(exc))
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
         resolver = store.source_resolver() if policy.enabled else None
         evidence = policy.check_page(params.page_id, body, inventory, resolver)
         if not evidence.allowed:
-            raise WikiStoreError(
+            error = (
                 evidence.render_for_tool(params.page_id)
                 + "\nCorrect the citation path, range, or cited raw source before retrying."
             )
-        page = WikiPage(
-            page_metadata=PageMetadata(
+            if not recoverable_errors:
+                raise WikiStoreError(error)
+            return _recoverable_write_error(error)
+        metadata = (
+            replace(
+                planned_write.page_metadata,
+                summary=_planned_metadata_summary(
+                    params.summary, planned_write.page_metadata.summary
+                ),
+                updated=today,
+            )
+            if planned_write is not None
+            else PageMetadata(
                 page_id=params.page_id,
                 page_kind=params.page_kind,
                 summary=params.summary,
                 sources=tuple(params.sources),
                 updated=today,
-            ),
-            page_body=body,
+            )
         )
+        page = WikiPage(page_metadata=metadata, page_body=body)
         store.write_page(page)
         if planned_write is not None and source_summary_draft is not None:
             write_source_summary_draft_artifact(store, planned_write, source_summary_draft)
@@ -327,6 +356,12 @@ def write_page_tool(
     )
 
 
+def _planned_metadata_summary(model_summary: str, planned_summary: str) -> str:
+    if "…" in model_summary or "..." in model_summary:
+        return planned_summary
+    return model_summary
+
+
 def finish_tool(name: str, description: str) -> ToolDef:
     def _finish(**kwargs: object) -> str:
         params = FinishParams(**kwargs)  # type: ignore[arg-type]
@@ -344,6 +379,19 @@ def _active_plan_targets(state: IngestRoutePlanState) -> str:
     return ", ".join(
         f"{page.metadata.page_id} (PageKind {page.metadata.page_kind})"
         for page in state.active_plan.planned_pages
+    )
+
+
+def _recoverable_write_error(detail: str) -> str:
+    return (
+        "No page was written. write_page rejected the draft:\n"
+        f"{detail}\n"
+        "For source-summary PlannedPageWrites, the harness renders the page from "
+        "source_record_text and claim_bullets; any page_body argument is ignored. "
+        "If the finding names CopiedSourcePhrase, rewrite the claim_bullets "
+        "bullet_text values themselves as shorter paraphrases.\n"
+        "Call write_page again with a corrected full replacement draft. "
+        "You must successfully write the authorized page before finishing."
     )
 
 

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Common adventurer abilities are defined as any ability an adventurer can acquire, with baseline checks based on adventurer level plus relevant ability bonus. (raw/Sword World RPG - Complete Edition.pdf p.120-125) may",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0014"
+      ]
+    },
+    {
+      "bullet_text": "The player must make a success roll using adventurer level + agility bonus as the baseline; failure may cause drowning. (raw/Sword World RPG - Complete Edition.pdf p.120-125) might",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0040"
+      ]
+    },
+    {
+      "bullet_text": "An adventurer can hold breath underwater for rounds equal to their life force; breathing beyond that may lead to drowning. (raw/Sword World RPG - Complete Edition.pdf p.120-125) may",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0049"
+      ]
+    },
+    {
+      "bullet_text": "Table 6‑1 defines climb by skill: with rope, climb with thief skill almost always succeeds; with common adventurer ability requires a success roll and may fail. (raw/Sword World RPG - Complete Edition.pdf p.120-125) might",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0086"
+      ]
+    },
+    {
+      "bullet_text": "Tables 6‑3 and 6‑4 provide long and high jump target scores, factoring in skill level, armor, and environmental conditions; successful rolls are based on adventurer or thief skill plus agility bonus. (raw/Sword World RPG - Complete Edition.pdf p.120-125) may",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0144"
+      ]
+    }
+  ],
+  "source_record_text": "These rules cover baseline checks, limitations, and tables for common adventurer abilities such as riding, swimming, and climbing."
+}

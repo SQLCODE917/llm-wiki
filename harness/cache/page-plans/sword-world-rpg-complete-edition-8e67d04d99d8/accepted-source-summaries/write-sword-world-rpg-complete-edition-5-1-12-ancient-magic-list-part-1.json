@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Unlock: Instantly opens non‑magical locks like doors and lids as if the right key were used. (raw/Sword World RPG - Complete Edition.pdf p.68-82)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0036"
+      ]
+    },
+    {
+      "bullet_text": "Energy Bolt: Fires a pure‑energy arrow that never misses, dealing strike power 10. (raw/Sword World RPG - Complete Edition.pdf p.68-82)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0171"
+      ]
+    },
+    {
+      "bullet_text": "Enchant Weapon: Adds +5 to a weapon’s strike power; on a creature, bare‑handed attacks gain +5. (raw/Sword World RPG - Complete Edition.pdf p.68-82)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0074"
+      ]
+    },
+    {
+      "bullet_text": "Counterspell: Boosts mental power resistance by +2 for any resistance roll. (raw/Sword World RPG - Complete Edition.pdf p.68-82)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0187"
+      ]
+    },
+    {
+      "bullet_text": "Sense Magic: Reveals invisible magical auras; cannot discern exact powers (possible). (raw/Sword World RPG - Complete Edition.pdf p.68-82)",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0042"
+      ]
+    }
+  ],
+  "source_record_text": "Ancient Magic List part 1 lists first‑level spells such as Unlock, Energy Bolt, Enchant Weapon, Counterspell, and Sense Magic, with their costs and effects."
+}

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Monsters rarely roll dice; the game master usually handles dice in combat (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0001"
+      ]
+    },
+    {
+      "bullet_text": "Attack rolls use monster attack points -7 as difficulty (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0012"
+      ]
+    },
+    {
+      "bullet_text": "Evasion rolls use monster evasion points -7 as difficulty (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0020"
+      ]
+    },
+    {
+      "bullet_text": "Game master should be considered first to roll dice (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0022"
+      ]
+    },
+    {
+      "bullet_text": "Some game masters may also choose to roll dice themselves (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0003"
+      ]
+    }
+  ],
+  "source_record_text": "Section 16.1 of Sword World RPG explains how monsters can roll dice during combat, outlining attack and evasion mechanics with a base value of -7 and noting the game master’s role."
+}

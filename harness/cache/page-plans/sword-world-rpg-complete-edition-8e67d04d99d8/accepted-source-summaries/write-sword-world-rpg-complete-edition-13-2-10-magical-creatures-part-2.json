@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Golems are generally slow‑moving creatures, yet these have relatively flexible and agile bodies among them. (raw/Sword World RPG - Complete Edition.pdf p.222-229) may",
+      "covered_source_claims": [
+        "source-claim-unit-0054-0045"
+      ]
+    },
+    {
+      "bullet_text": "These creatures are beasts of the daemon world, created by daemons. (raw/Sword World RPG - Complete Edition.pdf p.222-229) may",
+      "covered_source_claims": [
+        "source-claim-unit-0054-0067"
+      ]
+    },
+    {
+      "bullet_text": "Rarity 12, Agility 12, Movement Speed 13, Frequency Rare, Intellect Obeys Commands, Reaction Command‑based, Attack Points Arms 15 (8), Strike 16. (raw/Sword World RPG - Complete Edition.pdf p.222-229)",
+      "covered_source_claims": [
+        "source-claim-unit-0054-0040"
+      ]
+    }
+  ],
+  "source_record_text": "This source contains rules for magical creatures, including golems, air stalkers, mutant monsters, and daemon creatures, with detailed stat blocks and abilities."
+}

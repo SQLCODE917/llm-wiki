@@ -11,6 +11,17 @@ from llmwiki.domain.source_summary import SourceSummaryDraft, SourceSummaryPlan
 _WORD_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)?", re.IGNORECASE)
 _BULLET_RE = re.compile(r"^\s*[-*]\s+\S+", re.MULTILINE)
 _COPIED_NGRAM_SIZE = 8
+_CITATION_TRANSLATION = str.maketrans(
+    {
+        "\u00a0": " ",
+        "\u2010": "-",
+        "\u2011": "-",
+        "\u2012": "-",
+        "\u2013": "-",
+        "\u2014": "-",
+        "\u2212": "-",
+    }
+)
 _UNCERTAINTY_PATTERNS = {
     "may": r"\bmay\b",
     "might": r"\bmight\b",
@@ -29,6 +40,7 @@ def validate_page_body(
     source_text: str = "",
 ) -> tuple[PageBodyFinding, ...]:
     findings: list[PageBodyFinding] = []
+    findings.extend(_placeholder_findings(page_body))
     findings.extend(_section_findings(page_body, contract))
     findings.extend(_markdown_shape_findings(page_body, contract))
     findings.extend(_grounding_findings(page_body, contract))
@@ -116,6 +128,17 @@ def _section_findings(
     )
 
 
+def _placeholder_findings(page_body: str) -> tuple[PageBodyFinding, ...]:
+    if "…" not in page_body and "..." not in page_body:
+        return ()
+    return (
+        PageBodyFinding(
+            "PlaceholderText",
+            "remove ellipses or truncation placeholders from PageBody prose",
+        ),
+    )
+
+
 def _markdown_shape_findings(
     page_body: str, contract: ResolvedPageBodyContract
 ) -> tuple[PageBodyFinding, ...]:
@@ -137,11 +160,12 @@ def _grounding_findings(
     page_body: str, contract: ResolvedPageBodyContract
 ) -> tuple[PageBodyFinding, ...]:
     findings: list[PageBodyFinding] = []
+    normalized_body = _normalize_citation_text(page_body)
     for page_id in contract.required_link_page_ids:
         if f"[[{page_id}]]" not in page_body:
             findings.append(PageBodyFinding("RequiredLinkPageIds", f"missing [[{page_id}]]"))
     for citation in contract.required_source_citations:
-        if citation not in page_body:
+        if _normalize_citation_text(citation) not in normalized_body:
             findings.append(PageBodyFinding("RequiredSourceCitations", f"missing {citation}"))
     if contract.required_uncertainty_terms and not _preserves_uncertainty(
         page_body, contract.required_uncertainty_terms
@@ -150,7 +174,8 @@ def _grounding_findings(
         findings.append(
             PageBodyFinding(
                 "RequiredUncertaintyTerms",
-                f"missing at least one source uncertainty term: {terms}",
+                "source_record_text or one bullet_text must include at least one "
+                f"literal source uncertainty term: {terms}",
             )
         )
     return tuple(findings)
@@ -232,13 +257,18 @@ def _source_summary_bullet_citation_findings(
 ) -> tuple[PageBodyFinding, ...]:
     if not plan.required_source_citations:
         return ()
+    normalized_citations = tuple(
+        _normalize_citation_text(citation) for citation in plan.required_source_citations
+    )
     findings: list[PageBodyFinding] = []
     for index, bullet in enumerate(draft.claim_bullets, start=1):
-        if not any(citation in bullet.bullet_text for citation in plan.required_source_citations):
+        normalized_bullet = _normalize_citation_text(bullet.bullet_text)
+        if not any(citation in normalized_bullet for citation in normalized_citations):
+            required = plan.required_source_citations[0]
             findings.append(
                 PageBodyFinding(
                     "SourceSummaryBulletCitation",
-                    f"bullet {index} must include one RequiredSourceCitation",
+                    f"bullet {index} bullet_text must include literal citation {required}",
                 )
             )
     return tuple(findings)
@@ -276,6 +306,10 @@ def _preserves_uncertainty(page_body: str, terms: tuple[str, ...]) -> bool:
 
 def _words(text: str) -> tuple[str, ...]:
     return tuple(match.group(0).lower() for match in _WORD_RE.finditer(text))
+
+
+def _normalize_citation_text(text: str) -> str:
+    return " ".join(text.translate(_CITATION_TRANSLATION).split())
 
 
 def _ngrams(words: tuple[str, ...], size: int) -> tuple[tuple[str, ...], ...]:

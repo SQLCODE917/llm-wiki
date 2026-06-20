@@ -209,9 +209,15 @@ def claim_comparisons(
 
 
 def same_section_identity(heading: str, page_id: str) -> bool:
-    heading_terms = set(tokens(heading.replace("-", " ")))
-    page_terms = set(tokens(page_id.replace("-", " ")))
-    return bool(heading_terms) and len(heading_terms & page_terms) >= min(2, len(heading_terms))
+    heading_slug = slugify(heading)
+    page_slug = slugify(page_id)
+    if not heading_slug or not page_slug:
+        return False
+    return (
+        heading_slug == page_slug
+        or page_slug.endswith(f"-{heading_slug}")
+        or heading_slug.endswith(f"-{page_slug}")
+    )
 
 
 def unit_match(match: WikiMatch, unit_id: str) -> bool:

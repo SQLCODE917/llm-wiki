@@ -44,6 +44,7 @@ def planned_writes(
     source_plan: SourcePlan | None = None,
     source_claims: tuple[SourceClaim, ...] = (),
     source_claim_groups: tuple[SourceClaimGroup, ...] = (),
+    new_page_prefix: str | None = None,
 ) -> tuple[PlannedPageWrite, ...]:
     active_schema = schema or Schema()
     selections = source_plan.page_body_contract_selections if source_plan is not None else ()
@@ -62,6 +63,7 @@ def planned_writes(
                 selections,
                 source_claims,
                 source_claim_groups,
+                new_page_prefix,
             )
             for unit in extracted_units
         )
@@ -76,6 +78,7 @@ def planned_writes(
         selections,
         source_claims,
         source_claim_groups,
+        source_summary_enabled=include_markdown_subject,
     )
     writes.append(hub)
     return tuple(writes)
@@ -93,8 +96,9 @@ def _planned_write_for_unit(
     contract_selections: tuple[SourcePlanContractSelection, ...],
     source_claims: tuple[SourceClaim, ...],
     source_claim_groups: tuple[SourceClaimGroup, ...],
+    new_page_prefix: str | None,
 ) -> PlannedPageWrite:
-    page_id = _target_page_id(unit, existing_pages)
+    page_id = _target_page_id(unit, existing_pages, new_page_prefix)
     metadata = PageMetadata(
         page_id=page_id,
         page_kind="source",
@@ -135,6 +139,7 @@ def _hub_write(
     contract_selections: tuple[SourcePlanContractSelection, ...],
     source_claims: tuple[SourceClaim, ...],
     source_claim_groups: tuple[SourceClaimGroup, ...],
+    source_summary_enabled: bool,
 ) -> PlannedPageWrite:
     page_id = _hub_page_id(raw_source)
     metadata = PageMetadata(
@@ -161,6 +166,7 @@ def _hub_write(
         ),
         source_claims=source_claims,
         source_claim_groups=source_claim_groups,
+        source_summary_enabled=source_summary_enabled,
     )
 
 
@@ -179,6 +185,7 @@ def _planned_write(
     required_uncertainty_terms: tuple[str, ...],
     source_claims: tuple[SourceClaim, ...],
     source_claim_groups: tuple[SourceClaimGroup, ...],
+    source_summary_enabled: bool = True,
 ) -> PlannedPageWrite:
     resolved_contract = _resolved_page_body_contract(
         schema=schema,
@@ -200,11 +207,15 @@ def _planned_write(
         projection=ProjectionMetadata(metadata, str(structure.render_path(metadata))),
         existing_page_id=metadata.page_id if action == "enrich-existing" else "",
         resolved_page_body_contract=resolved_contract,
-        source_summary_plan=source_summary_plan(
-            page_id=metadata.page_id,
-            contract=resolved_contract,
-            claims=source_claims,
-            groups=source_claim_groups,
+        source_summary_plan=(
+            source_summary_plan(
+                page_id=metadata.page_id,
+                contract=resolved_contract,
+                claims=source_claims,
+                groups=source_claim_groups,
+            )
+            if source_summary_enabled
+            else None
         ),
     )
 
@@ -252,14 +263,29 @@ def _required_link_page_ids(page_id: str, wiki_matches: tuple[WikiMatch, ...]) -
     return tuple(dict.fromkeys(match.page_id for match in wiki_matches if match.page_id != page_id))
 
 
-def _target_page_id(unit: ExtractedUnit, existing_pages: dict[str, str]) -> str:
+def _target_page_id(
+    unit: ExtractedUnit, existing_pages: dict[str, str], new_page_prefix: str | None
+) -> str:
     default_page_id = slugify(unit.heading_path)
     if default_page_id in existing_pages:
         return default_page_id
+    if new_page_prefix is None:
+        for page_id in existing_pages:
+            if same_section_identity(unit.heading_path, page_id):
+                return page_id
+    if new_page_prefix is None:
+        return default_page_id
+    if default_page_id == new_page_prefix or default_page_id.startswith(f"{new_page_prefix}-"):
+        return default_page_id
+    prefixed_page_id = f"{new_page_prefix}-{default_page_id}"
+    if prefixed_page_id in existing_pages:
+        return prefixed_page_id
     for page_id in existing_pages:
-        if same_section_identity(unit.heading_path, page_id):
+        if page_id.startswith(f"{new_page_prefix}-") and same_section_identity(
+            unit.heading_path, page_id.removeprefix(f"{new_page_prefix}-")
+        ):
             return page_id
-    return default_page_id
+    return prefixed_page_id
 
 
 def _hub_page_id(raw_source: RawSource) -> str:

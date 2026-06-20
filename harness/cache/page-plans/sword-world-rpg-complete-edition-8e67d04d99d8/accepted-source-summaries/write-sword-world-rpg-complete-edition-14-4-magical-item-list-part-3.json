@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Upon closer examination, a request to transport an item may turn out to be stolen goods and must be returned to its rightful owner (raw/Sword World RPG - Complete Edition.pdf p.242-260).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0196"
+      ]
+    },
+    {
+      "bullet_text": "Otherwise, adventurers with money could buy up this item, potentially affecting game balance (raw/Sword World RPG - Complete Edition.pdf p.242-260).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0149"
+      ]
+    },
+    {
+      "bullet_text": "Even if the game master approves the trade of magical items, this item should be considered in short supply, nearly impossible to find, and not for trade (raw/Sword World RPG - Complete Edition.pdf p.242-260).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0148"
+      ]
+    }
+  ],
+  "source_record_text": "This chunk lists magical items such as Guard Glove, Candlestick of Infinite (Un)Luck, and others, and discusses rules for transporting, buying, and trading magical items."
+}

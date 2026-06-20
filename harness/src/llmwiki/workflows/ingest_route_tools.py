@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
-from typing import Literal
+from typing import Literal, cast
 
 from forge.core.workflow import ToolDef, ToolSpec
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, ValidationError, field_validator
 
 from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlan,
@@ -67,7 +67,19 @@ class PlanPagesParams(BaseModel):
 
 def plan_pages_tool(state: IngestRoutePlanState, recoverable_errors: bool = False) -> ToolDef:
     def _plan_pages(**kwargs: object) -> str:
-        params = PlanPagesParams(**kwargs)  # type: ignore[arg-type]
+        kwargs = _rescued_plan_pages_kwargs(kwargs, state)
+        try:
+            params = PlanPagesParams(**kwargs)  # type: ignore[arg-type]
+        except ValidationError as exc:
+            if not recoverable_errors:
+                raise
+            return _recoverable_plan_error(
+                "plan_pages arguments did not match the required schema:\n"
+                f"{exc}\n"
+                "Each planned page must include metadata {page_id, page_kind, "
+                "summary, sources}, role, action, source_scope, confidence, "
+                "and rationale."
+            )
         plan = IngestRoutePlan(
             source_locator=state.context.source_locator,
             scope=state.context.scope,
@@ -88,11 +100,11 @@ def plan_pages_tool(state: IngestRoutePlanState, recoverable_errors: bool = Fals
         except IngestRoutePlanError as exc:
             if not recoverable_errors:
                 raise
-            return (
-                "No ingest route plan was accepted. The deterministic PagePlan "
-                f"rejected plan_pages: {exc} Submit a new plan using only "
-                "authorized PageIds, PageKinds, and plan_pages actions, or record "
-                "unsupported material as a route gap."
+            return _recoverable_plan_error(
+                "The deterministic PagePlan rejected plan_pages: "
+                f"{exc} Submit a new plan using only authorized PageIds, "
+                "PageKinds, and plan_pages actions, or record unsupported "
+                "material as a route gap."
             )
         gap_lines = "\n".join(f"- {gap.summary}" for gap in plan.gaps)
         return (
@@ -113,6 +125,100 @@ def plan_pages_tool(state: IngestRoutePlanState, recoverable_errors: bool = Fals
         ),
         callable=_plan_pages,
     )
+
+
+def _recoverable_plan_error(detail: str) -> str:
+    return (
+        "No ingest route plan was accepted.\n"
+        f"{detail}\n"
+        "Call plan_pages again with a corrected full replacement plan before "
+        "calling write_page."
+    )
+
+
+def _rescued_plan_pages_kwargs(
+    kwargs: dict[str, object],
+    state: IngestRoutePlanState,
+) -> dict[str, object]:
+    if state.context.page_plan is None:
+        return kwargs
+    planned_pages = kwargs.get("planned_pages")
+    if not isinstance(planned_pages, list):
+        return kwargs
+    rescued = dict(kwargs)
+    rescued["planned_pages"] = [
+        _rescued_planned_page(page, state) if isinstance(page, dict) else page
+        for page in planned_pages
+    ]
+    rescued.setdefault("gaps", [])
+    return rescued
+
+
+def _rescued_planned_page(
+    page: dict[object, object],
+    state: IngestRoutePlanState,
+) -> dict[str, object]:
+    raw_metadata = page.get("metadata")
+    metadata = (
+        dict(cast(dict[object, object], raw_metadata))
+        if isinstance(raw_metadata, dict)
+        else {}
+    )
+    page_id = str(metadata.get("page_id") or page.get("page_id") or "")
+    planned_write = state.planned_page_write(page_id) if page_id else None
+    if planned_write is not None:
+        page_metadata = planned_write.page_metadata
+        metadata.setdefault("page_id", page_metadata.page_id)
+        metadata.setdefault("page_kind", page_metadata.page_kind)
+        metadata.setdefault("summary", page_metadata.summary)
+        metadata.setdefault("sources", list(page_metadata.sources))
+    else:
+        metadata.setdefault("page_id", page_id)
+        if "page_kind" in page:
+            metadata.setdefault("page_kind", page["page_kind"])
+        metadata.setdefault(
+            "summary",
+            page_id.replace("-", " ").title() if page_id else "Source page",
+        )
+        metadata.setdefault("sources", [f"raw/{state.context.source_locator}"])
+    rescued = {
+        "metadata": metadata,
+        "role": page.get("role") or _default_role(planned_write),
+        "action": _rescued_action(page.get("action"), page_id, state),
+        "source_scope": _rescued_source_scope(page.get("source_scope"), state),
+        "confidence": _rescued_confidence(page.get("confidence")),
+        "rationale": page.get("rationale") or _default_rationale(page_id),
+    }
+    return rescued
+
+
+def _default_role(planned_write: object | None) -> str:
+    if getattr(planned_write, "source_summary_plan", None) is not None:
+        return "source-summary"
+    return "source page for this ingest stage"
+
+
+def _rescued_action(value: object, page_id: str, state: IngestRoutePlanState) -> str:
+    _ = value
+    return "enrich" if page_id in state.context.existing_pages else "create"
+
+
+def _rescued_source_scope(value: object, state: IngestRoutePlanState) -> str:
+    if isinstance(value, str) and value.strip():
+        return value
+    return f"raw/{state.context.source_locator}"
+
+
+def _rescued_confidence(value: object) -> str:
+    if value in ("high", "medium", "low"):
+        return str(value)
+    return "high"
+
+
+def _default_rationale(page_id: str) -> str:
+    if page_id:
+        return f"{page_id} is authorized by the deterministic PagePlan."
+    return "This page target is authorized by the deterministic PagePlan."
 
 
 def _planned_page(page: PlannedPageParams) -> PlannedPage:

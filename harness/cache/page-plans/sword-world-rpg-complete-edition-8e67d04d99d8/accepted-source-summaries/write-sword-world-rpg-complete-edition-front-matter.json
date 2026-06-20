@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Magic may not grant unlimited power, and monsters may not all be equally strong or frightening. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0127"
+      ]
+    },
+    {
+      "bullet_text": "A character sheet may be used to track a player’s character within the fictional world. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0187"
+      ]
+    },
+    {
+      "bullet_text": "An RPG may be played by several people, with only one game master and the rest as players. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0064"
+      ]
+    },
+    {
+      "bullet_text": "Even in real life, a fight’s outcome may only be known by actually engaging. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0110"
+      ]
+    },
+    {
+      "bullet_text": "A role-playing game may progress by having participants act out roles, while the game master facilitates the scenario. (raw/Sword World RPG - Complete Edition.pdf p.1-7)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0062"
+      ]
+    }
+  ],
+  "source_record_text": "The front matter introduces Sword World RPG, defines RPG basics, explains the rulebook’s role, and outlines the book’s structure."
+}

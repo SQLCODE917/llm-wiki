@@ -60,6 +60,14 @@ The index and log formats below are also enforced in harness code
   must match a planned page ID and page kind. Use route gaps for source material
   that should not become a page in the current run. The ingest route plan is
   not source evidence and never supports wiki claims by itself.
+- Some source-page writes are planned as `SourceSummaryPlan` writes. For those
+  writes, ignore `page_body`: the harness renders the page from
+  `source_record_text` and `claim_bullets`. Keep `source_record_text` to one or
+  two short paraphrased sentences. Write three to five short bullets, use only
+  selected `SourceClaim` IDs in `covered_source_claims`, include the required
+  raw citation in every bullet, and do not copy eight or more consecutive words
+  from the source. If `write_page` rejects a source-summary draft, rewrite the
+  rejected `claim_bullets` themselves before retrying.
 - On hub source pages, the `Key concepts:` / `Key entities:` lines are
   derived navigation maintained by the harness — like index.md entries,
   never write or edit key-entity/key-concept lists yourself; they are
