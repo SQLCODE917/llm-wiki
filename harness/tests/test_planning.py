@@ -52,13 +52,22 @@ def test_markdown_page_plan_creates_units_claims_writes_and_paths() -> None:
 
     assert plan.extracted_units[0].source_hash
     assert plan.candidate_claims[0].evidence.raw_source == raw_source
+    assert plan.source_claims[0].evidence.raw_source == raw_source
+    assert plan.source_claim_groups
+    assert plan.topic_clusters[0].source_claim_groups
     assert [write.page_metadata.page_id for write in plan.planned_writes] == [
         "antikythera-mechanism"
     ]
+    assert plan.planned_writes[0].source_summary_plan is not None
     assert all(write.evidence for write in plan.planned_writes)
     assert '"source_hash"' in page_plan_to_json(plan)
+    assert '"source_claims"' in page_plan_to_json(plan)
+    assert '"source_summary_plan"' in page_plan_to_json(plan)
     report = observation_report(plan)
     assert "ExtractedUnits: 1" in report
+    assert "SourceClaims: 1" in report
+    assert "SourceClaimGroups: 1" in report
+    assert "SourceSummaryPlan `source-summary-plan-antikythera-mechanism`" in report
     assert "`antikythera-mechanism.md`" in report
     assert "PageKind `source`" in report
     assert "plan_pages action `create`" in report
@@ -209,15 +218,53 @@ def _plan_page_call(page_id: str) -> ToolCall:
 def _write_page_call(page_id: str) -> ToolCall:
     return ToolCall(
         tool="write_page",
-        args={
-            "page_id": page_id,
-            "page_kind": "source",
-            "summary": f"About {page_id}.",
-            "page_body": "Hub links [[functions]] and [[closures]]."
-            if page_id == "book"
-            else "Body.",
-        },
+        args=_source_summary_write_args(page_id),
     )
+
+
+def _source_summary_write_args(page_id: str) -> dict[str, object]:
+    citation = _citation_for(page_id)
+    claim_ids = _source_claim_ids_for(page_id)
+    claim_text = "Hub links [[functions]] and [[closures]]."
+    if page_id != "book":
+        claim_text = f"The {page_id} source page summarizes this PDF stage."
+    return {
+        "page_id": page_id,
+        "page_kind": "source",
+        "summary": f"About {page_id}.",
+        "source_record_text": f"Source record for [[{page_id}]]. ({citation})",
+        "claim_bullets": [
+            {
+                "bullet_text": f"{claim_text} ({citation})",
+                "covered_source_claims": list(claim_ids),
+            },
+            {
+                "bullet_text": f"The draft preserves planned source coverage. ({citation})",
+                "covered_source_claims": [claim_ids[0]],
+            },
+            {
+                "bullet_text": f"The summary keeps the cited PDF support visible. ({citation})",
+                "covered_source_claims": [claim_ids[-1]],
+            },
+        ],
+        "sources": ["book.pdf"],
+    }
+
+
+def _citation_for(page_id: str) -> str:
+    if page_id == "functions":
+        return "raw/book.pdf p.1-10"
+    if page_id == "closures":
+        return "raw/book.pdf p.11-20"
+    return "raw/book.pdf"
+
+
+def _source_claim_ids_for(page_id: str) -> tuple[str, ...]:
+    if page_id == "functions":
+        return ("source-claim-unit-0001-0001",)
+    if page_id == "closures":
+        return ("source-claim-unit-0002-0001",)
+    return ("source-claim-unit-0001-0001", "source-claim-unit-0002-0001")
 
 
 def _turns(page_id: str, finish_tool: str, report: str) -> list[list[ToolCall]]:
@@ -257,3 +304,5 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
         encoding="utf-8"
     )
     assert '"planned_writes"' in plan_json
+    assert '"source_claims"' in plan_json
+    assert '"source_summary_plan"' in plan_json

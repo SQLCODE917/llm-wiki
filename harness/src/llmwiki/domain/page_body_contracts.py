@@ -185,6 +185,22 @@ def validate_page_body(
     return _validate(page_body, contract, source_text)
 
 
+def render_source_summary_draft(draft: object) -> str:
+    from llmwiki.domain.page_body_validation import render_source_summary_draft as _render
+
+    return _render(draft)  # type: ignore[arg-type]
+
+
+def validate_source_summary_draft(
+    draft: object,
+    plan: object,
+    source_text: str = "",
+) -> tuple[PageBodyFinding, ...]:
+    from llmwiki.domain.page_body_validation import validate_source_summary_draft as _validate
+
+    return _validate(draft, plan, source_text)  # type: ignore[arg-type]
+
+
 def render_page_body_findings(
     findings: tuple[PageBodyFinding, ...],
     contract: ResolvedPageBodyContract,

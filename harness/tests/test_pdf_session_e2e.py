@@ -47,18 +47,61 @@ def _fake_extraction(
 
 
 def _write_page_call(name: str) -> ToolCall:
-    content = "Body."
+    content = "The source page summarizes this PDF stage."
     if name == "book":
         content = "Hub links [[functions]] and [[closures]]."
     return ToolCall(
         tool="write_page",
-        args={
-            "page_id": name,
-            "page_kind": "source",
-            "summary": f"About {name}.",
-            "page_body": content,
-        },
+        args=_source_summary_write_args(name, claim_text=content),
     )
+
+
+def _source_summary_write_args(
+    name: str,
+    *,
+    claim_text: str,
+    record_text: str | None = None,
+) -> dict[str, object]:
+    citation = _citation_for(name)
+    claim_ids = _source_claim_ids_for(name)
+    bullets = [
+        {
+            "bullet_text": f"{claim_text} ({citation})",
+            "covered_source_claims": list(claim_ids),
+        },
+        {
+            "bullet_text": f"The draft keeps the selected source coverage visible. ({citation})",
+            "covered_source_claims": [claim_ids[0]],
+        },
+        {
+            "bullet_text": f"The source summary remains concise and cited. ({citation})",
+            "covered_source_claims": [claim_ids[-1]],
+        },
+    ]
+    return {
+        "page_id": name,
+        "page_kind": "source",
+        "summary": f"About {name}.",
+        "source_record_text": f"{record_text or f'Source record for [[{name}]].'} ({citation})",
+        "claim_bullets": bullets,
+        "sources": ["book.pdf"],
+    }
+
+
+def _citation_for(name: str) -> str:
+    if name == "functions":
+        return "raw/book.pdf p.1-10"
+    if name == "closures":
+        return "raw/book.pdf p.11-20"
+    return "raw/book.pdf"
+
+
+def _source_claim_ids_for(name: str) -> tuple[str, ...]:
+    if name == "functions":
+        return ("source-claim-unit-0001-0001",)
+    if name == "closures":
+        return ("source-claim-unit-0002-0001",)
+    return ("source-claim-unit-0001-0001", "source-claim-unit-0002-0001")
 
 
 def _plan_page_call(name: str, gaps: list[dict[str, str]] | None = None) -> ToolCall:
@@ -112,11 +155,23 @@ def _map_turns(page: str, note: str, gaps: list[dict[str, str]] | None = None) -
     ]
 
 
-_INTEGRATE_TURNS = [
-    [_plan_page_call("book")],
-    [_write_page_call("book")],
-    [ToolCall(tool="finish_ingest", args={"report": "Hub linked to 2 chapter pages."})],
-]
+def _integrate_turns(
+    *,
+    claim_text: str = "Hub links [[functions]] and [[closures]].",
+) -> list:
+    return [
+        [_plan_page_call("book")],
+        [
+            ToolCall(
+                tool="write_page",
+                args=_source_summary_write_args("book", claim_text=claim_text),
+            )
+        ],
+        [ToolCall(tool="finish_ingest", args={"report": "Hub linked to 2 chapter pages."})],
+    ]
+
+
+_INTEGRATE_TURNS = _integrate_turns()
 
 
 class TestPdfIngest:
@@ -217,13 +272,10 @@ class TestPdfIngest:
         def _linked_write(name: str) -> ToolCall:
             return ToolCall(
                 tool="write_page",
-                args={
-                    "page_id": name,
-                    "page_kind": "source",
-                    "summary": f"About {name}.",
-                    "page_body": "Builds on [[iterable]].",
-                    "sources": ["raw/book.pdf"],
-                },
+                args=_source_summary_write_args(
+                    name,
+                    claim_text="Builds on [[iterable]].",
+                ),
             )
 
         script = [
@@ -235,7 +287,9 @@ class TestPdfIngest:
             [_plan_page_call("closures")],
             [_linked_write("closures")],
             [ToolCall(tool="finish_chunk", args={"report": "n2"})],
-            *_INTEGRATE_TURNS,
+            *_integrate_turns(
+                claim_text="Hub links [[functions]], [[closures]], and [[iterable]].",
+            ),
         ]
         session = _session(store, script, paths, extraction)
         await session.ingest("book.pdf")
@@ -302,13 +356,11 @@ class TestPdfIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "book",  # slugify('book.pdf'.stem) == the hub
-                        "page_kind": "source",
-                        "summary": "Hub.",
-                        "page_body": "Summary prose.\n\n**Key entities**: [[matthew-knox]].",
-                        "sources": ["raw/book.pdf"],
-                    },
+                    args=_source_summary_write_args(
+                        "book",
+                        claim_text="Summary prose for the hub and [[iterable]].",
+                        record_text="Summary prose.\n\n**Key entities**: [[matthew-knox]].",
+                    ),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "hub written"})],

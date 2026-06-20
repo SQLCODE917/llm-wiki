@@ -6,6 +6,7 @@ import re
 from collections import Counter
 
 from llmwiki.domain.page_body_contracts import PageBodyFinding, ResolvedPageBodyContract
+from llmwiki.domain.source_summary import SourceSummaryDraft, SourceSummaryPlan
 
 _WORD_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)?", re.IGNORECASE)
 _BULLET_RE = re.compile(r"^\s*[-*]\s+\S+", re.MULTILINE)
@@ -36,6 +37,52 @@ def validate_page_body(
     return tuple(findings)
 
 
+def render_source_summary_draft(draft: SourceSummaryDraft) -> str:
+    bullets = "\n".join(f"- {bullet.bullet_text.strip()}" for bullet in draft.claim_bullets)
+    return (
+        "## Source record\n\n"
+        f"{draft.source_record_text.strip()}\n\n"
+        "## Key supported claims\n\n"
+        f"{bullets}"
+    )
+
+
+def validate_source_summary_draft(
+    draft: SourceSummaryDraft,
+    plan: SourceSummaryPlan,
+    source_text: str = "",
+) -> tuple[PageBodyFinding, ...]:
+    findings: list[PageBodyFinding] = []
+    covered_claims = tuple(
+        claim_id for bullet in draft.claim_bullets for claim_id in bullet.covered_source_claims
+    )
+    selected_claims = set(plan.selected_source_claims)
+    missing_claims = tuple(
+        claim_id for claim_id in plan.selected_source_claims if claim_id not in covered_claims
+    )
+    unknown_claims = tuple(
+        claim_id for claim_id in covered_claims if claim_id not in selected_claims
+    )
+    if missing_claims:
+        findings.append(
+            PageBodyFinding(
+                "SelectedSourceClaims",
+                "missing coverage for " + ", ".join(missing_claims),
+            )
+        )
+    if unknown_claims:
+        findings.append(
+            PageBodyFinding(
+                "SelectedSourceClaims",
+                "covers claims outside SourceSummaryPlan: " + ", ".join(unknown_claims),
+            )
+        )
+    findings.extend(_source_summary_bullet_citation_findings(draft, plan))
+    findings.extend(_source_claim_id_findings(draft, plan))
+    findings.extend(_draft_copy_findings(draft, source_text))
+    return tuple(findings)
+
+
 def render_page_body_findings(
     findings: tuple[PageBodyFinding, ...],
     contract: ResolvedPageBodyContract,
@@ -45,7 +92,9 @@ def render_page_body_findings(
         f"PageBody violates ResolvedPageBodyContract '{contract.contract_id}'.\n"
         f"{rendered}\n"
         "Replace the whole PlannedPageWrite PageBody and satisfy every finding.\n"
-        "Do not append fixes to the rejected PageBody."
+        "Do not append fixes to the rejected PageBody.\n"
+        "For source-summary, write a short paraphrase with the required sections, "
+        "enough claim bullets, and coverage of the selected source claims."
     )
 
 
@@ -152,6 +201,67 @@ def _copy_findings(
         PageBodyFinding(
             "MaxCopiedNGramRatio",
             f"{ratio:.2f} exceeds {contract.max_copied_ngram_ratio:.2f}",
+        ),
+    )
+
+
+def _draft_copy_findings(
+    draft: SourceSummaryDraft, source_text: str
+) -> tuple[PageBodyFinding, ...]:
+    if not source_text:
+        return ()
+    source_ngrams = set(_ngrams(_words(source_text), _COPIED_NGRAM_SIZE))
+    if not source_ngrams:
+        return ()
+    findings: list[PageBodyFinding] = []
+    for index, bullet in enumerate(draft.claim_bullets, start=1):
+        bullet_ngrams = _ngrams(_words(bullet.bullet_text), _COPIED_NGRAM_SIZE)
+        copied = next((ngram for ngram in bullet_ngrams if ngram in source_ngrams), None)
+        if copied is not None:
+            findings.append(
+                PageBodyFinding(
+                    "CopiedSourcePhrase",
+                    f"bullet {index} copies source phrase: {' '.join(copied)}",
+                )
+            )
+    return tuple(findings)
+
+
+def _source_summary_bullet_citation_findings(
+    draft: SourceSummaryDraft, plan: SourceSummaryPlan
+) -> tuple[PageBodyFinding, ...]:
+    if not plan.required_source_citations:
+        return ()
+    findings: list[PageBodyFinding] = []
+    for index, bullet in enumerate(draft.claim_bullets, start=1):
+        if not any(citation in bullet.bullet_text for citation in plan.required_source_citations):
+            findings.append(
+                PageBodyFinding(
+                    "SourceSummaryBulletCitation",
+                    f"bullet {index} must include one RequiredSourceCitation",
+                )
+            )
+    return tuple(findings)
+
+
+def _source_claim_id_findings(
+    draft: SourceSummaryDraft, plan: SourceSummaryPlan
+) -> tuple[PageBodyFinding, ...]:
+    text_fields = [draft.source_record_text] + [
+        bullet.bullet_text for bullet in draft.claim_bullets
+    ]
+    leaked = tuple(
+        claim_id
+        for claim_id in plan.selected_source_claims
+        if any(claim_id in text for text in text_fields)
+    )
+    if not leaked:
+        return ()
+    return (
+        PageBodyFinding(
+            "SourceClaimIdLeak",
+            "internal SourceClaim ids must not appear in source_record_text or bullet_text: "
+            + ", ".join(leaked),
         ),
     )
 

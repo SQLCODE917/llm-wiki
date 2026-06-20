@@ -82,6 +82,39 @@ def _plan_page_call(
     )
 
 
+def _source_summary_write_args(
+    *,
+    page_id: str = "moon",
+    summary: str = "Lunar notes.",
+    source_locator: str = "moon.md",
+    source_claim_id: str = "source-claim-unit-0001-0001",
+    record_text: str = "Source record for [[moon]].",
+    claim_text: str = "The source supports a lunar formation claim.",
+) -> dict[str, object]:
+    citation = f"raw/{source_locator}"
+    return {
+        "page_id": page_id,
+        "page_kind": "source",
+        "summary": summary,
+        "source_record_text": f"{record_text} ({citation})",
+        "claim_bullets": [
+            {
+                "bullet_text": f"{claim_text} ({citation})",
+                "covered_source_claims": [source_claim_id],
+            },
+            {
+                "bullet_text": f"The same source claim is restated compactly. ({citation})",
+                "covered_source_claims": [source_claim_id],
+            },
+            {
+                "bullet_text": f"The summary preserves the source coverage target. ({citation})",
+                "covered_source_claims": [source_claim_id],
+            },
+        ],
+        "sources": [source_locator],
+    }
+
+
 class TestIngest:
     def test_ingest_run_uses_raw_source_boundary(
         self, store: WikiStore, paths: WikiPaths, source: str
@@ -102,13 +135,10 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Notes on lunar formation.",
-                        "page_body": "Giant impact origin. See [[giant-impact]]. (raw/moon.md)",
-                        "sources": ["moon.md"],
-                    },
+                    args=_source_summary_write_args(
+                        summary="Notes on lunar formation.",
+                        claim_text="The Moon source supports a giant impact origin claim.",
+                    ),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "Wrote [[moon]]."})],
@@ -116,7 +146,7 @@ class TestIngest:
         result = await _session(store, script, paths).ingest(source)
 
         assert result.output == "Wrote [[moon]]."
-        assert "Giant impact origin" in store.read_page("moon")
+        assert "giant impact origin" in store.read_page("moon")
         assert "- [[moon]] — Notes on lunar formation." in store.read_index()
         log = paths.log_path.read_text(encoding="utf-8")
         assert f"## [{TODAY}] ingest | moon.md" in log
@@ -129,6 +159,14 @@ class TestIngest:
         assert route_records[0].planned_page_ids == ("moon",)
         assert route_records[0].page_writes == ("moon",)
         assert route_records[0].route_gap_count == 0
+        draft_path = (
+            store.page_plan_artifact_dir("moon.md")
+            / "accepted-source-summaries"
+            / "write-moon.json"
+        )
+        assert draft_path.exists()
+        assert "source-claim-unit-0001-0001" in draft_path.read_text(encoding="utf-8")
+        assert "source-claim-unit" not in store.read_page("moon")
 
     async def test_markdown_route_plan_gaps_are_persisted(
         self, store: WikiStore, paths: WikiPaths, source: str
@@ -147,12 +185,7 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body. (raw/moon.md)",
-                    },
+                    args=_source_summary_write_args(),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -181,12 +214,7 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body. (raw/moon.md)",
-                    },
+                    args=_source_summary_write_args(),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "Wrote [[moon]]."})],
@@ -218,12 +246,7 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body. (raw/moon.md)",
-                    },
+                    args=_source_summary_write_args(),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -255,12 +278,7 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body. (raw/moon.md)",
-                    },
+                    args=_source_summary_write_args(),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -279,24 +297,14 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body. (raw/moon.md)",
-                    },
+                    args=_source_summary_write_args(),
                 )
             ],
             [_plan_page_call("moon")],
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body. (raw/moon.md)",
-                    },
+                    args=_source_summary_write_args(),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -328,12 +336,7 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "s",
-                        "page_body": "b",
-                    },
+                    args=_source_summary_write_args(summary="s"),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -376,12 +379,11 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Updated.",
-                        "page_body": "Original rich body with [[links]]. Plus new facts.",
-                    },
+                    args=_source_summary_write_args(
+                        summary="Updated.",
+                        record_text="Source record for [[moon]]. Plus new facts.",
+                        claim_text="Plus new facts are filed through the source summary.",
+                    ),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "updated moon"})],
@@ -405,14 +407,11 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Real claim.\n\n"
+                    args=_source_summary_write_args(
+                        record_text="Real claim.\n\n"
                         "[figure text (OCR, unverified): NOISE ON A MUG]\n\n"
-                        "Another claim.",
-                    },
+                        "Another claim."
+                    ),
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "ok"})],
@@ -435,12 +434,7 @@ class TestIngest:
             [
                 ToolCall(
                     tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "s",
-                        "page_body": "b",
-                    },
+                    args=_source_summary_write_args(summary="s"),
                 )
             ],
             TextResponse(content="I have finished ingesting the source."),

@@ -13,6 +13,7 @@ from llmwiki.domain.objects import (
     RawSource,
     Schema,
     SourceBundle,
+    SourceClaim,
     SourcePlan,
 )
 from llmwiki.domain.pages import WikiStructure
@@ -26,6 +27,10 @@ from llmwiki.domain.planning_analysis import (
     wiki_matches,
 )
 from llmwiki.domain.planning_writes import planned_writes
+from llmwiki.domain.source_claims import (
+    source_claim_groups,
+    source_claims,
+)
 
 _HEADING_RE = re.compile(r"^#{1,6}\s+(.+)$", re.MULTILINE)
 
@@ -76,10 +81,13 @@ def build_page_plan(
     schema: Schema | None = None,
     source_plan: SourcePlan | None = None,
 ) -> PagePlan:
+    active_schema = schema or Schema()
+    source_claim_items = source_claims(extracted_units, active_schema)
+    source_claim_group_items = source_claim_groups(source_claim_items)
     claims = candidate_claims(extracted_units)
     topics = candidate_topics(extracted_units, claims)
     entities = candidate_entities(extracted_units, claims)
-    clusters = topic_clusters(extracted_units, claims, topics)
+    clusters = topic_clusters(extracted_units, claims, topics, source_claim_group_items)
     matches = wiki_matches(extracted_units, existing_pages, raw_source.source_locator)
     comparisons = claim_comparisons(claims, matches)
     writes = planned_writes(
@@ -91,13 +99,17 @@ def build_page_plan(
         wiki_structure=wiki_structure,
         today=today,
         include_markdown_subject=include_markdown_subject,
-        schema=schema,
+        schema=active_schema,
         source_plan=source_plan,
+        source_claims=source_claim_items,
+        source_claim_groups=source_claim_group_items,
     )
     return PagePlan(
         plan_id=plan_id,
         source_bundle=source_bundle,
         extracted_units=extracted_units,
+        source_claims=source_claim_items,
+        source_claim_groups=source_claim_group_items,
         candidate_claims=claims,
         candidate_topics=topics,
         candidate_entities=entities,
@@ -119,11 +131,13 @@ def observation_report(plan: PagePlan) -> str:
     contradictions = sum(
         1 for comparison in plan.claim_comparisons if comparison.relation == "contradiction"
     )
+    source_claims = {claim.source_claim_id: claim for claim in plan.source_claims}
     paths = "\n".join(
         f"- `{write.page_metadata.page_id}` | plan_pages action "
         f"`{_route_action(write.action)}` | PagePlan action `{write.action}` | "
         f"PageKind `{write.page_metadata.page_kind}` | "
         f"ResolvedPageBodyContract `{write.resolved_page_body_contract.contract_id}` | "
+        f"{_source_summary_plan_label(write, source_claims)}"
         f"sources `{', '.join(write.page_metadata.sources)}` | "
         f"path `{write.projection.page_path if write.projection else ''}`"
         for write in plan.planned_writes
@@ -131,6 +145,8 @@ def observation_report(plan: PagePlan) -> str:
     return (
         "# Ingest Observation Report\n\n"
         f"- ExtractedUnits: {len(plan.extracted_units)}\n"
+        f"- SourceClaims: {len(plan.source_claims)}\n"
+        f"- SourceClaimGroups: {len(plan.source_claim_groups)}\n"
         f"- TopicClusters: {len(plan.topic_clusters)}\n"
         f"- Pages enriched: {enriched}\n"
         f"- Pages created: {created}\n"
@@ -154,3 +170,20 @@ def _route_action(page_plan_action: str) -> str:
     if page_plan_action == "create-new":
         return "create"
     return "route-gap"
+
+
+def _source_summary_plan_label(write: object, source_claims: dict[str, SourceClaim]) -> str:
+    summary_plan = getattr(write, "source_summary_plan", None)
+    if summary_plan is None:
+        return ""
+    claims = "; ".join(
+        _source_claim_label(source_claims[claim_id])
+        for claim_id in summary_plan.selected_source_claims
+        if claim_id in source_claims
+    )
+    return f"SourceSummaryPlan `{summary_plan.source_summary_plan_id}` selected `{claims}` | "
+
+
+def _source_claim_label(claim: SourceClaim) -> str:
+    roles = ", ".join(claim.claim_role_tags) or "unlabeled"
+    return f"{claim.source_claim_id} [{roles}] {claim.statement}"

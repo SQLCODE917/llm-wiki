@@ -70,6 +70,8 @@ def test_model_facing_tool_params_use_domain_code_names() -> None:
         "page_kind",
         "summary",
         "page_body",
+        "source_record_text",
+        "claim_bullets",
         "sources",
     }
 

@@ -18,6 +18,27 @@ from llmwiki.domain.page_body_contracts import (
 )
 from llmwiki.domain.pages import LOCAL_FLAT_STRUCTURE, PageMetadata, WikiPage, WikiStructure
 from llmwiki.domain.schema import PAGE_KINDS, PAGE_METADATA_FIELDS
+from llmwiki.domain.source_summary import (
+    ClaimRoleTag as ClaimRoleTag,
+)
+from llmwiki.domain.source_summary import (
+    SourceClaim as SourceClaim,
+)
+from llmwiki.domain.source_summary import (
+    SourceClaimGroup as SourceClaimGroup,
+)
+from llmwiki.domain.source_summary import (
+    SourceSummaryBullet as SourceSummaryBullet,
+)
+from llmwiki.domain.source_summary import (
+    SourceSummaryDraft as SourceSummaryDraft,
+)
+from llmwiki.domain.source_summary import (
+    SourceSummaryPlan as SourceSummaryPlan,
+)
+from llmwiki.domain.source_summary import (
+    default_claim_role_tags as default_claim_role_tags,
+)
 
 
 def _source_format(source_locator: str) -> str:
@@ -112,6 +133,7 @@ class TopicCluster:
     candidate_claims: tuple[str, ...] = ()
     candidate_topics: tuple[str, ...] = ()
     candidate_entities: tuple[str, ...] = ()
+    source_claim_groups: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -150,6 +172,7 @@ class PlannedPageWrite:
     resolved_page_body_contract: ResolvedPageBodyContract = field(
         default_factory=default_resolved_page_body_contract
     )
+    source_summary_plan: SourceSummaryPlan | None = None
 
 
 @dataclass(frozen=True)
@@ -157,6 +180,8 @@ class PagePlan:
     plan_id: str
     source_bundle: SourceBundle
     extracted_units: tuple[ExtractedUnit, ...]
+    source_claims: tuple[SourceClaim, ...]
+    source_claim_groups: tuple[SourceClaimGroup, ...]
     candidate_claims: tuple[CandidateClaim, ...]
     candidate_topics: tuple[CandidateTopic, ...]
     candidate_entities: tuple[CandidateEntity, ...]
@@ -177,6 +202,7 @@ class Schema:
     page_body_contract_by_page_kind: tuple[tuple[str, str], ...] = field(
         default_factory=default_page_body_contract_by_page_kind
     )
+    claim_role_tags: tuple[ClaimRoleTag, ...] = field(default_factory=default_claim_role_tags)
 
 
 @dataclass(frozen=True)

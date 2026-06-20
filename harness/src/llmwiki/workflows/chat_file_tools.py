@@ -33,6 +33,8 @@ def chat_file_write_page_tool(
 
     def _write_page(**kwargs: object) -> str:
         params = WritePageParams(**kwargs)  # type: ignore[arg-type]
+        if params.page_body is None:
+            raise WikiStoreError("Filed chat syntheses must provide page_body.")
         evidence_text = "\n".join([params.page_body, *params.sources])
         slug_sources = [source for source in params.sources if _looks_like_wiki_slug(source)]
         if slug_sources:

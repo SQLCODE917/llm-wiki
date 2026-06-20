@@ -12,6 +12,8 @@ from llmwiki.domain.objects import (
     ProjectionMetadata,
     RawSource,
     Schema,
+    SourceClaim,
+    SourceClaimGroup,
     SourcePlan,
     WikiMatch,
 )
@@ -25,6 +27,7 @@ from llmwiki.domain.page_body_contracts import (
 )
 from llmwiki.domain.pages import PageMetadata, WikiStructure, slugify
 from llmwiki.domain.planning_analysis import same_section_identity, unit_match
+from llmwiki.domain.source_claims import source_summary_plan
 
 
 def planned_writes(
@@ -39,6 +42,8 @@ def planned_writes(
     include_markdown_subject: bool,
     schema: Schema | None = None,
     source_plan: SourcePlan | None = None,
+    source_claims: tuple[SourceClaim, ...] = (),
+    source_claim_groups: tuple[SourceClaimGroup, ...] = (),
 ) -> tuple[PlannedPageWrite, ...]:
     active_schema = schema or Schema()
     selections = source_plan.page_body_contract_selections if source_plan is not None else ()
@@ -55,6 +60,8 @@ def planned_writes(
                 today,
                 active_schema,
                 selections,
+                source_claims,
+                source_claim_groups,
             )
             for unit in extracted_units
         )
@@ -67,6 +74,8 @@ def planned_writes(
         today,
         active_schema,
         selections,
+        source_claims,
+        source_claim_groups,
     )
     writes.append(hub)
     return tuple(writes)
@@ -82,6 +91,8 @@ def _planned_write_for_unit(
     today: str,
     schema: Schema,
     contract_selections: tuple[SourcePlanContractSelection, ...],
+    source_claims: tuple[SourceClaim, ...],
+    source_claim_groups: tuple[SourceClaimGroup, ...],
 ) -> PlannedPageWrite:
     page_id = _target_page_id(unit, existing_pages)
     metadata = PageMetadata(
@@ -104,6 +115,12 @@ def _planned_write_for_unit(
         schema=schema,
         contract_selections=contract_selections,
         required_uncertainty_terms=uncertainty_terms_in_text(unit.text),
+        source_claims=tuple(
+            claim for claim in source_claims if claim.extracted_unit_id == unit.unit_id
+        ),
+        source_claim_groups=tuple(
+            group for group in source_claim_groups if unit.unit_id in group.extracted_units
+        ),
     )
 
 
@@ -116,6 +133,8 @@ def _hub_write(
     today: str,
     schema: Schema,
     contract_selections: tuple[SourcePlanContractSelection, ...],
+    source_claims: tuple[SourceClaim, ...],
+    source_claim_groups: tuple[SourceClaimGroup, ...],
 ) -> PlannedPageWrite:
     page_id = _hub_page_id(raw_source)
     metadata = PageMetadata(
@@ -140,6 +159,8 @@ def _hub_write(
         required_uncertainty_terms=uncertainty_terms_in_text(
             "\n\n".join(unit.text for unit in units)
         ),
+        source_claims=source_claims,
+        source_claim_groups=source_claim_groups,
     )
 
 
@@ -156,6 +177,8 @@ def _planned_write(
     schema: Schema,
     contract_selections: tuple[SourcePlanContractSelection, ...],
     required_uncertainty_terms: tuple[str, ...],
+    source_claims: tuple[SourceClaim, ...],
+    source_claim_groups: tuple[SourceClaimGroup, ...],
 ) -> PlannedPageWrite:
     resolved_contract = _resolved_page_body_contract(
         schema=schema,
@@ -177,6 +200,12 @@ def _planned_write(
         projection=ProjectionMetadata(metadata, str(structure.render_path(metadata))),
         existing_page_id=metadata.page_id if action == "enrich-existing" else "",
         resolved_page_body_contract=resolved_contract,
+        source_summary_plan=source_summary_plan(
+            page_id=metadata.page_id,
+            contract=resolved_contract,
+            claims=source_claims,
+            groups=source_claim_groups,
+        ),
     )
 
 

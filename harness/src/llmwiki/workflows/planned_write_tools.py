@@ -9,10 +9,22 @@ from pydantic import BaseModel, Field
 
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.objects import PlannedPageWrite
-from llmwiki.domain.page_body_contracts import render_page_body_findings, validate_page_body
+from llmwiki.domain.page_body_contracts import (
+    render_page_body_findings,
+    validate_page_body,
+)
 from llmwiki.domain.pages import WikiPage
-from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
+from llmwiki.workflows.source_summary_write import (
+    PlannedWriteSourceSummaryParams,
+    page_body_contract_source_text,
+    source_summary_page_body,
+    strip_pipeline_markers,
+    write_source_summary_draft_artifact,
+)
+from llmwiki.workflows.source_summary_write import (
+    SourceSummaryBulletParams as SourceSummaryBulletParams,
+)
 
 
 class PlannedWritePageParams(BaseModel):
@@ -37,14 +49,14 @@ def planned_write_page_tool(
     """
 
     target_page = planned_write.page_metadata.page_id
+    summary_plan = planned_write.source_summary_plan
 
-    def _write_page(**kwargs: object) -> str:
-        params = PlannedWritePageParams(**kwargs)  # type: ignore[arg-type]
-        page_body = _strip_pipeline_markers(params.page_body)
+    def _write_page_body(page_body: str) -> str:
+        page_body = strip_pipeline_markers(page_body)
         findings = validate_page_body(
             page_body,
             planned_write.resolved_page_body_contract,
-            source_text=_page_body_contract_source_text(store, planned_write),
+            source_text=page_body_contract_source_text(store, planned_write),
         )
         if findings:
             raise WikiStoreError(
@@ -79,6 +91,36 @@ def planned_write_page_tool(
             response += "\n\n" + evidence.render_for_tool(target_page)
         return response
 
+    def _write_page(**kwargs: object) -> str:
+        params = PlannedWritePageParams(**kwargs)  # type: ignore[arg-type]
+        return _write_page_body(params.page_body)
+
+    def _write_source_summary(**kwargs: object) -> str:
+        params = PlannedWriteSourceSummaryParams(**kwargs)  # type: ignore[arg-type]
+        if summary_plan is None:
+            raise WikiStoreError("This PlannedPageWrite has no SourceSummaryPlan.")
+        body, draft = source_summary_page_body(
+            store,
+            planned_write,
+            params.source_record_text,
+            params.claim_bullets,
+        )
+        result = _write_page_body(body)
+        write_source_summary_draft_artifact(store, planned_write, draft)
+        return result
+
+    if summary_plan is not None:
+        return ToolDef(
+            spec=ToolSpec(
+                name="write_page",
+                description=f"Write the planned source summary page [[{target_page}]]. "
+                "The PagePlan supplies PageId, PageKind, PageMetadata, PagePath, and "
+                "SourceSummaryPlan; provide SourceSummaryDraft fields only.",
+                parameters=PlannedWriteSourceSummaryParams,
+            ),
+            callable=_write_source_summary,
+        )
+
     return ToolDef(
         spec=ToolSpec(
             name="write_page",
@@ -88,16 +130,3 @@ def planned_write_page_tool(
         ),
         callable=_write_page,
     )
-
-
-def _page_body_contract_source_text(store: WikiStore, planned_write: PlannedPageWrite) -> str:
-    if not planned_write.evidence:
-        return ""
-    raw_source = planned_write.evidence[0].raw_source
-    if raw_source.source_format != "markdown":
-        return ""
-    return store.read_source(raw_source.source_locator)
-
-
-def _strip_pipeline_markers(page_body: str) -> str:
-    return "\n".join(line for line in page_body.splitlines() if OCR_MARKER not in line)

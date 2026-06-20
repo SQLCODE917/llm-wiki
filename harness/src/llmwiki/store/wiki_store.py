@@ -311,6 +311,18 @@ class WikiStore:
         report_path.write_text(observation_report, encoding="utf-8")
         return plan_path, report_path
 
+    def write_source_summary_draft_artifact(
+        self,
+        source_locator: str,
+        planned_write_id: str,
+        draft_json: str,
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator) / "accepted-source-summaries"
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        draft_path = artifact_dir / f"{planned_write_id}.json"
+        draft_path.write_text(draft_json, encoding="utf-8")
+        return draft_path
+
     # -- harness-owned ingest route plan history ----------------------------
 
     def append_ingest_route_plan_record(self, record: IngestRoutePlanRecord) -> None:

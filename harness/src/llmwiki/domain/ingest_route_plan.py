@@ -7,7 +7,13 @@ from pathlib import Path
 from typing import Literal
 
 from llmwiki.domain.naming import singular_plural_collision
-from llmwiki.domain.objects import IngestRun, PagePlan, RawSource, SourceBundle
+from llmwiki.domain.objects import (
+    IngestRun,
+    PagePlan,
+    PlannedPageWrite,
+    RawSource,
+    SourceBundle,
+)
 from llmwiki.domain.pages import (
     PageMetadata,
     slugify,
@@ -162,6 +168,18 @@ class IngestRoutePlanState:
                 f"but the active ingest route plan uses {planned.metadata.page_kind!r}."
             )
         return planned
+
+    def planned_page_write(self, page_id: str) -> PlannedPageWrite | None:
+        if self.context.page_plan is None:
+            return None
+        return next(
+            (
+                write
+                for write in self.context.page_plan.planned_writes
+                if write.action != "defer" and write.page_metadata.page_id == page_id
+            ),
+            None,
+        )
 
 
 def validate_ingest_route_plan(

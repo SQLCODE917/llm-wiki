@@ -15,6 +15,7 @@ from llmwiki.domain.objects import (
     Evidence,
     ExtractedUnit,
     RawSource,
+    SourceClaimGroup,
     TopicCluster,
     WikiMatch,
 )
@@ -134,6 +135,7 @@ def topic_clusters(
     units: tuple[ExtractedUnit, ...],
     claims: tuple[CandidateClaim, ...],
     topics: tuple[CandidateTopic, ...],
+    source_claim_groups: tuple[SourceClaimGroup, ...] = (),
 ) -> tuple[TopicCluster, ...]:
     grouped: dict[str, list[ExtractedUnit]] = {}
     for unit in units:
@@ -157,6 +159,11 @@ def topic_clusters(
                     if any(claim.claim_id.startswith(f"claim-{unit_id}-") for unit_id in unit_ids)
                 ),
                 candidate_topics=tuple(topic.topic_id for topic in topics if topic.label == label),
+                source_claim_groups=tuple(
+                    group.source_claim_group_id
+                    for group in source_claim_groups
+                    if any(unit_id in group.extracted_units for unit_id in unit_ids)
+                ),
             )
         )
     return tuple(clusters)

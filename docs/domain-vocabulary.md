@@ -53,6 +53,12 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `PagePlan` | `page_plan` |
 | `SourcePlan` | `source_plan` |
 | `SourcePlanContractSelection` | `source_plan_contract_selection` |
+| `ClaimRoleTag` | `claim_role_tag` |
+| `SourceClaim` | `source_claim` |
+| `SourceClaimGroup` | `source_claim_group` |
+| `SourceSummaryPlan` | `source_summary_plan` |
+| `SourceSummaryDraft` | `source_summary_draft` |
+| `SourceSummaryBullet` | `source_summary_bullet` |
 | `PlannedPageWrite` | `planned_page_write` |
 | `Evidence` | `evidence` |
 | `IndexEntry` | `index_entry` |
@@ -93,6 +99,12 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ResolvedPageBodyContract | Exists | `llmwiki.domain.page_body_contracts`; bound to one `PlannedPageWrite` |
 | PageBodyFinding | Exists | `llmwiki.domain.page_body_contracts`; returned by body validation |
 | SourcePlanContractSelection | Exists | `llmwiki.domain.page_body_contracts`; selected through `SourcePlan` |
+| ClaimRoleTag | Exists | `llmwiki.domain.source_summary`; default vocabulary owned by `Schema` |
+| SourceClaim | Exists | `llmwiki.domain.source_summary`; built by `llmwiki.domain.source_claims` |
+| SourceClaimGroup | Exists | `llmwiki.domain.source_summary`; groups `SourceClaim` records for coverage planning |
+| SourceSummaryPlan | Exists | `llmwiki.domain.source_summary`; bound to source `PlannedPageWrite` records |
+| SourceSummaryDraft | Exists | `llmwiki.domain.source_summary`; planned source-summary tool input after DTO mapping |
+| SourceSummaryBullet | Exists | `llmwiki.domain.source_summary`; covers one or more selected `SourceClaim` records |
 | ExtractedUnit | Exists | `llmwiki.domain.objects` |
 | CandidateClaim | Exists | `llmwiki.domain.objects` |
 | CandidateTopic | Exists | `llmwiki.domain.objects` |
@@ -124,7 +136,9 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | PlannedPageMetadataParams | `llmwiki.workflows.ingest_route_tools` | `PageMetadata` |
 | RouteGapParams | `llmwiki.workflows.ingest_route_tools` | `RouteGap` |
 | PlannedWritePageParams | `llmwiki.workflows.planned_write_tools` | `PageBody` for one authorized `PlannedPageWrite` |
-| WritePageParams | `llmwiki.workflows.tools` and `llmwiki.workflows.chat_file_tools` | `WikiPage` and page write validation |
+| PlannedWriteSourceSummaryParams | `llmwiki.workflows.source_summary_write` | `SourceSummaryDraft` for one source-summary `PlannedPageWrite` |
+| SourceSummaryBulletParams | `llmwiki.workflows.source_summary_write` | `SourceSummaryBullet` |
+| WritePageParams | `llmwiki.workflows.tools` and `llmwiki.workflows.chat_file_tools` | `WikiPage` directly, or `SourceSummaryDraft` before `WikiPage` rendering when a `SourceSummaryPlan` is active |
 | ReadPageParams | `llmwiki.workflows.tools` | page lookup inputs |
 | ReadSourceParams | `llmwiki.workflows.tools` | raw source lookup inputs |
 | SearchWikiParams | `llmwiki.workflows.tools` | wiki search inputs |
@@ -147,6 +161,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | graph JSON | `wiki/wiki-graph.json` from `llmwiki.domain.graph.WikiGraph.to_payload` | `WikiGraph` |
 | candidate JSON | `wiki/wiki-candidates.json` from `CandidateBacklog.to_json_text` | `CandidateBacklog` |
 | chat SQLite rows | `llmwiki.store.chat_store` | `ChatSession` concept |
+| accepted source summary draft JSON | `cache/page-plans/*/accepted-source-summaries/*.json` | `SourceSummaryDraft` |
 
 ### View Models
 

@@ -83,17 +83,75 @@ def _plan_page_call(page_id: str) -> ToolCall:
     )
 
 
-def _write_page_call(page_id: str) -> ToolCall:
+def _write_page_call(
+    page_id: str,
+    *,
+    claim_ids: tuple[str, ...] | None = None,
+) -> ToolCall:
     return ToolCall(
         tool="write_page",
-        args={
-            "page_id": page_id,
-            "page_kind": "source",
-            "summary": f"About {page_id}.",
-            "page_body": "Hub links [[functions]] and [[closures]]."
-            if page_id == "book"
-            else "Body.",
-        },
+        args=_source_summary_write_args(page_id, claim_ids=claim_ids),
+    )
+
+
+def _source_summary_write_args(
+    page_id: str,
+    *,
+    claim_ids: tuple[str, ...] | None = None,
+) -> dict[str, object]:
+    active_claim_ids = claim_ids or _source_claim_ids_for(page_id)
+    citation = _citation_for(page_id)
+    claim_text = "Hub links [[functions]] and [[closures]]."
+    if page_id != "book":
+        claim_text = f"The {page_id} source page summarizes this PDF stage."
+    return {
+        "page_id": page_id,
+        "page_kind": "source",
+        "summary": f"About {page_id}.",
+        "source_record_text": f"Source record for [[{page_id}]]. ({citation})",
+        "claim_bullets": [
+            {
+                "bullet_text": f"{claim_text} ({citation})",
+                "covered_source_claims": list(active_claim_ids),
+            },
+            {
+                "bullet_text": f"The draft preserves planned source coverage. ({citation})",
+                "covered_source_claims": [active_claim_ids[0]],
+            },
+            {
+                "bullet_text": f"The summary keeps the cited PDF support visible. ({citation})",
+                "covered_source_claims": [active_claim_ids[-1]],
+            },
+        ],
+        "sources": ["book.pdf"],
+    }
+
+
+def _citation_for(page_id: str) -> str:
+    if page_id == "functions":
+        return "raw/book.pdf p.1-10"
+    if page_id == "closures":
+        return "raw/book.pdf p.11-20"
+    return "raw/book.pdf"
+
+
+def _source_claim_ids_for(page_id: str) -> tuple[str, ...]:
+    if page_id == "functions":
+        return ("source-claim-unit-0001-0001",)
+    if page_id == "closures":
+        return ("source-claim-unit-0002-0001",)
+    return ("source-claim-unit-0001-0001", "source-claim-unit-0002-0001")
+
+
+def _book_write_for_one_chunk() -> ToolCall:
+    args = _source_summary_write_args(
+        "book",
+        claim_ids=("source-claim-unit-0001-0001",),
+    )
+    args["summary"] = "Book hub."
+    return ToolCall(
+        tool="write_page",
+        args=args,
     )
 
 
@@ -240,18 +298,7 @@ async def test_pending_pdf_chunk_recovers_when_planned_page_exists(
     extraction = _one_chunk_extraction(paths)
     script = [
         [_plan_page_call("book")],
-        [
-            ToolCall(
-                tool="write_page",
-                args={
-                    "page_id": "book",
-                    "page_kind": "source",
-                    "summary": "Book hub.",
-                    "page_body": "Hub links [[functions]].",
-                    "sources": ["raw/book.pdf"],
-                },
-            )
-        ],
+        [_book_write_for_one_chunk()],
         [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
     ]
     session = Session(

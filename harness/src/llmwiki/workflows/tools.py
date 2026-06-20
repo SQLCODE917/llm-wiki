@@ -10,9 +10,9 @@ from pydantic import BaseModel, Field, field_validator
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.ingest_route_plan import IngestRoutePlanError, IngestRoutePlanState
 from llmwiki.domain.naming import singular_plural_collision
+from llmwiki.domain.objects import PlannedPageWrite, SourceSummaryDraft
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.search import render_hits, search_pages
-from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
 from llmwiki.workflows.planned_write_tools import (
     PlannedWritePageParams as PlannedWritePageParams,
@@ -20,18 +20,19 @@ from llmwiki.workflows.planned_write_tools import (
 from llmwiki.workflows.planned_write_tools import (
     planned_write_page_tool as planned_write_page_tool,
 )
+from llmwiki.workflows.source_summary_write import (
+    SourceSummaryBulletParams as SourceSummaryBulletParams,
+)
+from llmwiki.workflows.source_summary_write import (
+    source_summary_page_body,
+    strip_pipeline_markers,
+    write_source_summary_draft_artifact,
+)
 
 _PAGE_PREVIEW_MARKER = (
     "\n\n[TRUNCATED: page preview; do not rewrite from this partial read. "
     "For this chunk, write a separate source page instead of rereading this page.]"
 )
-
-
-def _strip_pipeline_markers(page_body: str) -> str:
-    """PageBody hygiene at the wiki boundary: extraction-pipeline markers
-    (e.g. the OCR caveat tag) are internal plumbing, never PageBody content —
-    observed quoted verbatim into a page despite the schema forbidding it."""
-    return "\n".join(line for line in page_body.splitlines() if OCR_MARKER not in line)
 
 
 def _normalize_source_value(value: str) -> str:
@@ -68,9 +69,20 @@ class WritePageParams(BaseModel):
         "concept, or synthesis (cross-source analysis)."
     )
     summary: str = Field(description="One-line summary of the page, used in the wiki index.")
-    page_body: str = Field(
+    page_body: str | None = Field(
+        default=None,
         description="Full PageBody markdown. Link related pages inline with [[page_id]]. "
-        "Cite evidence as (raw/<source_locator>). Do not include frontmatter."
+        "Cite evidence as (raw/<source_locator>). Do not include frontmatter.",
+    )
+    source_record_text: str | None = Field(
+        default=None,
+        description="For a source-summary PlannedPageWrite, short source record text. "
+        "Do not include internal SourceClaim ids.",
+    )
+    claim_bullets: list[SourceSummaryBulletParams] = Field(
+        default_factory=list,
+        description="For a source-summary PlannedPageWrite, claim bullets with "
+        "covered_source_claims from the SourceSummaryPlan.",
     )
     sources: list[str] = Field(
         default_factory=list,
@@ -211,6 +223,7 @@ def write_page_tool(
 
     def _write_page(**kwargs: object) -> str:
         params = WritePageParams(**kwargs)  # type: ignore[arg-type]
+        planned_write: PlannedPageWrite | None = None
         if ingest_route_plan_state is not None:
             try:
                 ingest_route_plan_state.authorize_page_write(params.page_id, params.page_kind)
@@ -225,6 +238,7 @@ def write_page_tool(
                     "write an authorized page before finish_chunk. "
                     f"Authorized targets: {_active_plan_targets(ingest_route_plan_state)}"
                 )
+            planned_write = ingest_route_plan_state.planned_page_write(params.page_id)
         if (
             read_tracker is not None
             and params.page_id not in read_tracker
@@ -266,7 +280,11 @@ def write_page_tool(
             )
             if collision is not None:
                 raise WikiStoreError(collision.render_for_tool())
-        body = _strip_pipeline_markers(params.page_body)
+        body, source_summary_draft = _page_body_from_write_params(
+            store,
+            params,
+            planned_write,
+        )
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
         resolver = store.source_resolver() if policy.enabled else None
@@ -287,6 +305,8 @@ def write_page_tool(
             page_body=body,
         )
         store.write_page(page)
+        if planned_write is not None and source_summary_draft is not None:
+            write_source_summary_draft_artifact(store, planned_write, source_summary_draft)
         if write_log is not None:
             write_log.append(params.page_id)
         response = f"Wrote wiki/{params.page_id}.md and updated its index entry."
@@ -324,4 +344,26 @@ def _active_plan_targets(state: IngestRoutePlanState) -> str:
     return ", ".join(
         f"{page.metadata.page_id} (PageKind {page.metadata.page_kind})"
         for page in state.active_plan.planned_pages
+    )
+
+
+def _page_body_from_write_params(
+    store: WikiStore,
+    params: WritePageParams,
+    planned_write: PlannedPageWrite | None,
+) -> tuple[str, SourceSummaryDraft | None]:
+    if planned_write is None or planned_write.source_summary_plan is None:
+        if params.page_body is None:
+            raise WikiStoreError("write_page requires page_body for this WikiPage.")
+        return strip_pipeline_markers(params.page_body), None
+    if params.source_record_text is None or not params.claim_bullets:
+        raise WikiStoreError(
+            "This source PlannedPageWrite has a SourceSummaryPlan. Call write_page with "
+            "source_record_text and claim_bullets covered_source_claims instead of page_body."
+        )
+    return source_summary_page_body(
+        store,
+        planned_write,
+        params.source_record_text,
+        params.claim_bullets,
     )
