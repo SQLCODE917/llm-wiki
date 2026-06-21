@@ -1,18 +1,18 @@
 ---
 page_id: javascriptallonge-that-constant-coffee-craving
 page_kind: source
-summary: Source summary of const keyword and scope concepts.
-sources: raw/javascriptallonge.pdf p.49-61
+summary: Chapter on naming functions and using function expressions to bind values.
+sources: raw/javascriptallonge.pdf p.49-50
 updated: 2026-06-20
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Section covers const keyword, IIFE, lexical and block scope, and const semantics.
+A chapter on naming functions and using function expressions to bind values.
 
 ## Key supported claims
 
-- We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s almost what we wanted all along: a way to bind 3.14159265 to a readable name (raw/javascriptallonge.pdf p.49-61) **may**
-- We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const (raw/javascriptallonge.pdf p.49-61) **possible**
-- The const keyword introduces one or more bindings in the block that encloses it (raw/javascriptallonge.pdf p.49-61) **may**
+- This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. (raw/javascriptallonge.pdf p.49-50)
+- Naming things is a critical part of programming, but all we've seen so far is how to name arguments. (raw/javascriptallonge.pdf p.49-50)
+- That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. (raw/javascriptallonge.pdf p.49-50)

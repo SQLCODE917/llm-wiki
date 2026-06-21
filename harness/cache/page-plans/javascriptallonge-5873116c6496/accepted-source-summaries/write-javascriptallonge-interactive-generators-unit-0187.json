@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We used generators to build iterators that maintain implicit state. (raw/javascriptallonge.pdf p.273-275)",
+      "covered_source_claims": [
+        "source-claim-unit-0187-0001"
+      ]
+    },
+    {
+      "bullet_text": "The moves a player makes are a stream of values, just like the contents of an array can be consider a stream of values. (raw/javascriptallonge.pdf p.273-275)",
+      "covered_source_claims": [
+        "source-claim-unit-0187-0006"
+      ]
+    },
+    {
+      "bullet_text": "But of course, iterating over a stream of moves requires us to wait for the game to be over so we know what moves were made. (raw/javascriptallonge.pdf p.273-275)",
+      "covered_source_claims": [
+        "source-claim-unit-0187-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Interactive Generators chapter covering generators, stateful functions, and examples."
+}

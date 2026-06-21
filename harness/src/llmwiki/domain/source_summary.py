@@ -35,9 +35,13 @@ def default_claim_role_tags() -> tuple[ClaimRoleTag, ...]:
             "requirement",
             "procedure",
             "limitation",
-            "uncertainty",
+            "source-uncertainty",
+            "ordinary-modality",
             "negative-evidence",
             "open-question",
+            "analogy",
+            "worked-example",
+            "source-framing",
         )
     )
 
@@ -53,6 +57,8 @@ class SourceClaim:
     claim_salience: float = 0.0
     claim_certainty: str = "supported"
     subject_terms: tuple[str, ...] = ()
+    claim_eligibility: str = "eligible"
+    claim_centrality: float = 0.0
 
 
 @dataclass(frozen=True)
@@ -86,6 +92,28 @@ class SourceSummaryBullet:
 class SourceSummaryDraft:
     source_record_text: str
     claim_bullets: tuple[SourceSummaryBullet, ...]
+
+
+@dataclass(frozen=True)
+class SourceClaimQualityFixture:
+    fixture_id: str
+    source_locator: str
+    heading_path: str
+    statement: str
+    expected_claim_eligibility: str
+    expected_claim_role_tags: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
+class SourceSummaryQualityReport:
+    selected_ineligible_claims: int = 0
+    false_source_uncertainty_claims: int = 0
+    source_framing_bullets: int = 0
+    missing_unit_coverage: int = 0
+    selected_ineligible_examples: tuple[str, ...] = ()
+    false_source_uncertainty_examples: tuple[str, ...] = ()
+    source_framing_examples: tuple[str, ...] = ()
+    missing_unit_coverage_examples: tuple[str, ...] = ()
 
 
 def should_create_source_summary_plan(contract: ResolvedPageBodyContract) -> bool:

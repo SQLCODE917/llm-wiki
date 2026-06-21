@@ -28,6 +28,9 @@ from llmwiki.domain.source_summary import (
     SourceClaimGroup as SourceClaimGroup,
 )
 from llmwiki.domain.source_summary import (
+    SourceClaimQualityFixture as SourceClaimQualityFixture,
+)
+from llmwiki.domain.source_summary import (
     SourceSummaryBullet as SourceSummaryBullet,
 )
 from llmwiki.domain.source_summary import (
@@ -35,6 +38,9 @@ from llmwiki.domain.source_summary import (
 )
 from llmwiki.domain.source_summary import (
     SourceSummaryPlan as SourceSummaryPlan,
+)
+from llmwiki.domain.source_summary import (
+    SourceSummaryQualityReport as SourceSummaryQualityReport,
 )
 from llmwiki.domain.source_summary import (
     default_claim_role_tags as default_claim_role_tags,
@@ -101,6 +107,32 @@ class ExtractedUnit:
     text: str
     extraction_status: str
     source_hash: str = ""
+
+
+@dataclass(frozen=True)
+class SourcePageGroup:
+    source_page_group_id: str
+    raw_source: RawSource
+    page_id: str
+    extracted_units: tuple[str, ...]
+    first_heading: str
+    last_heading: str
+    first_locator: str
+    last_locator: str
+    token_estimate: int
+
+
+@dataclass(frozen=True)
+class PageMapLink:
+    page_id: str
+    label: str
+    source_page_group_id: str
+
+
+@dataclass(frozen=True)
+class PageMap:
+    source_id: str
+    links: tuple[PageMapLink, ...]
 
 
 @dataclass(frozen=True)
@@ -189,6 +221,7 @@ class PagePlan:
     wiki_matches: tuple[WikiMatch, ...]
     claim_comparisons: tuple[ClaimComparison, ...]
     planned_writes: tuple[PlannedPageWrite, ...]
+    source_page_groups: tuple[SourcePageGroup, ...] = ()
 
 
 @dataclass(frozen=True)

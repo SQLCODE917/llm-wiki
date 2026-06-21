@@ -66,7 +66,7 @@ def test_source_plan_selects_contract_and_page_plan_resolves_it() -> None:
         page_body_contract_selections=(
             SourcePlanContractSelection(
                 contract_id="brief-source",
-                page_ids=("alpha",),
+                page_ids=("article-alpha",),
                 max_words_override=72,
             ),
         ),
@@ -76,7 +76,7 @@ def test_source_plan_selects_contract_and_page_plan_resolves_it() -> None:
         raw_source=raw_source,
         locator="document",
         heading_path="Alpha",
-        text="Alpha may suggest a possible observation.",
+        text="Alpha does not confirm the observation.",
     )
 
     plan = build_page_plan(
@@ -91,14 +91,14 @@ def test_source_plan_selects_contract_and_page_plan_resolves_it() -> None:
         source_plan=source_plan,
     )
 
-    alpha = next(write for write in plan.planned_writes if write.page_metadata.page_id == "alpha")
+    alpha = next(
+        write for write in plan.planned_writes if write.page_metadata.page_id == "article-alpha"
+    )
     hub = next(write for write in plan.planned_writes if write.page_metadata.page_id == "article")
     assert alpha.resolved_page_body_contract.contract_id == "brief-source"
     assert alpha.resolved_page_body_contract.max_words == 72
     assert alpha.resolved_page_body_contract.required_uncertainty_terms == (
-        "may",
-        "possible",
-        "suggest",
+        "does not confirm",
     )
     assert hub.resolved_page_body_contract.contract_id == "source-summary"
     assert "ResolvedPageBodyContract `brief-source`" in observation_report(plan)
@@ -188,6 +188,26 @@ def test_source_summary_rejects_placeholder_ellipsis() -> None:
     ]
 
 
+def test_source_summary_rejects_ascii_placeholder_ellipsis() -> None:
+    citation = "raw/book.pdf p.212-213"
+    contract = resolve_page_body_contract(
+        contract_for_page_kind(Schema(), "source"),
+        required_source_citations=(citation,),
+    )
+    body = (
+        "## Source record\n\n"
+        f"Plants section describes plant monsters ... ({citation})\n\n"
+        "## Key supported claims\n\n"
+        f"- Plant monsters may have typed weaknesses. ({citation})\n"
+        f"- Tall plant creatures appear in the encounter list. ({citation})\n"
+        f"- Walking root creatures appear in the encounter list. ({citation})"
+    )
+
+    assert [finding.finding_type for finding in validate_page_body(body, contract)] == [
+        "PlaceholderText"
+    ]
+
+
 def test_source_summary_allows_javascript_rest_syntax() -> None:
     citation = "raw/javascriptallonge.pdf p.126-140"
     contract = resolve_page_body_contract(
@@ -200,7 +220,9 @@ def test_source_summary_allows_javascript_rest_syntax() -> None:
         "## Key supported claims\n\n"
         f"- The pattern [first, ...rest] may copy arrays during recursion. ({citation})\n"
         f"- Rest parameters such as ...args collect trailing arguments. ({citation})\n"
-        f"- Memory pressure can increase when repeated copies are short-lived. ({citation})"
+        f"- The JavaScript rest operator (...) gathers trailing arguments. ({citation})\n"
+        f"- The ... notation can gather or spread array elements. ({citation})\n"
+        f"- Iterator functions like take(...) may decorate an original iterator. ({citation})"
     )
 
     assert validate_page_body(body, contract) == ()

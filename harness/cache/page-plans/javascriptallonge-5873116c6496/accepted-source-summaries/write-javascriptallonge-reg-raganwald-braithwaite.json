@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "This book is for sale at http://leanpub.com/javascriptallongesix (raw/javascriptallonge.pdf p.2-3)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0001"
+      ]
+    },
+    {
+      "bullet_text": "Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do. (raw/javascriptallonge.pdf p.2-3)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0004"
+      ]
+    },
+    {
+      "bullet_text": "© 2015 - 2017 Reg 'raganwald' Braithwaite (raw/javascriptallonge.pdf p.2-3)",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0005"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé – A modular guide to JavaScript fundamentals and advanced techniques, spanning 20 chapters."
+}

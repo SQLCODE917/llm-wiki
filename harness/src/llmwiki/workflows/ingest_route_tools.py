@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import ast
 from typing import Literal, cast
 
 from forge.core.workflow import ToolDef, ToolSpec
@@ -65,7 +66,13 @@ class PlanPagesParams(BaseModel):
     )
 
 
-def plan_pages_tool(state: IngestRoutePlanState, recoverable_errors: bool = False) -> ToolDef:
+def plan_pages_tool(
+    state: IngestRoutePlanState,
+    recoverable_errors: bool = False,
+    prerequisites: list[str] | None = None,
+) -> ToolDef:
+    tool_prerequisites: list[str | dict[str, str]] = list(prerequisites or [])
+
     def _plan_pages(**kwargs: object) -> str:
         kwargs = _rescued_plan_pages_kwargs(kwargs, state)
         try:
@@ -124,6 +131,7 @@ def plan_pages_tool(state: IngestRoutePlanState, recoverable_errors: bool = Fals
             parameters=PlanPagesParams,
         ),
         callable=_plan_pages,
+        prerequisites=tool_prerequisites,
     )
 
 
@@ -143,6 +151,8 @@ def _rescued_plan_pages_kwargs(
     if state.context.page_plan is None:
         return kwargs
     planned_pages = kwargs.get("planned_pages")
+    if isinstance(planned_pages, str):
+        planned_pages = _literal_list(planned_pages)
     if not isinstance(planned_pages, list):
         return kwargs
     rescued = dict(kwargs)
@@ -154,15 +164,21 @@ def _rescued_plan_pages_kwargs(
     return rescued
 
 
+def _literal_list(value: str) -> object:
+    try:
+        parsed = ast.literal_eval(value)
+    except (SyntaxError, ValueError):
+        return value
+    return parsed if isinstance(parsed, list) else value
+
+
 def _rescued_planned_page(
     page: dict[object, object],
     state: IngestRoutePlanState,
 ) -> dict[str, object]:
     raw_metadata = page.get("metadata")
     metadata = (
-        dict(cast(dict[object, object], raw_metadata))
-        if isinstance(raw_metadata, dict)
-        else {}
+        dict(cast(dict[object, object], raw_metadata)) if isinstance(raw_metadata, dict) else {}
     )
     page_id = str(metadata.get("page_id") or page.get("page_id") or "")
     planned_write = state.planned_page_write(page_id) if page_id else None

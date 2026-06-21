@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript Allongé was inspired by The Little Schemer by Daniel Friedman and Matthias Felleisen. But where The Little Schemer's primary focus is recursion, JavaScript Allongé's primary focus is functions as first-class values . (raw/javascriptallonge.pdf p.291-291)",
+      "covered_source_claims": [
+        "source-claim-unit-0204-0002"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé was inspired by The Little Schemer by Daniel Friedman and Matthias Felleisen. But where The Little Schemer's primary focus is recursion, JavaScript Allongé's primary focus is functions as first-class values ."
+}

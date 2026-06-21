@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Note well: Declaring a variable const does not prevent us from mutating its value, only from rebinding its name (raw/javascriptallonge.pdf p.141-143).",
+      "covered_source_claims": [
+        "source-claim-unit-0118-0027"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how mutation works in JavaScript, covering arrays, objects, aliases, and assignment semantics, with possible nuances."
+}

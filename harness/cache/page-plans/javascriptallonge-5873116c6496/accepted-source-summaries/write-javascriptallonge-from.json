@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "One useful thing is to write a .from function that gathers an iterable into a particular collection type. (raw/javascriptallonge.pdf p.221-222)",
+      "covered_source_claims": [
+        "source-claim-unit-0164-0003"
+      ]
+    },
+    {
+      "bullet_text": "As you recall, functions are mutable objects. (raw/javascriptallonge.pdf p.221-222)",
+      "covered_source_claims": [
+        "source-claim-unit-0164-0006"
+      ]
+    },
+    {
+      "bullet_text": "No, of course not, we can do anything we like with them. (raw/javascriptallonge.pdf p.221-222)",
+      "covered_source_claims": [
+        "source-claim-unit-0164-0002"
+      ]
+    }
+  ],
+  "source_record_text": "This section discusses how to create .from functions to gather iterables into particular collection types, using JavaScript's built-in Array.from and custom implementations for other collections like Stack3 and Pair1."
+}

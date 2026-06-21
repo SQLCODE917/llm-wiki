@@ -207,6 +207,18 @@ def _page_body_with_required_links(
 ) -> str:
     if min_required_links <= 0:
         return page_body
+    body_without_page_map, had_page_map = _strip_page_map_navigation(page_body)
+    body_without_nav_lists, had_nav_lists = _strip_required_link_list_sections(
+        body_without_page_map, required_target_set
+    )
+    if had_page_map or had_nav_lists:
+        return _append_page_map_links(
+            body_without_nav_lists,
+            required_link_targets,
+            required_page_map_entries,
+            frozenset(),
+            len(required_link_targets),
+        )
     linked_targets = extract_links(page_body) & required_target_set
     if len(linked_targets) >= min_required_links:
         return page_body
@@ -217,6 +229,56 @@ def _page_body_with_required_links(
         linked_targets,
         min_required_links,
     )
+
+
+def _strip_page_map_navigation(text: str) -> tuple[str, bool]:
+    marker = "## Page-Map Navigation"
+    start = text.find(marker)
+    if start < 0 or (start > 0 and text[start - 1] != "\n"):
+        return text, False
+    before = text[:start].rstrip()
+    rest = text[start + len(marker) :]
+    next_section = rest.find("\n## ")
+    after = "" if next_section < 0 else rest[next_section:].strip()
+    parts = [part for part in (before, after) if part]
+    return "\n\n".join(parts), True
+
+
+def _strip_required_link_list_sections(
+    text: str, required_target_set: frozenset[str]
+) -> tuple[str, bool]:
+    lines = text.splitlines()
+    kept: list[str] = []
+    stripped = False
+    index = 0
+    while index < len(lines):
+        line = lines[index]
+        if line.startswith("## "):
+            end = index + 1
+            while end < len(lines) and not lines[end].startswith("## "):
+                end += 1
+            section = lines[index:end]
+            if _is_required_link_list_section(section, required_target_set):
+                stripped = True
+                while kept and not kept[-1].strip():
+                    kept.pop()
+                index = end
+                continue
+        kept.append(line)
+        index += 1
+    return "\n".join(kept).strip(), stripped
+
+
+def _is_required_link_list_section(
+    section_lines: list[str], required_target_set: frozenset[str]
+) -> bool:
+    content_lines = [line.strip() for line in section_lines[1:] if line.strip()]
+    bullet_lines = [line for line in content_lines if line.startswith("- ")]
+    link_bullets = [line for line in bullet_lines if line.startswith("- [[")]
+    if len(link_bullets) < 2 or len(link_bullets) != len(bullet_lines):
+        return False
+    section_links = extract_links("\n".join(section_lines))
+    return bool(section_links & required_target_set)
 
 
 def _append_page_map_links(

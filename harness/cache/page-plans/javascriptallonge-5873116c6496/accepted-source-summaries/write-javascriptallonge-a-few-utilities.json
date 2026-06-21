@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The 'a few utilities' section introduces fundamental list manipulation utilities in JavaScript, such as copy, first, rest, reverse, mapWith, at, and set functions (raw/javascriptallonge.pdf p.159-161).",
+      "covered_source_claims": [
+        "source-claim-unit-0127-0006"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on a few utilities in JavaScriptAllonge, covering list manipulation functions."
+}

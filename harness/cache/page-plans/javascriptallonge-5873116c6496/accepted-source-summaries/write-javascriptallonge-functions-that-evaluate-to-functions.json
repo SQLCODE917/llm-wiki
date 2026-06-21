@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Function that returns a function that returns zero. (raw/javascriptallonge.pdf p.38-38)",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0003"
+      ]
+    },
+    {
+      "bullet_text": "Function that evaluates to a function that evaluates to 0. (raw/javascriptallonge.pdf p.38-38)",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0002"
+      ]
+    },
+    {
+      "bullet_text": "Next chapter will show practical use of functions. (raw/javascriptallonge.pdf p.38-38)",
+      "covered_source_claims": [
+        "source-claim-unit-0036-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on functions that evaluate to functions in JavaScript Allongé."
+}

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Function decorator for handling null/undefined values, borrowed from Haskell's maybe monad, Ruby's andand, and CoffeeScript's existential method invocation (raw/javascriptallonge.pdf p.86-87).",
+      "covered_source_claims": [
+        "source-claim-unit-0076-0008"
+      ]
+    },
+    {
+      "bullet_text": "Maybe plays nicely with instance methods (raw/javascriptallonge.pdf p.86-87).",
+      "covered_source_claims": [
+        "source-claim-unit-0076-0015"
+      ]
+    },
+    {
+      "bullet_text": "The maybe decorator reduces logic of checking for nothing to a function call (raw/javascriptallonge.pdf p.86-87).",
+      "covered_source_claims": [
+        "source-claim-unit-0076-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on the Maybe pattern and its implementation in JavaScript"
+}

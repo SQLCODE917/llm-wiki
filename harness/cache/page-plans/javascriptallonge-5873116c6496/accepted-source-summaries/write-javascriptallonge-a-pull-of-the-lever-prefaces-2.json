@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Café Allongé is a drink midway between Espresso and Americano in strength (raw/javascriptallonge.pdf p.6-6).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0006"
+      ]
+    },
+    {
+      "bullet_text": "Café Allongé can be made by adding hot water to Espresso Ristretto (raw/javascriptallonge.pdf p.6-6).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0006"
+      ]
+    },
+    {
+      "bullet_text": "Café Allongé can also be made by pulling an extra long double shot of Espresso (raw/javascriptallonge.pdf p.6-6).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0006"
+      ]
+    }
+  ],
+  "source_record_text": "A section from JavaScript Allongé discussing coffee preparation methods, particularly Café Allongé or Espresso Lungo."
+}

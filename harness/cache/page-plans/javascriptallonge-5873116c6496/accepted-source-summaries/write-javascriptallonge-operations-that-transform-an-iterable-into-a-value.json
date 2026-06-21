@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The reduceWith function iterates over an iterable and accumulates a value using a provided function, starting with a seed value (raw/javascriptallonge.pdf p.286-286).",
+      "covered_source_claims": [
+        "source-claim-unit-0199-0001"
+      ]
+    }
+  ],
+  "source_record_text": "A section on functions that transform iterables into values, including reduceWith and first."
+}

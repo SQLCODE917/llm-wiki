@@ -202,6 +202,12 @@ class TestProfiledWorkflows:
 
         assert workflow.system_prompt_template == prompts.INGEST_TEMPLATE
 
+    def test_pdf_integrate_prompt_requires_current_source_grouping(self) -> None:
+        assert "current source's own subject matter" in prompts.INTEGRATE_TEMPLATE
+        assert "Never borrow category names from unrelated source types" in (
+            prompts.INTEGRATE_TEMPLATE
+        )
+
     def test_pdf_map_and_integrate_receive_profile_overlays(self, store: WikiStore) -> None:
         profile = IngestProfile(
             id="rulebook",
@@ -458,6 +464,84 @@ class TestProfiledWorkflows:
         hub = store.read_page("sword-world-rpg-complete-edition")
         assert "Only links [[alpha]]." in hub
         assert "## Page-Map Navigation" in hub
+        assert "[[beta]] — Functions" in hub
+        assert "[[gamma]] — Objects" in hub
+
+    def test_pdf_integrate_replaces_model_page_map_navigation(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="Sword World RPG - Complete Edition.pdf",
+            required_link_targets=("alpha", "beta", "gamma"),
+            required_page_map_entries=(
+                ("alpha", "Opening"),
+                ("beta", "Functions"),
+                ("gamma", "Objects"),
+            ),
+            min_required_links=3,
+        )
+        _plan_page(workflow, "sword-world-rpg-complete-edition", summary="Hub.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub.",
+            page_body=(
+                "Intro.\n\n"
+                "## Page-Map Navigation\n\n"
+                "### Player rules\n"
+                "- [[alpha]]\n"
+                "- [[alpha]]\n"
+                "- [[stale-page]]\n\n"
+                "## Closing\n\n"
+                "Done."
+            ),
+        )
+
+        hub = store.read_page("sword-world-rpg-complete-edition")
+        assert hub.count("## Page-Map Navigation") == 1
+        assert "### Player rules" not in hub
+        assert "[[stale-page]]" not in hub
+        assert "[[alpha]] — Opening" in hub
+        assert "[[beta]] — Functions" in hub
+        assert "[[gamma]] — Objects" in hub
+        assert "## Closing" in hub
+
+    def test_pdf_integrate_replaces_model_link_list_navigation(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="javascriptallonge.pdf",
+            required_link_targets=("alpha", "beta", "gamma"),
+            required_page_map_entries=(
+                ("alpha", "Opening"),
+                ("beta", "Functions"),
+                ("gamma", "Objects"),
+            ),
+            min_required_links=3,
+        )
+        _plan_page(workflow, "javascriptallonge", summary="Hub.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub.",
+            page_body=(
+                "JavaScript Allongé covers functions and iterables.\n\n"
+                "## Player Rules\n\n"
+                "- [[alpha]]\n"
+                "- [[beta]]\n\n"
+                "## Key Concepts\n\n"
+                "- Functions\n"
+                "- Iterables"
+            ),
+        )
+
+        hub = store.read_page("javascriptallonge")
+        assert "## Player Rules" not in hub
+        assert "## Key Concepts" in hub
+        assert hub.count("## Page-Map Navigation") == 1
+        assert "[[alpha]] — Opening" in hub
         assert "[[beta]] — Functions" in hub
         assert "[[gamma]] — Objects" in hub
 

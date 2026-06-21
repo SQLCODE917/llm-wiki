@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We can make a function that returns a value by putting the value to the right of the arrow, as seen with (() => 0)() returning 0. (raw/javascriptallonge.pdf p.32-33)",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0004"
+      ]
+    },
+    {
+      "bullet_text": "Values like 0 are expressions, as are things like 40 + 2, and we can put any expression to the right of the arrow. (raw/javascriptallonge.pdf p.32-33)",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0006"
+      ]
+    },
+    {
+      "bullet_text": "Functions can return the value of evaluating another function, such as with (() => (() => 0)())() returning 0. (raw/javascriptallonge.pdf p.32-33)",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0012"
+      ]
+    },
+    {
+      "bullet_text": "When dealing with expressions that have a lot of the same characters, formatting the code can help make things stand out. (raw/javascriptallonge.pdf p.32-33)",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0013"
+      ]
+    },
+    {
+      "bullet_text": "It evaluates to the same thing, 0. (raw/javascriptallonge.pdf p.32-33)",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0014"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on functions that return values and evaluate expressions from JavaScript Allongé."
+}

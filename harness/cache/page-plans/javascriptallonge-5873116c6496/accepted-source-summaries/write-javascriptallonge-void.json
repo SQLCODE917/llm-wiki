@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "void operator always returns undefined (raw/javascriptallonge.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0006"
+      ]
+    },
+    {
+      "bullet_text": "void operator is a reliable method for generating undefined values (raw/javascriptallonge.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0004"
+      ]
+    },
+    {
+      "bullet_text": "Using void 0 is the conventional way to produce undefined (raw/javascriptallonge.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0006"
+      ]
+    }
+  ],
+  "source_record_text": "A chapter on JavaScript's void operator, explaining how it evaluates to undefined regardless of the input value."
+}

@@ -11,7 +11,6 @@ from pathlib import Path
 from typing import Any, cast
 
 import pymupdf
-import pymupdf4llm  # type: ignore[import-untyped]
 
 from llmwiki.pdf.chunking import TocEntry
 from llmwiki.pdf.intermediate import relativize_image_refs
@@ -36,6 +35,8 @@ def read_page_char_counts(pdf_path: Path) -> list[int]:
 
 def extract_pdf(pdf_path: Path, cache_dir: Path) -> ExtractedPdf:
     """Convert the PDF to per-page markdown; write figures to <cache>/images."""
+    import pymupdf4llm  # type: ignore[import-untyped]
+
     images_dir = cache_dir / "images"
     images_dir.mkdir(parents=True, exist_ok=True)
 

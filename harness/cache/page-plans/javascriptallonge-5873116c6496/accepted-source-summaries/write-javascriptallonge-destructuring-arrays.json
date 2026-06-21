@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Destructuring is a feature going back to Common Lisp (raw/javascriptallonge.pdf p.103-104).",
+      "covered_source_claims": [
+        "source-claim-unit-0094-0001"
+      ]
+    },
+    {
+      "bullet_text": "Destructuring allows code that resembles the data it consumes, a valuable coding style (raw/javascriptallonge.pdf p.103-104).",
+      "covered_source_claims": [
+        "source-claim-unit-0094-0013"
+      ]
+    },
+    {
+      "bullet_text": "The statement const [something] = wrapped; destructures the array represented by wrapped, binding the value of its single element to the name something (raw/javascriptallonge.pdf p.103-104).",
+      "covered_source_claims": [
+        "source-claim-unit-0094-0010"
+      ]
+    },
+    {
+      "bullet_text": "We saw how to construct an array literal using [ , expressions, , and ] (raw/javascriptallonge.pdf p.103-104).",
+      "covered_source_claims": [
+        "source-claim-unit-0094-0002"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on destructuring arrays from JavaScript Allongé, covering the basics of array destructuring and its use in JavaScript."
+}

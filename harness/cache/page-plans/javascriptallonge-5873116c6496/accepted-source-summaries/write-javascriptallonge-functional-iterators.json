@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "terminalValue : fn(first, foldArrayWith(fn, terminalValue, rest)); const arraySum = callLeft(foldArrayWith, (a, b) => a + b, 0); arraySum([1, 4, 9, 16, 25]) //=> 55 (raw/javascriptallonge.pdf p.167-168)",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0008"
+      ]
+    },
+    {
+      "bullet_text": "The nice thing about this is that the definition for arraySum mostly concerns itself with summing, and not with traversing over a collection of data. (raw/javascriptallonge.pdf p.167-168)",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0009"
+      ]
+    },
+    {
+      "bullet_text": "terminalValue : fn(first, foldArrayWith(fn, terminalValue, rest)); const foldArray = (array) => callRight(foldArrayWith, array); const sumFoldable = (folder) => folder((a, b) => a + b, 0); sumFoldable(foldArray([1, 4, 9, 16, 25])) //=> 55 (raw/javascriptallonge.pdf p.167-168)",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0017"
+      ]
+    },
+    {
+      "bullet_text": "But it still relies on foldArrayWith , so it can only sum arrays. (raw/javascriptallonge.pdf p.167-168)",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0010"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explores the concept of functional iterators and how to separate the mechanism of traversing data structures from the operations performed on them."
+}

@@ -65,7 +65,11 @@ def build_map_workflow(
             max_chars=2000,
             track_truncated_reads=False,
         ),
-        plan_pages_tool(ingest_route_plan_state, recoverable_errors=recoverable_tool_errors),
+        plan_pages_tool(
+            ingest_route_plan_state,
+            recoverable_errors=recoverable_tool_errors,
+            prerequisites=["search_wiki"],
+        ),
         write_page_tool(
             store,
             today,

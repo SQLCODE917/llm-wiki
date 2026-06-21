@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The for...of loop works directly with any object that is iterable, meaning it works with any object that has a Symbol.iterator method that returns an object iterator (raw/javascriptallonge.pdf p.211-215).",
+      "covered_source_claims": [
+        "source-claim-unit-0160-0016"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the 'Basic Operations on Iterables' section from JavaScript Allongé, covering the for...of loop, Symbol.iterator, and spreading iterables."
+}

@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "It is very common to write things like title: title when destructuring objects (raw/javascriptallonge.pdf p.136-137).",
+      "covered_source_claims": [
+        "source-claim-unit-0116-0006"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter covers object destructuring in JavaScript, including how to destructure nested objects and how to use syntactic optimizations for cleaner code. It also shows how destructuring can be used with function parameters to extract values from objects."
+}

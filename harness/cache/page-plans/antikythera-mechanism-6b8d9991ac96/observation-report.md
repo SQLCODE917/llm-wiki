@@ -2,13 +2,15 @@
 
 - ExtractedUnits: 1
 - SourceClaims: 10
-- SourceClaimGroups: 7
+- SourceClaimGroups: 6
+- SourcePageGroups: 0
 - TopicClusters: 1
-- Pages enriched: 0
-- Pages created: 1
+- Planned page targets shown: 1 of 1
+- Pages enriched: 1
+- Pages created: 0
 - Contradictions: 0
 - Deferrals: 0
 
 ## Planned Page Targets
 
-- `antikythera-mechanism` | plan_pages action `create` | PagePlan action `create-new` | PageKind `source` | ResolvedPageBodyContract `source-summary` | SourceSummaryPlan `source-summary-plan-antikythera-mechanism` selected `source-claim-unit-0001-0001 [identity] span `document s.1` terms `antikythera, mechanism, ancient, greek`; source-claim-unit-0001-0007 [negative-evidence, mechanism, attribute] span `document s.7` terms `workshop, its, gear-cutting, precision`; source-claim-unit-0001-0010 [uncertainty, evidence, provenance, relationship, attribute] span `document s.10` terms `inscriptions, suggest, device, may`; source-claim-unit-0001-0004 [function, mechanism, procedure] span `document s.4` terms `moon, turning, hand, crank`; source-claim-unit-0001-0009 [method, evidence, temporal, quantitative] span `document s.9` terms `antikythera, mechanism, research, project`` | sources `raw/antikythera-mechanism.md` | path `antikythera-mechanism.md`
+- `antikythera-mechanism` | plan_pages action `enrich` | PagePlan action `enrich-existing` | PageKind `source` | ResolvedPageBodyContract `source-summary` | SourceSummaryPlan selected claims (use claim_id only in covered_source_claims): claim_id `source-claim-unit-0001-0001` [identity] eligibility `eligible` centrality `1.0` terms `antikythera, mechanism, ancient, greek` statement `The Antikythera mechanism is an ancient Greek hand-powered orrery, often described as the oldest known analog computer.`; claim_id `source-claim-unit-0001-0002` [provenance, temporal, quantitative, identity] eligibility `eligible` centrality `0.5` terms `was, retrieved, sea, shipwreck` statement `It was retrieved from the sea in 1901 from a shipwreck off the coast of the Greek island of Antikythera, and is dated to roughly 150–100 BC.`; claim_id `source-claim-unit-0001-0009` [method, evidence, temporal, quantitative] eligibility `eligible` centrality `1.0` terms `antikythera, mechanism, research, project` statement `The Antikythera Mechanism Research Project, beginning in 2005, used microfocus X-ray computed tomography to read inscriptions hidden inside the corroded fragments — effectively a user's manual engraved on...`; claim_id `source-claim-unit-0001-0006` [evidence, quantitative, comparison] eligibility `eligible` centrality `0.5` terms `mechanism, sophistication, was, not` statement `The mechanism's sophistication was not matched in the surviving record until the astronomical clocks of medieval Europe, more than a thousand years later.` | constraints: put citation `raw/antikythera-mechanism.md` in every bullet_text; stay under 220 words | sources `raw/antikythera-mechanism.md` | path `antikythera-mechanism.md`

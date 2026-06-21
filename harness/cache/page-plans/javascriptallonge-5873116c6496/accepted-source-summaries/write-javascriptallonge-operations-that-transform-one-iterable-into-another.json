@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The `mapWith` function maps each element of an iterable using a provided function, as described in (raw/javascriptallonge.pdf p.284-285).",
+      "covered_source_claims": [
+        "source-claim-unit-0197-0001"
+      ]
+    },
+    {
+      "bullet_text": "The `take` function takes a specified number of elements from an iterable, as described in (raw/javascriptallonge.pdf p.284-285).",
+      "covered_source_claims": [
+        "source-claim-unit-0197-0002"
+      ]
+    }
+  ],
+  "source_record_text": "This section describes operations that transform one iterable into another, focusing on generator functions that process iterables. Key functions include `mapWith`, `mapAllWith`, `filterWith`, `compact`, `untilWith`, `rest`, and `take`."
+}

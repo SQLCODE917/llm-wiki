@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "So when the function is called, JavaScript looks up i in its enclosing environment (its closure, obviously), and gets the value 3, as cited in (raw/javascriptallonge.pdf p.155-157).",
+      "covered_source_claims": [
+        "source-claim-unit-0125-0015"
+      ]
+    },
+    {
+      "bullet_text": "But at the time we call one of the functions, i has the value 3, which is why the loop terminated, as cited in (raw/javascriptallonge.pdf p.155-157).",
+      "covered_source_claims": [
+        "source-claim-unit-0125-0014"
+      ]
+    },
+    {
+      "bullet_text": "The answer is that pesky var i, as cited in (raw/javascriptallonge.pdf p.155-157).",
+      "covered_source_claims": [
+        "source-claim-unit-0125-0010"
+      ]
+    }
+  ],
+  "source_record_text": "This section from JavaScript Allongé explores the pitfalls of using `var` in loops and how `let` provides a cleaner solution, demonstrating closure behavior with a practical example."
+}

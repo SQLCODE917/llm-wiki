@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Linear recursion is a form of divide and conquer strategy for solving problems, where a problem is broken into smaller subproblems and solved recursively (raw/javascriptallonge.pdf p.111-113).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0003"
+      ]
+    }
+  ],
+  "source_record_text": "This section from JavaScript Allongé introduces linear recursion as a form of divide and conquer strategy for problem solving in programming."
+}

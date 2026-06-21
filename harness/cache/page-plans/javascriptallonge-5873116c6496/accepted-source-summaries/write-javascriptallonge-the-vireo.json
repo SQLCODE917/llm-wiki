@@ -1,0 +1,22 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The Vireo is a little like JavaScript's .apply function (raw/javascriptallonge.pdf p.182-183). It takes two values and applies them to a function.",
+      "covered_source_claims": [
+        "source-claim-unit-0139-0016",
+        "source-claim-unit-0139-0017"
+      ]
+    },
+    {
+      "bullet_text": "One notable example is the 'thrush' or T combinator (raw/javascriptallonge.pdf p.182-183). It takes one value and applies it to a function.",
+      "covered_source_claims": [
+        "source-claim-unit-0139-0018"
+      ]
+    },
+    {
+      "bullet_text": "The V combinator is used to make data structures with functions (raw/javascriptallonge.pdf p.182-183).",
+      "covered_source_claims": []
+    }
+  ],
+  "source_record_text": "The Vireo (V combinator) and related combinators in the context of data structures, as described in JavaScript Allongé."
+}

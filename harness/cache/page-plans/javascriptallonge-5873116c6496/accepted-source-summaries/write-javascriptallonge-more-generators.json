@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We've writing a function that returns an iterator, but we used a generator to do it. (raw/javascriptallonge.pdf p.236-239)",
+      "covered_source_claims": [
+        "source-claim-unit-0174-0008"
+      ]
+    }
+  ],
+  "source_record_text": "A section on generators in JavaScript Allongé, covering infinite streams, Fibonacci sequences, and the use of yield."
+}

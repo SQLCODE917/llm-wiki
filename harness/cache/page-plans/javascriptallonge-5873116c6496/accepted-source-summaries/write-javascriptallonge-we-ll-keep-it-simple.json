@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "In a generator, we write 'do this, then this, then this.' In an iterator, we have to wrap that up and explicitly keep track of what step we're on. (raw/javascriptallonge.pdf p.229-230)",
+      "covered_source_claims": [
+        "source-claim-unit-0170-0004"
+      ]
+    },
+    {
+      "bullet_text": "So we see the same thing: The generation version has state, but it's implicit in JavaScript's linear control flow. (raw/javascriptallonge.pdf p.229-230)",
+      "covered_source_claims": [
+        "source-claim-unit-0170-0005"
+      ]
+    },
+    {
+      "bullet_text": "Whereas the iteration version must make that state explicit. (raw/javascriptallonge.pdf p.229-230)",
+      "covered_source_claims": [
+        "source-claim-unit-0170-0006"
+      ]
+    }
+  ],
+  "source_record_text": "This section contrasts the use of generators and iterators in JavaScript, focusing on how state is handled in each approach."
+}

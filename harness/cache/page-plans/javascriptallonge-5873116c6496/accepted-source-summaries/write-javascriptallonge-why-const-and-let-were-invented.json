@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "For nearly twenty years, variables were declared with var (not counting parameters and function declarations, of course). (raw/javascriptallonge.pdf p.154-154)",
+      "covered_source_claims": [
+        "source-claim-unit-0124-0002"
+      ]
+    },
+    {
+      "bullet_text": "The other kids were adding the numbers like this: 1 + 2 + 3 + . (raw/javascriptallonge.pdf p.154-154)",
+      "covered_source_claims": [
+        "source-claim-unit-0124-0012"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the section 'why const and let were invented' from javascriptallonge.pdf"
+}

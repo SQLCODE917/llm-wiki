@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Some languages support multiple return values: A function can return several things at once, like a value and an error code. (raw/javascriptallonge.pdf p.106-107)",
+      "covered_source_claims": [
+        "source-claim-unit-0097-0001"
+      ]
+    },
+    {
+      "bullet_text": "This can easily be emulated in JavaScript with destructuring. (raw/javascriptallonge.pdf p.106-107)",
+      "covered_source_claims": [
+        "source-claim-unit-0097-0002"
+      ]
+    },
+    {
+      "bullet_text": "In JavaScript, a function can return multiple values using destructuring. (raw/javascriptallonge.pdf p.106-107)",
+      "covered_source_claims": [
+        "source-claim-unit-0097-0003"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter discusses how some languages support multiple return values, and how this can be emulated in JavaScript using destructuring."
+}

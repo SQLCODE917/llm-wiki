@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing. (raw/javascriptallonge.pdf p.202-203)",
+      "covered_source_claims": [
+        "source-claim-unit-0152-0008"
+      ]
+    },
+    {
+      "bullet_text": "There are operators that can be used on strings. (raw/javascriptallonge.pdf p.202-203)",
+      "covered_source_claims": [
+        "source-claim-unit-0152-0005"
+      ]
+    },
+    {
+      "bullet_text": "String manipulation is extremely common in programming. (raw/javascriptallonge.pdf p.202-203)",
+      "covered_source_claims": [
+        "source-claim-unit-0152-0007"
+      ]
+    },
+    {
+      "bullet_text": "For example, the escape sequence \\n inserts a newline character in a string literal, like this: 'first line\\nsecond line'. (raw/javascriptallonge.pdf p.202-203)",
+      "covered_source_claims": [
+        "source-claim-unit-0152-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on basic strings and quasi-literals in JavaScript Allongé."
+}

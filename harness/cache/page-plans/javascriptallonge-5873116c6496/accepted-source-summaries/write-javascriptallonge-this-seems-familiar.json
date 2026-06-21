@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Naughts and crosses is simple enough that the lookup function seems substantially simpler, in part because linear code doesn't represent trees particularly well (raw/javascriptallonge.pdf p.280-282).",
+      "covered_source_claims": [
+        "source-claim-unit-0193-0009"
+      ]
+    },
+    {
+      "bullet_text": "But the first glance is deceptive, because we only see what we've seen so far (raw/javascriptallonge.pdf p.280-282).",
+      "covered_source_claims": [
+        "source-claim-unit-0193-0016"
+      ]
+    },
+    {
+      "bullet_text": "But we can clearly see that if we wanted to, we could represent the state of the program implicitly in a decision tree (raw/javascriptallonge.pdf p.280-282).",
+      "covered_source_claims": [
+        "source-claim-unit-0193-0010"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explores state machines and implicit state representation in JavaScript control flow, using the naughts and crosses game as an example."
+}

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript provides default argument syntax, which allows specifying a default value for function parameters. (raw/javascriptallonge.pdf p.123-124)",
+      "covered_source_claims": [
+        "source-claim-unit-0108-0007"
+      ]
+    },
+    {
+      "bullet_text": "Default arguments are concise and readable. (raw/javascriptallonge.pdf p.123-124)",
+      "covered_source_claims": [
+        "source-claim-unit-0108-0016"
+      ]
+    },
+    {
+      "bullet_text": "Using default arguments avoids the need to always provide all parameters, improving usability for tail-recursive functions. (raw/javascriptallonge.pdf p.123-124)",
+      "covered_source_claims": [
+        "source-claim-unit-0108-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Default arguments in JavaScript, including tail-recursive function examples and syntax."
+}

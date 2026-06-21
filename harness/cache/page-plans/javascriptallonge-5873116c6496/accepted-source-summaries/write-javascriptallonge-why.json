@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "This has little practical utility in JavaScript, but in combinatory logic it's essential: With fixed-point combinators it's possible to compute everything computable without binding names. (raw/javascriptallonge.pdf p.201-201)",
+      "covered_source_claims": [
+        "source-claim-unit-0151-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter Why? from 'JavaScript Allongé' explains the Y Combinator and its role in recursive functions without binding names."
+}

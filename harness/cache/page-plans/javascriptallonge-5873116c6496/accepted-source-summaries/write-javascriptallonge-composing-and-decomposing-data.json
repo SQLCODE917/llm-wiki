@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Recursion is the root of computation since it trades description for time (raw/javascriptallonge.pdf p.100-100).",
+      "covered_source_claims": [
+        "source-claim-unit-0090-0001"
+      ]
+    }
+  ],
+  "source_record_text": "Recursion is the root of computation since it trades description for time, according to Alan Perlis."
+}

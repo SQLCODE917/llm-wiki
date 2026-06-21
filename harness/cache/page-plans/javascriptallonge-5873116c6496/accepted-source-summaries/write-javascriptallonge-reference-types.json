@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "This is an expression, and you can combine [] with other expressions (raw/javascriptallonge.pdf p.22-23).",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0004"
+      ]
+    },
+    {
+      "bullet_text": "When you type [1, 2, 3] or any of its variations, you are typing an expression that generates its own unique array that is not identical to any other array, even if that other array also looks like [1, 2, 3] (raw/javascriptallonge.pdf p.22-23).",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0009"
+      ]
+    },
+    {
+      "bullet_text": "An array looks like this: [1, 2, 3] (raw/javascriptallonge.pdf p.22-23).",
+      "covered_source_claims": [
+        "source-claim-unit-0020-0003"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter discusses reference types in JavaScript, particularly arrays, and how they are not identical even when they have the same contents."
+}

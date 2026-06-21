@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "This upgrade became ECMAScript 6 (some features that were initially discussed will show up later, in upcoming ECMAScript versions). (raw/javascriptallonge.pdf p.13-13)",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0008"
+      ]
+    },
+    {
+      "bullet_text": "That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language. (raw/javascriptallonge.pdf p.13-13)",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0003"
+      ]
+    },
+    {
+      "bullet_text": "A larger upgrade would substantially improve JavaScript, but without being as radical as ECMAScript 4. (raw/javascriptallonge.pdf p.13-13)",
+      "covered_source_claims": [
+        "source-claim-unit-0010-0007"
+      ]
+    }
+  ],
+  "source_record_text": "This foreword discusses the evolution of ECMAScript 6, detailing how it emerged from the aborted ECMAScript 4 plan."
+}

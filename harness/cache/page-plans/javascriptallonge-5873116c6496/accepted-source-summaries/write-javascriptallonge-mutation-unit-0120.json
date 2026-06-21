@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "As noted, one pattern is to be more liberal about mutation when building a data structure (raw/javascriptallonge.pdf p.145-147).",
+      "covered_source_claims": [
+        "source-claim-unit-0120-0001"
+      ]
+    },
+    {
+      "bullet_text": "If we want to make a copy of a linked list without iterating over it twice and making a copy we discard later, we can use mutation (raw/javascriptallonge.pdf p.145-147).",
+      "covered_source_claims": [
+        "source-claim-unit-0120-0006"
+      ]
+    },
+    {
+      "bullet_text": "But when we're in the midst of creating a brand new list, we aren't sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time (raw/javascriptallonge.pdf p.145-147).",
+      "covered_source_claims": [
+        "source-claim-unit-0120-0010"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how mutation works in JavaScript, covering arrays, objects, aliases, and assignment semantics, with possible nuances. This specific section focuses on building data structures with mutation, particularly in the context of linked lists."
+}

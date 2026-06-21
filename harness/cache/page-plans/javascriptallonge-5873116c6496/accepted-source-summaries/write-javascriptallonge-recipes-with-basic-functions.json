@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The recipes are written for practicality and may introduce JavaScript features such as methods and prototypes (raw/javascriptallonge.pdf p.79-93)",
+      "bullet_text": "Functions returning functions are a key theme. (raw/javascriptallonge.pdf p.79-79)",
       "covered_source_claims": [
-        "source-claim-unit-0007-0004"
+        "source-claim-unit-0071-0002"
       ]
     },
     {
-      "bullet_text": "Each recipe fits within the spirit of the language discussed so far, even if some implementations use advanced features (raw/javascriptallonge.pdf p.79-93)",
+      "bullet_text": "The chapter begins with a metaphor about cleaning implements. (raw/javascriptallonge.pdf p.79-79)",
       "covered_source_claims": [
-        "source-claim-unit-0007-0005"
+        "source-claim-unit-0071-0001"
       ]
     },
     {
-      "bullet_text": "The partial application recipes bind a leftmost or rightmost argument, demonstrating closures and context‑aware partials (raw/javascriptallonge.pdf p.79-93)",
+      "bullet_text": "Practical recipes focus on functions that return functions. (raw/javascriptallonge.pdf p.79-79)",
       "covered_source_claims": [
-        "source-claim-unit-0007-0010"
-      ]
-    },
-    {
-      "bullet_text": "The chapter includes code examples such as `callFirst`, `callLast`, and `greet` (raw/javascriptallonge.pdf p.79-93)",
-      "covered_source_claims": [
-        "source-claim-unit-0007-0001"
-      ]
-    },
-    {
-      "bullet_text": "The chapter focuses on functions that return functions, covering partial application and other practical recipes (raw/javascriptallonge.pdf p.79-93)",
-      "covered_source_claims": [
-        "source-claim-unit-0007-0003"
+        "source-claim-unit-0071-0002"
       ]
     }
   ],
-  "source_record_text": "Recipes with basic functions, a chapter that covers partial application, a unary .."
+  "source_record_text": "Recipes with basic functions, a chapter that covers partial application, a unary, and other practical recipes for functions that return functions."
 }

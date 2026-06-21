@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import ast
 from dataclasses import replace
 from typing import Any, Literal
 
@@ -42,6 +43,20 @@ def _normalize_source_value(value: str) -> str:
     if "(raw/" in stripped and ")" in stripped:
         stripped = stripped.split("(raw/", 1)[1].split(")", 1)[0]
     return stripped.removeprefix("raw/")
+
+
+def _literal_list(value: object) -> object:
+    if not isinstance(value, str):
+        return value
+    candidates = (value, value.replace("\\\\'", "\\'"))
+    for candidate in candidates:
+        try:
+            parsed = ast.literal_eval(candidate)
+        except (SyntaxError, ValueError):
+            continue
+        if isinstance(parsed, list):
+            return parsed
+    return value
 
 
 class ReadSourceParams(BaseModel):
@@ -97,6 +112,10 @@ class WritePageParams(BaseModel):
         if not isinstance(value, dict):
             return value
         data: dict[str, Any] = {str(key).strip(): item for key, item in value.items()}
+        data["claim_bullets"] = _literal_list(data.get("claim_bullets", []))
+        sources = _literal_list(data.get("sources", []))
+        if isinstance(sources, list):
+            data["sources"] = sources
         if isinstance(data.get("claim_bullets"), list):
             data["claim_bullets"] = [
                 rescue_claim_bullet(item) for item in data["claim_bullets"]

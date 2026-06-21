@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Many operations on ordered collections return another ordered collection. (raw/javascriptallonge.pdf p.217-221)",
+      "covered_source_claims": [
+        "source-claim-unit-0163-0010"
+      ]
+    },
+    {
+      "bullet_text": "This illustrates the general pattern of working with ordered collections: We make them iterables, meaning that they have a [Symbol.iterator] method, that returns an iterator. (raw/javascriptallonge.pdf p.217-221)",
+      "covered_source_claims": [
+        "source-claim-unit-0163-0008"
+      ]
+    },
+    {
+      "bullet_text": "89 Yes, we also used the name mapWith for working with ordinary collections elsewhere. (raw/javascriptallonge.pdf p.217-221)",
+      "covered_source_claims": [
+        "source-claim-unit-0163-0003"
+      ]
+    },
+    {
+      "bullet_text": "Here's mapWith, it takes an ordered collection, and returns another ordered collection representing a mapping over the original: 89 (raw/javascriptallonge.pdf p.217-221)",
+      "covered_source_claims": [
+        "source-claim-unit-0163-0002"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé – A modular guide to JavaScript fundamentals and advanced techniques, chapter on operations on ordered collections."
+}

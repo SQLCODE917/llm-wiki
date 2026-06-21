@@ -10,10 +10,11 @@ from forge.core.workflow import ToolCall
 from helpers import wiki_page
 
 from llmwiki.config import WikiPaths
+from llmwiki.domain.objects import PagePlan, RawSource, SourceBundle, SourcePageGroup
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
 from llmwiki.pdf.pipeline import ExtractionResult
-from llmwiki.runtime.session import Session
+from llmwiki.runtime.session import Session, _required_hub_page_map
 from llmwiki.store import WikiStore
 
 TODAY = "2026-06-11"
@@ -47,6 +48,52 @@ def _fake_extraction(
         ),
     )
     return ExtractionResult(manifest=manifest, cache_dir=cache_dir)
+
+
+def test_required_hub_page_map_dedupes_source_page_groups() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    plan = PagePlan(
+        plan_id="plan-book",
+        source_bundle=SourceBundle.one(raw_source),
+        extracted_units=(),
+        source_claims=(),
+        source_claim_groups=(),
+        candidate_claims=(),
+        candidate_topics=(),
+        candidate_entities=(),
+        topic_clusters=(),
+        wiki_matches=(),
+        claim_comparisons=(),
+        planned_writes=(),
+        source_page_groups=(
+            _source_page_group(raw_source, "book-summary", "Summary", "unit-0001"),
+            _source_page_group(raw_source, "book-summary", "Summary", "unit-0002"),
+            _source_page_group(raw_source, BOOK_HUB, "Hub", "unit-0003"),
+            _source_page_group(raw_source, FUNCTIONS_PAGE, "Functions", "unit-0004"),
+        ),
+    )
+    manifest = Manifest(source="book.pdf", sha256="deadbeef" * 8, chunks=())
+
+    targets, entries = _required_hub_page_map(plan, manifest, BOOK_HUB)
+
+    assert targets == ("book-summary", FUNCTIONS_PAGE)
+    assert entries == (("book-summary", "Summary"), (FUNCTIONS_PAGE, "Functions"))
+
+
+def _source_page_group(
+    raw_source: RawSource, page_id: str, heading: str, unit_id: str
+) -> SourcePageGroup:
+    return SourcePageGroup(
+        source_page_group_id=f"source-page-group-{unit_id}-{unit_id}",
+        raw_source=raw_source,
+        page_id=page_id,
+        extracted_units=(unit_id,),
+        first_heading=heading,
+        last_heading=heading,
+        first_locator="p.1",
+        last_locator="p.1",
+        token_estimate=20,
+    )
 
 
 def _write_page_call(name: str) -> ToolCall:
@@ -344,6 +391,48 @@ class TestPdfIngest:
         assert saved.chunks[0].route_gap_summaries == (
             "Minor syntax aside folded into the chapter page.",
         )
+
+    async def test_heading_only_chunk_is_deterministic_route_gap(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+        cache_dir = paths.cache_dir / "heading-only"
+        chunks_dir = cache_dir / "chunks"
+        chunks_dir.mkdir(parents=True, exist_ok=True)
+        (chunks_dir / "0001.md").write_text("# Title Only", encoding="utf-8")
+        (chunks_dir / "0002.md").write_text(
+            "Closures capture lexical scope.", encoding="utf-8"
+        )
+        extraction = ExtractionResult(
+            manifest=Manifest(
+                source="book.pdf",
+                sha256="bead" * 16,
+                chunks=(
+                    ChunkRecord(1, "Title Only", 1, 1, 8),
+                    ChunkRecord(2, "Closures", 11, 20, 20),
+                ),
+            ),
+            cache_dir=cache_dir,
+        )
+        session = _session(
+            store,
+            _map_turns(CLOSURES_PAGE, "noted closures") + _INTEGRATE_TURNS,
+            paths,
+            extraction,
+        )
+
+        await session.ingest("book.pdf")
+
+        saved = from_json((cache_dir / "manifest.json").read_text(encoding="utf-8"))
+        assert saved.chunks[0].pages_written == ()
+        assert saved.chunks[0].route_plan_gaps == 1
+        assert saved.chunks[0].route_gap_summaries == (
+            "Title Only (pages 1-1): no claim-bearing source-page material.",
+        )
+        assert saved.chunks[1].pages_written == (CLOSURES_PAGE,)
+        fake: FakeClient = session.client
+        first_user_messages = [m["content"] for m in fake.sent[0] if m.get("role") == "user"]
+        assert any("Ingest chunk 2 of 2" in content for content in first_user_messages)
 
     async def test_hub_key_lists_reconciled_after_integrate(
         self, store: WikiStore, paths: WikiPaths

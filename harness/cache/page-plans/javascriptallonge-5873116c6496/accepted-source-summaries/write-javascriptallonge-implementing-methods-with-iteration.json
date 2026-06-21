@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Object-oriented collections should definitely have methods for mapping, reducing, filtering, and finding (raw/javascriptallonge.pdf p.246-253).",
+      "covered_source_claims": [
+        "source-claim-unit-0179-0001"
+      ]
+    },
+    {
+      "bullet_text": "Composing an iterable with a mapIterable method cleaves the responsibility for knowing how to map from the fiddly bits of how a linked list differs from a stack (raw/javascriptallonge.pdf p.246-253).",
+      "covered_source_claims": [
+        "source-claim-unit-0179-0003"
+      ]
+    },
+    {
+      "bullet_text": "And if we want to create convenience methods, we can reuse common pieces (raw/javascriptallonge.pdf p.246-253).",
+      "covered_source_claims": [
+        "source-claim-unit-0179-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on implementing methods with iteration in JavaScript Allongé."
+}

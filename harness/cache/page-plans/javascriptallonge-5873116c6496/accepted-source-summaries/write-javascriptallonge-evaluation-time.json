@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Like any other expression, quasi-literals are evaluated late, when that line or lines of code is evaluated. (raw/javascriptallonge.pdf p.204-204)",
+      "covered_source_claims": [
+        "source-claim-unit-0154-0001"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function's body is evaluated. (raw/javascriptallonge.pdf p.204-204)",
+      "covered_source_claims": [
+        "source-claim-unit-0154-0003"
+      ]
+    },
+    {
+      "bullet_text": "Thus, name is not bound to \"Harry\", it is bound to 'Arthur Dent', the value of the parameter when the function is invoked. (raw/javascriptallonge.pdf p.204-204)",
+      "covered_source_claims": [
+        "source-claim-unit-0154-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the evaluation time section from JavaScript Allongé, focusing on quasi-literals and their evaluation timing."
+}

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Iterables look cool, but then again, everything looks amazing when you're given cherry-picked examples. What is there they don't do well? (raw/javascriptallonge.pdf p.224-226)",
+      "covered_source_claims": [
+        "source-claim-unit-0166-0001"
+      ]
+    },
+    {
+      "bullet_text": "Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done. (raw/javascriptallonge.pdf p.224-226)",
+      "covered_source_claims": [
+        "source-claim-unit-0166-0004"
+      ]
+    },
+    {
+      "bullet_text": "Iterators have to arrange its own state such that when you call them, they compute and return the next item. (raw/javascriptallonge.pdf p.224-226)",
+      "covered_source_claims": [
+        "source-claim-unit-0166-0005"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explains how iterables and generators work in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax."
+}

@@ -14,6 +14,7 @@ from llmwiki.domain.objects import (
     Schema,
     SourceClaim,
     SourceClaimGroup,
+    SourcePageGroup,
     SourcePlan,
     WikiMatch,
 )
@@ -26,7 +27,7 @@ from llmwiki.domain.page_body_contracts import (
     uncertainty_terms_in_text,
 )
 from llmwiki.domain.pages import PageMetadata, WikiStructure, slugify
-from llmwiki.domain.planning_analysis import same_section_identity, unit_match
+from llmwiki.domain.planning_analysis import unit_match
 from llmwiki.domain.source_claims import source_summary_plan
 
 
@@ -34,6 +35,7 @@ def planned_writes(
     *,
     raw_source: RawSource,
     extracted_units: tuple[ExtractedUnit, ...],
+    source_page_groups: tuple[SourcePageGroup, ...],
     existing_pages: dict[str, str],
     wiki_matches: tuple[WikiMatch, ...],
     claim_comparisons: tuple[ClaimComparison, ...],
@@ -44,16 +46,17 @@ def planned_writes(
     source_plan: SourcePlan | None = None,
     source_claims: tuple[SourceClaim, ...] = (),
     source_claim_groups: tuple[SourceClaimGroup, ...] = (),
-    new_page_prefix: str | None = None,
 ) -> tuple[PlannedPageWrite, ...]:
     active_schema = schema or Schema()
     selections = source_plan.page_body_contract_selections if source_plan is not None else ()
     writes: list[PlannedPageWrite] = []
     if not include_markdown_subject:
+        units_by_id = {unit.unit_id: unit for unit in extracted_units}
         writes.extend(
-            _planned_write_for_unit(
+            _planned_write_for_group(
                 raw_source,
-                unit,
+                group,
+                units_by_id,
                 existing_pages,
                 wiki_matches,
                 claim_comparisons,
@@ -63,9 +66,8 @@ def planned_writes(
                 selections,
                 source_claims,
                 source_claim_groups,
-                new_page_prefix,
             )
-            for unit in extracted_units
+            for group in source_page_groups
         )
     hub = _hub_write(
         raw_source,
@@ -84,9 +86,10 @@ def planned_writes(
     return tuple(writes)
 
 
-def _planned_write_for_unit(
+def _planned_write_for_group(
     raw_source: RawSource,
-    unit: ExtractedUnit,
+    group: SourcePageGroup,
+    units_by_id: dict[str, ExtractedUnit],
     existing_pages: dict[str, str],
     wiki_matches: tuple[WikiMatch, ...],
     comparisons: tuple[ClaimComparison, ...],
@@ -96,34 +99,45 @@ def _planned_write_for_unit(
     contract_selections: tuple[SourcePlanContractSelection, ...],
     source_claims: tuple[SourceClaim, ...],
     source_claim_groups: tuple[SourceClaimGroup, ...],
-    new_page_prefix: str | None,
 ) -> PlannedPageWrite:
-    page_id = _target_page_id(unit, existing_pages, new_page_prefix)
+    units = tuple(
+        units_by_id[unit_id] for unit_id in group.extracted_units if unit_id in units_by_id
+    )
+    page_id = group.page_id
     metadata = PageMetadata(
         page_id=page_id,
         page_kind="source",
-        summary=f"{unit.heading_path} from raw/{raw_source.source_locator}.",
-        sources=(f"raw/{raw_source.source_locator} {unit.locator}".strip(),),
+        summary=_source_page_group_summary(group, raw_source),
+        sources=tuple(f"raw/{raw_source.source_locator} {unit.locator}".strip() for unit in units),
         updated=today,
         source_id=raw_source.source_locator,
     )
+    unit_ids = frozenset(group.extracted_units)
+    target_source_claims = tuple(
+        claim for claim in source_claims if claim.extracted_unit_id in unit_ids
+    )
+    match_items = (wiki_matches,) if isinstance(wiki_matches, WikiMatch) else wiki_matches
     return _planned_write(
         write_id=f"write-{page_id}",
         action="enrich-existing" if page_id in existing_pages else "create-new",
         metadata=metadata,
         structure=structure,
-        extracted_units=(unit.unit_id,),
-        evidence=(Evidence(raw_source, unit.locator),),
-        wiki_matches=tuple(match for match in wiki_matches if unit_match(match, unit.unit_id)),
+        extracted_units=group.extracted_units,
+        evidence=tuple(Evidence(raw_source, unit.locator) for unit in units),
+        wiki_matches=tuple(
+            match
+            for match in match_items
+            if any(unit_match(match, unit_id) for unit_id in unit_ids)
+        ),
         comparisons=tuple(item for item in comparisons if item.page_id == page_id),
         schema=schema,
         contract_selections=contract_selections,
-        required_uncertainty_terms=uncertainty_terms_in_text(unit.text),
-        source_claims=tuple(
-            claim for claim in source_claims if claim.extracted_unit_id == unit.unit_id
-        ),
+        required_uncertainty_terms=_required_source_uncertainty_terms(target_source_claims),
+        source_claims=target_source_claims,
         source_claim_groups=tuple(
-            group for group in source_claim_groups if unit.unit_id in group.extracted_units
+            group_item
+            for group_item in source_claim_groups
+            if unit_ids.intersection(group_item.extracted_units)
         ),
     )
 
@@ -161,9 +175,7 @@ def _hub_write(
         comparisons=(),
         schema=schema,
         contract_selections=contract_selections,
-        required_uncertainty_terms=uncertainty_terms_in_text(
-            "\n\n".join(unit.text for unit in units)
-        ),
+        required_uncertainty_terms=_required_source_uncertainty_terms(source_claims),
         source_claims=source_claims,
         source_claim_groups=source_claim_groups,
         source_summary_enabled=source_summary_enabled,
@@ -263,28 +275,25 @@ def _required_link_page_ids(page_id: str, wiki_matches: tuple[WikiMatch, ...]) -
     return tuple(dict.fromkeys(match.page_id for match in wiki_matches if match.page_id != page_id))
 
 
-def _target_page_id(
-    unit: ExtractedUnit, existing_pages: dict[str, str], new_page_prefix: str | None
-) -> str:
-    default_page_id = slugify(unit.heading_path)
-    if new_page_prefix is None:
-        if default_page_id in existing_pages:
-            return default_page_id
-        for page_id in existing_pages:
-            if same_section_identity(unit.heading_path, page_id):
-                return page_id
-        return default_page_id
-    if default_page_id == new_page_prefix or default_page_id.startswith(f"{new_page_prefix}-"):
-        return default_page_id
-    prefixed_page_id = f"{new_page_prefix}-{default_page_id}"
-    if prefixed_page_id in existing_pages:
-        return prefixed_page_id
-    for page_id in existing_pages:
-        if page_id.startswith(f"{new_page_prefix}-") and same_section_identity(
-            unit.heading_path, page_id.removeprefix(f"{new_page_prefix}-")
-        ):
-            return page_id
-    return prefixed_page_id
+def _required_source_uncertainty_terms(
+    source_claims: tuple[SourceClaim, ...],
+) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            term
+            for claim in source_claims
+            if "source-uncertainty" in claim.claim_role_tags
+            for term in uncertainty_terms_in_text(claim.statement)
+        )
+    )
+
+
+def _source_page_group_summary(group: SourcePageGroup, raw_source: RawSource) -> str:
+    if group.first_heading == group.last_heading:
+        return f"{group.first_heading} from raw/{raw_source.source_locator}."
+    return (
+        f"{group.first_heading} through {group.last_heading} from raw/{raw_source.source_locator}."
+    )
 
 
 def _hub_page_id(raw_source: RawSource) -> str:

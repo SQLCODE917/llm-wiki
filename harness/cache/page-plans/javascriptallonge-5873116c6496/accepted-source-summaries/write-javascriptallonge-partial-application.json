@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Another basic building block is partial application (raw/javascriptallonge.pdf p.72-73).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0001"
+      ]
+    },
+    {
+      "bullet_text": "In that case, we can't get the final value, but we can get a function that represents part of our application (raw/javascriptallonge.pdf p.72-73).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0004"
+      ]
+    },
+    {
+      "bullet_text": "The Underscore library provides a higher-order function called map (raw/javascriptallonge.pdf p.72-73).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0006"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter covers partial application, a fundamental concept in functional programming, and demonstrates its application with practical examples using the Underscore library and custom implementations."
+}

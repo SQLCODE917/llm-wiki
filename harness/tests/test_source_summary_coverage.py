@@ -48,14 +48,14 @@ def test_claim_role_tags_default_to_shared_vocabulary_and_can_be_replaced() -> N
     )
 
     default_claims = source_claims((unit,), Schema())
-    uncertainty_only_claims = source_claims(
+    modality_only_claims = source_claims(
         (unit,),
-        Schema(claim_role_tags=(ClaimRoleTag("uncertainty"),)),
+        Schema(claim_role_tags=(ClaimRoleTag("ordinary-modality"),)),
     )
     role_free_claims = source_claims((unit,), Schema(claim_role_tags=()))
 
-    assert {"function", "uncertainty"} <= set(default_claims[0].claim_role_tags)
-    assert uncertainty_only_claims[0].claim_role_tags == ("uncertainty",)
+    assert {"function", "ordinary-modality"} <= set(default_claims[0].claim_role_tags)
+    assert modality_only_claims[0].claim_role_tags == ("ordinary-modality",)
     assert all(claim.claim_role_tags == () for claim in role_free_claims)
     assert (
         SourceClaim(
@@ -81,7 +81,7 @@ def test_source_summary_plan_selects_limits_uncertainty_and_groups() -> None:
             "It could predict eclipses. "
             "Only fragments survive. "
             "No complete manual was found. "
-            "Scholars may not know every display."
+            "The source does not specify every display."
         ),
     )
     claims = source_claims((unit,), Schema())
@@ -105,7 +105,7 @@ def test_source_summary_plan_selects_limits_uncertainty_and_groups() -> None:
         if claim.source_claim_id in plan.selected_source_claims
         for role in claim.claim_role_tags
     }
-    assert {"limitation", "negative-evidence", "uncertainty"} <= selected_roles
+    assert {"limitation", "negative-evidence", "source-uncertainty"} <= selected_roles
     assert plan.required_source_claim_groups
     assert plan.required_source_citations == ("raw/antikythera-mechanism.md",)
 
@@ -140,9 +140,7 @@ def test_source_summary_plan_prefers_early_claims_in_mixed_chunks() -> None:
 
     assert plan is not None
     selected_statements = [
-        claim.statement
-        for claim in claims
-        if claim.source_claim_id in plan.selected_source_claims
+        claim.statement for claim in claims if claim.source_claim_id in plan.selected_source_claims
     ]
     assert any("death check" in statement for statement in selected_statements)
     assert not any("Crimson breastplate" in statement for statement in selected_statements)
@@ -176,9 +174,7 @@ def test_source_summary_plan_ignores_generic_page_terms_in_section_titles() -> N
 
     assert plan is not None
     selected_statements = [
-        claim.statement
-        for claim in claims
-        if claim.source_claim_id in plan.selected_source_claims
+        claim.statement for claim in claims if claim.source_claim_id in plan.selected_source_claims
     ]
     assert any("Merchants are a class" in statement for statement in selected_statements)
     assert any("merchant deals" in statement for statement in selected_statements)
@@ -211,9 +207,7 @@ def test_source_summary_plan_uses_first_relevant_claim_as_mixed_chunk_boundary()
 
     assert plan is not None
     selected_statements = [
-        claim.statement
-        for claim in claims
-        if claim.source_claim_id in plan.selected_source_claims
+        claim.statement for claim in claims if claim.source_claim_id in plan.selected_source_claims
     ]
     assert any("NPCs" in statement for statement in selected_statements)
     assert any("price is required" in statement for statement in selected_statements)
@@ -247,9 +241,7 @@ def test_source_summary_plan_does_not_fill_with_late_generic_service_claims() ->
 
     assert plan is not None
     selected_statements = [
-        claim.statement
-        for claim in claims
-        if claim.source_claim_id in plan.selected_source_claims
+        claim.statement for claim in claims if claim.source_claim_id in plan.selected_source_claims
     ]
     assert any("know the illness" in statement for statement in selected_statements)
     assert any("progression speed" in statement for statement in selected_statements)
@@ -295,9 +287,7 @@ def test_source_summary_plan_uses_local_topic_window_for_narrow_rule_titles() ->
 
     assert plan is not None
     selected_statements = [
-        claim.statement
-        for claim in claims
-        if claim.source_claim_id in plan.selected_source_claims
+        claim.statement for claim in claims if claim.source_claim_id in plan.selected_source_claims
     ]
     assert any("throw multiple darts or daggers" in statement for statement in selected_statements)
     assert any("same weight" in statement for statement in selected_statements)
@@ -378,6 +368,23 @@ def test_source_summary_draft_validation_requires_selected_claim_coverage() -> N
     assert "source-claim-unit" not in render_source_summary_draft(valid)
 
 
+def test_source_summary_draft_validation_rejects_source_framing_bullets() -> None:
+    plan = _source_summary_plan(selected_source_claims=("source-claim-unit-0001-0001",))
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[alpha]]. (raw/alpha.md)",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "The source discusses alpha behavior. (raw/alpha.md)",
+                ("source-claim-unit-0001-0001",),
+            ),
+        ),
+    )
+
+    assert [finding.finding_type for finding in validate_source_summary_draft(draft, plan)] == [
+        "SourceFramingBullet"
+    ]
+
+
 def test_source_summary_citation_matching_normalizes_unicode_dashes() -> None:
     plan = SourceSummaryPlan(
         source_summary_plan_id="source-summary-plan-book",
@@ -456,6 +463,99 @@ def test_planned_source_summary_tool_accepts_draft_and_retains_artifact(
     assert "## Key supported claims" in body
     assert "source-claim-unit" not in body
     assert artifact.exists()
+
+
+def test_planned_source_summary_tool_accepts_single_selected_claim(paths: WikiPaths) -> None:
+    source_text = (
+        "# Composing and Decomposing Data\n\n"
+        "Recursion is foundational to computation because it trades description for time."
+    )
+    (paths.raw_dir / "recursion.md").write_text(source_text, encoding="utf-8")
+    store = WikiStore(paths)
+    raw_source = RawSource.from_locator("recursion.md")
+    page_plan = build_markdown_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        source_text=source_text,
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+    planned_write = page_plan.planned_writes[0]
+    selected_claims = planned_write.source_summary_plan.selected_source_claims
+    assert selected_claims == ("source-claim-unit-0001-0001",)
+    tool = planned_write_page_tool(store, TODAY, planned_write)
+
+    result = tool.callable(
+        source_record_text="Chapter opener introduces recursion. (raw/recursion.md)",
+        claim_bullets=[
+            {
+                "bullet_text": (
+                    "Recursion can trade compact descriptions for computation time. "
+                    "(raw/recursion.md)"
+                ),
+                "covered_source_claims": [selected_claims[0]],
+            },
+        ],
+    )
+
+    assert "Wrote wiki/recursion.md" in result
+    assert store.read_page("recursion").count("\n- ") == 1
+
+
+def test_planned_source_summary_tool_repairs_copy_only_drafts(paths: WikiPaths) -> None:
+    source_text = (
+        "# Alpha\n\n"
+        "Alpha beta gamma delta epsilon zeta eta theta iota. "
+        "The alpha record was recovered from a dated archive. "
+        "Researchers used tomography to read hidden inscriptions."
+    )
+    (paths.raw_dir / "alpha.md").write_text(source_text, encoding="utf-8")
+    store = WikiStore(paths)
+    raw_source = RawSource.from_locator("alpha.md")
+    page_plan = build_markdown_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        source_text=source_text,
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+    planned_write = page_plan.planned_writes[0]
+    assert planned_write.source_summary_plan is not None
+    selected_claims = planned_write.source_summary_plan.selected_source_claims
+    tool = planned_write_page_tool(store, TODAY, planned_write)
+
+    result = tool.callable(
+        source_record_text="Alpha beta gamma delta epsilon zeta eta theta iota.",
+        claim_bullets=[
+            {
+                "bullet_text": (
+                    "Alpha beta gamma delta epsilon zeta eta theta iota. (raw/alpha.md)"
+                ),
+                "covered_source_claims": [selected_claims[0]],
+            },
+            {
+                "bullet_text": (
+                    "The alpha record was recovered from a dated archive. (raw/alpha.md)"
+                ),
+                "covered_source_claims": [selected_claims[1]],
+            },
+            {
+                "bullet_text": (
+                    "Researchers used tomography to read hidden inscriptions. (raw/alpha.md)"
+                ),
+                "covered_source_claims": [selected_claims[2]],
+            },
+        ],
+    )
+
+    body = store.read_page("alpha")
+    assert "Wrote wiki/alpha.md" in result
+    assert "Alpha beta gamma delta epsilon zeta eta theta" not in body
+    assert "## Key supported claims" in body
 
 
 def test_planned_source_summary_tool_rejects_uncovered_selected_claim(

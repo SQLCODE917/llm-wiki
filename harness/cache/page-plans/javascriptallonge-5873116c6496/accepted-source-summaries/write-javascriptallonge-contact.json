@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Twitter: @raganwald 224 Email: reg@braythwayt.com 225 (raw/javascriptallonge.pdf p.297-297)",
+      "covered_source_claims": [
+        "source-claim-unit-0209-0001"
+      ]
+    },
+    {
+      "bullet_text": "Reg 'Raganwald' Braithwaite (raw/javascriptallonge.pdf p.297-297)",
+      "covered_source_claims": [
+        "source-claim-unit-0209-0002"
+      ]
+    },
+    {
+      "bullet_text": "221 http://github.com/raganwald (raw/javascriptallonge.pdf p.297-297)",
+      "covered_source_claims": [
+        "source-claim-unit-0209-0003"
+      ]
+    }
+  ],
+  "source_record_text": "Contact information for Reg 'Raganwald' Braithwaite, author of JavaScript Allongé."
+}

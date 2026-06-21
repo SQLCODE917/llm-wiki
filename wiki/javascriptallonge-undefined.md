@@ -1,0 +1,20 @@
+---
+page_id: javascriptallonge-undefined
+page_kind: source
+summary: Summary of the undefined chapter from JavaScript Allongé.
+sources: raw/javascriptallonge.pdf p.34-35
+updated: 2026-06-20
+source_id: javascriptallonge.pdf
+---
+
+## Source record
+
+This chapter from JavaScript Allongé discusses the concept of undefined in JavaScript, its identity, and its differences from SQL NULL.
+
+## Key supported claims
+
+- In JavaScript, the absence of a value is written undefined, and it means there is no value. (raw/javascriptallonge.pdf p.34-35)
+- You might think that undefined in JavaScript is equivalent to NULL in SQL. No. In SQL, two things that are NULL are not equal to nor share the same identity, because two unknowns can't be equal. In JavaScript, every undefined is identical to every other undefined. (raw/javascriptallonge.pdf p.34-35)
+- No matter how you evaluate undefined, you get an identical value back. (raw/javascriptallonge.pdf p.34-35)
+- Like numbers, booleans and strings, JavaScript can print out the value undefined. (raw/javascriptallonge.pdf p.34-35)
+- In JavaScript, every undefined is identical to every other undefined. (raw/javascriptallonge.pdf p.34-35)

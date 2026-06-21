@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import asdict
+from dataclasses import asdict, replace
 from pathlib import Path
 
 from llmwiki.domain.objects import (
@@ -31,6 +31,10 @@ from llmwiki.domain.planning_writes import planned_writes
 from llmwiki.domain.source_claims import (
     source_claim_groups,
     source_claims,
+)
+from llmwiki.domain.source_page_groups import source_page_groups
+from llmwiki.domain.source_summary_quality import (
+    source_summary_quality_report as source_summary_quality_report,
 )
 
 _HEADING_RE = re.compile(r"^#{1,6}\s+(.+)$", re.MULTILINE)
@@ -94,20 +98,34 @@ def build_page_plan(
     clusters = topic_clusters(extracted_units, claims, topics, source_claim_group_items)
     matches = wiki_matches(extracted_units, existing_pages, raw_source.source_locator)
     comparisons = claim_comparisons(claims, matches)
-    writes = planned_writes(
-        raw_source=raw_source,
-        extracted_units=extracted_units,
-        existing_pages=existing_pages,
-        wiki_matches=matches,
-        claim_comparisons=comparisons,
-        wiki_structure=wiki_structure,
-        today=today,
-        include_markdown_subject=include_markdown_subject,
-        schema=active_schema,
-        source_plan=source_plan,
-        source_claims=source_claim_items,
-        source_claim_groups=source_claim_group_items,
-        new_page_prefix=new_page_prefix,
+    source_page_group_items = (
+        ()
+        if include_markdown_subject
+        else source_page_groups(
+            raw_source=raw_source,
+            extracted_units=extracted_units,
+            existing_pages=existing_pages,
+            wiki_matches=matches,
+            source_claims=source_claim_items,
+            new_page_prefix=new_page_prefix,
+        )
+    )
+    writes = _unique_write_ids(
+        planned_writes(
+            raw_source=raw_source,
+            extracted_units=extracted_units,
+            source_page_groups=source_page_group_items,
+            existing_pages=existing_pages,
+            wiki_matches=matches,
+            claim_comparisons=comparisons,
+            wiki_structure=wiki_structure,
+            today=today,
+            include_markdown_subject=include_markdown_subject,
+            schema=active_schema,
+            source_plan=source_plan,
+            source_claims=source_claim_items,
+            source_claim_groups=source_claim_group_items,
+        )
     )
     return PagePlan(
         plan_id=plan_id,
@@ -122,6 +140,7 @@ def build_page_plan(
         wiki_matches=matches,
         claim_comparisons=comparisons,
         planned_writes=writes,
+        source_page_groups=source_page_group_items,
     )
 
 
@@ -129,8 +148,12 @@ def page_plan_to_json(plan: PagePlan) -> str:
     return json.dumps(asdict(plan), indent=2, ensure_ascii=False, sort_keys=True)
 
 
-def observation_report(plan: PagePlan, target_page_ids: tuple[str, ...] | None = None) -> str:
-    visible_writes = _visible_writes(plan, target_page_ids)
+def observation_report(
+    plan: PagePlan,
+    target_page_ids: tuple[str, ...] | None = None,
+    target_write_ids: tuple[str, ...] | None = None,
+) -> str:
+    visible_writes = _visible_writes(plan, target_page_ids, target_write_ids)
     enriched = sum(1 for write in visible_writes if write.action == "enrich-existing")
     created = sum(1 for write in visible_writes if write.action == "create-new")
     deferred = sum(1 for write in visible_writes if write.action == "defer")
@@ -155,6 +178,7 @@ def observation_report(plan: PagePlan, target_page_ids: tuple[str, ...] | None =
         f"- ExtractedUnits: {len(plan.extracted_units)}\n"
         f"- SourceClaims: {len(plan.source_claims)}\n"
         f"- SourceClaimGroups: {len(plan.source_claim_groups)}\n"
+        f"- SourcePageGroups: {len(plan.source_page_groups)}\n"
         f"- TopicClusters: {len(plan.topic_clusters)}\n"
         f"- Planned page targets shown: {len(visible_writes)} of {len(plan.planned_writes)}\n"
         f"- Pages enriched: {enriched}\n"
@@ -167,14 +191,35 @@ def observation_report(plan: PagePlan, target_page_ids: tuple[str, ...] | None =
 
 
 def _visible_writes(
-    plan: PagePlan, target_page_ids: tuple[str, ...] | None
+    plan: PagePlan,
+    target_page_ids: tuple[str, ...] | None,
+    target_write_ids: tuple[str, ...] | None,
 ) -> tuple[PlannedPageWrite, ...]:
+    if target_write_ids is not None:
+        target_set = frozenset(target_write_ids)
+        return tuple(write for write in plan.planned_writes if write.write_id in target_set)
     if target_page_ids is None:
         return plan.planned_writes
     target_set = frozenset(target_page_ids)
     return tuple(
         write for write in plan.planned_writes if write.page_metadata.page_id in target_set
     )
+
+
+def _unique_write_ids(writes: tuple[PlannedPageWrite, ...]) -> tuple[PlannedPageWrite, ...]:
+    counts: dict[str, int] = {}
+    for write in writes:
+        counts[write.write_id] = counts.get(write.write_id, 0) + 1
+    seen: dict[str, int] = {}
+    unique: list[PlannedPageWrite] = []
+    for write in writes:
+        if counts[write.write_id] == 1:
+            unique.append(write)
+            continue
+        seen[write.write_id] = seen.get(write.write_id, 0) + 1
+        suffix = "-".join(write.extracted_units) or str(seen[write.write_id])
+        unique.append(replace(write, write_id=f"{write.write_id}-{suffix}"))
+    return tuple(unique)
 
 
 def _document_title(source_text: str, source_locator: str) -> str:
@@ -224,7 +269,9 @@ def _source_claim_label(claim: SourceClaim) -> str:
     roles = ", ".join(claim.claim_role_tags) or "unlabeled"
     terms = ", ".join(claim.subject_terms) or "no subject terms"
     return (
-        f"claim_id `{claim.source_claim_id}` [{roles}] terms `{terms}` "
+        f"claim_id `{claim.source_claim_id}` [{roles}] "
+        f"eligibility `{claim.claim_eligibility}` centrality `{claim.claim_centrality}` "
+        f"terms `{terms}` "
         f"statement `{_compact_statement(claim.statement)}`"
     )
 

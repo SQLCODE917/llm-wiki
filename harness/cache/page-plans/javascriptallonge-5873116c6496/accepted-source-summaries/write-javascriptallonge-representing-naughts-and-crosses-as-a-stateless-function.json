@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We could plays naughts and crosses as a stateless function (raw/javascriptallonge.pdf p.275-275).",
+      "covered_source_claims": [
+        "source-claim-unit-0188-0001"
+      ]
+    },
+    {
+      "bullet_text": "We encode each position of the board in some fashion, and then we build a dictionary from positions to moves (raw/javascriptallonge.pdf p.275-275).",
+      "covered_source_claims": [
+        "source-claim-unit-0188-0002"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé discusses representing naughts and crosses as a stateless function, encoding each position of the board and building a dictionary from positions to moves."
+}

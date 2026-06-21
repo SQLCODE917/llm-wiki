@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization (raw/javascriptallonge.pdf p.120-121).",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0016"
+      ]
+    },
+    {
+      "bullet_text": "The obvious solution is push the 1 + work into the call to length (raw/javascriptallonge.pdf p.120-121).",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0001"
+      ]
+    },
+    {
+      "bullet_text": "This lengthDelaysWork function calls itself in tail position (raw/javascriptallonge.pdf p.120-121).",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0005"
+      ]
+    },
+    {
+      "bullet_text": "This version of length calls uses lengthDelaysWork , and JavaScript optimizes that not to take up memory proportional to the length of the string (raw/javascriptallonge.pdf p.120-121).",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0012"
+      ]
+    },
+    {
+      "bullet_text": "But while we're doing that, it's annoying to remember to call it with a zero (raw/javascriptallonge.pdf p.120-121).",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on converting non-tail-calls to tail-calls in JavaScript, covering transformation techniques and examples."
+}

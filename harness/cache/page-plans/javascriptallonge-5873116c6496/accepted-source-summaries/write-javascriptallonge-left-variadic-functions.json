@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A variadic function is a function that is designed to accept a variable number of arguments. (raw/javascriptallonge.pdf p.89-90)",
+      "covered_source_claims": [
+        "source-claim-unit-0078-0001"
+      ]
+    },
+    {
+      "bullet_text": "In JavaScript, you can make a variadic function by gathering parameters. For example, a function can gather the last arguments into an array using the spread operator. (raw/javascriptallonge.pdf p.89-90)",
+      "covered_source_claims": [
+        "source-claim-unit-0078-0005"
+      ]
+    },
+    {
+      "bullet_text": "52 English is about as inconsistent as JavaScript: Functions with a fixed number of arguments can be unary, binary, ternary, and so forth. But can they be 'variary?' No! They have to be 'variadic.' (raw/javascriptallonge.pdf p.89-90)",
+      "covered_source_claims": [
+        "source-claim-unit-0078-0008"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé discusses variadic functions and the limitations of JavaScript's variadic function syntax, specifically that gathering parameters are only allowed from the end of the parameter list."
+}

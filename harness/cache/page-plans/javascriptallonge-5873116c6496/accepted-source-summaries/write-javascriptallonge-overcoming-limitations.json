@@ -1,0 +1,24 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Left-variadic functions have one or more fixed arguments, with the rest gathered into the leftmost argument. (raw/javascriptallonge.pdf p.91-92)",
+      "covered_source_claims": [
+        "source-claim-unit-0080-0003"
+      ]
+    },
+    {
+      "bullet_text": "The leftVariadic function is a decorator turning functions into left-variadic ones, gathering parameters from the left instead of the right. (raw/javascriptallonge.pdf p.91-92)",
+      "covered_source_claims": [
+        "source-claim-unit-0080-0009"
+      ]
+    },
+    {
+      "bullet_text": "A left-variadic function cannot be written directly in JavaScript; a decorator is needed to achieve this behavior. (raw/javascriptallonge.pdf p.91-92)",
+      "covered_source_claims": [
+        "source-claim-unit-0080-0003",
+        "source-claim-unit-0080-0009"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on overcoming limitations in JavaScript, including left-variadic functions and the leftVariadic decorator."
+}

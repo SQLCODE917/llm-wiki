@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A function decorator is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function. (raw/javascriptallonge.pdf p.69-70)",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0001"
+      ]
+    },
+    {
+      "bullet_text": "not is a function decorator because it modifies a function while remaining strongly related to the original function's semantics. (raw/javascriptallonge.pdf p.69-70)",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0010"
+      ]
+    },
+    {
+      "bullet_text": "Function decorators aren't strict about being pure functions, so there's more latitude for making decorators than combinators. (raw/javascriptallonge.pdf p.69-70)",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0012"
+      ]
+    },
+    {
+      "bullet_text": "You'll see other function decorators in the recipes, like once and maybe. (raw/javascriptallonge.pdf p.69-70)",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0011"
+      ]
+    },
+    {
+      "bullet_text": "This implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. (raw/javascriptallonge.pdf p.69-70)",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0003"
+      ]
+    }
+  ],
+  "source_record_text": "Function decorators are higher-order functions that take one function as an argument, return another function, and the returned function is a variation of the argument function."
+}

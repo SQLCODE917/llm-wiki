@@ -6,6 +6,7 @@ import re
 from collections import Counter
 
 from llmwiki.domain.page_body_contracts import PageBodyFinding, ResolvedPageBodyContract
+from llmwiki.domain.source_claim_quality import SOURCE_FRAMING_PREFIXES
 from llmwiki.domain.source_summary import SourceSummaryDraft, SourceSummaryPlan
 
 _WORD_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)?", re.IGNORECASE)
@@ -30,6 +31,11 @@ _UNCERTAINTY_PATTERNS = {
     "uncertain": r"\buncertain\b",
     "unknown": r"\bunknown\b",
     "unconfirmed": r"\bunconfirmed\b",
+    "does not specify": r"\bdoes not\b.+\bspecify\b",
+    "does not confirm": r"\bdoes not\b.+\bconfirm\b",
+    "does not state": r"\bdoes not\b.+\bstate\b",
+    "not specified": r"\bnot\b.+\bspecified\b",
+    "not confirmed": r"\bnot\b.+\bconfirmed\b",
     "verify": r"\[verify\]",
 }
 
@@ -89,6 +95,7 @@ def validate_source_summary_draft(
                 "covers claims outside SourceSummaryPlan: " + ", ".join(unknown_claims),
             )
         )
+    findings.extend(_source_framing_bullet_findings(draft))
     findings.extend(_source_summary_bullet_citation_findings(draft, plan))
     findings.extend(_source_claim_id_findings(draft, plan))
     findings.extend(_draft_copy_findings(draft, source_text))
@@ -106,7 +113,9 @@ def render_page_body_findings(
         "Replace the whole PlannedPageWrite PageBody and satisfy every finding.\n"
         "Do not append fixes to the rejected PageBody.\n"
         "For source-summary, write a short paraphrase with the required sections, "
-        "enough claim bullets, and coverage of the selected source claims."
+        "enough claim bullets, and coverage of the selected source claims. "
+        "Start bullets with the subject or finding, not with source-framing phrases "
+        "such as 'The source discusses'. Keep bullets short enough to avoid copied phrases."
     )
 
 
@@ -144,8 +153,64 @@ def _contains_placeholder_ascii_ellipsis(page_body: str) -> bool:
         next_char = page_body[match.end() : match.end() + 1]
         if next_char and (next_char.isalpha() or next_char in {"_", "$"}):
             continue
+        if _is_technical_operator_ellipsis(page_body, match.start(), match.end()):
+            continue
         return True
     return False
+
+
+def _is_technical_operator_ellipsis(text: str, start: int, end: int) -> bool:
+    prev_char = text[start - 1 : start] if start else ""
+    next_char = text[end : end + 1]
+    context = text[max(0, start - 80) : min(len(text), end + 80)].lower()
+    if _is_function_call_ellipsis(text, start) and _has_function_call_context(context):
+        return True
+    if prev_char == "(" and next_char == ")" and _has_ellipsis_operator_context(context):
+        return True
+    has_operator_boundary = (
+        bool(prev_char) and (prev_char.isspace() or prev_char in "[({,")
+    ) or (
+        bool(next_char) and (next_char.isspace() or next_char in "])},;")
+    )
+    return _has_ellipsis_operator_context(context) and has_operator_boundary
+
+
+def _is_function_call_ellipsis(text: str, start: int) -> bool:
+    return re.search(r"[A-Za-z_$][\w$]*\($", text[:start]) is not None
+
+
+def _has_function_call_context(context: str) -> bool:
+    return any(
+        term in context
+        for term in (
+            "call",
+            "decorator",
+            "function",
+            "iterator",
+            "method",
+            "operator",
+        )
+    )
+
+
+def _has_ellipsis_operator_context(context: str) -> bool:
+    return any(
+        term in context
+        for term in (
+            "destructur",
+            "gather",
+            "rest parameter",
+            "rest operator",
+            "spread operator",
+            "spread syntax",
+            "spread",
+            "the ... notation",
+            "... notation",
+            "... operation",
+            "parameter",
+            "argument",
+        )
+    )
 
 
 def _markdown_shape_findings(
@@ -278,6 +343,22 @@ def _source_summary_bullet_citation_findings(
                 PageBodyFinding(
                     "SourceSummaryBulletCitation",
                     f"bullet {index} bullet_text must include literal citation {required}",
+                )
+            )
+    return tuple(findings)
+
+
+def _source_framing_bullet_findings(
+    draft: SourceSummaryDraft,
+) -> tuple[PageBodyFinding, ...]:
+    findings: list[PageBodyFinding] = []
+    for index, bullet in enumerate(draft.claim_bullets, start=1):
+        bullet_text = bullet.bullet_text.strip().lower()
+        if any(bullet_text.startswith(prefix) for prefix in SOURCE_FRAMING_PREFIXES):
+            findings.append(
+                PageBodyFinding(
+                    "SourceFramingBullet",
+                    f"bullet {index} must start with the subject or finding, not source framing",
                 )
             )
     return tuple(findings)

@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "What we have now is a function that takes a function and 'flips' the order of arguments around, then curries it. (raw/javascriptallonge.pdf p.195-196)",
+      "covered_source_claims": [
+        "source-claim-unit-0147-0019"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on flip function and argument order reversal in JavaScript."
+}

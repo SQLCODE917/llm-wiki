@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "There are useful things we can do with iterables representing an infinitely large collection. (raw/javascriptallonge.pdf p.215-216)",
+      "covered_source_claims": [
+        "source-claim-unit-0161-0003"
+      ]
+    },
+    {
+      "bullet_text": "Attempting to spread an infinite iterable into an array is always going to fail. (raw/javascriptallonge.pdf p.215-216)",
+      "covered_source_claims": [
+        "source-claim-unit-0161-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on iterables out to infinity from JavaScript Allongé."
+}

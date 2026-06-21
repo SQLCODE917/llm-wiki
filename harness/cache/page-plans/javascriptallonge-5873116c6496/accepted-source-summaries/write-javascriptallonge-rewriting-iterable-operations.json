@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Now that we know about iterables, we can rewrite our iterable operations as generators. (raw/javascriptallonge.pdf p.243-245)",
+      "covered_source_claims": [
+        "source-claim-unit-0176-0001"
+      ]
+    },
+    {
+      "bullet_text": "We can do the same thing with our other operations like filterWith and untilWith. (raw/javascriptallonge.pdf p.243-245)",
+      "covered_source_claims": [
+        "source-claim-unit-0176-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on rewriting iterable operations in JavaScript Allongé, focusing on how generators can simplify the implementation of iterable operations."
+}

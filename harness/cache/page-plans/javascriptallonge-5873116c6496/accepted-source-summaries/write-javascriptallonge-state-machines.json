@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Some iterables can be modelled as state machines (raw/javascriptallonge.pdf p.228-229).",
+      "covered_source_claims": [
+        "source-claim-unit-0169-0001"
+      ]
+    },
+    {
+      "bullet_text": "The thing to note here is that our fibonacci generator has three states: generating 0, generating 1, and generating everything after that (raw/javascriptallonge.pdf p.228-229).",
+      "covered_source_claims": [
+        "source-claim-unit-0169-0009"
+      ]
+    },
+    {
+      "bullet_text": "This isn't a good fit for an iterator, because iterators have one functional entry point and therefore, we'd have to represent our three states explicitly, perhaps using a state pattern 90 (raw/javascriptallonge.pdf p.228-229).",
+      "covered_source_claims": [
+        "source-claim-unit-0169-0010"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter introduces the concept of state machines and applies it to the Fibonacci sequence."
+}

@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "tap is a traditional name borrowed from Unix shell commands (raw/javascriptallonge.pdf p.84-85)",
+      "covered_source_claims": [
+        "source-claim-unit-0075-0005"
+      ]
+    },
+    {
+      "bullet_text": "tap can do more than just act as a debugging aid (raw/javascriptallonge.pdf p.84-85)",
+      "covered_source_claims": [
+        "source-claim-unit-0075-0014"
+      ]
+    },
+    {
+      "bullet_text": "tap executes a function for side-effects and then returns the original value (raw/javascriptallonge.pdf p.84-85)",
+      "covered_source_claims": []
+    },
+    {
+      "bullet_text": "tap works with both curried and uncurried function styles (raw/javascriptallonge.pdf p.84-85)",
+      "covered_source_claims": []
+    },
+    {
+      "bullet_text": "tap is useful for working with object and instance methods (raw/javascriptallonge.pdf p.84-85)",
+      "covered_source_claims": []
+    }
+  ],
+  "source_record_text": "Tap is a traditional name borrowed from various Unix shell commands. It can do more than just act as a debugging aid."
+}

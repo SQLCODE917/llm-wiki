@@ -1,0 +1,30 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. (raw/javascriptallonge.pdf p.68-68)",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0001",
+        "source-claim-unit-0059-0002"
+      ]
+    },
+    {
+      "bullet_text": "Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a 'higher-order' function. (raw/javascriptallonge.pdf p.68-68)",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0003"
+      ]
+    },
+    {
+      "bullet_text": "Higher-order functions dominate JavaScript Allongé. (raw/javascriptallonge.pdf p.68-68)",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0007"
+      ]
+    },
+    {
+      "bullet_text": "But before we go on, we'll talk about some specific types of higher-order functions. (raw/javascriptallonge.pdf p.68-68)",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0008"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé discusses higher-order functions, which are functions that take functions as arguments, return functions, or both."
+}

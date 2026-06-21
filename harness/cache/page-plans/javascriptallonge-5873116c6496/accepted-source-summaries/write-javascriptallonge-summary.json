@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Logical operators are based on truthiness and falsiness, not the strict values true and false. (raw/javascriptallonge.pdf p.99-99)",
+      "covered_source_claims": [
+        "source-claim-unit-0089-0001"
+      ]
+    },
+    {
+      "bullet_text": "The ! operator is a logical operator, it always returns true or false. (raw/javascriptallonge.pdf p.99-99)",
+      "covered_source_claims": [
+        "source-claim-unit-0089-0002"
+      ]
+    },
+    {
+      "bullet_text": "The ternary operator (?:), ||, and && are control flow operators; they do not always return true or false, and they have short-cut semantics. (raw/javascriptallonge.pdf p.99-99)",
+      "covered_source_claims": [
+        "source-claim-unit-0089-0003"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé explores fundamental and advanced JavaScript concepts, including logical operators and control flow mechanisms."
+}

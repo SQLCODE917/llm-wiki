@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Mutation is a surprisingly complex subject. (raw/javascriptallonge.pdf p.143-145)",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0001"
+      ]
+    },
+    {
+      "bullet_text": "Languages like Haskell 70 don't permit mutation at all. (raw/javascriptallonge.pdf p.143-145)",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0003"
+      ]
+    },
+    {
+      "bullet_text": "In general, mutation makes some algorithms shorter to write and possibly faster, but harder to reason about. (raw/javascriptallonge.pdf p.143-145)",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0004"
+      ]
+    },
+    {
+      "bullet_text": "One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. (raw/javascriptallonge.pdf p.143-145)",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0005"
+      ]
+    },
+    {
+      "bullet_text": "But after returning the new list, we then become conservative about mutation. (raw/javascriptallonge.pdf p.143-145)",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0009"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on mutation and data structures from JavaScript Allongé."
+}

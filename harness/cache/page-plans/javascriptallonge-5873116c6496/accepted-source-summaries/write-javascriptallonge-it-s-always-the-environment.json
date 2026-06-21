@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "So whenever a function is applied to arguments, its environment always has a reference to its parent environment (raw/javascriptallonge.pdf p.46-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0044-0009"
+      ]
+    },
+    {
+      "bullet_text": "As we've said before, all functions are associated with an environment (raw/javascriptallonge.pdf p.46-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0044-0002"
+      ]
+    },
+    {
+      "bullet_text": "We also hand-waved something when describing our environment (raw/javascriptallonge.pdf p.46-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0044-0003"
+      ]
+    },
+    {
+      "bullet_text": "To understand how closures are evaluated, we need to revisit environments (raw/javascriptallonge.pdf p.46-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0044-0001"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter discusses environments and closures in JavaScript, specifically how functions are associated with environments and how closures are evaluated."
+}

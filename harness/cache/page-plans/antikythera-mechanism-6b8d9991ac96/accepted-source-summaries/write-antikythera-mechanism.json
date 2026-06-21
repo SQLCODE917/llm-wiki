@@ -1,35 +1,29 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The mechanism is an ancient Greek hand‑powered orrery (raw/antikythera-mechanism.md)",
+      "bullet_text": "The device is a Greek geared orrery and early analog computer. (raw/antikythera-mechanism.md)",
       "covered_source_claims": [
         "source-claim-unit-0001-0001"
       ]
     },
     {
-      "bullet_text": "By turning a crank it displays the Sun, Moon, phases, eclipses, and Olympic cycle (raw/antikythera-mechanism.md)",
+      "bullet_text": "The wreck find dates to about 150-100 BC after recovery in 1901. (raw/antikythera-mechanism.md)",
       "covered_source_claims": [
-        "source-claim-unit-0001-0004"
+        "source-claim-unit-0001-0002"
       ]
     },
     {
-      "bullet_text": "Its gear precision implies a sophisticated workshop tradition (raw/antikythera-mechanism.md)",
-      "covered_source_claims": [
-        "source-claim-unit-0001-0007"
-      ]
-    },
-    {
-      "bullet_text": "Inscription evidence suggests it may have originated in Corinth or Syracuse (raw/antikythera-mechanism.md)",
-      "covered_source_claims": [
-        "source-claim-unit-0001-0010"
-      ]
-    },
-    {
-      "bullet_text": "Research used micro‑focus X‑ray tomography to read hidden inscriptions (raw/antikythera-mechanism.md)",
+      "bullet_text": "The research project used tomographic imaging to recover inscription evidence. (raw/antikythera-mechanism.md)",
       "covered_source_claims": [
         "source-claim-unit-0001-0009"
       ]
+    },
+    {
+      "bullet_text": "Its engineering exceeded known surviving ancient mechanisms until medieval clocks. (raw/antikythera-mechanism.md)",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0006"
+      ]
     }
   ],
-  "source_record_text": "An ancient Greek hand‑powered device from ~150‑100 BC that tracks celestial bodies and eclipses."
+  "source_record_text": "Source record for [[antikythera-mechanism]]. (raw/antikythera-mechanism.md)"
 }

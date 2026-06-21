@@ -2,7 +2,7 @@
 page_id: javascriptallonge-lazy-and-eager-collections
 page_kind: source
 summary: Lazy vs eager collection designs and the LazyCollection mixin
-sources: raw/javascriptallonge.pdf p.246-260
+sources: raw/javascriptallonge.pdf p.256-260
 updated: 2026-06-20
 source_id: javascriptallonge.pdf
 ---
@@ -13,8 +13,5 @@ This chapter explains why JavaScript collections might benefit from lazy evaluat
 
 ## Key supported claims
 
-- Some collection methods are added only to a few types, while others apply to all (raw/javascriptallonge.pdf p.246-260)
-- The fat‑object style arises from misunderstanding: a collection should know how to map over itself but not handle every detail (raw/javascriptallonge.pdf p.246-260)
-- LazyCollection is a mixin usable with any ordered iterable, adding map, reduce, filter, and find (raw/javascriptallonge.pdf p.246-260)
-- Object‑oriented collections should expose mapping, reducing, filtering, and finding, delegating work to helpers such as mapWith (raw/javascriptallonge.pdf p.246-260)
-- Each collection implements map, fold, filter, and find, yet duplicated code across methods suggests a higher‑level abstraction might be needed (raw/javascriptallonge.pdf p.246-260)
+- We can make an eager collection out of any collection that is gatherable, meaning it has a .from method: (raw/javascriptallonge.pdf p.256-260)
+- We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs: (raw/javascriptallonge.pdf p.256-260)

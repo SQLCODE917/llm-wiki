@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "And with care, we can do amazing things like use functions to represent numbers, build more complex data structures like trees, and in fact, anything that can be computed can be computed using just functions and nothing else. (raw/javascriptallonge.pdf p.183-186)",
+      "covered_source_claims": [
+        "source-claim-unit-0140-0018"
+      ]
+    },
+    {
+      "bullet_text": "Presto, we can use pure functions to represent a linked list. (raw/javascriptallonge.pdf p.183-186)",
+      "covered_source_claims": [
+        "source-claim-unit-0140-0017"
+      ]
+    },
+    {
+      "bullet_text": "We used functions to replace arrays and POJOs, but we still use JavaScript's built-in operators to test for equality (===) and to branch ?: . (raw/javascriptallonge.pdf p.183-186)",
+      "covered_source_claims": [
+        "source-claim-unit-0140-0020"
+      ]
+    },
+    {
+      "bullet_text": "Here's another look at linked lists using POJOs. (raw/javascriptallonge.pdf p.183-186)",
+      "covered_source_claims": [
+        "source-claim-unit-0140-0001"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explores using functions as data structures, particularly focusing on linked lists."
+}

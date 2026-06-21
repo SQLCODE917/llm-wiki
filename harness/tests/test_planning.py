@@ -110,6 +110,52 @@ def test_pdf_page_plan_can_prefix_new_chunk_pages() -> None:
     assert plan.planned_writes[1].source_summary_plan is None
 
 
+def test_observation_report_scopes_repeated_page_id_by_write_id() -> None:
+    raw_source = RawSource.from_locator("javascriptallonge.pdf")
+    early = build_extracted_unit(
+        unit_id="unit-0065",
+        raw_source=raw_source,
+        locator="p.72-73",
+        heading_path="Partial Application",
+        text="Another basic building block is partial application.",
+    )
+    later = build_extracted_unit(
+        unit_id="unit-0073",
+        raw_source=raw_source,
+        locator="p.80-81",
+        heading_path="Partial Application",
+        text="Many libraries provide some form of partial application.",
+    )
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(early, later),
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+        new_page_prefix="javascriptallonge",
+    )
+
+    writes = tuple(
+        write
+        for write in plan.planned_writes
+        if write.page_metadata.page_id == "javascriptallonge-partial-application"
+    )
+    report = observation_report(
+        plan,
+        target_page_ids=("javascriptallonge-partial-application",),
+        target_write_ids=(writes[1].write_id,),
+    )
+
+    assert len(writes) == 2
+    assert len({write.write_id for write in writes}) == 2
+    assert "raw/javascriptallonge.pdf p.80-81" in report
+    assert "source-claim-unit-0073" in report
+    assert "raw/javascriptallonge.pdf p.72-73" not in report
+    assert "source-claim-unit-0065" not in report
+
+
 def test_prefixed_pdf_page_plan_ignores_existing_generic_section_page() -> None:
     raw_source = RawSource.from_locator("javascriptallonge.pdf")
     unit = build_extracted_unit(
@@ -175,6 +221,148 @@ def test_prefixed_pdf_page_plan_does_not_match_source_prefix_terms() -> None:
     assert unit_write.action == "create-new"
 
 
+def test_large_pdf_page_plan_groups_adjacent_source_units() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    units = tuple(
+        build_extracted_unit(
+            unit_id=f"unit-{index:04d}",
+            raw_source=raw_source,
+            locator=f"p.{index}",
+            heading_path=f"1.{index} Topic {index}",
+            text=f"Topic {index} explains a related chapter one rule.",
+        )
+        for index in range(1, 42)
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=units,
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+
+    grouped = next(group for group in plan.source_page_groups if len(group.extracted_units) > 1)
+    grouped_write = next(
+        write for write in plan.planned_writes if write.page_metadata.page_id == grouped.page_id
+    )
+    assert grouped.page_id.startswith("book-1-1-topic-1-through-1-5-topic-5")
+    assert grouped.extracted_units == tuple(f"unit-{index:04d}" for index in range(1, 6))
+    assert grouped_write.page_metadata.sources == tuple(
+        f"raw/book.pdf p.{index}" for index in range(1, 6)
+    )
+    assert '"source_page_groups"' in page_plan_to_json(plan)
+
+
+def test_pdf_page_plan_skips_heading_only_source_units() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    heading_only = build_extracted_unit(
+        unit_id="unit-0001",
+        raw_source=raw_source,
+        locator="p.1",
+        heading_path="Programming from Functions to Classes",
+        text="# Programming from Functions to Classes",
+    )
+    claim_units = tuple(
+        build_extracted_unit(
+            unit_id=f"unit-{index:04d}",
+            raw_source=raw_source,
+            locator=f"p.{index}",
+            heading_path=f"1.{index} Topic {index}",
+            text=f"Topic {index} explains a related rule.",
+        )
+        for index in range(2, 43)
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(heading_only, *claim_units),
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+
+    grouped_unit_ids = {
+        unit_id for group in plan.source_page_groups for unit_id in group.extracted_units
+    }
+    non_hub_writes = [
+        write for write in plan.planned_writes if write.page_metadata.page_id != BOOK_HUB
+    ]
+    assert "unit-0001" not in grouped_unit_ids
+    assert all("unit-0001" not in write.extracted_units for write in non_hub_writes)
+
+
+def test_large_pdf_existing_default_source_page_stays_one_unit() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    units = tuple(
+        build_extracted_unit(
+            unit_id=f"unit-{index:04d}",
+            raw_source=raw_source,
+            locator=f"p.{index}",
+            heading_path=f"1.{index} Topic {index}",
+            text=f"Topic {index} explains a related chapter one rule.",
+        )
+        for index in range(1, 42)
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=units,
+        existing_pages={"book-1-37-topic-37": _page("book-1-37-topic-37", "Existing.")},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+
+    write = next(
+        write
+        for write in plan.planned_writes
+        if write.page_metadata.page_id == "book-1-37-topic-37"
+    )
+    assert write.action == "enrich-existing"
+    assert write.extracted_units == ("unit-0037",)
+    assert not any(
+        "unit-0037" in group.extracted_units and group.page_id != "book-1-37-topic-37"
+        for group in plan.source_page_groups
+    )
+
+
+def test_large_pdf_page_groups_split_on_top_level_heading() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    units = tuple(
+        build_extracted_unit(
+            unit_id=f"unit-{index:04d}",
+            raw_source=raw_source,
+            locator=f"p.{index}",
+            heading_path=(
+                f"1.{index} Chapter One Topic" if index <= 21 else f"2.{index} Chapter Two Topic"
+            ),
+            text=f"Topic {index} explains a rule.",
+        )
+        for index in range(1, 43)
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=units,
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+
+    assert all(
+        group.first_heading.split(".", 1)[0] == group.last_heading.split(".", 1)[0]
+        for group in plan.source_page_groups
+    )
+
+
 def test_section_identity_uses_slug_identity_not_shared_terms() -> None:
     assert same_section_identity("Self-Similarity", "book-self-similarity")
     assert not same_section_identity(
@@ -213,15 +401,15 @@ def test_observation_report_can_scope_planned_targets() -> None:
         today=TODAY,
     )
 
-    report = observation_report(plan, target_page_ids=("functions",))
+    report = observation_report(plan, target_page_ids=("book-functions",))
 
     assert "Planned page targets shown: 1 of 3" in report
-    assert "`functions`" in report
-    assert "`closures`" not in report
+    assert "`book-functions`" in report
+    assert "`book-closures`" not in report
     assert "`book`" not in report
 
 
-def test_existing_page_match_enriches_existing_page() -> None:
+def test_generic_existing_page_does_not_capture_source_section_page() -> None:
     raw_source = RawSource.from_locator("closures.pdf")
     unit = build_extracted_unit(
         unit_id="unit-0001",
@@ -242,9 +430,39 @@ def test_existing_page_match_enriches_existing_page() -> None:
     )
 
     write = plan.planned_writes[0]
-    assert write.page_metadata.page_id == "closure"
-    assert write.action == "enrich-existing"
+    assert write.page_metadata.page_id == "closures-closure"
+    assert write.action == "create-new"
     assert plan.wiki_matches[0].page_id == "closure"
+
+
+def test_existing_source_specific_page_match_enriches_existing_page() -> None:
+    raw_source = RawSource.from_locator("closures.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0001",
+        raw_source=raw_source,
+        locator="p.1-2",
+        heading_path="Closure",
+        text="Closures capture lexical scope and preserve variables.",
+    )
+
+    plan = build_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        extracted_units=(unit,),
+        existing_pages={
+            "closures-closure": _page(
+                "closures-closure",
+                "A source page about closure.",
+            )
+        },
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+
+    write = plan.planned_writes[0]
+    assert write.page_metadata.page_id == "closures-closure"
+    assert write.action == "enrich-existing"
 
 
 def test_source_section_identity_beats_semantic_similarity() -> None:

@@ -1,0 +1,30 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "False is falsy in JavaScript. (raw/javascriptallonge.pdf p.95-96)",
+      "covered_source_claims": [
+        "source-claim-unit-0085-0001"
+      ]
+    },
+    {
+      "bullet_text": "Truthiness affects how logical operators and if statements work. (raw/javascriptallonge.pdf p.95-96)",
+      "covered_source_claims": [
+        "source-claim-unit-0085-0006"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript inherited the ternary operator from C. It takes three arguments. (raw/javascriptallonge.pdf p.95-96)",
+      "covered_source_claims": [
+        "source-claim-unit-0085-0008",
+        "source-claim-unit-0085-0009"
+      ]
+    },
+    {
+      "bullet_text": "The ternary operator is an expression, not a statement. (raw/javascriptallonge.pdf p.95-96)",
+      "covered_source_claims": [
+        "source-claim-unit-0085-0005"
+      ]
+    }
+  ],
+  "source_record_text": "In JavaScript, there is a notion of 'truthiness.' Every value is either 'truthy' or 'falsy.' Obviously, false is falsy. So are null and undefined, values that semantically represent 'no value.' NaN is falsy, a value representing the result of a calculation that is not a number. 54 And there are more: 0 is falsy, a value representing 'none of something.' The empty string, '' is falsy, a value representing having no characters. Every other value in JavaScript is 'truthy' except the aforementioned false, null, undefined, NaN, 0, and ''."
+}

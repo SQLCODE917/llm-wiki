@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The magic names this and arguments have a different behaviour when you invoke a function that was defined with a fat arrow: Instead of being bound when the function is invoked, the fat arrow function always acquires the bindings for this and arguments from its enclosing scope, just like any other binding. (raw/javascriptallonge.pdf p.75-77)",
+      "covered_source_claims": [
+        "source-claim-unit-0068-0001"
+      ]
+    },
+    {
+      "bullet_text": "Although it seems quixotic for the two syntaxes to have different semantics, it makes sense when you consider the design goal: Fat arrow functions are designed to be very lightweight and are often used with constructs like mapping or callbacks to emulate syntax. (raw/javascriptallonge.pdf p.75-77)",
+      "covered_source_claims": [
+        "source-claim-unit-0068-0007"
+      ]
+    },
+    {
+      "bullet_text": "44 We'll use arguments just to show the difference between using a fat arrow and the function keyword: (raw/javascriptallonge.pdf p.75-77)",
+      "covered_source_claims": [
+        "source-claim-unit-0068-0010"
+      ]
+    },
+    {
+      "bullet_text": "44 Yes, we also used the name mapWith for working with ordinary collections elsewhere. (raw/javascriptallonge.pdf p.75-77)",
+      "covered_source_claims": [
+        "source-claim-unit-0068-0015"
+      ]
+    },
+    {
+      "bullet_text": "If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. (raw/javascriptallonge.pdf p.75-77)",
+      "covered_source_claims": [
+        "source-claim-unit-0068-0016"
+      ]
+    }
+  ],
+  "source_record_text": "JavaScript Allongé – A modular guide to JavaScript fundamentals and advanced techniques."
+}

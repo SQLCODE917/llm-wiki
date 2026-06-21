@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "53 Another history lesson. In 'Ye Olde Days,' JavaScript could not gather parameters. (raw/javascriptallonge.pdf p.90-91)",
+      "covered_source_claims": [
+        "source-claim-unit-0079-0006"
+      ]
+    },
+    {
+      "bullet_text": "A right-variadic function has one or more fixed arguments, and the rest are gathered into the rightmost argument. (raw/javascriptallonge.pdf p.90-91)",
+      "covered_source_claims": [
+        "source-claim-unit-0079-0011"
+      ]
+    },
+    {
+      "bullet_text": "In ECMAScript-5, a rightVariadic decorator was used to gather arguments into the last declared parameter. (raw/javascriptallonge.pdf p.90-91)",
+      "covered_source_claims": [
+        "source-claim-unit-0079-0005"
+      ]
+    }
+  ],
+  "source_record_text": "In 'Ye Olde Days,' 53 JavaScript could not gather parameters, and we had to either do backflips with arguments and .slice , or we wrote ourselves a variadic decorator that could gather arguments into the last declared parameter."
+}

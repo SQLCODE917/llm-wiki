@@ -1,21 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Functions containing one or more free variables are called **closures** (raw/javascriptallonge.pdf p.44-48). (may)",
+      "bullet_text": "JavaScript allows functions to nest inside each other, and handles variables from 'outside' of a function that are referenced inside a function (raw/javascriptallonge.pdf p.44-44)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0022"
+        "source-claim-unit-0042-0012"
       ]
     },
     {
-      "bullet_text": "Pure functions are easiest to understand (raw/javascriptallonge.pdf p.44-48). (may)",
+      "bullet_text": "The result of applying a function is a function when the expression body is another function (raw/javascriptallonge.pdf p.44-44)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0023"
+        "source-claim-unit-0042-0006"
       ]
     },
     {
-      "bullet_text": "Functions containing no free variables are called **pure functions** (raw/javascriptallonge.pdf p.44-48). (may)",
+      "bullet_text": "A value representing a function is created when a function is applied (raw/javascriptallonge.pdf p.44-44)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0025"
+        "source-claim-unit-0042-0007"
       ]
     }
   ],

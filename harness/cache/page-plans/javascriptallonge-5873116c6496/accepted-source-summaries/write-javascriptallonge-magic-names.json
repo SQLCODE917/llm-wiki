@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript binds argument values to function argument names during execution (raw/javascriptallonge.pdf p.74-74).",
+      "covered_source_claims": [
+        "source-claim-unit-0066-0001"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript also binds values to some \"magic\" names in addition to user-defined arguments (raw/javascriptallonge.pdf p.74-74).",
+      "covered_source_claims": [
+        "source-claim-unit-0066-0002"
+      ]
+    },
+    {
+      "bullet_text": "Magic names are special identifiers bound during function execution (raw/javascriptallonge.pdf p.74-74).",
+      "covered_source_claims": [
+        "source-claim-unit-0066-0002"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on magic names in JavaScript Allongé"
+}

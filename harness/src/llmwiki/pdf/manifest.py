@@ -42,6 +42,7 @@ class Manifest:
     source: str  # path relative to raw/
     sha256: str
     chunks: tuple[ChunkRecord, ...]
+    extractor_name: str = "pymupdf4llm"
     integrated: bool = field(default=False)
 
     @property
@@ -232,6 +233,7 @@ def to_json(manifest: Manifest) -> str:
         {
             "source": manifest.source,
             "sha256": manifest.sha256,
+            "extractor_name": manifest.extractor_name,
             "integrated": manifest.integrated,
             "chunks": [
                 {
@@ -259,6 +261,7 @@ def from_json(text: str) -> Manifest:
     return Manifest(
         source=data["source"],
         sha256=data["sha256"],
+        extractor_name=data.get("extractor_name", "pymupdf4llm"),
         integrated=data["integrated"],
         chunks=tuple(
             ChunkRecord(

@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript has one more way to bind a name to a value, var . (raw/javascriptallonge.pdf p.151-154)",
+      "covered_source_claims": [
+        "source-claim-unit-0123-0001"
+      ]
+    }
+  ],
+  "source_record_text": "This page summarizes the 'var' keyword in JavaScript as described in 'JavaScript Allongé', focusing on its function-scoped nature and differences from 'let'."
+}

@@ -15,6 +15,18 @@ from llmwiki.domain.objects import (
 from llmwiki.domain.page_body_contracts import ResolvedPageBodyContract
 from llmwiki.domain.pages import slugify
 from llmwiki.domain.planning_analysis import tokens, top_terms
+from llmwiki.domain.source_claim_quality import (
+    CLAIM_ELIGIBLE,
+    claim_centrality,
+    claim_certainty,
+    claim_eligibility,
+    claim_role_tags,
+    claim_salience,
+    eligible_claims,
+    eligible_or_source_fallback_claims,
+    is_central_source_summary_claim,
+    unit_source_summary_fallback_claims,
+)
 
 _SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
 _SKILL_REFERENCE_RE = re.compile(r"\b([a-z][a-z0-9-]*)\s+skills?\b", re.IGNORECASE)
@@ -69,49 +81,6 @@ _GENERIC_PAGE_MATCH_TERMS = frozenset(
     }
 )
 
-_ROLE_PATTERNS: tuple[tuple[str, tuple[str, ...]], ...] = (
-    ("uncertainty", (r"\bmay\b", r"\bmight\b", r"\bpossible\b", r"\bsuggest\w*\b", r"\bunknown\b")),
-    (
-        "negative-evidence",
-        (r"\bno\b.+\bfound\b", r"\bnot\b.+\bfound\b", r"\bdoes not\b", r"\bwithout\b"),
-    ),
-    ("limitation", (r"\blimit\w*\b", r"\bunless\b", r"\bexcept\b", r"\bonly\b", r"\bcannot\b")),
-    ("method", (r"\bused\b", r"\busing\b", r"\bstudy\b", r"\banalys\w*\b", r"\btest\w*\b")),
-    ("evidence", (r"\bevidence\b", r"\binscription\w*\b", r"\bcitation\b", r"\brecord\b")),
-    ("provenance", (r"\bfrom\b", r"\borigin\w*\b", r"\bretrieved\b", r"\bdiscovered\b")),
-    ("temporal", (r"\b\d{3,4}\b", r"\bbc\b", r"\bad\b", r"\byear\b", r"\bcentur\w*\b")),
-    ("quantitative", (r"\b\d+\b", r"\bat least\b", r"\bmore than\b", r"\broughly\b")),
-    (
-        "function",
-        (r"\btrack\w*\b", r"\bpredict\w*\b", r"\badvance\b", r"\bshow\w*\b", r"\bcould\b"),
-    ),
-    ("mechanism", (r"\bconsists\b", r"\bgear\w*\b", r"\bcase\b", r"\bcrank\b", r"\bthrough\b")),
-    ("comparison", (r"\bmatched\b", r"\bsurpass\w*\b", r"\bcompared\b", r"\bthan\b")),
-    ("relationship", (r"\blink\w*\b", r"\bconnect\w*\b", r"\bbetween\b", r"\bwith\b")),
-    ("requirement", (r"\bmust\b", r"\brequire\w*\b", r"\bshall\b", r"\bshould\b")),
-    ("procedure", (r"\bturn\w*\b", r"\bstep\b", r"\bprocess\b", r"\bworkflow\b")),
-    ("definition", (r"\bdefined as\b", r"\bmeans\b", r"\brefers to\b")),
-    ("identity", (r"\bis\b", r"\bare\b", r"\bknown as\b", r"\bdescribed as\b")),
-    ("attribute", (r"\bhas\b", r"\bhave\b", r"\bcontains\b", r"\bhoused\b", r"\bsize\b")),
-    ("open-question", (r"\bopen question\b", r"\bunclear\b", r"\bunresolved\b")),
-)
-
-_ROLE_WEIGHTS = {
-    "uncertainty": 0.33,
-    "negative-evidence": 0.34,
-    "limitation": 0.31,
-    "method": 0.27,
-    "function": 0.30,
-    "mechanism": 0.25,
-    "provenance": 0.22,
-    "temporal": 0.18,
-    "identity": 0.22,
-    "definition": 0.22,
-    "comparison": 0.20,
-    "evidence": 0.20,
-    "quantitative": 0.16,
-}
-
 
 def source_claims(
     units: tuple[ExtractedUnit, ...],
@@ -121,7 +90,9 @@ def source_claims(
     allowed_roles = {role.tag_name for role in schema.claim_role_tags}
     for unit in units:
         for index, statement in enumerate(_claim_sentences(unit.text), start=1):
-            role_tags = tuple(role for role in _claim_role_tags(statement) if role in allowed_roles)
+            role_tags = tuple(role for role in claim_role_tags(statement) if role in allowed_roles)
+            eligibility = claim_eligibility(statement, role_tags)
+            centrality = claim_centrality(statement, unit.heading_path)
             evidence = Evidence(
                 raw_source=unit.raw_source,
                 locator=f"{unit.locator} s.{index}".strip(),
@@ -135,9 +106,11 @@ def source_claims(
                     extracted_unit_id=unit.unit_id,
                     source_span=evidence.locator,
                     claim_role_tags=role_tags,
-                    claim_salience=_claim_salience(statement, role_tags),
-                    claim_certainty=_claim_certainty(role_tags),
+                    claim_salience=claim_salience(statement, role_tags, eligibility, centrality),
+                    claim_certainty=claim_certainty(role_tags),
                     subject_terms=top_terms(statement, 4),
+                    claim_eligibility=eligibility,
+                    claim_centrality=centrality,
                 )
             )
     return tuple(claims)
@@ -180,8 +153,36 @@ def source_summary_plan(
     min_claims = min(contract.min_claim_bullets or 3, len(claims))
     candidate_claims = _topic_focused_claims(page_terms, claims, min_claims)
     candidate_claim_ids = {claim.source_claim_id for claim in candidate_claims}
+    claims_by_unit: dict[str, list[SourceClaim]] = {}
+    for claim in candidate_claims:
+        claims_by_unit.setdefault(claim.extracted_unit_id, []).append(claim)
+    source_has_eligible_claims = bool(eligible_claims(candidate_claims))
+    source_has_central_eligible_claims = any(
+        is_central_source_summary_claim(claim) for claim in eligible_claims(candidate_claims)
+    )
     selected: list[SourceClaim] = []
     first_relevant_position = _first_relevant_claim_position(page_terms, candidate_claims)
+
+    unit_ids = tuple(dict.fromkeys(claim.extracted_unit_id for claim in candidate_claims))
+    if len(unit_ids) <= _MAX_SOURCE_SUMMARY_CLAIMS:
+        for unit_id in unit_ids:
+            unit_claims = claims_by_unit.get(unit_id, [])
+            candidates = eligible_claims(unit_claims)
+            central_candidates = [
+                claim for claim in candidates if is_central_source_summary_claim(claim)
+            ]
+            if central_candidates:
+                candidates = central_candidates
+            elif source_has_central_eligible_claims:
+                candidates = []
+            if not candidates:
+                candidates = unit_source_summary_fallback_claims(unit_claims)
+            if not candidates and not source_has_eligible_claims:
+                candidates = unit_claims
+            if candidates and len(selected) < _MAX_SOURCE_SUMMARY_CLAIMS:
+                selected.append(
+                    max(candidates, key=lambda claim: _selection_score(page_terms, claim))
+                )
 
     def has_unselected_relevant_claims() -> bool:
         return any(
@@ -213,6 +214,11 @@ def source_summary_plan(
             if not early_candidates:
                 return
             candidates = early_candidates
+        candidates = eligible_or_source_fallback_claims(
+            candidates,
+            source_has_eligible_claims,
+            source_has_central_eligible_claims,
+        )
         if candidates and len(selected) < _MAX_SOURCE_SUMMARY_CLAIMS:
             selected.append(max(candidates, key=lambda claim: _selection_score(page_terms, claim)))
 
@@ -220,7 +226,7 @@ def source_summary_plan(
     add_role_claim("function", "mechanism", "procedure", "requirement")
     add_role_claim("limitation")
     add_role_claim("negative-evidence")
-    add_role_claim("uncertainty", "open-question")
+    add_role_claim("source-uncertainty", "open-question")
 
     for group in groups:
         if len(selected) >= _MAX_SOURCE_SUMMARY_CLAIMS:
@@ -253,9 +259,15 @@ def source_summary_plan(
                 if not early_group_claims:
                     continue
                 group_claims = early_group_claims
-            selected.append(
-                max(group_claims, key=lambda claim: _selection_score(page_terms, claim))
+            candidates = eligible_or_source_fallback_claims(
+                group_claims,
+                source_has_eligible_claims,
+                source_has_central_eligible_claims,
             )
+            if candidates:
+                selected.append(
+                    max(candidates, key=lambda claim: _selection_score(page_terms, claim))
+                )
 
     for claim in sorted(
         _without_competing_section_claims(page_terms, list(candidate_claims)),
@@ -265,11 +277,7 @@ def source_summary_plan(
         target_size = max(min_claims, min(_MAX_SOURCE_SUMMARY_CLAIMS, len(candidate_claims)))
         if len(selected) >= target_size:
             break
-        if (
-            page_terms
-            and len(selected) >= min_claims
-            and _page_overlap(page_terms, claim) == 0
-        ):
+        if page_terms and len(selected) >= min_claims and _page_overlap(page_terms, claim) == 0:
             continue
         if (
             page_terms
@@ -278,6 +286,14 @@ def source_summary_plan(
         ):
             continue
         if claim not in selected:
+            if claim.claim_eligibility != CLAIM_ELIGIBLE and source_has_eligible_claims:
+                continue
+            if (
+                claim.claim_eligibility == CLAIM_ELIGIBLE
+                and source_has_central_eligible_claims
+                and not is_central_source_summary_claim(claim)
+            ):
+                continue
             selected.append(claim)
 
     selected_ids = tuple(claim.source_claim_id for claim in selected[:_MAX_SOURCE_SUMMARY_CLAIMS])
@@ -320,33 +336,17 @@ def _claim_sentences(text: str) -> tuple[str, ...]:
     return tuple(sentences)
 
 
-def _claim_role_tags(statement: str) -> tuple[str, ...]:
-    lowered = statement.lower()
-    roles = [
-        role
-        for role, patterns in _ROLE_PATTERNS
-        if any(re.search(pattern, lowered) for pattern in patterns)
-    ]
-    return tuple(dict.fromkeys(roles))
-
-
-def _claim_salience(statement: str, role_tags: tuple[str, ...]) -> float:
-    role_score = max((_ROLE_WEIGHTS.get(role, 0.12) for role in role_tags), default=0.08)
-    length_score = min(len(tokens(statement)) / 80, 0.18)
-    return round(min(1.0, 0.38 + role_score + length_score), 3)
-
-
-def _claim_certainty(role_tags: tuple[str, ...]) -> str:
-    if "uncertainty" in role_tags:
-        return "uncertain"
-    if "negative-evidence" in role_tags:
-        return "negative-evidence"
-    return "supported"
-
-
 def _selection_score(page_terms: frozenset[str], claim: SourceClaim) -> float:
     relevance = min(_page_overlap(page_terms, claim) * 0.12, 0.36)
-    return claim.claim_salience + relevance - min(_claim_position(claim) * 0.008, 0.65)
+    eligibility_bonus = 0.20 if claim.claim_eligibility == CLAIM_ELIGIBLE else -0.20
+    centrality_bonus = min(claim.claim_centrality * 0.15, 0.15)
+    return (
+        claim.claim_salience
+        + relevance
+        + eligibility_bonus
+        + centrality_bonus
+        - min(_claim_position(claim) * 0.008, 0.65)
+    )
 
 
 def _page_overlap(page_terms: frozenset[str], claim: SourceClaim) -> int:
@@ -472,7 +472,7 @@ def _claim_position(claim: SourceClaim) -> int:
 
 def _primary_claim_group_label(claim: SourceClaim) -> str:
     for role in (
-        "uncertainty",
+        "source-uncertainty",
         "negative-evidence",
         "limitation",
         "function",

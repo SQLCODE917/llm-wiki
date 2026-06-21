@@ -1,6 +1,7 @@
 {
   "source": "Sword World RPG - Complete Edition.pdf",
   "sha256": "e5870dca757ef182e8b799dc3446fcd9fdfc10a23c854245849967f7a80a4ea1",
+  "extractor_name": "pymupdf4llm",
   "integrated": true,
   "chunks": [
     {

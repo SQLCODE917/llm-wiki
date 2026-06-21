@@ -1,0 +1,19 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Inside-out function patterns allow binding names inside functions without function invocation cost. (raw/javascriptallonge.pdf p.50-51)",
+      "covered_source_claims": [
+        "source-claim-unit-0048-0020"
+      ]
+    },
+    {
+      "bullet_text": "IIFE (Immediately Invoked Function Expression) is a pattern where functions are written as expressions and immediately applied to arguments. (raw/javascriptallonge.pdf p.50-51)",
+      "covered_source_claims": []
+    },
+    {
+      "bullet_text": "Magic literals like 3.14159265 are discouraged in sustainable software development. (raw/javascriptallonge.pdf p.50-51)",
+      "covered_source_claims": []
+    }
+  ],
+  "source_record_text": "This chapter explores inside-out function patterns in JavaScript, focusing on techniques for binding names inside functions without incurring the cost of a function invocation."
+}

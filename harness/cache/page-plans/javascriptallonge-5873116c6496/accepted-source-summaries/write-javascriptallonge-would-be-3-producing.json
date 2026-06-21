@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We can encode the board in several different ways, such as using multiline strings or arrays. (raw/javascriptallonge.pdf p.276-276)",
+      "covered_source_claims": [
+        "source-claim-unit-0189-0001"
+      ]
+    }
+  ],
+  "source_record_text": "This section discusses encoding game boards in JavaScript, emphasizing the use of arrays over multiline strings for better design and modularity."
+}

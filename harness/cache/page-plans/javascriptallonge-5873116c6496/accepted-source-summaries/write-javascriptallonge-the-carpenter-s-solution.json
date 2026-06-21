@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The Carpenter was not surprised at the problem, as Bob Plissken, a crafty recruiter, often prepared candidates with information about interview questions, including loop detection problems (raw/javascriptallonge.pdf p.264-269).",
+      "covered_source_claims": [
+        "source-claim-unit-0184-0001"
+      ]
+    },
+    {
+      "bullet_text": "To save time, The Carpenter had prepared the same answer for both questions about loop detection in linked lists and chequerboard games (raw/javascriptallonge.pdf p.264-269).",
+      "covered_source_claims": [
+        "source-claim-unit-0184-0007"
+      ]
+    },
+    {
+      "bullet_text": "Bob had, in fact, warned The Carpenter that 'Thing' liked to ask either or both of two questions: Determine how to detect a loop in a linked list, and determine whether the chequerboard game would halt (raw/javascriptallonge.pdf p.264-269).",
+      "covered_source_claims": [
+        "source-claim-unit-0184-0006"
+      ]
+    },
+    {
+      "bullet_text": "The Carpenter coughed softly, then began, introducing the solution using iterables and a statefulMapWith utility function (raw/javascriptallonge.pdf p.264-269).",
+      "covered_source_claims": [
+        "source-claim-unit-0184-0008"
+      ]
+    }
+  ],
+  "source_record_text": "The carpenter's solution to the loop detection problem in linked lists and chequerboard games, as presented in 'javascriptallonge'."
+}

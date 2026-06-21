@@ -1,0 +1,16 @@
+---
+page_id: javascriptallonge-quasi-literals
+page_kind: source
+summary: Summary of quasi-literals from javascriptallonge.pdf
+sources: raw/javascriptallonge.pdf p.203-204
+updated: 2026-06-20
+source_id: javascriptallonge.pdf
+---
+
+## Source record
+
+JavaScript supports quasi-literal strings, a/k/a 'Template Strings' or 'String Interpolation Expressions.' A quasi-literal string is something that looks like a string literal, but is actually an expression. Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals.
+
+## Key supported claims
+
+- Quasi-literal strings are denoted with back quotes, and most strings that can be expressed as literals have the exact same meaning as quasi-literals, e.g. (raw/javascriptallonge.pdf p.203-204).

@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Kestrel combinator creates constant functions; demonstrates use of K to bind values to names (raw/javascriptallonge.pdf p.177-197)",
+      "bullet_text": "In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case. For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list (raw/javascriptallonge.pdf p.177-179).",
       "covered_source_claims": [
-        "source-claim-unit-0013-0006"
+        "source-claim-unit-0136-0003"
       ]
     },
     {
-      "bullet_text": "Illustrates caching of images and use of a ternary operator for base-case termination (raw/javascriptallonge.pdf p.177-197)",
+      "bullet_text": "We can model lists just using functions (raw/javascriptallonge.pdf p.177-179).",
       "covered_source_claims": [
-        "source-claim-unit-0013-0002"
+        "source-claim-unit-0136-0010"
       ]
     },
     {
-      "bullet_text": "Discusses composing and decomposing data via functions, arrays, and objects (raw/javascriptallonge.pdf p.177-197)",
+      "bullet_text": "We have used arrays and objects to represent the structure of data, and extensively used the ternary operator to write algorithms that terminate when we reach a base case (raw/javascriptallonge.pdf p.177-179).",
       "covered_source_claims": [
-        "source-claim-unit-0013-0001"
-      ]
-    },
-    {
-      "bullet_text": "Shows extensive use of ternary operator and arrays/objects for data structures, hinting at possible simplification (raw/javascriptallonge.pdf p.177-197)",
-      "covered_source_claims": [
-        "source-claim-unit-0013-0005"
-      ]
-    },
-    {
-      "bullet_text": "Reiterates theme of composing and decomposing data, suggesting modular function design (raw/javascriptallonge.pdf p.177-197)",
-      "covered_source_claims": [
-        "source-claim-unit-0013-0007"
+        "source-claim-unit-0136-0002"
       ]
     }
   ],
-  "source_record_text": "Chapter on building data structures using pure functions, focusing on combinatory logic and list representation."
+  "source_record_text": "Chapter on modeling data using functions, including K, I, and V combinators."
 }

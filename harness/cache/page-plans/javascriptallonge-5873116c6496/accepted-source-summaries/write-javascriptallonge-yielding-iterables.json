@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "We take advantage of the for...of loop in a plain and direct way: For each element e, if it is iterable, treat it as a tree and iterate over it, yielding each of its elements. This approach works well and is simpler than maintaining our own stack (raw/javascriptallonge.pdf p.239-243).",
+      "covered_source_claims": [
+        "source-claim-unit-0175-0008"
+      ]
+    },
+    {
+      "bullet_text": "Tucked inside of it is the same three-line idiom for yielding each element of an iterable, which can be abbreviated using yield* (raw/javascriptallonge.pdf p.239-243).",
+      "covered_source_claims": [
+        "source-claim-unit-0175-0020"
+      ]
+    },
+    {
+      "bullet_text": "A function that returns an iterable can often be written much more simply as a generator, rather than a function that returns an iterable object (raw/javascriptallonge.pdf p.239-243).",
+      "covered_source_claims": [
+        "source-claim-unit-0175-0004"
+      ]
+    },
+    {
+      "bullet_text": "append iterates over a collection of iterables, one element at a time (raw/javascriptallonge.pdf p.239-243).",
+      "covered_source_claims": [
+        "source-claim-unit-0175-0018"
+      ]
+    },
+    {
+      "bullet_text": "yield* is handy when writing generator functions that operate on or create iterables (raw/javascriptallonge.pdf p.239-243).",
+      "covered_source_claims": [
+        "source-claim-unit-0175-0026"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on yielding iterables from JavaScript Allongé, covering tree iteration and the use of yield*."
+}

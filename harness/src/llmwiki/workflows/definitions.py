@@ -70,7 +70,11 @@ def build_ingest_workflow(
         read_source_tool(store),
         search_wiki_tool(store),
         read_page_tool(store, read_tracker=seen),
-        plan_pages_tool(ingest_route_plan_state, recoverable_errors=recoverable_tool_errors),
+        plan_pages_tool(
+            ingest_route_plan_state,
+            recoverable_errors=recoverable_tool_errors,
+            prerequisites=["read_source", "search_wiki"],
+        ),
         write_page_tool(
             store,
             today,

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Given the title of this chapter, it is not a surprise that JavaScript makes this possible (raw/javascriptallonge.pdf p.230-231).",
+      "covered_source_claims": [
+        "source-claim-unit-0171-0002"
+      ]
+    },
+    {
+      "bullet_text": "An iterator written in a generation style is called a generator (raw/javascriptallonge.pdf p.230-231).",
+      "covered_source_claims": [
+        "source-claim-unit-0171-0004"
+      ]
+    },
+    {
+      "bullet_text": "It would be very nice if we could sometimes write iterators as a .next() method that gets called, and sometimes write out a generator (raw/javascriptallonge.pdf p.230-231).",
+      "covered_source_claims": [
+        "source-claim-unit-0171-0001"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter covers JavaScript generators, including how to declare them using the function * syntax and how to use the yield keyword to produce values."
+}

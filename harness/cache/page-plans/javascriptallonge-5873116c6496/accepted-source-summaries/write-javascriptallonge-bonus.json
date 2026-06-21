@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Many programmers coming to JavaScript from other languages are familiar with three 'canonical' operations on collections: folding, filtering, and finding. (raw/javascriptallonge.pdf p.175-176)",
+      "covered_source_claims": [
+        "source-claim-unit-0134-0001"
+      ]
+    },
+    {
+      "bullet_text": "In Smalltalk, for example, they are known as collect , select , and detect . (raw/javascriptallonge.pdf p.175-176)",
+      "covered_source_claims": [
+        "source-claim-unit-0134-0002"
+      ]
+    },
+    {
+      "bullet_text": "This is interesting, because it is lazy: It doesn't apply fn to every element in an iteration, just enough to find the first that passes the test. (raw/javascriptallonge.pdf p.175-176)",
+      "covered_source_claims": [
+        "source-claim-unit-0134-0005"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the bonus chapter from JavaScript Allongé, focusing on lazy evaluation and collection operations in JavaScript."
+}

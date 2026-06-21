@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript uses the 'call by value' evaluation strategy. (raw/javascriptallonge.pdf p.40-41)",
+      "covered_source_claims": [
+        "source-claim-unit-0039-0002"
+      ]
+    },
+    {
+      "bullet_text": "In call by value, JavaScript evaluates expressions before applying functions to the resulting values. (raw/javascriptallonge.pdf p.40-41)",
+      "covered_source_claims": [
+        "source-claim-unit-0039-0002"
+      ]
+    },
+    {
+      "bullet_text": "Example: ((diameter) => diameter * 3.14159265)(1 + 1) evaluates 1 + 1 to 2 before applying the function. (raw/javascriptallonge.pdf p.40-41)",
+      "covered_source_claims": [
+        "source-claim-unit-0039-0002"
+      ]
+    }
+  ],
+  "source_record_text": "Like most contemporary programming languages, JavaScript uses the 'call by value' evaluation strategy. That means that when you write some code that appears to apply a function to an expression or expressions, JavaScript evaluates all of those expressions and applies the functions to the resulting value(s)."
+}

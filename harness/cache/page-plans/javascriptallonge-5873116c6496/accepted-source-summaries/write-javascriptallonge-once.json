@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "once is an extremely helpful combinator. (raw/javascriptallonge.pdf p.88-88)",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0001"
+      ]
+    },
+    {
+      "bullet_text": "It ensures that a function can only be called, well, once. (raw/javascriptallonge.pdf p.88-88)",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0002"
+      ]
+    },
+    {
+      "bullet_text": "That function will call your function once, and thereafter will return undefined whenever it is called. (raw/javascriptallonge.pdf p.88-88)",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0006"
+      ]
+    },
+    {
+      "bullet_text": "(Note: There are some subtleties with decorators like once that involve the intersection of state with methods. (raw/javascriptallonge.pdf p.88-88)",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0009"
+      ]
+    }
+  ],
+  "source_record_text": "The \"Once\" chapter from JavaScript Allongé introduces the once combinator, a function that ensures another function can only be called once."
+}

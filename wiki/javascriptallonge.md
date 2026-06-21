@@ -1,43 +1,209 @@
 ---
 page_id: javascriptallonge
 page_kind: source
-summary: JavaScript Allonge – A modular guide to JavaScript fundamentals and advanced techniques.
+summary: JavaScript Allongé, the 'Six' Edition by Reg 'raganwald' Braithwaite.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-20
 source_id: javascriptallonge.pdf
 ---
 
-## Source record
+JavaScript Allongé is a book about JavaScript programming, focusing on functional programming concepts and modern ECMAScript features. It is structured as a guide to understanding JavaScript's core mechanisms, from basic values and expressions to advanced topics like closures, iterators, and functional patterns.
 
-A comprehensive modular guide to JavaScript fundamentals and advanced techniques, spanning 20 chapters.
+## Key Concepts
 
-## Key supported claims
-
-- Function fundamentals and minimalism – covering basic functions, arguments, and return values (raw/javascriptallonge.pdf p.30-43)
-- Closures, scope, and lexical environment – explaining variable bindings and function context (raw/javascriptallonge.pdf p.44-48)
-- Practical patterns: naming conventions, truthiness, mutation, and immutability – best practices for robust code (raw/javascriptallonge.pdf p.62-78, p.141-157)
+- Functions and closures
+- ECMAScript 6 features
+- Iteration and iterables
+- Functional programming patterns
+- Data structures and mutation
 
 ## Page-Map Navigation
 
 The harness added these links from the chunk page map so the book-scale hub remains navigable:
 
-- [[javascriptallonge-front-matter]] — Front matter
-- [[javascriptallonge-forewords-to-the-first-edition]] — Forewords to the First Edition
+- [[javascriptallonge-reg-raganwald-braithwaite]] — Reg 'raganwald' Braithwaite
+- [[javascriptallonge-a-pull-of-the-lever-prefaces]] — A Pull of the Lever: Prefaces
+- [[javascriptallonge-about-javascript-allong]] — About JavaScript Allongé
+- [[javascriptallonge-why-the-six-edition]] — why the 'six' edition?
+- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — that's nice. is that the only reason?
+- [[javascriptallonge-what-javascript-allong-is-and-isn-t]] — What JavaScript Allongé is. And isn't.
+- [[javascriptallonge-how-this-book-is-organized]] — how this book is organized
+- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition
+- [[javascriptallonge-ecmascript-6-has-three-major-groups-of-features]] — ECMAScript 6 has three major groups of features:
+- [[javascriptallonge-michael-fogus]] — michael fogus
+- [[javascriptallonge-matthew-knox]] — matthew knox
+- [[javascriptallonge-about-the-sample-pdf]] — About The Sample PDF
+- [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Prelude: Values and Expressions over Coffee
+- [[javascriptallonge-values-are-expressions]] — values are expressions
+- [[javascriptallonge-values-and-identity]] — values and identity
+- [[javascriptallonge-value-types]] — value types
+- [[javascriptallonge-reference-types]] — reference types
+- [[javascriptallonge-a-rich-aroma-basic-numbers]] — A Rich Aroma: Basic Numbers
+- [[javascriptallonge-floating]] — floating
+- [[javascriptallonge-operations-on-numbers]] — operations on numbers
 - [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — As Little As Possible About Functions, But No Less
+- [[javascriptallonge-functions-and-identities]] — functions and identities
+- [[javascriptallonge-applying-functions]] — applying functions
+- [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]] — functions that return values and evaluate expressions
+- [[javascriptallonge-commas]] — commas
+- [[javascriptallonge-or-even]] — Or even:
+- [[javascriptallonge-the-simplest-possible-block]] — the simplest possible block
+- [[javascriptallonge-undefined]] — undefined
+- [[javascriptallonge-void]] — void
+- [[javascriptallonge-back-on-the-block]] — back on the block
+- [[javascriptallonge-and-also]] — And also:
+- [[javascriptallonge-functions-that-evaluate-to-functions]] — functions that evaluate to functions
+- [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]] — Ah. I'd Like to Have an Argument, Please. 22
+- [[javascriptallonge-a-quick-summary-of-functions-and-bodies]] — a quick summary of functions and bodies
+- [[javascriptallonge-call-by-value]] — call by value
+- [[javascriptallonge-variables-and-bindings]] — variables and bindings
+- [[javascriptallonge-call-by-sharing]] — call by sharing
 - [[javascriptallonge-closures-and-scope]] — Closures and Scope
+- [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — if functions without free variables are pure, are closures impure?
+- [[javascriptallonge-it-s-always-the-environment]] — it's always the environment
+- [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]] — shadowy variables from a shadowy planet
+- [[javascriptallonge-which-came-first-the-chicken-or-the-egg]] — which came first, the chicken or the egg?
 - [[javascriptallonge-that-constant-coffee-craving]] — That Constant Coffee Craving
+- [[javascriptallonge-inside-out]] — inside-out
+- [[javascriptallonge-const]] — const
+- [[javascriptallonge-nested-blocks]] — nested blocks
+- [[javascriptallonge-const-and-lexical-scope]] — const and lexical scope
+- [[javascriptallonge-are-consts-also-from-a-shadowy-planet]] — are consts also from a shadowy planet?
+- [[javascriptallonge-rebinding]] — rebinding
 - [[javascriptallonge-naming-functions]] — Naming Functions
+- [[javascriptallonge-the-function-keyword]] — the function keyword
+- [[javascriptallonge-function-declarations]] — function declarations
+- [[javascriptallonge-function-declaration-caveats-34]] — function declaration caveats 34
+- [[javascriptallonge-higher-order-functions]] — higher-order functions
+- [[javascriptallonge-combinators]] — combinators
+- [[javascriptallonge-a-balanced-statement-about-combinators]] — a balanced statement about combinators
+- [[javascriptallonge-function-decorators]] — function decorators
+- [[javascriptallonge-building-blocks]] — Building Blocks
+- [[javascriptallonge-composition]] — composition
+- [[javascriptallonge-partial-application]] — partial application
+- [[javascriptallonge-magic-names]] — Magic Names
+- [[javascriptallonge-magic-names-and-fat-arrows]] — magic names and fat arrows
 - [[javascriptallonge-recipes-with-basic-functions]] — Recipes with Basic Functions
+- [[javascriptallonge-disclaimer]] — Disclaimer
+- [[javascriptallonge-unary]] — Unary
+- [[javascriptallonge-tap]] — Tap
+- [[javascriptallonge-maybe]] — Maybe
+- [[javascriptallonge-once]] — Once
+- [[javascriptallonge-left-variadic-functions]] — Left-Variadic Functions
+- [[javascriptallonge-a-history-lesson]] — a history lesson
+- [[javascriptallonge-overcoming-limitations]] — overcoming limitations
+- [[javascriptallonge-left-variadic-destructuring]] — left-variadic destructuring
 - [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — Picking the Bean: Choice and Truthiness
+- [[javascriptallonge-true]] — true
+- [[javascriptallonge-false]] — false
+- [[javascriptallonge-truthiness-and-the-ternary-operator]] — truthiness and the ternary operator
+- [[javascriptallonge-truthiness-and-operators]] — truthiness and operators
+- [[javascriptallonge-and-are-control-flow-operators]] — || and && are control-flow operators
+- [[javascriptallonge-function-parameters-are-eager]] — function parameters are eager
+- [[javascriptallonge-summary]] — summary
+- [[javascriptallonge-composing-and-decomposing-data]] — Composing and Decomposing Data
+- [[javascriptallonge-arrays-and-destructuring-arguments]] — Arrays and Destructuring Arguments
+- [[javascriptallonge-array-literals]] — array literals
+- [[javascriptallonge-element-references]] — element references
+- [[javascriptallonge-destructuring-arrays]] — destructuring arrays
+- [[javascriptallonge-gathering]] — gathering
+- [[javascriptallonge-destructuring-is-not-pattern-matching]] — destructuring is not pattern matching
+- [[javascriptallonge-destructuring-and-return-values]] — destructuring and return values
+- [[javascriptallonge-destructuring-parameters]] — destructuring parameters
 - [[javascriptallonge-self-similarity]] — Self-Similarity
+- [[javascriptallonge-linear-recursion]] — linear recursion
+- [[javascriptallonge-mapping]] — mapping
+- [[javascriptallonge-folding]] — folding
+- [[javascriptallonge-tail-calls-and-default-arguments]] — Tail Calls (and Default Arguments)
+- [[javascriptallonge-tail-call-optimization]] — tail-call optimization
+- [[javascriptallonge-converting-non-tail-calls-to-tail-calls]] — converting non-tail-calls to tail-calls
+- [[javascriptallonge-factorials]] — factorials
+- [[javascriptallonge-default-arguments]] — default arguments
+- [[javascriptallonge-defaults-and-destructuring]] — defaults and destructuring
 - [[javascriptallonge-garbage-garbage-everywhere]] — Garbage, Garbage Everywhere
+- [[javascriptallonge-some-history]] — some history
+- [[javascriptallonge-so-why-arrays]] — so why arrays
+- [[javascriptallonge-plain-old-javascript-objects]] — Plain Old JavaScript Objects
+- [[javascriptallonge-literal-object-syntax]] — literal object syntax
+- [[javascriptallonge-destructuring-objects]] — destructuring objects
+- [[javascriptallonge-revisiting-linked-lists]] — revisiting linked lists
 - [[javascriptallonge-mutation]] — Mutation
+- [[javascriptallonge-mutation-and-data-structures]] — mutation and data structures
+- [[javascriptallonge-reassignment]] — Reassignment
+- [[javascriptallonge-var]] — var
+- [[javascriptallonge-why-const-and-let-were-invented]] — why const and let were invented
+- [[javascriptallonge-yes-consider-this-variation]] — Yes. Consider this variation:
 - [[javascriptallonge-copy-on-write]] — Copy on Write
+- [[javascriptallonge-a-few-utilities]] — a few utilities
+- [[javascriptallonge-copy-on-read]] — copy-on-read
+- [[javascriptallonge-tortoises-hares-and-teleporting-turtles]] — Tortoises, Hares, and Teleporting Turtles
+- [[javascriptallonge-functional-iterators]] — Functional Iterators
+- [[javascriptallonge-iterating]] — iterating
+- [[javascriptallonge-unfolding-and-laziness]] — unfolding and laziness
+- [[javascriptallonge-bonus]] — bonus
+- [[javascriptallonge-caveat]] — caveat
 - [[javascriptallonge-making-data-out-of-functions]] — Making Data Out Of Functions
+- [[javascriptallonge-the-kestrel-and-the-idiot]] — the kestrel and the idiot
+- [[javascriptallonge-backwardness]] — backwardness
+- [[javascriptallonge-the-vireo]] — the vireo
+- [[javascriptallonge-lists-with-functions-as-data]] — lists with functions as data
+- [[javascriptallonge-say-please]] — say 'please'
+- [[javascriptallonge-functions-are-not-the-real-point]] — functions are not the real point
+- [[javascriptallonge-a-return-to-backward-thinking]] — a return to backward thinking
+- [[javascriptallonge-recipes-with-data]] — Recipes with Data
+- [[javascriptallonge-mapwith]] — mapWith
+- [[javascriptallonge-flip]] — Flip
+- [[javascriptallonge-self-currying-flip]] — self-currying flip
+- [[javascriptallonge-flipping-methods]] — flipping methods
 - [[javascriptallonge-object-assign]] — Object.assign
+- [[javascriptallonge-why]] — Why?
+- [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]] — A Warm Cup: Basic Strings and Quasi-Literals
+- [[javascriptallonge-quasi-literals]] — quasi-literals
+- [[javascriptallonge-evaluation-time]] — evaluation time
+- [[javascriptallonge-served-by-the-pot-collections]] — Served by the Pot: Collections
 - [[javascriptallonge-iteration-and-iterables]] — Iteration and Iterables
+- [[javascriptallonge-iterator-objects]] — iterator objects
+- [[javascriptallonge-like-this]] — Like this:
+- [[javascriptallonge-basic-operations-on-iterables]] — iterables
+- [[javascriptallonge-iterables-out-to-infinity]] — iterables out to infinity
+- [[javascriptallonge-ordered-collections]] — ordered collections
+- [[javascriptallonge-operations-on-ordered-collections]] — operations on ordered collections
+- [[javascriptallonge-from]] — from
 - [[javascriptallonge-generating-iterables]] — Generating Iterables
+- [[javascriptallonge-recursive-iterators]] — recursive iterators
+- [[javascriptallonge-iteration]] — // Iteration
+- [[javascriptallonge-state-machines]] — state machines
+- [[javascriptallonge-we-ll-keep-it-simple]] — We'll keep it simple:
+- [[javascriptallonge-javascript-s-generators]] — javascript's generators
+- [[javascriptallonge-generators-are-coroutines]] — generators are coroutines
+- [[javascriptallonge-generators-and-iterables]] — generators and iterables
+- [[javascriptallonge-more-generators]] — more generators
+- [[javascriptallonge-yielding-iterables]] — yielding iterables
+- [[javascriptallonge-rewriting-iterable-operations]] — rewriting iterable operations
 - [[javascriptallonge-lazy-and-eager-collections]] — Lazy and Eager Collections
+- [[javascriptallonge-implementing-methods-with-iteration]] — implementing methods with iteration
+- [[javascriptallonge-lazy-collection-operations]] — lazy collection operations
 - [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — Interlude: The Carpenter Interviews for a Job
+- [[javascriptallonge-the-problem]] — the problem
+- [[javascriptallonge-the-carpenter-s-solution]] — the carpenter's solution
+- [[javascriptallonge-the-aftermath]] — the aftermath
+- [[javascriptallonge-after-another-drink]] — after another drink
 - [[javascriptallonge-interactive-generators]] — Interactive Generators
+- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function]] — representing naughts and crosses as a stateless function
+- [[javascriptallonge-would-be-3-producing]] — Would be 3 , producing:
+- [[javascriptallonge-will-be-represented-as]] — Will be represented as:
+- [[javascriptallonge-we-get]] — We get:
+- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]] — representing naughts and crosses as a stateful function
+- [[javascriptallonge-this-seems-familiar]] — this seems familiar
+- [[javascriptallonge-operations-that-transform-one-iterable-into-another]] — operations that transform one iterable into another
+- [[javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable]] — operations that compose two or more iterables into an iterable
+- [[javascriptallonge-operations-that-transform-an-iterable-into-a-value]] — operations that transform an iterable into a value
+- [[javascriptallonge-memoizing-an-iterable]] — memoizing an iterable
+- [[javascriptallonge-the-golden-crema-appendices-and-afterwords]] — The Golden Crema: Appendices and Afterwords
+- [[javascriptallonge-how-to-run-the-examples]] — How to run the examples
+- [[javascriptallonge-daniel-friedman-and-matthias-felleisen]] — Daniel Friedman and Matthias Felleisen
+- [[javascriptallonge-richard-feynman]] — Richard Feynman
 - [[javascriptallonge-copyright-notice]] — Copyright Notice
+- [[javascriptallonge-images]] — images
+- [[javascriptallonge-about-the-author]] — About The Author
+- [[javascriptallonge-contact]] — contact

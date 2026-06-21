@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Now our .iterator() method is returning an iterator object. (raw/javascriptallonge.pdf p.210-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0159-0003"
+      ]
+    },
+    {
+      "bullet_text": "When working with objects, we do things the object way. (raw/javascriptallonge.pdf p.210-211)",
+      "covered_source_claims": [
+        "source-claim-unit-0159-0004"
+      ]
+    }
+  ],
+  "source_record_text": "This section demonstrates how to create a stack object with an iterator method that returns an iterator object, showing how to use the iterator to traverse the stack's elements."
+}

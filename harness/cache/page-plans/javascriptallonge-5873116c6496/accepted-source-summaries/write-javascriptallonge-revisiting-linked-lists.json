@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "In essence, this simple implementation used functions to create an abstraction with named elements (raw/javascriptallonge.pdf p.137-140).",
+      "covered_source_claims": [
+        "source-claim-unit-0117-0003"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter revisits linked lists, comparing implementations using two-element arrays versus objects."
+}

@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads (raw/javascriptallonge.pdf p.114-116).",
+      "covered_source_claims": [
+        "source-claim-unit-0102-0001"
+      ]
+    },
+    {
+      "bullet_text": "We can represent a map as a fold, we just need to supply the array rebuilding code (raw/javascriptallonge.pdf p.114-116).",
+      "covered_source_claims": [
+        "source-claim-unit-0102-0014"
+      ]
+    },
+    {
+      "bullet_text": "And to return to our first example, our version of length can be written as a fold (raw/javascriptallonge.pdf p.114-116).",
+      "covered_source_claims": [
+        "source-claim-unit-0102-0018"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter discusses the concept of folding in JavaScript, showing how to implement functions like sumSquares, map, and length using fold operations."
+}

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. (raw/javascriptallonge.pdf p.193-194)",
+      "covered_source_claims": [
+        "source-claim-unit-0146-0011"
+      ]
+    },
+    {
+      "bullet_text": "mapWith is a very convenient abstraction for a very common pattern. (raw/javascriptallonge.pdf p.193-194)",
+      "covered_source_claims": [
+        "source-claim-unit-0146-0024"
+      ]
+    },
+    {
+      "bullet_text": "This recipe isn't for map : It's for mapWith , a function that wraps around map and turns any other function into a mapper. (raw/javascriptallonge.pdf p.193-194)",
+      "covered_source_claims": [
+        "source-claim-unit-0146-0005"
+      ]
+    },
+    {
+      "bullet_text": "82 Yes, we also used the name mapWith for working with ordinary collections elsewhere. (raw/javascriptallonge.pdf p.193-194)",
+      "covered_source_claims": [
+        "source-claim-unit-0146-0016"
+      ]
+    },
+    {
+      "bullet_text": "mapWith differs from map in two ways. (raw/javascriptallonge.pdf p.193-194)",
+      "covered_source_claims": [
+        "source-claim-unit-0146-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on mapWith function in JavaScript Allongé"
+}

@@ -1,33 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Arrow functions bind anonymous functions; the function stays unnamed (raw/javascriptallonge.pdf p.62-78).",
+      "bullet_text": "Binding an anonymous function to a name in an environment does not name the function itself (raw/javascriptallonge.pdf p.62-62).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0034"
+        "source-claim-unit-0054-0004"
       ]
     },
     {
-      "bullet_text": "`function` keyword with a name creates an internal name separate from the environment binding (raw/javascriptallonge.pdf p.62-78).",
+      "bullet_text": "Arrow functions bind anonymous functions; the function stays unnamed (raw/javascriptallonge.pdf p.62-62).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0022"
+        "source-claim-unit-0054-0004"
       ]
     },
     {
-      "bullet_text": "Named function expressions give the function an internal name for recursion, but the outer variable is the environment binding; might help debugging (raw/javascriptallonge.pdf p.62-78).",
+      "bullet_text": "Named function expressions provide an internal name for recursion but do not affect the environment binding (raw/javascriptallonge.pdf p.62-62).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0026"
-      ]
-    },
-    {
-      "bullet_text": "Function declarations are hoisted to the top of the scope; cannot appear inside blocks and can be called before declaration (raw/javascriptallonge.pdf p.62-78).",
-      "covered_source_claims": [
-        "source-claim-unit-0006-0007"
-      ]
-    },
-    {
-      "bullet_text": "Functions always use a block; writing `function (str) str + str` is invalid (raw/javascriptallonge.pdf p.62-78).",
-      "covered_source_claims": [
-        "source-claim-unit-0006-0018"
+        "source-claim-unit-0054-0004"
       ]
     }
   ],

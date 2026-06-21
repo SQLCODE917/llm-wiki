@@ -1,21 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript defines boolean literals `true` and `false`, which are value types used by logical operators `!`, `&&`, and `||` (raw/javascriptallonge.pdf p.94-108).",
+      "bullet_text": "JavaScript has boolean values true and false (raw/javascriptallonge.pdf p.94-94).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0001"
+        "source-claim-unit-0082-0002"
       ]
     },
     {
-      "bullet_text": "Figure in the chapter shows \"ANTIDOTE DECAF •DESVES\" and includes OCR‑verified text (raw/javascriptallonge.pdf p.94-108).",
+      "bullet_text": "JavaScript uses truthiness to determine behavior of logical operators (raw/javascriptallonge.pdf p.94-94).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0002"
+        "source-claim-unit-0082-0002"
       ]
     },
     {
-      "bullet_text": "The chapter explains truthiness: every value is either truthy or falsy (falsy includes `false`, `null`, `undefined`, `NaN`, `0`, and `''`); this determines the behavior of logical operators (raw/javascriptallonge.pdf p.94-108).",
+      "bullet_text": "Common questions involve truth or falsehood: is array empty, does person have middle name, is user logged in (raw/javascriptallonge.pdf p.94-94).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0004"
+        "source-claim-unit-0082-0002"
       ]
     }
   ],

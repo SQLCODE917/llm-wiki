@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Const uses lexical scope. (raw/javascriptallonge.pdf p.55-57)",
+      "covered_source_claims": [
+        "source-claim-unit-0051-0020"
+      ]
+    },
+    {
+      "bullet_text": "Understanding const requires understanding lexical scoping. (raw/javascriptallonge.pdf p.55-57)",
+      "covered_source_claims": [
+        "source-claim-unit-0051-0001"
+      ]
+    },
+    {
+      "bullet_text": "Const behaves similarly to parameter invocations in lexical scoping. (raw/javascriptallonge.pdf p.55-57)",
+      "covered_source_claims": [
+        "source-claim-unit-0051-0020"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on const and lexical scope from JavaScript Allongé, covering the semantics of binding names with const and how it relates to closures and lexical scoping."
+}

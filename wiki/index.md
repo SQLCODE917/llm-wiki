@@ -2,28 +2,198 @@
 
 ## Sources
 - [[antikythera-mechanism]] — Source summarizing the Antikythera Mechanism, an ancient Greek analog computer.
-- [[javascriptallonge]] — JavaScript Allonge – A modular guide to JavaScript fundamentals and advanced techniques.
-- [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — Functions in JavaScript are values with richer behavior and identity, exemplified by arrow syntax and evaluation of arguments.
-- [[javascriptallonge-closures-and-scope]] — Source summary of closures and scope from JavaScript Allongé, covering free variables, closures, and environments.
-- [[javascriptallonge-copy-on-write]] — Copy‑on‑write strategies for array and list mutation in JavaScript.
-- [[javascriptallonge-copyright-notice]] — © 2012‑2015 Reginald Braithwaite copyright notice for JavaScriptAllonge
+- [[javascriptallonge]] — JavaScript Allongé, the 'Six' Edition by Reg 'raganwald' Braithwaite.
+- [[javascriptallonge-a-balanced-statement-about-combinators]] — Summary of the chapter on combinators from 'JavaScript Allongé'.
+- [[javascriptallonge-a-few-utilities]] — Summary of the 'a few utilities' section from 'JavaScript Allongé'.
+- [[javascriptallonge-a-history-lesson]] — A history lesson on variadic functions and argument gathering in JavaScript, from javascriptallonge.pdf p.90-91.
+- [[javascriptallonge-a-pull-of-the-lever-prefaces]] — Chapter on prefacing techniques in Café Molinari's work.
+- [[javascriptallonge-a-pull-of-the-lever-prefaces-2]] — Summary of the prefaces section from JavaScript Allongé, covering coffee preparation methods.
+- [[javascriptallonge-a-quick-summary-of-functions-and-bodies]] — Summary of chapter 'a quick summary of functions and bodies' from 'JavaScript Allongé'.
+- [[javascriptallonge-a-return-to-backward-thinking]] — Chapter on backward thinking in JavaScript allonge.
+- [[javascriptallonge-a-rich-aroma-basic-numbers]] — Chapter on basic numbers in JavaScriptAllonge, covering literals, representations, and numeric types.
+- [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]] — Chapter on basic strings and quasi-literals in JavaScript Allongé.
+- [[javascriptallonge-about-javascript-allong]] — Summary of the 'About JavaScript Allongé' section from raw/javascriptallonge.pdf
+- [[javascriptallonge-about-the-author]] — Summary of the "About The Author" section from javascriptallonge.pdf.
+- [[javascriptallonge-about-the-sample-pdf]] — Summary of the sample PDF edition of JavaScript Allongé.
+- [[javascriptallonge-after-another-drink]] — Chapter summary for 'after another drink' from javascriptallonge.pdf
+- [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]] — Chapter 22: Ah. I'd Like to Have an Argument, Please.
+- [[javascriptallonge-and-also]] — Chapter summary for 'And also:' from javascriptallonge.pdf
+- [[javascriptallonge-and-are-control-flow-operators]] — Summary of the chapter on || and && being control-flow operators.
+- [[javascriptallonge-applying-functions]] — Summary of functions in JavaScript as per javascriptallonge.pdf
+- [[javascriptallonge-are-consts-also-from-a-shadowy-planet]] — Chapter section on const scoping and shadowing in JavaScript.
+- [[javascriptallonge-array-literals]] — Summary of array literals section from JavaScript Allongé.
+- [[javascriptallonge-arrays-and-destructuring-arguments]] — Summary of the Arrays and Destructuring Arguments chapter from JavaScript Allongé.
+- [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — Chapter on JavaScript functions as values and their representation.
+- [[javascriptallonge-back-on-the-block]] — Chapter on functions, blocks, and return statements in JavaScript.
+- [[javascriptallonge-backwardness]] — Chapter on backwardness in JavaScript and how functions operate on data structures.
+- [[javascriptallonge-basic-operations-on-iterables]] — iterables from raw/javascriptallonge.pdf.
+- [[javascriptallonge-bonus]] — Summary of the bonus chapter from JavaScript Allongé.
+- [[javascriptallonge-building-blocks]] — Summary of the Building Blocks chapter from JavaScript Allongé.
+- [[javascriptallonge-call-by-sharing]] — Chapter on call by sharing in JavaScriptAllonge
+- [[javascriptallonge-call-by-value]] — Summary of the call by value evaluation strategy in JavaScript, based on the source 'javascriptallonge'.
+- [[javascriptallonge-caveat]] — Summary of the caveat section from javascriptallonge.pdf
+- [[javascriptallonge-closures-and-scope]] — Chapter on closures and scope in JavaScript Allongé
+- [[javascriptallonge-combinators]] — Chapter on combinators from JavaScript Allongé.
+- [[javascriptallonge-commas]] — Summary of the commas section from JavaScript Allongé.
+- [[javascriptallonge-composing-and-decomposing-data]] — Chapter on composing and decomposing data in JavaScript
+- [[javascriptallonge-composition]] — Chapter on function composition in JavaScript Allongé.
+- [[javascriptallonge-const]] — Summary of the const chapter in JavaScript Allongé
+- [[javascriptallonge-const-and-lexical-scope]] — Summary of the const and lexical scope chapter from JavaScript Allongé.
+- [[javascriptallonge-contact]] — Contact information for Reg 'Raganwald' Braithwaite, author of JavaScript Allongé.
+- [[javascriptallonge-converting-non-tail-calls-to-tail-calls]] — Chapter on converting non-tail-calls to tail-calls in JavaScript
+- [[javascriptallonge-copy-on-read]] — Summary of the copy-on-read strategy in JavaScript Allongé.
+- [[javascriptallonge-copy-on-write]] — Copy-on-write strategy in JavaScript, including its definition, tradeoffs, and implementation in the context of immutable data structures.
+- [[javascriptallonge-copyright-notice]] — Copyright notice for JavaScript Allongé
+- [[javascriptallonge-daniel-friedman-and-matthias-felleisen]] — Summary of the chapter on Daniel Friedman and Matthias Felleisen from JavaScript Allongé.
+- [[javascriptallonge-default-arguments]] — Default arguments in JavaScript, including tail-recursive function examples and syntax.
+- [[javascriptallonge-defaults-and-destructuring]] — Chapter covering defaults and destructuring in JavaScript.
+- [[javascriptallonge-destructuring-and-return-values]] — Summary of the chapter on destructuring and return values from JavaScript Allongé.
+- [[javascriptallonge-destructuring-arrays]] — Chapter on destructuring arrays from JavaScript Allongé
+- [[javascriptallonge-destructuring-is-not-pattern-matching]] — Summary of the section 'destructuring is not pattern matching' from javascriptallonge.pdf
+- [[javascriptallonge-destructuring-objects]] — Summary of destructuring objects chapter from JavaScript Allongé.
+- [[javascriptallonge-destructuring-parameters]] — Chapter on destructuring parameters in JavaScript Allongé.
+- [[javascriptallonge-disclaimer]] — Summary of the disclaimer section from JavaScript Allongé.
+- [[javascriptallonge-ecmascript-6-has-three-major-groups-of-features]] — Summary of ECMAScript 6 features in JavaScript Allongé.
+- [[javascriptallonge-element-references]] — Summary of the element references section from javascriptallonge.pdf
+- [[javascriptallonge-evaluation-time]] — Summary of the evaluation time section from JavaScript Allongé.
+- [[javascriptallonge-factorials]] — Chapter on factorials from JavaScript Allongé.
+- [[javascriptallonge-false]] — Summary of the false boolean value in JavaScript, as described in 'JavaScript Allongé'.
+- [[javascriptallonge-flip]] — Chapter on flip function and argument order reversal in JavaScript.
+- [[javascriptallonge-flipping-methods]] — Summary of the flipping methods section from javascriptallonge.pdf
+- [[javascriptallonge-floating]] — Chapter on floating-point numbers in JavaScript
+- [[javascriptallonge-folding]] — Chapter on folding in JavaScript allonge
+- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition of JavaScript Allongé, discussing the evolution of ECMAScript 6.
 - [[javascriptallonge-forewords-to-the-first-edition]] — Forewords and prefaces from the first edition.
+- [[javascriptallonge-from]] — Summary of the 'from' section from javascriptallonge.pdf (pages 221-222).
 - [[javascriptallonge-front-matter]] — Summary of the front matter of JavaScript Allongé, the Six Edition.
-- [[javascriptallonge-garbage-garbage-everywhere]] — Chapter covering tail‑call recursion, array vs. Lisp linked list performance.
-- [[javascriptallonge-generating-iterables]] — Chapter on iterables and generators in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax.
-- [[javascriptallonge-interactive-generators]] — Interactive Generators – chapter covering generators, stateful functions, and examples (p.273‑292).
-- [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — The Carpenter interview at Thing Software, whiteboard coding challenge
-- [[javascriptallonge-iteration-and-iterables]] — Chapter covering JavaScript collection iteration, functional and iterable patterns.
+- [[javascriptallonge-function-declaration-caveats-34]] — Summary of function declaration caveats from javascriptallonge.pdf, pages 66-67
+- [[javascriptallonge-function-declarations]] — Summary of function declarations in JavaScript as described in 'JavaScript Allongé'.
+- [[javascriptallonge-function-decorators]] — Summary of function decorators in JavaScript Allongé
+- [[javascriptallonge-function-parameters-are-eager]] — Function parameters are always eagerly evaluated in JavaScript, unlike the ternary operator and logical operators.
+- [[javascriptallonge-functional-iterators]] — Chapter on functional iterators in JavaScript Allongé
+- [[javascriptallonge-functions-and-identities]] — Summary of the functions and identities section from javascriptallonge.pdf
+- [[javascriptallonge-functions-are-not-the-real-point]] — Chapter on functions not being the real point in JavaScript Allongé, discussing the theoretical vs practical aspects of functional programming.
+- [[javascriptallonge-functions-that-evaluate-to-functions]] — Chapter on functions that evaluate to functions in JavaScript Allongé.
+- [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]] — Chapter on functions that return values and evaluate expressions from JavaScript Allongé.
+- [[javascriptallonge-garbage-garbage-everywhere]] — Chapter on garbage collection and memory management in JavaScript
+- [[javascriptallonge-gathering]] — Chapter on gathering and destructuring in JavaScript Allongé
+- [[javascriptallonge-generating-iterables]] — Chapter on generating iterables in JavaScript.
+- [[javascriptallonge-generators-and-iterables]] — Chapter on generators and iterables from JavaScript Allongé
+- [[javascriptallonge-generators-are-coroutines]] — Generators as coroutines in JavaScript, with behavioral differences from ordinary functions.
+- [[javascriptallonge-higher-order-functions]] — Summary of the higher-order functions chapter from JavaScript Allongé.
+- [[javascriptallonge-how-this-book-is-organized]] — Overview of how JavaScript Allongé is organized, including chapter structure and the inclusion of practical recipes.
+- [[javascriptallonge-how-to-run-the-examples]] — How to run the examples from JavaScript Allongé, including use of Traceur Compiler and Babel transpilers.
+- [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — Chapter discussing the distinction between pure functions and closures, focusing on free variables.
+- [[javascriptallonge-images]] — Summary of images and copyright information from JavaScript Allongé, pages 293-296.
+- [[javascriptallonge-implementing-methods-with-iteration]] — Chapter on implementing methods with iteration in JavaScript Allongé
+- [[javascriptallonge-inside-out]] — Chapter on inside-out function patterns in JavaScript.
+- [[javascriptallonge-interactive-generators]] — Summary of interactive generators in JavaScript Allongé.
+- [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — Interlude: The Carpenter Interviews for a Job
+- [[javascriptallonge-it-s-always-the-environment]] — Chapter on environments and closures in JavaScript Allongé
+- [[javascriptallonge-iterables-out-to-infinity]] — Chapter on iterables out to infinity from JavaScript Allongé.
+- [[javascriptallonge-iterating]] — Summary of the iterating chapter from JavaScript Allongé.
+- [[javascriptallonge-iteration]] — Summary of the iteration chapter from JavaScript Allongé.
+- [[javascriptallonge-iteration-and-iterables]] — Chapter on iteration and iterables in JavaScript Allongé.
+- [[javascriptallonge-iterator-objects]] — Summary of the chapter on iterator objects from JavaScript Allongé.
+- [[javascriptallonge-javascript-allong-the-six-edition]] — Summary of the 'Six' Edition of JavaScript Allongé.
+- [[javascriptallonge-javascript-s-generators]] — Summary of JavaScript's generators chapter from 'JavaScript Allongé'.
 - [[javascriptallonge-lazy-and-eager-collections]] — Lazy vs eager collection designs and the LazyCollection mixin
-- [[javascriptallonge-making-data-out-of-functions]] — Chapter on constructing data structures using pure functions, focusing on combinatory logic and list representation.
-- [[javascriptallonge-mutation]] — Source summary of the Mutation chapter in JavaScript Allongé (p.141‑157).
-- [[javascriptallonge-naming-functions]] — Source summary of JavaScript Allongé chapter on naming functions.
+- [[javascriptallonge-lazy-collection-operations]] — Summary of lazy collection operations in JavaScriptAllonge, focusing on laziness, iterators, and memory efficiency.
+- [[javascriptallonge-left-variadic-destructuring]] — Summary of left-variadic destructuring from javascriptallonge.pdf
+- [[javascriptallonge-left-variadic-functions]] — Summary of the Left-Variadic Functions section from JavaScript Allongé.
+- [[javascriptallonge-like-this]] — Summary of the 'Like this:' section from 'JavaScript Allongé'.
+- [[javascriptallonge-linear-recursion]] — Summary of the linear recursion concept from JavaScript Allongé.
+- [[javascriptallonge-lists-with-functions-as-data]] — Chapter on using functions as data structures, specifically linked lists.
+- [[javascriptallonge-literal-object-syntax]] — Summary of literal object syntax in JavaScriptAllonge.
+- [[javascriptallonge-magic-names]] — Chapter on magic names in JavaScript Allongé
+- [[javascriptallonge-magic-names-and-fat-arrows]] — Summary of the magic names this and arguments in fat arrow functions.
+- [[javascriptallonge-making-data-out-of-functions]] — Chapter on modeling data using functions, including K, I, and V combinators.
+- [[javascriptallonge-mapping]] — Chapter on mapping in JavaScript Allongé
+- [[javascriptallonge-mapwith]] — Chapter on mapWith function in JavaScript Allongé
+- [[javascriptallonge-matthew-knox]] — Summary of Matthew Knox's contribution to JavaScript Allongé.
+- [[javascriptallonge-maybe]] — Chapter on the Maybe pattern and its implementation in JavaScript
+- [[javascriptallonge-memoizing-an-iterable]] — Chapter on memoizing iterables in JavaScript
+- [[javascriptallonge-michael-fogus]] — Review of JavaScript Allongé by Michael Fogus
+- [[javascriptallonge-more-generators]] — Summary of the 'more generators' section from javascriptallonge.pdf (pages 236-239).
+- [[javascriptallonge-mutation]] — Chapter on building with mutation in JavaScript
+- [[javascriptallonge-mutation-and-data-structures]] — Chapter on mutation and data structures from JavaScript Allongé.
+- [[javascriptallonge-naming-functions]] — Summary of the 'Naming Functions' section from 'JavaScript Allongé'.
+- [[javascriptallonge-nested-blocks]] — Chapter on nested blocks in JavaScript Allongé.
 - [[javascriptallonge-object-assign]] — Object.assign – object copying, extending, and prototype mixins
-- [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — JavaScript Allonge chapter on booleans, truthiness, and logical operators.
-- [[javascriptallonge-recipes-with-basic-functions]] — Recipes with Basic Functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-self-similarity]] — Source summary of Self‑Similarity chapter covering recursion, linear recursion, tail‑call optimization, and related concepts.
-- [[javascriptallonge-that-constant-coffee-craving]] — Source summary of const keyword and scope concepts.
-- [[sword-world-rpg-complete-edition]] — Complete rulebook for Sword World RPG.
+- [[javascriptallonge-once]] — Summary of the "Once" chapter from JavaScript Allongé.
+- [[javascriptallonge-operations-on-numbers]] — Summary of the 'operations on numbers' section from javascriptallonge.pdf
+- [[javascriptallonge-operations-on-ordered-collections]] — Summary of operations on ordered collections from javascriptallonge.pdf
+- [[javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable]] — Summary of the section on operations that compose two or more iterables into an iterable from javascriptallonge.
+- [[javascriptallonge-operations-that-transform-an-iterable-into-a-value]] — Summary of the section 'operations that transform an iterable into a value' from javascriptallonge.pdf.
+- [[javascriptallonge-operations-that-transform-one-iterable-into-another]] — Summary of the section 'operations that transform one iterable into another' from javascriptallonge.pdf
+- [[javascriptallonge-or-even]] — Chapter on the 'Or even' topic in JavaScript Allongé.
+- [[javascriptallonge-ordered-collections]] — Summary of ordered collections in JavaScript Allongé
+- [[javascriptallonge-overcoming-limitations]] — Chapter on overcoming limitations in JavaScript, including left-variadic functions and the leftVariadic decorator.
+- [[javascriptallonge-partial-application]] — Chapter on partial application in JavaScript Allongé
+- [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — Chapter on choice and truthiness in JavaScript
+- [[javascriptallonge-plain-old-javascript-objects]] — Summary of the Plain Old JavaScript Objects chapter from JavaScript Allongé
+- [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Summary of the Prelude: Values and Expressions over Coffee section from JavaScript Allongé.
+- [[javascriptallonge-quasi-literals]] — Summary of quasi-literals from javascriptallonge.pdf
+- [[javascriptallonge-reassignment]] — Summary of the reassignment chapter from JavaScript Allongé.
+- [[javascriptallonge-rebinding]] — Chapter on rebinding in JavaScript Allongé
+- [[javascriptallonge-recipes-with-basic-functions]] — Chapter on recipes with basic functions in JavaScript Allongé.
+- [[javascriptallonge-recipes-with-data]] — Chapter on recipes with data from JavaScript Allongé.
+- [[javascriptallonge-recursive-iterators]] — Summary of the recursive iterators section from JavaScript Allongé.
+- [[javascriptallonge-reference-types]] — Summary of the reference types chapter from JavaScript Allongé.
+- [[javascriptallonge-reg-raganwald-braithwaite]] — Summary of Reg 'raganwald' Braithwaite's JavaScript Allongé book, including publishing details and author information.
+- [[javascriptallonge-reg-raganwald-braithwaite-2]] — Summary of Reg 'raganwald' Braithwaite's work and the Lean Publishing process.
+- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]] — Summary of the 'representing naughts and crosses as a stateful function' section from javascriptallonge.
+- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function]] — Summary of the chapter 'representing naughts and crosses as a stateless function' from the source 'javascriptallonge'.
+- [[javascriptallonge-revisiting-linked-lists]] — Summary of the revisiting linked lists chapter from JavaScript Allongé.
+- [[javascriptallonge-rewriting-iterable-operations]] — Chapter summary for 'rewriting iterable operations' from 'JavaScript Allongé'.
+- [[javascriptallonge-richard-feynman]] — Summary of Richard Feynman's QED and its explanation of Quantum Electrodynamics and the 'Sum of the Histories' methodology.
+- [[javascriptallonge-say-please]] — Chapter on using functions as data structures in JavaScript, focusing on 'say please' pattern
+- [[javascriptallonge-self-currying-flip]] — Summary of the self-currying flip concept from 'JavaScript Allongé'.
+- [[javascriptallonge-self-similarity]] — Chapter on self-similarity and recursion in JavaScript
+- [[javascriptallonge-served-by-the-pot-collections]] — Summary of the 'Served by the Pot: Collections' section from JavaScript Allongé.
+- [[javascriptallonge-so-why-arrays]] — Summary of the 'so why arrays' section from javascriptallonge.pdf
+- [[javascriptallonge-some-history]] — History of Lisp and its influence on JavaScript, including CAR, CDR, and cons cells.
+- [[javascriptallonge-state-machines]] — Summary of the state machines chapter from JavaScript Allongé.
+- [[javascriptallonge-summary]] — Summary of the book 'JavaScript Allongé'.
+- [[javascriptallonge-tail-call-optimization]] — Tail-call optimization in JavaScript as described in 'JavaScript Allongé'.
+- [[javascriptallonge-tail-calls-and-default-arguments]] — Chapter on tail calls and default arguments in JavaScript Allong’e
+- [[javascriptallonge-tap]] — Chapter on the tap combinator from JavaScript Allongé.
+- [[javascriptallonge-that-constant-coffee-craving]] — Chapter on naming functions and using function expressions to bind values.
+- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — Summary of the section 'that's nice. is that the only reason?' from JavaScript Allongé.
+- [[javascriptallonge-the-aftermath]] — Summary of the 'the aftermath' chapter from JavaScript Allongé.
+- [[javascriptallonge-the-carpenter-s-solution]] — The carpenter's solution to the loop detection problem in linked lists and chequerboard games.
+- [[javascriptallonge-the-function-keyword]] — Summary of the function keyword section from JavaScript Allongé
+- [[javascriptallonge-the-golden-crema-appendices-and-afterwords]] — Summary of the appendices and afterwords section from JavaScript Allongé.
+- [[javascriptallonge-the-kestrel-and-the-idiot]] — Chapter on the kestrel and the idiot functions from JavaScript Allongé.
+- [[javascriptallonge-the-problem]] — The problem of determining if a game halts from a stream of directions, as presented in javascriptallonge.pdf p.261-264.
+- [[javascriptallonge-the-simplest-possible-block]] — Summary of the simplest possible block concept from JavaScript Allongé.
+- [[javascriptallonge-the-vireo]] — The Vireo (V combinator) and related combinators in the context of data structures.
+- [[javascriptallonge-this-seems-familiar]] — Chapter on naughts and crosses game and implicit state representation in JavaScript control flow.
+- [[javascriptallonge-tortoises-hares-and-teleporting-turtles]] — Chapter on loop detection algorithms: Tortoise and Hare, and Teleporting Turtle.
+- [[javascriptallonge-true]] — Chapter on the boolean value 'true' in JavaScript.
+- [[javascriptallonge-truthiness-and-operators]] — Summary of the truthiness and operators section from JavaScript Allongé.
+- [[javascriptallonge-truthiness-and-the-ternary-operator]] — Chapter on truthiness and the ternary operator from JavaScript Allongé.
+- [[javascriptallonge-unary]] — Summary of the Unary function decorator section from 'JavaScript Allongé'.
+- [[javascriptallonge-undefined]] — Summary of the undefined chapter from JavaScript Allongé.
+- [[javascriptallonge-unfolding-and-laziness]] — Chapter on unfolding and laziness in JavaScript Allongé.
+- [[javascriptallonge-value-types]] — Summary of value types in JavaScript, including primitive types and identity.
+- [[javascriptallonge-values-and-identity]] — Chapter on values and identity in JavaScript Allongé.
+- [[javascriptallonge-values-are-expressions]] — Chapter on values and expressions in JavaScript Allongé
+- [[javascriptallonge-var]] — Summary of the 'var' keyword in JavaScript as described in 'JavaScript Allongé'.
+- [[javascriptallonge-variables-and-bindings]] — Chapter on variables and bindings in JavaScript Allongé
+- [[javascriptallonge-void]] — Summary of the void chapter from JavaScript Allongé.
+- [[javascriptallonge-we-get]] — Chapter on stateless functions and naughts-and-crosses game implementation in JavaScript.
+- [[javascriptallonge-we-ll-keep-it-simple]] — Summary of the 'We'll keep it simple' section from JavaScript Allongé, focusing on generators vs. iterators.
+- [[javascriptallonge-what-javascript-allong-is-and-isn-t]] — Summary of the 'What JavaScript Allongé is. And isn't.' section from javascriptallonge.pdf
+- [[javascriptallonge-which-came-first-the-chicken-or-the-egg]] — Chapter summary for 'which came first, the chicken or the egg?' from JavaScript Allongé
+- [[javascriptallonge-why]] — Chapter Why? from 'JavaScript Allongé' explaining the Y Combinator and its role in recursive functions without binding names.
+- [[javascriptallonge-why-const-and-let-were-invented]] — Summary of the section 'why const and let were invented' from javascriptallonge.pdf
+- [[javascriptallonge-why-the-six-edition]] — Summary of the 'why the six edition' section from JavaScript Allongé.
+- [[javascriptallonge-will-be-represented-as]] — Summary of the 'Will be represented as' section from javascriptallonge.pdf, pages 277-278.
+- [[javascriptallonge-would-be-3-producing]] — Chapter section on encoding game boards in different ways.
+- [[javascriptallonge-yes-consider-this-variation]] — Summary of the 'Yes. Consider this variation' section from javascriptallonge.pdf, pages 155-157, focusing on closure and variable scoping with var vs let.
+- [[javascriptallonge-yielding-iterables]] — Chapter on yielding iterables from JavaScript Allongé.
+- [[sword-world-rpg-complete-edition]] — Summary of the Sword World RPG - Complete Edition source.
 - [[sword-world-rpg-complete-edition-1-3-skills]] — Chapter 1.3 Skills – numeric levels, skill types, rune‑master distinction, half‑elf notes.
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — Character Creation part 1 summary
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — Character Creation part 2: equipment selection, skill restrictions, and price calculation

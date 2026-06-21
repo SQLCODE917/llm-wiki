@@ -1,23 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition
 page_kind: source
-summary: Complete rulebook for Sword World RPG.
+summary: Summary of the Sword World RPG - Complete Edition source.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-20
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
-## Source record
-
-Complete rulebook covering character creation, combat, magic, monsters, treasure, and GM guidance.
-
-## Key supported claims
-
-- Comprehensive rules for character creation, skills, checks, and combat mechanics spanning Chapters 1–4, including movement, attacks, death checks, and resistance rolls. (raw/Sword World RPG - Complete Edition.pdf)
-- Detailed magic system covering spellcasting, ancient and spirit magic, and holy magic, including magic expansion and reading rules. (raw/Sword World RPG - Complete Edition.pdf)
-- Extensive monster and treasure catalogs with level systems and item lists, providing a rich setting foundation. (raw/Sword World RPG - Complete Edition.pdf)
-- Optional GM guidance on poison, illness, special abilities, structure destruction, and NPC magic use. (raw/Sword World RPG - Complete Edition.pdf)
-- Reference charts and tables for quick lookup during gameplay. (raw/Sword World RPG - Complete Edition.pdf)
+This is the hub page for the *Sword World RPG - Complete Edition*. It summarizes the whole source and links the chapter pages written during chunking.
 
 ## Page-Map Navigation
 

@@ -1,29 +1,38 @@
-"""Extraction pipeline orchestrator: PDF -> cached chunks + manifest.
+"""Extraction pipeline orchestrator: PDF -> cached DocumentModel + chunks + manifest.
 
 Derived artifacts live under <cache_root>/<sha256-prefix>/ — disposable,
 reproducible, never part of the wiki's three layers. Re-running with an
-existing manifest is a cache hit (the resume path); OCR results, including
-confirmed-empty ones, are cached so re-extraction never re-runs recognition.
+existing manifest is a cache hit (the resume path).
 """
 
 from __future__ import annotations
 
 import hashlib
-import json
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 
 from llmwiki.pdf import ScannedPdfError
-from llmwiki.pdf.chunking import Chunk, build_sections, pack_chunks
 from llmwiki.pdf.classify import PdfKind, classify_pdf
-from llmwiki.pdf.extractor import extract_pdf, read_page_char_counts
-from llmwiki.pdf.intermediate import fold_ocr_into_page
+from llmwiki.pdf.docling_extractor import extract_document_model
+from llmwiki.pdf.document import (
+    DocumentModel,
+    SourceChunk,
+    build_source_chunks,
+    build_source_sections,
+    document_model_to_json,
+    source_sections_to_json,
+)
+from llmwiki.pdf.extractor import read_page_char_counts
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json, to_json
-from llmwiki.pdf.recognizer import TextRecognizer, usable_text
+from llmwiki.pdf.recognizer import TextRecognizer
 
 _MANIFEST_FILE = "manifest.json"
-_OCR_FILE = "ocr.json"
+_DOCUMENT_MODEL_FILE = "document_model.json"
+_SOURCE_SECTIONS_FILE = "source_sections.json"
 _CHUNK_DIR = "chunks"
+
+DocumentExtractFn = Callable[[Path, str, str], DocumentModel]
 
 
 @dataclass(frozen=True)
@@ -56,31 +65,16 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def _run_figure_ocr(
-    cache_dir: Path, image_files: list[str], recognizer: TextRecognizer
-) -> dict[str, str]:
-    """OCR every extracted figure once; cache all results, empty included."""
-    ocr_path = cache_dir / _OCR_FILE
-    if ocr_path.exists():
-        cached: dict[str, str | None] = json.loads(ocr_path.read_text(encoding="utf-8"))
-    else:
-        cached = {}
-    for name in image_files:
-        if name not in cached:
-            spans = recognizer.recognize(cache_dir / "images" / name)
-            cached[name] = usable_text(spans)  # None == decorative == normal
-    ocr_path.write_text(json.dumps(cached, indent=2, ensure_ascii=False), encoding="utf-8")
-    return {name: text for name, text in cached.items() if text}
-
-
 def ensure_extracted(
     pdf_path: Path,
     source_rel: str,
     cache_root: Path,
     recognizer: TextRecognizer,
     reextract: bool = False,
+    document_extractor: DocumentExtractFn = extract_document_model,
 ) -> ExtractionResult:
     """Extract + chunk the PDF, or return the cached manifest (resume)."""
+    _ = recognizer
     sha = _sha256(pdf_path)
     cache_dir = cache_root / sha[:16]
     manifest_path = cache_dir / _MANIFEST_FILE
@@ -98,30 +92,41 @@ def ensure_extracted(
             "(docs/2026-06-11-pdf-ingestion-design.md)."
         )
 
-    extracted = extract_pdf(pdf_path, cache_dir)
-    figure_text = _run_figure_ocr(cache_dir, extracted.image_files, recognizer)
-    page_texts = [fold_ocr_into_page(t, figure_text) for t in extracted.page_texts]
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    document_model = document_extractor(pdf_path, source_rel, sha)
+    source_sections = build_source_sections(document_model)
+    source_chunks = build_source_chunks(document_model, source_sections)
 
-    chunks = pack_chunks(build_sections(extracted.toc, page_texts))
-    (cache_dir / _CHUNK_DIR).mkdir(parents=True, exist_ok=True)
-    for chunk in chunks:
+    (cache_dir / _DOCUMENT_MODEL_FILE).write_text(
+        document_model_to_json(document_model), encoding="utf-8"
+    )
+    (cache_dir / _SOURCE_SECTIONS_FILE).write_text(
+        source_sections_to_json(source_sections), encoding="utf-8"
+    )
+
+    chunk_dir = cache_dir / _CHUNK_DIR
+    chunk_dir.mkdir(parents=True, exist_ok=True)
+    for old_chunk in chunk_dir.glob("*.md"):
+        old_chunk.unlink()
+    for chunk in source_chunks:
         chunk_file(cache_dir, chunk.chunk_id).write_text(chunk.text, encoding="utf-8")
 
     manifest = Manifest(
         source=source_rel,
         sha256=sha,
-        chunks=tuple(_record(c) for c in chunks),
+        extractor_name=document_model.extractor_name,
+        chunks=tuple(_record(c) for c in source_chunks),
     )
     result = ExtractionResult(manifest=manifest, cache_dir=cache_dir)
     save_manifest(result)
     return result
 
 
-def _record(chunk: Chunk) -> ChunkRecord:
+def _record(chunk: SourceChunk) -> ChunkRecord:
     return ChunkRecord(
         chunk_id=chunk.chunk_id,
-        heading=chunk.heading,
-        start_page=chunk.start_page,
-        end_page=chunk.end_page,
+        heading=chunk.heading_path,
+        start_page=chunk.page_start,
+        end_page=chunk.page_end,
         token_estimate=chunk.token_estimate,
     )

@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript gives us a way to do that, the const keyword (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0004"
+      ]
+    },
+    {
+      "bullet_text": "The const keyword introduces one or more bindings in the block that encloses it (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0007"
+      ]
+    },
+    {
+      "bullet_text": "We use the const keyword in a const statement (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0011"
+      ]
+    },
+    {
+      "bullet_text": "We'll learn a lot more about const in future chapters, but here's the most important thing we can do with const: bind values to names in a block-scoped manner (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0005"
+      ]
+    }
+  ],
+  "source_record_text": "The const keyword in JavaScript provides a way to bind values to names in a block-scoped manner, as described in the chapter on const (pages 51-53)."
+}

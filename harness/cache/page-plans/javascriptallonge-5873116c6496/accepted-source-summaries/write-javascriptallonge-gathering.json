@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Here is the most common pattern: Extracting the head and gathering everything but the head from an array: (raw/javascriptallonge.pdf p.104-105)",
+      "covered_source_claims": [
+        "source-claim-unit-0095-0002"
+      ]
+    },
+    {
+      "bullet_text": "We will use a common convention and call variables we gather rest, but refer to the ... operation as a 'gather,' following Kyle Simpson's example. (raw/javascriptallonge.pdf p.104-105)",
+      "covered_source_claims": [
+        "source-claim-unit-0095-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on gathering and destructuring in JavaScript Allongé"
+}

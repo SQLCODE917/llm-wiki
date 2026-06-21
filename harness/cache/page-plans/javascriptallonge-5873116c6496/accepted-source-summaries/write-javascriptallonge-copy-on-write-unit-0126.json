@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "When you take the rest of an array with destructuring ( [first, ...rest] ), you are given a copy of the elements of the array. (raw/javascriptallonge.pdf p.158-159)",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0003"
+      ]
+    },
+    {
+      "bullet_text": "The consequence of this is that if you have an array, and you take it's 'rest,' your 'child' array is a copy of the elements of the parent array. (raw/javascriptallonge.pdf p.158-159)",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0005"
+      ]
+    },
+    {
+      "bullet_text": "When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list. (raw/javascriptallonge.pdf p.158-159)",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Copy‑on‑write concepts for arrays and linked lists in JavaScript."
+}

@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s almost what we wanted all along: a way to bind 3.14159265 to a readable name (raw/javascriptallonge.pdf p.49-61) **may**",
+      "bullet_text": "This feels very different from programming in most other languages, where the focus is on naming functions, methods, and procedures. (raw/javascriptallonge.pdf p.49-50)",
       "covered_source_claims": [
-        "source-claim-unit-0005-0044"
+        "source-claim-unit-0047-0002"
       ]
     },
     {
-      "bullet_text": "We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const (raw/javascriptallonge.pdf p.49-61) **possible**",
+      "bullet_text": "Naming things is a critical part of programming, but all we've seen so far is how to name arguments. (raw/javascriptallonge.pdf p.49-50)",
       "covered_source_claims": [
-        "source-claim-unit-0005-0046"
+        "source-claim-unit-0047-0003"
       ]
     },
     {
-      "bullet_text": "The const keyword introduces one or more bindings in the block that encloses it (raw/javascriptallonge.pdf p.49-61) **may**",
+      "bullet_text": "That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. (raw/javascriptallonge.pdf p.49-50)",
       "covered_source_claims": [
-        "source-claim-unit-0005-0047"
+        "source-claim-unit-0047-0013"
       ]
     }
   ],
-  "source_record_text": "Section covers const keyword, IIFE, lexical and block scope, and const semantics."
+  "source_record_text": "A chapter on naming functions and using function expressions to bind values."
 }

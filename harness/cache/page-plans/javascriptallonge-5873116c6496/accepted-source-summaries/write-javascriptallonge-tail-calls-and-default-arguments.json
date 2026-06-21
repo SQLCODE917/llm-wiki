@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript retains values and housekeeping information on a call stack during recursion, which is expensive. (raw/javascriptallonge.pdf p.117-118)",
+      "covered_source_claims": [
+        "source-claim-unit-0104-0017"
+      ]
+    },
+    {
+      "bullet_text": "Doubling the length of an array doubles the stack space and work required for each call frame. (raw/javascriptallonge.pdf p.117-118)",
+      "covered_source_claims": [
+        "source-claim-unit-0104-0021"
+      ]
+    },
+    {
+      "bullet_text": "Call stack information is saved and is quite expensive. (raw/javascriptallonge.pdf p.117-118)",
+      "covered_source_claims": [
+        "source-claim-unit-0104-0020"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on tail calls and default arguments in JavaScript Allong’e."
+}

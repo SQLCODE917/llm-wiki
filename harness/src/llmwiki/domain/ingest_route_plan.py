@@ -172,12 +172,18 @@ class IngestRoutePlanState:
     def planned_page_write(self, page_id: str) -> PlannedPageWrite | None:
         if self.context.page_plan is None:
             return None
+        matches = tuple(
+            write
+            for write in self.context.page_plan.planned_writes
+            if write.action != "defer" and write.page_metadata.page_id == page_id
+        )
+        if self.context.scope == "pdf-chunk" and self.context.chunk_id is not None:
+            unit_id = f"unit-{self.context.chunk_id:04d}"
+            scoped = tuple(write for write in matches if unit_id in write.extracted_units)
+            if scoped:
+                return scoped[0]
         return next(
-            (
-                write
-                for write in self.context.page_plan.planned_writes
-                if write.action != "defer" and write.page_metadata.page_id == page_id
-            ),
+            iter(matches),
             None,
         )
 

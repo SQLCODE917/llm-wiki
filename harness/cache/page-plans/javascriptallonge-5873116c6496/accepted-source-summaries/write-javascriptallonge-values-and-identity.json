@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The === operator in JavaScript tests whether two values are identical (raw/javascriptallonge.pdf p.21-21).",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0015"
+      ]
+    },
+    {
+      "bullet_text": "Values of different types in JavaScript are never identical (raw/javascriptallonge.pdf p.21-21).",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0015"
+      ]
+    },
+    {
+      "bullet_text": "Values of the same type but different content in JavaScript are not identical (raw/javascriptallonge.pdf p.21-21).",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0015"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on values and identity in JavaScript Allongé."
+}

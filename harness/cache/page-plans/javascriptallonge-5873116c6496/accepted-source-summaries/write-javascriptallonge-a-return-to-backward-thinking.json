@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "To make pairs work, we did things backwards, we passed the first and rest functions to the pair, and the pair called our function (raw/javascriptallonge.pdf p.189-190).",
+      "covered_source_claims": [
+        "source-claim-unit-0143-0001"
+      ]
+    },
+    {
+      "bullet_text": "But we could have done something completely different; we could have written a pair that stored its elements in an array, or a pair that stored its elements in a POJO (raw/javascriptallonge.pdf p.189-190).",
+      "covered_source_claims": [
+        "source-claim-unit-0143-0003"
+      ]
+    },
+    {
+      "bullet_text": "We could have written a pair that stored its elements in an array, or a pair that stored its elements in a POJO (raw/javascriptallonge.pdf p.189-190).",
+      "covered_source_claims": [
+        "source-claim-unit-0143-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on backward thinking in JavaScript allonge, discussing pairs and lists, and how implementation details can be hidden using functional patterns."
+}

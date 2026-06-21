@@ -1,8 +1,8 @@
 ---
 page_id: javascriptallonge-garbage-garbage-everywhere
 page_kind: source
-summary: Chapter covering tail‑call recursion, array vs. Lisp linked list performance.
-sources: raw/javascriptallonge.pdf p.126-140
+summary: Chapter on garbage collection and memory management in JavaScript
+sources: raw/javascriptallonge.pdf p.126-128
 updated: 2026-06-20
 source_id: javascriptallonge.pdf
 ---
@@ -13,7 +13,7 @@ This chapter explains tail‑call recursion for array mapping, the memory cost o
 
 ## Key supported claims
 
-- Tail‑recursive mapWith runs in constant space but may generate many temporary arrays, making it slower than Array.prototype.map (raw/javascriptallonge.pdf p.126-140).
-- Each recursive call copies the prepend array, meaning each element may incur an O(n) copy cost (raw/javascriptallonge.pdf p.126-140).
-- JavaScript’s destructuring [first, ...rest] mimics Lisp’s car/cdr but may lead to costly temporary array churn; Lisp’s linked lists avoid this (raw/javascriptallonge.pdf p.126-140).
-- The chapter explains that Tail Calls enable constant‑space recursion but the repeated array copy makes the approach inefficient (raw/javascriptallonge.pdf p.126-140).
+- In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using (raw/javascriptallonge.pdf p.126-128).
+- Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another (raw/javascriptallonge.pdf p.126-128).
+- Lather, rinse, repeat: Every time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend (raw/javascriptallonge.pdf p.126-128).
+- It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made (raw/javascriptallonge.pdf p.126-128).

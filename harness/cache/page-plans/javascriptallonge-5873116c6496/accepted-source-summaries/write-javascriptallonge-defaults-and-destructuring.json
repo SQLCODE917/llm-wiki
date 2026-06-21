@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Wesawearlier that destructuring parameters works the same way as destructuring assignment. (raw/javascriptallonge.pdf p.124-125)",
+      "covered_source_claims": [
+        "source-claim-unit-0109-0001"
+      ]
+    },
+    {
+      "bullet_text": "How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters. (raw/javascriptallonge.pdf p.124-125)",
+      "covered_source_claims": [
+        "source-claim-unit-0109-0006"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter covering defaults and destructuring in JavaScript."
+}

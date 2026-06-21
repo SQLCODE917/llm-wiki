@@ -1,0 +1,17 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Sometimes we'll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). (raw/javascriptallonge.pdf p.196-196)",
+      "covered_source_claims": [
+        "source-claim-unit-0148-0001"
+      ]
+    },
+    {
+      "bullet_text": "Now if we write mapWith = flip(map) , we can call mapWith(fn, list) or mapWith(fn)(list) , our choice. (raw/javascriptallonge.pdf p.196-196)",
+      "covered_source_claims": [
+        "source-claim-unit-0148-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter on self-currying flip function in JavaScriptAllongé, covering flip function and argument order reversal."
+}

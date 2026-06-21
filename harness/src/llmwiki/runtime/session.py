@@ -61,6 +61,7 @@ from llmwiki.domain.semantic_lint import (
     SemanticLintReport,
     SemanticLintSelection,
 )
+from llmwiki.domain.source_page_groups import source_page_group_label
 from llmwiki.domain.system_pages import (
     CONTRADICTIONS_PAGE,
     GROUNDING_PAGE,
@@ -69,7 +70,7 @@ from llmwiki.domain.system_pages import (
     SEMANTIC_LINT_PAGE,
 )
 from llmwiki.pdf import PdfError
-from llmwiki.pdf.manifest import Manifest
+from llmwiki.pdf.manifest import ChunkRecord, Manifest
 from llmwiki.pdf.pipeline import (
     ExtractionResult,
     chunk_file,
@@ -272,7 +273,8 @@ class Session:
         report, transcript = await self._run(workflow, message, "ingest")
         route_summary = ingest_route_plan_state.summary()
         written_pages = tuple(dict.fromkeys(write_log))
-        if route_summary.planned_page_count and not written_pages:
+        expected_writes = _expected_page_plan_writes(page_plan)
+        if (route_summary.planned_page_count or expected_writes) and not written_pages:
             raise RuntimeError(
                 "Ingest finished without any successful page writes. "
                 "The model must write an authorized PagePlan target or move unsupported "
@@ -338,21 +340,42 @@ class Session:
                 "ingest to finish them first."
             )
 
-        for record in manifest.pending:
-            text = chunk_file(result.cache_dir, record.chunk_id).read_text(encoding="utf-8")
-            chunk_targets = _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
-            chunk_plan_report = observation_report(page_plan, target_page_ids=chunk_targets)
+        for work_records in _pending_pdf_work_units(page_plan, manifest.pending):
+            record = work_records[0]
+            text = _work_unit_chunk_text(result.cache_dir, work_records)
+            chunk_targets = _work_unit_targets(page_plan, work_records, hub)
+            chunk_write_ids = _work_unit_write_ids(page_plan, work_records, hub)
+            if not chunk_targets:
+                notes = _targetless_work_unit_notes(work_records)
+                gap_summary = _targetless_work_unit_gap_summary(work_records)
+                for done_record in work_records:
+                    manifest = manifest.mark_done(
+                        done_record.chunk_id,
+                        notes,
+                        route_plan_gaps=1,
+                        route_gap_summaries=(gap_summary,),
+                    )
+                save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
+                if self.on_chunk_note is not None:
+                    self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {notes}")
+                continue
+            chunk_plan_report = observation_report(
+                page_plan,
+                target_page_ids=chunk_targets,
+                target_write_ids=chunk_write_ids,
+            )
             ingest_route_plan_state = self._ingest_route_plan_state(
                 source_locator,
                 "pdf-chunk",
                 chunk_id=record.chunk_id,
                 page_plan=page_plan,
             )
+            section_label = _work_unit_section_label(work_records)
             message = (
-                f"Ingest chunk {record.chunk_id} of {total} from 'raw/{source_locator}'.\n"
-                f"Section: {record.heading} (pages {record.start_page}-{record.end_page}).\n"
-                f"Cite this material as (raw/{source_locator} "
-                f"p.{record.start_page}-{record.end_page}).\n\n"
+                f"Ingest {_work_unit_name(work_records)} of {total} from "
+                f"'raw/{source_locator}'.\n"
+                f"Section: {section_label}.\n"
+                f"{_work_unit_citation_guidance(source_locator, work_records)}\n\n"
                 "A deterministic PagePlan has already been built and persisted. "
                 "For this chunk, call plan_pages using only the PageIds listed "
                 "in this scoped PagePlan report.\n\n"
@@ -380,21 +403,23 @@ class Session:
             written_pages = tuple(dict.fromkeys(write_log))
             if route_summary.planned_page_count and not written_pages:
                 raise PdfError(
-                    f"Chunk {record.chunk_id} finished without any successful page writes. "
+                    f"{_work_unit_name(work_records).title()} finished without any "
+                    "successful page writes. "
                     "The model must write an authorized PagePlan target or move unsupported "
                     "material into route gaps before finish_chunk."
                 )
-            manifest = manifest.mark_done(
-                record.chunk_id,
-                notes,
-                pages_written=written_pages,
-                route_plan_pages=route_summary.planned_page_count,
-                route_plan_gaps=route_summary.route_gap_count,
-                route_gap_summaries=route_summary.route_gap_summaries,
-            )
+            for done_record in work_records:
+                manifest = manifest.mark_done(
+                    done_record.chunk_id,
+                    notes,
+                    pages_written=written_pages,
+                    route_plan_pages=route_summary.planned_page_count,
+                    route_plan_gaps=route_summary.route_gap_count,
+                    route_gap_summaries=route_summary.route_gap_summaries,
+                )
             save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
             if self.on_chunk_note is not None:
-                self.on_chunk_note(f"[chunk {record.chunk_id}/{total}] {notes}")
+                self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {notes}")
 
         salience = compute_salience(
             self.store.page_texts(),
@@ -414,17 +439,9 @@ class Session:
             f"{observation_report(page_plan, target_page_ids=(hub,))}\n\n"
             f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
         )
-        link_targets: list[str] = []
-        page_map_entries: list[tuple[str, str]] = []
-        seen_targets: set[str] = set()
-        for chunk in manifest.chunks:
-            for page in chunk.pages_written:
-                if page != hub and page not in seen_targets:
-                    link_targets.append(page)
-                    page_map_entries.append((page, chunk.heading))
-                    seen_targets.add(page)
-        required_link_targets = tuple(link_targets)
-        required_page_map_entries = tuple(page_map_entries)
+        required_link_targets, required_page_map_entries = _required_hub_page_map(
+            page_plan, manifest, hub
+        )
         ingest_route_plan_state = self._ingest_route_plan_state(
             source_locator, "pdf-integrate", page_plan=page_plan
         )
@@ -958,6 +975,14 @@ def _single_source_locator(ingest_run: IngestRun) -> str:
     return _single_raw_source(ingest_run).source_locator
 
 
+def _expected_page_plan_writes(page_plan: PagePlan) -> tuple[str, ...]:
+    return tuple(
+        write.page_metadata.page_id
+        for write in page_plan.planned_writes
+        if write.action in {"create-new", "enrich-existing"}
+    )
+
+
 def _single_raw_source(ingest_run: IngestRun) -> RawSource:
     return ingest_run.source_bundle.raw_sources[0]
 
@@ -980,6 +1005,134 @@ def _page_plan_targets_for_chunk(
         and write.page_metadata.page_id != hub_page_id
         and unit_id in write.extracted_units
     )
+
+
+def _pending_pdf_work_units(
+    page_plan: PagePlan,
+    pending_records: tuple[ChunkRecord, ...],
+) -> tuple[tuple[ChunkRecord, ...], ...]:
+    if not page_plan.source_page_groups:
+        return tuple((record,) for record in pending_records)
+    records_by_unit = {f"unit-{record.chunk_id:04d}": record for record in pending_records}
+    groups_by_first_chunk: dict[int, tuple[ChunkRecord, ...]] = {}
+    covered: set[int] = set()
+    for group in page_plan.source_page_groups:
+        records = tuple(
+            records_by_unit[unit_id]
+            for unit_id in group.extracted_units
+            if unit_id in records_by_unit
+        )
+        if records:
+            groups_by_first_chunk[records[0].chunk_id] = records
+    work_units: list[tuple[ChunkRecord, ...]] = []
+    for record in pending_records:
+        if record.chunk_id in covered:
+            continue
+        records = groups_by_first_chunk.get(record.chunk_id, (record,))
+        work_units.append(records)
+        covered.update(item.chunk_id for item in records)
+    return tuple(work_units)
+
+
+def _work_unit_targets(
+    page_plan: PagePlan, records: tuple[ChunkRecord, ...], hub_page_id: str
+) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            page_id
+            for record in records
+            for page_id in _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub_page_id)
+        )
+    )
+
+
+def _work_unit_write_ids(
+    page_plan: PagePlan, records: tuple[ChunkRecord, ...], hub_page_id: str
+) -> tuple[str, ...]:
+    unit_ids = {f"unit-{record.chunk_id:04d}" for record in records}
+    return tuple(
+        write.write_id
+        for write in page_plan.planned_writes
+        if write.action != "defer"
+        and write.page_metadata.page_id != hub_page_id
+        and unit_ids.intersection(write.extracted_units)
+    )
+
+
+def _work_unit_chunk_text(cache_dir: Path, records: tuple[ChunkRecord, ...]) -> str:
+    chunks: list[str] = []
+    for record in records:
+        text = chunk_file(cache_dir, record.chunk_id).read_text(encoding="utf-8")
+        chunks.append(
+            f"## {record.heading} (pages {record.start_page}-{record.end_page})\n\n{text}"
+        )
+    return "\n\n".join(chunks)
+
+
+def _work_unit_name(records: tuple[ChunkRecord, ...]) -> str:
+    if len(records) == 1:
+        return f"chunk {records[0].chunk_id}"
+    return f"chunk group {records[0].chunk_id}-{records[-1].chunk_id}"
+
+
+def _work_unit_section_label(records: tuple[ChunkRecord, ...]) -> str:
+    if len(records) == 1:
+        record = records[0]
+        return f"{record.heading} (pages {record.start_page}-{record.end_page})"
+    return (
+        f"{records[0].heading} through {records[-1].heading} "
+        f"(pages {records[0].start_page}-{records[-1].end_page})"
+    )
+
+
+def _work_unit_citation_guidance(source_locator: str, records: tuple[ChunkRecord, ...]) -> str:
+    if len(records) == 1:
+        record = records[0]
+        return (
+            f"Cite this material as (raw/{source_locator} p.{record.start_page}-{record.end_page})."
+        )
+    citations = ", ".join(
+        f"(raw/{source_locator} p.{record.start_page}-{record.end_page})" for record in records
+    )
+    return f"Cite grouped claims with their matching page locator: {citations}."
+
+
+def _targetless_work_unit_notes(records: tuple[ChunkRecord, ...]) -> str:
+    return (
+        "No page write was planned for this PDF chunk because deterministic "
+        "analysis found no claim-bearing source-page material."
+    )
+
+
+def _targetless_work_unit_gap_summary(records: tuple[ChunkRecord, ...]) -> str:
+    label = _work_unit_section_label(records)
+    return f"{label}: no claim-bearing source-page material."
+
+
+def _required_hub_page_map(
+    page_plan: PagePlan, manifest: Manifest, hub_page_id: str
+) -> tuple[tuple[str, ...], tuple[tuple[str, str], ...]]:
+    if page_plan.source_page_groups:
+        group_link_targets: list[str] = []
+        group_page_map_entries: list[tuple[str, str]] = []
+        seen_group_targets: set[str] = set()
+        for group in page_plan.source_page_groups:
+            if group.page_id == hub_page_id or group.page_id in seen_group_targets:
+                continue
+            group_link_targets.append(group.page_id)
+            group_page_map_entries.append((group.page_id, source_page_group_label(group)))
+            seen_group_targets.add(group.page_id)
+        return tuple(group_link_targets), tuple(group_page_map_entries)
+    link_targets: list[str] = []
+    page_map_entries: list[tuple[str, str]] = []
+    seen_targets: set[str] = set()
+    for chunk in manifest.chunks:
+        for page in chunk.pages_written:
+            if page != hub_page_id and page not in seen_targets:
+                link_targets.append(page)
+                page_map_entries.append((page, chunk.heading))
+                seen_targets.add(page)
+    return tuple(link_targets), tuple(page_map_entries)
 
 
 def _render_count_delta(label: str, before: int, after: int) -> str:

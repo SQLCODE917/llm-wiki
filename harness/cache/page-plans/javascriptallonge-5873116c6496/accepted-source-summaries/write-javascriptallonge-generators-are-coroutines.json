@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "This is where generators behave very, very differently from ordinary functions (raw/javascriptallonge.pdf p.231-234).",
+      "covered_source_claims": [
+        "source-claim-unit-0172-0003"
+      ]
+    },
+    {
+      "bullet_text": "The body of our generator runs until it returns, ends, or encounters a yield statement, which is yield 1; (raw/javascriptallonge.pdf p.231-234).",
+      "covered_source_claims": [
+        "source-claim-unit-0172-0008"
+      ]
+    },
+    {
+      "bullet_text": "When we call interator.next() , the body of our generator begins to be evaluated (raw/javascriptallonge.pdf p.231-234).",
+      "covered_source_claims": [
+        "source-claim-unit-0172-0007"
+      ]
+    }
+  ],
+  "source_record_text": "Generators in JavaScript behave as coroutines, with a distinct execution model compared to ordinary functions. They suspend and resume execution at yield points, enabling a producer-consumer model."
+}

@@ -18,6 +18,7 @@ from llmwiki.store import WikiStore, WikiStoreError
 from llmwiki.workflows.source_summary_write import (
     PlannedWriteSourceSummaryParams,
     page_body_contract_source_text,
+    source_summary_body_contract,
     source_summary_page_body,
     strip_pipeline_markers,
     write_source_summary_draft_artifact,
@@ -53,15 +54,18 @@ def planned_write_page_tool(
 
     def _write_page_body(page_body: str) -> str:
         page_body = strip_pipeline_markers(page_body)
+        body_contract = (
+            source_summary_body_contract(planned_write)
+            if summary_plan is not None
+            else planned_write.resolved_page_body_contract
+        )
         findings = validate_page_body(
             page_body,
-            planned_write.resolved_page_body_contract,
+            body_contract,
             source_text=page_body_contract_source_text(store, planned_write),
         )
         if findings:
-            raise WikiStoreError(
-                render_page_body_findings(findings, planned_write.resolved_page_body_contract)
-            )
+            raise WikiStoreError(render_page_body_findings(findings, body_contract))
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
         resolver = store.source_resolver() if policy.enabled else None

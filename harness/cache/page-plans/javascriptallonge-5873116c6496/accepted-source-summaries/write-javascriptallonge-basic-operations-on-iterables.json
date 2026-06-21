@@ -1,0 +1,11 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Here are the operations we've defined on Iterables. As discussed, they preserve the collection semantics of the iterable they are given: (raw/javascriptallonge.pdf p.284-284).",
+      "covered_source_claims": [
+        "source-claim-unit-0196-0001"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the 'Basic Operations on Iterables' section from JavaScript Allongé."
+}
