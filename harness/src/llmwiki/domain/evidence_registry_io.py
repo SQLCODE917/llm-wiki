@@ -63,6 +63,7 @@ def _evidence_record_from_payload(payload: dict[str, object]) -> EvidenceRecord:
         excerpt=str(payload["excerpt"]),
         excerpt_digest=str(payload["excerpt_digest"]),
         evidence_kind=cast(EvidenceKind, str(payload["evidence_kind"])),
+        evidence_identity_id=str(payload["evidence_identity_id"]),
         source_claim_id=str(payload.get("source_claim_id", "")),
     )
 

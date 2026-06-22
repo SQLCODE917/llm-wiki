@@ -8,7 +8,8 @@ from dataclasses import dataclass
 from typing import Literal
 
 from llmwiki.domain.citations import Citation
-from llmwiki.domain.objects import ExtractedUnit, PagePlan, SourceClaim
+from llmwiki.domain.evidence_locator_index import EvidenceIdentity
+from llmwiki.domain.objects import ExtractedUnit, PagePlan
 
 SourceTextKind = Literal["markdown", "pdf-cache"]
 EvidenceKind = Literal["source-claim", "citation", "table-cell"]
@@ -63,6 +64,7 @@ class EvidenceRecord:
     excerpt: str
     excerpt_digest: str
     evidence_kind: EvidenceKind
+    evidence_identity_id: str = ""
     source_claim_id: str = ""
 
 
@@ -191,17 +193,24 @@ def _evidence_records(
         source_hash = source_hashes.get(claim.evidence.raw_source.source_locator, "")
         excerpt = claim.statement.strip()
         excerpt_digest = _digest(excerpt)
-        evidence_id = _evidence_id(claim, source_hash, source_range)
+        locator_text = _identity_locator_text(source_range, source_texts)
+        identity = EvidenceIdentity.from_excerpt(
+            claim.evidence.raw_source.source_locator,
+            source_hash,
+            locator_text,
+            excerpt,
+        )
         records.append(
             EvidenceRecord(
-                evidence_id=evidence_id,
+                evidence_id=identity.evidence_id,
                 source_locator=claim.evidence.raw_source.source_locator,
                 source_hash=source_hash,
                 source_range_id=source_range.source_range_id,
-                line_range=None,
+                line_range=source_range.line_range,
                 excerpt=excerpt,
                 excerpt_digest=excerpt_digest,
                 evidence_kind="source-claim",
+                evidence_identity_id=identity.evidence_identity_id,
                 source_claim_id=claim.source_claim_id,
             )
         )
@@ -241,18 +250,6 @@ def _page_range(locator: str) -> tuple[int, int] | None:
     return start, end
 
 
-def _evidence_id(claim: SourceClaim, source_hash: str, source_range: SourceRange) -> str:
-    identity = "|".join(
-        (
-            claim.evidence.raw_source.source_locator,
-            source_hash,
-            source_range.source_range_id,
-            claim.statement.strip(),
-        )
-    )
-    return f"evidence-{_digest(identity)[:16]}"
-
-
 def _heading_path(units: tuple[ExtractedUnit, ...]) -> str:
     first = units[0].heading_path
     last = units[-1].heading_path
@@ -265,6 +262,24 @@ def _source_path(source_locator: str) -> str:
 
 def _contains_range(container: tuple[int, int], item: tuple[int, int]) -> bool:
     return container[0] <= item[0] and item[1] <= container[1]
+
+
+def _identity_locator_text(
+    source_range: SourceRange, source_texts: tuple[SourceText, ...]
+) -> str:
+    if source_range.page_range is not None:
+        start, end = source_range.page_range
+        return f"p.{start}" if start == end else f"p.{start}-{end}"
+    if source_range.line_range is not None:
+        return _normalized_locator(*source_range.line_range)
+    for source_text in source_texts:
+        if source_text.source_locator == source_range.source_locator and source_text.line_count:
+            return _normalized_locator(1, source_text.line_count)
+    return "source:unresolved"
+
+
+def _normalized_locator(start: int, end: int) -> str:
+    return f"normalized:L{start}" if start == end else f"normalized:L{start}-L{end}"
 
 
 def _snippet(text: str, limit: int = 220) -> str:

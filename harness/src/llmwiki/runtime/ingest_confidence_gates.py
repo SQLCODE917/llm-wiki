@@ -25,6 +25,10 @@ from llmwiki.runtime.ingest_confidence_gate_checks import (
     source_summary_detail,
     source_summary_findings,
 )
+from llmwiki.runtime.ingest_confidence_locator_gate import (
+    locator_stability_detail,
+    locator_stability_findings,
+)
 from llmwiki.runtime.ingest_confidence_page_scope import page_body, source_scoped_pages
 from llmwiki.store import WikiStore
 
@@ -67,6 +71,20 @@ def deterministic_confidence(
             evidence_registry_detail(prepared.evidence_registry),
         ),
         _finding_gate(
+            "locator-stability",
+            source_locator,
+            findings,
+            locator_stability_findings(
+                source_locator,
+                prepared.previous_evidence_locator_index,
+                prepared.evidence_locator_index,
+            ),
+            locator_stability_detail(
+                prepared.previous_evidence_locator_index,
+                prepared.evidence_locator_index,
+            ),
+        ),
+        _finding_gate(
             "source-range",
             source_locator,
             findings,
@@ -75,6 +93,7 @@ def deterministic_confidence(
                 store,
                 scoped_pages,
                 prepared.evidence_registry,
+                prepared.evidence_locator_index,
                 include_source_range=True,
             ),
         ),
@@ -87,6 +106,7 @@ def deterministic_confidence(
                 store,
                 scoped_pages,
                 prepared.evidence_registry,
+                prepared.evidence_locator_index,
                 include_source_range=False,
             ),
         ),

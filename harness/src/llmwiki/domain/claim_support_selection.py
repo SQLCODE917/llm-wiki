@@ -15,8 +15,8 @@ from llmwiki.domain.claim_support import (
     ClaimSupportSelection,
 )
 from llmwiki.domain.claim_support_evidence import ClaimSupportEvidenceIndex
+from llmwiki.domain.evidence_locator_index import canonicalize_evidence_text
 from llmwiki.domain.evidence_locators import (
-    canonicalize_evidence_text,
     locator_match_for_citation,
     source_range_finding,
 )

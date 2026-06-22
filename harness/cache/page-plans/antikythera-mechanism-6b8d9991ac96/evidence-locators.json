@@ -1,0 +1,119 @@
+{
+  "findings": [],
+  "index_id": "evidence-locator-index-25fa1ed4cec3bcc5",
+  "locator_artifact_fingerprint": "8645c417554c6ee3",
+  "locators": [
+    {
+      "canonical_excerpt_digest": "ae3354ba5ba8a097a762a1900361ac1064393045a1fe3d58de465bd247c49837",
+      "excerpt_digest": "0880881a89fe4398cb440a0e31ee27a5e135a90cedc75f4529e629841bee7740",
+      "locator_id": "evidence-locator-2129a3546225092b",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "9be11223487554f6bdd36d9eb2896fe291235efe1383282a9d571f4d22d6d46e",
+      "excerpt_digest": "0dfe25103ddbab82f56805404668315ee6c2f1eebe6ede17dc70ccb1e70b3033",
+      "locator_id": "evidence-locator-3f52331eaf743c6c",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "4a42208e864f8cc0ecf387518b353db6b09063fc1a2c427dfe4084017b466c0c",
+      "excerpt_digest": "5cf3b619128f60b287223922164805c7c54fb8490d61b3fc2a1ad435e6742d9a",
+      "locator_id": "evidence-locator-5bf7d04cc44c81f0",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "8dfd5bf7955a3377714455c484d9dd19d5ebbd2147f0e6fcb8eb08a4f07e75f2",
+      "excerpt_digest": "71142a36347a18f88cfe667b1c291f3799e22ebddea3756468dc97ae77278afa",
+      "locator_id": "evidence-locator-6d6ea30dfb743f66",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "f10f2a74757d9005cfa5c9e06dda959d816f3707d68a902ba24134f4b7df181d",
+      "excerpt_digest": "d46e6f67d28050193249267048120c4500bee49ea3c44be6c4a58b297fcf7797",
+      "locator_id": "evidence-locator-6fed20f3b0dc4831",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "6f2c5140e9457da255baa35e5abec83eed93c0f45e54c221e0c5b6514d549d67",
+      "excerpt_digest": "18f5ccc4eb67efa9f6090f11a713fa33d3832e92d92099290633c0a994acdc75",
+      "locator_id": "evidence-locator-7a7cd96239acc796",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "a6421eec7207a301ffa8a4f93547f95e6c788e169bdf0fa444ae138c06529501",
+      "excerpt_digest": "3adff004785302eb5ec65955a55cb4a50542c569d2359588586be6ee0e9ba5f9",
+      "locator_id": "evidence-locator-7c0aaed60d820c4d",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "16778ea4019dd1108c85abf04e6750926fa2174ab313da52b843cb1322655452",
+      "excerpt_digest": "52cdbe953fca27820a071cfa1d6fc8afd2267c425672ff1dcafb91977bdb2297",
+      "locator_id": "evidence-locator-a4864b8b3eb5dc96",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "c0c735a59f9f95b1dc3e9441e66b12a711b8606940704746f16e1807816c90ff",
+      "excerpt_digest": "471dc790ef9019486793658b936e6906c9613350d7f0b7e56a1e61bedf75809d",
+      "locator_id": "evidence-locator-ca914145600ec146",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    },
+    {
+      "canonical_excerpt_digest": "015dcad1c32b912bb27a1ae32f9183532c3aedd203aca9c62fe87bbf75655c2a",
+      "excerpt_digest": "a29183107ca374da2c9323ff810089f1881f922c6e5f52bdbef16c4f334aa568",
+      "locator_id": "evidence-locator-d9762cdff7cf8783",
+      "locator_kind": "normalized-line",
+      "locator_text": "normalized:L1-L26",
+      "range_end": 26,
+      "range_start": 1,
+      "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+      "source_locator": "antikythera-mechanism.md"
+    }
+  ],
+  "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
+  "source_locator": "antikythera-mechanism.md"
+}

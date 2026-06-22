@@ -534,9 +534,9 @@
         },
         {
           "match_reason": "nearest-neighbor:unit-0001",
-          "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-113049 Source: raw/antikythera-mechanism.md Confidence status: failed Blockers: 1 Warnings: 0 Gates: 8 ## Artifact Reuse - page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/p...",
+          "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-121827 Source: raw/antikythera-mechanism.md Confidence status: passed Blockers: 0 Warnings: 0 Gates: 9 ## Artifact Reuse - page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache...",
           "page_id": "wiki-ingest-confidence",
-          "score": 0.221894
+          "score": 0.211256
         }
       ],
       "write_id": "write-antikythera-mechanism"
@@ -1043,9 +1043,9 @@
     },
     {
       "match_reason": "nearest-neighbor:unit-0001",
-      "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-113049 Source: raw/antikythera-mechanism.md Confidence status: failed Blockers: 1 Warnings: 0 Gates: 8 ## Artifact Reuse - page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/p...",
+      "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-121827 Source: raw/antikythera-mechanism.md Confidence status: passed Blockers: 0 Warnings: 0 Gates: 9 ## Artifact Reuse - page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache...",
       "page_id": "wiki-ingest-confidence",
-      "score": 0.221894
+      "score": 0.211256
     }
   ]
 }

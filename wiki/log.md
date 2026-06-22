@@ -1774,3 +1774,792 @@ Verdicts recorded: 5
 ## Caveat
 
 This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-120622
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (--fresh requested; fingerprint 00797c6e810057af)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (--fresh requested; fingerprint 00797c6e810057af)
+- evidence-locators: missing `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (artifact is missing; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-3c687e0d0896e817
+Claim candidates discovered: 4
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 3
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpts support the claim that the Antikythera mechanism is a Greek orrery and the oldest known analog computer. The first excerpt directly states it is "often described as the oldest known analog computer," and the context confirms its Greek origin and orrery function. fingerprint=claim-support-summary-antikythera-mechanism-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-120641
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (fingerprint matches; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-7870cf3feec41a7a
+Claim candidates discovered: 4
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 3
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpts collectively support the claim that the Antikythera mechanism is a Greek orrery and the oldest known analog computer. The first excerpt explicitly states it is "often described as the oldest known analog computer," and the context of it being an "ancient Greek hand-powered orrery" is confirmed by the description of its function and design. fingerprint=claim-support-summary-antikythera-mechanism-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-120700
+Source: raw/javascriptallonge.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- pdf-extraction: rebuild `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (cache missing, stale, or fresh; fingerprint c98ab3e62b35ab0f)
+- page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (--fresh requested; fingerprint 6f0e0c9957d20723)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (--fresh requested; fingerprint 6f0e0c9957d20723)
+- evidence-locators: missing `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (artifact is missing; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Locators: 2891
+Stable locators: 2891
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-2eb2dddb04a8f472
+Claim candidates discovered: 568
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 567
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpts support the claim that combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. The first excerpt explicitly states that code using combinators tends to name verbs and adverbs while avoiding keywords and noun names, directly aligning with the claim. The second excerpt, while discussing perspectives on combinators, does not contradict this but rather provides additional context on their utility. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-121028
+Source: raw/javascriptallonge.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Locators: 2891
+Stable locators: 2891
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-205514c9ac1af083
+Claim candidates discovered: 568
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 567
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpts support the claim that combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. The first excerpt explicitly mentions that code using combinators tends to name verbs and adverbs like the examples given, while avoiding keywords and noun names. This aligns directly with the claim. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-121827
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (--fresh requested; fingerprint 00797c6e810057af)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (--fresh requested; fingerprint 00797c6e810057af)
+- evidence-locators: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (--fresh requested; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-0785c5ab81e2bdf3
+Claim candidates discovered: 4
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 3
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpts support the claim that the Antikythera mechanism is a Greek orrery and the oldest analog computer. The excerpts confirm it is an ancient Greek device (evidence-5bf7d04cc44c81f0), described as the oldest known analog computer (evidence-6fed20f3b0dc4831), and functions as an orrery (evidence-7c0aaed60d820c4d). fingerprint=claim-support-summary-antikythera-mechanism-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-121850
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (fingerprint matches; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-be15ddc0c9653955
+Claim candidates discovered: 4
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 3
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpts collectively support the claim that the Antikythera mechanism is a Greek orrery and the oldest known analog computer. The first excerpt explicitly states it is "often described as the oldest known analog computer" and an "ancient Greek hand-powered orrery." Additional excerpts provide supporting details about its construction, function, and historical context, all aligning with the claim. fingerprint=claim-support-summary-antikythera-mechanism-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-121909
+Source: raw/javascriptallonge.pdf
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 1
+Gates: 9
+
+## Artifact Reuse
+
+- pdf-extraction: rebuild `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (cache missing, stale, or fresh; fingerprint c98ab3e62b35ab0f)
+- page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (--fresh requested; fingerprint 6f0e0c9957d20723)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (--fresh requested; fingerprint 6f0e0c9957d20723)
+- evidence-locators: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (--fresh requested; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-4edf199191d981d5
+Locators: 2916
+Stable locators: 2
+Locator drift: 5803
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-07cb59f568a27878
+Claim candidates discovered: 563
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 562
+Verdicts recorded: 1
+
+## Findings
+
+- WARNING locator: Locator ids drifted. Drift count: 5803. fingerprint=7aa2ebadd6fd7c4d
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpts support the claim that combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. The first excerpt explicitly states that code using combinators tends to name verbs and adverbs while avoiding keywords and noun names, which directly aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-122255
+Source: raw/javascriptallonge.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 9
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Locators: 2916
+Stable locators: 2916
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-e057e2bee3551e12
+Claim candidates discovered: 563
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 562
+Verdicts recorded: 1
+
+## Findings
+
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpts support the claim that combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. The first excerpt explicitly states that code using combinators tends to name verbs and adverbs while avoiding keywords and noun names, which aligns directly with the claim. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.

@@ -32,6 +32,7 @@ from llmwiki.domain.claim_support import DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS
 from llmwiki.domain.claim_support_selection import select_claim_support_candidates
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.evidence_locator_index import EvidenceLocatorIndex
 from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
@@ -686,6 +687,7 @@ def _curator_report(
     evidence_policy = EvidencePolicy(mode=strict_evidence)
     inventory = store.source_inventory() if evidence_policy.enabled else None
     registry = _latest_evidence_registry(store) if evidence_policy.enabled else None
+    locator_index = _latest_evidence_locator_index(store) if evidence_policy.enabled else None
     status = build_curator_status(
         page_texts=page_texts,
         index_page_ids=index_page_ids(index_text),
@@ -698,6 +700,7 @@ def _curator_report(
             inventory,
             store.source_resolver() if evidence_policy.enabled else None,
             registry=registry,
+            locator_index=locator_index,
         ),
         salience_report=compute_salience(page_texts),
         candidate_backlog=candidate_backlog,
@@ -753,6 +756,20 @@ def _latest_evidence_registry(store: WikiStore) -> EvidenceRegistry | None:
     if not registries:
         return None
     return registries[-1]
+
+
+def _latest_evidence_locator_index(store: WikiStore) -> EvidenceLocatorIndex | None:
+    indexes = []
+    for source_locator in store.list_sources():
+        try:
+            index = store.read_evidence_locator_index_artifact(source_locator)
+        except Exception:
+            continue
+        if index is not None:
+            indexes.append(index)
+    if not indexes:
+        return None
+    return indexes[-1]
 
 
 def _evidence_registries(

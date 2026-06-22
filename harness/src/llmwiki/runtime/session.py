@@ -30,6 +30,7 @@ from llmwiki.domain.contradictions import (
     ContradictionSelection,
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
+from llmwiki.domain.evidence_locator_index import EvidenceLocatorIndex
 from llmwiki.domain.evidence_registry import build_evidence_registry
 from llmwiki.domain.evidence_registry_io import registry_to_json
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
@@ -892,8 +893,24 @@ class Session:
                 page_texts,
                 inventory,
                 self.store.source_resolver() if evidence_policy.enabled else None,
+                locator_index=self._latest_evidence_locator_index()
+                if evidence_policy.enabled
+                else None,
             ),
         )
+
+    def _latest_evidence_locator_index(self) -> EvidenceLocatorIndex | None:
+        indexes = []
+        for source_locator in self.store.list_sources():
+            try:
+                index = self.store.read_evidence_locator_index_artifact(source_locator)
+            except Exception:
+                continue
+            if index is not None:
+                indexes.append(index)
+        if not indexes:
+            return None
+        return indexes[-1]
 
     def _verified_lint_report(
         self, model_report: str, before: LintSnapshot, after: LintSnapshot

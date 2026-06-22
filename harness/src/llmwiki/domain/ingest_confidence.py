@@ -16,6 +16,7 @@ FindingCategory = Literal[
     "source-summary",
     "citation",
     "evidence",
+    "locator",
     "source-range",
     "claim-support",
     "graph",

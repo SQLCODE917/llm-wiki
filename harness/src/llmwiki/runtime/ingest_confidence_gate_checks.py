@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from llmwiki.domain.citations import inspect_citations
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.evidence_locator_index import EvidenceLocatorIndex
 from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.index import index_page_ids
@@ -120,13 +121,14 @@ def evidence_policy_findings(
     store: WikiStore,
     scoped_pages: dict[str, str],
     registry: EvidenceRegistry | None,
+    locator_index: EvidenceLocatorIndex | None,
     *,
     include_source_range: bool,
 ) -> tuple[ValidationFinding, ...]:
     if registry is None:
         return ()
     findings: list[ValidationFinding] = []
-    policy = EvidencePolicy(mode="warn", registry=registry)
+    policy = EvidencePolicy(mode="warn", registry=registry, locator_index=locator_index)
     for page_id, text in scoped_pages.items():
         report = policy.check_page(page_id, page_body(text), store.source_inventory())
         for citation_finding in report.findings:

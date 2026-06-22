@@ -4,9 +4,17 @@ from __future__ import annotations
 
 from collections.abc import Mapping
 from dataclasses import dataclass
+from typing import cast
 
 from llmwiki.config import StrictEvidenceMode
-from llmwiki.domain.citations import CitationFinding, SourceInventory, inspect_citations
+from llmwiki.domain.citations import (
+    CitationFinding,
+    FindingCode,
+    FindingSeverity,
+    SourceInventory,
+    inspect_citations,
+)
+from llmwiki.domain.evidence_locator_index import EvidenceLocatorFinding, EvidenceLocatorIndex
 from llmwiki.domain.evidence_locators import (
     locator_match_for_citation,
     source_range_finding,
@@ -46,6 +54,7 @@ class EvidenceLintReport:
     mode: StrictEvidenceMode
     findings: tuple[CitationFinding, ...] = ()
     registry: EvidenceRegistry | None = None
+    locator_index: EvidenceLocatorIndex | None = None
 
     @property
     def fail_count(self) -> int:
@@ -70,6 +79,12 @@ class EvidenceLintReport:
                 f"{len(self.registry.source_ranges)} source range(s), "
                 f"{len(self.registry.evidence_records)} evidence record(s)."
             )
+        if self.locator_index is not None:
+            summary += (
+                "\nEvidence locator index: "
+                f"{len(self.locator_index.locators)} locator(s), "
+                f"{len(self.locator_index.findings)} finding(s)."
+            )
         if not self.findings:
             return summary + "\nNo deterministic citation evidence findings."
         return summary + "\n" + _render_findings(self.findings)
@@ -79,6 +94,7 @@ class EvidenceLintReport:
 class EvidencePolicy:
     mode: StrictEvidenceMode = "off"
     registry: EvidenceRegistry | None = None
+    locator_index: EvidenceLocatorIndex | None = None
 
     @property
     def enabled(self) -> bool:
@@ -118,21 +134,32 @@ class EvidencePolicy:
         inventory: SourceInventory | None,
         source_resolver: SourceTextResolver | None = None,
         registry: EvidenceRegistry | None = None,
+        locator_index: EvidenceLocatorIndex | None = None,
     ) -> EvidenceLintReport:
         if self.mode == "off":
             return EvidenceLintReport(mode=self.mode)
         if inventory is None:
             raise ValueError("Source inventory is required when strict evidence is enabled.")
         findings: list[CitationFinding] = []
-        active_policy = (
-            self if registry is None else EvidencePolicy(mode=self.mode, registry=registry)
+        active_policy = EvidencePolicy(
+            mode=self.mode,
+            registry=registry or self.registry,
+            locator_index=locator_index or self.locator_index,
         )
         for page_name in sorted(pages):
             result = active_policy.check_page(
                 page_name, pages[page_name], inventory, source_resolver
             )
             findings.extend(result.findings)
-        return EvidenceLintReport(mode=self.mode, findings=tuple(findings), registry=registry)
+        active_locator_index = locator_index or self.locator_index
+        if active_locator_index is not None:
+            findings.extend(_locator_index_findings(active_locator_index))
+        return EvidenceLintReport(
+            mode=self.mode,
+            findings=tuple(findings),
+            registry=registry,
+            locator_index=active_locator_index,
+        )
 
 
 def _render_findings(findings: tuple[CitationFinding, ...]) -> str:
@@ -150,3 +177,23 @@ def _render_findings(findings: tuple[CitationFinding, ...]) -> str:
         f"{finding.code}: {finding.citation_text} -- {finding.message}"
         for finding in ordered
     )
+
+
+def _locator_index_findings(index: EvidenceLocatorIndex) -> tuple[CitationFinding, ...]:
+    return tuple(_locator_index_finding(finding) for finding in index.findings)
+
+
+def _locator_index_finding(finding: EvidenceLocatorFinding) -> CitationFinding:
+    severity = "fail" if finding.severity == "blocker" else "warn"
+    code = "locator-out-of-range" if finding.category == "invalid-range" else "missing-source"
+    return CitationFinding(
+        page_name=finding.page_id or index_page_name(finding.source_locator),
+        severity=cast(FindingSeverity, severity),
+        citation_text=finding.locator_id,
+        code=cast(FindingCode, code),
+        message=f"{finding.category}: {finding.message}",
+    )
+
+
+def index_page_name(source_locator: str) -> str:
+    return source_locator.rsplit("/", 1)[-1].rsplit(".", 1)[0]

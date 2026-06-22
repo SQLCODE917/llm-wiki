@@ -5,6 +5,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
+from llmwiki.domain.evidence_locator_index import EvidenceLocatorIndex
+from llmwiki.domain.evidence_locator_index_io import evidence_locator_index_to_json
 from llmwiki.domain.evidence_registry import (
     EvidenceRegistry,
     SourceText,
@@ -39,6 +41,10 @@ from llmwiki.domain.planning import (
 from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.pdf.manifest import ChunkRecord
 from llmwiki.pdf.pipeline import ExtractionResult, chunk_file, read_source_text
+from llmwiki.runtime.ingest_confidence_locator_artifacts import (
+    build_current_locator_index,
+    read_locator_index,
+)
 from llmwiki.runtime.ingest_confidence_pdf_cache import (
     PdfExtractFn,
     pdf_extraction_artifact,
@@ -55,6 +61,8 @@ class PreparedIngestArtifacts:
     decisions: tuple[ArtifactReuseDecision, ...]
     page_plan: PagePlan | None
     evidence_registry: EvidenceRegistry | None
+    evidence_locator_index: EvidenceLocatorIndex | None
+    previous_evidence_locator_index: EvidenceLocatorIndex | None
     findings: tuple[ValidationFinding, ...]
 
 
@@ -87,8 +95,16 @@ def prepare_ingest_confidence_artifacts(
         stored,
         fresh,
     )
+    locator_decision = _cache_decision(
+        "evidence-locators",
+        artifact_dir / "evidence-locators.json",
+        fingerprint,
+        stored,
+        fresh,
+    )
     decisions: list[ArtifactReuseDecision] = []
     findings: list[ValidationFinding] = []
+    previous_locator_index = read_locator_index(store, source_locator)
     pdf_result, pdf_decision, pdf_findings = pdf_extraction_artifact(
         store, cache_dir, source_locator, source_hash, fresh=fresh, extract_pdf=extract_pdf
     )
@@ -96,16 +112,21 @@ def prepare_ingest_confidence_artifacts(
         decisions.append(pdf_decision)
     findings.extend(pdf_findings)
     cached = _reused_artifacts(
-        store, artifact_dir, source_locator, plan_decision, registry_decision
+        store, artifact_dir, source_locator, plan_decision, registry_decision, locator_decision
     )
     if cached is not None:
-        decisions.extend((plan_decision, registry_decision))
-        return PreparedIngestArtifacts(tuple(decisions), cached[0], cached[1], tuple(findings))
+        decisions.extend((plan_decision, registry_decision, locator_decision))
+        return PreparedIngestArtifacts(
+            tuple(decisions), cached[0], cached[1], cached[2], cached[2], tuple(findings)
+        )
     plan = _build_current_page_plan(store, source_locator, today, profiles, pdf_result)
     if plan is None:
         findings.append(runtime_finding(source_locator, "Could not build a current PagePlan."))
-        return PreparedIngestArtifacts(tuple(decisions), None, None, tuple(findings))
+        return PreparedIngestArtifacts(
+            tuple(decisions), None, None, None, previous_locator_index, tuple(findings)
+        )
     registry = _build_current_registry(store, source_locator, plan, pdf_result)
+    locator_index = build_current_locator_index(store, source_locator, registry)
     if registry is None:
         findings.append(
             validation_finding(
@@ -115,14 +136,20 @@ def prepare_ingest_confidence_artifacts(
                 message="Could not build an EvidenceRegistry for this source.",
             )
         )
-    decisions.extend((plan_decision, registry_decision))
+    decisions.extend((plan_decision, registry_decision, locator_decision))
     store.write_page_plan_artifacts(
         source_locator, page_plan_to_json(plan), observation_report(plan)
     )
     if registry is not None:
         store.write_evidence_registry_artifact(source_locator, registry_to_json(registry))
+    if locator_index is not None:
+        store.write_evidence_locator_index_artifact(
+            source_locator, evidence_locator_index_to_json(locator_index)
+        )
     _write_fingerprint(artifact_dir, fingerprint)
-    return PreparedIngestArtifacts(tuple(decisions), plan, registry, tuple(findings))
+    return PreparedIngestArtifacts(
+        tuple(decisions), plan, registry, locator_index, previous_locator_index, tuple(findings)
+    )
 
 
 def _cache_decision(
@@ -148,18 +175,24 @@ def _reused_artifacts(
     source_locator: str,
     plan_decision: ArtifactReuseDecision,
     registry_decision: ArtifactReuseDecision,
-) -> tuple[PagePlan, EvidenceRegistry] | None:
-    if plan_decision.decision != "reuse" or registry_decision.decision != "reuse":
+    locator_decision: ArtifactReuseDecision,
+) -> tuple[PagePlan, EvidenceRegistry, EvidenceLocatorIndex] | None:
+    if (
+        plan_decision.decision != "reuse"
+        or registry_decision.decision != "reuse"
+        or locator_decision.decision != "reuse"
+    ):
         return None
     plan_path = artifact_dir / "page-plan.json"
     try:
         plan = page_plan_from_json(plan_path.read_text(encoding="utf-8"))
         registry = store.read_evidence_registry_artifact(source_locator)
+        locator_index = store.read_evidence_locator_index_artifact(source_locator)
     except Exception:
         return None
-    if registry is None:
+    if registry is None or locator_index is None:
         return None
-    return plan, registry
+    return plan, registry, locator_index
 
 
 def _build_current_page_plan(

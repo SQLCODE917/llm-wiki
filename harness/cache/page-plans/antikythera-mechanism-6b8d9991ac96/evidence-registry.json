@@ -1,110 +1,150 @@
 {
   "evidence_records": [
     {
-      "evidence_id": "evidence-7075e692beb6aa88",
+      "evidence_id": "evidence-6fed20f3b0dc4831",
+      "evidence_identity_id": "evidence-identity-6fed20f3b0dc4831",
       "evidence_kind": "source-claim",
       "excerpt": "The Antikythera mechanism is an ancient Greek hand-powered orrery, often described as the oldest known analog computer.",
       "excerpt_digest": "d46e6f67d28050193249267048120c4500bee49ea3c44be6c4a58b297fcf7797",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0001",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-410a22df44513136",
+      "evidence_id": "evidence-5bf7d04cc44c81f0",
+      "evidence_identity_id": "evidence-identity-5bf7d04cc44c81f0",
       "evidence_kind": "source-claim",
       "excerpt": "It was retrieved from the sea in 1901 from a shipwreck off the coast of the Greek island of Antikythera, and is dated to roughly 150–100 BC.",
       "excerpt_digest": "5cf3b619128f60b287223922164805c7c54fb8490d61b3fc2a1ad435e6742d9a",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0002",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-00f1ca4fd41a302d",
+      "evidence_id": "evidence-ca914145600ec146",
+      "evidence_identity_id": "evidence-identity-ca914145600ec146",
       "evidence_kind": "source-claim",
       "excerpt": "The device consists of at least 30 meshing bronze gears housed in a wooden case roughly the size of a shoebox.",
       "excerpt_digest": "471dc790ef9019486793658b936e6906c9613350d7f0b7e56a1e61bedf75809d",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0003",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-5a6dd2e59bb0e2bb",
+      "evidence_id": "evidence-7c0aaed60d820c4d",
+      "evidence_identity_id": "evidence-identity-7c0aaed60d820c4d",
       "evidence_kind": "source-claim",
       "excerpt": "By turning a hand crank, the user could advance a pointer across a dial showing the position of the Sun and Moon in the zodiac, the phase of the Moon, and the dates of solar and lunar eclipses predicted by the Saros cycle.",
       "excerpt_digest": "3adff004785302eb5ec65955a55cb4a50542c569d2359588586be6ee0e9ba5f9",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0004",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-8f50c6bb0b4463cf",
+      "evidence_id": "evidence-6d6ea30dfb743f66",
+      "evidence_identity_id": "evidence-identity-6d6ea30dfb743f66",
       "evidence_kind": "source-claim",
       "excerpt": "A separate dial tracked the four-year cycle of the Olympiad and other Panhellenic games.",
       "excerpt_digest": "71142a36347a18f88cfe667b1c291f3799e22ebddea3756468dc97ae77278afa",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0005",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-203a488ec1a417f3",
+      "evidence_id": "evidence-a4864b8b3eb5dc96",
+      "evidence_identity_id": "evidence-identity-a4864b8b3eb5dc96",
       "evidence_kind": "source-claim",
       "excerpt": "The mechanism's sophistication was not matched in the surviving record until the astronomical clocks of medieval Europe, more than a thousand years later.",
       "excerpt_digest": "52cdbe953fca27820a071cfa1d6fc8afd2267c425672ff1dcafb91977bdb2297",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0006",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-dfc7590ed86eaece",
+      "evidence_id": "evidence-2129a3546225092b",
+      "evidence_identity_id": "evidence-identity-2129a3546225092b",
       "evidence_kind": "source-claim",
       "excerpt": "Its gear-cutting precision implies an established workshop tradition, yet no comparable device or workshop has been found.",
       "excerpt_digest": "0880881a89fe4398cb440a0e31ee27a5e135a90cedc75f4529e629841bee7740",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0007",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-3ac68474a7a72bf5",
+      "evidence_id": "evidence-7a7cd96239acc796",
+      "evidence_identity_id": "evidence-identity-7a7cd96239acc796",
       "evidence_kind": "source-claim",
       "excerpt": "Derek de Solla Price published the first detailed scientific study in 1974, using X-ray imaging to count gear teeth.",
       "excerpt_digest": "18f5ccc4eb67efa9f6090f11a713fa33d3832e92d92099290633c0a994acdc75",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0008",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-633fa04f32fedbba",
+      "evidence_id": "evidence-d9762cdff7cf8783",
+      "evidence_identity_id": "evidence-identity-d9762cdff7cf8783",
       "evidence_kind": "source-claim",
       "excerpt": "The Antikythera Mechanism Research Project, beginning in 2005, used microfocus X-ray computed tomography to read inscriptions hidden inside the corroded fragments — effectively a user's manual engraved on the device's plates.",
       "excerpt_digest": "a29183107ca374da2c9323ff810089f1881f922c6e5f52bdbef16c4f334aa568",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0009",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",
       "source_range_id": "source-range-antikythera-mechanism"
     },
     {
-      "evidence_id": "evidence-601607a14847f0d2",
+      "evidence_id": "evidence-3f52331eaf743c6c",
+      "evidence_identity_id": "evidence-identity-3f52331eaf743c6c",
       "evidence_kind": "source-claim",
       "excerpt": "The inscriptions suggest the device may have originated in Corinth or its colonies, possibly linking it to the school of Archimedes in Syracuse.",
       "excerpt_digest": "0dfe25103ddbab82f56805404668315ee6c2f1eebe6ede17dc70ccb1e70b3033",
-      "line_range": null,
+      "line_range": [
+        1,
+        26
+      ],
       "source_claim_id": "source-claim-unit-0001-0010",
       "source_hash": "90276921add4d9fdda4daaac88e96bd00e97fb654c60bdc3fcd75cc57b0b5677",
       "source_locator": "antikythera-mechanism.md",

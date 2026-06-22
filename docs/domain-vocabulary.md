@@ -63,6 +63,13 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `SourceSummaryBullet` | `source_summary_bullet` |
 | `PlannedPageWrite` | `planned_page_write` |
 | `Evidence` | `evidence` |
+| `EvidenceLocator` | `evidence_locator` |
+| `EvidenceIdentity` | `evidence_identity` |
+| `EvidenceLocatorIndex` | `evidence_locator_index` |
+| `EvidenceLocatorFinding` | `evidence_locator_finding` |
+| `EvidenceLocatorBuilder` | `evidence_locator_builder` |
+| `LocatorArtifactFingerprint` | `locator_artifact_fingerprint` |
+| `LocatorStabilityGate` | `locator_stability_gate` |
 | `EvidenceRecord` | `evidence_record` |
 | `EvidenceRegistry` | `evidence_registry` |
 | `EvidenceBank` | `evidence_bank` |
@@ -145,7 +152,13 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ContradictionFinding | Exists | `llmwiki.domain.contradictions` |
 | CandidateRecord | Exists | `llmwiki.domain.candidates` |
 | Citation | Existing concept | `llmwiki.domain.citations.Citation` |
-| EvidenceLocator | Existing concept | `Citation.page_range`, `Citation.line_range`, and `llmwiki.domain.evidence_resolver.ResolvedLocator` |
+| EvidenceLocator | Exists | `llmwiki.domain.evidence_locator_index`; normalized source address for one evidence span |
+| EvidenceIdentity | Exists | `llmwiki.domain.evidence_locator_index`; page-independent identity material for one `EvidenceRecord` |
+| EvidenceLocatorIndex | Exists | `llmwiki.domain.evidence_locator_index`; generated locator index for one source |
+| EvidenceLocatorFinding | Exists | `llmwiki.domain.evidence_locator_index`; deterministic locator index finding |
+| EvidenceLocatorBuilder | Exists | `llmwiki.domain.evidence_locator_builder`; domain service that creates `EvidenceLocatorIndex` |
+| LocatorArtifactFingerprint | Exists | `llmwiki.domain.evidence_locator_index`; generated locator artifact fingerprint |
+| LocatorStabilityGate | Exists | `llmwiki.runtime.ingest_confidence_locator_gate`; confidence gate for locator index drift |
 | SourceExcerpt | Existing concept | `ClaimCandidate.evidence_excerpt` in `llmwiki.domain.grounding` |
 | LintFinding | Exists | `llmwiki.domain.objects`; citation/semantic findings remain separate concepts |
 | SalienceSignal | Existing concept | `SalienceEntry` inputs in `llmwiki.domain.salience` |

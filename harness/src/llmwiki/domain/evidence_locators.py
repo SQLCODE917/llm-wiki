@@ -2,11 +2,11 @@
 
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
 from typing import Literal
 
 from llmwiki.domain.citations import Citation, CitationFinding
+from llmwiki.domain.evidence_locator_index import canonicalize_evidence_text
 from llmwiki.domain.evidence_registry import EvidenceRegistry
 
 LocatorConfidence = Literal[
@@ -101,16 +101,6 @@ def source_range_finding(citation: Citation, registry: EvidenceRegistry) -> Cita
         "source-range-violation",
         "Citation locator is outside the planned source range for this page.",
     )
-
-
-def canonicalize_evidence_text(text: str) -> str:
-    text = re.sub(r"\bPage\s+\d+\b", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"(?<=\w)-\s+(?=\w)", "", text)
-    text = re.sub(r"[\u2010-\u2015\u2212]", "-", text)
-    text = re.sub(r"[“”]", '"', text)
-    text = re.sub(r"[‘’]", "'", text)
-    text = re.sub(r"\s+", " ", text)
-    return text.strip().lower()
 
 
 def suggested_locator(evidence_key: str, lines: tuple[str, ...]) -> str:

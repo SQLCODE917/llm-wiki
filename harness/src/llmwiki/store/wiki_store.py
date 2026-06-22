@@ -21,6 +21,12 @@ from pathlib import Path
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
 from llmwiki.domain.candidates import CandidateBacklog, backlog_from_json_text
 from llmwiki.domain.citations import SourceInventory
+from llmwiki.domain.evidence_locator_index import (
+    EvidenceLocatorIndex,
+)
+from llmwiki.domain.evidence_locator_index_io import (
+    evidence_locator_index_from_json,
+)
 from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.evidence_registry_io import registry_from_json
 from llmwiki.domain.index import (
@@ -334,6 +340,23 @@ class WikiStore:
         if not registry_path.is_file():
             return None
         return registry_from_json(registry_path.read_text(encoding="utf-8"))
+
+    def write_evidence_locator_index_artifact(
+        self, source_locator: str, evidence_locator_index_json: str
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        locator_path = artifact_dir / "evidence-locators.json"
+        locator_path.write_text(evidence_locator_index_json, encoding="utf-8")
+        return locator_path
+
+    def read_evidence_locator_index_artifact(
+        self, source_locator: str
+    ) -> EvidenceLocatorIndex | None:
+        locator_path = self.page_plan_artifact_dir(source_locator) / "evidence-locators.json"
+        if not locator_path.is_file():
+            return None
+        return evidence_locator_index_from_json(locator_path.read_text(encoding="utf-8"))
 
     def write_source_summary_draft_artifact(
         self,
