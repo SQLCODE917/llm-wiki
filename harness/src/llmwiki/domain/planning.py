@@ -7,9 +7,10 @@ import re
 from dataclasses import asdict, replace
 from pathlib import Path
 
-from pydantic import TypeAdapter
+from pydantic import PydanticUserError, TypeAdapter
 
 from llmwiki.domain.objects import (
+    Evidence,
     ExtractedUnit,
     PagePlan,
     PlannedPageWrite,
@@ -35,6 +36,7 @@ from llmwiki.domain.source_claims import (
     source_claims,
 )
 from llmwiki.domain.source_page_groups import source_page_groups
+from llmwiki.domain.source_summary import render_source_summary_claim_requirement
 from llmwiki.domain.source_summary_quality import (
     source_summary_quality_report as source_summary_quality_report,
 )
@@ -152,7 +154,13 @@ def page_plan_to_json(plan: PagePlan) -> str:
 
 
 def page_plan_from_json(text: str) -> PagePlan:
-    return _PAGE_PLAN_ADAPTER.validate_json(text)
+    try:
+        return _PAGE_PLAN_ADAPTER.validate_json(text)
+    except PydanticUserError as exc:
+        if exc.code != "class-not-fully-defined":
+            raise
+        _PAGE_PLAN_ADAPTER.rebuild(force=True, _types_namespace={"Evidence": Evidence})
+        return _PAGE_PLAN_ADAPTER.validate_json(text)
 
 
 def observation_report(
@@ -260,16 +268,32 @@ def _source_summary_plan_label(write: object, source_claims: dict[str, SourceCla
     if max_words:
         constraints.append(f"stay under {max_words} words")
     constraint_text = "; ".join(constraints) or "use source-summary fields"
-    claims = "; ".join(
-        _source_claim_label(source_claims[claim_id])
-        for claim_id in summary_plan.selected_source_claims
-        if claim_id in source_claims
-    )
+    claims = _source_summary_claim_labels(summary_plan, source_claims)
     return (
         "SourceSummaryPlan selected claim IDs "
         "(use claim_id only in covered_source_claims; read the raw source, then "
         "write fresh short paraphrases; cue terms are labels, not reusable prose): "
         f"{claims} | constraints: {constraint_text} | "
+    )
+
+
+def _source_summary_claim_labels(
+    summary_plan: object,
+    source_claims: dict[str, SourceClaim],
+) -> str:
+    requirements = getattr(summary_plan, "selected_claim_requirements", ())
+    if requirements:
+        return "; ".join(
+            render_source_summary_claim_requirement(requirement)
+            for requirement in requirements
+        )
+    selected_claims = tuple(
+        str(claim_id) for claim_id in getattr(summary_plan, "selected_source_claims", ())
+    )
+    return "; ".join(
+        _source_claim_label(source_claims[claim_id])
+        for claim_id in selected_claims
+        if claim_id in source_claims
     )
 
 

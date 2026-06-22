@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Grizzly bears possess unusually high intellect for an animal, meaning players should not let their guard down (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
-      "covered_source_claims": [
-        "source-claim-unit-0048-0122"
-      ]
-    },
-    {
-      "bullet_text": "They are classified among the most terrifying animals due to super strength and agility beyond what their physique suggests (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
-      "covered_source_claims": [
-        "source-claim-unit-0048-0006"
-      ]
-    },
-    {
-      "bullet_text": "Grizzly bear stat block: Level 3, rarity 6, agility 14, speed 21, with attack points fangs 10 (3) and claws 11 (4) (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "bullet_text": "Grizzlies are generally solitary, except when a mother bear is with her cubs. They are omnivores and are said to eat anything they can fit into their mouths. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
       "covered_source_claims": [
         "source-claim-unit-0048-0001"
       ]
     },
     {
-      "bullet_text": "They can extend a 5‑meter long tongue to entangle prey and may swallow a human‑sized animal whole (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "bullet_text": "A bear's special attack is a _bear hug_ which is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
       "covered_source_claims": [
-        "source-claim-unit-0048-0052"
+        "source-claim-unit-0048-0003"
       ]
     },
     {
-      "bullet_text": "Female and male variants share similar stats (Level 3, rarity 5, agility 22) with fangs 10 (3) and claws 11 (4); gender differences are minor (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
+      "bullet_text": "Giant ant soldiers are soldier ants that are raised on a special diet to protect the giant ant queen. Their fangs secrete a highly toxic acid. Anyone hit by a giant ant soldier will have their wound burned by the acid and, in addition to normal damage, must make a life force resistance roll, which if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 4. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
       "covered_source_claims": [
-        "source-claim-unit-0048-0029"
+        "source-claim-unit-0048-0004"
       ]
     }
   ],
-  "source_record_text": "Summary of animal stat blocks and combat behavior from chapter 13.2.7 (part 2)."
+  "source_record_text": "Summary of animals from Sword World RPG - Complete Edition, section 13.2.7 (pages 199-211)."
 }

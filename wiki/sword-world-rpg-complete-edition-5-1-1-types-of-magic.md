@@ -1,19 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-5-1-1-types-of-magic
 page_kind: source
-summary: Source summary for Types of Magic (p.56).
+summary: Overview of the five types of magic in Sword World RPG: ancient, spirit, holy, dark, and dragon roar magic.
 sources: raw/Sword World RPG - Complete Edition.pdf p.56-56
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Magic is produced by chanting runes and performing procedures, distinguishing five primary types—ancient, spirit, holy, dark, and dragon—each tied to a belief in gods, wicked gods, or dragons.
+Overview of the five types of magic in Sword World RPG: ancient, spirit, holy, dark, and dragon roar magic.
 
 ## Key supported claims
 
-- Spells are limited to a defined set of effects (raw/Sword World RPG - Complete Edition.pdf p.56-56).
-- Types of magic stem from belief in gods, wicked gods, and dragons (raw/Sword World RPG - Complete Edition.pdf p.56-56).
-- The five runes—ancient, spirit, holy, daemon, dragon—each have unique power sources (raw/Sword World RPG - Complete Edition.pdf p.56-56).
-- Holy prayer and daemon scream share the same power, differing only in nature (raw/Sword World RPG - Complete Edition.pdf p.56-56).
-- Races may not learn all runes, and a character cannot hold more than one belief in each god type (raw/Sword World RPG - Complete Edition.pdf p.56-56).
+- Magic in Sword World uses chants called runes and specific procedures to produce effects (raw/Sword World RPG - Complete Edition.pdf p.56-56).
+- There are five types of runes: high ancient, silent spirit, holy prayer, daemon scream, and dragon roar (raw/Sword World RPG - Complete Edition.pdf p.56-56).
+- Rune masters are divided into five types: sorcerer, shaman, priest, dark priest, and dragon priest (raw/Sword World RPG - Complete Edition.pdf p.56-56).
+- Spells are divided into levels from 1-10, with higher levels requiring higher rune master skills (raw/Sword World RPG - Complete Edition.pdf p.56-56).
+- A rune master can use all magic up to their skill level, but not magic of a higher level (raw/Sword World RPG - Complete Edition.pdf p.56-56).

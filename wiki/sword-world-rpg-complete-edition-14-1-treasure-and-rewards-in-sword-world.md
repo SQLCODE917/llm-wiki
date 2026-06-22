@@ -1,20 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world
 page_kind: source
-summary: 14.1 Treasure and Rewards in Sword World from raw/Sword World RPG - Complete Edition.pdf.
+summary: Summary of treasure and rewards in the Sword World RPG setting, including ancient kingdom treasures, adventurer's shops, and reward systems.
 sources: raw/Sword World RPG - Complete Edition.pdf p.241-242
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Summary of Treasure and Rewards rules from Sword World Chapter 14.1.
+This section covers treasure and rewards in the Sword World RPG setting, detailing ancient kingdom treasures, adventurer's shops, reward systems, and magical item values.
 
 ## Key supported claims
 
-- What kind of rewards should be given for an adventure is ultimately up to the game master. (raw/Sword World RPG - Complete Edition.pdf p.241-242)
-- If you could obtain a large amount of treasure through an easy adventure, that would take the fun out of the game. (raw/Sword World RPG - Complete Edition.pdf p.241-242)
-- Unlike normal treasures, it’s not possible to appraise these goods unless you take them to a specialty shop, so they will likely not be purchased. (raw/Sword World RPG - Complete Edition.pdf p.241-242)
-- Of course, this does not mean that the reward will increase if the adventurer intentionally delays the resolution. (raw/Sword World RPG - Complete Edition.pdf p.241-242)
-- These goods are extremely valuable and can be traded at high prices, but may be difficult to sell in normal markets. (raw/Sword World RPG - Complete Edition.pdf p.241-242)
+- Adventurers search for treasure in ruins of the ancient kingdom, where coins do not exist (raw/Sword World RPG - Complete Edition.pdf p.241-242).
+- Treasures include handicrafts like gems, precious metals, wares, and works of art; magic items are extremely valuable (raw/Sword World RPG - Complete Edition.pdf p.241-242).
+- Adventurers use adventurer's shops as bases, which double as taverns for exchanging information (raw/Sword World RPG - Complete Edition.pdf p.241-242).
+- Rewards for adventures should match risk level, calculated by multiplying player character levels by 500 (raw/Sword World RPG - Complete Edition.pdf p.241-242).

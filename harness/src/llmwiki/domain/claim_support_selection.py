@@ -117,7 +117,9 @@ def _source_summary_candidates(
                     citation_texts=citations,
                     source_claim_ids=tuple(bullet.covered_source_claims),
                     evidence_ids=evidence_ids,
-                    evidence_excerpts=index.excerpts(evidence_ids, limit=5),
+                    evidence_excerpts=index.excerpts_for_claim(
+                        evidence_ids, claim_text, limit=5
+                    ),
                     candidate_kind="source-summary",
                 )
             )
@@ -158,7 +160,9 @@ def _prose_candidates(
                     citation_texts=citations,
                     source_claim_ids=(),
                     evidence_ids=evidence_ids,
-                    evidence_excerpts=index.excerpts(evidence_ids, limit=5),
+                    evidence_excerpts=index.excerpts_for_claim(
+                        evidence_ids, claim_text, limit=5
+                    ),
                 )
             )
     return tuple(candidates)

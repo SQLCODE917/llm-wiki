@@ -1,35 +1,11 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Caster may double or triple power to expand targets, area, or duration. (raw/Sword World RPG - Complete Edition.pdf p.61-64)",
+      "bullet_text": "Magic expansion increases the effectiveness and certainty of magic by consuming extra mental power, as described in (raw/Sword World RPG - Complete Edition.pdf p.61-64).",
       "covered_source_claims": [
-        "source-claim-unit-0013-0129"
-      ]
-    },
-    {
-      "bullet_text": "If a spell is resisted, expansion is nullified and the caster must roll to resist again. (raw/Sword World RPG - Complete Edition.pdf p.61-64)",
-      "covered_source_claims": [
-        "source-claim-unit-0013-0137"
-      ]
-    },
-    {
-      "bullet_text": "Area expansion multiplies power but increases size by the square root of the rate, per Table 5‑1. (raw/Sword World RPG - Complete Edition.pdf p.61-64)",
-      "covered_source_claims": [
-        "source-claim-unit-0013-0024"
-      ]
-    },
-    {
-      "bullet_text": "Magic that negates other magic can itself be negated, canceling both effects. (raw/Sword World RPG - Complete Edition.pdf p.61-64)",
-      "covered_source_claims": [
-        "source-claim-unit-0013-0130"
-      ]
-    },
-    {
-      "bullet_text": "Damage expansion may allow multiple strike rolls, taking the highest; final‑score bonuses are limited by rune mastery. (raw/Sword World RPG - Complete Edition.pdf p.61-64)",
-      "covered_source_claims": [
-        "source-claim-unit-0013-0087"
+        "source-claim-unit-0013-0003"
       ]
     }
   ],
-  "source_record_text": "Magic expansion lets casters use extra mental power to broaden spell effects such as range, area, duration, damage, and final score. (raw/Sword World RPG - Complete Edition.pdf p.61-64)"
+  "source_record_text": "Section 5.1.7 Magic Expansion (pages 61-64) of Sword World RPG - Complete Edition."
 }

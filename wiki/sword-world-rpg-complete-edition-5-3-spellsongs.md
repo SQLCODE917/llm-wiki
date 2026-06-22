@@ -1,19 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-5-3-spellsongs
 page_kind: source
-summary: Spellsongs rules and effects in Sword World RPG Complete Edition
+summary: Summary of the Spellsongs section (5.3) from Sword World RPG - Complete Edition, including rules, limitations, and effects.
 sources: raw/Sword World RPG - Complete Edition.pdf p.109-113
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section describes spellsongs, a bardic magic system based on song performance.
+This section describes spellsongs, magical songs used by bards in the Sword World RPG. It outlines the rules for using spellsongs, their limitations, and the effects of various spellsongs.
 
 ## Key supported claims
 
-- Resistance rolls against spellsongs are generally made only once at the beginning of the song, possibly on the fourth round. (raw/Sword World RPG - Complete Edition.pdf p.109-113)
-- Spellsongs were created during the ancient kingdom period; their types and effects are listed in a table. (raw/Sword World RPG - Complete Edition.pdf p.109-113)
-- Even grassrunners with no magical background can use spellsongs by preparing the superficial form. (raw/Sword World RPG - Complete Edition.pdf p.109-113)
-- The game master may add other common runes or spellsongs at their discretion. (raw/Sword World RPG - Complete Edition.pdf p.109-113)
-- Using spellsongs does not consume a bard's mental power. (raw/Sword World RPG - Complete Edition.pdf p.109-113)
+- A spellsong is a song with magical power created during the ancient kingdom period, usable by bards with the bard skill (raw/Sword World RPG - Complete Edition.pdf p.109-113).
+- Using spellsongs does not consume a bard's mental power, and the effect cannot be expanded (raw/Sword World RPG - Complete Edition.pdf p.109-113).
+- Spellsongs have different types and effects, such as waking up sleeping creatures, arousing curiosity, summoning small animals, and more (raw/Sword World RPG - Complete Edition.pdf p.109-113).
+- A bard cannot sing for long without interruption, and the spellsong ends if the bard is interrupted (raw/Sword World RPG - Complete Edition.pdf p.109-113).
+- To use a spellsong, a bard must play an instrument unique to them and sing the lyrics in high ancient (raw/Sword World RPG - Complete Edition.pdf p.109-113).

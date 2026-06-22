@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Game masters may limit purchases to cities like Lomar, Reide, or the black market, yet still sell at adventurer shops (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "bullet_text": "Treasure types include artwork, gems, precious metals, and magical items, with values determined by thief and sage skills' treasure appraisal ability (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
       "covered_source_claims": [
-        "source-claim-unit-0059-0030"
+        "source-claim-unit-0059-0003"
       ]
     },
     {
-      "bullet_text": "Even high‑power items require sorcerers with high‑ancient; non‑sorcerers cannot command them, preventing excessive power (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "bullet_text": "Magical items encompass weapons, armor, and other enchanted objects, with values ranging from 10 silver coins to 10,000 silver coins, and some having immeasurable value (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
       "covered_source_claims": [
-        "source-claim-unit-0059-0041"
+        "source-claim-unit-0059-0004"
       ]
     },
     {
-      "bullet_text": "Items survive rust‑free, indicating permanent magic from ancient sorcerers (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
+      "bullet_text": "Magical items can be identified through spells like Sense Magic and Analyze Enchantment, with base trade prices ranging from 1000 silver coins to immeasurable values, and some items being too powerful for adventurers to obtain (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
       "covered_source_claims": [
-        "source-claim-unit-0059-0012"
-      ]
-    },
-    {
-      "bullet_text": "Tables may include extra entries such as required strength or other data (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
-      "covered_source_claims": [
-        "source-claim-unit-0059-0070"
-      ]
-    },
-    {
-      "bullet_text": "Sage with treasure appraisal can determine value and cost, including low‑ancient commands (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
-      "covered_source_claims": [
-        "source-claim-unit-0059-0037"
+        "source-claim-unit-0059-0005"
       ]
     }
   ],
-  "source_record_text": "Magical item list in Alecrast, trade price guidelines, appraisal rules, and city restrictions."
+  "source_record_text": "This section describes the types of treasure and magical items in the Sword World RPG setting, including artwork, gems, precious metals, and magical items. It provides details on how to determine the value of treasure using thief and sage skills, and outlines the magical item list with specific items like weapons and armor, their rarities, enchanter names, forms, required strength, base trade prices, powers, and descriptions. Some item values are unknown."
 }

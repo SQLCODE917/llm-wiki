@@ -47,6 +47,31 @@ def test_source_claim_quality_fixture_accuracy() -> None:
     assert correct / possible >= 0.90
 
 
+def test_claim_role_tags_handles_long_source_sentences() -> None:
+    statement = "Functions return values. " + ("unpunctuated source text " * 2000)
+
+    roles = _claim_role_tags(statement)
+
+    assert "function" in roles
+
+
+def test_layout_field_claims_are_source_furniture() -> None:
+    statement = "To the right of each of these is a field labeled resistance."
+    roles = _claim_role_tags(statement)
+
+    assert _claim_eligibility(statement, roles) == "source-furniture"
+
+
+def test_source_claims_bounds_long_unpunctuated_units() -> None:
+    long_text = "Functions return values. " + ("unpunctuated source text " * 5000)
+
+    claims = source_claims((_unit("unit-0001", "Long text", long_text),), Schema())
+
+    assert claims
+    assert all(len(claim.statement) <= 1800 for claim in claims)
+    assert len(claims) <= 120
+
+
 def test_source_summary_plan_selects_eligible_claim_over_analogy() -> None:
     plan = _plan_for_units(
         (

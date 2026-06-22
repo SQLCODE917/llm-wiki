@@ -27,8 +27,9 @@ from llmwiki.domain.source_claim_quality import (
     is_central_source_summary_claim,
     unit_source_summary_fallback_claims,
 )
+from llmwiki.domain.source_claim_sentences import claim_sentences
+from llmwiki.domain.source_summary import source_summary_claim_requirement
 
-_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
 _SKILL_REFERENCE_RE = re.compile(r"\b([a-z][a-z0-9-]*)\s+skills?\b", re.IGNORECASE)
 _CLASS_OR_PROFESSION_REFERENCE_RE = re.compile(
     r"\b([a-z][a-z0-9-]*)s?\s+(?:is|are)\s+(?:an?\s+)?(?:[a-z0-9-]+\s+){0,4}"
@@ -89,7 +90,7 @@ def source_claims(
     claims: list[SourceClaim] = []
     allowed_roles = {role.tag_name for role in schema.claim_role_tags}
     for unit in units:
-        for index, statement in enumerate(_claim_sentences(unit.text), start=1):
+        for index, statement in enumerate(claim_sentences(unit.text), start=1):
             role_tags = tuple(role for role in claim_role_tags(statement) if role in allowed_roles)
             eligibility = claim_eligibility(statement, role_tags)
             centrality = claim_centrality(statement, unit.heading_path)
@@ -297,6 +298,10 @@ def source_summary_plan(
             selected.append(claim)
 
     selected_ids = tuple(claim.source_claim_id for claim in selected[:_MAX_SOURCE_SUMMARY_CLAIMS])
+    selected_requirements = tuple(
+        source_summary_claim_requirement(claim)
+        for claim in selected[:_MAX_SOURCE_SUMMARY_CLAIMS]
+    )
     selected_roles = tuple(sorted({role for claim in selected for role in claim.claim_role_tags}))
     selected_groups = tuple(
         group.source_claim_group_id
@@ -307,33 +312,12 @@ def source_summary_plan(
         source_summary_plan_id=f"source-summary-plan-{page_id}",
         page_id=page_id,
         selected_source_claims=selected_ids,
+        selected_claim_requirements=selected_requirements,
         required_claim_role_tags=selected_roles,
         required_source_claim_groups=selected_groups,
         required_source_citations=contract.required_source_citations,
         coverage_policy=contract.coverage_policy,
     )
-
-
-def _claim_sentences(text: str) -> tuple[str, ...]:
-    paragraphs: list[str] = []
-    current_lines: list[str] = []
-    for line in text.splitlines():
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            if current_lines:
-                paragraphs.append(" ".join(current_lines))
-                current_lines = []
-            continue
-        current_lines.append(stripped)
-    if current_lines:
-        paragraphs.append(" ".join(current_lines))
-    sentences: list[str] = []
-    for paragraph in paragraphs:
-        for sentence in _SENTENCE_RE.split(paragraph):
-            normalized = " ".join(sentence.split()).strip()
-            if len(tokens(normalized)) >= 3:
-                sentences.append(normalized)
-    return tuple(sentences)
 
 
 def _selection_score(page_terms: frozenset[str], claim: SourceClaim) -> float:

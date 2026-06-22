@@ -1,19 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-6-4-sage-skill
 page_kind: source
-summary: Summary of Sage Skill rules, including language learning limits, monster check mechanics, and other abilities.
+summary: Summary of the Sage Skill section from Sword World RPG - Complete Edition, detailing its abilities and rules.
 sources: raw/Sword World RPG - Complete Edition.pdf p.118-119
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Sage Skill rules from Sword World RPG – Complete Edition Chapter 6.4.
+The sage skill represents a comprehensive understanding and depth of knowledge in all academic fields. Academic fields in _Sword World_ are undifferentiated, and owners of this skill are skilled in all disciplines. Many sorcerers have this skill. There is no requirement that you have to have the sage skill and the sorcerer skill at the same time, but if you _do_ acquire the sage skill and the sorcerer skill at the same time, you will receive a _bonus_ on experience points consumed. For more information, please refer to Chapter 8: Character Growth (see p. 129).
 
 ## Key supported claims
 
-- No requirement to hold both sage and sorcerer skills simultaneously; if acquired together, gain a bonus on experience points consumed (raw/Sword World RPG - Complete Edition.pdf p.118-119).
-- Learning languages via sage skill has limits: must read common before other languages, and read low ancient before additional ones (raw/Sword World RPG - Complete Edition.pdf p.118-119).
-- Game master may judge knowledge based on sage skill level without providing rarity; this method is one option (raw/Sword World RPG - Complete Edition.pdf p.118-119).
-- When a sage sees or hears a monster name, they may discover its true identity, though the result is uncertain (raw/Sword World RPG - Complete Edition.pdf p.118-119).
-- Use sage skill level + intelligence bonus as baseline; success roll against monster rarity reveals the monster if successful (raw/Sword World RPG - Complete Edition.pdf p.118-119).
+- Sage skill represents comprehensive knowledge in all academic fields, unknown if it applies to all disciplines. (raw/Sword World RPG - Complete Edition.pdf p.118-119)

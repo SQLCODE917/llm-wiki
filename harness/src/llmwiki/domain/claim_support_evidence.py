@@ -2,10 +2,13 @@
 
 from __future__ import annotations
 
+import re
 from collections.abc import Sequence
 
 from llmwiki.domain.citations import Citation
 from llmwiki.domain.evidence_registry import EvidenceRecord, EvidenceRegistry, SourceRange
+
+_TERM_RE = re.compile(r"[a-z][a-z0-9-]{2,}")
 
 
 class ClaimSupportEvidenceIndex:
@@ -64,6 +67,24 @@ class ClaimSupportEvidenceIndex:
                 excerpts.append(f"{evidence_id}: {record.excerpt}")
         return tuple(excerpts)
 
+    def excerpts_for_claim(
+        self, evidence_ids: Sequence[str], claim_text: str, limit: int = 3
+    ) -> tuple[str, ...]:
+        query_terms = _terms(claim_text)
+        ranked: list[tuple[int, int, int, str, str]] = []
+        for position, evidence_id in enumerate(dict.fromkeys(evidence_ids)):
+            record = self.records.get(evidence_id)
+            if record is None:
+                continue
+            overlap = len(query_terms & _terms(record.excerpt)) if query_terms else 0
+            source_claim_bonus = 1 if record.source_claim_id else 0
+            ranked.append((overlap, source_claim_bonus, -position, evidence_id, record.excerpt))
+        ranked.sort(reverse=True)
+        return tuple(
+            f"{evidence_id}: {excerpt}"
+            for _, _, _, evidence_id, excerpt in ranked[:limit]
+        )
+
 
 def _records_by_id(registries: Sequence[EvidenceRegistry]) -> dict[str, EvidenceRecord]:
     return {
@@ -90,3 +111,7 @@ def _ranges_by_id(registries: Sequence[EvidenceRegistry]) -> dict[str, SourceRan
         for registry in registries
         for source_range in registry.source_ranges
     }
+
+
+def _terms(text: str) -> frozenset[str]:
+    return frozenset(_TERM_RE.findall(text.lower()))

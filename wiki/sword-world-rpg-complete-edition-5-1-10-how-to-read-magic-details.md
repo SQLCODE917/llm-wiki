@@ -1,19 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details
 page_kind: source
-summary: How to Read Magic Details section covering magic types, rituals, lost spells, and magic detail format.
+summary: Summary of section 5.1.10 How to Read Magic Details from Sword World RPG - Complete Edition
 sources: raw/Sword World RPG - Complete Edition.pdf p.65-67
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This chunk explains how to read magic details, covering illusion mechanics, ritual bonuses, lost spells, and the format of magic detail entries.
+This section explains how to read magic details in the Sword World RPG. It covers illusion magic, ritual magic, and lost spells.
 
 ## Key supported claims
 
-- Among ancient magic, only a handful of sorcerers know certain spells, while others were lost when the kingdom fell. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Ritual procedures are complex; those untrained cannot participate. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Runes from official texts were used in the ancient kingdom, but most are lost; only a few remain. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- If a target lacks the senses to deceive, an illusion spell has no effect. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Once you fail a resistance roll, you cannot detect the illusion again; you might still walk around suspicious floors. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+- Illusion magic affects five senses or pseudo senses, but not magic senses. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+- Illusions can be detected by resistance rolls if the target suspects them, and these rolls can only be made once. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+- Ritual magic enhances spell effects through preparation over days, with bonuses calculated as days times participants. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+- Lost spells are ancient magic known only to a limited number of sorcerers, lost with the fall of the ancient kingdom. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+- Magic details include Base Mental Power Cost, Distance, Area, Duration, Effect, Type, Expansion, and Resist. (raw/Sword World RPG - Complete Edition.pdf p.65-67)

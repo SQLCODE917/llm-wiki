@@ -1,35 +1,31 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A character who falls unconscious with 0 or negative life force from a mercy‑declared attack fails a death check only on double ones (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "bullet_text": "If a character's life force becomes 0 or negative, they fall unconscious and are in danger of dying. (raw/Sword World RPG - Complete Edition.pdf p.50-56)",
       "covered_source_claims": [
-        "source-claim-unit-0010-0055"
+        "source-claim-unit-0010-0005"
       ]
     },
     {
-      "bullet_text": "Ducard II, life force ‑4, must roll a death check (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "bullet_text": "Death checks are made using life force resistance for adventurers. (raw/Sword World RPG - Complete Edition.pdf p.50-56)",
       "covered_source_claims": [
         "source-claim-unit-0010-0008"
       ]
     },
     {
-      "bullet_text": "Failure on a death check leaves a character unconscious unless double ones are rolled (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
+      "bullet_text": "Monsters use life point resistance in death checks. (raw/Sword World RPG - Complete Edition.pdf p.50-56)",
+      "covered_source_claims": []
+    },
+    {
+      "bullet_text": "Mercy can be declared before an attack, affecting death check outcomes. (raw/Sword World RPG - Complete Edition.pdf p.50-56)",
       "covered_source_claims": [
-        "source-claim-unit-0010-0060"
+        "source-claim-unit-0010-0009"
       ]
     },
     {
-      "bullet_text": "Increasing life force by at least 1 point lets a character regain consciousness; otherwise they may die (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
-      "covered_source_claims": [
-        "source-claim-unit-0010-0019"
-      ]
-    },
-    {
-      "bullet_text": "Damage lowers life force, and more damage lowers it further (raw/Sword World RPG - Complete Edition.pdf p.50-56).",
-      "covered_source_claims": [
-        "source-claim-unit-0010-0001"
-      ]
+      "bullet_text": "Life force can be recovered through magic, first aid, or natural recovery. (raw/Sword World RPG - Complete Edition.pdf p.50-56)",
+      "covered_source_claims": []
     }
   ],
-  "source_record_text": "Section 4.9 covers unconsciousness, death checks, mercy, and life force recovery rules."
+  "source_record_text": "This section covers the rules for unconsciousness and death checks in the Sword World RPG. When a character or monster's life force (points) is reduced to 0 or below, they fall unconscious and are in danger of dying. Death checks are required to determine survival, with different rules for adventurers and monsters. Mercy can be declared when attacking, which affects the death check outcome. The section also details how life force can be recovered through magic, first aid, or natural recovery."
 }

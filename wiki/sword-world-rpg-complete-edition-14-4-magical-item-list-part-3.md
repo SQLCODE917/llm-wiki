@@ -1,18 +1,19 @@
 ---
 page_id: sword-world-rpg-complete-edition-14-4-magical-item-list-part-3
 page_kind: source
-summary: 14.4 Magical Item List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Magical items list part 3 from Sword World RPG - Complete Edition, pages 242-260
 sources: raw/Sword World RPG - Complete Edition.pdf p.242-260
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This chunk lists magical items such as Guard Glove, Candlestick of Infinite (Un)Luck, and others, and discusses rules for transporting, buying, and trading magical items.
+This section lists various magical items from the Sword World RPG - Complete Edition, detailing their properties, rarity, enchanter, and base trade price. It includes items such as the Guard Glove, Candlestick of Infinite (Un)Luck, Crystal Orb of Clairvoyance, and many others, each with unique magical effects and limitations. Some aspects are unknown.
 
 ## Key supported claims
 
-- Upon closer examination, a request to transport an item may turn out to be stolen goods and must be returned to its rightful owner (raw/Sword World RPG - Complete Edition.pdf p.242-260).
-- Otherwise, adventurers with money could buy up this item, potentially affecting game balance (raw/Sword World RPG - Complete Edition.pdf p.242-260).
-- Even if the game master approves the trade of magical items, this item should be considered in short supply, nearly impossible to find, and not for trade (raw/Sword World RPG - Complete Edition.pdf p.242-260).
+- Guard Glove generates force field like shield, with small or large options (raw/Sword World RPG - Complete Edition.pdf p.242-260).
+- Candlestick of Infinite (Un)Luck grants luck, but misfortune if candle goes out (raw/Sword World RPG - Complete Edition.pdf p.242-260).
+- Crystal Orb of Clairvoyance shows places around world, limited by magical power (raw/Sword World RPG - Complete Edition.pdf p.242-260).
+- Gale Horseshoes increase horse movement speed by 10 (raw/Sword World RPG - Complete Edition.pdf p.242-260).

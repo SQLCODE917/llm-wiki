@@ -1,19 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-8-plants
 page_kind: source
-summary: 13.2.8 Plants from raw/Sword World RPG - Complete Edition.pdf.
+summary: Summary of the Plants section (13.2.8) from Sword World RPG - Complete Edition, covering killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune.
 sources: raw/Sword World RPG - Complete Edition.pdf p.212-213
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Plants monsters may have fire weakness, intellect, and spirit magic use.
+This section describes various plant-based monsters in the Sword World RPG setting, including killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune.
 
 ## Key supported claims
 
-- Plants are weak to fire, granting a +10 bonus when using spells like _Fire Weapon_ or _Fire Bolt_ (raw/Sword World RPG - Complete Edition.pdf p.212-213).
-- An ethnoa is a ~3‑meter‑tall plant with six tentacles and a large, acid‑filled pouch (raw/Sword World RPG - Complete Edition.pdf p.212-213).
-- Despite being plants, some have intellect and can wield spirit magic from dryads or gnomes (raw/Sword World RPG - Complete Edition.pdf p.212-213).
-- A mandrake grows underground, then emerges around age seven, walking and possessing human‑shaped roots (raw/Sword World RPG - Complete Edition.pdf p.212-213).
+- The killer octopus is an aggressive aquatic monster that uses its tentacles to strangle prey, following strangling rules (raw/Sword World RPG - Complete Edition.pdf p.212-213).
+- The giant octopus is a legendary sea monster with up to 10-meter tentacles, capable of entangling boats and attacking multiple targets with strangling attacks (raw/Sword World RPG - Complete Edition.pdf p.212-213).
+- Creeping trees are plant-based monsters that move on roots like imitation toes and use tentacle-like branches to attack, with weak resistance to fire and no human-like minds (raw/Sword World RPG - Complete Edition.pdf p.212-213).

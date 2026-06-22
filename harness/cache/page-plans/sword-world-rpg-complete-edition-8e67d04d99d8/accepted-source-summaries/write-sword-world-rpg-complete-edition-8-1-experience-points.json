@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "**Experience points** are points given to characters as an indicator of how much experience they have gained as a result of their adventures. (raw/Sword World RPG - Complete Edition.pdf p.130-135)",
+      "bullet_text": "Experience points indicate character growth and are gained after adventures (raw/Sword World RPG - Complete Edition.pdf p.130-135).",
       "covered_source_claims": [
         "source-claim-unit-0030-0001"
       ]
     },
     {
-      "bullet_text": "The experience points required to increase each skill are shown on Table 8‑1: Experience Points by Skill. (raw/Sword World RPG - Complete Edition.pdf p.130-135)",
+      "bullet_text": "Characters can spend experience points to increase any number of skills by any number of levels at once, up to 10th level (raw/Sword World RPG - Complete Edition.pdf p.130-135).",
       "covered_source_claims": [
-        "source-claim-unit-0030-0007"
+        "source-claim-unit-0030-0002"
       ]
     },
     {
-      "bullet_text": "In any case, a character's skill level can only reach 10th level. (raw/Sword World RPG - Complete Edition.pdf p.130-135)",
+      "bullet_text": "The experience points required to increase each skill are shown in Table 8-1: Experience Points by Skill (raw/Sword World RPG - Complete Edition.pdf p.130-135).",
       "covered_source_claims": [
-        "source-claim-unit-0030-0006"
+        "source-claim-unit-0030-0020"
       ]
     },
     {
-      "bullet_text": "When a character who does not have either the sorcerer skill or the sage skill newly acquires a 1st level sorcerer skill, they can also acquire a 1st level sage skill at the same time without spending experience points. (raw/Sword World RPG - Complete Edition.pdf p.130-135)",
+      "bullet_text": "Experience points cannot be negative and cannot be sold back for points (raw/Sword World RPG - Complete Edition.pdf p.130-135).",
       "covered_source_claims": [
-        "source-claim-unit-0030-0076"
+        "source-claim-unit-0030-0065"
       ]
     },
     {
-      "bullet_text": "It may seem strange to carry over experience, but think of it as cutting off the adventurer's growth by the amount of experience points carried over for now. (raw/Sword World RPG - Complete Edition.pdf p.130-135)",
+      "bullet_text": "When a character has both sorcerer and sage skills, fewer experience points are required to acquire both (raw/Sword World RPG - Complete Edition.pdf p.130-135).",
       "covered_source_claims": [
-        "source-claim-unit-0030-0017"
+        "source-claim-unit-0030-0009"
       ]
     }
   ],
-  "source_record_text": "Experience Points rules for allocating points to skill and ability advancement, including special handling for sorcerer and sage skills."
+  "source_record_text": "Chapter 8.1 of Sword World RPG - Complete Edition covers the experience points system, including how characters gain experience, spend points to increase skill levels, and the specific requirements for different skills as shown in Table 8-1."
 }

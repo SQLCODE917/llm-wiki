@@ -8,6 +8,10 @@ from llmwiki.domain.planning_analysis import tokens
 
 
 def is_source_furniture(lowered: str) -> bool:
+    if ("to the left of" in lowered or "to the right of" in lowered) and "field" in lowered:
+        return True
+    if "field to write" in lowered or "field labeled" in lowered:
+        return True
     furniture_patterns = (
         r"©",
         r"\(c\)",
@@ -88,5 +92,6 @@ def is_narrative_frame(lowered: str) -> bool:
         r"\bbob was well-known\b",
         r"\bblind dating\b",
         r"\bclients often needed experience\b",
+        r"\basks (?:us|you) to\b",
     )
     return any(re.search(pattern, lowered) for pattern in narrative_patterns)

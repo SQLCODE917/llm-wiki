@@ -108,6 +108,78 @@ def test_source_summary_candidates_include_page_citation_evidence() -> None:
     assert "evidence-broad" in selection.candidates[0].evidence_ids
 
 
+def test_source_summary_excerpts_rank_citation_evidence_by_claim_terms() -> None:
+    source = source_text_from_text(
+        "alpha.md",
+        "A character sheet stores notes.\n"
+        "Players choose a race such as human, dwarf, grassrunner, elf, or half-elf.\n",
+    )
+    source_range = SourceRange(
+        source_range_id="range-alpha",
+        page_id="alpha",
+        source_locator="alpha.md",
+        page_range=None,
+        line_range=(1, source.line_count),
+        heading_path="Alpha",
+    )
+    registry = EvidenceRegistry(
+        registry_id="registry-alpha",
+        source_texts=(source,),
+        source_ranges=(source_range,),
+        evidence_records=(
+            EvidenceRecord(
+                evidence_id="evidence-irrelevant",
+                source_locator="alpha.md",
+                source_hash=source.source_hash,
+                source_range_id=source_range.source_range_id,
+                line_range=(1, 1),
+                excerpt="A character sheet stores notes.",
+                excerpt_digest="irrelevant",
+                evidence_kind="citation",
+            ),
+            EvidenceRecord(
+                evidence_id="evidence-races",
+                source_locator="alpha.md",
+                source_hash=source.source_hash,
+                source_range_id=source_range.source_range_id,
+                line_range=(2, 2),
+                excerpt=(
+                    "Players choose a race such as human, dwarf, grassrunner, elf, "
+                    "or half-elf."
+                ),
+                excerpt_digest="races",
+                evidence_kind="citation",
+            ),
+        ),
+    )
+
+    selection = select_claim_support_candidates(
+        {
+            "alpha": _page_text(
+                "alpha",
+                "Players choose a race such as human, dwarf, grassrunner, elf, "
+                "or half-elf. (raw/alpha.md)",
+            )
+        },
+        _inventory("alpha.md"),
+        (registry,),
+        (
+            _artifact(
+                "alpha.md",
+                "alpha",
+                SourceSummaryBullet(
+                    "Players choose a race such as human, dwarf, grassrunner, elf, "
+                    "or half-elf. (raw/alpha.md)",
+                    ("stale-claim-id",),
+                ),
+            ),
+        ),
+        max_claims=1,
+    )
+
+    assert selection.candidates[0].evidence_excerpts[0].startswith("evidence-races:")
+
+
 def test_selector_builds_prose_candidates_and_source_filter() -> None:
     selection = select_claim_support_candidates(
         {

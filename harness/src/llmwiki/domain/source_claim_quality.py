@@ -144,6 +144,11 @@ _ROLE_PATTERNS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("attribute", (r"\bhas\b", r"\bhave\b", r"\bcontains\b", r"\bhoused\b", r"\bsize\b")),
     ("open-question", (r"\bopen question\b", r"\bunclear\b", r"\bunresolved\b")),
 )
+_ROLE_SCAN_CHAR_LIMIT = 4096
+_ROLE_REGEXES = tuple(
+    (role, tuple(re.compile(pattern) for pattern in patterns))
+    for role, patterns in _ROLE_PATTERNS
+)
 
 _ROLE_WEIGHTS = {
     "source-uncertainty": 0.30,
@@ -167,12 +172,12 @@ _ROLE_WEIGHTS = {
 
 
 def claim_role_tags(statement: str) -> tuple[str, ...]:
-    lowered = statement.lower()
+    lowered = statement.lower()[:_ROLE_SCAN_CHAR_LIMIT]
     return tuple(
         dict.fromkeys(
             role
-            for role, patterns in _ROLE_PATTERNS
-            if any(re.search(pattern, lowered) for pattern in patterns)
+            for role, patterns in _ROLE_REGEXES
+            if any(pattern.search(lowered) for pattern in patterns)
         )
     )
 

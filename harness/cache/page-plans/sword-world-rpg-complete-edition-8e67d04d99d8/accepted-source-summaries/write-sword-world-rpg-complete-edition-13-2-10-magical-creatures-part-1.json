@@ -1,35 +1,11 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A bone servant is a puppet golem made from the bones of living creatures, mimicking enemy humanoids but lacking magical power (may act independently) (raw/Sword World RPG - Complete Edition.pdf p.222-227)",
+      "bullet_text": "Simulacra guard non-magical people (raw/Sword World RPG - Complete Edition.pdf p.222-227).",
       "covered_source_claims": [
-        "source-claim-unit-0053-0070"
-      ]
-    },
-    {
-      "bullet_text": "If no animal carcasses are nearby, failed creations such as blobs may also attempt to kill living creatures and turn them into corpses (suggests environmental influence) (raw/Sword World RPG - Complete Edition.pdf p.222-227)",
-      "covered_source_claims": [
-        "source-claim-unit-0053-0181"
-      ]
-    },
-    {
-      "bullet_text": "A gargoyle is a species of golem that takes the form of a statue brought to life through magic, with flexible movements resembling those of a living creature (raw/Sword World RPG - Complete Edition.pdf p.222-227)",
-      "covered_source_claims": [
-        "source-claim-unit-0053-0140"
-      ]
-    },
-    {
-      "bullet_text": "Failed creations such as gizmos arise from failed attempts at building stalkers, becoming gaseous creatures that continue to live in present day Forcelia (uncertain whether all gizmos share this origin) (raw/Sword World RPG - Complete Edition.pdf p.222-227)",
-      "covered_source_claims": [
-        "source-claim-unit-0053-0174"
-      ]
-    },
-    {
-      "bullet_text": "An unnamed black, slimy, amorphous creature with no intellect attacks all living things, possibly related to blobs or gizmos (raw/Sword World RPG - Complete Edition.pdf p.222-227)",
-      "covered_source_claims": [
-        "source-claim-unit-0053-0035"
+        "source-claim-unit-0053-0005"
       ]
     }
   ],
-  "source_record_text": "This section describes various magical creature types, including golems, homunculi, blobs, puppet golems, imitators, and other anomalous beings."
+  "source_record_text": "Magical creatures from Sword World RPG - Complete Edition, section 13.2.10, pages 222-227."
 }

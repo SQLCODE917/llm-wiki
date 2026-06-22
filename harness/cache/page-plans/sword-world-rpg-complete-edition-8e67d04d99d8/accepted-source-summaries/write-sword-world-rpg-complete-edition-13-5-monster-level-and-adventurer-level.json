@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A monster level’s score is set so that if it equals a character’s adventurer level, the character will be stronger. (raw/Sword World RPG - Complete Edition.pdf p.234-234)",
+      "bullet_text": "Monster level is a rough guide to strength when appearing in a scenario (raw/Sword World RPG - Complete Edition.pdf p.234-234).",
+      "covered_source_claims": [
+        "source-claim-unit-0056-0020"
+      ]
+    },
+    {
+      "bullet_text": "If monster level equals adventurer level, the character will be stronger (raw/Sword World RPG - Complete Edition.pdf p.234-234).",
       "covered_source_claims": [
         "source-claim-unit-0056-0021"
       ]
     },
     {
-      "bullet_text": "To model monsters like featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, the sub‑ability scores are calculated as shown. (raw/Sword World RPG - Complete Edition.pdf p.234-234)",
+      "bullet_text": "Monster level scores are set so that 1-2 levels higher means evenly matched, 3 levels higher means formidable enemy (raw/Sword World RPG - Complete Edition.pdf p.234-234).",
       "covered_source_claims": [
         "source-claim-unit-0056-0014"
       ]
     },
     {
-      "bullet_text": "Encounter scales: Level 5‑6—too spicy for a novice; Level 7‑8—difficult unless moderate; Level 9‑10—city‑wide crisis; Level 11‑13—nation‑wide crisis; Level 14‑15—Alecrast‑wide crisis. (raw/Sword World RPG - Complete Edition.pdf p.234-234)",
-      "covered_source_claims": [
-        "source-claim-unit-0056-0027"
-      ]
-    },
-    {
-      "bullet_text": "If a monster is 1‑2 levels higher, it matches the character; if 3 levels higher, it is formidable. (raw/Sword World RPG - Complete Edition.pdf p.234-234)",
-      "covered_source_claims": [
-        "source-claim-unit-0056-0022"
-      ]
-    },
-    {
-      "bullet_text": "When added to a scenario, enemies same or one level lower appear frequently; 2‑3 levels higher appear at the climax. (raw/Sword World RPG - Complete Edition.pdf p.234-234)",
+      "bullet_text": "Enemies of same or 1 level lower appear frequently, 2-3 levels greater at climax (raw/Sword World RPG - Complete Edition.pdf p.234-234).",
       "covered_source_claims": [
         "source-claim-unit-0056-0023"
       ]
+    },
+    {
+      "bullet_text": "A crisis in a small village occurs at level 2-4, while a city-wide crisis is at level 9-10 (raw/Sword World RPG - Complete Edition.pdf p.234-234).",
+      "covered_source_claims": [
+        "source-claim-unit-0056-0027"
+      ]
     }
   ],
-  "source_record_text": "This section explains how monster levels relate to adventurer levels and provides guidance on encounter scaling."
+  "source_record_text": "Monster Level and Adventurer Level rules for the Sword World RPG - Complete Edition, including level comparisons and scenario scaling."
 }

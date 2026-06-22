@@ -1,19 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-7-animals-part-1
 page_kind: source
-summary: Source summary of animals section (wolves, giant rat, hanger leg)
+summary: Summary of the Animals (part 1) section from Sword World RPG - Complete Edition, covering monsters like wolves, giant rats, and hanger legs.
 sources: raw/Sword World RPG - Complete Edition.pdf p.199-211
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section covers a variety of animal monsters in the Sword World setting, detailing stats, behavior, and special abilities.
+This section details various animals found in the Sword World RPG setting, including their characteristics, behaviors, and combat stats. It covers creatures such as wolves, giant rats, hanger legs, eagles, and more, providing insight into their monster levels, rarity, movement speeds, attack points, and special abilities.
 
 ## Key supported claims
 
-- Wolves attack animals that are separated from their herd, avoiding stronger foes. (raw/Sword World RPG - Complete Edition.pdf p.199-211)
-- Omnivorous wolves eat small prey and may target livestock or humans when starving. (raw/Sword World RPG - Complete Edition.pdf p.199-211)
-- The hanger leg is a headless octopus‑like parasite that infects large animals, indistinguishable by sex. (raw/Sword World RPG - Complete Edition.pdf p.199-211)
-- Wolf: level 1, rarity 5, agility 16, movement speed 24. (raw/Sword World RPG - Complete Edition.pdf p.199-211)
-- Giant rat: moderate frequency, neutral animal intellect, disease (Intensity 5). (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+- Wolves are carnivorous and usually act in packs of several to several dozen, with moderate rarity (raw/Sword World RPG - Complete Edition.pdf p.199-211).
+- Giant rats are intelligent and dexterous, and thus can stand on their hind legs and use simple tools, with a disease ability (raw/Sword World RPG - Complete Edition.pdf p.199-211).
+- Hanger legs are vicious parasites that live by taking over the bodies of large animals, with a parasitism ability (raw/Sword World RPG - Complete Edition.pdf p.199-211).

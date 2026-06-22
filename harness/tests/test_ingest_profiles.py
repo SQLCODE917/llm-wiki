@@ -545,6 +545,75 @@ class TestProfiledWorkflows:
         assert "[[beta]] — Functions" in hub
         assert "[[gamma]] — Objects" in hub
 
+    def test_pdf_integrate_preserves_explained_grouped_navigation(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="javascriptallonge.pdf",
+            required_link_targets=("alpha", "beta", "gamma"),
+            required_page_map_entries=(
+                ("alpha", "Opening"),
+                ("beta", "Functions"),
+                ("gamma", "Objects"),
+            ),
+            min_required_links=3,
+        )
+        _plan_page(workflow, "javascriptallonge", summary="Hub.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub.",
+            page_body=(
+                "JavaScript Allongé covers programming patterns.\n\n"
+                "## Functions\n\n"
+                "These chapters focus on callable values and closure behavior.\n\n"
+                "- [[alpha]]\n"
+                "- [[beta]]\n\n"
+                "## Objects\n\n"
+                "This chapter covers object composition.\n\n"
+                "- [[gamma]]"
+            ),
+        )
+
+        hub = store.read_page("javascriptallonge")
+        assert "## Functions" in hub
+        assert "callable values and closure behavior" in hub
+        assert "## Objects" in hub
+        assert "## Page-Map Navigation" not in hub
+
+    def test_pdf_integrate_preserves_labeled_grouped_navigation(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="javascriptallonge.pdf",
+            required_link_targets=("javascriptallonge-functions", "javascriptallonge-objects"),
+            required_page_map_entries=(
+                ("javascriptallonge-functions", "Functions"),
+                ("javascriptallonge-objects", "Objects"),
+            ),
+            min_required_links=2,
+        )
+        _plan_page(workflow, "javascriptallonge", summary="Hub.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub.",
+            page_body=(
+                "JavaScript Allongé covers functions and objects.\n\n"
+                "## Functions\n\n"
+                "- [[javascriptallonge-functions]]\n\n"
+                "## Objects\n\n"
+                "- [[javascriptallonge-objects]]"
+            ),
+        )
+
+        hub = store.read_page("javascriptallonge")
+        assert "## Functions" in hub
+        assert "## Objects" in hub
+        assert "## Page-Map Navigation" not in hub
+
     def test_pdf_integrate_renders_source_summary_fields_as_hub_body(
         self, store: WikiStore
     ) -> None:
@@ -587,6 +656,32 @@ class TestProfiledWorkflows:
         assert "[[alpha]]" in hub
         assert "[[beta]] — Rules" in hub
         assert "[[gamma]] — Catalog" in hub
+
+    def test_pdf_integrate_ignores_partial_source_summary_fields_when_page_body_exists(
+        self, store: WikiStore
+    ) -> None:
+        workflow = build_integrate_workflow(
+            store,
+            "2026-06-16",
+            source_locator="javascriptallonge.pdf",
+            required_link_targets=("javascriptallonge-functions",),
+            required_page_map_entries=(("javascriptallonge-functions", "Functions"),),
+            min_required_links=1,
+        )
+        _plan_page(workflow, "javascriptallonge", summary="Hub summary.")
+
+        workflow.tools["write_page"].callable(
+            summary="Hub summary.",
+            page_body="Allongé hub links [[javascriptallonge-functions]].",
+            source_record_text="Stray incomplete source record.",
+            claim_bullets=[],
+            sources=["javascriptallonge.pdf"],
+        )
+
+        hub = store.read_page("javascriptallonge")
+        assert "Allongé hub links [[javascriptallonge-functions]]." in hub
+        assert "Stray incomplete source record." not in hub
+        assert "## Source record" not in hub
 
     def test_pdf_integrate_rewrites_existing_fixed_hub_without_model_read(
         self, store: WikiStore

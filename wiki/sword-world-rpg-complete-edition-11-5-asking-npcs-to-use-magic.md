@@ -1,19 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic
 page_kind: source
-summary: Source summary of section 11.5 on requesting NPCs to use magic.
+summary: Rules for asking NPCs to use magic in Sword World RPG, including costs, availability, and requirements for different magic spells.
 sources: raw/Sword World RPG - Complete Edition.pdf p.154-158
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Section 11.5 describes requesting NPCs to cast spells, costs, and availability limits.
+This section details the rules for adventurers requesting magic services from NPCs in the Sword World RPG, covering availability, costs, and requirements for various spells.
 
 ## Key supported claims
 
-- Adventurers may sometimes need NPCs to save them from dire situations beyond their control (raw/Sword World RPG - Complete Edition.pdf p.154-158).
-- Casting Resurrection normally requires 10×45×20=9,000 gamels for a priest of level 10 (raw/Sword World RPG - Complete Edition.pdf p.154-158).
-- NPCs can offer services such as Remove Curse, Resurrection, and Analyze Enchantment to appraise items (raw/Sword World RPG - Complete Edition.pdf p.154-158).
-- NPCs generally cannot cast magic using ordinary words and may refuse service (raw/Sword World RPG - Complete Edition.pdf p.154-158).
-- Table 11‑2 shows NPC presence by level, helping determine how many rune masters exist for each adventurer level (raw/Sword World RPG - Complete Edition.pdf p.154-158).
+- Adventurers may request magic from NPCs for services like Remove Curse, Resurrection, or Analyze Enchantment (raw/Sword World RPG - Complete Edition.pdf p.154-158).
+- NPC magic services are not always available and are not free (raw/Sword World RPG - Complete Edition.pdf p.154-158).
+- Cost of services is based on NPC's skill level, base mental power cost, and a multiplier of 20 (raw/Sword World RPG - Complete Edition.pdf p.154-158).

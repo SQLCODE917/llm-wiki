@@ -7,6 +7,7 @@ import math
 import re
 from collections import Counter
 
+from llmwiki.domain.bounded_text import paragraphs, sentence_fragments, text_windows
 from llmwiki.domain.objects import (
     CandidateClaim,
     CandidateEntity,
@@ -22,8 +23,13 @@ from llmwiki.domain.objects import (
 from llmwiki.domain.pages import slugify
 
 _TOKEN_RE = re.compile(r"[a-z][a-z0-9-]{2,}")
-_SENTENCE_RE = re.compile(r"(?<=[.!?])\s+")
 _MATCH_THRESHOLD = 0.12
+_EMBEDDING_TOKEN_LIMIT = 4096
+_TOKEN_RESULT_LIMIT = 12000
+_CLAIM_PARAGRAPH_CHAR_LIMIT = 12_000
+_CLAIM_SENTENCE_CHAR_LIMIT = 1_800
+_CLAIMS_PER_UNIT_LIMIT = 120
+_ENTITY_SCAN_CHAR_LIMIT = 12_000
 _STOP_WORDS = frozenset(
     {
         "about",
@@ -103,16 +109,20 @@ def candidate_topics(
     counts: Counter[str] = Counter()
     for unit in units:
         counts.update(tokens(f"{unit.heading_path} {unit.text}"))
-    return tuple(
-        CandidateTopic(
-            topic_id=f"topic-{term}",
-            label=term,
-            candidate_claims=tuple(
-                claim.claim_id for claim in claims if term in tokens(claim.statement)
-            ),
+    claim_terms = {claim.claim_id: frozenset(tokens(claim.statement)) for claim in claims}
+    topics: list[CandidateTopic] = []
+    for term, _ in counts.most_common(16):
+        topic_claims = tuple(
+            claim.claim_id for claim in claims if term in claim_terms[claim.claim_id]
         )
-        for term, _ in counts.most_common(16)
-    )
+        topics.append(
+            CandidateTopic(
+                topic_id=f"topic-{term}",
+                label=term,
+                candidate_claims=topic_claims,
+            )
+        )
+    return tuple(topics)
 
 
 def candidate_entities(
@@ -120,7 +130,12 @@ def candidate_entities(
 ) -> tuple[CandidateEntity, ...]:
     labels: Counter[str] = Counter()
     for unit in units:
-        labels.update(re.findall(r"\b[A-Z][A-Za-z0-9]+(?:\s+[A-Z][A-Za-z0-9]+){0,2}\b", unit.text))
+        labels.update(
+            re.findall(
+                r"\b[A-Z][A-Za-z0-9]+(?:\s+[A-Z][A-Za-z0-9]+){0,2}\b",
+                unit.text[:_ENTITY_SCAN_CHAR_LIMIT],
+            )
+        )
     return tuple(
         CandidateEntity(
             entity_id=f"entity-{slugify(label)}",
@@ -225,8 +240,11 @@ def unit_match(match: WikiMatch, unit_id: str) -> bool:
 
 
 def embedding(text: str) -> dict[str, float]:
-    counts = Counter(tokens(text))
-    norm = math.sqrt(sum(value * value for value in counts.values()))
+    counts = Counter(tokens(text)[:_EMBEDDING_TOKEN_LIMIT])
+    total = 0.0
+    for value in counts.values():
+        total += value * value
+    norm = math.sqrt(total)
     if not norm:
         return {}
     return {key: value / norm for key, value in counts.items()}
@@ -236,11 +254,22 @@ def cosine(a: dict[str, float], b: dict[str, float]) -> float:
     if not a or not b:
         return 0.0
     small, large = (a, b) if len(a) <= len(b) else (b, a)
-    return sum(value * large.get(key, 0.0) for key, value in small.items())
+    score = 0.0
+    for key, value in small.items():
+        score += value * large.get(key, 0.0)
+    return score
 
 
 def tokens(text: str) -> tuple[str, ...]:
-    return tuple(token for token in _TOKEN_RE.findall(text.lower()) if token not in _STOP_WORDS)
+    result: list[str] = []
+    for match in _TOKEN_RE.finditer(text.lower()):
+        token = match.group(0)
+        if token in _STOP_WORDS:
+            continue
+        result.append(token)
+        if len(result) >= _TOKEN_RESULT_LIMIT:
+            break
+    return tuple(result)
 
 
 def top_terms(text: str, limit: int) -> tuple[str, ...]:
@@ -254,22 +283,13 @@ def excerpt(text: str) -> str:
 
 
 def _claim_sentences(text: str) -> tuple[str, ...]:
-    paragraphs = []
-    current: list[str] = []
-    for line in text.splitlines():
-        stripped = line.strip()
-        if not stripped or stripped.startswith("#"):
-            if current:
-                paragraphs.append(" ".join(current))
-                current = []
-            continue
-        current.append(stripped)
-    if current:
-        paragraphs.append(" ".join(current))
     sentences: list[str] = []
-    for paragraph in paragraphs:
-        for sentence in _SENTENCE_RE.split(paragraph):
-            normalized = " ".join(sentence.split()).strip()
-            if len(tokens(normalized)) >= 3:
-                sentences.append(normalized)
+    for paragraph in paragraphs(text, _CLAIM_PARAGRAPH_CHAR_LIMIT):
+        for sentence in sentence_fragments(paragraph):
+            for fragment in text_windows(sentence, _CLAIM_SENTENCE_CHAR_LIMIT):
+                normalized = " ".join(fragment.split()).strip()
+                if len(tokens(normalized)) >= 3:
+                    sentences.append(normalized)
+                    if len(sentences) >= _CLAIMS_PER_UNIT_LIMIT:
+                        return tuple(sentences)
     return tuple(sentences)

@@ -2663,3 +2663,238 @@ Verdicts recorded: 1
 ## Caveat
 
 This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] pages | sword-world-rpg-complete-edition-1-3-skills, sword-world-rpg-complete-edition-1…
+Deleted [[sword-world-rpg-complete-edition-1-3-skills]], [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]], [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]], [[sword-world-rpg-complete-edition-10-3-surprise-attacks]], [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]], [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]], [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]], [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]], [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]], [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]], [[sword-world-rpg-complete-edition-13-1-types-of-monsters]], [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]], [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]], [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]], [[sword-world-rpg-complete-edition-13-2-12-humans]], [[sword-world-rpg-complete-edition-13-2-2-fae]], [[sword-world-rpg-complete-edition-13-2-4-spirits]], [[sword-world-rpg-complete-edition-13-2-5-titans]], [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]], [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]], [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]], [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]], [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]], [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]], [[sword-world-rpg-complete-edition-13-2-8-plants]], [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]], [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]], [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]], [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]], [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]], [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]], [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]], [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]], [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]], [[sword-world-rpg-complete-edition-16-5-combat-options]], [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]], [[sword-world-rpg-complete-edition-17-2-lost-spells]], [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]], [[sword-world-rpg-complete-edition-2-3-checks]], [[sword-world-rpg-complete-edition-2-7-resistance-rolls]], [[sword-world-rpg-complete-edition-3-4-movement-and-actions]], [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]], [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]], [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]], [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]], [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]], [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]], [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]], [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]], [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]], [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]], [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]], [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]], [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]], [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]], [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]], [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]], [[sword-world-rpg-complete-edition-5-3-spellsongs]], [[sword-world-rpg-complete-edition-6-2-thief-skill]], [[sword-world-rpg-complete-edition-6-4-sage-skill]], [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]], [[sword-world-rpg-complete-edition-7-2-merchant-skill]], [[sword-world-rpg-complete-edition-8-1-experience-points]], [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]], [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]], [[sword-world-rpg-complete-edition-charts]], [[sword-world-rpg-complete-edition-front-matter]], [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]], [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]], [[sword-world-rpg-complete-edition]] and removed their index entries.
+
+## [2026-06-22] pages | sword-world-rpg-complete-edition-2-3-checks, sword-world-rpg-complete-edition-b…
+Deleted [[sword-world-rpg-complete-edition-2-3-checks]], [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]], [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]], [[sword-world-rpg-complete-edition-1-3-skills]], [[sword-world-rpg-complete-edition-front-matter]], [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] and removed their index entries.
+
+## [2026-06-22] query | Does the wiki mention Sword World?
+The wiki does mention "Sword World" in the context of the "Sword World RPG - Complete Edition". There are multiple pages related to this RPG setting, including sections on magic types, monster catalogs, character creation, combat rules, and more. However, there is no general overview or dedicated page for "Sword World" as a concept or entity in the wiki. The entries are specific to the RPG rules and content.
+
+If you are looking for a specific aspect of Sword World, such as magic types, monsters, or character creation, I can provide more details based on the available pages. Let me know how you'd like to proceed.
+
+## [2026-06-22] ingest | Sword World RPG - Complete Edition.pdf
+The hub source page 'sword-world-rpg-complete-edition' has been created and links all major rulebook sections. The page is organized into Player Rules, Game Master Guidance, Optional Rules, Charts, and Setting/lore sections, providing comprehensive navigation for the *Sword World RPG - Complete Edition*.
+
+## [2026-06-22] ingest | Sword World RPG - Complete Edition.pdf
+The hub source page 'sword-world-rpg-complete-edition' has been created and updated to link all major rules areas, catalogs, charts, and setting sections from the 69 chunks of the 'Sword World RPG - Complete Edition' rulebook. The page structure includes sections for Player Rules, Magic, Monster Catalog, Treasure and Items, Setting, Charts and Reference, and Optional Rules, with appropriate cross-links to the relevant chunk pages.
+
+## [2026-06-22] ingest | Sword World RPG - Complete Edition.pdf
+The hub source page 'sword-world-rpg-complete-edition' has been created and updated with links to all major rule sections, catalogs, and setting details from the 69 chunks. The page structure includes sections for Player Rules, Magic, Monster Catalog, Treasure and Items, Setting Details, and Optional Rules, with cross-links to all relevant chunk pages as per the machine-recorded page map.
+
+## [2026-06-22] graph | wiki graph
+Graph export: current
+Nodes: 262
+Edges: 261
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-22] ingest-confidence | Sword World RPG - Complete Edition.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-145349
+Source: raw/Sword World RPG - Complete Edition.pdf
+Confidence status: failed
+Blockers: 2
+Warnings: 1
+Gates: 9
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/e5870dca757ef182` (source hash matches; fingerprint e5870dca757ef182)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/page-plan.json` (parsed persisted PagePlan artifact; fingerprint fc7995e6a6e90887)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-registry.json` (fingerprint is missing or invalid; fingerprint fc7995e6a6e90887)
+- evidence-locators: missing `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-locators.json` (artifact is missing; fingerprint fc7995e6a6e90887)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: fail
+- Findings: validation-finding-809aee6479c8af75
+Selected ineligible claims: 3
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 70
+Evidence records: 7913
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Locators: 7425
+Stable locators: 7425
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: fail
+- Findings: validation-finding-0587b35f7c573e94, validation-finding-b81564305b2c0b2b, validation-finding-af7cfcda0b2b6a73, validation-finding-92ecd6fb68acde19, validation-finding-f64ea71752b0a93b
+Claim candidates discovered: 232
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 227
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Selected source-summary claims include ineligible claims. Count: 3.
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpt "In addition to ability scores, _Sword World RPG_ also uses numeric values called **skills** to describe the characteristics of characters." directly supports the claim that skills describe character characteristics. However, the excerpt does not explicitly state that skills have greater impact than ability scores, which is part of the full claim. The claim is partially supported but not fully substantiated by the provided evidence. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-1
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpt "Skills have a greater impact on a character's actions than ability scores." directly supports the claim that skills have a greater impact than ability scores. This excerpt provides explicit backing for the core assertion of the claim. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-2
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpt "So instead of _someone who has the fighter skill_ , they are simply called _fighters_ ." directly supports the claim that people with the fighter skill are simply called fighters. This excerpt provides explicit backing for the core assertion of the claim. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-3
+- BLOCKER claim-support sword-world-rpg-complete-edition-1-4-character-creation-part-1: not_supported: The evidence excerpts do not contain any information about players choosing races such as human, dwarf, grassrunner, elf, or half-elf. The excerpts focus on character creation process and sheets but do not mention specific races or their traits and limitations. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-4-character-creation-part-1-1
+- BLOCKER claim-support sword-world-rpg-complete-edition-1-4-character-creation-part-1: not_supported: The evidence excerpts do not contain any information about specific ability score averages for each race or about humans having the most average scores. The excerpts focus on character creation process and sheets but do not mention specific ability score averages or racial differences in scores. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-4-character-creation-part-1-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | Sword World RPG - Complete Edition.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-145613
+Source: raw/Sword World RPG - Complete Edition.pdf
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 1
+Gates: 9
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/e5870dca757ef182` (source hash matches; fingerprint e5870dca757ef182)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/page-plan.json` (fingerprint matches; fingerprint fc7995e6a6e90887)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-registry.json` (fingerprint matches; fingerprint fc7995e6a6e90887)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-locators.json` (fingerprint matches; fingerprint fc7995e6a6e90887)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: fail
+- Findings: validation-finding-809aee6479c8af75
+Selected ineligible claims: 3
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 70
+Evidence records: 7913
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Locators: 7425
+Stable locators: 7425
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: validation-finding-a51dc29d9c93f520, validation-finding-a3060a3abbcd436e, validation-finding-6a64aef4e04eeea5, validation-finding-da5534f1b1766944, validation-finding-eb4031974105639d
+Claim candidates discovered: 232
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 227
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Selected source-summary claims include ineligible claims. Count: 3.
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support the claim that skills describe character characteristics with greater impact than ability scores. Specifically, evidence-3fe8f57a611b44c8 states "Skills have a greater impact on a character's actions than ability scores," and evidence-2d1f90851068b610 mentions that skills are used alongside ability scores to describe character characteristics. The excerpts collectively support the claim. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-1
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support the claim that adventurer skills are for player characters with eight available: fighter, thief, priest, sorcerer, shaman, sage, ranger, and bard. Evidence-fea1fd9e868304f2 explicitly lists these eight skills, and evidence-ebc4f774c747baf8 confirms that adventurer skills are acquired by player characters. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-2
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support the claim that instead of saying 'someone who has the fighter skill', they are simply called 'fighters'. Evidence-d0fe589931c98bd3 directly states "So instead of _someone who has the fighter skill_, they are simply called _fighters_." This supports the claim directly. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-3
+- INFO claim-support sword-world-rpg-complete-edition-1-4-character-creation-part-1: supported: The evidence excerpts support the claim that players choose a race, such as human, dwarf, grassrunner, elf, or half-elf, each with unique traits and limitations. Evidence-dfb33dc7a693080e lists these five races, and evidence-3b533389208d4240 states that each race has their own characteristics and limitations. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-4-character-creation-part-1-1
+- INFO claim-support sword-world-rpg-complete-edition-1-4-character-creation-part-1: supported: The evidence excerpts support the claim that each race has specific ability score averages, with humans having the most average scores. Evidence-00911a2a54112302 explicitly states that "Humans have the most average ability scores and can do almost anything without a hitch," and evidence-e6b671c58262e675 refers to a table showing average ability scores by race. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-4-character-creation-part-1-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.

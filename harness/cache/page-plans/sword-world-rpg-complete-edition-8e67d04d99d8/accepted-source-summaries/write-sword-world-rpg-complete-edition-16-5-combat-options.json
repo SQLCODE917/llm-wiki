@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A character wielding weapons in both hands has three possible attack styles (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "bullet_text": "Full defense grants +2 bonus to evasion speed (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
       "covered_source_claims": [
         "source-claim-unit-0063-0191"
       ]
     },
     {
-      "bullet_text": "Throwing weapons have a 20‑meter range limit; shooting weapons, 100 m (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "bullet_text": "Strong blow allows bonus damage +2 or critical target -1 (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0001"
+        "source-claim-unit-0063-0193"
       ]
     },
     {
-      "bullet_text": "Each throwing or shooting weapon has a maximum range per Table 16‑4 (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "bullet_text": "Charge requires minimum distance and adds +10 to strike power when hitting (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0006"
+        "source-claim-unit-0063-0194"
       ]
     }
   ],
-  "source_record_text": "The Combat Options section outlines optional combat rules for dual‑wielding, projectile range limits, and weapon maximum ranges."
+  "source_record_text": "Optional combat rules for Sword World RPG, including full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim."
 }

@@ -73,10 +73,20 @@ class SourceClaimGroup:
 
 
 @dataclass(frozen=True)
+class SourceSummaryClaimRequirement:
+    source_claim_id: str
+    claim_role_tags: tuple[str, ...] = ()
+    claim_eligibility: str = "eligible"
+    claim_centrality: float = 0.0
+    cue_terms: tuple[str, ...] = ()
+
+
+@dataclass(frozen=True)
 class SourceSummaryPlan:
     source_summary_plan_id: str
     page_id: str
     selected_source_claims: tuple[str, ...]
+    selected_claim_requirements: tuple[SourceSummaryClaimRequirement, ...] = ()
     required_claim_role_tags: tuple[str, ...] = ()
     required_source_claim_groups: tuple[str, ...] = ()
     required_source_citations: tuple[str, ...] = ()
@@ -123,6 +133,46 @@ class SourceSummaryQualityReport:
     false_source_uncertainty_examples: tuple[str, ...] = ()
     source_framing_examples: tuple[str, ...] = ()
     missing_unit_coverage_examples: tuple[str, ...] = ()
+
+
+def source_summary_claim_requirement(claim: SourceClaim) -> SourceSummaryClaimRequirement:
+    return SourceSummaryClaimRequirement(
+        source_claim_id=claim.source_claim_id,
+        claim_role_tags=claim.claim_role_tags,
+        claim_eligibility=claim.claim_eligibility,
+        claim_centrality=claim.claim_centrality,
+        cue_terms=claim.subject_terms,
+    )
+
+
+def render_source_summary_claim_requirement(
+    requirement: SourceSummaryClaimRequirement,
+) -> str:
+    roles = ", ".join(requirement.claim_role_tags) or "unlabeled"
+    terms = ", ".join(requirement.cue_terms) or "no subject terms"
+    return (
+        f"claim_id `{requirement.source_claim_id}` [{roles}] "
+        f"eligibility `{requirement.claim_eligibility}` "
+        f"centrality `{requirement.claim_centrality}` cue_terms `{terms}`"
+    )
+
+
+def render_missing_source_summary_claims(
+    plan: SourceSummaryPlan,
+    missing_claim_ids: tuple[str, ...],
+) -> str:
+    requirements = {
+        requirement.source_claim_id: requirement
+        for requirement in plan.selected_claim_requirements
+    }
+    rendered: list[str] = []
+    for claim_id in missing_claim_ids:
+        requirement = requirements.get(claim_id)
+        if requirement is None:
+            rendered.append(claim_id)
+        else:
+            rendered.append(render_source_summary_claim_requirement(requirement))
+    return "; ".join(rendered)
 
 
 def should_create_source_summary_plan(contract: ResolvedPageBodyContract) -> bool:

@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The griffon is a magical beast with a lion body, eagle head and wings, and can fly (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
-      "covered_source_claims": [
-        "source-claim-unit-0045-0033"
-      ]
-    },
-    {
-      "bullet_text": "The sphinx is a mythical beast created by ancient sorcerers to protect true knowledge and prevent lost magic spell books (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
-      "covered_source_claims": [
-        "source-claim-unit-0045-0105"
-      ]
-    },
-    {
-      "bullet_text": "Lizardmen are related to dragons and were classified as mythical or magical beasts to avoid premature categorization; exact numbers may be unknown (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
+      "bullet_text": "Lamia need bloodsucking to survive, often disguise as human girls (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
       "covered_source_claims": [
         "source-claim-unit-0045-0026"
       ]
     },
     {
-      "bullet_text": "Ramliearth has deployed a forest guard regiment to protect these mythical beasts (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
+      "bullet_text": "Lizardmen have noble and slave types, with nobles using dragon roar magic (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
       "covered_source_claims": [
-        "source-claim-unit-0045-0085"
+        "source-claim-unit-0045-0027"
       ]
     },
     {
-      "bullet_text": "Buckbairds are bizarre magical beasts created by ancient sorcerers; their nature may be unknown (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
+      "bullet_text": "Unicorns have healing abilities, can communicate in silent spirit, unknown lifespan (raw/Sword World RPG - Complete Edition.pdf p.188-198).",
       "covered_source_claims": [
-        "source-claim-unit-0045-0158"
+        "source-claim-unit-0045-0028"
       ]
     }
   ],
-  "source_record_text": "This chapter details various mythical and magical beasts, including griffons, lamia, lizardmen, sphinxes, and others."
+  "source_record_text": "Section 13.2.6 describes mythical and magical beasts, including lamia, lizardmen, griffon, manticore, minotaur, unicorn, lynx, sphinx, wyvern, basilisk, sea dragon, wyrm, buckbaird, hydra, and humbaba (raw/Sword World RPG - Complete Edition.pdf p.188-198)."
 }

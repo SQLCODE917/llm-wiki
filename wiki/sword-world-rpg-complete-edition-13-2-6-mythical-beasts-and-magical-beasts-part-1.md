@@ -1,19 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1
 page_kind: source
-summary: Summary of key creatures and behaviors described in chapter 13.2.6 of the Sword World RPG Complete Edition.
+summary: Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 1), covering satyrs, ceiling hangers, harpies, hippocampi, medusas, and androscorpions.
 sources: raw/Sword World RPG - Complete Edition.pdf p.188-198
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Source summary for Chapter 13.2.6, Mythical Beasts and Magical Beasts (part 1).
+This section describes various mythical and magical beasts in the Sword World RPG setting, including satyrs, ceiling hangers, harpies, hippocampi, medusas, and androscorpions. Each entry provides monster level, rarity, abilities, habitat, and combat statistics. Some creatures are possible exceptions to standard rules.
 
 ## Key supported claims
 
-- A ceiling hanger is a magical beast with arms of different sizes on its left and right sides. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
-- Magical beasts may not follow their orders. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
-- When in danger, telchines will use a Shape Change spell to take on the form of a titan or an ugly beast to intimidate their opponents. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
-- Androscorpio is a mythical beast that lives in the desert, with the upper body of a handsome young man and the lower body of a brightly colored scorpion. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
-- Medusa is a magical beast that takes the form of a human woman, with dozens of snakes growing out of her head instead of hair, and a face that can petrify. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Satyrs are forest-dwelling creatures with human upper bodies, goat-like lower bodies, and horns, carrying flutes to manipulate emotions. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Ceiling hangers are magical beasts with arms of different sizes and a glue-like lower body, attacking sleeping prey with surprise and strangling them. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Harpy creatures have human female heads and bird bodies, with two races: deela and furia, having different characteristics and abilities. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Hippocampi are sea creatures resembling horses with fish tails, capable of moving underwater quickly but suffering penalties on land. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Medusas are magical beasts in the form of human women with snakes for hair, capable of petrifying humans with their gaze and having poisonous snake attacks. (raw/Sword World RPG - Complete Edition.pdf p.188-198)

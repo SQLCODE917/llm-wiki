@@ -1,19 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-5-1-7-magic-expansion
 page_kind: source
-summary: Source summary for Magic Expansion rules (p.61-64).
+summary: Magic expansion and contraction rules for the Sword World RPG - Complete Edition, including types of expansions and contractions, and their effects on mental power consumption.
 sources: raw/Sword World RPG - Complete Edition.pdf p.61-64
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Magic expansion lets casters use extra mental power to broaden spell effects such as range, area, duration, damage, and final score. (raw/Sword World RPG - Complete Edition.pdf p.61-64)
+Section 5.1.7 Magic Expansion (pages 61-64) of Sword World RPG - Complete Edition.
 
 ## Key supported claims
 
-- Caster may double or triple power to expand targets, area, or duration. (raw/Sword World RPG - Complete Edition.pdf p.61-64)
-- If a spell is resisted, expansion is nullified and the caster must roll to resist again. (raw/Sword World RPG - Complete Edition.pdf p.61-64)
-- Area expansion multiplies power but increases size by the square root of the rate, per Table 5‑1. (raw/Sword World RPG - Complete Edition.pdf p.61-64)
-- Magic that negates other magic can itself be negated, canceling both effects. (raw/Sword World RPG - Complete Edition.pdf p.61-64)
-- Damage expansion may allow multiple strike rolls, taking the highest; final‑score bonuses are limited by rune mastery. (raw/Sword World RPG - Complete Edition.pdf p.61-64)
+- Magic expansion increases the effectiveness and certainty of magic by consuming extra mental power, as described in (raw/Sword World RPG - Complete Edition.pdf p.61-64).

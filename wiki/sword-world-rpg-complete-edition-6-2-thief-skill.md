@@ -1,19 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-6-2-thief-skill
 page_kind: source
-summary: Thief Skill rules covering equipment restrictions, lockpicking, trap setting and listening.
+summary: Summary of the thief skill rules from Sword World RPG - Complete Edition, section 6.2, pages 113-117.
 sources: raw/Sword World RPG - Complete Edition.pdf p.113-117
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Summary of the Thief Skill rules from Sword World RPG Complete Edition, covering equipment restrictions, lockpicking, trap setting, and listening. (raw/Sword World RPG - Complete Edition.pdf p.113‑117)
+The thief skill is taught at the thieves' guild. People who aren't in the guild usually can't learn it. Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild. Even those who have not joined a guild can directly learn the thief skill from those who have a higher thief skill level than themselves, but if the guild finds out that such outsider thieves (including those who have not paid the prescribed amount) used this skill to do business, they'll send an assassin.
 
 ## Key supported claims
 
-- The thief skill’s proficiency is measured by success rolls (raw/Sword World RPG - Complete Edition.pdf p.113-117).
-- Equipment must be no more than half the thief’s strength (rounded up) and must be ring mail or non‑metal; this applies to armor, weapons, and shields (raw/Sword World RPG - Complete Edition.pdf p.113-117).
-- Lockpicking is a non‑retriable ability: once a lock is failed, no further attempts are allowed (raw/Sword World RPG - Complete Edition.pdf p.113-117).
-- A thief may set traps only up to a difficulty equal to their skill level; higher‑level traps cannot be set (raw/Sword World RPG - Complete Edition.pdf p.113-117).
-- When hearing a sound, a thief can make a listen check using thief skill level plus intelligence bonus to learn details about the source (raw/Sword World RPG - Complete Edition.pdf p.113-117).
+- The thief skill is taught at the thieves' guild (raw/Sword World RPG - Complete Edition.pdf p.113-117).

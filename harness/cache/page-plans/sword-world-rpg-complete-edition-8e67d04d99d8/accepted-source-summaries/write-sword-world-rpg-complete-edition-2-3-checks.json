@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Once the baseline score and target score are determined, a success roll **check** can finally be made. (raw/Sword World RPG - Complete Edition.pdf p.30-33)",
+      "bullet_text": "Baseline score is relevant skill level + ability bonus (raw/Sword World RPG - Complete Edition.pdf p.30-33).",
       "covered_source_claims": [
         "source-claim-unit-0006-0022"
       ]
     },
     {
-      "bullet_text": "However, a player is given only _one_ criteria to determine whether the success roll they made for a difficulty check is a success or a failure. (raw/Sword World RPG - Complete Edition.pdf p.30-33)",
+      "bullet_text": "Target score represents difficulty, set by game master (raw/Sword World RPG - Complete Edition.pdf p.30-33).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0168"
+        "source-claim-unit-0006-0024"
       ]
     },
     {
-      "bullet_text": "The game master does not say whether the result is _the action succeeded_ or _the action failed_, because a difficulty check is made when the success or failure of the action is not known to the character. (raw/Sword World RPG - Complete Edition.pdf p.30-33)",
+      "bullet_text": "Success roll 2D + baseline score ≥ target score (raw/Sword World RPG - Complete Edition.pdf p.30-33).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0158"
-      ]
-    },
-    {
-      "bullet_text": "So you decide to check for traps, thinking that carelessly opening this door might activate a trap. (raw/Sword World RPG - Complete Edition.pdf p.30-33)",
-      "covered_source_claims": [
-        "source-claim-unit-0006-0064"
-      ]
-    },
-    {
-      "bullet_text": "To make a difficulty check, the game master also rolls the dice (2D), and the result may be hidden from players. (raw/Sword World RPG - Complete Edition.pdf p.30-33)",
-      "covered_source_claims": [
-        "source-claim-unit-0006-0148"
+        "source-claim-unit-0006-0025"
       ]
     }
   ],
-  "source_record_text": "This chapter explains how baseline and target scores combine into a success roll check, outlines automatic success/failure, and details the mechanics of difficulty checks. (raw/Sword World RPG - Complete Edition.pdf p.30-33)"
+  "source_record_text": "This section explains checks in Sword World RPG, including baseline scores, target scores, success rolls, automatic success/failure, bonuses/penalties, difficulty checks, and resistance rolls. Some aspects are unknown."
 }

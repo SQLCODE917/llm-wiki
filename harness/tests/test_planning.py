@@ -20,7 +20,13 @@ from llmwiki.domain.planning import (
     observation_report,
     page_plan_to_json,
 )
-from llmwiki.domain.planning_analysis import build_extracted_unit, same_section_identity
+from llmwiki.domain.planning_analysis import (
+    build_extracted_unit,
+    candidate_claims,
+    cosine,
+    embedding,
+    same_section_identity,
+)
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
 from llmwiki.pdf.pipeline import ExtractionResult
 from llmwiki.runtime.session import Session
@@ -376,6 +382,13 @@ def test_section_identity_uses_slug_identity_not_shared_terms() -> None:
     )
 
 
+def test_embedding_handles_long_text_with_bounded_norm() -> None:
+    vector = embedding("alpha beta gamma " * 10000)
+
+    assert set(vector) == {"alpha", "beta", "gamma"}
+    assert 0.99 < sum(value * value for value in vector.values()) < 1.01
+
+
 def test_observation_report_can_scope_planned_targets() -> None:
     raw_source = RawSource.from_locator("book.pdf")
     functions = build_extracted_unit(
@@ -526,6 +539,30 @@ def test_nested_wiki_structure_projects_from_page_metadata() -> None:
 
     paths = [write.projection.page_path for write in plan.planned_writes if write.projection]
     assert paths == ["source/antikythera-mechanism.md"]
+
+
+def test_candidate_claims_bounds_long_unpunctuated_units() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0001",
+        raw_source=raw_source,
+        locator="p.1",
+        heading_path="Long text",
+        text="Functions return values. " + ("unpunctuated source text " * 5000),
+    )
+
+    claims = candidate_claims((unit,))
+
+    assert claims
+    assert all(len(claim.statement) <= 1800 for claim in claims)
+    assert len(claims) <= 120
+
+
+def test_cosine_uses_explicit_bounded_loop_for_large_embeddings() -> None:
+    left = {f"term-{index}": 0.001 for index in range(6000)}
+    right = {f"term-{index}": 0.001 for index in range(3000, 9000)}
+
+    assert cosine(left, right) > 0
 
 
 class PagePlanSpyStore(WikiStore):

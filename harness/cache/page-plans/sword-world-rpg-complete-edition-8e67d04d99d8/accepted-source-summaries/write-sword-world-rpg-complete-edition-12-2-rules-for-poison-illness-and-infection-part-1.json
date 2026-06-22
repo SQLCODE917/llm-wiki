@@ -1,35 +1,25 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A wound may become infected, treated as an illness. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "bullet_text": "Illness disrupts spirit power balance in the body (raw/Sword World RPG - Complete Edition.pdf p.159-167).",
       "covered_source_claims": [
-        "source-claim-unit-0037-0026"
+        "source-claim-unit-0037-0025",
+        "source-claim-unit-0037-0022"
       ]
     },
     {
-      "bullet_text": "The unknown spirit of life restores balance by guiding other spirits. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "bullet_text": "Poisons disrupt spirit power and require detoxification (raw/Sword World RPG - Complete Edition.pdf p.159-167).",
       "covered_source_claims": [
-        "source-claim-unit-0037-0034"
+        "source-claim-unit-0037-0030",
+        "source-claim-unit-0037-0042"
       ]
     },
     {
-      "bullet_text": "This poison only affects you if you lose at least one life‑force point from a poisoned blade. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
+      "bullet_text": "Infection occurs when the body's container is broken, causing imbalance (raw/Sword World RPG - Complete Edition.pdf p.159-167).",
       "covered_source_claims": [
-        "source-claim-unit-0037-0069"
-      ]
-    },
-    {
-      "bullet_text": "Once a poison has entered, it cannot be driven out. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
-      "covered_source_claims": [
-        "source-claim-unit-0037-0048"
-      ]
-    },
-    {
-      "bullet_text": "Inhaled poisons in gas or powder activate when breathed in. (raw/Sword World RPG - Complete Edition.pdf p.159-167)",
-      "covered_source_claims": [
-        "source-claim-unit-0037-0072"
+        "source-claim-unit-0037-0045"
       ]
     }
   ],
-  "source_record_text": "This source details Sword World RPG rules governing poison, illness, infection, and their treatments, including definitions, contagion, and resistance mechanics."
+  "source_record_text": "In _Sword World RPG_, illness is defined as a state in which the balance of spirit power within the body is disrupted. The concept of bacterial or viral contagion does not exist. There are two types of symptoms that can appear. One is due to poison and the other is due to illness. In addition, a wound may become infected, which is treated as an illness. Unknown spirit of life heals illness by showing other spirits in the body how to achieve balance."
 }

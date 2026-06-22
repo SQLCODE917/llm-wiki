@@ -119,7 +119,18 @@ def prepare_ingest_confidence_artifacts(
         return PreparedIngestArtifacts(
             tuple(decisions), cached[0], cached[1], cached[2], cached[2], tuple(findings)
         )
-    plan = _build_current_page_plan(store, source_locator, today, profiles, pdf_result)
+    plan_decision_for_report = plan_decision
+    plan = _read_reusable_page_plan_artifact(artifact_dir, plan_decision, fresh)
+    if plan is None:
+        plan = _build_current_page_plan(store, source_locator, today, profiles, pdf_result)
+    else:
+        plan_decision_for_report = ArtifactReuseDecision(
+            "page-plan",
+            str(artifact_dir / "page-plan.json"),
+            "reuse",
+            "parsed persisted PagePlan artifact",
+            fingerprint.digest,
+        )
     if plan is None:
         findings.append(runtime_finding(source_locator, "Could not build a current PagePlan."))
         return PreparedIngestArtifacts(
@@ -136,7 +147,7 @@ def prepare_ingest_confidence_artifacts(
                 message="Could not build an EvidenceRegistry for this source.",
             )
         )
-    decisions.extend((plan_decision, registry_decision, locator_decision))
+    decisions.extend((plan_decision_for_report, registry_decision, locator_decision))
     store.write_page_plan_artifacts(
         source_locator, page_plan_to_json(plan), observation_report(plan)
     )
@@ -193,6 +204,20 @@ def _reused_artifacts(
     if registry is None or locator_index is None:
         return None
     return plan, registry, locator_index
+
+
+def _read_reusable_page_plan_artifact(
+    artifact_dir: Path,
+    plan_decision: ArtifactReuseDecision,
+    fresh: bool,
+) -> PagePlan | None:
+    if fresh or plan_decision.decision == "missing":
+        return None
+    plan_path = artifact_dir / "page-plan.json"
+    try:
+        return page_plan_from_json(plan_path.read_text(encoding="utf-8"))
+    except Exception:
+        return None
 
 
 def _build_current_page_plan(

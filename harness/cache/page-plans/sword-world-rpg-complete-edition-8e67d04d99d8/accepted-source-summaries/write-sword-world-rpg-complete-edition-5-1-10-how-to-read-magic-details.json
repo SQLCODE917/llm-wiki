@@ -1,35 +1,31 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Among ancient magic, only a handful of sorcerers know certain spells, while others were lost when the kingdom fell. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "bullet_text": "Illusion magic affects five senses or pseudo senses, but not magic senses. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
       "covered_source_claims": [
-        "source-claim-unit-0014-0042"
+        "source-claim-unit-0014-0050"
       ]
     },
     {
-      "bullet_text": "Ritual procedures are complex; those untrained cannot participate. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "bullet_text": "Illusions can be detected by resistance rolls if the target suspects them, and these rolls can only be made once. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
       "covered_source_claims": [
-        "source-claim-unit-0014-0028"
+        "source-claim-unit-0014-0051"
       ]
     },
     {
-      "bullet_text": "Runes from official texts were used in the ancient kingdom, but most are lost; only a few remain. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "bullet_text": "Ritual magic enhances spell effects through preparation over days, with bonuses calculated as days times participants. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "covered_source_claims": []
+    },
+    {
+      "bullet_text": "Lost spells are ancient magic known only to a limited number of sorcerers, lost with the fall of the ancient kingdom. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
       "covered_source_claims": [
-        "source-claim-unit-0014-0101"
+        "source-claim-unit-0014-0046"
       ]
     },
     {
-      "bullet_text": "If a target lacks the senses to deceive, an illusion spell has no effect. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
-      "covered_source_claims": [
-        "source-claim-unit-0014-0005"
-      ]
-    },
-    {
-      "bullet_text": "Once you fail a resistance roll, you cannot detect the illusion again; you might still walk around suspicious floors. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
-      "covered_source_claims": [
-        "source-claim-unit-0014-0022"
-      ]
+      "bullet_text": "Magic details include Base Mental Power Cost, Distance, Area, Duration, Effect, Type, Expansion, and Resist. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "covered_source_claims": []
     }
   ],
-  "source_record_text": "This chunk explains how to read magic details, covering illusion mechanics, ritual bonuses, lost spells, and the format of magic detail entries."
+  "source_record_text": "This section explains how to read magic details in the Sword World RPG. It covers illusion magic, ritual magic, and lost spells."
 }

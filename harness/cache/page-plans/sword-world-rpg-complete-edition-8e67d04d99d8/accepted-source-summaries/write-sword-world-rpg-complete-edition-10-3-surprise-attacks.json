@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Table 10‑1 lists attack power and evasion speed modifiers for conditions such as full movement and visibility issues (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
-      "covered_source_claims": [
-        "source-claim-unit-0032-0016"
-      ]
-    },
-    {
-      "bullet_text": "Surprise attack checks are determined by the game master using Table 10‑2; the master rolls 2D and adds the monster level (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
-      "covered_source_claims": [
-        "source-claim-unit-0032-0019"
-      ]
-    },
-    {
-      "bullet_text": "Attacks against sleeping monsters are always a success unless a 2D roll results in double ones on the hit check (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
-      "covered_source_claims": [
-        "source-claim-unit-0032-0050"
-      ]
-    },
-    {
-      "bullet_text": "When a monster is not noticed, a player may perform a surprise attack (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
+      "bullet_text": "Surprise attacks occur when one party notices the other without being noticed, allowing a free action for one round (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
       "covered_source_claims": [
         "source-claim-unit-0032-0018"
       ]
     },
     {
-      "bullet_text": "Even if surprised, the side may still try to avoid attacks or resist magic; such actions may be taken (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
+      "bullet_text": "The game master rolls 2D and adds it to monster level, then adventurers roll ranger skill + intelligence bonus (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
       "covered_source_claims": [
-        "source-claim-unit-0032-0030"
+        "source-claim-unit-0032-0016"
+      ]
+    },
+    {
+      "bullet_text": "If the score is lower than the monster column, monster has a chance for surprise; if greater than adventurer column, adventurers have a chance (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
+      "covered_source_claims": [
+        "source-claim-unit-0032-0008"
+      ]
+    },
+    {
+      "bullet_text": "Table 10-2 shows intelligence modifiers for surprise attack checks (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
+      "covered_source_claims": [
+        "source-claim-unit-0032-0017"
+      ]
+    },
+    {
+      "bullet_text": "The surprised side cannot take assertive actions, but can avoid attacks or resist magic (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
+      "covered_source_claims": [
+        "source-claim-unit-0032-0012"
       ]
     }
   ],
-  "source_record_text": "This section outlines how surprise attacks are determined and the relevant tables for attack and evasion checks."
+  "source_record_text": "This section details the rules for surprise attacks in combat, including when they can occur, how to determine who is surprised, and the penalties that apply."
 }

@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Starting experience points may function equivalently to character growth experience, enabling skill advancement. (raw/Sword World RPG - Complete Edition.pdf p.17-28).",
+      "bullet_text": "Players choose a race, such as human, dwarf, grassrunner, elf, or half-elf, each with unique traits and limitations. (raw/Sword World RPG - Complete Edition.pdf p.17-28)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0181"
+        "source-claim-unit-0004-0005"
       ]
     },
     {
-      "bullet_text": "A character may not purchase a weapon whose required strength does not match their own strength. (raw/Sword World RPG - Complete Edition.pdf p.17-28).",
+      "bullet_text": "Each race has specific ability score averages, with humans having the most average scores. (raw/Sword World RPG - Complete Edition.pdf p.17-28)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0198"
+        "source-claim-unit-0004-0004"
       ]
     },
     {
-      "bullet_text": "Dwarves may not acquire the sorcerer or shaman skills. (raw/Sword World RPG - Complete Edition.pdf p.17-28).",
+      "bullet_text": "Starting skills and experience points are determined by race and background, with humans using Table 1-5 and others using Table 1-6. (raw/Sword World RPG - Complete Edition.pdf p.17-28)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0175"
+        "source-claim-unit-0004-0001"
       ]
     },
     {
-      "bullet_text": "Certain races may have specific skill selection restrictions, such as the inability to choose priest for elves. (raw/Sword World RPG - Complete Edition.pdf p.17-28).",
+      "bullet_text": "Characters must have a name, age, and gender, with age ranges varying by race. (raw/Sword World RPG - Complete Edition.pdf p.17-28)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0020"
+        "source-claim-unit-0004-0006"
       ]
     },
     {
-      "bullet_text": "Age and gender may not affect a character’s abilities in Sword World RPG. (raw/Sword World RPG - Complete Edition.pdf p.17-28).",
+      "bullet_text": "Weapons and armor are purchased using starting money, with required strength matching the character's strength. (raw/Sword World RPG - Complete Edition.pdf p.17-28)",
       "covered_source_claims": [
-        "source-claim-unit-0004-0076"
+        "source-claim-unit-0004-0002"
       ]
     }
   ],
-  "source_record_text": "This chapter explains character creation mechanics including race selection, ability scoring, skill and experience point allocation, and equipment purchase guidelines."
+  "source_record_text": "Chapter 1.4 of the Sword World RPG - Complete Edition covers character creation, including race selection, ability scores, skills, experience points, and equipment."
 }

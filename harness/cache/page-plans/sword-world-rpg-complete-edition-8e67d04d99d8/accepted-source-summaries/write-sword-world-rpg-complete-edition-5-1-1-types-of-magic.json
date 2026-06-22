@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Spells are limited to a defined set of effects (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
-      "covered_source_claims": [
-        "source-claim-unit-0011-0028"
-      ]
-    },
-    {
-      "bullet_text": "Types of magic stem from belief in gods, wicked gods, and dragons (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "bullet_text": "Magic in Sword World uses chants called runes and specific procedures to produce effects (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
       "covered_source_claims": [
         "source-claim-unit-0011-0015"
       ]
     },
     {
-      "bullet_text": "The five runes—ancient, spirit, holy, daemon, dragon—each have unique power sources (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "bullet_text": "There are five types of runes: high ancient, silent spirit, holy prayer, daemon scream, and dragon roar (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
       "covered_source_claims": [
-        "source-claim-unit-0011-0068"
+        "source-claim-unit-0011-0022"
       ]
     },
     {
-      "bullet_text": "Holy prayer and daemon scream share the same power, differing only in nature (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "bullet_text": "Rune masters are divided into five types: sorcerer, shaman, priest, dark priest, and dragon priest (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
       "covered_source_claims": [
-        "source-claim-unit-0011-0108"
+        "source-claim-unit-0011-0002"
       ]
     },
     {
-      "bullet_text": "Races may not learn all runes, and a character cannot hold more than one belief in each god type (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "bullet_text": "Spells are divided into levels from 1-10, with higher levels requiring higher rune master skills (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
       "covered_source_claims": [
         "source-claim-unit-0011-0008"
       ]
+    },
+    {
+      "bullet_text": "A rune master can use all magic up to their skill level, but not magic of a higher level (raw/Sword World RPG - Complete Edition.pdf p.56-56).",
+      "covered_source_claims": [
+        "source-claim-unit-0011-0010"
+      ]
     }
   ],
-  "source_record_text": "Magic is produced by chanting runes and performing procedures, distinguishing five primary types—ancient, spirit, holy, dark, and dragon—each tied to a belief in gods, wicked gods, or dragons."
+  "source_record_text": "Overview of the five types of magic in Sword World RPG: ancient, spirit, holy, dark, and dragon roar magic."
 }

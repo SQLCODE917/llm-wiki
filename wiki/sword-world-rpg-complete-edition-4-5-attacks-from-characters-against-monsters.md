@@ -1,19 +1,17 @@
 ---
 page_id: sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters
 page_kind: source
-summary: Character attack mechanics against monsters – hit checks, damage rolls, criticals, and defense interactions (pages 43‑50).
+summary: Chapter 4.5: Attacks From Characters Against Monsters, including hit checks, damage calculation, and defense mechanics.
 sources: raw/Sword World RPG - Complete Edition.pdf p.43-50
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This chapter explains how characters attack monsters, covering hit checks, strike rolls, damage calculation, criticals, and defense rolls.
+Chapter 4.5 of the Sword World RPG - Complete Edition covers attacks from characters against monsters, detailing hit checks, damage calculation, and defense mechanics.
 
 ## Key supported claims
 
-- Attackers roll 2D and add attack power; hit if result ≥ evasion points (raw/Sword World RPG - Complete Edition.pdf p.43-50).
-- Base damage is taken from the Rating Table column matching strike power; roll 2D for the strike roll (raw/Sword World RPG - Complete Edition.pdf p.43-50).
-- A double‑ones strike roll deals 0 damage even if the hit check succeeds (raw/Sword World RPG - Complete Edition.pdf p.43-50).
-- A double‑ones hit roll automatically fails the attack (raw/Sword World RPG - Complete Edition.pdf p.43-50).
-- Life‑force increases may restore consciousness; otherwise, unconscious characters risk death (raw/Sword World RPG - Complete Edition.pdf p.43-50).
+- Characters attack monsters with a hit check using attack power and 2D, where attack power + 2D ≥ monster's evasion points to hit (raw/Sword World RPG - Complete Edition.pdf p.43-50).
+- If a hit check succeeds, base damage is determined using Table 4-1: Rating Table, with bonus damage added and monster's defense points subtracted (raw/Sword World RPG - Complete Edition.pdf p.43-50).

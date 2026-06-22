@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The core problem for success rolls is deciding between a target score or a difficulty. (raw/Sword World RPG - Complete Edition.pdf p.135-138)",
-      "covered_source_claims": [
-        "source-claim-unit-0031-0003"
-      ]
-    },
-    {
-      "bullet_text": "Success rolls require selecting the skill, relevant ability score, and either target score or difficulty. (raw/Sword World RPG - Complete Edition.pdf p.135-138)",
+      "bullet_text": "Target scores are used for actions with clear success or failure (raw/Sword World RPG - Complete Edition.pdf p.135-138).",
       "covered_source_claims": [
         "source-claim-unit-0031-0001"
       ]
     },
     {
-      "bullet_text": "When difficulty is clear, a target score should be used; otherwise, a difficulty check is appropriate. (raw/Sword World RPG - Complete Edition.pdf p.135-138)",
+      "bullet_text": "Difficulty checks are for actions where success or failure cannot be clearly determined (raw/Sword World RPG - Complete Edition.pdf p.135-138).",
       "covered_source_claims": [
-        "source-claim-unit-0031-0045"
+        "source-claim-unit-0031-0021"
       ]
     },
     {
-      "bullet_text": "Traps with varying difficulties can be presented as a difficulty check without revealing the exact difficulty. (raw/Sword World RPG - Complete Edition.pdf p.135-138)",
+      "bullet_text": "Game masters should decide based on whether characters can tell if action succeeded or failed (raw/Sword World RPG - Complete Edition.pdf p.135-138).",
+      "covered_source_claims": [
+        "source-claim-unit-0031-0033"
+      ]
+    },
+    {
+      "bullet_text": "Difficulty should be clear to players to avoid suspicion (raw/Sword World RPG - Complete Edition.pdf p.135-138).",
+      "covered_source_claims": [
+        "source-claim-unit-0031-0019"
+      ]
+    },
+    {
+      "bullet_text": "Modifiers affect final score of success rolls (raw/Sword World RPG - Complete Edition.pdf p.135-138).",
       "covered_source_claims": [
         "source-claim-unit-0031-0046"
       ]
-    },
-    {
-      "bullet_text": "A master character is unlikely to fail, but a pro can fail about 50‑50; failure probability may vary with skill level. (raw/Sword World RPG - Complete Edition.pdf p.135-138)",
-      "covered_source_claims": [
-        "source-claim-unit-0031-0018"
-      ]
     }
   ],
-  "source_record_text": "This section explains when to use target score checks versus difficulty checks, detailing how to decide based on whether outcomes are obvious and outlining how to keep difficulty hidden when it would reveal hidden information."
+  "source_record_text": "Chapter 9.2 discusses when to use target scores versus difficulty checks in Sword World RPG, focusing on the clarity of success or failure for actions."
 }

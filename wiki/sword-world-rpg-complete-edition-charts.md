@@ -1,18 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-charts
 page_kind: source
-summary: Charts from raw/Sword World RPG - Complete Edition.pdf.
+summary: Summary of charts and tables from Sword World RPG - Complete Edition, including skill abilities, ability scores, and equipment tables.
 sources: raw/Sword World RPG - Complete Edition.pdf p.294-311
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Skill ability charts with retry rules for success rolls (possible).
+This page summarizes the charts and tables section from Sword World RPG - Complete Edition, covering skill abilities, ability scores, and equipment.
 
 ## Key supported claims
 
-- Thief skill table lists abilities with relevant ability scores and equipment restrictions, noting that retrying success rolls is only allowed for some skills such as Acrobatics. (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-- Ranger skill table allows retrying for abilities like Camoufage and Listen, but not for Search or Map Creation. (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-- Sage skill abilities such as Monster Check and Languages are one‑shot checks with no retry possibility. (raw/Sword World RPG - Complete Edition.pdf p.294-311)
+- Thief skill abilities include Tumble, Lockpicking, and Acrobatics, with varying equipment restrictions and retry rules (raw/Sword World RPG - Complete Edition.pdf p.294-311).
+- Ranger skill abilities encompass Footprint Tracking, First Aid, and Camouflage, with specific retry rules and equipment requirements (raw/Sword World RPG - Complete Edition.pdf p.294-311).
+- Sage skill abilities such as Monster Check and Languages are not possible to retry, with specific ability score requirements (raw/Sword World RPG - Complete Edition.pdf p.294-311).

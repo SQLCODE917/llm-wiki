@@ -1,29 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Plants are weak to fire, granting a +10 bonus when using spells like _Fire Weapon_ or _Fire Bolt_ (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
+      "bullet_text": "The killer octopus is an aggressive aquatic monster that uses its tentacles to strangle prey, following strangling rules (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
       "covered_source_claims": [
         "source-claim-unit-0050-0020"
       ]
     },
     {
-      "bullet_text": "An ethnoa is a ~3‑meter‑tall plant with six tentacles and a large, acid‑filled pouch (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
+      "bullet_text": "The giant octopus is a legendary sea monster with up to 10-meter tentacles, capable of entangling boats and attacking multiple targets with strangling attacks (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
       "covered_source_claims": [
-        "source-claim-unit-0050-0027"
+        "source-claim-unit-0050-0022"
       ]
     },
     {
-      "bullet_text": "Despite being plants, some have intellect and can wield spirit magic from dryads or gnomes (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
+      "bullet_text": "Creeping trees are plant-based monsters that move on roots like imitation toes and use tentacle-like branches to attack, with weak resistance to fire and no human-like minds (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
       "covered_source_claims": [
-        "source-claim-unit-0050-0079"
-      ]
-    },
-    {
-      "bullet_text": "A mandrake grows underground, then emerges around age seven, walking and possessing human‑shaped roots (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
-      "covered_source_claims": [
-        "source-claim-unit-0050-0077"
+        "source-claim-unit-0050-0021"
       ]
     }
   ],
-  "source_record_text": "Plants monsters may have fire weakness, intellect, and spirit magic use."
+  "source_record_text": "This section describes various plant-based monsters in the Sword World RPG setting, including killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune."
 }

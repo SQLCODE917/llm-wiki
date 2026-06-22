@@ -7,22 +7,19 @@ from collections import Counter
 
 from llmwiki.domain.page_body_contracts import PageBodyFinding, ResolvedPageBodyContract
 from llmwiki.domain.source_claim_quality import SOURCE_FRAMING_PREFIXES
-from llmwiki.domain.source_summary import SourceSummaryDraft, SourceSummaryPlan
+from llmwiki.domain.source_summary import (
+    SourceSummaryDraft,
+    SourceSummaryPlan,
+    render_missing_source_summary_claims,
+)
+from llmwiki.domain.source_summary_citations import (
+    normalized_citation_text,
+    source_summary_bullet_cites_required_locator,
+)
 
 _WORD_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)?", re.IGNORECASE)
 _BULLET_RE = re.compile(r"^\s*[-*]\s+\S+", re.MULTILINE)
 _COPIED_NGRAM_SIZE = 8
-_CITATION_TRANSLATION = str.maketrans(
-    {
-        "\u00a0": " ",
-        "\u2010": "-",
-        "\u2011": "-",
-        "\u2012": "-",
-        "\u2013": "-",
-        "\u2014": "-",
-        "\u2212": "-",
-    }
-)
 _UNCERTAINTY_PATTERNS = {
     "may": r"\bmay\b",
     "might": r"\bmight\b",
@@ -85,7 +82,8 @@ def validate_source_summary_draft(
         findings.append(
             PageBodyFinding(
                 "SelectedSourceClaims",
-                "missing coverage for " + ", ".join(missing_claims),
+                "missing coverage for "
+                + render_missing_source_summary_claims(plan, missing_claims),
             )
         )
     if unknown_claims:
@@ -242,12 +240,12 @@ def _grounding_findings(
     page_body: str, contract: ResolvedPageBodyContract
 ) -> tuple[PageBodyFinding, ...]:
     findings: list[PageBodyFinding] = []
-    normalized_body = _normalize_citation_text(page_body)
+    normalized_body = normalized_citation_text(page_body)
     for page_id in contract.required_link_page_ids:
         if f"[[{page_id}]]" not in page_body:
             findings.append(PageBodyFinding("RequiredLinkPageIds", f"missing [[{page_id}]]"))
     for citation in contract.required_source_citations:
-        if _normalize_citation_text(citation) not in normalized_body:
+        if normalized_citation_text(citation) not in normalized_body:
             findings.append(PageBodyFinding("RequiredSourceCitations", f"missing {citation}"))
     if contract.required_uncertainty_terms and not _preserves_uncertainty(
         page_body, contract.required_uncertainty_terms
@@ -353,18 +351,17 @@ def _source_summary_bullet_citation_findings(
 ) -> tuple[PageBodyFinding, ...]:
     if not plan.required_source_citations:
         return ()
-    normalized_citations = tuple(
-        _normalize_citation_text(citation) for citation in plan.required_source_citations
-    )
     findings: list[PageBodyFinding] = []
     for index, bullet in enumerate(draft.claim_bullets, start=1):
-        normalized_bullet = _normalize_citation_text(bullet.bullet_text)
-        if not any(citation in normalized_bullet for citation in normalized_citations):
+        if not source_summary_bullet_cites_required_locator(
+            bullet.bullet_text, plan.required_source_citations
+        ):
             required = plan.required_source_citations[0]
             findings.append(
                 PageBodyFinding(
                     "SourceSummaryBulletCitation",
-                    f"bullet {index} bullet_text must include literal citation {required}",
+                    f"bullet {index} bullet_text must cite {required} "
+                    "or a narrower locator within it",
                 )
             )
     return tuple(findings)
@@ -418,10 +415,6 @@ def _preserves_uncertainty(page_body: str, terms: tuple[str, ...]) -> bool:
 
 def _words(text: str) -> tuple[str, ...]:
     return tuple(match.group(0).lower() for match in _WORD_RE.finditer(text))
-
-
-def _normalize_citation_text(text: str) -> str:
-    return " ".join(text.translate(_CITATION_TRANSLATION).split())
 
 
 def _ngrams(words: tuple[str, ...], size: int) -> tuple[tuple[str, ...], ...]:

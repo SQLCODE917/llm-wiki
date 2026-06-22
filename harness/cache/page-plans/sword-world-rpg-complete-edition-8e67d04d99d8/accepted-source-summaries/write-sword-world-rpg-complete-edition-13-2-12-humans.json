@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A Lycanthrope is a monster that can shift from human to beast form. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
-      "covered_source_claims": [
-        "source-claim-unit-0055-0092"
-      ]
-    },
-    {
-      "bullet_text": "The game master may decide the lycanthrope’s abilities while it remains in human form. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
-      "covered_source_claims": [
-        "source-claim-unit-0055-0096"
-      ]
-    },
-    {
-      "bullet_text": "Some lycanthropes may conceal their identity among humans, though when the time comes they often act strangely. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
-      "covered_source_claims": [
-        "source-claim-unit-0055-0105"
-      ]
-    },
-    {
-      "bullet_text": "Human characters are common: rarity listed as “Everyone knows them”, agility 10, movement speed 10, and they possess no special abilities. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
+      "bullet_text": "Normal humans are common and known to everyone, with low combat ability, found in villages. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
       "covered_source_claims": [
         "source-claim-unit-0055-0039"
       ]
     },
     {
-      "bullet_text": "Lycanthropes have life points 14, mental points 14, and a 3rd‑level dark‑magic ability. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
+      "bullet_text": "Bandits have henchmen, leaders, and chiefs with increasing power levels. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
       "covered_source_claims": [
-        "source-claim-unit-0055-0086"
+        "source-claim-unit-0055-0040"
+      ]
+    },
+    {
+      "bullet_text": "Soldiers range from normal to knight level with increasing combat abilities. (raw/Sword World RPG - Complete Edition.pdf p.230-234)",
+      "covered_source_claims": [
+        "source-claim-unit-0055-0042"
       ]
     }
   ],
-  "source_record_text": "Chapter 13.2.12 covers human characters, bandit hierarchy, and lycanthrope rules."
+  "source_record_text": "This page summarizes the Humans section (13.2.12) from *Sword World RPG - Complete Edition*, covering normal humans, bandits, soldiers, and dark priests."
 }

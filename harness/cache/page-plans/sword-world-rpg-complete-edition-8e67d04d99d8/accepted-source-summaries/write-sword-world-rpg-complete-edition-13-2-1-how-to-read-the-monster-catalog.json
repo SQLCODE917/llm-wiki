@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Monsters in Alecrast may belong to none of the twelve standard types. (raw/Sword World RPG - Complete Edition.pdf p.172-175)",
+      "bullet_text": "Monster level indicates general strength, raw/Sword World RPG - Complete Edition.pdf p.172.",
+      "covered_source_claims": [
+        "source-claim-unit-0040-0008"
+      ]
+    },
+    {
+      "bullet_text": "Rarity score indicates monster fame, raw/Sword World RPG - Complete Edition.pdf p.172.",
+      "covered_source_claims": [
+        "source-claim-unit-0040-0007"
+      ]
+    },
+    {
+      "bullet_text": "Intellect score describes intelligence, raw/Sword World RPG - Complete Edition.pdf p.173.",
       "covered_source_claims": [
         "source-claim-unit-0040-0005"
       ]
-    },
-    {
-      "bullet_text": "A monster’s location can be changed only if a player‑understandable reason is provided. (raw/Sword World RPG - Complete Edition.pdf p.172-175)",
-      "covered_source_claims": [
-        "source-claim-unit-0040-0181"
-      ]
-    },
-    {
-      "bullet_text": "When a monster moves faster than a character’s agility, escape is impossible unless the character devises a plan. (raw/Sword World RPG - Complete Edition.pdf p.172-175)",
-      "covered_source_claims": [
-        "source-claim-unit-0040-0041"
-      ]
-    },
-    {
-      "bullet_text": "A 'none' intellect means the monster lacks language; it cannot be spoken to. (raw/Sword World RPG - Complete Edition.pdf p.172-175)",
-      "covered_source_claims": [
-        "source-claim-unit-0040-0209"
-      ]
-    },
-    {
-      "bullet_text": "Multiple attack lines indicate a single attack per round, not multiple attacks. (raw/Sword World RPG - Complete Edition.pdf p.172-175)",
-      "covered_source_claims": [
-        "source-claim-unit-0040-0125"
-      ]
     }
   ],
-  "source_record_text": "This section explains how to read the monster catalog, covering data structure and key concepts such as type, movement, and attack."
+  "source_record_text": "This section explains how to interpret the data presented in the monster catalog, detailing formats for monster level, rarity, agility, movement speed, number, frequency, intellect, reaction, attack points, strike points, evasion points, defense points, life points/resistance, mental points/resistance, special abilities, habitat, perception, and languages (raw/Sword World RPG - Complete Edition.pdf p.172-175)."
 }

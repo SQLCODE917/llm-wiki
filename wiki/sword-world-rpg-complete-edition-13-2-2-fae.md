@@ -1,17 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-2-fae
 page_kind: source
-summary: Summary of Fae content from chapter 13.2.2.
+summary: Chapter 13.2.2 Fae describes fae monsters and their characteristics, including pixies, fairies, pookas, and featherfolk.
 sources: raw/Sword World RPG - Complete Edition.pdf p.176-180
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Fae in the Sword World are a group of fairy‑like beings with spirit magic and limited interactions with the material world.
+Chapter 13.2.2 Fae describes fae monsters and their characteristics, including pixies, fairies, pookas, and featherfolk.
 
 ## Key supported claims
 
-- Fairies are a representative race of fae, many still live in the fairy world and rarely enter the material world (raw/Sword World RPG - Complete Edition.pdf p.176-180).
-- Just as humans wander into the fairy world, some fairies wander from the fairy world into the material world, often appearing where the two worlds meet (raw/Sword World RPG - Complete Edition.pdf p.176-180).
-- Fairies take the form of beautiful elf‑like women, mostly naked or wearing thin silk garments, and may use spirit magic up to 3rd level (raw/Sword World RPG - Complete Edition.pdf p.176-180).
+- Pixies are small, friendly fae with wings, resembling elves but only about 30 cm tall, and have the ability to use 2nd level spirit magic and Invisibility (raw/Sword World RPG - Complete Edition.pdf p.176-180).
+- Fairies are representative fae, often seen where the fairy world meets the material world, and they have a deep connection with spirits, using spirit magic up to 3rd level (raw/Sword World RPG - Complete Edition.pdf p.176-180).
+- Pookas are forest-dwelling fae with the ability to shapeshift into animals, and they use 3rd level spirit magic (raw/Sword World RPG - Complete Edition.pdf p.176-180).

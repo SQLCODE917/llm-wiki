@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Full Control Spirit mirrors Control Spirit: a three‑hour ritual, one spirit type, can override will—may cause disappearance. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "bullet_text": "Protective Light creates a glowing light that absorbs up to 50 points of damage, protecting the target from weapons or magic, and can only be used by men (raw/Sword World RPG - Complete Edition.pdf p.84-95).",
       "covered_source_claims": [
         "source-claim-unit-0021-0024"
       ]
     },
     {
-      "bullet_text": "Caster moves freely and may free any identified object from the spell’s effects. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "bullet_text": "Plant Shell summons a dome of plants to create a temporary shelter, offering protection from elements and wild beasts (raw/Sword World RPG - Complete Edition.pdf p.84-95).",
       "covered_source_claims": [
-        "source-claim-unit-0021-0104"
+        "source-claim-unit-0021-0021"
       ]
     },
     {
-      "bullet_text": "Resistance roll may be made only once per round in which the spell is cast. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
-      "covered_source_claims": [
-        "source-claim-unit-0021-0117"
-      ]
-    },
-    {
-      "bullet_text": "If a spirit acts contrary to its nature, it may disappear after the command. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "bullet_text": "Full Control Spirit allows a caster to summon and control lesser spirits completely, overriding their will, requiring a three-hour ritual (raw/Sword World RPG - Complete Edition.pdf p.84-95).",
       "covered_source_claims": [
         "source-claim-unit-0021-0030"
       ]
     },
     {
-      "bullet_text": "Protective light absorbs up to 50 damage; excess damage is not transferred and the protection ends. (raw/Sword World RPG - Complete Edition.pdf p.84-95)",
+      "bullet_text": "Ice Coffin traps an opponent in a pillar of ice, causing them to enter a state of suspended animation (raw/Sword World RPG - Complete Edition.pdf p.84-95).",
       "covered_source_claims": [
-        "source-claim-unit-0021-0004"
+        "source-claim-unit-0021-0025"
+      ]
+    },
+    {
+      "bullet_text": "Ice Storm creates a freezing ice storm that deals cold-type damage to targets within a 10-meter radius (raw/Sword World RPG - Complete Edition.pdf p.84-95).",
+      "covered_source_claims": [
+        "source-claim-unit-0021-0023"
       ]
     }
   ],
-  "source_record_text": "Summary of the spirit magic list part 3 from Sword World RPG – Complete Edition."
+  "source_record_text": "This section covers several spirit magic spells, including Protective Light, Plant Shell, Full Control Spirit, Ice Coffin, Ice Storm, Current, Suffocate, Nightmare, Firestorm, Maze Woods, and Earthquake."
 }

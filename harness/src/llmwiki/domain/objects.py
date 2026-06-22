@@ -34,6 +34,9 @@ from llmwiki.domain.source_summary import (
     SourceSummaryBullet as SourceSummaryBullet,
 )
 from llmwiki.domain.source_summary import (
+    SourceSummaryClaimRequirement as SourceSummaryClaimRequirement,
+)
+from llmwiki.domain.source_summary import (
     SourceSummaryDraft as SourceSummaryDraft,
 )
 from llmwiki.domain.source_summary import (

@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Ogres, also known as _jikininki_, are ferocious, carnivorous titans that particularly enjoy human flesh. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "bullet_text": "The mad spirit of life pours excessive life spirit power into a single target each round, causing age shifting effects (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
       "covered_source_claims": [
-        "source-claim-unit-0043-0040"
+        "source-claim-unit-0043-0031"
       ]
     },
     {
-      "bullet_text": "Although called the hundredhanded titan, they actually possess only 12 arms. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "bullet_text": "Characters cannot move freely in deep snow areas where the yeti lives, suffering a -2 penalty to attack and evasion, and halved movement speed (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
       "covered_source_claims": [
-        "source-claim-unit-0043-0091"
+        "source-claim-unit-0043-0034"
       ]
     },
     {
-      "bullet_text": "Although on the smaller side of titans, ogres stand over 2 m tall and have strong bodies. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
+      "bullet_text": "The yeti is a titan, about two and a half meters tall, rarely seen in cold, snowy regions, and its body is covered in thick white fur (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
       "covered_source_claims": [
-        "source-claim-unit-0043-0043"
-      ]
-    },
-    {
-      "bullet_text": "Among the giants, the race called _Giants_ is one of the ancient races that originated from the primordial titan. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
-      "covered_source_claims": [
-        "source-claim-unit-0043-0099"
-      ]
-    },
-    {
-      "bullet_text": "A spriggan may revert to its true, ugly 3‑meter‑tall titan form when alone with a human who believes it to be a normal child. (raw/Sword World RPG - Complete Edition.pdf p.185-187)",
-      "covered_source_claims": [
-        "source-claim-unit-0043-0062"
+        "source-claim-unit-0043-0033"
       ]
     }
   ],
-  "source_record_text": "Chapter 13.2.5 Titans describes ogres, spriggans, and the ancient Giant race, covering size, arm count, and behavior."
+  "source_record_text": "This section describes various titan monsters, including the mad spirit of life, valkyrie, yeti, ogre, spriggan, troll, hecatoncheir, and giants, detailing their characteristics, abilities, and behaviors."
 }

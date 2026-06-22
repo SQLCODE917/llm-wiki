@@ -20,6 +20,8 @@ from llmwiki.domain.page_body_contracts import (
     validate_page_body,
     validate_source_summary_draft,
 )
+from llmwiki.domain.source_summary_coverage import infer_source_summary_coverage
+from llmwiki.domain.source_summary_rescue import repair_source_summary_draft
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
 
@@ -67,8 +69,14 @@ def source_summary_page_body(
             for bullet in claim_bullets
         ),
     )
-    draft = _fill_empty_claim_coverage(draft, planned_write.source_summary_plan)
     body_contract = source_summary_body_contract(planned_write)
+    draft = repair_source_summary_draft(
+        draft,
+        planned_write.source_summary_plan,
+        max_claim_bullets=body_contract.max_claim_bullets,
+    )
+    draft = _fill_empty_claim_coverage(draft, planned_write.source_summary_plan)
+    draft = infer_source_summary_coverage(draft, planned_write.source_summary_plan)
     source_text = page_body_contract_source_text(store, planned_write)
     findings = validate_source_summary_draft(
         draft,

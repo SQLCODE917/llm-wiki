@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Movement restricts actions; you cannot wield weapons or cast spells while running at full speed. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "bullet_text": "Full movement allows running but restricts actions like wielding weapons or casting spells (raw/Sword World RPG - Complete Edition.pdf p.37-42).",
       "covered_source_claims": [
         "source-claim-unit-0008-0005"
       ]
     },
     {
-      "bullet_text": "You can advance farther, but the restrictions on your actions grow greater with distance. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "bullet_text": "Normal movement allows advancing based on agility or movement speed, with specific action restrictions (raw/Sword World RPG - Complete Edition.pdf p.37-42).",
+      "covered_source_claims": [
+        "source-claim-unit-0008-0014"
+      ]
+    },
+    {
+      "bullet_text": "During full movement, characters can withdraw from engagement, though with penalties (raw/Sword World RPG - Complete Edition.pdf p.37-42).",
       "covered_source_claims": [
         "source-claim-unit-0008-0007"
       ]
     },
     {
-      "bullet_text": "Full movement means the character runs without looking aside, limiting other actions. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "bullet_text": "Movement speed for monsters is separate from agility, allowing them to move up to movement speed x 3 meters (raw/Sword World RPG - Complete Edition.pdf p.37-42).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0045"
+        "source-claim-unit-0008-0010"
       ]
     },
     {
-      "bullet_text": "The following actions may be possible during full movement, such as readying weapons or dropping items. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
+      "bullet_text": "Standing still allows use of magic and projectiles, with movement limited to 3 meters (raw/Sword World RPG - Complete Edition.pdf p.37-42).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0042"
-      ]
-    },
-    {
-      "bullet_text": "Movement is also restricted when using projectiles, preventing attacks while moving. (raw/Sword World RPG - Complete Edition.pdf p.37-42)",
-      "covered_source_claims": [
-        "source-claim-unit-0008-0109"
+        "source-claim-unit-0008-0015"
       ]
     }
   ],
-  "source_record_text": "This section explains movement rules, covering full, normal movement, and standing still options, and how movement limits actions."
+  "source_record_text": "This section details movement and actions during combat in Sword World RPG, outlining the restrictions and distances for full movement, normal movement, and standing still."
 }

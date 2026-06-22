@@ -1,17 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2
 page_kind: source
-summary: Summary of magical creature rules and statistics for golems, air stalkers, and mutant monsters.
+summary: Magical creatures section 13.2.10 from Sword World RPG - Complete Edition, covering air stalker, mutant monster, golems, and underworld creatures.
 sources: raw/Sword World RPG - Complete Edition.pdf p.222-229
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This source contains rules for magical creatures, including golems, air stalkers, mutant monsters, and daemon creatures, with detailed stat blocks and abilities.
+Magical creatures section 13.2.10 from Sword World RPG - Complete Edition, covering air stalker, mutant monster, golems, and underworld creatures.
 
 ## Key supported claims
 
-- Golems are generally slow‑moving creatures, yet these have relatively flexible and agile bodies among them. (raw/Sword World RPG - Complete Edition.pdf p.222-229) may
-- These creatures are beasts of the daemon world, created by daemons. (raw/Sword World RPG - Complete Edition.pdf p.222-229) may
-- Rarity 12, Agility 12, Movement Speed 13, Frequency Rare, Intellect Obeys Commands, Reaction Command‑based, Attack Points Arms 15 (8), Strike 16. (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+- Air stalkers are invisible gas creatures with -4 to attack and evasion. (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+- Mutant monsters are humans transformed by the Living Doll poison, with varied appearances and a chance to return to human form. (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+- Golems are ancient statues with pseudo-life, created from various materials including flesh, iron, and mithril silver. (raw/Sword World RPG - Complete Edition.pdf p.222-229)

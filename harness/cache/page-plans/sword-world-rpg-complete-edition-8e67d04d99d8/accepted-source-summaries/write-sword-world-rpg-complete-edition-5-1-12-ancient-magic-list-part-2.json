@@ -1,35 +1,11 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A caster can attempt to resist a spell only on its first casting; later attempts fail (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
+      "bullet_text": "Physical Enchant subdivided into six spells: Sharpness, Dullness, Quickness, Slowness, Strength, and Weakness (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
       "covered_source_claims": [
-        "source-claim-unit-0016-0114"
-      ]
-    },
-    {
-      "bullet_text": "Spells cannot be pre‑cast in advance; multiple instances must be recast each time (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
-      "covered_source_claims": [
-        "source-claim-unit-0016-0071"
-      ]
-    },
-    {
-      "bullet_text": "Each casting allows speaking only one language; to speak two or more, the spell must be expanded (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
-      "covered_source_claims": [
-        "source-claim-unit-0016-0105"
-      ]
-    },
-    {
-      "bullet_text": "Using a spell on an object with Seal Enchantment gives no effect unless the caster’s final score exceeds the seal score (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
-      "covered_source_claims": [
-        "source-claim-unit-0016-0212"
-      ]
-    },
-    {
-      "bullet_text": "Reading with the spell is limited to one language per cast; doubling the spell permits two unknown languages (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
-      "covered_source_claims": [
-        "source-claim-unit-0016-0185"
+        "source-claim-unit-0016-0099"
       ]
     }
   ],
-  "source_record_text": "Part 2 of the Ancient Magic List summarizes spell limitations for this chapter."
+  "source_record_text": "This section details a list of ancient magic spells, focusing on Physical Enchant and various 4th, 5th, and 6th level spells. Spells are categorized by their effects and levels, with specific details on cost, area, duration, and effects. Unknown aspects of spell interactions are noted."
 }

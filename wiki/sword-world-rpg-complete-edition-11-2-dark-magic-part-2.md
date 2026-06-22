@@ -1,19 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-11-2-dark-magic-part-2
 page_kind: source
-summary: Special dark magic spells unique to wicked gods, covering mechanics, effects, and constraints.
+summary: Special dark magic spells for wicked gods, including Phalaris, The Nameless God of Madness, Kardis, and Mirleaf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.142-148
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-A list of special dark magic spells uniquely available to each wicked god, with effects and rules.
+Special dark magic spells for wicked gods, including Phalaris, The Nameless God of Madness, Kardis, and Mirleaf.
 
 ## Key supported claims
 
-- List of special dark magic spells available to each wicked god. (raw/Sword World RPG - Complete Edition.pdf p.142-148)
-- Spells may be cast without chanting. (raw/Sword World RPG - Complete Edition.pdf p.142-148)
-- Targets can become berserk on double‑one roll. (raw/Sword World RPG - Complete Edition.pdf p.142-148)
-- Spells ineffective on non‑intelligent beings or impulse‑driven beasts. (raw/Sword World RPG - Complete Edition.pdf p.142-148)
-- Effects end only when negated or caster renounces; curses cannot be removed by mind magic. (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+- Phalaris' special dark magic includes Evil Impulse, a level 4 spell that causes targets to impulsively commit evil acts (raw/Sword World RPG - Complete Edition.pdf p.142-148).
+- The Nameless God of Madness' special dark magic includes Insanity and Berserk spells, which affect targets' sanity and cause berserk behavior (raw/Sword World RPG - Complete Edition.pdf p.142-148).
+- Kardis' special dark magic includes a death spell that instantly kills targets who fail resistance rolls (raw/Sword World RPG - Complete Edition.pdf p.142-148).

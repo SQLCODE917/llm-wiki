@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Magic power is limited to a defined set of effects achievable by weaving runes called spells (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
+      "bullet_text": "Magic in Sword World is performed using runes and specific procedures, with five main types: high ancient, silent spirit, holy prayer, daemon scream, and dragon roar (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0028"
+        "source-claim-unit-0012-0054"
       ]
     },
     {
-      "bullet_text": "A double‑sixes roll is an automatic success; a double‑ones roll is an automatic failure, regardless of resistance (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
+      "bullet_text": "Adventurers must make a skill check to use magic, with magic power calculated as magic skill level plus intelligence bonus (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0085"
+        "source-claim-unit-0012-0053"
       ]
     },
     {
-      "bullet_text": "Each rune master can use all magic up to their skill level, but cannot exceed that level (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
+      "bullet_text": "Attempting to cast magic requires a roll, and magic can be either resistible or non-resistible, with different procedures for each (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0008"
-      ]
-    },
-    {
-      "bullet_text": "Holy prayer and daemon scream share the same underlying power, differing only in magical nature (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
-      "covered_source_claims": [
-        "source-claim-unit-0012-0059"
-      ]
-    },
-    {
-      "bullet_text": "Even enemies built from player character data may cast magic and be resisted, meaning magic checks apply between all combatants (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
-      "covered_source_claims": [
-        "source-claim-unit-0012-0099"
+        "source-claim-unit-0012-0052"
       ]
     }
   ],
-  "source_record_text": "Summary of the How to Use Magic chapter, covering spellcasting mechanics and resistance rules."
+  "source_record_text": "Section 5.1.4 How to Use Magic (pages 56-60) from Sword World RPG - Complete Edition."
 }

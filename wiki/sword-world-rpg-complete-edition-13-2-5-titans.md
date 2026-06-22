@@ -1,19 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-5-titans
 page_kind: source
-summary: Titan species—ogres, spriggans, and Giants—with size, arm count, and behavior details.
+summary: Summary of the Titans section from Sword World RPG - Complete Edition, covering various titan monsters and their characteristics.
 sources: raw/Sword World RPG - Complete Edition.pdf p.185-187
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Chapter 13.2.5 Titans describes ogres, spriggans, and the ancient Giant race, covering size, arm count, and behavior.
+This section describes various titan monsters, including the mad spirit of life, valkyrie, yeti, ogre, spriggan, troll, hecatoncheir, and giants, detailing their characteristics, abilities, and behaviors.
 
 ## Key supported claims
 
-- Ogres, also known as _jikininki_, are ferocious, carnivorous titans that particularly enjoy human flesh. (raw/Sword World RPG - Complete Edition.pdf p.185-187)
-- Although called the hundredhanded titan, they actually possess only 12 arms. (raw/Sword World RPG - Complete Edition.pdf p.185-187)
-- Although on the smaller side of titans, ogres stand over 2 m tall and have strong bodies. (raw/Sword World RPG - Complete Edition.pdf p.185-187)
-- Among the giants, the race called _Giants_ is one of the ancient races that originated from the primordial titan. (raw/Sword World RPG - Complete Edition.pdf p.185-187)
-- A spriggan may revert to its true, ugly 3‑meter‑tall titan form when alone with a human who believes it to be a normal child. (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+- The mad spirit of life pours excessive life spirit power into a single target each round, causing age shifting effects (raw/Sword World RPG - Complete Edition.pdf p.185-187).
+- Characters cannot move freely in deep snow areas where the yeti lives, suffering a -2 penalty to attack and evasion, and halved movement speed (raw/Sword World RPG - Complete Edition.pdf p.185-187).
+- The yeti is a titan, about two and a half meters tall, rarely seen in cold, snowy regions, and its body is covered in thick white fur (raw/Sword World RPG - Complete Edition.pdf p.185-187).

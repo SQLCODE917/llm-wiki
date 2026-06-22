@@ -1,35 +1,17 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Attackers roll 2D and add attack power; hit if result ≥ evasion points (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "bullet_text": "Characters attack monsters with a hit check using attack power and 2D, where attack power + 2D ≥ monster's evasion points to hit (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
       "covered_source_claims": [
         "source-claim-unit-0009-0002"
       ]
     },
     {
-      "bullet_text": "Base damage is taken from the Rating Table column matching strike power; roll 2D for the strike roll (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
+      "bullet_text": "If a hit check succeeds, base damage is determined using Table 4-1: Rating Table, with bonus damage added and monster's defense points subtracted (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
       "covered_source_claims": [
-        "source-claim-unit-0009-0024"
-      ]
-    },
-    {
-      "bullet_text": "A double‑ones strike roll deals 0 damage even if the hit check succeeds (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
-      "covered_source_claims": [
-        "source-claim-unit-0009-0035"
-      ]
-    },
-    {
-      "bullet_text": "A double‑ones hit roll automatically fails the attack (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
-      "covered_source_claims": [
-        "source-claim-unit-0009-0148"
-      ]
-    },
-    {
-      "bullet_text": "Life‑force increases may restore consciousness; otherwise, unconscious characters risk death (raw/Sword World RPG - Complete Edition.pdf p.43-50).",
-      "covered_source_claims": [
-        "source-claim-unit-0009-0196"
+        "source-claim-unit-0009-0005"
       ]
     }
   ],
-  "source_record_text": "This chapter explains how characters attack monsters, covering hit checks, strike rolls, damage calculation, criticals, and defense rolls."
+  "source_record_text": "Chapter 4.5 of the Sword World RPG - Complete Edition covers attacks from characters against monsters, detailing hit checks, damage calculation, and defense mechanics."
 }

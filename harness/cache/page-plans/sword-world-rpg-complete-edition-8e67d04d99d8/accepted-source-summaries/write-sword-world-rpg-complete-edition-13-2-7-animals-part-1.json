@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Wolves attack animals that are separated from their herd, avoiding stronger foes. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "bullet_text": "Wolves are carnivorous and usually act in packs of several to several dozen, with moderate rarity (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
       "covered_source_claims": [
-        "source-claim-unit-0047-0006"
+        "source-claim-unit-0047-0004"
       ]
     },
     {
-      "bullet_text": "Omnivorous wolves eat small prey and may target livestock or humans when starving. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
-      "covered_source_claims": [
-        "source-claim-unit-0047-0199"
-      ]
-    },
-    {
-      "bullet_text": "The hanger leg is a headless octopus‑like parasite that infects large animals, indistinguishable by sex. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
-      "covered_source_claims": [
-        "source-claim-unit-0047-0026"
-      ]
-    },
-    {
-      "bullet_text": "Wolf: level 1, rarity 5, agility 16, movement speed 24. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "bullet_text": "Giant rats are intelligent and dexterous, and thus can stand on their hind legs and use simple tools, with a disease ability (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
       "covered_source_claims": [
         "source-claim-unit-0047-0001"
       ]
     },
     {
-      "bullet_text": "Giant rat: moderate frequency, neutral animal intellect, disease (Intensity 5). (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "bullet_text": "Hanger legs are vicious parasites that live by taking over the bodies of large animals, with a parasitism ability (raw/Sword World RPG - Complete Edition.pdf p.199-211).",
       "covered_source_claims": [
-        "source-claim-unit-0047-0011"
+        "source-claim-unit-0047-0002"
       ]
     }
   ],
-  "source_record_text": "This section covers a variety of animal monsters in the Sword World setting, detailing stats, behavior, and special abilities."
+  "source_record_text": "This section details various animals found in the Sword World RPG setting, including their characteristics, behaviors, and combat stats. It covers creatures such as wolves, giant rats, hanger legs, eagles, and more, providing insight into their monster levels, rarity, movement speeds, attack points, and special abilities."
 }

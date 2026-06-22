@@ -1,20 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures
 page_kind: source
-summary: 18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf.
+summary: Rules for destroying structures in Sword World RPG - Complete Edition, including structure strength table and material-specific guidelines.
 sources: raw/Sword World RPG - Complete Edition.pdf p.277-279
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Describes how defense and destruction points govern structure destruction, including special rules for various materials and magic types.
+This section outlines the rules for destroying structures in the Sword World RPG, detailing how defense and destruction points are used, and providing a table of structure materials and their properties.
 
 ## Key supported claims
 
-- Defense points and destruction points are used in the basic system for destroying structures. (raw/Sword World RPG - Complete Edition.pdf p.277-279)
-- Complete immunity, no criticals, normal, and ignore defense points apply to certain weapons and magic when destroying structures. (raw/Sword World RPG - Complete Edition.pdf p.277-279)
-- Damage must exceed the minimum destruction points with a single blow to destroy a structure with 0 defense points. (raw/Sword World RPG - Complete Edition.pdf p.277-279)
-- If the result is greater than or equal to the destruction points, the structure is destroyed by that blow. (raw/Sword World RPG - Complete Edition.pdf p.277-279)
-- However, the structure itself is not destroyed when only defense points are reduced. (raw/Sword World RPG - Complete Edition.pdf p.277-279)
+- Characters cannot destroy walls or doors, but game masters can use common sense (raw/Sword World RPG - Complete Edition.pdf p.277-279).
+- Defense points indicate material strength, with game masters deciding specific scores (raw/Sword World RPG - Complete Edition.pdf p.277-279).
+- Destruction points indicate material strength, with minimum destruction points defined for each material (raw/Sword World RPG - Complete Edition.pdf p.277-279).
+- Damage calculation subtracts defense points from damage, determining if structure is destroyed (raw/Sword World RPG - Complete Edition.pdf p.277-279).
+- Magic types have specific effects on structure destruction, including immunity, criticals, and defense point ignores (raw/Sword World RPG - Complete Edition.pdf p.277-279).

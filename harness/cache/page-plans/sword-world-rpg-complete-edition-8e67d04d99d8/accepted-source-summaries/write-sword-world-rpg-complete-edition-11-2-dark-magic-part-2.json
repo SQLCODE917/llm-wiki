@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "List of special dark magic spells available to each wicked god. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "bullet_text": "Phalaris' special dark magic includes Evil Impulse, a level 4 spell that causes targets to impulsively commit evil acts (raw/Sword World RPG - Complete Edition.pdf p.142-148).",
       "covered_source_claims": [
         "source-claim-unit-0034-0001"
       ]
     },
     {
-      "bullet_text": "Spells may be cast without chanting. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "bullet_text": "The Nameless God of Madness' special dark magic includes Insanity and Berserk spells, which affect targets' sanity and cause berserk behavior (raw/Sword World RPG - Complete Edition.pdf p.142-148).",
       "covered_source_claims": [
-        "source-claim-unit-0034-0050"
+        "source-claim-unit-0034-0002"
       ]
     },
     {
-      "bullet_text": "Targets can become berserk on double‑one roll. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
+      "bullet_text": "Kardis' special dark magic includes a death spell that instantly kills targets who fail resistance rolls (raw/Sword World RPG - Complete Edition.pdf p.142-148).",
       "covered_source_claims": [
-        "source-claim-unit-0034-0020"
-      ]
-    },
-    {
-      "bullet_text": "Spells ineffective on non‑intelligent beings or impulse‑driven beasts. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
-      "covered_source_claims": [
-        "source-claim-unit-0034-0012"
-      ]
-    },
-    {
-      "bullet_text": "Effects end only when negated or caster renounces; curses cannot be removed by mind magic. (raw/Sword World RPG - Complete Edition.pdf p.142-148)",
-      "covered_source_claims": [
-        "source-claim-unit-0034-0045"
+        "source-claim-unit-0034-0003"
       ]
     }
   ],
-  "source_record_text": "A list of special dark magic spells uniquely available to each wicked god, with effects and rules."
+  "source_record_text": "Special dark magic spells for wicked gods, including Phalaris, The Nameless God of Madness, Kardis, and Mirleaf."
 }

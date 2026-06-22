@@ -1,19 +1,17 @@
 ---
 page_id: sword-world-rpg-complete-edition-7-2-merchant-skill
 page_kind: source
-summary: Merchant skill source summary
+summary: Summary of the Merchant Skill rules from Sword World RPG - Complete Edition, section 7.2
 sources: raw/Sword World RPG - Complete Edition.pdf p.125-129
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Merchant skill covers trading abilities, merchant level, and related checks.
+Summary of the Merchant Skill rules from Sword World RPG - Complete Edition, section 7.2
 
 ## Key supported claims
 
-- Merchants are a class with a lot of freedom in Sword World, often traveling for trade (raw/Sword World RPG - Complete Edition.pdf p.125-129).
-- You can only make a check for items that the merchant deals with (raw/Sword World RPG - Complete Edition.pdf p.125-129).
-- Some merchants may sell arts and crafts, while others might sell fresh produce (raw/Sword World RPG - Complete Edition.pdf p.125-129).
-- Each side makes a success roll using merchant level + mental strength bonus as the baseline score (raw/Sword World RPG - Complete Edition.pdf p.125-129).
-- Merchants are well versed in trading one type of item, and are no different from ordinary people when it comes to other items (raw/Sword World RPG - Complete Edition.pdf p.125-129).
+- Merchants in Sword World have freedom to travel and trade, often issuing a merchant's pass by the king for public shop rights (raw/Sword World RPG - Complete Edition.pdf p.125-129).
+- The merchant skill is a general skill that allows adventurers to sell items in shops or on the street, and holders have abilities including Value Check and Negotiation (raw/Sword World RPG - Complete Edition.pdf p.125-129).

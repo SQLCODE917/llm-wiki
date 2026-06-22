@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Skill levels 0‑10 outrank ability scores, shaping actions (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
+      "bullet_text": "Skills describe character characteristics, with greater impact than ability scores (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
       "covered_source_claims": [
-        "source-claim-unit-0003-0029"
+        "source-claim-unit-0003-0006"
       ]
     },
     {
-      "bullet_text": "Adventurer skills: fighter, thief, priest, sorcerer, shaman, sage, ranger, bard; dark & dragon priest are non‑PC (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
+      "bullet_text": "Adventurer skills are for player characters, with eight available: fighter, thief, priest, sorcerer, shaman, sage, ranger, and bard (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
       "covered_source_claims": [
-        "source-claim-unit-0003-0042"
+        "source-claim-unit-0003-0007"
       ]
     },
     {
-      "bullet_text": "Highest adventurer skill level sets a character’s adventurer level (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
+      "bullet_text": "Instead of saying 'someone who has the fighter skill', they are simply called 'fighters' (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
       "covered_source_claims": [
-        "source-claim-unit-0003-0049"
-      ]
-    },
-    {
-      "bullet_text": "Half‑elves may acquire any skill, live ~200 years, and traits vary by upbringing (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
-      "covered_source_claims": [
-        "source-claim-unit-0003-0054"
-      ]
-    },
-    {
-      "bullet_text": "Rune‑master skills (sorcerer, shaman, priest, dark priest, dragon priest) differ from non‑rune adventurers (raw/Sword World RPG - Complete Edition.pdf p.14-16).",
-      "covered_source_claims": [
-        "source-claim-unit-0003-0073"
+        "source-claim-unit-0003-0016"
       ]
     }
   ],
-  "source_record_text": "Chapter 1.3 explains Sword World RPG’s skill system: numeric levels, adventurer vs. general skills, rune‑master distinction, and half‑elf notes, noting that half‑elves may have traits based on upbringing."
+  "source_record_text": "Chapter 1.3 of the Sword World RPG - Complete Edition describes the basics and types of skills used in the game, including adventurer and general skills, and details the eight adventurer skills available to player characters."
 }

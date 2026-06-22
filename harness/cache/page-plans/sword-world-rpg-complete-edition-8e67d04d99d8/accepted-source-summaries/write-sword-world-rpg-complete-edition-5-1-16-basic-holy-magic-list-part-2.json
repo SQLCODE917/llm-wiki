@@ -1,35 +1,11 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Spells are ineffective on mindless beings or those compelled by hunger; possible unknown. (raw/Sword World RPG - Complete Edition.pdf p.99-108)",
+      "bullet_text": "Resurrection adds +6 if corpse is not immediately dying, unknown if corpse is decapitated (raw/Sword World RPG - Complete Edition.pdf p.99-108).",
       "covered_source_claims": [
-        "source-claim-unit-0024-0154"
-      ]
-    },
-    {
-      "bullet_text": "A defense roll of 2 (double ones) or 3 yields no damage reduction. (raw/Sword World RPG - Complete Edition.pdf p.99-108)",
-      "covered_source_claims": [
-        "source-claim-unit-0024-0115"
-      ]
-    },
-    {
-      "bullet_text": "Duration lasts until the caster falls asleep; allows a one‑time conversion of a failed knowledge roll to success. (raw/Sword World RPG - Complete Edition.pdf p.99-108)",
-      "covered_source_claims": [
-        "source-claim-unit-0024-0104"
-      ]
-    },
-    {
-      "bullet_text": "A resurrected body needs one week to regain full function. (raw/Sword World RPG - Complete Edition.pdf p.99-108)",
-      "covered_source_claims": [
-        "source-claim-unit-0024-0008"
-      ]
-    },
-    {
-      "bullet_text": "Undead created by magic or stripped of mental power cannot be restored by ordinary Resurrection. (raw/Sword World RPG - Complete Edition.pdf p.99-108)",
-      "covered_source_claims": [
-        "source-claim-unit-0024-0020"
+        "source-claim-unit-0024-0083"
       ]
     }
   ],
-  "source_record_text": "Summary of the Basic Holy Magic List part 2 section from the Sword World RPG Complete Edition, covering spells, effects, and procedures (p.99‑108)."
+  "source_record_text": "This section details basic holy magic spells, including resurrection, soul saving, and reincarnation spells. It also covers special holy magic spells for specific deities like Pharis, Myrii, Rahda, Cha Za, Marfa, and Braki. Some spell effects are unknown."
 }

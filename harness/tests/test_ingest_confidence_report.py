@@ -12,7 +12,15 @@ from llmwiki.domain.ingest_confidence import (
     decide_artifact_reuse,
     validation_finding,
 )
-from llmwiki.domain.objects import Schema
+from llmwiki.domain.objects import Schema, SourceBundle
+from llmwiki.domain.pages import LOCAL_FLAT_STRUCTURE
+from llmwiki.domain.planning import (
+    build_markdown_page_plan,
+    observation_report,
+    page_plan_from_json,
+    page_plan_to_json,
+)
+from llmwiki.runtime.ingest_confidence_artifacts import prepare_ingest_confidence_artifacts
 from llmwiki.store import WikiStore
 
 
@@ -149,6 +157,53 @@ async def test_ingest_confidence_files_report_and_reuses_artifacts(
     assert "evidence-registry: reuse" in second.output
     assert "Source: raw/alpha.md" in filed
     assert "ingest-confidence" in log_text
+
+
+def test_ingest_confidence_uses_persisted_page_plan_without_fingerprint(
+    paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    source_path = paths.raw_dir / "alpha.md"
+    source_path.write_text("# Alpha\n\nAlpha source text.", encoding="utf-8")
+    store = WikiStore(paths)
+    raw_source = store.raw_source("alpha.md")
+    plan = build_markdown_page_plan(
+        plan_id="persisted-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        source_text=source_path.read_text(encoding="utf-8"),
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today="2026-06-22",
+    )
+    store.write_page_plan_artifacts("alpha.md", page_plan_to_json(plan), observation_report(plan))
+    plan_path = store.page_plan_artifact_dir("alpha.md") / "page-plan.json"
+    assert plan_path.is_file()
+    assert page_plan_from_json(plan_path.read_text(encoding="utf-8")).plan_id == "persisted-plan"
+
+    def fail_rebuild(*_args: object, **_kwargs: object) -> None:
+        raise AssertionError("persisted page plan should be reused")
+
+    monkeypatch.setattr(
+        "llmwiki.runtime.ingest_confidence_artifacts._build_current_page_plan",
+        fail_rebuild,
+    )
+
+    prepared = prepare_ingest_confidence_artifacts(
+        store=store,
+        cache_dir=paths.cache_dir,
+        source_locator="alpha.md",
+        today="2026-06-22",
+    )
+
+    assert prepared.page_plan is not None
+    assert prepared.page_plan.plan_id == "persisted-plan"
+    assert prepared.evidence_registry is not None
+    assert any(
+        decision.artifact_kind == "page-plan"
+        and decision.decision == "reuse"
+        and "parsed persisted" in decision.reason
+        for decision in prepared.decisions
+    )
 
 
 def _fingerprint(source_hash: str) -> ArtifactFingerprint:

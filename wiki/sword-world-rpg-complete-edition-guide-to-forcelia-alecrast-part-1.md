@@ -1,20 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1
 page_kind: source
-summary: Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+summary: History, geography, and social structure of the world of Forcelia and the Alecrast continent in the Sword World RPG.
 sources: raw/Sword World RPG - Complete Edition.pdf p.280-290
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Guide to Forcelia and Alecrast covers the continent’s geography, cosmology, history, and political structure.
+Overview of the world of Forcelia and the Alecrast continent, including its history, geography, and social structure in the Sword World RPG. Some aspects remain unknown.
 
 ## Key supported claims
 
-- These beings, created by the gods, are called the ancient races and are said to have possessed abilities far superior to those of current Forcelia races (raw/Sword World RPG - Complete Edition.pdf p.280-290).
-- Forcelia consists of one continent, Alecrast, and several large islands (raw/Sword World RPG - Complete Edition.pdf p.280-290).
-- The concept of a world outside Forcelia barely exists, known only among some sages who acknowledge other realms (raw/Sword World RPG - Complete Edition.pdf p.280-290).
-- Forcelia may lie at the edge of the distant universe, in the far past or future, or beyond dimensions—its exact location is unknown (raw/Sword World RPG - Complete Edition.pdf p.280-290).
-- In Alecrast, short time units such as seconds are rarely needed and therefore are not used in game rules (raw/Sword World RPG - Complete Edition.pdf p.280-290).
+- Forcelia is a flat, square world with four gates sealing it (raw/Sword World RPG - Complete Edition.pdf p.280-290).
+- The age of mythology began with the death of a Titan, creating gods (raw/Sword World RPG - Complete Edition.pdf p.280-290).
+- The Age of Magic saw the rise of the Kingdom of Kastuul ruled by wizard-kings (raw/Sword World RPG - Complete Edition.pdf p.280-290).
+- The Age of Sword began after the fall of the Ancient Kingdom, lasting over 500 years (raw/Sword World RPG - Complete Edition.pdf p.280-290).
+- Alecrast is part of Forcelia, with a calendar based on the New Kingdom Calendar (raw/Sword World RPG - Complete Edition.pdf p.280-290).

@@ -193,76 +193,76 @@
 - [[javascriptallonge-would-be-3-producing]] — Chapter section on encoding game boards in different ways.
 - [[javascriptallonge-yes-consider-this-variation]] — Summary of the 'Yes. Consider this variation' section from javascriptallonge.pdf, pages 155-157, focusing on closure and variable scoping with var vs let.
 - [[javascriptallonge-yielding-iterables]] — Chapter on yielding iterables from JavaScript Allongé.
-- [[sword-world-rpg-complete-edition]] — Summary of the Sword World RPG - Complete Edition source.
-- [[sword-world-rpg-complete-edition-1-3-skills]] — Chapter 1.3 Skills – numeric levels, skill types, rune‑master distinction, half‑elf notes.
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — Character Creation part 1 summary
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — Character Creation part 2: equipment selection, skill restrictions, and price calculation
-- [[sword-world-rpg-complete-edition-10-3-surprise-attacks]] — Surprise Attack rules and check tables from the Sword World RPG Complete Edition.
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]] — Source summary for Dark Magic rules and dark priest distinctions.
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]] — Special dark magic spells unique to wicked gods, covering mechanics, effects, and constraints.
-- [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]] — Source summary for Dragon Roar Magic rules, including rune usage, training, and summon mechanics.
-- [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]] — Source summary of section 11.5 on requesting NPCs to use magic.
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]] — Sword World RPG rules for poison, illness and infection.
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]] — Rules for poison, illness, and infection – part 2.
-- [[sword-world-rpg-complete-edition-13-1-types-of-monsters]] — A brief overview of 12 monster types and its content.
-- [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]] — How to read the monster catalog: data format, movement, attack, and special rules.
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]] — Summary of magical creature types and lore from the Sword World RPG Complete Edition, covering golems, homunculi, and other anomalous beings.
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]] — Summary of magical creature rules and statistics for golems, air stalkers, and mutant monsters.
-- [[sword-world-rpg-complete-edition-13-2-12-humans]] — Human and lycanthrope rules in chapter 13.2.12
-- [[sword-world-rpg-complete-edition-13-2-2-fae]] — Summary of Fae content from chapter 13.2.2.
-- [[sword-world-rpg-complete-edition-13-2-4-spirits]] — Summary of spirit rules and abilities in chapter 13.2.4.
-- [[sword-world-rpg-complete-edition-13-2-5-titans]] — Titan species—ogres, spriggans, and Giants—with size, arm count, and behavior details.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]] — Summary of key creatures and behaviors described in chapter 13.2.6 of the Sword World RPG Complete Edition.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]] — Mythical and magical beasts from Sword World, pages 188-198.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]] — Summary of mythical and magical beasts chapter 13.2.6, covering roc, humbaba, and dragons.
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]] — Source summary of animals section (wolves, giant rat, hanger leg)
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]] — Animal stat blocks and combat rules from Sword World RPG chapter 13.2.7 (part 2).
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]] — Chapter 13.2.7 part 3: Rules for various animals, including sand worms, giant seals, and other creatures.
-- [[sword-world-rpg-complete-edition-13-2-8-plants]] — 13.2.8 Plants from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]] — Undead types and rules from chapter 13.2.9 part 1.
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]] — Undead type rules: undead knights, king, wights, and related mechanics.
-- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]] — Explains monster level scaling relative to adventurer level and encounter frequency.
-- [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]] — 13.6 Handling Monster Special Abilities from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]] — 14.1 Treasure and Rewards in Sword World from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]] — 14.4 Magical Item List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]] — 14.4 Magical Item List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]] — 14.4 Magical Item List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]] — 16.1 Combat in Which Monsters Roll Dice from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-16-5-combat-options]] — 16.5 Combat Options from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]] — 16.7 Throwing Multiple Darts or Daggers from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-17-2-lost-spells]] — 17.2 Lost Spells from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]] — 18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-2-3-checks]] — 2.3 Checks from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-2-7-resistance-rolls]] — Resistance rolls: life force and mental power rolls based on adventurer level and bonuses.
-- [[sword-world-rpg-complete-edition-3-4-movement-and-actions]] — Movement and Actions rules covering full, normal movement, and standing still.
-- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]] — Character attack mechanics against monsters – hit checks, damage rolls, criticals, and defense interactions (pages 43‑50).
-- [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]] — summary of section 4.9 Unconscious and Death Checks
-- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]] — Source summary for Types of Magic (p.56).
-- [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]] — How to Read Magic Details section covering magic types, rituals, lost spells, and magic detail format.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]] — Ancient Magic List part 1 source summary
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]] — Ancient Magic List part 2 source summary
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]] — 5.1.12 Ancient Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]] — Source summary of Ancient Magic List part 4.
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]] — Spirit Magic List part 1, covering first‑level spirit spells and rules
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]] — Spirit Magic List part 2, covering spirit-based spells and wall effects p.84‑95
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]] — Spirit Magic List part 3 (chapter 5.1.14) – key rules, prerequisites, and spell mechanics for controlling spirits and protective light spells.
-- [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]] — Source summary for Holy Magic and the Priest Skill
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]] — Basic Holy Magic List part 1 – spells for priests, spell‑removal rules, undead damage, and vows.
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]] — Summary of Basic Holy Magic List part 2 (pages 99‑108) from Sword World RPG Complete Edition.
-- [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]] — Source summary for How to Use Magic (p.56-60).
-- [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]] — Source summary for Magic Expansion rules (p.61-64).
-- [[sword-world-rpg-complete-edition-5-3-spellsongs]] — Spellsongs rules and effects in Sword World RPG Complete Edition
-- [[sword-world-rpg-complete-edition-6-2-thief-skill]] — Thief Skill rules covering equipment restrictions, lockpicking, trap setting and listening.
-- [[sword-world-rpg-complete-edition-6-4-sage-skill]] — Summary of Sage Skill rules, including language learning limits, monster check mechanics, and other abilities.
-- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]] — Summary of common adventurer abilities rules in Sword World RPG.
-- [[sword-world-rpg-complete-edition-7-2-merchant-skill]] — Merchant skill source summary
-- [[sword-world-rpg-complete-edition-8-1-experience-points]] — Experience Points rules for character growth and skill advancement.
-- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — Guidance on choosing target score vs. difficulty checks in Sword World RPG.
-- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Overview of supplementary books linked to Sword World RPG, covering replay collections, scenario collections, world guide, novels, adventures, collection series, old rules, and game master screen.
-- [[sword-world-rpg-complete-edition-charts]] — Charts from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-front-matter]] — Front matter of Sword World RPG covering introduction, roles, rulebook meaning, and structure.
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition]] — Source summary for the Sword World RPG - Complete Edition rulebook.
+- [[sword-world-rpg-complete-edition-1-3-skills]] — Chapter 1.3 Skills from Sword World RPG - Complete Edition, covering skill basics, types, and adventurer skills.
+- [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — Overview of character creation process in Sword World RPG, including race selection, ability scores, skills, and equipment.
+- [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — Summary of character creation rules, weapons, armor, and skill-based restrictions.
+- [[sword-world-rpg-complete-edition-10-3-surprise-attacks]] — Summary of the Surprise Attacks section from Sword World RPG - Complete Edition, including rules for surprise attacks, penalties, and check tables.
+- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]] — Summary of chapter 11.2 Dark Magic (part 1) from Sword World RPG - Complete Edition, covering dark magic, dark priests, and basic dark magic spells.
+- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]] — Special dark magic spells for wicked gods, including Phalaris, The Nameless God of Madness, Kardis, and Mirleaf.
+- [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]] — Chapter 11.3 on Dragon Roar Magic from Sword World RPG - Complete Edition, covering the basics, abilities, and spells of dragon priests.
+- [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]] — Rules for asking NPCs to use magic in Sword World RPG, including costs, availability, and requirements for different magic spells.
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]] — Rules for poison, illness and infection in Sword World RPG - Complete Edition, part 1.
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]] — Rules for poison, illness and infection in Sword World RPG - Complete Edition, part 2
+- [[sword-world-rpg-complete-edition-13-1-types-of-monsters]] — Summary of the 13.1 Types of Monsters section from Sword World RPG - Complete Edition
+- [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]] — Section 13.2.1 of the Sword World RPG - Complete Edition, explaining how to read the monster catalog.
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]] — Magical creatures from Sword World RPG - Complete Edition, section 13.2.10, pages 222-227.
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]] — Magical creatures section 13.2.10 from Sword World RPG - Complete Edition, covering air stalker, mutant monster, golems, and underworld creatures.
+- [[sword-world-rpg-complete-edition-13-2-12-humans]] — Summary of the Humans section (13.2.12) from Sword World RPG - Complete Edition, covering normal humans, bandits, soldiers, and dark priests.
+- [[sword-world-rpg-complete-edition-13-2-2-fae]] — Chapter 13.2.2 Fae describes fae monsters and their characteristics, including pixies, fairies, pookas, and featherfolk.
+- [[sword-world-rpg-complete-edition-13-2-4-spirits]] — Summary of the Spirits section (13.2.4) from Sword World RPG - Complete Edition, covering will-o-wisp, shade, brownie, undine, salamander, sandman, sylph, sprite, gnome, frau, leprechaun, dryad, and mad spirit of life.
+- [[sword-world-rpg-complete-edition-13-2-5-titans]] — Summary of the Titans section from Sword World RPG - Complete Edition, covering various titan monsters and their characteristics.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]] — Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 1), covering satyrs, ceiling hangers, harpies, hippocampi, medusas, and androscorpions.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]] — Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 2), pages 188-198.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]] — Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 3) from Sword World RPG - Complete Edition, pages 188-198
+- [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]] — Summary of the Animals (part 1) section from Sword World RPG - Complete Edition, covering monsters like wolves, giant rats, and hanger legs.
+- [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]] — Summary of animals from Sword World RPG - Complete Edition, section 13.2.7 (pages 199-211).
+- [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]] — Summary of animals section 13.2.7 from Sword World RPG - Complete Edition, covering sand worms, giant seals, snakes, spiders, and octopuses.
+- [[sword-world-rpg-complete-edition-13-2-8-plants]] — Summary of the Plants section (13.2.8) from Sword World RPG - Complete Edition, covering killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune.
+- [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]] — Summary of the undead section (13.2.9) from Sword World RPG - Complete Edition, covering monsters like alraune, flowers, fungus, buau zombies, skeletons, zombies, ashes, ghouls, sins, wights, haunts, ghosts, specters, phantoms, jack-o-lanterns, and dullahans.
+- [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]] — Summary of undead monsters in Sword World RPG - Complete Edition, part 2, covering headless horses, undead knights, wraiths, mummies, vampires, and undead kings.
+- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]] — Monster Level and Adventurer Level rules for the Sword World RPG - Complete Edition, including level comparisons and scenario scaling.
+- [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]] — Summary of chapter 13.6 on handling monster special abilities from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]] — Summary of treasure and rewards in the Sword World RPG setting, including ancient kingdom treasures, adventurer's shops, and reward systems.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]] — Magical Item List (part 1) from Sword World RPG - Complete Edition, pages 242-256
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]] — Magical items list from Sword World RPG - Complete Edition, section 14.4, pages 242-256
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]] — Magical items list part 3 from Sword World RPG - Complete Edition, pages 242-260
+- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]] — Combat rules for when monsters roll dice in Sword World RPG
+- [[sword-world-rpg-complete-edition-16-5-combat-options]] — Optional combat rules for Sword World RPG, including full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim.
+- [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]] — Extended rules for throwing multiple darts or daggers in Sword World RPG.
+- [[sword-world-rpg-complete-edition-17-2-lost-spells]] — Rules for lost spells in the Sword World RPG - Complete Edition, including learning methods and spell requirements.
+- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]] — Rules for destroying structures in Sword World RPG - Complete Edition, including structure strength table and material-specific guidelines.
+- [[sword-world-rpg-complete-edition-2-3-checks]] — Chapter 2.3: Checks - baseline scores, target scores, success rolls, automatic success/failure, bonuses/penalties, difficulty checks, and resistance rolls.
+- [[sword-world-rpg-complete-edition-2-7-resistance-rolls]] — Summary of resistance rolls in Sword World RPG - Complete Edition, including life force and mental power resistance.
+- [[sword-world-rpg-complete-edition-3-4-movement-and-actions]] — Rules for movement and actions in combat, including full movement, normal movement, and standing still, with restrictions on actions during each movement type.
+- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]] — Chapter 4.5: Attacks From Characters Against Monsters, including hit checks, damage calculation, and defense mechanics.
+- [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]] — Summary of unconscious and death checks in Sword World RPG - Complete Edition, including rules for unconsciousness, death checks, and mercy.
+- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]] — Overview of the five types of magic in Sword World RPG: ancient, spirit, holy, dark, and dragon roar magic.
+- [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]] — Summary of section 5.1.10 How to Read Magic Details from Sword World RPG - Complete Edition
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]] — Summary of the Ancient Magic List (part 1) from Sword World RPG - Complete Edition, covering 1st, 2nd, and 3rd level spells.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]] — Summary of the Ancient Magic List (part 2) from Sword World RPG - Complete Edition, covering spells from Sharpness to See-Through.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]] — Ancient Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Seal Enchantment, Steal Mind, Slow, Haste, Rune Rope, Dispel Order, Telekinesis, Teleport, Full Potential, Blade Net, Bend Bar, Polymorph, Magic Reflection, Illusionary Beast, Stun Cloud, Force Field, Lightning Bind, Wraith Form, Command Golem, Control Weather, Disintegrate, and Petrification.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]] — Summary of the Ancient Magic List (part 4) from Sword World RPG - Complete Edition, covering spells like Petrify, Rune Shield, Dimension Gate, Death Cloud, Perfect Cancellation, and Meteor Strike.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]] — Summary of the Spirit Magic List (part 1) from Sword World RPG - Complete Edition, pages 84-95.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]] — Spirit Magic List (part 2) from Sword World RPG - Complete Edition, pages 84-95
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]] — Summary of Spirit Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Protective Light, Plant Shell, Full Control Spirit, Ice Coffin, Ice Storm, Current, Suffocate, Nightmare, Firestorm, Maze Woods, and Earthquake.
+- [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]] — Summary of 5.1.15 Holy Magic and the Priest Skill from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]] — Basic Holy Magic List (part 1) from Sword World RPG - Complete Edition, pages 99-104
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]] — Summary of the 5.1.16 Basic Holy Magic List (part 2) from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]] — Source summary of section 5.1.4 How to Use Magic from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]] — Magic expansion and contraction rules for the Sword World RPG - Complete Edition, including types of expansions and contractions, and their effects on mental power consumption.
+- [[sword-world-rpg-complete-edition-5-3-spellsongs]] — Summary of the Spellsongs section (5.3) from Sword World RPG - Complete Edition, including rules, limitations, and effects.
+- [[sword-world-rpg-complete-edition-6-2-thief-skill]] — Summary of the thief skill rules from Sword World RPG - Complete Edition, section 6.2, pages 113-117.
+- [[sword-world-rpg-complete-edition-6-4-sage-skill]] — Summary of the Sage Skill section from Sword World RPG - Complete Edition, detailing its abilities and rules.
+- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]] — Summary of section 6.6 Common Adventurer Abilities from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-7-2-merchant-skill]] — Summary of the Merchant Skill rules from Sword World RPG - Complete Edition, section 7.2
+- [[sword-world-rpg-complete-edition-8-1-experience-points]] — Experience points system in Sword World RPG, including skill advancement and ability score increases.
+- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — Chapter 9.2: Should You Use a Target Score Check or a Difficulty Check? Explains when to use target scores vs. difficulty checks in Sword World RPG.
+- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Overview of books related to Sword World RPG, including Replay Collections, Scenario Collections, World Guide, and other supplements.
+- [[sword-world-rpg-complete-edition-charts]] — Summary of charts and tables from Sword World RPG - Complete Edition, including skill abilities, ability scores, and equipment tables.
+- [[sword-world-rpg-complete-edition-front-matter]] — Front matter of the Sword World RPG - Complete Edition rulebook, including introduction to RPGs, rulebook structure, and game requirements.
+- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — History, geography, and social structure of the world of Forcelia and the Alecrast continent in the Sword World RPG.
+- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Summary of the Guide to Forcelia & Alecrast part 2, covering regions, nations, and cultural elements of Alecrast.
 
 ## Entities
 

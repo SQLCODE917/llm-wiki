@@ -11,6 +11,7 @@ from llmwiki.domain.objects import (
     SourceBundle,
     SourceClaim,
     SourceSummaryBullet,
+    SourceSummaryClaimRequirement,
     SourceSummaryDraft,
     SourceSummaryPlan,
 )
@@ -28,6 +29,8 @@ from llmwiki.domain.source_claims import (
     source_claims,
     source_summary_plan,
 )
+from llmwiki.domain.source_summary_coverage import infer_source_summary_coverage
+from llmwiki.domain.source_summary_rescue import repair_source_summary_draft
 from llmwiki.store import WikiStore, WikiStoreError
 from llmwiki.workflows.planned_write_tools import (
     PlannedWriteSourceSummaryParams,
@@ -297,6 +300,45 @@ def test_source_summary_plan_uses_local_topic_window_for_narrow_rule_titles() ->
     assert not any("opponent's weapons" in statement for statement in selected_statements)
 
 
+def test_source_summary_plan_ignores_incidental_topic_mentions() -> None:
+    raw_source = RawSource.from_locator("rulebook.pdf")
+    unit = build_extracted_unit(
+        unit_id="unit-0007",
+        raw_source=raw_source,
+        locator="p.33-36",
+        heading_path="2.7 Resistance Rolls",
+        text=(
+            "A success roll made using adventurer level plus life force bonus is "
+            "specifically referred to as a life force resistance roll. "
+            "Similarly, a success roll made using adventurer level plus mental power "
+            "bonus is called a mental power resistance roll. "
+            "Life force resistance rolls avoid physical dangers such as poison, while "
+            "mental power resistance rolls avoid magic or curses. "
+            "The game master asks us to make a mental power resistance roll against "
+            "target score 17. "
+            "To the right of each of these is a field to write down the bonus, and "
+            "further right is a field labeled resistance."
+        ),
+    )
+    claims = source_claims((unit,), Schema())
+    plan = source_summary_plan(
+        page_id="sword-world-rpg-complete-edition-2-7-resistance-rolls",
+        contract=resolve_page_body_contract(contract_for_page_kind(Schema(), "source")),
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+
+    assert plan is not None
+    selected_statements = [
+        claim.statement for claim in claims if claim.source_claim_id in plan.selected_source_claims
+    ]
+    assert any("life force resistance roll" in statement for statement in selected_statements)
+    assert any("mental power resistance roll" in statement for statement in selected_statements)
+    assert any("avoid physical dangers" in statement for statement in selected_statements)
+    assert not any("game master asks" in statement for statement in selected_statements)
+    assert not any("field labeled resistance" in statement for statement in selected_statements)
+
+
 def test_source_summary_draft_validation_requires_selected_claim_coverage() -> None:
     plan = _source_summary_plan(
         selected_source_claims=("source-claim-unit-0001-0001", "source-claim-unit-0001-0002")
@@ -368,6 +410,139 @@ def test_source_summary_draft_validation_requires_selected_claim_coverage() -> N
     assert "source-claim-unit" not in render_source_summary_draft(valid)
 
 
+def test_source_summary_coverage_infers_missing_claim_from_bullet_cues() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-alpha",
+        page_id="alpha",
+        selected_source_claims=(
+            "source-claim-unit-0001-0001",
+            "source-claim-unit-0001-0002",
+        ),
+        selected_claim_requirements=(
+            SourceSummaryClaimRequirement(
+                source_claim_id="source-claim-unit-0001-0001",
+                cue_terms=("mental", "power", "roll"),
+            ),
+            SourceSummaryClaimRequirement(
+                source_claim_id="source-claim-unit-0001-0002",
+                cue_terms=("life", "force", "roll"),
+            ),
+        ),
+        required_source_citations=("raw/alpha.md",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[alpha]]. (raw/alpha.md)",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "Life force resistance roll uses the life force bonus. (raw/alpha.md)",
+                ("source-claim-unit-0001-0001",),
+            ),
+        ),
+    )
+
+    inferred = infer_source_summary_coverage(draft, plan)
+
+    assert inferred.claim_bullets[0].covered_source_claims == (
+        "source-claim-unit-0001-0001",
+        "source-claim-unit-0001-0002",
+    )
+
+
+def test_source_summary_coverage_infers_singular_plural_cue_matches() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-alpha",
+        page_id="alpha",
+        selected_source_claims=("source-claim-unit-0001-0001",),
+        selected_claim_requirements=(
+            SourceSummaryClaimRequirement(
+                source_claim_id="source-claim-unit-0001-0001",
+                cue_terms=("character", "sheet", "write"),
+            ),
+        ),
+        required_source_citations=("raw/alpha.md",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[alpha]]. (raw/alpha.md)",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "Sheets required for character creation. (raw/alpha.md)",
+                (),
+            ),
+        ),
+    )
+
+    inferred = infer_source_summary_coverage(draft, plan)
+
+    assert inferred.claim_bullets[0].covered_source_claims == (
+        "source-claim-unit-0001-0001",
+    )
+
+
+def test_source_summary_rescue_repairs_catalog_style_bullets() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-catalog",
+        page_id="catalog",
+        selected_source_claims=(
+            "source-claim-unit-0001-0001",
+            "source-claim-unit-0001-0002",
+            "source-claim-unit-0001-0003",
+        ),
+        required_source_citations=("raw/book.pdf p.199-211",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Catalog source record.",
+        claim_bullets=tuple(
+            SourceSummaryBullet(
+                f"Catalog item {index} has a page-only citation (p. {199 + index}).",
+                (f"source-claim-{index}",),
+            )
+            for index in range(1, 8)
+        ),
+    )
+
+    repaired = repair_source_summary_draft(draft, plan, max_claim_bullets=5)
+
+    assert len(repaired.claim_bullets) == 5
+    assert all(not bullet.covered_source_claims for bullet in repaired.claim_bullets)
+    assert "raw/book.pdf p.199-211" in repaired.source_record_text
+    assert "raw/book.pdf p.200" in repaired.claim_bullets[0].bullet_text
+    assert "raw/book.pdf p.204" in repaired.claim_bullets[4].bullet_text
+
+
+def test_missing_source_summary_coverage_reports_claim_requirements() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-alpha",
+        page_id="alpha",
+        selected_source_claims=("source-claim-unit-0001-0001",),
+        selected_claim_requirements=(
+            SourceSummaryClaimRequirement(
+                source_claim_id="source-claim-unit-0001-0001",
+                claim_role_tags=("method", "identity"),
+                claim_eligibility="eligible",
+                claim_centrality=0.5,
+                cue_terms=("life", "force", "roll"),
+            ),
+        ),
+        required_source_citations=("raw/alpha.md",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[alpha]]. (raw/alpha.md)",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "Alpha is summarized in new words. (raw/alpha.md)",
+                (),
+            ),
+        ),
+    )
+
+    findings = validate_source_summary_draft(draft, plan)
+
+    assert len(findings) == 1
+    assert findings[0].finding_type == "SelectedSourceClaims"
+    assert "claim_id `source-claim-unit-0001-0001`" in findings[0].detail
+    assert "cue_terms `life, force, roll`" in findings[0].detail
+
+
 def test_source_summary_draft_validation_rejects_source_framing_bullets() -> None:
     plan = _source_summary_plan(selected_source_claims=("source-claim-unit-0001-0001",))
     draft = SourceSummaryDraft(
@@ -403,6 +578,56 @@ def test_source_summary_citation_matching_normalizes_unicode_dashes() -> None:
     )
 
     assert validate_source_summary_draft(draft, plan) == ()
+
+
+def test_source_summary_citation_matching_accepts_contained_page_locator() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-book",
+        page_id="book-resistance-rolls",
+        selected_source_claims=("source-claim-unit-0001-0001",),
+        required_source_citations=("raw/book.pdf p.33-36",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[book-resistance-rolls]].",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "Resistance rolls use a baseline score. (raw/book.pdf p.36)",
+                ("source-claim-unit-0001-0001",),
+            ),
+        ),
+    )
+
+    assert validate_source_summary_draft(draft, plan) == ()
+
+
+@pytest.mark.parametrize(
+    "bullet_text",
+    (
+        "The cited page falls outside the planned source span. (raw/book.pdf p.40)",
+        "The cited source is not the planned source. (raw/other-book.pdf p.36)",
+        "The cited span extends outside the planned source span. (raw/book.pdf p.35-37)",
+    ),
+)
+def test_source_summary_citation_matching_rejects_outside_locators(bullet_text: str) -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-book",
+        page_id="book-resistance-rolls",
+        selected_source_claims=("source-claim-unit-0001-0001",),
+        required_source_citations=("raw/book.pdf p.33-36",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Source record for [[book-resistance-rolls]].",
+        claim_bullets=(
+            SourceSummaryBullet(
+                bullet_text,
+                ("source-claim-unit-0001-0001",),
+            ),
+        ),
+    )
+
+    findings = validate_source_summary_draft(draft, plan)
+
+    assert [finding.finding_type for finding in findings] == ["SourceSummaryBulletCitation"]
 
 
 def test_planned_source_summary_tool_accepts_draft_and_retains_artifact(

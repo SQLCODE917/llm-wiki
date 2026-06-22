@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "While this useful item may be found relatively frequently in the ruins of the ancient kingdom, its communication range is limited to approximately 10 km. (raw/Sword World RPG - Complete Edition.pdf p.242-256)",
-      "covered_source_claims": [
-        "source-claim-unit-0060-0075"
-      ]
-    },
-    {
-      "bullet_text": "The effect continues as long as the item is worn. (raw/Sword World RPG - Complete Edition.pdf p.242-256)",
+      "bullet_text": "Shields have +1, +2, and +3 enhancements, some with strength requirements (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
       "covered_source_claims": [
         "source-claim-unit-0060-0058"
       ]
     },
     {
-      "bullet_text": "The effect of this item activates when the wearer directly looks at their target. (raw/Sword World RPG - Complete Edition.pdf p.242-256)",
+      "bullet_text": "Robes, cloaks, and armor provide evasion and damage reduction, with some having additional resistances (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
       "covered_source_claims": [
         "source-claim-unit-0060-0055"
       ]
     },
     {
-      "bullet_text": "Crystals, represented by magic stones, are items that contain magic power sealed within crystals. (raw/Sword World RPG - Complete Edition.pdf p.242-256)",
+      "bullet_text": "Some items have hidden drawbacks, such as Magic Acceptor neutralizing magic resistance, or Shield of the Brave causing enemies to focus attacks (raw/Sword World RPG - Complete Edition.pdf p.242-256).",
       "covered_source_claims": [
-        "source-claim-unit-0060-0076"
-      ]
-    },
-    {
-      "bullet_text": "This item's magic intensity is 15 (magic power 8). (raw/Sword World RPG - Complete Edition.pdf p.242-256)",
-      "covered_source_claims": [
-        "source-claim-unit-0060-0172"
+        "source-claim-unit-0060-0059"
       ]
     }
   ],
-  "source_record_text": "Summary of the magical item list part 2, covering item effects, crystal types, and magic intensity."
+  "source_record_text": "Magical items list from Sword World RPG - Complete Edition, section 14.4, pages 242-256. Some enchantments and effects are unknown."
 }

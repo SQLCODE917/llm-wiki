@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "No Sorcerer or Sage in present‑day Alecrast rivals Mana Rai, and perhaps none will ever appear. (raw/Sword World RPG - Complete Edition.pdf p.280-293)",
+      "bullet_text": "Oran is known for its Sorcerers' Guild, the first established in Alecrast, with Mana Rai as the Grand Master (raw/Sword World RPG - Complete Edition.pdf p.280-293).",
       "covered_source_claims": [
         "source-claim-unit-0068-0005"
       ]
     },
     {
-      "bullet_text": "The capital city of Phandria hosts the only state‑recognized temple of Phalaris in all of Alecrast. (raw/Sword World RPG - Complete Edition.pdf p.280-293)",
+      "bullet_text": "Eremire is known as the 'Kingdom of Craftsmen' with large guilds of craftsmen (raw/Sword World RPG - Complete Edition.pdf p.280-293).",
       "covered_source_claims": [
-        "source-claim-unit-0068-0061"
+        "source-claim-unit-0068-0002"
       ]
     },
     {
-      "bullet_text": "Even for the Alecrast continent, you may ignore some or all of official announcements. (raw/Sword World RPG - Complete Edition.pdf p.280-293)",
+      "bullet_text": "In the central part of northern Alecrast, there are two major nations: Orphan and Ramliearth, with Ramliearth being the 'Magical Kingdom' (raw/Sword World RPG - Complete Edition.pdf p.280-293).",
       "covered_source_claims": [
-        "source-claim-unit-0068-0120"
-      ]
-    },
-    {
-      "bullet_text": "Sword World RPG has a common background world called the Alecrast continent, which limits its enjoyment. (raw/Sword World RPG - Complete Edition.pdf p.280-293)",
-      "covered_source_claims": [
-        "source-claim-unit-0068-0115"
-      ]
-    },
-    {
-      "bullet_text": "For more information about western nations, see Ten Children World Guide. (raw/Sword World RPG - Complete Edition.pdf p.280-293)",
-      "covered_source_claims": [
-        "source-claim-unit-0068-0094"
+        "source-claim-unit-0068-0009"
       ]
     }
   ],
-  "source_record_text": "Guide to Forcelia & Alecrast (part 2) summarizes Alecrast regions, political structures, key cities, and cultural details, based on pages 280‑293 of Sword World RPG – Complete Edition."
+  "source_record_text": "This section covers the geography, nations, and cultural elements of the Alecrast continent, focusing on the central regions and their respective characteristics."
 }

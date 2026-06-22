@@ -1,19 +1,18 @@
 ---
 page_id: sword-world-rpg-complete-edition-1-3-skills
 page_kind: source
-summary: Chapter 1.3 Skills – numeric levels, skill types, rune‑master distinction, half‑elf notes.
+summary: Chapter 1.3 Skills from Sword World RPG - Complete Edition, covering skill basics, types, and adventurer skills.
 sources: raw/Sword World RPG - Complete Edition.pdf p.14-16
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Chapter 1.3 explains Sword World RPG’s skill system: numeric levels, adventurer vs. general skills, rune‑master distinction, and half‑elf notes, noting that half‑elves may have traits based on upbringing.
+Chapter 1.3 of the Sword World RPG - Complete Edition describes the basics and types of skills used in the game, including adventurer and general skills, and details the eight adventurer skills available to player characters.
 
 ## Key supported claims
 
-- Skill levels 0‑10 outrank ability scores, shaping actions (raw/Sword World RPG - Complete Edition.pdf p.14-16).
-- Adventurer skills: fighter, thief, priest, sorcerer, shaman, sage, ranger, bard; dark & dragon priest are non‑PC (raw/Sword World RPG - Complete Edition.pdf p.14-16).
-- Highest adventurer skill level sets a character’s adventurer level (raw/Sword World RPG - Complete Edition.pdf p.14-16).
-- Half‑elves may acquire any skill, live ~200 years, and traits vary by upbringing (raw/Sword World RPG - Complete Edition.pdf p.14-16).
-- Rune‑master skills (sorcerer, shaman, priest, dark priest, dragon priest) differ from non‑rune adventurers (raw/Sword World RPG - Complete Edition.pdf p.14-16).
+- Skills describe character characteristics, with greater impact than ability scores (raw/Sword World RPG - Complete Edition.pdf p.14-16).
+- Adventurer skills are for player characters, with eight available: fighter, thief, priest, sorcerer, shaman, sage, ranger, and bard (raw/Sword World RPG - Complete Edition.pdf p.14-16).
+- Instead of saying 'someone who has the fighter skill', they are simply called 'fighters' (raw/Sword World RPG - Complete Edition.pdf p.14-16).

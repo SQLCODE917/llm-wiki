@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The most feared beast second only to the dragon, the roc is a gigantic bird resembling an eagle, with a wingspan of 20 meters, and may occasionally be swept close to the continent by wind. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "A humbaba can spit fire once every 3 rounds, with damage from a strike power 20 roll plus 10 bonus damage; a successful mental power resistance roll reduces the strike power to 10. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
         "source-claim-unit-0046-0015"
       ]
     },
     {
-      "bullet_text": "There is an outlook that they are like giant beasts, living according to instinct rather than thought. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "The humbaba's fire causes a disease called _humbaba curse_, which can be contracted with a 2D roll (a 7 or greater is needed to avoid infection). (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
-        "source-claim-unit-0046-0045"
+        "source-claim-unit-0046-0015"
       ]
     },
     {
-      "bullet_text": "Those hit by a roc's talon attacks will be grabbed by the talons, lifted into the air, and carried to its nest. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "The roc is a giant bird with a 20-meter wingspan, second only to the dragon in fear, and can carry humansized animals with its talons. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
-        "source-claim-unit-0046-0018"
+        "source-claim-unit-0046-0017"
       ]
     }
   ],
-  "source_record_text": "This section presents the most feared beasts in Forcelia, including the gigantic roc, the fire‑spearing humbaba, and various dragon species."
+  "source_record_text": "This section describes several mythical and magical beasts, including the humbaba, roc, lesser dragon, and elder dragon. It details their abilities, attributes, and behaviors."
 }

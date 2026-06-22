@@ -1,7 +1,9 @@
 {
   "artifact_version": 1,
   "page_body_contract_digest": "8033a17e192568b3728f358b9609cecd4d8ad5dd0efb99c0d145b3ea967e7e58",
-  "profile_ids": [],
+  "profile_ids": [
+    "rulebook"
+  ],
   "schema_id": "local-llm-wiki",
   "source_hash": "e5870dca757ef182e8b799dc3446fcd9fdfc10a23c854245849967f7a80a4ea1",
   "source_locator": "Sword World RPG - Complete Edition.pdf"

@@ -1,19 +1,20 @@
 ---
 page_id: sword-world-rpg-complete-edition-3-4-movement-and-actions
 page_kind: source
-summary: Movement and Actions rules covering full, normal movement, and standing still.
+summary: Rules for movement and actions in combat, including full movement, normal movement, and standing still, with restrictions on actions during each movement type.
 sources: raw/Sword World RPG - Complete Edition.pdf p.37-42
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section explains movement rules, covering full, normal movement, and standing still options, and how movement limits actions.
+This section details movement and actions during combat in Sword World RPG, outlining the restrictions and distances for full movement, normal movement, and standing still.
 
 ## Key supported claims
 
-- Movement restricts actions; you cannot wield weapons or cast spells while running at full speed. (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-- You can advance farther, but the restrictions on your actions grow greater with distance. (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-- Full movement means the character runs without looking aside, limiting other actions. (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-- The following actions may be possible during full movement, such as readying weapons or dropping items. (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-- Movement is also restricted when using projectiles, preventing attacks while moving. (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+- Full movement allows running but restricts actions like wielding weapons or casting spells (raw/Sword World RPG - Complete Edition.pdf p.37-42).
+- Normal movement allows advancing based on agility or movement speed, with specific action restrictions (raw/Sword World RPG - Complete Edition.pdf p.37-42).
+- During full movement, characters can withdraw from engagement, though with penalties (raw/Sword World RPG - Complete Edition.pdf p.37-42).
+- Movement speed for monsters is separate from agility, allowing them to move up to movement speed x 3 meters (raw/Sword World RPG - Complete Edition.pdf p.37-42).
+- Standing still allows use of magic and projectiles, with movement limited to 3 meters (raw/Sword World RPG - Complete Edition.pdf p.37-42).

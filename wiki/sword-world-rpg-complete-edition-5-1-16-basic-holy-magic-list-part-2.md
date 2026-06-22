@@ -1,19 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2
 page_kind: source
-summary: Summary of Basic Holy Magic List part 2 (pages 99‑108) from Sword World RPG Complete Edition.
+summary: Summary of the 5.1.16 Basic Holy Magic List (part 2) from Sword World RPG - Complete Edition.
 sources: raw/Sword World RPG - Complete Edition.pdf p.99-108
-updated: 2026-06-20
+updated: 2026-06-22
+source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-Summary of the Basic Holy Magic List part 2 section from the Sword World RPG Complete Edition, covering spells, effects, and procedures (p.99‑108).
+This section details basic holy magic spells, including resurrection, soul saving, and reincarnation spells. It also covers special holy magic spells for specific deities like Pharis, Myrii, Rahda, Cha Za, Marfa, and Braki. Some spell effects are unknown.
 
 ## Key supported claims
 
-- Spells are ineffective on mindless beings or those compelled by hunger; possible unknown. (raw/Sword World RPG - Complete Edition.pdf p.99-108)
-- A defense roll of 2 (double ones) or 3 yields no damage reduction. (raw/Sword World RPG - Complete Edition.pdf p.99-108)
-- Duration lasts until the caster falls asleep; allows a one‑time conversion of a failed knowledge roll to success. (raw/Sword World RPG - Complete Edition.pdf p.99-108)
-- A resurrected body needs one week to regain full function. (raw/Sword World RPG - Complete Edition.pdf p.99-108)
-- Undead created by magic or stripped of mental power cannot be restored by ordinary Resurrection. (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+- Resurrection adds +6 if corpse is not immediately dying, unknown if corpse is decapitated (raw/Sword World RPG - Complete Edition.pdf p.99-108).

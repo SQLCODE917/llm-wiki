@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from typing import Any, cast
 
 from forge.core.workflow import ToolDef, ToolSpec
@@ -17,6 +18,24 @@ from llmwiki.workflows.source_summary_write import SourceSummaryBulletParams
 from llmwiki.workflows.tools import _normalize_source_value, write_page_tool
 
 PageMapEntries = tuple[tuple[str, str], ...]
+_NAV_TERM_RE = re.compile(r"[a-z0-9]+")
+_NAV_HEADING_STOPWORDS = frozenset(
+    {
+        "and",
+        "book",
+        "chapter",
+        "chapters",
+        "edition",
+        "hub",
+        "list",
+        "part",
+        "reference",
+        "section",
+        "sections",
+        "source",
+        "the",
+    }
+)
 
 
 class WriteFixedSourcePageParams(BaseModel):
@@ -107,15 +126,13 @@ def write_fixed_source_page_tool(
                 "No page was written. Fixed source hub write_page arguments "
                 f"did not match the required schema:\n{exc}"
             )
-        if params.source_record_text is not None or params.claim_bullets:
-            if params.source_record_text is None or not params.claim_bullets:
-                raise WikiStoreError(
-                    "Source-summary hub writes require source_record_text and claim_bullets."
-                )
+        source_record_text = params.source_record_text
+        claim_bullets = params.claim_bullets
+        if source_record_text is not None and claim_bullets:
             body = _page_body_with_required_links(
                 _source_summary_fields_to_page_body(
-                    params.source_record_text,
-                    params.claim_bullets,
+                    source_record_text,
+                    claim_bullets,
                     params.sources,
                 ),
                 required_link_targets,
@@ -209,7 +226,7 @@ def _page_body_with_required_links(
         return page_body
     body_without_page_map, had_page_map = _strip_page_map_navigation(page_body)
     body_without_nav_lists, had_nav_lists = _strip_required_link_list_sections(
-        body_without_page_map, required_target_set
+        body_without_page_map, required_target_set, dict(required_page_map_entries)
     )
     if had_page_map or had_nav_lists:
         return _append_page_map_links(
@@ -245,12 +262,15 @@ def _strip_page_map_navigation(text: str) -> tuple[str, bool]:
 
 
 def _strip_required_link_list_sections(
-    text: str, required_target_set: frozenset[str]
+    text: str,
+    required_target_set: frozenset[str],
+    page_map_labels: dict[str, str],
 ) -> tuple[str, bool]:
     lines = text.splitlines()
     kept: list[str] = []
     stripped = False
     index = 0
+    document_intro_terms = _document_intro_terms(lines)
     while index < len(lines):
         line = lines[index]
         if line.startswith("## "):
@@ -258,7 +278,9 @@ def _strip_required_link_list_sections(
             while end < len(lines) and not lines[end].startswith("## "):
                 end += 1
             section = lines[index:end]
-            if _is_required_link_list_section(section, required_target_set):
+            if _is_required_link_list_section(
+                section, required_target_set, page_map_labels, document_intro_terms
+            ):
                 stripped = True
                 while kept and not kept[-1].strip():
                     kept.pop()
@@ -270,15 +292,62 @@ def _strip_required_link_list_sections(
 
 
 def _is_required_link_list_section(
-    section_lines: list[str], required_target_set: frozenset[str]
+    section_lines: list[str],
+    required_target_set: frozenset[str],
+    page_map_labels: dict[str, str],
+    document_intro_terms: frozenset[str],
 ) -> bool:
     content_lines = [line.strip() for line in section_lines[1:] if line.strip()]
+    prose_lines = [line for line in content_lines if not line.startswith("- ")]
+    if prose_lines:
+        return False
     bullet_lines = [line for line in content_lines if line.startswith("- ")]
     link_bullets = [line for line in bullet_lines if line.startswith("- [[")]
     if len(link_bullets) < 2 or len(link_bullets) != len(bullet_lines):
         return False
     section_links = extract_links("\n".join(section_lines))
+    if _section_heading_matches_link_context(
+        section_lines[0], section_links, page_map_labels, document_intro_terms
+    ):
+        return False
     return bool(section_links & required_target_set)
+
+
+def _document_intro_terms(lines: list[str]) -> frozenset[str]:
+    intro_lines: list[str] = []
+    for line in lines:
+        if line.startswith("## "):
+            break
+        intro_lines.append(line)
+    return _navigation_terms(" ".join(intro_lines))
+
+
+def _section_heading_matches_link_context(
+    heading: str,
+    section_links: set[str],
+    page_map_labels: dict[str, str],
+    document_intro_terms: frozenset[str],
+) -> bool:
+    heading_terms = _navigation_terms(heading.removeprefix("## "))
+    if not heading_terms:
+        return False
+    link_context_terms: set[str] = set(document_intro_terms)
+    for page_id in section_links:
+        link_context_terms.update(_navigation_terms(page_id))
+        link_context_terms.update(_navigation_terms(page_map_labels.get(page_id, "")))
+    return bool(heading_terms & link_context_terms)
+
+
+def _navigation_terms(text: str) -> frozenset[str]:
+    terms = {
+        term
+        for term in _NAV_TERM_RE.findall(text.lower())
+        if len(term) > 2 and term not in _NAV_HEADING_STOPWORDS
+    }
+    for term in tuple(terms):
+        if term.endswith("s") and len(term) > 4:
+            terms.add(term[:-1])
+    return frozenset(terms)
 
 
 def _append_page_map_links(

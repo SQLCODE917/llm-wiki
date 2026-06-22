@@ -1,25 +1,29 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Characters select equipment whose required strength matches their own, with skills possibly imposing extra limits. (raw/Sword World RPG - Complete Edition.pdf p.17-30)",
+      "bullet_text": "Characters choose weapons whose required strength matches their own strength (raw/Sword World RPG - Complete Edition.pdf p.17-30).",
       "covered_source_claims": [
-        "source-claim-unit-0005-0017",
-        "source-claim-unit-0005-0056"
+        "source-claim-unit-0005-0009"
       ]
     },
     {
-      "bullet_text": "Metal armor other than ring mail is disallowed regardless of strength. (raw/Sword World RPG - Complete Edition.pdf p.17-30)",
+      "bullet_text": "Weapons and armor prices vary based on required strength, calculated using formulas like x20+40 (raw/Sword World RPG - Complete Edition.pdf p.17-30).",
       "covered_source_claims": [
-        "source-claim-unit-0005-0027",
-        "source-claim-unit-0005-0041"
+        "source-claim-unit-0005-0008"
       ]
     },
     {
-      "bullet_text": "If a character lacks a skill related to an action, the baseline score is 0, independent of ability scores. (raw/Sword World RPG - Complete Edition.pdf p.17-30)",
+      "bullet_text": "Characters must choose one armor whose required strength equals their own strength (raw/Sword World RPG - Complete Edition.pdf p.17-30).",
       "covered_source_claims": [
-        "source-claim-unit-0005-0177"
+        "source-claim-unit-0005-0004"
+      ]
+    },
+    {
+      "bullet_text": "Shields require specific strength: small (1), large (13) (raw/Sword World RPG - Complete Edition.pdf p.17-30).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0007"
       ]
     }
   ],
-  "source_record_text": "This section explains how to choose weapons, armor, shields, and other equipment based on a character’s strength and skills, including price calculations and restrictions."
+  "source_record_text": "This section covers the second part of character creation in the Sword World RPG, detailing rules for weapons, armor, shields, and how different skills affect equipment choices."
 }

@@ -1,35 +1,17 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Merchants are a class with a lot of freedom in Sword World, often traveling for trade (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
+      "bullet_text": "Merchants in Sword World have freedom to travel and trade, often issuing a merchant's pass by the king for public shop rights (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
+      "covered_source_claims": [
+        "source-claim-unit-0029-0030"
+      ]
+    },
+    {
+      "bullet_text": "The merchant skill is a general skill that allows adventurers to sell items in shops or on the street, and holders have abilities including Value Check and Negotiation (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
       "covered_source_claims": [
         "source-claim-unit-0029-0026"
       ]
-    },
-    {
-      "bullet_text": "You can only make a check for items that the merchant deals with (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
-      "covered_source_claims": [
-        "source-claim-unit-0029-0053"
-      ]
-    },
-    {
-      "bullet_text": "Some merchants may sell arts and crafts, while others might sell fresh produce (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
-      "covered_source_claims": [
-        "source-claim-unit-0029-0034"
-      ]
-    },
-    {
-      "bullet_text": "Each side makes a success roll using merchant level + mental strength bonus as the baseline score (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
-      "covered_source_claims": [
-        "source-claim-unit-0029-0057"
-      ]
-    },
-    {
-      "bullet_text": "Merchants are well versed in trading one type of item, and are no different from ordinary people when it comes to other items (raw/Sword World RPG - Complete Edition.pdf p.125-129).",
-      "covered_source_claims": [
-        "source-claim-unit-0029-0035"
-      ]
     }
   ],
-  "source_record_text": "Merchant skill covers trading abilities, merchant level, and related checks."
+  "source_record_text": "Summary of the Merchant Skill rules from Sword World RPG - Complete Edition, section 7.2"
 }
