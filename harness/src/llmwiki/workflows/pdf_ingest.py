@@ -24,6 +24,7 @@ from llmwiki.workflows import prompts
 from llmwiki.workflows.fixed_page_tools import write_fixed_source_page_tool
 from llmwiki.workflows.ingest_route_tools import plan_pages_tool
 from llmwiki.workflows.tools import (
+    finish_after_successful_write_tool,
     finish_tool,
     read_page_tool,
     search_wiki_tool,
@@ -82,10 +83,11 @@ def build_map_workflow(
             ingest_route_plan_state=ingest_route_plan_state,
             recoverable_errors=recoverable_tool_errors,
         ),
-        finish_tool(
+        finish_after_successful_write_tool(
             "finish_chunk",
             "Finish this chunk after the wiki reflects it. Report concise "
             "notes: key claims, entities touched, pages written.",
+            write_log,
         ),
     ]
     return Workflow(

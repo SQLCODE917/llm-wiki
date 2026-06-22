@@ -376,7 +376,7 @@ class TestIngest:
         assert store.list_pages() == ["moon"]
         assert "source-claim-unit" not in store.read_page("moon")
 
-    async def test_markdown_ingest_without_successful_write_is_not_logged(
+    async def test_markdown_ingest_rejects_finish_until_successful_write(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
         script = [
@@ -392,13 +392,24 @@ class TestIngest:
                 )
             ],
             [ToolCall(tool="finish_ingest", args={"report": "claimed done"})],
+            [
+                ToolCall(
+                    tool="write_page",
+                    args=_source_summary_write_args(
+                        claim_text="A compact lunar-origin note keeps the impact claim."
+                    ),
+                )
+            ],
+            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
         ]
 
-        with pytest.raises(RuntimeError, match="successful page writes"):
-            await _session(store, script, paths).ingest(source)
+        result = await _session(store, script, paths).ingest(source)
 
-        assert store.list_pages() == []
-        assert "claimed done" not in paths.log_path.read_text(encoding="utf-8")
+        log_text = paths.log_path.read_text(encoding="utf-8")
+        assert result.output == "ok"
+        assert store.list_pages() == ["moon"]
+        assert "claimed done" not in log_text
+        assert f"## [{TODAY}] ingest | moon.md" in log_text
 
     async def test_rewrite_without_read_is_blocked_then_recovers(
         self, store: WikiStore, paths: WikiPaths, source: str

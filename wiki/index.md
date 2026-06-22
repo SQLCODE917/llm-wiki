@@ -2,7 +2,7 @@
 
 ## Sources
 - [[antikythera-mechanism]] — Source summarizing the Antikythera Mechanism, an ancient Greek analog computer.
-- [[javascriptallonge]] — JavaScript Allongé, the 'Six' Edition by Reg 'raganwald' Braithwaite.
+- [[javascriptallonge]] — Hub page for JavaScript Allongé, the 'Six' Edition.
 - [[javascriptallonge-a-balanced-statement-about-combinators]] — Summary of the chapter on combinators from 'JavaScript Allongé'.
 - [[javascriptallonge-a-few-utilities]] — Summary of the 'a few utilities' section from 'JavaScript Allongé'.
 - [[javascriptallonge-a-history-lesson]] — A history lesson on variadic functions and argument gathering in JavaScript, from javascriptallonge.pdf p.90-91.

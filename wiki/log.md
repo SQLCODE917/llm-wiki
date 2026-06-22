@@ -159,3 +159,15 @@ The hub source page for 'JavaScript Allongé, the 'Six' Edition' has been create
 
 ## [2026-06-20] ingest | Sword World RPG - Complete Edition.pdf
 The hub source page 'sword-world-rpg-complete-edition' has been updated to link all chapter pages created during the chunking process. The page structure now includes sections for Character Creation, Checks and Actions, Combat, Magic, Skills, Experience and Progression, Difficulty and Target Checks, Surprise and Ambush, Health and Conditions, Monsters, Treasure and Items, Campaign and Setting, Related Books, and Front Matter, with appropriate links to the corresponding chunk pages.
+
+## [2026-06-22] ingest | antikythera-mechanism.md
+The source page for the Antikythera Mechanism has been updated with new claims from the raw source. The updated page includes information about the device's Greek geared orrery nature, its wreck find date, the research project's use of tomographic imaging, and how its engineering exceeded surviving ancient mechanisms.
+
+## [2026-06-22] ingest | antikythera-mechanism.md
+Updated the antikythera-mechanism source page with new information about the mechanism's sophistication, research methods, and possible origins. The page now includes details about the Antikythera Mechanism Research Project and its connection to the school of Archimedes.
+
+## [2026-06-22] ingest | antikythera-mechanism.md
+Updated the source page for the Antikythera Mechanism. The page now includes a summary of the device, its historical context, and key claims supported by the source material. No new entity or concept pages were created in this ingest.
+
+## [2026-06-22] ingest | javascriptallonge.pdf
+The hub page for JavaScript Allongé has been created and updated with links to all chapter and topic pages from the page map. The page structure now includes the main source hub and all related content pages from the chunking process.

@@ -220,14 +220,22 @@ def _markdown_shape_findings(
         return ()
     bullet_count = len(_BULLET_RE.findall(page_body))
     min_bullets = contract.min_claim_bullets or 2
-    if bullet_count >= min_bullets:
-        return ()
-    return (
-        PageBodyFinding(
-            "RequiredMarkdownShape",
-            f"expected at least {min_bullets} markdown bullet claims",
-        ),
-    )
+    findings: list[PageBodyFinding] = []
+    if bullet_count < min_bullets:
+        findings.append(
+            PageBodyFinding(
+                "RequiredMarkdownShape",
+                f"expected at least {min_bullets} markdown bullet claims",
+            )
+        )
+    if contract.max_claim_bullets and bullet_count > contract.max_claim_bullets:
+        findings.append(
+            PageBodyFinding(
+                "RequiredMarkdownShape",
+                f"expected at most {contract.max_claim_bullets} markdown bullet claims",
+            )
+        )
+    return tuple(findings)
 
 
 def _grounding_findings(
@@ -313,9 +321,16 @@ def _draft_copy_findings(
     if not source_ngrams:
         return ()
     findings: list[PageBodyFinding] = []
+    copied_record = _first_copied_ngram(draft.source_record_text, source_ngrams)
+    if copied_record is not None:
+        findings.append(
+            PageBodyFinding(
+                "CopiedSourcePhrase",
+                f"source_record_text copies source phrase: {' '.join(copied_record)}",
+            )
+        )
     for index, bullet in enumerate(draft.claim_bullets, start=1):
-        bullet_ngrams = _ngrams(_words(bullet.bullet_text), _COPIED_NGRAM_SIZE)
-        copied = next((ngram for ngram in bullet_ngrams if ngram in source_ngrams), None)
+        copied = _first_copied_ngram(bullet.bullet_text, source_ngrams)
         if copied is not None:
             findings.append(
                 PageBodyFinding(
@@ -324,6 +339,13 @@ def _draft_copy_findings(
                 )
             )
     return tuple(findings)
+
+
+def _first_copied_ngram(
+    text: str, source_ngrams: set[tuple[str, ...]]
+) -> tuple[str, ...] | None:
+    text_ngrams = _ngrams(_words(text), _COPIED_NGRAM_SIZE)
+    return next((ngram for ngram in text_ngrams if ngram in source_ngrams), None)
 
 
 def _source_summary_bullet_citation_findings(

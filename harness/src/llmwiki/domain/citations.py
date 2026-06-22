@@ -26,6 +26,7 @@ FindingCode = Literal[
     "malformed-line-range",
     "path-outside-raw",
     "ocr-verbatim-risk",
+    "source-range-violation",
 ]
 
 _RAW_CITATION_RE = re.compile(r"raw/(?P<body>[^\n)\]]+)")

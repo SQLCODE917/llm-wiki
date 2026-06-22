@@ -38,6 +38,8 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `DomainFrontmatter` | `domain_frontmatter` |
 | `GeneratedWikiState` | `generated_wiki_state` |
 | `SourceLocator` | `source_locator` |
+| `SourceText` | `source_text` |
+| `SourceRange` | `source_range` |
 | `RawSource` | `raw_source` |
 | `SourceBundle` | `source_bundle` |
 | `Schema` | `schema` |
@@ -61,6 +63,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `SourceSummaryBullet` | `source_summary_bullet` |
 | `PlannedPageWrite` | `planned_page_write` |
 | `Evidence` | `evidence` |
+| `EvidenceRecord` | `evidence_record` |
+| `EvidenceRegistry` | `evidence_registry` |
+| `EvidenceBank` | `evidence_bank` |
+| `LocatorMatch` | `locator_match` |
 | `IndexEntry` | `index_entry` |
 | `LogEntry` | `log_entry` |
 | `LintRun` | `lint_run` |
@@ -82,6 +88,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | CandidateBacklog | Exists | `llmwiki.domain.candidates` |
 | ChatSession | Existing concept | `llmwiki.store.chat_store` SQLite rows and `llmwiki.runtime.chat_repl` flows |
 | PdfIngestManifest | Existing concept | `llmwiki.pdf.manifest.Manifest` |
+| EvidenceRegistry | Exists | `llmwiki.domain.evidence_registry`; persisted beside `PagePlan` cache artifacts |
 | SchemaDocument | Deferred | Introduce when schema parsing, versioning, or validation becomes a domain rule. |
 | QueryRun | Deferred | Introduce when query lifecycle state needs domain validation beyond orchestration. |
 | LintRun | Exists | `llmwiki.domain.objects` |
@@ -114,6 +121,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ClaimComparison | Exists | `llmwiki.domain.objects` |
 | PlannedPageWrite | Exists | `llmwiki.domain.objects` |
 | Evidence | Exists | `llmwiki.domain.objects`; citation evidence policy remains separate |
+| SourceText | Exists | `llmwiki.domain.evidence_registry`; line-addressable generated source text |
+| SourceRange | Exists | `llmwiki.domain.evidence_registry`; page-scoped source span |
+| EvidenceRecord | Exists | `llmwiki.domain.evidence_registry`; stable generated evidence excerpt record |
+| EvidenceBank | Exists | `llmwiki.domain.evidence_registry`; bounded snippets derived from evidence records |
+| LocatorMatch | Exists | `llmwiki.domain.evidence_registry`; deterministic locator check result |
 | GroundingVerdict | Exists | `llmwiki.domain.grounding` |
 | ContradictionFinding | Exists | `llmwiki.domain.contradictions` |
 | CandidateRecord | Exists | `llmwiki.domain.candidates` |

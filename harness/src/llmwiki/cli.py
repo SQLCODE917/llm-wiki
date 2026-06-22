@@ -30,6 +30,7 @@ from llmwiki.domain.candidates import (
 )
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
+from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
 from llmwiki.domain.index import index_page_ids
@@ -490,6 +491,7 @@ def _curator_report(
         store.write_candidate_backlog(candidate_backlog)
     evidence_policy = EvidencePolicy(mode=strict_evidence)
     inventory = store.source_inventory() if evidence_policy.enabled else None
+    registry = _latest_evidence_registry(store) if evidence_policy.enabled else None
     status = build_curator_status(
         page_texts=page_texts,
         index_page_ids=index_page_ids(index_text),
@@ -501,6 +503,7 @@ def _curator_report(
             page_texts,
             inventory,
             store.source_resolver() if evidence_policy.enabled else None,
+            registry=registry,
         ),
         salience_report=compute_salience(page_texts),
         candidate_backlog=candidate_backlog,
@@ -543,6 +546,17 @@ def _route_plan_status(paths: WikiPaths) -> RoutePlanStatus:
         total_route_gaps=total_route_gaps,
         recent_route_gaps=tuple(recent_route_gaps[-5:]),
     )
+
+
+def _latest_evidence_registry(store: WikiStore) -> EvidenceRegistry | None:
+    registries = []
+    for source_locator in store.list_sources():
+        registry = store.read_evidence_registry_artifact(source_locator)
+        if registry is not None:
+            registries.append(registry)
+    if not registries:
+        return None
+    return registries[-1]
 
 
 def _semantic_lint_summary(store: WikiStore) -> str:

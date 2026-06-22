@@ -33,6 +33,7 @@ from llmwiki.workflows.ingest_route_tools import plan_pages_tool
 from llmwiki.workflows.respond_gate import respond_after_wiki_read_tool
 from llmwiki.workflows.semantic_lint_tools import record_semantic_finding_tool
 from llmwiki.workflows.tools import (
+    finish_after_successful_write_tool,
     finish_tool,
     read_index_tool,
     read_page_tool,
@@ -87,10 +88,11 @@ def build_ingest_workflow(
             ingest_route_plan_state=ingest_route_plan_state,
             recoverable_errors=recoverable_tool_errors,
         ),
-        finish_tool(
+        finish_after_successful_write_tool(
             "finish_ingest",
             "Finish the ingest after the wiki fully reflects the source. "
             "Report which pages were written or updated.",
+            write_log,
         ),
     ]
     return Workflow(

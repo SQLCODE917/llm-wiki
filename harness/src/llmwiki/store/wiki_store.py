@@ -21,6 +21,8 @@ from pathlib import Path
 from llmwiki.config import SOURCE_READ_BUDGET_CHARS, WikiPaths
 from llmwiki.domain.candidates import CandidateBacklog, backlog_from_json_text
 from llmwiki.domain.citations import SourceInventory
+from llmwiki.domain.evidence_registry import EvidenceRegistry
+from llmwiki.domain.evidence_registry_io import registry_from_json
 from llmwiki.domain.index import (
     empty_index,
     index_page_ids,
@@ -313,6 +315,21 @@ class WikiStore:
         plan_path.write_text(page_plan_json, encoding="utf-8")
         report_path.write_text(observation_report, encoding="utf-8")
         return plan_path, report_path
+
+    def write_evidence_registry_artifact(
+        self, source_locator: str, evidence_registry_json: str
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        registry_path = artifact_dir / "evidence-registry.json"
+        registry_path.write_text(evidence_registry_json, encoding="utf-8")
+        return registry_path
+
+    def read_evidence_registry_artifact(self, source_locator: str) -> EvidenceRegistry | None:
+        registry_path = self.page_plan_artifact_dir(source_locator) / "evidence-registry.json"
+        if not registry_path.is_file():
+            return None
+        return registry_from_json(registry_path.read_text(encoding="utf-8"))
 
     def write_source_summary_draft_artifact(
         self,

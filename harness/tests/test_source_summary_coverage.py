@@ -504,7 +504,7 @@ def test_planned_source_summary_tool_accepts_single_selected_claim(paths: WikiPa
     assert store.read_page("recursion").count("\n- ") == 1
 
 
-def test_planned_source_summary_tool_repairs_copy_only_drafts(paths: WikiPaths) -> None:
+def test_planned_source_summary_tool_rejects_copy_only_drafts(paths: WikiPaths) -> None:
     source_text = (
         "# Alpha\n\n"
         "Alpha beta gamma delta epsilon zeta eta theta iota. "
@@ -528,34 +528,34 @@ def test_planned_source_summary_tool_repairs_copy_only_drafts(paths: WikiPaths) 
     selected_claims = planned_write.source_summary_plan.selected_source_claims
     tool = planned_write_page_tool(store, TODAY, planned_write)
 
-    result = tool.callable(
-        source_record_text="Alpha beta gamma delta epsilon zeta eta theta iota.",
-        claim_bullets=[
-            {
-                "bullet_text": (
-                    "Alpha beta gamma delta epsilon zeta eta theta iota. (raw/alpha.md)"
-                ),
-                "covered_source_claims": [selected_claims[0]],
-            },
-            {
-                "bullet_text": (
-                    "The alpha record was recovered from a dated archive. (raw/alpha.md)"
-                ),
-                "covered_source_claims": [selected_claims[1]],
-            },
-            {
-                "bullet_text": (
-                    "Researchers used tomography to read hidden inscriptions. (raw/alpha.md)"
-                ),
-                "covered_source_claims": [selected_claims[2]],
-            },
-        ],
-    )
+    with pytest.raises(WikiStoreError, match="CopiedSourcePhrase") as exc:
+        tool.callable(
+            source_record_text="Alpha beta gamma delta epsilon zeta eta theta iota.",
+            claim_bullets=[
+                {
+                    "bullet_text": (
+                        "Alpha beta gamma delta epsilon zeta eta theta iota. (raw/alpha.md)"
+                    ),
+                    "covered_source_claims": [selected_claims[0]],
+                },
+                {
+                    "bullet_text": (
+                        "The alpha record was recovered from a dated archive. (raw/alpha.md)"
+                    ),
+                    "covered_source_claims": [selected_claims[1]],
+                },
+                {
+                    "bullet_text": (
+                        "Researchers used tomography to read hidden inscriptions. (raw/alpha.md)"
+                    ),
+                    "covered_source_claims": [selected_claims[2]],
+                },
+            ],
+        )
 
-    body = store.read_page("alpha")
-    assert "Wrote wiki/alpha.md" in result
-    assert "Alpha beta gamma delta epsilon zeta eta theta" not in body
-    assert "## Key supported claims" in body
+    assert "source_record_text copies source phrase" in str(exc.value)
+    assert "avoid copied phrases" in str(exc.value)
+    assert store.list_pages() == []
 
 
 def test_planned_source_summary_tool_rejects_uncovered_selected_claim(
@@ -598,6 +598,44 @@ def test_planned_source_summary_tool_rejects_uncovered_selected_claim(
                     "bullet_text": "The draft still omits another selected claim. (raw/alpha.md)",
                     "covered_source_claims": [covered_claim],
                 },
+            ],
+        )
+
+    assert store.list_pages() == []
+
+
+def test_planned_source_summary_tool_rejects_too_many_claim_bullets(
+    paths: WikiPaths,
+) -> None:
+    source_text = (
+        "Alpha measures orbital events. "
+        "Beta records workshop evidence. "
+        "Gamma preserves later research notes."
+    )
+    (paths.raw_dir / "alpha.md").write_text(source_text, encoding="utf-8")
+    store = WikiStore(paths)
+    raw_source = RawSource.from_locator("alpha.md")
+    page_plan = build_markdown_page_plan(
+        plan_id="test-plan",
+        source_bundle=SourceBundle.one(raw_source),
+        raw_source=raw_source,
+        source_text=source_text,
+        existing_pages={},
+        wiki_structure=LOCAL_FLAT_STRUCTURE,
+        today=TODAY,
+    )
+    selected_claims = page_plan.planned_writes[0].source_summary_plan.selected_source_claims
+    tool = planned_write_page_tool(store, TODAY, page_plan.planned_writes[0])
+
+    with pytest.raises(WikiStoreError, match="at most 5 markdown bullet claims"):
+        tool.callable(
+            source_record_text="Compact alpha source summary. (raw/alpha.md)",
+            claim_bullets=[
+                {
+                    "bullet_text": f"Compact claim label {index}. (raw/alpha.md)",
+                    "covered_source_claims": [selected_claims[index % len(selected_claims)]],
+                }
+                for index in range(6)
             ],
         )
 

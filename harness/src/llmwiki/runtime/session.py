@@ -25,6 +25,8 @@ from llmwiki.domain.contradictions import (
     ContradictionSelection,
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
+from llmwiki.domain.evidence_registry import build_evidence_registry
+from llmwiki.domain.evidence_registry_io import registry_to_json
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
 from llmwiki.domain.ingest_profiles import (
     IngestProfile,
@@ -533,6 +535,14 @@ class Session:
     def _persist_page_plan(self, source_locator: str, page_plan: PagePlan) -> str:
         report = observation_report(page_plan)
         self.store.write_page_plan_artifacts(source_locator, page_plan_to_json(page_plan), report)
+        source_texts = tuple(
+            source_text
+            for raw_source in page_plan.source_bundle.raw_sources
+            if (source_text := self.store.source_resolver().source_text(raw_source.source_locator))
+            is not None
+        )
+        registry = build_evidence_registry(page_plan, source_texts)
+        self.store.write_evidence_registry_artifact(source_locator, registry_to_json(registry))
         return report
 
     def _recover_pending_pdf_chunks(

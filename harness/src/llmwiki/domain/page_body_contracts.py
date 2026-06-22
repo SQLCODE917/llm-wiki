@@ -21,6 +21,7 @@ class PageBodyContract:
     required_sections: tuple[str, ...] = ()
     required_markdown_shape: str = "prose"
     min_claim_bullets: int = 0
+    max_claim_bullets: int = 0
     coverage_policy: str = ""
     max_words: int = 0
     max_source_word_ratio: float = 0.0
@@ -36,6 +37,7 @@ class ResolvedPageBodyContract:
     required_sections: tuple[str, ...] = ()
     required_markdown_shape: str = "prose"
     min_claim_bullets: int = 0
+    max_claim_bullets: int = 0
     coverage_policy: str = ""
     max_words: int = 0
     max_source_word_ratio: float = 0.0
@@ -69,6 +71,7 @@ def default_page_body_contracts() -> tuple[PageBodyContract, ...]:
             required_sections=("Source record", "Key supported claims"),
             required_markdown_shape="claim-bullets",
             min_claim_bullets=3,
+            max_claim_bullets=5,
             coverage_policy="main-supported-claims-and-explicit-limits",
             max_words=220,
             max_source_word_ratio=0.65,
@@ -165,6 +168,7 @@ def resolve_page_body_contract(
         required_sections=contract.required_sections,
         required_markdown_shape=contract.required_markdown_shape,
         min_claim_bullets=contract.min_claim_bullets,
+        max_claim_bullets=contract.max_claim_bullets,
         coverage_policy=contract.coverage_policy,
         max_words=max_words or contract.max_words,
         max_source_word_ratio=max_source_word_ratio or contract.max_source_word_ratio,

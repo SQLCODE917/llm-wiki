@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge
 page_kind: source
-summary: JavaScript Allongé, the 'Six' Edition by Reg 'raganwald' Braithwaite.
+summary: Hub page for JavaScript Allongé, the 'Six' Edition.
 sources: raw/javascriptallonge.pdf
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: javascriptallonge.pdf
 ---
 

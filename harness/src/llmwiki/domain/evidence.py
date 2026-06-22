@@ -7,6 +7,11 @@ from dataclasses import dataclass
 
 from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.citations import CitationFinding, SourceInventory, inspect_citations
+from llmwiki.domain.evidence_locators import (
+    locator_match_for_citation,
+    source_range_finding,
+)
+from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.evidence_resolver import SourceTextResolver, resolve_normalized_evidence
 
 
@@ -40,6 +45,7 @@ class EvidencePolicyResult:
 class EvidenceLintReport:
     mode: StrictEvidenceMode
     findings: tuple[CitationFinding, ...] = ()
+    registry: EvidenceRegistry | None = None
 
     @property
     def fail_count(self) -> int:
@@ -57,6 +63,13 @@ class EvidenceLintReport:
             f"Citation findings: {len(self.findings)} "
             f"({self.fail_count} fail, {self.warn_count} warn)."
         )
+        if self.registry is not None:
+            summary += (
+                "\nEvidence registry: "
+                f"{len(self.registry.source_texts)} source text(s), "
+                f"{len(self.registry.source_ranges)} source range(s), "
+                f"{len(self.registry.evidence_records)} evidence record(s)."
+            )
         if not self.findings:
             return summary + "\nNo deterministic citation evidence findings."
         return summary + "\n" + _render_findings(self.findings)
@@ -65,6 +78,7 @@ class EvidenceLintReport:
 @dataclass(frozen=True)
 class EvidencePolicy:
     mode: StrictEvidenceMode = "off"
+    registry: EvidenceRegistry | None = None
 
     @property
     def enabled(self) -> bool:
@@ -83,7 +97,15 @@ class EvidencePolicy:
             raise ValueError("Source inventory is required when strict evidence is enabled.")
         report = inspect_citations(page_name, body, inventory)
         findings = list(report.findings)
-        if source_resolver is not None:
+        if self.registry is not None:
+            for citation in report.citations:
+                range_finding = source_range_finding(citation, self.registry)
+                if range_finding is not None:
+                    findings.append(range_finding)
+                _, finding = locator_match_for_citation(citation, self.registry)
+                if finding is not None:
+                    findings.append(finding)
+        elif source_resolver is not None:
             for citation in report.citations:
                 _, finding = resolve_normalized_evidence(citation, source_resolver)
                 if finding is not None:
@@ -95,16 +117,22 @@ class EvidencePolicy:
         pages: Mapping[str, str],
         inventory: SourceInventory | None,
         source_resolver: SourceTextResolver | None = None,
+        registry: EvidenceRegistry | None = None,
     ) -> EvidenceLintReport:
         if self.mode == "off":
             return EvidenceLintReport(mode=self.mode)
         if inventory is None:
             raise ValueError("Source inventory is required when strict evidence is enabled.")
         findings: list[CitationFinding] = []
+        active_policy = (
+            self if registry is None else EvidencePolicy(mode=self.mode, registry=registry)
+        )
         for page_name in sorted(pages):
-            result = self.check_page(page_name, pages[page_name], inventory, source_resolver)
+            result = active_policy.check_page(
+                page_name, pages[page_name], inventory, source_resolver
+            )
             findings.extend(result.findings)
-        return EvidenceLintReport(mode=self.mode, findings=tuple(findings))
+        return EvidenceLintReport(mode=self.mode, findings=tuple(findings), registry=registry)
 
 
 def _render_findings(findings: tuple[CitationFinding, ...]) -> str:

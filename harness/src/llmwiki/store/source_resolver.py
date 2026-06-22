@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
+
+from llmwiki.domain.evidence_registry import SourceText, source_text_from_text
 
 
 class FileSourceTextResolver:
@@ -22,6 +25,26 @@ class FileSourceTextResolver:
             lines = self._load_cached_pdf_text(rel)
         self._cache[source_path] = lines
         return lines
+
+    def source_text(self, source_locator: str) -> SourceText | None:
+        if source_locator.lower().endswith(".pdf"):
+            text = self._load_cached_pdf_joined_text(source_locator)
+            if text is None:
+                return None
+            return source_text_from_text(source_locator, text, "pdf-cache")
+        path = (self._raw_dir / source_locator).resolve()
+        if not path.is_relative_to(self._raw_dir.resolve()) or not path.is_file():
+            return None
+        try:
+            text = path.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            return None
+        return SourceText(
+            source_locator=source_locator,
+            source_hash=_sha256(path),
+            source_text_kind="markdown",
+            lines=tuple(text.splitlines()),
+        )
 
     def _load_raw_text(self, rel_path: str) -> tuple[str, ...] | None:
         path = (self._raw_dir / rel_path).resolve()
@@ -50,3 +73,28 @@ class FileSourceTextResolver:
             ]
             return tuple("\n\n".join(chunk_texts).splitlines()) if chunk_texts else None
         return None
+
+    def _load_cached_pdf_joined_text(self, source_rel: str) -> str | None:
+        for manifest_path in sorted(self._cache_dir.glob("*/manifest.json")):
+            try:
+                data: dict[str, Any] = json.loads(manifest_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                continue
+            if data.get("source") != source_rel:
+                continue
+            chunks_dir = manifest_path.parent / "chunks"
+            chunk_texts = [
+                path.read_text(encoding="utf-8")
+                for path in sorted(chunks_dir.glob("*.md"))
+                if path.is_file()
+            ]
+            return "\n\n".join(chunk_texts) if chunk_texts else None
+        return None
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for block in iter(lambda: fh.read(1 << 20), b""):
+            digest.update(block)
+    return digest.hexdigest()

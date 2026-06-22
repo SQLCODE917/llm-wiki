@@ -3,14 +3,12 @@
 import json
 from typing import cast
 
-import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
 from forge.core.workflow import ToolCall
 
 from llmwiki.config import WikiPaths
 from llmwiki.domain.pages import PageMetadata, WikiPage
-from llmwiki.pdf import PdfError
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
 from llmwiki.pdf.pipeline import ExtractionResult
 from llmwiki.runtime.session import Session
@@ -334,7 +332,7 @@ def test_manifest_requeues_done_chunk_when_page_source_does_not_match() -> None:
     assert not repaired.integrated
 
 
-async def test_pdf_chunk_without_successful_write_is_not_marked_done(
+async def test_pdf_chunk_rejects_finish_until_successful_write(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
@@ -354,6 +352,12 @@ async def test_pdf_chunk_without_successful_write_is_not_marked_done(
             )
         ],
         [ToolCall(tool="finish_chunk", args={"report": "claimed done"})],
+        [_plan_page_call(FUNCTIONS_PAGE)],
+        [_write_page_call(FUNCTIONS_PAGE)],
+        [ToolCall(tool="finish_chunk", args={"report": "corrected functions"})],
+        [_plan_page_call(BOOK_HUB)],
+        [_book_write_for_one_chunk()],
+        [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
     ]
     session = Session(
         store=store,
@@ -365,10 +369,13 @@ async def test_pdf_chunk_without_successful_write_is_not_marked_done(
         extract_pdf=lambda _pdf, _rel, _reextract: extraction,
     )
 
-    with pytest.raises(PdfError, match="successful page write"):
-        await session.ingest("book.pdf")
+    await session.ingest("book.pdf")
 
-    assert store.list_pages() == []
+    saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
+    assert saved.integrated
+    assert saved.chunks[0].notes == "corrected functions"
+    assert saved.chunks[0].pages_written == (FUNCTIONS_PAGE,)
+    assert {FUNCTIONS_PAGE, BOOK_HUB} <= set(store.list_pages())
 
 
 async def test_pending_pdf_chunk_rewrites_existing_source_summary_page(

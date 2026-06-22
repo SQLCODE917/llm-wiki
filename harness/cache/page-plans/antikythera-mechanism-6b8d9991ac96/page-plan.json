@@ -399,7 +399,7 @@
   "claim_comparisons": [
     {
       "candidate_claim": "claim-unit-0001-0001",
-      "existing_claim": "## Source record Source record for [[antikythera-mechanism]]. (raw/antikythera-mechanism.md) ## Key supported claims - The device is a Greek geared orrery and early analog computer. (raw/antikythera-mechanism.md) - The wreck find dates to...",
+      "existing_claim": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
       "page_id": "antikythera-mechanism",
       "relation": "overlap"
     }
@@ -421,7 +421,7 @@
       "unit_id": "unit-0001"
     }
   ],
-  "plan_id": "2026-06-20-191912-source-antikythera-mechanism",
+  "plan_id": "2026-06-22-101220-source-antikythera-mechanism",
   "planned_writes": [
     {
       "action": "enrich-existing",
@@ -457,7 +457,7 @@
         ],
         "summary": "Hub page for raw/antikythera-mechanism.md.",
         "tags": [],
-        "updated": "2026-06-20"
+        "updated": "2026-06-22"
       },
       "projection": {
         "page_metadata": {
@@ -473,13 +473,14 @@
           ],
           "summary": "Hub page for raw/antikythera-mechanism.md.",
           "tags": [],
-          "updated": "2026-06-20"
+          "updated": "2026-06-22"
         },
         "page_path": "antikythera-mechanism.md"
       },
       "resolved_page_body_contract": {
         "contract_id": "source-summary",
         "coverage_policy": "main-supported-claims-and-explicit-limits",
+        "max_claim_bullets": 5,
         "max_copied_ngram_ratio": 0.5,
         "max_source_word_ratio": 0.65,
         "max_words": 220,
@@ -527,9 +528,9 @@
       "wiki_matches": [
         {
           "match_reason": "nearest-neighbor:unit-0001",
-          "page_excerpt": "## Source record Source record for [[antikythera-mechanism]]. (raw/antikythera-mechanism.md) ## Key supported claims - The device is a Greek geared orrery and early analog computer. (raw/antikythera-mechanism.md) - The wreck find dates to...",
+          "page_excerpt": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
           "page_id": "antikythera-mechanism",
-          "score": 0.372133
+          "score": 0.368462
         }
       ],
       "write_id": "write-antikythera-mechanism"
@@ -1030,9 +1031,9 @@
   "wiki_matches": [
     {
       "match_reason": "nearest-neighbor:unit-0001",
-      "page_excerpt": "## Source record Source record for [[antikythera-mechanism]]. (raw/antikythera-mechanism.md) ## Key supported claims - The device is a Greek geared orrery and early analog computer. (raw/antikythera-mechanism.md) - The wreck find dates to...",
+      "page_excerpt": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
       "page_id": "antikythera-mechanism",
-      "score": 0.372133
+      "score": 0.368462
     }
   ]
 }

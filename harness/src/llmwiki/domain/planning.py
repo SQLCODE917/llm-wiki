@@ -259,8 +259,9 @@ def _source_summary_plan_label(write: object, source_claims: dict[str, SourceCla
         if claim_id in source_claims
     )
     return (
-        "SourceSummaryPlan selected claims "
-        "(use claim_id only in covered_source_claims): "
+        "SourceSummaryPlan selected claim IDs "
+        "(use claim_id only in covered_source_claims; read the raw source, then "
+        "write fresh short paraphrases; cue terms are labels, not reusable prose): "
         f"{claims} | constraints: {constraint_text} | "
     )
 
@@ -271,13 +272,5 @@ def _source_claim_label(claim: SourceClaim) -> str:
     return (
         f"claim_id `{claim.source_claim_id}` [{roles}] "
         f"eligibility `{claim.claim_eligibility}` centrality `{claim.claim_centrality}` "
-        f"terms `{terms}` "
-        f"statement `{_compact_statement(claim.statement)}`"
+        f"cue_terms `{terms}`"
     )
-
-
-def _compact_statement(statement: str) -> str:
-    words = statement.split()
-    if len(words) <= 28:
-        return " ".join(words)
-    return " ".join(words[:28]) + "..."

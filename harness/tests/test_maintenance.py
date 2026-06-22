@@ -6,6 +6,13 @@ import pytest
 
 from llmwiki.cli import _build_parser, _curator_report, _run
 from llmwiki.config import ConfigError, WikiPaths
+from llmwiki.domain.evidence_registry import (
+    EvidenceRecord,
+    EvidenceRegistry,
+    SourceRange,
+    source_text_from_text,
+)
+from llmwiki.domain.evidence_registry_io import registry_to_json
 from llmwiki.domain.graph import build_wiki_graph
 from llmwiki.domain.index import empty_index
 from llmwiki.domain.ingest_route_history import IngestRoutePlanRecord
@@ -105,6 +112,53 @@ class TestCuratorReport:
         assert "## Latest Semantic Lint" in report
         assert "Audited items: 1" in report
         assert "category: synthesis" not in report
+
+    def test_curator_status_reports_evidence_registry_counts(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        (paths.raw_dir / "article.md").write_text("Source evidence.", encoding="utf-8")
+        registry = EvidenceRegistry(
+            registry_id="test-registry",
+            source_texts=(source_text_from_text("article.md", "Source evidence."),),
+            source_ranges=(
+                SourceRange(
+                    source_range_id="source-range-alpha",
+                    page_id="alpha",
+                    source_locator="article.md",
+                    page_range=None,
+                    line_range=(1, 1),
+                    heading_path="Alpha",
+                ),
+            ),
+            evidence_records=(
+                EvidenceRecord(
+                    evidence_id="evidence-alpha",
+                    source_locator="article.md",
+                    source_hash="hash",
+                    source_range_id="source-range-alpha",
+                    line_range=(1, 1),
+                    excerpt="Source evidence.",
+                    excerpt_digest="digest",
+                    evidence_kind="source-claim",
+                    source_claim_id="source-claim-alpha",
+                ),
+            ),
+        )
+        store.write_evidence_registry_artifact("article.md", registry_to_json(registry))
+        store.write_page(
+            _page(
+                "alpha",
+                '"Source evidence." (raw/article.md normalized:L1)',
+                sources=("article.md",),
+            )
+        )
+
+        report = _curator_report(store, paths, "warn")
+
+        assert (
+            "Evidence registry: 1 source text(s), 1 source range(s), 1 evidence record(s)."
+            in report
+        )
 
     def test_curator_status_reports_graph_missing_and_current(
         self, store: WikiStore, paths: WikiPaths

@@ -70,13 +70,14 @@ def test_markdown_page_plan_creates_units_claims_writes_and_paths() -> None:
     assert "ExtractedUnits: 1" in report
     assert "SourceClaims: 1" in report
     assert "SourceClaimGroups: 1" in report
-    assert "SourceSummaryPlan selected claims" in report
+    assert "SourceSummaryPlan selected claim IDs" in report
     assert "`antikythera-mechanism.md`" in report
     assert "PageKind `source`" in report
     assert "plan_pages action `create`" in report
     assert "PagePlan action `create-new`" in report
     assert "claim_id `source-claim-unit-0001-0001`" in report
-    assert "statement `The device may predict eclipses.`" in report
+    assert "cue_terms `" in report
+    assert "The device may predict eclipses." not in report
     assert "span `" not in report
     assert "source-summary-plan-antikythera-mechanism" not in report
 

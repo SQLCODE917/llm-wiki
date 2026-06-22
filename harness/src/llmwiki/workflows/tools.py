@@ -405,6 +405,24 @@ def finish_tool(name: str, description: str) -> ToolDef:
     )
 
 
+def finish_after_successful_write_tool(
+    name: str, description: str, write_log: list[str] | None
+) -> ToolDef:
+    def _finish(**kwargs: object) -> str:
+        if write_log is not None and not write_log:
+            raise WikiStoreError(
+                "No successful page writes are recorded for this run. "
+                "Call write_page again with a corrected draft before finishing."
+            )
+        params = FinishParams(**kwargs)  # type: ignore[arg-type]
+        return params.report
+
+    return ToolDef(
+        spec=ToolSpec(name=name, description=description, parameters=FinishParams),
+        callable=_finish,
+    )
+
+
 def _active_plan_targets(state: IngestRoutePlanState) -> str:
     if state.active_plan is None:
         return "none; call plan_pages again."
@@ -420,8 +438,11 @@ def _recoverable_write_error(detail: str) -> str:
         f"{detail}\n"
         "For source-summary PlannedPageWrites, the harness renders the page from "
         "source_record_text and claim_bullets; any page_body argument is ignored. "
-        "If the finding names CopiedSourcePhrase, rewrite the claim_bullets "
-        "bullet_text values themselves as shorter paraphrases.\n"
+        "If the finding names CopiedSourcePhrase, rewrite the named "
+        "source_record_text or claim_bullets bullet_text value itself. Use "
+        "compact fact labels, usually four to seven prose words before each "
+        "citation. Avoid the copied phrases named above, and keep fewer than "
+        "eight consecutive source words from any sentence.\n"
         "Call write_page again with a corrected full replacement draft. "
         "You must successfully write the authorized page before finishing."
     )
