@@ -41,6 +41,10 @@ from llmwiki.domain.pages import (
     render_page,
     validate_page_id,
 )
+from llmwiki.domain.source_summary import (
+    SourceSummaryDraftArtifact,
+    source_summary_draft_from_json,
+)
 from llmwiki.store.source_resolver import FileSourceTextResolver
 
 _RESERVED_PAGE_IDS = frozenset({"index", "log"})
@@ -342,6 +346,29 @@ class WikiStore:
         draft_path = artifact_dir / f"{planned_write_id}.json"
         draft_path.write_text(draft_json, encoding="utf-8")
         return draft_path
+
+    def read_source_summary_draft_artifacts(
+        self, source_locator: str | None = None
+    ) -> tuple[SourceSummaryDraftArtifact, ...]:
+        source_locators = (source_locator,) if source_locator else self.list_sources()
+        artifacts: list[SourceSummaryDraftArtifact] = []
+        for locator in source_locators:
+            artifact_dir = self.page_plan_artifact_dir(locator) / "accepted-source-summaries"
+            if not artifact_dir.is_dir():
+                continue
+            for draft_path in sorted(artifact_dir.glob("*.json")):
+                write_id = draft_path.stem
+                artifacts.append(
+                    SourceSummaryDraftArtifact(
+                        source_locator=locator,
+                        write_id=write_id,
+                        page_id_hint=write_id.removeprefix("write-"),
+                        draft=source_summary_draft_from_json(
+                            draft_path.read_text(encoding="utf-8")
+                        ),
+                    )
+                )
+        return tuple(artifacts)
 
     # -- harness-owned ingest route plan history ----------------------------
 

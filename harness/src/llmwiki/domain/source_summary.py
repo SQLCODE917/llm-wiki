@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -95,6 +96,14 @@ class SourceSummaryDraft:
 
 
 @dataclass(frozen=True)
+class SourceSummaryDraftArtifact:
+    source_locator: str
+    write_id: str
+    page_id_hint: str
+    draft: SourceSummaryDraft
+
+
+@dataclass(frozen=True)
 class SourceClaimQualityFixture:
     fixture_id: str
     source_locator: str
@@ -118,3 +127,19 @@ class SourceSummaryQualityReport:
 
 def should_create_source_summary_plan(contract: ResolvedPageBodyContract) -> bool:
     return contract.contract_id == "source-summary"
+
+
+def source_summary_draft_from_json(text: str) -> SourceSummaryDraft:
+    payload = json.loads(text)
+    return SourceSummaryDraft(
+        source_record_text=str(payload["source_record_text"]),
+        claim_bullets=tuple(
+            SourceSummaryBullet(
+                bullet_text=str(item["bullet_text"]),
+                covered_source_claims=tuple(
+                    str(claim_id) for claim_id in item["covered_source_claims"]
+                ),
+            )
+            for item in payload["claim_bullets"]
+        ),
+    )

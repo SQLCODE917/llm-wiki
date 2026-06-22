@@ -171,3 +171,548 @@ Updated the source page for the Antikythera Mechanism. The page now includes a s
 
 ## [2026-06-22] ingest | javascriptallonge.pdf
 The hub page for JavaScript Allongé has been created and updated with links to all chapter and topic pages from the page map. The page structure now includes the main source hub and all related content pages from the chunking process.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-103744
+Claim candidates discovered: 4
+Selected for model judgment: 3
+Skipped by cap or deterministic findings: 1
+Max claims: 3
+
+## Deterministic Findings
+
+No deterministic claim-support findings in selected scope.
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-antikythera-mechanism-1
+
+- Rationale: The evidence excerpt directly states that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer, which fully supports the claim.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 2: INFO - supported on claim-support-summary-antikythera-mechanism-2
+
+- Rationale: The evidence excerpt explicitly states that the mechanism was retrieved from a shipwreck and is dated to roughly 150–100 BC, which directly supports the claim about the wreck find dating to that period.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 3: INFO - supported on claim-support-summary-antikythera-mechanism-3
+
+- Rationale: The evidence excerpt indicates that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography to read inscriptions, which directly supports the claim that research used tomographic imaging.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+## Model Report
+
+Audited 3 claim-support candidates and found all to be supported by the provided evidence excerpts. No actions required.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-103814
+Claim candidates discovered: 667
+Selected for model judgment: 5
+Skipped by cap or deterministic findings: 662
+Max claims: 5
+
+## Deterministic Findings
+
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-a-balanced-statement-about-combinators claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-and-are-control-flow-operators claim-support-summary-javascriptallonge-and-are-control-flow-operators-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-and-are-control-flow-operators claim-support-summary-javascriptallonge-and-are-control-flow-operators-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-composition claim-support-summary-javascriptallonge-composition-2: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-composition claim-support-summary-javascriptallonge-composition-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-copy-on-write claim-support-summary-javascriptallonge-copy-on-write-1: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-copy-on-write claim-support-summary-javascriptallonge-copy-on-write-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-copy-on-write claim-support-summary-javascriptallonge-copy-on-write-2: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-copy-on-write claim-support-summary-javascriptallonge-copy-on-write-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-copy-on-write claim-support-summary-javascriptallonge-copy-on-write-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-copy-on-write claim-support-summary-javascriptallonge-copy-on-write-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-forewords-to-the-first-edition claim-support-summary-javascriptallonge-forewords-to-the-first-edition-1: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-forewords-to-the-first-edition claim-support-summary-javascriptallonge-forewords-to-the-first-edition-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-forewords-to-the-first-edition claim-support-summary-javascriptallonge-forewords-to-the-first-edition-2: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-forewords-to-the-first-edition claim-support-summary-javascriptallonge-forewords-to-the-first-edition-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-front-matter claim-support-summary-javascriptallonge-front-matter-1: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-front-matter claim-support-summary-javascriptallonge-front-matter-2: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-front-matter claim-support-summary-javascriptallonge-front-matter-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-inside-out claim-support-summary-javascriptallonge-inside-out-2: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-inside-out claim-support-summary-javascriptallonge-inside-out-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-ecmascript-6-has-three-major-groups-of-features claim-support-summary-javascriptallonge-ecmascript-6-has-three-major-groups-of-features-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-ecmascript-6-has-three-major-groups-of-features claim-support-summary-javascriptallonge-ecmascript-6-has-three-major-groups-of-features-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-ecmascript-6-has-three-major-groups-of-features claim-support-summary-javascriptallonge-ecmascript-6-has-three-major-groups-of-features-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-object-assign claim-support-summary-javascriptallonge-object-assign-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-tap claim-support-summary-javascriptallonge-tap-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-tap claim-support-summary-javascriptallonge-tap-4: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-tap claim-support-summary-javascriptallonge-tap-5: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-the-vireo claim-support-summary-javascriptallonge-the-vireo-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-why-the-six-edition claim-support-summary-javascriptallonge-why-the-six-edition-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-why-the-six-edition claim-support-summary-javascriptallonge-why-the-six-edition-4: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-why-the-six-edition claim-support-summary-javascriptallonge-why-the-six-edition-5: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-are-expressions claim-support-summary-javascriptallonge-values-are-expressions-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-michael-fogus claim-support-summary-javascriptallonge-michael-fogus-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-michael-fogus claim-support-summary-javascriptallonge-michael-fogus-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-michael-fogus claim-support-summary-javascriptallonge-michael-fogus-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-michael-fogus claim-support-summary-javascriptallonge-michael-fogus-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-why-the-six-edition claim-support-summary-javascriptallonge-why-the-six-edition-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-why-the-six-edition claim-support-summary-javascriptallonge-why-the-six-edition-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-why-the-six-edition claim-support-summary-javascriptallonge-why-the-six-edition-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-matthew-knox claim-support-summary-javascriptallonge-matthew-knox-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-matthew-knox claim-support-summary-javascriptallonge-matthew-knox-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-what-javascript-allong-is-and-isn-t claim-support-summary-javascriptallonge-what-javascript-allong-is-and-isn-t-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-what-javascript-allong-is-and-isn-t claim-support-summary-javascriptallonge-what-javascript-allong-is-and-isn-t-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-what-javascript-allong-is-and-isn-t claim-support-summary-javascriptallonge-what-javascript-allong-is-and-isn-t-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-that-s-nice-is-that-the-only-reason claim-support-summary-javascriptallonge-that-s-nice-is-that-the-only-reason-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-that-s-nice-is-that-the-only-reason claim-support-summary-javascriptallonge-that-s-nice-is-that-the-only-reason-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-that-s-nice-is-that-the-only-reason claim-support-summary-javascriptallonge-that-s-nice-is-that-the-only-reason-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-that-s-nice-is-that-the-only-reason claim-support-summary-javascriptallonge-that-s-nice-is-that-the-only-reason-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-that-s-nice-is-that-the-only-reason claim-support-summary-javascriptallonge-that-s-nice-is-that-the-only-reason-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-how-this-book-is-organized claim-support-summary-javascriptallonge-how-this-book-is-organized-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER sword-world-rpg-complete-edition-front-matter claim-support-summary-sword-world-rpg-complete-edition-front-matter-1: missing-evidence: No EvidenceRecord matched.
+- BLOCKER sword-world-rpg-complete-edition-front-matter claim-support-summary-sword-world-rpg-complete-edition-front-matter-2: missing-evidence: No EvidenceRecord matched.
+- BLOCKER sword-world-rpg-complete-edition-front-matter claim-support-summary-sword-world-rpg-complete-edition-front-matter-3: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-a-pull-of-the-lever-prefaces-2 claim-support-prose-javascriptallonge-a-pull-of-the-lever-prefaces-2-7: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-a-pull-of-the-lever-prefaces-2 claim-support-prose-javascriptallonge-a-pull-of-the-lever-prefaces-2-8: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-a-pull-of-the-lever-prefaces-2 claim-support-prose-javascriptallonge-a-pull-of-the-lever-prefaces-2-9: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite-2 claim-support-prose-javascriptallonge-reg-raganwald-braithwaite-2-7: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite-2 claim-support-prose-javascriptallonge-reg-raganwald-braithwaite-2-8: missing-evidence: No EvidenceRecord matched.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite-2 claim-support-prose-javascriptallonge-reg-raganwald-braithwaite-2-9: missing-evidence: No EvidenceRecord matched.
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+- Rationale: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose while avoiding keywords and noun names.
+- Recommended action: No action needed; the evidence supports the claim.
+
+### Verdict 2: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+
+- Rationale: The evidence excerpt directly supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together.
+- Recommended action: No action needed; the evidence supports the claim.
+
+### Verdict 3: BLOCKER - not_supported on claim-support-summary-javascriptallonge-a-few-utilities-1
+
+- Rationale: The evidence excerpt does not support the claim because it only shows a code example related to list manipulation but does not mention or list the specific utilities like copy, first, rest, reverse, mapWith, at, and set functions as stated in the claim.
+- Recommended action: The evidence should be expanded or revised to include the specific utilities mentioned in the claim.
+
+### Verdict 4: WARNING - unclear on claim-support-summary-javascriptallonge-a-history-lesson-1
+
+- Rationale: The evidence excerpt only states "Another history lesson" and does not provide sufficient detail to support or refute the claim that JavaScript could not gather parameters in 'Ye Olde Days.'
+- Recommended action: More specific historical context or evidence is needed to evaluate this claim.
+
+### Verdict 5: INFO - supported on claim-support-summary-javascriptallonge-a-history-lesson-2
+
+- Rationale: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument.
+- Recommended action: No action needed; the evidence supports the claim.
+
+## Model Report
+
+Audited 5 claim-support candidates. Found that 2 claims are supported, 1 is not supported, and 2 are unclear. Recommended actions include expanding evidence for the 'a few utilities' section and providing more historical context for the 'Ye Olde Days' claim.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-104350
+Claim candidates discovered: 4
+Audited candidates: 3
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Max claims: 3
+
+## Deterministic Findings
+
+No deterministic claim-support findings in selected scope.
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-antikythera-mechanism-1
+
+- Rationale: The evidence excerpt directly states that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer, which fully supports the claim.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 2: INFO - supported on claim-support-summary-antikythera-mechanism-2
+
+- Rationale: The evidence excerpt explicitly mentions that the mechanism was retrieved from a shipwreck and is dated to roughly 150–100 BC, which directly supports the claim about the wreck find dating to that period.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 3: INFO - supported on claim-support-summary-antikythera-mechanism-3
+
+- Rationale: The evidence excerpt clearly states that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography to read inscriptions, which directly supports the claim that research used tomographic imaging.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+## Model Report
+
+Audited 3 claim support candidates and found all to be supported by the provided evidence excerpts. No actions required.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-104420
+Claim candidates discovered: 663
+Audited candidates: 22
+Selected for model judgment: 5
+Skipped by deterministic findings: 17
+Skipped by cap: 641
+Max claims: 5
+
+## Deterministic Findings
+
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-a-balanced-statement-about-combinators claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-3: missing-evidence: No EvidenceRecord matched.
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+- Rationale: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose, while avoiding keywords and noun names.
+- Recommended action: No action needed; the evidence supports the claim as written.
+
+### Verdict 2: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+
+- Rationale: The evidence excerpt directly supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together.
+- Recommended action: No action needed; the evidence supports the claim as written.
+
+### Verdict 3: BLOCKER - not_supported on claim-support-summary-javascriptallonge-a-few-utilities-1
+
+- Rationale: The evidence excerpt does not provide sufficient information to support the claim that the 'a few utilities' section introduces fundamental list manipulation utilities such as copy, first, rest, reverse, mapWith, at, and set functions. The excerpt only shows a partial code example and does not confirm the presence of all listed functions.
+- Recommended action: Review the source material to verify the presence of all listed utilities in the section.
+
+### Verdict 4: WARNING - unclear on claim-support-summary-javascriptallonge-a-history-lesson-1
+
+- Rationale: The evidence excerpt only states "53 Another history lesson" and does not provide sufficient information to support or refute the claim that JavaScript could not gather parameters in 'Ye Olde Days.'
+- Recommended action: Review the source material to determine if JavaScript could gather parameters in 'Ye Olde Days.'
+
+### Verdict 5: INFO - supported on claim-support-summary-javascriptallonge-a-history-lesson-2
+
+- Rationale: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument.
+- Recommended action: No action needed; the evidence supports the claim as written.
+
+## Model Report
+
+Audited 5 candidates for claim support. Found that 2 claims are supported, 1 is not supported, and 2 are unclear. No deterministic findings were skipped. The evidence for the supported claims directly aligns with the wiki claims, while the unclear and not supported claims require further review of the source material.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-104540
+Claim candidates discovered: 4
+Audited candidates: 3
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Max claims: 3
+
+## Deterministic Findings
+
+No deterministic claim-support findings in selected scope.
+
+## Verdict Totals
+
+- supported: 3
+- too_broad: 0
+- not_supported: 0
+- unclear: 0
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-antikythera-mechanism-1
+
+- Rationale: The evidence excerpt directly supports the claim by stating that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer, which aligns with the generated wiki claim.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 2: INFO - supported on claim-support-summary-antikythera-mechanism-2
+
+- Rationale: The evidence excerpt directly supports the claim by stating that the mechanism was retrieved from a shipwreck and is dated to roughly 150–100 BC, which matches the generated wiki claim.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 3: INFO - supported on claim-support-summary-antikythera-mechanism-3
+
+- Rationale: The evidence excerpt directly supports the claim by mentioning that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography to read inscriptions, which aligns with the generated wiki claim about research using tomographic imaging.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+## Model Report
+
+Free-form model notes; verdict totals above are harness-computed.
+
+Audited 3 candidates and found all claims to be supported by the provided evidence excerpts. No action is needed for the candidates reviewed.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-104610
+Claim candidates discovered: 663
+Audited candidates: 22
+Selected for model judgment: 5
+Skipped by deterministic findings: 17
+Skipped by cap: 641
+Max claims: 5
+
+## Deterministic Findings
+
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-a-balanced-statement-about-combinators claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-3: missing-evidence: No EvidenceRecord matched.
+
+## Verdict Totals
+
+- supported: 3
+- too_broad: 0
+- not_supported: 1
+- unclear: 1
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+- Rationale: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose, while avoiding keywords and noun names.
+- Recommended action: No action needed; the evidence supports the claim as written.
+
+### Verdict 2: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+
+- Rationale: The evidence excerpt supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together.
+- Recommended action: No action needed; the evidence supports the claim as written.
+
+### Verdict 3: BLOCKER - not_supported on claim-support-summary-javascriptallonge-a-few-utilities-1
+
+- Rationale: The evidence excerpt does not provide sufficient detail or context to support the claim that the section introduces fundamental list manipulation utilities such as copy, first, rest, reverse, mapWith, at, and set functions. The excerpt only includes a code snippet related to setting a value in a list structure.
+- Recommended action: Investigate further to determine if the claim is supported by additional evidence or if the claim needs revision.
+
+### Verdict 4: WARNING - unclear on claim-support-summary-javascriptallonge-a-history-lesson-1
+
+- Rationale: The evidence excerpt only states "53 Another history lesson" and does not provide sufficient context or content to support the claim that JavaScript could not gather parameters in 'Ye Olde Days.'
+- Recommended action: Provide more detailed evidence or clarify the historical context to better support the claim.
+
+### Verdict 5: INFO - supported on claim-support-summary-javascriptallonge-a-history-lesson-2
+
+- Rationale: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument.
+- Recommended action: No action needed; the evidence supports the claim as written.
+
+## Model Report
+
+Free-form model notes; verdict totals above are harness-computed.
+
+Audited 5 candidates for claim support. Found that 2 claims were supported, 1 was not supported, and 2 were unclear. No action was needed for the supported claims, while further investigation is recommended for the not supported and unclear claims.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-104700
+Claim candidates discovered: 4
+Audited candidates: 3
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Max claims: 3
+
+## Deterministic Findings
+
+No deterministic claim-support findings in selected scope.
+
+## Verdict Totals
+
+- supported: 3
+- too_broad: 0
+- not_supported: 0
+- unclear: 0
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-antikythera-mechanism-1
+
+- Rationale: The evidence excerpt directly supports the claim that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 2: INFO - supported on claim-support-summary-antikythera-mechanism-2
+
+- Rationale: The evidence excerpt clearly states that the mechanism was retrieved from a shipwreck off the coast of the Greek island of Antikythera and is dated to roughly 150–100 BC, which directly supports the claim.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+### Verdict 3: INFO - supported on claim-support-summary-antikythera-mechanism-3
+
+- Rationale: The evidence excerpt confirms that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography to read inscriptions hidden inside the corroded fragments, which directly supports the claim that research used tomographic imaging.
+- Recommended action: No action needed; the claim is well-supported by the evidence.
+
+## Model Report
+
+Per-candidate verdict rationale and recommended action are recorded above. The free-form finish note is omitted so structured tool-call verdicts remain authoritative.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] claim-support | claim support audit
+# Claim Support Audit
+
+## Audit Scope
+
+Run id: 2026-06-22-104715
+Claim candidates discovered: 663
+Audited candidates: 22
+Selected for model judgment: 5
+Skipped by deterministic findings: 17
+Skipped by cap: 641
+Max claims: 5
+
+## Deterministic Findings
+
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reg-raganwald-braithwaite claim-support-summary-javascriptallonge-reg-raganwald-braithwaite-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-reference-types claim-support-summary-javascriptallonge-reference-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-prelude-values-and-expressions-over-coffee claim-support-summary-javascriptallonge-prelude-values-and-expressions-over-coffee-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-value-types claim-support-summary-javascriptallonge-value-types-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-1: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-2: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-3: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-4: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-values-and-identity claim-support-summary-javascriptallonge-values-and-identity-5: source-range: Citation locator is outside the planned source range for this page.
+- BLOCKER javascriptallonge-a-balanced-statement-about-combinators claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-3: missing-evidence: No EvidenceRecord matched.
+
+## Verdict Totals
+
+- supported: 3
+- too_broad: 0
+- not_supported: 1
+- unclear: 1
+
+## Model Verdicts
+
+### Verdict 1: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+
+- Rationale: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose, while avoiding keywords and noun names.
+- Recommended action: No action needed; the evidence fully supports the claim.
+
+### Verdict 2: INFO - supported on claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+
+- Rationale: The evidence excerpt supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together.
+- Recommended action: No action needed; the evidence fully supports the claim.
+
+### Verdict 3: BLOCKER - not_supported on claim-support-summary-javascriptallonge-a-few-utilities-1
+
+- Rationale: The evidence excerpt does not provide sufficient information to support the claim that the section introduces fundamental list manipulation utilities such as copy, first, rest, reverse, mapWith, at, and set functions. The excerpt only shows a partial code example without explicitly naming or describing these functions.
+- Recommended action: The evidence needs to be expanded to explicitly mention and describe the listed utilities.
+
+### Verdict 4: WARNING - unclear on claim-support-summary-javascriptallonge-a-history-lesson-1
+
+- Rationale: The evidence excerpt only states "53 Another history lesson" and does not provide specific information to support or refute the claim about JavaScript not being able to gather parameters in 'Ye Olde Days.'
+- Recommended action: Additional evidence is needed to clarify the historical context of JavaScript's parameter gathering capabilities.
+
+### Verdict 5: INFO - supported on claim-support-summary-javascriptallonge-a-history-lesson-2
+
+- Rationale: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has fixed arguments with the rest gathered into the rightmost argument.
+- Recommended action: No action needed; the evidence fully supports the claim.
+
+## Model Report
+
+Per-candidate verdict rationale and recommended action are recorded above. The free-form finish note is omitted so structured tool-call verdicts remain authoritative.
+
+## Caveat
+
+This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.

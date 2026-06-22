@@ -19,6 +19,11 @@ from forge.core.runner import WorkflowRunner
 
 from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.chatwindow import QAPair
+from llmwiki.domain.claim_support import (
+    ClaimSupportAuditReport,
+    ClaimSupportSelection,
+    ClaimSupportVerdict,
+)
 from llmwiki.domain.contradictions import (
     ContradictionAuditReport,
     ContradictionFinding,
@@ -65,6 +70,7 @@ from llmwiki.domain.semantic_lint import (
 )
 from llmwiki.domain.source_page_groups import source_page_group_label
 from llmwiki.domain.system_pages import (
+    CLAIM_SUPPORT_PAGE,
     CONTRADICTIONS_PAGE,
     GROUNDING_PAGE,
     HEALTH_PAGE,
@@ -84,6 +90,7 @@ from llmwiki.store import WikiStore
 from llmwiki.workflows import (
     build_chat_file_workflow,
     build_chat_workflow,
+    build_claim_support_workflow,
     build_contradiction_workflow,
     build_grounding_workflow,
     build_ingest_workflow,
@@ -99,6 +106,7 @@ _MAX_ITERATIONS = {
     "lint": 24,
     "contradictions": 18,
     "grounding": 18,
+    "claim-support": 18,
     "semantic-lint": 18,
     "pdf-chunk": 24,
     "pdf-integrate": 32,
@@ -130,6 +138,11 @@ _RETRY_NUDGES = {
     "grounding": (
         "Reply with exactly one tool call. If the audit is complete, call "
         "finish_grounding with the audit report; otherwise call record_grounding_verdict."
+    ),
+    "claim-support": (
+        "Reply with exactly one tool call. If the audit is complete, call "
+        "finish_claim_support with the audit report; otherwise call "
+        "record_claim_support_verdict."
     ),
     "semantic-lint": (
         "Reply with exactly one tool call. If the audit is complete, call "
@@ -799,6 +812,39 @@ class Session:
         self.store.append_log(self.today, "grounding", "grounding audit", report)
         return OperationResult("grounding", "grounding audit", report, transcript)
 
+    async def claim_support(self, selection: ClaimSupportSelection) -> OperationResult:
+        verdicts: list[ClaimSupportVerdict] = []
+        if not selection.candidates:
+            report = self._claim_support_report(
+                selection, (), "No claim-support candidates to audit."
+            )
+            self._file_claim_support_report(report)
+            self.store.append_log(self.today, "claim-support", "claim support audit", report)
+            return OperationResult("claim-support", "claim support audit", report, None)
+        workflow = build_claim_support_workflow(
+            self.store, verdicts, selection.candidates, selection.deterministic_findings
+        )
+        message = (
+            "Run a claim-support audit over these bounded candidates. "
+            "Do not judge candidates with deterministic findings; those are "
+            "already reported by the harness. For each selected candidate, decide "
+            "whether the EvidenceRecord excerpts support the generated wiki claim "
+            "as written. The finish_claim_support report should give qualitative "
+            "uncertainty and curator next steps only; do not restate verdict "
+            "counts or skipped-candidate counts.\n\n"
+            f"Claim candidates discovered: {selection.candidate_count}\n"
+            f"Audited candidates: {selection.audited_count}\n"
+            f"Selected for model judgment: {selection.selected_count}\n"
+            f"Skipped by deterministic findings: {selection.deterministic_skipped_count}\n"
+            f"Skipped by cap: {selection.skipped_count}\n\n"
+            f"{selection.render_for_prompt()}"
+        )
+        model_report, transcript = await self._run(workflow, message, "claim-support")
+        report = self._claim_support_report(selection, tuple(verdicts), model_report)
+        self._file_claim_support_report(report)
+        self.store.append_log(self.today, "claim-support", "claim support audit", report)
+        return OperationResult("claim-support", "claim support audit", report, transcript)
+
     async def semantic_lint(self, selection: SemanticLintSelection) -> OperationResult:
         findings: list[SemanticFinding] = []
         if not selection.candidates:
@@ -945,6 +991,32 @@ class Session:
                     page_id=GROUNDING_PAGE,
                     page_kind="synthesis",
                     summary=f"Grounding audit report from {self.today}.",
+                    updated=self.today,
+                ),
+                page_body=report,
+            )
+        )
+
+    def _claim_support_report(
+        self,
+        selection: ClaimSupportSelection,
+        verdicts: tuple[ClaimSupportVerdict, ...],
+        model_report: str,
+    ) -> str:
+        return ClaimSupportAuditReport(
+            run_id=self.run_id or self.today,
+            selection=selection,
+            verdicts=verdicts,
+            model_report=model_report,
+        ).render()
+
+    def _file_claim_support_report(self, report: str) -> None:
+        self.store.write_page(
+            WikiPage(
+                page_metadata=PageMetadata(
+                    page_id=CLAIM_SUPPORT_PAGE,
+                    page_kind="synthesis",
+                    summary=f"Claim support audit report from {self.today}.",
                     updated=self.today,
                 ),
                 page_body=report,

@@ -161,6 +161,22 @@ GROUNDING_TEMPLATE = _BASE + (
     "curator next steps."
 )
 
+CLAIM_SUPPORT_TEMPLATE = _BASE + (
+    "\nTask: run a bounded claim-support audit. The user message contains "
+    "selected ClaimSupportCandidate records with claim text, local page "
+    "context, citations, SourceClaim ids, EvidenceRecord ids, and bounded "
+    "evidence excerpts. Judge only whether the provided EvidenceRecord "
+    "excerpts support the generated wiki claim as written. Use "
+    "record_claim_support_verdict with one verdict per inspected candidate: "
+    "supported, too_broad, not_supported, or unclear. Do not rewrite pages, "
+    "do not use general knowledge, and do not override deterministic findings. "
+    "If the excerpts are missing, partial, ambiguous, or weaker than the "
+    "claim, do not call the claim supported. When finished, call "
+    "finish_claim_support with qualitative uncertainty and curator next steps "
+    "for inspected candidates only. Do not restate verdict counts, skipped "
+    "counts, or deterministic findings; the harness records those."
+)
+
 SEMANTIC_LINT_TEMPLATE = _BASE + (
     "\nTask: run a bounded semantic lint audit. The user message contains "
     "candidate items selected deterministically by the harness. Inspect items "

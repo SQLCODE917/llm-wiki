@@ -28,6 +28,8 @@ from llmwiki.domain.candidates import (
     signals_from_broken_links,
     update_candidate_backlog,
 )
+from llmwiki.domain.claim_support import DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS
+from llmwiki.domain.claim_support_selection import select_claim_support_candidates
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.evidence_registry import EvidenceRegistry
@@ -47,7 +49,12 @@ from llmwiki.domain.maintenance import RoutePlanStatus, build_curator_status, re
 from llmwiki.domain.pages import PageMetadata, WikiPage, parse_page
 from llmwiki.domain.salience import compute_salience
 from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint_candidates
-from llmwiki.domain.system_pages import CURATOR_STATUS_PAGE, ORPHAN_EXEMPT_PAGES, SEMANTIC_LINT_PAGE
+from llmwiki.domain.system_pages import (
+    CLAIM_SUPPORT_PAGE,
+    CURATOR_STATUS_PAGE,
+    ORPHAN_EXEMPT_PAGES,
+    SEMANTIC_LINT_PAGE,
+)
 from llmwiki.pdf import PdfError
 from llmwiki.runtime.backend import start_backend
 from llmwiki.runtime.chat_repl import ChatRepl
@@ -153,6 +160,23 @@ def _build_parser() -> argparse.ArgumentParser:
         type=int,
         default=DEFAULT_MAX_CLAIMS,
         help=f"Maximum claim candidates to judge (default: {DEFAULT_MAX_CLAIMS}).",
+    )
+
+    claim_support = sub.add_parser(
+        "claim-support",
+        help="Audit generated wiki claims against EvidenceRecord support.",
+    )
+    claim_support.add_argument(
+        "--max-claims",
+        type=int,
+        default=DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
+        help="Maximum claim-support candidates to judge "
+        f"(default: {DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS}).",
+    )
+    claim_support.add_argument(
+        "--source",
+        default="",
+        help="Limit candidates to one raw source, e.g. raw/book.pdf.",
     )
 
     semantic_lint = sub.add_parser(
@@ -276,6 +300,8 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         return await _run_contradictions(args, paths, now)
     if args.op == "grounding":
         return await _run_grounding(args, paths, now)
+    if args.op == "claim-support":
+        return await _run_claim_support(args, paths, now)
     if args.op == "semantic-lint":
         return await _run_semantic_lint(args, paths, now)
 
@@ -400,6 +426,48 @@ async def _run_grounding(
         await backend.aclose()
 
 
+async def _run_claim_support(
+    args: argparse.Namespace, paths: WikiPaths, now: datetime
+) -> OperationResult:
+    if args.max_claims < 1:
+        raise ConfigError("--max-claims must be at least 1.")
+    paths.validate()
+    store = WikiStore(paths)
+    source_locator = args.source.removeprefix("raw/") if args.source else None
+    selection = select_claim_support_candidates(
+        store.page_texts(),
+        store.source_inventory(),
+        _evidence_registries(store, source_locator),
+        store.read_source_summary_draft_artifacts(source_locator),
+        max_claims=args.max_claims,
+        source=args.source,
+    )
+    if not selection.candidates:
+        session = Session(
+            store=store,
+            client=None,
+            context_manager=ContextManager(strategy=NoCompact(), budget_tokens=1),
+            today=now.date().isoformat(),
+        )
+        return await session.claim_support(selection)
+
+    backend_config = load_backend_config(args.runtime)
+    backend = await start_backend(backend_config)
+    try:
+        print(f"[runtime: {backend.summary}]", file=sys.stderr)
+        session = Session(
+            store=store,
+            client=backend.client,
+            context_manager=backend.context_manager,
+            today=now.date().isoformat(),
+            runs_dir=paths.runs_dir,
+            run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+        )
+        return await session.claim_support(selection)
+    finally:
+        await backend.aclose()
+
+
 async def _run_semantic_lint(
     args: argparse.Namespace, paths: WikiPaths, now: datetime
 ) -> OperationResult:
@@ -508,6 +576,7 @@ def _curator_report(
         salience_report=compute_salience(page_texts),
         candidate_backlog=candidate_backlog,
         strict_evidence=strict_evidence,
+        claim_support_summary=_claim_support_summary(store),
         semantic_lint_summary=_semantic_lint_summary(store),
         route_plan_status=_route_plan_status(paths),
         graph_status=graph_status(
@@ -559,10 +628,30 @@ def _latest_evidence_registry(store: WikiStore) -> EvidenceRegistry | None:
     return registries[-1]
 
 
+def _evidence_registries(
+    store: WikiStore, source_locator: str | None = None
+) -> tuple[EvidenceRegistry, ...]:
+    locators = (source_locator,) if source_locator else store.list_sources()
+    registries: list[EvidenceRegistry] = []
+    for locator in locators:
+        registry = store.read_evidence_registry_artifact(locator)
+        if registry is not None:
+            registries.append(registry)
+    return tuple(registries)
+
+
+def _claim_support_summary(store: WikiStore) -> str:
+    return _system_report_summary(store, CLAIM_SUPPORT_PAGE)
+
+
 def _semantic_lint_summary(store: WikiStore) -> str:
-    if SEMANTIC_LINT_PAGE not in store.list_pages():
+    return _system_report_summary(store, SEMANTIC_LINT_PAGE)
+
+
+def _system_report_summary(store: WikiStore, page_id: str) -> str:
+    if page_id not in store.list_pages():
         return ""
-    text = parse_page(store.read_page(SEMANTIC_LINT_PAGE)).page_body
+    text = parse_page(store.read_page(page_id)).page_body
     lines = [
         line.strip()
         for line in text.splitlines()

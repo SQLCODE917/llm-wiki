@@ -67,6 +67,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `EvidenceRegistry` | `evidence_registry` |
 | `EvidenceBank` | `evidence_bank` |
 | `LocatorMatch` | `locator_match` |
+| `ClaimSupportCandidate` | `claim_support_candidate` |
+| `ClaimSupportVerdict` | `claim_support_verdict` |
+| `ClaimSupportFinding` | `claim_support_finding` |
+| `ClaimSupportAuditReport` | `claim_support_audit_report` |
 | `IndexEntry` | `index_entry` |
 | `LogEntry` | `log_entry` |
 | `LintRun` | `lint_run` |
@@ -125,7 +129,11 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | SourceRange | Exists | `llmwiki.domain.evidence_registry`; page-scoped source span |
 | EvidenceRecord | Exists | `llmwiki.domain.evidence_registry`; stable generated evidence excerpt record |
 | EvidenceBank | Exists | `llmwiki.domain.evidence_registry`; bounded snippets derived from evidence records |
-| LocatorMatch | Exists | `llmwiki.domain.evidence_registry`; deterministic locator check result |
+| LocatorMatch | Exists | `llmwiki.domain.evidence_locators`; deterministic locator check result |
+| ClaimSupportCandidate | Exists | `llmwiki.domain.claim_support`; selected generated claim with source/evidence links |
+| ClaimSupportVerdict | Exists | `llmwiki.domain.claim_support`; fixed support judgment recorded by the model tool |
+| ClaimSupportFinding | Exists | `llmwiki.domain.claim_support`; deterministic or support-verdict audit finding |
+| ClaimSupportAuditReport | Exists | `llmwiki.domain.claim_support`; harness-owned report filed to `wiki-claim-support` |
 | GroundingVerdict | Exists | `llmwiki.domain.grounding` |
 | ContradictionFinding | Exists | `llmwiki.domain.contradictions` |
 | CandidateRecord | Exists | `llmwiki.domain.candidates` |
@@ -157,6 +165,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | FinishParams | `llmwiki.workflows.tools` | operation completion output |
 | WriteFixedSourcePageParams | `llmwiki.workflows.fixed_page_tools` | `WikiPage` through fixed-page ingest flow |
 | RecordGroundingVerdictParams | `llmwiki.workflows.grounding_tools` | `GroundingVerdict` |
+| RecordClaimSupportVerdictParams | `llmwiki.workflows.claim_support_tools` | `ClaimSupportVerdict` |
 | RecordContradictionParams | `llmwiki.workflows.contradiction_tools` | `ContradictionFinding` |
 | RecordSemanticFindingParams | `llmwiki.workflows.semantic_lint_tools` | semantic lint finding records |
 | LinkOrphanParams | `llmwiki.workflows.graph_tools` | deterministic link insertion inputs |

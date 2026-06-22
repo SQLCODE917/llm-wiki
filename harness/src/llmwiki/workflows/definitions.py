@@ -13,6 +13,11 @@ from __future__ import annotations
 from forge.core.workflow import Workflow
 from forge.tools.respond import respond_tool
 
+from llmwiki.domain.claim_support import (
+    ClaimSupportCandidate,
+    ClaimSupportFinding,
+    ClaimSupportVerdict,
+)
 from llmwiki.domain.contradictions import ContradictionFinding
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import ClaimCandidate, GroundingVerdict
@@ -26,6 +31,7 @@ from llmwiki.domain.semantic_lint import SemanticFinding
 from llmwiki.store import WikiStore
 from llmwiki.workflows import prompts
 from llmwiki.workflows.chat_file_tools import chat_file_write_page_tool
+from llmwiki.workflows.claim_support_tools import record_claim_support_verdict_tool
 from llmwiki.workflows.contradiction_tools import record_contradiction_tool
 from llmwiki.workflows.graph_tools import link_orphan_tool
 from llmwiki.workflows.grounding_tools import record_grounding_verdict_tool
@@ -251,6 +257,32 @@ def build_grounding_workflow(
         required_steps=[],
         terminal_tool="finish_grounding",
         system_prompt_template=prompts.GROUNDING_TEMPLATE,
+    )
+
+
+def build_claim_support_workflow(
+    store: WikiStore,
+    verdicts: list[ClaimSupportVerdict],
+    candidates: tuple[ClaimSupportCandidate, ...],
+    deterministic_findings: tuple[ClaimSupportFinding, ...],
+) -> Workflow:
+    tools = [
+        record_claim_support_verdict_tool(
+            store, verdicts, candidates, deterministic_findings
+        ),
+        finish_tool(
+            "finish_claim_support",
+            "Finish the claim-support audit with audited scope, uncertainty, "
+            "and curator next steps.",
+        ),
+    ]
+    return Workflow(
+        name="claim-support",
+        description="Audit selected generated wiki claims against EvidenceRecords.",
+        tools={t.name: t for t in tools},
+        required_steps=[],
+        terminal_tool="finish_claim_support",
+        system_prompt_template=prompts.CLAIM_SUPPORT_TEMPLATE,
     )
 
 

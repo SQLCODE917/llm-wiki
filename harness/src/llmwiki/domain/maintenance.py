@@ -84,6 +84,7 @@ class CuratorStatus:
     evidence_report: EvidenceLintReport
     salience_report: SalienceReport
     candidate_backlog: CandidateBacklog
+    claim_support_summary: str
     semantic_lint_summary: str
     route_plan_status: RoutePlanStatus
     graph_status: GraphStatus | None
@@ -102,6 +103,8 @@ class CuratorStatus:
                 "## Salience\n\n" + (self.salience_report.render() or "No salience entries."),
                 "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
                 "## Ingest Route Plans\n\n" + self.route_plan_status.render(),
+                "## Latest Claim Support Audit\n\n"
+                + (self.claim_support_summary or "No claim support audit report."),
                 "## Latest Semantic Lint\n\n"
                 + (self.semantic_lint_summary or "No semantic lint report."),
                 "## Graph Export\n\n" + _render_graph_status(self.graph_status),
@@ -125,6 +128,7 @@ def build_curator_status(
     salience_report: SalienceReport,
     candidate_backlog: CandidateBacklog,
     strict_evidence: StrictEvidenceMode,
+    claim_support_summary: str = "",
     semantic_lint_summary: str = "",
     route_plan_status: RoutePlanStatus | None = None,
     graph_status: GraphStatus | None = None,
@@ -156,6 +160,7 @@ def build_curator_status(
         evidence_report=evidence_report,
         salience_report=salience_report,
         candidate_backlog=candidate_backlog,
+        claim_support_summary=claim_support_summary,
         semantic_lint_summary=semantic_lint_summary,
         route_plan_status=route_plan_status or RoutePlanStatus(),
         graph_status=graph_status,
