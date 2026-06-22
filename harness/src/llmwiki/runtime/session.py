@@ -812,15 +812,17 @@ class Session:
         self.store.append_log(self.today, "grounding", "grounding audit", report)
         return OperationResult("grounding", "grounding audit", report, transcript)
 
-    async def claim_support(self, selection: ClaimSupportSelection) -> OperationResult:
+    async def claim_support_audit(
+        self, selection: ClaimSupportSelection
+    ) -> tuple[ClaimSupportAuditReport, Path | None]:
         verdicts: list[ClaimSupportVerdict] = []
         if not selection.candidates:
-            report = self._claim_support_report(
-                selection, (), "No claim-support candidates to audit."
+            return (
+                self._claim_support_audit_report(
+                    selection, (), "No claim-support candidates to audit."
+                ),
+                None,
             )
-            self._file_claim_support_report(report)
-            self.store.append_log(self.today, "claim-support", "claim support audit", report)
-            return OperationResult("claim-support", "claim support audit", report, None)
         workflow = build_claim_support_workflow(
             self.store, verdicts, selection.candidates, selection.deterministic_findings
         )
@@ -840,7 +842,13 @@ class Session:
             f"{selection.render_for_prompt()}"
         )
         model_report, transcript = await self._run(workflow, message, "claim-support")
-        report = self._claim_support_report(selection, tuple(verdicts), model_report)
+        return self._claim_support_audit_report(
+            selection, tuple(verdicts), model_report
+        ), transcript
+
+    async def claim_support(self, selection: ClaimSupportSelection) -> OperationResult:
+        audit, transcript = await self.claim_support_audit(selection)
+        report = audit.render()
         self._file_claim_support_report(report)
         self.store.append_log(self.today, "claim-support", "claim support audit", report)
         return OperationResult("claim-support", "claim support audit", report, transcript)
@@ -997,18 +1005,18 @@ class Session:
             )
         )
 
-    def _claim_support_report(
+    def _claim_support_audit_report(
         self,
         selection: ClaimSupportSelection,
         verdicts: tuple[ClaimSupportVerdict, ...],
         model_report: str,
-    ) -> str:
+    ) -> ClaimSupportAuditReport:
         return ClaimSupportAuditReport(
             run_id=self.run_id or self.today,
             selection=selection,
             verdicts=verdicts,
             model_report=model_report,
-        ).render()
+        )
 
     def _file_claim_support_report(self, report: str) -> None:
         self.store.write_page(

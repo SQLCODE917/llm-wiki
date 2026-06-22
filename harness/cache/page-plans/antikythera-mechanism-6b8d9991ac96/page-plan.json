@@ -421,7 +421,7 @@
       "unit_id": "unit-0001"
     }
   ],
-  "plan_id": "2026-06-22-101220-source-antikythera-mechanism",
+  "plan_id": "2026-06-22-confidence-source-antikythera-mechanism",
   "planned_writes": [
     {
       "action": "enrich-existing",
@@ -530,7 +530,13 @@
           "match_reason": "nearest-neighbor:unit-0001",
           "page_excerpt": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
           "page_id": "antikythera-mechanism",
-          "score": 0.368462
+          "score": 0.37147
+        },
+        {
+          "match_reason": "nearest-neighbor:unit-0001",
+          "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-113049 Source: raw/antikythera-mechanism.md Confidence status: failed Blockers: 1 Warnings: 0 Gates: 8 ## Artifact Reuse - page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/p...",
+          "page_id": "wiki-ingest-confidence",
+          "score": 0.221894
         }
       ],
       "write_id": "write-antikythera-mechanism"
@@ -1033,7 +1039,13 @@
       "match_reason": "nearest-neighbor:unit-0001",
       "page_excerpt": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
       "page_id": "antikythera-mechanism",
-      "score": 0.368462
+      "score": 0.37147
+    },
+    {
+      "match_reason": "nearest-neighbor:unit-0001",
+      "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-113049 Source: raw/antikythera-mechanism.md Confidence status: failed Blockers: 1 Warnings: 0 Gates: 8 ## Artifact Reuse - page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/p...",
+      "page_id": "wiki-ingest-confidence",
+      "score": 0.221894
     }
   ]
 }

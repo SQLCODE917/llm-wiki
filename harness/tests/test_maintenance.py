@@ -113,6 +113,27 @@ class TestCuratorReport:
         assert "Audited items: 1" in report
         assert "category: synthesis" not in report
 
+    def test_curator_status_includes_latest_ingest_confidence_summary(
+        self, store: WikiStore, paths: WikiPaths
+    ) -> None:
+        store.write_page(
+            _page(
+                "wiki-ingest-confidence",
+                "# Ingest Confidence Report\n\n"
+                "## Summary\n\n"
+                "Run id: confidence-run\n"
+                "Source: raw/alpha.md\n"
+                "Confidence status: passed",
+                category="synthesis",
+            )
+        )
+
+        report = _curator_report(store, paths, "off")
+
+        assert "## Latest Ingest Confidence" in report
+        assert "Source: raw/alpha.md" in report
+        assert "category: synthesis" not in report
+
     def test_curator_status_reports_evidence_registry_counts(
         self, store: WikiStore, paths: WikiPaths
     ) -> None:

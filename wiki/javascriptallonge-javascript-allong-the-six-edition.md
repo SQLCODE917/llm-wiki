@@ -33,11 +33,11 @@ This edition of *JavaScript Allongé* introduces the reader to functional progra
 
 ## Chapter Navigation
 
-- [[javascriptallonge-introduction]]
-- [[javascriptallonge-functional-basics]]
-- [[javascriptallonge-closures]]
-- [[javascriptallonge-currying]]
-- [[javascriptallonge-immutability]]
+- [[javascriptallonge-about-javascript-allong|introduction]]
+- [[javascriptallonge-as-little-as-possible-about-functions-but-no-less|functional basics]]
+- [[javascriptallonge-closures-and-scope|closures]]
+- [[javascriptallonge-partial-application|currying]]
+- [[javascriptallonge-copy-on-write|immutability]]
 
 ## Citations
 

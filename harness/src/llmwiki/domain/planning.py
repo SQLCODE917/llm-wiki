@@ -7,6 +7,8 @@ import re
 from dataclasses import asdict, replace
 from pathlib import Path
 
+from pydantic import TypeAdapter
+
 from llmwiki.domain.objects import (
     ExtractedUnit,
     PagePlan,
@@ -37,6 +39,7 @@ from llmwiki.domain.source_summary_quality import (
     source_summary_quality_report as source_summary_quality_report,
 )
 
+_PAGE_PLAN_ADAPTER = TypeAdapter(PagePlan)
 _HEADING_RE = re.compile(r"^#{1,6}\s+(.+)$", re.MULTILINE)
 
 
@@ -146,6 +149,10 @@ def build_page_plan(
 
 def page_plan_to_json(plan: PagePlan) -> str:
     return json.dumps(asdict(plan), indent=2, ensure_ascii=False, sort_keys=True)
+
+
+def page_plan_from_json(text: str) -> PagePlan:
+    return _PAGE_PLAN_ADAPTER.validate_json(text)
 
 
 def observation_report(

@@ -271,3 +271,4 @@
 ## Syntheses
 - [[wiki-claim-support]] — Claim support audit report from 2026-06-22.
 - [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-20).
+- [[wiki-ingest-confidence]] — Ingest confidence report from 2026-06-22.

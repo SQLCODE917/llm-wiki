@@ -3,12 +3,192 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-a-balanced-statement-about-combinators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-few-utilities"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-history-lesson"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-pull-of-the-lever-prefaces"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-quick-summary-of-functions-and-bodies"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-return-to-backward-thinking"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-rich-aroma-basic-numbers"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-about-javascript-allong"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-about-the-author"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-about-the-sample-pdf"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-after-another-drink"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-ah-i-d-like-to-have-an-argument-please-22"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-and-also"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-and-are-control-flow-operators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-applying-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-are-consts-also-from-a-shadowy-planet"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-array-literals"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-arrays-and-destructuring-arguments"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
     },
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-back-on-the-block"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-backwardness"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-basic-operations-on-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-bonus"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-building-blocks"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-call-by-sharing"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-call-by-value"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-caveat"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-combinators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-commas"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-composing-and-decomposing-data"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-composition"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-const"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-const-and-lexical-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-contact"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-converting-non-tail-calls-to-tail-calls"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-copy-on-read"
     },
     {
       "resolved": true,
@@ -23,12 +203,147 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
-      "target": "javascriptallonge-forewords-to-the-first-edition"
+      "target": "javascriptallonge-daniel-friedman-and-matthias-felleisen"
     },
     {
       "resolved": true,
       "source": "javascriptallonge",
-      "target": "javascriptallonge-front-matter"
+      "target": "javascriptallonge-default-arguments"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-defaults-and-destructuring"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-destructuring-and-return-values"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-destructuring-arrays"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-destructuring-is-not-pattern-matching"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-destructuring-objects"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-destructuring-parameters"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-disclaimer"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-ecmascript-6-has-three-major-groups-of-features"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-element-references"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-evaluation-time"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-factorials"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-false"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-flip"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-flipping-methods"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-floating"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-folding"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-foreword-to-the-six-edition"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-from"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-function-declaration-caveats-34"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-function-declarations"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-function-decorators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-function-parameters-are-eager"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-functional-iterators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-functions-and-identities"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-functions-are-not-the-real-point"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-functions-that-evaluate-to-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-functions-that-return-values-and-evaluate-expressions"
     },
     {
       "resolved": true,
@@ -38,7 +353,57 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-gathering"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-generating-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-generators-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-generators-are-coroutines"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-higher-order-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-how-this-book-is-organized"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-how-to-run-the-examples"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-images"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-implementing-methods-with-iteration"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-inside-out"
     },
     {
       "resolved": true,
@@ -53,7 +418,37 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-it-s-always-the-environment"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-iterables-out-to-infinity"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-iterating"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-iteration"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-iteration-and-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-iterator-objects"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-javascript-s-generators"
     },
     {
       "resolved": true,
@@ -63,7 +458,87 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-lazy-collection-operations"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-left-variadic-destructuring"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-left-variadic-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-like-this"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-linear-recursion"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-lists-with-functions-as-data"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-literal-object-syntax"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-magic-names"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-magic-names-and-fat-arrows"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-making-data-out-of-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-mapping"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-mapwith"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-matthew-knox"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-maybe"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-memoizing-an-iterable"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-michael-fogus"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-more-generators"
     },
     {
       "resolved": true,
@@ -73,7 +548,17 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-mutation-and-data-structures"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-naming-functions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-nested-blocks"
     },
     {
       "resolved": true,
@@ -83,7 +568,82 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-once"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-operations-on-numbers"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-operations-on-ordered-collections"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-operations-that-transform-an-iterable-into-a-value"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-operations-that-transform-one-iterable-into-another"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-or-even"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-ordered-collections"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-overcoming-limitations"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-partial-application"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-picking-the-bean-choice-and-truthiness"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-plain-old-javascript-objects"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-prelude-values-and-expressions-over-coffee"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-quasi-literals"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-reassignment"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-rebinding"
     },
     {
       "resolved": true,
@@ -93,12 +653,312 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-recipes-with-data"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-recursive-iterators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-reference-types"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-reg-raganwald-braithwaite"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-revisiting-linked-lists"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-rewriting-iterable-operations"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-richard-feynman"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-say-please"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-self-currying-flip"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-self-similarity"
     },
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-served-by-the-pot-collections"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-so-why-arrays"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-some-history"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-state-machines"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-summary"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-tail-call-optimization"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-tail-calls-and-default-arguments"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-tap"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-that-constant-coffee-craving"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-that-s-nice-is-that-the-only-reason"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-aftermath"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-carpenter-s-solution"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-function-keyword"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-golden-crema-appendices-and-afterwords"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-kestrel-and-the-idiot"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-problem"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-simplest-possible-block"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-the-vireo"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-this-seems-familiar"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-tortoises-hares-and-teleporting-turtles"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-true"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-truthiness-and-operators"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-truthiness-and-the-ternary-operator"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-unary"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-undefined"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-unfolding-and-laziness"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-value-types"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-values-and-identity"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-values-are-expressions"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-var"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-variables-and-bindings"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-void"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-we-get"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-we-ll-keep-it-simple"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-what-javascript-allong-is-and-isn-t"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-which-came-first-the-chicken-or-the-egg"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-why"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-why-const-and-let-were-invented"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-why-the-six-edition"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-will-be-represented-as"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-would-be-3-producing"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-yes-consider-this-variation"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
+      "target": "javascriptallonge-yielding-iterables"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-javascript-allong-the-six-edition",
+      "target": "javascriptallonge-about-javascript-allong"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-javascript-allong-the-six-edition",
+      "target": "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-javascript-allong-the-six-edition",
+      "target": "javascriptallonge-closures-and-scope"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-javascript-allong-the-six-edition",
+      "target": "javascriptallonge-copy-on-write"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-javascript-allong-the-six-edition",
+      "target": "javascriptallonge-partial-application"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-true",
+      "target": "javascriptallonge"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge-true",
+      "target": "javascriptallonge-false"
     },
     {
       "resolved": true,
@@ -447,7 +1307,7 @@
     }
   ],
   "metadata": {
-    "generated_date": "2026-06-20",
+    "generated_date": "2026-06-22",
     "generator": "llmwiki.graph.v1",
     "schema_version": 1,
     "system_pages": "excluded"
@@ -466,67 +1326,736 @@
       "category": "source",
       "name": "javascriptallonge",
       "outbound_links": [
+        "javascriptallonge-a-balanced-statement-about-combinators",
+        "javascriptallonge-a-few-utilities",
+        "javascriptallonge-a-history-lesson",
+        "javascriptallonge-a-pull-of-the-lever-prefaces",
+        "javascriptallonge-a-quick-summary-of-functions-and-bodies",
+        "javascriptallonge-a-return-to-backward-thinking",
+        "javascriptallonge-a-rich-aroma-basic-numbers",
+        "javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals",
+        "javascriptallonge-about-javascript-allong",
+        "javascriptallonge-about-the-author",
+        "javascriptallonge-about-the-sample-pdf",
+        "javascriptallonge-after-another-drink",
+        "javascriptallonge-ah-i-d-like-to-have-an-argument-please-22",
+        "javascriptallonge-and-also",
+        "javascriptallonge-and-are-control-flow-operators",
+        "javascriptallonge-applying-functions",
+        "javascriptallonge-are-consts-also-from-a-shadowy-planet",
+        "javascriptallonge-array-literals",
+        "javascriptallonge-arrays-and-destructuring-arguments",
         "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+        "javascriptallonge-back-on-the-block",
+        "javascriptallonge-backwardness",
+        "javascriptallonge-basic-operations-on-iterables",
+        "javascriptallonge-bonus",
+        "javascriptallonge-building-blocks",
+        "javascriptallonge-call-by-sharing",
+        "javascriptallonge-call-by-value",
+        "javascriptallonge-caveat",
         "javascriptallonge-closures-and-scope",
+        "javascriptallonge-combinators",
+        "javascriptallonge-commas",
+        "javascriptallonge-composing-and-decomposing-data",
+        "javascriptallonge-composition",
+        "javascriptallonge-const",
+        "javascriptallonge-const-and-lexical-scope",
+        "javascriptallonge-contact",
+        "javascriptallonge-converting-non-tail-calls-to-tail-calls",
+        "javascriptallonge-copy-on-read",
         "javascriptallonge-copy-on-write",
         "javascriptallonge-copyright-notice",
-        "javascriptallonge-forewords-to-the-first-edition",
-        "javascriptallonge-front-matter",
+        "javascriptallonge-daniel-friedman-and-matthias-felleisen",
+        "javascriptallonge-default-arguments",
+        "javascriptallonge-defaults-and-destructuring",
+        "javascriptallonge-destructuring-and-return-values",
+        "javascriptallonge-destructuring-arrays",
+        "javascriptallonge-destructuring-is-not-pattern-matching",
+        "javascriptallonge-destructuring-objects",
+        "javascriptallonge-destructuring-parameters",
+        "javascriptallonge-disclaimer",
+        "javascriptallonge-ecmascript-6-has-three-major-groups-of-features",
+        "javascriptallonge-element-references",
+        "javascriptallonge-evaluation-time",
+        "javascriptallonge-factorials",
+        "javascriptallonge-false",
+        "javascriptallonge-flip",
+        "javascriptallonge-flipping-methods",
+        "javascriptallonge-floating",
+        "javascriptallonge-folding",
+        "javascriptallonge-foreword-to-the-six-edition",
+        "javascriptallonge-from",
+        "javascriptallonge-function-declaration-caveats-34",
+        "javascriptallonge-function-declarations",
+        "javascriptallonge-function-decorators",
+        "javascriptallonge-function-parameters-are-eager",
+        "javascriptallonge-functional-iterators",
+        "javascriptallonge-functions-and-identities",
+        "javascriptallonge-functions-are-not-the-real-point",
+        "javascriptallonge-functions-that-evaluate-to-functions",
+        "javascriptallonge-functions-that-return-values-and-evaluate-expressions",
         "javascriptallonge-garbage-garbage-everywhere",
+        "javascriptallonge-gathering",
         "javascriptallonge-generating-iterables",
+        "javascriptallonge-generators-and-iterables",
+        "javascriptallonge-generators-are-coroutines",
+        "javascriptallonge-higher-order-functions",
+        "javascriptallonge-how-this-book-is-organized",
+        "javascriptallonge-how-to-run-the-examples",
+        "javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure",
+        "javascriptallonge-images",
+        "javascriptallonge-implementing-methods-with-iteration",
+        "javascriptallonge-inside-out",
         "javascriptallonge-interactive-generators",
         "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+        "javascriptallonge-it-s-always-the-environment",
+        "javascriptallonge-iterables-out-to-infinity",
+        "javascriptallonge-iterating",
+        "javascriptallonge-iteration",
         "javascriptallonge-iteration-and-iterables",
+        "javascriptallonge-iterator-objects",
+        "javascriptallonge-javascript-s-generators",
         "javascriptallonge-lazy-and-eager-collections",
+        "javascriptallonge-lazy-collection-operations",
+        "javascriptallonge-left-variadic-destructuring",
+        "javascriptallonge-left-variadic-functions",
+        "javascriptallonge-like-this",
+        "javascriptallonge-linear-recursion",
+        "javascriptallonge-lists-with-functions-as-data",
+        "javascriptallonge-literal-object-syntax",
+        "javascriptallonge-magic-names",
+        "javascriptallonge-magic-names-and-fat-arrows",
         "javascriptallonge-making-data-out-of-functions",
+        "javascriptallonge-mapping",
+        "javascriptallonge-mapwith",
+        "javascriptallonge-matthew-knox",
+        "javascriptallonge-maybe",
+        "javascriptallonge-memoizing-an-iterable",
+        "javascriptallonge-michael-fogus",
+        "javascriptallonge-more-generators",
         "javascriptallonge-mutation",
+        "javascriptallonge-mutation-and-data-structures",
         "javascriptallonge-naming-functions",
+        "javascriptallonge-nested-blocks",
         "javascriptallonge-object-assign",
+        "javascriptallonge-once",
+        "javascriptallonge-operations-on-numbers",
+        "javascriptallonge-operations-on-ordered-collections",
+        "javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable",
+        "javascriptallonge-operations-that-transform-an-iterable-into-a-value",
+        "javascriptallonge-operations-that-transform-one-iterable-into-another",
+        "javascriptallonge-or-even",
+        "javascriptallonge-ordered-collections",
+        "javascriptallonge-overcoming-limitations",
+        "javascriptallonge-partial-application",
         "javascriptallonge-picking-the-bean-choice-and-truthiness",
+        "javascriptallonge-plain-old-javascript-objects",
+        "javascriptallonge-prelude-values-and-expressions-over-coffee",
+        "javascriptallonge-quasi-literals",
+        "javascriptallonge-reassignment",
+        "javascriptallonge-rebinding",
         "javascriptallonge-recipes-with-basic-functions",
+        "javascriptallonge-recipes-with-data",
+        "javascriptallonge-recursive-iterators",
+        "javascriptallonge-reference-types",
+        "javascriptallonge-reg-raganwald-braithwaite",
+        "javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function",
+        "javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function",
+        "javascriptallonge-revisiting-linked-lists",
+        "javascriptallonge-rewriting-iterable-operations",
+        "javascriptallonge-richard-feynman",
+        "javascriptallonge-say-please",
+        "javascriptallonge-self-currying-flip",
         "javascriptallonge-self-similarity",
-        "javascriptallonge-that-constant-coffee-craving"
+        "javascriptallonge-served-by-the-pot-collections",
+        "javascriptallonge-so-why-arrays",
+        "javascriptallonge-some-history",
+        "javascriptallonge-state-machines",
+        "javascriptallonge-summary",
+        "javascriptallonge-tail-call-optimization",
+        "javascriptallonge-tail-calls-and-default-arguments",
+        "javascriptallonge-tap",
+        "javascriptallonge-that-constant-coffee-craving",
+        "javascriptallonge-that-s-nice-is-that-the-only-reason",
+        "javascriptallonge-the-aftermath",
+        "javascriptallonge-the-carpenter-s-solution",
+        "javascriptallonge-the-function-keyword",
+        "javascriptallonge-the-golden-crema-appendices-and-afterwords",
+        "javascriptallonge-the-kestrel-and-the-idiot",
+        "javascriptallonge-the-problem",
+        "javascriptallonge-the-simplest-possible-block",
+        "javascriptallonge-the-vireo",
+        "javascriptallonge-this-seems-familiar",
+        "javascriptallonge-tortoises-hares-and-teleporting-turtles",
+        "javascriptallonge-true",
+        "javascriptallonge-truthiness-and-operators",
+        "javascriptallonge-truthiness-and-the-ternary-operator",
+        "javascriptallonge-unary",
+        "javascriptallonge-undefined",
+        "javascriptallonge-unfolding-and-laziness",
+        "javascriptallonge-value-types",
+        "javascriptallonge-values-and-identity",
+        "javascriptallonge-values-are-expressions",
+        "javascriptallonge-var",
+        "javascriptallonge-variables-and-bindings",
+        "javascriptallonge-void",
+        "javascriptallonge-we-get",
+        "javascriptallonge-we-ll-keep-it-simple",
+        "javascriptallonge-what-javascript-allong-is-and-isn-t",
+        "javascriptallonge-which-came-first-the-chicken-or-the-egg",
+        "javascriptallonge-why",
+        "javascriptallonge-why-const-and-let-were-invented",
+        "javascriptallonge-why-the-six-edition",
+        "javascriptallonge-will-be-represented-as",
+        "javascriptallonge-would-be-3-producing",
+        "javascriptallonge-yes-consider-this-variation",
+        "javascriptallonge-yielding-iterables"
       ],
       "sources": [
         "raw/javascriptallonge.pdf"
       ],
-      "summary": "JavaScript Allonge \u2013 A modular guide to JavaScript fundamentals and advanced techniques."
+      "summary": "Hub page for JavaScript Allong\u00e9, the 'Six' Edition."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-balanced-statement-about-combinators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.69-69"
+      ],
+      "summary": "Summary of the chapter on combinators from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-few-utilities",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.159-161"
+      ],
+      "summary": "Summary of the 'a few utilities' section from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-history-lesson",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.90-91"
+      ],
+      "summary": "A history lesson on variadic functions and argument gathering in JavaScript, from javascriptallonge.pdf p.90-91."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-pull-of-the-lever-prefaces",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.6-6"
+      ],
+      "summary": "Chapter on prefacing techniques in Caf\u00e9 Molinari's work."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-pull-of-the-lever-prefaces-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.6-6"
+      ],
+      "summary": "Summary of the prefaces section from JavaScript Allong\u00e9, covering coffee preparation methods."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-quick-summary-of-functions-and-bodies",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.40-40"
+      ],
+      "summary": "Summary of chapter 'a quick summary of functions and bodies' from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-return-to-backward-thinking",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.189-190"
+      ],
+      "summary": "Chapter on backward thinking in JavaScript allonge."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-rich-aroma-basic-numbers",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.24-25"
+      ],
+      "summary": "Chapter on basic numbers in JavaScriptAllonge, covering literals, representations, and numeric types."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.202-203"
+      ],
+      "summary": "Chapter on basic strings and quasi-literals in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-about-javascript-allong",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.7-7"
+      ],
+      "summary": "Summary of the 'About JavaScript Allong\u00e9' section from raw/javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-about-the-author",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.297-297"
+      ],
+      "summary": "Summary of the \"About The Author\" section from javascriptallonge.pdf."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-about-the-sample-pdf",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.16-17"
+      ],
+      "summary": "Summary of the sample PDF edition of JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-after-another-drink",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.270-272"
+      ],
+      "summary": "Chapter summary for 'after another drink' from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-ah-i-d-like-to-have-an-argument-please-22",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.39-40"
+      ],
+      "summary": "Chapter 22: Ah. I'd Like to Have an Argument, Please."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-and-also",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.37-38"
+      ],
+      "summary": "Chapter summary for 'And also:' from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-and-are-control-flow-operators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.97-98"
+      ],
+      "summary": "Summary of the chapter on || and && being control-flow operators."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-applying-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.78-78"
+      ],
+      "summary": "Summary of functions in JavaScript as per javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-are-consts-also-from-a-shadowy-planet",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.57-60"
+      ],
+      "summary": "Chapter section on const scoping and shadowing in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-array-literals",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.101-102"
+      ],
+      "summary": "Summary of array literals section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-arrays-and-destructuring-arguments",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.101-101"
+      ],
+      "summary": "Summary of the Arrays and Destructuring Arguments chapter from JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.30-43"
+        "raw/javascriptallonge.pdf p.30-31"
       ],
-      "summary": "Functions in JavaScript are values with richer behavior and identity, exemplified by arrow syntax and evaluation of arguments."
+      "summary": "Chapter on JavaScript functions as values and their representation."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-back-on-the-block",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.35-37"
+      ],
+      "summary": "Chapter on functions, blocks, and return statements in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-backwardness",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.180-182"
+      ],
+      "summary": "Chapter on backwardness in JavaScript and how functions operate on data structures."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-basic-operations-on-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.211-215"
+      ],
+      "summary": "iterables from raw/javascriptallonge.pdf."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-bonus",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.175-176"
+      ],
+      "summary": "Summary of the bonus chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-building-blocks",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.71-71"
+      ],
+      "summary": "Summary of the Building Blocks chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-call-by-sharing",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.42-43"
+      ],
+      "summary": "Chapter on call by sharing in JavaScriptAllonge"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-call-by-value",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.40-41"
+      ],
+      "summary": "Summary of the call by value evaluation strategy in JavaScript, based on the source 'javascriptallonge'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-caveat",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.176-176"
+      ],
+      "summary": "Summary of the caveat section from javascriptallonge.pdf"
     },
     {
       "category": "source",
       "name": "javascriptallonge-closures-and-scope",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.44-48"
+        "raw/javascriptallonge.pdf p.44-44"
       ],
-      "summary": "Source summary of closures and scope from JavaScript Allong\u00e9, covering free variables, closures, and environments."
+      "summary": "Chapter on closures and scope in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-combinators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.68-69"
+      ],
+      "summary": "Chapter on combinators from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-commas",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.33-33"
+      ],
+      "summary": "Summary of the commas section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-composing-and-decomposing-data",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.100-100"
+      ],
+      "summary": "Chapter on composing and decomposing data in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-composition",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.71-71"
+      ],
+      "summary": "Chapter on function composition in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-const",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.150-151"
+      ],
+      "summary": "Summary of the const chapter in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-const-and-lexical-scope",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.55-57"
+      ],
+      "summary": "Summary of the const and lexical scope chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-contact",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.297-297"
+      ],
+      "summary": "Contact information for Reg 'Raganwald' Braithwaite, author of JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-converting-non-tail-calls-to-tail-calls",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.120-121"
+      ],
+      "summary": "Chapter on converting non-tail-calls to tail-calls in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-copy-on-read",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.161-161"
+      ],
+      "summary": "Summary of the copy-on-read strategy in JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-copy-on-write",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.158-176"
+        "raw/javascriptallonge.pdf p.162-163"
       ],
-      "summary": "Copy\u2011on\u2011write strategies for array and list mutation in JavaScript."
+      "summary": "Copy-on-write strategy in JavaScript, including its definition, tradeoffs, and implementation in the context of immutable data structures."
     },
     {
       "category": "source",
       "name": "javascriptallonge-copyright-notice",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.293-297"
+        "raw/javascriptallonge.pdf p.293-293"
       ],
-      "summary": "\u00a9 2012\u20112015 Reginald Braithwaite copyright notice for JavaScriptAllonge"
+      "summary": "Copyright notice for JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-daniel-friedman-and-matthias-felleisen",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.291-291"
+      ],
+      "summary": "Summary of the chapter on Daniel Friedman and Matthias Felleisen from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-default-arguments",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.123-124"
+      ],
+      "summary": "Default arguments in JavaScript, including tail-recursive function examples and syntax."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-defaults-and-destructuring",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.124-125"
+      ],
+      "summary": "Chapter covering defaults and destructuring in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-destructuring-and-return-values",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.106-107"
+      ],
+      "summary": "Summary of the chapter on destructuring and return values from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-destructuring-arrays",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.103-104"
+      ],
+      "summary": "Chapter on destructuring arrays from JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-destructuring-is-not-pattern-matching",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.105-106"
+      ],
+      "summary": "Summary of the section 'destructuring is not pattern matching' from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-destructuring-objects",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.136-137"
+      ],
+      "summary": "Summary of destructuring objects chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-destructuring-parameters",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.107-108"
+      ],
+      "summary": "Chapter on destructuring parameters in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-disclaimer",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.192-192"
+      ],
+      "summary": "Summary of the disclaimer section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-ecmascript-6-has-three-major-groups-of-features",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.13-13"
+      ],
+      "summary": "Summary of ECMAScript 6 features in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-element-references",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.102-103"
+      ],
+      "summary": "Summary of the element references section from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-evaluation-time",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.204-204"
+      ],
+      "summary": "Summary of the evaluation time section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-factorials",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.121-123"
+      ],
+      "summary": "Chapter on factorials from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-false",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.94-95"
+      ],
+      "summary": "Summary of the false boolean value in JavaScript, as described in 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-flip",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.195-196"
+      ],
+      "summary": "Chapter on flip function and argument order reversal in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-flipping-methods",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.196-197"
+      ],
+      "summary": "Summary of the flipping methods section from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-floating",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.25-26"
+      ],
+      "summary": "Chapter on floating-point numbers in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-folding",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.114-116"
+      ],
+      "summary": "Chapter on folding in JavaScript allonge"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-foreword-to-the-six-edition",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.13-13"
+      ],
+      "summary": "Foreword to the 'Six' edition of JavaScript Allong\u00e9, discussing the evolution of ECMAScript 6."
     },
     {
       "category": "source",
@@ -539,6 +2068,15 @@
     },
     {
       "category": "source",
+      "name": "javascriptallonge-from",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.221-222"
+      ],
+      "summary": "Summary of the 'from' section from javascriptallonge.pdf (pages 221-222)."
+    },
+    {
+      "category": "source",
       "name": "javascriptallonge-front-matter",
       "outbound_links": [],
       "sources": [
@@ -548,129 +2086,1155 @@
     },
     {
       "category": "source",
+      "name": "javascriptallonge-function-declaration-caveats-34",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.66-67"
+      ],
+      "summary": "Summary of function declaration caveats from javascriptallonge.pdf, pages 66-67"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-function-declarations",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.65-66"
+      ],
+      "summary": "Summary of function declarations in JavaScript as described in 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-function-decorators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.69-70"
+      ],
+      "summary": "Summary of function decorators in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-function-parameters-are-eager",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.98-99"
+      ],
+      "summary": "Function parameters are always eagerly evaluated in JavaScript, unlike the ternary operator and logical operators."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-functional-iterators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.206-209"
+      ],
+      "summary": "Chapter on functional iterators in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-functions-and-identities",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.31-31"
+      ],
+      "summary": "Summary of the functions and identities section from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-functions-are-not-the-real-point",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.188-189"
+      ],
+      "summary": "Chapter on functions not being the real point in JavaScript Allong\u00e9, discussing the theoretical vs practical aspects of functional programming."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-functions-that-evaluate-to-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.38-38"
+      ],
+      "summary": "Chapter on functions that evaluate to functions in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-functions-that-return-values-and-evaluate-expressions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.32-33"
+      ],
+      "summary": "Chapter on functions that return values and evaluate expressions from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
       "name": "javascriptallonge-garbage-garbage-everywhere",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.126-140"
+        "raw/javascriptallonge.pdf p.126-128"
       ],
-      "summary": "Chapter covering tail\u2011call recursion, array vs. Lisp linked list performance."
+      "summary": "Chapter on garbage collection and memory management in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-gathering",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.104-105"
+      ],
+      "summary": "Chapter on gathering and destructuring in JavaScript Allong\u00e9"
     },
     {
       "category": "source",
       "name": "javascriptallonge-generating-iterables",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.224-245"
+        "raw/javascriptallonge.pdf p.224-226"
       ],
-      "summary": "Chapter on iterables and generators in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax."
+      "summary": "Chapter on generating iterables in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-generators-and-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.234-236"
+      ],
+      "summary": "Chapter on generators and iterables from JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-generators-are-coroutines",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.231-234"
+      ],
+      "summary": "Generators as coroutines in JavaScript, with behavioral differences from ordinary functions."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-higher-order-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.68-68"
+      ],
+      "summary": "Summary of the higher-order functions chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-how-this-book-is-organized",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.11-12"
+      ],
+      "summary": "Overview of how JavaScript Allong\u00e9 is organized, including chapter structure and the inclusion of practical recipes."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-how-to-run-the-examples",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.289-290"
+      ],
+      "summary": "How to run the examples from JavaScript Allong\u00e9, including use of Traceur Compiler and Babel transpilers."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.45-45"
+      ],
+      "summary": "Chapter discussing the distinction between pure functions and closures, focusing on free variables."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-images",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.293-296"
+      ],
+      "summary": "Summary of images and copyright information from JavaScript Allong\u00e9, pages 293-296."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-implementing-methods-with-iteration",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.246-253"
+      ],
+      "summary": "Chapter on implementing methods with iteration in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-inside-out",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.50-51"
+      ],
+      "summary": "Chapter on inside-out function patterns in JavaScript."
     },
     {
       "category": "source",
       "name": "javascriptallonge-interactive-generators",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.273-292"
+        "raw/javascriptallonge.pdf p.282-283"
       ],
-      "summary": "Interactive Generators \u2013 chapter covering generators, stateful functions, and examples (p.273\u2011292)."
+      "summary": "Summary of interactive generators in JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.261-272"
+        "raw/javascriptallonge.pdf p.261-261"
       ],
-      "summary": "The Carpenter interview at Thing Software, whiteboard coding challenge"
+      "summary": "Interlude: The Carpenter Interviews for a Job"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-it-s-always-the-environment",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.46-47"
+      ],
+      "summary": "Chapter on environments and closures in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-iterables-out-to-infinity",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.215-216"
+      ],
+      "summary": "Chapter on iterables out to infinity from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-iterating",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.169-172"
+      ],
+      "summary": "Summary of the iterating chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-iteration",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.227-228"
+      ],
+      "summary": "Summary of the iteration chapter from JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-iteration-and-iterables",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.206-223"
+        "raw/javascriptallonge.pdf p.206-206"
       ],
-      "summary": "Chapter covering JavaScript collection iteration, functional and iterable patterns."
+      "summary": "Chapter on iteration and iterables in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-iterator-objects",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.209-210"
+      ],
+      "summary": "Summary of the chapter on iterator objects from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-javascript-allong-the-six-edition",
+      "outbound_links": [
+        "javascriptallonge-about-javascript-allong",
+        "javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+        "javascriptallonge-closures-and-scope",
+        "javascriptallonge-copy-on-write",
+        "javascriptallonge-partial-application"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.2-2"
+      ],
+      "summary": "Summary of the 'Six' Edition of JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-javascript-s-generators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.230-231"
+      ],
+      "summary": "Summary of JavaScript's generators chapter from 'JavaScript Allong\u00e9'."
     },
     {
       "category": "source",
       "name": "javascriptallonge-lazy-and-eager-collections",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.246-260"
+        "raw/javascriptallonge.pdf p.256-260"
       ],
       "summary": "Lazy vs eager collection designs and the LazyCollection mixin"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-lazy-collection-operations",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.253-256"
+      ],
+      "summary": "Summary of lazy collection operations in JavaScriptAllonge, focusing on laziness, iterators, and memory efficiency."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-left-variadic-destructuring",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.92-93"
+      ],
+      "summary": "Summary of left-variadic destructuring from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-left-variadic-functions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.89-90"
+      ],
+      "summary": "Summary of the Left-Variadic Functions section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-like-this",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.210-211"
+      ],
+      "summary": "Summary of the 'Like this:' section from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-linear-recursion",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.111-113"
+      ],
+      "summary": "Summary of the linear recursion concept from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-lists-with-functions-as-data",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.183-186"
+      ],
+      "summary": "Chapter on using functions as data structures, specifically linked lists."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-literal-object-syntax",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.133-136"
+      ],
+      "summary": "Summary of literal object syntax in JavaScriptAllonge."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-magic-names",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.74-74"
+      ],
+      "summary": "Chapter on magic names in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-magic-names-and-fat-arrows",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.75-77"
+      ],
+      "summary": "Summary of the magic names this and arguments in fat arrow functions."
     },
     {
       "category": "source",
       "name": "javascriptallonge-making-data-out-of-functions",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.177-197"
+        "raw/javascriptallonge.pdf p.177-179"
       ],
-      "summary": "Chapter on constructing data structures using pure functions, focusing on combinatory logic and list representation."
+      "summary": "Chapter on modeling data using functions, including K, I, and V combinators."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-mapping",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.113-114"
+      ],
+      "summary": "Chapter on mapping in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-mapwith",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.193-194"
+      ],
+      "summary": "Chapter on mapWith function in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-matthew-knox",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.14-15"
+      ],
+      "summary": "Summary of Matthew Knox's contribution to JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-maybe",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.86-87"
+      ],
+      "summary": "Chapter on the Maybe pattern and its implementation in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-memoizing-an-iterable",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.286-287"
+      ],
+      "summary": "Chapter on memoizing iterables in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-michael-fogus",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.14-14"
+      ],
+      "summary": "Review of JavaScript Allong\u00e9 by Michael Fogus"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-more-generators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.236-239"
+      ],
+      "summary": "Summary of the 'more generators' section from javascriptallonge.pdf (pages 236-239)."
     },
     {
       "category": "source",
       "name": "javascriptallonge-mutation",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.141-157"
+        "raw/javascriptallonge.pdf p.145-147"
       ],
-      "summary": "Source summary of the Mutation chapter in JavaScript Allong\u00e9 (p.141\u2011157)."
+      "summary": "Chapter on building with mutation in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-mutation-and-data-structures",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.143-145"
+      ],
+      "summary": "Chapter on mutation and data structures from JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-naming-functions",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.62-78"
+        "raw/javascriptallonge.pdf p.62-62"
       ],
-      "summary": "Source summary of JavaScript Allong\u00e9 chapter on naming functions."
+      "summary": "Summary of the 'Naming Functions' section from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-nested-blocks",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.54-55"
+      ],
+      "summary": "Chapter on nested blocks in JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-object-assign",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.198-205"
+        "raw/javascriptallonge.pdf p.198-200"
       ],
       "summary": "Object.assign \u2013 object copying, extending, and prototype mixins"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-once",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.88-88"
+      ],
+      "summary": "Summary of the \"Once\" chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-operations-on-numbers",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.26-27"
+      ],
+      "summary": "Summary of the 'operations on numbers' section from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-operations-on-ordered-collections",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.217-221"
+      ],
+      "summary": "Summary of operations on ordered collections from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.285-286"
+      ],
+      "summary": "Summary of the section on operations that compose two or more iterables into an iterable from javascriptallonge."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-operations-that-transform-an-iterable-into-a-value",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.286-286"
+      ],
+      "summary": "Summary of the section 'operations that transform an iterable into a value' from javascriptallonge.pdf."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-operations-that-transform-one-iterable-into-another",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.284-285"
+      ],
+      "summary": "Summary of the section 'operations that transform one iterable into another' from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-or-even",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.33-33"
+      ],
+      "summary": "Chapter on the 'Or even' topic in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-ordered-collections",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.216-217"
+      ],
+      "summary": "Summary of ordered collections in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-overcoming-limitations",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.91-92"
+      ],
+      "summary": "Chapter on overcoming limitations in JavaScript, including left-variadic functions and the leftVariadic decorator."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-partial-application",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.80-81"
+      ],
+      "summary": "Chapter on partial application in JavaScript Allong\u00e9"
     },
     {
       "category": "source",
       "name": "javascriptallonge-picking-the-bean-choice-and-truthiness",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.94-108"
+        "raw/javascriptallonge.pdf p.94-94"
       ],
-      "summary": "JavaScript Allonge chapter on booleans, truthiness, and logical operators."
+      "summary": "Chapter on choice and truthiness in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-plain-old-javascript-objects",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.132-132"
+      ],
+      "summary": "Summary of the Plain Old JavaScript Objects chapter from JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-prelude-values-and-expressions-over-coffee",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.18-18"
+      ],
+      "summary": "Summary of the Prelude: Values and Expressions over Coffee section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-quasi-literals",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.203-204"
+      ],
+      "summary": "Summary of quasi-literals from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-reassignment",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.148-150"
+      ],
+      "summary": "Summary of the reassignment chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-rebinding",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.60-61"
+      ],
+      "summary": "Chapter on rebinding in JavaScript Allong\u00e9"
     },
     {
       "category": "source",
       "name": "javascriptallonge-recipes-with-basic-functions",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.79-93"
+        "raw/javascriptallonge.pdf p.79-79"
       ],
-      "summary": "Recipes with Basic Functions from raw/javascriptallonge.pdf."
+      "summary": "Chapter on recipes with basic functions in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-recipes-with-data",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.191-191"
+      ],
+      "summary": "Chapter on recipes with data from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-recursive-iterators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.226-226"
+      ],
+      "summary": "Summary of the recursive iterators section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-reference-types",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.22-23"
+      ],
+      "summary": "Summary of the reference types chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-reg-raganwald-braithwaite",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.2-3"
+      ],
+      "summary": "Summary of Reg 'raganwald' Braithwaite's JavaScript Allong\u00e9 book, including publishing details and author information."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-reg-raganwald-braithwaite-2",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.2-3"
+      ],
+      "summary": "Summary of Reg 'raganwald' Braithwaite's work and the Lean Publishing process."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.279-280"
+      ],
+      "summary": "Summary of the 'representing naughts and crosses as a stateful function' section from javascriptallonge."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.275-275"
+      ],
+      "summary": "Summary of the chapter 'representing naughts and crosses as a stateless function' from the source 'javascriptallonge'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-revisiting-linked-lists",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.137-140"
+      ],
+      "summary": "Summary of the revisiting linked lists chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-rewriting-iterable-operations",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.243-245"
+      ],
+      "summary": "Chapter summary for 'rewriting iterable operations' from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-richard-feynman",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.292-292"
+      ],
+      "summary": "Summary of Richard Feynman's QED and its explanation of Quantum Electrodynamics and the 'Sum of the Histories' methodology."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-say-please",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.186-188"
+      ],
+      "summary": "Chapter on using functions as data structures in JavaScript, focusing on 'say please' pattern"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-self-currying-flip",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.196-196"
+      ],
+      "summary": "Summary of the self-currying flip concept from 'JavaScript Allong\u00e9'."
     },
     {
       "category": "source",
       "name": "javascriptallonge-self-similarity",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.109-125"
+        "raw/javascriptallonge.pdf p.109-111"
       ],
-      "summary": "Source summary of Self\u2011Similarity chapter covering recursion, linear recursion, tail\u2011call optimization, and related concepts."
+      "summary": "Chapter on self-similarity and recursion in JavaScript"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-served-by-the-pot-collections",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.205-205"
+      ],
+      "summary": "Summary of the 'Served by the Pot: Collections' section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-so-why-arrays",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.131-131"
+      ],
+      "summary": "Summary of the 'so why arrays' section from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-some-history",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.128-130"
+      ],
+      "summary": "History of Lisp and its influence on JavaScript, including CAR, CDR, and cons cells."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-state-machines",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.228-229"
+      ],
+      "summary": "Summary of the state machines chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-summary",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.283-283"
+      ],
+      "summary": "Summary of the book 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-tail-call-optimization",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.119-119"
+      ],
+      "summary": "Tail-call optimization in JavaScript as described in 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-tail-calls-and-default-arguments",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.117-118"
+      ],
+      "summary": "Chapter on tail calls and default arguments in JavaScript Allong\u2019e"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-tap",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.84-85"
+      ],
+      "summary": "Chapter on the tap combinator from JavaScript Allong\u00e9."
     },
     {
       "category": "source",
       "name": "javascriptallonge-that-constant-coffee-craving",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.49-61"
+        "raw/javascriptallonge.pdf p.49-50"
       ],
-      "summary": "Source summary of const keyword and scope concepts."
+      "summary": "Chapter on naming functions and using function expressions to bind values."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-that-s-nice-is-that-the-only-reason",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.9-9"
+      ],
+      "summary": "Summary of the section 'that's nice. is that the only reason?' from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-aftermath",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.269-270"
+      ],
+      "summary": "Summary of the 'the aftermath' chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-carpenter-s-solution",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.264-269"
+      ],
+      "summary": "The carpenter's solution to the loop detection problem in linked lists and chequerboard games."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-function-keyword",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.74-75"
+      ],
+      "summary": "Summary of the function keyword section from JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-golden-crema-appendices-and-afterwords",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.288-288"
+      ],
+      "summary": "Summary of the appendices and afterwords section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-kestrel-and-the-idiot",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.179-180"
+      ],
+      "summary": "Chapter on the kestrel and the idiot functions from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-problem",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.261-264"
+      ],
+      "summary": "The problem of determining if a game halts from a stream of directions, as presented in javascriptallonge.pdf p.261-264."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-simplest-possible-block",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.34-34"
+      ],
+      "summary": "Summary of the simplest possible block concept from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-the-vireo",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.182-183"
+      ],
+      "summary": "The Vireo (V combinator) and related combinators in the context of data structures."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-this-seems-familiar",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.280-282"
+      ],
+      "summary": "Chapter on naughts and crosses game and implicit state representation in JavaScript control flow."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-tortoises-hares-and-teleporting-turtles",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.164-166"
+      ],
+      "summary": "Chapter on loop detection algorithms: Tortoise and Hare, and Teleporting Turtle."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-true",
+      "outbound_links": [
+        "javascriptallonge",
+        "javascriptallonge-false"
+      ],
+      "sources": [
+        "raw/javascriptallonge.pdf p.94-94"
+      ],
+      "summary": "Chapter on the boolean value 'true' in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-truthiness-and-operators",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.96-97"
+      ],
+      "summary": "Summary of the truthiness and operators section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-truthiness-and-the-ternary-operator",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.95-96"
+      ],
+      "summary": "Chapter on truthiness and the ternary operator from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-unary",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.82-83"
+      ],
+      "summary": "Summary of the Unary function decorator section from 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-undefined",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.34-35"
+      ],
+      "summary": "Summary of the undefined chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-unfolding-and-laziness",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.172-175"
+      ],
+      "summary": "Chapter on unfolding and laziness in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-value-types",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.22-22"
+      ],
+      "summary": "Summary of value types in JavaScript, including primitive types and identity."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-values-and-identity",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.21-21"
+      ],
+      "summary": "Chapter on values and identity in JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-values-are-expressions",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.19-20"
+      ],
+      "summary": "Chapter on values and expressions in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-var",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.151-154"
+      ],
+      "summary": "Summary of the 'var' keyword in JavaScript as described in 'JavaScript Allong\u00e9'."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-variables-and-bindings",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.41-42"
+      ],
+      "summary": "Chapter on variables and bindings in JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-void",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.35-35"
+      ],
+      "summary": "Summary of the void chapter from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-we-get",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.278-279"
+      ],
+      "summary": "Chapter on stateless functions and naughts-and-crosses game implementation in JavaScript."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-we-ll-keep-it-simple",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.229-230"
+      ],
+      "summary": "Summary of the 'We'll keep it simple' section from JavaScript Allong\u00e9, focusing on generators vs. iterators."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-what-javascript-allong-is-and-isn-t",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.10-11"
+      ],
+      "summary": "Summary of the 'What JavaScript Allong\u00e9 is. And isn't.' section from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-which-came-first-the-chicken-or-the-egg",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.47-48"
+      ],
+      "summary": "Chapter summary for 'which came first, the chicken or the egg?' from JavaScript Allong\u00e9"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-why",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.201-201"
+      ],
+      "summary": "Chapter Why? from 'JavaScript Allong\u00e9' explaining the Y Combinator and its role in recursive functions without binding names."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-why-const-and-let-were-invented",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.154-154"
+      ],
+      "summary": "Summary of the section 'why const and let were invented' from javascriptallonge.pdf"
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-why-the-six-edition",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.7-9"
+      ],
+      "summary": "Summary of the 'why the six edition' section from JavaScript Allong\u00e9."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-will-be-represented-as",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.277-278"
+      ],
+      "summary": "Summary of the 'Will be represented as' section from javascriptallonge.pdf, pages 277-278."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-would-be-3-producing",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.276-276"
+      ],
+      "summary": "Chapter section on encoding game boards in different ways."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-yes-consider-this-variation",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.155-157"
+      ],
+      "summary": "Summary of the 'Yes. Consider this variation' section from javascriptallonge.pdf, pages 155-157, focusing on closure and variable scoping with var vs let."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-yielding-iterables",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.239-243"
+      ],
+      "summary": "Chapter on yielding iterables from JavaScript Allong\u00e9."
     },
     {
       "category": "source",
@@ -749,7 +3313,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf"
       ],
-      "summary": "Complete rulebook for Sword World RPG."
+      "summary": "Summary of the Sword World RPG - Complete Edition source."
     },
     {
       "category": "source",

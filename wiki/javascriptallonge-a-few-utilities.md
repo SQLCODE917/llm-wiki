@@ -13,4 +13,4 @@ Chapter on a few utilities in JavaScriptAllonge, covering list manipulation func
 
 ## Key supported claims
 
-- The 'a few utilities' section introduces fundamental list manipulation utilities in JavaScript, such as copy, first, rest, reverse, mapWith, at, and set functions (raw/javascriptallonge.pdf p.159-161).
+- The 'a few utilities' section defines linked-list helpers including copy, first, rest, reverse, mapWith, at, and set. (raw/javascriptallonge.pdf p.159-161)

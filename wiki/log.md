@@ -716,3 +716,1061 @@ Per-candidate verdict rationale and recommended action are recorded above. The f
 ## Caveat
 
 This is a bounded claim-support audit over selected generated claims, not proof that every wiki claim is supported.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-112723
+Source: raw/antikythera-mechanism.md
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 1
+Gates: 8
+
+## Artifact Reuse
+
+- page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint is missing or invalid; fingerprint 00797c6e810057af)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint is missing or invalid; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: fail
+- Findings: validation-finding-5dc3dbf0f640e3d2
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-1a0a96cf7438b4d4, validation-finding-a844ec8a77165134, validation-finding-615c3c5b2ec6ad7a
+Claim candidates discovered: 4
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Verdicts recorded: 3
+
+## Findings
+
+- WARNING graph: Graph export is stale: wiki/wiki-graph.json differs from the current wiki graph.
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt directly supports the claim by stating that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer, which aligns with the generated wiki claim. fingerprint=claim-support-summary-antikythera-mechanism-1
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt explicitly states that the mechanism was retrieved from a shipwreck and is dated to roughly 150–100 BC, which directly supports the claim about the wreck find dating to that period. fingerprint=claim-support-summary-antikythera-mechanism-2
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt confirms that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography, which supports the claim that research used tomographic imaging. fingerprint=claim-support-summary-antikythera-mechanism-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] graph | wiki graph
+Graph export: current
+Nodes: 262
+Edges: 262
+Unresolved edges: 7
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-112754
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 8
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-61ff5859bcdcd652, validation-finding-530b460406531c29, validation-finding-e2615c551df158af
+Claim candidates discovered: 4
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Verdicts recorded: 3
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt directly supports the claim by stating that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer. fingerprint=claim-support-summary-antikythera-mechanism-1
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt directly supports the claim by stating that the mechanism was retrieved from a shipwreck and is dated to roughly 150–100 BC. fingerprint=claim-support-summary-antikythera-mechanism-2
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt directly supports the claim by stating that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography to read inscriptions hidden inside the corroded fragments. fingerprint=claim-support-summary-antikythera-mechanism-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-112812
+Source: raw/javascriptallonge.pdf
+Confidence status: failed
+Blockers: 19
+Warnings: 5
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint is missing or invalid; fingerprint 6f0e0c9957d20723)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint is missing or invalid; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-803bcc6b4d2a91a4
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 1
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-602c342c1e504e9a, validation-finding-2d8b2908a7ee58ec, validation-finding-29bd93f5c9436552
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-b4e7bb5f2844c8db, validation-finding-b3be30e3456608f5, validation-finding-7bbe7d80a555f4d4, validation-finding-b19f6b08364dd2f5, validation-finding-d3b51e50cf327f6e, validation-finding-5f62865843d78c33, validation-finding-df7968b7e385cebc, validation-finding-68c97785d04a7cd8, validation-finding-e28f680ce6019ef5, validation-finding-77abb58a46134d60, validation-finding-c687577fc135a027, validation-finding-7968bb1e4cf428c6, validation-finding-c29bc0a1cf5832f1, validation-finding-77444f13d1664851, validation-finding-f18013e6b6cef69d, validation-finding-39ae892ddd140633, validation-finding-9c9de74a4ed4af4d, validation-finding-250c71a9c815fa9a, validation-finding-e0f33c00279f8845, validation-finding-00c80912bb913ac0, validation-finding-6a25b657c00feee3, validation-finding-937b03a620d886bd, validation-finding-e02cb6886fe09563
+Claim candidates discovered: 663
+Selected for model judgment: 5
+Skipped by deterministic findings: 17
+Skipped by cap: 641
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Source-summary bullets use source-framing prose. Count: 1.
+- WARNING graph javascriptallonge: Broken links: javascriptallonge-shadowy-variables-from-a-shadowy-planet
+- WARNING graph javascriptallonge-javascript-allong-the-six-edition: Broken links: javascriptallonge-closures, javascriptallonge-currying, javascriptallonge-functional-basics, javascriptallonge-immutability, javascriptallonge-introduction
+- WARNING graph javascriptallonge-true: Broken links: javascriptallonge-boolean
+- BLOCKER claim-support javascriptallonge-reg-raganwald-braithwaite: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-320b9e1efd00e360
+- BLOCKER claim-support javascriptallonge-reg-raganwald-braithwaite: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-c428ed47c8555229
+- BLOCKER claim-support javascriptallonge-reference-types: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-411a525b96014cff
+- BLOCKER claim-support javascriptallonge-reference-types: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-e1f5c273fe6963ab
+- BLOCKER claim-support javascriptallonge-reference-types: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-e05e3c420dc1756e
+- BLOCKER claim-support javascriptallonge-prelude-values-and-expressions-over-coffee: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-c99970959acab36e
+- BLOCKER claim-support javascriptallonge-prelude-values-and-expressions-over-coffee: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-71460ea12f898c0b
+- BLOCKER claim-support javascriptallonge-prelude-values-and-expressions-over-coffee: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-2ee2163b81d1354a
+- BLOCKER claim-support javascriptallonge-value-types: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-b7e81b39599ecd79
+- BLOCKER claim-support javascriptallonge-value-types: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-a62973a7705b6907
+- BLOCKER claim-support javascriptallonge-value-types: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-b83258b162c0f6af
+- BLOCKER claim-support javascriptallonge-values-and-identity: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-f1ebcc5529e949ec
+- BLOCKER claim-support javascriptallonge-values-and-identity: copied-evidence: Copied evidence text mismatches EvidenceRecord excerpts. fingerprint=claim-support-finding-054de87fe786576c
+- BLOCKER claim-support javascriptallonge-values-and-identity: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-ed67c314ab177588
+- BLOCKER claim-support javascriptallonge-values-and-identity: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-3a205daabd9ae3cb
+- BLOCKER claim-support javascriptallonge-values-and-identity: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-69d534ba234bf854
+- BLOCKER claim-support javascriptallonge-values-and-identity: source-range: Citation locator is outside the planned source range for this page. fingerprint=claim-support-finding-5f2390c16515f0f5
+- BLOCKER claim-support javascriptallonge-a-balanced-statement-about-combinators: missing-evidence: No EvidenceRecord matched. fingerprint=claim-support-finding-94148f2d126fa1a0
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose, while avoiding keywords and noun names. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- BLOCKER claim-support javascriptallonge-a-few-utilities: not_supported: The evidence excerpt does not fully support the claim. It shows a code example involving list manipulation but does not explicitly list or describe the functions copy, first, rest, reverse, mapWith, at, and set as introduced in the 'a few utilities' section. fingerprint=claim-support-summary-javascriptallonge-a-few-utilities-1
+- WARNING claim-support javascriptallonge-a-history-lesson: unclear: The evidence excerpt only states "53 Another history lesson" and does not provide sufficient context or content to determine if it supports the claim about JavaScript not being able to gather parameters in 'Ye Olde Days.' fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113049
+Source: raw/antikythera-mechanism.md
+Confidence status: failed
+Blockers: 1
+Warnings: 0
+Gates: 8
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: fail
+- Findings: validation-finding-ac7388681a3a2808, validation-finding-b30eeebd5baef5e8, validation-finding-0a2ab7763c7668a9
+Claim candidates discovered: 4
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Verdicts recorded: 3
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt directly states that the Antikythera mechanism is an ancient Greek hand-powered orrery, often described as the oldest known analog computer, which fully supports the claim. fingerprint=claim-support-prose-antikythera-mechanism-7
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt explicitly mentions that the device is dated to roughly 150–100 BC, directly supporting the claim about the wreck find date. fingerprint=claim-support-prose-antikythera-mechanism-8
+- BLOCKER claim-support antikythera-mechanism: not_supported: The evidence excerpts do not mention anything about tomographic imaging being used in the research; therefore, the claim cannot be supported by the provided evidence. fingerprint=claim-support-prose-antikythera-mechanism-9
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113218
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 8
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 00797c6e810057af)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 00797c6e810057af)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-61ff5859bcdcd652, validation-finding-0d3e6d60f39ba152, validation-finding-6bcb683db5c926c1
+Claim candidates discovered: 4
+Selected for model judgment: 3
+Skipped by deterministic findings: 0
+Skipped by cap: 1
+Verdicts recorded: 3
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt directly supports the claim by stating that the Antikythera mechanism is an ancient Greek hand-powered orrery and is often described as the oldest known analog computer. fingerprint=claim-support-summary-antikythera-mechanism-1
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt explicitly states that the mechanism was retrieved from a shipwreck and is dated to roughly 150–100 BC, directly supporting the claim. fingerprint=claim-support-summary-antikythera-mechanism-2
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt confirms that the Antikythera Mechanism Research Project used microfocus X-ray computed tomography, which aligns with the claim that research used tomographic imaging. fingerprint=claim-support-summary-antikythera-mechanism-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113237
+Source: raw/javascriptallonge.pdf
+Confidence status: failed
+Blockers: 2
+Warnings: 5
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-803bcc6b4d2a91a4
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 1
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-602c342c1e504e9a, validation-finding-2d8b2908a7ee58ec, validation-finding-29bd93f5c9436552
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-250c71a9c815fa9a, validation-finding-e0f33c00279f8845, validation-finding-5cb245d13a21a09d, validation-finding-d316cfe42c030b9e, validation-finding-070830904b07db2f, validation-finding-e02cb6886fe09563
+Claim candidates discovered: 563
+Selected for model judgment: 5
+Skipped by deterministic findings: 1
+Skipped by cap: 557
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Source-summary bullets use source-framing prose. Count: 1.
+- WARNING graph javascriptallonge: Broken links: javascriptallonge-shadowy-variables-from-a-shadowy-planet
+- WARNING graph javascriptallonge-javascript-allong-the-six-edition: Broken links: javascriptallonge-closures, javascriptallonge-currying, javascriptallonge-functional-basics, javascriptallonge-immutability, javascriptallonge-introduction
+- WARNING graph javascriptallonge-true: Broken links: javascriptallonge-boolean
+- BLOCKER claim-support javascriptallonge-a-balanced-statement-about-combinators: missing-evidence: No EvidenceRecord matched. fingerprint=claim-support-finding-94148f2d126fa1a0
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose, while avoiding keywords and noun names. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- BLOCKER claim-support javascriptallonge-a-few-utilities: not_supported: The evidence excerpt does not sufficiently support the claim. It only shows a code snippet involving list manipulation but does not explicitly list or describe the utilities such as copy, first, rest, reverse, mapWith, at, and set functions as claimed. fingerprint=claim-support-summary-javascriptallonge-a-few-utilities-1
+- WARNING claim-support javascriptallonge-a-history-lesson: unclear: The evidence excerpt only states "53 Another history lesson" and does not provide sufficient detail to confirm or deny the claim that JavaScript could not gather parameters in 'Ye Olde Days.' fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113439
+Source: raw/javascriptallonge.pdf
+Confidence status: failed
+Blockers: 1
+Warnings: 5
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-803bcc6b4d2a91a4
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 1
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-602c342c1e504e9a, validation-finding-2d8b2908a7ee58ec, validation-finding-29bd93f5c9436552
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-e0f33c00279f8845, validation-finding-5cb245d13a21a09d, validation-finding-385d38057e729770, validation-finding-e02cb6886fe09563, validation-finding-73710625af5bd95c
+Claim candidates discovered: 562
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 557
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Source-summary bullets use source-framing prose. Count: 1.
+- WARNING graph javascriptallonge: Broken links: javascriptallonge-shadowy-variables-from-a-shadowy-planet
+- WARNING graph javascriptallonge-javascript-allong-the-six-edition: Broken links: javascriptallonge-closures, javascriptallonge-currying, javascriptallonge-functional-basics, javascriptallonge-immutability, javascriptallonge-introduction
+- WARNING graph javascriptallonge-true: Broken links: javascriptallonge-boolean
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by showing that combinators name verbs and adverbs like doubleOf, addOne, and compose, while avoiding keywords and noun names. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that combinators are useful when you want to emphasize what you're doing and how it fits together. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- BLOCKER claim-support javascriptallonge-a-history-lesson: not_supported: The evidence excerpt only states "Another history lesson" and does not provide any information about JavaScript not being able to gather parameters in 'Ye Olde Days.' fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-2
+- WARNING claim-support javascriptallonge-a-history-lesson: unclear: The evidence excerpt shows a code example using a rightVariadic decorator, but it does not explicitly state that this decorator was used in ECMAScript-5 to gather arguments into the last declared parameter. The connection is implied but not clearly established. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113548
+Source: raw/javascriptallonge.pdf
+Confidence status: failed
+Blockers: 1
+Warnings: 5
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-803bcc6b4d2a91a4
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 1
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-602c342c1e504e9a, validation-finding-2d8b2908a7ee58ec, validation-finding-29bd93f5c9436552
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-56ce355295c766bf, validation-finding-67c8aa90e4fc1dba, validation-finding-5ccf82e2a07cd296, validation-finding-f9ada7c12f12f646, validation-finding-d1209c8f34d12b55
+Claim candidates discovered: 562
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 557
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Source-summary bullets use source-framing prose. Count: 1.
+- WARNING graph javascriptallonge: Broken links: javascriptallonge-shadowy-variables-from-a-shadowy-planet
+- WARNING graph javascriptallonge-javascript-allong-the-six-edition: Broken links: javascriptallonge-closures, javascriptallonge-currying, javascriptallonge-functional-basics, javascriptallonge-immutability, javascriptallonge-introduction
+- WARNING graph javascriptallonge-true: Broken links: javascriptallonge-boolean
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that code using combinators tends to name verbs and adverbs like doubleOf, addOne, and compose while avoiding keywords and noun names, which aligns with the claim's assertion. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt supports the claim by explicitly stating that combinators are useful when you want to emphasize what you're doing and how it fits together, which directly aligns with the claim's assertion. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, with the rest gathered into the rightmost argument, which matches the claim exactly. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- BLOCKER claim-support javascriptallonge-a-pull-of-the-lever-prefaces: not_supported: The evidence excerpt does not support the claim that Café Allongé is midway between Espresso and Americano in strength. Instead, it discusses the ratio of oils to water and flavor release, without comparing strength levels. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-1
+- WARNING claim-support javascriptallonge-a-pull-of-the-lever-prefaces: unclear: The evidence excerpt does not clearly support or refute the claim about adding hot water to a double or quadruple Espresso Ristretto. It discusses the ratio of oils to water and flavor release but does not mention the specific method of adding hot water to Espresso Ristretto. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113726
+Source: raw/javascriptallonge.pdf
+Confidence status: failed
+Blockers: 1
+Warnings: 4
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-803bcc6b4d2a91a4
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 1
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-602c342c1e504e9a, validation-finding-2d8b2908a7ee58ec, validation-finding-29bd93f5c9436552
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-8b74f5088858ad74, validation-finding-24d4e53591abd88d, validation-finding-42f5bf17d44a7ef8, validation-finding-3fb5d198d954153f, validation-finding-510f649037c6e936
+Claim candidates discovered: 562
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 557
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Source-summary bullets use source-framing prose. Count: 1.
+- WARNING graph javascriptallonge: Broken links: javascriptallonge-shadowy-variables-from-a-shadowy-planet
+- WARNING graph javascriptallonge-javascript-allong-the-six-edition: Broken links: javascriptallonge-closures, javascriptallonge-currying, javascriptallonge-functional-basics, javascriptallonge-immutability, javascriptallonge-introduction
+- WARNING graph javascriptallonge-true: Broken links: javascriptallonge-boolean
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim that combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. It explicitly states that code using combinators tends to name verbs and adverbs while avoiding language keywords and noun names. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim that combinators emphasize what you're doing and how it fits together. It explicitly states that one perspective is that combinators are useful when you want to emphasize what you're doing and how it fits together. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim that a right-variadic function has one or more fixed arguments, and the rest are gathered into the rightmost argument. It explicitly defines this function as right-variadic, stating it has one or more fixed arguments and the rest are gathered into the rightmost argument. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- INFO claim-support javascriptallonge-a-pull-of-the-lever-prefaces: supported: The evidence excerpt directly supports the claim that Café Allongé is a drink midway between Espresso and Americano in strength. It explicitly states that Café Allongé, also called Espresso Lungo, is a drink midway between an Espresso and Americano in strength. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-1
+- BLOCKER claim-support javascriptallonge-a-pull-of-the-lever-prefaces: not_supported: The evidence excerpts do not support the claim that one method involves adding hot water to a double or quadruple Espresso Ristretto. While the excerpts mention Café Allongé and methods of making it, they do not specify the exact method involving hot water added to a double or quadruple Espresso Ristretto. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-113909
+Source: raw/javascriptallonge.pdf
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 4
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-803bcc6b4d2a91a4
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 1
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-602c342c1e504e9a, validation-finding-2d8b2908a7ee58ec, validation-finding-29bd93f5c9436552
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-338f628735076148, validation-finding-3a6ad146cc716d47, validation-finding-cf70ac1230d9f6b0, validation-finding-ce8ea294a7016736, validation-finding-6f91167f89dc851a
+Claim candidates discovered: 562
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 557
+Verdicts recorded: 5
+
+## Findings
+
+- WARNING source-summary: Source-summary bullets use source-framing prose. Count: 1.
+- WARNING graph javascriptallonge: Broken links: javascriptallonge-shadowy-variables-from-a-shadowy-planet
+- WARNING graph javascriptallonge-javascript-allong-the-six-edition: Broken links: javascriptallonge-closures, javascriptallonge-currying, javascriptallonge-functional-basics, javascriptallonge-immutability, javascriptallonge-introduction
+- WARNING graph javascriptallonge-true: Broken links: javascriptallonge-boolean
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that code using combinators tends to name verbs and adverbs like doubleOf, addOne, and compose while avoiding keywords and noun names, which aligns with the claim's assertion about combinators naming verbs and adverbs. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that one perspective of combinators is that they are useful when you want to emphasize what you're doing and how it fits together, which aligns with the claim's assertion about combinators emphasizing actions and structure. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments and the rest gathered into the rightmost argument, which matches the claim's definition. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- INFO claim-support javascriptallonge-a-pull-of-the-lever-prefaces: supported: The evidence excerpt directly supports the claim by stating that Café Allongé is a drink midway between an Espresso and Americano in strength, which aligns with the claim's assertion about its strength. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-1
+- INFO claim-support javascriptallonge-a-pull-of-the-lever-prefaces: supported: The evidence excerpt directly supports the claim by stating that the first method to make Café Allongé involves adding hot water to a double or quadruple Espresso Ristretto, which aligns with the claim's assertion about one method of preparation. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] graph | wiki graph
+Graph export: current
+Nodes: 262
+Edges: 261
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-114050
+Source: raw/javascriptallonge.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 8
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 6f0e0c9957d20723)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2928
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-433c4136cb15765d, validation-finding-ff17bbca3429bcf1, validation-finding-8635f60b47e73caa, validation-finding-1f78a9d5008d6574, validation-finding-4a210660ffd86e6f
+Claim candidates discovered: 563
+Selected for model judgment: 5
+Skipped by deterministic findings: 0
+Skipped by cap: 558
+Verdicts recorded: 5
+
+## Findings
+
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that code using combinators tends to name verbs and adverbs (like doubleOf, addOne, and compose) while avoiding language keywords and noun names, which aligns with the claim about combinators naming verbs and adverbs. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-1
+- INFO claim-support javascriptallonge-a-balanced-statement-about-combinators: supported: The evidence excerpt directly supports the claim by stating that one perspective is that combinators are useful when you want to emphasize what you're doing and how it fits together, which aligns with the claim about combinators emphasizing what you're doing and how it fits together. fingerprint=claim-support-summary-javascriptallonge-a-balanced-statement-about-combinators-2
+- INFO claim-support javascriptallonge-a-history-lesson: supported: The evidence excerpt directly supports the claim by defining a right-variadic function as one that has one or more fixed arguments, and the rest are gathered into the rightmost argument, which aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-a-history-lesson-1
+- INFO claim-support javascriptallonge-a-pull-of-the-lever-prefaces: supported: The evidence excerpt directly supports the claim by stating that Café Allongé is a drink midway between an Espresso and Americano in strength, which aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-1
+- INFO claim-support javascriptallonge-a-pull-of-the-lever-prefaces: supported: The evidence excerpt directly supports the claim by stating that the first method to make Café Allongé is to add a small amount of hot water to a double or quadruple Espresso Ristretto, which aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-a-pull-of-the-lever-prefaces-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.

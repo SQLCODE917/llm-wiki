@@ -15,4 +15,3 @@ Chapter on combinators from JavaScript Allongé, covering the mathematical defin
 
 - Combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. (raw/javascriptallonge.pdf p.69-69)
 - Combinators emphasize what you're doing and how it fits together. (raw/javascriptallonge.pdf p.69-69)
-- Explicit code emphasizes what you're working with. (raw/javascriptallonge.pdf p.69-69)

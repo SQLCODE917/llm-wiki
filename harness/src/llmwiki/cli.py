@@ -36,6 +36,7 @@ from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.graph import build_wiki_graph, graph_status
 from llmwiki.domain.grounding import DEFAULT_MAX_CLAIMS, select_grounding_claims
 from llmwiki.domain.index import index_page_ids
+from llmwiki.domain.ingest_confidence import IngestConfidenceGate, ValidationFinding
 from llmwiki.domain.ingest_profiles import (
     IngestProfile,
     load_ingest_profiles,
@@ -52,12 +53,24 @@ from llmwiki.domain.semantic_lint import DEFAULT_MAX_ITEMS, select_semantic_lint
 from llmwiki.domain.system_pages import (
     CLAIM_SUPPORT_PAGE,
     CURATOR_STATUS_PAGE,
+    INGEST_CONFIDENCE_PAGE,
     ORPHAN_EXEMPT_PAGES,
     SEMANTIC_LINT_PAGE,
 )
 from llmwiki.pdf import PdfError
 from llmwiki.runtime.backend import start_backend
 from llmwiki.runtime.chat_repl import ChatRepl
+from llmwiki.runtime.ingest_confidence import (
+    claim_support_gate_from_audit,
+    file_ingest_confidence_report,
+    render_ingest_confidence_report,
+    skipped_claim_support_gate,
+)
+from llmwiki.runtime.ingest_confidence_artifacts import prepare_ingest_confidence_artifacts
+from llmwiki.runtime.ingest_confidence_gates import (
+    DeterministicConfidence,
+    deterministic_confidence,
+)
 from llmwiki.runtime.session import ExtractFn, OperationResult, Session
 from llmwiki.store import WikiStore
 from llmwiki.store.chat_store import ChatStore
@@ -177,6 +190,30 @@ def _build_parser() -> argparse.ArgumentParser:
         "--source",
         default="",
         help="Limit candidates to one raw source, e.g. raw/book.pdf.",
+    )
+
+    ingest_confidence = sub.add_parser(
+        "ingest-confidence",
+        help="File a post-ingest confidence report for one raw source.",
+    )
+    ingest_confidence.add_argument("source", help="Source path relative to raw/, e.g. article.md")
+    ingest_confidence.add_argument(
+        "--fresh",
+        action="store_true",
+        help="Rebuild generated ingest artifacts before running confidence gates.",
+    )
+    ingest_confidence.add_argument(
+        "--max-claims",
+        type=int,
+        default=DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
+        help="Maximum claim-support candidates to judge "
+        f"(default: {DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS}).",
+    )
+    ingest_confidence.add_argument(
+        "--profile",
+        action="append",
+        default=[],
+        help="Ingest profile id from profiles/ingest/*.toml. Repeat to compose profiles.",
     )
 
     semantic_lint = sub.add_parser(
@@ -302,6 +339,8 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         return await _run_grounding(args, paths, now)
     if args.op == "claim-support":
         return await _run_claim_support(args, paths, now)
+    if args.op == "ingest-confidence":
+        return await _run_ingest_confidence(args, paths, now)
     if args.op == "semantic-lint":
         return await _run_semantic_lint(args, paths, now)
 
@@ -468,6 +507,93 @@ async def _run_claim_support(
         await backend.aclose()
 
 
+async def _run_ingest_confidence(
+    args: argparse.Namespace, paths: WikiPaths, now: datetime
+) -> OperationResult:
+    if args.max_claims < 1:
+        raise ConfigError("--max-claims must be at least 1.")
+    paths.validate()
+    source_locator = args.source.removeprefix("raw/")
+    profiles = _select_profiles(paths, args.profile)
+    today = now.date().isoformat()
+    run_id = now.strftime("%Y-%m-%d-%H%M%S")
+    store = WikiStore(paths)
+    store.ensure_navigation_files()
+    prepared = prepare_ingest_confidence_artifacts(
+        store=store,
+        cache_dir=paths.cache_dir,
+        source_locator=source_locator,
+        today=today,
+        profiles=profiles,
+        fresh=args.fresh,
+        extract_pdf=_pdf_extractor(paths),
+    )
+    deterministic = deterministic_confidence(
+        store=store,
+        source_locator=source_locator,
+        today=today,
+        prepared=prepared,
+        max_claims=args.max_claims,
+    )
+    claim_gate, claim_findings, transcript = await _confidence_claim_support_gate(
+        args, paths, store, now, source_locator, deterministic
+    )
+    report = render_ingest_confidence_report(
+        run_id=run_id,
+        source_locator=source_locator,
+        prepared=prepared,
+        deterministic=deterministic,
+        claim_support_gate=claim_gate,
+        claim_support_findings=claim_findings,
+    )
+    file_ingest_confidence_report(store, report, today)
+    rendered = report.render()
+    store.append_log(today, "ingest-confidence", source_locator, rendered)
+    return OperationResult("ingest-confidence", source_locator, rendered, transcript)
+
+
+async def _confidence_claim_support_gate(
+    args: argparse.Namespace,
+    paths: WikiPaths,
+    store: WikiStore,
+    now: datetime,
+    source_locator: str,
+    deterministic: DeterministicConfidence,
+) -> tuple[IngestConfidenceGate, tuple[ValidationFinding, ...], Path | None]:
+    if deterministic.has_blockers:
+        gate, findings = skipped_claim_support_gate(
+            source_locator, "Skipped because deterministic blockers exist."
+        )
+        return gate, findings, None
+    selection = deterministic.claim_support_selection
+    if selection is None:
+        gate, findings = skipped_claim_support_gate(
+            source_locator, "Skipped because no EvidenceRegistry is available."
+        )
+        return gate, findings, None
+    if not selection.candidates:
+        reason = "Skipped because no claim-support candidates with evidence excerpts were selected."
+        gate, findings = skipped_claim_support_gate(source_locator, reason)
+        return gate, findings, None
+    backend_config = load_backend_config(args.runtime)
+    backend = await start_backend(backend_config)
+    try:
+        print(f"[runtime: {backend.summary}]", file=sys.stderr)
+        session = Session(
+            store=store,
+            client=backend.client,
+            context_manager=backend.context_manager,
+            today=now.date().isoformat(),
+            runs_dir=paths.runs_dir,
+            run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+        )
+        audit, transcript = await session.claim_support_audit(selection)
+        gate, findings = claim_support_gate_from_audit(source_locator, audit)
+        return gate, findings, transcript
+    finally:
+        await backend.aclose()
+
+
 async def _run_semantic_lint(
     args: argparse.Namespace, paths: WikiPaths, now: datetime
 ) -> OperationResult:
@@ -584,6 +710,7 @@ def _curator_report(
             store.read_graph_json(),
         ),
         lint_run=lint_run,
+        ingest_confidence_summary=_ingest_confidence_summary(store),
     )
     return status.render()
 
@@ -646,6 +773,10 @@ def _claim_support_summary(store: WikiStore) -> str:
 
 def _semantic_lint_summary(store: WikiStore) -> str:
     return _system_report_summary(store, SEMANTIC_LINT_PAGE)
+
+
+def _ingest_confidence_summary(store: WikiStore) -> str:
+    return _system_report_summary(store, INGEST_CONFIDENCE_PAGE)
 
 
 def _system_report_summary(store: WikiStore, page_id: str) -> str:

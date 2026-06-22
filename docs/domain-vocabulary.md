@@ -71,6 +71,10 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `ClaimSupportVerdict` | `claim_support_verdict` |
 | `ClaimSupportFinding` | `claim_support_finding` |
 | `ClaimSupportAuditReport` | `claim_support_audit_report` |
+| `IngestConfidenceReport` | `ingest_confidence_report` |
+| `IngestConfidenceGate` | `ingest_confidence_gate` |
+| `ValidationFinding` | `validation_finding` |
+| `ArtifactReuseDecision` | `artifact_reuse_decision` |
 | `IndexEntry` | `index_entry` |
 | `LogEntry` | `log_entry` |
 | `LintRun` | `lint_run` |
@@ -134,6 +138,9 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | ClaimSupportVerdict | Exists | `llmwiki.domain.claim_support`; fixed support judgment recorded by the model tool |
 | ClaimSupportFinding | Exists | `llmwiki.domain.claim_support`; deterministic or support-verdict audit finding |
 | ClaimSupportAuditReport | Exists | `llmwiki.domain.claim_support`; harness-owned report filed to `wiki-claim-support` |
+| IngestConfidenceGate | Exists | `llmwiki.domain.ingest_confidence`; one deterministic or model-assisted confidence check |
+| ValidationFinding | Exists | `llmwiki.domain.ingest_confidence`; structured source-level report finding |
+| ArtifactReuseDecision | Exists | `llmwiki.domain.ingest_confidence`; generated artifact reuse or rebuild decision |
 | GroundingVerdict | Exists | `llmwiki.domain.grounding` |
 | ContradictionFinding | Exists | `llmwiki.domain.contradictions` |
 | CandidateRecord | Exists | `llmwiki.domain.candidates` |
@@ -196,6 +203,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | GroundingAuditReport | `llmwiki.domain.grounding` | selected claim candidates and grounding verdicts |
 | ContradictionAuditReport | `llmwiki.domain.contradictions` | selected contradiction candidates and findings |
 | SemanticLintReport | `llmwiki.domain.semantic_lint` | selected semantic lint candidates and findings |
+| IngestConfidenceReport | `llmwiki.domain.ingest_confidence` | artifact decisions, confidence gates, and validation findings |
 | SalienceReport | `llmwiki.domain.salience` | deterministic salience entries |
 | GraphStatus | `llmwiki.domain.graph` | current graph and stored graph JSON |
 

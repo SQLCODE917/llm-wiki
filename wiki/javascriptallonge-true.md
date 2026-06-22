@@ -26,4 +26,4 @@ This demonstrates that `true` is a valid and commonly used value in JavaScript c
 
 ## Related Pages
 - [[javascriptallonge]]
-- [[javascriptallonge-boolean]]
+- [[javascriptallonge-false|boolean counterpart]]

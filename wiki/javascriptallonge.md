@@ -61,7 +61,7 @@ The harness added these links from the chunk page map so the book-scale hub rema
 - [[javascriptallonge-closures-and-scope]] — Closures and Scope
 - [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — if functions without free variables are pure, are closures impure?
 - [[javascriptallonge-it-s-always-the-environment]] — it's always the environment
-- [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]] — shadowy variables from a shadowy planet
+- [[javascriptallonge-are-consts-also-from-a-shadowy-planet|shadowy variables from a shadowy planet]] — shadowy variables from a shadowy planet
 - [[javascriptallonge-which-came-first-the-chicken-or-the-egg]] — which came first, the chicken or the egg?
 - [[javascriptallonge-that-constant-coffee-craving]] — That Constant Coffee Craving
 - [[javascriptallonge-inside-out]] — inside-out

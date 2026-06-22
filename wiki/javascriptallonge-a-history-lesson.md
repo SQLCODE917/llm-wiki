@@ -13,6 +13,6 @@ In 'Ye Olde Days,' 53 JavaScript could not gather parameters, and we had to eith
 
 ## Key supported claims
 
-- 53 Another history lesson. In 'Ye Olde Days,' JavaScript could not gather parameters. (raw/javascriptallonge.pdf p.90-91)
+- Older JavaScript needed arguments, .slice, or a variadic decorator to emulate gathered parameters. (raw/javascriptallonge.pdf p.90-91)
 - A right-variadic function has one or more fixed arguments, and the rest are gathered into the rightmost argument. (raw/javascriptallonge.pdf p.90-91)
-- In ECMAScript-5, a rightVariadic decorator was used to gather arguments into the last declared parameter. (raw/javascriptallonge.pdf p.90-91)
+- The rightVariadic decorator gathers ordinary arguments and the rest of the argument list before applying the wrapped function. (raw/javascriptallonge.pdf p.90-91)

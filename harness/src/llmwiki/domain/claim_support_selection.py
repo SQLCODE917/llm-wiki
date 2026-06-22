@@ -85,11 +85,21 @@ def _source_summary_candidates(
             if page_id not in page_texts:
                 continue
             report = inspect_citations(page_id, bullet.bullet_text, inventory)
-            if source_path and report.citations and not any(
-                citation.source_path == source_path for citation in report.citations
+            if (
+                source_path
+                and report.citations
+                and not any(citation.source_path == source_path for citation in report.citations)
             ):
                 continue
             citations = tuple(citation.raw_text for citation in report.citations)
+            evidence_ids = tuple(
+                dict.fromkeys(
+                    (
+                        *evidence_ids,
+                        *index.evidence_ids_for_citations(page_id, report.citations),
+                    )
+                )
+            )
             claim_text = _claim_text_from_citations(bullet.bullet_text, citations)
             if not _is_claim_like(claim_text):
                 continue
@@ -107,7 +117,7 @@ def _source_summary_candidates(
                     citation_texts=citations,
                     source_claim_ids=tuple(bullet.covered_source_claims),
                     evidence_ids=evidence_ids,
-                    evidence_excerpts=index.excerpts(evidence_ids),
+                    evidence_excerpts=index.excerpts(evidence_ids, limit=5),
                     candidate_kind="source-summary",
                 )
             )
@@ -148,7 +158,7 @@ def _prose_candidates(
                     citation_texts=citations,
                     source_claim_ids=(),
                     evidence_ids=evidence_ids,
-                    evidence_excerpts=index.excerpts(evidence_ids),
+                    evidence_excerpts=index.excerpts(evidence_ids, limit=5),
                 )
             )
     return tuple(candidates)
@@ -193,6 +203,7 @@ def _deterministic_findings(
                     )
                 )
     return tuple(findings)
+
 
 def _claim_text_from_citations(line: str, citation_texts: Sequence[str]) -> str:
     claim = line

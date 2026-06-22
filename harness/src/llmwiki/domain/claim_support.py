@@ -73,13 +73,12 @@ class ClaimSupportVerdict:
     recommended_action: str
 
     @property
-    def severity(self) -> str:
-        return {
-            "supported": "info",
-            "too_broad": "warning",
-            "not_supported": "blocker",
-            "unclear": "warning",
-        }[self.verdict]
+    def severity(self) -> ClaimSupportSeverity:
+        if self.verdict == "supported":
+            return "info"
+        if self.verdict == "not_supported":
+            return "blocker"
+        return "warning"
 
     def render(self, index: int) -> str:
         return (

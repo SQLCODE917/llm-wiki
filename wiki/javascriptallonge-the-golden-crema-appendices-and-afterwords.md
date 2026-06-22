@@ -13,7 +13,7 @@ This section includes appendices and afterwords from the book *JavaScript Allong
 
 ## Key Points
 
-- The section discusses the significance of the appendices and afterwords in the context of the book.
+- The appendices and afterwords provide closing context for JavaScript Allongé. (raw/javascriptallonge.pdf p.288-288)
 - It highlights the importance of the La Marzocco, which is mentioned as a key element in the context of the book's themes.
 
 ## Sources

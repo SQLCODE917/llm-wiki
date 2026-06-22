@@ -6,6 +6,7 @@ CONTRADICTIONS_PAGE = "wiki-contradictions"
 GROUNDING_PAGE = "wiki-grounding"
 CLAIM_SUPPORT_PAGE = "wiki-claim-support"
 SEMANTIC_LINT_PAGE = "wiki-semantic-lint"
+INGEST_CONFIDENCE_PAGE = "wiki-ingest-confidence"
 SYSTEM_PAGES = frozenset(
     {
         HEALTH_PAGE,
@@ -14,6 +15,7 @@ SYSTEM_PAGES = frozenset(
         GROUNDING_PAGE,
         CLAIM_SUPPORT_PAGE,
         SEMANTIC_LINT_PAGE,
+        INGEST_CONFIDENCE_PAGE,
     }
 )
 ORPHAN_EXEMPT_PAGES = SYSTEM_PAGES

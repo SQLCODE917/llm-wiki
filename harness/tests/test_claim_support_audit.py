@@ -29,8 +29,7 @@ def test_selector_prefers_source_summary_bullets_and_links_evidence() -> None:
         {
             "alpha": _page_text(
                 "alpha",
-                "- Alpha is supported. (raw/alpha.md)\n"
-                "- Prose fallback. (raw/alpha.md)",
+                "- Alpha is supported. (raw/alpha.md)\n- Prose fallback. (raw/alpha.md)",
             )
         },
         _inventory("alpha.md"),
@@ -39,9 +38,7 @@ def test_selector_prefers_source_summary_bullets_and_links_evidence() -> None:
             _artifact(
                 "alpha.md",
                 "alpha",
-                SourceSummaryBullet(
-                    "Alpha is supported. (raw/alpha.md)", ("claim-alpha",)
-                ),
+                SourceSummaryBullet("Alpha is supported. (raw/alpha.md)", ("claim-alpha",)),
             ),
         ),
         max_claims=5,
@@ -52,6 +49,63 @@ def test_selector_prefers_source_summary_bullets_and_links_evidence() -> None:
     assert selection.candidates[0].source_claim_ids == ("claim-alpha",)
     assert selection.candidates[0].evidence_ids
     assert "Alpha is supported." in selection.candidates[0].evidence_excerpts[0]
+
+
+def test_source_summary_candidates_include_page_citation_evidence() -> None:
+    registry = EvidenceRegistry(
+        registry_id="registry-alpha",
+        source_texts=(source_text_from_text("alpha.md", "Broad page support."),),
+        source_ranges=(
+            SourceRange(
+                source_range_id="range-alpha",
+                page_id="alpha",
+                source_locator="alpha.md",
+                page_range=None,
+                line_range=None,
+                heading_path="Alpha",
+            ),
+        ),
+        evidence_records=(
+            EvidenceRecord(
+                evidence_id="evidence-narrow",
+                source_locator="alpha.md",
+                source_hash="hash",
+                source_range_id="range-alpha",
+                line_range=None,
+                excerpt="Narrow source-claim support.",
+                excerpt_digest="narrow",
+                evidence_kind="source-claim",
+                source_claim_id="claim-alpha",
+            ),
+            EvidenceRecord(
+                evidence_id="evidence-broad",
+                source_locator="alpha.md",
+                source_hash="hash",
+                source_range_id="range-alpha",
+                line_range=None,
+                excerpt="Broad page support.",
+                excerpt_digest="broad",
+                evidence_kind="citation",
+            ),
+        ),
+    )
+
+    selection = select_claim_support_candidates(
+        {"alpha": _page_text("alpha", "Alpha is supported. (raw/alpha.md)")},
+        _inventory("alpha.md"),
+        (registry,),
+        (
+            _artifact(
+                "alpha.md",
+                "alpha",
+                SourceSummaryBullet("Alpha is supported. (raw/alpha.md)", ("claim-alpha",)),
+            ),
+        ),
+        max_claims=1,
+    )
+
+    assert "evidence-narrow" in selection.candidates[0].evidence_ids
+    assert "evidence-broad" in selection.candidates[0].evidence_ids
 
 
 def test_selector_builds_prose_candidates_and_source_filter() -> None:
