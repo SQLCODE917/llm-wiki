@@ -92,6 +92,23 @@ def _claim_support_findings(
     source_locator: str, audit: ClaimSupportAuditReport
 ) -> tuple[ValidationFinding, ...]:
     findings: list[ValidationFinding] = []
+    if audit.missing_verdict_candidate_ids:
+        missing = ", ".join(audit.missing_verdict_candidate_ids[:5])
+        omitted = len(audit.missing_verdict_candidate_ids) - 5
+        if omitted > 0:
+            missing = f"{missing} ({omitted} more)"
+        findings.append(
+            validation_finding(
+                severity="blocker",
+                category="claim-support",
+                source_locator=source_locator,
+                message=(
+                    "Missing model verdicts for selected claim-support candidates: "
+                    f"{missing}."
+                ),
+                fingerprint="missing-claim-support-verdicts",
+            )
+        )
     for finding in audit.selection.deterministic_findings:
         findings.append(
             validation_finding(

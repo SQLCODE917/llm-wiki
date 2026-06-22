@@ -21,6 +21,7 @@ from llmwiki.config import StrictEvidenceMode
 from llmwiki.domain.chatwindow import QAPair
 from llmwiki.domain.claim_support import (
     ClaimSupportAuditReport,
+    ClaimSupportCandidate,
     ClaimSupportSelection,
     ClaimSupportVerdict,
 )
@@ -114,6 +115,7 @@ _MAX_ITERATIONS = {
     "chat": 12,
     "chat-file": 14,
 }
+_CLAIM_SUPPORT_BATCH_SIZE = 5
 
 # (pdf_path, source_rel, reextract) -> ExtractionResult; injectable for tests.
 ExtractFn = Callable[[Path, str, bool], ExtractionResult]
@@ -824,27 +826,25 @@ class Session:
                 ),
                 None,
             )
-        workflow = build_claim_support_workflow(
-            self.store, verdicts, selection.candidates, selection.deterministic_findings
-        )
-        message = (
-            "Run a claim-support audit over these bounded candidates. "
-            "Do not judge candidates with deterministic findings; those are "
-            "already reported by the harness. For each selected candidate, decide "
-            "whether the EvidenceRecord excerpts support the generated wiki claim "
-            "as written. The finish_claim_support report should give qualitative "
-            "uncertainty and curator next steps only; do not restate verdict "
-            "counts or skipped-candidate counts.\n\n"
-            f"Claim candidates discovered: {selection.candidate_count}\n"
-            f"Audited candidates: {selection.audited_count}\n"
-            f"Selected for model judgment: {selection.selected_count}\n"
-            f"Skipped by deterministic findings: {selection.deterministic_skipped_count}\n"
-            f"Skipped by cap: {selection.skipped_count}\n\n"
-            f"{selection.render_for_prompt()}"
-        )
-        model_report, transcript = await self._run(workflow, message, "claim-support")
+        model_reports: list[str] = []
+        transcript: Path | None = None
+        batches = _claim_support_batches(selection.candidates)
+        for batch_index, candidates in enumerate(batches, 1):
+            batch_selection = _claim_support_batch_selection(selection, candidates)
+            workflow = build_claim_support_workflow(self.store, verdicts, candidates, ())
+            message = _claim_support_audit_message(
+                batch_selection=batch_selection,
+                total_selected=selection.selected_count,
+                batch_index=batch_index,
+                batch_count=len(batches),
+            )
+            model_report, batch_transcript = await self._run(
+                workflow, message, "claim-support"
+            )
+            model_reports.append(model_report)
+            transcript = transcript or batch_transcript
         return self._claim_support_audit_report(
-            selection, tuple(verdicts), model_report
+            selection, tuple(verdicts), "\n\n".join(model_reports)
         ), transcript
 
     async def claim_support(self, selection: ClaimSupportSelection) -> OperationResult:
@@ -1180,6 +1180,52 @@ def _work_unit_name(records: tuple[ChunkRecord, ...]) -> str:
     if len(records) == 1:
         return f"chunk {records[0].chunk_id}"
     return f"chunk group {records[0].chunk_id}-{records[-1].chunk_id}"
+
+
+def _claim_support_batches(
+    candidates: Sequence[ClaimSupportCandidate],
+) -> tuple[tuple[ClaimSupportCandidate, ...], ...]:
+    return tuple(
+        tuple(candidates[start : start + _CLAIM_SUPPORT_BATCH_SIZE])
+        for start in range(0, len(candidates), _CLAIM_SUPPORT_BATCH_SIZE)
+    )
+
+
+def _claim_support_batch_selection(
+    selection: ClaimSupportSelection,
+    candidates: tuple[ClaimSupportCandidate, ...],
+) -> ClaimSupportSelection:
+    return replace(
+        selection,
+        candidates=candidates,
+        blocked_candidates=(),
+        deterministic_findings=(),
+        candidate_count=len(candidates),
+        max_claims=len(candidates),
+        sample_coverage=None,
+    )
+
+
+def _claim_support_audit_message(
+    *,
+    batch_selection: ClaimSupportSelection,
+    total_selected: int,
+    batch_index: int,
+    batch_count: int,
+) -> str:
+    return (
+        "Run a claim-support audit over this bounded candidate batch. "
+        "For every candidate in this batch, decide whether the EvidenceRecord "
+        "excerpts support the generated wiki claim as written. Record exactly "
+        "one record_claim_support_verdict tool call for each candidate before "
+        "calling finish_claim_support. The finish_claim_support report should "
+        "give qualitative uncertainty and curator next steps only; do not "
+        "restate verdict counts or skipped-candidate counts.\n\n"
+        f"Batch: {batch_index}/{batch_count}\n"
+        f"Selected for model judgment in full sample: {total_selected}\n"
+        f"Selected for model judgment in this batch: {batch_selection.selected_count}\n\n"
+        f"{batch_selection.render_for_prompt()}"
+    )
 
 
 def _work_unit_section_label(records: tuple[ChunkRecord, ...]) -> str:

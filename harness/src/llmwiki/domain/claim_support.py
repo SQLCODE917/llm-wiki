@@ -18,6 +18,8 @@ ClaimSupportCategory = Literal[
     "support-verdict",
 ]
 
+MAX_RENDERED_EVIDENCE_IDS = 8
+
 
 @dataclass(frozen=True)
 class ClaimSupportCandidate:
@@ -35,7 +37,6 @@ class ClaimSupportCandidate:
     def render(self, index: int) -> str:
         citations = ", ".join(self.citation_texts) or "None."
         claims = ", ".join(self.source_claim_ids) or "None."
-        evidence_ids = ", ".join(self.evidence_ids) or "None."
         excerpts = "\n".join(f"- {excerpt}" for excerpt in self.evidence_excerpts) or "None."
         risk_tags = ", ".join(self.risk_tags) or "None."
         return (
@@ -47,9 +48,21 @@ class ClaimSupportCandidate:
             f"Local context: {self.page_context}\n"
             f"Citations: {citations}\n"
             f"SourceClaim ids: {claims}\n"
-            f"Evidence ids: {evidence_ids}\n"
+            f"{self._render_evidence_id_summary()}\n"
             f"Evidence excerpts:\n{excerpts}"
         )
+
+    def _render_evidence_id_summary(self) -> str:
+        excerpt_ids = _evidence_ids_from_excerpts(self.evidence_excerpts)
+        if excerpt_ids:
+            return "Evidence excerpt ids: " + ", ".join(excerpt_ids)
+        if not self.evidence_ids:
+            return "Evidence excerpt ids: None."
+        rendered = ", ".join(self.evidence_ids[:MAX_RENDERED_EVIDENCE_IDS])
+        omitted = len(self.evidence_ids) - MAX_RENDERED_EVIDENCE_IDS
+        if omitted > 0:
+            rendered = f"{rendered} ({omitted} more not shown)"
+        return "Evidence excerpt ids: " + rendered
 
 
 @dataclass(frozen=True)
@@ -175,6 +188,15 @@ class ClaimSupportAuditReport:
     verdicts: tuple[ClaimSupportVerdict, ...]
     model_report: str
 
+    @property
+    def missing_verdict_candidate_ids(self) -> tuple[str, ...]:
+        recorded = {verdict.candidate_id for verdict in self.verdicts}
+        return tuple(
+            candidate.candidate_id
+            for candidate in self.selection.candidates
+            if candidate.candidate_id not in recorded
+        )
+
     def render(self) -> str:
         return "\n\n".join(
             [
@@ -239,3 +261,12 @@ def _render_counts(counts: tuple[ClaimSupportCoverageCount, ...]) -> str:
     if not counts:
         return "- None."
     return "\n".join(count.render() for count in counts)
+
+
+def _evidence_ids_from_excerpts(excerpts: tuple[str, ...]) -> tuple[str, ...]:
+    evidence_ids: list[str] = []
+    for excerpt in excerpts:
+        evidence_id, separator, _text = excerpt.partition(":")
+        if separator and evidence_id.startswith("evidence-"):
+            evidence_ids.append(evidence_id)
+    return tuple(evidence_ids)

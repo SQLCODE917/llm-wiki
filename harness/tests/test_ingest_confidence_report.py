@@ -4,6 +4,11 @@ import pytest
 
 from llmwiki.cli import _build_parser, _run
 from llmwiki.config import WikiPaths
+from llmwiki.domain.claim_support import (
+    ClaimSupportAuditReport,
+    ClaimSupportCandidate,
+    ClaimSupportSelection,
+)
 from llmwiki.domain.ingest_confidence import (
     ArtifactFingerprint,
     ArtifactReuseDecision,
@@ -20,6 +25,7 @@ from llmwiki.domain.planning import (
     page_plan_from_json,
     page_plan_to_json,
 )
+from llmwiki.runtime.ingest_confidence import claim_support_gate_from_audit
 from llmwiki.runtime.ingest_confidence_artifacts import prepare_ingest_confidence_artifacts
 from llmwiki.store import WikiStore
 
@@ -108,6 +114,39 @@ def test_report_rendering_keeps_skipped_gate_visible() -> None:
     assert "### claim-support" in rendered
     assert "Status: skipped" in rendered
     assert "Skipped because there are no candidates." in rendered
+
+
+def test_claim_support_gate_fails_when_selected_candidates_lack_verdicts() -> None:
+    selection = ClaimSupportSelection(
+        candidates=(
+            ClaimSupportCandidate(
+                candidate_id="claim-support-summary-alpha-1",
+                page_id="alpha",
+                claim_text="Alpha is supported.",
+                page_context="Alpha is supported. (raw/alpha.md)",
+                citation_texts=("raw/alpha.md",),
+                source_claim_ids=("source-claim-alpha",),
+                evidence_ids=("evidence-alpha",),
+                evidence_excerpts=("evidence-alpha: Alpha is supported.",),
+            ),
+        ),
+        blocked_candidates=(),
+        deterministic_findings=(),
+        candidate_count=1,
+        max_claims=1,
+    )
+    audit = ClaimSupportAuditReport(
+        run_id="test-run",
+        selection=selection,
+        verdicts=(),
+        model_report="Done.",
+    )
+
+    gate, findings = claim_support_gate_from_audit("alpha.md", audit)
+
+    assert gate.status == "fail"
+    assert findings[0].severity == "blocker"
+    assert "Missing model verdicts" in findings[0].message
 
 
 @pytest.mark.asyncio

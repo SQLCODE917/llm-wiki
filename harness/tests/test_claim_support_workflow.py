@@ -49,6 +49,46 @@ def test_verdict_tool_rejects_supported_with_deterministic_findings(
     assert verdicts == []
 
 
+def test_candidate_render_uses_bounded_excerpt_evidence_ids() -> None:
+    candidate = ClaimSupportCandidate(
+        candidate_id="claim-support-summary-alpha-1",
+        page_id="alpha",
+        claim_text="Alpha is supported.",
+        page_context="Alpha is supported. (raw/alpha.md)",
+        citation_texts=("raw/alpha.md",),
+        source_claim_ids=("source-claim-alpha",),
+        evidence_ids=tuple(f"evidence-{index}" for index in range(12)),
+        evidence_excerpts=("evidence-7: Alpha is supported.",),
+        candidate_kind="source-summary",
+    )
+
+    rendered = candidate.render(1)
+
+    assert "### Candidate 1: claim-support-summary-alpha-1" in rendered
+    assert "Evidence excerpt ids: evidence-7" in rendered
+    assert "evidence-11" not in rendered
+
+
+def test_candidate_render_limits_evidence_ids_when_excerpts_are_missing() -> None:
+    candidate = ClaimSupportCandidate(
+        candidate_id="claim-support-summary-alpha-1",
+        page_id="alpha",
+        claim_text="Alpha is supported.",
+        page_context="Alpha is supported. (raw/alpha.md)",
+        citation_texts=("raw/alpha.md",),
+        source_claim_ids=("source-claim-alpha",),
+        evidence_ids=tuple(f"evidence-{index}" for index in range(10)),
+        evidence_excerpts=(),
+        candidate_kind="source-summary",
+    )
+
+    rendered = candidate.render(1)
+
+    assert "Evidence excerpt ids: evidence-0" in rendered
+    assert "(2 more not shown)" in rendered
+    assert "evidence-9" not in rendered
+
+
 async def test_session_files_claim_support_report_and_log(
     store: WikiStore, paths: WikiPaths
 ) -> None:
@@ -90,6 +130,39 @@ async def test_session_files_claim_support_report_and_log(
     assert "wiki-claim-support" in store.list_pages()
     assert "Claim Support Audit" in store.read_page("wiki-claim-support")
     assert "claim-support | claim support audit" in paths.log_path.read_text()
+
+
+async def test_session_batches_claim_support_candidates(
+    store: WikiStore, paths: WikiPaths
+) -> None:
+    store.write_page(
+        wiki_page(
+            name="alpha",
+            category="source",
+            summary="A.",
+            body="Alpha is supported. (raw/alpha.md)",
+        )
+    )
+    candidates = tuple(_candidate(f"claim-support-summary-alpha-{index}") for index in range(6))
+    selection = ClaimSupportSelection(
+        candidates=candidates,
+        blocked_candidates=(),
+        deterministic_findings=(),
+        candidate_count=6,
+        max_claims=6,
+    )
+    script = [
+        *_verdict_calls(candidates[:5]),
+        [ToolCall(tool="finish_claim_support", args={"report": "First batch."})],
+        *_verdict_calls(candidates[5:]),
+        [ToolCall(tool="finish_claim_support", args={"report": "Second batch."})],
+    ]
+
+    result = await _session(store, script, paths).claim_support(selection)
+
+    assert "Selected for model judgment: 6" in result.output
+    assert "- supported: 6" in result.output
+    assert "Verdict 6: INFO - supported" in result.output
 
 
 async def test_invalid_verdict_label_recovers(store: WikiStore, paths: WikiPaths) -> None:
@@ -162,9 +235,9 @@ def _session(store: WikiStore, script: list, paths: WikiPaths) -> Session:
     )
 
 
-def _candidate() -> ClaimSupportCandidate:
+def _candidate(candidate_id: str = "claim-support-summary-alpha-1") -> ClaimSupportCandidate:
     return ClaimSupportCandidate(
-        candidate_id="claim-support-summary-alpha-1",
+        candidate_id=candidate_id,
         page_id="alpha",
         claim_text="Alpha is supported.",
         page_context="Alpha is supported. (raw/alpha.md)",
@@ -174,3 +247,20 @@ def _candidate() -> ClaimSupportCandidate:
         evidence_excerpts=("evidence-alpha: Alpha is supported.",),
         candidate_kind="source-summary",
     )
+
+
+def _verdict_calls(candidates: tuple[ClaimSupportCandidate, ...]) -> list[list[ToolCall]]:
+    return [
+        [
+            ToolCall(
+                tool="record_claim_support_verdict",
+                args={
+                    "candidate_id": candidate.candidate_id,
+                    "verdict": "supported",
+                    "rationale": "The evidence excerpt states the same claim.",
+                    "recommended_action": "No action.",
+                },
+            )
+        ]
+        for candidate in candidates
+    ]
