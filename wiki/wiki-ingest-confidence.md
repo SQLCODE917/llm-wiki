@@ -9,7 +9,7 @@ updated: 2026-06-22
 
 ## Summary
 
-Run id: 2026-06-22-153701
+Run id: 2026-06-22-160544
 Source: raw/Sword World RPG - Complete Edition.pdf
 Confidence status: passed
 Blockers: 0
@@ -88,20 +88,35 @@ Invalid locators: 0
 - Kind: model-assisted
 - Scope: raw/Sword World RPG - Complete Edition.pdf
 - Status: pass
-- Findings: validation-finding-f9abc9e272133c02, validation-finding-969c5bdef055f6bb, validation-finding-3c3c2f7adc428b54, validation-finding-e8d5a3c2d46b8ec3, validation-finding-4c613d201d9219c1
+- Findings: validation-finding-344a39e29774c506, validation-finding-f6bab2b8410b177c, validation-finding-ed3b00f59f592c4f, validation-finding-fd49914ee1805e5d, validation-finding-9629f91469956e22
 Claim candidates discovered: 232
 Selected for model judgment: 5
 Skipped by deterministic findings: 0
 Skipped by cap: 227
 Verdicts recorded: 5
+Sample strategy: stratified
+Sampled candidates: 5/232
+Page coverage: 5/69
+Source-bucket coverage: 4/18
+Candidate kinds:
+- prose-line: 1/2
+- source-summary: 4/230
+Risk tags:
+- limitation: 0/18
+- mechanism: 2/22
+- negative-evidence: 0/15
+- procedure: 2/16
+- quantitative: 3/72
+- requirement: 1/29
+- unclassified: 2/110
 
 ## Findings
 
-- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support the claim that skills describe character characteristics with greater impact than ability scores. Specifically, evidence-3fe8f57a611b44c8 states "Skills have a greater impact on a character's actions than ability scores," which directly supports the claim. Additionally, evidence-2d1f90851068b610 mentions that skills are used alongside ability scores to describe character characteristics, reinforcing the importance of skills. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-1
-- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support the claim that adventurer skills are for player characters with eight available skills. Evidence-fea1fd9e868304f2 explicitly lists the eight skills: fighter, thief, priest, sorcerer, shaman, sage, ranger, and bard. Additionally, evidence-ebc4f774c747baf8 confirms that adventurer skills are acquired by player characters, which aligns with the claim. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-2
-- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support the claim that instead of saying 'someone who has the fighter skill', they are simply called 'fighters'. Evidence-d0fe589931c98bd3 directly states "So instead of _someone who has the fighter skill_ , they are simply called _fighters_." This provides clear support for the claim. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-3
-- INFO claim-support sword-world-rpg-complete-edition-1-4-character-creation-part-1: supported: The evidence excerpts support the claim that players choose a race, such as human, dwarf, grassrunner, elf, or half-elf, each with unique traits and limitations. Evidence-dfb33dc7a693080e lists the five types of races to choose from: human, dwarf, grassrunner, elf, and half-elf. Furthermore, evidence-3b533389208d4240 explicitly states that each race has their own characteristics and limitations. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-4-character-creation-part-1-1
-- INFO claim-support sword-world-rpg-complete-edition-1-4-character-creation-part-1: supported: The evidence excerpts support the claim that each race has specific ability score averages, with humans having the most average scores. Evidence-00911a2a54112302 states that "Humans have the most average ability scores and can do almost anything without a hitch." Additionally, evidence-e6b671c58262e675 refers to a table showing average ability scores by race, which supports the idea that each race has specific averages. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-4-character-creation-part-1-2
+- INFO claim-support sword-world-rpg-complete-edition-13-2-7-animals-part-2: supported: The evidence excerpts fully support the claim. Evidence-672d9da4f629f13f directly states the damage mechanics, evidence-e4d3a73136741536 confirms the special diet, and evidence-5e38c4a31c149e9d provides the relevant stats including the toxic acid and damage values. Evidence-86e81f7cfb125b2b confirms the toxic acid secretion. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-13-2-7-animals-part-2-3
+- INFO claim-support sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog: supported: The evidence excerpts support the claim that the section explains how to interpret data in the monster catalog, covering formats for various monster attributes including level, rarity, agility, movement speed, number, frequency, intellect, reaction, attack points, strike points, evasion points, defense points, life points/resistance, mental points/resistance, special abilities, habitat, perception, and languages. fingerprint=claim-support-prose-sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog-3
+- INFO claim-support sword-world-rpg-complete-edition-books-related-to-sword-world-rpg: supported: The evidence excerpts support that the Sword World RPG Replay Collections help understand gameplay through actual play reproductions and are based on the old rule version, which may have contradictions. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-books-related-to-sword-world-rpg-1
+- INFO claim-support sword-world-rpg-complete-edition-1-3-skills: supported: The evidence excerpts support that skills describe character characteristics and have a greater impact than ability scores, with examples showing how skills determine character actions and characteristics. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-1-3-skills-1
+- INFO claim-support sword-world-rpg-complete-edition-2-3-checks: supported: The evidence excerpts support the claim that success roll is 2D + baseline score ≥ target score, with specific examples showing how dice rolls are added to baseline scores to determine success. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-2-3-checks-3
 
 ## Caveat
 

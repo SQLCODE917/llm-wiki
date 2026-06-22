@@ -119,12 +119,15 @@ def _claim_support_findings(
 
 
 def _claim_support_detail(audit: ClaimSupportAuditReport) -> str:
+    coverage = audit.selection.sample_coverage
+    coverage_detail = coverage.render() if coverage is not None else "No sample coverage report."
     return (
         f"Claim candidates discovered: {audit.selection.candidate_count}\n"
         f"Selected for model judgment: {audit.selection.selected_count}\n"
         f"Skipped by deterministic findings: {audit.selection.deterministic_skipped_count}\n"
         f"Skipped by cap: {audit.selection.skipped_count}\n"
-        f"Verdicts recorded: {len(audit.verdicts)}"
+        f"Verdicts recorded: {len(audit.verdicts)}\n"
+        f"{coverage_detail}"
     )
 
 

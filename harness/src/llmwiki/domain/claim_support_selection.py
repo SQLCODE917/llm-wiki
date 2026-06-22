@@ -8,13 +8,20 @@ from collections.abc import Mapping, Sequence
 
 from llmwiki.domain.citations import SourceInventory, inspect_citations
 from llmwiki.domain.claim_support import (
+    DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY,
     DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
     ClaimSupportCandidate,
     ClaimSupportCategory,
     ClaimSupportFinding,
+    ClaimSupportSampleStrategy,
     ClaimSupportSelection,
 )
 from llmwiki.domain.claim_support_evidence import ClaimSupportEvidenceIndex
+from llmwiki.domain.claim_support_sampling import (
+    claim_support_risk_tags,
+    claim_support_sample_coverage,
+    sample_claim_support_candidates,
+)
 from llmwiki.domain.evidence_locator_index import canonicalize_evidence_text
 from llmwiki.domain.evidence_locators import (
     locator_match_for_citation,
@@ -34,9 +41,12 @@ def select_claim_support_candidates(
     *,
     max_claims: int = DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
     source: str = "",
+    sample_strategy: ClaimSupportSampleStrategy = DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY,
 ) -> ClaimSupportSelection:
     if max_claims < 1:
         raise ValueError("max_claims must be at least 1.")
+    if sample_strategy not in ("ordered", "stratified"):
+        raise ValueError("sample_strategy must be 'ordered' or 'stratified'.")
     source_path = _source_path_filter(source)
     index = ClaimSupportEvidenceIndex(registries)
     summary_candidates = _source_summary_candidates(
@@ -47,10 +57,13 @@ def select_claim_support_candidates(
     discovered = (*summary_candidates, *prose_candidates)
     selected: list[ClaimSupportCandidate] = []
     blocked: list[ClaimSupportCandidate] = []
+    audited: list[ClaimSupportCandidate] = []
     findings: list[ClaimSupportFinding] = []
-    for candidate in discovered:
+    sample_order = sample_claim_support_candidates(discovered, sample_strategy=sample_strategy)
+    for candidate in sample_order:
         if len(selected) >= max_claims:
             break
+        audited.append(candidate)
         candidate_findings = _deterministic_findings(candidate, inventory, index)
         findings.extend(candidate_findings)
         if candidate_findings:
@@ -63,6 +76,10 @@ def select_claim_support_candidates(
         deterministic_findings=tuple(findings),
         candidate_count=len(discovered),
         max_claims=max_claims,
+        sample_strategy=sample_strategy,
+        sample_coverage=claim_support_sample_coverage(
+            discovered, tuple(audited), sample_strategy=sample_strategy
+        ),
     )
 
 
@@ -121,6 +138,7 @@ def _source_summary_candidates(
                         evidence_ids, claim_text, limit=5
                     ),
                     candidate_kind="source-summary",
+                    risk_tags=claim_support_risk_tags(claim_text),
                 )
             )
     return tuple(candidates)
@@ -163,6 +181,7 @@ def _prose_candidates(
                     evidence_excerpts=index.excerpts_for_claim(
                         evidence_ids, claim_text, limit=5
                     ),
+                    risk_tags=claim_support_risk_tags(claim_text),
                 )
             )
     return tuple(candidates)

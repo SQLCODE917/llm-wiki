@@ -6,6 +6,8 @@ from dataclasses import dataclass
 from typing import Literal
 
 DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS = 5
+ClaimSupportSampleStrategy = Literal["ordered", "stratified"]
+DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY: ClaimSupportSampleStrategy = "stratified"
 ClaimSupportVerdictLabel = Literal["supported", "too_broad", "not_supported", "unclear"]
 ClaimSupportSeverity = Literal["blocker", "warning", "info"]
 ClaimSupportCategory = Literal[
@@ -28,22 +30,65 @@ class ClaimSupportCandidate:
     evidence_ids: tuple[str, ...]
     evidence_excerpts: tuple[str, ...] = ()
     candidate_kind: str = "prose-line"
+    risk_tags: tuple[str, ...] = ()
 
     def render(self, index: int) -> str:
         citations = ", ".join(self.citation_texts) or "None."
         claims = ", ".join(self.source_claim_ids) or "None."
         evidence_ids = ", ".join(self.evidence_ids) or "None."
         excerpts = "\n".join(f"- {excerpt}" for excerpt in self.evidence_excerpts) or "None."
+        risk_tags = ", ".join(self.risk_tags) or "None."
         return (
             f"### Candidate {index}: {self.candidate_id}\n"
             f"Page: [[{self.page_id}]]\n"
             f"Kind: {self.candidate_kind}\n"
+            f"Risk tags: {risk_tags}\n"
             f"Claim: {self.claim_text}\n"
             f"Local context: {self.page_context}\n"
             f"Citations: {citations}\n"
             f"SourceClaim ids: {claims}\n"
             f"Evidence ids: {evidence_ids}\n"
             f"Evidence excerpts:\n{excerpts}"
+        )
+
+
+@dataclass(frozen=True)
+class ClaimSupportCoverageCount:
+    label: str
+    available: int
+    sampled: int
+
+    def render(self) -> str:
+        return f"- {self.label}: {self.sampled}/{self.available}"
+
+
+@dataclass(frozen=True)
+class ClaimSupportSampleCoverage:
+    sample_strategy: ClaimSupportSampleStrategy
+    available_candidates: int
+    sampled_candidates: int
+    available_pages: int
+    sampled_pages: int
+    available_source_buckets: int
+    sampled_source_buckets: int
+    candidate_kind_counts: tuple[ClaimSupportCoverageCount, ...]
+    risk_tag_counts: tuple[ClaimSupportCoverageCount, ...]
+
+    def render(self) -> str:
+        return "\n".join(
+            (
+                f"Sample strategy: {self.sample_strategy}",
+                f"Sampled candidates: {self.sampled_candidates}/{self.available_candidates}",
+                f"Page coverage: {self.sampled_pages}/{self.available_pages}",
+                (
+                    "Source-bucket coverage: "
+                    f"{self.sampled_source_buckets}/{self.available_source_buckets}"
+                ),
+                "Candidate kinds:",
+                _render_counts(self.candidate_kind_counts),
+                "Risk tags:",
+                _render_counts(self.risk_tag_counts),
+            )
         )
 
 
@@ -96,6 +141,8 @@ class ClaimSupportSelection:
     deterministic_findings: tuple[ClaimSupportFinding, ...]
     candidate_count: int
     max_claims: int
+    sample_strategy: ClaimSupportSampleStrategy = DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY
+    sample_coverage: ClaimSupportSampleCoverage | None = None
 
     @property
     def audited_count(self) -> int:
@@ -133,6 +180,7 @@ class ClaimSupportAuditReport:
             [
                 "# Claim Support Audit",
                 "## Audit Scope\n\n" + self._scope(),
+                "## Sample Coverage\n\n" + self._sample_coverage(),
                 "## Deterministic Findings\n\n" + self._findings(),
                 "## Verdict Totals\n\n" + self._verdict_totals(),
                 "## Model Verdicts\n\n" + self._verdicts(),
@@ -154,6 +202,11 @@ class ClaimSupportAuditReport:
             f"Skipped by cap: {self.selection.skipped_count}\n"
             f"Max claims: {self.selection.max_claims}"
         )
+
+    def _sample_coverage(self) -> str:
+        if self.selection.sample_coverage is None:
+            return "No sample coverage report."
+        return self.selection.sample_coverage.render()
 
     def _findings(self) -> str:
         if not self.selection.deterministic_findings:
@@ -180,3 +233,9 @@ class ClaimSupportAuditReport:
             )
         note = self.model_report.strip() or "No model report."
         return "Free-form model notes; verdict totals above are harness-computed.\n\n" + note
+
+
+def _render_counts(counts: tuple[ClaimSupportCoverageCount, ...]) -> str:
+    if not counts:
+        return "- None."
+    return "\n".join(count.render() for count in counts)

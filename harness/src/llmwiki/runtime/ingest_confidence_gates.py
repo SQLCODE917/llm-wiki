@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from llmwiki.domain.claim_support import ClaimSupportSelection
+from llmwiki.domain.claim_support import ClaimSupportSampleStrategy, ClaimSupportSelection
 from llmwiki.domain.claim_support_selection import select_claim_support_candidates
 from llmwiki.domain.ingest_confidence import (
     IngestConfidenceGate,
@@ -51,6 +51,7 @@ def deterministic_confidence(
     today: str,
     prepared: PreparedIngestArtifacts,
     max_claims: int,
+    sample_strategy: ClaimSupportSampleStrategy = "stratified",
 ) -> DeterministicConfidence:
     page_texts = store.page_texts()
     scoped_pages = source_scoped_pages(page_texts, source_locator)
@@ -123,7 +124,9 @@ def deterministic_confidence(
             index_findings(source_locator, store, page_texts, scoped_pages),
         ),
     )
-    selection = _claim_support_selection(store, source_locator, prepared, page_texts, max_claims)
+    selection = _claim_support_selection(
+        store, source_locator, prepared, page_texts, max_claims, sample_strategy
+    )
     return DeterministicConfidence(gates, tuple(findings), selection)
 
 
@@ -180,6 +183,7 @@ def _claim_support_selection(
     prepared: PreparedIngestArtifacts,
     page_texts: dict[str, str],
     max_claims: int,
+    sample_strategy: ClaimSupportSampleStrategy,
 ) -> ClaimSupportSelection | None:
     if prepared.evidence_registry is None:
         return None
@@ -190,6 +194,7 @@ def _claim_support_selection(
         _current_source_summary_artifacts(store, source_locator, prepared, page_texts),
         max_claims=max_claims,
         source=f"raw/{source_locator}",
+        sample_strategy=sample_strategy,
     )
 
 

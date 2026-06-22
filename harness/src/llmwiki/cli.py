@@ -28,7 +28,10 @@ from llmwiki.domain.candidates import (
     signals_from_broken_links,
     update_candidate_backlog,
 )
-from llmwiki.domain.claim_support import DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS
+from llmwiki.domain.claim_support import (
+    DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY,
+    DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
+)
 from llmwiki.domain.claim_support_selection import select_claim_support_candidates
 from llmwiki.domain.contradictions import DEFAULT_MAX_PAIRS, select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
@@ -192,6 +195,13 @@ def _build_parser() -> argparse.ArgumentParser:
         default="",
         help="Limit candidates to one raw source, e.g. raw/book.pdf.",
     )
+    claim_support.add_argument(
+        "--sample-strategy",
+        choices=("stratified", "ordered"),
+        default=DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY,
+        help="Claim-support sample ordering strategy "
+        f"(default: {DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY}).",
+    )
 
     ingest_confidence = sub.add_parser(
         "ingest-confidence",
@@ -209,6 +219,13 @@ def _build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
         help="Maximum claim-support candidates to judge "
         f"(default: {DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS}).",
+    )
+    ingest_confidence.add_argument(
+        "--sample-strategy",
+        choices=("stratified", "ordered"),
+        default=DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY,
+        help="Claim-support sample ordering strategy "
+        f"(default: {DEFAULT_CLAIM_SUPPORT_SAMPLE_STRATEGY}).",
     )
     ingest_confidence.add_argument(
         "--profile",
@@ -481,6 +498,7 @@ async def _run_claim_support(
         store.read_source_summary_draft_artifacts(source_locator),
         max_claims=args.max_claims,
         source=args.source,
+        sample_strategy=args.sample_strategy,
     )
     if not selection.candidates:
         session = Session(
@@ -535,6 +553,7 @@ async def _run_ingest_confidence(
         today=today,
         prepared=prepared,
         max_claims=args.max_claims,
+        sample_strategy=args.sample_strategy,
     )
     claim_gate, claim_findings, transcript = await _confidence_claim_support_gate(
         args, paths, store, now, source_locator, deterministic
