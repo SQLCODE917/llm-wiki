@@ -22,7 +22,8 @@ from llmwiki.domain.source_claim_quality import (
 from llmwiki.domain.source_claim_quality import (
     claim_role_tags as _claim_role_tags,
 )
-from llmwiki.domain.source_claims import source_claim_groups, source_claims, source_summary_plan
+from llmwiki.domain.source_claims import source_claim_groups, source_claims
+from llmwiki.domain.source_summary_planning import source_summary_plan
 
 
 def test_source_claim_quality_fixture_accuracy() -> None:

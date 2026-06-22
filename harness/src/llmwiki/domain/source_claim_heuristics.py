@@ -39,9 +39,22 @@ def is_source_furniture(lowered: str) -> bool:
     if any(re.search(pattern, lowered) for pattern in furniture_patterns):
         return True
     statement_tokens = tokens(lowered)
-    if len(statement_tokens) <= 14 and " by " in lowered:
+    if len(statement_tokens) <= 14 and _is_short_byline_furniture(lowered):
         return True
     return len(statement_tokens) <= 8 and not lowered.endswith((".", "?", "!"))
+
+
+def _is_short_byline_furniture(lowered: str) -> bool:
+    return bool(
+        re.search(
+            r"^(?:by|written by|edited by|translated by|illustrated by|authored by)\b",
+            lowered,
+        )
+        or re.search(
+            r"\b(?:written|edited|translated|illustrated|authored|published)\s+by\b",
+            lowered,
+        )
+    )
 
 
 def is_code_fragment(statement: str) -> bool:

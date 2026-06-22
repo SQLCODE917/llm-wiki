@@ -236,13 +236,13 @@ def eligible_claims(claims: list[SourceClaim] | tuple[SourceClaim, ...]) -> list
 def eligible_or_source_fallback_claims(
     claims: list[SourceClaim] | tuple[SourceClaim, ...],
     source_has_eligible_claims: bool,
-    source_has_central_eligible_claims: bool,
+    prefer_central_eligible_claims: bool,
 ) -> list[SourceClaim]:
     eligible = eligible_claims(claims)
     central = [claim for claim in eligible if is_central_source_summary_claim(claim)]
     if central:
         return central
-    if source_has_central_eligible_claims:
+    if prefer_central_eligible_claims:
         return []
     if eligible:
         return eligible

@@ -28,7 +28,7 @@ from llmwiki.domain.page_body_contracts import (
 )
 from llmwiki.domain.pages import PageMetadata, WikiStructure, slugify
 from llmwiki.domain.planning_analysis import unit_match
-from llmwiki.domain.source_claims import source_summary_plan
+from llmwiki.domain.source_summary_planning import source_summary_plan
 
 
 def planned_writes(
