@@ -74,6 +74,12 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `EvidenceRegistry` | `evidence_registry` |
 | `EvidenceBank` | `evidence_bank` |
 | `LocatorMatch` | `locator_match` |
+| `TechnicalAtom` | `technical_atom` |
+| `TechnicalAtomKind` | `technical_atom_kind` |
+| `TechnicalAtomCatalog` | `technical_atom_catalog` |
+| `TechnicalDetailsSection` | `technical_details_section` |
+| `AnswerEvaluationCase` | `answer_evaluation_case` |
+| `AnswerEvaluationReport` | `answer_evaluation_report` |
 | `ClaimSupportCandidate` | `claim_support_candidate` |
 | `ClaimSupportVerdict` | `claim_support_verdict` |
 | `ClaimSupportFinding` | `claim_support_finding` |
@@ -159,6 +165,12 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | EvidenceLocatorBuilder | Exists | `llmwiki.domain.evidence_locator_builder`; domain service that creates `EvidenceLocatorIndex` |
 | LocatorArtifactFingerprint | Exists | `llmwiki.domain.evidence_locator_index`; generated locator artifact fingerprint |
 | LocatorStabilityGate | Exists | `llmwiki.runtime.ingest_confidence_locator_gate`; confidence gate for locator index drift |
+| TechnicalAtom | Exists | `llmwiki.domain.technical_atoms`; one preserved bounded technical item from a source |
+| TechnicalAtomKind | Exists | `llmwiki.domain.technical_atoms`; kind label for a preserved technical item |
+| TechnicalAtomCatalog | Exists | `llmwiki.domain.technical_atoms`; rebuildable source-scoped collection of technical atoms |
+| TechnicalDetailsSection | Exists | `llmwiki.domain.technical_atoms`; source page section rendered from `TechnicalAtomCatalog` |
+| AnswerEvaluationCase | Exists | `llmwiki.domain.answer_evaluation`; fixture for one normal `query` answer check |
+| AnswerEvaluationReport | Exists | `llmwiki.domain.answer_evaluation`; deterministic report for one checked answer |
 | SourceExcerpt | Existing concept | `ClaimCandidate.evidence_excerpt` in `llmwiki.domain.grounding` |
 | LintFinding | Exists | `llmwiki.domain.objects`; citation/semantic findings remain separate concepts |
 | SalienceSignal | Existing concept | `SalienceEntry` inputs in `llmwiki.domain.salience` |
@@ -203,6 +215,7 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | candidate JSON | `wiki/wiki-candidates.json` from `CandidateBacklog.to_json_text` | `CandidateBacklog` |
 | chat SQLite rows | `llmwiki.store.chat_store` | `ChatSession` concept |
 | accepted source summary draft JSON | `cache/page-plans/*/accepted-source-summaries/*.json` | `SourceSummaryDraft` |
+| technical atom catalog JSON | `cache/page-plans/*/technical-atoms.json` | `TechnicalAtomCatalog` |
 
 ### View Models
 

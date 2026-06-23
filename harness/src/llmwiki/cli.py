@@ -496,6 +496,7 @@ async def _run_claim_support(
         store.source_inventory(),
         _evidence_registries(store, source_locator),
         store.read_source_summary_draft_artifacts(source_locator),
+        store.read_technical_atom_catalog_artifacts(source_locator),
         max_claims=args.max_claims,
         source=args.source,
         sample_strategy=args.sample_strategy,
@@ -726,6 +727,7 @@ def _curator_report(
         strict_evidence=strict_evidence,
         claim_support_summary=_claim_support_summary(store),
         semantic_lint_summary=_semantic_lint_summary(store),
+        technical_atom_summary=_technical_atom_summary(store),
         route_plan_status=_route_plan_status(paths),
         graph_status=graph_status(
             build_wiki_graph(page_texts, generated_date=today or "status-check"),
@@ -735,6 +737,24 @@ def _curator_report(
         ingest_confidence_summary=_ingest_confidence_summary(store),
     )
     return status.render()
+
+
+def _technical_atom_summary(store: WikiStore) -> str:
+    catalogs = store.read_technical_atom_catalog_artifacts()
+    if not catalogs:
+        return ""
+    total = sum(len(catalog.technical_atoms) for catalog in catalogs)
+    counts: dict[str, int] = {}
+    for catalog in catalogs:
+        for kind, count in catalog.counts_by_kind():
+            counts[kind] = counts.get(kind, 0) + count
+    rendered_counts = "\n".join(f"- {kind}: {counts[kind]}" for kind in sorted(counts))
+    return (
+        f"Catalogs: {len(catalogs)}\n"
+        f"Technical atoms: {total}\n"
+        "Atoms by kind:\n"
+        f"{rendered_counts or '- None.'}"
+    )
 
 
 def _route_plan_status(paths: WikiPaths) -> RoutePlanStatus:

@@ -1,5 +1,5 @@
 {
-  "artifact_version": 1,
+  "artifact_version": 2,
   "page_body_contract_digest": "8033a17e192568b3728f358b9609cecd4d8ad5dd0efb99c0d145b3ea967e7e58",
   "profile_ids": [],
   "schema_id": "local-llm-wiki",

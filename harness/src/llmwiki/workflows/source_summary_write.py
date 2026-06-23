@@ -22,6 +22,7 @@ from llmwiki.domain.page_body_contracts import (
 )
 from llmwiki.domain.source_summary_coverage import infer_source_summary_coverage
 from llmwiki.domain.source_summary_rescue import repair_source_summary_draft
+from llmwiki.domain.technical_atoms import render_technical_details_section
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
 
@@ -84,17 +85,16 @@ def source_summary_page_body(
         source_text=source_text,
     )
     if findings:
-        raise WikiStoreError(
-            render_page_body_findings(findings, body_contract)
-        )
-    body = render_source_summary_draft(draft)
+        raise WikiStoreError(render_page_body_findings(findings, body_contract))
+    summary_body = render_source_summary_draft(draft)
     body_findings = validate_page_body(
-        body,
+        summary_body,
         body_contract,
         source_text=source_text,
     )
     if body_findings:
         raise WikiStoreError(render_page_body_findings(body_findings, body_contract))
+    body = _append_technical_details(store, planned_write, summary_body)
     return body, draft
 
 
@@ -120,9 +120,7 @@ def _fill_empty_claim_coverage(
         return draft
     if any(bullet.covered_source_claims for bullet in draft.claim_bullets):
         return draft
-    claim_groups = _claim_groups_by_bullet(
-        len(draft.claim_bullets), plan.selected_source_claims
-    )
+    claim_groups = _claim_groups_by_bullet(len(draft.claim_bullets), plan.selected_source_claims)
     return SourceSummaryDraft(
         source_record_text=draft.source_record_text,
         claim_bullets=tuple(
@@ -152,6 +150,21 @@ def page_body_contract_source_text(store: WikiStore, planned_write: PlannedPageW
     if raw_source.source_format != "markdown":
         return ""
     return store.read_source(raw_source.source_locator)
+
+
+def _append_technical_details(
+    store: WikiStore, planned_write: PlannedPageWrite, summary_body: str
+) -> str:
+    if not planned_write.evidence:
+        return summary_body
+    raw_source = planned_write.evidence[0].raw_source
+    catalog = store.read_technical_atom_catalog_artifact(raw_source.source_locator)
+    if catalog is None:
+        return summary_body
+    section = render_technical_details_section(catalog, planned_write.page_metadata.page_id)
+    if not section:
+        return summary_body
+    return f"{summary_body}\n\n{section}"
 
 
 def write_source_summary_draft_artifact(

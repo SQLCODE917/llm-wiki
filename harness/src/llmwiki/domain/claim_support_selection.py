@@ -22,6 +22,9 @@ from llmwiki.domain.claim_support_sampling import (
     claim_support_sample_coverage,
     sample_claim_support_candidates,
 )
+from llmwiki.domain.claim_support_technical_atoms import (
+    technical_atom_claim_support_candidates,
+)
 from llmwiki.domain.evidence_locator_index import canonicalize_evidence_text
 from llmwiki.domain.evidence_locators import (
     locator_match_for_citation,
@@ -31,6 +34,7 @@ from llmwiki.domain.evidence_registry import EvidenceRegistry
 from llmwiki.domain.pages import PageError, parse_page
 from llmwiki.domain.source_summary import SourceSummaryDraftArtifact
 from llmwiki.domain.system_pages import SYSTEM_PAGES
+from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
 
 
 def select_claim_support_candidates(
@@ -38,6 +42,7 @@ def select_claim_support_candidates(
     inventory: SourceInventory,
     registries: Sequence[EvidenceRegistry],
     source_summary_artifacts: Sequence[SourceSummaryDraftArtifact],
+    technical_atom_catalogs: Sequence[TechnicalAtomCatalog] = (),
     *,
     max_claims: int = DEFAULT_MAX_CLAIM_SUPPORT_CLAIMS,
     source: str = "",
@@ -53,8 +58,11 @@ def select_claim_support_candidates(
         page_texts, inventory, source_summary_artifacts, index, source_path
     )
     summary_keys = {(candidate.page_id, candidate.claim_text) for candidate in summary_candidates}
+    atom_candidates = technical_atom_claim_support_candidates(
+        page_texts, technical_atom_catalogs, index, source_path
+    )
     prose_candidates = _prose_candidates(page_texts, inventory, index, source_path, summary_keys)
-    discovered = (*summary_candidates, *prose_candidates)
+    discovered = (*summary_candidates, *atom_candidates, *prose_candidates)
     selected: list[ClaimSupportCandidate] = []
     blocked: list[ClaimSupportCandidate] = []
     audited: list[ClaimSupportCandidate] = []
@@ -134,9 +142,7 @@ def _source_summary_candidates(
                     citation_texts=citations,
                     source_claim_ids=tuple(bullet.covered_source_claims),
                     evidence_ids=evidence_ids,
-                    evidence_excerpts=index.excerpts_for_claim(
-                        evidence_ids, claim_text, limit=5
-                    ),
+                    evidence_excerpts=index.excerpts_for_claim(evidence_ids, claim_text, limit=5),
                     candidate_kind="source-summary",
                     risk_tags=claim_support_risk_tags(claim_text),
                 )
@@ -178,9 +184,7 @@ def _prose_candidates(
                     citation_texts=citations,
                     source_claim_ids=(),
                     evidence_ids=evidence_ids,
-                    evidence_excerpts=index.excerpts_for_claim(
-                        evidence_ids, claim_text, limit=5
-                    ),
+                    evidence_excerpts=index.excerpts_for_claim(evidence_ids, claim_text, limit=5),
                     risk_tags=claim_support_risk_tags(claim_text),
                 )
             )

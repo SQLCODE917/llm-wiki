@@ -223,7 +223,7 @@ def test_ingest_confidence_uses_persisted_page_plan_without_fingerprint(
         raise AssertionError("persisted page plan should be reused")
 
     monkeypatch.setattr(
-        "llmwiki.runtime.ingest_confidence_artifacts._build_current_page_plan",
+        "llmwiki.runtime.ingest_confidence_artifacts.build_current_page_plan",
         fail_rebuild,
     )
 

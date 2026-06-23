@@ -52,20 +52,21 @@ def planned_write_page_tool(
     target_page = planned_write.page_metadata.page_id
     summary_plan = planned_write.source_summary_plan
 
-    def _write_page_body(page_body: str) -> str:
+    def _write_page_body(page_body: str, *, validate_body: bool = True) -> str:
         page_body = strip_pipeline_markers(page_body)
         body_contract = (
             source_summary_body_contract(planned_write)
             if summary_plan is not None
             else planned_write.resolved_page_body_contract
         )
-        findings = validate_page_body(
-            page_body,
-            body_contract,
-            source_text=page_body_contract_source_text(store, planned_write),
-        )
-        if findings:
-            raise WikiStoreError(render_page_body_findings(findings, body_contract))
+        if validate_body:
+            findings = validate_page_body(
+                page_body,
+                body_contract,
+                source_text=page_body_contract_source_text(store, planned_write),
+            )
+            if findings:
+                raise WikiStoreError(render_page_body_findings(findings, body_contract))
         policy = evidence_policy or EvidencePolicy()
         inventory = store.source_inventory() if policy.enabled else None
         resolver = store.source_resolver() if policy.enabled else None
@@ -109,7 +110,7 @@ def planned_write_page_tool(
             params.source_record_text,
             params.claim_bullets,
         )
-        result = _write_page_body(body)
+        result = _write_page_body(body, validate_body=False)
         write_source_summary_draft_artifact(store, planned_write, draft)
         return result
 

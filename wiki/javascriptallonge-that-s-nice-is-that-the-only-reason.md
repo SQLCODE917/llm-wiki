@@ -1,18 +1,32 @@
 ---
 page_id: javascriptallonge-that-s-nice-is-that-the-only-reason
 page_kind: source
-summary: Summary of the section 'that's nice. is that the only reason?' from JavaScript Allongé.
+summary: Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions.
 sources: raw/javascriptallonge.pdf p.9-9
-updated: 2026-06-20
+updated: 2026-06-22
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This section discusses how ECMAScript 2015 introduces new programming techniques that align with the core ideas of JavaScript Allongé, focusing on composing small, flexible functions and entities.
+Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions.
 
 ## Key supported claims
 
-- It would have continued to say much the same things, only with new syntax (raw/javascriptallonge.pdf p.9-9).
-- But the common thread that runs through all these things is that since they are all simple objects and simple functions, we can use the same set of 'programming with functions' techniques to build programs by composing small, flexible, and decoupled entities (raw/javascriptallonge.pdf p.9-9).
-- We just call some of those functions constructors, others decorators, others functional mixins, and yet others, policies (raw/javascriptallonge.pdf p.9-9).
+- JavaScript Allongé was written not only to teach JavaScript but to describe programming ideas like composition and working with small entities (raw/javascriptallonge.pdf p.9-9).
+- ECMAScript 2015 introduces features that align with Allongé's focus on composing entities and working with functions (raw/javascriptallonge.pdf p.9-9).
+- The 'six' edition introduces classes, mixins, private properties with symbols, iterators, and generators, all rooted in functional programming techniques (raw/javascriptallonge.pdf p.9-9).
+
+## Technical details
+
+### `technical-atom-5b54630801e57e4b` exception
+
+Citation: (raw/javascriptallonge.pdf p.9)
+
+It would have continued to say much the same things, only with new syntax.
+
+### `technical-atom-44a8a0d38c755903` requirement
+
+Citation: (raw/javascriptallonge.pdf p.9)
+
+Introducing so many new ideas did require a major rethink of the way the book was organized.

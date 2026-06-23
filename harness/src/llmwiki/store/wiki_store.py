@@ -51,6 +51,8 @@ from llmwiki.domain.source_summary import (
     SourceSummaryDraftArtifact,
     source_summary_draft_from_json,
 )
+from llmwiki.domain.technical_atom_io import technical_atom_catalog_from_json
+from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
 from llmwiki.store.source_resolver import FileSourceTextResolver
 
 _RESERVED_PAGE_IDS = frozenset({"index", "log"})
@@ -357,6 +359,34 @@ class WikiStore:
         if not locator_path.is_file():
             return None
         return evidence_locator_index_from_json(locator_path.read_text(encoding="utf-8"))
+
+    def write_technical_atom_catalog_artifact(
+        self, source_locator: str, technical_atom_catalog_json: str
+    ) -> Path:
+        artifact_dir = self.page_plan_artifact_dir(source_locator)
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        atom_path = artifact_dir / "technical-atoms.json"
+        atom_path.write_text(technical_atom_catalog_json, encoding="utf-8")
+        return atom_path
+
+    def read_technical_atom_catalog_artifact(
+        self, source_locator: str
+    ) -> TechnicalAtomCatalog | None:
+        atom_path = self.page_plan_artifact_dir(source_locator) / "technical-atoms.json"
+        if not atom_path.is_file():
+            return None
+        return technical_atom_catalog_from_json(atom_path.read_text(encoding="utf-8"))
+
+    def read_technical_atom_catalog_artifacts(
+        self, source_locator: str | None = None
+    ) -> tuple[TechnicalAtomCatalog, ...]:
+        source_locators = (source_locator,) if source_locator else self.list_sources()
+        catalogs: list[TechnicalAtomCatalog] = []
+        for locator in source_locators:
+            catalog = self.read_technical_atom_catalog_artifact(locator)
+            if catalog is not None:
+                catalogs.append(catalog)
+        return tuple(catalogs)
 
     def write_source_summary_draft_artifact(
         self,

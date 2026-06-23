@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "It would have continued to say much the same things, only with new syntax (raw/javascriptallonge.pdf p.9-9).",
+      "bullet_text": "JavaScript Allongé was written not only to teach JavaScript but to describe programming ideas like composition and working with small entities (raw/javascriptallonge.pdf p.9-9).",
       "covered_source_claims": [
         "source-claim-unit-0007-0002"
       ]
     },
     {
-      "bullet_text": "But the common thread that runs through all these things is that since they are all simple objects and simple functions, we can use the same set of 'programming with functions' techniques to build programs by composing small, flexible, and decoupled entities (raw/javascriptallonge.pdf p.9-9).",
+      "bullet_text": "ECMAScript 2015 introduces features that align with Allongé's focus on composing entities and working with functions (raw/javascriptallonge.pdf p.9-9).",
       "covered_source_claims": [
         "source-claim-unit-0007-0013"
       ]
     },
     {
-      "bullet_text": "We just call some of those functions constructors, others decorators, others functional mixins, and yet others, policies (raw/javascriptallonge.pdf p.9-9).",
+      "bullet_text": "The 'six' edition introduces classes, mixins, private properties with symbols, iterators, and generators, all rooted in functional programming techniques (raw/javascriptallonge.pdf p.9-9).",
       "covered_source_claims": [
         "source-claim-unit-0007-0014"
       ]
     }
   ],
-  "source_record_text": "This section discusses how ECMAScript 2015 introduces new programming techniques that align with the core ideas of JavaScript Allongé, focusing on composing small, flexible functions and entities."
+  "source_record_text": "Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions."
 }

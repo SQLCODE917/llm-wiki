@@ -79,6 +79,8 @@ from llmwiki.domain.system_pages import (
     ORPHAN_EXEMPT_PAGES,
     SEMANTIC_LINT_PAGE,
 )
+from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
+from llmwiki.domain.technical_atom_io import technical_atom_catalog_to_json
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
 from llmwiki.pdf.pipeline import (
@@ -559,6 +561,16 @@ class Session:
         )
         registry = build_evidence_registry(page_plan, source_texts)
         self.store.write_evidence_registry_artifact(source_locator, registry_to_json(registry))
+        catalog = build_technical_atom_catalog(
+            source_locator=source_locator,
+            page_plan=page_plan,
+            evidence_registry=registry,
+            artifact_fingerprint=page_plan.plan_id,
+        )
+        self.store.write_technical_atom_catalog_artifact(
+            source_locator,
+            technical_atom_catalog_to_json(catalog),
+        )
         return report
 
     def _recover_pending_pdf_chunks(
@@ -838,9 +850,7 @@ class Session:
                 batch_index=batch_index,
                 batch_count=len(batches),
             )
-            model_report, batch_transcript = await self._run(
-                workflow, message, "claim-support"
-            )
+            model_report, batch_transcript = await self._run(workflow, message, "claim-support")
             model_reports.append(model_report)
             transcript = transcript or batch_transcript
         return self._claim_support_audit_report(

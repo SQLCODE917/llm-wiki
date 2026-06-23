@@ -1,21 +1,15 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Café Allongé is a drink midway between Espresso and Americano in strength (raw/javascriptallonge.pdf p.6-6).",
+      "bullet_text": "Café Allongé is a drink midway between Espresso and Americano in strength, (raw/javascriptallonge.pdf p.6-6).",
       "covered_source_claims": [
         "source-claim-unit-0004-0006"
       ]
     },
     {
-      "bullet_text": "One method involves adding hot water to a double or quadruple Espresso Ristretto (raw/javascriptallonge.pdf p.6-6).",
+      "bullet_text": "One method involves adding hot water to a double or quadruple Espresso Ristretto, releasing more complex flavours in the mouth, (raw/javascriptallonge.pdf p.6-6).",
       "covered_source_claims": [
-        "source-claim-unit-0004-0006"
-      ]
-    },
-    {
-      "bullet_text": "Another method is pulling an extra long double shot of Espresso (raw/javascriptallonge.pdf p.6-6).",
-      "covered_source_claims": [
-        "source-claim-unit-0004-0006"
+        "source-claim-unit-0004-0004"
       ]
     }
   ],

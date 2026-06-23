@@ -3485,3 +3485,1154 @@ Risk tags:
 ## Caveat
 
 This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest | antikythera-mechanism.md
+The Antikythera Mechanism source page was enriched with information from the raw source. The page now includes a source record and four key supported claims, paraphrased to avoid copying consecutive source words. No new entity or concept pages were created.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-221927
+Source: raw/javascriptallonge.pdf
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 2
+Gates: 10
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/c98ab3e62b35ab0f` (source hash matches; fingerprint c98ab3e62b35ab0f)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (parsed persisted PagePlan artifact; fingerprint 3dae6ba980f86ba3)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint differs; fingerprint 3dae6ba980f86ba3)
+- evidence-locators: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (fingerprint differs; fingerprint 3dae6ba980f86ba3)
+- technical-atoms: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/technical-atoms.json` (fingerprint differs; fingerprint 3dae6ba980f86ba3)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2922
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Technical atoms: 972
+- code: 704
+- exception: 62
+- formula: 33
+- procedure: 69
+- requirement: 46
+- worked-example: 58
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-ee23e612fae5dfa8
+Locators: 2910
+Stable locators: 2910
+Locator drift: 6
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: fail
+- Findings: validation-finding-6a8f1ba3e0c82666
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-e154ebf2547eb360
+Claim candidates discovered: 1529
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 1528
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/1529
+Page coverage: 1/187
+Source-bucket coverage: 1/3
+Candidate kinds:
+- prose-line: 0/59
+- source-summary: 1/501
+- technical-atom: 0/969
+Risk tags:
+- limitation: 1/65
+- mechanism: 0/3
+- negative-evidence: 1/132
+- procedure: 0/10
+- quantitative: 0/590
+- requirement: 0/58
+- unclassified: 0/735
+
+## Findings
+
+- WARNING locator: Locator ids drifted. Drift count: 6. fingerprint=7aa2ebadd6fd7c4d
+- WARNING graph: Graph export is stale: wiki/wiki-graph.json differs from the current wiki graph.
+- INFO claim-support javascriptallonge-ah-i-d-like-to-have-an-argument-please-22: supported: The evidence excerpts support the claim that functions without arguments have been discussed, and that arguments have not been formally defined yet. The excerpts show that the text acknowledges functions without arguments have been looked at and that arguments are not yet explained, which aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-ah-i-d-like-to-have-an-argument-please-22-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | Sword World RPG - Complete Edition.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222448
+Source: raw/Sword World RPG - Complete Edition.pdf
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 1
+Gates: 10
+
+## Artifact Reuse
+
+- pdf-extraction: reuse `/home/serdm/gits/llm-wiki/harness/cache/e5870dca757ef182` (source hash matches; fingerprint e5870dca757ef182)
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/page-plan.json` (parsed persisted PagePlan artifact; fingerprint 3cd7db7a3811ef0e)
+- evidence-registry: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-registry.json` (fingerprint differs; fingerprint 3cd7db7a3811ef0e)
+- evidence-locators: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-locators.json` (fingerprint differs; fingerprint 3cd7db7a3811ef0e)
+- technical-atoms: missing `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/technical-atoms.json` (artifact is missing; fingerprint 3cd7db7a3811ef0e)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 70
+Evidence records: 7913
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Technical atoms: 552
+- exception: 53
+- formula: 293
+- procedure: 20
+- requirement: 31
+- table-row: 142
+- worked-example: 13
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Locators: 7425
+Stable locators: 7425
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: fail
+- Findings: validation-finding-f0671e66c38c7836
+
+### index
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: validation-finding-93330066381aa14c
+Claim candidates discovered: 784
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 783
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/784
+Page coverage: 1/69
+Source-bucket coverage: 1/18
+Candidate kinds:
+- prose-line: 0/2
+- source-summary: 1/230
+- technical-atom: 0/552
+Risk tags:
+- limitation: 0/68
+- mechanism: 1/110
+- negative-evidence: 0/58
+- procedure: 1/35
+- quantitative: 1/403
+- requirement: 1/80
+- unclassified: 0/221
+
+## Findings
+
+- WARNING graph: Graph export is stale: wiki/wiki-graph.json differs from the current wiki graph.
+- INFO claim-support sword-world-rpg-complete-edition-13-2-7-animals-part-2: supported: The evidence excerpts fully support the claim. Excerpt evidence-672d9da4f629f13f directly states that anyone hit by a giant ant soldier will have their wound burned by the acid and must make a life force resistance roll, with failure resulting in damage from a strike power 10 strike roll plus bonus damage 4. Excerpt evidence-e4d3a73136741536 confirms that giant ant soldiers are soldier ants raised on a special diet to protect the giant ant queen. Excerpt evidence-5e38c4a31c149e9d provides the relevant stats including the toxic poison with strike power 10 and bonus damage 4. Excerpt evidence-86e81f7cfb125b2b confirms that the soldier's fangs secrete a highly toxic acid. The claim is fully substantiated by the evidence. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-13-2-7-animals-part-2-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222509
+Source: raw/antikythera-mechanism.md
+Confidence status: passed with warnings
+Blockers: 0
+Warnings: 1
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (parsed persisted PagePlan artifact; fingerprint 4e6f6140b266a226)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (parsed persisted EvidenceRegistry artifact with matching source hash; fingerprint 4e6f6140b266a226)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (parsed persisted EvidenceLocatorIndex artifact with matching source hash; fingerprint 4e6f6140b266a226)
+- technical-atoms: rebuild `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/technical-atoms.json` (fingerprint differs; fingerprint 4e6f6140b266a226)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Technical atoms: 2
+- exception: 1
+- procedure: 1
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: fail
+- Findings: validation-finding-5dc3dbf0f640e3d2
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-3721ce0d562ef063
+Claim candidates discovered: 6
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 5
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/6
+Page coverage: 1/1
+Source-bucket coverage: 1/1
+Candidate kinds:
+- source-summary: 1/4
+- technical-atom: 0/2
+Risk tags:
+- negative-evidence: 0/2
+- quantitative: 1/1
+- unclassified: 0/3
+
+## Findings
+
+- WARNING graph: Graph export is stale: wiki/wiki-graph.json differs from the current wiki graph.
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt from evidence-5bf7d04cc44c81f0 explicitly states that the mechanism was retrieved from the sea in 1901 from a shipwreck off the coast of the Greek island of Antikythera and is dated to roughly 150–100 BC, which directly supports the claim. fingerprint=claim-support-summary-antikythera-mechanism-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] graph | wiki graph
+Graph export: current
+Nodes: 262
+Edges: 261
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222606
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+- technical-atoms: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/technical-atoms.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Technical atoms: 2
+- exception: 1
+- procedure: 1
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-878c1d9c9f43088d
+Claim candidates discovered: 6
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 5
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/6
+Page coverage: 1/1
+Source-bucket coverage: 1/1
+Candidate kinds:
+- source-summary: 1/4
+- technical-atom: 0/2
+Risk tags:
+- negative-evidence: 0/2
+- quantitative: 1/1
+- unclassified: 0/3
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt from evidence-5bf7d04cc44c81f0 directly supports the claim that the Antikythera mechanism was retrieved from a shipwreck off the coast of the Greek island of Antikythera and is dated to roughly 150–100 BC. The other excerpts provide additional context about the mechanism's nature and function but do not contradict this claim. fingerprint=claim-support-summary-antikythera-mechanism-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | Sword World RPG - Complete Edition.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222632
+Source: raw/Sword World RPG - Complete Edition.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/page-plan.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-registry.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-locators.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+- technical-atoms: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/technical-atoms.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 70
+Evidence records: 7913
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Technical atoms: 552
+- exception: 53
+- formula: 293
+- procedure: 20
+- requirement: 31
+- table-row: 142
+- worked-example: 13
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Locators: 7425
+Stable locators: 7425
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: validation-finding-644a1def84f4dd11
+Claim candidates discovered: 784
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 783
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/784
+Page coverage: 1/69
+Source-bucket coverage: 1/18
+Candidate kinds:
+- prose-line: 0/2
+- source-summary: 1/230
+- technical-atom: 0/552
+Risk tags:
+- limitation: 0/68
+- mechanism: 1/110
+- negative-evidence: 0/58
+- procedure: 1/35
+- quantitative: 1/403
+- requirement: 1/80
+- unclassified: 0/221
+
+## Findings
+
+- INFO claim-support sword-world-rpg-complete-edition-13-2-7-animals-part-2: supported: The evidence excerpts fully support the claim. Evidence-672d9da4f629f13f directly states the damage mechanics, including the life force resistance roll and the strike power 10 strike roll plus bonus damage 4. Evidence-e4d3a73136741536 confirms the special diet and protective role of giant ant soldiers. Evidence-5e38c4a31c149e9d provides the statistics including the poison details (toxicity score 10, strike power 10, bonus damage 4). Evidence-86e81f7cfb125b2b confirms the toxic acid secretion. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-13-2-7-animals-part-2-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222650
+Source: raw/javascriptallonge.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+- technical-atoms: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/technical-atoms.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2922
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Technical atoms: 972
+- code: 704
+- exception: 62
+- formula: 33
+- procedure: 69
+- requirement: 46
+- worked-example: 58
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Locators: 2910
+Stable locators: 2910
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-9a65c093213f7a62
+Claim candidates discovered: 1529
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 1528
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/1529
+Page coverage: 1/187
+Source-bucket coverage: 1/3
+Candidate kinds:
+- prose-line: 0/59
+- source-summary: 1/501
+- technical-atom: 0/969
+Risk tags:
+- limitation: 1/65
+- mechanism: 0/3
+- negative-evidence: 1/132
+- procedure: 0/10
+- quantitative: 0/590
+- requirement: 0/58
+- unclassified: 0/735
+
+## Findings
+
+- INFO claim-support javascriptallonge-ah-i-d-like-to-have-an-argument-please-22: supported: The evidence excerpts support the claim that functions without arguments have been discussed, and that the concept of an argument has not been formally defined yet. The excerpts show that the text has been looking at functions without arguments and has not explained what an argument is, which aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-ah-i-d-like-to-have-an-argument-please-22-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] query | In Sword World, what happens when a giant ant soldier's acid attack hits?
+When a giant ant soldier's acid attack hits in the Sword World RPG, the target suffers normal damage from the attack, plus an additional effect from the acid. The target must make a life force resistance roll; if they fail this roll, they will suffer extra damage equivalent to a strike power 10 strike roll plus bonus damage 4 (raw/Sword World RPG - Complete Edition.pdf p.199-211).
+
+## [2026-06-22] ingest-confidence | antikythera-mechanism.md
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222940
+Source: raw/antikythera-mechanism.md
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/page-plan.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-registry.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/evidence-locators.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+- technical-atoms: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/antikythera-mechanism-6b8d9991ac96/technical-atoms.json` (fingerprint matches; fingerprint 4e6f6140b266a226)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 1
+Evidence records: 10
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Technical atoms: 2
+- exception: 1
+- procedure: 1
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+Locators: 10
+Stable locators: 10
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/antikythera-mechanism.md
+- Status: pass
+- Findings: validation-finding-878c1d9c9f43088d
+Claim candidates discovered: 6
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 5
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/6
+Page coverage: 1/1
+Source-bucket coverage: 1/1
+Candidate kinds:
+- source-summary: 1/4
+- technical-atom: 0/2
+Risk tags:
+- negative-evidence: 0/2
+- quantitative: 1/1
+- unclassified: 0/3
+
+## Findings
+
+- INFO claim-support antikythera-mechanism: supported: The evidence excerpt from evidence-5bf7d04cc44c81f0 directly supports the claim that the Antikythera mechanism was retrieved from a shipwreck off the coast of the Greek island of Antikythera and is dated to roughly 150–100 BC. The other excerpts provide additional context about the mechanism's nature and function but do not contradict this claim. fingerprint=claim-support-summary-antikythera-mechanism-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | javascriptallonge.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-222959
+Source: raw/javascriptallonge.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/page-plan.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-registry.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/evidence-locators.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+- technical-atoms: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/javascriptallonge-5873116c6496/technical-atoms.json` (fingerprint matches; fingerprint 3dae6ba980f86ba3)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 203
+Evidence records: 2922
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Technical atoms: 972
+- code: 704
+- exception: 62
+- formula: 33
+- procedure: 69
+- requirement: 46
+- worked-example: 58
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+Locators: 2910
+Stable locators: 2910
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/javascriptallonge.pdf
+- Status: pass
+- Findings: validation-finding-c1a141f3c5f10dfd
+Claim candidates discovered: 1529
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 1528
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/1529
+Page coverage: 1/187
+Source-bucket coverage: 1/3
+Candidate kinds:
+- prose-line: 0/59
+- source-summary: 1/501
+- technical-atom: 0/969
+Risk tags:
+- limitation: 1/65
+- mechanism: 0/3
+- negative-evidence: 1/132
+- procedure: 0/10
+- quantitative: 0/590
+- requirement: 0/58
+- unclassified: 0/735
+
+## Findings
+
+- INFO claim-support javascriptallonge-ah-i-d-like-to-have-an-argument-please-22: supported: The evidence excerpts support the claim that functions without arguments have been discussed, and that arguments have not been defined yet. The excerpts show that the text has covered functions without arguments and hasn't explained what an argument is, which aligns with the claim. fingerprint=claim-support-summary-javascriptallonge-ah-i-d-like-to-have-an-argument-please-22-2
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] ingest-confidence | Sword World RPG - Complete Edition.pdf
+# Ingest Confidence Report
+
+## Summary
+
+Run id: 2026-06-22-223001
+Source: raw/Sword World RPG - Complete Edition.pdf
+Confidence status: passed
+Blockers: 0
+Warnings: 0
+Gates: 10
+
+## Artifact Reuse
+
+- page-plan: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/page-plan.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+- evidence-registry: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-registry.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+- evidence-locators: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/evidence-locators.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+- technical-atoms: reuse `/home/serdm/gits/llm-wiki/harness/cache/page-plans/sword-world-rpg-complete-edition-8e67d04d99d8/technical-atoms.json` (fingerprint matches; fingerprint 3cd7db7a3811ef0e)
+
+## Gates
+
+### source-summary-quality
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Selected ineligible claims: 0
+False source uncertainty claims: 0
+Source-framing bullets: 0
+Missing unit coverage: 0
+
+### citation-syntax
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence-registry
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Source texts: 1
+Source ranges: 70
+Evidence records: 7913
+
+### technical-atoms
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Technical atoms: 552
+- exception: 53
+- formula: 293
+- procedure: 20
+- requirement: 31
+- table-row: 142
+- worked-example: 13
+
+### locator-stability
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+Locators: 7425
+Stable locators: 7425
+Locator drift: 0
+Invalid locators: 0
+
+### source-range
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### evidence
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### graph
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### index
+- Kind: deterministic
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: none
+
+### claim-support
+- Kind: model-assisted
+- Scope: raw/Sword World RPG - Complete Edition.pdf
+- Status: pass
+- Findings: validation-finding-f44789d089e82348
+Claim candidates discovered: 784
+Selected for model judgment: 1
+Skipped by deterministic findings: 0
+Skipped by cap: 783
+Verdicts recorded: 1
+Sample strategy: stratified
+Sampled candidates: 1/784
+Page coverage: 1/69
+Source-bucket coverage: 1/18
+Candidate kinds:
+- prose-line: 0/2
+- source-summary: 1/230
+- technical-atom: 0/552
+Risk tags:
+- limitation: 0/68
+- mechanism: 1/110
+- negative-evidence: 0/58
+- procedure: 1/35
+- quantitative: 1/403
+- requirement: 1/80
+- unclassified: 0/221
+
+## Findings
+
+- INFO claim-support sword-world-rpg-complete-edition-13-2-7-animals-part-2: supported: The evidence excerpts fully support the claim. Excerpt evidence-672d9da4f629f13f directly states that anyone hit by a giant ant soldier will have their wound burned by the acid and must make a life force resistance roll, with failure resulting in damage from a strike power 10 strike roll plus bonus damage 4. Excerpt evidence-e4d3a73136741536 confirms that giant ant soldiers are soldier ants raised on a special diet to protect the giant ant queen. Excerpt evidence-5e38c4a31c149e9d provides the attack points and special abilities, including the toxicity score, strike power 10, and bonus damage 4. Excerpt evidence-86e81f7cfb125b2b confirms that the soldier's fangs secrete a highly toxic acid. fingerprint=claim-support-summary-sword-world-rpg-complete-edition-13-2-7-animals-part-2-3
+
+## Caveat
+
+This is a bounded post-ingest confidence report, not proof that every wiki claim is correct.
+
+## [2026-06-22] graph | wiki graph
+Graph export: current
+Nodes: 262
+Edges: 261
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.

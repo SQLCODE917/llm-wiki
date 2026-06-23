@@ -14,6 +14,7 @@ FindingSeverity = Literal["blocker", "warning", "info"]
 FindingCategory = Literal[
     "planning",
     "source-summary",
+    "technical-atoms",
     "citation",
     "evidence",
     "locator",
@@ -35,7 +36,7 @@ class ArtifactFingerprint:
     schema_id: str
     page_body_contract_digest: str
     profile_ids: tuple[str, ...]
-    artifact_version: int = 1
+    artifact_version: int = 2
 
     @classmethod
     def from_schema(

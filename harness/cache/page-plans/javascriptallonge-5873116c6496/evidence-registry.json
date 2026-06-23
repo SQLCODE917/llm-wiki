@@ -43711,96 +43711,6 @@
       "source_range_id": "source-range-javascriptallonge-images"
     },
     {
-      "evidence_id": "evidence-c7a7358a7db583cd",
-      "evidence_identity_id": "evidence-identity-c7a7358a7db583cd",
-      "evidence_kind": "source-claim",
-      "excerpt": "214 http://creativecommons.org/licenses/by-sa/2.0/deed.en",
-      "excerpt_digest": "cbacf8eba5a85a14f3b149ccd26da66c9c0688741f23b8a896670ed090e5c962",
-      "line_range": [
-        1,
-        5221
-      ],
-      "source_claim_id": "source-claim-unit-0207-0121",
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf",
-      "source_range_id": "source-range-javascriptallonge-images"
-    },
-    {
-      "evidence_id": "evidence-8930fcc0bccc1114",
-      "evidence_identity_id": "evidence-identity-8930fcc0bccc1114",
-      "evidence_kind": "source-claim",
-      "excerpt": "216 http://creativecommons.org/licenses/by-sa/2.0/deed.en",
-      "excerpt_digest": "81668e08924fd5bf87cb02d5f711e487f5f0d1d848d8f234f99bff7c708eb95b",
-      "line_range": [
-        1,
-        5221
-      ],
-      "source_claim_id": "source-claim-unit-0207-0122",
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf",
-      "source_range_id": "source-range-javascriptallonge-images"
-    },
-    {
-      "evidence_id": "evidence-13b85a715d93d6db",
-      "evidence_identity_id": "evidence-identity-13b85a715d93d6db",
-      "evidence_kind": "source-claim",
-      "excerpt": "218 http://creativecommons.org/licenses/by/2.0/deed.en",
-      "excerpt_digest": "5158163ad900569c5d481c1de46170fce0d61767e46c7847de6d5b9124ccd506",
-      "line_range": [
-        1,
-        5221
-      ],
-      "source_claim_id": "source-claim-unit-0207-0123",
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf",
-      "source_range_id": "source-range-javascriptallonge-images"
-    },
-    {
-      "evidence_id": "evidence-db5e372f58d13e2a",
-      "evidence_identity_id": "evidence-identity-db5e372f58d13e2a",
-      "evidence_kind": "source-claim",
-      "excerpt": "217 https://www.flickr.com/photos/peddhapati/11671457605",
-      "excerpt_digest": "1e91e0f25eb1c5ce00b0e825c4c915f36478475d60bc7bf0509b7a90952db6f8",
-      "line_range": [
-        1,
-        5221
-      ],
-      "source_claim_id": "source-claim-unit-0207-0124",
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf",
-      "source_range_id": "source-range-javascriptallonge-images"
-    },
-    {
-      "evidence_id": "evidence-6e18775348aa4963",
-      "evidence_identity_id": "evidence-identity-6e18775348aa4963",
-      "evidence_kind": "source-claim",
-      "excerpt": "219 https://www.flickr.com/photos/mjaysplanet/8416343475",
-      "excerpt_digest": "e2af0531f71326adbafef2f00d71864b1d401e5816500982d8e5f7a8a60675ff",
-      "line_range": [
-        1,
-        5221
-      ],
-      "source_claim_id": "source-claim-unit-0207-0125",
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf",
-      "source_range_id": "source-range-javascriptallonge-images"
-    },
-    {
-      "evidence_id": "evidence-fc75d954c2bbd6bd",
-      "evidence_identity_id": "evidence-identity-fc75d954c2bbd6bd",
-      "evidence_kind": "source-claim",
-      "excerpt": "220 http://creativecommons.org/licenses/by-sa/2.0/deed.en",
-      "excerpt_digest": "e0e8492c084e566aa2dabf3a7c14a121042572a199de22dea7ccfae36cbc2f13",
-      "line_range": [
-        1,
-        5221
-      ],
-      "source_claim_id": "source-claim-unit-0207-0126",
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf",
-      "source_range_id": "source-range-javascriptallonge-images"
-    },
-    {
       "evidence_id": "evidence-fd45010ae316c93b",
       "evidence_identity_id": "evidence-identity-fd45010ae316c93b",
       "evidence_kind": "source-claim",
@@ -43921,7 +43831,7 @@
       "source_range_id": "source-range-javascriptallonge-contact"
     }
   ],
-  "registry_id": "evidence-registry-674fe4110ec17d34",
+  "registry_id": "evidence-registry-3aa34e967e59ba6d",
   "source_ranges": [
     {
       "heading_path": "Reg 'raganwald' Braithwaite",

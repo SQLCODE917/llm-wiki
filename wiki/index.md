@@ -1,12 +1,12 @@
 # Index
 
 ## Sources
-- [[antikythera-mechanism]] — Source summarizing the Antikythera Mechanism, an ancient Greek analog computer.
+- [[antikythera-mechanism]] — Summary of the Antikythera Mechanism, an ancient Greek analog computer.
 - [[javascriptallonge]] — Hub page for JavaScript Allongé, the 'Six' Edition.
 - [[javascriptallonge-a-balanced-statement-about-combinators]] — Summary of the chapter on combinators from 'JavaScript Allongé'.
 - [[javascriptallonge-a-few-utilities]] — Summary of the 'a few utilities' section from 'JavaScript Allongé'.
 - [[javascriptallonge-a-history-lesson]] — A history lesson on variadic functions and argument gathering in JavaScript, from javascriptallonge.pdf p.90-91.
-- [[javascriptallonge-a-pull-of-the-lever-prefaces]] — Chapter on prefacing techniques in Café Molinari's work.
+- [[javascriptallonge-a-pull-of-the-lever-prefaces]] — Prefaces to the JavaScript Allongé book, discussing the analogy of coffee preparation methods to programming concepts.
 - [[javascriptallonge-a-pull-of-the-lever-prefaces-2]] — Summary of the prefaces section from JavaScript Allongé, covering coffee preparation methods.
 - [[javascriptallonge-a-quick-summary-of-functions-and-bodies]] — Summary of chapter 'a quick summary of functions and bodies' from 'JavaScript Allongé'.
 - [[javascriptallonge-a-return-to-backward-thinking]] — Chapter on backward thinking in JavaScript allonge.
@@ -62,7 +62,7 @@
 - [[javascriptallonge-flipping-methods]] — Summary of the flipping methods section from javascriptallonge.pdf
 - [[javascriptallonge-floating]] — Chapter on floating-point numbers in JavaScript
 - [[javascriptallonge-folding]] — Chapter on folding in JavaScript allonge
-- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition of JavaScript Allongé, discussing the evolution of ECMAScript 6.
+- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition of JavaScript Allongé.
 - [[javascriptallonge-forewords-to-the-first-edition]] — Forewords and prefaces from the first edition.
 - [[javascriptallonge-from]] — Summary of the 'from' section from javascriptallonge.pdf (pages 221-222).
 - [[javascriptallonge-front-matter]] — Summary of the front matter of JavaScript Allongé, the Six Edition.
@@ -81,7 +81,7 @@
 - [[javascriptallonge-generators-and-iterables]] — Chapter on generators and iterables from JavaScript Allongé
 - [[javascriptallonge-generators-are-coroutines]] — Generators as coroutines in JavaScript, with behavioral differences from ordinary functions.
 - [[javascriptallonge-higher-order-functions]] — Summary of the higher-order functions chapter from JavaScript Allongé.
-- [[javascriptallonge-how-this-book-is-organized]] — Overview of how JavaScript Allongé is organized, including chapter structure and the inclusion of practical recipes.
+- [[javascriptallonge-how-this-book-is-organized]] — Summary of how JavaScript Allongé is organized, per page 11-12.
 - [[javascriptallonge-how-to-run-the-examples]] — How to run the examples from JavaScript Allongé, including use of Traceur Compiler and Babel transpilers.
 - [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — Chapter discussing the distinction between pure functions and closures, focusing on free variables.
 - [[javascriptallonge-images]] — Summary of images and copyright information from JavaScript Allongé, pages 293-296.
@@ -140,7 +140,7 @@
 - [[javascriptallonge-recipes-with-data]] — Chapter on recipes with data from JavaScript Allongé.
 - [[javascriptallonge-recursive-iterators]] — Summary of the recursive iterators section from JavaScript Allongé.
 - [[javascriptallonge-reference-types]] — Summary of the reference types chapter from JavaScript Allongé.
-- [[javascriptallonge-reg-raganwald-braithwaite]] — Summary of Reg 'raganwald' Braithwaite's JavaScript Allongé book, including publishing details and author information.
+- [[javascriptallonge-reg-raganwald-braithwaite]] — Summary of Reg 'raganwald' Braithwaite's 'JavaScript Allongé' book.
 - [[javascriptallonge-reg-raganwald-braithwaite-2]] — Summary of Reg 'raganwald' Braithwaite's work and the Lean Publishing process.
 - [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]] — Summary of the 'representing naughts and crosses as a stateful function' section from javascriptallonge.
 - [[javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function]] — Summary of the chapter 'representing naughts and crosses as a stateless function' from the source 'javascriptallonge'.
@@ -159,7 +159,7 @@
 - [[javascriptallonge-tail-calls-and-default-arguments]] — Chapter on tail calls and default arguments in JavaScript Allong’e
 - [[javascriptallonge-tap]] — Chapter on the tap combinator from JavaScript Allongé.
 - [[javascriptallonge-that-constant-coffee-craving]] — Chapter on naming functions and using function expressions to bind values.
-- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — Summary of the section 'that's nice. is that the only reason?' from JavaScript Allongé.
+- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions.
 - [[javascriptallonge-the-aftermath]] — Summary of the 'the aftermath' chapter from JavaScript Allongé.
 - [[javascriptallonge-the-carpenter-s-solution]] — The carpenter's solution to the loop detection problem in linked lists and chequerboard games.
 - [[javascriptallonge-the-function-keyword]] — Summary of the function keyword section from JavaScript Allongé

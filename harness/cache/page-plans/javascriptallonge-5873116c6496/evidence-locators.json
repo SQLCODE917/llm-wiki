@@ -1,6 +1,6 @@
 {
   "findings": [],
-  "index_id": "evidence-locator-index-7fd68c2dbe8af9da",
+  "index_id": "evidence-locator-index-156c40cb40792a8d",
   "locator_artifact_fingerprint": "7aa2ebadd6fd7c4d",
   "locators": [
     {
@@ -2629,17 +2629,6 @@
       "locator_text": "p.105-106",
       "range_end": 106,
       "range_start": 105,
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf"
-    },
-    {
-      "canonical_excerpt_digest": "5158163ad900569c5d481c1de46170fce0d61767e46c7847de6d5b9124ccd506",
-      "excerpt_digest": "5158163ad900569c5d481c1de46170fce0d61767e46c7847de6d5b9124ccd506",
-      "locator_id": "evidence-locator-13b85a715d93d6db",
-      "locator_kind": "page-range",
-      "locator_text": "p.293-296",
-      "range_end": 296,
-      "range_start": 293,
       "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
       "source_locator": "javascriptallonge.pdf"
     },
@@ -13908,17 +13897,6 @@
       "source_locator": "javascriptallonge.pdf"
     },
     {
-      "canonical_excerpt_digest": "e2af0531f71326adbafef2f00d71864b1d401e5816500982d8e5f7a8a60675ff",
-      "excerpt_digest": "e2af0531f71326adbafef2f00d71864b1d401e5816500982d8e5f7a8a60675ff",
-      "locator_id": "evidence-locator-6e18775348aa4963",
-      "locator_kind": "page-range",
-      "locator_text": "p.293-296",
-      "range_end": 296,
-      "range_start": 293,
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf"
-    },
-    {
       "canonical_excerpt_digest": "d1e5eeed34edccb42f62de5d635fab833f7426f86241f3d341c59585d0a91548",
       "excerpt_digest": "d1e5eeed34edccb42f62de5d635fab833f7426f86241f3d341c59585d0a91548",
       "locator_id": "evidence-locator-6e1a82ff402f863d",
@@ -17171,17 +17149,6 @@
       "locator_text": "p.42-43",
       "range_end": 43,
       "range_start": 42,
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf"
-    },
-    {
-      "canonical_excerpt_digest": "81668e08924fd5bf87cb02d5f711e487f5f0d1d848d8f234f99bff7c708eb95b",
-      "excerpt_digest": "81668e08924fd5bf87cb02d5f711e487f5f0d1d848d8f234f99bff7c708eb95b",
-      "locator_id": "evidence-locator-8930fcc0bccc1114",
-      "locator_kind": "page-range",
-      "locator_text": "p.293-296",
-      "range_end": 296,
-      "range_start": 293,
       "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
       "source_locator": "javascriptallonge.pdf"
     },
@@ -25029,17 +24996,6 @@
       "source_locator": "javascriptallonge.pdf"
     },
     {
-      "canonical_excerpt_digest": "cbacf8eba5a85a14f3b149ccd26da66c9c0688741f23b8a896670ed090e5c962",
-      "excerpt_digest": "cbacf8eba5a85a14f3b149ccd26da66c9c0688741f23b8a896670ed090e5c962",
-      "locator_id": "evidence-locator-c7a7358a7db583cd",
-      "locator_kind": "page-range",
-      "locator_text": "p.293-296",
-      "range_end": 296,
-      "range_start": 293,
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf"
-    },
-    {
       "canonical_excerpt_digest": "a8924561e57ce7f3e550c1358f4ac22d6c5e02254883c93f9113d01e523f08cd",
       "excerpt_digest": "c4fd55a8550bd5bd9024f556ae5af2b04f1f9f815ae5dc2b312ed90127ff0d40",
       "locator_id": "evidence-locator-c7b2690c59a8afe4",
@@ -27742,17 +27698,6 @@
       "locator_text": "p.133-136",
       "range_end": 136,
       "range_start": 133,
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf"
-    },
-    {
-      "canonical_excerpt_digest": "1e91e0f25eb1c5ce00b0e825c4c915f36478475d60bc7bf0509b7a90952db6f8",
-      "excerpt_digest": "1e91e0f25eb1c5ce00b0e825c4c915f36478475d60bc7bf0509b7a90952db6f8",
-      "locator_id": "evidence-locator-db5e372f58d13e2a",
-      "locator_kind": "page-range",
-      "locator_text": "p.293-296",
-      "range_end": 296,
-      "range_start": 293,
       "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
       "source_locator": "javascriptallonge.pdf"
     },
@@ -31526,17 +31471,6 @@
       "locator_text": "p.60-61",
       "range_end": 61,
       "range_start": 60,
-      "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
-      "source_locator": "javascriptallonge.pdf"
-    },
-    {
-      "canonical_excerpt_digest": "e0e8492c084e566aa2dabf3a7c14a121042572a199de22dea7ccfae36cbc2f13",
-      "excerpt_digest": "e0e8492c084e566aa2dabf3a7c14a121042572a199de22dea7ccfae36cbc2f13",
-      "locator_id": "evidence-locator-fc75d954c2bbd6bd",
-      "locator_kind": "page-range",
-      "locator_text": "p.293-296",
-      "range_end": 296,
-      "range_start": 293,
       "source_hash": "8eb13d6b12d45ac5406fd5eff9e4d1770cf9892b19206e0bfc9808a6ffafd435",
       "source_locator": "javascriptallonge.pdf"
     },

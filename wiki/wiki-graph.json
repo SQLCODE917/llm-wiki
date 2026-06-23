@@ -1320,7 +1320,7 @@
       "sources": [
         "raw/antikythera-mechanism.md"
       ],
-      "summary": "Source summarizing the Antikythera Mechanism, an ancient Greek analog computer."
+      "summary": "Summary of the Antikythera Mechanism, an ancient Greek analog computer."
     },
     {
       "category": "source",
@@ -1551,7 +1551,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.6-6"
       ],
-      "summary": "Chapter on prefacing techniques in Caf\u00e9 Molinari's work."
+      "summary": "Prefaces to the JavaScript Allong\u00e9 book, discussing the analogy of coffee preparation methods to programming concepts."
     },
     {
       "category": "source",
@@ -2055,7 +2055,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.13-13"
       ],
-      "summary": "Foreword to the 'Six' edition of JavaScript Allong\u00e9, discussing the evolution of ECMAScript 6."
+      "summary": "Foreword to the 'Six' edition of JavaScript Allong\u00e9."
     },
     {
       "category": "source",
@@ -2226,7 +2226,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.11-12"
       ],
-      "summary": "Overview of how JavaScript Allong\u00e9 is organized, including chapter structure and the inclusion of practical recipes."
+      "summary": "Summary of how JavaScript Allong\u00e9 is organized, per page 11-12."
     },
     {
       "category": "source",
@@ -2763,7 +2763,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.2-3"
       ],
-      "summary": "Summary of Reg 'raganwald' Braithwaite's JavaScript Allong\u00e9 book, including publishing details and author information."
+      "summary": "Summary of Reg 'raganwald' Braithwaite's 'JavaScript Allong\u00e9' book."
     },
     {
       "category": "source",
@@ -2934,7 +2934,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.9-9"
       ],
-      "summary": "Summary of the section 'that's nice. is that the only reason?' from JavaScript Allong\u00e9."
+      "summary": "Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions."
     },
     {
       "category": "source",

@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "This book is for sale at http://leanpub.com/javascriptallongesix (raw/javascriptallonge.pdf p.2-3)",
+      "bullet_text": "Reg 'raganwald' Braithwaite is the author of JavaScript Allongé, published by Leanpub (raw/javascriptallonge.pdf p.2-3).",
       "covered_source_claims": [
-        "source-claim-unit-0003-0001"
+        "source-claim-unit-0003-0005"
       ]
     },
     {
-      "bullet_text": "Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do. (raw/javascriptallonge.pdf p.2-3)",
+      "bullet_text": "The book was published on 2017-11-03 and is available for sale at http://leanpub.com/javascriptallongesix (raw/javascriptallonge.pdf p.2-3).",
       "covered_source_claims": [
         "source-claim-unit-0003-0004"
       ]
     },
     {
-      "bullet_text": "© 2015 - 2017 Reg 'raganwald' Braithwaite (raw/javascriptallonge.pdf p.2-3)",
+      "bullet_text": "Also by Reg 'raganwald' Braithwaite are Kestrels, Quirky Birds, and Hopeless Egocentricity, among others (raw/javascriptallonge.pdf p.2-3).",
       "covered_source_claims": [
-        "source-claim-unit-0003-0005"
+        "source-claim-unit-0003-0001"
       ]
     }
   ],
-  "source_record_text": "JavaScript Allongé – A modular guide to JavaScript fundamentals and advanced techniques, spanning 20 chapters."
+  "source_record_text": "This page summarizes the author and publishing details of *JavaScript Allongé* by Reg 'raganwald' Braithwaite."
 }

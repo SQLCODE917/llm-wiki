@@ -421,7 +421,7 @@
       "unit_id": "unit-0001"
     }
   ],
-  "plan_id": "2026-06-22-confidence-source-antikythera-mechanism",
+  "plan_id": "2026-06-22-220913-source-antikythera-mechanism",
   "planned_writes": [
     {
       "action": "enrich-existing",
@@ -517,6 +517,72 @@
           "source-claim-group-mechanism",
           "source-claim-group-provenance"
         ],
+        "selected_claim_requirements": [
+          {
+            "claim_centrality": 1.0,
+            "claim_eligibility": "eligible",
+            "claim_role_tags": [
+              "identity"
+            ],
+            "cue_terms": [
+              "antikythera",
+              "mechanism",
+              "ancient",
+              "greek"
+            ],
+            "source_claim_id": "source-claim-unit-0001-0001"
+          },
+          {
+            "claim_centrality": 0.5,
+            "claim_eligibility": "eligible",
+            "claim_role_tags": [
+              "provenance",
+              "temporal",
+              "quantitative",
+              "identity"
+            ],
+            "cue_terms": [
+              "was",
+              "retrieved",
+              "sea",
+              "shipwreck"
+            ],
+            "source_claim_id": "source-claim-unit-0001-0002"
+          },
+          {
+            "claim_centrality": 1.0,
+            "claim_eligibility": "eligible",
+            "claim_role_tags": [
+              "method",
+              "evidence",
+              "temporal",
+              "quantitative"
+            ],
+            "cue_terms": [
+              "antikythera",
+              "mechanism",
+              "research",
+              "project"
+            ],
+            "source_claim_id": "source-claim-unit-0001-0009"
+          },
+          {
+            "claim_centrality": 0.5,
+            "claim_eligibility": "eligible",
+            "claim_role_tags": [
+              "evidence",
+              "quantitative",
+              "comparison"
+            ],
+            "cue_terms": [
+              "mechanism",
+              "sophistication",
+              "was",
+              "not"
+            ],
+            "source_claim_id": "source-claim-unit-0001-0006"
+          }
+        ],
         "selected_source_claims": [
           "source-claim-unit-0001-0001",
           "source-claim-unit-0001-0002",
@@ -531,12 +597,6 @@
           "page_excerpt": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
           "page_id": "antikythera-mechanism",
           "score": 0.37147
-        },
-        {
-          "match_reason": "nearest-neighbor:unit-0001",
-          "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-121827 Source: raw/antikythera-mechanism.md Confidence status: passed Blockers: 0 Warnings: 0 Gates: 9 ## Artifact Reuse - page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache...",
-          "page_id": "wiki-ingest-confidence",
-          "score": 0.211256
         }
       ],
       "write_id": "write-antikythera-mechanism"
@@ -1040,12 +1100,6 @@
       "page_excerpt": "## Source record Ancient Greek orrery, oldest known analog computer. ## Key supported claims - Greek orrery, oldest analog computer. (raw/antikythera-mechanism.md) - Wreck find dates to 150–100 BC. (raw/antikythera-mechanism.md) - Research...",
       "page_id": "antikythera-mechanism",
       "score": 0.37147
-    },
-    {
-      "match_reason": "nearest-neighbor:unit-0001",
-      "page_excerpt": "# Ingest Confidence Report ## Summary Run id: 2026-06-22-121827 Source: raw/antikythera-mechanism.md Confidence status: passed Blockers: 0 Warnings: 0 Gates: 9 ## Artifact Reuse - page-plan: rebuild `/home/serdm/gits/llm-wiki/harness/cache...",
-      "page_id": "wiki-ingest-confidence",
-      "score": 0.211256
     }
   ]
 }

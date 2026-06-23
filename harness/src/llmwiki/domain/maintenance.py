@@ -87,6 +87,7 @@ class CuratorStatus:
     claim_support_summary: str
     semantic_lint_summary: str
     ingest_confidence_summary: str
+    technical_atom_summary: str
     route_plan_status: RoutePlanStatus
     graph_status: GraphStatus | None
     recent_log_entries: tuple[str, ...]
@@ -104,6 +105,8 @@ class CuratorStatus:
                 "## Salience\n\n" + (self.salience_report.render() or "No salience entries."),
                 "## Candidate Page Backlog\n\n" + self.candidate_backlog.render(),
                 "## Ingest Route Plans\n\n" + self.route_plan_status.render(),
+                "## Technical Atom Catalogs\n\n"
+                + (self.technical_atom_summary or "No technical atom catalogs."),
                 "## Latest Ingest Confidence\n\n"
                 + (self.ingest_confidence_summary or "No ingest confidence report."),
                 "## Latest Claim Support Audit\n\n"
@@ -134,6 +137,7 @@ def build_curator_status(
     claim_support_summary: str = "",
     semantic_lint_summary: str = "",
     ingest_confidence_summary: str = "",
+    technical_atom_summary: str = "",
     route_plan_status: RoutePlanStatus | None = None,
     graph_status: GraphStatus | None = None,
     lint_run: LintRun | None = None,
@@ -167,6 +171,7 @@ def build_curator_status(
         claim_support_summary=claim_support_summary,
         semantic_lint_summary=semantic_lint_summary,
         ingest_confidence_summary=ingest_confidence_summary,
+        technical_atom_summary=technical_atom_summary,
         route_plan_status=route_plan_status or RoutePlanStatus(),
         graph_status=graph_status,
         recent_log_entries=tuple(recent_log_entries),

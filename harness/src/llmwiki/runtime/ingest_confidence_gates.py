@@ -30,6 +30,10 @@ from llmwiki.runtime.ingest_confidence_locator_gate import (
     locator_stability_findings,
 )
 from llmwiki.runtime.ingest_confidence_page_scope import page_body, source_scoped_pages
+from llmwiki.runtime.ingest_confidence_technical_atoms import (
+    technical_atom_detail,
+    technical_atom_findings,
+)
 from llmwiki.store import WikiStore
 
 
@@ -70,6 +74,13 @@ def deterministic_confidence(
             findings,
             evidence_registry_findings(source_locator, prepared.evidence_registry),
             evidence_registry_detail(prepared.evidence_registry),
+        ),
+        _finding_gate(
+            "technical-atoms",
+            source_locator,
+            findings,
+            technical_atom_findings(source_locator, prepared.technical_atom_catalog),
+            technical_atom_detail(prepared.technical_atom_catalog),
         ),
         _finding_gate(
             "locator-stability",
@@ -192,6 +203,7 @@ def _claim_support_selection(
         store.source_inventory(),
         (prepared.evidence_registry,),
         _current_source_summary_artifacts(store, source_locator, prepared, page_texts),
+        (prepared.technical_atom_catalog,) if prepared.technical_atom_catalog is not None else (),
         max_claims=max_claims,
         source=f"raw/{source_locator}",
         sample_strategy=sample_strategy,
