@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-contact
 page_kind: source
-summary: Contact information for Reg 'Raganwald' Braithwaite, author of JavaScript Allongé.
+summary: contact from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.297-297
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

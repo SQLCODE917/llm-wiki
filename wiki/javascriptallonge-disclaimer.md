@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-disclaimer
 page_kind: source
-summary: Summary of the disclaimer section from JavaScript Allongé.
+summary: Disclaimer from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.192-192
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

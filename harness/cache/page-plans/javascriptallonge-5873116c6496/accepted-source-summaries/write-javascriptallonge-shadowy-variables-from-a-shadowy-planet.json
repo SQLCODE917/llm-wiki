@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A variable shadows an ancestor when names match, (raw/javascriptallonge.pdf p.47-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0045-0007"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript searches environments from child to parent, (raw/javascriptallonge.pdf p.47-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0045-0001"
+      ]
+    },
+    {
+      "bullet_text": "A function is pure if its x is defined within its own environment, (raw/javascriptallonge.pdf p.47-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0045-0002"
+      ]
+    }
+  ],
+  "source_record_text": "When a variable has the same name as an ancestor environment's binding, it is said to shadow the ancestor. JavaScript searches for a binding starting with the function's own environment and then each parent in turn until it finds one. An interesting thing happens when a variable has the same name as an ancestor environment's variable."
+}

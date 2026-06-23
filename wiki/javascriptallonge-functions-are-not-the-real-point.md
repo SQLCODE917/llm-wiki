@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-functions-are-not-the-real-point
 page_kind: source
-summary: Chapter on functions not being the real point in JavaScript Allongé, discussing the theoretical vs practical aspects of functional programming.
+summary: functions are not the real point from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.188-189
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

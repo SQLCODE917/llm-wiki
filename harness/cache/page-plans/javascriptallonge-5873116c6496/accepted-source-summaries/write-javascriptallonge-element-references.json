@@ -1,17 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Array elements can be extracted using [ and ] as postfix operators. (raw/javascriptallonge.pdf p.102-103)",
+      "bullet_text": "Array elements are extracted using [ and ] postfix operators, with zero-based indexing (raw/javascriptallonge.pdf p.102-103).",
       "covered_source_claims": [
         "source-claim-unit-0093-0001"
       ]
     },
     {
-      "bullet_text": "We know that every array is its own unique entity, with its own unique reference. (raw/javascriptallonge.pdf p.102-103)",
+      "bullet_text": "JavaScript arrays are zero-based (raw/javascriptallonge.pdf p.102-103).",
+      "covered_source_claims": [
+        "source-claim-unit-0093-0004"
+      ]
+    },
+    {
+      "bullet_text": "Arrays store references to the things you put in them, not copies (raw/javascriptallonge.pdf p.102-103).",
       "covered_source_claims": [
         "source-claim-unit-0093-0005"
       ]
     }
   ],
-  "source_record_text": "This section covers element references in JavaScript arrays, detailing how to extract elements using bracket notation and explaining that arrays store references to the objects placed in them."
+  "source_record_text": "Chapter on element references in JavaScript arrays, covering zero-based indexing and reference storage."
 }

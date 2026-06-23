@@ -1,20 +1,44 @@
 ---
 page_id: javascriptallonge-generators-and-iterables
 page_kind: source
-summary: Chapter on generators and iterables from JavaScript Allongé
+summary: generators and iterables from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.234-236
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Chapter on generators and iterables from JavaScript Allongé
+Chapter on generators and iterables from JavaScript Allongé.
 
 ## Key supported claims
 
-- Our generator function oneTwoThree is not an iterator. It's a function that returns an iterator when we invoke it, and JavaScript takes care of turning this into an object with a .next() function we can call (raw/javascriptallonge.pdf p.234-236).
-- If we call our generator function more than once, we get new iterators. As we saw above, we called oneTwoThree three times, and each time we got an iterator that begins at 1 and counts to 3 (raw/javascriptallonge.pdf p.234-236).
-- Recalling the way we wrote ordered collections, we could make a collection that uses a generator function (raw/javascriptallonge.pdf p.234-236).
-- Now we can use it in a for...of loop, spread it into an array literal, or spread it into a function invocation, because we have written an iterable that uses a generator to return an iterator from its [Symbol.iterator] method (raw/javascriptallonge.pdf p.234-236).
-- This pattern is encouraged, so much so that JavaScript provides a concise syntax for writing generator methods for objects (raw/javascriptallonge.pdf p.234-236).
+- A generator function yields values instead of returning a single value (raw/javascriptallonge.pdf p.234-236).
+- Calling a generator function multiple times produces new iterators (raw/javascriptallonge.pdf p.234-236).
+- Objects can be made iterable using generator methods (raw/javascriptallonge.pdf p.234-236).
+- JavaScript provides concise syntax for generator methods (raw/javascriptallonge.pdf p.234-236).
+- The for...of loop and spread syntax work with iterables (raw/javascriptallonge.pdf p.234-236).
+
+## Technical details
+
+### `technical-atom-7b3c1fbdae533bb1` code
+
+Citation: (raw/javascriptallonge.pdf p.234-236)
+
+```javascript
+const ThreeNumbers = { [Symbol.iterator]: function * () { yield 1; yield 2; yield 3 } } for ( const i of ThreeNumbers) { console.log(i); } //=> 1 2 3 [...ThreeNumbers] //=> [1,2,3] const iterator = ThreeNumbers[Symbol.iterator](); iterator.next() //=> {"done": false , value: 1} iterator.next() //=> {"done": false , value: 2} iterator.next() //=> {"done": false , value: 3} iterator.next() //=> {"done": true }
+```
+
+### `technical-atom-4576c5afd85b40d4` code
+
+Citation: (raw/javascriptallonge.pdf p.234-236)
+
+```javascript
+const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } }
+```
+
+### `technical-atom-1384299a1f559507` procedure
+
+Citation: (raw/javascriptallonge.pdf p.234-236)
+
+We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call.

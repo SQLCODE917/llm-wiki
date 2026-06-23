@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-building-blocks
 page_kind: source
-summary: Summary of the Building Blocks chapter from JavaScript Allongé.
+summary: Building Blocks from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.71-71
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

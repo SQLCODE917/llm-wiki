@@ -1,29 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Array literals are expressions, and arrays are reference types. (raw/javascriptallonge.pdf p.101-102)",
+      "bullet_text": "JavaScript has a literal syntax for creating an array using [ and ] characters (raw/javascriptallonge.pdf p.101-102).",
       "covered_source_claims": [
         "source-claim-unit-0092-0010"
       ]
     },
     {
-      "bullet_text": "Each time an array literal is evaluated, a new, distinct array is created, even with identical elements. (raw/javascriptallonge.pdf p.101-102)",
+      "bullet_text": "Array literals are expressions that evaluate to new, distinct arrays, even with identical elements (raw/javascriptallonge.pdf p.101-102).",
       "covered_source_claims": [
         "source-claim-unit-0092-0011"
       ]
     },
     {
-      "bullet_text": "JavaScript uses [ and ] characters for array literal syntax. (raw/javascriptallonge.pdf p.101-102)",
+      "bullet_text": "JavaScript array literals support any expression, including nested arrays and function calls (raw/javascriptallonge.pdf p.101-102).",
       "covered_source_claims": [
         "source-claim-unit-0092-0001"
       ]
     },
     {
-      "bullet_text": "Array literals can be nested, creating arrays with multiple levels of nesting. (raw/javascriptallonge.pdf p.101-102)",
+      "bullet_text": "Array literals can contain one or more elements, separated by commas (raw/javascriptallonge.pdf p.101-102).",
+      "covered_source_claims": [
+        "source-claim-unit-0092-0003"
+      ]
+    },
+    {
+      "bullet_text": "Empty arrays are created with empty brackets [] (raw/javascriptallonge.pdf p.101-102).",
       "covered_source_claims": [
         "source-claim-unit-0092-0006"
       ]
     }
   ],
-  "source_record_text": "JavaScript has a literal syntax for creating an array using the [ and ] characters. Array literals are expressions, and arrays are reference types."
+  "source_record_text": "JavaScript has a literal syntax for creating an array using square brackets. Arrays are reference types, and each array literal evaluates to a new, distinct array."
 }

@@ -20,12 +20,19 @@ from llmwiki.domain.objects import (
     TopicCluster,
     WikiMatch,
 )
+from llmwiki.domain.page_match_text import page_match_text
 from llmwiki.domain.pages import slugify
+from llmwiki.domain.planning_topic_index import (
+    candidate_claim_ids_by_unit,
+    source_claim_group_ids_by_unit,
+)
 
 _TOKEN_RE = re.compile(r"[a-z][a-z0-9-]{2,}")
 _MATCH_THRESHOLD = 0.12
 _EMBEDDING_TOKEN_LIMIT = 4096
 _TOKEN_RESULT_LIMIT = 12000
+_WIKI_MATCH_CANDIDATE_LIMIT = 80
+_WIKI_MATCHES_PER_UNIT_LIMIT = 24
 _CLAIM_PARAGRAPH_CHAR_LIMIT = 12_000
 _CLAIM_SENTENCE_CHAR_LIMIT = 1_800
 _CLAIMS_PER_UNIT_LIMIT = 120
@@ -161,6 +168,8 @@ def topic_clusters(
         )
         grouped.setdefault(label, []).append(unit)
     clusters: list[TopicCluster] = []
+    claim_ids_by_unit = candidate_claim_ids_by_unit(units, claims)
+    group_ids_by_unit = source_claim_group_ids_by_unit(source_claim_groups)
     for index, (label, cluster_units) in enumerate(sorted(grouped.items()), start=1):
         unit_ids = tuple(unit.unit_id for unit in cluster_units)
         clusters.append(
@@ -169,15 +178,15 @@ def topic_clusters(
                 label=label,
                 extracted_units=unit_ids,
                 candidate_claims=tuple(
-                    claim.claim_id
-                    for claim in claims
-                    if any(claim.claim_id.startswith(f"claim-{unit_id}-") for unit_id in unit_ids)
+                    claim_id
+                    for unit_id in unit_ids
+                    for claim_id in claim_ids_by_unit.get(unit_id, ())
                 ),
                 candidate_topics=tuple(topic.topic_id for topic in topics if topic.label == label),
                 source_claim_groups=tuple(
-                    group.source_claim_group_id
-                    for group in source_claim_groups
-                    if any(unit_id in group.extracted_units for unit_id in unit_ids)
+                    group_id
+                    for unit_id in unit_ids
+                    for group_id in group_ids_by_unit.get(unit_id, ())
                 ),
             )
         )
@@ -189,23 +198,35 @@ def wiki_matches(
     existing_pages: dict[str, str],
     source_locator: str,
 ) -> tuple[WikiMatch, ...]:
-    page_embeddings = {page_id: embedding(text) for page_id, text in existing_pages.items()}
+    match_texts = {page_id: page_match_text(text) for page_id, text in existing_pages.items()}
+    page_terms = {
+        page_id: frozenset(tokens(f"{page_id} {text}"))
+        for page_id, text in match_texts.items()
+    }
     matches: list[WikiMatch] = []
     for unit in units:
-        unit_embedding = embedding(f"{unit.heading_path} {unit.text}")
-        for page_id, page_embedding in page_embeddings.items():
-            score = cosine(unit_embedding, page_embedding)
-            if source_locator in existing_pages[page_id]:
+        unit_terms = frozenset(tokens(f"{unit.heading_path} {unit.text}"))
+        unit_matches: list[WikiMatch] = []
+        for page_id in _candidate_match_page_ids(
+            unit, unit_terms, match_texts, page_terms, source_locator
+        ):
+            score = _lexical_match_score(unit_terms, page_terms[page_id])
+            if source_locator in match_texts[page_id]:
                 score += 0.15
             if score >= _MATCH_THRESHOLD:
-                matches.append(
+                unit_matches.append(
                     WikiMatch(
                         page_id=page_id,
                         score=round(score, 6),
                         match_reason=f"nearest-neighbor:{unit.unit_id}",
-                        page_excerpt=excerpt(existing_pages[page_id]),
+                        page_excerpt=excerpt(match_texts[page_id]),
                     )
                 )
+        matches.extend(
+            sorted(unit_matches, key=lambda match: (-match.score, match.page_id))[
+                :_WIKI_MATCHES_PER_UNIT_LIMIT
+            ]
+        )
     return tuple(sorted(matches, key=lambda match: (-match.score, match.page_id)))
 
 
@@ -213,9 +234,11 @@ def claim_comparisons(
     claims: tuple[CandidateClaim, ...], matches: tuple[WikiMatch, ...]
 ) -> tuple[ClaimComparison, ...]:
     comparisons: list[ClaimComparison] = []
+    match_embeddings = tuple((match, embedding(match.page_excerpt)) for match in matches[:3])
     for claim in claims:
-        for match in matches[:3]:
-            if cosine(embedding(claim.statement), embedding(match.page_excerpt)) > 0.2:
+        claim_embedding = embedding(claim.statement)
+        for match, match_embedding in match_embeddings:
+            if cosine(claim_embedding, match_embedding) > 0.2:
                 comparisons.append(
                     ClaimComparison(claim.claim_id, match.page_excerpt, "overlap", match.page_id)
                 )
@@ -240,7 +263,9 @@ def unit_match(match: WikiMatch, unit_id: str) -> bool:
 
 
 def embedding(text: str) -> dict[str, float]:
-    counts = Counter(tokens(text)[:_EMBEDDING_TOKEN_LIMIT])
+    counts: dict[str, int] = {}
+    for token in tokens(text, limit=_EMBEDDING_TOKEN_LIMIT):
+        counts[token] = counts.get(token, 0) + 1
     total = 0.0
     for value in counts.values():
         total += value * value
@@ -260,14 +285,57 @@ def cosine(a: dict[str, float], b: dict[str, float]) -> float:
     return score
 
 
-def tokens(text: str) -> tuple[str, ...]:
+def _candidate_match_page_ids(
+    unit: ExtractedUnit,
+    unit_terms: frozenset[str],
+    match_texts: dict[str, str],
+    page_terms: dict[str, frozenset[str]],
+    source_locator: str,
+) -> tuple[str, ...]:
+    ranked: list[tuple[tuple[int, int, int], str]] = []
+    for page_id, page_text in match_texts.items():
+        rank = _candidate_match_rank(
+            unit, unit_terms, page_id, page_text, page_terms[page_id], source_locator
+        )
+        if rank[0] > 0:
+            ranked.append((rank, page_id))
+    ranked.sort(key=lambda item: (-item[0][0], -item[0][1], -item[0][2], item[1]))
+    return tuple(
+        page_id for _, page_id in ranked[:_WIKI_MATCH_CANDIDATE_LIMIT]
+    )[:_WIKI_MATCH_CANDIDATE_LIMIT]
+
+
+def _candidate_match_rank(
+    unit: ExtractedUnit,
+    unit_terms: frozenset[str],
+    page_id: str,
+    page_text: str,
+    terms: frozenset[str],
+    source_locator: str,
+) -> tuple[int, int, int]:
+    source_affinity = int(source_locator in page_text)
+    heading_affinity = int(same_section_identity(unit.heading_path, page_id))
+    overlap = len(unit_terms & terms)
+    return (source_affinity + heading_affinity + overlap, source_affinity, overlap)
+
+
+def _lexical_match_score(unit_terms: frozenset[str], page_terms: frozenset[str]) -> float:
+    if not unit_terms or not page_terms:
+        return 0.0
+    overlap = len(unit_terms & page_terms)
+    if not overlap:
+        return 0.0
+    return overlap / math.sqrt(len(unit_terms) * len(page_terms))
+
+
+def tokens(text: str, *, limit: int = _TOKEN_RESULT_LIMIT) -> tuple[str, ...]:
     result: list[str] = []
     for match in _TOKEN_RE.finditer(text.lower()):
         token = match.group(0)
         if token in _STOP_WORDS:
             continue
         result.append(token)
-        if len(result) >= _TOKEN_RESULT_LIMIT:
+        if len(result) >= limit:
             break
     return tuple(result)
 

@@ -2,9 +2,8 @@
 
 from __future__ import annotations
 
-import json
 import re
-from dataclasses import asdict, replace
+from dataclasses import replace
 from pathlib import Path
 
 from pydantic import PydanticUserError, TypeAdapter
@@ -20,6 +19,7 @@ from llmwiki.domain.objects import (
     SourceClaim,
     SourcePlan,
 )
+from llmwiki.domain.page_plan_io import page_plan_to_json_text
 from llmwiki.domain.pages import WikiStructure
 from llmwiki.domain.planning_analysis import (
     build_extracted_unit,
@@ -150,7 +150,7 @@ def build_page_plan(
 
 
 def page_plan_to_json(plan: PagePlan) -> str:
-    return json.dumps(asdict(plan), indent=2, ensure_ascii=False, sort_keys=True)
+    return page_plan_to_json_text(plan)
 
 
 def page_plan_from_json(text: str) -> PagePlan:

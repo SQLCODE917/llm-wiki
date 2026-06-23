@@ -718,6 +718,11 @@
     {
       "resolved": true,
       "source": "javascriptallonge",
+      "target": "javascriptallonge-shadowy-variables-from-a-shadowy-planet"
+    },
+    {
+      "resolved": true,
+      "source": "javascriptallonge",
       "target": "javascriptallonge-so-why-arrays"
     },
     {
@@ -1307,7 +1312,7 @@
     }
   ],
   "metadata": {
-    "generated_date": "2026-06-22",
+    "generated_date": "2026-06-23",
     "generator": "llmwiki.graph.v1",
     "schema_version": 1,
     "system_pages": "excluded"
@@ -1469,6 +1474,7 @@
         "javascriptallonge-self-currying-flip",
         "javascriptallonge-self-similarity",
         "javascriptallonge-served-by-the-pot-collections",
+        "javascriptallonge-shadowy-variables-from-a-shadowy-planet",
         "javascriptallonge-so-why-arrays",
         "javascriptallonge-some-history",
         "javascriptallonge-state-machines",
@@ -1515,7 +1521,7 @@
       "sources": [
         "raw/javascriptallonge.pdf"
       ],
-      "summary": "Hub page for JavaScript Allong\u00e9, the 'Six' Edition."
+      "summary": "Summary of the source JavaScript Allong\u00e9, the 'Six' Edition"
     },
     {
       "category": "source",
@@ -1524,7 +1530,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.69-69"
       ],
-      "summary": "Summary of the chapter on combinators from 'JavaScript Allong\u00e9'."
+      "summary": "a balanced statement about combinators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1533,7 +1539,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.159-161"
       ],
-      "summary": "Summary of the 'a few utilities' section from 'JavaScript Allong\u00e9'."
+      "summary": "a few utilities from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1542,7 +1548,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.90-91"
       ],
-      "summary": "A history lesson on variadic functions and argument gathering in JavaScript, from javascriptallonge.pdf p.90-91."
+      "summary": "a history lesson from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1551,7 +1557,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.6-6"
       ],
-      "summary": "Prefaces to the JavaScript Allong\u00e9 book, discussing the analogy of coffee preparation methods to programming concepts."
+      "summary": "A Pull of the Lever: Prefaces from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1569,7 +1575,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.40-40"
       ],
-      "summary": "Summary of chapter 'a quick summary of functions and bodies' from 'JavaScript Allong\u00e9'."
+      "summary": "a quick summary of functions and bodies from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1578,7 +1584,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.189-190"
       ],
-      "summary": "Chapter on backward thinking in JavaScript allonge."
+      "summary": "a return to backward thinking from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1587,7 +1593,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.24-25"
       ],
-      "summary": "Chapter on basic numbers in JavaScriptAllonge, covering literals, representations, and numeric types."
+      "summary": "A Rich Aroma: Basic Numbers from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1596,7 +1602,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.202-203"
       ],
-      "summary": "Chapter on basic strings and quasi-literals in JavaScript Allong\u00e9."
+      "summary": "A Warm Cup: Basic Strings and Quasi-Literals from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1605,7 +1611,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.7-7"
       ],
-      "summary": "Summary of the 'About JavaScript Allong\u00e9' section from raw/javascriptallonge.pdf"
+      "summary": "About JavaScript Allong\u00e9 from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1614,7 +1620,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.297-297"
       ],
-      "summary": "Summary of the \"About The Author\" section from javascriptallonge.pdf."
+      "summary": "About The Author from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1623,7 +1629,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.16-17"
       ],
-      "summary": "Summary of the sample PDF edition of JavaScript Allong\u00e9."
+      "summary": "About The Sample PDF from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1632,7 +1638,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.270-272"
       ],
-      "summary": "Chapter summary for 'after another drink' from javascriptallonge.pdf"
+      "summary": "after another drink from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1641,7 +1647,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.39-40"
       ],
-      "summary": "Chapter 22: Ah. I'd Like to Have an Argument, Please."
+      "summary": "Ah. I'd Like to Have an Argument, Please. 22 from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1650,7 +1656,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.37-38"
       ],
-      "summary": "Chapter summary for 'And also:' from javascriptallonge.pdf"
+      "summary": "And also: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1659,7 +1665,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.97-98"
       ],
-      "summary": "Summary of the chapter on || and && being control-flow operators."
+      "summary": "|| and && are control-flow operators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1668,7 +1674,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.78-78"
       ],
-      "summary": "Summary of functions in JavaScript as per javascriptallonge.pdf"
+      "summary": "Functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1677,7 +1683,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.57-60"
       ],
-      "summary": "Chapter section on const scoping and shadowing in JavaScript."
+      "summary": "are consts also from a shadowy planet? from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1686,7 +1692,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.101-102"
       ],
-      "summary": "Summary of array literals section from JavaScript Allong\u00e9."
+      "summary": "array literals from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1695,7 +1701,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.101-101"
       ],
-      "summary": "Summary of the Arrays and Destructuring Arguments chapter from JavaScript Allong\u00e9."
+      "summary": "Arrays and Destructuring Arguments from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1704,7 +1710,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.30-31"
       ],
-      "summary": "Chapter on JavaScript functions as values and their representation."
+      "summary": "As Little As Possible About Functions, But No Less from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1713,7 +1719,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.35-37"
       ],
-      "summary": "Chapter on functions, blocks, and return statements in JavaScript."
+      "summary": "back on the block from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1722,16 +1728,16 @@
       "sources": [
         "raw/javascriptallonge.pdf p.180-182"
       ],
-      "summary": "Chapter on backwardness in JavaScript and how functions operate on data structures."
+      "summary": "backwardness from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
       "name": "javascriptallonge-basic-operations-on-iterables",
       "outbound_links": [],
       "sources": [
-        "raw/javascriptallonge.pdf p.211-215"
+        "raw/javascriptallonge.pdf p.284-284"
       ],
-      "summary": "iterables from raw/javascriptallonge.pdf."
+      "summary": "Basic Operations on Iterables from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1740,7 +1746,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.175-176"
       ],
-      "summary": "Summary of the bonus chapter from JavaScript Allong\u00e9."
+      "summary": "bonus from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1749,7 +1755,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.71-71"
       ],
-      "summary": "Summary of the Building Blocks chapter from JavaScript Allong\u00e9."
+      "summary": "Building Blocks from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1758,7 +1764,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.42-43"
       ],
-      "summary": "Chapter on call by sharing in JavaScriptAllonge"
+      "summary": "call by sharing from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1767,7 +1773,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.40-41"
       ],
-      "summary": "Summary of the call by value evaluation strategy in JavaScript, based on the source 'javascriptallonge'."
+      "summary": "call by value from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1776,7 +1782,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.176-176"
       ],
-      "summary": "Summary of the caveat section from javascriptallonge.pdf"
+      "summary": "caveat from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1785,7 +1791,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.44-44"
       ],
-      "summary": "Chapter on closures and scope in JavaScript Allong\u00e9"
+      "summary": "Closures and Scope from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1794,7 +1800,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.68-69"
       ],
-      "summary": "Chapter on combinators from JavaScript Allong\u00e9."
+      "summary": "combinators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1803,7 +1809,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.33-33"
       ],
-      "summary": "Summary of the commas section from JavaScript Allong\u00e9."
+      "summary": "commas from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1812,7 +1818,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.100-100"
       ],
-      "summary": "Chapter on composing and decomposing data in JavaScript"
+      "summary": "Composing and Decomposing Data from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1821,7 +1827,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.71-71"
       ],
-      "summary": "Chapter on function composition in JavaScript Allong\u00e9."
+      "summary": "composition from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1830,7 +1836,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.150-151"
       ],
-      "summary": "Summary of the const chapter in JavaScript Allong\u00e9"
+      "summary": "mixing let and const from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1839,7 +1845,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.55-57"
       ],
-      "summary": "Summary of the const and lexical scope chapter from JavaScript Allong\u00e9."
+      "summary": "const and lexical scope from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1848,7 +1854,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.297-297"
       ],
-      "summary": "Contact information for Reg 'Raganwald' Braithwaite, author of JavaScript Allong\u00e9."
+      "summary": "contact from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1857,7 +1863,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.120-121"
       ],
-      "summary": "Chapter on converting non-tail-calls to tail-calls in JavaScript"
+      "summary": "converting non-tail-calls to tail-calls from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1866,7 +1872,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.161-161"
       ],
-      "summary": "Summary of the copy-on-read strategy in JavaScript Allong\u00e9."
+      "summary": "copy-on-read from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1875,7 +1881,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.162-163"
       ],
-      "summary": "Copy-on-write strategy in JavaScript, including its definition, tradeoffs, and implementation in the context of immutable data structures."
+      "summary": "copy-on-write from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1884,7 +1890,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.293-293"
       ],
-      "summary": "Copyright notice for JavaScript Allong\u00e9"
+      "summary": "Copyright Notice from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1893,7 +1899,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.291-291"
       ],
-      "summary": "Summary of the chapter on Daniel Friedman and Matthias Felleisen from JavaScript Allong\u00e9."
+      "summary": "Daniel Friedman and Matthias Felleisen from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1902,7 +1908,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.123-124"
       ],
-      "summary": "Default arguments in JavaScript, including tail-recursive function examples and syntax."
+      "summary": "default arguments from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1911,7 +1917,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.124-125"
       ],
-      "summary": "Chapter covering defaults and destructuring in JavaScript."
+      "summary": "defaults and destructuring from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1920,7 +1926,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.106-107"
       ],
-      "summary": "Summary of the chapter on destructuring and return values from JavaScript Allong\u00e9."
+      "summary": "destructuring and return values from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1929,7 +1935,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.103-104"
       ],
-      "summary": "Chapter on destructuring arrays from JavaScript Allong\u00e9"
+      "summary": "destructuring arrays from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1938,7 +1944,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.105-106"
       ],
-      "summary": "Summary of the section 'destructuring is not pattern matching' from javascriptallonge.pdf"
+      "summary": "destructuring is not pattern matching from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1947,7 +1953,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.136-137"
       ],
-      "summary": "Summary of destructuring objects chapter from JavaScript Allong\u00e9."
+      "summary": "destructuring objects from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1956,7 +1962,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.107-108"
       ],
-      "summary": "Chapter on destructuring parameters in JavaScript Allong\u00e9."
+      "summary": "destructuring parameters from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1965,7 +1971,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.192-192"
       ],
-      "summary": "Summary of the disclaimer section from JavaScript Allong\u00e9."
+      "summary": "Disclaimer from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1974,7 +1980,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.13-13"
       ],
-      "summary": "Summary of ECMAScript 6 features in JavaScript Allong\u00e9."
+      "summary": "ECMAScript 6 has three major groups of features: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1983,7 +1989,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.102-103"
       ],
-      "summary": "Summary of the element references section from javascriptallonge.pdf"
+      "summary": "element references from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -1992,7 +1998,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.204-204"
       ],
-      "summary": "Summary of the evaluation time section from JavaScript Allong\u00e9."
+      "summary": "evaluation time from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2001,7 +2007,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.121-123"
       ],
-      "summary": "Chapter on factorials from JavaScript Allong\u00e9."
+      "summary": "factorials from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2010,7 +2016,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.94-95"
       ],
-      "summary": "Summary of the false boolean value in JavaScript, as described in 'JavaScript Allong\u00e9'."
+      "summary": "false from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2019,7 +2025,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.195-196"
       ],
-      "summary": "Chapter on flip function and argument order reversal in JavaScript."
+      "summary": "Flip from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2028,7 +2034,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.196-197"
       ],
-      "summary": "Summary of the flipping methods section from javascriptallonge.pdf"
+      "summary": "flipping methods from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2037,7 +2043,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.25-26"
       ],
-      "summary": "Chapter on floating-point numbers in JavaScript"
+      "summary": "floating from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2046,7 +2052,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.114-116"
       ],
-      "summary": "Chapter on folding in JavaScript allonge"
+      "summary": "folding from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2055,7 +2061,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.13-13"
       ],
-      "summary": "Foreword to the 'Six' edition of JavaScript Allong\u00e9."
+      "summary": "Foreword to the 'Six' edition from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2073,7 +2079,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.221-222"
       ],
-      "summary": "Summary of the 'from' section from javascriptallonge.pdf (pages 221-222)."
+      "summary": "from from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2091,7 +2097,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.66-67"
       ],
-      "summary": "Summary of function declaration caveats from javascriptallonge.pdf, pages 66-67"
+      "summary": "function declaration caveats 34 from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2100,7 +2106,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.65-66"
       ],
-      "summary": "Summary of function declarations in JavaScript as described in 'JavaScript Allong\u00e9'."
+      "summary": "function declarations from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2109,7 +2115,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.69-70"
       ],
-      "summary": "Summary of function decorators in JavaScript Allong\u00e9"
+      "summary": "function decorators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2118,7 +2124,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.98-99"
       ],
-      "summary": "Function parameters are always eagerly evaluated in JavaScript, unlike the ternary operator and logical operators."
+      "summary": "function parameters are eager from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2127,7 +2133,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.206-209"
       ],
-      "summary": "Chapter on functional iterators in JavaScript Allong\u00e9"
+      "summary": "a look back at functional iterators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2136,7 +2142,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.31-31"
       ],
-      "summary": "Summary of the functions and identities section from javascriptallonge.pdf"
+      "summary": "functions and identities from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2145,7 +2151,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.188-189"
       ],
-      "summary": "Chapter on functions not being the real point in JavaScript Allong\u00e9, discussing the theoretical vs practical aspects of functional programming."
+      "summary": "functions are not the real point from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2154,7 +2160,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.38-38"
       ],
-      "summary": "Chapter on functions that evaluate to functions in JavaScript Allong\u00e9."
+      "summary": "functions that evaluate to functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2163,7 +2169,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.32-33"
       ],
-      "summary": "Chapter on functions that return values and evaluate expressions from JavaScript Allong\u00e9."
+      "summary": "functions that return values and evaluate expressions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2172,7 +2178,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.126-128"
       ],
-      "summary": "Chapter on garbage collection and memory management in JavaScript"
+      "summary": "Garbage, Garbage Everywhere from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2181,7 +2187,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.104-105"
       ],
-      "summary": "Chapter on gathering and destructuring in JavaScript Allong\u00e9"
+      "summary": "gathering from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2190,7 +2196,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.224-226"
       ],
-      "summary": "Chapter on generating iterables in JavaScript."
+      "summary": "Generating Iterables from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2199,7 +2205,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.234-236"
       ],
-      "summary": "Chapter on generators and iterables from JavaScript Allong\u00e9"
+      "summary": "generators and iterables from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2208,7 +2214,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.231-234"
       ],
-      "summary": "Generators as coroutines in JavaScript, with behavioral differences from ordinary functions."
+      "summary": "generators are coroutines from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2217,7 +2223,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.68-68"
       ],
-      "summary": "Summary of the higher-order functions chapter from JavaScript Allong\u00e9."
+      "summary": "higher-order functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2226,7 +2232,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.11-12"
       ],
-      "summary": "Summary of how JavaScript Allong\u00e9 is organized, per page 11-12."
+      "summary": "how this book is organized from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2235,7 +2241,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.289-290"
       ],
-      "summary": "How to run the examples from JavaScript Allong\u00e9, including use of Traceur Compiler and Babel transpilers."
+      "summary": "How to run the examples from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2244,7 +2250,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.45-45"
       ],
-      "summary": "Chapter discussing the distinction between pure functions and closures, focusing on free variables."
+      "summary": "if functions without free variables are pure, are closures impure? from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2253,7 +2259,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.293-296"
       ],
-      "summary": "Summary of images and copyright information from JavaScript Allong\u00e9, pages 293-296."
+      "summary": "images from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2262,7 +2268,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.246-253"
       ],
-      "summary": "Chapter on implementing methods with iteration in JavaScript Allong\u00e9"
+      "summary": "implementing methods with iteration from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2271,7 +2277,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.50-51"
       ],
-      "summary": "Chapter on inside-out function patterns in JavaScript."
+      "summary": "inside-out from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2280,7 +2286,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.282-283"
       ],
-      "summary": "Summary of interactive generators in JavaScript Allong\u00e9."
+      "summary": "interactive generators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2289,7 +2295,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.261-261"
       ],
-      "summary": "Interlude: The Carpenter Interviews for a Job"
+      "summary": "Interlude: The Carpenter Interviews for a Job from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2298,7 +2304,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.46-47"
       ],
-      "summary": "Chapter on environments and closures in JavaScript Allong\u00e9"
+      "summary": "it's always the environment from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2307,7 +2313,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.215-216"
       ],
-      "summary": "Chapter on iterables out to infinity from JavaScript Allong\u00e9."
+      "summary": "iterables out to infinity from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2316,7 +2322,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.169-172"
       ],
-      "summary": "Summary of the iterating chapter from JavaScript Allong\u00e9."
+      "summary": "iterating from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2325,7 +2331,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.227-228"
       ],
-      "summary": "Summary of the iteration chapter from JavaScript Allong\u00e9."
+      "summary": "// Iteration from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2334,7 +2340,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.206-206"
       ],
-      "summary": "Chapter on iteration and iterables in JavaScript Allong\u00e9."
+      "summary": "Iteration and Iterables from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2343,7 +2349,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.209-210"
       ],
-      "summary": "Summary of the chapter on iterator objects from JavaScript Allong\u00e9."
+      "summary": "iterator objects from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2367,7 +2373,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.230-231"
       ],
-      "summary": "Summary of JavaScript's generators chapter from 'JavaScript Allong\u00e9'."
+      "summary": "javascript's generators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2376,7 +2382,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.256-260"
       ],
-      "summary": "Lazy vs eager collection designs and the LazyCollection mixin"
+      "summary": "eager collections from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2385,7 +2391,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.253-256"
       ],
-      "summary": "Summary of lazy collection operations in JavaScriptAllonge, focusing on laziness, iterators, and memory efficiency."
+      "summary": "lazy collection operations from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2394,7 +2400,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.92-93"
       ],
-      "summary": "Summary of left-variadic destructuring from javascriptallonge.pdf"
+      "summary": "left-variadic destructuring from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2403,7 +2409,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.89-90"
       ],
-      "summary": "Summary of the Left-Variadic Functions section from JavaScript Allong\u00e9."
+      "summary": "Left-Variadic Functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2412,7 +2418,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.210-211"
       ],
-      "summary": "Summary of the 'Like this:' section from 'JavaScript Allong\u00e9'."
+      "summary": "Like this: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2421,7 +2427,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.111-113"
       ],
-      "summary": "Summary of the linear recursion concept from JavaScript Allong\u00e9."
+      "summary": "linear recursion from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2430,7 +2436,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.183-186"
       ],
-      "summary": "Chapter on using functions as data structures, specifically linked lists."
+      "summary": "lists with functions as data from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2439,7 +2445,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.133-136"
       ],
-      "summary": "Summary of literal object syntax in JavaScriptAllonge."
+      "summary": "literal object syntax from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2448,7 +2454,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.74-74"
       ],
-      "summary": "Chapter on magic names in JavaScript Allong\u00e9"
+      "summary": "Magic Names from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2457,7 +2463,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.75-77"
       ],
-      "summary": "Summary of the magic names this and arguments in fat arrow functions."
+      "summary": "magic names and fat arrows from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2466,7 +2472,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.177-179"
       ],
-      "summary": "Chapter on modeling data using functions, including K, I, and V combinators."
+      "summary": "Making Data Out Of Functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2475,7 +2481,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.113-114"
       ],
-      "summary": "Chapter on mapping in JavaScript Allong\u00e9"
+      "summary": "mapping from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2484,7 +2490,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.193-194"
       ],
-      "summary": "Chapter on mapWith function in JavaScript Allong\u00e9"
+      "summary": "mapWith from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2493,7 +2499,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.14-15"
       ],
-      "summary": "Summary of Matthew Knox's contribution to JavaScript Allong\u00e9."
+      "summary": "matthew knox from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2502,7 +2508,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.86-87"
       ],
-      "summary": "Chapter on the Maybe pattern and its implementation in JavaScript"
+      "summary": "Maybe from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2511,7 +2517,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.286-287"
       ],
-      "summary": "Chapter on memoizing iterables in JavaScript"
+      "summary": "memoizing an iterable from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2520,7 +2526,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.14-14"
       ],
-      "summary": "Review of JavaScript Allong\u00e9 by Michael Fogus"
+      "summary": "michael fogus from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2529,7 +2535,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.236-239"
       ],
-      "summary": "Summary of the 'more generators' section from javascriptallonge.pdf (pages 236-239)."
+      "summary": "more generators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2538,7 +2544,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.145-147"
       ],
-      "summary": "Chapter on building with mutation in JavaScript"
+      "summary": "building with mutation from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2547,7 +2553,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.143-145"
       ],
-      "summary": "Chapter on mutation and data structures from JavaScript Allong\u00e9."
+      "summary": "mutation and data structures from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2556,7 +2562,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.62-62"
       ],
-      "summary": "Summary of the 'Naming Functions' section from 'JavaScript Allong\u00e9'."
+      "summary": "Naming Functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2565,7 +2571,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.54-55"
       ],
-      "summary": "Chapter on nested blocks in JavaScript Allong\u00e9."
+      "summary": "nested blocks from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2574,7 +2580,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.198-200"
       ],
-      "summary": "Object.assign \u2013 object copying, extending, and prototype mixins"
+      "summary": "Object.assign from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2583,7 +2589,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.88-88"
       ],
-      "summary": "Summary of the \"Once\" chapter from JavaScript Allong\u00e9."
+      "summary": "Once from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2592,7 +2598,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.26-27"
       ],
-      "summary": "Summary of the 'operations on numbers' section from javascriptallonge.pdf"
+      "summary": "operations on numbers from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2601,7 +2607,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.217-221"
       ],
-      "summary": "Summary of operations on ordered collections from javascriptallonge.pdf"
+      "summary": "operations on ordered collections from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2610,7 +2616,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.285-286"
       ],
-      "summary": "Summary of the section on operations that compose two or more iterables into an iterable from javascriptallonge."
+      "summary": "operations that compose two or more iterables into an iterable from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2619,7 +2625,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.286-286"
       ],
-      "summary": "Summary of the section 'operations that transform an iterable into a value' from javascriptallonge.pdf."
+      "summary": "operations that transform an iterable into a value from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2628,7 +2634,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.284-285"
       ],
-      "summary": "Summary of the section 'operations that transform one iterable into another' from javascriptallonge.pdf"
+      "summary": "operations that transform one iterable into another from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2646,7 +2652,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.216-217"
       ],
-      "summary": "Summary of ordered collections in JavaScript Allong\u00e9"
+      "summary": "ordered collections from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2655,7 +2661,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.91-92"
       ],
-      "summary": "Chapter on overcoming limitations in JavaScript, including left-variadic functions and the leftVariadic decorator."
+      "summary": "overcoming limitations from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2664,7 +2670,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.80-81"
       ],
-      "summary": "Chapter on partial application in JavaScript Allong\u00e9"
+      "summary": "Partial Application from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2673,7 +2679,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.94-94"
       ],
-      "summary": "Chapter on choice and truthiness in JavaScript"
+      "summary": "Picking the Bean: Choice and Truthiness from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2682,7 +2688,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.132-132"
       ],
-      "summary": "Summary of the Plain Old JavaScript Objects chapter from JavaScript Allong\u00e9"
+      "summary": "Plain Old JavaScript Objects from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2691,7 +2697,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.18-18"
       ],
-      "summary": "Summary of the Prelude: Values and Expressions over Coffee section from JavaScript Allong\u00e9."
+      "summary": "Prelude: Values and Expressions over Coffee from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2700,7 +2706,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.203-204"
       ],
-      "summary": "Summary of quasi-literals from javascriptallonge.pdf"
+      "summary": "quasi-literals from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2709,7 +2715,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.148-150"
       ],
-      "summary": "Summary of the reassignment chapter from JavaScript Allong\u00e9."
+      "summary": "Reassignment from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2718,7 +2724,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.60-61"
       ],
-      "summary": "Chapter on rebinding in JavaScript Allong\u00e9"
+      "summary": "rebinding from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2727,7 +2733,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.79-79"
       ],
-      "summary": "Chapter on recipes with basic functions in JavaScript Allong\u00e9."
+      "summary": "Recipes with Basic Functions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2736,7 +2742,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.191-191"
       ],
-      "summary": "Chapter on recipes with data from JavaScript Allong\u00e9."
+      "summary": "Recipes with Data from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2745,7 +2751,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.226-226"
       ],
-      "summary": "Summary of the recursive iterators section from JavaScript Allong\u00e9."
+      "summary": "recursive iterators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2754,7 +2760,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.22-23"
       ],
-      "summary": "Summary of the reference types chapter from JavaScript Allong\u00e9."
+      "summary": "reference types from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2763,7 +2769,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.2-3"
       ],
-      "summary": "Summary of Reg 'raganwald' Braithwaite's 'JavaScript Allong\u00e9' book."
+      "summary": "Reg 'raganwald' Braithwaite from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2781,7 +2787,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.279-280"
       ],
-      "summary": "Summary of the 'representing naughts and crosses as a stateful function' section from javascriptallonge."
+      "summary": "representing naughts and crosses as a stateful function from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2790,7 +2796,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.275-275"
       ],
-      "summary": "Summary of the chapter 'representing naughts and crosses as a stateless function' from the source 'javascriptallonge'."
+      "summary": "representing naughts and crosses as a stateless function from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2799,7 +2805,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.137-140"
       ],
-      "summary": "Summary of the revisiting linked lists chapter from JavaScript Allong\u00e9."
+      "summary": "revisiting linked lists from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2808,7 +2814,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.243-245"
       ],
-      "summary": "Chapter summary for 'rewriting iterable operations' from 'JavaScript Allong\u00e9'."
+      "summary": "rewriting iterable operations from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2817,7 +2823,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.292-292"
       ],
-      "summary": "Summary of Richard Feynman's QED and its explanation of Quantum Electrodynamics and the 'Sum of the Histories' methodology."
+      "summary": "Richard Feynman from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2826,7 +2832,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.186-188"
       ],
-      "summary": "Chapter on using functions as data structures in JavaScript, focusing on 'say please' pattern"
+      "summary": "say 'please' from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2835,7 +2841,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.196-196"
       ],
-      "summary": "Summary of the self-currying flip concept from 'JavaScript Allong\u00e9'."
+      "summary": "self-currying flip from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2844,7 +2850,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.109-111"
       ],
-      "summary": "Chapter on self-similarity and recursion in JavaScript"
+      "summary": "Self-Similarity from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2853,7 +2859,16 @@
       "sources": [
         "raw/javascriptallonge.pdf p.205-205"
       ],
-      "summary": "Summary of the 'Served by the Pot: Collections' section from JavaScript Allong\u00e9."
+      "summary": "Served by the Pot: Collections from raw/javascriptallonge.pdf."
+    },
+    {
+      "category": "source",
+      "name": "javascriptallonge-shadowy-variables-from-a-shadowy-planet",
+      "outbound_links": [],
+      "sources": [
+        "raw/javascriptallonge.pdf p.47-47"
+      ],
+      "summary": "shadowy variables from a shadowy planet from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2862,7 +2877,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.131-131"
       ],
-      "summary": "Summary of the 'so why arrays' section from javascriptallonge.pdf"
+      "summary": "so why arrays from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2871,7 +2886,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.128-130"
       ],
-      "summary": "History of Lisp and its influence on JavaScript, including CAR, CDR, and cons cells."
+      "summary": "some history from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2880,7 +2895,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.228-229"
       ],
-      "summary": "Summary of the state machines chapter from JavaScript Allong\u00e9."
+      "summary": "state machines from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2889,7 +2904,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.283-283"
       ],
-      "summary": "Summary of the book 'JavaScript Allong\u00e9'."
+      "summary": "summary from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2898,7 +2913,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.119-119"
       ],
-      "summary": "Tail-call optimization in JavaScript as described in 'JavaScript Allong\u00e9'."
+      "summary": "tail-call optimization from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2907,7 +2922,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.117-118"
       ],
-      "summary": "Chapter on tail calls and default arguments in JavaScript Allong\u2019e"
+      "summary": "Tail Calls (and Default Arguments) from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2916,7 +2931,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.84-85"
       ],
-      "summary": "Chapter on the tap combinator from JavaScript Allong\u00e9."
+      "summary": "Tap from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2925,7 +2940,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.49-50"
       ],
-      "summary": "Chapter on naming functions and using function expressions to bind values."
+      "summary": "That Constant Coffee Craving from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2934,7 +2949,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.9-9"
       ],
-      "summary": "Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions."
+      "summary": "that's nice. is that the only reason? from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2943,7 +2958,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.269-270"
       ],
-      "summary": "Summary of the 'the aftermath' chapter from JavaScript Allong\u00e9."
+      "summary": "the aftermath from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2952,7 +2967,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.264-269"
       ],
-      "summary": "The carpenter's solution to the loop detection problem in linked lists and chequerboard games."
+      "summary": "the carpenter's solution from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2961,7 +2976,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.74-75"
       ],
-      "summary": "Summary of the function keyword section from JavaScript Allong\u00e9"
+      "summary": "the function keyword from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2979,7 +2994,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.179-180"
       ],
-      "summary": "Chapter on the kestrel and the idiot functions from JavaScript Allong\u00e9."
+      "summary": "the kestrel and the idiot from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2988,7 +3003,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.261-264"
       ],
-      "summary": "The problem of determining if a game halts from a stream of directions, as presented in javascriptallonge.pdf p.261-264."
+      "summary": "the problem from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -2997,7 +3012,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.34-34"
       ],
-      "summary": "Summary of the simplest possible block concept from JavaScript Allong\u00e9."
+      "summary": "the simplest possible block from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3006,7 +3021,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.182-183"
       ],
-      "summary": "The Vireo (V combinator) and related combinators in the context of data structures."
+      "summary": "the vireo from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3015,7 +3030,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.280-282"
       ],
-      "summary": "Chapter on naughts and crosses game and implicit state representation in JavaScript control flow."
+      "summary": "this seems familiar from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3024,7 +3039,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.164-166"
       ],
-      "summary": "Chapter on loop detection algorithms: Tortoise and Hare, and Teleporting Turtle."
+      "summary": "Tortoises, Hares, and Teleporting Turtles from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3045,7 +3060,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.96-97"
       ],
-      "summary": "Summary of the truthiness and operators section from JavaScript Allong\u00e9."
+      "summary": "truthiness and operators from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3054,7 +3069,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.95-96"
       ],
-      "summary": "Chapter on truthiness and the ternary operator from JavaScript Allong\u00e9."
+      "summary": "truthiness and the ternary operator from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3063,7 +3078,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.82-83"
       ],
-      "summary": "Summary of the Unary function decorator section from 'JavaScript Allong\u00e9'."
+      "summary": "Unary from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3072,7 +3087,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.34-35"
       ],
-      "summary": "Summary of the undefined chapter from JavaScript Allong\u00e9."
+      "summary": "undefined from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3081,7 +3096,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.172-175"
       ],
-      "summary": "Chapter on unfolding and laziness in JavaScript Allong\u00e9."
+      "summary": "unfolding and laziness from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3090,7 +3105,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.22-22"
       ],
-      "summary": "Summary of value types in JavaScript, including primitive types and identity."
+      "summary": "value types from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3099,7 +3114,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.21-21"
       ],
-      "summary": "Chapter on values and identity in JavaScript Allong\u00e9."
+      "summary": "values and identity from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3108,7 +3123,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.19-20"
       ],
-      "summary": "Chapter on values and expressions in JavaScript Allong\u00e9"
+      "summary": "values are expressions from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3117,7 +3132,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.151-154"
       ],
-      "summary": "Summary of the 'var' keyword in JavaScript as described in 'JavaScript Allong\u00e9'."
+      "summary": "var from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3126,7 +3141,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.41-42"
       ],
-      "summary": "Chapter on variables and bindings in JavaScript Allong\u00e9"
+      "summary": "variables and bindings from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3135,7 +3150,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.35-35"
       ],
-      "summary": "Summary of the void chapter from JavaScript Allong\u00e9."
+      "summary": "void from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3144,7 +3159,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.278-279"
       ],
-      "summary": "Chapter on stateless functions and naughts-and-crosses game implementation in JavaScript."
+      "summary": "We get: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3153,7 +3168,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.229-230"
       ],
-      "summary": "Summary of the 'We'll keep it simple' section from JavaScript Allong\u00e9, focusing on generators vs. iterators."
+      "summary": "We'll keep it simple: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3162,7 +3177,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.10-11"
       ],
-      "summary": "Summary of the 'What JavaScript Allong\u00e9 is. And isn't.' section from javascriptallonge.pdf"
+      "summary": "What JavaScript Allong\u00e9 is. And isn't. from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3171,7 +3186,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.47-48"
       ],
-      "summary": "Chapter summary for 'which came first, the chicken or the egg?' from JavaScript Allong\u00e9"
+      "summary": "which came first, the chicken or the egg? from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3180,7 +3195,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.201-201"
       ],
-      "summary": "Chapter Why? from 'JavaScript Allong\u00e9' explaining the Y Combinator and its role in recursive functions without binding names."
+      "summary": "Why? from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3189,7 +3204,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.154-154"
       ],
-      "summary": "Summary of the section 'why const and let were invented' from javascriptallonge.pdf"
+      "summary": "why const and let were invented from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3198,7 +3213,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.7-9"
       ],
-      "summary": "Summary of the 'why the six edition' section from JavaScript Allong\u00e9."
+      "summary": "why the 'six' edition? from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3207,7 +3222,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.277-278"
       ],
-      "summary": "Summary of the 'Will be represented as' section from javascriptallonge.pdf, pages 277-278."
+      "summary": "Will be represented as: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3216,7 +3231,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.276-276"
       ],
-      "summary": "Chapter section on encoding game boards in different ways."
+      "summary": "Would be 3 , producing: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3225,7 +3240,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.155-157"
       ],
-      "summary": "Summary of the 'Yes. Consider this variation' section from javascriptallonge.pdf, pages 155-157, focusing on closure and variable scoping with var vs let."
+      "summary": "Yes. Consider this variation: from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3234,7 +3249,7 @@
       "sources": [
         "raw/javascriptallonge.pdf p.239-243"
       ],
-      "summary": "Chapter on yielding iterables from JavaScript Allong\u00e9."
+      "summary": "yielding iterables from raw/javascriptallonge.pdf."
     },
     {
       "category": "source",
@@ -3313,7 +3328,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf"
       ],
-      "summary": "Source summary for the Sword World RPG - Complete Edition rulebook."
+      "summary": "Source hub for the Sword World RPG - Complete Edition."
     },
     {
       "category": "source",
@@ -3322,7 +3337,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.14-16"
       ],
-      "summary": "Chapter 1.3 Skills from Sword World RPG - Complete Edition, covering skill basics, types, and adventurer skills."
+      "summary": "1.3 Skills from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3331,7 +3346,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.17-28"
       ],
-      "summary": "Overview of character creation process in Sword World RPG, including race selection, ability scores, skills, and equipment."
+      "summary": "1.4 Character Creation (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3340,7 +3355,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.17-30"
       ],
-      "summary": "Summary of character creation rules, weapons, armor, and skill-based restrictions."
+      "summary": "1.4 Character Creation (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3349,7 +3364,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.138-142"
       ],
-      "summary": "Summary of the Surprise Attacks section from Sword World RPG - Complete Edition, including rules for surprise attacks, penalties, and check tables."
+      "summary": "10.3 Surprise Attacks from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3358,7 +3373,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.142-148"
       ],
-      "summary": "Summary of chapter 11.2 Dark Magic (part 1) from Sword World RPG - Complete Edition, covering dark magic, dark priests, and basic dark magic spells."
+      "summary": "11.2 Dark Magic (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3367,7 +3382,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.142-148"
       ],
-      "summary": "Special dark magic spells for wicked gods, including Phalaris, The Nameless God of Madness, Kardis, and Mirleaf."
+      "summary": "11.2 Dark Magic (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3376,7 +3391,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.149-153"
       ],
-      "summary": "Chapter 11.3 on Dragon Roar Magic from Sword World RPG - Complete Edition, covering the basics, abilities, and spells of dragon priests."
+      "summary": "11.3 Dragon Roar Magic from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3385,7 +3400,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.154-158"
       ],
-      "summary": "Rules for asking NPCs to use magic in Sword World RPG, including costs, availability, and requirements for different magic spells."
+      "summary": "11.5 Asking NPCs to Use Magic from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3394,7 +3409,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.159-167"
       ],
-      "summary": "Rules for poison, illness and infection in Sword World RPG - Complete Edition, part 1."
+      "summary": "12.2 Rules for Poison, Illness and Infection (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3403,7 +3418,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.159-169"
       ],
-      "summary": "Rules for poison, illness and infection in Sword World RPG - Complete Edition, part 2"
+      "summary": "12.2 Rules for Poison, Illness and Infection (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3412,7 +3427,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.170-172"
       ],
-      "summary": "Summary of the 13.1 Types of Monsters section from Sword World RPG - Complete Edition"
+      "summary": "13.1 Types of Monsters from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3421,7 +3436,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.172-175"
       ],
-      "summary": "Section 13.2.1 of the Sword World RPG - Complete Edition, explaining how to read the monster catalog."
+      "summary": "13.2.1 How to Read the Monster Catalog from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3430,7 +3445,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.222-227"
       ],
-      "summary": "Magical creatures from Sword World RPG - Complete Edition, section 13.2.10, pages 222-227."
+      "summary": "13.2.10 Magical Creatures (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3439,7 +3454,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.222-229"
       ],
-      "summary": "Magical creatures section 13.2.10 from Sword World RPG - Complete Edition, covering air stalker, mutant monster, golems, and underworld creatures."
+      "summary": "13.2.10 Magical Creatures (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3448,7 +3463,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.230-234"
       ],
-      "summary": "Summary of the Humans section (13.2.12) from Sword World RPG - Complete Edition, covering normal humans, bandits, soldiers, and dark priests."
+      "summary": "13.2.12 Humans from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3457,7 +3472,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.176-180"
       ],
-      "summary": "Chapter 13.2.2 Fae describes fae monsters and their characteristics, including pixies, fairies, pookas, and featherfolk."
+      "summary": "13.2.2 Fae from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3466,7 +3481,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.181-184"
       ],
-      "summary": "Summary of the Spirits section (13.2.4) from Sword World RPG - Complete Edition, covering will-o-wisp, shade, brownie, undine, salamander, sandman, sylph, sprite, gnome, frau, leprechaun, dryad, and mad spirit of life."
+      "summary": "13.2.4 Spirits from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3475,7 +3490,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.185-187"
       ],
-      "summary": "Summary of the Titans section from Sword World RPG - Complete Edition, covering various titan monsters and their characteristics."
+      "summary": "13.2.5 Titans from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3484,7 +3499,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.188-198"
       ],
-      "summary": "Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 1), covering satyrs, ceiling hangers, harpies, hippocampi, medusas, and androscorpions."
+      "summary": "13.2.6 Mythical Beasts and Magical Beasts (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3493,7 +3508,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.188-198"
       ],
-      "summary": "Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 2), pages 188-198."
+      "summary": "13.2.6 Mythical Beasts and Magical Beasts (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3502,7 +3517,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.188-198"
       ],
-      "summary": "Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 3) from Sword World RPG - Complete Edition, pages 188-198"
+      "summary": "13.2.6 Mythical Beasts and Magical Beasts (part 3) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3511,7 +3526,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.199-211"
       ],
-      "summary": "Summary of the Animals (part 1) section from Sword World RPG - Complete Edition, covering monsters like wolves, giant rats, and hanger legs."
+      "summary": "13.2.7 Animals (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3520,7 +3535,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.199-211"
       ],
-      "summary": "Summary of animals from Sword World RPG - Complete Edition, section 13.2.7 (pages 199-211)."
+      "summary": "13.2.7 Animals (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3529,7 +3544,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.199-211"
       ],
-      "summary": "Summary of animals section 13.2.7 from Sword World RPG - Complete Edition, covering sand worms, giant seals, snakes, spiders, and octopuses."
+      "summary": "13.2.7 Animals (part 3) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3538,7 +3553,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.212-213"
       ],
-      "summary": "Summary of the Plants section (13.2.8) from Sword World RPG - Complete Edition, covering killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune."
+      "summary": "13.2.8 Plants from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3547,7 +3562,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.214-221"
       ],
-      "summary": "Summary of the undead section (13.2.9) from Sword World RPG - Complete Edition, covering monsters like alraune, flowers, fungus, buau zombies, skeletons, zombies, ashes, ghouls, sins, wights, haunts, ghosts, specters, phantoms, jack-o-lanterns, and dullahans."
+      "summary": "13.2.9 Undead (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3556,7 +3571,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.214-221"
       ],
-      "summary": "Summary of undead monsters in Sword World RPG - Complete Edition, part 2, covering headless horses, undead knights, wraiths, mummies, vampires, and undead kings."
+      "summary": "13.2.9 Undead (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3565,7 +3580,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.234-234"
       ],
-      "summary": "Monster Level and Adventurer Level rules for the Sword World RPG - Complete Edition, including level comparisons and scenario scaling."
+      "summary": "13.5 Monster Level and Adventurer Level from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3574,7 +3589,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.235-240"
       ],
-      "summary": "Summary of chapter 13.6 on handling monster special abilities from Sword World RPG - Complete Edition."
+      "summary": "13.6 Handling Monster Special Abilities from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3583,7 +3598,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.241-242"
       ],
-      "summary": "Summary of treasure and rewards in the Sword World RPG setting, including ancient kingdom treasures, adventurer's shops, and reward systems."
+      "summary": "14.1 Treasure and Rewards in Sword World from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3592,7 +3607,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.242-256"
       ],
-      "summary": "Magical Item List (part 1) from Sword World RPG - Complete Edition, pages 242-256"
+      "summary": "14.4 Magical Item List (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3601,7 +3616,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.242-256"
       ],
-      "summary": "Magical items list from Sword World RPG - Complete Edition, section 14.4, pages 242-256"
+      "summary": "14.4 Magical Item List (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3610,7 +3625,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.242-260"
       ],
-      "summary": "Magical items list part 3 from Sword World RPG - Complete Edition, pages 242-260"
+      "summary": "14.4 Magical Item List (part 3) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3619,7 +3634,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.261-264"
       ],
-      "summary": "Combat rules for when monsters roll dice in Sword World RPG"
+      "summary": "16.1 Combat in Which Monsters Roll Dice from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3628,7 +3643,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.264-268"
       ],
-      "summary": "Optional combat rules for Sword World RPG, including full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim."
+      "summary": "16.5 Combat Options from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3637,7 +3652,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.268-273"
       ],
-      "summary": "Extended rules for throwing multiple darts or daggers in Sword World RPG."
+      "summary": "16.7 Throwing Multiple Darts or Daggers from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3646,7 +3661,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.273-276"
       ],
-      "summary": "Rules for lost spells in the Sword World RPG - Complete Edition, including learning methods and spell requirements."
+      "summary": "17.2 Lost Spells from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3655,7 +3670,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.277-279"
       ],
-      "summary": "Rules for destroying structures in Sword World RPG - Complete Edition, including structure strength table and material-specific guidelines."
+      "summary": "18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3664,7 +3679,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.30-33"
       ],
-      "summary": "Chapter 2.3: Checks - baseline scores, target scores, success rolls, automatic success/failure, bonuses/penalties, difficulty checks, and resistance rolls."
+      "summary": "2.3 Checks from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3673,7 +3688,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.33-36"
       ],
-      "summary": "Summary of resistance rolls in Sword World RPG - Complete Edition, including life force and mental power resistance."
+      "summary": "2.7 Resistance Rolls from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3682,7 +3697,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.37-42"
       ],
-      "summary": "Rules for movement and actions in combat, including full movement, normal movement, and standing still, with restrictions on actions during each movement type."
+      "summary": "3.4 Movement and Actions from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3691,7 +3706,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.43-50"
       ],
-      "summary": "Chapter 4.5: Attacks From Characters Against Monsters, including hit checks, damage calculation, and defense mechanics."
+      "summary": "4.5 Attacks From Characters Against Monsters from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3700,7 +3715,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.50-56"
       ],
-      "summary": "Summary of unconscious and death checks in Sword World RPG - Complete Edition, including rules for unconsciousness, death checks, and mercy."
+      "summary": "4.9 Unconscious and Death Checks from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3709,7 +3724,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.56-56"
       ],
-      "summary": "Overview of the five types of magic in Sword World RPG: ancient, spirit, holy, dark, and dragon roar magic."
+      "summary": "5.1.1 Types of Magic from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3718,7 +3733,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.65-67"
       ],
-      "summary": "Summary of section 5.1.10 How to Read Magic Details from Sword World RPG - Complete Edition"
+      "summary": "5.1.10 How to Read Magic Details from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3727,7 +3742,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.68-82"
       ],
-      "summary": "Summary of the Ancient Magic List (part 1) from Sword World RPG - Complete Edition, covering 1st, 2nd, and 3rd level spells."
+      "summary": "5.1.12 Ancient Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3736,7 +3751,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.68-82"
       ],
-      "summary": "Summary of the Ancient Magic List (part 2) from Sword World RPG - Complete Edition, covering spells from Sharpness to See-Through."
+      "summary": "5.1.12 Ancient Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3745,7 +3760,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.68-82"
       ],
-      "summary": "Ancient Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Seal Enchantment, Steal Mind, Slow, Haste, Rune Rope, Dispel Order, Telekinesis, Teleport, Full Potential, Blade Net, Bend Bar, Polymorph, Magic Reflection, Illusionary Beast, Stun Cloud, Force Field, Lightning Bind, Wraith Form, Command Golem, Control Weather, Disintegrate, and Petrification."
+      "summary": "5.1.12 Ancient Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3754,7 +3769,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.68-83"
       ],
-      "summary": "Summary of the Ancient Magic List (part 4) from Sword World RPG - Complete Edition, covering spells like Petrify, Rune Shield, Dimension Gate, Death Cloud, Perfect Cancellation, and Meteor Strike."
+      "summary": "5.1.12 Ancient Magic List (part 4) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3763,7 +3778,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.84-95"
       ],
-      "summary": "Summary of the Spirit Magic List (part 1) from Sword World RPG - Complete Edition, pages 84-95."
+      "summary": "5.1.14 Spirit Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3772,7 +3787,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.84-95"
       ],
-      "summary": "Spirit Magic List (part 2) from Sword World RPG - Complete Edition, pages 84-95"
+      "summary": "5.1.14 Spirit Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3781,7 +3796,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.84-95"
       ],
-      "summary": "Summary of Spirit Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Protective Light, Plant Shell, Full Control Spirit, Ice Coffin, Ice Storm, Current, Suffocate, Nightmare, Firestorm, Maze Woods, and Earthquake."
+      "summary": "5.1.14 Spirit Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3790,7 +3805,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.96-98"
       ],
-      "summary": "Summary of 5.1.15 Holy Magic and the Priest Skill from Sword World RPG - Complete Edition."
+      "summary": "Section 5.1.15 covering holy magic, the priest skill, and related gods and restrictions."
     },
     {
       "category": "source",
@@ -3799,7 +3814,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.99-104"
       ],
-      "summary": "Basic Holy Magic List (part 1) from Sword World RPG - Complete Edition, pages 99-104"
+      "summary": "5.1.16 Basic Holy Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3808,7 +3823,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.99-108"
       ],
-      "summary": "Summary of the 5.1.16 Basic Holy Magic List (part 2) from Sword World RPG - Complete Edition."
+      "summary": "5.1.16 Basic Holy Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3817,7 +3832,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.56-60"
       ],
-      "summary": "Source summary of section 5.1.4 How to Use Magic from Sword World RPG - Complete Edition."
+      "summary": "5.1.4 How to Use Magic from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3826,7 +3841,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.61-64"
       ],
-      "summary": "Magic expansion and contraction rules for the Sword World RPG - Complete Edition, including types of expansions and contractions, and their effects on mental power consumption."
+      "summary": "5.1.7 Magic Expansion from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3835,7 +3850,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.109-113"
       ],
-      "summary": "Summary of the Spellsongs section (5.3) from Sword World RPG - Complete Edition, including rules, limitations, and effects."
+      "summary": "5.3 Spellsongs from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3844,7 +3859,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.113-117"
       ],
-      "summary": "Summary of the thief skill rules from Sword World RPG - Complete Edition, section 6.2, pages 113-117."
+      "summary": "6.2 Thief Skill from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3853,7 +3868,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.118-119"
       ],
-      "summary": "Summary of the Sage Skill section from Sword World RPG - Complete Edition, detailing its abilities and rules."
+      "summary": "6.4 Sage Skill from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3871,7 +3886,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.125-129"
       ],
-      "summary": "Summary of the Merchant Skill rules from Sword World RPG - Complete Edition, section 7.2"
+      "summary": "7.2 Merchant Skill from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3880,7 +3895,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.130-135"
       ],
-      "summary": "Experience points system in Sword World RPG, including skill advancement and ability score increases."
+      "summary": "8.1 Experience Points from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3889,7 +3904,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.135-138"
       ],
-      "summary": "Chapter 9.2: Should You Use a Target Score Check or a Difficulty Check? Explains when to use target scores vs. difficulty checks in Sword World RPG."
+      "summary": "9.2 Should You Use a Target Score Check or a Difficulty Check? from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3898,7 +3913,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.8-13"
       ],
-      "summary": "Overview of books related to Sword World RPG, including Replay Collections, Scenario Collections, World Guide, and other supplements."
+      "summary": "Books Related to Sword World RPG from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3907,7 +3922,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.294-311"
       ],
-      "summary": "Summary of charts and tables from Sword World RPG - Complete Edition, including skill abilities, ability scores, and equipment tables."
+      "summary": "Charts from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3916,7 +3931,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.1-7"
       ],
-      "summary": "Front matter of the Sword World RPG - Complete Edition rulebook, including introduction to RPGs, rulebook structure, and game requirements."
+      "summary": "Front matter from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3925,7 +3940,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.280-290"
       ],
-      "summary": "History, geography, and social structure of the world of Forcelia and the Alecrast continent in the Sword World RPG."
+      "summary": "Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf."
     },
     {
       "category": "source",
@@ -3934,7 +3949,7 @@
       "sources": [
         "raw/Sword World RPG - Complete Edition.pdf p.280-293"
       ],
-      "summary": "Summary of the Guide to Forcelia & Alecrast part 2, covering regions, nations, and cultural elements of Alecrast."
+      "summary": "Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf."
     }
   ]
 }

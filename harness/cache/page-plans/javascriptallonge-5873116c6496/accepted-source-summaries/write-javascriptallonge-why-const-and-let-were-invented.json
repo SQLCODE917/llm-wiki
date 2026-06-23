@@ -11,6 +11,12 @@
       "covered_source_claims": [
         "source-claim-unit-0124-0012"
       ]
+    },
+    {
+      "bullet_text": "JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. (raw/javascriptallonge.pdf p.154-154)",
+      "covered_source_claims": [
+        "source-claim-unit-0124-0011"
+      ]
     }
   ],
   "source_record_text": "Summary of the section 'why const and let were invented' from javascriptallonge.pdf"

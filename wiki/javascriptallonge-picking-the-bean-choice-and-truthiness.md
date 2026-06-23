@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-picking-the-bean-choice-and-truthiness
 page_kind: source
-summary: Chapter on choice and truthiness in JavaScript
+summary: Picking the Bean: Choice and Truthiness from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.94-94
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

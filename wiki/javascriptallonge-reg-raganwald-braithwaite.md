@@ -1,21 +1,21 @@
 ---
 page_id: javascriptallonge-reg-raganwald-braithwaite
 page_kind: source
-summary: Summary of Reg 'raganwald' Braithwaite's 'JavaScript Allongé' book.
+summary: Reg 'raganwald' Braithwaite from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.2-3
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This page summarizes the author and publishing details of *JavaScript Allongé* by Reg 'raganwald' Braithwaite.
+This page summarizes the key details about the JavaScript Allongé book by Reg 'raganwald' Braithwaite, as presented in the chunk from (raw/javascriptallonge.pdf p.2-3).
 
 ## Key supported claims
 
-- Reg 'raganwald' Braithwaite is the author of JavaScript Allongé, published by Leanpub (raw/javascriptallonge.pdf p.2-3).
-- The book was published on 2017-11-03 and is available for sale at http://leanpub.com/javascriptallongesix (raw/javascriptallonge.pdf p.2-3).
-- Also by Reg 'raganwald' Braithwaite are Kestrels, Quirky Birds, and Hopeless Egocentricity, among others (raw/javascriptallonge.pdf p.2-3).
+- This book is for sale at http://leanpub.com/javascriptallongesix (raw/javascriptallonge.pdf p.2-3).
+- This version was published on 2017-11-03 (raw/javascriptallonge.pdf p.2-3).
+- This is a Leanpub book that uses the Lean Publishing process (raw/javascriptallonge.pdf p.2-3).
 
 ## Technical details
 

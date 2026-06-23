@@ -565,6 +565,14 @@ def test_cosine_uses_explicit_bounded_loop_for_large_embeddings() -> None:
     assert cosine(left, right) > 0
 
 
+def test_embedding_counts_a_bounded_token_window() -> None:
+    vector = embedding(" ".join(f"term{index}" for index in range(5000)))
+
+    assert len(vector) == 4096
+    assert "term0" in vector
+    assert "term4096" not in vector
+
+
 class PagePlanSpyStore(WikiStore):
     def __init__(self, paths: WikiPaths) -> None:
         super().__init__(paths)

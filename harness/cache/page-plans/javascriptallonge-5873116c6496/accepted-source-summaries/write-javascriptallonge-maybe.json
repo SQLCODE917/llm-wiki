@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Function decorator for handling null/undefined values, borrowed from Haskell's maybe monad, Ruby's andand, and CoffeeScript's existential method invocation (raw/javascriptallonge.pdf p.86-87).",
+      "bullet_text": "The 'Maybe' pattern is a common solution for handling null or undefined values in JavaScript, as discussed in (raw/javascriptallonge.pdf p.86-87).",
       "covered_source_claims": [
         "source-claim-unit-0076-0008"
       ]
     },
     {
-      "bullet_text": "Maybe plays nicely with instance methods (raw/javascriptallonge.pdf p.86-87).",
+      "bullet_text": "A function using the 'Maybe' pattern checks for 'nothing' (null or undefined) and does nothing if the parameter is nothing, as described in (raw/javascriptallonge.pdf p.86-87).",
       "covered_source_claims": [
         "source-claim-unit-0076-0015"
       ]
     },
     {
-      "bullet_text": "The maybe decorator reduces logic of checking for nothing to a function call (raw/javascriptallonge.pdf p.86-87).",
+      "bullet_text": "The 'Maybe' pattern can be implemented using a function decorator, borrowing concepts from Haskell's Maybe monad and Ruby's andand, as explained in (raw/javascriptallonge.pdf p.86-87).",
       "covered_source_claims": [
-        "source-claim-unit-0076-0008"
+        "source-claim-unit-0076-0001"
       ]
     }
   ],
-  "source_record_text": "Chapter on the Maybe pattern and its implementation in JavaScript"
+  "source_record_text": "This chapter discusses the 'Maybe' pattern, a common approach in JavaScript for handling null or undefined values, and how it can be implemented using function decorators."
 }

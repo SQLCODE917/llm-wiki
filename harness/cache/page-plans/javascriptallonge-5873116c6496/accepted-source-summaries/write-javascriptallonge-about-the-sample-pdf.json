@@ -1,21 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The sample edition includes only a portion of the complete book (raw/javascriptallonge.pdf p.16-17).",
+      "bullet_text": "The sample edition includes only a portion of the complete book, (raw/javascriptallonge.pdf p.16-17).",
       "covered_source_claims": [
         "source-claim-unit-0015-0001"
       ]
     },
     {
-      "bullet_text": "The author does not have free coffee (raw/javascriptallonge.pdf p.16-17).",
+      "bullet_text": "Buying the book in progress entitles you to free updates, (raw/javascriptallonge.pdf p.16-17).",
       "covered_source_claims": [
         "source-claim-unit-0015-0007"
       ]
     },
     {
-      "bullet_text": "Buying the book in progress entitles you to free updates (raw/javascriptallonge.pdf p.16-17).",
+      "bullet_text": "Downloading the book today offers no risk, as the author guarantees a refund if the reader is not satisfied, (raw/javascriptallonge.pdf p.16-17).",
       "covered_source_claims": [
-        "source-claim-unit-0015-0001"
+        "source-claim-unit-0015-0004"
       ]
     }
   ],

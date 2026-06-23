@@ -396,11 +396,6 @@ async def test_pending_pdf_chunk_rewrites_existing_source_summary_page(
     _write_source_summary_artifact(store, "book.pdf", FUNCTIONS_PAGE, args)
     extraction = _one_chunk_extraction(paths)
     script = [
-        [ToolCall(tool="search_wiki", args={"query": FUNCTIONS_PAGE})],
-        [_plan_page_call(FUNCTIONS_PAGE, action="enrich")],
-        [ToolCall(tool="read_page", args={"page_id": FUNCTIONS_PAGE})],
-        [_write_page_call(FUNCTIONS_PAGE)],
-        [ToolCall(tool="finish_chunk", args={"report": "rewritten functions"})],
         [_plan_page_call(BOOK_HUB)],
         [_book_write_for_one_chunk()],
         [ToolCall(tool="finish_ingest", args={"report": "hub written"})],
@@ -419,7 +414,9 @@ async def test_pending_pdf_chunk_rewrites_existing_source_summary_page(
 
     saved = from_json((extraction.cache_dir / "manifest.json").read_text(encoding="utf-8"))
     assert saved.all_done
-    assert saved.chunks[0].notes == "rewritten functions"
+    assert saved.chunks[0].notes == (
+        "Replayed accepted source-summary draft artifact(s): book-functions"
+    )
     assert saved.chunks[0].pages_written == (FUNCTIONS_PAGE,)
 
 

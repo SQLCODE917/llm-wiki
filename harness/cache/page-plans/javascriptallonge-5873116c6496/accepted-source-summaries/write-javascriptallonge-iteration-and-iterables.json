@@ -9,6 +9,12 @@
     {
       "bullet_text": "Many objects in JavaScript can model collections of things. A collection is like a box containing stuff. Sometimes you just want to move the box around. But sometimes you want to open it up and do things with its contents. (raw/javascriptallonge.pdf p.206-206)",
       "covered_source_claims": [
+        "source-claim-unit-0156-0007"
+      ]
+    },
+    {
+      "bullet_text": "Sometimes you want to open it up and do things with its contents, like put a label on every bag of coffee in this box, or take out the bags of decaf and make a new box with just the decaf, or go through the bags and take out the first one marked 'Espresso' that contains at least 454 grams of beans. (raw/javascriptallonge.pdf p.206-206)",
+      "covered_source_claims": [
         "source-claim-unit-0156-0005"
       ]
     }

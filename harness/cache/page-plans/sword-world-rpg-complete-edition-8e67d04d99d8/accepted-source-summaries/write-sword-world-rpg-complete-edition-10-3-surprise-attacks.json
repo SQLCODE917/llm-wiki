@@ -9,25 +9,13 @@
     {
       "bullet_text": "The game master rolls 2D and adds it to monster level, then adventurers roll ranger skill + intelligence bonus (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
       "covered_source_claims": [
-        "source-claim-unit-0032-0016"
+        "source-claim-unit-0032-0019"
       ]
     },
     {
       "bullet_text": "If the score is lower than the monster column, monster has a chance for surprise; if greater than adventurer column, adventurers have a chance (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
       "covered_source_claims": [
-        "source-claim-unit-0032-0008"
-      ]
-    },
-    {
-      "bullet_text": "Table 10-2 shows intelligence modifiers for surprise attack checks (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
-      "covered_source_claims": [
-        "source-claim-unit-0032-0017"
-      ]
-    },
-    {
-      "bullet_text": "The surprised side cannot take assertive actions, but can avoid attacks or resist magic (raw/Sword World RPG - Complete Edition.pdf p.138-142).",
-      "covered_source_claims": [
-        "source-claim-unit-0032-0012"
+        "source-claim-unit-0032-0020"
       ]
     }
   ],

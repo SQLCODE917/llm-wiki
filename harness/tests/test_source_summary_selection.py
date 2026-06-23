@@ -87,6 +87,114 @@ def test_relevant_source_furniture_role_claim_still_filters_through_eligibility(
     assert all(claim.claim_eligibility == "eligible" for claim in selected)
 
 
+def test_source_summary_focus_prefers_strong_title_overlap() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    units = (
+        ExtractedUnit(
+            "unit-0001",
+            raw_source,
+            "p.10-12",
+            "Surprise Attacks",
+            (
+                "A referee must announce enemy action fairly.\n\n"
+                "The referee cannot change an attack after a character used a spell.\n\n"
+                "A later section begins after this neighboring rule.\n\n"
+                "Surprise Attacks\n\n"
+                "A surprise attack occurs when one side notices another side first.\n\n"
+                "The Surprise Attack Check compares monster and adventurer results.\n\n"
+                "Surprise attack modifiers decide which side may act first.\n\n"
+                "Surprised combatants cannot take assertive actions."
+            ),
+            "ok",
+        ),
+    )
+    claims = source_claims(units, Schema())
+    contract = resolve_page_body_contract(contract_for_page_kind(Schema(), "source"))
+
+    plan = source_summary_plan(
+        page_id="book-surprise-attacks",
+        contract=contract,
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+    assert plan is not None
+
+    selected = _selected_claims(claims, plan.selected_source_claims)
+    selected_text = " ".join(claim.statement for claim in selected)
+    assert "character used a spell" not in selected_text
+    assert "Surprise Attack Check" in selected_text
+
+
+def test_source_summary_focus_ignores_very_late_strong_overlap() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    filler = "\n\n".join(f"Catalog entry {index} has ordinary details." for index in range(25))
+    units = (
+        ExtractedUnit(
+            "unit-0001",
+            raw_source,
+            "p.20-30",
+            "Mythical Beasts and Magical Beasts",
+            (
+                "A ceiling hanger is a magical beast with unusual arms.\n\n"
+                "The catalog gives habitat and combat notes for many entries.\n\n"
+                f"{filler}\n\n"
+                "Androscorpio is a mythical beast with a scorpion body.\n\n"
+                "In combat, an androscorpio uses a sword and tail together."
+            ),
+            "ok",
+        ),
+    )
+    claims = source_claims(units, Schema())
+    contract = resolve_page_body_contract(contract_for_page_kind(Schema(), "source"))
+
+    plan = source_summary_plan(
+        page_id="book-mythical-beasts-and-magical-beasts-part-1",
+        contract=contract,
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+    assert plan is not None
+
+    selected = _selected_claims(claims, plan.selected_source_claims)
+    selected_text = " ".join(claim.statement for claim in selected)
+    assert "ceiling hanger" in selected_text
+    assert not all("Androscorpio" in claim.statement for claim in selected)
+
+
+def test_source_summary_selection_skips_low_centrality_worked_examples() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    units = (
+        ExtractedUnit(
+            "unit-0001",
+            raw_source,
+            "p.40-44",
+            "Undead",
+            (
+                "Undead resist poison and illness.\n\n"
+                "Skeletons attack intruders without fear.\n\n"
+                "Ghosts ignore ordinary weapons.\n\n"
+                "Therefore, they will best be handled by experienced heroes."
+            ),
+            "ok",
+        ),
+    )
+    claims = source_claims(units, Schema())
+    contract = resolve_page_body_contract(contract_for_page_kind(Schema(), "source"))
+
+    plan = source_summary_plan(
+        page_id="book-undead-part-1",
+        contract=contract,
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+    assert plan is not None
+
+    selected = _selected_claims(claims, plan.selected_source_claims)
+    selected_text = " ".join(claim.statement for claim in selected)
+    assert "best be handled" not in selected_text
+    assert "Undead resist poison" in selected_text
+
+
 def _selected_claims(
     claims: tuple[SourceClaim, ...], selected_ids: tuple[str, ...]
 ) -> tuple[SourceClaim, ...]:

@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The mad spirit of life pours excessive life spirit power into a single target each round, causing age shifting effects (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
+      "bullet_text": "Mad spirit of life pours excessive life spirit power into a target each round (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
       "covered_source_claims": [
-        "source-claim-unit-0043-0031"
+        "source-claim-unit-0043-0040"
       ]
     },
     {
-      "bullet_text": "Characters cannot move freely in deep snow areas where the yeti lives, suffering a -2 penalty to attack and evasion, and halved movement speed (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
+      "bullet_text": "Ogres, also known as jikininki, are carnivorous titans that enjoy human flesh (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
       "covered_source_claims": [
-        "source-claim-unit-0043-0034"
+        "source-claim-unit-0043-0043"
       ]
     },
     {
-      "bullet_text": "The yeti is a titan, about two and a half meters tall, rarely seen in cold, snowy regions, and its body is covered in thick white fur (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
+      "bullet_text": "Yeti mainly fight when hungry, and are weak to fire attacks (raw/Sword World RPG - Complete Edition.pdf p.185-187).",
       "covered_source_claims": [
-        "source-claim-unit-0043-0033"
+        "source-claim-unit-0043-0045"
       ]
     }
   ],
-  "source_record_text": "This section describes various titan monsters, including the mad spirit of life, valkyrie, yeti, ogre, spriggan, troll, hecatoncheir, and giants, detailing their characteristics, abilities, and behaviors."
+  "source_record_text": "This section describes various titan monsters found in the Sword World RPG setting, including their characteristics, abilities, and behaviors."
 }

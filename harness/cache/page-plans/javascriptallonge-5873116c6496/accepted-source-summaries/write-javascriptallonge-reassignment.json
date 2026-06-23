@@ -1,7 +1,19 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript does not permit us to rebind a name that has been bound with const . (raw/javascriptallonge.pdf p.148-150)",
+      "bullet_text": "JavaScript does not permit us to rebind a name that has been bound with const. (raw/javascriptallonge.pdf p.148-150)",
+      "covered_source_claims": [
+        "source-claim-unit-0121-0011"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript permits reassigning values to parameters. (raw/javascriptallonge.pdf p.148-150)",
+      "covered_source_claims": [
+        "source-claim-unit-0121-0013"
+      ]
+    },
+    {
+      "bullet_text": "The let keyword allows reassignment of variables. (raw/javascriptallonge.pdf p.148-150)",
       "covered_source_claims": [
         "source-claim-unit-0121-0010"
       ]

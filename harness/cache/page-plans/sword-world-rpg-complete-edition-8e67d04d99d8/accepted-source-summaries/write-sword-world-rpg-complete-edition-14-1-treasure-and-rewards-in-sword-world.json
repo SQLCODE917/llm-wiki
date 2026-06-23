@@ -1,29 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Adventurers search for treasure in ruins of the ancient kingdom, where coins do not exist (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
+      "bullet_text": "Adventurers in Alecrast search for treasure in ruins of the ancient kingdom, where neither silver nor gold coins exist (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
       "covered_source_claims": [
-        "source-claim-unit-0058-0010"
+        "source-claim-unit-0058-0019"
       ]
     },
     {
-      "bullet_text": "Treasures include handicrafts like gems, precious metals, wares, and works of art; magic items are extremely valuable (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
+      "bullet_text": "Magic items from the ancient kingdom are extremely valuable and cannot be produced today (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
       "covered_source_claims": [
-        "source-claim-unit-0058-0011"
+        "source-claim-unit-0058-0028"
       ]
     },
     {
-      "bullet_text": "Adventurers use adventurer's shops as bases, which double as taverns for exchanging information (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
+      "bullet_text": "The value of treasure from an adventure should match the level of risk, determined by multiplying total adventurer levels by 500 (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
       "covered_source_claims": [
-        "source-claim-unit-0058-0006"
+        "source-claim-unit-0058-0023"
       ]
     },
     {
-      "bullet_text": "Rewards for adventures should match risk level, calculated by multiplying player character levels by 500 (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
+      "bullet_text": "Rewards for adventurer jobs are typically 50~200 times the total adventurer level (raw/Sword World RPG - Complete Edition.pdf p.241-242).",
       "covered_source_claims": [
-        "source-claim-unit-0058-0001"
+        "source-claim-unit-0058-0021"
+      ]
+    },
+    {
+      "bullet_text": "Magical items range from 10 to 10,000 silver coins in value, with some items being of immeasurable value (raw/Sword World RPG - Complete Edition.pdf p.242).",
+      "covered_source_claims": [
+        "source-claim-unit-0058-0035"
       ]
     }
   ],
-  "source_record_text": "This section covers treasure and rewards in the Sword World RPG setting, detailing ancient kingdom treasures, adventurer's shops, reward systems, and magical item values."
+  "source_record_text": "Treasure and rewards in the Sword World RPG setting, including types of treasure, valuation, and adventurer's shops."
 }

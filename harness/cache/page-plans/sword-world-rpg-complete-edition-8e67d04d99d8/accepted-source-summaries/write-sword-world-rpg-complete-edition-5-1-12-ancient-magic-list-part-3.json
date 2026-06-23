@@ -1,11 +1,31 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Seal Enchantment hides magical power on objects, (raw/Sword World RPG - Complete Edition.pdf p.68-82).",
+      "bullet_text": "Seal Enchantment hides magical power on objects, base cost 30 mental power (raw/Sword World RPG - Complete Edition.pdf p.68).",
       "covered_source_claims": [
         "source-claim-unit-0017-0016"
       ]
+    },
+    {
+      "bullet_text": "Steal Mind steals mental power from targets, base cost 24 mental power (raw/Sword World RPG - Complete Edition.pdf p.69).",
+      "covered_source_claims": [
+        "source-claim-unit-0017-0017"
+      ]
+    },
+    {
+      "bullet_text": "Slow reduces target's agility by half, base cost 24 mental power (raw/Sword World RPG - Complete Edition.pdf p.70).",
+      "covered_source_claims": []
+    },
+    {
+      "bullet_text": "Haste doubles target's agility, base cost 24 mental power (raw/Sword World RPG - Complete Edition.pdf p.71).",
+      "covered_source_claims": [
+        "source-claim-unit-0017-0015"
+      ]
+    },
+    {
+      "bullet_text": "Rune Rope binds target with invisible rope, base cost 24 mental power (raw/Sword World RPG - Complete Edition.pdf p.72).",
+      "covered_source_claims": []
     }
   ],
-  "source_record_text": "This chunk covers a selection of ancient magic spells from the *Sword World RPG - Complete Edition*, detailing their properties, effects, and usage."
+  "source_record_text": "Ancient Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Seal Enchantment, Steal Mind, Slow, Haste, Rune Rope, Dispel Order, Telekinesis, Teleport, Full Potential, Blade Net, Bend Bar, Polymorph, Magic Reflection, Illusionary Beast, Stun Cloud, Force Field, Lightning Bind, Wraith Form, Command Golem, Control Weather, Disintegrate, and Petrification. (raw/Sword World RPG - Complete Edition.pdf p.68-82)"
 }

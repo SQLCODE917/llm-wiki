@@ -14,7 +14,6 @@ from pathlib import Path
 
 from llmwiki.pdf import ScannedPdfError
 from llmwiki.pdf.classify import PdfKind, classify_pdf
-from llmwiki.pdf.docling_extractor import extract_document_model
 from llmwiki.pdf.document import (
     DocumentModel,
     SourceChunk,
@@ -23,7 +22,6 @@ from llmwiki.pdf.document import (
     document_model_to_json,
     source_sections_to_json,
 )
-from llmwiki.pdf.extractor import read_page_char_counts
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json, to_json
 from llmwiki.pdf.recognizer import TextRecognizer
 
@@ -71,7 +69,7 @@ def ensure_extracted(
     cache_root: Path,
     recognizer: TextRecognizer,
     reextract: bool = False,
-    document_extractor: DocumentExtractFn = extract_document_model,
+    document_extractor: DocumentExtractFn | None = None,
 ) -> ExtractionResult:
     """Extract + chunk the PDF, or return the cached manifest (resume)."""
     _ = recognizer
@@ -85,6 +83,8 @@ def ensure_extracted(
             cache_dir=cache_dir,
         )
 
+    from llmwiki.pdf.extractor import read_page_char_counts
+
     if classify_pdf(read_page_char_counts(pdf_path)) is PdfKind.SCANNED:
         raise ScannedPdfError(
             f"raw/{source_rel} looks like a scanned (image-only) PDF; "
@@ -93,6 +93,7 @@ def ensure_extracted(
         )
 
     cache_dir.mkdir(parents=True, exist_ok=True)
+    document_extractor = document_extractor or _default_document_extractor()
     document_model = document_extractor(pdf_path, source_rel, sha)
     source_sections = build_source_sections(document_model)
     source_chunks = build_source_chunks(document_model, source_sections)
@@ -120,6 +121,12 @@ def ensure_extracted(
     result = ExtractionResult(manifest=manifest, cache_dir=cache_dir)
     save_manifest(result)
     return result
+
+
+def _default_document_extractor() -> DocumentExtractFn:
+    from llmwiki.pdf.docling_extractor import extract_document_model
+
+    return extract_document_model
 
 
 def _record(chunk: SourceChunk) -> ChunkRecord:

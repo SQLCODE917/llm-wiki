@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-interactive-generators
 page_kind: source
-summary: Summary of interactive generators in JavaScript Allongé.
+summary: interactive generators from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.282-283
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -18,3 +18,55 @@ Interactive Generators chapter covering generators, stateful functions, and exam
 - If we wanted to pass some state to the generator before it begins, we'd do that with parameters. (raw/javascriptallonge.pdf p.282-283)
 - If we could do that, a generator function that played naughts and crosses would look like this: (raw/javascriptallonge.pdf p.282-283)
 - Our generator function maintains state implicitly in its control flow, but returns an iterator that we call, it doesn't call us. (raw/javascriptallonge.pdf p.282-283)
+
+## Technical details
+
+### `technical-atom-6ddfd13c4643d485` code
+
+Citation: (raw/javascriptallonge.pdf p.282-283)
+
+```javascript
+function * generatorNaughtsAndCrosses () { const x1 = yield 0; switch (x1) { case 1: const x2 = yield 6; switch (x2) { case 2: case 4: case 5: case 7: case 8: yield 3; break ; case 3: const x3 = yield 8; switch (x3) { case 2: case 5: case 7: yield 4; break ; case 4: yield 7; break ;
+```
+
+### `technical-atom-91386e0617ecea45` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+Let's start by looking at a very simple example of a function that can be written statefully.
+
+### `technical-atom-70bef72c720a597a` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+Consider, for example, the moves in a game.
+
+### `technical-atom-772d1b88d2ba5437` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+The moves a player makes are a stream of values, just like the contents of an array can be consider a stream of values.
+
+### `technical-atom-449c45b24ee18436` requirement
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+But of course, iterating over a stream of moves requires us to wait for the game to be over so we know what moves were made.
+
+### `technical-atom-dd7f6cd83f5fa7e4` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+Let's take a look at a very simple example, naughts and crosses 99 (We really ought to do something like Chess, but that might be a little out of scope for this chapter).
+
+### `technical-atom-85e159978fa2e604` requirement
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+The first player will always be o , and they will always place their chequer in the top-left corner, coincidentally numbered o :
+
+### `technical-atom-ecf1ff5da5d2e045` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.273-275)
+
+Let's consider move 1 .

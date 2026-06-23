@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-copyright-notice
 page_kind: source
-summary: Copyright notice for JavaScript Allongé
+summary: Copyright Notice from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.293-293
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

@@ -3,7 +3,19 @@
     {
       "bullet_text": "The spell *Petrify* turns targets into stone, with specific restrictions on who can be affected (raw/Sword World RPG - Complete Edition.pdf p.68-83).",
       "covered_source_claims": [
+        "source-claim-unit-0018-0002"
+      ]
+    },
+    {
+      "bullet_text": "The *Rune Shield* spell creates a magical barrier that blocks all magic, except for non-removable spells, and allows the caster to still cast spells (raw/Sword World RPG - Complete Edition.pdf p.68-83).",
+      "covered_source_claims": [
         "source-claim-unit-0018-0028"
+      ]
+    },
+    {
+      "bullet_text": "The *Dimension Gate* spell creates a gate between two distant places, allowing instant travel, and can be semi-permanently fixed by ancient sorcerers (raw/Sword World RPG - Complete Edition.pdf p.68-83).",
+      "covered_source_claims": [
+        "source-claim-unit-0018-0013"
       ]
     }
   ],

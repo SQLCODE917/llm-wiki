@@ -1,18 +1,78 @@
 ---
 page_id: javascriptallonge-inside-out
 page_kind: source
-summary: Chapter on inside-out function patterns in JavaScript.
+summary: inside-out from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.50-51
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This chapter explores inside-out function patterns in JavaScript, focusing on techniques for binding names inside functions without incurring the cost of a function invocation.
+Chapter on inside-out function patterns in JavaScript allonge
 
 ## Key supported claims
 
-- Inside-out function patterns allow binding names inside functions without function invocation cost. (raw/javascriptallonge.pdf p.50-51)
-- IIFE (Immediately Invoked Function Expression) is a pattern where functions are written as expressions and immediately applied to arguments. (raw/javascriptallonge.pdf p.50-51)
-- Magic literals like 3.14159265 are discouraged in sustainable software development. (raw/javascriptallonge.pdf p.50-51)
+- The inside-out pattern binds names within functions, like (diameter) => ((PI) => diameter * PI)(3.14159265) (raw/javascriptallonge.pdf p.50-51).
+- Using magic literals like 3.14159265 is anathema to sustainable software development (raw/javascriptallonge.pdf p.50-51).
+- What would be very nice is if the language gave us a way to bind names inside of blocks without incurring the cost of a function invocation (raw/javascriptallonge.pdf p.50-51).
+
+## Technical details
+
+### `technical-atom-d9583bd5ee732714` code
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+(diameter) => ((PI) => diameter * PI)(3.14159265)
+```
+
+### `technical-atom-f53f1a1127cb197d` code
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+((diameter) => diameter * 3.14159265)(2) //=> 6.2831853 ((PI) => (diameter) => diameter * PI )(3.14159265)(2) //=> 6.2831853 ((diameter) => ((PI) => diameter * PI)(3.14159265))(2) //=> 6.2831853
+```
+
+### `technical-atom-b57edf9bed903da2` code
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+(diameter) => // ...
+```
+
+### `technical-atom-7a1056807fba7188` code
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+((PI) => // ... )(3.14159265)
+```
+
+### `technical-atom-c725b0b76758df95` code
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+((PI) => (diameter) => diameter * PI )(3.14159265)
+```
+
+### `technical-atom-7c02e176bb54dfd2` procedure
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+There's another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression.
+
+### `technical-atom-328897ffe434b785` procedure
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+We can turn things inside-out by putting the binding inside our diameter calculating function, like this:
+
+### `technical-atom-145681b8d7fb756d` procedure
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+29 JavaScript programmers regularly use the idea of writing an expression that denotes a function and then immediately applying it to arguments.

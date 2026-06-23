@@ -1,30 +1,34 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Satyrs are forest-dwelling creatures with human upper bodies, goat-like lower bodies, and horns, carrying flutes to manipulate emotions. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "Satyrs are forest-dwellers with human upper bodies, goat lower bodies, and horns, using flutes to manipulate emotions. (raw/Sword World RPG - Complete Edition.pdf p.188-198); Ceiling hangers are magical beasts with asymmetrical arms and glue-like lower body, attacking sleeping prey with surprise and strangling them. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
         "source-claim-unit-0044-0013"
       ]
     },
     {
-      "bullet_text": "Ceiling hangers are magical beasts with arms of different sizes and a glue-like lower body, attacking sleeping prey with surprise and strangling them. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "Harpy creatures have human female heads and bird bodies, with deela and furia races having different traits and abilities. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
-        "source-claim-unit-0044-0014"
+        "source-claim-unit-0044-0090"
       ]
     },
     {
-      "bullet_text": "Harpy creatures have human female heads and bird bodies, with two races: deela and furia, having different characteristics and abilities. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
-      "covered_source_claims": []
-    },
-    {
-      "bullet_text": "Hippocampi are sea creatures resembling horses with fish tails, capable of moving underwater quickly but suffering penalties on land. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "Hippocampi are sea creatures resembling horses with fish tails, moving quickly underwater but suffering penalties on land. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
-        "source-claim-unit-0044-0016"
+        "source-claim-unit-0044-0090"
       ]
     },
     {
-      "bullet_text": "Medusas are magical beasts in the form of human women with snakes for hair, capable of petrifying humans with their gaze and having poisonous snake attacks. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
-      "covered_source_claims": []
+      "bullet_text": "Medusas are magical beasts in human female form with snakes for hair, capable of petrifying with gaze and poisonous snake attacks. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "covered_source_claims": [
+        "source-claim-unit-0044-0070"
+      ]
+    },
+    {
+      "bullet_text": "Androscorpions are mythical beasts with human upper body and scorpion lower body, using spirit magic and possessing hallucinogenic poison. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "covered_source_claims": [
+        "source-claim-unit-0044-0070"
+      ]
     }
   ],
   "source_record_text": "This section describes various mythical and magical beasts in the Sword World RPG setting, including satyrs, ceiling hangers, harpies, hippocampi, medusas, and androscorpions. Each entry provides monster level, rarity, abilities, habitat, and combat statistics. Some creatures are possible exceptions to standard rules."

@@ -3,7 +3,19 @@
     {
       "bullet_text": "The Tortoise and Hare algorithm, discovered by Robert Floyd in the 1960s, uses two node references traversing the list at different speeds to detect loops. No matter how large the list is, the fast reference will eventually equal the slow reference, thus detecting the loop (raw/javascriptallonge.pdf p.164-166).",
       "covered_source_claims": [
+        "source-claim-unit-0130-0017"
+      ]
+    },
+    {
+      "bullet_text": "The Tortoise and Hare algorithm is a classic solution for detecting loops in a linked list using constant space, where one pointer moves at twice the speed of the other (raw/javascriptallonge.pdf p.164-166).",
+      "covered_source_claims": [
         "source-claim-unit-0130-0019"
+      ]
+    },
+    {
+      "bullet_text": "The Teleporting Turtle algorithm is an alternative approach that can be faster under certain circumstances, depending on the size of the loop and the relative costs of certain operations (raw/javascriptallonge.pdf p.164-166).",
+      "covered_source_claims": [
+        "source-claim-unit-0130-0018"
       ]
     }
   ],

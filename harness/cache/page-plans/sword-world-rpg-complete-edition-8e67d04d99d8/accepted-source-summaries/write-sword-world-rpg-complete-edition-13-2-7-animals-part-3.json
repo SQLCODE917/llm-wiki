@@ -1,33 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Sand worms usually burrow underground, but are always hungry, so when other creatures pass by on the ground, they leap out to attack them for food. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
+      "bullet_text": "Sand worms are giant carnivorous worms that leap out to attack when other creatures pass by on the ground. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
       "covered_source_claims": [
-        "source-claim-unit-0049-0006"
+        "source-claim-unit-0049-0012"
       ]
     },
     {
       "bullet_text": "Giant seals live in the frozen seas of the north, diving under the ice to feed on fish. (raw/Sword World RPG - Complete Edition.pdf p.199-211)",
       "covered_source_claims": [
-        "source-claim-unit-0049-0004"
+        "source-claim-unit-0049-0016"
       ]
     },
     {
       "bullet_text": "There are many types of snakes, including vipers, pythons, and hypnopythons. (raw/Sword World RPG - Complete Edition.pdf p.209)",
       "covered_source_claims": [
-        "source-claim-unit-0049-0007"
-      ]
-    },
-    {
-      "bullet_text": "Giant spiders attack by shooting sticky string and biting with fangs. (raw/Sword World RPG - Complete Edition.pdf p.210)",
-      "covered_source_claims": [
-        "source-claim-unit-0049-0004"
-      ]
-    },
-    {
-      "bullet_text": "Octopuses use tentacles to entangle and strangle prey, with killer octopuses being particularly dangerous. (raw/Sword World RPG - Complete Edition.pdf p.211)",
-      "covered_source_claims": [
-        "source-claim-unit-0049-0007"
+        "source-claim-unit-0049-0018"
       ]
     }
   ],

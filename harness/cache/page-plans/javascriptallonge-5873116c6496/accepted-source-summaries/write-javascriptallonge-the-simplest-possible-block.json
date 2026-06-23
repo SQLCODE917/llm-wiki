@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A block with no statements returns undefined (raw/javascriptallonge.pdf p.34-34).",
+      "bullet_text": "A block has zero or more statements, separated by semicolons. (raw/javascriptallonge.pdf p.34-34)",
+      "covered_source_claims": [
+        "source-claim-unit-0031-0002"
+      ]
+    },
+    {
+      "bullet_text": "A block returns the result of evaluating a block that has no statements. (raw/javascriptallonge.pdf p.34-34)",
       "covered_source_claims": [
         "source-claim-unit-0031-0003"
       ]
     },
     {
-      "bullet_text": "A block can be placed to the right of an arrow (raw/javascriptallonge.pdf p.34-34).",
-      "covered_source_claims": [
-        "source-claim-unit-0031-0001"
-      ]
-    },
-    {
-      "bullet_text": "A block is a sequence of statements separated by semicolons (raw/javascriptallonge.pdf p.34-34).",
+      "bullet_text": "There is another thing we can put to the right of an arrow, a block. (raw/javascriptallonge.pdf p.34-34)",
       "covered_source_claims": [
         "source-claim-unit-0031-0001"
       ]
     }
   ],
-  "source_record_text": "The simplest possible block in JavaScript Allongé is a block with no statements, which returns the result of evaluating that block."
+  "source_record_text": "A block has zero or more statements, separated by semicolons."
 }

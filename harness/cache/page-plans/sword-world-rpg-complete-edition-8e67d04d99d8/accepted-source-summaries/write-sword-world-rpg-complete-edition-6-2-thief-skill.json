@@ -1,7 +1,19 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The thief skill is taught at the thieves' guild (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "bullet_text": "The thief skill is taught at the thieves' guild, where members must pay 10% of their income or 500 silver coins annually (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0001"
+      ]
+    },
+    {
+      "bullet_text": "Some thief abilities, such as lockpicking, are not retriable once failed (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
+      "covered_source_claims": [
+        "source-claim-unit-0026-0003"
+      ]
+    },
+    {
+      "bullet_text": "The thief skill includes combat abilities with a different fighting style than fighters, focusing on vital points and critical targets (raw/Sword World RPG - Complete Edition.pdf p.113-117).",
       "covered_source_claims": [
         "source-claim-unit-0026-0004"
       ]

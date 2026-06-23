@@ -41,6 +41,8 @@ class TechnicalAtom:
             raise ValueError("TechnicalAtom requires a technical payload.")
         if len(self.technical_payload) > MAX_TECHNICAL_PAYLOAD_CHARS:
             raise ValueError("TechnicalAtom technical_payload exceeds bounded size.")
+        if "```" in self.technical_payload:
+            raise ValueError("TechnicalAtom payload must not include Markdown fences.")
 
     @property
     def source_citation(self) -> str:
@@ -62,11 +64,30 @@ class TechnicalAtomCatalog:
         return tuple((kind, counts[kind]) for kind in sorted(counts))
 
 
+_RENDER_KIND_PRIORITY = {
+    "code": 0,
+    "formula": 1,
+    "procedure": 2,
+    "requirement": 3,
+    "exception": 4,
+    "worked-example": 5,
+    "table-row": 6,
+}
+
+
 def render_technical_details_section(catalog: TechnicalAtomCatalog, page_id: str) -> str:
-    atoms = catalog.atoms_for_page(page_id)
+    atoms = _render_order(catalog.atoms_for_page(page_id))
     if not atoms:
         return ""
     return "\n\n".join(("## Technical details", *(_render_atom(atom) for atom in atoms)))
+
+
+def _render_order(atoms: tuple[TechnicalAtom, ...]) -> tuple[TechnicalAtom, ...]:
+    ordered = sorted(
+        enumerate(atoms),
+        key=lambda item: (_RENDER_KIND_PRIORITY.get(item[1].atom_kind, 99), item[0]),
+    )
+    return tuple(atom for _index, atom in ordered)
 
 
 def _render_atom(atom: TechnicalAtom) -> str:

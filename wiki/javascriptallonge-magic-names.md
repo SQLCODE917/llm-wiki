@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-magic-names
 page_kind: source
-summary: Chapter on magic names in JavaScript Allongé
+summary: Magic Names from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.74-74
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

@@ -1,3 +1,7 @@
+from dataclasses import replace
+
+import pytest
+
 from llmwiki.config import WikiPaths
 from llmwiki.domain.answer_evaluation import AnswerEvaluationCase, evaluate_answer
 from llmwiki.domain.claim_support_selection import select_claim_support_candidates
@@ -18,9 +22,15 @@ from llmwiki.domain.objects import (
 )
 from llmwiki.domain.pages import PageMetadata, WikiPage
 from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
+from llmwiki.domain.technical_atom_detection import TechnicalAtomKind, claim_kind, is_formula
 from llmwiki.domain.technical_atom_io import (
     technical_atom_catalog_from_json,
     technical_atom_catalog_to_json,
+)
+from llmwiki.domain.technical_atoms import (
+    TechnicalAtom,
+    TechnicalAtomCatalog,
+    render_technical_details_section,
 )
 from llmwiki.store import WikiStore
 from llmwiki.workflows.source_summary_write import (
@@ -77,6 +87,96 @@ def test_technical_atom_ids_are_stable_for_same_payload_and_evidence() -> None:
     assert [atom.technical_atom_id for atom in first.technical_atoms] == [
         atom.technical_atom_id for atom in second.technical_atoms
     ]
+
+
+def test_claim_fenced_code_uses_inner_payload_and_dedupes_structural_atom() -> None:
+    plan, _registry = _plan(_technical_source())
+    raw = plan.source_bundle.raw_sources[0]
+    plan = replace(
+        plan,
+        source_claims=(
+            *plan.source_claims,
+            _claim(raw, "claim-code", "``` const add = (a, b) => a + b; ```", "function"),
+        ),
+    )
+    registry = build_evidence_registry(
+        plan, (source_text_from_text("rules.md", _technical_source()),)
+    )
+
+    catalog = build_technical_atom_catalog(
+        source_locator="rules.md",
+        page_plan=plan,
+        evidence_registry=registry,
+        artifact_fingerprint="fp",
+    )
+
+    code_payloads = tuple(
+        atom.technical_payload for atom in catalog.technical_atoms if atom.atom_kind == "code"
+    )
+    assert code_payloads.count("const add = (a, b) => a + b;") == 1
+    assert "add = (a, b) => a + b;" not in code_payloads
+    assert all("```" not in payload for payload in code_payloads)
+
+
+def test_atom_payload_rejects_markdown_fences() -> None:
+    with pytest.raises(ValueError, match="must not include Markdown fences"):
+        TechnicalAtom(
+            technical_atom_id="technical-atom-test",
+            source_locator="rules.md",
+            page_id="rules",
+            atom_kind="code",
+            title="code",
+            technical_payload="```js\nconst add = (a, b) => a + b;\n```",
+            normalized_fields=(("source_citation", "raw/rules.md"),),
+            source_claim_ids=(),
+            evidence_ids=("evidence-1",),
+            source_range_id="source-range-rules",
+        )
+
+
+def test_formula_detection_ignores_javascript_equality_prose() -> None:
+    assert not is_formula(
+        "We have managed to provide the exact same functionality that === and ?: provided."
+    )
+
+
+def test_procedure_claim_detection_requires_operational_sequence() -> None:
+    raw = RawSource("rules.md", "markdown")
+
+    assert (
+        claim_kind(_claim(raw, "claim-step-through", "Let's step through its execution.", ""))
+        is None
+    )
+    assert (
+        claim_kind(_claim(raw, "claim-first-then", "First, roll 2D, then add modifier.", ""))
+        == "procedure"
+    )
+
+
+def test_non_code_claims_with_fences_do_not_become_atoms() -> None:
+    plan, _registry = _plan(_technical_source())
+    raw = plan.source_bundle.raw_sources[0]
+    statement = "It would be: const cons = [car, ...cdr]; oneTwoThree = [1, 2, 3]; ```"
+    plan = replace(
+        plan,
+        source_claims=(
+            *plan.source_claims,
+            _claim(raw, "claim-mixed-fence", statement, "procedure"),
+        ),
+    )
+    registry = build_evidence_registry(
+        plan, (source_text_from_text("rules.md", _technical_source()),)
+    )
+
+    catalog = build_technical_atom_catalog(
+        source_locator="rules.md",
+        page_plan=plan,
+        evidence_registry=registry,
+        artifact_fingerprint="fp",
+    )
+
+    assert all("```" not in atom.technical_payload for atom in catalog.technical_atoms)
+    assert statement not in tuple(atom.technical_payload for atom in catalog.technical_atoms)
 
 
 def test_builder_does_not_branch_on_source_file_name() -> None:
@@ -147,6 +247,22 @@ def test_source_summary_page_body_appends_technical_details(
     assert "## Technical details" in body
     assert "const add = (a, b) => a + b;" in body
     assert "Citation: (raw/rules.md normalized:L1-L12)" in body
+
+
+def test_technical_details_render_formulas_before_table_rows() -> None:
+    catalog = TechnicalAtomCatalog(
+        catalog_id="catalog-rules",
+        source_locator="rules.md",
+        artifact_fingerprint="fp",
+        technical_atoms=(
+            _atom("technical-atom-table", "table-row", "| 2D | Result |"),
+            _atom("technical-atom-formula", "formula", "attack power = skill + dexterity"),
+        ),
+    )
+
+    rendered = render_technical_details_section(catalog, "rules")
+
+    assert rendered.index("attack power = skill + dexterity") < rendered.index("| 2D | Result |")
 
 
 def test_claim_support_selection_samples_technical_atom_candidates(
@@ -272,4 +388,19 @@ def _claim(raw: RawSource, claim_id: str, statement: str, role: str) -> SourceCl
         source_span="L1-L13",
         claim_role_tags=(role,),
         claim_salience=1.0,
+    )
+
+
+def _atom(atom_id: str, kind: TechnicalAtomKind, payload: str) -> TechnicalAtom:
+    return TechnicalAtom(
+        technical_atom_id=atom_id,
+        source_locator="rules.md",
+        page_id="rules",
+        atom_kind=kind,
+        title=kind,
+        technical_payload=payload,
+        normalized_fields=(("source_citation", "raw/rules.md"),),
+        source_claim_ids=(),
+        evidence_ids=("evidence-1",),
+        source_range_id="source-range-rules",
     )

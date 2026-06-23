@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-recipes-with-basic-functions
 page_kind: source
-summary: Chapter on recipes with basic functions in JavaScript Allongé.
+summary: Recipes with Basic Functions from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.79-79
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

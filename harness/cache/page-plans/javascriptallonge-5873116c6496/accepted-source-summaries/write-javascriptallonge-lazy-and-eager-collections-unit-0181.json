@@ -1,17 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "We can make an eager collection out of any collection that is gatherable, meaning it has a .from method: (raw/javascriptallonge.pdf p.256-260)",
+      "bullet_text": "An eager collection returns a collection of its own type from each method, and can be made from any gatherable collection. (raw/javascriptallonge.pdf p.256-260)",
       "covered_source_claims": [
         "source-claim-unit-0181-0002"
       ]
     },
     {
-      "bullet_text": "We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs: (raw/javascriptallonge.pdf p.256-260)",
+      "bullet_text": "EagerCollection is a mixin that adds methods like map, filter, and reduce to gatherable collections. (raw/javascriptallonge.pdf p.256-260)",
       "covered_source_claims": [
         "source-claim-unit-0181-0008"
       ]
+    },
+    {
+      "bullet_text": "The Pair implementation shows how to mix EagerCollection into a gatherable type to get collection methods. (raw/javascriptallonge.pdf p.256-260)",
+      "covered_source_claims": [
+        "source-claim-unit-0181-0006"
+      ]
     }
   ],
-  "source_record_text": "This chapter explains why JavaScript collections might benefit from lazy evaluation, critiques the fat‑object approach, and presents a reusable LazyCollection mixin that supplies map, reduce, filter, and find via iterator protocols."
+  "source_record_text": "Chapter on eager and lazy collections in JavaScript Allongé."
 }

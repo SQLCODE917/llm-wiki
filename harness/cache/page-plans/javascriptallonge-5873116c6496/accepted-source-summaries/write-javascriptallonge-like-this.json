@@ -9,6 +9,12 @@
     {
       "bullet_text": "When working with objects, we do things the object way. (raw/javascriptallonge.pdf p.210-211)",
       "covered_source_claims": [
+        "source-claim-unit-0159-0005"
+      ]
+    },
+    {
+      "bullet_text": "Having started by building functional iterators, we understand what is happening underneath the object's scaffolding. (raw/javascriptallonge.pdf p.210-211)",
+      "covered_source_claims": [
         "source-claim-unit-0159-0004"
       ]
     }

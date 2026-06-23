@@ -1,16 +1,68 @@
 ---
 page_id: sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2
 page_kind: source
-summary: Summary of the 5.1.16 Basic Holy Magic List (part 2) from Sword World RPG - Complete Edition.
+summary: 5.1.16 Basic Holy Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.99-108
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section details basic holy magic spells, including resurrection, soul saving, and reincarnation spells. It also covers special holy magic spells for specific deities like Pharis, Myrii, Rahda, Cha Za, Marfa, and Braki. Some spell effects are unknown.
+Basic Holy Magic List (part 2) from Sword World RPG - Complete Edition, section 5.1.16, pages 99-108. Spells include *Call God*, *Save Soul*, *Reincarnation*, and various god-specific spells. Unknown aspects of spell effects exist.
 
 ## Key supported claims
 
-- Resurrection adds +6 if corpse is not immediately dying, unknown if corpse is decapitated (raw/Sword World RPG - Complete Edition.pdf p.99-108).
+- *Reincarnation* and *Save Soul* handle resurrection and undead souls (raw/Sword World RPG - Complete Edition.pdf p.99-108).
+- *Call God* summons a god, but caster's soul is destroyed (raw/Sword World RPG - Complete Edition.pdf p.99-108).
+- Gods have specific spells like *Sense Evil*, *Jihad*, *Battle Song*, *Divine Armor*, *Inspiration*, *Weak Point*, *Legend*, *Luck*, *Guard Trading*, *Peace*, *Return Home*, *Sense Metal*, and *Heat Metal* (raw/Sword World RPG - Complete Edition.pdf p.99-108).
+
+## Technical details
+
+### `technical-atom-254694fde76de186` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Base Mental Power Cost=50
+
+### `technical-atom-dec8090b571a0a92` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Distance=Caster Area=Caster Duration=10 minutes
+
+### `technical-atom-6ddf9dca4db52bbd` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Effect=Temporarily summons the god the caster worships
+
+### `technical-atom-9793633510aa2210` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Type=Target score Expansion=Final score, duration Resist=None
+
+### `technical-atom-dd955ecb999bb383` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Base Mental Power Cost=40 Distance=Touch Area=One Soul Duration=Instant Effect=Rescue an undead soul Type=Ritual Expansion=Final score Resist=Negated effect
+
+### `technical-atom-8167668f198a36ff` table-row
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+|Final Score|Time to regain memories|
+
+### `technical-atom-a8098f07a40d56c3` table-row
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+|20 or less|Memories cannot be regained naturally|
+
+### `technical-atom-4042207c848cd9f7` table-row
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+|21|30 years|

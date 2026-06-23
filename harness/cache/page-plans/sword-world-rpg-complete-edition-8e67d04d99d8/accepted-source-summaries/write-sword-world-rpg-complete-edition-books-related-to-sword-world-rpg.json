@@ -1,11 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The Sword World RPG Replay Collections help understand gameplay through actual play reproductions, though they are based on the old rule version and may have contradictions (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
+      "bullet_text": "The _Sword World RPG Replay Collections_ help learn how to play the game via conversations between GM and players, but they're based on the old version of rules and may have contradictions (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
       "covered_source_claims": [
         "source-claim-unit-0002-0001"
       ]
+    },
+    {
+      "bullet_text": "The _Duda RPG Replay Collection_ series uses Sword World RPG rules but with added humorous mystery elements like 'inept detective checks' (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0003"
+      ]
+    },
+    {
+      "bullet_text": "The _Sword World RPG Scenario Collections_ save GMs from creating scenarios and can be used nearly as-is, though some follow the old version of rules (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0002"
+      ]
     }
   ],
-  "source_record_text": "This section introduces supplementary materials for the Sword World RPG, such as Replay Collections, Scenario Collections, World Guide, and other related works."
+  "source_record_text": "Summary of books related to Sword World RPG, including Replay Collections, Scenario Collections, World Guide, Novels, and other rulebooks."
 }

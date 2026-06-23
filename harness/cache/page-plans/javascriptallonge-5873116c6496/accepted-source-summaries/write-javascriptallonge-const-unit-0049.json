@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The const keyword introduces one or more bindings in the block that encloses it, without incurring the cost of a function invocation (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0005"
+      ]
+    },
+    {
+      "bullet_text": "const statements occur inside blocks, and cannot be used when writing a fat arrow that has an expression as its body (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0004"
+      ]
+    },
+    {
+      "bullet_text": "const allows binding any expression, including functions, to names, enabling helper functions to be bound in a readable way (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0007"
+      ]
+    },
+    {
+      "bullet_text": "Multiple bindings can be declared in a single const statement by separating them with commas, with one binding per line recommended for readability (raw/javascriptallonge.pdf p.51-53).",
+      "covered_source_claims": [
+        "source-claim-unit-0049-0011"
+      ]
+    }
+  ],
+  "source_record_text": "The const keyword in JavaScript provides a way to bind values to names in a block-scoped manner. This chunk discusses the const keyword, its usage in binding values and functions, and its advantages over other approaches."
+}

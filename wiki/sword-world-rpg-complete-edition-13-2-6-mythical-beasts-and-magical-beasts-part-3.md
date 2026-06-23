@@ -1,9 +1,9 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3
 page_kind: source
-summary: Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 3) from Sword World RPG - Complete Edition, pages 188-198
+summary: 13.2.6 Mythical Beasts and Magical Beasts (part 3) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.188-198
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
@@ -13,6 +13,58 @@ This section describes several mythical and magical beasts, including the humbab
 
 ## Key supported claims
 
-- A humbaba can spit fire once every 3 rounds, with damage from a strike power 20 roll plus 10 bonus damage; a successful mental power resistance roll reduces the strike power to 10. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
-- The humbaba's fire causes a disease called _humbaba curse_, which can be contracted with a 2D roll (a 7 or greater is needed to avoid infection). (raw/Sword World RPG - Complete Edition.pdf p.188-198)
-- The roc is a giant bird with a 20-meter wingspan, second only to the dragon in fear, and can carry humansized animals with its talons. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Humbaba spits fire once every 3 rounds. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Humbaba's fire causes a disease. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Roc is a giant bird, second only to dragon. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Lesser dragons breathe fire in 20-meter radius. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+- Elder dragons use ancient magic and roar magic. (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+## Technical details
+
+### `technical-atom-b61808facc774fb0` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+## Monster Level=12
+
+### `technical-atom-7bdec389a8f919c0` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Rarity=13 Agility=10
+
+### `technical-atom-9bc67a10b9bf7f66` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Movement Speed=10/40 (air) Number=One Frequency=Very Rare Intellect=Animal Reaction=Neutral Attack Points=Beak:19 (12)/Talons:20 (13) Strike Points=22/22
+
+### `technical-atom-5997fad08b42dc84` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Evasion Points=17 (10) Defense Points=16 Life Points/Resistance=40/24 (17) Mental Points/Resistance=20/21 (14)
+
+### `technical-atom-a84166fe35d5fea2` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+## Special Abilities=Capture
+
+### `technical-atom-8f46cb38c41cb172` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Habitat=Rarely seen on the distant southern islands of Alecrast
+
+### `technical-atom-709b0d81e9c06afc` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Languages=None Perception=Five senses
+
+### `technical-atom-d06c8edcd1d95fce` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Monster Level=3 Rarity=13 Agility=6 Movement Speed=6 Number=One to several

@@ -6,13 +6,9 @@ import re
 
 from llmwiki.domain.planning_analysis import tokens
 
-
-def is_source_furniture(lowered: str) -> bool:
-    if ("to the left of" in lowered or "to the right of" in lowered) and "field" in lowered:
-        return True
-    if "field to write" in lowered or "field labeled" in lowered:
-        return True
-    furniture_patterns = (
+_FURNITURE_REGEXES = tuple(
+    re.compile(pattern)
+    for pattern in (
         r"©",
         r"\(c\)",
         r"\bcopyright\b",
@@ -36,7 +32,62 @@ def is_source_furniture(lowered: str) -> bool:
         r"\beverything is explained\b",
         r"\bpage \d+\b",
     )
-    if any(re.search(pattern, lowered) for pattern in furniture_patterns):
+)
+_SHORT_BYLINE_REGEXES = (
+    re.compile(r"^(?:by|written by|edited by|translated by|illustrated by|authored by)\b"),
+    re.compile(r"\b(?:written|edited|translated|illustrated|authored|published)\s+by\b"),
+)
+_RHETORICAL_REGEXES = tuple(
+    re.compile(pattern)
+    for pattern in (r"\bwhy\?\b", r"\bwhat if\b", r"\bhow would\b", r"\bwouldn'?t it\b")
+)
+_NARRATIVE_PHRASES = (
+    "dear reader",
+    "let us",
+    "let's",
+    "we will",
+    "we are going to",
+    "imagine",
+    "the story",
+    "once upon",
+    "they are given",
+    "they are led",
+    "they are told",
+    "they find",
+    "after a bit",
+    "interview",
+    "recruiter",
+    "conference room",
+    "arrived early",
+    "someone asked me",
+    "espresso",
+    "ristretto",
+    "coffee enthusiasts everywhere",
+    "bob was well-known",
+    "blind dating",
+    "clients often needed experience",
+    "asks us to",
+    "asks you to",
+)
+_FIRST_PERSON_NARRATIVE_MARKERS = (
+    "i came across",
+    "i went",
+    "i pondered",
+    "i told",
+    "i think",
+    "i thought",
+    "i asked",
+    "i couldn't",
+    "i couldnt",
+)
+
+
+def is_source_furniture(lowered: str) -> bool:
+    if ("to the left of" in lowered or "to the right of" in lowered) and "field" in lowered:
+        return True
+    if "field to write" in lowered or "field labeled" in lowered:
+        return True
+    if _matches_any(_FURNITURE_REGEXES, lowered):
         return True
     statement_tokens = tokens(lowered)
     if len(statement_tokens) <= 14 and _is_short_byline_furniture(lowered):
@@ -45,16 +96,7 @@ def is_source_furniture(lowered: str) -> bool:
 
 
 def _is_short_byline_furniture(lowered: str) -> bool:
-    return bool(
-        re.search(
-            r"^(?:by|written by|edited by|translated by|illustrated by|authored by)\b",
-            lowered,
-        )
-        or re.search(
-            r"\b(?:written|edited|translated|illustrated|authored|published)\s+by\b",
-            lowered,
-        )
-    )
+    return _matches_any(_SHORT_BYLINE_REGEXES, lowered)
 
 
 def is_code_fragment(statement: str) -> bool:
@@ -70,41 +112,41 @@ def is_code_fragment(statement: str) -> bool:
 def is_rhetorical_example(lowered: str) -> bool:
     if lowered.endswith("?"):
         return True
-    return any(
-        re.search(pattern, lowered)
-        for pattern in (r"\bwhy\?\b", r"\bwhat if\b", r"\bhow would\b", r"\bwouldn'?t it\b")
-    )
+    return _matches_any(_RHETORICAL_REGEXES, lowered)
 
 
 def is_narrative_frame(lowered: str) -> bool:
     if lowered.startswith(("'", '"')):
         return True
-    narrative_patterns = (
-        r"\bdear reader\b",
-        r"\blet us\b",
-        r"\blet's\b",
-        r"\bwe will\b",
-        r"\bwe'?ll\b.+\blook\b",
-        r"\bwe are going to\b",
-        r"\bimagine\b",
-        r"\bthe story\b",
-        r"\bonce upon\b",
-        r"\bthere are\b.+\bways to make it\b",
-        r"\binterview(er|s|ing)?\b",
-        r"\brecruiter\b",
-        r"\bconference room\b",
-        r"\barrived early\b",
-        r"\byou (desire|tolerate|express your order)\b",
-        r"\bi (came across|went|pondered|told|think|thought|asked|couldn'?t)\b",
-        r"\bsomeone asked me\b",
-        r"\bespresso\b",
-        r"\bristretto\b",
-        r"\blong pull\b.+\bcoffee\b",
-        r"\bcoffee\b.+\bflavou?r complexity\b",
-        r"\bcoffee enthusiasts everywhere\b",
-        r"\bbob was well-known\b",
-        r"\bblind dating\b",
-        r"\bclients often needed experience\b",
-        r"\basks (?:us|you) to\b",
-    )
-    return any(re.search(pattern, lowered) for pattern in narrative_patterns)
+    if any(phrase in lowered for phrase in _NARRATIVE_PHRASES):
+        return True
+    if any(marker in lowered for marker in _FIRST_PERSON_NARRATIVE_MARKERS):
+        return True
+    if "we'll" in lowered and "look" in lowered:
+        return True
+    if "when" in lowered and "trying to choose" in lowered and _mentions_people(lowered):
+        return True
+    if "of course," in lowered and "students" in lowered:
+        return True
+    if "once again" in lowered and "card" in lowered:
+        return True
+    if "whereas the" in lowered and (
+        "mathematicians" in lowered or "engineers" in lowered
+    ):
+        return True
+    if "there are" in lowered and "ways to make it" in lowered:
+        return True
+    if "you desire" in lowered or "you tolerate" in lowered:
+        return True
+    return "express your order" in lowered
+
+
+def _mentions_people(lowered: str) -> bool:
+    return any(group in lowered for group in ("students", "people", "customers", "programmers"))
+
+
+def _matches_any(patterns: tuple[re.Pattern[str], ...], text: str) -> bool:
+    for pattern in patterns:  # noqa: SIM110 - avoid generator churn in claim hot path.
+        if pattern.search(text):
+            return True
+    return False

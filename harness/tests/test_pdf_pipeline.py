@@ -1,5 +1,6 @@
 """Extraction pipeline tests against a synthetic PDF."""
 
+import sys
 from pathlib import Path
 
 import pymupdf  # type: ignore[import-untyped]
@@ -7,6 +8,7 @@ import pytest
 
 from llmwiki.pdf import ScannedPdfError
 from llmwiki.pdf.document import DocumentElement, DocumentModel
+from llmwiki.pdf.manifest import ChunkRecord, Manifest, to_json
 from llmwiki.pdf.pipeline import chunk_file, ensure_extracted, save_manifest
 from llmwiki.pdf.recognizer import NullRecognizer
 
@@ -115,10 +117,29 @@ class TestEnsureExtracted:
             "book.pdf",
             tmp_path / "cache",
             NullRecognizer(),
-            document_extractor=document_extractor,
         )
         assert again.manifest.chunks[0].status == "done"
         assert document_extractor.calls == 1
+
+    def test_cache_hit_skips_extractor_module_import(self, tmp_path: Path) -> None:
+        pdf = tmp_path / "cached.pdf"
+        pdf.write_bytes(b"cached pdf placeholder")
+        source_hash = "fcd34992e16d9238e0d4bd0017fc8877ec456828ae79b99ad807bb3ba383abe6"
+        cache_dir = tmp_path / "cache" / source_hash[:16]
+        cache_dir.mkdir(parents=True)
+        manifest = Manifest(
+            source="cached.pdf",
+            sha256=source_hash,
+            chunks=(ChunkRecord(1, "Cached", 1, 1, 10, status="done"),),
+            extractor_name="test",
+        )
+        (cache_dir / "manifest.json").write_text(to_json(manifest), encoding="utf-8")
+        sys.modules.pop("llmwiki.pdf.extractor", None)
+
+        result = ensure_extracted(pdf, "cached.pdf", tmp_path / "cache", NullRecognizer())
+
+        assert result.manifest.extractor_name == "test"
+        assert "llmwiki.pdf.extractor" not in sys.modules
 
     def test_reextract_rebuilds_pending_manifest(self, tmp_path: Path) -> None:
         pdf = tmp_path / "book.pdf"

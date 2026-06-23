@@ -10,7 +10,10 @@ from llmwiki.domain.objects import (
     SourceSummaryDraft,
     SourceSummaryPlan,
 )
-from llmwiki.domain.source_summary_citations import normalized_citation_text
+from llmwiki.domain.source_summary_citations import (
+    normalized_citation_text,
+    source_summary_bullet_cites_required_locator,
+)
 
 _PAGE_ONLY_CITATION_RE = re.compile(r"\(p\.\s*(?P<start>\d+)(?:\s*-\s*(?P<end>\d+))?\)")
 
@@ -23,9 +26,11 @@ def repair_source_summary_draft(
 ) -> SourceSummaryDraft:
     needs_shape_rescue = _has_unknown_coverage(draft, plan) or _has_page_only_citation(draft)
     repaired = _discard_unknown_coverage(draft, plan)
+    repaired = _merge_duplicate_coverage_bullets(repaired, max_claim_bullets)
     if needs_shape_rescue and max_claim_bullets > 0:
         repaired = _limit_claim_bullets(repaired, max_claim_bullets)
     repaired = _expand_page_only_citations(repaired, plan)
+    repaired = _ensure_required_bullet_citations(repaired, plan)
     return _ensure_required_source_record_citations(repaired, plan)
 
 
@@ -73,6 +78,53 @@ def _limit_claim_bullets(draft: SourceSummaryDraft, max_claim_bullets: int) -> S
     )
 
 
+def _merge_duplicate_coverage_bullets(
+    draft: SourceSummaryDraft, max_claim_bullets: int
+) -> SourceSummaryDraft:
+    if max_claim_bullets <= 0 or len(draft.claim_bullets) <= max_claim_bullets:
+        return draft
+    bullets = list(draft.claim_bullets)
+    while len(bullets) > max_claim_bullets:
+        duplicate = _first_duplicate_coverage_pair(bullets)
+        if duplicate is None:
+            break
+        target_index, duplicate_index = duplicate
+        target = bullets[target_index]
+        extra = bullets.pop(duplicate_index)
+        bullets[target_index] = SourceSummaryBullet(
+            bullet_text=_merge_bullet_text(target.bullet_text, extra.bullet_text),
+            covered_source_claims=target.covered_source_claims,
+        )
+    return SourceSummaryDraft(
+        source_record_text=draft.source_record_text,
+        claim_bullets=tuple(bullets),
+    )
+
+
+def _first_duplicate_coverage_pair(
+    bullets: list[SourceSummaryBullet],
+) -> tuple[int, int] | None:
+    seen: dict[tuple[str, ...], int] = {}
+    for index, bullet in enumerate(bullets):
+        coverage_key = tuple(sorted(bullet.covered_source_claims))
+        if not coverage_key:
+            continue
+        if coverage_key in seen:
+            return seen[coverage_key], index
+        seen[coverage_key] = index
+    return None
+
+
+def _merge_bullet_text(left: str, right: str) -> str:
+    left_text = left.strip()
+    right_text = right.strip()
+    if not left_text:
+        return right_text
+    if not right_text or right_text == left_text:
+        return left_text
+    return f"{left_text.rstrip('.')}; {right_text}"
+
+
 def _expand_page_only_citations(
     draft: SourceSummaryDraft, plan: SourceSummaryPlan
 ) -> SourceSummaryDraft:
@@ -115,6 +167,30 @@ def _ensure_required_source_record_citations(
         source_record_text=f"{draft.source_record_text.strip()} {suffix}".strip(),
         claim_bullets=draft.claim_bullets,
     )
+
+
+def _ensure_required_bullet_citations(
+    draft: SourceSummaryDraft, plan: SourceSummaryPlan
+) -> SourceSummaryDraft:
+    if len(plan.required_source_citations) != 1:
+        return draft
+    required = plan.required_source_citations[0]
+    return SourceSummaryDraft(
+        source_record_text=draft.source_record_text,
+        claim_bullets=tuple(
+            SourceSummaryBullet(
+                bullet_text=_with_required_citation(bullet.bullet_text, required),
+                covered_source_claims=bullet.covered_source_claims,
+            )
+            for bullet in draft.claim_bullets
+        ),
+    )
+
+
+def _with_required_citation(text: str, required_citation: str) -> str:
+    if source_summary_bullet_cites_required_locator(text, (required_citation,)):
+        return text
+    return f"{text.strip().rstrip('.')} ({required_citation})"
 
 
 def _single_required_page_citation(

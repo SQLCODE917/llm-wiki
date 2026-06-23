@@ -1,17 +1,29 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Here is the most common pattern: Extracting the head and gathering everything but the head from an array: (raw/javascriptallonge.pdf p.104-105)",
+      "bullet_text": "Common pattern: extracting head and gathering the rest from an array. (raw/javascriptallonge.pdf p.104-105)",
       "covered_source_claims": [
         "source-claim-unit-0095-0002"
       ]
     },
     {
-      "bullet_text": "We will use a common convention and call variables we gather rest, but refer to the ... operation as a 'gather,' following Kyle Simpson's example. (raw/javascriptallonge.pdf p.104-105)",
+      "bullet_text": "Variables gathered are conventionally called 'rest', and the ... operation is termed 'gather'. (raw/javascriptallonge.pdf p.104-105)",
+      "covered_source_claims": [
+        "source-claim-unit-0095-0002"
+      ]
+    },
+    {
+      "bullet_text": "The ... notation lacks universal pattern-matching capability. (raw/javascriptallonge.pdf p.104-105)",
+      "covered_source_claims": [
+        "source-claim-unit-0095-0005"
+      ]
+    },
+    {
+      "bullet_text": "Destructuring with ... is termed 'gathering', inserting with ... is termed 'spreading'. (raw/javascriptallonge.pdf p.104-105)",
       "covered_source_claims": [
         "source-claim-unit-0095-0007"
       ]
     }
   ],
-  "source_record_text": "Chapter on gathering and destructuring in JavaScript Allongé"
+  "source_record_text": "Chapter on gathering and destructuring in JavaScript Allongé."
 }

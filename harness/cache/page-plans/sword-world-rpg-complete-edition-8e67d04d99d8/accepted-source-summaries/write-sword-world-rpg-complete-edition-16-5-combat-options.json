@@ -1,23 +1,29 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Full defense grants +2 bonus to evasion speed (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "bullet_text": "Projectile range can be extended beyond basic limits with optional rules, with -1 modifier per meter for throwing weapons beyond 20 meters and -1 per 5 meters for shooting weapons beyond 100 meters (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0191"
+        "source-claim-unit-0063-0001"
       ]
     },
     {
-      "bullet_text": "Strong blow allows bonus damage +2 or critical target -1 (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "bullet_text": "Each throwing or shooting weapon has a maximum range, and they will never hit a target farther away than this (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0193"
+        "source-claim-unit-0063-0003"
       ]
     },
     {
-      "bullet_text": "Charge requires minimum distance and adds +10 to strike power when hitting (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "bullet_text": "Strength is required for using crossbows, and characters must meet the required strength to use them (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0194"
+        "source-claim-unit-0063-0008"
+      ]
+    },
+    {
+      "bullet_text": "You cannot declare mercy when using the strong blow action (raw/Sword World RPG - Complete Edition.pdf p.264-268).",
+      "covered_source_claims": [
+        "source-claim-unit-0063-0018"
       ]
     }
   ],
-  "source_record_text": "Optional combat rules for Sword World RPG, including full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim."
+  "source_record_text": "This section covers optional rules for combat in the Sword World RPG, including projectile range, full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim."
 }

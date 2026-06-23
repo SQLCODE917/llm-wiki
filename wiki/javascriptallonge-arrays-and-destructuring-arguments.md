@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-arrays-and-destructuring-arguments
 page_kind: source
-summary: Summary of the Arrays and Destructuring Arguments chapter from JavaScript Allongé.
+summary: Arrays and Destructuring Arguments from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.101-101
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

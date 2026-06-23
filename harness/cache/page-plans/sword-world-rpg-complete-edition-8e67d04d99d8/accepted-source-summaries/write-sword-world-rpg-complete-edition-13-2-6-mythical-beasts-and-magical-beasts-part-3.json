@@ -1,21 +1,33 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A humbaba can spit fire once every 3 rounds, with damage from a strike power 20 roll plus 10 bonus damage; a successful mental power resistance roll reduces the strike power to 10. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "Humbaba spits fire once every 3 rounds. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
         "source-claim-unit-0046-0015"
       ]
     },
     {
-      "bullet_text": "The humbaba's fire causes a disease called _humbaba curse_, which can be contracted with a 2D roll (a 7 or greater is needed to avoid infection). (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "Humbaba's fire causes a disease. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "covered_source_claims": [
+        "source-claim-unit-0046-0045"
+      ]
+    },
+    {
+      "bullet_text": "Roc is a giant bird, second only to dragon. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "covered_source_claims": [
+        "source-claim-unit-0046-0020"
+      ]
+    },
+    {
+      "bullet_text": "Lesser dragons breathe fire in 20-meter radius. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
         "source-claim-unit-0046-0015"
       ]
     },
     {
-      "bullet_text": "The roc is a giant bird with a 20-meter wingspan, second only to the dragon in fear, and can carry humansized animals with its talons. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
+      "bullet_text": "Elder dragons use ancient magic and roar magic. (raw/Sword World RPG - Complete Edition.pdf p.188-198)",
       "covered_source_claims": [
-        "source-claim-unit-0046-0017"
+        "source-claim-unit-0046-0045"
       ]
     }
   ],

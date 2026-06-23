@@ -1,15 +1,15 @@
 ---
 page_id: javascriptallonge-that-s-nice-is-that-the-only-reason
 page_kind: source
-summary: Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions.
+summary: that's nice. is that the only reason? from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.9-9
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions.
+Chapter discussing the evolution of JavaScript and its alignment with programming ideas like composition and functions.
 
 ## Key supported claims
 

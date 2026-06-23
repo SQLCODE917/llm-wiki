@@ -19,5 +19,5 @@
       ]
     }
   ],
-  "source_record_text": "JavaScript Allongé is organized to introduce new aspects of programming with functions in each chapter, with code examples that emphasize exposition rather than everyday use patterns. Some chapters are followed by practical recipes that apply the chapter's ideas."
+  "source_record_text": "JavaScript Allongé introduces new aspects of programming with functions in each chapter, explaining exactly how JavaScript works. Code examples within each chapter are small and emphasize exposition rather than serving as patterns for everyday use. Following some of the chapters are a series of recipes designed to show the application of the chapter's ideas in practical form. While the content of each chapter builds naturally on what was discussed in the previous chapter, the recipes may draw upon any aspect of the JavaScript programming language."
 }

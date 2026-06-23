@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-partial-application
 page_kind: source
-summary: Chapter on partial application in JavaScript Allongé
+summary: Partial Application from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.80-81
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -18,3 +18,67 @@ This chapter covers partial application, a fundamental concept in functional pro
 - We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument (raw/javascriptallonge.pdf p.80-81).
 - If you want to bind more than one argument, or you want to leave a 'hole' in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments (raw/javascriptallonge.pdf p.80-81).
 - In Building Blocks, we discussed partial application, but we didn't write a generalized recipe for it (raw/javascriptallonge.pdf p.80-81).
+
+## Technical details
+
+### `technical-atom-bdb0c986ad531c92` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+_.map([1, 2, 3], (n) => n * n) //=> [1, 4, 9]
+```
+
+### `technical-atom-efcab5389b61119e` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+const squareAll = (array) => map(array, (n) => n * n);
+```
+
+### `technical-atom-f804d3132fbf4fc5` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+const mapWith = (fn) => (array) => map(array, fn); const squareAll = mapWith((n) => n * n); squareAll([1, 2, 3]) //=> [1, 4, 9]
+```
+
+### `technical-atom-68c7a1439fb776e2` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+const safeSquareAll = mapWith(maybe((n) => n * n));
+```
+
+### `technical-atom-09f1b07ce4c1f3b2` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+safeSquareAll([1, null , 2, 3]) //=> [1, null, 4, 9]
+```
+
+### `technical-atom-6fce045843894525` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); } const greet = (me, you) => `Hello, ${ you } , my name is ${ me } `; const heliosSaysHello = callFirst(greet, 'Helios'); heliosSaysHello('Eartha') //=> 'Hello, Eartha, my name is Helios' const sayHelloToCeline = callLast(greet, 'Celine'); sayHelloToCeline('Eartha') //=> 'Hello, Celine, my name is Eartha'
+```
+
+### `technical-atom-85ddb1703e266644` code
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+const callLeft = (fn, ...args) => (...remainingArgs) => fn(...args, ...remainingArgs); const callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
+```
+
+### `technical-atom-c1e5e9bc1d645cbb` exception
+
+Citation: (raw/javascriptallonge.pdf p.72-73)
+
+But what if we only supply some of the arguments?

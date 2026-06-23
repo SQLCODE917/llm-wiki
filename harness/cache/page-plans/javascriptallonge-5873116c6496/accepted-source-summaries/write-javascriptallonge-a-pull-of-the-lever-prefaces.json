@@ -1,17 +1,17 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Café Allongé is a drink midway between Espresso and Americano in strength, (raw/javascriptallonge.pdf p.6-6).",
+      "bullet_text": "Café Allongé is a drink midway between Espresso and Americano in strength, achieved through two methods: dilution or a longer extraction. (raw/javascriptallonge.pdf p.6-6)",
       "covered_source_claims": [
         "source-claim-unit-0004-0006"
       ]
     },
     {
-      "bullet_text": "One method involves adding hot water to a double or quadruple Espresso Ristretto, releasing more complex flavours in the mouth, (raw/javascriptallonge.pdf p.6-6).",
+      "bullet_text": "The dilution method adds hot water to Espresso Ristretto, releasing complex flavors; the long pull method achieves a similar oil-to-water ratio but with a different flavor profile. (raw/javascriptallonge.pdf p.6-6)",
       "covered_source_claims": [
         "source-claim-unit-0004-0004"
       ]
     }
   ],
-  "source_record_text": "Caffe Molinari discusses Café Allongé, also called Espresso Lungo, a drink midway between an Espresso and Americano in strength, with two methods of preparation."
+  "source_record_text": "Prefaces to the JavaScript Allongé book by Caffe Molinari"
 }

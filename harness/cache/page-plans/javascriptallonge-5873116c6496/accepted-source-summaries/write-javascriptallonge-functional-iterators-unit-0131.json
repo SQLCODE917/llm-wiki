@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Functional iterator pattern separates traversal from operation (raw/javascriptallonge.pdf p.167-168).",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0008"
+      ]
+    },
+    {
+      "bullet_text": "ArraySum definition focuses on summing, not traversing (raw/javascriptallonge.pdf p.167-168).",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0009"
+      ]
+    },
+    {
+      "bullet_text": "foldArrayWith function only sums arrays (raw/javascriptallonge.pdf p.167-168).",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0010"
+      ]
+    },
+    {
+      "bullet_text": "foldArrayWith function can be used with const foldArray (raw/javascriptallonge.pdf p.167-168).",
+      "covered_source_claims": [
+        "source-claim-unit-0131-0017"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter explores the concept of functional iterators and how to separate the mechanism of traversing data structures from the operations performed on them."
+}

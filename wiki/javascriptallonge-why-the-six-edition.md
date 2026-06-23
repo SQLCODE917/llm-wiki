@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-why-the-six-edition
 page_kind: source
-summary: Summary of the 'why the six edition' section from JavaScript Allongé.
+summary: why the 'six' edition? from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.7-9
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -13,9 +13,9 @@ A comprehensive modular guide to JavaScript fundamentals and advanced techniques
 
 ## Key supported claims
 
-- ECMAScript 2015 introduces block-structured variables and other features that make JavaScript programming more expressive, raw/javascriptallonge.pdf p.7-9
-- Prior to ECMAScript 2015, JavaScript lacked block-structured variables, leading to workarounds like IIFEs, raw/javascriptallonge.pdf p.7-9
-- JavaScript lacked support for collecting a variable number of arguments into a parameter, leading to workarounds involving arguments and slice, raw/javascriptallonge.pdf p.7-9
+- ECMAScript 2015 introduces block-structured variables and other features that make JavaScript programming more expressive, (raw/javascriptallonge.pdf p.7-9).
+- Prior to ECMAScript 2015, JavaScript lacked block-structured variables, leading to workarounds like IIFEs, (raw/javascriptallonge.pdf p.7-9).
+- JavaScript lacked support for collecting a variable number of arguments into a parameter, leading to workarounds involving arguments and slice, (raw/javascriptallonge.pdf p.7-9).
 
 ## Technical details
 

@@ -1,44 +1,40 @@
 ---
 page_id: sword-world-rpg-complete-edition
 page_kind: source
-summary: Source summary for the Sword World RPG - Complete Edition rulebook.
+summary: Source hub for the Sword World RPG - Complete Edition.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
-The *Sword World RPG - Complete Edition* is a comprehensive rulebook for the Sword World tabletop RPG, covering all aspects of character creation, gameplay mechanics, magic, monsters, and setting details.
+This page is the hub for the *Sword World RPG - Complete Edition* source. It summarizes the whole source and links the chapter/topic pages written during chunking.
 
-## Player Rules
+## Overview
 
-This section covers the core rules for player characters, including character creation, skills, checks, and actions.
+The *Sword World RPG - Complete Edition* is a comprehensive role-playing game system set in the fictional world of Sword World. It provides rules for character creation, combat, magic, monster encounters, treasure, and world-building elements.
 
+## Contents
+
+### Character Creation and Skills
 - [[sword-world-rpg-complete-edition-1-3-skills]]
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]]
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]]
+
+### Checks and Actions
 - [[sword-world-rpg-complete-edition-2-3-checks]]
 - [[sword-world-rpg-complete-edition-2-7-resistance-rolls]]
 - [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]
+- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]
+
+### Combat
 - [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]]
 - [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]]
-- [[sword-world-rpg-complete-edition-6-2-thief-skill]]
-- [[sword-world-rpg-complete-edition-6-4-sage-skill]]
-- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]]
-- [[sword-world-rpg-complete-edition-7-2-merchant-skill]]
-- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]
 - [[sword-world-rpg-complete-edition-10-3-surprise-attacks]]
-- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]]
-- [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]
 - [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]]
 - [[sword-world-rpg-complete-edition-16-5-combat-options]]
 - [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]
-- [[sword-world-rpg-complete-edition-17-2-lost-spells]]
-- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]]
 
-## Magic
-
-This section details the rules and lists for using magic in the Sword World RPG.
-
+### Magic
 - [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]]
 - [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]
 - [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]]
@@ -58,11 +54,18 @@ This section details the rules and lists for using magic in the Sword World RPG.
 - [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]]
 - [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]]
 - [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]
+- [[sword-world-rpg-complete-edition-17-2-lost-spells]]
 
-## Monster Catalog
+### Advanced Skills
+- [[sword-world-rpg-complete-edition-6-2-thief-skill]]
+- [[sword-world-rpg-complete-edition-6-4-sage-skill]]
+- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]]
+- [[sword-world-rpg-complete-edition-7-2-merchant-skill]]
 
-This section contains detailed information about various monsters in the Sword World setting.
+### Experience and Progression
+- [[sword-world-rpg-complete-edition-8-1-experience-points]]
 
+### Monsters and Encounters
 - [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]
 - [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]]
 - [[sword-world-rpg-complete-edition-13-2-2-fae]]
@@ -80,35 +83,23 @@ This section contains detailed information about various monsters in the Sword W
 - [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]
 - [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]
 - [[sword-world-rpg-complete-edition-13-2-12-humans]]
+- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]]
+- [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]
 
-## Treasure and Items
-
-This section covers treasure, rewards, and magical items in the Sword World RPG.
-
+### Treasure and Items
 - [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]]
 - [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]
 - [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]]
 - [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]
 
-## Setting Details
-
-This section provides details about the setting, including guides to regions and charts.
-
+### World and Setting
 - [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]
 - [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]]
-- [[sword-world-rpg-complete-edition-charts]]
+- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]]
+- [[sword-world-rpg-complete-edition-front-matter]]
 
-## Optional Rules
-
-This section includes optional rules and guidelines for game masters.
-
-- [[sword-world-rpg-complete-edition-8-1-experience-points]]
+### Additional Rules
 - [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]]
 - [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]]
-
-## Page-Map Navigation
-
-The harness added these links from the chunk page map so the book-scale hub remains navigable:
-
-- [[sword-world-rpg-complete-edition-front-matter]] — Front matter
-- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Books Related to Sword World RPG
+- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]]
+- [[sword-world-rpg-complete-edition-charts]]

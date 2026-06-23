@@ -1,15 +1,15 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Dragon priests worship dragons as guardians, not gods (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "bullet_text": "Dragon priests worship dragons as guardians (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0001"
+        "source-claim-unit-0035-0004"
       ]
     },
     {
       "bullet_text": "Dragon priests cannot use priest or dark priest skills simultaneously (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0003"
+        "source-claim-unit-0035-0001"
       ]
     },
     {
@@ -27,7 +27,7 @@
     {
       "bullet_text": "Dragon priests have 1st-level spells like Iron Stomach and Communicate Reptile (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0008"
+        "source-claim-unit-0035-0003"
       ]
     }
   ],

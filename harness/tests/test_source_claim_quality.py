@@ -163,6 +163,34 @@ def test_source_summary_plan_skips_transition_frame_when_unit_has_eligible_claim
     assert any("ternary operator" in claim.statement for claim in selected)
 
 
+def test_source_summary_plan_skips_educational_anecdote_when_rule_claims_exist() -> None:
+    plan = _plan_for_units(
+        (
+            _unit(
+                "unit-0001",
+                "linear recursion",
+                (
+                    "When promising students are trying to choose between pure mathematics "
+                    "and applied engineering, they are given a two-part aptitude test. "
+                    "Of course, all the students know what to do. "
+                    "After a bit the water boils, and they turn off the burner. "
+                    "Recursive algorithms follow the divide and conquer strategy. "
+                    "This simpler form of divide and conquer is called linear recursion."
+                ),
+            ),
+        )
+    )
+    source_write = next(
+        write for write in plan.planned_writes if write.page_metadata.page_id != "book"
+    )
+    selected = _selected_claims(plan, source_write.source_summary_plan.selected_source_claims)
+
+    assert selected
+    assert all(claim.claim_eligibility != "narrative-frame" for claim in selected)
+    assert any("linear recursion" in claim.statement for claim in selected)
+    assert not any("students" in claim.statement for claim in selected)
+
+
 def test_source_summary_plan_covers_one_eligible_claim_per_unit_for_small_pages() -> None:
     raw_source = RawSource.from_locator("book.pdf")
     units = (

@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-images
 page_kind: source
-summary: Summary of images and copyright information from JavaScript Allongé, pages 293-296.
+summary: images from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.293-296
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

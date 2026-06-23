@@ -1,27 +1,33 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Monsters using magic are more formidable than level suggests, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "bullet_text": "Monsters using magic are more formidable, (raw/Sword World RPG - Complete Edition.pdf p.235-240); Monster level indicates event size, (raw/Sword World RPG - Complete Edition.pdf p.235-240); NPCs as enemies are two levels greater, (raw/Sword World RPG - Complete Edition.pdf p.235-240); Special attacks require mental power resistance rolls, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
       "covered_source_claims": [
         "source-claim-unit-0057-0006"
       ]
     },
     {
-      "bullet_text": "Monster level indicates event size, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
-      "covered_source_claims": [
-        "source-claim-unit-0057-0003"
-      ]
-    },
-    {
-      "bullet_text": "NPCs as enemies are two levels greater, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
-      "covered_source_claims": [
-        "source-claim-unit-0057-0001"
-      ]
-    },
-    {
-      "bullet_text": "Special attacks require mental power resistance rolls, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "bullet_text": "Poison and parasitism make life force resistance rolls, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
       "covered_source_claims": [
         "source-claim-unit-0057-0009"
+      ]
+    },
+    {
+      "bullet_text": "Disease, strangling, capture, entangling, swallow whole, bloodsuck, acid, corrosion, steal mental power, iron corrosion are special attacks, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0010"
+      ]
+    },
+    {
+      "bullet_text": "Resistance to weapons, magic, and similar attacks are special defense abilities, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0010"
+      ]
+    },
+    {
+      "bullet_text": "Weaknesses are special defense abilities, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "covered_source_claims": [
+        "source-claim-unit-0057-0010"
       ]
     }
   ],

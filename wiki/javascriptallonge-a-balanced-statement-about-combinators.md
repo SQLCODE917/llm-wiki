@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-a-balanced-statement-about-combinators
 page_kind: source
-summary: Summary of the chapter on combinators from 'JavaScript Allongé'.
+summary: a balanced statement about combinators from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.69-69
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -15,3 +15,4 @@ Chapter on combinators from JavaScript Allongé, covering the mathematical defin
 
 - Combinators name verbs and adverbs such as doubleOf, addOne, and compose, avoiding keywords and noun names. (raw/javascriptallonge.pdf p.69-69)
 - Combinators emphasize what you're doing and how it fits together. (raw/javascriptallonge.pdf p.69-69)
+- Explicit code emphasizes what you're working with. (raw/javascriptallonge.pdf p.69-69)

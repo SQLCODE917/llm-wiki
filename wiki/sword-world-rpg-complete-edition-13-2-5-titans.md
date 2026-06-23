@@ -1,18 +1,68 @@
 ---
 page_id: sword-world-rpg-complete-edition-13-2-5-titans
 page_kind: source
-summary: Summary of the Titans section from Sword World RPG - Complete Edition, covering various titan monsters and their characteristics.
+summary: 13.2.5 Titans from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.185-187
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section describes various titan monsters, including the mad spirit of life, valkyrie, yeti, ogre, spriggan, troll, hecatoncheir, and giants, detailing their characteristics, abilities, and behaviors.
+This section describes various titan monsters found in the Sword World RPG setting, including their characteristics, abilities, and behaviors.
 
 ## Key supported claims
 
-- The mad spirit of life pours excessive life spirit power into a single target each round, causing age shifting effects (raw/Sword World RPG - Complete Edition.pdf p.185-187).
-- Characters cannot move freely in deep snow areas where the yeti lives, suffering a -2 penalty to attack and evasion, and halved movement speed (raw/Sword World RPG - Complete Edition.pdf p.185-187).
-- The yeti is a titan, about two and a half meters tall, rarely seen in cold, snowy regions, and its body is covered in thick white fur (raw/Sword World RPG - Complete Edition.pdf p.185-187).
+- Mad spirit of life pours excessive life spirit power into a target each round (raw/Sword World RPG - Complete Edition.pdf p.185-187).
+- Ogres, also known as jikininki, are carnivorous titans that enjoy human flesh (raw/Sword World RPG - Complete Edition.pdf p.185-187).
+- Yeti mainly fight when hungry, and are weak to fire attacks (raw/Sword World RPG - Complete Edition.pdf p.185-187).
+
+## Technical details
+
+### `technical-atom-2b74f249b77b795e` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Monster Level=6
+
+### `technical-atom-cb7a05be25d6cf19` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Rarity=12 (However, a shaman always knows)
+
+### `technical-atom-529e0ab53eb0e493` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Agility=14 Movement Speed=14/30 (air) Number=One
+
+### `technical-atom-9f6d4c5ad1952f92` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Frequency=Very Rare Intellect=Human Reaction=Adversarial Attack Points=-
+
+### `technical-atom-da81496384a966ca` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Strike Points=Evasion Points=14 (7) Defense Points=8
+
+### `technical-atom-7424109267873883` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Life Points/Resistance=15/14 (7)
+
+### `technical-atom-cabf131a719c38b2` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Mental Points/Resistance=25/16 (9)
+
+### `technical-atom-f10b88af2abbad58` formula
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=15/8, valkyrie only)

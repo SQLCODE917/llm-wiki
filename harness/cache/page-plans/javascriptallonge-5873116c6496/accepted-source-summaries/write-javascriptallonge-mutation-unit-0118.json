@@ -1,11 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Note well: Declaring a variable const does not prevent us from mutating its value, only from rebinding its name (raw/javascriptallonge.pdf p.141-143).",
+      "bullet_text": "In JavaScript, arrays and objects can mutate while maintaining identity, as shown by modifying array elements or adding new properties to objects (raw/javascriptallonge.pdf p.141-143).",
       "covered_source_claims": [
         "source-claim-unit-0118-0027"
       ]
+    },
+    {
+      "bullet_text": "Reassignment of a binding creates a new value, while mutation modifies the existing value that multiple bindings can reference (raw/javascriptallonge.pdf p.141-143).",
+      "covered_source_claims": [
+        "source-claim-unit-0118-0026"
+      ]
+    },
+    {
+      "bullet_text": "The `const` keyword prevents rebinding but not mutation, which is an important distinction in understanding JavaScript's semantics (raw/javascriptallonge.pdf p.141-143).",
+      "covered_source_claims": [
+        "source-claim-unit-0118-0025"
+      ]
     }
   ],
-  "source_record_text": "This chapter explains how mutation works in JavaScript, covering arrays, objects, aliases, and assignment semantics, with possible nuances."
+  "source_record_text": "Chapter on mutation in JavaScriptAllonge, covering arrays, objects, reassignment, mutation, and the const keyword's limitations."
 }

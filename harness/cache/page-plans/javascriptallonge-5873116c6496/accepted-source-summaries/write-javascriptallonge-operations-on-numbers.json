@@ -9,13 +9,13 @@
     {
       "bullet_text": "Operators have precedence, so 2 * 5 + 1 is evaluated as (2 * 5) + 1 (raw/javascriptallonge.pdf p.26-27).",
       "covered_source_claims": [
-        "source-claim-unit-0023-0003"
+        "source-claim-unit-0023-0004"
       ]
     },
     {
       "bullet_text": "JavaScript supports additional operators such as modulus % and unary negation - (raw/javascriptallonge.pdf p.26-27).",
       "covered_source_claims": [
-        "source-claim-unit-0023-0003"
+        "source-claim-unit-0023-0001"
       ]
     }
   ],

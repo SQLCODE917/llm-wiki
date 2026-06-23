@@ -1,21 +1,27 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Some methods are only added to a few collections, some are added to all. (raw/javascriptallonge.pdf p.246-246)",
+      "bullet_text": "JavaScript collections benefit from lazy evaluation, critiquing the fat-object approach to collections. (raw/javascriptallonge.pdf p.246-246)",
       "covered_source_claims": [
         "source-claim-unit-0178-0007"
       ]
     },
     {
-      "bullet_text": "This 'fat object' style springs from a misunderstanding: When we say a collection should know how to perform a map over itself, we don't need for the collection to handle every single detail. That would be like saying that when we ask a bank teller for some cash, they personally print every bank note. (raw/javascriptallonge.pdf p.246-246)",
+      "bullet_text": "The fat-object style leads to repetitive code in collection methods, signaling a need for higher abstraction. (raw/javascriptallonge.pdf p.246-246)",
       "covered_source_claims": [
         "source-claim-unit-0178-0013"
       ]
     },
     {
-      "bullet_text": "If we wanted to flatten collections to arrays, we wrote a .toArray method for each type of collection. (raw/javascriptallonge.pdf p.246-246)",
+      "bullet_text": "Working with iterables offers a higher level of abstraction for collections. (raw/javascriptallonge.pdf p.246-246)",
       "covered_source_claims": [
         "source-claim-unit-0178-0005"
+      ]
+    },
+    {
+      "bullet_text": "The fat object approach misunderstands the responsibility of collections. (raw/javascriptallonge.pdf p.246-246)",
+      "covered_source_claims": [
+        "source-claim-unit-0178-0006"
       ]
     }
   ],

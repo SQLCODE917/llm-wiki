@@ -1,15 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "There are useful things we can do with iterables representing an infinitely large collection. (raw/javascriptallonge.pdf p.215-216)",
+      "bullet_text": "There are useful things we can do with infinite iterables, (raw/javascriptallonge.pdf p.215-216)",
       "covered_source_claims": [
         "source-claim-unit-0161-0003"
       ]
     },
     {
-      "bullet_text": "Attempting to spread an infinite iterable into an array is always going to fail. (raw/javascriptallonge.pdf p.215-216)",
+      "bullet_text": "Attempting to spread an infinite iterable into an array fails, (raw/javascriptallonge.pdf p.215-216)",
       "covered_source_claims": [
         "source-claim-unit-0161-0007"
+      ]
+    },
+    {
+      "bullet_text": "First and second element of an infinite iterable causes an infinite loop, (raw/javascriptallonge.pdf p.215-216)",
+      "covered_source_claims": [
+        "source-claim-unit-0161-0006"
       ]
     }
   ],

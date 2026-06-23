@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-about-javascript-allong
 page_kind: source
-summary: Summary of the 'About JavaScript Allongé' section from raw/javascriptallonge.pdf
+summary: About JavaScript Allongé from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.7-7
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

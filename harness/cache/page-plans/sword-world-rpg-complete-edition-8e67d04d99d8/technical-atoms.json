@@ -1,6 +1,6 @@
 {
-  "artifact_fingerprint": "3cd7db7a3811ef0e",
-  "catalog_id": "technical-atom-catalog-54997b1b5f4fed24",
+  "artifact_fingerprint": "2026-06-23-084451-pdf-sword-world-rpg-complete-edition",
+  "catalog_id": "technical-atom-catalog-d386bbdc8862777a",
   "source_locator": "Sword World RPG - Complete Edition.pdf",
   "technical_atoms": [
     {
@@ -14387,32 +14387,6 @@
       "title": "requirement: particular armor must adhere this restriction"
     },
     {
-      "atom_kind": "procedure",
-      "evidence_ids": [
-        "evidence-434ecacedf7c687d"
-      ],
-      "normalized_fields": [
-        [
-          "ordered_steps",
-          "① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search"
-        ],
-        [
-          "source_citation",
-          "raw/Sword World RPG - Complete Edition.pdf p.113-117"
-        ]
-      ],
-      "page_id": "sword-world-rpg-complete-edition-6-2-thief-skill",
-      "source_claim_ids": [
-        "source-claim-unit-0026-0018"
-      ],
-      "source_locator": "Sword World RPG - Complete Edition.pdf",
-      "source_range_id": "source-range-sword-world-rpg-complete-edition-6-2-thief-skill",
-      "support_status": "supported",
-      "technical_atom_id": "technical-atom-705fa6076ad06aab",
-      "technical_payload": "① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search",
-      "title": "procedure: Tumble Climb Lockpicking Special Combat Acrobatics"
-    },
-    {
       "atom_kind": "requirement",
       "evidence_ids": [
         "evidence-1fa0f9bf8e453210"
@@ -14437,6 +14411,32 @@
       "technical_atom_id": "technical-atom-6f5fcb9f5bc65ff3",
       "technical_payload": "Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild.",
       "title": "requirement: Each year guild members must give"
+    },
+    {
+      "atom_kind": "exception",
+      "evidence_ids": [
+        "evidence-673bdafb5b56d19a"
+      ],
+      "normalized_fields": [
+        [
+          "statement",
+          "Some of these abilities cannot be used unless you're wearing light equipment."
+        ],
+        [
+          "source_citation",
+          "raw/Sword World RPG - Complete Edition.pdf p.113-117"
+        ]
+      ],
+      "page_id": "sword-world-rpg-complete-edition-6-2-thief-skill",
+      "source_claim_ids": [
+        "source-claim-unit-0026-0028"
+      ],
+      "source_locator": "Sword World RPG - Complete Edition.pdf",
+      "source_range_id": "source-range-sword-world-rpg-complete-edition-6-2-thief-skill",
+      "support_status": "supported",
+      "technical_atom_id": "technical-atom-9cf7dddca9c80a83",
+      "technical_payload": "Some of these abilities cannot be used unless you're wearing light equipment.",
+      "title": "exception: Some these abilities cannot used unless"
     },
     {
       "atom_kind": "requirement",
@@ -14569,13 +14569,13 @@
       "title": "exception: Characters who cannot read common must"
     },
     {
-      "atom_kind": "exception",
+      "atom_kind": "procedure",
       "evidence_ids": [
         "evidence-f64bdba58f05c823"
       ],
       "normalized_fields": [
         [
-          "statement",
+          "ordered_steps",
           "Then, a character who cannot read low ancient (but _has_ learned common) must learn to read low ancient _before_ learning any other language."
         ],
         [
@@ -14590,9 +14590,9 @@
       "source_locator": "Sword World RPG - Complete Edition.pdf",
       "source_range_id": "source-range-sword-world-rpg-complete-edition-6-4-sage-skill",
       "support_status": "supported",
-      "technical_atom_id": "technical-atom-0d255e33f7ecfb21",
+      "technical_atom_id": "technical-atom-ba52fad83c3869b8",
       "technical_payload": "Then, a character who cannot read low ancient (but _has_ learned common) must learn to read low ancient _before_ learning any other language.",
-      "title": "exception: Then character who cannot read low"
+      "title": "procedure: Then character who cannot read low"
     },
     {
       "atom_kind": "requirement",
@@ -14697,32 +14697,6 @@
       "technical_atom_id": "technical-atom-63d7baca3d34471c",
       "technical_payload": "People with higher levels in general skills should also be given due respect.",
       "title": "requirement: People with higher levels general skills"
-    },
-    {
-      "atom_kind": "procedure",
-      "evidence_ids": [
-        "evidence-7516a15ae8f883a9"
-      ],
-      "normalized_fields": [
-        [
-          "ordered_steps",
-          "Many of you may be thinking, _Then there's no need to separate the two, right?_ However, you can't do that."
-        ],
-        [
-          "source_citation",
-          "raw/Sword World RPG - Complete Edition.pdf p.125-129"
-        ]
-      ],
-      "page_id": "sword-world-rpg-complete-edition-7-2-merchant-skill",
-      "source_claim_ids": [
-        "source-claim-unit-0029-0012"
-      ],
-      "source_locator": "Sword World RPG - Complete Edition.pdf",
-      "source_range_id": "source-range-sword-world-rpg-complete-edition-7-2-merchant-skill",
-      "support_status": "supported",
-      "technical_atom_id": "technical-atom-be3c7c117c966c24",
-      "technical_payload": "Many of you may be thinking, _Then there's no need to separate the two, right?_ However, you can't do that.",
-      "title": "procedure: Many you may thinking Then there"
     },
     {
       "atom_kind": "procedure",
@@ -14849,6 +14823,28 @@
       "technical_atom_id": "technical-atom-133f8acd391d0415",
       "technical_payload": "person without this certificate cannot conduct transactions in public.",
       "title": "exception: person without this certificate cannot conduct"
+    },
+    {
+      "atom_kind": "worked-example",
+      "evidence_ids": [
+        "evidence-d1dcf2df6404f2b6"
+      ],
+      "normalized_fields": [
+        [
+          "source_citation",
+          "raw/Sword World RPG - Complete Edition.pdf p.125-129"
+        ]
+      ],
+      "page_id": "sword-world-rpg-complete-edition-7-2-merchant-skill",
+      "source_claim_ids": [
+        "source-claim-unit-0029-0034"
+      ],
+      "source_locator": "Sword World RPG - Complete Edition.pdf",
+      "source_range_id": "source-range-sword-world-rpg-complete-edition-7-2-merchant-skill",
+      "support_status": "supported",
+      "technical_atom_id": "technical-atom-f7e063b195a90815",
+      "technical_payload": "For example, some merchants may sell arts and crafts, while others might sell fresh produce, etc.",
+      "title": "worked-example: For example some merchants may sell"
     },
     {
       "atom_kind": "exception",
@@ -15385,6 +15381,32 @@
       "title": "worked-example: the case NPCs enemies consider them"
     },
     {
+      "atom_kind": "procedure",
+      "evidence_ids": [
+        "evidence-7e07d25dfc64f8c1"
+      ],
+      "normalized_fields": [
+        [
+          "ordered_steps",
+          "Next, we will list these abilities and how to handle them ingame."
+        ],
+        [
+          "source_citation",
+          "raw/Sword World RPG - Complete Edition.pdf p.235-240"
+        ]
+      ],
+      "page_id": "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
+      "source_claim_ids": [
+        "source-claim-unit-0057-0007"
+      ],
+      "source_locator": "Sword World RPG - Complete Edition.pdf",
+      "source_range_id": "source-range-sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
+      "support_status": "supported",
+      "technical_atom_id": "technical-atom-4f03bb69db30c1c3",
+      "technical_payload": "Next, we will list these abilities and how to handle them ingame.",
+      "title": "procedure: Next will list these abilities and"
+    },
+    {
       "atom_kind": "requirement",
       "evidence_ids": [
         "evidence-0c1fcd0d38fef6b5"
@@ -15487,32 +15509,6 @@
       "technical_atom_id": "technical-atom-5980ff4f543a580b",
       "technical_payload": "There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score.",
       "title": "requirement: There are several processes which curse"
-    },
-    {
-      "atom_kind": "exception",
-      "evidence_ids": [
-        "evidence-08c800f256782163"
-      ],
-      "normalized_fields": [
-        [
-          "statement",
-          "A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure."
-        ],
-        [
-          "source_citation",
-          "raw/Sword World RPG - Complete Edition.pdf p.235-240"
-        ]
-      ],
-      "page_id": "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
-      "source_claim_ids": [
-        "source-claim-unit-0057-0030"
-      ],
-      "source_locator": "Sword World RPG - Complete Edition.pdf",
-      "source_range_id": "source-range-sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
-      "support_status": "supported",
-      "technical_atom_id": "technical-atom-7718a6918adad373",
-      "technical_payload": "A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure.",
-      "title": "exception: character who hears this point-blank range"
     },
     {
       "atom_kind": "exception",

@@ -1,9 +1,33 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Linear recursion is a form of divide and conquer strategy for solving problems, where a problem is broken into smaller subproblems and solved recursively (raw/javascriptallonge.pdf p.111-113).",
+      "bullet_text": "Linear recursion is a divide and conquer strategy (raw/javascriptallonge.pdf p.111-113).",
       "covered_source_claims": [
-        "source-claim-unit-0100-0003"
+        "source-claim-unit-0100-0019"
+      ]
+    },
+    {
+      "bullet_text": "It breaks problems into smaller subproblems (raw/javascriptallonge.pdf p.111-113).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0019"
+      ]
+    },
+    {
+      "bullet_text": "It solves subproblems recursively (raw/javascriptallonge.pdf p.111-113).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0019"
+      ]
+    },
+    {
+      "bullet_text": "Flattening arrays uses linear recursion (raw/javascriptallonge.pdf p.111-113).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0017"
+      ]
+    },
+    {
+      "bullet_text": "Terminal case is empty or non-array element (raw/javascriptallonge.pdf p.111-113).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0018"
       ]
     }
   ],

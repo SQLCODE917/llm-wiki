@@ -1,29 +1,29 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript Allongé is a great book and a great way to write and distribute books (raw/javascriptallonge.pdf p.14-14).",
+      "bullet_text": "Fogus was skeptical about the pay-what-you-want ebook model for JavaScript Allongé, but was humbled by the book's quality (raw/javascriptallonge.pdf p.14-14).",
       "covered_source_claims": [
         "source-claim-unit-0013-0005"
       ]
     },
     {
-      "bullet_text": "JavaScript Allongé has something to teach even experts about coffee (raw/javascriptallonge.pdf p.14-14).",
+      "bullet_text": "Fogus appreciates the Leanpub model's efficiency in the read-feedback-change process for book development (raw/javascriptallonge.pdf p.14-14).",
       "covered_source_claims": [
         "source-claim-unit-0013-0013"
       ]
     },
     {
-      "bullet_text": "Writing is an iterative process with tight revision loops (raw/javascriptallonge.pdf p.14-14).",
+      "bullet_text": "Fogus finds JavaScript Allongé an entertaining exploration of interesting aspects of Reg's art, with something to teach even experts (raw/javascriptallonge.pdf p.14-14).",
       "covered_source_claims": [
         "source-claim-unit-0013-0007"
       ]
     },
     {
-      "bullet_text": "Reg has crafted an interesting book from the perspective of a connoisseur, and an entertaining exploration into some of the most interesting aspects of his art (raw/javascriptallonge.pdf p.14-14).",
+      "bullet_text": "Fogus, a functional programming advocate, admires Reg's accomplishment and the book's approach to functional techniques without dogma (raw/javascriptallonge.pdf p.14-14).",
       "covered_source_claims": [
         "source-claim-unit-0013-0012"
       ]
     }
   ],
-  "source_record_text": "As a life-long bibliophile and long-time follower of Reg's online work, I was excited when he started writing books. However, I'm very conservative about books - let's just say that if there was an aftershave scented to the essence of 'Used Book Store' then I would be first in line to buy. So as you might imagine I was 'skeptical' about the decision to release JavaScript Allongé as an ongoing ebook, with a pay-what-you-want model. However, Reg sent me a copy of his book and I was humbled."
+  "source_record_text": "Review of JavaScript Allongé by Michael Fogus"
 }

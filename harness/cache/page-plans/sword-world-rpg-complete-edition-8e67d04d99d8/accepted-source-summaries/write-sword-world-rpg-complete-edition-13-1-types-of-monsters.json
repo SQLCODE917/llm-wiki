@@ -1,7 +1,7 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Alecrast has 12 monster types per Laverna's Natural History (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
+      "bullet_text": "There are 12 types of monsters in Alecrast, based on Laverna's Natural History (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
       "covered_source_claims": [
         "source-claim-unit-0039-0001"
       ]
@@ -9,13 +9,13 @@
     {
       "bullet_text": "Spirits are involved in life activities and unaffected by poisons or mental attacks (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
       "covered_source_claims": [
-        "source-claim-unit-0039-0004"
+        "source-claim-unit-0039-0002"
       ]
     },
     {
-      "bullet_text": "Each monster type's meaning is explained (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
+      "bullet_text": "Some types, such as mythical beasts and magical beasts, are based on the existence of dragons, creatures created by ancient sorcerers, and others (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
       "covered_source_claims": [
-        "source-claim-unit-0039-0003"
+        "source-claim-unit-0039-0004"
       ]
     }
   ],

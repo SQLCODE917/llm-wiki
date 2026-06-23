@@ -2,7 +2,7 @@
   "source": "javascriptallonge.pdf",
   "sha256": "c98ab3e62b35ab0f89395f12c9581867baf50731cb1f45110b43e55c6f66cd72",
   "extractor_name": "docling",
-  "integrated": false,
+  "integrated": true,
   "chunks": [
     {
       "id": 1,
@@ -12,12 +12,14 @@
         2
       ],
       "tokens": 9,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "JavaScript Allongé, the 'Six' Edition (pages 2-2): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 2,
@@ -27,12 +29,14 @@
         2
       ],
       "tokens": 14,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Programming from Functions to Classes in ECMAScript 2015 (pages 2-2): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 3,
@@ -42,10 +46,12 @@
         3
       ],
       "tokens": 176,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-reg-raganwald-braithwaite",
+      "pages_written": [
+        "javascriptallonge-reg-raganwald-braithwaite"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -57,10 +63,12 @@
         6
       ],
       "tokens": 240,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-pull-of-the-lever-prefaces",
+      "pages_written": [
+        "javascriptallonge-a-pull-of-the-lever-prefaces"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -72,10 +80,12 @@
         7
       ],
       "tokens": 316,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-about-javascript-allong",
+      "pages_written": [
+        "javascriptallonge-about-javascript-allong"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -87,10 +97,12 @@
         9
       ],
       "tokens": 767,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-why-the-six-edition",
+      "pages_written": [
+        "javascriptallonge-why-the-six-edition"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -102,10 +114,12 @@
         9
       ],
       "tokens": 503,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-that-s-nice-is-that-the-only-reason",
+      "pages_written": [
+        "javascriptallonge-that-s-nice-is-that-the-only-reason"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -117,10 +131,12 @@
         11
       ],
       "tokens": 761,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-what-javascript-allong-is-and-isn-t",
+      "pages_written": [
+        "javascriptallonge-what-javascript-allong-is-and-isn-t"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -132,10 +148,12 @@
         12
       ],
       "tokens": 155,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-how-this-book-is-organized",
+      "pages_written": [
+        "javascriptallonge-how-this-book-is-organized"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -147,10 +165,12 @@
         13
       ],
       "tokens": 250,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-foreword-to-the-six-edition",
+      "pages_written": [
+        "javascriptallonge-foreword-to-the-six-edition"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -162,10 +182,12 @@
         13
       ],
       "tokens": 229,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-ecmascript-6-has-three-major-groups-of-features",
+      "pages_written": [
+        "javascriptallonge-ecmascript-6-has-three-major-groups-of-features"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -177,12 +199,14 @@
         14
       ],
       "tokens": 8,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Forewords to the First Edition (pages 14-14): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 13,
@@ -192,10 +216,12 @@
         14
       ],
       "tokens": 611,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-michael-fogus",
+      "pages_written": [
+        "javascriptallonge-michael-fogus"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -207,10 +233,12 @@
         15
       ],
       "tokens": 233,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-matthew-knox",
+      "pages_written": [
+        "javascriptallonge-matthew-knox"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -222,10 +250,12 @@
         17
       ],
       "tokens": 123,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-about-the-sample-pdf",
+      "pages_written": [
+        "javascriptallonge-about-the-sample-pdf"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -237,10 +267,12 @@
         18
       ],
       "tokens": 308,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-prelude-values-and-expressions-over-coffee",
+      "pages_written": [
+        "javascriptallonge-prelude-values-and-expressions-over-coffee"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -252,10 +284,12 @@
         20
       ],
       "tokens": 625,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-values-are-expressions",
+      "pages_written": [
+        "javascriptallonge-values-are-expressions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -267,10 +301,12 @@
         21
       ],
       "tokens": 328,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-values-and-identity",
+      "pages_written": [
+        "javascriptallonge-values-and-identity"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -282,10 +318,12 @@
         22
       ],
       "tokens": 273,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-value-types",
+      "pages_written": [
+        "javascriptallonge-value-types"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -297,10 +335,12 @@
         23
       ],
       "tokens": 362,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-reference-types",
+      "pages_written": [
+        "javascriptallonge-reference-types"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -312,10 +352,12 @@
         25
       ],
       "tokens": 391,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-rich-aroma-basic-numbers",
+      "pages_written": [
+        "javascriptallonge-a-rich-aroma-basic-numbers"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -327,10 +369,12 @@
         26
       ],
       "tokens": 528,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-floating",
+      "pages_written": [
+        "javascriptallonge-floating"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -342,10 +386,12 @@
         27
       ],
       "tokens": 330,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-on-numbers",
+      "pages_written": [
+        "javascriptallonge-operations-on-numbers"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -357,12 +403,14 @@
         29
       ],
       "tokens": 8,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "The first sip: Basic Functions (pages 29-29): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 25,
@@ -372,10 +420,12 @@
         31
       ],
       "tokens": 373,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+      "pages_written": [
+        "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -387,10 +437,12 @@
         31
       ],
       "tokens": 160,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-and-identities",
+      "pages_written": [
+        "javascriptallonge-functions-and-identities"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -402,10 +454,12 @@
         31
       ],
       "tokens": 271,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-applying-functions",
+      "pages_written": [
+        "javascriptallonge-applying-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -417,10 +471,12 @@
         33
       ],
       "tokens": 331,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-that-return-values-and-evaluate-expressions",
+      "pages_written": [
+        "javascriptallonge-functions-that-return-values-and-evaluate-expressions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -432,10 +488,12 @@
         33
       ],
       "tokens": 150,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-commas",
+      "pages_written": [
+        "javascriptallonge-commas"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -447,10 +505,12 @@
         33
       ],
       "tokens": 10,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Recovered existing wiki page(s): javascriptallonge-or-even",
+      "pages_written": [
+        "javascriptallonge-or-even"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -462,10 +522,12 @@
         34
       ],
       "tokens": 95,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-simplest-possible-block",
+      "pages_written": [
+        "javascriptallonge-the-simplest-possible-block"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -477,10 +539,12 @@
         35
       ],
       "tokens": 291,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-undefined",
+      "pages_written": [
+        "javascriptallonge-undefined"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -492,10 +556,12 @@
         35
       ],
       "tokens": 229,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-void",
+      "pages_written": [
+        "javascriptallonge-void"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -507,10 +573,12 @@
         37
       ],
       "tokens": 742,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-back-on-the-block",
+      "pages_written": [
+        "javascriptallonge-back-on-the-block"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -522,10 +590,12 @@
         38
       ],
       "tokens": 159,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-and-also",
+      "pages_written": [
+        "javascriptallonge-and-also"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -537,10 +607,12 @@
         38
       ],
       "tokens": 293,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-that-evaluate-to-functions",
+      "pages_written": [
+        "javascriptallonge-functions-that-evaluate-to-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -552,10 +624,12 @@
         40
       ],
       "tokens": 403,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-ah-i-d-like-to-have-an-argument-please-22",
+      "pages_written": [
+        "javascriptallonge-ah-i-d-like-to-have-an-argument-please-22"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -567,10 +641,12 @@
         40
       ],
       "tokens": 285,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-quick-summary-of-functions-and-bodies",
+      "pages_written": [
+        "javascriptallonge-a-quick-summary-of-functions-and-bodies"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -582,10 +658,12 @@
         41
       ],
       "tokens": 193,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-call-by-value",
+      "pages_written": [
+        "javascriptallonge-call-by-value"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -597,10 +675,12 @@
         42
       ],
       "tokens": 844,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-variables-and-bindings",
+      "pages_written": [
+        "javascriptallonge-variables-and-bindings"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -612,10 +692,12 @@
         43
       ],
       "tokens": 503,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-call-by-sharing",
+      "pages_written": [
+        "javascriptallonge-call-by-sharing"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -627,10 +709,12 @@
         44
       ],
       "tokens": 386,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-closures-and-scope",
+      "pages_written": [
+        "javascriptallonge-closures-and-scope"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -642,10 +726,12 @@
         45
       ],
       "tokens": 527,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure",
+      "pages_written": [
+        "javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -657,10 +743,12 @@
         47
       ],
       "tokens": 542,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-it-s-always-the-environment",
+      "pages_written": [
+        "javascriptallonge-it-s-always-the-environment"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -672,10 +760,12 @@
         47
       ],
       "tokens": 224,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-shadowy-variables-from-a-shadowy-planet",
+      "pages_written": [
+        "javascriptallonge-shadowy-variables-from-a-shadowy-planet"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -687,10 +777,12 @@
         48
       ],
       "tokens": 363,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-which-came-first-the-chicken-or-the-egg",
+      "pages_written": [
+        "javascriptallonge-which-came-first-the-chicken-or-the-egg"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -702,10 +794,12 @@
         50
       ],
       "tokens": 482,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-that-constant-coffee-craving",
+      "pages_written": [
+        "javascriptallonge-that-constant-coffee-craving"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -717,10 +811,12 @@
         51
       ],
       "tokens": 535,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-inside-out",
+      "pages_written": [
+        "javascriptallonge-inside-out"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -732,10 +828,12 @@
         53
       ],
       "tokens": 668,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-const",
+      "pages_written": [
+        "javascriptallonge-const"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -747,10 +845,12 @@
         55
       ],
       "tokens": 279,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-nested-blocks",
+      "pages_written": [
+        "javascriptallonge-nested-blocks"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -762,10 +862,12 @@
         57
       ],
       "tokens": 606,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-const-and-lexical-scope",
+      "pages_written": [
+        "javascriptallonge-const-and-lexical-scope"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -777,10 +879,12 @@
         60
       ],
       "tokens": 1134,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-are-consts-also-from-a-shadowy-planet",
+      "pages_written": [
+        "javascriptallonge-are-consts-also-from-a-shadowy-planet"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -792,10 +896,12 @@
         61
       ],
       "tokens": 308,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-rebinding",
+      "pages_written": [
+        "javascriptallonge-rebinding"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -807,10 +913,12 @@
         62
       ],
       "tokens": 86,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-naming-functions",
+      "pages_written": [
+        "javascriptallonge-naming-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -822,10 +930,12 @@
         65
       ],
       "tokens": 1003,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-function-keyword",
+      "pages_written": [
+        "javascriptallonge-the-function-keyword"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -837,10 +947,12 @@
         66
       ],
       "tokens": 453,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-declarations",
+      "pages_written": [
+        "javascriptallonge-function-declarations"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -852,10 +964,12 @@
         67
       ],
       "tokens": 328,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-declaration-caveats-34",
+      "pages_written": [
+        "javascriptallonge-function-declaration-caveats-34"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -867,12 +981,14 @@
         68
       ],
       "tokens": 9,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Combinators and Function Decorators (pages 68-68): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 59,
@@ -882,10 +998,12 @@
         68
       ],
       "tokens": 196,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-higher-order-functions",
+      "pages_written": [
+        "javascriptallonge-higher-order-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -897,10 +1015,12 @@
         69
       ],
       "tokens": 460,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-combinators",
+      "pages_written": [
+        "javascriptallonge-combinators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -912,10 +1032,12 @@
         69
       ],
       "tokens": 108,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-balanced-statement-about-combinators",
+      "pages_written": [
+        "javascriptallonge-a-balanced-statement-about-combinators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -927,10 +1049,12 @@
         70
       ],
       "tokens": 311,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-decorators",
+      "pages_written": [
+        "javascriptallonge-function-decorators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -942,10 +1066,12 @@
         71
       ],
       "tokens": 120,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-building-blocks",
+      "pages_written": [
+        "javascriptallonge-building-blocks"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -957,10 +1083,12 @@
         71
       ],
       "tokens": 359,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-composition",
+      "pages_written": [
+        "javascriptallonge-composition"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -972,10 +1100,12 @@
         73
       ],
       "tokens": 544,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-partial-application",
+      "pages_written": [
+        "javascriptallonge-partial-application"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -987,10 +1117,12 @@
         74
       ],
       "tokens": 85,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-magic-names",
+      "pages_written": [
+        "javascriptallonge-magic-names"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1002,10 +1134,12 @@
         75
       ],
       "tokens": 488,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-function-keyword",
+      "pages_written": [
+        "javascriptallonge-the-function-keyword"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1017,10 +1151,12 @@
         77
       ],
       "tokens": 831,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-magic-names-and-fat-arrows",
+      "pages_written": [
+        "javascriptallonge-magic-names-and-fat-arrows"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1032,12 +1168,14 @@
         78
       ],
       "tokens": 2,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Summary (pages 78-78): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 70,
@@ -1047,10 +1185,12 @@
         78
       ],
       "tokens": 256,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-applying-functions",
+      "pages_written": [
+        "javascriptallonge-applying-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1062,10 +1202,12 @@
         79
       ],
       "tokens": 65,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-recipes-with-basic-functions",
+      "pages_written": [
+        "javascriptallonge-recipes-with-basic-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1077,10 +1219,12 @@
         79
       ],
       "tokens": 83,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-disclaimer",
+      "pages_written": [
+        "javascriptallonge-disclaimer"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1092,10 +1236,12 @@
         81
       ],
       "tokens": 487,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-partial-application",
+      "pages_written": [
+        "javascriptallonge-partial-application"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1107,10 +1253,12 @@
         83
       ],
       "tokens": 470,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-unary",
+      "pages_written": [
+        "javascriptallonge-unary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1122,10 +1270,12 @@
         85
       ],
       "tokens": 420,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tap",
+      "pages_written": [
+        "javascriptallonge-tap"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1137,10 +1287,12 @@
         87
       ],
       "tokens": 487,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-maybe",
+      "pages_written": [
+        "javascriptallonge-maybe"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1152,10 +1304,12 @@
         88
       ],
       "tokens": 214,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-once",
+      "pages_written": [
+        "javascriptallonge-once"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1167,10 +1321,12 @@
         90
       ],
       "tokens": 389,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-left-variadic-functions",
+      "pages_written": [
+        "javascriptallonge-left-variadic-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1182,10 +1338,12 @@
         91
       ],
       "tokens": 395,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-history-lesson",
+      "pages_written": [
+        "javascriptallonge-a-history-lesson"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1197,10 +1355,12 @@
         92
       ],
       "tokens": 317,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-overcoming-limitations",
+      "pages_written": [
+        "javascriptallonge-overcoming-limitations"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1212,10 +1372,12 @@
         93
       ],
       "tokens": 364,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-left-variadic-destructuring",
+      "pages_written": [
+        "javascriptallonge-left-variadic-destructuring"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1227,10 +1389,12 @@
         94
       ],
       "tokens": 95,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "pages_written": [
+        "javascriptallonge-picking-the-bean-choice-and-truthiness"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1242,10 +1406,12 @@
         94
       ],
       "tokens": 4,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Recovered existing wiki page(s): javascriptallonge-true",
+      "pages_written": [
+        "javascriptallonge-true"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1257,10 +1423,12 @@
         95
       ],
       "tokens": 210,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-false",
+      "pages_written": [
+        "javascriptallonge-false"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1272,10 +1440,12 @@
         96
       ],
       "tokens": 648,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-truthiness-and-the-ternary-operator",
+      "pages_written": [
+        "javascriptallonge-truthiness-and-the-ternary-operator"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1287,10 +1457,12 @@
         97
       ],
       "tokens": 541,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-truthiness-and-operators",
+      "pages_written": [
+        "javascriptallonge-truthiness-and-operators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1302,10 +1474,12 @@
         98
       ],
       "tokens": 341,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-and-are-control-flow-operators",
+      "pages_written": [
+        "javascriptallonge-and-are-control-flow-operators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1317,10 +1491,12 @@
         99
       ],
       "tokens": 267,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-parameters-are-eager",
+      "pages_written": [
+        "javascriptallonge-function-parameters-are-eager"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1332,10 +1508,12 @@
         99
       ],
       "tokens": 114,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
+      "pages_written": [
+        "javascriptallonge-summary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1347,10 +1525,12 @@
         100
       ],
       "tokens": 54,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-composing-and-decomposing-data",
+      "pages_written": [
+        "javascriptallonge-composing-and-decomposing-data"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1362,10 +1542,12 @@
         101
       ],
       "tokens": 95,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-arrays-and-destructuring-arguments",
+      "pages_written": [
+        "javascriptallonge-arrays-and-destructuring-arguments"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1377,10 +1559,12 @@
         102
       ],
       "tokens": 323,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-array-literals",
+      "pages_written": [
+        "javascriptallonge-array-literals"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1392,10 +1576,12 @@
         103
       ],
       "tokens": 173,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-element-references",
+      "pages_written": [
+        "javascriptallonge-element-references"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1407,10 +1593,12 @@
         104
       ],
       "tokens": 425,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-arrays",
+      "pages_written": [
+        "javascriptallonge-destructuring-arrays"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1422,10 +1610,12 @@
         105
       ],
       "tokens": 393,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-gathering",
+      "pages_written": [
+        "javascriptallonge-gathering"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1437,10 +1627,12 @@
         106
       ],
       "tokens": 330,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-is-not-pattern-matching",
+      "pages_written": [
+        "javascriptallonge-destructuring-is-not-pattern-matching"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1452,10 +1644,12 @@
         107
       ],
       "tokens": 149,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-and-return-values",
+      "pages_written": [
+        "javascriptallonge-destructuring-and-return-values"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1467,10 +1661,12 @@
         108
       ],
       "tokens": 258,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-parameters",
+      "pages_written": [
+        "javascriptallonge-destructuring-parameters"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1482,10 +1678,12 @@
         111
       ],
       "tokens": 932,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-self-similarity",
+      "pages_written": [
+        "javascriptallonge-self-similarity"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1497,10 +1695,12 @@
         113
       ],
       "tokens": 914,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-linear-recursion",
+      "pages_written": [
+        "javascriptallonge-linear-recursion"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1512,10 +1712,12 @@
         114
       ],
       "tokens": 378,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mapping",
+      "pages_written": [
+        "javascriptallonge-mapping"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1527,10 +1729,12 @@
         116
       ],
       "tokens": 447,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-folding",
+      "pages_written": [
+        "javascriptallonge-folding"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1542,10 +1746,12 @@
         116
       ],
       "tokens": 100,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
+      "pages_written": [
+        "javascriptallonge-summary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1557,10 +1763,12 @@
         118
       ],
       "tokens": 930,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tail-calls-and-default-arguments",
+      "pages_written": [
+        "javascriptallonge-tail-calls-and-default-arguments"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1572,10 +1780,12 @@
         119
       ],
       "tokens": 441,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tail-call-optimization",
+      "pages_written": [
+        "javascriptallonge-tail-call-optimization"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1587,10 +1797,12 @@
         121
       ],
       "tokens": 649,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-converting-non-tail-calls-to-tail-calls",
+      "pages_written": [
+        "javascriptallonge-converting-non-tail-calls-to-tail-calls"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1602,10 +1814,12 @@
         123
       ],
       "tokens": 358,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-factorials",
+      "pages_written": [
+        "javascriptallonge-factorials"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1617,10 +1831,12 @@
         124
       ],
       "tokens": 376,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-default-arguments",
+      "pages_written": [
+        "javascriptallonge-default-arguments"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1632,10 +1848,12 @@
         125
       ],
       "tokens": 136,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-defaults-and-destructuring",
+      "pages_written": [
+        "javascriptallonge-defaults-and-destructuring"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1647,10 +1865,12 @@
         128
       ],
       "tokens": 565,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-garbage-garbage-everywhere",
+      "pages_written": [
+        "javascriptallonge-garbage-garbage-everywhere"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1662,10 +1882,12 @@
         130
       ],
       "tokens": 1255,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-some-history",
+      "pages_written": [
+        "javascriptallonge-some-history"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1677,10 +1899,12 @@
         131
       ],
       "tokens": 347,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-so-why-arrays",
+      "pages_written": [
+        "javascriptallonge-so-why-arrays"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1692,10 +1916,12 @@
         131
       ],
       "tokens": 71,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
+      "pages_written": [
+        "javascriptallonge-summary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1707,10 +1933,12 @@
         132
       ],
       "tokens": 544,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-plain-old-javascript-objects",
+      "pages_written": [
+        "javascriptallonge-plain-old-javascript-objects"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1722,10 +1950,12 @@
         136
       ],
       "tokens": 785,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-literal-object-syntax",
+      "pages_written": [
+        "javascriptallonge-literal-object-syntax"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1737,10 +1967,12 @@
         137
       ],
       "tokens": 363,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-objects",
+      "pages_written": [
+        "javascriptallonge-destructuring-objects"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1752,10 +1984,12 @@
         140
       ],
       "tokens": 959,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-revisiting-linked-lists",
+      "pages_written": [
+        "javascriptallonge-revisiting-linked-lists"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1767,10 +2001,12 @@
         143
       ],
       "tokens": 674,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mutation",
+      "pages_written": [
+        "javascriptallonge-mutation"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1782,10 +2018,12 @@
         145
       ],
       "tokens": 712,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mutation-and-data-structures",
+      "pages_written": [
+        "javascriptallonge-mutation-and-data-structures"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1797,10 +2035,12 @@
         147
       ],
       "tokens": 507,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mutation",
+      "pages_written": [
+        "javascriptallonge-mutation"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1812,10 +2052,12 @@
         150
       ],
       "tokens": 658,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-reassignment",
+      "pages_written": [
+        "javascriptallonge-reassignment"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1827,10 +2069,12 @@
         151
       ],
       "tokens": 218,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-const",
+      "pages_written": [
+        "javascriptallonge-const"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1842,10 +2086,12 @@
         154
       ],
       "tokens": 668,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-var",
+      "pages_written": [
+        "javascriptallonge-var"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1857,10 +2103,12 @@
         154
       ],
       "tokens": 342,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-why-const-and-let-were-invented",
+      "pages_written": [
+        "javascriptallonge-why-const-and-let-were-invented"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1872,10 +2120,12 @@
         157
       ],
       "tokens": 727,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-yes-consider-this-variation",
+      "pages_written": [
+        "javascriptallonge-yes-consider-this-variation"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1887,10 +2137,12 @@
         159
       ],
       "tokens": 461,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copy-on-write",
+      "pages_written": [
+        "javascriptallonge-copy-on-write"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1902,10 +2154,12 @@
         161
       ],
       "tokens": 427,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-few-utilities",
+      "pages_written": [
+        "javascriptallonge-a-few-utilities"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1917,10 +2171,12 @@
         161
       ],
       "tokens": 319,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copy-on-read",
+      "pages_written": [
+        "javascriptallonge-copy-on-read"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1932,10 +2188,12 @@
         163
       ],
       "tokens": 576,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copy-on-write",
+      "pages_written": [
+        "javascriptallonge-copy-on-write"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1947,10 +2205,12 @@
         166
       ],
       "tokens": 947,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tortoises-hares-and-teleporting-turtles",
+      "pages_written": [
+        "javascriptallonge-tortoises-hares-and-teleporting-turtles"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1962,10 +2222,12 @@
         168
       ],
       "tokens": 704,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functional-iterators",
+      "pages_written": [
+        "javascriptallonge-functional-iterators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1977,10 +2239,12 @@
         172
       ],
       "tokens": 844,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iterating",
+      "pages_written": [
+        "javascriptallonge-iterating"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1992,10 +2256,12 @@
         175
       ],
       "tokens": 771,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-unfolding-and-laziness",
+      "pages_written": [
+        "javascriptallonge-unfolding-and-laziness"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2007,10 +2273,12 @@
         176
       ],
       "tokens": 226,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-bonus",
+      "pages_written": [
+        "javascriptallonge-bonus"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2022,10 +2290,12 @@
         176
       ],
       "tokens": 147,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-caveat",
+      "pages_written": [
+        "javascriptallonge-caveat"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2037,10 +2307,12 @@
         179
       ],
       "tokens": 519,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-making-data-out-of-functions",
+      "pages_written": [
+        "javascriptallonge-making-data-out-of-functions"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2052,10 +2324,12 @@
         180
       ],
       "tokens": 456,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-kestrel-and-the-idiot",
+      "pages_written": [
+        "javascriptallonge-the-kestrel-and-the-idiot"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2067,10 +2341,12 @@
         182
       ],
       "tokens": 378,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-backwardness",
+      "pages_written": [
+        "javascriptallonge-backwardness"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2082,10 +2358,12 @@
         183
       ],
       "tokens": 532,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-vireo",
+      "pages_written": [
+        "javascriptallonge-the-vireo"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2097,10 +2375,12 @@
         186
       ],
       "tokens": 624,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lists-with-functions-as-data",
+      "pages_written": [
+        "javascriptallonge-lists-with-functions-as-data"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2112,10 +2392,12 @@
         188
       ],
       "tokens": 597,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-say-please",
+      "pages_written": [
+        "javascriptallonge-say-please"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2127,10 +2409,12 @@
         189
       ],
       "tokens": 373,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-are-not-the-real-point",
+      "pages_written": [
+        "javascriptallonge-functions-are-not-the-real-point"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2142,10 +2426,12 @@
         190
       ],
       "tokens": 736,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-return-to-backward-thinking",
+      "pages_written": [
+        "javascriptallonge-a-return-to-backward-thinking"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2157,10 +2443,12 @@
         191
       ],
       "tokens": 15,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-recipes-with-data",
+      "pages_written": [
+        "javascriptallonge-recipes-with-data"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2172,10 +2460,12 @@
         192
       ],
       "tokens": 83,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-disclaimer",
+      "pages_written": [
+        "javascriptallonge-disclaimer"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2187,10 +2477,12 @@
         194
       ],
       "tokens": 544,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mapwith",
+      "pages_written": [
+        "javascriptallonge-mapwith"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2202,10 +2494,12 @@
         196
       ],
       "tokens": 462,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-flip",
+      "pages_written": [
+        "javascriptallonge-flip"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2217,10 +2511,12 @@
         196
       ],
       "tokens": 123,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-self-currying-flip",
+      "pages_written": [
+        "javascriptallonge-self-currying-flip"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2232,10 +2528,12 @@
         197
       ],
       "tokens": 147,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-flipping-methods",
+      "pages_written": [
+        "javascriptallonge-flipping-methods"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2247,10 +2545,12 @@
         200
       ],
       "tokens": 389,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-object-assign",
+      "pages_written": [
+        "javascriptallonge-object-assign"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2262,10 +2562,12 @@
         201
       ],
       "tokens": 367,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-why",
+      "pages_written": [
+        "javascriptallonge-why"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2277,10 +2579,12 @@
         203
       ],
       "tokens": 201,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals",
+      "pages_written": [
+        "javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2292,10 +2596,12 @@
         204
       ],
       "tokens": 382,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-quasi-literals",
+      "pages_written": [
+        "javascriptallonge-quasi-literals"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2307,10 +2613,12 @@
         204
       ],
       "tokens": 184,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-evaluation-time",
+      "pages_written": [
+        "javascriptallonge-evaluation-time"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2322,10 +2630,12 @@
         205
       ],
       "tokens": 33,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-served-by-the-pot-collections",
+      "pages_written": [
+        "javascriptallonge-served-by-the-pot-collections"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2337,10 +2647,12 @@
         206
       ],
       "tokens": 207,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iteration-and-iterables",
+      "pages_written": [
+        "javascriptallonge-iteration-and-iterables"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2352,10 +2664,12 @@
         209
       ],
       "tokens": 776,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functional-iterators",
+      "pages_written": [
+        "javascriptallonge-functional-iterators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2367,10 +2681,12 @@
         210
       ],
       "tokens": 177,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iterator-objects",
+      "pages_written": [
+        "javascriptallonge-iterator-objects"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2382,10 +2698,12 @@
         211
       ],
       "tokens": 288,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-like-this",
+      "pages_written": [
+        "javascriptallonge-like-this"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2397,10 +2715,12 @@
         215
       ],
       "tokens": 1155,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-basic-operations-on-iterables",
+      "pages_written": [
+        "javascriptallonge-basic-operations-on-iterables"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2412,10 +2732,12 @@
         216
       ],
       "tokens": 133,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iterables-out-to-infinity",
+      "pages_written": [
+        "javascriptallonge-iterables-out-to-infinity"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2427,10 +2749,12 @@
         217
       ],
       "tokens": 376,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-ordered-collections",
+      "pages_written": [
+        "javascriptallonge-ordered-collections"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2442,10 +2766,12 @@
         221
       ],
       "tokens": 1201,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-on-ordered-collections",
+      "pages_written": [
+        "javascriptallonge-operations-on-ordered-collections"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2457,10 +2783,12 @@
         222
       ],
       "tokens": 337,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-from",
+      "pages_written": [
+        "javascriptallonge-from"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2472,10 +2800,12 @@
         223
       ],
       "tokens": 127,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
+      "pages_written": [
+        "javascriptallonge-summary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2487,10 +2817,12 @@
         226
       ],
       "tokens": 448,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-generating-iterables",
+      "pages_written": [
+        "javascriptallonge-generating-iterables"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2502,10 +2834,12 @@
         226
       ],
       "tokens": 221,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-recursive-iterators",
+      "pages_written": [
+        "javascriptallonge-recursive-iterators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2517,10 +2851,12 @@
         228
       ],
       "tokens": 320,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iteration",
+      "pages_written": [
+        "javascriptallonge-iteration"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2532,10 +2868,12 @@
         229
       ],
       "tokens": 230,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-state-machines",
+      "pages_written": [
+        "javascriptallonge-state-machines"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2547,10 +2885,12 @@
         230
       ],
       "tokens": 205,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-we-ll-keep-it-simple",
+      "pages_written": [
+        "javascriptallonge-we-ll-keep-it-simple"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2562,10 +2902,12 @@
         231
       ],
       "tokens": 477,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-javascript-s-generators",
+      "pages_written": [
+        "javascriptallonge-javascript-s-generators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2577,10 +2919,12 @@
         234
       ],
       "tokens": 1068,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-generators-are-coroutines",
+      "pages_written": [
+        "javascriptallonge-generators-are-coroutines"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2592,10 +2936,12 @@
         236
       ],
       "tokens": 439,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-generators-and-iterables",
+      "pages_written": [
+        "javascriptallonge-generators-and-iterables"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2607,10 +2953,12 @@
         239
       ],
       "tokens": 391,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-more-generators",
+      "pages_written": [
+        "javascriptallonge-more-generators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2622,10 +2970,12 @@
         243
       ],
       "tokens": 871,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-yielding-iterables",
+      "pages_written": [
+        "javascriptallonge-yielding-iterables"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2637,10 +2987,12 @@
         245
       ],
       "tokens": 371,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-rewriting-iterable-operations",
+      "pages_written": [
+        "javascriptallonge-rewriting-iterable-operations"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2652,10 +3004,12 @@
         245
       ],
       "tokens": 113,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
+      "pages_written": [
+        "javascriptallonge-summary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2667,10 +3021,12 @@
         246
       ],
       "tokens": 434,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lazy-and-eager-collections",
+      "pages_written": [
+        "javascriptallonge-lazy-and-eager-collections"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2682,10 +3038,12 @@
         253
       ],
       "tokens": 1232,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-implementing-methods-with-iteration",
+      "pages_written": [
+        "javascriptallonge-implementing-methods-with-iteration"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2697,10 +3055,12 @@
         256
       ],
       "tokens": 993,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lazy-collection-operations",
+      "pages_written": [
+        "javascriptallonge-lazy-collection-operations"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2712,10 +3072,12 @@
         260
       ],
       "tokens": 676,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lazy-and-eager-collections",
+      "pages_written": [
+        "javascriptallonge-lazy-and-eager-collections"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2727,10 +3089,12 @@
         261
       ],
       "tokens": 182,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+      "pages_written": [
+        "javascriptallonge-interlude-the-carpenter-interviews-for-a-job"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2742,10 +3106,12 @@
         264
       ],
       "tokens": 672,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-problem",
+      "pages_written": [
+        "javascriptallonge-the-problem"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2757,10 +3123,12 @@
         269
       ],
       "tokens": 1428,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-carpenter-s-solution",
+      "pages_written": [
+        "javascriptallonge-the-carpenter-s-solution"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2772,10 +3140,12 @@
         270
       ],
       "tokens": 380,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-aftermath",
+      "pages_written": [
+        "javascriptallonge-the-aftermath"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2787,10 +3157,12 @@
         272
       ],
       "tokens": 510,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-after-another-drink",
+      "pages_written": [
+        "javascriptallonge-after-another-drink"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2802,10 +3174,12 @@
         275
       ],
       "tokens": 397,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-interactive-generators",
+      "pages_written": [
+        "javascriptallonge-interactive-generators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2817,10 +3191,12 @@
         275
       ],
       "tokens": 75,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function",
+      "pages_written": [
+        "javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2832,10 +3208,12 @@
         276
       ],
       "tokens": 107,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-would-be-3-producing",
+      "pages_written": [
+        "javascriptallonge-would-be-3-producing"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2847,10 +3225,12 @@
         278
       ],
       "tokens": 191,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-will-be-represented-as",
+      "pages_written": [
+        "javascriptallonge-will-be-represented-as"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2862,10 +3242,12 @@
         279
       ],
       "tokens": 123,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-we-get",
+      "pages_written": [
+        "javascriptallonge-we-get"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2877,10 +3259,12 @@
         280
       ],
       "tokens": 407,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function",
+      "pages_written": [
+        "javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2892,10 +3276,12 @@
         282
       ],
       "tokens": 511,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-this-seems-familiar",
+      "pages_written": [
+        "javascriptallonge-this-seems-familiar"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2907,10 +3293,12 @@
         283
       ],
       "tokens": 393,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-interactive-generators",
+      "pages_written": [
+        "javascriptallonge-interactive-generators"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2922,10 +3310,12 @@
         283
       ],
       "tokens": 106,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
+      "pages_written": [
+        "javascriptallonge-summary"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2937,10 +3327,12 @@
         284
       ],
       "tokens": 42,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-basic-operations-on-iterables",
+      "pages_written": [
+        "javascriptallonge-basic-operations-on-iterables"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2952,10 +3344,12 @@
         285
       ],
       "tokens": 229,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-that-transform-one-iterable-into-another",
+      "pages_written": [
+        "javascriptallonge-operations-that-transform-one-iterable-into-another"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2967,10 +3361,12 @@
         286
       ],
       "tokens": 193,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable",
+      "pages_written": [
+        "javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2982,10 +3378,12 @@
         286
       ],
       "tokens": 75,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-that-transform-an-iterable-into-a-value",
+      "pages_written": [
+        "javascriptallonge-operations-that-transform-an-iterable-into-a-value"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -2997,10 +3395,12 @@
         287
       ],
       "tokens": 121,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-memoizing-an-iterable",
+      "pages_written": [
+        "javascriptallonge-memoizing-an-iterable"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3012,10 +3412,12 @@
         288
       ],
       "tokens": 14,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Recovered existing wiki page(s): javascriptallonge-the-golden-crema-appendices-and-afterwords",
+      "pages_written": [
+        "javascriptallonge-the-golden-crema-appendices-and-afterwords"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3027,10 +3429,12 @@
         290
       ],
       "tokens": 550,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-how-to-run-the-examples",
+      "pages_written": [
+        "javascriptallonge-how-to-run-the-examples"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3042,12 +3446,14 @@
         291
       ],
       "tokens": 2,
-      "status": "pending",
-      "notes": "",
+      "status": "done",
+      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
       "pages_written": [],
       "route_plan_pages": 0,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
+      "route_plan_gaps": 1,
+      "route_gap_summaries": [
+        "Thanks! (pages 291-291): no claim-bearing source-page material."
+      ]
     },
     {
       "id": 204,
@@ -3057,10 +3463,12 @@
         291
       ],
       "tokens": 87,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-daniel-friedman-and-matthias-felleisen",
+      "pages_written": [
+        "javascriptallonge-daniel-friedman-and-matthias-felleisen"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3072,10 +3480,12 @@
         292
       ],
       "tokens": 176,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-richard-feynman",
+      "pages_written": [
+        "javascriptallonge-richard-feynman"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3087,10 +3497,12 @@
         293
       ],
       "tokens": 28,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copyright-notice",
+      "pages_written": [
+        "javascriptallonge-copyright-notice"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3102,10 +3514,12 @@
         296
       ],
       "tokens": 2734,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-images",
+      "pages_written": [
+        "javascriptallonge-images"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3117,10 +3531,12 @@
         297
       ],
       "tokens": 113,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-about-the-author",
+      "pages_written": [
+        "javascriptallonge-about-the-author"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -3132,10 +3548,12 @@
         297
       ],
       "tokens": 60,
-      "status": "pending",
-      "notes": "",
-      "pages_written": [],
-      "route_plan_pages": 0,
+      "status": "done",
+      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-contact",
+      "pages_written": [
+        "javascriptallonge-contact"
+      ],
+      "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     }

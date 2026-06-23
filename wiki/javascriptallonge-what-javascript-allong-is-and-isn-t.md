@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-what-javascript-allong-is-and-isn-t
 page_kind: source
-summary: Summary of the 'What JavaScript Allongé is. And isn't.' section from javascriptallonge.pdf
+summary: What JavaScript Allongé is. And isn't. from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.10-11
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

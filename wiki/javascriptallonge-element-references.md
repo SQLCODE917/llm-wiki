@@ -1,17 +1,36 @@
 ---
 page_id: javascriptallonge-element-references
 page_kind: source
-summary: Summary of the element references section from javascriptallonge.pdf
+summary: element references from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.102-103
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This section covers element references in JavaScript arrays, detailing how to extract elements using bracket notation and explaining that arrays store references to the objects placed in them.
+Chapter on element references in JavaScript arrays, covering zero-based indexing and reference storage.
 
 ## Key supported claims
 
-- Array elements can be extracted using [ and ] as postfix operators. (raw/javascriptallonge.pdf p.102-103)
-- We know that every array is its own unique entity, with its own unique reference. (raw/javascriptallonge.pdf p.102-103)
+- Array elements are extracted using [ and ] postfix operators, with zero-based indexing (raw/javascriptallonge.pdf p.102-103).
+- JavaScript arrays are zero-based (raw/javascriptallonge.pdf p.102-103).
+- Arrays store references to the things you put in them, not copies (raw/javascriptallonge.pdf p.102-103).
+
+## Technical details
+
+### `technical-atom-ff3a8a2cd1dd583f` code
+
+Citation: (raw/javascriptallonge.pdf p.102-103)
+
+```javascript
+const oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] //=> 'one' oneTwoThree[1] //=> 'two' oneTwoThree[2] //=> 'three'
+```
+
+### `technical-atom-080c9abe55b63119` code
+
+Citation: (raw/javascriptallonge.pdf p.102-103)
+
+```javascript
+const x = [], a = [x]; a[0] === x //=> true, arrays store references to the things you put in them.
+```

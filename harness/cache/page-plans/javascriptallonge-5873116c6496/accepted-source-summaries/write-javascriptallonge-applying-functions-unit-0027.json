@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Functions are applied to arguments, producing a value (raw/javascriptallonge.pdf p.31-31).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0002"
+      ]
+    },
+    {
+      "bullet_text": "The syntax for applying a function is fn_expr (args) (raw/javascriptallonge.pdf p.31-31).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0010"
+      ]
+    },
+    {
+      "bullet_text": "Parentheses are used both for grouping operations and for applying functions (raw/javascriptallonge.pdf p.31-31).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of the applying functions chapter from JavaScript Allongé."
+}

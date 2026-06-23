@@ -9,13 +9,13 @@
     {
       "bullet_text": "Unary fixes issues with JavaScript's map method when using functions like parseInt that have optional arguments (raw/javascriptallonge.pdf p.82-83).",
       "covered_source_claims": [
-        "source-claim-unit-0074-0004"
+        "source-claim-unit-0074-0008"
       ]
     },
     {
       "bullet_text": "Unary is implemented as a function decorator that checks function length and wraps functions taking more than one argument (raw/javascriptallonge.pdf p.82-83).",
       "covered_source_claims": [
-        "source-claim-unit-0074-0004"
+        "source-claim-unit-0074-0002"
       ]
     }
   ],

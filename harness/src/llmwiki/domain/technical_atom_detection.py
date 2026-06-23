@@ -30,6 +30,40 @@ MAX_RENDERED_ATOMS_PER_PAGE = 8
 _FORMULA_RE = re.compile(r"(?=.*[=+\-*/x×÷])(?:[A-Za-z][A-Za-z0-9 _-]{2,}|\*\*.+?\*\*)\s*=")
 _ORDERED_RE = re.compile(r"^\s*(?:\d+[.)]|[-*])\s+(?P<step>\S.+)")
 _TERM_RE = re.compile(r"[a-z][a-z0-9-]{2,}", re.IGNORECASE)
+_INLINE_FENCE_RE = re.compile(r"```(?P<body>.*?)```", re.DOTALL)
+_KNOWN_FENCE_LANGUAGES = frozenset(
+    (
+        "bash",
+        "c",
+        "c++",
+        "cpp",
+        "cs",
+        "csharp",
+        "css",
+        "go",
+        "html",
+        "java",
+        "javascript",
+        "js",
+        "json",
+        "markdown",
+        "md",
+        "py",
+        "python",
+        "rb",
+        "ruby",
+        "rs",
+        "rust",
+        "sh",
+        "shell",
+        "sql",
+        "ts",
+        "typescript",
+        "xml",
+        "yaml",
+        "yml",
+    )
+)
 
 
 def claim_kind(claim: SourceClaim) -> TechnicalAtomKind | None:
@@ -84,6 +118,15 @@ def fenced_code_blocks(text: str) -> tuple[tuple[str, str], ...]:
     return tuple(blocks)
 
 
+def inline_fenced_code_blocks(text: str) -> tuple[tuple[str, str], ...]:
+    blocks: list[tuple[str, str]] = []
+    for match in _INLINE_FENCE_RE.finditer(text):
+        language, code = _split_inline_fence_body(match.group("body"))
+        if code:
+            blocks.append((language, code))
+    return tuple(blocks)
+
+
 def text_without_fenced_code(text: str) -> str:
     lines: list[str] = []
     in_block = False
@@ -126,6 +169,8 @@ def ordered_step_groups(text: str) -> tuple[tuple[str, ...], ...]:
 
 def is_formula(text: str) -> bool:
     stripped = text.strip()
+    if any(marker in stripped for marker in ("=>", "===", "!==", "==")):
+        return False
     left_side = stripped.split("=", 1)[0].lower()
     if any(term in left_side for term in ("example", " rolls ", " gets ", " means ")):
         return False
@@ -134,13 +179,11 @@ def is_formula(text: str) -> bool:
 
 def best_evidence_ids(records: tuple[EvidenceRecord, ...], payload: str) -> tuple[str, ...]:
     payload_terms = set(_TERM_RE.findall(payload.lower()))
-    ranked = sorted(
-        (
-            (len(payload_terms & set(_TERM_RE.findall(record.excerpt.lower()))), index, record)
-            for index, record in enumerate(records)
-        ),
-        reverse=True,
-    )
+    ranked: list[tuple[int, int, EvidenceRecord]] = []
+    for index, record in enumerate(records):
+        excerpt_terms = set(_TERM_RE.findall(record.excerpt.lower()))
+        ranked.append((len(payload_terms & excerpt_terms), index, record))
+    ranked.sort(reverse=True)
     selected = [record.evidence_id for score, _index, record in ranked if score > 0][:3]
     return tuple(selected or [record.evidence_id for record in records[:3]])
 
@@ -162,7 +205,13 @@ def title_for_payload(kind: str, payload: str) -> str:
 
 
 def _looks_procedural(lowered: str) -> bool:
-    return any(term in lowered for term in ("first,", "then ", "next ", "finally", "step"))
+    return bool(
+        re.search(r"\bfirst,", lowered)
+        or re.search(r"\bthen\b", lowered)
+        or re.search(r"\bnext\b", lowered)
+        or re.search(r"\bfinally\b", lowered)
+        or re.search(r"\bstep\s+\d+\b", lowered)
+    )
 
 
 def _looks_exceptional(lowered: str) -> bool:
@@ -180,3 +229,13 @@ def _language(language: str, code: str) -> str:
     if any(token in lowered for token in ("const ", "let ", "=>", "function", "symbol.iterator")):
         return "javascript"
     return ""
+
+
+def _split_inline_fence_body(body: str) -> tuple[str, str]:
+    stripped = body.strip()
+    if not stripped:
+        return "", ""
+    first, separator, rest = stripped.partition(" ")
+    if separator and first.lower() in _KNOWN_FENCE_LANGUAGES:
+        return _language(first, rest.strip()), rest.strip()
+    return _language("", stripped), stripped

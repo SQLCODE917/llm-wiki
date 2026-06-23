@@ -4636,3 +4636,83 @@ Nodes: 262
 Edges: 261
 Unresolved edges: 0
 wiki/wiki-graph.json matches the current wiki graph.
+
+## [2026-06-23] query | What is this wiki about?
+This wiki contains knowledge about two main sources: 
+
+1. **JavaScript Allongé** – A book focused on functional programming with JavaScript. It covers topics such as functions, closures, combinators, iterators, generators, and various programming concepts. The wiki includes summaries of chapters and sections from this book, such as functions and identities, combinators, iteration and iterables, closures and scope, tail-call optimization, partial application, the Y Combinator, and more.
+
+2. **Sword World RPG - Complete Edition** – A role-playing game rulebook. The wiki includes summaries of various chapters and sections, such as character creation, skills and abilities, combat rules, magic types and spells, monster descriptions, treasure and rewards, equipment and items, and world guide and setting information.
+
+These summaries are organized into pages with specific page IDs, and the wiki also includes cross-references and links between related concepts, entities, and source materials.
+
+For more details on any specific topic, you can search the wiki or read the relevant pages.
+
+## [2026-06-23] query | Can you answer briefly?
+Sword World RPG has five types of magic: ancient, spirit, holy, dark, and dragon roar. Magic is used by rune masters—sorcerers, shamans, priests, dark priests, and dragon priests—who perform spells using chants called runes and specific procedures. Spells are divided into levels from 1-10, with higher levels requiring higher rune master skills. Adventurers must make a skill check to use magic, with magic power calculated as magic skill level plus intelligence bonus. Magic can be resistible or non-resistible, with different procedures for each. Illusion magic affects five senses, and illusions can be detected by resistance rolls. Ritual magic enhances spell effects through preparation over days, with bonuses calculated as days times participants. Lost spells are ancient magic known only to a limited number of sorcerers, lost with the fall of the ancient kingdom. Magic details include Base Mental Power Cost, Distance, Area, Duration, Effect, Type, Expansion, and Resist.
+
+For more details, see:
+- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]]
+- [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]
+- [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]]
+
+## [2026-06-23] ingest | javascriptallonge.pdf
+The hub page for JavaScript Allongé, the 'Six' Edition has been written. It summarizes the whole source and links all chapter and topic pages written during chunking. The page structure is now complete.
+
+## [2026-06-23] ingest | javascriptallonge.pdf
+The hub page for JavaScript Allongé, the 'Six' Edition has been created and updated with links to all chapter and topic pages written during chunking. The page structure is now complete with all relevant sections and cross-references.
+
+## [2026-06-23] ingest | javascriptallonge.pdf
+The hub source page for 'JavaScript Allongé, the 'Six' Edition' has been successfully created and updated. It includes links to all major chapter and topic pages written during the chunking process, organized by sections that reflect the source's subject matter and table-of-contents language. The page structure is now finalized and ready for further use.
+
+## [2026-06-23] ingest | Sword World RPG - Complete Edition.pdf
+The hub source page 'sword-world-rpg-complete-edition' has been created and updated to summarize the whole *Sword World RPG - Complete Edition* source. It links all the chapter and topic pages written during chunking, providing a comprehensive navigation structure for the source material.
+
+## [2026-06-23] query | In JavaScript Allonge, what is the exact mapWith implementation example? Includ…
+The exact `mapWith` implementation example from JavaScript Allongé is:
+
+```javascript
+const mapWith = (fn) => (list) => list.map(fn);
+```
+
+This implementation is described in the source material [[javascriptallonge-mapwith]](raw/javascriptallonge.pdf p.193-194). It is a function that wraps around `map` and turns any other function into a mapper, allowing you to create specialized mapping functions like `squaresOf`:
+
+```javascript
+const squaresOf = mapWith(n => n * n);
+squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9, 16, 25]
+```
+
+This is detailed in the page [[javascriptallonge-mapwith]] which summarizes the chapter on mapWith function in JavaScript Allongé.
+
+## [2026-06-23] query | In Sword World RPG Complete Edition, how do attacks from characters against mon…
+Based on the wiki content, here is the procedure for attacks from characters against monsters in Sword World RPG Complete Edition:
+
+## Hit Check Procedure
+
+To attack a monster, a character makes a hit check using their attack power and 2D dice. The formula is:
+- Attack power + 2D ≥ Monster's evasion points to hit
+
+This means the character's attack power is added to the result of rolling two dice (2D), and if this total equals or exceeds the monster's evasion points, the attack hits.
+
+## Damage Calculation
+
+If the hit check succeeds, damage is calculated using the following steps:
+
+1. Determine base damage using Table 4-1: Rating Table, which correlates the attack power with damage ratings
+2. Add any bonus damage from weapons or abilities
+3. Subtract the monster's defense points from the total damage
+
+The exact damage formula is not fully specified in the provided text, but it follows the pattern of using a rating table for base damage, adding bonuses, and then subtracting the monster's defense points.
+
+The source for this information is:
+- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]]
+- (raw/Sword World RPG - Complete Edition.pdf p.43-50)
+
+The wiki also references Table 4-1: Rating Table, which would contain the specific damage values based on attack power, but the full table content is not included in the retrieved information.
+
+## [2026-06-23] graph | wiki graph
+Graph export: current
+Nodes: 263
+Edges: 262
+Unresolved edges: 0
+wiki/wiki-graph.json matches the current wiki graph.

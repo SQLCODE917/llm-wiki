@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-combinators
 page_kind: source
-summary: Chapter on combinators from JavaScript Allongé.
+summary: combinators from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.68-69
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -17,3 +17,55 @@ Chapter on combinators from JavaScript Allongé, covering the mathematical defin
 - We'd learn that the fundamental combinators are named after birds following the example of Raymond Smullyan's famous book To Mock a Mockingbird 36, as described in (raw/javascriptallonge.pdf p.68-69).
 - In this book, we will be using a looser definition of 'combinator:' Higher-order pure functions that take only functions as arguments and return a function, as described in (raw/javascriptallonge.pdf p.68-69).
 - We won't be strict about using only previously defined combinators in their construction, as described in (raw/javascriptallonge.pdf p.68-69).
+
+## Technical details
+
+### `technical-atom-5a64ca902d2a5ea5` code
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+```javascript
+const compose = (a, b) => (c) => a(b(c)) Let's say we have: const addOne = (number) => number + 1; const doubleOf = (number) => number * 2; With compose , anywhere you would write const doubleOfAddOne = (number) => doubleOf(addOne(number)); You could also write: const doubleOfAddOne = compose(doubleOf, addOne);
+```
+
+### `technical-atom-c5b335eb5ded24ba` formula
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+36 http://www.amazon.com/gp/product/B00A1P096Y/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=B00A1P096Y& linkCode=as2&tag=raganwald001-20
+
+### `technical-atom-573c28eb9a1b4a43` exception
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+'A combinator is a higher-order function that uses only function application and earlier defined combinators to define a result from its arguments.'-Wikipedia 35
+
+### `technical-atom-6fd30e91218f411d` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+We'd learn that the fundamental combinators are named after birds following the example of Raymond Smullyan's famous book To Mock a Mockingbird 36 .
+
+### `technical-atom-0c6ee2e3b1a2e9c0` exception
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+In this book, we will be using a looser definition of 'combinator:' Higher-order pure functions that take only functions as arguments and return a function.
+
+### `technical-atom-1fb1b6b37295dce2` exception
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+We won't be strict about using only previously defined combinators in their construction.
+
+### `technical-atom-57ed8734e50b061f` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+This is, of course, just one example of many.
+
+### `technical-atom-5b7054e41352d245` exception
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+While some programmers believe 'There Should Only Be One Way To Do It,' having combinators available as well as explicitly writing things out with lots of symbols and keywords has some advantages when used judiciously.

@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-are-consts-also-from-a-shadowy-planet
 page_kind: source
-summary: Chapter section on const scoping and shadowing in JavaScript.
+summary: are consts also from a shadowy planet? from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.57-60
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -16,3 +16,69 @@ Chapter section on const scoping and shadowing in JavaScript.
 - Const values use lexical scope, just like parameters, and are looked up in the environment where they are declared (raw/javascriptallonge.pdf p.57-60).
 - Const statements can appear inside blocks, and they shadow enclosing bindings just like parameters (raw/javascriptallonge.pdf p.57-60).
 - Const statements shadow values bound within environments created by blocks, not just functions (raw/javascriptallonge.pdf p.57-60).
+
+## Technical details
+
+### `technical-atom-17a1385c4e7e2cdb` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+((PI) => (diameter) => diameter * PI )(3.14159265)
+```
+
+### `technical-atom-2a49f0058d2569fe` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)
+```
+
+### `technical-atom-6bfbc2e135b7f58a` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)(2) //=> 6.2831853
+```
+
+### `technical-atom-8118892bba58fca4` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265)
+```
+
+### `technical-atom-88fc9101560e4009` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+((PI) => { ((PI) => {})(3); return (diameter) => diameter * PI; })(3.14159265)(2) //=> 6.2831853
+```
+
+### `technical-atom-2fccf9db6fd344c0` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+((diameter) => { const PI = 3.14159265; (() => { const PI = 3; })(); return diameter * PI; })(2) //=> 6.2831853
+```
+
+### `technical-atom-e06f3c95cf2d188b` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+if ( true ) { // an immediately invoked block statement (IIBS) } Let's try it: ((diameter) => { const PI = 3; if ( true ) { const PI = 3.14159265; return diameter * PI; } })(2) //=> 6.2831853 ((diameter) => { const PI = 3.14159265; if ( true ) { const PI = 3; } return diameter * PI;
+```
+
+### `technical-atom-251a228560047109` code
+
+Citation: (raw/javascriptallonge.pdf p.57-60)
+
+```javascript
+})(2) //=> 6.2831853
+```

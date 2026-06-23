@@ -3,6 +3,8 @@ fake extractor. Covers the map loop, resume semantics, digest hand-off,
 and the single log entry on completion.
 """
 
+import json
+
 import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
@@ -10,7 +12,16 @@ from forge.core.workflow import ToolCall
 from helpers import wiki_page
 
 from llmwiki.config import WikiPaths
-from llmwiki.domain.objects import PagePlan, RawSource, SourceBundle, SourcePageGroup
+from llmwiki.domain.objects import (
+    ExtractedUnit,
+    PagePlan,
+    RawSource,
+    SourceBundle,
+    SourcePageGroup,
+)
+from llmwiki.domain.planning import page_plan_to_json
+from llmwiki.domain.technical_atom_io import technical_atom_catalog_to_json
+from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json
 from llmwiki.pdf.pipeline import ExtractionResult
@@ -225,6 +236,55 @@ _INTEGRATE_TURNS = _integrate_turns()
 
 
 class TestPdfIngest:
+    def test_partial_resume_reuses_matching_persisted_page_plan(
+        self, store: WikiStore, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+        extraction = _fake_extraction(paths, statuses=("done", "pending"))
+        session = _session(store, [], paths, extraction)
+        raw_source = RawSource.from_locator("book.pdf")
+        plan = PagePlan(
+            plan_id="previous-run-pdf-book",
+            source_bundle=SourceBundle.one(raw_source),
+            extracted_units=(
+                ExtractedUnit(
+                    unit_id="unit-0001",
+                    raw_source=raw_source,
+                    locator="p.1-10",
+                    heading_path="Functions",
+                    text="Chunk one: functions are values.",
+                    extraction_status="ok",
+                ),
+                ExtractedUnit(
+                    unit_id="unit-0002",
+                    raw_source=raw_source,
+                    locator="p.11-20",
+                    heading_path="Closures",
+                    text="Chunk two: closures capture scope.",
+                    extraction_status="ok",
+                ),
+            ),
+            source_claims=(),
+            source_claim_groups=(),
+            candidate_claims=(),
+            candidate_topics=(),
+            candidate_entities=(),
+            topic_clusters=(),
+            wiki_matches=(),
+            claim_comparisons=(),
+            planned_writes=(),
+        )
+        store.write_page_plan_artifacts("book.pdf", page_plan_to_json(plan), "persisted")
+
+        def fail_build_page_plan(**_kwargs: object) -> PagePlan:
+            raise AssertionError("partial resume should reuse the persisted PagePlan")
+
+        monkeypatch.setattr("llmwiki.runtime.session.build_page_plan", fail_build_page_plan)
+
+        loaded = session._pdf_page_plan(session._ingest_run("book.pdf"), "book.pdf", extraction)
+
+        assert loaded == plan
+
     async def test_full_map_then_integrate(self, store: WikiStore, paths: WikiPaths) -> None:
         # The PDF must exist for source_locator resolution in the real flow; the
         # fake extractor ignores it but Session resolves the raw path first.
@@ -484,6 +544,80 @@ class TestPdfIngest:
         result = await session.ingest("book.pdf", reintegrate=True)
         assert result.output == "Hub linked to 2 chapter pages."
         assert "ingest | book.pdf" in paths.log_path.read_text(encoding="utf-8")
+
+    async def test_reintegrate_replays_matching_source_summary_artifacts(
+        self, store: WikiStore, paths: WikiPaths, monkeypatch: pytest.MonkeyPatch
+    ) -> None:
+        (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
+        extraction = _fake_extraction(paths, statuses=("done", "done"))
+        session = _session(store, list(_INTEGRATE_TURNS), paths, extraction)
+        plan = session._pdf_page_plan(
+            session._ingest_run("book.pdf"),
+            "book.pdf",
+            extraction,
+            reuse_persisted=False,
+        )
+        write = next(
+            item for item in plan.planned_writes if item.page_metadata.page_id == FUNCTIONS_PAGE
+        )
+        assert write.source_summary_plan is not None
+        store.write_page_plan_artifacts("book.pdf", page_plan_to_json(plan), "persisted")
+        store.write_technical_atom_catalog_artifact(
+            "book.pdf",
+            technical_atom_catalog_to_json(
+                TechnicalAtomCatalog(
+                    catalog_id="catalog-book",
+                    source_locator="book.pdf",
+                    artifact_fingerprint=plan.plan_id,
+                    technical_atoms=(),
+                )
+            ),
+        )
+        store.write_source_summary_draft_artifact(
+            "book.pdf",
+            write.write_id,
+            json.dumps(
+                {
+                    "source_record_text": "Functions refreshed. (raw/book.pdf p.1-10)",
+                    "claim_bullets": [
+                        {
+                            "bullet_text": "Functions are values. (raw/book.pdf p.1-10)",
+                            "covered_source_claims": list(
+                                write.source_summary_plan.selected_source_claims
+                            ),
+                        }
+                    ],
+                }
+            ),
+        )
+        store.write_page(
+            wiki_page(
+                name=FUNCTIONS_PAGE,
+                category="source",
+                summary="Stale.",
+                body="Old rendered page.",
+                sources=("raw/book.pdf p.1-10",),
+                updated=TODAY,
+            )
+        )
+
+        def fail_build_technical_atom_catalog(**_kwargs: object) -> TechnicalAtomCatalog:
+            raise AssertionError("reintegrate should reuse a matching TechnicalAtomCatalog")
+
+        def fail_page_plan_to_json(_plan: PagePlan) -> str:
+            raise AssertionError("reintegrate should reuse the persisted PagePlan JSON")
+
+        monkeypatch.setattr(
+            "llmwiki.runtime.session.build_technical_atom_catalog",
+            fail_build_technical_atom_catalog,
+        )
+        monkeypatch.setattr("llmwiki.runtime.session.page_plan_to_json", fail_page_plan_to_json)
+
+        await session.ingest("book.pdf", reintegrate=True)
+
+        refreshed = store.read_page(FUNCTIONS_PAGE)
+        assert "Functions refreshed." in refreshed
+        assert "Old rendered page." not in refreshed
 
     async def test_reintegrate_with_pending_chunks_refuses(
         self, store: WikiStore, paths: WikiPaths

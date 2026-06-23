@@ -328,6 +328,12 @@ class WikiStore:
         report_path.write_text(observation_report, encoding="utf-8")
         return plan_path, report_path
 
+    def read_page_plan_artifact(self, source_locator: str) -> str | None:
+        plan_path = self.page_plan_artifact_dir(source_locator) / "page-plan.json"
+        if not plan_path.is_file():
+            return None
+        return plan_path.read_text(encoding="utf-8")
+
     def write_evidence_registry_artifact(
         self, source_locator: str, evidence_registry_json: str
     ) -> Path:

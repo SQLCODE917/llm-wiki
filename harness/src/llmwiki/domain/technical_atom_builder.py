@@ -15,6 +15,7 @@ from llmwiki.domain.technical_atom_detection import (
     claim_kind,
     fenced_code_blocks,
     fields_for_claim,
+    inline_fenced_code_blocks,
     is_formula,
     normalize_payload,
     ordered_step_groups,
@@ -67,9 +68,7 @@ class TechnicalAtomBuilder:
         for unit, page_id, source_range in self._units():
             atoms.extend(self._structural_atoms(unit, page_id, source_range, seen))
         for claim in self.page_plan.source_claims:
-            atom = self._claim_atom(claim, seen)
-            if atom is not None:
-                atoms.append(atom)
+            atoms.extend(self._claim_atoms(claim, seen))
         return tuple(_limit_atoms_per_page(atoms))
 
     def _units(self) -> tuple[tuple[ExtractedUnit, str, SourceRange], ...]:
@@ -149,27 +148,52 @@ class TechnicalAtomBuilder:
                 atoms.append(atom)
         return tuple(atoms)
 
-    def _claim_atom(
+    def _claim_atoms(
         self, claim: SourceClaim, seen: set[tuple[str, str, str]]
-    ) -> TechnicalAtom | None:
+    ) -> tuple[TechnicalAtom, ...]:
         records = self.records_by_claim.get(claim.source_claim_id, ())
         if not records:
-            return None
+            return ()
         source_range = self._range_for_record(records[0])
         if source_range is None:
-            return None
+            return ()
         kind = claim_kind(claim)
         if kind is None:
-            return None
-        return self._make_atom(
-            kind,
-            source_range.page_id,
-            source_range,
-            claim.statement,
-            fields_for_claim(kind, claim.statement),
-            seen,
-            source_claim_ids=(claim.source_claim_id,),
-            evidence_ids=tuple(record.evidence_id for record in records),
+            return ()
+        evidence_ids = tuple(record.evidence_id for record in records)
+        if "```" in claim.statement and kind != "code":
+            return ()
+        if kind == "code":
+            atoms = tuple(
+                atom
+                for language, payload in inline_fenced_code_blocks(claim.statement)
+                if (
+                    atom := self._make_atom(
+                        "code",
+                        source_range.page_id,
+                        source_range,
+                        payload,
+                        (("language", language),),
+                        seen,
+                        source_claim_ids=(claim.source_claim_id,),
+                        evidence_ids=evidence_ids,
+                    )
+                )
+                is not None
+            )
+            if atoms or "```" in claim.statement:
+                return atoms
+        return _maybe_tuple(
+            self._make_atom(
+                kind,
+                source_range.page_id,
+                source_range,
+                claim.statement,
+                fields_for_claim(kind, claim.statement),
+                seen,
+                source_claim_ids=(claim.source_claim_id,),
+                evidence_ids=evidence_ids,
+            )
         )
 
     def _make_atom(
@@ -228,6 +252,10 @@ def _source_claim_ids(
     return tuple(
         dict.fromkeys(record.source_claim_id for record in records if record.source_claim_id)
     )[:3]
+
+
+def _maybe_tuple(atom: TechnicalAtom | None) -> tuple[TechnicalAtom, ...]:
+    return () if atom is None else (atom,)
 
 
 def _records_by_claim(

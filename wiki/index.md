@@ -2,267 +2,268 @@
 
 ## Sources
 - [[antikythera-mechanism]] — Summary of the Antikythera Mechanism, an ancient Greek analog computer.
-- [[javascriptallonge]] — Hub page for JavaScript Allongé, the 'Six' Edition.
-- [[javascriptallonge-a-balanced-statement-about-combinators]] — Summary of the chapter on combinators from 'JavaScript Allongé'.
-- [[javascriptallonge-a-few-utilities]] — Summary of the 'a few utilities' section from 'JavaScript Allongé'.
-- [[javascriptallonge-a-history-lesson]] — A history lesson on variadic functions and argument gathering in JavaScript, from javascriptallonge.pdf p.90-91.
-- [[javascriptallonge-a-pull-of-the-lever-prefaces]] — Prefaces to the JavaScript Allongé book, discussing the analogy of coffee preparation methods to programming concepts.
+- [[javascriptallonge]] — Summary of the source JavaScript Allongé, the 'Six' Edition
+- [[javascriptallonge-a-balanced-statement-about-combinators]] — a balanced statement about combinators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-a-few-utilities]] — a few utilities from raw/javascriptallonge.pdf.
+- [[javascriptallonge-a-history-lesson]] — a history lesson from raw/javascriptallonge.pdf.
+- [[javascriptallonge-a-pull-of-the-lever-prefaces]] — A Pull of the Lever: Prefaces from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-pull-of-the-lever-prefaces-2]] — Summary of the prefaces section from JavaScript Allongé, covering coffee preparation methods.
-- [[javascriptallonge-a-quick-summary-of-functions-and-bodies]] — Summary of chapter 'a quick summary of functions and bodies' from 'JavaScript Allongé'.
-- [[javascriptallonge-a-return-to-backward-thinking]] — Chapter on backward thinking in JavaScript allonge.
-- [[javascriptallonge-a-rich-aroma-basic-numbers]] — Chapter on basic numbers in JavaScriptAllonge, covering literals, representations, and numeric types.
-- [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]] — Chapter on basic strings and quasi-literals in JavaScript Allongé.
-- [[javascriptallonge-about-javascript-allong]] — Summary of the 'About JavaScript Allongé' section from raw/javascriptallonge.pdf
-- [[javascriptallonge-about-the-author]] — Summary of the "About The Author" section from javascriptallonge.pdf.
-- [[javascriptallonge-about-the-sample-pdf]] — Summary of the sample PDF edition of JavaScript Allongé.
-- [[javascriptallonge-after-another-drink]] — Chapter summary for 'after another drink' from javascriptallonge.pdf
-- [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]] — Chapter 22: Ah. I'd Like to Have an Argument, Please.
-- [[javascriptallonge-and-also]] — Chapter summary for 'And also:' from javascriptallonge.pdf
-- [[javascriptallonge-and-are-control-flow-operators]] — Summary of the chapter on || and && being control-flow operators.
-- [[javascriptallonge-applying-functions]] — Summary of functions in JavaScript as per javascriptallonge.pdf
-- [[javascriptallonge-are-consts-also-from-a-shadowy-planet]] — Chapter section on const scoping and shadowing in JavaScript.
-- [[javascriptallonge-array-literals]] — Summary of array literals section from JavaScript Allongé.
-- [[javascriptallonge-arrays-and-destructuring-arguments]] — Summary of the Arrays and Destructuring Arguments chapter from JavaScript Allongé.
-- [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — Chapter on JavaScript functions as values and their representation.
-- [[javascriptallonge-back-on-the-block]] — Chapter on functions, blocks, and return statements in JavaScript.
-- [[javascriptallonge-backwardness]] — Chapter on backwardness in JavaScript and how functions operate on data structures.
-- [[javascriptallonge-basic-operations-on-iterables]] — iterables from raw/javascriptallonge.pdf.
-- [[javascriptallonge-bonus]] — Summary of the bonus chapter from JavaScript Allongé.
-- [[javascriptallonge-building-blocks]] — Summary of the Building Blocks chapter from JavaScript Allongé.
-- [[javascriptallonge-call-by-sharing]] — Chapter on call by sharing in JavaScriptAllonge
-- [[javascriptallonge-call-by-value]] — Summary of the call by value evaluation strategy in JavaScript, based on the source 'javascriptallonge'.
-- [[javascriptallonge-caveat]] — Summary of the caveat section from javascriptallonge.pdf
-- [[javascriptallonge-closures-and-scope]] — Chapter on closures and scope in JavaScript Allongé
-- [[javascriptallonge-combinators]] — Chapter on combinators from JavaScript Allongé.
-- [[javascriptallonge-commas]] — Summary of the commas section from JavaScript Allongé.
-- [[javascriptallonge-composing-and-decomposing-data]] — Chapter on composing and decomposing data in JavaScript
-- [[javascriptallonge-composition]] — Chapter on function composition in JavaScript Allongé.
-- [[javascriptallonge-const]] — Summary of the const chapter in JavaScript Allongé
-- [[javascriptallonge-const-and-lexical-scope]] — Summary of the const and lexical scope chapter from JavaScript Allongé.
-- [[javascriptallonge-contact]] — Contact information for Reg 'Raganwald' Braithwaite, author of JavaScript Allongé.
-- [[javascriptallonge-converting-non-tail-calls-to-tail-calls]] — Chapter on converting non-tail-calls to tail-calls in JavaScript
-- [[javascriptallonge-copy-on-read]] — Summary of the copy-on-read strategy in JavaScript Allongé.
-- [[javascriptallonge-copy-on-write]] — Copy-on-write strategy in JavaScript, including its definition, tradeoffs, and implementation in the context of immutable data structures.
-- [[javascriptallonge-copyright-notice]] — Copyright notice for JavaScript Allongé
-- [[javascriptallonge-daniel-friedman-and-matthias-felleisen]] — Summary of the chapter on Daniel Friedman and Matthias Felleisen from JavaScript Allongé.
-- [[javascriptallonge-default-arguments]] — Default arguments in JavaScript, including tail-recursive function examples and syntax.
-- [[javascriptallonge-defaults-and-destructuring]] — Chapter covering defaults and destructuring in JavaScript.
-- [[javascriptallonge-destructuring-and-return-values]] — Summary of the chapter on destructuring and return values from JavaScript Allongé.
-- [[javascriptallonge-destructuring-arrays]] — Chapter on destructuring arrays from JavaScript Allongé
-- [[javascriptallonge-destructuring-is-not-pattern-matching]] — Summary of the section 'destructuring is not pattern matching' from javascriptallonge.pdf
-- [[javascriptallonge-destructuring-objects]] — Summary of destructuring objects chapter from JavaScript Allongé.
-- [[javascriptallonge-destructuring-parameters]] — Chapter on destructuring parameters in JavaScript Allongé.
-- [[javascriptallonge-disclaimer]] — Summary of the disclaimer section from JavaScript Allongé.
-- [[javascriptallonge-ecmascript-6-has-three-major-groups-of-features]] — Summary of ECMAScript 6 features in JavaScript Allongé.
-- [[javascriptallonge-element-references]] — Summary of the element references section from javascriptallonge.pdf
-- [[javascriptallonge-evaluation-time]] — Summary of the evaluation time section from JavaScript Allongé.
-- [[javascriptallonge-factorials]] — Chapter on factorials from JavaScript Allongé.
-- [[javascriptallonge-false]] — Summary of the false boolean value in JavaScript, as described in 'JavaScript Allongé'.
-- [[javascriptallonge-flip]] — Chapter on flip function and argument order reversal in JavaScript.
-- [[javascriptallonge-flipping-methods]] — Summary of the flipping methods section from javascriptallonge.pdf
-- [[javascriptallonge-floating]] — Chapter on floating-point numbers in JavaScript
-- [[javascriptallonge-folding]] — Chapter on folding in JavaScript allonge
-- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition of JavaScript Allongé.
+- [[javascriptallonge-a-quick-summary-of-functions-and-bodies]] — a quick summary of functions and bodies from raw/javascriptallonge.pdf.
+- [[javascriptallonge-a-return-to-backward-thinking]] — a return to backward thinking from raw/javascriptallonge.pdf.
+- [[javascriptallonge-a-rich-aroma-basic-numbers]] — A Rich Aroma: Basic Numbers from raw/javascriptallonge.pdf.
+- [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]] — A Warm Cup: Basic Strings and Quasi-Literals from raw/javascriptallonge.pdf.
+- [[javascriptallonge-about-javascript-allong]] — About JavaScript Allongé from raw/javascriptallonge.pdf.
+- [[javascriptallonge-about-the-author]] — About The Author from raw/javascriptallonge.pdf.
+- [[javascriptallonge-about-the-sample-pdf]] — About The Sample PDF from raw/javascriptallonge.pdf.
+- [[javascriptallonge-after-another-drink]] — after another drink from raw/javascriptallonge.pdf.
+- [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]] — Ah. I'd Like to Have an Argument, Please. 22 from raw/javascriptallonge.pdf.
+- [[javascriptallonge-and-also]] — And also: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-and-are-control-flow-operators]] — || and && are control-flow operators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-applying-functions]] — Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-are-consts-also-from-a-shadowy-planet]] — are consts also from a shadowy planet? from raw/javascriptallonge.pdf.
+- [[javascriptallonge-array-literals]] — array literals from raw/javascriptallonge.pdf.
+- [[javascriptallonge-arrays-and-destructuring-arguments]] — Arrays and Destructuring Arguments from raw/javascriptallonge.pdf.
+- [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — As Little As Possible About Functions, But No Less from raw/javascriptallonge.pdf.
+- [[javascriptallonge-back-on-the-block]] — back on the block from raw/javascriptallonge.pdf.
+- [[javascriptallonge-backwardness]] — backwardness from raw/javascriptallonge.pdf.
+- [[javascriptallonge-basic-operations-on-iterables]] — Basic Operations on Iterables from raw/javascriptallonge.pdf.
+- [[javascriptallonge-bonus]] — bonus from raw/javascriptallonge.pdf.
+- [[javascriptallonge-building-blocks]] — Building Blocks from raw/javascriptallonge.pdf.
+- [[javascriptallonge-call-by-sharing]] — call by sharing from raw/javascriptallonge.pdf.
+- [[javascriptallonge-call-by-value]] — call by value from raw/javascriptallonge.pdf.
+- [[javascriptallonge-caveat]] — caveat from raw/javascriptallonge.pdf.
+- [[javascriptallonge-closures-and-scope]] — Closures and Scope from raw/javascriptallonge.pdf.
+- [[javascriptallonge-combinators]] — combinators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-commas]] — commas from raw/javascriptallonge.pdf.
+- [[javascriptallonge-composing-and-decomposing-data]] — Composing and Decomposing Data from raw/javascriptallonge.pdf.
+- [[javascriptallonge-composition]] — composition from raw/javascriptallonge.pdf.
+- [[javascriptallonge-const]] — mixing let and const from raw/javascriptallonge.pdf.
+- [[javascriptallonge-const-and-lexical-scope]] — const and lexical scope from raw/javascriptallonge.pdf.
+- [[javascriptallonge-contact]] — contact from raw/javascriptallonge.pdf.
+- [[javascriptallonge-converting-non-tail-calls-to-tail-calls]] — converting non-tail-calls to tail-calls from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copy-on-read]] — copy-on-read from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copy-on-write]] — copy-on-write from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copyright-notice]] — Copyright Notice from raw/javascriptallonge.pdf.
+- [[javascriptallonge-daniel-friedman-and-matthias-felleisen]] — Daniel Friedman and Matthias Felleisen from raw/javascriptallonge.pdf.
+- [[javascriptallonge-default-arguments]] — default arguments from raw/javascriptallonge.pdf.
+- [[javascriptallonge-defaults-and-destructuring]] — defaults and destructuring from raw/javascriptallonge.pdf.
+- [[javascriptallonge-destructuring-and-return-values]] — destructuring and return values from raw/javascriptallonge.pdf.
+- [[javascriptallonge-destructuring-arrays]] — destructuring arrays from raw/javascriptallonge.pdf.
+- [[javascriptallonge-destructuring-is-not-pattern-matching]] — destructuring is not pattern matching from raw/javascriptallonge.pdf.
+- [[javascriptallonge-destructuring-objects]] — destructuring objects from raw/javascriptallonge.pdf.
+- [[javascriptallonge-destructuring-parameters]] — destructuring parameters from raw/javascriptallonge.pdf.
+- [[javascriptallonge-disclaimer]] — Disclaimer from raw/javascriptallonge.pdf.
+- [[javascriptallonge-ecmascript-6-has-three-major-groups-of-features]] — ECMAScript 6 has three major groups of features: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-element-references]] — element references from raw/javascriptallonge.pdf.
+- [[javascriptallonge-evaluation-time]] — evaluation time from raw/javascriptallonge.pdf.
+- [[javascriptallonge-factorials]] — factorials from raw/javascriptallonge.pdf.
+- [[javascriptallonge-false]] — false from raw/javascriptallonge.pdf.
+- [[javascriptallonge-flip]] — Flip from raw/javascriptallonge.pdf.
+- [[javascriptallonge-flipping-methods]] — flipping methods from raw/javascriptallonge.pdf.
+- [[javascriptallonge-floating]] — floating from raw/javascriptallonge.pdf.
+- [[javascriptallonge-folding]] — folding from raw/javascriptallonge.pdf.
+- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition from raw/javascriptallonge.pdf.
 - [[javascriptallonge-forewords-to-the-first-edition]] — Forewords and prefaces from the first edition.
-- [[javascriptallonge-from]] — Summary of the 'from' section from javascriptallonge.pdf (pages 221-222).
+- [[javascriptallonge-from]] — from from raw/javascriptallonge.pdf.
 - [[javascriptallonge-front-matter]] — Summary of the front matter of JavaScript Allongé, the Six Edition.
-- [[javascriptallonge-function-declaration-caveats-34]] — Summary of function declaration caveats from javascriptallonge.pdf, pages 66-67
-- [[javascriptallonge-function-declarations]] — Summary of function declarations in JavaScript as described in 'JavaScript Allongé'.
-- [[javascriptallonge-function-decorators]] — Summary of function decorators in JavaScript Allongé
-- [[javascriptallonge-function-parameters-are-eager]] — Function parameters are always eagerly evaluated in JavaScript, unlike the ternary operator and logical operators.
-- [[javascriptallonge-functional-iterators]] — Chapter on functional iterators in JavaScript Allongé
-- [[javascriptallonge-functions-and-identities]] — Summary of the functions and identities section from javascriptallonge.pdf
-- [[javascriptallonge-functions-are-not-the-real-point]] — Chapter on functions not being the real point in JavaScript Allongé, discussing the theoretical vs practical aspects of functional programming.
-- [[javascriptallonge-functions-that-evaluate-to-functions]] — Chapter on functions that evaluate to functions in JavaScript Allongé.
-- [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]] — Chapter on functions that return values and evaluate expressions from JavaScript Allongé.
-- [[javascriptallonge-garbage-garbage-everywhere]] — Chapter on garbage collection and memory management in JavaScript
-- [[javascriptallonge-gathering]] — Chapter on gathering and destructuring in JavaScript Allongé
-- [[javascriptallonge-generating-iterables]] — Chapter on generating iterables in JavaScript.
-- [[javascriptallonge-generators-and-iterables]] — Chapter on generators and iterables from JavaScript Allongé
-- [[javascriptallonge-generators-are-coroutines]] — Generators as coroutines in JavaScript, with behavioral differences from ordinary functions.
-- [[javascriptallonge-higher-order-functions]] — Summary of the higher-order functions chapter from JavaScript Allongé.
-- [[javascriptallonge-how-this-book-is-organized]] — Summary of how JavaScript Allongé is organized, per page 11-12.
-- [[javascriptallonge-how-to-run-the-examples]] — How to run the examples from JavaScript Allongé, including use of Traceur Compiler and Babel transpilers.
-- [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — Chapter discussing the distinction between pure functions and closures, focusing on free variables.
-- [[javascriptallonge-images]] — Summary of images and copyright information from JavaScript Allongé, pages 293-296.
-- [[javascriptallonge-implementing-methods-with-iteration]] — Chapter on implementing methods with iteration in JavaScript Allongé
-- [[javascriptallonge-inside-out]] — Chapter on inside-out function patterns in JavaScript.
-- [[javascriptallonge-interactive-generators]] — Summary of interactive generators in JavaScript Allongé.
-- [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — Interlude: The Carpenter Interviews for a Job
-- [[javascriptallonge-it-s-always-the-environment]] — Chapter on environments and closures in JavaScript Allongé
-- [[javascriptallonge-iterables-out-to-infinity]] — Chapter on iterables out to infinity from JavaScript Allongé.
-- [[javascriptallonge-iterating]] — Summary of the iterating chapter from JavaScript Allongé.
-- [[javascriptallonge-iteration]] — Summary of the iteration chapter from JavaScript Allongé.
-- [[javascriptallonge-iteration-and-iterables]] — Chapter on iteration and iterables in JavaScript Allongé.
-- [[javascriptallonge-iterator-objects]] — Summary of the chapter on iterator objects from JavaScript Allongé.
+- [[javascriptallonge-function-declaration-caveats-34]] — function declaration caveats 34 from raw/javascriptallonge.pdf.
+- [[javascriptallonge-function-declarations]] — function declarations from raw/javascriptallonge.pdf.
+- [[javascriptallonge-function-decorators]] — function decorators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-function-parameters-are-eager]] — function parameters are eager from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functional-iterators]] — a look back at functional iterators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functions-and-identities]] — functions and identities from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functions-are-not-the-real-point]] — functions are not the real point from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functions-that-evaluate-to-functions]] — functions that evaluate to functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]] — functions that return values and evaluate expressions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-garbage-garbage-everywhere]] — Garbage, Garbage Everywhere from raw/javascriptallonge.pdf.
+- [[javascriptallonge-gathering]] — gathering from raw/javascriptallonge.pdf.
+- [[javascriptallonge-generating-iterables]] — Generating Iterables from raw/javascriptallonge.pdf.
+- [[javascriptallonge-generators-and-iterables]] — generators and iterables from raw/javascriptallonge.pdf.
+- [[javascriptallonge-generators-are-coroutines]] — generators are coroutines from raw/javascriptallonge.pdf.
+- [[javascriptallonge-higher-order-functions]] — higher-order functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-how-this-book-is-organized]] — how this book is organized from raw/javascriptallonge.pdf.
+- [[javascriptallonge-how-to-run-the-examples]] — How to run the examples from raw/javascriptallonge.pdf.
+- [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — if functions without free variables are pure, are closures impure? from raw/javascriptallonge.pdf.
+- [[javascriptallonge-images]] — images from raw/javascriptallonge.pdf.
+- [[javascriptallonge-implementing-methods-with-iteration]] — implementing methods with iteration from raw/javascriptallonge.pdf.
+- [[javascriptallonge-inside-out]] — inside-out from raw/javascriptallonge.pdf.
+- [[javascriptallonge-interactive-generators]] — interactive generators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — Interlude: The Carpenter Interviews for a Job from raw/javascriptallonge.pdf.
+- [[javascriptallonge-it-s-always-the-environment]] — it's always the environment from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iterables-out-to-infinity]] — iterables out to infinity from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iterating]] — iterating from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iteration]] — // Iteration from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iteration-and-iterables]] — Iteration and Iterables from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iterator-objects]] — iterator objects from raw/javascriptallonge.pdf.
 - [[javascriptallonge-javascript-allong-the-six-edition]] — Summary of the 'Six' Edition of JavaScript Allongé.
-- [[javascriptallonge-javascript-s-generators]] — Summary of JavaScript's generators chapter from 'JavaScript Allongé'.
-- [[javascriptallonge-lazy-and-eager-collections]] — Lazy vs eager collection designs and the LazyCollection mixin
-- [[javascriptallonge-lazy-collection-operations]] — Summary of lazy collection operations in JavaScriptAllonge, focusing on laziness, iterators, and memory efficiency.
-- [[javascriptallonge-left-variadic-destructuring]] — Summary of left-variadic destructuring from javascriptallonge.pdf
-- [[javascriptallonge-left-variadic-functions]] — Summary of the Left-Variadic Functions section from JavaScript Allongé.
-- [[javascriptallonge-like-this]] — Summary of the 'Like this:' section from 'JavaScript Allongé'.
-- [[javascriptallonge-linear-recursion]] — Summary of the linear recursion concept from JavaScript Allongé.
-- [[javascriptallonge-lists-with-functions-as-data]] — Chapter on using functions as data structures, specifically linked lists.
-- [[javascriptallonge-literal-object-syntax]] — Summary of literal object syntax in JavaScriptAllonge.
-- [[javascriptallonge-magic-names]] — Chapter on magic names in JavaScript Allongé
-- [[javascriptallonge-magic-names-and-fat-arrows]] — Summary of the magic names this and arguments in fat arrow functions.
-- [[javascriptallonge-making-data-out-of-functions]] — Chapter on modeling data using functions, including K, I, and V combinators.
-- [[javascriptallonge-mapping]] — Chapter on mapping in JavaScript Allongé
-- [[javascriptallonge-mapwith]] — Chapter on mapWith function in JavaScript Allongé
-- [[javascriptallonge-matthew-knox]] — Summary of Matthew Knox's contribution to JavaScript Allongé.
-- [[javascriptallonge-maybe]] — Chapter on the Maybe pattern and its implementation in JavaScript
-- [[javascriptallonge-memoizing-an-iterable]] — Chapter on memoizing iterables in JavaScript
-- [[javascriptallonge-michael-fogus]] — Review of JavaScript Allongé by Michael Fogus
-- [[javascriptallonge-more-generators]] — Summary of the 'more generators' section from javascriptallonge.pdf (pages 236-239).
-- [[javascriptallonge-mutation]] — Chapter on building with mutation in JavaScript
-- [[javascriptallonge-mutation-and-data-structures]] — Chapter on mutation and data structures from JavaScript Allongé.
-- [[javascriptallonge-naming-functions]] — Summary of the 'Naming Functions' section from 'JavaScript Allongé'.
-- [[javascriptallonge-nested-blocks]] — Chapter on nested blocks in JavaScript Allongé.
-- [[javascriptallonge-object-assign]] — Object.assign – object copying, extending, and prototype mixins
-- [[javascriptallonge-once]] — Summary of the "Once" chapter from JavaScript Allongé.
-- [[javascriptallonge-operations-on-numbers]] — Summary of the 'operations on numbers' section from javascriptallonge.pdf
-- [[javascriptallonge-operations-on-ordered-collections]] — Summary of operations on ordered collections from javascriptallonge.pdf
-- [[javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable]] — Summary of the section on operations that compose two or more iterables into an iterable from javascriptallonge.
-- [[javascriptallonge-operations-that-transform-an-iterable-into-a-value]] — Summary of the section 'operations that transform an iterable into a value' from javascriptallonge.pdf.
-- [[javascriptallonge-operations-that-transform-one-iterable-into-another]] — Summary of the section 'operations that transform one iterable into another' from javascriptallonge.pdf
+- [[javascriptallonge-javascript-s-generators]] — javascript's generators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-lazy-and-eager-collections]] — eager collections from raw/javascriptallonge.pdf.
+- [[javascriptallonge-lazy-collection-operations]] — lazy collection operations from raw/javascriptallonge.pdf.
+- [[javascriptallonge-left-variadic-destructuring]] — left-variadic destructuring from raw/javascriptallonge.pdf.
+- [[javascriptallonge-left-variadic-functions]] — Left-Variadic Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-like-this]] — Like this: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-linear-recursion]] — linear recursion from raw/javascriptallonge.pdf.
+- [[javascriptallonge-lists-with-functions-as-data]] — lists with functions as data from raw/javascriptallonge.pdf.
+- [[javascriptallonge-literal-object-syntax]] — literal object syntax from raw/javascriptallonge.pdf.
+- [[javascriptallonge-magic-names]] — Magic Names from raw/javascriptallonge.pdf.
+- [[javascriptallonge-magic-names-and-fat-arrows]] — magic names and fat arrows from raw/javascriptallonge.pdf.
+- [[javascriptallonge-making-data-out-of-functions]] — Making Data Out Of Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-mapping]] — mapping from raw/javascriptallonge.pdf.
+- [[javascriptallonge-mapwith]] — mapWith from raw/javascriptallonge.pdf.
+- [[javascriptallonge-matthew-knox]] — matthew knox from raw/javascriptallonge.pdf.
+- [[javascriptallonge-maybe]] — Maybe from raw/javascriptallonge.pdf.
+- [[javascriptallonge-memoizing-an-iterable]] — memoizing an iterable from raw/javascriptallonge.pdf.
+- [[javascriptallonge-michael-fogus]] — michael fogus from raw/javascriptallonge.pdf.
+- [[javascriptallonge-more-generators]] — more generators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-mutation]] — building with mutation from raw/javascriptallonge.pdf.
+- [[javascriptallonge-mutation-and-data-structures]] — mutation and data structures from raw/javascriptallonge.pdf.
+- [[javascriptallonge-naming-functions]] — Naming Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-nested-blocks]] — nested blocks from raw/javascriptallonge.pdf.
+- [[javascriptallonge-object-assign]] — Object.assign from raw/javascriptallonge.pdf.
+- [[javascriptallonge-once]] — Once from raw/javascriptallonge.pdf.
+- [[javascriptallonge-operations-on-numbers]] — operations on numbers from raw/javascriptallonge.pdf.
+- [[javascriptallonge-operations-on-ordered-collections]] — operations on ordered collections from raw/javascriptallonge.pdf.
+- [[javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable]] — operations that compose two or more iterables into an iterable from raw/javascriptallonge.pdf.
+- [[javascriptallonge-operations-that-transform-an-iterable-into-a-value]] — operations that transform an iterable into a value from raw/javascriptallonge.pdf.
+- [[javascriptallonge-operations-that-transform-one-iterable-into-another]] — operations that transform one iterable into another from raw/javascriptallonge.pdf.
 - [[javascriptallonge-or-even]] — Chapter on the 'Or even' topic in JavaScript Allongé.
-- [[javascriptallonge-ordered-collections]] — Summary of ordered collections in JavaScript Allongé
-- [[javascriptallonge-overcoming-limitations]] — Chapter on overcoming limitations in JavaScript, including left-variadic functions and the leftVariadic decorator.
-- [[javascriptallonge-partial-application]] — Chapter on partial application in JavaScript Allongé
-- [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — Chapter on choice and truthiness in JavaScript
-- [[javascriptallonge-plain-old-javascript-objects]] — Summary of the Plain Old JavaScript Objects chapter from JavaScript Allongé
-- [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Summary of the Prelude: Values and Expressions over Coffee section from JavaScript Allongé.
-- [[javascriptallonge-quasi-literals]] — Summary of quasi-literals from javascriptallonge.pdf
-- [[javascriptallonge-reassignment]] — Summary of the reassignment chapter from JavaScript Allongé.
-- [[javascriptallonge-rebinding]] — Chapter on rebinding in JavaScript Allongé
-- [[javascriptallonge-recipes-with-basic-functions]] — Chapter on recipes with basic functions in JavaScript Allongé.
-- [[javascriptallonge-recipes-with-data]] — Chapter on recipes with data from JavaScript Allongé.
-- [[javascriptallonge-recursive-iterators]] — Summary of the recursive iterators section from JavaScript Allongé.
-- [[javascriptallonge-reference-types]] — Summary of the reference types chapter from JavaScript Allongé.
-- [[javascriptallonge-reg-raganwald-braithwaite]] — Summary of Reg 'raganwald' Braithwaite's 'JavaScript Allongé' book.
+- [[javascriptallonge-ordered-collections]] — ordered collections from raw/javascriptallonge.pdf.
+- [[javascriptallonge-overcoming-limitations]] — overcoming limitations from raw/javascriptallonge.pdf.
+- [[javascriptallonge-partial-application]] — Partial Application from raw/javascriptallonge.pdf.
+- [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — Picking the Bean: Choice and Truthiness from raw/javascriptallonge.pdf.
+- [[javascriptallonge-plain-old-javascript-objects]] — Plain Old JavaScript Objects from raw/javascriptallonge.pdf.
+- [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Prelude: Values and Expressions over Coffee from raw/javascriptallonge.pdf.
+- [[javascriptallonge-quasi-literals]] — quasi-literals from raw/javascriptallonge.pdf.
+- [[javascriptallonge-reassignment]] — Reassignment from raw/javascriptallonge.pdf.
+- [[javascriptallonge-rebinding]] — rebinding from raw/javascriptallonge.pdf.
+- [[javascriptallonge-recipes-with-basic-functions]] — Recipes with Basic Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-recipes-with-data]] — Recipes with Data from raw/javascriptallonge.pdf.
+- [[javascriptallonge-recursive-iterators]] — recursive iterators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-reference-types]] — reference types from raw/javascriptallonge.pdf.
+- [[javascriptallonge-reg-raganwald-braithwaite]] — Reg 'raganwald' Braithwaite from raw/javascriptallonge.pdf.
 - [[javascriptallonge-reg-raganwald-braithwaite-2]] — Summary of Reg 'raganwald' Braithwaite's work and the Lean Publishing process.
-- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]] — Summary of the 'representing naughts and crosses as a stateful function' section from javascriptallonge.
-- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function]] — Summary of the chapter 'representing naughts and crosses as a stateless function' from the source 'javascriptallonge'.
-- [[javascriptallonge-revisiting-linked-lists]] — Summary of the revisiting linked lists chapter from JavaScript Allongé.
-- [[javascriptallonge-rewriting-iterable-operations]] — Chapter summary for 'rewriting iterable operations' from 'JavaScript Allongé'.
-- [[javascriptallonge-richard-feynman]] — Summary of Richard Feynman's QED and its explanation of Quantum Electrodynamics and the 'Sum of the Histories' methodology.
-- [[javascriptallonge-say-please]] — Chapter on using functions as data structures in JavaScript, focusing on 'say please' pattern
-- [[javascriptallonge-self-currying-flip]] — Summary of the self-currying flip concept from 'JavaScript Allongé'.
-- [[javascriptallonge-self-similarity]] — Chapter on self-similarity and recursion in JavaScript
-- [[javascriptallonge-served-by-the-pot-collections]] — Summary of the 'Served by the Pot: Collections' section from JavaScript Allongé.
-- [[javascriptallonge-so-why-arrays]] — Summary of the 'so why arrays' section from javascriptallonge.pdf
-- [[javascriptallonge-some-history]] — History of Lisp and its influence on JavaScript, including CAR, CDR, and cons cells.
-- [[javascriptallonge-state-machines]] — Summary of the state machines chapter from JavaScript Allongé.
-- [[javascriptallonge-summary]] — Summary of the book 'JavaScript Allongé'.
-- [[javascriptallonge-tail-call-optimization]] — Tail-call optimization in JavaScript as described in 'JavaScript Allongé'.
-- [[javascriptallonge-tail-calls-and-default-arguments]] — Chapter on tail calls and default arguments in JavaScript Allong’e
-- [[javascriptallonge-tap]] — Chapter on the tap combinator from JavaScript Allongé.
-- [[javascriptallonge-that-constant-coffee-craving]] — Chapter on naming functions and using function expressions to bind values.
-- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — Chapter discussing the evolution of JavaScript and its alignment with programming concepts like composition and functions.
-- [[javascriptallonge-the-aftermath]] — Summary of the 'the aftermath' chapter from JavaScript Allongé.
-- [[javascriptallonge-the-carpenter-s-solution]] — The carpenter's solution to the loop detection problem in linked lists and chequerboard games.
-- [[javascriptallonge-the-function-keyword]] — Summary of the function keyword section from JavaScript Allongé
+- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]] — representing naughts and crosses as a stateful function from raw/javascriptallonge.pdf.
+- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function]] — representing naughts and crosses as a stateless function from raw/javascriptallonge.pdf.
+- [[javascriptallonge-revisiting-linked-lists]] — revisiting linked lists from raw/javascriptallonge.pdf.
+- [[javascriptallonge-rewriting-iterable-operations]] — rewriting iterable operations from raw/javascriptallonge.pdf.
+- [[javascriptallonge-richard-feynman]] — Richard Feynman from raw/javascriptallonge.pdf.
+- [[javascriptallonge-say-please]] — say 'please' from raw/javascriptallonge.pdf.
+- [[javascriptallonge-self-currying-flip]] — self-currying flip from raw/javascriptallonge.pdf.
+- [[javascriptallonge-self-similarity]] — Self-Similarity from raw/javascriptallonge.pdf.
+- [[javascriptallonge-served-by-the-pot-collections]] — Served by the Pot: Collections from raw/javascriptallonge.pdf.
+- [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]] — shadowy variables from a shadowy planet from raw/javascriptallonge.pdf.
+- [[javascriptallonge-so-why-arrays]] — so why arrays from raw/javascriptallonge.pdf.
+- [[javascriptallonge-some-history]] — some history from raw/javascriptallonge.pdf.
+- [[javascriptallonge-state-machines]] — state machines from raw/javascriptallonge.pdf.
+- [[javascriptallonge-summary]] — summary from raw/javascriptallonge.pdf.
+- [[javascriptallonge-tail-call-optimization]] — tail-call optimization from raw/javascriptallonge.pdf.
+- [[javascriptallonge-tail-calls-and-default-arguments]] — Tail Calls (and Default Arguments) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-tap]] — Tap from raw/javascriptallonge.pdf.
+- [[javascriptallonge-that-constant-coffee-craving]] — That Constant Coffee Craving from raw/javascriptallonge.pdf.
+- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — that's nice. is that the only reason? from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-aftermath]] — the aftermath from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-carpenter-s-solution]] — the carpenter's solution from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-function-keyword]] — the function keyword from raw/javascriptallonge.pdf.
 - [[javascriptallonge-the-golden-crema-appendices-and-afterwords]] — Summary of the appendices and afterwords section from JavaScript Allongé.
-- [[javascriptallonge-the-kestrel-and-the-idiot]] — Chapter on the kestrel and the idiot functions from JavaScript Allongé.
-- [[javascriptallonge-the-problem]] — The problem of determining if a game halts from a stream of directions, as presented in javascriptallonge.pdf p.261-264.
-- [[javascriptallonge-the-simplest-possible-block]] — Summary of the simplest possible block concept from JavaScript Allongé.
-- [[javascriptallonge-the-vireo]] — The Vireo (V combinator) and related combinators in the context of data structures.
-- [[javascriptallonge-this-seems-familiar]] — Chapter on naughts and crosses game and implicit state representation in JavaScript control flow.
-- [[javascriptallonge-tortoises-hares-and-teleporting-turtles]] — Chapter on loop detection algorithms: Tortoise and Hare, and Teleporting Turtle.
+- [[javascriptallonge-the-kestrel-and-the-idiot]] — the kestrel and the idiot from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-problem]] — the problem from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-simplest-possible-block]] — the simplest possible block from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-vireo]] — the vireo from raw/javascriptallonge.pdf.
+- [[javascriptallonge-this-seems-familiar]] — this seems familiar from raw/javascriptallonge.pdf.
+- [[javascriptallonge-tortoises-hares-and-teleporting-turtles]] — Tortoises, Hares, and Teleporting Turtles from raw/javascriptallonge.pdf.
 - [[javascriptallonge-true]] — Chapter on the boolean value 'true' in JavaScript.
-- [[javascriptallonge-truthiness-and-operators]] — Summary of the truthiness and operators section from JavaScript Allongé.
-- [[javascriptallonge-truthiness-and-the-ternary-operator]] — Chapter on truthiness and the ternary operator from JavaScript Allongé.
-- [[javascriptallonge-unary]] — Summary of the Unary function decorator section from 'JavaScript Allongé'.
-- [[javascriptallonge-undefined]] — Summary of the undefined chapter from JavaScript Allongé.
-- [[javascriptallonge-unfolding-and-laziness]] — Chapter on unfolding and laziness in JavaScript Allongé.
-- [[javascriptallonge-value-types]] — Summary of value types in JavaScript, including primitive types and identity.
-- [[javascriptallonge-values-and-identity]] — Chapter on values and identity in JavaScript Allongé.
-- [[javascriptallonge-values-are-expressions]] — Chapter on values and expressions in JavaScript Allongé
-- [[javascriptallonge-var]] — Summary of the 'var' keyword in JavaScript as described in 'JavaScript Allongé'.
-- [[javascriptallonge-variables-and-bindings]] — Chapter on variables and bindings in JavaScript Allongé
-- [[javascriptallonge-void]] — Summary of the void chapter from JavaScript Allongé.
-- [[javascriptallonge-we-get]] — Chapter on stateless functions and naughts-and-crosses game implementation in JavaScript.
-- [[javascriptallonge-we-ll-keep-it-simple]] — Summary of the 'We'll keep it simple' section from JavaScript Allongé, focusing on generators vs. iterators.
-- [[javascriptallonge-what-javascript-allong-is-and-isn-t]] — Summary of the 'What JavaScript Allongé is. And isn't.' section from javascriptallonge.pdf
-- [[javascriptallonge-which-came-first-the-chicken-or-the-egg]] — Chapter summary for 'which came first, the chicken or the egg?' from JavaScript Allongé
-- [[javascriptallonge-why]] — Chapter Why? from 'JavaScript Allongé' explaining the Y Combinator and its role in recursive functions without binding names.
-- [[javascriptallonge-why-const-and-let-were-invented]] — Summary of the section 'why const and let were invented' from javascriptallonge.pdf
-- [[javascriptallonge-why-the-six-edition]] — Summary of the 'why the six edition' section from JavaScript Allongé.
-- [[javascriptallonge-will-be-represented-as]] — Summary of the 'Will be represented as' section from javascriptallonge.pdf, pages 277-278.
-- [[javascriptallonge-would-be-3-producing]] — Chapter section on encoding game boards in different ways.
-- [[javascriptallonge-yes-consider-this-variation]] — Summary of the 'Yes. Consider this variation' section from javascriptallonge.pdf, pages 155-157, focusing on closure and variable scoping with var vs let.
-- [[javascriptallonge-yielding-iterables]] — Chapter on yielding iterables from JavaScript Allongé.
-- [[sword-world-rpg-complete-edition]] — Source summary for the Sword World RPG - Complete Edition rulebook.
-- [[sword-world-rpg-complete-edition-1-3-skills]] — Chapter 1.3 Skills from Sword World RPG - Complete Edition, covering skill basics, types, and adventurer skills.
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — Overview of character creation process in Sword World RPG, including race selection, ability scores, skills, and equipment.
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — Summary of character creation rules, weapons, armor, and skill-based restrictions.
-- [[sword-world-rpg-complete-edition-10-3-surprise-attacks]] — Summary of the Surprise Attacks section from Sword World RPG - Complete Edition, including rules for surprise attacks, penalties, and check tables.
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]] — Summary of chapter 11.2 Dark Magic (part 1) from Sword World RPG - Complete Edition, covering dark magic, dark priests, and basic dark magic spells.
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]] — Special dark magic spells for wicked gods, including Phalaris, The Nameless God of Madness, Kardis, and Mirleaf.
-- [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]] — Chapter 11.3 on Dragon Roar Magic from Sword World RPG - Complete Edition, covering the basics, abilities, and spells of dragon priests.
-- [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]] — Rules for asking NPCs to use magic in Sword World RPG, including costs, availability, and requirements for different magic spells.
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]] — Rules for poison, illness and infection in Sword World RPG - Complete Edition, part 1.
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]] — Rules for poison, illness and infection in Sword World RPG - Complete Edition, part 2
-- [[sword-world-rpg-complete-edition-13-1-types-of-monsters]] — Summary of the 13.1 Types of Monsters section from Sword World RPG - Complete Edition
-- [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]] — Section 13.2.1 of the Sword World RPG - Complete Edition, explaining how to read the monster catalog.
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]] — Magical creatures from Sword World RPG - Complete Edition, section 13.2.10, pages 222-227.
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]] — Magical creatures section 13.2.10 from Sword World RPG - Complete Edition, covering air stalker, mutant monster, golems, and underworld creatures.
-- [[sword-world-rpg-complete-edition-13-2-12-humans]] — Summary of the Humans section (13.2.12) from Sword World RPG - Complete Edition, covering normal humans, bandits, soldiers, and dark priests.
-- [[sword-world-rpg-complete-edition-13-2-2-fae]] — Chapter 13.2.2 Fae describes fae monsters and their characteristics, including pixies, fairies, pookas, and featherfolk.
-- [[sword-world-rpg-complete-edition-13-2-4-spirits]] — Summary of the Spirits section (13.2.4) from Sword World RPG - Complete Edition, covering will-o-wisp, shade, brownie, undine, salamander, sandman, sylph, sprite, gnome, frau, leprechaun, dryad, and mad spirit of life.
-- [[sword-world-rpg-complete-edition-13-2-5-titans]] — Summary of the Titans section from Sword World RPG - Complete Edition, covering various titan monsters and their characteristics.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]] — Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 1), covering satyrs, ceiling hangers, harpies, hippocampi, medusas, and androscorpions.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]] — Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 2), pages 188-198.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]] — Summary of section 13.2.6 Mythical Beasts and Magical Beasts (part 3) from Sword World RPG - Complete Edition, pages 188-198
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]] — Summary of the Animals (part 1) section from Sword World RPG - Complete Edition, covering monsters like wolves, giant rats, and hanger legs.
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]] — Summary of animals from Sword World RPG - Complete Edition, section 13.2.7 (pages 199-211).
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]] — Summary of animals section 13.2.7 from Sword World RPG - Complete Edition, covering sand worms, giant seals, snakes, spiders, and octopuses.
-- [[sword-world-rpg-complete-edition-13-2-8-plants]] — Summary of the Plants section (13.2.8) from Sword World RPG - Complete Edition, covering killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune.
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]] — Summary of the undead section (13.2.9) from Sword World RPG - Complete Edition, covering monsters like alraune, flowers, fungus, buau zombies, skeletons, zombies, ashes, ghouls, sins, wights, haunts, ghosts, specters, phantoms, jack-o-lanterns, and dullahans.
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]] — Summary of undead monsters in Sword World RPG - Complete Edition, part 2, covering headless horses, undead knights, wraiths, mummies, vampires, and undead kings.
-- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]] — Monster Level and Adventurer Level rules for the Sword World RPG - Complete Edition, including level comparisons and scenario scaling.
-- [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]] — Summary of chapter 13.6 on handling monster special abilities from Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]] — Summary of treasure and rewards in the Sword World RPG setting, including ancient kingdom treasures, adventurer's shops, and reward systems.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]] — Magical Item List (part 1) from Sword World RPG - Complete Edition, pages 242-256
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]] — Magical items list from Sword World RPG - Complete Edition, section 14.4, pages 242-256
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]] — Magical items list part 3 from Sword World RPG - Complete Edition, pages 242-260
-- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]] — Combat rules for when monsters roll dice in Sword World RPG
-- [[sword-world-rpg-complete-edition-16-5-combat-options]] — Optional combat rules for Sword World RPG, including full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim.
-- [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]] — Extended rules for throwing multiple darts or daggers in Sword World RPG.
-- [[sword-world-rpg-complete-edition-17-2-lost-spells]] — Rules for lost spells in the Sword World RPG - Complete Edition, including learning methods and spell requirements.
-- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]] — Rules for destroying structures in Sword World RPG - Complete Edition, including structure strength table and material-specific guidelines.
-- [[sword-world-rpg-complete-edition-2-3-checks]] — Chapter 2.3: Checks - baseline scores, target scores, success rolls, automatic success/failure, bonuses/penalties, difficulty checks, and resistance rolls.
-- [[sword-world-rpg-complete-edition-2-7-resistance-rolls]] — Summary of resistance rolls in Sword World RPG - Complete Edition, including life force and mental power resistance.
-- [[sword-world-rpg-complete-edition-3-4-movement-and-actions]] — Rules for movement and actions in combat, including full movement, normal movement, and standing still, with restrictions on actions during each movement type.
-- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]] — Chapter 4.5: Attacks From Characters Against Monsters, including hit checks, damage calculation, and defense mechanics.
-- [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]] — Summary of unconscious and death checks in Sword World RPG - Complete Edition, including rules for unconsciousness, death checks, and mercy.
-- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]] — Overview of the five types of magic in Sword World RPG: ancient, spirit, holy, dark, and dragon roar magic.
-- [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]] — Summary of section 5.1.10 How to Read Magic Details from Sword World RPG - Complete Edition
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]] — Summary of the Ancient Magic List (part 1) from Sword World RPG - Complete Edition, covering 1st, 2nd, and 3rd level spells.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]] — Summary of the Ancient Magic List (part 2) from Sword World RPG - Complete Edition, covering spells from Sharpness to See-Through.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]] — Ancient Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Seal Enchantment, Steal Mind, Slow, Haste, Rune Rope, Dispel Order, Telekinesis, Teleport, Full Potential, Blade Net, Bend Bar, Polymorph, Magic Reflection, Illusionary Beast, Stun Cloud, Force Field, Lightning Bind, Wraith Form, Command Golem, Control Weather, Disintegrate, and Petrification.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]] — Summary of the Ancient Magic List (part 4) from Sword World RPG - Complete Edition, covering spells like Petrify, Rune Shield, Dimension Gate, Death Cloud, Perfect Cancellation, and Meteor Strike.
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]] — Summary of the Spirit Magic List (part 1) from Sword World RPG - Complete Edition, pages 84-95.
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]] — Spirit Magic List (part 2) from Sword World RPG - Complete Edition, pages 84-95
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]] — Summary of Spirit Magic List (part 3) from Sword World RPG - Complete Edition, covering spells like Protective Light, Plant Shell, Full Control Spirit, Ice Coffin, Ice Storm, Current, Suffocate, Nightmare, Firestorm, Maze Woods, and Earthquake.
-- [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]] — Summary of 5.1.15 Holy Magic and the Priest Skill from Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]] — Basic Holy Magic List (part 1) from Sword World RPG - Complete Edition, pages 99-104
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]] — Summary of the 5.1.16 Basic Holy Magic List (part 2) from Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]] — Source summary of section 5.1.4 How to Use Magic from Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]] — Magic expansion and contraction rules for the Sword World RPG - Complete Edition, including types of expansions and contractions, and their effects on mental power consumption.
-- [[sword-world-rpg-complete-edition-5-3-spellsongs]] — Summary of the Spellsongs section (5.3) from Sword World RPG - Complete Edition, including rules, limitations, and effects.
-- [[sword-world-rpg-complete-edition-6-2-thief-skill]] — Summary of the thief skill rules from Sword World RPG - Complete Edition, section 6.2, pages 113-117.
-- [[sword-world-rpg-complete-edition-6-4-sage-skill]] — Summary of the Sage Skill section from Sword World RPG - Complete Edition, detailing its abilities and rules.
+- [[javascriptallonge-truthiness-and-operators]] — truthiness and operators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-truthiness-and-the-ternary-operator]] — truthiness and the ternary operator from raw/javascriptallonge.pdf.
+- [[javascriptallonge-unary]] — Unary from raw/javascriptallonge.pdf.
+- [[javascriptallonge-undefined]] — undefined from raw/javascriptallonge.pdf.
+- [[javascriptallonge-unfolding-and-laziness]] — unfolding and laziness from raw/javascriptallonge.pdf.
+- [[javascriptallonge-value-types]] — value types from raw/javascriptallonge.pdf.
+- [[javascriptallonge-values-and-identity]] — values and identity from raw/javascriptallonge.pdf.
+- [[javascriptallonge-values-are-expressions]] — values are expressions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-var]] — var from raw/javascriptallonge.pdf.
+- [[javascriptallonge-variables-and-bindings]] — variables and bindings from raw/javascriptallonge.pdf.
+- [[javascriptallonge-void]] — void from raw/javascriptallonge.pdf.
+- [[javascriptallonge-we-get]] — We get: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-we-ll-keep-it-simple]] — We'll keep it simple: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-what-javascript-allong-is-and-isn-t]] — What JavaScript Allongé is. And isn't. from raw/javascriptallonge.pdf.
+- [[javascriptallonge-which-came-first-the-chicken-or-the-egg]] — which came first, the chicken or the egg? from raw/javascriptallonge.pdf.
+- [[javascriptallonge-why]] — Why? from raw/javascriptallonge.pdf.
+- [[javascriptallonge-why-const-and-let-were-invented]] — why const and let were invented from raw/javascriptallonge.pdf.
+- [[javascriptallonge-why-the-six-edition]] — why the 'six' edition? from raw/javascriptallonge.pdf.
+- [[javascriptallonge-will-be-represented-as]] — Will be represented as: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-would-be-3-producing]] — Would be 3 , producing: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-yes-consider-this-variation]] — Yes. Consider this variation: from raw/javascriptallonge.pdf.
+- [[javascriptallonge-yielding-iterables]] — yielding iterables from raw/javascriptallonge.pdf.
+- [[sword-world-rpg-complete-edition]] — Source hub for the Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-1-3-skills]] — 1.3 Skills from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — 1.4 Character Creation (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — 1.4 Character Creation (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-10-3-surprise-attacks]] — 10.3 Surprise Attacks from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]] — 11.2 Dark Magic (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]] — 11.2 Dark Magic (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]] — 11.3 Dragon Roar Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]] — 11.5 Asking NPCs to Use Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]] — 12.2 Rules for Poison, Illness and Infection (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]] — 12.2 Rules for Poison, Illness and Infection (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-1-types-of-monsters]] — 13.1 Types of Monsters from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]] — 13.2.1 How to Read the Monster Catalog from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]] — 13.2.10 Magical Creatures (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]] — 13.2.10 Magical Creatures (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-12-humans]] — 13.2.12 Humans from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-2-fae]] — 13.2.2 Fae from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-4-spirits]] — 13.2.4 Spirits from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-5-titans]] — 13.2.5 Titans from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]] — 13.2.6 Mythical Beasts and Magical Beasts (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]] — 13.2.6 Mythical Beasts and Magical Beasts (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]] — 13.2.6 Mythical Beasts and Magical Beasts (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]] — 13.2.7 Animals (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]] — 13.2.7 Animals (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]] — 13.2.7 Animals (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-8-plants]] — 13.2.8 Plants from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]] — 13.2.9 Undead (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]] — 13.2.9 Undead (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]] — 13.5 Monster Level and Adventurer Level from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]] — 13.6 Handling Monster Special Abilities from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]] — 14.1 Treasure and Rewards in Sword World from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]] — 14.4 Magical Item List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]] — 14.4 Magical Item List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]] — 14.4 Magical Item List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]] — 16.1 Combat in Which Monsters Roll Dice from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-5-combat-options]] — 16.5 Combat Options from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]] — 16.7 Throwing Multiple Darts or Daggers from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-17-2-lost-spells]] — 17.2 Lost Spells from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]] — 18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-2-3-checks]] — 2.3 Checks from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-2-7-resistance-rolls]] — 2.7 Resistance Rolls from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-3-4-movement-and-actions]] — 3.4 Movement and Actions from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]] — 4.5 Attacks From Characters Against Monsters from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]] — 4.9 Unconscious and Death Checks from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]] — 5.1.1 Types of Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]] — 5.1.10 How to Read Magic Details from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]] — 5.1.12 Ancient Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]] — 5.1.12 Ancient Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]] — 5.1.12 Ancient Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]] — 5.1.12 Ancient Magic List (part 4) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]] — 5.1.14 Spirit Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]] — 5.1.14 Spirit Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]] — 5.1.14 Spirit Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]] — Section 5.1.15 covering holy magic, the priest skill, and related gods and restrictions.
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]] — 5.1.16 Basic Holy Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]] — 5.1.16 Basic Holy Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]] — 5.1.4 How to Use Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]] — 5.1.7 Magic Expansion from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-3-spellsongs]] — 5.3 Spellsongs from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-6-2-thief-skill]] — 6.2 Thief Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-6-4-sage-skill]] — 6.4 Sage Skill from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]] — Summary of section 6.6 Common Adventurer Abilities from Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-7-2-merchant-skill]] — Summary of the Merchant Skill rules from Sword World RPG - Complete Edition, section 7.2
-- [[sword-world-rpg-complete-edition-8-1-experience-points]] — Experience points system in Sword World RPG, including skill advancement and ability score increases.
-- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — Chapter 9.2: Should You Use a Target Score Check or a Difficulty Check? Explains when to use target scores vs. difficulty checks in Sword World RPG.
-- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Overview of books related to Sword World RPG, including Replay Collections, Scenario Collections, World Guide, and other supplements.
-- [[sword-world-rpg-complete-edition-charts]] — Summary of charts and tables from Sword World RPG - Complete Edition, including skill abilities, ability scores, and equipment tables.
-- [[sword-world-rpg-complete-edition-front-matter]] — Front matter of the Sword World RPG - Complete Edition rulebook, including introduction to RPGs, rulebook structure, and game requirements.
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — History, geography, and social structure of the world of Forcelia and the Alecrast continent in the Sword World RPG.
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Summary of the Guide to Forcelia & Alecrast part 2, covering regions, nations, and cultural elements of Alecrast.
+- [[sword-world-rpg-complete-edition-7-2-merchant-skill]] — 7.2 Merchant Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-8-1-experience-points]] — 8.1 Experience Points from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — 9.2 Should You Use a Target Score Check or a Difficulty Check? from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Books Related to Sword World RPG from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-charts]] — Charts from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-front-matter]] — Front matter from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Entities
 

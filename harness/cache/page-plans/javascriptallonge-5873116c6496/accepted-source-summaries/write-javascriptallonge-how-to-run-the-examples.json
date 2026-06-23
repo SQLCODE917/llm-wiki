@@ -1,17 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "All of the examples in this book were tested using either Google Traceur Compiler 100 , Babel 101 , or both. (raw/javascriptallonge.pdf p.289-290)",
+      "bullet_text": "All examples were tested using Google Traceur Compiler or Babel, which are transpilers that parse ECMAScript 2015 code and emit valid ECMAScript-5 code (raw/javascriptallonge.pdf p.289-290).",
       "covered_source_claims": [
         "source-claim-unit-0202-0002"
       ]
     },
     {
-      "bullet_text": "Both tools offer an online area where you can type ECMAScript code into a web browser and see the ECMAScript-5 equivalent, and you can run the code as well. (raw/javascriptallonge.pdf p.289-290)",
+      "bullet_text": "Both tools offer online areas to type ECMAScript code and see the ECMAScript-5 equivalent, and you can run the code as well (raw/javascriptallonge.pdf p.289-290).",
       "covered_source_claims": [
         "source-claim-unit-0202-0012"
       ]
+    },
+    {
+      "bullet_text": "You may have to use the console in your web browser to see the result of your expressions, as the code must be written with console.log for output (raw/javascriptallonge.pdf p.289-290).",
+      "covered_source_claims": [
+        "source-claim-unit-0202-0016"
+      ]
     }
   ],
-  "source_record_text": "How to run the examples from JavaScript Allongé, including use of Traceur Compiler and Babel transpilers."
+  "source_record_text": "This chapter explains how to run the examples from JavaScript Allongé, focusing on the use of transpilers like Traceur and Babel to handle ECMAScript 2015 code in environments that do not yet support it."
 }

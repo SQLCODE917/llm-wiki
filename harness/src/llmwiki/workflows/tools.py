@@ -284,11 +284,7 @@ def write_page_tool(
                     f"Authorized targets: {_active_plan_targets(ingest_route_plan_state)}"
                 )
             planned_write = ingest_route_plan_state.planned_page_write(params.page_id)
-        if (
-            read_tracker is not None
-            and params.page_id not in read_tracker
-            and params.page_id in store.list_pages()
-        ):
+        if _must_read_before_rewrite(store, params.page_id, read_tracker, planned_write):
             if not recoverable_errors:
                 raise WikiStoreError(
                     f"WikiPage '{params.page_id}' already exists and write_page replaces "
@@ -392,6 +388,17 @@ def _planned_metadata_summary(model_summary: str, planned_summary: str) -> str:
     if "…" in model_summary or "..." in model_summary:
         return planned_summary
     return model_summary
+
+
+def _must_read_before_rewrite(
+    store: WikiStore,
+    page_id: str,
+    read_tracker: set[str] | None,
+    planned_write: PlannedPageWrite | None,
+) -> bool:
+    if read_tracker is None or page_id in read_tracker or page_id not in store.list_pages():
+        return False
+    return planned_write is None or planned_write.source_summary_plan is None
 
 
 def finish_tool(name: str, description: str) -> ToolDef:

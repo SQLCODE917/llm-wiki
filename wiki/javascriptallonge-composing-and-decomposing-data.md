@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-composing-and-decomposing-data
 page_kind: source
-summary: Chapter on composing and decomposing data in JavaScript
+summary: Composing and Decomposing Data from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.100-100
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

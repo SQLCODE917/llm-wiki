@@ -5,7 +5,19 @@
       "covered_source_claims": [
         "source-claim-unit-0028-0009"
       ]
+    },
+    {
+      "bullet_text": "Spellsongs [Mental Power] are magical songs from the ancient kingdom period, requiring musical instruments to perform. Bards can learn one spellsong per skill level, (raw/Sword World RPG - Complete Edition.pdf p.120-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0006"
+      ]
+    },
+    {
+      "bullet_text": "Common adventurer abilities use _adventurer level + related ability bonus_ as the baseline score when making success roll checks, (raw/Sword World RPG - Complete Edition.pdf p.120-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0008"
+      ]
     }
   ],
-  "source_record_text": "Section 6.6 covers common adventurer abilities, including Riding, Swim, Ship Steering, Climb, and Long/High Jump. It also details specific abilities like Folklore Knowledge and Spellsongs, which are tied to the bard class."
+  "source_record_text": "Section 6.6 Common Adventurer Abilities from Sword World RPG - Complete Edition covers a range of abilities that adventurers can acquire through their lifestyle, including Riding, Swim, Ship Steering, Climb, and Long/High Jump. It also details specific abilities like Folklore Knowledge and Spellsongs, which are tied to the bard class."
 }

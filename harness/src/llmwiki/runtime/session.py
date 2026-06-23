@@ -61,6 +61,7 @@ from llmwiki.domain.planning import (
     build_markdown_page_plan,
     build_page_plan,
     observation_report,
+    page_plan_from_json,
     page_plan_to_json,
 )
 from llmwiki.domain.planning_analysis import build_extracted_unit
@@ -81,6 +82,7 @@ from llmwiki.domain.system_pages import (
 )
 from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
 from llmwiki.domain.technical_atom_io import technical_atom_catalog_to_json
+from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
 from llmwiki.pdf import PdfError
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
 from llmwiki.pdf.pipeline import (
@@ -89,6 +91,7 @@ from llmwiki.pdf.pipeline import (
     read_source_text,
     save_manifest,
 )
+from llmwiki.runtime.source_summary_replay import replay_source_summary_work_unit
 from llmwiki.runtime.transcript import TranscriptWriter
 from llmwiki.store import WikiStore
 from llmwiki.workflows import (
@@ -331,8 +334,17 @@ class Session:
             result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
             save_manifest(result)
         total = len(manifest.chunks)
-        page_plan = self._pdf_page_plan(ingest_run, source_locator, result)
-        self._persist_page_plan(source_locator, page_plan)
+        page_plan = self._pdf_page_plan(
+            ingest_run,
+            source_locator,
+            result,
+            reuse_persisted=not reextract,
+        )
+        self._persist_page_plan(
+            source_locator,
+            page_plan,
+            reuse_technical_catalog=reintegrate,
+        )
         manifest = manifest.requeue_mismatched_pages(
             {
                 record.chunk_id: _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
@@ -359,6 +371,12 @@ class Session:
                 f"has {len(manifest.pending)} pending chunk(s) — run a plain "
                 "ingest to finish them first."
             )
+        if reintegrate:
+            self._replay_completed_pdf_source_summary_pages(
+                source_locator,
+                page_plan,
+                manifest,
+            )
 
         for work_records in _pending_pdf_work_units(page_plan, manifest.pending):
             record = work_records[0]
@@ -378,6 +396,27 @@ class Session:
                 save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
                 if self.on_chunk_note is not None:
                     self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {notes}")
+                continue
+            replay = replay_source_summary_work_unit(
+                self.store,
+                self.today,
+                source_locator,
+                page_plan,
+                work_records,
+            )
+            if replay is not None:
+                for done_record in work_records:
+                    manifest = manifest.mark_done(
+                        done_record.chunk_id,
+                        replay.notes,
+                        pages_written=replay.page_ids,
+                        route_plan_pages=len(replay.page_ids),
+                    )
+                save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
+                if self.on_chunk_note is not None:
+                    self.on_chunk_note(
+                        f"[{_work_unit_name(work_records)}/{total}] {replay.notes}"
+                    )
                 continue
             chunk_plan_report = observation_report(
                 page_plan,
@@ -524,8 +563,17 @@ class Session:
         )
 
     def _pdf_page_plan(
-        self, ingest_run: IngestRun, source_locator: str, result: ExtractionResult
+        self,
+        ingest_run: IngestRun,
+        source_locator: str,
+        result: ExtractionResult,
+        *,
+        reuse_persisted: bool = True,
     ) -> PagePlan:
+        if reuse_persisted and _manifest_has_progress(result.manifest):
+            cached_plan = self._cached_pdf_page_plan(source_locator, result.manifest)
+            if cached_plan is not None:
+                return cached_plan
         raw_source = _single_raw_source(ingest_run)
         units = tuple(
             build_extracted_unit(
@@ -550,8 +598,29 @@ class Session:
             new_page_prefix=self._pdf_page_prefix(source_locator),
         )
 
-    def _persist_page_plan(self, source_locator: str, page_plan: PagePlan) -> str:
+    def _cached_pdf_page_plan(self, source_locator: str, manifest: Manifest) -> PagePlan | None:
+        cached = self.store.read_page_plan_artifact(source_locator)
+        if cached is None:
+            return None
+        try:
+            plan = page_plan_from_json(cached)
+        except Exception:
+            return None
+        if not _pdf_page_plan_matches_manifest(plan, source_locator, manifest):
+            return None
+        return plan
+
+    def _persist_page_plan(
+        self,
+        source_locator: str,
+        page_plan: PagePlan,
+        *,
+        reuse_technical_catalog: bool = False,
+    ) -> str:
         report = observation_report(page_plan)
+        has_page_plan_artifact = self.store.read_page_plan_artifact(source_locator) is not None
+        if reuse_technical_catalog and has_page_plan_artifact:
+            return report
         self.store.write_page_plan_artifacts(source_locator, page_plan_to_json(page_plan), report)
         source_texts = tuple(
             source_text
@@ -561,16 +630,21 @@ class Session:
         )
         registry = build_evidence_registry(page_plan, source_texts)
         self.store.write_evidence_registry_artifact(source_locator, registry_to_json(registry))
-        catalog = build_technical_atom_catalog(
-            source_locator=source_locator,
-            page_plan=page_plan,
-            evidence_registry=registry,
-            artifact_fingerprint=page_plan.plan_id,
-        )
-        self.store.write_technical_atom_catalog_artifact(
-            source_locator,
-            technical_atom_catalog_to_json(catalog),
-        )
+        if not _has_matching_technical_catalog(
+            self.store.read_technical_atom_catalog_artifact(source_locator),
+            page_plan.plan_id,
+            reuse_technical_catalog,
+        ):
+            catalog = build_technical_atom_catalog(
+                source_locator=source_locator,
+                page_plan=page_plan,
+                evidence_registry=registry,
+                artifact_fingerprint=page_plan.plan_id,
+            )
+            self.store.write_technical_atom_catalog_artifact(
+                source_locator,
+                technical_atom_catalog_to_json(catalog),
+            )
         return report
 
     def _recover_pending_pdf_chunks(
@@ -595,6 +669,25 @@ class Session:
                     route_plan_pages=len(targets),
                 )
         return manifest
+
+    def _replay_completed_pdf_source_summary_pages(
+        self, source_locator: str, page_plan: PagePlan, manifest: Manifest
+    ) -> tuple[str, ...]:
+        replayed_page_ids: list[str] = []
+        for work_records in _pending_pdf_work_units(page_plan, manifest.chunks):
+            replay = replay_source_summary_work_unit(
+                self.store,
+                self.today,
+                source_locator,
+                page_plan,
+                work_records,
+            )
+            if replay is None:
+                continue
+            replayed_page_ids.extend(replay.page_ids)
+            if self.on_chunk_note is not None:
+                self.on_chunk_note(f"[{_work_unit_name(work_records)}] {replay.notes}")
+        return tuple(dict.fromkeys(replayed_page_ids))
 
     @staticmethod
     def _pending_pdf_page_is_recoverable(planned_write: PlannedPageWrite | None) -> bool:
@@ -1102,6 +1195,44 @@ def _expected_page_plan_writes(page_plan: PagePlan) -> tuple[str, ...]:
 
 def _single_raw_source(ingest_run: IngestRun) -> RawSource:
     return ingest_run.source_bundle.raw_sources[0]
+
+
+def _manifest_has_progress(manifest: Manifest) -> bool:
+    return any(record.status == "done" for record in manifest.chunks) or manifest.integrated
+
+
+def _has_matching_technical_catalog(
+    catalog: TechnicalAtomCatalog | None, page_plan_id: str, reuse_enabled: bool
+) -> bool:
+    return (
+        reuse_enabled
+        and catalog is not None
+        and catalog.artifact_fingerprint == page_plan_id
+    )
+
+
+def _pdf_page_plan_matches_manifest(
+    page_plan: PagePlan, source_locator: str, manifest: Manifest
+) -> bool:
+    if not page_plan.plan_id.endswith(f"-pdf-{slugify(Path(source_locator).stem)}"):
+        return False
+    source_locators = tuple(source.source_locator for source in page_plan.source_bundle.raw_sources)
+    if source_locators != (source_locator,):
+        return False
+    return _page_plan_unit_map(page_plan) == _manifest_unit_map(manifest)
+
+
+def _page_plan_unit_map(page_plan: PagePlan) -> tuple[tuple[str, str, str], ...]:
+    return tuple(
+        (unit.unit_id, unit.locator, unit.heading_path) for unit in page_plan.extracted_units
+    )
+
+
+def _manifest_unit_map(manifest: Manifest) -> tuple[tuple[str, str, str], ...]:
+    return tuple(
+        (f"unit-{record.chunk_id:04d}", f"p.{record.start_page}-{record.end_page}", record.heading)
+        for record in manifest.chunks
+    )
 
 
 def _source_plan_for(ingest_run: IngestRun, raw_source: RawSource) -> SourcePlan | None:

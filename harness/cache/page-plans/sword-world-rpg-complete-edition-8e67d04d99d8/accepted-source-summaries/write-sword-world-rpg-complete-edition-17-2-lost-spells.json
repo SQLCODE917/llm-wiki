@@ -1,21 +1,33 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Lost spells are not taught in the guild (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
+      "bullet_text": "Lost spells are not taught in the guild, as they are known only to a limited number of sorcerers (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
       "covered_source_claims": [
-        "source-claim-unit-0065-0005"
+        "source-claim-unit-0065-0016"
       ]
     },
     {
-      "bullet_text": "Sorcerers must meet spell level requirements (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
+      "bullet_text": "Sorcerers must meet spell level requirements to use lost spells (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
       "covered_source_claims": [
-        "source-claim-unit-0065-0007"
+        "source-claim-unit-0065-0017"
       ]
     },
     {
       "bullet_text": "Lost spells can be learned from sorcerers or spellbooks (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
       "covered_source_claims": [
-        "source-claim-unit-0065-0008"
+        "source-claim-unit-0065-0018"
+      ]
+    },
+    {
+      "bullet_text": "The game master determines which spells are lost, and may designate spells not on the list as lost (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0025"
+      ]
+    },
+    {
+      "bullet_text": "Lost spells have specific rules for casting and resistance, including the possibility of failure if double ones are rolled (raw/Sword World RPG - Complete Edition.pdf p.273-276).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0019"
       ]
     }
   ],

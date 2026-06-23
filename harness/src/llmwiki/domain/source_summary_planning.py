@@ -40,6 +40,7 @@ def source_summary_plan(
     terms = page_terms(page_id)
     min_claims = min(contract.min_claim_bullets or 3, len(claims))
     candidate_claims = topic_focused_claims(terms, claims, min_claims)
+    candidate_claims = _prefer_summary_worthy_claims(candidate_claims, min_claims)
     candidate_claim_ids = {claim.source_claim_id for claim in candidate_claims}
     claims_by_unit: dict[str, list[SourceClaim]] = {}
     for claim in candidate_claims:
@@ -143,6 +144,29 @@ def _select_unit_coverage_claims(
             selected.append(max(candidates, key=lambda claim: selection_score(terms, claim)))
 
 
+def _prefer_summary_worthy_claims(
+    claims: tuple[SourceClaim, ...], min_claims: int
+) -> tuple[SourceClaim, ...]:
+    preferred = tuple(claim for claim in claims if not _is_low_summary_value_claim(claim))
+    if len(preferred) < min_claims:
+        return claims
+    if len(eligible_claims(preferred)) < min(min_claims, len(eligible_claims(claims))):
+        return claims
+    return preferred
+
+
+def _is_low_summary_value_claim(claim: SourceClaim) -> bool:
+    if claim.claim_centrality > 0:
+        return False
+    lowered = claim.statement.lower()
+    if lowered.startswith("therefore,") or " will best " in lowered:
+        return True
+    roles = set(claim.claim_role_tags)
+    if "worked-example" in roles:
+        return True
+    return bool(roles) and roles <= {"relationship"}
+
+
 def _select_role_claims(
     terms: frozenset[str],
     candidate_claims: tuple[SourceClaim, ...],
@@ -152,10 +176,12 @@ def _select_role_claims(
     selected: list[SourceClaim],
 ) -> None:
     def add_role_claim(*roles: str) -> None:
+        selected_ids = _selected_claim_ids(selected)
         candidates = [
             claim
             for claim in candidate_claims
-            if any(role in claim.claim_role_tags for role in roles) and claim not in selected
+            if any(role in claim.claim_role_tags for role in roles)
+            and claim.source_claim_id not in selected_ids
         ]
         candidates = without_competing_section_claims(terms, candidates)
         relevant_candidates = [claim for claim in candidates if page_overlap(terms, claim) > 0]
@@ -269,7 +295,7 @@ def _fill_remaining_claims(
             )
         ):
             continue
-        if claim in selected:
+        if claim.source_claim_id in _selected_claim_ids(selected):
             continue
         if claim.claim_eligibility != CLAIM_ELIGIBLE and source_has_eligible_claims:
             continue
@@ -288,9 +314,14 @@ def _has_unselected_relevant_claims(
     source_has_eligible_claims: bool,
     selected: list[SourceClaim],
 ) -> bool:
+    selected_ids = _selected_claim_ids(selected)
     return any(
-        claim not in selected
+        claim.source_claim_id not in selected_ids
         and page_overlap(terms, claim) > 0
         and (claim.claim_eligibility == CLAIM_ELIGIBLE or not source_has_eligible_claims)
         for claim in candidate_claims
     )
+
+
+def _selected_claim_ids(selected: list[SourceClaim]) -> frozenset[str]:
+    return frozenset(claim.source_claim_id for claim in selected)

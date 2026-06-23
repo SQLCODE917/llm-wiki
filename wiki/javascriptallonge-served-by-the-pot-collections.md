@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-served-by-the-pot-collections
 page_kind: source
-summary: Summary of the 'Served by the Pot: Collections' section from JavaScript Allongé.
+summary: Served by the Pot: Collections from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.205-205
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

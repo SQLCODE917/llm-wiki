@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-caveat
 page_kind: source
-summary: Summary of the caveat section from javascriptallonge.pdf
+summary: caveat from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.176-176
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

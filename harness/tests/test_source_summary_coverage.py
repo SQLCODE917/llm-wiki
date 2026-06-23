@@ -509,6 +509,68 @@ def test_source_summary_rescue_repairs_catalog_style_bullets() -> None:
     assert "raw/book.pdf p.204" in repaired.claim_bullets[4].bullet_text
 
 
+def test_source_summary_rescue_appends_required_bullet_citations() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-guide",
+        page_id="book-guide",
+        selected_source_claims=("claim-1", "claim-2", "claim-3"),
+        required_source_citations=("raw/book.pdf p.280-290",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Guide overview.",
+        claim_bullets=(
+            SourceSummaryBullet("Creation myth names a mysterious titan.", ("placeholder-1",)),
+            SourceSummaryBullet("The world begins from the titan's death.", ("placeholder-2",)),
+            SourceSummaryBullet("Later ages reshape the continent.", ("placeholder-3",)),
+        ),
+    )
+
+    repaired = repair_source_summary_draft(draft, plan, max_claim_bullets=5)
+
+    assert all(
+        bullet.bullet_text.endswith("(raw/book.pdf p.280-290)")
+        for bullet in repaired.claim_bullets
+    )
+    assert all(not bullet.covered_source_claims for bullet in repaired.claim_bullets)
+
+
+def test_source_summary_rescue_merges_duplicate_coverage_over_budget() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-rules",
+        page_id="book-surprise-attacks",
+        selected_source_claims=(
+            "claim-1",
+            "claim-2",
+            "claim-3",
+            "claim-4",
+            "claim-5",
+        ),
+        required_source_citations=("raw/book.pdf p.10-12",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Combat procedure summary.",
+        claim_bullets=(
+            SourceSummaryBullet("First claim. (raw/book.pdf p.10-12)", ("claim-1",)),
+            SourceSummaryBullet("Second claim begins. (raw/book.pdf p.10-12)", ("claim-2",)),
+            SourceSummaryBullet("Second claim continues. (raw/book.pdf p.10-12)", ("claim-2",)),
+            SourceSummaryBullet("Third claim. (raw/book.pdf p.10-12)", ("claim-3",)),
+            SourceSummaryBullet("Fourth claim. (raw/book.pdf p.10-12)", ("claim-4",)),
+            SourceSummaryBullet("Fifth claim. (raw/book.pdf p.10-12)", ("claim-5",)),
+        ),
+    )
+
+    repaired = repair_source_summary_draft(draft, plan, max_claim_bullets=5)
+
+    assert len(repaired.claim_bullets) == 5
+    assert set(
+        claim_id
+        for bullet in repaired.claim_bullets
+        for claim_id in bullet.covered_source_claims
+    ) == set(plan.selected_source_claims)
+    assert "Second claim begins" in repaired.claim_bullets[1].bullet_text
+    assert "Second claim continues" in repaired.claim_bullets[1].bullet_text
+
+
 def test_missing_source_summary_coverage_reports_claim_requirements() -> None:
     plan = SourceSummaryPlan(
         source_summary_plan_id="source-summary-plan-alpha",
@@ -858,9 +920,14 @@ def test_planned_source_summary_tool_rejects_too_many_claim_bullets(
             claim_bullets=[
                 {
                     "bullet_text": f"Compact claim label {index}. (raw/alpha.md)",
-                    "covered_source_claims": [selected_claims[index % len(selected_claims)]],
+                    "covered_source_claims": [
+                        selected_claims[claim_index]
+                        for claim_index in claim_indexes
+                    ],
                 }
-                for index in range(6)
+                for index, claim_indexes in enumerate(
+                    ((0,), (1,), (2,), (0, 1), (1, 2), (0, 2))
+                )
             ],
         )
 

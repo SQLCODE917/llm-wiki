@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-literal-object-syntax
 page_kind: source
-summary: Summary of literal object syntax in JavaScriptAllonge.
+summary: literal object syntax from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.133-136
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -16,3 +16,69 @@ JavaScript has a literal syntax for creating objects. This object maps values to
 - JavaScript has a literal syntax for creating objects (raw/javascriptallonge.pdf p.133-136).
 - Values contained within an object work just like values contained within an array, we access them by reference to the original: (raw/javascriptallonge.pdf p.133-136).
 - Two objects created with separate evaluations have differing identities, just like arrays: (raw/javascriptallonge.pdf p.133-136).
+
+## Technical details
+
+### `technical-atom-680343e83ec40350` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```
+{ year: 2012, month: 6, day: 14 }
+```
+
+### `technical-atom-d57202306c2b8fa1` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+{ year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 } //=> false Objects use [] to access the values by name, using a string: { year: 2012, month: 6, day: 14 }['day'] //=> 14
+```
+
+### `technical-atom-92dedf7638ca2aac` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+const unique = () => [], x = unique(), y = unique(), z = unique(), o = { a: x, b: y, c: z }; o['a'] === x && o['b'] === y && o['c'] === z //=> true
+```
+
+### `technical-atom-a137e62b74538222` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+{ 'first name': 'reginald', 'last name': 'lewis' }['first name'] //=> 'reginald'
+```
+
+### `technical-atom-94a0e83a2a574e9c` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+const date = { year: 2012, month: 6, day: 14 }; date['day'] === date.day //=> true
+```
+
+### `technical-atom-d4b51c202e699d6d` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+{ ["p" + "i"]: 3.14159265 } //=> {"pi":3.14159265}
+```
+
+### `technical-atom-0d3c72f7ee689a10` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+const Mathematics = { abs: (a) => a < 0 ? -a : a }; Mathematics.abs(-5) //=> 5
+```
+
+### `technical-atom-6497fe28005e65d0` code
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+const SecretDecoderRing = { encode: function (plaintext) { return plaintext .split('') .map( char => char .charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromCharCode(code) ) .join(''); }, decode: function (cyphertext) { return cyphertext .split('') .map( char => char .charCodeAt() ) .map( code => code - 1 ) .map( code => String.fromCharCode(code) ) .join(''); } }
+```

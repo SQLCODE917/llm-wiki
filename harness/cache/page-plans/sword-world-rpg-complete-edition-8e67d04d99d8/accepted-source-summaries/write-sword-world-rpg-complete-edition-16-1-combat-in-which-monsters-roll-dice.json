@@ -1,13 +1,13 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The game master rarely rolls dice during combat to reduce burden and focus on other parts (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "bullet_text": "The game master rarely rolls dice in combat, reducing burden on the GM (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
       "covered_source_claims": [
         "source-claim-unit-0062-0012"
       ]
     },
     {
-      "bullet_text": "Some game masters may roll dice to feel like they're playing the game, increasing enjoyment (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "bullet_text": "Some game masters may roll dice for increased enjoyment (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
       "covered_source_claims": [
         "source-claim-unit-0062-0020"
       ]
@@ -19,17 +19,17 @@
       ]
     },
     {
-      "bullet_text": "When monsters attack characters, the target score is monster's attack points - 7, added to 2D roll (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
-      "covered_source_claims": [
-        "source-claim-unit-0062-0004"
-      ]
-    },
-    {
-      "bullet_text": "When characters attack monsters, the target score is monster's evasion points - 7, added to 2D roll (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "bullet_text": "When both sides roll dice, the range of numbers expands, increasing enjoyment (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
       "covered_source_claims": [
         "source-claim-unit-0062-0003"
       ]
+    },
+    {
+      "bullet_text": "The game master rolls 2D and adds it to attack points -7 for monster attacks (raw/Sword World RPG - Complete Edition.pdf p.261-264).",
+      "covered_source_claims": [
+        "source-claim-unit-0062-0001"
+      ]
     }
   ],
-  "source_record_text": "Combat rules for when monsters roll dice in Sword World RPG"
+  "source_record_text": "In Sword World RPG, the monster side (game master) rarely rolls dice during combat, reducing the burden on the game master. However, some game masters may also want to roll the dice, increasing enjoyment."
 }

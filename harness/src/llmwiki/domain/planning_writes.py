@@ -27,7 +27,7 @@ from llmwiki.domain.page_body_contracts import (
     uncertainty_terms_in_text,
 )
 from llmwiki.domain.pages import PageMetadata, WikiStructure, slugify
-from llmwiki.domain.planning_analysis import unit_match
+from llmwiki.domain.planning_match_index import matches_by_unit_id, matches_for_units
 from llmwiki.domain.source_summary_planning import source_summary_plan
 
 
@@ -52,13 +52,14 @@ def planned_writes(
     writes: list[PlannedPageWrite] = []
     if not include_markdown_subject:
         units_by_id = {unit.unit_id: unit for unit in extracted_units}
+        match_index = matches_by_unit_id(wiki_matches)
         writes.extend(
             _planned_write_for_group(
                 raw_source,
                 group,
                 units_by_id,
                 existing_pages,
-                wiki_matches,
+                match_index,
                 claim_comparisons,
                 wiki_structure,
                 today,
@@ -91,7 +92,7 @@ def _planned_write_for_group(
     group: SourcePageGroup,
     units_by_id: dict[str, ExtractedUnit],
     existing_pages: dict[str, str],
-    wiki_matches: tuple[WikiMatch, ...],
+    match_index: dict[str, tuple[WikiMatch, ...]],
     comparisons: tuple[ClaimComparison, ...],
     structure: WikiStructure,
     today: str,
@@ -116,7 +117,6 @@ def _planned_write_for_group(
     target_source_claims = tuple(
         claim for claim in source_claims if claim.extracted_unit_id in unit_ids
     )
-    match_items = (wiki_matches,) if isinstance(wiki_matches, WikiMatch) else wiki_matches
     return _planned_write(
         write_id=f"write-{page_id}",
         action="enrich-existing" if page_id in existing_pages else "create-new",
@@ -124,11 +124,7 @@ def _planned_write_for_group(
         structure=structure,
         extracted_units=group.extracted_units,
         evidence=tuple(Evidence(raw_source, unit.locator) for unit in units),
-        wiki_matches=tuple(
-            match
-            for match in match_items
-            if any(unit_match(match, unit_id) for unit_id in unit_ids)
-        ),
+        wiki_matches=matches_for_units(match_index, unit_ids),
         comparisons=tuple(item for item in comparisons if item.page_id == page_id),
         schema=schema,
         contract_selections=contract_selections,

@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-prelude-values-and-expressions-over-coffee
 page_kind: source
-summary: Summary of the Prelude: Values and Expressions over Coffee section from JavaScript Allongé.
+summary: Prelude: Values and Expressions over Coffee from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.18-18
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

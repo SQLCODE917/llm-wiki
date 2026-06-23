@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-recipes-with-data
 page_kind: source
-summary: Chapter on recipes with data from JavaScript Allongé.
+summary: Recipes with Data from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.191-191
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

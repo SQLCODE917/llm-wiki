@@ -1,11 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "What we have now is a function that takes a function and 'flips' the order of arguments around, then curries it. (raw/javascriptallonge.pdf p.195-196)",
+      "bullet_text": "We wrote mapWith like this: const mapWith = (fn) => (list) => list.map(fn); (raw/javascriptallonge.pdf p.195-196)",
+      "covered_source_claims": [
+        "source-claim-unit-0147-0010"
+      ]
+    },
+    {
+      "bullet_text": "Looking at this, we see we're conflating two separate transformations. First, we're reversing the order of arguments. (raw/javascriptallonge.pdf p.195-196)",
       "covered_source_claims": [
         "source-claim-unit-0147-0019"
       ]
+    },
+    {
+      "bullet_text": "We're going to extract these two operations by refactoring our function to parameterize map. (raw/javascriptallonge.pdf p.195-196)",
+      "covered_source_claims": [
+        "source-claim-unit-0147-0006"
+      ]
     }
   ],
-  "source_record_text": "Chapter on flip function and argument order reversal in JavaScript."
+  "source_record_text": "Chapter on function flipping and currying in JavaScript Allongé"
 }

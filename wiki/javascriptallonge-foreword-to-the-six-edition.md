@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-foreword-to-the-six-edition
 page_kind: source
-summary: Foreword to the 'Six' edition of JavaScript Allongé.
+summary: Foreword to the 'Six' edition from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.13-13
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 

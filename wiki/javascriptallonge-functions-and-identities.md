@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-functions-and-identities
 page_kind: source
-summary: Summary of the functions and identities section from javascriptallonge.pdf
+summary: functions and identities from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.31-31
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -16,3 +16,13 @@ A section on functions and identities in JavaScript Allongé, discussing how fun
 - Functions are reference types in JavaScript (raw/javascriptallonge.pdf p.31-31).
 - Each evaluation of a function expression produces a new function (raw/javascriptallonge.pdf p.31-31).
 - Parentheses are used to appease the JavaScript parser when defining functions (raw/javascriptallonge.pdf p.31-31).
+
+## Technical details
+
+### `technical-atom-b45c93b762c2d46e` code
+
+Citation: (raw/javascriptallonge.pdf p.31)
+
+```javascript
+(() => 0) === (() => 0) //=> false
+```

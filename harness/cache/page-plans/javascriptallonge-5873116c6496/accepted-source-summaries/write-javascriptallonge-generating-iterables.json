@@ -1,21 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Might be a simple functional iterator or an iterable object with a .next() method; an iterator is repeatedly called until it reports done. (raw/javascriptallonge.pdf p.224-245)",
+      "bullet_text": "Iterables look cool, but then again, everything looks amazing when you're given cherry-picked examples. What is there they don't do well? (raw/javascriptallonge.pdf p.224-226)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0007"
+        "source-claim-unit-0166-0001"
       ]
     },
     {
-      "bullet_text": "Possible illustration shown in Figure 1: an image from the source cache. (raw/javascriptallonge.pdf p.224-245)",
+      "bullet_text": "Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done. (raw/javascriptallonge.pdf p.224-226)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0002"
+        "source-claim-unit-0166-0004"
       ]
     },
     {
-      "bullet_text": "Iterables look cool, yet examples can make them seem even more impressive. (raw/javascriptallonge.pdf p.224-245)",
+      "bullet_text": "Iterators have to arrange its own state such that when you call them, they compute and return the next item. (raw/javascriptallonge.pdf p.224-226)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0004"
+        "source-claim-unit-0166-0005"
       ]
     }
   ],

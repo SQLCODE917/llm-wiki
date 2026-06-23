@@ -1,20 +1,20 @@
 ---
 page_id: javascriptallonge-a-pull-of-the-lever-prefaces
 page_kind: source
-summary: Prefaces to the JavaScript Allongé book, discussing the analogy of coffee preparation methods to programming concepts.
+summary: A Pull of the Lever: Prefaces from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.6-6
-updated: 2026-06-22
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Caffe Molinari discusses Café Allongé, also called Espresso Lungo, a drink midway between an Espresso and Americano in strength, with two methods of preparation.
+Prefaces to the JavaScript Allongé book by Caffe Molinari
 
 ## Key supported claims
 
-- Café Allongé is a drink midway between Espresso and Americano in strength, (raw/javascriptallonge.pdf p.6-6).
-- One method involves adding hot water to a double or quadruple Espresso Ristretto, releasing more complex flavours in the mouth, (raw/javascriptallonge.pdf p.6-6).
+- Café Allongé is a drink midway between Espresso and Americano in strength, achieved through two methods: dilution or a longer extraction. (raw/javascriptallonge.pdf p.6-6)
+- The dilution method adds hot water to Espresso Ristretto, releasing complex flavors; the long pull method achieves a similar oil-to-water ratio but with a different flavor profile. (raw/javascriptallonge.pdf p.6-6)
 
 ## Technical details
 

@@ -12,9 +12,9 @@ _MAX_CLAIM_SENTENCES_PER_UNIT = 120
 
 def claim_sentences(text: str) -> tuple[str, ...]:
     sentences: list[str] = []
-    for paragraph in paragraphs(text, _MAX_PARAGRAPH_CHARS):
-        for sentence in sentence_fragments(paragraph):
-            for fragment in text_windows(sentence, _MAX_CLAIM_SENTENCE_CHARS):
+    for paragraph in tuple(paragraphs(text, _MAX_PARAGRAPH_CHARS)):
+        for sentence in tuple(sentence_fragments(paragraph)):
+            for fragment in tuple(text_windows(sentence, _MAX_CLAIM_SENTENCE_CHARS)):
                 normalized = " ".join(fragment.split()).strip()
                 if len(tokens(normalized)) >= 3:
                     sentences.append(normalized)

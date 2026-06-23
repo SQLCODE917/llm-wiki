@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Characters cannot destroy walls or doors, but game masters can use common sense (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
+      "bullet_text": "Characters cannot destroy walls or doors without game master discretion, but specific rules are provided for numerical handling (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
       "covered_source_claims": [
-        "source-claim-unit-0066-0001"
+        "source-claim-unit-0066-0017"
       ]
     },
     {
-      "bullet_text": "Defense points indicate material strength, with game masters deciding specific scores (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
+      "bullet_text": "A wooden wall with 20 cm thickness has maximum defense points of 7 and destruction points of 15 (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
       "covered_source_claims": [
-        "source-claim-unit-0066-0001"
+        "source-claim-unit-0066-0015"
       ]
     },
     {
-      "bullet_text": "Destruction points indicate material strength, with minimum destruction points defined for each material (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
+      "bullet_text": "If damage is greater than or equal to destruction points, the structure is destroyed; if damage is greater than 1 but less than destruction points, defense points are reduced by 1 (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
       "covered_source_claims": [
-        "source-claim-unit-0066-0001"
-      ]
-    },
-    {
-      "bullet_text": "Damage calculation subtracts defense points from damage, determining if structure is destroyed (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
-      "covered_source_claims": [
-        "source-claim-unit-0066-0001"
-      ]
-    },
-    {
-      "bullet_text": "Magic types have specific effects on structure destruction, including immunity, criticals, and defense point ignores (raw/Sword World RPG - Complete Edition.pdf p.277-279).",
-      "covered_source_claims": [
-        "source-claim-unit-0066-0002"
+        "source-claim-unit-0066-0011"
       ]
     }
   ],
-  "source_record_text": "This section outlines the rules for destroying structures in the Sword World RPG, detailing how defense and destruction points are used, and providing a table of structure materials and their properties."
+  "source_record_text": "Rules for destroying structures in Sword World RPG, including structure strength tables and material-specific destruction rules."
 }

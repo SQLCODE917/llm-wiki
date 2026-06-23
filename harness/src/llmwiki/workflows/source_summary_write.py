@@ -58,8 +58,6 @@ def source_summary_page_body(
     source_record_text: str,
     claim_bullets: list[SourceSummaryBulletParams],
 ) -> tuple[str, SourceSummaryDraft]:
-    if planned_write.source_summary_plan is None:
-        raise WikiStoreError("This PlannedPageWrite has no SourceSummaryPlan.")
     draft = SourceSummaryDraft(
         source_record_text=strip_pipeline_markers(source_record_text),
         claim_bullets=tuple(
@@ -68,6 +66,28 @@ def source_summary_page_body(
                 covered_source_claims=tuple(bullet.covered_source_claims),
             )
             for bullet in claim_bullets
+        ),
+    )
+    return source_summary_page_body_from_draft(store, planned_write, draft)
+
+
+def source_summary_page_body_from_draft(
+    store: WikiStore,
+    planned_write: PlannedPageWrite,
+    draft: SourceSummaryDraft,
+    *,
+    allow_accepted_artifact_shape: bool = False,
+) -> tuple[str, SourceSummaryDraft]:
+    if planned_write.source_summary_plan is None:
+        raise WikiStoreError("This PlannedPageWrite has no SourceSummaryPlan.")
+    draft = SourceSummaryDraft(
+        source_record_text=strip_pipeline_markers(draft.source_record_text),
+        claim_bullets=tuple(
+            SourceSummaryBullet(
+                bullet_text=strip_pipeline_markers(bullet.bullet_text),
+                covered_source_claims=tuple(bullet.covered_source_claims),
+            )
+            for bullet in draft.claim_bullets
         ),
     )
     body_contract = source_summary_body_contract(planned_write)
@@ -86,6 +106,11 @@ def source_summary_page_body(
     )
     if findings:
         raise WikiStoreError(render_page_body_findings(findings, body_contract))
+    if allow_accepted_artifact_shape:
+        body_contract = replace(
+            body_contract,
+            min_claim_bullets=min(body_contract.min_claim_bullets, len(draft.claim_bullets)),
+        )
     summary_body = render_source_summary_draft(draft)
     body_findings = validate_page_body(
         summary_body,

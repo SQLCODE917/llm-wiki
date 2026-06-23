@@ -1,9 +1,9 @@
 ---
 page_id: javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure
 page_kind: source
-summary: Chapter discussing the distinction between pure functions and closures, focusing on free variables.
+summary: if functions without free variables are pure, are closures impure? from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.45-45
-updated: 2026-06-20
+updated: 2026-06-23
 source_id: javascriptallonge.pdf
 ---
 
@@ -17,3 +17,53 @@ This chapter discusses the distinction between pure functions and closures, focu
 - Functions containing one or more free variables are called closures. (raw/javascriptallonge.pdf p.45-45)
 - The second doesn't have any free variables, because its only variable is bound. (raw/javascriptallonge.pdf p.45-45)
 - We can't say what it will do with argument (2) without understanding the magic for evaluating the free variable x. (raw/javascriptallonge.pdf p.45-45)
+
+## Technical details
+
+### `technical-atom-03b34627456d18c0` exception
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+Up to now, we've only seen one way to 'bind' a variable, namely by passing in an argument with the same name.
+
+### `technical-atom-62b29dbab26e9d26` exception
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+Now that we know that variables used in a function are either bound or free, we can bifurcate functions into those with free variables and those without:
+
+### `technical-atom-182b7d333da55239` requirement
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+They always mean the same thing wherever you use them.
+
+### `technical-atom-8dbe6a3e02aebe8c` exception
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+The second doesn't have any free variables, because its only variable is bound.
+
+### `technical-atom-42abf56c3c9079e9` exception
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+, and it doesn't have a free variable: The only variable anywhere in its body is x , which is certainly bound within (x) => ...
+
+### `technical-atom-4188fdbc17cb0805` exception
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+Using only what we've learned so far, attempt to compose a closure that contains a pure function.
+
+### `technical-atom-13b88e2f8ae6faf9` requirement
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+Pure functions always mean the same thing because all of their 'inputs' are fully defined by their arguments.
+
+### `technical-atom-af17d347e3c83d79` exception
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+We can't say what it will do with argument (2) without understanding the magic for evaluating the free variable x .

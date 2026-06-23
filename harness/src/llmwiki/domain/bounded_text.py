@@ -2,48 +2,52 @@
 
 from __future__ import annotations
 
-from collections.abc import Iterable, Iterator
-
 _SENTENCE_ENDINGS = frozenset(".!?")
 
 
-def paragraphs(text: str, max_chars: int) -> Iterator[str]:
+def paragraphs(text: str, max_chars: int) -> tuple[str, ...]:
+    result: list[str] = []
     current_lines: list[str] = []
     current_chars = 0
     for line in text.splitlines():
         stripped = line.strip()
         if not stripped or stripped.startswith("#"):
-            yield from _flush_paragraph(current_lines)
+            _append_paragraph(result, current_lines)
             current_lines = []
             current_chars = 0
             continue
         for segment in text_windows(stripped, max_chars):
             segment_length = len(segment)
             if current_lines and current_chars + segment_length + 1 > max_chars:
-                yield from _flush_paragraph(current_lines)
+                _append_paragraph(result, current_lines)
                 current_lines = []
                 current_chars = 0
             current_lines.append(segment)
             current_chars += segment_length + 1
-    yield from _flush_paragraph(current_lines)
+    _append_paragraph(result, current_lines)
+    return tuple(result)
 
 
-def sentence_fragments(paragraph: str) -> Iterator[str]:
+def sentence_fragments(paragraph: str) -> tuple[str, ...]:
+    result: list[str] = []
     start = 0
-    index = 0
-    while index < len(paragraph):
+    paragraph_length = len(paragraph)
+    for index, character in enumerate(paragraph):
         if (
-            paragraph[index] in _SENTENCE_ENDINGS
-            and (index + 1 == len(paragraph) or paragraph[index + 1].isspace())
+            character in _SENTENCE_ENDINGS
+            and (index + 1 >= paragraph_length or paragraph[index + 1].isspace())
         ):
-            yield paragraph[start : index + 1]
+            result.append(paragraph[start : index + 1])
             start = index + 1
-        index += 1
-    if start < len(paragraph):
-        yield paragraph[start:]
+    if start < paragraph_length:
+        result.append(paragraph[start:])
+    return tuple(result)
 
 
-def text_windows(text: str, max_chars: int) -> Iterator[str]:
+def text_windows(text: str, max_chars: int) -> tuple[str, ...]:
+    if max_chars <= 0:
+        return ()
+    result: list[str] = []
     start = 0
     text_length = len(text)
     while start < text_length:
@@ -56,12 +60,13 @@ def text_windows(text: str, max_chars: int) -> Iterator[str]:
             split = end
         segment = text[start:split].strip()
         if segment:
-            yield segment
+            result.append(segment)
         start = split
         while start < text_length and text[start].isspace():
             start += 1
+    return tuple(result)
 
 
-def _flush_paragraph(lines: list[str]) -> Iterable[str]:
+def _append_paragraph(result: list[str], lines: list[str]) -> None:
     if lines:
-        yield " ".join(lines)
+        result.append(" ".join(lines))
