@@ -26,7 +26,12 @@ def technical_atom_claim_support_candidates(
             if atom.page_id not in page_texts:
                 continue
             page_counts[atom.page_id] = page_counts.get(atom.page_id, 0) + 1
-            claim_text = f"{atom.atom_kind}: {atom.technical_payload}"
+            table = catalog.table_for_atom(atom) if atom.atom_kind == "table" else None
+            claim_text = (
+                f"table: {table.title}"
+                if table is not None
+                else f"{atom.atom_kind}: {atom.technical_payload}"
+            )
             citation = atom.source_citation or f"raw/{atom.source_locator}"
             candidates.append(
                 ClaimSupportCandidate(

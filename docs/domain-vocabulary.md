@@ -77,6 +77,8 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | `TechnicalAtom` | `technical_atom` |
 | `TechnicalAtomKind` | `technical_atom_kind` |
 | `TechnicalAtomCatalog` | `technical_atom_catalog` |
+| `TechnicalTable` | `technical_table` |
+| `TechnicalTableBlock` | `technical_table_block` |
 | `TechnicalDetailsSection` | `technical_details_section` |
 | `AnswerEvaluationCase` | `answer_evaluation_case` |
 | `AnswerEvaluationReport` | `answer_evaluation_report` |
@@ -168,6 +170,8 @@ and model-facing ToolDTOs must use the canonical domain term and code name.
 | TechnicalAtom | Exists | `llmwiki.domain.technical_atoms`; one preserved bounded technical item from a source |
 | TechnicalAtomKind | Exists | `llmwiki.domain.technical_atoms`; kind label for a preserved technical item |
 | TechnicalAtomCatalog | Exists | `llmwiki.domain.technical_atoms`; rebuildable source-scoped collection of technical atoms |
+| TechnicalTable | Exists | `llmwiki.domain.technical_tables`; one preserved table owned by `TechnicalAtomCatalog` |
+| TechnicalTableBlock | Exists | `llmwiki.domain.technical_tables`; one contiguous table block owned by `TechnicalTable` |
 | TechnicalDetailsSection | Exists | `llmwiki.domain.technical_atoms`; source page section rendered from `TechnicalAtomCatalog` |
 | AnswerEvaluationCase | Exists | `llmwiki.domain.answer_evaluation`; fixture for one normal `query` answer check |
 | AnswerEvaluationReport | Exists | `llmwiki.domain.answer_evaluation`; deterministic report for one checked answer |

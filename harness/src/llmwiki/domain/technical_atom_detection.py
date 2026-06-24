@@ -13,6 +13,7 @@ TechnicalAtomKind = Literal[
     "code",
     "formula",
     "procedure",
+    "table",
     "table-row",
     "requirement",
     "exception",
@@ -21,7 +22,16 @@ TechnicalAtomKind = Literal[
 SupportStatus = Literal["supported", "too_broad", "not_supported", "unclear"]
 
 TECHNICAL_ATOM_KINDS = frozenset(
-    ("code", "formula", "procedure", "table-row", "requirement", "exception", "worked-example")
+    (
+        "code",
+        "formula",
+        "procedure",
+        "table",
+        "table-row",
+        "requirement",
+        "exception",
+        "worked-example",
+    )
 )
 SUPPORT_STATUSES = frozenset(("supported", "too_broad", "not_supported", "unclear"))
 MAX_TECHNICAL_PAYLOAD_CHARS = 1200
@@ -184,7 +194,7 @@ def best_evidence_ids(records: tuple[EvidenceRecord, ...], payload: str) -> tupl
     for index, record in enumerate(records):
         ranked.append((_evidence_match_score(record.excerpt, payload), index, record))
     ranked.sort(key=lambda item: (-item[0], item[1]))
-    if table_row(payload) is not None:
+    if _has_table_payload(payload):
         table_matches = [
             record.evidence_id
             for score, _index, record in ranked
@@ -231,7 +241,7 @@ def _structural_token_overlap_score(excerpt: str, payload: str) -> int:
 
 
 def _table_row_match_score(excerpt: str, payload: str) -> int:
-    if table_row(payload) is None:
+    if not _has_table_payload(payload):
         return 0
     payload_text = _canonical_structural_text(payload)
     excerpt_text = _canonical_structural_text(excerpt)
@@ -242,6 +252,10 @@ def _table_row_match_score(excerpt: str, payload: str) -> int:
 
 def _canonical_structural_text(text: str) -> str:
     return re.sub(r"\s+", "", text).lower()
+
+
+def _has_table_payload(payload: str) -> bool:
+    return any(table_row(line) is not None for line in payload.splitlines())
 
 
 def _looks_procedural(lowered: str) -> bool:

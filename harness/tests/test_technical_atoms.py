@@ -32,6 +32,7 @@ from llmwiki.domain.technical_atoms import (
     TechnicalAtomCatalog,
     render_technical_details_section,
 )
+from llmwiki.domain.technical_tables import TechnicalTable, TechnicalTableBlock
 from llmwiki.store import WikiStore
 from llmwiki.workflows.source_summary_write import (
     SourceSummaryBulletParams,
@@ -56,11 +57,14 @@ def test_technical_atom_builder_preserves_structured_details() -> None:
         "code",
         "formula",
         "procedure",
-        "table-row",
+        "table",
         "requirement",
         "exception",
         "worked-example",
     } <= set(atoms_by_kind)
+    assert "table-row" not in atoms_by_kind
+    assert len(catalog.technical_tables) == 1
+    assert catalog.technical_tables[0].blocks[0].markdown == "| 2D | Result |\n| 2 | fumble |"
     assert atoms_by_kind["code"].technical_payload == "const add = (a, b) => a + b;"
     assert atoms_by_kind["formula"].technical_payload == (
         "**Falling damage** = fall height x 3 - defense reduction"
@@ -249,15 +253,41 @@ def test_source_summary_page_body_appends_technical_details(
     assert "Citation: (raw/rules.md normalized:L1-L12)" in body
 
 
-def test_technical_details_render_formulas_before_table_rows() -> None:
+def test_technical_details_render_formulas_before_tables() -> None:
+    table = TechnicalTable(
+        technical_table_id="technical-table-rules",
+        source_locator="rules.md",
+        page_id="rules",
+        title="Rating Table",
+        blocks=(
+            TechnicalTableBlock(
+                technical_table_block_id="technical-table-rules-block-1",
+                block_index=1,
+                source_citation="raw/rules.md normalized:L1-L2",
+                page_range=None,
+                line_range=(1, 2),
+                markdown="| 2D | Result |\n| 2 | fumble |",
+                row_count=2,
+                column_count=2,
+            ),
+        ),
+        source_claim_ids=(),
+        evidence_ids=("evidence-1",),
+    )
     catalog = TechnicalAtomCatalog(
         catalog_id="catalog-rules",
         source_locator="rules.md",
         artifact_fingerprint="fp",
         technical_atoms=(
-            _atom("technical-atom-table", "table-row", "| 2D | Result |"),
+            _atom(
+                "technical-atom-table",
+                "table",
+                "Rating Table",
+                fields=(("technical_table_id", "technical-table-rules"),),
+            ),
             _atom("technical-atom-formula", "formula", "attack power = skill + dexterity"),
         ),
+        technical_tables=(table,),
     )
 
     rendered = render_technical_details_section(catalog, "rules")
@@ -391,7 +421,12 @@ def _claim(raw: RawSource, claim_id: str, statement: str, role: str) -> SourceCl
     )
 
 
-def _atom(atom_id: str, kind: TechnicalAtomKind, payload: str) -> TechnicalAtom:
+def _atom(
+    atom_id: str,
+    kind: TechnicalAtomKind,
+    payload: str,
+    fields: tuple[tuple[str, str], ...] = (),
+) -> TechnicalAtom:
     return TechnicalAtom(
         technical_atom_id=atom_id,
         source_locator="rules.md",
@@ -399,7 +434,7 @@ def _atom(atom_id: str, kind: TechnicalAtomKind, payload: str) -> TechnicalAtom:
         atom_kind=kind,
         title=kind,
         technical_payload=payload,
-        normalized_fields=(("source_citation", "raw/rules.md"),),
+        normalized_fields=(*fields, ("source_citation", "raw/rules.md")),
         source_claim_ids=(),
         evidence_ids=("evidence-1",),
         source_range_id="source-range-rules",

@@ -28,4 +28,9 @@ def technical_atom_detail(catalog: TechnicalAtomCatalog | None) -> str:
     if not counts:
         return "Technical atoms: 0"
     rendered_counts = "\n".join(f"- {kind}: {count}" for kind, count in counts)
-    return f"Technical atoms: {len(catalog.technical_atoms)}\n{rendered_counts}"
+    return (
+        f"Technical atoms: {len(catalog.technical_atoms)}\n"
+        f"Technical tables: {len(catalog.technical_tables)}\n"
+        f"Technical table blocks: {catalog.technical_table_block_count}\n"
+        f"{rendered_counts}"
+    )

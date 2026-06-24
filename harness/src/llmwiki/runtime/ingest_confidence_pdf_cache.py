@@ -11,7 +11,7 @@ from llmwiki.domain.ingest_confidence import (
     ValidationFinding,
     validation_finding,
 )
-from llmwiki.pdf.pipeline import ExtractionResult
+from llmwiki.pdf.pipeline import ExtractionResult, cache_has_current_pdf_artifacts
 from llmwiki.store import WikiStore
 
 PdfExtractFn = Callable[[Path, str, bool], ExtractionResult]
@@ -37,18 +37,23 @@ def pdf_extraction_artifact(
     if not source_locator.lower().endswith(".pdf"):
         return None, None, ()
     existing = _pdf_extraction_result(cache_dir, source_locator, source_hash)
+    has_current_artifacts = (
+        existing is not None and cache_has_current_pdf_artifacts(existing.cache_dir)
+    )
     decision = ArtifactReuseDecision(
         artifact_kind="pdf-extraction",
         artifact_path=str(existing.cache_dir if existing else cache_dir),
-        decision="reuse" if existing is not None and not fresh else "rebuild",
+        decision="reuse" if has_current_artifacts and not fresh else "rebuild",
         reason=(
             "source hash matches"
-            if existing is not None and not fresh
+            if has_current_artifacts and not fresh
+            else "cache lacks current PDF table artifacts"
+            if existing is not None and not has_current_artifacts
             else "cache missing, stale, or fresh"
         ),
         fingerprint=source_hash[:16],
     )
-    if existing is not None and not fresh:
+    if has_current_artifacts and not fresh:
         return existing, decision, ()
     if extract_pdf is None:
         return (

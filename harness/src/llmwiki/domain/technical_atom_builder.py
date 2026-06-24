@@ -7,6 +7,7 @@ from collections import Counter
 
 from llmwiki.domain.evidence_registry import EvidenceRecord, EvidenceRegistry, SourceRange
 from llmwiki.domain.objects import ExtractedUnit, PagePlan, SourceClaim
+from llmwiki.domain.source_citations import source_citation
 from llmwiki.domain.technical_atom_detection import (
     MAX_RENDERED_ATOMS_PER_PAGE,
     TechnicalAtomKind,
@@ -19,7 +20,6 @@ from llmwiki.domain.technical_atom_detection import (
     is_formula,
     normalize_payload,
     ordered_step_groups,
-    table_row,
     text_without_fenced_code,
     title_for_payload,
 )
@@ -30,6 +30,9 @@ from llmwiki.domain.technical_atom_evidence import (
     selected_source_claim_ids,
 )
 from llmwiki.domain.technical_atoms import TechnicalAtom, TechnicalAtomCatalog
+from llmwiki.domain.technical_table_atoms import build_technical_table_atom
+from llmwiki.domain.technical_table_detection import detect_technical_tables
+from llmwiki.domain.technical_tables import TechnicalTable
 
 
 def build_technical_atom_catalog(
@@ -45,13 +48,14 @@ def build_technical_atom_catalog(
     )
     source_hash = source_text.source_hash if source_text is not None else ""
     builder = TechnicalAtomBuilder(page_plan, evidence_registry, source_locator)
-    atoms = builder.build()
+    atoms, tables = builder.build()
     seed = f"{source_locator}:{source_hash}:{artifact_fingerprint}:{len(atoms)}"
     return TechnicalAtomCatalog(
         catalog_id=f"technical-atom-catalog-{_digest(seed)[:16]}",
         source_locator=source_locator,
         artifact_fingerprint=artifact_fingerprint,
         technical_atoms=atoms,
+        technical_tables=tables,
     )
 
 
@@ -64,18 +68,37 @@ class TechnicalAtomBuilder:
         self.source_locator = source_locator
         self.records_by_claim = records_by_claim(evidence_registry.evidence_records)
         self.records_by_range = records_by_range(evidence_registry.evidence_records)
+        self.source_text = next(
+            (
+                source_text
+                for source_text in evidence_registry.source_texts
+                if source_text.source_locator == source_locator
+            ),
+            None,
+        )
         self.ranges_by_page = {
             source_range.page_id: source_range for source_range in evidence_registry.source_ranges
         }
 
-    def build(self) -> tuple[TechnicalAtom, ...]:
+    def build(self) -> tuple[tuple[TechnicalAtom, ...], tuple[TechnicalTable, ...]]:
         atoms: list[TechnicalAtom] = []
+        tables: list[TechnicalTable] = []
         seen: set[tuple[str, str, str]] = set()
         for unit, page_id, source_range in self._units():
-            atoms.extend(self._structural_atoms(unit, page_id, source_range, seen))
+            unit_atoms, unit_tables = self._structural_atoms(unit, page_id, source_range, seen)
+            atoms.extend(unit_atoms)
+            tables.extend(unit_tables)
         for claim in self.page_plan.source_claims:
             atoms.extend(self._claim_atoms(claim, seen))
-        return tuple(_limit_atoms_per_page(atoms))
+        limited_atoms = _limit_atoms_per_page(atoms)
+        rendered_table_ids = {
+            dict(atom.normalized_fields).get("technical_table_id", "")
+            for atom in limited_atoms
+            if atom.atom_kind == "table"
+        }
+        return tuple(limited_atoms), tuple(
+            table for table in tables if table.technical_table_id in rendered_table_ids
+        )
 
     def _units(self) -> tuple[tuple[ExtractedUnit, str, SourceRange], ...]:
         units_by_id = {unit.unit_id: unit for unit in self.page_plan.extracted_units}
@@ -96,8 +119,25 @@ class TechnicalAtomBuilder:
         page_id: str,
         source_range: SourceRange,
         seen: set[tuple[str, str, str]],
-    ) -> tuple[TechnicalAtom, ...]:
+    ) -> tuple[tuple[TechnicalAtom, ...], tuple[TechnicalTable, ...]]:
         atoms: list[TechnicalAtom] = []
+        tables: list[TechnicalTable] = []
+        for detected in detect_technical_tables(
+            unit_text=unit.text,
+            source_text=self.source_text,
+            source_range=source_range,
+        ):
+            table, atom = build_technical_table_atom(
+                detected=detected,
+                source_locator=self.source_locator,
+                page_id=page_id,
+                source_range=source_range,
+                records=self.records_by_range.get(source_range.source_range_id, ()),
+                seen=seen,
+            )
+            if table is not None and atom is not None:
+                tables.append(table)
+                atoms.append(atom)
         for language, code in fenced_code_blocks(unit.text):
             atom = self._make_atom(
                 "code", page_id, source_range, code, (("language", language),), seen
@@ -119,7 +159,7 @@ class TechnicalAtomBuilder:
             )
             if atom is not None:
                 atoms.append(atom)
-        return tuple(atoms)
+        return tuple(atoms), tuple(tables)
 
     def _line_atoms(
         self,
@@ -129,18 +169,6 @@ class TechnicalAtomBuilder:
         seen: set[tuple[str, str, str]],
     ) -> tuple[TechnicalAtom, ...]:
         atoms: list[TechnicalAtom] = []
-        row = table_row(line)
-        if row is not None:
-            atom = self._make_atom(
-                "table-row",
-                page_id,
-                source_range,
-                line.strip(),
-                (("cells", " | ".join(row)),),
-                seen,
-            )
-            if atom is not None:
-                atoms.append(atom)
         if is_formula(line):
             atom = self._make_atom(
                 "formula",
@@ -234,7 +262,7 @@ class TechnicalAtomBuilder:
             atom_kind=atom_kind,
             title=title_for_payload(atom_kind, bounded),
             technical_payload=bounded,
-            normalized_fields=(*fields, ("source_citation", _citation_for_range(source_range))),
+            normalized_fields=(*fields, ("source_citation", source_citation(source_range))),
             source_claim_ids=selected_source_claim_ids(source_claim_ids, evidence_records),
             evidence_ids=tuple(dict.fromkeys(evidence_ids)),
             source_range_id=source_range.source_range_id,
@@ -264,19 +292,6 @@ def _limit_atoms_per_page(atoms: list[TechnicalAtom]) -> tuple[TechnicalAtom, ..
         result.append(atom)
         counts[atom.page_id] += 1
     return tuple(result)
-
-
-def _citation_for_range(source_range: SourceRange) -> str:
-    source = source_range.source_path
-    if source_range.page_range is not None:
-        start, end = source_range.page_range
-        suffix = f"p.{start}" if start == end else f"p.{start}-{end}"
-        return f"{source} {suffix}"
-    if source_range.line_range is not None:
-        start, end = source_range.line_range
-        suffix = f"normalized:L{start}" if start == end else f"normalized:L{start}-L{end}"
-        return f"{source} {suffix}"
-    return source
 
 
 def _digest(text: str) -> str:

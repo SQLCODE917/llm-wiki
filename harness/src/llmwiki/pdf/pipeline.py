@@ -55,6 +55,14 @@ def save_manifest(result: ExtractionResult) -> None:
     (result.cache_dir / _MANIFEST_FILE).write_text(to_json(result.manifest), encoding="utf-8")
 
 
+def cache_has_current_pdf_artifacts(cache_dir: Path) -> bool:
+    return (
+        (cache_dir / _MANIFEST_FILE).is_file()
+        and (cache_dir / _DOCUMENT_MODEL_FILE).is_file()
+        and (cache_dir / _SOURCE_SECTIONS_FILE).is_file()
+    )
+
+
 def _sha256(path: Path) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as fh:
@@ -77,7 +85,7 @@ def ensure_extracted(
     cache_dir = cache_root / sha[:16]
     manifest_path = cache_dir / _MANIFEST_FILE
 
-    if manifest_path.exists() and not reextract:
+    if cache_has_current_pdf_artifacts(cache_dir) and not reextract:
         return ExtractionResult(
             manifest=from_json(manifest_path.read_text(encoding="utf-8")),
             cache_dir=cache_dir,

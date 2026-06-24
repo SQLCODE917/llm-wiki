@@ -10,6 +10,7 @@ from llmwiki.domain.technical_atoms import (
     TechnicalAtom,
     TechnicalAtomCatalog,
     render_technical_details_section,
+    render_technical_table,
 )
 
 
@@ -30,7 +31,8 @@ _KIND_PRIORITY = {
     "requirement": 3,
     "exception": 4,
     "worked-example": 5,
-    "table-row": 6,
+    "table": 6,
+    "table-row": 7,
 }
 _KIND_SCORE = {
     "code": 18,
@@ -39,6 +41,7 @@ _KIND_SCORE = {
     "requirement": 10,
     "exception": 8,
     "worked-example": 6,
+    "table": 4,
     "table-row": 2,
 }
 _TERM_RE = re.compile(r"[a-z][a-z0-9-]{2,}", re.IGNORECASE)
@@ -101,7 +104,7 @@ def render_related_technical_details_section(
     )
     if not surfaces:
         return ""
-    rendered = tuple(_render_related_surface(surface) for surface in surfaces)
+    rendered = tuple(_render_related_surface(catalog, surface) for surface in surfaces)
     return "\n\n".join(("## Related technical details", *rendered))
 
 
@@ -156,7 +159,9 @@ def select_related_technical_atom_surfaces(
     return tuple(surface for _index, surface in ordered[:max_atoms])
 
 
-def _render_related_surface(surface: RelatedTechnicalAtomSurface) -> str:
+def _render_related_surface(
+    catalog: TechnicalAtomCatalog, surface: RelatedTechnicalAtomSurface
+) -> str:
     atom = surface.technical_atom
     header = f"### From [[{surface.related_page_id}]]: `{atom.technical_atom_id}` {atom.atom_kind}"
     terms = ", ".join(f"`{term}`" for term in surface.matched_terms[:6])
@@ -167,6 +172,10 @@ def _render_related_surface(surface: RelatedTechnicalAtomSurface) -> str:
     if atom.atom_kind == "code":
         language = dict(atom.normalized_fields).get("language", "")
         return f"{header}\n\n{reason}\n\n{citation}\n\n```{language}\n{atom.technical_payload}\n```"
+    if atom.atom_kind == "table":
+        table = catalog.table_for_atom(atom)
+        if table is not None:
+            return f"{header}\n\n{reason}\n\n{render_technical_table(table)}"
     return f"{header}\n\n{reason}\n\n{citation}\n\n{atom.technical_payload}"
 
 

@@ -31,7 +31,7 @@ def test_best_evidence_ids_prefers_exact_table_row_evidence() -> None:
     assert evidence_ids == ("evidence-table",)
 
 
-def test_table_row_atoms_use_matching_table_evidence_and_claim() -> None:
+def test_table_atoms_use_matching_table_evidence_and_claim() -> None:
     plan, registry = _table_plan()
     table_record = next(
         record for record in registry.evidence_records if record.source_claim_id == "claim-table"
@@ -44,13 +44,12 @@ def test_table_row_atoms_use_matching_table_evidence_and_claim() -> None:
         artifact_fingerprint="fp",
     )
 
-    table_atom = next(
-        atom
-        for atom in catalog.technical_atoms
-        if atom.atom_kind == "table-row" and atom.technical_payload == "| 2D | 2 | ** | ** |"
-    )
+    table_atom = next(atom for atom in catalog.technical_atoms if atom.atom_kind == "table")
     assert table_atom.evidence_ids == (table_record.evidence_id,)
     assert table_atom.source_claim_ids == ("claim-table",)
+    assert catalog.technical_tables[0].blocks[0].markdown == (
+        "| 2D | 2 | ** | ** |\n| 3 | 3 | ** | 0 |"
+    )
 
 
 def _table_plan() -> tuple[PagePlan, EvidenceRegistry]:

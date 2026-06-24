@@ -12,6 +12,7 @@ from llmwiki.domain.technical_atom_detection import (
     SupportStatus,
     TechnicalAtomKind,
 )
+from llmwiki.domain.technical_tables import TechnicalTable
 
 
 @dataclass(frozen=True)
@@ -55,13 +56,29 @@ class TechnicalAtomCatalog:
     source_locator: str
     artifact_fingerprint: str
     technical_atoms: tuple[TechnicalAtom, ...]
+    technical_tables: tuple[TechnicalTable, ...] = ()
 
     def atoms_for_page(self, page_id: str) -> tuple[TechnicalAtom, ...]:
         return tuple(atom for atom in self.technical_atoms if atom.page_id == page_id)
 
+    def table_for_atom(self, atom: TechnicalAtom) -> TechnicalTable | None:
+        table_id = dict(atom.normalized_fields).get("technical_table_id", "")
+        return next(
+            (
+                table
+                for table in self.technical_tables
+                if table.technical_table_id == table_id and table.page_id == atom.page_id
+            ),
+            None,
+        )
+
     def counts_by_kind(self) -> tuple[tuple[str, int], ...]:
         counts = Counter(atom.atom_kind for atom in self.technical_atoms)
         return tuple((kind, counts[kind]) for kind in sorted(counts))
+
+    @property
+    def technical_table_block_count(self) -> int:
+        return sum(table.block_count for table in self.technical_tables)
 
 
 _RENDER_KIND_PRIORITY = {
@@ -71,7 +88,8 @@ _RENDER_KIND_PRIORITY = {
     "requirement": 3,
     "exception": 4,
     "worked-example": 5,
-    "table-row": 6,
+    "table": 6,
+    "table-row": 7,
 }
 
 
@@ -79,7 +97,7 @@ def render_technical_details_section(catalog: TechnicalAtomCatalog, page_id: str
     atoms = _render_order(catalog.atoms_for_page(page_id))
     if not atoms:
         return ""
-    return "\n\n".join(("## Technical details", *(_render_atom(atom) for atom in atoms)))
+    return "\n\n".join(("## Technical details", *(_render_atom(catalog, atom) for atom in atoms)))
 
 
 def _render_order(atoms: tuple[TechnicalAtom, ...]) -> tuple[TechnicalAtom, ...]:
@@ -90,10 +108,27 @@ def _render_order(atoms: tuple[TechnicalAtom, ...]) -> tuple[TechnicalAtom, ...]
     return tuple(atom for _index, atom in ordered)
 
 
-def _render_atom(atom: TechnicalAtom) -> str:
+def _render_atom(catalog: TechnicalAtomCatalog, atom: TechnicalAtom) -> str:
     header = f"### `{atom.technical_atom_id}` {atom.atom_kind}"
     citation = f"Citation: ({atom.source_citation})"
     if atom.atom_kind == "code":
         language = dict(atom.normalized_fields).get("language", "")
         return f"{header}\n\n{citation}\n\n```{language}\n{atom.technical_payload}\n```"
+    if atom.atom_kind == "table":
+        table = catalog.table_for_atom(atom)
+        if table is not None:
+            return f"{header}\n\n{render_technical_table(table)}"
     return f"{header}\n\n{citation}\n\n{atom.technical_payload}"
+
+
+def render_technical_table(table: TechnicalTable) -> str:
+    rendered_blocks: list[str] = []
+    for block in table.blocks:
+        citation = f"Citation: ({block.source_citation})"
+        if len(table.blocks) == 1:
+            rendered_blocks.append(f"{citation}\n\n{block.markdown}")
+            continue
+        rendered_blocks.append(
+            f"#### Table block {block.block_index}\n\n{citation}\n\n{block.markdown}"
+        )
+    return "\n\n".join(rendered_blocks)

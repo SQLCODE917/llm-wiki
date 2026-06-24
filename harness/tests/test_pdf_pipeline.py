@@ -1,9 +1,11 @@
 """Extraction pipeline tests against a synthetic PDF."""
 
+# mypy: disable-error-code="no-untyped-call"
+
 import sys
 from pathlib import Path
 
-import pymupdf  # type: ignore[import-untyped]
+import pymupdf
 import pytest
 
 from llmwiki.pdf import ScannedPdfError
@@ -134,12 +136,41 @@ class TestEnsureExtracted:
             extractor_name="test",
         )
         (cache_dir / "manifest.json").write_text(to_json(manifest), encoding="utf-8")
+        (cache_dir / "document_model.json").write_text("{}", encoding="utf-8")
+        (cache_dir / "source_sections.json").write_text("[]", encoding="utf-8")
         sys.modules.pop("llmwiki.pdf.extractor", None)
 
         result = ensure_extracted(pdf, "cached.pdf", tmp_path / "cache", NullRecognizer())
 
         assert result.manifest.extractor_name == "test"
         assert "llmwiki.pdf.extractor" not in sys.modules
+
+    def test_manifest_only_cache_reextracts_current_artifacts(self, tmp_path: Path) -> None:
+        pdf = tmp_path / "book.pdf"
+        _make_pdf(pdf)
+        document_extractor = FakeDocumentExtractor()
+        first = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+        (first.cache_dir / "document_model.json").unlink()
+        (first.cache_dir / "source_sections.json").unlink()
+
+        again = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+
+        assert again.cache_dir == first.cache_dir
+        assert (again.cache_dir / "document_model.json").is_file()
+        assert (again.cache_dir / "source_sections.json").is_file()
+        assert document_extractor.calls == 2
 
     def test_reextract_rebuilds_pending_manifest(self, tmp_path: Path) -> None:
         pdf = tmp_path / "book.pdf"
