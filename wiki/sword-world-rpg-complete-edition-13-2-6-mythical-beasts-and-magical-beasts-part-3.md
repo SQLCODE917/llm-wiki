@@ -68,3 +68,37 @@ Languages=None Perception=Five senses
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
 
 Monster Level=3 Rarity=13 Agility=6 Movement Speed=6 Number=One to several
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]]: `technical-atom-d787935bc412e9ab` formula
+
+Relation: nearby source page; matched terms `abilities`, `ancient`, `beasts`, `magic`, `magical`, `mythical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Special Abilities=4th level ancient magic (Magic Intensity/Magic Power=13/6) Needs bloodsucking to
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]]: `technical-atom-4d11a53a30d9ae55` formula
+
+Relation: nearby source page; matched terms `ancient`, `beasts`, `magical`, `mythical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Habitat=Human villages Languages=Regional, low ancient Perception=Five senses
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]]: `technical-atom-8943b0db1d6fa61d` formula
+
+Relation: nearby source page; matched terms `ancient`, `beasts`, `magical`, `mythical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Habitat=Deserts, Underground labyrinths Languages=Low ancient Perception=Five senses (darkvision)
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]]: `technical-atom-88e9c8f3f2a53377` formula
+
+Relation: nearby source page; matched terms `beasts`, `magical`, `mythical`, `several`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Rarity=10 Agility=15 Movement Speed=30 Number=One to several

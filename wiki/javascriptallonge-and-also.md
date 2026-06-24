@@ -35,14 +35,40 @@ Citation: (raw/javascriptallonge.pdf p.37-38)
 (() => return 0)() //=> ERROR
 ```
 
+### `technical-atom-82593adf34b86763` exception
+
+Citation: (raw/javascriptallonge.pdf p.37-38)
+
+Statements belong inside blocks and only inside blocks.
+
 ### `technical-atom-59883faf926228a6` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.37-38)
 
 For example, you can't use one as the expression in a simple function, because it isn't an expression:
 
-### `technical-atom-82593adf34b86763` exception
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.37-38)
+### From [[javascriptallonge-back-on-the-block]]: `technical-atom-3b19860d1c8e63e0` exception
 
-Statements belong inside blocks and only inside blocks.
+Relation: nearby source page; matched terms `can`, `expression`, `one`, `than`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.35-37)
+
+As you can see, a block with one expression does not behave like an expression, and a block with more than one expression does not behave like an expression constructed with the comma operator:
+
+### From [[javascriptallonge-undefined]]: `technical-atom-6727b9042bd2575a` requirement
+
+Relation: nearby source page; matched terms `because`, `can`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+This works because JavaScript has a feature that can infer where the semi-colons should be most of the time.
+
+### From [[javascriptallonge-undefined]]: `technical-atom-6824a3dcc31f6880` exception
+
+Relation: nearby source page; matched terms `javascript`, `statements`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+18 Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons.

@@ -34,3 +34,37 @@ Citation: (raw/javascriptallonge.pdf p.228-229)
 ```
 55 89 144 ...
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-generating-iterables]]: `technical-atom-10b9ccb62f560bfc` procedure
+
+Relation: nearby source page; matched terms `generating`, `have`, `iterables`, `iterators`, `state`
+
+Citation: (raw/javascriptallonge.pdf p.224-226)
+
+Iterators have to arrange its own state such that when you call them, they compute and return the next item.
+
+### From [[javascriptallonge-we-ll-keep-it-simple]]: `technical-atom-1c71905df1a926c6` procedure
+
+Relation: nearby source page; matched terms `explicitly`, `generator`, `have`, `iterator`
+
+Citation: (raw/javascriptallonge.pdf p.229-230)
+
+In a generator, we write 'do this, then this, then this.' In an iterator, we have to wrap that up and explicitly keep track of what step we're on.
+
+### From [[javascriptallonge-generating-iterables]]: `technical-atom-efb7e60dcd1e8dce` procedure
+
+Relation: nearby source page; matched terms `functional`, `generating`, `iterables`, `iterator`, `method`
+
+Citation: (raw/javascriptallonge.pdf p.224-226)
+
+Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done.
+
+### From [[javascriptallonge-javascript-s-generators]]: `technical-atom-bd725d9058677fd9` formula
+
+Relation: nearby source page; matched terms `can`, `function`, `generator`, `here`
+
+Citation: (raw/javascriptallonge.pdf p.230-231)
+
+91 Wewrote a generator declaration . We can also write const empty = function * () {} to bind an anonymous generator to the empty keyword, but we don't need to do that here.

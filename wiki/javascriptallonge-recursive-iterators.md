@@ -30,3 +30,21 @@ Citation: (raw/javascriptallonge.pdf p.226)
 Citation: (raw/javascriptallonge.pdf p.226)
 
 For example, iterating over a tree.
+
+## Related technical details
+
+### From [[javascriptallonge-generating-iterables]]: `technical-atom-10b9ccb62f560bfc` procedure
+
+Relation: nearby source page; matched terms `iterators`, `state`, `they`
+
+Citation: (raw/javascriptallonge.pdf p.224-226)
+
+Iterators have to arrange its own state such that when you call them, they compute and return the next item.
+
+### From [[javascriptallonge-javascript-s-generators]]: `technical-atom-00fab8fb6887a7bc` procedure
+
+Relation: nearby source page; matched terms `generators`, `iterators`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.230-231)
+
+It would be very nice if we could sometimes write iterators as a .next() method that gets called, and sometimes write out a generator.

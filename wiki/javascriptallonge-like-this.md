@@ -34,3 +34,33 @@ Citation: (raw/javascriptallonge.pdf p.210-211)
 ```javascript
 const stack = Stack2(); stack.push(2000); stack.push(10); stack.push(5) const collectionSum = (collection) => { const iterator = collection.iterator(); let eachIteration, sum = 0; while ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } return sum } collectionSum(stack) //=> 2015
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-basic-operations-on-iterables]]: `technical-atom-f9a05369dedddd46` requirement
+
+Relation: nearby source page; matched terms `iterator`, `method`, `object`, `objects`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.211-215)
+
+The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.
+
+### From [[javascriptallonge-basic-operations-on-iterables]]: `technical-atom-3f7ceba972853444` code
+
+Relation: nearby source page; matched terms `iterator`, `like`, `stack`
+
+Citation: (raw/javascriptallonge.pdf p.284)
+
+```javascript
+stack.push(2000); stack.push(10); stack.push(5) const collectionSum = (collection) => { const iterator = collection[Symbol.iterator](); let eachIteration, sum = 0; while ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } return sum } collectionSum(stack) //=> 2015 Using [Symbol.iterator] instead of .iterator seems like adding an extra moving part for nothing. Do we get anything in return? Indeed we do. Behold the for...of loop: const iterableSum = (iterable) => { let sum = 0; for ( const num of iterable) { sum += num; } return sum } iterableSum(stack) //=> 2015
+```
+
+### From [[javascriptallonge-why]]: `technical-atom-74e1dd29d52c577b` code
+
+Relation: nearby source page; matched terms `function`, `like`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.201)
+
+```javascript
+This is the canonical Y Combinator 86 : const Y = (f) => ( x => f(v => x(x)(v)) )( x => f(v => x(x)(v)) ); You use it like this: const factorial = Y( function (fac) { (n == 0 ? 1 : n * fac(n - 1));
+```

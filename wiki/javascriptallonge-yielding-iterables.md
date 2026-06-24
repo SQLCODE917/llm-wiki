@@ -84,3 +84,43 @@ Citation: (raw/javascriptallonge.pdf p.239-243)
 ```
 three me yield * yields all of the elements of an iterable, in order. We can use it in tree , too: tree([1, [2, [3, 4], 5]])) {
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-lazy-collection-operations]]: `technical-atom-744115e2e3a310d4` procedure
+
+Relation: nearby source page; matched terms `collection`, `element`, `elements`, `iterable`, `iterates`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.253-256)
+
+Finally, we take the first element of that filtered, squared iterable and now JavaScript actually iterates over the stack's elements, and it only needs to square two of those elements, 29 and 28 , to return the answer.
+
+### From [[javascriptallonge-implementing-methods-with-iteration]]: `technical-atom-80a3ee280a8229ba` code
+
+Relation: nearby source page; matched terms `element`, `function`, `iterable`, `iteration`, `stack`
+
+Citation: (raw/javascriptallonge.pdf p.246-253)
+
+```javascript
+return this .array[ this .index += 1] = value; }, pop: function () { const value = this .array[ this .index]; this .array[ this .index] = undefined ; if ( this .index >= 0) { this .index -= 1 } return value }, isEmpty: function () { return this .index < 0 }, [Symbol.iterator]: function () { let iterationIndex = this .index; return { next: () => { if (iterationIndex > this .index) { iterationIndex = this .index; } if (iterationIndex < 0) { return {done: true }; } else { return {done: false , value: this .array[iterationIndex--]} } } } } }, LazyCollection); Stack.from = function (iterable) { const stack = this (); for ( let element of iterable) { stack.push(element); } return stack; }
+```
+
+### From [[javascriptallonge-rewriting-iterable-operations]]: `technical-atom-c172f364acc1fc24` code
+
+Relation: nearby source page; matched terms `element`, `function`, `iterable`, `yield`
+
+Citation: (raw/javascriptallonge.pdf p.243-245)
+
+```javascript
+function * mapWith (fn, iterable) { for ( const element of iterable) { yield fn(element); } }
+```
+
+### From [[javascriptallonge-rewriting-iterable-operations]]: `technical-atom-03d1fc7cec3dda78` code
+
+Relation: nearby source page; matched terms `element`, `function`, `iterable`, `yield`
+
+Citation: (raw/javascriptallonge.pdf p.243-245)
+
+```javascript
+function * mapWith(fn, iterable) { for ( const element of iterable) { yield fn(element); } } function * filterWith (fn, iterable) { for ( const element of iterable) { if (!!fn(element)) yield element; } }
+```

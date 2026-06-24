@@ -79,3 +79,39 @@ Thus, the design of programming languages and algorithms was driven by what coul
 Citation: (raw/javascriptallonge.pdf p.128-130)
 
 In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array.
+
+## Related technical details
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-d529e9b6bf45d57d` exception
+
+Relation: nearby source page; matched terms `computer`, `data`, `hardware`, `history`, `javascript`, `languages`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+Lists are not the only way to represent collections of things, but they are the 'oldest' data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer.
+
+### From [[javascriptallonge-defaults-and-destructuring]]: `technical-atom-390ae9487222cc8a` code
+
+Relation: nearby source page; matched terms `first`, `one`, `two`
+
+Citation: (raw/javascriptallonge.pdf p.124-125)
+
+```javascript
+const [first, second = "two"] = ["one"]; ` ${ first } . ${ second } ` //=> "one . two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } . ${ second } ` //=> "primus . secundus"
+```
+
+### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-ff30dd9aed90995c` exception
+
+Relation: nearby source page; matched terms `data`, `like`, `structures`
+
+Citation: (raw/javascriptallonge.pdf p.126-128)
+
+64 It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made.
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-b91f3af2d19fe2cf` procedure
+
+Relation: nearby source page; matched terms `implementation`, `javascript`, `list`, `some`, `storing`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+Dictionaries store key-value pairs, so instead of binding NAME to 0 and then storing a name in an array at index 0 , we can bind a name directly to name in a dictionary, and we let JavaScript sort out whether the implementation is a list of key-value pairs, a hashed collection, a tree of some sort, or anything else.

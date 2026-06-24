@@ -40,3 +40,39 @@ Citation: (raw/javascriptallonge.pdf p.47)
 Citation: (raw/javascriptallonge.pdf p.47)
 
 JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one.
+
+## Related technical details
+
+### From [[javascriptallonge-it-s-always-the-environment]]: `technical-atom-6582cc9837c81ff3` requirement
+
+Relation: nearby source page; matched terms `environment`, `function`, `has`, `its`, `parent`
+
+Citation: (raw/javascriptallonge.pdf p.46-47)
+
+So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
+
+### From [[javascriptallonge-which-came-first-the-chicken-or-the-egg]]: `technical-atom-93fe1495d6cb435a` requirement
+
+Relation: nearby source page; matched terms `environment`, `has`, `javascript`, `one`
+
+Citation: (raw/javascriptallonge.pdf p.47-48)
+
+JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions.
+
+### From [[javascriptallonge-which-came-first-the-chicken-or-the-egg]]: `technical-atom-4c659777740464a5` code
+
+Relation: nearby source page; matched terms `environment`, `its`, `when`
+
+Citation: (raw/javascriptallonge.pdf p.47-48)
+
+```
+So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': global environment } .
+```
+
+### From [[javascriptallonge-inside-out]]: `technical-atom-7c02e176bb54dfd2` procedure
+
+Relation: nearby source page; matched terms `function`, `its`, `name`, `then`
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+There's another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression.

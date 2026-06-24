@@ -43,14 +43,52 @@ Citation: (raw/javascriptallonge.pdf p.66-67)
 
 Function declarations are formally only supposed to be made at what we might call the 'top level' of a function.
 
+### `technical-atom-578a630465f4b26d` exception
+
+Citation: (raw/javascriptallonge.pdf p.66-67)
+
+Another caveat is that a function declaration cannot exist inside of any expression, otherwise it's a function expression.
+
 ### `technical-atom-f822e3366648ac82` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.66-67)
 
 Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea:
 
-### `technical-atom-578a630465f4b26d` exception
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.66-67)
+### From [[javascriptallonge-function-declarations]]: `technical-atom-824639bdc70ea377` exception
 
-Another caveat is that a function declaration cannot exist inside of any expression, otherwise it's a function expression.
+Relation: nearby source page; matched terms `declaration`, `declarations`, `expression`, `function`, `named`, `only`
+
+Citation: (raw/javascriptallonge.pdf p.65-66)
+
+It's called a function declaration statement , and it looks a lot like a named function expression, only we use it as a statement:
+
+### From [[javascriptallonge-function-declarations]]: `technical-atom-f1f1d87b3f0d9fe4` code
+
+Relation: nearby source page; matched terms `code`, `declarations`, `function`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.65-66)
+
+```javascript
+( function () { return fizzbuzz(); const fizzbuzz = function fizzbuzz () { return "Fizz" + "Buzz"; } })() //=> undefined is not a function (evaluating 'fizzbuzz()')
+```
+
+### From [[javascriptallonge-function-declarations]]: `technical-atom-ce3f07fc430dd604` procedure
+
+Relation: nearby source page; matched terms `declarations`, `function`, `occur`, `top`
+
+Citation: (raw/javascriptallonge.pdf p.65-66)
+
+First, function declarations are hoisted to the top of the function in which they occur.
+
+### From [[javascriptallonge-function-declarations]]: `technical-atom-f07b324de3d238c3` code
+
+Relation: nearby source page; matched terms `although`, `code`, `declarations`, `function`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.65-66)
+
+```javascript
+( function () { return fizzbuzz(); function fizzbuzz () { return "Fizz" + "Buzz"; } })() //=> 'FizzBuzz' Although fizzbuzz is declared later in the function, JavaScript behaves as if we'd written: ( function () { {
+```

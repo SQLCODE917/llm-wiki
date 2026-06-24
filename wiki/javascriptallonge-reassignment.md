@@ -80,3 +80,43 @@ Citation: (raw/javascriptallonge.pdf p.148-150)
 Citation: (raw/javascriptallonge.pdf p.148-150)
 
 For example, we can write:
+
+## Related technical details
+
+### From [[javascriptallonge-var]]: `technical-atom-9598b23ff904732b` code
+
+Relation: nearby source page; matched terms `but`, `const`, `javascript`, `let`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.151-154)
+
+```javascript
+const factorial = (n) => { let innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } return innerFactorial(n, 1); } JavaScript hoists the let and the assignment. But not so with var : const factorial = (n) => { return innerFactorial(n, 1); var innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } } factorial(4) //=> undefined is not a function (evaluating 'innerFactorial(n, 1)')
+```
+
+### From [[javascriptallonge-var]]: `technical-atom-80d6a8f6590009b0` code
+
+Relation: nearby source page; matched terms `const`, `let`, `names`
+
+Citation: (raw/javascriptallonge.pdf p.151-154)
+
+```
+const and let bind names.
+```
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-41f22a8358713fe0` code
+
+Relation: nearby source page; matched terms `const`, `javascript`, `let`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+```
+const and let are recent additions to JavaScript.
+```
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-626cd93fa12868d4` formula
+
+Relation: nearby source page; matched terms `but`, `can`, `const`, `let`, `way`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+Hopefully, you can think of a faster way to calculate this sum. 72 And perhaps you have noticed that var i = 1 is tucked away instead of being at the top as we prefer. But is this ever a problem?

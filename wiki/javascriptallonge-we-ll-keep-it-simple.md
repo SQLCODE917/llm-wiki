@@ -35,12 +35,6 @@ Citation: (raw/javascriptallonge.pdf p.229-230)
 21 34 55 89 144 ...
 ```
 
-### `technical-atom-211166ddde5ca25f` worked-example
-
-Citation: (raw/javascriptallonge.pdf p.229-230)
-
-Again, this is not particularly horrendous, but like the recursive example, we're explicitly greenspunning the natural linear state.
-
 ### `technical-atom-1c71905df1a926c6` procedure
 
 Citation: (raw/javascriptallonge.pdf p.229-230)
@@ -52,3 +46,43 @@ In a generator, we write 'do this, then this, then this.' In an iterator, we hav
 Citation: (raw/javascriptallonge.pdf p.229-230)
 
 Whereas the iteration version must make that state explicit.
+
+### `technical-atom-211166ddde5ca25f` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.229-230)
+
+Again, this is not particularly horrendous, but like the recursive example, we're explicitly greenspunning the natural linear state.
+
+## Related technical details
+
+### From [[javascriptallonge-iteration]]: `technical-atom-cae674bcd9bcea03` procedure
+
+Relation: nearby source page; matched terms `function`, `iteration`, `procedure`, `simple`, `use`, `version`
+
+Citation: (raw/javascriptallonge.pdf p.227-228)
+
+A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We're reinventing the use of a stack to manage recursion, because writing our code to respond to a function call makes us turn a simple recursive algorithm inside-out.
+
+### From [[javascriptallonge-iteration]]: `technical-atom-b526abb079ec9050` procedure
+
+Relation: nearby source page; matched terms `explicit`, `iteration`, `iterator`, `procedure`, `version`
+
+Citation: (raw/javascriptallonge.pdf p.227-228)
+
+If you peel off isIterable and ignore the way that the iteration version uses [Symbol.iterator] and .next , we're left with the fact that the generating version calls itself recursively, and the iteration version maintains an explicit stack.
+
+### From [[javascriptallonge-javascript-s-generators]]: `technical-atom-bd725d9058677fd9` formula
+
+Relation: nearby source page; matched terms `but`, `function`, `generator`, `generators`, `javascript`, `write`
+
+Citation: (raw/javascriptallonge.pdf p.230-231)
+
+91 Wewrote a generator declaration . We can also write const empty = function * () {} to bind an anonymous generator to the empty keyword, but we don't need to do that here.
+
+### From [[javascriptallonge-javascript-s-generators]]: `technical-atom-00fab8fb6887a7bc` procedure
+
+Relation: nearby source page; matched terms `generator`, `generators`, `iterators`, `javascript`, `procedure`, `write`
+
+Citation: (raw/javascriptallonge.pdf p.230-231)
+
+It would be very nice if we could sometimes write iterators as a .next() method that gets called, and sometimes write out a generator.

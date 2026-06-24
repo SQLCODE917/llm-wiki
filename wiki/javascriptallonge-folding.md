@@ -78,3 +78,43 @@ With the exception of the length example at the beginning, our examples so far a
 Citation: (raw/javascriptallonge.pdf p.114-116)
 
 And to return to our first example, our version of length can be written as a fold:
+
+## Related technical details
+
+### From [[javascriptallonge-linear-recursion]]: `technical-atom-0f5d51c0613f0645` code
+
+Relation: nearby source page; matched terms `array`, `code`, `first`, `return`
+
+Citation: (raw/javascriptallonge.pdf p.111-113)
+
+```javascript
+const flatten = ([first, ...rest]) => { if (first === undefined ) { return []; } else if (!Array.isArray(first)) { return [first, ...flatten(rest)]; } else { return [...flatten(first), ...flatten(rest)]; } } flatten(["foo", [3, 4, []]]) //=> ["foo",3,4]
+```
+
+### From [[javascriptallonge-self-similarity]]: `technical-atom-5d9fe5bf28074a51` exception
+
+Relation: nearby source page; matched terms `examples`, `exception`, `our`
+
+Citation: (raw/javascriptallonge.pdf p.109-111)
+
+61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples.
+
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-14898c90c9499167` code
+
+Relation: nearby source page; matched terms `code`, `first`, `function`, `return`
+
+Citation: (raw/javascriptallonge.pdf p.117-118)
+
+```javascript
+const mapWith = function (fn, [first, ...rest]) { if (first === undefined ) { return []; } else { const _temp1 = fn(first), _temp2 = mapWith(fn, rest), _temp3 = [_temp1, ..._temp2]; return _temp3; } }
+```
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-d96c8d42a851c268` code
+
+Relation: nearby source page; matched terms `code`, `function`, `length`, `return`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+```javascript
+const maybe = (fn) => function (...args) { if (args.length === 0) { return ; } else { for ( let arg of args) { if (arg == null ) return ; } return fn.apply( this , args); } }
+```

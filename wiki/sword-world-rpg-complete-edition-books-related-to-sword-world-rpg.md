@@ -66,3 +66,29 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.8-13)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.8-13)
 
 |24~29|+4|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-front-matter]]: `technical-atom-3a51475a34173990` table-row
+
+Relation: nearby source page; matched terms `books`, `related`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.1-7)
+
+|Books Related to Sword World|5.2 Common Runes ......... 108|
+
+### From [[sword-world-rpg-complete-edition-front-matter]]: `technical-atom-6d13499658ed75c6` table-row
+
+Relation: nearby source page; matched terms `need`, `play`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.1-7)
+
+|What You’ll Need to Play Sword|Chapter 5: Magic .................... 55|
+
+### From [[sword-world-rpg-complete-edition-2-3-checks]]: `technical-atom-a86a4e84a21af189` exception
+
+Relation: nearby source page; matched terms `but`, `checks`, `not`, `related`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+
+However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself.

@@ -68,3 +68,45 @@ The expression Symbol.iterator evaluates to a special symbol representing the na
 Citation: (raw/javascriptallonge.pdf p.211-215)
 
 For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
+
+## Related technical details
+
+### From [[javascriptallonge-iterables-out-to-infinity]]: `technical-atom-6afb74908999e9bc` code
+
+Relation: nearby source page; matched terms `iterables`, `iterator`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.215-216)
+
+```javascript
+const Numbers = { [Symbol.iterator] () { let n = 0; return { next: () => ({done: false , value: n++}) } } }
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-d72c10129ba795ef` code
+
+Relation: nearby source page; matched terms `iterable`, `iterator`, `operations`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const filterWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { do { const {done, value} = iterator.next(); } while (!done && !fn(value)); return {done, value}; } } } }); const untilWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { let {done, value} = iterator.next(); done = done || fn(value); return ({done, value: done ? undefined : value}); } } } });
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-ba45ce02826374bb` code
+
+Relation: nearby source page; matched terms `iterable`, `iterator`, `operations`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); iterator.next(); return iterator; } });
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-50415e1f6386aada` code
+
+Relation: nearby source page; matched terms `iterator`, `operations`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next(); return ({done, value: done ? undefined : fn(value)}); } } } });
+```

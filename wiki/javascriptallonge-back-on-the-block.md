@@ -80,3 +80,41 @@ Citation: (raw/javascriptallonge.pdf p.35-37)
 Citation: (raw/javascriptallonge.pdf p.35-37)
 
 As you can see, a block with one expression does not behave like an expression, and a block with more than one expression does not behave like an expression constructed with the comma operator:
+
+## Related technical details
+
+### From [[javascriptallonge-undefined]]: `technical-atom-6824a3dcc31f6880` exception
+
+Relation: nearby source page; matched terms `javascript`, `separated`, `statements`, `undefined`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+18 Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons.
+
+### From [[javascriptallonge-void]]: `technical-atom-33e795f57deaec38` procedure
+
+Relation: nearby source page; matched terms `undefined`, `value`, `void`
+
+Citation: (raw/javascriptallonge.pdf p.35)
+
+So, when we deliberately want an undefined value, should we use the first, second, or third form?
+
+### From [[javascriptallonge-void]]: `technical-atom-109b9d01aa7dce40` code
+
+Relation: nearby source page; matched terms `undefined`, `void`
+
+Citation: (raw/javascriptallonge.pdf p.35)
+
+```javascript
+void 0 //=> undefined void 1 //=> undefined void (2 + 2) //=> undefined
+```
+
+### From [[javascriptallonge-void]]: `technical-atom-69ffa4ccd5f774da` code
+
+Relation: nearby source page; matched terms `evaluating`, `function`, `return`, `value`, `void`
+
+Citation: (raw/javascriptallonge.pdf p.35)
+
+```
+- By evaluating a function that doesn't return a value (() => {})() , and;
+```

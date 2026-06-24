@@ -66,3 +66,37 @@ Powers=+1 to attack power and bonus damage
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
 
 |Required|Price|Required|Price|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]: `technical-atom-ada6725f4988acf9` formula
+
+Relation: nearby source page; matched terms `base`, `can`, `item`, `list`, `magical`, `powers`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
+
+Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]: `technical-atom-c39ce7981a476c80` formula
+
+Relation: nearby source page; matched terms `base`, `item`, `list`, `magical`, `powers`, `trade`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
+
+Base Trade Price=1500 (Small shield)/5000 (Large shield) Powers=Generates a force field equivalent to a shield
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]: `technical-atom-5f291ca7c9653693` formula
+
+Relation: nearby source page; matched terms `base`, `item`, `list`, `magical`, `trade`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
+
+Base Trade Price=1,000,000 gamels (not for sale)
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]]: `technical-atom-be037111901f5c96` table-row
+
+Relation: nearby source page; matched terms `item`, `list`, `magical`, `required`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+|High-quality large shield +1<br>(required strength 8)|63000|

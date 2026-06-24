@@ -66,3 +66,37 @@ For example, a character with priest skill level 1, fighter skill level 4 (these
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
 
 For example, there's the ability to detect and disable traps that have been set, and the ability to stay ahead of footsteps, listening and observing what’s going on.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-7-2-merchant-skill]]: `technical-atom-6c23d0b3729e2c53` procedure
+
+Relation: nearby source page; matched terms `adventurer`, `called`, `skill`, `skills`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.125-129)
+
+If you understand this mentality, then on the other hand, it would be acceptable to recognize adventurer skills for skills that would be called heroes.
+
+### From [[sword-world-rpg-complete-edition-7-2-merchant-skill]]: `technical-atom-3fea629398646c37` exception
+
+Relation: nearby source page; matched terms `adventurer`, `called`, `skill`, `skills`, `who`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.125-129)
+
+However, basically in _Sword World RPG_ , only those who are masters of adventurer skills are worthy of being called heroes.
+
+### From [[sword-world-rpg-complete-edition-7-2-merchant-skill]]: `technical-atom-63d7baca3d34471c` requirement
+
+Relation: nearby source page; matched terms `general`, `skill`, `skills`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.125-129)
+
+People with higher levels in general skills should also be given due respect.
+
+### From [[sword-world-rpg-complete-edition-6-4-sage-skill]]: `technical-atom-ba52fad83c3869b8` procedure
+
+Relation: nearby source page; matched terms `character`, `has`, `sage`, `skill`, `who`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.118-119)
+
+Then, a character who cannot read low ancient (but _has_ learned common) must learn to read low ancient _before_ learning any other language.

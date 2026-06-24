@@ -34,3 +34,21 @@ Citation: (raw/javascriptallonge.pdf p.34)
 ```javascript
 (() => {})() //=> undefined
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-undefined]]: `technical-atom-6824a3dcc31f6880` exception
+
+Relation: nearby source page; matched terms `has`, `separated`, `statements`
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+18 Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons.
+
+### From [[javascriptallonge-back-on-the-block]]: `technical-atom-3b19860d1c8e63e0` exception
+
+Relation: nearby source page; matched terms `block`, `can`, `more`
+
+Citation: (raw/javascriptallonge.pdf p.35-37)
+
+As you can see, a block with one expression does not behave like an expression, and a block with more than one expression does not behave like an expression constructed with the comma operator:

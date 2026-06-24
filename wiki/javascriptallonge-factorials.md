@@ -56,3 +56,43 @@ const callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...
 Citation: (raw/javascriptallonge.pdf p.121-123)
 
 Asbefore, we wrote a factorialWithDelayedWork function, then used partial application ( callLast ) to make a factorial function that took just the one argument and supplied the initial work value.
+
+## Related technical details
+
+### From [[javascriptallonge-default-arguments]]: `technical-atom-f2ed8fe527bc0e91` code
+
+Relation: nearby source page; matched terms `const`, `factorial`, `work`
+
+Citation: (raw/javascriptallonge.pdf p.123-124)
+
+```javascript
+const factorial = (n, work) => n === 1 ? work : factorial(n - 1, n * work); factorial(1, 1) //=> 1 factorial(5, 1) //=> 120
+```
+
+### From [[javascriptallonge-default-arguments]]: `technical-atom-0182e3897129027a` code
+
+Relation: nearby source page; matched terms `const`, `factorial`, `work`
+
+Citation: (raw/javascriptallonge.pdf p.123-124)
+
+```javascript
+const factorial = (n, work = 1) => n === 1 ? work : factorial(n - 1, n * work); factorial(1) //=> 1 factorial(6) //=> 720
+```
+
+### From [[javascriptallonge-converting-non-tail-calls-to-tail-calls]]: `technical-atom-5080818b4c497075` code
+
+Relation: nearby source page; matched terms `application`, `calllast`, `const`, `partial`
+
+Citation: (raw/javascriptallonge.pdf p.120-121)
+
+```javascript
+Or we could use partial application: const callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args); const length = callLast(lengthDelaysWork, 0); length(["foo", "bar", "baz"]) //=> 3
+```
+
+### From [[javascriptallonge-default-arguments]]: `technical-atom-b90d9e1958a2a2f0` requirement
+
+Relation: nearby source page; matched terms `factorial`, `function`, `tail-recursive`
+
+Citation: (raw/javascriptallonge.pdf p.123-124)
+
+But it is hideous to have to always add a 1 parameter, we'd be demanding that everyone using the factorial function know that we are using a tail-recursive implementation.

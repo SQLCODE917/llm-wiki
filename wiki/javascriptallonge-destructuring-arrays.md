@@ -66,14 +66,56 @@ Citation: (raw/javascriptallonge.pdf p.103-104)
 
 The line const wrapped = [something]; is interesting. On the left hand is a name to be bound, and on the right hand is an array literal, a template for constructing an array, very much like a quasi-literal string.
 
+### `technical-atom-4128e2b98a3a50ce` formula
+
+Citation: (raw/javascriptallonge.pdf p.103-104)
+
+The line const wrapped = [something]; is interesting.
+
 ### `technical-atom-49fd918f2d639091` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.103-104)
 
 Here's an example of an array literal that uses a name:
 
-### `technical-atom-4128e2b98a3a50ce` formula
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.103-104)
+### From [[javascriptallonge-gathering]]: `technical-atom-fdf4ebc731b1361f` code
 
-The line const wrapped = [something]; is interesting.
+Relation: nearby source page; matched terms `array`, `code`, `const`, `destructuring`, `saw`, `something`
+
+Citation: (raw/javascriptallonge.pdf p.104-105)
+
+```javascript
+const [...butLast, last] = [1, 2, 3, 4, 5]; //=> ERROR const [first, ..., last] = [1, 2, 3, 4, 5]; //=> ERROR Now, when we introduced destructuring, we saw that it is kind-of-sort-of the reverse of array literals. So if const wrapped = [something]; Then: const [unwrapped] = something; What is the reverse of gathering? We know that: const [car, ...cdr] = [1, 2, 3, 4, 5]; What is the reverse? It would be: const cons = [car, ...cdr]; oneTwoThree = ["one", "two", "three"];
+```
+
+### From [[javascriptallonge-element-references]]: `technical-atom-080c9abe55b63119` code
+
+Relation: nearby source page; matched terms `arrays`, `code`, `const`, `element`
+
+Citation: (raw/javascriptallonge.pdf p.102-103)
+
+```javascript
+const x = [], a = [x]; a[0] === x //=> true, arrays store references to the things you put in them.
+```
+
+### From [[javascriptallonge-array-literals]]: `technical-atom-b4fe83baf08d80bb` code
+
+Relation: nearby source page; matched terms `array`, `code`, `const`, `something`
+
+Citation: (raw/javascriptallonge.pdf p.101-102)
+
+```javascript
+const wrap = (something) => [something]; wrap("lunch") //=> ["lunch"]
+```
+
+### From [[javascriptallonge-element-references]]: `technical-atom-ff3a8a2cd1dd583f` code
+
+Relation: nearby source page; matched terms `code`, `const`, `element`
+
+Citation: (raw/javascriptallonge.pdf p.102-103)
+
+```javascript
+const oneTwoThree = ["one", "two", "three"]; oneTwoThree[0] //=> 'one' oneTwoThree[1] //=> 'two' oneTwoThree[2] //=> 'three'
+```

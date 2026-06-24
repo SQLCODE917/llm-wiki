@@ -34,3 +34,41 @@ Citation: (raw/javascriptallonge.pdf p.102-103)
 ```javascript
 const x = [], a = [x]; a[0] === x //=> true, arrays store references to the things you put in them.
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-and-are-control-flow-operators]]: `technical-atom-fb78d9847d23a268` code
+
+Relation: nearby source page; matched terms `javascript`, `not`, `operators`
+
+Citation: (raw/javascriptallonge.pdf p.97-98)
+
+```
+If n === 0 , JavaScript does not evaluate (n !== 1 && even(n -2)) .
+```
+
+### From [[javascriptallonge-and-are-control-flow-operators]]: `technical-atom-2fe0c429c64a6e81` code
+
+Relation: nearby source page; matched terms `javascript`, `not`, `operators`
+
+Citation: (raw/javascriptallonge.pdf p.97-98)
+
+```
+In this case, if n === 0 , JavaScript does not evaluate (n !== 1 && even(n -2)) .
+```
+
+### From [[javascriptallonge-and-are-control-flow-operators]]: `technical-atom-3b6397aef7b5b591` requirement
+
+Relation: nearby source page; matched terms `its`, `not`, `operators`
+
+Citation: (raw/javascriptallonge.pdf p.97-98)
+
+The expression on the left is always evaluated, and its value determines whether the expression on the right is evaluated or not.
+
+### From [[javascriptallonge-destructuring-is-not-pattern-matching]]: `technical-atom-820341aea79f7af4` exception
+
+Relation: nearby source page; matched terms `not`, `own`, `things`
+
+Citation: (raw/javascriptallonge.pdf p.105-106)
+
+This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.

@@ -58,3 +58,41 @@ Citation: (raw/javascriptallonge.pdf p.32-33)
 Citation: (raw/javascriptallonge.pdf p.32-33)
 
 For example, (() => 0)() is an expression.
+
+## Related technical details
+
+### From [[javascriptallonge-void]]: `technical-atom-69ffa4ccd5f774da` code
+
+Relation: nearby source page; matched terms `code`, `evaluating`, `function`, `return`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.35)
+
+```
+- By evaluating a function that doesn't return a value (() => {})() , and;
+```
+
+### From [[javascriptallonge-applying-functions]]: `technical-atom-b0a12df78d1155e0` exception
+
+Relation: nearby source page; matched terms `expression`, `functions`, `one`, `right`, `such`
+
+Citation: (raw/javascriptallonge.pdf p.31)
+
+Right now, we only know about one such expression: () => 0 , so let's use it.
+
+### From [[javascriptallonge-applying-functions]]: `technical-atom-a16c68b137f59cbe` requirement
+
+Relation: nearby source page; matched terms `function`, `functions`, `have`
+
+Citation: (raw/javascriptallonge.pdf p.31)
+
+- function keyword functions always have blocks as their bodies.
+
+### From [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]]: `technical-atom-d5ce0404744a426c` code
+
+Relation: nearby source page; matched terms `code`, `function`, `functions`
+
+Citation: (raw/javascriptallonge.pdf p.30-31)
+
+```javascript
+(() => 0) //=> [Function]
+```

@@ -67,12 +67,6 @@ Citation: (raw/javascriptallonge.pdf p.44)
 becomes {x: 1, ...} , and the result of applying the function is another function value.
 ```
 
-### `technical-atom-6e3151115dfb385f` procedure
-
-Citation: (raw/javascriptallonge.pdf p.44)
-
-Then we're going to take the value of that function and apply it to the argument 2 , something like this:
-
 ### `technical-atom-026e41457ce3d8a0` code
 
 Citation: (raw/javascriptallonge.pdf p.44)
@@ -80,3 +74,43 @@ Citation: (raw/javascriptallonge.pdf p.44)
 ```
 So we seem to get a new environment {y: 2, ...} .
 ```
+
+### `technical-atom-6e3151115dfb385f` procedure
+
+Citation: (raw/javascriptallonge.pdf p.44)
+
+Then we're going to take the value of that function and apply it to the argument 2 , something like this:
+
+## Related technical details
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-247ce19e93a86869` requirement
+
+Relation: nearby source page; matched terms `function`, `javascript`, `value`, `when`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+There is a property that JavaScript strictly maintains: When a value-any value-is passed as an argument to a function, the value bound in the function's environment must be identical to the original.
+
+### From [[javascriptallonge-it-s-always-the-environment]]: `technical-atom-6582cc9837c81ff3` requirement
+
+Relation: nearby source page; matched terms `applied`, `function`
+
+Citation: (raw/javascriptallonge.pdf p.46-47)
+
+So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-e8199c3947c572cb` requirement
+
+Relation: nearby source page; matched terms `closures`, `function`, `value`, `when`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+When we combine our knowledge of value types, reference types, arguments, and closures, we'll understand why this function always evaluates to true no matter what argument 26 you apply it to:
+
+### From [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]]: `technical-atom-592864b8cc8594c9` procedure
+
+Relation: nearby source page; matched terms `each`, `functions`, `javascript`, `variables`
+
+Citation: (raw/javascriptallonge.pdf p.47)
+
+JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one.

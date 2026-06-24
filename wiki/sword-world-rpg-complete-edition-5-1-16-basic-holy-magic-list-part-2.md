@@ -66,3 +66,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
 
 |21|30 years|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-340fa76983ff3169` formula
+
+Relation: nearby source page; matched terms `basic`, `holy`, `list`, `magic`, `undead`, `various`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Distance=10 meters Area=A space with a 5 meter radius Duration=18 rounds Effect=Affects undead in various ways Type=-
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-13ba0a4cbfaa9a82` formula
+
+Relation: nearby source page; matched terms `basic`, `holy`, `list`, `magic`, `peace`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Distance=Touch Area=One Duration=Instant Effect=Restore the target's peace of mind Type=Mind Expansion=Final score Resist=Negated effect
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-61d8412d6859d098` formula
+
+Relation: nearby source page; matched terms `basic`, `holy`, `list`, `magic`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Base Mental Power Cost=5 Distance=10 meters
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-81c1ad8a9a4fd4ae` formula
+
+Relation: nearby source page; matched terms `basic`, `holy`, `list`, `magic`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Duration=Instant

@@ -55,6 +55,12 @@ Citation: (raw/javascriptallonge.pdf p.117-118)
 
 To do that, it has to evaluate fn(first) and mapWith(fn, rest) , then evaluate [fn(first), ...mapWith(fn, rest)] .
 
+### `technical-atom-39097d4eaba37f6d` procedure
+
+Citation: (raw/javascriptallonge.pdf p.117-118)
+
+Next, JavaScript invokes mapWith(fn, rest) , which is semantically equivalent to mapWith((x) => x * x, [2, 3, 4, 5]) .
+
 ### `technical-atom-2072bdc8f0d30ba8` requirement
 
 Citation: (raw/javascriptallonge.pdf p.117-118)
@@ -67,8 +73,40 @@ Citation: (raw/javascriptallonge.pdf p.117-118)
 
 JavaScript cannot throw first away.
 
-### `technical-atom-39097d4eaba37f6d` procedure
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.117-118)
+### From [[javascriptallonge-folding]]: `technical-atom-f8baa94a1544e5b8` code
 
-Next, JavaScript invokes mapWith(fn, rest) , which is semantically equivalent to mapWith((x) => x * x, [2, 3, 4, 5]) .
+Relation: nearby source page; matched terms `array`, `length`
+
+Citation: (raw/javascriptallonge.pdf p.114-116)
+
+```javascript
+const length = (array) => foldWith((first, rest) => 1 + rest, 0, array); length([1, 2, 3, 4, 5]) //=> 5
+```
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-d64971ca777393ea` exception
+
+Relation: nearby source page; matched terms `call`, `happens`, `length`, `tail`, `work`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+The problem can be stated in such a way that the answer is obvious: length does not call itself in tail position, because it has to do two pieces of work, and while one of them is in the recursive call to length , the other happens after the recursive call.
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-d96c8d42a851c268` code
+
+Relation: nearby source page; matched terms `call`, `function`, `length`, `tail`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+```javascript
+const maybe = (fn) => function (...args) { if (args.length === 0) { return ; } else { for ( let arg of args) { if (arg == null ) return ; } return fn.apply( this , args); } }
+```
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-7f8f26fdd9419454` exception
+
+Relation: nearby source page; matched terms `call`, `frame`, `stack`, `tail`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+And in fact, it does exactly that: It throws the stack frame away, and does not consume extra memory when making a maybe -wrapped call.

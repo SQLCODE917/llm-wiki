@@ -31,3 +31,45 @@ const flip = (fn) => function (first, second) { if (arguments.length === 2) { re
 Citation: (raw/javascriptallonge.pdf p.196)
 
 Nowif we write mapWith = flip(map) , we can call mapWith(fn, list) or mapWith(fn)(list) , our choice.
+
+## Related technical details
+
+### From [[javascriptallonge-flip]]: `technical-atom-ab4c64285651bea2` code
+
+Relation: nearby source page; matched terms `but`, `flip`, `map`, `mapwith`, `now`, `sometimes`
+
+Citation: (raw/javascriptallonge.pdf p.195-196)
+
+```javascript
+const flipAndCurry = (fn) => (first) => (second) => fn(second, first); Sometimes you want to flip, but not curry: const flip = (fn) => (first, second) => fn(second, first); This is gold. Consider how we define mapWith now: var mapWith = flipAndCurry(map); Much nicer!
+```
+
+### From [[javascriptallonge-flip]]: `technical-atom-c98c3c8ea3954036` code
+
+Relation: nearby source page; matched terms `flip`, `list`, `map`, `mapwith`
+
+Citation: (raw/javascriptallonge.pdf p.195-196)
+
+```javascript
+const mapWith = (fn) => (list) => list.map(fn);
+```
+
+### From [[javascriptallonge-flip]]: `technical-atom-1f3c2d6843c073f6` code
+
+Relation: nearby source page; matched terms `flip`, `list`, `map`, `mapwith`
+
+Citation: (raw/javascriptallonge.pdf p.195-196)
+
+```javascript
+const mapWith = (fn) => (list) => map(list, fn);
+```
+
+### From [[javascriptallonge-flip]]: `technical-atom-e88a9b96397776fe` code
+
+Relation: nearby source page; matched terms `flip`, `list`, `map`, `mapwith`
+
+Citation: (raw/javascriptallonge.pdf p.195-196)
+
+```javascript
+const mapWith = (fn, list) => map(list, fn);
+```

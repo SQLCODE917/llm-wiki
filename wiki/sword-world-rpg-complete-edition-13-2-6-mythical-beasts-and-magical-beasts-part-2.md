@@ -66,3 +66,37 @@ Monster Level=6
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
 
 Rarity=10 Agility=15 Movement Speed=30 Number=One to several
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-33cf930adec1e76c` formula
+
+Relation: nearby source page; matched terms `beasts`, `human`, `level`, `magical`, `monster`, `mythical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2)
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-bde405ac737b9ee1` formula
+
+Relation: nearby source page; matched terms `abilities`, `beasts`, `magical`, `mythical`, `points`, `resistance`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Strike Points=Special/5 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14 /11(4) Mental Points/Resistance=11/10(3) Special Abilities=Surprise attack (Sense target score=12)
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-610a4003cfcf39ae` formula
+
+Relation: nearby source page; matched terms `beasts`, `level`, `magical`, `monster`, `mythical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+## Monster Level=3
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-b1afb95392aca6a4` formula
+
+Relation: nearby source page; matched terms `beasts`, `level`, `magical`, `monster`, `mythical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Monster Level=3 Rarity=18

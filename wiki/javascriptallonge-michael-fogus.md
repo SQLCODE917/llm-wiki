@@ -26,12 +26,6 @@ Citation: (raw/javascriptallonge.pdf p.14)
 
 However, I'm very conservative about books - let's just say that if there was an aftershave scented to the essence of 'Used Book Store' then I would be first in line to buy.
 
-### `technical-atom-50b7a8b79101f0a4` exception
-
-Citation: (raw/javascriptallonge.pdf p.14)
-
-Not only was this a great book, but it was also a great way to write and distribute books.
-
 ### `technical-atom-12edeb5960800020` procedure
 
 Citation: (raw/javascriptallonge.pdf p.14)
@@ -50,14 +44,54 @@ Citation: (raw/javascriptallonge.pdf p.14)
 
 However, with the Leanpub model the read-feedback-change process is extremely efficient, leaving in its wake a quality book that continues to get better as others likewise read and comment into infinitude.
 
-### `technical-atom-2733f8b79026ed62` worked-example
+### `technical-atom-50b7a8b79101f0a4` exception
 
 Citation: (raw/javascriptallonge.pdf p.14)
 
-In the case of JavaScript Allongé, you'll find the Leanpub model a shining example of effectiveness.
+Not only was this a great book, but it was also a great way to write and distribute books.
 
 ### `technical-atom-896ed0e0a4b85316` exception
 
 Citation: (raw/javascriptallonge.pdf p.14)
 
 Reg has crafted (and continues to craft) not only an interesting book from the perspective of a connoisseur, but also an entertaining exploration into some of the most interesting aspects of his art.
+
+### `technical-atom-2733f8b79026ed62` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.14)
+
+In the case of JavaScript Allongé, you'll find the Leanpub model a shining example of effectiveness.
+
+## Related technical details
+
+### From [[javascriptallonge-about-javascript-allong]]: `technical-atom-f7732bf2ea29844c` exception
+
+Relation: nearby source page; matched terms `about`, `allong`, `how`, `javascript`, `without`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.7)
+
+JavaScript Allongé teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down.
+
+### From [[javascriptallonge-matthew-knox]]: `technical-atom-f4ef81395bb8bad8` procedure
+
+Relation: nearby source page; matched terms `javascript`, `procedure`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.14-15)
+
+It starts with the fundamentals of values, functions, and objects, and then guides you through JavaScript from the inside with exploratory bits of code that illustrate scoping, combinators, context, state, prototypes, and constructors.
+
+### From [[javascriptallonge-a-quick-summary-of-functions-and-bodies]]: `technical-atom-5e2b194ce75f5bf0` exception
+
+Relation: nearby source page; matched terms `how`, `procedure`, `programming`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.40)
+
+How arguments are used in a body's expression is probably perfectly obvious to you from the examples, especially if you've used any programming language (except for the dialect of BASIC-which I recall from my secondary school-that didn't allow parameters when you called a procedure).
+
+### From [[javascriptallonge-foreword-to-the-six-edition]]: `technical-atom-a2b6ee77b3913c74` procedure
+
+Relation: nearby source page; matched terms `javascript`, `procedure`, `was`
+
+Citation: (raw/javascriptallonge.pdf p.13)
+
+That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language.

@@ -68,3 +68,37 @@ Much of the magic from the ancient kingdom period has been lost, so these items 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.241-242)
 
 However, unlike normal treasures, it’s not possible to appraise these goods unless you take them to a specialty shop, so they will likely not be purchased.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]: `technical-atom-7415edc7aef859e5` exception
+
+Relation: nearby source page; matched terms `adventurer`, `not`, `types`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+
+not to deal with them unless you're a very experienced adventurer.
+
+### From [[sword-world-rpg-complete-edition-7-2-merchant-skill]]: `technical-atom-c7a07e2cd9c0007a` requirement
+
+Relation: nearby source page; matched terms `being`, `course`, `requirement`, `should`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.125-129)
+
+Of course, being a hunter is also a respectable profession, so you should never look down on it.
+
+### From [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]: `technical-atom-0e81b362e45ae910` procedure
+
+Relation: nearby source page; matched terms `ancient`, `procedure`, `types`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+
+These include three types: things that have existed long before humans, such as dragons, things that live like humans, and artificial creatures created through the experiments of ancient sorcerers that have turned wild.
+
+### From [[sword-world-rpg-complete-edition-7-2-merchant-skill]]: `technical-atom-6c23d0b3729e2c53` procedure
+
+Relation: nearby source page; matched terms `adventurer`, `procedure`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.125-129)
+
+If you understand this mentality, then on the other hand, it would be acceptable to recognize adventurer skills for skills that would be called heroes.

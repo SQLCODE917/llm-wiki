@@ -66,3 +66,37 @@ Rarity=12 Agility=12 Movement Speed=13 Number=One Frequency=Rare Intellect=Obeys
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
 
 Evasion Points=14 (7) Defense Points=9 Life Points/Resistance=30/18 (11) Mental Points/Resistance=-/15 (8) Special Abilities=Mental attack immunity Not affected by poison and illness Habitat=Ruins
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-737172d4715c27d8` formula
+
+Relation: nearby source page; matched terms `agility`, `attack`, `creatures`, `magical`, `monster`, `movement`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Monster Level=8 Rarity=15 Agility=8 Movement Speed=8 Number=One to several Frequency=Rare Intellect=None Reaction=Adversarial Attack Points=Ram:10 (3)
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-3585defb62109da7` formula
+
+Relation: nearby source page; matched terms `ancient`, `creatures`, `evasion`, `magical`, `mental`, `points`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=6/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=None in particular Habitat=Depends on the caster Languages=Low ancient Perception=Five senses
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-0ad52d04fbdc380e` formula
+
+Relation: nearby source page; matched terms `creatures`, `evasion`, `iron`, `magical`, `mental`, `points`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) Special Abilities=All weapons cannot critical Iron corrosion
+
+### From [[sword-world-rpg-complete-edition-13-2-12-humans]]: `technical-atom-409e8750dfde3a6c` formula
+
+Relation: nearby source page; matched terms `agility`, `attack`, `humans`, `movement`, `points`, `rarity`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.230-234)
+
+Rarity=16 Agility=14 Movement Speed=18 Number=One Frequency=Very rare Intellect=High Reaction=Adversarial Attack Points=Claws: 18 (11)

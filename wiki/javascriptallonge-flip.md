@@ -80,3 +80,43 @@ const flipAndCurry = (fn) => (first) => (second) => fn(second, first); Sometimes
 Citation: (raw/javascriptallonge.pdf p.195-196)
 
 Let's consider the case whether we have a map function of our own, perhaps from the allong.es 84 library, perhaps from Underscore 85 .
+
+## Related technical details
+
+### From [[javascriptallonge-mapwith]]: `technical-atom-509aaa6a164b3595` code
+
+Relation: nearby source page; matched terms `const`, `list`, `map`, `mapwith`
+
+Citation: (raw/javascriptallonge.pdf p.193-194)
+
+```javascript
+const map = (list, fn) => list.map(fn);
+```
+
+### From [[javascriptallonge-mapwith]]: `technical-atom-5cf0b0ae67489479` code
+
+Relation: nearby source page; matched terms `const`, `list`, `map`, `mapwith`
+
+Citation: (raw/javascriptallonge.pdf p.193-194)
+
+```javascript
+const squaresOf = (list) => list.map(x => x * x); squaresOf([1, 2, 3, 4, 5]) //=> [1, 4, 9, 16, 25]
+```
+
+### From [[javascriptallonge-self-currying-flip]]: `technical-atom-f30515c7413d55b0` formula
+
+Relation: nearby source page; matched terms `currying`, `flip`, `list`, `map`, `mapwith`, `our`
+
+Citation: (raw/javascriptallonge.pdf p.196)
+
+Nowif we write mapWith = flip(map) , we can call mapWith(fn, list) or mapWith(fn)(list) , our choice.
+
+### From [[javascriptallonge-say-please]]: `technical-atom-0174c35337cda35a` code
+
+Relation: nearby source page; matched terms `const`, `list`, `mapwith`
+
+Citation: (raw/javascriptallonge.pdf p.186-188)
+
+```javascript
+const reverse = (list, delayed = EMPTYLIST) => list( () => delayed, (aPair) => reverse(aPair(pairRest), node(aPair(pairFirst))(delayed)) ); print(reverse(l123)); //=> 3 2 1 const mapWith = (fn, list, delayed = EMPTYLIST) => list( () => reverse(delayed), (aPair) => mapWith(fn, aPair(pairRest), node(fn(aPair(pairFirst)))(delayed)) ); print(mapWith(x => x * x, reverse(l123))) //=> 941
+```

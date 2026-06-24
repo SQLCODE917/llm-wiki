@@ -9,7 +9,7 @@ def test_page_match_text_strips_generated_technical_sections() -> None:
     page = (
         "---\npage_id: book-functions\npage_kind: source\nsources: raw/book.pdf\n---\n\n"
         "## Source record\n\nFunctions are values.\n\n"
-        "## Technical details\n\n"
+        "## Related technical details\n\n"
         + "const noisy = true;\n" * 10_000
     )
 

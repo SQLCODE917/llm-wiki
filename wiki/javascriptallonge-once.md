@@ -47,3 +47,43 @@ It ensures that a function can only be called, well, once .
 Citation: (raw/javascriptallonge.pdf p.88)
 
 It seems some people will only try blind dating once.
+
+## Related technical details
+
+### From [[javascriptallonge-tap]]: `technical-atom-c8fa273077e85aaf` code
+
+Relation: nearby source page; matched terms `can`, `function`, `return`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.84-85)
+
+```javascript
+const tap = (value, fn) => { const curried = (fn) => ( typeof (fn) === 'function' && fn(value), value ); return fn === undefined ? curried : curried(fn); } Now we can write: tap('espresso')((it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso' Or: tap('espresso', (it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso'
+```
+
+### From [[javascriptallonge-a-history-lesson]]: `technical-atom-d14e7ecdd4fc5321` code
+
+Relation: nearby source page; matched terms `call`, `function`, `return`, `there`
+
+Citation: (raw/javascriptallonge.pdf p.90-91)
+
+```javascript
+var __slice = Array.prototype.slice; function rightVariadic (fn) { if (fn.length < 1) return fn; return function () { var ordinaryArgs = (1 <= arguments.length ? __slice.call(arguments, 0, fn.length - 1) : []), restOfTheArgsList = __slice.call(arguments, fn.length - 1), args = (fn.length <= arguments.length ? ordinaryArgs.concat([restOfTheArgsList]) : []); return fn.apply( this , args); } }; var firstAndButFirst = rightVariadic( function test (first, butFirst) { return [first, butFirst] }); firstAndButFirst('why', 'hello', 'there', 'little', 'droid') //=> ["why",["hello","there","little","droid"]]
+```
+
+### From [[javascriptallonge-left-variadic-functions]]: `technical-atom-9bf75248160dbe49` worked-example
+
+Relation: nearby source page; matched terms `function`, `record`, `some`
+
+Citation: (raw/javascriptallonge.pdf p.89-90)
+
+For example, we might want to have a function that builds some kind of team record.
+
+### From [[javascriptallonge-unary]]: `technical-atom-6630b376b8107ac2` code
+
+Relation: nearby source page; matched terms `call`, `function`, `return`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+```javascript
+const unary = (fn) => fn.length === 1 ? fn : function (something) { return fn.call( this , something) }
+```

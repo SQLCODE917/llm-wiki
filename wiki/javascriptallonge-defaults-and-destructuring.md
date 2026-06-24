@@ -34,3 +34,13 @@ Citation: (raw/javascriptallonge.pdf p.124-125)
 ```
 two" const [first, second = "two"] = ["primus", "secundus"]; ` ${ first } .
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-default-arguments]]: `technical-atom-b90d9e1958a2a2f0` requirement
+
+Relation: nearby source page; matched terms `arguments`, `default`, `parameter`
+
+Citation: (raw/javascriptallonge.pdf p.123-124)
+
+But it is hideous to have to always add a 1 parameter, we'd be demanding that everyone using the factorial function know that we are using a tail-recursive implementation.

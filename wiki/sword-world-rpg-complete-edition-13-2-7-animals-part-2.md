@@ -68,3 +68,37 @@ Rarity=8 Agility=16 Movement Speed=15 Number=Several to around ten
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
 
 Monster Level=3 Rarity=8 Agility=10 Movement Speed=8
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-bde405ac737b9ee1` formula
+
+Relation: nearby source page; matched terms `life`, `resistance`, `score`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Strike Points=Special/5 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14 /11(4) Mental Points/Resistance=11/10(3) Special Abilities=Surprise attack (Sense target score=12)
+
+### From [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]]: `technical-atom-5fe0df80e1e9d38f` formula
+
+Relation: nearby source page; matched terms `agility`, `animals`, `several`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+
+Monster Level=1 Rarity=5 Agility=16 Movement Speed=24 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs: 8 (1) Strike Points=5
+
+### From [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]]: `technical-atom-55e6886a9596b3d1` formula
+
+Relation: nearby source page; matched terms `animals`, `life`, `resistance`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+
+Evasion Points=9 (2) Defense Points=4 Life Points/Resistance=14/9 (2) Mental Points/Resistance=6/8 (1) Special Abilities=None in particular Habitat=Woods, meadows, near human villages
+
+### From [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]]: `technical-atom-5cfc8dbf7ccb0440` formula
+
+Relation: nearby source page; matched terms `agility`, `animals`, `several`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+
+Rarity=6 Agility=18 Movement Speed=20 Number=Several to around ten

@@ -82,3 +82,37 @@ const callLeft = (fn, ...args) => (...remainingArgs) => fn(...args, ...remaining
 Citation: (raw/javascriptallonge.pdf p.72-73)
 
 But what if we only supply some of the arguments?
+
+## Related technical details
+
+### From [[javascriptallonge-unary]]: `technical-atom-9a3ea54bbd8bfbe0` exception
+
+Relation: nearby source page; matched terms `argument`, `arguments`, `one`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+If you pass in a function taking only one argument, it simply ignores the additional arguments.
+
+### From [[javascriptallonge-unary]]: `technical-atom-898e42c84ba44bb3` procedure
+
+Relation: nearby source page; matched terms `argument`, `arguments`, `one`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+'Unary' is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument.
+
+### From [[javascriptallonge-unary]]: `technical-atom-a2d71108f315692a` worked-example
+
+Relation: nearby source page; matched terms `argument`, `one`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+In that example, it looks exactly like the mapping function you'll find in most languages: You pass it a function, and it calls the function with one argument, the element of the array.
+
+### From [[javascriptallonge-combinators]]: `technical-atom-0c6ee2e3b1a2e9c0` exception
+
+Relation: nearby source page; matched terms `arguments`, `functions`, `take`, `using`, `will`
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+In this book, we will be using a looser definition of 'combinator:' Higher-order pure functions that take only functions as arguments and return a function.

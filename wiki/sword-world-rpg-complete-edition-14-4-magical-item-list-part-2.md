@@ -66,3 +66,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
 
 |Small shield +3|240000|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-a6a9260c767ef4ca` formula
+
+Relation: nearby source page; matched terms `item`, `list`, `magical`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Required Strength/Base Trade Price=See description
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]: `technical-atom-c39ce7981a476c80` formula
+
+Relation: nearby source page; matched terms `item`, `list`, `magical`, `shield`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
+
+Base Trade Price=1500 (Small shield)/5000 (Large shield) Powers=Generates a force field equivalent to a shield
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-82643e948cebe246` formula
+
+Relation: nearby source page; matched terms `damage`, `item`, `list`, `magical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Powers=+1 to attack power and bonus damage
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-447055856f4970f2` formula
+
+Relation: nearby source page; matched terms `item`, `list`, `magical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Form= An A4-sized, 352-page hardcover book

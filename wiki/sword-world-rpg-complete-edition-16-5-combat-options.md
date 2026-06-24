@@ -67,3 +67,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.264-268)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.264-268)
 
 |Shortbow|100 + Required Strength x 5|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]: `technical-atom-d218b1dc5fc194e8` exception
+
+Relation: nearby source page; matched terms `character`, `required`, `strength`, `throwing`, `weapons`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
+
+If you’re fighting with the thief skill, the required strength for _both_ weapons is only _half_ the character's strength.
+
+### From [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]: `technical-atom-cac4a750bc96b2c5` exception
+
+Relation: nearby source page; matched terms `required`, `strength`, `throwing`, `weapons`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
+
+Also, the required strength for _one_ of the weapons is limited to _half your own strength (rounded up)_ .
+
+### From [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]: `technical-atom-59223c68d81ce8d9` exception
+
+Relation: nearby source page; matched terms `basic`, `cannot`, `characters`, `each`, `rules`, `throwing`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
+
+In the basic rules, characters cannot hold separate weapons in each hand.
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-a6a9260c767ef4ca` formula
+
+Relation: nearby source page; matched terms `required`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Required Strength/Base Trade Price=See description

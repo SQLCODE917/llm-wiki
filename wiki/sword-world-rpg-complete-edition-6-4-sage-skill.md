@@ -64,3 +64,29 @@ There are limitations to learning languages through the sage skill.
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.118-119)
 
 Characters who cannot read common must _first_ learn how to read common _before_ learning other languages.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-8908b4268e62dbbd` requirement
+
+Relation: nearby source page; matched terms `acquire`, `but`, `character`, `requirement`, `same`, `time`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
+
+The rules do not require one character to acquire both of these skills, but if they are acquired at the same time, it gives them a significant advantage.
+
+### From [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]: `technical-atom-0e81b362e45ae910` procedure
+
+Relation: nearby source page; matched terms `have`, `sorcerers`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+
+These include three types: things that have existed long before humans, such as dragons, things that live like humans, and artificial creatures created through the experiments of ancient sorcerers that have turned wild.
+
+### From [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]: `technical-atom-5980ff4f543a580b` requirement
+
+Relation: nearby source page; matched terms `all`, `but`, `requirement`, `there`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-240)
+
+There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score.

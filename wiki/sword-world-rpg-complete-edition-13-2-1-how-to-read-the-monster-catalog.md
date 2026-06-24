@@ -66,3 +66,37 @@ It does not think, nor does it even have instincts.
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.172-175)
 
 If they are domesticated, they will not attack humans because they consider humans to be their masters.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-bde405ac737b9ee1` formula
+
+Relation: nearby source page; matched terms `abilities`, `attack`, `defense`, `evasion`, `life`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Strike Points=Special/5 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14 /11(4) Mental Points/Resistance=11/10(3) Special Abilities=Surprise attack (Sense target score=12)
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-bfd739fb691aad00` formula
+
+Relation: nearby source page; matched terms `abilities`, `defense`, `evasion`, `life`, `mental`, `points`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Evasion Points=12 (5) Defense Points=0 Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3) Special Abilities=Releases energy and disintegrates
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-33cf930adec1e76c` formula
+
+Relation: nearby source page; matched terms `agility`, `attack`, `frequency`, `intellect`, `level`, `monster`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Monster Level=3 Rarity=14 Agility=15 Movement Speed=15 Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Horns: 9 (2)
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-601c646b82f5b20b` formula
+
+Relation: nearby source page; matched terms `agility`, `attack`, `frequency`, `intellect`, `movement`, `none`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Agility=18   Movement Speed=20 (air) Number=Solo to several Frequency=Rare Intellect=Almost none Reaction=Neutral to violent Attack Points=Disintegrate: Always hits Strike Points=Strike power 10,

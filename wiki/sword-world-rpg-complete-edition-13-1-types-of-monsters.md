@@ -66,3 +66,13 @@ They are also not affected by illness or poison, and do not sleep in the normal 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
 
 Many of them are unable to reproduce on their own and can only produce offspring with the help of humans.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]: `technical-atom-5980ff4f543a580b` requirement
+
+Relation: nearby source page; matched terms `attacks`, `mental`, `set`, `such`, `there`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-240)
+
+There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score.

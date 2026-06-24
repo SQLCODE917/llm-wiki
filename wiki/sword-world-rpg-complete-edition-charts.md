@@ -66,3 +66,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
 
 |Pickpocket|Dexterity|Yes|Possible|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-6-2-thief-skill]]: `technical-atom-64307a6c8108617c` worked-example
+
+Relation: nearby source page; matched terms `ability`, `lockpicking`, `skill`, `thief`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+
+For example, the thief skill's _lockpicking_ ability cannot be retried.
+
+### From [[sword-world-rpg-complete-edition-17-2-lost-spells]]: `technical-atom-94b4d01526d90e79` table-row
+
+Relation: nearby source page; matched terms `ability`, `intelligence`, `scores`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.273-276)
+
+|51 – 60|All ability scores reduced to 5/6, except intelligence and mental power remain the same|
+
+### From [[sword-world-rpg-complete-edition-6-4-sage-skill]]: `technical-atom-3be3a52476cf995d` exception
+
+Relation: nearby source page; matched terms `languages`, `sage`, `skill`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.118-119)
+
+There are limitations to learning languages through the sage skill.
+
+### From [[sword-world-rpg-complete-edition-17-2-lost-spells]]: `technical-atom-eabe019e5abf3164` table-row
+
+Relation: nearby source page; matched terms `ability`, `scores`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.273-276)
+
+|3 – 5|All ability scores reduced by 1/6|

@@ -66,3 +66,37 @@ Base Mental Power Cost=5
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
 
 Distance=10 meters Area=A space with a 5 meter radius Duration=18 rounds Effect=Affects undead in various ways Type=-
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]]: `technical-atom-dd955ecb999bb383` formula
+
+Relation: nearby source page; matched terms `basic`, `effect`, `holy`, `list`, `magic`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Base Mental Power Cost=40 Distance=Touch Area=One Soul Duration=Instant Effect=Rescue an undead soul Type=Ritual Expansion=Final score Resist=Negated effect
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]]: `technical-atom-254694fde76de186` formula
+
+Relation: nearby source page; matched terms `basic`, `holy`, `list`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Base Mental Power Cost=50
+
+### From [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]]: `technical-atom-9d2dd6e019e8e4bb` formula
+
+Relation: nearby source page; matched terms `holy`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.96-98)
+
+**(Fenrir/Greater Ice Spirit)** Base Mental Power Cost=36 Distance=30 meters
+
+### From [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]]: `technical-atom-4c122a2befb903ec` formula
+
+Relation: nearby source page; matched terms `holy`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.96-98)
+
+Base Mental Power Cost=45 Distance=500 meters

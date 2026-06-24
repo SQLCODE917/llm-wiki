@@ -68,3 +68,37 @@ Expansion=Duration Resist=None
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.149-153)
 
 ## Base Mental Power Cost=4
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-3950d3815a600f07` exception
+
+Relation: nearby source page; matched terms `believe`, `dragons`, `magic`, `use`, `who`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+This is only possible if you're part of a group of people who believe in dragons (mostly considered savages).
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-face73dee3665350` procedure
+
+Relation: nearby source page; matched terms `like`, `magic`, `priest`, `there`, `use`, `who`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+There are also cases such as a friend who was a priest of Faris who, in order to maintain order, turned in his own brother, who was plotting a rebellion, and after grief about his actions, awoke to the teachings of _The Nameless God of Madness_ (though usually you'd just say _they went mad_ about things like this...)
+
+### From [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]]: `technical-atom-5cacb7280bee2ee3` table-row
+
+Relation: nearby source page; matched terms `dragon`, `roar`, `rules`, `runes`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.159-167)
+
+|Runes<br> High ancient<br> Silent spirit<br> Holy prayer/daemon scream*<br> Dragon roar<br> High giant**<br> High centaurian**<br>Normal languages<br> Common<br> Mārdan<br> Gundar<br> Low ancient<br> Elven<br> Dwarven<br> Impish<br> Centaurian<br> Goblin<br> Giant<br> Harpy<br> Fairy<br> Merman<br> Minotaur<br> Lizardman|Yes<br>No<br>Yes<br>No<br>No<br>No<br>Yes<br>Yes<br>Yes<br>Yes<br>Yes<br>Yes<br>No<br>No<br>No<br>No<br>No<br>No<br>No<br>No<br>No|
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-f55bcc10146b8ede` exception
+
+Relation: nearby source page; matched terms `magic`, `priest`, `use`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.

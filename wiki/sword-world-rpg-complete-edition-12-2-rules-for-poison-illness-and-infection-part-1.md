@@ -68,3 +68,37 @@ Effect=Causes illusions
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.159-167)
 
 |Runes<br> High ancient<br> Silent spirit<br> Holy prayer/daemon scream*<br> Dragon roar<br> High giant**<br> High centaurian**<br>Normal languages<br> Common<br> Mārdan<br> Gundar<br> Low ancient<br> Elven<br> Dwarven<br> Impish<br> Centaurian<br> Goblin<br> Giant<br> Harpy<br> Fairy<br> Merman<br> Minotaur<br> Lizardman|Yes<br>No<br>Yes<br>No<br>No<br>No<br>Yes<br>Yes<br>Yes<br>Yes<br>Yes<br>Yes<br>No<br>No<br>No<br>No<br>No<br>No<br>No<br>No<br>No|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]]: `technical-atom-208e63acf14877e2` formula
+
+Relation: nearby source page; matched terms `appear`, `body`, `illness`, `infection`, `poison`, `rules`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.159-169)
+
+Symptoms=Green spots appear on the body, which eventually rots away from there Rarity=15
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-ec57929c173f5c27` formula
+
+Relation: nearby source page; matched terms `illness`, `magic`, `not`, `poison`, `spirits`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Mental attack immunity Not affected by poison and illness Habitat=Near forests and swamps, or anywhere Languages=None Perception=Magic
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-cc8c0c370bbc08d2` formula
+
+Relation: nearby source page; matched terms `illness`, `not`, `poison`, `spirits`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Mental attack immunity Not affected by poison and illness Habitat=Anywhere
+
+### From [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]]: `technical-atom-3234e45fb6045301` formula
+
+Relation: nearby source page; matched terms `illness`, `infection`, `poison`, `rules`, `symptoms`, `wound`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.159-169)
+
+Symptoms=Cotton-like tissue peels off from the wound

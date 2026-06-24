@@ -24,3 +24,21 @@ This page summarizes the key details about the JavaScript Allongé book by Reg '
 Citation: (raw/javascriptallonge.pdf p.2-3)
 
 Leanpub empowers authors and publishers with the Lean Publishing process.
+
+## Related technical details
+
+### From [[javascriptallonge-about-javascript-allong]]: `technical-atom-f7732bf2ea29844c` exception
+
+Relation: nearby source page; matched terms `about`, `allong`, `javascript`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.7)
+
+JavaScript Allongé teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down.
+
+### From [[javascriptallonge-foreword-to-the-six-edition]]: `technical-atom-a2b6ee77b3913c74` procedure
+
+Relation: nearby source page; matched terms `javascript`, `version`, `was`
+
+Citation: (raw/javascriptallonge.pdf p.13)
+
+That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language.

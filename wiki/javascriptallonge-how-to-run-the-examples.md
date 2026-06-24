@@ -78,3 +78,21 @@ Traceur and Babel are both transpilers , they work by parsing ECMAScript 2015 co
 Citation: (raw/javascriptallonge.pdf p.289-290)
 
 For example, this ECMAScript 2015 code:
+
+## Related technical details
+
+### From [[javascriptallonge-richard-feynman]]: `technical-atom-ef5f2f7fff6b3605` exception
+
+Relation: nearby source page; matched terms `all`, `explains`, `how`, `using`
+
+Citation: (raw/javascriptallonge.pdf p.292)
+
+Richard Feynman's QED 105 wasanother inspiration: A book that explains Quantum Electrodynamics and the 'Sum of the Histories' methodology using the simple expedient of explaining how light reflects off a mirror, and showing how most of the things we think are happening-such as light travelling on a straight line, the angle of reflection equalling the angle of refraction, or that a beam of light only interacts with a small portion of the mirror, or that it reflects off a plane-are all wrong.
+
+### From [[javascriptallonge-a-pull-of-the-lever-prefaces]]: `technical-atom-e8a303faa22d26b5` requirement
+
+Relation: nearby source page; matched terms `method`, `result`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.6)
+
+'The important thing is that neither method of preparation should use so much water as to result in a sickly, pale ghost of Espresso.

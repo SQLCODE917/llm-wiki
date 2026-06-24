@@ -68,3 +68,37 @@ If the target does not have the senses to deceive, this spell will have no effec
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
 
 For example, suppose a fake floor is created above a pit using a _Create Image_ (ancient magic) spell.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-383d28a3555bcd0e` formula
+
+Relation: nearby source page; matched terms `ancient`, `area`, `base`, `cost`, `distance`, `duration`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=3 Distance=10 meters Area=One weapon Duration=18 Rounds Effect=+5 to weapon's strike power Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-7efb0d3c4c9df5ba` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `distance`, `magic`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=3 Distance=10 meters
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-f4b14de1efb431cc` formula
+
+Relation: nearby source page; matched terms `ancient`, `area`, `distance`, `duration`, `effect`, `expansion`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Area=One Duration=18 rounds Effect=+2 to mental power resistance Type=Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-cde0c22bdac46d21` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=3

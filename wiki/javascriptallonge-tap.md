@@ -45,14 +45,14 @@ Citation: (raw/javascriptallonge.pdf p.84-85)
 const tap = (value, fn) => { const curried = (fn) => ( typeof (fn) === 'function' && fn(value), value ); return fn === undefined ? curried : curried(fn); } Now we can write: tap('espresso')((it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso' Or: tap('espresso', (it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso'
 ```
 
-### `technical-atom-29b21e75a59e70f6` requirement
-
-Citation: (raw/javascriptallonge.pdf p.84-85)
-
-It takes a value and returns a function that always returns the value, but if you pass it a function, it executes the function for side-effects.
-
 ### `technical-atom-d826f90f6b4a4330` procedure
 
 Citation: (raw/javascriptallonge.pdf p.84-85)
 
 tap('espresso')((it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso' It's easy to turn off: tap('espresso')(); //=> 'espresso' Libraries like Underscore 49 use a version of tap that is 'uncurried:' _.tap('espresso', (it) => console.log(`Our drink is ' ${ it } '`) ); //=> Our drink is 'espresso' 'espresso'
+
+### `technical-atom-29b21e75a59e70f6` requirement
+
+Citation: (raw/javascriptallonge.pdf p.84-85)
+
+It takes a value and returns a function that always returns the value, but if you pass it a function, it executes the function for side-effects.

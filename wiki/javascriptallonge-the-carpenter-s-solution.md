@@ -81,3 +81,31 @@ const terminates = (game) => tortoiseAndHare(positionsOf(game)) const test = [ [
 Citation: (raw/javascriptallonge.pdf p.264-269)
 
 He then coached subsequent candidates to give polished answers to the company's pet technical questions.
+
+## Related technical details
+
+### From [[javascriptallonge-the-problem]]: `technical-atom-f00105e5cc810ebe` exception
+
+Relation: nearby source page; matched terms `about`, `loop`, `not`, `problem`, `time`
+
+Citation: (raw/javascriptallonge.pdf p.261-264)
+
+Your code should not presume anything about the game-board's size or contents, only that it is given an arrow every time though the while loop.
+
+### From [[javascriptallonge-implementing-methods-with-iteration]]: `technical-atom-c66bcf65c2866661` code
+
+Relation: nearby source page; matched terms `linked`, `lists`
+
+Citation: (raw/javascriptallonge.pdf p.246-253)
+
+```javascript
+const Numbers = Object.assign({ [Symbol.iterator]: () => { let n = 0; return { next: () => ({done: false , value: n++}) } } }, LazyCollection); // Pair, a/k/a linked lists const EMPTY = { isEmpty: () => true
+```
+
+### From [[javascriptallonge-lazy-collection-operations]]: `technical-atom-744115e2e3a310d4` procedure
+
+Relation: nearby source page; matched terms `answer`, `procedure`, `two`
+
+Citation: (raw/javascriptallonge.pdf p.253-256)
+
+Finally, we take the first element of that filtered, squared iterable and now JavaScript actually iterates over the stack's elements, and it only needs to square two of those elements, 29 and 28 , to return the answer.

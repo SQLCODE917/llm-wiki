@@ -66,3 +66,13 @@ Mental Points/Resistance=25/16 (9)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
 
 Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=15/8, valkyrie only)
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]]: `technical-atom-55e6886a9596b3d1` formula
+
+Relation: nearby source page; matched terms `abilities`, `human`, `life`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+
+Evasion Points=9 (2) Defense Points=4 Life Points/Resistance=14/9 (2) Mental Points/Resistance=6/8 (1) Special Abilities=None in particular Habitat=Woods, meadows, near human villages

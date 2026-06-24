@@ -68,3 +68,37 @@ Progression Speed/Progression Intensity/ Healing Score=1 week/5/10 (20) Fatal De
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.159-169)
 
 Infection Power=Weak
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-ec57929c173f5c27` formula
+
+Relation: nearby source page; matched terms `illness`, `magic`, `not`, `poison`, `spirits`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Mental attack immunity Not affected by poison and illness Habitat=Near forests and swamps, or anywhere Languages=None Perception=Magic
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-cc8c0c370bbc08d2` formula
+
+Relation: nearby source page; matched terms `illness`, `not`, `poison`, `spirits`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Mental attack immunity Not affected by poison and illness Habitat=Anywhere
+
+### From [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]]: `technical-atom-a2e6da730104ddf9` exception
+
+Relation: nearby source page; matched terms `does`, `how`, `not`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.172-175)
+
+It does not think, nor does it even have instincts.
+
+### From [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]]: `technical-atom-5cacb7280bee2ee3` table-row
+
+Relation: nearby source page; matched terms `holy`, `illness`, `infection`, `poison`, `rules`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.159-167)
+
+|Runes<br> High ancient<br> Silent spirit<br> Holy prayer/daemon scream*<br> Dragon roar<br> High giant**<br> High centaurian**<br>Normal languages<br> Common<br> Mārdan<br> Gundar<br> Low ancient<br> Elven<br> Dwarven<br> Impish<br> Centaurian<br> Goblin<br> Giant<br> Harpy<br> Fairy<br> Merman<br> Minotaur<br> Lizardman|Yes<br>No<br>Yes<br>No<br>No<br>No<br>Yes<br>Yes<br>Yes<br>Yes<br>Yes<br>Yes<br>No<br>No<br>No<br>No<br>No<br>No<br>No<br>No<br>No|

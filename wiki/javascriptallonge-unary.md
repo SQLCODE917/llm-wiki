@@ -65,14 +65,48 @@ Citation: (raw/javascriptallonge.pdf p.82-83)
 
 'Unary' is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument.
 
+### `technical-atom-9a3ea54bbd8bfbe0` exception
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+If you pass in a function taking only one argument, it simply ignores the additional arguments.
+
 ### `technical-atom-a2d71108f315692a` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.82-83)
 
 In that example, it looks exactly like the mapping function you'll find in most languages: You pass it a function, and it calls the function with one argument, the element of the array.
 
-### `technical-atom-9a3ea54bbd8bfbe0` exception
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.82-83)
+### From [[javascriptallonge-tap]]: `technical-atom-29b21e75a59e70f6` requirement
 
-If you pass in a function taking only one argument, it simply ignores the additional arguments.
+Relation: nearby source page; matched terms `function`, `pass`, `takes`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.84-85)
+
+It takes a value and returns a function that always returns the value, but if you pass it a function, it executes the function for side-effects.
+
+### From [[javascriptallonge-magic-names-and-fat-arrows]]: `technical-atom-32a6dfcc19fe05d0` worked-example
+
+Relation: nearby source page; matched terms `example`, `function`, `number`, `takes`, `worked-example`
+
+Citation: (raw/javascriptallonge.pdf p.75-77)
+
+To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table.
+
+### From [[javascriptallonge-magic-names-and-fat-arrows]]: `technical-atom-d8ec84799d7fc331` requirement
+
+Relation: nearby source page; matched terms `any`, `arguments`, `function`, `have`, `like`, `when`
+
+Citation: (raw/javascriptallonge.pdf p.75-77)
+
+The magic names this and arguments have a different behaviour when you invoke a function that was defined with a fat arrow: Instead of being bound when the function is invoked, the fat arrow function always acquires the bindings for this and arguments from its enclosing scope, just like any other binding.
+
+### From [[javascriptallonge-magic-names-and-fat-arrows]]: `technical-atom-af507181bbc4076e` worked-example
+
+Relation: nearby source page; matched terms `argument`, `arguments`, `example`, `function`, `when`, `worked-example`
+
+Citation: (raw/javascriptallonge.pdf p.75-77)
+
+For example, when this expression's inner function is defined with function , arguments[0] refers to its only argument, "inner" :

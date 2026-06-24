@@ -49,12 +49,6 @@ Citation: (raw/javascriptallonge.pdf p.111-113)
 
 After a bit the water boils, and they turn off the burner and are lead to a second bench.
 
-### `technical-atom-39ae632b99dd8d86` worked-example
-
-Citation: (raw/javascriptallonge.pdf p.111-113)
-
-Let's take another example.
-
 ### `technical-atom-cc18b4c0ba818b9d` procedure
 
 Citation: (raw/javascriptallonge.pdf p.111-113)
@@ -72,3 +66,9 @@ The next terminal case is that if an element isn't an array, we don't flatten it
 Citation: (raw/javascriptallonge.pdf p.111-113)
 
 62 flatten is a very simple unfold, a function that takes a seed value and turns it into an array.
+
+### `technical-atom-39ae632b99dd8d86` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.111-113)
+
+Let's take another example.

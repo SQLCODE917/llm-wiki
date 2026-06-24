@@ -66,3 +66,37 @@ Some of these abilities cannot be used unless you're wearing light equipment.
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
 
 For example, the thief skill's _lockpicking_ ability cannot be retried.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-6-4-sage-skill]]: `technical-atom-d7e6c1bfee4c0cd1` exception
+
+Relation: nearby source page; matched terms `can`, `difficulty`, `score`, `skill`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.118-119)
+
+As an optional rule, you can set a target score or difficulty for text or conversations so that it cannot be understood if you fail a success roll.
+
+### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-d06cf0376dc9ce5b` exception
+
+Relation: nearby source page; matched terms `can`, `fighting`, `not`, `skills`, `style`, `their`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
+
+Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
+
+### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-8908b4268e62dbbd` requirement
+
+Relation: nearby source page; matched terms `but`, `not`, `requirement`, `rules`, `skills`, `these`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
+
+The rules do not require one character to acquire both of these skills, but if they are acquired at the same time, it gives them a significant advantage.
+
+### From [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]: `technical-atom-5980ff4f543a580b` requirement
+
+Relation: nearby source page; matched terms `abilities`, `but`, `can`, `must`, `requirement`, `score`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-240)
+
+There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score.

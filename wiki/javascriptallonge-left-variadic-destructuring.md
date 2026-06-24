@@ -56,3 +56,39 @@ const leftGather = (outputArrayLength) => { return function (inputArray) { retur
 Citation: (raw/javascriptallonge.pdf p.92-93)
 
 But we can write our own left-gathering function utility using the same principles without all the tedium:
+
+## Related technical details
+
+### From [[javascriptallonge-overcoming-limitations]]: `technical-atom-da5e8aae05dc73cc` procedure
+
+Relation: nearby source page; matched terms `arguments`, `function`, `functions`, `left-variadic`, `write`
+
+Citation: (raw/javascriptallonge.pdf p.91-92)
+
+But if we wanted to write left-variadic functions, could we make ourselves a leftVariadic decorator to turn a function with one or more arguments into a left-variadic function?
+
+### From [[javascriptallonge-overcoming-limitations]]: `technical-atom-0cc478268532bafb` procedure
+
+Relation: nearby source page; matched terms `function`, `gathers`, `left`, `our`, `parameters`
+
+Citation: (raw/javascriptallonge.pdf p.91-92)
+
+Our leftVariadic function is a decorator that turns any function into a function that gathers parameters from the left , instead of from the right.
+
+### From [[javascriptallonge-a-history-lesson]]: `technical-atom-d14e7ecdd4fc5321` code
+
+Relation: nearby source page; matched terms `arguments`, `array`, `function`, `length`
+
+Citation: (raw/javascriptallonge.pdf p.90-91)
+
+```javascript
+var __slice = Array.prototype.slice; function rightVariadic (fn) { if (fn.length < 1) return fn; return function () { var ordinaryArgs = (1 <= arguments.length ? __slice.call(arguments, 0, fn.length - 1) : []), restOfTheArgsList = __slice.call(arguments, fn.length - 1), args = (fn.length <= arguments.length ? ordinaryArgs.concat([restOfTheArgsList]) : []); return fn.apply( this , args); } }; var firstAndButFirst = rightVariadic( function test (first, butFirst) { return [first, butFirst] }); firstAndButFirst('why', 'hello', 'there', 'little', 'droid') //=> ["why",["hello","there","little","droid"]]
+```
+
+### From [[javascriptallonge-left-variadic-functions]]: `technical-atom-788752f4a1e82bb0` exception
+
+Relation: nearby source page; matched terms `functions`, `gathering`, `left`, `parameters`, `variadic`
+
+Citation: (raw/javascriptallonge.pdf p.89-90)
+
+ECMAScript 2015 only permits gathering parameters from the end of the parameter list.

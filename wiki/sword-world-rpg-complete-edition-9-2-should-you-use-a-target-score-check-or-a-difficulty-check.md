@@ -68,3 +68,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.135-138)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.135-138)
 
 |11|4|If you’re a pro in that feld, you’ll most likely succeed, but if you only have the skill, there’s a greater risk of failure.<br>Amateurs should stay away from it.|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]]: `technical-atom-9793633510aa2210` formula
+
+Relation: nearby source page; matched terms `final`, `score`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Type=Target score Expansion=Final score, duration Resist=None
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]]: `technical-atom-23caf23489e28cca` formula
+
+Relation: nearby source page; matched terms `final`, `score`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+## Expansion=Final score, distance, targets, damage certainty Resist=Negated effect
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]]: `technical-atom-e9a87244356bc717` formula
+
+Relation: nearby source page; matched terms `final`, `score`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect
+
+### From [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]]: `technical-atom-68d619310f0e65e6` formula
+
+Relation: nearby source page; matched terms `score`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.120-125)
+
+||Base Target Score = 10|||

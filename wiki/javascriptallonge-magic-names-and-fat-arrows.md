@@ -76,3 +76,39 @@ Although it seems quixotic for the two syntaxes to have different semantics, it 
 Citation: (raw/javascriptallonge.pdf p.75-77)
 
 To give a contrived example, this function takes a number and returns an array representing a row in a hypothetical multiplication table.
+
+## Related technical details
+
+### From [[javascriptallonge-unary]]: `technical-atom-a2d71108f315692a` worked-example
+
+Relation: nearby source page; matched terms `function`, `like`, `mapping`, `worked-example`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+In that example, it looks exactly like the mapping function you'll find in most languages: You pass it a function, and it calls the function with one argument, the element of the array.
+
+### From [[javascriptallonge-tap]]: `technical-atom-29b21e75a59e70f6` requirement
+
+Relation: nearby source page; matched terms `always`, `function`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.84-85)
+
+It takes a value and returns a function that always returns the value, but if you pass it a function, it executes the function for side-effects.
+
+### From [[javascriptallonge-partial-application]]: `technical-atom-6fce045843894525` code
+
+Relation: nearby source page; matched terms `function`, `name`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.80-81)
+
+```javascript
+const callFirst = (fn, larg) => function (...rest) { return fn.call( this , larg, ...rest); } const callLast = (fn, rarg) => function (...rest) { return fn.call( this , ...rest, rarg); } const greet = (me, you) => `Hello, ${ you } , my name is ${ me } `; const heliosSaysHello = callFirst(greet, 'Helios'); heliosSaysHello('Eartha') //=> 'Hello, Eartha, my name is Helios' const sayHelloToCeline = callLast(greet, 'Celine'); sayHelloToCeline('Eartha') //=> 'Hello, Celine, my name is Eartha'
+```
+
+### From [[javascriptallonge-unary]]: `technical-atom-898e42c84ba44bb3` procedure
+
+Relation: nearby source page; matched terms `any`, `arguments`, `function`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+'Unary' is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument.

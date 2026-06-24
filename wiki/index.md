@@ -2,7 +2,7 @@
 
 ## Sources
 - [[antikythera-mechanism]] — Summary of the Antikythera Mechanism, an ancient Greek analog computer.
-- [[javascriptallonge]] — Summary of the source JavaScript Allongé, the 'Six' Edition
+- [[javascriptallonge]] — Hub page for JavaScript Allongé, the 'Six' Edition
 - [[javascriptallonge-a-balanced-statement-about-combinators]] — a balanced statement about combinators from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-few-utilities]] — a few utilities from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-history-lesson]] — a history lesson from raw/javascriptallonge.pdf.
@@ -194,7 +194,7 @@
 - [[javascriptallonge-would-be-3-producing]] — Would be 3 , producing: from raw/javascriptallonge.pdf.
 - [[javascriptallonge-yes-consider-this-variation]] — Yes. Consider this variation: from raw/javascriptallonge.pdf.
 - [[javascriptallonge-yielding-iterables]] — yielding iterables from raw/javascriptallonge.pdf.
-- [[sword-world-rpg-complete-edition]] — Source hub for the Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition]] — Summary of the Sword World RPG - Complete Edition source.
 - [[sword-world-rpg-complete-edition-1-3-skills]] — 1.3 Skills from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — 1.4 Character Creation (part 1) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — 1.4 Character Creation (part 2) from raw/Sword World RPG - Complete Edition.pdf.
@@ -272,4 +272,4 @@
 ## Syntheses
 - [[wiki-claim-support]] — Claim support audit report from 2026-06-22.
 - [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-20).
-- [[wiki-ingest-confidence]] — Ingest confidence report from 2026-06-22.
+- [[wiki-ingest-confidence]] — Ingest confidence report from 2026-06-23.

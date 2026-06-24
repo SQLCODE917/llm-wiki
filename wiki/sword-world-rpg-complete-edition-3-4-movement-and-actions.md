@@ -68,3 +68,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
 
 You cannot wield weapons or cast spells while running at full speed.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-e121551de400d86a` procedure
+
+Relation: nearby source page; matched terms `how`, `magic`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+First, adventurers who use magic are given a score called **magic power** .
+
+### From [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]]: `technical-atom-827db5abbfc1a9cd` procedure
+
+Relation: nearby source page; matched terms `magic`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56)
+
+First, adventurers who use magic are given a score called **magic power** .
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-dd38c330b55ed530` exception
+
+Relation: nearby source page; matched terms `how`, `however`, `magic`, `some`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+However, this also has some limitations.
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-18720b952b8cb263` exception
+
+Relation: nearby source page; matched terms `how`, `magic`, `other`, `use`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+The other, is that you _cannot_ have more than _one each_ of holy, dark, and dragon roar magic at the same time.

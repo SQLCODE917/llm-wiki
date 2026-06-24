@@ -74,3 +74,41 @@ For example, the string "2" is not the same thing as the number 2 .
 Citation: (raw/javascriptallonge.pdf p.21)
 
 This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
+
+## Related technical details
+
+### From [[javascriptallonge-what-javascript-allong-is-and-isn-t]]: `technical-atom-a88c178dfe08b992` worked-example
+
+Relation: nearby source page; matched terms `allong`, `different`, `javascript`, `worked-example`
+
+Citation: (raw/javascriptallonge.pdf p.10-11)
+
+For example, business software written in-house has a very different set of requirements than a library written to be publicly distributed as open-source.
+
+### From [[javascriptallonge-what-javascript-allong-is-and-isn-t]]: `technical-atom-a43838c767b6eaed` code
+
+Relation: nearby source page; matched terms `allong`, `function`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.10-11)
+
+```javascript
+const mapWith = (iterable, fn) => ({ [Symbol.iterator]: function * () { for ( let element of iterable) { yield fn(element); } } });
+```
+
+### From [[javascriptallonge-what-javascript-allong-is-and-isn-t]]: `technical-atom-b1be71a4ab47a537` code
+
+Relation: nearby source page; matched terms `allong`, `function`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.10-11)
+
+```javascript
+const filterWith = (fn, iterable) => ({ [Symbol.iterator]: function * () { for ( let element of iterable) { if (!!fn(element)) yield element; } } });
+```
+
+### From [[javascriptallonge-what-javascript-allong-is-and-isn-t]]: `technical-atom-7e00a5ef835a9f73` requirement
+
+Relation: nearby source page; matched terms `allong`, `javascript`, `same`
+
+Citation: (raw/javascriptallonge.pdf p.10-11)
+
+Should code written by a small team of specialists use the same techniques and patterns as code maintained by a continuously changing cast of inexperienced interns?

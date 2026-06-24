@@ -76,3 +76,45 @@ We can turn things inside-out by putting the binding inside our diameter calcula
 Citation: (raw/javascriptallonge.pdf p.50-51)
 
 29 JavaScript programmers regularly use the idea of writing an expression that denotes a function and then immediately applying it to arguments.
+
+## Related technical details
+
+### From [[javascriptallonge-that-constant-coffee-craving]]: `technical-atom-eb6e7ab743e36d4b` code
+
+Relation: nearby source page; matched terms `code`, `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.49-50)
+
+```javascript
+((diameter) => diameter * 3.14159265)(2) //=> 6.2831853 ((PI) => (diameter) => diameter * PI )(3.14159265)(2) //=> 6.2831853
+```
+
+### From [[javascriptallonge-const]]: `technical-atom-0fff76e11a2f0259` code
+
+Relation: nearby source page; matched terms `code`, `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.150-151)
+
+```javascript
+(diameter, PI) => diameter * PI
+```
+
+### From [[javascriptallonge-const]]: `technical-atom-6b1fa159b11f3fdf` code
+
+Relation: nearby source page; matched terms `code`, `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.150-151)
+
+```javascript
+((diameter, PI) => diameter * PI)(2, 3.14159265) //=> 6.2831853
+```
+
+### From [[javascriptallonge-const]]: `technical-atom-1b51371583d7be04` code
+
+Relation: nearby source page; matched terms `code`, `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.150-151)
+
+```javascript
+(diameter) => { const PI = 3.14159265; return diameter * PI }
+```

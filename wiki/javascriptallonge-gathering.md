@@ -44,11 +44,11 @@ Citation: (raw/javascriptallonge.pdf p.104-105)
 Let's try it: const ["zero", ...oneTwoThree] //=> ["zero","one","two","three"]
 ```
 
-### `technical-atom-ea3503c1ec9e928d` worked-example
+### `technical-atom-b0bd01550daaf9e2` formula
 
 Citation: (raw/javascriptallonge.pdf p.104-105)
 
-operation as a 'gather,' following Kyle Simpson's example.
+So if const wrapped = [something]; Then: const [unwrapped] = something; What is the reverse of gathering?
 
 ### `technical-atom-05f0023aaf1356dc` exception
 
@@ -56,14 +56,24 @@ Citation: (raw/javascriptallonge.pdf p.104-105)
 
 notation does not provide a universal patten-matching capability.
 
+### `technical-atom-ea3503c1ec9e928d` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.104-105)
+
+operation as a 'gather,' following Kyle Simpson's example.
+
 ### `technical-atom-45a32a91780c66eb` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.104-105)
 
 For example, we cannot write
 
-### `technical-atom-b0bd01550daaf9e2` formula
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.104-105)
+### From [[javascriptallonge-destructuring-arrays]]: `technical-atom-49fd918f2d639091` worked-example
 
-So if const wrapped = [something]; Then: const [unwrapped] = something; What is the reverse of gathering?
+Relation: nearby source page; matched terms `array`, `destructuring`, `here`, `worked-example`
+
+Citation: (raw/javascriptallonge.pdf p.103-104)
+
+Here's an example of an array literal that uses a name:

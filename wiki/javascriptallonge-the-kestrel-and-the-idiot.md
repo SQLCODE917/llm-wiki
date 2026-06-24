@@ -78,3 +78,39 @@ A constant function is a function that always returns the same thing, no matter 
 Citation: (raw/javascriptallonge.pdf p.179-180)
 
 For example, (x) => 42 is a constant function that always evaluates to 42.
+
+## Related technical details
+
+### From [[javascriptallonge-the-vireo]]: `technical-atom-fc35774e3ffe2b16` procedure
+
+Relation: nearby source page; matched terms `function`, `given`, `makes`
+
+Citation: (raw/javascriptallonge.pdf p.182-183)
+
+Given that our latin data is represented as the function (selector) => selector("primus")("secundus") , our obvious next step is to make a function that makes data.
+
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-cf5b15724c23cd8a` procedure
+
+Relation: nearby source page; matched terms `combinators`, `functions`, `kestrel`
+
+Citation: (raw/javascriptallonge.pdf p.177-179)
+
+To Mock a Mockingbird 76 established the metaphor of songbirds for the combinators, and ever since then logicians have called the K combinator a 'kestrel,' the B combinator a 'bluebird,' and so forth.
+
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-5b37e3daf21d3949` worked-example
+
+Relation: nearby source page; matched terms `function`, `functions`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.177-179)
+
+For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-1facdd66430f4b84` code
+
+Relation: nearby source page; matched terms `can`, `first`, `functions`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+const length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair)); length(l123) //=> 3 const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ? delayed : reverse(rest(aPair), pair(first(aPair), delayed)); const mapWith = (fn, aPair, delayed = EMPTY) => aPair === EMPTY ? reverse(delayed) : mapWith(fn, rest(aPair), pair(fn(first(aPair)), delayed)); const doubled = mapWith((x) => x * 2, l123); first(doubled) //=> 2 first(rest(doubled)) //=> 4 first(rest(rest(doubled))) //=> 6 Can we do the same with the linked lists we build out of functions? Yes: const first = K, l123 = pair(1)(pair(2)(pair(3)(EMPTY)));
+```

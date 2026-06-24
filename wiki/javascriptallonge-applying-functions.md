@@ -37,14 +37,56 @@ Citation: (raw/javascriptallonge.pdf p.78)
 (() => 0)() //=> 0
 ```
 
+### `technical-atom-a16c68b137f59cbe` requirement
+
+Citation: (raw/javascriptallonge.pdf p.31)
+
+- function keyword functions always have blocks as their bodies.
+
 ### `technical-atom-b0a12df78d1155e0` exception
 
 Citation: (raw/javascriptallonge.pdf p.31)
 
 Right now, we only know about one such expression: () => 0 , so let's use it.
 
-### `technical-atom-a16c68b137f59cbe` requirement
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.31)
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-053e216a0ba143de` code
 
-- function keyword functions always have blocks as their bodies.
+Relation: nearby source page; matched terms `expressions`, `functions`, `javascript`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => 1)() //=> 1 (() => "Hello, JavaScript")() //=> "Hello, JavaScript" (() => Infinity )() //=> Infinity
+```
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-b5a28ac67439659d` code
+
+Relation: nearby source page; matched terms `expressions`, `functions`, `javascript`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity
+```
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-1172baccc0a24ff7` code
+
+Relation: nearby source page; matched terms `expressions`, `functions`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => (() => 0)())() //=> 0
+```
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-be7839225be60f3a` code
+
+Relation: nearby source page; matched terms `expressions`, `functions`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => (() => 0 )() )() //=> 0
+```

@@ -36,12 +36,6 @@ Citation: (raw/javascriptallonge.pdf p.60-61)
 evenStevens = (n) => { if (n === 0) { return true ; } else if (n == 1) { return false ; } else { return evenStevens(n - 2); } } //=> ERROR, evenStevens is read-only
 ```
 
-### `technical-atom-5be81a8c86a84134` worked-example
-
-Citation: (raw/javascriptallonge.pdf p.60-61)
-
-For example, we can write:
-
 ### `technical-atom-3a359314c7fff607` formula
 
 Citation: (raw/javascriptallonge.pdf p.60-61)
@@ -59,3 +53,27 @@ JavaScript does not permit us to rebind a name that has been bound with const .
 Citation: (raw/javascriptallonge.pdf p.60-61)
 
 We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
+
+### `technical-atom-5be81a8c86a84134` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+For example, we can write:
+
+## Related technical details
+
+### From [[javascriptallonge-naming-functions]]: `technical-atom-b521eb56bb5cda47` exception
+
+Relation: nearby source page; matched terms `does`, `name`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.62)
+
+This code does not name a function:
+
+### From [[javascriptallonge-function-declaration-caveats-34]]: `technical-atom-f822e3366648ac82` worked-example
+
+Relation: nearby source page; matched terms `although`, `example`, `javascript`, `permit`
+
+Citation: (raw/javascriptallonge.pdf p.66-67)
+
+Although some JavaScript environments permit the following code, this example is technically illegal and definitely a bad idea:

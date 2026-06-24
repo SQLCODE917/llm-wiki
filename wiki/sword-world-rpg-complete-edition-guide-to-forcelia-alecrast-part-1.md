@@ -66,3 +66,37 @@ Then, they made the material world for beings with physical forms to inhabit, an
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-290)
 
 In the beginning, only a single Titan existed in the world.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]]: `technical-atom-b0b86330d29567d4` formula
+
+Relation: nearby source page; matched terms `alecrast`, `forcelia`, `guide`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-293)
+
+## **Central Region (Language = Mārdan/Eremire Gundar/Saine)**
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]]: `technical-atom-eea77fcdaca53f37` formula
+
+Relation: nearby source page; matched terms `alecrast`, `forcelia`, `guide`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-293)
+
+**Northern Central Region (Language = Western/Gundar)**
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]]: `technical-atom-26c8ccf9033a2580` formula
+
+Relation: nearby source page; matched terms `alecrast`, `forcelia`, `guide`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-293)
+
+## **Southern Central Region (Language = Western/Gundar)**
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]]: `technical-atom-197b6ef98d1cc823` formula
+
+Relation: nearby source page; matched terms `alecrast`, `forcelia`, `guide`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-293)
+
+## **(Language = Eastern/Mārdan)**

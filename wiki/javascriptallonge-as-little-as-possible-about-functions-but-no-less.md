@@ -55,3 +55,41 @@ I'd prefer something else, but I must accept that what gets typed back to us on 
 Citation: (raw/javascriptallonge.pdf p.30-31)
 
 But we must understand that whether we see [Function] or () => 0 , internally JavaScript has a full and proper function.
+
+## Related technical details
+
+### From [[javascriptallonge-floating]]: `technical-atom-02b0bf8004b983cd` requirement
+
+Relation: nearby source page; matched terms `but`, `have`, `more`, `numbers`, `requirement`, `than`
+
+Citation: (raw/javascriptallonge.pdf p.25-26)
+
+But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 .
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-053e216a0ba143de` code
+
+Relation: nearby source page; matched terms `evaluate`, `expressions`, `functions`, `javascript`, `return`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => 1)() //=> 1 (() => "Hello, JavaScript")() //=> "Hello, JavaScript" (() => Infinity )() //=> Infinity
+```
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-b5a28ac67439659d` code
+
+Relation: nearby source page; matched terms `evaluate`, `expressions`, `functions`, `javascript`, `return`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity
+```
+
+### From [[javascriptallonge-operations-on-numbers]]: `technical-atom-d0aad52ee8c53e7f` worked-example
+
+Relation: nearby source page; matched terms `even`, `expressions`, `like`, `much`, `numbers`
+
+Citation: (raw/javascriptallonge.pdf p.26-27)
+
+We can create expressions that look very much like mathematical expressions, for example we can write 1 + 1 or 2 * 3 or 42 34 or even 6 / 2 .

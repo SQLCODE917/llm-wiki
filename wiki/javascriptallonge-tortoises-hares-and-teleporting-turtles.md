@@ -48,3 +48,15 @@ const teleportingTurtle = (list) => { let speed = 1, rabbit = list, turtle = rab
 Citation: (raw/javascriptallonge.pdf p.164-166)
 
 I then forgot about it for a while.
+
+## Related technical details
+
+### From [[javascriptallonge-functional-iterators]]: `technical-atom-66284ad4815503e0` code
+
+Relation: nearby source page; matched terms `function`, `one`, `other`, `uses`, `where`
+
+Citation: (raw/javascriptallonge.pdf p.206-209)
+
+```javascript
+The .iterator() method is defined with shorthand equivalent to iterator: function iterator() { ... } . Note that it uses the function keyword, so when we invoke it with stack.iterator() , JavaScript sets this to the value of stack . But what about the function .iterator() returns? It is defined with a fat arrow () => { ... } . What is the value of this within that function? Since JavaScript doesn't bind this within a fat arrow function, we follow the same rules of variable scoping as any other variable name: We check in the environment enclosing the function. Although the .iterator() method has returned, its environment is the one that encloses our () => { ... } function, and that's where this is bound to the value of stack . Therefore, the iterator function returned by the .iterator() method has this bound to the stack object, even though we call it with iter() .
+```

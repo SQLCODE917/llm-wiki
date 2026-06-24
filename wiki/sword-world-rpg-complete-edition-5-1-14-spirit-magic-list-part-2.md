@@ -68,3 +68,37 @@ Distance=10 meters
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
 
 Area=1 plant Duration=Until focus ends Effect=Can control plants as one Type=Focus, target score Expansion=Final score, distance Resist=None
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]]: `technical-atom-5b06f9eced51158e` formula
+
+Relation: nearby source page; matched terms `control`, `counters`, `list`, `magic`, `score`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Counters (Overpowers): _Control Spirit_ Countered (Overpowered) By: _Control Spirit_ Expansion=Final score, distance Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]]: `technical-atom-5028b0433bfd439c` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `plants`, `score`, `spirit`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Duration=1 day Effect=Create a shelter made of plants Type=Target score Expansion=Final score, duration, area Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]]: `technical-atom-6a6cd43845858a28` formula
+
+Relation: nearby source page; matched terms `control`, `list`, `magic`, `score`, `spirit`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Effect=Summon different types of spirits and take complete control of them Type=Target score
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-13ba0a4cbfaa9a82` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `mind`, `restore`, `score`, `target`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Distance=Touch Area=One Duration=Instant Effect=Restore the target's peace of mind Type=Mind Expansion=Final score Resist=Negated effect

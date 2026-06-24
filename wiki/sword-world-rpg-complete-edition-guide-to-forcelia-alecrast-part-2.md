@@ -66,3 +66,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-293)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-293)
 
 **(Languages = ?)**
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]: `technical-atom-3537b6c143912a31` formula
+
+Relation: nearby source page; matched terms `alecrast`, `continent`, `forcelia`, `guide`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-290)
+
+**Far East Region (Language = Eastern/ Mārdan)** At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth.
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]: `technical-atom-4ddf41312c38ac2b` formula
+
+Relation: nearby source page; matched terms `alecrast`, `forcelia`, `guide`, `kingdom`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-290)
+
+## **The Age of Magic = The Kingdom of Kastuul**
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]: `technical-atom-dd5c0d2ae7abed33` procedure
+
+Relation: nearby source page; matched terms `alecrast`, `first`, `forcelia`, `guide`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-290)
+
+First, the gods divided the world into three parts.
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]: `technical-atom-f4911d27450b0963` procedure
+
+Relation: nearby source page; matched terms `alecrast`, `forcelia`, `guide`, `two`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-290)
+
+Then, they made the material world for beings with physical forms to inhabit, and finally, they created an intermediate world called the fairy world to connect these two distinct realms.

@@ -82,3 +82,41 @@ Citation: (raw/javascriptallonge.pdf p.57-60)
 ```javascript
 })(2) //=> 6.2831853
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-rebinding]]: `technical-atom-7c21d7d7a5e7d689` exception
+
+Relation: nearby source page; matched terms `bound`, `can`, `const`, `scope`, `shadow`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
+
+### From [[javascriptallonge-rebinding]]: `technical-atom-3ee28a0dd987831d` exception
+
+Relation: nearby source page; matched terms `bound`, `const`, `javascript`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+JavaScript does not permit us to rebind a name that has been bound with const .
+
+### From [[javascriptallonge-const-and-lexical-scope]]: `technical-atom-bd2e48d2cd4ff0f2` code
+
+Relation: nearby source page; matched terms `const`, `lexical`, `scope`
+
+Citation: (raw/javascriptallonge.pdf p.55-57)
+
+```javascript
+((diameter_fn) => // ... )( ((PI) => (diameter) => diameter * PI )(3.14159265) )
+```
+
+### From [[javascriptallonge-const-and-lexical-scope]]: `technical-atom-6d6230b65912f463` code
+
+Relation: nearby source page; matched terms `const`, `lexical`, `scope`
+
+Citation: (raw/javascriptallonge.pdf p.55-57)
+
+```javascript
+((diameter_fn) => diameter_fn(2) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) //=> 6.2831853
+```

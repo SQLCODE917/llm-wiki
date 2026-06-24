@@ -21,14 +21,32 @@ Chapter on basic numbers in JavaScriptAllonge, covering literals, representation
 
 ## Technical details
 
+### `technical-atom-2cf4c49c142c3894` exception
+
+Citation: (raw/javascriptallonge.pdf p.24-25)
+
+Like most programming languages, JavaScript does not allow us to use commas to separate groups of digits.
+
 ### `technical-atom-d45aace5472aaf85` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.24-25)
 
 For example, the largest integer JavaScript can safely 14 handle is 9007199254740991 , or 2 '53' - 1 .
 
-### `technical-atom-2cf4c49c142c3894` exception
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.24-25)
+### From [[javascriptallonge-a-quick-summary-of-functions-and-bodies]]: `technical-atom-5e2b194ce75f5bf0` exception
 
-Like most programming languages, JavaScript does not allow us to use commas to separate groups of digits.
+Relation: nearby source page; matched terms `expression`, `how`, `perfectly`, `programming`
+
+Citation: (raw/javascriptallonge.pdf p.40)
+
+How arguments are used in a body's expression is probably perfectly obvious to you from the examples, especially if you've used any programming language (except for the dialect of BASIC-which I recall from my secondary school-that didn't allow parameters when you called a procedure).
+
+### From [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]]: `technical-atom-af17d347e3c83d79` exception
+
+Relation: nearby source page; matched terms `understanding`, `what`, `will`
+
+Citation: (raw/javascriptallonge.pdf p.45)
+
+We can't say what it will do with argument (2) without understanding the magic for evaluating the free variable x .

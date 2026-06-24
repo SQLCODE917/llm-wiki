@@ -65,3 +65,21 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.43-50)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.43-50)
 
 ||7|2|2|2|2|2|2|3|3|3|3|3|3|4|4|4|4|4|5|5|5|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]: `technical-atom-d413339cac5141a8` formula
+
+Relation: nearby source page; matched terms `attack`, `bonus`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+
+**attack power** = fighter (thief/ranger) skill level + dexterity bonus
+
+### From [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]: `technical-atom-82520b9fd78843e7` formula
+
+Relation: nearby source page; matched terms `bonus`, `damage`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+
+**bonus damage** = fighter (thief/ranger) skill level + strength bonus

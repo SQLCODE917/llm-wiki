@@ -54,3 +54,37 @@ But if we wanted to write left-variadic functions, could we make ourselves a lef
 Citation: (raw/javascriptallonge.pdf p.91-92)
 
 Our leftVariadic function is a decorator that turns any function into a function that gathers parameters from the left , instead of from the right.
+
+## Related technical details
+
+### From [[javascriptallonge-left-variadic-functions]]: `technical-atom-788752f4a1e82bb0` exception
+
+Relation: nearby source page; matched terms `functions`, `gathering`, `left`, `parameters`
+
+Citation: (raw/javascriptallonge.pdf p.89-90)
+
+ECMAScript 2015 only permits gathering parameters from the end of the parameter list.
+
+### From [[javascriptallonge-truthiness-and-the-ternary-operator]]: `technical-atom-ce4e1fdf33c4d740` procedure
+
+Relation: nearby source page; matched terms `more`, `one`, `procedure`
+
+Citation: (raw/javascriptallonge.pdf p.95-96)
+
+We'll look at them in a moment, but first, we'll look at one more operator.
+
+### From [[javascriptallonge-left-variadic-destructuring]]: `technical-atom-0d10744b5e6190a9` exception
+
+Relation: nearby source page; matched terms `all`, `function`, `left`, `our`, `using`
+
+Citation: (raw/javascriptallonge.pdf p.92-93)
+
+But we can write our own left-gathering function utility using the same principles without all the tedium:
+
+### From [[javascriptallonge-left-variadic-functions]]: `technical-atom-9bf75248160dbe49` worked-example
+
+Relation: nearby source page; matched terms `function`, `functions`, `have`, `left`, `record`
+
+Citation: (raw/javascriptallonge.pdf p.89-90)
+
+For example, we might want to have a function that builds some kind of team record.

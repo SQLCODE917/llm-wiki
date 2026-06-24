@@ -26,11 +26,13 @@ Citation: (raw/javascriptallonge.pdf p.261-264)
 const Game = (size = 8) => { // initialize the board const board = []; for ( let i = 0; i < size; ++i) { board[i] = []; for ( let j = 0; j < size; ++j) { board[i][j] = '￿￿￿￿'[Math.floor(Math.random() * 4)]; } } // initialize the position let initialPosition = [ 2 + Math.floor(Math.random() * (size - 4)), 2 + Math.floor(Math.random() * (size - 4)) ]; // ??? let [x, y] = initialPosition; const MOVE = { "￿": ([x, y]) => [x - 1, y], "￿": ([x, y]) => [x + 1, y], "￿": ([x, y]) => [x, y - 1], "￿": ([x, y]) => [x, y + 1] }; while (x >= 0 && y >=0 && x < size && y < size) { const arrow = board[x][y]; // ??? [x, y] = MOVE[arrow]([x, y]); } // ??? };
 ```
 
-### `technical-atom-11b62cbf365786b9` worked-example
+### `technical-atom-e1703c9d18f73547` code
 
 Citation: (raw/javascriptallonge.pdf p.261-264)
 
-Consider a finite checkerboard of unknown size.
+```
+let [x, y] = initialPosition; const MOVE = { "￿": ([x, y]) => [x - 1, y], "￿": ([x, y]) => [x + 1, y], "￿": ([x, y]) => [x, y - 1], "￿": ([x, y]) => [x, y + 1] }; while (x >= 0 && y >=0 && x < size && y < size) { const arrow = board[x][y]; // ???
+```
 
 ### `technical-atom-57b7e0f27976b463` requirement
 
@@ -44,10 +46,50 @@ Citation: (raw/javascriptallonge.pdf p.261-264)
 
 Your code should not presume anything about the game-board's size or contents, only that it is given an arrow every time though the while loop.
 
-### `technical-atom-e1703c9d18f73547` code
+### `technical-atom-11b62cbf365786b9` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.261-264)
 
+Consider a finite checkerboard of unknown size.
+
+## Related technical details
+
+### From [[javascriptallonge-the-carpenter-s-solution]]: `technical-atom-4447f89fa1fdcec5` code
+
+Relation: nearby source page; matched terms `board`, `direction`, `game`, `move`, `size`
+
+Citation: (raw/javascriptallonge.pdf p.264-269)
+
+```javascript
+Math.floor(Math.random() * size), Math.floor(Math.random() * size) ]; return {board, position}; }; const Game = ({board, position}) => { const size = board[0].length; return ({ *[Symbol.iterator] () { let [x, y] = position; while (x >= 0 && y >=0 && x < size && y < size) { const direction = board[y][x]; yield direction; [x, y] = MOVE[direction]([x, y]); } } }); };
 ```
-let [x, y] = initialPosition; const MOVE = { "￿": ([x, y]) => [x - 1, y], "￿": ([x, y]) => [x + 1, y], "￿": ([x, y]) => [x, y - 1], "￿": ([x, y]) => [x, y + 1] }; while (x >= 0 && y >=0 && x < size && y < size) { const arrow = board[x][y]; // ???
+
+### From [[javascriptallonge-the-carpenter-s-solution]]: `technical-atom-38c104b7ffd476a8` code
+
+Relation: nearby source page; matched terms `board`, `game`
+
+Citation: (raw/javascriptallonge.pdf p.264-269)
+
+```javascript
+const terminates = (game) => tortoiseAndHare(positionsOf(game)) const test = [ ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"] ]; terminates(Game({board: test, position: [0, 0]})) //=> false terminates(Game({board: test, position: [3, 0]})) //=> true terminates(Game({board: test, position: [0, 3]})) //=> false terminates(Game({board: test, position: [3, 3]})) //=> false
+```
+
+### From [[javascriptallonge-the-carpenter-s-solution]]: `technical-atom-b82829c9e5e93de3` code
+
+Relation: nearby source page; matched terms `board`, `move`, `size`
+
+Citation: (raw/javascriptallonge.pdf p.264-269)
+
+```javascript
+const MOVE = { "￿": ([x, y]) => [x - 1, y], "￿": ([x, y]) => [x + 1, y], "￿": ([x, y]) => [x, y + 1], "￿": ([x, y]) => [x, y - 1] }; const Board = (size = 8) => { // initialize the board const board = []; for ( let i = 0; i < size; ++i) { board[i] = []; for ( let j = 0; j < size; ++j) { board[i][j] = '￿￿￿￿'[Math.floor(Math.random() * 4)]; } } // initialize the position const position = [
+```
+
+### From [[javascriptallonge-the-carpenter-s-solution]]: `technical-atom-cfc70520e219f389` code
+
+Relation: nearby source page; matched terms `direction`, `game`, `move`
+
+Citation: (raw/javascriptallonge.pdf p.264-269)
+
+```javascript
+const positionsOf = (game) => statefulMapWith( (position, direction) => { const [x, y] = MOVE[direction](position); position = [x, y]; return [position, `x: ${ x } , y: ${ y } `]; }, [0, 0], game);
 ```

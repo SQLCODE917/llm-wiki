@@ -82,3 +82,21 @@ Citation: (raw/javascriptallonge.pdf p.150-151)
 ```javascript
 (d) => { const calc = (diameter) => { const PI = 3.14159265; return diameter * PI }; return "The circumference is " + calc(d) }
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-rebinding]]: `technical-atom-3ee28a0dd987831d` exception
+
+Relation: nearby source page; matched terms `const`, `does`, `javascript`, `not`, `permit`, `rebind`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+JavaScript does not permit us to rebind a name that has been bound with const .
+
+### From [[javascriptallonge-rebinding]]: `technical-atom-7c21d7d7a5e7d689` exception
+
+Relation: nearby source page; matched terms `const`, `rebind`, `scope`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.

@@ -52,3 +52,39 @@ Citation: (raw/javascriptallonge.pdf p.69-70)
 ```javascript
 const nothing = not(something);
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-unary]]: `technical-atom-898e42c84ba44bb3` procedure
+
+Relation: nearby source page; matched terms `argument`, `decorator`, `function`, `modifies`, `one`, `takes`
+
+Citation: (raw/javascriptallonge.pdf p.82-83)
+
+'Unary' is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument.
+
+### From [[javascriptallonge-combinators]]: `technical-atom-0c6ee2e3b1a2e9c0` exception
+
+Relation: nearby source page; matched terms `combinator`, `combinators`, `function`, `functions`, `higher-order`, `pure`
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+In this book, we will be using a looser definition of 'combinator:' Higher-order pure functions that take only functions as arguments and return a function.
+
+### From [[javascriptallonge-combinators]]: `technical-atom-573c28eb9a1b4a43` exception
+
+Relation: nearby source page; matched terms `combinator`, `combinators`, `function`, `higher-order`
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+'A combinator is a higher-order function that uses only function application and earlier defined combinators to define a result from its arguments.'-Wikipedia 35
+
+### From [[javascriptallonge-function-declaration-caveats-34]]: `technical-atom-68210eea018a360c` code
+
+Relation: nearby source page; matched terms `but`, `function`, `not`, `return`
+
+Citation: (raw/javascriptallonge.pdf p.66-67)
+
+```javascript
+function trueDat () { return true } But this is not: ( function trueDat () { return true })
+```

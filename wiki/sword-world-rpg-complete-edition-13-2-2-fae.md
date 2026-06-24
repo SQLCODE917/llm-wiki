@@ -66,3 +66,37 @@ Monster Level=4
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.176-180)
 
 Languages=Merman Perception=Five senses (illumination)
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-5-titans]]: `technical-atom-f10b88af2abbad58` formula
+
+Relation: nearby source page; matched terms `level`, `magic`, `only`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.185-187)
+
+Special Abilities=6th level spirit magic (Magic Intensity/Magic Power=15/8, valkyrie only)
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-face73dee3665350` procedure
+
+Relation: nearby source page; matched terms `about`, `magic`, `there`, `they`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+There are also cases such as a friend who was a priest of Faris who, in order to maintain order, turned in his own brother, who was plotting a rebellion, and after grief about his actions, awoke to the teachings of _The Nameless God of Madness_ (though usually you'd just say _they went mad_ about things like this...)
+
+### From [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]]: `technical-atom-40bf03a8b440e4a1` exception
+
+Relation: nearby source page; matched terms `have`, `monsters`, `only`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.172-175)
+
+Monsters that act in groups are usually encountered in large numbers, while monsters that have a strong sense of territory and really only exist alone in a certain area are unlikely to be encountered in numbers greater than one.
+
+### From [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]]: `technical-atom-f6d8c1ef4a5b200c` worked-example
+
+Relation: nearby source page; matched terms `humans`, `their`, `they`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.172-175)
+
+If they are domesticated, they will not attack humans because they consider humans to be their masters.

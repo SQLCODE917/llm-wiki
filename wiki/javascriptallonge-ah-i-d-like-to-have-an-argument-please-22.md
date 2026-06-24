@@ -61,6 +61,14 @@ Citation: (raw/javascriptallonge.pdf p.39-40)
 ((room, board) => room + board)(800, 150) //=> 950
 ```
 
+### `technical-atom-e6dd19d4ac7ef05f` code
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+```
+Remember that to apply a function with no arguments, we wrote (() => {})() .
+```
+
 ### `technical-atom-bc6fdea9ceb74d28` exception
 
 Citation: (raw/javascriptallonge.pdf p.39-40)
@@ -73,10 +81,38 @@ Citation: (raw/javascriptallonge.pdf p.39-40)
 
 We haven't even said what an argument is , only that our functions don't have any.
 
-### `technical-atom-e6dd19d4ac7ef05f` code
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.39-40)
+### From [[javascriptallonge-functions-that-evaluate-to-functions]]: `technical-atom-e3624af5aae576df` procedure
 
-```
-Remember that to apply a function with no arguments, we wrote (() => {})() .
+Relation: nearby source page; matched terms `argument`, `functions`, `have`, `how`, `like`, `make`
+
+Citation: (raw/javascriptallonge.pdf p.38)
+
+So… In the next chapter, 'I'd Like to Have an Argument, Please,' we'll see how to make functions practical.
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-e8199c3947c572cb` requirement
+
+Relation: nearby source page; matched terms `apply`, `argument`, `arguments`, `function`, `our`, `what`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+When we combine our knowledge of value types, reference types, arguments, and closures, we'll understand why this function always evaluates to true no matter what argument 26 you apply it to:
+
+### From [[javascriptallonge-variables-and-bindings]]: `technical-atom-2a1d586167017e1b` requirement
+
+Relation: nearby source page; matched terms `how`, `know`, `let`, `our`, `them`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.41-42)
+
+In order to talk about how this works, we should agree on a few terms (you may already know them, but let's check-in together and 'synchronize our dictionaries').
+
+### From [[javascriptallonge-call-by-value]]: `technical-atom-fbf27e4e62b010d5` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.40-41)
+
+```javascript
+((diameter) => diameter * 3.14159265)(1 + 1) //=> 6.2831853
 ```

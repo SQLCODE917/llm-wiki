@@ -66,3 +66,37 @@ Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Fangs:8 (1)/C
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
 
 ## Monster Level=1
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]]: `technical-atom-c6ba2503e8f65db1` formula
+
+Relation: nearby source page; matched terms `animals`, `attack`, `moderate`, `monster`, `movement`, `points`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+
+Monster Level=6 Rarity=10 Agility=10 Movement Speed=10/16 (water) Number=One Frequency=Moderate Intellect=Animal Reaction=Neutral Attack Points=Ram:14 (7) Strike Points=15
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]: `technical-atom-bde405ac737b9ee1` formula
+
+Relation: nearby source page; matched terms `abilities`, `attack`, `points`, `special`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Strike Points=Special/5 Evasion Points=10 (3) Defense Points=5 Life Points/Resistance=14 /11(4) Mental Points/Resistance=11/10(3) Special Abilities=Surprise attack (Sense target score=12)
+
+### From [[sword-world-rpg-complete-edition-13-2-8-plants]]: `technical-atom-ab35c3c032631a9a` formula
+
+Relation: nearby source page; matched terms `abilities`, `attack`, `points`, `special`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.212-213)
+
+Attack Points=Tentacles:9 (2) Strike Points=5 Evasion Points=8 (1) Defense Points=6 Life Points/Resistance=25/12 (5) Mental Points/Resistance=-/10 (3) Special Abilities=Strangling Mental attack immunity Weak to fire
+
+### From [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]]: `technical-atom-671f8c4f162c6539` formula
+
+Relation: nearby source page; matched terms `animals`, `attack`, `monster`, `movement`, `points`, `rarity`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.199-211)
+
+Monster Level=4 Rarity=8 Agility=9 Movement Speed=12 Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle: 12 (5) Strike Points=10

@@ -26,3 +26,29 @@ JavaScript Allongé is a first and foremost, a book about programming with funct
 Citation: (raw/javascriptallonge.pdf p.7)
 
 JavaScript Allongé teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down.
+
+## Related technical details
+
+### From [[javascriptallonge-michael-fogus]]: `technical-atom-2733f8b79026ed62` worked-example
+
+Relation: nearby source page; matched terms `allong`, `javascript`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.14)
+
+In the case of JavaScript Allongé, you'll find the Leanpub model a shining example of effectiveness.
+
+### From [[javascriptallonge-michael-fogus]]: `technical-atom-3ee131e42944b935` procedure
+
+Relation: nearby source page; matched terms `about`, `first`, `there`, `used`
+
+Citation: (raw/javascriptallonge.pdf p.14)
+
+However, I'm very conservative about books - let's just say that if there was an aftershave scented to the essence of 'Used Book Store' then I would be first in line to buy.
+
+### From [[javascriptallonge-foreword-to-the-six-edition]]: `technical-atom-ebf78b843172ff94` exception
+
+Relation: nearby source page; matched terms `being`, `javascript`, `without`
+
+Citation: (raw/javascriptallonge.pdf p.13)
+
+- A larger upgrade would substantially improve JavaScript, but without being as radical as ECMAScript 4.

@@ -66,3 +66,37 @@ Distance=10 meters
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-83)
 
 Area=A plane with a 25 meter radius Duration=18 rounds
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]]: `technical-atom-5d9dde495b39325e` formula
+
+Relation: nearby source page; matched terms `ancient`, `can`, `list`, `magic`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Effect=You can increase the target's dexterity, agility, or strength by 6
+
+### From [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]]: `technical-atom-b74462b44b55962f` worked-example
+
+Relation: nearby source page; matched terms `ancient`, `magic`, `spell`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+
+For example, suppose a fake floor is created above a pit using a _Create Image_ (ancient magic) spell.
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]]: `technical-atom-16ca076826fcbae2` formula
+
+Relation: nearby source page; matched terms `ancient`, `list`, `magic`, `magical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Effect=Hides magical power applied to an object
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]]: `technical-atom-75f52b00d200b8fd` formula
+
+Relation: nearby source page; matched terms `ancient`, `list`, `magic`, `non-removable`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Type=Target score, non-removable, lost Countered (Overpowered) By: _Analyze Enchantment_

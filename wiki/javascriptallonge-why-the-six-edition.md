@@ -78,3 +78,13 @@ For example, JavaScript did not include block-structured variables.
 Citation: (raw/javascriptallonge.pdf p.7-9)
 
 For example, block-structured languages allow us to write:
+
+## Related technical details
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-ce645dd09a6b9040` worked-example
+
+Relation: nearby source page; matched terms `identity`, `javascript`, `number`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .

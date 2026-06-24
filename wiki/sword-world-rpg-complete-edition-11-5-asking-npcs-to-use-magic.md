@@ -66,3 +66,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
 
 |1st level|All but the most remote village|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]]: `technical-atom-820359ae61892a88` formula
+
+Relation: nearby source page; matched terms `base`, `cost`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.149-153)
+
+Base Mental Power Cost=3
+
+### From [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]]: `technical-atom-6071bdea317083bb` formula
+
+Relation: nearby source page; matched terms `base`, `cost`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.149-153)
+
+Base Mental Power Cost=3 Distance=Caster
+
+### From [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]]: `technical-atom-98761e61c821f3ff` formula
+
+Relation: nearby source page; matched terms `base`, `cost`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.149-153)
+
+## Base Mental Power Cost=4
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]]: `technical-atom-6fa41a31d9f80606` formula
+
+Relation: nearby source page; matched terms `base`, `cost`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+Base Mental Power Cost=20 Distance=30 meters

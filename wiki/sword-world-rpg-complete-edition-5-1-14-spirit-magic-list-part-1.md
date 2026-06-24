@@ -68,3 +68,37 @@ Duration=Instant Effect=Knocks the target prone Type=-
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
 
 Expansion=Final score, distance, targets Resist=Negated effect
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]]: `technical-atom-6a6cd43845858a28` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `spirit`, `spirits`, `types`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Effect=Summon different types of spirits and take complete control of them Type=Target score
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]]: `technical-atom-5398c6e6dd7f1d1d` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `mind`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Effect=Puts fear into an opponent Type=Mind Expansion=Final score, duration, distance, targets, effect Resist=Negated effect
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]]: `technical-atom-e40bfc37d779a8ed` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `power`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Base Mental Power Cost=12 Distance=10 meters Area=One Duration=18 rounds
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]]: `technical-atom-b689d5ef4d205b40` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `power`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Base Mental Power Cost=20

@@ -47,6 +47,12 @@ Citation: (raw/javascriptallonge.pdf p.96-97)
 
 Programmers often take advantage of this behaviour to observe that !!(someExpression) will always evaluate to true is someExpression is truthy, and to false if it is not.
 
+### `technical-atom-dbc76303af6bafa8` requirement
+
+Citation: (raw/javascriptallonge.pdf p.96-97)
+
+They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a , and the same goes for && .
+
 ### `technical-atom-78ca85cfb1ead778` exception
 
 Citation: (raw/javascriptallonge.pdf p.96-97)
@@ -59,8 +65,38 @@ Citation: (raw/javascriptallonge.pdf p.96-97)
 
 -If its left-hand expression evaluates to something truthy, || returns the value of its lefthand expression without evaluating its right-hand expression.
 
-### `technical-atom-dbc76303af6bafa8` requirement
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.96-97)
+### From [[javascriptallonge-truthiness-and-the-ternary-operator]]: `technical-atom-bb41af449e0cdc69` exception
 
-They don't operate strictly on logical values, and they don't commute: a || b is not always equal to b || a , and the same goes for && .
+Relation: nearby source page; matched terms `false`, `javascript`, `null`, `other`, `truthiness`, `truthy`
+
+Citation: (raw/javascriptallonge.pdf p.95-96)
+
+Every other value in JavaScript is 'truthy' except the aforementioned false , null , undefined , NaN , 0 , and '' .
+
+### From [[javascriptallonge-truthiness-and-the-ternary-operator]]: `technical-atom-7f475abc0c10c679` worked-example
+
+Relation: nearby source page; matched terms `languages`, `not`, `other`, `truthiness`, `truthy`
+
+Citation: (raw/javascriptallonge.pdf p.95-96)
+
+(Many other languages that have a notion of truthiness consider zero and the empty string to be truthy, not falsy, so beware of blindly transliterating code from one language to another!)
+
+### From [[javascriptallonge-function-parameters-are-eager]]: `technical-atom-ab2c16e0bbf23b9b` code
+
+Relation: nearby source page; matched terms `always`, `function`, `javascript`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.98-99)
+
+```
+Nowourexpression or(n === 0, and(n !== 1, even(n - 2))) is calling functions, and JavaScript always evaluates the expressions for parameters before passing the values to a function to invoke.
+```
+
+### From [[javascriptallonge-and-are-control-flow-operators]]: `technical-atom-3b6397aef7b5b591` requirement
+
+Relation: nearby source page; matched terms `always`, `its`, `not`, `operators`
+
+Citation: (raw/javascriptallonge.pdf p.97-98)
+
+The expression on the left is always evaluated, and its value determines whether the expression on the right is evaluated or not.

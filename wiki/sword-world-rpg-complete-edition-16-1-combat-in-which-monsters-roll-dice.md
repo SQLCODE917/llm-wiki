@@ -68,3 +68,21 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.261-264)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.261-264)
 
 |Maces/1H|+1|+5|12|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]: `technical-atom-ada6725f4988acf9` formula
+
+Relation: nearby source page; matched terms `can`, `see`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
+
+Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world
+
+### From [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]: `technical-atom-83ca853abb8222fb` exception
+
+Relation: nearby source page; matched terms `attack`, `both`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
+
+If you attack with only _one_ hand, there is _no_ penalty, and if you attack with _both_ hands, the penalty is only _-2_ for each.

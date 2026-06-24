@@ -44,3 +44,41 @@ Then our circumference function was applied to 2 .
 Citation: (raw/javascriptallonge.pdf p.40-41)
 
 We'll see below that while JavaScript always calls by value, the notion of a 'value' has additional subtlety.
+
+## Related technical details
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-e8199c3947c572cb` requirement
+
+Relation: nearby source page; matched terms `always`, `call`, `function`, `value`, `what`, `you`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+When we combine our knowledge of value types, reference types, arguments, and closures, we'll understand why this function always evaluates to true no matter what argument 26 you apply it to:
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]]: `technical-atom-d9d74db003dec0ac` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+```javascript
+(diameter) => diameter * 3.14159265
+```
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]]: `technical-atom-f933c060eb803857` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+```javascript
+((diameter) => diameter * 3.14159265)(2) //=> 6.2831853
+```
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-247ce19e93a86869` requirement
+
+Relation: nearby source page; matched terms `call`, `function`, `javascript`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+There is a property that JavaScript strictly maintains: When a value-any value-is passed as an argument to a function, the value bound in the function's environment must be identical to the original.

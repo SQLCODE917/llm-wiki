@@ -24,3 +24,15 @@ Citation: (raw/javascriptallonge.pdf p.196-197)
 ```javascript
 const flipAndCurry = (fn) => (first) => function (second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { return fn.call( this , second, first); } const flip = (fn) => function (first, second) { if (arguments.length === 2) { return fn.call( this , second, first); } else { return function (second) { return fn.call( this , second, first); }; }; };
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-self-currying-flip]]: `technical-atom-8a3beed3e846ae78` code
+
+Relation: nearby source page; matched terms `arguments`, `flip`, `function`
+
+Citation: (raw/javascriptallonge.pdf p.196)
+
+```javascript
+const flip = (fn) => function (first, second) { if (arguments.length === 2) { return fn(second, first); } else { return function (second) { return fn(second, first); }; }; };
+```

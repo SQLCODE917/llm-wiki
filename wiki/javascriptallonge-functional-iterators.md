@@ -82,3 +82,45 @@ Citation: (raw/javascriptallonge.pdf p.206-209)
 ```javascript
 const iteratorSum = (iterator) => { let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } return sum }
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-unfolding-and-laziness]]: `technical-atom-a58aa219307d4812` code
+
+Relation: nearby source page; matched terms `iterator`, `return`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.172-175)
+
+```javascript
+const take = (iterator, numberToTake) => { let count = 0; return () => { if (++count <= numberToTake) { return iterator(); } else { return {done: true }; } }; }; const toArray = (iterator) => { let eachIteration, array = []; while ((eachIteration = iterator(), !eachIteration.done)) { array.push(eachIteration.value); } return array; } toArray(take(FibonacciIterator(), 5)) //=> [1, 1, 2, 3, 5] toArray(take(squares, 5)) //=> [1, 4, 9, 16, 25]
+```
+
+### From [[javascriptallonge-iterating]]: `technical-atom-16b403e6c3a4e278` code
+
+Relation: nearby source page; matched terms `function`, `iterator`, `return`, `separate`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.169-172)
+
+```javascript
+const arraySum = (array) => { let iter, sum = 0, index = 0; while ( (eachIteration = { done: index === array.length, value: index < array.length ? array[index] : undefined }, ++index, !eachIteration.done) ) { sum += eachIteration.value; } return sum; } arraySum([1, 4, 9, 16, 25]) //=> 55 With this code, we make a POJO that has done and value keys. All the summing code needs to know is to add eachIteration.value . Now we can extract the ickiness into a separate function: const arrayIterator = (array) => { let i = 0; return () => { const done = i === array.length; return { done, value: done ? undefined : array[i++] } } } const iteratorSum = (iterator) => { let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) {
+```
+
+### From [[javascriptallonge-iterating]]: `technical-atom-820beff3f61f6705` code
+
+Relation: nearby source page; matched terms `function`, `return`, `separate`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.169-172)
+
+```
+Now we can extract the ickiness into a separate function: const arrayIterator = (array) => { let i = 0; return () => { const done = i === array.length; return { done, value: done ?
+```
+
+### From [[javascriptallonge-iterating]]: `technical-atom-fb1410295f080372` code
+
+Relation: nearby source page; matched terms `iterator`, `return`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.169-172)
+
+```javascript
+return { done, value: first } } } const iteratorSum = (iterator) => { let eachIteration, sum = 0;; while ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } return sum } const aListIterator = listIterator(list(1, 4, 9, 16, 25)); iteratorSum(aListIterator) //=> 55
+```

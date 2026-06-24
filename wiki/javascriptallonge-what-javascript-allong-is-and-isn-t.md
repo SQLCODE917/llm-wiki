@@ -35,12 +35,6 @@ Citation: (raw/javascriptallonge.pdf p.10-11)
 const filterWith = (fn, iterable) => ({ [Symbol.iterator]: function * () { for ( let element of iterable) { if (!!fn(element)) yield element; } } });
 ```
 
-### `technical-atom-7dbf2228f0f08721` exception
-
-Citation: (raw/javascriptallonge.pdf p.10-11)
-
-There is absolutely no suggestion that any of the techniques shown here are the only way to do something, the best way, or even an acceptable way to write programs that are intended to be used, read, and maintained by others.
-
 ### `technical-atom-4ee1f22174e92535` requirement
 
 Citation: (raw/javascriptallonge.pdf p.10-11)
@@ -59,6 +53,12 @@ Citation: (raw/javascriptallonge.pdf p.10-11)
 
 Choices in software development are also often driven by requirements specific to the type of software being developed.
 
+### `technical-atom-7dbf2228f0f08721` exception
+
+Citation: (raw/javascriptallonge.pdf p.10-11)
+
+There is absolutely no suggestion that any of the techniques shown here are the only way to do something, the best way, or even an acceptable way to write programs that are intended to be used, read, and maintained by others.
+
 ### `technical-atom-a88c178dfe08b992` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.10-11)
@@ -70,3 +70,23 @@ For example, business software written in-house has a very different set of requ
 Citation: (raw/javascriptallonge.pdf p.10-11)
 
 Choices in software development must also consider the question of consistency.
+
+## Related technical details
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-62ac41d9e7c334de` code
+
+Relation: nearby source page; matched terms `identity`, `javascript`, `not`, `they`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+```
+In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:
+```
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-ce645dd09a6b9040` worked-example
+
+Relation: nearby source page; matched terms `but`, `identity`, `javascript`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .

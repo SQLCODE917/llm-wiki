@@ -45,18 +45,6 @@ Citation: (raw/javascriptallonge.pdf p.107-108)
 const numbers = (...nums) => nums; numbers(1, 2, 3, 4, 5) //=> [1,2,3,4,5] const headAndTail = (head, ...tail) => [head, tail]; headAndTail(1, 2, 3, 4, 5) //=> [1,[2,3,4,5]]
 ```
 
-### `technical-atom-d24fe13bc0b13a75` worked-example
-
-Citation: (raw/javascriptallonge.pdf p.107-108)
-
-Consider the way we pass arguments to parameters:
-
-### `technical-atom-b52d8612fcee7742` worked-example
-
-Citation: (raw/javascriptallonge.pdf p.107-108)
-
-And consider how we bind values to parameter names:
-
 ### `technical-atom-bbb4bf595f66bdf3` code
 
 Citation: (raw/javascriptallonge.pdf p.107-108)
@@ -70,3 +58,53 @@ const bar = (name) => ...
 Citation: (raw/javascriptallonge.pdf p.107-108)
 
 There is only one difference: We have not tried gathering.
+
+### `technical-atom-d24fe13bc0b13a75` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.107-108)
+
+Consider the way we pass arguments to parameters:
+
+### `technical-atom-b52d8612fcee7742` worked-example
+
+Citation: (raw/javascriptallonge.pdf p.107-108)
+
+And consider how we bind values to parameter names:
+
+## Related technical details
+
+### From [[javascriptallonge-destructuring-arrays]]: `technical-atom-ac5ee271e8f4ce47` formula
+
+Relation: nearby source page; matched terms `bound`, `destructuring`, `like`, `name`
+
+Citation: (raw/javascriptallonge.pdf p.103-104)
+
+The line const wrapped = [something]; is interesting. On the left hand is a name to be bound, and on the right hand is an array literal, a template for constructing an array, very much like a quasi-literal string.
+
+### From [[javascriptallonge-destructuring-is-not-pattern-matching]]: `technical-atom-880219b3a5b552f7` exception
+
+Relation: nearby source page; matched terms `destructuring`, `matching`, `pattern`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.105-106)
+
+As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing.
+
+### From [[javascriptallonge-destructuring-is-not-pattern-matching]]: `technical-atom-89cdabc3cb9e7f9f` code
+
+Relation: nearby source page; matched terms `destructuring`, `matching`, `pattern`
+
+Citation: (raw/javascriptallonge.pdf p.105-106)
+
+```javascript
+const [what] = [];
+```
+
+### From [[javascriptallonge-destructuring-is-not-pattern-matching]]: `technical-atom-1b1f471330642106` code
+
+Relation: nearby source page; matched terms `destructuring`, `matching`, `pattern`
+
+Citation: (raw/javascriptallonge.pdf p.105-106)
+
+```javascript
+const [what] = []; what //=> undefined const [which, what, who //=> undefined
+```

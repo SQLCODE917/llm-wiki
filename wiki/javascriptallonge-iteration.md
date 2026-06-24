@@ -38,3 +38,45 @@ If you peel off isIterable and ignore the way that the iteration version uses [S
 Citation: (raw/javascriptallonge.pdf p.227-228)
 
 A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We're reinventing the use of a stack to manage recursion, because writing our code to respond to a function call makes us turn a simple recursive algorithm inside-out.
+
+## Related technical details
+
+### From [[javascriptallonge-recursive-iterators]]: `technical-atom-158ef15f7acb62e3` code
+
+Relation: nearby source page; matched terms `code`, `generation`, `isiterable`, `iterator`, `recursive`, `something`
+
+Citation: (raw/javascriptallonge.pdf p.226)
+
+```javascript
+// Generation const isIterable = (something) => !!something[Symbol.iterator]; const generate = (iterable) => { for ( let element of iterable) { if (isIterable(element)) { generate(element) } else { console.log(element) } } } generate([1, [2, [3, 4], 5]]) //=> 1 2 3 4 5
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-d72c10129ba795ef` code
+
+Relation: nearby source page; matched terms `code`, `iterator`, `next`, `symbol`, `while`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const filterWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { do { const {done, value} = iterator.next(); } while (!done && !fn(value)); return {done, value}; } } } }); const untilWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { let {done, value} = iterator.next(); done = done || fn(value); return ({done, value: done ? undefined : value}); } } } });
+```
+
+### From [[javascriptallonge-from]]: `technical-atom-096e3d7cf4be2948` code
+
+Relation: nearby source page; matched terms `code`, `function`, `iteration`, `iterator`, `next`, `stack`
+
+Citation: (raw/javascriptallonge.pdf p.221-222)
+
+```javascript
+Stack3.from = function (iterable) { const stack = this (); for ( let element of iterable) { stack.push(element); } return stack; } Pair1.from = (iterable) => ( function iterationToList (iteration) { const {done, value} = iteration.next(); return done ? EMPTY : Pair1(value, iterationToList(iteration)); })(iterable[Symbol.iterator]())
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-50415e1f6386aada` code
+
+Relation: nearby source page; matched terms `code`, `iterator`, `next`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next(); return ({done, value: done ? undefined : fn(value)}); } } } });
+```

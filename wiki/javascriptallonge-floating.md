@@ -36,6 +36,12 @@ Citation: (raw/javascriptallonge.pdf p.25-26)
 0.1 //=> 0.1 0.1 + 0.1 //=> 0.2 0.1 + 0.1 + 0.1 //=> 0.30000000000000004
 ```
 
+### `technical-atom-02b0bf8004b983cd` requirement
+
+Citation: (raw/javascriptallonge.pdf p.25-26)
+
+But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 .
+
 ### `technical-atom-fbe1e6b64af346dc` exception
 
 Citation: (raw/javascriptallonge.pdf p.25-26)
@@ -60,14 +66,44 @@ Citation: (raw/javascriptallonge.pdf p.25-26)
 
 For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript's calculation is less than a pixel, there is no observable error.
 
-### `technical-atom-02b0bf8004b983cd` requirement
-
-Citation: (raw/javascriptallonge.pdf p.25-26)
-
-But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 .
-
 ### `technical-atom-ae43ed904573c8b5` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.25-26)
 
 For example, '$43.21' will nearly always be presented as two numbers: 43 for dollars and 21 for cents, not 43.21 .
+
+## Related technical details
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-ce645dd09a6b9040` worked-example
+
+Relation: nearby source page; matched terms `but`, `example`, `have`, `identity`, `javascript`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
+
+### From [[javascriptallonge-operations-on-numbers]]: `technical-atom-d0aad52ee8c53e7f` worked-example
+
+Relation: nearby source page; matched terms `can`, `example`, `like`, `numbers`, `worked-example`, `write`
+
+Citation: (raw/javascriptallonge.pdf p.26-27)
+
+We can create expressions that look very much like mathematical expressions, for example we can write 1 + 1 or 2 * 3 or 42 34 or even 6 / 2 .
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-29882a09023a1a70` worked-example
+
+Relation: nearby source page; matched terms `example`, `identity`, `not`, `number`, `worked-example`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+For example, the string "2" is not the same thing as the number 2 .
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-62ac41d9e7c334de` code
+
+Relation: nearby source page; matched terms `identity`, `javascript`, `not`, `they`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+```
+In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:
+```

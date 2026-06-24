@@ -42,3 +42,41 @@ Citation: (raw/javascriptallonge.pdf p.180-182)
 ```javascript
 const first = K, second = K(I); const latin = (selector) => selector("primus")("secundus"); latin(first) //=> "primus" latin(second) //=> "secundus"
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-a-return-to-backward-thinking]]: `technical-atom-e2b2c0d8e3d358fe` requirement
+
+Relation: nearby source page; matched terms `both`, `data`, `functions`, `return`, `structures`, `them`
+
+Citation: (raw/javascriptallonge.pdf p.189-190)
+
+It is a tenet of Object-Oriented Programming, but it is not exclusive to OOP: We can and should design data structures to hide implementation information from the code that use them, whether we are working with functions, objects, or both.
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-21a61344f2e84d80` code
+
+Relation: nearby source page; matched terms `about`, `data`, `first`, `functions`, `how`, `return`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+//=> 2 return l123(rest)(rest)(first) //=> 3 We write them in a backwards way, but they seem to work. How about
+```
+
+### From [[javascriptallonge-the-vireo]]: `technical-atom-fc35774e3ffe2b16` procedure
+
+Relation: nearby source page; matched terms `data`, `function`, `our`, `represented`
+
+Citation: (raw/javascriptallonge.pdf p.182-183)
+
+Given that our latin data is represented as the function (selector) => selector("primus")("secundus") , our obvious next step is to make a function that makes data.
+
+### From [[javascriptallonge-the-kestrel-and-the-idiot]]: `technical-atom-cb9e0dc41a61c284` code
+
+Relation: nearby source page; matched terms `first`, `second`
+
+Citation: (raw/javascriptallonge.pdf p.179-180)
+
+```javascript
+const first = K, second = K(I); first("primus")("secundus") //=> "primus" second("primus")("secundus") //=> "secundus"
+```

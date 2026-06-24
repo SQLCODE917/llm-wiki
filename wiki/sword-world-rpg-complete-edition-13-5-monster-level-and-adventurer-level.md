@@ -68,3 +68,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.234)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.234)
 
 |Level 9-10|A city-wide crisis|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-12-humans]]: `technical-atom-7b9caf61828e3332` formula
+
+Relation: nearby source page; matched terms `defense`, `evasion`, `level`, `points`, `resistance`, `special`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.230-234)
+
+Evasion Points=16 (9) Defense Points=14 Life Points/Resistance=34/21 (14) Mental Points/Resistance=28/20 (13) Special Abilities=7th level ancient magic (magic intensity/magic power=16/9) Shapeshift
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-0ad52d04fbdc380e` formula
+
+Relation: nearby source page; matched terms `critical`, `defense`, `evasion`, `points`, `resistance`, `special`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) Special Abilities=All weapons cannot critical Iron corrosion
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]: `technical-atom-19c5cf3afcf940a3` formula
+
+Relation: nearby source page; matched terms `defense`, `evasion`, `points`, `resistance`, `special`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+
+Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]: `technical-atom-9f2043a6fdf71cf5` formula
+
+Relation: nearby source page; matched terms `defense`, `evasion`, `points`, `resistance`, `special`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+
+Evasion Points=14 (7) Defense Points=9 Life Points/Resistance=30/18 (11) Mental Points/Resistance=-/15 (8) Special Abilities=Mental attack immunity Not affected by poison and illness Habitat=Ruins

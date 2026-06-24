@@ -68,3 +68,21 @@ Please consider this only as a guideline.
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-240)
 
 In the case of NPCs as enemies, consider them to be two levels greater.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]: `technical-atom-e9ad13eeec4f4744` procedure
+
+Relation: nearby source page; matched terms `force`, `life`, `monsters`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+
+If the source of our life is called _positive_ life force, then the undead's source can be called _negative_ life force.
+
+### From [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]: `technical-atom-5472aa50c0f8beb8` exception
+
+Relation: nearby source page; matched terms `monsters`, `not`, `poison`, `they`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+
+They are also not affected by illness or poison, and do not sleep in the normal sense of the word.

@@ -34,3 +34,45 @@ Citation: (raw/javascriptallonge.pdf p.285-286)
 ```javascript
 const zip = callFirst(zipWith, (...values) => values);
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-operations-that-transform-one-iterable-into-another]]: `technical-atom-bfed2cc6c8f4d01a` code
+
+Relation: nearby source page; matched terms `const`, `function`, `iterable`, `operations`
+
+Citation: (raw/javascriptallonge.pdf p.284-285)
+
+```javascript
+function * mapWith(fn, iterable) { for ( const element of iterable) { yield fn(element); } } function * mapAllWith (fn, iterable) { for ( const element of iterable) { yield * fn(element); } } function * filterWith (fn, iterable) { for ( const element of iterable) { if (!!fn(element)) yield element; } } function * compact (iterable) { for ( const element of iterable) { if (element != null ) yield element; } } function * untilWith (fn, iterable) { for ( const element of iterable) { if (fn(element)) break ; yield fn(element); } } function * rest (iterable) { const iterator = iterable[Symbol.iterator](); iterator.next();
+```
+
+### From [[javascriptallonge-operations-that-transform-one-iterable-into-another]]: `technical-atom-a6111cd07d4b016c` code
+
+Relation: nearby source page; matched terms `const`, `function`, `iterable`, `operations`
+
+Citation: (raw/javascriptallonge.pdf p.284-285)
+
+```javascript
+yield * iterator; } function * take (numberToTake, iterable) { const iterator = iterable[Symbol.iterator](); for ( let i = 0; i < numberToTake; ++i) { const { done, value } = iterator.next(); if (!done) yield value; } }
+```
+
+### From [[javascriptallonge-memoizing-an-iterable]]: `technical-atom-e6b1617bec3d7b48` code
+
+Relation: nearby source page; matched terms `const`, `function`, `iterable`, `key`
+
+Citation: (raw/javascriptallonge.pdf p.286-287)
+
+```javascript
+function memoize (generator) { const memos = {}, iterators = {}; return function * (...args) { const key = JSON.stringify(args); let i = 0; if (memos[key] == null ) { memos[key] = []; iterators[key] = generator(...args); } while ( true ) { if (i < memos[key].length) { yield memos[key][i++]; } else { const { done, value } = iterators[key].next(); if (done) { return ; } else { yield memos[key][i++] = value;
+```
+
+### From [[javascriptallonge-operations-that-transform-an-iterable-into-a-value]]: `technical-atom-381e027872bb52af` code
+
+Relation: nearby source page; matched terms `const`, `iterable`, `operations`
+
+Citation: (raw/javascriptallonge.pdf p.286)
+
+```javascript
+const reduceWith = (fn, seed, iterable) => { let accumulator = seed; for ( const element of iterable) { accumulator = fn(accumulator, element); } return accumulator; }; const first = (iterable) => iterable[Symbol.iterator]().next().value;
+```

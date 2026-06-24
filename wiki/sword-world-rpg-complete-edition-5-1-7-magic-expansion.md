@@ -64,3 +64,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.61-64)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.61-64)
 
 |x 8|2.8|2.0|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-383d28a3555bcd0e` formula
+
+Relation: nearby source page; matched terms `expansion`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=3 Distance=10 meters Area=One weapon Duration=18 Rounds Effect=+5 to weapon's strike power Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-f4b14de1efb431cc` formula
+
+Relation: nearby source page; matched terms `expansion`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Area=One Duration=18 rounds Effect=+2 to mental power resistance Type=Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]]: `technical-atom-364cd8b7b3de0529` formula
+
+Relation: nearby source page; matched terms `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+
+Base Mental Power Cost=0
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-e121551de400d86a` procedure
+
+Relation: nearby source page; matched terms `called`, `magic`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+First, adventurers who use magic are given a score called **magic power** .

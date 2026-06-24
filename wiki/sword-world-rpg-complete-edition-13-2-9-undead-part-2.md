@@ -68,3 +68,37 @@ Agility=24 Movement Speed=24 (air) Number=One Frequency=Very Rare Intellect=High
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.214-221)
 
 Evasion Points=Defense Points=-
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-8-plants]]: `technical-atom-ab35c3c032631a9a` formula
+
+Relation: nearby source page; matched terms `abilities`, `fire`, `life`, `mental`, `weak`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.212-213)
+
+Attack Points=Tentacles:9 (2) Strike Points=5 Evasion Points=8 (1) Defense Points=6 Life Points/Resistance=25/12 (5) Mental Points/Resistance=-/10 (3) Special Abilities=Strangling Mental attack immunity Weak to fire
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-0ad52d04fbdc380e` formula
+
+Relation: nearby source page; matched terms `abilities`, `all`, `cannot`, `life`, `magical`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) Special Abilities=All weapons cannot critical Iron corrosion
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]: `technical-atom-19c5cf3afcf940a3` formula
+
+Relation: nearby source page; matched terms `abilities`, `life`, `magical`, `mental`, `normal`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+
+Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity
+
+### From [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]]: `technical-atom-5c8235d41047ec7e` formula
+
+Relation: nearby source page; matched terms `abilities`, `life`, `mental`, `undead`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.214-221)
+
+Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=1/12 (5) Mental Points/Resistance=-/14 (7) Special Abilities=Strangling

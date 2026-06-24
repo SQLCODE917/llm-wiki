@@ -64,3 +64,43 @@ const Numbers = Object.assign({ [Symbol.iterator]: () => { let n = 0; return { n
 Citation: (raw/javascriptallonge.pdf p.253-256)
 
 Finally, we take the first element of that filtered, squared iterable and now JavaScript actually iterates over the stack's elements, and it only needs to square two of those elements, 29 and 28 , to return the answer.
+
+## Related technical details
+
+### From [[javascriptallonge-implementing-methods-with-iteration]]: `technical-atom-5d2006f43ca209f1` code
+
+Relation: nearby source page; matched terms `first`, `methods`, `take`, `until`
+
+Citation: (raw/javascriptallonge.pdf p.246-253)
+
+```javascript
+}, LazyCollection) }, until(fn) { return Object.assign({ [Symbol.iterator]: () => { const iterator = this [Symbol.iterator](); return { next: () => { let { done, value } = iterator.next(); done = done || fn(value); return ({ done, value: done ? undefined : value }); } } } }, LazyCollection) }, first() { return this [Symbol.iterator]().next().value; }, rest() { return Object.assign({ [Symbol.iterator]: () => { const iterator = this [Symbol.iterator](); iterator.next(); return iterator; } }, LazyCollection); }, take(numberToTake) { return Object.assign({
+```
+
+### From [[javascriptallonge-lazy-and-eager-collections]]: `technical-atom-d9ccc197c7d25dc0` code
+
+Relation: nearby source page; matched terms `collections`, `first`, `lazy`, `take`
+
+Citation: (raw/javascriptallonge.pdf p.256-260)
+
+```javascript
+const original = this ; return gatherable.from( ( function * () { for ( let element of original) { if (fn(element)) break ; yield element; } })() ); }, first() { return this [Symbol.iterator]().next().value; }, rest() { const iteration = this [Symbol.iterator](); iteration.next(); return gatherable.from( ( function * () { yield * iteration; })() ); return gatherable.from(iterable); }, take(numberToTake) { const original = this ; let numberRemaining = numberToTake; return gatherable.from( ( function * () { for ( let element of original) { if (numberRemaining-- <= 0) break ; yield element; } })() ); } });
+```
+
+### From [[javascriptallonge-lazy-and-eager-collections]]: `technical-atom-d0ae077ae5d77a24` requirement
+
+Relation: nearby source page; matched terms `collection`, `collections`, `lazy`, `when`
+
+Citation: (raw/javascriptallonge.pdf p.246)
+
+This 'fat object' style springs from a misunderstanding: When we say a collection should know how to perform a map over itself, we don't need for the collection to handle every single detail.
+
+### From [[javascriptallonge-implementing-methods-with-iteration]]: `technical-atom-0432dbb698bbba10` code
+
+Relation: nearby source page; matched terms `first`, `methods`, `stack`
+
+Citation: (raw/javascriptallonge.pdf p.246-253)
+
+```javascript
+// Pair and Stack in action Stack.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() //=> 100 Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0)
+```

@@ -42,3 +42,39 @@ const ThreeNumbers = { *[Symbol.iterator] () { yield 1; yield 2; yield 3 } }
 Citation: (raw/javascriptallonge.pdf p.234-236)
 
 We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call.
+
+## Related technical details
+
+### From [[javascriptallonge-generators-are-coroutines]]: `technical-atom-e1013b40c3bcd26c` procedure
+
+Relation: nearby source page; matched terms `call`, `generator`, `generators`, `our`
+
+Citation: (raw/javascriptallonge.pdf p.231-234)
+
+- When we call interator.next() , the body of our generator begins to be evaluated.
+
+### From [[javascriptallonge-generators-are-coroutines]]: `technical-atom-d1a307d6e07de4e9` procedure
+
+Relation: nearby source page; matched terms `generator`, `generators`, `our`
+
+Citation: (raw/javascriptallonge.pdf p.231-234)
+
+- The body of our generator runs until it returns, ends, or encounters the next yield statement, which is yield 2; .
+
+### From [[javascriptallonge-generators-are-coroutines]]: `technical-atom-66ba4e7ea1a0df88` procedure
+
+Relation: nearby source page; matched terms `generator`, `generators`, `our`
+
+Citation: (raw/javascriptallonge.pdf p.231-234)
+
+- The body of our generator runs until it returns, ends, or encounters the next yield statement, which is yield 3; .
+
+### From [[javascriptallonge-implementing-methods-with-iteration]]: `technical-atom-97f38994d145c734` code
+
+Relation: nearby source page; matched terms `function`, `iterator`, `key`, `methods`, `object`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.246-253)
+
+```javascript
+const extend = function (consumer, ...providers) { for ( let i = 0; i < providers.length; ++i) { const provider = providers[i]; for ( let key in provider) { if (provider.hasOwnProperty(key)) { consumer[key] = provider[key] } } } return consumer }; const LazyCollection = { map(fn) { return Object.assign({ [Symbol.iterator]: () => { const iterator = this [Symbol.iterator](); return { next: () => { const { done, value } = iterator.next(); return ({ done, value: done ? undefined : fn(value) }); } } } }, LazyCollection); }, reduce(fn, seed) { const iterator = this [Symbol.iterator](); let iterationResult, accumulator = seed; while ((iterationResult = iterator.next(), !iterationResult.done)) { accumulator = fn(accumulator, iterationResult.value); } return accumulator;
+```

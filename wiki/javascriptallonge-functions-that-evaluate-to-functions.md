@@ -56,3 +56,39 @@ Citation: (raw/javascriptallonge.pdf p.38)
 Citation: (raw/javascriptallonge.pdf p.38)
 
 So… In the next chapter, 'I'd Like to Have an Argument, Please,' we'll see how to make functions practical.
+
+## Related technical details
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]]: `technical-atom-e6dd19d4ac7ef05f` code
+
+Relation: nearby source page; matched terms `argument`, `function`, `like`
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+```
+Remember that to apply a function with no arguments, we wrote (() => {})() .
+```
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]]: `technical-atom-bc6fdea9ceb74d28` exception
+
+Relation: nearby source page; matched terms `argument`, `functions`, `like`
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+Up to now, we've looked at functions without arguments.
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]]: `technical-atom-dd665ae074e9887f` exception
+
+Relation: nearby source page; matched terms `argument`, `functions`, `like`
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+We haven't even said what an argument is , only that our functions don't have any.
+
+### From [[javascriptallonge-call-by-value]]: `technical-atom-9b063541184a3c8d` procedure
+
+Relation: nearby source page; matched terms `applied`, `function`, `procedure`
+
+Citation: (raw/javascriptallonge.pdf p.40-41)
+
+Then our circumference function was applied to 2 .

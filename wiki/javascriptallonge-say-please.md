@@ -59,16 +59,58 @@ Citation: (raw/javascriptallonge.pdf p.186-188)
 const reverse = (list, delayed = EMPTYLIST) => list( () => delayed, (aPair) => reverse(aPair(pairRest), node(aPair(pairFirst))(delayed)) ); print(reverse(l123)); //=> 3 2 1 const mapWith = (fn, list, delayed = EMPTYLIST) => list( () => reverse(delayed), (aPair) => mapWith(fn, aPair(pairRest), node(fn(aPair(pairFirst)))(delayed)) ); print(mapWith(x => x * x, reverse(l123))) //=> 941
 ```
 
-### `technical-atom-879cf8e8076dd2ee` procedure
-
-Citation: (raw/javascriptallonge.pdf p.186-188)
-
-We can reverse this: Instead of asking a pair if it is empty and then deciding what to do, we can ask the pair to do it for us.
-
 ### `technical-atom-1e695cff5ef7c0b7` code
 
 Citation: (raw/javascriptallonge.pdf p.186-188)
 
 ```
 const EMPTYLIST = (whenEmpty, unlessEmpty) => whenEmpty() And what is a node of a list?
+```
+
+### `technical-atom-879cf8e8076dd2ee` procedure
+
+Citation: (raw/javascriptallonge.pdf p.186-188)
+
+We can reverse this: Instead of asking a pair if it is empty and then deciding what to do, we can ask the pair to do it for us.
+
+## Related technical details
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-1facdd66430f4b84` code
+
+Relation: nearby source page; matched terms `can`, `data`, `empty`, `first`, `functions`, `pair`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+const length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair)); length(l123) //=> 3 const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ? delayed : reverse(rest(aPair), pair(first(aPair), delayed)); const mapWith = (fn, aPair, delayed = EMPTY) => aPair === EMPTY ? reverse(delayed) : mapWith(fn, rest(aPair), pair(fn(first(aPair)), delayed)); const doubled = mapWith((x) => x * 2, l123); first(doubled) //=> 2 first(rest(doubled)) //=> 4 first(rest(rest(doubled))) //=> 6 Can we do the same with the linked lists we build out of functions? Yes: const first = K, l123 = pair(1)(pair(2)(pair(3)(EMPTY)));
+```
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-7fbeb05554d21b25` code
+
+Relation: nearby source page; matched terms `data`, `empty`, `first`, `functions`, `pair`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+const first = ({first, rest}) => first, rest = ({first, rest}) => rest, pair = (first, rest) => ({first, rest}), EMPTY = ({}); const l123 = pair(1, pair(2, pair(3, EMPTY))); first(l123) //=> 1 first(rest(l123)) //=> 2 first(rest(rest(l123))) //=3
+```
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-b43850c16ef07986` code
+
+Relation: nearby source page; matched terms `data`, `empty`, `first`, `functions`, `pair`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+rest = K(I), pair = V, EMPTY = (() => {}); const l123(first) //=> 1 l123(rest)(first)
+```
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-bafff516faf1e5ae` code
+
+Relation: nearby source page; matched terms `data`, `empty`, `first`, `functions`, `pair`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+const length = (aPair) => aPair === EMPTY ? 0 : 1 + length(aPair(rest)); length(l123) //=> 3 And mapWith ? const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ? delayed : reverse(aPair(rest), pair(aPair(first))(delayed)); const mapWith = (fn, aPair, delayed = EMPTY) => aPair === EMPTY ? reverse(delayed) : mapWith(fn, aPair(rest), pair(fn(aPair(first)))(delayed)); const doubled = mapWith((x) => x * 2, l123) doubled(first) //=> 2 doubled(rest)(first) //=> 4 doubled(rest)(rest)(first) //=> 6
 ```

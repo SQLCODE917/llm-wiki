@@ -46,3 +46,41 @@ So, when we deliberately want an undefined value, should we use the first, secon
 Citation: (raw/javascriptallonge.pdf p.35)
 
 The third form is guaranteed to always work, so that's what we will use.
+
+## Related technical details
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]]: `technical-atom-dd665ae074e9887f` exception
+
+Relation: nearby source page; matched terms `any`, `don`, `functions`
+
+Citation: (raw/javascriptallonge.pdf p.39-40)
+
+We haven't even said what an argument is , only that our functions don't have any.
+
+### From [[javascriptallonge-undefined]]: `technical-atom-6727b9042bd2575a` requirement
+
+Relation: nearby source page; matched terms `can`, `javascript`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+This works because JavaScript has a feature that can infer where the semi-colons should be most of the time.
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-053e216a0ba143de` code
+
+Relation: nearby source page; matched terms `functions`, `javascript`, `return`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => 1)() //=> 1 (() => "Hello, JavaScript")() //=> "Hello, JavaScript" (() => Infinity )() //=> Infinity
+```
+
+### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-b5a28ac67439659d` code
+
+Relation: nearby source page; matched terms `functions`, `javascript`, `return`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.32-33)
+
+```javascript
+(() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity
+```

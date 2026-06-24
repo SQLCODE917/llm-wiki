@@ -5,6 +5,7 @@ from __future__ import annotations
 PAGE_MATCH_TEXT_CHAR_LIMIT = 6_000
 GENERATED_MATCH_SECTION_HEADINGS = (
     "\n## Technical details",
+    "\n## Related technical details",
     "\n## Page-Map Navigation",
 )
 

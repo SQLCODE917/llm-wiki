@@ -43,14 +43,48 @@ Citation: (raw/javascriptallonge.pdf p.89-90)
 function team2(...players, captain, coach) { console.log(` ${ captain } (captain)`); for ( let player of players) { console.log(player); } console.log(`squad coached by ${ coach } `); } //=> Unexpected token
 ```
 
+### `technical-atom-788752f4a1e82bb0` exception
+
+Citation: (raw/javascriptallonge.pdf p.89-90)
+
+ECMAScript 2015 only permits gathering parameters from the end of the parameter list.
+
 ### `technical-atom-9bf75248160dbe49` worked-example
 
 Citation: (raw/javascriptallonge.pdf p.89-90)
 
 For example, we might want to have a function that builds some kind of team record.
 
-### `technical-atom-788752f4a1e82bb0` exception
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.89-90)
+### From [[javascriptallonge-overcoming-limitations]]: `technical-atom-da5e8aae05dc73cc` procedure
 
-ECMAScript 2015 only permits gathering parameters from the end of the parameter list.
+Relation: nearby source page; matched terms `arguments`, `but`, `function`, `functions`, `left-variadic`, `limitations`
+
+Citation: (raw/javascriptallonge.pdf p.91-92)
+
+But if we wanted to write left-variadic functions, could we make ourselves a leftVariadic decorator to turn a function with one or more arguments into a left-variadic function?
+
+### From [[javascriptallonge-left-variadic-destructuring]]: `technical-atom-0d10744b5e6190a9` exception
+
+Relation: nearby source page; matched terms `but`, `can`, `function`, `left`, `using`, `variadic`
+
+Citation: (raw/javascriptallonge.pdf p.92-93)
+
+But we can write our own left-gathering function utility using the same principles without all the tedium:
+
+### From [[javascriptallonge-overcoming-limitations]]: `technical-atom-0cc478268532bafb` procedure
+
+Relation: nearby source page; matched terms `function`, `left`, `limitations`, `parameters`
+
+Citation: (raw/javascriptallonge.pdf p.91-92)
+
+Our leftVariadic function is a decorator that turns any function into a function that gathers parameters from the left , instead of from the right.
+
+### From [[javascriptallonge-once]]: `technical-atom-f74baf81c6759358` exception
+
+Relation: nearby source page; matched terms `can`, `function`, `only`
+
+Citation: (raw/javascriptallonge.pdf p.88)
+
+It ensures that a function can only be called, well, once .

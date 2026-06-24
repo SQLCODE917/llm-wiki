@@ -64,3 +64,23 @@ Old-school lispers call this 'unquoting,' the more contemporary term is 'interpo
 Citation: (raw/javascriptallonge.pdf p.203-204)
 
 The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
+
+## Related technical details
+
+### From [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]]: `technical-atom-a0d1e0ac69fe7f62` worked-example
+
+Relation: nearby source page; matched terms `like`, `literals`, `quasi`, `string`, `strings`
+
+Citation: (raw/javascriptallonge.pdf p.202-203)
+
+For example, the escape sequence \n inserts a newline character in a string literal, like this: 'first line\nsecond line' .
+
+### From [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]]: `technical-atom-1682a5d04ab0b8ac` code
+
+Relation: nearby source page; matched terms `literals`, `quasi`, `strings`
+
+Citation: (raw/javascriptallonge.pdf p.202-203)
+
+```javascript
+'fu' + 'bar' //=> 'fubar'
+```

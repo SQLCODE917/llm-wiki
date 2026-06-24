@@ -45,14 +45,54 @@ Citation: (raw/javascriptallonge.pdf p.34-35)
 undefined === undefined //=> true (() => {})() === (() => {})() //=> true (() => {})() === undefined //=> true
 ```
 
+### `technical-atom-6727b9042bd2575a` requirement
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+This works because JavaScript has a feature that can infer where the semi-colons should be most of the time.
+
 ### `technical-atom-6824a3dcc31f6880` exception
 
 Citation: (raw/javascriptallonge.pdf p.34-35)
 
 18 Sometimes, you will find JavaScript that has statements that are separated by newlines without semi-colons.
 
-### `technical-atom-6727b9042bd2575a` requirement
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.34-35)
+### From [[javascriptallonge-void]]: `technical-atom-33e795f57deaec38` procedure
 
-This works because JavaScript has a feature that can infer where the semi-colons should be most of the time.
+Relation: nearby source page; matched terms `undefined`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.35)
+
+So, when we deliberately want an undefined value, should we use the first, second, or third form?
+
+### From [[javascriptallonge-back-on-the-block]]: `technical-atom-d174442845196315` code
+
+Relation: nearby source page; matched terms `back`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.35-37)
+
+```javascript
+(() => {})() //=> undefined
+```
+
+### From [[javascriptallonge-back-on-the-block]]: `technical-atom-8791ab1ce9e62d63` code
+
+Relation: nearby source page; matched terms `back`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.35-37)
+
+```javascript
+(() => { 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined (() => { 1 + 1; 2 + 2 })() //=> undefined
+```
+
+### From [[javascriptallonge-back-on-the-block]]: `technical-atom-9d239f08d143e7ce` code
+
+Relation: nearby source page; matched terms `back`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.35-37)
+
+```javascript
+(() => 2 + 2)() //=> 4 (() => { 2 + 2 })() //=> undefined (() => (1 + 1, 2 + 2))() //=> 4 (() => { 1 + 1; 2 + 2 })() //=> undefined
+```

@@ -7,6 +7,7 @@ from dataclasses import asdict, replace
 
 from pydantic import BaseModel, Field
 
+from llmwiki.domain.links import extract_links
 from llmwiki.domain.objects import (
     PlannedPageWrite,
     SourceSummaryBullet,
@@ -22,7 +23,7 @@ from llmwiki.domain.page_body_contracts import (
 )
 from llmwiki.domain.source_summary_coverage import infer_source_summary_coverage
 from llmwiki.domain.source_summary_rescue import repair_source_summary_draft
-from llmwiki.domain.technical_atoms import render_technical_details_section
+from llmwiki.domain.technical_atom_surfaces import render_technical_details_sections
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
 
@@ -186,10 +187,38 @@ def _append_technical_details(
     catalog = store.read_technical_atom_catalog_artifact(raw_source.source_locator)
     if catalog is None:
         return summary_body
-    section = render_technical_details_section(catalog, planned_write.page_metadata.page_id)
+    section = render_technical_details_sections(
+        catalog,
+        planned_write.page_metadata.page_id,
+        _technical_atom_context(planned_write, summary_body),
+        related_page_ids=_related_page_ids(planned_write, summary_body),
+    )
     if not section:
         return summary_body
     return f"{summary_body}\n\n{section}"
+
+
+def _technical_atom_context(planned_write: PlannedPageWrite, summary_body: str) -> str:
+    parts = [
+        planned_write.page_metadata.page_id.replace("-", " "),
+        planned_write.page_metadata.summary,
+        summary_body,
+    ]
+    if planned_write.source_summary_plan is not None:
+        for requirement in planned_write.source_summary_plan.selected_claim_requirements:
+            parts.extend(requirement.cue_terms)
+            parts.extend(requirement.claim_role_tags)
+    return "\n".join(part for part in parts if part)
+
+
+def _related_page_ids(planned_write: PlannedPageWrite, summary_body: str) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            page_id
+            for page_id in sorted(extract_links(summary_body))
+            if page_id != planned_write.page_metadata.page_id
+        )
+    )
 
 
 def write_source_summary_draft_artifact(

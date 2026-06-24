@@ -72,3 +72,43 @@ var introductions = [], names = ['Karl', 'Friedrich', 'Gauss']; for ( var i = 0;
 Citation: (raw/javascriptallonge.pdf p.155-157)
 
 That does not mean that you should follow the exact same practice in your own code: The purpose of this book is to illustrate certain principles of programming.
+
+## Related technical details
+
+### From [[javascriptallonge-var]]: `technical-atom-9598b23ff904732b` code
+
+Relation: nearby source page; matched terms `but`, `function`, `javascript`, `let`, `var`
+
+Citation: (raw/javascriptallonge.pdf p.151-154)
+
+```javascript
+const factorial = (n) => { let innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } return innerFactorial(n, 1); } JavaScript hoists the let and the assignment. But not so with var : const factorial = (n) => { return innerFactorial(n, 1); var innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } } factorial(4) //=> undefined is not a function (evaluating 'innerFactorial(n, 1)')
+```
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-626cd93fa12868d4` formula
+
+Relation: nearby source page; matched terms `but`, `let`, `var`, `why`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+Hopefully, you can think of a faster way to calculate this sum. 72 And perhaps you have noticed that var i = 1 is tucked away instead of being at the top as we prefer. But is this ever a problem?
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-cddb51c14221fbc7` code
+
+Relation: nearby source page; matched terms `let`, `var`, `why`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+```javascript
+var sum = 0; for ( var i = 1; i <= 100; i++) { sum = sum + i } sum #=> 5050
+```
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-41f22a8358713fe0` code
+
+Relation: nearby source page; matched terms `javascript`, `let`, `why`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+```
+const and let are recent additions to JavaScript.
+```

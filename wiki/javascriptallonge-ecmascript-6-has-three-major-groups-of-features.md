@@ -32,3 +32,37 @@ For example: classes and modules.
 Citation: (raw/javascriptallonge.pdf p.13)
 
 For example: Generators, proxies and WeakMaps.
+
+## Related technical details
+
+### From [[javascriptallonge-foreword-to-the-six-edition]]: `technical-atom-a2b6ee77b3913c74` procedure
+
+Relation: nearby source page; matched terms `completely`, `features`, `javascript`, `language`, `new`, `six`
+
+Citation: (raw/javascriptallonge.pdf p.13)
+
+That version was planned to have numerous new features (interfaces, namespaces, packages, multimethods, etc.), which would have turned JavaScript into a completely new language.
+
+### From [[javascriptallonge-michael-fogus]]: `technical-atom-2733f8b79026ed62` worked-example
+
+Relation: nearby source page; matched terms `allong`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.14)
+
+In the case of JavaScript Allongé, you'll find the Leanpub model a shining example of effectiveness.
+
+### From [[javascriptallonge-about-javascript-allong]]: `technical-atom-f7732bf2ea29844c` exception
+
+Relation: nearby source page; matched terms `allong`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.7)
+
+JavaScript Allongé teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down.
+
+### From [[javascriptallonge-foreword-to-the-six-edition]]: `technical-atom-ebf78b843172ff94` exception
+
+Relation: nearby source page; matched terms `ecmascript`, `javascript`, `larger`, `six`
+
+Citation: (raw/javascriptallonge.pdf p.13)
+
+- A larger upgrade would substantially improve JavaScript, but without being as radical as ECMAScript 4.

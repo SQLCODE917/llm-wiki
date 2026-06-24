@@ -67,12 +67,6 @@ Citation: (raw/javascriptallonge.pdf p.109-111)
 //=> 3
 ```
 
-### `technical-atom-5d9fe5bf28074a51` exception
-
-Citation: (raw/javascriptallonge.pdf p.109-111)
-
-61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples.
-
 ### `technical-atom-9f1556f765136bb2` code
 
 Citation: (raw/javascriptallonge.pdf p.109-111)
@@ -80,3 +74,43 @@ Citation: (raw/javascriptallonge.pdf p.109-111)
 ```
 A more robust implementation would be (array) => array.length === 0 , but we are doing backflips to keep this within a very small and contrived playground.
 ```
+
+### `technical-atom-5d9fe5bf28074a51` exception
+
+Citation: (raw/javascriptallonge.pdf p.109-111)
+
+61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples.
+
+## Related technical details
+
+### From [[javascriptallonge-linear-recursion]]: `technical-atom-aea77c39cd5beb20` procedure
+
+Relation: nearby source page; matched terms `all`, `linear`, `recursion`
+
+Citation: (raw/javascriptallonge.pdf p.111-113)
+
+Of course, all the students know what to do: They fill the beaker with water, place the stand on the burner and the beaker on the stand, then they turn the burner on and use the sparker to ignite the flame.
+
+### From [[javascriptallonge-linear-recursion]]: `technical-atom-cc18b4c0ba818b9d` procedure
+
+Relation: nearby source page; matched terms `elements`, `linear`, `recursion`
+
+Citation: (raw/javascriptallonge.pdf p.111-113)
+
+Sometimes we want to flatten an array, that is, an array of arrays needs to be turned into one array of elements that aren't arrays.
+
+### From [[javascriptallonge-linear-recursion]]: `technical-atom-88748102cb4ec364` procedure
+
+Relation: nearby source page; matched terms `element`, `linear`, `recursion`
+
+Citation: (raw/javascriptallonge.pdf p.111-113)
+
+The next terminal case is that if an element isn't an array, we don't flatten it, and can put it together with the rest of our solution directly.
+
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-2072bdc8f0d30ba8` requirement
+
+Relation: nearby source page; matched terms `arguments`, `default`, `javascript`, `some`
+
+Citation: (raw/javascriptallonge.pdf p.117-118)
+
+Note that while evaluating mapWith(fn, rest) , JavaScript must retain the value first or fn(first) , plus some housekeeping information so it remembers what to do with mapWith(fn, rest) when it has a result.

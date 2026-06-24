@@ -68,3 +68,37 @@ Effect=Summon different types of spirits and take complete control of them Type=
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
 
 Counters (Overpowers): _Control Spirit_ Countered (Overpowered) By: _Control Spirit_ Expansion=Final score, distance Resist=None
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]]: `technical-atom-ca69600af34bb0ff` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `meter`, `radius`, `spirit`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Area=A space with a 5 meter radius Duration=1 hour
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]]: `technical-atom-11f88392cbf46f78` formula
+
+Relation: nearby source page; matched terms `can`, `control`, `list`, `magic`, `plant`, `plants`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Area=1 plant Duration=Until focus ends Effect=Can control plants as one Type=Focus, target score Expansion=Final score, distance Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-340fa76983ff3169` formula
+
+Relation: nearby source page; matched terms `list`, `magic`, `meter`, `radius`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Distance=10 meters Area=A space with a 5 meter radius Duration=18 rounds Effect=Affects undead in various ways Type=-
+
+### From [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]]: `technical-atom-f02a5145e4ba82b5` formula
+
+Relation: nearby source page; matched terms `magic`, `meter`, `radius`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.96-98)
+
+Area=50 meter radius water surface Duration=18 rounds

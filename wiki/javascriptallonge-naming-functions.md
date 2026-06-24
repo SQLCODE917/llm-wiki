@@ -27,14 +27,54 @@ Citation: (raw/javascriptallonge.pdf p.62)
 const repeat = (str) => str + str
 ```
 
+### `technical-atom-948ee531147ee69c` formula
+
+Citation: (raw/javascriptallonge.pdf p.62)
+
+It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 .
+
 ### `technical-atom-b521eb56bb5cda47` exception
 
 Citation: (raw/javascriptallonge.pdf p.62)
 
 This code does not name a function:
 
-### `technical-atom-948ee531147ee69c` formula
+## Related technical details
 
-Citation: (raw/javascriptallonge.pdf p.62)
+### From [[javascriptallonge-rebinding]]: `technical-atom-3ee28a0dd987831d` exception
 
-It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 .
+Relation: nearby source page; matched terms `does`, `javascript`, `name`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+JavaScript does not permit us to rebind a name that has been bound with const .
+
+### From [[javascriptallonge-the-function-keyword]]: `technical-atom-e3ae7448df2db828` code
+
+Relation: nearby source page; matched terms `function`, `keyword`, `repeat`
+
+Citation: (raw/javascriptallonge.pdf p.74-75)
+
+```javascript
+const repeat = function repeat (str) { return str + str; }; const fib = function fib (n) { return (1.618**n - -1.618**-n) / 2.236; };
+```
+
+### From [[javascriptallonge-the-function-keyword]]: `technical-atom-8aacb0eaceffe66c` code
+
+Relation: nearby source page; matched terms `function`, `keyword`, `repeat`
+
+Citation: (raw/javascriptallonge.pdf p.74-75)
+
+```javascript
+const double = function repeat (str) { return str + str; }
+```
+
+### From [[javascriptallonge-function-declaration-caveats-34]]: `technical-atom-68210eea018a360c` code
+
+Relation: nearby source page; matched terms `but`, `function`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.66-67)
+
+```javascript
+function trueDat () { return true } But this is not: ( function trueDat () { return true })
+```

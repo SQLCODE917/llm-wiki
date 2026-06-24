@@ -83,3 +83,43 @@ Citation: (raw/javascriptallonge.pdf p.217-221)
 ```javascript
 const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); iterator.next(); return iterator; } });
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-basic-operations-on-iterables]]: `technical-atom-f9a05369dedddd46` requirement
+
+Relation: nearby source page; matched terms `iterables`, `iterator`, `method`, `name`, `operations`, `representing`
+
+Citation: (raw/javascriptallonge.pdf p.211-215)
+
+The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.
+
+### From [[javascriptallonge-ordered-collections]]: `technical-atom-af802d25f7fcd480` code
+
+Relation: nearby source page; matched terms `collections`, `iterator`, `ordered`, `return`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.216-217)
+
+```javascript
+const RandomNumbers = { [Symbol.iterator]: () => ({ next () { return {value: Math.random()}; } }) } for ( const i of RandomNumbers) { console.log(i) } //=> 0.494052127469331 0.835459444206208 0.1408337657339871 ... for ( const i of RandomNumbers) { console.log(i) } //=> 0.7845381607767195 0.4956772483419627 0.20259276474826038 ...
+```
+
+### From [[javascriptallonge-basic-operations-on-iterables]]: `technical-atom-3f7ceba972853444` code
+
+Relation: nearby source page; matched terms `collection`, `iterables`, `iterator`, `operations`, `return`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.284)
+
+```javascript
+stack.push(2000); stack.push(10); stack.push(5) const collectionSum = (collection) => { const iterator = collection[Symbol.iterator](); let eachIteration, sum = 0; while ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } return sum } collectionSum(stack) //=> 2015 Using [Symbol.iterator] instead of .iterator seems like adding an extra moving part for nothing. Do we get anything in return? Indeed we do. Behold the for...of loop: const iterableSum = (iterable) => { let sum = 0; for ( const num of iterable) { sum += num; } return sum } iterableSum(stack) //=> 2015
+```
+
+### From [[javascriptallonge-from]]: `technical-atom-096e3d7cf4be2948` code
+
+Relation: nearby source page; matched terms `function`, `iterator`, `return`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.221-222)
+
+```javascript
+Stack3.from = function (iterable) { const stack = this (); for ( let element of iterable) { stack.push(element); } return stack; } Pair1.from = (iterable) => ( function iterationToList (iteration) { const {done, value} = iteration.next(); return done ? EMPTY : Pair1(value, iterationToList(iteration)); })(iterable[Symbol.iterator]())
+```

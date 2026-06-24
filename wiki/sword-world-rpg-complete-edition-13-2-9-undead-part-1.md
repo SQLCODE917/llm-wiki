@@ -66,3 +66,21 @@ Monster Level=8 Rarity=15 Agility=7 Movement Speed=7 Number=One to several Frequ
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.214-221)
 
 Monster Level=Based on previous Rarity=16 Agility=Half of previous Movement Speed=Half of previous Number=Several to dozens Frequency=Rare Intellect=Low Reaction=Command-based
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-d3e9a016ce2d599e` formula
+
+Relation: nearby source page; matched terms `creatures`, `human`, `intellect`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Agility=14 Movement Speed=4/7 (air) Number=One Frequency=Very rare Intellect=Human Reaction=Neutral Attack Points=Barehanded:8 (1) Strike Points=1
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]: `technical-atom-ee4383b8d99ae860` formula
+
+Relation: nearby source page; matched terms `commands`, `creatures`, `intellect`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+
+Rarity=12 Agility=12 Movement Speed=13 Number=One Frequency=Rare Intellect=Obeys Commands Reaction=Command-based Attack Points=Arms:15 (8) Strike Points=16

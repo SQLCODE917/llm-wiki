@@ -68,3 +68,37 @@ Agility=16 Movement Speed=6/30 (air) Number=One Frequency=Very Rare Intellect=Hu
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
 
 Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=15/11 (4)
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]]: `technical-atom-3b5d16540d1297cf` formula
+
+Relation: nearby source page; matched terms `beasts`, `level`, `magical`, `monster`, `mythical`, `rarity`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Monster Level=6 Rarity=12
+
+### From [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]]: `technical-atom-d06c8edcd1d95fce` formula
+
+Relation: nearby source page; matched terms `beasts`, `level`, `magical`, `monster`, `mythical`, `rarity`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.188-198)
+
+Monster Level=3 Rarity=13 Agility=6 Movement Speed=6 Number=One to several
+
+### From [[sword-world-rpg-complete-edition-13-2-4-spirits]]: `technical-atom-6614140553711ba6` formula
+
+Relation: nearby source page; matched terms `level`, `monster`, `rarity`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.181-184)
+
+Monster Level=2 Rarity=12 (However, a shaman always knows)
+
+### From [[sword-world-rpg-complete-edition-13-2-2-fae]]: `technical-atom-9f940cfcb3c10e04` formula
+
+Relation: nearby source page; matched terms `level`, `monster`, `rarity`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.176-180)
+
+## Monster Level=4 Rarity=9 Agility=16

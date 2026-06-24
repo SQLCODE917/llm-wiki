@@ -67,3 +67,37 @@ If you’re fighting with the thief skill, the required strength for _both_ weap
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
 
 If you attack with only _one_ hand, there is _no_ penalty, and if you attack with _both_ hands, the penalty is only _-2_ for each.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-16-5-combat-options]]: `technical-atom-af5c7c62e233624b` table-row
+
+Relation: nearby source page; matched terms `character`, `required`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.264-268)
+
+|Boomerang|20 + (Character's Strength - Required Strength) x 2|
+
+### From [[sword-world-rpg-complete-edition-16-5-combat-options]]: `technical-atom-79a0cf6fe57cf732` table-row
+
+Relation: nearby source page; matched terms `character`, `required`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.264-268)
+
+|Club|20 + (Character's Strength - Required Strength) x 2|
+
+### From [[sword-world-rpg-complete-edition-16-5-combat-options]]: `technical-atom-e092710f61b79828` table-row
+
+Relation: nearby source page; matched terms `character`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.264-268)
+
+|Hand Ax|20 + Character's Strength|
+
+### From [[sword-world-rpg-complete-edition-16-5-combat-options]]: `technical-atom-1421191d5d43325a` table-row
+
+Relation: nearby source page; matched terms `character`, `strength`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.264-268)
+
+|Javelin|30 + Character's Strength x 3|

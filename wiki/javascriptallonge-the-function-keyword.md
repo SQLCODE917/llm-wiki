@@ -84,3 +84,39 @@ Citation: (raw/javascriptallonge.pdf p.74-75)
 ```javascript
 someBackboneView.on('click', function clickHandler () { //... });
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-rebinding]]: `technical-atom-7c21d7d7a5e7d689` exception
+
+Relation: nearby source page; matched terms `binding`, `bound`, `but`, `function`, `name`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.
+
+### From [[javascriptallonge-function-declarations]]: `technical-atom-824639bdc70ea377` exception
+
+Relation: nearby source page; matched terms `declaration`, `function`, `like`, `looks`
+
+Citation: (raw/javascriptallonge.pdf p.65-66)
+
+It's called a function declaration statement , and it looks a lot like a named function expression, only we use it as a statement:
+
+### From [[javascriptallonge-naming-functions]]: `technical-atom-948ee531147ee69c` formula
+
+Relation: nearby source page; matched terms `function`, `functions`, `name`
+
+Citation: (raw/javascriptallonge.pdf p.62)
+
+It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 .
+
+### From [[javascriptallonge-function-declaration-caveats-34]]: `technical-atom-4140475af23ddd75` code
+
+Relation: nearby source page; matched terms `declaration`, `function`, `variable`
+
+Citation: (raw/javascriptallonge.pdf p.66-67)
+
+```javascript
+( function (camelCase) { return fizzbuzz(); if (camelCase) { function fizzbuzz () { return "Fizz" + "Buzz"; } } else { function fizzbuzz () { return "Fizz" + "Buzz"; } } })( true ) //=> 'FizzBuzz'? Or ERROR: Can't find variable: fizzbuzz?
+```

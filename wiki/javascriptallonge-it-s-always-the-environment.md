@@ -68,12 +68,6 @@ Citation: (raw/javascriptallonge.pdf p.46-47)
 The environment for ((y) => x)(2) is actually {y: 2, '..': {x: 1, ...}} .
 ```
 
-### `technical-atom-6582cc9837c81ff3` requirement
-
-Citation: (raw/javascriptallonge.pdf p.46-47)
-
-So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
-
 ### `technical-atom-562cfa7c3d8654ff` code
 
 Citation: (raw/javascriptallonge.pdf p.46-47)
@@ -81,3 +75,43 @@ Citation: (raw/javascriptallonge.pdf p.46-47)
 ```
 And now you can guess how we evaluate ((y) => x)(2) in the environment {y: 2, '..': {x: 1, ...}} .
 ```
+
+### `technical-atom-6582cc9837c81ff3` requirement
+
+Citation: (raw/javascriptallonge.pdf p.46-47)
+
+So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
+
+## Related technical details
+
+### From [[javascriptallonge-which-came-first-the-chicken-or-the-egg]]: `technical-atom-93fe1495d6cb435a` requirement
+
+Relation: nearby source page; matched terms `always`, `environment`, `functions`, `has`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.47-48)
+
+JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions.
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-e8199c3947c572cb` requirement
+
+Relation: nearby source page; matched terms `always`, `arguments`, `closures`, `function`, `our`, `reference`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+When we combine our knowledge of value types, reference types, arguments, and closures, we'll understand why this function always evaluates to true no matter what argument 26 you apply it to:
+
+### From [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]]: `technical-atom-592864b8cc8594c9` procedure
+
+Relation: nearby source page; matched terms `always`, `environment`, `functions`, `javascript`, `parent`
+
+Citation: (raw/javascriptallonge.pdf p.47)
+
+JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one.
+
+### From [[javascriptallonge-call-by-sharing]]: `technical-atom-247ce19e93a86869` requirement
+
+Relation: nearby source page; matched terms `environment`, `function`, `javascript`, `when`
+
+Citation: (raw/javascriptallonge.pdf p.42-43)
+
+There is a property that JavaScript strictly maintains: When a value-any value-is passed as an argument to a function, the value bound in the function's environment must be identical to the original.

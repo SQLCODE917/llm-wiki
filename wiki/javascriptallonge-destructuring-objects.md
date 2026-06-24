@@ -57,3 +57,43 @@ Citation: (raw/javascriptallonge.pdf p.136-137)
 ```javascript
 const abbrev = ({name: { first, last }, occupation: { title } }) => return { first, last, title}; } abbrev(user) //=> {"first":"Reginald","last":"Braithwaite","title":"Author"}
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-c8c475f5a5275af7` code
+
+Relation: nearby source page; matched terms `can`, `code`, `javascript`, `objects`, `things`, `used`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+```javascript
+const remember = ["the milk", "the coffee beans", "the biscotti"]; And they can be used to store heterogeneous things in various levels of structure:
+```
+
+### From [[javascriptallonge-literal-object-syntax]]: `technical-atom-d57202306c2b8fa1` code
+
+Relation: nearby source page; matched terms `code`, `name`, `object`, `objects`, `use`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.133-136)
+
+```javascript
+{ year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 } //=> false Objects use [] to access the values by name, using a string: { year: 2012, month: 6, day: 14 }['day'] //=> 14
+```
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-08c736021f08b986` code
+
+Relation: nearby source page; matched terms `code`, `javascript`, `name`, `objects`, `title`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+```javascript
+const NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES = 1; const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
+```
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-b91f3af2d19fe2cf` procedure
+
+Relation: nearby source page; matched terms `can`, `javascript`, `name`, `objects`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+Dictionaries store key-value pairs, so instead of binding NAME to 0 and then storing a name in an array at index 0 , we can bind a name directly to name in a dictionary, and we let JavaScript sort out whether the implementation is a list of key-value pairs, a hashed collection, a tree of some sort, or anything else.

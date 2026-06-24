@@ -50,3 +50,13 @@ Citation: (raw/javascriptallonge.pdf p.55-57)
 ```javascript
 ((diameter_fn) => { const PI = 3; return diameter_fn(2) })( (() => { const PI = 3.14159265; return (diameter) => diameter * PI })() ) //=> 6.2831853
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-rebinding]]: `technical-atom-7c21d7d7a5e7d689` exception
+
+Relation: nearby source page; matched terms `binding`, `const`, `function`, `scope`
+
+Citation: (raw/javascriptallonge.pdf p.60-61)
+
+We can shadow it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope.

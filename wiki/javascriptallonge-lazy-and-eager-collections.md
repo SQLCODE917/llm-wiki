@@ -59,12 +59,6 @@ Citation: (raw/javascriptallonge.pdf p.256-260)
 {"car": 2, "cdr": {"car": 4, "cdr": {"car": 6, "cdr": {"car": 8, "cdr": {"car": 10, "cdr": {} } } } } }
 ```
 
-### `technical-atom-e475d2ad170b8179` exception
-
-Citation: (raw/javascriptallonge.pdf p.246)
-
-Some methods are only added to a few collections, some are added to all.
-
 ### `technical-atom-abd3ac01fe75ed23` requirement
 
 Citation: (raw/javascriptallonge.pdf p.246)
@@ -76,3 +70,51 @@ That's a sign that we should work at a higher level of abstraction, and working 
 Citation: (raw/javascriptallonge.pdf p.246)
 
 This 'fat object' style springs from a misunderstanding: When we say a collection should know how to perform a map over itself, we don't need for the collection to handle every single detail.
+
+### `technical-atom-e475d2ad170b8179` exception
+
+Citation: (raw/javascriptallonge.pdf p.246)
+
+Some methods are only added to a few collections, some are added to all.
+
+## Related technical details
+
+### From [[javascriptallonge-lazy-collection-operations]]: `technical-atom-73ed00db8219d949` code
+
+Relation: nearby source page; matched terms `collection`, `filter`, `lazy`, `map`, `pair`, `reduce`
+
+Citation: (raw/javascriptallonge.pdf p.253-256)
+
+```javascript
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10] .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0) Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0)
+```
+
+### From [[javascriptallonge-implementing-methods-with-iteration]]: `technical-atom-0432dbb698bbba10` code
+
+Relation: nearby source page; matched terms `filter`, `map`, `methods`, `pair`, `reduce`
+
+Citation: (raw/javascriptallonge.pdf p.246-253)
+
+```javascript
+// Pair and Stack in action Stack.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() //=> 100 Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0)
+```
+
+### From [[javascriptallonge-lazy-collection-operations]]: `technical-atom-f67fb88b9bd0b506` code
+
+Relation: nearby source page; matched terms `collection`, `filter`, `lazy`, `map`
+
+Citation: (raw/javascriptallonge.pdf p.253-256)
+
+```javascript
+Stack.from([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first()
+```
+
+### From [[javascriptallonge-lazy-collection-operations]]: `technical-atom-94dd91d8f0291f4d` code
+
+Relation: nearby source page; matched terms `collection`, `filter`, `lazy`, `map`
+
+Citation: (raw/javascriptallonge.pdf p.253-256)
+
+```javascript
+const Numbers = Object.assign({ [Symbol.iterator]: () => { let n = 0; return { next: () => ({done: false , value: n++}) } } }, LazyCollection); const firstCubeOver1234 = Numbers .map((x) => x * x * x) .filter((x) => x > 1234) .first() //=> 1331
+```

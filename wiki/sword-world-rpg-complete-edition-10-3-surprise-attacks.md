@@ -66,3 +66,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.138-142)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.138-142)
 
 |Human|-4|+8|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-f55bcc10146b8ede` exception
+
+Relation: nearby source page; matched terms `game`, `level`, `master`, `skill`, `they`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.
+
+### From [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]: `technical-atom-70b253bfcf7be9fb` table-row
+
+Relation: nearby source page; matched terms `chance`, `greater`, `have`, `score`, `should`, `skill`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.135-138)
+
+|6|-1|Almost guaranteed if you have the skill. Even amateurs have a greater chance of success.|
+
+### From [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]: `technical-atom-b764f7adb6280875` table-row
+
+Relation: nearby source page; matched terms `can`, `have`, `score`, `should`, `skill`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.135-138)
+
+|5|-2|If you have the skill, it's almost a sure-fre task. Even amateurs can be successful.|
+
+### From [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]: `technical-atom-b8d344c3a9b2f9c2` table-row
+
+Relation: nearby source page; matched terms `can`, `have`, `score`, `should`, `skill`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.135-138)
+
+|7|0|If you have the skill, you can expect success. For amateurs, it's 50-50.|

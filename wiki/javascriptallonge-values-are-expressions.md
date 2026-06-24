@@ -40,3 +40,39 @@ Citation: (raw/javascriptallonge.pdf p.19-20)
 Citation: (raw/javascriptallonge.pdf p.19-20)
 
 Now we know what was missing with our 'coffee grounds plus hot water' example.
+
+## Related technical details
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-ce645dd09a6b9040` worked-example
+
+Relation: nearby source page; matched terms `but`, `example`, `identity`, `javascript`, `not`, `number`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+This corresponds to comparing two JavaScript values that have the same type but different 'content.' For example, the number 5 is not the same thing as the number 2 .
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-29882a09023a1a70` worked-example
+
+Relation: nearby source page; matched terms `example`, `identity`, `not`, `number`, `same`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+For example, the string "2" is not the same thing as the number 2 .
+
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-62ac41d9e7c334de` code
+
+Relation: nearby source page; matched terms `code`, `identity`, `javascript`, `not`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.21)
+
+```
+In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:
+```
+
+### From [[javascriptallonge-why-the-six-edition]]: `technical-atom-4a46581d403c3e4f` worked-example
+
+Relation: nearby source page; matched terms `example`, `javascript`, `not`
+
+Citation: (raw/javascriptallonge.pdf p.7-9)
+
+For example, JavaScript did not include block-structured variables.

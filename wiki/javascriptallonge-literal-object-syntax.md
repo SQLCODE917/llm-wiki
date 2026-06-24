@@ -82,3 +82,43 @@ Citation: (raw/javascriptallonge.pdf p.133-136)
 ```javascript
 const SecretDecoderRing = { encode: function (plaintext) { return plaintext .split('') .map( char => char .charCodeAt() ) .map( code => code + 1 ) .map( code => String.fromCharCode(code) ) .join(''); }, decode: function (cyphertext) { return cyphertext .split('') .map( char => char .charCodeAt() ) .map( code => code - 1 ) .map( code => String.fromCharCode(code) ) .join(''); } }
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-b91f3af2d19fe2cf` procedure
+
+Relation: nearby source page; matched terms `anything`, `array`, `binding`, `can`, `else`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+Dictionaries store key-value pairs, so instead of binding NAME to 0 and then storing a name in an array at index 0 , we can bind a name directly to name in a dictionary, and we let JavaScript sort out whether the implementation is a list of key-value pairs, a hashed collection, a tree of some sort, or anything else.
+
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-c8c475f5a5275af7` code
+
+Relation: nearby source page; matched terms `can`, `javascript`, `objects`, `used`
+
+Citation: (raw/javascriptallonge.pdf p.132)
+
+```javascript
+const remember = ["the milk", "the coffee beans", "the biscotti"]; And they can be used to store heterogeneous things in various levels of structure:
+```
+
+### From [[javascriptallonge-destructuring-objects]]: `technical-atom-2fa843b604012360` code
+
+Relation: nearby source page; matched terms `can`, `javascript`, `name`, `objects`
+
+Citation: (raw/javascriptallonge.pdf p.136-137)
+
+```javascript
+const user = { name: { first: "Reginald", last: "Braithwaite" }, occupation: { title: "Author", responsibilities: [ "JavaScript Allongé", "JavaScript Spessore", "CoffeeScript Ristretto" ] } }; user.name.last //=> "Braithwaite" user.occupation.title //=> "Author" And we can also write: const {name: { first: given, last: surname}, occupation: { title: title } er; surname //=> "Braithwaite" title //=> "Author"
+```
+
+### From [[javascriptallonge-destructuring-objects]]: `technical-atom-5d1c487ec919df2a` code
+
+Relation: nearby source page; matched terms `name`, `objects`, `same`, `syntax`
+
+Citation: (raw/javascriptallonge.pdf p.136-137)
+
+```javascript
+const description = ({name: { first }, occupation: { title } }) => ` ${ first } is a ${ title } `; description(user) //=> "Reginald is a Author" And that same syntax works for literals: {
+```

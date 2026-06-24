@@ -71,3 +71,41 @@ We can map over large arrays without incurring all the memory and performance ov
 Citation: (raw/javascriptallonge.pdf p.120-121)
 
 And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization.
+
+## Related technical details
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-d64971ca777393ea` exception
+
+Relation: nearby source page; matched terms `call`, `itself`, `length`, `not`, `obvious`, `recursive`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+The problem can be stated in such a way that the answer is obvious: length does not call itself in tail position, because it has to do two pieces of work, and while one of them is in the recursive call to length , the other happens after the recursive call.
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-7f8f26fdd9419454` exception
+
+Relation: nearby source page; matched terms `call`, `making`, `memory`, `not`, `tail`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+And in fact, it does exactly that: It throws the stack frame away, and does not consume extra memory when making a maybe -wrapped call.
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-d96c8d42a851c268` code
+
+Relation: nearby source page; matched terms `call`, `function`, `length`, `tail`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+```javascript
+const maybe = (fn) => function (...args) { if (args.length === 0) { return ; } else { for ( let arg of args) { if (arg == null ) return ; } return fn.apply( this , args); } }
+```
+
+### From [[javascriptallonge-tail-call-optimization]]: `technical-atom-3ab563ed5ac832bf` code
+
+Relation: nearby source page; matched terms `call`, `length`, `tail`
+
+Citation: (raw/javascriptallonge.pdf p.119)
+
+```javascript
+const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest);
+```

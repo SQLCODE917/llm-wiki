@@ -41,3 +41,25 @@ Citation: (raw/javascriptallonge.pdf p.278-279)
 ```javascript
 statelessNaughtsAndCrosses([ 'o', 'x', ' ', ' ', ' ', ' ', 'o', 'x', ' ' ]) //=> 3
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]]: `technical-atom-37fcc5b39da4d3d0` code
+
+Relation: nearby source page; matched terms `function`, `get`, `move`
+
+Citation: (raw/javascriptallonge.pdf p.279-280)
+
+```javascript
+const aNaughtsAndCrossesGame = statefulNaughtsAndCrosses(); // our opponent makes the first move aNaughtsAndCrossesGame() //=> 0 // then we move, and get its next move back aNaughtsAndCrossesGame(1) //=> 6 // then we move, and get its next move back aNaughtsAndCrossesGame(4) //=> 3
+```
+
+### From [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]]: `technical-atom-c33ecf682ee5c6e8` code
+
+Relation: nearby source page; matched terms `function`, `get`, `move`
+
+Citation: (raw/javascriptallonge.pdf p.279-280)
+
+```javascript
+if (state[x] === ' ') { state[x] = 'x'; } else throw "occupied!" } let o = moveLookupTable[state]; state[o] = 'o'; return o; } }; const aNaughtsAndCrossesGame = statefulNaughtsAndCrosses(); // our opponent makes the first move aNaughtsAndCrossesGame() //=> 0 // then we move, and get its next move back aNaughtsAndCrossesGame(1) //=> 6 // then we move, and get its next move back aNaughtsAndCrossesGame(4) //=> 3
+```

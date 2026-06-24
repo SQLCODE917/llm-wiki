@@ -66,3 +66,13 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.277-279)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.277-279)
 
 |Electric-type|Lightning, Lightning Bind|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]: `technical-atom-59223c68d81ce8d9` exception
+
+Relation: nearby source page; matched terms `cannot`, `characters`, `rules`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
+
+In the basic rules, characters cannot hold separate weapons in each hand.

@@ -48,3 +48,41 @@ Citation: (raw/javascriptallonge.pdf p.90-91)
 Citation: (raw/javascriptallonge.pdf p.90-91)
 
 __slice.call(arguments, 0, fn.length - 1) : []), restOfTheArgsList = __slice.call(arguments, fn.length - 1), args = (fn.length <= arguments.length ?
+
+## Related technical details
+
+### From [[javascriptallonge-overcoming-limitations]]: `technical-atom-da5e8aae05dc73cc` procedure
+
+Relation: nearby source page; matched terms `arguments`, `could`, `decorator`, `function`, `more`, `one`
+
+Citation: (raw/javascriptallonge.pdf p.91-92)
+
+But if we wanted to write left-variadic functions, could we make ourselves a leftVariadic decorator to turn a function with one or more arguments into a left-variadic function?
+
+### From [[javascriptallonge-left-variadic-destructuring]]: `technical-atom-96b05e6472863213` code
+
+Relation: nearby source page; matched terms `butfirst`, `first`, `variadic`
+
+Citation: (raw/javascriptallonge.pdf p.92-93)
+
+```javascript
+const [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid']; first //=> 'why' butFirst //=> ["hello","there","little","droid"]
+```
+
+### From [[javascriptallonge-truthiness-and-the-ternary-operator]]: `technical-atom-ce4e1fdf33c4d740` procedure
+
+Relation: nearby source page; matched terms `first`, `more`, `one`, `procedure`
+
+Citation: (raw/javascriptallonge.pdf p.95-96)
+
+We'll look at them in a moment, but first, we'll look at one more operator.
+
+### From [[javascriptallonge-left-variadic-destructuring]]: `technical-atom-4a5a829e19a8067b` code
+
+Relation: nearby source page; matched terms `function`, `last`, `return`, `slice`, `variadic`
+
+Citation: (raw/javascriptallonge.pdf p.92-93)
+
+```javascript
+const leftGather = (outputArrayLength) => { return function (inputArray) { return [inputArray.slice(0, inputArray.length - outputArrayLength + 1)].conc\ at( inputArray.slice(inputArray.length - outputArrayLength + 1) ) } }; const [butLast, last] = leftGather(2)(['why', 'hello', 'there', 'little', 'droid\ ']); butLast //=> ['why', 'hello', 'there', 'little'] last //=> 'droid'
+```

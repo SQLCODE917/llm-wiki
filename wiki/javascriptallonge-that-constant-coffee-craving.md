@@ -48,3 +48,45 @@ Citation: (raw/javascriptallonge.pdf p.49-50)
 Citation: (raw/javascriptallonge.pdf p.49-50)
 
 Let's revisit a very simple example:
+
+## Related technical details
+
+### From [[javascriptallonge-inside-out]]: `technical-atom-d9583bd5ee732714` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+(diameter) => ((PI) => diameter * PI)(3.14159265)
+```
+
+### From [[javascriptallonge-inside-out]]: `technical-atom-f53f1a1127cb197d` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+((diameter) => diameter * 3.14159265)(2) //=> 6.2831853 ((PI) => (diameter) => diameter * PI )(3.14159265)(2) //=> 6.2831853 ((diameter) => ((PI) => diameter * PI)(3.14159265))(2) //=> 6.2831853
+```
+
+### From [[javascriptallonge-inside-out]]: `technical-atom-b57edf9bed903da2` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.50-51)
+
+```javascript
+(diameter) => // ...
+```
+
+### From [[javascriptallonge-const]]: `technical-atom-0fff76e11a2f0259` code
+
+Relation: nearby source page; matched terms `diameter`
+
+Citation: (raw/javascriptallonge.pdf p.150-151)
+
+```javascript
+(diameter, PI) => diameter * PI
+```

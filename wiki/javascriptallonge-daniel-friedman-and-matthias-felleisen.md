@@ -22,3 +22,13 @@ JavaScript Allongé was inspired by The Little Schemer by Daniel Friedman and Ma
 Citation: (raw/javascriptallonge.pdf p.291)
 
 104 http://www.amzn.com/0262560992?tag=raganwald001-20
+
+## Related technical details
+
+### From [[javascriptallonge-about-javascript-allong]]: `technical-atom-f7732bf2ea29844c` exception
+
+Relation: nearby source page; matched terms `allong`, `javascript`
+
+Citation: (raw/javascriptallonge.pdf p.7)
+
+JavaScript Allongé teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down.

@@ -83,3 +83,37 @@ Citation: (raw/javascriptallonge.pdf p.183-186)
 ```
 const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ?
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-ac4a59dfcff9d986` worked-example
+
+Relation: nearby source page; matched terms `arrays`, `data`, `functions`, `linked`, `list`, `lists`
+
+Citation: (raw/javascriptallonge.pdf p.177-179)
+
+For example, we don't need arrays to represent lists, or even POJOs to represent nodes in a linked list.
+
+### From [[javascriptallonge-a-return-to-backward-thinking]]: `technical-atom-e2b2c0d8e3d358fe` requirement
+
+Relation: nearby source page; matched terms `but`, `can`, `data`, `functions`, `structures`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.189-190)
+
+It is a tenet of Object-Oriented Programming, but it is not exclusive to OOP: We can and should design data structures to hide implementation information from the code that use them, whether we are working with functions, objects, or both.
+
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-5b37e3daf21d3949` worked-example
+
+Relation: nearby source page; matched terms `data`, `function`, `functions`, `list`, `pojos`
+
+Citation: (raw/javascriptallonge.pdf p.177-179)
+
+For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-9c77a5de5c2d57ec` procedure
+
+Relation: nearby source page; matched terms `data`, `functions`, `like`
+
+Citation: (raw/javascriptallonge.pdf p.177-179)
+
+A very long time ago, mathematicians like Alonzo Church, Moses Schönfinkel, Alan Turning, and Haskell Curry and asked themselves if we really needed all these features to perform computations.

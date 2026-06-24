@@ -82,3 +82,39 @@ Citation: (raw/javascriptallonge.pdf p.145-147)
 ```javascript
 const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed }); const copy = (node) => reverse(reverse(node));
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-mutation-and-data-structures]]: `technical-atom-6fbbc51a9f84f2a8` code
+
+Relation: nearby source page; matched terms `brand`, `but`, `copy`, `data`, `linked`, `lists`
+
+Citation: (raw/javascriptallonge.pdf p.143-145)
+
+```javascript
+const EMPTY = {}; const OneToFive = { first: 1, rest: { first: 2, rest: { first: 3, rest: { first: 4, rest: { first: 5, rest: EMPTY } } } } }; OneToFive //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"fou\ r","rest":{"first":"five","rest":{}}}}}} const ThreeToFive = OneToFive.rest.rest; ThreeToFive //=> {"first":3,"rest":{"first":4,"rest":{"first":5,"rest":{}}}} ThreeToFive.first = "three"; ThreeToFive.rest.first = "four"; ThreeToFive.rest.rest.first = "five"; ThreeToFive //=> {"first":"three","rest":{"first":"four","rest":{"first":"five","rest":{}}\ }} OneToFive //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"fou\ r","rest":{"first":"five","rest":{}}}}}} Changes made to ThreeToFive affect OneToFive , because they share the same structure. When we wrote ThreeToFive = OneToFive.rest.rest; , we weren't making a brand new copy of {"first":3,"rest":{"fir we were getting a reference to the same chain of nodes. Structure sharing like this is what makes linked lists so fast for taking everything but the first item
+```
+
+### From [[javascriptallonge-mutation-and-data-structures]]: `technical-atom-716ed5f15b0b87c8` procedure
+
+Relation: nearby source page; matched terms `about`, `but`, `data`, `list`, `mutation`, `new`
+
+Citation: (raw/javascriptallonge.pdf p.143-145)
+
+But after returning the new list, we then become conservative about mutation.
+
+### From [[javascriptallonge-mutation-and-data-structures]]: `technical-atom-b7f80818a51816bb` formula
+
+Relation: nearby source page; matched terms `brand`, `copy`, `data`, `making`, `mutation`, `new`
+
+Citation: (raw/javascriptallonge.pdf p.143-145)
+
+When we wrote ThreeToFive = OneToFive.rest.rest; , we weren't making a brand new copy of {"first":3,"rest":{"fir we were getting a reference to the same chain of nodes.
+
+### From [[javascriptallonge-mutation-and-data-structures]]: `technical-atom-696e87e5d432d18d` procedure
+
+Relation: nearby source page; matched terms `copy`, `data`, `make`, `mutation`, `structures`
+
+Citation: (raw/javascriptallonge.pdf p.143-145)
+
+Whereas destructuring an array with [first, ...rest] does make a copy, so:

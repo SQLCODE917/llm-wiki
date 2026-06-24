@@ -18,18 +18,6 @@ A comprehensive modular guide to JavaScript fundamentals and advanced techniques
 
 ## Technical details
 
-### `technical-atom-a21f6839ff55796a` requirement
-
-Citation: (raw/javascriptallonge.pdf p.99)
-
-is a logical operator, it always returns true or false .
-
-### `technical-atom-1bb3350d91858991` requirement
-
-Citation: (raw/javascriptallonge.pdf p.99)
-
-- The ternary operator ( ?: ), || , and && are control flow operators, they do not always return true or false , and they have short-cut semantics.
-
 ### `technical-atom-37102d1f47fd8468` procedure
 
 Citation: (raw/javascriptallonge.pdf p.99)
@@ -47,3 +35,41 @@ Although we showed how to use tail calls to map and fold over arrays with [first
 Citation: (raw/javascriptallonge.pdf p.99)
 
 Using a generator instead of writing an iterator object that has a .next() method allows us to write code that can be much simpler for cases like recursive iterations or state patterns.
+
+### `technical-atom-a21f6839ff55796a` requirement
+
+Citation: (raw/javascriptallonge.pdf p.99)
+
+is a logical operator, it always returns true or false .
+
+### `technical-atom-1bb3350d91858991` requirement
+
+Citation: (raw/javascriptallonge.pdf p.99)
+
+- The ternary operator ( ?: ), || , and && are control flow operators, they do not always return true or false , and they have short-cut semantics.
+
+## Related technical details
+
+### From [[javascriptallonge-so-why-arrays]]: `technical-atom-8b9bc553c75c20d8` procedure
+
+Relation: nearby source page; matched terms `javascript`, `making`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.131)
+
+If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
+
+### From [[javascriptallonge-matthew-knox]]: `technical-atom-f4ef81395bb8bad8` procedure
+
+Relation: nearby source page; matched terms `fundamentals`, `javascript`, `state`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.14-15)
+
+It starts with the fundamentals of values, functions, and objects, and then guides you through JavaScript from the inside with exploratory bits of code that illustrate scoping, combinators, context, state, prototypes, and constructors.
+
+### From [[javascriptallonge-a-rich-aroma-basic-numbers]]: `technical-atom-2cf4c49c142c3894` exception
+
+Relation: nearby source page; matched terms `javascript`, `like`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.24-25)
+
+Like most programming languages, JavaScript does not allow us to use commas to separate groups of digits.

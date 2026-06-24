@@ -68,3 +68,29 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.273-276)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.273-276)
 
 |51 – 60|All ability scores reduced to 5/6, except intelligence and mental power remain the same|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]: `technical-atom-83ca853abb8222fb` exception
+
+Relation: nearby source page; matched terms `only`, `there`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268-273)
+
+If you attack with only _one_ hand, there is _no_ penalty, and if you attack with _both_ hands, the penalty is only _-2_ for each.
+
+### From [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]: `technical-atom-f4911d27450b0963` procedure
+
+Relation: nearby source page; matched terms `called`, `these`, `they`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.280-290)
+
+Then, they made the material world for beings with physical forms to inhabit, and finally, they created an intermediate world called the fairy world to connect these two distinct realms.
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]: `technical-atom-ada6725f4988acf9` formula
+
+Relation: nearby source page; matched terms `can`, `list`, `you`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
+
+Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world

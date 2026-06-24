@@ -64,3 +64,37 @@ Base Mental Power Cost=15
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
 
 Distance=Touch
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-383d28a3555bcd0e` formula
+
+Relation: nearby source page; matched terms `ancient`, `area`, `cost`, `duration`, `list`, `magic`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=3 Distance=10 meters Area=One weapon Duration=18 Rounds Effect=+5 to weapon's strike power Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-f4b14de1efb431cc` formula
+
+Relation: nearby source page; matched terms `ancient`, `area`, `duration`, `list`, `magic`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Area=One Duration=18 rounds Effect=+2 to mental power resistance Type=Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]]: `technical-atom-b74462b44b55962f` worked-example
+
+Relation: nearby source page; matched terms `ancient`, `magic`, `spell`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+
+For example, suppose a fake floor is created above a pit using a _Create Image_ (ancient magic) spell.
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-a13b18a506293915` formula
+
+Relation: nearby source page; matched terms `ancient`, `area`, `duration`, `list`, `magic`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Distance=Touch Area=One thing that opens and closes Duration=Instant Effect=Unlocks locks, etc., opens doors, lids, etc.

@@ -66,3 +66,37 @@ Enchanter=Many
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-260)
 
 Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-11a0235c326bd216` formula
+
+Relation: nearby source page; matched terms `base`, `enchanter`, `item`, `list`, `magical`, `price`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Enchanter=Miyuki Kiyomatsu/Group SNE Base Trade Price = 3600 Yen
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-a6a9260c767ef4ca` formula
+
+Relation: nearby source page; matched terms `base`, `item`, `list`, `magical`, `price`, `trade`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Required Strength/Base Trade Price=See description
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]]: `technical-atom-e5d4a70ca47a3fa1` table-row
+
+Relation: nearby source page; matched terms `item`, `list`, `magical`, `price`, `shield`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+|Shield|Price<br>(Gamels)|
+
+### From [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]: `technical-atom-447055856f4970f2` formula
+
+Relation: nearby source page; matched terms `form`, `item`, `list`, `magical`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.242-256)
+
+Form= An A4-sized, 352-page hardcover book

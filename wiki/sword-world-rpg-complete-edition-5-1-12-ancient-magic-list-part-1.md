@@ -66,3 +66,37 @@ Area=One Duration=18 rounds Effect=+2 to mental power resistance Type=Expansion=
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
 
 Distance=Caster
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]]: `technical-atom-cda76921e98875ca` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `list`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=12
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]]: `technical-atom-95228eb7c67a6fef` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `list`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=15
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]]: `technical-atom-5afcfac59c9daca1` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `list`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=30
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]]: `technical-atom-b184a4df1afa2778` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `list`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=24

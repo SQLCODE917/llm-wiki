@@ -68,3 +68,37 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.109-113)
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.109-113)
 
 |10-11|Cannot act while the song continues.|
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]]: `technical-atom-6a6cd43845858a28` formula
+
+Relation: nearby source page; matched terms `different`, `effect`, `them`, `types`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.84-95)
+
+Effect=Summon different types of spirits and take complete control of them Type=Target score
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]]: `technical-atom-dd955ecb999bb383` formula
+
+Relation: nearby source page; matched terms `effect`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Base Mental Power Cost=40 Distance=Touch Area=One Soul Duration=Instant Effect=Rescue an undead soul Type=Ritual Expansion=Final score Resist=Negated effect
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]]: `technical-atom-254694fde76de186` formula
+
+Relation: nearby source page; matched terms `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-108)
+
+Base Mental Power Cost=50
+
+### From [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]: `technical-atom-61d8412d6859d098` formula
+
+Relation: nearby source page; matched terms `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.99-104)
+
+Base Mental Power Cost=5 Distance=10 meters

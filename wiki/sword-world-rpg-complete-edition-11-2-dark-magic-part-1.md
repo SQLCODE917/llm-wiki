@@ -66,3 +66,37 @@ Distance=Touch Area=One
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
 
 Effect=Reduces the target's mental power (points) by double the mental power consumed by the caster.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]]: `technical-atom-7e632d6549b0a672` formula
+
+Relation: nearby source page; matched terms `dark`, `evil`, `magic`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+**[ Evil Impulse ] (Spell Level=4)**
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]]: `technical-atom-5616d4a757e3f37b` formula
+
+Relation: nearby source page; matched terms `dark`, `evil`, `magic`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+Effect=Cause the target to impulsively commit evil acts
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-face73dee3665350` procedure
+
+Relation: nearby source page; matched terms `magic`, `such`, `who`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+There are also cases such as a friend who was a priest of Faris who, in order to maintain order, turned in his own brother, who was plotting a rebellion, and after grief about his actions, awoke to the teachings of _The Nameless God of Madness_ (though usually you'd just say _they went mad_ about things like this...)
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-f55bcc10146b8ede` exception
+
+Relation: nearby source page; matched terms `magic`, `master`, `only`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.

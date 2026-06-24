@@ -80,3 +80,43 @@ const and let bind names.
 Citation: (raw/javascriptallonge.pdf p.151-154)
 
 First, var is not block scoped, it's function scoped, just like function declarations:
+
+## Related technical details
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-626cd93fa12868d4` formula
+
+Relation: nearby source page; matched terms `const`, `let`, `var`, `way`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+Hopefully, you can think of a faster way to calculate this sum. 72 And perhaps you have noticed that var i = 1 is tucked away instead of being at the top as we prefer. But is this ever a problem?
+
+### From [[javascriptallonge-yes-consider-this-variation]]: `technical-atom-91f1657fb684d2b2` code
+
+Relation: nearby source page; matched terms `function`, `name`, `names`, `var`
+
+Citation: (raw/javascriptallonge.pdf p.155-157)
+
+```javascript
+var introductions = [], names = ['Karl', 'Friedrich', 'Gauss']; for ( var i = 0; i < 3; i++) { introductions[i] = (soAndSo) => `Hello, ${ soAndSo } , my name is ${ names[i] } ` } introductions //=> [ [Function], // [Function], // [Function] ]
+```
+
+### From [[javascriptallonge-yes-consider-this-variation]]: `technical-atom-fe0fc837e583f22a` code
+
+Relation: nearby source page; matched terms `function`, `name`, `names`, `var`
+
+Citation: (raw/javascriptallonge.pdf p.155-157)
+
+```javascript
+var introductions = [], names = ['Karl', 'Friedrich', 'Gauss'], i = undefined ; for (i = 0; i < 3; i++) { introductions[i] = function (soAndSo) { return "Hello, " + soAndSo + ", my name is " + names[i] } } introductions
+```
+
+### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-cddb51c14221fbc7` code
+
+Relation: nearby source page; matched terms `const`, `let`, `var`
+
+Citation: (raw/javascriptallonge.pdf p.154)
+
+```javascript
+var sum = 0; for ( var i = 1; i <= 100; i++) { sum = sum + i } sum #=> 5050
+```

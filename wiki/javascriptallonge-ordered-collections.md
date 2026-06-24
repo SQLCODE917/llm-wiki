@@ -49,3 +49,45 @@ for ( const i of RandomNumbers) { console.log(i) } //=> 0.7845381607767195 0.495
 Citation: (raw/javascriptallonge.pdf p.216-217)
 
 Whether you work with the same iterator over and over, or get a fresh iterable every time, you are always going to get fresh random numbers.
+
+## Related technical details
+
+### From [[javascriptallonge-basic-operations-on-iterables]]: `technical-atom-3f7ceba972853444` code
+
+Relation: nearby source page; matched terms `collection`, `get`, `iterable`, `iterables`, `iterator`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.284)
+
+```javascript
+stack.push(2000); stack.push(10); stack.push(5) const collectionSum = (collection) => { const iterator = collection[Symbol.iterator](); let eachIteration, sum = 0; while ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } return sum } collectionSum(stack) //=> 2015 Using [Symbol.iterator] instead of .iterator seems like adding an extra moving part for nothing. Do we get anything in return? Indeed we do. Behold the for...of loop: const iterableSum = (iterable) => { let sum = 0; for ( const num of iterable) { sum += num; } return sum } iterableSum(stack) //=> 2015
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-50415e1f6386aada` code
+
+Relation: nearby source page; matched terms `collection`, `collections`, `iterator`, `ordered`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next(); return ({done, value: done ? undefined : fn(value)}); } } } });
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-7439d56d23a56b66` code
+
+Relation: nearby source page; matched terms `collections`, `iterator`, `numbers`, `ordered`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const Evens = { [Symbol.iterator] () { const iterator = Numbers[Symbol.iterator](); return { next () { const {done, value} = iterator.next(); return ({done, value: done ? undefined : 2 *value}); } } } };
+```
+
+### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-d72c10129ba795ef` code
+
+Relation: nearby source page; matched terms `collections`, `iterable`, `iterator`, `ordered`, `symbol`
+
+Citation: (raw/javascriptallonge.pdf p.217-221)
+
+```javascript
+const filterWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { do { const {done, value} = iterator.next(); } while (!done && !fn(value)); return {done, value}; } } } }); const untilWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { let {done, value} = iterator.next(); done = done || fn(value); return ({done, value: done ? undefined : value}); } } } });
+```

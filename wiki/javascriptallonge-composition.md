@@ -55,3 +55,45 @@ But like many patterns, using it when it applies is only 20% of the benefit.
 Citation: (raw/javascriptallonge.pdf p.71)
 
 In the recipes, we'll look at a decorator called once: It ensures that a function can only be executed once.
+
+## Related technical details
+
+### From [[javascriptallonge-combinators]]: `technical-atom-5a64ca902d2a5ea5` code
+
+Relation: nearby source page; matched terms `code`, `compose`, `const`
+
+Citation: (raw/javascriptallonge.pdf p.68-69)
+
+```javascript
+const compose = (a, b) => (c) => a(b(c)) Let's say we have: const addOne = (number) => number + 1; const doubleOf = (number) => number * 2; With compose , anywhere you would write const doubleOfAddOne = (number) => doubleOf(addOne(number)); You could also write: const doubleOfAddOne = compose(doubleOf, addOne);
+```
+
+### From [[javascriptallonge-function-decorators]]: `technical-atom-e9d511db5f47e977` code
+
+Relation: nearby source page; matched terms `code`, `const`, `decorators`, `function`, `null`
+
+Citation: (raw/javascriptallonge.pdf p.69-70)
+
+```javascript
+const something = (x) => x != null ;
+```
+
+### From [[javascriptallonge-function-decorators]]: `technical-atom-ee945f387e56d8e2` code
+
+Relation: nearby source page; matched terms `code`, `const`, `decorators`, `function`, `nothing`
+
+Citation: (raw/javascriptallonge.pdf p.69-70)
+
+```javascript
+const nothing = (x) => !something(x);
+```
+
+### From [[javascriptallonge-function-decorators]]: `technical-atom-1f262d158639ac24` code
+
+Relation: nearby source page; matched terms `code`, `const`, `decorators`, `function`, `nothing`
+
+Citation: (raw/javascriptallonge.pdf p.69-70)
+
+```javascript
+const nothing = not(something);
+```

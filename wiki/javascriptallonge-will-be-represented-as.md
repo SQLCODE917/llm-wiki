@@ -41,3 +41,25 @@ Citation: (raw/javascriptallonge.pdf p.277-278)
 ```
 ]]: 3, [[ 'o', 'x', ' ', ' ', ' ', 'x', 'o', ' ', ' ' ]]: 3, [[ 'o', 'x', ' ', ' ', ' ', ' ', 'o', 'x', ' ' ]]: 3, [[ 'o', 'x', ' ', ' ', ' ', ' ', 'o', ' ', 'x' ]]: 3 // ... };
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-the-carpenter-s-solution]]: `technical-atom-4447f89fa1fdcec5` code
+
+Relation: nearby source page; matched terms `board`, `game`
+
+Citation: (raw/javascriptallonge.pdf p.264-269)
+
+```javascript
+Math.floor(Math.random() * size), Math.floor(Math.random() * size) ]; return {board, position}; }; const Game = ({board, position}) => { const size = board[0].length; return ({ *[Symbol.iterator] () { let [x, y] = position; while (x >= 0 && y >=0 && x < size && y < size) { const direction = board[y][x]; yield direction; [x, y] = MOVE[direction]([x, y]); } } }); };
+```
+
+### From [[javascriptallonge-the-carpenter-s-solution]]: `technical-atom-38c104b7ffd476a8` code
+
+Relation: nearby source page; matched terms `board`, `game`
+
+Citation: (raw/javascriptallonge.pdf p.264-269)
+
+```javascript
+const terminates = (game) => tortoiseAndHare(positionsOf(game)) const test = [ ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"] ]; terminates(Game({board: test, position: [0, 0]})) //=> false terminates(Game({board: test, position: [3, 0]})) //=> true terminates(Game({board: test, position: [0, 3]})) //=> false terminates(Game({board: test, position: [3, 3]})) //=> false
+```

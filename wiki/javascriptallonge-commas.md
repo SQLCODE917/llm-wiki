@@ -48,3 +48,21 @@ Citation: (raw/javascriptallonge.pdf p.33)
 Citation: (raw/javascriptallonge.pdf p.33)
 
 In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks.
+
+## Related technical details
+
+### From [[javascriptallonge-back-on-the-block]]: `technical-atom-3b19860d1c8e63e0` exception
+
+Relation: nearby source page; matched terms `can`, `comma`, `does`, `operator`
+
+Citation: (raw/javascriptallonge.pdf p.35-37)
+
+As you can see, a block with one expression does not behave like an expression, and a block with more than one expression does not behave like an expression constructed with the comma operator:
+
+### From [[javascriptallonge-undefined]]: `technical-atom-6727b9042bd2575a` requirement
+
+Relation: nearby source page; matched terms `can`, `javascript`, `most`
+
+Citation: (raw/javascriptallonge.pdf p.34-35)
+
+This works because JavaScript has a feature that can infer where the semi-colons should be most of the time.

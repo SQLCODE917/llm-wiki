@@ -54,3 +54,45 @@ We then ask list to do it, and provide a way for list to call the code we pass i
 Citation: (raw/javascriptallonge.pdf p.189-190)
 
 It is a tenet of Object-Oriented Programming, but it is not exclusive to OOP: We can and should design data structures to hide implementation information from the code that use them, whether we are working with functions, objects, or both.
+
+## Related technical details
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-1facdd66430f4b84` code
+
+Relation: nearby source page; matched terms `can`, `first`, `functions`, `lists`, `pair`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+const length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair)); length(l123) //=> 3 const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ? delayed : reverse(rest(aPair), pair(first(aPair), delayed)); const mapWith = (fn, aPair, delayed = EMPTY) => aPair === EMPTY ? reverse(delayed) : mapWith(fn, rest(aPair), pair(fn(first(aPair)), delayed)); const doubled = mapWith((x) => x * 2, l123); first(doubled) //=> 2 first(rest(doubled)) //=> 4 first(rest(rest(doubled))) //=> 6 Can we do the same with the linked lists we build out of functions? Yes: const first = K, l123 = pair(1)(pair(2)(pair(3)(EMPTY)));
+```
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-7fbeb05554d21b25` code
+
+Relation: nearby source page; matched terms `first`, `functions`, `lists`, `pair`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+const first = ({first, rest}) => first, rest = ({first, rest}) => rest, pair = (first, rest) => ({first, rest}), EMPTY = ({}); const l123 = pair(1, pair(2, pair(3, EMPTY))); first(l123) //=> 1 first(rest(l123)) //=> 2 first(rest(rest(l123))) //=3
+```
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-21a61344f2e84d80` code
+
+Relation: nearby source page; matched terms `backwards`, `but`, `first`, `functions`, `how`, `lists`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+//=> 2 return l123(rest)(rest)(first) //=> 3 We write them in a backwards way, but they seem to work. How about
+```
+
+### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-b43850c16ef07986` code
+
+Relation: nearby source page; matched terms `first`, `functions`, `lists`, `pair`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.183-186)
+
+```javascript
+rest = K(I), pair = V, EMPTY = (() => {}); const l123(first) //=> 1 l123(rest)(first)
+```

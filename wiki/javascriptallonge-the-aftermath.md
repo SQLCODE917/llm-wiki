@@ -30,3 +30,13 @@ The Carpenter never did hear back from them, but the next day there was an email
 Citation: (raw/javascriptallonge.pdf p.269-270)
 
 I thought you'd finally make your escape from New York.'
+
+## Related technical details
+
+### From [[javascriptallonge-summary]]: `technical-atom-c0465a677414b7ed` procedure
+
+Relation: nearby source page; matched terms `code`, `iterator`, `method`
+
+Citation: (raw/javascriptallonge.pdf p.99)
+
+Using a generator instead of writing an iterator object that has a .next() method allows us to write code that can be much simpler for cases like recursive iterations or state patterns.

@@ -68,3 +68,37 @@ Base Mental Power Cost=3
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
 
 Distance=10 meters
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]: `technical-atom-face73dee3665350` procedure
+
+Relation: nearby source page; matched terms `god`, `madness`, `magic`, `nameless`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.154-158)
+
+There are also cases such as a friend who was a priest of Faris who, in order to maintain order, turned in his own brother, who was plotting a rebellion, and after grief about his actions, awoke to the teachings of _The Nameless God of Madness_ (though usually you'd just say _they went mad_ about things like this...)
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]]: `technical-atom-136922faa0a6e540` formula
+
+Relation: nearby source page; matched terms `caster`, `dark`, `effect`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+Effect=Reduces the target's mental power (points) by double the mental power consumed by the caster.
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]]: `technical-atom-376da7cd20dcd2bd` formula
+
+Relation: nearby source page; matched terms `dark`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+Base Mental Power Cost=5
+
+### From [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]]: `technical-atom-802be549cefab7de` formula
+
+Relation: nearby source page; matched terms `dark`, `magic`, `mental`, `power`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.142-148)
+
+Base Mental Power Cost=1~

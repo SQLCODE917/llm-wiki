@@ -68,3 +68,37 @@ Evasion Points=16 (9) Defense Points=14 Life Points/Resistance=34/21 (14) Mental
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.230-234)
 
 Languages=Low ancient, languages of the person it shapeshifts into Perception=Five senses (Darkvision)
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]: `technical-atom-19c5cf3afcf940a3` formula
+
+Relation: nearby source page; matched terms `abilities`, `life`, `normal`, `points`, `resistance`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+
+Evasion Points=14 (7) Defense Points=8 Life Points/Resistance=16/14 (7) Mental Points/Resistance=20/15 (8) Special Abilities=Normal attack immunity
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-3585defb62109da7` formula
+
+Relation: nearby source page; matched terms `abilities`, `life`, `low`, `points`, `resistance`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=6/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=None in particular Habitat=Depends on the caster Languages=Low ancient Perception=Five senses
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]: `technical-atom-9f2043a6fdf71cf5` formula
+
+Relation: nearby source page; matched terms `abilities`, `life`, `points`, `resistance`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-229)
+
+Evasion Points=14 (7) Defense Points=9 Life Points/Resistance=30/18 (11) Mental Points/Resistance=-/15 (8) Special Abilities=Mental attack immunity Not affected by poison and illness Habitat=Ruins
+
+### From [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]: `technical-atom-0ad52d04fbdc380e` formula
+
+Relation: nearby source page; matched terms `abilities`, `life`, `points`, `resistance`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.222-227)
+
+Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=16/10 (3) Mental Points/Resistance=-/10 (3) Special Abilities=All weapons cannot critical Iron corrosion

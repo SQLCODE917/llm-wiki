@@ -68,3 +68,37 @@ In _one hour_ , they must make another death check.
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.50-56)
 
 Monsters with 0 or negative life points must also make a check to see if they live or die.
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-e121551de400d86a` procedure
+
+Relation: nearby source page; matched terms `adventurers`, `first`, `how`, `magic`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+First, adventurers who use magic are given a score called **magic power** .
+
+### From [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]]: `technical-atom-827db5abbfc1a9cd` procedure
+
+Relation: nearby source page; matched terms `adventurers`, `first`, `magic`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56)
+
+First, adventurers who use magic are given a score called **magic power** .
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-dd38c330b55ed530` exception
+
+Relation: nearby source page; matched terms `also`, `how`, `magic`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+However, this also has some limitations.
+
+### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-7324a33664151774` exception
+
+Relation: nearby source page; matched terms `different`, `how`, `magic`, `use`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+
+Each has a different source of magical power and a completely different procedure (although _holy prayer_ and _daemon scream_ are essentially the same power, the only difference being the nature of the magic).

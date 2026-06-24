@@ -68,3 +68,37 @@ Distance=10 meters
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
 
 Duration=Instant
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-383d28a3555bcd0e` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `list`, `magic`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=3 Distance=10 meters Area=One weapon Duration=18 Rounds Effect=+5 to weapon's strike power Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]]: `technical-atom-cda76921e98875ca` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `list`, `magic`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=12
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]]: `technical-atom-95228eb7c67a6fef` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `list`, `magic`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+
+Base Mental Power Cost=15
+
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]]: `technical-atom-dd38def4bc12dc0c` formula
+
+Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `list`, `magic`, `mental`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-83)
+
+Base Mental Power Cost=36

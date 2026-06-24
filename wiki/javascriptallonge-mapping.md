@@ -50,3 +50,43 @@ Citation: (raw/javascriptallonge.pdf p.113-114)
 ```javascript
 const mapWith = (fn, [first, ...rest]) => first === undefined ? [] : [fn(first), ...mapWith(fn, rest)]; mapWith((x) => x * x, [1, 2, 3, 4, 5]) //=> [1,4,9,16,25] mapWith((x) => !!x, [ null , true , 25, false , "foo"]) //=> [false,true,true,false,true]
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-ef68d75b7e638c72` code
+
+Relation: nearby source page; matched terms `first`, `mapwith`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.117-118)
+
+```javascript
+const mapWith = (fn, [first, ...rest]) => first === undefined ? [] : [fn(first), ...mapWith(fn, rest)]; mapWith((x) => x * x, [1, 2, 3, 4, 5]) //=> [1,4,9,16,25]
+```
+
+### From [[javascriptallonge-linear-recursion]]: `technical-atom-b90d24c56b098191` code
+
+Relation: nearby source page; matched terms `array`, `false`, `foo`, `linear`, `recursion`, `true`
+
+Citation: (raw/javascriptallonge.pdf p.111-113)
+
+```javascript
+Array.isArray("foo") //=> false Array.isArray(["foo"]) //=> true
+```
+
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-1bdf58391d739d60` procedure
+
+Relation: nearby source page; matched terms `first`, `mapwith`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.117-118)
+
+To do that, it has to evaluate fn(first) and mapWith(fn, rest) , then evaluate [fn(first), ...mapWith(fn, rest)] .
+
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-14898c90c9499167` code
+
+Relation: nearby source page; matched terms `first`, `function`, `mapwith`, `rest`
+
+Citation: (raw/javascriptallonge.pdf p.117-118)
+
+```javascript
+const mapWith = function (fn, [first, ...rest]) { if (first === undefined ) { return []; } else { const _temp1 = fn(first), _temp2 = mapWith(fn, rest), _temp3 = [_temp1, ..._temp2]; return _temp3; } }
+```

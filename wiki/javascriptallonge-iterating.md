@@ -82,3 +82,45 @@ Citation: (raw/javascriptallonge.pdf p.169-172)
 ```
 The iteratorSum function iterates over the elements by calling the iterator function repeatedly until it returns { done: true } .
 ```
+
+## Related technical details
+
+### From [[javascriptallonge-functional-iterators]]: `technical-atom-df7b31243eb10f16` code
+
+Relation: nearby source page; matched terms `code`, `done`, `eachiteration`, `iterators`, `sum`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.206-209)
+
+```javascript
+const iteratorSum = (iterator) => { let eachIteration, sum = 0; while ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } return sum }
+```
+
+### From [[javascriptallonge-unfolding-and-laziness]]: `technical-atom-a58aa219307d4812` code
+
+Relation: nearby source page; matched terms `array`, `code`, `done`, `eachiteration`, `value`, `while`
+
+Citation: (raw/javascriptallonge.pdf p.172-175)
+
+```javascript
+const take = (iterator, numberToTake) => { let count = 0; return () => { if (++count <= numberToTake) { return iterator(); } else { return {done: true }; } }; }; const toArray = (iterator) => { let eachIteration, array = []; while ((eachIteration = iterator(), !eachIteration.done)) { array.push(eachIteration.value); } return array; } toArray(take(FibonacciIterator(), 5)) //=> [1, 1, 2, 3, 5] toArray(take(squares, 5)) //=> [1, 4, 9, 16, 25]
+```
+
+### From [[javascriptallonge-functional-iterators]]: `technical-atom-35102b9ffb976d9e` code
+
+Relation: nearby source page; matched terms `array`, `code`, `done`, `index`, `iterators`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.206-209)
+
+```javascript
+const Stack1 = () => ({ array:[], index: -1, push (value) { return this .array[ this .index += 1] = value; }, pop () { const value = this .array[ this .index]; this .array[ this .index] = undefined ; if ( this .index >= 0) { this .index -= 1 } return value }, isEmpty () { return this .index < 0 }, iterator () { let iterationIndex = this .index; return () => { if (iterationIndex > this .index) { iterationIndex = this .index; } if (iterationIndex < 0) { return {done: true }; } else { return {done: false , value: this .array[iterationIndex--]} } } } }); const stack = Stack1(); stack.push("Greetings"); stack.push("to"); stack.push("you!")
+```
+
+### From [[javascriptallonge-functional-iterators]]: `technical-atom-66284ad4815503e0` code
+
+Relation: nearby source page; matched terms `code`, `function`, `iterators`, `javascript`, `value`
+
+Citation: (raw/javascriptallonge.pdf p.206-209)
+
+```javascript
+The .iterator() method is defined with shorthand equivalent to iterator: function iterator() { ... } . Note that it uses the function keyword, so when we invoke it with stack.iterator() , JavaScript sets this to the value of stack . But what about the function .iterator() returns? It is defined with a fat arrow () => { ... } . What is the value of this within that function? Since JavaScript doesn't bind this within a fat arrow function, we follow the same rules of variable scoping as any other variable name: We check in the environment enclosing the function. Although the .iterator() method has returned, its environment is the one that encloses our () => { ... } function, and that's where this is bound to the value of stack . Therefore, the iterator function returned by the .iterator() method has this bound to the stack object, even though we call it with iter() .
+```
