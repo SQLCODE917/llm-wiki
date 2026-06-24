@@ -23,6 +23,12 @@ from llmwiki.domain.technical_atom_detection import (
     text_without_fenced_code,
     title_for_payload,
 )
+from llmwiki.domain.technical_atom_evidence import (
+    records_by_claim,
+    records_by_range,
+    records_for_evidence_ids,
+    selected_source_claim_ids,
+)
 from llmwiki.domain.technical_atoms import TechnicalAtom, TechnicalAtomCatalog
 
 
@@ -56,8 +62,8 @@ class TechnicalAtomBuilder:
         self.page_plan = page_plan
         self.registry = evidence_registry
         self.source_locator = source_locator
-        self.records_by_claim = _records_by_claim(evidence_registry.evidence_records)
-        self.records_by_range = _records_by_range(evidence_registry.evidence_records)
+        self.records_by_claim = records_by_claim(evidence_registry.evidence_records)
+        self.records_by_range = records_by_range(evidence_registry.evidence_records)
         self.ranges_by_page = {
             source_range.page_id: source_range for source_range in evidence_registry.source_ranges
         }
@@ -218,6 +224,7 @@ class TechnicalAtomBuilder:
         evidence_ids = evidence_ids or best_evidence_ids(records, bounded)
         if not evidence_ids:
             return None
+        evidence_records = records_for_evidence_ids(records, evidence_ids)
         seen.add(key)
         atom_id = f"technical-atom-{_digest(':'.join((*key, *evidence_ids)))[:16]}"
         return TechnicalAtom(
@@ -228,7 +235,7 @@ class TechnicalAtomBuilder:
             title=title_for_payload(atom_kind, bounded),
             technical_payload=bounded,
             normalized_fields=(*fields, ("source_citation", _citation_for_range(source_range))),
-            source_claim_ids=_source_claim_ids(source_claim_ids, records),
+            source_claim_ids=selected_source_claim_ids(source_claim_ids, evidence_records),
             evidence_ids=tuple(dict.fromkeys(evidence_ids)),
             source_range_id=source_range.source_range_id,
         )
@@ -244,37 +251,8 @@ class TechnicalAtomBuilder:
         )
 
 
-def _source_claim_ids(
-    source_claim_ids: tuple[str, ...], records: tuple[EvidenceRecord, ...]
-) -> tuple[str, ...]:
-    if source_claim_ids:
-        return tuple(dict.fromkeys(source_claim_ids))
-    return tuple(
-        dict.fromkeys(record.source_claim_id for record in records if record.source_claim_id)
-    )[:3]
-
-
 def _maybe_tuple(atom: TechnicalAtom | None) -> tuple[TechnicalAtom, ...]:
     return () if atom is None else (atom,)
-
-
-def _records_by_claim(
-    records: tuple[EvidenceRecord, ...],
-) -> dict[str, tuple[EvidenceRecord, ...]]:
-    grouped: dict[str, list[EvidenceRecord]] = {}
-    for record in records:
-        if record.source_claim_id:
-            grouped.setdefault(record.source_claim_id, []).append(record)
-    return {claim_id: tuple(items) for claim_id, items in grouped.items()}
-
-
-def _records_by_range(
-    records: tuple[EvidenceRecord, ...],
-) -> dict[str, tuple[EvidenceRecord, ...]]:
-    grouped: dict[str, list[EvidenceRecord]] = {}
-    for record in records:
-        grouped.setdefault(record.source_range_id, []).append(record)
-    return {range_id: tuple(items) for range_id, items in grouped.items()}
 
 
 def _limit_atoms_per_page(atoms: list[TechnicalAtom]) -> tuple[TechnicalAtom, ...]:

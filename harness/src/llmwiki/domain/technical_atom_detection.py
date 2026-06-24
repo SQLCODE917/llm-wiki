@@ -30,7 +30,9 @@ MAX_RENDERED_ATOMS_PER_PAGE = 8
 _FORMULA_RE = re.compile(r"(?=.*[=+\-*/x×÷])(?:[A-Za-z][A-Za-z0-9 _-]{2,}|\*\*.+?\*\*)\s*=")
 _ORDERED_RE = re.compile(r"^\s*(?:\d+[.)]|[-*])\s+(?P<step>\S.+)")
 _TERM_RE = re.compile(r"[a-z][a-z0-9-]{2,}", re.IGNORECASE)
+_STRUCTURAL_TOKEN_RE = re.compile(r"[a-z0-9*]+", re.IGNORECASE)
 _INLINE_FENCE_RE = re.compile(r"```(?P<body>.*?)```", re.DOTALL)
+_EXACT_TABLE_MATCH_SCORE = 1000
 _KNOWN_FENCE_LANGUAGES = frozenset(
     (
         "bash",
@@ -178,12 +180,18 @@ def is_formula(text: str) -> bool:
 
 
 def best_evidence_ids(records: tuple[EvidenceRecord, ...], payload: str) -> tuple[str, ...]:
-    payload_terms = set(_TERM_RE.findall(payload.lower()))
     ranked: list[tuple[int, int, EvidenceRecord]] = []
     for index, record in enumerate(records):
-        excerpt_terms = set(_TERM_RE.findall(record.excerpt.lower()))
-        ranked.append((len(payload_terms & excerpt_terms), index, record))
-    ranked.sort(reverse=True)
+        ranked.append((_evidence_match_score(record.excerpt, payload), index, record))
+    ranked.sort(key=lambda item: (-item[0], item[1]))
+    if table_row(payload) is not None:
+        table_matches = [
+            record.evidence_id
+            for score, _index, record in ranked
+            if score >= _EXACT_TABLE_MATCH_SCORE
+        ][:3]
+        if table_matches:
+            return tuple(table_matches)
     selected = [record.evidence_id for score, _index, record in ranked if score > 0][:3]
     return tuple(selected or [record.evidence_id for record in records[:3]])
 
@@ -202,6 +210,38 @@ def normalize_payload(payload: str) -> str:
 def title_for_payload(kind: str, payload: str) -> str:
     words = _TERM_RE.findall(payload)[:6]
     return f"{kind}: {' '.join(words)}" if words else kind
+
+
+def _evidence_match_score(excerpt: str, payload: str) -> int:
+    score = 0
+    payload_terms = set(_TERM_RE.findall(payload.lower()))
+    excerpt_terms = set(_TERM_RE.findall(excerpt.lower()))
+    score += len(payload_terms & excerpt_terms) * 10
+    score += _structural_token_overlap_score(excerpt, payload)
+    score += _table_row_match_score(excerpt, payload)
+    return score
+
+
+def _structural_token_overlap_score(excerpt: str, payload: str) -> int:
+    payload_tokens = set(_STRUCTURAL_TOKEN_RE.findall(payload.lower()))
+    if not payload_tokens:
+        return 0
+    excerpt_tokens = set(_STRUCTURAL_TOKEN_RE.findall(excerpt.lower()))
+    return len(payload_tokens & excerpt_tokens)
+
+
+def _table_row_match_score(excerpt: str, payload: str) -> int:
+    if table_row(payload) is None:
+        return 0
+    payload_text = _canonical_structural_text(payload)
+    excerpt_text = _canonical_structural_text(excerpt)
+    if payload_text and payload_text in excerpt_text:
+        return 1000 + len(payload_text)
+    return 0
+
+
+def _canonical_structural_text(text: str) -> str:
+    return re.sub(r"\s+", "", text).lower()
 
 
 def _looks_procedural(lowered: str) -> bool:
