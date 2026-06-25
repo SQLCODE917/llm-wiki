@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Rulebook has five major parts, including player and game master sections (raw/Sword World RPG - Complete Edition.pdf p.7-7).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0008"
+      ]
+    },
+    {
+      "bullet_text": "Players need character sheets, pencils, erasers, and notepads (raw/Sword World RPG - Complete Edition.pdf p.7-7).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0020"
+      ]
+    },
+    {
+      "bullet_text": "Game uses six-sided dice, often rolling two dice at once (raw/Sword World RPG - Complete Edition.pdf p.7-7).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0012"
+      ]
+    },
+    {
+      "bullet_text": "Fractions are rounded up if not specified otherwise (raw/Sword World RPG - Complete Edition.pdf p.7-7).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0017"
+      ]
+    },
+    {
+      "bullet_text": "Players do not need to memorize game master rules (raw/Sword World RPG - Complete Edition.pdf p.7-7).",
+      "covered_source_claims": [
+        "source-claim-unit-0005-0014"
+      ]
+    }
+  ],
+  "source_record_text": "This page summarizes the structure of the Sword World RPG rulebook and essential items needed to play, including character sheets, dice, and handling fractions."
+}

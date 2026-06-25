@@ -29,6 +29,16 @@ class TestParser:
         )
         assert args.profile == ["rulebook", "table-heavy"]
 
+    def test_ingest_pdf_extractor_arg(self) -> None:
+        args = _build_parser().parse_args(["ingest", "book.pdf", "--pdf-extractor", "pymupdf"])
+        assert args.pdf_extractor == "pymupdf"
+
+    def test_ingest_confidence_pdf_extractor_arg(self) -> None:
+        args = _build_parser().parse_args(
+            ["ingest-confidence", "book.pdf", "--pdf-extractor", "pymupdf"]
+        )
+        assert args.pdf_extractor == "pymupdf"
+
     def test_query_args(self) -> None:
         args = _build_parser().parse_args(["query", "what happened?"])
         assert (args.op, args.question) == ("query", "what happened?")

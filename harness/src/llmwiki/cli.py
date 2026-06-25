@@ -62,6 +62,7 @@ from llmwiki.domain.system_pages import (
     SEMANTIC_LINT_PAGE,
 )
 from llmwiki.pdf import PdfError
+from llmwiki.pdf.pipeline import VALID_DOCUMENT_EXTRACTORS
 from llmwiki.runtime.backend import start_backend
 from llmwiki.runtime.chat_repl import ChatRepl
 from llmwiki.runtime.ingest_confidence import (
@@ -123,6 +124,7 @@ def _build_parser() -> argparse.ArgumentParser:
         help="PDF only: rerun just the integrate pass of a completed ingest "
         "(rebuilds the hub with current salience).",
     )
+    _add_pdf_extractor_arg(ingest)
 
     query = sub.add_parser("query", help="Answer a question from the wiki.")
     _add_strict_evidence_arg(query)
@@ -233,6 +235,7 @@ def _build_parser() -> argparse.ArgumentParser:
         default=[],
         help="Ingest profile id from profiles/ingest/*.toml. Repeat to compose profiles.",
     )
+    _add_pdf_extractor_arg(ingest_confidence)
 
     semantic_lint = sub.add_parser(
         "semantic-lint",
@@ -303,9 +306,18 @@ def _add_strict_evidence_arg(parser: argparse.ArgumentParser) -> None:
     )
 
 
-def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
+def _add_pdf_extractor_arg(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--pdf-extractor",
+        choices=VALID_DOCUMENT_EXTRACTORS,
+        default="docling",
+        help="PDF extraction backend: docling or pymupdf (default: docling).",
+    )
+
+
+def _pdf_extractor(paths: WikiPaths, extractor_name: str = "docling") -> ExtractFn:
     def extract(pdf_path: Path, source_rel: str, reextract: bool) -> ExtractionResult:
-        from llmwiki.pdf.pipeline import ensure_extracted
+        from llmwiki.pdf.pipeline import document_extractor_by_name, ensure_extracted
 
         return ensure_extracted(
             pdf_path,
@@ -313,6 +325,7 @@ def _pdf_extractor(paths: WikiPaths) -> ExtractFn:
             cache_root=paths.cache_dir,
             recognizer=_default_text_recognizer(),
             reextract=reextract,
+            document_extractor=document_extractor_by_name(extractor_name),
         )
 
     return extract
@@ -373,6 +386,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
         print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
         if args.op == "ingest":
             print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
+            print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
         store = WikiStore(paths)
         store.ensure_navigation_files()
         session = Session(
@@ -382,7 +396,7 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             today=now.date().isoformat(),
             runs_dir=paths.runs_dir,
             run_id=now.strftime("%Y-%m-%d-%H%M%S"),
-            extract_pdf=_pdf_extractor(paths),
+            extract_pdf=_pdf_extractor(paths, getattr(args, "pdf_extractor", "docling")),
             on_chunk_note=lambda note: print(note, flush=True),
             strict_evidence=strict_evidence,
             ingest_profiles=ingest_profiles,
@@ -546,7 +560,7 @@ async def _run_ingest_confidence(
         today=today,
         profiles=profiles,
         fresh=args.fresh,
-        extract_pdf=_pdf_extractor(paths),
+        extract_pdf=_pdf_extractor(paths, args.pdf_extractor),
     )
     deterministic = deterministic_confidence(
         store=store,

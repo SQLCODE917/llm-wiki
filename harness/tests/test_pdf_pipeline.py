@@ -11,7 +11,12 @@ import pytest
 from llmwiki.pdf import ScannedPdfError
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, to_json
-from llmwiki.pdf.pipeline import chunk_file, ensure_extracted, save_manifest
+from llmwiki.pdf.pipeline import (
+    chunk_file,
+    document_extractor_by_name,
+    ensure_extracted,
+    save_manifest,
+)
 from llmwiki.pdf.recognizer import NullRecognizer
 
 _PAGE_PROSE = "Functions are first-class values. " * 40
@@ -208,3 +213,20 @@ class TestEnsureExtracted:
                 NullRecognizer(),
                 document_extractor=FakeDocumentExtractor(),
             )
+
+
+class TestDocumentExtractorSelection:
+    def test_unknown_extractor_is_rejected(self) -> None:
+        with pytest.raises(ValueError, match="Unknown PDF extractor"):
+            document_extractor_by_name("unknown")
+
+    def test_pymupdf_extractor_builds_document_model(self, tmp_path: Path) -> None:
+        pdf = tmp_path / "book.pdf"
+        _make_pdf(pdf)
+
+        model = document_extractor_by_name("pymupdf")(pdf, "book.pdf", "source-hash")
+
+        assert model.extractor_name == "pymupdf4llm"
+        assert model.source_locator == "book.pdf"
+        assert any(element.element_kind == "heading" for element in model.elements)
+        assert any("Chapter text page 1" in element.markdown for element in model.elements)

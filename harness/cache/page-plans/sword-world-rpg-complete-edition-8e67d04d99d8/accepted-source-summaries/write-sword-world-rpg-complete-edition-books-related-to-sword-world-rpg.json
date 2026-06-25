@@ -1,21 +1,21 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The _Sword World RPG Replay Collections_ help learn how to play the game via conversations between GM and players, but they're based on the old version of rules and may have contradictions (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
+      "bullet_text": "The _Sword World RPG Replay Collections_ help learn how to play the game via conversations between GM and players, but they're based on the old version of rules and may have contradictions (raw/Sword World RPG - Complete Edition.pdf p.8-13) (raw/Sword World RPG - Complete Edition.pdf p.8-9)",
       "covered_source_claims": [
-        "source-claim-unit-0002-0001"
+        "source-claim-unit-0006-0001"
       ]
     },
     {
-      "bullet_text": "The _Duda RPG Replay Collection_ series uses Sword World RPG rules but with added humorous mystery elements like 'inept detective checks' (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
+      "bullet_text": "The _Duda RPG Replay Collection_ series uses Sword World RPG rules but with added humorous mystery elements like 'inept detective checks' (raw/Sword World RPG - Complete Edition.pdf p.8-13) (raw/Sword World RPG - Complete Edition.pdf p.8-9)",
       "covered_source_claims": [
-        "source-claim-unit-0002-0003"
+        "source-claim-unit-0006-0002"
       ]
     },
     {
-      "bullet_text": "The _Sword World RPG Scenario Collections_ save GMs from creating scenarios and can be used nearly as-is, though some follow the old version of rules (raw/Sword World RPG - Complete Edition.pdf p.8-13).",
+      "bullet_text": "The _Sword World RPG Scenario Collections_ save GMs from creating scenarios and can be used nearly as-is, though some follow the old version of rules (raw/Sword World RPG - Complete Edition.pdf p.8-13) (raw/Sword World RPG - Complete Edition.pdf p.8-9)",
       "covered_source_claims": [
-        "source-claim-unit-0002-0002"
+        "source-claim-unit-0006-0006"
       ]
     }
   ],

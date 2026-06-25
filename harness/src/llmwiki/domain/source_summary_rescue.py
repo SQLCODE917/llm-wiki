@@ -27,6 +27,8 @@ def repair_source_summary_draft(
     needs_shape_rescue = _has_unknown_coverage(draft, plan) or _has_page_only_citation(draft)
     repaired = _discard_unknown_coverage(draft, plan)
     repaired = _merge_duplicate_coverage_bullets(repaired, max_claim_bullets)
+    if max_claim_bullets > 0:
+        repaired = _limit_claim_bullets_preserving_coverage(repaired, max_claim_bullets)
     if needs_shape_rescue and max_claim_bullets > 0:
         repaired = _limit_claim_bullets(repaired, max_claim_bullets)
     repaired = _expand_page_only_citations(repaired, plan)
@@ -83,46 +85,109 @@ def _merge_duplicate_coverage_bullets(
 ) -> SourceSummaryDraft:
     if max_claim_bullets <= 0 or len(draft.claim_bullets) <= max_claim_bullets:
         return draft
-    bullets = list(draft.claim_bullets)
-    while len(bullets) > max_claim_bullets:
-        duplicate = _first_duplicate_coverage_pair(bullets)
-        if duplicate is None:
-            break
-        target_index, duplicate_index = duplicate
-        target = bullets[target_index]
-        extra = bullets.pop(duplicate_index)
-        bullets[target_index] = SourceSummaryBullet(
-            bullet_text=_merge_bullet_text(target.bullet_text, extra.bullet_text),
-            covered_source_claims=target.covered_source_claims,
-        )
+    bullets: list[SourceSummaryBullet] = []
+    seen: dict[tuple[str, ...], int] = {}
+    for bullet in draft.claim_bullets:
+        coverage_key = _coverage_key(bullet)
+        if not coverage_key:
+            bullets.append(bullet)
+            continue
+        if coverage_key in seen:
+            existing_index = seen[coverage_key]
+            bullets[existing_index] = SourceSummaryBullet(
+                bullet_text=_compact_duplicate_bullet_text(
+                    bullets[existing_index].bullet_text, bullet.bullet_text
+                ),
+                covered_source_claims=bullets[existing_index].covered_source_claims,
+            )
+            continue
+        seen[coverage_key] = len(bullets)
+        bullets.append(bullet)
     return SourceSummaryDraft(
         source_record_text=draft.source_record_text,
         claim_bullets=tuple(bullets),
     )
 
 
-def _first_duplicate_coverage_pair(
+def _limit_claim_bullets_preserving_coverage(
+    draft: SourceSummaryDraft, max_claim_bullets: int
+) -> SourceSummaryDraft:
+    if len(draft.claim_bullets) <= max_claim_bullets:
+        return draft
+    bullets = list(draft.claim_bullets)
+    required_coverage = _covered_claims(bullets)
+    if not required_coverage:
+        return _limit_claim_bullets(draft, max_claim_bullets)
+    selected_indexes = _coverage_preserving_indexes(bullets, required_coverage, max_claim_bullets)
+    if selected_indexes is None:
+        return draft
+    return SourceSummaryDraft(
+        source_record_text=draft.source_record_text,
+        claim_bullets=tuple(bullets[index] for index in selected_indexes),
+    )
+
+
+def _coverage_preserving_indexes(
     bullets: list[SourceSummaryBullet],
-) -> tuple[int, int] | None:
-    seen: dict[tuple[str, ...], int] = {}
+    required_coverage: set[str],
+    max_claim_bullets: int,
+) -> tuple[int, ...] | None:
+    selected: list[int] = []
+    selected_set: set[int] = set()
+    covered: set[str] = set()
+    while required_coverage - covered and len(selected) < max_claim_bullets:
+        next_index = _next_coverage_index(bullets, selected_set, required_coverage - covered)
+        if next_index is None:
+            break
+        selected.append(next_index)
+        selected_set.add(next_index)
+        covered.update(bullets[next_index].covered_source_claims)
+    if required_coverage - covered:
+        return None
+    for index in range(len(bullets)):
+        if len(selected) >= max_claim_bullets:
+            break
+        if index not in selected_set:
+            selected.append(index)
+            selected_set.add(index)
+    return tuple(sorted(selected))
+
+
+def _next_coverage_index(
+    bullets: list[SourceSummaryBullet], selected: set[int], missing_coverage: set[str]
+) -> int | None:
+    best_index: int | None = None
+    best_gain = 0
     for index, bullet in enumerate(bullets):
-        coverage_key = tuple(sorted(bullet.covered_source_claims))
-        if not coverage_key:
+        if index in selected:
             continue
-        if coverage_key in seen:
-            return seen[coverage_key], index
-        seen[coverage_key] = index
-    return None
+        gain = len(set(bullet.covered_source_claims) & missing_coverage)
+        if gain > best_gain:
+            best_index = index
+            best_gain = gain
+    return best_index
 
 
-def _merge_bullet_text(left: str, right: str) -> str:
+def _covered_claims(bullets: list[SourceSummaryBullet]) -> set[str]:
+    return {claim_id for bullet in bullets for claim_id in bullet.covered_source_claims}
+
+
+def _coverage_key(bullet: SourceSummaryBullet) -> tuple[str, ...]:
+    return tuple(sorted(bullet.covered_source_claims))
+
+
+def _compact_duplicate_bullet_text(left: str, right: str) -> str:
     left_text = left.strip()
     right_text = right.strip()
     if not left_text:
         return right_text
     if not right_text or right_text == left_text:
         return left_text
-    return f"{left_text.rstrip('.')}; {right_text}"
+    return min((left_text, right_text), key=lambda text: (len(_words(text)), len(text)))
+
+
+def _words(text: str) -> tuple[str, ...]:
+    return tuple(re.findall(r"\b[\w'-]+\b", text))
 
 
 def _expand_page_only_citations(

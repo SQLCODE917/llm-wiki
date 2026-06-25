@@ -568,7 +568,95 @@ def test_source_summary_rescue_merges_duplicate_coverage_over_budget() -> None:
         for claim_id in bullet.covered_source_claims
     ) == set(plan.selected_source_claims)
     assert "Second claim begins" in repaired.claim_bullets[1].bullet_text
-    assert "Second claim continues" in repaired.claim_bullets[1].bullet_text
+    assert "Second claim continues" not in repaired.claim_bullets[1].bullet_text
+
+
+def test_source_summary_rescue_compacts_repeated_coverage_without_word_growth() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-rules",
+        page_id="book-ability-scores",
+        selected_source_claims=(
+            "claim-function",
+            "claim-list",
+            "claim-scope",
+            "claim-range",
+            "claim-bonus",
+        ),
+        required_source_citations=("raw/rulebook.pdf p.12-13",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="The chapter introduces ability scores and race entries.",
+        claim_bullets=(
+            SourceSummaryBullet(
+                "Ability scores describe adventurer characteristics. (raw/rulebook.pdf p.12)",
+                ("claim-function",),
+            ),
+            SourceSummaryBullet(
+                "Six ability scores are named. (raw/rulebook.pdf p.12)",
+                ("claim-list",),
+            ),
+            SourceSummaryBullet(
+                "Scores apply across adventurer races. (raw/rulebook.pdf p.12)",
+                ("claim-scope",),
+            ),
+            SourceSummaryBullet(
+                "Human scores range from 4-24. (raw/rulebook.pdf p.12)",
+                ("claim-range",),
+            ),
+            SourceSummaryBullet(
+                "Bonuses use divided score bands. (raw/rulebook.pdf p.12)",
+                ("claim-bonus",),
+            ),
+            SourceSummaryBullet(
+                "Life force tracks injury tolerance. (raw/rulebook.pdf p.12)",
+                ("claim-function",),
+            ),
+            SourceSummaryBullet(
+                "Mental power affects magic use. (raw/rulebook.pdf p.12)",
+                ("claim-function",),
+            ),
+            SourceSummaryBullet(
+                "Dexterity supports hand tasks. (raw/rulebook.pdf p.12)",
+                ("claim-function",),
+            ),
+            SourceSummaryBullet(
+                "Race summaries include physical traits. (raw/rulebook.pdf p.13)",
+                ("claim-function",),
+            ),
+        ),
+    )
+
+    repaired = repair_source_summary_draft(draft, plan, max_claim_bullets=5)
+    repaired_body = render_source_summary_draft(repaired)
+
+    assert len(repaired.claim_bullets) == 5
+    assert set(
+        claim_id
+        for bullet in repaired.claim_bullets
+        for claim_id in bullet.covered_source_claims
+    ) == set(plan.selected_source_claims)
+    assert len(repaired_body.split()) < len(render_source_summary_draft(draft).split())
+    assert len(repaired_body.split()) < 220
+
+
+def test_source_summary_rescue_keeps_unbounded_draft_when_coverage_would_be_lost() -> None:
+    plan = SourceSummaryPlan(
+        source_summary_plan_id="source-summary-plan-rules",
+        page_id="book-six-claims",
+        selected_source_claims=("claim-1", "claim-2", "claim-3", "claim-4", "claim-5", "claim-6"),
+        required_source_citations=("raw/book.pdf p.10-12",),
+    )
+    draft = SourceSummaryDraft(
+        source_record_text="Six independent claims.",
+        claim_bullets=tuple(
+            SourceSummaryBullet(f"Claim {index}. (raw/book.pdf p.10-12)", (claim_id,))
+            for index, claim_id in enumerate(plan.selected_source_claims, start=1)
+        ),
+    )
+
+    repaired = repair_source_summary_draft(draft, plan, max_claim_bullets=5)
+
+    assert len(repaired.claim_bullets) == 6
 
 
 def test_missing_source_summary_coverage_reports_claim_requirements() -> None:
@@ -891,7 +979,7 @@ def test_planned_source_summary_tool_rejects_uncovered_selected_claim(
     assert store.list_pages() == []
 
 
-def test_planned_source_summary_tool_rejects_too_many_claim_bullets(
+def test_planned_source_summary_tool_compacts_too_many_claim_bullets_when_coverage_is_preserved(
     paths: WikiPaths,
 ) -> None:
     source_text = (
@@ -914,24 +1002,24 @@ def test_planned_source_summary_tool_rejects_too_many_claim_bullets(
     selected_claims = page_plan.planned_writes[0].source_summary_plan.selected_source_claims
     tool = planned_write_page_tool(store, TODAY, page_plan.planned_writes[0])
 
-    with pytest.raises(WikiStoreError, match="at most 5 markdown bullet claims"):
-        tool.callable(
-            source_record_text="Compact alpha source summary. (raw/alpha.md)",
-            claim_bullets=[
-                {
-                    "bullet_text": f"Compact claim label {index}. (raw/alpha.md)",
-                    "covered_source_claims": [
-                        selected_claims[claim_index]
-                        for claim_index in claim_indexes
-                    ],
-                }
-                for index, claim_indexes in enumerate(
-                    ((0,), (1,), (2,), (0, 1), (1, 2), (0, 2))
-                )
-            ],
-        )
+    result = tool.callable(
+        source_record_text="Compact alpha source summary. (raw/alpha.md)",
+        claim_bullets=[
+            {
+                "bullet_text": f"Compact claim label {index}. (raw/alpha.md)",
+                "covered_source_claims": [
+                    selected_claims[claim_index]
+                    for claim_index in claim_indexes
+                ],
+            }
+            for index, claim_indexes in enumerate(
+                ((0,), (1,), (2,), (0, 1), (1, 2), (0, 2))
+            )
+        ],
+    )
 
-    assert store.list_pages() == []
+    assert "Wrote wiki/alpha.md" in result
+    assert store.read_page("alpha").count("\n- ") == 5
 
 
 def _source_summary_plan(selected_source_claims: tuple[str, ...]) -> SourceSummaryPlan:

@@ -2,20 +2,20 @@
   "source": "Sword World RPG - Complete Edition.pdf",
   "sha256": "e5870dca757ef182e8b799dc3446fcd9fdfc10a23c854245849967f7a80a4ea1",
   "extractor_name": "pymupdf4llm",
-  "integrated": true,
+  "integrated": false,
   "chunks": [
     {
       "id": 1,
-      "heading": "Front matter",
+      "heading": "Document",
       "pages": [
         1,
-        7
+        3
       ],
-      "tokens": 5780,
+      "tokens": 1748,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-front-matter",
+      "notes": "Created the source page 'sword-world-rpg-complete-edition-document' summarizing the structure and key sections of the Sword World RPG - Complete Edition document. The page covers parts 1, 2, and 3 of the RPG, including player and game master sections, character creation, combat, magic, skills, and optional rules. Key claims include the document's structure, rules for unconsciousness and death, and the parts of the RPG.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-front-matter"
+        "sword-world-rpg-complete-edition-document"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
@@ -23,14 +23,82 @@
     },
     {
       "id": 2,
+      "heading": "Welcome to “Sword World”!",
+      "pages": [
+        4,
+        4
+      ],
+      "tokens": 15,
+      "status": "done",
+      "notes": "Created the source summary page for the 'Welcome to Sword World' section. No other pages were created or updated as this chunk only introduces the setting without delving into specific concepts or entities.",
+      "pages_written": [
+        "sword-world-rpg-complete-edition-welcome-to-sword-world"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 3,
+      "heading": "What is a Role-Playing Game (RPG)?",
+      "pages": [
+        5,
+        5
+      ],
+      "tokens": 1195,
+      "status": "done",
+      "notes": "Created the source page 'sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg' summarizing the definition and core mechanics of RPGs in the Sword World RPG system. Key claims covered include the definition of RPGs, the division of roles between game masters and players, and the integration of player choice with random elements like dice rolls. No other pages were created or updated in this chunk as per the ingest profile guidance.",
+      "pages_written": [
+        "sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 4,
+      "heading": "The Meaning of the Rulebook",
+      "pages": [
+        6,
+        6
+      ],
+      "tokens": 862,
+      "status": "done",
+      "notes": "Created the main chapter page 'sword-world-rpg-complete-edition-the-meaning-of-the-rulebook' summarizing the purpose and scope of the Sword World RPG rulebook. Key claims covered include the rulebook's role in guiding RPG gameplay within the fictional world of Forcelia, the necessity of common sense in interpreting rules, and that not all of Forcelia's laws are written in the rulebook. No other pages were created as the chunk did not treat any other concepts in depth.",
+      "pages_written": [
+        "sword-world-rpg-complete-edition-the-meaning-of-the-rulebook"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 5,
+      "heading": "What You’ll Need to Play Sword World RPG",
+      "pages": [
+        7,
+        7
+      ],
+      "tokens": 937,
+      "status": "done",
+      "notes": "Created the source page 'sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg' summarizing the structure of the Sword World RPG rulebook and essential items needed to play, including character sheets, dice, and handling fractions. The page covers all planned claims from the chunk (raw/Sword World RPG - Complete Edition.pdf p.7-7).",
+      "pages_written": [
+        "sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 6,
       "heading": "Books Related to Sword World RPG",
       "pages": [
         8,
-        13
+        9
       ],
-      "tokens": 4037,
+      "tokens": 1699,
       "status": "done",
-      "notes": "Key claims: The Sword World RPG rulebook references several related publications including Replay Collections, Scenario Collections, World Guide, Novels, and other rulebooks. The Replay Collections are based on an older version of the rules and may have contradictions, while the Duda RPG Replay Collection has added humorous mystery elements. The Scenario Collections can be used nearly as-is but some follow the old version of rules. The World Guide introduces the setting of Alecrast. Novels and short story collections help understand the setting, though some series like Duda and Dawn of Chaos have different settings or variants. Collection Series help with game terminology. Old rulebooks exist but are superseded by the current edition. The Game Master Screen is based on the old rules and needs modifications. Pages written: sword-world-rpg-complete-edition-books-related-to-sword-world-rpg",
+      "notes": "Enriched the source page 'sword-world-rpg-complete-edition-books-related-to-sword-world-rpg' with content from pages 8-9 of 'Sword World RPG - Complete Edition.pdf'. Key claims covered include Replay Collections, Scenario Collections, World Guide, Novels, Adventures, Collection Series, Old Rules, and Game Master Screen. No new entity or concept pages were created in this chunk.",
       "pages_written": [
         "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg"
       ],
@@ -39,85 +107,17 @@
       "route_gap_summaries": []
     },
     {
-      "id": 3,
-      "heading": "1.3 Skills",
-      "pages": [
-        14,
-        16
-      ],
-      "tokens": 2850,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-1-3-skills",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-1-3-skills"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 4,
-      "heading": "1.4 Character Creation (part 1)",
-      "pages": [
-        17,
-        28
-      ],
-      "tokens": 5700,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-1-4-character-creation-part-1",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-1-4-character-creation-part-1"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 5,
-      "heading": "1.4 Character Creation (part 2)",
-      "pages": [
-        17,
-        30
-      ],
-      "tokens": 5932,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-1-4-character-creation-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-1-4-character-creation-part-2"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 6,
-      "heading": "2.3 Checks",
-      "pages": [
-        30,
-        33
-      ],
-      "tokens": 5255,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-2-3-checks",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-2-3-checks"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
       "id": 7,
-      "heading": "2.7 Resistance Rolls",
+      "heading": "Part 1: Players’ Section",
       "pages": [
-        33,
-        36
+        10,
+        10
       ],
-      "tokens": 4292,
+      "tokens": 15,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-2-7-resistance-rolls",
+      "notes": "Created the source page for the Players' Section (pages 10-10) of the Sword World RPG - Complete Edition. Key claims covered include character creation rules and core gameplay mechanics. No additional entities or concepts were deeply touched in this chunk, so no other pages were updated.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-2-7-resistance-rolls"
+        "sword-world-rpg-complete-edition-part-1-players-section"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
@@ -125,16 +125,16 @@
     },
     {
       "id": 8,
-      "heading": "3.4 Movement and Actions",
+      "heading": "Chapter 1: Character",
       "pages": [
-        37,
-        42
+        11,
+        11
       ],
-      "tokens": 5986,
+      "tokens": 13,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-3-4-movement-and-actions",
+      "notes": "Created the main chapter summary page for Chapter 1: Character. No other pages were created or updated as the chunk was minimal and did not introduce new concepts or entities beyond the general framework of character creation.",
       "pages_written": [
-        "sword-world-rpg-complete-edition-3-4-movement-and-actions"
+        "sword-world-rpg-complete-edition-chapter-1-character"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
@@ -142,1038 +142,1891 @@
     },
     {
       "id": 9,
-      "heading": "4.5 Attacks From Characters Against Monsters",
+      "heading": "1.1 Ability Scores",
       "pages": [
-        43,
-        50
+        12,
+        12
       ],
-      "tokens": 5592,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1035,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 10,
-      "heading": "4.9 Unconscious and Death Checks",
+      "heading": "1.2 Races",
       "pages": [
-        50,
-        56
+        13,
+        13
       ],
-      "tokens": 5901,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1203,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 11,
-      "heading": "5.1.1 Types of Magic",
+      "heading": "1.3 Skills",
       "pages": [
-        56,
-        56
+        14,
+        16
       ],
-      "tokens": 3049,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-1-types-of-magic",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-1-types-of-magic"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 2820,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 12,
-      "heading": "5.1.4 How to Use Magic",
+      "heading": "1.4 Character Creation",
       "pages": [
-        56,
-        60
+        17,
+        21
       ],
-      "tokens": 5768,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-4-how-to-use-magic",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-4-how-to-use-magic"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5288,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 13,
-      "heading": "5.1.7 Magic Expansion",
+      "heading": "1.4 Character Creation",
       "pages": [
-        61,
-        64
+        22,
+        28
       ],
-      "tokens": 5088,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-7-magic-expansion",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-7-magic-expansion"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 4383,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 14,
-      "heading": "5.1.10 How to Read Magic Details",
+      "heading": "Chapter 2: Success Rolls",
       "pages": [
-        65,
-        67
+        29,
+        29
       ],
-      "tokens": 3231,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 15,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 15,
-      "heading": "5.1.12 Ancient Magic List (part 1)",
+      "heading": "2.3 Checks",
       "pages": [
-        68,
-        82
+        30,
+        30
       ],
-      "tokens": 5984,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 962,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 16,
-      "heading": "5.1.12 Ancient Magic List (part 2)",
+      "heading": "2.5 Difficulty Checks",
       "pages": [
-        68,
-        82
+        31,
+        32
       ],
-      "tokens": 5973,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 2183,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 17,
-      "heading": "5.1.12 Ancient Magic List (part 3)",
+      "heading": "2.7 Resistance Rolls",
       "pages": [
-        68,
-        82
+        33,
+        33
       ],
-      "tokens": 5930,
-      "status": "done",
-      "notes": "Wrote the source page for 'Ancient Magic List (part 3)' from Sword World RPG - Complete Edition (pages 68-82), covering 22 spells including Seal Enchantment, Steal Mind, Slow, Haste, Rune Rope, Dispel Order, Telekinesis, Teleport, Full Potential, Blade Net, Bend Bar, Polymorph, Magic Reflection, Illusionary Beast, Stun Cloud, Force Field, Lightning Bind, Wraith Form, Command Golem, Control Weather, Disintegrate, and Petrification. The page includes detailed spell descriptions and citations from the source material. No other pages were updated in this chunk.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1006,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 18,
-      "heading": "5.1.12 Ancient Magic List (part 4)",
+      "heading": "Chapter 3: Combat Rounds",
       "pages": [
-        68,
-        83
+        34,
+        34
       ],
-      "tokens": 2521,
-      "status": "done",
-      "notes": "Enriched the existing source page for 'sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4' with details on spells like Petrify, Rune Shield, Dimension Gate, Death Cloud, Perfect Cancellation, and Meteor Strike. No new pages were created as per the PagePlan constraints. Key entities touched include shaman skill and spirit magic, but these were not created as new pages due to scope limitations.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 15,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 19,
-      "heading": "5.1.14 Spirit Magic List (part 1)",
+      "heading": "3.1 Action Announcements",
       "pages": [
-        84,
-        95
+        35,
+        35
       ],
-      "tokens": 5994,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1010,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 20,
-      "heading": "5.1.14 Spirit Magic List (part 2)",
+      "heading": "3.3 Action Canceling",
       "pages": [
-        84,
-        95
+        36,
+        36
       ],
-      "tokens": 5983,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1140,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 21,
-      "heading": "5.1.14 Spirit Magic List (part 3)",
+      "heading": "3.4 Movement and Actions",
       "pages": [
-        84,
-        95
+        37,
+        38
       ],
-      "tokens": 3199,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1760,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 22,
-      "heading": "5.1.15 Holy Magic and the Priest Skill",
+      "heading": "Chapter 4: Weapon Combat",
       "pages": [
-        96,
-        98
+        39,
+        39
       ],
-      "tokens": 3913,
-      "status": "done",
-      "notes": "Key claims: Holy magic uses runes called holy prayers to contact gods, the skill is called the priest skill, there are many gods including wicked gods, priests must follow their god's will, and priests can use abilities like divination and vow. Entities touched: priest skill, holy magic, wicked god, divination, vow. Pages written: 1 (source page for 5.1.15).",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 15,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 23,
-      "heading": "5.1.16 Basic Holy Magic List (part 1)",
+      "heading": "4.3 Projectile Restrictions",
       "pages": [
-        99,
-        104
+        40,
+        40
       ],
-      "tokens": 5940,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 921,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 24,
-      "heading": "5.1.16 Basic Holy Magic List (part 2)",
+      "heading": "4.4 Scores Used in Weapon Combat",
       "pages": [
-        99,
-        108
+        41,
+        42
       ],
-      "tokens": 4948,
-      "status": "done",
-      "notes": "Written source page for section 5.1.16 (pages 99-108) of 'Sword World RPG - Complete Edition'. The page summarizes basic holy magic spells, including *Call God*, *Save Soul*, *Reincarnation*, and various god-specific spells. Key entities mentioned include deities like Pharis, Myrii, Rahda, Cha Za, Marfa, and Braki. No additional pages were created beyond the main source summary.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1469,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 25,
-      "heading": "5.3 Spellsongs",
+      "heading": "4.5 Attacks From Characters Against Monsters",
       "pages": [
-        109,
-        113
+        43,
+        45
       ],
-      "tokens": 3974,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-5-3-spellsongs",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-5-3-spellsongs"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 2269,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 26,
-      "heading": "6.2 Thief Skill",
+      "heading": "4.6 Attacks From Monsters Against Characters",
       "pages": [
-        113,
-        117
+        46,
+        47
       ],
-      "tokens": 5578,
-      "status": "done",
-      "notes": "Enriched the main thief skill chapter page (sword-world-rpg-complete-edition-6-2-thief-skill) with content from pages 113-117. Key claims included the guild requirements, not retriable abilities like lockpicking, and the unique combat style of thieves. No new pages were created as the plan only authorized the main chapter page.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-6-2-thief-skill"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1223,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 27,
-      "heading": "6.4 Sage Skill",
+      "heading": "4.7 Attacks From Characters Against Characters",
       "pages": [
-        118,
-        119
+        48,
+        49
       ],
-      "tokens": 2233,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-6-4-sage-skill",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-6-4-sage-skill"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1067,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 28,
-      "heading": "6.6 Common Adventurer Abilities",
+      "heading": "4.9 Unconscious and Death Checks",
       "pages": [
-        120,
-        125
+        50,
+        50
       ],
-      "tokens": 5377,
-      "status": "done",
-      "notes": "Updated the source page for chapter 6.6 Common Adventurer Abilities. Created concept pages for Folklore Knowledge and Spellsongs, and an entity page for the Bard class, as these were key elements discussed in the chunk.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-6-6-common-adventurer-abilities"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1041,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 29,
-      "heading": "7.2 Merchant Skill",
+      "heading": "4.10 Excellent Weapons and Armor",
       "pages": [
-        125,
-        129
+        51,
+        53
       ],
-      "tokens": 5359,
-      "status": "done",
-      "notes": "Written or updated 1 page: sword-world-rpg-complete-edition-7-2-merchant-skill. Key claims include the merchant skill as a general skill, the rights granted by a merchant's pass, and the abilities of Value Check and Negotiation. Entities touched include merchants and the merchant's pass. No additional pages were created beyond the main merchant skill page.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-7-2-merchant-skill"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3494,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 30,
-      "heading": "8.1 Experience Points",
+      "heading": "4.11 Damage Recovery",
       "pages": [
-        130,
-        135
+        54,
+        54
       ],
-      "tokens": 5074,
-      "status": "done",
-      "notes": "Enriched the main experience points chapter page (sword-world-rpg-complete-edition-8-1-experience-points) with content from pages 130-135. Key claims covered include how experience points are gained, spent to increase skill levels, the requirements for different skills shown in Table 8-1, and the special rules for acquiring both sorcerer and sage skills. No new entity or concept pages were created in this chunk.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-8-1-experience-points"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 343,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 31,
-      "heading": "9.2 Should You Use a Target Score Check or a Difficulty Check?",
+      "heading": "Chapter 5: Magic",
       "pages": [
-        135,
-        138
+        55,
+        55
       ],
-      "tokens": 5173,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 11,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 32,
-      "heading": "10.3 Surprise Attacks",
+      "heading": "5.1.4 How to Use Magic",
       "pages": [
-        138,
-        142
+        56,
+        59
       ],
-      "tokens": 4665,
-      "status": "done",
-      "notes": "Written/updated the main chapter page for '10.3 Surprise Attacks' (p.138-142) in Sword World RPG - Complete Edition. Key claims covered: surprise attack mechanics, the check process involving 2D rolls and intelligence modifiers, and the consequences of surprise. Also updated the source summary with key entities and concepts. No additional pages created as the chunk content was focused on the surprise attack rules, and the related concepts of monster actions and combat in special situations were already covered in other pages.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-10-3-surprise-attacks"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3286,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 33,
-      "heading": "11.2 Dark Magic (part 1)",
+      "heading": "5.1.6 Recovering Mental Power",
       "pages": [
-        142,
-        148
+        60,
+        60
       ],
-      "tokens": 5970,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-11-2-dark-magic-part-1",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-11-2-dark-magic-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1230,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 34,
-      "heading": "11.2 Dark Magic (part 2)",
+      "heading": "5.1.7 Magic Expansion",
       "pages": [
-        142,
-        148
+        61,
+        61
       ],
-      "tokens": 1491,
-      "status": "done",
-      "notes": "Enriched the source page for 11.2 Dark Magic (part 2) in Sword World RPG. Key claims covered include priests of wicked gods using basic holy magic, basic dark magic, and special god-specific dark magic spells. Spells detailed include *Evil Impulse*, *Insanity*, *Berserk*, *Lunatic Seed*, *Lunatic Dance*, *Death*, and *Create Ghost Ship*. No additional entity or concept pages were created beyond the main chapter summary page.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-11-2-dark-magic-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1291,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 35,
-      "heading": "11.3 Dragon Roar Magic",
+      "heading": "5.1.8 Magic Contraction",
       "pages": [
-        149,
-        153
+        62,
+        62
       ],
-      "tokens": 5737,
-      "status": "done",
-      "notes": "The chunk content was ingested and enriched into the existing source page for Dragon Roar Magic (sword-world-rpg-complete-edition-11-3-dragon-roar-magic). No new pages were created as the content was fully integrated into the existing page.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-11-3-dragon-roar-magic"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1181,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 36,
-      "heading": "11.5 Asking NPCs to Use Magic",
+      "heading": "5.1.9 Magic Types",
       "pages": [
-        154,
-        158
+        63,
+        64
       ],
-      "tokens": 3704,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 2632,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 37,
-      "heading": "12.2 Rules for Poison, Illness and Infection (part 1)",
+      "heading": "5.1.10 How to Read Magic Details",
       "pages": [
-        159,
-        167
+        65,
+        65
       ],
-      "tokens": 5999,
-      "status": "done",
-      "notes": "Wrote the main chapter page for poison, illness, and infection rules (sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1). Updated the page with details on how illness disrupts spirit power, how poisons affect spirit power, and how infection occurs. No additional pages were created as the scope was limited to the main chapter content and the specific concepts were already covered in existing pages.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1352,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 38,
-      "heading": "12.2 Rules for Poison, Illness and Infection (part 2)",
+      "heading": "5.1.11 Ancient Magic and the Sorcerer Skill",
       "pages": [
-        159,
-        169
+        66,
+        67
       ],
-      "tokens": 5337,
-      "status": "done",
-      "notes": "Updated the illness rules section for Sword World RPG, covering progression, healing, and specific illness examples. Wrote the main chapter page for part 2 of the illness rules. No other pages were created as the content did not introduce sufficient new concepts to warrant additional pages.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1888,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 39,
-      "heading": "13.1 Types of Monsters",
+      "heading": "5.1.12 Ancient Magic List",
       "pages": [
-        170,
-        172
+        68,
+        71
       ],
-      "tokens": 3771,
-      "status": "done",
-      "notes": "Enriched the 'Types of Monsters' section from Sword World RPG - Complete Edition (pages 170-172). Wrote a comprehensive summary of the 12 monster types: fae, youma, spirits, titans, mythical beasts, magical beasts, animals, plants, undead, magical creatures, daemons, humans, and others. Key claims covered include the 12 monster types based on Laverna's Natural History, spirits' life involvement and immunity to poisons/mental attacks, and the various characteristics and origins of each monster type.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-1-types-of-monsters"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5032,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 40,
-      "heading": "13.2.1 How to Read the Monster Catalog",
+      "heading": "5.1.12 Ancient Magic List",
       "pages": [
-        172,
-        175
+        72,
+        75
       ],
-      "tokens": 5122,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5121,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 41,
-      "heading": "13.2.2 Fae",
+      "heading": "5.1.12 Ancient Magic List",
       "pages": [
-        176,
-        180
+        76,
+        79
       ],
-      "tokens": 5420,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-13-2-2-fae",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-2-fae"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5041,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 42,
-      "heading": "13.2.4 Spirits",
+      "heading": "5.1.12 Ancient Magic List",
       "pages": [
-        181,
-        184
+        80,
+        82
       ],
-      "tokens": 5247,
-      "status": "done",
-      "notes": "Key claims: Will-O-Wisp is a spirit of light, appearing as a blue-white ball of light about 50 cm in diameter, and is among the most unstable spirits with little intellect. Shade is a spirit of darkness, controlling fear, and cancels out natural light within 5 meters, leaving the area in total darkness. Brownie appears in old mansions, has illusions and telekinesis, and cannot leave the mansion. Undine is a water spirit that can enter a target's lungs and cause drowning. Salamander is a spirit of fire that breathes fire and is immune to fire attacks. Sprite is a spirit that controls shame and can make others invisible. Dryad is a plant spirit that can charm and bind allies. Mad spirit of life appears as a shining white horse and impacts lives around it. Entities touched: Will-O-Wisp, Shade, Brownie, Undine, Salamander, Sprite, Dryad, Mad spirit of life. Pages written: sword-world-rpg-complete-edition-13-2-4-spirits.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-4-spirits"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3947,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 43,
-      "heading": "13.2.5 Titans",
+      "heading": "5.1.13 Spirit Magic and the Shaman Skill",
       "pages": [
-        185,
-        187
+        83,
+        83
       ],
-      "tokens": 3903,
-      "status": "done",
-      "notes": "Written the main chapter page for 13.2.5 Titans. Updated the source summary for the entire Sword World RPG - Complete Edition. Key claims covered: mad spirit of life's age-shifting effects, ogres (jikininki) as carnivorous titans, and yeti's weakness to fire. Entities touched: mad spirit of life, valkyrie, yeti, ogre, spriggan, troll, hecatoncheir, giants (hill, forest, fire, frost), cyclops. Pages written: 1.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-5-titans"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1297,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 44,
-      "heading": "13.2.6 Mythical Beasts and Magical Beasts (part 1)",
+      "heading": "5.1.14 Spirit Magic List",
       "pages": [
-        188,
-        198
+        84,
+        87
       ],
-      "tokens": 5981,
-      "status": "done",
-      "notes": "Key claims: Satyrs are forest-dwellers with human upper bodies, goat lower bodies, and horns, using flutes to manipulate emotions. Ceiling hangers are magical beasts with asymmetrical arms and glue-like lower body, attacking sleeping prey with surprise and strangling them. Harpy creatures have human female heads and bird bodies, with deela and furia races having different traits and abilities. Hippocampi are sea creatures resembling horses with fish tails, moving quickly underwater but suffering penalties on land. Medusas are magical beasts in human female form with snakes for hair, capable of petrifying with gaze and poisonous snake attacks. Androscorpions are mythical beasts with human upper body and scorpion lower body, using spirit magic and possessing hallucinogenic poison. Entities touched: Satyr, Ceiling Hanger, Harpy, Hippocampus, Medusa, Androscorpio. Pages written: sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 4924,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 45,
-      "heading": "13.2.6 Mythical Beasts and Magical Beasts (part 2)",
+      "heading": "5.1.14 Spirit Magic List",
       "pages": [
-        188,
-        198
+        88,
+        91
       ],
-      "tokens": 5939,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 4951,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 46,
-      "heading": "13.2.6 Mythical Beasts and Magical Beasts (part 3)",
+      "heading": "5.1.14 Spirit Magic List",
       "pages": [
-        188,
-        198
+        92,
+        95
       ],
-      "tokens": 1861,
-      "status": "done",
-      "notes": "Key claims: Humbaba spits fire once every 3 rounds; fire causes a disease called humbaba curse. Roc is a giant bird, second only to dragon, with 20-meter wingspan. Lesser dragons breathe fire in 20-meter radius, elder dragons use ancient magic and roar magic. Entities touched: humbaba, roc, lesser dragon, elder dragon. Pages written: sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5302,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 47,
-      "heading": "13.2.7 Animals (part 1)",
+      "heading": "5.1.15 Holy Magic and the Priest Skill",
       "pages": [
-        199,
-        211
+        96,
+        98
       ],
-      "tokens": 5971,
-      "status": "done",
-      "notes": "Enriched the source page for Animals (part 1) in Sword World RPG - Complete Edition. Created a new entity page for hanger leg. No new entity pages created for wolf or other creatures as per the PagePlan constraints. Key claims covered include wolf pack behavior, giant rat intelligence, and hanger leg parasitism.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-7-animals-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3922,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 48,
-      "heading": "13.2.7 Animals (part 2)",
+      "heading": "5.1.16 Basic Holy Magic List",
       "pages": [
-        199,
-        211
+        99,
+        103
       ],
-      "tokens": 5989,
-      "status": "done",
-      "notes": "The chunk from pages 199-211 of the Sword World RPG - Complete Edition was ingested and enriched into the wiki. Key claims include descriptions of grizzly bears, lions, giant slugs, poison toads, giant toads, giant ants, apes, giant antlions, giant crabs, and worms. The main source page for this section was updated, and key entities such as grizzly bear and giant ant were identified for potential future enrichment. No additional pages were created beyond the main section summary.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-7-animals-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5400,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 49,
-      "heading": "13.2.7 Animals (part 3)",
+      "heading": "5.1.16 Basic Holy Magic List",
       "pages": [
-        199,
-        211
+        104,
+        104
       ],
-      "tokens": 3584,
-      "status": "done",
-      "notes": "Key claims added: Sand worms are giant carnivorous worms that leap out to attack when other creatures pass by on the ground; Giant seals live in the frozen seas of the north, diving under the ice to feed on fish; There are many types of snakes, including vipers, pythons, and hypnopythons. Entities touched: Sand worm, Giant seal, Snake, Spider, Octopus. Pages written: sword-world-rpg-complete-edition-13-2-7-animals-part-3.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-7-animals-part-3"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1212,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 50,
-      "heading": "13.2.8 Plants",
+      "heading": "5.1.17 Special Holy Magic List",
       "pages": [
-        212,
-        213
+        105,
+        107
       ],
-      "tokens": 2613,
-      "status": "done",
-      "notes": "Enriched the source page for the Plants section (13.2.8) from Sword World RPG - Complete Edition, pages 212-213. Key claims covered include killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune. No new entity or concept pages were created, as the existing page adequately covered the content.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-8-plants"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3312,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 51,
-      "heading": "13.2.9 Undead (part 1)",
+      "heading": "5.2 Common Runes",
       "pages": [
-        214,
-        221
+        108,
+        108
       ],
-      "tokens": 5916,
-      "status": "done",
-      "notes": "Key claims added: Alraune are artificial plants created from human blood with no fertility and no fire weakness; Bloody petals are large red flowers that strangle prey; Buau zombies are undead with intellect created by a lost spell. Entities touched: alraune, bloody petal, buau zombie. Pages written: 1 (sword-world-rpg-complete-edition-13-2-9-undead-part-1).",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-9-undead-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 960,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 52,
-      "heading": "13.2.9 Undead (part 2)",
+      "heading": "5.3 Spellsongs",
       "pages": [
-        214,
-        221
+        109,
+        111
       ],
-      "tokens": 4450,
-      "status": "done",
-      "notes": "Enriched the main undead chapter page (sword-world-rpg-complete-edition-13-2-9-undead-part-2) with details on headless horses, undead knights, wraiths, mummies, and vampires. No new entity or concept pages were created in this chunk.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-9-undead-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 2978,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 53,
-      "heading": "13.2.10 Magical Creatures (part 1)",
+      "heading": "Chapter 6: Adventurers’ Skills Other Than Combat And Magic",
       "pages": [
-        222,
-        227
+        112,
+        112
       ],
-      "tokens": 5984,
-      "status": "done",
-      "notes": "Key claims covered: Magical creatures from the ancient kingdom period including simulacra, homunculi, blobs, puppet golems, imitators, things, obsidian dogs, gargoyles, sí, stalkers, gizmos, gas stalkers, and shadow stalkers. Entities touched: simulacra, homunculi, blobs, imitators, things, gizmos, stalkers. Pages written: sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 37,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 54,
-      "heading": "13.2.10 Magical Creatures (part 2)",
+      "heading": "6.2 Thief Skill",
       "pages": [
-        222,
-        229
+        113,
+        115
       ],
-      "tokens": 3860,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3637,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 55,
-      "heading": "13.2.12 Humans",
+      "heading": "6.3 Ranger Skill",
       "pages": [
-        230,
-        234
+        116,
+        117
       ],
-      "tokens": 5531,
-      "status": "done",
-      "notes": "Enriched the main chapter page 'sword-world-rpg-complete-edition-13-2-12-humans' with content from pages 230-234. Created no new entity or concept pages as per the PagePlan constraints. Key claims covered include normal humans, bandits, soldiers, dark priests, and lycanthropes. Entities touched include Maligdorai, Doppelganger, and Lycanthrope, but no new pages were created for them.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-2-12-humans"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1926,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 56,
-      "heading": "13.5 Monster Level and Adventurer Level",
+      "heading": "6.4 Sage Skill",
       "pages": [
-        234,
-        234
+        118,
+        118
       ],
-      "tokens": 850,
-      "status": "done",
-      "notes": "Written the main chapter page for 13.5 Monster Level and Adventurer Level. Updated the source summary for the chapter, including details on monster level scaling, crisis levels, evasion points, defense points, and how to represent special monsters with character data. No additional entity or concept pages were created as the chunk focused on rules and tables rather than introducing new named entities or concepts.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1038,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 57,
-      "heading": "13.6 Handling Monster Special Abilities",
+      "heading": "6.5 Bard Skill",
       "pages": [
-        235,
-        240
+        119,
+        119
       ],
-      "tokens": 5448,
-      "status": "done",
-      "notes": "Updated the main chapter page for handling monster special abilities (13.6) in Sword World RPG. Added content covering mental power and life force resistance rolls, special attacks (including magic, poison, disease, strangling, etc.), and special defense abilities (including immunity, resistance, weaknesses, etc.). No new entity or concept pages were created in this update.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1193,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 58,
-      "heading": "14.1 Treasure and Rewards in Sword World",
+      "heading": "6.6 Common Adventurer Abilities",
       "pages": [
-        241,
-        242
+        120,
+        123
       ],
-      "tokens": 3381,
-      "status": "done",
-      "notes": "Enriched the main chapter page for Treasure and Rewards in Sword World. Created a new page for the concept of 'adventurer's shop' and updated the 'magic item' page with relevant information from this chunk. The key claims covered include the types of treasure found in the ancient kingdom, valuation methods for treasure and rewards, and the role of adventurer's shops in the setting. The pages written are: sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world, sword-world-rpg-complete-edition-adventurers-shop, and sword-world-rpg-complete-edition-magic-item.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 4230,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 59,
-      "heading": "14.4 Magical Item List (part 1)",
+      "heading": "Chapter 7: General Skills",
       "pages": [
-        242,
-        256
+        124,
+        124
       ],
-      "tokens": 5968,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-14-4-magical-item-list-part-1",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 16,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 60,
-      "heading": "14.4 Magical Item List (part 2)",
+      "heading": "7.2 Merchant Skill",
       "pages": [
-        242,
-        256
+        125,
+        125
       ],
-      "tokens": 5987,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-14-4-magical-item-list-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1127,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 61,
-      "heading": "14.4 Magical Item List (part 3)",
+      "heading": "7.3 Craftsman Skill",
       "pages": [
-        242,
-        260
+        126,
+        126
       ],
-      "tokens": 5402,
-      "status": "done",
-      "notes": "Written the source page for section 14.4 (pages 242-260) of Sword World RPG - Complete Edition. The page summarizes magical items including the Guard Glove, Candlestick of Infinite (Un)Luck, and Crystal Orb of Clairvoyance. No additional entity pages were created as per the page plan constraints.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-14-4-magical-item-list-part-3"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1231,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 62,
-      "heading": "16.1 Combat in Which Monsters Roll Dice",
+      "heading": "7.5 Hunter Skill",
       "pages": [
-        261,
-        264
+        127,
+        127
       ],
-      "tokens": 3111,
-      "status": "done",
-      "notes": "Wrote the source page for '16.1 Combat in Which Monsters Roll Dice' (pages 261-264) from 'Sword World RPG - Complete Edition'. Updated the index entry for the page. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1035,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 63,
-      "heading": "16.5 Combat Options",
+      "heading": "7.6 Sailor Skill",
       "pages": [
-        264,
-        268
+        128,
+        128
       ],
-      "tokens": 5343,
-      "status": "done",
-      "notes": "Wrote the source page for the combat options section (p.264-268) of Sword World RPG - Complete Edition. The page covers full defense, strong blow, charge, snipe, mow down, grapple, ram, and area aim. No other pages were created as the chunk did not introduce new entities or concepts requiring dedicated pages.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-16-5-combat-options"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 942,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 64,
-      "heading": "16.7 Throwing Multiple Darts or Daggers",
+      "heading": "Chapter 8: Character Growth",
       "pages": [
-        268,
-        273
+        129,
+        129
       ],
-      "tokens": 5650,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 17,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 65,
-      "heading": "17.2 Lost Spells",
+      "heading": "8.2 How to Use Experience Points: Increasing Skill Levels",
       "pages": [
-        273,
-        276
+        130,
+        130
       ],
-      "tokens": 5496,
-      "status": "done",
-      "notes": "Key claims: Lost spells are not taught in the guild, sorcerers must meet spell level requirements to use them, and they can be learned from sorcerers or spellbooks. Entities touched: Sorcerers, Spellbooks, Game master. Pages written: sword-world-rpg-complete-edition-17-2-lost-spells.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-17-2-lost-spells"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 838,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 66,
-      "heading": "18.3 Rules for Destroying Structures",
+      "heading": "8.4 Increasing General Skills",
       "pages": [
-        277,
-        279
+        131,
+        132
       ],
-      "tokens": 2501,
-      "status": "done",
-      "notes": "Key claims: The rules for destroying structures in Sword World RPG define defense and destruction points for various materials. Wooden walls with 20 cm thickness have maximum defense points of 7 and destruction points of 15. Damage calculation determines whether a structure is destroyed, has its defense points reduced, or is unaffected. Special rules apply for fire-type magic and spirit walls. Entities touched: defense points, destruction points, spirit walls. Pages written: sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures.",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 1220,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 67,
-      "heading": "Guide to Forcelia & Alecrast (part 1)",
+      "heading": "Part 2: Game Masters’ Section",
       "pages": [
-        280,
-        290
+        133,
+        133
       ],
-      "tokens": 5978,
-      "status": "done",
-      "notes": "Key claims: Forcelia is a flat, square world with four sealing gates; the age of mythology began with the death of a Titan who created the world and gods; the Age of Magic saw the rise and fall of the Kingdom of Kastuul; the current Age of Sword began after the fall of the Ancient Kingdom. Entities touched: The Great One (Titan), Pharis, Rahda, Marfa, Myrii, Cha Za, Phalaris, Kingdom of Kastuul, Queen June V, Pirate King Geers. Pages written: 1 (sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1).",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 18,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 68,
-      "heading": "Guide to Forcelia & Alecrast (part 2)",
+      "heading": "Chapter 9: Notes on Success Rolls",
       "pages": [
-        280,
-        293
+        134,
+        134
       ],
-      "tokens": 3635,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 21,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
       "id": 69,
+      "heading": "9.2 Should You Use a Target Score Check or a Difficulty Check?",
+      "pages": [
+        135,
+        135
+      ],
+      "tokens": 1035,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 70,
+      "heading": "9.4 Automatic Success Restrictions",
+      "pages": [
+        136,
+        136
+      ],
+      "tokens": 1187,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 71,
+      "heading": "Chapter 10: Notes on Combat",
+      "pages": [
+        137,
+        137
+      ],
+      "tokens": 17,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 72,
+      "heading": "10.3 Surprise Attacks",
+      "pages": [
+        138,
+        138
+      ],
+      "tokens": 899,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 73,
+      "heading": "10.5 Attacks Against the Sleeping",
+      "pages": [
+        139,
+        139
+      ],
+      "tokens": 1210,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 74,
+      "heading": "10.6 Combat Between Monsters",
+      "pages": [
+        140,
+        140
+      ],
+      "tokens": 327,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 75,
+      "heading": "Chapter 11: Notes on Magic",
+      "pages": [
+        141,
+        141
+      ],
+      "tokens": 17,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 76,
+      "heading": "11.2 Dark Magic",
+      "pages": [
+        142,
+        146
+      ],
+      "tokens": 5287,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 77,
+      "heading": "11.2 Dark Magic",
+      "pages": [
+        147,
+        148
+      ],
+      "tokens": 2171,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 78,
+      "heading": "11.3 Dragon Roar Magic",
+      "pages": [
+        149,
+        152
+      ],
+      "tokens": 4527,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 79,
+      "heading": "11.4 Acquiring Rune Master Skills and Increasing Levels",
+      "pages": [
+        153,
+        153
+      ],
+      "tokens": 1229,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 80,
+      "heading": "11.5 Asking NPCs to Use Magic",
+      "pages": [
+        154,
+        155
+      ],
+      "tokens": 1437,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 81,
+      "heading": "Chapter 12: Various Checks",
+      "pages": [
+        156,
+        156
+      ],
+      "tokens": 17,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 82,
+      "heading": "12.1 Rules Regarding Language",
+      "pages": [
+        157,
+        158
+      ],
+      "tokens": 2261,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 83,
+      "heading": "12.2 Rules for Poison, Illness and Infection",
+      "pages": [
+        159,
+        163
+      ],
+      "tokens": 5925,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 84,
+      "heading": "12.2 Rules for Poison, Illness and Infection",
+      "pages": [
+        164,
+        167
+      ],
+      "tokens": 4787,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 85,
+      "heading": "12.3 Work Requests to NPCs",
+      "pages": [
+        168,
+        168
+      ],
+      "tokens": 625,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 86,
+      "heading": "Chapter 13: Monsters!",
+      "pages": [
+        169,
+        169
+      ],
+      "tokens": 14,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 87,
+      "heading": "13.1 Types of Monsters",
+      "pages": [
+        170,
+        171
+      ],
+      "tokens": 2636,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 88,
+      "heading": "13.2.1 How to Read the Monster Catalog",
+      "pages": [
+        172,
+        175
+      ],
+      "tokens": 5131,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 89,
+      "heading": "13.2.2 Fae",
+      "pages": [
+        176,
+        177
+      ],
+      "tokens": 2404,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 90,
+      "heading": "13.2.3 Youma",
+      "pages": [
+        178,
+        180
+      ],
+      "tokens": 3010,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 91,
+      "heading": "13.2.4 Spirits",
+      "pages": [
+        181,
+        184
+      ],
+      "tokens": 5249,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 92,
+      "heading": "13.2.5 Titans",
+      "pages": [
+        185,
+        187
+      ],
+      "tokens": 3906,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 93,
+      "heading": "13.2.6 Mythical Beasts and Magical Beasts",
+      "pages": [
+        188,
+        191
+      ],
+      "tokens": 5256,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 94,
+      "heading": "13.2.6 Mythical Beasts and Magical Beasts",
+      "pages": [
+        192,
+        195
+      ],
+      "tokens": 5255,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 95,
+      "heading": "13.2.6 Mythical Beasts and Magical Beasts",
+      "pages": [
+        196,
+        198
+      ],
+      "tokens": 3278,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 96,
+      "heading": "13.2.7 Animals",
+      "pages": [
+        199,
+        202
+      ],
+      "tokens": 5192,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 97,
+      "heading": "13.2.7 Animals",
+      "pages": [
+        203,
+        206
+      ],
+      "tokens": 5198,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 98,
+      "heading": "13.2.7 Animals",
+      "pages": [
+        207,
+        211
+      ],
+      "tokens": 5144,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 99,
+      "heading": "13.2.8 Plants",
+      "pages": [
+        212,
+        213
+      ],
+      "tokens": 2616,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 100,
+      "heading": "13.2.9 Undead",
+      "pages": [
+        214,
+        217
+      ],
+      "tokens": 5111,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 101,
+      "heading": "13.2.9 Undead",
+      "pages": [
+        218,
+        221
+      ],
+      "tokens": 5263,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 102,
+      "heading": "13.2.10 Magical Creatures",
+      "pages": [
+        222,
+        225
+      ],
+      "tokens": 5147,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 103,
+      "heading": "13.2.10 Magical Creatures",
+      "pages": [
+        226,
+        227
+      ],
+      "tokens": 2600,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 104,
+      "heading": "13.2.11 Daemons/Underworld Creatures",
+      "pages": [
+        228,
+        229
+      ],
+      "tokens": 2107,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 105,
+      "heading": "13.2.12 Humans",
+      "pages": [
+        230,
+        231
+      ],
+      "tokens": 2442,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 106,
+      "heading": "13.2.13 Other",
+      "pages": [
+        232,
+        232
+      ],
+      "tokens": 1236,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 107,
+      "heading": "13.3 Converting Character Data to Monster Data",
+      "pages": [
+        233,
+        233
+      ],
+      "tokens": 1021,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 108,
+      "heading": "13.5 Monster Level and Adventurer Level",
+      "pages": [
+        234,
+        234
+      ],
+      "tokens": 860,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 109,
+      "heading": "13.6 Handling Monster Special Abilities",
+      "pages": [
+        235,
+        239
+      ],
+      "tokens": 5437,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 110,
+      "heading": "Chapter 14: Treasures",
+      "pages": [
+        240,
+        240
+      ],
+      "tokens": 14,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 111,
+      "heading": "14.2 Adventure Treasure and Reward Amounts",
+      "pages": [
+        241,
+        241
+      ],
+      "tokens": 1146,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 112,
+      "heading": "14.4 Magical Item List",
+      "pages": [
+        242,
+        246
+      ],
+      "tokens": 5201,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 113,
+      "heading": "14.4 Magical Item List",
+      "pages": [
+        247,
+        251
+      ],
+      "tokens": 5534,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 114,
+      "heading": "14.4 Magical Item List",
+      "pages": [
+        252,
+        256
+      ],
+      "tokens": 5860,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 115,
+      "heading": "Chapter 15: Experience Points",
+      "pages": [
+        257,
+        257
+      ],
+      "tokens": 18,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 116,
+      "heading": "15.1 Four Types of Experience Points",
+      "pages": [
+        258,
+        258
+      ],
+      "tokens": 751,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 117,
+      "heading": "Part 3: Optional Rules",
+      "pages": [
+        259,
+        259
+      ],
+      "tokens": 14,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 118,
+      "heading": "Chapter 16: Optional Rules for Combat",
+      "pages": [
+        260,
+        260
+      ],
+      "tokens": 22,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 119,
+      "heading": "16.1 Combat in Which Monsters Roll Dice",
+      "pages": [
+        261,
+        261
+      ],
+      "tokens": 607,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 120,
+      "heading": "16.2 Weapon and Armor Modifiers",
+      "pages": [
+        262,
+        262
+      ],
+      "tokens": 727,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 121,
+      "heading": "16.3 Projectile Bonus Damage",
+      "pages": [
+        263,
+        263
+      ],
+      "tokens": 1007,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 122,
+      "heading": "16.5 Combat Options",
+      "pages": [
+        264,
+        267
+      ],
+      "tokens": 4509,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 123,
+      "heading": "16.8 Weapons and Armor That Are Too Heavy",
+      "pages": [
+        268,
+        268
+      ],
+      "tokens": 838,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 124,
+      "heading": "16.9  Special Weapons",
+      "pages": [
+        269,
+        271
+      ],
+      "tokens": 3038,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 125,
+      "heading": "Chapter 17: Optional Rules for Magic",
+      "pages": [
+        272,
+        272
+      ],
+      "tokens": 21,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 126,
+      "heading": "17.2 Lost Spells",
+      "pages": [
+        273,
+        273
+      ],
+      "tokens": 943,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 127,
+      "heading": "17.5 Full Resistance",
+      "pages": [
+        274,
+        274
+      ],
+      "tokens": 873,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 128,
+      "heading": "Chapter 18: Other Optional Rules",
+      "pages": [
+        275,
+        275
+      ],
+      "tokens": 19,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 129,
+      "heading": "18.2 Guidelines for Adventurer Age and Ability Score Changes",
+      "pages": [
+        276,
+        276
+      ],
+      "tokens": 987,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 130,
+      "heading": "18.3 Rules for Destroying Structures",
+      "pages": [
+        277,
+        279
+      ],
+      "tokens": 2499,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 131,
+      "heading": "Guide to Forcelia & Alecrast",
+      "pages": [
+        280,
+        285
+      ],
+      "tokens": 5232,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 132,
+      "heading": "Guide to Forcelia & Alecrast",
+      "pages": [
+        286,
+        290
+      ],
+      "tokens": 4341,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 133,
+      "heading": "Designer’s Notes",
+      "pages": [
+        291,
+        293
+      ],
+      "tokens": 14,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 134,
       "heading": "Charts",
       "pages": [
         294,
-        311
+        310
       ],
-      "tokens": 5653,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): sword-world-rpg-complete-edition-charts",
-      "pages_written": [
-        "sword-world-rpg-complete-edition-charts"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 5560,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     }

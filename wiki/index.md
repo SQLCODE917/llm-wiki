@@ -259,11 +259,18 @@
 - [[sword-world-rpg-complete-edition-7-2-merchant-skill]] — 7.2 Merchant Skill from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-8-1-experience-points]] — 8.1 Experience Points from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — 9.2 Should You Use a Target Score Check or a Difficulty Check? from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Books Related to Sword World RPG from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Overview of books related to Sword World RPG, including Replay Collections, Scenario Collections, World Guide, and more.
+- [[sword-world-rpg-complete-edition-chapter-1-character]] — Summary of Chapter 1: Character from Sword World RPG - Complete Edition.
 - [[sword-world-rpg-complete-edition-charts]] — Charts from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-document]] — Summary of the Sword World RPG - Complete Edition document, including its structure and key sections.
 - [[sword-world-rpg-complete-edition-front-matter]] — Front matter from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-part-1-players-section]] — Summary of the Players’ Section from the Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-the-meaning-of-the-rulebook]] — Summary of the meaning and scope of the Sword World RPG rulebook.
+- [[sword-world-rpg-complete-edition-welcome-to-sword-world]] — Summary of the 'Welcome to Sword World' section from the Complete Edition RPG.
+- [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]] — Definition and core mechanics of Role-Playing Games in the Sword World RPG system.
+- [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]] — Overview of the structure of the Sword World RPG rulebook and essential items needed to play, including character sheets, dice, and handling fractions.
 
 ## Entities
 

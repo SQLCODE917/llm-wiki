@@ -11,6 +11,7 @@ import hashlib
 from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Literal
 
 from llmwiki.pdf import ScannedPdfError
 from llmwiki.pdf.classify import PdfKind, classify_pdf
@@ -31,6 +32,8 @@ _SOURCE_SECTIONS_FILE = "source_sections.json"
 _CHUNK_DIR = "chunks"
 
 DocumentExtractFn = Callable[[Path, str, str], DocumentModel]
+DocumentExtractorName = Literal["docling", "pymupdf"]
+VALID_DOCUMENT_EXTRACTORS: tuple[DocumentExtractorName, ...] = ("docling", "pymupdf")
 
 
 @dataclass(frozen=True)
@@ -131,10 +134,21 @@ def ensure_extracted(
     return result
 
 
-def _default_document_extractor() -> DocumentExtractFn:
-    from llmwiki.pdf.docling_extractor import extract_document_model
+def document_extractor_by_name(name: str) -> DocumentExtractFn:
+    if name == "docling":
+        from llmwiki.pdf.docling_extractor import extract_document_model
 
-    return extract_document_model
+        return extract_document_model
+    if name == "pymupdf":
+        from llmwiki.pdf.pymupdf_document_extractor import extract_document_model
+
+        return extract_document_model
+    valid = ", ".join(VALID_DOCUMENT_EXTRACTORS)
+    raise ValueError(f"Unknown PDF extractor {name!r}. Valid extractors: {valid}.")
+
+
+def _default_document_extractor() -> DocumentExtractFn:
+    return document_extractor_by_name("docling")
 
 
 def _record(chunk: SourceChunk) -> ChunkRecord:
