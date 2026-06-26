@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "We used generators to build iterators that maintain implicit state. (raw/javascriptallonge.pdf p.273-292) May be applicable to many patterns.",
+      "bullet_text": "Generators can be used to build iterators that maintain implicit state (raw/javascriptallonge.pdf p.273-283).",
       "covered_source_claims": [
-        "source-claim-unit-0019-0002"
+        "source-claim-unit-0054-0002"
       ]
     },
     {
-      "bullet_text": "The diagram of the PDF illustrates a generator example. (raw/javascriptallonge.pdf p.273-292) Might not be fully accurate.",
+      "bullet_text": "Interactive generators allow passing values in and receiving values out, functioning like stateful functions (raw/javascriptallonge.pdf p.273-283).",
       "covered_source_claims": [
-        "source-claim-unit-0019-0006"
+        "source-claim-unit-0054-0004"
       ]
     },
     {
-      "bullet_text": "We start by looking at a very simple example of a stateful function. (raw/javascriptallonge.pdf p.273-292) Could be expanded.",
+      "bullet_text": "The chapter demonstrates building a stateful naughts and crosses game using both stateless and stateful approaches (raw/javascriptallonge.pdf p.273-283).",
       "covered_source_claims": [
-        "source-claim-unit-0019-0005"
+        "source-claim-unit-0054-0003"
       ]
     }
   ],
-  "source_record_text": "Interactive Generators chapter covering generators, stateful functions, and examples."
+  "source_record_text": "Chapter on interactive generators in JavaScript Allongé, covering stateful functions and generator-based state management."
 }

@@ -1,0 +1,30 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Combinators are higher-order functions that take functions as arguments and return functions (raw/javascriptallonge.pdf p.68-70).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0011",
+        "source-claim-unit-0019-0012"
+      ]
+    },
+    {
+      "bullet_text": "The compose combinator combines two functions (raw/javascriptallonge.pdf p.68-70).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0013"
+      ]
+    },
+    {
+      "bullet_text": "Function decorators modify function behavior (raw/javascriptallonge.pdf p.68-70).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0018"
+      ]
+    },
+    {
+      "bullet_text": "Combinators use only function application and previously defined combinators (raw/javascriptallonge.pdf p.68-70).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0019"
+      ]
+    }
+  ],
+  "source_record_text": "This chapter discusses combinators and function decorators in JavaScript, focusing on higher-order functions that take functions as arguments or return functions."
+}

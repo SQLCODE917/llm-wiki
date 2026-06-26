@@ -1,31 +1,30 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Illusion magic affects five senses or pseudo senses, but not magic senses. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "bullet_text": "Illusions affect those with five senses or pseudo senses, but not magic senses (raw/Sword World RPG - Complete Edition.pdf p.65-65).",
       "covered_source_claims": [
-        "source-claim-unit-0014-0050"
+        "source-claim-unit-0037-0002"
       ]
     },
     {
-      "bullet_text": "Illusions can be detected by resistance rolls if the target suspects them, and these rolls can only be made once. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "bullet_text": "Illusion detection requires suspicion and a resistance roll, usable only once (raw/Sword World RPG - Complete Edition.pdf p.65-65).",
       "covered_source_claims": [
-        "source-claim-unit-0014-0051"
+        "source-claim-unit-0037-0012"
       ]
     },
     {
-      "bullet_text": "Ritual magic enhances spell effects through preparation over days, with bonuses calculated as days times participants. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
-      "covered_source_claims": []
-    },
-    {
-      "bullet_text": "Lost spells are ancient magic known only to a limited number of sorcerers, lost with the fall of the ancient kingdom. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
+      "bullet_text": "Ritual magic increases spell final score through days and participants, with no limit on increase (raw/Sword World RPG - Complete Edition.pdf p.65-65).",
       "covered_source_claims": [
-        "source-claim-unit-0014-0046"
+        "source-claim-unit-0037-0028",
+        "source-claim-unit-0037-0019"
       ]
     },
     {
-      "bullet_text": "Magic details include Base Mental Power Cost, Distance, Area, Duration, Effect, Type, Expansion, and Resist. (raw/Sword World RPG - Complete Edition.pdf p.65-67)",
-      "covered_source_claims": []
+      "bullet_text": "Lost spells are known only to a limited number of sorcerers, decided by the game master (raw/Sword World RPG - Complete Edition.pdf p.65-65).",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0050"
+      ]
     }
   ],
-  "source_record_text": "This section explains how to read magic details in the Sword World RPG. It covers illusion magic, ritual magic, and lost spells."
+  "source_record_text": "Section 5.1.10 of the Sword World RPG - Complete Edition, detailing how to read magic details, types of senses, illusion detection, ritual magic, and lost spells."
 }

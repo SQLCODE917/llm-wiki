@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Monsters using magic are more formidable, (raw/Sword World RPG - Complete Edition.pdf p.235-240); Monster level indicates event size, (raw/Sword World RPG - Complete Edition.pdf p.235-240); NPCs as enemies are two levels greater, (raw/Sword World RPG - Complete Edition.pdf p.235-240); Special attacks require mental power resistance rolls, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "bullet_text": "Magic abilities allow monsters to use magic at indicated levels and intensity (raw/Sword World RPG - Complete Edition.pdf p.235-239).",
       "covered_source_claims": [
-        "source-claim-unit-0057-0006"
+        "source-claim-unit-0109-0006"
       ]
     },
     {
-      "bullet_text": "Poison and parasitism make life force resistance rolls, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "bullet_text": "Hypnotism requires mental power resistance roll (raw/Sword World RPG - Complete Edition.pdf p.235-239).",
       "covered_source_claims": [
-        "source-claim-unit-0057-0009"
+        "source-claim-unit-0109-0011"
       ]
     },
     {
-      "bullet_text": "Disease, strangling, capture, entangling, swallow whole, bloodsuck, acid, corrosion, steal mental power, iron corrosion are special attacks, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
+      "bullet_text": "Gaze or ray attacks require mental power resistance roll (raw/Sword World RPG - Complete Edition.pdf p.235-239).",
       "covered_source_claims": [
-        "source-claim-unit-0057-0010"
-      ]
-    },
-    {
-      "bullet_text": "Resistance to weapons, magic, and similar attacks are special defense abilities, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
-      "covered_source_claims": [
-        "source-claim-unit-0057-0010"
-      ]
-    },
-    {
-      "bullet_text": "Weaknesses are special defense abilities, (raw/Sword World RPG - Complete Edition.pdf p.235-240).",
-      "covered_source_claims": [
-        "source-claim-unit-0057-0010"
+        "source-claim-unit-0109-0012"
       ]
     }
   ],
-  "source_record_text": "Chapter 13.6 of the Sword World RPG - Complete Edition covers handling monster special abilities, detailing various attacks and defenses. Not specified."
+  "source_record_text": "This section outlines how to handle various monster special abilities in the Sword World RPG, covering attacks requiring mental power or life force resistance rolls, and defense abilities such as resistance to weapons and magic. Some details are not specified."
 }

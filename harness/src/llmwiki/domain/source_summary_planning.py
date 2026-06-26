@@ -91,14 +91,24 @@ def source_summary_plan(
         selected,
     )
 
+    selected_claims = _diversify_broad_page_selection(
+        terms,
+        candidate_claims,
+        source_has_eligible_claims,
+        min_claims,
+        selected,
+    )
+
     selected_ids = tuple(
-        claim.source_claim_id for claim in selected[:MAX_SOURCE_SUMMARY_CLAIMS]
+        claim.source_claim_id for claim in selected_claims[:MAX_SOURCE_SUMMARY_CLAIMS]
     )
     selected_requirements = tuple(
         source_summary_claim_requirement(claim)
-        for claim in selected[:MAX_SOURCE_SUMMARY_CLAIMS]
+        for claim in selected_claims[:MAX_SOURCE_SUMMARY_CLAIMS]
     )
-    selected_roles = tuple(sorted({role for claim in selected for role in claim.claim_role_tags}))
+    selected_roles = tuple(
+        sorted({role for claim in selected_claims for role in claim.claim_role_tags})
+    )
     selected_groups = tuple(
         group.source_claim_group_id
         for group in groups
@@ -306,6 +316,81 @@ def _fill_remaining_claims(
         ):
             continue
         selected.append(claim)
+
+
+def _diversify_broad_page_selection(
+    terms: frozenset[str],
+    candidate_claims: tuple[SourceClaim, ...],
+    source_has_eligible_claims: bool,
+    min_claims: int,
+    selected: list[SourceClaim],
+) -> tuple[SourceClaim, ...]:
+    """Spread generic source-summary coverage across the source span.
+
+    When a page title has specific claim overlap, the earlier focus rules should
+    win. When it does not, source summaries are usually broad catalog/chapter
+    pages; representative coverage is more useful than several adjacent high
+    salience claims from one local entry.
+    """
+
+    target_size = min(
+        MAX_SOURCE_SUMMARY_CLAIMS,
+        max(min_claims, min(MAX_SOURCE_SUMMARY_CLAIMS, len(candidate_claims))),
+    )
+    if _has_early_page_overlap(terms, candidate_claims):
+        return tuple(selected)
+    if (
+        len(selected) >= target_size
+        and _source_position_span(selected[:target_size]) > target_size
+    ):
+        return tuple(selected)
+    pool = without_competing_section_claims(terms, list(candidate_claims))
+    if source_has_eligible_claims:
+        pool = eligible_claims(pool)
+    if len(pool) <= target_size:
+        return tuple(selected)
+    spread = _stratified_position_claims(terms, tuple(pool), target_size)
+    if len(spread) < target_size:
+        return tuple(selected)
+    return spread
+
+
+def _source_position_span(claims: list[SourceClaim]) -> int:
+    positions = [claim_position(claim) for claim in claims]
+    if not positions:
+        return 0
+    return max(positions) - min(positions) + 1
+
+
+def _has_early_page_overlap(
+    terms: frozenset[str], candidate_claims: tuple[SourceClaim, ...]
+) -> bool:
+    return any(
+        page_overlap(terms, claim) > 0 and claim_position(claim) <= EARLY_CLAIM_WINDOW
+        for claim in candidate_claims
+    )
+
+
+def _stratified_position_claims(
+    terms: frozenset[str], claims: tuple[SourceClaim, ...], target_size: int
+) -> tuple[SourceClaim, ...]:
+    ordered = tuple(sorted(claims, key=claim_position))
+    selected: list[SourceClaim] = []
+    selected_ids: set[str] = set()
+    for bucket in range(target_size):
+        start = (bucket * len(ordered)) // target_size
+        end = ((bucket + 1) * len(ordered)) // target_size
+        window = [
+            claim
+            for claim in ordered[start:end]
+            if claim.source_claim_id not in selected_ids
+        ]
+        if not window:
+            continue
+        claim = max(window, key=lambda item: selection_score(terms, item))
+        selected.append(claim)
+        selected_ids.add(claim.source_claim_id)
+    return tuple(selected)
 
 
 def _has_unselected_relevant_claims(

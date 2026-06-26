@@ -317,7 +317,7 @@ def _add_pdf_extractor_arg(parser: argparse.ArgumentParser) -> None:
 
 def _pdf_extractor(paths: WikiPaths, extractor_name: str = "docling") -> ExtractFn:
     def extract(pdf_path: Path, source_rel: str, reextract: bool) -> ExtractionResult:
-        from llmwiki.pdf.pipeline import document_extractor_by_name, ensure_extracted
+        from llmwiki.pdf.pipeline import ensure_extracted
 
         return ensure_extracted(
             pdf_path,
@@ -325,7 +325,7 @@ def _pdf_extractor(paths: WikiPaths, extractor_name: str = "docling") -> Extract
             cache_root=paths.cache_dir,
             recognizer=_default_text_recognizer(),
             reextract=reextract,
-            document_extractor=document_extractor_by_name(extractor_name),
+            document_extractor_name=extractor_name,
         )
 
     return extract

@@ -1,0 +1,31 @@
+{
+  "artifact_format": "canonical-json",
+  "members": [
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "claim-ledger-artifact",
+      "target_artifact_fingerprint": "5537fe723195e9d5",
+      "target_artifact_id": "claim-ledger-95f4e9030894d4eb"
+    },
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "document-structure-artifact",
+      "target_artifact_fingerprint": "346a4608be1ca7b5",
+      "target_artifact_id": "document-structure-601c438f1afcacc8"
+    },
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "ledger-quality-report-artifact",
+      "target_artifact_fingerprint": "88da999a32dfbce6",
+      "target_artifact_id": "ledger-quality-report-88da999a32dfbce6"
+    },
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "quality-check-catalog-artifact",
+      "target_artifact_fingerprint": "038eefadfda69b3e",
+      "target_artifact_id": "quality-check-catalog-038eefadfda69b3e"
+    }
+  ],
+  "portable_artifact_set_fingerprint": "cd60e309eab54616",
+  "portable_artifact_set_id": "portable-artifact-set-cd60e309eab54616"
+}

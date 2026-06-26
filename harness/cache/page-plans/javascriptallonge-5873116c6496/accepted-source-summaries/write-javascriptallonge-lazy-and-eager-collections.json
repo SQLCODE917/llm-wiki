@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Some collection methods are added only to a few types, while others apply to all (raw/javascriptallonge.pdf p.246-260)",
+      "bullet_text": "Lazy collections avoid computing values until needed, improving efficiency (raw/javascriptallonge.pdf p.246-260).",
       "covered_source_claims": [
-        "source-claim-unit-0017-0008"
+        "source-claim-unit-0052-0008"
       ]
     },
     {
-      "bullet_text": "The fat‑object style arises from misunderstanding: a collection should know how to map over itself but not handle every detail (raw/javascriptallonge.pdf p.246-260)",
+      "bullet_text": "Object-oriented collections should have methods for mapping, reducing, filtering, and finding, but delegate work to operations like mapWith (raw/javascriptallonge.pdf p.246-260).",
       "covered_source_claims": [
-        "source-claim-unit-0017-0014"
+        "source-claim-unit-0052-0016"
       ]
     },
     {
-      "bullet_text": "LazyCollection is a mixin usable with any ordered iterable, adding map, reduce, filter, and find (raw/javascriptallonge.pdf p.246-260)",
+      "bullet_text": "Eager collections, like arrays, return collections of their own type from methods, while lazy collections return iterable objects (raw/javascriptallonge.pdf p.246-260).",
       "covered_source_claims": [
-        "source-claim-unit-0017-0020"
+        "source-claim-unit-0052-0014"
       ]
     },
     {
-      "bullet_text": "Object‑oriented collections should expose mapping, reducing, filtering, and finding, delegating work to helpers such as mapWith (raw/javascriptallonge.pdf p.246-260)",
+      "bullet_text": "Lazy evaluation is beneficial for memory footprint, especially with large collections and many operations (raw/javascriptallonge.pdf p.246-260).",
       "covered_source_claims": [
-        "source-claim-unit-0017-0016"
+        "source-claim-unit-0052-0006"
       ]
     },
     {
-      "bullet_text": "Each collection implements map, fold, filter, and find, yet duplicated code across methods suggests a higher‑level abstraction might be needed (raw/javascriptallonge.pdf p.246-260)",
+      "bullet_text": "Lazy collections can work with infinite data structures, unlike eager collections which require finite data (raw/javascriptallonge.pdf p.246-260).",
       "covered_source_claims": [
-        "source-claim-unit-0017-0005"
+        "source-claim-unit-0052-0007"
       ]
     }
   ],
-  "source_record_text": "This chapter explains why JavaScript collections might benefit from lazy evaluation, critiques the fat‑object approach, and presents a reusable LazyCollection mixin that supplies map, reduce, filter, and find via iterator protocols."
+  "source_record_text": "This chapter discusses lazy and eager collections in JavaScript, focusing on how iterables can be used to build more flexible and efficient data structures. It introduces the concepts of lazy and eager evaluation, and shows how to implement lazy collections using mixins."
 }

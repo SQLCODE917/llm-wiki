@@ -1,0 +1,25 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "In Alecrast, there are not many written languages, and many languages only have spoken words (raw/Sword World RPG - Complete Edition.pdf p.157-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0082-0005",
+        "source-claim-unit-0082-0007",
+        "source-claim-unit-0082-0031"
+      ]
+    },
+    {
+      "bullet_text": "Common is the most widely used language in the world of Sword World (raw/Sword World RPG - Complete Edition.pdf p.157-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0082-0032"
+      ]
+    },
+    {
+      "bullet_text": "Adventurers can learn languages through bard or sage skill levels (raw/Sword World RPG - Complete Edition.pdf p.157-158).",
+      "covered_source_claims": [
+        "source-claim-unit-0082-0015"
+      ]
+    }
+  ],
+  "source_record_text": "This section outlines the rules for language in the Sword World RPG - Complete Edition, covering normal languages, runes, regional and racial languages, and adventurer language abilities."
+}

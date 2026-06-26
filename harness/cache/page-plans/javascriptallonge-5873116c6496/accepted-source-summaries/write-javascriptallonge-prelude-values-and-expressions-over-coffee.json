@@ -1,35 +1,29 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "You give the computer an expression, and it returns a value, just as you express your wishes to a barista and receive a coffee in return (raw/javascriptallonge.pdf p.18-18).",
+      "bullet_text": "JavaScript expressions yield values like coffee orders (raw/javascriptallonge.pdf p.18-18)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0007"
+        "source-claim-unit-0009-0007"
       ]
     },
     {
-      "bullet_text": "The coffee shop makes drinks from espresso ristretto through cappuccino to coffee-flavoured desert concoctions with syrups and milks (raw/javascriptallonge.pdf p.18-18).",
+      "bullet_text": "Input expressions return output values in JavaScript (raw/javascriptallonge.pdf p.18-18)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0002"
+        "source-claim-unit-0009-0005"
       ]
     },
     {
-      "bullet_text": "You express your order at one end of the counter, and the coffee is delivered to you at the other end (raw/javascriptallonge.pdf p.18-18).",
+      "bullet_text": "The coffee shop model illustrates JavaScript evaluation (raw/javascriptallonge.pdf p.18-18)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0005"
+        "source-claim-unit-0009-0008"
       ]
     },
     {
-      "bullet_text": "Expressions are defined at https://en.wikipedia.org/wiki/Expression_ (raw/javascriptallonge.pdf p.18-18).",
+      "bullet_text": "JavaScript evaluates expressions to produce values (raw/javascriptallonge.pdf p.18-18)",
       "covered_source_claims": [
-        "source-claim-unit-0016-0008"
-      ]
-    },
-    {
-      "bullet_text": "Values are defined at https://en.wikipedia.org/wiki/Value_ (raw/javascriptallonge.pdf p.18-18).",
-      "covered_source_claims": [
-        "source-claim-unit-0016-0009"
+        "source-claim-unit-0009-0009"
       ]
     }
   ],
-  "source_record_text": "The Prelude: Values and Expressions over Coffee introduces the concept of expressions and values in JavaScript using a coffee shop analogy."
+  "source_record_text": "The Prelude: Values and Expressions over Coffee chapter introduces foundational concepts using a coffee shop analogy to explain how JavaScript expressions evaluate to values."
 }

@@ -41,6 +41,13 @@ _RHETORICAL_REGEXES = tuple(
     re.compile(pattern)
     for pattern in (r"\bwhy\?\b", r"\bwhat if\b", r"\bhow would\b", r"\bwouldn'?t it\b")
 )
+_BOLD_SPAN_RE = re.compile(r"(?<![A-Za-z0-9_)])\*\*([^*\n]+?)\*\*(?![A-Za-z0-9_(])")
+_ITALIC_SPAN_RE = re.compile(r"(?<![A-Za-z0-9_])_([^_\n]+?)_(?![A-Za-z0-9_])")
+_DECLARATION_RE = re.compile(
+    r"^\s*(?:const|let|var|class)\s+[A-Za-z_$][\w$]*(?:\s*[,=]|\s+extends\b)"
+)
+_FUNCTION_EXPRESSION_RE = re.compile(r"^\s*\(?\s*(?:async\s+)?function\b")
+_ARROW_EXPRESSION_RE = re.compile(r"^\s*(?:async\s+)?(?:\([^)]*\)|[A-Za-z_$][\w$]*)\s*=>")
 _NARRATIVE_PHRASES = (
     "dear reader",
     "let us",
@@ -100,13 +107,40 @@ def _is_short_byline_furniture(lowered: str) -> bool:
 
 
 def is_code_fragment(statement: str) -> bool:
-    stripped = statement.strip()
+    stripped = code_fragment_payload(statement).strip()
+    lowered = stripped.lower()
     if stripped.startswith(("```", "~~~", "const ", "let ", "var ", "function ")):
         return True
+    if (
+        _DECLARATION_RE.match(stripped)
+        or _FUNCTION_EXPRESSION_RE.match(stripped)
+        or _ARROW_EXPRESSION_RE.match(stripped)
+    ):
+        return True
     code_markers = sum(
-        marker in stripped for marker in ("=>", "===", "!==", "{", "}", "();", "return ")
+        marker in lowered
+        for marker in (
+            "=>",
+            "===",
+            "!==",
+            "{",
+            "}",
+            "();",
+            "return ",
+            "function ",
+            "yield ",
+            ";",
+        )
     )
-    return code_markers >= 2 and len(tokens(stripped)) <= 18
+    return code_markers >= 2 and len(tokens(stripped)) <= 48
+
+
+def code_fragment_payload(statement: str) -> str:
+    text = _BOLD_SPAN_RE.sub(r"\1", statement)
+    text = _ITALIC_SPAN_RE.sub(r"\1", text)
+    text = text.replace("\\ ", " ")
+    text = re.sub(r"\s+([,;:)\]])", r"\1", text)
+    return text
 
 
 def is_rhetorical_example(lowered: str) -> bool:
@@ -130,9 +164,7 @@ def is_narrative_frame(lowered: str) -> bool:
         return True
     if "once again" in lowered and "card" in lowered:
         return True
-    if "whereas the" in lowered and (
-        "mathematicians" in lowered or "engineers" in lowered
-    ):
+    if "whereas the" in lowered and ("mathematicians" in lowered or "engineers" in lowered):
         return True
     if "there are" in lowered and "ways to make it" in lowered:
         return True

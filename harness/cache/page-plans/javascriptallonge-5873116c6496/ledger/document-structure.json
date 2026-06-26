@@ -1,0 +1,1054 @@
+{
+  "artifact_format": "canonical-json",
+  "document_structure": {
+    "dispositions": [
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0001",
+        "source_order": 1,
+        "source_range_id": "source-range-javascriptallonge-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0002",
+        "source_order": 2,
+        "source_range_id": "source-range-javascriptallonge-table-of-contents"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0003",
+        "source_order": 3,
+        "source_range_id": "source-range-javascriptallonge-a-pull-of-the-lever-prefaces"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0004",
+        "source_order": 4,
+        "source_range_id": "source-range-javascriptallonge-about-javascript-allong"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0005",
+        "source_order": 5,
+        "source_range_id": "source-range-javascriptallonge-what-javascript-allong-is-and-isn-t"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0006",
+        "source_order": 6,
+        "source_range_id": "source-range-javascriptallonge-foreword-to-the-six-edition"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0007",
+        "source_order": 7,
+        "source_range_id": "source-range-javascriptallonge-forewords-to-the-first-edition"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0008",
+        "source_order": 8,
+        "source_range_id": "source-range-javascriptallonge-about-the-sample-pdf"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0009",
+        "source_order": 9,
+        "source_range_id": "source-range-javascriptallonge-prelude-values-and-expressions-over-coffee"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0010",
+        "source_order": 10,
+        "source_range_id": "source-range-javascriptallonge-values-are-expressions"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0011",
+        "source_order": 11,
+        "source_range_id": "source-range-javascriptallonge-values-and-identity"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0012",
+        "source_order": 12,
+        "source_range_id": "source-range-javascriptallonge-a-rich-aroma-basic-numbers"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0013",
+        "source_order": 13,
+        "source_range_id": "source-range-javascriptallonge-the-first-sip-basic-functions"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0014",
+        "source_order": 14,
+        "source_range_id": "source-range-javascriptallonge-as-little-as-possible-about-functions-but-no-less"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0015",
+        "source_order": 15,
+        "source_range_id": "source-range-javascriptallonge-ah-i-d-like-to-have-an-argument-please"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0016",
+        "source_order": 16,
+        "source_range_id": "source-range-javascriptallonge-closures-and-scope"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0017",
+        "source_order": 17,
+        "source_range_id": "source-range-javascriptallonge-that-constant-coffee-craving"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0018",
+        "source_order": 18,
+        "source_range_id": "source-range-javascriptallonge-naming-functions"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0019",
+        "source_order": 19,
+        "source_range_id": "source-range-javascriptallonge-combinators-and-function-decorators"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0020",
+        "source_order": 20,
+        "source_range_id": "source-range-javascriptallonge-building-blocks"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0021",
+        "source_order": 21,
+        "source_range_id": "source-range-javascriptallonge-magic-names"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0022",
+        "source_order": 22,
+        "source_range_id": "source-range-javascriptallonge-summary"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0023",
+        "source_order": 23,
+        "source_range_id": "source-range-javascriptallonge-recipes-with-basic-functions"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0024",
+        "source_order": 24,
+        "source_range_id": "source-range-javascriptallonge-partial-application"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0025",
+        "source_order": 25,
+        "source_range_id": "source-range-javascriptallonge-unary"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0026",
+        "source_order": 26,
+        "source_range_id": "source-range-javascriptallonge-tap"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0027",
+        "source_order": 27,
+        "source_range_id": "source-range-javascriptallonge-maybe"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0028",
+        "source_order": 28,
+        "source_range_id": "source-range-javascriptallonge-once"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0029",
+        "source_order": 29,
+        "source_range_id": "source-range-javascriptallonge-left-variadic-functions"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0030",
+        "source_order": 30,
+        "source_range_id": "source-range-javascriptallonge-picking-the-bean-choice-and-truthiness"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0031",
+        "source_order": 31,
+        "source_range_id": "source-range-javascriptallonge-composing-and-decomposing-data"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0032",
+        "source_order": 32,
+        "source_range_id": "source-range-javascriptallonge-arrays-and-destructuring-arguments"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0033",
+        "source_order": 33,
+        "source_range_id": "source-range-javascriptallonge-self-similarity"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0034",
+        "source_order": 34,
+        "source_range_id": "source-range-javascriptallonge-tail-calls-and-default-arguments"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0035",
+        "source_order": 35,
+        "source_range_id": "source-range-javascriptallonge-garbage-garbage-everywhere"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0036",
+        "source_order": 36,
+        "source_range_id": "source-range-javascriptallonge-plain-old-javascript-objects"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0037",
+        "source_order": 37,
+        "source_range_id": "source-range-javascriptallonge-mutation"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0038",
+        "source_order": 38,
+        "source_range_id": "source-range-javascriptallonge-reassignment"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0039",
+        "source_order": 39,
+        "source_range_id": "source-range-javascriptallonge-copy-on-write"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0040",
+        "source_order": 40,
+        "source_range_id": "source-range-javascriptallonge-tortoises-hares-and-teleporting-turtles"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0041",
+        "source_order": 41,
+        "source_range_id": "source-range-javascriptallonge-functional-iterators"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0042",
+        "source_order": 42,
+        "source_range_id": "source-range-javascriptallonge-making-data-out-of-functions"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0043",
+        "source_order": 43,
+        "source_range_id": "source-range-javascriptallonge-recipes-with-data"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0044",
+        "source_order": 44,
+        "source_range_id": "source-range-javascriptallonge-mapwith"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0045",
+        "source_order": 45,
+        "source_range_id": "source-range-javascriptallonge-flip"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0046",
+        "source_order": 46,
+        "source_range_id": "source-range-javascriptallonge-object-assign"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0047",
+        "source_order": 47,
+        "source_range_id": "source-range-javascriptallonge-why"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0048",
+        "source_order": 48,
+        "source_range_id": "source-range-javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0049",
+        "source_order": 49,
+        "source_range_id": "source-range-javascriptallonge-served-by-the-pot-collections"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0050",
+        "source_order": 50,
+        "source_range_id": "source-range-javascriptallonge-iteration-and-iterables"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0051",
+        "source_order": 51,
+        "source_range_id": "source-range-javascriptallonge-generating-iterables"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0052",
+        "source_order": 52,
+        "source_range_id": "source-range-javascriptallonge-lazy-and-eager-collections"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0053",
+        "source_order": 53,
+        "source_range_id": "source-range-javascriptallonge-interlude-the-carpenter-interviews-for-a-job"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0054",
+        "source_order": 54,
+        "source_range_id": "source-range-javascriptallonge-interactive-generators"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0055",
+        "source_order": 55,
+        "source_range_id": "source-range-javascriptallonge-basic-operations-on-iterables"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0056",
+        "source_order": 56,
+        "source_range_id": "source-range-javascriptallonge-the-golden-crema-appendices-and-afterwords"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0057",
+        "source_order": 57,
+        "source_range_id": "source-range-javascriptallonge-how-to-run-the-examples"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0058",
+        "source_order": 58,
+        "source_range_id": "source-range-javascriptallonge-thanks"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0059",
+        "source_order": 59,
+        "source_range_id": "source-range-javascriptallonge-copyright-notice"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0060",
+        "source_order": 60,
+        "source_range_id": "source-range-javascriptallonge-about-the-author"
+      }
+    ],
+    "root_node_id": "structure-node-f5d950eb2b488795",
+    "structure_nodes": [
+      {
+        "depth": 0,
+        "evidence_ids": [],
+        "heading_text": "javascriptallonge.pdf",
+        "parent_structure_node_id": "",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 0,
+        "source_range_id": "root",
+        "structure_node_id": "structure-node-f5d950eb2b488795",
+        "structure_node_kind": "root"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 1,
+        "source_range_id": "source-range-javascriptallonge-document",
+        "structure_node_id": "structure-node-ebae64c775916fa3",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Table of Contents",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 2,
+        "source_range_id": "source-range-javascriptallonge-table-of-contents",
+        "structure_node_id": "structure-node-7263f33e774247da",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "A Pull of the Lever: Prefaces",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 3,
+        "source_range_id": "source-range-javascriptallonge-a-pull-of-the-lever-prefaces",
+        "structure_node_id": "structure-node-f0639ff5dc51be46",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "About JavaScript Allongé",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 4,
+        "source_range_id": "source-range-javascriptallonge-about-javascript-allong",
+        "structure_node_id": "structure-node-6d49f4d1391b940e",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "What JavaScript Allongé is. And isn't.",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 5,
+        "source_range_id": "source-range-javascriptallonge-what-javascript-allong-is-and-isn-t",
+        "structure_node_id": "structure-node-9d691101d0f6163a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Foreword to the ``Six'' edition",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 6,
+        "source_range_id": "source-range-javascriptallonge-foreword-to-the-six-edition",
+        "structure_node_id": "structure-node-ec9fa4d0b587ebf0",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Forewords to the First Edition",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 7,
+        "source_range_id": "source-range-javascriptallonge-forewords-to-the-first-edition",
+        "structure_node_id": "structure-node-afcaddd232dc55b9",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "About The Sample PDF",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 8,
+        "source_range_id": "source-range-javascriptallonge-about-the-sample-pdf",
+        "structure_node_id": "structure-node-e30d79de6136b291",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Prelude: Values and Expressions over Coffee",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 9,
+        "source_range_id": "source-range-javascriptallonge-prelude-values-and-expressions-over-coffee",
+        "structure_node_id": "structure-node-59b78a16bdb72a3f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "values are expressions",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 10,
+        "source_range_id": "source-range-javascriptallonge-values-are-expressions",
+        "structure_node_id": "structure-node-fec8f147f485a1d9",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "values and identity",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 11,
+        "source_range_id": "source-range-javascriptallonge-values-and-identity",
+        "structure_node_id": "structure-node-f8197106829ddad6",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "A Rich Aroma: Basic Numbers",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 12,
+        "source_range_id": "source-range-javascriptallonge-a-rich-aroma-basic-numbers",
+        "structure_node_id": "structure-node-756bad6bbd524955",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "The first sip: Basic Functions",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 13,
+        "source_range_id": "source-range-javascriptallonge-the-first-sip-basic-functions",
+        "structure_node_id": "structure-node-195e93453852ec94",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "As Little As Possible About Functions, But No Less",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 14,
+        "source_range_id": "source-range-javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+        "structure_node_id": "structure-node-494d9729525e7fed",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Ah. I'd Like to Have an Argument, Please.",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 15,
+        "source_range_id": "source-range-javascriptallonge-ah-i-d-like-to-have-an-argument-please",
+        "structure_node_id": "structure-node-acfd0584b51205d4",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Closures and Scope",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 16,
+        "source_range_id": "source-range-javascriptallonge-closures-and-scope",
+        "structure_node_id": "structure-node-fecd9a6d241e021c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "That Constant Coffee Craving",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 17,
+        "source_range_id": "source-range-javascriptallonge-that-constant-coffee-craving",
+        "structure_node_id": "structure-node-151d04e0335c2f0b",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Naming Functions",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 18,
+        "source_range_id": "source-range-javascriptallonge-naming-functions",
+        "structure_node_id": "structure-node-fe84fe681404ac07",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Combinators and Function Decorators",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 19,
+        "source_range_id": "source-range-javascriptallonge-combinators-and-function-decorators",
+        "structure_node_id": "structure-node-e6303f8a2af4c272",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Building Blocks",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 20,
+        "source_range_id": "source-range-javascriptallonge-building-blocks",
+        "structure_node_id": "structure-node-9010493b874d3c14",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Magic Names",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 21,
+        "source_range_id": "source-range-javascriptallonge-magic-names",
+        "structure_node_id": "structure-node-9f1878a4c44a5c5c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Summary",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 22,
+        "source_range_id": "source-range-javascriptallonge-summary",
+        "structure_node_id": "structure-node-be7347a639ddf3ca",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Recipes with Basic Functions",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 23,
+        "source_range_id": "source-range-javascriptallonge-recipes-with-basic-functions",
+        "structure_node_id": "structure-node-3d3a59da52be627b",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Partial Application",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 24,
+        "source_range_id": "source-range-javascriptallonge-partial-application",
+        "structure_node_id": "structure-node-5762b9edc9b7a68d",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Unary",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 25,
+        "source_range_id": "source-range-javascriptallonge-unary",
+        "structure_node_id": "structure-node-e906ab67be657376",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Tap",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 26,
+        "source_range_id": "source-range-javascriptallonge-tap",
+        "structure_node_id": "structure-node-422331e9ed3a45f2",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Maybe",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 27,
+        "source_range_id": "source-range-javascriptallonge-maybe",
+        "structure_node_id": "structure-node-22d9a676bbc7842c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Once",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 28,
+        "source_range_id": "source-range-javascriptallonge-once",
+        "structure_node_id": "structure-node-68371cfbed41dc1a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Left-Variadic Functions",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 29,
+        "source_range_id": "source-range-javascriptallonge-left-variadic-functions",
+        "structure_node_id": "structure-node-b75ff4d0fc9c7e06",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Picking the Bean: Choice and Truthiness",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 30,
+        "source_range_id": "source-range-javascriptallonge-picking-the-bean-choice-and-truthiness",
+        "structure_node_id": "structure-node-f23438f7e7dd05c5",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Composing and Decomposing Data",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 31,
+        "source_range_id": "source-range-javascriptallonge-composing-and-decomposing-data",
+        "structure_node_id": "structure-node-c9f53446994fc332",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Arrays and Destructuring Arguments",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 32,
+        "source_range_id": "source-range-javascriptallonge-arrays-and-destructuring-arguments",
+        "structure_node_id": "structure-node-5f53e422bbb4ddc1",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Self-Similarity",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 33,
+        "source_range_id": "source-range-javascriptallonge-self-similarity",
+        "structure_node_id": "structure-node-7227675412ac4ddb",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Tail Calls (and Default Arguments)",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 34,
+        "source_range_id": "source-range-javascriptallonge-tail-calls-and-default-arguments",
+        "structure_node_id": "structure-node-45bfdd0bdec7d7c7",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Garbage, Garbage Everywhere",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 35,
+        "source_range_id": "source-range-javascriptallonge-garbage-garbage-everywhere",
+        "structure_node_id": "structure-node-8c2d589c486cc02b",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Plain Old JavaScript Objects",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 36,
+        "source_range_id": "source-range-javascriptallonge-plain-old-javascript-objects",
+        "structure_node_id": "structure-node-c4a45777b6fa7d8f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Mutation",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 37,
+        "source_range_id": "source-range-javascriptallonge-mutation",
+        "structure_node_id": "structure-node-f600b3f57490cb75",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Reassignment",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 38,
+        "source_range_id": "source-range-javascriptallonge-reassignment",
+        "structure_node_id": "structure-node-4fc9bd932581d30c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Copy on Write",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 39,
+        "source_range_id": "source-range-javascriptallonge-copy-on-write",
+        "structure_node_id": "structure-node-db0570410afb62e6",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Tortoises, Hares, and Teleporting Turtles",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 40,
+        "source_range_id": "source-range-javascriptallonge-tortoises-hares-and-teleporting-turtles",
+        "structure_node_id": "structure-node-8e562a83f83a5d6f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Functional Iterators",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 41,
+        "source_range_id": "source-range-javascriptallonge-functional-iterators",
+        "structure_node_id": "structure-node-b6f0daa9386ad22c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Making Data Out Of Functions",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 42,
+        "source_range_id": "source-range-javascriptallonge-making-data-out-of-functions",
+        "structure_node_id": "structure-node-0273f8f831df2bc1",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Recipes with Data",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 43,
+        "source_range_id": "source-range-javascriptallonge-recipes-with-data",
+        "structure_node_id": "structure-node-40cdb9ff6a19e462",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "mapWith",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 44,
+        "source_range_id": "source-range-javascriptallonge-mapwith",
+        "structure_node_id": "structure-node-6237124913f56a46",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Flip",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 45,
+        "source_range_id": "source-range-javascriptallonge-flip",
+        "structure_node_id": "structure-node-ca515f8a7670c2e4",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Object.assign",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 46,
+        "source_range_id": "source-range-javascriptallonge-object-assign",
+        "structure_node_id": "structure-node-a8721f6693478fd7",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Why?",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 47,
+        "source_range_id": "source-range-javascriptallonge-why",
+        "structure_node_id": "structure-node-07a6df275f71b20f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "A Warm Cup: Basic Strings and Quasi-Literals",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 48,
+        "source_range_id": "source-range-javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals",
+        "structure_node_id": "structure-node-24f62cb87537a1fb",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Served by the Pot: Collections",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 49,
+        "source_range_id": "source-range-javascriptallonge-served-by-the-pot-collections",
+        "structure_node_id": "structure-node-5731dff1b90d25a0",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Iteration and Iterables",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 50,
+        "source_range_id": "source-range-javascriptallonge-iteration-and-iterables",
+        "structure_node_id": "structure-node-66d7db1ed2b65b22",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Generating Iterables",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 51,
+        "source_range_id": "source-range-javascriptallonge-generating-iterables",
+        "structure_node_id": "structure-node-451207f21539bb9d",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Lazy and Eager Collections",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 52,
+        "source_range_id": "source-range-javascriptallonge-lazy-and-eager-collections",
+        "structure_node_id": "structure-node-259f95511f582483",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Interlude: The Carpenter Interviews for a Job",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 53,
+        "source_range_id": "source-range-javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+        "structure_node_id": "structure-node-3483cbb4983a2806",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Interactive Generators",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 54,
+        "source_range_id": "source-range-javascriptallonge-interactive-generators",
+        "structure_node_id": "structure-node-cd24ac053f97bd1f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Basic Operations on Iterables",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 55,
+        "source_range_id": "source-range-javascriptallonge-basic-operations-on-iterables",
+        "structure_node_id": "structure-node-fe1d3e444771e2f0",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "The Golden Crema: Appendices and Afterwords",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 56,
+        "source_range_id": "source-range-javascriptallonge-the-golden-crema-appendices-and-afterwords",
+        "structure_node_id": "structure-node-0a97a2e7848affe1",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "How to run the examples",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 57,
+        "source_range_id": "source-range-javascriptallonge-how-to-run-the-examples",
+        "structure_node_id": "structure-node-0b246283eb969670",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Thanks!",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 58,
+        "source_range_id": "source-range-javascriptallonge-thanks",
+        "structure_node_id": "structure-node-1b3b5c57cf979547",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Copyright Notice",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 59,
+        "source_range_id": "source-range-javascriptallonge-copyright-notice",
+        "structure_node_id": "structure-node-dcddc2f3c272fe25",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "About The Author",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 60,
+        "source_range_id": "source-range-javascriptallonge-about-the-author",
+        "structure_node_id": "structure-node-0b032b5230967970",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document through About The Author",
+        "parent_structure_node_id": "structure-node-f5d950eb2b488795",
+        "source_locator": "javascriptallonge.pdf",
+        "source_order": 61,
+        "source_range_id": "source-range-javascriptallonge",
+        "structure_node_id": "structure-node-9546f03fbd68e019",
+        "structure_node_kind": "section"
+      }
+    ]
+  },
+  "document_structure_artifact_id": "document-structure-a7e731186f63a957",
+  "document_structure_fingerprint": "88cb56ce0c65535a"
+}

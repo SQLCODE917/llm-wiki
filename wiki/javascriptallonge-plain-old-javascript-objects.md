@@ -2,100 +2,97 @@
 page_id: javascriptallonge-plain-old-javascript-objects
 page_kind: source
 summary: Plain Old JavaScript Objects from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.132-132
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.132-140
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-JavaScript Allongé explores the fundamentals and advanced techniques of JavaScript, with a focus on functional programming and the manipulation of objects.
+JavaScript objects are maps from string keys to values, and they use literal syntax for creation. This chapter covers object composition, decomposition, destructuring, and linked lists using objects.
 
 ## Key supported claims
 
-- JavaScript has dictionaries, and it calls them 'objects.' The word 'object' is loaded in programming circles, due to the widespread use of the term 'object-oriented programming' that was coined by Alan Kay but has since come to mean many, many things to many different people. (raw/javascriptallonge.pdf p.132-132)
-- Dictionaries store key-value pairs, so instead of binding NAME to 0 and then storing a name in an array at index 0, we can bind a name directly to name in a dictionary, and we let JavaScript sort out whether the implementation is a list of key-value pairs, a hashed collection, a tree of some sort, or anything else. (raw/javascriptallonge.pdf p.132-132)
-- Over time, this need to build heterogeneous data structures with access to members by name evolved into the Dictionary data type, a mapping from a unique set of objects to another set of objects. (raw/javascriptallonge.pdf p.132-132)
-- In JavaScript, an object is a map from string keys to values. (raw/javascriptallonge.pdf p.132-132)
+- JavaScript objects are maps from string keys to values, using literal syntax for creation (raw/javascriptallonge.pdf p.132-140).
+- Objects can store key-value pairs and access values by name using bracket notation (raw/javascriptallonge.pdf p.132-140).
+- JavaScript objects support various syntaxes for property access, including bracket notation and dot notation (raw/javascriptallonge.pdf p.132-140).
+- Objects can contain functions and other data structures, and use compact method syntax for named function expressions (raw/javascriptallonge.pdf p.132-140).
+- Destructuring assignments can be used with objects to extract values (raw/javascriptallonge.pdf p.132-140).
 
 ## Technical details
 
-### `technical-atom-c8c475f5a5275af7` code
+### `technical-atom-31274c701c75c742` code
 
-Citation: (raw/javascriptallonge.pdf p.132)
-
-```javascript
-const remember = ["the milk", "the coffee beans", "the biscotti"]; And they can be used to store heterogeneous things in various levels of structure:
-```
-
-### `technical-atom-063ccafb474926a9` code
-
-Citation: (raw/javascriptallonge.pdf p.132)
+Citation: (raw/javascriptallonge.pdf p.132-140)
 
 ```javascript
-const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
+const remember = ["the milk", "the coffee beans", "the biscotti"];
 ```
 
-### `technical-atom-08c736021f08b986` code
+### `technical-atom-d6ba7e5f33c9f02b` code
 
-Citation: (raw/javascriptallonge.pdf p.132)
+Citation: (raw/javascriptallonge.pdf p.132-140)
 
 ```javascript
-const NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES = 1; const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
+const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja vaScript Spessore", "CoffeeScript Ristretto"]]];
 ```
 
-### `technical-atom-b91f3af2d19fe2cf` procedure
+### `technical-atom-aae330c293cc2f83` code
 
-Citation: (raw/javascriptallonge.pdf p.132)
+Citation: (raw/javascriptallonge.pdf p.132-140)
 
-Dictionaries store key-value pairs, so instead of binding NAME to 0 and then storing a name in an array at index 0 , we can bind a name directly to name in a dictionary, and we let JavaScript sort out whether the implementation is a list of key-value pairs, a hashed collection, a tree of some sort, or anything else.
+```javascript
+const NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES = 1;
+```
 
-### `technical-atom-d529e9b6bf45d57d` exception
+### `technical-atom-c42523bb272ff848` code
 
-Citation: (raw/javascriptallonge.pdf p.132)
+Citation: (raw/javascriptallonge.pdf p.132-140)
 
-Lists are not the only way to represent collections of things, but they are the 'oldest' data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer.
+```
+- { year: 2012, month: 6, day: 14 }
+```
 
-### `technical-atom-e68ed5f2813f1fee` exception
+### `technical-atom-63b7015f42c45b72` code
 
-Citation: (raw/javascriptallonge.pdf p.132)
+Citation: (raw/javascriptallonge.pdf p.132-140)
 
-So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
+```javascript
+- { year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 } //=> false
+```
+
+### `technical-atom-daba175ac6c4caee` code
+
+Citation: (raw/javascriptallonge.pdf p.132-140)
+
+```javascript
+- { year: 2012, month: 6, day: 14 }['day'] //=> 14
+```
+
+### `technical-atom-fe9470f7a0484918` code
+
+Citation: (raw/javascriptallonge.pdf p.132-140)
+
+```javascript
+const unique = () => [],
+```
+
+### `technical-atom-912fef7389f54f60` code
+
+Citation: (raw/javascriptallonge.pdf p.132-140)
+
+```
+- z = unique(), o = { a: x, b: y, c: z };
+```
 
 ## Related technical details
 
-### From [[javascriptallonge-destructuring-objects]]: `technical-atom-2fa843b604012360` code
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-b4bbdc6766be3fad` code
 
-Relation: nearby source page; matched terms `allong`, `can`, `javascript`, `name`, `objects`
+Relation: nearby source page; matched terms `can`, `function`, `javascript`, `they`
 
-Citation: (raw/javascriptallonge.pdf p.136-137)
-
-```javascript
-const user = { name: { first: "Reginald", last: "Braithwaite" }, occupation: { title: "Author", responsibilities: [ "JavaScript Allongé", "JavaScript Spessore", "CoffeeScript Ristretto" ] } }; user.name.last //=> "Braithwaite" user.occupation.title //=> "Author" And we can also write: const {name: { first: given, last: surname}, occupation: { title: title } er; surname //=> "Braithwaite" title //=> "Author"
-```
-
-### From [[javascriptallonge-literal-object-syntax]]: `technical-atom-d57202306c2b8fa1` code
-
-Relation: nearby source page; matched terms `access`, `name`, `object`, `objects`, `string`, `use`
-
-Citation: (raw/javascriptallonge.pdf p.133-136)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
 ```javascript
-{ year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 } //=> false Objects use [] to access the values by name, using a string: { year: 2012, month: 6, day: 14 }['day'] //=> 14
+There are three places it returns. The first two don’t return anything, they don’t matter. But the third is fn.apply(this, args). This is a tail-call, because it invokes another function and returns its result. This is interesting, because after sorting out what to supply as arguments (this, args), JavaScript can throw away everything in its current stack frame. It isn’t going to do any more work, so it can throw its existing stack frame away.
 ```
-
-### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-5d1ebb19d843b288` procedure
-
-Relation: nearby source page; matched terms `array`, `procedure`, `then`, `time`, `use`
-
-Citation: (raw/javascriptallonge.pdf p.126-128)
-
-Lather, rinse, repeat: Ever time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend .
-
-### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-ff30dd9aed90995c` exception
-
-Relation: nearby source page; matched terms `data`, `structures`
-
-Citation: (raw/javascriptallonge.pdf p.126-128)
-
-64 It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made.

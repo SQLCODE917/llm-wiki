@@ -2,103 +2,103 @@
 page_id: sword-world-rpg-complete-edition-3-4-movement-and-actions
 page_kind: source
 summary: 3.4 Movement and Actions from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.37-42
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.37-38
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section details movement and actions during combat in Sword World RPG, outlining the restrictions and distances for full movement, normal movement, and standing still.
+Summary of movement and actions rules in Sword World RPG - Complete Edition, covering full, normal, and standstill movement options, with associated actions and restrictions.
 
 ## Key supported claims
 
-- Full movement allows running but restricts actions like wielding weapons or casting spells (raw/Sword World RPG - Complete Edition.pdf p.37-42).
-- Normal movement allows advancing based on agility or movement speed, with specific action restrictions (raw/Sword World RPG - Complete Edition.pdf p.37-42).
-- During full movement, characters can withdraw from engagement, though with penalties (raw/Sword World RPG - Complete Edition.pdf p.37-42).
-- Movement speed for monsters is separate from agility, allowing them to move up to movement speed x 3 meters (raw/Sword World RPG - Complete Edition.pdf p.37-42).
-- Standing still allows use of magic and projectiles, with movement limited to 3 meters (raw/Sword World RPG - Complete Edition.pdf p.37-42).
+- A character can move during a 10-second round, but movement restricts actions like wielding weapons or casting spells (raw/Sword World RPG - Complete Edition.pdf p.37-38).
+- Full movement allows advancing farther but increases enemy attack hit chances (raw/Sword World RPG - Complete Edition.pdf p.37-38).
+- Full movement distance is agility x 3 meters for characters, or movement speed x 3 meters for monsters (raw/Sword World RPG - Complete Edition.pdf p.37-38).
+- Movement options are full, normal, or stand still, each with different distances and action restrictions (raw/Sword World RPG - Complete Edition.pdf p.37-38).
+- Actions possible during full movement include withdrawing from engagement (raw/Sword World RPG - Complete Edition.pdf p.37-38).
 
 ## Technical details
 
-### `technical-atom-82520b9fd78843e7` formula
+### `technical-atom-e969a786cf71bd2a` formula
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
 
-**bonus damage** = fighter (thief/ranger) skill level + strength bonus
+For any other actions, please use _common sense_ based on the time frame of 1 round = 10 seconds.
 
-### `technical-atom-d413339cac5141a8` formula
+### `technical-atom-7135392d52ee3075` procedure
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
 
-**attack power** = fighter (thief/ranger) skill level + dexterity bonus
+If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon.
 
-### `technical-atom-780c47e39a262cf2` formula
+### `technical-atom-34462fe8f85d5518` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-
-**critical target** = 10 (9 if using thief skill)
-
-### `technical-atom-780c07b7e5cb644e` formula
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-
-**strike power** = required strength of weapon (+5 if a two-handed weapon)
-
-### `technical-atom-a4195d712b5c6791` formula
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-
-**evasion speed** = fighter (thief) skill level + agility bonus
-
-### `technical-atom-25232ae88ef96cb0` formula
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-
-**defense power** = required strength of armor
-
-### `technical-atom-ce6d9ec5c2bb20d8` formula
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
-
-**damage reduction** = adventurer level
-
-### `technical-atom-bd4d4744dec4ebc8` exception
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
 
 You cannot wield weapons or cast spells while running at full speed.
 
+### `technical-atom-d9e61794bd1470b6` exception
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
+
+However, this is limited to items that are already worn and ready to go, such as those kept in a sheath.
+
+### `technical-atom-bbbb8fd6b572a6d4` exception
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
+
+You _cannot_ pick up a weapon that was left on the ground.
+
+### `technical-atom-0f9faed485a844fc` exception
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
+
+However, this is only possible if there is a sheath, etc.
+
+### `technical-atom-07eb599138162e70` worked-example
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
+
+consider it as if you _never had it in the first place_ , then choose your action.
+
+### `technical-atom-02bdeb90ea361efb` worked-example
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-38)
+
+If you have such a weapon in one hand and a shield in the other, if you drop the shield, the weapon is now considered to be in only one hand, so you can then hold it with both hands.
+
 ## Related technical details
 
-### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-e121551de400d86a` procedure
+### From [[sword-world-rpg-complete-edition-3-1-action-announcements-through-3-3-action-canceling]]: `technical-atom-083d704f93da63cf` procedure
 
-Relation: nearby source page; matched terms `how`, `magic`, `use`
+Relation: nearby source page; matched terms `action`, `characters`, `made`, `other`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.35-36)
 
-First, adventurers who use magic are given a score called **magic power** .
+If _a2_ is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of _B → A_ , regardless of the intelligence of the other characters.
 
-### From [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]]: `technical-atom-827db5abbfc1a9cd` procedure
+### From [[sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor]]: `technical-atom-ad003fd72ce78907` requirement
 
-Relation: nearby source page; matched terms `magic`, `use`
+Relation: nearby source page; matched terms `attack`, `hit`, `weapons`, `you`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.56)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.51-53)
 
-First, adventurers who use magic are given a score called **magic power** .
+You must declare mercy _before_ you make a hit check for your attack.
 
-### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-dd38c330b55ed530` exception
+### From [[sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor]]: `technical-atom-ca0b600489dc3c62` exception
 
-Relation: nearby source page; matched terms `how`, `however`, `magic`, `some`, `use`
+Relation: nearby source page; matched terms `can`, `character`, `weapons`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.51-53)
 
-However, this also has some limitations.
+If a character does not want to kill their opponent, they can declare **mercy** .
 
-### From [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]: `technical-atom-18720b952b8cb263` exception
+### From [[sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor]]: `technical-atom-91a91c9dafae145f` exception
 
-Relation: nearby source page; matched terms `how`, `magic`, `other`, `use`, `you`
+Relation: nearby source page; matched terms `however`, `weapons`, `you`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.56-60)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.51-53)
 
-The other, is that you _cannot_ have more than _one each_ of holy, dark, and dragon roar magic at the same time.
+However, even if an item is classified as one of these, if you _throw_ it, you _cannot_ declare mercy.

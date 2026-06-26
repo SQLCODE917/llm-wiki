@@ -3,18 +3,17 @@ page_id: javascriptallonge-prelude-values-and-expressions-over-coffee
 page_kind: source
 summary: Prelude: Values and Expressions over Coffee from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.18-18
-updated: 2026-06-23
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-The Prelude: Values and Expressions over Coffee introduces the concept of expressions and values in JavaScript using a coffee shop analogy.
+The Prelude: Values and Expressions over Coffee chapter introduces foundational concepts using a coffee shop analogy to explain how JavaScript expressions evaluate to values.
 
 ## Key supported claims
 
-- You give the computer an expression, and it returns a value, just as you express your wishes to a barista and receive a coffee in return (raw/javascriptallonge.pdf p.18-18).
-- The coffee shop makes drinks from espresso ristretto through cappuccino to coffee-flavoured desert concoctions with syrups and milks (raw/javascriptallonge.pdf p.18-18).
-- You express your order at one end of the counter, and the coffee is delivered to you at the other end (raw/javascriptallonge.pdf p.18-18).
-- Expressions are defined at https://en.wikipedia.org/wiki/Expression_ (raw/javascriptallonge.pdf p.18-18).
-- Values are defined at https://en.wikipedia.org/wiki/Value_ (raw/javascriptallonge.pdf p.18-18).
+- JavaScript expressions yield values like coffee orders (raw/javascriptallonge.pdf p.18-18)
+- Input expressions return output values in JavaScript (raw/javascriptallonge.pdf p.18-18)
+- The coffee shop model illustrates JavaScript evaluation (raw/javascriptallonge.pdf p.18-18)
+- JavaScript evaluates expressions to produce values (raw/javascriptallonge.pdf p.18-18)

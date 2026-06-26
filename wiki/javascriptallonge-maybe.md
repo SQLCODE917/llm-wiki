@@ -3,102 +3,122 @@ page_id: javascriptallonge-maybe
 page_kind: source
 summary: Maybe from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.86-87
-updated: 2026-06-23
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This chapter discusses the 'Maybe' pattern, a common approach in JavaScript for handling null or undefined values, and how it can be implemented using function decorators.
+This chapter discusses the Maybe pattern and a function decorator for handling null or undefined values in JavaScript, borrowing ideas from Haskell's Maybe monad, Ruby's andand, and CoffeeScript's existential method invocation.
 
 ## Key supported claims
 
-- The 'Maybe' pattern is a common solution for handling null or undefined values in JavaScript, as discussed in (raw/javascriptallonge.pdf p.86-87).
-- A function using the 'Maybe' pattern checks for 'nothing' (null or undefined) and does nothing if the parameter is nothing, as described in (raw/javascriptallonge.pdf p.86-87).
-- The 'Maybe' pattern can be implemented using a function decorator, borrowing concepts from Haskell's Maybe monad and Ruby's andand, as explained in (raw/javascriptallonge.pdf p.86-87).
+- The Maybe pattern checks for null or undefined values in JavaScript, as per raw/javascriptallonge.pdf p.86-87.
+- The Maybe pattern is inspired by Haskell's Maybe monad, Ruby's andand, and CoffeeScript's existential method invocation, per raw/javascriptallonge.pdf p.86-87.
+- The maybe decorator reduces the logic of checking for nothing to a function call, as noted in raw/javascriptallonge.pdf p.86-87.
 
 ## Technical details
 
-### `technical-atom-157e959658e23810` code
+### `technical-atom-1bd590dcf147fd4a` code
 
 Citation: (raw/javascriptallonge.pdf p.86-87)
 
 ```javascript
-const isSomething = (value) => value !== null && value !== void 0; const checksForSomething = (value) => { if (isSomething(value)) { // function's true logic } }
+const isSomething = (value) => value !== null && value !== void 0;
 ```
 
-### `technical-atom-34425860a3c743dc` code
-
-Citation: (raw/javascriptallonge.pdf p.86-87)
-
-```
-var something = isSomething(value) ? doesntCheckForSomething(value) : value;
-```
-
-### `technical-atom-65823b222c58213a` code
+### `technical-atom-bd52e6052086d753` code
 
 Citation: (raw/javascriptallonge.pdf p.86-87)
 
 ```javascript
-const maybe = (fn) => function (...args) { if (args.length === 0) { return } else { for ( let arg of args) { if (arg == null ) return ; }
+const checksForSomething = (value) => { if (isSomething(value)) {
 ```
 
-### `technical-atom-0a9ab21a902bd123` code
+### `technical-atom-ff114878203bea62` code
 
 Citation: (raw/javascriptallonge.pdf p.86-87)
 
 ```
-return fn.apply( this , args) } }
+var something = isSomething(value) ? doesntCheckForSomething(value): value;
 ```
 
-### `technical-atom-c6d5d41b2b1c2236` code
-
-Citation: (raw/javascriptallonge.pdf p.86-87)
-
-```javascript
-maybe((a, b, c) => a + b + c)(1, 2, 3) //=> 6 maybe((a, b, c) => a + b + c)(1, null , 3) //=> undefined
-```
-
-### `technical-atom-e70b7b490931fb2a` code
+### `technical-atom-0354ebfb80359cec` code
 
 Citation: (raw/javascriptallonge.pdf p.86-87)
 
 ```javascript
-function Model () {}; Model.prototype.setSomething = maybe( function (value) { this .something = value; });
+const maybe = (fn) => function (...args) { if (args.length === 0) { return } else { for ( let arg of args) { if (arg == null) return; }
+```
+
+### `technical-atom-e937c2bf2a6905cf` code
+
+Citation: (raw/javascriptallonge.pdf p.86-87)
+
+```
+return fn.apply( this, args) } }
+```
+
+### `technical-atom-a86e1001edea1d1d` code
+
+Citation: (raw/javascriptallonge.pdf p.86-87)
+
+```javascript
+function Model () {};
+```
+
+### `technical-atom-937bc370ec3a1ac2` code
+
+Citation: (raw/javascriptallonge.pdf p.86-87)
+
+```javascript
+Model.prototype.setSomething = maybe( function (value) { this .something = value; });
+```
+
+### `technical-atom-030be2e52dfd42a0` code
+
+Citation: (raw/javascriptallonge.pdf p.86-87)
+
+```
+var something = isSomething(value) ?
 ```
 
 ## Related technical details
 
-### From [[javascriptallonge-unary]]: `technical-atom-898e42c84ba44bb3` procedure
+### From [[javascriptallonge-picking-the-bean-choice-and-truthiness]]: `technical-atom-69f71aab863b5fa0` code
+
+Relation: nearby source page; matched terms `function`, `null`, `there`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.94-99)
+
+```javascript
+is an idiom that means “true if currentUser is truthy.” Thus, a function like currentUser() is free to return null, or undefined, or false if there is no current user.
+```
+
+### From [[javascriptallonge-unary]]: `technical-atom-2fb846e09e5cacfd` procedure
 
 Relation: nearby source page; matched terms `decorator`, `function`
 
 Citation: (raw/javascriptallonge.pdf p.82-83)
 
-'Unary' is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument.
+“Unary” is a function decorator that modifies the number of arguments a function takes: Unary takes any function and turns it into a function taking exactly one argument.
 
-### From [[javascriptallonge-overcoming-limitations]]: `technical-atom-0cc478268532bafb` procedure
+### From [[javascriptallonge-once]]: `technical-atom-b120a4f7a43e70cd` code
 
-Relation: nearby source page; matched terms `decorator`, `function`
-
-Citation: (raw/javascriptallonge.pdf p.91-92)
-
-Our leftVariadic function is a decorator that turns any function into a function that gathers parameters from the left , instead of from the right.
-
-### From [[javascriptallonge-tap]]: `technical-atom-c8fa273077e85aaf` code
-
-Relation: nearby source page; matched terms `can`, `function`, `undefined`
-
-Citation: (raw/javascriptallonge.pdf p.84-85)
-
-```javascript
-const tap = (value, fn) => { const curried = (fn) => ( typeof (fn) === 'function' && fn(value), value ); return fn === undefined ? curried : curried(fn); } Now we can write: tap('espresso')((it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso' Or: tap('espresso', (it) => { console.log(`Our drink is ' ${ it } '`) }); //=> Our drink is 'espresso' 'espresso'
-```
-
-### From [[javascriptallonge-once]]: `technical-atom-f74baf81c6759358` exception
-
-Relation: nearby source page; matched terms `called`, `can`, `function`
+Relation: nearby source page; matched terms `call`, `function`, `undefined`, `very`
 
 Citation: (raw/javascriptallonge.pdf p.88)
 
-It ensures that a function can only be called, well, once .
+```javascript
+Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
+```
+
+### From [[javascriptallonge-once]]: `technical-atom-a8a5e302dccccc11` code
+
+Relation: nearby source page; matched terms `call`, `function`, `undefined`
+
+Citation: (raw/javascriptallonge.pdf p.88)
+
+```javascript
+That function will call your function once, and thereafter will return undefined whenever it is called.
+```

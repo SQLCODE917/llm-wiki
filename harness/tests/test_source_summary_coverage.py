@@ -6,6 +6,7 @@ from llmwiki.config import WikiPaths
 from llmwiki.domain.objects import (
     ClaimRoleTag,
     Evidence,
+    PlannedPageWrite,
     RawSource,
     Schema,
     SourceBundle,
@@ -21,7 +22,7 @@ from llmwiki.domain.page_body_contracts import (
     resolve_page_body_contract,
     validate_source_summary_draft,
 )
-from llmwiki.domain.pages import LOCAL_FLAT_STRUCTURE
+from llmwiki.domain.pages import LOCAL_FLAT_STRUCTURE, PageMetadata
 from llmwiki.domain.planning import build_markdown_page_plan
 from llmwiki.domain.planning_analysis import build_extracted_unit
 from llmwiki.domain.source_claims import (
@@ -1020,6 +1021,218 @@ def test_planned_source_summary_tool_compacts_too_many_claim_bullets_when_covera
 
     assert "Wrote wiki/alpha.md" in result
     assert store.read_page("alpha").count("\n- ") == 5
+
+
+def test_planned_source_summary_tool_infers_repeated_coverage_before_compaction(
+    paths: WikiPaths,
+) -> None:
+    store = WikiStore(paths)
+    citation = "raw/book.pdf p.88-91"
+    planned_write = PlannedPageWrite(
+        write_id="write-book-spirit-magic",
+        action="create-new",
+        page_metadata=PageMetadata(
+            page_id="book-spirit-magic",
+            page_kind="source",
+            summary="Spirit magic list.",
+            sources=(citation,),
+        ),
+        resolved_page_body_contract=resolve_page_body_contract(
+            contract_for_page_kind(Schema(), "source"),
+            required_source_citations=(citation,),
+        ),
+        source_summary_plan=SourceSummaryPlan(
+            source_summary_plan_id="source-summary-plan-book-spirit-magic",
+            page_id="book-spirit-magic",
+            selected_source_claims=("claim-healing", "claim-complete", "claim-caster"),
+            selected_claim_requirements=(
+                SourceSummaryClaimRequirement(
+                    source_claim_id="claim-healing",
+                    cue_terms=("spell", "heals", "body", "borrowing"),
+                ),
+                SourceSummaryClaimRequirement(
+                    source_claim_id="claim-complete",
+                    cue_terms=("you", "cast", "spell", "completely"),
+                ),
+                SourceSummaryClaimRequirement(
+                    source_claim_id="claim-caster",
+                    cue_terms=("spell", "although", "only", "cast"),
+                ),
+            ),
+            required_source_citations=(citation,),
+        ),
+    )
+    tool = planned_write_page_tool(store, TODAY, planned_write)
+    repeated = "claim-healing"
+
+    result = tool.callable(
+        source_record_text=f"Spirit magic section lists healing spells. ({citation})",
+        claim_bullets=[
+            {
+                "bullet_text": f"Healing spell borrows life power. ({citation})",
+                "covered_source_claims": [repeated],
+            },
+            {
+                "bullet_text": f"Healing spell completely heals wounds. ({citation})",
+                "covered_source_claims": [repeated],
+            },
+            {
+                "bullet_text": f"Healing spell can only be cast by women. ({citation})",
+                "covered_source_claims": [repeated],
+            },
+            {
+                "bullet_text": f"Mute spell silences target sounds. ({citation})",
+                "covered_source_claims": [repeated],
+            },
+            {
+                "bullet_text": f"Water Walking spell supports travel. ({citation})",
+                "covered_source_claims": [repeated],
+            },
+            {
+                "bullet_text": f"Sink spell removes buoyancy. ({citation})",
+                "covered_source_claims": [repeated],
+            },
+        ],
+    )
+
+    page = store.read_page("book-spirit-magic")
+    assert "Wrote wiki/book-spirit-magic.md" in result
+    assert page.count("\n- ") <= 5
+    assert "Healing spell completely heals wounds." in page
+    assert "Healing spell can only be cast by women." in page
+    assert "claim-" not in page
+
+
+def test_planned_source_summary_tool_fills_omitted_coverage_after_partial_inference(
+    paths: WikiPaths,
+) -> None:
+    store = WikiStore(paths)
+    raw_source = RawSource.from_locator("book.pdf")
+    citation = "raw/book.pdf p.40-42"
+    selected_claims = (
+        "claim-strength",
+        "claim-damage",
+        "claim-projectiles",
+        "claim-light-equipment",
+        "claim-throwable",
+    )
+    planned_write = PlannedPageWrite(
+        write_id="write-book-weapon-combat",
+        action="create-new",
+        page_metadata=PageMetadata(
+            page_id="book-weapon-combat",
+            page_kind="source",
+            summary="Weapon combat rules.",
+            sources=(citation,),
+        ),
+        evidence=(Evidence(raw_source, "p.40-42"),),
+        resolved_page_body_contract=resolve_page_body_contract(
+            contract_for_page_kind(Schema(), "source"),
+            required_source_citations=(citation,),
+        ),
+        source_summary_plan=SourceSummaryPlan(
+            source_summary_plan_id="source-summary-plan-book-weapon-combat",
+            page_id="book-weapon-combat",
+            selected_source_claims=selected_claims,
+            selected_claim_requirements=(
+                SourceSummaryClaimRequirement(
+                    source_claim_id="claim-strength",
+                    cue_terms=("strength", "armor"),
+                ),
+            ),
+            required_source_citations=(citation,),
+        ),
+    )
+    tool = planned_write_page_tool(store, TODAY, planned_write)
+
+    result = tool.callable(
+        source_record_text=f"Weapon combat rules summarize limits and scores. ({citation})",
+        claim_bullets=[
+            {"bullet_text": f"Strength limits weapons and armor. ({citation})"},
+            {"bullet_text": f"Comparable weapons can still differ in damage. ({citation})"},
+            {"bullet_text": f"Projectile use has range and melee limits. ({citation})"},
+            {"bullet_text": f"Light equipment constrains thief combat. ({citation})"},
+            {"bullet_text": f"Throwable weapons have separate uses. ({citation})"},
+            {"bullet_text": f"Other scores are summarized elsewhere. ({citation})"},
+        ],
+    )
+
+    artifacts = store.read_source_summary_draft_artifacts("book.pdf")
+    covered = {
+        claim_id
+        for artifact in artifacts
+        for bullet in artifact.draft.claim_bullets
+        for claim_id in bullet.covered_source_claims
+    }
+    assert "Wrote wiki/book-weapon-combat.md" in result
+    assert covered == set(selected_claims)
+    assert store.read_page("book-weapon-combat").count("\n- ") == 5
+
+
+def test_planned_source_summary_tool_fills_invented_coverage_after_partial_inference(
+    paths: WikiPaths,
+) -> None:
+    store = WikiStore(paths)
+    raw_source = RawSource.from_locator("book.pdf")
+    citation = "raw/book.pdf p.159-163"
+    selected_claims = ("claim-poison", "claim-unknown", "claim-limit")
+    planned_write = PlannedPageWrite(
+        write_id="write-book-poison",
+        action="create-new",
+        page_metadata=PageMetadata(
+            page_id="book-poison",
+            page_kind="source",
+            summary="Poison rules.",
+            sources=(citation,),
+        ),
+        evidence=(Evidence(raw_source, "p.159-163"),),
+        resolved_page_body_contract=resolve_page_body_contract(
+            contract_for_page_kind(Schema(), "source"),
+            required_source_citations=(citation,),
+            required_uncertainty_terms=("unknown",),
+        ),
+        source_summary_plan=SourceSummaryPlan(
+            source_summary_plan_id="source-summary-plan-book-poison",
+            page_id="book-poison",
+            selected_source_claims=selected_claims,
+            selected_claim_requirements=(
+                SourceSummaryClaimRequirement(
+                    source_claim_id="claim-poison",
+                    cue_terms=("poison", "balance"),
+                ),
+            ),
+            required_source_citations=(citation,),
+        ),
+    )
+    tool = planned_write_page_tool(store, TODAY, planned_write)
+
+    result = tool.callable(
+        source_record_text=f"Poison rules include one unknown spirit detail. ({citation})",
+        claim_bullets=[
+            {
+                "bullet_text": f"Poisons disrupt spirit balance. ({citation})",
+                "covered_source_claims": ["claim-1"],
+            },
+            {
+                "bullet_text": f"Unknown spirit effects are retained. ({citation})",
+                "covered_source_claims": ["claim-2"],
+            },
+            {
+                "bullet_text": f"Some adventurers cannot resist. ({citation})",
+                "covered_source_claims": ["claim-3"],
+            },
+        ],
+    )
+
+    artifacts = store.read_source_summary_draft_artifacts("book.pdf")
+    covered = {
+        claim_id
+        for artifact in artifacts
+        for bullet in artifact.draft.claim_bullets
+        for claim_id in bullet.covered_source_claims
+    }
+    assert "Wrote wiki/book-poison.md" in result
+    assert covered == set(selected_claims)
 
 
 def _source_summary_plan(selected_source_claims: tuple[str, ...]) -> SourceSummaryPlan:

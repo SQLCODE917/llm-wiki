@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Monster level indicates general strength, raw/Sword World RPG - Complete Edition.pdf p.172.",
+      "bullet_text": "Monster data is written in the following format, including attributes like monster level, rarity, agility, movement speed, number, frequency, intellect, reaction, attack points, strike points, evasion points, defense points, life points/resistance, mental points/resistance, special abilities, habitat, perception, and languages (raw/Sword World RPG - Complete Edition.pdf p.172-175).",
       "covered_source_claims": [
-        "source-claim-unit-0040-0008"
+        "source-claim-unit-0088-0008"
       ]
     },
     {
-      "bullet_text": "Rarity score indicates monster fame, raw/Sword World RPG - Complete Edition.pdf p.172.",
+      "bullet_text": "Monster level corresponds to a character's adventurer level and represents the general strength of that monster, with higher scores indicating greater strength (raw/Sword World RPG - Complete Edition.pdf p.172-175).",
       "covered_source_claims": [
-        "source-claim-unit-0040-0007"
+        "source-claim-unit-0088-0007"
       ]
     },
     {
-      "bullet_text": "Intellect score describes intelligence, raw/Sword World RPG - Complete Edition.pdf p.173.",
+      "bullet_text": "Intellect indicates the monster's degree of intellect, with types ranging from none to very high, each with specific characteristics (raw/Sword World RPG - Complete Edition.pdf p.172-175).",
       "covered_source_claims": [
-        "source-claim-unit-0040-0005"
+        "source-claim-unit-0088-0005"
       ]
     }
   ],
-  "source_record_text": "This section explains how to interpret the data presented in the monster catalog, detailing formats for monster level, rarity, agility, movement speed, number, frequency, intellect, reaction, attack points, strike points, evasion points, defense points, life points/resistance, mental points/resistance, special abilities, habitat, perception, and languages (raw/Sword World RPG - Complete Edition.pdf p.172-175)."
+  "source_record_text": "This section explains how to read the monster catalog in the Sword World RPG - Complete Edition."
 }

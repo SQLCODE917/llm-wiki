@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Recursion is the root of computation since it trades description for time—Alan Perlis, Epigrams in Programming 60 (raw/javascriptallonge.pdf p.109-111).",
+      "bullet_text": "Recursion is the root of computation since it trades description for time (Alan Perlis) (raw/javascriptallonge.pdf p.109-116).",
       "covered_source_claims": [
-        "source-claim-unit-0099-0001"
+        "source-claim-unit-0033-0002"
       ]
     },
     {
-      "bullet_text": "Some are empty, some have three items, some forty-two, some contain numbers, some contain strings, some a mixture of elements, there are all kinds of lists (raw/javascriptallonge.pdf p.109-111).",
+      "bullet_text": "Lists can be defined as either empty or as an element concatenated with a list (raw/javascriptallonge.pdf p.109-116).",
       "covered_source_claims": [
-        "source-claim-unit-0099-0006"
+        "source-claim-unit-0033-0021"
       ]
     },
     {
-      "bullet_text": "Consists of an element concatenated with a list (raw/javascriptallonge.pdf p.109-111).",
+      "bullet_text": "Linear recursion follows a divide and conquer strategy, breaking problems into smaller subproblems (raw/javascriptallonge.pdf p.109-116).",
       "covered_source_claims": [
-        "source-claim-unit-0099-0009"
+        "source-claim-unit-0033-0061"
+      ]
+    },
+    {
+      "bullet_text": "Mapping is a special case of linear recursion where a function is applied to each element of a list (raw/javascriptallonge.pdf p.109-116).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0080"
+      ]
+    },
+    {
+      "bullet_text": "Folding is a generalization of mapping that can be used to build other functions like length and sumSquares (raw/javascriptallonge.pdf p.109-116).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0106"
       ]
     }
   ],
-  "source_record_text": "This chunk introduces recursion as the root of computation and explores self-similar data structures, linear recursion, tail-call optimization, and default arguments in JavaScript."
+  "source_record_text": "This chapter explores self-similarity in JavaScript through recursion, focusing on lists, linear recursion, mapping, and folding."
 }

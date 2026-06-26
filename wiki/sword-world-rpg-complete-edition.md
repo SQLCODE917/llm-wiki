@@ -1,99 +1,138 @@
 ---
 page_id: sword-world-rpg-complete-edition
 page_kind: source
-summary: Summary of the Sword World RPG - Complete Edition source.
+summary: Complete rules reference for the Sword World RPG system.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-23
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
-This page summarizes the *Sword World RPG - Complete Edition* source and links the major topics covered in the book.
+This page is a navigable reference for the *Sword World RPG - Complete Edition* rulebook. It summarizes the entire source and links the major rule sections, optional rules, and setting material written during chunking.
 
-## Overview
+## Players' Section
 
-The *Sword World RPG - Complete Edition* is a comprehensive rulebook for playing in the Sword World fantasy setting. It details character creation, skills, magic, combat, monsters, treasure, and world guides.
-
-## Key Topics
-
-### Character Creation and Skills
+- [[sword-world-rpg-complete-edition-part-1-players-section]]
+- [[sword-world-rpg-complete-edition-chapter-1-character]]
+- [[sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races]]
 - [[sword-world-rpg-complete-edition-1-3-skills]]
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]]
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]]
-- [[sword-world-rpg-complete-edition-6-2-thief-skill]]
-- [[sword-world-rpg-complete-edition-6-4-sage-skill]]
-- [[sword-world-rpg-complete-edition-7-2-merchant-skill]]
-
-### Combat and Actions
+- [[sword-world-rpg-complete-edition-1-4-character-creation]]
+- [[sword-world-rpg-complete-edition-1-4-character-creation-2]]
+- [[sword-world-rpg-complete-edition-chapter-2-success-rolls]]
 - [[sword-world-rpg-complete-edition-2-3-checks]]
+- [[sword-world-rpg-complete-edition-2-5-difficulty-checks]]
 - [[sword-world-rpg-complete-edition-2-7-resistance-rolls]]
+- [[sword-world-rpg-complete-edition-chapter-3-combat-rounds]]
+- [[sword-world-rpg-complete-edition-3-1-action-announcements-through-3-3-action-canceling]]
 - [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]
-- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]]
-- [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]]
-- [[sword-world-rpg-complete-edition-10-3-surprise-attacks]]
-- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]]
-- [[sword-world-rpg-complete-edition-16-5-combat-options]]
-- [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]]
-
-### Magic
-- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]]
+- [[sword-world-rpg-complete-edition-chapter-4-weapon-combat]]
+- [[sword-world-rpg-complete-edition-4-3-projectile-restrictions-through-4-4-scores-used-in-weapon]]
+- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters-through-4-6]]
+- [[sword-world-rpg-complete-edition-4-7-attacks-from-characters-against-characters-through-4-9]]
+- [[sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor]]
+- [[sword-world-rpg-complete-edition-4-11-damage-recovery]]
+- [[sword-world-rpg-complete-edition-chapter-5-magic]]
 - [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]]
-- [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]]
+- [[sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion]]
+- [[sword-world-rpg-complete-edition-5-1-8-magic-contraction]]
+- [[sword-world-rpg-complete-edition-5-1-9-magic-types]]
 - [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]]
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]]
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]]
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]]
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]]
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]]
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]]
+- [[sword-world-rpg-complete-edition-5-1-11-ancient-magic-and-the-sorcerer-skill]]
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list]]
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-2]]
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-3]]
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-4]]
+- [[sword-world-rpg-complete-edition-5-1-13-spirit-magic-and-the-shaman-skill]]
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list]]
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-2]]
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-3]]
 - [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]]
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]]
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]]
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list]]
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-2]]
+- [[sword-world-rpg-complete-edition-5-1-17-special-holy-magic-list]]
+- [[sword-world-rpg-complete-edition-5-2-common-runes]]
 - [[sword-world-rpg-complete-edition-5-3-spellsongs]]
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]]
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]]
-- [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]]
-- [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]]
-- [[sword-world-rpg-complete-edition-17-2-lost-spells]]
+- [[sword-world-rpg-complete-edition-chapter-6-adventurers-skills-other-than-combat-and-magic]]
+- [[sword-world-rpg-complete-edition-6-2-thief-skill]]
+- [[sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill]]
+- [[sword-world-rpg-complete-edition-6-5-bard-skill]]
+- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]]
+- [[sword-world-rpg-complete-edition-chapter-7-general-skills]]
+- [[sword-world-rpg-complete-edition-7-2-merchant-skill-through-7-3-craftsman-skill]]
+- [[sword-world-rpg-complete-edition-7-5-hunter-skill-through-7-6-sailor-skill]]
+- [[sword-world-rpg-complete-edition-chapter-8-character-growth]]
+- [[sword-world-rpg-complete-edition-8-2-how-to-use-experience-points-increasing-skill-levels]]
+- [[sword-world-rpg-complete-edition-8-4-increasing-general-skills]]
 
-### Monsters
+## Game Masters' Section
+
+- [[sword-world-rpg-complete-edition-part-2-game-masters-section]]
+- [[sword-world-rpg-complete-edition-chapter-9-notes-on-success-rolls]]
+- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]
+- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]
+- [[sword-world-rpg-complete-edition-chapter-10-notes-on-combat]]
+- [[sword-world-rpg-complete-edition-10-3-surprise-attacks-through-10-6-combat-between-monsters]]
+- [[sword-world-rpg-complete-edition-chapter-11-notes-on-magic]]
+- [[sword-world-rpg-complete-edition-11-2-dark-magic]]
+- [[sword-world-rpg-complete-edition-11-2-dark-magic-2]]
+- [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]]
+- [[sword-world-rpg-complete-edition-11-4-acquiring-rune-master-skills-and-increasing-levels-through]]
+- [[sword-world-rpg-complete-edition-chapter-12-various-checks]]
+- [[sword-world-rpg-complete-edition-12-1-rules-regarding-language]]
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection]]
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-2]]
+- [[sword-world-rpg-complete-edition-12-3-work-requests-to-npcs]]
+- [[sword-world-rpg-complete-edition-chapter-13-monsters]]
 - [[sword-world-rpg-complete-edition-13-1-types-of-monsters]]
 - [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]]
 - [[sword-world-rpg-complete-edition-13-2-2-fae]]
+- [[sword-world-rpg-complete-edition-13-2-3-youma]]
 - [[sword-world-rpg-complete-edition-13-2-4-spirits]]
 - [[sword-world-rpg-complete-edition-13-2-5-titans]]
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]]
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]]
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]]
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]]
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]]
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]]
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts]]
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-2]]
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-3]]
+- [[sword-world-rpg-complete-edition-13-2-7-animals]]
+- [[sword-world-rpg-complete-edition-13-2-7-animals-2]]
+- [[sword-world-rpg-complete-edition-13-2-7-animals-3]]
 - [[sword-world-rpg-complete-edition-13-2-8-plants]]
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]]
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]]
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]]
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]]
-- [[sword-world-rpg-complete-edition-13-2-12-humans]]
-- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]]
+- [[sword-world-rpg-complete-edition-13-2-9-undead]]
+- [[sword-world-rpg-complete-edition-13-2-9-undead-2]]
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures]]
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-2]]
+- [[sword-world-rpg-complete-edition-13-2-11-daemons-underworld-creatures]]
+- [[sword-world-rpg-complete-edition-13-2-12-humans-through-13-2-13-other]]
+- [[sword-world-rpg-complete-edition-13-3-converting-character-data-to-monster-data-through-13-5]]
 - [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]
+- [[sword-world-rpg-complete-edition-chapter-14-treasures]]
+- [[sword-world-rpg-complete-edition-14-2-adventure-treasure-and-reward-amounts]]
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list]]
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-2]]
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-3]]
+- [[sword-world-rpg-complete-edition-chapter-15-experience-points]]
+- [[sword-world-rpg-complete-edition-15-1-four-types-of-experience-points]]
 
-### Treasure and Items
-- [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]]
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]]
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]]
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]]
+## Optional Rules
 
-### World Guides
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]]
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]]
-
-### Other
-- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]]
-- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]]
-- [[sword-world-rpg-complete-edition-8-1-experience-points]]
-- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]]
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]]
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]]
+- [[sword-world-rpg-complete-edition-part-3-optional-rules]]
+- [[sword-world-rpg-complete-edition-chapter-16-optional-rules-for-combat]]
+- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice-through-16-3-projectile]]
+- [[sword-world-rpg-complete-edition-16-5-combat-options]]
+- [[sword-world-rpg-complete-edition-16-8-weapons-and-armor-that-are-too-heavy]]
+- [[sword-world-rpg-complete-edition-16-9-special-weapons]]
+- [[sword-world-rpg-complete-edition-chapter-17-optional-rules-for-magic]]
+- [[sword-world-rpg-complete-edition-17-2-lost-spells-through-17-5-full-resistance]]
+- [[sword-world-rpg-complete-edition-chapter-18-other-optional-rules]]
+- [[sword-world-rpg-complete-edition-18-2-guidelines-for-adventurer-age-and-ability-score-changes]]
 - [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]]
-- [[sword-world-rpg-complete-edition-front-matter]]
+
+## Setting and Reference
+
+- [[sword-world-rpg-complete-edition-document]]
+- [[sword-world-rpg-complete-edition-welcome-to-sword-world]]
+- [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]]
+- [[sword-world-rpg-complete-edition-the-meaning-of-the-rulebook]]
+- [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]]
+- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]]
+- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast]]
+- [[sword-world-rpg-complete-edition-designer-s-notes]]
 - [[sword-world-rpg-complete-edition-charts]]

@@ -1,0 +1,29 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Characters must match weapon strength to their own strength for optimal use, raw/Sword World RPG - Complete Edition.pdf p.22-28",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0011"
+      ]
+    },
+    {
+      "bullet_text": "The most suitable weapon equals character strength, raw/Sword World RPG - Complete Edition.pdf p.22-28",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0005"
+      ]
+    },
+    {
+      "bullet_text": "Two-handed weapons deal more damage than one-handed ones of same strength, raw/Sword World RPG - Complete Edition.pdf p.22-28",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0013"
+      ]
+    },
+    {
+      "bullet_text": "Armor must match character strength, raw/Sword World RPG - Complete Edition.pdf p.22-28",
+      "covered_source_claims": [
+        "source-claim-unit-0013-0008"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 1.4 of the Sword World RPG - Complete Edition covers character creation, including required strength for weapons and armor, weapon types, armor restrictions, shield options, and equipment purchasing."
+}

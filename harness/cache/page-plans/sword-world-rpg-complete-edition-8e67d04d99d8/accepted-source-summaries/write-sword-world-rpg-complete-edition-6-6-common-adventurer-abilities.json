@@ -1,23 +1,24 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Folklore Knowledge [Intelligence] is a bard ability that provides familiarity with myths, legends, and ancient poetry, which can offer clues for adventures, (raw/Sword World RPG - Complete Edition.pdf p.120-125).",
+      "bullet_text": "Adventurers naturally acquire various abilities due to their adventurous lifestyle, called common adventurer abilities (raw/Sword World RPG - Complete Edition.pdf p.120-123).",
       "covered_source_claims": [
-        "source-claim-unit-0028-0009"
+        "source-claim-unit-0058-0013"
       ]
     },
     {
-      "bullet_text": "Spellsongs [Mental Power] are magical songs from the ancient kingdom period, requiring musical instruments to perform. Bards can learn one spellsong per skill level, (raw/Sword World RPG - Complete Edition.pdf p.120-125).",
+      "bullet_text": "Common adventurer abilities use adventurer level + related ability bonus as the baseline score when making success roll checks (raw/Sword World RPG - Complete Edition.pdf p.120-123).",
       "covered_source_claims": [
-        "source-claim-unit-0028-0006"
+        "source-claim-unit-0058-0014"
       ]
     },
     {
-      "bullet_text": "Common adventurer abilities use _adventurer level + related ability bonus_ as the baseline score when making success roll checks, (raw/Sword World RPG - Complete Edition.pdf p.120-125).",
+      "bullet_text": "Trying to control your horse without reins incurs a -4 penalty, and failing results in falling from a height of 3 meters (raw/Sword World RPG - Complete Edition.pdf p.120-123).",
       "covered_source_claims": [
-        "source-claim-unit-0028-0008"
+        "source-claim-unit-0058-0014",
+        "source-claim-unit-0058-0015"
       ]
     }
   ],
-  "source_record_text": "Section 6.6 Common Adventurer Abilities from Sword World RPG - Complete Edition covers a range of abilities that adventurers can acquire through their lifestyle, including Riding, Swim, Ship Steering, Climb, and Long/High Jump. It also details specific abilities like Folklore Knowledge and Spellsongs, which are tied to the bard class."
+  "source_record_text": "Section 6.6 Common Adventurer Abilities from Sword World RPG - Complete Edition, covering skills like Riding, Swim, Ship Steering, Climb, and Jump abilities."
 }

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A normal human has standard stats for villagers and is not typically an enemy of adventurers. (raw/Sword World RPG - Complete Edition.pdf p.230-231)",
+      "covered_source_claims": [
+        "source-claim-unit-0105-0009"
+      ]
+    },
+    {
+      "bullet_text": "A Maligdorai is a daemon with an owl-like upper body and goat-like lower body, and has the ability to cast illusions that affect mental power. (raw/Sword World RPG - Complete Edition.pdf p.230-231)",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0030"
+      ]
+    },
+    {
+      "bullet_text": "A Doppelganger is a greater daemon that can shapeshift, copying the appearance, abilities, and memories of an opponent. (raw/Sword World RPG - Complete Edition.pdf p.230-231)",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0019"
+      ]
+    },
+    {
+      "bullet_text": "A Lycanthrope has the ability to change from human to beast form, with transformation affected by the moon cycle. (raw/Sword World RPG - Complete Edition.pdf p.232-232)",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0032"
+      ]
+    },
+    {
+      "bullet_text": "A Dark Priest Warrior serves wicked gods and is often an enemy of player characters, sometimes trained as warriors. (raw/Sword World RPG - Complete Edition.pdf p.232-232)",
+      "covered_source_claims": [
+        "source-claim-unit-0106-0023"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of humans, monsters, and other entities in Sword World RPG - Complete Edition, chapters 13.2.12 through 13.2.13."
+}

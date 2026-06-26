@@ -46,6 +46,7 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanScope,
     IngestRoutePlanState,
 )
+from llmwiki.domain.ledger.current_artifacts import build_current_ledger_artifacts
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.objects import (
     IngestRun,
@@ -414,9 +415,7 @@ class Session:
                     )
                 save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
                 if self.on_chunk_note is not None:
-                    self.on_chunk_note(
-                        f"[{_work_unit_name(work_records)}/{total}] {replay.notes}"
-                    )
+                    self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {replay.notes}")
                 continue
             chunk_plan_report = observation_report(
                 page_plan,
@@ -630,8 +629,10 @@ class Session:
         )
         registry = build_evidence_registry(page_plan, source_texts)
         self.store.write_evidence_registry_artifact(source_locator, registry_to_json(registry))
+        existing_catalog = self.store.read_technical_atom_catalog_artifact(source_locator)
+        catalog: TechnicalAtomCatalog | None
         if not _has_matching_technical_catalog(
-            self.store.read_technical_atom_catalog_artifact(source_locator),
+            existing_catalog,
             page_plan.plan_id,
             reuse_technical_catalog,
         ):
@@ -645,6 +646,16 @@ class Session:
                 source_locator,
                 technical_atom_catalog_to_json(catalog),
             )
+        else:
+            catalog = existing_catalog
+        if catalog is not None:
+            ledger_artifacts = build_current_ledger_artifacts(
+                source_locator=source_locator,
+                page_plan=page_plan,
+                evidence_registry=registry,
+                technical_atom_catalog=catalog,
+            )
+            self.store.write_claim_ledger_artifacts(source_locator, ledger_artifacts.artifact_files)
         return report
 
     def _recover_pending_pdf_chunks(
@@ -1204,11 +1215,7 @@ def _manifest_has_progress(manifest: Manifest) -> bool:
 def _has_matching_technical_catalog(
     catalog: TechnicalAtomCatalog | None, page_plan_id: str, reuse_enabled: bool
 ) -> bool:
-    return (
-        reuse_enabled
-        and catalog is not None
-        and catalog.artifact_fingerprint == page_plan_id
-    )
+    return reuse_enabled and catalog is not None and catalog.artifact_fingerprint == page_plan_id
 
 
 def _pdf_page_plan_matches_manifest(

@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The rulebook is for the roleplaying game _Sword World RPG_ (raw/Sword World RPG - Complete Edition.pdf p.6-6).",
+      "bullet_text": "The rulebook is for the roleplaying game Sword World RPG, guiding game progress through scenarios, player decisions, and random numbers (raw/Sword World RPG - Complete Edition.pdf p.6-6).",
       "covered_source_claims": [
         "source-claim-unit-0004-0001"
       ]
     },
     {
-      "bullet_text": "The rulebook helps with gameplay decisions in the fictional world of Forcelia (raw/Sword World RPG - Complete Edition.pdf p.6-6).",
+      "bullet_text": "The fictional world of Forcelia differs from the real world with magic and fictional creatures, but still has its own laws (raw/Sword World RPG - Complete Edition.pdf p.6-6).",
       "covered_source_claims": [
         "source-claim-unit-0004-0003"
       ]
     },
     {
-      "bullet_text": "Forcelia has laws, but not all are written in the rulebook; common sense is needed (raw/Sword World RPG - Complete Edition.pdf p.6-6).",
+      "bullet_text": "Rules in the book are fundamental to characterizing Forcelia, but not all laws are written; common sense should be applied (raw/Sword World RPG - Complete Edition.pdf p.6-6).",
       "covered_source_claims": [
         "source-claim-unit-0004-0006"
       ]
     }
   ],
-  "source_record_text": "This section describes the purpose and scope of the Sword World RPG rulebook, emphasizing its role as a guide for gameplay within the fictional world of Forcelia, and the importance of common sense in interpreting rules."
+  "source_record_text": "This page summarizes the core purpose and foundational principles of the Sword World RPG rulebook as described in the chunk."
 }

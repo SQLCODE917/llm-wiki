@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The strength of JavaScript is that you can do anything (raw/javascriptallonge.pdf p.71-71).",
+      "bullet_text": "JavaScript functions can be composed by chaining them together, as shown with cookAndEat = (food) => eat(cook(food)) (raw/javascriptallonge.pdf p.71-73).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0002"
+        "source-claim-unit-0020-0006"
       ]
     },
     {
-      "bullet_text": "There are ifs, fors, returns, everything thrown higgledy piggledy together (raw/javascriptallonge.pdf p.71-71).",
+      "bullet_text": "Composition can be generalized using a compose combinator, like compose = (a, b) => (c) => a(b(c)) (raw/javascriptallonge.pdf p.71-73).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0004"
+        "source-claim-unit-0020-0009"
       ]
     },
     {
-      "bullet_text": "Although you needn't restrict yourself to a small number of simple patterns, it can be helpful to understand the patterns so that you can structure your code around some basic building blocks (raw/javascriptallonge.pdf p.71-71).",
+      "bullet_text": "Partial application is a building block where a function is applied to some, but not all, of its arguments, resulting in a new function (raw/javascriptallonge.pdf p.71-73).",
       "covered_source_claims": [
-        "source-claim-unit-0063-0005"
+        "source-claim-unit-0020-0010"
       ]
     }
   ],
-  "source_record_text": "Summary of the Building Blocks chapter from JavaScript Allongé, covering the concepts of spaghetti code, the strength and weakness of JavaScript, and the importance of basic building blocks for structuring code."
+  "source_record_text": "This chapter covers basic building blocks in JavaScript, focusing on composition and partial application."
 }

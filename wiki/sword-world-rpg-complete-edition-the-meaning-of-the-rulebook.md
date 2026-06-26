@@ -1,21 +1,21 @@
 ---
 page_id: sword-world-rpg-complete-edition-the-meaning-of-the-rulebook
 page_kind: source
-summary: Summary of the meaning and scope of the Sword World RPG rulebook.
+summary: The Meaning of the Rulebook from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.6-6
-updated: 2026-06-24
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section describes the purpose and scope of the Sword World RPG rulebook, emphasizing its role as a guide for gameplay within the fictional world of Forcelia, and the importance of common sense in interpreting rules.
+This page summarizes the core purpose and foundational principles of the Sword World RPG rulebook as described in the chunk.
 
 ## Key supported claims
 
-- The rulebook is for the roleplaying game _Sword World RPG_ (raw/Sword World RPG - Complete Edition.pdf p.6-6).
-- The rulebook helps with gameplay decisions in the fictional world of Forcelia (raw/Sword World RPG - Complete Edition.pdf p.6-6).
-- Forcelia has laws, but not all are written in the rulebook; common sense is needed (raw/Sword World RPG - Complete Edition.pdf p.6-6).
+- The rulebook is for the roleplaying game Sword World RPG, guiding game progress through scenarios, player decisions, and random numbers (raw/Sword World RPG - Complete Edition.pdf p.6-6).
+- The fictional world of Forcelia differs from the real world with magic and fictional creatures, but still has its own laws (raw/Sword World RPG - Complete Edition.pdf p.6-6).
+- Rules in the book are fundamental to characterizing Forcelia, but not all laws are written; common sense should be applied (raw/Sword World RPG - Complete Edition.pdf p.6-6).
 
 ## Technical details
 
@@ -71,19 +71,19 @@ For example, it was stated that Forcelia follows different laws than the real wo
 
 ### From [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]]: `technical-atom-4af602f4ab06b4c3` requirement
 
-Relation: nearby source page; matched terms `help`, `you`
+Relation: nearby source page; matched terms `help`, `should`, `you`
 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.7)
 
 This part should help you with that.
 
-### From [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]]: `technical-atom-c5af0e1f3f4239ad` exception
+### From [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]]: `technical-atom-9bfd22bd0f64ac8b` exception
 
-Relation: nearby source page; matched terms `but`, `game`, `only`, `role`, `there`
+Relation: nearby source page; matched terms `but`, `not`, `only`, `own`, `scenarios`, `you`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.5)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.8-9)
 
-RPGs are played by several people, but there is only one game master while the rest are the players.
+Not only will they save you from creating scenarios, but they will also serve as a useful model when you do create your own.
 
 ### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-45eed027ed59ec83` worked-example
 
@@ -93,10 +93,10 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
 
 Bards also use magical abilities through their _spellsongs_ but are not considered rune masters.
 
-### From [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]]: `technical-atom-379cffca8a29d8ef` exception
+### From [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]]: `technical-atom-c5af0e1f3f4239ad` exception
 
-Relation: nearby source page; matched terms `game`, `only`, `role`, `you`
+Relation: nearby source page; matched terms `but`, `game`, `only`, `there`
 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.5)
 
-**B** ： You're the only one who thinks he’s a hero of justice, aren't you?”
+RPGs are played by several people, but there is only one game master while the rest are the players.

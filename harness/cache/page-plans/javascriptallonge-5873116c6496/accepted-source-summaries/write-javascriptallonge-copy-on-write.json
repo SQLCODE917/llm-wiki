@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "When you destructure an array as `[first, ...rest]`, you receive a copy of the remaining elements (possible copy, raw/javascriptallonge.pdf p.158-176).",
+      "bullet_text": "Copy-on-write delays copying until a modification is made, making it efficient for infrequent changes (raw/javascriptallonge.pdf p.158-163).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0006"
+        "source-claim-unit-0039-0005"
       ]
     },
     {
-      "bullet_text": "Taking the rest of a linked list via its reference gives the exact same nodes, so modifications affect both lists (possible reference sharing, raw/javascriptallonge.pdf p.158-176).",
+      "bullet_text": "Arrays create copies when taking their rest, unlike linked lists which share nodes (raw/javascriptallonge.pdf p.158-163).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0008"
+        "source-claim-unit-0039-0007"
       ]
     },
     {
-      "bullet_text": "Copy‑on‑write strategy copies only when a mutation is attempted, trading performance for safety in JavaScript implementations (possible performance trade‑off, raw/javascriptallonge.pdf p.158-176).",
+      "bullet_text": "COW is a strategy where modifications trigger copying, avoiding unnecessary copying when changes are rare (raw/javascriptallonge.pdf p.158-163).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0002"
+        "source-claim-unit-0039-0038"
+      ]
+    },
+    {
+      "bullet_text": "Copy-on-write avoids expensive copying when modifications are infrequent, but is more expensive if many changes are made to shared structures (raw/javascriptallonge.pdf p.158-163).",
+      "covered_source_claims": [
+        "source-claim-unit-0039-0040"
+      ]
+    },
+    {
+      "bullet_text": "COW is a policy where changes to shared information trigger a separate copy to prevent interference (raw/javascriptallonge.pdf p.158-163).",
+      "covered_source_claims": [
+        "source-claim-unit-0039-0059"
       ]
     }
   ],
-  "source_record_text": "Copy‑on‑write concepts for arrays and linked lists in JavaScript."
+  "source_record_text": "Summary of the copy-on-write strategy in JavaScript as described in 'Composing and Decomposing Data'."
 }

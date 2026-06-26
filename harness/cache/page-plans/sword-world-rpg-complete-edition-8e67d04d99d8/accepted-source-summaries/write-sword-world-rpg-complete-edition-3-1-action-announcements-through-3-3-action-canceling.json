@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Order of announcements determined by intelligence, with highest intelligence group announcing later (raw/Sword World RPG - Complete Edition.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0002"
+      ]
+    },
+    {
+      "bullet_text": "Three or more groups, same rule applies, highest intelligence group announces last (raw/Sword World RPG - Complete Edition.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0015"
+      ]
+    },
+    {
+      "bullet_text": "Players must be specific in action announcements, not just general (raw/Sword World RPG - Complete Edition.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0012"
+      ]
+    },
+    {
+      "bullet_text": "Impossible actions not allowed, like casting while running (raw/Sword World RPG - Complete Edition.pdf p.35-35).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0007"
+      ]
+    },
+    {
+      "bullet_text": "NPCs announce via game master, players act from character's point of view (raw/Sword World RPG - Complete Edition.pdf p.36-36).",
+      "covered_source_claims": [
+        "source-claim-unit-0019-0018"
+      ]
+    }
+  ],
+  "source_record_text": "This section covers the rules for action announcements and canceling in combat, including the order of announcements, specificity of actions, and how actions can be canceled or delayed."
+}

@@ -1,0 +1,119 @@
+{
+  "artifact_format": "canonical-json",
+  "document_structure": {
+    "dispositions": [
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0001",
+        "source_order": 1,
+        "source_range_id": "source-range-1776thomaspaine-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0002",
+        "source_order": 2,
+        "source_range_id": "source-range-1776thomaspaine-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0003",
+        "source_order": 3,
+        "source_range_id": "source-range-1776thomaspaine-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0004",
+        "source_order": 4,
+        "source_range_id": "source-range-1776thomaspaine-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0005",
+        "source_order": 5,
+        "source_range_id": "source-range-1776thomaspaine-document"
+      }
+    ],
+    "root_node_id": "structure-node-d7d4e58b100ed64a",
+    "structure_nodes": [
+      {
+        "depth": 0,
+        "evidence_ids": [],
+        "heading_text": "1776ThomasPaine.pdf",
+        "parent_structure_node_id": "",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 0,
+        "source_range_id": "root",
+        "structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "structure_node_kind": "root"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 1,
+        "source_range_id": "source-range-1776thomaspaine-document",
+        "structure_node_id": "structure-node-11fca8bdc1b7af49",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 2,
+        "source_range_id": "source-range-1776thomaspaine-document",
+        "structure_node_id": "structure-node-11fca8bdc1b7af49",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 3,
+        "source_range_id": "source-range-1776thomaspaine-document",
+        "structure_node_id": "structure-node-11fca8bdc1b7af49",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 4,
+        "source_range_id": "source-range-1776thomaspaine-document",
+        "structure_node_id": "structure-node-11fca8bdc1b7af49",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 5,
+        "source_range_id": "source-range-1776thomaspaine-document",
+        "structure_node_id": "structure-node-11fca8bdc1b7af49",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-d7d4e58b100ed64a",
+        "source_locator": "1776ThomasPaine.pdf",
+        "source_order": 6,
+        "source_range_id": "source-range-1776thomaspaine",
+        "structure_node_id": "structure-node-634d1dca79552961",
+        "structure_node_kind": "section"
+      }
+    ]
+  },
+  "document_structure_artifact_id": "document-structure-601c438f1afcacc8",
+  "document_structure_fingerprint": "346a4608be1ca7b5"
+}

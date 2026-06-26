@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Logical operators are based on truthiness and falsiness, not the strict values true and false. (raw/javascriptallonge.pdf p.99-99)",
+      "bullet_text": "Functions are values that can be part of expressions, returned from other functions, and so forth (raw/javascriptallonge.pdf p.78-78).",
       "covered_source_claims": [
-        "source-claim-unit-0089-0001"
+        "source-claim-unit-0022-0003"
       ]
     },
     {
-      "bullet_text": "The ! operator is a logical operator, it always returns true or false. (raw/javascriptallonge.pdf p.99-99)",
+      "bullet_text": "Functions are reference values and are applied to arguments (raw/javascriptallonge.pdf p.78-78).",
       "covered_source_claims": [
-        "source-claim-unit-0089-0002"
+        "source-claim-unit-0022-0005"
       ]
     },
     {
-      "bullet_text": "The ternary operator (?:), ||, and && are control flow operators; they do not always return true or false, and they have short-cut semantics. (raw/javascriptallonge.pdf p.99-99)",
+      "bullet_text": "Fat arrow functions have expressions or blocks as their bodies, whereas function keyword functions always have blocks as their bodies (raw/javascriptallonge.pdf p.78-78).",
       "covered_source_claims": [
-        "source-claim-unit-0089-0003"
+        "source-claim-unit-0022-0011"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript uses const to bind values to names within block scope, and function declarations to bind functions to names within function scope (raw/javascriptallonge.pdf p.78-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0013"
+      ]
+    },
+    {
+      "bullet_text": "Function application creates a scope, and blocks also create scopes if const statements are within them (raw/javascriptallonge.pdf p.78-78).",
+      "covered_source_claims": [
+        "source-claim-unit-0022-0016"
       ]
     }
   ],
-  "source_record_text": "JavaScript Allongé explores fundamental and advanced JavaScript concepts, including logical operators and control flow mechanisms."
+  "source_record_text": "JavaScript Allongé is a book that explores the fundamentals of JavaScript, focusing on functions, scope, and closures."
 }

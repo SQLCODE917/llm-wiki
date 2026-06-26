@@ -1,35 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Killer octopus uses tentacles to strangle prey (raw/Sword World RPG - Complete Edition.pdf p.212-213); Giant octopus attacks with 10-meter tentacles (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
+      "bullet_text": "Killer octopus has tentacles up to 2 meters long and attacks by constricting opponents (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
       "covered_source_claims": [
-        "source-claim-unit-0050-0020"
+        "source-claim-unit-0099-0020"
       ]
     },
     {
-      "bullet_text": "Creeping trees move on roots and attack with tentacles (raw/Sword World RPG - Complete Edition.pdf p.212-213); Ethnoa entangles and digests prey in acid pouch (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
+      "bullet_text": "Giant octopus has tentacles up to 10 meters long and can attack with each tentacle separately (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
       "covered_source_claims": [
-        "source-claim-unit-0050-0027"
+        "source-claim-unit-0099-0027"
       ]
     },
     {
-      "bullet_text": "Killer creeper entangles prey with vines (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
+      "bullet_text": "Despite being plants, ethnoa and mandrake are weak to fire and can use spirit magic (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
       "covered_source_claims": [
-        "source-claim-unit-0050-0079"
-      ]
-    },
-    {
-      "bullet_text": "Mandrake screams to disable opponents (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
-      "covered_source_claims": [
-        "source-claim-unit-0050-0079"
-      ]
-    },
-    {
-      "bullet_text": "Alraune are human-like plant monsters (raw/Sword World RPG - Complete Edition.pdf p.212-213).",
-      "covered_source_claims": [
-        "source-claim-unit-0050-0079"
+        "source-claim-unit-0099-0079"
       ]
     }
   ],
-  "source_record_text": "Plant-based monsters in Sword World RPG, including killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune."
+  "source_record_text": "Plants section from Sword World RPG - Complete Edition, covering killer octopus, giant octopus, creeping tree, ethnoa, killer creeper, mandrake, and alraune."
 }

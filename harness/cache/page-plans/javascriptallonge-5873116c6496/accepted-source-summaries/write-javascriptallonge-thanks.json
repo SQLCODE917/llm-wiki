@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "JavaScript Allongé was inspired by The Little Schemer by Daniel Friedman and Matthias Felleisen, focusing on functions as first-class values (raw/javascriptallonge.pdf p.291-292).",
+      "covered_source_claims": [
+        "source-claim-unit-0058-0009"
+      ]
+    },
+    {
+      "bullet_text": "Another inspiration was Richard Feynman’s QED: The Strange Theory of Light and Matter, which explains Quantum Electrodynamics using simple, concise terms (raw/javascriptallonge.pdf p.291-292).",
+      "covered_source_claims": [
+        "source-claim-unit-0058-0004"
+      ]
+    },
+    {
+      "bullet_text": "The author was inspired by both books, which emphasize clear explanations and foundational concepts (raw/javascriptallonge.pdf p.291-292).",
+      "covered_source_claims": [
+        "source-claim-unit-0058-0003"
+      ]
+    }
+  ],
+  "source_record_text": "*JavaScript Allongé* was inspired by *The Little Schemer* by Daniel Friedman and Matthias Felleisen, and by Richard Feynman’s *QED: The Strange Theory of Light and Matter*."
+}

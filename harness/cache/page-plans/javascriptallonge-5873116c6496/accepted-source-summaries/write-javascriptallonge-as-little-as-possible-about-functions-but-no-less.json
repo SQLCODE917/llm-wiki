@@ -1,29 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps (raw/javascriptallonge.pdf p.30-31).",
+      "bullet_text": "Functions in JavaScript are values representing computations (raw/javascriptallonge.pdf p.30-38).",
       "covered_source_claims": [
-        "source-claim-unit-0025-0001"
+        "source-claim-unit-0014-0003"
       ]
     },
     {
-      "bullet_text": "Functions represent computations to be performed (raw/javascriptallonge.pdf p.30-31).",
+      "bullet_text": "Functions are reference types, not value types (raw/javascriptallonge.pdf p.30-38).",
       "covered_source_claims": [
-        "source-claim-unit-0025-0002"
+        "source-claim-unit-0014-0002"
       ]
     },
     {
-      "bullet_text": "This is a function that is applied to no values and returns 0 (raw/javascriptallonge.pdf p.30-31).",
+      "bullet_text": "Functions are applied to arguments to produce a value (raw/javascriptallonge.pdf p.30-38).",
       "covered_source_claims": [
-        "source-claim-unit-0025-0006"
+        "source-claim-unit-0014-0026"
       ]
     },
     {
-      "bullet_text": "But we must understand that whether we see [Function] or () => 0 , internally JavaScript has a full and proper function (raw/javascriptallonge.pdf p.30-31).",
+      "bullet_text": "Functions can return values or evaluate expressions (raw/javascriptallonge.pdf p.30-38).",
       "covered_source_claims": [
-        "source-claim-unit-0025-0015"
+        "source-claim-unit-0014-0034"
+      ]
+    },
+    {
+      "bullet_text": "Functions can return other functions (raw/javascriptallonge.pdf p.30-38).",
+      "covered_source_claims": [
+        "source-claim-unit-0014-0016"
       ]
     }
   ],
-  "source_record_text": "JavaScript functions are values that evaluate expressions, return values, and have identity semantics."
+  "source_record_text": "This chapter introduces basic functions in JavaScript, covering their representation as values, identity (as reference types), application, and how to return values and expressions from functions."
 }

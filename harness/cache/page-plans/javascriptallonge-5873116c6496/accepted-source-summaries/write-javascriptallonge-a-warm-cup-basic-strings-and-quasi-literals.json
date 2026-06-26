@@ -1,29 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing. (raw/javascriptallonge.pdf p.202-203)",
+      "bullet_text": "JavaScript has string literals like 'fubar' or 'fizzbuzz' with escape sequences for special characters such as \\n for newline (raw/javascriptallonge.pdf p.202-204).",
       "covered_source_claims": [
-        "source-claim-unit-0152-0008"
+        "source-claim-unit-0048-0005"
       ]
     },
     {
-      "bullet_text": "There are operators that can be used on strings. (raw/javascriptallonge.pdf p.202-203)",
+      "bullet_text": "The + operator concatenates strings, e.g., 'fu' + 'bar' evaluates to 'fubar' (raw/javascriptallonge.pdf p.202-204).",
       "covered_source_claims": [
-        "source-claim-unit-0152-0005"
+        "source-claim-unit-0048-0007"
       ]
     },
     {
-      "bullet_text": "String manipulation is extremely common in programming. (raw/javascriptallonge.pdf p.202-203)",
+      "bullet_text": "String manipulation is extremely common in programming, and writing is a big part of what makes us human (raw/javascriptallonge.pdf p.202-204).",
       "covered_source_claims": [
-        "source-claim-unit-0152-0007"
+        "source-claim-unit-0048-0009"
       ]
     },
     {
-      "bullet_text": "For example, the escape sequence \\n inserts a newline character in a string literal, like this: 'first line\\nsecond line'. (raw/javascriptallonge.pdf p.202-203)",
+      "bullet_text": "JavaScript supports quasi-literal strings denoted with back quotes, which can include expressions using ${expression} (raw/javascriptallonge.pdf p.202-204).",
       "covered_source_claims": [
-        "source-claim-unit-0152-0004"
+        "source-claim-unit-0048-0012"
+      ]
+    },
+    {
+      "bullet_text": "Quasi-literals are evaluated late, when the code is executed, making them easier to read and less error-prone than concatenation (raw/javascriptallonge.pdf p.202-204).",
+      "covered_source_claims": [
+        "source-claim-unit-0048-0010"
       ]
     }
   ],
-  "source_record_text": "Chapter on basic strings and quasi-literals in JavaScript Allongé."
+  "source_record_text": "Chapter 'A Warm Cup: Basic Strings and Quasi-Literals' from 'JavaScript Allongé' covers basic string literals, escape sequences, concatenation, and quasi-literal strings with expression interpolation."
 }

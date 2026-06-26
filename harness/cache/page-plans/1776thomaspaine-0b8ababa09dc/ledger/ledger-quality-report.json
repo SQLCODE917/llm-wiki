@@ -1,0 +1,3481 @@
+{
+  "artifact_format": "canonical-json",
+  "ledger_quality_report": {
+    "findings": [
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-0030dadd9982ca08",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-0030dadd9982ca08",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-981d7400853b8240"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-009f37a56b73a85d",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-009f37a56b73a85d",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-87bba18e57c5bf29"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-022bf9f34dc2c449",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-022bf9f34dc2c449",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-86d43779ec79aa03"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-0406b358bdaf2b6e",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-0406b358bdaf2b6e",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-20368a246b08170e"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-057d3de7d6dbe75f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-057d3de7d6dbe75f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-92ecceaa2993d2bf"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-05f4992c53356d32",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-05f4992c53356d32",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-3f4cefa1cef7c862"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-060b07d6df620a19",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-060b07d6df620a19",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-cbf00ec4e3355cc8"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-0862ff7c48f62026",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-0862ff7c48f62026",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-5caad8fb82633fdc"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-08bd6118bd2b7429",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-08bd6118bd2b7429",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-4b546b90a5ff230f"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-0b42bd121522d872",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-0b42bd121522d872",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-1acbb55f3a39d15a"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-0d5096bcc53d945d",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-0d5096bcc53d945d",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-fb65ce592b8af4fc"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-12f81ce66bb9fd80",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-12f81ce66bb9fd80",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-d1a66209390f0a8e"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-1eab8f7eb8cebbed",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-1eab8f7eb8cebbed",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-630537bb3aff631b"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-1f7691a439792fc8",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-1f7691a439792fc8",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-8f94e2a073561f7e"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-23323a2ccc8ff2cc",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-23323a2ccc8ff2cc",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-25a4318c25bb8814"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-28e8c7037b43b5f2",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-28e8c7037b43b5f2",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-cab9dc35c7e417d7"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-2b4a05f3d88db8a5",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-2b4a05f3d88db8a5",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-99a15f856c5ac011"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-2cf453828e2a7016",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-2cf453828e2a7016",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-0f7bb4d9c9d7f56c"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-2dfe386b4521d799",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-2dfe386b4521d799",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-47969d9bc0a92fea"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-2edfcd0484676230",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-2edfcd0484676230",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-418a2896bcdb7400"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-2f40b86a8c7e469f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-2f40b86a8c7e469f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-eb722d42b999d018"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-2fe27b96a290d6e9",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-2fe27b96a290d6e9",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-a49c0897217946d6"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-31177da18b97854a",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-31177da18b97854a",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-4700c97ca5b04224"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-31c59e79b2ba6888",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-31c59e79b2ba6888",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-9e32ce3c27e3be20"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-35e1f3851872c17f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-35e1f3851872c17f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-b1666b4cac2a05ec"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-365d34b2a7c89605",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-365d34b2a7c89605",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-0b607eb74d496f90"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3718ab315c9405cc",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3718ab315c9405cc",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-cd6483962da95a45"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-383c8be86a51240d",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-383c8be86a51240d",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-1584ba4cf81eb249"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-39fb1628c47c2ba4",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-39fb1628c47c2ba4",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-21dd643d003623e6"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3b22ef3802978193",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3b22ef3802978193",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-010fb35604612bdc"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3c49799fd74a9bc0",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3c49799fd74a9bc0",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-6e7001ea0dbf97c8"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3d02f6e1b31fb18d",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3d02f6e1b31fb18d",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-f98a0b36778bbb67"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3da3dc8153b32864",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3da3dc8153b32864",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-411b53d72fb6615c"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3f06c7e03d9c655d",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3f06c7e03d9c655d",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-b818522fa26876b5"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-411d5a430c2af514",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-411d5a430c2af514",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-ab261a50021cafbe"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-4697ce63b2de01ca",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-4697ce63b2de01ca",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-ac77b5b02aaa831d"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-4a28882d57accf93",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-4a28882d57accf93",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-b0de98b3399a4cde"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-4fbdea047ed88ef5",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-4fbdea047ed88ef5",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-8e61510afe9a9dea"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-535d5c5e19f5c3cf",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-535d5c5e19f5c3cf",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-d62d0f5c2e57d48a"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-55adf44ba2006e6b",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-55adf44ba2006e6b",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-05f0bc06746dee58"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-60758303c5d5fb22",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-60758303c5d5fb22",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-95a9de70adf1bc9a"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-631b7a6dfc554dab",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-631b7a6dfc554dab",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-d6520caa43d77d0e"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-63d9cb95163b40a4",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-63d9cb95163b40a4",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-079dbb6a6b0d9206"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-641ea208b3bc6dee",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-641ea208b3bc6dee",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-91431fad4ee8c45a"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-64a1af1f190bb4e5",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-64a1af1f190bb4e5",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-9f76ad8ad03d7de7"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-64c96943cbc0587e",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-64c96943cbc0587e",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-b0a6570df2f47352"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-68dabc7577c38105",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-68dabc7577c38105",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-a911245def3122b9"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-69c6af5a9e309229",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-69c6af5a9e309229",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-6ba779af7c760262"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-6ebc5006e2e5e45f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-6ebc5006e2e5e45f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-b475751c06c4b436"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-722dee5e41c4b8b2",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-722dee5e41c4b8b2",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-95823fff54d9f479"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-75bc2980d1473fc8",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-75bc2980d1473fc8",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-c88c0efef5a020d0"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-78916c5a8d8b8f8c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-78916c5a8d8b8f8c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-0653e7fa6ee47a46"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-7a327aad1b29c70e",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-7a327aad1b29c70e",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-e5edbc285ee198b9"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-7d09d1349e93d31e",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-7d09d1349e93d31e",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-f150b5e3c15d2f0a"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-824e5c33e9ff69f1",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-824e5c33e9ff69f1",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-c9531e465fc5eba2"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-837adfdc68ae901c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-837adfdc68ae901c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-281a8347ec48ee27"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-83fd366b5c1f18c8",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-83fd366b5c1f18c8",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-c9cc5346ee5a7819"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-8757387fad17c85a",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-8757387fad17c85a",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-ca3b24920fd7c3e4"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-87a201a1e6d6a73c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-87a201a1e6d6a73c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-a43ae9ebbef460c0"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-87b99ad206111e0b",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-87b99ad206111e0b",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-1576a26e143343c3"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-88c35921c9e8db9c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-88c35921c9e8db9c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-99cf8316d9326788"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-88fdfccff9cee212",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-88fdfccff9cee212",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-6214328bc8106671"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-8a0b0fd47303c71c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-8a0b0fd47303c71c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-621d18be7914bd1c"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-8deb92b33e1fa565",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-8deb92b33e1fa565",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-f4d018f95e258786"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-8f1427ead7874c5c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-8f1427ead7874c5c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-da7bbd9fbeaa8b8f"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-8f3f04c6744b16f6",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-8f3f04c6744b16f6",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-2760321012eed3b6"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-92d0ca2b269a7db3",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-92d0ca2b269a7db3",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-1fbde6828e3c6632"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-96980a77f780edbf",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-96980a77f780edbf",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-b9a653ee7c277688"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-9899eeadd487fd6e",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-9899eeadd487fd6e",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-801bec2e256f7bfe"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-991535e8428437c9",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-991535e8428437c9",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-00b9225db0aa2d71"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-99f721db1acd1ab2",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-99f721db1acd1ab2",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-9cffc2ff2eaa773c"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-9cbacca37dc34a98",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-9cbacca37dc34a98",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-d92df5aabc48e43f"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-9cc3bae69004e7be",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-9cc3bae69004e7be",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-af0d18bcd402c933"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-9fc783f7e9b5b8a3",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-9fc783f7e9b5b8a3",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-bee9d5b34986bbae"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-a08599bd69710a76",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-a08599bd69710a76",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-87f3122109aa3f57"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-a09d15319d90c15f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-a09d15319d90c15f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-75ee93b4fae15e5a"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-a3e4d23d97576377",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-a3e4d23d97576377",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-988c4c108e6831c9"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-a7c3c3a3b04caf29",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-a7c3c3a3b04caf29",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-b27aa5f44a9560b4"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-aa736c499d0acc24",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-aa736c499d0acc24",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-1ed873e03759d10f"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-abcc625af12a96ac",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-abcc625af12a96ac",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-0e1030fbea92c116"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-af79b21742c669d9",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-af79b21742c669d9",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-c2936a666caaab3e"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b0512f253fcb98b4",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b0512f253fcb98b4",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-98901bbd69cc11cc"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b21f9b73fc3f1ffb",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b21f9b73fc3f1ffb",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-cf4af7217079810c"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b2d7b355fef68398",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b2d7b355fef68398",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-037d709fdf405a89"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b3ed0c09950fc69c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b3ed0c09950fc69c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-5b96f443f7504605"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b7be36714b4e9d2a",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b7be36714b4e9d2a",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-77beed94dbcb7204"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b97c69c6b89beedd",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b97c69c6b89beedd",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-0bca0b31930d108f"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-bdb293f78442ff43",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-bdb293f78442ff43",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-9ad6a9dbc6a29f91"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-bfabddb8d53bab52",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-bfabddb8d53bab52",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-cadbcb969fe399b0"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-c46a5150470a6249",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-c46a5150470a6249",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-fee2040895381b71"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-c6c66d21d319788f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-c6c66d21d319788f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-a45bc7543f80dc6d"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-c9a871eb4d75d304",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-c9a871eb4d75d304",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-0661b9015a845b21"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-cf8b933ddd0c728b",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-cf8b933ddd0c728b",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-bf15f3f1157629c7"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-d582acae395a43dc",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-d582acae395a43dc",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-cf67ccfbe9a3c853"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-d71a38df8c9e9225",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-d71a38df8c9e9225",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-5d0058bf1abc346f"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-d7be2f5244420dde",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-d7be2f5244420dde",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-7c988f366d9a9839"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-d8144fdd3c788308",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-d8144fdd3c788308",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-cf3e7ec525eff1cd"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-dca0a4fac08181a6",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-dca0a4fac08181a6",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-28453540704fe410"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e44cdc8c39ca5b21",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e44cdc8c39ca5b21",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-19e5542585c75794"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e49b6ac505dfe928",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e49b6ac505dfe928",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-8641fde8eb163b52"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e584b7bdbd497720",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e584b7bdbd497720",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-e7fa1142a4653928"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e88726f6613d3d23",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e88726f6613d3d23",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-c508607de0020846"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e932add33fde5281",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e932add33fde5281",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-e6ad14bfebeb6110"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e998b0825a822871",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e998b0825a822871",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-5bbac8117d89c100"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-eb0bf5ce5d5cefbb",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-eb0bf5ce5d5cefbb",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-d8f01b97d1913800"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-eba9f51b0fbc9bd9",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-eba9f51b0fbc9bd9",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-ad22fc8dcd0e6152"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-ebaca2131c979213",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-ebaca2131c979213",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-81f6c451fb7ce6b0"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-ecd37bddb5937bf4",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-ecd37bddb5937bf4",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-30c9227e78fa8d39"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-f1071c6cccf5959b",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-f1071c6cccf5959b",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-f8b5b1f4defa8d7b"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-f3f87dee6d882b26",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-f3f87dee6d882b26",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-7e2559bf30bbaba7"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-f8e5afd09a8a5517",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-f8e5afd09a8a5517",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-d9c97146e39d6140"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-fd6a57aaa97577fa",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-fd6a57aaa97577fa",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-49ebaac50773334f"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-fe5aeffa21f781ba",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-fe5aeffa21f781ba",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-a5a4e373a641595c"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-ff65d02db1f805a3",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-ff65d02db1f805a3",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-37e6a882c113b06e"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-ff7aff6a0380f99c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-ff7aff6a0380f99c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-abde1a4df8df1ab1"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-052ab44bbc28f863",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-052ab44bbc28f863",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-1caefb8ce8bd9f25"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-13a279496b8064ec",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-13a279496b8064ec",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-410f3f14df544c4c"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-3c59e07d7ca89a3b",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-3c59e07d7ca89a3b",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-24dcb54245696e1d"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-7678a9b6b14492ca",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-7678a9b6b14492ca",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-fa5d42e4c6144407"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-87f278b832e655e0",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-87f278b832e655e0",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-4969fa99f23454b6"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-9d2e39d054507663",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-9d2e39d054507663",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-3ed7596dde301627"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b274a960fba6a0e2",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b274a960fba6a0e2",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-fb6883b2caac01bb"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b5c259f931debb23",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b5c259f931debb23",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-3b0a36befbfe34d5"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-c4e81f2461d6c30f",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-c4e81f2461d6c30f",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-aa1ebb97ae6dda58"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-e106488bfe51609c",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-e106488bfe51609c",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-8a7f5e5d9052393c"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-eb07dc2825cd6a14",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-eb07dc2825cd6a14",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "analogy",
+          "evidence_ids": [
+            "evidence-6825f156b57c81b9"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-ed359d5e9b433625",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-ed359d5e9b433625",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "source-furniture",
+          "evidence_ids": [
+            "evidence-46aab41b7d0869e4"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-40cc7862586c3ee7",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-40cc7862586c3ee7",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "rhetorical-example",
+          "evidence_ids": [
+            "evidence-3d10e9156dbbae00"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-67fb85d64e4c503b",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-67fb85d64e4c503b",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-47e0d0f81340dda2"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-b93df0d024aaf3b6",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-b93df0d024aaf3b6",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "narrative-frame",
+          "evidence_ids": [
+            "evidence-196e322271b5cdbe"
+          ],
+          "reason_kind": "ineligible-source-claim"
+        }
+      },
+      {
+        "quality_check_id": "ck-needs-review-reason",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "ledger-entry-bc498fd640b2e416",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "review-required",
+        "quality_finding_severity": "warning",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "ledger-entry-bc498fd640b2e416",
+          "quality_finding_subject_kind": "ledger-entry"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": {
+          "detail": "no subject/predicate/object region recovered",
+          "evidence_ids": [
+            "evidence-9d865db9caa2d80f"
+          ],
+          "reason_kind": "fragmentary"
+        }
+      },
+      {
+        "quality_check_id": "ck-ledger-status-metric",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "claim-ledger-95f4e9030894d4eb",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "audit-metric",
+        "quality_finding_severity": "info",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "claim-ledger-95f4e9030894d4eb",
+          "quality_finding_subject_kind": "claim-ledger-artifact"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": null
+      },
+      {
+        "quality_check_id": "ck-family-assignment-metric",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "claim-ledger-95f4e9030894d4eb",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "audit-metric",
+        "quality_finding_severity": "info",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "claim-ledger-95f4e9030894d4eb",
+          "quality_finding_subject_kind": "source-family-assignment"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": null
+      },
+      {
+        "quality_check_id": "ck-extractor-decision-metric",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "claim-ledger-95f4e9030894d4eb",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "audit-metric",
+        "quality_finding_severity": "info",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "claim-ledger-95f4e9030894d4eb",
+          "quality_finding_subject_kind": "extractor-decision"
+        },
+        "quality_report_scope": "ledger-build",
+        "review_reason": null
+      }
+    ],
+    "quality_check_catalog_pointer": {
+      "target_artifact_fingerprint": "038eefadfda69b3e",
+      "target_artifact_id": "quality-check-catalog-038eefadfda69b3e",
+      "target_artifact_kind": "quality-check-catalog-artifact"
+    },
+    "quality_report_scope": "ledger-build"
+  },
+  "ledger_quality_report_artifact_id": "ledger-quality-report-88da999a32dfbce6",
+  "ledger_quality_report_fingerprint": "88da999a32dfbce6"
+}

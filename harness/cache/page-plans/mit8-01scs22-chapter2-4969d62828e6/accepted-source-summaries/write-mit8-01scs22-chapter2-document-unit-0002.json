@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "The Avogadro number is exactly defined as the number of atoms in 12 grams of carbon-12, 1 mole = 6.022 × 10²³ atoms, (raw/mit8_01scs22_chapter2.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0011"
+      ]
+    },
+    {
+      "bullet_text": "For small angles, the approximation sin(θ) ≈ θ ≈ tan(θ) is valid when θ << 1 in radians, (raw/mit8_01scs22_chapter2.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0036"
+      ]
+    },
+    {
+      "bullet_text": "A steradian is the SI unit of solid angle, defined as the angle that cuts off an area of the sphere equal to the square of the radius, (raw/mit8_01scs22_chapter2.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0047"
+      ]
+    },
+    {
+      "bullet_text": "The candela is the SI base unit of luminous intensity, defined by the fixed numerical value of the luminous efficacy Kcd = 683 cd⋅sr⋅W⁻¹, (raw/mit8_01scs22_chapter2.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0062"
+      ]
+    },
+    {
+      "bullet_text": "The dimensions of force are [M][L]²[T]⁻², and the dimensions of kinetic energy are also [M][L]²[T]⁻², (raw/mit8_01scs22_chapter2.pdf p.14-29).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0095"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 2 of MIT 8.01SC Physics I: Classical Mechanics covers the International System of Units (SI), dimensional analysis, and order-of-magnitude estimates (Fermi problems). This section (pages 14-29) focuses on units, radians, steradians, the candela, dimensions of quantities, and dimensional analysis techniques."
+}

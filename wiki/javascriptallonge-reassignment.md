@@ -2,121 +2,123 @@
 page_id: javascriptallonge-reassignment
 page_kind: source
 summary: Reassignment from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.148-150
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.148-157
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-JavaScript allows re-assignment of values to parameters, but not to names bound with const. The let keyword provides a way to declare variables that can be reassigned.
+This chapter from JavaScript Allongé discusses rebinding and reassignment in JavaScript, focusing on how different declaration keywords (`const`, `let`, `var`) handle variable bindings and scoping.
 
 ## Key supported claims
 
-- JavaScript does not permit us to rebind a name that has been bound with const. (raw/javascriptallonge.pdf p.148-150)
-- JavaScript permits reassigning values to parameters. (raw/javascriptallonge.pdf p.148-150)
-- The let keyword allows reassignment of variables. (raw/javascriptallonge.pdf p.148-150)
+- JavaScript allows rebinding values to parameters, but not to names bound with const (raw/javascriptallonge.pdf p.148-157).
+- const prevents rebinding of names, while let allows rebinding, both supporting block scoping (raw/javascriptallonge.pdf p.148-157).
+- var is function-scoped, not block-scoped, and hoisted to the top of the function, unlike let and const (raw/javascriptallonge.pdf p.148-157).
 
 ## Technical details
 
-### `technical-atom-bb801bddb89971bc` code
+### `technical-atom-0d930a8b7c62fbeb` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
-
-```javascript
-const evenStevens = (n) => { if (n === 0) { return true ; } else if (n == 1) { return false ; } else { n = n - 2; return evenStevens(n); } } evenStevens(42) //=> true
-```
-
-### `technical-atom-e30a7169fb9c0891` code
-
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
 ```javascript
-evenStevens = (n) => { if (n === 0) { return true ; } else if (n == 1) { return false ; } else { return evenStevens(n - 2); } } //=> ERROR, evenStevens is read-only
+const evenStevens = (n) => { if (n === 0) { return true; } else if (n == 1) { return false; } else { n = n - 2; return evenStevens(n); } } evenStevens(42) //=> true
 ```
 
-### `technical-atom-4edee216c43a9f21` code
+### `technical-atom-a57123c4b3176540` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
 ```javascript
-let age = 52; age = 53; age //=> 53
+evenStevens = (n) => { if (n === 0) { return true; } else if (n == 1) { return false; } else { return evenStevens(n - 2); } } //=> ERROR, evenStevens is read-only
 ```
 
-### `technical-atom-77d790de2cbd266a` code
+### `technical-atom-69532e105fd4d8c7` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
 ```javascript
-(() => { let age = 49; if ( true ) { let age = 50; } return age; })() //=> 49
+let age = 52;
 ```
 
-### `technical-atom-bd1be086eed15b29` code
+### `technical-atom-2d53626201b41db5` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
+```javascript
+age = 53; age //=> 53
 ```
-{age: 49, '..': global-environment} To: {age: 50, '..': {age: 49, '..': global-environment}} Then back to:
+
+### `technical-atom-f00b8d7258128714` code
+
+Citation: (raw/javascriptallonge.pdf p.148-157)
+
+```javascript
+(() => { let age = 49; if ( true) { let age = 50; } return age; })() //=> 49
 ```
 
-### `technical-atom-b8cb6ee3932dde7a` code
+### `technical-atom-39f6f333444623f5` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
 ```
 {age: 49, '..': global-environment}
 ```
 
-### `technical-atom-d49f5c4655f7a60d` code
+### `technical-atom-ef10a9701ccccacf` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
-```javascript
-(() => { let age = 49; if ( true ) { age = 50; } return age; })() //=> 50
+```
+{age: 50, '..': {age: 49, '..': global-environment}}
 ```
 
-### `technical-atom-975d2292539f6339` worked-example
+### `technical-atom-78d79112d6914d2a` code
 
-Citation: (raw/javascriptallonge.pdf p.148-150)
+Citation: (raw/javascriptallonge.pdf p.148-157)
 
-For example, we can write:
+```javascript
+(() => { let age = 49; if ( true) { age = 50; } return age; })() //=> 50
+```
 
 ## Related technical details
 
-### From [[javascriptallonge-var]]: `technical-atom-9598b23ff904732b` code
+### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-d6ba7e5f33c9f02b` code
 
-Relation: nearby source page; matched terms `but`, `const`, `javascript`, `let`, `not`
+Relation: nearby source page; matched terms `allong`, `const`, `javascript`
 
-Citation: (raw/javascriptallonge.pdf p.151-154)
+Citation: (raw/javascriptallonge.pdf p.132-140)
 
 ```javascript
-const factorial = (n) => { let innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } return innerFactorial(n, 1); } JavaScript hoists the let and the assignment. But not so with var : const factorial = (n) => { return innerFactorial(n, 1); var innerFactorial = function innerFactorial (x, y) { if (x == 1) { return y; } else { return innerFactorial(x-1, x * y); } } } factorial(4) //=> undefined is not a function (evaluating 'innerFactorial(n, 1)')
+const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja vaScript Spessore", "CoffeeScript Ristretto"]]];
 ```
 
-### From [[javascriptallonge-var]]: `technical-atom-80d6a8f6590009b0` code
+### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-4551df707589c382` exception
 
-Relation: nearby source page; matched terms `const`, `let`, `names`
+Relation: nearby source page; matched terms `does`, `not`
 
-Citation: (raw/javascriptallonge.pdf p.151-154)
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
-```
-const and let bind names.
-```
+Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another.
 
-### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-41f22a8358713fe0` code
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-0c6f56ffdca20542` code
 
-Relation: nearby source page; matched terms `const`, `javascript`, `let`
+Relation: nearby source page; matched terms `const`
 
-Citation: (raw/javascriptallonge.pdf p.154)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-```
-const and let are recent additions to JavaScript.
+```javascript
+const K = (x) => (y) => x; const I = (x) => (x); const V = (x) => (y) => (z) => z(x)(y);
 ```
 
-### From [[javascriptallonge-why-const-and-let-were-invented]]: `technical-atom-626cd93fa12868d4` formula
+### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-e872e51be415c3cc` code
 
-Relation: nearby source page; matched terms `but`, `can`, `const`, `let`, `way`
+Relation: nearby source page; matched terms `const`
 
-Citation: (raw/javascriptallonge.pdf p.154)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-Hopefully, you can think of a faster way to calculate this sum. 72 And perhaps you have noticed that var i = 1 is tucked away instead of being at the top as we prefer. But is this ever a problem?
+```javascript
+const K = (x) => (y) => x; const fortyTwo = K(42);
+```

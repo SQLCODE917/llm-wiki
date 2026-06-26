@@ -1,0 +1,25 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Spirit power imbalance defines illness (raw/Sword World RPG - Complete Edition.pdf p.159-163)",
+      "covered_source_claims": [
+        "source-claim-unit-0083-0025",
+        "source-claim-unit-0083-0022"
+      ]
+    },
+    {
+      "bullet_text": "Poisons cause spirit power imbalance, requiring detox to restore health (raw/Sword World RPG - Complete Edition.pdf p.159-163)",
+      "covered_source_claims": [
+        "source-claim-unit-0083-0034",
+        "source-claim-unit-0083-0060"
+      ]
+    },
+    {
+      "bullet_text": "Infection occurs when container breaks, causing spirit power imbalance (raw/Sword World RPG - Complete Edition.pdf p.159-163)",
+      "covered_source_claims": [
+        "source-claim-unit-0083-0030"
+      ]
+    }
+  ],
+  "source_record_text": "In *Sword World RPG*, illness is defined as a state in which the balance of spirit power within the body is disrupted. The concept of bacterial or viral contagion does not exist. There are two types of symptoms that can appear. One is due to **poison** and the other is due to **illness**. In addition, a wound may become **infected**, which is treated as an illness. Unknown spirit of life heals illness by showing other spirits how to achieve balance."
+}

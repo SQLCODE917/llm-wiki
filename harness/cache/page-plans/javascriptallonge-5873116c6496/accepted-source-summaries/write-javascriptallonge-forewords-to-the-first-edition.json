@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Fogus is a lifelong bibliophile excited by Reg’s writing, yet he remains conservative about books, preferring a scent like a \"Used Book Store\" before buying (raw/javascriptallonge.pdf p.14-29).",
+      "bullet_text": "Michael Fogus was skeptical about the pay-what-you-want ebook model but was humbled by the quality of JavaScript Allongé, finding it a great way to write and distribute books (raw/javascriptallonge.pdf p.14-15).",
       "covered_source_claims": [
-        "source-claim-unit-0002-0003"
+        "source-claim-unit-0007-0003"
       ]
     },
     {
-      "bullet_text": "Reg sent Fogus a copy of the book, which humbled him, contrasting Fogus’s skepticism about the ebook model (raw/javascriptallonge.pdf p.14-29).",
+      "bullet_text": "The Leanpub model enabled an efficient read-feedback-change process, resulting in a quality book that continues to improve with reader feedback (raw/javascriptallonge.pdf p.14-15).",
       "covered_source_claims": [
-        "source-claim-unit-0002-0005"
+        "source-claim-unit-0007-0006"
       ]
     },
     {
-      "bullet_text": "Reg’s Leanpub model facilitates rapid feedback loops, making the book improve continuously; Fogus describes this as efficient and transformative, noting it may change future publishing (raw/javascriptallonge.pdf p.14-29).",
+      "bullet_text": "Matthew Knox notes that JavaScript Allongé provides a gentle start before showing the full depth of JavaScript, comparing it to a Cafe Allongé that is over too soon (raw/javascriptallonge.pdf p.14-15).",
       "covered_source_claims": [
-        "source-claim-unit-0002-0004"
+        "source-claim-unit-0007-0005"
       ]
     }
   ],
-  "source_record_text": "Forewords and prefaces to the First Edition of JavaScript Allongé"
+  "source_record_text": "Forewords to the first edition of JavaScript Allongé by Michael Fogus and Matthew Knox, providing context and endorsement for the work."
 }

@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Hit checks require 2D rolls for attacker and defender, with attacker's score (attack power + 2D) exceeding defender's (evasion speed + 2D) to hit, (raw/Sword World RPG - Complete Edition.pdf p.48-49).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0001"
+      ]
+    },
+    {
+      "bullet_text": "Double ones cause automatic attack failure; double sixes cause automatic hit, unless defender also rolls double sixes, (raw/Sword World RPG - Complete Edition.pdf p.48-49).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0002"
+      ]
+    },
+    {
+      "bullet_text": "Damage checks are identical for characters and monsters, using strike and defense rolls with bonuses and reductions, (raw/Sword World RPG - Complete Edition.pdf p.49).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0028"
+      ]
+    },
+    {
+      "bullet_text": "When life force reaches 0 or below, character falls unconscious and must make death checks with target score 7, (raw/Sword World RPG - Complete Edition.pdf p.50).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0019"
+      ]
+    },
+    {
+      "bullet_text": "Attack checks reference Table 4-4 for outcomes of various dice rolls, (raw/Sword World RPG - Complete Edition.pdf p.48-49).",
+      "covered_source_claims": [
+        "source-claim-unit-0027-0027"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 4.7-4.9 of Sword World RPG - Complete Edition, covering attacks between characters, hit checks, damage checks, and unconscious/death checks. (raw/Sword World RPG - Complete Edition.pdf p.50-50)"
+}

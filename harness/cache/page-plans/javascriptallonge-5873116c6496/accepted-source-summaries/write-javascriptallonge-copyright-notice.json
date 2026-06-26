@@ -1,17 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The original words in this book are (c) 2012-2015, Reginald Braithwaite. (raw/javascriptallonge.pdf p.293-293)",
+      "bullet_text": "The copyright for the original words is (c) 2012-2015, Reginald Braithwaite, (raw/javascriptallonge.pdf p.293-296).",
       "covered_source_claims": [
-        "source-claim-unit-0206-0001"
+        "source-claim-unit-0059-0004"
       ]
     },
     {
-      "bullet_text": "All rights reserved. (raw/javascriptallonge.pdf p.293-293)",
+      "bullet_text": "The picture of the author is (c) 2008, Joseph Hurtado, All Rights Reserved, (raw/javascriptallonge.pdf p.293-296).",
       "covered_source_claims": [
-        "source-claim-unit-0206-0002"
+        "source-claim-unit-0059-0038"
+      ]
+    },
+    {
+      "bullet_text": "Roaster with Tree Leaves (c) 2007 ting, Some rights reserved, (raw/javascriptallonge.pdf p.293-296).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0050"
+      ]
+    },
+    {
+      "bullet_text": "Coffee Cow (c) 2012 Candy Schwartz, Some rights reserved, (raw/javascriptallonge.pdf p.293-296).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0102"
+      ]
+    },
+    {
+      "bullet_text": "The copyright for the images is (c) 2008-2015, various authors, (raw/javascriptallonge.pdf p.293-296).",
+      "covered_source_claims": [
+        "source-claim-unit-0059-0080"
       ]
     }
   ],
-  "source_record_text": "The copyright notice for JavaScript Allongé, stating the original words are (c) 2012-2015, Reginald Braithwaite, and all rights are reserved."
+  "source_record_text": "The original words in this book are (c) 2012-2015, Reginald Braithwaite. All rights reserved."
 }

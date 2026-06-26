@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "We wrote mapWith like this: const mapWith = (fn) => (list) => list.map(fn); (raw/javascriptallonge.pdf p.195-196)",
+      "bullet_text": "Flip reverses argument order in functions (raw/javascriptallonge.pdf p.195-197).",
       "covered_source_claims": [
-        "source-claim-unit-0147-0010"
+        "source-claim-unit-0045-0028"
       ]
     },
     {
-      "bullet_text": "Looking at this, we see we're conflating two separate transformations. First, we're reversing the order of arguments. (raw/javascriptallonge.pdf p.195-196)",
+      "bullet_text": "Currying combines with flip for cleaner function definitions (raw/javascriptallonge.pdf p.195-197).",
       "covered_source_claims": [
-        "source-claim-unit-0147-0019"
+        "source-claim-unit-0045-0031"
       ]
     },
     {
-      "bullet_text": "We're going to extract these two operations by refactoring our function to parameterize map. (raw/javascriptallonge.pdf p.195-196)",
+      "bullet_text": "Flip handles context differently for methods (raw/javascriptallonge.pdf p.195-197).",
       "covered_source_claims": [
-        "source-claim-unit-0147-0006"
+        "source-claim-unit-0045-0032"
+      ]
+    },
+    {
+      "bullet_text": "Flip function takes arguments in reverse order (raw/javascriptallonge.pdf p.195-197).",
+      "covered_source_claims": [
+        "source-claim-unit-0045-0019"
+      ]
+    },
+    {
+      "bullet_text": "Flip returns function with reversed argument order (raw/javascriptallonge.pdf p.195-197).",
+      "covered_source_claims": [
+        "source-claim-unit-0045-0034"
       ]
     }
   ],
-  "source_record_text": "Chapter on function flipping and currying in JavaScript Allongé"
+  "source_record_text": "Chapter on flip functions and currying in JavaScript Allongé, covering argument reversal and function composition techniques."
 }

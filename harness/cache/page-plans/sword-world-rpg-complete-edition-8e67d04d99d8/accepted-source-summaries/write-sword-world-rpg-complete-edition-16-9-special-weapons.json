@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Pole weapons are general terms for two-handed weapons with a long handle and a metal blade attached to the end, such as halberds, pole axes, lancers, partisans, glaives, pikes, and others (raw/Sword World RPG - Complete Edition.pdf p.269-271).",
+      "covered_source_claims": [
+        "source-claim-unit-0124-0001"
+      ]
+    },
+    {
+      "bullet_text": "Pole weapons cannot reach their full power in tight spaces, and their length is required strength x 15 centimeters (raw/Sword World RPG - Complete Edition.pdf p.269-271).",
+      "covered_source_claims": [
+        "source-claim-unit-0124-0003"
+      ]
+    },
+    {
+      "bullet_text": "Some typical pole weapons include the halberd, which can be used to thrust, cut, stab, and sweep, and the lucerne hammer, which can be used to thrust, cut, and beat (raw/Sword World RPG - Complete Edition.pdf p.269-271).",
+      "covered_source_claims": [
+        "source-claim-unit-0124-0004"
+      ]
+    }
+  ],
+  "source_record_text": "Summary of special weapons section 16.9 from Sword World RPG - Complete Edition."
+}

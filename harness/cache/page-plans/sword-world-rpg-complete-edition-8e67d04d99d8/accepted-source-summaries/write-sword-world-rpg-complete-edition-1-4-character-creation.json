@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Players must choose a race for their character, with five options: human, dwarf, grassrunner, elf, and half-elf, each with distinct characteristics and ability score modifiers (raw/Sword World RPG - Complete Edition.pdf p.17-21).",
+      "covered_source_claims": [
+        "source-claim-unit-0012-0005"
+      ]
+    },
+    {
+      "bullet_text": "Ability scores are determined by rolling sub-ability scores A-H and combining them, with each race having specific sub-ability score ranges (raw/Sword World RPG - Complete Edition.pdf p.17-21).",
+      "covered_source_claims": [
+        "source-claim-unit-0012-0006"
+      ]
+    },
+    {
+      "bullet_text": "Each race has specific strengths and weaknesses in ability scores, and different starting skills and experience points based on background (raw/Sword World RPG - Complete Edition.pdf p.17-21).",
+      "covered_source_claims": [
+        "source-claim-unit-0012-0009"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 1.4 of the Sword World RPG - Complete Edition covers the process of creating a player character, including race selection, determining ability scores, choosing starting skills and experience points, and purchasing equipment."
+}

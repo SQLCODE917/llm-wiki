@@ -1,11 +1,17 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Café Diplomatico in Toronto's Little Italy (raw/javascriptallonge.pdf p.191-191).",
+      "bullet_text": "Recipes with Data are written for practicality, (raw/javascriptallonge.pdf p.191-192)",
       "covered_source_claims": [
-        "source-claim-unit-0144-0001"
+        "source-claim-unit-0043-0003"
+      ]
+    },
+    {
+      "bullet_text": "The overall use of each recipe will fit within the spirit of the language discussed so far, (raw/javascriptallonge.pdf p.191-192)",
+      "covered_source_claims": [
+        "source-claim-unit-0043-0004"
       ]
     }
   ],
-  "source_record_text": "Chapter on recipes with data from JavaScript Allongé."
+  "source_record_text": "This chapter discusses recipes for working with data in JavaScript, focusing on practical implementation."
 }

@@ -394,6 +394,21 @@ class WikiStore:
                 catalogs.append(catalog)
         return tuple(catalogs)
 
+    def write_claim_ledger_artifacts(
+        self, source_locator: str, artifact_files: dict[str, str]
+    ) -> Path:
+        ledger_dir = self.page_plan_artifact_dir(source_locator) / "ledger"
+        ledger_dir.mkdir(parents=True, exist_ok=True)
+        for name, text in artifact_files.items():
+            (ledger_dir / name).write_text(text, encoding="utf-8")
+        return ledger_dir
+
+    def read_claim_ledger_artifact(self, source_locator: str) -> str | None:
+        ledger_path = self.page_plan_artifact_dir(source_locator) / "ledger" / "claim-ledger.json"
+        if not ledger_path.is_file():
+            return None
+        return ledger_path.read_text(encoding="utf-8")
+
     def write_source_summary_draft_artifact(
         self,
         source_locator: str,

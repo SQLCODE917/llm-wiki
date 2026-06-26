@@ -1,21 +1,16 @@
 ---
 page_id: javascriptallonge-the-golden-crema-appendices-and-afterwords
 page_kind: source
-summary: Summary of the appendices and afterwords section from JavaScript Allongé.
+summary: The Golden Crema: Appendices and Afterwords from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.288-288
-updated: 2026-06-20
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
-# The Golden Crema: Appendices and Afterwords
+## Source record
 
-This section includes appendices and afterwords from the book *JavaScript Allongé*. It provides additional context and reflections on the content.
+This section includes appendices and afterwords, with an intentionally omitted picture of the La Marzocco machine.
 
-## Key Points
+## Key supported claims
 
-- The appendices and afterwords provide closing context for JavaScript Allongé. (raw/javascriptallonge.pdf p.288-288)
-- It highlights the importance of the La Marzocco, which is mentioned as a key element in the context of the book's themes.
-
-## Sources
-
-- (raw/javascriptallonge.pdf p.288-288)
+- The picture of the La Marzocco machine is intentionally omitted, emphasizing conceptual over visual representation. (raw/javascriptallonge.pdf p.288-288)

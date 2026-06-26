@@ -1,0 +1,93 @@
+{
+  "source": "1776ThomasPaine.pdf",
+  "sha256": "401a7353e95bd48783155038ccc30e1c56ef1893d88618a7aeac1e4ab28ec1c3",
+  "extractor_name": "pymupdf4llm",
+  "integrated": true,
+  "chunks": [
+    {
+      "id": 1,
+      "heading": "Document",
+      "pages": [
+        1,
+        5
+      ],
+      "tokens": 5076,
+      "status": "done",
+      "notes": "Created the source page '1776thomaspaine-document' summarizing Thomas Paine's 'Common Sense' (1776) with focus on origin and design of government, critique of English Constitution, and arguments against monarchy. No additional entity or concept pages were created as the chunk did not introduce sufficient depth on specific topics beyond the main themes covered in the source page.",
+      "pages_written": [
+        "1776thomaspaine-document"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 2,
+      "heading": "Document",
+      "pages": [
+        6,
+        10
+      ],
+      "tokens": 5639,
+      "status": "done",
+      "notes": "Wrote the source page '1776thomaspaine-document' summarizing Thomas Paine's 'Document' (pages 6-10) from '1776ThomasPaine.pdf'. The page covers Paine's arguments against monarchy and hereditary succession, citing scripture and historical examples. No other pages were created or updated in this chunk as the focus was on the main source summary.",
+      "pages_written": [
+        "1776thomaspaine-document"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 3,
+      "heading": "Document",
+      "pages": [
+        11,
+        15
+      ],
+      "tokens": 5553,
+      "status": "done",
+      "notes": "Created source page '1776thomaspaine-document' summarizing Thomas Paine's 'Document' (pages 11-15) from '1776'. Key claims include: reconciliation with Britain is a 'falacious dream', Britain suppresses American growth, independence is necessary for peace, and separation secures America's future. No other pages were created as the chunk did not introduce new entities or concepts requiring individual pages beyond the source summary.",
+      "pages_written": [
+        "1776thomaspaine-document"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 4,
+      "heading": "Document",
+      "pages": [
+        16,
+        22
+      ],
+      "tokens": 5957,
+      "status": "done",
+      "notes": "Written the source page '1776thomaspaine-document' summarizing the 'Document' section (pages 16-22) of Thomas Paine's '1776'. Key claims covered include the proposal for a continental charter, the principle that law should be the ruler in America, and warnings against the dangers of not forming a constitution now. No additional entity or concept pages were created in this chunk.",
+      "pages_written": [
+        "1776thomaspaine-document"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 5,
+      "heading": "Document",
+      "pages": [
+        23,
+        27
+      ],
+      "tokens": 4901,
+      "status": "done",
+      "notes": "Wrote the source page '1776thomaspaine-document' summarizing Thomas Paine's 'Document' section (pages 23-27) from '1776'. Key claims include the dangers of concentrated power in representation, the king's speech as villany, the importance of commerce over conquest, the futility of reconciliation efforts, and the necessity of independence for settling affairs expeditiously. No additional entity or concept pages were created for this chunk.",
+      "pages_written": [
+        "1776thomaspaine-document"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    }
+  ]
+}

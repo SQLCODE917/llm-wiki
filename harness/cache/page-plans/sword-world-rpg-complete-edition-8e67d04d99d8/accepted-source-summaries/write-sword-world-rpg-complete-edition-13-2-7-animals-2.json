@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters, preferring to suck the blood of living creatures rather than eat their meat. (raw/Sword World RPG - Complete Edition.pdf p.203-206)",
+      "covered_source_claims": [
+        "source-claim-unit-0097-0021"
+      ]
+    },
+    {
+      "bullet_text": "A giant bat is a massive bat, with a wingspan of 3 meters across, completely nocturnal, flying around forests and wastelands to hunt at night. (raw/Sword World RPG - Complete Edition.pdf p.203-206)",
+      "covered_source_claims": [
+        "source-claim-unit-0097-0024"
+      ]
+    },
+    {
+      "bullet_text": "Grizzlies are generally solitary, except when a mother bear is with her cubs, and are omnivores said to eat anything they can fit into their mouths. (raw/Sword World RPG - Complete Edition.pdf p.203-206)",
+      "covered_source_claims": [
+        "source-claim-unit-0097-0022"
+      ]
+    }
+  ],
+  "source_record_text": "This section describes various animals and monsters found in the Sword World RPG setting, including vampire bats, giant bats, bears, lions, giant slugs, toads, ants, apes, and giant antlions."
+}

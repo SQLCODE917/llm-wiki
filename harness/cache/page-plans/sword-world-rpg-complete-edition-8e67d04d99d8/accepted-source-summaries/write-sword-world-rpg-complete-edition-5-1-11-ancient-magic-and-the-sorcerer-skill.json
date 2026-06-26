@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Ancient magic draws power directly from matter and has powerful effects (raw/Sword World RPG - Complete Edition.pdf p.66-67).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0043"
+      ]
+    },
+    {
+      "bullet_text": "Sorcerers use a mage's staff as a magical catalyst to cast ancient magic (raw/Sword World RPG - Complete Edition.pdf p.66-67).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0042"
+      ]
+    },
+    {
+      "bullet_text": "Ancient magic requires cloth or soft leather armor for casting (raw/Sword World RPG - Complete Edition.pdf p.66-67).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0006"
+      ]
+    },
+    {
+      "bullet_text": "Sorcerers can speak, read, and write in both high and low ancient (raw/Sword World RPG - Complete Edition.pdf p.66-67).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0050"
+      ]
+    },
+    {
+      "bullet_text": "Spellbooks are used by sorcerers to preserve and review learned spells (raw/Sword World RPG - Complete Edition.pdf p.66-67).",
+      "covered_source_claims": [
+        "source-claim-unit-0038-0069"
+      ]
+    }
+  ],
+  "source_record_text": "This section covers the rules for ancient magic and the sorcerer skill in the Sword World RPG - Complete Edition."
+}

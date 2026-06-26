@@ -2,115 +2,127 @@
 page_id: javascriptallonge-self-similarity
 page_kind: source
 summary: Self-Similarity from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.109-111
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.109-116
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This chunk introduces recursion as the root of computation and explores self-similar data structures, linear recursion, tail-call optimization, and default arguments in JavaScript.
+This chapter explores self-similarity in JavaScript through recursion, focusing on lists, linear recursion, mapping, and folding.
 
 ## Key supported claims
 
-- Recursion is the root of computation since it trades description for time—Alan Perlis, Epigrams in Programming 60 (raw/javascriptallonge.pdf p.109-111).
-- Some are empty, some have three items, some forty-two, some contain numbers, some contain strings, some a mixture of elements, there are all kinds of lists (raw/javascriptallonge.pdf p.109-111).
-- Consists of an element concatenated with a list (raw/javascriptallonge.pdf p.109-111).
+- Recursion is the root of computation since it trades description for time (Alan Perlis) (raw/javascriptallonge.pdf p.109-116).
+- Lists can be defined as either empty or as an element concatenated with a list (raw/javascriptallonge.pdf p.109-116).
+- Linear recursion follows a divide and conquer strategy, breaking problems into smaller subproblems (raw/javascriptallonge.pdf p.109-116).
+- Mapping is a special case of linear recursion where a function is applied to each element of a list (raw/javascriptallonge.pdf p.109-116).
+- Folding is a generalization of mapping that can be used to build other functions like length and sumSquares (raw/javascriptallonge.pdf p.109-116).
 
 ## Technical details
 
-### `technical-atom-7d4d3530db6d8743` code
+### `technical-atom-1bcaa516e0bb0550` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
-
-```javascript
-[] //=> [] ["baz", ...[]] //=> ["baz"] ["bar", ...["baz"]] //=> ["bar","baz"] ["foo", ...["bar", "baz"]] //=> ["foo","bar","baz"]
-```
-
-### `technical-atom-9991d4627b6a366f` code
-
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
 ```javascript
-const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar"]; first //=> "foo" rest //=> ["bar"] const [first, ...rest] = ["foo", "bar", "baz"]; first //=> "foo" rest //=> ["bar","baz"] For the purpose of this exploration, we will presume the following: const isEmpty = ([first, ...rest]) => first === undefined ;
+const [first, ...rest] = []; first //=> undefined rest //=> []: const [first, ...rest] = ["foo"]; first //=> "foo" rest //=> [] const [first, ...rest] = ["foo", "bar"]; first //=> "foo" rest //=> ["bar"] const [first, ...rest] = ["foo", "bar", "baz"]; first //=> "foo" rest //=> ["bar","baz"]
 ```
 
-### `technical-atom-5925101597ee7da0` code
+### `technical-atom-bbbbff6925562544` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
 ```javascript
-isEmpty([]) //=> true isEmpty([0]) //=> false isEmpty([[]]) //=> false
+const isEmpty = ([first, ...rest]) => first === undefined;
 ```
 
-### `technical-atom-312728236eb44815` code
+### `technical-atom-940ab647a8cf16dd` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
 ```javascript
-const length = ([first, ...rest]) => first === undefined ? 0 : // ???
+> 61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples. A more robust implementation would be (array) => array.length === 0, but we are doing backflips to keep this within a very small and contrived playground.
 ```
 
-### `technical-atom-b6969a4fa3096986` code
+### `technical-atom-fd27f878a437c3c1` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
 ```javascript
-const length = ([first, ...rest]) => first === undefined ? 0 : 1 + length(rest); Let's try it! length([]) //=> 0 length(["foo"]) //=> 1 length(["foo", "bar", "baz"])
+const length = ([first, ...rest]) => first === undefined ? 0: // ???
 ```
 
-### `technical-atom-c2bd4f426bf0f84c` code
+### `technical-atom-1c64aa708dce3458` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
 ```javascript
-//=> 3
+const length = ([first, ...rest]) => first === undefined ? 0: 1 + length(rest);
 ```
 
-### `technical-atom-9f1556f765136bb2` code
+### `technical-atom-644dfa73efff0a53` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
+```javascript
+const flatten = ([first, ...rest]) => { if (first === undefined) { return []; } else if (!Array.isArray(first)) { return [first, ...flatten(rest)]; } else { return [...flatten(first), ...flatten(rest)]; } } flatten(["foo", [3, 4, []]]) //=> ["foo",3,4]
 ```
-A more robust implementation would be (array) => array.length === 0 , but we are doing backflips to keep this within a very small and contrived playground.
+
+### `technical-atom-8ee63caa56f79969` code
+
+Citation: (raw/javascriptallonge.pdf p.109-116)
+
+```javascript
+const squareAll = ([first, ...rest]) => first === undefined ? []: [first * first, ...squareAll(rest)]; squareAll([1, 2, 3, 4, 5]) //=> [1,4,9,16,25]
 ```
 
-### `technical-atom-5d9fe5bf28074a51` exception
+### `technical-atom-fbaa6ef02dce0699` code
 
-Citation: (raw/javascriptallonge.pdf p.109-111)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
-61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples.
+```javascript
+const truthyAll = ([first, ...rest]) => first === undefined
+```
 
 ## Related technical details
 
-### From [[javascriptallonge-linear-recursion]]: `technical-atom-aea77c39cd5beb20` procedure
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-ff6f64bd417071bb` code
 
-Relation: nearby source page; matched terms `all`, `linear`, `recursion`
+Relation: nearby source page; matched terms `const`, `first`, `function`, `rest`, `return`
 
-Citation: (raw/javascriptallonge.pdf p.111-113)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
-Of course, all the students know what to do: They fill the beaker with water, place the stand on the burner and the beaker on the stand, then they turn the burner on and use the sparker to ignite the flame.
+```javascript
+const mapWith = function (fn, [first, ...rest]) { if (first === undefined) { return []; } else { const _temp1 = fn(first), _temp2 = mapWith(fn, rest), _temp3 = [_temp1, ..._temp2]; return _temp3; } }
+```
 
-### From [[javascriptallonge-linear-recursion]]: `technical-atom-cc18b4c0ba818b9d` procedure
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-616779e4e28069eb` code
 
-Relation: nearby source page; matched terms `elements`, `linear`, `recursion`
+Relation: nearby source page; matched terms `const`, `first`, `rest`
 
-Citation: (raw/javascriptallonge.pdf p.111-113)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
-Sometimes we want to flatten an array, that is, an array of arrays needs to be turned into one array of elements that aren't arrays.
+```javascript
+const mapWith = (fn, [first, ...rest]) => first === undefined ? []: [fn(first), ...mapWith(fn, rest)]; mapWith((x) => x * x, [1, 2, 3, 4, 5]) //=> [1,4,9,16,25]
+```
 
-### From [[javascriptallonge-linear-recursion]]: `technical-atom-88748102cb4ec364` procedure
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-8f8f661f7109191c` code
 
-Relation: nearby source page; matched terms `element`, `linear`, `recursion`
+Relation: nearby source page; matched terms `const`, `first`, `rest`
 
-Citation: (raw/javascriptallonge.pdf p.111-113)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
-The next terminal case is that if an element isn't an array, we don't flatten it, and can put it together with the rest of our solution directly.
+```javascript
+const lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === undefined
+```
 
-### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-2072bdc8f0d30ba8` requirement
+### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-62490a3bbc959661` code
 
-Relation: nearby source page; matched terms `arguments`, `default`, `javascript`, `some`
+Relation: nearby source page; matched terms `const`, `first`, `rest`
 
-Citation: (raw/javascriptallonge.pdf p.117-118)
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
-Note that while evaluating mapWith(fn, rest) , JavaScript must retain the value first or fn(first) , plus some housekeeping information so it remembers what to do with mapWith(fn, rest) when it has a result.
+```javascript
+const mapWith = (fn, [first, ...rest], prepend = []) => first === undefined
+```

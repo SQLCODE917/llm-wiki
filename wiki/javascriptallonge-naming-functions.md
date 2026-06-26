@@ -2,79 +2,127 @@
 page_id: javascriptallonge-naming-functions
 page_kind: source
 summary: Naming Functions from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.62-62
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.62-67
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Chapter on naming functions in JavaScript Allongé, covering arrow functions, function keyword, named function expressions, and hoisting.
+This chapter from JavaScript Allongé explores the nuances of naming functions in JavaScript, covering anonymous functions, named function expressions, and function declarations.
 
 ## Key supported claims
 
-- Binding an anonymous function to a name in an environment does not name the function itself (raw/javascriptallonge.pdf p.62-62).
-- Arrow functions bind anonymous functions; the function stays unnamed (raw/javascriptallonge.pdf p.62-62).
-- Named function expressions provide an internal name for recursion but do not affect the environment binding (raw/javascriptallonge.pdf p.62-62).
+- Arrow syntax creates anonymous functions, not named (raw/javascriptallonge.pdf p.62-67).
+- Function keyword allows naming functions, unlike arrow syntax (raw/javascriptallonge.pdf p.62-67).
+- Named function expressions bind function name to function, not environment (raw/javascriptallonge.pdf p.62-67).
+- Function declarations are hoisted to top of scope, allowing use before definition (raw/javascriptallonge.pdf p.62-67).
+- Function declarations must not be inside blocks or expressions (raw/javascriptallonge.pdf p.62-67).
 
 ## Technical details
 
-### `technical-atom-0ea8d8d83b9803e9` code
+### `technical-atom-5b2db9564ba1d141` code
 
-Citation: (raw/javascriptallonge.pdf p.62)
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
 ```javascript
 const repeat = (str) => str + str
 ```
 
-### `technical-atom-948ee531147ee69c` formula
+### `technical-atom-c3c551ab08b38d6b` code
 
-Citation: (raw/javascriptallonge.pdf p.62)
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
-It doesn't name the function 'repeat' for the same reason that const answer = 42 doesn't name the number 42 .
+```javascript
+(str) => str + str
+```
 
-### `technical-atom-b521eb56bb5cda47` exception
+### `technical-atom-5a7c2c2feec03b0b` code
 
-Citation: (raw/javascriptallonge.pdf p.62)
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
-This code does not name a function:
+```javascript
+function (str) { return str + str }
+```
 
-## Related technical details
+### `technical-atom-e6e76a5e6be15c59` code
 
-### From [[javascriptallonge-rebinding]]: `technical-atom-3ee28a0dd987831d` exception
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
-Relation: nearby source page; matched terms `does`, `javascript`, `name`, `not`
+```javascript
+5. We always use a block, we cannot write function (str) str + str. This means that if we want our functions to return a value, we always need to use the return keyword
+```
 
-Citation: (raw/javascriptallonge.pdf p.60-61)
+### `technical-atom-66f799107dabedfc` code
 
-JavaScript does not permit us to rebind a name that has been bound with const .
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
-### From [[javascriptallonge-the-function-keyword]]: `technical-atom-e3ae7448df2db828` code
+```javascript
+(n) => (1.618**n - -1.618**-n) / 2.236
+```
 
-Relation: nearby source page; matched terms `function`, `keyword`, `repeat`
+### `technical-atom-3e1227a361ce7588` code
 
-Citation: (raw/javascriptallonge.pdf p.74-75)
+Citation: (raw/javascriptallonge.pdf p.62-67)
+
+```javascript
+function (n) { return (1.618**n - -1.618**-n) / 2.236; }
+```
+
+### `technical-atom-73332c6ee25e1ad8` code
+
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
 ```javascript
 const repeat = function repeat (str) { return str + str; }; const fib = function fib (n) { return (1.618**n - -1.618**-n) / 2.236; };
 ```
 
-### From [[javascriptallonge-the-function-keyword]]: `technical-atom-8aacb0eaceffe66c` code
+### `technical-atom-4dd2787bad88c9c5` code
 
-Relation: nearby source page; matched terms `function`, `keyword`, `repeat`
-
-Citation: (raw/javascriptallonge.pdf p.74-75)
+Citation: (raw/javascriptallonge.pdf p.62-67)
 
 ```javascript
 const double = function repeat (str) { return str + str; }
 ```
 
-### From [[javascriptallonge-function-declaration-caveats-34]]: `technical-atom-68210eea018a360c` code
+## Related technical details
 
-Relation: nearby source page; matched terms `but`, `function`, `not`
+### From [[javascriptallonge-magic-names]]: `technical-atom-619c03466d625e82` code
 
-Citation: (raw/javascriptallonge.pdf p.66-67)
+Relation: nearby source page; matched terms `arrow`, `bind`, `function`, `keyword`, `our`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.74-77)
 
 ```javascript
-function trueDat () { return true } But this is not: ( function trueDat () { return true })
+This works just fine, because arguments[0] refers to the 3 we passed to the function row. Our “fat arrow” function (column) => column * arguments[0] doesn’t bind arguments when it’s invoked. But if we rewrite row to use the function keyword, it stops working:
+```
+
+### From [[javascriptallonge-closures-and-scope]]: `technical-atom-58f9184c287b83f5` code
+
+Relation: nearby source page; matched terms `bind`, `function`, `name`, `named`, `not`, `scope`
+
+Citation: (raw/javascriptallonge.pdf p.44-48)
+
+```javascript
+The function (y) => x is interesting. It contains a free variable, x.[27] A free variable is one that is not bound within the function. Up to now, we’ve only seen one way to “bind” a variable, namely by passing in an argument with the same name. Since the function (y) => x doesn’t have an argument named x, the variable x isn’t bound in this function, which makes it “free.”
+```
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please]]: `technical-atom-07b4f982763531cb` code
+
+Relation: nearby source page; matched terms `expressions`, `function`, `functions`
+
+Citation: (raw/javascriptallonge.pdf p.39-43)
+
+```javascript
+Expressions consist either of representations of values (like 3.14159265, true, and undefined), operators that combine expressions (like 3 + 2), some special forms like [1, 2, 3] for creating arrays out of expressions, or function ( arguments) { body-statements } for creating functions.
+```
+
+### From [[javascriptallonge-that-constant-coffee-craving]]: `technical-atom-e75668d22e5ff80b` code
+
+Relation: nearby source page; matched terms `expressions`, `function`, `functions`, `our`, `use`
+
+Citation: (raw/javascriptallonge.pdf p.49-61)
+
+```javascript
+This expression, when evaluated, returns a function that calculates circumferences. That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. All of our “functions” are expressions. This one has a few more moving parts, that’s all. But we can use it just like (diameter) => diameter * 3.14159265.
 ```

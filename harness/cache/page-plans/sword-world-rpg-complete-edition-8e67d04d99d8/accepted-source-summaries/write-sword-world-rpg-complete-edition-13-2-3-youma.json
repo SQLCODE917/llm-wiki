@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Imps use paralyzing poison in their tail. (raw/Sword World RPG - Complete Edition.pdf p.178-180)",
+      "covered_source_claims": [
+        "source-claim-unit-0090-0004"
+      ]
+    },
+    {
+      "bullet_text": "Imps have a sharp tail tip like a spear. (raw/Sword World RPG - Complete Edition.pdf p.178-180)",
+      "covered_source_claims": [
+        "source-claim-unit-0090-0005"
+      ]
+    },
+    {
+      "bullet_text": "Anyone who suffers damage from an imp must attempt resistance roll. (raw/Sword World RPG - Complete Edition.pdf p.178-180)",
+      "covered_source_claims": [
+        "source-claim-unit-0090-0007"
+      ]
+    }
+  ],
+  "source_record_text": "This section describes various youma creatures found in the Sword World RPG - Complete Edition, including imps, kobolds, gremlins, hobgoblins, goblins, goblin shamans, goblin lords, marshmen, and dark elves."
+}

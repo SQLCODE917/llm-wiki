@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Converting character data to monster data reduces dice rolling during combat and gives more time for game guidance (raw/Sword World RPG - Complete Edition.pdf p.233-233).",
+      "covered_source_claims": [
+        "source-claim-unit-0107-0014"
+      ]
+    },
+    {
+      "bullet_text": "Converting character data to monster data prevents critical hits from causing player frustration (raw/Sword World RPG - Complete Edition.pdf p.233-233).",
+      "covered_source_claims": [
+        "source-claim-unit-0107-0016"
+      ]
+    },
+    {
+      "bullet_text": "Monster level adapts directly from adventurer level, with agility and movement speed using character's agility score (raw/Sword World RPG - Complete Edition.pdf p.234-234).",
+      "covered_source_claims": [
+        "source-claim-unit-0107-0017"
+      ]
+    }
+  ],
+  "source_record_text": "Rules for converting character data to monster data, including advantages, calculations, and examples like werewolves, werebears, and weretigers."
+}

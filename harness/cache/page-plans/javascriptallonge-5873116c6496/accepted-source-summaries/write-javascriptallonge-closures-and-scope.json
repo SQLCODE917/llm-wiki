@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript allows functions to nest inside each other, and handles variables from 'outside' of a function that are referenced inside a function (raw/javascriptallonge.pdf p.44-44)",
+      "bullet_text": "Functions that contain free variables are called closures (raw/javascriptallonge.pdf p.44-48).",
       "covered_source_claims": [
-        "source-claim-unit-0042-0012"
+        "source-claim-unit-0016-0022"
       ]
     },
     {
-      "bullet_text": "The result of applying a function is a function when the expression body is another function (raw/javascriptallonge.pdf p.44-44)",
+      "bullet_text": "Pure functions are easiest to understand because they always mean the same thing (raw/javascriptallonge.pdf p.44-48).",
       "covered_source_claims": [
-        "source-claim-unit-0042-0006"
+        "source-claim-unit-0016-0040"
       ]
     },
     {
-      "bullet_text": "A value representing a function is created when a function is applied (raw/javascriptallonge.pdf p.44-44)",
+      "bullet_text": "When a function is applied to arguments, its environment has a reference to its parent environment (raw/javascriptallonge.pdf p.44-48).",
       "covered_source_claims": [
-        "source-claim-unit-0042-0007"
+        "source-claim-unit-0016-0033"
+      ]
+    },
+    {
+      "bullet_text": "Variables in a function's scope shadow variables in parent scopes if they have the same name (raw/javascriptallonge.pdf p.44-48).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0030"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript has a global environment, and code can be wrapped in an IIFE to create a local environment (raw/javascriptallonge.pdf p.44-48).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0073"
       ]
     }
   ],
-  "source_record_text": "Summary of closures and scope concepts from JavaScript Allongé, covering free variables, closures, and environments."
+  "source_record_text": "Chapter on closures and scope from JavaScript Allongé."
 }

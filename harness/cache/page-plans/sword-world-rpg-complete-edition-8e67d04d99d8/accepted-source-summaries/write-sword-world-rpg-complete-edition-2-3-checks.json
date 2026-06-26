@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Baseline score is relevant skill level + ability bonus (raw/Sword World RPG - Complete Edition.pdf p.30-33).",
+      "bullet_text": "Baseline score is skill level plus ability bonus, e.g., 2 + 2 = 4 (raw/Sword World RPG - Complete Edition.pdf p.30-30).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0022"
+        "source-claim-unit-0015-0001"
       ]
     },
     {
-      "bullet_text": "Target score represents difficulty, set by game master (raw/Sword World RPG - Complete Edition.pdf p.30-33).",
+      "bullet_text": "Target score reflects action difficulty, set by Game Master (raw/Sword World RPG - Complete Edition.pdf p.30-30).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0024"
+        "source-claim-unit-0015-0016"
       ]
     },
     {
-      "bullet_text": "Success roll 2D + baseline score ≥ target score (raw/Sword World RPG - Complete Edition.pdf p.30-33).",
+      "bullet_text": "Check is 2D + baseline score; must meet or exceed target score to succeed (raw/Sword World RPG - Complete Edition.pdf p.30-30).",
       "covered_source_claims": [
-        "source-claim-unit-0006-0025"
+        "source-claim-unit-0015-0022"
+      ]
+    },
+    {
+      "bullet_text": "Final score is 2D + baseline score (raw/Sword World RPG - Complete Edition.pdf p.30-30).",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0027"
+      ]
+    },
+    {
+      "bullet_text": "Automatic success and failure rules override normal check outcomes (raw/Sword World RPG - Complete Edition.pdf p.30-30).",
+      "covered_source_claims": [
+        "source-claim-unit-0015-0045"
       ]
     }
   ],
-  "source_record_text": "This section explains checks in Sword World RPG, including baseline scores, target scores, success rolls, automatic success/failure, bonuses/penalties, difficulty checks, and resistance rolls. Some aspects are unknown."
+  "source_record_text": "This section explains how baseline scores, target scores, and checks are determined in the Sword World RPG."
 }

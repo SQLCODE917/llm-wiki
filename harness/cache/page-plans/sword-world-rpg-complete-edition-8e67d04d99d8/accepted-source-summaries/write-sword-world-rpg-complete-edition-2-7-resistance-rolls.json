@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Life force resistance rolls avoid physical dangers like poison, using adventurer level + life force bonus as baseline score (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "bullet_text": "A life force resistance roll uses the formula _adventurer level + life force bonus_ as the baseline score to avoid physical dangers such as poison (raw/Sword World RPG - Complete Edition.pdf p.33-33).",
       "covered_source_claims": [
-        "source-claim-unit-0007-0010"
+        "source-claim-unit-0017-0010"
       ]
     },
     {
-      "bullet_text": "Mental power resistance rolls avoid magic or curses, using adventurer level + mental power bonus as baseline score (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "bullet_text": "A mental power resistance roll uses the formula _adventurer level + mental power bonus_ as the baseline score to avoid magic or curses (raw/Sword World RPG - Complete Edition.pdf p.33-33).",
       "covered_source_claims": [
-        "source-claim-unit-0007-0013"
+        "source-claim-unit-0017-0013"
       ]
     },
     {
-      "bullet_text": "Baseline score for resistance rolls equals adventurer level + life force/mental power bonus (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "bullet_text": "The baseline score (resistance) equals _adventurer level + life force/mental power bonus_ (raw/Sword World RPG - Complete Edition.pdf p.33-33).",
       "covered_source_claims": [
-        "source-claim-unit-0007-0033"
+        "source-claim-unit-0017-0009"
       ]
     },
     {
-      "bullet_text": "Characters with adventurer level 0 have a baseline score of 0 for resistance rolls (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "bullet_text": "Life force resistance rolls are used against physical dangers like poison, while mental power resistance rolls are used against magic or curses (raw/Sword World RPG - Complete Edition.pdf p.33-33).",
       "covered_source_claims": [
-        "source-claim-unit-0007-0009"
+        "source-claim-unit-0017-0033"
       ]
     },
     {
-      "bullet_text": "Writing down baseline scores for resistance rolls is advisable for quick reference (raw/Sword World RPG - Complete Edition.pdf p.33-36).",
+      "bullet_text": "It is advisable to note the baseline scores for each resistance roll on the character sheet (raw/Sword World RPG - Complete Edition.pdf p.33-33).",
       "covered_source_claims": [
-        "source-claim-unit-0007-0032"
+        "source-claim-unit-0017-0032"
       ]
     }
   ],
-  "source_record_text": "This section covers life force and mental power resistance rolls, their calculation using adventurer level and ability bonuses, and their application in avoiding physical dangers and magic/curses."
+  "source_record_text": "This section covers resistance rolls in the *Sword World RPG - Complete Edition*, detailing how life force and mental power resistance rolls are calculated and used."
 }

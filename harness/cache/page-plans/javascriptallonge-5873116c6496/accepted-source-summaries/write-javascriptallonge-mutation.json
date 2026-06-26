@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Arrays and objects can mutate, changing structure while keeping identity (raw/javascriptallonge.pdf p.141-157).",
+      "bullet_text": "In JavaScript, arrays and objects can mutate, changing their structure while keeping the same identity (raw/javascriptallonge.pdf p.141-147).",
       "covered_source_claims": [
-        "source-claim-unit-0011-0002"
+        "source-claim-unit-0037-0038"
       ]
     },
     {
-      "bullet_text": "In JavaScript, almost every value can mutate, but identities stay the same (raw/javascriptallonge.pdf p.141-157).",
+      "bullet_text": "Declaring a variable as const does not prevent mutation of the value it references, only rebinding of the name (raw/javascriptallonge.pdf p.141-147).",
       "covered_source_claims": [
-        "source-claim-unit-0011-0003"
+        "source-claim-unit-0037-0034"
       ]
     },
     {
-      "bullet_text": "Alias bindings refer to the same value; mutation changes that shared value (raw/javascriptallonge.pdf p.141-157).",
+      "bullet_text": "Mutation in shared references affects all aliases, as changes are made to the same underlying data (raw/javascriptallonge.pdf p.141-147).",
       "covered_source_claims": [
-        "source-claim-unit-0011-0004"
+        "source-claim-unit-0037-0042"
+      ]
+    },
+    {
+      "bullet_text": "Languages like Haskell avoid mutation entirely, which can make reasoning about code easier (raw/javascriptallonge.pdf p.141-147).",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0066"
+      ]
+    },
+    {
+      "bullet_text": "Patterns exist for being liberal with mutation during construction and conservative during consumption (raw/javascriptallonge.pdf p.141-147).",
+      "covered_source_claims": [
+        "source-claim-unit-0037-0075"
       ]
     }
   ],
-  "source_record_text": "This chapter explains how mutation works in JavaScript, covering arrays, objects, aliases, and assignment semantics, with possible nuances."
+  "source_record_text": "Chapter on mutation in JavaScript, covering data structures, aliases, and mutation patterns."
 }

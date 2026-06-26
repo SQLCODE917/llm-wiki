@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "This has little practical utility in JavaScript, but in combinatory logic it's essential: With fixed-point combinators it's possible to compute everything computable without binding names. (raw/javascriptallonge.pdf p.201-201)",
+      "bullet_text": "The Y Combinator enables recursive functions without binding to names in JavaScript, useful in combinatory logic (raw/javascriptallonge.pdf p.201-201).",
       "covered_source_claims": [
-        "source-claim-unit-0151-0004"
+        "source-claim-unit-0047-0005"
       ]
     },
     {
-      "bullet_text": "The Y Combinator enables you to make recursive functions without needing to bind a function to a name in an environment. (raw/javascriptallonge.pdf p.201-201)",
+      "bullet_text": "The Y Combinator has practical applications and is useful for understanding combinatory logic (raw/javascriptallonge.pdf p.201-201).",
       "covered_source_claims": [
-        "source-claim-unit-0151-0006"
+        "source-claim-unit-0047-0006"
       ]
     },
     {
-      "bullet_text": "It is possible to compute everything computable with fixed-point combinators without binding names. (raw/javascriptallonge.pdf p.201-201)",
+      "bullet_text": "The joy of working things out is emphasized when learning the Y Combinator (raw/javascriptallonge.pdf p.201-201).",
       "covered_source_claims": [
-        "source-claim-unit-0151-0007"
+        "source-claim-unit-0047-0007"
       ]
     }
   ],
-  "source_record_text": "Chapter Why? from 'JavaScript Allongé' explains the Y Combinator and its role in recursive functions without binding names."
+  "source_record_text": "Chapter 47 of JavaScript Allongé, 'Why?', covering the Y Combinator and its role in functional programming."
 }

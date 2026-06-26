@@ -6,7 +6,7 @@ import re
 from typing import Literal
 
 from llmwiki.domain.evidence_registry import EvidenceRecord
-from llmwiki.domain.source_claim_heuristics import is_code_fragment
+from llmwiki.domain.source_claim_heuristics import code_fragment_payload, is_code_fragment
 from llmwiki.domain.source_summary import SourceClaim
 
 TechnicalAtomKind = Literal[
@@ -38,6 +38,7 @@ MAX_TECHNICAL_PAYLOAD_CHARS = 1200
 MAX_RENDERED_ATOMS_PER_PAGE = 8
 
 _FORMULA_RE = re.compile(r"(?=.*[=+\-*/x×÷])(?:[A-Za-z][A-Za-z0-9 _-]{2,}|\*\*.+?\*\*)\s*=")
+_PROGRAMMING_DECLARATION_RE = re.compile(r"\b(?:const|let|var)\s+[A-Za-z_$][\w$]*\s*=")
 _ORDERED_RE = re.compile(r"^\s*(?:\d+[.)]|[-*])\s+(?P<step>\S.+)")
 _TERM_RE = re.compile(r"[a-z][a-z0-9-]{2,}", re.IGNORECASE)
 _STRUCTURAL_TOKEN_RE = re.compile(r"[a-z0-9*]+", re.IGNORECASE)
@@ -98,6 +99,8 @@ def claim_kind(claim: SourceClaim) -> TechnicalAtomKind | None:
 
 
 def fields_for_claim(kind: TechnicalAtomKind, statement: str) -> tuple[tuple[str, str], ...]:
+    if kind == "code":
+        return (("language", _language("", code_fragment_payload(statement))),)
     if kind == "formula":
         return (("expression", statement),)
     if kind == "procedure":
@@ -182,6 +185,8 @@ def ordered_step_groups(text: str) -> tuple[tuple[str, ...], ...]:
 def is_formula(text: str) -> bool:
     stripped = text.strip()
     if any(marker in stripped for marker in ("=>", "===", "!==", "==")):
+        return False
+    if _PROGRAMMING_DECLARATION_RE.search(code_fragment_payload(stripped)):
         return False
     left_side = stripped.split("=", 1)[0].lower()
     if any(term in left_side for term in ("example", " rolls ", " gets ", " means ")):

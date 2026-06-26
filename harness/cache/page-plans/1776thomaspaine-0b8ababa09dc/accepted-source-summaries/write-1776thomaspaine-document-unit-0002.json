@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Paine argues that monarchy is contrary to scripture, as seen in Samuel's account of the people's request for a king (raw/1776ThomasPaine.pdf p.6-10).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0003"
+      ]
+    },
+    {
+      "bullet_text": "He contends that hereditary succession is an insult to posterity, as all men are originally equal (raw/1776ThomasPaine.pdf p.6-10).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0026"
+      ]
+    },
+    {
+      "bullet_text": "Paine claims that the first kings were often ruffians who gained power through force, not divine right (raw/1776ThomasPaine.pdf p.6-10).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0063"
+      ]
+    },
+    {
+      "bullet_text": "He asserts that hereditary succession leads to poor governance, as it allows fools, wicked, and improper individuals to rule (raw/1776ThomasPaine.pdf p.6-10).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0081"
+      ]
+    },
+    {
+      "bullet_text": "Paine argues that hereditary succession has led to civil wars and instability, citing England's history (raw/1776ThomasPaine.pdf p.6-10).",
+      "covered_source_claims": [
+        "source-claim-unit-0002-0107"
+      ]
+    }
+  ],
+  "source_record_text": "Thomas Paine's 'Document' from '1776ThomasPaine.pdf' (pages 6-10) argues against monarchy and hereditary succession, using biblical references and historical examples to support his position."
+}

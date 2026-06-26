@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Reconciliation with Britain is a 'falacious dream' and leads to ruin for the continent, (raw/1776ThomasPaine.pdf p.11-15).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0105"
+      ]
+    },
+    {
+      "bullet_text": "Britain's interest lies in suppressing American growth, and continued connection would lead to ruin, (raw/1776ThomasPaine.pdf p.11-15).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0011"
+      ]
+    },
+    {
+      "bullet_text": "The only way to ensure peace and prevent civil wars is through independence and a continental form of government, (raw/1776ThomasPaine.pdf p.11-15).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0051"
+      ]
+    },
+    {
+      "bullet_text": "Britain's actions have made any hope of reconciliation futile, (raw/1776ThomasPaine.pdf p.11-15).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0030"
+      ]
+    },
+    {
+      "bullet_text": "The only way to secure America's future is through independence and self-governance, (raw/1776ThomasPaine.pdf p.11-15).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0079"
+      ]
+    }
+  ],
+  "source_record_text": "This is the source summary for the 'Document' chapter of Thomas Paine's *Common Sense* (pages 11-15). It argues against reconciliation with Britain, emphasizing the unnaturalness of British rule over America, the dangers of dependence, and the necessity of separation for the continent's peace and prosperity."
+}

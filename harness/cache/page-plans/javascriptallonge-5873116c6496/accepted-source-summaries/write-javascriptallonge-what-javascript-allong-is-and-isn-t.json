@@ -1,24 +1,24 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript Allongé is a book about programming with functions, and from functions flow many ideas, from decorators to methods to delegation to mixins, and onwards in so many fruitful directions (raw/javascriptallonge.pdf p.10-11).",
+      "bullet_text": "JavaScript Allongé is a book about thinking about programs, focusing on underlying ideas and fundamentals to improve how we think about programs (raw/javascriptallonge.pdf p.10-12).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0006"
+        "source-claim-unit-0005-0008",
+        "source-claim-unit-0005-0006"
       ]
     },
     {
-      "bullet_text": "The focus in this book on the underlying ideas, what we might call the fundamentals, and how they combine to form new ideas, with the intention to improve the way we think about programs (raw/javascriptallonge.pdf p.10-11).",
+      "bullet_text": "The book is about programming with functions, exploring ideas from decorators to methods to delegation and mixins (raw/javascriptallonge.pdf p.10-12).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0002"
+        "source-claim-unit-0005-0004"
       ]
     },
     {
-      "bullet_text": "But while JavaScript Allongé attempts to be provocative, it is not prescriptive. There is absolutely no suggestion that any of the techniques shown here are the only way to do something, the best way, or even an acceptable way to write programs that are intended to be used, read, and maintained by others (raw/javascriptallonge.pdf p.10-11).",
+      "bullet_text": "While the book attempts to be provocative, it is not prescriptive, and does not suggest that any shown techniques are the only, best, or acceptable way to write programs (raw/javascriptallonge.pdf p.10-12).",
       "covered_source_claims": [
-        "source-claim-unit-0008-0004",
-        "source-claim-unit-0008-0007"
+        "source-claim-unit-0005-0009"
       ]
     }
   ],
-  "source_record_text": "JavaScript Allongé is a book about thinking about programs and programming with functions, focusing on underlying ideas and fundamentals. It is not prescriptive and does not suggest that any techniques shown are the only, best, or acceptable way to write programs. The book emphasizes thinking over practice and does not address broader software development best practices."
+  "source_record_text": "JavaScript Allongé is a book about thinking about programs and programming with functions. It focuses on underlying ideas and fundamentals, aiming to improve how we think about programs. It is not prescriptive and does not suggest that any techniques shown are the only, best, or even acceptable way to write programs."
 }

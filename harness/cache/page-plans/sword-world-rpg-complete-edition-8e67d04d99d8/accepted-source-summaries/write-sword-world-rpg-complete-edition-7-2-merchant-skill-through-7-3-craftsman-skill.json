@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Merchant skill is related to trade and allows adventurers to sell items in shops or on the street (raw/Sword World RPG - Complete Edition.pdf p.125-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0060-0014"
+      ]
+    },
+    {
+      "bullet_text": "Merchants are issued a merchant's pass by the king, which allows them to open a shop in public (raw/Sword World RPG - Complete Edition.pdf p.125-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0015"
+      ]
+    },
+    {
+      "bullet_text": "Holders of the merchant skill have abilities including Value Check and Negotiation (raw/Sword World RPG - Complete Edition.pdf p.125-125).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0008"
+      ]
+    },
+    {
+      "bullet_text": "The merchant skill allows for a check to determine the value of items within their specialty (raw/Sword World RPG - Complete Edition.pdf p.126-126).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0007"
+      ]
+    },
+    {
+      "bullet_text": "The craftsman skill involves creating items by hand, with quality depending on the craftsman's skill level (raw/Sword World RPG - Complete Edition.pdf p.126-126).",
+      "covered_source_claims": [
+        "source-claim-unit-0061-0003"
+      ]
+    }
+  ],
+  "source_record_text": "This section covers the rules for merchant and craftsman skills in the Sword World RPG - Complete Edition, detailing the abilities and mechanics of trading and crafting."
+}

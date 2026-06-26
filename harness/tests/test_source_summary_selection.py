@@ -161,6 +161,64 @@ def test_source_summary_focus_ignores_very_late_strong_overlap() -> None:
     assert not all("Androscorpio" in claim.statement for claim in selected)
 
 
+def test_source_summary_broad_catalog_spreads_selected_claims() -> None:
+    raw_source = RawSource.from_locator("book.pdf")
+    units = (
+        ExtractedUnit(
+            "unit-0001",
+            raw_source,
+            "p.76-79",
+            "Ancient Magic List",
+            (
+                "Vision improves sight over long distances.\n\n"
+                "Flight lets the caster fly at travel speed.\n\n"
+                "Blizzard creates an ice storm that deals cold damage.\n\n"
+                "Acid Cloud creates acidic gas in an area.\n\n"
+                "Geas imposes a magical prohibition on a target.\n\n"
+                "Create Undead animates a corpse as an undead servant.\n\n"
+                "Teleport moves targets to a visible or familiar place.\n\n"
+                "Full Potential raises several physical scores.\n\n"
+                "Blade Net catches a target in cutting strands.\n\n"
+                "Bend Bar warps a bar-shaped object.\n\n"
+                "Polymorph changes a target into an animal form.\n\n"
+                "Magic Reflection reflects magic cast on the caster.\n\n"
+                "Analyze Enchantment identifies power placed on an object.\n\n"
+                "Geas pain punishes a target who violates a command.\n\n"
+                "Create Undead requires a corpse for the servant.\n\n"
+                "See-Through lets the caster inspect a blocked area.\n\n"
+                "Seal Enchantment hides power on an object.\n\n"
+                "Steal Mind transfers mental power from a target.\n\n"
+                "Slow halves a target's agility for its duration.\n\n"
+                "Haste doubles a target's agility for its duration.\n\n"
+                "Rune Rope binds a target with invisible force.\n\n"
+                "Dispel Order removes command effects from a target.\n\n"
+                "Telekinesis moves an object by concentration.\n\n"
+                "Magic Staff creates a mage staff for ancient spell work.\n\n"
+                "A wooden staff can become a mage staff with this spell.\n\n"
+                "The spell can create another magical catalyst instead of a staff."
+            ),
+            "ok",
+        ),
+    )
+    claims = source_claims(units, Schema())
+    contract = resolve_page_body_contract(contract_for_page_kind(Schema(), "source"))
+
+    plan = source_summary_plan(
+        page_id="book-ancient-magic-list-3",
+        contract=contract,
+        claims=claims,
+        groups=source_claim_groups(claims),
+    )
+    assert plan is not None
+
+    selected = _selected_claims(claims, plan.selected_source_claims)
+    selected_text = " ".join(claim.statement for claim in selected)
+    assert len(selected) == 5
+    assert "Vision" in selected_text or "Flight" in selected_text
+    assert "Magic Staff" in selected_text
+    assert sum("staff" in claim.statement.lower() for claim in selected) < 3
+
+
 def test_source_summary_selection_skips_low_centrality_worked_examples() -> None:
     raw_source = RawSource.from_locator("book.pdf")
     units = (

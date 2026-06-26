@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Projectile weapons have limits on firing frequency based on preparation time and weapon type (raw/Sword World RPG - Complete Edition.pdf p.263-263).",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0012"
+      ]
+    },
+    {
+      "bullet_text": "Armor modifiers affect evasion speed, defense power, and critical target changes, with metal armor reducing critical chances (raw/Sword World RPG - Complete Edition.pdf p.263-263).",
+      "covered_source_claims": [
+        "source-claim-unit-0120-0001"
+      ]
+    },
+    {
+      "bullet_text": "Projectile bonus damage is calculated as skill level plus (bow's required strength divided by 6, rounded down) (raw/Sword World RPG - Complete Edition.pdf p.263-263).",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0020"
+      ]
+    },
+    {
+      "bullet_text": "GMs can control dice results in emergencies to aid storytelling, and double ones or sixes do not automatically result in failure/success for characters (raw/Sword World RPG - Complete Edition.pdf p.261-261).",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0022"
+      ]
+    },
+    {
+      "bullet_text": "Weapon modifiers quantify differences in weapons and armor, with attack and strike power modifiers affecting combat outcomes (raw/Sword World RPG - Complete Edition.pdf p.262-262).",
+      "covered_source_claims": [
+        "source-claim-unit-0119-0001"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 16.1-16.3 of Sword World RPG covers combat mechanics where monsters roll dice, weapon and armor modifiers, and projectile bonus damage."
+}

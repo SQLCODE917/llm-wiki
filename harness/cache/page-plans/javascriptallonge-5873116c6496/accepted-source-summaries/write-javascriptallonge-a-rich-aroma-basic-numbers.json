@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Internally, both 042 and 34 have the same representation, as double-precision floating point numbers. (raw/javascriptallonge.pdf p.24-25)",
+      "bullet_text": "JavaScript has literals for atomic values such as integers, floating-point numbers, and strings, (raw/javascriptallonge.pdf p.24-27)",
       "covered_source_claims": [
-        "source-claim-unit-0021-0011"
+        "source-claim-unit-0012-0019"
       ]
     },
     {
-      "bullet_text": "A computer's internal representation for numbers is important to understand. (raw/javascriptallonge.pdf p.24-25)",
+      "bullet_text": "A literal like 42 represents the number forty-two, which is 42 base 10, (raw/javascriptallonge.pdf p.24-27)",
       "covered_source_claims": [
-        "source-claim-unit-0021-0012"
+        "source-claim-unit-0012-0014"
       ]
     },
     {
-      "bullet_text": "The machine's representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer's behaviour surprises us if we don't know a little about what it's doing 'under the hood.' (raw/javascriptallonge.pdf p.24-25)",
+      "bullet_text": "Internally, numbers are represented as double-precision floating point numbers, (raw/javascriptallonge.pdf p.24-27)",
       "covered_source_claims": [
-        "source-claim-unit-0021-0013"
+        "source-claim-unit-0012-0013"
       ]
     },
     {
-      "bullet_text": "We saw that an expression consisting solely of numbers, like 42 , is a literal. (raw/javascriptallonge.pdf p.24-25)",
+      "bullet_text": "The largest integer JavaScript can safely handle is 9007199254740991, or 2^53 - 1, (raw/javascriptallonge.pdf p.24-27)",
       "covered_source_claims": [
-        "source-claim-unit-0021-0005"
+        "source-claim-unit-0012-0006"
       ]
     },
     {
-      "bullet_text": "Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. (raw/javascriptallonge.pdf p.24-25)",
+      "bullet_text": "Floating point numbers can lead to inexactitude, such as 0.1 + 0.1 + 0.1 not equaling 0.3, (raw/javascriptallonge.pdf p.24-27)",
       "covered_source_claims": [
-        "source-claim-unit-0021-0002"
+        "source-claim-unit-0012-0031"
       ]
     }
   ],
-  "source_record_text": "Chapter on basic numbers in JavaScriptAllonge, covering literals, representations, and numeric types."
+  "source_record_text": "This chapter covers literals, number representations, and basic operations in JavaScript."
 }

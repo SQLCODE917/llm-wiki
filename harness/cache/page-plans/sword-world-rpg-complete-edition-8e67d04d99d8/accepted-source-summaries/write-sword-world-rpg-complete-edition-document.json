@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "The document outlines the structure of Sword World RPG - Complete Edition, including its key sections and parts (raw/Sword World RPG - Complete Edition.pdf p.1-3)",
+      "bullet_text": "The rulebook is divided into three main sections: Player’s Section, Game Master’s Section, and Optional Rules (raw/Sword World RPG - Complete Edition.pdf p.1-3).",
       "covered_source_claims": [
         "source-claim-unit-0001-0002"
       ]
     },
     {
-      "bullet_text": "The document includes rules for unconsciousness, death, and damage recovery (raw/Sword World RPG - Complete Edition.pdf p.1-3)",
+      "bullet_text": "Key sections include character creation, combat rounds, weapon combat, magic, and adventurers’ skills (raw/Sword World RPG - Complete Edition.pdf p.1-3).",
       "covered_source_claims": [
         "source-claim-unit-0001-0011"
       ]
     },
     {
-      "bullet_text": "The document details the parts of the RPG, including player and game master sections (raw/Sword World RPG - Complete Edition.pdf p.1-3)",
+      "bullet_text": "Magic includes basic rules, runes, and spellsongs (raw/Sword World RPG - Complete Edition.pdf p.1-3).",
       "covered_source_claims": [
-        "source-claim-unit-0001-0008"
+        "source-claim-unit-0001-0032"
+      ]
+    },
+    {
+      "bullet_text": "Special monsters are represented using character data (raw/Sword World RPG - Complete Edition.pdf p.1-3).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0039"
+      ]
+    },
+    {
+      "bullet_text": "Projectile bonuses are used in magic (raw/Sword World RPG - Complete Edition.pdf p.1-3).",
+      "covered_source_claims": [
+        "source-claim-unit-0001-0053"
       ]
     }
   ],
-  "source_record_text": "This is a summary of the Sword World RPG - Complete Edition document, detailing its structure and key sections."
+  "source_record_text": "This is a summary of the Sword World RPG - Complete Edition rulebook, focusing on its structure and key rule sections as presented in the first three pages."
 }

@@ -2,92 +2,119 @@
 page_id: javascriptallonge-garbage-garbage-everywhere
 page_kind: source
 summary: Garbage, Garbage Everywhere from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.126-128
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.126-131
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This chapter explains tail‑call recursion for array mapping, the memory cost of temporary arrays, and contrasts JavaScript arrays with Lisp linked lists, noting possible performance drawbacks.
+Chapter on garbage collection and memory efficiency in JavaScript, focusing on array operations and linked lists.
 
 ## Key supported claims
 
-- In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using (raw/javascriptallonge.pdf p.126-128).
-- Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another (raw/javascriptallonge.pdf p.126-128).
-- Lather, rinse, repeat: Every time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend (raw/javascriptallonge.pdf p.126-128).
-- It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made (raw/javascriptallonge.pdf p.126-128).
+- Tail calls can optimize space complexity in recursion, but array operations still create temporary arrays that slow performance (raw/javascriptallonge.pdf p.126-131).
+- JavaScript engines copy elements from prepend into new arrays one at a time, causing performance issues (raw/javascriptallonge.pdf p.126-131).
+- Although maximum memory usage doesn't grow, thrashing from creating short-lived arrays is very bad (raw/javascriptallonge.pdf p.126-131).
 
 ## Technical details
 
-### `technical-atom-bb88808ab8488fcf` code
+### `technical-atom-62490a3bbc959661` code
 
-Citation: (raw/javascriptallonge.pdf p.126-128)
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
 ```javascript
-const mapWith = (fn, [first, ...rest], prepend = []) => first === undefined ? prepend : mapWith(fn, rest, [...prepend, fn(first)]); mapWith((x) => x * x, [1, 2, 3, 4, 5]) //=> [1,4,9,16,25]
+const mapWith = (fn, [first, ...rest], prepend = []) => first === undefined
 ```
 
-### `technical-atom-41b060c77014dd3f` procedure
+### `technical-atom-4932e72b63b0cca4` code
 
-Citation: (raw/javascriptallonge.pdf p.126-128)
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
-To do that, we take the array in prepend and push fn(first) onto the end, creating a new array that will be passed to the next invocation of mapWith .
+```javascript
+const cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
+```
 
-### `technical-atom-5d1ebb19d843b288` procedure
+### `technical-atom-717620cb945b2f2b` code
 
-Citation: (raw/javascriptallonge.pdf p.126-128)
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
-Lather, rinse, repeat: Ever time we call mapWith , we're creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend .
+```javascript
+const oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, null)))));
+```
 
-### `technical-atom-ebf22f50d193ae3e` procedure
+### `technical-atom-3978516b212d960e` code
 
-Citation: (raw/javascriptallonge.pdf p.126-128)
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
-Key Point : Our [first, ...rest] approach to recursion is slow because that it creates a lot of temporary arrays, and it spends an enormous amount of time copying elements into arrays that end up being discarded.
+```javascript
+const node5 = [5, null], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2];
+```
 
-### `technical-atom-426a230840ec0066` exception
+### `technical-atom-8afbe5215498425b` code
 
-Citation: (raw/javascriptallonge.pdf p.126-128)
+Citation: (raw/javascriptallonge.pdf p.126-131)
+
+```javascript
+const oneToFive = node1;
+```
+
+### `technical-atom-a24d087be687a36f` procedure
+
+Citation: (raw/javascriptallonge.pdf p.126-131)
+
+To do that, we take the array in prepend and push fn(first) onto the end, creating a new array that will be passed to the next invocation of mapWith.
+
+### `technical-atom-e1f6f1e8503dc617` procedure
+
+Citation: (raw/javascriptallonge.pdf p.126-131)
+
+Lather, rinse, repeat: Ever time we call mapWith, we’re creating a new array, copying all the elements from prepend into the new array, and then we no longer use prepend.
+
+### `technical-atom-4551df707589c382` exception
+
+Citation: (raw/javascriptallonge.pdf p.126-131)
 
 Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another.
 
-### `technical-atom-ff30dd9aed90995c` exception
-
-Citation: (raw/javascriptallonge.pdf p.126-128)
-
-64 It needn't always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made.
-
 ## Related technical details
 
-### From [[javascriptallonge-converting-non-tail-calls-to-tail-calls]]: `technical-atom-0cbba5b5d2e15ff8` exception
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-b4bbdc6766be3fad` code
 
-Relation: nearby source page; matched terms `call`, `does`, `function`, `make`, `not`, `programmers`
+Relation: nearby source page; matched terms `but`, `calls`, `can`, `function`, `javascript`, `tail`
 
-Citation: (raw/javascriptallonge.pdf p.120-121)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
-And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization.
+```javascript
+There are three places it returns. The first two don’t return anything, they don’t matter. But the third is fn.apply(this, args). This is a tail-call, because it invokes another function and returns its result. This is interesting, because after sorting out what to supply as arguments (this, args), JavaScript can throw away everything in its current stack frame. It isn’t going to do any more work, so it can throw its existing stack frame away.
+```
 
-### From [[javascriptallonge-some-history]]: `technical-atom-04ba09a2311c5fc1` exception
+### From [[javascriptallonge-self-similarity]]: `technical-atom-940ab647a8cf16dd` code
 
-Relation: nearby source page; matched terms `all`, `array`, `elements`, `javascript`, `linked`
+Relation: nearby source page; matched terms `array`, `arrays`, `but`, `very`
 
-Citation: (raw/javascriptallonge.pdf p.128-130)
+Citation: (raw/javascriptallonge.pdf p.109-116)
 
-In JavaScript, it's still much, much, much faster to get all the elements except the head from a linked list than from an array.
+```javascript
+> 61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples. A more robust implementation would be (array) => array.length === 0, but we are doing backflips to keep this within a very small and contrived playground.
+```
 
-### From [[javascriptallonge-factorials]]: `technical-atom-6d9212df7fc2c4c0` procedure
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-ff6f64bd417071bb` code
 
-Relation: nearby source page; matched terms `function`, `make`, `one`, `procedure`, `then`, `used`
+Relation: nearby source page; matched terms `calls`, `function`, `tail`
 
-Citation: (raw/javascriptallonge.pdf p.121-123)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
-Asbefore, we wrote a factorialWithDelayedWork function, then used partial application ( callLast ) to make a factorial function that took just the one argument and supplied the initial work value.
+```javascript
+const mapWith = function (fn, [first, ...rest]) { if (first === undefined) { return []; } else { const _temp1 = fn(first), _temp2 = mapWith(fn, rest), _temp3 = [_temp1, ..._temp2]; return _temp3; } }
+```
 
-### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-d529e9b6bf45d57d` exception
+### From [[javascriptallonge-tail-calls-and-default-arguments]]: `technical-atom-9465e3814b7a9872` code
 
-Relation: nearby source page; matched terms `data`, `javascript`, `lists`, `not`, `only`, `very`
+Relation: nearby source page; matched terms `calls`, `function`, `tail`
 
-Citation: (raw/javascriptallonge.pdf p.132)
+Citation: (raw/javascriptallonge.pdf p.117-125)
 
-Lists are not the only way to represent collections of things, but they are the 'oldest' data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer.
+```javascript
+A “tail-call” occurs when a function’s last act is to invoke another function, and then return whatever the other function returns. For example, consider the maybe function decorator:
+```

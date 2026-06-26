@@ -2,103 +2,102 @@
 page_id: sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details
 page_kind: source
 summary: 5.1.10 How to Read Magic Details from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.65-67
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.65-65
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section explains how to read magic details in the Sword World RPG. It covers illusion magic, ritual magic, and lost spells.
+Section 5.1.10 of the Sword World RPG - Complete Edition, detailing how to read magic details, types of senses, illusion detection, ritual magic, and lost spells.
 
 ## Key supported claims
 
-- Illusion magic affects five senses or pseudo senses, but not magic senses. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Illusions can be detected by resistance rolls if the target suspects them, and these rolls can only be made once. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Ritual magic enhances spell effects through preparation over days, with bonuses calculated as days times participants. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Lost spells are ancient magic known only to a limited number of sorcerers, lost with the fall of the ancient kingdom. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
-- Magic details include Base Mental Power Cost, Distance, Area, Duration, Effect, Type, Expansion, and Resist. (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+- Illusions affect those with five senses or pseudo senses, but not magic senses (raw/Sword World RPG - Complete Edition.pdf p.65-65).
+- Illusion detection requires suspicion and a resistance roll, usable only once (raw/Sword World RPG - Complete Edition.pdf p.65-65).
+- Ritual magic increases spell final score through days and participants, with no limit on increase (raw/Sword World RPG - Complete Edition.pdf p.65-65).
+- Lost spells are known only to a limited number of sorcerers, decided by the game master (raw/Sword World RPG - Complete Edition.pdf p.65-65).
 
 ## Technical details
 
-### `technical-atom-364cd8b7b3de0529` formula
+### `technical-atom-221f885eab813709` formula
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 Base Mental Power Cost=0
 
-### `technical-atom-a518ac04256dd681` formula
+### `technical-atom-e1c80038925662d7` formula
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 Distance=Caster
 
-### `technical-atom-d9a6edc23fc51347` formula
+### `technical-atom-6c4257ececeb9e12` formula
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 Duration=Until you forget the contents Effect=Understand how to read magic details Type=Non-removable Expansion=Resist=None
 
-### `technical-atom-c053cb99c91d1d9e` requirement
+### `technical-atom-7e8b2a6c91715567` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 However, in order to do this, you must first be suspicious of the illusion.
 
-### `technical-atom-5063c4850d71d43d` requirement
+### `technical-atom-05830ea6da975487` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 The game master should decide in which cases it seems suspicious.
 
-### `technical-atom-70221652063448a0` requirement
+### `technical-atom-fb9c13785d12f9c2` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 For NPCs and monsters, the game master should decide based on their intelligence.
 
-### `technical-atom-2961badbac474747` exception
+### `technical-atom-8acd2fae4519c6be` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 If the target does not have the senses to deceive, this spell will have no effect at all.
 
-### `technical-atom-b74462b44b55962f` worked-example
+### `technical-atom-ffdc18d64a8acb7e` worked-example
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.65-67)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.65)
 
 For example, suppose a fake floor is created above a pit using a _Create Image_ (ancient magic) spell.
 
 ## Related technical details
 
-### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-383d28a3555bcd0e` formula
+### From [[sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion]]: `technical-atom-4ea567e9fc3f6194` procedure
 
-Relation: nearby source page; matched terms `ancient`, `area`, `base`, `cost`, `distance`, `duration`
+Relation: nearby source page; matched terms `final`, `magic`, `resistance`, `roll`, `score`, `target`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.60-61)
 
-Base Mental Power Cost=3 Distance=10 meters Area=One weapon Duration=18 Rounds Effect=+5 to weapon's strike power Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
+Each resisting side must then make a mental power resistance roll, using that determined final score as the target score.
 
-### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-7efb0d3c4c9df5ba` formula
+### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-4]]: `technical-atom-2a2f3ceee72d1d77` formula
 
-Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `distance`, `magic`, `mental`
+Relation: nearby source page; matched terms `duration`, `final`, `illusion`, `magic`, `only`, `score`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.80-82)
 
-Base Mental Power Cost=3 Distance=10 meters
+Effect=Attacks with an illusionary beast that can only be seen by the target Type=Illusion, target score Expansion=Final score, duration, distance, targets Resist=Negated effect
 
-### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-f4b14de1efb431cc` formula
+### From [[sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion]]: `technical-atom-5b4fb237b04a4828` requirement
 
-Relation: nearby source page; matched terms `ancient`, `area`, `distance`, `duration`, `effect`, `expansion`
+Relation: nearby source page; matched terms `magic`, `resistance`, `roll`, `score`, `target`, `three`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.60-61)
 
-Area=One Duration=18 rounds Effect=+2 to mental power resistance Type=Expansion=Duration, distance, targets Resist=None
+If we assume his 2D roll is _8_ , each of the three adventurers must make a mental power resistance roll, with a target score of 5 (magic power) + 8 (roll) = _13_ .
 
-### From [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]]: `technical-atom-cde0c22bdac46d21` formula
+### From [[sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion]]: `technical-atom-58931ad2f3f29bb9` procedure
 
-Relation: nearby source page; matched terms `ancient`, `base`, `cost`, `magic`, `mental`, `power`
+Relation: nearby source page; matched terms `final`, `magic`, `only`, `score`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.68-82)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.60-61)
 
-Base Mental Power Cost=3
+The final score (magic power + 2D) must then be determined this one time only.

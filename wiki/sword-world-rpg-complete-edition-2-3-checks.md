@@ -2,101 +2,107 @@
 page_id: sword-world-rpg-complete-edition-2-3-checks
 page_kind: source
 summary: 2.3 Checks from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.30-33
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.30-30
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section explains checks in Sword World RPG, including baseline scores, target scores, success rolls, automatic success/failure, bonuses/penalties, difficulty checks, and resistance rolls. Some aspects are unknown.
+This section explains how baseline scores, target scores, and checks are determined in the Sword World RPG.
 
 ## Key supported claims
 
-- Baseline score is relevant skill level + ability bonus (raw/Sword World RPG - Complete Edition.pdf p.30-33).
-- Target score represents difficulty, set by game master (raw/Sword World RPG - Complete Edition.pdf p.30-33).
-- Success roll 2D + baseline score ≥ target score (raw/Sword World RPG - Complete Edition.pdf p.30-33).
+- Baseline score is skill level plus ability bonus, e.g., 2 + 2 = 4 (raw/Sword World RPG - Complete Edition.pdf p.30-30).
+- Target score reflects action difficulty, set by Game Master (raw/Sword World RPG - Complete Edition.pdf p.30-30).
+- Check is 2D + baseline score; must meet or exceed target score to succeed (raw/Sword World RPG - Complete Edition.pdf p.30-30).
+- Final score is 2D + baseline score (raw/Sword World RPG - Complete Edition.pdf p.30-30).
+- Automatic success and failure rules override normal check outcomes (raw/Sword World RPG - Complete Edition.pdf p.30-30).
 
 ## Technical details
 
-### `technical-atom-0393bdd263c44dd9` formula
+### `technical-atom-aca34f5316b6eb6f` formula
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 **baseline score** = relevant skill level + ability bonus
 
-### `technical-atom-288756077cf41ee1` procedure
+### `technical-atom-4a897cf830c5cb7e` procedure
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 Once the baseline score and target score are determined, a success roll **check** can finally be made.
 
-### `technical-atom-7e619f93c1fe5eb0` requirement
+### `technical-atom-44d0eb38dc6b49dc` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 In other words, we must roll two dice, add 4 to the result, and if the total is _10 or more_ , we’ll hit the target.
 
-### `technical-atom-3e7690d9c0b59e87` requirement
+### `technical-atom-eaf5b070373e16b6` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 The player must roll two dice and add their baseline score to the roll.
 
-### `technical-atom-4ad8cc8dfbcbdbe8` exception
+### `technical-atom-b0daaf7d2867598e` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 Fighter is only useful in combat.
 
-### `technical-atom-a86a4e84a21af189` exception
+### `technical-atom-4b035ccc41fd9c75` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 However, the success of an action is not only related to the ability of the person attempting it, but also to the difficulty of the action itself.
 
-### `technical-atom-9c54491dedd45a3b` worked-example
+### `technical-atom-761ca1f68658c484` worked-example
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 For example, if you want to hit an enemy with your sword, it is important to have dexterity to wield it accurately.
 
-### `technical-atom-0bb3fe1eadc87a2b` worked-example
+### `technical-atom-44025ab9d2b22198` worked-example
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.30-33)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.30)
 
 For example, if the player wields a sword, their fighter skill level is used for
 
 ## Related technical details
 
-### From [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]: `technical-atom-82520b9fd78843e7` formula
+### From [[sword-world-rpg-complete-edition-2-5-difficulty-checks]]: `technical-atom-5008bf99159e6286` code
 
-Relation: nearby source page; matched terms `bonus`, `level`, `skill`
+Relation: nearby source page; matched terms `action`, `baseline`, `bonus`, `checks`, `difficulty`, `final`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.31-32)
 
-**bonus damage** = fighter (thief/ranger) skill level + strength bonus
+```
+final score {baseline score + 2D ± (bonus, penalty)} ≥ target score → action is successful
+```
 
-### From [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]: `technical-atom-d413339cac5141a8` formula
+### From [[sword-world-rpg-complete-edition-2-5-difficulty-checks]]: `technical-atom-98b6e72e6cf06f96` code
 
-Relation: nearby source page; matched terms `bonus`, `level`, `skill`
+Relation: nearby source page; matched terms `action`, `baseline`, `bonus`, `checks`, `difficulty`, `final`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.31-32)
 
-**attack power** = fighter (thief/ranger) skill level + dexterity bonus
+```
+final score {baseline score + 2D ± (bonus, penalty)} < target score → action failed
+```
 
-### From [[sword-world-rpg-complete-edition-3-4-movement-and-actions]]: `technical-atom-a4195d712b5c6791` formula
+### From [[sword-world-rpg-complete-edition-2-5-difficulty-checks]]: `technical-atom-f65f91d285945e19` procedure
 
-Relation: nearby source page; matched terms `bonus`, `level`, `skill`
+Relation: nearby source page; matched terms `checks`, `difficulty`, `game`, `master`, `procedure`, `score`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.37-42)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.31-32)
 
-**evasion speed** = fighter (thief) skill level + agility bonus
+The game master then declares the target score to be _12_ .
 
-### From [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]]: `technical-atom-37385606803cda5f` requirement
+### From [[sword-world-rpg-complete-edition-2-5-difficulty-checks]]: `technical-atom-a5e2b14e49c58025` procedure
 
-Relation: nearby source page; matched terms `checks`, `must`, `requirement`, `roll`
+Relation: nearby source page; matched terms `checks`, `difficulty`, `failure`, `however`, `not`, `procedure`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.50-56)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.31-32)
 
-You must roll the dice to determine if your character survives.
+However, if such a process is _not_ specified, it is _not_ treated as a definitive success/failure.

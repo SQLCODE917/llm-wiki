@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Wolves are carnivorous and usually act in packs, attacking unsuspecting animals (raw/Sword World RPG - Complete Edition.pdf p.199-202)",
+      "covered_source_claims": [
+        "source-claim-unit-0096-0006"
+      ]
+    },
+    {
+      "bullet_text": "Rarely, wolf cubs are captured and domesticated as hunting dogs (raw/Sword World RPG - Complete Edition.pdf p.199-202)",
+      "covered_source_claims": [
+        "source-claim-unit-0096-0008"
+      ]
+    },
+    {
+      "bullet_text": "Such wolves have greater morals than normal ones (raw/Sword World RPG - Complete Edition.pdf p.199-202)",
+      "covered_source_claims": [
+        "source-claim-unit-0096-0009"
+      ]
+    }
+  ],
+  "source_record_text": "This section covers various animals and monsters in the Sword World RPG setting, including wolves, giant rats, hanger legs, eagles, and others."
+}

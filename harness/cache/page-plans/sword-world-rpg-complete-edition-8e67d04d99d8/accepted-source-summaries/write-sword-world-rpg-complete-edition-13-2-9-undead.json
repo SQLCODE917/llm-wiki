@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Undead are created from corpses using ancient or dark magic, with varying intelligence and behaviors (raw/Sword World RPG - Complete Edition.pdf p.214-217).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0042"
+      ]
+    },
+    {
+      "bullet_text": "Some undead, like zombies and skeletons, are created through magic and obey commands, while others, like ghouls and wights, have more complex abilities (raw/Sword World RPG - Complete Edition.pdf p.214-217).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0071"
+      ]
+    },
+    {
+      "bullet_text": "Characters can cast the spell _Turn Undead_ to affect certain undead creatures (raw/Sword World RPG - Complete Edition.pdf p.214-217).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0095"
+      ]
+    },
+    {
+      "bullet_text": "Some undead, such as ash, are created from burned corpses and have unique physical characteristics (raw/Sword World RPG - Complete Edition.pdf p.214-217).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0079"
+      ]
+    },
+    {
+      "bullet_text": "Undead creatures can possess living beings, with different resistance scores for possession attempts (raw/Sword World RPG - Complete Edition.pdf p.214-217).",
+      "covered_source_claims": [
+        "source-claim-unit-0100-0110"
+      ]
+    }
+  ],
+  "source_record_text": "This section details various types of undead creatures found in the Sword World RPG, including their characteristics, abilities, and behaviors."
+}

@@ -1,15 +1,9 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "A role-playing game (RPG) is a game where participants play out assigned roles (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
+      "bullet_text": "A role-playing game (RPG) progresses by participants playing assigned roles, as the name suggests (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
       "covered_source_claims": [
         "source-claim-unit-0003-0005"
-      ]
-    },
-    {
-      "bullet_text": "The game is divided into a game master (GM) and players, with only one GM overseeing several players (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
-      "covered_source_claims": [
-        "source-claim-unit-0003-0009"
       ]
     },
     {
@@ -19,17 +13,23 @@
       ]
     },
     {
-      "bullet_text": "The name 'role-playing game' comes from the act of playing out roles (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
+      "bullet_text": "The game master prepares a scenario, which players then act out through their characters (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
       "covered_source_claims": [
-        "source-claim-unit-0003-0002"
+        "source-claim-unit-0003-0009"
       ]
     },
     {
-      "bullet_text": "Players make choices that affect the story, and outcomes are uncertain due to random elements like dice rolls (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
+      "bullet_text": "Players do not know the scenario details; they only know their characters, and must act based on their abilities (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
       "covered_source_claims": [
         "source-claim-unit-0003-0003"
       ]
+    },
+    {
+      "bullet_text": "Outcomes are uncertain and determined by player choices and random numbers, such as dice rolls (raw/Sword World RPG - Complete Edition.pdf p.5-5).",
+      "covered_source_claims": [
+        "source-claim-unit-0003-0002"
+      ]
     }
   ],
-  "source_record_text": "This section defines role-playing games and outlines the basic structure of gameplay in the Sword World RPG, including the roles of game masters and players, the use of scenarios, and the integration of player choice and random elements."
+  "source_record_text": "A summary of the 'What is a Role-Playing Game (RPG)?' section from the Sword World RPG - Complete Edition rulebook."
 }

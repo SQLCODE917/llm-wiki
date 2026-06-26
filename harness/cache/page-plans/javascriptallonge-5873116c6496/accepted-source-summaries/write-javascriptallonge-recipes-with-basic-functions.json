@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Functions returning functions are a key theme. (raw/javascriptallonge.pdf p.79-79)",
+      "bullet_text": "Functions that return functions are a key focus of this chapter (raw/javascriptallonge.pdf p.79-79).",
       "covered_source_claims": [
-        "source-claim-unit-0071-0002"
+        "source-claim-unit-0023-0003"
       ]
     },
     {
-      "bullet_text": "The chapter begins with a metaphor about cleaning implements. (raw/javascriptallonge.pdf p.79-79)",
+      "bullet_text": "The recipes are written for practicality, and may use JavaScript features not yet discussed (raw/javascriptallonge.pdf p.79-79).",
       "covered_source_claims": [
-        "source-claim-unit-0071-0001"
+        "source-claim-unit-0023-0004"
       ]
     },
     {
-      "bullet_text": "Practical recipes focus on functions that return functions. (raw/javascriptallonge.pdf p.79-79)",
+      "bullet_text": "Overall, the use of each recipe will fit within the spirit of the language discussed so far (raw/javascriptallonge.pdf p.79-79).",
       "covered_source_claims": [
-        "source-claim-unit-0071-0002"
+        "source-claim-unit-0023-0005"
       ]
     }
   ],
-  "source_record_text": "Recipes with basic functions, a chapter that covers partial application, a unary, and other practical recipes for functions that return functions."
+  "source_record_text": "Having looked at basic pure functions and closures, we’re going to see some practical recipes that focus on the premise of functions that return functions."
 }

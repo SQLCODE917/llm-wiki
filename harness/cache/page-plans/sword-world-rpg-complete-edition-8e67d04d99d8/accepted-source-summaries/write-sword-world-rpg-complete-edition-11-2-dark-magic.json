@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Dark magic uses power of wicked gods such as Phalaris, feared and hated by public (raw/Sword World RPG - Complete Edition.pdf p.142-146).",
+      "covered_source_claims": [
+        "source-claim-unit-0076-0012"
+      ]
+    },
+    {
+      "bullet_text": "Only priests of Phalaris are sometimes called dark priests, believers in other wicked gods rare (raw/Sword World RPG - Complete Edition.pdf p.142-146).",
+      "covered_source_claims": [
+        "source-claim-unit-0076-0013"
+      ]
+    },
+    {
+      "bullet_text": "Dark magic origin same as holy magic, but dark priests use wicked magic not allowed by light gods (raw/Sword World RPG - Complete Edition.pdf p.142-146).",
+      "covered_source_claims": [
+        "source-claim-unit-0076-0014"
+      ]
+    }
+  ],
+  "source_record_text": "Dark magic draws its power from wicked gods, such as Phalaris, and is feared and hated by the general public due to historical associations with slavery and oppression. Dark priests are practitioners of dark magic, and in a narrow sense, only the priests of Phalaris are sometimes called dark priests. Dark magic has the same origin as holy magic, and dark priests can use most basic holy magic. However, they also have access to wicked magic not allowed by gods of light and special dark magic unique to each god. Unknown aspects of dark magic exist."
+}

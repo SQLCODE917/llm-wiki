@@ -1,0 +1,30 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Lost spells are known only to a limited number of sorcerers, and can be learned by studying spellbooks or scrolls found in ruins, (raw/Sword World RPG - Complete Edition.pdf p.273-273).",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0016",
+        "source-claim-unit-0126-0019"
+      ]
+    },
+    {
+      "bullet_text": "Sorcerers who acquire lost spells must have a skill level equal to or greater than the spell's level to use it, (raw/Sword World RPG - Complete Edition.pdf p.273-273).",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0017"
+      ]
+    },
+    {
+      "bullet_text": "The table of lost spells includes Decrease Weight, Increase Weight, Bone Servant, Create Undead, Create Buau Zombie, Seal Enchantment, Steal Mind Magic, Reflection, Stun Cloud, Wraith Form, Dimension Gate, Perfect Cancellation, (raw/Sword World RPG - Complete Edition.pdf p.273-273).",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0025"
+      ]
+    },
+    {
+      "bullet_text": "Taking the full resistance action grants a +4 bonus to resistance rolls, but prohibits other actions and imposes a -4 penalty to evasion if hit by a physical attack, (raw/Sword World RPG - Complete Edition.pdf p.274-274).",
+      "covered_source_claims": [
+        "source-claim-unit-0126-0018"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 17.2 Lost Spells through 17.5 Full Resistance from Sword World RPG - Complete Edition, covering lost spells, magic procedures, monster magic, and full resistance."
+}

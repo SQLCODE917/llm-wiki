@@ -2,101 +2,180 @@
 page_id: sword-world-rpg-complete-edition-charts
 page_kind: source
 summary: Charts from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.294-311
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.294-310
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This page summarizes the charts and tables section from Sword World RPG - Complete Edition, covering skill abilities, ability scores, and equipment.
+This section presents various tables and charts for the Sword World RPG, covering skills, abilities, races, backgrounds, weapons, armor, and other game mechanics. (raw/Sword World RPG - Complete Edition.pdf p.294-310)
 
 ## Key supported claims
 
-- Thief skill abilities include Tumble, Lockpicking, and Acrobatics, with varying equipment restrictions and retry rules (raw/Sword World RPG - Complete Edition.pdf p.294-311).
-- Ranger skill abilities encompass Footprint Tracking, First Aid, and Camouflage, with specific retry rules and equipment requirements (raw/Sword World RPG - Complete Edition.pdf p.294-311).
-- Sage skill abilities such as Monster Check and Languages are not possible to retry, with specific ability score requirements (raw/Sword World RPG - Complete Edition.pdf p.294-311).
+- Thief skill abilities are detailed in a table (raw/Sword World RPG - Complete Edition.pdf p.294).
+- Ranger skill abilities are detailed in a table (raw/Sword World RPG - Complete Edition.pdf p.295).
+- Sage skill abilities are detailed in a table (raw/Sword World RPG - Complete Edition.pdf p.296).
+- Bard skill abilities are detailed in a table (raw/Sword World RPG - Complete Edition.pdf p.297).
+- Merchant skill abilities are detailed in a table (raw/Sword World RPG - Complete Edition.pdf p.298).
 
 ## Technical details
 
-### `technical-atom-8537cc8e7601dd50` table-row
+### `technical-atom-f4e06a9a3b042722` table
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.294)
+
+|**Tief Skill Abilities Table**||||
+|---|---|---|---|
+|Ability|Relevant AbilityScore|Equipment Restrictions|Retryinga success roll on the same target|
+|Tumble|Agility|Yes|No success roll is made|
+|Lockpicking|Dexterity|No|Not Possible|
+|Acrobatics|Agility|Yes|Possible|
+|Mnemonics|Intelligence|No|Not Possible|
+|Listen|Intelligence|Yes|Possible|
+|StealthyStep|Agility|Yes|Possible|
+|Pickpocket|Dexterity|Yes|Possible|
+|Hide|Agility|Yes|Possible|
+|Search|Intelligence|No|Not Possible|
+|Climb|Agility|Yes|Possible|
+|Special Combat|Dexterity, Agility, Strength|Yes|Possible|
+|Long Jump/HighJump|Agility|Yes|Possible|
+|Follow|Agility|Yes|Possible|
+|Disguise|Dexterity|No|Possible|
+|Treasure Appraisal|Intelligence|No|Not Possible|
+|Find/Sense Trap|Intelligence|No|Not Possible|
+|Remove/Set Trap|Dexterity|Yes|Not Possible|
+
+### `technical-atom-a14ab5b61cf05fc7` table
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.294)
 
 |Ability|Relevant AbilityScore|Equipment Restrictions|Retryinga success roll on the same target|
-
-### `technical-atom-406a418d23498f47` table-row
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-
-|Tumble|Agility|Yes|No success roll is made|
-
-### `technical-atom-5704684c33b6d144` table-row
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-
-|Lockpicking|Dexterity|No|Not Possible|
-
-### `technical-atom-7faa218e6685e45a` table-row
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-
-|Acrobatics|Agility|Yes|Possible|
-
-### `technical-atom-7fc466e646084993` table-row
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-
-|Mnemonics|Intelligence|No|Not Possible|
-
-### `technical-atom-a18144aa19b8b0e4` table-row
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-
+|---|---|---|---|
+|Footprint Tracking|Intelligence|No|Not Possible|
+|First Aid|-|No|No success roll is made|
+|Camoufage|Intelligence|Yes|Possible|
 |Listen|Intelligence|Yes|Possible|
-
-### `technical-atom-9543f1e5188fb8f1` table-row
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
-
+|Sense Danger|Intelligence|Yes|Possible|
 |StealthyStep|Agility|Yes|Possible|
+|Survivalism|Life Force|No|Possible|
+|Search|Intelligence|No|Not Possible|
+|MapCreation|Intelligence|No|Not Possible|
+|Weather Prediction|Intelligence|No|Not Possible|
+|Plant and Animal Check|Intelligence|No|Not Possible|
+|Projectile Use|Dexterity, Strength|No|Possible|
+|Follow|Agility|Yes|Possible|
+|Surprise Attack|Intelligence|No|Possible|
+|Find/Sense Trap|Intelligence|No|Not Possible|
+|Remove/Set Trap|Dexterity|Yes|Not Possible|
 
-### `technical-atom-7d2c74c5a892ea0c` table-row
+### `technical-atom-cb27e336544a7e4c` table
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.294-311)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.294)
 
-|Pickpocket|Dexterity|Yes|Possible|
+|**Sage Skill Abilities Table**|||
+|---|---|---|
+|Ability|Relevant AbilityScore|Retryinga success roll on the same target|
+|Monster Check|Intelligence|Not Possible|
+|Languages|Intelligence|Not Possible|
+|Astrology|Intelligence|Not Possible|
+|Knowledge|Intelligence|Not Possible|
+|Research|Intelligence|Not Possible|
+|Treasure Appraisal|Intelligence|Not Possible|
+|Medicines|Intelligence|(For appraisal only) Not Possible|
+
+### `technical-atom-2b99308276494819` table
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.295)
+
+|**Bard Skill Abilities Table**|||
+|---|---|---|
+|Ability|Relevant AbilityScore|Retryinga success roll on the same target|
+|Sing|Mental Power|Possible|
+|PlayInstrument|Dexterity|Possible|
+|Languages(Spoken)|Intelligence|Not Possible|
+|Spellsongs|Mental Power|Possible|
+|Folklore Knowledge|Intelligence|Not Possible|
+
+### `technical-atom-ff87eab4e826b993` table
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.295)
+
+|**Merchant Skill Abilities Table**|||
+|---|---|---|
+|Ability|Relevant AbilityScore|Retryinga success roll on the same target|
+|Value Check|Intelligence|Not Possible|
+|Negotiation|Mental Power|Not Possible|
+
+### `technical-atom-ee515249d2794d0a` table
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.295)
+
+|**Crafsman Skill Abilities Table**|||
+|---|---|---|
+|Ability|Relevant AbilityScore|Retryinga success roll on the same target|
+|Value Check|Intelligence|Not Possible|
+|Craf|Dexterity|Possible|
+
+### `technical-atom-d17c66ee86c7c338` table
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.295)
+
+|**Sailor Skill Abilities Table**|||
+|---|---|---|
+|Ability|Relevant AbilityScore|Retryinga success roll on the same target|
+|First Aid|-|No success roll is made|
+|Treatment|Intelligence|Possible|
+|Herbs|Intelligence|(For appraisal only)Not Possible|
+
+### `technical-atom-17a33f350fd57278` table
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.296)
+
+|Ability|Relevant AbilityScore|Equipment Restrictions|Retryinga success roll on the same target|
+|---|---|---|---|
+|Footprint Tracking|Intelligence|No|Not Possible|
+|Camoufage|Intelligence|Yes|Possible|
+|Listen|Intelligence|Yes|Possible|
+|StealthyStep|Agility|Yes|Possible|
+|Weather Prediction|Intelligence|No|Not Possible|
+|Plant and Animal Check|Intelligence|No|Not Possible|
+|Projectile Use|Dexterity, Strength|No|Possible|
+|Find/Sense Trap|Intelligence|No|Not Possible|
+|Remove/Set Trap|Dexterity|No|Not Possible|
+|Pre-processing|Intelligence|No|Not Possible|
+|Value Check|Dexterity|No|Not Possible|
 
 ## Related technical details
 
-### From [[sword-world-rpg-complete-edition-6-2-thief-skill]]: `technical-atom-64307a6c8108617c` worked-example
+### From [[sword-world-rpg-complete-edition-16-8-weapons-and-armor-that-are-too-heavy]]: `technical-atom-804a72b3bc7ddc15` exception
 
-Relation: nearby source page; matched terms `ability`, `lockpicking`, `skill`, `thief`
+Relation: nearby source page; matched terms `armor`, `skill`, `thief`, `weapons`, `you`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268)
 
-For example, the thief skill's _lockpicking_ ability cannot be retried.
+If you’re fighting with the thief skill, the required strength for _both_ weapons is only _half_ the character's strength.
 
-### From [[sword-world-rpg-complete-edition-17-2-lost-spells]]: `technical-atom-94b4d01526d90e79` table-row
+### From [[sword-world-rpg-complete-edition-16-9-special-weapons]]: `technical-atom-bcaf493cda841c9e` requirement
 
-Relation: nearby source page; matched terms `ability`, `intelligence`, `scores`
+Relation: nearby source page; matched terms `method`, `requirement`, `weapons`, `you`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.273-276)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.269-271)
 
-|51 – 60|All ability scores reduced to 5/6, except intelligence and mental power remain the same|
+For those with _multiple_ attack methods, you must declare _which_ attack method you will use each round.
 
-### From [[sword-world-rpg-complete-edition-6-4-sage-skill]]: `technical-atom-3be3a52476cf995d` exception
+### From [[sword-world-rpg-complete-edition-16-9-special-weapons]]: `technical-atom-586fb9bca6fdcdaa` exception
 
-Relation: nearby source page; matched terms `languages`, `sage`, `skill`
+Relation: nearby source page; matched terms `etc`, `not`, `weapons`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.118-119)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.269-271)
 
-There are limitations to learning languages through the sage skill.
+This attack _cannot_ target anything that’s _not_ bipedal, and it _cannot_ knock anything _larger_ than the adventurer, such as an ogre, giant, etc.
 
-### From [[sword-world-rpg-complete-edition-17-2-lost-spells]]: `technical-atom-eabe019e5abf3164` table-row
+### From [[sword-world-rpg-complete-edition-16-8-weapons-and-armor-that-are-too-heavy]]: `technical-atom-aa4407a71cb121a0` exception
 
-Relation: nearby source page; matched terms `ability`, `scores`
+Relation: nearby source page; matched terms `armor`, `weapons`, `you`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.273-276)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.268)
 
-|3 – 5|All ability scores reduced by 1/6|
+If you attack with only _one_ hand, there is _no_ penalty, and if you attack with _both_ hands, the penalty is only _-2_ for each.

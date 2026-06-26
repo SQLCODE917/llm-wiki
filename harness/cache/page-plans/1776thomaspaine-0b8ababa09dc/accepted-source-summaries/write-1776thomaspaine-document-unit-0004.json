@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Paine proposes a continental charter for the colonies, similar to England's Magna Charta (raw/1776ThomasPaine.pdf p.16-22).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0002"
+      ]
+    },
+    {
+      "bullet_text": "He argues the law should be the ruler in America, not a monarch (raw/1776ThomasPaine.pdf p.16-22).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0088"
+      ]
+    },
+    {
+      "bullet_text": "Paine warns that not forming a constitution now may lead to tyranny (raw/1776ThomasPaine.pdf p.16-22).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0108"
+      ]
+    },
+    {
+      "bullet_text": "He suggests that a social compact would dissolve if the government does not act (raw/1776ThomasPaine.pdf p.16-22).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0029"
+      ]
+    },
+    {
+      "bullet_text": "Paine believes it is unwise to spend millions for the sake of repealing a few acts (raw/1776ThomasPaine.pdf p.16-22).",
+      "covered_source_claims": [
+        "source-claim-unit-0004-0051"
+      ]
+    }
+  ],
+  "source_record_text": "Thomas Paine's 'Document' section from '1776', pages 16-22, discusses forming a continental charter and the necessity of a constitution."
+}

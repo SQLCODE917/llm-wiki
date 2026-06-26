@@ -81,6 +81,7 @@ def ensure_extracted(
     recognizer: TextRecognizer,
     reextract: bool = False,
     document_extractor: DocumentExtractFn | None = None,
+    document_extractor_name: str = "docling",
 ) -> ExtractionResult:
     """Extract + chunk the PDF, or return the cached manifest (resume)."""
     _ = recognizer
@@ -104,7 +105,7 @@ def ensure_extracted(
         )
 
     cache_dir.mkdir(parents=True, exist_ok=True)
-    document_extractor = document_extractor or _default_document_extractor()
+    document_extractor = document_extractor or document_extractor_by_name(document_extractor_name)
     document_model = document_extractor(pdf_path, source_rel, sha)
     source_sections = build_source_sections(document_model)
     source_chunks = build_source_chunks(document_model, source_sections)
@@ -145,10 +146,6 @@ def document_extractor_by_name(name: str) -> DocumentExtractFn:
         return extract_document_model
     valid = ", ".join(VALID_DOCUMENT_EXTRACTORS)
     raise ValueError(f"Unknown PDF extractor {name!r}. Valid extractors: {valid}.")
-
-
-def _default_document_extractor() -> DocumentExtractFn:
-    return document_extractor_by_name("docling")
 
 
 def _record(chunk: SourceChunk) -> ChunkRecord:

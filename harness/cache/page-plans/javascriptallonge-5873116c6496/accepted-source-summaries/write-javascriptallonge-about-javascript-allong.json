@@ -1,33 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript Allongé is a first and foremost, a book about programming with functions (raw/javascriptallonge.pdf p.7-7).",
+      "bullet_text": "JavaScript Allongé is a book about programming with functions, written in JavaScript for its perfect sweet spot of being widely used with proper first-class functions (raw/javascriptallonge.pdf p.7-9).",
       "covered_source_claims": [
-        "source-claim-unit-0005-0004"
+        "source-claim-unit-0004-0005",
+        "source-claim-unit-0004-0003",
+        "source-claim-unit-0004-0007"
       ]
     },
     {
-      "bullet_text": "It's written in JavaScript, because JavaScript hits the perfect sweet spot of being both widely used, and of having proper first-class functions with lexical scope (raw/javascriptallonge.pdf p.7-7).",
+      "bullet_text": "The book begins at the beginning with values and expressions, building to types, identity, functions, closures, scopes, collections, iterators, and classes (raw/javascriptallonge.pdf p.7-9).",
       "covered_source_claims": [
-        "source-claim-unit-0005-0001"
+        "source-claim-unit-0004-0002"
       ]
     },
     {
-      "bullet_text": "JavaScript Allongé begins at the beginning, with values and expressions, and builds from there to discuss types, identity, functions, closures, scopes, collections, iterators, and many more subjects up to working with classes and instances (raw/javascriptallonge.pdf p.7-7).",
+      "bullet_text": "It teaches how to handle complex code and simplify it without dumbing it down, making it a rich read on JavaScript's subtleties (raw/javascriptallonge.pdf p.7-9).",
       "covered_source_claims": [
-        "source-claim-unit-0005-0007"
-      ]
-    },
-    {
-      "bullet_text": "JavaScript Allongé teaches you how to handle complex code, and it also teaches you how to simplify code without dumbing it down (raw/javascriptallonge.pdf p.7-7).",
-      "covered_source_claims": [
-        "source-claim-unit-0005-0002"
-      ]
-    },
-    {
-      "bullet_text": "JavaScript idioms like function combinators and decorators leverage JavaScript's power to make code easier to read, modify, debug and refactor (raw/javascriptallonge.pdf p.7-7).",
-      "covered_source_claims": [
-        "source-claim-unit-0005-0006"
+        "source-claim-unit-0004-0008"
       ]
     }
   ],

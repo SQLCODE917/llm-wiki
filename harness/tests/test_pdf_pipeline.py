@@ -144,11 +144,19 @@ class TestEnsureExtracted:
         (cache_dir / "document_model.json").write_text("{}", encoding="utf-8")
         (cache_dir / "source_sections.json").write_text("[]", encoding="utf-8")
         sys.modules.pop("llmwiki.pdf.extractor", None)
+        sys.modules.pop("llmwiki.pdf.pymupdf_document_extractor", None)
 
-        result = ensure_extracted(pdf, "cached.pdf", tmp_path / "cache", NullRecognizer())
+        result = ensure_extracted(
+            pdf,
+            "cached.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor_name="pymupdf",
+        )
 
         assert result.manifest.extractor_name == "test"
         assert "llmwiki.pdf.extractor" not in sys.modules
+        assert "llmwiki.pdf.pymupdf_document_extractor" not in sys.modules
 
     def test_manifest_only_cache_reextracts_current_artifacts(self, tmp_path: Path) -> None:
         pdf = tmp_path / "book.pdf"

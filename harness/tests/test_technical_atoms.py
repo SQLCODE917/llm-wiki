@@ -122,6 +122,68 @@ def test_claim_fenced_code_uses_inner_payload_and_dedupes_structural_atom() -> N
     assert all("```" not in payload for payload in code_payloads)
 
 
+def test_markdown_emphasized_programming_claim_becomes_clean_code_atom() -> None:
+    plan, _registry = _plan(_technical_source())
+    raw = plan.source_bundle.raw_sources[0]
+    statement = "**const** repeat = **function** repeat (str) { **return** str + str; };"
+    plan = replace(
+        plan,
+        source_claims=(
+            *plan.source_claims,
+            _claim(raw, "claim-emphasized-code", statement, "function"),
+        ),
+    )
+    registry = build_evidence_registry(
+        plan, (source_text_from_text("rules.md", _technical_source()),)
+    )
+
+    catalog = build_technical_atom_catalog(
+        source_locator="rules.md",
+        page_plan=plan,
+        evidence_registry=registry,
+        artifact_fingerprint="fp",
+    )
+
+    assert any(
+        atom.atom_kind == "code"
+        and atom.technical_payload == "const repeat = function repeat (str) { return str + str; };"
+        and ("language", "javascript") in atom.normalized_fields
+        for atom in catalog.technical_atoms
+    )
+    assert not any(
+        atom.atom_kind == "formula" and "const repeat" in atom.technical_payload
+        for atom in catalog.technical_atoms
+    )
+
+
+def test_markdown_emphasized_programming_lines_become_clean_code_atoms() -> None:
+    source = "\n".join(
+        (
+            "# Code",
+            "**const** repeat = **function** repeat (str) { **return** str + str; };",
+            "**const** fib = **function** fib (n) { **return** (1.618**n - -1.618**-n) / 2.236; };",
+        )
+    )
+    plan, registry = _plan(source)
+
+    catalog = build_technical_atom_catalog(
+        source_locator="rules.md",
+        page_plan=plan,
+        evidence_registry=registry,
+        artifact_fingerprint="fp",
+    )
+
+    payloads = {
+        atom.technical_payload for atom in catalog.technical_atoms if atom.atom_kind == "code"
+    }
+    assert "const repeat = function repeat (str) { return str + str; };" in payloads
+    assert "const fib = function fib (n) { return (1.618**n - -1.618**-n) / 2.236; };" in payloads
+    assert not any(
+        atom.atom_kind == "formula" and "function repeat" in atom.technical_payload
+        for atom in catalog.technical_atoms
+    )
+
+
 def test_atom_payload_rejects_markdown_fences() -> None:
     with pytest.raises(ValueError, match="must not include Markdown fences"):
         TechnicalAtom(
@@ -141,6 +203,18 @@ def test_atom_payload_rejects_markdown_fences() -> None:
 def test_formula_detection_ignores_javascript_equality_prose() -> None:
     assert not is_formula(
         "We have managed to provide the exact same functionality that === and ?: provided."
+    )
+    assert (
+        claim_kind(
+            _claim(
+                RawSource("rules.md", "markdown"),
+                "claim-const-prose",
+                "It does not name the function repeat for the same reason that "
+                "const answer = 42 does not name the number 42.",
+                "function",
+            )
+        )
+        is None
     )
 
 

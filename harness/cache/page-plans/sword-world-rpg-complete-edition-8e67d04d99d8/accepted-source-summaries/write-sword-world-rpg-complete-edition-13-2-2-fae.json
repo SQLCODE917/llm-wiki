@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Pixies are small, friendly fae with wings, resembling elves but only about 30 cm tall, and have the ability to use 2nd level spirit magic and Invisibility (raw/Sword World RPG - Complete Edition.pdf p.176-180).",
+      "bullet_text": "Pixies are small, friendly fae with insect-like wings, often avoiding humans (raw/Sword World RPG - Complete Edition.pdf p.176-177).",
       "covered_source_claims": [
-        "source-claim-unit-0041-0015"
+        "source-claim-unit-0089-0015"
       ]
     },
     {
-      "bullet_text": "Fairies are representative fae, often seen where the fairy world meets the material world, and they have a deep connection with spirits, using spirit magic up to 3rd level (raw/Sword World RPG - Complete Edition.pdf p.176-180).",
+      "bullet_text": "Fairies are often seen in the material world, appearing as beautiful elf women with wings (raw/Sword World RPG - Complete Edition.pdf p.176-177).",
       "covered_source_claims": [
-        "source-claim-unit-0041-0016"
+        "source-claim-unit-0089-0017"
       ]
     },
     {
-      "bullet_text": "Pookas are forest-dwelling fae with the ability to shapeshift into animals, and they use 3rd level spirit magic (raw/Sword World RPG - Complete Edition.pdf p.176-180).",
+      "bullet_text": "Pookas can transform into forest animals and are friendly, sometimes playing tricks (raw/Sword World RPG - Complete Edition.pdf p.176-177).",
       "covered_source_claims": [
-        "source-claim-unit-0041-0017"
+        "source-claim-unit-0089-0016"
       ]
     }
   ],
-  "source_record_text": "Chapter 13.2.2 Fae describes fae monsters and their characteristics, including pixies, fairies, pookas, and featherfolk."
+  "source_record_text": "Fae entities including pixies, fairies, pookas, featherfolk, mermaids, and mermen are described in this section, detailing their characteristics, habitats, and interactions with humans."
 }

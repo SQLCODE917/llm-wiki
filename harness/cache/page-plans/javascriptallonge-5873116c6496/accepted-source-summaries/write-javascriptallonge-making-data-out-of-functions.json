@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case. For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list (raw/javascriptallonge.pdf p.177-179).",
+      "bullet_text": "Functions model data structures like lists and pairs without arrays or objects, using K, I, and V combinators (raw/javascriptallonge.pdf p.177-190).",
       "covered_source_claims": [
-        "source-claim-unit-0136-0003"
+        "source-claim-unit-0042-0005"
       ]
     },
     {
-      "bullet_text": "We can model lists just using functions (raw/javascriptallonge.pdf p.177-179).",
+      "bullet_text": "K combinator creates constant functions, I combinator is identity function (raw/javascriptallonge.pdf p.177-190).",
       "covered_source_claims": [
-        "source-claim-unit-0136-0010"
+        "source-claim-unit-0042-0004"
       ]
     },
     {
-      "bullet_text": "We have used arrays and objects to represent the structure of data, and extensively used the ternary operator to write algorithms that terminate when we reach a base case (raw/javascriptallonge.pdf p.177-179).",
+      "bullet_text": "V combinator, or Vireo, creates pairs from two values (raw/javascriptallonge.pdf p.177-190).",
       "covered_source_claims": [
-        "source-claim-unit-0136-0002"
+        "source-claim-unit-0042-0043"
+      ]
+    },
+    {
+      "bullet_text": "Functions manipulate data structures allowing powerful abstractions (raw/javascriptallonge.pdf p.177-190).",
+      "covered_source_claims": [
+        "source-claim-unit-0042-0115"
+      ]
+    },
+    {
+      "bullet_text": "Computation performed using only functions, without traditional data structures (raw/javascriptallonge.pdf p.177-190).",
+      "covered_source_claims": [
+        "source-claim-unit-0042-0024"
       ]
     }
   ],
-  "source_record_text": "Chapter on modeling data using functions, including K, I, and V combinators."
+  "source_record_text": "This chapter explores how data structures can be represented using only functions, delving into combinatory logic and the K, I, and V combinators. It demonstrates how functions can be used to model lists and pairs without relying on arrays or objects, and how this approach leads to a deeper understanding of computation and data representation."
 }

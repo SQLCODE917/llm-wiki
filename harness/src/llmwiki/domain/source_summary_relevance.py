@@ -126,6 +126,11 @@ def _topic_focus_start_index(
         (index for index, claim in enumerate(claims) if page_overlap(page_terms, claim) > 0),
         None,
     )
+    if (
+        first_overlap_index is not None
+        and claim_position(claims[first_overlap_index]) > MAX_STRONG_FOCUS_LAG
+    ):
+        return None
     strong_overlap = min(STRONG_TOPIC_OVERLAP, len(page_terms))
     start_index = next(
         (

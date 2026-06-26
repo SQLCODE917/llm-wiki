@@ -1,11 +1,11 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Some different sized and coloured coffee pots by Antti Nurmesniemi, perhaps his most known design. (raw/javascriptallonge.pdf p.205-205)",
+      "bullet_text": "JavaScript collections are like coffee pots, serving different sizes and colours of data, (raw/javascriptallonge.pdf p.205-205)",
       "covered_source_claims": [
-        "source-claim-unit-0155-0001"
+        "source-claim-unit-0049-0002"
       ]
     }
   ],
-  "source_record_text": "Some different sized and coloured coffee pots by Antti Nurmesniemi, perhaps his most known design."
+  "source_record_text": "This section introduces the concept of collections in JavaScript through the metaphor of coffee pots, and is a key part of the book's thematic framework."
 }

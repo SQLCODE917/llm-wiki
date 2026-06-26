@@ -1,23 +1,23 @@
 ---
 page_id: sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg
 page_kind: source
-summary: Definition and core mechanics of Role-Playing Games in the Sword World RPG system.
+summary: What is a Role-Playing Game (RPG)? from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.5-5
-updated: 2026-06-24
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section defines role-playing games and outlines the basic structure of gameplay in the Sword World RPG, including the roles of game masters and players, the use of scenarios, and the integration of player choice and random elements.
+A summary of the 'What is a Role-Playing Game (RPG)?' section from the Sword World RPG - Complete Edition rulebook.
 
 ## Key supported claims
 
-- A role-playing game (RPG) is a game where participants play out assigned roles (raw/Sword World RPG - Complete Edition.pdf p.5-5).
-- The game is divided into a game master (GM) and players, with only one GM overseeing several players (raw/Sword World RPG - Complete Edition.pdf p.5-5).
+- A role-playing game (RPG) progresses by participants playing assigned roles, as the name suggests (raw/Sword World RPG - Complete Edition.pdf p.5-5).
 - RPGs are played by several people, with one game master and the rest as players (raw/Sword World RPG - Complete Edition.pdf p.5-5).
-- The name 'role-playing game' comes from the act of playing out roles (raw/Sword World RPG - Complete Edition.pdf p.5-5).
-- Players make choices that affect the story, and outcomes are uncertain due to random elements like dice rolls (raw/Sword World RPG - Complete Edition.pdf p.5-5).
+- The game master prepares a scenario, which players then act out through their characters (raw/Sword World RPG - Complete Edition.pdf p.5-5).
+- Players do not know the scenario details; they only know their characters, and must act based on their abilities (raw/Sword World RPG - Complete Edition.pdf p.5-5).
+- Outcomes are uncertain and determined by player choices and random numbers, such as dice rolls (raw/Sword World RPG - Complete Edition.pdf p.5-5).
 
 ## Technical details
 
@@ -73,7 +73,7 @@ Let's give a real example.
 
 ### From [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]]: `technical-atom-958893ed046c7a16` requirement
 
-Relation: nearby source page; matched terms `game`, `master`, `must`, `play`, `requirement`, `what`
+Relation: nearby source page; matched terms `game`, `master`, `must`, `requirement`, `what`
 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.7)
 
@@ -81,24 +81,24 @@ Conversely, a game master _must_ understand the rules included here in addition 
 
 ### From [[sword-world-rpg-complete-edition-the-meaning-of-the-rulebook]]: `technical-atom-7ef5a911787778d7` requirement
 
-Relation: nearby source page; matched terms `game`, `games`, `master`, `requirement`, `role-playing`
+Relation: nearby source page; matched terms `game`, `master`, `requirement`, `role-playing`, `rulebook`
 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.6)
 
 It should be noted that, as a general principle of role-playing games, the game master makes the final decisions.
 
-### From [[sword-world-rpg-complete-edition-18-2-guidelines-for-adventurer-age-and-ability-score-changes]]: `technical-atom-329ba9ad302f1f82` procedure
-
-Relation: nearby source page; matched terms `game`, `master`, `must`, `what`
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.276)
-
-First, the game master must determine what are the most _severe_ obstacles to accomplishing the mission.
-
 ### From [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]]: `technical-atom-5cf5ce2259887499` requirement
 
-Relation: nearby source page; matched terms `game`, `master`, `play`, `players`, `requirement`, `what`
+Relation: nearby source page; matched terms `game`, `master`, `players`, `requirement`, `what`
 
 Citation: (raw/Sword World RPG - Complete Edition.pdf p.7)
 
 A game master requires a deeper mastery of an RPG compared to players.
+
+### From [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]]: `technical-atom-6ec8e6b721a668b4` requirement
+
+Relation: nearby source page; matched terms `dice`, `must`, `not`, `requirement`, `what`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.7)
+
+Along with pens and pencils, you must not forget the dice.

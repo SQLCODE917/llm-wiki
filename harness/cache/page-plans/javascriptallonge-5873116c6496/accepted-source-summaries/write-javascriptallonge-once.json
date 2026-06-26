@@ -1,29 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "once is an extremely helpful combinator. (raw/javascriptallonge.pdf p.88-88)",
+      "bullet_text": "The Once combinator ensures a function is called only once (raw/javascriptallonge.pdf p.88-88).",
       "covered_source_claims": [
-        "source-claim-unit-0077-0001"
+        "source-claim-unit-0028-0002"
       ]
     },
     {
-      "bullet_text": "It ensures that a function can only be called, well, once. (raw/javascriptallonge.pdf p.88-88)",
+      "bullet_text": "The Once combinator is a function that returns another function (raw/javascriptallonge.pdf p.88-88).",
       "covered_source_claims": [
-        "source-claim-unit-0077-0002"
+        "source-claim-unit-0028-0007"
       ]
     },
     {
-      "bullet_text": "That function will call your function once, and thereafter will return undefined whenever it is called. (raw/javascriptallonge.pdf p.88-88)",
+      "bullet_text": "Once has some subtleties when used with methods (raw/javascriptallonge.pdf p.88-88).",
       "covered_source_claims": [
-        "source-claim-unit-0077-0006"
+        "source-claim-unit-0028-0010"
       ]
     },
     {
-      "bullet_text": "(Note: There are some subtleties with decorators like once that involve the intersection of state with methods. (raw/javascriptallonge.pdf p.88-88)",
+      "bullet_text": "The function returned by Once will return undefined on subsequent calls (raw/javascriptallonge.pdf p.88-88).",
       "covered_source_claims": [
-        "source-claim-unit-0077-0009"
+        "source-claim-unit-0028-0008"
+      ]
+    },
+    {
+      "bullet_text": "The Once combinator is an extremely helpful combinator (raw/javascriptallonge.pdf p.88-88).",
+      "covered_source_claims": [
+        "source-claim-unit-0028-0003"
       ]
     }
   ],
-  "source_record_text": "The \"Once\" chapter from JavaScript Allongé introduces the once combinator, a function that ensures another function can only be called once."
+  "source_record_text": "The Once combinator ensures a function is called only once."
 }

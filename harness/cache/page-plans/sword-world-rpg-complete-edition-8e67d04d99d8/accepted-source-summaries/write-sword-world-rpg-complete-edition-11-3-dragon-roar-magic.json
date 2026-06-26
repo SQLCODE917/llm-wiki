@@ -1,35 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Dragon priests worship dragons as guardians (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "bullet_text": "Dragon roar magic has no restrictions when using spells (raw/Sword World RPG - Complete Edition.pdf p.149-152).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0004"
+        "source-claim-unit-0078-0004"
       ]
     },
     {
-      "bullet_text": "Dragon priests cannot use priest or dark priest skills simultaneously (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "bullet_text": "Users can cast spells by remembering them in their mind (raw/Sword World RPG - Complete Edition.pdf p.149-152).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0001"
+        "source-claim-unit-0078-0001"
       ]
     },
     {
-      "bullet_text": "Dragon priests gain reptile identification and communication abilities (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "bullet_text": "Dragon roar magic users require repeated training (raw/Sword World RPG - Complete Edition.pdf p.149-152).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0014"
+        "source-claim-unit-0078-0014"
       ]
     },
     {
-      "bullet_text": "Dragon priests use summon magic to summon reptiles and dragons with specific rules (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "bullet_text": "Those who believe in dragons aim to be reborn as dragons (raw/Sword World RPG - Complete Edition.pdf p.149-152).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0011"
+        "source-claim-unit-0078-0011"
       ]
     },
     {
-      "bullet_text": "Dragon priests have 1st-level spells like Iron Stomach and Communicate Reptile (raw/Sword World RPG - Complete Edition.pdf p.149-153).",
+      "bullet_text": "Magic users can even use spells under silence or mute effects (raw/Sword World RPG - Complete Edition.pdf p.149-152).",
       "covered_source_claims": [
-        "source-claim-unit-0035-0003"
+        "source-claim-unit-0078-0003"
       ]
     }
   ],
-  "source_record_text": "Chapter 11.3 covers dragon roar magic, used by dragon priests who worship dragons as guardians rather than gods. There are no restrictions when using dragon roar magic spells, and users can receive effects by remembering them in their mind."
+  "source_record_text": "Dragon roar magic is used by those who worship dragons as guardians. It has no restrictions and can be used even under silence or mute effects. The skill required is the dragon priest skill."
 }

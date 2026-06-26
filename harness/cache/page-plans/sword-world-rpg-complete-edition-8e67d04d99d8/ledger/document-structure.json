@@ -1,0 +1,2092 @@
+{
+  "artifact_format": "canonical-json",
+  "document_structure": {
+    "dispositions": [
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0001",
+        "source_order": 1,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-document"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0002",
+        "source_order": 2,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-welcome-to-sword-world"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0003",
+        "source_order": 3,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0004",
+        "source_order": 4,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-the-meaning-of-the-rulebook"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0005",
+        "source_order": 5,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0006",
+        "source_order": 6,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-books-related-to-sword-world-rpg"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0007",
+        "source_order": 7,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-part-1-players-section"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0008",
+        "source_order": 8,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-1-character"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0009",
+        "source_order": 9,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0010",
+        "source_order": 10,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0011",
+        "source_order": 11,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-3-skills"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0012",
+        "source_order": 12,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-4-character-creation"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0013",
+        "source_order": 13,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-4-character-creation-2"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0014",
+        "source_order": 14,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-2-success-rolls"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0015",
+        "source_order": 15,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-2-3-checks"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0016",
+        "source_order": 16,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-2-5-difficulty-checks"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0017",
+        "source_order": 17,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-2-7-resistance-rolls"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0018",
+        "source_order": 18,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-3-combat-rounds"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0019",
+        "source_order": 19,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-3-1-action-announcements-through-3-3-action-canceling"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0020",
+        "source_order": 20,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-3-1-action-announcements-through-3-3-action-canceling"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0021",
+        "source_order": 21,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-3-4-movement-and-actions"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0022",
+        "source_order": 22,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-4-weapon-combat"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0023",
+        "source_order": 23,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-3-projectile-restrictions-through-4-4-scores-used-in-weapon"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0024",
+        "source_order": 24,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-3-projectile-restrictions-through-4-4-scores-used-in-weapon"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0025",
+        "source_order": 25,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters-through-4-6"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0026",
+        "source_order": 26,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters-through-4-6"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0027",
+        "source_order": 27,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-7-attacks-from-characters-against-characters-through-4-9"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0028",
+        "source_order": 28,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-7-attacks-from-characters-against-characters-through-4-9"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0029",
+        "source_order": 29,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0030",
+        "source_order": 30,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-11-damage-recovery"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0031",
+        "source_order": 31,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-5-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0032",
+        "source_order": 32,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-4-how-to-use-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0033",
+        "source_order": 33,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0034",
+        "source_order": 34,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0035",
+        "source_order": 35,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-8-magic-contraction"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0036",
+        "source_order": 36,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-9-magic-types"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0037",
+        "source_order": 37,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0038",
+        "source_order": 38,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-11-ancient-magic-and-the-sorcerer-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0039",
+        "source_order": 39,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0040",
+        "source_order": 40,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0041",
+        "source_order": 41,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-3"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0042",
+        "source_order": 42,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-4"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0043",
+        "source_order": 43,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-13-spirit-magic-and-the-shaman-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0044",
+        "source_order": 44,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-14-spirit-magic-list"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0045",
+        "source_order": 45,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0046",
+        "source_order": 46,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-3"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0047",
+        "source_order": 47,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0048",
+        "source_order": 48,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0049",
+        "source_order": 49,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0050",
+        "source_order": 50,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-17-special-holy-magic-list"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0051",
+        "source_order": 51,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-2-common-runes"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0052",
+        "source_order": 52,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-3-spellsongs"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0053",
+        "source_order": 53,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-6-adventurers-skills-other-than-combat-and-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0054",
+        "source_order": 54,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-2-thief-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0055",
+        "source_order": 55,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0056",
+        "source_order": 56,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0057",
+        "source_order": 57,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-5-bard-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0058",
+        "source_order": 58,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-6-common-adventurer-abilities"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0059",
+        "source_order": 59,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-7-general-skills"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0060",
+        "source_order": 60,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-7-2-merchant-skill-through-7-3-craftsman-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0061",
+        "source_order": 61,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-7-2-merchant-skill-through-7-3-craftsman-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0062",
+        "source_order": 62,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-7-5-hunter-skill-through-7-6-sailor-skill"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0063",
+        "source_order": 63,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-7-5-hunter-skill-through-7-6-sailor-skill"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0064",
+        "source_order": 64,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-8-character-growth"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0065",
+        "source_order": 65,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-8-2-how-to-use-experience-points-increasing-skill-levels"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0066",
+        "source_order": 66,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-8-2-how-to-use-experience-points-increasing-skill-levels"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0067",
+        "source_order": 67,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-part-2-game-masters-section"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0068",
+        "source_order": 68,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-9-notes-on-success-rolls"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0069",
+        "source_order": 69,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0070",
+        "source_order": 70,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0071",
+        "source_order": 71,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-10-notes-on-combat"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0072",
+        "source_order": 72,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-10-3-surprise-attacks-through-10-6-combat-between-monsters"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0073",
+        "source_order": 73,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-10-3-surprise-attacks-through-10-6-combat-between-monsters"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0074",
+        "source_order": 74,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-10-3-surprise-attacks-through-10-6-combat-between-monsters"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0075",
+        "source_order": 75,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-11-notes-on-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0076",
+        "source_order": 76,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-2-dark-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0077",
+        "source_order": 77,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-2-dark-magic-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0078",
+        "source_order": 78,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-3-dragon-roar-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0079",
+        "source_order": 79,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-4-acquiring-rune-master-skills-and-increasing-levels-through"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0080",
+        "source_order": 80,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-4-acquiring-rune-master-skills-and-increasing-levels-through"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0081",
+        "source_order": 81,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-12-various-checks"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0082",
+        "source_order": 82,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-1-rules-regarding-language"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0083",
+        "source_order": 83,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0084",
+        "source_order": 84,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0085",
+        "source_order": 85,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-3-work-requests-to-npcs"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0086",
+        "source_order": 86,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-13-monsters"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0087",
+        "source_order": 87,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-1-types-of-monsters"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0088",
+        "source_order": 88,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0089",
+        "source_order": 89,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-2-fae"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0090",
+        "source_order": 90,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-3-youma"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0091",
+        "source_order": 91,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-4-spirits"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0092",
+        "source_order": 92,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-5-titans"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0093",
+        "source_order": 93,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0094",
+        "source_order": 94,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0095",
+        "source_order": 95,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-3"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0096",
+        "source_order": 96,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-7-animals"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0097",
+        "source_order": 97,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-7-animals-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0098",
+        "source_order": 98,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-7-animals-3"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0099",
+        "source_order": 99,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-8-plants"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0100",
+        "source_order": 100,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-9-undead"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0101",
+        "source_order": 101,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-9-undead-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0102",
+        "source_order": 102,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-10-magical-creatures"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0103",
+        "source_order": 103,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-10-magical-creatures-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0104",
+        "source_order": 104,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-11-daemons-underworld-creatures"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0105",
+        "source_order": 105,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-12-humans-through-13-2-13-other"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0106",
+        "source_order": 106,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-12-humans-through-13-2-13-other"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0107",
+        "source_order": 107,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-3-converting-character-data-to-monster-data-through-13-5"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0108",
+        "source_order": 108,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-3-converting-character-data-to-monster-data-through-13-5"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0109",
+        "source_order": 109,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0110",
+        "source_order": 110,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-14-treasures"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0111",
+        "source_order": 111,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-2-adventure-treasure-and-reward-amounts"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0112",
+        "source_order": 112,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-4-magical-item-list"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0113",
+        "source_order": 113,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-4-magical-item-list-2"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0114",
+        "source_order": 114,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-4-magical-item-list-3"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0115",
+        "source_order": 115,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-15-experience-points"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0116",
+        "source_order": 116,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-15-1-four-types-of-experience-points"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0117",
+        "source_order": 117,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-part-3-optional-rules"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0118",
+        "source_order": 118,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-16-optional-rules-for-combat"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0119",
+        "source_order": 119,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice-through-16-3-projectile"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0120",
+        "source_order": 120,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice-through-16-3-projectile"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0121",
+        "source_order": 121,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice-through-16-3-projectile"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0122",
+        "source_order": 122,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-5-combat-options"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0123",
+        "source_order": 123,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-8-weapons-and-armor-that-are-too-heavy"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0124",
+        "source_order": 124,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-9-special-weapons"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0125",
+        "source_order": 125,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-17-optional-rules-for-magic"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0126",
+        "source_order": 126,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-17-2-lost-spells-through-17-5-full-resistance"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0127",
+        "source_order": 127,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-17-2-lost-spells-through-17-5-full-resistance"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0128",
+        "source_order": 128,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-18-other-optional-rules"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0129",
+        "source_order": 129,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-18-2-guidelines-for-adventurer-age-and-ability-score-changes"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0130",
+        "source_order": 130,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-18-2-guidelines-for-adventurer-age-and-ability-score-changes"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0131",
+        "source_order": 131,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-guide-to-forcelia-alecrast"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0132",
+        "source_order": 132,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-guide-to-forcelia-alecrast"
+      },
+      {
+        "disposition": "non-claim",
+        "extracted_unit_id": "unit-0133",
+        "source_order": 133,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-designer-s-notes"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0134",
+        "source_order": 134,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-charts"
+      }
+    ],
+    "root_node_id": "structure-node-18ecd2156544172c",
+    "structure_nodes": [
+      {
+        "depth": 0,
+        "evidence_ids": [],
+        "heading_text": "Sword World RPG - Complete Edition.pdf",
+        "parent_structure_node_id": "",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 0,
+        "source_range_id": "root",
+        "structure_node_id": "structure-node-18ecd2156544172c",
+        "structure_node_kind": "root"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 1,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-document",
+        "structure_node_id": "structure-node-7f27177f105cc84a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Welcome to “Sword World”!",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 2,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-welcome-to-sword-world",
+        "structure_node_id": "structure-node-8169d2fc453f4472",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "What is a Role-Playing Game (RPG)?",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 3,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg",
+        "structure_node_id": "structure-node-55ae317d3b6b67c2",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "The Meaning of the Rulebook",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 4,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-the-meaning-of-the-rulebook",
+        "structure_node_id": "structure-node-90560acf01ba6883",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "What You’ll Need to Play Sword World RPG",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 5,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg",
+        "structure_node_id": "structure-node-b77b959fa5cd70f9",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Books Related to Sword World RPG",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 6,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-books-related-to-sword-world-rpg",
+        "structure_node_id": "structure-node-7de6b2de0154dd47",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Part 1: Players’ Section",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 7,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-part-1-players-section",
+        "structure_node_id": "structure-node-e5a6a1d71e4db26c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 1: Character",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 8,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-1-character",
+        "structure_node_id": "structure-node-3ce1f2c93166ce39",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "1.1 Ability Scores through 1.2 Races",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 9,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races",
+        "structure_node_id": "structure-node-f996ead2c82ca450",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "1.3 Skills",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 10,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-3-skills",
+        "structure_node_id": "structure-node-3ef66a3780f88b80",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "1.4 Character Creation",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 11,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-4-character-creation",
+        "structure_node_id": "structure-node-59be105759dd4da6",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "1.4 Character Creation",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 12,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-1-4-character-creation-2",
+        "structure_node_id": "structure-node-fd29eb0699577223",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 2: Success Rolls",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 13,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-2-success-rolls",
+        "structure_node_id": "structure-node-28922a41b7f1397a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "2.3 Checks",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 14,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-2-3-checks",
+        "structure_node_id": "structure-node-629f57a8ca6698a8",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "2.5 Difficulty Checks",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 15,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-2-5-difficulty-checks",
+        "structure_node_id": "structure-node-fca19973df1e7272",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "2.7 Resistance Rolls",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 16,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-2-7-resistance-rolls",
+        "structure_node_id": "structure-node-5531c0b34e4471bd",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 3: Combat Rounds",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 17,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-3-combat-rounds",
+        "structure_node_id": "structure-node-aade6c5de4236301",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "3.1 Action Announcements through 3.3 Action Canceling",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 18,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-3-1-action-announcements-through-3-3-action-canceling",
+        "structure_node_id": "structure-node-a4ca42fefc8787a6",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "3.4 Movement and Actions",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 19,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-3-4-movement-and-actions",
+        "structure_node_id": "structure-node-304d10970f357143",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 4: Weapon Combat",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 20,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-4-weapon-combat",
+        "structure_node_id": "structure-node-adbc0ef6f29163f2",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "4.3 Projectile Restrictions through 4.4 Scores Used in Weapon Combat",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 21,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-3-projectile-restrictions-through-4-4-scores-used-in-weapon",
+        "structure_node_id": "structure-node-f8001a830b03de6d",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "4.5 Attacks From Characters Against Monsters through 4.6 Attacks From Monsters Against Characters",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 22,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters-through-4-6",
+        "structure_node_id": "structure-node-6f8f42571b616bdf",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "4.7 Attacks From Characters Against Characters through 4.9 Unconscious and Death Checks",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 23,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-7-attacks-from-characters-against-characters-through-4-9",
+        "structure_node_id": "structure-node-8756fda68b834286",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "4.10 Excellent Weapons and Armor",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 24,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor",
+        "structure_node_id": "structure-node-09eb86ec64470b83",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "4.11 Damage Recovery",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 25,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-4-11-damage-recovery",
+        "structure_node_id": "structure-node-9e24149f9af8460f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 5: Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 26,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-5-magic",
+        "structure_node_id": "structure-node-bce1a7fa4cf98e1b",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.4 How to Use Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 27,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-4-how-to-use-magic",
+        "structure_node_id": "structure-node-6beedb4ab1e19ba4",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.6 Recovering Mental Power through 5.1.7 Magic Expansion",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 28,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion",
+        "structure_node_id": "structure-node-ce101f08fc1694e3",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.8 Magic Contraction",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 29,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-8-magic-contraction",
+        "structure_node_id": "structure-node-7f563c200a461d02",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.9 Magic Types",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 30,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-9-magic-types",
+        "structure_node_id": "structure-node-6927eb9934425d7d",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.10 How to Read Magic Details",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 31,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details",
+        "structure_node_id": "structure-node-2fc081f40a6fb3f4",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.11 Ancient Magic and the Sorcerer Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 32,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-11-ancient-magic-and-the-sorcerer-skill",
+        "structure_node_id": "structure-node-e49ce519f1fb8adf",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.12 Ancient Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 33,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list",
+        "structure_node_id": "structure-node-45f45939bbf86867",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.12 Ancient Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 34,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-2",
+        "structure_node_id": "structure-node-6685d2df62f5931b",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.12 Ancient Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 35,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-3",
+        "structure_node_id": "structure-node-be28f756cdfd72e9",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.12 Ancient Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 36,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-4",
+        "structure_node_id": "structure-node-1063ee73168ef3a9",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.13 Spirit Magic and the Shaman Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 37,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-13-spirit-magic-and-the-shaman-skill",
+        "structure_node_id": "structure-node-18573ec2240d96bc",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.14 Spirit Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 38,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-14-spirit-magic-list",
+        "structure_node_id": "structure-node-63987d441d16a20c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.14 Spirit Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 39,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-2",
+        "structure_node_id": "structure-node-e8480abc5894473a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.14 Spirit Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 40,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-3",
+        "structure_node_id": "structure-node-7e0a7d6f4bfbadec",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.15 Holy Magic and the Priest Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 41,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill",
+        "structure_node_id": "structure-node-776795683234bb41",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.16 Basic Holy Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 42,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list",
+        "structure_node_id": "structure-node-f5473ecebe4a5d12",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.16 Basic Holy Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 43,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-2",
+        "structure_node_id": "structure-node-1b0a8444da828950",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.1.17 Special Holy Magic List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 44,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-1-17-special-holy-magic-list",
+        "structure_node_id": "structure-node-b5f91a9d169b9dc2",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.2 Common Runes",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 45,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-2-common-runes",
+        "structure_node_id": "structure-node-ef408762fe31c1e3",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "5.3 Spellsongs",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 46,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-5-3-spellsongs",
+        "structure_node_id": "structure-node-531607a09116eabd",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 6: Adventurers’ Skills Other Than Combat And Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 47,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-6-adventurers-skills-other-than-combat-and-magic",
+        "structure_node_id": "structure-node-bf65ef6ac14c6771",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "6.2 Thief Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 48,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-2-thief-skill",
+        "structure_node_id": "structure-node-8af72290933fc197",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "6.3 Ranger Skill through 6.4 Sage Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 49,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill",
+        "structure_node_id": "structure-node-27038c02352f6796",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "6.5 Bard Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 50,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-5-bard-skill",
+        "structure_node_id": "structure-node-7142f1327caed5c8",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "6.6 Common Adventurer Abilities",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 51,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-6-6-common-adventurer-abilities",
+        "structure_node_id": "structure-node-b584521319ecfd8d",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 7: General Skills",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 52,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-7-general-skills",
+        "structure_node_id": "structure-node-a3a26ba724d51479",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "7.2 Merchant Skill through 7.3 Craftsman Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 53,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-7-2-merchant-skill-through-7-3-craftsman-skill",
+        "structure_node_id": "structure-node-0723743bd268b0aa",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "7.5 Hunter Skill through 7.6 Sailor Skill",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 54,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-7-5-hunter-skill-through-7-6-sailor-skill",
+        "structure_node_id": "structure-node-fc771ad9bd581454",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 8: Character Growth",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 55,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-8-character-growth",
+        "structure_node_id": "structure-node-9e0ffaa1a7686a09",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "8.2 How to Use Experience Points: Increasing Skill Levels through 8.4 Increasing General Skills",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 56,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-8-2-how-to-use-experience-points-increasing-skill-levels",
+        "structure_node_id": "structure-node-f4135c2452cb1c4e",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Part 2: Game Masters’ Section",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 57,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-part-2-game-masters-section",
+        "structure_node_id": "structure-node-16cd58557453d43f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 9: Notes on Success Rolls",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 58,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-9-notes-on-success-rolls",
+        "structure_node_id": "structure-node-b568cc7312bc3092",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "9.2 Should You Use a Target Score Check or a Difficulty Check? through 9.4 Automatic Success Restrictions",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 59,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check",
+        "structure_node_id": "structure-node-0813bf84822caf95",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 10: Notes on Combat",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 60,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-10-notes-on-combat",
+        "structure_node_id": "structure-node-f5bc08481239b163",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "10.3 Surprise Attacks through 10.6 Combat Between Monsters",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 61,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-10-3-surprise-attacks-through-10-6-combat-between-monsters",
+        "structure_node_id": "structure-node-5b7053eda5e36743",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 11: Notes on Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 62,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-11-notes-on-magic",
+        "structure_node_id": "structure-node-7a04f6af524116a7",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "11.2 Dark Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 63,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-2-dark-magic",
+        "structure_node_id": "structure-node-1b564f729f81ab4c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "11.2 Dark Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 64,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-2-dark-magic-2",
+        "structure_node_id": "structure-node-ae66b5445849d515",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "11.3 Dragon Roar Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 65,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-3-dragon-roar-magic",
+        "structure_node_id": "structure-node-cf5d0ae610de7b30",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "11.4 Acquiring Rune Master Skills and Increasing Levels through 11.5 Asking NPCs to Use Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 66,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-11-4-acquiring-rune-master-skills-and-increasing-levels-through",
+        "structure_node_id": "structure-node-f3ff7e9f4eaa0228",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 12: Various Checks",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 67,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-12-various-checks",
+        "structure_node_id": "structure-node-353cdde2b822bf4f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "12.1 Rules Regarding Language",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 68,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-1-rules-regarding-language",
+        "structure_node_id": "structure-node-e79ed91b824b8f92",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "12.2 Rules for Poison, Illness and Infection",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 69,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection",
+        "structure_node_id": "structure-node-157e88fddb7cc294",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "12.2 Rules for Poison, Illness and Infection",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 70,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-2",
+        "structure_node_id": "structure-node-8074df3411f59eeb",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "12.3 Work Requests to NPCs",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 71,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-12-3-work-requests-to-npcs",
+        "structure_node_id": "structure-node-029c31fc4b6eacdf",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 13: Monsters!",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 72,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-13-monsters",
+        "structure_node_id": "structure-node-d155bfed83438891",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.1 Types of Monsters",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 73,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-1-types-of-monsters",
+        "structure_node_id": "structure-node-95a3f839506e1c51",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.1 How to Read the Monster Catalog",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 74,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog",
+        "structure_node_id": "structure-node-a59f22f146aad6ea",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.2 Fae",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 75,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-2-fae",
+        "structure_node_id": "structure-node-a8fb2ba6e54f5a01",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.3 Youma",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 76,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-3-youma",
+        "structure_node_id": "structure-node-a2335ae90fff5295",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.4 Spirits",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 77,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-4-spirits",
+        "structure_node_id": "structure-node-88e7f788888ace88",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.5 Titans",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 78,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-5-titans",
+        "structure_node_id": "structure-node-8b141f5c838d419f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.6 Mythical Beasts and Magical Beasts",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 79,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts",
+        "structure_node_id": "structure-node-0d3ead0728114aa1",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.6 Mythical Beasts and Magical Beasts",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 80,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-2",
+        "structure_node_id": "structure-node-569e44c7c44dfb03",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.6 Mythical Beasts and Magical Beasts",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 81,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-3",
+        "structure_node_id": "structure-node-242cc75de4dcdfa8",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.7 Animals",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 82,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-7-animals",
+        "structure_node_id": "structure-node-88deab083030f5d4",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.7 Animals",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 83,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-7-animals-2",
+        "structure_node_id": "structure-node-d0f169f0e3b9ae73",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.7 Animals",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 84,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-7-animals-3",
+        "structure_node_id": "structure-node-7c1c2841025deb8c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.8 Plants",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 85,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-8-plants",
+        "structure_node_id": "structure-node-6f1795569d21c7ed",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.9 Undead",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 86,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-9-undead",
+        "structure_node_id": "structure-node-0510e6c09cbb1322",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.9 Undead",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 87,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-9-undead-2",
+        "structure_node_id": "structure-node-1b98a6ccb2b5f8d7",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.10 Magical Creatures",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 88,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-10-magical-creatures",
+        "structure_node_id": "structure-node-6b0985f121bcf15c",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.10 Magical Creatures",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 89,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-10-magical-creatures-2",
+        "structure_node_id": "structure-node-491cf9cde56d2956",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.11 Daemons/Underworld Creatures",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 90,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-11-daemons-underworld-creatures",
+        "structure_node_id": "structure-node-60973ad359ff27b2",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.2.12 Humans through 13.2.13 Other",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 91,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-2-12-humans-through-13-2-13-other",
+        "structure_node_id": "structure-node-a38f36bf04ef4431",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.3 Converting Character Data to Monster Data through 13.5 Monster Level and Adventurer Level",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 92,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-3-converting-character-data-to-monster-data-through-13-5",
+        "structure_node_id": "structure-node-259a829036bd9772",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "13.6 Handling Monster Special Abilities",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 93,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities",
+        "structure_node_id": "structure-node-5d1cd604bb6c58d3",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 14: Treasures",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 94,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-14-treasures",
+        "structure_node_id": "structure-node-cb890a218ecff34a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "14.2 Adventure Treasure and Reward Amounts",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 95,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-2-adventure-treasure-and-reward-amounts",
+        "structure_node_id": "structure-node-cb92e6d7fa98d2ec",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "14.4 Magical Item List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 96,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-4-magical-item-list",
+        "structure_node_id": "structure-node-6cec747204e63174",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "14.4 Magical Item List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 97,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-4-magical-item-list-2",
+        "structure_node_id": "structure-node-9b0aa2f6ff50f979",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "14.4 Magical Item List",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 98,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-14-4-magical-item-list-3",
+        "structure_node_id": "structure-node-28035fad2f302eee",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 15: Experience Points",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 99,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-15-experience-points",
+        "structure_node_id": "structure-node-9567c0a76e78b78e",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "15.1 Four Types of Experience Points",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 100,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-15-1-four-types-of-experience-points",
+        "structure_node_id": "structure-node-cc8127454f5f548f",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Part 3: Optional Rules",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 101,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-part-3-optional-rules",
+        "structure_node_id": "structure-node-5c6c1508ea207b0e",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 16: Optional Rules for Combat",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 102,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-16-optional-rules-for-combat",
+        "structure_node_id": "structure-node-472cc4a2bd4bb9a3",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "16.1 Combat in Which Monsters Roll Dice through 16.3 Projectile Bonus Damage",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 103,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice-through-16-3-projectile",
+        "structure_node_id": "structure-node-d9f09648713f43ed",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "16.5 Combat Options",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 104,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-5-combat-options",
+        "structure_node_id": "structure-node-13207f3059812bab",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "16.8 Weapons and Armor That Are Too Heavy",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 105,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-8-weapons-and-armor-that-are-too-heavy",
+        "structure_node_id": "structure-node-c011ea6a739f4118",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "16.9  Special Weapons",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 106,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-16-9-special-weapons",
+        "structure_node_id": "structure-node-c98ebf66af5f259b",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 17: Optional Rules for Magic",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 107,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-17-optional-rules-for-magic",
+        "structure_node_id": "structure-node-bb20ae829624ad8e",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "17.2 Lost Spells through 17.5 Full Resistance",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 108,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-17-2-lost-spells-through-17-5-full-resistance",
+        "structure_node_id": "structure-node-e4d399c50ac090cc",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Chapter 18: Other Optional Rules",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 109,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-chapter-18-other-optional-rules",
+        "structure_node_id": "structure-node-53406d8a4f47dce0",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "18.2 Guidelines for Adventurer Age and Ability Score Changes through 18.3 Rules for Destroying Structures",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 110,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-18-2-guidelines-for-adventurer-age-and-ability-score-changes",
+        "structure_node_id": "structure-node-7045f7790025773d",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Guide to Forcelia & Alecrast",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 111,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-guide-to-forcelia-alecrast",
+        "structure_node_id": "structure-node-9b5ec021b2326918",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Guide to Forcelia & Alecrast",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 112,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-guide-to-forcelia-alecrast",
+        "structure_node_id": "structure-node-9b5ec021b2326918",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Designer’s Notes",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 113,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-designer-s-notes",
+        "structure_node_id": "structure-node-39b852f98971a022",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Charts",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 114,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition-charts",
+        "structure_node_id": "structure-node-89f05f27e7042a0a",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document through Charts",
+        "parent_structure_node_id": "structure-node-18ecd2156544172c",
+        "source_locator": "Sword World RPG - Complete Edition.pdf",
+        "source_order": 115,
+        "source_range_id": "source-range-sword-world-rpg-complete-edition",
+        "structure_node_id": "structure-node-b700edc35aa37f23",
+        "structure_node_kind": "section"
+      }
+    ]
+  },
+  "document_structure_artifact_id": "document-structure-894a6e2933ae74bf",
+  "document_structure_fingerprint": "f822d1aa56514e5c"
+}

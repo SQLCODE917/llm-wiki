@@ -2,94 +2,127 @@
 page_id: javascriptallonge-as-little-as-possible-about-functions-but-no-less
 page_kind: source
 summary: As Little As Possible About Functions, But No Less from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.30-31
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.30-38
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-JavaScript functions are values that evaluate expressions, return values, and have identity semantics.
+This chapter introduces basic functions in JavaScript, covering their representation as values, identity (as reference types), application, and how to return values and expressions from functions.
 
 ## Key supported claims
 
-- In JavaScript, functions are values, but they are also much more than simple numbers, strings, or even complex data structures like trees or maps (raw/javascriptallonge.pdf p.30-31).
-- Functions represent computations to be performed (raw/javascriptallonge.pdf p.30-31).
-- This is a function that is applied to no values and returns 0 (raw/javascriptallonge.pdf p.30-31).
-- But we must understand that whether we see [Function] or () => 0 , internally JavaScript has a full and proper function (raw/javascriptallonge.pdf p.30-31).
+- Functions in JavaScript are values representing computations (raw/javascriptallonge.pdf p.30-38).
+- Functions are reference types, not value types (raw/javascriptallonge.pdf p.30-38).
+- Functions are applied to arguments to produce a value (raw/javascriptallonge.pdf p.30-38).
+- Functions can return values or evaluate expressions (raw/javascriptallonge.pdf p.30-38).
+- Functions can return other functions (raw/javascriptallonge.pdf p.30-38).
 
 ## Technical details
 
-### `technical-atom-69e1fbd469e13ef0` code
+### `technical-atom-d7bf8573ef18d9c4` code
 
-Citation: (raw/javascriptallonge.pdf p.30-31)
-
-```javascript
-() => 0
-```
-
-### `technical-atom-d5ce0404744a426c` code
-
-Citation: (raw/javascriptallonge.pdf p.30-31)
+Citation: (raw/javascriptallonge.pdf p.30-38)
 
 ```javascript
-(() => 0) //=> [Function]
+> 16 The simplest possible function is () => {}, we’ll see that later.
 ```
 
-### `technical-atom-351705f992de337d` code
+### `technical-atom-692965100fdc06e7` code
 
-Citation: (raw/javascriptallonge.pdf p.30-31)
+Citation: (raw/javascriptallonge.pdf p.30-38)
 
+```javascript
+(() => 0) === (() => 0)
 ```
-16 The simplest possible function is () => {} , we'll see that later.
+
+### `technical-atom-7d3a4a47ef531ed5` code
+
+Citation: (raw/javascriptallonge.pdf p.30-38)
+
+```javascript
+(() => 0)() //=> 0
 ```
 
-### `technical-atom-59c2775910c3d844` requirement
+### `technical-atom-768edade4f61bb08` code
 
-Citation: (raw/javascriptallonge.pdf p.30-31)
+Citation: (raw/javascriptallonge.pdf p.30-38)
 
-I'd prefer something else, but I must accept that what gets typed back to us on the screen is arbitrary, and all that really counts is that it is somewhat useful for a human to read.
+```javascript
+(() => 1)() //=> 1 (() => "Hello, JavaScript")() //=> "Hello, JavaScript" (() => Infinity)() //=> Infinity
+```
 
-### `technical-atom-dbe44efe552e814c` requirement
+### `technical-atom-f10d0ee0f9a27539` code
 
-Citation: (raw/javascriptallonge.pdf p.30-31)
+Citation: (raw/javascriptallonge.pdf p.30-38)
 
-But we must understand that whether we see [Function] or () => 0 , internally JavaScript has a full and proper function.
+```javascript
+(() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity)() //=> Infinity
+```
+
+### `technical-atom-5d5fc95fbaf36e10` code
+
+Citation: (raw/javascriptallonge.pdf p.30-38)
+
+```javascript
+(() => (() => 0)())() //=> 0
+```
+
+### `technical-atom-80aebdeb09a79181` code
+
+Citation: (raw/javascriptallonge.pdf p.30-38)
+
+```javascript
+(() => (1 + 1, 2 + 2))() //=> 4
+```
+
+### `technical-atom-9a9fb89fab463626` code
+
+Citation: (raw/javascriptallonge.pdf p.30-38)
+
+```javascript
+() => (1 + 1, 2 + 2)
+```
 
 ## Related technical details
 
-### From [[javascriptallonge-floating]]: `technical-atom-02b0bf8004b983cd` requirement
+### From [[javascriptallonge-closures-and-scope]]: `technical-atom-6f035a06fb85b432` code
 
-Relation: nearby source page; matched terms `but`, `have`, `more`, `numbers`, `requirement`, `than`
+Relation: nearby source page; matched terms `about`, `arguments`, `but`, `can`, `function`, `functions`
 
-Citation: (raw/javascriptallonge.pdf p.25-26)
-
-But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic 15 .
-
-### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-053e216a0ba143de` code
-
-Relation: nearby source page; matched terms `evaluate`, `expressions`, `functions`, `javascript`, `return`, `values`
-
-Citation: (raw/javascriptallonge.pdf p.32-33)
+Citation: (raw/javascriptallonge.pdf p.44-48)
 
 ```javascript
-(() => 1)() //=> 1 (() => "Hello, JavaScript")() //=> "Hello, JavaScript" (() => Infinity )() //=> Infinity
+Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
 ```
 
-### From [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]]: `technical-atom-b5a28ac67439659d` code
+### From [[javascriptallonge-a-rich-aroma-basic-numbers]]: `technical-atom-2fdee7ba3e1580d5` code
 
-Relation: nearby source page; matched terms `evaluate`, `expressions`, `functions`, `javascript`, `return`, `values`
+Relation: nearby source page; matched terms `basic`, `function`, `representing`, `types`, `value`, `values`
 
-Citation: (raw/javascriptallonge.pdf p.32-33)
+Citation: (raw/javascriptallonge.pdf p.24-27)
 
 ```javascript
-(() => 1 + 1)() //=> 2 (() => "Hello, " + "JavaScript")() //=> "Hello, JavaScript" (() => Infinity * Infinity )() //=> Infinity
+In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.— Wikipedia[12]
 ```
 
-### From [[javascriptallonge-operations-on-numbers]]: `technical-atom-d0aad52ee8c53e7f` worked-example
+### From [[javascriptallonge-values-and-identity]]: `technical-atom-047883408a2c29a2` code
 
-Relation: nearby source page; matched terms `even`, `expressions`, `like`, `much`, `numbers`
+Relation: nearby source page; matched terms `identity`, `javascript`, `not`, `they`, `values`, `whether`
 
-Citation: (raw/javascriptallonge.pdf p.26-27)
+Citation: (raw/javascriptallonge.pdf p.21-23)
 
-We can create expressions that look very much like mathematical expressions, for example we can write 1 + 1 or 2 * 3 or 42 34 or even 6 / 2 .
+```
+In JavaScript, we test whether two values are identical with the === operator, and whether they are not identical with the !== operator:
+```
+
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please]]: `technical-atom-07b4f982763531cb` code
+
+Relation: nearby source page; matched terms `arguments`, `expressions`, `function`, `functions`, `values`
+
+Citation: (raw/javascriptallonge.pdf p.39-43)
+
+```javascript
+Expressions consist either of representations of values (like 3.14159265, true, and undefined), operators that combine expressions (like 3 + 2), some special forms like [1, 2, 3] for creating arrays out of expressions, or function ( arguments) { body-statements } for creating functions.
+```

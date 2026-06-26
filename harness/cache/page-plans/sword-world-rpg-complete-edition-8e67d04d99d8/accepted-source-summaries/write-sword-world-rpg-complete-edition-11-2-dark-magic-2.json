@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Recall Spirit spell requires a final score of 20 or greater to be fully effective (raw/Sword World RPG - Complete Edition.pdf p.147-148).",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0014"
+      ]
+    },
+    {
+      "bullet_text": "Call God spell requires a final score of 30 or greater while defeating the sacrifice's resist for full effect (raw/Sword World RPG - Complete Edition.pdf p.147-148).",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0013"
+      ]
+    },
+    {
+      "bullet_text": "Special dark magic spells are unique to each wicked god and can be used by priests of that god (raw/Sword World RPG - Complete Edition.pdf p.147-148).",
+      "covered_source_claims": [
+        "source-claim-unit-0077-0015"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 11.2 Dark Magic from Sword World RPG - Complete Edition covers rules for dark magic spells, including Recall Spirit, Call God, and various special dark magic spells."
+}

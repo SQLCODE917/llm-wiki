@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Each player must make a resistance roll using monster's magic intensity as the target score (raw/Sword World RPG - Complete Edition.pdf p.60-60).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0005"
+      ]
+    },
+    {
+      "bullet_text": "The following procedure is used to make a check when data created for a character casts magic on adventurers (raw/Sword World RPG - Complete Edition.pdf p.60-60).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0012"
+      ]
+    },
+    {
+      "bullet_text": "Each magic has a score called base mental power cost, which is divided by the corresponding rune master skill level (rounded up) to determine the actual mental power consumed (raw/Sword World RPG - Complete Edition.pdf p.60-60).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0009"
+      ]
+    },
+    {
+      "bullet_text": "If a character's mental power reaches 0, they will lose consciousness and cannot regain consciousness unless they recover their mental power to 1 point or more (raw/Sword World RPG - Complete Edition.pdf p.60-60).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0008"
+      ]
+    },
+    {
+      "bullet_text": "Magic expansion is done by doubling or tripling the amount of mental power consumed, not the base mental power cost (raw/Sword World RPG - Complete Edition.pdf p.61-61).",
+      "covered_source_claims": [
+        "source-claim-unit-0033-0011"
+      ]
+    }
+  ],
+  "source_record_text": "This section covers rules for recovering mental power and magic expansion in the Sword World RPG - Complete Edition."
+}

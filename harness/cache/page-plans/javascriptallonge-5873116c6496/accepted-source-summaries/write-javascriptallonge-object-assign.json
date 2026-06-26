@@ -1,11 +1,17 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Assigning properties from one object to another (also called “cloning” or “shallow copying”) is a basic building block that we will later use to implement more advanced paradigms like mixins. (raw/javascriptallonge.pdf p.198-200)",
+      "bullet_text": "Object.assign extends objects by assigning properties to them (raw/javascriptallonge.pdf p.198-200).",
       "covered_source_claims": [
-        "source-claim-unit-0150-0005"
+        "source-claim-unit-0046-0012"
+      ]
+    },
+    {
+      "bullet_text": "Object.assign can copy properties from one object to another, functioning as a shallow copy (raw/javascriptallonge.pdf p.198-200).",
+      "covered_source_claims": [
+        "source-claim-unit-0046-0005"
       ]
     }
   ],
-  "source_record_text": "Object.assign copies properties from source objects into a target object, enabling cloning, extension, and prototype manipulation."
+  "source_record_text": "Chapter on Object.assign in JavaScript Allongé, covering its usage for extending objects and copying properties."
 }

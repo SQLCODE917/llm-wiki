@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript does not permit us to rebind a name that has been bound with const. (raw/javascriptallonge.pdf p.148-150)",
+      "bullet_text": "JavaScript allows rebinding values to parameters, but not to names bound with const (raw/javascriptallonge.pdf p.148-157).",
       "covered_source_claims": [
-        "source-claim-unit-0121-0011"
+        "source-claim-unit-0038-0013"
       ]
     },
     {
-      "bullet_text": "JavaScript permits reassigning values to parameters. (raw/javascriptallonge.pdf p.148-150)",
+      "bullet_text": "const prevents rebinding of names, while let allows rebinding, both supporting block scoping (raw/javascriptallonge.pdf p.148-157).",
       "covered_source_claims": [
-        "source-claim-unit-0121-0013"
+        "source-claim-unit-0038-0015"
       ]
     },
     {
-      "bullet_text": "The let keyword allows reassignment of variables. (raw/javascriptallonge.pdf p.148-150)",
+      "bullet_text": "var is function-scoped, not block-scoped, and hoisted to the top of the function, unlike let and const (raw/javascriptallonge.pdf p.148-157).",
       "covered_source_claims": [
-        "source-claim-unit-0121-0010"
+        "source-claim-unit-0038-0012"
       ]
     }
   ],
-  "source_record_text": "JavaScript allows re-assignment of values to parameters, but not to names bound with const. The let keyword provides a way to declare variables that can be reassigned."
+  "source_record_text": "This chapter from JavaScript Allongé discusses rebinding and reassignment in JavaScript, focusing on how different declaration keywords (`const`, `let`, `var`) handle variable bindings and scoping."
 }

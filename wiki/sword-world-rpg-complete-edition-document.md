@@ -1,21 +1,23 @@
 ---
 page_id: sword-world-rpg-complete-edition-document
 page_kind: source
-summary: Summary of the Sword World RPG - Complete Edition document, including its structure and key sections.
+summary: Document from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf p.1-3
-updated: 2026-06-24
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This is a summary of the Sword World RPG - Complete Edition document, detailing its structure and key sections.
+This is a summary of the Sword World RPG - Complete Edition rulebook, focusing on its structure and key rule sections as presented in the first three pages.
 
 ## Key supported claims
 
-- The document outlines the structure of Sword World RPG - Complete Edition, including its key sections and parts (raw/Sword World RPG - Complete Edition.pdf p.1-3)
-- The document includes rules for unconsciousness, death, and damage recovery (raw/Sword World RPG - Complete Edition.pdf p.1-3)
-- The document details the parts of the RPG, including player and game master sections (raw/Sword World RPG - Complete Edition.pdf p.1-3)
+- The rulebook is divided into three main sections: Player’s Section, Game Master’s Section, and Optional Rules (raw/Sword World RPG - Complete Edition.pdf p.1-3).
+- Key sections include character creation, combat rounds, weapon combat, magic, and adventurers’ skills (raw/Sword World RPG - Complete Edition.pdf p.1-3).
+- Magic includes basic rules, runes, and spellsongs (raw/Sword World RPG - Complete Edition.pdf p.1-3).
+- Special monsters are represented using character data (raw/Sword World RPG - Complete Edition.pdf p.1-3).
+- Projectile bonuses are used in magic (raw/Sword World RPG - Complete Edition.pdf p.1-3).
 
 ## Technical details
 
@@ -82,3 +84,41 @@ Citation: (raw/Sword World RPG - Complete Edition.pdf p.1)
 |4.7 Attacks From Characters|Difculties ............................... 135|
 |Against Characters ................... 48||
 |4.8 Applying Damage ........ 50||
+
+## Related technical details
+
+### From [[sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races]]: `technical-atom-af324a94c26813e7` exception
+
+Relation: nearby source page; matched terms `magic`, `using`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.12-13)
+
+Using magic is hard work, and one cannot hope to cast much magic without a high mental capacity.
+
+### From [[sword-world-rpg-complete-edition-1-4-character-creation]]: `technical-atom-b9b125b4bc5daf4e` table
+
+Relation: nearby source page; matched terms `character`, `creation`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.19)
+
+|Attained<br>Level|Sorcerer & Sage at the same<br>time|Sorcerer|<br>Sorcerer<br>(with<br>Sage)|Shaman|Fighter<br>Tief<br>Priest|Ranger<br>Sage<br>Bard|
+|---|---|---|---|---|---|---|
+|1|2000|2000|1500|1500|1000|500|
+|2||||2000|1500|1000|
+|3||||||1500|
+
+### From [[sword-world-rpg-complete-edition-1-4-character-creation-2]]: `technical-atom-96e8d1708474bbe7` procedure
+
+Relation: nearby source page; matched terms `character`, `creation`, `first`, `weapon`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.22-28)
+
+For an adventurer, the first step to survival is to choose a weapon most suited to their strength.
+
+### From [[sword-world-rpg-complete-edition-1-4-character-creation-2]]: `technical-atom-cc541db8cca54428` requirement
+
+Relation: nearby source page; matched terms `character`, `creation`, `weapon`
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.22-28)
+
+Basically, the most suitable weapon is one whose _required strength equals the character's strength_ .

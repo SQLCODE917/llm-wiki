@@ -1,282 +1,188 @@
 # Index
 
 ## Sources
-- [[antikythera-mechanism]] — Summary of the Antikythera Mechanism, an ancient Greek analog computer.
-- [[javascriptallonge]] — Hub page for JavaScript Allongé, the 'Six' Edition
-- [[javascriptallonge-a-balanced-statement-about-combinators]] — a balanced statement about combinators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-a-few-utilities]] — a few utilities from raw/javascriptallonge.pdf.
-- [[javascriptallonge-a-history-lesson]] — a history lesson from raw/javascriptallonge.pdf.
+- [[1776thomaspaine]] — Hub page for the source '1776' by Thomas Paine, linking chapter pages.
+- [[1776thomaspaine-document]] — Document from raw/1776ThomasPaine.pdf.
+- [[javascriptallonge]] — Summary of the source 'javascriptallonge'.
 - [[javascriptallonge-a-pull-of-the-lever-prefaces]] — A Pull of the Lever: Prefaces from raw/javascriptallonge.pdf.
-- [[javascriptallonge-a-pull-of-the-lever-prefaces-2]] — Summary of the prefaces section from JavaScript Allongé, covering coffee preparation methods.
-- [[javascriptallonge-a-quick-summary-of-functions-and-bodies]] — a quick summary of functions and bodies from raw/javascriptallonge.pdf.
-- [[javascriptallonge-a-return-to-backward-thinking]] — a return to backward thinking from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-rich-aroma-basic-numbers]] — A Rich Aroma: Basic Numbers from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]] — A Warm Cup: Basic Strings and Quasi-Literals from raw/javascriptallonge.pdf.
 - [[javascriptallonge-about-javascript-allong]] — About JavaScript Allongé from raw/javascriptallonge.pdf.
 - [[javascriptallonge-about-the-author]] — About The Author from raw/javascriptallonge.pdf.
 - [[javascriptallonge-about-the-sample-pdf]] — About The Sample PDF from raw/javascriptallonge.pdf.
-- [[javascriptallonge-after-another-drink]] — after another drink from raw/javascriptallonge.pdf.
-- [[javascriptallonge-ah-i-d-like-to-have-an-argument-please-22]] — Ah. I'd Like to Have an Argument, Please. 22 from raw/javascriptallonge.pdf.
-- [[javascriptallonge-and-also]] — And also: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-and-are-control-flow-operators]] — || and && are control-flow operators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-applying-functions]] — Functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-are-consts-also-from-a-shadowy-planet]] — are consts also from a shadowy planet? from raw/javascriptallonge.pdf.
-- [[javascriptallonge-array-literals]] — array literals from raw/javascriptallonge.pdf.
+- [[javascriptallonge-ah-i-d-like-to-have-an-argument-please]] — Ah. I'd Like to Have an Argument, Please. from raw/javascriptallonge.pdf.
 - [[javascriptallonge-arrays-and-destructuring-arguments]] — Arrays and Destructuring Arguments from raw/javascriptallonge.pdf.
 - [[javascriptallonge-as-little-as-possible-about-functions-but-no-less]] — As Little As Possible About Functions, But No Less from raw/javascriptallonge.pdf.
-- [[javascriptallonge-back-on-the-block]] — back on the block from raw/javascriptallonge.pdf.
-- [[javascriptallonge-backwardness]] — backwardness from raw/javascriptallonge.pdf.
 - [[javascriptallonge-basic-operations-on-iterables]] — Basic Operations on Iterables from raw/javascriptallonge.pdf.
-- [[javascriptallonge-bonus]] — bonus from raw/javascriptallonge.pdf.
 - [[javascriptallonge-building-blocks]] — Building Blocks from raw/javascriptallonge.pdf.
-- [[javascriptallonge-call-by-sharing]] — call by sharing from raw/javascriptallonge.pdf.
-- [[javascriptallonge-call-by-value]] — call by value from raw/javascriptallonge.pdf.
-- [[javascriptallonge-caveat]] — caveat from raw/javascriptallonge.pdf.
 - [[javascriptallonge-closures-and-scope]] — Closures and Scope from raw/javascriptallonge.pdf.
-- [[javascriptallonge-combinators]] — combinators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-commas]] — commas from raw/javascriptallonge.pdf.
+- [[javascriptallonge-combinators-and-function-decorators]] — Combinators and Function Decorators from raw/javascriptallonge.pdf.
 - [[javascriptallonge-composing-and-decomposing-data]] — Composing and Decomposing Data from raw/javascriptallonge.pdf.
-- [[javascriptallonge-composition]] — composition from raw/javascriptallonge.pdf.
-- [[javascriptallonge-const]] — mixing let and const from raw/javascriptallonge.pdf.
-- [[javascriptallonge-const-and-lexical-scope]] — const and lexical scope from raw/javascriptallonge.pdf.
-- [[javascriptallonge-contact]] — contact from raw/javascriptallonge.pdf.
-- [[javascriptallonge-converting-non-tail-calls-to-tail-calls]] — converting non-tail-calls to tail-calls from raw/javascriptallonge.pdf.
-- [[javascriptallonge-copy-on-read]] — copy-on-read from raw/javascriptallonge.pdf.
-- [[javascriptallonge-copy-on-write]] — copy-on-write from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copy-on-write]] — Copy on Write from raw/javascriptallonge.pdf.
 - [[javascriptallonge-copyright-notice]] — Copyright Notice from raw/javascriptallonge.pdf.
-- [[javascriptallonge-daniel-friedman-and-matthias-felleisen]] — Daniel Friedman and Matthias Felleisen from raw/javascriptallonge.pdf.
-- [[javascriptallonge-default-arguments]] — default arguments from raw/javascriptallonge.pdf.
-- [[javascriptallonge-defaults-and-destructuring]] — defaults and destructuring from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring-and-return-values]] — destructuring and return values from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring-arrays]] — destructuring arrays from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring-is-not-pattern-matching]] — destructuring is not pattern matching from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring-objects]] — destructuring objects from raw/javascriptallonge.pdf.
-- [[javascriptallonge-destructuring-parameters]] — destructuring parameters from raw/javascriptallonge.pdf.
-- [[javascriptallonge-disclaimer]] — Disclaimer from raw/javascriptallonge.pdf.
-- [[javascriptallonge-ecmascript-6-has-three-major-groups-of-features]] — ECMAScript 6 has three major groups of features: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-element-references]] — element references from raw/javascriptallonge.pdf.
-- [[javascriptallonge-evaluation-time]] — evaluation time from raw/javascriptallonge.pdf.
-- [[javascriptallonge-factorials]] — factorials from raw/javascriptallonge.pdf.
-- [[javascriptallonge-false]] — false from raw/javascriptallonge.pdf.
+- [[javascriptallonge-document]] — Document from raw/javascriptallonge.pdf.
 - [[javascriptallonge-flip]] — Flip from raw/javascriptallonge.pdf.
-- [[javascriptallonge-flipping-methods]] — flipping methods from raw/javascriptallonge.pdf.
-- [[javascriptallonge-floating]] — floating from raw/javascriptallonge.pdf.
-- [[javascriptallonge-folding]] — folding from raw/javascriptallonge.pdf.
-- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the 'Six' edition from raw/javascriptallonge.pdf.
-- [[javascriptallonge-forewords-to-the-first-edition]] — Forewords and prefaces from the first edition.
-- [[javascriptallonge-from]] — from from raw/javascriptallonge.pdf.
-- [[javascriptallonge-front-matter]] — Summary of the front matter of JavaScript Allongé, the Six Edition.
-- [[javascriptallonge-function-declaration-caveats-34]] — function declaration caveats 34 from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function-declarations]] — function declarations from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function-decorators]] — function decorators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-function-parameters-are-eager]] — function parameters are eager from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functional-iterators]] — a look back at functional iterators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functions-and-identities]] — functions and identities from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functions-are-not-the-real-point]] — functions are not the real point from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functions-that-evaluate-to-functions]] — functions that evaluate to functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-functions-that-return-values-and-evaluate-expressions]] — functions that return values and evaluate expressions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-foreword-to-the-six-edition]] — Foreword to the ``Six'' edition from raw/javascriptallonge.pdf.
+- [[javascriptallonge-forewords-to-the-first-edition]] — Forewords to the First Edition from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functional-iterators]] — Functional Iterators from raw/javascriptallonge.pdf.
 - [[javascriptallonge-garbage-garbage-everywhere]] — Garbage, Garbage Everywhere from raw/javascriptallonge.pdf.
-- [[javascriptallonge-gathering]] — gathering from raw/javascriptallonge.pdf.
 - [[javascriptallonge-generating-iterables]] — Generating Iterables from raw/javascriptallonge.pdf.
-- [[javascriptallonge-generators-and-iterables]] — generators and iterables from raw/javascriptallonge.pdf.
-- [[javascriptallonge-generators-are-coroutines]] — generators are coroutines from raw/javascriptallonge.pdf.
-- [[javascriptallonge-higher-order-functions]] — higher-order functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-how-this-book-is-organized]] — how this book is organized from raw/javascriptallonge.pdf.
 - [[javascriptallonge-how-to-run-the-examples]] — How to run the examples from raw/javascriptallonge.pdf.
-- [[javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure]] — if functions without free variables are pure, are closures impure? from raw/javascriptallonge.pdf.
-- [[javascriptallonge-images]] — images from raw/javascriptallonge.pdf.
-- [[javascriptallonge-implementing-methods-with-iteration]] — implementing methods with iteration from raw/javascriptallonge.pdf.
-- [[javascriptallonge-inside-out]] — inside-out from raw/javascriptallonge.pdf.
-- [[javascriptallonge-interactive-generators]] — interactive generators from raw/javascriptallonge.pdf.
+- [[javascriptallonge-interactive-generators]] — Interactive Generators from raw/javascriptallonge.pdf.
 - [[javascriptallonge-interlude-the-carpenter-interviews-for-a-job]] — Interlude: The Carpenter Interviews for a Job from raw/javascriptallonge.pdf.
-- [[javascriptallonge-it-s-always-the-environment]] — it's always the environment from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iterables-out-to-infinity]] — iterables out to infinity from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iterating]] — iterating from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iteration]] — // Iteration from raw/javascriptallonge.pdf.
 - [[javascriptallonge-iteration-and-iterables]] — Iteration and Iterables from raw/javascriptallonge.pdf.
-- [[javascriptallonge-iterator-objects]] — iterator objects from raw/javascriptallonge.pdf.
-- [[javascriptallonge-javascript-allong-the-six-edition]] — Summary of the 'Six' Edition of JavaScript Allongé.
-- [[javascriptallonge-javascript-s-generators]] — javascript's generators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-lazy-and-eager-collections]] — eager collections from raw/javascriptallonge.pdf.
-- [[javascriptallonge-lazy-collection-operations]] — lazy collection operations from raw/javascriptallonge.pdf.
-- [[javascriptallonge-left-variadic-destructuring]] — left-variadic destructuring from raw/javascriptallonge.pdf.
+- [[javascriptallonge-lazy-and-eager-collections]] — Lazy and Eager Collections from raw/javascriptallonge.pdf.
 - [[javascriptallonge-left-variadic-functions]] — Left-Variadic Functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-like-this]] — Like this: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-linear-recursion]] — linear recursion from raw/javascriptallonge.pdf.
-- [[javascriptallonge-lists-with-functions-as-data]] — lists with functions as data from raw/javascriptallonge.pdf.
-- [[javascriptallonge-literal-object-syntax]] — literal object syntax from raw/javascriptallonge.pdf.
 - [[javascriptallonge-magic-names]] — Magic Names from raw/javascriptallonge.pdf.
-- [[javascriptallonge-magic-names-and-fat-arrows]] — magic names and fat arrows from raw/javascriptallonge.pdf.
 - [[javascriptallonge-making-data-out-of-functions]] — Making Data Out Of Functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-mapping]] — mapping from raw/javascriptallonge.pdf.
 - [[javascriptallonge-mapwith]] — mapWith from raw/javascriptallonge.pdf.
-- [[javascriptallonge-matthew-knox]] — matthew knox from raw/javascriptallonge.pdf.
 - [[javascriptallonge-maybe]] — Maybe from raw/javascriptallonge.pdf.
-- [[javascriptallonge-memoizing-an-iterable]] — memoizing an iterable from raw/javascriptallonge.pdf.
-- [[javascriptallonge-michael-fogus]] — michael fogus from raw/javascriptallonge.pdf.
-- [[javascriptallonge-more-generators]] — more generators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-mutation]] — building with mutation from raw/javascriptallonge.pdf.
-- [[javascriptallonge-mutation-and-data-structures]] — mutation and data structures from raw/javascriptallonge.pdf.
+- [[javascriptallonge-mutation]] — Mutation from raw/javascriptallonge.pdf.
 - [[javascriptallonge-naming-functions]] — Naming Functions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-nested-blocks]] — nested blocks from raw/javascriptallonge.pdf.
 - [[javascriptallonge-object-assign]] — Object.assign from raw/javascriptallonge.pdf.
 - [[javascriptallonge-once]] — Once from raw/javascriptallonge.pdf.
-- [[javascriptallonge-operations-on-numbers]] — operations on numbers from raw/javascriptallonge.pdf.
-- [[javascriptallonge-operations-on-ordered-collections]] — operations on ordered collections from raw/javascriptallonge.pdf.
-- [[javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable]] — operations that compose two or more iterables into an iterable from raw/javascriptallonge.pdf.
-- [[javascriptallonge-operations-that-transform-an-iterable-into-a-value]] — operations that transform an iterable into a value from raw/javascriptallonge.pdf.
-- [[javascriptallonge-operations-that-transform-one-iterable-into-another]] — operations that transform one iterable into another from raw/javascriptallonge.pdf.
-- [[javascriptallonge-or-even]] — Chapter on the 'Or even' topic in JavaScript Allongé.
-- [[javascriptallonge-ordered-collections]] — ordered collections from raw/javascriptallonge.pdf.
-- [[javascriptallonge-overcoming-limitations]] — overcoming limitations from raw/javascriptallonge.pdf.
 - [[javascriptallonge-partial-application]] — Partial Application from raw/javascriptallonge.pdf.
 - [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — Picking the Bean: Choice and Truthiness from raw/javascriptallonge.pdf.
 - [[javascriptallonge-plain-old-javascript-objects]] — Plain Old JavaScript Objects from raw/javascriptallonge.pdf.
 - [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Prelude: Values and Expressions over Coffee from raw/javascriptallonge.pdf.
-- [[javascriptallonge-quasi-literals]] — quasi-literals from raw/javascriptallonge.pdf.
 - [[javascriptallonge-reassignment]] — Reassignment from raw/javascriptallonge.pdf.
-- [[javascriptallonge-rebinding]] — rebinding from raw/javascriptallonge.pdf.
 - [[javascriptallonge-recipes-with-basic-functions]] — Recipes with Basic Functions from raw/javascriptallonge.pdf.
 - [[javascriptallonge-recipes-with-data]] — Recipes with Data from raw/javascriptallonge.pdf.
-- [[javascriptallonge-recursive-iterators]] — recursive iterators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-reference-types]] — reference types from raw/javascriptallonge.pdf.
-- [[javascriptallonge-reg-raganwald-braithwaite]] — Reg 'raganwald' Braithwaite from raw/javascriptallonge.pdf.
-- [[javascriptallonge-reg-raganwald-braithwaite-2]] — Summary of Reg 'raganwald' Braithwaite's work and the Lean Publishing process.
-- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function]] — representing naughts and crosses as a stateful function from raw/javascriptallonge.pdf.
-- [[javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function]] — representing naughts and crosses as a stateless function from raw/javascriptallonge.pdf.
-- [[javascriptallonge-revisiting-linked-lists]] — revisiting linked lists from raw/javascriptallonge.pdf.
-- [[javascriptallonge-rewriting-iterable-operations]] — rewriting iterable operations from raw/javascriptallonge.pdf.
-- [[javascriptallonge-richard-feynman]] — Richard Feynman from raw/javascriptallonge.pdf.
-- [[javascriptallonge-say-please]] — say 'please' from raw/javascriptallonge.pdf.
-- [[javascriptallonge-self-currying-flip]] — self-currying flip from raw/javascriptallonge.pdf.
 - [[javascriptallonge-self-similarity]] — Self-Similarity from raw/javascriptallonge.pdf.
 - [[javascriptallonge-served-by-the-pot-collections]] — Served by the Pot: Collections from raw/javascriptallonge.pdf.
-- [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]] — shadowy variables from a shadowy planet from raw/javascriptallonge.pdf.
-- [[javascriptallonge-so-why-arrays]] — so why arrays from raw/javascriptallonge.pdf.
-- [[javascriptallonge-some-history]] — some history from raw/javascriptallonge.pdf.
-- [[javascriptallonge-state-machines]] — state machines from raw/javascriptallonge.pdf.
-- [[javascriptallonge-summary]] — summary from raw/javascriptallonge.pdf.
-- [[javascriptallonge-tail-call-optimization]] — tail-call optimization from raw/javascriptallonge.pdf.
+- [[javascriptallonge-summary]] — Summary from raw/javascriptallonge.pdf.
+- [[javascriptallonge-table-of-contents]] — Table of Contents from raw/javascriptallonge.pdf.
 - [[javascriptallonge-tail-calls-and-default-arguments]] — Tail Calls (and Default Arguments) from raw/javascriptallonge.pdf.
 - [[javascriptallonge-tap]] — Tap from raw/javascriptallonge.pdf.
+- [[javascriptallonge-thanks]] — Thanks! from raw/javascriptallonge.pdf.
 - [[javascriptallonge-that-constant-coffee-craving]] — That Constant Coffee Craving from raw/javascriptallonge.pdf.
-- [[javascriptallonge-that-s-nice-is-that-the-only-reason]] — that's nice. is that the only reason? from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-aftermath]] — the aftermath from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-carpenter-s-solution]] — the carpenter's solution from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-function-keyword]] — the function keyword from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-golden-crema-appendices-and-afterwords]] — Summary of the appendices and afterwords section from JavaScript Allongé.
-- [[javascriptallonge-the-kestrel-and-the-idiot]] — the kestrel and the idiot from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-problem]] — the problem from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-simplest-possible-block]] — the simplest possible block from raw/javascriptallonge.pdf.
-- [[javascriptallonge-the-vireo]] — the vireo from raw/javascriptallonge.pdf.
-- [[javascriptallonge-this-seems-familiar]] — this seems familiar from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-first-sip-basic-functions]] — The first sip: Basic Functions from raw/javascriptallonge.pdf.
+- [[javascriptallonge-the-golden-crema-appendices-and-afterwords]] — The Golden Crema: Appendices and Afterwords from raw/javascriptallonge.pdf.
 - [[javascriptallonge-tortoises-hares-and-teleporting-turtles]] — Tortoises, Hares, and Teleporting Turtles from raw/javascriptallonge.pdf.
-- [[javascriptallonge-true]] — Chapter on the boolean value 'true' in JavaScript.
-- [[javascriptallonge-truthiness-and-operators]] — truthiness and operators from raw/javascriptallonge.pdf.
-- [[javascriptallonge-truthiness-and-the-ternary-operator]] — truthiness and the ternary operator from raw/javascriptallonge.pdf.
 - [[javascriptallonge-unary]] — Unary from raw/javascriptallonge.pdf.
-- [[javascriptallonge-undefined]] — undefined from raw/javascriptallonge.pdf.
-- [[javascriptallonge-unfolding-and-laziness]] — unfolding and laziness from raw/javascriptallonge.pdf.
-- [[javascriptallonge-value-types]] — value types from raw/javascriptallonge.pdf.
 - [[javascriptallonge-values-and-identity]] — values and identity from raw/javascriptallonge.pdf.
 - [[javascriptallonge-values-are-expressions]] — values are expressions from raw/javascriptallonge.pdf.
-- [[javascriptallonge-var]] — var from raw/javascriptallonge.pdf.
-- [[javascriptallonge-variables-and-bindings]] — variables and bindings from raw/javascriptallonge.pdf.
-- [[javascriptallonge-void]] — void from raw/javascriptallonge.pdf.
-- [[javascriptallonge-we-get]] — We get: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-we-ll-keep-it-simple]] — We'll keep it simple: from raw/javascriptallonge.pdf.
 - [[javascriptallonge-what-javascript-allong-is-and-isn-t]] — What JavaScript Allongé is. And isn't. from raw/javascriptallonge.pdf.
-- [[javascriptallonge-which-came-first-the-chicken-or-the-egg]] — which came first, the chicken or the egg? from raw/javascriptallonge.pdf.
 - [[javascriptallonge-why]] — Why? from raw/javascriptallonge.pdf.
-- [[javascriptallonge-why-const-and-let-were-invented]] — why const and let were invented from raw/javascriptallonge.pdf.
-- [[javascriptallonge-why-the-six-edition]] — why the 'six' edition? from raw/javascriptallonge.pdf.
-- [[javascriptallonge-will-be-represented-as]] — Will be represented as: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-would-be-3-producing]] — Would be 3 , producing: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-yes-consider-this-variation]] — Yes. Consider this variation: from raw/javascriptallonge.pdf.
-- [[javascriptallonge-yielding-iterables]] — yielding iterables from raw/javascriptallonge.pdf.
-- [[sword-world-rpg-complete-edition]] — Summary of the Sword World RPG - Complete Edition source.
+- [[mit8-01scs22-chapter2]] — MIT 8.01SC Physics I: Classical Mechanics, Chapter 2
+- [[mit8-01scs22-chapter2-document]] — Document from raw/mit8_01scs22_chapter2.pdf.
+- [[sword-world-rpg-complete-edition]] — Complete rules reference for the Sword World RPG system.
+- [[sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races]] — 1.1 Ability Scores through 1.2 Races from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-1-3-skills]] — 1.3 Skills from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-1]] — 1.4 Character Creation (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-1-4-character-creation-part-2]] — 1.4 Character Creation (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-10-3-surprise-attacks]] — 10.3 Surprise Attacks from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-1]] — 11.2 Dark Magic (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-11-2-dark-magic-part-2]] — 11.2 Dark Magic (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-1-4-character-creation]] — 1.4 Character Creation from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-1-4-character-creation-2]] — 1.4 Character Creation from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-10-3-surprise-attacks-through-10-6-combat-between-monsters]] — 10.3 Surprise Attacks through 10.6 Combat Between Monsters from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-2-dark-magic]] — 11.2 Dark Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-2-dark-magic-2]] — 11.2 Dark Magic from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-11-3-dragon-roar-magic]] — 11.3 Dragon Roar Magic from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-11-5-asking-npcs-to-use-magic]] — 11.5 Asking NPCs to Use Magic from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-1]] — 12.2 Rules for Poison, Illness and Infection (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-part-2]] — 12.2 Rules for Poison, Illness and Infection (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-4-acquiring-rune-master-skills-and-increasing-levels-through]] — 11.4 Acquiring Rune Master Skills and Increasing Levels through 11.5 Asking NPCs to Use Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-1-rules-regarding-language]] — 12.1 Rules Regarding Language from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection]] — 12.2 Rules for Poison, Illness and Infection from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-2-rules-for-poison-illness-and-infection-2]] — 12.2 Rules for Poison, Illness and Infection from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-3-work-requests-to-npcs]] — 12.3 Work Requests to NPCs from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-1-types-of-monsters]] — 13.1 Types of Monsters from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-2-1-how-to-read-the-monster-catalog]] — 13.2.1 How to Read the Monster Catalog from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-1]] — 13.2.10 Magical Creatures (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-part-2]] — 13.2.10 Magical Creatures (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-12-humans]] — 13.2.12 Humans from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures]] — 13.2.10 Magical Creatures from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-10-magical-creatures-2]] — 13.2.10 Magical Creatures from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-11-daemons-underworld-creatures]] — 13.2.11 Daemons/Underworld Creatures from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-12-humans-through-13-2-13-other]] — 13.2.12 Humans through 13.2.13 Other from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-2-2-fae]] — 13.2.2 Fae from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-3-youma]] — 13.2.3 Youma from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-2-4-spirits]] — 13.2.4 Spirits from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-2-5-titans]] — 13.2.5 Titans from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-1]] — 13.2.6 Mythical Beasts and Magical Beasts (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-2]] — 13.2.6 Mythical Beasts and Magical Beasts (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-part-3]] — 13.2.6 Mythical Beasts and Magical Beasts (part 3) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-1]] — 13.2.7 Animals (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-2]] — 13.2.7 Animals (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-7-animals-part-3]] — 13.2.7 Animals (part 3) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts]] — 13.2.6 Mythical Beasts and Magical Beasts from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-2]] — 13.2.6 Mythical Beasts and Magical Beasts from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-6-mythical-beasts-and-magical-beasts-3]] — 13.2.6 Mythical Beasts and Magical Beasts from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-7-animals]] — 13.2.7 Animals from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-7-animals-2]] — 13.2.7 Animals from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-7-animals-3]] — 13.2.7 Animals from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-2-8-plants]] — 13.2.8 Plants from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-1]] — 13.2.9 Undead (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-2-9-undead-part-2]] — 13.2.9 Undead (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-13-5-monster-level-and-adventurer-level]] — 13.5 Monster Level and Adventurer Level from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-9-undead]] — 13.2.9 Undead from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-2-9-undead-2]] — 13.2.9 Undead from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-3-converting-character-data-to-monster-data-through-13-5]] — 13.3 Converting Character Data to Monster Data through 13.5 Monster Level and Adventurer Level from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]] — 13.6 Handling Monster Special Abilities from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-1-treasure-and-rewards-in-sword-world]] — 14.1 Treasure and Rewards in Sword World from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-1]] — 14.4 Magical Item List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-2]] — 14.4 Magical Item List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-4-magical-item-list-part-3]] — 14.4 Magical Item List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice]] — 16.1 Combat in Which Monsters Roll Dice from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-2-adventure-treasure-and-reward-amounts]] — 14.2 Adventure Treasure and Reward Amounts from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list]] — 14.4 Magical Item List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-2]] — 14.4 Magical Item List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-4-magical-item-list-3]] — 14.4 Magical Item List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-15-1-four-types-of-experience-points]] — 15.1 Four Types of Experience Points from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-1-combat-in-which-monsters-roll-dice-through-16-3-projectile]] — 16.1 Combat in Which Monsters Roll Dice through 16.3 Projectile Bonus Damage from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-16-5-combat-options]] — 16.5 Combat Options from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-16-7-throwing-multiple-darts-or-daggers]] — 16.7 Throwing Multiple Darts or Daggers from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-17-2-lost-spells]] — 17.2 Lost Spells from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-18-3-rules-for-destroying-structures]] — 18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-8-weapons-and-armor-that-are-too-heavy]] — 16.8 Weapons and Armor That Are Too Heavy from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-9-special-weapons]] — 16.9 Special Weapons from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-17-2-lost-spells-through-17-5-full-resistance]] — 17.2 Lost Spells through 17.5 Full Resistance from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-18-2-guidelines-for-adventurer-age-and-ability-score-changes]] — 18.2 Guidelines for Adventurer Age and Ability Score Changes through 18.3 Rules for Destroying Structures from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-2-3-checks]] — 2.3 Checks from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-2-5-difficulty-checks]] — 2.5 Difficulty Checks from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-2-7-resistance-rolls]] — 2.7 Resistance Rolls from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-3-1-action-announcements-through-3-3-action-canceling]] — 3.1 Action Announcements through 3.3 Action Canceling from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-3-4-movement-and-actions]] — 3.4 Movement and Actions from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters]] — 4.5 Attacks From Characters Against Monsters from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-4-9-unconscious-and-death-checks]] — 4.9 Unconscious and Death Checks from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-1-types-of-magic]] — 5.1.1 Types of Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor]] — 4.10 Excellent Weapons and Armor from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-11-damage-recovery]] — 4.11 Damage Recovery from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-3-projectile-restrictions-through-4-4-scores-used-in-weapon]] — 4.3 Projectile Restrictions through 4.4 Scores Used in Weapon Combat from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-5-attacks-from-characters-against-monsters-through-4-6]] — 4.5 Attacks From Characters Against Monsters through 4.6 Attacks From Monsters Against Characters from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-4-7-attacks-from-characters-against-characters-through-4-9]] — 4.7 Attacks From Characters Against Characters through 4.9 Unconscious and Death Checks from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-5-1-10-how-to-read-magic-details]] — 5.1.10 How to Read Magic Details from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-1]] — 5.1.12 Ancient Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-2]] — 5.1.12 Ancient Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-3]] — 5.1.12 Ancient Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-part-4]] — 5.1.12 Ancient Magic List (part 4) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-1]] — 5.1.14 Spirit Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-2]] — 5.1.14 Spirit Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-part-3]] — 5.1.14 Spirit Magic List (part 3) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]] — Section 5.1.15 covering holy magic, the priest skill, and related gods and restrictions.
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-1]] — 5.1.16 Basic Holy Magic List (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-part-2]] — 5.1.16 Basic Holy Magic List (part 2) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-11-ancient-magic-and-the-sorcerer-skill]] — 5.1.11 Ancient Magic and the Sorcerer Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list]] — 5.1.12 Ancient Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-2]] — 5.1.12 Ancient Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-3]] — 5.1.12 Ancient Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-12-ancient-magic-list-4]] — 5.1.12 Ancient Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-13-spirit-magic-and-the-shaman-skill]] — 5.1.13 Spirit Magic and the Shaman Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list]] — 5.1.14 Spirit Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-2]] — 5.1.14 Spirit Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-14-spirit-magic-list-3]] — 5.1.14 Spirit Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-15-holy-magic-and-the-priest-skill]] — 5.1.15 Holy Magic and the Priest Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list]] — 5.1.16 Basic Holy Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-16-basic-holy-magic-list-2]] — 5.1.16 Basic Holy Magic List from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-17-special-holy-magic-list]] — 5.1.17 Special Holy Magic List from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-5-1-4-how-to-use-magic]] — 5.1.4 How to Use Magic from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-5-1-7-magic-expansion]] — 5.1.7 Magic Expansion from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-6-recovering-mental-power-through-5-1-7-magic-expansion]] — 5.1.6 Recovering Mental Power through 5.1.7 Magic Expansion from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-8-magic-contraction]] — 5.1.8 Magic Contraction from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-1-9-magic-types]] — 5.1.9 Magic Types from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-5-2-common-runes]] — 5.2 Common Runes from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-5-3-spellsongs]] — 5.3 Spellsongs from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-6-2-thief-skill]] — 6.2 Thief Skill from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-6-4-sage-skill]] — 6.4 Sage Skill from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]] — Summary of section 6.6 Common Adventurer Abilities from Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-7-2-merchant-skill]] — 7.2 Merchant Skill from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-8-1-experience-points]] — 8.1 Experience Points from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — 9.2 Should You Use a Target Score Check or a Difficulty Check? from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Overview of books related to Sword World RPG, including Replay Collections, Scenario Collections, World Guide, and more.
+- [[sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill]] — 6.3 Ranger Skill through 6.4 Sage Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-6-5-bard-skill]] — 6.5 Bard Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-6-6-common-adventurer-abilities]] — 6.6 Common Adventurer Abilities from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-7-2-merchant-skill-through-7-3-craftsman-skill]] — 7.2 Merchant Skill through 7.3 Craftsman Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-7-5-hunter-skill-through-7-6-sailor-skill]] — 7.5 Hunter Skill through 7.6 Sailor Skill from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-8-2-how-to-use-experience-points-increasing-skill-levels]] — 8.2 How to Use Experience Points: Increasing Skill Levels through 8.4 Increasing General Skills from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-9-2-should-you-use-a-target-score-check-or-a-difficulty-check]] — 9.2 Should You Use a Target Score Check or a Difficulty Check? through 9.4 Automatic Success Restrictions from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-books-related-to-sword-world-rpg]] — Books Related to Sword World RPG from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-chapter-1-character]] — Summary of Chapter 1: Character from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-10-notes-on-combat]] — Chapter 10: Notes on Combat from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-11-notes-on-magic]] — Summary of Chapter 11: Notes on Magic from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-12-various-checks]] — Summary of Chapter 12: Various Checks from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-13-monsters]] — Summary of Chapter 13: Monsters! from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-14-treasures]] — Summary of Chapter 14: Treasures from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-15-experience-points]] — Chapter 15: Experience Points from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-16-optional-rules-for-combat]] — Optional rules for combat in the Sword World RPG.
+- [[sword-world-rpg-complete-edition-chapter-17-optional-rules-for-magic]] — Chapter 17: Optional Rules for Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-18-other-optional-rules]] — Chapter 18: Other Optional Rules from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-2-success-rolls]] — Chapter 2: Success Rolls from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-3-combat-rounds]] — Chapter 3: Combat Rounds from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-4-weapon-combat]] — Chapter 4: Weapon Combat from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-5-magic]] — Summary of Chapter 5: Magic from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-6-adventurers-skills-other-than-combat-and-magic]] — Chapter 6: Adventurers’ Skills Other Than Combat And Magic from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-7-general-skills]] — Summary of Chapter 7: General Skills from Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-chapter-8-character-growth]] — Chapter 8: Character Growth from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-chapter-9-notes-on-success-rolls]] — Summary of Chapter 9: Notes on Success Rolls from Sword World RPG - Complete Edition.
 - [[sword-world-rpg-complete-edition-charts]] — Charts from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-document]] — Summary of the Sword World RPG - Complete Edition document, including its structure and key sections.
-- [[sword-world-rpg-complete-edition-front-matter]] — Front matter from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-1]] — Guide to Forcelia & Alecrast (part 1) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast-part-2]] — Guide to Forcelia & Alecrast (part 2) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-part-1-players-section]] — Summary of the Players’ Section from the Sword World RPG - Complete Edition.
-- [[sword-world-rpg-complete-edition-the-meaning-of-the-rulebook]] — Summary of the meaning and scope of the Sword World RPG rulebook.
-- [[sword-world-rpg-complete-edition-welcome-to-sword-world]] — Summary of the 'Welcome to Sword World' section from the Complete Edition RPG.
-- [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]] — Definition and core mechanics of Role-Playing Games in the Sword World RPG system.
-- [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]] — Overview of the structure of the Sword World RPG rulebook and essential items needed to play, including character sheets, dice, and handling fractions.
+- [[sword-world-rpg-complete-edition-designer-s-notes]] — Summary of the Designer’s Notes section from the Sword World RPG - Complete Edition.
+- [[sword-world-rpg-complete-edition-document]] — Document from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-guide-to-forcelia-alecrast]] — Guide to Forcelia & Alecrast from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-part-1-players-section]] — Part 1: Players’ Section from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-part-2-game-masters-section]] — Part 2: Game Masters’ Section from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-part-3-optional-rules]] — Part 3: Optional Rules from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-the-meaning-of-the-rulebook]] — The Meaning of the Rulebook from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-welcome-to-sword-world]] — Welcome to “Sword World”! from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]] — What is a Role-Playing Game (RPG)? from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-what-you-ll-need-to-play-sword-world-rpg]] — What You’ll Need to Play Sword World RPG from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Entities
 
 ## Concepts
 
 ## Syntheses
-- [[wiki-claim-support]] — Claim support audit report from 2026-06-22.
-- [[wiki-health]] — Wiki health report from the latest lint pass (2026-06-20).
-- [[wiki-ingest-confidence]] — Ingest confidence report from 2026-06-23.

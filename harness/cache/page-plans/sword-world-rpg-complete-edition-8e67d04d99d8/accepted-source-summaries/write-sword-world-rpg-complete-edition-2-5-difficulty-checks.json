@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Double sixes guarantee success, regardless of baseline or target score (raw/Sword World RPG - Complete Edition.pdf p.31-32).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0013"
+      ]
+    },
+    {
+      "bullet_text": "Double ones guarantee failure, no matter the baseline or target score (raw/Sword World RPG - Complete Edition.pdf p.31-32).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0063"
+      ]
+    },
+    {
+      "bullet_text": "Final score is baseline + 2D ± bonus/penalty, compared against target score (raw/Sword World RPG - Complete Edition.pdf p.31-32).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0054"
+      ]
+    },
+    {
+      "bullet_text": "Success or failure of a difficulty check is not definitive; it indicates success or failure, not how well (raw/Sword World RPG - Complete Edition.pdf p.31-32).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0073"
+      ]
+    },
+    {
+      "bullet_text": "Game master sets target score by adding difficulty to secret 2D roll; this is unknown to players (raw/Sword World RPG - Complete Edition.pdf p.31-32).",
+      "covered_source_claims": [
+        "source-claim-unit-0016-0071"
+      ]
+    }
+  ],
+  "source_record_text": "Section 2.5 of the Sword World RPG - Complete Edition covers difficulty checks, target score determination, and the role of the game master in setting these scores. The process involves the game master determining the target score based on difficulty and a secret dice roll."
+}

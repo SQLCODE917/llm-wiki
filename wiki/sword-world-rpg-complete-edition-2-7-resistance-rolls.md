@@ -2,69 +2,61 @@
 page_id: sword-world-rpg-complete-edition-2-7-resistance-rolls
 page_kind: source
 summary: 2.7 Resistance Rolls from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.33-36
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.33-33
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-This section covers life force and mental power resistance rolls, their calculation using adventurer level and ability bonuses, and their application in avoiding physical dangers and magic/curses.
+This section covers resistance rolls in the *Sword World RPG - Complete Edition*, detailing how life force and mental power resistance rolls are calculated and used.
 
 ## Key supported claims
 
-- Life force resistance rolls avoid physical dangers like poison, using adventurer level + life force bonus as baseline score (raw/Sword World RPG - Complete Edition.pdf p.33-36).
-- Mental power resistance rolls avoid magic or curses, using adventurer level + mental power bonus as baseline score (raw/Sword World RPG - Complete Edition.pdf p.33-36).
-- Baseline score for resistance rolls equals adventurer level + life force/mental power bonus (raw/Sword World RPG - Complete Edition.pdf p.33-36).
-- Characters with adventurer level 0 have a baseline score of 0 for resistance rolls (raw/Sword World RPG - Complete Edition.pdf p.33-36).
-- Writing down baseline scores for resistance rolls is advisable for quick reference (raw/Sword World RPG - Complete Edition.pdf p.33-36).
+- A life force resistance roll uses the formula _adventurer level + life force bonus_ as the baseline score to avoid physical dangers such as poison (raw/Sword World RPG - Complete Edition.pdf p.33-33).
+- A mental power resistance roll uses the formula _adventurer level + mental power bonus_ as the baseline score to avoid magic or curses (raw/Sword World RPG - Complete Edition.pdf p.33-33).
+- The baseline score (resistance) equals _adventurer level + life force/mental power bonus_ (raw/Sword World RPG - Complete Edition.pdf p.33-33).
+- Life force resistance rolls are used against physical dangers like poison, while mental power resistance rolls are used against magic or curses (raw/Sword World RPG - Complete Edition.pdf p.33-33).
+- It is advisable to note the baseline scores for each resistance roll on the character sheet (raw/Sword World RPG - Complete Edition.pdf p.33-33).
 
 ## Technical details
 
-### `technical-atom-39549294601eecf3` requirement
+### `technical-atom-e21eb5abf174f92c` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.33)
 
 To the right of each of these is a field to write down the bonus, and further to the right of that should be a field labeled _resistance_ .
 
-### `technical-atom-1aae06c6c5c6b643` exception
+## Related technical details
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
+### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-b535de6b3d504485` worked-example
 
-In an action announcement, you cannot declare something impossible.
+Relation: nearby source page; matched terms `adventurer`, `character`, `level`
 
-### `technical-atom-8f6ef989d5c835c2` exception
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
+For example, a character with priest skill level 1, fighter skill level 4 (these are adventurer skills), sailor skill level 5, and fisher skill level 2 (these are general skills) would be at adventurer level **4** .
 
-These impossible actions cannot be declared, as a matter of course.
+### From [[sword-world-rpg-complete-edition-4-10-excellent-weapons-and-armor]]: `technical-atom-1d20f1bde62a7a34` exception
 
-### `technical-atom-00dbc801bf6cee95` worked-example
+Relation: nearby source page; matched terms `character`, `force`, `life`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.51-53)
 
-Suppose there are three characters, a1, a2, and a3 in **group A** and two characters, b1 and b2 in **group B** .
+A character who falls down with 0 or negative life force due to an attack that was declared to be _mercy_ , will _only_ fail their _death check_ if _double ones_ are rolled.
 
-### `technical-atom-76e2d8c6e0b4a80c` procedure
+### From [[sword-world-rpg-complete-edition-4-11-damage-recovery]]: `technical-atom-b395054ce5a269aa` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
+Relation: nearby source page; matched terms `force`, `how`, `life`
 
-do _not_ take turns to announce their actions.
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.54)
 
-### `technical-atom-c59eb0b843ff1dfc` procedure
+It can also instantly recover life force to 1 point, no matter how great the negative, but it _cannot_ recover life force to 2 or more points.
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
+### From [[sword-world-rpg-complete-edition-4-11-damage-recovery]]: `technical-atom-a7e542a29ec4713d` exception
 
-If _a2_ is the one with the highest intelligence between groups A and B as mentioned, then the announcements are made in the order of _B → A_ , regardless of the intelligence of the other characters.
+Relation: nearby source page; matched terms `character`, `force`, `life`
 
-### `technical-atom-61a4e43be8848e69` requirement
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.54)
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
-
-A player must be specific when announcing their action.
-
-### `technical-atom-3f678ec3f716fc70` requirement
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.33-36)
-
-Instead of _attack with my weapon_ , they should say _attack the rightmost goblin with my sword_ .
+If a character is _not_ at rest (e.g., traveling, fighting monsters in a labyrinth, not getting much sleep at night due to keeping watch), that character cannot recover any life force at all.

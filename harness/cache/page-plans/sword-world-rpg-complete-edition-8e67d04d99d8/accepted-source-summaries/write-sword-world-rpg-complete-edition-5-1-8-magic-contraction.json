@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Area contraction narrows the area of effect, keeping the shape unchanged, (raw/Sword World RPG - Complete Edition.pdf p.62-62).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0007"
+      ]
+    },
+    {
+      "bullet_text": "Duration contraction shortens the duration of magic, only ending at the end of a round, (raw/Sword World RPG - Complete Edition.pdf p.62-62).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0011"
+      ]
+    },
+    {
+      "bullet_text": "Magic power decrease reduces final score and bonus damage, with declaration before dice roll, (raw/Sword World RPG - Complete Edition.pdf p.62-62).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0029"
+      ]
+    },
+    {
+      "bullet_text": "Effect contraction allows all magic that can expand effects to also contract them, (raw/Sword World RPG - Complete Edition.pdf p.62-62).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0038"
+      ]
+    },
+    {
+      "bullet_text": "Combined expansion and contraction is possible, but mental power is decided by expansion, not contraction, (raw/Sword World RPG - Complete Edition.pdf p.62-62).",
+      "covered_source_claims": [
+        "source-claim-unit-0035-0043"
+      ]
+    }
+  ],
+  "source_record_text": "This section details the mechanics of magic contraction in the Sword World RPG - Complete Edition, including area, volume, duration, magic power, and effect contractions."
+}

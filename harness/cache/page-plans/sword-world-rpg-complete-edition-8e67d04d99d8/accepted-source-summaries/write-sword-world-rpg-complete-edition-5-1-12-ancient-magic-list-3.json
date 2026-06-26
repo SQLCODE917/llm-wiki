@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Read Languages spell allows reading unknown languages, one per use (raw/Sword World RPG - Complete Edition.pdf p.76-79)",
+      "covered_source_claims": [
+        "source-claim-unit-0041-0002"
+      ]
+    },
+    {
+      "bullet_text": "Vision spell increases caster's vision several times (raw/Sword World RPG - Complete Edition.pdf p.76-79)",
+      "covered_source_claims": [
+        "source-claim-unit-0041-0029"
+      ]
+    },
+    {
+      "bullet_text": "Flight spell allows caster to fly with movement speed 50 km/h (raw/Sword World RPG - Complete Edition.pdf p.76-79)",
+      "covered_source_claims": [
+        "source-claim-unit-0041-0060"
+      ]
+    },
+    {
+      "bullet_text": "Analyze Enchantment identifies magic power on objects, but blocked by Seal Enchantment (raw/Sword World RPG - Complete Edition.pdf p.76-79)",
+      "covered_source_claims": [
+        "source-claim-unit-0041-0068"
+      ]
+    },
+    {
+      "bullet_text": "Create Device creates mage's staff or magical catalyst (raw/Sword World RPG - Complete Edition.pdf p.76-79)",
+      "covered_source_claims": [
+        "source-claim-unit-0041-0095"
+      ]
+    }
+  ],
+  "source_record_text": "This page summarizes the Ancient Magic List section (pages 76-79) from *Sword World RPG - Complete Edition*. It details a variety of spells, including Read Languages, Vision, Flight, Blizzard, Acid Cloud, Analyze Enchantment, Geas, Create Undead, Create Device, Create Buau Zombie, See-Through, Seal Enchantment, Steal Mind, Slow, Haste, Rune Rope, Dispel Order, Telekinesis, Teleport, Full Potential, Blade Net, Bend Bar, Polymorph, and Magic Reflection."
+}

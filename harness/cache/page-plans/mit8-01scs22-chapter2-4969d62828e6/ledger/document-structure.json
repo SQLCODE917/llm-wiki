@@ -1,0 +1,85 @@
+{
+  "artifact_format": "canonical-json",
+  "document_structure": {
+    "dispositions": [
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0001",
+        "source_order": 1,
+        "source_range_id": "source-range-mit8-01scs22-chapter2-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0002",
+        "source_order": 2,
+        "source_range_id": "source-range-mit8-01scs22-chapter2-document"
+      },
+      {
+        "disposition": "accepted",
+        "extracted_unit_id": "unit-0003",
+        "source_order": 3,
+        "source_range_id": "source-range-mit8-01scs22-chapter2-document"
+      }
+    ],
+    "root_node_id": "structure-node-0aeeb493b64935c4",
+    "structure_nodes": [
+      {
+        "depth": 0,
+        "evidence_ids": [],
+        "heading_text": "mit8_01scs22_chapter2.pdf",
+        "parent_structure_node_id": "",
+        "source_locator": "mit8_01scs22_chapter2.pdf",
+        "source_order": 0,
+        "source_range_id": "root",
+        "structure_node_id": "structure-node-0aeeb493b64935c4",
+        "structure_node_kind": "root"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-0aeeb493b64935c4",
+        "source_locator": "mit8_01scs22_chapter2.pdf",
+        "source_order": 1,
+        "source_range_id": "source-range-mit8-01scs22-chapter2-document",
+        "structure_node_id": "structure-node-8cca56f2ab077611",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-0aeeb493b64935c4",
+        "source_locator": "mit8_01scs22_chapter2.pdf",
+        "source_order": 2,
+        "source_range_id": "source-range-mit8-01scs22-chapter2-document",
+        "structure_node_id": "structure-node-8cca56f2ab077611",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-0aeeb493b64935c4",
+        "source_locator": "mit8_01scs22_chapter2.pdf",
+        "source_order": 3,
+        "source_range_id": "source-range-mit8-01scs22-chapter2-document",
+        "structure_node_id": "structure-node-8cca56f2ab077611",
+        "structure_node_kind": "section"
+      },
+      {
+        "depth": 1,
+        "evidence_ids": [],
+        "heading_text": "Document",
+        "parent_structure_node_id": "structure-node-0aeeb493b64935c4",
+        "source_locator": "mit8_01scs22_chapter2.pdf",
+        "source_order": 4,
+        "source_range_id": "source-range-mit8-01scs22-chapter2",
+        "structure_node_id": "structure-node-2d54f4c31dfa1917",
+        "structure_node_kind": "section"
+      }
+    ]
+  },
+  "document_structure_artifact_id": "document-structure-74df2cb16aa8c59c",
+  "document_structure_fingerprint": "ba219c75421ad340"
+}

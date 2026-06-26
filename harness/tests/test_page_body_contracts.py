@@ -167,6 +167,33 @@ def test_source_summary_allows_five_cited_claims_with_long_pdf_locator() -> None
     assert validate_page_body(body, contract) == ()
 
 
+def test_source_summary_word_limit_ignores_citation_locator_length() -> None:
+    citation = "raw/Sword World RPG - Complete Edition.pdf p.104-104"
+    contract = resolve_page_body_contract(
+        PageBodyContract(
+            contract_id="source-summary",
+            match_page_kinds=("source",),
+            required_sections=("Source record", "Key supported claims"),
+            required_markdown_shape="claim-bullets",
+            min_claim_bullets=3,
+            max_words=35,
+        ),
+        required_source_citations=(citation,),
+        required_uncertainty_terms=("unknown",),
+    )
+    body = (
+        "## Source record\n\n"
+        "Holy magic rules preserve one unknown limit.\n\n"
+        "## Key supported claims\n\n"
+        f"- Resurrection needs a linked remains token. ({citation})\n"
+        f"- Failures block repeats until power improves. ({citation})\n"
+        f"- Old-age deaths cannot be reversed. ({citation})"
+    )
+
+    assert contract.max_words == 35
+    assert validate_page_body(body, contract) == ()
+
+
 def test_source_summary_rejects_placeholder_ellipsis() -> None:
     citation = "raw/book.pdf p.212-213"
     contract = resolve_page_body_contract(

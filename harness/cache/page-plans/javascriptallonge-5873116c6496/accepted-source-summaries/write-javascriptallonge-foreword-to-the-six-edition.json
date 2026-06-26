@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "ECMAScript 6 was ratified as a standard on June 17, and its origins date back to the year 2000 (raw/javascriptallonge.pdf p.13-13).",
+      "bullet_text": "ECMAScript 6 (ES6) was ratified as a standard on June 17, with origins dating back to the year 2000, after ECMAScript 3 was finished (raw/javascriptallonge.pdf p.13-13).",
       "covered_source_claims": [
-        "source-claim-unit-0010-0008"
+        "source-claim-unit-0006-0019"
       ]
     },
     {
-      "bullet_text": "TC39 started work on ECMAScript 4, which was planned to have numerous new features, turning JavaScript into a completely new language (raw/javascriptallonge.pdf p.13-13).",
+      "bullet_text": "ECMAScript 4 was planned to have numerous new features, which would have turned JavaScript into a completely new language, but was abandoned in favor of ES5 and ES6 (raw/javascriptallonge.pdf p.13-13).",
       "covered_source_claims": [
-        "source-claim-unit-0010-0003"
+        "source-claim-unit-0006-0020"
       ]
     },
     {
-      "bullet_text": "After internal conflict, a settlement was reached in July 2008, abandoning ECMAScript 4 and replacing it with two upgrades, a smaller and a larger (raw/javascriptallonge.pdf p.13-13).",
+      "bullet_text": "JavaScript Allongé, the 'Six' Edition, is a comprehensive tour of ES6 features and techniques for better use of them, covering functional and object-oriented programming via ES6 code (raw/javascriptallonge.pdf p.13-13).",
       "covered_source_claims": [
-        "source-claim-unit-0010-0007"
+        "source-claim-unit-0006-0021"
       ]
     }
   ],
-  "source_record_text": "Foreword to the 'Six' edition of JavaScript Allongé, which provides historical context for the development of ECMAScript 6."
+  "source_record_text": "Foreword to the \"Six\" edition of JavaScript Allongé, discussing ES6 standardization and features."
 }

@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Magic in Sword World is performed using runes and specific procedures, with five main types: high ancient, silent spirit, holy prayer, daemon scream, and dragon roar (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
+      "bullet_text": "Magic uses runes and specific procedures (raw/Sword World RPG - Complete Edition.pdf p.56-59).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0054"
+        "source-claim-unit-0032-0002"
       ]
     },
     {
-      "bullet_text": "Adventurers must make a skill check to use magic, with magic power calculated as magic skill level plus intelligence bonus (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
+      "bullet_text": "Magic power equals skill level plus intelligence bonus (raw/Sword World RPG - Complete Edition.pdf p.56-59).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0053"
+        "source-claim-unit-0032-0052"
       ]
     },
     {
-      "bullet_text": "Attempting to cast magic requires a roll, and magic can be either resistible or non-resistible, with different procedures for each (raw/Sword World RPG - Complete Edition.pdf p.56-60).",
+      "bullet_text": "There are resistible and non-resistible magic types (raw/Sword World RPG - Complete Edition.pdf p.56-59).",
       "covered_source_claims": [
-        "source-claim-unit-0012-0052"
+        "source-claim-unit-0032-0054"
+      ]
+    },
+    {
+      "bullet_text": "Magic power determines spell effectiveness (raw/Sword World RPG - Complete Edition.pdf p.56-59).",
+      "covered_source_claims": [
+        "source-claim-unit-0032-0102"
+      ]
+    },
+    {
+      "bullet_text": "Magic casting requires resistance checks (raw/Sword World RPG - Complete Edition.pdf p.56-59).",
+      "covered_source_claims": [
+        "source-claim-unit-0032-0076"
       ]
     }
   ],
-  "source_record_text": "Section 5.1.4 How to Use Magic (pages 56-60) from Sword World RPG - Complete Edition."
+  "source_record_text": "This section details the rules for using magic in _Sword World_, including magic power calculation, the distinction between resistible and non-resistible magic, and the procedures for casting spells."
 }

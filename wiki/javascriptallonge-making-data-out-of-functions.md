@@ -2,107 +2,121 @@
 page_id: javascriptallonge-making-data-out-of-functions
 page_kind: source
 summary: Making Data Out Of Functions from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.177-179
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.177-190
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Chapter on modeling data using functions, including K, I, and V combinators.
+This chapter explores how data structures can be represented using only functions, delving into combinatory logic and the K, I, and V combinators. It demonstrates how functions can be used to model lists and pairs without relying on arrays or objects, and how this approach leads to a deeper understanding of computation and data representation.
 
 ## Key supported claims
 
-- In our code so far, we have used arrays and objects to represent the structure of data, and we have extensively used the ternary operator to write algorithms that terminate when we reach a base case. For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list (raw/javascriptallonge.pdf p.177-179).
-- We can model lists just using functions (raw/javascriptallonge.pdf p.177-179).
-- We have used arrays and objects to represent the structure of data, and extensively used the ternary operator to write algorithms that terminate when we reach a base case (raw/javascriptallonge.pdf p.177-179).
+- Functions model data structures like lists and pairs without arrays or objects, using K, I, and V combinators (raw/javascriptallonge.pdf p.177-190).
+- K combinator creates constant functions, I combinator is identity function (raw/javascriptallonge.pdf p.177-190).
+- V combinator, or Vireo, creates pairs from two values (raw/javascriptallonge.pdf p.177-190).
+- Functions manipulate data structures allowing powerful abstractions (raw/javascriptallonge.pdf p.177-190).
+- Computation performed using only functions, without traditional data structures (raw/javascriptallonge.pdf p.177-190).
 
 ## Technical details
 
-### `technical-atom-94b1271483ea8499` code
+### `technical-atom-a602b6ed0e697ed4` code
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
 ```javascript
-const EMPTY = {}; const OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } }; OneTwoThree.first //=> 1 OneTwoThree.rest.first //=> 2 OneTwoThree.rest.rest.first //=> 3 const length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1); length(OneTwoThree) //=> 3
+const EMPTY = {}; const OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY  } } };
 ```
 
-### `technical-atom-8dbeecd17e154409` code
+### `technical-atom-bcf2f885fa6c8526` code
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
+
+```javascript
+OneTwoThree.rest.rest.first //=> 3 const length = (node, delayed = 0) => node === EMPTY ? delayed: length(node.rest, delayed + 1);
+```
+
+### `technical-atom-0c6f56ffdca20542` code
+
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
 ```javascript
 const K = (x) => (y) => x; const I = (x) => (x); const V = (x) => (y) => (z) => z(x)(y);
 ```
 
-### `technical-atom-f36933c62676c874` formula
+### `technical-atom-aea76708de48efca` code
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-76 http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422
+```javascript
+A constant function is a function that always returns the same thing, no matter what you give it. For example, (x) => 42 is a constant function that always evaluates to 42. The kestrel, or K, is a function that makes constant functions. You give it a value, and it returns a constant function that gives that value.
+```
 
-### `technical-atom-9c77a5de5c2d57ec` procedure
+### `technical-atom-e872e51be415c3cc` code
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-A very long time ago, mathematicians like Alonzo Church, Moses Schönfinkel, Alan Turning, and Haskell Curry and asked themselves if we really needed all these features to perform computations.
+```javascript
+const K = (x) => (y) => x; const fortyTwo = K(42);
+```
 
-### `technical-atom-cf5b15724c23cd8a` procedure
+### `technical-atom-cd36d849b171aa54` code
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-To Mock a Mockingbird 76 established the metaphor of songbirds for the combinators, and ever since then logicians have called the K combinator a 'kestrel,' the B combinator a 'bluebird,' and so forth.
+```javascript
+The identity function is a function that evaluates to whatever parameter you pass it. So I(42) => 42. Very simple, but useful. Now we’ll take it one more step forward: Passing a value to K gets a function back, and passing a value to that function gets us a value.
+```
 
-### `technical-atom-5b37e3daf21d3949` worked-example
+### `technical-atom-5c8bfdbaaac4c2b2` code
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+```javascript
+Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
+```
 
-### `technical-atom-ac4a59dfcff9d986` worked-example
+### `technical-atom-546c17e6abda1a4f` formula
 
-Citation: (raw/javascriptallonge.pdf p.177-179)
+Citation: (raw/javascriptallonge.pdf p.177-190)
 
-For example, we don't need arrays to represent lists, or even POJOs to represent nodes in a linked list.
+> 76http://www.amazon.com/gp/product/0192801422/ref=as_li_ss_tl?ie=UTF8&tag=raganwald001-20&linkCode=as2&camp=1789&creative= 390957&creativeASIN=0192801422
 
 ## Related technical details
 
-### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-1facdd66430f4b84` code
+### From [[javascriptallonge-why]]: `technical-atom-dff96b94ef792fdf` exception
 
-Relation: nearby source page; matched terms `can`, `code`, `data`, `empty`, `functions`, `length`
+Relation: nearby source page; matched terms `combinators`, `combinatory`, `javascript`, `logic`, `without`
 
-Citation: (raw/javascriptallonge.pdf p.183-186)
+Citation: (raw/javascriptallonge.pdf p.201)
 
-```javascript
-const length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair)); length(l123) //=> 3 const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ? delayed : reverse(rest(aPair), pair(first(aPair), delayed)); const mapWith = (fn, aPair, delayed = EMPTY) => aPair === EMPTY ? reverse(delayed) : mapWith(fn, rest(aPair), pair(fn(first(aPair)), delayed)); const doubled = mapWith((x) => x * 2, l123); first(doubled) //=> 2 first(rest(doubled)) //=> 4 first(rest(rest(doubled))) //=> 6 Can we do the same with the linked lists we build out of functions? Yes: const first = K, l123 = pair(1)(pair(2)(pair(3)(EMPTY)));
-```
+This has little practical utility in JavaScript, but in combinatory logic it’s essential: With fixed-point combinators it’s possible to compute everything computable without binding names.
 
-### From [[javascriptallonge-functional-iterators]]: `technical-atom-66284ad4815503e0` code
+### From [[javascriptallonge-flip]]: `technical-atom-46f8909fd16287cb` code
 
-Relation: nearby source page; matched terms `bind`, `code`, `function`, `method`, `our`, `uses`
+Relation: nearby source page; matched terms `code`, `first`, `second`
 
-Citation: (raw/javascriptallonge.pdf p.206-209)
+Citation: (raw/javascriptallonge.pdf p.195-197)
 
 ```javascript
-The .iterator() method is defined with shorthand equivalent to iterator: function iterator() { ... } . Note that it uses the function keyword, so when we invoke it with stack.iterator() , JavaScript sets this to the value of stack . But what about the function .iterator() returns? It is defined with a fat arrow () => { ... } . What is the value of this within that function? Since JavaScript doesn't bind this within a fat arrow function, we follow the same rules of variable scoping as any other variable name: We check in the environment enclosing the function. Although the .iterator() method has returned, its environment is the one that encloses our () => { ... } function, and that's where this is bound to the value of stack . Therefore, the iterator function returned by the .iterator() method has this bound to the stack object, even though we call it with iter() .
+const mapWith = (first) => (second) => map(second, first);
 ```
 
-### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-bafff516faf1e5ae` code
+### From [[javascriptallonge-flip]]: `technical-atom-b39bbfbb10f500bf` code
 
-Relation: nearby source page; matched terms `code`, `data`, `empty`, `functions`, `length`, `lists`
+Relation: nearby source page; matched terms `code`, `first`, `second`
 
-Citation: (raw/javascriptallonge.pdf p.183-186)
+Citation: (raw/javascriptallonge.pdf p.195-197)
 
 ```javascript
-const length = (aPair) => aPair === EMPTY ? 0 : 1 + length(aPair(rest)); length(l123) //=> 3 And mapWith ? const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ? delayed : reverse(aPair(rest), pair(aPair(first))(delayed)); const mapWith = (fn, aPair, delayed = EMPTY) => aPair === EMPTY ? reverse(delayed) : mapWith(fn, aPair(rest), pair(fn(aPair(first)))(delayed)); const doubled = mapWith((x) => x * 2, l123) doubled(first) //=> 2 doubled(rest)(first) //=> 4 doubled(rest)(rest)(first) //=> 6
+(first) => (second) => fn(second, first);
 ```
 
-### From [[javascriptallonge-lists-with-functions-as-data]]: `technical-atom-524bbdeeff2aabb1` code
+### From [[javascriptallonge-why]]: `technical-atom-e050bf725570ce45` exception
 
-Relation: nearby source page; matched terms `code`, `data`, `empty`, `functions`, `length`, `lists`
+Relation: nearby source page; matched terms `function`, `functions`, `without`
 
-Citation: (raw/javascriptallonge.pdf p.183-186)
+Citation: (raw/javascriptallonge.pdf p.201)
 
-```
-0 : 1 + length(rest(aPair)); length(l123) //=> 3 const reverse = (aPair, delayed = EMPTY) => aPair === EMPTY ?
-```
+It enables you to make recursive functions without needing to bind a function to a name in an environment.

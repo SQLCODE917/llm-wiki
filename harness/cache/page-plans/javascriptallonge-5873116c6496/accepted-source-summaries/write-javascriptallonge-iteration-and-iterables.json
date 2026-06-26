@@ -1,23 +1,35 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Acting on the elements of a collection one at a time is called iterating over the contents, and JavaScript has a standard way to iterate over the contents of collections. (raw/javascriptallonge.pdf p.206-206)",
+      "bullet_text": "JavaScript allows iterating over collection contents one by one, termed _iterating over the contents_ (raw/javascriptallonge.pdf p.206-223).",
       "covered_source_claims": [
-        "source-claim-unit-0156-0008"
+        "source-claim-unit-0050-0010"
       ]
     },
     {
-      "bullet_text": "Many objects in JavaScript can model collections of things. A collection is like a box containing stuff. Sometimes you just want to move the box around. But sometimes you want to open it up and do things with its contents. (raw/javascriptallonge.pdf p.206-206)",
+      "bullet_text": "Functional iterators can be implemented for objects, such as stacks, with methods like .iterator() (raw/javascriptallonge.pdf p.206-223).",
       "covered_source_claims": [
-        "source-claim-unit-0156-0007"
+        "source-claim-unit-0050-0102"
       ]
     },
     {
-      "bullet_text": "Sometimes you want to open it up and do things with its contents, like put a label on every bag of coffee in this box, or take out the bags of decaf and make a new box with just the decaf, or go through the bags and take out the first one marked 'Espresso' that contains at least 454 grams of beans. (raw/javascriptallonge.pdf p.206-206)",
+      "bullet_text": "Iterables represent ordered collections, where each iteration returns elements in a consistent order (raw/javascriptallonge.pdf p.206-223).",
       "covered_source_claims": [
-        "source-claim-unit-0156-0005"
+        "source-claim-unit-0050-0107"
+      ]
+    },
+    {
+      "bullet_text": "JavaScript introduced a standard way to write iterators using the Symbol.iterator method to avoid conflicts with existing code (raw/javascriptallonge.pdf p.206-223).",
+      "covered_source_claims": [
+        "source-claim-unit-0050-0117"
+      ]
+    },
+    {
+      "bullet_text": "The for...of loop works with any iterable object, enabling easy iteration over collections (raw/javascriptallonge.pdf p.206-223).",
+      "covered_source_claims": [
+        "source-claim-unit-0050-0042"
       ]
     }
   ],
-  "source_record_text": "Chapter explains JavaScript collection iteration, functional iterators, iterables, and operations on ordered collections."
+  "source_record_text": "This chapter discusses iteration and iterables in JavaScript, covering functional iterators, iterator objects, and the Symbol.iterator method. It explains how to create iterable collections and use constructs like for...of loops and the spread operator with iterables."
 }

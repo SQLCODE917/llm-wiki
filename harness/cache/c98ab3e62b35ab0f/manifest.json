@@ -1,70 +1,53 @@
 {
   "source": "javascriptallonge.pdf",
   "sha256": "c98ab3e62b35ab0f89395f12c9581867baf50731cb1f45110b43e55c6f66cd72",
-  "extractor_name": "docling",
+  "extractor_name": "pymupdf4llm",
   "integrated": true,
   "chunks": [
     {
       "id": 1,
-      "heading": "JavaScript Allongé, the 'Six' Edition",
+      "heading": "Document",
       "pages": [
-        2,
-        2
-      ],
-      "tokens": 9,
-      "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "JavaScript Allongé, the 'Six' Edition (pages 2-2): no claim-bearing source-page material."
-      ]
-    },
-    {
-      "id": 2,
-      "heading": "Programming from Functions to Classes in ECMAScript 2015",
-      "pages": [
-        2,
-        2
-      ],
-      "tokens": 14,
-      "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "Programming from Functions to Classes in ECMAScript 2015 (pages 2-2): no claim-bearing source-page material."
-      ]
-    },
-    {
-      "id": 3,
-      "heading": "Reg 'raganwald' Braithwaite",
-      "pages": [
-        2,
+        1,
         3
       ],
-      "tokens": 176,
+      "tokens": 222,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-reg-raganwald-braithwaite",
+      "notes": "Created the source page for JavaScript Allongé. Key claims: the book is a Leanpub publication, authored by Reg “raganwald” Braithwaite, and published on 2017-11-03. No entities or concepts from this chunk required new pages.",
       "pages_written": [
-        "javascriptallonge-reg-raganwald-braithwaite"
+        "javascriptallonge-document"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
-      "id": 4,
+      "id": 2,
+      "heading": "Table of Contents",
+      "pages": [
+        4,
+        5
+      ],
+      "tokens": 1517,
+      "status": "done",
+      "notes": "Created the source page 'javascriptallonge-table-of-contents' summarizing the table of contents for JavaScript Allongé. Key claims covered include the book's structure, chapters on functions and data, and specific topics like tail calls and coffee cravings. No other pages were created in this chunk as per the plan.",
+      "pages_written": [
+        "javascriptallonge-table-of-contents"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
+    },
+    {
+      "id": 3,
       "heading": "A Pull of the Lever: Prefaces",
       "pages": [
         6,
         6
       ],
-      "tokens": 240,
+      "tokens": 265,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-pull-of-the-lever-prefaces",
+      "notes": "Created source page for 'javascriptallonge-a-pull-of-the-lever-prefaces'. Summarized the metaphor of Café Molinari preparation to illustrate programming principles, emphasizing moderation and flavor extraction. Wrote 1 page total.",
       "pages_written": [
         "javascriptallonge-a-pull-of-the-lever-prefaces"
       ],
@@ -73,15 +56,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 5,
+      "id": 4,
       "heading": "About JavaScript Allongé",
       "pages": [
         7,
-        7
+        9
       ],
-      "tokens": 316,
+      "tokens": 1641,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-about-javascript-allong",
+      "notes": "Created source page 'javascriptallonge-about-javascript-allong' summarizing the 'About JavaScript Allongé' section (raw/javascriptallonge.pdf p.7-9). Key claims covered: the book is about programming with functions in JavaScript, it begins with basics and builds to advanced topics like classes and iterators, and it teaches how to handle and simplify complex code. No additional entity/concept pages were created as the chunk did not introduce new terms requiring individual pages beyond the source summary.",
       "pages_written": [
         "javascriptallonge-about-javascript-allong"
       ],
@@ -90,49 +73,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 6,
-      "heading": "why the 'six' edition?",
-      "pages": [
-        7,
-        9
-      ],
-      "tokens": 767,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-why-the-six-edition",
-      "pages_written": [
-        "javascriptallonge-why-the-six-edition"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 7,
-      "heading": "that's nice. is that the only reason?",
-      "pages": [
-        9,
-        9
-      ],
-      "tokens": 503,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-that-s-nice-is-that-the-only-reason",
-      "pages_written": [
-        "javascriptallonge-that-s-nice-is-that-the-only-reason"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 8,
+      "id": 5,
       "heading": "What JavaScript Allongé is. And isn't.",
       "pages": [
         10,
-        11
+        12
       ],
-      "tokens": 761,
+      "tokens": 986,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-what-javascript-allong-is-and-isn-t",
+      "notes": "Created source page 'javascriptallonge-what-javascript-allong-is-and-isn-t' summarizing the preface section. The page defines the book's focus on thinking about programs and programming with functions, and clarifies that it is not prescriptive. No additional entity or concept pages were created as the chunk did not introduce new terms requiring individual pages.",
       "pages_written": [
         "javascriptallonge-what-javascript-allong-is-and-isn-t"
       ],
@@ -141,32 +90,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 9,
-      "heading": "how this book is organized",
-      "pages": [
-        11,
-        12
-      ],
-      "tokens": 155,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-how-this-book-is-organized",
-      "pages_written": [
-        "javascriptallonge-how-this-book-is-organized"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 10,
-      "heading": "Foreword to the 'Six' edition",
+      "id": 6,
+      "heading": "Foreword to the ``Six'' edition",
       "pages": [
         13,
         13
       ],
-      "tokens": 250,
+      "tokens": 508,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-foreword-to-the-six-edition",
+      "notes": "Created the source page 'javascriptallonge-foreword-to-the-six-edition' summarizing the foreword to the 'Six' edition of JavaScript Allongé. Key claims covered include the standardization timeline of ES6, the abandonment of ES4, and the three major groups of ES6 features. No additional entity or concept pages were created as the chunk focused primarily on the foreword's content and ES6 history.",
       "pages_written": [
         "javascriptallonge-foreword-to-the-six-edition"
       ],
@@ -175,83 +107,32 @@
       "route_gap_summaries": []
     },
     {
-      "id": 11,
-      "heading": "ECMAScript 6 has three major groups of features:",
-      "pages": [
-        13,
-        13
-      ],
-      "tokens": 229,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-ecmascript-6-has-three-major-groups-of-features",
-      "pages_written": [
-        "javascriptallonge-ecmascript-6-has-three-major-groups-of-features"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 12,
+      "id": 7,
       "heading": "Forewords to the First Edition",
-      "pages": [
-        14,
-        14
-      ],
-      "tokens": 8,
-      "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "Forewords to the First Edition (pages 14-14): no claim-bearing source-page material."
-      ]
-    },
-    {
-      "id": 13,
-      "heading": "michael fogus",
-      "pages": [
-        14,
-        14
-      ],
-      "tokens": 611,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-michael-fogus",
-      "pages_written": [
-        "javascriptallonge-michael-fogus"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 14,
-      "heading": "matthew knox",
       "pages": [
         14,
         15
       ],
-      "tokens": 233,
+      "tokens": 888,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-matthew-knox",
+      "notes": "Created the source page 'javascriptallonge-forewords-to-the-first-edition' summarizing the forewords to the first edition of JavaScript Allongé by Michael Fogus and Matthew Knox. Key claims include Fogus's initial skepticism about the pay-what-you-want model being overcome by the book's quality, the effectiveness of the Leanpub model for iterative feedback, and Knox's comparison of the book's depth to a Cafe Allongé.",
       "pages_written": [
-        "javascriptallonge-matthew-knox"
+        "javascriptallonge-forewords-to-the-first-edition"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
-      "id": 15,
+      "id": 8,
       "heading": "About The Sample PDF",
       "pages": [
         16,
         17
       ],
-      "tokens": 123,
+      "tokens": 166,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-about-the-sample-pdf",
+      "notes": "Created the source page 'javascriptallonge-about-the-sample-pdf' summarizing the sample PDF section from JavaScript Allongé. Key claims include the sample edition being a portion of the complete book, free updates for early purchasers, and a no-risk refund policy. No other pages were created or updated in this chunk.",
       "pages_written": [
         "javascriptallonge-about-the-sample-pdf"
       ],
@@ -260,15 +141,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 16,
+      "id": 9,
       "heading": "Prelude: Values and Expressions over Coffee",
       "pages": [
         18,
         18
       ],
-      "tokens": 308,
+      "tokens": 324,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-prelude-values-and-expressions-over-coffee",
+      "notes": "Created the main chapter page for 'Prelude: Values and Expressions over Coffee' from JavaScript Allongé. The page summarizes the foundational concepts using a coffee shop analogy to explain how JavaScript expressions evaluate to values. Key claims covered: JavaScript expressions yield values like coffee orders, input expressions return output values, and the coffee shop model illustrates JavaScript evaluation. No additional entity or concept pages were created for this chunk.",
       "pages_written": [
         "javascriptallonge-prelude-values-and-expressions-over-coffee"
       ],
@@ -277,15 +158,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 17,
+      "id": 10,
       "heading": "values are expressions",
       "pages": [
         19,
         20
       ],
-      "tokens": 625,
+      "tokens": 665,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-values-are-expressions",
+      "notes": "Created the main source page 'javascriptallonge-values-are-expressions' summarizing the 'values are expressions' section from JavaScript Allongé (pages 19-20). The key claims covered are: (1) all values are expressions, (2) the number 42 is both an expression and a value, and (3) string concatenation with the + operator creates expressions that are not values. No additional pages were created as the chunk did not introduce new entities or concepts beyond the core principle.",
       "pages_written": [
         "javascriptallonge-values-are-expressions"
       ],
@@ -294,15 +175,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 18,
+      "id": 11,
       "heading": "values and identity",
       "pages": [
         21,
-        21
+        23
       ],
-      "tokens": 328,
+      "tokens": 1033,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-values-and-identity",
+      "notes": "Created the main chapter page 'javascriptallonge-values-and-identity' summarizing JavaScript values, identity, and the === operator. Key claims covered: JavaScript uses === to test identity, value types (strings, numbers, booleans) are identical if they have the same type and content, and reference types (arrays, functions) are not identical even if they appear the same. No additional pages needed beyond the main chapter summary.",
       "pages_written": [
         "javascriptallonge-values-and-identity"
       ],
@@ -311,49 +192,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 19,
-      "heading": "value types",
-      "pages": [
-        22,
-        22
-      ],
-      "tokens": 273,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-value-types",
-      "pages_written": [
-        "javascriptallonge-value-types"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 20,
-      "heading": "reference types",
-      "pages": [
-        22,
-        23
-      ],
-      "tokens": 362,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-reference-types",
-      "pages_written": [
-        "javascriptallonge-reference-types"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 21,
+      "id": 12,
       "heading": "A Rich Aroma: Basic Numbers",
       "pages": [
         24,
-        25
+        27
       ],
-      "tokens": 391,
+      "tokens": 1315,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-rich-aroma-basic-numbers",
+      "notes": "Created the main chapter page 'javascriptallonge-a-rich-aroma-basic-numbers' covering literals, number representations, and basic operations in JavaScript. No additional entity or concept pages were created as the chunk did not introduce sufficient depth on any specific topic beyond the chapter's scope.",
       "pages_written": [
         "javascriptallonge-a-rich-aroma-basic-numbers"
       ],
@@ -362,66 +209,32 @@
       "route_gap_summaries": []
     },
     {
-      "id": 22,
-      "heading": "floating",
-      "pages": [
-        25,
-        26
-      ],
-      "tokens": 528,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-floating",
-      "pages_written": [
-        "javascriptallonge-floating"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 23,
-      "heading": "operations on numbers",
-      "pages": [
-        26,
-        27
-      ],
-      "tokens": 330,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-on-numbers",
-      "pages_written": [
-        "javascriptallonge-operations-on-numbers"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 24,
+      "id": 13,
       "heading": "The first sip: Basic Functions",
       "pages": [
-        29,
+        28,
         29
       ],
-      "tokens": 8,
+      "tokens": 41,
       "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "The first sip: Basic Functions (pages 29-29): no claim-bearing source-page material."
-      ]
+      "notes": "Created the source summary page for 'The first sip: Basic Functions' section from JavaScript Allongé. Key claims: introduction to basic functions in JavaScript, and a picture illustrating the concept is intentionally omitted. No other pages were created or updated in this chunk.",
+      "pages_written": [
+        "javascriptallonge-the-first-sip-basic-functions"
+      ],
+      "route_plan_pages": 1,
+      "route_plan_gaps": 0,
+      "route_gap_summaries": []
     },
     {
-      "id": 25,
+      "id": 14,
       "heading": "As Little As Possible About Functions, But No Less",
       "pages": [
         30,
-        31
+        38
       ],
-      "tokens": 373,
+      "tokens": 3240,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-as-little-as-possible-about-functions-but-no-less",
+      "notes": "Created the source summary page for the chapter 'As Little As Possible About Functions, But No Less'. Key claims covered: functions as values, functions as reference types, function application, and functions returning values/expressions. No other pages were created or updated in this chunk as per the PagePlan constraints.",
       "pages_written": [
         "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
       ],
@@ -430,287 +243,32 @@
       "route_gap_summaries": []
     },
     {
-      "id": 26,
-      "heading": "functions and identities",
-      "pages": [
-        31,
-        31
-      ],
-      "tokens": 160,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-and-identities",
-      "pages_written": [
-        "javascriptallonge-functions-and-identities"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 27,
-      "heading": "applying functions",
-      "pages": [
-        31,
-        31
-      ],
-      "tokens": 271,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-applying-functions",
-      "pages_written": [
-        "javascriptallonge-applying-functions"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 28,
-      "heading": "functions that return values and evaluate expressions",
-      "pages": [
-        32,
-        33
-      ],
-      "tokens": 331,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-that-return-values-and-evaluate-expressions",
-      "pages_written": [
-        "javascriptallonge-functions-that-return-values-and-evaluate-expressions"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 29,
-      "heading": "commas",
-      "pages": [
-        33,
-        33
-      ],
-      "tokens": 150,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-commas",
-      "pages_written": [
-        "javascriptallonge-commas"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 30,
-      "heading": "Or even:",
-      "pages": [
-        33,
-        33
-      ],
-      "tokens": 10,
-      "status": "done",
-      "notes": "Recovered existing wiki page(s): javascriptallonge-or-even",
-      "pages_written": [
-        "javascriptallonge-or-even"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 31,
-      "heading": "the simplest possible block",
-      "pages": [
-        34,
-        34
-      ],
-      "tokens": 95,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-simplest-possible-block",
-      "pages_written": [
-        "javascriptallonge-the-simplest-possible-block"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 32,
-      "heading": "undefined",
-      "pages": [
-        34,
-        35
-      ],
-      "tokens": 291,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-undefined",
-      "pages_written": [
-        "javascriptallonge-undefined"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 33,
-      "heading": "void",
-      "pages": [
-        35,
-        35
-      ],
-      "tokens": 229,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-void",
-      "pages_written": [
-        "javascriptallonge-void"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 34,
-      "heading": "back on the block",
-      "pages": [
-        35,
-        37
-      ],
-      "tokens": 742,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-back-on-the-block",
-      "pages_written": [
-        "javascriptallonge-back-on-the-block"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 35,
-      "heading": "And also:",
-      "pages": [
-        37,
-        38
-      ],
-      "tokens": 159,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-and-also",
-      "pages_written": [
-        "javascriptallonge-and-also"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 36,
-      "heading": "functions that evaluate to functions",
-      "pages": [
-        38,
-        38
-      ],
-      "tokens": 293,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-that-evaluate-to-functions",
-      "pages_written": [
-        "javascriptallonge-functions-that-evaluate-to-functions"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 37,
-      "heading": "Ah. I'd Like to Have an Argument, Please. 22",
+      "id": 15,
+      "heading": "Ah. I'd Like to Have an Argument, Please.",
       "pages": [
         39,
-        40
-      ],
-      "tokens": 403,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-ah-i-d-like-to-have-an-argument-please-22",
-      "pages_written": [
-        "javascriptallonge-ah-i-d-like-to-have-an-argument-please-22"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 38,
-      "heading": "a quick summary of functions and bodies",
-      "pages": [
-        40,
-        40
-      ],
-      "tokens": 285,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-quick-summary-of-functions-and-bodies",
-      "pages_written": [
-        "javascriptallonge-a-quick-summary-of-functions-and-bodies"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 39,
-      "heading": "call by value",
-      "pages": [
-        40,
-        41
-      ],
-      "tokens": 193,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-call-by-value",
-      "pages_written": [
-        "javascriptallonge-call-by-value"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 40,
-      "heading": "variables and bindings",
-      "pages": [
-        41,
-        42
-      ],
-      "tokens": 844,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-variables-and-bindings",
-      "pages_written": [
-        "javascriptallonge-variables-and-bindings"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 41,
-      "heading": "call by sharing",
-      "pages": [
-        42,
         43
       ],
-      "tokens": 503,
+      "tokens": 2341,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-call-by-sharing",
+      "notes": "Created the source summary page for the chapter 'Ah. I'd Like to Have an Argument, Please.' (pages 39-43) from JavaScript Allongé. This chapter covers functions with arguments, evaluation strategies (call by value), and introduces concepts like environments and variable bindings. Key claims include how to define functions with arguments, how arguments are passed using call by value, and how environments work when functions are invoked. No other pages were created as the plan only authorized the source summary page.",
       "pages_written": [
-        "javascriptallonge-call-by-sharing"
+        "javascriptallonge-ah-i-d-like-to-have-an-argument-please"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
-      "id": 42,
+      "id": 16,
       "heading": "Closures and Scope",
       "pages": [
         44,
-        44
+        48
       ],
-      "tokens": 386,
+      "tokens": 2132,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-closures-and-scope",
+      "notes": "Created the source page for 'javascriptallonge-closures-and-scope' covering pages 44-48. Key claims include the definition of closures and pure functions, how environments work in JavaScript, and the concept of shadowing. No additional entity or concept pages were created as the chunk did not introduce sufficient new material for dedicated pages beyond the source summary.",
       "pages_written": [
         "javascriptallonge-closures-and-scope"
       ],
@@ -719,83 +277,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 43,
-      "heading": "if functions without free variables are pure, are closures impure?",
-      "pages": [
-        45,
-        45
-      ],
-      "tokens": 527,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure",
-      "pages_written": [
-        "javascriptallonge-if-functions-without-free-variables-are-pure-are-closures-impure"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 44,
-      "heading": "it's always the environment",
-      "pages": [
-        46,
-        47
-      ],
-      "tokens": 542,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-it-s-always-the-environment",
-      "pages_written": [
-        "javascriptallonge-it-s-always-the-environment"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 45,
-      "heading": "shadowy variables from a shadowy planet",
-      "pages": [
-        47,
-        47
-      ],
-      "tokens": 224,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-shadowy-variables-from-a-shadowy-planet",
-      "pages_written": [
-        "javascriptallonge-shadowy-variables-from-a-shadowy-planet"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 46,
-      "heading": "which came first, the chicken or the egg?",
-      "pages": [
-        47,
-        48
-      ],
-      "tokens": 363,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-which-came-first-the-chicken-or-the-egg",
-      "pages_written": [
-        "javascriptallonge-which-came-first-the-chicken-or-the-egg"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 47,
+      "id": 17,
       "heading": "That Constant Coffee Craving",
       "pages": [
         49,
-        50
+        61
       ],
-      "tokens": 482,
+      "tokens": 4204,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-that-constant-coffee-craving",
+      "notes": "Created source page 'javascriptallonge-that-constant-coffee-craving' covering const keyword, lexical scoping, and IIFEs. No other pages needed for this chunk.",
       "pages_written": [
         "javascriptallonge-that-constant-coffee-craving"
       ],
@@ -804,117 +294,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 48,
-      "heading": "inside-out",
-      "pages": [
-        50,
-        51
-      ],
-      "tokens": 535,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-inside-out",
-      "pages_written": [
-        "javascriptallonge-inside-out"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 49,
-      "heading": "const",
-      "pages": [
-        51,
-        53
-      ],
-      "tokens": 668,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-const",
-      "pages_written": [
-        "javascriptallonge-const"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 50,
-      "heading": "nested blocks",
-      "pages": [
-        54,
-        55
-      ],
-      "tokens": 279,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-nested-blocks",
-      "pages_written": [
-        "javascriptallonge-nested-blocks"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 51,
-      "heading": "const and lexical scope",
-      "pages": [
-        55,
-        57
-      ],
-      "tokens": 606,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-const-and-lexical-scope",
-      "pages_written": [
-        "javascriptallonge-const-and-lexical-scope"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 52,
-      "heading": "are consts also from a shadowy planet?",
-      "pages": [
-        57,
-        60
-      ],
-      "tokens": 1134,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-are-consts-also-from-a-shadowy-planet",
-      "pages_written": [
-        "javascriptallonge-are-consts-also-from-a-shadowy-planet"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 53,
-      "heading": "rebinding",
-      "pages": [
-        60,
-        61
-      ],
-      "tokens": 308,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-rebinding",
-      "pages_written": [
-        "javascriptallonge-rebinding"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 54,
+      "id": 18,
       "heading": "Naming Functions",
       "pages": [
         62,
-        62
+        67
       ],
-      "tokens": 86,
+      "tokens": 1991,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-naming-functions",
+      "notes": "Created the source page 'javascriptallonge-naming-functions' summarizing the chapter on naming functions in JavaScript Allongé. The key claims covered include the distinction between anonymous and named functions, the use of named function expressions, and the behavior of function declarations including hoisting. No additional entity or concept pages were created as the chunk did not introduce sufficient depth on other topics.",
       "pages_written": [
         "javascriptallonge-naming-functions"
       ],
@@ -923,151 +311,32 @@
       "route_gap_summaries": []
     },
     {
-      "id": 55,
-      "heading": "the function keyword",
-      "pages": [
-        62,
-        65
-      ],
-      "tokens": 1003,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-function-keyword",
-      "pages_written": [
-        "javascriptallonge-the-function-keyword"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 56,
-      "heading": "function declarations",
-      "pages": [
-        65,
-        66
-      ],
-      "tokens": 453,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-declarations",
-      "pages_written": [
-        "javascriptallonge-function-declarations"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 57,
-      "heading": "function declaration caveats 34",
-      "pages": [
-        66,
-        67
-      ],
-      "tokens": 328,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-declaration-caveats-34",
-      "pages_written": [
-        "javascriptallonge-function-declaration-caveats-34"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 58,
+      "id": 19,
       "heading": "Combinators and Function Decorators",
       "pages": [
         68,
-        68
-      ],
-      "tokens": 9,
-      "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "Combinators and Function Decorators (pages 68-68): no claim-bearing source-page material."
-      ]
-    },
-    {
-      "id": 59,
-      "heading": "higher-order functions",
-      "pages": [
-        68,
-        68
-      ],
-      "tokens": 196,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-higher-order-functions",
-      "pages_written": [
-        "javascriptallonge-higher-order-functions"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 60,
-      "heading": "combinators",
-      "pages": [
-        68,
-        69
-      ],
-      "tokens": 460,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-combinators",
-      "pages_written": [
-        "javascriptallonge-combinators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 61,
-      "heading": "a balanced statement about combinators",
-      "pages": [
-        69,
-        69
-      ],
-      "tokens": 108,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-balanced-statement-about-combinators",
-      "pages_written": [
-        "javascriptallonge-a-balanced-statement-about-combinators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 62,
-      "heading": "function decorators",
-      "pages": [
-        69,
         70
       ],
-      "tokens": 311,
+      "tokens": 1148,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-decorators",
+      "notes": "Created source page for 'javascriptallonge-combinators-and-function-decorators' covering combinators and function decorators. Key claims include: combinators are higher-order functions that take functions as arguments and return functions; the compose combinator combines two functions; function decorators modify function behavior. No additional entity or concept pages were created as the chunk did not introduce sufficient depth for new pages beyond the main chapter summary.",
       "pages_written": [
-        "javascriptallonge-function-decorators"
+        "javascriptallonge-combinators-and-function-decorators"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
-      "id": 63,
+      "id": 20,
       "heading": "Building Blocks",
       "pages": [
         71,
-        71
+        73
       ],
-      "tokens": 120,
+      "tokens": 1075,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-building-blocks",
+      "notes": "Created the main source page for the 'Building Blocks' chapter (javascriptallonge-building-blocks) and identified key concepts: composition and partial application. No additional pages were created as they were not authorized by the ingest plan.",
       "pages_written": [
         "javascriptallonge-building-blocks"
       ],
@@ -1076,49 +345,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 64,
-      "heading": "composition",
-      "pages": [
-        71,
-        71
-      ],
-      "tokens": 359,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-composition",
-      "pages_written": [
-        "javascriptallonge-composition"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 65,
-      "heading": "partial application",
-      "pages": [
-        72,
-        73
-      ],
-      "tokens": 544,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-partial-application",
-      "pages_written": [
-        "javascriptallonge-partial-application"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 66,
+      "id": 21,
       "heading": "Magic Names",
       "pages": [
         74,
-        74
+        77
       ],
-      "tokens": 85,
+      "tokens": 1473,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-magic-names",
+      "notes": "Created source page 'javascriptallonge-magic-names' covering magic names in JavaScript functions, specifically the 'arguments' object and how it behaves differently for regular functions vs fat arrow functions. Key claims: JavaScript binds argument values to magic names beyond declared parameters; the 'arguments' object contains all passed arguments regardless of declared parameters; fat arrow functions inherit 'arguments' from enclosing scope; custom bindings for magic names should be avoided. No additional entity or concept pages created beyond the required source summary.",
       "pages_written": [
         "javascriptallonge-magic-names"
       ],
@@ -1127,83 +362,32 @@
       "route_gap_summaries": []
     },
     {
-      "id": 67,
-      "heading": "the function keyword",
-      "pages": [
-        74,
-        75
-      ],
-      "tokens": 488,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-function-keyword",
-      "pages_written": [
-        "javascriptallonge-the-function-keyword"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 68,
-      "heading": "magic names and fat arrows",
-      "pages": [
-        75,
-        77
-      ],
-      "tokens": 831,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-magic-names-and-fat-arrows",
-      "pages_written": [
-        "javascriptallonge-magic-names-and-fat-arrows"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 69,
+      "id": 22,
       "heading": "Summary",
       "pages": [
         78,
         78
       ],
-      "tokens": 2,
+      "tokens": 291,
       "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "Summary (pages 78-78): no claim-bearing source-page material."
-      ]
-    },
-    {
-      "id": 70,
-      "heading": "Functions",
-      "pages": [
-        78,
-        78
-      ],
-      "tokens": 256,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-applying-functions",
+      "notes": "Created the source summary page for 'JavaScript Allongé' (javascriptallonge-summary). The chunk covered functions as values, their application to arguments, and the distinction between fat arrow and function keyword declarations. No additional pages were created as they were not authorized by the ingest route plan.",
       "pages_written": [
-        "javascriptallonge-applying-functions"
+        "javascriptallonge-summary"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
-      "id": 71,
+      "id": 23,
       "heading": "Recipes with Basic Functions",
       "pages": [
         79,
         79
       ],
-      "tokens": 65,
+      "tokens": 176,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-recipes-with-basic-functions",
+      "notes": "Created the chapter summary page for 'Recipes with Basic Functions' (javascriptallonge-recipes-with-basic-functions). The page summarizes the chapter's focus on functions that return functions and notes that the recipes are written for practicality, potentially using features not yet discussed, but fitting within the spirit of the language.",
       "pages_written": [
         "javascriptallonge-recipes-with-basic-functions"
       ],
@@ -1212,32 +396,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 72,
-      "heading": "Disclaimer",
-      "pages": [
-        79,
-        79
-      ],
-      "tokens": 83,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-disclaimer",
-      "pages_written": [
-        "javascriptallonge-disclaimer"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 73,
+      "id": 24,
       "heading": "Partial Application",
       "pages": [
         80,
         81
       ],
-      "tokens": 487,
+      "tokens": 535,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-partial-application",
+      "notes": "Created the main chapter page for partial application in JavaScript Allongé. The page summarizes key recipes (callFirst, callLast, callLeft, callRight) and provides examples of their usage. Covered the main claims about partial application being a common tool in JavaScript libraries, the ability to apply arguments leftmost or rightmost, and that partial application uses building blocks for function composition.",
       "pages_written": [
         "javascriptallonge-partial-application"
       ],
@@ -1246,15 +413,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 74,
+      "id": 25,
       "heading": "Unary",
       "pages": [
         82,
         83
       ],
-      "tokens": 470,
+      "tokens": 492,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-unary",
+      "notes": "Created source page 'javascriptallonge-unary' covering unary function decorators and their use with Array.map. Updated the index. No other pages needed for this chunk.",
       "pages_written": [
         "javascriptallonge-unary"
       ],
@@ -1263,15 +430,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 75,
+      "id": 26,
       "heading": "Tap",
       "pages": [
         84,
         85
       ],
-      "tokens": 420,
+      "tokens": 460,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tap",
+      "notes": "Created source page 'javascriptallonge-tap' summarizing the tap combinator section from JavaScript Allongé (pages 84-85). The page covers the definition, usage, and implementation of the tap function, including its role as a debugging aid and support for both curried and uncurried forms. No other pages were created or updated in this chunk as the focus was on the specific section.",
       "pages_written": [
         "javascriptallonge-tap"
       ],
@@ -1280,15 +447,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 76,
+      "id": 27,
       "heading": "Maybe",
       "pages": [
         86,
         87
       ],
-      "tokens": 487,
+      "tokens": 527,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-maybe",
+      "notes": "Created the main chapter page 'javascriptallonge-maybe' covering the Maybe pattern and function decorator inspired by Haskell's Maybe monad, Ruby's andand, and CoffeeScript's existential method invocation. The page cites (raw/javascriptallonge.pdf p.86-87) and includes three claim bullets as per the plan. No other pages were updated or created for this chunk as the focus was on the main chapter topic.",
       "pages_written": [
         "javascriptallonge-maybe"
       ],
@@ -1297,15 +464,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 77,
+      "id": 28,
       "heading": "Once",
       "pages": [
         88,
         88
       ],
-      "tokens": 214,
+      "tokens": 236,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-once",
+      "notes": "Created the source page for the 'Once' combinator from JavaScript Allongé. Key claims: the Once combinator ensures a function is called only once, it returns another function, it returns undefined on subsequent calls, and it is an extremely helpful combinator. Entities touched: Once combinator, askedOnBlindDate function. Pages written: javascriptallonge-once.",
       "pages_written": [
         "javascriptallonge-once"
       ],
@@ -1314,15 +481,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 78,
+      "id": 29,
       "heading": "Left-Variadic Functions",
       "pages": [
         89,
-        90
+        93
       ],
-      "tokens": 389,
+      "tokens": 1568,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-left-variadic-functions",
+      "notes": "Created the source page for the 'Left-Variadic Functions' chapter (pages 89-93) from JavaScript Allongé. The page covers variadic functions, left-variadic functions, and destructuring, including examples of `leftVariadic` and `leftGather` utilities. No additional entity or concept pages were created as the chunk focused on a single topic.",
       "pages_written": [
         "javascriptallonge-left-variadic-functions"
       ],
@@ -1331,66 +498,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 79,
-      "heading": "a history lesson",
-      "pages": [
-        90,
-        91
-      ],
-      "tokens": 395,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-history-lesson",
-      "pages_written": [
-        "javascriptallonge-a-history-lesson"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 80,
-      "heading": "overcoming limitations",
-      "pages": [
-        91,
-        92
-      ],
-      "tokens": 317,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-overcoming-limitations",
-      "pages_written": [
-        "javascriptallonge-overcoming-limitations"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 81,
-      "heading": "left-variadic destructuring",
-      "pages": [
-        92,
-        93
-      ],
-      "tokens": 364,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-left-variadic-destructuring",
-      "pages_written": [
-        "javascriptallonge-left-variadic-destructuring"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 82,
+      "id": 30,
       "heading": "Picking the Bean: Choice and Truthiness",
       "pages": [
         94,
-        94
+        99
       ],
-      "tokens": 95,
+      "tokens": 2368,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-picking-the-bean-choice-and-truthiness",
+      "notes": "Created the main chapter page for 'Picking the Bean: Choice and Truthiness' (pages 94-99) from 'JavaScript Allongé'. Key claims covered include truthiness and falsiness in JavaScript, logical operators (!, &&, ||) operating on truthiness, and the ternary operator as a control-flow operator. No additional entity or concept pages were created as the chunk did not introduce new topics requiring dedicated pages.",
       "pages_written": [
         "javascriptallonge-picking-the-bean-choice-and-truthiness"
       ],
@@ -1399,134 +515,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 83,
-      "heading": "true",
-      "pages": [
-        94,
-        94
-      ],
-      "tokens": 4,
-      "status": "done",
-      "notes": "Recovered existing wiki page(s): javascriptallonge-true",
-      "pages_written": [
-        "javascriptallonge-true"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 84,
-      "heading": "false",
-      "pages": [
-        94,
-        95
-      ],
-      "tokens": 210,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-false",
-      "pages_written": [
-        "javascriptallonge-false"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 85,
-      "heading": "truthiness and the ternary operator",
-      "pages": [
-        95,
-        96
-      ],
-      "tokens": 648,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-truthiness-and-the-ternary-operator",
-      "pages_written": [
-        "javascriptallonge-truthiness-and-the-ternary-operator"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 86,
-      "heading": "truthiness and operators",
-      "pages": [
-        96,
-        97
-      ],
-      "tokens": 541,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-truthiness-and-operators",
-      "pages_written": [
-        "javascriptallonge-truthiness-and-operators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 87,
-      "heading": "|| and && are control-flow operators",
-      "pages": [
-        97,
-        98
-      ],
-      "tokens": 341,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-and-are-control-flow-operators",
-      "pages_written": [
-        "javascriptallonge-and-are-control-flow-operators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 88,
-      "heading": "function parameters are eager",
-      "pages": [
-        98,
-        99
-      ],
-      "tokens": 267,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-function-parameters-are-eager",
-      "pages_written": [
-        "javascriptallonge-function-parameters-are-eager"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 89,
-      "heading": "summary",
-      "pages": [
-        99,
-        99
-      ],
-      "tokens": 114,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 90,
+      "id": 31,
       "heading": "Composing and Decomposing Data",
       "pages": [
         100,
         100
       ],
-      "tokens": 54,
+      "tokens": 80,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-composing-and-decomposing-data",
+      "notes": "Created the chapter page 'javascriptallonge-composing-and-decomposing-data' summarizing the section on recursion as a foundational concept in computation. Key claim: Recursion is the root of computation since it trades description for time. No additional pages were created as the chunk was minimal and did not introduce new entities or concepts beyond the scope of the chapter.",
       "pages_written": [
         "javascriptallonge-composing-and-decomposing-data"
       ],
@@ -1535,15 +532,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 91,
+      "id": 32,
       "heading": "Arrays and Destructuring Arguments",
       "pages": [
         101,
-        101
+        108
       ],
-      "tokens": 95,
+      "tokens": 2298,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-arrays-and-destructuring-arguments",
+      "notes": "Created the main chapter page for 'Arrays and Destructuring Arguments' (raw/javascriptallonge.pdf p.101-108). Key claims covered: arrays as native representation of lists, literal syntax using square brackets, element extraction via bracket notation, destructuring for extracting array elements, and gathering for extracting head and rest of arrays. No additional entities or concepts required beyond the main chapter page.",
       "pages_written": [
         "javascriptallonge-arrays-and-destructuring-arguments"
       ],
@@ -1552,134 +549,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 92,
-      "heading": "array literals",
-      "pages": [
-        101,
-        102
-      ],
-      "tokens": 323,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-array-literals",
-      "pages_written": [
-        "javascriptallonge-array-literals"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 93,
-      "heading": "element references",
-      "pages": [
-        102,
-        103
-      ],
-      "tokens": 173,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-element-references",
-      "pages_written": [
-        "javascriptallonge-element-references"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 94,
-      "heading": "destructuring arrays",
-      "pages": [
-        103,
-        104
-      ],
-      "tokens": 425,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-arrays",
-      "pages_written": [
-        "javascriptallonge-destructuring-arrays"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 95,
-      "heading": "gathering",
-      "pages": [
-        104,
-        105
-      ],
-      "tokens": 393,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-gathering",
-      "pages_written": [
-        "javascriptallonge-gathering"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 96,
-      "heading": "destructuring is not pattern matching",
-      "pages": [
-        105,
-        106
-      ],
-      "tokens": 330,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-is-not-pattern-matching",
-      "pages_written": [
-        "javascriptallonge-destructuring-is-not-pattern-matching"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 97,
-      "heading": "destructuring and return values",
-      "pages": [
-        106,
-        107
-      ],
-      "tokens": 149,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-and-return-values",
-      "pages_written": [
-        "javascriptallonge-destructuring-and-return-values"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 98,
-      "heading": "destructuring parameters",
-      "pages": [
-        107,
-        108
-      ],
-      "tokens": 258,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-parameters",
-      "pages_written": [
-        "javascriptallonge-destructuring-parameters"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 99,
+      "id": 33,
       "heading": "Self-Similarity",
       "pages": [
         109,
-        111
+        116
       ],
-      "tokens": 932,
+      "tokens": 2906,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-self-similarity",
+      "notes": "Created the source summary page for the 'Self-Similarity' chapter (pages 109-116) from 'JavaScript Allongé'. This chapter covers recursion, linear recursion, mapping, and folding in the context of JavaScript data structures. No additional concept pages were created as they were not authorized in the ingest plan. The main page 'javascriptallonge-self-similarity' was written with key claims and examples from the chapter.",
       "pages_written": [
         "javascriptallonge-self-similarity"
       ],
@@ -1688,83 +566,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 100,
-      "heading": "linear recursion",
-      "pages": [
-        111,
-        113
-      ],
-      "tokens": 914,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-linear-recursion",
-      "pages_written": [
-        "javascriptallonge-linear-recursion"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 101,
-      "heading": "mapping",
-      "pages": [
-        113,
-        114
-      ],
-      "tokens": 378,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mapping",
-      "pages_written": [
-        "javascriptallonge-mapping"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 102,
-      "heading": "folding",
-      "pages": [
-        114,
-        116
-      ],
-      "tokens": 447,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-folding",
-      "pages_written": [
-        "javascriptallonge-folding"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 103,
-      "heading": "summary",
-      "pages": [
-        116,
-        116
-      ],
-      "tokens": 100,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 104,
+      "id": 34,
       "heading": "Tail Calls (and Default Arguments)",
       "pages": [
         117,
-        118
+        125
       ],
-      "tokens": 930,
+      "tokens": 3065,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tail-calls-and-default-arguments",
+      "notes": "Created source page for 'javascriptallonge-tail-calls-and-default-arguments'. The chunk covered tail-call optimization techniques and default arguments in JavaScript, showing how to convert recursive functions into tail-recursive forms to avoid stack growth issues and how default arguments can simplify function calls. No additional entity or concept pages were created as the chunk's focus was on these specific techniques.",
       "pages_written": [
         "javascriptallonge-tail-calls-and-default-arguments"
       ],
@@ -1773,100 +583,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 105,
-      "heading": "tail-call optimization",
-      "pages": [
-        119,
-        119
-      ],
-      "tokens": 441,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tail-call-optimization",
-      "pages_written": [
-        "javascriptallonge-tail-call-optimization"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 106,
-      "heading": "converting non-tail-calls to tail-calls",
-      "pages": [
-        120,
-        121
-      ],
-      "tokens": 649,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-converting-non-tail-calls-to-tail-calls",
-      "pages_written": [
-        "javascriptallonge-converting-non-tail-calls-to-tail-calls"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 107,
-      "heading": "factorials",
-      "pages": [
-        121,
-        123
-      ],
-      "tokens": 358,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-factorials",
-      "pages_written": [
-        "javascriptallonge-factorials"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 108,
-      "heading": "default arguments",
-      "pages": [
-        123,
-        124
-      ],
-      "tokens": 376,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-default-arguments",
-      "pages_written": [
-        "javascriptallonge-default-arguments"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 109,
-      "heading": "defaults and destructuring",
-      "pages": [
-        124,
-        125
-      ],
-      "tokens": 136,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-defaults-and-destructuring",
-      "pages_written": [
-        "javascriptallonge-defaults-and-destructuring"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 110,
+      "id": 35,
       "heading": "Garbage, Garbage Everywhere",
       "pages": [
         126,
-        128
+        131
       ],
-      "tokens": 565,
+      "tokens": 2354,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-garbage-garbage-everywhere",
+      "notes": "Created source page for 'Garbage, Garbage Everywhere' (javascriptallonge-garbage-garbage-everywhere). Key claims: Tail calls optimize space but array operations still create temporary arrays causing performance issues; JavaScript engines copy array elements one at a time; thrashing from short-lived arrays is very bad. Entities touched: Lisp, IBM 704, cons cell, CAR/CDR instructions. Pages written: 1 (the chapter summary page).",
       "pages_written": [
         "javascriptallonge-garbage-garbage-everywhere"
       ],
@@ -1875,66 +600,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 111,
-      "heading": "some history",
-      "pages": [
-        128,
-        130
-      ],
-      "tokens": 1255,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-some-history",
-      "pages_written": [
-        "javascriptallonge-some-history"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 112,
-      "heading": "so why arrays",
-      "pages": [
-        131,
-        131
-      ],
-      "tokens": 347,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-so-why-arrays",
-      "pages_written": [
-        "javascriptallonge-so-why-arrays"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 113,
-      "heading": "summary",
-      "pages": [
-        131,
-        131
-      ],
-      "tokens": 71,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 114,
+      "id": 36,
       "heading": "Plain Old JavaScript Objects",
       "pages": [
         132,
-        132
+        140
       ],
-      "tokens": 544,
+      "tokens": 2812,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-plain-old-javascript-objects",
+      "notes": "Created the source page for 'Plain Old JavaScript Objects' (raw/javascriptallonge.pdf p.132-140). Updated the index. No additional entity or concept pages were created as the chunk's content was adequately covered by the source summary page and existing related pages. Key claims include object literal syntax, key-value access, destructuring, and linked list implementation using objects.",
       "pages_written": [
         "javascriptallonge-plain-old-javascript-objects"
       ],
@@ -1943,100 +617,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 115,
-      "heading": "literal object syntax",
-      "pages": [
-        133,
-        136
-      ],
-      "tokens": 785,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-literal-object-syntax",
-      "pages_written": [
-        "javascriptallonge-literal-object-syntax"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 116,
-      "heading": "destructuring objects",
-      "pages": [
-        136,
-        137
-      ],
-      "tokens": 363,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-destructuring-objects",
-      "pages_written": [
-        "javascriptallonge-destructuring-objects"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 117,
-      "heading": "revisiting linked lists",
-      "pages": [
-        137,
-        140
-      ],
-      "tokens": 959,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-revisiting-linked-lists",
-      "pages_written": [
-        "javascriptallonge-revisiting-linked-lists"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 118,
+      "id": 37,
       "heading": "Mutation",
       "pages": [
         141,
-        143
-      ],
-      "tokens": 674,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mutation",
-      "pages_written": [
-        "javascriptallonge-mutation"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 119,
-      "heading": "mutation and data structures",
-      "pages": [
-        143,
-        145
-      ],
-      "tokens": 712,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mutation-and-data-structures",
-      "pages_written": [
-        "javascriptallonge-mutation-and-data-structures"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 120,
-      "heading": "building with mutation",
-      "pages": [
-        145,
         147
       ],
-      "tokens": 507,
+      "tokens": 2044,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mutation",
+      "notes": "Created the main chapter page for 'Mutation' (javascriptallonge-mutation). This page covers key concepts such as mutation, aliasing, and structure sharing in JavaScript. The page summarizes the chapter's content and includes key claims about how mutation works in JavaScript, the implications of aliasing, and patterns for using mutation effectively. No additional pages were created as the PagePlan only authorized the main chapter page.",
       "pages_written": [
         "javascriptallonge-mutation"
       ],
@@ -2045,15 +634,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 121,
+      "id": 38,
       "heading": "Reassignment",
       "pages": [
         148,
-        150
+        157
       ],
-      "tokens": 658,
+      "tokens": 2818,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-reassignment",
+      "notes": "Created the main chapter page for the Reassignment section (javascriptallonge-reassignment) summarizing key concepts around rebinding, scoping, and the differences between const, let, and var. The ingest route plan was strictly followed with only the planned page created. No additional pages were written as they were not authorized by the deterministic PagePlan.",
       "pages_written": [
         "javascriptallonge-reassignment"
       ],
@@ -2062,134 +651,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 122,
-      "heading": "mixing let and const",
-      "pages": [
-        150,
-        151
-      ],
-      "tokens": 218,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-const",
-      "pages_written": [
-        "javascriptallonge-const"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 123,
-      "heading": "var",
-      "pages": [
-        151,
-        154
-      ],
-      "tokens": 668,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-var",
-      "pages_written": [
-        "javascriptallonge-var"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 124,
-      "heading": "why const and let were invented",
-      "pages": [
-        154,
-        154
-      ],
-      "tokens": 342,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-why-const-and-let-were-invented",
-      "pages_written": [
-        "javascriptallonge-why-const-and-let-were-invented"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 125,
-      "heading": "Yes. Consider this variation:",
-      "pages": [
-        155,
-        157
-      ],
-      "tokens": 727,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-yes-consider-this-variation",
-      "pages_written": [
-        "javascriptallonge-yes-consider-this-variation"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 126,
+      "id": 39,
       "heading": "Copy on Write",
       "pages": [
         158,
-        159
-      ],
-      "tokens": 461,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copy-on-write",
-      "pages_written": [
-        "javascriptallonge-copy-on-write"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 127,
-      "heading": "a few utilities",
-      "pages": [
-        159,
-        161
-      ],
-      "tokens": 427,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-few-utilities",
-      "pages_written": [
-        "javascriptallonge-a-few-utilities"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 128,
-      "heading": "copy-on-read",
-      "pages": [
-        161,
-        161
-      ],
-      "tokens": 319,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copy-on-read",
-      "pages_written": [
-        "javascriptallonge-copy-on-read"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 129,
-      "heading": "copy-on-write",
-      "pages": [
-        162,
         163
       ],
-      "tokens": 576,
+      "tokens": 1909,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copy-on-write",
+      "notes": "Created a source summary page for the copy-on-write strategy discussed in 'Composing and Decomposing Data' (pages 158-163). The page covers key concepts such as copy-on-write, copy-on-read, and structure sharing, with examples demonstrating how these strategies apply to arrays and linked lists. No additional entity or concept pages were created in this chunk.",
       "pages_written": [
         "javascriptallonge-copy-on-write"
       ],
@@ -2198,15 +668,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 130,
+      "id": 40,
       "heading": "Tortoises, Hares, and Teleporting Turtles",
       "pages": [
         164,
         166
       ],
-      "tokens": 947,
+      "tokens": 1030,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-tortoises-hares-and-teleporting-turtles",
+      "notes": "Created the main chapter page for 'Tortoises, Hares, and Teleporting Turtles' from JavaScript Allongé. The page summarizes the key claims about loop detection algorithms, including the Tortoise and Hare algorithm and the Teleporting Turtle algorithm, with citations to raw/javascriptallonge.pdf p.164-166. No additional pages were created as the plan only authorized the main chapter page.",
       "pages_written": [
         "javascriptallonge-tortoises-hares-and-teleporting-turtles"
       ],
@@ -2215,15 +685,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 131,
+      "id": 41,
       "heading": "Functional Iterators",
       "pages": [
         167,
-        168
+        176
       ],
-      "tokens": 704,
+      "tokens": 2902,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functional-iterators",
+      "notes": "Created the source page for the Functional Iterators chapter (pages 167-176) from JavaScript Allong'e. Key claims include separation of traversal and operations via folding, iterator implementation with while loops, lazy evaluation, and iterator composition through mapping and filtering. No additional entity or concept pages were created as the chunk focused on foundational iterator concepts without introducing new named entities or complex ideas requiring separate treatment.",
       "pages_written": [
         "javascriptallonge-functional-iterators"
       ],
@@ -2232,83 +702,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 132,
-      "heading": "iterating",
-      "pages": [
-        169,
-        172
-      ],
-      "tokens": 844,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iterating",
-      "pages_written": [
-        "javascriptallonge-iterating"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 133,
-      "heading": "unfolding and laziness",
-      "pages": [
-        172,
-        175
-      ],
-      "tokens": 771,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-unfolding-and-laziness",
-      "pages_written": [
-        "javascriptallonge-unfolding-and-laziness"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 134,
-      "heading": "bonus",
-      "pages": [
-        175,
-        176
-      ],
-      "tokens": 226,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-bonus",
-      "pages_written": [
-        "javascriptallonge-bonus"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 135,
-      "heading": "caveat",
-      "pages": [
-        176,
-        176
-      ],
-      "tokens": 147,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-caveat",
-      "pages_written": [
-        "javascriptallonge-caveat"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 136,
+      "id": 42,
       "heading": "Making Data Out Of Functions",
       "pages": [
         177,
-        179
+        190
       ],
-      "tokens": 519,
+      "tokens": 4453,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-making-data-out-of-functions",
+      "notes": "Created the main chapter page 'javascriptallonge-making-data-out-of-functions' covering combinatory logic, K, I, and V combinators, and how functions can represent data structures like pairs and lists. No additional pages were created as the plan only authorized the main chapter page.",
       "pages_written": [
         "javascriptallonge-making-data-out-of-functions"
       ],
@@ -2317,134 +719,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 137,
-      "heading": "the kestrel and the idiot",
-      "pages": [
-        179,
-        180
-      ],
-      "tokens": 456,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-kestrel-and-the-idiot",
-      "pages_written": [
-        "javascriptallonge-the-kestrel-and-the-idiot"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 138,
-      "heading": "backwardness",
-      "pages": [
-        180,
-        182
-      ],
-      "tokens": 378,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-backwardness",
-      "pages_written": [
-        "javascriptallonge-backwardness"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 139,
-      "heading": "the vireo",
-      "pages": [
-        182,
-        183
-      ],
-      "tokens": 532,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-vireo",
-      "pages_written": [
-        "javascriptallonge-the-vireo"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 140,
-      "heading": "lists with functions as data",
-      "pages": [
-        183,
-        186
-      ],
-      "tokens": 624,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lists-with-functions-as-data",
-      "pages_written": [
-        "javascriptallonge-lists-with-functions-as-data"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 141,
-      "heading": "say 'please'",
-      "pages": [
-        186,
-        188
-      ],
-      "tokens": 597,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-say-please",
-      "pages_written": [
-        "javascriptallonge-say-please"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 142,
-      "heading": "functions are not the real point",
-      "pages": [
-        188,
-        189
-      ],
-      "tokens": 373,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functions-are-not-the-real-point",
-      "pages_written": [
-        "javascriptallonge-functions-are-not-the-real-point"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 143,
-      "heading": "a return to backward thinking",
-      "pages": [
-        189,
-        190
-      ],
-      "tokens": 736,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-return-to-backward-thinking",
-      "pages_written": [
-        "javascriptallonge-a-return-to-backward-thinking"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 144,
+      "id": 43,
       "heading": "Recipes with Data",
       "pages": [
         191,
-        191
+        192
       ],
-      "tokens": 15,
+      "tokens": 129,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-recipes-with-data",
+      "notes": "Created the source page 'javascriptallonge-recipes-with-data' summarizing the 'Recipes with Data' chapter. Key claims: recipes are written for practicality and align with the language's spirit. No additional entity/concept pages were created as the chunk did not introduce new terms requiring dedicated pages.",
       "pages_written": [
         "javascriptallonge-recipes-with-data"
       ],
@@ -2453,32 +736,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 145,
-      "heading": "Disclaimer",
-      "pages": [
-        192,
-        192
-      ],
-      "tokens": 83,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-disclaimer",
-      "pages_written": [
-        "javascriptallonge-disclaimer"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 146,
+      "id": 44,
       "heading": "mapWith",
       "pages": [
         193,
         194
       ],
-      "tokens": 544,
+      "tokens": 562,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-mapwith",
+      "notes": "Created the source page for mapWith from JavaScript Allongé. The page summarizes the concept of mapWith, its differences from map, and its convenience as an abstraction. No other pages were created or updated in this chunk.",
       "pages_written": [
         "javascriptallonge-mapwith"
       ],
@@ -2487,15 +753,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 147,
+      "id": 45,
       "heading": "Flip",
       "pages": [
         195,
-        196
+        197
       ],
-      "tokens": 462,
+      "tokens": 782,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-flip",
+      "notes": "Created the javascriptallonge-flip source page covering flip functions and currying techniques. The page includes key concepts like argument reversal, currying, and function composition. It also covers how flip functions handle context differently for methods. No additional pages were created or updated as the chunk focused specifically on flip functions rather than related concepts like mapWith.",
       "pages_written": [
         "javascriptallonge-flip"
       ],
@@ -2504,49 +770,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 148,
-      "heading": "self-currying flip",
-      "pages": [
-        196,
-        196
-      ],
-      "tokens": 123,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-self-currying-flip",
-      "pages_written": [
-        "javascriptallonge-self-currying-flip"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 149,
-      "heading": "flipping methods",
-      "pages": [
-        196,
-        197
-      ],
-      "tokens": 147,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-flipping-methods",
-      "pages_written": [
-        "javascriptallonge-flipping-methods"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 150,
+      "id": 46,
       "heading": "Object.assign",
       "pages": [
         198,
         200
       ],
-      "tokens": 389,
+      "tokens": 420,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-object-assign",
+      "notes": "Created the source page for the Object.assign chapter (javascriptallonge-object-assign) from JavaScript Allongé. Key claims covered: Object.assign extends objects by assigning properties, and it can copy properties from one object to another. No additional entity or concept pages were created in this chunk.",
       "pages_written": [
         "javascriptallonge-object-assign"
       ],
@@ -2555,15 +787,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 151,
+      "id": 47,
       "heading": "Why?",
       "pages": [
         201,
         201
       ],
-      "tokens": 367,
+      "tokens": 384,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-why",
+      "notes": "Created the chapter page 'javascriptallonge-why' covering the Y Combinator. Key claims: The Y Combinator enables recursive functions without binding names, it's essential in combinatory logic, and the joy of working things out is emphasized. No additional pages were created as the chunk focused solely on the Y Combinator.",
       "pages_written": [
         "javascriptallonge-why"
       ],
@@ -2572,15 +804,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 152,
+      "id": 48,
       "heading": "A Warm Cup: Basic Strings and Quasi-Literals",
       "pages": [
         202,
-        203
+        204
       ],
-      "tokens": 201,
+      "tokens": 840,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals",
+      "notes": "Created the source page for 'A Warm Cup: Basic Strings and Quasi-Literals' (raw/javascriptallonge.pdf p.202-204). Key claims covered include string literals with escape sequences, string concatenation using '+', the concept of quasi-literals (template strings) with expression interpolation using '${}', and the late evaluation of quasi-literals. No additional entity or concept pages were created beyond the chapter summary.",
       "pages_written": [
         "javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals"
       ],
@@ -2589,49 +821,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 153,
-      "heading": "quasi-literals",
-      "pages": [
-        203,
-        204
-      ],
-      "tokens": 382,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-quasi-literals",
-      "pages_written": [
-        "javascriptallonge-quasi-literals"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 154,
-      "heading": "evaluation time",
-      "pages": [
-        204,
-        204
-      ],
-      "tokens": 184,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-evaluation-time",
-      "pages_written": [
-        "javascriptallonge-evaluation-time"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 155,
+      "id": 49,
       "heading": "Served by the Pot: Collections",
       "pages": [
         205,
         205
       ],
-      "tokens": 33,
+      "tokens": 57,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-served-by-the-pot-collections",
+      "notes": "Created the source page 'javascriptallonge-served-by-the-pot-collections' summarizing the 'Served by the Pot: Collections' section from JavaScript Allongé. Key claim: JavaScript collections are like coffee pots, serving different sizes and colours of data. No other pages were created or updated in this chunk.",
       "pages_written": [
         "javascriptallonge-served-by-the-pot-collections"
       ],
@@ -2640,15 +838,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 156,
+      "id": 50,
       "heading": "Iteration and Iterables",
       "pages": [
         206,
-        206
+        223
       ],
-      "tokens": 207,
+      "tokens": 5192,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iteration-and-iterables",
+      "notes": "Created the source page for the 'Iteration and Iterables' chapter (pages 206-223) from JavaScript Allongé. The page covers functional iterators, iterator objects, and the Symbol.iterator method. No additional entity or concept pages were created as the content did not warrant new pages beyond the chapter summary.",
       "pages_written": [
         "javascriptallonge-iteration-and-iterables"
       ],
@@ -2657,168 +855,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 157,
-      "heading": "a look back at functional iterators",
-      "pages": [
-        206,
-        209
-      ],
-      "tokens": 776,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-functional-iterators",
-      "pages_written": [
-        "javascriptallonge-functional-iterators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 158,
-      "heading": "iterator objects",
-      "pages": [
-        209,
-        210
-      ],
-      "tokens": 177,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iterator-objects",
-      "pages_written": [
-        "javascriptallonge-iterator-objects"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 159,
-      "heading": "Like this:",
-      "pages": [
-        210,
-        211
-      ],
-      "tokens": 288,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-like-this",
-      "pages_written": [
-        "javascriptallonge-like-this"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 160,
-      "heading": "iterables",
-      "pages": [
-        211,
-        215
-      ],
-      "tokens": 1155,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-basic-operations-on-iterables",
-      "pages_written": [
-        "javascriptallonge-basic-operations-on-iterables"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 161,
-      "heading": "iterables out to infinity",
-      "pages": [
-        215,
-        216
-      ],
-      "tokens": 133,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iterables-out-to-infinity",
-      "pages_written": [
-        "javascriptallonge-iterables-out-to-infinity"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 162,
-      "heading": "ordered collections",
-      "pages": [
-        216,
-        217
-      ],
-      "tokens": 376,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-ordered-collections",
-      "pages_written": [
-        "javascriptallonge-ordered-collections"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 163,
-      "heading": "operations on ordered collections",
-      "pages": [
-        217,
-        221
-      ],
-      "tokens": 1201,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-on-ordered-collections",
-      "pages_written": [
-        "javascriptallonge-operations-on-ordered-collections"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 164,
-      "heading": "from",
-      "pages": [
-        221,
-        222
-      ],
-      "tokens": 337,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-from",
-      "pages_written": [
-        "javascriptallonge-from"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 165,
-      "heading": "summary",
-      "pages": [
-        223,
-        223
-      ],
-      "tokens": 127,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 166,
+      "id": 51,
       "heading": "Generating Iterables",
       "pages": [
         224,
-        226
+        245
       ],
-      "tokens": 448,
+      "tokens": 5657,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-generating-iterables",
+      "notes": "Created the source page for the 'Generating Iterables' chapter (pages 224-245) from JavaScript Allongé. The page covers generators, iterators, and their application in recursive data structures and state machines like Fibonacci sequences. No additional entity or concept pages were created as the chunk's content was adequately covered by the source summary page and existing related pages.",
       "pages_written": [
         "javascriptallonge-generating-iterables"
       ],
@@ -2827,253 +872,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 167,
-      "heading": "recursive iterators",
-      "pages": [
-        226,
-        226
-      ],
-      "tokens": 221,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-recursive-iterators",
-      "pages_written": [
-        "javascriptallonge-recursive-iterators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 168,
-      "heading": "// Iteration",
-      "pages": [
-        227,
-        228
-      ],
-      "tokens": 320,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-iteration",
-      "pages_written": [
-        "javascriptallonge-iteration"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 169,
-      "heading": "state machines",
-      "pages": [
-        228,
-        229
-      ],
-      "tokens": 230,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-state-machines",
-      "pages_written": [
-        "javascriptallonge-state-machines"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 170,
-      "heading": "We'll keep it simple:",
-      "pages": [
-        229,
-        230
-      ],
-      "tokens": 205,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-we-ll-keep-it-simple",
-      "pages_written": [
-        "javascriptallonge-we-ll-keep-it-simple"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 171,
-      "heading": "javascript's generators",
-      "pages": [
-        230,
-        231
-      ],
-      "tokens": 477,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-javascript-s-generators",
-      "pages_written": [
-        "javascriptallonge-javascript-s-generators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 172,
-      "heading": "generators are coroutines",
-      "pages": [
-        231,
-        234
-      ],
-      "tokens": 1068,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-generators-are-coroutines",
-      "pages_written": [
-        "javascriptallonge-generators-are-coroutines"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 173,
-      "heading": "generators and iterables",
-      "pages": [
-        234,
-        236
-      ],
-      "tokens": 439,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-generators-and-iterables",
-      "pages_written": [
-        "javascriptallonge-generators-and-iterables"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 174,
-      "heading": "more generators",
-      "pages": [
-        236,
-        239
-      ],
-      "tokens": 391,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-more-generators",
-      "pages_written": [
-        "javascriptallonge-more-generators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 175,
-      "heading": "yielding iterables",
-      "pages": [
-        239,
-        243
-      ],
-      "tokens": 871,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-yielding-iterables",
-      "pages_written": [
-        "javascriptallonge-yielding-iterables"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 176,
-      "heading": "rewriting iterable operations",
-      "pages": [
-        243,
-        245
-      ],
-      "tokens": 371,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-rewriting-iterable-operations",
-      "pages_written": [
-        "javascriptallonge-rewriting-iterable-operations"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 177,
-      "heading": "Summary",
-      "pages": [
-        245,
-        245
-      ],
-      "tokens": 113,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 178,
+      "id": 52,
       "heading": "Lazy and Eager Collections",
       "pages": [
         246,
-        246
-      ],
-      "tokens": 434,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lazy-and-eager-collections",
-      "pages_written": [
-        "javascriptallonge-lazy-and-eager-collections"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 179,
-      "heading": "implementing methods with iteration",
-      "pages": [
-        246,
-        253
-      ],
-      "tokens": 1232,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-implementing-methods-with-iteration",
-      "pages_written": [
-        "javascriptallonge-implementing-methods-with-iteration"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 180,
-      "heading": "lazy collection operations",
-      "pages": [
-        253,
-        256
-      ],
-      "tokens": 993,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lazy-collection-operations",
-      "pages_written": [
-        "javascriptallonge-lazy-collection-operations"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 181,
-      "heading": "eager collections",
-      "pages": [
-        256,
         260
       ],
-      "tokens": 676,
+      "tokens": 3687,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-lazy-and-eager-collections",
+      "notes": "Key claims from the Lazy and Eager Collections chapter (pages 246-260): Lazy collections avoid computing values until needed, improving efficiency. Object-oriented collections should have methods for mapping, reducing, filtering, and finding, but delegate work to operations like mapWith. Eager collections, like arrays, return collections of their own type from methods, while lazy collections return iterable objects. Lazy evaluation is beneficial for memory footprint, especially with large collections and many operations. Lazy collections can work with infinite data structures, unlike eager collections which require finite data. Pages written: javascriptallonge-lazy-and-eager-collections.",
       "pages_written": [
         "javascriptallonge-lazy-and-eager-collections"
       ],
@@ -3082,15 +889,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 182,
+      "id": 53,
       "heading": "Interlude: The Carpenter Interviews for a Job",
       "pages": [
         261,
-        261
+        272
       ],
-      "tokens": 182,
+      "tokens": 3482,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-interlude-the-carpenter-interviews-for-a-job",
+      "notes": "Written the main chapter page 'javascriptallonge-interlude-the-carpenter-interviews-for-a-job' and identified key concepts for future pages. The chunk covered a technical interview problem involving cycle detection on a checkerboard game, with solutions using the Tortoise and Hare algorithm and alternative approaches. Key entities included The Carpenter, Christine, and Bob Plissken. The main technical concepts were cycle detection, iterables, and generators.",
       "pages_written": [
         "javascriptallonge-interlude-the-carpenter-interviews-for-a-job"
       ],
@@ -3099,83 +906,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 183,
-      "heading": "the problem",
-      "pages": [
-        261,
-        264
-      ],
-      "tokens": 672,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-problem",
-      "pages_written": [
-        "javascriptallonge-the-problem"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 184,
-      "heading": "the carpenter's solution",
-      "pages": [
-        264,
-        269
-      ],
-      "tokens": 1428,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-carpenter-s-solution",
-      "pages_written": [
-        "javascriptallonge-the-carpenter-s-solution"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 185,
-      "heading": "the aftermath",
-      "pages": [
-        269,
-        270
-      ],
-      "tokens": 380,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-the-aftermath",
-      "pages_written": [
-        "javascriptallonge-the-aftermath"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 186,
-      "heading": "after another drink",
-      "pages": [
-        270,
-        272
-      ],
-      "tokens": 510,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-after-another-drink",
-      "pages_written": [
-        "javascriptallonge-after-another-drink"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 187,
+      "id": 54,
       "heading": "Interactive Generators",
       "pages": [
         273,
-        275
+        283
       ],
-      "tokens": 397,
+      "tokens": 2681,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-interactive-generators",
+      "notes": "Created the source page for the 'Interactive Generators' chapter (javascriptallonge-interactive-generators). The page summarizes the key concepts of using generators for stateful functions and interactive state management, including examples with naughts and crosses game implementation. No additional entity or concept pages were created as the chunk focused primarily on the generator interaction pattern.",
       "pages_written": [
         "javascriptallonge-interactive-generators"
       ],
@@ -3184,151 +923,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 188,
-      "heading": "representing naughts and crosses as a stateless function",
-      "pages": [
-        275,
-        275
-      ],
-      "tokens": 75,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function",
-      "pages_written": [
-        "javascriptallonge-representing-naughts-and-crosses-as-a-stateless-function"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 189,
-      "heading": "Would be 3 , producing:",
-      "pages": [
-        276,
-        276
-      ],
-      "tokens": 107,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-would-be-3-producing",
-      "pages_written": [
-        "javascriptallonge-would-be-3-producing"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 190,
-      "heading": "Will be represented as:",
-      "pages": [
-        277,
-        278
-      ],
-      "tokens": 191,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-will-be-represented-as",
-      "pages_written": [
-        "javascriptallonge-will-be-represented-as"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 191,
-      "heading": "We get:",
-      "pages": [
-        278,
-        279
-      ],
-      "tokens": 123,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-we-get",
-      "pages_written": [
-        "javascriptallonge-we-get"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 192,
-      "heading": "representing naughts and crosses as a stateful function",
-      "pages": [
-        279,
-        280
-      ],
-      "tokens": 407,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function",
-      "pages_written": [
-        "javascriptallonge-representing-naughts-and-crosses-as-a-stateful-function"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 193,
-      "heading": "this seems familiar",
-      "pages": [
-        280,
-        282
-      ],
-      "tokens": 511,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-this-seems-familiar",
-      "pages_written": [
-        "javascriptallonge-this-seems-familiar"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 194,
-      "heading": "interactive generators",
-      "pages": [
-        282,
-        283
-      ],
-      "tokens": 393,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-interactive-generators",
-      "pages_written": [
-        "javascriptallonge-interactive-generators"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 195,
-      "heading": "summary",
-      "pages": [
-        283,
-        283
-      ],
-      "tokens": 106,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-summary",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 196,
+      "id": 55,
       "heading": "Basic Operations on Iterables",
       "pages": [
         284,
-        284
+        287
       ],
-      "tokens": 42,
+      "tokens": 784,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-basic-operations-on-iterables",
+      "notes": "Created the chapter page 'javascriptallonge-basic-operations-on-iterables' summarizing basic operations on iterables. Key claims include definitions of mapWith, filterWith, compact, zip, zipWith, reduceWith, and first. No additional entities touched beyond the scope of the chapter.",
       "pages_written": [
         "javascriptallonge-basic-operations-on-iterables"
       ],
@@ -3337,83 +940,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 197,
-      "heading": "operations that transform one iterable into another",
-      "pages": [
-        284,
-        285
-      ],
-      "tokens": 229,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-that-transform-one-iterable-into-another",
-      "pages_written": [
-        "javascriptallonge-operations-that-transform-one-iterable-into-another"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 198,
-      "heading": "operations that compose two or more iterables into an iterable",
-      "pages": [
-        285,
-        286
-      ],
-      "tokens": 193,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable",
-      "pages_written": [
-        "javascriptallonge-operations-that-compose-two-or-more-iterables-into-an-iterable"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 199,
-      "heading": "operations that transform an iterable into a value",
-      "pages": [
-        286,
-        286
-      ],
-      "tokens": 75,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-operations-that-transform-an-iterable-into-a-value",
-      "pages_written": [
-        "javascriptallonge-operations-that-transform-an-iterable-into-a-value"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 200,
-      "heading": "memoizing an iterable",
-      "pages": [
-        286,
-        287
-      ],
-      "tokens": 121,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-memoizing-an-iterable",
-      "pages_written": [
-        "javascriptallonge-memoizing-an-iterable"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 201,
+      "id": 56,
       "heading": "The Golden Crema: Appendices and Afterwords",
       "pages": [
         288,
         288
       ],
-      "tokens": 14,
+      "tokens": 42,
       "status": "done",
-      "notes": "Recovered existing wiki page(s): javascriptallonge-the-golden-crema-appendices-and-afterwords",
+      "notes": "Created a source summary page for the 'The Golden Crema: Appendices and Afterwords' section from JavaScript Allongé. Key claim: The picture of the La Marzocco machine is intentionally omitted to emphasize conceptual over visual representation. No other pages were created or updated in this chunk.",
       "pages_written": [
         "javascriptallonge-the-golden-crema-appendices-and-afterwords"
       ],
@@ -3422,15 +957,15 @@
       "route_gap_summaries": []
     },
     {
-      "id": 202,
+      "id": 57,
       "heading": "How to run the examples",
       "pages": [
         289,
         290
       ],
-      "tokens": 550,
+      "tokens": 623,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-how-to-run-the-examples",
+      "notes": "Created the source page 'javascriptallonge-how-to-run-the-examples' summarizing how to run examples from JavaScript Allongé using transpilers like Traceur and Babel. Key claims covered: use of transpilers for ECMAScript 2015 to 5 conversion, example code transformations, use of browser console for results, and installation options with Node.js. No additional entity or concept pages were created as this chunk focused on practical execution guidance rather than theoretical content.",
       "pages_written": [
         "javascriptallonge-how-to-run-the-examples"
       ],
@@ -3439,66 +974,32 @@
       "route_gap_summaries": []
     },
     {
-      "id": 203,
+      "id": 58,
       "heading": "Thanks!",
       "pages": [
         291,
-        291
-      ],
-      "tokens": 2,
-      "status": "done",
-      "notes": "No page write was planned for this PDF chunk because deterministic analysis found no claim-bearing source-page material.",
-      "pages_written": [],
-      "route_plan_pages": 0,
-      "route_plan_gaps": 1,
-      "route_gap_summaries": [
-        "Thanks! (pages 291-291): no claim-bearing source-page material."
-      ]
-    },
-    {
-      "id": 204,
-      "heading": "Daniel Friedman and Matthias Felleisen",
-      "pages": [
-        291,
-        291
-      ],
-      "tokens": 87,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-daniel-friedman-and-matthias-felleisen",
-      "pages_written": [
-        "javascriptallonge-daniel-friedman-and-matthias-felleisen"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 205,
-      "heading": "Richard Feynman",
-      "pages": [
-        292,
         292
       ],
-      "tokens": 176,
+      "tokens": 334,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-richard-feynman",
+      "notes": "Created the source page 'javascriptallonge-thanks' summarizing the Thanks section of JavaScript Allongé, citing inspirations from Daniel Friedman & Matthias Felleisen's 'The Little Schemer' and Richard Feynman's 'QED'. No other pages were created or updated in this chunk.",
       "pages_written": [
-        "javascriptallonge-richard-feynman"
+        "javascriptallonge-thanks"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
     {
-      "id": 206,
+      "id": 59,
       "heading": "Copyright Notice",
       "pages": [
         293,
-        293
+        296
       ],
-      "tokens": 28,
+      "tokens": 2889,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-copyright-notice",
+      "notes": "Created the source page 'javascriptallonge-copyright-notice' summarizing the copyright and image credits section (pages 293-296) of JavaScript Allongé. The page includes key claims about the copyright of the text and the various image copyrights and licenses. No other pages were created or updated in this chunk.",
       "pages_written": [
         "javascriptallonge-copyright-notice"
       ],
@@ -3507,51 +1008,17 @@
       "route_gap_summaries": []
     },
     {
-      "id": 207,
-      "heading": "images",
-      "pages": [
-        293,
-        296
-      ],
-      "tokens": 2734,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-images",
-      "pages_written": [
-        "javascriptallonge-images"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 208,
+      "id": 60,
       "heading": "About The Author",
       "pages": [
         297,
         297
       ],
-      "tokens": 113,
+      "tokens": 214,
       "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-about-the-author",
+      "notes": "Created the source page 'javascriptallonge-about-the-author' summarizing the 'About The Author' section from JavaScript Allongé. Key claims included Reg Braithwaite's authorship of the book and his programming libraries. No additional pages were created as the chunk was focused solely on the author's biography and contact information.",
       "pages_written": [
         "javascriptallonge-about-the-author"
-      ],
-      "route_plan_pages": 1,
-      "route_plan_gaps": 0,
-      "route_gap_summaries": []
-    },
-    {
-      "id": 209,
-      "heading": "contact",
-      "pages": [
-        297,
-        297
-      ],
-      "tokens": 60,
-      "status": "done",
-      "notes": "Replayed accepted source-summary draft artifact(s): javascriptallonge-contact",
-      "pages_written": [
-        "javascriptallonge-contact"
       ],
       "route_plan_pages": 1,
       "route_plan_gaps": 0,

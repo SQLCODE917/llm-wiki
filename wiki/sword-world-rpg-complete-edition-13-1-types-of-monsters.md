@@ -2,77 +2,77 @@
 page_id: sword-world-rpg-complete-edition-13-1-types-of-monsters
 page_kind: source
 summary: 13.1 Types of Monsters from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.170-172
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.170-171
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-There are 12 types of monsters in Alecrast: fae, youma, spirits, titans, mythical beasts, magical beasts, animals, plants, undead, magical creatures, daemons, humans, and others. This is based on the types set by Laverna, the famous witch of Orphan, who compiled the Natural History of Alecrast.
+There are 12 types of monsters in Alecrast, based on the types set by Laverna, the famous witch of Orphan, who compiled the _Natural History of Alecrast_.
 
 ## Key supported claims
 
-- There are 12 types of monsters in Alecrast, based on Laverna's Natural History (raw/Sword World RPG - Complete Edition.pdf p.170-172).
-- Spirits are involved in life activities and unaffected by poisons or mental attacks (raw/Sword World RPG - Complete Edition.pdf p.170-172).
-- Some types, such as mythical beasts and magical beasts, are based on the existence of dragons, creatures created by ancient sorcerers, and others (raw/Sword World RPG - Complete Edition.pdf p.170-172).
+- There are 12 types of monsters in Alecrast, based on Laverna's classification (raw/Sword World RPG - Complete Edition.pdf p.170-171)
+- Spirits are energy beings involved in life's activities, unaffected by poisons, illnesses, or mental attacks (raw/Sword World RPG - Complete Edition.pdf p.170-171)
+- Some spirits appear as mad spirits, extremely dangerous and destructive (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 ## Technical details
 
-### `technical-atom-0e81b362e45ae910` procedure
+### `technical-atom-bc6e960fe219353e` procedure
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 These include three types: things that have existed long before humans, such as dragons, things that live like humans, and artificial creatures created through the experiments of ancient sorcerers that have turned wild.
 
-### `technical-atom-e9ad13eeec4f4744` procedure
+### `technical-atom-7b28da9cb19edb23` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
-
-If the source of our life is called _positive_ life force, then the undead's source can be called _negative_ life force.
-
-### `technical-atom-89192eb5323af911` exception
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 They cannot adapt to the material world and will act destructively towards everything in it.
 
-### `technical-atom-f6f3b40373ccc7e3` exception
+### `technical-atom-213756288e1dd7ea` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 However, they cannot expand the power of their spells.
 
-### `technical-atom-d24d03659e031430` exception
+### `technical-atom-bc62c35a83adbf2c` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
 
-### `technical-atom-7415edc7aef859e5` exception
+### `technical-atom-287a54eb5fa0bb99` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 not to deal with them unless you're a very experienced adventurer.
 
-### `technical-atom-5472aa50c0f8beb8` exception
+### `technical-atom-f1103450ac6b6195` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 They are also not affected by illness or poison, and do not sleep in the normal sense of the word.
 
-### `technical-atom-af8d4c1d8e7ec6d6` exception
+### `technical-atom-4498796d00247fac` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-172)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
 
 Many of them are unable to reproduce on their own and can only produce offspring with the help of humans.
 
+### `technical-atom-951740543f4947cb` worked-example
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.170-171)
+
+Typical examples of youma include goblins and gremlins.
+
 ## Related technical details
 
-### From [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]: `technical-atom-5980ff4f543a580b` requirement
+### From [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]: `technical-atom-bcbc1a0918b8c7c0` requirement
 
-Relation: nearby source page; matched terms `attacks`, `mental`, `set`, `such`, `there`
+Relation: nearby source page; matched terms `attacks`, `mental`, `set`, `there`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-240)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-239)
 
 There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score.

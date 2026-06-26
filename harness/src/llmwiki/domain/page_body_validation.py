@@ -19,6 +19,7 @@ from llmwiki.domain.source_summary_citations import (
 
 _WORD_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)?", re.IGNORECASE)
 _BULLET_RE = re.compile(r"^\s*[-*]\s+\S+", re.MULTILINE)
+_RAW_CITATION_TEXT_RE = re.compile(r"\(?raw/[^\n)\]]+\)?")
 _COPIED_NGRAM_SIZE = 8
 _UNCERTAINTY_PATTERNS = {
     "may": r"\bmay\b",
@@ -266,7 +267,7 @@ def _length_findings(
     source_text: str,
     contract: ResolvedPageBodyContract,
 ) -> tuple[PageBodyFinding, ...]:
-    page_words = len(_words(page_body))
+    page_words = len(_words(_without_raw_citation_text(page_body)))
     findings: list[PageBodyFinding] = []
     if contract.max_words and page_words > contract.max_words:
         findings.append(
@@ -295,7 +296,7 @@ def _copy_findings(
     if not source_text or contract.max_copied_ngram_ratio >= 1.0:
         return ()
     source_ngrams = set(_ngrams(_words(source_text), _COPIED_NGRAM_SIZE))
-    body_ngrams = _ngrams(_words(page_body), _COPIED_NGRAM_SIZE)
+    body_ngrams = _ngrams(_words(_without_raw_citation_text(page_body)), _COPIED_NGRAM_SIZE)
     if not source_ngrams or not body_ngrams:
         return ()
     copied = sum(count for ngram, count in Counter(body_ngrams).items() if ngram in source_ngrams)
@@ -415,6 +416,10 @@ def _preserves_uncertainty(page_body: str, terms: tuple[str, ...]) -> bool:
 
 def _words(text: str) -> tuple[str, ...]:
     return tuple(match.group(0).lower() for match in _WORD_RE.finditer(text))
+
+
+def _without_raw_citation_text(text: str) -> str:
+    return _RAW_CITATION_TEXT_RE.sub("", text)
 
 
 def _ngrams(words: tuple[str, ...], size: int) -> tuple[tuple[str, ...], ...]:

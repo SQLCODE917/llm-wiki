@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Experience points are given to characters as an indicator of how much experience they have gained as a result of their adventures (raw/Sword World RPG - Complete Edition.pdf p.130-130).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0001"
+      ]
+    },
+    {
+      "bullet_text": "A character can advance in any number of skills and by any number of levels at once, with a maximum skill level of 10 (raw/Sword World RPG - Complete Edition.pdf p.130-130).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0002"
+      ]
+    },
+    {
+      "bullet_text": "The experience points required to increase each skill are shown on Table 8-1: Experience Points by Skill (raw/Sword World RPG - Complete Edition.pdf p.130-130).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0016"
+      ]
+    },
+    {
+      "bullet_text": "Experience points cannot be negative, as you can't grow from experiences you haven't had (raw/Sword World RPG - Complete Edition.pdf p.130-130).",
+      "covered_source_claims": [
+        "source-claim-unit-0065-0023"
+      ]
+    },
+    {
+      "bullet_text": "A character can spend fewer experience points only when acquiring both the sorcerer and sage skills (raw/Sword World RPG - Complete Edition.pdf p.131-132).",
+      "covered_source_claims": [
+        "source-claim-unit-0066-0013"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 8.2 to 8.4 of Sword World RPG - Complete Edition, covering experience point usage for skill levels and general skills."
+}

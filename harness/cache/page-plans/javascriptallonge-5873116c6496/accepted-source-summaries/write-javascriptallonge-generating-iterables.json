@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "Iterables look cool, but then again, everything looks amazing when you're given cherry-picked examples. What is there they don't do well? (raw/javascriptallonge.pdf p.224-226)",
+      "bullet_text": "Generators in JavaScript allow for simpler code when dealing with recursive iterations or state patterns, as they implicitly manage state (raw/javascriptallonge.pdf p.224-245).",
       "covered_source_claims": [
-        "source-claim-unit-0166-0001"
+        "source-claim-unit-0051-0003"
       ]
     },
     {
-      "bullet_text": "Whether it's a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it's done. (raw/javascriptallonge.pdf p.224-226)",
+      "bullet_text": "JavaScript generators are functions defined with function* syntax that use yield or yield* to generate values, making them useful for creating iterables (raw/javascriptallonge.pdf p.224-245).",
       "covered_source_claims": [
-        "source-claim-unit-0166-0004"
+        "source-claim-unit-0051-0006"
       ]
     },
     {
-      "bullet_text": "Iterators have to arrange its own state such that when you call them, they compute and return the next item. (raw/javascriptallonge.pdf p.224-226)",
+      "bullet_text": "Generators can be used to implement state machines like the Fibonacci sequence more naturally than traditional iterators (raw/javascriptallonge.pdf p.224-245).",
       "covered_source_claims": [
-        "source-claim-unit-0166-0005"
+        "source-claim-unit-0051-0007"
       ]
     }
   ],
-  "source_record_text": "This chapter explains how iterables and generators work in JavaScript, covering iterator protocols, recursive iteration, state machines, and generator syntax."
+  "source_record_text": "Chapter on generating iterables from JavaScript Allongé, covering iterators, generators, and their use in handling recursive data structures and state machines."
 }

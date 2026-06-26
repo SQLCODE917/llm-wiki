@@ -8,6 +8,7 @@ from collections import Counter
 from llmwiki.domain.evidence_registry import EvidenceRecord, EvidenceRegistry, SourceRange
 from llmwiki.domain.objects import ExtractedUnit, PagePlan, SourceClaim
 from llmwiki.domain.source_citations import source_citation
+from llmwiki.domain.source_claim_heuristics import code_fragment_payload, is_code_fragment
 from llmwiki.domain.technical_atom_detection import (
     MAX_RENDERED_ATOMS_PER_PAGE,
     TechnicalAtomKind,
@@ -169,6 +170,18 @@ class TechnicalAtomBuilder:
         seen: set[tuple[str, str, str]],
     ) -> tuple[TechnicalAtom, ...]:
         atoms: list[TechnicalAtom] = []
+        if is_code_fragment(line):
+            atom = self._make_atom(
+                "code",
+                page_id,
+                source_range,
+                code_fragment_payload(line.strip()),
+                fields_for_claim("code", line),
+                seen,
+            )
+            if atom is not None:
+                atoms.append(atom)
+            return tuple(atoms)
         if is_formula(line):
             atom = self._make_atom(
                 "formula",
@@ -217,12 +230,13 @@ class TechnicalAtomBuilder:
             )
             if atoms or "```" in claim.statement:
                 return atoms
+        payload = code_fragment_payload(claim.statement) if kind == "code" else claim.statement
         return _maybe_tuple(
             self._make_atom(
                 kind,
                 source_range.page_id,
                 source_range,
-                claim.statement,
+                payload,
                 fields_for_claim(kind, claim.statement),
                 seen,
                 source_claim_ids=(claim.source_claim_id,),
@@ -242,6 +256,8 @@ class TechnicalAtomBuilder:
         source_claim_ids: tuple[str, ...] = (),
         evidence_ids: tuple[str, ...] = (),
     ) -> TechnicalAtom | None:
+        if atom_kind == "code":
+            payload = code_fragment_payload(payload)
         bounded = bounded_payload(payload)
         if bounded is None:
             return None

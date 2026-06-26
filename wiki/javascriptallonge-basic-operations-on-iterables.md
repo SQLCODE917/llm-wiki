@@ -2,111 +2,125 @@
 page_id: javascriptallonge-basic-operations-on-iterables
 page_kind: source
 summary: Basic Operations on Iterables from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.284-284
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.284-287
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Summary of the 'Basic Operations on Iterables' section from JavaScript Allongé, covering the for...of loop, Symbol.iterator, and spreading iterables.
+Chapter on basic operations on iterables from JavaScript Allongé.
 
 ## Key supported claims
 
-- The for...of loop works with any iterable object (raw/javascriptallonge.pdf p.284-284).
+- The chapter defines operations that transform one iterable into another, preserving collection semantics (raw/javascriptallonge.pdf p.284-287).
+- Operations such as mapWith, filterWith, and compact are defined to work with iterables (raw/javascriptallonge.pdf p.284-287).
+- Functions like zip and zipWith compose iterables into new iterables (raw/javascriptallonge.pdf p.284-287).
 
 ## Technical details
 
-### `technical-atom-5dadf5a885619337` code
+### `technical-atom-06f854f6dd0c3ede` code
 
-Citation: (raw/javascriptallonge.pdf p.284)
-
-```javascript
-const Stack3 = () => ({ array: [], index: -1, push (value) { return this .array[ this .index += 1] = value; }, pop () { const value = this .array[ this .index]; this .array[ this .index] = undefined ; if ( this .index >= 0) { this .index -= 1 } return value }, isEmpty () { return this .index < 0 }, [Symbol.iterator] () { let iterationIndex = this .index; return { next () { if (iterationIndex > this .index) { iterationIndex = this .index; } if (iterationIndex < 0) { return {done: true }; } else { return {done: false , value: this .array[iterationIndex--]} } } } } }); const stack = Stack3();
-```
-
-### `technical-atom-3f7ceba972853444` code
-
-Citation: (raw/javascriptallonge.pdf p.284)
+Citation: (raw/javascriptallonge.pdf p.284-287)
 
 ```javascript
-stack.push(2000); stack.push(10); stack.push(5) const collectionSum = (collection) => { const iterator = collection[Symbol.iterator](); let eachIteration, sum = 0; while ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } return sum } collectionSum(stack) //=> 2015 Using [Symbol.iterator] instead of .iterator seems like adding an extra moving part for nothing. Do we get anything in return? Indeed we do. Behold the for...of loop: const iterableSum = (iterable) => { let sum = 0; for ( const num of iterable) { sum += num; } return sum } iterableSum(stack) //=> 2015
+function * mapWith(fn, iterable) { for ( const element of iterable) { yield fn(element); } } function * mapAllWith (fn, iterable) { for ( const element of iterable) { yield * fn(element); } } function * filterWith (fn, iterable) { for ( const element of iterable) { if (!!fn(element)) yield element; } } function * compact (iterable) { for ( const element of iterable) { if (element != null) yield element; } } function * untilWith (fn, iterable) { for ( const element of iterable) { if (fn(element)) break; yield fn(element); } } function * rest (iterable) { const iterator = iterable[Symbol.iterator](); iterator.next();
 ```
 
-### `technical-atom-5cf6a17f64b5d326` code
+### `technical-atom-df7b24412c801324` code
 
-Citation: (raw/javascriptallonge.pdf p.284)
+Citation: (raw/javascriptallonge.pdf p.284-287)
+
+```
+yield * iterator;
+```
+
+### `technical-atom-63329da7d920a7fa` code
+
+Citation: (raw/javascriptallonge.pdf p.284-287)
 
 ```javascript
-const EMPTY = { isEmpty: () => true }; const isEmpty = (node) => node === EMPTY; const Pair1 = (first, rest = EMPTY) => ({ first, rest, isEmpty () { return false }, [Symbol.iterator] () { let currentPair = this ; return { next () { if (currentPair.isEmpty()) { return {done: true } } else { const value = currentPair.first; currentPair = currentPair.rest; return {done: false , value} } } } } }); const list = (...elements) => { const [first, ...rest] = elements; return elements.length === 0 ? EMPTY : Pair1(first, list(...rest)) } const someSquares = list(1, 4, 9, 16, 25); iterableSum(someSquares) //=> 55
+function * take (numberToTake, iterable) { const iterator = iterable[Symbol.iterator]();
 ```
 
-### `technical-atom-91876acdf654e0cd` code
+### `technical-atom-2b89d49174101755` code
 
-Citation: (raw/javascriptallonge.pdf p.284)
+Citation: (raw/javascriptallonge.pdf p.284-287)
 
 ```javascript
-['some squares', ...someSquares] //=> ["some squares", 1, 4, 9, 16, 25]
+for ( let i = 0; i < numberToTake; ++i) { const { done, value } = iterator.next(); if (!done) yield value; } }
 ```
 
-### `technical-atom-6eadb95cbdf43456` code
+### `technical-atom-4cea242ebaa5e4ee` code
 
-Citation: (raw/javascriptallonge.pdf p.284)
+Citation: (raw/javascriptallonge.pdf p.284-287)
 
 ```javascript
-const firstAndSecondElement = (first, second) => ({first, second}) firstAndSecondElement(...stack) //=> {"first":5,"second":10}
+function * zip (...iterables) { const iterators = iterables.map(i => i[Symbol.iterator]());
 ```
 
-### `technical-atom-f9a05369dedddd46` requirement
+### `technical-atom-0f13977ab1af3729` code
 
-Citation: (raw/javascriptallonge.pdf p.211-215)
+Citation: (raw/javascriptallonge.pdf p.284-287)
 
-The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object.
+```javascript
+const zip = callFirst(zipWith, (...values) => values);
+```
 
-### `technical-atom-13e57f96247ba73c` worked-example
+### `technical-atom-f2f0a17d2e54f703` code
 
-Citation: (raw/javascriptallonge.pdf p.211-215)
+Citation: (raw/javascriptallonge.pdf p.284-287)
 
-For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly.
+```javascript
+const reduceWith = (fn, seed, iterable) => { let accumulator = seed;
+```
+
+### `technical-atom-35b2273acd61afdb` code
+
+Citation: (raw/javascriptallonge.pdf p.284-287)
+
+```javascript
+for ( const element of iterable) { accumulator = fn(accumulator, element); } return accumulator; }; const first = (iterable) => iterable[Symbol.iterator]().next().value;
+```
 
 ## Related technical details
 
-### From [[javascriptallonge-iterables-out-to-infinity]]: `technical-atom-6afb74908999e9bc` code
+### From [[javascriptallonge-lazy-and-eager-collections]]: `technical-atom-8d6f83afe6ff7090` code
 
-Relation: nearby source page; matched terms `iterables`, `iterator`, `symbol`
+Relation: nearby source page; matched terms `const`, `function`, `iterable`, `true`
 
-Citation: (raw/javascriptallonge.pdf p.215-216)
+Citation: (raw/javascriptallonge.pdf p.246-260)
 
 ```javascript
-const Numbers = { [Symbol.iterator] () { let n = 0; return { next: () => ({done: false , value: n++}) } } }
+const Pair = (car, cdr = EMPTY) => Object.assign({ car, cdr, isEmpty: () => false, [Symbol.iterator]: function () { let currentPair = this; return { next: () => { if (currentPair.isEmpty()) { return {done: true } } else { const value = currentPair.car; currentPair = currentPair.cdr; return {done: false, value} } } } } }, LazyCollection); Pair.from = (iterable) => ( function iterationToList (iteration) { const {done, value} = iteration.next();
 ```
 
-### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-d72c10129ba795ef` code
+### From [[javascriptallonge-generating-iterables]]: `technical-atom-7ed179c7b89bbe8f` code
 
-Relation: nearby source page; matched terms `iterable`, `iterator`, `operations`, `symbol`
+Relation: nearby source page; matched terms `const`, `element`, `iterable`, `iterables`
 
-Citation: (raw/javascriptallonge.pdf p.217-221)
+Citation: (raw/javascriptallonge.pdf p.224-245)
 
 ```javascript
-const filterWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { do { const {done, value} = iterator.next(); } while (!done && !fn(value)); return {done, value}; } } } }); const untilWith = (fn, iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); return { next () { let {done, value} = iterator.next(); done = done || fn(value); return ({done, value: done ? undefined : value}); } } } });
+const generate = (iterable) => { for ( let element of iterable) { if (isIterable(element)) { generate(element) } else { console.log(element) } } } generate([1, [2, [3, 4], 5]]) //=> 1 2 3 4 5
 ```
 
-### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-ba45ce02826374bb` code
+### From [[javascriptallonge-interactive-generators]]: `technical-atom-f2826d58755cc716` code
 
-Relation: nearby source page; matched terms `iterable`, `iterator`, `operations`, `symbol`
+Relation: nearby source page; matched terms `function`, `like`, `new`, `work`
 
-Citation: (raw/javascriptallonge.pdf p.217-221)
+Citation: (raw/javascriptallonge.pdf p.273-283)
 
 ```javascript
-const first = (iterable) => iterable[Symbol.iterator]().next().value; const rest = (iterable) => ({ [Symbol.iterator] () { const iterator = iterable[Symbol.iterator](); iterator.next(); return iterator; } });
+Our statelessNaughtsAndCrosses function pushes the work of tracking the game’s state onto us, the player. What if we want to exchange moves with the function? In that case, we need a stateful function. Our “API” will work like this: When we want a new game, we’ll call a function that will return a game function, We’ll call the game function repeatedly, passing our moves, and get the opponent’s moves from it.
 ```
 
-### From [[javascriptallonge-operations-on-ordered-collections]]: `technical-atom-50415e1f6386aada` code
+### From [[javascriptallonge-lazy-and-eager-collections]]: `technical-atom-a52c46f037bbeeb7` code
 
-Relation: nearby source page; matched terms `iterator`, `operations`, `symbol`
+Relation: nearby source page; matched terms `const`, `function`, `key`, `map`
 
-Citation: (raw/javascriptallonge.pdf p.217-221)
+Citation: (raw/javascriptallonge.pdf p.246-260)
 
 ```javascript
-const mapWith = (fn, collection) => ({ [Symbol.iterator] () { const iterator = collection[Symbol.iterator](); return { next () { const {done, value} = iterator.next(); return ({done, value: done ? undefined : fn(value)}); } } } });
+const extend = function (consumer, ...providers) { for ( let i = 0; i < providers.length; ++i) { const provider = providers[i]; for ( let key in provider) { if (provider.hasOwnProperty(key)) { consumer[key] = provider[key] } } } return consumer }; const LazyCollection = { map(fn) { return Object.assign({ [Symbol.iterator]: () => { const iterator = this [Symbol.iterator](); return { next: () => { const { done, value } = iterator.next(); return ({ done, value: done ? undefined: fn(value) }); } } } }, LazyCollection); }, reduce(fn, seed) { const iterator = this [Symbol.iterator](); let iterationResult, accumulator = seed; while ((iterationResult = iterator.next(), !iterationResult.done)) { accumulator = fn(accumulator, iterationResult.value); } return accumulator;
 ```

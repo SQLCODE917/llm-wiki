@@ -2,101 +2,103 @@
 page_id: sword-world-rpg-complete-edition-6-2-thief-skill
 page_kind: source
 summary: 6.2 Thief Skill from raw/Sword World RPG - Complete Edition.pdf.
-sources: raw/Sword World RPG - Complete Edition.pdf p.113-117
-updated: 2026-06-23
+sources: raw/Sword World RPG - Complete Edition.pdf p.113-115
+updated: 2026-06-25
 source_id: Sword World RPG - Complete Edition.pdf
 ---
 
 ## Source record
 
-The thief skill is taught at the thieves' guild. People who aren't in the guild usually can't learn it. Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild. Even those who have not joined a guild can directly learn the thief skill from those who have a higher thief skill level than themselves, but if the guild finds out that such outsider thieves (including those who have not paid the prescribed amount) used this skill to do business, they'll send an assassin.
+The thief skill is taught at the thieves' guild. People who aren't in the guild usually can't learn it. Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild. The owner of this skill is called a thief. Thieves are specialized craftsmen familiar with techniques needed behind the scenes of society. (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 ## Key supported claims
 
-- The thief skill is taught at the thieves' guild, where members must pay 10% of their income or 500 silver coins annually (raw/Sword World RPG - Complete Edition.pdf p.113-117).
-- Some thief abilities, such as lockpicking, are not retriable once failed (raw/Sword World RPG - Complete Edition.pdf p.113-117).
-- The thief skill includes combat abilities with a different fighting style than fighters, focusing on vital points and critical targets (raw/Sword World RPG - Complete Edition.pdf p.113-117).
+- The thief skill is taught at the thieves' guild (raw/Sword World RPG - Complete Edition.pdf p.113).
+- People who aren't in the guild usually can't learn it (raw/Sword World RPG - Complete Edition.pdf p.113).
+- Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild (raw/Sword World RPG - Complete Edition.pdf p.113).
+- The owner of this skill is called a thief (raw/Sword World RPG - Complete Edition.pdf p.113).
+- Thieves are specialized craftsmen familiar with techniques needed behind the scenes of society (raw/Sword World RPG - Complete Edition.pdf p.113).
 
 ## Technical details
 
-### `technical-atom-2d4aa27b0fa8a862` requirement
+### `technical-atom-f207ed4cae2ff83e` procedure
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
+
+① Tumble ⑩ Climb ② Lockpicking ⑪ Special Combat ③ Acrobatics ⑫ Long Jump/ High Jump ④ Mnemonics ⑬ Follow ⑤ Listen ⑭ Disguise ⑥ Stealthy Step ⑮ Treasure Appraisal ⑦ Pickpocket ⑯ Find/Sense Trap ⑧ Hide ⑰ Remove/Set Trap ⑨ Search
+
+### `technical-atom-3171f1adc5637125` requirement
+
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 If the rules for determining the target score or difficulty are clearly indicated, the game master should follow those rules, otherwise the game master must follow the rules under 9.1: Setting Target
 
-### `technical-atom-c3308aa50d73e92d` requirement
+### `technical-atom-3fa31b28f49f2ede` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 In particular, armor must adhere to this restriction and must also be ring mail or non-metal.
 
-### `technical-atom-6f5fcb9f5bc65ff3` requirement
+### `technical-atom-ef3b4e508078f1d9` requirement
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 Each year, guild members must give 10% of their (annual) income or 500 silver coins (whichever is higher) to their guild.
 
-### `technical-atom-7fb9fbab77c699be` exception
+### `technical-atom-8e235438c7e47c07` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 Once you fail such an ability, you _cannot_ attempt it again on the same target.
 
-### `technical-atom-3d9f43121f1710a4` exception
+### `technical-atom-e61a9331148884bf` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 For better or worse, society cannot exist without their presence.
 
-### `technical-atom-25e2771e316ce7af` exception
+### `technical-atom-ba53192ec67a64a3` exception
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 armor) must only be up to _half_ your strength (rounded up).
 
-### `technical-atom-9cf7dddca9c80a83` exception
+### `technical-atom-92b9e58a81fe8a3c` worked-example
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
-
-Some of these abilities cannot be used unless you're wearing light equipment.
-
-### `technical-atom-64307a6c8108617c` worked-example
-
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-117)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.113-115)
 
 For example, the thief skill's _lockpicking_ ability cannot be retried.
 
 ## Related technical details
 
-### From [[sword-world-rpg-complete-edition-6-4-sage-skill]]: `technical-atom-d7e6c1bfee4c0cd1` exception
+### From [[sword-world-rpg-complete-edition-6-5-bard-skill]]: `technical-atom-e719f3e220d3de8e` requirement
 
-Relation: nearby source page; matched terms `can`, `difficulty`, `score`, `skill`, `target`
+Relation: nearby source page; matched terms `game`, `master`, `requirement`, `score`, `skill`, `target`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.118-119)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.119)
 
-As an optional rule, you can set a target score or difficulty for text or conversations so that it cannot be understood if you fail a success roll.
+To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check.
 
-### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-d06cf0376dc9ce5b` exception
+### From [[sword-world-rpg-complete-edition-7-5-hunter-skill-through-7-6-sailor-skill]]: `technical-atom-9ae22115bd29db40` requirement
 
-Relation: nearby source page; matched terms `can`, `fighting`, `not`, `skills`, `style`, `their`
+Relation: nearby source page; matched terms `each`, `game`, `master`, `requirement`, `score`, `skill`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.127-128)
 
-Their fighting style is based on lightness, and although they cannot use heavy weapons or armor, they _can_ use light weapons and armor that does not impede their movement, allowing them to fight as well as a fighter.
+For each pre-processing attempt, the game master should set a target score and have the player make a success roll.
 
-### From [[sword-world-rpg-complete-edition-1-3-skills]]: `technical-atom-8908b4268e62dbbd` requirement
+### From [[sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill]]: `technical-atom-c71a38dd45352fcb` requirement
 
-Relation: nearby source page; matched terms `but`, `not`, `requirement`, `rules`, `skills`, `these`
+Relation: nearby source page; matched terms `game`, `master`, `must`, `requirement`, `skill`, `their`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.14-16)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.116-118)
 
-The rules do not require one character to acquire both of these skills, but if they are acquired at the same time, it gives them a significant advantage.
+If a third party attempts to _sense_ , _find_ , or _remove_ a trap set by a player, the game master must attempt a success roll on their behalf.
 
-### From [[sword-world-rpg-complete-edition-13-6-handling-monster-special-abilities]]: `technical-atom-5980ff4f543a580b` requirement
+### From [[sword-world-rpg-complete-edition-6-3-ranger-skill-through-6-4-sage-skill]]: `technical-atom-25d33d3e405745c8` exception
 
-Relation: nearby source page; matched terms `abilities`, `but`, `can`, `must`, `requirement`, `score`
+Relation: nearby source page; matched terms `can`, `difficulty`, `higher`, `skill`, `thief`
 
-Citation: (raw/Sword World RPG - Complete Edition.pdf p.235-240)
+Citation: (raw/Sword World RPG - Complete Edition.pdf p.116-118)
 
-There are several processes by which a curse can be brought about (such as normal physical attacks, by gaze, etc.), but in all cases you must ultimately make a mental power resistance roll against a set target score.
+For **set** , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level).

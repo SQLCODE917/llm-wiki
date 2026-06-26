@@ -3,96 +3,110 @@ page_id: javascriptallonge-how-to-run-the-examples
 page_kind: source
 summary: How to run the examples from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf p.289-290
-updated: 2026-06-23
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-This chapter explains how to run the examples from JavaScript Allongé, focusing on the use of transpilers like Traceur and Babel to handle ECMAScript 2015 code in environments that do not yet support it.
+This section explains how to run the examples from JavaScript Allongé, which were tested using transpilers like Google Traceur Compiler and Babel to convert ECMAScript 2015 code into ECMAScript-5 code.
 
 ## Key supported claims
 
-- All examples were tested using Google Traceur Compiler or Babel, which are transpilers that parse ECMAScript 2015 code and emit valid ECMAScript-5 code (raw/javascriptallonge.pdf p.289-290).
-- Both tools offer online areas to type ECMAScript code and see the ECMAScript-5 equivalent, and you can run the code as well (raw/javascriptallonge.pdf p.289-290).
-- You may have to use the console in your web browser to see the result of your expressions, as the code must be written with console.log for output (raw/javascriptallonge.pdf p.289-290).
+- The examples in JavaScript Allongé were tested using transpilers like Google Traceur Compiler and Babel (raw/javascriptallonge.pdf p.289-290).
+- Both Traceur and Babel are transpilers that parse ECMAScript 2015 code and emit valid ECMAScript-5 code (raw/javascriptallonge.pdf p.289-290).
+- To see the result of expressions, you may need to use the console in your web browser, for example, using console.log() (raw/javascriptallonge.pdf p.289-290).
 
 ## Technical details
 
-### `technical-atom-da7dcd6f0c74f94e` code
+### `technical-atom-cf768d2fea2898c0` code
 
 Citation: (raw/javascriptallonge.pdf p.289-290)
 
 ```javascript
-const before = (decoration) => (method) => function () { decoration.apply( this , arguments); return method.apply( this , arguments) };
+const before = (decoration) => (method) => function () { decoration.apply( this, arguments); return method.apply( this, arguments) };
 ```
 
-### `technical-atom-bfdd92b0ff7b2470` code
+### `technical-atom-195e22314139bbf7` code
 
 Citation: (raw/javascriptallonge.pdf p.289-290)
 
 ```javascript
-"use strict" var before = function (decoration) { return function (method) { return function () { decoration.apply( this , arguments); return method.apply( this , arguments); }; }; };
+var before = function (decoration) {
 ```
 
-### `technical-atom-e2cbc913e09ebbfa` code
-
-Citation: (raw/javascriptallonge.pdf p.289-290)
-
-```
-100 101 http://babeljs.io/
-```
-
-### `technical-atom-ad281399ada1cea7` code
+### `technical-atom-7d789ddd06018887` code
 
 Citation: (raw/javascriptallonge.pdf p.289-290)
 
 ```javascript
-const before = (decoration) => (method) => function (...args) { decoration.apply( this , args); return method.apply( this , args) }; And it would be 'transpiled' into: var before = function (decoration) { return function (method) { return function () { for ( let _len = arguments.length, args = Array(_len), _key = 0; _key < _le\ n; _key++) { args[_key] = arguments[_key]; } decoration.apply( this , args); return method.apply( this , args); }; }; };
+return function (method) {
 ```
 
-### `technical-atom-d55e747fda1e4f57` code
+### `technical-atom-9537152fa244317c` code
 
 Citation: (raw/javascriptallonge.pdf p.289-290)
 
 ```javascript
-(() => 2 + 2)()
+return function () {
 ```
 
-### `technical-atom-457ddf6a4dba93cb` code
+### `technical-atom-59b3349290ca71c6` code
+
+Citation: (raw/javascriptallonge.pdf p.289-290)
+
+```
+decoration.apply( this, arguments); return method.apply( this, arguments);
+```
+
+### `technical-atom-f95d7f03510abd40` code
+
+Citation: (raw/javascriptallonge.pdf p.289-290)
+
+```
+}; };
+```
+
+### `technical-atom-755c2332ffe34c02` code
+
+Citation: (raw/javascriptallonge.pdf p.289-290)
+
+```
+};
+```
+
+### `technical-atom-42a29e75c38d9103` code
 
 Citation: (raw/javascriptallonge.pdf p.289-290)
 
 ```javascript
-console.log( (() => 2 + 2)() )
+const before = (decoration) => (method) => function (...args) { decoration.apply( this, args); return method.apply( this, args) };
 ```
-
-### `technical-atom-d86ccc4d0beb1097` procedure
-
-Citation: (raw/javascriptallonge.pdf p.289-290)
-
-Traceur and Babel are both transpilers , they work by parsing ECMAScript 2015 code, then emitting valid ECMAScript-5 code that produces the same semantics.
-
-### `technical-atom-1a832844dd3ca479` worked-example
-
-Citation: (raw/javascriptallonge.pdf p.289-290)
-
-For example, this ECMAScript 2015 code:
 
 ## Related technical details
 
-### From [[javascriptallonge-richard-feynman]]: `technical-atom-ef5f2f7fff6b3605` exception
+### From [[javascriptallonge-thanks]]: `technical-atom-9f35f622bb8fc470` exception
 
 Relation: nearby source page; matched terms `all`, `explains`, `how`, `using`
 
-Citation: (raw/javascriptallonge.pdf p.292)
+Citation: (raw/javascriptallonge.pdf p.291-292)
 
-Richard Feynman's QED 105 wasanother inspiration: A book that explains Quantum Electrodynamics and the 'Sum of the Histories' methodology using the simple expedient of explaining how light reflects off a mirror, and showing how most of the things we think are happening-such as light travelling on a straight line, the angle of reflection equalling the angle of refraction, or that a beam of light only interacts with a small portion of the mirror, or that it reflects off a plane-are all wrong.
+Richard Feynman’s QED[105] was another inspiration: A book that explains Quantum Electrodynamics and the “Sum of the Histories” methodology using the simple expedient of explaining how light reflects off a mirror, and showing how most of the things we think are happening–such as light travelling on a straight line, the angle of reflection equalling the angle of refraction, or that a beam of light only interacts with a small portion of the mirror, or that it reflects off a plane–are all wrong.
 
-### From [[javascriptallonge-a-pull-of-the-lever-prefaces]]: `technical-atom-e8a303faa22d26b5` requirement
+### From [[javascriptallonge-interactive-generators]]: `technical-atom-f2826d58755cc716` code
+
+Relation: nearby source page; matched terms `code`, `like`, `need`
+
+Citation: (raw/javascriptallonge.pdf p.273-283)
+
+```javascript
+Our statelessNaughtsAndCrosses function pushes the work of tracking the game’s state onto us, the player. What if we want to exchange moves with the function? In that case, we need a stateful function. Our “API” will work like this: When we want a new game, we’ll call a function that will return a game function, We’ll call the game function repeatedly, passing our moves, and get the opponent’s moves from it.
+```
+
+### From [[javascriptallonge-a-pull-of-the-lever-prefaces]]: `technical-atom-3710a2880f9758fc` requirement
 
 Relation: nearby source page; matched terms `method`, `result`, `use`
 
 Citation: (raw/javascriptallonge.pdf p.6)
 
-'The important thing is that neither method of preparation should use so much water as to result in a sickly, pale ghost of Espresso.
+“The important thing is that neither method of preparation should use so much water as to result in a sickly, pale ghost of Espresso.

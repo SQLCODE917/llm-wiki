@@ -3,9 +3,9 @@
     {
       "bullet_text": "Recursion is the root of computation since it trades description for time (raw/javascriptallonge.pdf p.100-100).",
       "covered_source_claims": [
-        "source-claim-unit-0090-0001"
+        "source-claim-unit-0031-0002"
       ]
     }
   ],
-  "source_record_text": "Recursion is the root of computation since it trades description for time, according to Alan Perlis."
+  "source_record_text": "Chapter on composing and decomposing data in JavaScript, emphasizing recursion as a foundational concept in computation."
 }

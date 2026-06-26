@@ -1,0 +1,35 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Magical items vary by rarity and enchantment level. (raw/Sword World RPG - Complete Edition.pdf p.247-251)",
+      "covered_source_claims": [
+        "source-claim-unit-0113-0005"
+      ]
+    },
+    {
+      "bullet_text": "Item prices depend on strength requirements and base trade prices. (raw/Sword World RPG - Complete Edition.pdf p.247-251)",
+      "covered_source_claims": [
+        "source-claim-unit-0113-0100"
+      ]
+    },
+    {
+      "bullet_text": "Some items have hidden drawbacks or special effects. (raw/Sword World RPG - Complete Edition.pdf p.247-251)",
+      "covered_source_claims": [
+        "source-claim-unit-0113-0101"
+      ]
+    },
+    {
+      "bullet_text": "Enchanted items fall into categories: armor, shields, robes, cloaks, accessories, amulets, staves, wands, rings. (raw/Sword World RPG - Complete Edition.pdf p.247-251)",
+      "covered_source_claims": [
+        "source-claim-unit-0113-0080"
+      ]
+    },
+    {
+      "bullet_text": "Magic crystals store power and may be used as currency. (raw/Sword World RPG - Complete Edition.pdf p.247-251)",
+      "covered_source_claims": [
+        "source-claim-unit-0113-0083"
+      ]
+    }
+  ],
+  "source_record_text": "Magical item list from Sword World RPG - Complete Edition, section 14.4, pages 247-251. Some enchantment details and item effects are unknown."
+}

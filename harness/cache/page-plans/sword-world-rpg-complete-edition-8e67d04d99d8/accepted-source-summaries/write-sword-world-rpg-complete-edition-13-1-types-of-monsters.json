@@ -1,23 +1,23 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "There are 12 types of monsters in Alecrast, based on Laverna's Natural History (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
+      "bullet_text": "There are 12 types of monsters in Alecrast, based on Laverna's classification (raw/Sword World RPG - Complete Edition.pdf p.170-171)",
       "covered_source_claims": [
-        "source-claim-unit-0039-0001"
+        "source-claim-unit-0087-0001"
       ]
     },
     {
-      "bullet_text": "Spirits are involved in life activities and unaffected by poisons or mental attacks (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
+      "bullet_text": "Spirits are energy beings involved in life's activities, unaffected by poisons, illnesses, or mental attacks (raw/Sword World RPG - Complete Edition.pdf p.170-171)",
       "covered_source_claims": [
-        "source-claim-unit-0039-0002"
+        "source-claim-unit-0087-0002"
       ]
     },
     {
-      "bullet_text": "Some types, such as mythical beasts and magical beasts, are based on the existence of dragons, creatures created by ancient sorcerers, and others (raw/Sword World RPG - Complete Edition.pdf p.170-172).",
+      "bullet_text": "Some spirits appear as mad spirits, extremely dangerous and destructive (raw/Sword World RPG - Complete Edition.pdf p.170-171)",
       "covered_source_claims": [
-        "source-claim-unit-0039-0004"
+        "source-claim-unit-0087-0004"
       ]
     }
   ],
-  "source_record_text": "There are 12 types of monsters in Alecrast: fae, youma, spirits, titans, mythical beasts, magical beasts, animals, plants, undead, magical creatures, daemons, humans, and others. This is based on the types set by Laverna, the famous witch of Orphan, who compiled the Natural History of Alecrast."
+  "source_record_text": "There are 12 types of monsters in Alecrast, based on the types set by Laverna, the famous witch of Orphan, who compiled the _Natural History of Alecrast_."
 }

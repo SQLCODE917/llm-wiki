@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import json
 from dataclasses import asdict, replace
+from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 from llmwiki.domain.links import extract_links
 from llmwiki.domain.objects import (
@@ -26,6 +27,7 @@ from llmwiki.domain.source_summary_rescue import repair_source_summary_draft
 from llmwiki.domain.technical_atom_surfaces import render_technical_details_sections
 from llmwiki.pdf.intermediate import OCR_MARKER
 from llmwiki.store import WikiStore, WikiStoreError
+from llmwiki.workflows.claim_bullet_rescue import rescue_claim_bullet
 
 
 class SourceSummaryBulletParams(BaseModel):
@@ -47,6 +49,18 @@ class PlannedWriteSourceSummaryParams(BaseModel):
     claim_bullets: list[SourceSummaryBulletParams] = Field(
         description="Three to five concise claim bullets covering every selected SourceClaim."
     )
+
+    @model_validator(mode="before")
+    @classmethod
+    def rescue_malformed_args(cls, value: object) -> object:
+        if not isinstance(value, dict):
+            return value
+        data: dict[str, Any] = {str(key).strip(): item for key, item in value.items()}
+        if isinstance(data.get("claim_bullets"), list):
+            data["claim_bullets"] = [
+                rescue_claim_bullet(item) for item in data["claim_bullets"]
+            ]
+        return data
 
 
 def strip_pipeline_markers(text: str) -> str:
@@ -92,12 +106,20 @@ def source_summary_page_body_from_draft(
         ),
     )
     body_contract = source_summary_body_contract(planned_write)
+    draft_had_no_selected_claim_coverage = _has_no_selected_claim_coverage(
+        draft, planned_write.source_summary_plan
+    )
+    draft = infer_source_summary_coverage(draft, planned_write.source_summary_plan)
     draft = repair_source_summary_draft(
         draft,
         planned_write.source_summary_plan,
         max_claim_bullets=body_contract.max_claim_bullets,
     )
-    draft = _fill_empty_claim_coverage(draft, planned_write.source_summary_plan)
+    draft = _fill_empty_claim_coverage(
+        draft,
+        planned_write.source_summary_plan,
+        force=draft_had_no_selected_claim_coverage,
+    )
     draft = infer_source_summary_coverage(draft, planned_write.source_summary_plan)
     source_text = page_body_contract_source_text(store, planned_write)
     findings = validate_source_summary_draft(
@@ -138,13 +160,13 @@ def source_summary_body_contract(
 
 
 def _fill_empty_claim_coverage(
-    draft: SourceSummaryDraft, plan: SourceSummaryPlan
+    draft: SourceSummaryDraft, plan: SourceSummaryPlan, *, force: bool = False
 ) -> SourceSummaryDraft:
     """Recover when a model writes bullets but omits all coverage ids."""
 
     if not draft.claim_bullets or not plan.selected_source_claims:
         return draft
-    if any(bullet.covered_source_claims for bullet in draft.claim_bullets):
+    if not force and any(bullet.covered_source_claims for bullet in draft.claim_bullets):
         return draft
     claim_groups = _claim_groups_by_bullet(len(draft.claim_bullets), plan.selected_source_claims)
     return SourceSummaryDraft(
@@ -156,6 +178,17 @@ def _fill_empty_claim_coverage(
             )
             for index, bullet in enumerate(draft.claim_bullets)
         ),
+    )
+
+
+def _has_no_selected_claim_coverage(
+    draft: SourceSummaryDraft, plan: SourceSummaryPlan
+) -> bool:
+    selected = frozenset(plan.selected_source_claims)
+    return not any(
+        claim_id in selected
+        for bullet in draft.claim_bullets
+        for claim_id in bullet.covered_source_claims
     )
 
 

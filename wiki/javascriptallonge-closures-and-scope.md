@@ -2,115 +2,127 @@
 page_id: javascriptallonge-closures-and-scope
 page_kind: source
 summary: Closures and Scope from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.44-44
-updated: 2026-06-23
+sources: raw/javascriptallonge.pdf p.44-48
+updated: 2026-06-25
 source_id: javascriptallonge.pdf
 ---
 
 ## Source record
 
-Summary of closures and scope concepts from JavaScript Allongé, covering free variables, closures, and environments.
+Chapter on closures and scope from JavaScript Allongé.
 
 ## Key supported claims
 
-- JavaScript allows functions to nest inside each other, and handles variables from 'outside' of a function that are referenced inside a function (raw/javascriptallonge.pdf p.44-44)
-- The result of applying a function is a function when the expression body is another function (raw/javascriptallonge.pdf p.44-44)
-- A value representing a function is created when a function is applied (raw/javascriptallonge.pdf p.44-44)
+- Functions that contain free variables are called closures (raw/javascriptallonge.pdf p.44-48).
+- Pure functions are easiest to understand because they always mean the same thing (raw/javascriptallonge.pdf p.44-48).
+- When a function is applied to arguments, its environment has a reference to its parent environment (raw/javascriptallonge.pdf p.44-48).
+- Variables in a function's scope shadow variables in parent scopes if they have the same name (raw/javascriptallonge.pdf p.44-48).
+- JavaScript has a global environment, and code can be wrapped in an IIFE to create a local environment (raw/javascriptallonge.pdf p.44-48).
 
 ## Technical details
 
-### `technical-atom-cf47f677a69883d2` code
+### `technical-atom-11aaefbbc6b93bf3` code
 
-Citation: (raw/javascriptallonge.pdf p.44)
-
-```javascript
-((x) => (y) => x)(1)(2) //=> 1
-```
-
-### `technical-atom-3901b4e4086be335` code
-
-Citation: (raw/javascriptallonge.pdf p.44)
+Citation: (raw/javascriptallonge.pdf p.44-48)
 
 ```javascript
-((x) => (y) => x)(1) //=> [Function]
+The environment belonging to the function with signature (x) => ... becomes {x: 1, ...}, and the result of applying the function is another function value. It makes sense that the result value is a function, because the expression for (x) => ...’s body is:
 ```
 
-### `technical-atom-8836aeccf0c6bdd2` code
+### `technical-atom-0b09d56701da7fc0` code
 
-Citation: (raw/javascriptallonge.pdf p.44)
+Citation: (raw/javascriptallonge.pdf p.44-48)
 
 ```javascript
-(y) => x
+So we seem to get a new environment {y: 2, ...}. How is the expression x going to be evaluated in that function’s environment? There is no x in its environment, it must come from somewhere else.
 ```
 
-### `technical-atom-d7f1182c8b1a42ac` code
+### `technical-atom-18f67c085760f2dd` code
 
-Citation: (raw/javascriptallonge.pdf p.44)
-
-```javascript
-((y) => x)(2)
-```
-
-### `technical-atom-0dd7b0535b6b9710` code
-
-Citation: (raw/javascriptallonge.pdf p.44)
+Citation: (raw/javascriptallonge.pdf p.44-48)
 
 ```javascript
 lambda { |x| lambda { |y| x } }[1][2] #=> 1
 ```
 
-### `technical-atom-ab8524c9d5fcc7c0` code
+### `technical-atom-58f9184c287b83f5` code
 
-Citation: (raw/javascriptallonge.pdf p.44)
+Citation: (raw/javascriptallonge.pdf p.44-48)
 
-```
-becomes {x: 1, ...} , and the result of applying the function is another function value.
-```
-
-### `technical-atom-026e41457ce3d8a0` code
-
-Citation: (raw/javascriptallonge.pdf p.44)
-
-```
-So we seem to get a new environment {y: 2, ...} .
+```javascript
+The function (y) => x is interesting. It contains a free variable, x.[27] A free variable is one that is not bound within the function. Up to now, we’ve only seen one way to “bind” a variable, namely by passing in an argument with the same name. Since the function (y) => x doesn’t have an argument named x, the variable x isn’t bound in this function, which makes it “free.”
 ```
 
-### `technical-atom-6e3151115dfb385f` procedure
+### `technical-atom-bd2f4a6b2c266e9d` code
 
-Citation: (raw/javascriptallonge.pdf p.44)
+Citation: (raw/javascriptallonge.pdf p.44-48)
 
-Then we're going to take the value of that function and apply it to the argument 2 , something like this:
+```javascript
+## () => {}
+```
+
+### `technical-atom-6ef9e0d67016949b` code
+
+Citation: (raw/javascriptallonge.pdf p.44-48)
+
+```javascript
+The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The only variable anywhere in its body is x, which is certainly bound within (x) => ....
+```
+
+### `technical-atom-6f035a06fb85b432` code
+
+Citation: (raw/javascriptallonge.pdf p.44-48)
+
+```javascript
+Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
+```
+
+### `technical-atom-1f3d003d4d7f3e47` code
+
+Citation: (raw/javascriptallonge.pdf p.44-48)
+
+```javascript
+To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
+```
 
 ## Related technical details
 
-### From [[javascriptallonge-call-by-sharing]]: `technical-atom-247ce19e93a86869` requirement
+### From [[javascriptallonge-that-constant-coffee-craving]]: `technical-atom-e75668d22e5ff80b` code
 
-Relation: nearby source page; matched terms `function`, `javascript`, `value`, `when`
+Relation: nearby source page; matched terms `can`, `code`, `evaluated`, `function`, `functions`, `has`
 
-Citation: (raw/javascriptallonge.pdf p.42-43)
+Citation: (raw/javascriptallonge.pdf p.49-61)
 
-There is a property that JavaScript strictly maintains: When a value-any value-is passed as an argument to a function, the value bound in the function's environment must be identical to the original.
+```javascript
+This expression, when evaluated, returns a function that calculates circumferences. That sounds bad, but when we think about it, (diameter) => diameter * 3.14159265 is also an expression, that when evaluated, returns a function that calculates circumferences. All of our “functions” are expressions. This one has a few more moving parts, that’s all. But we can use it just like (diameter) => diameter * 3.14159265.
+```
 
-### From [[javascriptallonge-it-s-always-the-environment]]: `technical-atom-6582cc9837c81ff3` requirement
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please]]: `technical-atom-059258f79c64cecb` code
 
-Relation: nearby source page; matched terms `applied`, `function`
+Relation: nearby source page; matched terms `can`, `code`, `contain`, `function`, `functions`, `have`
 
-Citation: (raw/javascriptallonge.pdf p.46-47)
+Citation: (raw/javascriptallonge.pdf p.39-43)
 
-So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
+```javascript
+This loose definition is recursive, so we can intuit (or use our experience with other languages) that since a function can contain a return statement with an expression, we can write a function that returns a function, or an array that contains another array expression. Or a function that returns an array, an array of functions, a function that returns an array of functions, and so forth:
+```
 
-### From [[javascriptallonge-call-by-sharing]]: `technical-atom-e8199c3947c572cb` requirement
+### From [[javascriptallonge-ah-i-d-like-to-have-an-argument-please]]: `technical-atom-07b4f982763531cb` code
 
-Relation: nearby source page; matched terms `closures`, `function`, `value`, `when`
+Relation: nearby source page; matched terms `arguments`, `code`, `function`, `functions`, `have`
 
-Citation: (raw/javascriptallonge.pdf p.42-43)
+Citation: (raw/javascriptallonge.pdf p.39-43)
 
-When we combine our knowledge of value types, reference types, arguments, and closures, we'll understand why this function always evaluates to true no matter what argument 26 you apply it to:
+```javascript
+Expressions consist either of representations of values (like 3.14159265, true, and undefined), operators that combine expressions (like 3 + 2), some special forms like [1, 2, 3] for creating arrays out of expressions, or function ( arguments) { body-statements } for creating functions.
+```
 
-### From [[javascriptallonge-shadowy-variables-from-a-shadowy-planet]]: `technical-atom-592864b8cc8594c9` procedure
+### From [[javascriptallonge-combinators-and-function-decorators]]: `technical-atom-4ec0e2f5cfc99090` code
 
-Relation: nearby source page; matched terms `each`, `functions`, `javascript`, `variables`
+Relation: nearby source page; matched terms `arguments`, `can`, `code`, `function`, `functions`, `javascript`
 
-Citation: (raw/javascriptallonge.pdf p.47)
+Citation: (raw/javascriptallonge.pdf p.68-70)
 
-JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one.
+```javascript
+As we’ve seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments, or returns a function, or both, is referred to as a “higher-order” function.
+```

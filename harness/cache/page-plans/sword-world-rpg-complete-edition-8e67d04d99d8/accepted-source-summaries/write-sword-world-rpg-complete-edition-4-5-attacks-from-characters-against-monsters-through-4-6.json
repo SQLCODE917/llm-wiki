@@ -1,0 +1,23 @@
+{
+  "claim_bullets": [
+    {
+      "bullet_text": "Characters attack monsters with a hit check using attack power and 2D, where the target is the monster's evasion points (raw/Sword World RPG - Complete Edition.pdf p.43-45).",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0002"
+      ]
+    },
+    {
+      "bullet_text": "Characters can deal critical damage with strike rolls if the 2D roll meets or exceeds the critical target (raw/Sword World RPG - Complete Edition.pdf p.43-45).",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0007"
+      ]
+    },
+    {
+      "bullet_text": "Monsters attack characters using evasion checks with evasion speed and 2D, where the target is the monster's attack points (raw/Sword World RPG - Complete Edition.pdf p.46-47).",
+      "covered_source_claims": [
+        "source-claim-unit-0025-0005"
+      ]
+    }
+  ],
+  "source_record_text": "Chapter 4.5-4.6 of Sword World RPG - Complete Edition covers attack mechanics for characters against monsters and monsters against characters."
+}

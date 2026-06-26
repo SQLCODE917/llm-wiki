@@ -1,23 +1,24 @@
 {
   "claim_bullets": [
     {
-      "bullet_text": "JavaScript has boolean values true and false (raw/javascriptallonge.pdf p.94-94).",
+      "bullet_text": "JavaScript has a notion of truthiness, where every value is either truthy or falsy (raw/javascriptallonge.pdf p.94-99).",
       "covered_source_claims": [
-        "source-claim-unit-0082-0002"
+        "source-claim-unit-0030-0018"
       ]
     },
     {
-      "bullet_text": "JavaScript uses truthiness to determine behavior of logical operators (raw/javascriptallonge.pdf p.94-94).",
+      "bullet_text": "The logical operators !, &&, and || operate on truthiness, not strict boolean values (raw/javascriptallonge.pdf p.94-99).",
       "covered_source_claims": [
-        "source-claim-unit-0082-0002"
+        "source-claim-unit-0030-0015",
+        "source-claim-unit-0030-0085"
       ]
     },
     {
-      "bullet_text": "Common questions involve truth or falsehood: is array empty, does person have middle name, is user logged in (raw/javascriptallonge.pdf p.94-94).",
+      "bullet_text": "The ternary operator (?:) is a control-flow operator that evaluates expressions based on truthiness (raw/javascriptallonge.pdf p.94-99).",
       "covered_source_claims": [
-        "source-claim-unit-0082-0002"
+        "source-claim-unit-0030-0019"
       ]
     }
   ],
-  "source_record_text": "Summary of the 'Picking the Bean: Choice and Truthiness' chapter of JavaScript Allonge."
+  "source_record_text": "This chapter discusses truthiness and falsiness in JavaScript, logical operators, and control flow."
 }
