@@ -41,6 +41,32 @@ def _make_scanned_pdf(path: Path, n_pages: int = 4) -> None:
     doc.close()
 
 
+def _make_captioned_table_pdf(path: Path) -> None:
+    doc = pymupdf.open()
+    page = doc.new_page()
+    page.insert_text((72, 72), "Chapter text page 1.")
+    page.insert_textbox(pymupdf.Rect(72, 100, 540, 400), _PAGE_PROSE)
+    rows = (
+        ("Table- Sample Matrix",),
+        ("Label", "Score", "Note"),
+        ("Alpha", "10", "Stable"),
+        ("Beta", "20", "Review"),
+        ("Gamma", "30", "Complete"),
+    )
+    y = 500
+    for row in rows:
+        if len(row) == 1:
+            page.insert_text((72, y), row[0])
+        else:
+            for x, value in zip((72, 190, 310), row, strict=True):
+                page.insert_text((x, y), value)
+        y += 18
+    page.insert_text((72, y + 20), "Next Section")
+    page.insert_text((72, y + 38), "Ordinary prose follows the table.")
+    doc.save(str(path))
+    doc.close()
+
+
 class FakeDocumentExtractor:
     def __init__(self, heading: str = "Functions", text: str = "Functions are values.") -> None:
         self.calls = 0
@@ -221,6 +247,37 @@ class TestEnsureExtracted:
                 NullRecognizer(),
                 document_extractor=FakeDocumentExtractor(),
             )
+
+    def test_recovers_captioned_layout_table_when_primary_extractor_misses_it(
+        self, tmp_path: Path
+    ) -> None:
+        pdf = tmp_path / "book.pdf"
+        _make_captioned_table_pdf(pdf)
+        document_extractor = FakeDocumentExtractor(
+            heading="Measurements",
+            text="Table- Sample Matrix\n\n20",
+        )
+
+        result = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+
+        model = (result.cache_dir / "document_model.json").read_text(encoding="utf-8")
+        chunk = "\n\n".join(
+            chunk_file(result.cache_dir, chunk_record.chunk_id).read_text(encoding="utf-8")
+            for chunk_record in result.manifest.chunks
+        )
+        assert '"element_kind": "table"' in model
+        assert model.count('"element_kind": "table"') == 1
+        assert chunk.count("Table- Sample Matrix") == 1
+        assert "Label" in chunk
+        assert "Alpha" in chunk
+        assert "Gamma" in chunk
+        assert "Next Section" not in chunk
 
 
 class TestDocumentExtractorSelection:

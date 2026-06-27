@@ -11,19 +11,26 @@ from llmwiki.domain.ledger.artifacts import (
     LedgerQualityReportArtifact,
     PortableArtifactMember,
     PortableArtifactSet,
+    ProjectionCoverageArtifact,
     QualityCheckCatalogArtifact,
     build_claim_ledger_artifact,
     build_document_structure_artifact,
     build_ledger_quality_report_artifact,
     build_portable_artifact_set,
+    build_projection_coverage_artifact,
     build_quality_check_catalog_artifact,
 )
 from llmwiki.domain.ledger.canonical import canonical_json
 from llmwiki.domain.ledger.current_ledger import build_current_claim_ledger
+from llmwiki.domain.ledger.current_projection import (
+    build_current_projection_coverage,
+    build_projection_source_support,
+)
 from llmwiki.domain.ledger.current_structure import (
     build_current_document_structure,
     current_source_hash,
 )
+from llmwiki.domain.ledger.current_topics import build_current_topic_index
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.pointers import (
     document_structure_pointer,
@@ -37,6 +44,7 @@ from llmwiki.domain.ledger.quality_catalog import (
     default_severity_policy,
 )
 from llmwiki.domain.ledger.structure import DocumentStructure
+from llmwiki.domain.ledger.topic_models import TopicIndex
 from llmwiki.domain.objects import PagePlan
 from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
 
@@ -50,6 +58,8 @@ class CurrentLedgerArtifacts:
     claim_ledger_artifact: ClaimLedgerArtifact
     quality_check_catalog_artifact: QualityCheckCatalogArtifact
     ledger_quality_report_artifact: LedgerQualityReportArtifact
+    projection_coverage_artifact: ProjectionCoverageArtifact
+    topic_index: TopicIndex
     portable_artifact_set: PortableArtifactSet
 
     @property
@@ -63,6 +73,8 @@ class CurrentLedgerArtifacts:
             "ledger-quality-report.json": canonical_json(
                 self.ledger_quality_report_artifact, indent=2
             ),
+            "projection-coverage.json": canonical_json(self.projection_coverage_artifact, indent=2),
+            "topics.json": canonical_json(self.topic_index, indent=2),
             "portable-artifact-set.json": canonical_json(self.portable_artifact_set, indent=2),
         }
 
@@ -89,11 +101,16 @@ def build_current_ledger_artifacts(
         document_structure=structure,
         technical_atom_catalog=technical_atom_catalog,
     )
-    return _artifacts(source_hash, structure, ledger)
+    return _artifacts(source_locator, source_hash, page_plan, evidence_registry, structure, ledger)
 
 
 def _artifacts(
-    source_hash: str, structure: DocumentStructure, ledger: ClaimLedger
+    source_locator: str,
+    source_hash: str,
+    page_plan: PagePlan,
+    evidence_registry: EvidenceRegistry,
+    structure: DocumentStructure,
+    ledger: ClaimLedger,
 ) -> CurrentLedgerArtifacts:
     catalog_artifact = build_quality_check_catalog_artifact(
         default_quality_check_catalog(),
@@ -124,6 +141,38 @@ def _artifacts(
             report_artifact.ledger_quality_report_fingerprint,
         ),
     )
+    projection_support = build_projection_source_support(
+        source_locator=source_locator,
+        source_hash=source_hash,
+        claim_ledger_id=ledger_artifact.claim_ledger_id,
+        claim_ledger_fingerprint=ledger_artifact.claim_ledger_fingerprint,
+        document_structure_id=structure_artifact.document_structure_artifact_id,
+        document_structure_fingerprint=structure_artifact.document_structure_fingerprint,
+    )
+    projection_coverage = build_current_projection_coverage(
+        page_plan=page_plan,
+        evidence_registry=evidence_registry,
+        ledger=ledger,
+        source_support=projection_support,
+    )
+    projection_coverage_artifact = build_projection_coverage_artifact(
+        wiki_page_locator=f"planned-projection:{page_plan.plan_id}",
+        page_body_hash=projection_coverage.page_body_hash,
+        support_set=(projection_support,),
+        coverage=projection_coverage.coverage,
+        ledger_quality_report_pointer=ledger_quality_report_pointer(
+            report_artifact.ledger_quality_report_artifact_id,
+            report_artifact.ledger_quality_report_fingerprint,
+        ),
+    )
+    topic_index = build_current_topic_index(
+        source_locator=source_locator,
+        source_hash=source_hash,
+        projection_source_support_id=projection_support.projection_source_support_id,
+        page_plan=page_plan,
+        evidence_registry=evidence_registry,
+        ledger=ledger,
+    )
     manifest = build_portable_artifact_set(
         (
             _member("document-structure-artifact", structure_artifact),
@@ -134,6 +183,11 @@ def _artifacts(
             ),
             _member("quality-check-catalog-artifact", catalog_artifact),
             _member("ledger-quality-report-artifact", report_artifact),
+            PortableArtifactMember(
+                "projection-coverage-artifact",
+                projection_coverage_artifact.projection_coverage_artifact_id,
+                projection_coverage_artifact.projection_coverage_fingerprint,
+            ),
         )
     )
     return CurrentLedgerArtifacts(
@@ -144,6 +198,8 @@ def _artifacts(
         ledger_artifact,
         catalog_artifact,
         report_artifact,
+        projection_coverage_artifact,
+        topic_index,
         manifest,
     )
 

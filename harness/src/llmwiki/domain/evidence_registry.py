@@ -11,7 +11,7 @@ from llmwiki.domain.citations import Citation
 from llmwiki.domain.evidence_locator_index import EvidenceIdentity
 from llmwiki.domain.objects import ExtractedUnit, PagePlan
 
-SourceTextKind = Literal["markdown", "pdf-cache"]
+SourceTextKind = Literal["markdown", "pdf-cache", "page-plan-cache"]
 EvidenceKind = Literal["source-claim", "citation", "table-cell"]
 
 
@@ -145,9 +145,7 @@ def source_text_from_text(
     )
 
 
-def _source_ranges(
-    plan: PagePlan, source_texts: tuple[SourceText, ...]
-) -> tuple[SourceRange, ...]:
+def _source_ranges(plan: PagePlan, source_texts: tuple[SourceText, ...]) -> tuple[SourceRange, ...]:
     source_text_by_locator = {
         source_text.source_locator: source_text for source_text in source_texts
     }
@@ -264,9 +262,7 @@ def _contains_range(container: tuple[int, int], item: tuple[int, int]) -> bool:
     return container[0] <= item[0] and item[1] <= container[1]
 
 
-def _identity_locator_text(
-    source_range: SourceRange, source_texts: tuple[SourceText, ...]
-) -> str:
+def _identity_locator_text(source_range: SourceRange, source_texts: tuple[SourceText, ...]) -> str:
     if source_range.page_range is not None:
         start, end = source_range.page_range
         return f"p.{start}" if start == end else f"p.{start}-{end}"

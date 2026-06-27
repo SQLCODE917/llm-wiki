@@ -19,6 +19,7 @@ class DocumentElement:
     page_end: int
     text: str
     markdown: str
+    heading_level: int = 0
 
 
 @dataclass(frozen=True)

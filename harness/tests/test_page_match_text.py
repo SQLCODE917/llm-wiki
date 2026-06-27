@@ -9,8 +9,7 @@ def test_page_match_text_strips_generated_technical_sections() -> None:
     page = (
         "---\npage_id: book-functions\npage_kind: source\nsources: raw/book.pdf\n---\n\n"
         "## Source record\n\nFunctions are values.\n\n"
-        "## Related technical details\n\n"
-        + "const noisy = true;\n" * 10_000
+        "## Related technical details\n\n" + "const noisy = true;\n" * 10_000
     )
 
     bounded = page_match_text(page)
@@ -33,8 +32,7 @@ def test_wiki_matches_use_bounded_page_match_text_for_excerpts() -> None:
     page = (
         "---\npage_id: book-functions\npage_kind: source\nsources: raw/book.pdf\n---\n\n"
         "## Source record\n\nFunctions are values.\n\n"
-        "## Technical details\n\n"
-        + "technical-noise " * 10_000
+        "## Technical details\n\n" + "technical-noise " * 10_000
     )
 
     matches = wiki_matches((unit,), {"book-functions": page}, "book.pdf")

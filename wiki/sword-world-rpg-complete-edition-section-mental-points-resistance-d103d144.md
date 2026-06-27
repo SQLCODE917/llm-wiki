@@ -1,0 +1,32 @@
+---
+page_id: sword-world-rpg-complete-edition-section-mental-points-resistance-d103d144
+page_kind: source
+summary: 《 **Mental Points/Resistance** 》: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-mental-points-resistance-d103d144@15fe15fcc0a5b5ce9e73b1d12de81c95
+---
+
+# 《 **Mental Points/Resistance** 》
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- **Mental points** have the same meaning as a character's mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04929))_
+- **Mental point resistance** is a score that's a substitute for a character's _mental power resistance roll_ , so when a character casts magic on a monster, this _mental point resistance_ becomes the target score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04929))_
+- Monsters whose mental points are reduced to 0 (or less) by _Shade_ magic, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04929))_
+- Please refer to 5.1.4.4: Procedure When an Adventurer Casts Resistible Magic on a Monster (see p. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+- If the final score is equal to or greater than the monster's mental point resistance, the magic will successfully be cast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+- This is done purely for consistency, so that from the character's perspective, **tied success rolls are always successful** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+- Conversely, for a monster to resist magic, its mental point resistance must be _greater_ than the magic's final score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+- A _tie_ means the magic will successfully be cast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+- A _tie_ means the magic will successfully be cast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_
+
+## Technical atoms
+
+> When a character casts a spell on a monster, they must make a success roll using their magic power as the baseline score.
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04930))_

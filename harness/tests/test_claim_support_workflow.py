@@ -23,9 +23,7 @@ TODAY = "2026-06-22"
 def test_verdict_tool_rejects_supported_with_deterministic_findings(
     store: WikiStore,
 ) -> None:
-    store.write_page(
-        wiki_page(name="alpha", category="source", summary="A.", body="Body.")
-    )
+    store.write_page(wiki_page(name="alpha", category="source", summary="A.", body="Body."))
     candidate = _candidate()
     finding = ClaimSupportFinding(
         finding_id="finding-alpha",
@@ -132,9 +130,7 @@ async def test_session_files_claim_support_report_and_log(
     assert "claim-support | claim support audit" in paths.log_path.read_text()
 
 
-async def test_session_batches_claim_support_candidates(
-    store: WikiStore, paths: WikiPaths
-) -> None:
+async def test_session_batches_claim_support_candidates(store: WikiStore, paths: WikiPaths) -> None:
     store.write_page(
         wiki_page(
             name="alpha",

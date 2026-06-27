@@ -103,8 +103,7 @@ def _claim_support_findings(
                 category="claim-support",
                 source_locator=source_locator,
                 message=(
-                    "Missing model verdicts for selected claim-support candidates: "
-                    f"{missing}."
+                    f"Missing model verdicts for selected claim-support candidates: {missing}."
                 ),
                 fingerprint="missing-claim-support-verdicts",
             )

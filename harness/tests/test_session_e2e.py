@@ -8,14 +8,13 @@ harness declares on each workflow.
 import pytest
 from fakes import FakeClient
 from forge.context import ContextManager, NoCompact
-from forge.core.workflow import TextResponse, ToolCall
+from forge.core.workflow import ToolCall
 from helpers import wiki_page
 
 from llmwiki.config import WikiPaths
 from llmwiki.domain.contradictions import select_contradiction_candidates
 from llmwiki.domain.evidence import EvidencePolicy
 from llmwiki.domain.grounding import GroundingSelection, select_grounding_claims
-from llmwiki.domain.ingest_route_history import ingest_route_plan_records_from_jsonl
 from llmwiki.domain.ingest_route_plan import (
     IngestRouteContext,
     IngestRoutePlan,
@@ -49,72 +48,6 @@ def source(paths: WikiPaths) -> str:
     return "moon.md"
 
 
-def _plan_page_call(
-    name: str,
-    *,
-    category: str = "source",
-    summary: str = "Lunar notes.",
-    action: str = "create",
-    source_scope: str = "moon.md",
-    sources: tuple[str, ...] = ("moon.md",),
-    gaps: list[dict[str, str]] | None = None,
-) -> ToolCall:
-    return ToolCall(
-        tool="plan_pages",
-        args={
-            "planned_pages": [
-                {
-                    "metadata": {
-                        "page_id": name,
-                        "page_kind": category,
-                        "summary": summary,
-                        "sources": list(sources),
-                    },
-                    "role": "primary page for this source",
-                    "action": action,
-                    "source_scope": source_scope,
-                    "confidence": "high",
-                    "rationale": f"{name} is the durable wiki target for this ingest.",
-                }
-            ],
-            "gaps": gaps or [],
-        },
-    )
-
-
-def _source_summary_write_args(
-    *,
-    page_id: str = "moon",
-    summary: str = "Lunar notes.",
-    source_locator: str = "moon.md",
-    source_claim_id: str = "source-claim-unit-0001-0001",
-    record_text: str = "Source record for [[moon]].",
-    claim_text: str = "The source supports a lunar formation claim.",
-) -> dict[str, object]:
-    citation = f"raw/{source_locator}"
-    return {
-        "page_id": page_id,
-        "page_kind": "source",
-        "summary": summary,
-        "source_record_text": f"{record_text} ({citation})",
-        "claim_bullets": [
-            {
-                "bullet_text": f"{claim_text} ({citation})",
-                "covered_source_claims": [source_claim_id],
-            },
-            {
-                "bullet_text": f"The same source claim is restated compactly. ({citation})",
-                "covered_source_claims": [source_claim_id],
-            },
-            {
-                "bullet_text": f"The summary preserves the source coverage target. ({citation})",
-                "covered_source_claims": [source_claim_id],
-            },
-        ],
-        "sources": [source_locator],
-    }
-
-
 class TestIngest:
     def test_ingest_run_uses_raw_source_boundary(
         self, store: WikiStore, paths: WikiPaths, source: str
@@ -128,392 +61,48 @@ class TestIngest:
     async def test_happy_path_updates_all_layers(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon lunar formation"})],
-            [_plan_page_call("moon", summary="Notes on lunar formation.")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        summary="Notes on lunar formation.",
-                        claim_text="The Moon source supports a giant impact origin claim.",
-                    ),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "Wrote [[moon]]."})],
-        ]
-        result = await _session(store, script, paths).ingest(source)
+        session = _session(store, [], paths)
+        result = await session.ingest(source)
 
-        assert result.output == "Wrote [[moon]]."
-        assert "giant impact origin" in store.read_page("moon")
-        assert "- [[moon]] — Notes on lunar formation." in store.read_index()
+        assert result.output.startswith("Claim-ledger ingest of raw/moon.md")
+        body = store.read_page("moon")
+        assert "giant impact" in body
+        assert "projection_coverage:" in body
+        assert "- [[moon]] — Claim-ledger projection" in store.read_index()
         log = paths.log_path.read_text(encoding="utf-8")
         assert f"## [{TODAY}] ingest | moon.md" in log
-        assert result.transcript_path is not None and result.transcript_path.exists()
-        route_records = ingest_route_plan_records_from_jsonl(
-            paths.route_plan_history_path.read_text(encoding="utf-8")
-        )
-        assert len(route_records) == 1
-        assert route_records[0].source_locator == "moon.md"
-        assert route_records[0].planned_page_ids == ("moon",)
-        assert route_records[0].page_writes == ("moon",)
-        assert route_records[0].route_gap_count == 0
-        draft_path = (
-            store.page_plan_artifact_dir("moon.md")
-            / "accepted-source-summaries"
-            / "write-moon.json"
-        )
-        assert draft_path.exists()
-        assert "source-claim-unit-0001-0001" in draft_path.read_text(encoding="utf-8")
+        assert result.transcript_path is None
+        assert not session.client.sent
         assert "source-claim-unit" not in store.read_page("moon")
 
-    async def test_markdown_route_plan_gaps_are_persisted(
+    async def test_markdown_ingest_writes_ledger_artifacts(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
-        gaps = [
-            {
-                "reason": "too-granular",
-                "source_scope": "moon.md",
-                "summary": "Minor aside stayed inside the source page.",
-            }
-        ]
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon", gaps=gaps)],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
+        await _session(store, [], paths).ingest(source)
 
-        await _session(store, script, paths).ingest(source)
+        ledger_dir = store.page_plan_artifact_dir("moon.md") / "ledger"
+        assert (ledger_dir / "claim-ledger.json").is_file()
+        assert (ledger_dir / "projection-coverage.json").is_file()
+        assert (ledger_dir / "section-plan.json").is_file()
+        assert (ledger_dir / "topics.json").is_file()
 
-        route_records = ingest_route_plan_records_from_jsonl(
-            paths.route_plan_history_path.read_text(encoding="utf-8")
-        )
-        assert route_records[0].route_gap_count == 1
-        assert route_records[0].route_gap_summaries == (
-            "Minor aside stayed inside the source page.",
-        )
-
-    async def test_premature_finish_is_blocked_then_recovers(
+    async def test_markdown_ingest_removes_stale_generated_source_pages(
         self, store: WikiStore, paths: WikiPaths, source: str
     ) -> None:
-        # Turn 1 tries to finish before reading/writing: StepEnforcer must
-        # block it (tool-error nudge), and the workflow still completes.
-        script = [
-            [ToolCall(tool="finish_ingest", args={"report": "done!"})],
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "Wrote [[moon]]."})],
-        ]
-        result = await _session(store, script, paths).ingest(source)
-        assert result.output == "Wrote [[moon]]."
-        assert "moon" in store.list_pages()
-
-    async def test_write_page_requires_prior_read_source(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        # write_page before read_source violates the prerequisite; forge
-        # nudges and the scripted model self-corrects.
-        script = [
-            [
-                ToolCall(
-                    tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body.",
-                    },
-                )
-            ],
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-        await _session(store, script, paths).ingest(source)
-        # The blocked first write must not have touched the wiki layer.
-        assert store.read_index().count("[[moon]]") == 1
-
-    async def test_write_page_requires_prior_search_wiki(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        # Ingest must consult the existing wiki before it writes. A source
-        # read alone is not enough for compounding wiki maintenance.
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "Lunar notes.",
-                        "page_body": "Body.",
-                    },
-                )
-            ],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-        await _session(store, script, paths).ingest(source)
-
-        assert store.read_index().count("[[moon]]") == 1
-
-    async def test_write_page_must_match_active_ingest_route_plan(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon-summary")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(),
-                )
-            ],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-
-        await _session(store, script, paths).ingest(source)
-
-        assert store.list_pages() == ["moon"]
-        assert "moon-summary" not in store.read_index()
-
-    async def test_bad_tool_args_fed_back_for_self_correction(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(  # invalid category — tool error, model retries
-                    tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "article",
-                        "summary": "s",
-                        "page_body": "b",
-                    },
-                )
-            ],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(summary="s"),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-        result = await _session(store, script, paths).ingest(source)
-        assert result.output == "ok"
-        assert store.list_pages() == ["moon"]
-
-    async def test_source_summary_validation_error_recovers(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        claim_text="The Moon formed 4.5 billion years ago from a giant impact."
-                    ),
-                )
-            ],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        claim_text="A compact lunar-origin note keeps the impact claim."
-                    ),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-        result = await _session(store, script, paths).ingest(source)
-
-        assert result.output == "ok"
-        assert store.list_pages() == ["moon"]
-        assert "source-claim-unit" not in store.read_page("moon")
-
-    async def test_markdown_ingest_rejects_finish_until_successful_write(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        claim_text="The Moon formed 4.5 billion years ago from a giant impact."
-                    ),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "claimed done"})],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        claim_text="A compact lunar-origin note keeps the impact claim."
-                    ),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-
-        result = await _session(store, script, paths).ingest(source)
-
-        log_text = paths.log_path.read_text(encoding="utf-8")
-        assert result.output == "ok"
-        assert store.list_pages() == ["moon"]
-        assert "claimed done" not in log_text
-        assert f"## [{TODAY}] ingest | moon.md" in log_text
-
-    async def test_rewrite_without_read_is_blocked_then_recovers(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        # write_page replaces the whole page; rewriting one the model never
-        # read this run must fail with a corrective error (open question #10),
-        # and succeed after read_page.
         store.write_page(
             wiki_page(
-                name="moon",
+                name="moon-extra",
                 category="source",
-                summary="Original.",
-                body="Original rich body with [[links]].",
+                summary="Stale extra projection.",
+                body="Old generated page.",
+                sources=("raw/moon.md",),
                 updated=TODAY,
             )
         )
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon", action="enrich")],
-            [
-                ToolCall(  # blind rewrite — must be rejected
-                    tool="write_page",
-                    args={
-                        "page_id": "moon",
-                        "page_kind": "source",
-                        "summary": "thin",
-                        "page_body": "x",
-                    },
-                )
-            ],
-            [ToolCall(tool="read_page", args={"page_id": "moon"})],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        summary="Updated.",
-                        record_text="Source record for [[moon]]. Plus new facts.",
-                        claim_text="Plus new facts are filed through the source summary.",
-                    ),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "updated moon"})],
-        ]
-        result = await _session(store, script, paths).ingest(source)
-        assert result.output == "updated moon"
-        body = store.read_page("moon")
-        assert "Plus new facts" in body
-        # The blind rewrite never landed:
-        assert "thin" not in store.read_index()
 
-    async def test_pipeline_markers_stripped_from_written_pages(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        # The OCR caveat tag is extraction plumbing; observed quoted verbatim
-        # into a wiki page despite the schema — stripped at the boundary now.
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(
-                        record_text="Real claim.\n\n"
-                        "[figure text (OCR, unverified): NOISE ON A MUG]\n\n"
-                        "Another claim."
-                    ),
-                )
-            ],
-            [ToolCall(tool="finish_ingest", args={"report": "ok"})],
-        ]
-        await _session(store, script, paths).ingest(source)
-        body = store.read_page("moon")
-        assert "Real claim." in body and "Another claim." in body
-        assert "OCR" not in body and "NOISE" not in body
+        await _session(store, [], paths).ingest(source)
 
-    async def test_bare_text_after_work_nudged_to_terminal_tool(
-        self, store: WikiStore, paths: WikiPaths, source: str
-    ) -> None:
-        # The observed live failure mode: the model finishes its page writes,
-        # then "reports" in bare text instead of calling finish_ingest. The
-        # retry nudge must name the terminal tool and the run must recover.
-        script = [
-            [ToolCall(tool="read_source", args={"source_locator": "moon.md"})],
-            [ToolCall(tool="search_wiki", args={"query": "moon"})],
-            [_plan_page_call("moon", summary="s")],
-            [
-                ToolCall(
-                    tool="write_page",
-                    args=_source_summary_write_args(summary="s"),
-                )
-            ],
-            TextResponse(content="I have finished ingesting the source."),
-            [ToolCall(tool="finish_ingest", args={"report": "Wrote [[moon]]."})],
-        ]
-        session = _session(store, script, paths)
-        result = await session.ingest(source)
-        assert result.output == "Wrote [[moon]]."
-        fake: FakeClient = session.client
-        # The turn after the bare text must carry the terminal-tool hint.
-        last_turn = fake.sent[-1]
-        nudges = [m["content"] for m in last_turn if m.get("role") == "user"]
-        assert any("finish_ingest" in content for content in nudges)
+        assert store.list_pages() == ["moon"]
 
 
 class TestStrictEvidenceWrites:

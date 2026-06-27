@@ -1,0 +1,48 @@
+---
+page_id: javascriptallonge-section-function-decorators-a17cb157
+page_kind: source
+summary: **function decorators**: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-27
+domain: javascriptallonge
+category_path: sources/javascriptallonge/sections
+source_id: javascriptallonge.pdf
+projection_coverage: section-javascriptallonge-section-function-decorators-a17cb157@8bfd6a30e0614cf72a19f0cb6d78ec86
+---
+
+# **function decorators**
+
+From [[javascriptallonge]].
+
+## Statements
+
+- A _function decorator_ is a higher-order function that takes one function as an argument, returns another function, and the returned function is a variation of the argument function. _(javascriptallonge.pdf (source-range-83ecb080-00807))_
+- > 37As we’ll discuss later, this implementation of the B Combinator is correct in languages like Scheme, but for truly general-purpose use in JavaScript, it needs to correctly manage the function context. _(javascriptallonge.pdf (source-range-83ecb080-00808))_
+- > 38 We’ll see later why an even more useful version would be written (fn) => (...args) => !fn(...args) _(javascriptallonge.pdf (source-range-83ecb080-00809))_
+- So instead of writing !someFunction(42), we can write not(someFunction)(42). _(javascriptallonge.pdf (source-range-83ecb080-00813))_
+- Function decorators aren’t strict about being pure functions, so there’s more latitude for making decorators than combinators. _(javascriptallonge.pdf (source-range-83ecb080-00819))_
+- not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. _(javascriptallonge.pdf (source-range-83ecb080-00819))_
+- not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. _(javascriptallonge.pdf (source-range-83ecb080-00819))_
+
+## Technical atoms
+
+> **const** not = (fn) => (x) => !fn(x)
+_(source: javascriptallonge.pdf (source-range-83ecb080-00812))_
+
+> Context: So instead of writing !someFunction(42), we can write not(someFunction)(42). Hardly progress. But like compose, we could write either:
+_(context: javascriptallonge.pdf (source-range-83ecb080-00813))_
+
+> **const** something = (x) => x != **null** ;
+_(source: javascriptallonge.pdf (source-range-83ecb080-00814))_
+
+> Context: And elsewhere, write:
+_(context: javascriptallonge.pdf (source-range-83ecb080-00815))_
+
+> **const** nothing = (x) => !something(x);
+_(source: javascriptallonge.pdf (source-range-83ecb080-00816))_
+
+> Context: Or we could write: not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. You’ll see other function decorators in the recipes, like once and maybe. Function decorators aren’t strict about being pure functions, so there’s more latitude for making decorators than combinators.
+_(context: javascriptallonge.pdf (source-range-83ecb080-00817, source-range-83ecb080-00819))_
+
+> **const** nothing = not(something);
+_(source: javascriptallonge.pdf (source-range-83ecb080-00818))_

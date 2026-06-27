@@ -29,6 +29,8 @@ INELIGIBLE_CLAIM_ELIGIBILITIES = frozenset(
         "source-framing",
     }
 )
+
+
 def claim_eligibility(statement: str, role_tags: tuple[str, ...]) -> str:
     lowered = statement.lower().strip()
     if "source-framing" in role_tags:

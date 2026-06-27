@@ -1,124 +1,68 @@
 ---
 page_id: javascriptallonge-reassignment
-page_kind: source
-summary: Reassignment from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.148-157
-updated: 2026-06-25
-source_id: javascriptallonge.pdf
+page_kind: concept
+summary: Reassignment: 36 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-27
+domain: javascriptallonge
+category_path: concepts
+projection_coverage: topic-javascriptallonge-reassignment@f8393989fd968553245f97a728f9fc2d
 ---
 
-## Source record
+# Reassignment
 
-This chapter from JavaScript Allongé discusses rebinding and reassignment in JavaScript, focusing on how different declaration keywords (`const`, `let`, `var`) handle variable bindings and scoping.
+What [[javascriptallonge]] covers about reassignment:
 
-## Key supported claims
+## Statements
 
-- JavaScript allows rebinding values to parameters, but not to names bound with const (raw/javascriptallonge.pdf p.148-157).
-- const prevents rebinding of names, while let allows rebinding, both supporting block scoping (raw/javascriptallonge.pdf p.148-157).
-- var is function-scoped, not block-scoped, and hoisted to the top of the function, unlike let and const (raw/javascriptallonge.pdf p.148-157).
+- Like some imperative programming languages, JavaScript allows you to re-assign the value bound : to parameters. _(javascriptallonge.pdf (source-range-83ecb080-01758))_
+- We can _shadow_ it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope. _(javascriptallonge.pdf (source-range-83ecb080-01765))_
+- JavaScript does not permit us to rebind a name that has been bound with const. _(javascriptallonge.pdf (source-range-83ecb080-01765))_
+- What we want is a statement that works like const, but permits us to rebind variables. _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+- The key is to understand that we are rebinding a different value to the same name in the same environment. _(javascriptallonge.pdf (source-range-83ecb080-01769))_
+- Using let to bind 50 to age within the block does not change the binding of age in the outer environment because the binding of age in the block shadows the binding of age in the outer environment, just like const. _(javascriptallonge.pdf (source-range-83ecb080-01772))_
+- Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. _(javascriptallonge.pdf (source-range-83ecb080-01782))_
+- The suggestion is that shadowing a variable is confusing code. _(javascriptallonge.pdf (source-range-83ecb080-01784))_
+- Shadowing a let with a const does not change our ability to rebind the variable in its original scope. _(javascriptallonge.pdf (source-range-83ecb080-01787))_
+- Shadowing a const with a let does not permit it to be rebound in its original scope. _(javascriptallonge.pdf (source-range-83ecb080-01791))_
+- JavaScript has one _more_ way to bind a name to a value, var.[71] var looks a lot like let: _(javascriptallonge.pdf (source-range-83ecb080-01793))_
+- First, var is not block scoped, it’s function scoped, just like function declarations: _(javascriptallonge.pdf (source-range-83ecb080-01799))_
+- Declaring age twice does not cause an error(!), and the inner declaration does not shadow the outer declaration. _(javascriptallonge.pdf (source-range-83ecb080-01801))_
+- A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. _(javascriptallonge.pdf (source-range-83ecb080-01802))_
 
-## Technical details
+## Technical atoms
 
-### `technical-atom-0d930a8b7c62fbeb` code
+> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
 
-Citation: (raw/javascriptallonge.pdf p.148-157)
+> **let** age = 52;
+_(source: javascriptallonge.pdf (source-range-83ecb080-01767))_
 
-```javascript
-const evenStevens = (n) => { if (n === 0) { return true; } else if (n == 1) { return false; } else { n = n - 2; return evenStevens(n); } } evenStevens(42) //=> true
-```
+> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
 
-### `technical-atom-a57123c4b3176540` code
+> age = 53; age _//=> 53_
+_(source: javascriptallonge.pdf (source-range-83ecb080-01768))_
 
-Citation: (raw/javascriptallonge.pdf p.148-157)
+> If you dislike deliberately shadowing variables, you’ll probably take an even more opprobrious view of mixing const and let semantics with a shadowed variable:
+_(source: javascriptallonge.pdf (source-range-83ecb080-01785))_
 
-```javascript
-evenStevens = (n) => { if (n === 0) { return true; } else if (n == 1) { return false; } else { return evenStevens(n - 2); } } //=> ERROR, evenStevens is read-only
-```
+> **return** n * factorial2(x); } } factorial2(5) _//=> 120_
+_(source: javascriptallonge.pdf (source-range-83ecb080-01798))_
 
-### `technical-atom-69532e105fd4d8c7` code
+> Context: But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01802))_
 
-Citation: (raw/javascriptallonge.pdf p.148-157)
+> **const** factorial = (n) => {
+_(source: javascriptallonge.pdf (source-range-83ecb080-01803))_
 
-```javascript
-let age = 52;
-```
+> Context: JavaScript hoists the let and the assignment. But not so with var:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01809))_
 
-### `technical-atom-2d53626201b41db5` code
+> **const** factorial = (n) => {
+_(source: javascriptallonge.pdf (source-range-83ecb080-01810))_
 
-Citation: (raw/javascriptallonge.pdf p.148-157)
 
-```javascript
-age = 53; age //=> 53
-```
+## Source
 
-### `technical-atom-f00b8d7258128714` code
-
-Citation: (raw/javascriptallonge.pdf p.148-157)
-
-```javascript
-(() => { let age = 49; if ( true) { let age = 50; } return age; })() //=> 49
-```
-
-### `technical-atom-39f6f333444623f5` code
-
-Citation: (raw/javascriptallonge.pdf p.148-157)
-
-```
-{age: 49, '..': global-environment}
-```
-
-### `technical-atom-ef10a9701ccccacf` code
-
-Citation: (raw/javascriptallonge.pdf p.148-157)
-
-```
-{age: 50, '..': {age: 49, '..': global-environment}}
-```
-
-### `technical-atom-78d79112d6914d2a` code
-
-Citation: (raw/javascriptallonge.pdf p.148-157)
-
-```javascript
-(() => { let age = 49; if ( true) { age = 50; } return age; })() //=> 50
-```
-
-## Related technical details
-
-### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-d6ba7e5f33c9f02b` code
-
-Relation: nearby source page; matched terms `allong`, `const`, `javascript`
-
-Citation: (raw/javascriptallonge.pdf p.132-140)
-
-```javascript
-const user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja vaScript Spessore", "CoffeeScript Ristretto"]]];
-```
-
-### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-4551df707589c382` exception
-
-Relation: nearby source page; matched terms `does`, `not`
-
-Citation: (raw/javascriptallonge.pdf p.126-131)
-
-Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another.
-
-### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-0c6f56ffdca20542` code
-
-Relation: nearby source page; matched terms `const`
-
-Citation: (raw/javascriptallonge.pdf p.177-190)
-
-```javascript
-const K = (x) => (y) => x; const I = (x) => (x); const V = (x) => (y) => (z) => z(x)(y);
-```
-
-### From [[javascriptallonge-making-data-out-of-functions]]: `technical-atom-e872e51be415c3cc` code
-
-Relation: nearby source page; matched terms `const`
-
-Citation: (raw/javascriptallonge.pdf p.177-190)
-
-```javascript
-const K = (x) => (y) => x; const fortyTwo = K(42);
-```
+- [[javascriptallonge]]

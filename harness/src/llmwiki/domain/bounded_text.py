@@ -33,9 +33,8 @@ def sentence_fragments(paragraph: str) -> tuple[str, ...]:
     start = 0
     paragraph_length = len(paragraph)
     for index, character in enumerate(paragraph):
-        if (
-            character in _SENTENCE_ENDINGS
-            and (index + 1 >= paragraph_length or paragraph[index + 1].isspace())
+        if character in _SENTENCE_ENDINGS and (
+            index + 1 >= paragraph_length or paragraph[index + 1].isspace()
         ):
             result.append(paragraph[start : index + 1])
             start = index + 1

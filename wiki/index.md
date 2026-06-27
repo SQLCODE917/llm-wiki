@@ -3,7 +3,7 @@
 ## Sources
 - [[1776thomaspaine]] — Hub page for the source '1776' by Thomas Paine, linking chapter pages.
 - [[1776thomaspaine-document]] — Document from raw/1776ThomasPaine.pdf.
-- [[javascriptallonge]] — Summary of the source 'javascriptallonge'.
+- [[javascriptallonge]] — Claim-ledger projection (coding): 2043 usable entries, 543 technical atoms, 666 needs-review, 290 linked page(s); write decision write-with-review-work.
 - [[javascriptallonge-a-pull-of-the-lever-prefaces]] — A Pull of the Lever: Prefaces from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-rich-aroma-basic-numbers]] — A Rich Aroma: Basic Numbers from raw/javascriptallonge.pdf.
 - [[javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals]] — A Warm Cup: Basic Strings and Quasi-Literals from raw/javascriptallonge.pdf.
@@ -37,7 +37,6 @@
 - [[javascriptallonge-making-data-out-of-functions]] — Making Data Out Of Functions from raw/javascriptallonge.pdf.
 - [[javascriptallonge-mapwith]] — mapWith from raw/javascriptallonge.pdf.
 - [[javascriptallonge-maybe]] — Maybe from raw/javascriptallonge.pdf.
-- [[javascriptallonge-mutation]] — Mutation from raw/javascriptallonge.pdf.
 - [[javascriptallonge-naming-functions]] — Naming Functions from raw/javascriptallonge.pdf.
 - [[javascriptallonge-object-assign]] — Object.assign from raw/javascriptallonge.pdf.
 - [[javascriptallonge-once]] — Once from raw/javascriptallonge.pdf.
@@ -45,10 +44,266 @@
 - [[javascriptallonge-picking-the-bean-choice-and-truthiness]] — Picking the Bean: Choice and Truthiness from raw/javascriptallonge.pdf.
 - [[javascriptallonge-plain-old-javascript-objects]] — Plain Old JavaScript Objects from raw/javascriptallonge.pdf.
 - [[javascriptallonge-prelude-values-and-expressions-over-coffee]] — Prelude: Values and Expressions over Coffee from raw/javascriptallonge.pdf.
-- [[javascriptallonge-reassignment]] — Reassignment from raw/javascriptallonge.pdf.
 - [[javascriptallonge-recipes-with-basic-functions]] — Recipes with Basic Functions from raw/javascriptallonge.pdf.
 - [[javascriptallonge-recipes-with-data]] — Recipes with Data from raw/javascriptallonge.pdf.
-- [[javascriptallonge-self-similarity]] — Self-Similarity from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-0-2452a97f]] — () => 0: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-42-305868f5]] — 42: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-42-5d0200da]] — 42: 13 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-balanced-statement-about-combinators-7b0553ce]] — **a balanced statement about combinators**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-few-utilities-131b7f2a]] — **a few utilities**: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-history-lesson-33f8af79]] — **a history lesson**: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-look-back-at-functional-iterators-a6c93dce]] — **a look back at functional iterators**: 17 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-10e7f8cf]] — A Pull of the Lever: Prefaces: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-pull-of-the-lever-prefaces-273a5516]] — **A Pull of the Lever: Prefaces**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-quick-summary-of-functions-and-bodies-aa969162]] — **a quick summary of functions and bodies**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-return-to-backward-thinking-71ca1db1]] — **a return to backward thinking**: 26 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-rich-aroma-basic-numbers-1df398ce]] — **A Rich Aroma: Basic Numbers**: 13 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-rich-aroma-basic-numbers-ba3e2669]] — A Rich Aroma: Basic Numbers: 38 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-1ebcc3f6]] — **A Warm Cup: Basic Strings and Quasi-Literals**: 8 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-cc603ce5]] — A Warm Cup: Basic Strings and Quasi-Literals: 27 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-javascript-allong-0a2277f8]] — About JavaScript Allongé: 47 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-javascript-allong-986ce43b]] — **About JavaScript Allongé**: 7 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-author-30a21ec4]] — **About The Author**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-author-665f14e0]] — About The Author: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-sample-pdf-54a7fdbe]] — About The Sample PDF: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-about-the-sample-pdf-71b0a432]] — **About The Sample PDF**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-after-another-drink-76cfcc27]] — **after another drink**: 11 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-22-b176c868]] — **Ah. I’d Like to Have an Argument, Please.**[22]: 13 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-a8806219]] — Ah. I'd Like to Have an Argument, Please.: 62 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-and-are-control-flow-operators-70d39cfa]] — **|| and && are control-flow operators**: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-applying-functions-24660361]] — **applying functions**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-are-consts-also-from-a-shadowy-planet-4a9e1ee2]] — **are consts also from a shadowy planet?**: 32 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-array-literals-c27f7954]] — **array literals**: 13 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-arrays-and-destructuring-arguments-38eaf28a]] — Arrays and Destructuring Arguments: 71 source-backed entries and 31 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-arrays-and-destructuring-arguments-427f426d]] — **Arrays and Destructuring Arguments**: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-as-little-as-possible-about-functions-but-no-less-b730b058]] — **As Little As Possible About Functions, But No Less**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-as-little-as-possible-about-functions-but-no-less-dc8f76dc]] — As Little As Possible About Functions, But No Less: 91 source-backed entries and 21 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-back-on-the-block-04372cc1]] — **back on the block**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-backwardness-9f328804]] — **backwardness**: 12 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-basic-operations-on-iterables-544b054c]] — **Basic Operations on Iterables**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-basic-operations-on-iterables-9739baf4]] — Basic Operations on Iterables: 5 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-bonus-fb3c09bf]] — **bonus**: 10 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-building-blocks-14f1c706]] — Building Blocks: 40 source-backed entries and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-building-blocks-bde1c498]] — **Building Blocks**: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-building-with-mutation-4de2100f]] — **building with mutation**: 8 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-but-we-can-t-go-the-other-way-around-8718f0f1]] — But we can’t go the other way around:: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-call-by-sharing-50815870]] — **call by sharing**: 16 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-call-by-value-a5472a55]] — **call by value**: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-caveat-8e7d6204]] — **caveat**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-closures-and-scope-36951343]] — **Closures and Scope**: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-closures-and-scope-48ebeb9f]] — Closures and Scope: 65 source-backed entries and 11 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-combinators-14ec3c73]] — **combinators**: 16 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-combinators-and-function-decorators-ae3ffe4d]] — Combinators and Function Decorators: 32 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-commas-fa06a684]] — **commas**: 7 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-composing-and-decomposing-data-2a04d9f8]] — Composing and Decomposing Data: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-composing-and-decomposing-data-8f92eea1]] — **Composing and Decomposing Data**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-composition-b1474612]] — **composition**: 18 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-const-and-lexical-scope-5726fdd9]] — **const and lexical scope**: 16 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-const-d78dfb0f]] — **const**: 20 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-contents-76b817ae]] — CONTENTS: 2 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-contents-7f2f33f6]] — **Contents**: 2 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-converting-non-tail-calls-to-tail-calls-5e566cdd]] — **converting non-tail-calls to tail-calls**: 19 source-backed entries and 12 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-read-7bfd1130]] — **copy-on-read**: 13 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-write-766608be]] — **Copy on Write**: 12 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-write-a1ad4ef5]] — Copy on Write: 37 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copy-on-write-cb654b6d]] — **copy-on-write**: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copyright-notice-55e2aaea]] — **Copyright Notice**: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-copyright-notice-59977833]] — Copyright Notice: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-daniel-friedman-and-matthias-felleisen-19acd462]] — **Daniel Friedman and Matthias Felleisen**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-default-arguments-fa3e473d]] — **default arguments**: 6 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-defaults-and-destructuring-a42a676b]] — **defaults and destructuring**: 6 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-and-return-values-e0c8e2c3]] — **destructuring and return values**: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-arrays-df8a9943]] — **destructuring arrays**: 14 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-is-not-pattern-matching-e445bc60]] — **destructuring is not pattern matching**: 11 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-objects-9c37a2b6]] — **destructuring objects**: 5 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-destructuring-parameters-04910c2b]] — **destructuring parameters**: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-disclaimer-12852923]] — **Disclaimer**: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-disclaimer-afbe895a]] — **Disclaimer**: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-document-57b124a3]] — Document: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-eager-collections-9f479c5b]] — **eager collections**: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-element-references-1195f65e]] — **element references**: 7 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-evaluation-time-acbc5ddf]] — **evaluation time**: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-factorials-46f54e78]] — **factorials**: 10 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-false-f992fd98]] — **false**: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-flip-4a00fd1a]] — **Flip**: 16 source-backed entries and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-flip-73a3aeb5]] — Flip: 19 source-backed entries and 14 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-flipping-methods-51786406]] — **flipping methods**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-floating-991c07a5]] — **floating**: 20 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-fn-expr-args-d99dbd9a]] — _fn_expr_ ( _args_ ): 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-folding-5df7a07c]] — **folding**: 15 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-foreword-to-the-six-edition-c1008a12]] — **Foreword to the “Six” edition**: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-foreword-to-the-six-edition-ef92736a]] — Foreword to the ``Six'' edition: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-forewords-to-the-first-edition-2bd51f4d]] — Forewords to the First Edition: 21 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-from-18741ea9]] — **from**: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-declaration-caveats-34-2f38ea77]] — **function declaration caveats**[34]: 11 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-declarations-6432946d]] — **function declarations**: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-decorators-a17cb157]] — **function decorators**: 11 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-function-parameters-are-eager-28366a07]] — **function parameters are eager**: 9 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functional-iterators-272afda6]] — **Functional Iterators**: 19 source-backed entries and 12 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functional-iterators-fcfac1ac]] — Functional Iterators: 65 source-backed entries and 25 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-05bb73c5]] — **Functions**: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-and-identities-5f054947]] — **functions and identities**: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-are-not-the-real-point-8441ad66]] — **functions are not the real point**: 9 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-that-evaluate-to-functions-04de18cd]] — **functions that evaluate to functions**: 6 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-functions-that-return-values-and-evaluate-expressions-492c22a7]] — **functions that return values and evaluate expressions**: 10 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-garbage-garbage-everywhere-2266266b]] — **Garbage, Garbage Everywhere**: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-garbage-garbage-everywhere-8f6e0d08]] — Garbage, Garbage Everywhere: 61 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-gathering-8df97cbb]] — **gathering**: 14 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generating-iterables-0cf65eec]] — Generating Iterables: 119 source-backed entries and 22 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generating-iterables-f3672d9d]] — **Generating Iterables**: 14 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generators-and-iterables-2caad4d9]] — **generators and iterables**: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-generators-are-coroutines-72003ba2]] — **generators are coroutines**: 26 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-higher-order-functions-f7c0816f]] — **higher-order functions**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-how-this-book-is-organized-878cf5bb]] — **how this book is organized**: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-how-to-run-the-examples-cfe62b6c]] — How to run the examples: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-how-to-run-the-examples-d993ea50]] — **How to run the examples**: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-if-functions-without-free-variables-are-pure-are-closures-impure-a7bab636]] — **if functions without free variables are pure, are closures impure?**: 8 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-implementing-methods-with-iteration-63f0aa38]] — **implementing methods with iteration**: 11 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-inside-out-d1381084]] — **inside-out**: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interactive-generators-5d88ed7c]] — Interactive Generators: 44 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interactive-generators-97a9d42e]] — **interactive generators**: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interactive-generators-a0af33e2]] — **Interactive Generators**: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interlude-the-carpenter-interviews-for-a-job-094d06a5]] — Interlude: The Carpenter Interviews for a Job: 64 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-interlude-the-carpenter-interviews-for-a-job-6b93ad6b]] — **Interlude: The Carpenter Interviews for a Job**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-it-s-always-the-environment-691a44be]] — **it’s always the environment**: 15 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterables-ca86e1d3]] — **iterables**: 24 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterables-out-to-infinity-25cf75f7]] — **iterables out to infinity**: 4 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterating-c23d05ad]] — **iterating**: 16 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iteration-and-iterables-b16b44fe]] — Iteration and Iterables: 115 source-backed entries and 33 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iteration-and-iterables-fd87fbc7]] — **Iteration and Iterables**: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-iterator-objects-f38e13cb]] — **iterator objects**: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-javascript-s-generators-8552933b]] — **javascript’s generators**: 17 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lazy-and-eager-collections-226210f6]] — **Lazy and Eager Collections**: 13 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lazy-and-eager-collections-5e934df9]] — Lazy and Eager Collections: 51 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lazy-collection-operations-e526a20c]] — **lazy collection operations**: 22 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-left-variadic-destructuring-b0fc3cbc]] — **left-variadic destructuring**: 8 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-left-variadic-functions-2167177b]] — Left-Variadic Functions: 26 source-backed entries and 11 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-left-variadic-functions-f2a30dd2]] — **Left-Variadic Functions**: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-linear-recursion-fbf38ddb]] — **linear recursion**: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-lists-with-functions-as-data-01338d3a]] — **lists with functions as data**: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-literal-object-syntax-2d1e00bd]] — **literal object syntax**: 19 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-magic-names-8228497b]] — Magic Names: 36 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-magic-names-and-fat-arrows-4f60043a]] — **magic names and fat arrows**: 21 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-magic-names-b03fd831]] — **Magic Names**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-making-data-out-of-functions-654f2c10]] — Making Data Out Of Functions: 120 source-backed entries and 52 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-making-data-out-of-functions-9f10705f]] — **Making Data Out Of Functions**: 15 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mapping-c254bfef]] — **mapping**: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mapwith-269eb4c6]] — **mapWith**: 18 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mapwith-ed249f81]] — mapWith: 18 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-matthew-knox-1e7b3f55]] — **matthew knox**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-maybe-1b233cd5]] — Maybe: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-maybe-72c82460]] — **Maybe**: 10 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-michael-fogus-2cbed66d]] — **michael fogus**: 18 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mixing-let-and-const-3ea34717]] — **mixing let and const**: 4 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-more-generators-17421b24]] — **more generators**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mutation-7ccd2c26]] — Mutation: 51 source-backed entries and 16 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mutation-and-data-structures-ae403ce7]] — **mutation and data structures**: 9 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-mutation-e91c1325]] — **Mutation**: 27 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-naming-functions-4b259f4c]] — Naming Functions: 55 source-backed entries and 16 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-naming-functions-c3afc15c]] — **Naming Functions**: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-nested-blocks-5455d9d9]] — **nested blocks**: 7 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-newparentlist-db98dc22]] — newParentList: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-object-assign-92a69284]] — Object.assign: 4 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-object-assign-c1917bdf]] — **Object.assign**: 4 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-once-ba80d4aa]] — **Once**: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-once-cbc660b7]] — Once: 6 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-onetofive-35172c73]] — oneToFive: 15 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-on-numbers-c93c2f75]] — **operations on numbers**: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-on-ordered-collections-bea596c3]] — **operations on ordered collections**: 26 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-that-compose-two-or-more-iterables-into-an-iterable-4939bfa4]] — **operations that compose two or more iterables into an iterable**: 2 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-that-transform-an-iterable-into-a-value-a5caa4bb]] — **operations that transform an iterable into a value**: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-operations-that-transform-one-iterable-into-another-f5f924a7]] — **operations that transform one iterable into another**: 1 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-ordered-collections-243e57d8]] — **ordered collections**: 11 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-overcoming-limitations-7c7eb18c]] — **overcoming limitations**: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-parentlist-19376fe9]] — parentList: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-partial-application-33451c5c]] — **partial application**: 17 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-partial-application-76955f8e]] — Partial Application: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-partial-application-dcc8bd8e]] — **Partial Application**: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-9c7ef72a]] — **Picking the Bean: Choice and Truthiness**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-picking-the-bean-choice-and-truthiness-b4f6133b]] — Picking the Bean: Choice and Truthiness: 49 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-plain-old-javascript-objects-ad98090b]] — **Plain Old JavaScript Objects**: 15 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-plain-old-javascript-objects-c5b21e2a]] — Plain Old JavaScript Objects: 69 source-backed entries and 30 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-quasi-literals-c4c59894]] — **quasi-literals**: 12 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reassignment-845324ec]] — **Reassignment**: 13 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reassignment-f7a3e866]] — Reassignment: 53 source-backed entries and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-rebinding-c88c5c41]] — **rebinding**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-basic-functions-18e362f8]] — Recipes with Basic Functions: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-basic-functions-e12a8a98]] — **Recipes with Basic Functions**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recipes-with-data-2453a07c]] — Recipes with Data: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-recursive-iterators-71141b0b]] — **recursive iterators**: 11 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reference-types-b672735f]] — **reference types**: 9 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-reg-raganwald-braithwaite-7f935dce]] — Reg “raganwald” Braithwaite: 3 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-representing-naughts-and-crosses-as-a-stateful-function-65c6300f]] — **representing naughts and crosses as a stateful function**: 5 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-representing-naughts-and-crosses-as-a-stateless-function-a924b35d]] — **representing naughts and crosses as a stateless function**: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-revisiting-linked-lists-30506791]] — **revisiting linked lists**: 30 source-backed entries and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-rewriting-iterable-operations-84d06ac3]] — **rewriting iterable operations**: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-richard-feynman-a981ea1d]] — **Richard Feynman**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-say-please-a5eaf2b8]] — **say “please”**: 14 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-section-56917229]] — (() => {})(): 22 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-section-bd73a0f7]] — () => {}: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-self-currying-flip-a4281b62]] — **self-currying flip**: 2 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-self-similarity-52bff188]] — Self-Similarity: 71 source-backed entries and 19 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-self-similarity-8316c798]] — **Self-Similarity**: 25 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-served-by-the-pot-collections-27403f22]] — Served by the Pot: Collections: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-served-by-the-pot-collections-8d7b68c2]] — **Served by the Pot: Collections**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-shadowy-variables-from-a-shadowy-planet-49e17f5e]] — **shadowy variables from a shadowy planet**: 9 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-so-why-arrays-272535b4]] — **so why arrays**: 7 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-some-history-6c2c1826]] — **some history**: 19 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-state-machines-80efd398]] — **state machines**: 17 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-02185678]] — **summary**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-0245e60b]] — **Summary**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-17dbb3ed]] — **summary**: 2 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-1f83ceeb]] — Summary: 15 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-3f353b31]] — **summary**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-610c3fe2]] — **summary**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-summary-eea163e2]] — **summary**: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-table-of-contents-4cf427af]] — Table of Contents: 4 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tail-call-optimization-7b320223]] — **tail-call optimization**: 15 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tail-calls-and-default-arguments-1360d97e]] — **Tail Calls (and Default Arguments)**: 18 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tail-calls-and-default-arguments-37b86659]] — Tail Calls (and Default Arguments): 74 source-backed entries and 25 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tap-058569c1]] — Tap: 10 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tap-1a88d9b0]] — **Tap**: 10 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-thanks-685b049b]] — Thanks!: 4 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-that-constant-coffee-craving-75082210]] — That Constant Coffee Craving: 116 source-backed entries and 34 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-that-constant-coffee-craving-cf333dea]] — **That Constant Coffee Craving**: 16 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-that-s-nice-is-that-the-only-reason-45a031f0]] — **that’s nice. is that the only reason?**: 14 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-aftermath-0c486311]] — **the aftermath**: 6 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-carpenter-s-solution-a9b3ff8b]] — **the carpenter’s solution**: 31 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-function-keyword-6b28f876]] — **the function keyword**: 28 source-backed entries and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-function-keyword-b7d38317]] — **the function keyword**: 13 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-kestrel-and-the-idiot-9954fcbb]] — **the kestrel and the idiot**: 19 source-backed entries and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-problem-11d1b896]] — **the problem**: 14 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-simplest-possible-block-8b5d9566]] — **the simplest possible block**: 1 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-the-vireo-8403bb31]] — **the vireo**: 15 source-backed entries and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-this-seems-familiar-4ea6b9ba]] — **this seems familiar**: 10 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-threetofive-cdb4eaca]] — ThreeToFive: 7 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tortoises-hares-and-teleporting-turtles-5ba2545c]] — Tortoises, Hares, and Teleporting Turtles: 16 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-tortoises-hares-and-teleporting-turtles-da997b69]] — **Tortoises, Hares, and Teleporting Turtles**: 16 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-truthiness-and-operators-d856360c]] — **truthiness and operators**: 9 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-truthiness-and-the-ternary-operator-f442a22e]] — **truthiness and the ternary operator**: 18 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-unary-a122f640]] — **Unary**: 16 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-unary-e9640160]] — Unary: 16 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-undefined-28e070d7]] — **undefined**: 3 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-undefined-97b49735]] — **undefined**: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-unfolding-and-laziness-465f40d8]] — **unfolding and laziness**: 17 source-backed entries and 7 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-value-types-320b4348]] — **value types**: 10 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-and-identity-2f6e8c3f]] — values and identity: 29 source-backed entries and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-and-identity-db1a8445]] — **values and identity**: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-are-expressions-1d1561e0]] — values are expressions: 19 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-values-are-expressions-d7f62f8b]] — **values are expressions**: 5 source-backed entries and 0 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-var-c73bae7a]] — **var**: 14 source-backed entries and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-variables-and-bindings-62ca1c8e]] — **variables and bindings**: 23 source-backed entries and 3 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-void-02c6d9f7]] — **void**: 6 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-what-javascript-allong-is-and-isn-t-d3b8adfa]] — **What JavaScript Allongé is. And isn’t.**: 24 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-what-javascript-allong-is-and-isn-t-ebadc9e3]] — What JavaScript Allongé is. And isn't.: 28 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-which-came-first-the-chicken-or-the-egg-5e62bbe8]] — **which came first, the chicken or the egg?**: 5 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-4e397686]] — Why?: 9 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-a515dd81]] — **Why?**: 9 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-const-and-let-were-invented-32b697a4]] — **why const and let were invented**: 22 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-why-the-six-edition-e4ab9acb]] — **why the “six” edition?**: 26 source-backed entries and 4 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-x-x-cafe8f8b]] — (x) => x: 17 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-y-x-63a64526]] — (y) => x: 9 source-backed entries and 2 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-section-yielding-iterables-096757a1]] — **yielding iterables**: 10 source-backed entries and 1 atom(s) from raw/javascriptallonge.pdf.
 - [[javascriptallonge-served-by-the-pot-collections]] — Served by the Pot: Collections from raw/javascriptallonge.pdf.
 - [[javascriptallonge-summary]] — Summary from raw/javascriptallonge.pdf.
 - [[javascriptallonge-table-of-contents]] — Table of Contents from raw/javascriptallonge.pdf.
@@ -66,7 +321,7 @@
 - [[javascriptallonge-why]] — Why? from raw/javascriptallonge.pdf.
 - [[mit8-01scs22-chapter2]] — MIT 8.01SC Physics I: Classical Mechanics, Chapter 2
 - [[mit8-01scs22-chapter2-document]] — Document from raw/mit8_01scs22_chapter2.pdf.
-- [[sword-world-rpg-complete-edition]] — Complete rules reference for the Sword World RPG system.
+- [[sword-world-rpg-complete-edition]] — Claim-ledger projection (general-prose): 11015 usable entries, 2839 technical atoms, 1130 needs-review, 1673 linked page(s); write decision write-with-review-work.
 - [[sword-world-rpg-complete-edition-1-1-ability-scores-through-1-2-races]] — 1.1 Ability Scores through 1.2 Races from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-1-3-skills]] — 1.3 Skills from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-1-4-character-creation]] — 1.4 Character Creation from raw/Sword World RPG - Complete Edition.pdf.
@@ -176,6 +431,1647 @@
 - [[sword-world-rpg-complete-edition-part-1-players-section]] — Part 1: Players’ Section from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-part-2-game-masters-section]] — Part 2: Game Masters’ Section from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-part-3-optional-rules]] — Part 3: Optional Rules from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-0-damage-98b69a7e]] — 【 **0 Damage!** 】: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-1-030aa92a]] — **1.1**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-1-ability-scores-9396ef85]] — 1.1 Ability Scores: 36 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-2-bc4c1d3b]] — **1.2**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-2-races-6b34c2da]] — 1.2 Races: 48 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-3-4-explanation-of-adventurer-skills-14eb79cc]] — **1.3.4 Explanation of Adventurer Skills**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-3-878ff146]] — **1.3**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-3-skills-8de42a95]] — 1.3 Skills: 115 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-4-3-starting-skills-and-starting-experience-points-fc9d7a80]] — **1.4.3 Starting Skills and Starting Experience Points**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-4-6-purchasing-weapons-and-armor-b817e106]] — **1.4.6 Purchasing Weapons and Armor**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-4-b5679e74]] — **1.4**: 0 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-4-character-creation-d7af8d68]] — 1.4 Character Creation: 333 source-backed entries and 61 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-normal-attack-98cda870]] — **1. Normal Attack**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-paralysis-ray-ae1fb09d]] — **1. Paralysis Ray**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-replay-collections-45ec1e2f]] — **1. Replay Collections**: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1-the-number-of-times-the-game-master-has-to-roll-dice-during-combat-wil-27604d7e]] — **[ 1. The number of times the game master has to roll dice during combat will be drastically reduced ]**: 14 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-3-cc87e79e]] — **10.3**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-3-surprise-attacks-a7dce447]] — 10.3 Surprise Attacks: 28 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-4-7d3560f8]] — **10.4**: 15 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-5-attacks-against-the-sleeping-590d3c35]] — 10.5 Attacks Against the Sleeping: 52 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-5-d41c3caf]] — **10.5**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10-6-combat-between-monsters-2913c340]] — 10.6 Combat Between Monsters: 12 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10th-level-ancient-magic-list-9cb8cefc]] — **10th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-10th-level-dragon-roar-magic-list-160270f0]] — **10th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-1-c96a6c3c]] — **11.1**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-2-2-8e9b8a4d]] — **11.2.2**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-2-7e0ce467]] — **11.2**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-2-dark-magic-469dae4d]] — 11.2 Dark Magic: 328 source-backed entries and 104 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-2-dark-magic-8045471f]] — 11.2 Dark Magic: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-3-71a937e0]] — **11.3**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-3-dragon-roar-magic-10c57eed]] — 11.3 Dragon Roar Magic: 204 source-backed entries and 84 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-4-acquiring-rune-master-skills-and-increasing-levels-0c325214]] — 11.4 Acquiring Rune Master Skills and Increasing Levels: 52 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-5-171a6aeb]] — **11.5**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-11-5-asking-npcs-to-use-magic-10df5485]] — 11.5 Asking NPCs to Use Magic: 55 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-1-4210a9f8]] — **12.1**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-1-rules-regarding-language-a9d8cd1a]] — 12.1 Rules Regarding Language: 98 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-1-2-resistance-to-poison-155bc7c5]] — **12.2.1.2 Resistance to Poison**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-1-4-poison-list-0645fdcc]] — **12.2.1.4 Poison List**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-1-poisons-cbf238eb]] — **12.2.1 Poisons**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-2-1-illness-samples-2bac8867]] — **12.2.2.1 Illness Samples**: 12 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-3-herbs-7c42aa55]] — **12.2.3 Herbs**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-55286501]] — **12.2**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-rules-for-poison-illness-and-infection-297188b8]] — 12.2 Rules for Poison, Illness and Infection: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-2-rules-for-poison-illness-and-infection-f9604458]] — 12.2 Rules for Poison, Illness and Infection: 432 source-backed entries and 89 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-12-3-work-requests-to-npcs-837181a3]] — 12.3 Work Requests to NPCs: 25 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-1-6945549b]] — **13.1**: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-1-types-of-monsters-125df26d]] — 13.1 Types of Monsters: 91 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-1-how-to-read-the-monster-catalog-5ac64784]] — 13.2.1 How to Read the Monster Catalog: 209 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-7e2ae6df]] — 13.2.10 Magical Creatures: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-e0e72c90]] — 13.2.10 Magical Creatures: 279 source-backed entries and 77 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-f828d7f6]] — 13.2.11 Daemons/Underworld Creatures: 66 source-backed entries and 20 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-12-humans-f6282f9b]] — 13.2.12 Humans: 80 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-13-other-c9b5e564]] — 13.2.13 Other: 34 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-2-fae-9febdff0]] — 13.2.2 Fae: 78 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-3-youma-1ec24eb6]] — 13.2.3 Youma: 99 source-backed entries and 25 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-4-spirits-72f255cf]] — **13.2.4 Spirits**: 22 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-4-spirits-733aba43]] — 13.2.4 Spirits: 231 source-backed entries and 65 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-5-titans-b5ad7a47]] — 13.2.5 Titans: 139 source-backed entries and 32 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-19f240c7]] — 13.2.6 Mythical Beasts and Magical Beasts: 465 source-backed entries and 125 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-6-mythical-beasts-and-magical-beasts-e507d7cb]] — 13.2.6 Mythical Beasts and Magical Beasts: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-7-animals-8457e1e7]] — 13.2.7 Animals: 15 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-7-animals-981fc11f]] — 13.2.7 Animals: 512 source-backed entries and 128 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-7-animals-9cfe1584]] — **13.2.7 Animals**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-7-animals-a40bcb6e]] — 13.2.7 Animals: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-8-plants-4215440e]] — 13.2.8 Plants: 98 source-backed entries and 35 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-9-undead-7bab43fc]] — 13.2.9 Undead: 405 source-backed entries and 111 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-2-9-undead-b1578b5a]] — 13.2.9 Undead: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-3-c4462ec7]] — **13.3**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-3-converting-character-data-to-monster-data-038874a8]] — 13.3 Converting Character Data to Monster Data: 28 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-5-128a1813]] — **13.5**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-5243ca9c]] — 13.5 Monster Level and Adventurer Level: 24 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-f392cf25]] — 13.6 Handling Monster Special Abilities: 191 source-backed entries and 26 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-2-adventure-treasure-and-reward-amounts-1d73a333]] — 14.2 Adventure Treasure and Reward Amounts: 39 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-3-b6f98cb0]] — **14.3**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-4-2-2-armor-ff8a90a2]] — **14.4.2.2 Armor**: 0 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-4-f7303e91]] — **14.4**: 23 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-4-magical-item-list-31a11c33]] — 14.4 Magical Item List: 0 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-4-magical-item-list-5332c9a3]] — 14.4 Magical Item List: 2 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-14-4-magical-item-list-7c875144]] — 14.4 Magical Item List: 742 source-backed entries and 365 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-15-1-94f221c1]] — **15.1**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-15-1-four-types-of-experience-points-cc8b74b0]] — 15.1 Four Types of Experience Points: 30 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-1-combat-in-which-monsters-roll-dice-6b8947ea]] — 16.1 Combat in Which Monsters Roll Dice: 24 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-2-5c222b02]] — **16.2**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-2-weapon-and-armor-modifiers-10b8babb]] — **16.2 Weapon and Armor Modifiers**: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-2-weapon-and-armor-modifiers-a9744460]] — 16.2 Weapon and Armor Modifiers: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-3-9648fd16]] — **16.3**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-3-projectile-bonus-damage-e12d5190]] — 16.3 Projectile Bonus Damage: 34 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-5-28f31e28]] — **16.5**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-5-combat-options-ace48190]] — 16.5 Combat Options: 167 source-backed entries and 38 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-6-1-character-s-dominant-hand-d00feeaf]] — **16.6.1 Character's Dominant Hand**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-8-weapons-and-armor-that-are-too-heavy-fded1d27]] — 16.8 Weapons and Armor That Are Too Heavy: 29 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-9-982e5edb]] — **16.9**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-16-9-special-weapons-77dd0946]] — 16.9 Special Weapons: 116 source-backed entries and 20 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-1-7315e4c7]] — **17.1**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-2-c0a5d139]] — **17.2**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-2-lost-spells-9cce1f53]] — 17.2 Lost Spells: 37 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-3-808a812f]] — **17.3**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-4-61931efd]] — **17.4**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-5-176d4971]] — **17.5**: 19 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-17-5-full-resistance-ac446008]] — 17.5 Full Resistance: 25 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-18-2-56ebbf41]] — **18.2**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-18-2-guidelines-for-adventurer-age-and-ability-score-changes-42b51c47]] — 18.2 Guidelines for Adventurer Age and Ability Score Changes: 27 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-18-3-9285e1bb]] — **18.3**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-18-3-rules-for-destroying-structures-7b0c8605]] — 18.3 Rules for Destroying Structures: 104 source-backed entries and 56 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1st-level-ancient-magic-list-84bae950]] — **1st Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-1st-level-dragon-roar-magic-list-ea215f38]] — **1st Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-1-cc44d2c7]] — **2.1**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-2-2ee653c0]] — **2.2**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-3-49f0dcfc]] — **2.3**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-3-checks-1d16e3c6]] — 2.3 Checks: 46 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-4-07b44412]] — **2.4**: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-5-00e1f0e0]] — **2.5**: 25 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-5-1-difficulty-7f9ec0b1]] — **2.5.1 Difficulty**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-5-difficulty-checks-f02a1279]] — 2.5 Difficulty Checks: 85 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-7-resistance-rolls-1e4055e0]] — 2.7 Resistance Rolls: 30 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-hypnosis-ray-04b5bad5]] — **2. Hypnosis Ray**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-scenario-collections-7c9c92bb]] — **2. Scenario Collections**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2-strangle-continue-to-strangle-escape-65691db8]] — **2. Strangle/Continue to Strangle/Escape**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2nd-level-ancient-magic-list-be24a7be]] — **2nd Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-2nd-level-dragon-roar-magic-list-f168db26]] — **2nd Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-1-99f1edf2]] — **3.1**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-1-action-announcements-291b4cab]] — 3.1 Action Announcements: 38 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-2-92410baf]] — **3.2**: 18 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-3-1-ad8a8d46]] — **3.3.1**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-3-action-canceling-cb1b00d2]] — 3.3 Action Canceling: 45 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-3-b0e7286b]] — **3.3**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-4-1-705b0816]] — **3.4.1**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-4-75b81ace]] — **3.4**: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-4-movement-and-actions-c69b2ebf]] — 3.4 Movement and Actions: 73 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-freeze-ray-fa2b6176]] — **3. Freeze Ray**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-pin-down-9f07a74f]] — **3. Pin Down**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3-world-guide-f9ad150a]] — **3. World Guide**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3rd-level-ancient-magic-list-6a6b081f]] — **3rd Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3rd-level-dragon-roar-magic-list-48cbda7a]] — **3rd Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-3rd-level-spirit-magic-list-invisibility-sprite-mind-spirit-03529149]] — **3rd Level Spirit Magic List [ Invisibility ] (Sprite/Mind Spirit)**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-1-5cbe01fd]] — **4.1**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-10-2-silver-weapons-and-armor-e3dbe11d]] — **4.10.2 Silver Weapons and Armor**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-10-4-mithril-silver-weapons-and-armor-99cf2474]] — **4.10.4 Mithril Silver Weapons and Armor**: 22 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-10-excellent-weapons-and-armor-54e907a2]] — 4.10 Excellent Weapons and Armor: 133 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-11-damage-recovery-c4d899e6]] — 4.11 Damage Recovery: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-2-685e35ff]] — **4.2**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-3-61079d71]] — **4.3**: 15 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-3-projectile-restrictions-b273999f]] — 4.3 Projectile Restrictions: 37 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-4-c5f49a1c]] — **4.4**: 4 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-4-scores-used-in-weapon-combat-b82ad0ba]] — 4.4 Scores Used in Weapon Combat: 62 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-5-1-hit-checks-96009c04]] — **4.5.1 Hit Checks**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-5-2-determining-base-damage-strike-roll-14427e1b]] — **4.5.2 Determining Base Damage (Strike Roll)**: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-5-4-monster-defense-points-e07a345e]] — **4.5.4 Monster Defense Points**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-5-attacks-from-characters-against-monsters-45c4e092]] — 4.5 Attacks From Characters Against Monsters: 71 source-backed entries and 26 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-5-e37f0351]] — **4.5**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-6-2-damage-dealt-by-monsters-939ec9f2]] — **4.6.2 Damage Dealt by Monsters**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-6-attacks-from-monsters-against-characters-cd219f6a]] — 4.6 Attacks From Monsters Against Characters: 42 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-6-b9df4616]] — **4.6**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-7-3013023f]] — **4.7**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-7-attacks-from-characters-against-characters-c50fb118]] — 4.7 Attacks From Characters Against Characters: 40 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-8-9f5cf130]] — **4.8**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-9-37e1f8e1]] — **4.9**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-9-4-mercy-77906167]] — **4.9.4 Mercy**: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-9-unconscious-and-death-checks-cbb5d149]] — 4.9 Unconscious and Death Checks: 43 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-brainwashing-ray-eb0b371b]] — **4. Brainwashing Ray**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-sword-world-novels-and-short-story-collections-d95521d9]] — **4. Sword World Novels and Short Story Collections**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4-using-holy-magic-or-common-runes-c86e8588]] — **4. Using Holy Magic or Common Runes**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4th-level-ancient-magic-list-a7d4b9cb]] — **4th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-4th-level-dragon-roar-magic-list-102980ac]] — **4th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-1-2e564bed]] — **5.1.1**: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-10-how-to-read-magic-details-cd23123a]] — 5.1.10 How to Read Magic Details: 58 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-11-ancient-magic-and-the-sorcerer-skill-48dd2e37]] — 5.1.11 Ancient Magic and the Sorcerer Skill: 63 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-12-366d6f66]] — **5.1.12**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-50b0aaec]] — 5.1.12 Ancient Magic List: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-68df13d8]] — 5.1.12 Ancient Magic List: 893 source-backed entries and 377 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-12-ancient-magic-list-9cfbbe11]] — 5.1.12 Ancient Magic List: 1 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-13-spirit-magic-and-the-shaman-skill-40c50647]] — 5.1.13 Spirit Magic and the Shaman Skill: 39 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-19e7082a]] — 5.1.14 Spirit Magic List: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-14-spirit-magic-list-35b21475]] — 5.1.14 Spirit Magic List: 636 source-backed entries and 236 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-15-2-the-six-major-gods-4ba62421]] — **5.1.15.2 The Six Major Gods**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-15-3-other-gods-e22479c7]] — **5.1.15.3 Other Gods**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-15-holy-magic-and-the-priest-skill-d2ca89aa]] — 5.1.15 Holy Magic and the Priest Skill: 169 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-16-basic-holy-magic-list-fffdfe8e]] — 5.1.16 Basic Holy Magic List: 289 source-backed entries and 122 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-17-special-holy-magic-list-2ec6736e]] — **5.1.17 Special Holy Magic List**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-17-special-holy-magic-list-cfd00cd7]] — 5.1.17 Special Holy Magic List: 146 source-backed entries and 69 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-4-1-magic-power-ac0b0f6c]] — **5.1.4.1 Magic Power**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-4-2-b408cbd1]] — **5.1.4.2**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-4-how-to-use-magic-4bc80385]] — 5.1.4 How to Use Magic: 105 source-backed entries and 26 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-6-recovering-mental-power-eca2b400]] — 5.1.6 Recovering Mental Power: 51 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-6cc4215f]] — **5.1**: 0 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-7-1-expansion-types-0bedac91]] — **5.1.7.1 Expansion Types**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-7-2-combined-expansion-dbae0d30]] — **5.1.7.2 Combined Expansion**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-7-e40029b6]] — **5.1.7**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-7-magic-expansion-21692883]] — 5.1.7 Magic Expansion: 48 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-8-magic-contraction-30d65c63]] — 5.1.8 Magic Contraction: 38 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-1-9-magic-types-7ac6ba85]] — 5.1.9 Magic Types: 90 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-2-common-runes-f7ccd9cd]] — 5.2 Common Runes: 39 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-3-1-spellsong-list-ff225928]] — **5.3.1 Spellsong List**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-3-ac8e92ee]] — **5.3**: 22 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-3-spellsongs-4fafd2f2]] — 5.3 Spellsongs: 115 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-escape-from-grapple-d7133e5f]] — **5. Escape from Grapple**: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5-metal-destruction-ray-870072f3]] — **5. Metal Destruction Ray**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5th-level-ancient-magic-list-bd640c81]] — **5th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-5th-level-dragon-roar-magic-list-2324c4d1]] — **5th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-1-7e0c0fca]] — **6.1**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-2-c23a3f7f]] — **6.2**: 15 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-2-thief-skill-2586fccc]] — 6.2 Thief Skill: 122 source-backed entries and 24 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-3-6ef383b9]] — **6.3**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-3-ranger-skill-dcb68b51]] — 6.3 Ranger Skill: 60 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-4-9ae1f957]] — **6.4**: 16 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-4-sage-skill-d1e9ec8c]] — 6.4 Sage Skill: 36 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-5-a12139c2]] — **6.5**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-5-bard-skill-00606f94]] — 6.5 Bard Skill: 47 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-6-97dcc9a5]] — **6.6**: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-6-common-adventurer-abilities-ca239e10]] — 6.6 Common Adventurer Abilities: 129 source-backed entries and 49 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-collection-series-62602618]] — **6. Collection Series**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6-no-firing-b6fd64c6]] — **6. No firing**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6th-level-ancient-magic-list-bcc206b3]] — **6th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-6th-level-dragon-roar-magic-list-0b9c3de4]] — **6th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-1-11ebb79a]] — **7.1**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-2-0c9c8e0d]] — **7.2**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-2-merchant-skill-15476b49]] — 7.2 Merchant Skill: 42 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-3-858bb765]] — **7.3**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-3-craftsman-skill-be28ca68]] — 7.3 Craftsman Skill: 44 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-4-c5156645]] — **7.4**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-5-ceb100e3]] — **7.5**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-5-hunter-skill-eabc7bc0]] — 7.5 Hunter Skill: 36 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-6-9d261399]] — **7.6**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-6-sailor-skill-eaced667]] — 7.6 Sailor Skill: 34 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7-old-version-of-the-rules-eafc5ef7]] — **7. Old Version of the Rules**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7th-level-ancient-magic-list-d41f9adf]] — **7th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7th-level-basic-dark-magic-list-64e16e64]] — **7th Level Basic Dark Magic List**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-7th-level-dragon-roar-magic-list-6c27b524]] — **7th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8-2-3d128ff8]] — **8.2**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8-2-how-to-use-experience-points-increasing-skill-levels-b5ca719b]] — 8.2 How to Use Experience Points: Increasing Skill Levels: 29 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8-3-d6b8516d]] — **8.3**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8-4-increasing-general-skills-c26199a3]] — 8.4 Increasing General Skills: 37 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8-game-master-screen-7ee0d213]] — **8. Game Master Screen**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8th-level-ancient-magic-list-cfb52f78]] — **8th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-8th-level-dragon-roar-magic-list-82bdfa13]] — **8th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9-2-61e2913f]] — **9.2**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9-2-should-you-use-a-target-score-check-or-a-difficulty-check-0db0a93a]] — 9.2 Should You Use a Target Score Check or a Difficulty Check?: 21 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9-2-should-you-use-a-target-score-check-or-a-difficulty-check-b7e6d343]] — **9.2 Should You Use a Target Score Check or a Difficulty Check?**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9-3-1d17b823]] — **9.3**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9-4-04a9c9d9]] — **9.4**: 22 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9-4-automatic-success-restrictions-2b4509b9]] — 9.4 Automatic Success Restrictions: 48 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9th-level-ancient-magic-list-a11c8901]] — **9th Level Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9th-level-dragon-roar-magic-list-9626e5d8]] — **9th Level Dragon Roar Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-9th-level-spirit-magic-list-earthquake-behemoth-greater-earth-spirit-d62a1f28]] — **9th Level Spirit Magic List [ Earthquake ] (Behemoth/Greater Earth Spirit)**: 21 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ability-bonuses-cc654268]] — **[** ⑤ **Ability Bonuses ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ability-bonuses-dc408084]] — 【 **Ability Bonuses** 】: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ability-scores-457b8c13]] — **Ability Scores**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ability-scores-ac559f64]] — **[** ④ **Ability Scores ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ability-scores-fec7102b]] — **Ability Scores**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-accomplishing-missions-51275c69]] — **Accomplishing Missions**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-acid-098b071c]] — 《 **Acid** 》: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-acid-cloud-00d72087]] — **[ Acid Cloud ]**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-acquiring-rune-master-skills-and-increasing-levels-6c0ed670]] — **Acquiring Rune Master Skills and Increasing Levels**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-actions-you-can-take-during-normal-movement-9b50d736]] — **Actions You Can Take During Normal Movement**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-actions-you-can-take-while-standing-still-db938131]] — **Actions You Can Take While Standing Still**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventure-treasure-and-reward-amounts-f0098594]] — **Adventure Treasure and Reward Amounts**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventurer-death-checks-dff27e05]] — **Adventurer Death Checks**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventurer-languages-bc474dfb]] — **Adventurer Languages**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventurer-level-ba58a19d]] — **[** ⑭ **Adventurer Level ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventurer-level-c13af34d]] — **Adventurer Level**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventurers-12d45ff3]] — **Adventurers**: 12 source-backed entries and 33 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-adventurers-and-monsters-befb35ec]] — **Adventurers and Monsters**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-age-1944c37d]] — 《 **Age** 》: 3 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-age-ce0f66a4]] — **[** ⑪ **Age ]**: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-age-gender-name-42da123c]] — **Age, Gender, Name**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-age-of-mythology-887f7fa7]] — **Age of Mythology**: 28 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ages-of-each-race-0f7d4b97]] — 《 **Ages of Each Race** 》: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-agility-64939861]] — 【 **Agility** 】: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-agility-b8059738]] — 《 **Agility** 》: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-air-crystal-204081fe]] — **Air Crystal**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-air-stalker-c382a813]] — **Air Stalker**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-alraune-63c5bf6d]] — **[ Alraune ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-amber-robe-4b1a5cdc]] — 《 **Amber Robe** 》: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-amulet-of-countersense-94df1bb8]] — **[ Amulet of Countersense ]**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-amulet-versus-undead-633e51f6]] — **[ Amulet Versus Undead ]**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-analogy-of-success-and-failure-09d53aee]] — **Analogy of Success and Failure**: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-analyze-enchantment-9b580e03]] — **[ Analyze Enchantment ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ancient-magic-and-the-sorcerer-skill-b9f89bae]] — **Ancient Magic and the Sorcerer Skill**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ancient-magic-list-26b232c2]] — **Ancient Magic List**: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-and-illness-49794a2e]] — **and Illness** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-animals-daaf6c98]] — 《 **Animals** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ant-242a414c]] — **[ Ant ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ape-b16bcadb]] — **[ Ape ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-apport-2e33ceca]] — **[ Apport ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-area-ad6282e6]] — 《 **Area** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-area-aim-4e8a6203]] — **Area Aim**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-area-contraction-0c644f82]] — 《 **Area Contraction** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-area-expansion-3bb7a342]] — 《 **Area Expansion** 》: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-arm-aim-e123f3a7]] — **Arm Aim**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-armor-76acf2a1]] — **Armor**: 1 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-armor-modifiers-3f4fb532]] — **Armor Modifiers**: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-artwork-c240267f]] — **Artwork**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ash-c75e9035]] — **[ Ash ]**: 20 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-asking-npcs-to-use-magic-0cf76a30]] — **Asking NPCs to Use Magic**: 19 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-assassin-s-flute-7aecfeb0]] — 《 **Assassin's Flute** 》: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attack-points-55511249]] — 《 **Attack Points** 》: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attack-points-string-7-0-strike-points-special-9e7eb7dd]] — Attack Points=String:7 (0) Strike Points=Special: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attack-power-1f0bb991]] — 【 **Attack Power** 】: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attack-power-modifier-65f51398]] — **Attack Power Modifier**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attack-with-both-hands-at-the-same-dc878bdb]] — **Attack with both hands at the same**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attacks-and-magic-against-grapplers-1ba7a6bc]] — **Attacks and Magic Against Grapplers**: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-characters-e99e3a5a]] — **Attacks From Characters Against Characters**: 2 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-monsters-112c0ec3]] — **Attacks From Characters Against Monsters**: 8 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attacks-from-characters-against-monsters-8aba8c52]] — **Attacks From Characters Against Monsters**: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attacks-from-monsters-against-characters-21006ae5]] — **Attacks From Monsters Against Characters**: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-attacks-from-monsters-against-characters-58433b82]] — **Attacks From Monsters Against Characters**: 8 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-automatic-success-and-automatic-failure-0770eff5]] — **Automatic Success and Automatic Failure**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-automatic-success-restrictions-f7b6bb4f]] — **Automatic Success Restrictions**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bad-joke-inhaled-538b4975]] — **[ Bad Joke (Inhaled)**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bag-of-protection-8fce6acf]] — **[ Bag of Protection ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ballista-479fe82e]] — **Ballista**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-balloon-burst-dec21948]] — **[ Balloon Burst ]**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bandit-38a093d6]] — **[ Bandit ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bard-40d64203]] — 【 **Bard** 】: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bard-skill-abilities-table-0ad5dba5]] — **Bard Skill Abilities Table**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bard-skill-d11c6375]] — **Bard Skill**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-10-c1d36b5e]] — Base Mental Power Cost=10: 19 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-25-157410f6]] — Base Mental Power Cost=25: 3 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-28-46474006]] — Base Mental Power Cost=28: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-32-73fe7550]] — Base Mental Power Cost=32: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-4-78155c58]] — Base Mental Power Cost=4: 10 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-5-78ae5abd]] — Base Mental Power Cost=5: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-6-8b3ebb2d]] — Base Mental Power Cost=6: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-mental-power-cost-d8c80fdf]] — 《 **Base Mental Power Cost** 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-trade-price-50-000-gamels-9d281f4a]] — Base Trade Price=50,000 gamels: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-trade-price-6000-gamels-9c3063eb]] — Base Trade Price=6000 gamels: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-trade-price-b6c21526]] — 《 **Base Trade Price** 》: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-trade-value-320-gamels-67220aac]] — Base Trade Value=320 gamels: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-base-trade-value-9800-gamels-0c70a5e5]] — Base Trade Value=9800 gamels: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-basic-abilities-of-the-5-1-13-2-shaman-skill-2b2f36af]] — **Basic Abilities of the 5.1.13.2 Shaman Skill**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-basic-abilities-of-the-5-1-15-4-priest-skill-339e6f4f]] — **Basic Abilities of the 5.1.15.4 Priest Skill**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-basic-abilities-of-the-dragon-priest-skill-2e30292b]] — **Basic Abilities of the Dragon Priest Skill**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-basic-dark-magic-list-7926705e]] — **Basic Dark Magic List**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-basic-holy-magic-list-723a8e30]] — **Basic Holy Magic List**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bat-8ee3c29d]] — **Bat**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bat-b91f1d08]] — **[ Bat ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bat-fever-ea4bf7dc]] — **[ Bat Fever ]**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-battle-song-spell-level-5-42b71058]] — **[ Battle Song ] (Spell Level=5)**: 12 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-beast-maker-dose-magic-5060ba0f]] — **[Beast Maker (Dose/Magic)]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-beginner-priest-e46e9a46]] — **Beginner Priest**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bend-bar-e46844b0]] — **[ Bend Bar ]**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-binding-dryad-plant-spirit-17fb871f]] — **[ Binding ] (Dryad/Plant Spirit)**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-black-death-touch-injected-or-inhaled-magic-damage-f439f522]] — **[Black Death (Touch, Injected, or Inhaled/Magic, Damage)]**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-blade-net-2d79dfdf]] — **[ Blade Net ]**: 15 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-blade-of-bravery-4cb38bd7]] — 《 **Blade of Bravery** 》: 6 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-blaster-e0cc31a1]] — 《 **Blaster** 》: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-blindness-4f7a2bcb]] — **[ Blindness ]**: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-blob-80aed19e]] — **Blob**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-blood-protection-438fab77]] — **[ Blood Protection ]**: 27 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bloodsuck-f7c359a6]] — 《 **Bloodsuck** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bloody-petal-de783dac]] — **[ Bloody Petal ]**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-body-f8ef842d]] — **Body**: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bone-servant-0849dccf]] — **[ Bone Servant ]**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bone-servant-6b6c5a0b]] — **Bone Servant**: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bonus-damage-2c50a558]] — **Bonus Damage**: 2 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bonus-damage-fcee7ff5]] — 【 **Bonus Damage** 】: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-books-related-to-sword-world-rpg-c190c820]] — **Books Related to Sword World RPG**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-books-related-to-sword-world-rpg-da321184]] — Books Related to Sword World RPG: 43 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-boomerang-1bed76cb]] — **Boomerang**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-boss-cc1874c5]] — **Boss**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-brain-blade-4dcc6aa8]] — 《 **Brain Blade** 》: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-braki-23c160b5]] — 《 **Braki** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-braki-special-holy-magic-list-efa2ce78]] — **Braki Special Holy Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-brick-74da8997]] — **[ Brick ]**: 6 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-brownie-brownie-building-spirit-19ce662b]] — **[ Brownie ] (Brownie/Building Spirit)**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-brownie-cf51d100]] — **[ Brownie ]**: 27 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-buau-zombie-4566066c]] — **[ Buau Zombie ]**: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-bulkless-bag-ee5552ab]] — **[ Bulkless Bag ]**: 12 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-calendar-and-time-e3b3cba7]] — **Calendar and Time**: 18 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-call-god-852b4c39]] — **[ Call God ]**: 15 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-call-god-e113d11c]] — **[ Call God ]**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-camouflage-73ff87d3]] — **[** ③ **Camouflage**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-camouflage-862abce9]] — 《 **Camouflage** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-candlestick-of-infinite-un-luck-9380aebc]] — **[Candlestick of Infinite (Un)Luck]**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-capture-26dc2d00]] — 《 **Capture** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-card-of-power-b521d067]] — **[ Card of Power ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cat-claw-af3bbbb2]] — 《 **Cat Claw** 》: 6 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-caution-f31fb284]] — **Caution**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-centaur-0c0a9454]] — **[ Centaur ]**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-centauri-blood-touch-damage-4e6a8def]] — **[Centauri Blood (Touch/Damage)]**: 22 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-centaurian-874febdd]] — **[ Centaurian ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-central-region-language-m-rdan-eremire-gundar-saine-c1fcaa4f]] — **Central Region (Language = Mārdan/Eremire Gundar/Saine)**: 48 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-certain-magic-resistant-5fbca4eb]] — 《 **Certain Magic Resistant** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-certain-weapons-06979399]] — **Certain Weapons** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cestus-d77d7898]] — **Cestus**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cha-za-5ff6d0a3]] — 《 **Cha Za** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cha-za-special-holy-magic-list-33a09eff]] — **Cha Za Special Holy Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chameleon-c3e5a938]] — **[ Chameleon ]**: 6 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-changeling-3c0fcc0f]] — 《 **Changeling** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chaosland-language-native-language-7caca957]] — **Chaosland (Language = Native Language)**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-character-creation-8c17bd80]] — **Character Creation**: 5 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-character-growth-via-1d8d240c]] — **Character Growth via**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-charge-394d48d7]] — **Charge**: 19 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chariot-of-dullahan-80160667]] — **Chariot of Dullahan**: 19 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-charm-dryad-plant-spirit-eb1b916b]] — **[ Charm ] (Dryad/Plant Spirit)**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-charm-mind-5c07a05d]] — **Charm (Mind)**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-charts-01eefe96]] — Charts: 66 source-backed entries and 57 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chest-imitator-54163a7d]] — **Chest Imitator**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chief-d002d6f2]] — **Chief**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-chimera-998f04a3]] — **[ Chimera ]**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-choose-a-race-3af7b150]] — **Choose a Race**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-citizens-5f925318]] — **Citizens**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-clairvoyance-b83b168f]] — 《 **Clairvoyance** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-climate-8897f4f2]] — **Climate**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-climb-agility-257e4d03]] — **[** ④ **Climb [Agility] ]**: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-climb-agility-760972a9]] — **[** ⑥ **Climb [Agility] ]**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-climb-agility-b6da9f91]] — **[** ⑩ **Climb [Agility] ]**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cockatrice-cf109142]] — **[ Cockatrice ]**: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cold-cloak-b49236bb]] — 《 **Cold Cloak** 》: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cold-immunity-b8a118fe]] — 《 **Cold Immunity** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cold-protective-circle-92b1c5c6]] — **Cold Protective Circle**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-combat-between-monsters-2cd58d54]] — **Combat Between Monsters**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-combat-in-special-situations-565ae388]] — **Combat in Special Situations**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-combat-in-which-monsters-roll-dice-119bfda0]] — **Combat in Which Monsters Roll Dice**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-combat-options-97b58318]] — **Combat Options**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-combined-expansion-5-1-8-2-and-contraction-fa1176d4]] — **Combined Expansion 5.1.8.2 and Contraction**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-command-golem-ac91f38c]] — **[ Command Golem ]**: 12 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-common-38c99212]] — 《 **Common** 》: 10 source-backed entries and 29 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-common-adventurer-abilities-ae3f0290]] — **Common Adventurer Abilities**: 0 source-backed entries and 29 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-common-adventurer-abilities-table-150e0189]] — **Common Adventurer Abilities Table**: 57 source-backed entries and 52 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-common-cold-41dff7b6]] — **[ Common Cold ]**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-common-runes-e6f1b4a8]] — **Common Runes**: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-communicate-dragon-race-a49afae6]] — **[Communicate Dragon Race]**: 12 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-communicate-reptile-0f692750]] — **[ Communicate Reptile ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-conceal-self-3df534a2]] — **[ Conceal Self ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-consuming-mental-power-ddd16a91]] — **Consuming Mental Power**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-container-bracelet-dd661970]] — **[ Container Bracelet ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-control-imp-68a1e6e5]] — **[ Control Imp ]**: 9 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-control-sound-sylph-wind-spirit-95f42799]] — **[ Control Sound ] (Sylph/Wind Spirit)**: 8 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-control-spirit-various-lesser-spirits-06c000cd]] — **[ Control Spirit ] (Various lesser spirits)**: 20 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-control-weather-2919a1a8]] — **[ Control Weather ]**: 32 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-converting-character-data-to-monster-data-92713559]] — **Converting Character Data to Monster Data**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-corrosion-4a218600]] — 《 **Corrosion** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cotton-weaver-4912d4a6]] — **[ Cotton Weaver ]**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-counter-sense-fd478137]] — **[ Counter Sense ]**: 18 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-counter-spirit-20a24eb9]] — **[ Counter Spirit ]**: 13 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-counters-negates-7c9d681e]] — 《 **Counters (Negates)** 》: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-counters-overpowers-aa3649a6]] — 《 **Counters (Overpowers)** 》: 22 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-counterspell-c0af7e9b]] — **[ Counterspell ]**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-crack-behemoth-greater-earth-spirit-50ac61a8]] — **[ Crack ] (Behemoth/Greater Earth Spirit)**: 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-craft-dexterity-9b96f120]] — **[** ① **Craft [Dexterity] ]**: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-craftsman-skill-a6a3a3c4]] — **Craftsman Skill**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-craftsman-skill-abilities-table-92ecbc4f]] — **Craftsman Skill Abilities Table**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cranequin-crossbow-6f75290c]] — **Cranequin Crossbow**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-create-buau-zombie-56fed6f3]] — **[ Create Buau Zombie ]**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-create-device-1d3cb439]] — **[ Create Device ]**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-create-ghost-ship-spell-level-6-abf1a6a1]] — **[ Create Ghost Ship ] (Spell Level=6)**: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-create-image-39e9bed6]] — **[ Create Image ]**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-create-undead-b5bfc6c0]] — **[ Create Undead ]**: 18 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-create-zombie-e83056e9]] — **[ Create Zombie ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-creatures-069b8620]] — **Creatures** 》: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cripple-62f5699b]] — **[ Cripple ]**: 18 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-critical-1b73c9a2]] — **Critical** 》: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-critical-target-a5dde266]] — 【 **Critical Target** 】: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-critical-target-variation-2f822610]] — **Critical Target Variation**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-critical-target-variation-973b7225]] — **Critical Target Variation**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-criticals-ae852876]] — 【 **Criticals** 】: 16 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-criticals-d3b2caf3]] — 【 **Criticals?** 】: 2 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-crusher-66dfed2e]] — 《 **Crusher** 》: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-crystal-bf571b79]] — **[ Crystal ]**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-crystal-orb-of-clairvoyance-a4d0b4bc]] — **[Crystal Orb of Clairvoyance]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cure-blindness-38231248]] — **[ Cure Blindness ]**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cure-deafness-3b277e7a]] — **[ Cure Deafness ]**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cure-disease-5aaa9946]] — **[ Cure Disease ]**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cure-poison-45ad3acc]] — **[ Cure Poison ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cure-wounds-f1a1d09d]] — **[ Cure Wounds ]**: 17 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-curiosity-mind-7495d82f]] — **Curiosity (Mind)**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-currency-b0ae6a15]] — **Currency**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-curse-2ec296cc]] — **Curse**: 43 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-curse-70839266]] — 《 **Curse** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-curse-b02274c8]] — 《 **Curse** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-cyclops-ae89afe6]] — **[ Cyclops ]**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-daemon-hand-02ef3625]] — **[ Daemon Hand ]**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-2425a966]] — 《 **Damage** 》: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-945dffef]] — 《 **Damage** 》: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-checks-10f6ed58]] — **Damage Checks**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-expansion-b0dffc7b]] — 《 **Damage Expansion** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-poison-c3603113]] — **Damage Poison**: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-recovery-e58f10b8]] — **Damage Recovery**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-reduction-16a0ec41]] — **Damage Reduction**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-damage-reduction-293414cb]] — 【 **Damage Reduction** 】: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dance-macabre-9f6ee4be]] — **[ Dance Macabre ]**: 18 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dance-mind-1c960a2d]] — **Dance (Mind)**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dark-crystal-f40cbdae]] — **Dark Crystal**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dark-elf-118d9f3d]] — **[ Dark Elf ]**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dark-elf-leader-7b6fbc7e]] — **Dark Elf Leader**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dark-priest-7b31fddf]] — 【 **Dark Priest** 】: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dark-priest-skill-eb671fbc]] — 《 **Dark Priest Skill** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dark-priest-warrior-a539f900]] — **[ Dark Priest Warrior ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-darkness-45b31ac6]] — **[ Darkness ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-darkness-invisible-e1086c30]] — 《 **Darkness/Invisible** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-deafness-32d5b19c]] — **[ Deafness ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-death-cloud-f0c28f84]] — **[ Death Cloud ]**: 9 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-decrease-water-pressure-undine-water-spirit-5ea840a1]] — **[ Decrease Water Pressure ] (Undine/Water Spirit)**: 10 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-decrease-weight-abf81736]] — **[ Decrease Weight ]**: 14 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-deela-e9291b64]] — **Deela**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-deela-king-9f694b1a]] — **Deela King**: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-defense-modifier-00f697ce]] — **Defense Modifier**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-defense-points-1f4081cb]] — **Defense Points**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-defense-points-d918b7ae]] — 《 **Defense Points** 》: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-defense-power-8f5558b7]] — 【 **Defense Power** 】: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-defense-rolls-aaa4b096]] — **Defense Rolls**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-delay-staff-9e304d3c]] — **[ Delay Staff ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-delaying-an-action-7c0eeb6a]] — **Delaying an Action**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-description-67c31f6e]] — 《 **Description** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-description-83a7e2ee]] — 《 **Description** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-description-f572b569]] — 《 **Description** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-destruction-leprechaun-mind-spirit-b52ae982]] — **[ Destruction ] (Leprechaun/Mind Spirit)**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-destruction-points-226b5612]] — **Destruction Points**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-detection-f70ef6de]] — 《 **Detection** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-determine-ability-scores-c30b6040]] — **Determine Ability Scores**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dexterity-b4652d93]] — **[Dexterity] ]**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dimension-gate-8a2ea5bd]] — **[ Dimension Gate ]**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-disease-fb268401]] — 《 **Disease** 》: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-disguise-6df4377c]] — **[ Disguise ]**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-disguise-dexterity-no-equipment-restriction-a8584f3d]] — **[** ⑭ **Disguise [Dexterity] (No equipment restriction)**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-disintegrate-0df44308]] — 《 **Disintegrate** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-disintegrate-8ccf8956]] — **[ Disintegrate ]**: 12 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dispel-order-b8576ba3]] — **[ Dispel Order ]**: 12 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-10-meters-353bb5c7]] — Distance=10 meters: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-10-meters-9fcd486a]] — Distance=10 meters: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-17615566]] — 《 **Distance** 》: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-caster-01a933b5]] — Distance=Caster: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-caster-3118814d]] — Distance=Caster: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-caster-5744218a]] — Distance=Caster: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-caster-6379bf55]] — Distance=Caster: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-caster-8a925711]] — Distance=Caster: 14 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-caster-b90ec603]] — Distance=Caster: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-expansion-7637e857]] — 《 **Distance Expansion** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-touch-2220c015]] — Distance=Touch: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-distance-within-the-caster-s-view-6854323f]] — Distance=Within the caster's view: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-divination-017cd33b]] — 《 **Divination** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-divination-3f2d41a0]] — 《 **Divination** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-divine-armor-spell-level-7-9966c978]] — **[ Divine Armor ] (Spell Level=7)**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-divine-weapon-spell-level-7-274ab313]] — **[ Divine Weapon ] (Spell Level=7)**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-djinn-greater-wind-spirit-1598862f]] — **(Djinn/Greater Wind Spirit)**: 17 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-document-152a7608]] — Document: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dog-59e44dab]] — **[ Dog ]**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-door-imitator-df43a4c0]] — **Door Imitator**: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-double-sixes-and-double-ones-ecd58b85]] — **Double Sixes and Double Ones**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-doubleburg-ad86f887]] — **Doubleburg**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-b3e23f02]] — **[ Dragon ]**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-priest-de357b13]] — 【 **Dragon Priest** 】: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-priest-skill-cd88942b]] — 《 **Dragon Priest Skill** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-roar-magic-4fb3b07e]] — **Dragon Roar Magic**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-roar-magic-spell-list-e7936d2f]] — **Dragon Roar Magic Spell List**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-s-wings-d6afc9a2]] — **[ Dragon’s Wings ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dragon-tooth-18dd94e7]] — **[ Dragon Tooth ]**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dream-runner-inhaled-782fb751]] — **[ Dream Runner (Inhaled) ]**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dryad-6e04be4a]] — **[ Dryad ]**: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dryad-plant-spirit-1e12ae30]] — (Dryad/Plant Spirit): 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dullahan-ce2b0e67]] — **[ Dullahan ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dullness-532564ff]] — **Dullness**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-1-day-8486c6c9]] — Duration=1 day: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-58dfde44]] — 《 **Duration** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-contraction-1de5bd4d]] — 《 **Duration Contraction** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-expansion-b378bb26]] — 《 **Duration Expansion** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-instant-4663f255]] — Duration=Instant: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-instant-b4ba74c8]] — Duration=Instant: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-instant-e2a045d2]] — Duration=Instant: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-permanent-0c287f1e]] — Duration=Permanent: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-permanent-488647aa]] — Duration=Permanent: 15 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-duration-until-focus-ends-e30275bf]] — Duration=Until focus ends: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dwarf-597bf1bb]] — 【 **Dwarf** 】: 15 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dwarf-9ef6e16e]] — 【 **Dwarf** 】: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dwarven-7eb7f5fa]] — **[ Dwarven ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-dwarves-grassrunners-half-elves-7f73201b]] — **Dwarves, Grassrunners, Half-Elves**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-early-bird-mind-ff519271]] — **Early Bird (Mind)**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-earrings-of-interpretation-2477a7bb]] — **[ Earrings of Interpretation ]**: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-earrings-of-pooka-9f4a4b8f]] — **[ Earrings of Pooka ]**: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-earth-crystal-e314f71d]] — **Earth Crystal**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-earth-spirits-7d62b6fb]] — ⬤ **Earth Spirits**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-effect-ac022a36]] — 《 **Effect** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-effect-contraction-3dc5696c]] — 《 **Effect Contraction** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-effect-duration-dc99b0f8]] — 《 **Effect Duration** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-effect-expansion-f9341bfd]] — 《 **Effect Expansion** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-effect-start-time-38b47b70]] — 《 **Effect Start Time** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-egg-shelter-0527f81c]] — **[ Egg Shelter ]**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-elder-dragon-124cc950]] — **Elder Dragon**: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-elf-10b4f0db]] — 【 **Elf** 】: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-elf-bb2e8a6a]] — 【 **Elf** 】: 14 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-elven-5a611a48]] — **[ Elven ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-elves-357ce65c]] — **Elves**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchant-weapon-561e972a]] — **[ Enchant Weapon ]**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-355613e1]] — 《 **Enchanter** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-1b3477bd]] — Enchanter=Many: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-2b92df9a]] — Enchanter=Many: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-4033362a]] — Enchanter=Many: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-64a1a074]] — Enchanter=Many: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-b04d3100]] — Enchanter=Many: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-c913f859]] — Enchanter=Many: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-many-e81819e6]] — Enchanter=Many: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-unknown-720c4f53]] — Enchanter=Unknown: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-unknown-9d1e7b90]] — Enchanter=Unknown: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-unknown-a996db43]] — Enchanter=Unknown: 15 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-enchanter-unknown-dfd5565f]] — Enchanter=Unknown: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-energy-bolt-2c15dd96]] — **[ Energy Bolt ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ent-greater-plant-spirit-fad346e4]] — **(Ent/Greater Plant Spirit)**: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-entangling-74cd257b]] — 《 **Entangling** 》: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-0248abe0]] — **(Equipment restriction)**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-188eea26]] — **(Equipment restriction)**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-1adc3e01]] — **(Equipment restriction)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-541f1c45]] — **(Equipment restriction)**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-5f0c3926]] — **(Equipment restriction)**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-90543bbc]] — **(Equipment restriction)**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-92d06791]] — **(Equipment restriction)**: 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-9a63509d]] — **(Equipment restriction)**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-a0c1186d]] — **(Equipment restriction)**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-eaee664d]] — **(Equipment restriction)**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-f26c4967]] — **(Equipment restriction)**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-f9ffff62]] — **(Equipment restriction)**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-equipment-restriction-not-retriable-fe9dc692]] — **(Equipment restriction, not retriable)**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-eternal-child-dose-effect-make-the-person-who-took-it-037e6269]] — **[ Eternal Child (Dose) ]** Effect=Make the person who took it: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ethnoa-9a278749]] — **[ Ethnoa ]**: 23 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-evasion-modifier-8a625a8c]] — **Evasion Modifier**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-evasion-points-506d7b74]] — 《 **Evasion Points** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-evasion-speed-a04b3508]] — 【 **Evasion Speed** 】: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-06f10b5f]] — **Example:**: 5 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-090305e0]] — **Example:**: 13 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-1-4c78c76f]] — **Example 1:**: 3 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-1-879fd1db]] — **Example 1:**: 6 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-1-9e7b3642]] — **Example 1:**: 10 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-1-ddfecbb8]] — **Example 1:**: 4 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-14076d76]] — **Example:**: 13 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-158215d2]] — **Example:**: 6 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2-6d6fc467]] — **Example 2:**: 14 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2-ac87121e]] — **Example 2:**: 10 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2-d2c60537]] — **Example 2:**: 3 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2-e4f9ffa0]] — **Example 2:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2999cfac]] — **Example:**: 25 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2a7a50cd]] — **Example:**: 10 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-2aec308e]] — **Example:**: 15 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-3-817d4b36]] — **Example 3:**: 2 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-39fc6de0]] — **Example:**: 5 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-3eabb25b]] — **Example:**: 7 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-40c73552]] — **Example:**: 6 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-44dfe93e]] — **Example:**: 2 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-51290879]] — **Example:**: 1 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-5b22dfa6]] — **Example:**: 6 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-5b95d162]] — **Example:**: 2 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-5d66e0c4]] — **Example:**: 20 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-5dc077f9]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-63f408b9]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-65a72469]] — **Example:**: 11 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-69931532]] — **Example:**: 2 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-6dbfe795]] — **Example:**: 15 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-706aceec]] — **Example:**: 4 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-746eca6b]] — **Example:**: 2 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-7ad5bf15]] — **Example:**: 9 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-7dcceb2d]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-808c3b98]] — **Example:**: 8 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-8775964d]] — **Example:**: 11 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-9faba75d]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-a16f9c3e]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-a63087b2]] — **Example:**: 2 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-a6cf8c6b]] — **Example:**: 5 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-a88bbc49]] — **Example:**: 13 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-ac86c473]] — **Example:**: 7 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-b0b071be]] — **Example:**: 9 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-b18364f9]] — **Example:**: 5 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-b1db7216]] — **Example:**: 25 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-b1f6c1ee]] — **Example:**: 4 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-b4f158e8]] — **Example:**: 5 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-c7f0d763]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-cc5ecf08]] — **Example:**: 10 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-e38a0546]] — Example:: 32 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-e68e1160]] — **Example:**: 1 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-e803af1e]] — **Example:**: 9 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-ece677f6]] — **Example:**: 3 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-f2459a0e]] — **Example:**: 8 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-f4b298bd]] — **Example:**: 1 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-f7bde533]] — Example:: 13 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-example-fc8a425c]] — **Example:**: 8 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-excellent-weapons-and-armor-9754b95c]] — **Excellent Weapons and Armor**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-exorcism-b5450443]] — **[ Exorcism ]**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-expansion-51f218dd]] — 《 **Expansion** 》: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-expansion-final-score-distance-resist-negated-effect-881055be]] — Expansion=Final score, distance Resist=Negated effect: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-expansion-final-score-distance-targets-damage-certainty-resist-negated-e-fc2eff16]] — Expansion=Final score, distance, targets, damage certainty Resist=Negated effect: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-experience-points-22e20e5f]] — **Experience Points**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-explosive-bullet-f3e73d7c]] — **[ Explosive Bullet ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fae-03769df8]] — 《 **Fae** 》: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-failure-d4591f01]] — 【 **Failure!** 】: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fairy-8efaef6d]] — **[ Fairy ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fairy-cbe79c67]] — **[ Fairy ]**: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-falling-control-bd468119]] — **[ Falling Control ]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-falling-damage-8b13478f]] — **Falling Damage**: 15 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fame-face-66a1a139]] — 《 **Fame Face** 》: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-familiar-347730aa]] — **[ Familiar ]**: 44 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-farland-934cdffe]] — **Farland**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fast-finger-4aba26f7]] — **[ Fast Finger ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fatal-depth-d9c4eeb6]] — 《 **Fatal Depth** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-female-19528170]] — **Female**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-female-35f452d5]] — **Female**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fenes-895ca12e]] — 《 **Fenes** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fenrir-greater-ice-spirit-11208d3f]] — **(Fenrir/Greater Ice Spirit)**: 17 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fighter-850c0762]] — 【 **Fighter** 】: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fighter-f4e36933]] — **[ Fighter** ］: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fighter-skill-9e041413]] — 【 **Fighter Skill** 】: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fighting-monsters-8c07e5cb]] — **Fighting Monsters**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-2ca45e56]] — **Filling out the Character Sheet**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-3b3a8dbd]] — **Filling out the Character Sheet**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-46b17a0c]] — **Filling out the Character Sheet**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-6c4d22e1]] — **Filling Out the Character Sheet**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-filling-out-the-character-sheet-f66d1f2d]] — **Filling out the Character Sheet**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-final-damage-a49b85b2]] — **Final Damage**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-final-damage-bcc990c3]] — **Final Damage**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-final-score-increase-07942fc0]] — 《 **Final Score Increase** 》: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-a177f97a]] — **[** ⑯ **Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)**: 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-find-sense-trap-intelligence-no-equipment-restriction-not-retriable-c9cb15fa]] — **[** ⑮ **Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-breath-a4c85fea]] — **[ Fire Breath ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-breath-d87483d7]] — 《 **Fire Breath** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-crystal-3b128324]] — **Fire Crystal**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-giant-ca1ca9d2]] — **Fire Giant**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-immunity-0d0b1c1f]] — Fire immunity: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-immunity-3548e9bc]] — 《 **Fire Immunity** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-jack-3eda7387]] — **[ Fire Jack ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-proof-fa563339]] — **[ Fire Proof ]**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fire-spirits-ae26dfa0]] — ⬤ **Fire Spirits**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fireball-3359c3be]] — **[ Fireball ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-firebolt-salamander-fire-spirit-dda20114]] — **[ Firebolt ] (Salamander/Fire Spirit)**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-firestorm-efreet-greater-fire-spirit-d5cdb21e]] — **[ Firestorm ] (Efreet/Greater Fire Spirit)**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-first-aid-225485bf]] — **[** ① **First-Aid [-] ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-first-aid-2b215ff7]] — **[** ② **First-Aid [-] ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-first-aid-e9cb3f12]] — **First-Aid**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-flame-smasher-1fdaf9c8]] — 《 **Flame Smasher** 》: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-flesh-golem-80611560]] — **Flesh Golem**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-flight-7a2fce98]] — **[ Flight ]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-floor-imitator-03515cdd]] — **Floor Imitator**: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-flower-1494b007]] — **Flower**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-flying-carpet-e8fb3a33]] — **[ Flying Carpet ]**: 11 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-focus-f23c3f19]] — 《 **Focus** 》: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-folklore-knowledge-intelligence-da6e8faf]] — **[** ⑤ **Folklore Knowledge [Intelligence] ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-follow-agility-equipment-restriction-a84be9e0]] — **[** ⑬ **Follow [Agility] (Equipment restriction)**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-follow-agility-equipment-restriction-c35c3682]] — **[** ⑬ **Follow [Agility] (Equipment restriction)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-for-humans-and-halfelves-raised-by-humans-b57ebe43]] — **For Humans and HalfElves Raised by Humans**: 16 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-for-races-other-than-humans-0b063353]] — **For Races Other Than Humans**: 16 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-force-7401aa4a]] — **[ Force ]**: 7 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-force-explosion-ecb6d563]] — **[ Force Explosion ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-force-field-8230c85c]] — **[ Force Field ]**: 14 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-forest-giant-eac0e0f4]] — **Forest Giant**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-forger-of-colors-3b4700d4]] — **Forger of Colors**: 35 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-forging-sheath-133a8b99]] — **[ Forging Sheath ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-form-79ba5ff1]] — 《 **Form** 》: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-form-a-stone-similar-to-topaz-that-emits-a-bluish-white-light-from-insid-a8a86761]] — Form=A stone similar to topaz that emits a bluish-white light from inside Enchanter=Many: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-form-an-old-wooden-box-4a61992b]] — Form=An old wooden box: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-form-iron-jar-3e06e021]] — Form=Iron jar: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-form-iron-jar-a9c5850d]] — Form=Iron jar: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-frau-ice-spirit-53191239]] — (Frau/Ice Spirit): 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-freeze-282b19e8]] — **[ Freeze ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-frequency-c8456dcf]] — 《 **Frequency** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-frost-giant-98d97936]] — **Frost Giant**: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-full-control-spirit-various-lesser-spirits-bf9efa4d]] — **[ Full Control Spirit ] (Various lesser spirits)**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-full-defense-f1249652]] — **Full Defense**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-fungus-425ffea0]] — **[ Fungus ]**: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gale-horseshoes-8fc3902a]] — **[ Gale Horseshoes ]**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ganerd-fd3539c6]] — 《 **Ganerd** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-garrote-30511602]] — **Garrote**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gas-stalker-0ca5b7ab]] — **Gas Stalker**: 6 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gaze-ray-d40a1b1c]] — 《 **Gaze/Ray** 》: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-geas-aa69af90]] — **[ Geas ]**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gems-and-precious-metals-79c3e00b]] — **Gems and Precious Metals**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gender-a91a9c2f]] — 《 **Gender** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gender-c80f24a3]] — **[** ⑩ **Gender ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-geography-cc954da7]] — **Geography**: 29 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ghost-bed1a15a]] — **Ghost**: 23 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ghoul-6c9469ac]] — **[ Ghoul ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-27864d22]] — **[ Giant ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-2febfa84]] — **[ Giant ]**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-ant-4d9935db]] — **Giant Ant**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-ant-infant-688353d9]] — **Giant Ant Infant**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-ant-soldier-5888197a]] — **Giant Ant Soldier**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-bat-a041fee0]] — **Giant Bat**: 12 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-centipede-83c000d0]] — **[ Giant Centipede ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-crab-4ea29a62]] — **[ Giant Crab ]**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-lizard-56f51d5b]] — **[ Giant Lizard ]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-mantis-5b973c53]] — **[ Giant Mantis ]**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-octopus-6a8a505c]] — **Giant Octopus**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-rat-de19dca5]] — **[ Giant Rat ]**: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-scorpion-20aa3704]] — **[ Giant Scorpion ]**: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-seal-2831f22d]] — **[ Giant Seal ]**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-slug-b825f011]] — **[ Giant Slug ]**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-spider-6d022ace]] — **Giant Spider**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-toad-10249abd]] — **Giant Toad**: 23 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-wasp-f23b91cd]] — **[ Giant Wasp ]**: 16 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-giant-webspinner-ffdc3cf5]] — **Giant Webspinner**: 18 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gizmo-889d776c]] — **Gizmo**: 8 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gnome-c68d2b5f]] — **[ Gnome ]**: 18 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gnome-earth-spirit-187b3bf5]] — **(Gnome/Earth Spirit)**: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gnome-earth-spirit-26012706]] — **(Gnome/Earth Spirit)**: 8 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gnome-earth-spirit-5cc62d5a]] — (Gnome/Earth Spirit): 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gnome-earth-spirit-86ccfc4f]] — **(Gnome/Earth Spirit)**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-goblin-4c11ea52]] — **[ Goblin ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-goblin-f5899020]] — **[ Goblin ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-goblin-lord-1c267f2b]] — **Goblin Lord**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-goblin-shaman-4dd812bc]] — **Goblin Shaman**: 19 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-golden-wanderer-459b717f]] — **Golden Wanderer**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-golem-f860fa77]] — **[ Golem ]**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gorilla-a3524037]] — **Gorilla**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-grapple-686b6ae1]] — **Grapple**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-grassrunner-50362871]] — 【 **Grassrunner** 】: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-grassrunner-6c36b51b]] — 【 **Grassrunner** 】: 15 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-greater-daemons-doppelganger-35a3c51d]] — **[ Greater Daemons ] Doppelganger**: 19 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-griffon-a69eab84]] — **[ Griffon ]**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-grizzly-c44fdbe0]] — **Grizzly**: 21 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guard-glove-d125fa2f]] — **[ Guard Glove ]**: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guard-trading-spell-level-5-0ff6e24e]] — **[ Guard Trading ] (Spell Level=5)**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guide-to-forcelia-alecrast-ff0cac26]] — Guide to Forcelia & Alecrast: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guide-to-forcelia-alecrast-ffedfb4e]] — Guide to Forcelia & Alecrast: 347 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guide-to-forcelia-and-alecrast-9dfaa7b4]] — **Guide to Forcelia and Alecrast**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guidelines-for-adventurer-age-and-ability-score-changes-ee6b27fb]] — **Guidelines for Adventurer Age and Ability Score Changes**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-guilds-fcc5976f]] — **Guilds**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-gundar-7c23438f]] — **[ Gundar ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-3d07b370]] — 《 **Habitat** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-deserts-meadows-eb34c57b]] — Habitat=Deserts, meadows: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-rock-crevices-and-caves-in-reef-areas-languages-none-perception-b402c5d8]] — Habitat=Rock crevices and caves in reef areas Languages=None Perception=Five senses: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-ruins-e333d9c9]] — Habitat=Ruins: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-ruins-f12de671]] — Habitat=Ruins: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-seas-d2466f2c]] — Habitat=Seas: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-swamps-a3700e3e]] — Habitat=Swamps: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-habitat-various-b5849673]] — Habitat=Various: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-halberd-fa597fd1]] — **Halberd**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-half-elf-6a4ea73c]] — 【 **Half-Elf** 】: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-half-elf-8c4d87b3]] — 【 **Half-Elf** 】: 22 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-handed-weapon-2ec10913]] — **Handed Weapon**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-handling-fractions-837dcd5e]] — **Handling fractions**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-handling-monster-special-abilities-ef5bf51d]] — **Handling Monster Special Abilities**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-handling-resistible-magic-5-1-4-7-and-multiple-targets-99d3b24d]] — **Handling Resistible Magic 5.1.4.7 and Multiple Targets**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-handling-spirit-walls-29c6b850]] — **Handling Spirit Walls**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hands-and-attack-07564296]] — **Hands and Attack**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hard-lock-357b49f1]] — **[ Hard Lock ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-harpy-3efae8b4]] — **[ Harpy ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-harpy-6067abeb]] — **[ Harpy ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-haste-bb2c634b]] — **[ Haste ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-haunt-76be1aa0]] — **[ Haunt ]**: 20 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-head-aim-7fc849dd]] — **Head Aim**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-headless-horse-808dbb2f]] — **Headless Horse**: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-healing-345fa458]] — **Healing**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-heat-metal-6f55fe58]] — **[ Heat Metal ]**: 17 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-heat-protective-circle-56c56abc]] — **Heat Protective Circle**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hecatoncheir-405935cf]] — **[ Hecatoncheir ]**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-henchman-5a2ae3dc]] — **Henchman**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-high-ancient-a9344a94]] — 《 **High Ancient** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-high-priest-dc8ee961]] — **High Priest**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-high-quality-weapons-and-armor-fc18953d]] — **High-Quality Weapons and Armor**: 24 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hill-giant-7c4c063d]] — **Hill Giant**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hippogriff-6f875f63]] — **[ Hippogriff ]**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hit-checks-5b6f59c1]] — **Hit Checks**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hit-evasion-checks-a9e574df]] — **Hit (Evasion) Checks**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hobgoblin-32f2a4b5]] — **[ Hobgoblin ]**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-holding-weapons-in-both-hands-df8dd9a4]] — **Holding Weapons in Both Hands**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-holy-light-397eea45]] — **[ Holy Light ]**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-holy-magic-and-the-priest-skill-d9781d3e]] — **Holy Magic and the Priest Skill**: 23 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-holy-weapon-020eb2fe]] — **[ Holy Weapon ]**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-homunculus-07163b35]] — **[ Homunculus ]**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-horse-4d97c1bf]] — **[ Horse ]**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-create-general-skills-d6302368]] — **How to Create General Skills**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-make-a-difficulty-check-6a6a2fa1]] — **How to Make a Difficulty Check**: 20 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-read-illness-12-2-2-1-details-95d64c1e]] — **How to Read Illness 12.2.2.1 Details**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-read-poison-12-2-1-3-details-5353f062]] — **How to Read Poison 12.2.1.3 Details**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-read-the-monster-catalog-9f608248]] — **How to Read the Monster Catalog**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-ability-scores-f56ef475]] — **How to Use Experience Points: Increasing Ability Scores**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-use-experience-points-increasing-skill-levels-cf71f2a4]] — **How to Use Experience Points: Increasing Skill Levels**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-how-to-use-magic-561eab07]] — **How to Use Magic**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-human-9a77af4e]] — 【 **Human** 】: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-humans-4b093a92]] — 《 **Humans** 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-humans-5b3748e2]] — **Humans**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-humbaba-6089c5e9]] — **[ Humbaba ]**: 21 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-humbaba-curse-19766a26]] — **[ Humbaba Curse ]**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hunter-skill-abilities-table-047e3d75]] — **Hunter Skill Abilities Table**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hunter-skill-f7c22809]] — **Hunter Skill**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hydra-ac803a3d]] — **[ Hydra ]**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hypnopython-6ad04c5c]] — **Hypnopython**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-hypnotism-b520ebac]] — 《 **Hypnotism** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ice-adaptation-0a7c32d9]] — 《 **Ice Adaptation** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ice-blaze-wand-c3918a31]] — **[ Ice Blaze Wand ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ice-crystal-92e27ae0]] — **Ice Crystal**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ice-f536868c]] — **[ Ice ]**: 7 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ice-spirits-a363da7c]] — ⬤ **Ice Spirits**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ice-storm-fenrir-greater-ice-spirit-82c9fe7c]] — **[ Ice Storm ] (Fenrir/Greater Ice Spirit)**: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-if-a-weapon-or-shield-s-required-strength-exceeds-your-strength-288de858]] — **If a Weapon or Shield’s Required Strength Exceeds Your Strength**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-if-armor-s-required-strength-exceeds-your-strength-39ed5fe7]] — **If Armor’s Required Strength Exceeds Your Strength**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-if-the-target-does-5-1-4-8-not-resist-ed7f51be]] — **If the Target Does 5.1.4.8 Not Resist**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-illusion-d13c5158]] — **[ Illusion ]**: 11 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-illusionary-beast-5e8724c6]] — **Illusionary Beast**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-illusionary-beast-84d5007a]] — **[ Illusionary Beast ]**: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-imago-2162bddc]] — **Imago**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-imitator-02b025a2]] — **[ Imitator ]**: 21 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-imp-1b254977]] — **[ Imp ]**: 15 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-impish-735df64c]] — **[ Impish ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-impulse-f2ebc153]] — 《 **Impulse** 》: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-increase-skills-9b38a776]] — **[** ⑬ **Increase Skills ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-increase-weight-cd646dff]] — **[ Increase Weight ]**: 14 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-increasing-general-skills-bf29e598]] — **Increasing General Skills**: 16 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-infant-6ed822af]] — **Infant**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-infection-power-d0edcd3a]] — 《 **Infection Power** 》: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-infravision-89770c21]] — 《 **Infravision** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intellect-25c756f3]] — 《 **Intellect** 》: 46 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intellect-high-reaction-adversarial-07b2097e]] — Intellect=High Reaction=Adversarial: 31 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intellect-human-afbe8f7a]] — Intellect=Human: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intellectuals-clergy-traveling-merchants-8fc6cf88]] — **Intellectuals/Clergy/ Traveling Merchants**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intelligence-00325d08]] — **[Intelligence] ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intelligence-04070c91]] — **[Intelligence] ]**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intelligence-3372d9e8]] — **[Intelligence] ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intelligence-41c6ea48]] — **[Intelligence] ]**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intelligence-aba3e736]] — 【 **Intelligence** 】: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-intensity-healing-score-ac7b789b]] — **Intensity/ Healing Score** 》: 29 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-iron-b34fabb7]] — **[ Iron ]**: 9 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-iron-corrosion-9e5c0c8b]] — 《 **Iron Corrosion** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-iron-golem-ef916387]] — **Iron Golem**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-iron-stomach-3b78a734]] — **[ Iron Stomach ]**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-island-of-damned-419d5724]] — **Island of Damned**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-jack-o-lantern-1a53c110]] — **[ Jack-O-Lantern ]**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-jihad-spell-level-10-c139099f]] — **[ Jihad ] (Spell Level=10)**: 13 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-jumping-boots-ddd653f0]] — **[ Jumping Boots ]**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kaleidoscope-injected-or-dose-2f8ceef3]] — **[Kaleidoscope (Injected or Dose)]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kardis-wicked-god-624a9d13]] — 《 **Kardis (Wicked God)** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-keen-perception-airborne-fdb10037]] — 《 **Keen Perception/Airborne** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-killer-creeper-1de81ee3]] — **[ Killer Creeper ]**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-killer-octopus-7368de9d]] — **Killer Octopus**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kindle-e881a01e]] — **[ Kindle ]**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kingdoms-8fb3f515]] — **Kingdoms**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kings-29f70bb1]] — **Kings**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-knight-bc72f88c]] — **Knight**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-knight-leader-6c641762]] — **Knight Leader**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-03f3e723]] — **(Kraken/Greater Water Spirit)**: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-kraken-greater-water-spirit-bf5f33dd]] — **(Kraken/Greater Water Spirit)**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lamia-6abc1403]] — **[ Lamia ]**: 19 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lance-174d0e6e]] — **Lance**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-language-eastern-m-rdan-f0b4f8ec]] — **(Language = Eastern/Mārdan)**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-24ee4747]] — 《 **Languages** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-60f25ae8]] — **Languages**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-95de0838]] — **(Languages = ?)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-intelligence-cc5b109e]] — **[** ② **Languages [Intelligence]]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-low-ancient-perception-five-senses-darkvision-999139d6]] — Languages=Low ancient Perception=Five senses (Darkvision): 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-none-7b4975cf]] — Languages=None: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-none-f1ab184d]] — Languages=None: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-none-perception-magic-047134c2]] — Languages=None Perception=Magic: 25 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-languages-those-previous-perception-pseudo-37541723]] — Languages=Those previous Perception=Pseudo: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-larva-6f31c131]] — **Larva**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lead-staff-2e04fbf8]] — **[ Lead Staff ]**: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-leader-36213a3c]] — **Leader**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-learning-unknown-languages-03ad2919]] — **Learning Unknown Languages**: 13 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-leg-aim-68c77e3d]] — **Leg Aim**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-legend-spell-level-7-a28d5902]] — **[ Legend ] (Spell Level=7)**: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-leprechaun-57d4a4ad]] — **[ Leprechaun ]**: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-4aff50f0]] — **(Leprechaun/Mind Spirit)**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-leprechaun-mind-spirit-af03a682]] — **(Leprechaun/Mind Spirit)**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lesser-daemon-grunel-78eb18c5]] — **[ Lesser Daemon ] Grunel**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lesser-dragon-38ed48be]] — **Lesser Dragon**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lesser-vampire-7485808b]] — **Lesser Vampire**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-levitation-e8806d16]] — **[ Levitation ]**: 9 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-life-force-81cceb07]] — 【 **Life Force** 】: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-life-point-regenerate-610d5f0e]] — 《 **Life Point Regenerate** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-life-points-resistance-6a10b224]] — 《 **Life Points/Resistance** 》: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-light-7cb55d80]] — **[ Light ]**: 11 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-light-crystal-5fd6c2da]] — **Light Crystal**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lightning-b9dd9cba]] — **[ Lightning ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lightning-bind-162804c1]] — **[ Lightning Bind ]**: 15 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lightning-crystal-9db75fee]] — **Lightning Crystal**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-linkage-ring-4da97900]] — **[ Linkage Ring ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lion-e4fa9769]] — **[ Lion ]**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-list-of-magical-items-1ff32dc5]] — **List of Magical Items**: 0 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-living-doll-injected-magic-61a6f439]] — **[Living Doll (Injected/Magic)]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lizardman-655fcdab]] — **[ Lizardman ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lizardman-84317a1a]] — **[ Lizardman ]**: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-location-d9b11e6e]] — **[ Location ]**: 12 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lock-a6d3f40b]] — **[ Lock ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lockpicking-dexterity-no-equipment-restriction-not-retriable-5bc69a78]] — **[** ② **Lockpicking [Dexterity]] (No equipment restriction, not retriable)**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-long-distance-modifiers-30a6ef36]] — **Long Distance Modifiers**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-long-jump-high-jump-agility-0b094fba]] — **[** ⑤ **Long Jump/High Jump [Agility] ]**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-long-jump-high-jump-agility-equipment-restriction-b70f3cac]] — **[** ⑫ **Long Jump/High Jump [Agility] ] (Equipment restriction)**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-loss-of-ability-scores-and-its-impact-ddce8cf1]] — **Loss of Ability Scores and Its Impact**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lost-951dc05d]] — 《 **Lost** 》: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-love-passion-inhaled-dose-magic-mind-6222ae72]] — **[ Love Passion (Inhaled, Dose/Magic, Mind) ]**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-low-ancient-557fd180]] — 《 **Low Ancient** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-low-ancient-6babfcb0]] — 《 **Low Ancient** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lucerne-hammer-090f70e8]] — **Lucerne Hammer**: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-luck-spell-level-1-1f4996f6]] — **[ Luck ] (Spell Level=1)**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lullaby-mind-106d8941]] — **Lullaby (Mind)**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lunatic-dance-spell-level-5-e3830ced]] — **[ Lunatic Dance ] (Spell Level=5)**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lunatic-seed-spell-level-4-7b92f103]] — **[ Lunatic Seed ] (Spell Level=4)**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lycanthrope-e617dead]] — **[ Lycanthrope ]**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-lycanthropy-fa3320f9]] — **[ Lycanthropy ]**: 14 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-m-rdan-00659c84]] — **[ Mārdan ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mad-spirit-of-life-f1924047]] — **[ Mad Spirit of Life ]**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-madness-wicked-god-aaedbf49]] — **Madness (Wicked God)**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-0891e01f]] — **Magic** 》: 2 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-acceptor-c8ea8b89]] — 《 **Magic Acceptor** 》: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-armor-1-50e5adbe]] — 《 **Magic Armor (+1)** 》: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-armor-1-f048e79e]] — 《 **Magic Armor (+1)** 》: 5 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-armor-2-15072687]] — 《 **Magic Armor (+2)** 》: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-armor-2-7daa5812]] — 《 **Magic Armor (+2)** 》: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-armor-3-1a0ead92]] — 《 **Magic Armor (+3)** 》: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-armor-3-a4e0479e]] — 《 **Magic Armor (+3)** 》: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-contraction-f760c22a]] — **Magic Contraction**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-crystal-a0297957]] — **Magic Crystal**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-d2094049]] — 《 **Magic** 》: 2 source-backed entries and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-expansion-d1a31d7e]] — **Magic Expansion**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-list-0428eaa5]] — **Magic List**: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-on-monsters-0abb1468]] — **Magic on Monsters**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-power-decrease-ef366dd3]] — 《 **Magic Power Decrease** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-protection-60368b67]] — **[ Magic Protection ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-reflection-06001790]] — **[ Magic Reflection ]**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-shield-5e13f52a]] — 《 **Magic Shield** 》: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-sword-1-4c53e5ca]] — 《 **Magic Sword (+1)** 》: 8 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-sword-2-8ad539a1]] — 《 **Magic Sword (+2)** 》: 7 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-sword-3-198fa76b]] — 《 **Magic Sword (+3)** 》: 7 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magic-types-c503f59c]] — **Magic Types**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-armor-5b94681b]] — 【 **Magical Armor** 】: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-beasts-928039a4]] — **Magical Beasts** 》: 24 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-catalyst-fcb8e9e1]] — 《 **Magical Catalyst** 》: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-creatures-c3a8bb99]] — 《 **Magical Creatures** 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-item-list-b44a80fa]] — **Magical Item List**: 0 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-items-9cd2e978]] — **Magical Items**: 11 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-recovery-263e2054]] — **Magical Recovery**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-recovery-d17628da]] — 《 **Magical Recovery** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-shields-16760117]] — 【 **Magical Shields** 】: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-weapons-and-armor-dfc5816f]] — **Magical Weapons and Armor**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-magical-weapons-b3639db2]] — 【 **Magical Weapons** 】: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-main-gauche-sword-breaker-0e6baf4a]] — **Main-gauche/Sword Breaker**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-maintain-life-points-5ef4142d]] — **Maintain Life Points** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-maintain-mental-points-755688a8]] — **Maintain Mental Points** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-male-a77fc9ba]] — **Male**: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-male-b5ba5d0e]] — **Male**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mandrake-268c184c]] — **[ Mandrake ]**: 19 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-manticore-bd4237bd]] — **[ Manticore ]**: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-map-creation-intelligence-no-equipment-restriction-not-retriable-5823c8ab]] — **[** ⑨ **Map Creation [Intelligence]] (No equipment restriction, not retriable)**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-march-mind-99d111ca]] — **March (Mind)**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-marfa-ea9bd277]] — 《 **Marfa** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-marfa-special-holy-magic-list-de8904de]] — **Marfa Special Holy Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-marshman-2beb9ce2]] — **[ Marshman ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mask-of-lady-76759a59]] — **[ Mask of Lady ]**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mask-of-scale-d42ad482]] — **[ Mask of Scale ]**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-master-mummy-6ecf18f7]] — **Master Mummy**: 17 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-maximum-range-1b669409]] — **Maximum Range**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-maze-woods-ent-greater-plant-spirit-f2920575]] — **[ Maze Woods ] (Ent/Greater Plant Spirit)**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-medicines-intelligence-c8538660]] — **[** ⑦ **Medicines [Intelligence]]**: 13 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-medusa-93a29598]] — **[ Medusa ]**: 25 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-medusa-eyes-dose-magic-ee9610c1]] — **[Medusa Eyes (Dose/Magic)]**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-memory-robber-60cbab5f]] — **[ Memory Robber ]**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mental-attack-bdbb4dd2]] — **[ Mental Attack ]**: 13 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mental-attack-immunity-0418098e]] — 《 **Mental Attack Immunity** 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mental-points-resistance-18-14-7-2ce0620b]] — Mental Points/Resistance=18/14 (7): 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mental-points-resistance-32-26-19-9eba16a8]] — Mental Points/Resistance=32/26 (19): 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mental-points-resistance-d103d144]] — 《 **Mental Points/Resistance** 》: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mental-power-d50ee961]] — 【 **Mental Power** 】: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-merchant-s-license-74a0b8a9]] — **Merchant's License**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-merchant-skill-07d81569]] — **Merchant Skill**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-merchant-skill-abilities-table-0aff6c50]] — **Merchant Skill Abilities Table**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-merman-aa295163]] — **[ Merman ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-merman-leader-d77a9515]] — **Merman Leader**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mesmerize-c87a8a54]] — **[ Mesmerize ]**: 9 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-meteor-strike-b742e3ae]] — **[ Meteor Strike ]**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-midnight-scream-touch-mind-b8a08c55]] — **[Midnight Scream (Touch/Mind)]**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mind-a18b0dac]] — 《 **Mind** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mind-spirits-986a571a]] — ⬤ **Mind Spirits**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-minotaur-01cff879]] — **[ Minotaur ]**: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-minotaur-93509cad]] — **[ Minotaur ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mirleaf-wicked-god-92cdc839]] — 《 **Mirleaf (Wicked God)** 》: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mirror-of-knowledge-752828a6]] — **[ Mirror of Knowledge ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mirror-of-truth-3f078047]] — **[ Mirror of Truth ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-missile-protection-sylph-wind-spirit-8c74390f]] — **[ Missile Protection ] (Sylph/Wind Spirit)**: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-misty-sword-82d1299d]] — 《 **Misty Sword** 》: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mithril-golem-68e76465]] — **Mithril Golem**: 13 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-money-6d1b38ad]] — **[** ⑨ **Money ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-check-intelligence-not-retriable-9f7203eb]] — **[** ① **Monster Check [Intelligence]] (Not retriable)**: 14 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-death-check-36deb573]] — **Monster Death Check**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-language-ability-1cd19a77]] — **Monster Language Ability**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-1-0fce0a64]] — Monster Level=1: 12 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-1-a8f1bac1]] — Monster Level=1: 27 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-1-bf9a217c]] — Monster Level=1: 1 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-1-fd404453]] — Monster Level=1: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-12-60fedeb7]] — Monster Level=12: 3 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-2-79b80956]] — Monster Level=2: 10 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-2-b07e09fe]] — Monster Level=2: 10 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-2-rarity-9-15cdf4b3]] — Monster Level=2 Rarity=9: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-3b2329cc]] — Monster Level=3: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-57626592]] — Monster Level=3: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-916cb297]] — Monster Level=3: 12 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-98c3d489]] — Monster Level=3: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-e0a19b74]] — Monster Level=3: 22 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-eb313c6e]] — Monster Level=3: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-3-f831e9d1]] — Monster Level=3: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-31139938]] — Monster Level=4: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-3f035ac2]] — Monster Level=4: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-7927cda7]] — Monster Level=4: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-8a49c054]] — Monster Level=4: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-914c4305]] — Monster Level=4: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-914d1c2f]] — Monster Level=4: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-b06f96a8]] — Monster Level=4: 22 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-c530d401]] — Monster Level=4: 36 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-c8a36cde]] — Monster Level=4: 15 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-d8ea9eee]] — Monster Level=4: 13 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-fa5f132b]] — Monster Level=4: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-4-rarity-9-agility-16-a9f5c6ca]] — Monster Level=4 Rarity=9 Agility=16: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-5-345e8222]] — Monster Level=5: 3 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-5-4ada51d1]] — Monster Level=5: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-5-fadf606c]] — Monster Level=5: 19 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-6-e4528ef7]] — Monster Level=6: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-7-6841f496]] — Monster Level=7: 25 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-8-3463119f]] — Monster Level=8: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-8-58ce4ecc]] — Monster Level=8: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-8-b2b963da]] — Monster Level=8: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-8-bf6bea90]] — Monster Level=8: 2 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-9-5488b248]] — Monster Level=9: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-9-801e61f7]] — Monster Level=9: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-and-adventurer-level-75047d9a]] — **Monster Level and Adventurer Level**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-level-dfd1de65]] — 《 **Monster Level** 》: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-magic-power-832d1c2e]] — **Monster Magic Power**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-monster-resistance-efe6826b]] — **Monster Resistance**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-moonlight-drone-dose-magic-b57771b0]] — **[Moonlight Drone (Dose/Magic)]**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-morale-mind-c991ce70]] — **Morale (Mind)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mow-down-0e735964]] — **Mow Down**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mutant-big-ape-def15e93]] — **Mutant Big Ape**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mutant-monster-78da9d4e]] — **[ Mutant Monster ]**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-mute-sylph-wind-spirit-eda9602f]] — **[ Mute ] (Sylph/Wind Spirit)**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-myrii-46c1e4f6]] — 《 **Myrii** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-myrii-special-holy-magic-list-482fca4b]] — **Myrii Special Holy Magic List**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-name-06e7b62f]] — 《 **Name** 》: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-natural-recovery-b5a45cfc]] — **Natural Recovery**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-negotiation-mental-power-6d3edc09]] — **[** ② **Negotiation [Mental Power]]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-negotiations-with-adventurers-24beca0c]] — **Negotiations With Adventurers**: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-neutralize-elemental-various-greater-spirits-65ff0d8f]] — **[ Neutralize Elemental ] (Various greater spirits)**: 18 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-night-goggles-57f5c898]] — **[ Night Goggles ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-nightmare-incubus-succubus-dream-spirit-3e693d04]] — **[ Nightmare ] (Incubus, Succubus/Dream Spirit)**: 17 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-7e1bf079]] — **(No equipment restriction)**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-9eda388f]] — **(No equipment restriction)**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-cc3f4cfa]] — **(No equipment restriction)**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-e55cf824]] — **(No equipment restriction)**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-2cbb2566]] — **(No equipment restriction, not retriable)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-5f52d24f]] — **(No equipment restriction, not retriable)**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-95feab42]] — **(No equipment restriction, not retriable)**: 10 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-9c72d196]] — **(No equipment restriction, not retriable)**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-no-equipment-restriction-not-retriable-c42b8b35]] — **(No equipment restriction, not retriable)**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-noble-8b516e29]] — **Noble**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-nobles-knights-ae4a7df8]] — **Nobles/Knights**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-non-metal-or-ring-mail-23eaf0cb]] — **Non-metal or ring mail**: 8 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-non-metal-or-ring-mail-6add1f71]] — **Non-metal or ring mail**: 6 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-non-metal-or-ring-mail-dab3eab8]] — **Non-metal or ring mail**: 5 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-non-removable-2ba92ca2]] — 《 **Non-removable** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-normal-languages-99f05197]] — 《 **Normal Languages** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-normal-languages-and-runes-e7f5a27f]] — **Normal Languages and Runes**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-normal-languages-of-forcelia-9c5524f5]] — **Normal Languages of Forcelia**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-normal-man-78618c62]] — **[ Normal Man ]**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-normal-soldier-18a9d93e]] — **Normal Soldier**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-normal-weapon-immunity-ae7f2e00]] — 《 **Normal Weapon Immunity** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-nostalgia-mind-47f168e9]] — **Nostalgia (Mind)**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-not-retriable-4d9d51dd]] — **not retriable)**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-not-retriable-71c10914]] — **(Not retriable)**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-not-retriable-c0d3ecc6]] — **(Not retriable)**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-not-retriable-c5fbf141]] — **(Not retriable)**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcement-95f9f128]] — **NPC and Monster Action Announcement**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-npc-and-monster-action-announcements-961f4dc4]] — **NPC and Monster Action Announcements**: 15 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-number-8673b35c]] — 《 **Number** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-number-of-projectile-shots-6ee313a6]] — **Number of Projectile Shots**: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-oak-b1c19f44]] — **Oak**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-oak-f0d09a16]] — **[ Oak ]**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-obsidian-dog-a0e4de36]] — **[ Obsidian Dog ]**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-octopus-ec9deafe]] — **[ Octopus ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ogre-d6a8982a]] — **[ Ogre ]**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-old-man-liar-punisher-f91c09f8]] — **[ Old Man Liar Punisher ]**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-one-handed-and-twohanded-weapons-d61a2361]] — **One-Handed and TwoHanded Weapons**: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-oran-32ebd420]] — **Oran**: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-order-of-action-announcements-296de302]] — **Order of Action Announcements**: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-origin-246bdea6]] — **[** ⑥ **Origin ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-other-985ee8e5]] — 《 **Other** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-other-b4918d8b]] — 《 **Other** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-other-sections-506b51ba]] — **[** ⑯ **Other Sections ]**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-other-spirits-81a8d7e6]] — ⬤ **Other Spirits**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-paper-9c4b51fb]] — **[ Paper ]**: 8 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-paralysis-poison-12c37f2b]] — **Paralysis Poison**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-paralyze-e619444b]] — **[ Paralyze ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-parasitism-65efbea9]] — 《 **Parasitism** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-parry-parry-7d5ad0c3]] — **[ Parry Parry ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-part-1-player-section-b34185b2]] — **Part 1 Player Section**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-part-2-game-master-section-2d698dd1]] — **Part 2 Game Master Section**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-part-3-optional-rules-dc261e0e]] — **Part 3 Optional Rules**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-partial-dragon-ed7e74eb]] — **[ Partial Dragon ]**: 11 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-peace-mind-3a61c35e]] — **Peace (Mind)**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pegasus-3ac26e87]] — **[ Pegasus ]**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-34b337a3]] — 《 **Perception** 》: 27 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-c7fd651a]] — Perception=Five senses: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-darkvision-1a1b1e14]] — Perception=Five senses (Darkvision): 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-darkvision-3963e24a]] — Perception=Five senses (Darkvision): 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-darkvision-e9aa6729]] — Perception=Five senses (Darkvision): 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-illumination-4b229eb2]] — Perception=Five senses (Illumination): 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-illumination-ddb4b62b]] — Perception=Five senses (Illumination): 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-five-senses-sonar-b2c89027]] — Perception=Five senses (sonar): 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-pseudo-0e3d9c58]] — Perception=Pseudo: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perception-pseudo-bc682d78]] — Perception=Pseudo: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-perfect-cancellation-2f28504a]] — **[ Perfect Cancellation ]**: 11 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-petrification-ae937454]] — **[ Petrification ]**: 12 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-phalaris-special-dark-magic-list-f91658df]] — **Phalaris Special Dark Magic List**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-phalaris-wicked-god-c72eb79a]] — 《 **Phalaris (Wicked God)** 》: 22 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-phantom-c6e4c343]] — **Phantom**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pharis-c9faab54]] — 《 **Pharis** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pharis-special-holy-magic-list-sense-evil-spell-level-1-b626ea15]] — **Pharis Special Holy Magic List [ Sense Evil ] (Spell Level=1)**: 15 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-physical-ability-1e81aa5d]] — 《 **Physical Ability** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-physical-attack-immunity-40a06366]] — 《 **Physical Attack Immunity** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-physical-enchant-73f8f203]] — **[ Physical Enchant ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pick-a-weapon-up-off-the-ground-and-ready-it-c00d914e]] — **Pick a Weapon Up off the Ground and Ready It**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-plague-3051216b]] — **[ Plague ]**: 12 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-plant-command-wand-ad3614b1]] — **[ Plant Command Wand ]**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-plant-shell-ent-greater-plant-spirit-d4556b96]] — **[ Plant Shell ] (Ent/Greater Plant Spirit)**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-plant-spirits-a2d30ff0]] — ⬤ **Plant Spirits**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-plants-617cfdac]] — **Plants**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-plants-e34e1b13]] — 《 **Plants** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-play-instrument-dexterity-bcb9443c]] — **[** ② **Play Instrument [Dexterity]]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-player-action-announcements-a3f3fb07]] — **Player Action Announcements**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-player-name-fb739d1b]] — **[** ① **Player Name ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-poison-23df673f]] — **[ Poison ]**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-poison-df22096c]] — 《 **Poison** 》: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-poison-toad-e1c88fb0]] — **Poison Toad**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-poison-treatment-12-2-1-1-and-detox-methods-0b6ee613]] — **Poison Treatment 12.2.1.1 and Detox Methods**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pole-ax-7d7d4d65]] — **Pole Ax**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-polymorph-10302789]] — **[ Polymorph ]**: 14 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pooka-edf70ac6]] — **[ Pooka ]**: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-possess-782c8192]] — 《 **Possess** 》: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-potion-of-power-ad7f648c]] — **[ Potion of Power ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-power-link-3547f73d]] — **[ Power Link ]**: 18 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-power-wand-5f4e4806]] — **[ Power Wand ]**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-powers-29c88c52]] — 《 **Powers** 》: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-pre-processing-dexterity-3f7255f9]] — **[** ⑨ **Pre-processing [Dexterity]]**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-preservation-2d9f2428]] — **[ Preservation ]**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-preserve-sound-sylph-wind-spirit-25e93762]] — **[ Preserve Sound ] (Sylph/Wind Spirit)**: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-price-calculation-deb8ea6c]] — **Price Calculation**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-priest-384884f5]] — **Priest**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-priest-6cbf8a5b]] — 【 **Priest** 】: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-priest-skill-7b24bf0c]] — 《 **Priest Skill** 》: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-procedure-for-casting-5-1-4-3-non-resistible-magic-8e0b9ef7]] — **Procedure for Casting 5.1.4.3 Non-resistible Magic**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-procedure-when-a-5-1-4-5-monster-casts-resistible-magic-on-an-adventurer-7444f752]] — **Procedure When a 5.1.4.5 Monster Casts Resistible Magic on an Adventurer**: 15 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-procedure-when-an-5-1-4-4-adventurer-casts-resistible-magic-on-a-monster-7b453688]] — **Procedure When an 5.1.4.4 Adventurer Casts Resistible Magic on a Monster**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-procedure-when-an-5-1-4-6-adventurer-casts-resistible-magic-on-an-advent-b5bd8bc2]] — **Procedure When an 5.1.4.6 Adventurer Casts Resistible Magic on an Adventurer**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-projectile-bonus-damage-24f4be26]] — **Projectile Bonus Damage**: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-projectile-range-extension-adfe5921]] — **Projectile Range Extension**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-projectiles-0dd1e5b3]] — **Projectiles**: 2 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-protection-dea6b645]] — **[ Protection ]**: 6 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-protective-circle-3095b63f]] — **[ Protective Circle ]**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-puppet-golem-188d4bb9]] — **[ Puppet Golem ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-purchase-equipment-769bcdde]] — **[** ⑮ **Purchase Equipment]**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-purchasing-other-equipment-2d58f599]] — **Purchasing Other Equipment**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-purification-undine-water-spirit-77fbc6da]] — **[ Purification ] (Undine/Water Spirit)**: 11 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-python-6a5289fc]] — **Python**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-quest-6f8bc78d]] — **[ Quest ]**: 19 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-quickness-ace63dcc]] — **Quickness**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-quickness-ring-11a4bdc3]] — **[ Quickness Ring ]**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-race-083ea896]] — **[** ② **Race ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-racial-83c9ea2c]] — 《 **Racial** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ragnakang-e472e0f3]] — **Ragnakang**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rahda-89960b67]] — 《 **Rahda** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rahda-special-holy-magic-list-inspiration-spell-level-3-fbe88b33]] — **Rahda Special Holy Magic List [ Inspiration ] (Spell Level=3)**: 7 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ram-fc891b72]] — **Ram**: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ranger-a411df98]] — 【 **Ranger** 】: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ranger-e622c794]] — **[ Ranger ]**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ranger-skill-1c026846]] — 【 **Ranger Skill** 】: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ranger-skill-90fea5c8]] — **Ranger Skill**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-10-1ea6234a]] — Rarity=10: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-11-54e37223]] — Rarity=11: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-12-4eb1169a]] — Rarity=12: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-12-b85c0d6c]] — Rarity=12: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-12-c3ff5fcc]] — Rarity=12: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-12-d5496e9d]] — Rarity=12: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-13-1783080b]] — Rarity=13: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-13-however-if-a-sorcerer-reads-it-it-will-always-be-identified-25bdde33]] — Rarity=13 (However, if a sorcerer reads it, it will always be identified): 13 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-14-17b61158]] — Rarity=14: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-15-44f8f189]] — Rarity=15: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-15-b4b2abba]] — Rarity=15: 18 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-15-bfc12f17]] — Rarity=15: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-16-55fe614c]] — Rarity=16: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-16-d8adfd36]] — Rarity=16: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-17-22711e86]] — Rarity=17: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-18-0341f27f]] — Rarity=18: 8 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-18-8cdf9fd5]] — Rarity=18: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-18-f612a32f]] — Rarity=18: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-3e486e8b]] — 《 **Rarity** 》: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-443c3ce8]] — 《 **Rarity** 》: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-45517090]] — 《 **Rarity** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-5-222e1aef]] — Rarity=5: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-7-8e3f117a]] — Rarity=7: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-8-f57ab1f3]] — Rarity=8: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rarity-ce6f05fa]] — 《 **Rarity** 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rat-disease-07708b3e]] — **[ Rat Disease ]**: 20 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-reaction-adversarial-88e5bd04]] — Reaction=Adversarial: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-reaction-c6663e6b]] — 《 **Reaction** 》: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ready-a-sheathed-weapon-bbf4f1ae]] — **Ready a Sheathed Weapon**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ready-a-weapon-and-attack-88af74ba]] — **Ready a Weapon and Attack**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ready-a-weapon-eaa1e949]] — **Ready a Weapon**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-reborn-dragon-c7883977]] — **[ Reborn Dragon ]**: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-recall-spirit-3a01ff5b]] — **[ Recall Spirit ]**: 12 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-recall-spirit-f7c611bf]] — **[ Recall Spirit ]**: 12 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-recovering-mental-power-7755bb5a]] — **Recovering Mental Power**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-recovery-via-sleep-813e7bd3]] — 《 **Recovery via Sleep** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-red-eye-be69873f]] — 《 **Red Eye** 》: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-redcap-606753c1]] — **[ Redcap ]**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-refresh-60cf1431]] — **[ Refresh ]**: 11 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-regenerate-06811579]] — 《 **Regenerate** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-regeneration-f029a1ea]] — **[ Regeneration ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-regional-a341d32d]] — 《 **Regional** 》: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-religious-organizations-1e2e0007]] — **Religious Organizations**: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-remove-curse-b298cf96]] — **[ Remove Curse ]**: 11 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-remove-set-trap-dexterity-equipment-restriction-not-retriable-aa9f1aa4]] — **[** ⑯ **Remove/Set Trap [Dexterity]] (Equipment restriction, not retriable)**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-dd0d9052]] — **Representing Special Monsters with Character Data**: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-reptile-check-intelligence-e6f08394]] — **Reptile Check [Intelligence]**: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-requiem-cc15931e]] — **Requiem**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-required-strength-8db5cc96]] — **Required Strength**: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rescue-1874d43f]] — **[ Rescue ]**: 20 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resist-89fac2ef]] — 《 **Resist** 》: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resist-effect-negate-3ea53c6a]] — Resist=Effect negate: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resist-none-34844831]] — Resist=None: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resist-reduced-effect-21d0413b]] — Resist=Reduced effect: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resist-reduced-effect-61f4e489]] — Resist=Reduced effect: 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resistance-75e6268a]] — **Resistance**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resistance-rolls-d56baffa]] — **Resistance Rolls**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-restore-health-the-unknown-spirit-of-life-2e12bbf3]] — **[ Restore Health ] (The Unknown Spirit of Life)**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-restore-mental-power-mind-a8797b45]] — **Restore Mental Power (Mind)**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-restrictions-on-using-5-1-11-1-ancient-magic-b2dc6434]] — **Restrictions on Using 5.1.11.1 Ancient Magic**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-restrictions-on-using-5-1-13-1-spirit-magic-b071a4bf]] — **Restrictions on Using 5.1.13.1 Spirit Magic**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-restrictions-on-using-5-1-15-1-holy-magic-ed17e042]] — **Restrictions on Using 5.1.15.1 Holy Magic**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-restrictions-on-weapons-and-armor-based-on-skill-5ed18178]] — **Restrictions on Weapons and Armor Based on Skill**: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-resurrection-881785ae]] — **[ Resurrection ]**: 20 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-return-home-spell-level-6-99c8fcc5]] — **[ Return Home ] (Spell Level=6)**: 6 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-riding-agility-d2cab5da]] — **[** ① **Riding [Agility] ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rings-807214a9]] — 《 **Rings** 》: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ritual-03a5347b]] — 《 **Ritual** 》: 23 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-roan-ax-618fa3cd]] — 《 **Roan Ax** 》: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-roar-c8202d66]] — 《 **Roar** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rock-worm-8f8a60e9]] — **Rock Worm**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ropework-dexterity-e31e6c43]] — **[** ⑦ **Ropework [Dexterity] ]**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rot-fa8d1c95]] — **[ Rot ]**: 17 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rules-for-awarding-greater-experience-points-d357faff]] — **Rules for Awarding Greater Experience Points**: 15 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rules-for-destroying-structures-3f9cde61]] — **Rules for Destroying Structures**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rules-for-poison-illness-and-infection-71744cad]] — **Rules for Poison, Illness and Infection**: 17 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rules-for-sleeping-adventurers-1a35a0af]] — **Rules for Sleeping Adventurers**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rules-for-sleeping-monsters-a52f4856]] — **Rules for Sleeping Monsters**: 28 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rune-master-0bf8fc0f]] — 【 **Rune Master** 】: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rune-masters-and-rune-master-skills-82e00490]] — **Rune Masters and Rune Master Skills**: 17 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rune-ring-60467dce]] — **[ Rune Ring ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rune-rope-975ce72d]] — **[ Rune Rope ]**: 13 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-rune-shield-2d377434]] — **[ Rune Shield ]**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-runes-1292c028]] — 《 **Runes** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-s-e53f4bd0]] — **[ Sí ]**: 8 source-backed entries and 81 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sage-a41fab72]] — 【 **Sage** 】: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sage-bard-priest-1f8a2a4b]] — **[ Sage, Bard, Priest ]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sage-skill-abilities-table-814d7d80]] — **Sage Skill Abilities Table**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sage-skill-db32a7f8]] — **Sage Skill**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sailor-skill-abilities-table-3481bf14]] — **Sailor Skill Abilities Table**: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sailor-skill-abilities-table-dbc66f6c]] — **Sailor Skill Abilities Table**: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sailor-skill-d4f25ad4]] — **Sailor Skill**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sample-magic-details-5dfd9928]] — **[Sample Magic Details]**: 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sand-worm-b2336c4c]] — **Sand Worm**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sandman-mind-spirit-07f8eb49]] — **(Sandman/Mind Spirit)**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sanity-84230239]] — **[ Sanity ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-satyr-4de226b7]] — **[ Satyr ]**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-save-soul-13064ae4]] — **[ Save Soul ]**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-scarlet-vulture-3c239c00]] — **[ Scarlet Vulture ]**: 14 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-scream-481f0b9c]] — 《 **Scream** 》: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-scrolls-containing-lost-spell-366dc30b]] — **Scrolls Containing Lost Spell**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-scylla-62d0f467]] — **[ Scylla ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sea-serpent-184c8471]] — **Sea Serpent**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sea-slayer-9776d240]] — 《 **Sea Slayer** 》: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sea-worm-f16509a2]] — **Sea Worm**: 17 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-seal-enchantment-93a30c35]] — **[ Seal Enchantment ]**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-seal-stone-f7127b57]] — **[ Seal Stone ]**: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-search-intelligence-no-equipment-restriction-not-retriable-e5cd1f6d]] — **[** ⑧ **Search [Intelligence] ] (No equipment restriction, not retriable)**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-see-through-b66d3034]] — **[ See-Through ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-senior-soldier-b2524de4]] — **Senior Soldier**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sense-aura-10362062]] — 《 **Sense Aura** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sense-aura-2df20d53]] — **[ Sense Aura ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sense-enemy-a19738b3]] — **[ Sense Enemy ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sense-lie-ab91d647]] — **[ Sense Lie ]**: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sense-magic-d80f05fb]] — **[ Sense Magic ]**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sense-metal-spell-level-3-fc04c11e]] — **[ Sense Metal ] (Spell Level=3)**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-servant-1e03b2ee]] — **Servant**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-setting-target-scores-and-difficulties-392f562c]] — **Setting Target Scores and Difficulties**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shade-93490617]] — **[ Shade ]**: 16 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shade-dark-spirit-7adfb8e9]] — **(Shade/Dark Spirit)**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shade-dark-spirit-bb1bb16a]] — (Shade/Dark Spirit): 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shade-shade-dark-spirit-2594f035]] — **[ Shade ] (Shade/Dark Spirit)**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shadow-stalker-6b341bd6]] — **Shadow Stalker**: 18 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shaman-20406c53]] — **[ Shaman ]**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shaman-a202598a]] — 【 **Shaman** 】: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shaman-skill-e60067b1]] — 《 **Shaman Skill** 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shape-change-0ebc8fd4]] — **[ Shape Change ]**: 6 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shape-change-6ddd0a33]] — **[ Shape Change ]**: 18 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shapeshift-9ba16bca]] — 《 **Shapeshift** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sharpness-7be6e3b7]] — **Sharpness**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sheath-a-weapon-etc-1f0debd0]] — **Sheath a Weapon, Etc.**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shield-attack-5d1ad9c6]] — **Shield Attack**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shield-modifiers-a38d3015]] — **Shield Modifiers**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shield-of-the-brave-64d62905]] — 《 **Shield of the Brave** 》: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shields-51ef8008]] — **Shields**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-ship-steering-dexterity-21b36e2d]] — **[** ③ **Ship Steering [Dexterity]]**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shoot-arrow-sylph-wind-spirit-d3e2d1d8]] — **[ Shoot Arrow ] (Sylph/Wind Spirit)**: 16 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-shotel-ad6b772a]] — **Shotel**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-should-the-difficulty-be-clear-5f49cdaa]] — **Should the Difficulty Be Clear?**: 13 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-should-you-use-a-target-score-check-or-a-difficulty-check-65cc3d38]] — **Should You Use a Target Score Check or a Difficulty Check?**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-silent-spirit-84a1dd81]] — 《 **Silent Spirit** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-simulacra-cd04d3a2]] — **[ Simulacra ]**: 15 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sin-045a4172]] — **[ Sin ]**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sing-mental-power-cb74db7f]] — **[** ① **Sing [Mental Power] ]**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sing-mind-090ec86b]] — **Sing (Mind)**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-skeleton-2bb9676b]] — **[ Skeleton ]**: 18 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-skeleton-warrior-25d4e25f]] — **[ Skeleton Warrior ]**: 15 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-skeleton-warrior-4b740faa]] — **Skeleton Warrior**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-skill-basics-4a4f6688]] — **Skill Basics**: 12 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-skill-types-a4acf42d]] — **Skill Types**: 11 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-skills-3b2acde6]] — **Skills**: 0 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-slave-d34ca6ef]] — **Slave**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-slaves-fc2e30ca]] — **Slaves**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sleep-cloud-d0fd459d]] — **[ Sleep Cloud ]**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sleep-eye-9bf2e5de]] — **[ Sleep Eye ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sleepless-2edd7007]] — 《 **Sleepless** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-slice-slider-69ecf6a7]] — 《 **Slice Slider** 》: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-slow-e30476c2]] — **[ Slow ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-slowness-128516d1]] — **Slowness**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-small-ape-ff8268ca]] — **Small Ape**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-small-basilisk-73a2be2c]] — **Small Basilisk**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-snake-d6f0e820]] — **[ Snake ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-snipe-c750387e]] — **Snipe**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-snow-adaptation-c5ad062d]] — 《 **Snow Adaptation** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-soft-lander-50ca6954]] — **[ Soft Lander ]**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-soldier-e952cc2e]] — **[ Soldier ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sorcerer-99507f8f]] — **[ Sorcerer ]**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sorcerer-ebff2147]] — 【 **Sorcerer** 】: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sorcerer-skill-ae1b9116]] — 《 **Sorcerer Skill** 》: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sorcerer-staff-88d4d9ba]] — **[ Sorcerer Staff ]**: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-southern-central-region-language-western-gundar-8f274454]] — **Southern Central Region (Language = Western/Gundar)**: 35 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-346997a7]] — **Special**: 3 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-abilities-c1363c17]] — 《 **Special Abilities** 》: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-abilities-capture-be9b6a32]] — Special Abilities=Capture: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-abilities-water-adaptation-habitat-seas-9b488baf]] — Special Abilities=Water adaptation Habitat=Seas: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-bonuses-eb702528]] — **Special Bonuses**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-combat-f561f0d6]] — **[** ⑪ **Special Combat**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-dark-magic-list-12498581]] — **Special Dark Magic List**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-special-defense-abilities-weaknesses-446c0699]] — **Special Defense Abilities: Weaknesses**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-specter-a1f74b40]] — **Specter**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spell-level-3-b5e8e0b2]] — **(Spell Level=3)**: 12 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spellbook-be222507]] — 《 **Spellbook** 》: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spellsongs-e357831b]] — **Spellsongs**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spellsongs-mental-power-b2ef398f]] — **[** ④ **Spellsongs [Mental Power]]**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sphinx-ee5a11b8]] — **[ Sphinx ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spider-c0328aba]] — **[ Spider ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirit-magic-and-the-shaman-skill-b78d36e9]] — **Spirit Magic and the Shaman Skill**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirit-sealing-stone-96bcb334]] — **[ Spirit Sealing Stone ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirit-wall-7e9b6a98]] — **[ Spirit Wall ]**: 11 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirit-wall-dryad-8fc023f3]] — **[ Spirit Wall: Dryad ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirit-wall-frau-40ad7ab4]] — **[ Spirit Wall: Frau ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirit-wall-salamander-4fe67bcd]] — **Spirit Wall: Salamander**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spirits-27d2aaf5]] — 《 **Spirits** 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-spriggan-007041e1]] — **[ Spriggan ]**: 18 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sprite-7d98cd19]] — **[ Sprite ]**: 19 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-staff-of-sorcery-d7022d0d]] — **[ Staff of Sorcery ]**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stalker-5ee89a65]] — **[ Stalker ]**: 16 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stand-up-and-ready-yourself-6c9ed9bd]] — **Stand Up and Ready Yourself**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-starting-experience-points-7c855c2c]] — **Starting Experience Points**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-starting-experience-points-918012c8]] — **[** ⑦ **Starting Experience Points ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-steal-life-713ebe2a]] — **[ Steal Life ]**: 18 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-steal-mental-power-aced3795]] — 《 **Steal Mental Power** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-steal-mind-d1b0c1e4]] — **[ Steal Mind ]**: 14 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-14f8a04f]] — **[ Stone ]**: 6 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-servant-3d661583]] — **[ Stone Servant ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-servant-7a912324]] — **Stone Servant**: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-skin-565344a7]] — **[ Stone Skin ]**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-statue-c172029c]] — 《 **Stone Statue** 》: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-tongue-injected-ee61a5d9]] — **[Stone Tongue (Injected)]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stone-wind-cutter-266c65de]] — 《 **Stone/Wind Cutter** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strangling-72fcc188]] — 《 **Strangling** 》: 12 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strength-75d9035c]] — **Strength**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strike-points-12-1bff366f]] — Strike Points=12: 12 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strike-points-3-f16b6a1e]] — Strike Points=3: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strike-points-7a6d71fb]] — 《 **Strike Points** 》: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strike-power-e52b7278]] — 【 **Strike Power** 】: 9 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strike-power-modifier-b7a4ac80]] — **Strike Power Modifier**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strong-blow-26f18831]] — **Strong Blow**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strong-to-cold-9fd7f65a]] — 《 **Strong to Cold** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-strong-to-fire-44b18120]] — 《 **Strong to Fire** 》: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-stun-cloud-5063d886]] — **[ Stun Cloud ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sub-ability-scores-b5ceffdf]] — **[** ③ **Sub-Ability Scores]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-success-rolls-a1d794d9]] — **Success Rolls**: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-success-rolls-using-adventurer-level-c950fa99]] — **Success Rolls Using Adventurer Level**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-suffocate-djinn-wind-spirit-0aaf1f12]] — **[ Suffocate ] (Djinn/Wind Spirit)**: 12 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-056206f6]] — 《 **Summon** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-8f5e85d0]] — 《 **Summon** 》: 15 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-lesser-dragon-5975876a]] — **[ Summon Lesser Dragon ]**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-reptile-039efb87]] — **[ Summon Reptile ]**: 8 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-small-animals-mind-afd7e692]] — **Summon Small Animals (Mind)**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-wyrm-e7a26ce7]] — **[ Summon Wyrm ]**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-summon-wyvern-c06ffa1b]] — **[ Summon Wyvern ]**: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sun-moon-stars-f48bc18c]] — **Sun, Moon, Stars**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-suppress-elemental-2c9f01fd]] — **[ Suppress Elemental ]**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-surprise-attack-intelligence-no-equipment-restriction-18f390e1]] — **[** ⑭ **Surprise Attack [Intelligence]] (No equipment restriction)**: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-surprise-attacks-3e893c37]] — **Surprise Attacks**: 9 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-swallow-whole-f17d3c2a]] — 《 **Swallow Whole** 》: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-swim-agility-2a84d7ef]] — **[** ② **Swim [Agility] ]**: 33 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-switch-a-weapon-from-hand-to-hand-978ed04b]] — **Switch a Weapon From Hand to Hand**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-swordclaw-6ed49b09]] — **[ Swordclaw ]**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sylph-wind-spirit-541f7e56]] — (Sylph/Wind Spirit): 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-sylph-wind-spirit-b1f62ca5]] — **(Sylph/Wind Spirit)**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-symptoms-192ba899]] — 《 **Symptoms** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-table-16-1-weapon-optional-rules-b990abe1]] — **Table 16-1 Weapon Optional Rules**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-table-5-10-requiem-6f459201]] — **Table 5-10: Requiem**: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-table-5-5-fears-8a163efd]] — **Table 5-5: Fears**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-table-5-6-turn-undead-a193bcd3]] — **Table 5-6: Turn Undead**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-table-5-9-common-runes-0244b0cb]] — **Table 5-9: Common Runes**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-table-6-2-determining-climb-target-scores-125bacff]] — **Table 6-2: Determining Climb Target Scores**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-target-score-67ebdf10]] — 《 **Target Score** 》: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-target-scores-eb19dddf]] — **Target Scores**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-targets-expansion-b159461a]] — 《 **Targets Expansion** 》: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-telchines-4712470f]] — **[ Telchines ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-telecall-amulet-a0ffb472]] — **[ Telecall Amulet ]**: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-telekinesis-05380568]] — **[ Telekinesis ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-teleport-b6faa2ad]] — **[ Teleport ]**: 13 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-age-of-magic-the-kingdom-of-kastuul-3002f962]] — **The Age of Magic = The Kingdom of Kastuul**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-age-of-sword-the-new-kingdoms-b51785ad]] — **The Age of Sword = The New Kingdoms**: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-difference-between-general-skills-and-adventurer-skills-2ed659c1]] — **The Difference Between General Skills and Adventurer Skills**: 22 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-4ae32e3b]] — The Meaning of the Rulebook: 26 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-meaning-of-the-rulebook-a554c751]] — **The Meaning of the Rulebook**: 26 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-nameless-god-of-madness-special-dark-magic-list-c38b076a]] — **The Nameless God of Madness Special Dark Magic List**: 31 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-structure-of-the-rulebook-d97b8f46]] — **The Structure of the Rulebook**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-tragedy-of-the-hero-grax-185742a6]] — **The Tragedy of the Hero Grax**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-the-unknown-spirit-of-life-5b29469c]] — **(The Unknown Spirit of Life)**: 12 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thermal-ring-90c1c6d1]] — **[ Thermal Ring ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thief-1b616410]] — 【 **Thief** 】: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thief-ac7c5896]] — **[ Thief ]**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thief-skill-abilities-table-5d7e849b]] — **Thief Skill Abilities Table**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thief-skill-d1a63a68]] — **Thief Skill**: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thief-skill-de989b7a]] — 【 **Thief Skill** 】: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thieves-guild-sorcerers-guild-academy-746a65de]] — **Thieves Guild/Sorcerers' Guild (Academy)**: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thing-5578352b]] — **Thing**: 14 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-15c46cfa]] — **Throwing Multiple Darts or Daggers**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-thrust-1df73b5d]] — **Thrust**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-tiger-59827df8]] — **[ Tiger ]**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-titans-d353a01a]] — 《 **Titans** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-toad-f3026381]] — **[ Toad ]**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-tongue-fc92c488]] — **[ Tongue ]**: 10 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-toxicity-score-ef2399c9]] — 《 **Toxicity Score** 》: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-tracer-doll-a3f7243b]] — **[ Tracer Doll ]**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-transfer-mental-power-aa37e3b0]] — **[ Transfer Mental Power ]**: 10 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-translate-f36f1fa0]] — **[ Translate ]**: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-treasure-and-rewards-in-sword-world-0a50ac7d]] — **Treasure and Rewards in Sword World**: 19 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-treasure-appraisal-intelligence-not-retriable-7032931b]] — **[** ⑥ **Treasure Appraisal [Intelligence] ] (Not retriable)**: 18 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-treatment-intelligence-a5c1e59e]] — **[** ② **Treatment [Intelligence]]**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-troll-28531435]] — **[ Troll ]**: 17 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-c668f2f6]] — **[ Tunnel ] (Gnome/Earth Spirit)**: 20 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-turn-undead-7ba827df]] — **[ Turn Undead ]**: 11 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-twintail-cat-97a51e25]] — **[ Twintail Cat ]**: 13 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-twisted-sling-a8dc603b]] — 《 **Twisted Sling** 》: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-two-handed-attacks-b5d29113]] — **Two-Handed Attacks**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-type-ad6e690d]] — 《 **Type** 》: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-type-damage-fire-type-dbbd4fa9]] — Type=Damage (Fire-type): 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-type-ritual-d2efec54]] — Type=Ritual: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-types-of-magic-dfd5eaa2]] — **Types of Magic**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-types-of-poison-f334e271]] — 《 **Types of Poison** 》: 19 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-undead-74f0efdd]] — 《 **Undead** 》: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-undead-king-c09d0dcd]] — **Undead King**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-undead-knight-27840f2d]] — **[ Undead Knight ]**: 24 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-undine-water-spirit-4bcd1f2f]] — (Undine/Water Spirit): 17 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-undine-water-spirit-d179f758]] — **(Undine/Water Spirit)**: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-unicorn-9214a308]] — **[ Unicorn ]**: 29 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-unicorn-s-horn-cc7932a9]] — **[ Unicorn's Horn ]**: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-unlock-8df7f006]] — **[ Unlock ]**: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-unpoison-ring-bd54edb5]] — **[ Unpoison Ring ]**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-usage-9e20aab2]] — 《 **Usage** 》: 22 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-use-magic-and-projectiles-b1e0b4aa]] — **Use Magic and Projectiles**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-valkyrie-05d1798e]] — **[ Valkyrie ]**: 15 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-valkyrie-blessing-valkyrie-mind-spirit-8f479c0a]] — **[ Valkyrie Blessing ] (Valkyrie/Mind Spirit)**: 15 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-valkyrie-javelin-valkyrie-mind-spirit-c3f2c1c8]] — **[ Valkyrie Javelin ] (Valkyrie/Mind Spirit)**: 11 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-valkyrie-mind-spirit-cea34877]] — **(Valkyrie/Mind Spirit)**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-value-check-intelligence-e14dc4aa]] — **[** ① **Value Check [Intelligence]]**: 15 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-value-check-intelligence-not-retriable-47320f14]] — **[** ⑩ **Value Check [Intelligence]] (Not retriable)**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-value-check-intelligence-not-retriable-8c78fe28]] — **[** ② **Value Check [Intelligence]] (Not retriable)**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vampire-297c76bd]] — **Vampire**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vampire-848cc8f1]] — **[ Vampire ]**: 27 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vampire-bat-de0aa8b8]] — **Vampire Bat**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vampire-skin-a05064ac]] — **[ Vampire Skin ]**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-van-blade-6d1d3c79]] — 《 **Van Blade** 》: 7 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vegetation-e0ca80c9]] — **[ Vegetation ]**: 7 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vibrato-99adfd6d]] — **Vibrato**: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-viper-6ec9be09]] — **Viper**: 5 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vision-a1def7d7]] — **[ Vision ]**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-volume-contraction-0ceddbe4]] — 《 **Volume Contraction** 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-volume-expansion-bae7f31c]] — 《 **Volume Expansion** 》: 14 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-vow-6c313969]] — 《 **Vow** 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-adaptation-85b7cb1f]] — 《 **Water Adaptation** 》: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-adaptation-d7280bb1]] — Water adaptation: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-breathing-undine-water-spirit-dd204a55]] — **[ Water Breathing ] (Undine/Water Spirit)**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-crystal-3e846672]] — **Water Crystal**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-screen-undine-water-spirit-36431c0d]] — **[ Water Screen ] (Undine/Water Spirit)**: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-spirits-336c6a7a]] — ⬤ **Water Spirits**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-water-walking-undine-water-spirit-f3f947eb]] — **[ Water Walking ] (Undine/Water Spirit)**: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weak-point-spell-level-3-b74268f4]] — **[ Weak Point ] (Spell Level=3)**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weak-to-fire-1d8f0ce7]] — 《 **Weak to Fire** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weakness-4145fd6f]] — **Weakness**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-90d12028]] — **Weapon**: 2 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-aim-76db6c76]] — **Weapon Aim**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-and-armor-modifiers-38f6f63e]] — **Weapon and Armor Modifiers**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-and-armor-restrictions-77ccda2b]] — **Weapon and Armor Restrictions**: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-enhancement-33fd6f7a]] — 《 **Weapon Enhancement** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-immunity-be97d8a9]] — 《 **Weapon Immunity** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapon-modifiers-65db9b24]] — **Weapon Modifiers**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapons-69849817]] — **Weapons**: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapons-and-armor-that-are-too-heavy-e6bff645]] — **Weapons and Armor That Are Too Heavy**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weapons-cannot-critical-1b57a58d]] — 《 **Weapons Cannot Critical** 》: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-web-34b1481a]] — 《 **Web** 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wehner-83ca48c1]] — 《 **Wehner** 》: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weight-limits-a0e995ba]] — **[ Weight Limits ]**: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weightless-bag-6efeae08]] — **[ Weightless Bag ]**: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-welcome-to-sword-world-ad031478]] — **Welcome to Sword World!**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-werebear-3beb7895]] — **Werebear**: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-weretiger-0ae2f283]] — **Weretiger**: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-werewolf-a5198134]] — **Werewolf**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-western-countries-de05ef12]] — **Western Countries**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-2b5f74a3]] — What is a Role-Playing Game (RPG)?: 42 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-what-is-a-role-playing-game-rpg-945a0833]] — **What is a Role-Playing Game (RPG)?**: 42 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-4ae057de]] — What You’ll Need to Play Sword World RPG: 36 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-86b50a6f]] — **What You’ll Need to Play Sword World RPG**: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-when-a-monster-casts-magic-on-adventurers-3000a98c]] — **When a Monster Casts Magic on Adventurers**: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-when-an-adventurer-casts-magic-on-adventurers-a7b9be93]] — **When an Adventurer Casts Magic on Adventurers**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-when-it-s-possible-to-change-attack-targets-d76c6c47]] — **When It’s Possible to Change Attack Targets**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-whip-3f71a42e]] — **Whip**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-whip-net-bola-aaa96541]] — **Whip, Net, Bola**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-white-marble-inhaled-magic-b533a0dc]] — **[White Marble (Inhaled/Magic)]**: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-who-knows-lost-spell-449255ce]] — **Who Knows Lost Spell**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-will-o-wisp-light-spirit-2cc0bbcf]] — **(Will-O-Wisp/Light Spirit)**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-will-o-wisp-light-spirit-4d21d864]] — (Will-O-Wisp/Light Spirit): 21 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wind-spirits-86f93631]] — ⬤ **Wind Spirits**: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wind-voice-sylph-wind-spirit-57f2a3aa]] — **[ Wind Voice ] (Sylph/Wind Spirit)**: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-withdraw-flee-from-engagement-e50c3f32]] — **Withdraw (Flee) From Engagement**: 8 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wood-c4dc2966]] — **[ Wood ]**: 10 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-work-requests-to-npcs-e516d03f]] — **Work Requests to NPCs**: 20 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-world-bfd43d71]] — **World**: 14 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-worm-2d444279]] — **[ Worm ]**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wounds-85aadf15]] — **[ Wounds ]**: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wraith-form-40a71c53]] — **[ Wraith Form ]**: 15 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-wyvern-1897caff]] — **[ Wyvern ]**: 12 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-yeti-79b951b2]] — **[ Yeti ]**: 12 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-youma-7dad44a6]] — 《 **Youma** 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-zalbard-19250c90]] — **Zalbard**: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-zero-gravity-disc-9b71a2eb]] — **[ Zero Gravity Disc ]**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-zombie-767c2449]] — **[ Zombie ]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-section-zombie-maker-dose-mind-141124f3]] — **[Zombie Maker (Dose/Mind)]**: 18 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-the-meaning-of-the-rulebook]] — The Meaning of the Rulebook from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-welcome-to-sword-world]] — Welcome to “Sword World”! from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-what-is-a-role-playing-game-rpg]] — What is a Role-Playing Game (RPG)? from raw/Sword World RPG - Complete Edition.pdf.
@@ -184,5 +2080,69 @@
 ## Entities
 
 ## Concepts
+- [[javascriptallonge-argument]] — Argument: 13 statement(s) and 21 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-argument-please]] — Ah. I'd Like to Have an Argument, Please.: 42 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-array-and-destructuring-argument]] — Arrays and Destructuring Arguments: 31 statement(s) and 31 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-building-block]] — Building Blocks: 24 statement(s) and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-closure-and-scope]] — Closures and Scope: 37 statement(s) and 11 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-constant-coffee-craving]] — That Constant Coffee Craving: 62 statement(s) and 33 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-copy-write]] — Copy on Write: 22 statement(s) and 8 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-data-function]] — Making Data Out Of Functions: 64 statement(s) and 52 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-element]] — Element: 22 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-expression]] — Expression: 23 statement(s) and 20 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-function-but]] — As Little As Possible About Functions, But No Less: 63 statement(s) and 20 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-functional-iterator]] — Functional Iterators: 33 statement(s) and 25 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-garbage-everywhere]] — Garbage, Garbage Everywhere: 41 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-generating-iterable]] — Generating Iterables: 76 statement(s) and 22 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-interactive-generator]] — Interactive Generators: 33 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-interlude-carpenter-interview-for-job]] — Interlude: The Carpenter Interviews for a Job: 46 statement(s) and 9 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iteration-and-iterable]] — Iteration and Iterables: 73 statement(s) and 33 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-iterator]] — Iterator: 27 statement(s) and 19 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-javascript]] — Javascript: 84 statement(s) and 32 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-javascript-allong]] — About JavaScript Allongé: 29 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-lazy-and-eager-collection]] — Lazy and Eager Collections: 34 statement(s) and 6 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-list]] — List: 21 statement(s) and 23 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-magic]] — Magic Names: 26 statement(s) and 5 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-mutation]] — Mutation: 28 statement(s) and 15 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-naming-function]] — Naming Functions: 33 statement(s) and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-picking-bean-choice-and-truthiness]] — Picking the Bean: Choice and Truthiness: 32 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-plain-old-javascript-object]] — Plain Old JavaScript Objects: 30 statement(s) and 30 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-reassignment]] — Reassignment: 36 statement(s) and 10 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-return]] — Return: 15 statement(s) and 15 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-revisiting-linked-list]] — **revisiting linked lists**: 13 statement(s) and 13 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-self-similarity]] — Self-Similarity: 45 statement(s) and 19 atom(s) from raw/javascriptallonge.pdf.
+- [[javascriptallonge-tail-and-default-argument]] — Tail Calls (and Default Arguments): 40 statement(s) and 25 atom(s) from raw/javascriptallonge.pdf.
+- [[sword-world-rpg-complete-edition-11-dark-magic]] — 11.2 Dark Magic: 184 statement(s) and 103 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-11-dragon-roar-magic]] — 11.3 Dragon Roar Magic: 90 statement(s) and 83 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-ancient-magic-list]] — 5.1.12 Ancient Magic List: 402 statement(s) and 375 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness]] — 12 Rule For Poison Illness: 141 statement(s) and 29 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] — 12.2 Rules for Poison, Illness and Infection: 287 statement(s) and 89 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-10-magical-creature]] — 13.2.10 Magical Creatures: 167 statement(s) and 77 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-animal]] — 13.2.7 Animals: 324 statement(s) and 128 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-handling-monster-special-ability]] — 13.6 Handling Monster Special Abilities: 138 statement(s) and 26 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-how-read-monster-catalog]] — 13.2.1 How to Read the Monster Catalog: 155 statement(s) and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-mythical-beast-and-magical]] — 13.2.6 Mythical Beasts and Magical Beasts: 294 statement(s) and 125 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-spirit]] — 13.2.4 Spirits: 139 statement(s) and 65 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-titan]] — 13.2.5 Titans: 95 statement(s) and 32 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-13-undead]] — 13.2.9 Undead: 241 statement(s) and 110 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-magical-item-list]] — 14.4 Magical Item List: 311 statement(s) and 365 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-spirit-magic-list]] — 5.1.14 Spirit Magic List: 318 statement(s) and 234 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-combat-option]] — 16.5 Combat Options: 107 statement(s) and 38 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-16-holy-magic-list]] — 5.1.16 Basic Holy Magic List: 126 statement(s) and 119 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-17-special-holy-magic-list]] — 5.1.17 Special Holy Magic List: 62 statement(s) and 68 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-adventure]] — Adventure: 115 statement(s) and 76 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-adventurer-ability]] — 6.6 Common Adventurer Abilities: 89 statement(s) and 47 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-cast]] — Cast: 123 statement(s) and 79 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-character-creation]] — 1.4 Character Creation: 226 statement(s) and 59 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-fail]] — Fail: 112 statement(s) and 51 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-game]] — Game: 103 statement(s) and 49 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-guide-forcelia-alecrast]] — Guide to Forcelia & Alecrast: 280 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-level]] — Level: 139 statement(s) and 43 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-master]] — Master: 107 statement(s) and 41 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-move]] — Move: 133 statement(s) and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-result]] — Result: 65 statement(s) and 77 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-score]] — Score: 168 statement(s) and 89 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-spell]] — Spell: 354 statement(s) and 166 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-target]] — Target: 140 statement(s) and 89 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Syntheses

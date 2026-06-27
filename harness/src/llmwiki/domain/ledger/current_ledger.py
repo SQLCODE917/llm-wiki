@@ -62,6 +62,7 @@ def build_current_claim_ledger(
         source_family_assignment=assign_family(profile),
         entries=entries,
         technical_atoms=atoms,
+        technical_atom_contexts=(),
         source_statements=(*claim_statements, *atom_statements),
         extractor_decisions=(),
         rejected_candidates=(),

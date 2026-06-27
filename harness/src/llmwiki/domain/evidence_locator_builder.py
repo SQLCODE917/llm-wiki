@@ -55,8 +55,7 @@ def validate_evidence_locator_index(
         if locator.range_start < 1 or locator.range_end < locator.range_start:
             findings.append(_finding(locator, "invalid-range", "Locator range is invalid."))
         elif (
-            locator.locator_kind == "normalized-line"
-            and locator.range_end > source_text.line_count
+            locator.locator_kind == "normalized-line" and locator.range_end > source_text.line_count
         ):
             findings.append(
                 _finding(

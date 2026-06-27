@@ -13,6 +13,7 @@ from llmwiki.domain.evidence_locator_builder import (
 from llmwiki.domain.evidence_locator_index import (
     EvidenceLocator,
     EvidenceLocatorIndex,
+    canonicalize_evidence_text,
 )
 from llmwiki.domain.evidence_locator_index_io import (
     evidence_locator_index_from_json,
@@ -51,6 +52,15 @@ def test_evidence_record_identity_changes_when_canonical_excerpt_changes() -> No
     assert first.evidence_records[0].evidence_id != second.evidence_records[0].evidence_id
 
 
+def test_canonicalize_evidence_text_bounds_pathological_excerpts() -> None:
+    text = "Page 12 " + ("very-long-word " * 50_000)
+
+    canonical = canonicalize_evidence_text(text)
+
+    assert canonical.startswith("very-long-word")
+    assert len(canonical) < len(text)
+
+
 def test_evidence_locator_index_validates_normalized_line_ranges() -> None:
     source = source_text_from_text("article.md", "one\ntwo\nthree\nfour\nfive")
     valid = EvidenceLocator.from_excerpt(
@@ -72,10 +82,13 @@ def test_evidence_locator_index_validates_normalized_line_ranges() -> None:
         excerpt="missing",
     )
 
-    assert validate_evidence_locator_index(
-        EvidenceLocatorIndex.from_locators("article.md", source.source_hash, (valid,)),
-        (source,),
-    ) == ()
+    assert (
+        validate_evidence_locator_index(
+            EvidenceLocatorIndex.from_locators("article.md", source.source_hash, (valid,)),
+            (source,),
+        )
+        == ()
+    )
     findings = validate_evidence_locator_index(
         EvidenceLocatorIndex.from_locators("article.md", source.source_hash, (invalid,)),
         (source,),

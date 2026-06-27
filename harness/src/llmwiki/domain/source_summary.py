@@ -162,8 +162,7 @@ def render_missing_source_summary_claims(
     missing_claim_ids: tuple[str, ...],
 ) -> str:
     requirements = {
-        requirement.source_claim_id: requirement
-        for requirement in plan.selected_claim_requirements
+        requirement.source_claim_id: requirement for requirement in plan.selected_claim_requirements
     }
     rendered: list[str] = []
     for claim_id in missing_claim_ids:

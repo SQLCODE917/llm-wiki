@@ -12,12 +12,10 @@
         3
       ],
       "tokens": 222,
-      "status": "done",
-      "notes": "Created the source page for JavaScript Allongé. Key claims: the book is a Leanpub publication, authored by Reg “raganwald” Braithwaite, and published on 2017-11-03. No entities or concepts from this chunk required new pages.",
-      "pages_written": [
-        "javascriptallonge-document"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -28,13 +26,11 @@
         4,
         5
       ],
-      "tokens": 1517,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-table-of-contents' summarizing the table of contents for JavaScript Allongé. Key claims covered include the book's structure, chapters on functions and data, and specific topics like tail calls and coffee cravings. No other pages were created in this chunk as per the plan.",
-      "pages_written": [
-        "javascriptallonge-table-of-contents"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3068,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -46,12 +42,10 @@
         6
       ],
       "tokens": 265,
-      "status": "done",
-      "notes": "Created source page for 'javascriptallonge-a-pull-of-the-lever-prefaces'. Summarized the metaphor of Café Molinari preparation to illustrate programming principles, emphasizing moderation and flavor extraction. Wrote 1 page total.",
-      "pages_written": [
-        "javascriptallonge-a-pull-of-the-lever-prefaces"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -63,12 +57,10 @@
         9
       ],
       "tokens": 1641,
-      "status": "done",
-      "notes": "Created source page 'javascriptallonge-about-javascript-allong' summarizing the 'About JavaScript Allongé' section (raw/javascriptallonge.pdf p.7-9). Key claims covered: the book is about programming with functions in JavaScript, it begins with basics and builds to advanced topics like classes and iterators, and it teaches how to handle and simplify complex code. No additional entity/concept pages were created as the chunk did not introduce new terms requiring individual pages beyond the source summary.",
-      "pages_written": [
-        "javascriptallonge-about-javascript-allong"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -80,12 +72,10 @@
         12
       ],
       "tokens": 986,
-      "status": "done",
-      "notes": "Created source page 'javascriptallonge-what-javascript-allong-is-and-isn-t' summarizing the preface section. The page defines the book's focus on thinking about programs and programming with functions, and clarifies that it is not prescriptive. No additional entity or concept pages were created as the chunk did not introduce new terms requiring individual pages.",
-      "pages_written": [
-        "javascriptallonge-what-javascript-allong-is-and-isn-t"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -97,12 +87,10 @@
         13
       ],
       "tokens": 508,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-foreword-to-the-six-edition' summarizing the foreword to the 'Six' edition of JavaScript Allongé. Key claims covered include the standardization timeline of ES6, the abandonment of ES4, and the three major groups of ES6 features. No additional entity or concept pages were created as the chunk focused primarily on the foreword's content and ES6 history.",
-      "pages_written": [
-        "javascriptallonge-foreword-to-the-six-edition"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -114,12 +102,10 @@
         15
       ],
       "tokens": 888,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-forewords-to-the-first-edition' summarizing the forewords to the first edition of JavaScript Allongé by Michael Fogus and Matthew Knox. Key claims include Fogus's initial skepticism about the pay-what-you-want model being overcome by the book's quality, the effectiveness of the Leanpub model for iterative feedback, and Knox's comparison of the book's depth to a Cafe Allongé.",
-      "pages_written": [
-        "javascriptallonge-forewords-to-the-first-edition"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -131,12 +117,10 @@
         17
       ],
       "tokens": 166,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-about-the-sample-pdf' summarizing the sample PDF section from JavaScript Allongé. Key claims include the sample edition being a portion of the complete book, free updates for early purchasers, and a no-risk refund policy. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-about-the-sample-pdf"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -148,12 +132,10 @@
         18
       ],
       "tokens": 324,
-      "status": "done",
-      "notes": "Created the main chapter page for 'Prelude: Values and Expressions over Coffee' from JavaScript Allongé. The page summarizes the foundational concepts using a coffee shop analogy to explain how JavaScript expressions evaluate to values. Key claims covered: JavaScript expressions yield values like coffee orders, input expressions return output values, and the coffee shop model illustrates JavaScript evaluation. No additional entity or concept pages were created for this chunk.",
-      "pages_written": [
-        "javascriptallonge-prelude-values-and-expressions-over-coffee"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -165,12 +147,10 @@
         20
       ],
       "tokens": 665,
-      "status": "done",
-      "notes": "Created the main source page 'javascriptallonge-values-are-expressions' summarizing the 'values are expressions' section from JavaScript Allongé (pages 19-20). The key claims covered are: (1) all values are expressions, (2) the number 42 is both an expression and a value, and (3) string concatenation with the + operator creates expressions that are not values. No additional pages were created as the chunk did not introduce new entities or concepts beyond the core principle.",
-      "pages_written": [
-        "javascriptallonge-values-are-expressions"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -182,12 +162,10 @@
         23
       ],
       "tokens": 1033,
-      "status": "done",
-      "notes": "Created the main chapter page 'javascriptallonge-values-and-identity' summarizing JavaScript values, identity, and the === operator. Key claims covered: JavaScript uses === to test identity, value types (strings, numbers, booleans) are identical if they have the same type and content, and reference types (arrays, functions) are not identical even if they appear the same. No additional pages needed beyond the main chapter summary.",
-      "pages_written": [
-        "javascriptallonge-values-and-identity"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -199,12 +177,10 @@
         27
       ],
       "tokens": 1315,
-      "status": "done",
-      "notes": "Created the main chapter page 'javascriptallonge-a-rich-aroma-basic-numbers' covering literals, number representations, and basic operations in JavaScript. No additional entity or concept pages were created as the chunk did not introduce sufficient depth on any specific topic beyond the chapter's scope.",
-      "pages_written": [
-        "javascriptallonge-a-rich-aroma-basic-numbers"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -216,12 +192,10 @@
         29
       ],
       "tokens": 41,
-      "status": "done",
-      "notes": "Created the source summary page for 'The first sip: Basic Functions' section from JavaScript Allongé. Key claims: introduction to basic functions in JavaScript, and a picture illustrating the concept is intentionally omitted. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-the-first-sip-basic-functions"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -233,12 +207,10 @@
         38
       ],
       "tokens": 3240,
-      "status": "done",
-      "notes": "Created the source summary page for the chapter 'As Little As Possible About Functions, But No Less'. Key claims covered: functions as values, functions as reference types, function application, and functions returning values/expressions. No other pages were created or updated in this chunk as per the PagePlan constraints.",
-      "pages_written": [
-        "javascriptallonge-as-little-as-possible-about-functions-but-no-less"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -250,12 +222,10 @@
         43
       ],
       "tokens": 2341,
-      "status": "done",
-      "notes": "Created the source summary page for the chapter 'Ah. I'd Like to Have an Argument, Please.' (pages 39-43) from JavaScript Allongé. This chapter covers functions with arguments, evaluation strategies (call by value), and introduces concepts like environments and variable bindings. Key claims include how to define functions with arguments, how arguments are passed using call by value, and how environments work when functions are invoked. No other pages were created as the plan only authorized the source summary page.",
-      "pages_written": [
-        "javascriptallonge-ah-i-d-like-to-have-an-argument-please"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -267,12 +237,10 @@
         48
       ],
       "tokens": 2132,
-      "status": "done",
-      "notes": "Created the source page for 'javascriptallonge-closures-and-scope' covering pages 44-48. Key claims include the definition of closures and pure functions, how environments work in JavaScript, and the concept of shadowing. No additional entity or concept pages were created as the chunk did not introduce sufficient new material for dedicated pages beyond the source summary.",
-      "pages_written": [
-        "javascriptallonge-closures-and-scope"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -284,12 +252,10 @@
         61
       ],
       "tokens": 4204,
-      "status": "done",
-      "notes": "Created source page 'javascriptallonge-that-constant-coffee-craving' covering const keyword, lexical scoping, and IIFEs. No other pages needed for this chunk.",
-      "pages_written": [
-        "javascriptallonge-that-constant-coffee-craving"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -301,12 +267,10 @@
         67
       ],
       "tokens": 1991,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-naming-functions' summarizing the chapter on naming functions in JavaScript Allongé. The key claims covered include the distinction between anonymous and named functions, the use of named function expressions, and the behavior of function declarations including hoisting. No additional entity or concept pages were created as the chunk did not introduce sufficient depth on other topics.",
-      "pages_written": [
-        "javascriptallonge-naming-functions"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -318,12 +282,10 @@
         70
       ],
       "tokens": 1148,
-      "status": "done",
-      "notes": "Created source page for 'javascriptallonge-combinators-and-function-decorators' covering combinators and function decorators. Key claims include: combinators are higher-order functions that take functions as arguments and return functions; the compose combinator combines two functions; function decorators modify function behavior. No additional entity or concept pages were created as the chunk did not introduce sufficient depth for new pages beyond the main chapter summary.",
-      "pages_written": [
-        "javascriptallonge-combinators-and-function-decorators"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -335,12 +297,10 @@
         73
       ],
       "tokens": 1075,
-      "status": "done",
-      "notes": "Created the main source page for the 'Building Blocks' chapter (javascriptallonge-building-blocks) and identified key concepts: composition and partial application. No additional pages were created as they were not authorized by the ingest plan.",
-      "pages_written": [
-        "javascriptallonge-building-blocks"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -352,12 +312,10 @@
         77
       ],
       "tokens": 1473,
-      "status": "done",
-      "notes": "Created source page 'javascriptallonge-magic-names' covering magic names in JavaScript functions, specifically the 'arguments' object and how it behaves differently for regular functions vs fat arrow functions. Key claims: JavaScript binds argument values to magic names beyond declared parameters; the 'arguments' object contains all passed arguments regardless of declared parameters; fat arrow functions inherit 'arguments' from enclosing scope; custom bindings for magic names should be avoided. No additional entity or concept pages created beyond the required source summary.",
-      "pages_written": [
-        "javascriptallonge-magic-names"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -369,12 +327,10 @@
         78
       ],
       "tokens": 291,
-      "status": "done",
-      "notes": "Created the source summary page for 'JavaScript Allongé' (javascriptallonge-summary). The chunk covered functions as values, their application to arguments, and the distinction between fat arrow and function keyword declarations. No additional pages were created as they were not authorized by the ingest route plan.",
-      "pages_written": [
-        "javascriptallonge-summary"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -386,12 +342,10 @@
         79
       ],
       "tokens": 176,
-      "status": "done",
-      "notes": "Created the chapter summary page for 'Recipes with Basic Functions' (javascriptallonge-recipes-with-basic-functions). The page summarizes the chapter's focus on functions that return functions and notes that the recipes are written for practicality, potentially using features not yet discussed, but fitting within the spirit of the language.",
-      "pages_written": [
-        "javascriptallonge-recipes-with-basic-functions"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -403,12 +357,10 @@
         81
       ],
       "tokens": 535,
-      "status": "done",
-      "notes": "Created the main chapter page for partial application in JavaScript Allongé. The page summarizes key recipes (callFirst, callLast, callLeft, callRight) and provides examples of their usage. Covered the main claims about partial application being a common tool in JavaScript libraries, the ability to apply arguments leftmost or rightmost, and that partial application uses building blocks for function composition.",
-      "pages_written": [
-        "javascriptallonge-partial-application"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -420,12 +372,10 @@
         83
       ],
       "tokens": 492,
-      "status": "done",
-      "notes": "Created source page 'javascriptallonge-unary' covering unary function decorators and their use with Array.map. Updated the index. No other pages needed for this chunk.",
-      "pages_written": [
-        "javascriptallonge-unary"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -437,12 +387,10 @@
         85
       ],
       "tokens": 460,
-      "status": "done",
-      "notes": "Created source page 'javascriptallonge-tap' summarizing the tap combinator section from JavaScript Allongé (pages 84-85). The page covers the definition, usage, and implementation of the tap function, including its role as a debugging aid and support for both curried and uncurried forms. No other pages were created or updated in this chunk as the focus was on the specific section.",
-      "pages_written": [
-        "javascriptallonge-tap"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -454,12 +402,10 @@
         87
       ],
       "tokens": 527,
-      "status": "done",
-      "notes": "Created the main chapter page 'javascriptallonge-maybe' covering the Maybe pattern and function decorator inspired by Haskell's Maybe monad, Ruby's andand, and CoffeeScript's existential method invocation. The page cites (raw/javascriptallonge.pdf p.86-87) and includes three claim bullets as per the plan. No other pages were updated or created for this chunk as the focus was on the main chapter topic.",
-      "pages_written": [
-        "javascriptallonge-maybe"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -471,12 +417,10 @@
         88
       ],
       "tokens": 236,
-      "status": "done",
-      "notes": "Created the source page for the 'Once' combinator from JavaScript Allongé. Key claims: the Once combinator ensures a function is called only once, it returns another function, it returns undefined on subsequent calls, and it is an extremely helpful combinator. Entities touched: Once combinator, askedOnBlindDate function. Pages written: javascriptallonge-once.",
-      "pages_written": [
-        "javascriptallonge-once"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -488,12 +432,10 @@
         93
       ],
       "tokens": 1568,
-      "status": "done",
-      "notes": "Created the source page for the 'Left-Variadic Functions' chapter (pages 89-93) from JavaScript Allongé. The page covers variadic functions, left-variadic functions, and destructuring, including examples of `leftVariadic` and `leftGather` utilities. No additional entity or concept pages were created as the chunk focused on a single topic.",
-      "pages_written": [
-        "javascriptallonge-left-variadic-functions"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -505,12 +447,10 @@
         99
       ],
       "tokens": 2368,
-      "status": "done",
-      "notes": "Created the main chapter page for 'Picking the Bean: Choice and Truthiness' (pages 94-99) from 'JavaScript Allongé'. Key claims covered include truthiness and falsiness in JavaScript, logical operators (!, &&, ||) operating on truthiness, and the ternary operator as a control-flow operator. No additional entity or concept pages were created as the chunk did not introduce new topics requiring dedicated pages.",
-      "pages_written": [
-        "javascriptallonge-picking-the-bean-choice-and-truthiness"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -522,12 +462,10 @@
         100
       ],
       "tokens": 80,
-      "status": "done",
-      "notes": "Created the chapter page 'javascriptallonge-composing-and-decomposing-data' summarizing the section on recursion as a foundational concept in computation. Key claim: Recursion is the root of computation since it trades description for time. No additional pages were created as the chunk was minimal and did not introduce new entities or concepts beyond the scope of the chapter.",
-      "pages_written": [
-        "javascriptallonge-composing-and-decomposing-data"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -539,12 +477,10 @@
         108
       ],
       "tokens": 2298,
-      "status": "done",
-      "notes": "Created the main chapter page for 'Arrays and Destructuring Arguments' (raw/javascriptallonge.pdf p.101-108). Key claims covered: arrays as native representation of lists, literal syntax using square brackets, element extraction via bracket notation, destructuring for extracting array elements, and gathering for extracting head and rest of arrays. No additional entities or concepts required beyond the main chapter page.",
-      "pages_written": [
-        "javascriptallonge-arrays-and-destructuring-arguments"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -556,12 +492,10 @@
         116
       ],
       "tokens": 2906,
-      "status": "done",
-      "notes": "Created the source summary page for the 'Self-Similarity' chapter (pages 109-116) from 'JavaScript Allongé'. This chapter covers recursion, linear recursion, mapping, and folding in the context of JavaScript data structures. No additional concept pages were created as they were not authorized in the ingest plan. The main page 'javascriptallonge-self-similarity' was written with key claims and examples from the chapter.",
-      "pages_written": [
-        "javascriptallonge-self-similarity"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -572,13 +506,11 @@
         117,
         125
       ],
-      "tokens": 3065,
-      "status": "done",
-      "notes": "Created source page for 'javascriptallonge-tail-calls-and-default-arguments'. The chunk covered tail-call optimization techniques and default arguments in JavaScript, showing how to convert recursive functions into tail-recursive forms to avoid stack growth issues and how default arguments can simplify function calls. No additional entity or concept pages were created as the chunk's focus was on these specific techniques.",
-      "pages_written": [
-        "javascriptallonge-tail-calls-and-default-arguments"
-      ],
-      "route_plan_pages": 1,
+      "tokens": 3233,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -590,12 +522,10 @@
         131
       ],
       "tokens": 2354,
-      "status": "done",
-      "notes": "Created source page for 'Garbage, Garbage Everywhere' (javascriptallonge-garbage-garbage-everywhere). Key claims: Tail calls optimize space but array operations still create temporary arrays causing performance issues; JavaScript engines copy array elements one at a time; thrashing from short-lived arrays is very bad. Entities touched: Lisp, IBM 704, cons cell, CAR/CDR instructions. Pages written: 1 (the chapter summary page).",
-      "pages_written": [
-        "javascriptallonge-garbage-garbage-everywhere"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -607,12 +537,10 @@
         140
       ],
       "tokens": 2812,
-      "status": "done",
-      "notes": "Created the source page for 'Plain Old JavaScript Objects' (raw/javascriptallonge.pdf p.132-140). Updated the index. No additional entity or concept pages were created as the chunk's content was adequately covered by the source summary page and existing related pages. Key claims include object literal syntax, key-value access, destructuring, and linked list implementation using objects.",
-      "pages_written": [
-        "javascriptallonge-plain-old-javascript-objects"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -624,12 +552,10 @@
         147
       ],
       "tokens": 2044,
-      "status": "done",
-      "notes": "Created the main chapter page for 'Mutation' (javascriptallonge-mutation). This page covers key concepts such as mutation, aliasing, and structure sharing in JavaScript. The page summarizes the chapter's content and includes key claims about how mutation works in JavaScript, the implications of aliasing, and patterns for using mutation effectively. No additional pages were created as the PagePlan only authorized the main chapter page.",
-      "pages_written": [
-        "javascriptallonge-mutation"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -641,12 +567,10 @@
         157
       ],
       "tokens": 2818,
-      "status": "done",
-      "notes": "Created the main chapter page for the Reassignment section (javascriptallonge-reassignment) summarizing key concepts around rebinding, scoping, and the differences between const, let, and var. The ingest route plan was strictly followed with only the planned page created. No additional pages were written as they were not authorized by the deterministic PagePlan.",
-      "pages_written": [
-        "javascriptallonge-reassignment"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -658,12 +582,10 @@
         163
       ],
       "tokens": 1909,
-      "status": "done",
-      "notes": "Created a source summary page for the copy-on-write strategy discussed in 'Composing and Decomposing Data' (pages 158-163). The page covers key concepts such as copy-on-write, copy-on-read, and structure sharing, with examples demonstrating how these strategies apply to arrays and linked lists. No additional entity or concept pages were created in this chunk.",
-      "pages_written": [
-        "javascriptallonge-copy-on-write"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -675,12 +597,10 @@
         166
       ],
       "tokens": 1030,
-      "status": "done",
-      "notes": "Created the main chapter page for 'Tortoises, Hares, and Teleporting Turtles' from JavaScript Allongé. The page summarizes the key claims about loop detection algorithms, including the Tortoise and Hare algorithm and the Teleporting Turtle algorithm, with citations to raw/javascriptallonge.pdf p.164-166. No additional pages were created as the plan only authorized the main chapter page.",
-      "pages_written": [
-        "javascriptallonge-tortoises-hares-and-teleporting-turtles"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -692,12 +612,10 @@
         176
       ],
       "tokens": 2902,
-      "status": "done",
-      "notes": "Created the source page for the Functional Iterators chapter (pages 167-176) from JavaScript Allong'e. Key claims include separation of traversal and operations via folding, iterator implementation with while loops, lazy evaluation, and iterator composition through mapping and filtering. No additional entity or concept pages were created as the chunk focused on foundational iterator concepts without introducing new named entities or complex ideas requiring separate treatment.",
-      "pages_written": [
-        "javascriptallonge-functional-iterators"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -709,12 +627,10 @@
         190
       ],
       "tokens": 4453,
-      "status": "done",
-      "notes": "Created the main chapter page 'javascriptallonge-making-data-out-of-functions' covering combinatory logic, K, I, and V combinators, and how functions can represent data structures like pairs and lists. No additional pages were created as the plan only authorized the main chapter page.",
-      "pages_written": [
-        "javascriptallonge-making-data-out-of-functions"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -726,12 +642,10 @@
         192
       ],
       "tokens": 129,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-recipes-with-data' summarizing the 'Recipes with Data' chapter. Key claims: recipes are written for practicality and align with the language's spirit. No additional entity/concept pages were created as the chunk did not introduce new terms requiring dedicated pages.",
-      "pages_written": [
-        "javascriptallonge-recipes-with-data"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -743,12 +657,10 @@
         194
       ],
       "tokens": 562,
-      "status": "done",
-      "notes": "Created the source page for mapWith from JavaScript Allongé. The page summarizes the concept of mapWith, its differences from map, and its convenience as an abstraction. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-mapwith"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -760,12 +672,10 @@
         197
       ],
       "tokens": 782,
-      "status": "done",
-      "notes": "Created the javascriptallonge-flip source page covering flip functions and currying techniques. The page includes key concepts like argument reversal, currying, and function composition. It also covers how flip functions handle context differently for methods. No additional pages were created or updated as the chunk focused specifically on flip functions rather than related concepts like mapWith.",
-      "pages_written": [
-        "javascriptallonge-flip"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -777,12 +687,10 @@
         200
       ],
       "tokens": 420,
-      "status": "done",
-      "notes": "Created the source page for the Object.assign chapter (javascriptallonge-object-assign) from JavaScript Allongé. Key claims covered: Object.assign extends objects by assigning properties, and it can copy properties from one object to another. No additional entity or concept pages were created in this chunk.",
-      "pages_written": [
-        "javascriptallonge-object-assign"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -794,12 +702,10 @@
         201
       ],
       "tokens": 384,
-      "status": "done",
-      "notes": "Created the chapter page 'javascriptallonge-why' covering the Y Combinator. Key claims: The Y Combinator enables recursive functions without binding names, it's essential in combinatory logic, and the joy of working things out is emphasized. No additional pages were created as the chunk focused solely on the Y Combinator.",
-      "pages_written": [
-        "javascriptallonge-why"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -811,12 +717,10 @@
         204
       ],
       "tokens": 840,
-      "status": "done",
-      "notes": "Created the source page for 'A Warm Cup: Basic Strings and Quasi-Literals' (raw/javascriptallonge.pdf p.202-204). Key claims covered include string literals with escape sequences, string concatenation using '+', the concept of quasi-literals (template strings) with expression interpolation using '${}', and the late evaluation of quasi-literals. No additional entity or concept pages were created beyond the chapter summary.",
-      "pages_written": [
-        "javascriptallonge-a-warm-cup-basic-strings-and-quasi-literals"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -828,12 +732,10 @@
         205
       ],
       "tokens": 57,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-served-by-the-pot-collections' summarizing the 'Served by the Pot: Collections' section from JavaScript Allongé. Key claim: JavaScript collections are like coffee pots, serving different sizes and colours of data. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-served-by-the-pot-collections"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -845,12 +747,10 @@
         223
       ],
       "tokens": 5192,
-      "status": "done",
-      "notes": "Created the source page for the 'Iteration and Iterables' chapter (pages 206-223) from JavaScript Allongé. The page covers functional iterators, iterator objects, and the Symbol.iterator method. No additional entity or concept pages were created as the content did not warrant new pages beyond the chapter summary.",
-      "pages_written": [
-        "javascriptallonge-iteration-and-iterables"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -862,12 +762,10 @@
         245
       ],
       "tokens": 5657,
-      "status": "done",
-      "notes": "Created the source page for the 'Generating Iterables' chapter (pages 224-245) from JavaScript Allongé. The page covers generators, iterators, and their application in recursive data structures and state machines like Fibonacci sequences. No additional entity or concept pages were created as the chunk's content was adequately covered by the source summary page and existing related pages.",
-      "pages_written": [
-        "javascriptallonge-generating-iterables"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -879,12 +777,10 @@
         260
       ],
       "tokens": 3687,
-      "status": "done",
-      "notes": "Key claims from the Lazy and Eager Collections chapter (pages 246-260): Lazy collections avoid computing values until needed, improving efficiency. Object-oriented collections should have methods for mapping, reducing, filtering, and finding, but delegate work to operations like mapWith. Eager collections, like arrays, return collections of their own type from methods, while lazy collections return iterable objects. Lazy evaluation is beneficial for memory footprint, especially with large collections and many operations. Lazy collections can work with infinite data structures, unlike eager collections which require finite data. Pages written: javascriptallonge-lazy-and-eager-collections.",
-      "pages_written": [
-        "javascriptallonge-lazy-and-eager-collections"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -896,12 +792,10 @@
         272
       ],
       "tokens": 3482,
-      "status": "done",
-      "notes": "Written the main chapter page 'javascriptallonge-interlude-the-carpenter-interviews-for-a-job' and identified key concepts for future pages. The chunk covered a technical interview problem involving cycle detection on a checkerboard game, with solutions using the Tortoise and Hare algorithm and alternative approaches. Key entities included The Carpenter, Christine, and Bob Plissken. The main technical concepts were cycle detection, iterables, and generators.",
-      "pages_written": [
-        "javascriptallonge-interlude-the-carpenter-interviews-for-a-job"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -913,12 +807,10 @@
         283
       ],
       "tokens": 2681,
-      "status": "done",
-      "notes": "Created the source page for the 'Interactive Generators' chapter (javascriptallonge-interactive-generators). The page summarizes the key concepts of using generators for stateful functions and interactive state management, including examples with naughts and crosses game implementation. No additional entity or concept pages were created as the chunk focused primarily on the generator interaction pattern.",
-      "pages_written": [
-        "javascriptallonge-interactive-generators"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -930,12 +822,10 @@
         287
       ],
       "tokens": 784,
-      "status": "done",
-      "notes": "Created the chapter page 'javascriptallonge-basic-operations-on-iterables' summarizing basic operations on iterables. Key claims include definitions of mapWith, filterWith, compact, zip, zipWith, reduceWith, and first. No additional entities touched beyond the scope of the chapter.",
-      "pages_written": [
-        "javascriptallonge-basic-operations-on-iterables"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -947,12 +837,10 @@
         288
       ],
       "tokens": 42,
-      "status": "done",
-      "notes": "Created a source summary page for the 'The Golden Crema: Appendices and Afterwords' section from JavaScript Allongé. Key claim: The picture of the La Marzocco machine is intentionally omitted to emphasize conceptual over visual representation. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-the-golden-crema-appendices-and-afterwords"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -964,12 +852,10 @@
         290
       ],
       "tokens": 623,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-how-to-run-the-examples' summarizing how to run examples from JavaScript Allongé using transpilers like Traceur and Babel. Key claims covered: use of transpilers for ECMAScript 2015 to 5 conversion, example code transformations, use of browser console for results, and installation options with Node.js. No additional entity or concept pages were created as this chunk focused on practical execution guidance rather than theoretical content.",
-      "pages_written": [
-        "javascriptallonge-how-to-run-the-examples"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -981,12 +867,10 @@
         292
       ],
       "tokens": 334,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-thanks' summarizing the Thanks section of JavaScript Allongé, citing inspirations from Daniel Friedman & Matthias Felleisen's 'The Little Schemer' and Richard Feynman's 'QED'. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-thanks"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -998,12 +882,10 @@
         296
       ],
       "tokens": 2889,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-copyright-notice' summarizing the copyright and image credits section (pages 293-296) of JavaScript Allongé. The page includes key claims about the copyright of the text and the various image copyrights and licenses. No other pages were created or updated in this chunk.",
-      "pages_written": [
-        "javascriptallonge-copyright-notice"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     },
@@ -1015,12 +897,10 @@
         297
       ],
       "tokens": 214,
-      "status": "done",
-      "notes": "Created the source page 'javascriptallonge-about-the-author' summarizing the 'About The Author' section from JavaScript Allongé. Key claims included Reg Braithwaite's authorship of the book and his programming libraries. No additional pages were created as the chunk was focused solely on the author's biography and contact information.",
-      "pages_written": [
-        "javascriptallonge-about-the-author"
-      ],
-      "route_plan_pages": 1,
+      "status": "pending",
+      "notes": "",
+      "pages_written": [],
+      "route_plan_pages": 0,
       "route_plan_gaps": 0,
       "route_gap_summaries": []
     }

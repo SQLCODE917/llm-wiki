@@ -31,6 +31,31 @@ def test_best_evidence_ids_prefers_exact_table_row_evidence() -> None:
     assert evidence_ids == ("evidence-table",)
 
 
+def test_best_evidence_ids_tolerates_non_text_payloads() -> None:
+    record = EvidenceRecord(
+        evidence_id="evidence-weird",
+        source_locator="rules.md",
+        source_hash="source-hash",
+        source_range_id="source-range-rules",
+        line_range=(1, 4),
+        excerpt=object(),  # type: ignore[arg-type]
+        excerpt_digest="evidence-weird",
+        evidence_kind="source-claim",
+        source_claim_id="claim-weird",
+    )
+
+    assert best_evidence_ids((record,), {"table": "not normalized yet"}) == ("evidence-weird",)
+
+
+def test_best_evidence_ids_bounds_pathological_excerpts() -> None:
+    records = (
+        _record("evidence-long", "noise " * 50_000),
+        _record("evidence-hit", "A hit check uses 2D before damage is calculated."),
+    )
+
+    assert best_evidence_ids(records, "hit check 2D") == ("evidence-hit",)
+
+
 def test_table_atoms_use_matching_table_evidence_and_claim() -> None:
     plan, registry = _table_plan()
     table_record = next(

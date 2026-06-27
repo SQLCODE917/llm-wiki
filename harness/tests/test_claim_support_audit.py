@@ -144,8 +144,7 @@ def test_source_summary_excerpts_rank_citation_evidence_by_claim_terms() -> None
                 source_range_id=source_range.source_range_id,
                 line_range=(2, 2),
                 excerpt=(
-                    "Players choose a race such as human, dwarf, grassrunner, elf, "
-                    "or half-elf."
+                    "Players choose a race such as human, dwarf, grassrunner, elf, or half-elf."
                 ),
                 excerpt_digest="races",
                 evidence_kind="citation",
@@ -374,4 +373,3 @@ def _registry(
             ),
         ),
     )
-

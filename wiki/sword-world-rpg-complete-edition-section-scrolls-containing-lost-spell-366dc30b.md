@@ -1,0 +1,19 @@
+---
+page_id: sword-world-rpg-complete-edition-section-scrolls-containing-lost-spell-366dc30b
+page_kind: source
+summary: **Scrolls Containing Lost Spell**: 1 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-scrolls-containing-lost-spell-366dc30b@3bec3c630f974249e2e6d733a3e9a6b1
+---
+
+# **Scrolls Containing Lost Spell**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- Spellbooks and scrolls containing lost spells can be found as treasure in the ruins of the ancient kingdom, and by studying them, you can learn lost spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08003))_

@@ -1,0 +1,31 @@
+---
+page_id: sword-world-rpg-complete-edition-section-follow-agility-equipment-restriction-a84be9e0
+page_kind: source
+summary: **[** ⑬ **Follow [Agility] (Equipment restriction)**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-follow-agility-equipment-restriction-a84be9e0@e94e24426018bf15bd01e3ccd5b9c90d
+---
+
+# **[** ⑬ **Follow [Agility] (Equipment restriction)**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- This is the ability to follow an opponent without them noticing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
+- A tie is a failure to follow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
+- What action the person takes after that is up to them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03353))_
+- If you fail, your opponent will realize that they are being followed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03353))_
+- What action the person takes after that is up to them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03353))_
+
+## Technical atoms
+
+> Context: You can jump over obstacles using _(pole) high jump_ or _(pole) long jump_ . For more information, please refer to the rules for ⑤ Long Jump/High Jump (see p. 122) under _6.6: Common Adventurer Abilities_ . The methods for determining target scores, etc. are included there.
+_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03350))_
+
+> The side that's following must use _thief skill level + agility bonus_ as their baseline score, while the side being followed must use _adventurer level + intelligence bonus_ , and success or failure is determined by comparing the final scores of their success rolls.
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_

@@ -97,9 +97,7 @@ def test_source_plan_selects_contract_and_page_plan_resolves_it() -> None:
     hub = next(write for write in plan.planned_writes if write.page_metadata.page_id == "article")
     assert alpha.resolved_page_body_contract.contract_id == "brief-source"
     assert alpha.resolved_page_body_contract.max_words == 72
-    assert alpha.resolved_page_body_contract.required_uncertainty_terms == (
-        "does not confirm",
-    )
+    assert alpha.resolved_page_body_contract.required_uncertainty_terms == ("does not confirm",)
     assert hub.resolved_page_body_contract.contract_id == "source-summary"
     assert "ResolvedPageBodyContract `brief-source`" in observation_report(plan)
 

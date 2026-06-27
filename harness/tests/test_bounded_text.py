@@ -16,8 +16,7 @@ def test_sentence_fragments_handles_one_character_sentence() -> None:
 
 def test_claim_sentences_materializes_bounded_fragments() -> None:
     claims = claim_sentences(
-        "Roll dice before combat. Add final modifier to result. "
-        + "long procedure text " * 2000
+        "Roll dice before combat. Add final modifier to result. " + "long procedure text " * 2000
     )
 
     assert claims[:2] == ("Roll dice before combat.", "Add final modifier to result.")

@@ -1,0 +1,31 @@
+---
+page_id: sword-world-rpg-complete-edition-section-centaur-0c0a9454
+page_kind: source
+summary: **[ Centaur ]**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-centaur-0c0a9454@88f1a1988d2663aedcb25ff23a1da830
+---
+
+# **[ Centaur ]**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- Rarity=9 Agility=14 Movement Speed=30 Number=Several to around ten Frequency=Moderate Intellect=Human Reaction=Neutral Attack Points=Spear:10 (3)/Heel:10 (3) Strike Points=12/12 Attack Points=Bow:11 (4) Strike Points=12 Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=19/13 (6) Mental Points/Resistance=13/12 (5) Special Abilities=4th level ancient magic (Magic Intensity/Magic Power=13/6) rarely Habitat=Meadows Languages=Centaurian Perception=Five senses _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05371))_
+- Centaurs are a meadow-dwelling race that are human from the waist up and horse from the waist down. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05372))_
+- They are not interested in money, but aside from that, if you bring them a suitable gift, you may be able to form a friendship. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05373))_
+- They use bows and arrows or spears as weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05374))_
+- It is said that there are very rare centaurs who have very advanced knowledge and can use magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
+
+## Technical atoms
+
+> Context: In combat, an androscorpio uses a sword in his hand, but he can also attack with his tail at the same time. The stinger at the tip of his tail contains a hallucinogenic poison (toxicity score 11). Those wounded by a tail attack and fail a life force resistance roll will experience hallucinations starting on the next round. The enemy's appearance can change, or it can appear as multiple . This symptom lasts for one hour, during which time the victim suffers a -4 penalty on all success rolls.
+_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05368))_
+
+> Monster Level=4
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05370))_

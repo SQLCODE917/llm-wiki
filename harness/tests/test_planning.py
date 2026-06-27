@@ -693,14 +693,9 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
     store = PagePlanSpyStore(paths)
     extraction = _fake_extraction(paths)
-    script = (
-        _turns(FUNCTIONS_PAGE, "finish_chunk", "noted functions")
-        + _turns(CLOSURES_PAGE, "finish_chunk", "noted closures")
-        + _turns(BOOK_HUB, "finish_ingest", "hub written")
-    )
     session = Session(
         store=store,
-        client=FakeClient(script),
+        client=FakeClient([]),
         context_manager=ContextManager(strategy=NoCompact(), budget_tokens=32768),
         today=TODAY,
         runs_dir=paths.root / "runs",
@@ -710,7 +705,14 @@ async def test_fake_pdf_ingest_persists_page_plan_before_writes(paths: WikiPaths
 
     await session.ingest("book.pdf")
 
-    assert store.write_checks == [FUNCTIONS_PAGE, CLOSURES_PAGE, BOOK_HUB]
+    assert store.write_checks == [BOOK_HUB]
+    assert "projection_coverage:" in store.read_page(BOOK_HUB)
+    assert "functions are values" in store.read_page(BOOK_HUB)
+    ledger_dir = store.page_plan_artifact_dir("book.pdf") / "ledger"
+    assert (ledger_dir / "claim-ledger.json").is_file()
+    assert (ledger_dir / "projection-coverage.json").is_file()
+    assert (ledger_dir / "section-plan.json").is_file()
+    assert (ledger_dir / "topics.json").is_file()
     plan_json = (store.page_plan_artifact_dir("book.pdf") / "page-plan.json").read_text(
         encoding="utf-8"
     )

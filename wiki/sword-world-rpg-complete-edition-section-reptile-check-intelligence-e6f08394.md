@@ -1,0 +1,27 @@
+---
+page_id: sword-world-rpg-complete-edition-section-reptile-check-intelligence-e6f08394
+page_kind: source
+summary: **Reptile Check [Intelligence]**: 9 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-reptile-check-intelligence-e6f08394@69734e70cdc54d51db5b46c082c7c9a8
+---
+
+# **Reptile Check [Intelligence]**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- Dragon priests have knowledge of dragons, their subspecies such as wyrms, wyverns, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04193))_
+- For these monsters only, they can identify them with a success roll using _dragon priest skill + intelligence bonus_ as the baseline score, just like the sage skill’s _monster check_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04193))_
+- For these monsters only, they can identify them with a success roll using _dragon priest skill + intelligence bonus_ as the baseline score, just like the sage skill’s _monster check_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04193))_
+- Dragon priests have knowledge of dragons, their subspecies such as wyrms, wyverns, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04193))_
+- However, the original cause of this incident was that the savage tribes on the shores of Lake Air, where Krish was born and raised, were all exterminated because they were evil believers who worshiped dragons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04194))_
+- It is a famous story that the evil dragon that destroyed the kingdom of Moraana, which had flourished in the central part of Alecrast, was the reincarnation of Krish, a user of dragon roar magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04194))_
+- Since their lifestyle, such as _eating only raw food_ , _worshiping fire_ , _regarding poison as sacred_ , etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04194))_
+- However, the original cause of this incident was that the savage tribes on the shores of Lake Air, where Krish was born and raised, were all exterminated because they were evil believers who worshiped dragons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04194))_
+- For the _summon_ magic described below, the dragon priest must know the creature they're trying to summon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04195))_

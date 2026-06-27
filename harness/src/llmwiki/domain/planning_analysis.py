@@ -200,8 +200,7 @@ def wiki_matches(
 ) -> tuple[WikiMatch, ...]:
     match_texts = {page_id: page_match_text(text) for page_id, text in existing_pages.items()}
     page_terms = {
-        page_id: frozenset(tokens(f"{page_id} {text}"))
-        for page_id, text in match_texts.items()
+        page_id: frozenset(tokens(f"{page_id} {text}")) for page_id, text in match_texts.items()
     }
     matches: list[WikiMatch] = []
     for unit in units:
@@ -300,9 +299,9 @@ def _candidate_match_page_ids(
         if rank[0] > 0:
             ranked.append((rank, page_id))
     ranked.sort(key=lambda item: (-item[0][0], -item[0][1], -item[0][2], item[1]))
-    return tuple(
-        page_id for _, page_id in ranked[:_WIKI_MATCH_CANDIDATE_LIMIT]
-    )[:_WIKI_MATCH_CANDIDATE_LIMIT]
+    return tuple(page_id for _, page_id in ranked[:_WIKI_MATCH_CANDIDATE_LIMIT])[
+        :_WIKI_MATCH_CANDIDATE_LIMIT
+    ]
 
 
 def _candidate_match_rank(

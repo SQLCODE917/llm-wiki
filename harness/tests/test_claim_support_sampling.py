@@ -121,9 +121,7 @@ def _multi_page_source_summary_frame(
     source_locator: str,
     pages: tuple[tuple[str, tuple[str, ...]], ...],
 ) -> tuple[dict[str, str], tuple[SourceSummaryDraftArtifact, ...], EvidenceRegistry]:
-    source_text = "\n".join(
-        claim_text for _, claim_texts in pages for claim_text in claim_texts
-    )
+    source_text = "\n".join(claim_text for _, claim_texts in pages for claim_text in claim_texts)
     source = source_text_from_text(source_locator, source_text)
     page_texts: dict[str, str] = {}
     artifacts: list[SourceSummaryDraftArtifact] = []

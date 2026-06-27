@@ -379,14 +379,31 @@ async def _run(args: argparse.Namespace) -> OperationResult:
     ingest_profiles: tuple[IngestProfile, ...] = ()
     if args.op == "ingest":
         ingest_profiles = _select_profiles(paths, args.profile)
+        print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
+        print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
+        print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
+        store = WikiStore(paths)
+        store.ensure_navigation_files()
+        session = Session(
+            store=store,
+            client=None,
+            context_manager=ContextManager(strategy=NoCompact(), budget_tokens=1),
+            today=now.date().isoformat(),
+            runs_dir=paths.runs_dir,
+            run_id=now.strftime("%Y-%m-%d-%H%M%S"),
+            extract_pdf=_pdf_extractor(paths, getattr(args, "pdf_extractor", "docling")),
+            on_chunk_note=lambda note: print(note, flush=True),
+            strict_evidence=strict_evidence,
+            ingest_profiles=ingest_profiles,
+        )
+        return await session.ingest(
+            args.source, reextract=args.reextract, reintegrate=args.reintegrate
+        )
     backend_config = load_backend_config(args.runtime)
     backend = await start_backend(backend_config)
     try:
         print(f"[runtime: {backend.summary}]", file=sys.stderr)
         print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
-        if args.op == "ingest":
-            print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
-            print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
         store = WikiStore(paths)
         store.ensure_navigation_files()
         session = Session(
@@ -401,10 +418,6 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             strict_evidence=strict_evidence,
             ingest_profiles=ingest_profiles,
         )
-        if args.op == "ingest":
-            return await session.ingest(
-                args.source, reextract=args.reextract, reintegrate=args.reintegrate
-            )
         if args.op == "query":
             return await session.query(args.question)
         if args.op == "chat":

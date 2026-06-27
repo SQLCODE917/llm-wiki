@@ -73,9 +73,7 @@ class WriteFixedSourcePageParams(BaseModel):
                 data["summary"] = clean_summary.strip()
                 data["page_body"] = page_body
         if isinstance(data.get("claim_bullets"), list):
-            data["claim_bullets"] = [
-                rescue_claim_bullet(item) for item in data["claim_bullets"]
-            ]
+            data["claim_bullets"] = [rescue_claim_bullet(item) for item in data["claim_bullets"]]
         return data
 
     @field_validator("sources", mode="before")
@@ -90,6 +88,7 @@ class WriteFixedSourcePageParams(BaseModel):
                 return [_normalize_source_value(str(item)) for item in parsed]
             return [_normalize_source_value(value)]
         return value
+
 
 def write_fixed_source_page_tool(
     store: WikiStore,
@@ -196,10 +195,7 @@ def _source_summary_fields_to_page_body(
         for bullet in claim_bullets
     )
     return (
-        "## Source record\n\n"
-        f"{source_record_text.strip()}\n\n"
-        "## Key supported claims\n\n"
-        f"{bullets}"
+        f"## Source record\n\n{source_record_text.strip()}\n\n## Key supported claims\n\n{bullets}"
     )
 
 

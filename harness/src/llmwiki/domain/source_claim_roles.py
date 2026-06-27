@@ -145,9 +145,9 @@ def _role_matches(
             or _has_any_phrase(lowered, _MODALITY_PHRASES)
         )
     if role == "source-framing":
-        return _has_any_phrase(
-            lowered, SOURCE_FRAMING_PREFIXES + _SOURCE_FRAMING_PHRASES
-        ) or ("this is exactly how" in lowered and "works" in lowered)
+        return _has_any_phrase(lowered, SOURCE_FRAMING_PREFIXES + _SOURCE_FRAMING_PHRASES) or (
+            "this is exactly how" in lowered and "works" in lowered
+        )
     if role == "analogy":
         return _has_any_phrase(lowered, _ANALOGY_PHRASES)
     if role == "worked-example":
@@ -174,42 +174,48 @@ def _role_matches(
     if role == "provenance":
         return "from" in word_set or "retrieved" in word_set or _has_stem(words, "origin")
     if role == "temporal":
-        return _has_year(words) or _has_any_word(word_set, ("bc", "ad", "year")) or _has_stem(
-            words, "centur"
+        return (
+            _has_year(words)
+            or _has_any_word(word_set, ("bc", "ad", "year"))
+            or _has_stem(words, "centur")
         )
     if role == "quantitative":
         return _has_digit(words) or _has_any_phrase(lowered, ("at least", "more than", "roughly"))
     if role == "function":
-        return _has_any_stem(
-            words,
-            (
-                "track",
-                "predict",
-                "show",
-                "represent",
-                "encode",
-                "return",
-                "combine",
-                "call",
-                "transform",
-            ),
-        ) or "advance" in word_set
+        return (
+            _has_any_stem(
+                words,
+                (
+                    "track",
+                    "predict",
+                    "show",
+                    "represent",
+                    "encode",
+                    "return",
+                    "combine",
+                    "call",
+                    "transform",
+                ),
+            )
+            or "advance" in word_set
+        )
     if role == "mechanism":
         return _has_any_word(word_set, ("consists", "case", "crank", "through")) or _has_stem(
             words, "gear"
         )
     if role == "comparison":
-        return "matched" in word_set or "compared" in word_set or "than" in word_set or _has_stem(
-            words, "surpass"
+        return (
+            "matched" in word_set
+            or "compared" in word_set
+            or "than" in word_set
+            or _has_stem(words, "surpass")
         )
     if role == "relationship":
         return _has_any_word(word_set, ("between", "with")) or _has_any_stem(
             words, ("link", "connect")
         )
     if role == "requirement":
-        return _has_any_word(word_set, ("must", "shall", "should")) or _has_stem(
-            words, "require"
-        )
+        return _has_any_word(word_set, ("must", "shall", "should")) or _has_stem(words, "require")
     if role == "procedure":
         return (
             _has_any_word(word_set, ("process", "workflow", "then", "next", "finally"))

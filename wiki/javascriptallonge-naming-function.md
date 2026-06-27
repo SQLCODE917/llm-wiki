@@ -1,0 +1,71 @@
+---
+page_id: javascriptallonge-naming-function
+page_kind: concept
+summary: Naming Functions: 33 statement(s) and 13 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-27
+domain: javascriptallonge
+category_path: concepts
+projection_coverage: topic-javascriptallonge-naming-function@cf7e102c9561b3275b3528cfc80a0a58
+---
+
+# Naming Functions
+
+What [[javascriptallonge]] covers about naming functions:
+
+## Statements
+
+- This means that if we want our functions to return a value, we always need to use the return keyword _(javascriptallonge.pdf (source-range-83ecb080-00708))_
+- While the name of the function is a property of the function, not of the environment. _(javascriptallonge.pdf (source-range-83ecb080-00720))_
+- First, function declarations are _hoisted_ to the top of the function in which they occur. _(javascriptallonge.pdf (source-range-83ecb080-00750))_
+- Function declarations are formally only supposed to be made at what we might call the “top level” of a function. _(javascriptallonge.pdf (source-range-83ecb080-00764))_
+- This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous. _(javascriptallonge.pdf (source-range-83ecb080-00696))_
+- Now, the function’s actual name has no effect on the environment in which it is used. _(javascriptallonge.pdf (source-range-83ecb080-00729))_
+- Here’s a function that determines whether a positive integer is even or not. _(javascriptallonge.pdf (source-range-83ecb080-00733))_
+- We haven’t actually bound a function to the name fizzbuzz before we try to use it, so we get an error. _(javascriptallonge.pdf (source-range-83ecb080-00755))_
+- Function declarations are not supposed to occur inside of blocks. _(javascriptallonge.pdf (source-range-83ecb080-00770))_
+- Until ECMAScript 2015 was created, function was the usual syntax for writing functions. _(javascriptallonge.pdf (source-range-83ecb080-00698))_
+- JavaScript _does_ have a syntax for naming a function, we use the function keyword. _(javascriptallonge.pdf (source-range-83ecb080-00698))_
+- We have arguments in parentheses, just like fat arrow functions. _(javascriptallonge.pdf (source-range-83ecb080-00706))_
+- That may seem confusing, but think of the binding names as properties of the environment, not of the function. _(javascriptallonge.pdf (source-range-83ecb080-00720))_
+- This is a _named function expression_ . _(javascriptallonge.pdf (source-range-83ecb080-00720))_
+
+## Technical atoms
+
+> Context: Let’s get right to it. This code does _not_ name a function: It doesn’t name the function “repeat” for the same reason that const answer = 42 doesn’t name the number 42. This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
+_(context: javascriptallonge.pdf (source-range-83ecb080-00694, source-range-83ecb080-00696))_
+
+> **const** repeat = (str) => str + str
+_(source: javascriptallonge.pdf (source-range-83ecb080-00695))_
+
+> Context: Here’s our repeat function written using a “fat arrow”
+_(context: javascriptallonge.pdf (source-range-83ecb080-00699))_
+
+> (str) => str + str
+_(source: javascriptallonge.pdf (source-range-83ecb080-00700))_
+
+> We always use a block, we cannot write function (str) str + str.
+_(source: javascriptallonge.pdf (source-range-83ecb080-00708))_
+
+> Context: If we leave out the “something optional” that comes after the function keyword, we can translate all of the fat arrow functions that we’ve seen into function keyword functions, e.g.
+_(context: javascriptallonge.pdf (source-range-83ecb080-00709))_
+
+> (n) => (1.618**n - -1.618**-n) / 2.236
+_(source: javascriptallonge.pdf (source-range-83ecb080-00710))_
+
+> Context: Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
+_(context: javascriptallonge.pdf (source-range-83ecb080-00718))_
+
+> **const double** = **function** repeat (str) { **return** str + str; }
+_(source: javascriptallonge.pdf (source-range-83ecb080-00719))_
+
+> Context: Now, the function’s actual name has no effect on the environment in which it is used. To whit:
+_(context: javascriptallonge.pdf (source-range-83ecb080-00729))_
+
+> **const** bindingName = **function** actualName () { _//..._
+_(source: javascriptallonge.pdf (source-range-83ecb080-00730))_
+
+
+## Source
+
+- [[javascriptallonge]]

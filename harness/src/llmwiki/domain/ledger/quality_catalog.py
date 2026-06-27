@@ -103,6 +103,8 @@ _APPLICABILITY = ReasonApplicabilityPolicy(
             "source-review-section",
             "source-review-item",
             "disposition-count",
+            "source-backed-position",
+            "cross-source-relationship",
         ),
         "technical-atom-fidelity-failure": (
             "atom-candidate",
@@ -206,6 +208,12 @@ _CHECKS: tuple[QualityCheckDefinition, ...] = (
     ),
     _ck("ck-needs-review-reason", "review-required", ("ledger-build",), ("ledger-entry",)),
     _ck(
+        "ck-named-table-reference-resolved",
+        "review-required",
+        ("ledger-build",),
+        ("ledger-entry",),
+    ),
+    _ck(
         "ck-entry-evidence-traceable", "traceability-failure", ("ledger-build",), ("ledger-entry",)
     ),
     _ck(
@@ -251,6 +259,42 @@ _CHECKS: tuple[QualityCheckDefinition, ...] = (
         "ck-projection-coverage-metric",
         "audit-metric",
         ("page-projection",),
+        ("projection-coverage-artifact",),
+    ),
+    _ck(
+        "ck-cross-source-min-support",
+        "coverage-gap",
+        ("cross-source-projection",),
+        ("projection-coverage-artifact",),
+    ),
+    _ck(
+        "ck-cross-source-position-traceable",
+        "traceability-failure",
+        ("cross-source-projection",),
+        ("source-backed-position",),
+    ),
+    _ck(
+        "ck-cross-source-relationship-arity",
+        "coverage-gap",
+        ("cross-source-projection",),
+        ("cross-source-relationship",),
+    ),
+    _ck(
+        "ck-cross-source-relationship-vocabulary",
+        "controlled-vocabulary-invalid",
+        ("cross-source-projection",),
+        ("cross-source-relationship",),
+    ),
+    _ck(
+        "ck-cross-source-page-no-internal-ids",
+        "traceability-failure",
+        ("cross-source-projection",),
+        ("page-body",),
+    ),
+    _ck(
+        "ck-cross-source-metric",
+        "audit-metric",
+        ("cross-source-projection",),
         ("projection-coverage-artifact",),
     ),
 )

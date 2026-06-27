@@ -65,6 +65,12 @@ def test_pdf_source_text_reads_extraction_cache(paths: WikiPaths) -> None:
     assert source_text.lines == ("Chunk one.", "", "Chunk two.")
 
 
+def test_page_plan_cache_is_explicit_source_text_kind() -> None:
+    source_text = source_text_from_text("book.pdf", "Recovered cached text.", "page-plan-cache")
+
+    assert source_text.source_text_kind == "page-plan-cache"
+
+
 def test_locator_match_reports_local_window_and_global_suggestions() -> None:
     registry = EvidenceRegistry(
         registry_id="test-registry",

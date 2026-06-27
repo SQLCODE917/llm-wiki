@@ -57,9 +57,7 @@ class PlannedWriteSourceSummaryParams(BaseModel):
             return value
         data: dict[str, Any] = {str(key).strip(): item for key, item in value.items()}
         if isinstance(data.get("claim_bullets"), list):
-            data["claim_bullets"] = [
-                rescue_claim_bullet(item) for item in data["claim_bullets"]
-            ]
+            data["claim_bullets"] = [rescue_claim_bullet(item) for item in data["claim_bullets"]]
         return data
 
 
@@ -181,9 +179,7 @@ def _fill_empty_claim_coverage(
     )
 
 
-def _has_no_selected_claim_coverage(
-    draft: SourceSummaryDraft, plan: SourceSummaryPlan
-) -> bool:
+def _has_no_selected_claim_coverage(draft: SourceSummaryDraft, plan: SourceSummaryPlan) -> bool:
     selected = frozenset(plan.selected_source_claims)
     return not any(
         claim_id in selected

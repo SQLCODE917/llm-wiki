@@ -32,7 +32,11 @@ from llmwiki.domain.contradictions import (
 )
 from llmwiki.domain.evidence import EvidenceLintReport, EvidencePolicy
 from llmwiki.domain.evidence_locator_index import EvidenceLocatorIndex
-from llmwiki.domain.evidence_registry import build_evidence_registry
+from llmwiki.domain.evidence_registry import (
+    SourceText,
+    build_evidence_registry,
+    source_text_from_text,
+)
 from llmwiki.domain.evidence_registry_io import registry_to_json
 from llmwiki.domain.grounding import GroundingAuditReport, GroundingSelection, GroundingVerdict
 from llmwiki.domain.ingest_profiles import (
@@ -46,6 +50,7 @@ from llmwiki.domain.ingest_route_plan import (
     IngestRoutePlanScope,
     IngestRoutePlanState,
 )
+from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.current_artifacts import build_current_ledger_artifacts
 from llmwiki.domain.links import compute_findings, extract_links
 from llmwiki.domain.objects import (
@@ -84,14 +89,19 @@ from llmwiki.domain.system_pages import (
 from llmwiki.domain.technical_atom_builder import build_technical_atom_catalog
 from llmwiki.domain.technical_atom_io import technical_atom_catalog_to_json
 from llmwiki.domain.technical_atoms import TechnicalAtomCatalog
+from llmwiki.domain.topic_navigation import reconcile_topic_links
 from llmwiki.pdf import PdfError
+from llmwiki.pdf.document import DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest
 from llmwiki.pdf.pipeline import (
     ExtractionResult,
     chunk_file,
+    read_document_model,
     read_source_text,
     save_manifest,
 )
+from llmwiki.runtime.ledger_pipeline import build_source_ledger
+from llmwiki.runtime.ledger_segmentation import ChunkText
 from llmwiki.runtime.source_summary_replay import replay_source_summary_work_unit
 from llmwiki.runtime.transcript import TranscriptWriter
 from llmwiki.store import WikiStore
@@ -101,12 +111,10 @@ from llmwiki.workflows import (
     build_claim_support_workflow,
     build_contradiction_workflow,
     build_grounding_workflow,
-    build_ingest_workflow,
     build_lint_workflow,
     build_query_workflow,
     build_semantic_lint_workflow,
 )
-from llmwiki.workflows.pdf_ingest import build_integrate_workflow, build_map_workflow
 
 _MAX_ITERATIONS = {
     "ingest": 24,
@@ -271,45 +279,16 @@ class Session:
         if reintegrate:
             raise PdfError("--reintegrate applies to chunked (PDF) sources only.")
         page_plan = self._markdown_page_plan(ingest_run, source_locator)
-        plan_report = self._persist_page_plan(source_locator, page_plan)
-        ingest_route_plan_state = self._ingest_route_plan_state(
-            source_locator, "source", page_plan=page_plan
-        )
-        write_log: list[str] = []
-        workflow = build_ingest_workflow(
-            self.store,
-            self.today,
-            self._evidence_policy(),
-            profiles=self.ingest_profiles,
+        self._persist_page_plan(source_locator, page_plan)
+        source_text = source_text_from_text(source_locator, self.store.read_source(source_locator))
+        return self._finish_ledger_ingest(
             source_locator=source_locator,
-            new_page_prefix=required_new_page_prefix(self.ingest_profiles, source_locator),
-            write_log=write_log,
-            ingest_route_plan_state=ingest_route_plan_state,
-            recoverable_tool_errors=True,
+            page_plan=page_plan,
+            chunks=_chunks_from_page_plan(page_plan),
+            document_model=None,
+            source_text=source_text,
+            ingest_run=ingest_run,
         )
-        message = (
-            f"Ingest the source 'raw/{source_locator}' into the wiki. "
-            f"Pass source_locator='{source_locator}' to read_source.\n\n"
-            "A deterministic PagePlan has already been built and persisted. "
-            "Call plan_pages only for PageIds authorized by this PagePlan.\n\n"
-            f"{plan_report}"
-        )
-        report, transcript = await self._run(workflow, message, "ingest")
-        route_summary = ingest_route_plan_state.summary()
-        written_pages = tuple(dict.fromkeys(write_log))
-        expected_writes = _expected_page_plan_writes(page_plan)
-        if (route_summary.planned_page_count or expected_writes) and not written_pages:
-            raise RuntimeError(
-                "Ingest finished without any successful page writes. "
-                "The model must write an authorized PagePlan target or move unsupported "
-                "material into route gaps before finish_ingest."
-            )
-        self._record_ingest_route_plan(
-            ingest_route_plan_state,
-            page_writes=written_pages,
-        )
-        self.store.append_log(self.today, "ingest", source_locator, report)
-        return OperationResult("ingest", source_locator, report, transcript)
 
     async def _ingest_pdf(
         self,
@@ -323,18 +302,24 @@ class Session:
         source_locator = _single_source_locator(ingest_run)
         if self.extract_pdf is None:
             raise RuntimeError("Session has no PDF extractor wired (extract_pdf).")
+        if not reextract:
+            cached_plan = self._cached_pdf_page_plan_artifact(source_locator)
+            if cached_plan is not None:
+                return self._finish_ledger_ingest(
+                    source_locator=source_locator,
+                    page_plan=cached_plan,
+                    chunks=_chunks_from_page_plan(cached_plan),
+                    document_model=None,
+                    source_text=source_text_from_text(
+                        source_locator,
+                        _source_text_from_page_plan(cached_plan),
+                        "page-plan-cache",
+                    ),
+                    ingest_run=ingest_run,
+                )
         result = self.extract_pdf(
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
-        hub = slugify(Path(source_locator).stem)
-        pdf_page_prefix = self._pdf_page_prefix(source_locator)
-        manifest = result.manifest.requeue_missing_pages(
-            frozenset(self.store.list_pages()), hub_page_id=hub
-        )
-        if manifest != result.manifest:
-            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
-            save_manifest(result)
-        total = len(manifest.chunks)
         page_plan = self._pdf_page_plan(
             ingest_run,
             source_locator,
@@ -346,192 +331,65 @@ class Session:
             page_plan,
             reuse_technical_catalog=reintegrate,
         )
-        manifest = manifest.requeue_mismatched_pages(
-            {
-                record.chunk_id: _page_plan_targets_for_chunk(page_plan, record.chunk_id, hub)
-                for record in manifest.chunks
-            }
-        )
-        if manifest != result.manifest:
-            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
-            save_manifest(result)
-        manifest = manifest.requeue_pages_with_wrong_source(
-            self._page_sources_by_id(), source_locator
-        )
-        if manifest != result.manifest:
-            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
-            save_manifest(result)
-        recovered = self._recover_pending_pdf_chunks(manifest, source_locator, page_plan)
-        if recovered != manifest:
-            manifest = recovered
-            result = ExtractionResult(manifest=manifest, cache_dir=result.cache_dir)
-            save_manifest(result)
-        if reintegrate and manifest.pending:
-            raise PdfError(
-                f"--reintegrate requires a completed ingest; raw/{source_locator} "
-                f"has {len(manifest.pending)} pending chunk(s) — run a plain "
-                "ingest to finish them first."
-            )
-        if reintegrate:
-            self._replay_completed_pdf_source_summary_pages(
-                source_locator,
-                page_plan,
-                manifest,
-            )
-
-        for work_records in _pending_pdf_work_units(page_plan, manifest.pending):
-            record = work_records[0]
-            text = _work_unit_chunk_text(result.cache_dir, work_records)
-            chunk_targets = _work_unit_targets(page_plan, work_records, hub)
-            chunk_write_ids = _work_unit_write_ids(page_plan, work_records, hub)
-            if not chunk_targets:
-                notes = _targetless_work_unit_notes(work_records)
-                gap_summary = _targetless_work_unit_gap_summary(work_records)
-                for done_record in work_records:
-                    manifest = manifest.mark_done(
-                        done_record.chunk_id,
-                        notes,
-                        route_plan_gaps=1,
-                        route_gap_summaries=(gap_summary,),
-                    )
-                save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
-                if self.on_chunk_note is not None:
-                    self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {notes}")
-                continue
-            replay = replay_source_summary_work_unit(
-                self.store,
-                self.today,
-                source_locator,
-                page_plan,
-                work_records,
-            )
-            if replay is not None:
-                for done_record in work_records:
-                    manifest = manifest.mark_done(
-                        done_record.chunk_id,
-                        replay.notes,
-                        pages_written=replay.page_ids,
-                        route_plan_pages=len(replay.page_ids),
-                    )
-                save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
-                if self.on_chunk_note is not None:
-                    self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {replay.notes}")
-                continue
-            chunk_plan_report = observation_report(
-                page_plan,
-                target_page_ids=chunk_targets,
-                target_write_ids=chunk_write_ids,
-            )
-            ingest_route_plan_state = self._ingest_route_plan_state(
-                source_locator,
-                "pdf-chunk",
-                chunk_id=record.chunk_id,
-                page_plan=page_plan,
-            )
-            section_label = _work_unit_section_label(work_records)
-            message = (
-                f"Ingest {_work_unit_name(work_records)} of {total} from "
-                f"'raw/{source_locator}'.\n"
-                f"Section: {section_label}.\n"
-                f"{_work_unit_citation_guidance(source_locator, work_records)}\n\n"
-                "A deterministic PagePlan has already been built and persisted. "
-                "For this chunk, call plan_pages using only the PageIds listed "
-                "in this scoped PagePlan report.\n\n"
-                f"{chunk_plan_report}\n\n<chunk>\n{text}\n</chunk>"
-            )
-            write_log: list[str] = []
-            notes, _ = await self._run(
-                build_map_workflow(
-                    self.store,
-                    self.today,
-                    write_log=write_log,
-                    evidence_policy=self._evidence_policy(),
-                    profiles=self.ingest_profiles,
-                    source_locator=source_locator,
-                    new_page_prefix=pdf_page_prefix,
-                    chunk_id=record.chunk_id,
-                    ingest_route_plan_state=ingest_route_plan_state,
-                    recoverable_tool_errors=True,
-                ),
-                message,
-                "pdf-chunk",
-                tag=f"pdf-chunk-{record.chunk_id:04d}",
-            )
-            route_summary = ingest_route_plan_state.summary()
-            written_pages = tuple(dict.fromkeys(write_log))
-            if route_summary.planned_page_count and not written_pages:
-                raise PdfError(
-                    f"{_work_unit_name(work_records).title()} finished without any "
-                    "successful page writes. "
-                    "The model must write an authorized PagePlan target or move unsupported "
-                    "material into route gaps before finish_chunk."
-                )
-            for done_record in work_records:
-                manifest = manifest.mark_done(
-                    done_record.chunk_id,
-                    notes,
-                    pages_written=written_pages,
-                    route_plan_pages=route_summary.planned_page_count,
-                    route_plan_gaps=route_summary.route_gap_count,
-                    route_gap_summaries=route_summary.route_gap_summaries,
-                )
-            save_manifest(ExtractionResult(manifest=manifest, cache_dir=result.cache_dir))
-            if self.on_chunk_note is not None:
-                self.on_chunk_note(f"[{_work_unit_name(work_records)}/{total}] {notes}")
-
-        salience = compute_salience(
-            self.store.page_texts(),
-            manifest.write_counts(),
-            source_text=read_source_text(result.cache_dir),
-            scope_source=source_locator,
-            exclude_inbound_from=frozenset({hub}),
-        )
-        salience_block = salience.render()
-        message = (
-            f"All {total} chunks of 'raw/{source_locator}' are ingested. Ensure the hub "
-            f"source page '{hub}' exists and links the pages written during "
-            f"chunking.\n\n{salience_block}\n\n"
-            "A deterministic PagePlan has already been built and persisted. "
-            "Call plan_pages using only the hub PageId listed in this scoped "
-            "PagePlan report.\n\n"
-            f"{observation_report(page_plan, target_page_ids=(hub,))}\n\n"
-            f"Machine-recorded chunk page map:\n\n<page-map>\n{manifest.page_map()}\n</page-map>"
-        )
-        required_link_targets, required_page_map_entries = _required_hub_page_map(
-            page_plan, manifest, hub
-        )
-        ingest_route_plan_state = self._ingest_route_plan_state(
-            source_locator, "pdf-integrate", page_plan=page_plan
-        )
-        report, transcript = await self._run(
-            build_integrate_workflow(
-                self.store,
-                self.today,
-                self._evidence_policy(),
-                profiles=self.ingest_profiles,
-                source_locator=source_locator,
-                new_page_prefix=pdf_page_prefix,
-                required_link_targets=required_link_targets,
-                required_page_map_entries=required_page_map_entries,
-                min_required_links=len(required_link_targets),
-                ingest_route_plan_state=ingest_route_plan_state,
-                recoverable_tool_errors=True,
-            ),
-            message,
-            "pdf-integrate",
-            tag="pdf-integrate",
-        )
-        self._verify_pdf_hub(
-            hub,
-            required_link_targets,
-            min_required_links=len(required_link_targets),
-        )
-        self._reconcile_hub_key_lists(hub, salience)
         save_manifest(
-            ExtractionResult(manifest=manifest.mark_integrated(), cache_dir=result.cache_dir)
+            ExtractionResult(manifest=result.manifest.mark_integrated(), cache_dir=result.cache_dir)
+        )
+        source_text = source_text_from_text(
+            source_locator, read_source_text(result.cache_dir), "pdf-cache"
+        )
+        return self._finish_ledger_ingest(
+            source_locator=source_locator,
+            page_plan=page_plan,
+            chunks=_chunks_from_page_plan(page_plan),
+            document_model=read_document_model(result.cache_dir),
+            source_text=source_text,
+            ingest_run=ingest_run,
+        )
+
+    def _finish_ledger_ingest(
+        self,
+        *,
+        source_locator: str,
+        page_plan: PagePlan,
+        chunks: tuple[ChunkText, ...],
+        document_model: DocumentModel | None,
+        source_text: SourceText,
+        ingest_run: IngestRun,
+    ) -> OperationResult:
+        registry = build_evidence_registry(page_plan, (source_text,))
+        registry_hash = short_digest(registry_to_json(registry), 32)
+        ledger = build_source_ledger(
+            source_locator=source_locator,
+            source_hash=source_text.source_hash,
+            evidence_registry_hash=registry_hash,
+            chunks=chunks,
+            document_model=document_model,
+            today=self.today,
+            schema=ingest_run.schema,
+        )
+        self.store.write_ledger_artifacts(source_locator, ledger.artifact_files)
+        written = "none (authoritative write blocked; see blocked-write-diagnostic.json)"
+        if ledger.wiki_page is not None:
+            self.store.write_page(ledger.wiki_page)
+            written = f"[[{ledger.page_id}]]"
+        for topic_page in ledger.topic_pages:
+            self.store.write_page(topic_page)
+        if ledger.wiki_page is not None:
+            keep_page_ids = {
+                ledger.wiki_page.page_id,
+                *(page.page_id for page in ledger.topic_pages),
+            }
+            self.store.delete_source_pages_not_in(source_locator, keep_page_ids)
+        if self.on_chunk_note is not None:
+            self.on_chunk_note(ledger.summary)
+        report = (
+            f"Claim-ledger ingest of raw/{source_locator} ({len(chunks)} source unit(s)).\n"
+            f"{ledger.summary}\n"
+            f"Source page: {written}; linked pages: {len(ledger.topic_pages)}. "
+            f"Ledger artifacts: {self.store.page_plan_artifact_dir(source_locator)}/ledger."
         )
         self.store.append_log(self.today, "ingest", source_locator, report)
-        return OperationResult("ingest", source_locator, report, transcript)
+        return OperationResult("ingest", source_locator, report, None)
 
     def _ingest_run(self, source_locator: str) -> IngestRun:
         raw_source = self.store.raw_source(source_locator)
@@ -606,6 +464,20 @@ class Session:
         except Exception:
             return None
         if not _pdf_page_plan_matches_manifest(plan, source_locator, manifest):
+            return None
+        return plan
+
+    def _cached_pdf_page_plan_artifact(self, source_locator: str) -> PagePlan | None:
+        cached = self.store.read_page_plan_artifact(source_locator)
+        if cached is None:
+            return None
+        try:
+            plan = page_plan_from_json(cached)
+        except Exception:
+            return None
+        if not plan.extracted_units:
+            return None
+        if not _page_plan_sources_match_source(plan, source_locator):
             return None
         return plan
 
@@ -785,13 +657,20 @@ class Session:
                 sources[page_id] = ()
         return sources
 
-    def _reconcile_hub_key_lists(self, hub: str, salience: SalienceReport) -> None:
+    def _reconcile_hub_key_lists(
+        self, hub: str, salience: SalienceReport, source_locator: str
+    ) -> None:
         """Harness-owned bookkeeping: the hub's key-lists mirror the salience
         report by construction (same contract as index.md entries)."""
         if hub not in self.store.list_pages():
             return  # no hub page; lint's findings will surface it
         page = parse_page(self.store.read_page(hub))
         body = reconcile_key_lists(page.page_body, salience)
+        body = reconcile_topic_links(
+            body,
+            self.store.read_topic_index_artifact(source_locator),
+            frozenset(self.store.list_pages()) - {hub},
+        )
         if body != page.page_body:
             metadata = replace(page.page_metadata, updated=self.today)
             self.store.write_page(WikiPage.from_metadata(metadata, body))
@@ -1208,6 +1087,22 @@ def _single_raw_source(ingest_run: IngestRun) -> RawSource:
     return ingest_run.source_bundle.raw_sources[0]
 
 
+def _chunks_from_page_plan(page_plan: PagePlan) -> tuple[ChunkText, ...]:
+    return tuple(
+        ChunkText(unit.unit_id, unit.locator, unit.heading_path, unit.text)
+        for unit in page_plan.extracted_units
+    )
+
+
+def _source_text_from_page_plan(page_plan: PagePlan) -> str:
+    return "\n\n".join(unit.text for unit in page_plan.extracted_units if unit.text.strip())
+
+
+def _page_plan_sources_match_source(page_plan: PagePlan, source_locator: str) -> bool:
+    source_locators = tuple(source.source_locator for source in page_plan.source_bundle.raw_sources)
+    return source_locators == (source_locator,)
+
+
 def _manifest_has_progress(manifest: Manifest) -> bool:
     return any(record.status == "done" for record in manifest.chunks) or manifest.integrated
 
@@ -1223,8 +1118,7 @@ def _pdf_page_plan_matches_manifest(
 ) -> bool:
     if not page_plan.plan_id.endswith(f"-pdf-{slugify(Path(source_locator).stem)}"):
         return False
-    source_locators = tuple(source.source_locator for source in page_plan.source_bundle.raw_sources)
-    if source_locators != (source_locator,):
+    if not _page_plan_sources_match_source(page_plan, source_locator):
         return False
     return _page_plan_unit_map(page_plan) == _manifest_unit_map(manifest)
 

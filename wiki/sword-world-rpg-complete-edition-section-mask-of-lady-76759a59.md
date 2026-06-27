@@ -1,0 +1,25 @@
+---
+page_id: sword-world-rpg-complete-edition-section-mask-of-lady-76759a59
+page_kind: source
+summary: **[ Mask of Lady ]**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-mask-of-lady-76759a59@57dc9ed346d9aa3e4e7f01ae3c863a3a
+---
+
+# **[ Mask of Lady ]**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- Enchanter=Varmir "of the Twilight" Form=A white ceramic mask in the shape of a beautiful woman's face Base Trade Price=170,000 gamels Powers=+4 to resistance to _mind_ magic, reduces mental damage by 2 points _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07630))_
+- In addition, you can reduce the damage you’re dealt from magic or monster special attacks that directly deal damage to mental power by 2 points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
+
+## Technical atoms
+
+> Rarity=12
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_

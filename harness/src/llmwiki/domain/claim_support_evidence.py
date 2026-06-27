@@ -81,8 +81,7 @@ class ClaimSupportEvidenceIndex:
             ranked.append((overlap, source_claim_bonus, -position, evidence_id, record.excerpt))
         ranked.sort(reverse=True)
         return tuple(
-            f"{evidence_id}: {excerpt}"
-            for _, _, _, evidence_id, excerpt in ranked[:limit]
+            f"{evidence_id}: {excerpt}" for _, _, _, evidence_id, excerpt in ranked[:limit]
         )
 
 

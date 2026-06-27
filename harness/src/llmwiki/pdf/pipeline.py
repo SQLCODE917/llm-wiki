@@ -20,11 +20,13 @@ from llmwiki.pdf.document import (
     SourceChunk,
     build_source_chunks,
     build_source_sections,
+    document_model_from_json,
     document_model_to_json,
     source_sections_to_json,
 )
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, from_json, to_json
 from llmwiki.pdf.recognizer import TextRecognizer
+from llmwiki.pdf.table_extractor import enrich_document_model_with_tables
 
 _MANIFEST_FILE = "manifest.json"
 _DOCUMENT_MODEL_FILE = "document_model.json"
@@ -56,6 +58,13 @@ def read_source_text(cache_dir: Path) -> str:
 
 def save_manifest(result: ExtractionResult) -> None:
     (result.cache_dir / _MANIFEST_FILE).write_text(to_json(result.manifest), encoding="utf-8")
+
+
+def read_document_model(cache_dir: Path) -> DocumentModel | None:
+    path = cache_dir / _DOCUMENT_MODEL_FILE
+    if not path.is_file():
+        return None
+    return document_model_from_json(path.read_text(encoding="utf-8"))
 
 
 def cache_has_current_pdf_artifacts(cache_dir: Path) -> bool:
@@ -107,6 +116,7 @@ def ensure_extracted(
     cache_dir.mkdir(parents=True, exist_ok=True)
     document_extractor = document_extractor or document_extractor_by_name(document_extractor_name)
     document_model = document_extractor(pdf_path, source_rel, sha)
+    document_model = enrich_document_model_with_tables(pdf_path, document_model)
     source_sections = build_source_sections(document_model)
     source_chunks = build_source_chunks(document_model, source_sections)
 

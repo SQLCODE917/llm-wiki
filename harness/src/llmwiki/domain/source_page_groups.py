@@ -114,8 +114,10 @@ def _adaptive_groups(
         default_target = _default_source_page(unit, prefix)
         previous_unit = units[index - 1] if index > 0 else None
         next_unit = units[index + 1] if index + 1 < len(units) else None
-        if target in existing_pages or target != default_target or _keep_one_unit(
-            unit, previous_unit, next_unit, claims_by_unit
+        if (
+            target in existing_pages
+            or target != default_target
+            or _keep_one_unit(unit, previous_unit, next_unit, claims_by_unit)
         ):
             flush()
             groups.append(_group(raw_source, (unit,), target))

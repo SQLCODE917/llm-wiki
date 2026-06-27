@@ -267,9 +267,7 @@ def build_claim_support_workflow(
     deterministic_findings: tuple[ClaimSupportFinding, ...],
 ) -> Workflow:
     tools = [
-        record_claim_support_verdict_tool(
-            store, verdicts, candidates, deterministic_findings
-        ),
+        record_claim_support_verdict_tool(store, verdicts, candidates, deterministic_findings),
         finish_tool(
             "finish_claim_support",
             "Finish the claim-support audit with audited scope, uncertainty, "

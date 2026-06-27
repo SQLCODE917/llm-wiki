@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import hashlib
 import re
+from collections.abc import Callable
 from dataclasses import replace
 from pathlib import Path
 
@@ -32,6 +33,7 @@ from llmwiki.domain.evidence_registry_io import registry_from_json
 from llmwiki.domain.index import (
     empty_index,
     index_page_ids,
+    remove_index_entries,
     remove_index_entry,
     upsert_index_entry,
 )
@@ -164,6 +166,24 @@ class WikiStore:
         page_path.write_text(render_page(page), encoding="utf-8")
         self._paths.index_path.write_text(index_text, encoding="utf-8")
 
+    def delete_source_pages_not_in(
+        self, source_locator: str, keep_page_ids: set[str]
+    ) -> tuple[str, ...]:
+        source_ref = f"raw/{source_locator}"
+        return self._delete_generated_pages(
+            keep_page_ids,
+            lambda metadata: metadata.sources == (source_ref,),
+        )
+
+    def delete_cross_source_pages_not_in(self, keep_page_ids: set[str]) -> tuple[str, ...]:
+        return self._delete_generated_pages(
+            keep_page_ids,
+            lambda metadata: (
+                metadata.projection_coverage_pointer.startswith("cross-source-")
+                or metadata.projection_coverage_pointer.startswith("canonical-concept-")
+            ),
+        )
+
     def page_path_for_page_id(self, page_id: str) -> Path:
         candidates = self._page_paths_for_page_id(page_id)
         if len(candidates) == 1:
@@ -285,6 +305,27 @@ class WikiStore:
         index_text = remove_index_entry(self.read_index(), name)
         self._paths.index_path.write_text(index_text, encoding="utf-8")
 
+    def _delete_generated_pages(
+        self, keep_page_ids: set[str], should_delete: Callable[[PageMetadata], bool]
+    ) -> tuple[str, ...]:
+        removed: list[str] = []
+        for path in sorted(self._paths.wiki_dir.rglob("*.md")):
+            if path.stem in _RESERVED_PAGE_IDS or _is_hidden_path(path, self._paths.wiki_dir):
+                continue
+            page_id = path.stem
+            if page_id in keep_page_ids:
+                continue
+            page = parse_page(path.read_text(encoding="utf-8"))
+            if not should_delete(page.page_metadata):
+                continue
+            self._ensure_wiki_path(path)
+            path.unlink()
+            removed.append(page_id)
+        if removed:
+            index_text = remove_index_entries(self.read_index(), set(removed))
+            self._paths.index_path.write_text(index_text, encoding="utf-8")
+        return tuple(removed)
+
     def ensure_navigation_files(self) -> None:
         """Create missing harness-owned navigation files for maintenance runs."""
         if not self._paths.index_path.exists():
@@ -403,11 +444,36 @@ class WikiStore:
             (ledger_dir / name).write_text(text, encoding="utf-8")
         return ledger_dir
 
+    def write_ledger_artifacts(self, source_locator: str, files: dict[str, str]) -> Path:
+        return self.write_claim_ledger_artifacts(source_locator, files)
+
     def read_claim_ledger_artifact(self, source_locator: str) -> str | None:
         ledger_path = self.page_plan_artifact_dir(source_locator) / "ledger" / "claim-ledger.json"
         if not ledger_path.is_file():
             return None
         return ledger_path.read_text(encoding="utf-8")
+
+    def list_claim_ledger_artifacts(self) -> list[str]:
+        return [
+            path.read_text(encoding="utf-8")
+            for path in sorted(
+                (self._paths.cache_dir / "page-plans").glob("*/ledger/claim-ledger.json")
+            )
+            if path.is_file()
+        ]
+
+    def read_topic_index_artifact(self, source_locator: str) -> str | None:
+        topic_path = self.page_plan_artifact_dir(source_locator) / "ledger" / "topics.json"
+        if not topic_path.is_file():
+            return None
+        return topic_path.read_text(encoding="utf-8")
+
+    def list_topic_index_artifacts(self) -> list[str]:
+        return [
+            path.read_text(encoding="utf-8")
+            for path in sorted((self._paths.cache_dir / "page-plans").glob("*/ledger/topics.json"))
+            if path.is_file()
+        ]
 
     def write_source_summary_draft_artifact(
         self,

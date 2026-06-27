@@ -702,9 +702,7 @@ class TestCitations:
             self.INVENTORY,
         )
         assert report.is_clean
-        assert report.citations[0].source_path == (
-            "raw/Sword World RPG - Complete Edition.pdf"
-        )
+        assert report.citations[0].source_path == ("raw/Sword World RPG - Complete Edition.pdf")
         assert report.citations[0].page_range == (50, 56)
 
     def test_citation_trailing_sentence_period_is_not_part_of_path(self) -> None:

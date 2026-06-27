@@ -1,126 +1,74 @@
 ---
 page_id: javascriptallonge-mutation
-page_kind: source
-summary: Mutation from raw/javascriptallonge.pdf.
-sources: raw/javascriptallonge.pdf p.141-147
-updated: 2026-06-25
-source_id: javascriptallonge.pdf
+page_kind: concept
+summary: Mutation: 28 statement(s) and 15 atom(s) from raw/javascriptallonge.pdf.
+sources: raw/javascriptallonge.pdf
+updated: 2026-06-27
+domain: javascriptallonge
+category_path: concepts
+projection_coverage: topic-javascriptallonge-mutation@16b34c91ed59186461090c5deb3a94c4
 ---
 
-## Source record
+# Mutation
 
-Chapter on mutation in JavaScript, covering data structures, aliases, and mutation patterns.
+What [[javascriptallonge]] covers about mutation:
 
-## Key supported claims
+## Statements
 
-- In JavaScript, arrays and objects can mutate, changing their structure while keeping the same identity (raw/javascriptallonge.pdf p.141-147).
-- Declaring a variable as const does not prevent mutation of the value it references, only rebinding of the name (raw/javascriptallonge.pdf p.141-147).
-- Mutation in shared references affects all aliases, as changes are made to the same underlying data (raw/javascriptallonge.pdf p.141-147).
-- Languages like Haskell avoid mutation entirely, which can make reasoning about code easier (raw/javascriptallonge.pdf p.141-147).
-- Patterns exist for being liberal with mutation during construction and conservative during consumption (raw/javascriptallonge.pdf p.141-147).
+- Mutation is a surprisingly complex subject. _(javascriptallonge.pdf (source-range-83ecb080-01715))_
+- In general, mutation makes some algorithms shorter to write and possibly faster, but harder to reason about. _(javascriptallonge.pdf (source-range-83ecb080-01715))_
+- Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list: _(javascriptallonge.pdf (source-range-83ecb080-01740))_
+- Now that we’ve finished with mutation and aliases, let’s have a look at it. _(javascriptallonge.pdf (source-range-83ecb080-01709))_
+- One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. _(javascriptallonge.pdf (source-range-83ecb080-01716))_
+- As noted, one pattern is to be more liberal about mutation when building a data structure. _(javascriptallonge.pdf (source-range-83ecb080-01740))_
+- If we want to make a copy of a linked list without iterating over it twice and making a copy we discard later, we can use mutation: _(javascriptallonge.pdf (source-range-83ecb080-01743))_
+- But when we’re in the midst of creating a brand new list, we aren’t sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time. _(javascriptallonge.pdf (source-range-83ecb080-01747))_
+- Recall that you can access a value from within an array or an object using []. _(javascriptallonge.pdf (source-range-83ecb080-01688))_
+- Specifically, arrays and objects can mutate. _(javascriptallonge.pdf (source-range-83ecb080-01688))_
+- In JavaScript, almost every type of value can _mutate_ . _(javascriptallonge.pdf (source-range-83ecb080-01688))_
+- We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. _(javascriptallonge.pdf (source-range-83ecb080-01696))_
+- Both halloween and allHallowsEve are bound to the same array value within the local environment. _(javascriptallonge.pdf (source-range-83ecb080-01698))_
+- There are two nested environments, and each one binds a name to the exact same array value. _(javascriptallonge.pdf (source-range-83ecb080-01701))_
 
-## Technical details
+## Technical atoms
 
-### `technical-atom-567a5c480a1bf057` code
+> Context: In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01688))_
 
-Citation: (raw/javascriptallonge.pdf p.141-147)
+> **const** oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree _//=> [ 'one', 2, 3 ]_
+_(source: javascriptallonge.pdf (source-range-83ecb080-01689))_
 
-```javascript
-const oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree //=> [ 'one', 2, 3]
-```
+> Context: You can even add a value:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01690))_
 
-### `technical-atom-191889ae7465b169` code
+> **const** oneTwoThree = [1, 2, 3]; oneTwoThree[3] = 'four'; oneTwoThree _//=> [ 1, 2, 3, 'four' ]_
+_(source: javascriptallonge.pdf (source-range-83ecb080-01693))_
 
-Citation: (raw/javascriptallonge.pdf p.141-147)
+> Context: You can do the same thing with both syntaxes for accessing objects:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01694))_
 
-```javascript
-const oneTwoThree = [1, 2, 3]; oneTwoThree[3] = 'four'; oneTwoThree //=> [ 1, 2, 3, 'four']
-```
+> **const** name = {firstName: 'Leonard', lastName: 'Braithwaite'}; name.middleName = 'Austin' name _//=> { firstName: 'Leonard',_ # lastName: 'Braithwaite', # middleName: 'Austin' }
+_(source: javascriptallonge.pdf (source-range-83ecb080-01695))_
 
-### `technical-atom-9c85fa2c9f1e2c6c` code
+> Context: We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
+_(context: javascriptallonge.pdf (source-range-83ecb080-01696))_
 
-Citation: (raw/javascriptallonge.pdf p.141-147)
+> **const** allHallowsEve = [2012, 10, 31] **const** halloween = allHallowsEve;
+_(source: javascriptallonge.pdf (source-range-83ecb080-01697))_
 
-```javascript
-const name = {firstName: 'Leonard', lastName: 'Braithwaite'}; name.middleName = 'Austin' name //=> { firstName: 'Leonard', # lastName: 'Braithwaite', # middleName: 'Austin' }
-```
+> Context: Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
+_(context: javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
 
-### `technical-atom-54a458cee3a728f0` code
+> **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { _// ..._
+_(source: javascriptallonge.pdf (source-range-83ecb080-01699))_
 
-Citation: (raw/javascriptallonge.pdf p.141-147)
+> Context: This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
+_(context: javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
 
-```javascript
-const allHallowsEve = [2012, 10, 31] const halloween = allHallowsEve;
-```
+> **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { halloween = [2013, 10, 31];
+_(source: javascriptallonge.pdf (source-range-83ecb080-01705))_
 
-### `technical-atom-63c4747e42cd9d55` code
 
-Citation: (raw/javascriptallonge.pdf p.141-147)
+## Source
 
-```javascript
-const allHallowsEve = [2012, 10, 31]; ( function (halloween) { // ...
-```
-
-### `technical-atom-9cd3cad3711aee38` code
-
-Citation: (raw/javascriptallonge.pdf p.141-147)
-
-```
-- })(allHallowsEve);
-```
-
-### `technical-atom-9c50c7f59d774858` code
-
-Citation: (raw/javascriptallonge.pdf p.141-147)
-
-```javascript
-const allHallowsEve = [2012, 10, 31]; ( function (halloween) { halloween = [2013, 10, 31];
-```
-
-### `technical-atom-651b5211e2b3dca5` code
-
-Citation: (raw/javascriptallonge.pdf p.141-147)
-
-```javascript
-})(allHallowsEve); allHallowsEve //=> [2012, 10, 31]
-```
-
-## Related technical details
-
-### From [[javascriptallonge-self-similarity]]: `technical-atom-940ab647a8cf16dd` code
-
-Relation: nearby source page; matched terms `arrays`, `code`, `does`, `not`, `value`
-
-Citation: (raw/javascriptallonge.pdf p.109-116)
-
-```javascript
-> 61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples. A more robust implementation would be (array) => array.length === 0, but we are doing backflips to keep this within a very small and contrived playground.
-```
-
-### From [[javascriptallonge-garbage-garbage-everywhere]]: `technical-atom-4551df707589c382` exception
-
-Relation: nearby source page; matched terms `arrays`, `does`, `not`, `one`
-
-Citation: (raw/javascriptallonge.pdf p.126-131)
-
-Although the maximum amount of memory does not grow, the thrashing as we create short-lived arrays is very bad, and we do a lot of work copying elements from one array to another.
-
-### From [[javascriptallonge-plain-old-javascript-objects]]: `technical-atom-aae330c293cc2f83` code
-
-Relation: nearby source page; matched terms `code`, `const`, `javascript`, `name`, `objects`
-
-Citation: (raw/javascriptallonge.pdf p.132-140)
-
-```javascript
-const NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES = 1;
-```
-
-### From [[javascriptallonge-copy-on-write]]: `technical-atom-0fe1e1432a76a661` code
-
-Relation: nearby source page; matched terms `code`, `const`, `copy`, `list`, `value`
-
-Citation: (raw/javascriptallonge.pdf p.158-163)
-
-```javascript
-const copy = (node, head = null, tail = null) => { if (node === EMPTY) { return head; } else if (tail === null) { const { first, rest } = node; const newNode = { first, rest }; return copy(rest, newNode, newNode); } else { const { first, rest } = node; const newNode = { first, rest }; tail.rest = newNode; return copy(node.rest, head, newNode); } } const first = ({first, rest}) => first; const rest = ({first, rest}) => rest; const reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed: reverse(rest(node), { first: first(node), rest: delayed }); const mapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? reverse(delayed): mapWith(fn, rest(node), { first: fn(first(node)), rest: delayed }); const at = (index, list) => index === 0 ? first(list): at(index - 1, rest(list)); const set = (index, value, list, originalList = list) => index === 0 ? (list.first = value, originalList): set(index - 1, value, rest(list), originalList) const parentList = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY } }};
-```
+- [[javascriptallonge]]

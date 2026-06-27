@@ -77,6 +77,18 @@ class FormulaPayload:
     notation_context_locator: str = ""
 
 
+# -- figure ----------------------------------------------------------------
+
+
+@dataclass(frozen=True)
+class FigurePayload:
+    raw_figure_text: str
+    parse_status: str
+    source_locator: str
+    figure_locator: str = ""
+    page_locator: str = ""
+
+
 # -- procedure -------------------------------------------------------------
 
 
@@ -125,6 +137,7 @@ AtomPayload = (
     TablePayload
     | CodeBlockPayload
     | FormulaPayload
+    | FigurePayload
     | ProcedurePayload
     | RulePayload
     | WorkedExamplePayload
@@ -175,6 +188,7 @@ def atom_raw_text(payload: AtomPayload) -> str:
         "raw_table_text",
         "raw_code_text",
         "raw_formula_text",
+        "raw_figure_text",
         "rule_text",
         "procedure_text",
         "example_text",

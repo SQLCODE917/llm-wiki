@@ -1,0 +1,29 @@
+---
+page_id: sword-world-rpg-complete-edition-section-pegasus-3ac26e87
+page_kind: source
+summary: **[ Pegasus ]**: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-pegasus-3ac26e87@0b7cdc56cba998c8e55d0b09f16f7baf
+---
+
+# **[ Pegasus ]**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- Monster Level=5 Rarity=10 Agility=12 Movement Speed=30/40 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Heel:11 (4) Strike Points=13 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=15/13 (6) Special Abilities=Not affected by poison and illness _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05426))_
+- Pegasus is a winged white horse that can fly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05428))_
+- In the wild, Pegasus live on steep mountains and come down to the meadows at the foot of the mountains to feed on grass. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05428))_
+
+## Technical atoms
+
+> Context: The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
+_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05424, source-range-870a16bc-05428))_
+
+> Habitat=Steep mountains, meadows Languages=None Perception=Five senses
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05427))_

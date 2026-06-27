@@ -11,10 +11,16 @@ from typing import Literal
 
 LocatorKind = Literal["normalized-line", "page-range"]
 LocatorSeverity = Literal["blocker", "warning", "info"]
-LocatorCategory = Literal[
-    "invalid-range", "missing-source-text", "locator-drift", "stale-artifact"
-]
+LocatorCategory = Literal["invalid-range", "missing-source-text", "locator-drift", "stale-artifact"]
 LOCATOR_ARTIFACT_VERSION = 1
+MAX_CANONICAL_EVIDENCE_TEXT_CHARS = 20_000
+
+_PAGE_RE = re.compile(r"\bPage\s+\d+\b", re.IGNORECASE)
+_HYPHENATED_BREAK_RE = re.compile(r"(?<=\w)-\s+(?=\w)")
+_DASH_RE = re.compile(r"[\u2010-\u2015\u2212]")
+_DOUBLE_QUOTE_RE = re.compile(r"[“”]")
+_SINGLE_QUOTE_RE = re.compile(r"[‘’]")
+_WHITESPACE_RE = re.compile(r"\s+")
 
 
 @dataclass(frozen=True)
@@ -30,9 +36,7 @@ class EvidenceIdentity:
         cls, source_locator: str, source_hash: str, locator_text: str, excerpt: str
     ) -> EvidenceIdentity:
         canonical_excerpt_digest = _digest(canonicalize_evidence_text(excerpt))
-        identity = "|".join(
-            (source_locator, source_hash, locator_text, canonical_excerpt_digest)
-        )
+        identity = "|".join((source_locator, source_hash, locator_text, canonical_excerpt_digest))
         return cls(
             evidence_identity_id=f"evidence-identity-{_digest(identity)[:16]}",
             source_locator=source_locator,
@@ -72,9 +76,7 @@ class EvidenceLocator:
     ) -> EvidenceLocator:
         excerpt_digest = _digest(excerpt.strip())
         canonical_excerpt_digest = _digest(canonicalize_evidence_text(excerpt))
-        identity = "|".join(
-            (source_locator, source_hash, locator_text, canonical_excerpt_digest)
-        )
+        identity = "|".join((source_locator, source_hash, locator_text, canonical_excerpt_digest))
         return cls(
             locator_id=f"evidence-locator-{_digest(identity)[:16]}",
             source_locator=source_locator,
@@ -150,12 +152,13 @@ def locator_artifact_fingerprint(source_locator: str, source_hash: str) -> str:
 
 
 def canonicalize_evidence_text(text: str) -> str:
-    text = re.sub(r"\bPage\s+\d+\b", " ", text, flags=re.IGNORECASE)
-    text = re.sub(r"(?<=\w)-\s+(?=\w)", "", text)
-    text = re.sub(r"[\u2010-\u2015\u2212]", "-", text)
-    text = re.sub(r"[“”]", '"', text)
-    text = re.sub(r"[‘’]", "'", text)
-    text = re.sub(r"\s+", " ", text)
+    text = text[:MAX_CANONICAL_EVIDENCE_TEXT_CHARS]
+    text = _PAGE_RE.sub(" ", text)
+    text = _HYPHENATED_BREAK_RE.sub("", text)
+    text = _DASH_RE.sub("-", text)
+    text = _DOUBLE_QUOTE_RE.sub('"', text)
+    text = _SINGLE_QUOTE_RE.sub("'", text)
+    text = _WHITESPACE_RE.sub(" ", text)
     return text.strip().lower()
 
 

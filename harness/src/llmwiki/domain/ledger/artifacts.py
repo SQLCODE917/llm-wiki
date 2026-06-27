@@ -17,14 +17,17 @@ from llmwiki.domain.ledger.canonical import (
     content_fingerprint,
     deterministic_id,
 )
+from llmwiki.domain.ledger.coverage import ProjectionCoverage
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.pointers import PortableArtifactPointer
+from llmwiki.domain.ledger.projection import ProjectionSourceSupport
 from llmwiki.domain.ledger.quality import LedgerQualityReport
 from llmwiki.domain.ledger.quality_catalog import (
     QualityCheckCatalog,
     QualityFindingSeverityPolicy,
     ReasonApplicabilityPolicy,
 )
+from llmwiki.domain.ledger.source_coverage import SourceCoverage, source_coverage_id
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.vocab import ARTIFACT_FORMAT
 
@@ -63,6 +66,37 @@ class LedgerQualityReportArtifact:
     ledger_quality_report_fingerprint: str
     artifact_format: str
     ledger_quality_report: LedgerQualityReport
+
+
+@dataclass(frozen=True)
+class ProjectionCoverageArtifact:
+    projection_coverage_artifact_id: str
+    projection_coverage_fingerprint: str
+    artifact_format: str
+    wiki_page_locator: str
+    page_body_hash: str
+    ledger_quality_report_pointer: PortableArtifactPointer
+    projection_source_support_set: tuple[ProjectionSourceSupport, ...]
+    projection_coverage: ProjectionCoverage
+
+
+@dataclass(frozen=True)
+class SourceCoverageArtifact:
+    source_coverage_artifact_id: str
+    source_coverage_fingerprint: str
+    artifact_format: str
+    source_coverage: SourceCoverage
+
+
+@dataclass(frozen=True)
+class BlockedWriteDiagnosticArtifact:
+    blocked_write_diagnostic_artifact_id: str
+    blocked_write_diagnostic_fingerprint: str
+    artifact_format: str
+    page_write_decision: str
+    wiki_page_locator: str
+    claim_ledger_pointer: PortableArtifactPointer
+    ledger_quality_report_pointer: PortableArtifactPointer
 
 
 @dataclass(frozen=True)
@@ -140,6 +174,74 @@ def build_claim_ledger_artifact(
         draft, exclude=("claim_ledger_fingerprint", "ledger_quality_report_pointer")
     )
     return replace(draft, claim_ledger_fingerprint=fingerprint)
+
+
+def build_projection_coverage_artifact(
+    *,
+    wiki_page_locator: str,
+    page_body_hash: str,
+    support_set: tuple[ProjectionSourceSupport, ...],
+    coverage: ProjectionCoverage,
+    ledger_quality_report_pointer: PortableArtifactPointer,
+) -> ProjectionCoverageArtifact:
+    artifact_id = deterministic_id(
+        "projection-coverage",
+        wiki_page_locator,
+        page_body_hash,
+        "|".join(support.projection_source_support_id for support in support_set),
+    )
+    draft = ProjectionCoverageArtifact(
+        projection_coverage_artifact_id=artifact_id,
+        projection_coverage_fingerprint="",
+        artifact_format=ARTIFACT_FORMAT,
+        wiki_page_locator=wiki_page_locator,
+        page_body_hash=page_body_hash,
+        ledger_quality_report_pointer=ledger_quality_report_pointer,
+        projection_source_support_set=support_set,
+        projection_coverage=coverage,
+    )
+    fingerprint = artifact_fingerprint(
+        draft, exclude=("projection_coverage_fingerprint", "ledger_quality_report_pointer")
+    )
+    return replace(draft, projection_coverage_fingerprint=fingerprint)
+
+
+def build_source_coverage_artifact(coverage: SourceCoverage) -> SourceCoverageArtifact:
+    draft = SourceCoverageArtifact(
+        source_coverage_artifact_id=source_coverage_id(coverage),
+        source_coverage_fingerprint="",
+        artifact_format=ARTIFACT_FORMAT,
+        source_coverage=coverage,
+    )
+    fingerprint = artifact_fingerprint(draft, exclude=("source_coverage_fingerprint",))
+    return replace(draft, source_coverage_fingerprint=fingerprint)
+
+
+def build_blocked_write_diagnostic_artifact(
+    *,
+    wiki_page_locator: str,
+    claim_ledger_pointer: PortableArtifactPointer,
+    ledger_quality_report_pointer: PortableArtifactPointer,
+) -> BlockedWriteDiagnosticArtifact:
+    artifact_id = deterministic_id(
+        "blocked-write-diagnostic",
+        wiki_page_locator,
+        claim_ledger_pointer.target_artifact_id,
+        "block-authoritative-write",
+    )
+    draft = BlockedWriteDiagnosticArtifact(
+        blocked_write_diagnostic_artifact_id=artifact_id,
+        blocked_write_diagnostic_fingerprint="",
+        artifact_format=ARTIFACT_FORMAT,
+        page_write_decision="block-authoritative-write",
+        wiki_page_locator=wiki_page_locator,
+        claim_ledger_pointer=claim_ledger_pointer,
+        ledger_quality_report_pointer=ledger_quality_report_pointer,
+    )
+    fingerprint = artifact_fingerprint(
+        draft, exclude=("blocked_write_diagnostic_fingerprint", "ledger_quality_report_pointer")
+    )
+    return replace(draft, blocked_write_diagnostic_fingerprint=fingerprint)
 
 
 def build_portable_artifact_set(

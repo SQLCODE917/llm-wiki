@@ -82,9 +82,7 @@ def _source_summary_writes(
     return tuple(dict.fromkeys(writes))
 
 
-def _drafts_by_write_id(
-    store: WikiStore, source_locator: str
-) -> dict[str, SourceSummaryDraft]:
+def _drafts_by_write_id(store: WikiStore, source_locator: str) -> dict[str, SourceSummaryDraft]:
     return {
         artifact.write_id: artifact.draft
         for artifact in store.read_source_summary_draft_artifacts(source_locator)

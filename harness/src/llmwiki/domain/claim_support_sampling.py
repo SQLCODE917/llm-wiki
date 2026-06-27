@@ -25,8 +25,7 @@ _RISK_PATTERNS: tuple[tuple[str, tuple[str, ...]], ...] = (
     ("negative-evidence", (r"\bno\b", r"\bnot\b", r"\bwithout\b")),
 )
 _RISK_REGEXES = tuple(
-    (tag, tuple(re.compile(pattern) for pattern in patterns))
-    for tag, patterns in _RISK_PATTERNS
+    (tag, tuple(re.compile(pattern) for pattern in patterns)) for tag, patterns in _RISK_PATTERNS
 )
 
 
@@ -108,8 +107,7 @@ def source_buckets_for_candidates(
     numeric_buckets = {page_id: _numeric_source_bucket(page_id) for page_id in page_ids}
     if len(set(numeric_buckets.values())) > 1:
         return {
-            candidate.candidate_id: numeric_buckets[candidate.page_id]
-            for candidate in candidates
+            candidate.candidate_id: numeric_buckets[candidate.page_id] for candidate in candidates
         }
     page_buckets = _page_band_buckets(page_ids)
     return {candidate.candidate_id: page_buckets[candidate.page_id] for candidate in candidates}
@@ -194,8 +192,7 @@ def _page_band_buckets(page_ids: tuple[str, ...]) -> dict[str, str]:
     bucket_count = min(10, len(page_ids))
     band_size = max(1, math.ceil(len(page_ids) / bucket_count))
     return {
-        page_id: f"page-band-{index // band_size + 1:02d}"
-        for index, page_id in enumerate(page_ids)
+        page_id: f"page-band-{index // band_size + 1:02d}" for index, page_id in enumerate(page_ids)
     }
 
 

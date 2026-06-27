@@ -117,9 +117,7 @@ class WritePageParams(BaseModel):
         if isinstance(sources, list):
             data["sources"] = sources
         if isinstance(data.get("claim_bullets"), list):
-            data["claim_bullets"] = [
-                rescue_claim_bullet(item) for item in data["claim_bullets"]
-            ]
+            data["claim_bullets"] = [rescue_claim_bullet(item) for item in data["claim_bullets"]]
         return data
 
     @field_validator("sources", mode="before")

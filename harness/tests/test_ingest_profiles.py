@@ -467,9 +467,7 @@ class TestProfiledWorkflows:
         assert "[[beta]] — Functions" in hub
         assert "[[gamma]] — Objects" in hub
 
-    def test_pdf_integrate_replaces_model_page_map_navigation(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_replaces_model_page_map_navigation(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
@@ -507,9 +505,7 @@ class TestProfiledWorkflows:
         assert "[[gamma]] — Objects" in hub
         assert "## Closing" in hub
 
-    def test_pdf_integrate_replaces_model_link_list_navigation(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_replaces_model_link_list_navigation(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
@@ -545,9 +541,7 @@ class TestProfiledWorkflows:
         assert "[[beta]] — Functions" in hub
         assert "[[gamma]] — Objects" in hub
 
-    def test_pdf_integrate_preserves_explained_grouped_navigation(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_preserves_explained_grouped_navigation(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
@@ -582,9 +576,7 @@ class TestProfiledWorkflows:
         assert "## Objects" in hub
         assert "## Page-Map Navigation" not in hub
 
-    def test_pdf_integrate_preserves_labeled_grouped_navigation(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_preserves_labeled_grouped_navigation(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",
@@ -637,8 +629,7 @@ class TestProfiledWorkflows:
             claim_bullets=[
                 {
                     "bullet_text": (
-                        "A compact supported claim. "
-                        "(raw/Sword World RPG - Complete Edition.pdf)"
+                        "A compact supported claim. (raw/Sword World RPG - Complete Edition.pdf)"
                     ),
                     "covered_source_claims": ["source-claim-unit-0001-0001"],
                 }
@@ -648,10 +639,7 @@ class TestProfiledWorkflows:
 
         hub = store.read_page("sword-world-rpg-complete-edition")
         assert "## Source record" in hub
-        assert (
-            "A compact supported claim. (raw/Sword World RPG - Complete Edition.pdf)"
-            in hub
-        )
+        assert "A compact supported claim. (raw/Sword World RPG - Complete Edition.pdf)" in hub
         assert "## Page-Map Navigation" in hub
         assert "[[alpha]]" in hub
         assert "[[beta]] — Rules" in hub
@@ -727,9 +715,7 @@ class TestProfiledWorkflows:
         assert "A compact supported claim. (raw/Sword World RPG - Complete Edition.pdf)" in hub
         assert "[[alpha]] — Opening" in hub
 
-    def test_pdf_integrate_rescues_alternate_claim_bullet_shape(
-        self, store: WikiStore
-    ) -> None:
+    def test_pdf_integrate_rescues_alternate_claim_bullet_shape(self, store: WikiStore) -> None:
         workflow = build_integrate_workflow(
             store,
             "2026-06-16",

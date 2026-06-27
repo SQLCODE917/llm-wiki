@@ -474,9 +474,7 @@ def test_source_summary_coverage_infers_singular_plural_cue_matches() -> None:
 
     inferred = infer_source_summary_coverage(draft, plan)
 
-    assert inferred.claim_bullets[0].covered_source_claims == (
-        "source-claim-unit-0001-0001",
-    )
+    assert inferred.claim_bullets[0].covered_source_claims == ("source-claim-unit-0001-0001",)
 
 
 def test_source_summary_rescue_repairs_catalog_style_bullets() -> None:
@@ -529,8 +527,7 @@ def test_source_summary_rescue_appends_required_bullet_citations() -> None:
     repaired = repair_source_summary_draft(draft, plan, max_claim_bullets=5)
 
     assert all(
-        bullet.bullet_text.endswith("(raw/book.pdf p.280-290)")
-        for bullet in repaired.claim_bullets
+        bullet.bullet_text.endswith("(raw/book.pdf p.280-290)") for bullet in repaired.claim_bullets
     )
     assert all(not bullet.covered_source_claims for bullet in repaired.claim_bullets)
 
@@ -564,9 +561,7 @@ def test_source_summary_rescue_merges_duplicate_coverage_over_budget() -> None:
 
     assert len(repaired.claim_bullets) == 5
     assert set(
-        claim_id
-        for bullet in repaired.claim_bullets
-        for claim_id in bullet.covered_source_claims
+        claim_id for bullet in repaired.claim_bullets for claim_id in bullet.covered_source_claims
     ) == set(plan.selected_source_claims)
     assert "Second claim begins" in repaired.claim_bullets[1].bullet_text
     assert "Second claim continues" not in repaired.claim_bullets[1].bullet_text
@@ -632,9 +627,7 @@ def test_source_summary_rescue_compacts_repeated_coverage_without_word_growth() 
 
     assert len(repaired.claim_bullets) == 5
     assert set(
-        claim_id
-        for bullet in repaired.claim_bullets
-        for claim_id in bullet.covered_source_claims
+        claim_id for bullet in repaired.claim_bullets for claim_id in bullet.covered_source_claims
     ) == set(plan.selected_source_claims)
     assert len(repaired_body.split()) < len(render_source_summary_draft(draft).split())
     assert len(repaired_body.split()) < 220
@@ -1009,13 +1002,10 @@ def test_planned_source_summary_tool_compacts_too_many_claim_bullets_when_covera
             {
                 "bullet_text": f"Compact claim label {index}. (raw/alpha.md)",
                 "covered_source_claims": [
-                    selected_claims[claim_index]
-                    for claim_index in claim_indexes
+                    selected_claims[claim_index] for claim_index in claim_indexes
                 ],
             }
-            for index, claim_indexes in enumerate(
-                ((0,), (1,), (2,), (0, 1), (1, 2), (0, 2))
-            )
+            for index, claim_indexes in enumerate(((0,), (1,), (2,), (0, 1), (1, 2), (0, 2)))
         ],
     )
 

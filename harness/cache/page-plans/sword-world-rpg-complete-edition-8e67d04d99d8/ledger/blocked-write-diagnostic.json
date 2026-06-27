@@ -1,0 +1,17 @@
+{
+  "artifact_format": "canonical-json",
+  "blocked_write_diagnostic_artifact_id": "blocked-write-diagnostic-980e57a7da074b44",
+  "blocked_write_diagnostic_fingerprint": "bf47b58950b0e250",
+  "claim_ledger_pointer": {
+    "target_artifact_fingerprint": "30dd15b217069645",
+    "target_artifact_id": "claim-ledger-238a28c9469e41a5",
+    "target_artifact_kind": "claim-ledger-artifact"
+  },
+  "ledger_quality_report_pointer": {
+    "target_artifact_fingerprint": "bf814f0c76f05942",
+    "target_artifact_id": "ledger-quality-report-bf814f0c76f05942",
+    "target_artifact_kind": "ledger-quality-report-artifact"
+  },
+  "page_write_decision": "block-authoritative-write",
+  "wiki_page_locator": "sword-world-rpg-complete-edition"
+}

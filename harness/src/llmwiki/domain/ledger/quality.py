@@ -1,9 +1,10 @@
-"""LedgerQualityReport builders for claim-ledger artifacts.
+"""LedgerQualityReport builders and the WriteBoundary.
 
-Each report is scoped to ``ledger-build`` and holds ``QualityFinding`` records
-that resolve their check id through the catalog pointer. This repo keeps page
-synthesis in the existing source-summary/technical-detail renderer, so the
-ledger module does not own a page-write boundary.
+Each report is scoped (``ledger-build`` or ``page-projection``) and holds
+``QualityFinding`` records that resolve their check id through the catalog
+pointer. The write boundary maps the most severe finding to a page write
+decision: a blocking finding withholds the authoritative write, a warning
+writes with review work, and otherwise the page is written authoritatively.
 """
 
 from __future__ import annotations
@@ -11,13 +12,16 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from llmwiki.domain.ledger.common import ReviewReason
+from llmwiki.domain.ledger.coverage import ProjectionCoverage
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.pointers import PortableArtifactPointer
+from llmwiki.domain.ledger.projection import LedgerProjectionPlan
 from llmwiki.domain.ledger.quality_catalog import (
     QualityCheckCatalog,
     QualityFindingSeverityPolicy,
 )
 from llmwiki.domain.ledger.structure import DocumentStructure
+from llmwiki.domain.ledger.table_references import unresolved_table_reference_entry_ids
 from llmwiki.domain.ledger.vocab import (
     CALIBRATION_BUCKETS,
     CLAIM_FORCES,
@@ -26,6 +30,13 @@ from llmwiki.domain.ledger.vocab import (
     LEDGER_ENTRY_KINDS,
     LEDGER_ENTRY_STATUSES,
     POLARITIES,
+)
+
+_INTERNAL_ID_PREFIXES = (
+    "ledger-entry-",
+    "projection-coverage-entry-",
+    "atom-candidate-",
+    "extractor-decision-",
 )
 
 
@@ -67,7 +78,7 @@ class LedgerQualityReport:
         return any(f.quality_finding_severity == severity for f in self.findings)
 
 
-class _Finder:
+class FindingCollector:
     def __init__(
         self, scope: str, catalog: QualityCheckCatalog, severity: QualityFindingSeverityPolicy
     ) -> None:
@@ -109,23 +120,69 @@ def build_ledger_quality_report(
     severity: QualityFindingSeverityPolicy,
     catalog_pointer: PortableArtifactPointer,
 ) -> LedgerQualityReport:
-    finder = _Finder("ledger-build", catalog, severity)
+    finder = FindingCollector("ledger-build", catalog, severity)
     _check_dispositions(finder, ledger, structure)
     _check_decisions(finder, ledger)
     _check_atoms(finder, ledger)
     _check_entries(finder, ledger)
+    _check_named_table_references(finder, ledger, structure)
     _ledger_metrics(finder, ledger)
     return LedgerQualityReport("ledger-build", catalog_pointer, tuple(finder.findings))
 
 
-def _check_dispositions(finder: _Finder, ledger: ClaimLedger, structure: DocumentStructure) -> None:
+def build_projection_quality_report(
+    plan: LedgerProjectionPlan,
+    coverage: ProjectionCoverage,
+    page_body: str,
+    ledger: ClaimLedger,
+    *,
+    catalog: QualityCheckCatalog,
+    severity: QualityFindingSeverityPolicy,
+    catalog_pointer: PortableArtifactPointer,
+) -> LedgerQualityReport:
+    finder = FindingCollector("page-projection", catalog, severity)
+    usable = {entry.ledger_entry_id for entry in ledger.usable_entries}
+    for entry in coverage.entries:
+        if entry.projection_coverage_unit_kind == "generated-page-claim":
+            for selected in entry.selected_ledger_entry_ids:
+                if selected not in usable:
+                    finder.add("ck-generated-claim-traceable", "generated-page-claim", selected)
+                    finder.add("ck-generated-claim-usable", "generated-page-claim", selected)
+        if entry.projection_coverage_unit_kind == "rendered-technical-atom-block":
+            atom = ledger.atom(entry.technical_atom_id)
+            if atom is None or not atom.payload:
+                finder.add(
+                    "ck-atom-block-payload",
+                    "rendered-technical-atom-block",
+                    entry.technical_atom_id,
+                )
+    _check_atoms_rendered(finder, ledger, coverage)
+    _check_internal_ids(finder, plan, page_body)
+    _check_review_items(finder, ledger, coverage)
+    finder.add(
+        "ck-projection-coverage-metric", "projection-coverage-artifact", plan.wiki_page_locator
+    )
+    return LedgerQualityReport("page-projection", catalog_pointer, tuple(finder.findings))
+
+
+def page_write_decision(*reports: LedgerQualityReport) -> str:
+    if any(report.has_severity("blocking") for report in reports):
+        return "block-authoritative-write"
+    if any(report.has_severity("warning") for report in reports):
+        return "write-with-review-work"
+    return "write-authoritative-page"
+
+
+def _check_dispositions(
+    finder: FindingCollector, ledger: ClaimLedger, structure: DocumentStructure
+) -> None:
     if len(structure.dispositions) != ledger.source_profile.unit_count:
         finder.add(
             "ck-extracted-unit-disposition-present", "extracted-unit", ledger.claim_ledger_id
         )
 
 
-def _check_decisions(finder: _Finder, ledger: ClaimLedger) -> None:
+def _check_decisions(finder: FindingCollector, ledger: ClaimLedger) -> None:
     by_range: dict[str, set[str]] = {}
     for decision in ledger.extractor_decisions:
         by_range.setdefault(decision.source_range_id, set()).add(decision.extractor_capability_id)
@@ -153,7 +210,7 @@ def _check_decisions(finder: _Finder, ledger: ClaimLedger) -> None:
             finder.add("ck-extractor-decision-per-capability", "extracted-unit", source_range_id)
 
 
-def _check_atoms(finder: _Finder, ledger: ClaimLedger) -> None:
+def _check_atoms(finder: FindingCollector, ledger: ClaimLedger) -> None:
     from llmwiki.domain.ledger.atoms import atom_raw_text
 
     for atom in ledger.technical_atoms:
@@ -161,7 +218,7 @@ def _check_atoms(finder: _Finder, ledger: ClaimLedger) -> None:
             finder.add("ck-technical-atom-payload", "technical-atom", atom.technical_atom_id)
 
 
-def _check_entries(finder: _Finder, ledger: ClaimLedger) -> None:
+def _check_entries(finder: FindingCollector, ledger: ClaimLedger) -> None:
     for entry in ledger.entries:
         if (
             entry.ledger_entry_kind not in LEDGER_ENTRY_KINDS
@@ -183,7 +240,14 @@ def _check_entries(finder: _Finder, ledger: ClaimLedger) -> None:
             )
 
 
-def _check_claim_fields(finder: _Finder, entry: object) -> None:
+def _check_named_table_references(
+    finder: FindingCollector, ledger: ClaimLedger, structure: DocumentStructure
+) -> None:
+    for entry_id in unresolved_table_reference_entry_ids(ledger, structure):
+        finder.add("ck-named-table-reference-resolved", "ledger-entry", entry_id)
+
+
+def _check_claim_fields(finder: FindingCollector, entry: object) -> None:
     subject = getattr(entry, "subject", "")
     predicate = getattr(entry, "predicate", "")
     object_value = getattr(entry, "object_value", "")
@@ -196,7 +260,38 @@ def _check_claim_fields(finder: _Finder, entry: object) -> None:
         finder.add("ck-claim-required-fields", "ledger-entry", entry_id)
 
 
-def _ledger_metrics(finder: _Finder, ledger: ClaimLedger) -> None:
+def _ledger_metrics(finder: FindingCollector, ledger: ClaimLedger) -> None:
     finder.add("ck-ledger-status-metric", "claim-ledger-artifact", ledger.claim_ledger_id)
     finder.add("ck-family-assignment-metric", "source-family-assignment", ledger.claim_ledger_id)
     finder.add("ck-extractor-decision-metric", "extractor-decision", ledger.claim_ledger_id)
+
+
+def _check_atoms_rendered(
+    finder: FindingCollector, ledger: ClaimLedger, coverage: ProjectionCoverage
+) -> None:
+    rendered = {
+        entry.technical_atom_id
+        for entry in coverage.entries
+        if entry.projection_coverage_unit_kind == "rendered-technical-atom-block"
+    }
+    for entry in ledger.usable_entries:
+        if entry.ledger_entry_kind == "technical-atom" and entry.technical_atom_id not in rendered:
+            finder.add("ck-accepted-atom-rendered", "technical-atom", entry.technical_atom_id)
+
+
+def _check_internal_ids(
+    finder: FindingCollector, plan: LedgerProjectionPlan, page_body: str
+) -> None:
+    if any(prefix in page_body for prefix in _INTERNAL_ID_PREFIXES):
+        finder.add("ck-page-body-no-internal-ids", "page-body", plan.wiki_page_locator)
+
+
+def _check_review_items(
+    finder: FindingCollector, ledger: ClaimLedger, coverage: ProjectionCoverage
+) -> None:
+    needs_review = {entry.ledger_entry_id for entry in ledger.needs_review_entries}
+    for entry in coverage.entries:
+        if entry.projection_coverage_unit_kind != "source-review-item":
+            continue
+        if entry.ledger_entry_id not in needs_review:
+            finder.add("ck-source-review-item-fields", "source-review-item", entry.ledger_entry_id)

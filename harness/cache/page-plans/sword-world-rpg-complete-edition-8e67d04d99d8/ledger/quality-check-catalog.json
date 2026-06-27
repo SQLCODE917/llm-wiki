@@ -97,6 +97,17 @@
         "allowed_quality_report_scopes": [
           "ledger-build"
         ],
+        "quality_check_id": "ck-named-table-reference-resolved",
+        "quality_finding_reason": "review-required",
+        "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "ledger-entry"
+        ],
+        "allowed_quality_report_scopes": [
+          "ledger-build"
+        ],
         "quality_check_id": "ck-entry-evidence-traceable",
         "quality_finding_reason": "traceability-failure",
         "quality_finding_subject_field": "whole-object"
@@ -221,11 +232,77 @@
         "quality_check_id": "ck-projection-coverage-metric",
         "quality_finding_reason": "audit-metric",
         "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "projection-coverage-artifact"
+        ],
+        "allowed_quality_report_scopes": [
+          "cross-source-projection"
+        ],
+        "quality_check_id": "ck-cross-source-min-support",
+        "quality_finding_reason": "coverage-gap",
+        "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "source-backed-position"
+        ],
+        "allowed_quality_report_scopes": [
+          "cross-source-projection"
+        ],
+        "quality_check_id": "ck-cross-source-position-traceable",
+        "quality_finding_reason": "traceability-failure",
+        "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "cross-source-relationship"
+        ],
+        "allowed_quality_report_scopes": [
+          "cross-source-projection"
+        ],
+        "quality_check_id": "ck-cross-source-relationship-arity",
+        "quality_finding_reason": "coverage-gap",
+        "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "cross-source-relationship"
+        ],
+        "allowed_quality_report_scopes": [
+          "cross-source-projection"
+        ],
+        "quality_check_id": "ck-cross-source-relationship-vocabulary",
+        "quality_finding_reason": "controlled-vocabulary-invalid",
+        "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "page-body"
+        ],
+        "allowed_quality_report_scopes": [
+          "cross-source-projection"
+        ],
+        "quality_check_id": "ck-cross-source-page-no-internal-ids",
+        "quality_finding_reason": "traceability-failure",
+        "quality_finding_subject_field": "whole-object"
+      },
+      {
+        "allowed_quality_finding_subject_kinds": [
+          "projection-coverage-artifact"
+        ],
+        "allowed_quality_report_scopes": [
+          "cross-source-projection"
+        ],
+        "quality_check_id": "ck-cross-source-metric",
+        "quality_finding_reason": "audit-metric",
+        "quality_finding_subject_field": "whole-object"
       }
     ]
   },
-  "quality_check_catalog_artifact_id": "quality-check-catalog-038eefadfda69b3e",
-  "quality_check_catalog_fingerprint": "038eefadfda69b3e",
+  "quality_check_catalog_artifact_id": "quality-check-catalog-dfb37f29d0f4637d",
+  "quality_check_catalog_fingerprint": "dfb37f29d0f4637d",
   "quality_finding_severity_policy": {
     "reason_severity": {
       "audit-metric": "info",
@@ -380,7 +457,9 @@
         "synthesis-section",
         "source-review-section",
         "source-review-item",
-        "disposition-count"
+        "disposition-count",
+        "source-backed-position",
+        "cross-source-relationship"
       ],
       "page-hash-invalid": [
         "wiki-page",

@@ -1,0 +1,52 @@
+---
+page_id: sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-c668f2f6
+page_kind: source
+summary: **[ Tunnel ] (Gnome/Earth Spirit)**: 20 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-tunnel-gnome-earth-spirit-c668f2f6@af62fa540524bc540ac68bef23dbadf3
+---
+
+# **[ Tunnel ] (Gnome/Earth Spirit)**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- The effect of this spell can be expanded regarding the size of the hole being made (target volume). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02481))_
+- In other words, you can't open holes in two walls with one spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02481))_
+- This is a spell that creates a hole with a 1 meter radius in walls and ground made of stone or earth, as well as the sides and ceilings of caves. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02481))_
+- However, if the wall is less than 10 meters thick, the spell's effect ends there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02481))_
+- This spell allows you to create holes up to 10 meters in length. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02481))_
+- Also, this spell has absolutely no effect on walls made of wood. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02482))_
+- If the resist fails, the hole will open slowly and they will not suffer damage from the fall. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02483))_
+- If this spell is used at the feet of a human, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02483))_
+- If the resist is successful, the hole will open, but those on top will be able to immediately jump out of the way and prevent themselves from falling into the hole (assuming they have a place to escape, of course). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02483))_
+- those present can attempt to resist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02483))_
+- At this time, those at the bottom of the hole will _not_ be buried alive. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+- This is because the bottom of the hole will rise back up. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+- Once the duration has expired, the hole will slowly return to its original state. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+- This is because the bottom of the hole will rise back up. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+
+## Technical atoms
+
+> Base Mental Power Cost=16
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02475))_
+
+> Distance=10 meters
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02476))_
+
+> Area=1 meter radius, 10 meter length Duration=18 rounds
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02477))_
+
+> Effect=Drill a hole in the ground, a stone wall, etc.
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02478))_
+
+> Type=Counters (Overpowers): _Spirit Wall: Gnome_
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
+
+> Expansion=Final score, duration, target score Resist=Special (see description)
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02480))_

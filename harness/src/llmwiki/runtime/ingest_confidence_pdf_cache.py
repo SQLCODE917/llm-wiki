@@ -37,8 +37,8 @@ def pdf_extraction_artifact(
     if not source_locator.lower().endswith(".pdf"):
         return None, None, ()
     existing = _pdf_extraction_result(cache_dir, source_locator, source_hash)
-    has_current_artifacts = (
-        existing is not None and cache_has_current_pdf_artifacts(existing.cache_dir)
+    has_current_artifacts = existing is not None and cache_has_current_pdf_artifacts(
+        existing.cache_dir
     )
     decision = ArtifactReuseDecision(
         artifact_kind="pdf-extraction",

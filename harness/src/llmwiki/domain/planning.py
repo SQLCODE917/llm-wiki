@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from dataclasses import replace
+from dataclasses import dataclass, replace
 from pathlib import Path
 
 from pydantic import PydanticUserError, TypeAdapter
@@ -31,6 +31,8 @@ from llmwiki.domain.planning_analysis import (
     wiki_matches,
 )
 from llmwiki.domain.planning_writes import planned_writes
+from llmwiki.domain.source_claim_quality import claim_certainty, claim_eligibility, claim_role_tags
+from llmwiki.domain.source_claim_sentences import claim_sentences
 from llmwiki.domain.source_claims import (
     source_claim_groups,
     source_claims,
@@ -163,6 +165,35 @@ def page_plan_from_json(text: str) -> PagePlan:
         return _PAGE_PLAN_ADAPTER.validate_json(text)
 
 
+@dataclass(frozen=True)
+class SegmentClaimRecord:
+    """A claim derived from a source segment for the claim-ledger adapter."""
+
+    statement: str
+    role_tags: tuple[str, ...]
+    eligibility: str
+    certainty: str
+
+
+def derive_segment_claims(
+    text: str, schema: Schema | None = None
+) -> tuple[SegmentClaimRecord, ...]:
+    active_schema = schema or Schema()
+    allowed_roles = {role.tag_name for role in active_schema.claim_role_tags}
+    records: list[SegmentClaimRecord] = []
+    for statement in claim_sentences(text):
+        roles = tuple(role for role in claim_role_tags(statement) if role in allowed_roles)
+        records.append(
+            SegmentClaimRecord(
+                statement=statement,
+                role_tags=roles,
+                eligibility=claim_eligibility(statement, roles),
+                certainty=claim_certainty(roles),
+            )
+        )
+    return tuple(records)
+
+
 def observation_report(
     plan: PagePlan,
     target_page_ids: tuple[str, ...] | None = None,
@@ -284,8 +315,7 @@ def _source_summary_claim_labels(
     requirements = getattr(summary_plan, "selected_claim_requirements", ())
     if requirements:
         return "; ".join(
-            render_source_summary_claim_requirement(requirement)
-            for requirement in requirements
+            render_source_summary_claim_requirement(requirement) for requirement in requirements
         )
     selected_claims = tuple(
         str(claim_id) for claim_id in getattr(summary_plan, "selected_source_claims", ())

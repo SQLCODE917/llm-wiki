@@ -35,9 +35,7 @@ def record_claim_support_verdict_tool(
 
     candidate_map = {candidate.candidate_id: candidate for candidate in candidates}
     blocked = {
-        finding.candidate_id
-        for finding in deterministic_findings
-        if finding.severity == "blocker"
+        finding.candidate_id for finding in deterministic_findings if finding.severity == "blocker"
     }
 
     def _record_claim_support_verdict(**kwargs: object) -> str:
@@ -48,9 +46,7 @@ def record_claim_support_verdict_tool(
                 "Claim-support verdicts must reference one selected ClaimSupportCandidate."
             )
         if candidate.page_id not in store.list_pages():
-            raise WikiStoreError(
-                f"ClaimSupportCandidate page is missing: {candidate.page_id}."
-            )
+            raise WikiStoreError(f"ClaimSupportCandidate page is missing: {candidate.page_id}.")
         if params.verdict == "supported" and (
             params.candidate_id in blocked or not candidate.evidence_ids
         ):

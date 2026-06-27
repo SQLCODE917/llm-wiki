@@ -40,9 +40,14 @@ def test_current_ledger_preserves_claims_and_technical_atoms() -> None:
     table = next(
         atom for atom in bundle.ledger.technical_atoms if atom.technical_atom_kind == "table"
     )
+    coverage = bundle.projection_coverage_artifact.projection_coverage
+    topics = bundle.topic_index.topics
+    coverage_kinds = {entry.projection_coverage_unit_kind for entry in coverage.entries}
     assert {"claim", "technical-atom"} <= kinds
     assert {"code-block", "formula", "procedure", "rule", "table"} <= atom_kinds
     assert "| 2D | Result |" in table.payload.raw_table_text
+    assert {"generated-page-claim", "rendered-technical-atom-block"} <= coverage_kinds
+    assert topics[0].topic_key == "rules"
     assert not bundle.ledger_quality_report.has_severity("blocking")
 
 
@@ -81,8 +86,12 @@ def test_generated_artifacts_write_claim_ledger_without_replacing_page_synthesis
     )
 
     ledger_text = store.read_claim_ledger_artifact("rules.md")
+    topics_text = store.read_topic_index_artifact("rules.md")
     assert ledger_text is not None
+    assert topics_text is not None
     assert json.loads(ledger_text)["ledger"]["technical_atoms"]
+    assert json.loads(topics_text)["topics"][0]["topic_key"] == "rules"
+    assert store.list_topic_index_artifacts() == [topics_text]
     assert "## Technical details" in body
     assert "const add = (a, b) => a + b;" in body
     assert "## Source review" not in body

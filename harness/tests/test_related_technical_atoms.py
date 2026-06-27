@@ -73,8 +73,7 @@ def test_source_summary_page_body_appends_related_technical_details(
         [
             SourceSummaryBulletParams(
                 bullet_text=(
-                    "Attacks compare attack power and then apply bonus damage. "
-                    "(raw/rules.md)"
+                    "Attacks compare attack power and then apply bonus damage. (raw/rules.md)"
                 ),
                 covered_source_claims=["claim-attack"],
             )
@@ -110,8 +109,7 @@ def test_source_summary_ignores_planning_matches_as_explicit_links(
         [
             SourceSummaryBulletParams(
                 bullet_text=(
-                    "Attacks compare attack power and then apply bonus damage. "
-                    "(raw/rules.md)"
+                    "Attacks compare attack power and then apply bonus damage. (raw/rules.md)"
                 ),
                 covered_source_claims=["claim-attack"],
             )
@@ -169,12 +167,8 @@ def _rules_catalog() -> TechnicalAtomCatalog:
                 "formula",
                 "bonus damage = skill level + strength bonus",
             ),
-            _atom(
-                "filler-a", "rules-filler-a", "formula", "travel pace = agility x 3"
-            ),
-            _atom(
-                "filler-b", "rules-filler-b", "formula", "spell power = level + focus"
-            ),
+            _atom("filler-a", "rules-filler-a", "formula", "travel pace = agility x 3"),
+            _atom("filler-b", "rules-filler-b", "formula", "spell power = level + focus"),
             _atom(
                 "death-checks",
                 "rules-unconscious-and-death-checks",
@@ -198,9 +192,7 @@ def _rules_catalog() -> TechnicalAtomCatalog:
     )
 
 
-def _atom(
-    atom_id: str, page_id: str, kind: TechnicalAtomKind, payload: str
-) -> TechnicalAtom:
+def _atom(atom_id: str, page_id: str, kind: TechnicalAtomKind, payload: str) -> TechnicalAtom:
     return TechnicalAtom(
         technical_atom_id=f"technical-atom-{atom_id}",
         source_locator="rules.md",

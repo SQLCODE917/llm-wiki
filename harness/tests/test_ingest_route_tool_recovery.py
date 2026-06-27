@@ -487,8 +487,7 @@ def test_write_page_fills_omitted_claim_coverage_for_source_summary(
             {"bullet_text": "Closures depend on free variables. (raw/book.pdf p.45-45)"},
             {
                 "bullet_text": (
-                    "Bound variables keep function inputs explicit. "
-                    "(raw/book.pdf p.45-45)"
+                    "Bound variables keep function inputs explicit. (raw/book.pdf p.45-45)"
                 )
             },
         ],
@@ -572,22 +571,19 @@ def test_write_page_uses_current_chunk_plan_for_repeated_page_id(
         claim_bullets=[
             {
                 "bullet_text": (
-                    "The arguments binding can support variable arity. "
-                    "(raw/book.pdf p.74-75)"
+                    "The arguments binding can support variable arity. (raw/book.pdf p.74-75)"
                 ),
                 "covered_source_claims": ["source-claim-unit-0002-0001"],
             },
             {
                 "bullet_text": (
-                    "The p.74 section describes this and arguments. "
-                    "(raw/book.pdf p.74-75)"
+                    "The p.74 section describes this and arguments. (raw/book.pdf p.74-75)"
                 ),
                 "covered_source_claims": ["source-claim-unit-0002-0001"],
             },
             {
                 "bullet_text": (
-                    "The function keyword has separate magic-name behavior. "
-                    "(raw/book.pdf p.74-75)"
+                    "The function keyword has separate magic-name behavior. (raw/book.pdf p.74-75)"
                 ),
                 "covered_source_claims": ["source-claim-unit-0002-0001"],
             },

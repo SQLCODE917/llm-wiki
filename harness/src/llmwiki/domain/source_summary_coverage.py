@@ -21,14 +21,11 @@ def infer_source_summary_coverage(
     covered = {
         claim_id for bullet in draft.claim_bullets for claim_id in bullet.covered_source_claims
     }
-    missing = tuple(
-        claim_id for claim_id in plan.selected_source_claims if claim_id not in covered
-    )
+    missing = tuple(claim_id for claim_id in plan.selected_source_claims if claim_id not in covered)
     if not missing:
         return draft
     requirements = {
-        requirement.source_claim_id: requirement
-        for requirement in plan.selected_claim_requirements
+        requirement.source_claim_id: requirement for requirement in plan.selected_claim_requirements
     }
     inferred = [list(bullet.covered_source_claims) for bullet in draft.claim_bullets]
     for claim_id in missing:

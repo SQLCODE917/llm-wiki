@@ -4,28 +4,46 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "claim-ledger-artifact",
-      "target_artifact_fingerprint": "dbdfe989608a885b",
-      "target_artifact_id": "claim-ledger-b42211eb79302185"
+      "target_artifact_fingerprint": "4dd5f5fac3eaeb97",
+      "target_artifact_id": "claim-ledger-876d0bcd791e83c1"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "document-structure-artifact",
-      "target_artifact_fingerprint": "88cb56ce0c65535a",
-      "target_artifact_id": "document-structure-a7e731186f63a957"
+      "target_artifact_fingerprint": "03babfb95a423282",
+      "target_artifact_id": "document-structure-7306acd57aee8111"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "ledger-quality-report-artifact",
-      "target_artifact_fingerprint": "d6d9cb23cb731317",
-      "target_artifact_id": "ledger-quality-report-d6d9cb23cb731317"
+      "target_artifact_fingerprint": "5fe3b69afe7fb787",
+      "target_artifact_id": "ledger-quality-report-5fe3b69afe7fb787"
+    },
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "ledger-quality-report-artifact",
+      "target_artifact_fingerprint": "d78c7a55401a0312",
+      "target_artifact_id": "ledger-quality-report-d78c7a55401a0312"
+    },
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "projection-coverage-artifact",
+      "target_artifact_fingerprint": "2df79515e39ca172",
+      "target_artifact_id": "projection-coverage-a340d05e25ddb511"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "quality-check-catalog-artifact",
-      "target_artifact_fingerprint": "038eefadfda69b3e",
-      "target_artifact_id": "quality-check-catalog-038eefadfda69b3e"
+      "target_artifact_fingerprint": "dfb37f29d0f4637d",
+      "target_artifact_id": "quality-check-catalog-dfb37f29d0f4637d"
+    },
+    {
+      "artifact_format": "canonical-json",
+      "portable_artifact_kind": "section-grounded-plan-artifact",
+      "target_artifact_fingerprint": "c3c4d6d3e201dd61",
+      "target_artifact_id": "section-grounded-plan-57406008cfd52330"
     }
   ],
-  "portable_artifact_set_fingerprint": "b2ac2a9bf4bca363",
-  "portable_artifact_set_id": "portable-artifact-set-b2ac2a9bf4bca363"
+  "portable_artifact_set_fingerprint": "b8226123a90dd733",
+  "portable_artifact_set_id": "portable-artifact-set-b8226123a90dd733"
 }

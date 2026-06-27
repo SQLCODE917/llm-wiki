@@ -118,11 +118,16 @@ def upsert_index_entry(text: str, metadata: PageMetadata) -> str:
 
 def remove_index_entry(text: str, page_id: str) -> str:
     """Remove the entry for *page_id* from index.md, if present."""
+    return remove_index_entries(text, {page_id})
+
+
+def remove_index_entries(text: str, page_ids: set[str]) -> str:
+    """Remove entries for *page_ids* from index.md, if present."""
     lines = [
         line
         for line in text.splitlines()
         if not (
-            _ENTRY_RE.match(line.strip()) and _ENTRY_RE.match(line.strip())["page_id"] == page_id  # type: ignore[index]
+            _ENTRY_RE.match(line.strip()) and _ENTRY_RE.match(line.strip())["page_id"] in page_ids  # type: ignore[index]
         )
     ]
     return "\n".join(lines) + "\n"

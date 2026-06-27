@@ -339,10 +339,7 @@ def _diversify_broad_page_selection(
     )
     if _has_early_page_overlap(terms, candidate_claims):
         return tuple(selected)
-    if (
-        len(selected) >= target_size
-        and _source_position_span(selected[:target_size]) > target_size
-    ):
+    if len(selected) >= target_size and _source_position_span(selected[:target_size]) > target_size:
         return tuple(selected)
     pool = without_competing_section_claims(terms, list(candidate_claims))
     if source_has_eligible_claims:
@@ -381,9 +378,7 @@ def _stratified_position_claims(
         start = (bucket * len(ordered)) // target_size
         end = ((bucket + 1) * len(ordered)) // target_size
         window = [
-            claim
-            for claim in ordered[start:end]
-            if claim.source_claim_id not in selected_ids
+            claim for claim in ordered[start:end] if claim.source_claim_id not in selected_ids
         ]
         if not window:
             continue

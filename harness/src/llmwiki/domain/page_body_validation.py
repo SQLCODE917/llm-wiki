@@ -166,9 +166,7 @@ def _is_technical_operator_ellipsis(text: str, start: int, end: int) -> bool:
         return True
     if prev_char == "(" and next_char == ")" and _has_ellipsis_operator_context(context):
         return True
-    has_operator_boundary = (
-        bool(prev_char) and (prev_char.isspace() or prev_char in "[({,")
-    ) or (
+    has_operator_boundary = (bool(prev_char) and (prev_char.isspace() or prev_char in "[({,")) or (
         bool(next_char) and (next_char.isspace() or next_char in "])},;")
     )
     return _has_ellipsis_operator_context(context) and has_operator_boundary
@@ -340,9 +338,7 @@ def _draft_copy_findings(
     return tuple(findings)
 
 
-def _first_copied_ngram(
-    text: str, source_ngrams: set[tuple[str, ...]]
-) -> tuple[str, ...] | None:
+def _first_copied_ngram(text: str, source_ngrams: set[tuple[str, ...]]) -> tuple[str, ...] | None:
     text_ngrams = _ngrams(_words(text), _COPIED_NGRAM_SIZE)
     return next((ngram for ngram in text_ngrams if ngram in source_ngrams), None)
 

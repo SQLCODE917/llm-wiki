@@ -1,0 +1,35 @@
+{
+  "artifact_format": "canonical-json",
+  "ledger_quality_report": {
+    "findings": [
+      {
+        "quality_check_id": "ck-projection-coverage-metric",
+        "quality_finding_locator": {
+          "quality_finding_locator_kind": "domain-id-locator",
+          "quality_finding_subject_id": "sword-world-rpg-complete-edition",
+          "source_hash": "",
+          "source_locator": "",
+          "source_range_id": "",
+          "wiki_page_locator": ""
+        },
+        "quality_finding_reason": "audit-metric",
+        "quality_finding_severity": "info",
+        "quality_finding_subject": {
+          "quality_finding_subject_field": "whole-object",
+          "quality_finding_subject_id": "sword-world-rpg-complete-edition",
+          "quality_finding_subject_kind": "projection-coverage-artifact"
+        },
+        "quality_report_scope": "page-projection",
+        "review_reason": null
+      }
+    ],
+    "quality_check_catalog_pointer": {
+      "target_artifact_fingerprint": "dfb37f29d0f4637d",
+      "target_artifact_id": "quality-check-catalog-dfb37f29d0f4637d",
+      "target_artifact_kind": "quality-check-catalog-artifact"
+    },
+    "quality_report_scope": "page-projection"
+  },
+  "ledger_quality_report_artifact_id": "ledger-quality-report-77295493488ac5a8",
+  "ledger_quality_report_fingerprint": "77295493488ac5a8"
+}

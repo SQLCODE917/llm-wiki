@@ -79,9 +79,7 @@ def _registry_payload(registry: EvidenceRegistry) -> dict[str, object]:
         "registry_id": registry.registry_id,
         "source_texts": [_source_text_payload(item) for item in registry.source_texts],
         "source_ranges": [_source_range_payload(item) for item in registry.source_ranges],
-        "evidence_records": [
-            _evidence_record_payload(item) for item in registry.evidence_records
-        ],
+        "evidence_records": [_evidence_record_payload(item) for item in registry.evidence_records],
     }
 
 

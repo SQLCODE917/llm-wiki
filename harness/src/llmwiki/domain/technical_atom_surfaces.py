@@ -47,15 +47,46 @@ _KIND_SCORE = {
 _TERM_RE = re.compile(r"[a-z][a-z0-9-]{2,}", re.IGNORECASE)
 _STOP_TERMS = frozenset(
     [
-        "and", "are", "book", "chapter", "complete", "details", "edition",
-        "for", "from", "into", "part", "pdf", "raw", "section", "source",
-        "technical", "that", "the", "this", "through", "with", "world",
+        "and",
+        "are",
+        "book",
+        "chapter",
+        "complete",
+        "details",
+        "edition",
+        "for",
+        "from",
+        "into",
+        "part",
+        "pdf",
+        "raw",
+        "section",
+        "source",
+        "technical",
+        "that",
+        "the",
+        "this",
+        "through",
+        "with",
+        "world",
     ]
 )
 _BROAD_TECHNICAL_TERMS = frozenset(
     [
-        "bonus", "check", "checks", "damage", "formula", "hit", "level",
-        "points", "power", "requirement", "roll", "rules", "skill", "target",
+        "bonus",
+        "check",
+        "checks",
+        "damage",
+        "formula",
+        "hit",
+        "level",
+        "points",
+        "power",
+        "requirement",
+        "roll",
+        "rules",
+        "skill",
+        "target",
     ]
 )
 _MAX_RELATED_PAGE_DISTANCE = 4
@@ -261,10 +292,7 @@ def _technical_terms(text: str) -> frozenset[str]:
 
 def _technical_phrases(text: str, ignored_terms: frozenset[str]) -> frozenset[str]:
     terms = tuple(_ordered_terms(text, ignored_terms))
-    return frozenset(
-        f"{left} {right}"
-        for left, right in zip(terms, terms[1:], strict=False)
-    )
+    return frozenset(f"{left} {right}" for left, right in zip(terms, terms[1:], strict=False))
 
 
 def _specific_terms(terms: tuple[str, ...]) -> tuple[str, ...]:

@@ -1,0 +1,40 @@
+---
+page_id: sword-world-rpg-complete-edition-section-crystal-orb-of-clairvoyance-a4d0b4bc
+page_kind: source
+summary: **[Crystal Orb of Clairvoyance]**: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-crystal-orb-of-clairvoyance-a4d0b4bc@e3bb3e3aa24d76ad2442bb176f249962
+---
+
+# **[Crystal Orb of Clairvoyance]**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- The extent to which the effect reaches depends on the magical power stored in the crystal ball. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07477))_
+- Particularly powerful ones are said to be able to ignore magical barriers that would completely block a normal crystal ball, or show the state of another world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07477))_
+- This is a magical crystal ball that shows the user every place around the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07477))_
+- The commonly found _Crystal Orb of Clairvoyance_ can project any place you’ve been to _before_ , but can only use this power _once per day_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+- The commonly found _Crystal Orb of Clairvoyance_ can project any place you’ve been to _before_ , but can only use this power _once per day_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+
+## Technical atoms
+
+> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> Rarity=15
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07474))_
+
+> Context: If you light a candle in this candlestick (any normal candle on the market is fine), whoever lights it will be blessed with great luck. Misfortunes that may befall you will be prevented in some way before they happen, and business or stock speculation will definitely yield a profit. If you light a candle, the fire will magically last for one week, but the candle’s fire itself offers no protection and will easily go out with a slight breeze, etc. Then, if the candle’s fire in the candlestick goes
+_(context: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
+
+> Enchanter=Many
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07475))_
+
+> Form=Crystal ball about 10cm in diameter Base Trade Price=300,000 gamels~ Powers=You can see various places around the world
+_(source: Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07476))_

@@ -13,6 +13,7 @@ import hashlib
 import json
 from dataclasses import fields, is_dataclass
 from enum import Enum
+from functools import cache
 from typing import Any
 
 
@@ -22,16 +23,30 @@ def to_jsonable(obj: Any) -> Any:
     Object key ordering is deferred to ``json.dumps(sort_keys=True)`` so the
     output is independent of dataclass field declaration order.
     """
+    return _to_jsonable(obj, set())
+
+
+def _to_jsonable(obj: Any, seen: set[int]) -> Any:
     if obj is None or isinstance(obj, (str, int, float, bool)):
         return obj
     if isinstance(obj, Enum):
         return obj.value
     if is_dataclass(obj) and not isinstance(obj, type):
-        return {f.name: to_jsonable(getattr(obj, f.name)) for f in fields(obj)}
+        marker = id(obj)
+        if marker in seen:
+            raise TypeError(f"Cannot canonicalize recursive dataclass {type(obj)!r}")
+        seen.add(marker)
+        try:
+            return {
+                name: _to_jsonable(getattr(obj, name), seen)
+                for name in _dataclass_field_names(type(obj))
+            }
+        finally:
+            seen.remove(marker)
     if isinstance(obj, dict):
-        return {str(key): to_jsonable(value) for key, value in obj.items()}
+        return {str(key): _to_jsonable(value, seen) for key, value in obj.items()}
     if isinstance(obj, (tuple, list, set, frozenset)):
-        items = [to_jsonable(item) for item in obj]
+        items = [_to_jsonable(item, seen) for item in obj]
         if isinstance(obj, (set, frozenset)):
             items.sort(key=_sort_key)
         return items
@@ -85,3 +100,8 @@ def deterministic_id(prefix: str, *parts: str, length: int = 16) -> str:
 
 def _sort_key(value: Any) -> str:
     return json.dumps(to_jsonable(value), sort_keys=True, ensure_ascii=False)
+
+
+@cache
+def _dataclass_field_names(cls: type[Any]) -> tuple[str, ...]:
+    return tuple(field.name for field in fields(cls))

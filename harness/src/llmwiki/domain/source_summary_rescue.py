@@ -271,9 +271,7 @@ def _single_required_page_citation(
     return parsed[0].source_path, parsed[0].page_range
 
 
-def _expand_page_only_citation(
-    text: str, source_path: str, required_range: tuple[int, int]
-) -> str:
+def _expand_page_only_citation(text: str, source_path: str, required_range: tuple[int, int]) -> str:
     def replace(match: re.Match[str]) -> str:
         start = int(match.group("start"))
         end_text = match.group("end")
