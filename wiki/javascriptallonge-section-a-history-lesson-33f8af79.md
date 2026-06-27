@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-history-lesson-33f8af79@d541f4f4bd54b879a1a048c422427436
+projection_coverage: section-javascriptallonge-section-a-history-lesson-33f8af79@9dbdf98628d80309b7136e03239c5108
 ---
 
 # **a history lesson**
@@ -22,20 +22,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: In “Ye Olde Days,”[53] JavaScript could not gather parameters, and we had to either do backflips with arguments and .slice, or we wrote ourselves a variadic decorator that could gather arguments into the last declared parameter. Here it is in all of its ECMAScript-5 glory:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01050))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01050))_
+
+> In “Ye Olde Days,”[53] JavaScript could not gather parameters, and we had to either do backflips with arguments and .slice, or we wrote ourselves a variadic decorator that could gather arguments into the last declared parameter. Here it is in all of its ECMAScript-5 glory:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01051))_
 
 > **var** __slice = Array.prototype.slice;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01051))_
 
-> Context: We don’t need rightVariadic any more, because instead of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01056))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01056))_
+
+> We don’t need rightVariadic any more, because instead of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01057))_
 
 > **var** firstAndButFirst = rightVariadic( **function** test (first, butFirst) { **return** [first, butFirst] });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01057))_
 
-> Context: We now simply write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01058))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01058))_
+
+> We now simply write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01059))_
 
 > **const** firstAndButFirst = (first, ...butFirst) => [first, butFirst];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01059))_

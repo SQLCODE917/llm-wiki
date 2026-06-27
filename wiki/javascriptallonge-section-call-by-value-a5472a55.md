@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-call-by-value-a5472a55@bafca3a5671430c4fa1b177e93903a8c
+projection_coverage: section-javascriptallonge-section-call-by-value-a5472a55@f43f8044c84800b1f191bdbf7bb6c864
 ---
 
 # **call by value**
@@ -24,14 +24,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00425))_
 
 > - ((diameter) => diameter * 3.14159265)(1 + 1) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00425))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00426))_
 
 > What happened internally is that the expression 1 + 1 was evaluated first, resulting in 2. Then our circumference function was applied to 2.[24]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00426))_

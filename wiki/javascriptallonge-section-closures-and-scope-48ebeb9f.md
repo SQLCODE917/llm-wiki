@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-closures-and-scope-48ebeb9f@68fedd13263fafa05254e3cb9a3b4f8f
+projection_coverage: section-javascriptallonge-section-closures-and-scope-48ebeb9f@3834c578d617756c73aeef69ca5a4496
 ---
 
 # Closures and Scope
@@ -73,68 +73,112 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: It’s time to see how a function within a function works: First off, let’s use what we learned above. Given ( _some function_ )( _some argument_ ), we know that we apply the function to the argument, create an environment, bind the value of the argument to the name, and evaluate the function’s expression. So we do that first with this code:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00470, source-range-83ecb080-00472))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00470, source-range-83ecb080-00472))_
+
+> It’s time to see how a function within a function works: First off, let’s use what we learned above. Given ( _some function_ )( _some argument_ ), we know that we apply the function to the argument, create an environment, bind the value of the argument to the name, and evaluate the function’s expression. So we do that first with this code:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00471))_
 
 > - ((x) => (y) => x)(1)(2) _//=> 1_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00471))_
 
-> Context: So now we have a value representing that function. Then we’re going to take the value of that function and apply it to the argument 2, something like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00477))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00477))_
+
+> So now we have a value representing that function. Then we’re going to take the value of that function and apply it to the argument 2, something like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00478))_
 
 > - ((y) => x)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00478))_
 
-> Context: This, by the way, is one of the great defining characteristics of JavaScript and languages in the same family: Whether they allow things like functions to nest inside each other, and if so, how they handle variables from “outside” of a function that are referenced inside a function. For example, here’s the equivalent code in Ruby:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00480))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00480))_
+
+> This, by the way, is one of the great defining characteristics of JavaScript and languages in the same family: Whether they allow things like functions to nest inside each other, and if so, how they handle variables from “outside” of a function that are referenced inside a function. For example, here’s the equivalent code in Ruby:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00481))_
 
 > lambda { |x| lambda { |y| x } }[1][2] _#=> 1_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00481))_
 
-> Context: Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The 
-_(context: javascriptallonge.pdf (source-range-83ecb080-00490, source-range-83ecb080-00494))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00490, source-range-83ecb080-00494))_
+
+> Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00493))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00493))_
 
-> Context: Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00498))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00498))_
+
+> Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00497))_
 
 > If pure functions can contain closures, can a closure contain a pure function?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00497))_
 
-> Context: To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
-_(context: javascriptallonge.pdf (source-range-83ecb080-00503))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00503))_
+
+> To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00504))_
 
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00504))_
 
-> Context: Functions can have grandparents too:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00509))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00509))_
+
+> Functions can have grandparents too:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00510))_
 
 > (x) => (y) => (z) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00510))_
 
-> Context: This function does much the same thing as:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00511))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00511))_
+
+> This function does much the same thing as:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00512))_
 
 > (x, y, z) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00512))_
 
-> Context: An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00520, source-range-83ecb080-00522))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00520, source-range-83ecb080-00522))_
+
+> An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00521))_
 
 > - (x) => (x, y) => x + y
-_(source: javascriptallonge.pdf (source-range-83ecb080-00521))_
 
-> Context: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00522))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00522))_
+
+> The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00523))_
 
 > (x) => (x, y) => (w, z) => (w) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00523))_
 
-> Context: JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': _global environment_ }.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00531))_
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00531))_
+
+> JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': _global environment_ }.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00532))_
 
 > If you don’t want your code to operate directly within the global environment, what can you do?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00532))_

@@ -126,6 +126,11 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     _add_pdf_extractor_arg(ingest)
 
+    sub.add_parser(
+        "synthesize",
+        help="Build cross-source concept/entity pages from ingested source ledgers.",
+    )
+
     query = sub.add_parser("query", help="Answer a question from the wiki.")
     _add_strict_evidence_arg(query)
     query.add_argument("question", help="The question to answer.")
@@ -377,11 +382,12 @@ async def _run(args: argparse.Namespace) -> OperationResult:
 
     paths.validate()
     ingest_profiles: tuple[IngestProfile, ...] = ()
-    if args.op == "ingest":
-        ingest_profiles = _select_profiles(paths, args.profile)
-        print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
-        print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
-        print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
+    if args.op in {"ingest", "synthesize"}:
+        if args.op == "ingest":
+            ingest_profiles = _select_profiles(paths, args.profile)
+            print(f"[strict-evidence: {strict_evidence}]", file=sys.stderr)
+            print(f"[ingest-profiles: {profile_summary(ingest_profiles)}]", file=sys.stderr)
+            print(f"[pdf-extractor: {args.pdf_extractor}]", file=sys.stderr)
         store = WikiStore(paths)
         store.ensure_navigation_files()
         session = Session(
@@ -396,6 +402,8 @@ async def _run(args: argparse.Namespace) -> OperationResult:
             strict_evidence=strict_evidence,
             ingest_profiles=ingest_profiles,
         )
+        if args.op == "synthesize":
+            return await session.synthesize()
         return await session.ingest(
             args.source, reextract=args.reextract, reintegrate=args.reintegrate
         )

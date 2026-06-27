@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-reassignment-f7a3e866@e41b8de5f7830820687540c522be31c0
+projection_coverage: section-javascriptallonge-section-reassignment-f7a3e866@15747419377ef1bf7c7ea8d85592dfe1
 ---
 
 # Reassignment
@@ -62,53 +62,90 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01767))_
 
 > **let** age = 52;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01767))_
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01768))_
 
 > age = 53; age _//=> 53_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01768))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01785))_
 
 > If you dislike deliberately shadowing variables, you’ll probably take an even more opprobrious view of mixing const and let semantics with a shadowed variable:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01785))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01798))_
 
 > **return** n * factorial2(x); } } factorial2(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01798))_
 
-> Context: But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01802))_
+### Technical atom 5
 
-> **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01803))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01802))_
 
-> Context: JavaScript hoists the let and the assignment. But not so with var:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01809))_
+> But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01803))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01810))_
 
-> Context: JavaScript hoists the declaration, but not the assignment. It is as if we’d written:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01812))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01809))_
+
+> JavaScript hoists the let and the assignment. But not so with var:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01810))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01815))_
+
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01812))_
+
+> JavaScript hoists the declaration, but not the assignment. It is as if we’d written:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01815))_
+
+> **const** factorial = (n) => {
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01816))_
 
 > **let** innerFactorial = **undefined** ; **return** innerFactorial(n, 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01816))_
 
-> Context: We haven’t looked at it yet, but JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. Here it is with var: > 72There is a well known story about Karl Friedrich Gauss when he was in elementary school. His teacher got mad at the class and told them to add the numbers 1 to 100 and give him the answer by the end of the class. About 30 seconds later Gauss gave him the answer. The other kids were adding the numbers like this: 1 + 2 + 3 + . 
-_(context: javascriptallonge.pdf (source-range-83ecb080-01821, source-range-83ecb080-01824))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01821, source-range-83ecb080-01824))_
+
+> We haven’t looked at it yet, but JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. Here it is with var: > 72There is a well known story about Karl Friedrich Gauss when he was in elementary school. His teacher got mad at the class and told them to add the numbers 1 to 100 and give him the answer by the end of the class. About 30 seconds later Gauss gave him the answer. The other kids were adding the numbers like this: 1 + 2 + 3 + .
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01822))_
 
 > **var** sum = 0; **for** ( **var** i = 1; i <= 100; i++) { sum = sum + i } sum #=> 5050
-_(source: javascriptallonge.pdf (source-range-83ecb080-01822))_
 
-> Context: Again, so far, so good. Let’s try one of our functions: What went wrong? Why didn’t it give us ‘Hello, Raganwald, my name is Friedrich’? The answer is that pesky var i. Remember that i is bound in the surrounding environment, so it’s as if we wrote:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01831, source-range-83ecb080-01833))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01831, source-range-83ecb080-01833))_
+
+> Again, so far, so good. Let’s try one of our functions: What went wrong? Why didn’t it give us ‘Hello, Raganwald, my name is Friedrich’? The answer is that pesky var i. Remember that i is bound in the surrounding environment, so it’s as if we wrote:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01832))_
 
 > introductions[1]('Raganwald') _//=> 'Hello, Raganwald, my name is undefined'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01832))_

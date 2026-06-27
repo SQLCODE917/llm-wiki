@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-function-declarations-6432946d@e1d2aaa0538f8c3bd593f980c4f5e1e5
+projection_coverage: section-javascriptallonge-section-function-declarations-6432946d@1df99e3919b1c69d9564b2948ce4622a
 ---
 
 # **function declarations**
@@ -28,26 +28,44 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: This behaves a _little_ like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00746))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00746))_
+
+> This behaves a _little_ like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00747))_
 
 > **const** someName = **function** someName () {
-_(source: javascriptallonge.pdf (source-range-83ecb080-00747))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00751))_
 
 > Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00751))_
 
-> Context: Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00751))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00751))_
+
+> Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00754))_
 
 > **const** fizzbuzz = **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } })() _//=> undefined is not a function (evaluating 'fizzbuzz()')_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00754))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00759))_
 
 > **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } })() _//=> 'FizzBuzz'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00759))_
 
-> Context: Although fizzbuzz is declared later in the function, JavaScript behaves as if we’d written:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00760))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00760))_
+
+> Although fizzbuzz is declared later in the function, JavaScript behaves as if we’d written:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00761))_
 
 > ( **function** () { **const** fizzbuzz = **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } **return** fizzbuzz(); })()
-_(source: javascriptallonge.pdf (source-range-83ecb080-00761))_

@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-list@a3b2e816aecdc09d0a7d30a2dc82e345
+projection_coverage: topic-javascriptallonge-list@b3412adb1caa2b1f26adf257afb3e53e
 ---
 
 # List
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-list@a3b2e816aecdc09d0a7d30a2dc82e3
 What [[javascriptallonge]] covers about list:
 
 ## Statements
+
+_Showing 14 of 21 statements selected for this topic._
 
 - Given an element e and a list list, [e, ...list] is a list. _(javascriptallonge.pdf (source-range-83ecb080-01304))_
 - Lists were represented as linked lists of cons cells, with each cell’s head pointing to an element and the tail pointing to another cons cell. _(javascriptallonge.pdf (source-range-83ecb080-01535))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about list:
 
 ## Technical atoms
 
-> Context: Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+_Showing 6 of 23 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+
+> Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01324))_
 
 > length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01324))_
 
-> Context: With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn’t. A function to compute the sum of the squares of a list of numbers might look like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01369))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01369))_
+
+> With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn’t. A function to compute the sum of the squares of a list of numbers might look like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01372))_
 
 > **const** sumSquares = ([first, ...rest]) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01372))_
 
-> Context: We can make a list by calling cons repeatedly, and terminating it with null:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01539))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01539))_
+
+> We can make a list by calling cons repeatedly, and terminating it with null:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01540))_
 
 > **const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01540))_
 
-> Context: Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01543))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01543))_
+
+> Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01546))_
 
 > **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01546))_
 
-> Context: If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01564))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01564))_
+
+> If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
 
 > And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01565))_
 
-> Context: Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01565))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
+
+> Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01566))_
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01566))_
 
 
 ## Source

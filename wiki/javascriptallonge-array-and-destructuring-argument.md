@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-array-and-destructuring-argument@ae593963658382e13330af3389ed3354
+projection_coverage: topic-javascriptallonge-array-and-destructuring-argument@5668491830ca324408a448490d3f7037
 ---
 
 # Arrays and Destructuring Arguments
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-array-and-destructuring-argument@ae
 What [[javascriptallonge]] covers about arrays and destructuring arguments:
 
 ## Statements
+
+_Showing 14 of 31 statements selected for this topic._
 
 - Array literals are expressions, and arrays are _reference types_ . _(javascriptallonge.pdf (source-range-83ecb080-01204))_
 - Array elements can be extracted using [ and ] as postfix operators. _(javascriptallonge.pdf (source-range-83ecb080-01209))_
@@ -32,38 +34,63 @@ What [[javascriptallonge]] covers about arrays and destructuring arguments:
 
 ## Technical atoms
 
-> Context: Any expression will work:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01194))_
+_Showing 6 of 31 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01194))_
+
+> Any expression will work:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01195))_
 
 > [ 2, 3, 2 + 2 ] _//=> [2,3,4]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01195))_
 
-> Context: Any expression will do, including names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01199))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01199))_
+
+> Any expression will do, including names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01202))_
 
 > **const** wrap = (something) => [something];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01202))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01203))_
 
 > wrap("lunch") _//=> ["lunch"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01203))_
 
-> Context: Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01204))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01204))_
+
+> Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01205))_
 
 > [] === [] _//=> false_ [2 + 2] === [2 + 2] _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01205))_
 
-> Context: Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01204))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01204))_
+
+> Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01206))_
 
 > **const** array_of_one = () => [1];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01206))_
 
-> Context: Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01204))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01204))_
+
+> Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01207))_
 
 > array_of_one() === array_of_one() _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01207))_
 
 
 ## Source

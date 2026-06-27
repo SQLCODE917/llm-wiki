@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-inside-out-d1381084@e5cb60c564e3c19842be7d4c32302d6a
+projection_coverage: section-javascriptallonge-section-inside-out-d1381084@27e509932738ab70fa7442c52a86ca31
 ---
 
 # **inside-out**
@@ -38,14 +38,24 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+
+> There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00562))_
 
 > (diameter) => ((PI) => diameter * PI)(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00562))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00576))_
 
 > - (diameter) => ((PI) => diameter * PI)(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00576))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00578))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00578))_

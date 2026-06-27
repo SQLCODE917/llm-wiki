@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-reference-types-b672735f@bcf2db84ef4c55685a43715b81e4cc5c
+projection_coverage: section-javascriptallonge-section-reference-types-b672735f@1bec368e339af9c2a127e6447d68aace
 ---
 
 # **reference types**
@@ -26,14 +26,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00205))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00205))_
+
+> An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00206))_
 
 > [2-1, 2, 2+1] [1, 1+1, 1+1+1]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00206))_
 
-> Context: Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00207))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00207))_
+
+> Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00208))_
 
 > [2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00208))_

@@ -2146,3 +2146,4 @@
 - [[sword-world-rpg-complete-edition-target]] — Target: 140 statement(s) and 89 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Syntheses
+- [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.

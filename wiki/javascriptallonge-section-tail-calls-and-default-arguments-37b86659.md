@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-tail-calls-and-default-arguments-37b86659@9bad2013225dd83cc0a1535428eb0084
+projection_coverage: section-javascriptallonge-section-tail-calls-and-default-arguments-37b86659@4a550ee56c10758b6ca35378bfe6d94f
 ---
 
 # Tail Calls (and Default Arguments)
@@ -68,83 +68,141 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: This is roughly equivalent to writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01402))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01402))_
+
+> This is roughly equivalent to writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01404))_
 
 > Note that while evaluating mapWith(fn, rest), JavaScript must retain the value first or fn(first), plus some housekeeping information so it remembers what to do with mapWith(fn, rest) when it has a result.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01404))_
 
-> Context: In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01411))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01411))_
+
+> In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01412))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01412))_
 
-> Context: That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
-_(context: javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+
+> That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01423))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01423))_
 
-> Context: The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01430))_
+### Technical atom 4
 
-> **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01431))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01430))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+> The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01431))_
 
 > **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01437))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01437))_
+
+> **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
+
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01439))_
 
 > **const** length = (n) => lengthDelaysWork(n, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01439))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01441))_
 
 > **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01441))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01442))_
 
 > **const** length = callLast(lengthDelaysWork, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01442))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01443))_
 
 > length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01443))_
 
-> Context: This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01444))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01444))_
+
+> This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01447))_
 
 > **const** mapWithDelaysWork = (fn, [first, ...rest], prepend) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01447))_
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01448))_
 
 > first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01448))_
+
+### Technical atom 12
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01451))_
 
 > **const** mapWith = callLast(mapWithDelaysWork, []);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01451))_
+
+### Technical atom 13
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01452))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01452))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+### Technical atom 14
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01454))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01454))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+### Technical atom 15
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01455))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -176,10 +234,14 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01455))_
 
-> Context: In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
+### Technical atom 16
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01462))_
+
+> In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01463))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -211,40 +273,69 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01463))_
 
-> Context: The naïve function for calcuating the factorial of a positive integer follows directly from the definition: Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n - 1). We can do the same conversion, pass in the work to be done:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01467, source-range-83ecb080-01470))_
+### Technical atom 17
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01467, source-range-83ecb080-01470))_
+
+> The naïve function for calcuating the factorial of a positive integer follows directly from the definition: Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n - 1). We can do the same conversion, pass in the work to be done:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01468))_
 
 > **const** factorial = (n) => n == 1 ? n : n * factorial(n - 1); factorial(1) _//=> 1_ factorial(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01468))_
+
+### Technical atom 18
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01476))_
 
 > **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01476))_
+
+### Technical atom 19
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01477))_
 
 > **const** factorial = callLast(factorialWithDelayedWork, 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01477))_
+
+### Technical atom 20
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01478))_
 
 > factorial(1) _//=> 1_ factorial(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01478))_
 
-> Context: Our problem is that we can directly write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01481))_
+### Technical atom 21
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01481))_
+
+> Our problem is that we can directly write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01483))_
 
 > But it is hideous to have to always add a 1 parameter, we’d be demanding that everyone using the factorial function know that we are using a tail-recursive implementation.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01483))_
 
-> Context: We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01493))_
+### Technical atom 22
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01493))_
+
+> We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01496))_
 
 > **const** [first, second = "two"] = ["one"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01496))_
+
+### Technical atom 23
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01497))_
 
 > ` ` **${** first **}** . **${** second **}** _//=> "one . two"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01497))_
+
+### Technical atom 24
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01498))_
 
 > **const** [first, second = "two"] = ["primus", "secundus"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01498))_
+
+### Technical atom 25
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01499))_
 
 > ` ` **${** first **}** . **${** second **}** _//=> "primus . secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01499))_

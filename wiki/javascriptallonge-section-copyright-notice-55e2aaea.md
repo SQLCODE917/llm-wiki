@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-copyright-notice-55e2aaea@b7e3af3bdd01ba82c08dcfb18794e827
+projection_coverage: section-javascriptallonge-section-copyright-notice-55e2aaea@b15005303bb0d39ab0bb75c48be126b6
 ---
 
 # **Copyright Notice**
@@ -16,5 +16,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03133))_
+
 > The original words in this book are (c) 2012-2015, Reginald Braithwaite. All rights reserved.
-_(source: javascriptallonge.pdf (source-range-83ecb080-03133))_

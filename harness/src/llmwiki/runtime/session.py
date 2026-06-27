@@ -100,6 +100,7 @@ from llmwiki.pdf.pipeline import (
     read_source_text,
     save_manifest,
 )
+from llmwiki.runtime.cross_source_pipeline import build_cross_source_pages
 from llmwiki.runtime.ledger_pipeline import build_source_ledger
 from llmwiki.runtime.ledger_segmentation import ChunkText
 from llmwiki.runtime.source_summary_replay import replay_source_summary_work_unit
@@ -390,6 +391,24 @@ class Session:
         )
         self.store.append_log(self.today, "ingest", source_locator, report)
         return OperationResult("ingest", source_locator, report, None)
+
+    async def synthesize(self) -> OperationResult:
+        """Build canonical concept pages from stored topic indexes and ledgers."""
+        topic_jsons = tuple(self.store.list_topic_index_artifacts())
+        claim_ledger_jsons = tuple(self.store.list_claim_ledger_artifacts())
+        if len(topic_jsons) < 2:
+            report = (
+                "Cross-source synthesis needs at least two ingested sources with topic indexes; "
+                f"found {len(topic_jsons)}."
+            )
+            self.store.append_log(self.today, "synthesize", "cross-source", report)
+            return OperationResult("synthesize", "cross-source", report, None)
+        result = build_cross_source_pages(topic_jsons, claim_ledger_jsons, today=self.today)
+        for page in result.pages:
+            self.store.write_page(page)
+        self.store.delete_cross_source_pages_not_in({page.page_id for page in result.pages})
+        self.store.append_log(self.today, "synthesize", "cross-source", result.summary)
+        return OperationResult("synthesize", "cross-source", result.summary, None)
 
     def _ingest_run(self, source_locator: str) -> IngestRun:
         raw_source = self.store.raw_source(source_locator)

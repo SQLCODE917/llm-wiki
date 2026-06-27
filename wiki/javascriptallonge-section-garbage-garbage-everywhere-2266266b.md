@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-garbage-garbage-everywhere-2266266b@bd504c7544e8d8c4d4eb2dc03750cabb
+projection_coverage: section-javascriptallonge-section-garbage-garbage-everywhere-2266266b@e1dd67e152021e87b76979ed3c782aff
 ---
 
 # **Garbage, Garbage Everywhere**
@@ -34,11 +34,18 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We have now seen how to use Tail Calls to execute mapWith in constant space:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01507))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01507))_
+
+> We have now seen how to use Tail Calls to execute mapWith in constant space:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01508))_
 
 > **const** mapWith = (fn, [first, ...rest], prepend = []) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01508))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01511))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01511))_

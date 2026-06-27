@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-operations-on-numbers-c93c2f75@84003de7e8777f0fd2613fedb3f0ec4d
+projection_coverage: section-javascriptallonge-section-operations-on-numbers-c93c2f75@eaa6c11e0995653c8c9d665b27724c82
 ---
 
 # **operations on numbers**
@@ -23,8 +23,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
-_(context: javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+
+> In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00241))_
 
 > 2 * 5 + 1 _//=> 11_ 1 + 5 * 2 _//=> 11_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00241))_

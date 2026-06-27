@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-unfolding-and-laziness-465f40d8@2f6dd03001118921193cd81711846f17
+projection_coverage: section-javascriptallonge-section-unfolding-and-laziness-465f40d8@d38ae391c0e8f8190766f018b0c0e3f1
 ---
 
 # **unfolding and laziness**
@@ -29,38 +29,64 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01988))_
 
 > **const** NumberIterator = (number = 0) => () => ({ done: **false** , value: number++ })
-_(source: javascriptallonge.pdf (source-range-83ecb080-01988))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01989))_
 
 > fromOne = NumberIterator(1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01989))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01990))_
 
 > fromOne().value; _//=> 1_ fromOne().value; _//=> 2_ fromOne().value; _//=> 3_ fromOne().value; _//=> 4_ fromOne().value; _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01990))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02007))_
 
 > **const** squareOf = callLeft(mapIteratorWith, (x) => x * x)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02007))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02008))_
 
 > toArray(take(squareOf(odds()), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02008))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02011))_
 
 > **const** oddsOf = callLeft(filterIteratorWith, (n) => n % 2 === 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02011))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02012))_
 
 > toArray(take(squareOf(oddsOf(NumberIterator(1))), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02012))_

@@ -99,12 +99,13 @@ def render_canonical_concept_page(
             )
         if section.atom_blocks:
             body.add("\n#### Technical atoms\n\n")
-        for atom in section.atom_blocks:
+        for index, atom in enumerate(section.atom_blocks, start=1):
+            body.add(f"##### Technical atom {index}\n\n")
             if atom.context_text:
                 context_source = ", ".join(atom.context_source_range_ids)
                 span = body.add(
-                    f"> Context: {clean_statement(atom.context_text)}\n"
-                    f"_(context: {atom.source_locator} ({context_source}))_\n\n"
+                    f"**Context:** _({atom.source_locator} ({context_source}))_\n\n"
+                    f"> {clean_statement(atom.context_text)}\n\n"
                 )
                 entries.append(
                     _coverage(
@@ -116,7 +117,7 @@ def render_canonical_concept_page(
                 )
             rendered = _atom_block(atom.technical_atom_kind, atom.payload)
             citation = f"{atom.source_locator} ({atom.source_range_id})"
-            span = body.add(f"{rendered}\n_(source: {citation})_\n\n")
+            span = body.add(f"**Atom:** _({citation})_\n\n{rendered}\n\n")
             entries.append(
                 _coverage(
                     wiki_page_locator,

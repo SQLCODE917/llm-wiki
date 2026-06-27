@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-call-by-sharing-50815870@905ed816a5d6aa5bc4ca7924c681208e
+projection_coverage: section-javascriptallonge-section-call-by-sharing-50815870@15d18c5de1b812e0dfaa2e4cd5d733fd
 ---
 
 # **call by sharing**
@@ -33,14 +33,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00461))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00461))_
+
+> Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00459))_
 
 > So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00459))_
 
-> Context: And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00462))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00462))_
+
+> And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 > - ((ref1, ref2) => ref1 === ref2)(value, value)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00464))_

@@ -15,6 +15,8 @@ from llmwiki.domain.ledger.projection import (
     ProjectionSourceSupport,
 )
 from llmwiki.domain.ledger.renderer import render_source_page
+from llmwiki.domain.ledger.topic_models import SourceTopic
+from llmwiki.domain.ledger.topic_render import render_topic_page
 
 
 def test_source_page_renders_technical_atom_context() -> None:
@@ -46,8 +48,52 @@ def test_source_page_renders_technical_atom_context() -> None:
         _ledger_with_code_context(),
     )
 
-    assert "> Context: Use this helper when mapping values." in rendered.page_body
+    assert "**Context:** _(rules.md (source-range-context))_" in rendered.page_body
+    assert "> Use this helper when mapping values." in rendered.page_body
+    assert "**Atom:** _(rules.md (source-range-code))_" in rendered.page_body
     assert "```javascript" in rendered.page_body
+
+
+def test_topic_page_pairs_context_with_technical_atom() -> None:
+    rendered = render_topic_page(
+        SourceTopic(
+            topic_key="mapping",
+            label="Mapping",
+            page_kind="concept",
+            match_terms=("mapping",),
+            entry_ids=(),
+            atom_ids=("atom-code",),
+            from_heading=False,
+            salience=1.0,
+        ),
+        _ledger_with_code_context(),
+        wiki_page_locator="rules-mapping",
+        source_page_id="rules",
+    )
+
+    assert "### Technical atom 1" in rendered.page_body
+    assert rendered.page_body.index("**Context:**") < rendered.page_body.index("**Atom:**")
+    assert "**Atom:** _(rules.md (source-range-code))_" in rendered.page_body
+
+
+def test_topic_page_reports_when_technical_atoms_are_capped() -> None:
+    rendered = render_topic_page(
+        SourceTopic(
+            topic_key="mapping",
+            label="Mapping",
+            page_kind="concept",
+            match_terms=("mapping",),
+            entry_ids=(),
+            atom_ids=("atom-code",) * 7,
+            from_heading=False,
+            salience=1.0,
+        ),
+        _ledger_with_code_context(),
+        wiki_page_locator="rules-mapping",
+        source_page_id="rules",
+    )
+
+    assert "_Showing 6 of 7 technical atoms selected for this topic._" in rendered.page_body
 
 
 def _ledger_with_code_context() -> ClaimLedger:

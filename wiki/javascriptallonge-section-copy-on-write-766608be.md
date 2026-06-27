@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-copy-on-write-766608be@b233cc0a451048c9dc9897b5702caa8a
+projection_coverage: section-javascriptallonge-section-copy-on-write-766608be@a3e1522093317e24f01e61eede043e87
 ---
 
 # **Copy on Write**
@@ -27,23 +27,38 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01854))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01854))_
+
+> When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01855))_
 
 > The consequence of this is that if you have an array, and you take it’s “rest,” your “child” array is a copy of the elements of the parent array.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01855))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01858))_
 
 > Whereas if you have a linked list, and you take it’s “rest,” your “child” list shares its nodes with the “parent” list.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01858))_
 
-> Context: Let’s confirm our understanding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01859))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01859))_
+
+> Let’s confirm our understanding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01861))_
 
 > parentList.rest.rest.first = "three"; childList.first = "two";
-_(source: javascriptallonge.pdf (source-range-83ecb080-01861))_
 
-> Context: Let’s confirm our understanding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01859))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01859))_
+
+> Let’s confirm our understanding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01862))_
 
 > parentList _//=> {"first":1,"rest":{"first":"two","rest":{"first":"three","rest":{"first":\_ {},"rest":{}}}}} childList _//=> {"first":"two","rest":{"first":"three","rest":{"first":{},"rest":{}}}}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01862))_

@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-naming-function@cf7e102c9561b3275b3528cfc80a0a58
+projection_coverage: topic-javascriptallonge-naming-function@f779724a41ed630fb44b6e95699512e6
 ---
 
 # Naming Functions
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-naming-function@cf7e102c9561b3275b3
 What [[javascriptallonge]] covers about naming functions:
 
 ## Statements
+
+_Showing 14 of 33 statements selected for this topic._
 
 - This means that if we want our functions to return a value, we always need to use the return keyword _(javascriptallonge.pdf (source-range-83ecb080-00708))_
 - While the name of the function is a property of the function, not of the environment. _(javascriptallonge.pdf (source-range-83ecb080-00720))_
@@ -32,38 +34,63 @@ What [[javascriptallonge]] covers about naming functions:
 
 ## Technical atoms
 
-> Context: Let’s get right to it. This code does _not_ name a function: It doesn’t name the function “repeat” for the same reason that const answer = 42 doesn’t name the number 42. This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00694, source-range-83ecb080-00696))_
+_Showing 6 of 13 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00694, source-range-83ecb080-00696))_
+
+> Let’s get right to it. This code does _not_ name a function: It doesn’t name the function “repeat” for the same reason that const answer = 42 doesn’t name the number 42. This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00695))_
 
 > **const** repeat = (str) => str + str
-_(source: javascriptallonge.pdf (source-range-83ecb080-00695))_
 
-> Context: Here’s our repeat function written using a “fat arrow”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00699))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00699))_
+
+> Here’s our repeat function written using a “fat arrow”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00700))_
 
 > (str) => str + str
-_(source: javascriptallonge.pdf (source-range-83ecb080-00700))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00708))_
 
 > We always use a block, we cannot write function (str) str + str.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00708))_
 
-> Context: If we leave out the “something optional” that comes after the function keyword, we can translate all of the fat arrow functions that we’ve seen into function keyword functions, e.g.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00709))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00709))_
+
+> If we leave out the “something optional” that comes after the function keyword, we can translate all of the fat arrow functions that we’ve seen into function keyword functions, e.g.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00710))_
 
 > (n) => (1.618**n - -1.618**-n) / 2.236
-_(source: javascriptallonge.pdf (source-range-83ecb080-00710))_
 
-> Context: Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00718))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00718))_
+
+> Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00719))_
 
 > **const double** = **function** repeat (str) { **return** str + str; }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00719))_
 
-> Context: Now, the function’s actual name has no effect on the environment in which it is used. To whit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00729))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00729))_
+
+> Now, the function’s actual name has no effect on the environment in which it is used. To whit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00730))_
 
 > **const** bindingName = **function** actualName () { _//..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-00730))_
 
 
 ## Source

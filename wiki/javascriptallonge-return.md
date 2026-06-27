@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-return@c4790f1e3d1619eb740a345e270ca2e4
+projection_coverage: topic-javascriptallonge-return@4b0f1068c9c1dd088aa04e247a722dee
 ---
 
 # Return
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-return@c4790f1e3d1619eb740a345e270c
 What [[javascriptallonge]] covers about return:
 
 ## Statements
+
+_Showing 14 of 15 statements selected for this topic._
 
 - first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. _(javascriptallonge.pdf (source-range-83ecb080-02501))_
 - It works, but as we’ve just seen, a function that returns an iterable can often be written much more simply as a generator, rather than a function that returns an iterable object:[93] _(javascriptallonge.pdf (source-range-83ecb080-02689))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about return:
 
 ## Technical atoms
 
-> Context: Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00285))_
+_Showing 6 of 15 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00285))_
+
+> Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00287))_
 
 > (() => 1 + 1)() _//=> 2_ (() => "Hello, " + "JavaScript")() _//=> "Hello, JavaScript"_ (() => **Infinity** * **Infinity** )() _//=> Infinity_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00287))_
 
-> Context: Yes we can! Functions can return the value of evaluating another function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00291))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00291))_
+
+> Yes we can! Functions can return the value of evaluating another function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00292))_
 
 > When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00292))_
 
-> Context: There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+
+> There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00350))_
 
 > () => { 2 + 2 } () => { 1 + 1; 2 + 2 }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00350))_
 
-> Context: The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00364))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+
+> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00362))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00362))_
 
-> Context: The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00364))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+
+> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00365))_
 
 > (() => { 1 + 1; **return** 2 + 2 })() _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00365))_
 
-> Context: And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+
+> And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00367))_
 
 > (() => { **return** 1 + 1; 2 + 2 })() _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00367))_
 
 
 ## Source

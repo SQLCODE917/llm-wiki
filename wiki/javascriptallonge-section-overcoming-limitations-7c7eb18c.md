@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-overcoming-limitations-7c7eb18c@33fb8f93df213b5309af11f35d3214e6
+projection_coverage: section-javascriptallonge-section-overcoming-limitations-7c7eb18c@ee925017a0e57e05a1e3ff80fc44358c
 ---
 
 # **overcoming limitations**
@@ -22,11 +22,18 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: It’s nice to have progress. But as noted above, we can’t write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01062))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01062))_
+
+> It’s nice to have progress. But as noted above, we can’t write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01063))_
 
 > **const** butLastAndLast = (...butLast, last) => [butLast, last];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01063))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01070))_
 
 > **const** butLastAndLast = leftVariadic((butLast, last) => [butLast, last]);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01070))_

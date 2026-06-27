@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-some-history-6c2c1826@d3a5023ae30ff81741ec57625a73557c
+projection_coverage: section-javascriptallonge-section-some-history-6c2c1826@51b4e62fd0f5ea02f063380e1fcc1ef5
 ---
 
 # **some history**
@@ -35,20 +35,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
-_(context: javascriptallonge.pdf (source-range-83ecb080-01530))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01530))_
+
+> > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01533))_
 
 > If you had two 15-bit values and wished to write them to the register, the CONS macro would take the values and write them to a 36-bit word.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01533))_
 
-> Context: Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01537))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01537))_
+
+> Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01538))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01538))_
 
-> Context: We can make a list by calling cons repeatedly, and terminating it with null:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01539))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01539))_
+
+> We can make a list by calling cons repeatedly, and terminating it with null:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01540))_
 
 > **const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01540))_

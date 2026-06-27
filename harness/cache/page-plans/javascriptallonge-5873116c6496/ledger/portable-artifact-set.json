@@ -28,8 +28,8 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "projection-coverage-artifact",
-      "target_artifact_fingerprint": "2df79515e39ca172",
-      "target_artifact_id": "projection-coverage-a340d05e25ddb511"
+      "target_artifact_fingerprint": "0631a5f659c0bb93",
+      "target_artifact_id": "projection-coverage-2871185e83b5dc41"
     },
     {
       "artifact_format": "canonical-json",
@@ -44,6 +44,6 @@
       "target_artifact_id": "section-grounded-plan-57406008cfd52330"
     }
   ],
-  "portable_artifact_set_fingerprint": "b8226123a90dd733",
-  "portable_artifact_set_id": "portable-artifact-set-b8226123a90dd733"
+  "portable_artifact_set_fingerprint": "e80087179c41bf7d",
+  "portable_artifact_set_id": "portable-artifact-set-e80087179c41bf7d"
 }

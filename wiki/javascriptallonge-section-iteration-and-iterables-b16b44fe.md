@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-iteration-and-iterables-b16b44fe@aa5315ffabd08d20bb34d041a03a0af2
+projection_coverage: section-javascriptallonge-section-iteration-and-iterables-b16b44fe@7a2175651ddac4cbb610a82502491bba
 ---
 
 # Iteration and Iterables
@@ -101,161 +101,280 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> **const** iter = stack.iterator(); iter().value _//=> "you!"_ iter().value _//=> "to"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02373))_
+### Technical atom 1
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02373))_
+
+> **const** iter = stack.iterator(); iter().value _//=> "you!"_ iter().value _//=> "to"_
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02379))_
 
 > **const** iteratorSum = (iterator) => { **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02379))_
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02380))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02380))_
 
-> Context: We can use it with our stack:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02381))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02381))_
+
+> We can use it with our stack:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02384))_
 
 > **const** stack = Stack1();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02384))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02389))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection.iterator();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02389))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02390))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02390))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02391))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02391))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02392))_
 
 > collectionSum(stack) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02392))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02404))_
 
 > **const** stack = Stack2();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02404))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02406))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection.iterator();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02406))_
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02407))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02407))_
+
+### Technical atom 12
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02408))_
 
 > **while** ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02408))_
+
+### Technical atom 13
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02409))_
 
 > collectionSum(stack) _//=> 2015_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02409))_
+
+### Technical atom 14
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02424))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02424))_
+
+### Technical atom 15
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02425))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02425))_
+
+### Technical atom 16
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02426))_
 
 > **while** ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum } collectionSum(stack) _//=> 2015_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02426))_
 
-> Context: Indeed we do. Behold the for...of loop:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02428))_
+### Technical atom 17
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02428))_
+
+> Indeed we do. Behold the for...of loop:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02429))_
 
 > **const** iterableSum = (iterable) => { **let** sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02429))_
 
-> Context: Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02438))_
+### Technical atom 18
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02438))_
+
+> Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02439))_
 
 > - ['some squares', ...someSquares] _//=> ["some squares", 1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02439))_
 
-> Context: And we can also spread the elements of an array literal into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02440))_
+### Technical atom 19
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02441))_
 
 > **const** firstAndSecondElement = (first, second) => ({first, second})
-_(source: javascriptallonge.pdf (source-range-83ecb080-02441))_
 
-> Context: And we can also spread the elements of an array literal into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02440))_
+### Technical atom 20
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02442))_
 
 > firstAndSecondElement(...stack) _//=> {"first":5,"second":10}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02442))_
 
-> Context: Iterables needn’t represent finite collections:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02447))_
+### Technical atom 21
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02447))_
+
+> Iterables needn’t represent finite collections:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02448))_
 
 > **const** Numbers = { [Symbol.iterator] () { **let** n = 0; **return** { next: () => ({done: **false** , value: n++}) } } }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02448))_
 
-> Context: There are useful things we can do with iterables representing an infinitely large collection. But let’s point out what we can’t do with them:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02449))_
+### Technical atom 22
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02449))_
+
+> There are useful things we can do with iterables representing an infinitely large collection. But let’s point out what we can’t do with them:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02452))_
 
 > ['all the numbers', ...Numbers] _//=> infinite loop!_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02452))_
 
-> Context: The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02457))_
+### Technical atom 23
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02457))_
+
+> The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02458))_
 
 > **const** abc = ["a", "b", "c"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02458))_
 
-> Context: Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02475))_
+### Technical atom 24
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02475))_
+
+> Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02476))_
 
 > **const** Evens = mapWith((x) => 2 * x, Numbers);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02476))_
 
-> Context: Mind you, we can also map non-collection iterables, like RandomNumbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02484))_
+### Technical atom 25
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02484))_
+
+> Mind you, we can also map non-collection iterables, like RandomNumbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02485))_
 
 > **const** ZeroesToNines = mapWith((n) => Math.floor(10 * limit), RandomNumbers);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02485))_
+
+### Technical atom 26
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02491))_
 
 > mapWith can get a new iterator from RandomNumbers each time we iterate over ZeroesToNines, but if RandomNumbers doesn’t behave like an ordered collection, that’s not mapWith’s fault.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02491))_
 
-> Context: And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02497))_
+### Technical atom 27
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02497))_
+
+> And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02499))_
 
 > [...UpTo1000] _//=>_ [1,81,121,361,441,841,961] [...UpTo1000] _//=>_ [1,81,121,361,441,841,961]
-_(source: javascriptallonge.pdf (source-range-83ecb080-02499))_
 
-> Context: For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02501))_
+### Technical atom 28
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02501))_
+
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02502))_
 
 > **const** first = (iterable) => iterable[Symbol.iterator]().next().value; **const** rest = (iterable) => ({ [Symbol.iterator] () { **const** iterator = iterable[Symbol.iterator](); iterator.next(); **return** iterator; } });
-_(source: javascriptallonge.pdf (source-range-83ecb080-02502))_
 
-> Context: One useful thing is to write a .from function that gathers an iterable into a particular collection type. JavaScript’s built-in Array class already has one:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02508))_
+### Technical atom 29
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02508))_
+
+> One useful thing is to write a .from function that gathers an iterable into a particular collection type. JavaScript’s built-in Array class already has one:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02509))_
 
 > Array.from(UpTo1000) _//=> [1,81,121,361,441,841,961]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02509))_
+
+### Technical atom 30
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02512))_
 
 > Stack3.from = **function** (iterable) { **const** stack = **this** ();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02512))_
+
+### Technical atom 31
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02514))_
 
 > Pair1.from = (iterable) => ( **function** iterationToList (iteration) { **const** {done, value} = iteration.next();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02514))_
 
-> Context: Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02516))_
+### Technical atom 32
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02516))_
+
+> Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02517))_
 
 > **const** numberList = Pair1.from(untilWith((x) => x > 10, Numbers));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02517))_
 
-> Context: Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02516))_
+### Technical atom 33
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02516))_
+
+> Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02518))_
 
 > Pair1.from(Squares) _//=> {"first":0,_ "rest":{"first":1, "rest":{"first":4, "rest":{ ...
-_(source: javascriptallonge.pdf (source-range-83ecb080-02518))_

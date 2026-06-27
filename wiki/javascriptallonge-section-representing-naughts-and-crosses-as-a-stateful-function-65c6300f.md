@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-representing-naughts-and-crosses-as-a-stateful-function-65c6300f@8ad1367f5f5cce6fd604fb34d74b0d91
+projection_coverage: section-javascriptallonge-section-representing-naughts-and-crosses-as-a-stateful-function-65c6300f@05c890bbab86c51bb6484ede42630c5c
 ---
 
 # **representing naughts and crosses as a stateful function**
@@ -22,8 +22,14 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02996))_
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02996))_
 
 > **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-03005))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03005))_
+
+> **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();

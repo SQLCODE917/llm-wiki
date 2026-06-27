@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-tortoises-hares-and-teleporting-turtles-5ba2545c@ff98273c4f71501332dad4d756f6a034
+projection_coverage: section-javascriptallonge-section-tortoises-hares-and-teleporting-turtles-5ba2545c@1907d918e32ea4ccaff33199763ac421
 ---
 
 # Tortoises, Hares, and Teleporting Turtles
@@ -32,20 +32,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01909))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01909))_
+
+> I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01910))_
 
 > **const** EMPTY = **null** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01910))_
 
-> Context: I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01909))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01909))_
+
+> I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01911))_
 
 > **const** isEmpty = (node) => node === EMPTY;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01911))_
 
-> Context: **const** teleportingTurtle = (list) => { **let** speed = 1, rabbit = list, turtle = rabbit; **while** ( **true** ) { **for** ( **let** i = 0; i <= speed; i += 1) { rabbit = rabbit.rest; **if** (rabbit == **null** ) { **return false** ; } **if** (rabbit === turtle) { **return true** ; } } turtle = rabbit; speed *= 2; } **return false** ; }; **const** aList = list(1, 2, 3, 4, 5); teleportingTurtle(aList) _//=> false_ forceAppend(aList, aList.rest.rest);
-_(context: javascriptallonge.pdf (source-range-83ecb080-01924))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01924))_
+
+> **const** teleportingTurtle = (list) => { **let** speed = 1, rabbit = list, turtle = rabbit; **while** ( **true** ) { **for** ( **let** i = 0; i <= speed; i += 1) { rabbit = rabbit.rest; **if** (rabbit == **null** ) { **return false** ; } **if** (rabbit === turtle) { **return true** ; } } turtle = rabbit; speed *= 2; } **return false** ; }; **const** aList = list(1, 2, 3, 4, 5); teleportingTurtle(aList) _//=> false_ forceAppend(aList, aList.rest.rest);
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01925))_
 
 > teleportingTurtle(aList); _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01925))_

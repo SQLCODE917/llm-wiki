@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-a8806219@22d46639375fd7aa54fca33ca7246548
+projection_coverage: section-javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-a8806219@7570a65b6fa5d27cd7a33456c9a4274d
 ---
 
 # Ah. I'd Like to Have an Argument, Please.
@@ -71,59 +71,98 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
-_(context: javascriptallonge.pdf (source-range-83ecb080-00397))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00397))_
+
+> I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00398))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00398))_
 
-> Context: Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00400))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00400))_
+
+> Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00401))_
 
 > ((diameter) => diameter * 3.14159265)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00401))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00407))_
 
 > ((room, board) => room + board)(800, 150)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00407))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00425))_
 
 > - ((diameter) => diameter * 3.14159265)(1 + 1) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00425))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00426))_
 
 > What happened internally is that the expression 1 + 1 was evaluated first, resulting in 2. Then our circumference function was applied to 2.[24]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00426))_
 
-> Context: Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00429))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00429))_
+
+> Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00430))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00430))_
 
-> Context: How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00438))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00438))_
+
+> How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00439))_
 
 > ((x) => x)(2) _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00439))_
 
-> Context: What happens is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00440))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00440))_
+
+> What happens is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00443))_
 
 > 3. One sub-expression, (x) => x evaluates to a function.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00443))_
 
-> Context: Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00461))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00461))_
+
+> Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00459))_
 
 > So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00459))_
 
-> Context: And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00462))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00462))_
+
+> And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 > - ((ref1, ref2) => ref1 === ref2)(value, value)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00464))_

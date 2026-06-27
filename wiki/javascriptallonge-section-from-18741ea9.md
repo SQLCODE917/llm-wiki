@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-from-18741ea9@28610a982198a573a183c38385f96bcd
+projection_coverage: section-javascriptallonge-section-from-18741ea9@719b26a773aa57cd31c89657151f8ff2
 ---
 
 # **from**
@@ -26,26 +26,44 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: One useful thing is to write a .from function that gathers an iterable into a particular collection type. JavaScript’s built-in Array class already has one:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02508))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02508))_
+
+> One useful thing is to write a .from function that gathers an iterable into a particular collection type. JavaScript’s built-in Array class already has one:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02509))_
 
 > Array.from(UpTo1000) _//=> [1,81,121,361,441,841,961]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02509))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02512))_
 
 > Stack3.from = **function** (iterable) { **const** stack = **this** ();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02512))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02514))_
 
 > Pair1.from = (iterable) => ( **function** iterationToList (iteration) { **const** {done, value} = iteration.next();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02514))_
 
-> Context: Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02516))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02516))_
+
+> Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02517))_
 
 > **const** numberList = Pair1.from(untilWith((x) => x > 10, Numbers));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02517))_
 
-> Context: Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02516))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02516))_
+
+> Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02518))_
 
 > Pair1.from(Squares) _//=> {"first":0,_ "rest":{"first":1, "rest":{"first":4, "rest":{ ...
-_(source: javascriptallonge.pdf (source-range-83ecb080-02518))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-the-carpenter-s-solution-a9b3ff8b@3debee7149a160d5895e908ebd5dd681
+projection_coverage: section-javascriptallonge-section-the-carpenter-s-solution-a9b3ff8b@19e300d463a0c6bae89bdda76fd72d46
 ---
 
 # **the carpenter’s solution**
@@ -45,26 +45,44 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: The Carpenter coughed softly, then began. “To begin with, I’ll transform a game into an iterable that generates arrows, using the ‘Starman’ notation for generators. I’ll refactor a touch to make things clearer, for example I’ll extract the board to make it easier to test:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-02853))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02853))_
+
+> The Carpenter coughed softly, then began. “To begin with, I’ll transform a game into an iterable that generates arrows, using the ‘Starman’ notation for generators. I’ll refactor a touch to make things clearer, for example I’ll extract the board to make it easier to test:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02855))_
 
 > **const** Board = (size = 8) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02855))_
 
-> Context: “Now that we have an iterable, we can transform the iterable of arrows into an iterable of positions.” The Carpenter sketched quickly. “We want to take the arrows and convert them to positions. For that, we’ll map the Game iterable to positions. A statefulMap is a lazy map that preserves state from iteration to iteration. That’s what we need, because we need to know the current position to map each move to the next position.”
-_(context: javascriptallonge.pdf (source-range-83ecb080-02862))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02862))_
+
+> “Now that we have an iterable, we can transform the iterable of arrows into an iterable of positions.” The Carpenter sketched quickly. “We want to take the arrows and convert them to positions. For that, we’ll map the Game iterable to positions. A statefulMap is a lazy map that preserves state from iteration to iteration. That’s what we need, because we need to know the current position to map each move to the next position.”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02860))_
 
 > **const** Game = ({board, position}) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02860))_
 
-> Context: “There’s an old joke that a mathematician is someone who will take a five-minute problem, then spend an hour proving it is equivalent to another problem they have already solved. I approached this question in that spirit. Now that we have created an iterable of values that can be compared with ===, I can show you this function:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-02876))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02876))_
+
+> “There’s an old joke that a mathematician is someone who will take a five-minute problem, then spend an hour proving it is equivalent to another problem they have already solved. I approached this question in that spirit. Now that we have created an iterable of values that can be compared with ===, I can show you this function:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02879))_
 
 > **const** tortoiseAndHare = (iterable) => { **const** hare = iterable[Symbol.iterator](); **let** hareResult = (hare.next(), hare.next());
-_(source: javascriptallonge.pdf (source-range-83ecb080-02879))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02881))_
 
 > hareResult = hare.next();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02881))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02890))_
 
 > **const** terminates = (game) => tortoiseAndHare(positionsOf(game)) **const** test = [ ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"] ];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02890))_

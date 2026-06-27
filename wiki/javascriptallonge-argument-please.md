@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-argument-please@9aac372202289459f6d84bcb97493a65
+projection_coverage: topic-javascriptallonge-argument-please@e7db1a7397af1a0c8623155dc7183c24
 ---
 
 # Ah. I'd Like to Have an Argument, Please.
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-argument-please@9aac372202289459f6d
 What [[javascriptallonge]] covers about ah. i'd like to have an argument, please.:
 
 ## Statements
+
+_Showing 14 of 42 statements selected for this topic._
 
 - Every time a function is invoked (“invoked” means “applied to zero or more arguments”), a new _environment_ is created. _(javascriptallonge.pdf (source-range-83ecb080-00434))_
 - When you apply the function to the arguments, an entry is placed in the dictionary for each argument. _(javascriptallonge.pdf (source-range-83ecb080-00438))_
@@ -32,38 +34,63 @@ What [[javascriptallonge]] covers about ah. i'd like to have an argument, please
 
 ## Technical atoms
 
-> Context: I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
-_(context: javascriptallonge.pdf (source-range-83ecb080-00397))_
+_Showing 6 of 10 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00397))_
+
+> I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00398))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00398))_
 
-> Context: Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00400))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00400))_
+
+> Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00401))_
 
 > ((diameter) => diameter * 3.14159265)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00401))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00407))_
 
 > ((room, board) => room + board)(800, 150)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00407))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00425))_
 
 > - ((diameter) => diameter * 3.14159265)(1 + 1) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00425))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00426))_
 
 > What happened internally is that the expression 1 + 1 was evaluated first, resulting in 2. Then our circumference function was applied to 2.[24]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00426))_
 
-> Context: Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00429))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00429))_
+
+> Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00430))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00430))_
 
 
 ## Source

@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-constant-coffee-craving@45358f21b0aa9c1c9e70c27c758f84a6
+projection_coverage: topic-javascriptallonge-constant-coffee-craving@2da2ef0e070edd89d877f08df91c92fd
 ---
 
 # That Constant Coffee Craving
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-constant-coffee-craving@45358f21b0a
 What [[javascriptallonge]] covers about that constant coffee craving:
 
 ## Statements
+
+_Showing 14 of 62 statements selected for this topic._
 
 - We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s _almost_ what we wanted all along: A way to bind 3.14159265 to a readable name. _(javascriptallonge.pdf (source-range-83ecb080-00588))_
 - Up to now, all we’ve really seen are _anonymous functions_ , functions that don’t have a name. _(javascriptallonge.pdf (source-range-83ecb080-00543))_
@@ -32,35 +34,59 @@ What [[javascriptallonge]] covers about that constant coffee craving:
 
 ## Technical atoms
 
-> Context: There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00544))_
+_Showing 6 of 33 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
+
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00545))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00545))_
 
-> Context: What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00546))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00546))_
+
+> What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00547))_
 
 > (diameter) => diameter * PI
-_(source: javascriptallonge.pdf (source-range-83ecb080-00547))_
 
-> Context: In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00548))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00548))_
+
+> In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00549))_
 
 > ((PI) => _// ????_ )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00549))_
 
-> Context: What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00550))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00550))_
+
+> What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00551))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00551))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00557))_
 
 > ((diameter) => diameter * 3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00557))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00558))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00558))_
 
 
 ## Source

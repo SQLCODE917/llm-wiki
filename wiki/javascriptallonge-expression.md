@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-expression@fe371964648276bebdd101ad1b3584ee
+projection_coverage: topic-javascriptallonge-expression@43a880c1f6b1599556c29b5b8e14b6bc
 ---
 
 # Expression
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-expression@fe371964648276bebdd101ad
 What [[javascriptallonge]] covers about expression:
 
 ## Statements
+
+_Showing 14 of 23 statements selected for this topic._
 
 - For example, when this expression’s inner function is defined with function, arguments[0] refers to its only argument, "inner": _(javascriptallonge.pdf (source-range-83ecb080-00881))_
 - The x in the expression that we call a “variable” is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-83ecb080-00434))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about expression:
 
 ## Technical atoms
 
-> Context: All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00168))_
+_Showing 6 of 20 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00168))_
+
+> All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00170))_
 
 > And if we hand over the espresso, we get the espresso right back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00170))_
 
-> Context: An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00205))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00205))_
+
+> An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00206))_
 
 > [2-1, 2, 2+1] [1, 1+1, 1+1+1]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00206))_
 
-> Context: What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a browser, you may see something else.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00262))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00262))_
+
+> What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a 
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00263))_
 
 > > 16 The simplest possible function is () => {}, we’ll see that later.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00263))_
 
-> Context: There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+
+> There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00350))_
 
 > () => { 2 + 2 } () => { 1 + 1; 2 + 2 }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00350))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00354))_
 
 > (() => { 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00354))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00355))_
 
 > (() => { 1 + 1; 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00355))_
 
 
 ## Source

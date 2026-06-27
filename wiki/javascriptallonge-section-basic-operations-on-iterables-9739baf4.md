@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-basic-operations-on-iterables-9739baf4@643c3512e1dd01af7848fa7ce063be1a
+projection_coverage: section-javascriptallonge-section-basic-operations-on-iterables-9739baf4@464db5c6ab195d5d5f6ab6eb7f6289d1
 ---
 
 # Basic Operations on Iterables
@@ -20,17 +20,30 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03059))_
+
 > **for** ( **let** i = 0; i < numberToTake; ++i) { **const** { done, value } = iterator.next(); **if** (!done) **yield** value; } }
-_(source: javascriptallonge.pdf (source-range-83ecb080-03059))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03061))_
 
 > **function** * zip (...iterables) { **const** iterators = iterables.map(i => i[Symbol.iterator]());
-_(source: javascriptallonge.pdf (source-range-83ecb080-03061))_
 
-> Context: Note: zip is also the following special case of zipWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03063))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03063))_
+
+> Note: zip is also the following special case of zipWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03066))_
 
 > **const** zip = callFirst(zipWith, (...values) => values);
-_(source: javascriptallonge.pdf (source-range-83ecb080-03066))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03068))_
 
 > **const** reduceWith = (fn, seed, iterable) => { **let** accumulator = seed;
-_(source: javascriptallonge.pdf (source-range-83ecb080-03068))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-iterator-objects-f38e13cb@fdebeb57c98e25eadad0f5bb6580ec23
+projection_coverage: section-javascriptallonge-section-iterator-objects-f38e13cb@403808fcec3fd2e9109a4fd1ec841547
 ---
 
 # **iterator objects**
@@ -28,17 +28,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02404))_
+
 > **const** stack = Stack2();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02404))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02406))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection.iterator();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02406))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02407))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02407))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02408))_
 
 > **while** ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02408))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02409))_
 
 > collectionSum(stack) _//=> 2015_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02409))_

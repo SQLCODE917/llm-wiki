@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-are-consts-also-from-a-shadowy-planet-4a9e1ee2@0471a8561f1ebf379ef250e6214860c8
+projection_coverage: section-javascriptallonge-section-are-consts-also-from-a-shadowy-planet-4a9e1ee2@58882a39778893f78eb31a4a4b68fb72
 ---
 
 # **are consts also from a shadowy planet?**
@@ -41,59 +41,98 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s start, as above, by doing this with parameters. We’ll start with:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00647))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00647))_
+
+> Let’s start, as above, by doing this with parameters. We’ll start with:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00648))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00648))_
 
-> Context: And gratuitously wrap it in another IIFE so that we can bind PI to something else:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00649))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00649))_
+
+> And gratuitously wrap it in another IIFE so that we can bind PI to something else:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00652))_
 
 > ((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00652))_
 
-> Context: This still evaluates to a function that calculates diameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00653))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00653))_
+
+> This still evaluates to a function that calculates diameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00654))_
 
 > ((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00654))_
 
-> Context: And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
-_(context: javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
+
+> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00656))_
 
 > ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00656))_
 
-> Context: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the answer is **no** , the inner binding does not overwrite the outer binding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00657))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00657))_
+
+> Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the answer is **no** , the inner binding does not overwrite the outer binding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00658))_
 
 > ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00658))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00663))_
 
 > ((diameter) => { **const** PI = 3.14159265; (() => { **const** PI = 3; })(); **return** diameter * PI; })(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00663))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00674))_
 
 > ((diameter) => { **const** PI = 3.14159265;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00674))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00675))_
 
 > **if** ( **true** ) { **const** PI = 3; } **return** diameter * PI; })(2) _//=> would return 6 if const had function scope_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00675))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00676))_
 
 > If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00676))_
 
-> Context: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00676))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00676))_
+
+> If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00678))_
 
 > **if** ( **true** ) { **const** PI = 3.14159265; } **return** diameter * PI; })(2) _//=> would return 6.2831853 if const had function scope_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00678))_

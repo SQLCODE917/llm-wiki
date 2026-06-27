@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-gathering-8df97cbb@dc3d2c5723762a2b65a8e5288b886cc6
+projection_coverage: section-javascriptallonge-section-gathering-8df97cbb@02751cf846ede00f056dcc671c4b744a
 ---
 
 # **gathering**
@@ -25,38 +25,66 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01242))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01242))_
+
+> Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01243))_
 
 > **const** [car, ...cdr] = [1, 2, 3, 4, 5];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01243))_
 
-> Context: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01242))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01242))_
+
+> Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01244))_
 
 > car _//=> 1_ cdr _//=> [2, 3, 4, 5]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01244))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01251))_
 
 > **const** [...butLast, last] = [1, 2, 3, 4, 5]; _//=> ERROR_ **const** [first, ..., last] = [1, 2, 3, 4, 5]; _//=> ERROR_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01251))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01253))_
 
 > **const** wrapped = [something];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01253))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01255))_
 
 > **const** [unwrapped] = something;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01255))_
 
-> Context: What is the reverse of gathering? We know that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01256))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01256))_
+
+> What is the reverse of gathering? We know that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01257))_
 
 > **const** [car, ...cdr] = [1, 2, 3, 4, 5];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01257))_
 
-> Context: What is the reverse? It would be:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01258))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01258))_
+
+> What is the reverse? It would be:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01259))_
 
 > **const** cons = [car, ...cdr];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01259))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01261))_
 
 > **const** oneTwoThree = ["one", "two", "three"]; ["zero", ...oneTwoThree] _//=> ["zero","one","two","three"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01261))_

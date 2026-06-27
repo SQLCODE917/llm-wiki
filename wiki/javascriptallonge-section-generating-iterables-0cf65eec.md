@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-generating-iterables-0cf65eec@3e3c0ae69e0a36f7608267ca3eddb58a
+projection_coverage: section-javascriptallonge-section-generating-iterables-0cf65eec@da0af4cc0e735b83e1ddb3d0654cdabb
 ---
 
 # Generating Iterables
@@ -116,113 +116,194 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s consider how they work. Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02531))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02531))_
+
+> Let’s consider how they work. Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02532))_
 
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02532))_
 
-> Context: Of course, when we have some code that makes a bunch of something, we don’t usually write it like that. We usually just write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02538))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02538))_
+
+> Of course, when we have some code that makes a bunch of something, we don’t usually write it like that. We usually just write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02539))_
 
 > **let** n = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02539))_
 
-> Context: They’re of approximately equal complexity. So why bring up generation? Well, there are some collections that are much easier to generate than to iterate over. Let’s look at one:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02545))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02545))_
+
+> They’re of approximately equal complexity. So why bring up generation? Well, there are some collections that are much easier to generate than to iterate over. Let’s look at one:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02547))_
 
 > One of those cases is when we have to recursively enumerate something.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02547))_
 
-> Context: For example, iterating over a tree. Given an array that might contain arrays, let’s say we want to generate all the “leaf” elements, i.e. elements that are not, themselves, iterable.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02548))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02548))_
+
+> For example, iterating over a tree. Given an array that might contain arrays, let’s say we want to generate all the “leaf” elements, i.e. elements that are not, themselves, iterable.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02549))_
 
 > _// Generation_ **const** isIterable = (something) => !!something[Symbol.iterator];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02549))_
 
-> Context: Let’s write a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02564))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02564))_
+
+> Let’s write a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02566))_
 
 > **const** fibonacci = () => { **let** a, b;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02566))_
 
-> Context: Let’s write a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02564))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02564))_
+
+> Let’s write a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02567))_
 
 > console.log(a = 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02567))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02568))_
 
 > console.log(b = 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02568))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02569))_
 
 > **while** ( **true** ) { [a, b] = [b, a + b]; console.log(b); }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02569))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02588))_
 
 > Whereas the iteration version must make that state explicit.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02588))_
 
-> Context: 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02593))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02593))_
+
+> 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02594))_
 
 > When we invoke the function, we get an iterator object back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02594))_
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02598))_
 
 > When we invoke empty, we get an iterator with no elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02598))_
 
-> Context: Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02604))_
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02604))_
+
+> Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02605))_
 
 > only("you").next() _//=>_ {"done": **false** , value: "you"} only("the lonely").next() _//=>_ {"done": **false** , value: "the lonely"}
-_(source: javascriptallonge.pdf (source-range-83ecb080-02605))_
 
-> Context: We can invoke the same iterator twice:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02606))_
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02606))_
+
+> We can invoke the same iterator twice:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02607))_
 
 > **const** sixteen = only("sixteen"); sixteen.next() _//=>_ {"done": **false** , value: "sixteen"} sixteen.next() _//=>_ {"done": **true** }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02607))_
 
-> Context: Here’s a generator that yields three numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02610))_
+### Technical atom 14
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02610))_
+
+> Here’s a generator that yields three numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02613))_
 
 > **const** oneTwoThree = **function** * () { **yield** 1; **yield** 2; **yield** 3; };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02613))_
+
+### Technical atom 15
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02614))_
 
 > oneTwoThree().next() _//=>_ {"done": **false** , value: 1} oneTwoThree().next() _//=>_ {"done": **false** , value: 1} oneTwoThree().next() _//=>_ {"done": **false** , value: 1}
-_(source: javascriptallonge.pdf (source-range-83ecb080-02614))_
+
+### Technical atom 16
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02615))_
 
 > **const** iterator = oneTwoThree();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02615))_
 
-> Context: Our generator function oneTwoThree is not an iterator. It’s a function that returns an iterator when we invoke it. We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02651))_
+### Technical atom 17
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02651))_
+
+> Our generator function oneTwoThree is not an iterator. It’s a function that returns an iterator when we invoke it. We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02652))_
 
 > If we call our generator function more than once, we get new iterators.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02652))_
 
-> Context: Now we can use it in a for...of loop, spread it into an array literal, or spread it into a function invocation, because we have written an iterable that uses a generator to return an iterator from its [Symbol.iterator] method.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02658))_
+### Technical atom 18
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02658))_
+
+> Now we can use it in a for...of loop, spread it into an array literal, or spread it into a function invocation, because we have written an iterable that uses a generator to return an iterator from its [Symbol.iterator] method.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02656))_
 
 > **const** iterator = ThreeNumbers[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02656))_
 
-> Context: generator methods for objects: This object declares a [Symbol.iterator] function that makes it iterable. Because it’s declared *[Symbol.iterator], it’s a generator instead of an iterator.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02662, source-range-83ecb080-02664))_
+### Technical atom 19
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02662, source-range-83ecb080-02664))_
+
+> generator methods for objects: This object declares a [Symbol.iterator] function that makes it iterable. Because it’s declared *[Symbol.iterator], it’s a generator instead of an iterator.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02663))_
 
 > **const** ThreeNumbers = { *[Symbol.iterator] () { **yield** 1; **yield** 2; **yield** 3 } }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02663))_
+
+### Technical atom 20
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02690))_
 
 > But if you can write it as a simple generator, write it as a simple generator.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02690))_
 
-> Context: first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02726))_
+### Technical atom 21
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02726))_
+
+> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02727))_
 
 > **const** first = (iterable) => iterable[Symbol.iterator]().next().value;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02727))_
 
-> Context: first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02726))_
+### Technical atom 22
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02726))_
+
+> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02728))_
 
 > **function** * rest (iterable) { **const** iterator = iterable[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02728))_

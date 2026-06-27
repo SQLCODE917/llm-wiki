@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-generators-are-coroutines-72003ba2@cc59de431ffc608389ad00157599dc7d
+projection_coverage: section-javascriptallonge-section-generators-are-coroutines-72003ba2@dc304d3bdbbba8073b75f30d672c33ea
 ---
 
 # **generators are coroutines**
@@ -42,14 +42,24 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Here’s a generator that yields three numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02610))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02610))_
+
+> Here’s a generator that yields three numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02613))_
 
 > **const** oneTwoThree = **function** * () { **yield** 1; **yield** 2; **yield** 3; };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02613))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02614))_
 
 > oneTwoThree().next() _//=>_ {"done": **false** , value: 1} oneTwoThree().next() _//=>_ {"done": **false** , value: 1} oneTwoThree().next() _//=>_ {"done": **false** , value: 1}
-_(source: javascriptallonge.pdf (source-range-83ecb080-02614))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02615))_
 
 > **const** iterator = oneTwoThree();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02615))_

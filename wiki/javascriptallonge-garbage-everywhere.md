@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-garbage-everywhere@1b5bd5444e1b0f2fd976a3f78c94fbbc
+projection_coverage: topic-javascriptallonge-garbage-everywhere@b60590617d68f1dd866a9cbc78527b81
 ---
 
 # Garbage, Garbage Everywhere
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-garbage-everywhere@1b5bd5444e1b0f2f
 What [[javascriptallonge]] covers about garbage, garbage everywhere:
 
 ## Statements
+
+_Showing 14 of 41 statements selected for this topic._
 
 - In GC environments, it is marked as no longer being used, and eventually the garbage collector recycles the memory it is using. _(javascriptallonge.pdf (source-range-83ecb080-01517))_
 - In broad terms, this means that a single 36-bit word could store two separate 15-bit values and it was very fast to save and retrieve pairs of values. _(javascriptallonge.pdf (source-range-83ecb080-01533))_
@@ -32,38 +34,63 @@ What [[javascriptallonge]] covers about garbage, garbage everywhere:
 
 ## Technical atoms
 
-> Context: We have now seen how to use Tail Calls to execute mapWith in constant space:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01507))_
+_Showing 6 of 9 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01507))_
+
+> We have now seen how to use Tail Calls to execute mapWith in constant space:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01508))_
 
 > **const** mapWith = (fn, [first, ...rest], prepend = []) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01508))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01511))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01511))_
 
-> Context: > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
-_(context: javascriptallonge.pdf (source-range-83ecb080-01530))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01530))_
+
+> > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01533))_
 
 > If you had two 15-bit values and wished to write them to the register, the CONS macro would take the values and write them to a 36-bit word.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01533))_
 
-> Context: Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01537))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01537))_
+
+> Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01538))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01538))_
 
-> Context: We can make a list by calling cons repeatedly, and terminating it with null:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01539))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01539))_
+
+> We can make a list by calling cons repeatedly, and terminating it with null:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01540))_
 
 > **const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01540))_
 
-> Context: Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01543))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01543))_
+
+> Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01546))_
 
 > **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01546))_
 
 
 ## Source

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-the-problem-11d1b896@2c3a78477af380ea7164f8c58db5b9c9
+projection_coverage: section-javascriptallonge-section-the-problem-11d1b896@f6cebbbf5b4b7fb43b20405c25ff5381
 ---
 
 # **the problem**
@@ -30,17 +30,28 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Christine intoned the question, as if by rote:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02834))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02834))_
+
+> Christine intoned the question, as if by rote:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02835))_
 
 > If the arrow should cause the chequer to move off the edge of the board, the game halts.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02835))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02842))_
 
 > You may use babeljs.io[95] , or ES6Fiddle[96] to check your work.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02842))_
 
-> Context: Christine quickly scribbled on the whiteboard:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02843))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02843))_
+
+> Christine quickly scribbled on the whiteboard:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02844))_
 
 > **const** Game = (size = 8) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02844))_

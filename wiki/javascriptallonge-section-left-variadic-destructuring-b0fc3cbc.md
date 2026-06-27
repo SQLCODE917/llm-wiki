@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-left-variadic-destructuring-b0fc3cbc@4ca77bb545f8c2b2a943b30975a7e1a8
+projection_coverage: section-javascriptallonge-section-left-variadic-destructuring-b0fc3cbc@273ced007312dd4c1a193864d8006159
 ---
 
 # **left-variadic destructuring**
@@ -22,29 +22,48 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01074))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01074))_
+
+> Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01075))_
 
 > **const** [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid'];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01075))_
 
-> Context: Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01074))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01074))_
+
+> Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01076))_
 
 > first _//=> 'why'_ butFirst _//=> ["hello","there","little","droid"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01076))_
 
-> Context: As with parameters, we can’t gather values from the left when destructuring an array:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01077))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01077))_
+
+> As with parameters, we can’t gather values from the left when destructuring an array:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01078))_
 
 > **const** [...butLast, last] = ['why', 'hello', 'there', 'little', 'droid']; _//=> Unexpected token_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01078))_
 
-> Context: We could use leftVariadic the hard way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01079))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01079))_
+
+> We could use leftVariadic the hard way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01082))_
 
 > **const** [butLast, last] = leftVariadic((butLast, last) => [butLast, last])(...['wh\ y', 'hello', 'there', 'little', 'droid']);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01082))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01083))_
 
 > butLast _//=> ['why', 'hello', 'there', 'little']_ last _//=> 'droid'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01083))_

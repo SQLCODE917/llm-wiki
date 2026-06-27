@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-the-kestrel-and-the-idiot-9954fcbb@0c67ab4b8f0ac3f4d2048f21d9d93194
+projection_coverage: section-javascriptallonge-section-the-kestrel-and-the-idiot-9954fcbb@2102d613e836436f46edcb631029fe12
 ---
 
 # **the kestrel and the idiot**
@@ -25,53 +25,96 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02053))_
+
 > **const** K = (x) => (y) => x; **const** fortyTwo = K(42);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02053))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02054))_
 
 > fortyTwo(6) _//=> 42_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02054))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02055))_
 
 > fortyTwo("Hello") _//=> 42_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02055))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02058))_
 
 > K(6)(7) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02058))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02059))_
 
 > K(12)(24) _//=> 12_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02059))_
 
-> Context: Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02061))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02061))_
+
+> Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02062))_
 
 > Therefore, K(I)(x)(y) => y:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02062))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02065))_
 
 > K(I)(6)(7) _//=> 7_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02065))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02066))_
 
 > K(I)(12)(24) _//=> 24_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02066))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02068))_
 
 > K("primus")("secundus") _//=> "primus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02068))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02069))_
 
 > K(I)("primus")("secundus") _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02069))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02071))_
 
 > **const** first = K, second = K(I);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02071))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02072))_
 
 > first("primus")("secundus") _//=> "primus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02072))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02073))_
 
 > second("primus")("secundus") _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02073))_

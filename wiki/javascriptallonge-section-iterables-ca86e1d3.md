@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-iterables-ca86e1d3@e25497598eaeb74f4292170a95a0cb69
+projection_coverage: section-javascriptallonge-section-iterables-ca86e1d3@677b7e48840aa5f07868b022caa498af
 ---
 
 # **iterables**
@@ -36,35 +36,60 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02424))_
+
 > **const** collectionSum = (collection) => { **const** iterator = collection[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02424))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02425))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02425))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02426))_
 
 > **while** ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum } collectionSum(stack) _//=> 2015_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02426))_
 
-> Context: Indeed we do. Behold the for...of loop:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02428))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02428))_
+
+> Indeed we do. Behold the for...of loop:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02429))_
 
 > **const** iterableSum = (iterable) => { **let** sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02429))_
 
-> Context: Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02438))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02438))_
+
+> Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02439))_
 
 > - ['some squares', ...someSquares] _//=> ["some squares", 1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02439))_
 
-> Context: And we can also spread the elements of an array literal into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02440))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02441))_
 
 > **const** firstAndSecondElement = (first, second) => ({first, second})
-_(source: javascriptallonge.pdf (source-range-83ecb080-02441))_
 
-> Context: And we can also spread the elements of an array literal into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02440))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02442))_
 
 > firstAndSecondElement(...stack) _//=> {"first":5,"second":10}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02442))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-shadowy-variables-from-a-shadowy-planet-49e17f5e@65b8c585ea1594b8abc094f2d238f10e
+projection_coverage: section-javascriptallonge-section-shadowy-variables-from-a-shadowy-planet-49e17f5e@72df7590fad7422ee5a0270851e84fee
 ---
 
 # **shadowy variables from a shadowy planet**
@@ -26,14 +26,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00520, source-range-83ecb080-00522))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00520, source-range-83ecb080-00522))_
+
+> An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00521))_
 
 > - (x) => (x, y) => x + y
-_(source: javascriptallonge.pdf (source-range-83ecb080-00521))_
 
-> Context: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00522))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00522))_
+
+> The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00523))_
 
 > (x) => (x, y) => (w, z) => (w) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00523))_

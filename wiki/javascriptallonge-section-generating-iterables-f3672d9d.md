@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-generating-iterables-f3672d9d@afb10eee1745c2e03ba55d063940278a
+projection_coverage: section-javascriptallonge-section-generating-iterables-f3672d9d@bb2ca3c134bce5c7c914787ff4d2f535
 ---
 
 # **Generating Iterables**
@@ -31,14 +31,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s consider how they work. Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02531))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02531))_
+
+> Let’s consider how they work. Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02532))_
 
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02532))_
 
-> Context: Of course, when we have some code that makes a bunch of something, we don’t usually write it like that. We usually just write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02538))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02538))_
+
+> Of course, when we have some code that makes a bunch of something, we don’t usually write it like that. We usually just write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02539))_
 
 > **let** n = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02539))_

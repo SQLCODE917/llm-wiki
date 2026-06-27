@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-iterating-c23d05ad@18d5d01df011690eea761c80eeb337ff
+projection_coverage: section-javascriptallonge-section-iterating-c23d05ad@74199c0a034027fede0269d148d48ab1
 ---
 
 # **iterating**
@@ -31,14 +31,26 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01974))_
+
 > sum += eachIteration.value; } **return** sum; }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01974))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01975))_
 
 > iteratorSum(arrayIterator([1, 4, 9, 16, 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01975))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01982))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01982))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01983))_
 
 > **const** aListIterator = listIterator(list(1, 4, 9, 16, 25));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01983))_

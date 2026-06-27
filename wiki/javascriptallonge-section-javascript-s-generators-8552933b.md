@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-javascript-s-generators-8552933b@4aa251945f32c2d9815ce08db979721c
+projection_coverage: section-javascriptallonge-section-javascript-s-generators-8552933b@caa3c50e33b2b6a121be9179251133b6
 ---
 
 # **javascript’s generators**
@@ -32,23 +32,38 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02593))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02593))_
+
+> 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02594))_
 
 > When we invoke the function, we get an iterator object back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02594))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02598))_
 
 > When we invoke empty, we get an iterator with no elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02598))_
 
-> Context: Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02604))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02604))_
+
+> Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02605))_
 
 > only("you").next() _//=>_ {"done": **false** , value: "you"} only("the lonely").next() _//=>_ {"done": **false** , value: "the lonely"}
-_(source: javascriptallonge.pdf (source-range-83ecb080-02605))_
 
-> Context: We can invoke the same iterator twice:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02606))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02606))_
+
+> We can invoke the same iterator twice:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02607))_
 
 > **const** sixteen = only("sixteen"); sixteen.next() _//=>_ {"done": **false** , value: "sixteen"} sixteen.next() _//=>_ {"done": **true** }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02607))_

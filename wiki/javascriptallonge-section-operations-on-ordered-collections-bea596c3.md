@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-operations-on-ordered-collections-bea596c3@2830024399a6ad3fff99c5d9a234fcca
+projection_coverage: section-javascriptallonge-section-operations-on-ordered-collections-bea596c3@73cf88f195126b7ea7a89fbbc15145ad
 ---
 
 # **operations on ordered collections**
@@ -40,29 +40,48 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02475))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02475))_
+
+> Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02476))_
 
 > **const** Evens = mapWith((x) => 2 * x, Numbers);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02476))_
 
-> Context: Mind you, we can also map non-collection iterables, like RandomNumbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02484))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02484))_
+
+> Mind you, we can also map non-collection iterables, like RandomNumbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02485))_
 
 > **const** ZeroesToNines = mapWith((n) => Math.floor(10 * limit), RandomNumbers);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02485))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02491))_
 
 > mapWith can get a new iterator from RandomNumbers each time we iterate over ZeroesToNines, but if RandomNumbers doesn’t behave like an ordered collection, that’s not mapWith’s fault.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02491))_
 
-> Context: And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02497))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02497))_
+
+> And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02499))_
 
 > [...UpTo1000] _//=>_ [1,81,121,361,441,841,961] [...UpTo1000] _//=>_ [1,81,121,361,441,841,961]
-_(source: javascriptallonge.pdf (source-range-83ecb080-02499))_
 
-> Context: For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02501))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02501))_
+
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02502))_
 
 > **const** first = (iterable) => iterable[Symbol.iterator]().next().value; **const** rest = (iterable) => ({ [Symbol.iterator] () { **const** iterator = iterable[Symbol.iterator](); iterator.next(); **return** iterator; } });
-_(source: javascriptallonge.pdf (source-range-83ecb080-02502))_

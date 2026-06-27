@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-partial-application-33451c5c@e0d1a1b3c104a4bfbe47e82ab0e2154d
+projection_coverage: section-javascriptallonge-section-partial-application-33451c5c@f1c2ea727aac0343619b153e1070079a
 ---
 
 # **partial application**
@@ -30,38 +30,62 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Code is easier than words for this. The Underscore[39] library provides a higher-order function called _map_ .[40] It applies another function to each element of an array, like this: This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00840, source-range-83ecb080-00843))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00840, source-range-83ecb080-00843))_
+
+> Code is easier than words for this. The Underscore[39] library provides a higher-order function called _map_ .[40] It applies another function to each element of an array, like this: This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00841))_
 
 > _.map([1, 2, 3], (n) => n * n) _//=> [1, 4, 9]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00841))_
 
-> Context: This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00843))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00843))_
+
+> This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00844))_
 
 > **const** squareAll = (array) => map(array, (n) => n * n);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00844))_
 
-> Context: The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00845))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00846))_
 
 > **const** mapWith = (fn) => (array) => map(array, fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00846))_
 
-> Context: The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00845))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00847))_
 
 > **const** squareAll = mapWith((n) => n * n);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00847))_
 
-> Context: The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00845))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00848))_
 
 > squareAll([1, 2, 3]) _//=> [1, 4, 9]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00848))_
 
-> Context: > 41If we don’t want to sort out Underscore, we can also write the following: const map = (a, fn) => a.map(fn);, and trust that it works even though we haven’t discussed methods yet. const map = _.map;
-_(context: javascriptallonge.pdf (source-range-83ecb080-00852))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00852))_
+
+> > 41If we don’t want to sort out Underscore, we can also write the following: const map = (a, fn) => a.map(fn);, and trust that it works even though we haven’t discussed methods yet. const map = _.map;
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00855))_
 
 > **const** safeSquareAll = mapWith(maybe((n) => n * n));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00855))_

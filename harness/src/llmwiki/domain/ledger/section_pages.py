@@ -9,10 +9,9 @@ from __future__ import annotations
 from llmwiki.domain.ledger.atom_context import best_atom_context
 from llmwiki.domain.ledger.atoms import TechnicalAtom, atom_raw_text
 from llmwiki.domain.ledger.canonical import short_digest
-from llmwiki.domain.ledger.coverage import clean_statement
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
-from llmwiki.domain.ledger.renderer import atom_block
+from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
 from llmwiki.domain.ledger.structure import DocumentStructure, StructureNode
 from llmwiki.domain.ledger.table_identity import (
     has_matching_table_name,
@@ -78,21 +77,15 @@ def _body(
         lines.append("")
     if atoms:
         lines.extend(("## Technical atoms", ""))
-        for atom in atoms:
+        for index, atom in enumerate(atoms, start=1):
+            lines.extend((f"### Technical atom {index}", ""))
             context = best_atom_context(ledger.atom_contexts(atom.technical_atom_id))
             if context is not None:
-                context_text = clean_statement(context.context_text)[:500]
-                context_source = ", ".join(context.context_source_range_ids)
-                lines.extend(
-                    (
-                        f"> Context: {context_text}",
-                        f"_(context: {atom.source_locator} ({context_source}))_",
-                        "",
-                    )
-                )
+                lines.extend(atom_context_block(context, atom.source_locator).strip().splitlines())
+                lines.append("")
             rendered = atom_block(atom.technical_atom_kind, atom.payload)
             citation = f"{atom.source_locator} ({atom.source_range_id})"
-            lines.extend((rendered, f"_(source: {citation})_", ""))
+            lines.extend((f"**Atom:** _({citation})_", "", rendered, ""))
     return "\n".join(lines).strip() + "\n"
 
 

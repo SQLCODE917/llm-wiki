@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-making-data-out-of-functions-9f10705f@39ca0fa0caa0d9a3d73854f4790d6f14
+projection_coverage: section-javascriptallonge-section-making-data-out-of-functions-9f10705f@10d9a44ccce02ff662fbe8def9585ddf
 ---
 
 # **Making Data Out Of Functions**
@@ -29,20 +29,36 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02033))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02033))_
+
+> For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02036))_
 
 > **const** EMPTY = {}; **const** OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02036))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02037))_
 
 > OneTwoThree.first _//=> 1_ OneTwoThree.rest.first _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02037))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02038))_
 
 > OneTwoThree.rest.rest.first _//=> 3_ **const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02038))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02039))_
 
 > length(OneTwoThree) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02039))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02049))_
 
 > **const** K = (x) => (y) => x; **const** I = (x) => (x); **const** V = (x) => (y) => (z) => z(x)(y);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02049))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-ordered-collections-243e57d8@d1b4129240f93ec429710700f7f53ac9
+projection_coverage: section-javascriptallonge-section-ordered-collections-243e57d8@715ae490a19258e1c47894b8d4aee530
 ---
 
 # **ordered collections**
@@ -29,8 +29,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02457))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02457))_
+
+> The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02458))_
 
 > **const** abc = ["a", "b", "c"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02458))_

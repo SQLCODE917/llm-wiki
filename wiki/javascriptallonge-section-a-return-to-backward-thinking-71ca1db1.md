@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-return-to-backward-thinking-71ca1db1@e255485ee85b546cd12e942a0595b4c7
+projection_coverage: section-javascriptallonge-section-a-return-to-backward-thinking-71ca1db1@499893642a949ba59cc592ffee5041ad
 ---
 
 # **a return to backward thinking**
@@ -38,41 +38,68 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02179))_
 
 > **const** first = K, second = K(I), pair = (first) => (second) => { **const** pojo = {first, second};
-_(source: javascriptallonge.pdf (source-range-83ecb080-02179))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02180))_
 
 > **return** (selector) => selector(pojo.first)(pojo.second); };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02180))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02181))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02181))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02184))_
 
 > latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02184))_
 
-> Context: This is a little gratuitous, but it makes the point: The code that uses the data doesn’t reach in and touch it: The code that uses the data provides some code and asks the data to do something with it. The same thing happens with our lists. Here’s length for lists:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02185))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02185))_
+
+> This is a little gratuitous, but it makes the point: The code that uses the data doesn’t reach in and touch it: The code that uses the data provides some code and asks the data to do something with it. The same thing happens with our lists. Here’s length for lists:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02186))_
 
 > **const** length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02186))_
 
-> Context: We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02190))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02190))_
+
+> We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02191))_
 
 > **const** length = (node, delayed = 0) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-02191))_
 
-> Context: We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02190))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02190))_
+
+> We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02192))_
 
 > node === EMPTY
-_(source: javascriptallonge.pdf (source-range-83ecb080-02192))_

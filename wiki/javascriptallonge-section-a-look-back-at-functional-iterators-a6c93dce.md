@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-look-back-at-functional-iterators-a6c93dce@d2034084039c2dd0f89c34ce8f08fac1
+projection_coverage: section-javascriptallonge-section-a-look-back-at-functional-iterators-a6c93dce@005fada0fcfbc19c89e67a81db2e11a6
 ---
 
 # **a look back at functional iterators**
@@ -28,44 +28,74 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> **const** iter = stack.iterator(); iter().value _//=> "you!"_ iter().value _//=> "to"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02373))_
+### Technical atom 1
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02373))_
+
+> **const** iter = stack.iterator(); iter().value _//=> "you!"_ iter().value _//=> "to"_
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02379))_
 
 > **const** iteratorSum = (iterator) => { **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02379))_
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02380))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02380))_
 
-> Context: We can use it with our stack:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02381))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02381))_
+
+> We can use it with our stack:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02384))_
 
 > **const** stack = Stack1();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02384))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02389))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection.iterator();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02389))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02390))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02390))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02391))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02391))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02392))_
 
 > collectionSum(stack) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02392))_

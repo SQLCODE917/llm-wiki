@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-destructuring-and-return-values-e0c8e2c3@2b66c10c5218e6f1e33631e9b1a30976
+projection_coverage: section-javascriptallonge-section-destructuring-and-return-values-e0c8e2c3@a028a8842e1932be467738f9a69b569b
 ---
 
 # **destructuring and return values**
@@ -16,8 +16,14 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01280))_
+
 > **const** [reg, status] = description([["Reginald", "Braithwaite"], "programmer"]);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01280))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01281))_
 
 > reg _//=> "Reginald is a programmer"_ status _//=> "ok"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01281))_

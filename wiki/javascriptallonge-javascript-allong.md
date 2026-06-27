@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-javascript-allong@1b5d3bd3ea3d3bc02256c321d49ce2c0
+projection_coverage: topic-javascriptallonge-javascript-allong@540ed0d45b40634be1360395e31e9944
 ---
 
 # About JavaScript Allongé
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-javascript-allong@1b5d3bd3ea3d3bc02
 What [[javascriptallonge]] covers about about javascript allongé:
 
 ## Statements
+
+_Showing 14 of 29 statements selected for this topic._
 
 - But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. _(javascriptallonge.pdf (source-range-83ecb080-00055))_
 - JavaScript Allongé, The “Six” Edition packs all the goodness of JavaScript Allongé into a new, updated package that is relevant for programmers working with (or planning to work with) the latest version of JavaScript. _(javascriptallonge.pdf (source-range-83ecb080-00063))_
@@ -32,29 +34,47 @@ What [[javascriptallonge]] covers about about javascript allongé:
 
 ## Technical atoms
 
-> If those terms seem unfamiliar, don’t worry: JavaScript Allongé takes great delight in explaining what they mean and why they matter.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00032))_
+### Technical atom 1
 
-> Context: For example, block-structured languages allow us to write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00039))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00032))_
+
+> If those terms seem unfamiliar, don’t worry: JavaScript Allongé takes great delight in explaining what they mean and why they matter.
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00039))_
+
+> For example, block-structured languages allow us to write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00040))_
 
 > **for** ( **int** i = 0; i < array.length; ++i) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-00040))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00047))_
 
 > **for** (i = 0; i < array.length; ++i) { ( **function** (i) { _// ..._ })(i) }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00047))_
 
-> Context: Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00051))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00051))_
+
+> Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00052))_
 
 > **function** foo () { **var** first = arguments[0], rest = [].slice.call(arguments, 1); _// ..._ }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00052))_
 
-> Context: But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00055))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00055))_
+
+> But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00056))_
 
 > **for** ( **let** i = 0; i < array.length; ++i) { _// ..._ }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00056))_
 
 
 ## Source

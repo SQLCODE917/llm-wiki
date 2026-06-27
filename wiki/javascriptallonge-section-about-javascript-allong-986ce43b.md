@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-about-javascript-allong-986ce43b@e869f7d7c6129946e10bd9d4ebbec896
+projection_coverage: section-javascriptallonge-section-about-javascript-allong-986ce43b@0575370fc9c92b9c044f539f48838f23
 ---
 
 # **About JavaScript Allongé**
@@ -25,5 +25,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00032))_
+
 > If those terms seem unfamiliar, don’t worry: JavaScript Allongé takes great delight in explaining what they mean and why they matter.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00032))_

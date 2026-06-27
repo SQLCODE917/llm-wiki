@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-converting-non-tail-calls-to-tail-calls-5e566cdd@79f834df2170ae200240924dffb0ed32
+projection_coverage: section-javascriptallonge-section-converting-non-tail-calls-to-tail-calls-5e566cdd@e9bf844d21028ba1b7916896b0f52a24
 ---
 
 # **converting non-tail-calls to tail-calls**
@@ -26,65 +26,111 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01430))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01430))_
+
+> The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01431))_
 
 > **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01431))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01437))_
 
 > **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01437))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01439))_
 
 > **const** length = (n) => lengthDelaysWork(n, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01439))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01441))_
 
 > **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01441))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01442))_
 
 > **const** length = callLast(lengthDelaysWork, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01442))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01443))_
 
 > length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01443))_
 
-> Context: This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01444))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01444))_
+
+> This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01447))_
 
 > **const** mapWithDelaysWork = (fn, [first, ...rest], prepend) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01447))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01448))_
 
 > first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01448))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01451))_
 
 > **const** mapWith = callLast(mapWithDelaysWork, []);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01451))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01452))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01452))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01454))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01454))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01455))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -116,4 +162,3 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01455))_

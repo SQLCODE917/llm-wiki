@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-element@ff66eaa0d8553f5c3ca0c1c32c3301ce
+projection_coverage: topic-javascriptallonge-element@f83f042c14aa61997a945af0467342c8
 ---
 
 # Element
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-element@ff66eaa0d8553f5c3ca0c1c32c3
 What [[javascriptallonge]] covers about element:
 
 ## Statements
+
+_Showing 14 of 22 statements selected for this topic._
 
 - The big elements of divide and conquer are a method for decomposing a problem into smaller problems, a test for the smallest possible problem, and a means of putting the pieces back together. _(javascriptallonge.pdf (source-range-83ecb080-01338))_
 - There’s no making copies of arrays, the time to cdr a list with five elements is the same as the time to cdr a list with 5,000 elements, and no temporary arrays are needed. _(javascriptallonge.pdf (source-range-83ecb080-01555))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about element:
 
 ## Technical atoms
 
-> Context: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01209))_
+_Showing 6 of 10 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01209))_
+
+> Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01210))_
 
 > **const** oneTwoThree = ["one", "two", "three"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01210))_
 
-> Context: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01209))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01209))_
+
+> Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01211))_
 
 > oneTwoThree[0] _//=> 'one'_ oneTwoThree[1] _//=> 'two'_ oneTwoThree[2] _//=> 'three'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01211))_
 
-> Context: Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01537))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01537))_
+
+> Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01538))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01538))_
 
-> Context: Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01565))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
+
+> Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01566))_
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01566))_
 
-> Context: When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01854))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01854))_
+
+> When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01855))_
 
 > The consequence of this is that if you have an array, and you take it’s “rest,” your “child” array is a copy of the elements of the parent array.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01855))_
 
-> Context: Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02438))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02438))_
+
+> Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02439))_
 
 > - ['some squares', ...someSquares] _//=> ["some squares", 1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02439))_
 
 
 ## Source

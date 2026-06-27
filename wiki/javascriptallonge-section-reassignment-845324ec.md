@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-reassignment-845324ec@aa46233d5bb89cdf277c22ee6e257ef1
+projection_coverage: section-javascriptallonge-section-reassignment-845324ec@d494d0f4565bbfdf7e8257c9b4e1d0ad
 ---
 
 # **Reassignment**
@@ -30,14 +30,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01767))_
 
 > **let** age = 52;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01767))_
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01768))_
 
 > age = 53; age _//=> 53_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01768))_

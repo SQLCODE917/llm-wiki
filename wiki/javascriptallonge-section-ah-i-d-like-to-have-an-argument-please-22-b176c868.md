@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-22-b176c868@336b04d2e6919086210528f2e5af60d4
+projection_coverage: section-javascriptallonge-section-ah-i-d-like-to-have-an-argument-please-22-b176c868@1b233cf2a1a78e56fdf91cb89e2f046e
 ---
 
 # **Ah. I’d Like to Have an Argument, Please.**[22]
@@ -29,17 +29,28 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
-_(context: javascriptallonge.pdf (source-range-83ecb080-00397))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00397))_
+
+> I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00398))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00398))_
 
-> Context: Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00400))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00400))_
+
+> Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00401))_
 
 > ((diameter) => diameter * 3.14159265)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00401))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00407))_
 
 > ((room, board) => room + board)(800, 150)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00407))_

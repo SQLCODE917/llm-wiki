@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-contents-7f2f33f6@1b2194f0b2d3311e532e1595cf6cbab4
+projection_coverage: section-javascriptallonge-section-contents-7f2f33f6@a8a9fd93595a2b7df961f77e2106b381
 ---
 
 # **Contents**
@@ -15,6 +15,10 @@ projection_coverage: section-javascriptallonge-section-contents-7f2f33f6@1b2194f
 From [[javascriptallonge]].
 
 ## Technical atoms
+
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00016))_
 
 | **A Pull of the Lever: Prefaces** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | **i** |
 | --- | --- |
@@ -82,7 +86,10 @@ From [[javascriptallonge]].
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00016))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00017))_
 
 | A Pull of the Lever: Prefaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | i |
 | --- | --- |
@@ -150,7 +157,10 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00016))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00017))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00019))_
 
 | **Composing and Decomposing Data** . . . . . . . | . . . . . . . . . . . . . . . . . . . . . . . . | **77** |
 | --- | --- | --- |
@@ -222,7 +232,10 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00017))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00019))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00020))_
 
 | Composing and Decomposing Data . . . . . . . | . . . . . . . . . . . . . . . . . . . . . . . . | 77 |
 | --- | --- | --- |
@@ -294,4 +307,3 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00019))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00020))_

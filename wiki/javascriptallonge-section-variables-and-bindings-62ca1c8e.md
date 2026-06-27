@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-variables-and-bindings-62ca1c8e@6d7f2c65ec50cb8d399e1751b01d5480
+projection_coverage: section-javascriptallonge-section-variables-and-bindings-62ca1c8e@14c1200d69263cf70747d6a4ebf4ecc2
 ---
 
 # **variables and bindings**
@@ -39,20 +39,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00429))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00429))_
+
+> Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00430))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00430))_
 
-> Context: How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00438))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00438))_
+
+> How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00439))_
 
 > ((x) => x)(2) _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00439))_
 
-> Context: What happens is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00440))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00440))_
+
+> What happens is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00443))_
 
 > 3. One sub-expression, (x) => x evaluates to a function.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00443))_

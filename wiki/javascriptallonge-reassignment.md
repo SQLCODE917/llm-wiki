@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-reassignment@f8393989fd968553245f97a728f9fc2d
+projection_coverage: topic-javascriptallonge-reassignment@180e29592b1473defa01f3ee52b81bc6
 ---
 
 # Reassignment
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-reassignment@f8393989fd968553245f97
 What [[javascriptallonge]] covers about reassignment:
 
 ## Statements
+
+_Showing 14 of 36 statements selected for this topic._
 
 - Like some imperative programming languages, JavaScript allows you to re-assign the value bound : to parameters. _(javascriptallonge.pdf (source-range-83ecb080-01758))_
 - We can _shadow_ it by using const to declare a new binding with a new function or block scope, but we cannot rebind a name that was bound with const in an existing scope. _(javascriptallonge.pdf (source-range-83ecb080-01765))_
@@ -32,35 +34,59 @@ What [[javascriptallonge]] covers about reassignment:
 
 ## Technical atoms
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+_Showing 6 of 10 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01767))_
 
 > **let** age = 52;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01767))_
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01768))_
 
 > age = 53; age _//=> 53_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01768))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01785))_
 
 > If you dislike deliberately shadowing variables, you’ll probably take an even more opprobrious view of mixing const and let semantics with a shadowed variable:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01785))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01798))_
 
 > **return** n * factorial2(x); } } factorial2(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01798))_
 
-> Context: But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01802))_
+### Technical atom 5
 
-> **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01803))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01802))_
 
-> Context: JavaScript hoists the let and the assignment. But not so with var:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01809))_
+> But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01803))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01810))_
+
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01809))_
+
+> JavaScript hoists the let and the assignment. But not so with var:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01810))_
+
+> **const** factorial = (n) => {
 
 
 ## Source

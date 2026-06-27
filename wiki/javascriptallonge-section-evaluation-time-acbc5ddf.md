@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-evaluation-time-acbc5ddf@ed22ad92f683180411c5ee3cf029489b
+projection_coverage: section-javascriptallonge-section-evaluation-time-acbc5ddf@7ed794161a85e184d2aca97eab91c4e8
 ---
 
 # **evaluation time**
@@ -23,14 +23,24 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02344))_
+
 > **const** name = "Harry";
-_(source: javascriptallonge.pdf (source-range-83ecb080-02344))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02345))_
 
 > **const** greeting = (name) => `Hello my name is **${** name **}** `;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02345))_
 
-> Context: This is exactly what we’d expect if we’d written it like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02349))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02349))_
+
+> This is exactly what we’d expect if we’d written it like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02350))_
 
 > **const** greeting = (name) => 'Hello my name is ' + name;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02350))_

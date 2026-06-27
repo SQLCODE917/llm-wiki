@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-why-the-six-edition-e4ab9acb@6c3ffb86ba1186a6ee2fbad51cdc6bba
+projection_coverage: section-javascriptallonge-section-why-the-six-edition-e4ab9acb@24af9d609c29b71b58c8ea7b29e2ee37
 ---
 
 # **why the “six” edition?**
@@ -41,23 +41,38 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: For example, block-structured languages allow us to write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00039))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00039))_
+
+> For example, block-structured languages allow us to write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00040))_
 
 > **for** ( **int** i = 0; i < array.length; ++i) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-00040))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00047))_
 
 > **for** (i = 0; i < array.length; ++i) { ( **function** (i) { _// ..._ })(i) }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00047))_
 
-> Context: Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00051))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00051))_
+
+> Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00052))_
 
 > **function** foo () { **var** first = arguments[0], rest = [].slice.call(arguments, 1); _// ..._ }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00052))_
 
-> Context: But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00055))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00055))_
+
+> But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00056))_
 
 > **for** ( **let** i = 0; i < array.length; ++i) { _// ..._ }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00056))_

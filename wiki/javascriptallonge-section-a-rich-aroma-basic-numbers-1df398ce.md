@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-numbers-1df398ce@bfb4526bd04fe22eaea0437178ab0208
+projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-numbers-1df398ce@d4393c943a82bbb9df1dddf7d7fedfc0
 ---
 
 # **A Rich Aroma: Basic Numbers**
@@ -31,5 +31,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00221))_
+
 > The machine’s representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer’s behaviour surprises us if we don’t know a little about what it’s doing “under the hood.”
-_(source: javascriptallonge.pdf (source-range-83ecb080-00221))_

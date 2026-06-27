@@ -140,10 +140,10 @@ as source evidence or as existing wiki coverage.
 4. Build the section plan and topic index from the ledger. Categories and
    topics should emerge from source structure, source terminology, and observed
    claim/atom clusters, not source-specific trigger-word lists.
-5. Project wiki pages from those artifacts: the source hub, section pages,
-   topic pages, cross-source pages, source coverage, and projection coverage.
-   Dense navigation comes from `category_path`, `domain`, source-backed links,
-   and explicit `From [[source-page]]` backlinks.
+5. Project source-local wiki pages from those artifacts: the source hub,
+   section pages, topic pages, source coverage, and projection coverage. Dense
+   navigation comes from `category_path`, `domain`, source-backed links, and
+   explicit `From [[source-page]]` backlinks.
 6. Write pages, index entries, generated graph/candidate artifacts, and log
    entries through the harness. Ordinary ingest does not ask the model to invent
    page targets; model-authored `write_page` remains for chat filing,
@@ -152,6 +152,20 @@ as source evidence or as existing wiki coverage.
 When an ingest profile is active, follow its additional source-type guidance
 inside the same workflow. If profile guidance and this schema conflict, this
 schema wins.
+
+### synthesize
+
+1. Load persisted topic indexes and claim ledgers from completed ingests.
+2. Plan shared source-backed topics only when at least two sources support the
+   same topic key. Each source keeps its own position, citation, and ledger
+   entry; do not merge claims into uncited generalities.
+3. Render canonical concept/entity pages and the `cross-source-synthesis`
+   index from those artifacts. Cross-source pages use `projection_coverage`
+   frontmatter and source sections linking back to the original source and
+   source-topic pages.
+4. Remove stale generated cross-source pages whose projection coverage pointer
+   starts with `cross-source-` or `canonical-concept-`, then append a synthesize
+   log entry. This operation is deterministic and model-free.
 
 ### query
 

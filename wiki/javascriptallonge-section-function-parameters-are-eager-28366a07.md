@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-function-parameters-are-eager-28366a07@90b5c9af7df9d0aa012d8fd4686533e2
+projection_coverage: section-javascriptallonge-section-function-parameters-are-eager-28366a07@9ce016b360c1dd7d438b7c6f2602237f
 ---
 
 # **function parameters are eager**
@@ -24,14 +24,26 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01162))_
+
 > **const** or = (a, b) => a || b
-_(source: javascriptallonge.pdf (source-range-83ecb080-01162))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01163))_
 
 > **const** and = (a, b) => a && b
-_(source: javascriptallonge.pdf (source-range-83ecb080-01163))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01164))_
 
 > **const** even = (n) => or(n === 0, and(n !== 1, even(n - 2)))
-_(source: javascriptallonge.pdf (source-range-83ecb080-01164))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01165))_
 
 > even(42) _//=> Maximum call stack size exceeded._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01165))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-magic-names-and-fat-arrows-4f60043a@ce6dc60838601ff30a31db405b2b61c8
+projection_coverage: section-javascriptallonge-section-magic-names-and-fat-arrows-4f60043a@facace731278d2a6c42e1ed0949d4a57
 ---
 
 # **magic names and fat arrows**
@@ -39,8 +39,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function. And thus arguments[0] will refer to "outer", not to "inner":
-_(context: javascriptallonge.pdf (source-range-83ecb080-00885))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00885))_
+
+> But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function. And thus arguments[0] will refer to "outer", not to "inner":
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00886))_
 
 > ( **function** () { **return** (() => arguments[0])('inner'); })('outer') _//=> "outer"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00886))_

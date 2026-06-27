@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-defaults-and-destructuring-a42a676b@b30c13e5a62f3fb5197a850ce257dd1d
+projection_coverage: section-javascriptallonge-section-defaults-and-destructuring-a42a676b@90b7587ad5afacc513e393c727045362
 ---
 
 # **defaults and destructuring**
@@ -21,17 +21,30 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01493))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01493))_
+
+> We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01496))_
 
 > **const** [first, second = "two"] = ["one"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01496))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01497))_
 
 > ` ` **${** first **}** . **${** second **}** _//=> "one . two"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01497))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01498))_
 
 > **const** [first, second = "two"] = ["primus", "secundus"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01498))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01499))_
 
 > ` ` **${** first **}** . **${** second **}** _//=> "primus . secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01499))_

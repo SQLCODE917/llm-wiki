@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-42-5d0200da@b9faad7b4e2edafda91638feb4a3b9c4
+projection_coverage: section-javascriptallonge-section-42-5d0200da@2009fa0fa762809c4f7b6190efc0814d
 ---
 
 # 42
@@ -30,11 +30,18 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00168))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00168))_
+
+> All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00170))_
 
 > And if we hand over the espresso, we get the espresso right back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00170))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00178))_
 
 > Now we see that “strings” are values, and you can make an expression out of strings and an operator +. Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our “coffee grounds plus hot water” example. The coffee grounds were a value, the boiling hot water was a value, and the “plus” operator between them made the whole thing an expression that was not a value.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00178))_

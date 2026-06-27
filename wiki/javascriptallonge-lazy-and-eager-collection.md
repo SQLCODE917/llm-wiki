@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-lazy-and-eager-collection@8d30e04937720f4bd51a2cc6420abb79
+projection_coverage: topic-javascriptallonge-lazy-and-eager-collection@c221921603dae4ced4c77fbbc0a06578
 ---
 
 # Lazy and Eager Collections
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-lazy-and-eager-collection@8d30e0493
 What [[javascriptallonge]] covers about lazy and eager collections:
 
 ## Statements
+
+_Showing 14 of 34 statements selected for this topic._
 
 - This “fat object” style springs from a misunderstanding: When we say a collection should know how to perform a map over itself, we don’t need for the collection to handle every single detail. _(javascriptallonge.pdf (source-range-83ecb080-02742))_
 - We mix EagerCollection(Pair) into it, and this gives it all of our collection methods, which each method returning a new list of pairs: _(javascriptallonge.pdf (source-range-83ecb080-02813))_
@@ -32,35 +34,57 @@ What [[javascriptallonge]] covers about lazy and eager collections:
 
 ## Technical atoms
 
-> Context: _// Pair, a/k/a linked lists_
-_(context: javascriptallonge.pdf (source-range-83ecb080-02761))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02761))_
+
+> _// Pair, a/k/a linked lists_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02762))_
 
 > **const** EMPTY = { isEmpty: () => **true**
-_(source: javascriptallonge.pdf (source-range-83ecb080-02762))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02766))_
 
 > **const** isEmpty = (node) => node === EMPTY;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02766))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02769))_
 
 > _// Stack_ **const** Stack = () => Object.assign({ array: [], index: -1, push: **function** (value) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02769))_
 
-> Context: Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02781))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+
+> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02783))_
 
 > When working with very large collections and many operations, this can be important.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02783))_
 
-> Context: Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02781))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+
+> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02784))_
 
 > The effect is even more pronounced when we use methods like first, until, or take:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02784))_
 
-> Context: We can confirm this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02790))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02790))_
+
+> We can confirm this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02792))_
 
 > If we write the almost identical thing with an array, we get a different behaviour:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02792))_
 
 
 ## Source

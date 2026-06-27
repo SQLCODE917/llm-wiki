@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-mutation@16b34c91ed59186461090c5deb3a94c4
+projection_coverage: topic-javascriptallonge-mutation@c1a179738f8768bbf6f36747f23ea16c
 ---
 
 # Mutation
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-mutation@16b34c91ed59186461090c5deb
 What [[javascriptallonge]] covers about mutation:
 
 ## Statements
+
+_Showing 14 of 28 statements selected for this topic._
 
 - Mutation is a surprisingly complex subject. _(javascriptallonge.pdf (source-range-83ecb080-01715))_
 - In general, mutation makes some algorithms shorter to write and possibly faster, but harder to reason about. _(javascriptallonge.pdf (source-range-83ecb080-01715))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about mutation:
 
 ## Technical atoms
 
-> Context: In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01688))_
+_Showing 6 of 15 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01688))_
+
+> In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01689))_
 
 > **const** oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree _//=> [ 'one', 2, 3 ]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01689))_
 
-> Context: You can even add a value:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01690))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01690))_
+
+> You can even add a value:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01693))_
 
 > **const** oneTwoThree = [1, 2, 3]; oneTwoThree[3] = 'four'; oneTwoThree _//=> [ 1, 2, 3, 'four' ]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01693))_
 
-> Context: You can do the same thing with both syntaxes for accessing objects:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01694))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01694))_
+
+> You can do the same thing with both syntaxes for accessing objects:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01695))_
 
 > **const** name = {firstName: 'Leonard', lastName: 'Braithwaite'}; name.middleName = 'Austin' name _//=> { firstName: 'Leonard',_ # lastName: 'Braithwaite', # middleName: 'Austin' }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01695))_
 
-> Context: We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01696))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01696))_
+
+> We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01697))_
 
 > **const** allHallowsEve = [2012, 10, 31] **const** halloween = allHallowsEve;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01697))_
 
-> Context: Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
+
+> Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01699))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { _// ..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01699))_
 
-> Context: This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
+
+> This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01705))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { halloween = [2013, 10, 31];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01705))_
 
 
 ## Source

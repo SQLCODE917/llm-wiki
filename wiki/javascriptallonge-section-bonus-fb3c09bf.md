@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-bonus-fb3c09bf@38c30af73b140867b066289674957043
+projection_coverage: section-javascriptallonge-section-bonus-fb3c09bf@93e1b7f803d066be4fc7db5b6bc94355
 ---
 
 # **bonus**
@@ -27,14 +27,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02020))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02020))_
+
+> This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02019))_
 
 > **const** firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02019))_
 
-> Context: This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02020))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02020))_
+
+> This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02021))_
 
 > **const** firstInArray = (fn, array) => array.filter(fn)[0];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02021))_

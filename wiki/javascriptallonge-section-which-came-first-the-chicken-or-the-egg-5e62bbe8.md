@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-which-came-first-the-chicken-or-the-egg-5e62bbe8@934b06794a0a86e978f8ed22c69d3658
+projection_coverage: section-javascriptallonge-section-which-came-first-the-chicken-or-the-egg-5e62bbe8@02961f6c89864ff2913ad7402a7519ac
 ---
 
 # **which came first, the chicken or the egg?**
@@ -23,8 +23,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': _global environment_ }.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00531))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00531))_
+
+> JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': _global environment_ }.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00532))_
 
 > If you don’t want your code to operate directly within the global environment, what can you do?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00532))_

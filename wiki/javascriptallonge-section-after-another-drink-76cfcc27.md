@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-after-another-drink-76cfcc27@557dc84675c9c1f9249200dbeb1fb9ac
+projection_coverage: section-javascriptallonge-section-after-another-drink-76cfcc27@1d7a061f7195dc633b6a9c853bf0373e
 ---
 
 # **after another drink**
@@ -29,5 +29,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02919))_
+
 > **const** hasCycle = (orderedCollection) => { **const** visited = **new** Set();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02919))_

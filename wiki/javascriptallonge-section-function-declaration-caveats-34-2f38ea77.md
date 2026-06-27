@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-function-declaration-caveats-34-2f38ea77@37e9fff7799b0cde73eec2e09b1ce242
+projection_coverage: section-javascriptallonge-section-function-declaration-caveats-34-2f38ea77@d902d97502e1fd07cf3ef44fd1aae3e4
 ---
 
 # **function declaration caveats**[34]
@@ -29,5 +29,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00770))_
+
 > Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00770))_

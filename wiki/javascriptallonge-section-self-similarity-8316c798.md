@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-self-similarity-8316c798@ad5f3f93d41a494d5903847dbee8d3e8
+projection_coverage: section-javascriptallonge-section-self-similarity-8316c798@4e881b415606ff207ae787dff06c1d53
 ---
 
 # **Self-Similarity**
@@ -39,32 +39,52 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01312))_
 
 > **const** isEmpty = ([first, ...rest]) => first === **undefined** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01312))_
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01313))_
 
 > isEmpty([]) _//=> true_ isEmpty([0]) _//=> false_ isEmpty([[]]) _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01313))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01320))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : _// ???_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01320))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01322))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01322))_
 
-> Context: Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+
+> Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01324))_
 
 > length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01324))_

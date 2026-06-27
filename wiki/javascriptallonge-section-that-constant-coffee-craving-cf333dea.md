@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-that-constant-coffee-craving-cf333dea@2b95fb970a2d5fe9e3c3ec9921bbabe6
+projection_coverage: section-javascriptallonge-section-that-constant-coffee-craving-cf333dea@88ae285f55206e2d505bc9fc1ac8540e
 ---
 
 # **That Constant Coffee Craving**
@@ -28,35 +28,60 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00544))_
+### Technical atom 1
 
-> Context: There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00544))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
+
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
+
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00545))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00545))_
 
-> Context: What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00546))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00546))_
+
+> What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00547))_
 
 > (diameter) => diameter * PI
-_(source: javascriptallonge.pdf (source-range-83ecb080-00547))_
 
-> Context: In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00548))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00548))_
+
+> In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00549))_
 
 > ((PI) => _// ????_ )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00549))_
 
-> Context: What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00550))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00550))_
+
+> What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00551))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00551))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00557))_
 
 > ((diameter) => diameter * 3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00557))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00558))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00558))_

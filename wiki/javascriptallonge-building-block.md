@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-building-block@a3556eff9d2db8e281d2767760fc0c38
+projection_coverage: topic-javascriptallonge-building-block@115755dabc3017ddfb7e5276bf2a8270
 ---
 
 # Building Blocks
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-building-block@a3556eff9d2db8e281d2
 What [[javascriptallonge]] covers about building blocks:
 
 ## Statements
+
+_Showing 14 of 24 statements selected for this topic._
 
 - Another basic building block is _partial application_ . _(javascriptallonge.pdf (source-range-83ecb080-00839))_
 - Although you needn’t restrict yourself to a small number of simple patterns, it can be helpful to understand the patterns so that you can structure your code around some basic building blocks. _(javascriptallonge.pdf (source-range-83ecb080-00824))_
@@ -32,38 +34,63 @@ What [[javascriptallonge]] covers about building blocks:
 
 ## Technical atoms
 
-> **const** cookAndEat = (food) => eat(cook(food));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00827))_
+_Showing 6 of 13 technical atoms selected for this topic._
 
-> Context: It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00828))_
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00827))_
+
+> **const** cookAndEat = (food) => eat(cook(food));
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00828))_
+
+> It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00829))_
 
 > **const** compose = (a, b) => (c) => a(b(c));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00829))_
 
-> Context: It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00828))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00828))_
+
+> It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00830))_
 
 > **const** cookAndEat = compose(eat, cook);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00830))_
 
-> Context: It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00828))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00828))_
+
+> It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00831))_
 
 > The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00831))_
 
-> Context: If that was all there was to it, composition wouldn’t matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00831))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00831))_
+
+> If that was all there was to it, composition wouldn’t matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00833))_
 
 > Of course, you needn’t use combinators to implement either of these ideas, you can use if statements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00833))_
 
-> Context: Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00833))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00833))_
+
+> Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00834))_
 
 > - **const** actuallyTransfer= (from, to, amount) => _// do something_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00834))_
 
 
 ## Source

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-values-are-expressions-1d1561e0@5525726b7e21337fceb45077463c6bcd
+projection_coverage: section-javascriptallonge-section-values-are-expressions-1d1561e0@a99a1d376db85efb56cf0adecc283c4a
 ---
 
 # values are expressions
@@ -35,17 +35,28 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s try this with something the computer understands easily:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00162))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00162))_
+
+> Let’s try this with something the computer understands easily:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00165))_
 
 > The answer is, this is both an expression _and_ a value.[10] The way you can tell that it’s both is very easy: When you type it into JavaScript, you get the same thing back, just like our café Cubano:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00165))_
 
-> Context: All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00168))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00168))_
+
+> All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00170))_
 
 > And if we hand over the espresso, we get the espresso right back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00170))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00178))_
 
 > Now we see that “strings” are values, and you can make an expression out of strings and an operator +. Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our “coffee grounds plus hot water” example. The coffee grounds were a value, the boiling hot water was a value, and the “plus” operator between them made the whole thing an expression that was not a value.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00178))_

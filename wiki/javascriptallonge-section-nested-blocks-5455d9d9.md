@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-nested-blocks-5455d9d9@320b7f1d7643c70c328723eb04048350
+projection_coverage: section-javascriptallonge-section-nested-blocks-5455d9d9@d945eb46494f952c2c7d2b860e635498
 ---
 
 # **nested blocks**
@@ -25,5 +25,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00612))_
+
 > One of the places you can find blocks is in an if statement.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00612))_

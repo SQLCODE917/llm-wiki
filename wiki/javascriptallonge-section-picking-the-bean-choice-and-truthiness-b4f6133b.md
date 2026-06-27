@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-picking-the-bean-choice-and-truthiness-b4f6133b@363aae715d4bd17cc541efda76342be7
+projection_coverage: section-javascriptallonge-section-picking-the-bean-choice-and-truthiness-b4f6133b@e1547ac7e14cbdb96247717589c430e5
 ---
 
 # Picking the Bean: Choice and Truthiness
@@ -58,41 +58,74 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01097))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01097))_
+
+> true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01100))_
 
 > ! **true** _//=> false_ ! **false** _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01100))_
 
-> Context: Here’re some simple examples of the ternary operator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01114))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01114))_
+
+> Here’re some simple examples of the ternary operator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01117))_
 
 > - 0 ? 'Hello' : 'Good bye' _//=> 'Good bye'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01117))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01118))_
 
 > - [1, 2, 3, 4, 5].length === 5 ? 'Pentatonic' : 'Quasimodal' _//=> 'Pentatonic'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01118))_
 
-> Context: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01119))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01119))_
+
+> The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01120))_
 
 > **const** status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
-_(source: javascriptallonge.pdf (source-range-83ecb080-01120))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01140))_
 
 > But when we pass other values, we no longer get true or false:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01140))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01153))_
 
 > **const** even = (n) => n === 0 || (n !== 1 && even(n - 2))
-_(source: javascriptallonge.pdf (source-range-83ecb080-01153))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01162))_
 
 > **const** or = (a, b) => a || b
-_(source: javascriptallonge.pdf (source-range-83ecb080-01162))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01163))_
 
 > **const** and = (a, b) => a && b
-_(source: javascriptallonge.pdf (source-range-83ecb080-01163))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01164))_
 
 > **const** even = (n) => or(n === 0, and(n !== 1, even(n - 2)))
-_(source: javascriptallonge.pdf (source-range-83ecb080-01164))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01165))_
 
 > even(42) _//=> Maximum call stack size exceeded._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01165))_

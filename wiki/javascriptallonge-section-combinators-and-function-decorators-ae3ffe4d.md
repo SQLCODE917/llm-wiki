@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-combinators-and-function-decorators-ae3ffe4d@0869d16cb8cbf4c77c9fd607d322c1d5
+projection_coverage: section-javascriptallonge-section-combinators-and-function-decorators-ae3ffe4d@c92705a528a95719542cd90f2e487c57
 ---
 
 # Combinators and Function Decorators
@@ -42,44 +42,76 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s start with a useful combinator: Most programmers call it _Compose_ , although the logicians call it the B combinator or “Bluebird.” Here is the typical[37] programming implementation:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00794))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00794))_
+
+> Let’s start with a useful combinator: Most programmers call it _Compose_ , although the logicians call it the B combinator or “Bluebird.” Here is the typical[37] programming implementation:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00795))_
 
 > - **const** compose = (a, b) => (c) => a(b(c))
-_(source: javascriptallonge.pdf (source-range-83ecb080-00795))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00797))_
 
 > **const** addOne = (number) => number + 1;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00797))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00798))_
 
 > **const** doubleOf = (number) => number * 2;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00798))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00800))_
 
 > **const** doubleOfAddOne = (number) => doubleOf(addOne(number));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00800))_
 
-> Context: You could also write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00801))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00801))_
+
+> You could also write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00802))_
 
 > **const** doubleOfAddOne = compose(doubleOf, addOne);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00802))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00812))_
 
 > **const** not = (fn) => (x) => !fn(x)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00812))_
 
-> Context: So instead of writing !someFunction(42), we can write not(someFunction)(42). Hardly progress. But like compose, we could write either:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00813))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00813))_
+
+> So instead of writing !someFunction(42), we can write not(someFunction)(42). Hardly progress. But like compose, we could write either:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00814))_
 
 > **const** something = (x) => x != **null** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00814))_
 
-> Context: And elsewhere, write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00815))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00815))_
+
+> And elsewhere, write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00816))_
 
 > **const** nothing = (x) => !something(x);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00816))_
 
-> Context: Or we could write: not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. You’ll see other function decorators in the recipes, like once and maybe. Function decorators aren’t strict about being pure functions, so there’s more latitude for making decorators than combinators.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00817, source-range-83ecb080-00819))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00817, source-range-83ecb080-00819))_
+
+> Or we could write: not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. You’ll see other function decorators in the recipes, like once and maybe. Function decorators aren’t strict about being pure functions, so there’s more latitude for making decorators than combinators.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00818))_
 
 > **const** nothing = not(something);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00818))_

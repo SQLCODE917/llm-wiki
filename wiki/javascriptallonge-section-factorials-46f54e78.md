@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-factorials-46f54e78@2f1e2a54342bc776499ac745f7040114
+projection_coverage: section-javascriptallonge-section-factorials-46f54e78@43940d8289ea1b4a6a2d091826d512c1
 ---
 
 # **factorials**
@@ -24,8 +24,13 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01462))_
+
+> In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01463))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -57,19 +62,31 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01463))_
 
-> Context: The naïve function for calcuating the factorial of a positive integer follows directly from the definition: Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n - 1). We can do the same conversion, pass in the work to be done:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01467, source-range-83ecb080-01470))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01467, source-range-83ecb080-01470))_
+
+> The naïve function for calcuating the factorial of a positive integer follows directly from the definition: Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n - 1). We can do the same conversion, pass in the work to be done:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01468))_
 
 > **const** factorial = (n) => n == 1 ? n : n * factorial(n - 1); factorial(1) _//=> 1_ factorial(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01468))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01476))_
 
 > **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01476))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01477))_
 
 > **const** factorial = callLast(factorialWithDelayedWork, 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01477))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01478))_
 
 > factorial(1) _//=> 1_ factorial(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01478))_

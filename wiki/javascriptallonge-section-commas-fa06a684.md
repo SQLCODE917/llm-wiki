@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-commas-fa06a684@31e1b1782bc5b7dfdade240b774ed397
+projection_coverage: section-javascriptallonge-section-commas-fa06a684@0990c884321bac87467b60999a977d25
 ---
 
 # **commas**
@@ -21,29 +21,48 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: The comma operator in JavaScript is interesting. It takes two arguments, evaluates them both, and itself evaluates to the value of the right-hand argument. In other words:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00298))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00298))_
+
+> The comma operator in JavaScript is interesting. It takes two arguments, evaluates them both, and itself evaluates to the value of the right-hand argument. In other words:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00300))_
 
 > (1 + 1, 2 + 2) _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00300))_
 
-> Context: We can use commas with functions to create functions that evaluate multiple expressions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00301))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00301))_
+
+> We can use commas with functions to create functions that evaluate multiple expressions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00302))_
 
 > (() => (1 + 1, 2 + 2))() _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00302))_
 
-> Context: We can use commas with functions to create functions that evaluate multiple expressions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00301))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00301))_
+
+> We can use commas with functions to create functions that evaluate multiple expressions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00303))_
 
 > This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00303))_
 
-> Context: This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00303))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00303))_
+
+> This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00304))_
 
 > () => (1 + 1, 2 + 2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00304))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00306))_
 
 > () => ( 1 + 1, 2 + 2
-_(source: javascriptallonge.pdf (source-range-83ecb080-00306))_

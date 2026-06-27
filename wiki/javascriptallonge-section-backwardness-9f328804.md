@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-backwardness-9f328804@1ae2ee5c3290f27fb67c100cebe00d91
+projection_coverage: section-javascriptallonge-section-backwardness-9f328804@c48e2bec644643da0d2126d12dde7978
 ---
 
 # **backwardness**
@@ -23,35 +23,62 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02076))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02076))_
+
+> Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02079))_
 
 > **const** first = ([first, second]) => first, second = ([first, second]) => second;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02079))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02080))_
 
 > **const** latin = ["primus", "secundus"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02080))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02081))_
 
 > first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02081))_
 
-> Context: Or if we were using a POJO, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02082))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02082))_
+
+> Or if we were using a POJO, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02083))_
 
 > **const** first = ({first, second}) => first, second = ({first, second}) => second; **const** latin = {first: "primus", second: "secundus"};
-_(source: javascriptallonge.pdf (source-range-83ecb080-02083))_
 
-> Context: Or if we were using a POJO, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02082))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02082))_
+
+> Or if we were using a POJO, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02084))_
 
 > first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02084))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02088))_
 
 > **const** first = K, second = K(I);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02088))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02089))_
 
 > **const** latin = (selector) => selector("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02089))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02090))_
 
 > latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02090))_

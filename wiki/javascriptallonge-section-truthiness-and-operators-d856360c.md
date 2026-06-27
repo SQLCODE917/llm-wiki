@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-truthiness-and-operators-d856360c@ceff6a6a89660dcabed23f6e958717f5
+projection_coverage: section-javascriptallonge-section-truthiness-and-operators-d856360c@5b0e5ac7702a222da0f706e2e48b8d23
 ---
 
 # **truthiness and operators**
@@ -27,5 +27,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01140))_
+
 > But when we pass other values, we no longer get true or false:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01140))_

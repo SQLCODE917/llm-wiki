@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-once-ba80d4aa@6aa9e3dc97eb1c640484d5949ae6bea6
+projection_coverage: section-javascriptallonge-section-once-ba80d4aa@757760fcec3f3fbe97ad31e32089ab22
 ---
 
 # **Once**
@@ -23,14 +23,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01028))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01028))_
+
+> Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01029))_
 
 > **const** askedOnBlindDate = once( () => "sure, why not?" ); askedOnBlindDate() _//=> 'sure, why not?'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01029))_
 
-> Context: Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01028))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01028))_
+
+> Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01030))_
 
 > askedOnBlindDate() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01030))_

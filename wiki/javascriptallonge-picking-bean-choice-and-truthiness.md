@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-picking-bean-choice-and-truthiness@bdcf1b485e3b093ff4b5c3e3b02a19e8
+projection_coverage: topic-javascriptallonge-picking-bean-choice-and-truthiness@03db8a26293244f0d70de926f878cff2
 ---
 
 # Picking the Bean: Choice and Truthiness
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-picking-bean-choice-and-truthiness@
 What [[javascriptallonge]] covers about picking the bean: choice and truthiness:
 
 ## Statements
+
+_Showing 14 of 32 statements selected for this topic._
 
 - and if first is “truthy”, it evaluates second and that is its value. _(javascriptallonge.pdf (source-range-83ecb080-01112))_
 - They don’t operate strictly on logical values, and they don’t commute: a || b is not always equal to b || a, and the same goes for &&. _(javascriptallonge.pdf (source-range-83ecb080-01146))_
@@ -32,32 +34,55 @@ What [[javascriptallonge]] covers about picking the bean: choice and truthiness:
 
 ## Technical atoms
 
-> Context: true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01097))_
+_Showing 6 of 10 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01097))_
+
+> true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01100))_
 
 > ! **true** _//=> false_ ! **false** _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01100))_
 
-> Context: Here’re some simple examples of the ternary operator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01114))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01114))_
+
+> Here’re some simple examples of the ternary operator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01117))_
 
 > - 0 ? 'Hello' : 'Good bye' _//=> 'Good bye'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01117))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01118))_
 
 > - [1, 2, 3, 4, 5].length === 5 ? 'Pentatonic' : 'Quasimodal' _//=> 'Pentatonic'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01118))_
 
-> Context: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01119))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01119))_
+
+> The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01120))_
 
 > **const** status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
-_(source: javascriptallonge.pdf (source-range-83ecb080-01120))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01140))_
 
 > But when we pass other values, we no longer get true or false:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01140))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01153))_
 
 > **const** even = (n) => n === 0 || (n !== 1 && even(n - 2))
-_(source: javascriptallonge.pdf (source-range-83ecb080-01153))_
 
 
 ## Source

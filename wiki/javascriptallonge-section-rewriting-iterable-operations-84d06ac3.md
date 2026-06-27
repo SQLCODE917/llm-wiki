@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-rewriting-iterable-operations-84d06ac3@574479ab74f899119f1dea6b2da4c3d9
+projection_coverage: section-javascriptallonge-section-rewriting-iterable-operations-84d06ac3@4e316e3dbb763d2529bf527381e4efff
 ---
 
 # **rewriting iterable operations**
@@ -24,14 +24,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02726))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02726))_
+
+> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02727))_
 
 > **const** first = (iterable) => iterable[Symbol.iterator]().next().value;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02727))_
 
-> Context: first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02726))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02726))_
+
+> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02728))_
 
 > **function** * rest (iterable) { **const** iterator = iterable[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02728))_

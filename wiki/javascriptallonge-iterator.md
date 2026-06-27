@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-iterator@acae4e99b1b2a10afb60c517e6443be8
+projection_coverage: topic-javascriptallonge-iterator@5531eb35562984b144d68b24608a3195
 ---
 
 # Iterator
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-iterator@acae4e99b1b2a10afb60c517e6
 What [[javascriptallonge]] covers about iterator:
 
 ## Statements
+
+_Showing 14 of 27 statements selected for this topic._
 
 - For all intents and purposes, once you pass an iterator to a function, you can expect that you no longer “own” that iterator, and that its state either has changed or will change. _(javascriptallonge.pdf (source-range-83ecb080-02025))_
 - Therefore, the iterator function returned by the .iterator() method has this bound to the stack object, even though we call it with iter(). _(javascriptallonge.pdf (source-range-83ecb080-02377))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about iterator:
 
 ## Technical atoms
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+_Showing 6 of 19 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01988))_
 
 > **const** NumberIterator = (number = 0) => () => ({ done: **false** , value: number++ })
-_(source: javascriptallonge.pdf (source-range-83ecb080-01988))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01989))_
 
 > fromOne = NumberIterator(1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01989))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01990))_
 
 > fromOne().value; _//=> 1_ fromOne().value; _//=> 2_ fromOne().value; _//=> 3_ fromOne().value; _//=> 4_ fromOne().value; _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01990))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02011))_
 
 > **const** oddsOf = callLeft(filterIteratorWith, (n) => n % 2 === 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02011))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02012))_
 
 > toArray(take(squareOf(oddsOf(NumberIterator(1))), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02012))_
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02379))_
 
 > **const** iteratorSum = (iterator) => { **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02379))_
 
 
 ## Source

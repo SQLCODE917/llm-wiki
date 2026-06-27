@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-lazy-and-eager-collections-5e934df9@07992343903a3ecd84dc620e9de4d2b7
+projection_coverage: section-javascriptallonge-section-lazy-and-eager-collections-5e934df9@4cda955ea5a98ad346822dc81a5ed515
 ---
 
 # Lazy and Eager Collections
@@ -64,32 +64,54 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: _// Pair, a/k/a linked lists_
-_(context: javascriptallonge.pdf (source-range-83ecb080-02761))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02761))_
+
+> _// Pair, a/k/a linked lists_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02762))_
 
 > **const** EMPTY = { isEmpty: () => **true**
-_(source: javascriptallonge.pdf (source-range-83ecb080-02762))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02766))_
 
 > **const** isEmpty = (node) => node === EMPTY;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02766))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02769))_
 
 > _// Stack_ **const** Stack = () => Object.assign({ array: [], index: -1, push: **function** (value) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02769))_
 
-> Context: Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02781))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+
+> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02783))_
 
 > When working with very large collections and many operations, this can be important.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02783))_
 
-> Context: Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02781))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+
+> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02784))_
 
 > The effect is even more pronounced when we use methods like first, until, or take:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02784))_
 
-> Context: We can confirm this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02790))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02790))_
+
+> We can confirm this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02792))_
 
 > If we write the almost identical thing with an array, we get a different behaviour:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02792))_

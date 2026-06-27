@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-truthiness-and-the-ternary-operator-f442a22e@786ee5070f8d594557b9f57338fba8dc
+projection_coverage: section-javascriptallonge-section-truthiness-and-the-ternary-operator-f442a22e@e50424096acde5a9b17cca28577ef114
 ---
 
 # **truthiness and the ternary operator**
@@ -34,17 +34,28 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Here’re some simple examples of the ternary operator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01114))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01114))_
+
+> Here’re some simple examples of the ternary operator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01117))_
 
 > - 0 ? 'Hello' : 'Good bye' _//=> 'Good bye'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01117))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01118))_
 
 > - [1, 2, 3, 4, 5].length === 5 ? 'Pentatonic' : 'Quasimodal' _//=> 'Pentatonic'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01118))_
 
-> Context: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01119))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01119))_
+
+> The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01120))_
 
 > **const** status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
-_(source: javascriptallonge.pdf (source-range-83ecb080-01120))_

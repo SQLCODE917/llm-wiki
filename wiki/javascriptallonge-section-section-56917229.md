@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-section-56917229@53df13b38f5d797e27699f70376118c2
+projection_coverage: section-javascriptallonge-section-section-56917229@2cbcdd40df2d3787fe5554b6872dbcdf
 ---
 
 # (() => {})()
@@ -32,53 +32,88 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+
+> There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00350))_
 
 > () => { 2 + 2 } () => { 1 + 1; 2 + 2 }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00350))_
 
-> Context: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00351))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00351))_
+
+> As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00352))_
 
 > () => { 1 + 1; 2 + 2 }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00352))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00354))_
 
 > (() => { 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00354))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+### Technical atom 4
 
-> (() => { 1 + 1; 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00355))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00355))_
 
 > (() => { 1 + 1; 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00356))_
 
-> Context: The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00364))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00356))_
+
+> (() => { 1 + 1; 2 + 2 })() _//=> undefined_
+
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+
+> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00362))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00362))_
 
-> Context: The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00364))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+
+> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00365))_
 
 > (() => { 1 + 1; **return** 2 + 2 })() _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00365))_
 
-> Context: And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+
+> And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00367))_
 
 > (() => { **return** 1 + 1; 2 + 2 })() _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00367))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00368))_
 
 > The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00368))_

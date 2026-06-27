@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-interactive-generators-97a9d42e@bb41e53689ff25686177f8eaff564f07
+projection_coverage: section-javascriptallonge-section-interactive-generators-97a9d42e@73d540ed5340db6e08b913a88a2a5e42
 ---
 
 # **interactive generators**
@@ -28,8 +28,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
-_(context: javascriptallonge.pdf (source-range-83ecb080-03033))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+
+> We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03032))_
 
 > **const** aNaughtsAndCrossesGame = generatorNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-03032))_

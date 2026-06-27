@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-var-c73bae7a@f045545fbaa3ec098ed4d3256c8fcfef
+projection_coverage: section-javascriptallonge-section-var-c73bae7a@3ce8fcce23736f47670575fce17541db
 ---
 
 # **var**
@@ -28,26 +28,44 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01798))_
+
 > **return** n * factorial2(x); } } factorial2(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01798))_
 
-> Context: But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01802))_
+### Technical atom 2
 
-> **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01803))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01802))_
 
-> Context: JavaScript hoists the let and the assignment. But not so with var:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01809))_
+> But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01803))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01810))_
 
-> Context: JavaScript hoists the declaration, but not the assignment. It is as if we’d written:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01812))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01809))_
+
+> JavaScript hoists the let and the assignment. But not so with var:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01810))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01815))_
+
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01812))_
+
+> JavaScript hoists the declaration, but not the assignment. It is as if we’d written:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01815))_
+
+> **const** factorial = (n) => {
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01816))_
 
 > **let** innerFactorial = **undefined** ; **return** innerFactorial(n, 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01816))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-functional-iterators-272afda6@653a64989b134988f032db9ed3e0ee1b
+projection_coverage: section-javascriptallonge-section-functional-iterators-272afda6@30e71ce8d02f551ee357ec3f1d17986b
 ---
 
 # **Functional Iterators**
@@ -26,56 +26,98 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01933))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01933))_
+
+> Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01934))_
 
 > **const** arraySum = ([first, ...rest], accumulator = 0) => first === **undefined** ? accumulator : arraySum(rest, first + accumulator)
-_(source: javascriptallonge.pdf (source-range-83ecb080-01934))_
 
-> Context: Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01933))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01933))_
+
+> Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01935))_
 
 > arraySum([1, 4, 9, 16, 25]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01935))_
 
-> Context: As we saw earlier, this entangles the mechanism of traversing the array with the business of summing the bits. So we can separate them using fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01936))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01936))_
+
+> As we saw earlier, this entangles the mechanism of traversing the array with the business of summing the bits. So we can separate them using fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01938))_
 
 > **const** arraySum = callLeft(foldArrayWith, (a, b) => a + b, 0); arraySum([1, 4, 9, 16, 25]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01938))_
 
-> Context: Well, we call arraySum with an array, and it has baked into it a method for traversing the array. Perhaps we could extract both of those things. Let’s rearrange our code a bit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01941))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01941))_
+
+> Well, we call arraySum with an array, and it has baked into it a method for traversing the array. Perhaps we could extract both of those things. Let’s rearrange our code a bit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01944))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01944))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01945))_
 
 > **const** foldArrayWith = (fn, terminalValue, [first, ...rest]) => first === **undefined** ? terminalValue : fn(first, foldArrayWith(fn, terminalValue, rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01945))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01946))_
 
 > **const** foldArray = (array) => callRight(foldArrayWith, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01946))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01947))_
 
 > **const** sumFoldable = (folder) => folder((a, b) => a + b, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01947))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01948))_
 
 > sumFoldable(foldArray([1, 4, 9, 16, 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01948))_
 
-> Context: Here it is summing a tree of numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01950))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01950))_
+
+> Here it is summing a tree of numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01951))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01951))_
 
-> Context: Here it is summing a tree of numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01950))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01950))_
+
+> Here it is summing a tree of numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01953))_
 
 > **const** foldTree = (tree) => callRight(foldTreeWith, tree);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01953))_
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01954))_
 
 > **const** sumFoldable = (folder) => folder((a, b) => a + b, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01954))_
+
+### Technical atom 12
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01955))_
 
 > sumFoldable(foldTree([1, [4, [9, 16]], 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01955))_

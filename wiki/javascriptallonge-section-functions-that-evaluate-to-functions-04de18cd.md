@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-functions-that-evaluate-to-functions-04de18cd@2ae38b736a8ca1c2c402d1597694340e
+projection_coverage: section-javascriptallonge-section-functions-that-evaluate-to-functions-04de18cd@fcd5108208c1305c8ccf77e3670a523e
 ---
 
 # **functions that evaluate to functions**
@@ -24,5 +24,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00375))_
+
 > If an expression that evaluates to a function is, well, an expression, and if a return statement can have any expression on its right side… _Can we put an expression that evaluates to a function on the right side of a function expression?_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00375))_

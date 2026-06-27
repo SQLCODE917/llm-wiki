@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-why-4e397686@a6cb39fe28277de29caf3bb08daa5957
+projection_coverage: section-javascriptallonge-section-why-4e397686@73149a650601f539861fbafde205218e
 ---
 
 # Why?
@@ -26,14 +26,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: This is the canonical Y Combinator[86] :
-_(context: javascriptallonge.pdf (source-range-83ecb080-02300))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02300))_
+
+> This is the canonical Y Combinator[86] :
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02301))_
 
 > **const** Y = (f) => ( x => f(v => x(x)(v)) )( x => f(v => x(x)(v)) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02301))_
 
-> Context: One tip is to use JavaScript to name things. For example, you could start by writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02307))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02307))_
+
+> One tip is to use JavaScript to name things. For example, you could start by writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02308))_
 
 > **const** Y = (f) => { **const** something = x => f(v => x(x)(v));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02308))_

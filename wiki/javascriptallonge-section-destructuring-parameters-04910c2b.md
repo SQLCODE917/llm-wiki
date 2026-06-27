@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-destructuring-parameters-04910c2b@c709af9af9481d086bd55261e920e6dc
+projection_coverage: section-javascriptallonge-section-destructuring-parameters-04910c2b@88676c2bc472b9aeb0fadee4533520b8
 ---
 
 # **destructuring parameters**
@@ -22,8 +22,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: It is very much like an array literal. And consider how we bind values to parameter names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01285))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01285))_
+
+> It is very much like an array literal. And consider how we bind values to parameter names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01286))_
 
 > **const** foo = () => ... **const** bar = (name) => ... **const** baz = (a, b, c) => ...
-_(source: javascriptallonge.pdf (source-range-83ecb080-01286))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-mutation-7ccd2c26@4cba910a26852f9159c7972d6da209fd
+projection_coverage: section-javascriptallonge-section-mutation-7ccd2c26@58b53deb7a9cdeee79756ffd84e44700
 ---
 
 # Mutation
@@ -54,86 +54,146 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01688))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01688))_
+
+> In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01689))_
 
 > **const** oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree _//=> [ 'one', 2, 3 ]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01689))_
 
-> Context: You can even add a value:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01690))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01690))_
+
+> You can even add a value:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01693))_
 
 > **const** oneTwoThree = [1, 2, 3]; oneTwoThree[3] = 'four'; oneTwoThree _//=> [ 1, 2, 3, 'four' ]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01693))_
 
-> Context: You can do the same thing with both syntaxes for accessing objects:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01694))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01694))_
+
+> You can do the same thing with both syntaxes for accessing objects:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01695))_
 
 > **const** name = {firstName: 'Leonard', lastName: 'Braithwaite'}; name.middleName = 'Austin' name _//=> { firstName: 'Leonard',_ # lastName: 'Braithwaite', # middleName: 'Austin' }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01695))_
 
-> Context: We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01696))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01696))_
+
+> We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01697))_
 
 > **const** allHallowsEve = [2012, 10, 31] **const** halloween = allHallowsEve;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01697))_
 
-> Context: Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
+
+> Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01699))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { _// ..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01699))_
 
-> Context: This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
+
+> This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01705))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { halloween = [2013, 10, 31];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01705))_
 
-> Context: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01707))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01707))_
+
+> The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01706))_
 
 > })(allHallowsEve); allHallowsEve _//=> [2012, 10, 31]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01706))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01708))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { halloween[0] = 2013; })(allHallowsEve); allHallowsEve _//=> [2013, 10, 31]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01708))_
 
-> Context: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let’s recall linked lists from Plain Old JavaScript Objects. While we’re executing the mapWith function, we’re constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01716))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01716))_
+
+> One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let’s recall linked lists from Plain Old JavaScript Objects. While we’re executing the mapWith function, we’re constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01717))_
 
 > But after returning the new list, we then become conservative about mutation. This also makes sense: Linked lists often use structure sharing. For example:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01717))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01724))_
 
 > const ThreeToFive = OneToFive.rest.rest;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01724))_
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01727))_
 
 > ThreeToFive.first = "three"; ThreeToFive.rest.first = "four"; ThreeToFive.rest.rest.first = "five";
-_(source: javascriptallonge.pdf (source-range-83ecb080-01727))_
 
-> Context: Changes made to ThreeToFive affect OneToFive, because they share the same structure. When we wrote ThreeToFive = OneToFive.rest.rest;, we weren’t making a brand new copy of we were getting a reference to the same chain of nodes.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01731))_
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01731))_
+
+> Changes made to ThreeToFive affect OneToFive, because they share the same structure. When we wrote ThreeToFive = OneToFive.rest.rest;, we weren’t making a brand new copy of we were getting a reference to the same chain of nodes.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01730))_
 
 > OneToFive //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"fou\ r","rest":{"first":"five","rest":{}}}}}}
-_(source: javascriptallonge.pdf (source-range-83ecb080-01730))_
 
-> Context: Structure sharing like this is what makes linked lists so fast for taking everything but the first item of a list: We aren’t making a new list, we’re using some of the old list. Whereas destructuring an array with [first, ...rest] does make a copy, so:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01732))_
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01732))_
+
+> Structure sharing like this is what makes linked lists so fast for taking everything but the first item of a list: We aren’t making a new list, we’re using some of the old list. Whereas destructuring an array with [first, ...rest] does make a copy, so:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01735))_
 
 > **const** OneToFive = [1, 2, 3, 4, 5];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01735))_
+
+### Technical atom 14
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01738))_
 
 > We don’t have to remember to use copying operations when we pass it as a value to a function, or extract some data from it.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01738))_
 
-> Context: As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01740))_
+### Technical atom 15
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01740))_
+
+> As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01741))_
 
 > **const** reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01741))_
 
-> Context: As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01740))_
+### Technical atom 16
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01740))_
+
+> As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01742))_
 
 > **const** copy = (node) => reverse(reverse(node));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01742))_

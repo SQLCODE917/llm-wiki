@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-values-and-identity-2f6e8c3f@472837a354c78f2dd672d7ebb2f95a5f
+projection_coverage: section-javascriptallonge-section-values-and-identity-2f6e8c3f@fb456e0bf1d84987d6e00b01587eeaec
 ---
 
 # values and identity
@@ -42,38 +42,62 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Second, sometimes, the cups are of the same type–perhaps two espresso cups–but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00188))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00188))_
+
+> Second, sometimes, the cups are of the same type–perhaps two espresso cups–but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00189))_
 
 > **true** === **false** _//=> false_ 2 !== 5 _//=> true_ 'two' === 'five' _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00189))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00195))_
 
 > - 2 + 2 === 4 _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00195))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00196))_
 
 > - (2 + 2 === 4) === (2 !== 5) _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00196))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00198))_
 
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00198))_
 
-> Context: An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00205))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00205))_
+
+> An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00206))_
 
 > [2-1, 2, 2+1] [1, 1+1, 1+1+1]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00206))_
 
-> Context: Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00207))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00207))_
+
+> Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00208))_
 
 > [2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00208))_

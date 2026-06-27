@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-self-similarity-52bff188@b9507b67ca93bd372ab9f64e7a9fcbcd
+projection_coverage: section-javascriptallonge-section-self-similarity-52bff188@cddbad3185df9c0c2d5e12fa73e4abfd
 ---
 
 # Self-Similarity
@@ -71,110 +71,184 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01312))_
 
 > **const** isEmpty = ([first, ...rest]) => first === **undefined** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01312))_
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01313))_
 
 > isEmpty([]) _//=> true_ isEmpty([0]) _//=> false_ isEmpty([[]]) _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01313))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01320))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : _// ???_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01320))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01322))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01322))_
 
-> Context: Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+
+> Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01324))_
 
 > length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01324))_
 
-> Context: If we want to square each number in a list, we could write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01354))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01354))_
+
+> If we want to square each number in a list, we could write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01355))_
 
 > **const** squareAll = ([first, ...rest]) => first === **undefined** ? [] : [first * first, ...squareAll(rest)\ ]; squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01355))_
 
-> Context: And if we wanted to “truthify” each element in a list, we could write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01356))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01356))_
+
+> And if we wanted to “truthify” each element in a list, we could write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01359))_
 
 > **const** truthyAll = ([first, ...rest]) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01359))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01361))_
 
 > truthyAll([ **null** , **true** , 25, **false** , "foo"]) _//=> [false,true,true,false,true]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01361))_
 
-> Context: Given the signature:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01363))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01363))_
+
+> Given the signature:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01364))_
 
 > **const** mapWith = (fn, array) => _// ..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01364))_
 
-> Context: We can write it out using a ternary operator. Even in this small function, we can identify the terminal condition, the piece being broken off, and recomposing the solution.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01365))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01365))_
+
+> We can write it out using a ternary operator. Even in this small function, we can identify the terminal condition, the piece being broken off, and recomposing the solution.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01367))_
 
 > mapWith((x) => !!x, [ **null** , **true** , 25, **false** , "foo"]) _//=> [false,true,true,false,true]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01367))_
 
-> Context: With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn’t. A function to compute the sum of the squares of a list of numbers might look like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01369))_
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01369))_
+
+> With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn’t. A function to compute the sum of the squares of a list of numbers might look like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01372))_
 
 > **const** sumSquares = ([first, ...rest]) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01372))_
 
-> Context: There are two differences between sumSquares and our maps above:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01375))_
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01375))_
+
+> There are two differences between sumSquares and our maps above:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01374))_
 
 > sumSquares([1, 2, 3, 4, 5]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01374))_
 
-> Context: Let’s rewrite mapWith so that we can use it to sum squares.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01378))_
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01378))_
+
+> Let’s rewrite mapWith so that we can use it to sum squares.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01379))_
 
 > **const** foldWith = (fn, terminalValue, [first, ...rest]) => first === **undefined** ? terminalValue : fn(first, foldWith(fn, terminalValue, rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01379))_
 
-> Context: And now we supply a function that does slightly more than our mapping functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01380))_
+### Technical atom 14
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01380))_
+
+> And now we supply a function that does slightly more than our mapping functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01381))_
 
 > foldWith((number, rest) => number * number + rest, 0, [1, 2, 3, 4, 5]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01381))_
 
-> Context: Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01382))_
+### Technical atom 15
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01382))_
+
+> Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01383))_
 
 > **const** squareAll = (array) => foldWith((first, rest) => [first * first, ...rest],\ [], array); squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01383))_
 
-> Context: And if we like, we can write mapWith using foldWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01384))_
+### Technical atom 16
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01384))_
+
+> And if we like, we can write mapWith using foldWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01387))_
 
 > **const** mapWith = (fn, array) => foldWith((first, rest) => [fn(first), ...rest], [\ ], array), squareAll = (array) => mapWith((x) => x * x, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01387))_
+
+### Technical atom 17
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01388))_
 
 > squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01388))_
 
-> Context: And to return to our first example, our version of length can be written as a fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01389))_
+### Technical atom 18
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01389))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01390))_
 
 > **const** length = (array) => foldWith((first, rest) => 1 + rest, 0, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01390))_
 
-> Context: And to return to our first example, our version of length can be written as a fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01389))_
+### Technical atom 19
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01389))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01391))_
 
 > length([1, 2, 3, 4, 5]) _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01391))_

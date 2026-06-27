@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-implementing-methods-with-iteration-63f0aa38@e8c96acc38f5eba5ec53252d5bb55373
+projection_coverage: section-javascriptallonge-section-implementing-methods-with-iteration-63f0aa38@4868606cf1da041b54a08bf5fae7cbb1
 ---
 
 # **implementing methods with iteration**
@@ -27,14 +27,24 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: _// Pair, a/k/a linked lists_
-_(context: javascriptallonge.pdf (source-range-83ecb080-02761))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02761))_
+
+> _// Pair, a/k/a linked lists_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02762))_
 
 > **const** EMPTY = { isEmpty: () => **true**
-_(source: javascriptallonge.pdf (source-range-83ecb080-02762))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02766))_
 
 > **const** isEmpty = (node) => node === EMPTY;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02766))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02769))_
 
 > _// Stack_ **const** Stack = () => Object.assign({ array: [], index: -1, push: **function** (value) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02769))_

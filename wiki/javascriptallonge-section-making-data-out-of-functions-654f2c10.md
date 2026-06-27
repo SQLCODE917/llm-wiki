@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-making-data-out-of-functions-654f2c10@0673a34fc4f5ca59552505ede82615e4
+projection_coverage: section-javascriptallonge-section-making-data-out-of-functions-654f2c10@60268739a9cd1b2ae2e78cf02639707a
 ---
 
 # Making Data Out Of Functions
@@ -87,233 +87,414 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02033))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02033))_
+
+> For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02036))_
 
 > **const** EMPTY = {}; **const** OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02036))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02037))_
 
 > OneTwoThree.first _//=> 1_ OneTwoThree.rest.first _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02037))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02038))_
 
 > OneTwoThree.rest.rest.first _//=> 3_ **const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02038))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02039))_
 
 > length(OneTwoThree) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02039))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02049))_
 
 > **const** K = (x) => (y) => x; **const** I = (x) => (x); **const** V = (x) => (y) => (z) => z(x)(y);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02049))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02053))_
 
 > **const** K = (x) => (y) => x; **const** fortyTwo = K(42);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02053))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02054))_
 
 > fortyTwo(6) _//=> 42_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02054))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02055))_
 
 > fortyTwo("Hello") _//=> 42_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02055))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02058))_
 
 > K(6)(7) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02058))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02059))_
 
 > K(12)(24) _//=> 12_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02059))_
 
-> Context: Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02061))_
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02061))_
+
+> Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02062))_
 
 > Therefore, K(I)(x)(y) => y:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02062))_
+
+### Technical atom 12
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02065))_
 
 > K(I)(6)(7) _//=> 7_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02065))_
+
+### Technical atom 13
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02066))_
 
 > K(I)(12)(24) _//=> 24_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02066))_
+
+### Technical atom 14
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02068))_
 
 > K("primus")("secundus") _//=> "primus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02068))_
+
+### Technical atom 15
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02069))_
 
 > K(I)("primus")("secundus") _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02069))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+### Technical atom 16
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02071))_
 
 > **const** first = K, second = K(I);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02071))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+### Technical atom 17
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02072))_
 
 > first("primus")("secundus") _//=> "primus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02072))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+### Technical atom 18
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02073))_
 
 > second("primus")("secundus") _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02073))_
 
-> Context: Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02076))_
+### Technical atom 19
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02076))_
+
+> Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02079))_
 
 > **const** first = ([first, second]) => first, second = ([first, second]) => second;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02079))_
+
+### Technical atom 20
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02080))_
 
 > **const** latin = ["primus", "secundus"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02080))_
+
+### Technical atom 21
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02081))_
 
 > first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02081))_
 
-> Context: Or if we were using a POJO, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02082))_
+### Technical atom 22
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02082))_
+
+> Or if we were using a POJO, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02083))_
 
 > **const** first = ({first, second}) => first, second = ({first, second}) => second; **const** latin = {first: "primus", second: "secundus"};
-_(source: javascriptallonge.pdf (source-range-83ecb080-02083))_
 
-> Context: Or if we were using a POJO, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02082))_
+### Technical atom 23
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02082))_
+
+> Or if we were using a POJO, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02084))_
 
 > first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02084))_
+
+### Technical atom 24
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02088))_
 
 > **const** first = K, second = K(I);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02088))_
+
+### Technical atom 25
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02089))_
 
 > **const** latin = (selector) => selector("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02089))_
+
+### Technical atom 26
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02090))_
 
 > latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02090))_
 
-> Context: For “data” we access with K and K(I), our “structure” is the function (selector) => selector("primus")("secundus"). Let’s extract those into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02096))_
+### Technical atom 27
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02096))_
+
+> For “data” we access with K and K(I), our “structure” is the function (selector) => selector("primus")("secundus"). Let’s extract those into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02097))_
 
 > (first, second) => (selector) => selector(first)(second)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02097))_
 
-> Context: For consistency with the way combinators are written as functions taking just one parameter, we’ll curry[78] the function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02098))_
+### Technical atom 28
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02098))_
+
+> For consistency with the way combinators are written as functions taking just one parameter, we’ll curry[78] the function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02099))_
 
 > (first) => (second) => (selector) => selector(first)(second)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02099))_
 
-> Context: Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
-_(context: javascriptallonge.pdf (source-range-83ecb080-02100))_
+### Technical atom 29
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02100))_
+
+> Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02101))_
 
 > **const** first = K, second = K(I), pair = (first) => (second) => (selector) => selector(first)(second);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02101))_
 
-> Context: Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
-_(context: javascriptallonge.pdf (source-range-83ecb080-02100))_
+### Technical atom 30
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02100))_
+
+> Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02102))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02102))_
+
+### Technical atom 31
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02107))_
 
 > If we change the names to x, y, and z, we get: (x) => (y) => (z) => z(x)(y).
-_(source: javascriptallonge.pdf (source-range-83ecb080-02107))_
+
+### Technical atom 32
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02111))_
 
 > **const** first = K, second = K(I), pair = V;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02111))_
+
+### Technical atom 33
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02112))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02112))_
+
+### Technical atom 34
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02113))_
 
 > latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02113))_
 
-> Context: We can write length and mapWith functions over it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02119))_
+### Technical atom 35
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02119))_
+
+> We can write length and mapWith functions over it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02122))_
 
 > **const** length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02122))_
+
+### Technical atom 36
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02123))_
 
 > length(l123) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02123))_
+
+### Technical atom 37
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02125))_
 
 > **const** doubled = mapWith((x) => x * 2, l123); first(doubled) _//=> 2_ first(rest(doubled)) _//=> 4_ first(rest(rest(doubled))) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02125))_
 
-> Context: Can we do the same with the linked lists we build out of functions? Yes:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02126))_
+### Technical atom 38
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02126))_
+
+> Can we do the same with the linked lists we build out of functions? Yes:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02127))_
 
 > **const** first = K, rest = K(I), pair = V, EMPTY = (() => {}); **const** l123 = pair(1)(pair(2)(pair(3)(EMPTY))); l123(first) _//=> 1_ l123(rest)(first)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02127))_
 
-> Context: We can reverse this: Instead of asking a pair if it is empty and then deciding what to do, we can ask the pair to do it for us. Here’s length again:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02140))_
+### Technical atom 39
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02140))_
+
+> We can reverse this: Instead of asking a pair if it is empty and then deciding what to do, we can ask the pair to do it for us. Here’s length again:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02141))_
 
 > **const** length = (aPair) => aPair === EMPTY ? 0 : 1 + length(aPair(rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02141))_
 
-> Context: Let’s presume we are working with a slightly higher abstraction, we’ll call it a list. Instead of writing length(list) and examining a list, we’ll write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02142))_
+### Technical atom 40
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02142))_
+
+> Let’s presume we are working with a slightly higher abstraction, we’ll call it a list. Instead of writing length(list) and examining a list, we’ll write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02143))_
 
 > **const** length = (list) => list( () => 0, (aPair) => 1 + length(aPair(rest))) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02143))_
 
-> Context: We’ll also write a handy list printer:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02149))_
+### Technical atom 41
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02149))_
+
+> We’ll also write a handy list printer:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02150))_
 
 > **const** print = (list) => list( () => "", (aPair) => ` **${** aPair(pairFirst) **} ${** print(aPair(pairRest)) **}** ` );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02150))_
 
-> Context: How would all this work? Let’s start with the obvious. What is an empty list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-02151))_
+### Technical atom 42
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02151))_
+
+> How would all this work? Let’s start with the obvious. What is an empty list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02152))_
 
 > **const** EMPTYLIST = (whenEmpty, unlessEmpty) => whenEmpty()
-_(source: javascriptallonge.pdf (source-range-83ecb080-02152))_
 
-> Context: And what is a node of a list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-02153))_
+### Technical atom 43
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02153))_
+
+> And what is a node of a list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02154))_
 
 > **const** node = (x) => (y) => (whenEmpty, unlessEmpty) => unlessEmpty(pair(x)(y));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02154))_
+
+### Technical atom 44
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02156))_
 
 > **const** l123 = node(1)(node(2)(node(3)(EMPTYLIST)));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02156))_
+
+### Technical atom 45
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02157))_
 
 > print(l123) _//=> 1 2 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02157))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+### Technical atom 46
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02179))_
 
 > **const** first = K, second = K(I), pair = (first) => (second) => { **const** pojo = {first, second};
-_(source: javascriptallonge.pdf (source-range-83ecb080-02179))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+### Technical atom 47
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02180))_
 
 > **return** (selector) => selector(pojo.first)(pojo.second); };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02180))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+### Technical atom 48
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02181))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02181))_
+
+### Technical atom 49
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02184))_
 
 > latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02184))_
 
-> Context: This is a little gratuitous, but it makes the point: The code that uses the data doesn’t reach in and touch it: The code that uses the data provides some code and asks the data to do something with it. The same thing happens with our lists. Here’s length for lists:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02185))_
+### Technical atom 50
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02185))_
+
+> This is a little gratuitous, but it makes the point: The code that uses the data doesn’t reach in and touch it: The code that uses the data provides some code and asks the data to do something with it. The same thing happens with our lists. Here’s length for lists:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02186))_
 
 > **const** length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02186))_
 
-> Context: We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02190))_
+### Technical atom 51
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02190))_
+
+> We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02191))_
 
 > **const** length = (node, delayed = 0) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-02191))_
 
-> Context: We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02190))_
+### Technical atom 52
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02190))_
+
+> We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02192))_
 
 > node === EMPTY
-_(source: javascriptallonge.pdf (source-range-83ecb080-02192))_

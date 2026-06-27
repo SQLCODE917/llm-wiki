@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-1ebcc3f6@7c70d86da2c47a9448b5b652993484f3
+projection_coverage: section-javascriptallonge-section-a-warm-cup-basic-strings-and-quasi-literals-1ebcc3f6@deb3a70b8e6c0404e23eefd49ff33622
 ---
 
 # **A Warm Cup: Basic Strings and Quasi-Literals**
@@ -26,8 +26,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: There are operators that can be used on strings. The most common is +, it _concatenates_ :
-_(context: javascriptallonge.pdf (source-range-83ecb080-02321))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02321))_
+
+> There are operators that can be used on strings. The most common is +, it _concatenates_ :
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02322))_
 
 > 'fu' + 'bar' _//=> 'fubar'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02322))_

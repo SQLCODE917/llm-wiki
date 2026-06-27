@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-representing-naughts-and-crosses-as-a-stateless-function-a924b35d@70be159601c11943fdc88a5a3099ad93
+projection_coverage: section-javascriptallonge-section-representing-naughts-and-crosses-as-a-stateless-function-a924b35d@82a984b4e9d98883657dd46b3785f8d4
 ---
 
 # **representing naughts and crosses as a stateless function**
@@ -24,11 +24,18 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: And if we want to look up what move to make, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02984))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02984))_
+
+> And if we want to look up what move to make, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02986))_
 
 > 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02986))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02992))_
 
 > 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' ]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02992))_

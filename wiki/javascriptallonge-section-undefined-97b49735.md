@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-undefined-97b49735@3305476c249f39c5b70292a20696e55d
+projection_coverage: section-javascriptallonge-section-undefined-97b49735@6296117e8f04c890a3278ea988ea41cc
 ---
 
 # **undefined**
@@ -28,8 +28,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
-_(context: javascriptallonge.pdf (source-range-83ecb080-00325))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00325))_
+
+> No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00323))_
 
 > **undefined** === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-00323))_

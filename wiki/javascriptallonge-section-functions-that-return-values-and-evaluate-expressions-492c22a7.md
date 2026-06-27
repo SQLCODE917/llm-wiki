@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-functions-that-return-values-and-evaluate-expressions-492c22a7@9e11760d29c9691b20778ca63f4cfcf8
+projection_coverage: section-javascriptallonge-section-functions-that-return-values-and-evaluate-expressions-492c22a7@98c85c63575b6a62c38ef3e0015ea335
 ---
 
 # **functions that return values and evaluate expressions**
@@ -27,14 +27,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00285))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00285))_
+
+> Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00287))_
 
 > (() => 1 + 1)() _//=> 2_ (() => "Hello, " + "JavaScript")() _//=> "Hello, JavaScript"_ (() => **Infinity** * **Infinity** )() _//=> Infinity_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00287))_
 
-> Context: Yes we can! Functions can return the value of evaluating another function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00291))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00291))_
+
+> Yes we can! Functions can return the value of evaluating another function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00292))_
 
 > When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00292))_

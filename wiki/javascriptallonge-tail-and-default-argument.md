@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-tail-and-default-argument@b42461d1d986757b0d7d1708eac66779
+projection_coverage: topic-javascriptallonge-tail-and-default-argument@8dc96e9f5c8ee2bcb3009fa88072c52a
 ---
 
 # Tail Calls (and Default Arguments)
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-tail-and-default-argument@b42461d1d
 What [[javascriptallonge]] covers about tail calls (and default arguments):
 
 ## Statements
+
+_Showing 14 of 40 statements selected for this topic._
 
 - And in fact, it does exactly that: It throws the stack frame away, and does not consume extra memory when making a maybe-wrapped call. _(javascriptallonge.pdf (source-range-83ecb080-01421))_
 - And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization. _(javascriptallonge.pdf (source-range-83ecb080-01459))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about tail calls (and default arguments):
 
 ## Technical atoms
 
-> Context: This is roughly equivalent to writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01402))_
+_Showing 6 of 25 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01402))_
+
+> This is roughly equivalent to writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01404))_
 
 > Note that while evaluating mapWith(fn, rest), JavaScript must retain the value first or fn(first), plus some housekeeping information so it remembers what to do with mapWith(fn, rest) when it has a result.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01404))_
 
-> Context: In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01411))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01411))_
+
+> In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01412))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01412))_
 
-> Context: That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
-_(context: javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+
+> That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01423))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01423))_
 
-> Context: The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01430))_
+### Technical atom 4
 
-> **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01431))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01430))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+> The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01431))_
 
 > **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01437))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01437))_
+
+> **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
+
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01439))_
 
 > **const** length = (n) => lengthDelaysWork(n, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01439))_
 
 
 ## Source

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-x-x-cafe8f8b@2a328628f3bc783394fa91f102b76d45
+projection_coverage: section-javascriptallonge-section-x-x-cafe8f8b@dc0d13b15b8fa5f16131779a24359aaf
 ---
 
 # (x) => x
@@ -34,14 +34,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The 
-_(context: javascriptallonge.pdf (source-range-83ecb080-00490, source-range-83ecb080-00494))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00490, source-range-83ecb080-00494))_
+
+> Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00493))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00493))_
 
-> Context: Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00498))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00498))_
+
+> Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00497))_
 
 > If pure functions can contain closures, can a closure contain a pure function?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00497))_

@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-it-s-always-the-environment-691a44be@4f58a3337a9b65deab3fb74d912f5160
+projection_coverage: section-javascriptallonge-section-it-s-always-the-environment-691a44be@98dca293396e83d10803e1d0d5f2034f
 ---
 
 # **it’s always the environment**
@@ -31,20 +31,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
-_(context: javascriptallonge.pdf (source-range-83ecb080-00503))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00503))_
+
+> To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00504))_
 
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00504))_
 
-> Context: Functions can have grandparents too:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00509))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00509))_
+
+> Functions can have grandparents too:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00510))_
 
 > (x) => (y) => (z) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00510))_
 
-> Context: This function does much the same thing as:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00511))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00511))_
+
+> This function does much the same thing as:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00512))_
 
 > (x, y, z) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00512))_

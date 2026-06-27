@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-copy-on-read-7bfd1130@86f7e59e502736b34ae33af5b1678095
+projection_coverage: section-javascriptallonge-section-copy-on-read-7bfd1130@c98332335e73e027b71a2fad65e389e1
 ---
 
 # **copy-on-read**
@@ -30,14 +30,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01875))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01875))_
+
+> So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01876))_
 
 > **const** rest = ({first, rest}) => copy(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01876))_
 
-> Context: So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy. This strategy is called “copy-on-read”, because when we attempt the parent to “read” the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01875, source-range-83ecb080-01879))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01875, source-range-83ecb080-01879))_
+
+> So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy. This strategy is called “copy-on-read”, because when we attempt the parent to “read” the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01878))_
 
 > parentList _//=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":{},"\_ rest":{}}}}} childList //=> {"first":"two","rest":{"first":3,"rest":{"first":{},"rest":{}}}}
-_(source: javascriptallonge.pdf (source-range-83ecb080-01878))_

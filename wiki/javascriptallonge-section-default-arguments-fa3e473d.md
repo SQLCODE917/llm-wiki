@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-default-arguments-fa3e473d@f8b2a51a5d9251a2f0598a0c68f7c827
+projection_coverage: section-javascriptallonge-section-default-arguments-fa3e473d@7a21ce8bd5054f1749ab7499919aff96
 ---
 
 # **default arguments**
@@ -24,8 +24,13 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01455))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -57,10 +62,14 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01455))_
 
-> Context: In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01462))_
+
+> In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01463))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,10 +101,13 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01463))_
 
-> Context: Our problem is that we can directly write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01481))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01481))_
+
+> Our problem is that we can directly write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01483))_
 
 > But it is hideous to have to always add a 1 parameter, we’d be demanding that everyone using the factorial function know that we are using a tail-recursive implementation.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01483))_

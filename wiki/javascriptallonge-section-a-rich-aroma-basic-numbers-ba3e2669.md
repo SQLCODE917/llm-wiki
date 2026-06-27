@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-numbers-ba3e2669@3aa41daa89a163fbb651eaededd9eaed
+projection_coverage: section-javascriptallonge-section-a-rich-aroma-basic-numbers-ba3e2669@bf72a068f3a77a26300f4ac7f970258c
 ---
 
 # A Rich Aroma: Basic Numbers
@@ -50,38 +50,64 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> The machine’s representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer’s behaviour surprises us if we don’t know a little about what it’s doing “under the hood.”
-_(source: javascriptallonge.pdf (source-range-83ecb080-00221))_
+### Technical atom 1
 
-> Context: One of the most oft-repeated examples is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00226))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00221))_
+
+> The machine’s representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer’s behaviour surprises us if we don’t know a little about what it’s doing “under the hood.”
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00226))_
+
+> One of the most oft-repeated examples is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00228))_
 
 > - 1.0 + 1.0 _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00228))_
 
-> Context: One of the most oft-repeated examples is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00226))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00226))_
+
+> One of the most oft-repeated examples is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00229))_
 
 > - 1.0 + 1.0 + 1.0 _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00229))_
 
-> Context: > 14Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js, it will happily report that the answer is 18014398509481982. But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00232))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00232))_
+
+> > 14Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js, it will happily report that the answer is 18014398509481982. But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00235))_
 
 > 0.1 _//=> 0.1_ 0.1 + 0.1 _//=> 0.2_ 0.1 + 0.1 + 0.1 _//=> 0.30000000000000004_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00235))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00236))_
 
 > This kind of “inexactitude” can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript’s calculation is less than a pixel, there is no observable error.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00236))_
 
-> Context: This kind of “inexactitude” can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript’s calculation is less than a pixel, there is no observable error.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00236))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00236))_
+
+> This kind of “inexactitude” can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript’s calculation is less than a pixel, there is no observable error.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00237))_
 
 > Professional programmers almost never use floating point numbers to represent monetary amounts.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00237))_
 
-> Context: In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
-_(context: javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+
+> In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00241))_
 
 > 2 * 5 + 1 _//=> 11_ 1 + 5 * 2 _//=> 11_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00241))_

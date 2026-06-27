@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-lists-with-functions-as-data-01338d3a@6cb729b495c9067ea29a262a9f23aaec
+projection_coverage: section-javascriptallonge-section-lists-with-functions-as-data-01338d3a@8418687d835f0f6010d6b6b1cec8d7d3
 ---
 
 # **lists with functions as data**
@@ -25,20 +25,34 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We can write length and mapWith functions over it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02119))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02119))_
+
+> We can write length and mapWith functions over it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02122))_
 
 > **const** length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02122))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02123))_
 
 > length(l123) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02123))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02125))_
 
 > **const** doubled = mapWith((x) => x * 2, l123); first(doubled) _//=> 2_ first(rest(doubled)) _//=> 4_ first(rest(rest(doubled))) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02125))_
 
-> Context: Can we do the same with the linked lists we build out of functions? Yes:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02126))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02126))_
+
+> Can we do the same with the linked lists we build out of functions? Yes:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02127))_
 
 > **const** first = K, rest = K(I), pair = V, EMPTY = (() => {}); **const** l123 = pair(1)(pair(2)(pair(3)(EMPTY))); l123(first) _//=> 1_ l123(rest)(first)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02127))_

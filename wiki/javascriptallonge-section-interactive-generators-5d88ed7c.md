@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-interactive-generators-5d88ed7c@c393c9927acc7cd231d6055a34980219
+projection_coverage: section-javascriptallonge-section-interactive-generators-5d88ed7c@9beafe6c0f777b0da34e40f8c8f80f0d
 ---
 
 # Interactive Generators
@@ -58,23 +58,40 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: And if we want to look up what move to make, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02984))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02984))_
+
+> And if we want to look up what move to make, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02986))_
 
 > 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02986))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02992))_
 
 > 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' ]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02992))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02996))_
 
 > **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02996))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03005))_
 
 > **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-03005))_
 
-> Context: We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
-_(context: javascriptallonge.pdf (source-range-83ecb080-03033))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+
+> We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03032))_
 
 > **const** aNaughtsAndCrossesGame = generatorNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-03032))_

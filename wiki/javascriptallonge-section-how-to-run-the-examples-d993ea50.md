@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-how-to-run-the-examples-d993ea50@e9730c7b3a0aa88e4cbc7c6c7949aae9
+projection_coverage: section-javascriptallonge-section-how-to-run-the-examples-d993ea50@3eb29c50c38afb69ba8f9ce4f8feb70e
 ---
 
 # **How to run the examples**
@@ -28,29 +28,48 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: For example, this ECMAScript 2015 code:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03085))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03085))_
+
+> For example, this ECMAScript 2015 code:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03086))_
 
 > **const** before = (decoration) => (method) => **function** () { decoration.apply( **this** , arguments); **return** method.apply( **this** , arguments) };
-_(source: javascriptallonge.pdf (source-range-83ecb080-03086))_
 
-> Context: "use strict"
-_(context: javascriptallonge.pdf (source-range-83ecb080-03088))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03088))_
+
+> "use strict"
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03089))_
 
 > **var** before = **function** (decoration) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-03089))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03101))_
 
 > **const** before = (decoration) => (method) => **function** (...args) { decoration.apply( **this** , args); **return** method.apply( **this** , args) };
-_(source: javascriptallonge.pdf (source-range-83ecb080-03101))_
 
-> Context: So instead of just writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03105))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03105))_
+
+> So instead of just writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03106))_
 
 > (() => 2 + 2)()
-_(source: javascriptallonge.pdf (source-range-83ecb080-03106))_
 
-> Context: And having 4 displayed, you’d need to write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03107))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03107))_
+
+> And having 4 displayed, you’d need to write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03108))_
 
 > console.log( (() => 2 + 2)() )
-_(source: javascriptallonge.pdf (source-range-83ecb080-03108))_

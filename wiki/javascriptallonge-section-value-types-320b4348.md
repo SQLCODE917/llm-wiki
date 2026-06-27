@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-value-types-320b4348@5799f736eef0703edfcf7b6d02201969
+projection_coverage: section-javascriptallonge-section-value-types-320b4348@24e3f00d2075b40c845fbdb00ed75860
 ---
 
 # **value types**
@@ -26,20 +26,32 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00195))_
 
 > - 2 + 2 === 4 _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00195))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00196))_
 
 > - (2 + 2 === 4) === (2 !== 5) _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00196))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00198))_
 
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00198))_

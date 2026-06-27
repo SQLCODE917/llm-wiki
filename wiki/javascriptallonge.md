@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources
 source_id: javascriptallonge.pdf
-projection_coverage: projection-coverage-a340d05e25ddb511@2df79515e39ca172
+projection_coverage: projection-coverage-2871185e83b5dc41@0631a5f659c0bb93
 ---
 
 # Document
@@ -18,18 +18,23 @@ projection_coverage: projection-coverage-a340d05e25ddb511@2df79515e39ca172
 
 - How to Do What You Love & Earn What You’re Worth as a Programmer _(javascriptallonge.pdf (source-range-83ecb080-00011))_
 
-> This version was published on 2017-11-03
-_(source: javascriptallonge.pdf (source-range-83ecb080-00005))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00005))_
 
-> Context: This is a Leanpub book. Leanpub empowers authors and publishers with the Lean Publishing process. Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00007))_
+> This version was published on 2017-11-03
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00007))_
+
+> This is a Leanpub book. Leanpub empowers authors and publishers with the Lean Publishing process. Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00008))_
 
 > © 2015 - 2017 Reg “raganwald” Braithwaite
-_(source: javascriptallonge.pdf (source-range-83ecb080-00008))_
 
 ## Table of Contents
 
 ### **Contents**
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00016))_
 
 | **A Pull of the Lever: Prefaces** . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | **i** |
 | --- | --- |
@@ -97,7 +102,8 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00008))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00016))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00017))_
 
 | A Pull of the Lever: Prefaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . | i |
 | --- | --- |
@@ -165,9 +171,10 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00016))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00017))_
 
 ### CONTENTS
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00019))_
 
 | **Composing and Decomposing Data** . . . . . . . | . . . . . . . . . . . . . . . . . . . . . . . . | **77** |
 | --- | --- | --- |
@@ -239,7 +246,8 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00017))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00019))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00020))_
 
 | Composing and Decomposing Data . . . . . . . | . . . . . . . . . . . . . . . . . . . . . . . . | 77 |
 | --- | --- | --- |
@@ -311,7 +319,6 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00019))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00020))_
 
 ## A Pull of the Lever: Prefaces
 
@@ -330,8 +337,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00020))_
 - JavaScript idioms like function combinators and decorators leverage JavaScript’s power to make code easier to read, modify, debug and refactor. _(javascriptallonge.pdf (source-range-83ecb080-00034))_
 - It also provides recipes for using functions to write software that is simpler, cleaner, and less complicated than alternative approaches that are object-centric or code-centric. _(javascriptallonge.pdf (source-range-83ecb080-00034))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00032))_
+
 > If those terms seem unfamiliar, don’t worry: JavaScript Allongé takes great delight in explaining what they mean and why they matter.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00032))_
 
 ### **why the “six” edition?**
 
@@ -358,26 +366,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00032))_
 - Not having to work around these kinds of missing features makes JavaScript Allongé a _better book_ , because it can focus on the _why_ to do something and _when_ to do it, instead of on the how to make it work _(javascriptallonge.pdf (source-range-83ecb080-00062))_
 - JavaScript Allongé, The “Six” Edition packs all the goodness of JavaScript Allongé into a new, updated package that is relevant for programmers working with (or planning to work with) the latest version of JavaScript. _(javascriptallonge.pdf (source-range-83ecb080-00063))_
 
-> Context: For example, block-structured languages allow us to write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00039))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00039))_
+
+> For example, block-structured languages allow us to write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00040))_
 
 > **for** ( **int** i = 0; i < array.length; ++i) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-00040))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00047))_
 
 > **for** (i = 0; i < array.length; ++i) { ( **function** (i) { _// ..._ })(i) }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00047))_
 
-> Context: Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00051))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00051))_
+
+> Prior to ECMAScript 2015, JavaScript did not support collecting a variable number of arguments into a parameter, so programmers would take advantage of an awkward work-around and write things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00052))_
 
 > **function** foo () { **var** first = arguments[0], rest = [].slice.call(arguments, 1); _// ..._ }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00052))_
 
-> Context: But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00055))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00055))_
+
+> But now, JavaScript is gaining many important features, in part because the governing body behind JavaScript has observed that programmers are constantly working around the same set of limitations. With ECMASCript 2015, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00056))_
 
 > **for** ( **let** i = 0; i < array.length; ++i) { _// ..._ }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00056))_
 
 ### **that’s nice. is that the only reason?**
 
@@ -424,11 +439,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00056))_
 - JavaScript Allongé does not attempt to address the question of JavaScript best practices in the wider context of software development, because JavaScript Allongé isn’t a book about practicing, it’s a book about thinking. _(javascriptallonge.pdf (source-range-83ecb080-00092))_
 - JavaScript Allongé does not attempt to address the question of JavaScript best practices in the wider context of software development, because JavaScript Allongé isn’t a book about practicing, it’s a book about thinking. _(javascriptallonge.pdf (source-range-83ecb080-00092))_
 
-> Context: Choices in software development must also consider the question of consistency. If a particular codebase is written with lots of helper functions that place the subject first, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00086))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00086))_
+
+> Choices in software development must also consider the question of consistency. If a particular codebase is written with lots of helper functions that place the subject first, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00087))_
 
 > **const** mapWith = (iterable, fn) => ({ [Symbol.iterator]: **function** * () { **for** ( **let** element **of** iterable) { **yield** fn(element); } } });
-_(source: javascriptallonge.pdf (source-range-83ecb080-00087))_
 
 ### **how this book is organized**
 
@@ -511,11 +528,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00087))_
 
 ### 42
 
-> Context: Let’s try this with something the computer understands easily:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00162))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00162))_
+
+> Let’s try this with something the computer understands easily:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00165))_
 
 > The answer is, this is both an expression _and_ a value.[10] The way you can tell that it’s both is very easy: When you type it into JavaScript, you get the same thing back, just like our café Cubano:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00165))_
 
 ### 42
 
@@ -531,14 +550,17 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00165))_
 - JavaScript is not such a language, expressions in and of themselves are not values. _(javascriptallonge.pdf (source-range-83ecb080-00175))_
 - The grandfather of such languages is Lisp. _(javascriptallonge.pdf (source-range-83ecb080-00175))_
 
-> Context: All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00168))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00168))_
+
+> All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00170))_
 
 > And if we hand over the espresso, we get the espresso right back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00170))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00178))_
 
 > Now we see that “strings” are values, and you can make an expression out of strings and an operator +. Since strings are values, they are also expressions by themselves. But strings with operators are not values, they are expressions. Now we know what was missing with our “coffee grounds plus hot water” example. The coffee grounds were a value, the boiling hot water was a value, and the “plus” operator between them made the whole thing an expression that was not a value.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00178))_
 
 ## values and identity
 
@@ -554,11 +576,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00178))_
 - One holds a single, one a double. _(javascriptallonge.pdf (source-range-83ecb080-00188))_
 - This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2. _(javascriptallonge.pdf (source-range-83ecb080-00188))_
 
-> Context: Second, sometimes, the cups are of the same type–perhaps two espresso cups–but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00188))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00188))_
+
+> Second, sometimes, the cups are of the same type–perhaps two espresso cups–but they have different contents. One holds a single, one a double. This corresponds to comparing two JavaScript values that have the same type but different “content.” For example, the number 5 is not the same thing as the number 2.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00189))_
 
 > **true** === **false** _//=> false_ 2 !== 5 _//=> true_ 'two' === 'five' _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00189))_
 
 ### **value types**
 
@@ -570,23 +594,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00189))_
 - We haven’t encountered the fourth possibility yet. _(javascriptallonge.pdf (source-range-83ecb080-00198))_
 - **Cafe Macchiato is also a fine drink, especially when following up on the fortunes of the Azzurri or the standings in the Giro d’Italia** _(javascriptallonge.pdf (source-range-83ecb080-00200))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00195))_
 
 > - 2 + 2 === 4 _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00195))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00196))_
 
 > - (2 + 2 === 4) === (2 !== 5) _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00196))_
 
-> Context: Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00197))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00197))_
+
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00198))_
 
 > So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00198))_
 
 ### **reference types**
 
@@ -598,17 +628,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00198))_
 - Every time you evaluate an expression (including typing something in) to create an array, you’re creating a new, distinct value even if it _appears_ to be the same as some other array value. _(javascriptallonge.pdf (source-range-83ecb080-00210))_
 - As we’ll see, this is true of many other kinds of values, including _functions_ , the main subject of this book. _(javascriptallonge.pdf (source-range-83ecb080-00210))_
 
-> Context: An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00205))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00205))_
+
+> An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00206))_
 
 > [2-1, 2, 2+1] [1, 1+1, 1+1+1]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00206))_
 
-> Context: Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00207))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00207))_
+
+> Notice that you are always generating arrays with the same contents. But are they identical the same way that every value of 42 is identical to every other value of 42? Try these for yourself:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00208))_
 
 > [2-1, 2, 2+1] === [1,2,3] [1,2,3] === [1, 2, 3] [1, 2, 3] === [1, 2, 3]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00208))_
 
 ## A Rich Aroma: Basic Numbers
 
@@ -627,8 +661,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00208))_
 - For example, the largest integer JavaScript can safely[14] handle is 9007199254740991, or 2[‘53‘] - 1. _(javascriptallonge.pdf (source-range-83ecb080-00222))_
 - For example, the largest integer JavaScript can safely[14] handle is 9007199254740991, or 2[‘53‘] - 1. _(javascriptallonge.pdf (source-range-83ecb080-00222))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00221))_
+
 > The machine’s representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer’s behaviour surprises us if we don’t know a little about what it’s doing “under the hood.”
-_(source: javascriptallonge.pdf (source-range-83ecb080-00221))_
 
 ### **floating**
 
@@ -648,32 +683,41 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00221))_
 - But as a rule, if you need to work with real numbers, you should have more than a nodding acquaintance with the IEEE Standard for Floating-Point Arithmetic[15] . _(javascriptallonge.pdf (source-range-83ecb080-00237))_
 - For example, “$43.21” will nearly always be presented as two numbers: 43 for dollars and 21 for cents, not 43.21. _(javascriptallonge.pdf (source-range-83ecb080-00237))_
 
-> Context: One of the most oft-repeated examples is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00226))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00226))_
+
+> One of the most oft-repeated examples is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00228))_
 
 > - 1.0 + 1.0 _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00228))_
 
-> Context: One of the most oft-repeated examples is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00226))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00226))_
+
+> One of the most oft-repeated examples is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00229))_
 
 > - 1.0 + 1.0 + 1.0 _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00229))_
 
-> Context: > 14Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js, it will happily report that the answer is 18014398509481982. But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00232))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00232))_
+
+> > 14Implementations of JavaScript are free to handle larger numbers. For example, if you type 9007199254740991 + 9007199254740991 into node.js, it will happily report that the answer is 18014398509481982. But code that depends upon numbers larger than 9007199254740991 may not be reliable when moved to other implementations.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00235))_
 
 > 0.1 _//=> 0.1_ 0.1 + 0.1 _//=> 0.2_ 0.1 + 0.1 + 0.1 _//=> 0.30000000000000004_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00235))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00236))_
 
 > This kind of “inexactitude” can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript’s calculation is less than a pixel, there is no observable error.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00236))_
 
-> Context: This kind of “inexactitude” can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript’s calculation is less than a pixel, there is no observable error.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00236))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00236))_
+
+> This kind of “inexactitude” can be ignored when performing calculations that have an acceptable deviation. For example, when centering some text on a page, as long as the difference between what you might calculate longhand and JavaScript’s calculation is less than a pixel, there is no observable error.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00237))_
 
 > Professional programmers almost never use floating point numbers to represent monetary amounts.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00237))_
 
 ### **operations on numbers**
 
@@ -682,11 +726,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00237))_
 - In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. _(javascriptallonge.pdf (source-range-83ecb080-00240))_
 - JavaScript has many more operators. _(javascriptallonge.pdf (source-range-83ecb080-00242))_
 
-> Context: In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
-_(context: javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+
+> In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00241))_
 
 > 2 * 5 + 1 _//=> 11_ 1 + 5 * 2 _//=> 11_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00241))_
 
 ## The first sip: Basic Functions
 
@@ -709,17 +755,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00241))_
 - But we must understand that whether we see [Function] or () => 0, internally JavaScript has a full and proper function. _(javascriptallonge.pdf (source-range-83ecb080-00266))_
 - I’d prefer something else, but I must accept that what gets typed back to us on the screen is arbitrary, and all that really counts is that it is somewhat useful for a human to read. _(javascriptallonge.pdf (source-range-83ecb080-00266))_
 
-> Context: This is a function that is applied to no values and returns 0. Let’s verify that our function is a value like all others:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00260))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00260))_
+
+> This is a function that is applied to no values and returns 0. Let’s verify that our function is a value like all others:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00262))_
 
 > If you try the same thing in a browser, you may see something else.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00262))_
 
-> Context: What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a 
-_(context: javascriptallonge.pdf (source-range-83ecb080-00262))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00262))_
+
+> What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a 
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00263))_
 
 > > 16 The simplest possible function is () => {}, we’ll see that later.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00263))_
 
 ### **functions and identities**
 
@@ -752,49 +802,62 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00263))_
 - For example, (() => 0)() is an expression. _(javascriptallonge.pdf (source-range-83ecb080-00288))_
 - Functions can return the value of evaluating another function. _(javascriptallonge.pdf (source-range-83ecb080-00291))_
 
-> Context: Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00285))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00285))_
+
+> Well, the last one’s a doozy, but still, the general idea is this: We can make a function that returns a value by putting the value to the right of the arrow.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00287))_
 
 > (() => 1 + 1)() _//=> 2_ (() => "Hello, " + "JavaScript")() _//=> "Hello, JavaScript"_ (() => **Infinity** * **Infinity** )() _//=> Infinity_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00287))_
 
-> Context: Yes we can! Functions can return the value of evaluating another function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00291))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00291))_
+
+> Yes we can! Functions can return the value of evaluating another function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00292))_
 
 > When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00292))_
 
 ### **commas**
 
 - The comma operator in JavaScript is interesting. _(javascriptallonge.pdf (source-range-83ecb080-00298))_
 - In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. _(javascriptallonge.pdf (source-range-83ecb080-00303))_
 
-> Context: The comma operator in JavaScript is interesting. It takes two arguments, evaluates them both, and itself evaluates to the value of the right-hand argument. In other words:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00298))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00298))_
+
+> The comma operator in JavaScript is interesting. It takes two arguments, evaluates them both, and itself evaluates to the value of the right-hand argument. In other words:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00300))_
 
 > (1 + 1, 2 + 2) _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00300))_
 
-> Context: We can use commas with functions to create functions that evaluate multiple expressions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00301))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00301))_
+
+> We can use commas with functions to create functions that evaluate multiple expressions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00302))_
 
 > (() => (1 + 1, 2 + 2))() _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00302))_
 
-> Context: We can use commas with functions to create functions that evaluate multiple expressions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00301))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00301))_
+
+> We can use commas with functions to create functions that evaluate multiple expressions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00303))_
 
 > This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00303))_
 
-> Context: This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00303))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00303))_
+
+> This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later. In most cases, JavaScript does not care whether things are separated by spaces, tabs, or line breaks. So we can also write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00304))_
 
 > () => (1 + 1, 2 + 2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00304))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00306))_
 
 > () => ( 1 + 1, 2 + 2
-_(source: javascriptallonge.pdf (source-range-83ecb080-00306))_
 
 ### **the simplest possible block**
 
@@ -822,11 +885,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00306))_
 - In JavaScript, every undefined is identical to every other undefined. _(javascriptallonge.pdf (source-range-83ecb080-00329))_
 - In SQL, two things that are NULL are not equal to nor share the same identity, because two unknowns can’t be equal. _(javascriptallonge.pdf (source-range-83ecb080-00329))_
 
-> Context: No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
-_(context: javascriptallonge.pdf (source-range-83ecb080-00325))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00325))_
+
+> No matter how you evaluate undefined, you get an identical value back. undefined is a value that means “I don’t have a value.” But it’s still a value :-)
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00323))_
 
 > **undefined** === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-00323))_
 
 ### **void**
 
@@ -836,11 +901,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00323))_
 - The first form works but it’s cumbersome. _(javascriptallonge.pdf (source-range-83ecb080-00337))_
 - The second form works most of the time, but it is possible to break it by reassigning undefined to a different value, something we’ll discuss in Reassignment and Mutation. _(javascriptallonge.pdf (source-range-83ecb080-00337))_
 
-> Context: There’s a third way, with JavaScript’s void operator. Behold: void is an operator that takes any value and evaluates to undefined, always. So, when we deliberately want an undefined value, should we use the first, second, or third form?[19] The answer is, use void. By convention, use void 0.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00334, source-range-83ecb080-00336))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00334, source-range-83ecb080-00336))_
+
+> There’s a third way, with JavaScript’s void operator. Behold: void is an operator that takes any value and evaluates to undefined, always. So, when we deliberately want an undefined value, should we use the first, second, or third form?[19] The answer is, use void. By convention, use void 0.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00335))_
 
 > **void** 0 _//=> undefined_ **void** 1 _//=> undefined_ **void** (2 + 2) _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00335))_
 
 ### **back on the block**
 
@@ -864,56 +931,73 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00335))_
 - Readers who follow internet flame-fests may be aware of something called automatic semicolon insertion. _(javascriptallonge.pdf (source-range-83ecb080-00358))_
 - Statements belong inside blocks and only inside blocks. _(javascriptallonge.pdf (source-range-83ecb080-00373))_
 
-> Context: There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+
+> There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00350))_
 
 > () => { 2 + 2 } () => { 1 + 1; 2 + 2 }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00350))_
 
-> Context: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00351))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00351))_
+
+> As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00352))_
 
 > () => { 1 + 1; 2 + 2 }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00352))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00354))_
 
 > (() => { 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00354))_
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
 
-> (() => { 1 + 1; 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00355))_
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
 
-> Context: But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00353))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00355))_
 
 > (() => { 1 + 1; 2 + 2 })() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00356))_
 
-> Context: The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00364))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+
+> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00356))_
+
+> (() => { 1 + 1; 2 + 2 })() _//=> undefined_
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+
+> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00362))_
 
 > So how do we get a function that evaluates a block to return a value when applied?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00362))_
 
-> Context: The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00364))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+
+> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00365))_
 
 > (() => { 1 + 1; **return** 2 + 2 })() _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00365))_
 
-> Context: And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+
+> And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00367))_
 
 > (() => { **return** 1 + 1; 2 + 2 })() _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00367))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00368))_
 
 > The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00368))_
 
 ### **functions that evaluate to functions**
 
@@ -923,8 +1007,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00368))_
 - We’ve been very clever, but so far this all seems very abstract. _(javascriptallonge.pdf (source-range-83ecb080-00386))_
 - Diffraction of a crystal is beautiful and interesting in its own right, but you can’t blame us for wanting to be shown a practical use for it, like being able to determine the composition of a star millions of light years away. _(javascriptallonge.pdf (source-range-83ecb080-00386))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00375))_
+
 > If an expression that evaluates to a function is, well, an expression, and if a return statement can have any expression on its right side… _Can we put an expression that evaluates to a function on the right side of a function expression?_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00375))_
 
 ## Ah. I'd Like to Have an Argument, Please.
 
@@ -941,20 +1026,25 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00375))_
 - To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this: _(javascriptallonge.pdf (source-range-83ecb080-00400))_
 - You won’t be surprised to see how to write and apply a function to two arguments: _(javascriptallonge.pdf (source-range-83ecb080-00403))_
 
-> Context: I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
-_(context: javascriptallonge.pdf (source-range-83ecb080-00397))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00397))_
+
+> I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00398))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00398))_
 
-> Context: Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00400))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00400))_
+
+> Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00401))_
 
 > ((diameter) => diameter * 3.14159265)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00401))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00407))_
 
 > ((room, board) => room + board)(800, 150)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00407))_
 
 ### **a quick summary of functions and bodies**
 
@@ -970,17 +1060,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00407))_
 - But before we do, let’s look at variables. _(javascriptallonge.pdf (source-range-83ecb080-00427))_
 - But before we do, let’s look at variables. _(javascriptallonge.pdf (source-range-83ecb080-00427))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00425))_
 
 > - ((diameter) => diameter * 3.14159265)(1 + 1) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00425))_
 
-> Context: So when you write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00424))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00424))_
+
+> So when you write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00426))_
 
 > What happened internally is that the expression 1 + 1 was evaluated first, resulting in 2. Then our circumference function was applied to 2.[24]
-_(source: javascriptallonge.pdf (source-range-83ecb080-00426))_
 
 ### **variables and bindings**
 
@@ -1005,23 +1099,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00426))_
 - The value of a variable when evaluated in an environment is the value bound to the variable’s name in that environment, which is ‘2’ _(javascriptallonge.pdf (source-range-83ecb080-00449))_
 - meaning, that the environment is a dictionary, and that the value 2 is bound to the name x, and that there might be other stuff in that dictionary we aren’t discussing right now. _(javascriptallonge.pdf (source-range-83ecb080-00451))_
 
-> Context: Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00429))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00429))_
+
+> Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00430))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00430))_
 
-> Context: How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00438))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00438))_
+
+> How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00439))_
 
 > ((x) => x)(2) _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00439))_
 
-> Context: What happens is this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00440))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00440))_
+
+> What happens is this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00443))_
 
 > 3. One sub-expression, (x) => x evaluates to a function.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00443))_
 
 ### **call by sharing**
 
@@ -1040,17 +1140,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00443))_
 - > 26 Unless the argument is NaN, which isn’t equal to anything, _including itself_ . _(javascriptallonge.pdf (source-range-83ecb080-00465))_
 - > 26 Unless the argument is NaN, which isn’t equal to anything, _including itself_ . _(javascriptallonge.pdf (source-range-83ecb080-00465))_
 
-> Context: Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00461))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00461))_
+
+> Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00459))_
 
 > So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00459))_
 
-> Context: And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00462))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00462))_
+
+> And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 > - ((ref1, ref2) => ref1 === ref2)(value, value)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 ## Closures and Scope
 
@@ -1058,11 +1162,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 - First off, let’s use what we learned above. _(javascriptallonge.pdf (source-range-83ecb080-00472))_
 
-> Context: It’s time to see how a function within a function works: First off, let’s use what we learned above. Given ( _some function_ )( _some argument_ ), we know that we apply the function to the argument, create an environment, bind the value of the argument to the name, and evaluate the function’s expression. So we do that first with this code:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00470, source-range-83ecb080-00472))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00470, source-range-83ecb080-00472))_
+
+> It’s time to see how a function within a function works: First off, let’s use what we learned above. Given ( _some function_ )( _some argument_ ), we know that we apply the function to the argument, create an environment, bind the value of the argument to the name, and evaluate the function’s expression. So we do that first with this code:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00471))_
 
 > - ((x) => (y) => x)(1)(2) _//=> 1_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00471))_
 
 ### ((x) => (y) => x)(1)
 
@@ -1076,17 +1182,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00471))_
 - Now let’s enjoy a relaxed Allongé before we continue! _(javascriptallonge.pdf (source-range-83ecb080-00482))_
 - Now let’s enjoy a relaxed Allongé before we continue! _(javascriptallonge.pdf (source-range-83ecb080-00482))_
 
-> Context: So now we have a value representing that function. Then we’re going to take the value of that function and apply it to the argument 2, something like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00477))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00477))_
+
+> So now we have a value representing that function. Then we’re going to take the value of that function and apply it to the argument 2, something like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00478))_
 
 > - ((y) => x)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00478))_
 
-> Context: This, by the way, is one of the great defining characteristics of JavaScript and languages in the same family: Whether they allow things like functions to nest inside each other, and if so, how they handle variables from “outside” of a function that are referenced inside a function. For example, here’s the equivalent code in Ruby:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00480))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00480))_
+
+> This, by the way, is one of the great defining characteristics of JavaScript and languages in the same family: Whether they allow things like functions to nest inside each other, and if so, how they handle variables from “outside” of a function that are referenced inside a function. For example, here’s the equivalent code in Ruby:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00481))_
 
 > lambda { |x| lambda { |y| x } }[1][2] _#=> 1_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00481))_
 
 ### **if functions without free variables are pure, are closures impure?**
 
@@ -1119,17 +1229,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00481))_
 - Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. _(javascriptallonge.pdf (source-range-83ecb080-00498))_
 - 27You may also hear the term “non-local variable.” Both are correct. _(javascriptallonge.pdf (source-range-83ecb080-00499))_
 
-> Context: Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The 
-_(context: javascriptallonge.pdf (source-range-83ecb080-00490, source-range-83ecb080-00494))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00490, source-range-83ecb080-00494))_
+
+> Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The 
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00493))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00493))_
 
-> Context: Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00498))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00498))_
+
+> Pure functions always mean the same thing because all of their “inputs” are fully defined by their arguments. Not so with a closure. If I present to you this pure function (x, y) => x + y, we know exactly what it does with (2, 2). But what about this closure: (y) => x + y? We can’t say what it will do with argument (2) without understanding the magic for evaluating the free variable x.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00497))_
 
 > If pure functions can contain closures, can a closure contain a pure function?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00497))_
 
 ### **it’s always the environment**
 
@@ -1146,23 +1260,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00497))_
 - Calling a curried function with only some of its arguments is sometimes called partial application _[b]_ . _(javascriptallonge.pdf (source-range-83ecb080-00516))_
 - Calling a curried function with only some of its arguments is sometimes called partial application _[b]_ . _(javascriptallonge.pdf (source-range-83ecb080-00516))_
 
-> Context: To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
-_(context: javascriptallonge.pdf (source-range-83ecb080-00503))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00503))_
+
+> To understand how closures are evaluated, we need to revisit environments. As we’ve said before, all functions are associated with an environment. We also hand-waved something when describing our environment. Remember that we said the environment for ((x) => (y) => x)(1) is {x: 1, ...} and that the environment for ((y) => x)(2) is {y: 2, ...}? Let’s fill in the blanks!
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00504))_
 
 > So whenever a function is applied to arguments, its environment always has a reference to its parent environment.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00504))_
 
-> Context: Functions can have grandparents too:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00509))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00509))_
+
+> Functions can have grandparents too:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00510))_
 
 > (x) => (y) => (z) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00510))_
 
-> Context: This function does much the same thing as:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00511))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00511))_
+
+> This function does much the same thing as:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00512))_
 
 > (x, y, z) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00512))_
 
 ### **shadowy variables from a shadowy planet**
 
@@ -1174,17 +1294,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00512))_
 - When evaluating x + y + z, JavaScript will find x and y in the great-grandparent scope and z in the parent scope. _(javascriptallonge.pdf (source-range-83ecb080-00524))_
 - This is often a good thing. _(javascriptallonge.pdf (source-range-83ecb080-00525))_
 
-> Context: An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00520, source-range-83ecb080-00522))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00520, source-range-83ecb080-00522))_
+
+> An interesting thing happens when a variable has the same name as an ancestor environment’s variable. Consider: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00521))_
 
 > - (x) => (x, y) => x + y
-_(source: javascriptallonge.pdf (source-range-83ecb080-00521))_
 
-> Context: The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00522))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00522))_
+
+> The function (x, y) => x + y is a pure function, because its x is defined within its own environment. Although its parent also defines an x, it is ignored when evaluating x + y. JavaScript always searches for a binding starting with the functions own environment and then each parent in turn until it finds one. The same is true of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00523))_
 
 > (x) => (x, y) => (w, z) => (w) => x + y + z
-_(source: javascriptallonge.pdf (source-range-83ecb080-00523))_
 
 ### **which came first, the chicken or the egg?**
 
@@ -1193,11 +1317,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00523))_
 - JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. _(javascriptallonge.pdf (source-range-83ecb080-00531))_
 - As we’ll see when we discuss mutable state, this helps to prevent programmers from accidentally changing the global state that is shared by all code in the program. _(javascriptallonge.pdf (source-range-83ecb080-00538))_
 
-> Context: JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': _global environment_ }.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00531))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00531))_
+
+> JavaScript always has the notion of at least one environment we do not control: A global environment in which many useful things are bound such as libraries full of standard functions. So when you invoke ((x) => x)(1) in the REPL, its full environment is going to look like this: {x: 1, '..': _global environment_ }.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00532))_
 
 > If you don’t want your code to operate directly within the global environment, what can you do?
-_(source: javascriptallonge.pdf (source-range-83ecb080-00532))_
 
 ## That Constant Coffee Craving
 
@@ -1213,38 +1339,49 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00532))_
 - All of our “functions” are expressions. _(javascriptallonge.pdf (source-range-83ecb080-00552))_
 - We can bind anything we want in an expression by wrapping it in a function that is immediately invoked with the value we want to bind.[29] _(javascriptallonge.pdf (source-range-83ecb080-00559))_
 
-> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00544))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
 
-> Context: There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00544))_
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
+
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00545))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00545))_
 
-> Context: What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00546))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00546))_
+
+> What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00547))_
 
 > (diameter) => diameter * PI
-_(source: javascriptallonge.pdf (source-range-83ecb080-00547))_
 
-> Context: In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00548))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00548))_
+
+> In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00549))_
 
 > ((PI) => _// ????_ )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00549))_
 
-> Context: What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00550))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00550))_
+
+> What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00551))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00551))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00557))_
 
 > ((diameter) => diameter * 3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00557))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00558))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00558))_
 
 ### **inside-out**
 
@@ -1268,17 +1405,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00558))_
 - What would be very nice is if the language gave us a way to bind names inside of blocks without incurring the cost of a function invocation. _(javascriptallonge.pdf (source-range-83ecb080-00580))_
 - What would be very nice is if the language gave us a way to bind names inside of blocks without incurring the cost of a function invocation. _(javascriptallonge.pdf (source-range-83ecb080-00580))_
 
-> Context: There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+
+> There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00562))_
 
 > (diameter) => ((PI) => diameter * PI)(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00562))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00576))_
 
 > - (diameter) => ((PI) => diameter * PI)(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00576))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00578))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00578))_
 
 ### **const**
 
@@ -1295,50 +1436,65 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00578))_
 - We can bind more than one name-value pair by separating them with commas. _(javascriptallonge.pdf (source-range-83ecb080-00606))_
 - > 30We’re into the second chapter and we’ve finally named a function. _(javascriptallonge.pdf (source-range-83ecb080-00608))_
 
-> Context: Another way to write our “circumference” function would be to pass PI along with the diameter argument, something like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00582))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00582))_
+
+> Another way to write our “circumference” function would be to pass PI along with the diameter argument, something like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00583))_
 
 > (diameter, PI) => diameter * PI
-_(source: javascriptallonge.pdf (source-range-83ecb080-00583))_
 
-> Context: And we could use it like this: This differs from our example above in that there is only one environment, rather than two. We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s _almost_ what we wanted all along: A way to bind 3.14159265 to a readable name.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00584, source-range-83ecb080-00588))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00584, source-range-83ecb080-00588))_
+
+> And we could use it like this: This differs from our example above in that there is only one environment, rather than two. We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s _almost_ what we wanted all along: A way to bind 3.14159265 to a readable name.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00587))_
 
 > ((diameter, PI) => diameter * PI)(2, 3.14159265) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00587))_
 
-> Context: JavaScript gives us a way to do that, the const keyword. We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00589))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00589))_
+
+> JavaScript gives us a way to do that, the const keyword. We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00590))_
 
 > (diameter) => { **const** PI = 3.14159265;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00590))_
 
-> Context: It works just as we want. Instead of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00594))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00594))_
+
+> It works just as we want. Instead of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00595))_
 
 > ((diameter) => ((PI) => diameter * PI)(3.14159265))(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00595))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00597))_
 
 > ((diameter, PI) => diameter * PI)(2, 3.14159265) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00597))_
 
-> Context: We write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00598))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00598))_
+
+> We write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00601))_
 
 > ((diameter) => { **const** PI = 3.14159265; **return** diameter * PI })(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00601))_
 
-> Context: We can bind any expression. Functions are expressions, so we can bind helper functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00602))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00602))_
+
+> We can bind any expression. Functions are expressions, so we can bind helper functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00604))_
 
 > This underscores what we’ve said: if we have an expression that evaluates to a function, we apply it with ().
-_(source: javascriptallonge.pdf (source-range-83ecb080-00604))_
 
-> Context: We can bind more than one name-value pair by separating them with commas. For readability, most people put one binding per line:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00606))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00606))_
+
+> We can bind more than one name-value pair by separating them with commas. For readability, most people put one binding per line:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00607))_
 
 > (d) => { **const** PI = 3.14159265, calc = (diameter) => diameter * PI; **return** "The circumference is " + calc(d) }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00607))_
 
 ### **nested blocks**
 
@@ -1349,8 +1505,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00607))_
 - We’ve used a block as the else clause, and since it’s a block, we’ve placed a const statement inside it. _(javascriptallonge.pdf (source-range-83ecb080-00621))_
 - We’ve used a block as the else clause, and since it’s a block, we’ve placed a const statement inside it. _(javascriptallonge.pdf (source-range-83ecb080-00621))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00612))_
+
 > One of the places you can find blocks is in an if statement.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00612))_
 
 ### **const and lexical scope**
 
@@ -1366,29 +1523,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00612))_
 - That much we can carefully work out from the way closures work. _(javascriptallonge.pdf (source-range-83ecb080-00636))_
 - Binding values to names with const works just like binding values to names with parameter invocations, it uses lexical scope. _(javascriptallonge.pdf (source-range-83ecb080-00642))_
 
-> Context: Here’s the second formulation of our diameter function, bound to a name using an IIFE:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00625))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00625))_
+
+> Here’s the second formulation of our diameter function, bound to a name using an IIFE:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00626))_
 
 > ((diameter_fn) => _// ..._ )( ((PI) => (diameter) => diameter * PI )(3.14159265) )
-_(source: javascriptallonge.pdf (source-range-83ecb080-00626))_
 
-> Context: It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
-_(context: javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
+
+> It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00630))_
 
 > ((diameter_fn) => diameter_fn(2) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00630))_
 
-> Context: We can test this by deliberately creating a “conflict:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00633))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00633))_
+
+> We can test this by deliberately creating a “conflict:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00634))_
 
 > ((diameter_fn) => ((PI) => diameter_fn(2) )(3) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00634))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00640))_
 
 > ((diameter_fn) => { **const** PI = 3;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00640))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00641))_
 
 > **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => diameter * PI })() ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00641))_
 
 ### **are consts also from a shadowy planet?**
 
@@ -1415,62 +1580,81 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00641))_
 - Being able to bind a name inside of a block means that if the name is only needed in the block, we are not “leaking” its binding to other parts of the code that do not need to interact with it. _(javascriptallonge.pdf (source-range-83ecb080-00679))_
 - This design rule is called the Principle of Least Privilege[32] , and it has both quality and security implications. _(javascriptallonge.pdf (source-range-83ecb080-00679))_
 
-> Context: Let’s start, as above, by doing this with parameters. We’ll start with:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00647))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00647))_
+
+> Let’s start, as above, by doing this with parameters. We’ll start with:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00648))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00648))_
 
-> Context: And gratuitously wrap it in another IIFE so that we can bind PI to something else:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00649))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00649))_
+
+> And gratuitously wrap it in another IIFE so that we can bind PI to something else:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00652))_
 
 > ((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00652))_
 
-> Context: This still evaluates to a function that calculates diameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00653))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00653))_
+
+> This still evaluates to a function that calculates diameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00654))_
 
 > ((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00654))_
 
-> Context: And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
-_(context: javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
+
+> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00656))_
 
 > ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00656))_
 
-> Context: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the answer is **no** , the inner binding does not overwrite the outer binding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00657))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00657))_
+
+> Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the answer is **no** , the inner binding does not overwrite the outer binding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00658))_
 
 > ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00658))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00663))_
 
 > ((diameter) => { **const** PI = 3.14159265; (() => { **const** PI = 3; })(); **return** diameter * PI; })(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00663))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00674))_
 
 > ((diameter) => { **const** PI = 3.14159265;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00674))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00675))_
 
 > **if** ( **true** ) { **const** PI = 3; } **return** diameter * PI; })(2) _//=> would return 6 if const had function scope_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00675))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00676))_
 
 > If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00676))_
 
-> Context: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00676))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00676))_
+
+> If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00678))_
 
 > **if** ( **true** ) { **const** PI = 3.14159265; } **return** diameter * PI; })(2) _//=> would return 6.2831853 if const had function scope_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00678))_
 
 ### **rebinding**
 
@@ -1484,11 +1668,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00678))_
 
 - This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous. _(javascriptallonge.pdf (source-range-83ecb080-00696))_
 
-> Context: Let’s get right to it. This code does _not_ name a function: It doesn’t name the function “repeat” for the same reason that const answer = 42 doesn’t name the number 42. This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00694, source-range-83ecb080-00696))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00694, source-range-83ecb080-00696))_
+
+> Let’s get right to it. This code does _not_ name a function: It doesn’t name the function “repeat” for the same reason that const answer = 42 doesn’t name the number 42. This syntax binds an anonymous function to a name in an environment, but the function itself remains anonymous.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00695))_
 
 > **const** repeat = (str) => str + str
-_(source: javascriptallonge.pdf (source-range-83ecb080-00695))_
 
 ### **the function keyword**
 
@@ -1512,56 +1698,73 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00695))_
 - even is bound within the function itself, but not outside it. _(javascriptallonge.pdf (source-range-83ecb080-00740))_
 - even is bound within the function itself, but not outside it. _(javascriptallonge.pdf (source-range-83ecb080-00740))_
 
-> Context: Here’s our repeat function written using a “fat arrow”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00699))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00699))_
+
+> Here’s our repeat function written using a “fat arrow”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00700))_
 
 > (str) => str + str
-_(source: javascriptallonge.pdf (source-range-83ecb080-00700))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00708))_
 
 > We always use a block, we cannot write function (str) str + str.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00708))_
 
-> Context: 5. We always use a block, we cannot write function (str) str + str. This means that if we want our functions to return a value, we always need to use the return keyword
-_(context: javascriptallonge.pdf (source-range-83ecb080-00708))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00708))_
+
+> 5. We always use a block, we cannot write function (str) str + str. This means that if we want our functions to return a value, we always need to use the return keyword
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00709))_
 
 > If we leave out the “something optional” that comes after the function keyword, we can translate all of the fat arrow functions that we’ve seen into function keyword functions, e.g.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00709))_
 
-> Context: If we leave out the “something optional” that comes after the function keyword, we can translate all of the fat arrow functions that we’ve seen into function keyword functions, e.g.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00709))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00709))_
+
+> If we leave out the “something optional” that comes after the function keyword, we can translate all of the fat arrow functions that we’ve seen into function keyword functions, e.g.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00710))_
 
 > (n) => (1.618**n - -1.618**-n) / 2.236
-_(source: javascriptallonge.pdf (source-range-83ecb080-00710))_
 
-> Context: Here are our example functions written with names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00716))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00716))_
+
+> Here are our example functions written with names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00718))_
 
 > Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00718))_
 
-> Context: Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00718))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00718))_
+
+> Placing a name between the function keyword and the argument list names the function. Confusingly, the name of the function is not exactly the same thing as the name we may choose to bind to the value of the function. For example, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00719))_
 
 > **const double** = **function** repeat (str) { **return** str + str; }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00719))_
 
-> Context: Now, the function’s actual name has no effect on the environment in which it is used. To whit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00729))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00729))_
+
+> Now, the function’s actual name has no effect on the environment in which it is used. To whit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00730))_
 
 > **const** bindingName = **function** actualName () { _//..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-00730))_
 
-> Context: Now, the function’s actual name has no effect on the environment in which it is used. To whit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00729))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00729))_
+
+> Now, the function’s actual name has no effect on the environment in which it is used. To whit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00731))_
 
 > }; bindingName _//=> [Function: actualName]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00731))_
 
-> Context: Now, the function’s actual name has no effect on the environment in which it is used. To whit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00729))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00729))_
+
+> Now, the function’s actual name has no effect on the environment in which it is used. To whit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00732))_
 
 > actualName _//=> ReferenceError: actualName is not defined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00732))_
 
 ### **function declarations**
 
@@ -1575,29 +1778,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00732))_
 - The definition of the fizzbuzz is “hoisted” to the top of its enclosing scope (an IIFE in this case). _(javascriptallonge.pdf (source-range-83ecb080-00762))_
 - It is not necessary to declare functions in this way in JavaScript, but understanding the syntax and its behaviour (especially the way it differs from const) is essential for working with production code. _(javascriptallonge.pdf (source-range-83ecb080-00762))_
 
-> Context: This behaves a _little_ like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00746))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00746))_
+
+> This behaves a _little_ like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00747))_
 
 > **const** someName = **function** someName () {
-_(source: javascriptallonge.pdf (source-range-83ecb080-00747))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00751))_
 
 > Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00751))_
 
-> Context: Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00751))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00751))_
+
+> Consider this example where we try to use the variable fizzbuzz as a function before we bind a function to it with const:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00754))_
 
 > **const** fizzbuzz = **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } })() _//=> undefined is not a function (evaluating 'fizzbuzz()')_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00754))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00759))_
 
 > **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } })() _//=> 'FizzBuzz'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00759))_
 
-> Context: Although fizzbuzz is declared later in the function, JavaScript behaves as if we’d written:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00760))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00760))_
+
+> Although fizzbuzz is declared later in the function, JavaScript behaves as if we’d written:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00761))_
 
 > ( **function** () { **const** fizzbuzz = **function** fizzbuzz () { **return** "Fizz" + "Buzz"; } **return** fizzbuzz(); })()
-_(source: javascriptallonge.pdf (source-range-83ecb080-00761))_
 
 ### **function declaration caveats**[34]
 
@@ -1612,8 +1823,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00761))_
 - Another caveat is that a function declaration cannot exist inside of _any_ expression, otherwise it’s a function expression. _(javascriptallonge.pdf (source-range-83ecb080-00771))_
 - The parentheses make this an expression, not a function declaration. _(javascriptallonge.pdf (source-range-83ecb080-00775))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00770))_
+
 > Or it may work one way today and a different way when the JavaScript engine is updated, say with a new optimization.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00770))_
 
 ## Combinators and Function Decorators
 
@@ -1639,26 +1851,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00770))_
 - While some programmers believe “There Should Only Be One Way To Do It,” having combinators available as well as explicitly writing things out with lots of symbols and keywords has some advantages when used judiciously. _(javascriptallonge.pdf (source-range-83ecb080-00803))_
 - While some programmers believe “There Should Only Be One Way To Do It,” having combinators available as well as explicitly writing things out with lots of symbols and keywords has some advantages when used judiciously. _(javascriptallonge.pdf (source-range-83ecb080-00803))_
 
-> Context: Let’s start with a useful combinator: Most programmers call it _Compose_ , although the logicians call it the B combinator or “Bluebird.” Here is the typical[37] programming implementation:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00794))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00794))_
+
+> Let’s start with a useful combinator: Most programmers call it _Compose_ , although the logicians call it the B combinator or “Bluebird.” Here is the typical[37] programming implementation:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00795))_
 
 > - **const** compose = (a, b) => (c) => a(b(c))
-_(source: javascriptallonge.pdf (source-range-83ecb080-00795))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00797))_
 
 > **const** addOne = (number) => number + 1;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00797))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00798))_
 
 > **const** doubleOf = (number) => number * 2;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00798))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00800))_
 
 > **const** doubleOfAddOne = (number) => doubleOf(addOne(number));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00800))_
 
-> Context: You could also write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00801))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00801))_
+
+> You could also write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00802))_
 
 > **const** doubleOfAddOne = compose(doubleOf, addOne);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00802))_
 
 ### **a balanced statement about combinators**
 
@@ -1675,26 +1894,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00802))_
 - not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. _(javascriptallonge.pdf (source-range-83ecb080-00819))_
 - not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. _(javascriptallonge.pdf (source-range-83ecb080-00819))_
 
-> **const** not = (fn) => (x) => !fn(x)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00812))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00812))_
 
-> Context: So instead of writing !someFunction(42), we can write not(someFunction)(42). Hardly progress. But like compose, we could write either:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00813))_
+> **const** not = (fn) => (x) => !fn(x)
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00813))_
+
+> So instead of writing !someFunction(42), we can write not(someFunction)(42). Hardly progress. But like compose, we could write either:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00814))_
 
 > **const** something = (x) => x != **null** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00814))_
 
-> Context: And elsewhere, write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00815))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00815))_
+
+> And elsewhere, write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00816))_
 
 > **const** nothing = (x) => !something(x);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00816))_
 
-> Context: Or we could write: not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. You’ll see other function decorators in the recipes, like once and maybe. Function decorators aren’t strict about being pure functions, so there’s more latitude for making decorators than combinators.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00817, source-range-83ecb080-00819))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00817, source-range-83ecb080-00819))_
+
+> Or we could write: not is a function decorator because it modifies a function while remaining strongly related to the original function’s semantics. You’ll see other function decorators in the recipes, like once and maybe. Function decorators aren’t strict about being pure functions, so there’s more latitude for making decorators than combinators.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00818))_
 
 > **const** nothing = not(something);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00818))_
 
 ## Building Blocks
 
@@ -1720,44 +1946,57 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00818))_
 - In the recipes, we’ll look at a decorator called once: It ensures that a function can only be executed once. _(javascriptallonge.pdf (source-range-83ecb080-00832))_
 - But once and maybe compose, so you can chain them together as you see fit: _(javascriptallonge.pdf (source-range-83ecb080-00833))_
 
-> **const** cookAndEat = (food) => eat(cook(food));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00827))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00827))_
 
-> Context: It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00828))_
+> **const** cookAndEat = (food) => eat(cook(food));
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00828))_
+
+> It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00829))_
 
 > **const** compose = (a, b) => (c) => a(b(c));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00829))_
 
-> Context: It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00828))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00828))_
+
+> It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00830))_
 
 > **const** cookAndEat = compose(eat, cook);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00830))_
 
-> Context: It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00828))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00828))_
+
+> It’s really that simple: Whenever you are chaining two or more functions together, you’re composing them. You can compose them with explicit JavaScript code as we’ve just done. You can also generalize composition with the B Combinator or “compose” that we saw in Combinators and Decorators:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00831))_
 
 > The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00831))_
 
-> Context: If that was all there was to it, composition wouldn’t matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00831))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00831))_
+
+> If that was all there was to it, composition wouldn’t matter much. But like many patterns, using it when it applies is only 20% of the benefit. The other 80% comes from organizing your code such that you can use it: Writing functions that can be composed in various ways.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00833))_
 
 > Of course, you needn’t use combinators to implement either of these ideas, you can use if statements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00833))_
 
-> Context: Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00833))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00833))_
+
+> Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00834))_
 
 > - **const** actuallyTransfer= (from, to, amount) => _// do something_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00834))_
 
-> Context: Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00833))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00833))_
+
+> Of course, you needn’t use combinators to implement either of these ideas, you can use if statements. But once and maybe compose, so you can chain them together as you see fit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00835))_
 
 > **const** invokeTransfer = once(maybe(actuallyTransfer(...)));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00835))_
 
 ### **partial application**
 
@@ -1773,41 +2012,53 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00835))_
 - Partial application also has a combinator, which we’ll see in the partial recipe. _(javascriptallonge.pdf (source-range-83ecb080-00858))_
 - We generalized composition with the compose combinator. _(javascriptallonge.pdf (source-range-83ecb080-00858))_
 
-> Context: Code is easier than words for this. The Underscore[39] library provides a higher-order function called _map_ .[40] It applies another function to each element of an array, like this: This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00840, source-range-83ecb080-00843))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00840, source-range-83ecb080-00843))_
+
+> Code is easier than words for this. The Underscore[39] library provides a higher-order function called _map_ .[40] It applies another function to each element of an array, like this: This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00841))_
 
 > _.map([1, 2, 3], (n) => n * n) _//=> [1, 4, 9]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00841))_
 
-> Context: This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00843))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00843))_
+
+> This code implements a partial application of the map function by applying the function (n) => n * n as its second argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00844))_
 
 > **const** squareAll = (array) => map(array, (n) => n * n);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00844))_
 
-> Context: The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00845))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00846))_
 
 > **const** mapWith = (fn) => (array) => map(array, fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00846))_
 
-> Context: The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00845))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00847))_
 
 > **const** squareAll = mapWith((n) => n * n);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00847))_
 
-> Context: The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00845))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00845))_
+
+> The resulting function–squareAll–is still the map function, it’s just that we’ve applied one of its two arguments already. squareAll is nice, but why write one function every time we want to partially apply a function to a map? We can abstract this one level higher. mapWith takes any function as an argument and returns a partially applied map function.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00848))_
 
 > squareAll([1, 2, 3]) _//=> [1, 4, 9]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00848))_
 
-> Context: > 41If we don’t want to sort out Underscore, we can also write the following: const map = (a, fn) => a.map(fn);, and trust that it works even though we haven’t discussed methods yet. const map = _.map;
-_(context: javascriptallonge.pdf (source-range-83ecb080-00852))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00852))_
+
+> > 41If we don’t want to sort out Underscore, we can also write the following: const map = (a, fn) => a.map(fn);, and trust that it works even though we haven’t discussed methods yet. const map = _.map;
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00855))_
 
 > **const** safeSquareAll = mapWith(maybe((n) => n * n));
-_(source: javascriptallonge.pdf (source-range-83ecb080-00855))_
 
 ## Magic Names
 
@@ -1828,26 +2079,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00855))_
 - The most common use of the arguments binding is to build functions that can take a variable number of arguments. _(javascriptallonge.pdf (source-range-83ecb080-00878))_
 - We’ll see it used in many of the recipes, starting off with partial application and ellipses. _(javascriptallonge.pdf (source-range-83ecb080-00878))_
 
-> Context: The first magic name is this, and it is bound to something called the function’s context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it’s called arguments, and the most interesting thing about it is that it contains a list of arguments passed to a function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00866))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00866))_
+
+> The first magic name is this, and it is bound to something called the function’s context. We will explore this in more detail when we start discussing objects and classes. The second magic name is very interesting, it’s called arguments, and the most interesting thing about it is that it contains a list of arguments passed to a function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00867))_
 
 > **const** plus = **function** (a, b) { **return** arguments[0] + arguments[1]; } plus(2,3) _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00867))_
 
-> Context: Although arguments looks like an array, it isn’t an array: It’s more like an object[43] that happens to bind some values to properties with names that look like integers starting with zero: arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00868, source-range-83ecb080-00870))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00868, source-range-83ecb080-00870))_
+
+> Although arguments looks like an array, it isn’t an array: It’s more like an object[43] that happens to bind some values to properties with names that look like integers starting with zero: arguments always contains all of the arguments passed to a function, regardless of how many are declared. Therefore, we can write plus like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00869))_
 
 > **const** args = **function** (a, b) { **return** arguments; } args(2,3) _//=> { '0': 2, '1': 3 }_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00869))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00875))_
 
 > **const** plus = **function** () { **return** arguments[0] + arguments[1]; } plus(2,3) _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00875))_
 
-> Context: When discussing objects, we’ll discuss properties in more depth. Here’s something interesting about arguments:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00876))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00876))_
+
+> When discussing objects, we’ll discuss properties in more depth. Here’s something interesting about arguments:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00877))_
 
 > **const** howMany = **function** () { **return** arguments['length']; } howMany() _//=> 0_ howMany('hello') _//=> 1_ howMany('sharks', 'are', 'apex', 'predators') _//=> 4_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00877))_
 
 ### **magic names and fat arrows**
 
@@ -1872,11 +2130,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00877))_
 - But sometimes, a function is a small-f function. _(javascriptallonge.pdf (source-range-83ecb080-00897))_
 - Having magic variables apply to Big-F functions but not to small-G functions makes it much easier to use small-F functions as syntax, treating them as expressions or blocks that can be passed to functions like mapWith. _(javascriptallonge.pdf (source-range-83ecb080-00898))_
 
-> Context: But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function. And thus arguments[0] will refer to "outer", not to "inner":
-_(context: javascriptallonge.pdf (source-range-83ecb080-00885))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00885))_
+
+> But if we use a fat arrow, arguments will be defined in the outer environment, the one defined with function. And thus arguments[0] will refer to "outer", not to "inner":
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00886))_
 
 > ( **function** () { **return** (() => arguments[0])('inner'); })('outer') _//=> "outer"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00886))_
 
 ## Summary
 
@@ -1925,32 +2185,41 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00886))_
 - > 48 callFirst and callLast were inspired by Michael Fogus’ Lemonad. _(javascriptallonge.pdf (source-range-83ecb080-00944))_
 - We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument: _(javascriptallonge.pdf (source-range-83ecb080-00947))_
 
-> Context: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost.[48] If you want to bind more than one argument, or you want to leave a “hole” in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00932))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00932))_
+
+> These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost.[48] If you want to bind more than one argument, or you want to leave a “hole” in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00934))_
 
 > **const** heliosSaysHello = callFirst(greet, 'Helios');
-_(source: javascriptallonge.pdf (source-range-83ecb080-00934))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00937))_
 
 > **const** sayHelloToCeline = callLast(greet, 'Celine');
-_(source: javascriptallonge.pdf (source-range-83ecb080-00937))_
 
-> Context: We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00947))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00947))_
+
+> We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00948))_
 
 > **const** callLeft = (fn, ...args) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00948))_
 
-> Context: We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00947))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00947))_
+
+> We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00949))_
 
 > (...remainingArgs) => fn(...args, ...remainingArgs);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00949))_
 
-> Context: We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00947))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00947))_
+
+> We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00950))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00950))_
 
 ## Unary
 
@@ -1966,44 +2235,57 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00950))_
 - This doesn’t work because parseInt is defined as parseInt(string[, radix]). _(javascriptallonge.pdf (source-range-83ecb080-00963))_
 - This doesn’t work because parseInt is defined as parseInt(string[, radix]). _(javascriptallonge.pdf (source-range-83ecb080-00963))_
 
-> Context: The most common use case is to fix a problem. JavaScript has a .map method for arrays, and many libraries offer a map function with the same semantics. Here it is in action:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00956))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00956))_
+
+> The most common use case is to fix a problem. JavaScript has a .map method for arrays, and many libraries offer a map function with the same semantics. Here it is in action:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00957))_
 
 > ['1', '2', '3'].map(parseFloat) _//=> [1, 2, 3]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00957))_
 
-> Context: Let’s try it: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00959, source-range-83ecb080-00963))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00959, source-range-83ecb080-00963))_
+
+> Let’s try it: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00961))_
 
 > If you pass in a function taking only one argument, it simply ignores the additional arguments.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00961))_
 
-> Context: If you pass in a function taking only one argument, it simply ignores the additional arguments. But some functions have optional second or even third arguments. For example: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00961, source-range-83ecb080-00963))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00961, source-range-83ecb080-00963))_
+
+> If you pass in a function taking only one argument, it simply ignores the additional arguments. But some functions have optional second or even third arguments. For example: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00962))_
 
 > ['1', '2', '3'].map(parseInt) _//=> [1, NaN, NaN]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00962))_
 
-> Context: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00963))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00963))_
+
+> This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00964))_
 
 > We could write ['1', '2', '3'].map((s) => parseInt(s)), or we could come up with a decorator to do the job for us:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00964))_
 
-> Context: We could write ['1', '2', '3'].map((s) => parseInt(s)), or we could come up with a decorator to do the job for us:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00964))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00964))_
+
+> We could write ['1', '2', '3'].map((s) => parseInt(s)), or we could come up with a decorator to do the job for us:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00967))_
 
 > **const** unary = (fn) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00967))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00968))_
 
 > fn.length === 1
-_(source: javascriptallonge.pdf (source-range-83ecb080-00968))_
 
-> Context: And now we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00970))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00970))_
+
+> And now we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00971))_
 
 > ['1', '2', '3'].map(unary(parseInt)) _//=> [1, 2, 3]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00971))_
 
 ## Tap
 
@@ -2014,38 +2296,49 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00971))_
 - tap is a traditional name borrowed from various Unix shell commands. _(javascriptallonge.pdf (source-range-83ecb080-00981))_
 - tap can do more than just act as a debugging aid. _(javascriptallonge.pdf (source-range-83ecb080-00996))_
 
-> **const** K = (x) => (y) => x;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00978))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00978))_
 
-> Context: It has some surprising applications. One is when you want to do something with a value for sideeffects, but keep the value around. Behold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00979))_
+> **const** K = (x) => (y) => x;
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00979))_
+
+> It has some surprising applications. One is when you want to do something with a value for sideeffects, but keep the value around. Behold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00980))_
 
 > **const** tap = (value) => (fn) => ( **typeof** (fn) === 'function' && fn(value), value )
-_(source: javascriptallonge.pdf (source-range-83ecb080-00980))_
 
-> Context: tap is a traditional name borrowed from various Unix shell commands. It takes a value and returns a function that always returns the value, but if you pass it a function, it executes the function for side-effects. Let’s see it in action as a poor-man’s debugger:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00981))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00981))_
+
+> tap is a traditional name borrowed from various Unix shell commands. It takes a value and returns a function that always returns the value, but if you pass it a function, it executes the function for side-effects. Let’s see it in action as a poor-man’s debugger:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00982))_
 
 > tap('espresso')((it) => { console.log(`Our drink is ' **${** it **}** '`) }); _//=> Our drink is 'espresso'_ 'espresso'
-_(source: javascriptallonge.pdf (source-range-83ecb080-00982))_
 
-> Context: It’s easy to turn off:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00983))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00983))_
+
+> It’s easy to turn off:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00984))_
 
 > tap('espresso')(); _//=> 'espresso'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00984))_
 
-> Context: Libraries like Underscore[49] use a version of tap that is “uncurried:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00985))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00985))_
+
+> Libraries like Underscore[49] use a version of tap that is “uncurried:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00986))_
 
 > _.tap('espresso', (it) => console.log(`Our drink is ' **${** it **}** '`) ); _//=> Our drink is 'espresso'_ 'espresso'
-_(source: javascriptallonge.pdf (source-range-83ecb080-00986))_
 
-> Context: Now we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00992))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00992))_
+
+> Now we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00993))_
 
 > tap('espresso')((it) => { console.log(`Our drink is ' **${** it **}** '`) }); _//=> Our drink is 'espresso'_ 'espresso'
-_(source: javascriptallonge.pdf (source-range-83ecb080-00993))_
 
 ## Maybe
 
@@ -2058,29 +2351,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-00993))_
 - Naturally, there’s a function decorator recipe for that, borrowed from Haskell’s maybe monad[50] , Ruby’s andand[51] , and CoffeeScript’s existential method invocation: _(javascriptallonge.pdf (source-range-83ecb080-01009))_
 - If some code ever tries to call model.setSomething with nothing, the operation will be skipped. _(javascriptallonge.pdf (source-range-83ecb080-01021))_
 
-> Context: This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01002))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01002))_
+
+> This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01003))_
 
 > **const** isSomething = (value) => value !== **null** && value !== **void** 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01003))_
 
-> Context: This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01002))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01002))_
+
+> This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01004))_
 
 > **const** checksForSomething = (value) => { **if** (isSomething(value)) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01004))_
 
-> Context: Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01007))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01007))_
+
+> Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01008))_
 
 > **var** something = isSomething(value) ? doesntCheckForSomething(value) : value;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01008))_
 
-> Context: As a bonus, maybe plays very nicely with instance methods, we’ll discuss those later:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01018))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01018))_
+
+> As a bonus, maybe plays very nicely with instance methods, we’ll discuss those later:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01020))_
 
 > Model.prototype.setSomething = maybe( **function** (value) { **this** .something = value; });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01020))_
 
 ## Once
 
@@ -2091,17 +2392,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01020))_
 - It ensures that a function can only be called, well, _once_ . _(javascriptallonge.pdf (source-range-83ecb080-01026))_
 - (Note: There are some subtleties with decorators like once that involve the intersection of state with methods. _(javascriptallonge.pdf (source-range-83ecb080-01034))_
 
-> Context: Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01028))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01028))_
+
+> Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01029))_
 
 > **const** askedOnBlindDate = once( () => "sure, why not?" ); askedOnBlindDate() _//=> 'sure, why not?'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01029))_
 
-> Context: Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01028))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01028))_
+
+> Very simple! You pass it a function, and you get a function back. That function will call your function once, and thereafter will return undefined whenever it is called. Let’s try it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01030))_
 
 > askedOnBlindDate() _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01030))_
 
 ## Left-Variadic Functions
 
@@ -2112,11 +2417,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01030))_
 - For example, we might want to have a function that builds some kind of team record. _(javascriptallonge.pdf (source-range-83ecb080-01041))_
 - For example, we might want to have a function that builds some kind of team record. _(javascriptallonge.pdf (source-range-83ecb080-01041))_
 
-> Context: A _variadic function_ is a function that is designed to accept a variable number of arguments.[52] In JavaScript, you can make a variadic function by gathering parameters. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01039))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01039))_
+
+> A _variadic function_ is a function that is designed to accept a variable number of arguments.[52] In JavaScript, you can make a variadic function by gathering parameters. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01040))_
 
 > **const** abccc = (a, b, ...c) => { console.log(a); console.log(b); console.log(c); }; abccc(1, 2, 3, 4, 5) 1 2 [3,4,5]
-_(source: javascriptallonge.pdf (source-range-83ecb080-01040))_
 
 ### But we can’t go the other way around:
 
@@ -2129,23 +2436,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01040))_
 - “Ye” in “Ye Olde,” was not actually spelled with a “Y” in days of old, it was spelled with a thorn, and is pronounced “the.” Another word, “Ye” in “Ye of little programming faith,” is pronounced “ye,” but it’s a different word altogether. _(javascriptallonge.pdf (source-range-83ecb080-01053))_
 - This is a _right-variadic function_ , meaning that it has one or more fixed arguments, and the rest are gathered into the rightmost argument. _(javascriptallonge.pdf (source-range-83ecb080-01060))_
 
-> Context: In “Ye Olde Days,”[53] JavaScript could not gather parameters, and we had to either do backflips with arguments and .slice, or we wrote ourselves a variadic decorator that could gather arguments into the last declared parameter. Here it is in all of its ECMAScript-5 glory:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01050))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01050))_
+
+> In “Ye Olde Days,”[53] JavaScript could not gather parameters, and we had to either do backflips with arguments and .slice, or we wrote ourselves a variadic decorator that could gather arguments into the last declared parameter. Here it is in all of its ECMAScript-5 glory:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01051))_
 
 > **var** __slice = Array.prototype.slice;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01051))_
 
-> Context: We don’t need rightVariadic any more, because instead of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01056))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01056))_
+
+> We don’t need rightVariadic any more, because instead of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01057))_
 
 > **var** firstAndButFirst = rightVariadic( **function** test (first, butFirst) { **return** [first, butFirst] });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01057))_
 
-> Context: We now simply write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01058))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01058))_
+
+> We now simply write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01059))_
 
 > **const** firstAndButFirst = (first, ...butFirst) => [first, butFirst];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01059))_
 
 ### **overcoming limitations**
 
@@ -2153,14 +2466,17 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01059))_
 - We sure can, by using the techniques from rightVariadic. _(javascriptallonge.pdf (source-range-83ecb080-01065))_
 - Our leftVariadic function is a decorator that turns any function into a function that gathers parameters _from the left_ , instead of from the right. _(javascriptallonge.pdf (source-range-83ecb080-01072))_
 
-> Context: It’s nice to have progress. But as noted above, we can’t write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01062))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01062))_
+
+> It’s nice to have progress. But as noted above, we can’t write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01063))_
 
 > **const** butLastAndLast = (...butLast, last) => [butLast, last];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01063))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01070))_
 
 > **const** butLastAndLast = leftVariadic((butLast, last) => [butLast, last]);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01070))_
 
 ### **left-variadic destructuring**
 
@@ -2168,32 +2484,41 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01070))_
 - But we can write our own left-gathering function utility using the same principles without all the tedium: _(javascriptallonge.pdf (source-range-83ecb080-01084))_
 - With leftGather, we have to supply the length of the array we wish to use as the result, and it gathers excess arguments into it from the left, just like leftVariadic gathers excess parameters for a function. _(javascriptallonge.pdf (source-range-83ecb080-01086))_
 
-> Context: Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01074))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01074))_
+
+> Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01075))_
 
 > **const** [first, ...butFirst] = ['why', 'hello', 'there', 'little', 'droid'];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01075))_
 
-> Context: Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01074))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01074))_
+
+> Gathering arguments for functions is one of the ways JavaScript can _destructure_ arrays. Another way is when assigning variables, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01076))_
 
 > first _//=> 'why'_ butFirst _//=> ["hello","there","little","droid"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01076))_
 
-> Context: As with parameters, we can’t gather values from the left when destructuring an array:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01077))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01077))_
+
+> As with parameters, we can’t gather values from the left when destructuring an array:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01078))_
 
 > **const** [...butLast, last] = ['why', 'hello', 'there', 'little', 'droid']; _//=> Unexpected token_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01078))_
 
-> Context: We could use leftVariadic the hard way:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01079))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01079))_
+
+> We could use leftVariadic the hard way:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01082))_
 
 > **const** [butLast, last] = leftVariadic((butLast, last) => [butLast, last])(...['wh\ y', 'hello', 'there', 'little', 'droid']);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01082))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01083))_
 
 > butLast _//=> ['why', 'hello', 'there', 'little']_ last _//=> 'droid'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01083))_
 
 ## Picking the Bean: Choice and Truthiness
 
@@ -2210,11 +2535,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01083))_
 - true and false are value types. _(javascriptallonge.pdf (source-range-83ecb080-01097))_
 - Now, note well: We have said what happens if you pass boolean values to !, &&, and ||, but we’ve said nothing about expressions or about passing other values. _(javascriptallonge.pdf (source-range-83ecb080-01103))_
 
-> Context: true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01097))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01097))_
+
+> true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01100))_
 
 > ! **true** _//=> false_ ! **false** _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01100))_
 
 ### **truthiness and the ternary operator**
 
@@ -2234,20 +2561,25 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01100))_
 - We certainly don’t want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true. _(javascriptallonge.pdf (source-range-83ecb080-01121))_
 - We certainly don’t want JavaScript trying to evaluate deleteRecord(currentRecord) unless isAuthorized(currentUser) returns true. _(javascriptallonge.pdf (source-range-83ecb080-01121))_
 
-> Context: Here’re some simple examples of the ternary operator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01114))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01114))_
+
+> Here’re some simple examples of the ternary operator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01117))_
 
 > - 0 ? 'Hello' : 'Good bye' _//=> 'Good bye'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01117))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01118))_
 
 > - [1, 2, 3, 4, 5].length === 5 ? 'Pentatonic' : 'Quasimodal' _//=> 'Pentatonic'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01118))_
 
-> Context: The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01119))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01119))_
+
+> The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01120))_
 
 > **const** status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
-_(source: javascriptallonge.pdf (source-range-83ecb080-01120))_
 
 ### **truthiness and operators**
 
@@ -2260,8 +2592,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01120))_
 - They don’t operate strictly on logical values, and they don’t commute: a || b is not always equal to b || a, and the same goes for &&. _(javascriptallonge.pdf (source-range-83ecb080-01146))_
 - This is not a subtle distinction. _(javascriptallonge.pdf (source-range-83ecb080-01147))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01140))_
+
 > But when we pass other values, we no longer get true or false:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01140))_
 
 ### **|| and && are control-flow operators**
 
@@ -2269,8 +2602,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01140))_
 - The expression on the left is always evaluated, and its value determines whether the expression on the right is evaluated or not. _(javascriptallonge.pdf (source-range-83ecb080-01159))_
 - This is more than just an optimization. _(javascriptallonge.pdf (source-range-83ecb080-01159))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01153))_
+
 > **const** even = (n) => n === 0 || (n !== 1 && even(n - 2))
-_(source: javascriptallonge.pdf (source-range-83ecb080-01153))_
 
 ### **function parameters are eager**
 
@@ -2280,17 +2614,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01153))_
 - If we need to have functions with control-flow semantics, we can pass anonymous functions. _(javascriptallonge.pdf (source-range-83ecb080-01167))_
 - Here we’ve passed functions that contain the expressions we want to evaluate, and now we can write our own functions that can delay evaluation. _(javascriptallonge.pdf (source-range-83ecb080-01171))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01162))_
+
 > **const** or = (a, b) => a || b
-_(source: javascriptallonge.pdf (source-range-83ecb080-01162))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01163))_
 
 > **const** and = (a, b) => a && b
-_(source: javascriptallonge.pdf (source-range-83ecb080-01163))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01164))_
 
 > **const** even = (n) => or(n === 0, and(n !== 1, even(n - 2)))
-_(source: javascriptallonge.pdf (source-range-83ecb080-01164))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01165))_
 
 > even(42) _//=> Maximum call stack size exceeded._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01165))_
 
 ### **summary**
 
@@ -2325,38 +2663,49 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01165))_
 - We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements: _(javascriptallonge.pdf (source-range-83ecb080-01204))_
 - Array literals are expressions, and arrays are _reference types_ . _(javascriptallonge.pdf (source-range-83ecb080-01204))_
 
-> Context: Any expression will work:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01194))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01194))_
+
+> Any expression will work:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01195))_
 
 > [ 2, 3, 2 + 2 ] _//=> [2,3,4]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01195))_
 
-> Context: Any expression will do, including names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01199))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01199))_
+
+> Any expression will do, including names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01202))_
 
 > **const** wrap = (something) => [something];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01202))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01203))_
 
 > wrap("lunch") _//=> ["lunch"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01203))_
 
-> Context: Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01204))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01204))_
+
+> Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01205))_
 
 > [] === [] _//=> false_ [2 + 2] === [2 + 2] _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01205))_
 
-> Context: Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01204))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01204))_
+
+> Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01206))_
 
 > **const** array_of_one = () => [1];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01206))_
 
-> Context: Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01204))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01204))_
+
+> Array literals are expressions, and arrays are _reference types_ . We can see that each time an array literal is evaluated, we get a new, distinct array, even if it contains the exact same elements:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01207))_
 
 > array_of_one() === array_of_one() _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01207))_
 
 ### **element references**
 
@@ -2364,23 +2713,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01207))_
 - As we can see, JavaScript Arrays are zero-based[56] . _(javascriptallonge.pdf (source-range-83ecb080-01212))_
 - We know that every array is its own unique entity, with its own unique reference. _(javascriptallonge.pdf (source-range-83ecb080-01213))_
 
-> Context: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01209))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01209))_
+
+> Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01210))_
 
 > **const** oneTwoThree = ["one", "two", "three"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01210))_
 
-> Context: Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01209))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01209))_
+
+> Array elements can be extracted using [ and ] as postfix operators. We pass an integer as an index of the element to extract:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01211))_
 
 > oneTwoThree[0] _//=> 'one'_ oneTwoThree[1] _//=> 'two'_ oneTwoThree[2] _//=> 'three'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01211))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01217))_
 
 > **const** x = [], a = [x];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01217))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01218))_
 
 > a[0] === x
-_(source: javascriptallonge.pdf (source-range-83ecb080-01218))_
 
 ### **destructuring arrays**
 
@@ -2391,50 +2746,65 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01218))_
 - The statement const [something] = wrapped; _destructures_ the array represented by wrapped, binding the value of its single element to the name something. _(javascriptallonge.pdf (source-range-83ecb080-01232))_
 - We could do the same thing with (name) => name[1], but destructuring is code that resembles the data it consumes, a valuable coding style. _(javascriptallonge.pdf (source-range-83ecb080-01237))_
 
-> Context: There is another way to extract elements from arrays: _Destructuring_ , a feature going back to Common Lisp, if not before. We saw how to construct an array literal using [, expressions, , and ]. Here’s an example of an array literal that uses a name:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01221))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01221))_
+
+> There is another way to extract elements from arrays: _Destructuring_ , a feature going back to Common Lisp, if not before. We saw how to construct an array literal using [, expressions, , and ]. Here’s an example of an array literal that uses a name:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01222))_
 
 > **const** wrap = (something) => [something];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01222))_
 
-> Context: Let’s expand it to use a block and an extra name:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01223))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01223))_
+
+> Let’s expand it to use a block and an extra name:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01224))_
 
 > **const** wrap = (something) => { **const** wrapped = [something];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01224))_
 
-> Context: Let’s expand it to use a block and an extra name:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01223))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01223))_
+
+> Let’s expand it to use a block and an extra name:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01226))_
 
 > wrap("package") _//=> ["package"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01226))_
 
-> Context: In JavaScript, we can actually _reverse_ the statement and place the template on the left and a value on the right:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01228))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01228))_
+
+> In JavaScript, we can actually _reverse_ the statement and place the template on the left and a value on the right:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01229))_
 
 > **const** unwrap = (wrapped) => { **const** [something] = wrapped;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01229))_
 
-> Context: In JavaScript, we can actually _reverse_ the statement and place the template on the left and a value on the right:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01228))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01228))_
+
+> In JavaScript, we can actually _reverse_ the statement and place the template on the left and a value on the right:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01231))_
 
 > unwrap(["present"]) _//=> "present"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01231))_
 
-> Context: The statement const [something] = wrapped; _destructures_ the array represented by wrapped, binding the value of its single element to the name something. We can do the same thing with more than one element:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01232))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01232))_
+
+> The statement const [something] = wrapped; _destructures_ the array represented by wrapped, binding the value of its single element to the name something. We can do the same thing with more than one element:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01235))_
 
 > **const** surname = (name) => { **const** [first, last] = name; **return** last; }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01235))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01236))_
 
 > surname(["Reginald", "Braithwaite"]) _//=> "Braithwaite"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01236))_
 
-> Context: Destructuring can nest:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01238))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01238))_
+
+> Destructuring can nest:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01239))_
 
 > **const** description = (nameAndOccupation) => { **const** [[first, last], occupation] = nameAndOccupation;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01239))_
 
 ### **gathering**
 
@@ -2445,41 +2815,53 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01239))_
 - Now, when we introduced destructuring, we saw that it is kind-of-sort-of the reverse of array literals. _(javascriptallonge.pdf (source-range-83ecb080-01252))_
 - to place the elements of an array inside another array. _(javascriptallonge.pdf (source-range-83ecb080-01262))_
 
-> Context: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01242))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01242))_
+
+> Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01243))_
 
 > **const** [car, ...cdr] = [1, 2, 3, 4, 5];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01243))_
 
-> Context: Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01242))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01242))_
+
+> Sometimes we need to extract arrays from arrays. Here is the most common pattern: Extracting the head and gathering everything but the head from an array:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01244))_
 
 > car _//=> 1_ cdr _//=> [2, 3, 4, 5]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01244))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01251))_
 
 > **const** [...butLast, last] = [1, 2, 3, 4, 5]; _//=> ERROR_ **const** [first, ..., last] = [1, 2, 3, 4, 5]; _//=> ERROR_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01251))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01253))_
 
 > **const** wrapped = [something];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01253))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01255))_
 
 > **const** [unwrapped] = something;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01255))_
 
-> Context: What is the reverse of gathering? We know that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01256))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01256))_
+
+> What is the reverse of gathering? We know that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01257))_
 
 > **const** [car, ...cdr] = [1, 2, 3, 4, 5];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01257))_
 
-> Context: What is the reverse? It would be:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01258))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01258))_
+
+> What is the reverse? It would be:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01259))_
 
 > **const** cons = [car, ...cdr];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01259))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01261))_
 
 > **const** oneTwoThree = ["one", "two", "three"]; ["zero", ...oneTwoThree] _//=> ["zero","one","two","three"]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01261))_
 
 ### **destructuring is not pattern matching**
 
@@ -2493,25 +2875,31 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01261))_
 - This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-83ecb080-01274))_
 - This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things. _(javascriptallonge.pdf (source-range-83ecb080-01274))_
 
-> Context: That match would fail because the array doesn’t have an element to assign to what. But this is not how JavaScript works. JavaScript tries its best to assign things, and if there isn’t something that fits, JavaScript binds undefined to the name. Therefore:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01269))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01269))_
+
+> That match would fail because the array doesn’t have an element to assign to what. But this is not how JavaScript works. JavaScript tries its best to assign things, and if there isn’t something that fits, JavaScript binds undefined to the name. Therefore:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01271))_
 
 > what _//=> undefined_ **const** [which, what, who] = ["duck feet", "tiger tail"]; who _//=> undefined_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01271))_
 
-> Context: And if there aren’t any items to assign with ..., JavaScript assigns an empty array: From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01272, source-range-83ecb080-01274))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01272, source-range-83ecb080-01274))_
+
+> And if there aren’t any items to assign with ..., JavaScript assigns an empty array: From its very inception, JavaScript has striven to avoid catastrophic errors. As a result, it often coerces values, passes undefined around, or does whatever it can to keep executing without failing. This often means that we must write our own code to detect failure conditions, as we cannot reply on the language to point out when we are doing semantically meaningless things.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01273))_
 
 > **const** [...they] = []; they _//=> []_ **const** [which, what, ...they] = ["duck feet", "tiger tail"]; they _//=> []_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01273))_
 
 ### **destructuring and return values**
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01280))_
+
 > **const** [reg, status] = description([["Reginald", "Braithwaite"], "programmer"]);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01280))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01281))_
 
 > reg _//=> "Reginald is a programmer"_ status _//=> "ok"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01281))_
 
 ### **destructuring parameters**
 
@@ -2519,11 +2907,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01281))_
 - There is only one difference: We have not tried gathering. _(javascriptallonge.pdf (source-range-83ecb080-01287))_
 - 59Gathering in parameters has a long history, and the usual terms are to call gathering “pattern matching” and to call a name that is bound to gathered values a “rest parameter.” The term “rest” is perfectly compatible with gather: “Rest” is the noun, and “gather” is the verb. _(javascriptallonge.pdf (source-range-83ecb080-01292))_
 
-> Context: It is very much like an array literal. And consider how we bind values to parameter names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01285))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01285))_
+
+> It is very much like an array literal. And consider how we bind values to parameter names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01286))_
 
 > **const** foo = () => ... **const** bar = (name) => ... **const** baz = (a, b, c) => ...
-_(source: javascriptallonge.pdf (source-range-83ecb080-01286))_
 
 ## Self-Similarity
 
@@ -2550,35 +2940,45 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01286))_
 - Our length function is _recursive_ , it calls itself. _(javascriptallonge.pdf (source-range-83ecb080-01325))_
 - This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar. _(javascriptallonge.pdf (source-range-83ecb080-01325))_
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01312))_
 
 > **const** isEmpty = ([first, ...rest]) => first === **undefined** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01312))_
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01313))_
 
 > isEmpty([]) _//=> true_ isEmpty([0]) _//=> false_ isEmpty([[]]) _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01313))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01320))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : _// ???_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01320))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01322))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01322))_
 
-> Context: Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+
+> Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01324))_
 
 > length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01324))_
 
 ### **linear recursion**
 
@@ -2608,32 +3008,41 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01324))_
 - We can write it out using a ternary operator. _(javascriptallonge.pdf (source-range-83ecb080-01365))_
 - Even in this small function, we can identify the terminal condition, the piece being broken off, and recomposing the solution. _(javascriptallonge.pdf (source-range-83ecb080-01365))_
 
-> Context: If we want to square each number in a list, we could write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01354))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01354))_
+
+> If we want to square each number in a list, we could write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01355))_
 
 > **const** squareAll = ([first, ...rest]) => first === **undefined** ? [] : [first * first, ...squareAll(rest)\ ]; squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01355))_
 
-> Context: And if we wanted to “truthify” each element in a list, we could write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01356))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01356))_
+
+> And if we wanted to “truthify” each element in a list, we could write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01359))_
 
 > **const** truthyAll = ([first, ...rest]) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01359))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01361))_
 
 > truthyAll([ **null** , **true** , 25, **false** , "foo"]) _//=> [false,true,true,false,true]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01361))_
 
-> Context: Given the signature:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01363))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01363))_
+
+> Given the signature:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01364))_
 
 > **const** mapWith = (fn, array) => _// ..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01364))_
 
-> Context: We can write it out using a ternary operator. Even in this small function, we can identify the terminal condition, the piece being broken off, and recomposing the solution.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01365))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01365))_
+
+> We can write it out using a ternary operator. Even in this small function, we can identify the terminal condition, the piece being broken off, and recomposing the solution.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01367))_
 
 > mapWith((x) => !!x, [ **null** , **true** , 25, **false** , "foo"]) _//=> [false,true,true,false,true]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01367))_
 
 ### **folding**
 
@@ -2644,56 +3053,73 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01367))_
 - Our foldWith function is a generalization of our mapWith function. _(javascriptallonge.pdf (source-range-83ecb080-01382))_
 - And to return to our first example, our version of length can be written as a fold: _(javascriptallonge.pdf (source-range-83ecb080-01389))_
 
-> Context: With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn’t. A function to compute the sum of the squares of a list of numbers might look like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01369))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01369))_
+
+> With the exception of the length example at the beginning, our examples so far all involve rebuilding a solution using spreads. But they needn’t. A function to compute the sum of the squares of a list of numbers might look like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01372))_
 
 > **const** sumSquares = ([first, ...rest]) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01372))_
 
-> Context: There are two differences between sumSquares and our maps above:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01375))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01375))_
+
+> There are two differences between sumSquares and our maps above:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01374))_
 
 > sumSquares([1, 2, 3, 4, 5]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01374))_
 
-> Context: Let’s rewrite mapWith so that we can use it to sum squares.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01378))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01378))_
+
+> Let’s rewrite mapWith so that we can use it to sum squares.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01379))_
 
 > **const** foldWith = (fn, terminalValue, [first, ...rest]) => first === **undefined** ? terminalValue : fn(first, foldWith(fn, terminalValue, rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01379))_
 
-> Context: And now we supply a function that does slightly more than our mapping functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01380))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01380))_
+
+> And now we supply a function that does slightly more than our mapping functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01381))_
 
 > foldWith((number, rest) => number * number + rest, 0, [1, 2, 3, 4, 5]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01381))_
 
-> Context: Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01382))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01382))_
+
+> Our foldWith function is a generalization of our mapWith function. We can represent a map as a fold, we just need to supply the array rebuilding code:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01383))_
 
 > **const** squareAll = (array) => foldWith((first, rest) => [first * first, ...rest],\ [], array); squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01383))_
 
-> Context: And if we like, we can write mapWith using foldWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01384))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01384))_
+
+> And if we like, we can write mapWith using foldWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01387))_
 
 > **const** mapWith = (fn, array) => foldWith((first, rest) => [fn(first), ...rest], [\ ], array), squareAll = (array) => mapWith((x) => x * x, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01387))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01388))_
 
 > squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01388))_
 
-> Context: And to return to our first example, our version of length can be written as a fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01389))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01389))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01390))_
 
 > **const** length = (array) => foldWith((first, rest) => 1 + rest, 0, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01390))_
 
-> Context: And to return to our first example, our version of length can be written as a fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01389))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01389))_
+
+> And to return to our first example, our version of length can be written as a fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01391))_
 
 > length([1, 2, 3, 4, 5]) _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01391))_
 
 ### **summary**
 
@@ -2723,17 +3149,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01391))_
 - Making algorithms faster is a very highly studied field of computer science. _(javascriptallonge.pdf (source-range-83ecb080-01414))_
 - In fact, there are several better ways. _(javascriptallonge.pdf (source-range-83ecb080-01414))_
 
-> Context: This is roughly equivalent to writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01402))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01402))_
+
+> This is roughly equivalent to writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01404))_
 
 > Note that while evaluating mapWith(fn, rest), JavaScript must retain the value first or fn(first), plus some housekeeping information so it remembers what to do with mapWith(fn, rest) when it has a result.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01404))_
 
-> Context: In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01411))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01411))_
+
+> In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01412))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01412))_
 
 ### **tail-call optimization**
 
@@ -2752,11 +3182,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01412))_
 - The problem can be stated in such a way that the answer is obvious: length does not call itself in tail position, because it has to do two pieces of work, and while one of them is in the recursive call to length, the other happens after the recursive call. _(javascriptallonge.pdf (source-range-83ecb080-01425))_
 - The problem can be stated in such a way that the answer is obvious: length does not call itself in tail position, because it has to do two pieces of work, and while one of them is in the recursive call to length, the other happens after the recursive call. _(javascriptallonge.pdf (source-range-83ecb080-01425))_
 
-> Context: That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
-_(context: javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+
+> That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01423))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01423))_
 
 ### **converting non-tail-calls to tail-calls**
 
@@ -2768,65 +3200,87 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01423))_
 - We can map over large arrays without incurring all the memory and performance overhead of non-tail-calls. _(javascriptallonge.pdf (source-range-83ecb080-01459))_
 - And this basic transformation from a recursive function that does not make a tail call, into a recursive function that calls itself in tail position, is a bread-and-butter pattern for programmers using a language that incorporates tail-call optimization. _(javascriptallonge.pdf (source-range-83ecb080-01459))_
 
-> Context: The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01430))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01430))_
+
+> The obvious solution is push the 1 + work into the call to length. Here’s our first cut:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01431))_
 
 > **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01431))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01437))_
 
 > **const** lengthDelaysWork = ([first, ...rest], numberToBeAdded) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01437))_
 
-> Context: This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01436))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01436))_
+
+> This lengthDelaysWork function calls itself in tail position. The 1 + work is done before calling itself, and by the time it reaches the terminal position, it has the answer. Now that we’ve seen how it works, we can clean up the 0 + numberToBeAdded business. But while we’re doing that, it’s annoying to remember to call it with a zero. Let’s fix that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01439))_
 
 > **const** length = (n) => lengthDelaysWork(n, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01439))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01441))_
 
 > **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01441))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01442))_
 
 > **const** length = callLast(lengthDelaysWork, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01442))_
 
-> Context: Or we could use partial application:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01440))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01440))_
+
+> Or we could use partial application:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01443))_
 
 > length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01443))_
 
-> Context: This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01444))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01444))_
+
+> This version of length calls uses lengthDelaysWork, and JavaScript optimizes that not to take up memory proportional to the length of the string. We can use this technique with mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01447))_
 
 > **const** mapWithDelaysWork = (fn, [first, ...rest], prepend) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01447))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01448))_
 
 > first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01448))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01451))_
 
 > **const** mapWith = callLast(mapWithDelaysWork, []);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01451))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01452))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01452))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01454))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01454))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01455))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2858,7 +3312,6 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01455))_
 
 ### **factorials**
 
@@ -2868,8 +3321,11 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01455))_
 - As before, we wrote a factorialWithDelayedWork function, then used partial application (callLast) to make a factorial function that took just the one argument and supplied the initial work value. _(javascriptallonge.pdf (source-range-83ecb080-01479))_
 - As before, we wrote a factorialWithDelayedWork function, then used partial application (callLast) to make a factorial function that took just the one argument and supplied the initial work value. _(javascriptallonge.pdf (source-range-83ecb080-01479))_
 
-> Context: In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01462))_
+
+> In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01463))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2901,22 +3357,26 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01463))_
 
-> Context: The naïve function for calcuating the factorial of a positive integer follows directly from the definition: Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n - 1). We can do the same conversion, pass in the work to be done:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01467, source-range-83ecb080-01470))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01467, source-range-83ecb080-01470))_
+
+> The naïve function for calcuating the factorial of a positive integer follows directly from the definition: Once again, it is not tail-recursive, it needs to save the stack with each invocation so that it can take the result returned and compute n * factorial(n - 1). We can do the same conversion, pass in the work to be done:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01468))_
 
 > **const** factorial = (n) => n == 1 ? n : n * factorial(n - 1); factorial(1) _//=> 1_ factorial(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01468))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01476))_
 
 > **const** callLast = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01476))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01477))_
 
 > **const** factorial = callLast(factorialWithDelayedWork, 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01477))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01478))_
 
 > factorial(1) _//=> 1_ factorial(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01478))_
 
 ### **default arguments**
 
@@ -2926,31 +3386,38 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01478))_
 - A default argument is concise and readable. _(javascriptallonge.pdf (source-range-83ecb080-01491))_
 - Now we don’t need to use two functions. _(javascriptallonge.pdf (source-range-83ecb080-01491))_
 
-> Context: Our problem is that we can directly write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01481))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01481))_
+
+> Our problem is that we can directly write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01483))_
 
 > But it is hideous to have to always add a 1 parameter, we’d be demanding that everyone using the factorial function know that we are using a tail-recursive implementation.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01483))_
 
 ### **defaults and destructuring**
 
 - Now we learn that we can create a default parameter argument. _(javascriptallonge.pdf (source-range-83ecb080-01493))_
 - How very useful: defaults can be supplied for destructuring assignments, just like defaults for parameters. _(javascriptallonge.pdf (source-range-83ecb080-01500))_
 
-> Context: We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01493))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01493))_
+
+> We saw earlier that destructuring parameters works the same way as destructuring assignment. Now we learn that we can create a default parameter argument. Can we create a default destructuring assignment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01496))_
 
 > **const** [first, second = "two"] = ["one"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01496))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01497))_
 
 > ` ` **${** first **}** . **${** second **}** _//=> "one . two"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01497))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01498))_
 
 > **const** [first, second = "two"] = ["primus", "secundus"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01498))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01499))_
 
 > ` ` **${** first **}** . **${** second **}** _//=> "primus . secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01499))_
 
 ## Garbage, Garbage Everywhere
 
@@ -2972,14 +3439,17 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01499))_
 - But this is not how JavaScript’s built-in arrays work. _(javascriptallonge.pdf (source-range-83ecb080-01521))_
 - > 64It needn’t always be so: Programmers have developed specialized data structures that make operations like this cheap, often by arranging for structures to share common elements by default, and only making copies when changes are made. _(javascriptallonge.pdf (source-range-83ecb080-01521))_
 
-> Context: We have now seen how to use Tail Calls to execute mapWith in constant space:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01507))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01507))_
+
+> We have now seen how to use Tail Calls to execute mapWith in constant space:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01508))_
 
 > **const** mapWith = (fn, [first, ...rest], prepend = []) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01508))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01511))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01511))_
 
 ### **some history**
 
@@ -3000,23 +3470,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01511))_
 - Thus, the design of programming languages and algorithms was driven by what could be accomplished with limited memory and performance. _(javascriptallonge.pdf (source-range-83ecb080-01536))_
 - Here’s the scheme in JavaScript, using two-element arrays to represent cons cells: _(javascriptallonge.pdf (source-range-83ecb080-01537))_
 
-> Context: > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
-_(context: javascriptallonge.pdf (source-range-83ecb080-01530))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01530))_
+
+> > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01533))_
 
 > If you had two 15-bit values and wished to write them to the register, the CONS macro would take the values and write them to a 36-bit word.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01533))_
 
-> Context: Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01537))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01537))_
+
+> Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01538))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01538))_
 
-> Context: We can make a list by calling cons repeatedly, and terminating it with null:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01539))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01539))_
+
+> We can make a list by calling cons repeatedly, and terminating it with null:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01540))_
 
 > **const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01540))_
 
 ### oneToFive
 
@@ -3034,14 +3510,17 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01540))_
 - And so it is today that languages like JavaScript have arrays that are slow to split into the equivalent of a car/cdr pair, but instructional examples of recursive programs still have echoes of their Lisp origins. _(javascriptallonge.pdf (source-range-83ecb080-01558))_
 - We’ll look at linked lists again when we look at Plain Old JavaScript Objects. _(javascriptallonge.pdf (source-range-83ecb080-01559))_
 
-> Context: Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01543))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01543))_
+
+> Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01546))_
 
 > **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01546))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01547))_
 
 > **const** oneToFive = node1;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01547))_
 
 ### **so why arrays**
 
@@ -3051,17 +3530,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01547))_
 - Arrays avoid this problem by pessimistically copying all the references whenever we extract an element or sequence of elements from them (We’ll see this explained later in Mutation). _(javascriptallonge.pdf (source-range-83ecb080-01567))_
 - For these and other reasons, almost all languages today make it possible to use a fast array or vector type that is optimized for iteration, and even Lisp now has a variety of data structures that are optimized for specific use cases. _(javascriptallonge.pdf (source-range-83ecb080-01568))_
 
-> Context: If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01564))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01564))_
+
+> If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
 
 > And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01565))_
 
-> Context: Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01565))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
+
+> Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01566))_
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01566))_
 
 ### **summary**
 
@@ -3085,29 +3568,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01566))_
 - JavaScript has dictionaries, and it calls them “objects.” The word “object” is loaded in programming circles, due to the widespread use of the term “object-oriented programming” that was coined by Alan Kay but has since come to mean many, many things to many different people. _(javascriptallonge.pdf (source-range-83ecb080-01584))_
 - In JavaScript, an object is a map from string keys to values. _(javascriptallonge.pdf (source-range-83ecb080-01585))_
 
-> Context: Lists are not the only way to represent collections of things, but they are the “oldest” data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer. Lists are obviously very handy for homogeneous collections of things, like a shopping list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01575))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01575))_
+
+> Lists are not the only way to represent collections of things, but they are the “oldest” data structure in the history of high level languages, because they map very closely to the way the hardware is organized in a computer. Lists are obviously very handy for homogeneous collections of things, like a shopping list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01576))_
 
 > **const** remember = ["the milk", "the coffee beans", "the biscotti"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01576))_
 
-> Context: And they can be used to store heterogeneous things in various levels of structure:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01577))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01577))_
+
+> And they can be used to store heterogeneous things in various levels of structure:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01578))_
 
 > **const** user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01578))_
 
-> Context: Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01579))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01579))_
+
+> Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01580))_
 
 > **const** NAME = 0, FIRST = 0, LAST = 1, OCCUPATION = 1, TITLE = 0, RESPONSIBILITIES = 1;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01580))_
 
-> Context: Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01579))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01579))_
+
+> Remembering that the name is the first item is error-prone, and being expected to look at user[0][1] and know that we are talking about a surname is unreasonable. So back when lists were the only things available, programmers would introduce constants to make things easier on themselves:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01581))_
 
 > **const** user = [["Reginald", "Braithwaite"],[ "author", ["JavaScript Allongé", "Ja\ vaScript Spessore", "CoffeeScript Ristretto"]]];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01581))_
 
 ### **literal object syntax**
 
@@ -3121,79 +3612,102 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01581))_
 - (There are some other technical differences between binding a named function expression and using _(javascriptallonge.pdf (source-range-83ecb080-01620))_
 - compact method syntax, but they are not relevant here. _(javascriptallonge.pdf (source-range-83ecb080-01623))_
 
-> Context: Two objects created with separate evaluations have differing identities, just like arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01592))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01592))_
+
+> Two objects created with separate evaluations have differing identities, just like arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01593))_
 
 > - { year: 2012, month: 6, day: 14 } === { year: 2012, month: 6, day: 14 } _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01593))_
 
-> Context: Objects use [] to access the values by name, using a string:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01594))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01594))_
+
+> Objects use [] to access the values by name, using a string:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01595))_
 
 > - { year: 2012, month: 6, day: 14 }['day'] _//=> 14_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01595))_
 
-> Context: Values contained within an object work just like values contained within an array, we access them by reference to the original:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01596))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01596))_
+
+> Values contained within an object work just like values contained within an array, we access them by reference to the original:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01598))_
 
 > - x = unique(),
-_(source: javascriptallonge.pdf (source-range-83ecb080-01598))_
 
-> Context: Values contained within an object work just like values contained within an array, we access them by reference to the original:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01596))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01596))_
+
+> Values contained within an object work just like values contained within an array, we access them by reference to the original:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01599))_
 
 > - y = unique(),
-_(source: javascriptallonge.pdf (source-range-83ecb080-01599))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01600))_
 
 > - z = unique(), o = { a: x, b: y, c: z };
-_(source: javascriptallonge.pdf (source-range-83ecb080-01600))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01601))_
 
 > - o['a'] === x && o['b'] === y && o['c'] === z _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01601))_
 
-> Context: If the name is an alphanumeric string conforming to the same rules as names of variables, there’s a simplified syntax for accessing the values:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01604))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01604))_
+
+> If the name is an alphanumeric string conforming to the same rules as names of variables, there’s a simplified syntax for accessing the values:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01607))_
 
 > **const** date = { year: 2012, month: 6, day: 14 };
-_(source: javascriptallonge.pdf (source-range-83ecb080-01607))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01608))_
 
 > date['day'] === date.day _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01608))_
 
-> Context: Expressions can be used for keys as well. The syntax is to enclose the key’s expression in [ and ]:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01609))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01609))_
+
+> Expressions can be used for keys as well. The syntax is to enclose the key’s expression in [ and ]:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01610))_
 
 > { ["p" + "i"]: 3.14159265 } _//=> {"pi":3.14159265}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01610))_
 
-> Context: All containers can contain any value, including functions or other containers, like a fat arrow function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01611))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01611))_
+
+> All containers can contain any value, including functions or other containers, like a fat arrow function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01612))_
 
 > **const** Mathematics = { abs: (a) => a < 0 ? -a : a }; Mathematics.abs(-5) _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01612))_
 
 ### **destructuring objects**
 
 - It is very common to write things like title: title when destructuring objects. _(javascriptallonge.pdf (source-range-83ecb080-01636))_
 - When the label is a valid variable name, it’s often the most obvious variable name as well. _(javascriptallonge.pdf (source-range-83ecb080-01636))_
 
-> Context: And we can also write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01627))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01627))_
+
+> And we can also write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01629))_
 
 > surname _//=> "Braithwaite"_ title _//=> "Author"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01629))_
 
-> Context: Terrible grammar and capitalization, but let’s move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it’s often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01636))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01636))_
+
+> Terrible grammar and capitalization, but let’s move on. It is very common to write things like title: title when destructuring objects. When the label is a valid variable name, it’s often the most obvious variable name as well. So JavaScript supports a further syntactic optimization:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01637))_
 
 > **const** description = ({name: { first }, occupation: { title } }) => ` **${** first **}** is a **${** title **}** `;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01637))_
 
-> Context: And that same syntax works for literals:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01640))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01640))_
+
+> And that same syntax works for literals:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01641))_
 
 > **const** abbrev = ({name: { first, last }, occupation: { title } }) => { **return** { first, last, title}; } abbrev(user)
-_(source: javascriptallonge.pdf (source-range-83ecb080-01641))_
 
 ### **revisiting linked lists**
 
@@ -3215,77 +3729,101 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01641))_
 - Whereas our naïve array algorithm created 2 _n_ superfluous arrays and copied _n_[2] superfluous values. _(javascriptallonge.pdf (source-range-83ecb080-01681))_
 - Whereas our naïve array algorithm created 2 _n_ superfluous arrays and copied _n_[2] superfluous values. _(javascriptallonge.pdf (source-range-83ecb080-01681))_
 
-> Context: Earlier, we used two-element arrays as nodes in a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01644))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01644))_
+
+> Earlier, we used two-element arrays as nodes in a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01645))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01645))_
 
-> Context: We can then perform the equivalent of [first, ...rest] with direct property accessors:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01648))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01648))_
+
+> We can then perform the equivalent of [first, ...rest] with direct property accessors:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01651))_
 
 > **const** EMPTY = {}; **const** OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } };
-_(source: javascriptallonge.pdf (source-range-83ecb080-01651))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01652))_
 
 > OneTwoThree.first _//=> 1_ OneTwoThree.rest _//=> {"first":2,"rest":{"first":3,"rest":{}}}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01652))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01653))_
 
 > OneTwoThree.rest.rest.first _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01653))_
 
-> Context: Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+
+> Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01655))_
 
 > **const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01655))_
 
-> Context: Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+
+> Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01656))_
 
 > length(OneTwoThree) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01656))_
 
-> Context: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01657))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01657))_
+
+> What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01658))_
 
 > **const** slowcopy = (node) => node === EMPTY ? EMPTY : { first: node.first, rest: slowcopy(node.rest)};
-_(source: javascriptallonge.pdf (source-range-83ecb080-01658))_
 
-> Context: We could follow the strategy of delaying the work. Let’s write that naively:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01662))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01662))_
+
+> We could follow the strategy of delaying the work. Let’s write that naively:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01665))_
 
 > **const** copy2 = (node, delayed = EMPTY) => node === EMPTY
-_(source: javascriptallonge.pdf (source-range-83ecb080-01665))_
 
-> Context: Well, well, well. We have unwittingly _reversed_ the list. This makes sense, if lists are constructed from back to front, and we make a linked list out of items as we iterate through it, we’re going to get a backwards copy of the list. This isn’t a bad thing by any stretch of the imagination. Let’s call it what it is:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01669))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01669))_
+
+> Well, well, well. We have unwittingly _reversed_ the list. This makes sense, if lists are constructed from back to front, and we make a linked list out of items as we iterate through it, we’re going to get a backwards copy of the list. This isn’t a bad thing by any stretch of the imagination. Let’s call it what it is:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01670))_
 
 > **const** reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01670))_
 
-> Context: And now, we can make a reversing map:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01671))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01671))_
+
+> And now, we can make a reversing map:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01672))_
 
 > **const** reverseMapWith = (fn, node, delayed = EMPTY) => node === EMPTY
-_(source: javascriptallonge.pdf (source-range-83ecb080-01672))_
 
-> Context: And a regular mapWith follows:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01674))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01674))_
+
+> And a regular mapWith follows:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01675))_
 
 > **const** reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01675))_
 
-> Context: And a regular mapWith follows:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01674))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01674))_
+
+> And a regular mapWith follows:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01676))_
 
 > **const** mapWith = (fn, node, delayed = EMPTY) => node === EMPTY ? reverse(delayed) : mapWith(fn, node.rest, { first: fn(node.first), rest: delayed });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01676))_
 
-> Context: And a regular mapWith follows:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01674))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01674))_
+
+> And a regular mapWith follows:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01677))_
 
 > mapWith((x) => x * x, OneTwoThree) _//=> {"first":1,"rest":{"first":4,"rest":{"first":9,"rest":{}}}}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01677))_
 
 ## Mutation
 
@@ -3311,50 +3849,65 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01677))_
 - Note well: Declaring a variable const does not prevent us from mutating its value, only from rebinding its name. _(javascriptallonge.pdf (source-range-83ecb080-01713))_
 - Note well: Declaring a variable const does not prevent us from mutating its value, only from rebinding its name. _(javascriptallonge.pdf (source-range-83ecb080-01713))_
 
-> Context: In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01688))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01688))_
+
+> In JavaScript, almost every type of value can _mutate_ . Their identities stay the same, but not their structure. Specifically, arrays and objects can mutate. Recall that you can access a value from within an array or an object using []. You can reassign a value using [] =:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01689))_
 
 > **const** oneTwoThree = [1, 2, 3]; oneTwoThree[0] = 'one'; oneTwoThree _//=> [ 'one', 2, 3 ]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01689))_
 
-> Context: You can even add a value:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01690))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01690))_
+
+> You can even add a value:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01693))_
 
 > **const** oneTwoThree = [1, 2, 3]; oneTwoThree[3] = 'four'; oneTwoThree _//=> [ 1, 2, 3, 'four' ]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01693))_
 
-> Context: You can do the same thing with both syntaxes for accessing objects:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01694))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01694))_
+
+> You can do the same thing with both syntaxes for accessing objects:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01695))_
 
 > **const** name = {firstName: 'Leonard', lastName: 'Braithwaite'}; name.middleName = 'Austin' name _//=> { firstName: 'Leonard',_ # lastName: 'Braithwaite', # middleName: 'Austin' }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01695))_
 
-> Context: We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01696))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01696))_
+
+> We have established that JavaScript’s semantics allow for two different bindings to refer to the same value. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01697))_
 
 > **const** allHallowsEve = [2012, 10, 31] **const** halloween = allHallowsEve;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01697))_
 
-> Context: Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01698, source-range-83ecb080-01701))_
+
+> Both halloween and allHallowsEve are bound to the same array value within the local environment. And also: There are two nested environments, and each one binds a name to the exact same array value. In each of these examples, we have created two _aliases_ for the same value. Before we could reassign things, the most important point about this is that the identities were the same, because they were the same value.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01699))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { _// ..._
-_(source: javascriptallonge.pdf (source-range-83ecb080-01699))_
 
-> Context: This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01702, source-range-83ecb080-01707))_
+
+> This is vital. Consider what we already know about shadowing: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01705))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { halloween = [2013, 10, 31];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01705))_
 
-> Context: The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01707))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01707))_
+
+> The outer value of allHallowsEve was not changed because all we did was rebind the name halloween within the inner environment. However, what happens if we _mutate_ the value in the inner environment?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01706))_
 
 > })(allHallowsEve); allHallowsEve _//=> [2012, 10, 31]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01706))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01708))_
 
 > **const** allHallowsEve = [2012, 10, 31]; ( **function** (halloween) { halloween[0] = 2013; })(allHallowsEve); allHallowsEve _//=> [2013, 10, 31]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01708))_
 
 ### **mutation and data structures**
 
@@ -3365,17 +3918,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01708))_
 - Let’s recall linked lists from Plain Old JavaScript Objects. _(javascriptallonge.pdf (source-range-83ecb080-01716))_
 - One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. _(javascriptallonge.pdf (source-range-83ecb080-01716))_
 
-> Context: One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let’s recall linked lists from Plain Old JavaScript Objects. While we’re executing the mapWith function, we’re constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01716))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01716))_
+
+> One pattern many people follow is to be liberal with mutation when constructing data, but conservative with mutation when consuming data. Let’s recall linked lists from Plain Old JavaScript Objects. While we’re executing the mapWith function, we’re constructing a new linked list. By this pattern, we would be happy to use mutation to construct the list while running mapWith.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01717))_
 
 > But after returning the new list, we then become conservative about mutation. This also makes sense: Linked lists often use structure sharing. For example:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01717))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01724))_
 
 > const ThreeToFive = OneToFive.rest.rest;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01724))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01727))_
 
 > ThreeToFive.first = "three"; ThreeToFive.rest.first = "four"; ThreeToFive.rest.rest.first = "five";
-_(source: javascriptallonge.pdf (source-range-83ecb080-01727))_
 
 ### ThreeToFive
 
@@ -3384,20 +3941,25 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01727))_
 - Structure sharing like this is what makes linked lists so fast for taking everything but the first item of a list: We aren’t making a new list, we’re using some of the old list. _(javascriptallonge.pdf (source-range-83ecb080-01732))_
 - We just use the data, and the less we mutate it, the fewer the times we have to think about whether making changes will be “safe.” _(javascriptallonge.pdf (source-range-83ecb080-01738))_
 
-> Context: Changes made to ThreeToFive affect OneToFive, because they share the same structure. When we wrote ThreeToFive = OneToFive.rest.rest;, we weren’t making a brand new copy of we were getting a reference to the same chain of nodes.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01731))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01731))_
+
+> Changes made to ThreeToFive affect OneToFive, because they share the same structure. When we wrote ThreeToFive = OneToFive.rest.rest;, we weren’t making a brand new copy of we were getting a reference to the same chain of nodes.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01730))_
 
 > OneToFive //=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":"fou\ r","rest":{"first":"five","rest":{}}}}}}
-_(source: javascriptallonge.pdf (source-range-83ecb080-01730))_
 
-> Context: Structure sharing like this is what makes linked lists so fast for taking everything but the first item of a list: We aren’t making a new list, we’re using some of the old list. Whereas destructuring an array with [first, ...rest] does make a copy, so:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01732))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01732))_
+
+> Structure sharing like this is what makes linked lists so fast for taking everything but the first item of a list: We aren’t making a new list, we’re using some of the old list. Whereas destructuring an array with [first, ...rest] does make a copy, so:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01735))_
 
 > **const** OneToFive = [1, 2, 3, 4, 5];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01735))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01738))_
 
 > We don’t have to remember to use copying operations when we pass it as a value to a function, or extract some data from it.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01738))_
 
 ### **building with mutation**
 
@@ -3408,17 +3970,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01738))_
 - But when we’re in the midst of creating a brand new list, we aren’t sharing any nodes with any other lists, and we can afford to be more liberal about using mutation to save space and/or time. _(javascriptallonge.pdf (source-range-83ecb080-01747))_
 - Adding a node to an existing list is risky, as we saw when considering the fact that OneToFive and ThreeToFive share the same nodes. _(javascriptallonge.pdf (source-range-83ecb080-01747))_
 
-> Context: As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01740))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01740))_
+
+> As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01741))_
 
 > **const** reverse = (node, delayed = EMPTY) => node === EMPTY ? delayed : reverse(node.rest, { first: node.first, rest: delayed });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01741))_
 
-> Context: As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01740))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01740))_
+
+> As noted, one pattern is to be more liberal about mutation when building a data structure. Consider our copy algorithm. Without mutation, a copy of a linked list can be made in constant space by reversing a reverse of the list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01742))_
 
 > **const** copy = (node) => reverse(reverse(node));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01742))_
 
 ## Reassignment
 
@@ -3436,17 +4002,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01742))_
 - Like evaluating variable labels, when a binding is rebound, JavaScript searches for the binding in the current environment and then each ancestor in turn until it finds one. _(javascriptallonge.pdf (source-range-83ecb080-01782))_
 - It then rebinds the name in that environment. _(javascriptallonge.pdf (source-range-83ecb080-01782))_
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01767))_
 
 > **let** age = 52;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01767))_
 
-> Context: Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01766))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01766))_
+
+> Rebinding parameters is usually avoided, but what about rebinding names we declare within a function? What we want is a statement that works like const, but permits us to rebind variables. JavaScript has such a thing, it’s called let:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01768))_
 
 > age = 53; age _//=> 53_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01768))_
 
 ### **mixing let and const**
 
@@ -3454,8 +4024,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01768))_
 - Shadowing a let with a const does not change our ability to rebind the variable in its original scope. _(javascriptallonge.pdf (source-range-83ecb080-01787))_
 - Shadowing a const with a let does not permit it to be rebound in its original scope. _(javascriptallonge.pdf (source-range-83ecb080-01791))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01785))_
+
 > If you dislike deliberately shadowing variables, you’ll probably take an even more opprobrious view of mixing const and let semantics with a shadowed variable:
-_(source: javascriptallonge.pdf (source-range-83ecb080-01785))_
 
 ### **var**
 
@@ -3469,29 +4040,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01785))_
 - In that way, var is a little like const and let, we should always declare and bind names before using them. _(javascriptallonge.pdf (source-range-83ecb080-01818))_
 - In that way, var is a little like const and let, we should always declare and bind names before using them. _(javascriptallonge.pdf (source-range-83ecb080-01818))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01798))_
+
 > **return** n * factorial2(x); } } factorial2(5) _//=> 120_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01798))_
 
-> Context: But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01802))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01802))_
 
-> **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01803))_
+> But, again, it is unwise to expect consistency. A function declaration can appear anywhere within a function, but the declaration _and_ the definition are hoisted. Note this example of a function that uses a helper:
 
-> Context: JavaScript hoists the let and the assignment. But not so with var:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01809))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01803))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01810))_
 
-> Context: JavaScript hoists the declaration, but not the assignment. It is as if we’d written:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01812))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01809))_
+
+> JavaScript hoists the let and the assignment. But not so with var:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01810))_
 
 > **const** factorial = (n) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01815))_
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01812))_
+
+> JavaScript hoists the declaration, but not the assignment. It is as if we’d written:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01815))_
+
+> **const** factorial = (n) => {
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01816))_
 
 > **let** innerFactorial = **undefined** ; **return** innerFactorial(n, 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01816))_
 
 ### **why const and let were invented**
 
@@ -3516,17 +4095,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01816))_
 - The purpose of your own code is to get things done. _(javascriptallonge.pdf (source-range-83ecb080-01845))_
 - That does not mean that you should follow the exact same practice in your own code: The purpose of this book is to illustrate certain principles of programming. _(javascriptallonge.pdf (source-range-83ecb080-01845))_
 
-> Context: We haven’t looked at it yet, but JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. Here it is with var: > 72There is a well known story about Karl Friedrich Gauss when he was in elementary school. His teacher got mad at the class and told them to add the numbers 1 to 100 and give him the answer by the end of the class. About 30 seconds later Gauss gave him the answer. The other kids were adding the numbers like this: 1 + 2 + 3 + . 
-_(context: javascriptallonge.pdf (source-range-83ecb080-01821, source-range-83ecb080-01824))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01821, source-range-83ecb080-01824))_
+
+> We haven’t looked at it yet, but JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. Here it is with var: > 72There is a well known story about Karl Friedrich Gauss when he was in elementary school. His teacher got mad at the class and told them to add the numbers 1 to 100 and give him the answer by the end of the class. About 30 seconds later Gauss gave him the answer. The other kids were adding the numbers like this: 1 + 2 + 3 + . 
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01822))_
 
 > **var** sum = 0; **for** ( **var** i = 1; i <= 100; i++) { sum = sum + i } sum #=> 5050
-_(source: javascriptallonge.pdf (source-range-83ecb080-01822))_
 
-> Context: Again, so far, so good. Let’s try one of our functions: What went wrong? Why didn’t it give us ‘Hello, Raganwald, my name is Friedrich’? The answer is that pesky var i. Remember that i is bound in the surrounding environment, so it’s as if we wrote:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01831, source-range-83ecb080-01833))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01831, source-range-83ecb080-01833))_
+
+> Again, so far, so good. Let’s try one of our functions: What went wrong? Why didn’t it give us ‘Hello, Raganwald, my name is Friedrich’? The answer is that pesky var i. Remember that i is bound in the surrounding environment, so it’s as if we wrote:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01832))_
 
 > introductions[1]('Raganwald') _//=> 'Hello, Raganwald, my name is undefined'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01832))_
 
 ## Copy on Write
 
@@ -3541,26 +4124,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01832))_
 - We’ll end up reinventing reference counting and garbage collection. _(javascriptallonge.pdf (source-range-83ecb080-01863))_
 - If we _know_ that a list doesn’t share any elements with another list, we can safely modify it. _(javascriptallonge.pdf (source-range-83ecb080-01863))_
 
-> Context: When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01854))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01854))_
+
+> When you take the rest of a linked list with its reference, you are given the exact same nodes of the elements of the original list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01855))_
 
 > The consequence of this is that if you have an array, and you take it’s “rest,” your “child” array is a copy of the elements of the parent array.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01855))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01858))_
 
 > Whereas if you have a linked list, and you take it’s “rest,” your “child” list shares its nodes with the “parent” list.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01858))_
 
-> Context: Let’s confirm our understanding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01859))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01859))_
+
+> Let’s confirm our understanding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01861))_
 
 > parentList.rest.rest.first = "three"; childList.first = "two";
-_(source: javascriptallonge.pdf (source-range-83ecb080-01861))_
 
-> Context: Let’s confirm our understanding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01859))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01859))_
+
+> Let’s confirm our understanding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01862))_
 
 > parentList _//=> {"first":1,"rest":{"first":"two","rest":{"first":"three","rest":{"first":\_ {},"rest":{}}}}} childList _//=> {"first":"two","rest":{"first":"three","rest":{"first":{},"rest":{}}}}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01862))_
 
 ### **a few utilities**
 
@@ -3568,11 +4158,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01862))_
 - before we go any further, let’s write a few naïve list utilities so that we can work at a slightly higher level of abstraction: _(javascriptallonge.pdf (source-range-83ecb080-01865))_
 - The main difference is that array[index] = value evaluates to value, while set(index, value, list) evaluates to the modified list. _(javascriptallonge.pdf (source-range-83ecb080-01873))_
 
-> Context: **const** copy = (node, head = **null** , tail = **null** ) => { **if** (node === EMPTY) { **return** head; } **else if** (tail === **null** ) { **const** { first, rest } = node; **const** newNode = { first, rest }; **return** copy(rest, newNode, newNode); } **else** { **const** { first, rest } = node; **const** newNode = { first, rest }; tail.rest = newNode; **return** copy(node.rest, head, newNode); } } **const** first = ({first, rest}) => first; **const** rest = ({first, rest}) => rest; **con
-_(context: javascriptallonge.pdf (source-range-83ecb080-01868))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01868))_
+
+> **const** copy = (node, head = **null** , tail = **null** ) => { **if** (node === EMPTY) { **return** head; } **else if** (tail === **null** ) { **const** { first, rest } = node; **const** newNode = { first, rest }; **return** copy(rest, newNode, newNode); } **else** { **const** { first, rest } = node; **const** newNode = { first, rest }; tail.rest = newNode; **return** copy(node.rest, head, newNode); } } **const** first = ({first, rest}) => first; **const** rest = ({first, rest}) => rest; **con
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01871))_
 
 > **const** childList = rest(parentList);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01871))_
 
 ### **copy-on-read**
 
@@ -3588,25 +4180,31 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01871))_
 - But before we fix that, let’s try being lazy about copying. _(javascriptallonge.pdf (source-range-83ecb080-01881))_
 - But before we fix that, let’s try being lazy about copying. _(javascriptallonge.pdf (source-range-83ecb080-01881))_
 
-> Context: So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01875))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01875))_
+
+> So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01876))_
 
 > **const** rest = ({first, rest}) => copy(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01876))_
 
-> Context: So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy. This strategy is called “copy-on-read”, because when we attempt the parent to “read” the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01875, source-range-83ecb080-01879))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01875, source-range-83ecb080-01879))_
+
+> So back to the problem of structure sharing. One strategy for avoiding problems is to be _pessimistic_ . Whenever we take the rest of a list, make a copy. This strategy is called “copy-on-read”, because when we attempt the parent to “read” the value of a child of the list, we make a copy and read the copy of the child. Thereafter, we can write to the parent or the copy of the child freely.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01878))_
 
 > parentList _//=> {"first":1,"rest":{"first":2,"rest":{"first":"three","rest":{"first":{},"\_ rest":{}}}}} childList //=> {"first":"two","rest":{"first":3,"rest":{"first":{},"rest":{}}}}
-_(source: javascriptallonge.pdf (source-range-83ecb080-01878))_
 
 ### **copy-on-write**
 
-> Context: Why are we copying? In case we modify a child list. Ok, what if we do this: Make the copy when we know we are modifying the list. When do we know that? When we call set. We’ll restore our original definition for rest, but change set:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01885))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01885))_
+
+> Why are we copying? In case we modify a child list. Ok, what if we do this: Make the copy when we know we are modifying the list. When do we know that? When we call set. We’ll restore our original definition for rest, but change set:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01886))_
 
 > **const** rest = ({first, rest}) => rest;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01886))_
 
 ### parentList
 
@@ -3639,23 +4237,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01886))_
 - It seems to be faster under certain circumstances, depending on the size of the loop and the relative costs of certain operations. _(javascriptallonge.pdf (source-range-83ecb080-01926))_
 - What’s interesting about these two algorithms is that they both _tangle_ two separate concerns: How to traverse a data structure, and what to do with the elements that you encounter. _(javascriptallonge.pdf (source-range-83ecb080-01927))_
 
-> Context: I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01909))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01909))_
+
+> I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01910))_
 
 > **const** EMPTY = **null** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01910))_
 
-> Context: I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01909))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01909))_
+
+> I went home and pondered the problem. I wanted to solve it. Eventually, I came up with something and tried it (In Java!) on my home PC. I sent him an email sharing my result, to demonstrate my ability to follow through. I then forgot about it for a while. Some time later, I was told that the correct solution was:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01911))_
 
 > **const** isEmpty = (node) => node === EMPTY;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01911))_
 
-> Context: **const** teleportingTurtle = (list) => { **let** speed = 1, rabbit = list, turtle = rabbit; **while** ( **true** ) { **for** ( **let** i = 0; i <= speed; i += 1) { rabbit = rabbit.rest; **if** (rabbit == **null** ) { **return false** ; } **if** (rabbit === turtle) { **return true** ; } } turtle = rabbit; speed *= 2; } **return false** ; }; **const** aList = list(1, 2, 3, 4, 5); teleportingTurtle(aList) _//=> false_ forceAppend(aList, aList.rest.rest);
-_(context: javascriptallonge.pdf (source-range-83ecb080-01924))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01924))_
+
+> **const** teleportingTurtle = (list) => { **let** speed = 1, rabbit = list, turtle = rabbit; **while** ( **true** ) { **for** ( **let** i = 0; i <= speed; i += 1) { rabbit = rabbit.rest; **if** (rabbit == **null** ) { **return false** ; } **if** (rabbit === turtle) { **return true** ; } } turtle = rabbit; speed *= 2; } **return false** ; }; **const** aList = list(1, 2, 3, 4, 5); teleportingTurtle(aList) _//=> false_ forceAppend(aList, aList.rest.rest);
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01925))_
 
 > teleportingTurtle(aList); _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01925))_
 
 ## Functional Iterators
 
@@ -3669,59 +4273,77 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01925))_
 - The sumFoldable function doesn’t care what kind of data structure we have, as long as it’s foldable. _(javascriptallonge.pdf (source-range-83ecb080-01949))_
 - We’ve found another way to express the principle of separating traversing a data structure from the operation we want to perform on that data structure, we’ve completely separated the knowledge of how to sum from the knowledge of how to fold an array or tree (or anything else, really). _(javascriptallonge.pdf (source-range-83ecb080-01956))_
 
-> Context: Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01933))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01933))_
+
+> Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01934))_
 
 > **const** arraySum = ([first, ...rest], accumulator = 0) => first === **undefined** ? accumulator : arraySum(rest, first + accumulator)
-_(source: javascriptallonge.pdf (source-range-83ecb080-01934))_
 
-> Context: Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01933))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01933))_
+
+> Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01935))_
 
 > arraySum([1, 4, 9, 16, 25]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01935))_
 
-> Context: As we saw earlier, this entangles the mechanism of traversing the array with the business of summing the bits. So we can separate them using fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01936))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01936))_
+
+> As we saw earlier, this entangles the mechanism of traversing the array with the business of summing the bits. So we can separate them using fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01938))_
 
 > **const** arraySum = callLeft(foldArrayWith, (a, b) => a + b, 0); arraySum([1, 4, 9, 16, 25]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01938))_
 
-> Context: Well, we call arraySum with an array, and it has baked into it a method for traversing the array. Perhaps we could extract both of those things. Let’s rearrange our code a bit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01941))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01941))_
+
+> Well, we call arraySum with an array, and it has baked into it a method for traversing the array. Perhaps we could extract both of those things. Let’s rearrange our code a bit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01944))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01944))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01945))_
 
 > **const** foldArrayWith = (fn, terminalValue, [first, ...rest]) => first === **undefined** ? terminalValue : fn(first, foldArrayWith(fn, terminalValue, rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01945))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01946))_
 
 > **const** foldArray = (array) => callRight(foldArrayWith, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01946))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01947))_
 
 > **const** sumFoldable = (folder) => folder((a, b) => a + b, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01947))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01948))_
 
 > sumFoldable(foldArray([1, 4, 9, 16, 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01948))_
 
-> Context: Here it is summing a tree of numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01950))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01950))_
+
+> Here it is summing a tree of numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01951))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01951))_
 
-> Context: Here it is summing a tree of numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01950))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01950))_
+
+> Here it is summing a tree of numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01953))_
 
 > **const** foldTree = (tree) => callRight(foldTreeWith, tree);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01953))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01954))_
 
 > **const** sumFoldable = (folder) => folder((a, b) => a + b, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01954))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01955))_
 
 > sumFoldable(foldTree([1, [4, [9, 16]], 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01955))_
 
 ### **iterating**
 
@@ -3738,17 +4360,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01955))_
 - The arrayIterator function takes an array and returns a function we can call repeatedly to obtain the elements of the array. _(javascriptallonge.pdf (source-range-83ecb080-01976))_
 - We can write a different iterator for a different data structure. _(javascriptallonge.pdf (source-range-83ecb080-01977))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01974))_
+
 > sum += eachIteration.value; } **return** sum; }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01974))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01975))_
 
 > iteratorSum(arrayIterator([1, 4, 9, 16, 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01975))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01982))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01982))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01983))_
 
 > **const** aListIterator = listIterator(list(1, 4, 9, 16, 25));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01983))_
 
 ### **unfolding and laziness**
 
@@ -3763,41 +4389,53 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-01983))_
 - We could also write a filter for iterators to accompany our mapping function: _(javascriptallonge.pdf (source-range-83ecb080-02009))_
 - Mapping and filtering iterators allows us to compose the parts we already have, rather than writing a tricky bit of code with ifs and whiles and boundary conditions. _(javascriptallonge.pdf (source-range-83ecb080-02013))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01988))_
 
 > **const** NumberIterator = (number = 0) => () => ({ done: **false** , value: number++ })
-_(source: javascriptallonge.pdf (source-range-83ecb080-01988))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01989))_
 
 > fromOne = NumberIterator(1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01989))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01990))_
 
 > fromOne().value; _//=> 1_ fromOne().value; _//=> 2_ fromOne().value; _//=> 3_ fromOne().value; _//=> 4_ fromOne().value; _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01990))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02007))_
 
 > **const** squareOf = callLeft(mapIteratorWith, (x) => x * x)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02007))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02008))_
 
 > toArray(take(squareOf(odds()), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02008))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02011))_
 
 > **const** oddsOf = callLeft(filterIteratorWith, (n) => n % 2 === 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02011))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02012))_
 
 > toArray(take(squareOf(oddsOf(NumberIterator(1))), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02012))_
 
 ### **bonus**
 
@@ -3810,17 +4448,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02012))_
 - JavaScript would apply fn to every element. _(javascriptallonge.pdf (source-range-83ecb080-02022))_
 - If array was very large, and fn very slow, this would consume a lot of unnecessary time. _(javascriptallonge.pdf (source-range-83ecb080-02022))_
 
-> Context: This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02020))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02020))_
+
+> This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02019))_
 
 > **const** firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02019))_
 
-> Context: This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02020))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02020))_
+
+> This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02021))_
 
 > **const** firstInArray = (fn, array) => array.filter(fn)[0];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02021))_
 
 ### **caveat**
 
@@ -3843,23 +4485,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02021))_
 - The oscin.es[77] library contains code for all of the standard combinators and for experimenting using the standard notation. _(javascriptallonge.pdf (source-range-83ecb080-02043))_
 - Let’s start with some of the building blocks of combinatory logic, the K, I, and V combinators, nicknamed the “Kestrel”, the “Idiot Bird”, and the “Vireo:” _(javascriptallonge.pdf (source-range-83ecb080-02044))_
 
-> Context: For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02033))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02033))_
+
+> For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02036))_
 
 > **const** EMPTY = {}; **const** OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02036))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02037))_
 
 > OneTwoThree.first _//=> 1_ OneTwoThree.rest.first _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02037))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02038))_
 
 > OneTwoThree.rest.rest.first _//=> 3_ **const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02038))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02039))_
 
 > length(OneTwoThree) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02039))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02049))_
 
 > **const** K = (x) => (y) => x; **const** I = (x) => (x); **const** V = (x) => (y) => (z) => z(x)(y);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02049))_
 
 ### **the kestrel and the idiot**
 
@@ -3870,56 +4518,73 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02049))_
 - Given two values, we can say that K always returns the _first_ value: K(x)(y) => x (that’s not valid JavaScript, but it’s essentially how it works). _(javascriptallonge.pdf (source-range-83ecb080-02060))_
 - Given two values, we can say that K always returns the _first_ value, and given two values, K(I) always returns the _second_ value. _(javascriptallonge.pdf (source-range-83ecb080-02074))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02053))_
+
 > **const** K = (x) => (y) => x; **const** fortyTwo = K(42);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02053))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02054))_
 
 > fortyTwo(6) _//=> 42_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02054))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02055))_
 
 > fortyTwo("Hello") _//=> 42_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02055))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02058))_
 
 > K(6)(7) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02058))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02059))_
 
 > K(12)(24) _//=> 12_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02059))_
 
-> Context: Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02061))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02061))_
+
+> Now, an interesting thing happens when we pass functions to each other. Consider K(I). From what we just wrote, K(x)(y) => x So K(I)(x) => I. Makes sense. Now let’s tack one more invocation on: What is K(I)(x)(y)? If K(I)(x) => I, then K(I)(x)(y) === I(y) which is y.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02062))_
 
 > Therefore, K(I)(x)(y) => y:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02062))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02065))_
 
 > K(I)(6)(7) _//=> 7_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02065))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02066))_
 
 > K(I)(12)(24) _//=> 24_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02066))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02068))_
 
 > K("primus")("secundus") _//=> "primus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02068))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02069))_
 
 > K(I)("primus")("secundus") _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02069))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02071))_
 
 > **const** first = K, second = K(I);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02071))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02072))_
 
 > first("primus")("secundus") _//=> "primus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02072))_
 
-> Context: If we are not feeling particularly academic, we can name our functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02070))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02070))_
+
+> If we are not feeling particularly academic, we can name our functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02073))_
 
 > second("primus")("secundus") _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02073))_
 
 ### **backwardness**
 
@@ -3928,38 +4593,49 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02073))_
 - So if we wanted to use them with a two-element array, we’d need to have a piece of code that calls some code. _(javascriptallonge.pdf (source-range-83ecb080-02086))_
 - Our latin data structure is no longer a dumb data structure, it’s a function. _(javascriptallonge.pdf (source-range-83ecb080-02093))_
 
-> Context: Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02076))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02076))_
+
+> Our first and second functions are a little different than what most people are used to when we talk about functions that access data. If we represented a pair of values as an array, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02079))_
 
 > **const** first = ([first, second]) => first, second = ([first, second]) => second;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02079))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02080))_
 
 > **const** latin = ["primus", "secundus"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02080))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02081))_
 
 > first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02081))_
 
-> Context: Or if we were using a POJO, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02082))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02082))_
+
+> Or if we were using a POJO, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02083))_
 
 > **const** first = ({first, second}) => first, second = ({first, second}) => second; **const** latin = {first: "primus", second: "secundus"};
-_(source: javascriptallonge.pdf (source-range-83ecb080-02083))_
 
-> Context: Or if we were using a POJO, we’d write them like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02082))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02082))_
+
+> Or if we were using a POJO, we’d write them like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02084))_
 
 > first(latin) _//=> "primus"_ second(latin) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02084))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02088))_
 
 > **const** first = K, second = K(I);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02088))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02089))_
 
 > **const** latin = (selector) => selector("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02089))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02090))_
 
 > latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02090))_
 
 ### **the vireo**
 
@@ -3971,41 +4647,53 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02090))_
 - One notable example is the “thrush” or T combinator: It takes one value and applies it to a function. _(javascriptallonge.pdf (source-range-83ecb080-02114))_
 - As an aside, the Vireo is a little like JavaScript’s .apply function. _(javascriptallonge.pdf (source-range-83ecb080-02114))_
 
-> Context: For “data” we access with K and K(I), our “structure” is the function (selector) => selector("primus")("secundus"). Let’s extract those into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02096))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02096))_
+
+> For “data” we access with K and K(I), our “structure” is the function (selector) => selector("primus")("secundus"). Let’s extract those into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02097))_
 
 > (first, second) => (selector) => selector(first)(second)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02097))_
 
-> Context: For consistency with the way combinators are written as functions taking just one parameter, we’ll curry[78] the function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02098))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02098))_
+
+> For consistency with the way combinators are written as functions taking just one parameter, we’ll curry[78] the function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02099))_
 
 > (first) => (second) => (selector) => selector(first)(second)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02099))_
 
-> Context: Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
-_(context: javascriptallonge.pdf (source-range-83ecb080-02100))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02100))_
+
+> Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02101))_
 
 > **const** first = K, second = K(I), pair = (first) => (second) => (selector) => selector(first)(second);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02101))_
 
-> Context: Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
-_(context: javascriptallonge.pdf (source-range-83ecb080-02100))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02100))_
+
+> Let’s try it, we’ll use the word pair for the function that makes data (When we need to refer to a specific pair, we’ll use the name aPair by default):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02102))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02102))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02107))_
 
 > If we change the names to x, y, and z, we get: (x) => (y) => (z) => z(x)(y).
-_(source: javascriptallonge.pdf (source-range-83ecb080-02107))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02111))_
 
 > **const** first = K, second = K(I), pair = V;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02111))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02112))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02112))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02113))_
 
 > latin(first) _//=> "primus"_ latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02113))_
 
 ### **lists with functions as data**
 
@@ -4016,23 +4704,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02113))_
 - Presto, **we can use pure functions to represent a linked list** . _(javascriptallonge.pdf (source-range-83ecb080-02133))_
 - We used functions to replace arrays and POJOs, but we still use JavaScript’s built-in operators to test for equality (===) and to branch ?:. _(javascriptallonge.pdf (source-range-83ecb080-02137))_
 
-> Context: We can write length and mapWith functions over it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02119))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02119))_
+
+> We can write length and mapWith functions over it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02122))_
 
 > **const** length = (aPair) => aPair === EMPTY ? 0 : 1 + length(rest(aPair));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02122))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02123))_
 
 > length(l123) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02123))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02125))_
 
 > **const** doubled = mapWith((x) => x * 2, l123); first(doubled) _//=> 2_ first(rest(doubled)) _//=> 4_ first(rest(rest(doubled))) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02125))_
 
-> Context: Can we do the same with the linked lists we build out of functions? Yes:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02126))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02126))_
+
+> Can we do the same with the linked lists we build out of functions? Yes:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02127))_
 
 > **const** first = K, rest = K(I), pair = V, EMPTY = (() => {}); **const** l123 = pair(1)(pair(2)(pair(3)(EMPTY))); l123(first) _//=> 1_ l123(rest)(first)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02127))_
 
 ### **say “please”**
 
@@ -4044,41 +4738,53 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02127))_
 - We can write reverse and mapWith as well. _(javascriptallonge.pdf (source-range-83ecb080-02158))_
 - We have managed to provide the exact same functionality that === and ?: provided, but using functions and nothing else. _(javascriptallonge.pdf (source-range-83ecb080-02162))_
 
-> Context: We can reverse this: Instead of asking a pair if it is empty and then deciding what to do, we can ask the pair to do it for us. Here’s length again:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02140))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02140))_
+
+> We can reverse this: Instead of asking a pair if it is empty and then deciding what to do, we can ask the pair to do it for us. Here’s length again:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02141))_
 
 > **const** length = (aPair) => aPair === EMPTY ? 0 : 1 + length(aPair(rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02141))_
 
-> Context: Let’s presume we are working with a slightly higher abstraction, we’ll call it a list. Instead of writing length(list) and examining a list, we’ll write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02142))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02142))_
+
+> Let’s presume we are working with a slightly higher abstraction, we’ll call it a list. Instead of writing length(list) and examining a list, we’ll write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02143))_
 
 > **const** length = (list) => list( () => 0, (aPair) => 1 + length(aPair(rest))) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02143))_
 
-> Context: We’ll also write a handy list printer:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02149))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02149))_
+
+> We’ll also write a handy list printer:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02150))_
 
 > **const** print = (list) => list( () => "", (aPair) => ` **${** aPair(pairFirst) **} ${** print(aPair(pairRest)) **}** ` );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02150))_
 
-> Context: How would all this work? Let’s start with the obvious. What is an empty list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-02151))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02151))_
+
+> How would all this work? Let’s start with the obvious. What is an empty list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02152))_
 
 > **const** EMPTYLIST = (whenEmpty, unlessEmpty) => whenEmpty()
-_(source: javascriptallonge.pdf (source-range-83ecb080-02152))_
 
-> Context: And what is a node of a list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-02153))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02153))_
+
+> And what is a node of a list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02154))_
 
 > **const** node = (x) => (y) => (whenEmpty, unlessEmpty) => unlessEmpty(pair(x)(y));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02154))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02156))_
 
 > **const** l123 = node(1)(node(2)(node(3)(EMPTYLIST)));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02156))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02157))_
 
 > print(l123) _//=> 1 2 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02157))_
 
 ### **functions are not the real point**
 
@@ -4114,44 +4820,57 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02157))_
 - There are many tools for hiding implementation information, and we have now seen two particularly powerful patterns: _(javascriptallonge.pdf (source-range-83ecb080-02197))_
 - - Instead of directly manipulating part of an entity, pass it a function and have it call our function with the part we want. _(javascriptallonge.pdf (source-range-83ecb080-02198))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02179))_
 
 > **const** first = K, second = K(I), pair = (first) => (second) => { **const** pojo = {first, second};
-_(source: javascriptallonge.pdf (source-range-83ecb080-02179))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02180))_
 
 > **return** (selector) => selector(pojo.first)(pojo.second); };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02180))_
 
-> Context: The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02178))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02178))_
+
+> The exact implementation of a pair is hidden from the code that uses a pair. Here, we’ll prove it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02181))_
 
 > **const** latin = pair("primus")("secundus");
-_(source: javascriptallonge.pdf (source-range-83ecb080-02181))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02184))_
 
 > latin(second) _//=> "secundus"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02184))_
 
-> Context: This is a little gratuitous, but it makes the point: The code that uses the data doesn’t reach in and touch it: The code that uses the data provides some code and asks the data to do something with it. The same thing happens with our lists. Here’s length for lists:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02185))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02185))_
+
+> This is a little gratuitous, but it makes the point: The code that uses the data doesn’t reach in and touch it: The code that uses the data provides some code and asks the data to do something with it. The same thing happens with our lists. Here’s length for lists:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02186))_
 
 > **const** length = (list) => list( () => 0, (aPair) => 1 + length(aPair(pairRest))) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02186))_
 
-> Context: We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02190))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02190))_
+
+> We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02191))_
 
 > **const** length = (node, delayed = 0) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-02191))_
 
-> Context: We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02190))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02190))_
+
+> We won’t bother here, but it’s easy to see how to swap our functions out and replace them with an array. Or a column in a database. This is fundamentally _not_ the same thing as this code for the length of a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02192))_
 
 > node === EMPTY
-_(source: javascriptallonge.pdf (source-range-83ecb080-02192))_
 
 ## Recipes with Data
 
@@ -4177,62 +4896,81 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02192))_
 - If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result: _(javascriptallonge.pdf (source-range-83ecb080-02228))_
 - mapWith is a very convenient abstraction for a very common pattern. _(javascriptallonge.pdf (source-range-83ecb080-02231))_
 
-> In JavaScript, arrays have a .map method. Map takes a function as an argument, and applies it to each of the elements of the array, then returns the results in another array. For example:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02212))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02212))_
 
-> Context: In JavaScript, arrays have a .map method. Map takes a function as an argument, and applies it to each of the elements of the array, then returns the results in another array. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02212))_
+> In JavaScript, arrays have a .map method. Map takes a function as an argument, and applies it to each of the elements of the array, then returns the results in another array. For example:
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02212))_
+
+> In JavaScript, arrays have a .map method. Map takes a function as an argument, and applies it to each of the elements of the array, then returns the results in another array. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02213))_
 
 > [1, 2, 3, 4, 5].map(x => x * x) _//=> [1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02213))_
 
-> Context: We could write a function that behaves like the .map method if we wanted:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02214))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02214))_
+
+> We could write a function that behaves like the .map method if we wanted:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02215))_
 
 > **const** map = (list, fn) => list.map(fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02215))_
 
-> Context: **const** map = (list, fn) => list.map(fn); That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02215, source-range-83ecb080-02219))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02215, source-range-83ecb080-02219))_
+
+> **const** map = (list, fn) => list.map(fn); That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02217))_
 
 > **const** mapWith = (fn) => (list) => list.map(fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02217))_
 
-> Context: That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02219))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02219))_
+
+> That means that you can pass a function to mapWith and get back a function that applies that mapping to any array. For example, we might need a function to return the squares of an array. Instead of writing a a wrapper around .map:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02220))_
 
 > **const** squaresOf = (list) => list.map(x => x * x);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02220))_
 
-> Context: **const** squaresOf = (list) => list.map(x => x * x);
-_(context: javascriptallonge.pdf (source-range-83ecb080-02220))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02220))_
+
+> **const** squaresOf = (list) => list.map(x => x * x);
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02221))_
 
 > squaresOf([1, 2, 3, 4, 5]) _//=> [1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02221))_
 
-> Context: > 82Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It’s the same idea, after all. If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02223, source-range-83ecb080-02228))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02223, source-range-83ecb080-02228))_
+
+> > 82Yes, we also used the name mapWith for working with ordinary collections elsewhere. If we were writing a library of functions, we would have to disambiguate the two kinds of mapping functions with special names, namespaces, or modules. But for the purposes of discussing ideas, we can use the same name twice in two different contexts. It’s the same idea, after all. If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02226))_
 
 > **const** squaresOf = mapWith(n => n * n);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02226))_
 
-> Context: If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02228))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02228))_
+
+> If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02227))_
 
 > squaresOf([1, 2, 3, 4, 5]) _//=> [1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02227))_
 
-> Context: If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02228))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02228))_
+
+> If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02229))_
 
 > **const** squaresOf = callRight(map, (n => n * n);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02229))_
 
-> Context: If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02228))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02228))_
+
+> If we didn’t use mapWith, we’d could have also used callRight with map to accomplish the same result:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02230))_
 
 > squaresOf([1, 2, 3, 4, 5]) _//=> [1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02230))_
 
 ## Flip
 
@@ -4242,87 +4980,113 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02230))_
 - What we have now is a function that takes a function and “flips” the order of arguments around, then curries it. _(javascriptallonge.pdf (source-range-83ecb080-02253))_
 - What we have now is a function that takes a function and “flips” the order of arguments around, then curries it. _(javascriptallonge.pdf (source-range-83ecb080-02253))_
 
-> Context: We wrote mapWith like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02238))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02238))_
+
+> We wrote mapWith like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02239))_
 
 > **const** mapWith = (fn) => (list) => list.map(fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02239))_
 
-> Context: Let’s consider the case whether we have a map function of our own, perhaps from the allong.es[84] library, perhaps from Underscore[85] . We could write our function something like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02240))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02240))_
+
+> Let’s consider the case whether we have a map function of our own, perhaps from the allong.es[84] library, perhaps from Underscore[85] . We could write our function something like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02241))_
 
 > **const** mapWith = (fn) => (list) => map(list, fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02241))_
 
-> Context: **const** mapWith = (fn) => (list) => map(list, fn);
-_(context: javascriptallonge.pdf (source-range-83ecb080-02241))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02241))_
+
+> **const** mapWith = (fn) => (list) => map(list, fn);
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02242))_
 
 > You can see that if we simplify it:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02242))_
 
-> Context: Looking at this, we see we’re conflating two separate transformations. First, we’re reversing the order of arguments. You can see that if we simplify it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02242))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02242))_
+
+> Looking at this, we see we’re conflating two separate transformations. First, we’re reversing the order of arguments. You can see that if we simplify it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02243))_
 
 > **const** mapWith = (fn, list) => map(list, fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02243))_
 
-> Context: Second, we’re “currying” the function so that instead of defining a function that takes two arguments, it returns a function that takes the first argument and returns a function that takes the second argument and applies them both, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02244))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02244))_
+
+> Second, we’re “currying” the function so that instead of defining a function that takes two arguments, it returns a function that takes the first argument and returns a function that takes the second argument and applies them both, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02245))_
 
 > **const** mapper = (list) => (fn) => map(list, fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02245))_
 
-> Context: Let’s return to the implementation of mapWith that relies on a map function rather than a method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02246))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02246))_
+
+> Let’s return to the implementation of mapWith that relies on a map function rather than a method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02247))_
 
 > **const** mapWith = (fn) => (list) => map(list, fn);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02247))_
 
-> Context: We’re going to extract these two operations by refactoring our function to paramaterize map. The first step is to give our parameters generic names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02248))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02248))_
+
+> We’re going to extract these two operations by refactoring our function to paramaterize map. The first step is to give our parameters generic names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02249))_
 
 > **const** mapWith = (first) => (second) => map(second, first);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02249))_
 
-> Context: We’re going to extract these two operations by refactoring our function to paramaterize map. The first step is to give our parameters generic names:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02248))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02248))_
+
+> We’re going to extract these two operations by refactoring our function to paramaterize map. The first step is to give our parameters generic names:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02251))_
 
 > **const** wrapper = (fn) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-02251))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02252))_
 
 > (first) => (second) => fn(second, first);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02252))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02258))_
 
 > **const** flipAndCurry = (fn) => (first) => (second) => fn(second, first);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02258))_
 
-> Context: Sometimes you want to flip, but not curry:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02259))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02259))_
+
+> Sometimes you want to flip, but not curry:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02260))_
 
 > **const** flip = (fn) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-02260))_
 
-> Context: Sometimes you want to flip, but not curry:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02259))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02259))_
+
+> Sometimes you want to flip, but not curry:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02261))_
 
 > (first, second) => fn(second, first);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02261))_
 
-> Context: This is gold. Consider how we define mapWith now:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02262))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02262))_
+
+> This is gold. Consider how we define mapWith now:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02263))_
 
 > **var** mapWith = flipAndCurry(map);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02263))_
 
 ### **self-currying flip**
 
 - Sometimes we’ll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). _(javascriptallonge.pdf (source-range-83ecb080-02266))_
 
-> Context: Sometimes we’ll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). We _could_ make that into flip:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02266))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02266))_
+
+> Sometimes we’ll want to flip a function, but retain the flexibility to call it in its curried form (pass one parameter) or non-curried form (pass both). We _could_ make that into flip:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02268))_
 
 > Now if we write mapWith = flip(map), we can call mapWith(fn, list) or mapWith(fn)(list), our choice.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02268))_
 
 ### **flipping methods**
 
@@ -4334,23 +5098,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02268))_
 
 - Both needs can be met with Object.assign, a standard function. _(javascriptallonge.pdf (source-range-83ecb080-02282))_
 
-> Context: It’s very common to want to “extend” an object by assigning properties to it:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02278))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02278))_
+
+> It’s very common to want to “extend” an object by assigning properties to it:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02279))_
 
 > **const** inventory = { apples: 12, oranges: 12 }; inventory.bananas = 54; inventory.pears = 24;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02279))_
 
-> Context: Both needs can be met with Object.assign, a standard function. You can copy an object by extending an empty object:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02282))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02282))_
+
+> Both needs can be met with Object.assign, a standard function. You can copy an object by extending an empty object:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02283))_
 
 > Object.assign({}, { apples: 12, oranges: 12 }) _//=> { apples: 12, oranges: 12 }_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02283))_
 
-> Context: You can extend one object with another:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02284))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02284))_
+
+> You can extend one object with another:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02285))_
 
 > **const** inventory = { apples: 12, oranges: 12 }; **const** shipment = { bananas: 54, pears: 24 } Object.assign(inventory, shipment)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02285))_
 
 ### });
 
@@ -4366,17 +5136,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02285))_
 - Another friendly tip: Change some of the fat arrow functions inside of it into named function expressions to help you decipher stack traces. _(javascriptallonge.pdf (source-range-83ecb080-02310))_
 - Another friendly tip: Change some of the fat arrow functions inside of it into named function expressions to help you decipher stack traces. _(javascriptallonge.pdf (source-range-83ecb080-02310))_
 
-> Context: This is the canonical Y Combinator[86] :
-_(context: javascriptallonge.pdf (source-range-83ecb080-02300))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02300))_
+
+> This is the canonical Y Combinator[86] :
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02301))_
 
 > **const** Y = (f) => ( x => f(v => x(x)(v)) )( x => f(v => x(x)(v)) );
-_(source: javascriptallonge.pdf (source-range-83ecb080-02301))_
 
-> Context: One tip is to use JavaScript to name things. For example, you could start by writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02307))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02307))_
+
+> One tip is to use JavaScript to name things. For example, you could start by writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02308))_
 
 > **const** Y = (f) => { **const** something = x => f(v => x(x)(v));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02308))_
 
 ## A Warm Cup: Basic Strings and Quasi-Literals
 
@@ -4390,11 +5164,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02308))_
 - String manipulation is extremely common in programming. _(javascriptallonge.pdf (source-range-83ecb080-02323))_
 - Writing is a big part of what makes us human, and strings are how JavaScript and most other languages represent writing. _(javascriptallonge.pdf (source-range-83ecb080-02323))_
 
-> Context: There are operators that can be used on strings. The most common is +, it _concatenates_ :
-_(context: javascriptallonge.pdf (source-range-83ecb080-02321))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02321))_
+
+> There are operators that can be used on strings. The most common is +, it _concatenates_ :
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02322))_
 
 > 'fu' + 'bar' _//=> 'fubar'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02322))_
 
 ### **quasi-literals**
 
@@ -4406,35 +5182,45 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02322))_
 - However, there is a big semantic difference between a quasi-literal and an expression. _(javascriptallonge.pdf (source-range-83ecb080-02338))_
 - Quasi-literals are expressions that resemble their result. _(javascriptallonge.pdf (source-range-83ecb080-02338))_
 
-> Context: Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02328))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02328))_
+
+> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02326))_
 
 > `foobar` _//=> 'foobar'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02326))_
 
-> Context: Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02328))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02328))_
+
+> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02327))_
 
 > `fizz` + `buzz` _//=> 'fizzbuzz'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02327))_
 
-> Context: For example: A quasi-literal is computationally equivalent to an expression using +. So the above expression could also be written:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02329, source-range-83ecb080-02332))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02329, source-range-83ecb080-02332))_
+
+> For example: A quasi-literal is computationally equivalent to an expression using +. So the above expression could also be written:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02330))_
 
 > - `A popular number for nerds is **${** 40 + 2 **}** `
-_(source: javascriptallonge.pdf (source-range-83ecb080-02330))_
 
-> Context: However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02338))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02338))_
+
+> However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02336))_
 
 > - 'A popular number for nerds is ' + (40 + 2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02336))_
 
-> Context: However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02338))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02338))_
+
+> However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02339))_
 
 > - 'A popular number for nerds is' + (40 + 2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02339))_
 
 ### **evaluation time**
 
@@ -4443,17 +5229,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02339))_
 - Thus, name is not bound to "Harry", it is bound to 'Arthur Dent', the value of the parameter when the function is invoked. _(javascriptallonge.pdf (source-range-83ecb080-02348))_
 - JavaScript evaluates the quasi-literal when the function is invoked and the quasi-literal inside the function’s body is evaluated. _(javascriptallonge.pdf (source-range-83ecb080-02348))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02344))_
+
 > **const** name = "Harry";
-_(source: javascriptallonge.pdf (source-range-83ecb080-02344))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02345))_
 
 > **const** greeting = (name) => `Hello my name is **${** name **}** `;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02345))_
 
-> Context: This is exactly what we’d expect if we’d written it like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02349))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02349))_
+
+> This is exactly what we’d expect if we’d written it like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02350))_
 
 > **const** greeting = (name) => 'Hello my name is ' + name;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02350))_
 
 ## Served by the Pot: Collections
 
@@ -4482,47 +5272,61 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02350))_
 - If we write a program with the presumption that “everything is an object,” we can write maps, folds, and filters that work on objects. _(javascriptallonge.pdf (source-range-83ecb080-02393))_
 - Our functions don’t need to know anything about how an object implements iteration, and we get the benefit of lazily traversing our objects. _(javascriptallonge.pdf (source-range-83ecb080-02393))_
 
-> **const** iter = stack.iterator(); iter().value _//=> "you!"_ iter().value _//=> "to"_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02373))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02373))_
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+> **const** iter = stack.iterator(); iter().value _//=> "you!"_ iter().value _//=> "to"_
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02379))_
 
 > **const** iteratorSum = (iterator) => { **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02379))_
 
-> Context: And here’s a sum function implemented as a fold over a functional iterator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02378))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02378))_
+
+> And here’s a sum function implemented as a fold over a functional iterator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02380))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02380))_
 
-> Context: We can use it with our stack:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02381))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02381))_
+
+> We can use it with our stack:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02384))_
 
 > **const** stack = Stack1();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02384))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02389))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection.iterator();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02389))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02390))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02390))_
 
-> Context: We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02388))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02388))_
+
+> We could save a step and write collectionSum, a function that folds over any object, provided that the object implements an .iterator method:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02391))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02391))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02392))_
 
 > collectionSum(stack) _//=> 6_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02392))_
 
 ### **iterator objects**
 
@@ -4536,20 +5340,25 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02392))_
 - But having started by building functional iterators, we understand what is happening underneath the object’s scaffolding. _(javascriptallonge.pdf (source-range-83ecb080-02410))_
 - Now our .iterator() method is returning an iterator object. _(javascriptallonge.pdf (source-range-83ecb080-02410))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02404))_
+
 > **const** stack = Stack2();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02404))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02406))_
 
 > **const** collectionSum = (collection) => { **const** iterator = collection.iterator();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02406))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02407))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02407))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02408))_
 
 > **while** ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02408))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02409))_
 
 > collectionSum(stack) _//=> 2015_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02409))_
 
 ### **iterables**
 
@@ -4571,55 +5380,70 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02409))_
 - For example, if we spread a large collection just to find an element in the collection, it might have been wiser to iterate over the element using its iterator directly. _(javascriptallonge.pdf (source-range-83ecb080-02444))_
 - And if we have an infinite collection, spreading is going to fail outright as we’re about to see. _(javascriptallonge.pdf (source-range-83ecb080-02445))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02424))_
+
 > **const** collectionSum = (collection) => { **const** iterator = collection[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02424))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02425))_
 
 > **let** eachIteration, sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02425))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02426))_
 
 > **while** ((eachIteration = iterator.next(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum } collectionSum(stack) _//=> 2015_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02426))_
 
-> Context: Indeed we do. Behold the for...of loop:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02428))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02428))_
+
+> Indeed we do. Behold the for...of loop:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02429))_
 
 > **const** iterableSum = (iterable) => { **let** sum = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02429))_
 
-> Context: Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02438))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02438))_
+
+> Now is the time to note that we can spread any iterable. So we can spread the elements of an iterable into an array literal:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02439))_
 
 > - ['some squares', ...someSquares] _//=> ["some squares", 1, 4, 9, 16, 25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02439))_
 
-> Context: And we can also spread the elements of an array literal into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02440))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02441))_
 
 > **const** firstAndSecondElement = (first, second) => ({first, second})
-_(source: javascriptallonge.pdf (source-range-83ecb080-02441))_
 
-> Context: And we can also spread the elements of an array literal into parameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02440))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02440))_
+
+> And we can also spread the elements of an array literal into parameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02442))_
 
 > firstAndSecondElement(...stack) _//=> {"first":5,"second":10}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02442))_
 
 ### **iterables out to infinity**
 
 - There are useful things we can do with iterables representing an infinitely large collection. _(javascriptallonge.pdf (source-range-83ecb080-02449))_
 - Attempting to spread an infinite iterable into an array is always going to fail. _(javascriptallonge.pdf (source-range-83ecb080-02455))_
 
-> Context: Iterables needn’t represent finite collections:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02447))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02447))_
+
+> Iterables needn’t represent finite collections:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02448))_
 
 > **const** Numbers = { [Symbol.iterator] () { **let** n = 0; **return** { next: () => ({done: **false** , value: n++}) } } }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02448))_
 
-> Context: There are useful things we can do with iterables representing an infinitely large collection. But let’s point out what we can’t do with them:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02449))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02449))_
+
+> There are useful things we can do with iterables representing an infinitely large collection. But let’s point out what we can’t do with them:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02452))_
 
 > ['all the numbers', ...Numbers] _//=> infinite loop!_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02452))_
 
 ### **ordered collections**
 
@@ -4634,11 +5458,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02452))_
 - Every time we get an iterator from an ordered collection, we start iterating from the beginning. _(javascriptallonge.pdf (source-range-83ecb080-02467))_
 - Right now, we’re just looking at ordered collections. _(javascriptallonge.pdf (source-range-83ecb080-02467))_
 
-> Context: The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02457))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02457))_
+
+> The iterables we’re discussing represent _ordered collections_ . One of the semantic properties of an ordered collection is that every time you iterate over it, you get its elements in order, from the beginning. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02458))_
 
 > **const** abc = ["a", "b", "c"];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02458))_
 
 ### **operations on ordered collections**
 
@@ -4664,32 +5490,41 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02458))_
 - first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. _(javascriptallonge.pdf (source-range-83ecb080-02501))_
 - like our other operations, rest preserves the ordered collection semantics of its argument. _(javascriptallonge.pdf (source-range-83ecb080-02503))_
 
-> Context: Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02475))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02475))_
+
+> Many operations on ordered collections return another ordered collection. They do so by taking care to iterate over a result freshly every time we get an iterator for them. Consider this example for mapWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02476))_
 
 > **const** Evens = mapWith((x) => 2 * x, Numbers);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02476))_
 
-> Context: Mind you, we can also map non-collection iterables, like RandomNumbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02484))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02484))_
+
+> Mind you, we can also map non-collection iterables, like RandomNumbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02485))_
 
 > **const** ZeroesToNines = mapWith((n) => Math.floor(10 * limit), RandomNumbers);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02485))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02491))_
 
 > mapWith can get a new iterator from RandomNumbers each time we iterate over ZeroesToNines, but if RandomNumbers doesn’t behave like an ordered collection, that’s not mapWith’s fault.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02491))_
 
-> Context: And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02497))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02497))_
+
+> And here’s a computation performed using operations on ordered collections: We’ll create an ordered collection of square numbers that end in one and are less than 1,000:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02499))_
 
 > [...UpTo1000] _//=>_ [1,81,121,361,441,841,961] [...UpTo1000] _//=>_ [1,81,121,361,441,841,961]
-_(source: javascriptallonge.pdf (source-range-83ecb080-02499))_
 
-> Context: For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02501))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02501))_
+
+> For completeness, here are two more handy iterable functions. first returns the first element of an iterable (if it has one), and rest returns an iterable that iterates over all but the first element of an iterable. They are equivalent to destructuring arrays with [first, ...rest]:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02502))_
 
 > **const** first = (iterable) => iterable[Symbol.iterator]().next().value; **const** rest = (iterable) => ({ [Symbol.iterator] () { **const** iterator = iterable[Symbol.iterator](); iterator.next(); **return** iterator; } });
-_(source: javascriptallonge.pdf (source-range-83ecb080-02502))_
 
 ### **from**
 
@@ -4701,29 +5536,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02502))_
 - As you recall, functions are mutable objects. _(javascriptallonge.pdf (source-range-83ecb080-02510))_
 - Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that: _(javascriptallonge.pdf (source-range-83ecb080-02516))_
 
-> Context: One useful thing is to write a .from function that gathers an iterable into a particular collection type. JavaScript’s built-in Array class already has one:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02508))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02508))_
+
+> One useful thing is to write a .from function that gathers an iterable into a particular collection type. JavaScript’s built-in Array class already has one:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02509))_
 
 > Array.from(UpTo1000) _//=> [1,81,121,361,441,841,961]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02509))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02512))_
 
 > Stack3.from = **function** (iterable) { **const** stack = **this** ();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02512))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02514))_
 
 > Pair1.from = (iterable) => ( **function** iterationToList (iteration) { **const** {done, value} = iteration.next();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02514))_
 
-> Context: Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02516))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02516))_
+
+> Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02517))_
 
 > **const** numberList = Pair1.from(untilWith((x) => x > 10, Numbers));
-_(source: javascriptallonge.pdf (source-range-83ecb080-02517))_
 
-> Context: Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02516))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02516))_
+
+> Now we can go “end to end,” If we want to map a linked list of numbers to a linked list of the squares of some numbers, we can do that:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02518))_
 
 > Pair1.from(Squares) _//=> {"first":0,_ "rest":{"first":1, "rest":{"first":4, "rest":{ ...
-_(source: javascriptallonge.pdf (source-range-83ecb080-02518))_
 
 ### **summary**
 
@@ -4748,17 +5591,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02518))_
 - And magically, the numbers would pour forth. _(javascriptallonge.pdf (source-range-83ecb080-02541))_
 - Well, there are some collections that are much easier to generate than to iterate over. _(javascriptallonge.pdf (source-range-83ecb080-02545))_
 
-> Context: Let’s consider how they work. Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02531))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02531))_
+
+> Let’s consider how they work. Whether it’s a simple functional iterator, or an iterable object with a .next() method, an iterator is something we call repeatedly until it tells us that it’s done.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02532))_
 
 > Iterators have to arrange its own state such that when you call them, they compute and return the next item.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02532))_
 
-> Context: Of course, when we have some code that makes a bunch of something, we don’t usually write it like that. We usually just write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02538))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02538))_
+
+> Of course, when we have some code that makes a bunch of something, we don’t usually write it like that. We usually just write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02539))_
 
 > **let** n = 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02539))_
 
 ### **recursive iterators**
 
@@ -4772,17 +5619,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02539))_
 - A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re reinventing the use of a stack to manage recursion, because writing our code to respond to a function call makes us turn a simple recursive algorithm inside-out. _(javascriptallonge.pdf (source-range-83ecb080-02558))_
 - A less kind way to put it is that the iteration version is greenspunning something built into our programming language: We’re reinventing the use of a stack to manage recursion, because writing our code to respond to a function call makes us turn a simple recursive algorithm inside-out. _(javascriptallonge.pdf (source-range-83ecb080-02558))_
 
-> Context: They’re of approximately equal complexity. So why bring up generation? Well, there are some collections that are much easier to generate than to iterate over. Let’s look at one:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02545))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02545))_
+
+> They’re of approximately equal complexity. So why bring up generation? Well, there are some collections that are much easier to generate than to iterate over. Let’s look at one:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02547))_
 
 > One of those cases is when we have to recursively enumerate something.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02547))_
 
-> Context: For example, iterating over a tree. Given an array that might contain arrays, let’s say we want to generate all the “leaf” elements, i.e. elements that are not, themselves, iterable.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02548))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02548))_
+
+> For example, iterating over a tree. Given an array that might contain arrays, let’s say we want to generate all the “leaf” elements, i.e. elements that are not, themselves, iterable.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02549))_
 
 > _// Generation_ **const** isIterable = (something) => !!something[Symbol.iterator];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02549))_
 
 ### **state machines**
 
@@ -4799,26 +5650,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02549))_
 - In a generator, we write “do this, then this, then this.” In an iterator, we have to wrap that up and explicitly keep track of what step we’re on. _(javascriptallonge.pdf (source-range-83ecb080-02587))_
 - So we see the same thing: The generation version has state, but it’s implicit in JavaScript’s linear control flow. _(javascriptallonge.pdf (source-range-83ecb080-02588))_
 
-> Context: Let’s write a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02564))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02564))_
+
+> Let’s write a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02566))_
 
 > **const** fibonacci = () => { **let** a, b;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02566))_
 
-> Context: Let’s write a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02564))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02564))_
+
+> Let’s write a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02567))_
 
 > console.log(a = 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02567))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02568))_
 
 > console.log(b = 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02568))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02569))_
 
 > **while** ( **true** ) { [a, b] = [b, a + b]; console.log(b); }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02569))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02588))_
 
 > Whereas the iteration version must make that state explicit.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02588))_
 
 ### **javascript’s generators**
 
@@ -4836,26 +5694,33 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02588))_
 - Invoking only more than once gives us fresh iterators each time: _(javascriptallonge.pdf (source-range-83ecb080-02604))_
 - It yields the value of something, and then it’s done. _(javascriptallonge.pdf (source-range-83ecb080-02608))_
 
-> Context: 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02593))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02593))_
+
+> 2. We don’t return values or output them to console.log. We “yield” values using the yield keyword.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02594))_
 
 > When we invoke the function, we get an iterator object back.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02594))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02598))_
 
 > When we invoke empty, we get an iterator with no elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02598))_
 
-> Context: Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02604))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02604))_
+
+> Invoking only("you") returns an iterator that we can call with .next(), and it yields "you". Invoking only more than once gives us fresh iterators each time:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02605))_
 
 > only("you").next() _//=>_ {"done": **false** , value: "you"} only("the lonely").next() _//=>_ {"done": **false** , value: "the lonely"}
-_(source: javascriptallonge.pdf (source-range-83ecb080-02605))_
 
-> Context: We can invoke the same iterator twice:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02606))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02606))_
+
+> We can invoke the same iterator twice:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02607))_
 
 > **const** sixteen = only("sixteen"); sixteen.next() _//=>_ {"done": **false** , value: "sixteen"} sixteen.next() _//=>_ {"done": **true** }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02607))_
 
 ### **generators are coroutines**
 
@@ -4883,17 +5748,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02607))_
 - If it yields, it suspends its own execution and the consuming code resumes execution, until .next() is called again, at which point the iterator resumes its own execution from the point where it yielded. _(javascriptallonge.pdf (source-range-83ecb080-02649))_
 - If it yields, it suspends its own execution and the consuming code resumes execution, until .next() is called again, at which point the iterator resumes its own execution from the point where it yielded. _(javascriptallonge.pdf (source-range-83ecb080-02649))_
 
-> Context: Here’s a generator that yields three numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02610))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02610))_
+
+> Here’s a generator that yields three numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02613))_
 
 > **const** oneTwoThree = **function** * () { **yield** 1; **yield** 2; **yield** 3; };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02613))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02614))_
 
 > oneTwoThree().next() _//=>_ {"done": **false** , value: 1} oneTwoThree().next() _//=>_ {"done": **false** , value: 1} oneTwoThree().next() _//=>_ {"done": **false** , value: 1}
-_(source: javascriptallonge.pdf (source-range-83ecb080-02614))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02615))_
 
 > **const** iterator = oneTwoThree();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02615))_
 
 ### **generators and iterables**
 
@@ -4906,23 +5775,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02615))_
 - Because it’s declared *[Symbol.iterator], it’s a generator instead of an iterator. _(javascriptallonge.pdf (source-range-83ecb080-02664))_
 - So to summarize, ThreeNumbers is an object that we’ve made iterable, by way of writing a _generator_ method for [Symbol.iterator]. _(javascriptallonge.pdf (source-range-83ecb080-02665))_
 
-> Context: Our generator function oneTwoThree is not an iterator. It’s a function that returns an iterator when we invoke it. We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02651))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02651))_
+
+> Our generator function oneTwoThree is not an iterator. It’s a function that returns an iterator when we invoke it. We write the function to yield values instead of return a single value, and JavaScript takes care of turning this into an object with a .next() function we can call.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02652))_
 
 > If we call our generator function more than once, we get new iterators.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02652))_
 
-> Context: Now we can use it in a for...of loop, spread it into an array literal, or spread it into a function invocation, because we have written an iterable that uses a generator to return an iterator from its [Symbol.iterator] method.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02658))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02658))_
+
+> Now we can use it in a for...of loop, spread it into an array literal, or spread it into a function invocation, because we have written an iterable that uses a generator to return an iterator from its [Symbol.iterator] method.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02656))_
 
 > **const** iterator = ThreeNumbers[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02656))_
 
-> Context: generator methods for objects: This object declares a [Symbol.iterator] function that makes it iterable. Because it’s declared *[Symbol.iterator], it’s a generator instead of an iterator.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02662, source-range-83ecb080-02664))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02662, source-range-83ecb080-02664))_
+
+> generator methods for objects: This object declares a [Symbol.iterator] function that makes it iterable. Because it’s declared *[Symbol.iterator], it’s a generator instead of an iterator.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02663))_
 
 > **const** ThreeNumbers = { *[Symbol.iterator] () { **yield** 1; **yield** 2; **yield** 3 } }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02663))_
 
 ### **more generators**
 
@@ -4942,8 +5817,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02663))_
 - Tucked inside of it is the same three-line idiom for yielding each element of an iterable. _(javascriptallonge.pdf (source-range-83ecb080-02704))_
 - yield* is handy when writing generator functions that operate on or create iterables. _(javascriptallonge.pdf (source-range-83ecb080-02711))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02690))_
+
 > But if you can write it as a simple generator, write it as a simple generator.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02690))_
 
 ### **rewriting iterable operations**
 
@@ -4953,17 +5829,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02690))_
 - We can do the same thing with our other operations like filterWith and untilWith. _(javascriptallonge.pdf (source-range-83ecb080-02720))_
 - first works directly with iterators and remains unchanged, but rest can be rewritten as a generator: _(javascriptallonge.pdf (source-range-83ecb080-02726))_
 
-> Context: first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02726))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02726))_
+
+> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02727))_
 
 > **const** first = (iterable) => iterable[Symbol.iterator]().next().value;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02727))_
 
-> Context: first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02726))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02726))_
+
+> first works directly with iterators and remains unchanged, but rest can be rewritten as a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02728))_
 
 > **function** * rest (iterable) { **const** iterator = iterable[Symbol.iterator]();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02728))_
 
 ### **Summary**
 
@@ -5000,17 +5880,21 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02728))_
 - **return this** .array[ **this** .index += 1] = value; }, pop: **function** () { **const** value = **this** .array[ **this** .index]; **this** .array[ **this** .index] = **undefined** ; **if** ( **this** .index >= 0) { **this** .index -= 1 } **return** value }, isEmpty: **function** () { **return this** .index < 0 }, [Symbol.iterator]: **function** () { **let** iterationIndex = **this** .index; **return** { next: () => { **if** (iterationIndex > **this** .index) { iterationIndex = **this** .index; } **if** (iterationIndex < 0) { **return** {done: **true** }; } **else** { **return** {done: **false** , value: **this** .array[iterationIndex--]} } } } } }, LazyCollection); Stack.from = **function** (iterable) { **const** stack = **this** (); **for** ( **let** element **of** iterable) { stack.push(element); } **return** stack; } _(javascriptallonge.pdf (source-range-83ecb080-02772))_
 - _// Pair and Stack in action_ Stack.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .first() _//=> 100_ Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0) _(javascriptallonge.pdf (source-range-83ecb080-02775))_
 
-> Context: _// Pair, a/k/a linked lists_
-_(context: javascriptallonge.pdf (source-range-83ecb080-02761))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02761))_
+
+> _// Pair, a/k/a linked lists_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02762))_
 
 > **const** EMPTY = { isEmpty: () => **true**
-_(source: javascriptallonge.pdf (source-range-83ecb080-02762))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02766))_
 
 > **const** isEmpty = (node) => node === EMPTY;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02766))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02769))_
 
 > _// Stack_ **const** Stack = () => Object.assign({ array: [], index: -1, push: **function** (value) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02769))_
 
 ### **lazy collection operations**
 
@@ -5034,23 +5918,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02769))_
 - This is why “pure” functional languages like Haskell combine lazy semantics with immutable collections, and why even “impure” languages like Clojure emphasize the use of immutable collections. _(javascriptallonge.pdf (source-range-83ecb080-02801))_
 - If we mutate a collection after taking an iterable, we might get an unexpected result. _(javascriptallonge.pdf (source-range-83ecb080-02801))_
 
-> Context: Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02781))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+
+> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02783))_
 
 > When working with very large collections and many operations, this can be important.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02783))_
 
-> Context: Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02781))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+
+> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02784))_
 
 > The effect is even more pronounced when we use methods like first, until, or take:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02784))_
 
-> Context: We can confirm this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02790))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02790))_
+
+> We can confirm this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02792))_
 
 > If we write the almost identical thing with an array, we get a different behaviour:
-_(source: javascriptallonge.pdf (source-range-83ecb080-02792))_
 
 ### **eager collections**
 
@@ -5081,20 +5971,25 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02792))_
 - game-board’s size or contents, only that it is given an arrow every time though the while loop. _(javascriptallonge.pdf (source-range-83ecb080-02842))_
 - game-board’s size or contents, only that it is given an arrow every time though the while loop. _(javascriptallonge.pdf (source-range-83ecb080-02842))_
 
-> Context: Christine intoned the question, as if by rote:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02834))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02834))_
+
+> Christine intoned the question, as if by rote:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02835))_
 
 > If the arrow should cause the chequer to move off the edge of the board, the game halts.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02835))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02842))_
 
 > You may use babeljs.io[95] , or ES6Fiddle[96] to check your work.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02842))_
 
-> Context: Christine quickly scribbled on the whiteboard:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02843))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02843))_
+
+> Christine quickly scribbled on the whiteboard:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02844))_
 
 > **const** Game = (size = 8) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02844))_
 
 ### **the carpenter’s solution**
 
@@ -5125,29 +6020,37 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02844))_
 - “This is, of course, the most common solution, it is Floyd’s cycle-finding algorithm[97] , although there is some academic dispute as to whether Robert Floyd actually discovered it or was misattributed by Knuth.” _(javascriptallonge.pdf (source-range-83ecb080-02885))_
 - “This solution makes use of iterables and a single utility function, statefulMapWith. _(javascriptallonge.pdf (source-range-83ecb080-02892))_
 
-> Context: The Carpenter coughed softly, then began. “To begin with, I’ll transform a game into an iterable that generates arrows, using the ‘Starman’ notation for generators. I’ll refactor a touch to make things clearer, for example I’ll extract the board to make it easier to test:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-02853))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02853))_
+
+> The Carpenter coughed softly, then began. “To begin with, I’ll transform a game into an iterable that generates arrows, using the ‘Starman’ notation for generators. I’ll refactor a touch to make things clearer, for example I’ll extract the board to make it easier to test:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02855))_
 
 > **const** Board = (size = 8) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02855))_
 
-> Context: “Now that we have an iterable, we can transform the iterable of arrows into an iterable of positions.” The Carpenter sketched quickly. “We want to take the arrows and convert them to positions. For that, we’ll map the Game iterable to positions. A statefulMap is a lazy map that preserves state from iteration to iteration. That’s what we need, because we need to know the current position to map each move to the next position.”
-_(context: javascriptallonge.pdf (source-range-83ecb080-02862))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02862))_
+
+> “Now that we have an iterable, we can transform the iterable of arrows into an iterable of positions.” The Carpenter sketched quickly. “We want to take the arrows and convert them to positions. For that, we’ll map the Game iterable to positions. A statefulMap is a lazy map that preserves state from iteration to iteration. That’s what we need, because we need to know the current position to map each move to the next position.”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02860))_
 
 > **const** Game = ({board, position}) => {
-_(source: javascriptallonge.pdf (source-range-83ecb080-02860))_
 
-> Context: “There’s an old joke that a mathematician is someone who will take a five-minute problem, then spend an hour proving it is equivalent to another problem they have already solved. I approached this question in that spirit. Now that we have created an iterable of values that can be compared with ===, I can show you this function:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-02876))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02876))_
+
+> “There’s an old joke that a mathematician is someone who will take a five-minute problem, then spend an hour proving it is equivalent to another problem they have already solved. I approached this question in that spirit. Now that we have created an iterable of values that can be compared with ===, I can show you this function:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02879))_
 
 > **const** tortoiseAndHare = (iterable) => { **const** hare = iterable[Symbol.iterator](); **let** hareResult = (hare.next(), hare.next());
-_(source: javascriptallonge.pdf (source-range-83ecb080-02879))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02881))_
 
 > hareResult = hare.next();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02881))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02890))_
 
 > **const** terminates = (game) => tortoiseAndHare(positionsOf(game)) **const** test = [ ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"], ["￿","￿","￿","￿"] ];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02890))_
 
 ### **the aftermath**
 
@@ -5171,8 +6074,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02890))_
 - The Carpenter stared at Kidu’s solution. _(javascriptallonge.pdf (source-range-83ecb080-02921))_
 - “I guess,” he allowed, “It isn’t always necessary to make a solution so awesome it would please the Ghosts of Mars.” _(javascriptallonge.pdf (source-range-83ecb080-02921))_
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02919))_
+
 > **const** hasCycle = (orderedCollection) => { **const** visited = **new** Set();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02919))_
 
 ## Interactive Generators
 
@@ -5197,14 +6101,17 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02919))_
 - We’ll use the [] notation for keys, it allows us to use any expression as a key, and JavaScript will convert it to a string. _(javascriptallonge.pdf (source-range-83ecb080-02973))_
 - We can use a POJO to make a map from positions to moves. _(javascriptallonge.pdf (source-range-83ecb080-02973))_
 
-> Context: And if we want to look up what move to make, we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02984))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02984))_
+
+> And if we want to look up what move to make, we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02986))_
 
 > 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02986))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02992))_
 
 > 'o', 'x', ' ', ' ' ' ' ' ' , , , 'o', 'x', ' ' ]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02992))_
 
 ### **representing naughts and crosses as a stateful function**
 
@@ -5212,11 +6119,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-02992))_
 - The state is encoded entirely in data. _(javascriptallonge.pdf (source-range-83ecb080-03011))_
 - Let’s recap what we have: We have a stateful function, but we built it by wrapping a stateless function in a function that updates state based on the moves we provide. _(javascriptallonge.pdf (source-range-83ecb080-03011))_
 
-> **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-02996))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02996))_
 
 > **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-03005))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03005))_
+
+> **const** aNaughtsAndCrossesGame = statefulNaughtsAndCrosses();
 
 ### **this seems familiar**
 
@@ -5243,11 +6152,13 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-03005))_
 - But the generator function allows us to maintain state implicitly. _(javascriptallonge.pdf (source-range-83ecb080-03043))_
 - And sometimes, we want to use implicit state instead of explicitly storing state in our data. _(javascriptallonge.pdf (source-range-83ecb080-03043))_
 
-> Context: We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
-_(context: javascriptallonge.pdf (source-range-83ecb080-03033))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03033))_
+
+> We can then get the first move by calling .next(). Thereafter, we call .next(...) and pass in our moves (The very first call has to be .next() without any arguments, because the generator hasn’t started yet. If we wanted to pass some state to the generator before it begins, we’d do that with parameters.):
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03032))_
 
 > **const** aNaughtsAndCrossesGame = generatorNaughtsAndCrosses();
-_(source: javascriptallonge.pdf (source-range-83ecb080-03032))_
 
 ### **summary**
 
@@ -5262,24 +6173,29 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-03032))_
 
 ### **operations that transform one iterable into another**
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03059))_
+
 > **for** ( **let** i = 0; i < numberToTake; ++i) { **const** { done, value } = iterator.next(); **if** (!done) **yield** value; } }
-_(source: javascriptallonge.pdf (source-range-83ecb080-03059))_
 
 ### **operations that compose two or more iterables into an iterable**
 
-> **function** * zip (...iterables) { **const** iterators = iterables.map(i => i[Symbol.iterator]());
-_(source: javascriptallonge.pdf (source-range-83ecb080-03061))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03061))_
 
-> Context: Note: zip is also the following special case of zipWith:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03063))_
+> **function** * zip (...iterables) { **const** iterators = iterables.map(i => i[Symbol.iterator]());
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03063))_
+
+> Note: zip is also the following special case of zipWith:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03066))_
 
 > **const** zip = callFirst(zipWith, (...values) => values);
-_(source: javascriptallonge.pdf (source-range-83ecb080-03066))_
 
 ### **operations that transform an iterable into a value**
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03068))_
+
 > **const** reduceWith = (fn, seed, iterable) => { **let** accumulator = seed;
-_(source: javascriptallonge.pdf (source-range-83ecb080-03068))_
 
 ### **memoizing an iterable**
 
@@ -5301,32 +6217,41 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-03068))_
 - The care and feeding of node and npm are beyond the scope of this book, but both tools offer clear instructions for those who have already installed node. _(javascriptallonge.pdf (source-range-83ecb080-03110))_
 - You can also install the transpilers on your development system and use them with Node[102] on the command line[103] . _(javascriptallonge.pdf (source-range-83ecb080-03110))_
 
-> Context: For example, this ECMAScript 2015 code:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03085))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03085))_
+
+> For example, this ECMAScript 2015 code:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03086))_
 
 > **const** before = (decoration) => (method) => **function** () { decoration.apply( **this** , arguments); **return** method.apply( **this** , arguments) };
-_(source: javascriptallonge.pdf (source-range-83ecb080-03086))_
 
-> Context: "use strict"
-_(context: javascriptallonge.pdf (source-range-83ecb080-03088))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03088))_
+
+> "use strict"
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03089))_
 
 > **var** before = **function** (decoration) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-03089))_
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03101))_
 
 > **const** before = (decoration) => (method) => **function** (...args) { decoration.apply( **this** , args); **return** method.apply( **this** , args) };
-_(source: javascriptallonge.pdf (source-range-83ecb080-03101))_
 
-> Context: So instead of just writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03105))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03105))_
+
+> So instead of just writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03106))_
 
 > (() => 2 + 2)()
-_(source: javascriptallonge.pdf (source-range-83ecb080-03106))_
 
-> Context: And having 4 displayed, you’d need to write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-03107))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-03107))_
+
+> And having 4 displayed, you’d need to write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03108))_
 
 > console.log( (() => 2 + 2)() )
-_(source: javascriptallonge.pdf (source-range-83ecb080-03108))_
 
 ## Thanks!
 
@@ -5346,8 +6271,9 @@ _(source: javascriptallonge.pdf (source-range-83ecb080-03108))_
 
 ### **Copyright Notice**
 
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-03133))_
+
 > The original words in this book are (c) 2012-2015, Reginald Braithwaite. All rights reserved.
-_(source: javascriptallonge.pdf (source-range-83ecb080-03133))_
 
 ### **images**
 

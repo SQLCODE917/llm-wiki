@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-const-and-lexical-scope-5726fdd9@815356e0343b72e73ba57591ac81b732
+projection_coverage: section-javascriptallonge-section-const-and-lexical-scope-5726fdd9@85d74b4f11367a21006b2fd9977d2883
 ---
 
 # **const and lexical scope**
@@ -30,26 +30,44 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Here’s the second formulation of our diameter function, bound to a name using an IIFE:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00625))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00625))_
+
+> Here’s the second formulation of our diameter function, bound to a name using an IIFE:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00626))_
 
 > ((diameter_fn) => _// ..._ )( ((PI) => (diameter) => diameter * PI )(3.14159265) )
-_(source: javascriptallonge.pdf (source-range-83ecb080-00626))_
 
-> Context: It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
-_(context: javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
+
+> It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00630))_
 
 > ((diameter_fn) => diameter_fn(2) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00630))_
 
-> Context: We can test this by deliberately creating a “conflict:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00633))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00633))_
+
+> We can test this by deliberately creating a “conflict:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00634))_
 
 > ((diameter_fn) => ((PI) => diameter_fn(2) )(3) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00634))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00640))_
 
 > ((diameter_fn) => { **const** PI = 3;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00640))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00641))_
 
 > **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => diameter * PI })() ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00641))_

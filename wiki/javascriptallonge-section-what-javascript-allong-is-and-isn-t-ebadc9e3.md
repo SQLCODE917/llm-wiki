@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-what-javascript-allong-is-and-isn-t-ebadc9e3@a9e4c2ac709af4a7ca7c9b51b44a0d10
+projection_coverage: section-javascriptallonge-section-what-javascript-allong-is-and-isn-t-ebadc9e3@556b4733bad5963814f0b4cda4bdd856
 ---
 
 # What JavaScript Allongé is. And isn't.
@@ -46,8 +46,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Choices in software development must also consider the question of consistency. If a particular codebase is written with lots of helper functions that place the subject first, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00086))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00086))_
+
+> Choices in software development must also consider the question of consistency. If a particular codebase is written with lots of helper functions that place the subject first, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00087))_
 
 > **const** mapWith = (iterable, fn) => ({ [Symbol.iterator]: **function** * () { **for** ( **let** element **of** iterable) { **yield** fn(element); } } });
-_(source: javascriptallonge.pdf (source-range-83ecb080-00087))_

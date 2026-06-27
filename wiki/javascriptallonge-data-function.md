@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-data-function@1619d7f8da4762b10d3bf86e6c99de03
+projection_coverage: topic-javascriptallonge-data-function@c5a292a9e26e19ade0a9b48be4c64a97
 ---
 
 # Making Data Out Of Functions
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-data-function@1619d7f8da4762b10d3bf
 What [[javascriptallonge]] covers about making data out of functions:
 
 ## Statements
+
+_Showing 14 of 64 statements selected for this topic._
 
 - For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list. _(javascriptallonge.pdf (source-range-83ecb080-02033))_
 - A _constant function_ is a function that always returns the same thing, no matter what you give it. _(javascriptallonge.pdf (source-range-83ecb080-02051))_
@@ -32,26 +34,47 @@ What [[javascriptallonge]] covers about making data out of functions:
 
 ## Technical atoms
 
-> Context: For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
-_(context: javascriptallonge.pdf (source-range-83ecb080-02033))_
+_Showing 6 of 52 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02033))_
+
+> For example, this length function uses a functions to bind values to names, POJOs to structure nodes, and the ternary function to detect the base case, the empty list.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02036))_
 
 > **const** EMPTY = {}; **const** OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } };
-_(source: javascriptallonge.pdf (source-range-83ecb080-02036))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02037))_
 
 > OneTwoThree.first _//=> 1_ OneTwoThree.rest.first _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02037))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02038))_
 
 > OneTwoThree.rest.rest.first _//=> 3_ **const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02038))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02039))_
 
 > length(OneTwoThree) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02039))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02049))_
 
 > **const** K = (x) => (y) => x; **const** I = (x) => (x); **const** V = (x) => (y) => (z) => z(x)(y);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02049))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02053))_
 
 > **const** K = (x) => (y) => x; **const** fortyTwo = K(42);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02053))_
 
 
 ## Source

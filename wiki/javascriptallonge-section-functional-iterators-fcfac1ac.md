@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-functional-iterators-fcfac1ac@8384e0b665294a572ef1703b46530f8a
+projection_coverage: section-javascriptallonge-section-functional-iterators-fcfac1ac@01e86598c268c2af0c7e99b395df70f9
 ---
 
 # Functional Iterators
@@ -59,116 +59,204 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01933))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01933))_
+
+> Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01934))_
 
 > **const** arraySum = ([first, ...rest], accumulator = 0) => first === **undefined** ? accumulator : arraySum(rest, first + accumulator)
-_(source: javascriptallonge.pdf (source-range-83ecb080-01934))_
 
-> Context: Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01933))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01933))_
+
+> Let’s consider a remarkably simple problem: Finding the sum of the elements of an array. In tailrecursive style, it looks like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01935))_
 
 > arraySum([1, 4, 9, 16, 25]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01935))_
 
-> Context: As we saw earlier, this entangles the mechanism of traversing the array with the business of summing the bits. So we can separate them using fold:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01936))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01936))_
+
+> As we saw earlier, this entangles the mechanism of traversing the array with the business of summing the bits. So we can separate them using fold:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01938))_
 
 > **const** arraySum = callLeft(foldArrayWith, (a, b) => a + b, 0); arraySum([1, 4, 9, 16, 25]) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01938))_
 
-> Context: Well, we call arraySum with an array, and it has baked into it a method for traversing the array. Perhaps we could extract both of those things. Let’s rearrange our code a bit:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01941))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01941))_
+
+> Well, we call arraySum with an array, and it has baked into it a method for traversing the array. Perhaps we could extract both of those things. Let’s rearrange our code a bit:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01944))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01944))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01945))_
 
 > **const** foldArrayWith = (fn, terminalValue, [first, ...rest]) => first === **undefined** ? terminalValue : fn(first, foldArrayWith(fn, terminalValue, rest));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01945))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01946))_
 
 > **const** foldArray = (array) => callRight(foldArrayWith, array);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01946))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01947))_
 
 > **const** sumFoldable = (folder) => folder((a, b) => a + b, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01947))_
+
+### Technical atom 8
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01948))_
 
 > sumFoldable(foldArray([1, 4, 9, 16, 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01948))_
 
-> Context: Here it is summing a tree of numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01950))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01950))_
+
+> Here it is summing a tree of numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01951))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01951))_
 
-> Context: Here it is summing a tree of numbers:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01950))_
+### Technical atom 10
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01950))_
+
+> Here it is summing a tree of numbers:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01953))_
 
 > **const** foldTree = (tree) => callRight(foldTreeWith, tree);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01953))_
+
+### Technical atom 11
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01954))_
 
 > **const** sumFoldable = (folder) => folder((a, b) => a + b, 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01954))_
+
+### Technical atom 12
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01955))_
 
 > sumFoldable(foldTree([1, [4, [9, 16]], 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01955))_
+
+### Technical atom 13
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01974))_
 
 > sum += eachIteration.value; } **return** sum; }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01974))_
+
+### Technical atom 14
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01975))_
 
 > iteratorSum(arrayIterator([1, 4, 9, 16, 25])) _//=> 55_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01975))_
+
+### Technical atom 15
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01982))_
 
 > **while** ((eachIteration = iterator(), !eachIteration.done)) { sum += eachIteration.value; } **return** sum }
-_(source: javascriptallonge.pdf (source-range-83ecb080-01982))_
+
+### Technical atom 16
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01983))_
 
 > **const** aListIterator = listIterator(list(1, 4, 9, 16, 25));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01983))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 17
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01988))_
 
 > **const** NumberIterator = (number = 0) => () => ({ done: **false** , value: number++ })
-_(source: javascriptallonge.pdf (source-range-83ecb080-01988))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 18
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01989))_
 
 > fromOne = NumberIterator(1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01989))_
 
-> Context: Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01987))_
+### Technical atom 19
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01987))_
+
+> Iterators are functions. When they iterate over an array or linked list, they are traversing something that is already there. But they could just as easily manufacture the data as they go. Let’s consider the simplest example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01990))_
 
 > fromOne().value; _//=> 1_ fromOne().value; _//=> 2_ fromOne().value; _//=> 3_ fromOne().value; _//=> 4_ fromOne().value; _//=> 5_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01990))_
+
+### Technical atom 20
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02007))_
 
 > **const** squareOf = callLeft(mapIteratorWith, (x) => x * x)
-_(source: javascriptallonge.pdf (source-range-83ecb080-02007))_
+
+### Technical atom 21
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02008))_
 
 > toArray(take(squareOf(odds()), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02008))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+### Technical atom 22
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02011))_
 
 > **const** oddsOf = callLeft(filterIteratorWith, (n) => n % 2 === 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02011))_
 
-> Context: We could also write a filter for iterators to accompany our mapping function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02009))_
+### Technical atom 23
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02009))_
+
+> We could also write a filter for iterators to accompany our mapping function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02012))_
 
 > toArray(take(squareOf(oddsOf(NumberIterator(1))), 5)) _//=> [1, 9, 25, 49, 81]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-02012))_
 
-> Context: This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02020))_
+### Technical atom 24
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02020))_
+
+> This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02019))_
 
 > **const** firstInIteration = (fn, iterator) => take(filterIteratorWith(fn, iterator), 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02019))_
 
-> Context: This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02020))_
+### Technical atom 25
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02020))_
+
+> This is interesting, because it is lazy: It doesn’t apply fn to every element in an iteration, just enough to find the first that passes the test. Whereas if we wrote something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02021))_
 
 > **const** firstInArray = (fn, array) => array.filter(fn)[0];
-_(source: javascriptallonge.pdf (source-range-83ecb080-02021))_

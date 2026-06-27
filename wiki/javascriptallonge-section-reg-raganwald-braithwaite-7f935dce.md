@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-reg-raganwald-braithwaite-7f935dce@4c3bc6cd1d12c2ff62abb0e518c7c65c
+projection_coverage: section-javascriptallonge-section-reg-raganwald-braithwaite-7f935dce@9502c59c8ace498013b7002ebdb37a8f
 ---
 
 # Reg “raganwald” Braithwaite
@@ -20,11 +20,18 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> This version was published on 2017-11-03
-_(source: javascriptallonge.pdf (source-range-83ecb080-00005))_
+### Technical atom 1
 
-> Context: This is a Leanpub book. Leanpub empowers authors and publishers with the Lean Publishing process. Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00007))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00005))_
+
+> This version was published on 2017-11-03
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00007))_
+
+> This is a Leanpub book. Leanpub empowers authors and publishers with the Lean Publishing process. Lean Publishing is the act of publishing an in-progress ebook using lightweight tools and many iterations to get reader feedback, pivot until you have the right book and build traction once you do.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00008))_
 
 > © 2015 - 2017 Reg “raganwald” Braithwaite
-_(source: javascriptallonge.pdf (source-range-83ecb080-00008))_

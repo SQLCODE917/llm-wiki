@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-tail-calls-and-default-arguments-1360d97e@a9943a7c9fe9c810040422447e2e848d
+projection_coverage: section-javascriptallonge-section-tail-calls-and-default-arguments-1360d97e@8cbc81106f1def1306cca5375bf034bb
 ---
 
 # **Tail Calls (and Default Arguments)**
@@ -35,20 +35,33 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: This is roughly equivalent to writing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01402))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01402))_
+
+> This is roughly equivalent to writing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01404))_
 
 > Note that while evaluating mapWith(fn, rest), JavaScript must retain the value first or fn(first), plus some housekeeping information so it remembers what to do with mapWith(fn, rest) when it has a result.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01404))_
 
-> Context: In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01411))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01411))_
+
+> In practice, using a method like this with more than about 50 items in an array may cause some implementations to run very slow, run out of memory and freeze, or cause an error.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01412))_
 
 > mapWith((x) => x * x, [
-_(source: javascriptallonge.pdf (source-range-83ecb080-01412))_
 
-> Context: We can use it with ridiculously large arrays:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01453))_
+
+> We can use it with ridiculously large arrays:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01455))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -80,10 +93,14 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01453))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01455))_
 
-> Context: In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01462))_
+
+> In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01463))_
 
 | 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -115,4 +132,3 @@ _(context: javascriptallonge.pdf (source-range-83ecb080-01462))_
 ```
 
 </details>
-_(source: javascriptallonge.pdf (source-range-83ecb080-01463))_

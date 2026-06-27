@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-that-constant-coffee-craving-75082210@312fe9abed6e8fc24150c33378e0c131
+projection_coverage: section-javascriptallonge-section-that-constant-coffee-craving-75082210@b968ec350f645a37222d4c13ae3f4792
 ---
 
 # That Constant Coffee Craving
@@ -101,176 +101,302 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00544))_
+### Technical atom 1
 
-> Context: There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00544))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
+
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00544))_
+
+> There are other ways to name things in JavaScript, but before we learn some of those, let’s see how to use what we already have to name things. Let’s revisit a very simple example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00545))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00545))_
 
-> Context: What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00546))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00546))_
+
+> What is this “3.14159265” number? PI[28] , obviously. We’d like to name it so that we can write something like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00547))_
 
 > (diameter) => diameter * PI
-_(source: javascriptallonge.pdf (source-range-83ecb080-00547))_
 
-> Context: In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00548))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00548))_
+
+> In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00549))_
 
 > ((PI) => _// ????_ )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00549))_
 
-> Context: What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00550))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00550))_
+
+> What do we put inside our new function that binds 3.14159265 to the name PI when evaluated? Our circumference function, of course:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00551))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00551))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00557))_
 
 > ((diameter) => diameter * 3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00557))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00558))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00558))_
 
-> Context: There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+
+> There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00562))_
 
 > (diameter) => ((PI) => diameter * PI)(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00562))_
+
+### Technical atom 9
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00576))_
 
 > - (diameter) => ((PI) => diameter * PI)(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00576))_
+
+### Technical atom 10
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00578))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00578))_
 
-> Context: Another way to write our “circumference” function would be to pass PI along with the diameter argument, something like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00582))_
+### Technical atom 11
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00582))_
+
+> Another way to write our “circumference” function would be to pass PI along with the diameter argument, something like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00583))_
 
 > (diameter, PI) => diameter * PI
-_(source: javascriptallonge.pdf (source-range-83ecb080-00583))_
 
-> Context: And we could use it like this: This differs from our example above in that there is only one environment, rather than two. We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s _almost_ what we wanted all along: A way to bind 3.14159265 to a readable name.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00584, source-range-83ecb080-00588))_
+### Technical atom 12
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00584, source-range-83ecb080-00588))_
+
+> And we could use it like this: This differs from our example above in that there is only one environment, rather than two. We have one binding in the environment representing our regular argument, and another our “constant.” That’s more efficient, and it’s _almost_ what we wanted all along: A way to bind 3.14159265 to a readable name.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00587))_
 
 > ((diameter, PI) => diameter * PI)(2, 3.14159265) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00587))_
 
-> Context: JavaScript gives us a way to do that, the const keyword. We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00589))_
+### Technical atom 13
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00589))_
+
+> JavaScript gives us a way to do that, the const keyword. We’ll learn a lot more about const in future chapters, but here’s the most important thing we can do with const:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00590))_
 
 > (diameter) => { **const** PI = 3.14159265;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00590))_
 
-> Context: It works just as we want. Instead of:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00594))_
+### Technical atom 14
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00594))_
+
+> It works just as we want. Instead of:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00595))_
 
 > ((diameter) => ((PI) => diameter * PI)(3.14159265))(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00595))_
+
+### Technical atom 15
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00597))_
 
 > ((diameter, PI) => diameter * PI)(2, 3.14159265) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00597))_
 
-> Context: We write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00598))_
+### Technical atom 16
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00598))_
+
+> We write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00601))_
 
 > ((diameter) => { **const** PI = 3.14159265; **return** diameter * PI })(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00601))_
 
-> Context: We can bind any expression. Functions are expressions, so we can bind helper functions:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00602))_
+### Technical atom 17
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00602))_
+
+> We can bind any expression. Functions are expressions, so we can bind helper functions:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00604))_
 
 > This underscores what we’ve said: if we have an expression that evaluates to a function, we apply it with ().
-_(source: javascriptallonge.pdf (source-range-83ecb080-00604))_
 
-> Context: We can bind more than one name-value pair by separating them with commas. For readability, most people put one binding per line:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00606))_
+### Technical atom 18
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00606))_
+
+> We can bind more than one name-value pair by separating them with commas. For readability, most people put one binding per line:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00607))_
 
 > (d) => { **const** PI = 3.14159265, calc = (diameter) => diameter * PI; **return** "The circumference is " + calc(d) }
-_(source: javascriptallonge.pdf (source-range-83ecb080-00607))_
+
+### Technical atom 19
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00612))_
 
 > One of the places you can find blocks is in an if statement.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00612))_
 
-> Context: Here’s the second formulation of our diameter function, bound to a name using an IIFE:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00625))_
+### Technical atom 20
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00625))_
+
+> Here’s the second formulation of our diameter function, bound to a name using an IIFE:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00626))_
 
 > ((diameter_fn) => _// ..._ )( ((PI) => (diameter) => diameter * PI )(3.14159265) )
-_(source: javascriptallonge.pdf (source-range-83ecb080-00626))_
 
-> Context: It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
-_(context: javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
+### Technical atom 21
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
+
+> It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00630))_
 
 > ((diameter_fn) => diameter_fn(2) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00630))_
 
-> Context: We can test this by deliberately creating a “conflict:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00633))_
+### Technical atom 22
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00633))_
+
+> We can test this by deliberately creating a “conflict:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00634))_
 
 > ((diameter_fn) => ((PI) => diameter_fn(2) )(3) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00634))_
+
+### Technical atom 23
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00640))_
 
 > ((diameter_fn) => { **const** PI = 3;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00640))_
+
+### Technical atom 24
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00641))_
 
 > **return** diameter_fn(2) })( (() => { **const** PI = 3.14159265; **return** (diameter) => diameter * PI })() ) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00641))_
 
-> Context: Let’s start, as above, by doing this with parameters. We’ll start with:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00647))_
+### Technical atom 25
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00647))_
+
+> Let’s start, as above, by doing this with parameters. We’ll start with:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00648))_
 
 > ((PI) => (diameter) => diameter * PI )(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00648))_
 
-> Context: And gratuitously wrap it in another IIFE so that we can bind PI to something else:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00649))_
+### Technical atom 26
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00649))_
+
+> And gratuitously wrap it in another IIFE so that we can bind PI to something else:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00652))_
 
 > ((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00652))_
 
-> Context: This still evaluates to a function that calculates diameters:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00653))_
+### Technical atom 27
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00653))_
+
+> This still evaluates to a function that calculates diameters:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00654))_
 
 > ((PI) => ((PI) => (diameter) => diameter * PI )(3.14159265) )(3)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00654))_
 
-> Context: And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
-_(context: javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
+### Technical atom 28
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
+
+> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00656))_
 
 > ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00656))_
 
-> Context: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the answer is **no** , the inner binding does not overwrite the outer binding:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00657))_
+### Technical atom 29
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00657))_
+
+> Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the answer is **no** , the inner binding does not overwrite the outer binding:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00658))_
 
 > ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00658))_
+
+### Technical atom 30
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00663))_
 
 > ((diameter) => { **const** PI = 3.14159265; (() => { **const** PI = 3; })(); **return** diameter * PI; })(2) _//=> 6.2831853_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00663))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+### Technical atom 31
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00674))_
 
 > ((diameter) => { **const** PI = 3.14159265;
-_(source: javascriptallonge.pdf (source-range-83ecb080-00674))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+### Technical atom 32
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673, source-range-83ecb080-00676))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00675))_
 
 > **if** ( **true** ) { **const** PI = 3; } **return** diameter * PI; })(2) _//=> would return 6 if const had function scope_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00675))_
 
-> Context: This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00673))_
+### Technical atom 33
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00673))_
+
+> This is enormously important. Consider the alternative: What if const could be declared inside of a block, but it always bound the name in the function’s scope. In that case, we’d see things like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00676))_
 
 > If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00676))_
 
-> Context: If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
-_(context: javascriptallonge.pdf (source-range-83ecb080-00676))_
+### Technical atom 34
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00676))_
+
+> If const always bound its value to the name defined in the function’s environment, placing a const statement inside of a block would merely rebind the existing name, overwriting its old contents. That would be super-confusing. And this code would “work:”
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00678))_
 
 > **if** ( **true** ) { **const** PI = 3.14159265; } **return** diameter * PI; })(2) _//=> would return 6.2831853 if const had function scope_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00678))_

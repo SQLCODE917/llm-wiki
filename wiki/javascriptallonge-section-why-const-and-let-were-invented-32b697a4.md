@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-why-const-and-let-were-invented-32b697a4@cf183268b4f1aa15046125f052fcc440
+projection_coverage: section-javascriptallonge-section-why-const-and-let-were-invented-32b697a4@030daf2c36aca5b82c7d96766c537e94
 ---
 
 # **why const and let were invented**
@@ -39,14 +39,22 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We haven’t looked at it yet, but JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. Here it is with var: > 72There is a well known story about Karl Friedrich Gauss when he was in elementary school. His teacher got mad at the class and told them to add the numbers 1 to 100 and give him the answer by the end of the class. About 30 seconds later Gauss gave him the answer. The other kids were adding the numbers like this: 1 + 2 + 3 + . 
-_(context: javascriptallonge.pdf (source-range-83ecb080-01821, source-range-83ecb080-01824))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01821, source-range-83ecb080-01824))_
+
+> We haven’t looked at it yet, but JavaScript provides a for loop for your iterating pleasure and convenience. It looks a lot like the for loop in C. Here it is with var: > 72There is a well known story about Karl Friedrich Gauss when he was in elementary school. His teacher got mad at the class and told them to add the numbers 1 to 100 and give him the answer by the end of the class. About 30 seconds later Gauss gave him the answer. The other kids were adding the numbers like this: 1 + 2 + 3 + .
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01822))_
 
 > **var** sum = 0; **for** ( **var** i = 1; i <= 100; i++) { sum = sum + i } sum #=> 5050
-_(source: javascriptallonge.pdf (source-range-83ecb080-01822))_
 
-> Context: Again, so far, so good. Let’s try one of our functions: What went wrong? Why didn’t it give us ‘Hello, Raganwald, my name is Friedrich’? The answer is that pesky var i. Remember that i is bound in the surrounding environment, so it’s as if we wrote:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01831, source-range-83ecb080-01833))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01831, source-range-83ecb080-01833))_
+
+> Again, so far, so good. Let’s try one of our functions: What went wrong? Why didn’t it give us ‘Hello, Raganwald, my name is Friedrich’? The answer is that pesky var i. Remember that i is bound in the surrounding environment, so it’s as if we wrote:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01832))_
 
 > introductions[1]('Raganwald') _//=> 'Hello, Raganwald, my name is undefined'_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01832))_

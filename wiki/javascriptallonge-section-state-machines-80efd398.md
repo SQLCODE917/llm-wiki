@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-state-machines-80efd398@f403cf26f944f6c2b3700b21dfcdeecf
+projection_coverage: section-javascriptallonge-section-state-machines-80efd398@f8131a18760e02f0c57c07d316294375
 ---
 
 # **state machines**
@@ -31,23 +31,40 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Let’s write a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02564))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02564))_
+
+> Let’s write a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02566))_
 
 > **const** fibonacci = () => { **let** a, b;
-_(source: javascriptallonge.pdf (source-range-83ecb080-02566))_
 
-> Context: Let’s write a generator:
-_(context: javascriptallonge.pdf (source-range-83ecb080-02564))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02564))_
+
+> Let’s write a generator:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02567))_
 
 > console.log(a = 0);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02567))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02568))_
 
 > console.log(b = 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-02568))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02569))_
 
 > **while** ( **true** ) { [a, b] = [b, a + b]; console.log(b); }
-_(source: javascriptallonge.pdf (source-range-83ecb080-02569))_
+
+### Technical atom 5
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02588))_
 
 > Whereas the iteration version must make that state explicit.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02588))_

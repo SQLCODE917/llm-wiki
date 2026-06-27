@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-maybe-72c82460@a12a4cf3d1ae51e035c6aa9cebf7ad94
+projection_coverage: section-javascriptallonge-section-maybe-72c82460@380a56c2268672be00e50e97d0d597f2
 ---
 
 # **Maybe**
@@ -25,26 +25,42 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01002))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01002))_
+
+> This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01003))_
 
 > **const** isSomething = (value) => value !== **null** && value !== **void** 0;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01003))_
 
-> Context: This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01002))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01002))_
+
+> This recipe concerns a pattern that is very common: A function fn takes a value as a parameter, and its behaviour by design is to do nothing if the parameter is nothing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01004))_
 
 > **const** checksForSomething = (value) => { **if** (isSomething(value)) {
-_(source: javascriptallonge.pdf (source-range-83ecb080-01004))_
 
-> Context: Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01007))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01007))_
+
+> Alternately, the function may be intended to work with any value, but the code calling the function wishes to emulate the behaviour of doing nothing by design when given nothing:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01008))_
 
 > **var** something = isSomething(value) ? doesntCheckForSomething(value) : value;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01008))_
 
-> Context: As a bonus, maybe plays very nicely with instance methods, we’ll discuss those later:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01018))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01018))_
+
+> As a bonus, maybe plays very nicely with instance methods, we’ll discuss those later:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01020))_
 
 > Model.prototype.setSomething = maybe( **function** (value) { **this** .something = value; });
-_(source: javascriptallonge.pdf (source-range-83ecb080-01020))_

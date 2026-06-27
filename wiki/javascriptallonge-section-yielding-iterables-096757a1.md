@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-yielding-iterables-096757a1@0af777ff5b7be1ca714519a0332506db
+projection_coverage: section-javascriptallonge-section-yielding-iterables-096757a1@98acce5491f69e74f5eb634142aef033
 ---
 
 # **yielding iterables**
@@ -28,5 +28,8 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
+### Technical atom 1
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02690))_
+
 > But if you can write it as a simple generator, write it as a simple generator.
-_(source: javascriptallonge.pdf (source-range-83ecb080-02690))_

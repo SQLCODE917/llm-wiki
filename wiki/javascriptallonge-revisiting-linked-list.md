@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-revisiting-linked-list@29b11eecf25a60a6a5c4b4a41c264b21
+projection_coverage: topic-javascriptallonge-revisiting-linked-list@6133edcdf514bbf08cd600089c708a8c
 ---
 
 # **revisiting linked lists**
@@ -31,35 +31,59 @@ What [[javascriptallonge]] covers about **revisiting linked lists**:
 
 ## Technical atoms
 
-> Context: Earlier, we used two-element arrays as nodes in a linked list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01644))_
+_Showing 6 of 13 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01644))_
+
+> Earlier, we used two-element arrays as nodes in a linked list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01645))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01645))_
 
-> Context: We can then perform the equivalent of [first, ...rest] with direct property accessors:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01648))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01648))_
+
+> We can then perform the equivalent of [first, ...rest] with direct property accessors:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01651))_
 
 > **const** EMPTY = {}; **const** OneTwoThree = { first: 1, rest: { first: 2, rest: { first: 3, rest: EMPTY \ } } };
-_(source: javascriptallonge.pdf (source-range-83ecb080-01651))_
+
+### Technical atom 3
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01652))_
 
 > OneTwoThree.first _//=> 1_ OneTwoThree.rest _//=> {"first":2,"rest":{"first":3,"rest":{}}}_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01652))_
+
+### Technical atom 4
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01653))_
 
 > OneTwoThree.rest.rest.first _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01653))_
 
-> Context: Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+
+> Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01655))_
 
 > **const** length = (node, delayed = 0) => node === EMPTY ? delayed : length(node.rest, delayed + 1);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01655))_
 
-> Context: Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01654, source-range-83ecb080-01657))_
+
+> Taking the length of a linked list is easy: What about mapping? Well, let’s start with the simplest possible thing, making a _copy_ of a list. As we saw above, and discussed in Garbage, Garbage Everywhere, it is fast to iterate forward through a linked list. What isn’t fast is naïvely copying a list:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01656))_
 
 > length(OneTwoThree) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01656))_
 
 
 ## Source

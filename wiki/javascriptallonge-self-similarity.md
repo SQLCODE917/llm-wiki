@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-self-similarity@b5d5a440235e598d41a24e3a413bb6b5
+projection_coverage: topic-javascriptallonge-self-similarity@0db11329e4c5223aa0bdda461bb7719f
 ---
 
 # Self-Similarity
@@ -14,6 +14,8 @@ projection_coverage: topic-javascriptallonge-self-similarity@b5d5a440235e598d41a
 What [[javascriptallonge]] covers about self-similarity:
 
 ## Statements
+
+_Showing 14 of 45 statements selected for this topic._
 
 - This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar. _(javascriptallonge.pdf (source-range-83ecb080-01325))_
 - > 61 Well, actually, this does not work for arrays that contain undefined as a value, but we are not going to see that in our examples. _(javascriptallonge.pdf (source-range-83ecb080-01315))_
@@ -32,41 +34,67 @@ What [[javascriptallonge]] covers about self-similarity:
 
 ## Technical atoms
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+_Showing 6 of 19 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01312))_
 
 > **const** isEmpty = ([first, ...rest]) => first === **undefined** ;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01312))_
 
-> Context: For the purpose of this exploration, we will presume the following:[61]
-_(context: javascriptallonge.pdf (source-range-83ecb080-01311))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01311))_
+
+> For the purpose of this exploration, we will presume the following:[61]
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01313))_
 
 > isEmpty([]) _//=> true_ isEmpty([0]) _//=> false_ isEmpty([[]]) _//=> false_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01313))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01320))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : _// ???_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01320))_
 
-> Context: First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01319))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01319))_
+
+> First, we pick what we call a _terminal case_ . What is the length of an empty array? 0. So let’s start our function with the observation that if an array is empty, the length is 0:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01322))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01322))_
 
-> Context: Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01323, source-range-83ecb080-01325))_
+
+> Let’s try it! Our length function is _recursive_ , it calls itself. This makes sense because our definition of a list is recursive, and if a list is self-similar, it is natural to create an algorithm that is also self-similar.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01324))_
 
 > length([]) _//=> 0_ length(["foo"]) _//=> 1_ length(["foo", "bar", "baz"]) _//=> 3_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01324))_
 
-> Context: If we want to square each number in a list, we could write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01354))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01354))_
+
+> If we want to square each number in a list, we could write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01355))_
 
 > **const** squareAll = ([first, ...rest]) => first === **undefined** ? [] : [first * first, ...squareAll(rest)\ ]; squareAll([1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01355))_
 
 
 ## Source

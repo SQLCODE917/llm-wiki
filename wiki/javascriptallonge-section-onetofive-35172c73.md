@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-onetofive-35172c73@29c2e659cf2ac193fbfd3446abfab147
+projection_coverage: section-javascriptallonge-section-onetofive-35172c73@134415e79b5a0309cda699d5c5ecce36
 ---
 
 # oneToFive
@@ -32,11 +32,18 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01543))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01543))_
+
+> Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01546))_
 
 > **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01546))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01547))_
 
 > **const** oneToFive = node1;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01547))_

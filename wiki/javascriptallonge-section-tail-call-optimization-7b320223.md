@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-tail-call-optimization-7b320223@723057ff0075dad4fa841561e328dddd
+projection_coverage: section-javascriptallonge-section-tail-call-optimization-7b320223@35a51520de896a823661611fcf0f58f7
 ---
 
 # **tail-call optimization**
@@ -33,8 +33,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
-_(context: javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01422, source-range-83ecb080-01424))_
+
+> That is excellent, but one wrapping is not a big deal. When would we really care? Consider this implementation of length: The length function calls itself, but it is not a tail-call, because it returns 1 + length(rest), not length(rest).
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01423))_
 
 > **const** length = ([first, ...rest]) => first === **undefined** ? 0 : 1 + length(rest);
-_(source: javascriptallonge.pdf (source-range-83ecb080-01423))_

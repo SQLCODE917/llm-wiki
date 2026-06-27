@@ -6,7 +6,7 @@ sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-argument@88a961a13d03d982c08334f484e79b58
+projection_coverage: topic-javascriptallonge-argument@30a75832115dee6cff3e640a6139433f
 ---
 
 # Argument
@@ -31,41 +31,67 @@ What [[javascriptallonge]] covers about argument:
 
 ## Technical atoms
 
-> Context: I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
-_(context: javascriptallonge.pdf (source-range-83ecb080-00397))_
+_Showing 6 of 21 technical atoms selected for this topic._
+
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00397))_
+
+> I’m sure you are perfectly comfortable with the idea that this function has two arguments, room, and board. What does one do with the arguments? Use them in the body, of course. What do you think this is?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00398))_
 
 > (diameter) => diameter * 3.14159265
-_(source: javascriptallonge.pdf (source-range-83ecb080-00398))_
 
-> Context: Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00400))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00400))_
+
+> Remember that to apply a function with no arguments, we wrote (() => {})(). To apply a function with an argument (or arguments), we put the argument (or arguments) within the parentheses, like this:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00401))_
 
 > ((diameter) => diameter * 3.14159265)(2)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00401))_
 
-> Context: Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00429))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00429))_
+
+> Right now everything looks simple and straightforward, and we can move on to talk about arguments in more detail. And we’re going to work our way up from (diameter) => diameter * 3.14159265 to functions like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00430))_
 
 > - (x) => (y) => x
-_(source: javascriptallonge.pdf (source-range-83ecb080-00430))_
 
-> Context: How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00438))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00438))_
+
+> How does the value get put in the environment? Well for arguments, that is very simple. When you apply the function to the arguments, an entry is placed in the dictionary for each argument. So when we write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00439))_
 
 > ((x) => x)(2) _//=> 2_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00439))_
 
-> Context: Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00461))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00461))_
+
+> Because many references can share the same value, and because JavaScript passes references as arguments, JavaScript can be said to implement “call by sharing” semantics. Call by sharing is generally understood to be a specialization of call by value, and it explains why some values are known as value types and other values are known as reference types.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00459))_
 
 > So JavaScript can make as many copies of strings, numbers, or booleans as it wishes.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00459))_
 
-> Context: And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00462))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00462))_
+
+> And with that, we’re ready to look at _closures_ . When we combine our knowledge of value types, reference types, arguments, and closures, we’ll understand why this function always evaluates to true no matter what argument[26] you apply it to:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 > - ((ref1, ref2) => ref1 === ref2)(value, value)
-_(source: javascriptallonge.pdf (source-range-83ecb080-00464))_
 
 
 ## Source

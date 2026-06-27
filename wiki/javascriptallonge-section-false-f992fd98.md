@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-false-f992fd98@ebfb5f68e7734e3c2f18ec78f8be714a
+projection_coverage: section-javascriptallonge-section-false-f992fd98@766cbb40bdd795d68802500a87d14eec
 ---
 
 # **false**
@@ -23,8 +23,12 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01097))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01097))_
+
+> true and false are value types. All values of true are === all other values of true. We can see that is the case by looking at some operators we can perform on boolean values, !, &&, and ||. To being with, ! is a unary prefix operator that negates its argument. So:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01100))_
 
 > ! **true** _//=> false_ ! **false** _//=> true_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01100))_

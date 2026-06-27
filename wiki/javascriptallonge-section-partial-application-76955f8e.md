@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-partial-application-76955f8e@234cacace985c53879ef975cc601d47b
+projection_coverage: section-javascriptallonge-section-partial-application-76955f8e@d3524d396db4b6e8efb465f4b77bff0e
 ---
 
 # Partial Application
@@ -26,29 +26,48 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost.[48] If you want to bind more than one argument, or you want to leave a “hole” in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00932))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00932))_
+
+> These two recipes are for quickly and simply applying a single argument, either the leftmost or rightmost.[48] If you want to bind more than one argument, or you want to leave a “hole” in the argument list, you will need to either use a generalized partial recipe, or you will need to repeatedly apply arguments. They are context-agnostic.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00934))_
 
 > **const** heliosSaysHello = callFirst(greet, 'Helios');
-_(source: javascriptallonge.pdf (source-range-83ecb080-00934))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00937))_
 
 > **const** sayHelloToCeline = callLast(greet, 'Celine');
-_(source: javascriptallonge.pdf (source-range-83ecb080-00937))_
 
-> Context: We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00947))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00947))_
+
+> We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00948))_
 
 > **const** callLeft = (fn, ...args) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00948))_
 
-> Context: We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00947))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00947))_
+
+> We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00949))_
 
 > (...remainingArgs) => fn(...args, ...remainingArgs);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00949))_
 
-> Context: We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00947))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00947))_
+
+> We take it a step further, and can use gathering and spreading to allow for partial application with more than one argument:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00950))_
 
 > **const** callRight = (fn, ...args) => (...remainingArgs) => fn(...remainingArgs, ...args);
-_(source: javascriptallonge.pdf (source-range-83ecb080-00950))_

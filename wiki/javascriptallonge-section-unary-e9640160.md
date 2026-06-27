@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-unary-e9640160@9cb63806b350ac01a80a39e91c494ddb
+projection_coverage: section-javascriptallonge-section-unary-e9640160@81d7b9e4683737a686cc149f9ecc7866
 ---
 
 # Unary
@@ -28,41 +28,68 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: The most common use case is to fix a problem. JavaScript has a .map method for arrays, and many libraries offer a map function with the same semantics. Here it is in action:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00956))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00956))_
+
+> The most common use case is to fix a problem. JavaScript has a .map method for arrays, and many libraries offer a map function with the same semantics. Here it is in action:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00957))_
 
 > ['1', '2', '3'].map(parseFloat) _//=> [1, 2, 3]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00957))_
 
-> Context: Let’s try it: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00959, source-range-83ecb080-00963))_
+### Technical atom 2
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00959, source-range-83ecb080-00963))_
+
+> Let’s try it: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00961))_
 
 > If you pass in a function taking only one argument, it simply ignores the additional arguments.
-_(source: javascriptallonge.pdf (source-range-83ecb080-00961))_
 
-> Context: If you pass in a function taking only one argument, it simply ignores the additional arguments. But some functions have optional second or even third arguments. For example: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00961, source-range-83ecb080-00963))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00961, source-range-83ecb080-00963))_
+
+> If you pass in a function taking only one argument, it simply ignores the additional arguments. But some functions have optional second or even third arguments. For example: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00962))_
 
 > ['1', '2', '3'].map(parseInt) _//=> [1, NaN, NaN]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00962))_
 
-> Context: This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
-_(context: javascriptallonge.pdf (source-range-83ecb080-00963))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00963))_
+
+> This doesn’t work because parseInt is defined as parseInt(string[, radix]). It takes an optional radix argument. And when you call parseInt with map, the index is interpreted as a radix. Not good! What we want is to convert parseInt into a function taking only one argument.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00964))_
 
 > We could write ['1', '2', '3'].map((s) => parseInt(s)), or we could come up with a decorator to do the job for us:
-_(source: javascriptallonge.pdf (source-range-83ecb080-00964))_
 
-> Context: We could write ['1', '2', '3'].map((s) => parseInt(s)), or we could come up with a decorator to do the job for us:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00964))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00964))_
+
+> We could write ['1', '2', '3'].map((s) => parseInt(s)), or we could come up with a decorator to do the job for us:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00967))_
 
 > **const** unary = (fn) =>
-_(source: javascriptallonge.pdf (source-range-83ecb080-00967))_
+
+### Technical atom 6
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00968))_
 
 > fn.length === 1
-_(source: javascriptallonge.pdf (source-range-83ecb080-00968))_
 
-> Context: And now we can write:
-_(context: javascriptallonge.pdf (source-range-83ecb080-00970))_
+### Technical atom 7
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00970))_
+
+> And now we can write:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00971))_
 
 > ['1', '2', '3'].map(unary(parseInt)) _//=> [1, 2, 3]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-00971))_

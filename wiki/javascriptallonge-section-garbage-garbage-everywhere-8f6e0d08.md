@@ -7,7 +7,7 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-garbage-garbage-everywhere-8f6e0d08@7032bf17f5a77032fe33a084308d480c
+projection_coverage: section-javascriptallonge-section-garbage-garbage-everywhere-8f6e0d08@ba91608d41afcb6ef849f598c8dad22f
 ---
 
 # Garbage, Garbage Everywhere
@@ -71,50 +71,84 @@ From [[javascriptallonge]].
 
 ## Technical atoms
 
-> Context: We have now seen how to use Tail Calls to execute mapWith in constant space:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01507))_
+### Technical atom 1
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01507))_
+
+> We have now seen how to use Tail Calls to execute mapWith in constant space:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01508))_
 
 > **const** mapWith = (fn, [first, ...rest], prepend = []) => first === **undefined**
-_(source: javascriptallonge.pdf (source-range-83ecb080-01508))_
+
+### Technical atom 2
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01511))_
 
 > mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_
-_(source: javascriptallonge.pdf (source-range-83ecb080-01511))_
 
-> Context: > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
-_(context: javascriptallonge.pdf (source-range-83ecb080-01530))_
+### Technical atom 3
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01530))_
+
+> > 66Lisp is still very much alive, and one of the most interesting and exciting programming languages in use today is Clojure, a Lisp dialect that runs on the JVM, along with its sibling ClojureScript, Clojure that transpiles to JavaScript. 67https://en.wikipedia.org/wiki/IBM_704
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01533))_
 
 > If you had two 15-bit values and wished to write them to the register, the CONS macro would take the values and write them to a 36-bit word.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01533))_
 
-> Context: Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01537))_
+### Technical atom 4
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01537))_
+
+> Here’s the scheme in JavaScript, using two-element arrays to represent cons cells:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01538))_
 
 > **const** cons = (a, d) => [a, d], car = ([a, d]) => a, cdr = ([a, d]) => d;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01538))_
 
-> Context: We can make a list by calling cons repeatedly, and terminating it with null:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01539))_
+### Technical atom 5
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01539))_
+
+> We can make a list by calling cons repeatedly, and terminating it with null:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01540))_
 
 > **const** oneToFive = cons(1, cons(2, cons(3, cons(4, cons(5, **null** )))));
-_(source: javascriptallonge.pdf (source-range-83ecb080-01540))_
 
-> Context: Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
-_(context: javascriptallonge.pdf (source-range-83ecb080-01543))_
+### Technical atom 6
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01543))_
+
+> Notice that though JavaScript displays our list as if it is composed of arrays nested within each other like Russian Dolls, in reality the arrays refer to each other with references, so [1,[2,[3,[4,[5,null]]]]] is actually more like:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01546))_
 
 > **const** node5 = [5, **null** ], node4 = [4, node5], node3 = [3, node4], node2 = [2, node3], node1 = [1, node2];
-_(source: javascriptallonge.pdf (source-range-83ecb080-01546))_
+
+### Technical atom 7
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01547))_
 
 > **const** oneToFive = node1;
-_(source: javascriptallonge.pdf (source-range-83ecb080-01547))_
 
-> Context: If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
-_(context: javascriptallonge.pdf (source-range-83ecb080-01564))_
+### Technical atom 8
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01564))_
+
+> If [first, ...rest] is so slow, why does JavaScript use arrays instead of making everything a linked list?
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
 
 > And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01565))_
 
-> Context: Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
-_(context: javascriptallonge.pdf (source-range-83ecb080-01565))_
+### Technical atom 9
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01565))_
+
+> Well, linked lists are fast for a few things, like taking the front element off a list, and taking the remainder of a list. But not for iterating over a list: Pointer chasing through memory is quite a bit slower than incrementing an index. In addition to the extra fetches to dereference pointers, pointer chasing suffers from cache misses. And if you want an arbitrary item from a list, you have to iterate through the list element by element, whereas with the indexed array you just fetch it.
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01566))_
 
 > We have avoided discussing rebinding and mutating values, but if we want to change elements of our lists, the naïve linked list implementation suffers as well: When we take the cdr of a linked list, we are sharing the elements.
-_(source: javascriptallonge.pdf (source-range-83ecb080-01566))_
