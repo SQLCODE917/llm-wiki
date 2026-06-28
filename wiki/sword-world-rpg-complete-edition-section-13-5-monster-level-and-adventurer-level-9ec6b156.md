@@ -7,12 +7,16 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-9ec6b156@0cf3577a6ad24268e9f05634946a776c
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-9ec6b156@0ae886d48d233d3458113302959997e0
 ---
 
 # 13.5 Monster Level and Adventurer Level
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-monster-level-and-adventurer-level-f6fede56]] - same source heading
 
 ## Statements
 

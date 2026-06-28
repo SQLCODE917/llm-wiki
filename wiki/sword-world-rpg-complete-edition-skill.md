@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-skill
 page_kind: concept
-summary: Skill: 146 statement(s) and 43 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Skill: 146 statement(s) and 59 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-skill@77b55f148e42730965a472f2403941a7
+projection_coverage: topic-sword-world-rpg-complete-edition-skill@3c6ed3c7a3e0d70f5feead28fb49ceda
 ---
 
 # Skill
@@ -365,6 +365,36 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 ### Technical atom 15
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01454))_
+
+> The base mental power cost represents how much mental power is consumed when using that magic. As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01456))_
+
+> If the distance is **touch** , the caster must touch the target with their hand or (for ancient magic) with their magical catalyst (see below).
+
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02662))_
+
+> There are no restrictions on armor or weapons to use the priest skill, and priests can cast magic simply by chanting holy prayers. However, this action must be in accordance with the _will_ of the god you believe in. If you try to use magic for a purpose that is far _removed_ from the god's will, it may not work at all. Also, a priest who loses _faith_ immediately loses their priest skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02663))_
+
+> Those with the priest skill must choose only _one_ god to worship.
+
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03090))_
+
+> Those who hear this spellsong will begin to move their limbs and dance according to the melody on their own. Those affected suffer a -4 penalty to attack power and evasion speed. Ancient magic and spirit magic cannot be cast. Since you can't use your musical instrument, you can't use spellsongs either. You will also be unable to use most skills’ abilities.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> However, if you suffer physical or mental damage, you can make another resistance roll.
+
+### Technical atom 18
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 
 > Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief
@@ -373,7 +403,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 > It is true that the thief skill includes the abilities necessary for theft, such as pickpocketing and lockpicking, but if anything, you can say they're specialized craftsmen who are familiar with the techniques needed behind the scenes of society.
 
-### Technical atom 16
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03149))_
 
@@ -383,7 +413,57 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 > Some of these abilities cannot be used unless you're wearing light equipment.
 
-### Technical atom 17
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03150))_
+
+> The thief skill includes the following abilities. Some of these abilities cannot be used unless you're wearing light equipment. If you want to make full use of your thief skill, the required strength of your equipment (weapons, shields, attempts to pick a lock and fails, _no_ further attempts can be made to pick that lock (and any attempts will always fail). These can be attempted again if the baseline score for a success roll increases (that is, if the skill level increases or the ability bonus
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03152))_
+
+> Even if you don't have these tools, you can try using wire, etc.
+
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03157))_
+
+> Thieves are skilled at activities that require physical balance and agility, such as tightrope walking and jumping from branch to branch.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
+
+> Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
+
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03171))_
+
+> If the person hearing the sound _also_ has the thief skill, _they_ may make a check using _thief skill level + intelligence bonus_ (this is the _listen_ ability from the previous section). At this time, if you can hear the sound, you will be able to discern not only the presence of something sneaking around, but _also_ its general appearance (walking speed, stride length, number of people if there is more than one, etc.).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03174))_
+
+> The person trying to pickpocket must make a success roll using _thief skill level + dexterity bonus_ and the person being pickpocketed must make one using _adventurer level + intelligence bonus_ as the baseline score.
+
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03174))_
+
+> This is the ability to see an opening on an opponent and pickpocket their wallet, small items, etc. The person trying to pickpocket must make a success roll using _thief skill level + dexterity bonus_ and the person being pickpocketed must make one using _adventurer level + intelligence bonus_ as the baseline score. It’s a success if the final score on the thief's side is greater, but it is a failure if it's a tie or if the side being pickpocketed's is greater. If you fail, it will definitely be
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03175))_
+
+> The game master may add modifiers depending on the surroundings and the opponent's situation.
+
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03190))_
+
+> Even thieves have combat abilities and can fight using their thief skill level. However, the way a thief fights is quite different from that of a fighter. For more information, please refer to _Chapter 4: Weapon Combat_ . The major difference (other than equipment restrictions) is the critical target. While a fighter fights in a linear style, trying to crush the enemy head-on, a thief tries to focus on the opponent's vital points and 114 weaknesses. For this reason, a thief's attacks have a grea
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03191))_
+
+> If one adventurer has acquired both the thief skill _and_ the fighter skill, the player must _choose_ which skill to fight with.
+
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03273))_
 
@@ -393,7 +473,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 > If you can read both common _and_ low ancient, you are free to learn subsequent languages.
 
-### Technical atom 18
+### Technical atom 26
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03285))_
 
@@ -403,144 +483,27 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 > Even if the _player_ knows, they must treat it as if they had no prior knowledge.
 
-### Technical atom 19
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03508))_
-
-> Sailors have the ability to know direction by looking at the stars on the sea at night, and to identify dangerous areas where reefs are likely to exist. The game master should ask for a success roll check for such actions using _sailor skill level + intelligence bonus_ as the baseline score. The difficulty or target score is determined by the game master each time.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03509))_
-
-> At that time, you can only wear armor up to cloth or soft leather.
-
-### Technical atom 20
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-
-> Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
-
-> If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance.
-
-### Technical atom 21
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
-
-> For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be liked by people at a bar, and how to make simple dishes that pair well with drinks. Of course, different people will pick up different jobs at different speeds, but anyone would have gained some experience in that time. So the game master then decides to give th
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03584))_
-
-> If a character is suitable for this type of job, you can give them 3 levels, and if a character is unsuitable, you can give them only 1 level.
-
-### Technical atom 22
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03599, source-range-870a16bc-03601))_
-
-> To make a success roll, you must decide on the _skill to be used_ , the _relevant ability score_ , and the _target score or difficulty_ . Of these, skill and ability score should be clear immediately as long as you understand the _abilities_ included under each skill. The problem is the target score or difficulty. There is no problem with things that are clearly stipulated in the rules, such as climbing, hit checks in combat, etc. but things that are not will have to be set by the game master ea
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
-
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
-
-### Technical atom 23
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03630, source-range-870a16bc-03633))_
-
-> The world record for the long jump is just under 9 meters. In _Sword World RPG_ , those with a high thief skill can jump However, it would be unnatural if even something that seems so impossible them the difficulty. Players will probably think it's the same difficulty as before. Then, after it becomes clear that their success roll was a failure, it'll turn out that the difficulty was actually high. Modifiers are applied to the final score of a success roll. Therefore, the greater the negative nu
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03632))_
-
-> Of course, even if that's the case, stay true to the roll of your dice.
-
-### Technical atom 24
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04127, source-range-870a16bc-04131))_
-
-> To acquire the shaman skill, you must be taught how to communicate with spirits by a shaman with a shaman skill of 1st level or higher. The art of communicating with spirits is not based on theory, but must be learned through experience, by watching and imitating other shamans. Although there are no specific restrictions in the rules, training for one year or more is usually required. However, the surest way to awaken to faith is to work in a temple, constantly see other priests, and receive the
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04130))_
-
-> When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level priest skill.
-
-### Technical atom 25
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04230, source-range-870a16bc-04233))_
-
-> Adventurers can study and learn common and normal languages other than their mother tongue. The way to do this is by acquiring (and increasing) bard or sage skill levels. You can only learn to _speak_ with the bard skill. With the sage skill, you can learn both to speak _and_ to read. Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. Of course, it's impossible to learn how to read a language that doesn't have written characters. If an ad
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04232))_
-
-> An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
-
-### Technical atom 26
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
-
-> In these cases, adventurers can request NPCs to do this kind of work. If it’s a very simple task like those above, you can have it done for _NPC skill level x skill level x 30 gamels_ . For example, if you request an appraisal from a 5th level sage, you will have to pay 5 x 5 x 30 = **750** gamels. If the task becomes a little more complex, use numbers such as x _40_ or x _50_ instead of x 30. Also, if there’s no one available to do this for you, there is of course no point in paying any amount 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04521))_
-
-> If the work _fails_ , you do _not_ have to pay the remainder.
-
 ### Technical atom 27
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06119))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03285))_
 
-> A Lycanthrope is a monster with the ability to change from human to beast form. When in human form, they may acquire and use various skills, including magic, just like an adventurer. When in beast form, they cannot act intelligently, but rather follow their instincts and go on killing sprees. Magic and skills cannot be used. The game master can decide on a lycanthrope’s abilities while in human form (however, it should basically only have acquired skills up to its monster level), or use the fixe
+> Each monster has a score called _rarity_ . Using _sage skill level + intelligence bonus_ as the baseline score, make a success roll with this rarity as the target score, and if you succeed, you know the monster.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06120))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03288))_
 
-> When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
+> Each time their sage skill level increases, a character in Forcelia, but when they do, they are always a harbinger of something to come.
 
 ### Technical atom 28
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06119))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
-> A Lycanthrope is a monster with the ability to change from human to beast form. When in human form, they may acquire and use various skills, including magic, just like an adventurer. When in beast form, they cannot act intelligently, but rather follow their instincts and go on killing sprees. Magic and skills cannot be used. The game master can decide on a lycanthrope’s abilities while in human form (however, it should basically only have acquired skills up to its monster level), or use the fixe
+> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06121))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03404))_
 
-> Even when it's not, a lycanthrope can transform into a beast at their own will.
+> **Table 6-3: Determining Long Jump Target Scores**
 
 ### Technical atom 29
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027, source-range-870a16bc-07029))_
-
-> A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When Form=Mirror with high ancient runes densely engraved on the frame You can ask the mirror spirit sealed inside the mirror to answer a simple question. The mirror spirit knows everything reflected in mirrors a
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07028))_
-
-> Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
-
-### Technical atom 30
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
-
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb 121 time, only double ones will result in a failure.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03376))_
-
-| **Table 6-1: Climb by Skill** |
-| --- |
-| With Rope |
-| Climb with thief skill |
-| Climb with common adventurer<br>ability |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-|**Table 6-1: Climb by Skill**|||
-|---|---|---|
-||With Rope|Without Rope|
-|Climb with thief skill|Almost always succeeds (only double<br>ones fail)|Requires success<br>roll|
-|Climb with common adventurer<br>ability|Requires success roll|Not possible|
-```
-
-</details>
-
-### Technical atom 31
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
@@ -580,7 +543,239 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03479))_
+
+> To use this skill, you are subject to the same equipment restrictions as when using the ranger skill. Also, as mentioned above, the hunter skill is similar to the ranger skill, so please refer to the ranger skill section for overlapping _abilities_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03481))_
+
+> You can also use it to take apart and smoke meat.
+
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03508))_
+
+> Sailors have the ability to know direction by looking at the stars on the sea at night, and to identify dangerous areas where reefs are likely to exist. The game master should ask for a success roll check for such actions using _sailor skill level + intelligence bonus_ as the baseline score. The difficulty or target score is determined by the game master each time.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03509))_
+
+> At that time, you can only wear armor up to cloth or soft leather.
+
 ### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03510))_
+
+> The _abilities_ of the sailor skill are as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03513))_
+
+> If you're just going straight through calm water, you don't need a success roll.
+
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
+
+> Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
+
+> If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance.
+
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
+
+> For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be liked by people at a bar, and how to make simple dishes that pair well with drinks. Of course, different people will pick up different jobs at different speeds, but anyone would have gained some experience in that time. So the game master then decides to give th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03584))_
+
+> If a character is suitable for this type of job, you can give them 3 levels, and if a character is unsuitable, you can give them only 1 level.
+
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03599, source-range-870a16bc-03601))_
+
+> To make a success roll, you must decide on the _skill to be used_ , the _relevant ability score_ , and the _target score or difficulty_ . Of these, skill and ability score should be clear immediately as long as you understand the _abilities_ included under each skill. The problem is the target score or difficulty. There is no problem with things that are clearly stipulated in the rules, such as climbing, hit checks in combat, etc. but things that are not will have to be set by the game master ea
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
+
+> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+
+### Technical atom 36
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03630, source-range-870a16bc-03633))_
+
+> The world record for the long jump is just under 9 meters. In _Sword World RPG_ , those with a high thief skill can jump However, it would be unnatural if even something that seems so impossible them the difficulty. Players will probably think it's the same difficulty as before. Then, after it becomes clear that their success roll was a failure, it'll turn out that the difficulty was actually high. Modifiers are applied to the final score of a success roll. Therefore, the greater the negative nu
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03632))_
+
+> Of course, even if that's the case, stay true to the roll of your dice.
+
+### Technical atom 37
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04127, source-range-870a16bc-04131))_
+
+> To acquire the shaman skill, you must be taught how to communicate with spirits by a shaman with a shaman skill of 1st level or higher. The art of communicating with spirits is not based on theory, but must be learned through experience, by watching and imitating other shamans. Although there are no specific restrictions in the rules, training for one year or more is usually required. However, the surest way to awaken to faith is to work in a temple, constantly see other priests, and receive the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04130))_
+
+> When you awaken to faith and recognize the existence of the gods, you can acquire the 1st level priest skill.
+
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04230, source-range-870a16bc-04233))_
+
+> Adventurers can study and learn common and normal languages other than their mother tongue. The way to do this is by acquiring (and increasing) bard or sage skill levels. You can only learn to _speak_ with the bard skill. With the sage skill, you can learn both to speak _and_ to read. Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. Of course, it's impossible to learn how to read a language that doesn't have written characters. If an ad
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04232))_
+
+> An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
+
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
+
+> In these cases, adventurers can request NPCs to do this kind of work. If it’s a very simple task like those above, you can have it done for _NPC skill level x skill level x 30 gamels_ . For example, if you request an appraisal from a 5th level sage, you will have to pay 5 x 5 x 30 = **750** gamels. If the task becomes a little more complex, use numbers such as x _40_ or x _50_ instead of x 30. Also, if there’s no one available to do this for you, there is of course no point in paying any amount 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04521))_
+
+> If the work _fails_ , you do _not_ have to pay the remainder.
+
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
+
+> Then, needles extended from the tips of the legs are embedded into the opponent's brain. In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the nee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05230))_
+
+> If other allies want to help, they must attack and be prepared to hit their own ally.
+
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
+
+> Then, needles extended from the tips of the legs are embedded into the opponent's brain. In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the nee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05231))_
+
+> However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
+
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438, source-range-870a16bc-05442))_
+
+> Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. Make a success roll against target score 16, using _ranger skill level + intelligence bonus_ as the baseline score. If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side. Adult giant antlions look very similar to humans, and are about the same height. They have a slender build and don't wear any clothes, but their gender c
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05440))_
+
+> Monster Level=5
+
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06119))_
+
+> A Lycanthrope is a monster with the ability to change from human to beast form. When in human form, they may acquire and use various skills, including magic, just like an adventurer. When in beast form, they cannot act intelligently, but rather follow their instincts and go on killing sprees. Magic and skills cannot be used. The game master can decide on a lycanthrope’s abilities while in human form (however, it should basically only have acquired skills up to its monster level), or use the fixe
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06120))_
+
+> When the score is equal to or less than this, the lycanthrope will always enter beast form (the lycanthrope will always enter beast form on nights when the moon is full = 15 days).
+
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06119))_
+
+> A Lycanthrope is a monster with the ability to change from human to beast form. When in human form, they may acquire and use various skills, including magic, just like an adventurer. When in beast form, they cannot act intelligently, but rather follow their instincts and go on killing sprees. Magic and skills cannot be used. The game master can decide on a lycanthrope’s abilities while in human form (however, it should basically only have acquired skills up to its monster level), or use the fixe
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06121))_
+
+> Even when it's not, a lycanthrope can transform into a beast at their own will.
+
+### Technical atom 45
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027, source-range-870a16bc-07029))_
+
+> A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When Form=Mirror with high ancient runes densely engraved on the frame You can ask the mirror spirit sealed inside the mirror to answer a simple question. The mirror spirit knows everything reflected in mirrors a
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07028))_
+
+> Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
+
+### Technical atom 46
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
+
+> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb 121 time, only double ones will result in a failure.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03376))_
+
+| **Table 6-1: Climb by Skill** |
+| --- |
+| With Rope |
+| Climb with thief skill |
+| Climb with common adventurer<br>ability |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+|**Table 6-1: Climb by Skill**|||
+|---|---|---|
+||With Rope|Without Rope|
+|Climb with thief skill|Almost always succeeds (only double<br>ones fail)|Requires success<br>roll|
+|Climb with common adventurer<br>ability|Requires success roll|Not possible|
+```
+
+</details>
+
+### Technical atom 47
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
+
+> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
+
+| Base Target Score = 10 |
+| --- |
+| Modifer due to wall and clif foothold conditions:<br> *No walls or clifs, using a vertical rope=<br> Walls and clifs are vertical, very slippery, not a good foothold= |
+| Walls and clifs are vertical, easy to put feet on= |
+| Walls and clifs are somewhat slanted, but slippery (e.g., sloped rapids, etc.) |
+| Walls and clifs are somewhat slanted, easy to put feet on= |
+| Modifer due to armor worn: |
+| *Chainmail, lamellar, splint, plate= |
+| Ring mail, hard leather= |
+| Cloth, sof leather, no armor= |
+| Other conditions set by game master: |
+| Have very little luggage |
+| Have a lot of luggage, heavy |
+| Strong winds<br> Others, as appropriate depending on the situation |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+||Base Target Score = 10|||
+|---|---|---|---|
+||Modifer due to wall and clif foothold conditions:<br> *No walls or clifs, using a vertical rope=<br> Walls and clifs are vertical, very slippery, not a good foothold=|+4<br>+4||
+||Walls and clifs are vertical, easy to put feet on=|+2||
+||Walls and clifs are somewhat slanted, but slippery (e.g., sloped rapids, etc.)|+2||
+||Walls and clifs are somewhat slanted, easy to put feet on=|±0||
+||Modifer due to armor worn:|||
+||*Chainmail, lamellar, splint, plate=|+4||
+||Ring mail, hard leather=|+2||
+||Cloth, sof leather, no armor=|±0||
+||Other conditions set by game master:|||
+||Have very little luggage|-2||
+||Have a lot of luggage, heavy|+2||
+||Strong winds<br> Others, as appropriate depending on the situation|+2||
+```
+
+</details>
+
+### Technical atom 48
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -612,7 +807,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 33
+### Technical atom 49
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
 
@@ -669,7 +864,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 34
+### Technical atom 50
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -722,7 +917,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 35
+### Technical atom 51
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 
@@ -771,7 +966,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 36
+### Technical atom 52
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 
@@ -804,7 +999,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 37
+### Technical atom 53
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07708))_
 
@@ -833,7 +1028,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 38
+### Technical atom 54
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 
@@ -856,7 +1051,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 39
+### Technical atom 55
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07712))_
 
@@ -879,7 +1074,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 40
+### Technical atom 56
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -904,7 +1099,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 41
+### Technical atom 57
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
@@ -943,7 +1138,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 42
+### Technical atom 58
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
@@ -974,7 +1169,7 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 </details>
 
-### Technical atom 43
+### Technical atom 59
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -1034,24 +1229,49 @@ What [[sword-world-rpg-complete-edition]] covers about skill:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (31 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (1 shared statement(s), 15 shared atom(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (4 shared statement(s), 13 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (4 shared statement(s), 10 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms (2 shared statement(s), 11 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (10 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (11 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - narrower topic (23 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - narrower topic (9 shared statement(s))
+- [[sword-world-rpg-complete-edition-increasing-skill]] - narrower topic (5 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-sailor-skill-ability-table]] - narrower topic (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-thief-skill]] - narrower topic (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-hunter-skill]] - narrower topic (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-merchant-skill]] - narrower topic (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-how-experience-increasing-skill-level]] - narrower topic (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (31 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (1 shared statement(s), 18 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (4 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (10 shared statement(s), 10 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (4 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (11 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared statements and technical atoms (2 shared statement(s), 10 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements and technical atoms (1 shared statement(s), 10 shared atom(s))
+- [[sword-world-rpg-complete-edition-equipment-restriction]] - shared statements and technical atoms (7 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (4 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements and technical atoms (8 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-game]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-target-score]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-climb-agility]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-human]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills-206c972b]] - source section (91 shared statement(s), 17 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-skills-other-3a231613]] - source section (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-7-general-skills-bb0ba5d6]] - source section (128 shared statement(s), 8 shared atom(s))
 
 ## Source
 

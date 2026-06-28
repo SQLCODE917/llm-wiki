@@ -7,16 +7,22 @@ updated: 2026-06-27
 domain: javascriptallonge
 category_path: sources/javascriptallonge/sections
 source_id: javascriptallonge.pdf
-projection_coverage: section-javascriptallonge-section-document-57b124a3@f57820f52aed09ae8541f48ae2f496ed
+projection_coverage: section-javascriptallonge-section-document-57b124a3@248650089624b267e0e50283c602831d
 ---
 
 # Document
 
 From [[javascriptallonge]].
 
-## Statements
+## Related pages
 
-- How to Do What You Love & Earn What You’re Worth as a Programmer _(javascriptallonge.pdf (source-range-83ecb080-00011))_
+- [[javascriptallonge-section-document-reg-raganwald-braithwaite-7f935dce]] - narrower source section
+
+## Statements by subsection
+
+### Document / Reg “raganwald” Braithwaite
+
+- How to Do What You Love & Earn What You’re Worth as a Programmer _(javascriptallonge.pdf (source-range-83ecb080-00010))_
 
 ## Technical atoms
 
@@ -34,4 +40,4 @@ From [[javascriptallonge]].
 
 **Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00008))_
 
-> © 2015 - 2017 Reg “raganwald” Braithwaite
+> © 2015 - 2017 Reg “raganwald” Braithwaite **Also By Reg “raganwald” Braithwaite** Kestrels, Quirky Birds, and Hopeless Egocentricity

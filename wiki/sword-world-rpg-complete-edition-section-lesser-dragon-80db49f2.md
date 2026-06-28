@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-lesser-dragon-80db49f2
 page_kind: source
-summary: **Lesser Dragon**: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Lesser Dragon: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-lesser-dragon-80db49f2@2c01e21ecb02f7bac40ca8bf490ea80d
+projection_coverage: section-sword-world-rpg-complete-edition-section-lesser-dragon-80db49f2@72131ae73a7a943114caae0e981fbf47
 ---
 
-# **Lesser Dragon**
+# Lesser Dragon
 
 From [[sword-world-rpg-complete-edition]].
 

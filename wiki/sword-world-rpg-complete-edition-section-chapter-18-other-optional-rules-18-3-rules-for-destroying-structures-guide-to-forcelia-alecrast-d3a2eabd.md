@@ -1,0 +1,35 @@
+---
+page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-guide-to-forcelia-alecrast-d3a2eabd
+page_kind: source
+summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / World: 13 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-guide-to-forcelia-alecrast-d3a2eabd@d759f9ce05e051f112021e952902a3bc
+---
+
+# Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / World
+
+From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-guide-to-forcelia-alecrast-91cb8355]] - broader source section
+
+## Statements
+
+- People consider Forcelia to be the world itself. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07538))_
+- The Alecrast continent is just a small part of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07538))_
+- At these four corners, there are gates that seal off the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07539))_
+- The world of Forcelia is believed to be flat rather than spherical. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07539))_
+- It is said to be sealed by mountains of ice of infinite height. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
+- There is also a theory that it is the Gate of Earth, in which case mountain ranges of infinite height seal the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
+- It is said to be sealed by scorching flames. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
+- In the south is the Gate of Fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
+- In the east is the Gate of Wind, sealed by fierce storms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
+- The Alecrast continent is believed to be located quite far north in the world of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
+- However, this Water Gate is said to be unsealed, falling as a waterfall into the Void. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
+- And in the west is the Gate of Water. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
+- The Alecrast continent is believed to be located quite far north in the world of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_

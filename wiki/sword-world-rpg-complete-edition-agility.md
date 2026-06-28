@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-agility
 page_kind: concept
-summary: Agility: 90 statement(s) and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Agility: 90 statement(s) and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-agility@767924b0f44c49bc19c32bef53c4c146
+projection_coverage: topic-sword-world-rpg-complete-edition-agility@442fa116501d8e8597a4c1459eab98c8
 ---
 
 # Agility
@@ -150,6 +150,16 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 ### Technical atom 5
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04803))_
+
+> If a target drinks even a little of an undine's body, this water spirit will enter directly into their lungs. A check for whether or not you’ve taken a drink is made via success roll using " _adventurer level + agility bonus_ " as the baseline score. The target score in this case is 12. This check must be made every round until you escape from the spring or river containing the undine. However, in this case, you can obviously hold your breath. As long as you hold your breath, you don't have to w
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04804))_
+
+> To do so, you must make a successful life force resistance roll.
+
+### Technical atom 6
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04901))_
 
 > Rarity=11 Agility=12 Movement Speed=24 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Arm:14 (7) Strike Points=13 Evasion Points=13 (6) Defense Points=11 Life Points/Resistance=21/15 (8) Mental Points/Resistance=14/14 (7) Special Abilities=Camouflage (Sense target score=13) Habitat=Caves, hills Languages=Giant Perception=Five senses (darkvision) Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and 
@@ -158,7 +168,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock.
 
-### Technical atom 6
+### Technical atom 7
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05103))_
 
@@ -168,7 +178,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > If you fail, the poison deals damage resulting from a strike power 20 strike roll plus bonus damage 7.
 
-### Technical atom 7
+### Technical atom 8
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05248))_
 
@@ -178,7 +188,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
 
-### Technical atom 8
+### Technical atom 9
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05307, source-range-870a16bc-05310))_
 
@@ -188,7 +198,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Monster Level=3
 
-### Technical atom 9
+### Technical atom 10
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05375))_
 
@@ -198,7 +208,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Languages=None Perception=Five senses
 
-### Technical atom 10
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05651))_
 
@@ -208,7 +218,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Monster Level=3
 
-### Technical atom 11
+### Technical atom 12
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05708, source-range-870a16bc-05713))_
 
@@ -218,7 +228,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Monster Level=6
 
-### Technical atom 12
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05713))_
 
@@ -228,7 +238,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 > Rarity=11
 
-### Technical atom 13
+### Technical atom 14
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
 
@@ -251,7 +261,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 </details>
 
-### Technical atom 14
+### Technical atom 15
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -278,7 +288,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 </details>
 
-### Technical atom 15
+### Technical atom 16
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 
@@ -305,7 +315,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 </details>
 
-### Technical atom 16
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
 
@@ -332,7 +342,7 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 </details>
 
-### Technical atom 17
+### Technical atom 18
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -362,25 +372,32 @@ What [[sword-world-rpg-complete-edition]] covers about agility:
 
 ## Related pages
 
+- [[sword-world-rpg-complete-edition-climb-agility]] - narrower topic (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-move]] - shared statements and technical atoms (77 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements and technical atoms (77 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements and technical atoms (70 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (41 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (41 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (10 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-1-character-1-1-ability-scores-agility-84d45386]] - source section (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-agility-3babbdf3]] - source section (7 shared statement(s), 1 shared atom(s))
 
 ## Source
 

@@ -1,12 +1,12 @@
 ---
 page_id: javascriptallonge-expression
 page_kind: concept
-summary: Expression: 23 statement(s) and 25 atom(s) from raw/javascriptallonge.pdf.
+summary: Expression: 17 statement(s) and 20 atom(s) from raw/javascriptallonge.pdf.
 sources: raw/javascriptallonge.pdf
 updated: 2026-06-27
 domain: javascriptallonge
 category_path: concepts
-projection_coverage: topic-javascriptallonge-expression@9180d0e66f04be211d7a7ecb057f3db0
+projection_coverage: topic-javascriptallonge-expression@b009b943e5166945c1221ba406c1ce21
 ---
 
 # Expression
@@ -15,302 +15,314 @@ What [[javascriptallonge]] covers about expression:
 
 ## Statements
 
-- For example, when this expression’s inner function is defined with function, arguments[0] refers to its only argument, "inner": _(javascriptallonge.pdf (source-range-83ecb080-00881))_
-- The x in the expression that we call a “variable” is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-83ecb080-00434))_
-- The expression on the left is always evaluated, and its value determines whether the expression on the right is evaluated or not. _(javascriptallonge.pdf (source-range-83ecb080-01159))_
-- An expression is any valid unit of code that resolves to a value.—Mozilla Development Network: Expressions and operators[87] _(javascriptallonge.pdf (source-range-83ecb080-02319))_
-- > 11In some languages, expressions are a kind of value unto themselves and can be manipulated. _(javascriptallonge.pdf (source-range-83ecb080-00175))_
-- Every time you evaluate an expression (including typing something in) to create an array, you’re creating a new, distinct value even if it _appears_ to be the same as some other array value. _(javascriptallonge.pdf (source-range-83ecb080-00210))_
-- We saw that an expression consisting solely of numbers, like 42, is a literal. _(javascriptallonge.pdf (source-range-83ecb080-00216))_
-- This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. _(javascriptallonge.pdf (source-range-83ecb080-00262))_
-- Right now, we only know about one such expression: () => 0, so let’s use it. _(javascriptallonge.pdf (source-range-83ecb080-00277))_
-- An expression is a JavaScript statement. _(javascriptallonge.pdf (source-range-83ecb080-00349))_
-- But no matter how we arrange them, a block with one or more expressions still evaluates to undefined: _(javascriptallonge.pdf (source-range-83ecb080-00353))_
-- The expression ‘x’ (the right side of the function) is evaluated within the environment we just created. _(javascriptallonge.pdf (source-range-83ecb080-00448))_
-- This expression, when evaluated, returns a function that calculates circumferences. _(javascriptallonge.pdf (source-range-83ecb080-00552))_
-- In this expression, double is the name in the environment, but repeat is the function’s actual name. _(javascriptallonge.pdf (source-range-83ecb080-00720))_
-- The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. _(javascriptallonge.pdf (source-range-83ecb080-00770))_
-- It’s a simple representation of an expression to be computed. _(javascriptallonge.pdf (source-range-83ecb080-00897))_
-- The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. _(javascriptallonge.pdf (source-range-83ecb080-01119))_
-- We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-83ecb080-01299))_
-- Expressions can be used for keys as well. _(javascriptallonge.pdf (source-range-83ecb080-01609))_
-- The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string. _(javascriptallonge.pdf (source-range-83ecb080-02328))_
-- The expression Symbol.iterator evaluates to a special symbol representing the name of the method that objects should use if they return an iterator object. _(javascriptallonge.pdf (source-range-83ecb080-02415))_
-- This expression begins with a stack containing 30 elements. _(javascriptallonge.pdf (source-range-83ecb080-02788))_
-- To see the result of your expressions, you may have to use the console in your web browser. _(javascriptallonge.pdf (source-range-83ecb080-03104))_
+- For example, when this expression’s inner function is defined with function, arguments[0] refers to its only argument, "inner": _(javascriptallonge.pdf (source-range-83ecb080-00630))_
+- The x in the expression that we call a “variable” is itself an expression that is evaluated by looking up the value in the environment. _(javascriptallonge.pdf (source-range-83ecb080-00335))_
+- The expression on the left is always evaluated, and its value determines whether the expression on the right is evaluated or not. _(javascriptallonge.pdf (source-range-83ecb080-00810))_
+- > 11In some languages, expressions are a kind of value unto themselves and can be manipulated. _(javascriptallonge.pdf (source-range-83ecb080-00142))_
+- Every time you evaluate an expression (including typing something in) to create an array, you’re creating a new, distinct value even if it _appears_ to be the same as some other array value. _(javascriptallonge.pdf (source-range-83ecb080-00175))_
+- We saw that an expression consisting solely of numbers, like 42, is a literal. _(javascriptallonge.pdf (source-range-83ecb080-00180))_
+- This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. _(javascriptallonge.pdf (source-range-83ecb080-00221))_
+- Right now, we only know about one such expression: () => 0, so let’s use it. _(javascriptallonge.pdf (source-range-83ecb080-00234))_
+- An expression is a JavaScript statement. _(javascriptallonge.pdf (source-range-83ecb080-00289))_
+- The expression ‘x’ (the right side of the function) is evaluated within the environment we just created. _(javascriptallonge.pdf (source-range-83ecb080-00348))_
+- The big trouble with expressions like this is that they may work just fine in your test environment but work a different way in production. _(javascriptallonge.pdf (source-range-83ecb080-00559))_
+- It’s a simple representation of an expression to be computed. _(javascriptallonge.pdf (source-range-83ecb080-00640))_
+- The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. _(javascriptallonge.pdf (source-range-83ecb080-00778))_
+- We saw that the basic idea that putting an array together with a literal array expression was the reverse or opposite of taking it apart with a destructuring assignment. _(javascriptallonge.pdf (source-range-83ecb080-00885))_
+- Expressions can be used for keys as well. _(javascriptallonge.pdf (source-range-83ecb080-01092))_
+- The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string. _(javascriptallonge.pdf (source-range-83ecb080-01504))_
+- To see the result of your expressions, you may have to use the console in your web browser. _(javascriptallonge.pdf (source-range-83ecb080-01972))_
 
 ## Technical atoms
 
 ### Technical atom 1
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00168))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00135))_
 
 > All values are expressions. That’s easy! Are there any other kinds of expressions? Sure! let’s go back to the coffee shop. Instead of handing over the finished coffee, we can hand over the ingredients. Let’s hand over some ground coffee plus some boiling water.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00170))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00137))_
 
 > And if we hand over the espresso, we get the espresso right back.
 
 ### Technical atom 2
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00205))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00164))_
 
-> An array looks like this: [1, 2, 3]. This is an expression, and you can combine [] with other expressions. Go wild with things like:
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00206))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00162))_
 
-> [2-1, 2, 2+1] [1, 1+1, 1+1+1]
+> - 2 + 2 === 4 _//=> true_
 
 ### Technical atom 3
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00240, source-range-83ecb080-00242))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00164))_
 
-> In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00241))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00163))_
 
-> 2 * 5 + 1 _//=> 11_ 1 + 5 * 2 _//=> 11_
+> - (2 + 2 === 4) === (2 !== 5) _//=> true_
 
 ### Technical atom 4
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00262))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00164))_
 
-> What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If you try the same thing in a 
+> Note well what is happening with these examples: Even when we obtain a string, number, or boolean as the result of evaluating an expression, it is identical to another value of the same type with the same “content.” Strings, numbers, and booleans are examples of what JavaScript calls “value” or “primitive” types. We’ll use both terms interchangeably.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00263))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00165))_
 
-> > 16 The simplest possible function is () => {}, we’ll see that later.
+> So even if you have two cups of the same type, and their contents are the same, you can still distinguish between them.
 
 ### Technical atom 5
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00349, source-range-83ecb080-00351))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00180))_
 
-> There are many kinds of JavaScript statements, but the first kind is one we’ve already met. An expression is a JavaScript statement. Although they aren’t very practical, these are valid JavaScript functions, and they return undefined when applied: As we saw with commas above, we can rearrange these functions onto multiple lines when we feel its more readable that way:
+> In computer science, a literal is a notation for representing a fixed value in source code. Almost all programming languages have notations for atomic values such as integers, floating-point numbers, and strings, and usually for booleans and characters; some also have notations for elements of enumerated types and compound values such as arrays, records, and objects. An anonymous function is a literal for the function type.— Wikipedia[12] JavaScript, like most languages, has a collection of lite
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00350))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00183))_
 
-> () => { 2 + 2 } () => { 1 + 1; 2 + 2 }
+> The machine’s representation of a number almost never lines up perfectly with our understanding of how a number behaves, and thus there will be places where the computer’s behaviour surprises us if we don’t know a little about what it’s doing “under the hood.” For example, the largest integer JavaScript can safely[14] handle is 9007199254740991, or 2[‘53‘] - 1.
 
 ### Technical atom 6
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00200, source-range-83ecb080-00202))_
 
-> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+> In JavaScript, operators have an order of precedence designed to mimic the way humans typically parse written arithmetic. So: JavaScript treats the expressions as if we had written (2 * 5) + 1 and 1 + (5 * 2), because the * operator has a _higher precedence_ than the + operator. JavaScript has many more operators. In a sense, they behave like little functions. If we write 1 + 2, this is conceptually similar to writing plus(1, 2) (assuming we have a function that adds two numbers bound to the nam
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00354))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00201))_
 
-> (() => { 2 + 2 })() _//=> undefined_
+> 2 * 5 + 1 _//=> 11_ 1 + 5 * 2 _//=> 11_
 
 ### Technical atom 7
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00221))_
 
-> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+> (() => 0) _//=> [Function]_ What!? Why didn’t it type back () => 0 for us? This _seems_ to break our rule that if an expression is also a value, JavaScript will give the same value back to us. What’s going on? The simplest and easiest answer is that although the JavaScript interpreter does indeed return that value, displaying it on the screen is a slightly different matter. [Function] is a choice made by the people who wrote Node.js, the JavaScript environment that hosts the JavaScript REPL. If 
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00355))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00222))_
 
-> (() => { 1 + 1; 2 + 2 })() _//=> undefined_
+> > 16 The simplest possible function is () => {}, we’ll see that later.
 
 ### Technical atom 8
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00353))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00243))_
 
-> But no matter how we arrange them, a block with one or more expressions still evaluates to undefined:
+> Yes we can. We can put any expression to the right of the arrow. For example, (() => 0)() is an expression. Can we put it to the right of an arrow, like this: () => (() => 0)()?
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00356))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00244))_
 
-> (() => { 1 + 1; 2 + 2 })() _//=> undefined_
+> Let’s try it: (() => (() => 0)())() _//=> 0_
 
 ### Technical atom 9
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00246))_
 
-> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+> When dealing with expressions that have a lot of the same characters (like parentheses), you may find it helpful to format the code to make things stand out. So we can also write:
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00362))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00248))_
 
-> So how do we get a function that evaluates a block to return a value when applied?
+> The first sip: Basic Functions (() => (() => 0 )() )() _//=> 0_
 
 ### Technical atom 10
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00364))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00254))_
 
-> The return keyword creates a _return statement_ that immediately terminates the function application and returns the result of evaluating its expression. For example:
+> We can use commas with functions to create functions that evaluate multiple expressions: (() => (1 + 1, 2 + 2))() _//=> 4_
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00365))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00255))_
 
-> (() => { 1 + 1; **return** 2 + 2 })() _//=> 4_
+> This is useful when trying to do things that might involve _side-effects_ , but we’ll get to that later.
 
 ### Technical atom 11
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00366, source-range-83ecb080-00368))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00367, source-range-83ecb080-00369))_
 
-> And also: The return statement is the first statement we’ve seen, and it behaves differently than an expression. For example, you can’t use one as the expression in a simple function, because it isn’t an expression:
+> It’s time to see how a function within a function works: First off, let’s use what we learned above. Given ( _some function_ )( _some argument_ ), we know that we apply the function to the argument, create an environment, bind the value of the argument to the name, and evaluate the function’s expression. So we do that first with this code:
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00367))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00368))_
 
-> (() => { **return** 1 + 1; 2 + 2 })() _//=> 2_
+> - ((x) => (y) => x)(1)(2) _//=> 1_
 
 ### Technical atom 12
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00548))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00383, source-range-83ecb080-00387))_
 
-> In order to bind 3.14159265 to the name PI, we’ll need a function with a parameter of PI applied to an argument of 3.14159265. If we put our function expression in parentheses, we can apply it to the argument of 3.14159265:
+> Pure functions are easiest to understand. They always mean the same thing wherever you use them. Here are some pure functions we’ve already seen: The first function doesn’t have any variables, therefore doesn’t have any free variables. The second doesn’t have any free variables, because its only variable is bound. The third one is actually two functions, one inside the other. (y) => ... has a free variable, but the entire expression refers to (x) => ..., and it doesn’t have a free variable: The 
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00549))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00386))_
 
-> ((PI) => _// ????_ )(3.14159265)
+> - (x) => (y) => x
 
 ### Technical atom 13
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00561, source-range-83ecb080-00563))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00773))_
 
-> There’s another way we can make a function that binds 3.14159265 to the name PI and then uses that in its expression. We can turn things inside-out by putting the binding inside our diameter calculating function, like this: It produces the same result as our previous expressions for a diameter-calculating function:
+> This is a lot like the if statement, however it is an _expression_ , not a statement, and that can be very valuable. It also doesn’t introduce braces, and that can be a help or a hindrance if we want to introduce a new scope or use statements.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00562))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00776))_
 
-> (diameter) => ((PI) => diameter * PI)(3.14159265)
+> - 0 ? 'Hello' : 'Good bye' _//=> 'Good bye'_
 
 ### Technical atom 14
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00602))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01504))_
 
-> We can bind any expression. Functions are expressions, so we can bind helper functions:
+> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00604))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01503))_
 
-> This underscores what we’ve said: if we have an expression that evaluates to a function, we apply it with ().
+> `foobar` _//=> 'foobar'_ `fizz` + `buzz` _//=> 'fizzbuzz'_
 
 ### Technical atom 15
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00627, source-range-83ecb080-00632))_
-
-> It’s more than a bit convoluted, but it binds ((PI) => (diameter) => diameter * PI)(3.14159265) to diameter_fn and evaluates the expression that we’ve elided. We can use any expression in there, and that expression can invoke diameter_fn. For example: This is called lexical scoping[31] , because we can discover where a name is bound by looking at the source code for the program. We can see that PI is bound in an environment surrounding (diameter) => diameter * PI, we don’t need to know where dia
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00630))_
-
-> ((diameter_fn) => diameter_fn(2) )( ((PI) => (diameter) => diameter * PI )(3.14159265) ) _//=> 6.2831853_
-
-### Technical atom 16
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00655, source-range-83ecb080-00657))_
-
-> And we can see that our diameter * PI expression uses the binding for PI in the closest parent environment. but one question: Did binding 3.14159265 to PI somehow change the binding in the “outer” environment? Let’s rewrite things slightly differently: Now we bind 3 to PI in an otherwise empty IIFE inside of our IIFE that binds 3.14159265 to PI. Does that binding “overwrite” the outer one? Will our function return 6 or 6.2831853? This is a book, you’ve already scanned ahead, so you know that the
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00656))_
-
-> ((PI) => { ((PI) => {})(3); **return** (diameter) => diameter * PI; })(3.14159265)
-
-### Technical atom 17
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01119))_
-
-> The fact that either the second or the third (but not both) expressions are evaluated can have important repercussions. Consider this hypothetical example:
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01120))_
-
-> **const** status = isAuthorized(currentUser) ? deleteRecord(currentRecord) : 'Forbid\ den';
-
-### Technical atom 18
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01609))_
-
-> Expressions can be used for keys as well. The syntax is to enclose the key’s expression in [ and ]:
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01610))_
-
-> { ["p" + "i"]: 3.14159265 } _//=> {"pi":3.14159265}_
-
-### Technical atom 19
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02328))_
-
-> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02326))_
-
-> `foobar` _//=> 'foobar'_
-
-### Technical atom 20
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02328))_
-
-> Quasi-literals go much further. A quasi-literal can contain an expression to be evaluated. Old-school lispers call this “unquoting,” the more contemporary term is “interpolation.” An unquoted expression is inserted in a quasi-literal with ${expression}. The expression is evaluated, and the result is coerced to a string, then inserted in the quasi-string.
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02327))_
-
-> `fizz` + `buzz` _//=> 'fizzbuzz'_
-
-### Technical atom 21
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02329, source-range-83ecb080-02332))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01505, source-range-83ecb080-01508))_
 
 > For example: A quasi-literal is computationally equivalent to an expression using +. So the above expression could also be written:
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02330))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01506))_
 
 > - `A popular number for nerds is **${** 40 + 2 **}** `
 
-### Technical atom 22
+### Technical atom 16
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02338))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01512))_
 
-> However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
+> 'A popular number for nerds is ' + (40 + 2) - _//=> 'A popular number for nerds is 42'_ However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02336))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01513))_
 
-> - 'A popular number for nerds is ' + (40 + 2)
+> - 'A popular number for nerds is' + (40 + 2) - _//=> 'A popular number for nerds is42'_
 
-### Technical atom 23
+### Technical atom 17
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02338))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01790))_
 
-> However, there is a big semantic difference between a quasi-literal and an expression. Quasi-literals are expressions that resemble their result. They’re easier to read and it’s easier to avid errors like the following:
+> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0) Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0) Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02339))_
-
-> - 'A popular number for nerds is' + (40 + 2)
-
-### Technical atom 24
-
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
-
-> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
-
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02783))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01792))_
 
 > When working with very large collections and many operations, this can be important.
 
-### Technical atom 25
+### Technical atom 18
 
-**Context:** _(javascriptallonge.pdf (source-range-83ecb080-02781))_
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-01790))_
 
-> Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
+> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0) Pair.from([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) .map((x) => x * x) .filter((x) => x % 2 == 0) .reduce((seed, element) => seed + element, 0) Both expressions evaluate to 220. And the array is faster in practice, because it is a built-in data type that performs its work in the engine, while the linked list does its work in JavaScript.
 
-**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-02784))_
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-01793))_
 
 > The effect is even more pronounced when we use methods like first, until, or take:
+
+### Technical atom 19
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00980))_
+
+> : mapWithDelaysWork(fn, rest, [...prepend, fn(first)]); **const** mapWith = callLast(mapWithDelaysWork, []); mapWith((x) => x * x, [1, 2, 3, 4, 5]) _//=> [1,4,9,16,25]_ We can use it with ridiculously large arrays: mapWith((x) => x * x, [
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00981))_
+
+| 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10, | 11, | 12, | 13, | 14, | 15, | 16, | 17, | 18, | 19, |
+| 20, | 21, | 22, | 23, | 24, | 25, | 26, | 27, | 28, | 29, |
+| 30, | 31, | 32, | 33, | 34, | 35, | 36, | 37, | 38, | 39, |
+| 40, | 41, | 42, | 43, | 44, | 45, | 46, | 47, | 48, | 49, |
+| 50, | 51, | 52, | 53, | 54, | 55, | 56, | 57, | 58, | 59, |
+| 60, | 61, | 62, | 63, | 64, | 65, | 66, | 67, | 68, | 69, |
+| 70, | 71, | 72, | 73, | 74, | 75, | 76, | 77, | 78, | 79, |
+| 80, | 81, | 82, | 83, | 84, | 85, | 86, | 87, | 88, | 89, |
+| 90, | 91, | 92, | 93, | 94, | 95, | 96, | 97, | 98, | 99, |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+|0,|1,|2,|3,|4,|5,|6,|7,|8,|9,|
+|---|---|---|---|---|---|---|---|---|---|
+|10,|11,|12,|13,|14,|15,|16,|17,|18,|19,|
+|20,|21,|22,|23,|24,|25,|26,|27,|28,|29,|
+|30,|31,|32,|33,|34,|35,|36,|37,|38,|39,|
+|40,|41,|42,|43,|44,|45,|46,|47,|48,|49,|
+|50,|51,|52,|53,|54,|55,|56,|57,|58,|59,|
+|60,|61,|62,|63,|64,|65,|66,|67,|68,|69,|
+|70,|71,|72,|73,|74,|75,|76,|77,|78,|79,|
+|80,|81,|82,|83,|84,|85,|86,|87,|88,|89,|
+|90,|91,|92,|93,|94,|95,|96,|97,|98,|99,|
+```
+
+</details>
+
+### Technical atom 20
+
+**Context:** _(javascriptallonge.pdf (source-range-83ecb080-00987))_
+
+> In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example:
+
+**Atom:** _(javascriptallonge.pdf (source-range-83ecb080-00988))_
+
+| 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10, | 11, | 12, | 13, | 14, | 15, | 16, | 17, | 18, | 19, |
+| 20, | 21, | 22, | 23, | 24, | 25, | 26, | 27, | 28, | 29, |
+| 30, | 31, | 32, | 33, | 34, | 35, | 36, | 37, | 38, | 39, |
+| 40, | 41, | 42, | 43, | 44, | 45, | 46, | 47, | 48, | 49, |
+| 50, | 51, | 52, | 53, | 54, | 55, | 56, | 57, | 58, | 59, |
+| 60, | 61, | 62, | 63, | 64, | 65, | 66, | 67, | 68, | 69, |
+| 70, | 71, | 72, | 73, | 74, | 75, | 76, | 77, | 78, | 79, |
+| 80, | 81, | 82, | 83, | 84, | 85, | 86, | 87, | 88, | 89, |
+| 90, | 91, | 92, | 93, | 94, | 95, | 96, | 97, | 98, | 99, |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+| 0, | 1, | 2, | 3, | 4, | 5, | 6, | 7, | 8, | 9, |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 10, | 11, | 12, | 13, | 14, | 15, | 16, | 17, | 18, | 19, |
+| 20, | 21, | 22, | 23, | 24, | 25, | 26, | 27, | 28, | 29, |
+| 30, | 31, | 32, | 33, | 34, | 35, | 36, | 37, | 38, | 39, |
+| 40, | 41, | 42, | 43, | 44, | 45, | 46, | 47, | 48, | 49, |
+| 50, | 51, | 52, | 53, | 54, | 55, | 56, | 57, | 58, | 59, |
+| 60, | 61, | 62, | 63, | 64, | 65, | 66, | 67, | 68, | 69, |
+| 70, | 71, | 72, | 73, | 74, | 75, | 76, | 77, | 78, | 79, |
+| 80, | 81, | 82, | 83, | 84, | 85, | 86, | 87, | 88, | 89, |
+| 90, | 91, | 92, | 93, | 94, | 95, | 96, | 97, | 98, | 99, |
+```
+
+</details>
 
 
 ## Related pages
 
-- [[javascriptallonge-function]] - shared statements and technical atoms (2 shared statement(s), 9 shared atom(s))
-- [[javascriptallonge-evaluate]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
-- [[javascriptallonge-literal]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-quasi-literal]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
-- [[javascriptallonge-block]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[javascriptallonge-warm-cup-string]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[javascriptallonge-evaluate-expression]] - narrower topic (2 shared atom(s))
+- [[javascriptallonge-value]] - shared statements and technical atoms (1 shared statement(s), 9 shared atom(s))
+- [[javascriptallonge-literal]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[javascriptallonge-function]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-quasi-literal]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[javascriptallonge-language]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-rule]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[javascriptallonge-second]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-value]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[javascriptallonge-bind]] - shared technical atoms (5 shared atom(s))
-- [[javascriptallonge-return]] - shared technical atoms (4 shared atom(s))
-- [[javascriptallonge-javascript]] - shared technical atoms (3 shared atom(s))
-- [[javascriptallonge-environment]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-warm-cup-string]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[javascriptallonge-javascript]] - shared technical atoms (8 shared atom(s))
+- [[javascriptallonge-string]] - shared technical atoms (4 shared atom(s))
+- [[javascriptallonge-note]] - shared technical atoms (3 shared atom(s))
+- [[javascriptallonge-quasi]] - shared technical atoms (3 shared atom(s))
+- [[javascriptallonge-type]] - shared technical atoms (3 shared atom(s))
+- [[javascriptallonge-argument]] - shared technical atoms (2 shared atom(s))
+- [[javascriptallonge-element]] - shared technical atoms (2 shared atom(s))
+- [[javascriptallonge-alway]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-coffee]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-instead]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-mapwith]] - shared technical atoms (1 shared atom(s))
 - [[javascriptallonge-program]] - shared technical atoms (1 shared atom(s))
-- [[javascriptallonge-iterator]] - shared statements (1 shared statement(s))
-- [[javascriptallonge-language]] - shared statements (1 shared statement(s))
-- [[javascriptallonge-method]] - shared statements (1 shared statement(s))
-- [[javascriptallonge-object]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-programming]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-pure]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-rest]] - shared technical atoms (1 shared atom(s))
+- [[javascriptallonge-evaluate]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-idea]] - shared statements (1 shared statement(s))
+- [[javascriptallonge-variable]] - shared statements (1 shared statement(s))
 
 ## Source
 

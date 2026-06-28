@@ -84,6 +84,84 @@ def test_build_structure_keeps_numbered_child_under_matching_parent() -> None:
     assert plan.node_for_segment["body"] == nodes["4.10.1 High-Quality Weapons"].structure_node_id
 
 
+def test_build_structure_keeps_equal_number_marker_under_parent() -> None:
+    plan = build_structure(
+        "sourcehash",
+        "source.md",
+        (
+            _segment("parent", "heading", "# 5.3 Spellsongs", 1),
+            _segment("marker", "heading", "## **5.3**", 2),
+            _segment("child", "heading", "## **Filling out the Character Sheet**", 3),
+            _segment("body", "paragraph", "Write spellsongs on the sheet.", 4),
+        ),
+    )
+
+    nodes = {node.heading_text: node for node in plan.nodes}
+    assert "**5.3**" not in nodes
+    assert (
+        nodes["**Filling out the Character Sheet**"].parent_structure_node_id
+        == nodes["5.3 Spellsongs"].structure_node_id
+    )
+    assert (
+        plan.node_for_segment["body"]
+        == nodes["**Filling out the Character Sheet**"].structure_node_id
+    )
+
+
+def test_build_structure_collapses_numbered_title_alias() -> None:
+    plan = build_structure(
+        "sourcehash",
+        "source.md",
+        (
+            _segment("parent", "heading", "# 1.4 Character Creation", 1),
+            _segment("marker", "heading", "## **1.4**", 2),
+            _segment("alias", "heading", "## **Character Creation**", 3),
+            _segment("body", "paragraph", "Create a player character.", 4),
+        ),
+    )
+
+    assert [node.heading_text for node in plan.nodes] == ["source.md", "1.4 Character Creation"]
+    assert plan.node_for_segment["marker"] == plan.node_for_segment["parent"]
+    assert plan.node_for_segment["alias"] == plan.node_for_segment["parent"]
+    assert plan.node_for_segment["body"] == plan.node_for_segment["parent"]
+
+
+def test_build_structure_uses_numbered_path_when_markdown_depth_is_flat() -> None:
+    plan = build_structure(
+        "sourcehash",
+        "source.md",
+        (
+            _segment("parent", "heading", "## **5.1 Basic Rules of Magic**", 1),
+            _segment("child-number", "heading", "## **5.1.2**", 2),
+            _segment("child-title", "heading", "## **Rune Masters and Rune Master Skills**", 3),
+            _segment("body", "paragraph", "Rune master rule.", 4),
+            _segment("sibling", "heading", "## **5.1.3 Casting Magic**", 5),
+            _segment("sibling-body", "paragraph", "Casting rule.", 6),
+        ),
+    )
+
+    nodes = {node.heading_text: node for node in plan.nodes}
+    assert (
+        nodes["**5.1.2**"].parent_structure_node_id
+        == nodes["**5.1 Basic Rules of Magic**"].structure_node_id
+    )
+    assert (
+        nodes["**Rune Masters and Rune Master Skills**"].parent_structure_node_id
+        == nodes["**5.1.2**"].structure_node_id
+    )
+    assert (
+        nodes["**5.1.3 Casting Magic**"].parent_structure_node_id
+        == nodes["**5.1 Basic Rules of Magic**"].structure_node_id
+    )
+    assert (
+        plan.node_for_segment["body"]
+        == nodes["**Rune Masters and Rune Master Skills**"].structure_node_id
+    )
+    assert (
+        plan.node_for_segment["sibling-body"] == nodes["**5.1.3 Casting Magic**"].structure_node_id
+    )
+
+
 def _segment(segment_id: str, kind: str, text: str, order: int) -> SourceSegment:
     return SourceSegment(
         segment_id=segment_id,

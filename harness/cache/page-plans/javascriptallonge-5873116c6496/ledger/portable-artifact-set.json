@@ -4,20 +4,20 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "claim-ledger-artifact",
-      "target_artifact_fingerprint": "d38771d60a916851",
+      "target_artifact_fingerprint": "3a7c6c06c74eb5ca",
       "target_artifact_id": "claim-ledger-876d0bcd791e83c1"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "document-structure-artifact",
-      "target_artifact_fingerprint": "d44fa3d746eab8a4",
-      "target_artifact_id": "document-structure-618b567c0f291b74"
+      "target_artifact_fingerprint": "0a035798bfb868f2",
+      "target_artifact_id": "document-structure-81aafb7a90e3c52f"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "ledger-quality-report-artifact",
-      "target_artifact_fingerprint": "19b2a6d299d3e1ae",
-      "target_artifact_id": "ledger-quality-report-19b2a6d299d3e1ae"
+      "target_artifact_fingerprint": "4d4f130b16c69a4e",
+      "target_artifact_id": "ledger-quality-report-4d4f130b16c69a4e"
     },
     {
       "artifact_format": "canonical-json",
@@ -28,8 +28,8 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "projection-coverage-artifact",
-      "target_artifact_fingerprint": "f0d0b901aa5b9537",
-      "target_artifact_id": "projection-coverage-c87b3743918a7e36"
+      "target_artifact_fingerprint": "95fe5e9be18f5321",
+      "target_artifact_id": "projection-coverage-0b00d3b7e9744843"
     },
     {
       "artifact_format": "canonical-json",
@@ -40,10 +40,10 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "section-grounded-plan-artifact",
-      "target_artifact_fingerprint": "1f3d0ccbba137d64",
-      "target_artifact_id": "section-grounded-plan-6cd0441c6eb62f27"
+      "target_artifact_fingerprint": "0e604703d7f3ccd0",
+      "target_artifact_id": "section-grounded-plan-3932faf677e6cc85"
     }
   ],
-  "portable_artifact_set_fingerprint": "25b7de073036f9f4",
-  "portable_artifact_set_id": "portable-artifact-set-25b7de073036f9f4"
+  "portable_artifact_set_fingerprint": "bd6cf129a73b051c",
+  "portable_artifact_set_id": "portable-artifact-set-bd6cf129a73b051c"
 }

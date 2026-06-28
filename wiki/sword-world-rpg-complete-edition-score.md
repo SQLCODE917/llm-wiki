@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-score
 page_kind: concept
-summary: Score: 170 statement(s) and 89 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Score: 170 statement(s) and 91 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-score@394327cc30ab06fa7424e603b3ece900
+projection_coverage: topic-sword-world-rpg-complete-edition-score@a47d9aae07542269d2c21fed706f2a70
 ---
 
 # Score
@@ -591,6 +591,16 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 ### Technical atom 35
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
+
+> The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
+
+> If you are just riding normally, you do not need to make a success roll.
+
+### Technical atom 36
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
@@ -599,7 +609,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > You can only wear cloth or at most soft leather.
 
-### Technical atom 36
+### Technical atom 37
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
@@ -609,7 +619,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you succeed, you will be able to take it off and rise to the surface.
 
-### Technical atom 37
+### Technical atom 38
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
 
@@ -619,7 +629,17 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
 
-### Technical atom 38
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
+
+> An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03372))_
+
+> If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely.
+
+### Technical atom 40
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
@@ -629,7 +649,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > **Table 6-3: Determining Long Jump Target Scores**
 
-### Technical atom 39
+### Technical atom 41
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
@@ -669,7 +689,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 40
+### Technical atom 42
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03458))_
 
@@ -679,7 +699,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > However, you cannot create weapons or armor with a required strength of 6 or lower.
 
-### Technical atom 41
+### Technical atom 43
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03508))_
 
@@ -689,7 +709,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > At that time, you can only wear armor up to cloth or soft leather.
 
-### Technical atom 42
+### Technical atom 44
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03599, source-range-870a16bc-03601))_
 
@@ -699,7 +719,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
 
-### Technical atom 43
+### Technical atom 45
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
 
@@ -709,7 +729,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > **Table 9-1: Determining Target Scores or Difficulties**
 
-### Technical atom 44
+### Technical atom 46
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
 
@@ -766,7 +786,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 45
+### Technical atom 47
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
 
@@ -797,7 +817,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 46
+### Technical atom 48
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03787))_
 
@@ -807,7 +827,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > For example, if the caster sacrifices their own life, it is acceptable to apply a fairly powerful curse.
 
-### Technical atom 47
+### Technical atom 49
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
 
@@ -817,7 +837,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you have the magic expanded, the price will increase by double, triple......
 
-### Technical atom 48
+### Technical atom 50
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
 
@@ -827,7 +847,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels).
 
-### Technical atom 49
+### Technical atom 51
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157, source-range-870a16bc-04161))_
 
@@ -837,7 +857,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
 
-### Technical atom 50
+### Technical atom 52
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
 
@@ -847,7 +867,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you do this, the resurrection will be successful unless you roll double ones.
 
-### Technical atom 51
+### Technical atom 53
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
 
@@ -857,7 +877,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you don't have clients, you won't get paid.
 
-### Technical atom 52
+### Technical atom 54
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
 
@@ -867,7 +887,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > The spirit magic _Purification_ can make liquid poison harmless if the final score when casting the magic is greater than or equal to than the toxicity score.
 
-### Technical atom 53
+### Technical atom 55
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04300))_
 
@@ -877,7 +897,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > When the poison enters the body, make a life force resistance roll (for monsters, a life _point_ resistance roll) using the toxicity score as the target score.
 
-### Technical atom 54
+### Technical atom 56
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04398))_
 
@@ -887,7 +907,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases by 1.
 
-### Technical atom 55
+### Technical atom 57
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04401))_
 
@@ -897,7 +917,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Even if a shaman cannot use the spell _Restore Health_ , they can still work with one type of spirit to alleviate symptoms.
 
-### Technical atom 56
+### Technical atom 58
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04404))_
 
@@ -907,7 +927,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > immediately after the illness's progression check), and you can only make one success roll.
 
-### Technical atom 57
+### Technical atom 59
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04631))_
 
@@ -917,7 +937,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > In this case, if they're written on _one_ line separated by a slash (/), it means that they can attack that number of times in one round.
 
-### Technical atom 58
+### Technical atom 60
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04804))_
 
@@ -927,7 +947,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Undine can cast magic sourced from the power of undine without consuming its own mental points (the spells cannot be expanded).
 
-### Technical atom 59
+### Technical atom 61
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04803))_
 
@@ -937,7 +957,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > To do so, you must make a successful life force resistance roll.
 
-### Technical atom 60
+### Technical atom 62
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04972, source-range-870a16bc-04977))_
 
@@ -947,7 +967,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison
 
-### Technical atom 61
+### Technical atom 63
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
 
@@ -957,7 +977,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8.
 
-### Technical atom 62
+### Technical atom 64
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 
@@ -967,7 +987,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
 
-### Technical atom 63
+### Technical atom 65
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05524))_
 
@@ -977,7 +997,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Monster Level=6 Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Fangs:13 (6) Strike Points=16
 
-### Technical atom 64
+### Technical atom 66
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05529))_
 
@@ -987,7 +1007,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you fail, you will get caught in the web and attract the attention of the giant webspinner.
 
-### Technical atom 65
+### Technical atom 67
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05584))_
 
@@ -997,7 +1017,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Alraune look exactly like humans, and can speak and think like humans, but when they are wounded, a thick, red mucus oozes out of them.
 
-### Technical atom 66
+### Technical atom 68
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05683))_
 
@@ -1007,7 +1027,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Those who had rune master skills can use magic of that level and magic power.
 
-### Technical atom 67
+### Technical atom 69
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -1017,7 +1037,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
 
-### Technical atom 68
+### Technical atom 70
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -1027,7 +1047,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
 
-### Technical atom 69
+### Technical atom 71
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05804))_
 
@@ -1037,7 +1057,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If someone with the shaman skill looks at the _soil_ , they can immediately tell that it's something out of the ordinary.
 
-### Technical atom 70
+### Technical atom 72
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
 
@@ -1047,7 +1067,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Once the staff is complete, you can control an _unlimited_ number of undead monsters, and you also gain a _+4 bonus_ to your final score when attempting to make them obey.
 
-### Technical atom 71
+### Technical atom 73
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06627))_
 
@@ -1057,7 +1077,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Rarity=12/17 Enchanter=Unknown
 
-### Technical atom 72
+### Technical atom 74
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06627))_
 
@@ -1067,7 +1087,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Form=Soft leather armor Required Strength=7 (Defense power 7) Base Trade Price=16,000 gamels Powers=+1 to evasion speed and damage reduction. Unable to resist magic.
 
-### Technical atom 73
+### Technical atom 75
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06627))_
 
@@ -1077,7 +1097,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Enchanter=Somska, "The Forger of Colors" Form=Cloth armor woven with fibrous mithril silver
 
-### Technical atom 74
+### Technical atom 76
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06627))_
 
@@ -1087,7 +1107,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > Required Strength=3 (Defense power 8) Base Trade Price=25,000 gamels Powers=-1 to opponent's strike points or +1 to their critical target
 
-### Technical atom 75
+### Technical atom 77
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06997))_
 
@@ -1097,7 +1117,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > If you bring it back without using it, perhaps the _lost_ magic may spread throughout the world through the research of an _academy of sages_ .
 
-### Technical atom 76
+### Technical atom 78
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07186))_
 
@@ -1107,7 +1127,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > You cannot deal damage to these, nor can you suffocate them.
 
-### Technical atom 77
+### Technical atom 79
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
@@ -1117,7 +1137,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > The final score must _exceed_ the final score from when the character cast the spell.
 
-### Technical atom 78
+### Technical atom 80
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
 
@@ -1127,7 +1147,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > **Table 17-1 Lost Spells Table**
 
-### Technical atom 79
+### Technical atom 81
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
 
@@ -1137,7 +1157,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > When danger comes from an _unexpected_ direction or location, you receive _no_ bonus to resistance rolls and must make a check normally.
 
-### Technical atom 80
+### Technical atom 82
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
 
@@ -1147,7 +1167,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 > As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness.
 
-### Technical atom 81
+### Technical atom 83
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -1176,7 +1196,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 82
+### Technical atom 84
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 
@@ -1203,7 +1223,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 83
+### Technical atom 85
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
 
@@ -1248,7 +1268,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 84
+### Technical atom 86
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -1280,7 +1300,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 85
+### Technical atom 87
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 
@@ -1317,7 +1337,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 86
+### Technical atom 88
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
 
@@ -1340,7 +1360,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 87
+### Technical atom 89
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
 
@@ -1381,7 +1401,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 88
+### Technical atom 90
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -1438,7 +1458,7 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 </details>
 
-### Technical atom 89
+### Technical atom 91
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
@@ -1478,37 +1498,57 @@ What [[sword-world-rpg-complete-edition]] covers about score:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (56 shared statement(s), 36 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (43 shared statement(s), 23 shared atom(s))
+- [[sword-world-rpg-complete-edition-target-score]] - narrower topic (2 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - narrower topic (5 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (56 shared statement(s), 40 shared atom(s))
 - [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (27 shared statement(s), 18 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (22 shared statement(s), 14 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (18 shared statement(s), 14 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 18 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (6 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (3 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (2 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (4 shared statement(s), 10 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (3 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (18 shared statement(s), 15 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 23 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (6 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (6 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (4 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (3 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (2 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (2 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (3 shared statement(s), 12 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared statements and technical atoms (4 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (6 shared statement(s), 8 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (3 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (6 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (9 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (13 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (6 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (2 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (9 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements and technical atoms (13 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (9 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (9 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (3 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms (1 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (7 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability-bonuse]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared technical atoms (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-equipment-restriction]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magic-contraction]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-recovering-mental-power]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity-18]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-base-mental-power-cost]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-climb-agility]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-character-monster]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-distance-caster]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-duration-instant]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-immunity]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-illusionary-beast]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-12]] - shared statements (1 shared statement(s))
 
 ## Source
 

@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-humbaba-0b431a0f
 page_kind: source
-summary: **[ Humbaba ]**: 20 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Humbaba ]: 20 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-humbaba-0b431a0f@c1b81d84ef40a3d6e807144485f86e84
+projection_coverage: section-sword-world-rpg-complete-edition-section-humbaba-0b431a0f@2c8827073e899f2a455bf1c446258f3d
 ---
 
-# **[ Humbaba ]**
+# [ Humbaba ]
 
 From [[sword-world-rpg-complete-edition]].
 

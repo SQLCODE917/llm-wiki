@@ -1,18 +1,22 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-if-armor-s-required-strength-exceeds-your-strength-2177d0d8
 page_kind: source
-summary: **If Armor’s Required Strength Exceeds Your Strength**: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: If Armor’s Required Strength Exceeds Your Strength: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-if-armor-s-required-strength-exceeds-your-strength-2177d0d8@b3da55163d81bcf707bb5d3a4cb4cf5d
+projection_coverage: section-sword-world-rpg-complete-edition-section-if-armor-s-required-strength-exceeds-your-strength-2177d0d8@0c06bf301d67623e73637624362b3de6
 ---
 
-# **If Armor’s Required Strength Exceeds Your Strength**
+# If Armor’s Required Strength Exceeds Your Strength
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-16-8-7d445aa0]] - broader source section
 
 ## Statements
 

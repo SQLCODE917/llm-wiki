@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-weapon-aim-75475d52
 page_kind: source
-summary: **Weapon Aim**: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Weapon Aim: 10 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-aim-75475d52@5dc7ddab6dd71fe1911deef0836a3201
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapon-aim-75475d52@dc4fa798ff01b5821cc32ed21cf06127
 ---
 
-# **Weapon Aim**
+# Weapon Aim
 
 From [[sword-world-rpg-complete-edition]].
 

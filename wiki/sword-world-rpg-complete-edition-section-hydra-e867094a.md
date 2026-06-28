@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-hydra-e867094a
 page_kind: source
-summary: **[ Hydra ]**: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: [ Hydra ]: 10 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-hydra-e867094a@13049bb6ce172d37307a4098bd22aa81
+projection_coverage: section-sword-world-rpg-complete-edition-section-hydra-e867094a@23def31749b281ce6b0b6afe2a18e9a9
 ---
 
-# **[ Hydra ]**
+# [ Hydra ]
 
 From [[sword-world-rpg-complete-edition]].
 

@@ -1,18 +1,22 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-64b615b3
 page_kind: source
-summary: **Representing Special Monsters with Character Data**: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Representing Special Monsters with Character Data: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-64b615b3@b6944bd12df8da7e1f185d21894f5d8c
+projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-64b615b3@eb59241fd0dfc2ff883858d66e2dc76c
 ---
 
-# **Representing Special Monsters with Character Data**
+# Representing Special Monsters with Character Data
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-13-4-a76f3905]] - broader source section
 
 ## Statements
 

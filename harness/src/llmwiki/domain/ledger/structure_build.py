@@ -34,6 +34,7 @@ class _OpenHeading:
     node_id: str
     canonical_label: str
     number_path: tuple[int, ...]
+    is_number_marker: bool
 
 
 def build_structure(
@@ -54,17 +55,30 @@ def build_structure(
     for order, segment in enumerate(segments, start=1):
         if segment.segment_kind == "heading":
             depth = _heading_depth(segment.text)
-            while open_headings and open_headings[-1].depth >= depth:
-                open_headings.pop()
             heading_text = _heading_text(segment.text)
             canonical_label = _canonical_heading_label(heading_text)
             number_path = _heading_number_path(canonical_label)
+            is_number_marker = _is_number_marker(canonical_label, number_path)
+            while open_headings and open_headings[-1].depth >= depth:
+                if _number_parent(open_headings[-1].number_path, number_path):
+                    break
+                if open_headings[-1].is_number_marker and not number_path:
+                    break
+                open_headings.pop()
+            if (
+                open_headings
+                and number_path
+                and open_headings[-1].number_path == number_path
+                and is_number_marker
+            ):
+                node_for_segment[segment.segment_id] = open_headings[-1].node_id
+                continue
             while open_headings and _number_conflicts(open_headings[-1].number_path, number_path):
                 open_headings.pop()
             if (
                 open_headings
                 and canonical_label
-                and open_headings[-1].canonical_label == canonical_label
+                and _same_heading(open_headings[-1].canonical_label, canonical_label)
             ):
                 node_for_segment[segment.segment_id] = open_headings[-1].node_id
                 continue
@@ -89,7 +103,9 @@ def build_structure(
                     evidence_ids=segment.evidence_ids,
                 )
             )
-            open_headings.append(_OpenHeading(depth, node_id, canonical_label, number_path))
+            open_headings.append(
+                _OpenHeading(depth, node_id, canonical_label, number_path, is_number_marker)
+            )
             node_for_segment[segment.segment_id] = node_id
         else:
             node_for_segment[segment.segment_id] = (
@@ -130,4 +146,28 @@ def _heading_number_path(label: str) -> tuple[int, ...]:
 def _number_conflicts(parent: tuple[int, ...], child: tuple[int, ...]) -> bool:
     if not parent or not child:
         return False
+    if parent == child:
+        return False
     return not (len(parent) < len(child) and child[: len(parent)] == parent)
+
+
+def _number_parent(parent: tuple[int, ...], child: tuple[int, ...]) -> bool:
+    return bool(parent and child and len(parent) < len(child) and child[: len(parent)] == parent)
+
+
+def _is_number_marker(label: str, number_path: tuple[int, ...]) -> bool:
+    marker = ".".join(str(part) for part in number_path)
+    return label == marker
+
+
+def _same_heading(parent_label: str, child_label: str) -> bool:
+    return parent_label == child_label or _without_leading_number(parent_label) == child_label
+
+
+def _without_leading_number(label: str) -> str:
+    return re.sub(
+        r"^(?:(?:chapter|section|part|appendix|book)\s+)?\d+(?:\.\d+)*\s*[-:.]?\s*",
+        "",
+        label,
+        count=1,
+    ).strip()

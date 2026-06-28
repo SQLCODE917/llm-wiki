@@ -44,6 +44,40 @@ class DocumentStructure:
                 return candidate
         return None
 
+    def parent(self, node_id: str) -> StructureNode | None:
+        node = self.node(node_id)
+        if node is None or not node.parent_structure_node_id:
+            return None
+        return self.node(node.parent_structure_node_id)
+
+    def children(self, node_id: str) -> tuple[StructureNode, ...]:
+        return tuple(
+            node
+            for node in sorted(self.structure_nodes, key=lambda item: item.source_order)
+            if node.parent_structure_node_id == node_id
+        )
+
+    def descendants(self, node_id: str) -> tuple[StructureNode, ...]:
+        descendants: list[StructureNode] = []
+        pending = list(self.children(node_id))
+        while pending:
+            current = pending.pop(0)
+            descendants.append(current)
+            pending[0:0] = list(self.children(current.structure_node_id))
+        return tuple(sorted(descendants, key=lambda item: item.source_order))
+
+    def label_path(self, node_id: str, *, include_root: bool = False) -> tuple[str, ...]:
+        labels: list[str] = []
+        for ancestor_id in reversed(self.ancestry(node_id)):
+            node = self.node(ancestor_id)
+            if node is None:
+                continue
+            if node.structure_node_kind == "root" and not include_root:
+                continue
+            if node.heading_text.strip():
+                labels.append(node.heading_text.strip())
+        return tuple(labels)
+
     def ancestry(self, node_id: str) -> tuple[str, ...]:
         """Node ids from the given node outward to the root (nearest first)."""
         chain: list[str] = []

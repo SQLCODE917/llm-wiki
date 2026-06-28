@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-level
 page_kind: concept
-summary: Level: 129 statement(s) and 42 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Level: 129 statement(s) and 45 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-level@7526abbdd0c52cf1d1ae6f94f70e34d3
+projection_coverage: topic-sword-world-rpg-complete-edition-level@4b7843606ab0087613f90e0440816d28
 ---
 
 # Level
@@ -526,6 +526,36 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 ### Technical atom 37
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
+
+> Monsters with this ability can use magic at the indicated level and magic intensity (magic power). Those with this ability often have an intellect equal to or greater than that of a human, and although they have their own preferences for which magic they use, they do _not_ use it foolishly.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06196))_
+
+> The targeted character must make a mental power resistance roll against the indicated target score.
+
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06239))_
+
+> Sprays an adhesive, high-strength thread, etc. that binds a character. The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape. Each time you fail, you’ll normally become more and more entangled, and the target score will increase each time. If the difference between the baseline score and the target score reaches 13 or greater, the character will be unable to escape on his or her own, and will eventually suffocate to death. Wheth
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06241))_
+
+> A swallowed character can also attack from inside, if he or she has a dagger, shortsword, or similar small bladed weapon.
+
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06239))_
+
+> Sprays an adhesive, high-strength thread, etc. that binds a character. The character must make a success roll using _adventurer level + strength bonus_ as the baseline score in order to escape. Each time you fail, you’ll normally become more and more entangled, and the target score will increase each time. If the difference between the baseline score and the target score reaches 13 or greater, the character will be unable to escape on his or her own, and will eventually suffocate to death. Wheth
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06242))_
+
+> If you make an attack from outside to rescue a character inside, and kill the monster, (the same amount of) damage will be dealt to the character inside.
+
+### Technical atom 40
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027, source-range-870a16bc-07029))_
 
 > A magic spell is written on this (in high ancient). If a sorcerer reads it, he or she can use the magic written on it only _once_ . It doesn’t matter if the sorcerer skill level has not reached the magic level, _nor_ does it consume mental power. However, the magic _cannot_ be expanded. When Form=Mirror with high ancient runes densely engraved on the frame You can ask the mirror spirit sealed inside the mirror to answer a simple question. The mirror spirit knows everything reflected in mirrors a
@@ -534,7 +564,7 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 > Powers=The mirror spirit will answer simple questions Base Trade Price=390,000 gamels
 
-### Technical atom 38
+### Technical atom 41
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -571,7 +601,7 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 </details>
 
-### Technical atom 39
+### Technical atom 42
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04148))_
 
@@ -600,7 +630,7 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 </details>
 
-### Technical atom 40
+### Technical atom 43
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 
@@ -629,7 +659,7 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 </details>
 
-### Technical atom 41
+### Technical atom 44
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
@@ -652,7 +682,7 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 </details>
 
-### Technical atom 42
+### Technical atom 45
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
@@ -680,34 +710,45 @@ What [[sword-world-rpg-complete-edition]] covers about level:
 
 ## Related pages
 
+- [[sword-world-rpg-complete-edition-monster-level]] - narrower topic (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - narrower topic (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-how-experience-increasing-skill-level]] - narrower topic (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (31 shared statement(s), 9 shared atom(s))
 - [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (21 shared statement(s), 13 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (41 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (31 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (41 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-move]] - shared statements and technical atoms (40 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements and technical atoms (40 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements and technical atoms (40 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (9 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (13 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (6 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (9 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (13 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (6 shared statement(s), 9 shared atom(s))
 - [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (4 shared statement(s), 6 shared atom(s))
 - [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (3 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-increasing-skill]] - shared statements and technical atoms (6 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (6 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-effect]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-distance-caster]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-enchanter-unknown]] - shared statements (1 shared statement(s))
 
 ## Source
 

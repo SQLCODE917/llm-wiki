@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-strike
 page_kind: concept
-summary: Strike: 57 statement(s) and 27 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Strike: 57 statement(s) and 35 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-strike@08d68b73e12da9a1089d30237a424783
+projection_coverage: topic-sword-world-rpg-complete-edition-strike@8629af35ea3c99bd788757c25a2bd2e3
 ---
 
 # Strike
@@ -247,6 +247,26 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 ### Technical atom 18
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04824))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04826))_
+
+> Monster Level=4
+
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04824))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04827))_
+
+> Rarity=12 (However, a shaman always knows) Agility=18 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
+
+### Technical atom 20
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
 > In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level. Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (
@@ -255,7 +275,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Monster Level=5
 
-### Technical atom 19
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -265,7 +285,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Rarity=13 Agility=18 Movement Speed=15 Number=One
 
-### Technical atom 20
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
 
@@ -275,7 +295,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
 
-### Technical atom 21
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 
@@ -285,7 +305,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
 
-### Technical atom 22
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
 
@@ -295,7 +315,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Monster Level=15 Rarity=10 Agility=10
 
-### Technical atom 23
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05222))_
 
@@ -305,7 +325,27 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > You must roll 2D again.
 
-### Technical atom 24
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05248))_
+
+> Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05249))_
+
+> Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
+
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05307, source-range-870a16bc-05310))_
+
+> On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2. Rarity=10 Agility=15 Movement Speed=10/30 (air) Number=One to several Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Beak:10 (3)/Talons:11 (4) Strike Points=6/6 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=15/11 (4) Mental Points/Resistance=9/10 (3) Special Abi
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
+
+> Monster Level=3
+
+### Technical atom 28
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
 
@@ -315,7 +355,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Attack Points=Fangs:9 (2) Strike Points=5
 
-### Technical atom 25
+### Technical atom 29
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
 
@@ -325,7 +365,47 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
 
-### Technical atom 26
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+
+> Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05338))_
+
+> Monster Level=3
+
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05375))_
+
+> Monster Level=4 Rarity=11 Agility=8 Movement Speed=10/16 (water) Number=One Frequency=Rare Intellect=Animal Reaction=Hunger-based Attack Points=Tongue: 10 (3) Strike Points=7 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=21/13 (6) Mental Points/Resistance=6/11 (4) Special Abilities=Wrap tongue around (strangling) and swallow whole Habitat=Wetlands such as lakes, riverbanks, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
+
+> Languages=None Perception=Five senses
+
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05381))_
+
+> 204 penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
+
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
+
+> In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
+
+### Technical atom 34
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
 
@@ -335,7 +415,7 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 > Enchanter=Shiva, "The Friend of Salamander"
 
-### Technical atom 27
+### Technical atom 35
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -423,30 +503,34 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (43 shared statement(s), 24 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (11 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (43 shared statement(s), 30 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (11 shared statement(s), 15 shared atom(s))
 - [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (10 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (5 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (6 shared statement(s), 4 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (4 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 6 shared atom(s))
 - [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (7 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-attack-character-monster]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-duration-instant]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (6 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-fail]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-breath]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-game]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-success]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-strike-points-52c24f69]] - source section (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-strike-points-3-63e4d614]] - source section (6 shared statement(s), 1 shared atom(s))
 
 ## Source
 

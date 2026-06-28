@@ -7,31 +7,25 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-b5feee9c@7232dcab6a7e64f55dabe42077476b9b
+projection_coverage: section-sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-b5feee9c@9f44f1dc0e5d14e396296f1b7ab6b82d
 ---
 
 # What You’ll Need to Play Sword World RPG
 
 From [[sword-world-rpg-complete-edition]].
 
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-the-structure-of-the-rulebook-d3ec036b]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-welcome-to-sword-world-21f0baee]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-part-1-player-section-f199dd3b]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-part-2-game-master-section-192da76e]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-part-3-optional-rules-ba9e3c09]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-guide-to-forcelia-and-alecrast-338c9f12]] - narrower source section
+- [[sword-world-rpg-complete-edition-section-what-you-ll-need-to-play-sword-world-rpg-handling-fractions-0b281a3d]] - narrower source section
+
 ## Statements
 
-- This book consists of five major parts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00079))_
-- This is the part you are reading right now. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00082))_
-- This is the part for the players, one of the two groups of people needed to enjoy an RPG. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00085))_
-- This is the part for the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00088))_
-- Rules that aren’t necessary from a player's point of view are included here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00088))_
-- Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
-- Conversely, a game master _must_ understand the rules included here in addition to those included in Part 1. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
-- Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
-- However, having additional rules to memorize often gets in the way of the speedy development that is the life of an RPG. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00092))_
-- These are rules designed to make playing _Sword World RPG_ more interesting. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00092))_
-- It's _not_ recommended for inexperienced players to use the rules here from the beginning. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00093))_
-- The rules in this section are for those who already have an understanding of _Sword World RPG_ and are able to play with ease. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00093))_
-- This part is a brief overview of Forcelia as a whole, the history of Alecrast, and various regions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00096))_
-- _Sword World RPG_ is set on the continent of **Alecrast** , a part of the world called **Forcelia** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00096))_
-- In order to play an RPG, it's best to have all participants understand the background setting, and proceed with the game implicitly based on this **common understanding** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00097))_
-- This part should help you with that. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00097))_
 - So you’ll need pencils, erasers, notepads, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00099))_
 - These are needed per the number of people. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00100))_
 - A Character Sheet is used to keep track of a character who acts in a fictional world (Alecrast in the case of _Sword World RPG_ ) as the player's alter ego. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00100))_
@@ -42,6 +36,45 @@ From [[sword-world-rpg-complete-edition]].
 - The dice used are ordinary six-sided dice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00101))_
 - From here on in this book, rolling dice will be referred to as _rolling 1D_ or _rolling 2D_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00102))_
 - When you _roll 2D_ , roll two dice at the same time and use the total of both numbers (2-12). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00102))_
+
+## Statements by subsection
+
+### What You’ll Need to Play Sword World RPG / The Structure of the Rulebook
+
+- This book consists of five major parts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00079))_
+
+### What You’ll Need to Play Sword World RPG / Welcome to Sword World!
+
+- This is the part you are reading right now. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00082))_
+
+### What You’ll Need to Play Sword World RPG / Part 1 Player Section
+
+- This is the part for the players, one of the two groups of people needed to enjoy an RPG. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00085))_
+
+### What You’ll Need to Play Sword World RPG / Part 2 Game Master Section
+
+- This is the part for the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00088))_
+- Rules that aren’t necessary from a player's point of view are included here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00088))_
+- Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
+- Conversely, a game master _must_ understand the rules included here in addition to those included in Part 1. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
+- Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
+
+### What You’ll Need to Play Sword World RPG / Part 3 Optional Rules
+
+- However, having additional rules to memorize often gets in the way of the speedy development that is the life of an RPG. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00092))_
+- These are rules designed to make playing _Sword World RPG_ more interesting. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00092))_
+- It's _not_ recommended for inexperienced players to use the rules here from the beginning. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00093))_
+- The rules in this section are for those who already have an understanding of _Sword World RPG_ and are able to play with ease. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00093))_
+
+### What You’ll Need to Play Sword World RPG / Guide to Forcelia and Alecrast
+
+- This part is a brief overview of Forcelia as a whole, the history of Alecrast, and various regions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00096))_
+- _Sword World RPG_ is set on the continent of **Alecrast** , a part of the world called **Forcelia** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00096))_
+- In order to play an RPG, it's best to have all participants understand the background setting, and proceed with the game implicitly based on this **common understanding** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00097))_
+- This part should help you with that. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00097))_
+
+### What You’ll Need to Play Sword World RPG / Handling fractions
+
 - However, if it's _not_ mentioned, the fraction should _always_ be rounded up. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00104))_
 - If division results in a fraction, the fraction is either rounded up or rounded down. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00104))_
 - Due to the nature of the game, there are situations in _Sword World RPG_ where math calculations must be made. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00104))_

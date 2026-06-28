@@ -20,6 +20,7 @@ from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_atom_match import atom_ids_matching_table_payload
 from llmwiki.domain.ledger.topic_candidates import (
     TopicCandidate,
+    repeated_section_candidates,
     section_component_candidates,
 )
 from llmwiki.domain.ledger.topic_evidence import (
@@ -36,9 +37,10 @@ from llmwiki.domain.ledger.topic_terms import (
 _TOPIC_KINDS = ("claim", "event", "concept")
 _MIN_TERM_FREQUENCY = 4
 _MIN_MATCHES = 3
-_MAX_TOPICS = 32
+_MAX_TOPICS = 96
 _HEADING_BONUS = 3.0
 _CONCEPT_BONUS = 2.0
+_REPEATED_SECTION_BONUS = 12.0
 _MAX_STATEMENT_WORDS = 45
 
 
@@ -56,10 +58,16 @@ def plan_source_topics(
         if entry.ledger_entry_kind in _TOPIC_KINDS and (entry.subject or entry.normalized_text)
     ]
     candidates = (
-        section_component_candidates(section_plan)
+        repeated_section_candidates(section_plan)
+        + section_component_candidates(section_plan)
         + _concept_candidates(entries)
         + _term_candidates(entries)
     )
+    protected_topic_keys = {
+        candidate.topic_key
+        for candidate in candidates
+        if candidate.evidence_kind == "section-repeat"
+    }
     topics: dict[str, SourceTopic] = {}
     for candidate in candidates:
         if candidate.topic_key in topics:
@@ -71,7 +79,10 @@ def plan_source_topics(
         if len(topic.entry_ids) + len(topic.atom_ids) >= minimum:
             topics[candidate.topic_key] = topic
     ranked = sorted(topics.values(), key=lambda t: (-t.salience, t.topic_key))
-    return tuple(ranked[:max_topics])
+    protected = [topic for topic in ranked if topic.topic_key in protected_topic_keys]
+    regular = [topic for topic in ranked if topic.topic_key not in protected_topic_keys]
+    remaining = max(0, max_topics - len(protected))
+    return tuple((*protected, *regular[:remaining]))
 
 
 def _concept_candidates(entries: list[LedgerEntry]) -> list[TopicCandidate]:
@@ -132,7 +143,7 @@ def _aggregate(
     matcher = topic_matcher(candidate.terms)
     if matcher is None:
         return None
-    if candidate.evidence_kind == "section":
+    if candidate.evidence_kind in ("section", "section-repeat"):
         evidence_ids = set(candidate.evidence_entry_ids)
         matched = [entry for entry in entries if entry.ledger_entry_id in evidence_ids]
         atom_ids = candidate.evidence_atom_ids
@@ -154,7 +165,7 @@ def _aggregate(
     else:
         matched = _entries_for_subject_term(entries, matcher)
         atom_ids = _atom_ids_near_entries(ledger, matched, matcher)
-    if candidate.evidence_kind not in ("section", "section-component"):
+    if candidate.evidence_kind not in ("section", "section-repeat", "section-component"):
         atom_ids = tuple(
             dict.fromkeys((*atom_ids, *atom_ids_matching_table_payload(ledger, matcher, structure)))
         )
@@ -170,6 +181,7 @@ def _aggregate(
         + 1.5 * len(atom_ids)
         + (_HEADING_BONUS if candidate.from_heading else 0.0)
         + (_CONCEPT_BONUS if candidate.evidence_entry_ids else 0.0)
+        + (_REPEATED_SECTION_BONUS if candidate.evidence_kind == "section-repeat" else 0.0)
     )
     return SourceTopic(
         topic_key=candidate.topic_key,

@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-attacks-and-magic-against-grapplers-47122f36
 page_kind: source
-summary: **Attacks and Magic Against Grapplers**: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Attacks and Magic Against Grapplers: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attacks-and-magic-against-grapplers-47122f36@2957203ba896ad5b953455f5735b84ca
+projection_coverage: section-sword-world-rpg-complete-edition-section-attacks-and-magic-against-grapplers-47122f36@470e5d6f9daf0500766bd152ec0c50c8
 ---
 
-# **Attacks and Magic Against Grapplers**
+# Attacks and Magic Against Grapplers
 
 From [[sword-world-rpg-complete-edition]].
 

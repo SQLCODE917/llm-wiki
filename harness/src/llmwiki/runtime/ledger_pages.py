@@ -6,7 +6,7 @@ from llmwiki.domain.ledger.artifacts import ProjectionCoverageArtifact
 from llmwiki.domain.ledger.ledger import ClaimLedger
 from llmwiki.domain.ledger.source_coverage import SourceElementRecord
 from llmwiki.domain.ledger.structure import DocumentStructure
-from llmwiki.domain.ledger.topic_relations import related_topic_links
+from llmwiki.domain.ledger.topic_relations import RelatedTopicLink, related_topic_links
 from llmwiki.domain.ledger.topic_render import render_topic_page
 from llmwiki.domain.ledger.topics import SourceTopic
 from llmwiki.domain.pages import PageMetadata, WikiPage, slugify
@@ -19,17 +19,27 @@ def build_topic_pages(
     source_page_id: str,
     source_locator: str,
     today: str,
+    related_pages_by_topic: dict[str, tuple[RelatedTopicLink, ...]] | None = None,
 ) -> tuple[WikiPage, ...]:
     pages: list[WikiPage] = []
     related_by_topic = related_topic_links(topics, source_page_id=source_page_id)
+    extra_related = related_pages_by_topic or {}
     for topic in topics:
         topic_page_id = slugify(f"{source_page_id}-{topic.topic_key}")
+        related_pages = tuple(
+            dict.fromkeys(
+                (
+                    *related_by_topic.get(topic.topic_key, ()),
+                    *extra_related.get(topic.topic_key, ()),
+                )
+            )
+        )
         rendered = render_topic_page(
             topic,
             ledger,
             wiki_page_locator=topic_page_id,
             source_page_id=source_page_id,
-            related_pages=related_by_topic.get(topic.topic_key, ()),
+            related_pages=related_pages,
         )
         metadata = PageMetadata(
             page_id=topic_page_id,

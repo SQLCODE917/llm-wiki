@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-move
 page_kind: concept
-summary: Move: 111 statement(s) and 21 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Move: 111 statement(s) and 23 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-move@6ad909948bf513d8094ea16b80582724
+projection_coverage: topic-sword-world-rpg-complete-edition-move@a2b3228297500f98b84fcff0f189f3b2
 ---
 
 # Move
@@ -131,6 +131,26 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 ### Technical atom 1
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00738))_
+
+> Below are some guidelines on how movement works and which actions can be taken. For any other actions, please use _common sense_ based on the time frame of 1 round = 10 seconds. Final decisions are to be made by the game master.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00740))_
+
+> If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00790))_
+
+> If you want to attack with a projectile, please follow the process of _actions you can take during normal movement_ . If you chose _stand still_ , then _attack with that weapon_ can be read as _attack with that projectile_ . However, when you're _engaged_ (being attacked by a melee weapon), you _cannot_ use projectiles.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00791))_
+
+> If you choose to _stand still_ , in addition to magic and projectiles, you can also take the following special action:
+
+### Technical atom 3
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01955))_
 
 > _Telekinesis_ is a spell that allows you to move things using only the power of your consciousness. The target can be an individual or object up to 1 cubic meter in volume. Targets who attempt to resist this spell and fail, or do not attempt to resist, will be moved at the caster's will. Its movement speed is 10 meters per round.
@@ -139,7 +159,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Base Mental Power Cost=35
 
-### Technical atom 2
+### Technical atom 4
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04031))_
 
@@ -149,7 +169,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > If you are wearing armor, you will not be able to grow your wings (unless you take some measure like having a hole in the back, etc.).
 
-### Technical atom 3
+### Technical atom 5
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04732))_
 
@@ -159,7 +179,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=3
 
-### Technical atom 4
+### Technical atom 6
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04851))_
 
@@ -169,7 +189,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=5
 
-### Technical atom 5
+### Technical atom 7
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04857))_
 
@@ -179,7 +199,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > If magic cannot be cast on the target, the dryad will attack barehanded.
 
-### Technical atom 6
+### Technical atom 8
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04884))_
 
@@ -189,7 +209,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=5
 
-### Technical atom 7
+### Technical atom 9
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04901))_
 
@@ -199,7 +219,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock.
 
-### Technical atom 8
+### Technical atom 10
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05043))_
 
@@ -209,7 +229,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
 
-### Technical atom 9
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05103))_
 
@@ -219,7 +239,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > If you fail, the poison deals damage resulting from a strike power 20 strike roll plus bonus damage 7.
 
-### Technical atom 10
+### Technical atom 12
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05248))_
 
@@ -229,7 +249,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
 
-### Technical atom 11
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_
 
@@ -239,7 +259,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2.
 
-### Technical atom 12
+### Technical atom 14
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05307, source-range-870a16bc-05310))_
 
@@ -249,7 +269,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=3
 
-### Technical atom 13
+### Technical atom 15
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05375))_
 
@@ -259,7 +279,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Languages=None Perception=Five senses
 
-### Technical atom 14
+### Technical atom 16
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05708, source-range-870a16bc-05713))_
 
@@ -269,7 +289,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=6
 
-### Technical atom 15
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05713))_
 
@@ -279,7 +299,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Rarity=11
 
-### Technical atom 16
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
 
@@ -289,7 +309,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=4
 
-### Technical atom 17
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05801))_
 
@@ -299,7 +319,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > You cannot attempt this success roll if you do not know about vampires.
 
-### Technical atom 18
+### Technical atom 20
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05888))_
 
@@ -309,7 +329,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > Monster Level=5
 
-### Technical atom 19
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
 
@@ -319,7 +339,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 > When danger comes from an _unexpected_ direction or location, you receive _no_ bonus to resistance rolls and must make a check normally.
 
-### Technical atom 20
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
@@ -348,7 +368,7 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 </details>
 
-### Technical atom 21
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
@@ -380,27 +400,33 @@ What [[sword-world-rpg-complete-edition]] covers about move:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-movement]] - shared statements and technical atoms (105 shared statement(s), 20 shared atom(s))
 - [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (77 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements and technical atoms (70 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (40 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (3 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity-15]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (5 shared atom(s))
 - [[sword-world-rpg-complete-edition-spell]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-power]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-score]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements (10 shared statement(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-effect]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-12]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sylph-wind-spirit]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-target]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-wisp-light-spirit]] - shared statements (1 shared statement(s))
 
 ## Source
 

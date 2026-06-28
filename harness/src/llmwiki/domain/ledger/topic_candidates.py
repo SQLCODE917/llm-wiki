@@ -65,5 +65,31 @@ def section_component_candidates(
     ]
 
 
+def repeated_section_candidates(section_plan: SectionGroundedPlan | None) -> list[TopicCandidate]:
+    if section_plan is None:
+        return []
+    grouped: dict[str, tuple[str, list[str], list[str], int]] = {}
+    for target in section_plan.page_targets:
+        if not target.topic_key:
+            continue
+        label, entry_ids, atom_ids, count = grouped.get(target.topic_key, (target.label, [], [], 0))
+        entry_ids.extend(target.entry_ids)
+        atom_ids.extend(target.atom_ids)
+        grouped[target.topic_key] = (label, entry_ids, atom_ids, count + 1)
+    return [
+        TopicCandidate(
+            topic_key=key,
+            label=label,
+            terms=tuple(key.split("-")),
+            evidence_kind="section-repeat",
+            from_heading=True,
+            evidence_entry_ids=tuple(dict.fromkeys(entry_ids)),
+            evidence_atom_ids=tuple(dict.fromkeys(atom_ids)),
+        )
+        for key, (label, entry_ids, atom_ids, count) in grouped.items()
+        if count > 1 and len(key.split("-")) > 1 and (entry_ids or atom_ids)
+    ]
+
+
 def _label_for_key(key: str) -> str:
     return " ".join(part.title() for part in key.split("-"))

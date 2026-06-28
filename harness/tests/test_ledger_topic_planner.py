@@ -13,26 +13,7 @@ from llmwiki.domain.ledger.topic_planner import plan_source_topics
 
 def test_plan_source_topics_does_not_duplicate_exact_section_targets() -> None:
     ledger = _ledger(
-        LedgerEntry(
-            ledger_entry_id="entry-alpha",
-            source_statement_id="statement-alpha",
-            ledger_entry_kind="claim",
-            ledger_entry_status="usable",
-            extraction_confidence="high",
-            confidence_basis=ConfidenceBasis("test"),
-            source_locator="source.pdf",
-            source_hash="sourcehash",
-            source_range_id="range-alpha",
-            evidence_ids=("ev-alpha",),
-            source_text="Alpha is the source section topic.",
-            structure_node_ids=("node-alpha",),
-            normalized_text="Alpha is the source section topic.",
-            subject="Alpha",
-            predicate="is",
-            object_value="the source section topic",
-            polarity="positive",
-            claim_force="asserted",
-        )
+        _entry("entry-alpha", "node-alpha", "Alpha is the source section topic.", "Alpha")
     )
     structure = DocumentStructure(
         "root",
@@ -64,6 +45,90 @@ def test_plan_source_topics_does_not_duplicate_exact_section_targets() -> None:
     )
 
     assert plan_source_topics(ledger, structure, section_plan=section_plan) == ()
+
+
+def test_plan_source_topics_promotes_repeated_section_targets() -> None:
+    ledger = _ledger(
+        _entry("entry-alpha", "node-alpha", "Alpha field appears in one context.", "Alpha"),
+        _entry("entry-beta", "node-beta", "Beta field appears in another context.", "Beta"),
+    )
+    structure = DocumentStructure(
+        "root",
+        (
+            StructureNode("root", "root", "source.pdf", "root", "source.pdf", 0),
+            StructureNode(
+                "node-alpha", "section", "Shared Heading", "range-alpha", "source.pdf", 1
+            ),
+            StructureNode("node-beta", "section", "Shared Heading", "range-beta", "source.pdf", 2),
+        ),
+    )
+    section_plan = SectionGroundedPlan(
+        section_grounded_plan_id="section-plan",
+        section_grounded_plan_fingerprint="fingerprint",
+        source_locator="source.pdf",
+        source_hash="sourcehash",
+        page_targets=(
+            PageTarget(
+                page_target_id="target-alpha",
+                topic_key="shared-heading",
+                label="Shared Heading",
+                page_kind="concept",
+                structure_node_id="node-alpha",
+                source_range_id="range-alpha",
+                concept_keys=(),
+                entry_ids=("entry-alpha",),
+                atom_ids=(),
+                attached_evidence=(),
+            ),
+            PageTarget(
+                page_target_id="target-beta",
+                topic_key="shared-heading",
+                label="Shared Heading",
+                page_kind="concept",
+                structure_node_id="node-beta",
+                source_range_id="range-beta",
+                concept_keys=(),
+                entry_ids=("entry-beta",),
+                atom_ids=(),
+                attached_evidence=(),
+            ),
+        ),
+        source_coverage_map=(),
+    )
+
+    topics = plan_source_topics(ledger, structure, section_plan=section_plan)
+
+    assert len(topics) == 1
+    assert topics[0].topic_key == "shared-heading"
+    assert topics[0].entry_ids == ("entry-alpha", "entry-beta")
+
+    protected_topics = plan_source_topics(
+        ledger, structure, section_plan=section_plan, max_topics=0
+    )
+    assert tuple(topic.topic_key for topic in protected_topics) == ("shared-heading",)
+
+
+def _entry(entry_id: str, node_id: str, text: str, subject: str) -> LedgerEntry:
+    return LedgerEntry(
+        ledger_entry_id=entry_id,
+        source_statement_id=f"statement-{entry_id}",
+        ledger_entry_kind="claim",
+        ledger_entry_status="usable",
+        extraction_confidence="high",
+        confidence_basis=ConfidenceBasis("test"),
+        source_locator="source.pdf",
+        source_hash="sourcehash",
+        source_range_id=f"range-{entry_id}",
+        evidence_ids=(f"ev-{entry_id}",),
+        source_text=text,
+        structure_node_ids=(node_id,),
+        normalized_text=text,
+        subject=subject,
+        predicate="is",
+        object_value=text,
+        polarity="positive",
+        claim_force="asserted",
+    )
 
 
 def _ledger(*entries: LedgerEntry) -> ClaimLedger:

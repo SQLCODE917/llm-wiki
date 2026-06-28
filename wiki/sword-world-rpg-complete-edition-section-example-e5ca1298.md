@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-example-e5ca1298
 page_kind: source
-summary: **Example:**: 9 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Example:: 9 source-backed entries and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-example-e5ca1298@b6c07b9f2bc27bdf3e24b00c25413c9e
+projection_coverage: section-sword-world-rpg-complete-edition-section-example-e5ca1298@f57c351101d7b32160c65c96b2a06dac
 ---
 
-# **Example:**
+# Example:
 
 From [[sword-world-rpg-complete-edition]].
 

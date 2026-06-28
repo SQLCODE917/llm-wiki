@@ -7,12 +7,17 @@ updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-fire-immunity-dbd7f9c3@9aaabd24499102f3bd8f09d5d117a625
+projection_coverage: section-sword-world-rpg-complete-edition-section-fire-immunity-dbd7f9c3@025e0bc9c370b4d3cb8f234b5e3cd692
 ---
 
 # Fire immunity
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-fire-immunity]] - topic hub
+- [[sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-fire-immunity-0e0d49dc]] - same source heading
 
 ## Statements
 

@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-resist
 page_kind: concept
-summary: Resist: 139 statement(s) and 63 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Resist: 139 statement(s) and 84 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-resist@c047cd6fc35ccdf71aa462e7b698598c
+projection_coverage: topic-sword-world-rpg-complete-edition-resist@7ab19dbb551b690ea9bafadd52defcb5
 ---
 
 # Resist
@@ -209,6 +209,36 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 ### Technical atom 6
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01204))_
+
+> Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01205))_
+
+> _Fire Bolt_ is _resistible_ magic, so if it’s _resisted_ by the opponent, its effect will be reduced.
+
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01204))_
+
+> Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
+
+> In this case, the adventurer (the player controlling them) must make a success roll.
+
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01212))_
+
+> magic power + 2D ≥ monster's mental point resistance → **magic takes full effect** magic power + 2D < monster's mental point resistance → **magic takes an incomplete effect (some take no effect at all)** When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01213))_
+
+> When the 2D roll is _double ones_ , the magic _unconditionally_ takes _no_ effect at all.
+
+### Technical atom 9
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01216))_
 
 > First, in the case of _non-resistible_ magic, a monster can _never_ fail. There is no need to roll the dice, as the magic will _definitely_ take its effect. In the case of _resistible_ magic, the issue is resolved from the perspective of whether the adventurer is able to resist the magic cast by the monster. This is determined by a success roll using the character's _mental power resistance_ , that is, a _mental power resistance roll_ . The target score is a score called the monster’s **magic in
@@ -217,7 +247,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > If the adventurer's final score ( _mental power resistance + 2D_ ) is equal to or greater than the monster's _magic intensity_ , the monster's magic will only take an incomplete effect (some magic will take no effect at all).
 
-### Technical atom 7
+### Technical atom 10
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01222))_
 
@@ -227,7 +257,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > mental power resistance + 2D ≥ monster's magic intensity → **magic takes an incomplete effect (some take no effect at all)** *In this way, when making a _resistible_ magic check, you can also call it a _successful resist_ or _failed resist_ from the perspective of the one being affected by the magic.
 
-### Technical atom 8
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01222))_
 
@@ -237,7 +267,57 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > mental power resistance + 2D ≥ monster's magic intensity → **magic takes an incomplete effect (some take no effect at all)** *In this way, when making a _resistible_ magic check, you can also call it a _successful resist_ or _failed resist_ from the perspective of the one being affected by the magic.
 
-### Technical atom 9
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01243, source-range-870a16bc-01246))_
+
+> 1st goblin: 5 (magic power) + 6 (roll) = 11 ≥ 9 (mental point resistance), full effect. 3rd goblin: The result is double ones, so no effect
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01244))_
+
+> If there are multiple targets in the path of the lightning bolt, you must make a check for each one’s attempt to resist.
+
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01244, source-range-870a16bc-01246))_
+
+> Suppose an adventurer with sorcerer skill level 3 and a +2 intelligence bonus (magic power 5) casts the spell _Lightning_ . _Lightning_ is a spell that shoots a bolt of lightning, dealing damage to everything in its path. If there are multiple targets in the path of the lightning bolt, you must make a check for each one’s attempt to resist. 3rd goblin: The result is double ones, so no effect
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01245))_
+
+> 2nd goblin: 5 (magic power) + 3 (roll) = 8 < 9 (mental point resistance), incomplete effect.
+
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01245))_
+
+> 2nd goblin: 5 (magic power) + 3 (roll) = 8 < 9 (mental point resistance), incomplete effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01247))_
+
+> Goblin lord: 5 (magic power) + 6 (roll) = 11 < 12 (mental point resistance), incomplete effect.
+
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01247, source-range-870a16bc-01250))_
+
+> Goblin lord: 5 (magic power) + 6 (roll) = 11 < 12 (mental point resistance), incomplete effect. If the rolls against the three goblins were _6_ , _3_ , and _2_ (double ones!), and the roll against the goblin lord was _6_ , then the result would look like this:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01248))_
+
+> The player rolls the dice four times and for each one must determine whether the magic breaks through the resist and takes its full effect.
+
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01248, source-range-870a16bc-01250))_
+
+> Suppose there are three goblins (each with a mental point resistance of 9) and one goblin lord (mental point resistance 12) in this space. The player rolls the dice four times and for each one must determine whether the magic breaks through the resist and takes its full effect. If the rolls against the three goblins were _6_ , _3_ , and _2_ (double ones!), and the roll against the goblin lord was _6_ , then the result would look like this:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01249))_
+
+> When rolling the dice, you must clearly declare which target the dice are meant for before you actually roll.
+
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01262))_
 
@@ -247,7 +327,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > If the side casting the magic rolls double sixes, _no_ _one_ can resist, except for those who _also_ roll double sixes.
 
-### Technical atom 10
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01361, source-range-870a16bc-01363))_
 
@@ -257,7 +337,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Most magic of the **damage** type can still deal damage even if it's resisted by the target, only with a reduced effect.
 
-### Technical atom 11
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01537))_
 
@@ -267,7 +347,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > happening in their surroundings, they can make a resistance roll each round, and wake up if successful.
 
-### Technical atom 12
+### Technical atom 20
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01936))_
 
@@ -277,7 +357,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Resist=Negated effect
 
-### Technical atom 13
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01935))_
 
@@ -287,7 +367,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > When making a check, you may only make a resistance roll against this spell once per round in which the spell is cast.
 
-### Technical atom 14
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01981))_
 
@@ -297,7 +377,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Effect=Entangle the opponent in a magical net, binding their movement. Targets that act against the binding suffer strike power 20 damage
 
-### Technical atom 15
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01981))_
 
@@ -307,7 +387,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Type=Target score, damage (Blade-type) Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect
 
-### Technical atom 16
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01984))_
 
@@ -317,7 +397,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > If the target successfully resists, when they attempt to act, the penalty on success rolls will only be -2, damage will only be calculated strike power 10, and no criticals will occur.
 
-### Technical atom 17
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02408))_
 
@@ -327,7 +407,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack immunity, Weak to fire
 
-### Technical atom 18
+### Technical atom 26
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
 
@@ -337,7 +417,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Base Mental Power Cost=35 Distance=30 meters Area=One Duration=Instant
 
-### Technical atom 19
+### Technical atom 27
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02622))_
 
@@ -347,7 +427,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Please note that you may only make a resistance roll check against this spell once per round in which the spell is cast.
 
-### Technical atom 20
+### Technical atom 28
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02996))_
 
@@ -357,7 +437,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > If you cast this spell, you can turn a failure into a success only _once_ on a success roll.
 
-### Technical atom 21
+### Technical atom 29
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03019))_
 
@@ -367,7 +447,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Type=Mind, target score
 
-### Technical atom 22
+### Technical atom 30
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03019))_
 
@@ -377,7 +457,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Expansion=Final score, duration, area Resist=Negated effect
 
-### Technical atom 23
+### Technical atom 31
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03069, source-range-870a16bc-03071))_
 
@@ -387,7 +467,27 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
 
-### Technical atom 24
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> This spellsong has the effect of charming those who hear it. Those who are, are not charmed by the bard him or herself, but rather charmed by their singing voice and performance. As long as the spellsong continues, those who are charmed will listen to the song in ecstasy. However, if you suffer physical or mental damage, you can make another resistance roll.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+
+> With this spellsong, a bard can make those they charm take specific actions.
+
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03097, source-range-870a16bc-03101))_
+
+> a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03099))_
+
+> If you are using a flute as your instrument, you can use this spellsong, but you _cannot_ make anyone take any actions.
+
+### Technical atom 34
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03686))_
 
@@ -397,7 +497,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Unless the magic itself is broken by _Dispel Magic_ or other magic belonging to _mind_ , it will never wake up.
 
-### Technical atom 25
+### Technical atom 35
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03787))_
 
@@ -407,7 +507,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > For example, if the caster sacrifices their own life, it is acceptable to apply a fairly powerful curse.
 
-### Technical atom 26
+### Technical atom 36
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04322))_
 
@@ -417,7 +517,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Effect=Deals strike power 30 damage plus 12 bonus damage every hour. Resist reduces effect
 
-### Technical atom 27
+### Technical atom 37
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04322))_
 
@@ -427,7 +527,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Toxicity Score=14 Rarity=14
 
-### Technical atom 28
+### Technical atom 38
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04339))_
 
@@ -437,7 +537,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > **[Deathlike Sleep (Dose)]** Effect=Put into suspended animation Toxicity Score=14 Rarity=14 Effect Start Time= 1 round later Effect Duration=12 hours
 
-### Technical atom 29
+### Technical atom 39
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04339))_
 
@@ -447,7 +547,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > **[Deadly Dust (Inhaled/Damage)]** Effect=Deals strike power 10 damage plus bonus damage 1. Resist negates effect. Toxicity Score=10 Rarity=9 Effect Start Time=Immediately Effect Duration=Instant
 
-### Technical atom 30
+### Technical atom 40
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04343))_
 
@@ -457,7 +557,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Effect=Gives happy dreams Toxicity Score=10 Rarity=10 Effect Start Time= 6 rounds later Effect Duration=1 hour
 
-### Technical atom 31
+### Technical atom 41
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04347))_
 
@@ -467,7 +567,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Effect=Make you laugh Toxicity Score=11 Rarity=10 Effect Start Time= 1 round later Effect Duration=1 round
 
-### Technical atom 32
+### Technical atom 42
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04367))_
 
@@ -477,7 +577,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Effect=Petrification Toxicity Score=16
 
-### Technical atom 33
+### Technical atom 43
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04367))_
 
@@ -487,7 +587,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Rarity=13 Effect Start Time=6 rounds later Effect Duration=Permanent
 
-### Technical atom 34
+### Technical atom 44
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04778))_
 
@@ -497,7 +597,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Languages=None Perception=Magic
 
-### Technical atom 35
+### Technical atom 45
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04866))_
 
@@ -507,7 +607,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level=6
 
-### Technical atom 36
+### Technical atom 46
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04972, source-range-870a16bc-04977))_
 
@@ -517,7 +617,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison
 
-### Technical atom 37
+### Technical atom 47
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -527,7 +627,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level=5
 
-### Technical atom 38
+### Technical atom 48
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -537,7 +637,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Rarity=13 Agility=18 Movement Speed=15 Number=One
 
-### Technical atom 39
+### Technical atom 49
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
 
@@ -547,7 +647,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
 
-### Technical atom 40
+### Technical atom 50
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05072))_
 
@@ -557,7 +657,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level=6 Rarity=12
 
-### Technical atom 41
+### Technical atom 51
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05072))_
 
@@ -567,7 +667,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Agility=10 Movement Speed=15 Number=One Frequency=Moderate Intellect=Low Reaction=Adversarial Attack Points=Two-handed ax: 13 (6) Strike Points=16 Attack Points=Strangle:15 (8) Strike Points=14
 
-### Technical atom 42
+### Technical atom 52
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
 
@@ -577,7 +677,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8.
 
-### Technical atom 43
+### Technical atom 53
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 
@@ -587,7 +687,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
 
-### Technical atom 44
+### Technical atom 54
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05222))_
 
@@ -597,7 +697,97 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > You must roll 2D again.
 
-### Technical atom 45
+### Technical atom 55
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
+
+> Then, needles extended from the tips of the legs are embedded into the opponent's brain. In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the nee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05230))_
+
+> If other allies want to help, they must attack and be prepared to hit their own ally.
+
+### Technical atom 56
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
+
+> Then, needles extended from the tips of the legs are embedded into the opponent's brain. In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the nee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05231))_
+
+> However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
+
+### Technical atom 57
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05248))_
+
+> Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05249))_
+
+> Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
+
+### Technical atom 58
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05251))_
+
+> A giant centipede's fangs are poisonous. An adventurer bitten by a giant centipede must make a life force resistance roll against target score 9. If you fail, your motor nerves will be affected, and will suffer a -2 penalty on all success rolls. The effects of this poison last for 3 days.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05253))_
+
+> Monster Level=2
+
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05262))_
+
+> A giant wasp's stinger is poisonous (toxicity score 12). Those dealt damage by a wasp's attack must succeed on a life force resistance roll, or else the poison will paralyze their bodies, leaving them in a state of suspended animation. This state of suspended animation lasts semipermanently. A giant wasp will drag paralyzed prey to its burrow, lay eggs inside them, then hide the entrance to the burrow with dead leaves, etc. Wasp larvae grow by feeding on the flesh and organs of their prey.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05265))_
+
+> Monster Level=2
+
+### Technical atom 60
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05300))_
+
+> When in combat, a giant scorpion can use the pincers on its arms and the barb on its tail to attack different targets (of course, it can also concentrate its attacks on a single target). The barb on the tip of its tail is a stinger that secretes a deadly poison (toxicity score 10), and those stung must make a life force resistance roll. If you fail, your whole body will become paralyzed after an hour, then you will draw your last breath.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05302))_
+
+> Monster Level=3
+
+### Technical atom 61
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_
+
+> When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will have one arm trapped. You must roll the dice to determine which arm is trapped. Roll 1D, and if it's 1-3, it'll be the right arm, but if it's 4-6 it'll be the left arm. Ancient magic cannot be used while one arm is trapped. Also, on subsequent rounds, you cannot escape from the giant mantis, so your evasion points will be -4. In order t
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05307))_
+
+> On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2.
+
+### Technical atom 62
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05307, source-range-870a16bc-05310))_
+
+> On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2. Rarity=10 Agility=15 Movement Speed=10/30 (air) Number=One to several Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Beak:10 (3)/Talons:11 (4) Strike Points=6/6 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=15/11 (4) Mental Points/Resistance=9/10 (3) Special Abi
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
+
+> Monster Level=3
+
+### Technical atom 63
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05324))_
+
+> Evasion Points=11 (4) Defense Points=3 Life Points/Resistance=7/8 (1) Mental Points/Resistance=6/8 (1) Special Abilities=Disease (Intensity 6) Opponent’s attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. Languages=None
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05326))_
+
+> They are sensitive to light, and if an adventurer with a light carelessly enters the nest, they may blindly attack in groups.
+
+### Technical atom 64
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
 
@@ -607,7 +797,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Attack Points=Fangs:9 (2) Strike Points=5
 
-### Technical atom 46
+### Technical atom 65
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
 
@@ -617,7 +807,17 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
 
-### Technical atom 47
+### Technical atom 66
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+
+> Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05338))_
+
+> Monster Level=3
+
+### Technical atom 67
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05375))_
 
@@ -627,7 +827,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Languages=None Perception=Five senses
 
-### Technical atom 48
+### Technical atom 68
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
 
@@ -637,7 +837,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > 204 penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
 
-### Technical atom 49
+### Technical atom 69
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
 
@@ -647,7 +847,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
 
-### Technical atom 50
+### Technical atom 70
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05524))_
 
@@ -657,7 +857,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level=6 Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Almost none Reaction=Violent Attack Points=Fangs:13 (6) Strike Points=16
 
-### Technical atom 51
+### Technical atom 71
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05584))_
 
@@ -667,7 +867,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Alraune look exactly like humans, and can speak and think like humans, but when they are wounded, a thick, red mucus oozes out of them.
 
-### Technical atom 52
+### Technical atom 72
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -677,7 +877,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
 
-### Technical atom 53
+### Technical atom 73
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -687,7 +887,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
 
-### Technical atom 54
+### Technical atom 74
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
 
@@ -697,7 +897,17 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Only _fire-type_ , _electric-type_ , _pure energytype_ , and _explosion-type_ magic attacks can deal damage.
 
-### Technical atom 55
+### Technical atom 75
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
+
+> body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05935))_
+
+> Monster Level=4
+
+### Technical atom 76
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06054))_
 
@@ -707,7 +917,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Monster Level=10
 
-### Technical atom 56
+### Technical atom 77
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06054))_
 
@@ -717,7 +927,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Rarity=16 Agility=14 Movement Speed=18 Number=One Frequency=Very rare Intellect=High Reaction=Adversarial Attack Points=Claws: 18 (11) Strike Points=20
 
-### Technical atom 57
+### Technical atom 78
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06203))_
 
@@ -727,7 +937,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > A character who hears this at point-blank range without first wearing earplugs must make a mental power resistance roll against the indicated target score, and will suffer the effects on a failure.
 
-### Technical atom 58
+### Technical atom 79
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06205))_
 
@@ -737,7 +947,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > In the case of mandrake and alraune, you cannot attack or cast spells for one full round, and you will suffer a -4 penalty to evasion.
 
-### Technical atom 59
+### Technical atom 80
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
 
@@ -747,7 +957,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > Once the staff is complete, you can control an _unlimited_ number of undead monsters, and you also gain a _+4 bonus_ to your final score when attempting to make them obey.
 
-### Technical atom 60
+### Technical atom 81
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
@@ -757,7 +967,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > The final score must _exceed_ the final score from when the character cast the spell.
 
-### Technical atom 61
+### Technical atom 82
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
 
@@ -767,7 +977,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > **Table 17-1 Lost Spells Table**
 
-### Technical atom 62
+### Technical atom 83
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07386))_
 
@@ -777,7 +987,7 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 > When danger comes from an _unexpected_ direction or location, you receive _no_ bonus to resistance rolls and must make a check normally.
 
-### Technical atom 63
+### Technical atom 84
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 
@@ -817,36 +1027,46 @@ What [[sword-world-rpg-complete-edition]] covers about resist:
 
 ## Related pages
 
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (23 shared statement(s), 24 shared atom(s))
 - [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (39 shared statement(s), 14 shared atom(s))
 - [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (27 shared statement(s), 18 shared atom(s))
 - [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (28 shared statement(s), 17 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (23 shared statement(s), 19 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (13 shared statement(s), 16 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (16 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (11 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (15 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (6 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (8 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (12 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (11 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements and technical atoms (6 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (4 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (13 shared statement(s), 22 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (11 shared statement(s), 15 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (7 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (8 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (6 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (15 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (4 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (5 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (3 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (5 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (4 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (5 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity-18]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-recovering-mental-power]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (6 shared atom(s))
+- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-base-mental-power-cost]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-distance-caster]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-duration-instant]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-immunity]] - shared statements (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bone-servant]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-duration-permanent]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-gnome-earth-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-12]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-recall-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-sylph-wind-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-11-ancient-magic-and-the-sorcerer-skill-resist-d0ebf15d]] - source section (4 shared statement(s), 3 shared atom(s))
 
 ## Source
 

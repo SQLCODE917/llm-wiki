@@ -1,18 +1,22 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-attack-with-both-hands-at-the-same-a2a32ff1
 page_kind: source
-summary: **Attack with both hands at the same**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Attack with both hands at the same: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-attack-with-both-hands-at-the-same-a2a32ff1@b5927dc0fe6e603dc5973d358f74fa3f
+projection_coverage: section-sword-world-rpg-complete-edition-section-attack-with-both-hands-at-the-same-a2a32ff1@b76b91f288fd1d153bf8446629737e98
 ---
 
-# **Attack with both hands at the same**
+# Attack with both hands at the same
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-16-6-2-1fbb98a5]] - broader source section
 
 ## Statements
 

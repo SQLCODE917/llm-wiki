@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-2-strangle-continue-to-strangle-escape-459ce8ab
 page_kind: source
-summary: **2. Strangle/Continue to Strangle/Escape**: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 2. Strangle/Continue to Strangle/Escape: 13 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-2-strangle-continue-to-strangle-escape-459ce8ab@a30c035e0d556ad669f0c7d8e36af8d3
+projection_coverage: section-sword-world-rpg-complete-edition-section-2-strangle-continue-to-strangle-escape-459ce8ab@8a076abcf0d8a3b5a1352ed28d893ab2
 ---
 
-# **2. Strangle/Continue to Strangle/Escape**
+# 2. Strangle/Continue to Strangle/Escape
 
 From [[sword-world-rpg-complete-edition]].
 

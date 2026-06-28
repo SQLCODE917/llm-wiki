@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-4-using-holy-magic-or-common-runes-da1da109
 page_kind: source
-summary: **4. Using Holy Magic or Common Runes**: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 4. Using Holy Magic or Common Runes: 6 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-4-using-holy-magic-or-common-runes-da1da109@45ed9672af77e6b14985a63a25fbbaa4
+projection_coverage: section-sword-world-rpg-complete-edition-section-4-using-holy-magic-or-common-runes-da1da109@76849a13fb849934c8c8d3d3127aea99
 ---
 
-# **4. Using Holy Magic or Common Runes**
+# 4. Using Holy Magic or Common Runes
 
 From [[sword-world-rpg-complete-edition]].
 

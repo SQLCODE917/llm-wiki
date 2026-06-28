@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition
 page_kind: source
-summary: Claim-ledger projection (general-prose): 10593 usable entries, 2607 technical atoms, 1135 needs-review, 1576 linked page(s); write decision write-with-review-work.
+summary: Claim-ledger projection (general-prose): 10593 usable entries, 2607 technical atoms, 1135 needs-review, 1744 linked page(s); write decision write-with-review-work.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
+projection_coverage: projection-coverage-3fe8896f760e01a4@2d7ece141b754810
 ---
 
 # Document
@@ -377,10 +377,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 1.1 Ability Scores
 
-### **Ability Scores**
-
-### **1.1**
-
 - There are six types of ability scores: **dexterity** , **agility** , **intelligence** , **strength** , **life force** , and **mental power** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00159))_
 - Ability scores apply not only to humans, but also to the various non-human races that become adventurers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00159))_
 - In Sword World RPG, these basic characteristics of an adventurer are represented by numbers called **ability scores** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00159))_
@@ -484,10 +480,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 1.2 Races
 
-### **Races**
-
-### **1.2**
-
 - Humans are not the only adventurers in Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00184))_
 - Next, we'll explain the races that are relatively common as adventurers in Forcelia, though they’re not as common as humans. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00184))_
 - Humans are not the only adventurers in Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00184))_
@@ -547,19 +539,15 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 1.3 Skills
 
+- Skills have a greater impact on a character's actions than ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00221))_
+- In addition to ability scores, _Sword World RPG_ also uses numeric values called **skills** to describe the characteristics of characters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00221))_
+
 ### 【 **Half-Elf** 】
 
 - A half-elf is one who is born of a human and an elf. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00217))_
 - Humans and elves are close as species and are able to have children, as explained in the elf section. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00217))_
 - Their ears are slightly pointed, but they also have a spot where a beard grows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00218))_
 - They are almost the same height as humans, but are more delicate. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00218))_
-
-### **Skills**
-
-### **1.3**
-
-- Skills have a greater impact on a character's actions than ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00221))_
-- In addition to ability scores, _Sword World RPG_ also uses numeric values called **skills** to describe the characteristics of characters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00221))_
 
 ### **1.3.1**
 
@@ -743,10 +731,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - This is because it would be extremely difficult to have a character live the life of a dragon priest, when examining a role-playing game from the _role-playing_ perspective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00288))_
 
 ## 1.4 Character Creation
-
-### **1.4**
-
-### **Character Creation**
 
 - Now it's time to show you how to create a _player character_ who will explore Forcelia as the player's alter ego. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00293))_
 - You may photocopy the one at the end of this book (photocopying is permitted for personal use only). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00294))_
@@ -2239,10 +2223,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 3.1 Action Announcements
 
-### **Action Announcements**
-
-### **3.1**
-
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00668))_
 
 > same group (e.g., a1, a2, a3 within group A) may be determined freely and can also be changed from round to round.
@@ -2434,14 +2414,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 3.4 Movement and Actions
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00730))_
-
-> engaged with attempt to withdraw (flee), even if they have high agility, you can still attack, and you will have a higher chance of hitting than usual.
-
-### **Movement and Actions**
-
-### **3.4**
-
 - You cannot wield weapons or cast spells while running at full speed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00733))_
 - However, when **movement** is made, actions are restricted. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00733))_
 - Therefore, a character can also move during this time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00733))_
@@ -2455,6 +2427,10 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Below are some guidelines on how movement works and which actions can be taken. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00738))_
 - For any other actions, please use _common sense_ based on the time frame of 1 round = 10 seconds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00738))_
 - Final decisions are to be made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00738))_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00730))_
+
+> engaged with attempt to withdraw (flee), even if they have high agility, you can still attack, and you will have a higher chance of hitting than usual.
 
 ### **Ready a Sheathed Weapon**
 
@@ -2722,10 +2698,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 4.4 Scores Used in Weapon Combat
 
-### **Scores Used in Weapon Combat**
-
-### **4.4**
-
 - This is represented by **bonus damage** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00828))_
 - using the same sized weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00828))_
 - **Attack power** , **strike power** , **bonus damage** , **critical target** , **evasion speed** , **defense power** , and **damage reduction** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00831))_
@@ -2851,10 +2823,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - There is one other case, _monster against monster_ , but since only the game master should know how to handle this case, we won’t explain it here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00871))_
 
 ## 4.5 Attacks From Characters Against Monsters
-
-### **Attacks From Characters Against Monsters**
-
-### **4.5**
 
 ### **4.5.1 Hit Checks**
 
@@ -3195,10 +3163,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 4.6 Attacks From Monsters Against Characters
 
-### **4.6**
-
-### **Attacks From Monsters Against Characters**
-
 ### **4.6.1**
 
 ### **Hit (Evasion) Checks**
@@ -3333,10 +3297,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - If final damage is _0 or negative_ , that means you took _no_ damage at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00988))_
 
 ## 4.7 Attacks From Characters Against Characters
-
-### **4.7**
-
-### **Attacks From Characters Against Characters**
 
 - While infighting between player characters is something you should avoid at all costs, fights against _nonplayer characters_ are common. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00993))_
 
@@ -3847,10 +3807,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 4.11 Damage Recovery
 
-### **4.11**
-
-### **Damage Recovery**
-
 - Damage dealt to a character's life force can be recovered in a variety of ways. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01135))_
 
 ### **4.11.1**
@@ -4354,11 +4310,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 - within 24 hours of your previous awakening (when your mental power was last recovered), your mental power will _not_ be recovered. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
 - within 24 hours of your previous awakening (when your mental power was last recovered), your mental power will _not_ be recovered. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01288))_
-
-### **5.1.7**
-
-### **Magic Expansion**
-
 - You can increase the effectiveness and certainty of magic by consuming extra mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
 - This is called **magic expansion** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
 - This is called **magic expansion** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01291))_
@@ -4612,10 +4563,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 > Although it's not often done, it's possible to perform magic expansion _and_ contraction at the same time. For example, you could _extend_ the area of effect while _reducing_ magic power. The mental power required at this time is decided by _expansion_ . It _cannot_ be reduced by contraction. For example, if you _double_ the area _and_ reduce magic power by _-4_ , the mental power consumed will still be _double_ .
 
 ## 5.1.9 Magic Types
-
-### **5.1.9**
-
-### **Magic Types**
 
 - These characteristics are presented here as **magic types** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01359))_
 
@@ -4922,10 +4869,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Unless the game master has a particular reason, please consider these to be lost spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01441))_
 - Unless the game master has a particular reason, please consider these to be lost spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01441))_
 
-### **5.1.10**
-
-### **How to Read Magic Details**
-
 ### **[Sample Magic Details]**
 
 - This spell allows the caster to understand how to read magic details. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01450))_
@@ -4955,6 +4898,11 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 > Duration=Until you forget the contents Effect=Understand how to read magic details Type=Non-removable Expansion=Resist=None
 
 ## 5.1.11 Ancient Magic and the Sorcerer Skill
+
+- The skill for using ancient magic is called the _sorcerer skill_ , and those who have this skill are called _sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
+- Many of the spells and runes of this system were lost with the fall of the ancient kingdom, but a small amount of them have been passed down to modern Forcelia, and are now referred to as **ancient magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
+- _High ancient_ are the great runes that were developed and studied during the time of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
+- The skill for using ancient magic is called the _sorcerer skill_ , and those who have this skill are called _sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
 
 ### 《 **Base Mental Power Cost** 》
 
@@ -5027,15 +4975,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > **Reduced Effect** : If resisted, the spell only takes an incomplete effect.
 
-### **5.1.11**
-
-### **Ancient Magic and the Sorcerer Skill**
-
-- The skill for using ancient magic is called the _sorcerer skill_ , and those who have this skill are called _sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
-- Many of the spells and runes of this system were lost with the fall of the ancient kingdom, but a small amount of them have been passed down to modern Forcelia, and are now referred to as **ancient magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
-- _High ancient_ are the great runes that were developed and studied during the time of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
-- The skill for using ancient magic is called the _sorcerer skill_ , and those who have this skill are called _sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01478))_
-
 ### **Restrictions on Using 5.1.11.1 Ancient Magic**
 
 - Ancient magic has powerful effects because it draws its source of power (which is sometimes called _mana_ ) directly from matter, but it is subject to the following two restrictions in order to cast the spells correctly: _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01480))_
@@ -5092,9 +5031,23 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 5.1.12 Ancient Magic List
 
-### **5.1.12**
+- If magic is cast on the person who casts this spell, that magic will rebound back to the opponent who cast it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02009))_
+- At the same time, the effect of _Magic Reflection_ will disappear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02009))_
+- In the case of magic that affects a space, _Magic Reflection_ has no effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+- However, this can only reflect magic which has an area of effect of _one_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+- Also, since the reflection is indiscriminate, even magic that’s _favorable_ towards the caster will be reflected. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+- In addition, spells that nullify magic, such as _Dispel Magic_ , cannot be reflected. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+- In addition, spells that nullify magic, such as _Dispel Magic_ , cannot be reflected. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+- However, this can only reflect magic which has an area of effect of _one_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
+- If a caster using _Magic Reflection_ casts other magic on his or herself, the effect of _Magic Reflection_ will be lost at the same time the new magic is cast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02012))_
 
-### **Ancient Magic List**
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01843))_
+
+> Each time you use this spell, you can only read _one_ language, if you want to read _two_ unknown languages at the same time, you must _double_ the spell's effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02010))_
+
+> If your magic has been reflected, you must resist against your own magic yourself.
 
 ### **1st Level Ancient Magic List**
 
@@ -6565,12 +6518,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > Expansion=Duration, effect (see description) Resist=None
 
-### 5.1.12 Ancient Magic List
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01843))_
-
-> Each time you use this spell, you can only read _one_ language, if you want to read _two_ unknown languages at the same time, you must _double_ the spell's effect.
-
 ### **[ Vision ]**
 
 - This is a spell that increases the caster's vision by several times, allowing them to see things far away. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01847))_
@@ -7351,22 +7298,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > Effect=Reflects magic cast on the caster back onto the opponent Type=Target score, lost Expansion=Final score Resist=None
 
-### 5.1.12 Ancient Magic List
-
-- If magic is cast on the person who casts this spell, that magic will rebound back to the opponent who cast it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02009))_
-- At the same time, the effect of _Magic Reflection_ will disappear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02009))_
-- In the case of magic that affects a space, _Magic Reflection_ has no effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
-- However, this can only reflect magic which has an area of effect of _one_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
-- Also, since the reflection is indiscriminate, even magic that’s _favorable_ towards the caster will be reflected. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
-- In addition, spells that nullify magic, such as _Dispel Magic_ , cannot be reflected. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
-- In addition, spells that nullify magic, such as _Dispel Magic_ , cannot be reflected. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
-- However, this can only reflect magic which has an area of effect of _one_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02011))_
-- If a caster using _Magic Reflection_ casts other magic on his or herself, the effect of _Magic Reflection_ will be lost at the same time the new magic is cast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02012))_
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02010))_
-
-> If your magic has been reflected, you must resist against your own magic yourself.
-
 ### **8th Level Ancient Magic List**
 
 ### **[ Illusionary Beast ]**
@@ -7928,19 +7859,14 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 ## 5.1.13 Spirit Magic and the Shaman Skill
 
 - Of course, its destructive power would be enough to destroy buildings and ramparts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02138))_
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02139))_
-
-> Please note that this spell cannot be used unless you can see the sky (it has no effect if used inside a cave or dungeon).
-
-### **5.1.13**
-
-### **Spirit Magic and the Shaman Skill**
-
 - The shaman skill allows you to use all basic abilities and spirit magic up to the caster's skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02142))_
 - The skill for using spirit magic is called the _shaman skill_ , and those who have this skill are called _shamans_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02142))_
 - **Silent spirit** are runes used to communicate with spirits and draw out the power controlled by those spirits. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02142))_
 - The skill for using spirit magic is called the _shaman skill_ , and those who have this skill are called _shamans_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02142))_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02139))_
+
+> Please note that this spell cannot be used unless you can see the sky (it has no effect if used inside a cave or dungeon).
 
 ### **Restrictions on Using 5.1.13.1 Spirit Magic**
 
@@ -8021,6 +7947,12 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - _Sense aura_ is a subtle sensation, more like what we can _smell_ than _see_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02176))_
 - Even if you know that spirit power is at work, you won't be able to tell where that spirit power is coming from unless you get very close. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02176))_
 - Even if you know that spirit power is at work, you won't be able to tell where that spirit power is coming from unless you get very close. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02176))_
+- At this time, the will-o-wisp will also vanish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+- If _Spirit Wall: Wisp_ is used in the same place, their effects will negate each other, and both walls will vanish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+- round hole 50 cm in diameter will be created. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
+- Also, if the magical light created by _Light_ and the wall of darkness overlap, the wall will end there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02485))_
+- A wall of darkness cannot be put up within the area of effect of the ancient magic _Light_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02485))_
+- A wall of darkness cannot be put up within the area of effect of the ancient magic _Light_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02485))_
 
 ### 《 **Silent Spirit** 》
 
@@ -8035,10 +7967,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02178))_
 
 > Those who can use these runes can communicate with any spirit.
-
-### **5.1.14**
-
-### **Spirit Magic List**
 
 ### **1st Level Spirit Magic List**
 
@@ -9222,15 +9150,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > (Salamander/Fire Spirit) Type=Target score, damage (Fire-type) 91
 
-### 5.1.14 Spirit Magic List
-
-- At this time, the will-o-wisp will also vanish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
-- If _Spirit Wall: Wisp_ is used in the same place, their effects will negate each other, and both walls will vanish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
-- round hole 50 cm in diameter will be created. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02484))_
-- Also, if the magical light created by _Light_ and the wall of darkness overlap, the wall will end there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02485))_
-- A wall of darkness cannot be put up within the area of effect of the ancient magic _Light_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02485))_
-- A wall of darkness cannot be put up within the area of effect of the ancient magic _Light_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02485))_
-
 ### **Spirit Wall: Sylph**
 
 ### (Sylph/Wind Spirit)
@@ -9804,6 +9723,30 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 5.1.15 Holy Magic and the Priest Skill
 
+- **Holy prayers** are runes used to contact the great beings, the _gods_ , and use that power as a source to perform various miracles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02654))_
+- There are many gods in _Sword World_ , each drawing worship from humans and other intelligent races. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02654))_
+- This is because their words enter the mind as highly complex symbols. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- In order to use **holy magic** , you need to have enough faith to be able to hear the voices of the gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- Runes called holy prayers were created during the ancient kingdom period as a means to give words to this and cause miracles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- The gods' thought form is completely different from humans, therefore humans cannot fully understand it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- The gods' thought form is completely different from humans, therefore humans cannot fully understand it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- This is because their words enter the mind as highly complex symbols. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- Runes called holy prayers were created during the ancient kingdom period as a means to give words to this and cause miracles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
+- In addition, each holy magic has _special_ spells that can only be used by believers of a specific god. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
+- The caster uses these holy prayers to pray to the gods and activate the power of the spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
+- Those spells _cannot_ be used by members of other sects. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
+- In addition, each holy magic has _special_ spells that can only be used by believers of a specific god. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
+- The skill for using holy magic is called the _priest skill_ , and those who have the priest skill are called _priests_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02657))_
+- The skill for using holy magic is called the _priest skill_ , and those who have the priest skill are called _priests_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02657))_
+- Among the many gods that exist in Forcelia, there are also those called **wicked gods** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
+- The teachings of these wicked gods are extremely inconvenient for protecting human society, and many of them threaten the lives and property of others. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
+- Because of their anti-social nature, the followers of these wicked gods tend to be abhorred, and the magic used by the followers of these wicked gods is called **dark magic** and is distinguished from holy magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
+- Because of their anti-social nature, the followers of these wicked gods tend to be abhorred, and the magic used by the followers of these wicked gods is called **dark magic** and is distinguished from holy magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
+- 96 priests of the wicked gods are not called priests, but **dark priests** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02659))_
+- If you role-play according to the wicked gods' teachings, there is a high possibility that it will soon lead to the destruction of not only that PC, but also the party. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
+- Game masters should _not_ allow characters to become priests of wicked gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
+- If you role-play according to the wicked gods' teachings, there is a high possibility that it will soon lead to the destruction of not only that PC, but also the party. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
+
 ### **[ Freeze ]**
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02627))_
@@ -9898,34 +9841,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02647))_
 
 > Area=A space within a 100 meter radius from the caster Duration=18 rounds
-
-### **5.1.15**
-
-### **Holy Magic and the Priest Skill**
-
-- **Holy prayers** are runes used to contact the great beings, the _gods_ , and use that power as a source to perform various miracles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02654))_
-- There are many gods in _Sword World_ , each drawing worship from humans and other intelligent races. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02654))_
-- This is because their words enter the mind as highly complex symbols. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- In order to use **holy magic** , you need to have enough faith to be able to hear the voices of the gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- Runes called holy prayers were created during the ancient kingdom period as a means to give words to this and cause miracles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- The gods' thought form is completely different from humans, therefore humans cannot fully understand it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- The gods' thought form is completely different from humans, therefore humans cannot fully understand it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- This is because their words enter the mind as highly complex symbols. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- Runes called holy prayers were created during the ancient kingdom period as a means to give words to this and cause miracles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02655))_
-- In addition, each holy magic has _special_ spells that can only be used by believers of a specific god. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
-- The caster uses these holy prayers to pray to the gods and activate the power of the spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
-- Those spells _cannot_ be used by members of other sects. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
-- In addition, each holy magic has _special_ spells that can only be used by believers of a specific god. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02656))_
-- The skill for using holy magic is called the _priest skill_ , and those who have the priest skill are called _priests_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02657))_
-- The skill for using holy magic is called the _priest skill_ , and those who have the priest skill are called _priests_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02657))_
-- Among the many gods that exist in Forcelia, there are also those called **wicked gods** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
-- The teachings of these wicked gods are extremely inconvenient for protecting human society, and many of them threaten the lives and property of others. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
-- Because of their anti-social nature, the followers of these wicked gods tend to be abhorred, and the magic used by the followers of these wicked gods is called **dark magic** and is distinguished from holy magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
-- Because of their anti-social nature, the followers of these wicked gods tend to be abhorred, and the magic used by the followers of these wicked gods is called **dark magic** and is distinguished from holy magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02658))_
-- 96 priests of the wicked gods are not called priests, but **dark priests** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02659))_
-- If you role-play according to the wicked gods' teachings, there is a high possibility that it will soon lead to the destruction of not only that PC, but also the party. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
-- Game masters should _not_ allow characters to become priests of wicked gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
-- If you role-play according to the wicked gods' teachings, there is a high possibility that it will soon lead to the destruction of not only that PC, but also the party. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02660))_
 
 ### **Restrictions on Using 5.1.15.1 Holy Magic**
 
@@ -10106,15 +10021,11 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 5.1.16 Basic Holy Magic List
 
+- The spells listed here are available to characters with the priest (dark priest) skill without exception. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02716))_
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02713))_
 
 > form of attention or assistance. If a priest of Marfa and his wife make a vow to _never divorce_ at the time of their marriage, but then the relationship between the two turns sour, the two of them may end up having a child together. No vow can be made that violates your faith in your god. For example, a priest of Myrii _can_ make a vow to _defeat the traitor XX with my own hands_ , but a priest of Marfa _cannot_ .
-
-### **5.1.16**
-
-### **Basic Holy Magic List**
-
-- The spells listed here are available to characters with the priest (dark priest) skill without exception. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02716))_
 
 ### **1st Level Basic Holy Magic List**
 
@@ -11017,6 +10928,9 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 5.1.17 Special Holy Magic List
 
+- The spells listed here can only be used by those who believe in a specific god among characters with the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02931))_
+- The spells listed here can only be used by those who believe in a specific god among characters with the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02931))_
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02917))_
 
 > **Table 5-8: Reincarnation Memory**
@@ -11085,11 +10999,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02929))_
 
 > Even before a person regains their personality, if someone who knew them well before reincarnation can identify their body after reincarnation, they can try to restore the person's old memories.
-
-### **5.1.17 Special Holy Magic List**
-
-- The spells listed here can only be used by those who believe in a specific god among characters with the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02931))_
-- The spells listed here can only be used by those who believe in a specific god among characters with the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02931))_
 
 ### **Pharis Special Holy Magic List [ Sense Evil ] (Spell Level=1)**
 
@@ -11523,6 +11432,17 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - No material can block the effects of this spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
 - _Sense Metal_ is a spell that allows you to sense metals or veins containing metals in the surrounding area, as well as their type, purity, and amount. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
 - For the duration of the spell, the priest of Braki will see their surroundings in a unique color. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03037))_
+- **Common runes** were invented by Mana Rai, the great sage of Oran, and it involves putting the power of ancient magic into items (mainly rings) and activating it using a password in _common_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03051))_
+- Common runes, like other magic, consume mental power when used. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03052))_
+- The amount of mental power consumed is determined by each common rune. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03052))_
+- Common runes can also be expanded by consuming extra mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
+- However, no matter how high your rune master skill is, you _cannot_ reduce the amount of mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
+- Common runes can be used by anyone who knows the password. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
+- However, increasing the final score is the one thing you _cannot_ do. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
+- When using common runes, if magic power is required for a game procedure, treat it as **0** regardless of the user. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
+- Theoretically, any ancient magic can be made into common runes, but the sorcerers' guild (academy of sages) limits what gets put on the market, to prevent the reputation of magic and sorcerers from being damaged due to misuse of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03054))_
+- Theoretically, any ancient magic can be made into common runes, but the sorcerers' guild (academy of sages) limits what gets put on the market, to prevent the reputation of magic and sorcerers from being damaged due to misuse of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03054))_
+- The following are common runes that characters can obtain. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03055))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03034))_
 
@@ -11535,6 +11455,14 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03036))_
 
 > Expansion=Duration, area Resist=None
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03051))_
+
+> **Common runes** were invented by Mana Rai, the great sage of Oran, and it involves putting the power of ancient magic into items (mainly rings) and activating it using a password in _common_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
+
+> Also, even if you can't use your hands or are wearing metal armor, you can use them as long as you can say the word.
 
 ### **[ Heat Metal ]**
 
@@ -11606,30 +11534,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > In the middle of combat, it can only be used on enemies that are _engaged_ with you, and if you suffer damage from an enemy's counterattack, your focus will be broken and the magic's effect will be lost.
 
-### **5.2**
-
-### **Common Runes**
-
-- **Common runes** were invented by Mana Rai, the great sage of Oran, and it involves putting the power of ancient magic into items (mainly rings) and activating it using a password in _common_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03051))_
-- Common runes, like other magic, consume mental power when used. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03052))_
-- The amount of mental power consumed is determined by each common rune. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03052))_
-- Common runes can also be expanded by consuming extra mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
-- However, no matter how high your rune master skill is, you _cannot_ reduce the amount of mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
-- Common runes can be used by anyone who knows the password. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
-- However, increasing the final score is the one thing you _cannot_ do. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
-- When using common runes, if magic power is required for a game procedure, treat it as **0** regardless of the user. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
-- Theoretically, any ancient magic can be made into common runes, but the sorcerers' guild (academy of sages) limits what gets put on the market, to prevent the reputation of magic and sorcerers from being damaged due to misuse of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03054))_
-- Theoretically, any ancient magic can be made into common runes, but the sorcerers' guild (academy of sages) limits what gets put on the market, to prevent the reputation of magic and sorcerers from being damaged due to misuse of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03054))_
-- The following are common runes that characters can obtain. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03055))_
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03051))_
-
-> **Common runes** were invented by Mana Rai, the great sage of Oran, and it involves putting the power of ancient magic into items (mainly rings) and activating it using a password in _common_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03053))_
-
-> Also, even if you can't use your hands or are wearing metal armor, you can use them as long as you can say the word.
-
 ### **Table 5-9: Common Runes**
 
 - Enchant Weapon (Mental Power Consumed 3, 3000 Gamels) Counterspell (Mental Power Consumed 3, 3000 Gamels) Decrease Weight (Mental Power Consumed 3, 3000 Gamels) Kindle (Mental Power Consumed 3, 3000 Gamels) Protection (Mental Power Consumed 3, 3000 Gamels) Light (Mental Power Consumed 3, 3000 Gamels) Lock (Mental Power Consumed 3, 3000 Gamels) **==> picture [360 x 118] intentionally omitted <==** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03057))_
@@ -11642,27 +11546,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
 - In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
 - Also, when creating a new common rune, its mental power consumption is the same as the base mental power cost of ancient magic, and the price should be _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03063))_
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
-
-> became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03062))_
-
-> For detailed effects of these, please refer to the ancient magic of the same name (see Table 5-9: Common Runes).
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
-
-> became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03064))_
-
-> The game master may add other common runes at their discretion.
-
-### **Spellsongs**
-
-### **5.3**
-
 - However, instead of magic power, the baseline score is _bard skill level + mental power bonus (_ _**not** intelligence bonus!)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03067))_
 - A **spellsong** is a song with magical power that was created during the ancient kingdom period. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03068))_
 - Those with the bard skill can use magic, although weak, by singing these spellsongs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03068))_
@@ -11682,6 +11565,22 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - You can learn _one_ spellsong per bard level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
 - However, it has no effect on those who are _unable_ to hear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
 - Every time your level goes up, you have to learn a new spellsong. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03073))_
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
+
+> became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03062))_
+
+> For detailed effects of these, please refer to the ancient magic of the same name (see Table 5-9: Common Runes).
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03061))_
+
+> became common runes, it’s obvious that thieves would use them to commit evil deeds. In such cases, please make sure to make a decision such as _The sorcerers' guild would never allow them on the market because they'd bring down the reputation of magic and sorcerers_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03064))_
+
+> The game master may add other common runes at their discretion.
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03069, source-range-870a16bc-03071))_
 
@@ -12271,10 +12170,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > For **set** , you can set traps up to a difficulty equal to your thief skill level without failing (you cannot set traps of a higher level).
 
-### **Ranger Skill**
-
-### **6.3**
-
 ### **[** ② **First-Aid [-] ]**
 
 - Owners of the ranger skill demonstrate a variety of abilities in outdoor activities, as explained below. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03217))_
@@ -12459,10 +12354,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 6.4 Sage Skill
 
-### **Sage Skill**
-
-### **6.4**
-
 - Academic fields in _Sword World_ are undifferentiated, and owners of this skill are skilled in all disciplines. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03270))_
 - Many sorcerers have this skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03270))_
 - The sage skill represents a comprehensive understanding and depth of knowledge in all academic fields. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03270))_
@@ -12541,6 +12432,8 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 6.5 Bard Skill
 
+- Those with the bard skill are knowledgeable about ancient folklore and poetry, and make a living by performing them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03307))_
+
 ### **[** ⑤ **Research [Intelligence] ]**
 
 ### **[** ⑥ **Treasure Appraisal [Intelligence] ] (Not retriable)**
@@ -12577,12 +12470,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03303))_
 
 > Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it.
-
-### **Bard Skill**
-
-### **6.5**
-
-- Those with the bard skill are knowledgeable about ancient folklore and poetry, and make a living by performing them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03307))_
 
 ### **[** ① **Sing [Mental Power] ]**
 
@@ -12642,22 +12529,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 6.6 Common Adventurer Abilities
 
-### **[** ⑤ **Folklore Knowledge [Intelligence] ]**
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03331))_
-
-> **(Not retriable)** By the nature of their business, a bard is familiar with myths and folklore passed down in various regions, as well as ancient poetry. This is because telling these stories is an important part of their job. Also, some of these legends include things that can serve as clues for your adventures. For example, a saga that tells of a battle between a monster and a hero may contain information about the monster's weakness. Legends about the ancient kingdom can sometimes lead adventurers to ancient ruins.
-
-### **[** ④ **Spellsongs [Mental Power]]**
-
-- Musical instruments are _always_ required to sing spellsongs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03334))_
-- A bard can learn _one_ spellsong per skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03335))_
-- If the game master wants to provide the players with information in the form of ancient poems or folklore, please decide on a _rarity_ and use it as the target score when making a success roll check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03336))_
-
-### **Common Adventurer Abilities**
-
-### **6.6**
-
 - These abilities that any adventurer can acquire are called **common adventurer abilities** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03340))_
 - An average thief should be able to avoid taking any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
 - Those with the thief skill can reduce damage by using the _tumble_ ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
@@ -12676,6 +12547,18 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 
 > When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it.
+
+### **[** ⑤ **Folklore Knowledge [Intelligence] ]**
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03331))_
+
+> **(Not retriable)** By the nature of their business, a bard is familiar with myths and folklore passed down in various regions, as well as ancient poetry. This is because telling these stories is an important part of their job. Also, some of these legends include things that can serve as clues for your adventures. For example, a saga that tells of a battle between a monster and a hero may contain information about the monster's weakness. Legends about the ancient kingdom can sometimes lead adventurers to ancient ruins.
+
+### **[** ④ **Spellsongs [Mental Power]]**
+
+- Musical instruments are _always_ required to sing spellsongs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03334))_
+- A bard can learn _one_ spellsong per skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03335))_
+- If the game master wants to provide the players with information in the form of ancient poems or folklore, please decide on a _rarity_ and use it as the target score when making a success roll check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03336))_
 
 ### **[** ① **Riding [Agility] ]**
 
@@ -13049,8 +12932,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## Chapter 7: General Skills
 
-### **Chapter 7: General Skills**
-
 ## 7.2 Merchant Skill
 
 ### **Notes on General Skills**
@@ -13121,6 +13002,8 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 7.3 Craftsman Skill
 
+- In _Sword World_ , all production is done by hand. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03449))_
+
 ### **[** ① **Value Check [Intelligence]]**
 
 - **(Not retriable)** This is almost the same ability as the thief and sage skills' _treasure appraisal_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03441))_
@@ -13157,12 +13040,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03445))_
 
 > Of course, if you take the stock at a lower price or sell it at a higher price than the regular price, your profit will increase, so this ability is important.
-
-### **Craftsman Skill**
-
-### **7.3**
-
-- In _Sword World_ , all production is done by hand. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03449))_
 
 ### **[** ① **Craft [Dexterity] ]**
 
@@ -13283,10 +13160,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 > Game masters should not set a very high difficulty level for using this _ability_ unless you're trying to catch an extremely difficult animal.
 
 ## 7.6 Sailor Skill
-
-### **Sailor Skill**
-
-### **7.6**
 
 - The **sailor skill** is the skill needed to operate a ship. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03505))_
 - Also, even if you are not a professional sailor, those who sail as a hobby or a side job still possess this skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03505))_
@@ -14044,6 +13917,7 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Therefore, the quickest way to wake up your friends is to kick them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
 - Therefore, the quickest way to wake up your friends is to kick them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
 - The spirit magic _Sleep_ is still an exception. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03694))_
+- Sometimes there will have to be combat between monsters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03697))_
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
 
@@ -14060,12 +13934,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03694))_
 
 > Unless the magic itself is broken by _Dispel Magic_ or other magic belonging to _mind_ , they'll never wake up.
-
-### **10.6**
-
-### **Combat Between Monsters**
-
-- Sometimes there will have to be combat between monsters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03697))_
 
 ### 《 **Hit Checks** 》
 
@@ -14084,8 +13952,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 > If the attack hits, roll 2D.
 
 ## Chapter 11: Notes on Magic
-
-### **Chapter 11: Notes on Magic**
 
 ## 11.2 Dark Magic
 
@@ -14953,10 +14819,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 11.3 Dragon Roar Magic
 
-### **Dragon Roar Magic**
-
-### **11.3**
-
 - There are no restrictions when using dragon roar magic spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03957))_
 - Even if _Silence_ or _Mute_ spirit magic is cast on you, you can still use dragon roar magic! _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03957))_
 - **Dragon roar magic** are runes used by those who worship dragons as guardians rather than gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03958))_
@@ -15581,6 +15443,8 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 11.4 Acquiring Rune Master Skills and Increasing Levels
 
+- Here is a summary of how to acquire and increase the level of each rune master skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04122))_
+
 ### **9th Level Dragon Roar Magic List**
 
 ### **[ Summon Lesser Dragon ]**
@@ -15627,12 +15491,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04117))_
 
 > At this time, the caster must make a success roll to determine a final score.
-
-### **11.4**
-
-### **Acquiring Rune Master Skills and Increasing Levels**
-
-- Here is a summary of how to acquire and increase the level of each rune master skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04122))_
 
 ### 《 **Sorcerer Skill** 》
 
@@ -15688,27 +15546,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 - From there, you will have to increase your priest skill again. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04136))_
 - levels they had and acquire 1st level in a new god's priest skill level instead. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04136))_
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04136))_
-
-> If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.
-
-### 《 **Dark Priest Skill** 》
-
-- However, many of the dark gods that dark priests believe in have no temples, and most dark priests will be those who have _awakened to faith_ by some occurrence. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04138))_
-- The method of acquiring and increasing the dark priest skill is almost the same as the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04138))_
-
-### 《 **Dragon Priest Skill** 》
-
-- This is only possible if you're part of a group of people who believe in dragons (mostly considered savages). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
-- Dragon priests are based on a unique belief in dragons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
-- This is only possible if you're part of a group of people who believe in dragons (mostly considered savages). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
-- The dragon priest skill is increased by spending experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04141))_
-
-### **11.5**
-
-### **Asking NPCs to Use Magic**
-
 - You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
 - In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
 - First, the game master must decide whether there are enough rune masters to do this. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04146))_
@@ -15724,6 +15561,10 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Of course, it would be difficult to ask a single rune master to do all sorts of things again and again, and if the adventurers conclusively incur an NPC's displeasure, no amount of money will make them say yes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04152))_
 - Priests are relatively easy to meet, but shamans and sorcerers are by no means easy to meet. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04152))_
 - magic use _fails_ , you do _not_ have to pay the remainder. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04153))_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04136))_
+
+> If the game master wishes, on the basis that you rebelled greatly against your old faith, they may require only half the normal experience points to increase your level until you reach your previous priest skill level.
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
 
@@ -15775,6 +15616,18 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 ```
 
 </details>
+
+### 《 **Dark Priest Skill** 》
+
+- However, many of the dark gods that dark priests believe in have no temples, and most dark priests will be those who have _awakened to faith_ by some occurrence. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04138))_
+- The method of acquiring and increasing the dark priest skill is almost the same as the priest skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04138))_
+
+### 《 **Dragon Priest Skill** 》
+
+- This is only possible if you're part of a group of people who believe in dragons (mostly considered savages). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
+- Dragon priests are based on a unique belief in dragons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
+- This is only possible if you're part of a group of people who believe in dragons (mostly considered savages). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04140))_
+- The dragon priest skill is increased by spending experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04141))_
 
 ### **Example:**
 
@@ -15840,13 +15693,7 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## Chapter 12: Various Checks
 
-### **Chapter 12: Various Checks**
-
 ## 12.1 Rules Regarding Language
-
-### **Rules Regarding Language**
-
-### **12.1**
 
 - There are not many races other than humans that have the habit of writing and reading. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04171))_
 - Language includes spoken words and written words. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04171))_
@@ -17068,26 +16915,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 12.3 Work Requests to NPCs
 
-### **[ Lignia Stone ]**
-
-### Rarity=12
-
-- This is an amber stone that comes from the body of the mythical beast lynx. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04513))_
-- If you crush, brew, and drink this stone, you will receive a +4 bonus on progression/healing checks for illnesses that affect the mind (such as dance macabre). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
-- If you crush, brew, and drink this stone, you will receive a +4 bonus on progression/healing checks for illnesses that affect the mind (such as dance macabre). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04512))_
-
-> Base Trade Value=12,000 gamels
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
-
-> One lignia stone harvested from one Lynx can provide three days worth of medicine for one adult, and the stone as well as the powder crushed from it can be stored semi-permanently.
-
-### **12.3**
-
-### **Work Requests to NPCs**
-
 - You found a beautiful gemstone and would like to have it forged into a ring. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04517))_
 - As you progress through your adventures, such things will happen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04517))_
 - Also, if there’s no one available to do this for you, there is of course no point in paying any amount of money. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
@@ -17122,13 +16949,25 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > If you don't have clients, you won't get paid (so just patiently wait for work at the adventurer shop, okay?).
 
+### **[ Lignia Stone ]**
+
+### Rarity=12
+
+- This is an amber stone that comes from the body of the mythical beast lynx. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04513))_
+- If you crush, brew, and drink this stone, you will receive a +4 bonus on progression/healing checks for illnesses that affect the mind (such as dance macabre). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
+- If you crush, brew, and drink this stone, you will receive a +4 bonus on progression/healing checks for illnesses that affect the mind (such as dance macabre). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04512))_
+
+> Base Trade Value=12,000 gamels
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04514))_
+
+> One lignia stone harvested from one Lynx can provide three days worth of medicine for one adult, and the stone as well as the powder crushed from it can be stored semi-permanently.
+
 ## Chapter 13: Monsters!
 
 ## 13.1 Types of Monsters
-
-### **Types of Monsters**
-
-### **13.1**
 
 - This is based on the types set by Laverna, the famous witch of Orphan, who compiled the _Natural History of Alecrast_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04531))_
 - The meaning of each type are as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04531))_
@@ -17658,8 +17497,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 13.2.2 Fae
 
-### **13.2.2 Fae**
-
 ### **[ Pixie ]**
 
 ### Monster Level=1
@@ -17831,8 +17668,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 > Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine).
 
 ## 13.2.3 Youma
-
-### **13.2.3 Youma**
 
 ### **[ Imp ]**
 
@@ -18007,8 +17842,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Leaders also often apply and use poison on their weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04762))_
 
 ## 13.2.4 Spirits
-
-### **13.2.4 Spirits**
 
 - Rarity=12 (However, a shaman always knows) Agility=18 Movement Speed=20 (air) Number=Solo to several Frequency=Rare Intellect=Almost none Reaction=Neutral to violent Attack Points=Disintegrate: Always hits Strike Points=Strike power 10, bonus damage 2 _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04766))_
 - Mental attack immunity Not affected by poison and illness Habitat=Near forests and swamps, or anywhere Languages=None Perception=Magic _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04768))_
@@ -18473,10 +18306,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > Strike Points=Evasion Points=14 (7) Defense Points=8
 
-### **13.2.5**
-
-### **Titans**
-
 ### **[ Yeti ]**
 
 - They are not very ferocious and do not actively attack humans, but they do seem to attack when they're hungry-- in cold areas with deep snow, it's not uncommon for them to be hungry and unable to find prey. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04883))_
@@ -18716,9 +18545,8 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 13.2.6 Mythical Beasts and Magical Beasts
 
-### **13.2.6**
-
-### **Mythical Beasts and Magical Beasts**
+- humans, and would rather die than be enslaved. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05034))_
+- However, if a human is recognized as a true hero, a pegasus will willingly let them ride on its back. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05034))_
 
 ### **[ Satyr ]**
 
@@ -19154,11 +18982,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05031))_
 
 > Habitat=Steep mountains, meadows Languages=None Perception=Five senses
-
-### 13.2.6 Mythical Beasts and Magical Beasts
-
-- humans, and would rather die than be enslaved. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05034))_
-- However, if a human is recognized as a true hero, a pegasus will willingly let them ride on its back. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05034))_
 
 ### **[ Head Displacer ]**
 
@@ -19799,14 +19622,34 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 13.2.7 Animals
 
-### **13.2.7 Animals**
-
 - Perception=Five senses (illumination) Wolves are carnivorous and usually act in packs of several to several dozen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05216))_
 - They systematically attack unsuspecting animals that are separated from their herd. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05216))_
 - They are also nocturnal, which means their activity is limited to the night. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05216))_
 - They are also nocturnal, which means their activity is limited to the night. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05216))_
 - Such wolves have greater morals than normal ones, and will fight to the death to protect their masters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05217))_
 - Rarely, wolf cubs are captured and sometimes domesticated as hunting dogs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05217))_
+- Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+- Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+- Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- At this time, the vampire bat's attack points become the target score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- Therefore, in order for the possessed opponent to attack the vampire bat in question, they will need a melee weapon that can be used at close range, such as a dagger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- Furthermore, if you attack a vampire bat that’s attached to a living creature, there is also a risk of accidentally hitting an ally. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- Therefore, in order for the possessed opponent to attack the vampire bat in question, they will need a melee weapon that can be used at close range, such as a dagger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+- Attacks made against a vampire bat while it’s in the air suffer a penalty of 2 due to the bat's keen perception plus the fact that it is flying. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05336))_
+- The footing inside this sand pit is extremely poor, so it’s impossible to escape on your own using normal methods (climbing). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
+- 3 meter depth opens up at the feet of the unfortunate prey, into which the prey will fall. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
+- The footing inside this sand pit is extremely poor, so it’s impossible to escape on your own using normal methods (climbing). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
+- Escaping from a giant antlion's large jaws requires a success roll using _adventurer level + strength bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
+- The giant antlion will attempt to bite down on its fallen prey with its large jaws. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
+- If it manages to bite, it’ll hold its grip firmly in place then stab its mouth which is a hollow needle into the prey’s body and suck out the body's fluids (this attack will hit automatically). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
+- Damage due to bloodsucking is strike power 10 plus bonus damage 5, and cannot be reduced by armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
+- If it manages to bite, it’ll hold its grip firmly in place then stab its mouth which is a hollow needle into the prey’s body and suck out the body's fluids (this attack will hit automatically). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
+- Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
+- If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
+- If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05213))_
 
@@ -19819,6 +19662,22 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05215))_
 
 > Languages=None
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+
+> Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05333))_
+
+> Attack Points=Fangs:9 (2) Strike Points=5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+
+> Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+
+> Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
 
 ### **[ Giant Rat ]**
 
@@ -20297,36 +20156,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > Monster Level=2 Rarity=10 Agility=19 Movement Speed=20 Number=One to several Frequency=Rare Intellect=Animal Reaction=Hunger-based
 
-### 13.2.7 Animals
-
-- Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
-- Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
-- Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- At this time, the vampire bat's attack points become the target score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- Therefore, in order for the possessed opponent to attack the vampire bat in question, they will need a melee weapon that can be used at close range, such as a dagger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- Furthermore, if you attack a vampire bat that’s attached to a living creature, there is also a risk of accidentally hitting an ally. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- Therefore, in order for the possessed opponent to attack the vampire bat in question, they will need a melee weapon that can be used at close range, such as a dagger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-- Attacks made against a vampire bat while it’s in the air suffer a penalty of 2 due to the bat's keen perception plus the fact that it is flying. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05336))_
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-
-> Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Th
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05333))_
-
-> Attack Points=Fangs:9 (2) Strike Points=5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
-
-> Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-
-> Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
-
 ### **Giant Bat**
 
 - Rarity=9 Agility=18 Movement Speed=20 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:10 (3)/Talon:10 (3)/ Talon:10 (3) Strike Points=6/6/6 Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=11/10 (3) Mental Points/Resistance=6/10 (3) Special Abilities=Capture Opponent's attack is -2 _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05339))_
@@ -20687,20 +20516,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - The giant antlion is a creature about 3 meters long total, with most of the front half of its body occupied by its large jaws, a cone-shaped tail on the back half of its body, and three pairs of spatulashaped legs that bend forward at the joints, making it suitable for burrowing underground. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05433))_
 - When a creature passes directly above it, the giant antlion will sense its footsteps and suddenly dive further underground (with its tail). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05433))_
 
-### 13.2.7 Animals
-
-- The footing inside this sand pit is extremely poor, so it’s impossible to escape on your own using normal methods (climbing). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
-- 3 meter depth opens up at the feet of the unfortunate prey, into which the prey will fall. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
-- The footing inside this sand pit is extremely poor, so it’s impossible to escape on your own using normal methods (climbing). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05436))_
-- Escaping from a giant antlion's large jaws requires a success roll using _adventurer level + strength bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
-- The giant antlion will attempt to bite down on its fallen prey with its large jaws. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
-- If it manages to bite, it’ll hold its grip firmly in place then stab its mouth which is a hollow needle into the prey’s body and suck out the body's fluids (this attack will hit automatically). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
-- Damage due to bloodsucking is strike power 10 plus bonus damage 5, and cannot be reduced by armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
-- If it manages to bite, it’ll hold its grip firmly in place then stab its mouth which is a hollow needle into the prey’s body and suck out the body's fluids (this attack will hit automatically). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05437))_
-- Those with the ranger skill may be able to sense an attack from this dangerous creature with their _sense danger_ ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
-- If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
-- If you succeed, you'll be able to sense the hole just before it opens under your feet and jump to the side. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05438))_
-
 ### **Imago**
 
 - Rarity=14 Agility=18 Movement Speed=10/30 (air) Number=One Frequency=Very Rare Intellect=Low Reaction=Neutral Attack Points=Arms:13 (6) Strike Points=7 Evasion Points=13 (6) Defense Points=7 Life Points/Resistance=15/13 (6) Mental Points/Resistance=10/12 (5) Special Abilities=None in particular Habitat=Deserts (Kahn Desert only) Languages=None Perception=Five senses _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05441))_
@@ -21040,26 +20855,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 - The killer octopus is an aggressive octopus with tentacles up to 2 meters long. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05538))_
 - A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
-
-### **Giant Octopus**
-
-- Monster Level=7 Rarity=12 Agility=10 Movement Speed=5/20 (water) Number=One Frequency=Very Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle (8 times):16 (9) Strike Points=16 Evasion Points=12 (5) Defense Points=9 Life Points/Resistance=50/21 (14) Mental Points/Resistance=10/14 (7) Special Abilities=Strangling Habitat=Seas _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05541))_
-- The giant octopus is almost legendary, feared by fishermen and sailors as the devil of the sea. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
-- Its tentacles, which are up to 10 meters long, can entangle boats and sink them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
-- If you deal 5 or more points of damage (14 or more points of damage if defense points are taken into account) to a giant octopus with a bladed weapon, you’ll have cut off one of its tentacles, and the octopus’ number of attacks will be reduced by one. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05544))_
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
-
-> A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05542))_
-
-> Languages=None Perception=Five senses
-
-### **13.2.8**
-
-### **Plants**
-
 - Creeping trees do not have roots underground, but move around on the ground using their roots like imitation toes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05551))_
 - They then use their tentacle-like branches to prey on animals that approach. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05551))_
 - They then use their tentacle-like branches to prey on animals that approach. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05551))_
@@ -21092,6 +20887,21 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05552))_
 
 > Since it is a plant, it is weak against fire attacks, and when using spells such as _Fire Weapon_ and _Fire Bolt_ , you gain a +10 bonus to the usual strike power of spells.
+
+### **Giant Octopus**
+
+- Monster Level=7 Rarity=12 Agility=10 Movement Speed=5/20 (water) Number=One Frequency=Very Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle (8 times):16 (9) Strike Points=16 Evasion Points=12 (5) Defense Points=9 Life Points/Resistance=50/21 (14) Mental Points/Resistance=10/14 (7) Special Abilities=Strangling Habitat=Seas _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05541))_
+- The giant octopus is almost legendary, feared by fishermen and sailors as the devil of the sea. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
+- Its tentacles, which are up to 10 meters long, can entangle boats and sink them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
+- If you deal 5 or more points of damage (14 or more points of damage if defense points are taken into account) to a giant octopus with a bladed weapon, you’ll have cut off one of its tentacles, and the octopus’ number of attacks will be reduced by one. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05544))_
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
+
+> A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05542))_
+
+> Languages=None Perception=Five senses
 
 ### **[ Ethnoa ]**
 
@@ -21285,6 +21095,21 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Since alraune are an artificial variety, they have no fertility. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05592))_
 - If raised with the blood of a ruthless criminal, a ruthless alraune will be born. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05592))_
 - Also, they do not have a weakness to fire, which is the weakness of plant-type monsters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05592))_
+- A dullahan carries a one-handed sword and no shield, but it's no wonder, as it carries its own head in its spare hand! _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05720))_
+- A dullahan is a ghost that appears as a headless knight wearing armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05720))_
+- A Dullahan rides a chariot pulled by a headless horse (the horse is called a headless horse and the chariot is called a chariot of dullahan) and appears late at night at the door of the house it's aiming for. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05721))_
+- A Dullahan rides a chariot pulled by a headless horse (the horse is called a headless horse and the chariot is called a chariot of dullahan) and appears late at night at the door of the house it's aiming for. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05721))_
+- However, one (?) dullahan has only one chariot and two headless horses, and if these are defeated, they cannot be summoned again. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05722))_
+- A dullahan can summon its chariot and headless horse at any time and in any place. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05722))_
+- However, one (?) dullahan has only one chariot and two headless horses, and if these are defeated, they cannot be summoned again. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05722))_
+- You can avoid a death prophesied by a dullahan by killing it the first or second time it appears. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
+- It’s no use for those who have received the prophecy of death to move away. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
+- A dullahan can only be wounded by silver or magical weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
+- A dullahan can only be wounded by silver or magical weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
+
+> The dullahan will always appear at the place you moved to (or to one of the places moved to, if the residents have split up and moved to different places), even if it's on the sea, or in a room that's been walled off on all sides.......
 
 ### **[ Bloody Petal ]**
 
@@ -21360,10 +21185,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05612))_
 
 > After combat, they must make a life force resistance roll against target score 16, and those who fail will then have mushrooms growing all over their bodies after 24 hours.
-
-### **13.2.9**
-
-### **Undead**
 
 ### **[ Buau Zombie ]**
 
@@ -21813,24 +21634,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 - Monster Level=7 Rarity=14 Agility=16 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Weapon:14 (7) Strike Points=14 Evasion Points=15 (8) Defense Points=12 Life Points/Resistance=20/16 (9) Mental Points/Resistance=20/16 (9) Special Abilities=Summon chariot Summon headless horse Normal weapon immunity Not affected by poison and illness Sleepless Damage from healing magic Habitat=Unknown, appears in towns Languages=Regional Perception=Pseudo _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05717))_
 
-### 13.2.9 Undead
-
-- A dullahan carries a one-handed sword and no shield, but it's no wonder, as it carries its own head in its spare hand! _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05720))_
-- A dullahan is a ghost that appears as a headless knight wearing armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05720))_
-- A Dullahan rides a chariot pulled by a headless horse (the horse is called a headless horse and the chariot is called a chariot of dullahan) and appears late at night at the door of the house it's aiming for. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05721))_
-- A Dullahan rides a chariot pulled by a headless horse (the horse is called a headless horse and the chariot is called a chariot of dullahan) and appears late at night at the door of the house it's aiming for. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05721))_
-- However, one (?) dullahan has only one chariot and two headless horses, and if these are defeated, they cannot be summoned again. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05722))_
-- A dullahan can summon its chariot and headless horse at any time and in any place. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05722))_
-- However, one (?) dullahan has only one chariot and two headless horses, and if these are defeated, they cannot be summoned again. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05722))_
-- You can avoid a death prophesied by a dullahan by killing it the first or second time it appears. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
-- It’s no use for those who have received the prophecy of death to move away. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
-- A dullahan can only be wounded by silver or magical weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
-- A dullahan can only be wounded by silver or magical weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05724))_
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05723))_
-
-> The dullahan will always appear at the place you moved to (or to one of the places moved to, if the residents have split up and moved to different places), even if it's on the sea, or in a room that's been walled off on all sides.......
-
 ### **Chariot of Dullahan**
 
 - Rarity=14 Agility=16 Movement Speed=30/30 (air) Number=One Frequency=Rare Intellect=None Reaction=Adversarial Attack Points=Ram:14 (7) Strike Points=15 Evasion Points=13 (6) Defense Points=8 Life Points/Resistance=30/15 (8) Mental Points/Resistance=-/12 (5) Special Abilities=Normal weapon immunity _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05727))_
@@ -22174,9 +21977,21 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 13.2.10 Magical Creatures
 
-### **13.2.10**
+- body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
+- Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
+- However, if their resistance roll is successful, the strike power becomes 0. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
+- Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
+- A gizmo cannot be attacked by weapons at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+- Since they have no mind, _Sleep Cloud_ and other types of magic that affect the mind are ineffective _Cold-type_ , _wind cutter-type_ , _stone-type_ , and _poison gas-type_ damage magic is also ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+- A gizmo's gas is highly flammable, so fire-type magic is particularly effective, and will add +10 to normal strike power during a check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
 
-### **Magical Creatures**
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
+
+> body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
+
+> Only _fire-type_ , _electric-type_ , _pure energytype_ , and _explosion-type_ magic attacks can deal damage.
 
 ### **[ Simulacra ]**
 
@@ -22568,24 +22383,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > Even if a gizmo's attack hits, it does not deal damage by itself.
 
-### 13.2.10 Magical Creatures
-
-- body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
-- Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
-- However, if their resistance roll is successful, the strike power becomes 0. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
-- Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
-- A gizmo cannot be attacked by weapons at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
-- Since they have no mind, _Sleep Cloud_ and other types of magic that affect the mind are ineffective _Cold-type_ , _wind cutter-type_ , _stone-type_ , and _poison gas-type_ damage magic is also ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
-- A gizmo's gas is highly flammable, so fire-type magic is particularly effective, and will add +10 to normal strike power during a check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
-
-> body of a gizmo is poisonous gas, so those hit by it will inhale it and suffer damage resulting from a strike power 10 strike roll plus 3 points of bonus damage. However, if their resistance roll is successful, the strike power becomes 0. Armor cannot protect against gas, only adventurer level or magical protection can reduce the damage.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05933))_
-
-> Only _fire-type_ , _electric-type_ , _pure energytype_ , and _explosion-type_ magic attacks can deal damage.
-
 ### **Gas Stalker**
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05932))_
@@ -22835,10 +22632,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 - _pure energy-type_ damage magic is effective, and a critical _can_ occur. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05996))_
 
-### **13.2.11**
-
-### **Daemons/Underworld Creatures**
-
 ### **[ Aetherbeast ]**
 
 ### Monster Level=4
@@ -23076,10 +22869,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > A doppelganger who has copied the abilities and memories of an opponent can use _all_ of their abilities.
 
-### **13.2.12**
-
-### **Humans**
-
 ### **[ Normal Man ]**
 
 - with no fighting ability are drawn into combat. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06069))_
@@ -23214,10 +23003,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 > Monster Level=5
 
-### **13.2.13**
-
-### **Other**
-
 ### **[ Lycanthrope ]**
 
 - When in beast form, they cannot act intelligently, but rather follow their instincts and go on killing sprees. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06119))_
@@ -23255,6 +23040,9 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Monster Level=4 Rarity=8 Agility=16 Movement Speed=24 Number=One to several Frequency=Rare Intellect=Animal/Human Reaction=Adversarial Attack Points=Fangs:11 (4) Strike Points=12 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/13 (6) Mental Points/Resistance=14/12 (5) Special Abilities=Normal weapon immunity after shifting into wolf Infect (Intensity 7) Habitat=Human villages, forests _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06125))_
 
 ## 13.3 Converting Character Data to Monster Data
+
+- There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
+- Using the rules presented here, a game master can convert data created as a _character_ into the format of a _monster_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
 
 ### Languages=Regional
 
@@ -23296,13 +23084,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06142))_
 
 > Monster Level=3
-
-### **13.3**
-
-### **Converting Character Data to Monster Data**
-
-- There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
-- Using the rules presented here, a game master can convert data created as a _character_ into the format of a _monster_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
 
 ### **[ 1. The number of times the game master has to roll dice during combat will be drastically reduced ]**
 
@@ -23450,11 +23231,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - The monster level of a monster can also be used as a scale to express the size of an event ( _Table 13-3: Monster Level/Event Scale Comparisons_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06186))_
 - A 3rd level dark priest is a level that would be _too spicy for a novice adventurer_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06187))_
 - In the case of NPCs as enemies, consider them to be two levels greater. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06187))_
-
-### **13.6**
-
-### **Handling Monster Special Abilities**
-
 - Some monsters have numerous special abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06190))_
 
 ### **13.6.1**
@@ -26923,10 +26699,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 15.1 Four Types of Experience Points
 
-### **Four Types of Experience Points**
-
-### **15.1**
-
 - If you were to become one of the thieves' transport partners without realizing they’re stolen goods, your mission would _not_ be accomplished. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07037))_
 - In _Sword World RPG_ , there are four ways to gain experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07038))_
 - These are **accomplishing missions** , **fighting monsters** , **success rolls** , and **special bonuses** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07038))_
@@ -26980,13 +26752,7 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## Chapter 16: Optional Rules for Combat
 
-### **Chapter 16: Optional Rules for Combat**
-
 ## 16.1 Combat in Which Monsters Roll Dice
-
-### **16.1**
-
-### **Combat in Which Monsters Roll Dice**
 
 - In _Sword World RPG_ , the monster side (game master) rarely rolls dice during combat. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07062))_
 - This reduces the burden on the game master and allows him or her to focus on other parts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07062))_
@@ -27041,12 +26807,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 > The game master should roll 2D and add it to the number in parenthesis.
 
 ## 16.2 Weapon and Armor Modifiers
-
-### **16.2**
-
-### **Weapon and Armor Modifiers**
-
-### **16.2 Weapon and Armor Modifiers**
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07080))_
 
@@ -27183,6 +26943,7 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - likely you are to deliver a powerful strike. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
 - Weapons classified as _swords_ , _axes_ , _spears_ , _bows_ , and _crossbows_ suffer +1 to this critical target against _metal armor_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
 - In other words, these sharp weapons are less likely to deliver a powerful strike due to the armor’s metal. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07100))_
+- In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
 
 ### **Number of Projectile Shots**
 
@@ -27310,12 +27071,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 ```
 
 </details>
-
-### **16.3**
-
-### **Projectile Bonus Damage**
-
-- In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
 
 ## 16.5 Combat Options
 
@@ -27900,10 +27655,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 
 ## 16.9 Special Weapons
 
-### **Special Weapons**
-
-### **16.9**
-
 - There are halberds, pole axes, lancers, partisans, glaives, pikes...... _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07268))_
 - **Pole Weapons** A pole weapon is a general term for a two-handed weapon that has a long handle with a metal blade attached to the end. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07268))_
 - If he or she fails, they will be swept off their feet and fall _prone_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07269))_
@@ -28428,10 +28179,6 @@ projection_coverage: projection-coverage-7f81dd88aea04e36@12b555a4366c28d1
 - Aging begins at the age of 100. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07415))_
 
 ## 18.3 Rules for Destroying Structures
-
-### **18.3**
-
-### **Rules for Destroying Structures**
 
 - However, if you specifically want to handle this numerically, please use the following rules. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
 - Basically, characters cannot destroy walls or doors, but if you really want to implement something like this, it’s fine for the game master to make decisions using his or her own common sense (“You have an ax, so you should be able to break down a wooden door”). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_

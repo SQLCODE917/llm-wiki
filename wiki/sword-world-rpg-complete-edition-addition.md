@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-addition
 page_kind: concept
-summary: Addition: 62 statement(s) and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Addition: 62 statement(s) and 24 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-addition@0aaabb964805b51d3fc5b353a1606eaa
+projection_coverage: topic-sword-world-rpg-complete-edition-addition@874bef960aa0def7beff66be4f699d2d
 ---
 
 # Addition
@@ -222,6 +222,26 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 ### Technical atom 10
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02000))_
+
+> By casting this spell, the caster can turn any target that fails (or does not attempt) to resist into an animal of their choice. The targets of this spell can only be animals and plants created by the hands of the gods, including humans, fae, and youma, and do not include mythical beasts, magical beasts, titans, etc. Since they're not living things, undead and magical creatures are also impossible. Creatures that have already been transformed are also included in this limitation. The target will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02002))_
+
+> Base Mental Power Cost=35
+
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02000))_
+
+> By casting this spell, the caster can turn any target that fails (or does not attempt) to resist into an animal of their choice. The targets of this spell can only be animals and plants created by the hands of the gods, including humans, fae, and youma, and do not include mythical beasts, magical beasts, titans, etc. Since they're not living things, undead and magical creatures are also impossible. Creatures that have already been transformed are also included in this limitation. The target will
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02003))_
+
+> Distance=Caster
+
+### Technical atom 12
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02622))_
 
 > Additionally, as long as you remain within the area of effect, you will be slammed to the ground by the earthquake every round, suffering strike power 20 damage. However, those who successfully resist will only suffer strike power 10 and no criticals. This earthquake causes all normal houses within the spell's area of effect to collapse (with the exception of strong buildings such as castles and forts, or those with magical protection), and trees to fall down. Depending on the situation, falling
@@ -230,7 +250,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > Please note that you may only make a resistance roll check against this spell once per round in which the spell is cast.
 
-### Technical atom 11
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03720))_
 
@@ -240,7 +260,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > Here is a list of common dark magic that any priest of the wicked gods can use.
 
-### Technical atom 12
+### Technical atom 14
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04337))_
 
@@ -250,7 +270,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > If treatment is delayed, you may remain in a coma for several days after the poison wears off.
 
-### Technical atom 13
+### Technical atom 15
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04404))_
 
@@ -260,7 +280,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > immediately after the illness's progression check), and you can only make one success roll.
 
-### Technical atom 14
+### Technical atom 16
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04945))_
 
@@ -270,7 +290,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > Sleepless Habitat=Underground labyrinths Languages=None Perception=Five senses
 
-### Technical atom 15
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04945))_
 
@@ -280,7 +300,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > By sticking with this lower body, a ceiling hanger can also move along walls and ceilings.
 
-### Technical atom 16
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04945))_
 
@@ -290,7 +310,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > From then on, in each round, a death check must be made when applying damage (even if it's 0).
 
-### Technical atom 17
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
 
@@ -300,7 +320,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > If other allies want to help, they must attack and be prepared to hit their own ally.
 
-### Technical atom 18
+### Technical atom 20
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
 
@@ -310,7 +330,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
 
-### Technical atom 19
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -320,7 +340,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > **Table 1-3: Determining Sub-Ability Scores**
 
-### Technical atom 20
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -357,7 +377,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 </details>
 
-### Technical atom 21
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -367,7 +387,7 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 > **Table 1-4: Average Ability Scores by Race**
 
-### Technical atom 22
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -403,28 +423,36 @@ What [[sword-world-rpg-complete-edition]] covers about addition:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (3 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements and technical atoms (5 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared technical atoms (8 shared atom(s))
 - [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (6 shared atom(s))
 - [[sword-world-rpg-complete-edition-human]] - shared technical atoms (5 shared atom(s))
 - [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-target]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-effect]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-move]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-starting-experience]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-strike]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements (1 shared statement(s))
 
 ## Source
 

@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-human
 page_kind: concept
-summary: Human: 66 statement(s) and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Human: 66 statement(s) and 31 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-human@9c97997a4ec0e7a74d4f1194af1e25db
+projection_coverage: topic-sword-world-rpg-complete-edition-human@b3b00127bc57033e59488fd44cd278b1
 ---
 
 # Human
@@ -176,6 +176,146 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 ### Technical atom 10
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04953))_
+
+> Deelas live on the coast, are beautiful, and can speak. They are neutral toward humans. Deelas mate with human males and lay eggs. At this time, deelas use the ability to _charm_ by singing. Anyone who hears a deela's song must make a mental power resistance roll against target score 10. If you fail, you will be charmed and must do what the deela tells you to do.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04955))_
+
+> Monster Level=3 Rarity=18
+
+### Technical atom 11
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04953))_
+
+> Deelas live on the coast, are beautiful, and can speak. They are neutral toward humans. Deelas mate with human males and lay eggs. At this time, deelas use the ability to _charm_ by singing. Anyone who hears a deela's song must make a mental power resistance roll against target score 10. If you fail, you will be charmed and must do what the deela tells you to do.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04956))_
+
+> Agility=16 Movement Speed=6/30 (air) Number=One Frequency=Very Rare Intellect=Human Reaction=Neutral Attack Points=Talons:11 (4) Strike Points=9
+
+### Technical atom 12
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04960))_
+
+> Usually, only female individuals are born among harpies. However, very rarely a male is born. A flock blessed with a male can produce offspring without the use of a human male, so that male is made their king. In such groups, they do not try to charm humans and avoid interaction as much as possible, because they do not need to use humans and do not want their king's existence to be known.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04958))_
+
+> Mental Points/Resistance=12/11 (4) Special Abilities=None in particular Habitat=Coasts
+
+### Technical atom 13
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04960))_
+
+> Usually, only female individuals are born among harpies. However, very rarely a male is born. A flock blessed with a male can produce offspring without the use of a human male, so that male is made their king. In such groups, they do not try to charm humans and avoid interaction as much as possible, because they do not need to use humans and do not want their king's existence to be known.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04959))_
+
+> Languages=Harpy, regional Perception=Five senses
+
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04972, source-range-870a16bc-04977))_
+
+> Mermen have tamed the hippocampus and use them as riding horses. Habitat=Ruins, underground labyrinths Languages=Regional Perception=Five senses (darkvision) Medusa is a magical beast that takes the form of a human woman, with dozens of snakes growing out of her head instead of hair, and a face with the magical power to petrify humans. They dwell mainly in ruins and underground labyrinths, and find wicked pleasure in turning visitors into stone statues. Anyone who encounters a medusa must succee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04975))_
+
+> Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison
+
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05000))_
+
+> A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05001))_
+
+> If you find and eat henruda in advance, you can neutralize the cockatrice's magical power and prevent being petrified.
+
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05000))_
+
+> A cockatrice is a flightless bird about the size of a human with the legs and tail of a lizard. Its beak has the ability to petrify living creatures, and anyone hit by a cockatrice (regardless of whether they're dealt damage or not) must make a life force resistance roll against target score 11. If you fail, you will instantly turn to stone.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05003))_
+
+> Monster Level=4 Rarity=13 Agility=12 Movement Speed=12/12 (water) Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Fangs (6 times):11 (4)
+
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
+
+> In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level. Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05016))_
+
+> Monster Level=5
+
+### Technical atom 18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
+
+> In combat, a Chimera can attack two targets at the same time, using its lion fangs and the snake fangs at the tip of its tail. It cannot attack the same target twice in one turn. The snake's fangs contain a neurotoxin that paralyzes the speech center, rendering those affected unable to speak or cast spells for one day. The black goat head on its back can also cast dark magic up to 5th level. Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05017))_
+
+> Rarity=13 Agility=18 Movement Speed=15 Number=One
+
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
+
+> Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (5)/Claw: 13(6)/ Claw: 13 (6) Strike Points=8/7/7 Evasion Points=15 (8) Defense Points=8 Life Points/Resistance=12/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) 5th level spirit magic (Magic Intensity/Magic Power=15/8) Mental attack immunity Not affected by poison and illness Habitat=Meadows, provided it’s Kaios Island (I
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05019))_
+
+> They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
+
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05028, source-range-870a16bc-05032))_
+
+> The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05031))_
+
+> Habitat=Steep mountains, meadows Languages=None Perception=Five senses
+
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05043))_
+
+> The head displacer looks like a severed human head with four vermillion tentacles growing out of its neck. When it remains alone, it moves by floating in the air. When it finds prey (humans), it'll first attack with its tentacles. The tentacles are usually about 15 cm long, but can extend up to 4 meters. If a tentacle attack hits, resolve it as strangling (see p. 236). If all 4 tentacles entangle its opponent, it'll also attack with its fangs. If the opponent becomes disabled, it'll devour their
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05044))_
+
+> If the tentacles are not clear, those with the sage skill cannot use the _monster check_ ability.
+
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05084))_
+
+> Unicorns have high intellect and can communicate in silent spirit, but will only trust human (or elf or half-elf) virgin girls. Even in the unfortunate case of a fight, a unicorn will not do anything that would harm a human maiden. However, if anyone other than the maiden tries to touch it, the unicorn will issue a warning, and if you still do not listen, it’ll get angry and attack.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05086))_
+
+> Unicorns can also use spirit magic unrelated to the spirit of life, but at this time their shaman skill is only 6th level.
+
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05099))_
+
+> Habitat=Ruins, underground labyrinths Languages=Regional, low ancient Perception=Five senses (darkvision) The sphinx has the body of a lion with the wings of an eagle and a beautiful human-like face. They have an extremely long lifespan and have accumulated a great deal of knowledge. Although they can cast ancient magic, they will not use magic recklessly or challenge you to a fight unless something really bad happens.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05100))_
+
+> If approached in a friendly manner, the sphinx may play a game of riddles to determine the intelligence of their opponent.
+
+### Technical atom 24
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05306))_
 
 > When attacking a human, a giant mantis will use its sickles to capture their arms and attempt to block their movement. Anyone hit by a giant mantis's attack will have one arm trapped. You must roll the dice to determine which arm is trapped. Roll 1D, and if it's 1-3, it'll be the right arm, but if it's 4-6 it'll be the left arm. Ancient magic cannot be used while one arm is trapped. Also, on subsequent rounds, you cannot escape from the giant mantis, so your evasion points will be -4. In order t
@@ -184,7 +324,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 > On the other hand, while capturing a human's arm with one sickle, a giant mantis can only use its other sickle to attack, and since it cannot move freely, its evasion points will be reduced by -2.
 
-### Technical atom 11
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05349))_
 
@@ -194,7 +334,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 > Evasion Points=10 (3) Defense Points=7 Life Points/Resistance=22/12 (5) Mental Points/Resistance=7/10 (3) Special Abilities=Strangling Habitat=Forests Languages=None Perception=Five senses
 
-### Technical atom 12
+### Technical atom 26
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
 
@@ -231,7 +371,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 </details>
 
-### Technical atom 13
+### Technical atom 27
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
 
@@ -264,7 +404,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 </details>
 
-### Technical atom 14
+### Technical atom 28
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
 
@@ -295,7 +435,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 </details>
 
-### Technical atom 15
+### Technical atom 29
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -332,7 +472,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 </details>
 
-### Technical atom 16
+### Technical atom 30
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -365,7 +505,7 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 </details>
 
-### Technical atom 17
+### Technical atom 31
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
@@ -395,28 +535,38 @@ What [[sword-world-rpg-complete-edition]] covers about human:
 
 ## Related pages
 
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements and technical atoms (7 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
 - [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared technical atoms (6 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared technical atoms (5 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared technical atoms (5 shared atom(s))
 - [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-game]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-15]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-18]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-skill]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-stone-servant]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-human-290df33d]] - source section (3 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-1-how-to-read-the-monster-catalog-humans-75fee418]] - source section (2 shared statement(s), 1 shared atom(s))
 
 ## Source
 

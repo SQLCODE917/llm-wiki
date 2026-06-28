@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-spirit
 page_kind: concept
-summary: Spirit: 87 statement(s) and 34 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Spirit: 87 statement(s) and 46 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-spirit@7747648dae6ed31f428f32d14d3170df
+projection_coverage: topic-sword-world-rpg-complete-edition-spirit@bc4bca4f2a85c3bae37a822767b66949
 ---
 
 # Spirit
@@ -147,6 +147,56 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 ### Technical atom 5
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02221, source-range-870a16bc-02224))_
+
+> To use this spell, there must be a fire (or a controlled salamander) large enough to burn a torch within at least 10 meters around the caster. A line of fire up to 10 meters will reach out from that fire and catch the target. This magical fire will always hit, and the target will suffer strike power 10 damage (strike power 0 and no criticals if they successfully resist). Brownies are spirits that live in old houses and castles that were built over 50 years ago. They may clean the house while the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02223))_
+
+> Base Mental Power Cost=3 Distance=Inside a building Area=Inside a building Duration=While the caster is asleep Effect=Do chores around the house Type=Expansion=Resist=None
+
+### Technical atom 6
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02339))_
+
+> This is a spell that heals the body by borrowing the power of an unknown spirit of life. When you cast this spell, it can completely heal any wound instantly, but it cannot regenerate a severed arm or leg. Also, although this spell can only be cast _by_ women, you _can_ choose a man as the _target_ of the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02342))_
+
+> Base Mental Power Cost=9 Distance=10 meters
+
+### Technical atom 7
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02408))_
+
+> This is a spell that allows you to control plants by borrowing the power of ent, which is the greater spirit of plants. This allows you to control all plants at will. It is also effective against plant-type monsters, but if the opponent has a mental point resistance score, you must make a success roll using magic power as the baseline score and attain a final score greater than or equal that resistance score. This spell can also move plants that normally wouldn't move, allowing them to directly 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02409))_
+
+> Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack immunity, Weak to fire
+
+### Technical atom 8
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02424))_
+
+> Dryad is a plant spirit which at the same time has the nature of a mind spirit. This spell has the effect of using the dryad's mind spirit power to charm the target. At this time, if both your intentions are _mutual_ , you can make them follow your will in the form of a proposal, and if your intentions are _not_ mutual, you will deprive them of hostility. In either case, the target under the spell will attempt to protect the caster from danger. If the target successfully resists this spell, they
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02427))_
+
+> Base Mental Power Cost=25
+
+### Technical atom 9
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02452))_
+
+> Distance=30 meters Area=10 x 3 x 0.5 meters Duration=1 hour Effect=Put up a wall using spirits
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02453))_
+
+> There are also walls that you cannot pass through, walls that deal damage even if you force your way
+
+### Technical atom 10
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02455, source-range-870a16bc-02460))_
 
 > You cannot build a wall where other materials such as rocks, trees, or living things already exist. Furthermore, once a wall is put up, it _cannot_ be moved or removed by the caster's will. The types of spells are divided by the lesser spirits that control them, and the walls created by each spell each have different characteristics depending on their spirit power. With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collect
@@ -155,7 +205,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Type=Target score, damage (Pure energytype) Counters (Negates): _Shade_ , _Spirit Wall: Shade_ Countered (Negated) By: _Shade_ , _Spirit Wall: Shade_
 
-### Technical atom 6
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02460))_
 
@@ -165,7 +215,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Countered (Overpowered) By: _Darkness_ Expansion=Final score, duration, distance, target volume, damage certainty Resist=Reduced effect
 
-### Technical atom 7
+### Technical atom 12
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02460))_
 
@@ -175,7 +225,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > The wall of light cannot be destroyed by physical methods or damage magic, but when the dark spirit shade collides with the wall, a round hole about 50 cm Counters (Negates): _Spirit Wall: Undine/Frau_ in diameter will be created.
 
-### Technical atom 8
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02460))_
 
@@ -185,7 +235,47 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Expansion=Final score, duration, distance, target volume, damage Resist=Reduced effect
 
-### Technical atom 9
+### Technical atom 14
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
+
+> By borrowing the power of the dark spirit, you can put up a wall of darkness. A wall of darkness is a collection of shades. The wall itself is pitch black, and the space up to 5 meters on either side of the wall will also be closed in darkness. Your gaze cannot pass through a wall of darkness. However, it has no means of preventing the passage of objects, so you can pass through it without any resistance. However, if you touch or try to pass through the wall, you will destroy the shades that for
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02480))_
+
+> The wall of darkness cannot be destroyed by physical methods or damage magic, but when the spirit of light will-o-wisp collides with the wall, a
+
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
+
+> By borrowing the power of the dark spirit, you can put up a wall of darkness. A wall of darkness is a collection of shades. The wall itself is pitch black, and the space up to 5 meters on either side of the wall will also be closed in darkness. Your gaze cannot pass through a wall of darkness. However, it has no means of preventing the passage of objects, so you can pass through it without any resistance. However, if you touch or try to pass through the wall, you will destroy the shades that for
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02482))_
+
+> (Salamander/Fire Spirit) Type=Target score, damage (Fire-type) 91
+
+### Technical atom 16
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02490))_
+
+> By borrowing the power of the wind spirit, you can create a wall of surging storms. When you chant the spell, a wild gust of wind comes out of nowhere and begins swirling in the same place. The storm wall is transparent, so it won't block your gaze, but all projectile attacks, including those from _Shoot Arrow_ , will be deflected in front of you by the sylphs lurking in the wind. Those that touch the wall or try to pass through it must attempt to resist. If you succeed, you will be able to pass
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02493))_
+
+> Type=Target score
+
+### Technical atom 17
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02560))_
+
+> This is a spell used to summon and control lesser spirits, and is an advanced _Control Spirit_ spell. By casting this spell, a caster can control the spirits according to their own will. Same as _Control Spirit_ , spirits that have been successfully summoned and controlled can be sealed in items, etc. It is the same as _Control Spirit_ in that it requires a three-hour ritual, only one type of spirit can be controlled at a time, and it is possible to communicate in silent spirit. However, the big
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02563))_
+
+> Base Mental Power Cost=32 Distance=30 meters Area=1 x 1 x 2 meters
+
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02805))_
 
@@ -195,7 +285,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Type=Counters (Overpowers): _Heat Protective Circle, Spirit Wall: Frau_ Countered (Overpowered) By: _Heat Protective Circle, Spirit Wall: Frau_ Expansion=Duration, Area Resist=None
 
-### Technical atom 10
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02805))_
 
@@ -205,7 +295,17 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Those within the area of effect can subtract 2 points from this kind of damage.
 
-### Technical atom 11
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04042))_
+
+> When casting this spell, the caster must specify one type of spirit that controls nature. The spirits that control nature are gnome, undine, salamander, sylph, frau, will-o-wisp, and shade. While this spell's effect lasts, the caster nullifies _all_ attacks from the specified spirit. In addition, spirit magic that uses the specified spirit as its source of power will be similarly nullified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04045))_
+
+> Base Mental Power Cost=20
+
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04402))_
 
@@ -215,7 +315,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > If you succeed, the _depth_ of the illness is reduced by 1 and you can make an additional success roll.
 
-### Technical atom 12
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04404))_
 
@@ -225,7 +325,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > immediately after the illness's progression check), and you can only make one success roll.
 
-### Technical atom 13
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04475))_
 
@@ -235,7 +335,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > **[ Red Cap ]** Symptoms=Going berserk, change in body shape Rarity=12
 
-### Technical atom 14
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04475))_
 
@@ -245,7 +345,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > If you make eye contact with someone who has the illness, a progression check must be made
 
-### Technical atom 15
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04536))_
 
@@ -255,7 +355,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
 
-### Technical atom 16
+### Technical atom 26
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04538))_
 
@@ -265,7 +365,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > They may also use spirit magic or dark magic.
 
-### Technical atom 17
+### Technical atom 27
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04803))_
 
@@ -275,7 +375,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > To do so, you must make a successful life force resistance roll.
 
-### Technical atom 18
+### Technical atom 28
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04813))_
 
@@ -285,7 +385,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > You can also deal damage to a Salamander by pouring water on it.
 
-### Technical atom 19
+### Technical atom 29
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04866))_
 
@@ -295,7 +395,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Monster Level=6
 
-### Technical atom 20
+### Technical atom 30
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04874))_
 
@@ -305,7 +405,17 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Strike Points=Evasion Points=14 (7) Defense Points=8
 
-### Technical atom 21
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04901))_
+
+> Rarity=11 Agility=12 Movement Speed=24 Number=One to several Frequency=Rare Intellect=Low Reaction=Adversarial Attack Points=Arm:14 (7) Strike Points=13 Evasion Points=13 (6) Defense Points=11 Life Points/Resistance=21/15 (8) Mental Points/Resistance=14/14 (7) Special Abilities=Camouflage (Sense target score=13) Habitat=Caves, hills Languages=Giant Perception=Five senses (darkvision) Trolls are titans with rock-like skin. They have very low intellect and rarely use tools. They live in caves and 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04902))_
+
+> Their body color is the same as a rock surface, and if you are careless, you may mistake one for a huge rock.
+
+### Technical atom 32
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04923))_
 
@@ -315,7 +425,17 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > If you can't communicate, they may threaten you.
 
-### Technical atom 22
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04927))_
+
+> Frost giants have a deep connection with the spirit power of ice, and can use spirit magic sourced from the power of ice spirits (frau, fenrir) up to 8th level. Also, they will not suffer any damage at all from cold-type attacks.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04929))_
+
+> Monster Level=15
+
+### Technical atom 34
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05007))_
 
@@ -325,7 +445,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Habitat=Water
 
-### Technical atom 23
+### Technical atom 35
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -335,7 +455,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Monster Level=5
 
-### Technical atom 24
+### Technical atom 36
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -345,7 +465,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Rarity=13 Agility=18 Movement Speed=15 Number=One
 
-### Technical atom 25
+### Technical atom 37
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
 
@@ -355,7 +475,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
 
-### Technical atom 26
+### Technical atom 38
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05084))_
 
@@ -365,7 +485,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Unicorns can also use spirit magic unrelated to the spirit of life, but at this time their shaman skill is only 6th level.
 
-### Technical atom 27
+### Technical atom 39
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05087))_
 
@@ -375,7 +495,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > If a unicorn loses its horn due to overuse of magic or it being cut off, it will never grow back again.
 
-### Technical atom 28
+### Technical atom 40
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06906))_
 
@@ -385,7 +505,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Enchanter=Kaiber, "The Sorcerer of Gravity" Form=A 1.5m diameter golden plate Base Trade Price=160,000 gamels Powers=Negates gravity
 
-### Technical atom 29
+### Technical atom 41
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06910))_
 
@@ -395,7 +515,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Rarity=12
 
-### Technical atom 30
+### Technical atom 42
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06914, source-range-870a16bc-06917))_
 
@@ -405,7 +525,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Enchanter=Faye, “The One Who Wears the Wind” Form=Cloak
 
-### Technical atom 31
+### Technical atom 43
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06914, source-range-870a16bc-06917))_
 
@@ -415,7 +535,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Base Trade Price=24,000 gamels Powers=Reduces fall speed
 
-### Technical atom 32
+### Technical atom 44
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07028))_
 
@@ -425,7 +545,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > Powers=Can use a magic spell only once
 
-### Technical atom 33
+### Technical atom 45
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07026, source-range-870a16bc-07028))_
 
@@ -435,7 +555,7 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 > If a sorcerer reads it, he or she can use the magic written on it only _once_ .
 
-### Technical atom 34
+### Technical atom 46
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07027, source-range-870a16bc-07029))_
 
@@ -448,24 +568,44 @@ What [[sword-world-rpg-complete-edition]] covers about spirit:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (28 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-wisp-light-spirit]] - narrower topic (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - narrower topic (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-shade-dark-spirit]] - narrower topic (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-gnome-earth-spirit]] - narrower topic
+- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] - narrower topic
+- [[sword-world-rpg-complete-edition-leprechaun-mind-spirit]] - narrower topic
+- [[sword-world-rpg-complete-edition-recall-spirit]] - narrower topic
+- [[sword-world-rpg-complete-edition-sylph-wind-spirit]] - narrower topic
+- [[sword-world-rpg-complete-edition-undine-water-spirit]] - narrower topic
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (28 shared statement(s), 26 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 13 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (4 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (5 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (4 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (4 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (5 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (4 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (6 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity-18]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-recovering-mental-power]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-fail]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements (6 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-breath]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements (2 shared statement(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-rarity]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-13-spirit-magic-and-the-shaman-skill-other-spirits-b3f2794d]] - source section (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-13-monsters-13-1-types-of-monsters-spirits-4c67a0d2]] - source section (6 shared statement(s))
 
 ## Source
 

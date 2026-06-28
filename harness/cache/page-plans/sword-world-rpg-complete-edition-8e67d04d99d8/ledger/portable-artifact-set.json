@@ -4,14 +4,14 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "claim-ledger-artifact",
-      "target_artifact_fingerprint": "4cbf2f9bee4ac3dc",
+      "target_artifact_fingerprint": "b03ad457a87b0143",
       "target_artifact_id": "claim-ledger-238a28c9469e41a5"
     },
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "document-structure-artifact",
-      "target_artifact_fingerprint": "dfc4cc769a9ed809",
-      "target_artifact_id": "document-structure-7ef13762a0cbe0f6"
+      "target_artifact_fingerprint": "899dc9b96cc8f8dd",
+      "target_artifact_id": "document-structure-a64f0a83f0a3778f"
     },
     {
       "artifact_format": "canonical-json",
@@ -28,8 +28,8 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "projection-coverage-artifact",
-      "target_artifact_fingerprint": "12b555a4366c28d1",
-      "target_artifact_id": "projection-coverage-7f81dd88aea04e36"
+      "target_artifact_fingerprint": "2d7ece141b754810",
+      "target_artifact_id": "projection-coverage-3fe8896f760e01a4"
     },
     {
       "artifact_format": "canonical-json",
@@ -40,10 +40,10 @@
     {
       "artifact_format": "canonical-json",
       "portable_artifact_kind": "section-grounded-plan-artifact",
-      "target_artifact_fingerprint": "4d5d08fb8d9dc878",
-      "target_artifact_id": "section-grounded-plan-6264be13bc1188f3"
+      "target_artifact_fingerprint": "85d484573f4e8dae",
+      "target_artifact_id": "section-grounded-plan-d26e45cf88fa10da"
     }
   ],
-  "portable_artifact_set_fingerprint": "c77b5b7507d3ce36",
-  "portable_artifact_set_id": "portable-artifact-set-c77b5b7507d3ce36"
+  "portable_artifact_set_fingerprint": "f3b3ab53ebf7f9b2",
+  "portable_artifact_set_id": "portable-artifact-set-f3b3ab53ebf7f9b2"
 }

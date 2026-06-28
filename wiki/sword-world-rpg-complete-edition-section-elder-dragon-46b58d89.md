@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-elder-dragon-46b58d89
 page_kind: source
-summary: **Elder Dragon**: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Elder Dragon: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-elder-dragon-46b58d89@e04c2ac68e45515238dcb68d83b87402
+projection_coverage: section-sword-world-rpg-complete-edition-section-elder-dragon-46b58d89@904226fb315f36818b5d97cbd966ef24
 ---
 
-# **Elder Dragon**
+# Elder Dragon
 
 From [[sword-world-rpg-complete-edition]].
 

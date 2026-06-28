@@ -36,6 +36,7 @@ from llmwiki.domain.ledger.quality_catalog import (
     default_severity_policy,
 )
 from llmwiki.domain.ledger.renderer import render_source_page
+from llmwiki.domain.ledger.section_navigation import section_links_by_topic
 from llmwiki.domain.ledger.section_pages import build_section_pages
 from llmwiki.domain.ledger.section_planning import build_section_grounded_plan
 from llmwiki.domain.ledger.source_coverage import build_source_coverage
@@ -202,13 +203,24 @@ def build_source_ledger(
             ),
         )
     else:
-        topic_pages = build_topic_pages(topics, ledger, page_id, source_locator, today)
+        related_section_links = section_links_by_topic(
+            section_plan, structure, source_page_id=page_id
+        )
+        topic_pages = build_topic_pages(
+            topics,
+            ledger,
+            page_id,
+            source_locator,
+            today,
+            related_pages_by_topic=related_section_links,
+        )
         topic_pages += build_section_pages(
             ledger,
             structure,
             source_page_id=page_id,
             source_locator=source_locator,
             today=today,
+            topics=topics,
         )
         wiki_page = build_source_wiki_page(
             page_id,

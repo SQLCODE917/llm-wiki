@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-5-escape-from-grapple-e0706bc9
 page_kind: source
-summary: **5. Escape from Grapple**: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 5. Escape from Grapple: 11 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-5-escape-from-grapple-e0706bc9@3ac2ae6a08b898a794a2828e1accf3e7
+projection_coverage: section-sword-world-rpg-complete-edition-section-5-escape-from-grapple-e0706bc9@4b73d33931ce5d92970346057d0cbb77
 ---
 
-# **5. Escape from Grapple**
+# 5. Escape from Grapple
 
 From [[sword-world-rpg-complete-edition]].
 

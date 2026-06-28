@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-ram-a51701d2
 page_kind: source
-summary: **Ram**: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Ram: 8 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-ram-a51701d2@722ae4ec4a1778cff887a55dd94a69d6
+projection_coverage: section-sword-world-rpg-complete-edition-section-ram-a51701d2@c295db7f4616d183273078b62ad0d521
 ---
 
-# **Ram**
+# Ram
 
 From [[sword-world-rpg-complete-edition]].
 

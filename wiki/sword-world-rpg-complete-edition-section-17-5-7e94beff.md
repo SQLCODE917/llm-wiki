@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-17-5-7e94beff
 page_kind: source
-summary: **17.5**: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 17.5: 18 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-7e94beff@16712252224bb1744b991857e5f9058b
+projection_coverage: section-sword-world-rpg-complete-edition-section-17-5-7e94beff@654fcb1a03405c7b7919be1df04d76d9
 ---
 
-# **17.5**
+# 17.5
 
 From [[sword-world-rpg-complete-edition]].
 

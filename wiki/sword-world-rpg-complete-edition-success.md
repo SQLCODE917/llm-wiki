@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-success
 page_kind: concept
-summary: Success: 62 statement(s) and 50 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Success: 62 statement(s) and 52 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-success@06934e9c91ada837aedfd64c7ffc3475
+projection_coverage: topic-sword-world-rpg-complete-edition-success@1a3752ac68246aac2a1f1ba40aa5a794
 ---
 
 # Success
@@ -112,6 +112,16 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 ### Technical atom 4
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00614, source-range-870a16bc-00617))_
+
+> The players' dice rolls are otherwise the same. They will be told the baseline score, roll 2D, and modify it with any bonuses or penalties to find a final score. The game master does not say whether the result is _the action succeeded_ or _the action failed_ , because a difficulty check is made when the success or failure of the action is _not known_ to the characters. They must only answer as much as the character can tell from their successes and failures. Let's show how the game master's answ
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00616))_
+
+> final score ≥ target score (difficulty + 2D) → **action succeeds** final score < target score (difficulty + 2D) → **action fails**
+
+### Technical atom 5
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00624))_
 
 > However, a player is given only _one_ criteria to determine whether the success roll they made for a difficulty check is a success or a failure.
@@ -120,7 +130,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If the roll is as high as 10 or 11, the success roll is considered to have a very high chance of success.
 
-### Technical atom 5
+### Technical atom 6
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00626))_
 
@@ -130,7 +140,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If the roll is low, such as 3 or 4, then there's a high chance that the success roll has failed.
 
-### Technical atom 6
+### Technical atom 7
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01429))_
 
@@ -140,7 +150,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > With these spells, you can add +1 to your final score for each day you perform the ritual.
 
-### Technical atom 7
+### Technical atom 8
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01436))_
 
@@ -150,7 +160,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > The game master may also use a ritual to perform other expansions (targets, area, volume, etc.) that the magic would allow.
 
-### Technical atom 8
+### Technical atom 9
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02560))_
 
@@ -160,7 +170,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Base Mental Power Cost=32 Distance=30 meters Area=1 x 1 x 2 meters
 
-### Technical atom 9
+### Technical atom 10
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02622))_
 
@@ -170,7 +180,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Please note that you may only make a resistance roll check against this spell once per round in which the spell is cast.
 
-### Technical atom 10
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02731))_
 
@@ -180,7 +190,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Base Mental Power Cost=5
 
-### Technical atom 11
+### Technical atom 12
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02731))_
 
@@ -190,7 +200,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Distance=10 meters Area=A space with a 5 meter radius Duration=18 rounds Effect=Affects undead in various ways Type=-
 
-### Technical atom 12
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02996))_
 
@@ -200,7 +210,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If you cast this spell, you can turn a failure into a success only _once_ on a success roll.
 
-### Technical atom 13
+### Technical atom 14
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03069, source-range-870a16bc-03071))_
 
@@ -210,7 +220,17 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
 
-### Technical atom 14
+### Technical atom 15
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03097, source-range-870a16bc-03101))_
+
+> a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03099))_
+
+> If you are using a flute as your instrument, you can use this spellsong, but you _cannot_ make anyone take any actions.
+
+### Technical atom 16
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03150))_
 
@@ -220,7 +240,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Even if you don't have these tools, you can try using wire, etc.
 
-### Technical atom 15
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03152))_
 
@@ -230,7 +250,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > You can attempt to pick a lock normally even if you are equipped with armor that exceeds the restriction.
 
-### Technical atom 16
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
 
@@ -240,7 +260,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later.
 
-### Technical atom 17
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03174))_
 
@@ -250,7 +270,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > The game master may add modifiers depending on the surroundings and the opponent's situation.
 
-### Technical atom 18
+### Technical atom 20
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03205))_
 
@@ -260,7 +280,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If successful, the presence of a trap will be sensed at a perilous point, and the game master must inform the player of the type of trap.
 
-### Technical atom 19
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03209))_
 
@@ -270,7 +290,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If you fail, the trap will be activated if the dice roll was 6 or more beneath the target score.
 
-### Technical atom 20
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03300))_
 
@@ -280,7 +300,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If the research is successful, the sage may make another success roll.
 
-### Technical atom 21
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03302))_
 
@@ -290,7 +310,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Alternatively, if it is something that can be used in combat, such as weapons or armor, other adventurers may purchase it.
 
-### Technical atom 22
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
 
@@ -300,7 +320,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll.
 
-### Technical atom 23
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
@@ -310,7 +330,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > You can only wear cloth or at most soft leather.
 
-### Technical atom 24
+### Technical atom 26
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
@@ -320,7 +340,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If you succeed, you will be able to take it off and rise to the surface.
 
-### Technical atom 25
+### Technical atom 27
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
 
@@ -330,7 +350,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink.
 
-### Technical atom 26
+### Technical atom 28
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
 
@@ -340,7 +360,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
 
-### Technical atom 27
+### Technical atom 29
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03607, source-range-870a16bc-03609))_
 
@@ -350,7 +370,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > The standard for deciding is _whether the character can tell if the action succeeded or failed_ .
 
-### Technical atom 28
+### Technical atom 30
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03616))_
 
@@ -360,7 +380,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If the difficulty is clear, let's say it's 3, players can infer that they can only fail when the game master rolls an 11 or 12.
 
-### Technical atom 29
+### Technical atom 31
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03630, source-range-870a16bc-03633))_
 
@@ -370,7 +390,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Of course, even if that's the case, stay true to the roll of your dice.
 
-### Technical atom 30
+### Technical atom 32
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03633))_
 
@@ -380,7 +400,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Of course, game masters may set other modifiers (such as -3) at their discretion.
 
-### Technical atom 31
+### Technical atom 33
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03635))_
 
@@ -405,7 +425,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 32
+### Technical atom 34
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157, source-range-870a16bc-04161))_
 
@@ -415,7 +435,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
 
-### Technical atom 33
+### Technical atom 35
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
 
@@ -425,7 +445,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If you do this, the resurrection will be successful unless you roll double ones.
 
-### Technical atom 34
+### Technical atom 36
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
 
@@ -435,7 +455,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If you don't have clients, you won't get paid.
 
-### Technical atom 35
+### Technical atom 37
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05529))_
 
@@ -445,7 +465,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If you fail, you will get caught in the web and attract the attention of the giant webspinner.
 
-### Technical atom 36
+### Technical atom 38
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05574))_
 
@@ -455,7 +475,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move.
 
-### Technical atom 37
+### Technical atom 39
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07230))_
 
@@ -465,7 +485,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 > If an area aim is declared against other monsters, the game master should refer to these and use common sense when making decisions.
 
-### Technical atom 38
+### Technical atom 40
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
 
@@ -522,7 +542,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 39
+### Technical atom 41
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -575,7 +595,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 40
+### Technical atom 42
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 
@@ -624,7 +644,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 41
+### Technical atom 43
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 
@@ -657,7 +677,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 42
+### Technical atom 44
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07708))_
 
@@ -686,7 +706,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 43
+### Technical atom 45
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 
@@ -709,7 +729,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 44
+### Technical atom 46
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07712))_
 
@@ -732,7 +752,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 45
+### Technical atom 47
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -757,7 +777,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 46
+### Technical atom 48
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
@@ -796,7 +816,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 47
+### Technical atom 49
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
@@ -827,7 +847,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 48
+### Technical atom 50
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -854,7 +874,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 49
+### Technical atom 51
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -911,7 +931,7 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 </details>
 
-### Technical atom 50
+### Technical atom 52
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
@@ -941,27 +961,43 @@ What [[sword-world-rpg-complete-edition]] covers about success:
 
 ## Related pages
 
+- [[sword-world-rpg-complete-edition-success-roll]] - narrower topic (10 shared statement(s), 8 shared atom(s))
 - [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (7 shared statement(s), 18 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (3 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (6 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (15 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (4 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (3 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (3 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (6 shared statement(s), 15 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (3 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (4 shared statement(s), 10 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (15 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (3 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (3 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-equipment-restriction-not-retriable]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-equipment-restriction]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared technical atoms (12 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared technical atoms (12 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (12 shared atom(s))
 - [[sword-world-rpg-complete-edition-adventure]] - shared technical atoms (11 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (8 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared technical atoms (7 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared technical atoms (5 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-sailor-skill-ability-table]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-thief-skill]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-hunter-skill]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-merchant-skill]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-target-score]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-duration-instant]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-strike]] - shared statements (1 shared statement(s))
 
 ## Source

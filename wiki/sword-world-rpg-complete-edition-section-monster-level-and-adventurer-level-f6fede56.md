@@ -1,18 +1,23 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-monster-level-and-adventurer-level-f6fede56
 page_kind: source
-summary: **Monster Level and Adventurer Level**: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Monster Level and Adventurer Level: 7 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-and-adventurer-level-f6fede56@b27ff7c8971b8a075c0932ceb059bc56
+projection_coverage: section-sword-world-rpg-complete-edition-section-monster-level-and-adventurer-level-f6fede56@0c2968285a153779af83d9a16ad27691
 ---
 
-# **Monster Level and Adventurer Level**
+# Monster Level and Adventurer Level
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-13-5-7f669699]] - broader source section
+- [[sword-world-rpg-complete-edition-section-13-5-monster-level-and-adventurer-level-9ec6b156]] - same source heading
 
 ## Statements
 

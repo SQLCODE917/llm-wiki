@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-who-knows-lost-spell-a90fc9a9
 page_kind: source
-summary: **Who Knows Lost Spell**: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Who Knows Lost Spell: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-who-knows-lost-spell-a90fc9a9@0dc124aca7ad02781f7d4824ae2ef2f7
+projection_coverage: section-sword-world-rpg-complete-edition-section-who-knows-lost-spell-a90fc9a9@e222ebf90328fa35d4c27a6fba198834
 ---
 
-# **Who Knows Lost Spell**
+# Who Knows Lost Spell
 
 From [[sword-world-rpg-complete-edition]].
 

@@ -1,16 +1,16 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-arm-aim-4fd76ad5
 page_kind: source
-summary: **Arm Aim**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Arm Aim: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-arm-aim-4fd76ad5@be716e72ea45c6d544a2132b584931db
+projection_coverage: section-sword-world-rpg-complete-edition-section-arm-aim-4fd76ad5@f6643641d6446527cafd87f528f625e3
 ---
 
-# **Arm Aim**
+# Arm Aim
 
 From [[sword-world-rpg-complete-edition]].
 

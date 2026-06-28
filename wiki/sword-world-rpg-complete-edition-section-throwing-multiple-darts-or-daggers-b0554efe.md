@@ -1,18 +1,22 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-b0554efe
 page_kind: source
-summary: **Throwing Multiple Darts or Daggers**: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Throwing Multiple Darts or Daggers: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-b0554efe@5edc3ae13b8e0047627cc7391272bc66
+projection_coverage: section-sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-b0554efe@27d972105f95d181fa62bad47b7a0166
 ---
 
-# **Throwing Multiple Darts or Daggers**
+# Throwing Multiple Darts or Daggers
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-16-7-3841a91c]] - broader source section
 
 ## Statements
 

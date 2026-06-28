@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-power
 page_kind: concept
-summary: Power: 205 statement(s) and 87 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Power: 205 statement(s) and 133 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-power@e99a431628bf1bbc1582f2cc52cffebc
+projection_coverage: topic-sword-world-rpg-complete-edition-power@1c134ec17aa663e1f20df117496a2741
 ---
 
 # Power
@@ -225,6 +225,16 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 ### Technical atom 1
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00837))_
+
+> Attack power is calculated with the following formula:
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00838))_
+
+> If a weapon hits, it’ll sometimes deal more damage than normal.
+
+### Technical atom 2
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00898, source-range-870a16bc-00901))_
 
 > On the table, look at the column where the **key number** equals your character's _strike power_ . For example, if your character's strike power is 14, you only need to look at key number column 14. The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_ . That's the **base damage** . This process is called a **strike roll** .
@@ -233,7 +243,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > **Table 4-2: Rating Table, Key Number Column 14**
 
-### Technical atom 2
+### Technical atom 3
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00898))_
 
@@ -243,7 +253,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > The player should then roll 2D.
 
-### Technical atom 3
+### Technical atom 4
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00901, source-range-870a16bc-00905))_
 
@@ -253,7 +263,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Now that he’s hit the goblin, Ducard II must determine how much damage his strike dealt.
 
-### Technical atom 4
+### Technical atom 5
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00963, source-range-870a16bc-00966))_
 
@@ -263,7 +273,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > **Table 4-3: Rating Table, Key Number Column 7**
 
-### Technical atom 5
+### Technical atom 6
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01262))_
 
@@ -273,7 +283,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If the side casting the magic rolls double sixes, _no_ _one_ can resist, except for those who _also_ roll double sixes.
 
-### Technical atom 6
+### Technical atom 7
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
 
@@ -283,7 +293,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones.
 
-### Technical atom 7
+### Technical atom 8
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
 
@@ -293,7 +303,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > The character cannot regain consciousness unless they recover their mental power to _1 point or more_ in some way.
 
-### Technical atom 8
+### Technical atom 9
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
 
@@ -303,7 +313,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Even if magic _fails_ , such as by rolling double ones or being resisted by the opponent, a character must _still_ consume their mental power, same as if they had actually used the magic.
 
-### Technical atom 9
+### Technical atom 10
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
 
@@ -342,7 +352,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 10
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
 
@@ -352,7 +362,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > You can also increase it by a fraction, such as x1.5, in which case the fraction is _rounded up_ when determining the multiplier for mental power consumed.
 
-### Technical atom 11
+### Technical atom 12
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01316))_
 
@@ -362,7 +372,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > You can also increase it by a fraction, such as x1.5, in which case the fraction is _rounded up_ when determining the multiplier for mental power consumed.
 
-### Technical atom 12
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
@@ -372,7 +382,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even more damage, same as in weapon combat.
 
-### Technical atom 13
+### Technical atom 14
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01361, source-range-870a16bc-01363))_
 
@@ -382,7 +392,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Most magic of the **damage** type can still deal damage even if it's resisted by the target, only with a reduced effect.
 
-### Technical atom 14
+### Technical atom 15
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
@@ -392,7 +402,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Also, even magic of the _damage_ type may in rare cases take no effect if resisted.
 
-### Technical atom 15
+### Technical atom 16
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01518))_
 
@@ -402,7 +412,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If you apply it to a projectile such as a bow, everything fired from it will gain +5 to strike power, which makes it effective against monsters that normal weapons cannot affect.
 
-### Technical atom 16
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01565))_
 
@@ -412,7 +422,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Resist=None
 
-### Technical atom 17
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01674))_
 
@@ -422,7 +432,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Base Mental Power Cost=15
 
-### Technical atom 18
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
 
@@ -432,7 +442,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > **Table 5-2: Familiars**
 
-### Technical atom 19
+### Technical atom 20
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
 
@@ -463,7 +473,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 20
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01820))_
 
@@ -473,7 +483,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Effect=Negate any one of the four major spirit powers Type=Target score Expansion=Final score, duration, distance, area
 
-### Technical atom 21
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01820))_
 
@@ -483,7 +493,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Resist=None
 
-### Technical atom 22
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01908))_
 
@@ -493,7 +503,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Base Mental Power Cost=24
 
-### Technical atom 23
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01908))_
 
@@ -503,7 +513,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Distance=10 meters
 
-### Technical atom 24
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02176))_
 
@@ -513,7 +523,87 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Those who can use these runes can communicate with any spirit.
 
-### Technical atom 25
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02201))_
+
+> 1. Magic cannot be used (if you're attempting to use magic at a later action order during the round, you must cancel your action) 2. A -1 penalty to attack power (points) and evasion speed (points) 3. Spells that require focus cannot be maintained
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02203))_
+
+> Base Mental Power Cost=3
+
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02201))_
+
+> 1. Magic cannot be used (if you're attempting to use magic at a later action order during the round, you must cancel your action) 2. A -1 penalty to attack power (points) and evasion speed (points) 3. Spells that require focus cannot be maintained
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02204))_
+
+> Distance=10 meters Area=10 liters of water
+
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02221, source-range-870a16bc-02224))_
+
+> To use this spell, there must be a fire (or a controlled salamander) large enough to burn a torch within at least 10 meters around the caster. A line of fire up to 10 meters will reach out from that fire and catch the target. This magical fire will always hit, and the target will suffer strike power 10 damage (strike power 0 and no criticals if they successfully resist). Brownies are spirits that live in old houses and castles that were built over 50 years ago. They may clean the house while the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02223))_
+
+> Base Mental Power Cost=3 Distance=Inside a building Area=Inside a building Duration=While the caster is asleep Effect=Do chores around the house Type=Expansion=Resist=None
+
+### Technical atom 29
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02265))_
+
+> _Fanaticism_ heightens the courage of the target to the utmost limit, completely erasing fear. As a result, you can add a +2 bonus to attack power (points) in combat. However, as a recoil, you will suffer a -2 penalty to your evasion speed (points). This can be cast on others, but the target can attempt to resist the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02264))_
+
+> Base Mental Power Cost=6 Distance=10 meters Area=One Duration=18 rounds Effect=Raise the target's spirit Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect
+
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02288))_
+
+> This spell causes a gnome to rise from the earth and wrap itself around the lower body of a target that fails to resist, sealing their movement. As a result, the target will be unable to move and must take a -2 penalty to attack power (points) and evasion speed (points).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02286))_
+
+> Expansion=Final score, duration, distance, targets
+
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02288))_
+
+> This spell causes a gnome to rise from the earth and wrap itself around the lower body of a target that fails to resist, sealing their movement. As a result, the target will be unable to move and must take a -2 penalty to attack power (points) and evasion speed (points).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02287))_
+
+> Resist=Negated effect
+
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02339))_
+
+> This is a spell that heals the body by borrowing the power of an unknown spirit of life. When you cast this spell, it can completely heal any wound instantly, but it cannot regenerate a severed arm or leg. Also, although this spell can only be cast _by_ women, you _can_ choose a man as the _target_ of the spell.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02342))_
+
+> Base Mental Power Cost=9 Distance=10 meters
+
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02408))_
+
+> This is a spell that allows you to control plants by borrowing the power of ent, which is the greater spirit of plants. This allows you to control all plants at will. It is also effective against plant-type monsters, but if the opponent has a mental point resistance score, you must make a success roll using magic power as the baseline score and attain a final score greater than or equal that resistance score. This spell can also move plants that normally wouldn't move, allowing them to directly 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02409))_
+
+> Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack immunity, Weak to fire
+
+### Technical atom 34
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02419))_
 
@@ -523,7 +613,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc.
 
-### Technical atom 26
+### Technical atom 35
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02424))_
 
@@ -533,7 +623,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Base Mental Power Cost=25
 
-### Technical atom 27
+### Technical atom 36
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02439))_
 
@@ -543,7 +633,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Area=A space with a 5 meter radius Duration=18 rounds Effect=Protect yourself from projectile attacks
 
-### Technical atom 28
+### Technical atom 37
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02439))_
 
@@ -553,7 +643,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Type=Countered (Negated) By: _Shoot Arrow_ Expansion=Duration, distance, area Resist=None
 
-### Technical atom 29
+### Technical atom 38
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02439))_
 
@@ -563,7 +653,77 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > The spell's power does not have to affect targets that the caster does not desire, even if they are within the area of effect.
 
-### Technical atom 30
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02455, source-range-870a16bc-02460))_
+
+> You cannot build a wall where other materials such as rocks, trees, or living things already exist. Furthermore, once a wall is put up, it _cannot_ be moved or removed by the caster's will. The types of spells are divided by the lesser spirits that control them, and the walls created by each spell each have different characteristics depending on their spirit power. With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collect
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02458))_
+
+> Type=Target score, damage (Pure energytype) Counters (Negates): _Shade_ , _Spirit Wall: Shade_ Countered (Negated) By: _Shade_ , _Spirit Wall: Shade_
+
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02460))_
+
+> With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collection of will-o-wisps themselves. Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. The glow from the wall is so intense that you can't look directly at it (so your gaze won't pass through it). The wall of light has no way to prevent objects from passing through it, so you can pass through it without any resistance.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02459))_
+
+> Countered (Overpowered) By: _Darkness_ Expansion=Final score, duration, distance, target volume, damage certainty Resist=Reduced effect
+
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02460))_
+
+> With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collection of will-o-wisps themselves. Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. The glow from the wall is so intense that you can't look directly at it (so your gaze won't pass through it). The wall of light has no way to prevent objects from passing through it, so you can pass through it without any resistance.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02461))_
+
+> The wall of light cannot be destroyed by physical methods or damage magic, but when the dark spirit shade collides with the wall, a round hole about 50 cm Counters (Negates): _Spirit Wall: Undine/Frau_ in diameter will be created.
+
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02460))_
+
+> With the help of the spirit of light, you can build a dazzling wall of light. The wall of light is not a solid entity, but a collection of will-o-wisps themselves. Therefore, the space on either side of the wall of light is illuminated with a brightness like midday. The glow from the wall is so intense that you can't look directly at it (so your gaze won't pass through it). The wall of light has no way to prevent objects from passing through it, so you can pass through it without any resistance.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02463))_
+
+> Expansion=Final score, duration, distance, target volume, damage Resist=Reduced effect
+
+### Technical atom 43
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
+
+> By borrowing the power of the dark spirit, you can put up a wall of darkness. A wall of darkness is a collection of shades. The wall itself is pitch black, and the space up to 5 meters on either side of the wall will also be closed in darkness. Your gaze cannot pass through a wall of darkness. However, it has no means of preventing the passage of objects, so you can pass through it without any resistance. However, if you touch or try to pass through the wall, you will destroy the shades that for
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02480))_
+
+> The wall of darkness cannot be destroyed by physical methods or damage magic, but when the spirit of light will-o-wisp collides with the wall, a
+
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02479))_
+
+> By borrowing the power of the dark spirit, you can put up a wall of darkness. A wall of darkness is a collection of shades. The wall itself is pitch black, and the space up to 5 meters on either side of the wall will also be closed in darkness. Your gaze cannot pass through a wall of darkness. However, it has no means of preventing the passage of objects, so you can pass through it without any resistance. However, if you touch or try to pass through the wall, you will destroy the shades that for
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02482))_
+
+> (Salamander/Fire Spirit) Type=Target score, damage (Fire-type) 91
+
+### Technical atom 45
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02490))_
+
+> By borrowing the power of the wind spirit, you can create a wall of surging storms. When you chant the spell, a wild gust of wind comes out of nowhere and begins swirling in the same place. The storm wall is transparent, so it won't block your gaze, but all projectile attacks, including those from _Shoot Arrow_ , will be deflected in front of you by the sylphs lurking in the wind. Those that touch the wall or try to pass through it must attempt to resist. If you succeed, you will be able to pass
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02493))_
+
+> Type=Target score
+
+### Technical atom 46
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
 
@@ -573,7 +733,17 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Base Mental Power Cost=35 Distance=30 meters Area=One Duration=Instant
 
-### Technical atom 31
+### Technical atom 47
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02622))_
+
+> Additionally, as long as you remain within the area of effect, you will be slammed to the ground by the earthquake every round, suffering strike power 20 damage. However, those who successfully resist will only suffer strike power 10 and no criticals. This earthquake causes all normal houses within the spell's area of effect to collapse (with the exception of strong buildings such as castles and forts, or those with magical protection), and trees to fall down. Depending on the situation, falling
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02623))_
+
+> Please note that you may only make a resistance roll check against this spell once per round in which the spell is cast.
+
+### Technical atom 48
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02748))_
 
@@ -583,7 +753,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Even if you are a 10th level priest, if you want to give _10_ points of mental power (points) to a target, you must spend _11_ points of mental power (points).
 
-### Technical atom 32
+### Technical atom 49
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02773))_
 
@@ -593,7 +763,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Area=One weapon Duration=18 rounds Effect=+10 to a weapon's strike power against undead
 
-### Technical atom 33
+### Technical atom 50
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02773))_
 
@@ -603,7 +773,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
 
-### Technical atom 34
+### Technical atom 51
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02789))_
 
@@ -613,7 +783,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Effect=Emits holy light, dealing strike power 20 damage to undead within range Type=Damage (Special) Counters (Overpowers): _Shade_ , _Spirit Wall: Shade_
 
-### Technical atom 35
+### Technical atom 52
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02789))_
 
@@ -623,7 +793,47 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Expansion=Final score, area, damage certainty Resist=Reduced effect
 
-### Technical atom 36
+### Technical atom 53
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03045))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03043))_
+
+> Type=Focus
+
+### Technical atom 54
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03045))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03044))_
+
+> Expansion=Final score, distance, target's weight (See description) Resist=None
+
+### Technical atom 55
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03045))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03046))_
+
+> This heating of metal is magical, so if the caster's focus is broken, the targeted metal mass instantly loses its heat.
+
+### Technical atom 56
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03045))_
+
+> By casting this spell, a priest of Braki can make a mass of metal red-hot, making it soft enough to be processed. If cast on (metal) armor, etc. the wearer will suffer severe burns. If _Heat Metal_ is cast on armor worn, the wearer will suffer strike power 10 damage to their life force (points) each round. This damage can only be reduced by adventurer level or magic. Even if metal parts are layered on a foundation such as leather, the damage cannot be reduced because the foundation will quickly 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03047))_
+
+> In the middle of combat, it can only be used on enemies that are _engaged_ with you, and if you suffer damage from an enemy's counterattack, your focus will be broken and the magic's effect will be lost.
+
+### Technical atom 57
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03051))_
 
@@ -633,7 +843,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Also, even if you can't use your hands or are wearing metal armor, you can use them as long as you can say the word.
 
-### Technical atom 37
+### Technical atom 58
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03069, source-range-870a16bc-03071))_
 
@@ -643,7 +853,27 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > On the other hand, even grassrunners who have no magical background can use spellsongs, because they only need to prepare the superficial form.
 
-### Technical atom 38
+### Technical atom 59
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
+
+> On the list, spellsongs with the note that says _mind_ are spellsongs that affect the mind of the listener. These can be considered in the same way as magic that When a bard uses the ability of a spellsong, you resolve the effect in the around _mental power consumed x 1000 gamels_ as a guideline.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03079))_
+
+> In other words, each one _counters (overpowers):_ and cannot take an effect at the same time as magic or other spellsongs that also belong to _mind_ .
+
+### Technical atom 60
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03090))_
+
+> Those who hear this spellsong will begin to move their limbs and dance according to the melody on their own. Those affected suffer a -4 penalty to attack power and evasion speed. Ancient magic and spirit magic cannot be cast. Since you can't use your musical instrument, you can't use spellsongs either. You will also be unable to use most skills’ abilities.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03092))_
+
+> However, if you suffer physical or mental damage, you can make another resistance roll.
+
+### Technical atom 61
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
@@ -653,7 +883,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Expansion=Final score, effect (see description) Resist=Negated effect
 
-### Technical atom 39
+### Technical atom 62
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03929))_
 
@@ -663,7 +893,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Expansion=Final score, duration Resist=Negated effect
 
-### Technical atom 40
+### Technical atom 63
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04042))_
 
@@ -673,7 +903,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Base Mental Power Cost=20
 
-### Technical atom 41
+### Technical atom 64
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157, source-range-870a16bc-04161))_
 
@@ -683,7 +913,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
 
-### Technical atom 42
+### Technical atom 65
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
 
@@ -693,7 +923,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If you do this, the resurrection will be successful unless you roll double ones.
 
-### Technical atom 43
+### Technical atom 66
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04270))_
 
@@ -703,7 +933,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > The spirit magic _Purification_ can make liquid poison harmless if the final score when casting the magic is greater than or equal to than the toxicity score.
 
-### Technical atom 44
+### Technical atom 67
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04475))_
 
@@ -713,7 +943,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > **[ Red Cap ]** Symptoms=Going berserk, change in body shape Rarity=12
 
-### Technical atom 45
+### Technical atom 68
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04475))_
 
@@ -723,7 +953,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If you make eye contact with someone who has the illness, a progression check must be made
 
-### Technical atom 46
+### Technical atom 69
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04770))_
 
@@ -733,7 +963,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If you strike a will-o-wisp with a melee weapon (it doesn't have to be silver or magical), you can destroy it, but the attacker will also suffer damage as if they were hit by the will-o-wisp.
 
-### Technical atom 47
+### Technical atom 70
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04778))_
 
@@ -743,7 +973,57 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Languages=None Perception=Magic
 
-### Technical atom 48
+### Technical atom 71
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04778))_
+
+> Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3) Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04781))_
+
+> Monster Level=3
+
+### Technical atom 72
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04813))_
+
+> Salamanders are spirits, so their temporary bodies are, so to speak, a modified form of their spirit power, so they cannot be attacked by normal weapons. Iron can obstruct the workings of a spirit, but it cannot be used as a means to extinguish it. To damage a Salamander, you need a magic or magically-imbued weapon, or a silver weapon. Also, when a person using the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04814))_
+
+> You can also deal damage to a Salamander by pouring water on it.
+
+### Technical atom 73
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04824))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04826))_
+
+> Monster Level=4
+
+### Technical atom 74
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04824))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04827))_
+
+> Rarity=12 (However, a shaman always knows) Agility=18 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
+
+### Technical atom 75
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+
+> Mad sprites have the ability to make others invisible. When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13). If you fail, you will become invisible. Those who have become invisible cannot see themselves either. For this reason, a -2 modifier will be imposed on all physical action checks. This invisibility cannot be removed unless you use _Dispel Magic_ , etc. or defeat the mad sprite.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04835))_
+
+> Monster Level=4
+
+### Technical atom 76
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04866))_
 
@@ -753,7 +1033,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Monster Level=6
 
-### Technical atom 49
+### Technical atom 77
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04972, source-range-870a16bc-04977))_
 
@@ -763,7 +1043,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison
 
-### Technical atom 50
+### Technical atom 78
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -773,7 +1053,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Monster Level=5
 
-### Technical atom 51
+### Technical atom 79
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05014, source-range-870a16bc-05018))_
 
@@ -783,7 +1063,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Rarity=13 Agility=18 Movement Speed=15 Number=One
 
-### Technical atom 52
+### Technical atom 80
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
 
@@ -793,7 +1073,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
 
-### Technical atom 53
+### Technical atom 81
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05087))_
 
@@ -803,7 +1083,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If a unicorn loses its horn due to overuse of magic or it being cut off, it will never grow back again.
 
-### Technical atom 54
+### Technical atom 82
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 
@@ -813,7 +1093,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
 
-### Technical atom 55
+### Technical atom 83
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05197))_
 
@@ -823,7 +1103,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire.
 
-### Technical atom 56
+### Technical atom 84
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
 
@@ -833,7 +1113,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Monster Level=15 Rarity=10 Agility=10
 
-### Technical atom 57
+### Technical atom 85
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
 
@@ -843,7 +1123,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Attack Points=Fangs:9 (2) Strike Points=5
 
-### Technical atom 58
+### Technical atom 86
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
 
@@ -853,7 +1133,47 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
 
-### Technical atom 59
+### Technical atom 87
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
+
+> Languages=None Perception=Five senses (sonar) A vampire bat is a giant bloodsucking bat with a wingspan of about 2 meters. However, it prefers to suck the blood of living creatures rather than eat their meat. Once a fang attack hits, it will attach itself to its opponent and begin bloodsucking starting on the next round. Make a strike power 10 plus bonus damage 2 check. This damage can only be reduced by adventurer level. Assume this state is a _grapple_ (see p. 265) as in the optional rules. Th
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05338))_
+
+> Monster Level=3
+
+### Technical atom 88
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05349))_
+
+> Usually it tries to avoid humans on its own accord, but if it and a human bump into one another, or if it’s hungry, then things are different. Also, a mother bear with her cubs will do everything in her power to protect them, so travelers should avoid approaching groups of bears carelessly. At this time, it’s useless to play dead. This is because they also eat dead meat. It is also said that once a grizzly bear has learned the taste of human flesh, it’ll attack humans more frequently.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05347))_
+
+> Evasion Points=10 (3) Defense Points=7 Life Points/Resistance=22/12 (5) Mental Points/Resistance=7/10 (3) Special Abilities=Strangling Habitat=Forests Languages=None Perception=Five senses
+
+### Technical atom 89
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05381))_
+
+> 204 penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
+
+### Technical atom 90
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
+
+> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
+
+> In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
+
+### Technical atom 91
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05552))_
 
@@ -863,7 +1183,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Monster Level=3
 
-### Technical atom 60
+### Technical atom 92
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05552))_
 
@@ -873,7 +1193,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Rarity=18 Agility=14 Movement Speed=0 Number=One to several Frequency=Rare Intellect=None
 
-### Technical atom 61
+### Technical atom 93
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
 
@@ -883,7 +1203,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Damage from healing magic Habitat=Ruins, graveyards Languages=Those previous Perception=Pseudo
 
-### Technical atom 62
+### Technical atom 94
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679))_
 
@@ -893,7 +1213,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Languages=Those previous Perception=Pseudo
 
-### Technical atom 63
+### Technical atom 95
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05683))_
 
@@ -903,7 +1223,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Those who had rune master skills can use magic of that level and magic power.
 
-### Technical atom 64
+### Technical atom 96
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05685))_
 
@@ -913,7 +1233,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If a ghost's corpse is destroyed, it will always attempt to _possess_ someone nearby.
 
-### Technical atom 65
+### Technical atom 97
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05685))_
 
@@ -923,7 +1243,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > When its lingering regrets and grudges are cleared, or when its mental points are reduced to 0 or less due to a _Shade_ , etc.
 
-### Technical atom 66
+### Technical atom 98
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05685))_
 
@@ -933,7 +1253,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > When attacking a ghost in the form of a skeleton with a weapon, you cannot deal additional critical damage with a bladed weapon.
 
-### Technical atom 67
+### Technical atom 99
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05749))_
 
@@ -943,7 +1263,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Also, if an undead knight's attack hits, the character will suffer damage to their mental power in addition to normal damage.
 
-### Technical atom 68
+### Technical atom 100
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -953,7 +1273,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
 
-### Technical atom 69
+### Technical atom 101
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -963,7 +1283,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
 
-### Technical atom 70
+### Technical atom 102
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05801))_
 
@@ -973,7 +1293,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > You cannot attempt this success roll if you do not know about vampires.
 
-### Technical atom 71
+### Technical atom 103
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05813))_
 
@@ -983,7 +1303,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Damage from healing magic Habitat=Places with _unholy soil_ Languages=Low ancient Perception=Pseudo
 
-### Technical atom 72
+### Technical atom 104
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06383))_
 
@@ -993,7 +1313,178 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Also, even if there’s no magical power, books and scrolls may contain high ancient spellbooks or valuable information about the culture of the ancient kingdom, so don’t ever treat them lightly.
 
-### Technical atom 73
+### Technical atom 105
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06426))_
+
+| Required | Price | Required | Price |
+| --- | --- | --- | --- |
+| Strength | (Gamels) | Strength | (Gamels) |
+| 1 | 2800 | 13 | 6700 |
+| 2 | 3000 | 14 | 8900 |
+| 3 | 3400 | 15 | 11000 |
+| 4 | 3800 | 16 | 13000 |
+| 5 | 4100 | 17 | 15000 |
+| 6 | 4300 | 18 | 17000 |
+| 7 | 4600 | 19 | 19000 |
+| 8 | 4900 | 20 | 22000 |
+| 9 | 5100 | 21 | 24000 |
+| 10 | 5400 | 22 | 26000 |
+| 11 | 5600 | 23 | 29000 |
+| 12 | 5800 | 24 | 32000 |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+|Required|Price|Required|Price|
+|---|---|---|---|
+|Strength|(Gamels)|Strength|(Gamels)|
+|1|2800|13|6700|
+|2|3000|14|8900|
+|3|3400|15|11000|
+|4|3800|16|13000|
+|5|4100|17|15000|
+|6|4300|18|17000|
+|7|4600|19|19000|
+|8|4900|20|22000|
+|9|5100|21|24000|
+|10|5400|22|26000|
+|11|5600|23|29000|
+|12|5800|24|32000|
+```
+
+</details>
+
+### Technical atom 106
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
+
+> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06428))_
+
+> Rarity=14
+
+### Technical atom 107
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06435))_
+
+| Required | Price | Required | Price |
+| --- | --- | --- | --- |
+| Strength | (Gamels) | Strength | (Gamels) |
+| 1 | 5300 | 13 | 62000 |
+| 2 | 5700 | 14 | 83000 |
+| 3 | 7400 | 15 | 100000 |
+| 4 | 11000 | 16 | 120000 |
+| 5 | 15000 | 17 | 140000 |
+| 6 | 19000 | 18 | 160000 |
+| 7 | 22000 | 19 | 180000 |
+| 8 | 25000 | 20 | 210000 |
+| 9 | 28000 | 21 | 230000 |
+| 10 | 31000 | 22 | 260000 |
+| 11 | 34000 | 23 | 290000 |
+| 12 | 40000 | 24 | 310000 |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+|Required|Price|Required|Price|
+|---|---|---|---|
+|Strength|(Gamels)|Strength|(Gamels)|
+|1|5300|13|62000|
+|2|5700|14|83000|
+|3|7400|15|100000|
+|4|11000|16|120000|
+|5|15000|17|140000|
+|6|19000|18|160000|
+|7|22000|19|180000|
+|8|25000|20|210000|
+|9|28000|21|230000|
+|10|31000|22|260000|
+|11|34000|23|290000|
+|12|40000|24|310000|
+```
+
+</details>
+
+### Technical atom 108
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06437))_
+
+> Rarity=16
+
+### Technical atom 109
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06443))_
+
+| Required | Price | Required | Price |
+| --- | --- | --- | --- |
+| Strength | (Gamels) | Strength | (Gamels) |
+| 1 | 31000 | 13 | 370000 |
+| 2 | 36000 | 14 | 390000 |
+| 3 | 74000 | 15 | 410000 |
+| 4 | 110000 | 16 | 430000 |
+| 5 | 150000 | 17 | 450000 |
+| 6 | 180000 | 18 | 470000 |
+| 7 | 210000 | 19 | 500000 |
+| 8 | 240000 | 20 | 530000 |
+| 9 | 270000 | 21 | 550000 |
+| 10 | 290000 | 22 | 580000 |
+| 11 | 320000 | 23 | 620000 |
+| 12 | 340000 | 24 | 650000 |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+|Required|Price|Required|Price|
+|---|---|---|---|
+|Strength|(Gamels)|Strength|(Gamels)|
+|1|31000|13|370000|
+|2|36000|14|390000|
+|3|74000|15|410000|
+|4|110000|16|430000|
+|5|150000|17|450000|
+|6|180000|18|470000|
+|7|210000|19|500000|
+|8|240000|20|530000|
+|9|270000|21|550000|
+|10|290000|22|580000|
+|11|320000|23|620000|
+|12|340000|24|650000|
+```
+
+</details>
+
+### Technical atom 110
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
+
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +3 power.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06445))_
+
+> Rarity=12 Enchanter=-
+
+### Technical atom 111
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
 
@@ -1003,7 +1494,37 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Once the staff is complete, you can control an _unlimited_ number of undead monsters, and you also gain a _+4 bonus_ to your final score when attempting to make them obey.
 
-### Technical atom 74
+### Technical atom 112
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06495))_
+
+> Anyone dealt damage by an attack from this sword must make a mental power resistance roll against target score 18. If you fail, you will be instantly petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06497))_
+
+> Rarity=14
+
+### Technical atom 113
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06495))_
+
+> Anyone dealt damage by an attack from this sword must make a mental power resistance roll against target score 18. If you fail, you will be instantly petrified.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06498))_
+
+> Enchanter=Unknown Form=Scimitar
+
+### Technical atom 114
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06503))_
+
+> Powers=-1 to hit checks and damage under normal use, fires an _Energy Bolt_ with a password
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06506))_
+
+> Rarity=14
+
+### Technical atom 115
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
 
@@ -1013,7 +1534,84 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Enchanter=Shiva, "The Friend of Salamander"
 
-### Technical atom 75
+### Technical atom 116
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06525))_
+
+> This magic sword can use unlimited shockwaves (strike power 10, magic power 10), equivalent to the holy magic _Force_ (however, magic expansion is not possible). It can also be used as a magical catalyst.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06527))_
+
+> Rarity=15
+
+### Technical atom 117
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06525))_
+
+> This magic sword can use unlimited shockwaves (strike power 10, magic power 10), equivalent to the holy magic _Force_ (however, magic expansion is not possible). It can also be used as a magical catalyst.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06528))_
+
+> Enchanter=Rye Elk, "The Hundred Brained" Form=Broadsword with a face-like engraving from the handle to the blade
+
+### Technical atom 118
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06537))_
+
+> Powers=Also deals damage to mental points of whoever's body was dealt damage (no bonus) Anyone whose life force has been dealt damage by this sword will suffer 2 points of damage to their mental points unless they succeed on a mental power resistance roll against target score 11. This damage cannot be reduced by adventurer level, similar to that of _Mental Attack_ . Also, even if the sword does hit, this effect does _not_ apply if damage is _not_ dealt to life force.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06539))_
+
+> Rarity=14 Enchanter=Unknown Form=Ornately decorated Shamshir Required Strength=15 (Strike power 20) **==> picture [162 x 346] intentionally omitted <==**
+
+### Technical atom 119
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06542))_
+
+> This magical shamshir always has dew trickling down the blade, to wash away blood and grease. Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute. This ability can be used up to 10 times per day. The water produced by this sword also allows you to use spirit magic sourced from the power of undine. This sword may have been made for travelers crossing the desert.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06544))_
+
+> Rarity=13
+
+### Technical atom 120
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
+
+> Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06561))_
+
+| Required | Price | Required | Price |
+| --- | --- | --- | --- |
+| Strength | (Gamels) | Strength | (Gamels) |
+| 1 | 23000 | 8 | 29000 |
+| 2 | 26000 | 9 | 25000 |
+| 3 | 28000 | 10 | 23000 |
+| 4 | 30000 | 11 | 21000 |
+| 5 | 32000 | 12 | 20000 |
+| 6 | 32000 | 13 | 17000 |
+| 7 | 31000 |  |  |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+|Required|Price|Required|Price|
+|---|---|---|---|
+|Strength|(Gamels)|Strength|(Gamels)|
+|1|23000|8|29000|
+|2|26000|9|25000|
+|3|28000|10|23000|
+|4|30000|11|21000|
+|5|32000|12|20000|
+|6|32000|13|17000|
+|7|31000|||
+```
+
+</details>
+
+### Technical atom 121
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06914, source-range-870a16bc-06917))_
 
@@ -1023,7 +1621,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Enchanter=Faye, “The One Who Wears the Wind” Form=Cloak
 
-### Technical atom 76
+### Technical atom 122
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06914, source-range-870a16bc-06917))_
 
@@ -1033,7 +1631,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Base Trade Price=24,000 gamels Powers=Reduces fall speed
 
-### Technical atom 77
+### Technical atom 123
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07085))_
 
@@ -1043,7 +1641,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent.
 
-### Technical atom 78
+### Technical atom 124
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
 
@@ -1053,7 +1651,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > Even if it’s a magic shield, the _only_ bonus damage you get is the usual ( _fighter/thief skill level + strength bonus_ ).
 
-### Technical atom 79
+### Technical atom 125
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
 
@@ -1063,7 +1661,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > If you’re a _fighter_ , you can also perform a shield attack as a _ram_ .
 
-### Technical atom 80
+### Technical atom 126
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
@@ -1073,7 +1671,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > The final score must _exceed_ the final score from when the character cast the spell.
 
-### Technical atom 81
+### Technical atom 127
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
 
@@ -1083,7 +1681,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 > **Table 17-1 Lost Spells Table**
 
-### Technical atom 82
+### Technical atom 128
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
 
@@ -1106,7 +1704,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 83
+### Technical atom 129
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
@@ -1135,7 +1733,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 84
+### Technical atom 130
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 
@@ -1172,7 +1770,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 85
+### Technical atom 131
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -1257,7 +1855,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 86
+### Technical atom 132
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -1278,7 +1876,7 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 </details>
 
-### Technical atom 87
+### Technical atom 133
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
@@ -1310,36 +1908,58 @@ What [[sword-world-rpg-complete-edition]] covers about power:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (43 shared statement(s), 24 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (23 shared statement(s), 19 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (28 shared statement(s), 13 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (18 shared statement(s), 14 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (14 shared statement(s), 15 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (7 shared statement(s), 17 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (12 shared statement(s), 11 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (11 shared statement(s), 11 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (9 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (7 shared statement(s), 12 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (5 shared statement(s), 11 shared atom(s))
+- [[sword-world-rpg-complete-edition-recovering-mental-power]] - narrower topic (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-base-mental-power-cost]] - narrower topic (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (43 shared statement(s), 30 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (28 shared statement(s), 26 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (7 shared statement(s), 35 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (23 shared statement(s), 24 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (18 shared statement(s), 15 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (14 shared statement(s), 16 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared statements and technical atoms (10 shared statement(s), 17 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (7 shared statement(s), 16 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (11 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (9 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (19 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (5 shared statement(s), 12 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (4 shared statement(s), 10 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (4 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (10 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (4 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (6 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (4 shared statement(s), 9 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (4 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (1 shared statement(s), 8 shared atom(s))
 - [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (5 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements and technical atoms (8 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (5 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-attack-character-monster]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-duration-instant]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fire-breath]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity-18]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (6 shared atom(s))
+- [[sword-world-rpg-complete-edition-magic-sword]] - shared technical atoms (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-14-magical-item-list]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-master]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-wisp-light-spirit]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-move]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-master]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-gnome-earth-spirit]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-non-metal-ring-mail]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-shade-dark-spirit]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-distance-caster]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-enchanter-unknown]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-immunity]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-12]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-shape-change]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-chapter-14-treasures-powers-61a9f150]] - source section (1 shared atom(s))
 
 ## Source
 

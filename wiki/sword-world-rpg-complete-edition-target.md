@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-target
 page_kind: concept
-summary: Target: 147 statement(s) and 93 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Target: 147 statement(s) and 97 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-target@4943c15222f5097347ff66251e94ae8e
+projection_coverage: topic-sword-world-rpg-complete-edition-target@4b93e9b754d22284d53716114237c537
 ---
 
 # Target
@@ -167,6 +167,26 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 ### Technical atom 1
 
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00560))_
+
+> Did Ducard II’s attack hit the Goblin? His baseline score for attacks is _4_ and the target score for hitting a goblin is _10_ . In other words, we must roll two dice, add 4 to the result, and if the total is _10 or more_ , we’ll hit the target.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00561))_
+
+> The player must roll two dice and add their baseline score to the roll.
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00561))_
+
+> The player must roll two dice and add their baseline score to the roll. The result is called the **final score** . This final score should be _equal to or greater than_ the target score.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00562))_
+
+> If the roll is 6 or greater, it’s a _hit_ , and if the roll is 5 or lower, it’s a _miss_ .
+
+### Technical atom 3
+
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00845))_
 
 > The critical target is a _lower is better_ score, which is rare in _Sword World RPG_ . Therefore, an attack using the thief skill is _more_ likely to result in a critical than an attack using the regular fighter skill.
@@ -175,7 +195,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > **critical target** = 10 (9 if using thief skill) **strike power** = required strength of weapon (+5 if a two-handed weapon)
 
-### Technical atom 2
+### Technical atom 4
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01049, source-range-870a16bc-01052))_
 
@@ -185,7 +205,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Characters with 0 or negative life force must make a death check every _hour_ .
 
-### Technical atom 3
+### Technical atom 5
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01049, source-range-870a16bc-01052))_
 
@@ -195,7 +215,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > life force resistance + 2D - (damage applied beyond life force) ≥ 7 → **survival**
 
-### Technical atom 4
+### Technical atom 6
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01216))_
 
@@ -205,7 +225,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If the adventurer's final score ( _mental power resistance + 2D_ ) is equal to or greater than the monster's _magic intensity_ , the monster's magic will only take an incomplete effect (some magic will take no effect at all).
 
-### Technical atom 5
+### Technical atom 7
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
@@ -215,7 +235,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even more damage, same as in weapon combat.
 
-### Technical atom 6
+### Technical atom 8
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01361, source-range-870a16bc-01363))_
 
@@ -225,7 +245,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Most magic of the **damage** type can still deal damage even if it's resisted by the target, only with a reduced effect.
 
-### Technical atom 7
+### Technical atom 9
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
@@ -235,7 +255,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Also, even magic of the _damage_ type may in rare cases take no effect if resisted.
 
-### Technical atom 8
+### Technical atom 10
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01376))_
 
@@ -245,7 +265,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > When certain magic is cast against other magic, it can cancel the effect of the prior magic but still take its own effect afterwards.
 
-### Technical atom 9
+### Technical atom 11
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01381))_
 
@@ -255,7 +275,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > ① First, confirm the _target score (= final score)_ of the magic cast prior (if you forgot, determine it now).
 
-### Technical atom 10
+### Technical atom 12
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01385, source-range-870a16bc-01390))_
 
@@ -265,7 +285,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > ⑤ If the target _successfully resisted_ in ④, the new magic cast will _not_ take effect.
 
-### Technical atom 11
+### Technical atom 13
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01429))_
 
@@ -275,7 +295,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > With these spells, you can add +1 to your final score for each day you perform the ritual.
 
-### Technical atom 12
+### Technical atom 14
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01607))_
 
@@ -285,7 +305,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > As a result, the door or lid will never open unless you chant the password you chose when casting the spell.
 
-### Technical atom 13
+### Technical atom 15
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01750))_
 
@@ -295,7 +315,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > You cannot cast this spell multiple times in advance, to be able to trace back multiple times without having to recast it.
 
-### Technical atom 14
+### Technical atom 16
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01936))_
 
@@ -305,7 +325,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Resist=Negated effect
 
-### Technical atom 15
+### Technical atom 17
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01935))_
 
@@ -315,7 +335,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > When making a check, you may only make a resistance roll against this spell once per round in which the spell is cast.
 
-### Technical atom 16
+### Technical atom 18
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01973))_
 
@@ -325,7 +345,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Effect=Increase the three ability scores of dexterity, agility, and strength by 6 Type=Target score, physical ability Expansion=Final score, duration, distance, targets
 
-### Technical atom 17
+### Technical atom 19
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01973))_
 
@@ -335,7 +355,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Resist=None
 
-### Technical atom 18
+### Technical atom 20
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01973))_
 
@@ -345,7 +365,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=28 Distance=10 meters
 
-### Technical atom 19
+### Technical atom 21
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01981))_
 
@@ -355,7 +375,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Effect=Entangle the opponent in a magical net, binding their movement. Targets that act against the binding suffer strike power 20 damage
 
-### Technical atom 20
+### Technical atom 22
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01981))_
 
@@ -365,7 +385,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Type=Target score, damage (Blade-type) Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect
 
-### Technical atom 21
+### Technical atom 23
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01985))_
 
@@ -375,7 +395,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=21
 
-### Technical atom 22
+### Technical atom 24
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01985))_
 
@@ -385,7 +405,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Distance=10 meters
 
-### Technical atom 23
+### Technical atom 25
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02044))_
 
@@ -395,7 +415,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Type=Target score, damage (Electric-type) Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect
 
-### Technical atom 24
+### Technical atom 26
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02044))_
 
@@ -405,7 +425,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Furthermore, you can deal electric shock damage to the target every round.
 
-### Technical atom 25
+### Technical atom 27
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02044))_
 
@@ -415,7 +435,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > You may only make a resistance roll against this spell once per round in which the spell is cast.
 
-### Technical atom 26
+### Technical atom 28
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02195))_
 
@@ -425,7 +445,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=3 Distance=10 meters
 
-### Technical atom 27
+### Technical atom 29
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02195, source-range-870a16bc-02200))_
 
@@ -435,7 +455,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Area=One
 
-### Technical atom 28
+### Technical atom 30
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02200))_
 
@@ -445,7 +465,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Duration=1 round Effect=Disturb the opponent's focus Type=Mind Expansion=Final score, duration, distance, targets Resist=Negated effect
 
-### Technical atom 29
+### Technical atom 31
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02200))_
 
@@ -455,7 +475,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Magic cannot be used (if you're attempting to use magic at a later action order during the round, you must cancel your action) 2.
 
-### Technical atom 30
+### Technical atom 32
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02339))_
 
@@ -465,7 +485,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=9 Distance=10 meters
 
-### Technical atom 31
+### Technical atom 33
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02393))_
 
@@ -475,7 +495,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=20
 
-### Technical atom 32
+### Technical atom 34
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02419))_
 
@@ -485,7 +505,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc.
 
-### Technical atom 33
+### Technical atom 35
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02421))_
 
@@ -495,7 +515,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=25 Distance=20 meters Area=One Duration=1 week Effect=Charms the target Type=Mind, target score Expansion=Final score, duration, distance, targets Resist=Negated effect
 
-### Technical atom 34
+### Technical atom 36
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02421))_
 
@@ -505,7 +525,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > At this time, if both your intentions are _mutual_ , you can make them follow your will in the form of a proposal, and if your intentions are _not_ mutual, you will deprive them of hostility.
 
-### Technical atom 35
+### Technical atom 37
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02533))_
 
@@ -515,7 +535,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=35 Distance=30 meters Area=One Duration=Instant
 
-### Technical atom 36
+### Technical atom 38
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02816))_
 
@@ -525,7 +545,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > You can attempt to resist this spell when it's cast.
 
-### Technical atom 37
+### Technical atom 39
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02981))_
 
@@ -535,7 +555,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If a character has this spell cast on them and a monster with fixed strike points attacks, the character's defense roll will be affected.
 
-### Technical atom 38
+### Technical atom 40
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03190))_
 
@@ -545,7 +565,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If one adventurer has acquired both the thief skill _and_ the fighter skill, the player must _choose_ which skill to fight with.
 
-### Technical atom 39
+### Technical atom 41
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03300))_
 
@@ -555,7 +575,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If the research is successful, the sage may make another success roll.
 
-### Technical atom 40
+### Technical atom 42
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03320))_
 
@@ -565,7 +585,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > When appraising medicines or poisons, a success roll must be made using their rarity as the target score.
 
-### Technical atom 41
+### Technical atom 43
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03319, source-range-870a16bc-03321))_
 
@@ -575,7 +595,17 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > To create medicines or poisons, the game master should set a target score depending on the type, and ask for a success roll check.
 
-### Technical atom 42
+### Technical atom 44
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
+
+> The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
+
+> If you are just riding normally, you do not need to make a success roll.
+
+### Technical atom 45
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
@@ -585,7 +615,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > You can only wear cloth or at most soft leather.
 
-### Technical atom 43
+### Technical atom 46
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
@@ -595,7 +625,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If you succeed, you will be able to take it off and rise to the surface.
 
-### Technical atom 44
+### Technical atom 47
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
 
@@ -605,7 +635,17 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
 
-### Technical atom 45
+### Technical atom 48
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
+
+> An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03372))_
+
+> If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely.
+
+### Technical atom 49
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
@@ -615,7 +655,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > **Table 6-3: Determining Long Jump Target Scores**
 
-### Technical atom 46
+### Technical atom 50
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
@@ -655,7 +695,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 47
+### Technical atom 51
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03508))_
 
@@ -665,7 +705,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > At that time, you can only wear armor up to cloth or soft leather.
 
-### Technical atom 48
+### Technical atom 52
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
 
@@ -675,7 +715,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Expansion=Final score, effect (see description) Resist=Negated effect
 
-### Technical atom 49
+### Technical atom 53
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03745))_
 
@@ -685,7 +725,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Base Mental Power Cost=8 Distance=Touch
 
-### Technical atom 50
+### Technical atom 54
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03787))_
 
@@ -695,7 +735,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > For example, if the caster sacrifices their own life, it is acceptable to apply a fairly powerful curse.
 
-### Technical atom 51
+### Technical atom 55
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03911))_
 
@@ -705,7 +745,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > **[ Insanity ] (Spell Level=1)** Base Mental Power Cost=3
 
-### Technical atom 52
+### Technical atom 56
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03929))_
 
@@ -715,7 +755,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Expansion=Final score, duration Resist=Negated effect
 
-### Technical atom 53
+### Technical atom 57
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03973, source-range-870a16bc-03977))_
 
@@ -725,7 +765,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > When using these spells, the caster must determine the final score of the spell.
 
-### Technical atom 54
+### Technical atom 58
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04398))_
 
@@ -735,7 +775,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases by 1.
 
-### Technical atom 55
+### Technical atom 59
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04404))_
 
@@ -745,7 +785,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > immediately after the illness's progression check), and you can only make one success roll.
 
-### Technical atom 56
+### Technical atom 60
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04804))_
 
@@ -755,7 +795,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Undine can cast magic sourced from the power of undine without consuming its own mental points (the spells cannot be expanded).
 
-### Technical atom 57
+### Technical atom 61
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04803))_
 
@@ -765,7 +805,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > To do so, you must make a successful life force resistance roll.
 
-### Technical atom 58
+### Technical atom 62
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04896))_
 
@@ -775,7 +815,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > The form that a Spriggan can take after transforming is fixed for each individual (its apparent age cannot be changed either).
 
-### Technical atom 59
+### Technical atom 63
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04896))_
 
@@ -785,7 +825,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > A spriggan can use its considerable strength even in its child form.
 
-### Technical atom 60
+### Technical atom 64
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04972, source-range-870a16bc-04977))_
 
@@ -795,7 +835,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One Frequency=Rare Intellect=Human Reaction=Adversarial Attack Points=Snakes (all engaged): 10 (3) Strike Points=7+poison
 
-### Technical atom 61
+### Technical atom 65
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 
@@ -805,7 +845,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
 
-### Technical atom 62
+### Technical atom 66
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05529))_
 
@@ -815,7 +855,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If you fail, you will get caught in the web and attract the attention of the giant webspinner.
 
-### Technical atom 63
+### Technical atom 67
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05584))_
 
@@ -825,7 +865,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Alraune look exactly like humans, and can speak and think like humans, but when they are wounded, a thick, red mucus oozes out of them.
 
-### Technical atom 64
+### Technical atom 68
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -835,7 +875,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Also, if a vampire's attack hits a character, in addition to normal damage, mental power will also be damaged.
 
-### Technical atom 65
+### Technical atom 69
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05782))_
 
@@ -845,7 +885,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If they cannot steal mental power for one full day, they will automatically lose 1 mental point.
 
-### Technical atom 66
+### Technical atom 70
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05804))_
 
@@ -855,7 +895,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If someone with the shaman skill looks at the _soil_ , they can immediately tell that it's something out of the ordinary.
 
-### Technical atom 67
+### Technical atom 71
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
 
@@ -865,7 +905,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > Once the staff is complete, you can control an _unlimited_ number of undead monsters, and you also gain a _+4 bonus_ to your final score when attempting to make them obey.
 
-### Technical atom 68
+### Technical atom 72
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
 
@@ -875,7 +915,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If it hits, the critical target will be reduced by -3, making it 7.
 
-### Technical atom 69
+### Technical atom 73
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
 
@@ -885,7 +925,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
 
-### Technical atom 70
+### Technical atom 74
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
 
@@ -895,7 +935,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability.
 
-### Technical atom 71
+### Technical atom 75
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07171))_
 
@@ -905,7 +945,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > A character can only do this if he or she has a two-handed weapon and it’s the type that cuts (sword, ax, pole weapon that can _cut_ ).
 
-### Technical atom 72
+### Technical atom 76
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07368))_
 
@@ -915,7 +955,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 > **Table 17-1 Lost Spells Table**
 
-### Technical atom 73
+### Technical atom 77
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -942,7 +982,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 74
+### Technical atom 78
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 
@@ -969,7 +1009,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 75
+### Technical atom 79
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
 
@@ -1014,7 +1054,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 76
+### Technical atom 80
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -1046,7 +1086,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 77
+### Technical atom 81
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
 
@@ -1103,7 +1143,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 78
+### Technical atom 82
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06155))_
 
@@ -1134,7 +1174,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 79
+### Technical atom 83
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -1219,7 +1259,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 80
+### Technical atom 84
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -1240,7 +1280,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 81
+### Technical atom 85
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 
@@ -1263,7 +1303,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 82
+### Technical atom 86
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -1316,7 +1356,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 83
+### Technical atom 87
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 
@@ -1365,7 +1405,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 84
+### Technical atom 88
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 
@@ -1398,7 +1438,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 85
+### Technical atom 89
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07708))_
 
@@ -1427,7 +1467,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 86
+### Technical atom 90
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 
@@ -1450,7 +1490,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 87
+### Technical atom 91
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07712))_
 
@@ -1473,7 +1513,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 88
+### Technical atom 92
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -1498,7 +1538,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 89
+### Technical atom 93
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
@@ -1537,7 +1577,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 90
+### Technical atom 94
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
@@ -1568,7 +1608,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 91
+### Technical atom 95
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -1595,7 +1635,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 92
+### Technical atom 96
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -1652,7 +1692,7 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 </details>
 
-### Technical atom 93
+### Technical atom 97
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
@@ -1676,36 +1716,58 @@ What [[sword-world-rpg-complete-edition]] covers about target:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (56 shared statement(s), 36 shared atom(s))
-- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (19 shared statement(s), 24 shared atom(s))
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - narrower topic (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-target-score]] - narrower topic (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (56 shared statement(s), 40 shared atom(s))
+- [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (19 shared statement(s), 26 shared atom(s))
 - [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (28 shared statement(s), 17 shared atom(s))
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (14 shared statement(s), 15 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (14 shared statement(s), 16 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (14 shared statement(s), 15 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (5 shared statement(s), 19 shared atom(s))
 - [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (7 shared statement(s), 18 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (14 shared statement(s), 11 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (5 shared statement(s), 15 shared atom(s))
-- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 15 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (1 shared statement(s), 18 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (1 shared statement(s), 17 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (7 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (2 shared statement(s), 13 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared statements and technical atoms (1 shared statement(s), 13 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (12 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (7 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (2 shared statement(s), 11 shared atom(s))
 - [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (2 shared statement(s), 9 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (3 shared statement(s), 8 shared atom(s))
 - [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (3 shared statement(s), 8 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (3 shared statement(s), 8 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared statements and technical atoms (2 shared statement(s), 8 shared atom(s))
 - [[sword-world-rpg-complete-edition-strike]] - shared statements and technical atoms (10 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (11 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (1 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms (1 shared statement(s), 7 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (2 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (4 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements and technical atoms (6 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared statements and technical atoms (3 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-distance-10-meter]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-equipment-restriction]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rarity-18]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (16 shared atom(s))
+- [[sword-world-rpg-complete-edition-optional-rule]] - shared technical atoms (12 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-magical]] - shared technical atoms (3 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-sailor-skill-ability-table]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-thief-skill]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-climb-agility]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-hunter-skill]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-merchant-skill]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-gnome-earth-spirit]] - shared statements (3 shared statement(s))
+- [[sword-world-rpg-complete-edition-distance-caster]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-illusionary-beast]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-rarity-12]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-character-monster]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire-immunity]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-move]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-movement]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements (1 shared statement(s))
 
 ## Source
 

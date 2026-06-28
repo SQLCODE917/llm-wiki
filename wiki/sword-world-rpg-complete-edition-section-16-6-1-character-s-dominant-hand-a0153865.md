@@ -1,18 +1,22 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-16-6-1-character-s-dominant-hand-a0153865
 page_kind: source
-summary: **16.6.1 Character's Dominant Hand**: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 16.6.1 Character's Dominant Hand: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-16-6-1-character-s-dominant-hand-a0153865@e991e9d589cb15c08fbed6b38dba723b
+projection_coverage: section-sword-world-rpg-complete-edition-section-16-6-1-character-s-dominant-hand-a0153865@1caebf6b644f6a25ae3b055204d1a5dd
 ---
 
-# **16.6.1 Character's Dominant Hand**
+# 16.6.1 Character's Dominant Hand
 
 From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-16-6-ffca72e2]] - broader source section
 
 ## Statements
 

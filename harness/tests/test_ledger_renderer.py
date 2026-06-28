@@ -16,6 +16,7 @@ from llmwiki.domain.ledger.projection import (
 )
 from llmwiki.domain.ledger.renderer import render_source_page
 from llmwiki.domain.ledger.topic_models import SourceTopic
+from llmwiki.domain.ledger.topic_relations import RelatedTopicLink
 from llmwiki.domain.ledger.topic_render import render_topic_page
 from llmwiki.runtime.ledger_pages import build_topic_pages
 
@@ -131,6 +132,39 @@ def test_topic_pages_render_bidirectional_related_links() -> None:
     by_id = {page.page_id: page.page_body for page in pages}
     assert "[[rules-linked-list]] - narrower topic (1 shared atom(s))" in by_id["rules-list"]
     assert "[[rules-list]] - broader topic (1 shared atom(s))" in by_id["rules-linked-list"]
+
+
+def test_topic_pages_render_related_source_sections() -> None:
+    pages = build_topic_pages(
+        (
+            SourceTopic(
+                topic_key="mapping",
+                label="Mapping",
+                page_kind="concept",
+                match_terms=("mapping",),
+                entry_ids=(),
+                atom_ids=("atom-code",),
+                from_heading=False,
+                salience=3.0,
+            ),
+        ),
+        _ledger_with_code_context(),
+        source_page_id="rules",
+        source_locator="rules.md",
+        today="2026-06-27",
+        related_pages_by_topic={
+            "mapping": (
+                RelatedTopicLink(
+                    "rules-section-mapping",
+                    "Mapping section",
+                    "source section",
+                    shared_atom_ids=("atom-code",),
+                ),
+            )
+        },
+    )
+
+    assert "[[rules-section-mapping]] - source section (1 shared atom(s))" in pages[0].page_body
 
 
 def _ledger_with_code_context() -> ClaimLedger:
