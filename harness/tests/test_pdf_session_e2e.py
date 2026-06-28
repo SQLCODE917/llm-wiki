@@ -112,12 +112,16 @@ def test_partial_resume_reuses_matching_persisted_page_plan(
     assert loaded == plan
 
 
-async def test_pdf_ingest_projects_from_cached_page_plan_without_extractor(
+async def test_pdf_ingest_consults_extraction_cache_before_persisted_page_plan(
     store: WikiStore, paths: WikiPaths
 ) -> None:
     (paths.raw_dir / "book.pdf").write_bytes(b"%PDF-1.5 fake")
-    plan = _persisted_plan()
-    store.write_page_plan_artifacts("book.pdf", page_plan_to_json(plan), "persisted")
+    stale_plan_json = page_plan_to_json(_persisted_plan()).replace(
+        "Chunk one: functions are values.", "Stale cached text."
+    )
+    store.write_page_plan_artifacts("book.pdf", stale_plan_json, "persisted")
+    extraction = _fake_extraction(paths)
+    extraction_calls: list[bool] = []
     session = Session(
         store=store,
         client=FakeClient([]),
@@ -125,14 +129,17 @@ async def test_pdf_ingest_projects_from_cached_page_plan_without_extractor(
         today=TODAY,
         runs_dir=paths.root / "runs",
         run_id="pdf-test",
-        extract_pdf=lambda _pdf, _rel, _reextract: (_ for _ in ()).throw(
-            AssertionError("cached PagePlan should project without PDF extraction")
-        ),
+        extract_pdf=lambda _pdf, _rel, _reextract: extraction_calls.append(True) or extraction,
     )
 
     result = await session.ingest("book.pdf")
 
     assert result.output.startswith("Claim-ledger ingest of raw/book.pdf")
+    assert extraction_calls == [True]
+    page_plan_json = store.read_page_plan_artifact("book.pdf")
+    assert page_plan_json is not None
+    assert "Chunk one: functions are values." in page_plan_json
+    assert "Stale cached text." not in page_plan_json
     assert store.list_pages() == ["book"]
     assert "closures capture scope" in store.read_page("book")
     assert not session.client.sent

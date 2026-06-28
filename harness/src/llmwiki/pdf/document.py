@@ -105,10 +105,12 @@ def build_source_sections(model: DocumentModel) -> tuple[SourceSection, ...]:
             continue
         if element.element_kind == "heading":
             flush()
-            current_heading = element.heading_path or element.text or "Document"
+            current_heading = _heading_path_or_fallback(
+                element.heading_path or element.text, current_heading
+            )
             current_elements.append(element)
             continue
-        element_heading = element.heading_path or current_heading
+        element_heading = _heading_path_or_fallback(element.heading_path, current_heading)
         if current_elements and element_heading != current_heading:
             flush()
             current_heading = element_heading
@@ -171,6 +173,8 @@ def _append_chunk(
     text: str,
     elements: list[DocumentElement] | None = None,
 ) -> None:
+    if not _has_lexical_content(text):
+        return
     page_start, page_end = (
         _element_page_span(elements) if elements else (section.page_start, section.page_end)
     )
@@ -191,7 +195,7 @@ def _make_section(
     heading_path: str, elements: list[DocumentElement], section_number: int
 ) -> SourceSection | None:
     text = _join_element_markdown(elements)
-    if not text:
+    if not text or not _has_lexical_content(text):
         return None
     page_start, page_end = _element_page_span(elements)
     return SourceSection(
@@ -222,6 +226,17 @@ def _element_page_span(
     if not page_starts or not page_ends:
         return (0, 0)
     return (min(page_starts), max(page_ends))
+
+
+def _heading_path_or_fallback(heading_path: str, fallback: str) -> str:
+    cleaned = " ".join(heading_path.split())
+    if _has_lexical_content(cleaned):
+        return cleaned
+    return fallback or "Document"
+
+
+def _has_lexical_content(text: str) -> bool:
+    return any(char.isalnum() for char in text)
 
 
 def _slug(value: str) -> str:

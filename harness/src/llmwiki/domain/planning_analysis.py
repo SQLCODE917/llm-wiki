@@ -246,8 +246,8 @@ def claim_comparisons(
 
 
 def same_section_identity(heading: str, page_id: str) -> bool:
-    heading_slug = slugify(heading)
-    page_slug = slugify(page_id)
+    heading_slug = _safe_slugify(heading)
+    page_slug = _safe_slugify(page_id)
     if not heading_slug or not page_slug:
         return False
     return (
@@ -255,6 +255,13 @@ def same_section_identity(heading: str, page_id: str) -> bool:
         or page_slug.endswith(f"-{heading_slug}")
         or heading_slug.endswith(f"-{page_slug}")
     )
+
+
+def _safe_slugify(text: str) -> str:
+    try:
+        return slugify(text)
+    except ValueError:
+        return ""
 
 
 def unit_match(match: WikiMatch, unit_id: str) -> bool:

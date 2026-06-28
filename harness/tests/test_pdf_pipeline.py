@@ -12,6 +12,7 @@ from llmwiki.pdf import ScannedPdfError
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 from llmwiki.pdf.manifest import ChunkRecord, Manifest, to_json
 from llmwiki.pdf.pipeline import (
+    ExtractionResult,
     chunk_file,
     document_extractor_by_name,
     ensure_extracted,
@@ -153,6 +154,43 @@ class TestEnsureExtracted:
         )
         assert again.manifest.chunks[0].status == "done"
         assert document_extractor.calls == 1
+
+    def test_cache_hit_rebuilds_nonlexical_pending_chunks_from_document_model(
+        self, tmp_path: Path
+    ) -> None:
+        pdf = tmp_path / "book.pdf"
+        _make_pdf(pdf)
+        document_extractor = FakeDocumentExtractor()
+        first = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+        bad_manifest = Manifest(
+            source="book.pdf",
+            sha256=first.manifest.sha256,
+            extractor_name=first.manifest.extractor_name,
+            chunks=(ChunkRecord(1, "[", 1, 1, 0),),
+            integrated=True,
+        )
+        save_manifest(ExtractionResult(manifest=bad_manifest, cache_dir=first.cache_dir))
+        chunk_file(first.cache_dir, 1).write_text("# [", encoding="utf-8")
+
+        repaired = ensure_extracted(
+            pdf,
+            "book.pdf",
+            tmp_path / "cache",
+            NullRecognizer(),
+            document_extractor=document_extractor,
+        )
+
+        assert document_extractor.calls == 1
+        assert [chunk.heading for chunk in repaired.manifest.chunks] == ["Functions"]
+        assert "Functions are values" in chunk_file(repaired.cache_dir, 1).read_text(
+            encoding="utf-8"
+        )
 
     def test_cache_hit_skips_extractor_module_import(self, tmp_path: Path) -> None:
         pdf = tmp_path / "cached.pdf"

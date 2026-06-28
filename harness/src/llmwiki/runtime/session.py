@@ -303,21 +303,6 @@ class Session:
         source_locator = _single_source_locator(ingest_run)
         if self.extract_pdf is None:
             raise RuntimeError("Session has no PDF extractor wired (extract_pdf).")
-        if not reextract:
-            cached_plan = self._cached_pdf_page_plan_artifact(source_locator)
-            if cached_plan is not None:
-                return self._finish_ledger_ingest(
-                    source_locator=source_locator,
-                    page_plan=cached_plan,
-                    chunks=_chunks_from_page_plan(cached_plan),
-                    document_model=None,
-                    source_text=source_text_from_text(
-                        source_locator,
-                        _source_text_from_page_plan(cached_plan),
-                        "page-plan-cache",
-                    ),
-                    ingest_run=ingest_run,
-                )
         result = self.extract_pdf(
             self.store.raw_source_path(source_locator), source_locator, reextract
         )
@@ -483,20 +468,6 @@ class Session:
         except Exception:
             return None
         if not _pdf_page_plan_matches_manifest(plan, source_locator, manifest):
-            return None
-        return plan
-
-    def _cached_pdf_page_plan_artifact(self, source_locator: str) -> PagePlan | None:
-        cached = self.store.read_page_plan_artifact(source_locator)
-        if cached is None:
-            return None
-        try:
-            plan = page_plan_from_json(cached)
-        except Exception:
-            return None
-        if not plan.extracted_units:
-            return None
-        if not _page_plan_sources_match_source(plan, source_locator):
             return None
         return plan
 
@@ -1111,10 +1082,6 @@ def _chunks_from_page_plan(page_plan: PagePlan) -> tuple[ChunkText, ...]:
         ChunkText(unit.unit_id, unit.locator, unit.heading_path, unit.text)
         for unit in page_plan.extracted_units
     )
-
-
-def _source_text_from_page_plan(page_plan: PagePlan) -> str:
-    return "\n\n".join(unit.text for unit in page_plan.extracted_units if unit.text.strip())
 
 
 def _page_plan_sources_match_source(page_plan: PagePlan, source_locator: str) -> bool:

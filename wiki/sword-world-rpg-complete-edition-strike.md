@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-strike
 page_kind: concept
-summary: Strike: 57 statement(s) and 35 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Strike: 48 statement(s) and 29 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-strike@41504e7d809c64be1fdae571d17ce9c5
+projection_coverage: topic-sword-world-rpg-complete-edition-strike@6ce0a8324e48702268952f86901e56dd
 ---
 
 # Strike
@@ -15,586 +15,609 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 ## Statements
 
-### Chapter 4: Weapon Combat / 4.4 Scores Used in Weapon Combat
+### Scores Used in Weapon Combat
 
-- **Attack power** , **strike power** , **bonus damage** , **critical target** , **evasion speed** , **defense power** , and **damage reduction** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00831))_
+- Attack power , strike power , bonus damage , critical target , evasion speed , defense power , and damage reduction . _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00770))_
 
-### Chapter 4: Weapon Combat / 4.4 Scores Used in Weapon Combat / 【 Strike Power 】
+### 【 Strike Power 】
 
-- Strike power is the same number as the _required strength_ of the weapon used. However, if the weapon is a _two-handed_ weapon, it's instead _required strength + 5_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00846))_
+- Strike power is the same number as the required strength of the weapon used. However, if the weapon is a two-handed weapon, it's instead required strength + 5 . _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00778))_
 
-### Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / 4.5.2 Determining Base Damage (Strike Roll)
+### Determining Base Damage (Strike Roll)
 
-- On the table, look at the column where the **key number** equals your character's _strike power_ . For example, if your character's strike power is 14, you only need to look at key number column 14. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00898))_
+- On the table, look at the column where the key number equals your character's strike power . For example, if your character's strike power is 14, you only need to look at key number column 14. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00833))_
 
-### Chapter 4: Weapon Combat / 4.6 Attacks From Monsters Against Characters / 4.6.2 Damage Dealt by Monsters
+### Monsters
 
-- This is determined for each monster by the monster’s **strike points** . Strike points are fixed and do not change. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00958))_
+- This is determined for each monster by the monster's strike points . Strike points are fixed and do not change. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00889))_
 
-### Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
+### 4.6.5 Final Damage
 
-- Bucky then determines the damage he deals. Bucky is wielding a battle-ax (required strength 15) with both hands, so he has a strike power of _20_ . The result of his strike roll is _11_ (base damage _9_ ). That's a _critical_ . His following 2D roll is _9_ (base damage _7_ ). His bonus damage is _5_ (fighter skill level 3, strength bonus +2), which brings the total amount of damage to 9+7+5= **21** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
+- The final damage your character suffers from a monster equals the monster's strike points minus the result of your defense roll plus your character's damage reduction . _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00909))_
 
-### Chapter 4: Weapon Combat / 【 Magical Armor 】
+### Example:
 
-- Magical weapons and armor are not usually traded, but if you are very lucky you _may_ be able to buy them if they’re +1. A guide to prices can be found in _Chapter 14: Treasure_ (see p. 240). Also, they offer basically _no_ bonus to strike power or defense power, same as required strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01107))_
+- Bucky then determines the damage he deals. Bucky is wielding a battle-ax (required strength 15) with both hands, so he has a strike power of 20 . The result of his strike roll is 11 (base damage 9 ). That's a critical . His following 2D roll is 9 (base damage 7 ). His bonus damage is 5 (fighter skill level 3, strength bonus +2), which brings the total amount of damage to 9+7+5= 21 . _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00947))_
 
-### Chapter 4: Weapon Combat / 4.10.4 Mithril Silver Weapons and Armor
+### 【 Magical Armor 】
 
-- Mithril silver is also a very strong metal. For this reason, strike power and defense power are calculated by adding _+5_ to required strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01113))_
+- Magical weapons and armor are not usually traded, but if you are very lucky you may be able to buy them if they're +1. A guide to prices can be found in Chapter 14: Treasure (see p. 240). Also, they offer basically no bonus to strike power or defense power, same as required strength. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01028))_
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Energy Bolt ]
+### Mithril Silver Weapons and Armor
 
-- Base Mental Power Cost=5 Distance=30 meters Area=One Duration=Instant Effect=Creates a strike power 10 arrow of energy Type=Damage (Pure energy-type) Expansion=Final score, distance, targets, damage certainty Resist=Reduced effect _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01513))_
+- Mithril silver is also a very strong metal. For this reason, strike power and defense power are calculated by adding +5 to required strength. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01035))_
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Enchant Weapon ]
+### [ Enchant Weapon ]
 
-- This spell can be used on any weapon (of any type) and adds +5 to that weapon's strike power. So a strike power 10 weapon would become 15. Attack power and critical target do not change. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01517))_
+- This spell can be used on any weapon (of any type) and adds +5 to that weapon's strike power. So a strike power 10 weapon would become 15. Attack power and critical target do not change. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01458))_
 
-- This magic allows you to deal damage to monsters that cannot be damaged by normal weapons. However, in this case, the strike roll can only be made with the strike power set to 5, regardless of the weapon's own strike power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01518))_
+### Ancient Magic List
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=10
+- the strike roll can only be made with the strike power set to 5, regardless of the weapon's own strike power. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01462))_
 
-- This is a spell used on weapons. The targeted weapon will now emit a magical flame from its striking end, adding a +10 bonus to the weapon's own strike power. This spell will _not_ change the attack power or critical target of the weapon. For monsters that are weak against fire, you can add an extra +10 bonus to strike power (+20 total). Conversely, this spell's bonus to strike power will not apply to monsters that resist fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01634))_
+### [ Fire Weapon ]
 
-- This spell can be used to damage monsters that only magic weapons are effective against. However, in such a case, the strike power will be _10_ regardless of the strike power of the weapon itself. Monsters that can only be wounded by magic and are _also_ immune to fire _cannot_ be dealt damage by attacking them with a weapon that had this spell cast on it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01635))_
+- This is a spell used on weapons. The targeted weapon will now emit a magical flame from its striking end, adding a +10 bonus to the weapon's own strike power. This spell will not change the attack power or critical target of the weapon. For monsters that are weak against fire, you can add an extra +10 bonus to strike power (+20 total). Conversely, this spell's bonus to strike power will not apply to monsters that resist fire. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01608))_
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Fireball ]
+- This spell can be used to damage monsters that only magic weapons are effective against. However, in such a case, the strike power will be 10 regardless of the strike power of the weapon itself. Monsters that can only be wounded by magic and are also immune to fire cannot be dealt damage by attacking them with a weapon that had this spell cast on it. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01609))_
 
-- This is a spell of destruction that is forbidden by wise sorcerers. It creates an explosion centered on a point in space within a 3 meter radius, dealing fire and shock damage to everything within. Its strike power is 20 (10 with no criticals on a successful resist). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01789))_
+### [ Lightning ]
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / Resist=Reduced effect
+- Base Mental Power Cost=15 Distance=Caster Area=A space 1 meter high and wide and 20 meters long Duration=Instant Effect=Emits strike power 20 lightning Type=Damage (Electric-type) Expansion=Final score, area length (see description), damage certainty Resist=Reduced effect _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01703))_
 
-- This spell creates a sudden storm containing countless pieces of ice the size of pebbles, in a space within a 5 meter radius centered on a point, dealing cold damage to everything within range. Its strike power is 20. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01858))_
+### [ Fireball ]
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Acid Cloud ]
+- This is a spell of destruction that is forbidden by wise sorcerers. It creates an explosion centered on a point in space within a 3 meter radius, dealing fire and shock damage to everything within. Its strike power is 20 (10 with no criticals on a successful resist). _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01783))_
 
-- Area=A space with a 5 meter radius Duration=Instant Effect=Deals strike power 30 damage to targets within the area of effect Type=Damage (Poison gas-type) Expansion=Final score, distance, area, damage certainty Resist=Reduced effect _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01863))_
+### Blizzard ]
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Steal Mind ]
+- Expansion=Final score, distance, area, damage certainty Resist=Reduced effect This spell creates a sudden storm containing countless pieces of ice the size of pebbles, in a space within a 5 meter radius centered on a point, dealing cold damage to everything within range. Its strike power is 20. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01879))_
 
-- Effect=Steals strike power 20 mental power from the target and gives it to the caster Type=Lost, damage (Mind-type, see description) Expansion=Final score, distance, targets, damage certainty Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01914))_
+### [ Lightning Bind ]
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Lightning Bind ]
+- Lightning Bind is a spell that entangles the target in a net of electricity, completely sealing their movement. Furthermore, you can deal electric shock damage to the target every round. Its strike power is 20. If the target successfully resists, the damage is reduced (following the rules for damage magic) and the target can move. However, in this case, they will take a -4 penalty to the final score of all success rolls, because they must fight against the pain and binding they receive from the electric net. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02131))_
 
-- _Lightning Bind_ is a spell that entangles the target in a net of electricity, completely sealing their movement. Furthermore, you can deal electric shock damage to the target every round. Its strike power is 20. If the target successfully resists, the damage is _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02043))_
+### [ Meteor Strike ]
 
-### Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Meteor Strike ]
+- The fact that there are countless unseen masses of rock floating in the sky is considered a matter of course among sages. These rocks fall to the ground at a rate of about once every hundred years. These rocks floating in the sky are called meteorites. The spell Meteor Strike is a spell that allows the caster to control a meteorite (a very small one) at will, and make it fall to the ground. The meteorite will fall the moment you finish the spell, causing a large explosion. Targets within the area of effect will be hit by shockwaves and fragments of the meteorite, suffering strike power 50 _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02253))_
 
-- The fact that there are countless unseen masses of rock floating in the sky is considered a matter of course among sages. These rocks fall to the ground at a rate of about once every hundred years. These rocks floating in the sky are called meteorites. The spell _Meteor Strike_ is a spell that allows the caster to control a meteorite (a very small one) at will, and make it fall to the ground. The meteorite will fall the moment you finish the spell, causing a large explosion. Targets within the area of effect will be hit by shockwaves and fragments of the meteorite, suffering strike power 50 _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02135))_
+### 5th Level Spirit Magic List [ Control Plant ]
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / (Ent/Greater Plant Spirit)
+- The scores for strike points, defense points, and life points/resistance will depend on the size of the plant being controlled, but for a normal tree they will be about as follows. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02588))_
 
-- The scores for strike points, defense points, and life points/resistance will depend on the size of the plant being controlled, but for a normal tree they will be about as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02410))_
+### [ Shoot Arrow ] (Sylph/Wind Spirit)
 
-- Strike Points=10 Defense Points=7 Life Points/Resistance=30/15(8) The game master should modify these scores according to the size of the plant being controlled. Additionally, if the spell is removed by _Dispel Magic_ , etc. the controlled plants will immediately return to their original tree state. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02411))_
+- Type=Counters (Negates): Missile Protection Expansion=Distance, targets Resist=None When you cast this spell, the caster's arrow will be carried by a sylph, ensuring that it hits the target. The strike power of the arrow is a uniform 20, the magic power of the caster is used as bonus damage. Also, if you roll 10 or greater on your damage check, a critical will occur. The target cannot resist this spell. However, armor protection is effective. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02598))_
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Shoot Arrow ] (Sylph/Wind Spirit)
+### [ Valkyrie Javelin ] (Valkyrie/Mind Spirit)
 
-- When you cast this spell, the caster's arrow will be carried by a sylph, ensuring that it hits the target. The strike power of the arrow is a uniform 20, the magic power of the caster is used as bonus damage. Also, if you roll 10 or greater on your damage check, a _critical_ will occur. The target cannot resist this spell. However, armor protection is effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02419))_
+- By casting this spell, the caster can strike the target with a javelin of light. Its strike power is 30. This javelin will always hit the target as long as they're within the caster's view, even if they're not in the line of fire. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02622))_
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Valkyrie Javelin ] (Valkyrie/Mind Spirit)
+### [ Missile Protection ] (Sylph/Wind Spirit)
 
-- By casting this spell, the caster can strike the target with a javelin of light. Its strike power is 30. This javelin will always hit the target as long as they're within the caster's view, even if they're not in the line of fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02433))_
+- This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that exceeds 30 are beyond the limits of sylph's abilities, and therefore cannot be the target of the effect. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02632))_
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Missile Protection ] (Sylph/Wind Spirit)
+### [ Ice Storm ] (Fenrir/Greater Ice Spirit)
 
-- This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02439))_
+- Base Mental Power Cost=40 Distance=30 meters Area=A space with a 10 meter radius Duration=Instant Effect=Creates an ice storm, dealing strike power 30 damage to targets within range Type=Damage (Cold-type) Expansion=Final score, distance, area, damage certainty Resist=Reduced effect _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02765))_
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Crack ] (Behemoth/Greater Earth Spirit)
+- This spell creates a violent freezing ice storm in a 10 meter radius centered on a point in space. The ice storm deals cutting damage from countless ice shards and frostbite damage from the terrible cold air to everything within its range. Its strike power is 30. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02766))_
 
-- Effect=Trap the target between a crack in the ground, dealing strike power 30 damage Type=Damage (Earthquake-type) Expansion=Final score, distance, targets, target volume, damage certainty Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02536))_
+### [ Firestorm ] (Efreet/Greater Fire Spirit)
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Ice Storm ] (Fenrir/Greater Ice Spirit)
+- This spell creates a storm of scorching flame in a 10 meter radius centered on a point in space. The firestorm deals fire and heat damage to everything within its radius. Its strike power is 30. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02805))_
 
-- This spell creates a violent freezing ice storm in a 10 meter radius centered on a point in space. The ice storm deals cutting damage from countless ice shards and frostbite damage from the terrible cold air to everything within its range. Its strike power is 30. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02577))_
+### [ Force ]
 
-### Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Firestorm ] (Efreet/Greater Fire Spirit)
+- When you chant this spell, an invisible shockwave is emitted from the caster, dealing strike power 10 damage to the target. If the target successfully resists, the strike power becomes 0 and no criticals occur. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-03002))_
 
-- This spell creates a storm of scorching flame in a 10 meter radius centered on a point in space. The firestorm deals fire and heat damage to everything within its radius. Its strike power is 30. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02605))_
+### [ Holy Weapon ]
 
-### Chapter 5: Magic / 5.1.16 Basic Holy Magic List / [ Force ]
+- This additional strike power does not apply to anything other than undead. It also has no effect on (non-undead) enemies that can only be wounded by magical weapons, such as werewolves, etc. For undead that can only be wounded by magic weapons, strike power will be 10 regardless of the strike power of the weapon itself. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-03013))_
 
-- When you chant this spell, an invisible shockwave is emitted from the caster, dealing strike power 10 damage to the target. If the target successfully resists, the strike power becomes 0 and no criticals occur. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02767))_
+### [ Holy Light ]
 
-### Chapter 5: Magic / 5.1.16 Basic Holy Magic List / [ Holy Weapon ]
+- This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-03035))_
 
-- This additional strike power does not apply to anything other than undead. It also has no effect on (non-undead) enemies that can only be wounded by magical weapons, such as werewolves, etc. For _undead_ that can only be wounded by magic weapons, strike power will be _10_ regardless of the strike power of the weapon itself. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02774))_
+### Chapter 11: Notes on Magic / [ Fire Breath ]
 
-### Chapter 5: Magic / 5.1.16 Basic Holy Magic List / Duration=Instant
+- The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and the caster's magic power equals bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-04502))_
 
-- This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02789))_
+### [ Will-O-Wisp ]
 
-### Chapter 11: Notes on Magic / [ Wounds ]
+- The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on whether it has a score called mental power (points) . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits its target, it'll simply shatter. However, at the same time, the will-o-wisp emits a powerful shockwave. This shockwave's damage results from a strike power 10 strike roll plus bonus _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-05341))_
 
-- Effect=Cut up the opponent's body, dealing strike power 10 damage Type=Damage (Special) their presence, they are also viewed with fear and disgust by the general public. Countries that are negative towards magic sometimes have policies that exile rune masters from the country. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03732))_
+### [ Shade ]
 
-### Chapter 11: Notes on Magic / [ Steal Life ]
+- Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it's impossible to identify its shape because it' s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it's unlikely that your attacks will hit it (it'll definitely disintegrate if they do). They will always attack by ramming any being with a will that comes into their view. Its effect is exactly like a will-o-wisp attack, except that the damage is dealt to mental power instead of life force. Strike power is 10, bonus damage is 2, and only adventurer level can reduce it. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-05363))_
 
-- Effect=Take strike power 10 life force (points) from the target and give it to the caster. Type=Damage (Special, see explanation) Expansion=Final score, distance, targets, damage certainty Resist=Negated effect _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03785))_
+### [ Brownie ]
 
-### Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Breath ]
+- They also have a small amount of telekinesis, and will attack unwanted intruders by hitting them with things inside the mansion. The strike points when this attack hits vary depending on what is used for the attack. A small dish would be 5 points, a knife, etc. would be 7, and a large chest of drawers would be 9. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-05371))_
 
-- The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and the caster's magic power equals bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04049))_
+### [ Medusa ]
 
-### Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits
-
-- The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on _whether it has a score called mental power (points)_ . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits its target, it'll simply shatter. However, at the same time, the will-o-wisp emits a powerful shockwave. This shockwave’s damage results from a _strike power 10_ strike roll plus _bonus_ _damage 2_ . Armor is ineffective against this attack, and only adventurer level can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04770))_
-
-### Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits / [ Shade ]
-
-- Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3) Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll definitely disintegrate if they do). They will always attack by ramming any being with a will that comes into their view. Its effect is exactly like a will-o-wisp attack, except that the damage is dealt to mental power instead of life force. Strike power is 10, bonus damage is 2, and only adventurer level can reduce it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04778))_
-
-### Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits / [ Brownie ]
-
-- They also have a small amount of telekinesis, and will attack unwanted intruders by hitting them with things inside the mansion. The strike points when this attack hits vary depending on what is used for the attack. A small dish would be 5 points, a knife, etc. would be 7, and a large chest of drawers would be 9. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04791))_
-
-### Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / [ Medusa ]
-
-- Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=14/11 (4) Mental Points/Resistance=18/12 (5) Special Abilities=Petrify (Resist target score=10) Poison (Toxicity score 10, strike power 10, bonus damage 3) Not affected by poison and illness Sleepless _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04976))_
-
-- A medusa uses the snakes on her head to attack. A medusa has countless snakes (hair), and anyone who engages with a medusa in melee is exposed to these snakes' attacks. The snakes are poisonous, and anyone dealt damage by the snakes' attacks must immediately make a life force resistance roll against target score 10. If you fail, you immediately suffer damage resulting from a strike power 10 strike roll plus bonus damage 3. This damage can be reduced by adventurer level. If the resistance roll is successful, no poison damage is sustained. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04978))_
-
-### Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Small Basilisk
-
-- Life Points/Resistance=19/14 (7) Mental Points/Resistance=9/12 (5) Special Ability=Gaze (Resist target score=15, petrifying, once every 2 rounds) Poison blood (Toxicity score 15, strike power 10, bonus damage 8) Not affected by poison and illness Sleepless _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05116))_
+- A medusa uses the snakes on her head to attack. A medusa has countless snakes (hair), and anyone who engages with a medusa in melee is exposed to these snakes' attacks. The snakes are poisonous, and anyone dealt damage by the snakes' attacks must immediately make a life force resistance roll against target score 10. If you fail, you immediately suffer damage resulting from a strike power 10 strike roll plus bonus damage 3. This damage can be reduced by adventurer level. If the resistance roll is successful, no poison damage is sustained. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-05684))_
 
 ### Lesser Dragon
 
-- 197 damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05198))_
+- Lesser dragons have the ability to breathe fire, and are also resistant to fire. The lesser dragon's flames spread out in a semicircle, with a 20 meter forward radius. Those within range must make a mental power resistance roll against target score 17. If you fail, you'll suffer damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical attacks with fangs or claws on the same round in which it uses fire. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-06073))_
 
-### 13.2.7 Animals / [ Giant Rat ]
+### Ragnakang
 
-- (2) Strike Points=4/3/3 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=9/8 (1) Mental Points/Resistance=7/8 (1) Special Abilities=Disease (Intensity 5) Habitat=Underground tunnels, caves, ruins Languages=None Perception=Five senses (illumination) A giant rat is a huge rodent, about 1 meter long. However, they are intelligent and dexterous, and thus can stand on their hind legs and use simple tools. They are omnivorous, and usually live in groups. They are timid by nature and will not attack unless you seriously provoke them or invade their burrow without them knowing. Even on the rare occasion that they do attack you, they will quickly run away if you wound them, and you can easily drive them away with fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05222))_
+- Poison (toxicity score 13, strike power 20, bonus damage 6) Habitat=Underground labyrinths, secluded ruins _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-07602))_
 
-### 13.2.7 Animals
+### [ 2. Enemy strike rolls can no longer critical ]
 
-- Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
+- For strike points , apply strike power to Table 13-1: Key Number = Expected Equivalents , then add bonus damage to the result. Critical target is normally 10, _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-07877))_
 
-### 13.2.9 Undead / [ Buau Zombie ]
+### 《 Stone/Wind Cutter 》
 
-- Attack Points=/Strike Points/Evasion Points/ Defense Points=Based on previous Life Points/Resistance=Based on previous/Based on previous Mental Points/Resistance=-/Based on previous Special Abilities=Retains previous abilities Mental attack immunity Not affected by poison and illness Damage from healing magic Habitat=Various Languages=Based on previous Perception=Pseudo _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05618))_
+- The spirits, gnome and sylph, have this ability, and it's treated as damage magic. In other words, a strike roll damage check is made, and a successful mental power resistance roll will reduce strike power and prevent a critical from occurring. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-07947))_
 
-### 13.2.11 Daemons/Underworld Creatures / Intellect=Human
+### 《 Disintegrate 》
 
-- Poison (toxicity score 13, strike power 20, bonus damage 6) Habitat=Underground labyrinths, secluded ruins _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06038))_
+- The spirits, will-o-wisps and shade, will disintegrate upon the slightest shock (for instance, by bumping into a character, etc.). At this time, the character will suffer damage to both their life force and mental power. This is treated as damage magic. In other words, a strike roll damage check is made, and a successful mental power resistance roll will reduce strike power and prevent a critical from occurring. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-07949))_
 
-### 13.3 Converting Character Data to Monster Data / [ 1. The number of times the game master has to roll dice during combat will be drastically reduced ]
+### 《 Strong to Fire 》
 
-- For _strike points_ , apply strike power to _Table 13-1: Key Number = Expected Equivalents_ , then add bonus damage to the result. Critical target is normally 10, **Table 13-1: Key Number = Expected Equivalents** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06157))_
+- Resistant to fire attacks, so for magic that deals damage with fire ( Fire Bolt and Fireball ), checks are made at -10 to strike power (the strike power bonus of Fire Weapon is completely ineffective). Even if one of these monsters has the ability normal weapon immunity , it can still be wounded by a weapon that had Fire Weapon cast on it. However, strike power will be 0. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08026))_
 
-### 13.6 Handling Monster Special Abilities / 《 Stone/Wind Cutter 》
+### 《 Camouflage 》
 
-- The spirits, gnome and sylph, have this ability, and it's treated as damage magic. In other words, a strike roll damage check is made, and a successful mental power resistance roll will reduce strike power and prevent a critical from occurring. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06212))_
+- Monsters with this ability disguise themselves in a particular way, wait for a victim to approach, then strike when he or she is not careful. To discover this, you must succeed on a resistance roll against the indicated target score using ranger skill level + intelligence bonus as the baseline score. If you fail, you'll suffer a surprise attack , with a -4 penalty to your evasion speed for one round, and you cannot counterattack or use magic. From the second round onwards, it'll be normal combat. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08042))_
 
-### 13.6 Handling Monster Special Abilities / 《 Disintegrate 》
+### Chapter 14: / 《 Flame Smasher 》
 
-- The spirits, will-o-wisps and shade, will disintegrate upon the slightest shock (for instance, by bumping into a character, etc.). At this time, the character will suffer damage to both their life force _and_ mental power. This is treated as damage magic. In other words, a strike roll damage check is made, and a successful mental power resistance roll _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06214))_
+- Since this is always spouting flames (unless it's in its sheath), it has +10 to strike power, just like Fire Weapon . Therefore, its strike power is 25 (30 with two hands). _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08231))_
 
-### 13.6 Handling Monster Special Abilities / 《 Strong to Fire 》
+### Chapter 14: / [ Explosive Bullet ]
 
-- Resistant to fire attacks, so for magic that deals damage with fire ( _Fire Bolt_ and _Fireball_ ), checks are made at -10 to strike power (the strike power bonus of _Fire Weapon_ is completely ineffective). Even if one of these monsters has the ability _normal weapon immunity_ , it can still be wounded by a weapon that had _Fire Weapon_ cast on it. However, strike power will be 0. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06297))_
+- This bullet explodes on impact, dealing strike power 30 damage regardless of the sling used. As usual, bonus damage is fi ghter/thief/ranger skill level + strength bonus , and furthermore, your opponent can only reduce this damage with adventurer level (monster level). _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08569))_
 
-- If you cast magic with a strike power of 10 on one of these monsters, such as _Fire Bolt_ , and they resist it, you _cannot_ make a strike roll and the damage dealt will only be _magic power_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06298))_
+### Chapter 16: / Attacks From Monsters Against Characters
 
-### 13.6 Handling Monster Special Abilities / 《 Camouflage 》
+- Once the attack hits, it's the same. The monster's strike points are fixed, and the difference is based on protection from the character's armor. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08852))_
 
-- Monsters with this ability disguise themselves in a particular way, wait for a victim to approach, then strike when he or she is not careful. To discover this, you must succeed on a resistance roll against the indicated target score using _ranger skill level + intelligence bonus_ as the baseline score. If you fail, you’ll suffer a _surprise attack_ , with a -4 penalty to your evasion speed for one round, and you cannot counterattack or use magic. From the second round onwards, it’ll be normal combat. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06314))_
+### Chapter 16: / Strike Power Modifier
 
-### Chapter 14: Treasures / 《 Flame Smasher 》
+- Strike power modifier is a modifier added to a weapon's strike power . In the basic rules, a weapon's required strength is its strike power, but with this rule, a weapon's strike power equals weapon's required strength plus this strike power modifier . In other words, even if the required strength is the same , one can say a weapon with a higher strike power modifier will deal greater damage to an opponent. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08868))_
 
-- Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ . Therefore, its strike power is 25 (30 with two hands). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
+### Chapter 16: / Snipe
 
-### Chapter 14: Treasures / [ Explosive Bullet ]
-
-- This bullet explodes on impact, dealing strike power 30 damage regardless of the sling used. As usual, bonus damage is _fighter/thief/ranger skill level + strength bonus_ , and furthermore, your opponent can _only_ reduce this damage with adventurer level (monster level). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06831))_
-
-### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Strike Power Modifier
-
-- **Strike power modifier** is a modifier added to a weapon’s _strike power_ . In the basic rules, a weapon's required strength _is_ its strike power, but with this rule, a weapon's strike power equals **weapon's required strength plus this strike power modifier** . In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
-
-### Chapter 16: Optional Rules for Combat / Snipe
-
-- However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
+- However, this critical target reduction only applies to the fi rst strike roll. From the second roll onward after a critical, the critical target will be as normal . _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08941))_
 
 ### Weapon Aim
 
-- 1. Make a strike roll the same as you would for a normal attack. However, this strike roll _cannot_ result in a _critical_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07228))_
+- Make a strike roll the same as you would for a normal attack. However, this strike roll cannot result in a critical . _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-09004))_
 
-### 16.9 Special Weapons / Lucerne Hammer
+### Sweep
 
-- It allows you to sweep your opponent by hooking their foot. For this attack, the attack power modifier is ±0, and the strike power is 0 (the _modifier_ is _not_ 0. The strike power _itself_ is 0-- this attack method is not suitable for dealing damage), and there are _no_ criticals. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07285))_
+- It allows you to sweep your opponent by hooking their foot. For this attack, the attack power modifier is ±0, and the strike power is 0 (the modifier is not 0. The strike power itself is 0-- this attack method is not suitable for dealing damage), and there are no criticals. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-09058))_
 
-### 16.9 Special Weapons / Shield Attack
+### Shield Attack
 
-- The strike power is the same as the shield’s required strength (strike power modifier ±0), and the critical target is 12. Since you’re probably _not_ holding it in your dominant hand, you’ll still suffer a - 2/-4 penalty. Even if it’s a magic shield, the _only_ bonus damage you get is the usual ( _fighter/thief skill level + strength bonus_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07307))_
+- The strike power is the same as the shield's required strength (strike power modifier ±0), and the critical target is 12. Since you're probably not holding it in your dominant hand, you'll still suffer a 2/-4 penalty. Even if it's a magic shield, the only bonus damage you get is the usual (fi ghter/thief skill level + strength bonus ). _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-09089))_
 
-### 16.9 Special Weapons / Ballista
+### Ballista
 
-- When using a ballista, the strike power can often _exceed_ 50, but even in that case, the damage check should _still_ be made on column 50 of the _Rating Table_ . Even so, the bonus damage will be **shooter's skill level + (ballista's** **required strength ÷ 3)** , so a ballista with a _greater_ required strength will be _more_ powerful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07315))_
+- When using a ballista, the strike power can often exceed 50, but even in that case, the damage check should still be made on column 50 of the Rating Table . Even so, the bonus damage will be shooter's skill level + (ballista's required strength ÷ 3) , so a ballista with a greater required strength will be more powerful. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-09097))_
 
 
 ## Technical atoms
 
-### Technical frame 1: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / 4.5.2 Determining Base Damage (Strike Roll)
+### Technical frame 1: Determining Base Damage (Strike Roll)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00901))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00836))_
 
-> The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's _strike power_ . That's the **base damage** . This process is called a **strike roll** .
+> The player should then roll 2D. Follow along the row next to the result and look for the number under the key number column that matches your character's strike power . That's the base damage . This process is called a strike roll .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00899))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00835))_
 
-> **Table 4-2: Rating Table, Key Number Column 14**
+> Table 4-2: Rating Table, Key Number Column 14
 
-### Technical frame 2: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / 4.5.2 Determining Base Damage (Strike Roll)
+### Technical frame 2: Determining Base Damage (Strike Roll)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00904))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00839))_
 
-> Now that he’s hit the goblin, Ducard II must determine how much damage his strike dealt. His weapon is a broadsword (a one-handed weapon) with required strength 14, so his strike power is _14_ .
+> Now that he's hit the goblin, Ducard II must determine how much damage his strike dealt. His weapon is a broadsword (a one-handed weapon) with required strength 14, so his strike power is 14 .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00901))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00836))_
 
 > The player should then roll 2D.
 
-### Technical frame 3: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / 4.5.2 Determining Base Damage (Strike Roll)
+### Technical frame 3: 4.6.5 Final Damage
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00905))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00912))_
 
-> The result of his 2D roll is 6, so the number on row _6_ under key number column _14_ on the Rating Table is **4** . Base damage is **4 points** .
+> If the defense roll came up double ones , no such calculation would be made, and the goblin's 7 strike points would be the damage.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00904))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00910))_
 
-> Now that he’s hit the goblin, Ducard II must determine how much damage his strike dealt.
+> Final damage = monster's strike points - (defense roll result + damage reduction)
 
-### Technical frame 4: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Enchant Weapon ]
+### Technical frame 4: Mithril Silver Weapons and Armor
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01519))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01039))_
+
+> Mithril silver, like regular silver, is a metal that exists in the spirit world. Therefore, a shaman can wear mithril silver armor and still use spirit magic.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01038))_
+
+> Mithril silver weapons can deal damage to monsters that normal weapons cannot harm.
+
+### Technical frame 5: Ancient Magic List
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01463))_
 
 > This spell can also be cast directly on a living creature. In that case, strike power of bare hands, claws, fangs, etc. will gain +5 (or +1 if strike points).
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01520))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01464))_
 
 > If you apply it to a projectile such as a bow, everything fired from it will gain +5 to strike power, which makes it effective against monsters that normal weapons cannot affect.
 
-### Technical frame 5: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Shoot Arrow ] (Sylph/Wind Spirit)
+### Technical frame 6: [ Lightning Bind ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02419))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02131))_
 
-> When you cast this spell, the caster's arrow will be carried by a sylph, ensuring that it hits the target. The strike power of the arrow is a uniform 20, the magic power of the caster is used as bonus damage. Also, if you roll 10 or greater on your damage check, a _critical_ will occur. The target cannot resist this spell. However, armor protection is effective.
+> Lightning Bind is a spell that entangles the target in a net of electricity, completely sealing their movement. Furthermore, you can deal electric shock damage to the target every round. Its strike power is 20. If the target successfully resists, the damage is reduced (following the rules for damage magic) and the target can move. However, in this case, they will take a -4 penalty to the final score of all success rolls, because they must fight against the pain and binding they receive from the 
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02413, source-range-870a16bc-02414, source-range-870a16bc-02415, source-range-870a16bc-02416, source-range-870a16bc-02418))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02125, source-range-de1806a5-02126, source-range-de1806a5-02127, source-range-de1806a5-02128, source-range-de1806a5-02129, source-range-de1806a5-02130))_
 
-> Base Mental Power Cost=20 Distance=30 meters
+> Base Mental Power Cost=40
 
-> Area=One Duration=Instant
+> Distance=10 meters
 
-> Effect=Automatically hit the target with a strike power 20 arrow
+> Area=One
 
-> Type=Counters (Negates): _Missile Protection_
+> Duration=18 rounds
 
-> Expansion=Distance, targets Resist=None
+> Effect=Capture the target with a net of electricity, which deals strike power 20 damage each round.
 
-### Technical frame 6: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Shoot Arrow ] (Sylph/Wind Spirit)
+> Type=Target score, damage (Electric-type) Expansion=Final score, duration, distance, targets, damage certainty Resist=Reduced effect
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02420))_
+### Technical frame 7: [ Lightning Bind ]
 
-> This magic is a counter spell to the spirit magic _Missile Protection_ , so when the target of the arrow is under the influence of _Missile Protection_ , the wind spirit powers of the same nature will interfere with each other, nullifying both.
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02133))_
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02421))_
+> This spell works on targets slightly larger than a human (such as an ogre or a manticore), but has no effect on targets of a larger size than that (such as a dragon or a roc).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02132))_
+
+> You may only make a resistance roll against this spell once per round in which the spell is cast.
+
+### Technical frame 8: 5th Level Spirit Magic List [ Control Plant ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02588))_
+
+> The scores for strike points, defense points, and life points/resistance will depend on the size of the plant being controlled, but for a normal tree they will be about as follows.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02587, source-range-de1806a5-02589, source-range-de1806a5-02590))_
+
+> Monster Level =5 Rarity=15 Agility=6 Movement Speed=6 Attack Points=12 (5) Evasion Points=12 (5) Mental Points/Resistance=-/12(5) Special Abilities=Mental attack immunity, Weak to fire
+
+> Strike Points=10 Defense Points=7
+
+> Life Points/Resistance=30/15(8)
+
+### Technical frame 9: [ Shoot Arrow ] (Sylph/Wind Spirit)
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02599))_
+
+> This magic is a counter spell to the spirit magic Missile Protection , so when the target of the arrow is under the influence of Missile Protection , the wind spirit powers of the same nature will interfere with each other, nullifying both.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02600))_
 
 > Note that this spell cannot deal damage to monsters that can only be wounded by silver or magical weapons, such as werewolves, etc.
 
-### Technical frame 7: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Missile Protection ] (Sylph/Wind Spirit)
+### Technical frame 10: [ Missile Protection ] (Sylph/Wind Spirit)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02439))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02632))_
 
-> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
+> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that exceeds 30 are beyond the limits of sylph's abilities, and therefore cannot be the target of the effect.
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02436, source-range-870a16bc-02437, source-range-870a16bc-02438))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02625, source-range-de1806a5-02626, source-range-de1806a5-02627, source-range-de1806a5-02628, source-range-de1806a5-02629, source-range-de1806a5-02630, source-range-de1806a5-02631))_
 
-> Base Mental Power Cost=20 Distance=20 meters
+> Base Mental Power Cost=20
 
-> Area=A space with a 5 meter radius Duration=18 rounds Effect=Protect yourself from projectile attacks
+> Distance=20 meters
 
-> Type=Countered (Negated) By: _Shoot Arrow_ Expansion=Duration, distance, area Resist=None
+> Area=A space with a 5 meter radius
 
-### Technical frame 8: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Missile Protection ] (Sylph/Wind Spirit)
+> Duration=18 rounds
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02439))_
+> Effect=Protect yourself from projectile attacks
 
-> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that _exceeds_ 30 are beyond the limits of sylph's abilities, and therefore _cannot_ be the target of the effect.
+> Type=Countered (Negated) By: Shoot Arrow Expansion=Duration, distance, area
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02440))_
+> Resist=None
+
+### Technical frame 11: [ Missile Protection ] (Sylph/Wind Spirit)
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02632))_
+
+> This spell specifies a point in space and affects the space within a 5 meter radius from it. Its effect is to protect those within range from projectile attacks. However, projectiles with a strike power that exceeds 30 are beyond the limits of sylph's abilities, and therefore cannot be the target of the effect.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02633))_
 
 > The spell's power does not have to affect targets that the caster does not desire, even if they are within the area of effect.
 
-### Technical frame 9: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Crack ] (Behemoth/Greater Earth Spirit)
+### Technical frame 12: [ Holy Weapon ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02536))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-03012))_
 
-> Effect=Trap the target between a crack in the ground, dealing strike power 30 damage Type=Damage (Earthquake-type) Expansion=Final score, distance, targets, target volume, damage certainty Resist=Negated effect
+> This is a spell that applies a negative force against undead to a weapon, rather than to space like Turn Undead . As a result of this, you can add 10 to the strike power of a normal weapon when making a damage check against undead.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02535))_
-
-> Base Mental Power Cost=35 Distance=30 meters Area=One Duration=Instant
-
-### Technical frame 10: Chapter 5: Magic / 5.1.16 Basic Holy Magic List / [ Holy Weapon ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02773))_
-
-> This is a spell that applies a negative force against undead to a weapon, rather than to space like _Turn Undead_ . As a result of this, you can add 10 to the strike power of a normal weapon when making a damage check against undead.
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02769, source-range-870a16bc-02770, source-range-870a16bc-02771, source-range-870a16bc-02772))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-03004, source-range-de1806a5-03005, source-range-de1806a5-03006, source-range-de1806a5-03007, source-range-de1806a5-03008, source-range-de1806a5-03009, source-range-de1806a5-03010, source-range-de1806a5-03011))_
 
 > Base Mental Power Cost=8
 
 > Distance=10 meters
 
-> Area=One weapon Duration=18 rounds Effect=+10 to a weapon's strike power against undead
+> Area=One weapon
 
-> Type=Weapon enhancement Expansion=Duration, distance, targets Resist=None
+> Duration=18 rounds
 
-### Technical frame 11: Chapter 5: Magic / 5.1.16 Basic Holy Magic List / Duration=Instant
+> Effect=+10 to a weapon's strike power against undead
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02789))_
+> Type=Weapon enhancement
 
-> This spell emits a light from your hands that is harmful to undead. As a result, you can deal damage to undead within 10 meters of the caster. Its strike power is 20.
+> Expansion=Duration, distance, targets
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02787, source-range-870a16bc-02788))_
+> Resist=None
 
-> Effect=Emits holy light, dealing strike power 20 damage to undead within range Type=Damage (Special) Counters (Overpowers): _Shade_ , _Spirit Wall: Shade_
+### Technical frame 13: [ Holy Light ]
 
-> Expansion=Final score, area, damage certainty Resist=Reduced effect
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-03026, source-range-de1806a5-03027, source-range-de1806a5-03028, source-range-de1806a5-03029, source-range-de1806a5-03030, source-range-de1806a5-03031, source-range-de1806a5-03033, source-range-de1806a5-03034))_
 
-### Technical frame 12: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits
+> Base Mental Power Cost=12
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04770))_
+> Distance=Caster
 
-> The other type is one that collides directly with anything that comes into view. Will-o-wisps only target things that have a functioning mind. They will not target plants, minerals, vessels, etc. that do not have intelligence. They also will not attack low grade undead that do not have a mind. However, sleeping humans are subject to attack. Please make your judgment based on _whether it has a score called mental power (points)_ . Will-o-wisp attacks are always successful. When a Will-O-Wisp hits
+> Area=A space within a 10 meter radius from the caster
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04771))_
+> Duration=Instant
 
-> If you strike a will-o-wisp with a melee weapon (it doesn't have to be silver or magical), you can destroy it, but the attacker will also suffer damage as if they were hit by the will-o-wisp.
+> Effect=Emits holy light, dealing strike power 20 damage to undead within range
 
-### Technical frame 13: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits / [ Shade ]
+> Type=Damage (Special)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04778))_
+> Expansion=Final score, area, damage certainty
 
-> Life Points/Resistance=1/8 (1) Mental Points/Resistance=-/10 (3) Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it’s impossible to identify its shape because it’s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it’s unlikely that your attacks will hit it (it’ll
+> Resist=Reduced effect
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04777))_
+### Technical frame 14: [ Shade ]
 
-> Languages=None Perception=Magic
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-05363))_
 
-### Technical frame 14: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits / [ Brownie ]
+> Shade is a spirit of darkness, and also a mind spirit that controls fear. All natural light within 5 meters of its body is canceled out, leaving you in total darkness. Its body seems to be dark and spherical, but it's impossible to identify its shape because it' s in the dark. Therefore, attacks against shades always suffer a -4 penalty. Since the shade itself has 12 evasion points, it's unlikely that your attacks will hit it (it'll definitely disintegrate if they do). They will always attack by
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04785))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-05358, source-range-de1806a5-05359, source-range-de1806a5-05360, source-range-de1806a5-05361, source-range-de1806a5-05362))_
 
-> Mental attack immunity Not affected by poison and illness Teleport (Limited) Illusion
+> Habitat=Anywhere
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04781, source-range-870a16bc-04782, source-range-870a16bc-04783, source-range-870a16bc-04784, source-range-870a16bc-04786, source-range-870a16bc-04787, source-range-870a16bc-04788))_
-
-> Monster Level=3
-
-> Rarity=14 (However, a shaman always knows) Agility=14 Movement Speed=Special Number=Solo to several
-
-> Frequency=Very Rare Intellect=Human Reaction=Neutral to violent
-
-> Attack Points=Furniture ： 10 (3) Strike Points=5 to 9 Evasion Points=Defense Points=Life Points/Resistance=-/Mental Points/Resistance=18/12 (5) Special Abilities=Physical attack immunity
-
-> Habitat=Old mansions
-
-> Languages=Silent spirit, mansion residents’ language
+> Languages=None
 
 > Perception=Magic
 
-### Technical frame 15: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.4 Spirits / [ Sprite ]
+> Life Points/Resistance=1/8 (1)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+> Mental Points/Resistance=-/10 (3)
 
-> Sprites are said to be the spirits that control the emotion of shame (the function of the mind). A mad sprite remains invisible and attacks nearby creatures with its fangs. Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. When attacking a mad sprite, a -4 modifier will be imposed. Also, you cannot cast magic on mad sprites.
+### Technical frame 15: Lesser Dragon
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04826, source-range-870a16bc-04827, source-range-870a16bc-04828, source-range-870a16bc-04830))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-06073))_
 
-> Monster Level=4
+> Lesser dragons have the ability to breathe fire, and are also resistant to fire. The lesser dragon's flames spread out in a semicircle, with a 20 meter forward radius. Those within range must make a mental power resistance roll against target score 17. If you fail, you'll suffer damage resulting from a strike power 20 strike roll plus 10 points of bonus damage. The use of fire is at the dragon's discretion, and there is no limit to the number of times it can use it, but it cannot make physical a
 
-> Rarity=12 (However, a shaman always knows) Agility=18 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-06074))_
 
-> Evasion Points=14 (7) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Transparent
+> Anyone who hears the dragon's roar must make a mental power resistance roll against target score 17.
 
-> Perception=Magic
+### Technical frame 16: [ 2. Enemy strike rolls can no longer critical ]
 
-### Technical frame 16: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-07874))_
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05018))_
+> Rarity seems unnecessary, so we'll omit it.
 
-> Frequency=Rare (Kaios Island)/Very Rare (Other) Intellect=High Reaction=Neutral Attack Points=Fangs: 12 (5)/Claw: 13(6)/ Claw: 13 (6) Strike Points=8/7/7 Evasion Points=15 (8) Defense Points=8 Life Points/Resistance=12/13 (6) Mental Points/Resistance=20/14 (7) Special Abilities=5th level ancient magic (Magic Intensity/Magic Power=15/8) 5th level spirit magic (Magic Intensity/Magic Power=15/8) Mental attack immunity Not affected by poison and illness Habitat=Meadows, provided it’s Kaios Island (I
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-07871))_
 
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05016, source-range-870a16bc-05017))_
+> Table 13-1: Key Number = Expected Equivalents
 
-> Monster Level=5
+### Technical frame 17: Chapter 14: / 《 Flame Smasher 》
 
-> Rarity=13 Agility=18 Movement Speed=15 Number=One
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08231))_
 
-### Technical frame 17: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / [ Twintail Cat ]
+> Since this is always spouting flames (unless it's in its sheath), it has +10 to strike power, just like Fire Weapon . Therefore, its strike power is 25 (30 with two hands).
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05020))_
-
-> Twintail cats are the rulers and protectors of the cats of Kaios Island (the Islands of Azarn). All cats follow their commands. However, they rarely give commands, as they value the spirit of self-reliance that is characteristic of the cat family. When a situation beyond their control arises, they skillfully guide and encourage other races to act voluntarily in accordance with their goals. Also, magical beasts do not follow their orders.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05019))_
-
-> They can use ancient magic and spirit magic, but they are especially fond of illusions and magic that affects the mind.
-
-### Technical frame 18: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Small Basilisk
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05116))_
-
-> Life Points/Resistance=19/14 (7) Mental Points/Resistance=9/12 (5) Special Ability=Gaze (Resist target score=15, petrifying, once every 2 rounds) Poison blood (Toxicity score 15, strike power 10, bonus damage 8) Not affected by poison and illness Sleepless
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05115, source-range-870a16bc-05117, source-range-870a16bc-05118))_
-
-> Monster Level=5 Rarity=10 Agility=12 Movement Speed=7 Number=One Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:12 (5) Strike Points=13 Evasion Points=13 (6) Defense Points=9
-
-> Habitat=Deserts
-
-> Languages=None Perception=Five senses
-
-### Technical frame 19: Elder Dragon
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05202))_
-
-> Movement Speed=10/30 (air) Number=One Frequency=Very Rare Intellect=High Reaction=Neutral Attack Points=Fangs:22 (15)/Talon:23 (16)/Talon:23 (16)/Tail:22 (15) Strike Points=28/27/27/27
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05201))_
-
-> Monster Level=15 Rarity=10 Agility=10
-
-### Technical frame 20: 13.2.7 Animals / [ Giant Rat ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05222))_
-
-> (2) Strike Points=4/3/3 Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=9/8 (1) Mental Points/Resistance=7/8 (1) Special Abilities=Disease (Intensity 5) Habitat=Underground tunnels, caves, ruins Languages=None Perception=Five senses (illumination) A giant rat is a huge rodent, about 1 meter long. However, they are intelligent and dexterous, and thus can stand on their hind legs and use simple tools. They are omnivorous, and usually live in groups. They are timid by nature and will 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05223))_
-
-> You must roll 2D again.
-
-### Technical frame 21: 13.2.7 Animals / [ Giant Centipede ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05248))_
-
-> Rarity=7 Agility=10 Movement Speed=12 Number=One to several Frequency=Moderate Intellect=Almost none Reaction=Neutral Attack Points=Fangs: 9 (2) Strike Points=6+poison Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=16/10 (3) Mental Points/Resistance=5/8 (1) Special Abilities=Poison (Toxicity score 9, motor function decline=success roll-2) Mental attack immunity
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05247, source-range-870a16bc-05249))_
-
-> Monster Level=2
-
-> Habitat=Damp, gloomy places such as deep forests, jungles, caves, ruins, etc. Languages=None Perception=Five senses
-
-### Technical frame 22: 13.2.7 Animals / [ Scarlet Vulture ]
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05310))_
-
-> Rarity=10 Agility=15 Movement Speed=10/30 (air) Number=One to several Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Beak:10 (3)/Talons:11 (4) Strike Points=6/6 Evasion Points=10 (3) Defense Points=6 Life Points/Resistance=15/11 (4) Mental Points/Resistance=9/10 (3) Special Abilities=Capture Opponent’s attack is -2 Habitat=Mountains, meadows Languages=None Perception=Five senses (darkvision) The scarlet vulture is a large carnivorous bird, with a wingspan of up to 4 mete
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05309))_
-
-> Monster Level=3
-
-### Technical frame 23: 13.2.7 Animals
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05334))_
-
-> Evasion Points=10 (3) Defense Points=4 Life Points/Resistance=11/9 (2) Mental Points/Resistance=6/9 (2) Special Abilities=Bloodsuck (Strike power 10, bonus damage 2) Opponent's attack is -2 Habitat=Places sunlight does not reach, such as caves, etc.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05333))_
-
-> Attack Points=Fangs:9 (2) Strike Points=5
-
-### Technical frame 24: 13.2.7 Animals
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05336))_
-
-> Attacks made against a vampire bat while it’s in the air suffer a penalty of 2 due to the bat's keen perception plus the fact that it is flying.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05335))_
-
-> Also, to detach the vampire bat, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score.
-
-### Technical frame 25: 13.2.7 Animals / Giant Bat
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05339))_
-
-> Rarity=9 Agility=18 Movement Speed=20 Number=Several to around ten Frequency=Moderate Intellect=Animal Reaction=Hunger-based Attack Points=Fangs:10 (3)/Talon:10 (3)/ Talon:10 (3) Strike Points=6/6/6 Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=11/10 (3) Mental Points/Resistance=6/10 (3) Special Abilities=Capture Opponent's attack is -2
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05338, source-range-870a16bc-05340))_
-
-> Monster Level=3
-
-> Habitat=Places sunlight does not reach, such as caves, etc.
-
-### Technical frame 26: 13.2.7 Animals / Giant Toad
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05377))_
-
-> This is a huge toad with a body length of 3 meters. It extends its 5 meter long tongue and entangles its prey, and if it's a human-sized animal, it will swallow it whole.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05376))_
-
-> Languages=None Perception=Five senses
-
-### Technical frame 27: 13.2.7 Animals / Giant Toad
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
-
-> Alternatively, someone else could kill the toad, then cut its belly open and rescue the victim before they're digested. In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05381))_
-
-> 204 penalty, and if you hit, the damage check is made as normal, and if the toad dies, you can escape.
-
-### Technical frame 28: 13.2.7 Animals / Giant Toad
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05380))_
-
-> Those who are swallowed whole will continue to suffer strike power 10 damage plus bonus damage 4 each round spent inside the toad's belly. This damage cannot be prevented by armor and can only be reduced by adventurer level. Resistance rolls are also not possible. If you have a dagger, shortsword, or similar bladed weapon, you can use it to slice through the toad's belly and attempt to escape. You must make the attack at a -4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05382))_
-
-> In that case, if you deal more damage than the toad's remaining life points, that same damage (before it’s reduced by the toad's defense points) is also dealt to the victim inside its belly at the same time.
-
-### Technical frame 29: Chapter 14: Treasures / 《 Flame Smasher 》
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06519))_
-
-> Since this is always spouting flames (unless it’s in its sheath), it has +10 to strike power, just like _Fire Weapon_ . Therefore, its strike power is 25 (30 with two hands).
-
-**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06516, source-range-870a16bc-06517))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08226, source-range-de1806a5-08227, source-range-de1806a5-08228, source-range-de1806a5-08229))_
 
 > Rarity=14
 
 > Enchanter=Shiva, "The Friend of Salamander"
 
-### Technical frame 30: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+> Form=Bastard sword that spouts flames Required Strength=15 (Strike power 25, 30 with two hands)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+> Base Trade Price=160,000 gamels Powers=+1 to attack power and bonus damage. Always has Fire Weapon
 
-> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
+### Technical frame 18: Chapter 16: / Snipe
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08946))_
+
+> The difficulty is the opponent's monster level . If you fail, your opponent will notice you, you'll no longer receive bonuses from aiming, and you'll also miss the chance for a surprise attack .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08945))_
+
+> To prevent this, you can use the thief skill's hide ability or the ranger skill's camouflage ability.
+
+### Technical atom 19
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00837, source-range-de1806a5-00840))_
+
+> Example: The result of his 2D roll is 6, so the number on row 6 under key number column 14 on the Rating Table is 4 . Base damage is 4 points .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00838))_
+
+| entry | content |
+| --- | --- |
+| 8 | 6 6 6 7 7 7 8 8 8 8 8 8 8 8 9 9 9 9 10 10 |
+| 9 | Column 14 7 7 7 7 7 8 8 8 9 9 9 9 10 10 10 10 10 10 10 11 |
+| 10 | 14 8 8 8 8 8 8 9 9 9 9 10 10 10 10 10 10 11 11 11 11 |
+| 11 | ** 9 9 9 9 9 9 9 9 10 10 10 10 10 10 11 11 11 12 12 12 |
+| 12 | 1 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 12 12 12 13 13 |
+| 40 | 2 3 Key Number 4 41 42 43 44 45 46 47 48 49 50 |
+| 3 | 4 2D 2 ** ** ** ** ** ** ** ** ** ** ** 4 4 4 4 4 4 4 4 4 4 4 4 |
+| 4 | 5 5 6 6 6 6 6 6 6 6 6 6 |
+| 5 | 6 6 6 7 7 7 7 7 7 7 7 8 |
+| 6 | 7 7 7 7 8 8 9 9 9 9 10 10 |
+| 7 | 8 9 9 9 9 10 10 10 10 10 10 10 |
+| 8 | 10 10 10 10 10 10 10 11 12 12 12 The player should then roll 2D. |
+| 9 | 11 11 11 11 11 11 12 12 12 12 12 Follow along the row next to the result |
+| 10 | and look for the number under the key 11 12 12 12 12 12 13 13 13 13 13 |
+| 11 | number column that matches your 12 12 13 13 13 13 13 13 13 14 15 |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+Table 4-2: Rating Table, Key Number
+   8  6  6  6 7  7  7 8  8  8  8 8  8  8  8  9  9  9  9 10 10
+                                                                    Column  14
+   9  7  7  7 7  7  8 8  8  9  9 9  9  10 10 10 10 10 10 10 11
+                                                                                    14
+   10 8  8  8 8  8  8 9  9  9  9 10 10 10 10 10 10 11 11 11 11
+                                                                                    **
+   11 9  9  9 9  9  9 9  9 10 10 10 10 10 10 11 11 11 12 12 12
+                                                                                    1
+   12 10 10 10 10 10 10 10 10 10 10 10 10 10 10 11 12 12 12 13 13
+                                                                                    2
+                                                                                    3
+      Key Number
+                                                                                    4
+      40 41 42 43 44 45 46 47 48 49 50
+                                                                                    4
+ 2D 2  ** ** ** ** ** ** ** ** ** ** **
+                                                                                    4
+   3  4  4  4 4  4  4 4  4  4 4  4
+                                                                                    5
+   4  5  6  6 6  6  6 6  6  6 6  6
+                                                                                    6
+   5  6  6  7 7  7  7 7  7  7 7  8
+                                                                                    7
+   6  7  7  7 8  8  9 9  9  9 10 10
+                                                                                    8
+   7  9  9  9 9 10 10 10 10 10 10 10
+   8  10 10 10 10 10 10 10 11 12 12 12                                    The  player should then roll 2D.
+   9  11 11 11 11 11 11 12 12 12 12 12                                 Follow along the row next to the result
+                                                                    and look for the number under the key
+   10 11 12 12 12 12 12 13 13 13 13 13
+                                                                    number  column  that matches your
+   11 12 12 13 13 13 13 13 13 13 14 15
+                                                                    character's strike power. That's the base
+```
+
+</details>
+
+### Technical atom 20
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00913))_
+
+> If final damage is 0 or negative , that means you took no damage at all. The monster's attack was completely blocked by your armor.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-00911))_
+
+| entry | content |
+| --- | --- |
+| 7 | (goblin's strike points) - {0 (defense roll) +2 (damage reduction)} = 5 |
+| 7 | (goblin's strike points) - {6 (defense roll) +2 (damage reduction)} = -1 |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+Example:
+If  the  result  of  Ducard  II's  defense roll is 0 (roll 3) or 6 (roll 12), respectively, the final damage he will suffer is calculated to be:
+7 (goblin's strike points) - {0 (defense roll) +2 (damage reduction)} = 5
+7 (goblin's strike points) - {6 (defense roll) +2 (damage reduction)} = -1
+```
+
+</details>
+
+### Technical atom 21
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01001))_
+
+> It is important to note that such weapons and armor cannot exceed the limits of the weapon or armor itself. For example, if you want a high-quality broadsword, its required strength (size) is naturally limited to 8-16 . Since there is no such broadsword with a natural required strength of 17, that means there is no such thing as a broadsword with required strength 16 and strike power 17 .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01004))_
+
+| These high-quality weapons and armor | can | be | expensive. | Their | price increases | by 20% for | every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more | expensive, 4 lower | will | be 80% more expensive, and 5 lower will be twice the original price. |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| It is important to note that such | 5 less Required Strength Royal city level in a large country |  |  |  |  |  |  |  |  |  |
+| weapons and armor cannot exceed the | 4 less Required Strength Large city in a large country, royal city level in a small country |  |  |  |  |  |  |  |  |  |
+| limits of the weapon or armor itself. For | 3 less Required Strength Reasonable city |  |  |  |  |  |  |  |  |  |
+| example, if you | want a high-quality | 2 less Required Strength Town of about 1000 people |  |  |  |  |  |  |  |  |
+| broadsword, its required strength (size) | 1 less Required Strength All but the most remote village |  |  |  |  |  |  |  |  |  |
+| 4.10.2 | 4.10.4 |  |  |  |  |  |  |  |  |  |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+These high-quality weapons and armor  can  be  expensive.  Their  price increases  by 20% for  every 1 required strength lower than usual. 2 lower will be 40% more expensive, 3 lower will be 60% more  expensive, 4 lower  will  be 80% more expensive, and 5 lower will be twice the original price.
+Table 4-5: Guideline for Obtaining High-Quality Weapons and Armor
+ a strike power of 16.
+  It is important to note that such      5 less Required Strength Royal city level in a large country
+ weapons and armor cannot exceed the      4 less Required Strength Large city in a large country, royal city level in a small country
+ limits of the weapon or armor itself. For      3 less Required Strength Reasonable city
+ example, if you  want a high-quality    2 less Required Strength Town of about 1000 people
+ broadsword, its required strength (size)     1 less Required Strength All but the most remote village
+ is naturally limited to 8-16. Since there is
+                                                                                                          51
+                                    and armor in the world with +3 power,
+            4.10.2                                                                  4.10.4
+                                    and any with +4 or more have yet to be
+```
+
+</details>
+
+### Technical atom 22
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-02256))_
+
+| entry | content |
+| --- | --- |
+| 5 | 1.13 Spirit Magic and the Shaman Skill |
+| 5 | 1.13 Spirit Magic and the Shaman Skil Silent spirit are runes used to communicate with spirits and draw out the power controlled by those spirits. The skill for using spirit magic is called the shaman skill , and those who have this skill are called shamans . The shaman skill allows you to use all basic abilities and spirit magic up to the caster's skill level. |
+| 5 | 1.13.1 |
+
+<details>
+<summary>Raw table text</summary>
+
+```
+5.1.13 Spirit Magic and the Shaman Skill
+5.1.13 Spirit Magic  and the Shaman Skil
+Silent spirit are runes used to communicate with spirits and draw out the  power  controlled  by  those  spirits. The skill for using spirit magic is called the shaman skill , and those who have this skill  are  called shamans .  The  shaman skill  allows you to use all basic abilities and spirit  magic  up  to  the  caster's  skill level.
+5.1.13.1
+```
+
+</details>
+
+### Technical atom 23
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-08871))_
 
 | Type | Attack Power Mod. | Strike Power Mod. | Critical Target |
 | --- | --- | --- | --- |
 | Swords/1H | ±0 | ±0 | 10* |
 | Swords/2H | ±0 | +5 | 10* |
-| Axes/1H | ±0 | +5 | 11* |
-| Axes/2H | ±0 | +10 | 11* |
-| Spears/1H | -1 | +5 | 10* |
-| Spears/2H | ±0 | +5 | 10* |
+| same, swords, axes, spears, and hammers | Axes/1H | ±0 | +5 |
+| differ in ease of use and power. This rule | Axes/2H | ±0 | +10 |
+| quantifies the finer differences between | Spears/1H | -1 | +5 |
+| weapons and armor. | Spears/2H | ±0 | +5 |
 | Maces/1H | +1 | +5 | 12 |
-| Maces/2H | +1 | +10 | 12 |
-| Clubs/1H | +1 | ±0 | 12 |
+| Weapon | Modifiers | Maces/2H | +1 |
+| Here is a table of weapons commonly | Clubs/1H | +1 | ±0 |
 | Staves/2H | +1 | +5 | 12 |
 | Flails/1H | -1 | +5 | 10 |
 | Flails/2H | -1 | +10 | 10 |
@@ -602,65 +625,48 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 | War Hammer/2H | -2 | +15 | 10 |
 | Bows | ±0 | +5 | 10* |
 | Crossbow | ±0 | +10 | 10* |
+| Attack | Power | Modifier |  |
 | Slings/1H | ±0 | +5 | 11 |
-| Slings/2H | ±0 | +10 | 11 |
-| Rocks | +1 | ±0 | 12 |
-| Whip/1H | -2 | 0** | 10* |
-| Net/1H | -2 | -△ | -△ |
-| Bola/1H | -2 | -△ | -△ |
-| Cranequin Crossbows | ±0 | x2+10△△ | 10* |
-| Pole Weapons | Various | Various | Various |
-| Lance/1H | -1 | +15*** | 10* |
-| Shotel/1H | -1 | ±0 | 10* |
-| Cestus/1H | +1 | ±0 | 12 |
-| Blackjack/1H | ±0 | ±0 | 12 |
-| Garrote/2H | -2 | 10** | 10 |
-| Prodd/2H | ±0 | +10 | 10 |
-| Dart/1H | -1 | +5 | 10* |
-| Small Shields/1H | ±0 | ±0 | 12 |
-| Large Shields/1H | -1 | ±0 | 12 |
-| Barehanded/1H | ±0 | 0** | 12 |
+| Attack power modifier indicates the | Slings/2H | ±0 | +10 |
+| modifier added to an adventurer's attack | Rocks | +1 | ±0 |
+| power | when | using | that weapon. |
+| Weapons with higher numbers are more | Net/1H | -2 | -△ |
 
 <details>
 <summary>Raw table text</summary>
 
 ```
-|Type|Attack Power Mod.|Strike Power Mod.|Critical Target|
-|---|---|---|---|
-|Swords/1H|±0|±0|10*|
-|Swords/2H|±0|+5|10*|
-|Axes/1H|±0|+5|11*|
-|Axes/2H|±0|+10|11*|
-|Spears/1H|-1|+5|10*|
-|Spears/2H|±0|+5|10*|
-|Maces/1H|+1|+5|12|
-|Maces/2H|+1|+10|12|
-|Clubs/1H|+1|±0|12|
-|Staves/2H|+1|+5|12|
-|Flails/1H|-1|+5|10|
-|Flails/2H|-1|+10|10|
-|War Hammer/1H|-1|+5|10|
-|War Hammer/2H|-2|+15|10|
-|Bows|±0|+5|10*|
-|Crossbow|±0|+10|10*|
-|Slings/1H|±0|+5|11|
-|Slings/2H|±0|+10|11|
-|Rocks|+1|±0|12|
-|Whip/1H|-2|0**|10*|
-|Net/1H|-2|-△|-△|
-|Bola/1H|-2|-△|-△|
-|Cranequin Crossbows|±0|x2+10△△|10*|
-|Pole Weapons|Various|Various|Various|
-|Lance/1H|-1|+15***|10*|
-|Shotel/1H|-1|±0|10*|
-|Cestus/1H|+1|±0|12|
-|Blackjack/1H|±0|±0|12|
-|Garrote/2H|-2|10**|10|
-|Prodd/2H|±0|+10|10|
-|Dart/1H|-1|+5|10*|
-|Small Shields/1H|±0|±0|12|
-|Large Shields/1H|-1|±0|12|
-|Barehanded/1H|±0|0**|12|
+Table 16-1 Weapon Optional Rules
+ consider the finer differences based on
+                                            Type          Attack Power Mod.    Strike Power Mod.    Critical Target
+ the shape of weapons and armor, but
+                                          Swords/1H             ±0               ±0             10*
+ even though the required strength is the
+                                          Swords/2H             ±0               +5             10*
+ same, swords, axes, spears, and hammers            Axes/1H              ±0               +5             11*
+ differ in ease of use and power. This rule          Axes/2H              ±0               +10            11*
+ quantifies the finer differences between          Spears/1H             -1               +5             10*
+ weapons and armor.                          Spears/2H             ±0               +5             10*
+                                          Maces/1H              +1               +5              12
+      Weapon   Modifiers                  Maces/2H              +1               +10             12
+  Here is a table of weapons commonly           Clubs/1H              +1               ±0              12
+                                          Staves/2H             +1               +5              12
+ used by adventurers ("Table 16-1 Weapon
+                                           Flails/1H            -1               +5              10
+ Optional Rules").
+                                           Flails/2H            -1               +10             10
+                                        War Hammer/1H            -1               +5              10
+  The terms used on this table are
+                                        War Hammer/2H            -2               +15             10
+ explained below.
+                                            Bows                ±0               +5             10*
+                                          Crossbow              ±0               +10            10*
+   Attack  Power   Modifier
+                                          Slings/1H             ±0               +5              11
+  Attack power modifier indicates the          Slings/2H             ±0               +10             11
+ modifier added to an adventurer's attack           Rocks               +1               ±0              12
+ power  when  using  that weapon.           Whip/1H              -2               0**            10*
+ Weapons with higher numbers are more           Net/1H               -2               -△              -△
 ```
 
 </details>
@@ -668,56 +674,45 @@ What [[sword-world-rpg-complete-edition]] covers about strike:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (43 shared statement(s), 30 shared atom(s))
-- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (11 shared statement(s), 15 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus]] - shared statements and technical atoms (7 shared statement(s), 7 shared atom(s))
-- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (5 shared statement(s), 8 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (10 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (6 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (4 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (35 shared statement(s), 21 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared statements and technical atoms (5 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared statements and technical atoms (4 shared statement(s), 6 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (4 shared statement(s), 6 shared atom(s))
 - [[sword-world-rpg-complete-edition-spell]] - shared statements and technical atoms (2 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-body]] - shared statements and technical atoms (1 shared statement(s), 4 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (7 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-attack-character-monster]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
-- [[sword-world-rpg-complete-edition-duration-instant]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-poison]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (6 shared atom(s))
-- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (4 shared atom(s))
-- [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-move]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-caster]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-rule]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-shade-dark-spirit]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (11 shared statement(s))
-- [[sword-world-rpg-complete-edition-recovering-mental-power]] - shared statements (7 shared statement(s))
-- [[sword-world-rpg-complete-edition-target-score]] - shared statements (6 shared statement(s))
-- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-final-damage]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-distance-10-meter]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-final]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-ability]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-habitat-ruin]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-success-roll]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-ability-score]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-defense]] - shared statements and technical atoms (4 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (2 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-base]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements and technical atoms (2 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (4 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-final-damage]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
+- [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-meter]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-undead]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-body]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-spirit]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements (9 shared statement(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements (4 shared statement(s))
+- [[sword-world-rpg-complete-edition-area]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-base-mental-power-cost]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-damage-reduction]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-distance-caster]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-fire]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-fire-breath]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-force]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-game]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-language-none]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-master]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-success]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-strike-points-52c24f69]] - source section (3 shared statement(s), 2 shared atom(s))
-- [[sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-strike-points-3-63e4d614]] - source section (6 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-poison]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-range]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-table-area-and-size-expansion]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-section-strike-points-15dde443]] - source section (3 shared statement(s), 2 shared atom(s))
 
 ## Source
 

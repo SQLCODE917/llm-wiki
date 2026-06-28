@@ -380,6 +380,7 @@ def test_section_identity_uses_slug_identity_not_shared_terms() -> None:
         "14.1 Treasure and Rewards in Sword World",
         "sword-world-rpg-complete-edition-books-related-to-sword-world-rpg",
     )
+    assert not same_section_identity("[", "book-create-undead")
 
 
 def test_embedding_handles_long_text_with_bounded_norm() -> None:

@@ -18,6 +18,7 @@ from llmwiki.pdf.classify import PdfKind, classify_pdf
 from llmwiki.pdf.document import (
     DocumentModel,
     SourceChunk,
+    _has_lexical_content,
     build_source_chunks,
     build_source_sections,
     document_model_from_json,
@@ -99,8 +100,14 @@ def ensure_extracted(
     manifest_path = cache_dir / _MANIFEST_FILE
 
     if cache_has_current_pdf_artifacts(cache_dir) and not reextract:
+        manifest = from_json(manifest_path.read_text(encoding="utf-8"))
+        if _requires_derived_artifact_rebuild(cache_dir, manifest):
+            document_model = document_model_from_json(
+                (cache_dir / _DOCUMENT_MODEL_FILE).read_text(encoding="utf-8")
+            )
+            return _write_derived_artifacts(cache_dir, source_rel, document_model)
         return ExtractionResult(
-            manifest=from_json(manifest_path.read_text(encoding="utf-8")),
+            manifest=manifest,
             cache_dir=cache_dir,
         )
 
@@ -117,6 +124,14 @@ def ensure_extracted(
     document_extractor = document_extractor or document_extractor_by_name(document_extractor_name)
     document_model = document_extractor(pdf_path, source_rel, sha)
     document_model = enrich_document_model_with_tables(pdf_path, document_model)
+    return _write_derived_artifacts(cache_dir, source_rel, document_model)
+
+
+def _write_derived_artifacts(
+    cache_dir: Path,
+    source_rel: str,
+    document_model: DocumentModel,
+) -> ExtractionResult:
     source_sections = build_source_sections(document_model)
     source_chunks = build_source_chunks(document_model, source_sections)
 
@@ -136,13 +151,23 @@ def ensure_extracted(
 
     manifest = Manifest(
         source=source_rel,
-        sha256=sha,
+        sha256=document_model.source_hash,
         extractor_name=document_model.extractor_name,
         chunks=tuple(_record(c) for c in source_chunks),
     )
     result = ExtractionResult(manifest=manifest, cache_dir=cache_dir)
     save_manifest(result)
     return result
+
+
+def _requires_derived_artifact_rebuild(cache_dir: Path, manifest: Manifest) -> bool:
+    for record in manifest.chunks:
+        if not _has_lexical_content(record.heading):
+            return True
+        path = chunk_file(cache_dir, record.chunk_id)
+        if path.is_file() and not _has_lexical_content(path.read_text(encoding="utf-8")):
+            return True
+    return False
 
 
 def document_extractor_by_name(name: str) -> DocumentExtractFn:

@@ -123,6 +123,33 @@ class TestSourceSections:
         assert "footer" not in sections[0].text
         assert "198" not in sections[0].text
 
+    def test_excludes_punctuation_only_heading_sections(self) -> None:
+        model = _model(
+            (
+                _element("e1", "heading", "Previous", "Previous", 25),
+                _element("e2", "paragraph", "Previous", "Previous body.", 25),
+                _element("e3", "heading", "[", "[", 26),
+                _element("e4", "heading", "Create Undead ]", "Create Undead ]", 26),
+                _element(
+                    "e5",
+                    "paragraph",
+                    "Create Undead ]",
+                    "Create Undead gives life to a corpse.",
+                    26,
+                ),
+            )
+        )
+
+        sections = build_source_sections(model)
+        chunks = build_source_chunks(model, sections)
+
+        assert [section.heading_path for section in sections] == [
+            "Previous",
+            "Create Undead ]",
+        ]
+        assert all(chunk.heading_path != "[" for chunk in chunks)
+        assert all(chunk.text != "# [" for chunk in chunks)
+
     def test_sections_roundtrip(self) -> None:
         model = _model(
             (

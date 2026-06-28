@@ -1,0 +1,68 @@
+---
+page_id: sword-world-rpg-complete-edition-section-shape-change-05fbe58d
+page_kind: source
+summary: [ Shape Change: 24 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-28
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-shape-change-05fbe58d@3bb0c10261dbb9dd5be67090581536ec
+---
+
+# [ Shape Change
+
+From [[sword-world-rpg-complete-edition]].
+
+## Related pages
+
+- [[sword-world-rpg-complete-edition-section-5-1-12-9a3c0640]] - broader source section
+- [[sword-world-rpg-complete-edition-shape-change]] - topic hub
+- [[sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-shape-change-dbedf837]] - same source heading
+
+## Statements
+
+- This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 times or 1/10th of the caster's weight. You can think of the maximum as a 6meter tall titan and the minimum as a medium-sized cat. The caster can cancel the spell's effect at any time, but once it's canceled, you cannot take on that form again unless you cast the spell again. You can only change into humans, fae, youma, titans, and animals, and only those the caster knows in detail (you must succeed on a roll such as the sage skill's monster check ). You can never change into something whose origins are not clearly known, such as magical beasts, mythical beasts, etc. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01741))_
+- Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, after changing form, the caster's physical abilities will become the same as the _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01742))_
+- creature they changed into. You will also gain special abilities such as flying. The caster will not lose their sense of self, and can cancel the spell at will. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01744))_
+- However, the creatures they can change into are limited to about 10 times or 1/10th of the caster's weight. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01741))_
+- You can only change into humans, fae, youma, titans, and animals, and only those the caster knows in detail (you must succeed on a roll such as the sage skill's monster check ). _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01741))_
+- You can never change into something whose origins are not clearly known, such as magical beasts, mythical beasts, etc. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01741))_
+- Only the caster's body will change shape, the clothes and accessories they're wearing do not change. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01742))_
+- You will also gain special abilities such as flying. _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01744))_
+
+## Technical atoms
+
+### Technical frame 1: [ Shape Change
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01741))_
+
+> This is a spell that allows the caster to change their form into another living creature at will. However, the creatures they can change into are limited to about 10 times or 1/10th of the caster's weight. You can think of the maximum as a 6meter tall titan and the minimum as a medium-sized cat. The caster can cancel the spell's effect at any time, but once it's canceled, you cannot take on that form again unless you cast the spell again. You can only change into humans, fae, youma, titans, and 
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01733, source-range-de1806a5-01734, source-range-de1806a5-01735, source-range-de1806a5-01736, source-range-de1806a5-01737, source-range-de1806a5-01738, source-range-de1806a5-01739, source-range-de1806a5-01740))_
+
+> Base Mental Power Cost=20
+
+> Distance=Caster
+
+> Area=Caster
+
+> Duration=Depends on caster's intention
+
+> Effect=Change the caster's appearance
+
+> Type=Target score
+
+> Expansion=Final score
+
+> Resist=None
+
+### Technical frame 2: [ Shape Change
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01742))_
+
+> Only the caster's body will change shape, the clothes and accessories they're wearing do not change. They will fall off or break in the process of changing. Also, after changing form, the caster's physical abilities will become the same as the
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-de1806a5-01741))_
+
+> The caster can cancel the spell's effect at any time, but once it's canceled, you cannot take on that form again unless you cast the spell again.
