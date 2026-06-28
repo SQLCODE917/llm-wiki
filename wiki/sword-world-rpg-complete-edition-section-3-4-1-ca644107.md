@@ -1,0 +1,34 @@
+---
+page_id: sword-world-rpg-complete-edition-section-3-4-1-ca644107
+page_kind: source
+summary: **3.4.1**: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-3-4-1-ca644107@4794ac0e0cfeb4f089d81c85aefa04a4
+---
+
+# **3.4.1**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- If you’re carrying a shield on your back, you can also ready it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_
+- You _cannot_ pick up a weapon that was left on the ground. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_
+- The following actions can be taken _at any time_ , regardless of the movement method. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00743))_
+- They do not prevent other actions at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00743))_
+
+## Technical atoms
+
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00740))_
+
+> You can wield up to two, one in each hand. If you want to switch your weapon from a projectile such as a bow, to a melee weapon, you can drop your previous weapon on the ground, and then you can ready a new weapon. This is because, from the beginning, it’s assumed your hands were empty.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00742))_
+
+> **Actions You Can Take Regardless of Movement Method** However, this is limited to items that are already worn and ready to go, such as those kept in a sheath.

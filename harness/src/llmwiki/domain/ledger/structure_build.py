@@ -33,6 +33,7 @@ class _OpenHeading:
     depth: int
     node_id: str
     canonical_label: str
+    number_path: tuple[int, ...]
 
 
 def build_structure(
@@ -57,6 +58,9 @@ def build_structure(
                 open_headings.pop()
             heading_text = _heading_text(segment.text)
             canonical_label = _canonical_heading_label(heading_text)
+            number_path = _heading_number_path(canonical_label)
+            while open_headings and _number_conflicts(open_headings[-1].number_path, number_path):
+                open_headings.pop()
             if (
                 open_headings
                 and canonical_label
@@ -85,7 +89,7 @@ def build_structure(
                     evidence_ids=segment.evidence_ids,
                 )
             )
-            open_headings.append(_OpenHeading(depth, node_id, canonical_label))
+            open_headings.append(_OpenHeading(depth, node_id, canonical_label, number_path))
             node_for_segment[segment.segment_id] = node_id
         else:
             node_for_segment[segment.segment_id] = (
@@ -109,3 +113,21 @@ def _heading_text(text: str) -> str:
 def _canonical_heading_label(text: str) -> str:
     without_decoration = _MARKDOWN_DECORATION.sub("", text)
     return _WHITESPACE.sub(" ", without_decoration).strip().casefold()
+
+
+def _heading_number_path(label: str) -> tuple[int, ...]:
+    words = label.strip()
+    match = re.match(
+        r"^(?:(?:chapter|section|part|appendix|book)\s+)?(\d+(?:\.\d+)*)\b",
+        words,
+        re.IGNORECASE,
+    )
+    if match is None:
+        return ()
+    return tuple(int(part) for part in match.group(1).split("."))
+
+
+def _number_conflicts(parent: tuple[int, ...], child: tuple[int, ...]) -> bool:
+    if not parent or not child:
+        return False
+    return not (len(parent) < len(child) and child[: len(parent)] == parent)

@@ -1,13 +1,13 @@
 ---
 page_id: sword-world-rpg-complete-edition-section-example-40c73552
 page_kind: source
-summary: **Example:**: 6 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: **Example:**: 5 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-example-40c73552@643ad9a18fd7c34b2037dbf324e0097a
+projection_coverage: section-sword-world-rpg-complete-edition-section-example-40c73552@548566fbcd81727730358ffdb2362087
 ---
 
 # **Example:**
@@ -16,14 +16,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- If the base damage dealt by Ducard II is _4, 18_ , or _14_ , respectively, the final damage he could deal to the goblin would be: _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
-- The attack was prevented by thick skin or hard scales. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00974))_
+- Let’s find out how much damage Ducard II is able to prevent with his armor after being attacked by the goblin. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
+- Since Ducard II has a defense power of _7_ , we’ll use key number column 7. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
+- This is the damage that Ducard II is able to prevent with his armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
+- The number on row 3 under key number column 7 is **0** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
+- Let’s find out how much damage Ducard II is able to prevent with his armor after being attacked by the goblin. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
 
 ## Technical atoms
 
 ### Technical atom 1
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00348))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
 | As a result, the ability | scores are |
 | --- | --- |
@@ -52,11 +55,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 2
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
 
 > Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00410))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
 | Attained<br>Level | Sorcerer & Sage at the same<br>time | Sorcerer | <br>Sorcerer<br>(with<br>Sage) | Shaman | Fighter<br>Tief<br>Priest | Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -79,7 +82,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 3
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -116,11 +119,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 4
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00919))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
 > His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00922))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00890))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -161,7 +164,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 5
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00923))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -202,7 +205,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 6
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00924))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -243,39 +246,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Technical atom 7
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00968))_
-
-> If the base damage dealt by Ducard II is _4, 18_ , or _14_ , respectively, the final damage he could deal to the goblin would be:
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00970))_
-
-> - -4 (goblin's defense points) = **4**
-
-### Technical atom 8
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00972))_
-
-> - -4 (goblin's defense points) = **18** 14 (base damage) +4 (bonus damage)
-
-### Technical atom 9
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00973))_
-
-> - -4 (goblin's defense points) = **14**
-
-### Technical atom 10
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00974))_
-
-> If final damage is _0 or negative_ , it means that _no damage_ was dealt.
-
-### Technical atom 11
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01061))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
 > Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01064))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01024))_
 
 | Defender's Roll | Defender's Roll | Defender's Roll |
 | --- | --- | --- |
@@ -307,13 +282,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 12
+### Technical atom 8
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
 > The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -347,9 +322,9 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical atom 9
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
 | Skill Used | Base Target Score |
 | --- | --- |
@@ -379,9 +354,9 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 14
+### Technical atom 10
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03744))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
 | Attained Level | <br>Sorcerer | Shaman<br>Dragon Priest | Fighter<br>Tief<br>Priest<br>Dark Priest | Ranger<br>Sage<br>Bard | Reduction for<br>Acquiring<br>Sorcerer &<br>Sage at the<br>Same Time |
 | --- | --- | --- | --- | --- | --- |
@@ -416,9 +391,9 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical atom 11
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08086))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 
 | Fire-type | Firebolt, Fireball, Firestorm |
 | --- | --- |

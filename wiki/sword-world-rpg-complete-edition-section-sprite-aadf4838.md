@@ -1,0 +1,80 @@
+---
+page_id: sword-world-rpg-complete-edition-section-sprite-aadf4838
+page_kind: source
+summary: **[ Sprite ]**: 18 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+sources: raw/Sword World RPG - Complete Edition.pdf
+updated: 2026-06-27
+domain: sword-world-rpg-complete-edition
+category_path: sources/sword-world-rpg-complete-edition/sections
+source_id: Sword World RPG - Complete Edition.pdf
+projection_coverage: section-sword-world-rpg-complete-edition-section-sprite-aadf4838@b358720ba31998e4dc696d60f7242a16
+---
+
+# **[ Sprite ]**
+
+From [[sword-world-rpg-complete-edition]].
+
+## Statements
+
+- Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+- A mad sprite remains invisible and attacks nearby creatures with its fangs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+- Sprites are said to be the spirits that control the emotion of shame (the function of the mind). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+- When attacking a mad sprite, a -4 modifier will be imposed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+- Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+- Mad sprites have the ability to make others invisible. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+- Those who have become invisible cannot see themselves either. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+- This invisibility cannot be removed unless you use _Dispel Magic_ , etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+- For this reason, a -2 modifier will be imposed on all physical action checks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+- If you fail, you will become invisible. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+- This invisibility cannot be removed unless you use _Dispel Magic_ , etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+- To harm a sprite, it must be a silver or magic weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04833))_
+
+## Technical atoms
+
+### Technical atom 1
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04824))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04826))_
+
+> Monster Level=4
+
+### Technical atom 2
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04824))_
+
+> Sylph is a spirit of wind. It appears as a naked elf woman. Its pale upper body is translucent, but from the waist down it is completely invisible and nothing can be seen. Sylph does not have normal methods of attack, but by entangling itself with its target, it can cause a powerful _wind cutter_ attack. This attack cannot be evaded. _Wind cutter_ is treated as strike power 10 damage magic. Its magic intensity is 13 (magic power 6). Sylphs also use spirit magic that is sourced from the power of
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04827))_
+
+> Rarity=12 (However, a shaman always knows) Agility=18 Movement Speed=16 Number=One Frequency=Rare Intellect=Human Reaction=Violent Attack Points=Fangs: 11 (4) Strike Points=7
+
+### Technical atom 3
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04828))_
+
+> Evasion Points=14 (7) Defense Points=6 Life Points/Resistance=10/11 (4) Mental Points/Resistance=20/13 (6) Special Abilities=Transparent
+
+### Technical atom 4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+
+> Sprites are said to be the spirits that control the emotion of shame (the function of the mind). A mad sprite remains invisible and attacks nearby creatures with its fangs. Because it's invisible, its appearance cannot be identified, but it is said to resemble a leprechaun, etc. When attacking a mad sprite, a -4 modifier will be imposed. Also, you cannot cast magic on mad sprites.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04830))_
+
+> Perception=Magic
+
+### Technical atom 5
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04831))_
+
+> Also, you cannot cast magic on mad sprites.
+
+### Technical atom 6
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04832))_
+
+> When a mad sprite performs this attack, the target must make a mental power resistance roll (target score 13).

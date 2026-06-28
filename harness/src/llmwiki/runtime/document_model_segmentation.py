@@ -12,6 +12,7 @@ from llmwiki.domain.ledger.segments import SegmentClaim, SourceSegment
 from llmwiki.domain.ledger.tabular import row_marker_count
 from llmwiki.domain.objects import Schema
 from llmwiki.domain.planning import derive_segment_claims
+from llmwiki.domain.prose_flow import normalize_prose_text
 from llmwiki.pdf.document import DocumentElement, DocumentModel
 
 _FENCE = re.compile(r"^\s*(```|~~~)")
@@ -158,7 +159,7 @@ def _element_segment_text(element: DocumentElement, kind: str) -> str:
         locator = _page_locator((element,))
         label = f"[Figure: {caption}]" if caption else "[Figure]"
         return f"{label} ({locator})"
-    return _collapse_spaces(element.text)
+    return normalize_prose_text(_collapse_spaces(element.text))
 
 
 def _table_run_end(elements: tuple[DocumentElement, ...], start: int) -> int:

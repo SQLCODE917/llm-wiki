@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from llmwiki.domain.prose_flow import normalize_prose_paragraphs
+
 _SENTENCE_ENDINGS = frozenset(".!?")
 
 
@@ -25,7 +27,7 @@ def paragraphs(text: str, max_chars: int) -> tuple[str, ...]:
             current_lines.append(segment)
             current_chars += segment_length + 1
     _append_paragraph(result, current_lines)
-    return tuple(result)
+    return normalize_prose_paragraphs(result, max_chars=max_chars)
 
 
 def sentence_fragments(paragraph: str) -> tuple[str, ...]:

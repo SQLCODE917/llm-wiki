@@ -18,10 +18,12 @@ from llmwiki.domain.ledger.atoms import (
     RulePayload,
     WorkedExamplePayload,
 )
+from llmwiki.domain.ledger.common import ReviewReason
 from llmwiki.domain.ledger.notation import formula_candidate_line, is_symbolic_formula
 from llmwiki.domain.ledger.rule_structure import materialize_rule_payload
 from llmwiki.domain.ledger.segments import SourceSegment
 from llmwiki.domain.ledger.table_materialize import materialize_table as materialize_table
+from llmwiki.domain.prose_flow import structural_incompleteness_reason
 
 _FENCE = re.compile(r"^[ \t]*(```|~~~)[ \t]*([A-Za-z0-9_+-]*)[ \t]*$")
 _STEP = re.compile(
@@ -79,11 +81,13 @@ def materialize_figure(segment: SourceSegment) -> FigurePayload | None:
     )
 
 
-def materialize_rule(segment: SourceSegment) -> RulePayload | None:
+def materialize_rule(segment: SourceSegment) -> tuple[RulePayload, ReviewReason | None] | None:
     for sentence in _sentences(segment.text):
         payload = materialize_rule_payload(sentence, segment.source_locator)
         if payload is not None:
-            return payload
+            reason = structural_incompleteness_reason(sentence)
+            review = ReviewReason("fragmentary", reason, segment.evidence_ids) if reason else None
+            return payload, review
     return None
 
 

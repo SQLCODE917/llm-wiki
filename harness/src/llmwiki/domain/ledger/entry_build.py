@@ -19,6 +19,7 @@ from llmwiki.domain.ledger.confidence import ConfidencePolicy, ConfidenceSignals
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.propositions import decompose
 from llmwiki.domain.ledger.segments import SegmentClaim, SourceSegment
+from llmwiki.domain.prose_flow import structural_incompleteness_reason
 
 _RELATIONSHIP_CUES: tuple[tuple[re.Pattern[str], str], ...] = (
     (re.compile(r"\b(because|therefore|thus|hence|caused|leads to|results in)\b", re.I), "causes"),
@@ -40,6 +41,7 @@ def build_claim_entry(
     policy: ConfidencePolicy,
 ) -> LedgerEntry:
     prop = decompose(claim.statement)
+    incomplete_reason = structural_incompleteness_reason(claim.statement)
     concept_facets = (
         concept_facets_for_definition(claim.statement, prop.subject)
         if "definition" in claim.role_tags
@@ -51,8 +53,8 @@ def build_claim_entry(
         ConfidenceSignals(
             evidence_resolved=bool(claim.evidence_ids),
             required_fields_complete=prop.complete,
-            validation_passed=True,
-            ambiguity_present=not prop.complete,
+            validation_passed=incomplete_reason is None,
+            ambiguity_present=not prop.complete or incomplete_reason is not None,
             anchors_resolved=anchors_ok,
         )
     )
@@ -64,6 +66,11 @@ def build_claim_entry(
             ReviewReason(
                 "fragmentary", "no subject/predicate region recovered", claim.evidence_ids
             ),
+        )
+    elif incomplete_reason is not None:
+        status, review_reason = (
+            "needs-review",
+            ReviewReason("fragmentary", incomplete_reason, claim.evidence_ids),
         )
     fingerprint = content_fingerprint(
         (kind, claim.statement, prop.subject, prop.predicate, prop.object_value)
@@ -146,16 +153,13 @@ def build_atom_entry(
     structure_node_ids: tuple[str, ...],
     policy: ConfidencePolicy,
 ) -> LedgerEntry:
-    parsed_clean = atom.parse_status == "parsed"
-    confidence, basis = policy.assess(
-        ConfidenceSignals(
-            evidence_resolved=bool(atom.evidence_ids),
-            required_fields_complete=True,
-            validation_passed=True,
-            ambiguity_present=not parsed_clean,
-            exact_payload_preserved=True,
-        )
-    )
+    if atom.review_reason is not None:
+        confidence = "low"
+        basis = ConfidenceBasis("review-required", (atom.review_reason.reason_kind,))
+        status = "needs-review"
+    else:
+        status = "usable"
+        confidence, basis = _atom_confidence(atom, policy)
     fingerprint = content_fingerprint(("technical-atom", atom.technical_atom_id))
     return LedgerEntry(
         ledger_entry_id=deterministic_id(
@@ -167,7 +171,7 @@ def build_atom_entry(
         ),
         source_statement_id=statement_id,
         ledger_entry_kind="technical-atom",
-        ledger_entry_status="usable",
+        ledger_entry_status=status,
         extraction_confidence=confidence,
         confidence_basis=basis,
         source_locator=segment.source_locator,
@@ -179,6 +183,19 @@ def build_atom_entry(
         review_reason=atom.review_reason,
         technical_atom_kind=atom.technical_atom_kind,
         technical_atom_id=atom.technical_atom_id,
+    )
+
+
+def _atom_confidence(atom: TechnicalAtom, policy: ConfidencePolicy) -> tuple[str, ConfidenceBasis]:
+    parsed_clean = atom.parse_status == "parsed"
+    return policy.assess(
+        ConfidenceSignals(
+            evidence_resolved=bool(atom.evidence_ids),
+            required_fields_complete=True,
+            validation_passed=True,
+            ambiguity_present=not parsed_clean,
+            exact_payload_preserved=True,
+        )
     )
 
 

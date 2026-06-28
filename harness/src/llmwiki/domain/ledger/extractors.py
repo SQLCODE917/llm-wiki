@@ -157,7 +157,8 @@ def _materialize(
     if capability_id == "figure-extractor":
         return materialize_figure(segment), None
     if capability_id == "rule-extractor":
-        return materialize_rule(segment), None
+        rule_result = materialize_rule(segment)
+        return rule_result if rule_result is not None else (None, None)
     if capability_id == "procedure-extractor":
         return materialize_procedure(segment), None
     if capability_id == "worked-example-extractor":

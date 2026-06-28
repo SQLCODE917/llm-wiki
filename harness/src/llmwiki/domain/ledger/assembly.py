@@ -69,6 +69,8 @@ def build_segment_entries(
             policy=policy,
         )
         produced.append(entry)
+        if not entry.is_usable:
+            continue
         relationship = build_relationship_entry(
             segment=seg,
             claim=claim,

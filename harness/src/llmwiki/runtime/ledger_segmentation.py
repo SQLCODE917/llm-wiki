@@ -19,6 +19,7 @@ from llmwiki.domain.ledger.features import profile_unit
 from llmwiki.domain.ledger.segments import SegmentClaim, SourceSegment
 from llmwiki.domain.objects import Schema
 from llmwiki.domain.planning import derive_segment_claims
+from llmwiki.domain.prose_flow import merge_prose_blocks
 
 _HEADING = re.compile(r"^\s{0,3}#{1,6}\s")
 _FENCE = re.compile(r"^\s*(```|~~~)")
@@ -116,7 +117,7 @@ def _blocks(text: str) -> list[tuple[str, str]]:
             index += 1
         else:
             index = _consume_paragraph(lines, index, blocks)
-    return blocks
+    return list(merge_prose_blocks(blocks, prose_kinds=("paragraph",)))
 
 
 def _consume_fence(lines: list[str], start: int, blocks: list[tuple[str, str]]) -> int:

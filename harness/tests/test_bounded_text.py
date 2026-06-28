@@ -22,3 +22,21 @@ def test_claim_sentences_materializes_bounded_fragments() -> None:
     assert claims[:2] == ("Roll dice before combat.", "Add final modifier to result.")
     assert len(claims) <= 120
     assert all(len(claim) <= 1800 for claim in claims)
+
+
+def test_claim_sentences_repairs_layout_split_continuations() -> None:
+    claims = claim_sentences(
+        "If left untreated, they must make another death check after 1 hour, and\n\n"
+        "again, will only die on double ones. If successful, they awaken."
+    )
+
+    first = " ".join(
+        (
+            "If left untreated, they must make another death check after 1 hour, and",
+            "again, will only die on double ones.",
+        )
+    )
+    assert claims[:2] == (
+        first,
+        "If successful, they awaken.",
+    )

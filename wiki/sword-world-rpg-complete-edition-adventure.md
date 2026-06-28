@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-adventure
 page_kind: concept
-summary: Adventure: 115 statement(s) and 76 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: Adventure: 110 statement(s) and 68 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
 updated: 2026-06-27
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-adventure@6cd76b39e99047c87cb0d0fbdb61fe18
+projection_coverage: topic-sword-world-rpg-complete-edition-adventure@e676875c214da87175a0f3a1dcfab9f4
 ---
 
 # Adventure
@@ -15,364 +15,306 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 ## Statements
 
-- Adventurer skills, as the name implies, are acquired by player characters, the adventurers, or by equivalent characters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00238))_
-- In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00247))_
-- The highest level among the adventurer skills that a character has is called that character's **adventurer level** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00247))_
-- Adventurer skills are the most important thing for an adventurer in _Sword World RPG._ This is because which adventurer skills a character has acquired will determine what that character can do, and will reveal that character's characteristics. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00250))_
-- Adventurer level is equal to the highest adventurer skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00539))_
-- In _Sword World RPG_ , a character with a high adventurer level, that is, a character who has a high level in any adventurer skill, is considered a _hero_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00894))_
-- These abilities that any adventurer can acquire are called **common adventurer abilities** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03509))_
-- However, an adventurer can reduce this damage depending on their adventurer level and armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561))_
-- Of course, adventurer skills are the necessary skills to live as an adventurer. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03599))_
-- Therefore, if some of the adventurers have this skill, they can also sell the items they obtain from their adventures in shops or on the street. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03602))_
-- The adventurer Ducard II gains 5000 experience points as a result of his adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03733))_
-- If the adventurer is an elf, dwarf, or half-elf raised in an elven society, mother tongue is the _racial_ language of the race in which the adventurer was born and raised ( _elven_ or _dwarven_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04467))_
-- Some adventurers, other than dwarves, have extremely low tolerance for alcohol, and such characters cannot resist this poison (?) no matter how high their adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04528))_
-- Typical adventurers in Alecrast use one adventurer’s shop as their base for adventure, thereupon gathering information about the ruins of the ancient kingdom, then setting off after readying their equipment, making their living selling the spoils. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06938))_
-- This depends on how much work the adventurers did during the adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07672))_
-- In Sword World RPG, these basic characteristics of an adventurer are represented by numbers called **ability scores** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00164))_
-- The higher this number, the more robust the adventurer is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00167))_
-- If either life force or mental power fall to 0 or less, the adventurer will fall unconscious and be unable to act. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00173))_
-- adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
-- The five adventurer skills of sorcerer, shaman, priest, dark priest, and dragon priest are sometimes collectively referred to as **rune master skills** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00275))_
-- Even an adventurer who goes on an adventure for the first time is not a baby. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00351))_
-- Only adventurer skills can be acquired or increased using experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
-- For an adventurer, the first step to survival is to choose a weapon most suited to their strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00426))_
-- Since we’re going on an adventure, a water bag (20G) is a must. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00491))_
-- When a character with adventurer level 0 (a character with no adventurer skills) makes these checks, the baseline score is _0_ regardless of their ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00666))_
-- While touring an underground cave on an adventure, he wanders into a mysterious room where all four walls are painted in extreme colors. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00676))_
-- During the adventure, he is attacked and wounded by a ghoul. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00683))_
-- No matter how high your character's damage reduction (adventurer level), that damage _cannot_ be reduced at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01016))_
-- Any adventurer who falls to _0 or negative_ life force is now at risk of _dying_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01088))_
-- Whenever an adventurer declares that their attack on a monster is a mercy, that monster will _always_ remain alive. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01113))_
-- This adventurer can use 1st level holy magic and 1st-2nd level spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01214))_
-- First, adventurers who use magic are given a score called **magic power** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01222))_
-- An adventurer with priest skill level 1, shaman skill level 2, and 13 intelligence (+2 bonus) would have a magic power of _3_ in holy magic and a magic power of _4_ in spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01237))_
-- If the adventurer's final score is _less_ than the monster's magic intensity, they will receive the _full_ effect of the magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01272))_
-- Each of the three adventurers (the players in control) roll 2D to check if they resist, using _their mental power resistance_ as the baseline score, and _13 (magic intensity)_ as the target score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01315))_
-- When using magic, an adventurer must temporarily _reduce_ their mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01331))_
-- Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
-- Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01430))_
-- In the case of player characters (adventurers), this may be when the players themselves suspect an illusion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01487))_
-- When you go on an adventure, or you're in a situation where you'd need to use magic, you'd usually bring your spellbook with you. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01563))_
-- If an adventurer's life force falls to 0 or less due to wounds, it will not recover naturally and there is a risk of death if left untreated. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03376))_
-- Basically all adventurers can swim. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
-- An adventurer can only hold their breath underwater for a number of rounds equal to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03530))_
-- Adventurers can handle small boats using oars or poles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03537))_
-- In special cases such as _avoiding collision with an approaching ship_ or _surviving rapids_ , the adventurer operating the ship must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03539))_
-- Any adventurer can operate a small vessel (boat, raft, etc.) that is operated using oars or poles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03539))_
-- If an adventurer falls, damage will be determined as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03559))_
-- The adventurer will suffer this damage to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
-- An adventurer with adventurer level 4, agility bonus +2, wearing chain mail, is in a cave beneath a volcano. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03573))_
-- The adventurer has 1 level in the thief skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
-- The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
-- higher your adventurer level, the more qualified you are to be called a hero. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03591))_
-- In other words, adventurer level can even be called hero level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03591))_
-- Of course, the game master and adventurer can negotiate with each other _without_ making such a mechanical check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03624))_
-- Follow the rules for _swim_ under _common adventurer abilities_ -- replace _adventurer level_ with _sailor skill level_ --and make a check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03709))_
-- adventurers need 5000 experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03763))_
-- Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
-- attack, and if it's greater than the one in the _adventurer_ column, the adventurers have a chance for a surprise attack. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03860))_
-- consideration conditions such as the surrounding environment and whether the adventurers are proceeding quietly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03866))_
-- Depending on the situation, adventurers may have to fight in water. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03870))_
-- attacks a sleeping adventurer, the attack will automatically hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03895))_
-- In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
-- Adventurers _themselves_ cannot go around charging these same rates. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04400))_
-- Of course, adventurers also use language in their lives. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04459))_
-- Immediately after creation, an adventurer has the following language abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04462))_
-- All adventurers can speak _common_ and _racial_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04463))_
-- _regional_ language of the region where the adventurer was born and raised. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04467))_
-- Adventurers can study and learn common and normal languages other than their mother tongue. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04470))_
-- Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04470))_
-- If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because _it would just be low ancient again_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04473))_
-- An adventurer can only hold their breath for a number of rounds equal to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04533))_
-- Adventurer level may also be hero level, but _even if you're a hero, you cannot win against illness_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
-- The patient's adventurer level and life force bonus have _no_ influence on this check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
-- If an adventurer is lucky enough to obtain these items and sell them, a merchant will buy them for half the prices provided here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04752))_
-- As you progress through your adventures, such things will happen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04784))_
-- In these cases, adventurers can request NPCs to do this kind of work. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04785))_
-- Adventurers _themselves_ cannot go around charging these same rates. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04791))_
-- However, if an adventurer takes hostile action, they will naturally consider retaliation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04901))_
-- Whether they consider adventurers to be enemies or not depends on the commands given to them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04903))_
-- This fire always hits, but an adventurer can attempt to resist just the same way they would against magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05141))_
-- Adventurers wounded by a giant rat's fangs or claws are at risk of contracting an illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05672))_
-- If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679))_
-- When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
-- If a bear hug attack hits, the adventurer will be held by the bear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05811))_
-- If the adventurers are quick-witted enough to turn off the light, the monster will return to the tide pool. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05930))_
-- If you fail, the poor adventurer is thrown into the pouch that makes up the bulk of the body. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
-- If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
-- Against this acid damage, only adventurer level helps damage reduction, and armor defense power is completely ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06045))_
-- The adventurer's evasion will suffer a -4 penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
-- If they fail, the adventurer will have stepped into the killer creeper without realizing it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
-- Only adventurer level and magical defense effects will work. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
-- At this time, even if the adventurer's rope is broken, his agility will _not_ recover from 0 and he will still be unable to take any action! _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06285))_
-- Only adventurer level and magical defense power are effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06302))_
-- Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06471))_
-- If an adventurer is wearing metal armor other than ring mail, they will not suffer any _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06508))_
-- They rarely face adventurers alone, and are often led by a stronger priest. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06686))_
-- When introducing them into a scenario, assume that enemies of the same or 1 level lower than a character's adventurer level will appear frequently, while an enemy of 2-3 levels greater will appear at the climax. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06763))_
-- Think of the adventurers of Alecrast as basically on an adventure to search for treasure lying untouched in the ruins of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06935))_
-- Due to their combat power and magic, and also their familiarity with various techniques, adventurers may also be hired as handymen in towns and villages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06939))_
-- When adventurers sell them to an _adventurer’s shop_ or an _academy of sages_ , they’re usually accepted at half this price. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06971))_
-- For adventurers, magical swords and armor are not something you can give up. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06976))_
-- adventurer sells it, the standard price is half this amount. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06996))_
-- Otherwise, adventurers with money could buy up this item, which could potentially have a serious impact on game balance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07619))_
-- **Monster level x 10 ÷ number of adventurers** experience points will be awarded for each monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07669))_
-- How assertively the adventurers acted is reflected by the number of dice rolls made by the players. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07672))_
-- The adventurers will earn **number of double ones x 10** experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07673))_
-- In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
-- When focusing on defense, an adventurer _cannot_ attack or use any magic during that round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
-- but to defend, an adventurer can put everything they have into their attack. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07770))_
-- When an adventurer is armed with a spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07779))_
-- For adventurers who rely on weapons, this may pose a threat. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07830))_
-- In this case, the adventurer _cannot_ use the weapon in their _dominant_ hand, but there will be _no_ penalty for using the _opposite_ hand. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07944))_
-- As your character's level increases and you take on more difficult adventures, you may find that 1000 experience points for completing a mission is not enough. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08038))_
-- Normally, adventurers are at an age when they can fully demonstrate their ability, from just after adulthood to the middle of their lives, but they may be aged or made younger unnaturally by magic, poison, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08048))_
-- At most, adventurers have a loose sense of camaraderie based on the principle of "helping each other in times of need," though even this can't be counted on too much. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08228))_
+- Adventurer skills, as the name implies, are acquired by player characters, the adventurers, or by equivalent characters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00232))_
+- The highest level among the adventurer skills that a character has is called that character's **adventurer level** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
+- In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
+- Adventurer skills are the most important thing for an adventurer in _Sword World RPG._ This is because which adventurer skills a character has acquired will determine what that character can do, and will reveal that character's characteristics. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00244))_
+- Adventurer level is equal to the highest adventurer skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00522))_
+- In _Sword World RPG_ , a character with a high adventurer level, that is, a character who has a high level in any adventurer skill, is considered a _hero_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00863))_
+- These abilities that any adventurer can acquire are called **common adventurer abilities** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03340))_
+- However, an adventurer can reduce this damage depending on their adventurer level and armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03389))_
+- Of course, adventurer skills are the necessary skills to live as an adventurer. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03424))_
+- Therefore, if some of the adventurers have this skill, they can also sell the items they obtain from their adventures in shops or on the street. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03427))_
+- The adventurer Ducard II gains 5000 experience points as a result of his adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+- If the adventurer is an elf, dwarf, or half-elf raised in an elven society, mother tongue is the _racial_ language of the race in which the adventurer was born and raised ( _elven_ or _dwarven_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04227))_
+- Some adventurers, other than dwarves, have extremely low tolerance for alcohol, and such characters cannot resist this poison (?) no matter how high their adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04280))_
+- Typical adventurers in Alecrast use one adventurer’s shop as their base for adventure, thereupon gathering information about the ruins of the ancient kingdom, then setting off after readying their equipment, making their living selling the spoils. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06348))_
+- This depends on how much work the adventurers did during the adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
+- In Sword World RPG, these basic characteristics of an adventurer are represented by numbers called **ability scores** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00159))_
+- The higher this number, the more robust the adventurer is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00162))_
+- If either life force or mental power fall to 0 or less, the adventurer will fall unconscious and be unable to act. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00168))_
+- The five adventurer skills of sorcerer, shaman, priest, dark priest, and dragon priest are sometimes collectively referred to as **rune master skills** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00267))_
+- Even an adventurer who goes on an adventure for the first time is not a baby. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00340))_
+- Only adventurer skills can be acquired or increased using experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00384))_
+- For an adventurer, the first step to survival is to choose a weapon most suited to their strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00413))_
+- Since we’re going on an adventure, a water bag (20G) is a must. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00475))_
+- When a character with adventurer level 0 (a character with no adventurer skills) makes these checks, the baseline score is _0_ regardless of their ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00642))_
+- While touring an underground cave on an adventure, he wanders into a mysterious room where all four walls are painted in extreme colors. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00652))_
+- During the adventure, he is attacked and wounded by a ghoul. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00659))_
+- No matter how high your character's damage reduction (adventurer level), that damage _cannot_ be reduced at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00978))_
+- Any adventurer who falls to _0 or negative_ life force is now at risk of _dying_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01048))_
+- Whenever an adventurer declares that their attack on a monster is a mercy, that monster will _always_ remain alive. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01071))_
+- This adventurer can use 1st level holy magic and 1st-2nd level spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01165))_
+- First, adventurers who use magic are given a score called **magic power** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01172))_
+- An adventurer with priest skill level 1, shaman skill level 2, and 13 intelligence (+2 bonus) would have a magic power of _3_ in holy magic and a magic power of _4_ in spirit magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01185))_
+- If the adventurer's final score is _less_ than the monster's magic intensity, they will receive the _full_ effect of the magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01217))_
+- Each of the three adventurers (the players in control) roll 2D to check if they resist, using _their mental power resistance_ as the baseline score, and _13 (magic intensity)_ as the target score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01257))_
+- When using magic, an adventurer must temporarily _reduce_ their mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01272))_
+- Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
+- Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
+- In the case of player characters (adventurers), this may be when the players themselves suspect an illusion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
+- When you go on an adventure, or you're in a situation where you'd need to use magic, you'd usually bring your spellbook with you. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01496))_
+- If an adventurer's life force falls to 0 or less due to wounds, it will not recover naturally and there is a risk of death if left untreated. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03219))_
+- Basically all adventurers can swim. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
+- An adventurer can only hold their breath underwater for a number of rounds equal to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
+- Adventurers can handle small boats using oars or poles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
+- Any adventurer can operate a small vessel (boat, raft, etc.) that is operated using oars or poles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
+- In special cases such as _avoiding collision with an approaching ship_ or _surviving rapids_ , the adventurer operating the ship must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
+- If an adventurer falls, damage will be determined as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03387))_
+- The adventurer will suffer this damage to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03388))_
+- An adventurer with adventurer level 4, agility bonus +2, wearing chain mail, is in a cave beneath a volcano. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03399))_
+- The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+- The adventurer has 1 level in the thief skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+- In other words, adventurer level can even be called hero level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03416))_
+- higher your adventurer level, the more qualified you are to be called a hero. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03416))_
+- Of course, the game master and adventurer can negotiate with each other _without_ making such a mechanical check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03443))_
+- Follow the rules for _swim_ under _common adventurer abilities_ -- replace _adventurer level_ with _sailor skill level_ --and make a check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+- Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
+- However, evading an consideration conditions such as the surrounding environment and whether the adventurers are proceeding quietly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03665))_
+- Depending on the situation, adventurers may have to fight in water. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03669))_
+- attacks a sleeping adventurer, the attack will automatically hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
+- In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
+- Adventurers _themselves_ cannot go around charging these same rates. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
+- Of course, adventurers also use language in their lives. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04220))_
+- Immediately after creation, an adventurer has the following language abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04223))_
+- All adventurers can speak _common_ and _racial_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04224))_
+- Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04230))_
+- Adventurers can study and learn common and normal languages other than their mother tongue. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04230))_
+- If an adventurer who has learned low ancient through the sage skill acquires the sorcerer skill, they will not be able to learn another language because _it would just be low ancient again_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04233))_
+- An adventurer can only hold their breath for a number of rounds equal to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04284))_
+- Adventurer level may also be hero level, but _even if you're a hero, you cannot win against illness_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04401))_
+- The patient's adventurer level and life force bonus have _no_ influence on this check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04401))_
+- If an adventurer is lucky enough to obtain these items and sell them, a merchant will buy them for half the prices provided here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04486))_
+- As you progress through your adventures, such things will happen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04517))_
+- In these cases, adventurers can request NPCs to do this kind of work. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
+- Adventurers _themselves_ cannot go around charging these same rates. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04522))_
+- However, if an adventurer takes hostile action, they will naturally consider retaliation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04626))_
+- Whether they consider adventurers to be enemies or not depends on the commands given to them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04628))_
+- This fire always hits, but an adventurer can attempt to resist just the same way they would against magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04812))_
+- Adventurers wounded by a giant rat's fangs or claws are at risk of contracting an illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05223))_
+- If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229))_
+- When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05244))_
+- If a bear hug attack hits, the adventurer will be held by the bear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05350))_
+- If the adventurers are quick-witted enough to turn off the light, the monster will return to the tide pool. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05457))_
+- If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05560))_
+- If you fail, the poor adventurer is thrown into the pouch that makes up the bulk of the body. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05560))_
+- Against this acid damage, only adventurer level helps damage reduction, and armor defense power is completely ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05561))_
+- The adventurer's evasion will suffer a -4 penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05574))_
+- If they fail, the adventurer will have stepped into the killer creeper without realizing it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05574))_
+- Only adventurer level and magical defense effects will work. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05748))_
+- At this time, even if the adventurer's rope is broken, his agility will _not_ recover from 0 and he will still be unable to take any action! _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05769))_
+- Only adventurer level and magical defense power are effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05783))_
+- Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05921))_
+- If an adventurer is wearing metal armor other than ring mail, they will not suffer any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05951))_
+- They rarely face adventurers alone, and are often led by a stronger priest. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06107))_
+- When introducing them into a scenario, assume that enemies of the same or 1 level lower than a character's adventurer level will appear frequently, while an enemy of 2-3 levels greater will appear at the climax. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06179))_
+- Think of the adventurers of Alecrast as basically on an adventure to search for treasure lying untouched in the ruins of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06347))_
+- Due to their combat power and magic, and also their familiarity with various techniques, adventurers may also be hired as handymen in towns and villages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06349))_
+- When adventurers sell them to an _adventurer’s shop_ or an _academy of sages_ , they’re usually accepted at half this price. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06380))_
+- For adventurers, magical swords and armor are not something you can give up. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06385))_
+- If an adventurer sells it, the standard price is half this amount. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06404))_
+- Otherwise, adventurers with money could buy up this item, which could potentially have a serious impact on game balance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06996))_
+- **Monster level x 10 ÷ number of adventurers** experience points will be awarded for each monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07045))_
+- How assertively the adventurers acted is reflected by the number of dice rolls made by the players. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
+- The adventurers will earn **number of double ones x 10** experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
+- In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
+- When focusing on defense, an adventurer _cannot_ attack or use any magic during that round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07143))_
+- When an adventurer is armed with a spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07154))_
+- For adventurers who rely on weapons, this may pose a threat. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07199))_
+- In this case, the adventurer _cannot_ use the weapon in their _dominant_ hand, but there will be _no_ penalty for using the _opposite_ hand. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07308))_
+- As your character's level increases and you take on more difficult adventures, you may find that 1000 experience points for completing a mission is not enough. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07395))_
+- Normally, adventurers are at an age when they can fully demonstrate their ability, from just after adulthood to the middle of their lives, but they may be aged or made younger unnaturally by magic, poison, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
+- At most, adventurers have a loose sense of camaraderie based on the principle of "helping each other in times of need," though even this can't be counted on too much. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
 
 ## Technical atoms
 
 ### Technical atom 1
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00181))_
-
-> Strength represents an adventurer's muscular strength. If you want to use
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
-
-> etc.) When a character's ability score increases or decreases, even temporarily, the ability bonus increases or decreases accordingly.
-
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
-
-> adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00184))_
-
-> **Table 1-1: Ability Bonuses**
-
-### Technical atom 3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00183))_
-
-> adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the ability score. For example, it would say something like _an adventurer with 14 de
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00185))_
-
-| AbilityScore | Bonus |
-| --- | --- |
-| 2~5 | ±0 |
-| 6~11 | +1 |
-| 12~17 | +2 |
-| 18~23 | +3 |
-| 24~29 | +4 |
-| Add +1 for every +6 in ability scores<br>thereafer |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-|AbilityScore|Bonus|
-|---|---|
-|2~5|±0|
-|6~11|+1|
-|12~17|+2|
-|18~23|+3|
-|24~29|+4|
-|Add +1 for every +6 in ability scores<br>thereafer||
-```
-
-</details>
-
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00894))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00863))_
 
 > Those who are called heroes do not die from just a few injuries. In _Sword World RPG_ , a character with a high adventurer level, that is, a character who has a high level in any adventurer skill, is considered a _hero_ . Therefore, we determine a hero's resistance to death by their _adventurer level_ .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00896))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00865))_
 
 > **damage reduction** = adventurer level
 
-### Technical atom 5
+### Technical atom 2
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01089, source-range-870a16bc-01092))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01049, source-range-870a16bc-01052))_
 
 > This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ . If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01090))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01050))_
 
 > Characters with 0 or negative life force must make a death check every _hour_ .
 
-### Technical atom 6
+### Technical atom 3
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01089, source-range-870a16bc-01092))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01049, source-range-870a16bc-01052))_
 
 > This check is made using a _life force resistance roll_ . The baseline score is _life force resistance (adventurer level + life force bonus)_ and the target score is _7_ . If the character's life force is _negative_ , the negative amount will be used as a _penalty_ . If the result is _double sixes_ (automatic success), the character will regain consciousness on their own. At this time, their life force becomes _1_ point.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01091))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01051))_
 
 > life force resistance + 2D - (damage applied beyond life force) ≥ 7 → **survival**
 
-### Technical atom 7
+### Technical atom 4
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01271))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01216))_
 
 > First, in the case of _non-resistible_ magic, a monster can _never_ fail. There is no need to roll the dice, as the magic will _definitely_ take its effect. In the case of _resistible_ magic, the issue is resolved from the perspective of whether the adventurer is able to resist the magic cast by the monster. This is determined by a success roll using the character's _mental power resistance_ , that is, a _mental power resistance roll_ . The target score is a score called the monster’s **magic in
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01272))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01217))_
 
 > If the adventurer's final score ( _mental power resistance + 2D_ ) is equal to or greater than the monster's _magic intensity_ , the monster's magic will only take an incomplete effect (some magic will take no effect at all).
 
-### Technical atom 8
+### Technical atom 5
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01273))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01218))_
 
 > Also, since this is considered a success roll, it’ll be an _automatic failure_ if the 2D roll is _double ones_ . No matter how high the adventurer's mental power
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01220))_
 
 > Ducard II, Ducard II must make a mental power resistance roll (baseline score 4, target score 13).
 
-### Technical atom 9
+### Technical atom 6
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
 > In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01361))_
 
 > If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even more damage, same as in weapon combat.
 
-### Technical atom 10
+### Technical atom 7
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01421, source-range-870a16bc-01423))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01361, source-range-870a16bc-01363))_
 
 > A spell that deals damage to the target's life force or mental power. Spells of the damage type always have a clearly defined _strike power_ . If you manage to break through the target's resist, use the spell's strike power to determine damage by making a _strike roll_ using the Rating Table, same as if you had hit with a weapon in weapon combat. The key number is, of course, the indicated _strike power_ . If you roll 10 or greater during the strike roll, a _critical_ will occur and deal even mo
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01422))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01362))_
 
 > Most magic of the **damage** type can still deal damage even if it's resisted by the target, only with a reduced effect.
 
-### Technical atom 11
+### Technical atom 8
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01423))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01363))_
 
 > In either case, the caster's magic power can be added as bonus damage to the result of the strike roll. Also, the target's adventurer level (or the monster's monster level) is subtracted from the damage. However, there’s an _exception_ if you roll _double ones_ during your strike roll. In this case, no matter how much magic power your character (monster) has, they _cannot_ deal damage to the target at all.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01424))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01364))_
 
 > Also, even magic of the _damage_ type may in rare cases take no effect if resisted.
 
-### Technical atom 12
+### Technical atom 9
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01426, source-range-870a16bc-01430))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01366, source-range-870a16bc-01370))_
 
 > Some magic can nullify the effects of other magic. For example, the ancient magic _Dispel Magic_ nullifies the effects of most magic. This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nulli
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01428))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01368))_
 
 > When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not.
 
-### Technical atom 13
+### Technical atom 10
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01430))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 
 > This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01431))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01371))_
 
 > When you use magic that nullifies other magic, if your roll is _double sixes_ , the magic will _automatically_ be nullified, no matter what the _target score_ is.
 
-### Technical atom 14
+### Technical atom 11
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
 
 > Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them).
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll.
 
-### Technical atom 15
+### Technical atom 12
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03528))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03358))_
 
 > You can only wear cloth or at most soft leather.
 
-### Technical atom 16
+### Technical atom 13
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03527))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03529))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
 
 > If you succeed, you will be able to take it off and rise to the surface.
 
-### Technical atom 17
+### Technical atom 14
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03530))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
 
 > This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
 
-> Also, if the distance is long or there are rapids, add a
+> Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink.
 
-### Technical atom 18
+### Technical atom 15
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03531))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
 
-> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a
+> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03532))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
 
-> Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
+> Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
 
-### Technical atom 19
+### Technical atom 16
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03559, source-range-870a16bc-03563))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03387, source-range-870a16bc-03391))_
 
-> If an adventurer falls, damage will be determined as follows. **Falling damage** = fall height x 3 - (defense roll result + adventurer level)
+> If an adventurer falls, damage will be determined as follows. **Falling damage** = fall height x 3 - (defense roll result + adventurer level) Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as _fall height x 2_ , _fall height x 1_ , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the 
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03389))_
 
 > Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced.
 
-### Technical atom 20
+### Technical atom 17
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03561, source-range-870a16bc-03565))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03391))_
 
-> However, an adventurer can reduce this damage depending on their adventurer level and armor. Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced. If the defense roll comes up _double ones_ , all damage reduction is lost, including adventurer level. Owners of the thief skill can greatly reduce this damage with their _tumble_ ability. If an owner of the th
+> **Falling damage** = fall height x 3 - (defense roll result + adventurer level) Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as _fall height x 2_ , _fall height x 1_ , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the game master.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03563))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03392))_
 
-> **Falling damage** = fall height x 3 - (defense roll result + adventurer level)
+> If an owner of the thief skill falls, the height can be calculated by subtracting _thief skill level + agility bonus_ meters from the height of the fall.
 
-### Technical atom 21
+### Technical atom 18
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
 > The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03579))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03404))_
 
 > **Table 6-3: Determining Long Jump Target Scores**
 
-### Technical atom 22
+### Technical atom 19
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03577))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
 
 > The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
 | Feature Used | Base Target Score |
 | --- | --- |
@@ -406,354 +348,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 23
+### Technical atom 20
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
-
-> When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. S
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03860))_
-
-> However, you should also take into
-
-### Technical atom 24
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03858))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
 
 > When encountering a monster, one of you may notice the other without them noticing you, allowing you to perform a **surprise attack** . This should also be determined by the game master depending on the situation, but we've included Table 10-2: Surprise Attack Check as a reference. The game master must roll 2D and add it to the monster level (the highest one in the case of a group). Next, all adventurers make a success roll using _ranger skill level + intelligence bonus_ as the baseline score. S
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03861))_
-
-> **Table 10-2: Surprise Attack Check**
-
-### Technical atom 25
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03895))_
-
-> When a monster, etc. attacks a sleeping adventurer, the attack will automatically hit. If the attack does not reduce life to 0, the adventurer wakes up immediately. Therefore, the quickest way to wake up your friends is to kick them.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03894))_
-
-> If you're put to sleep by magical means such as _Sleep Cloud_ , you must make a check via mental power resistance roll each round as long as combat continues.
-
-### Technical atom 26
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
-
-> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04381))_
-
-> Of course, these services are not always available, and when they are, they are not free.
-
-### Technical atom 27
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04380))_
-
-> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04383))_
-
-> As a rough standard, here we've listed Table 11-2: NPC Presence by Level.
-
-### Technical atom 28
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04391))_
-
-> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04392))_
-
-> If you have the magic expanded, the price will increase by double, triple......
-
-### Technical atom 29
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04391))_
-
-> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04393))_
-
-> If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels).
-
-### Technical atom 30
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04470, source-range-870a16bc-04473))_
-
-> Adventurers can study and learn common and normal languages other than their mother tongue. The way to do this is by acquiring (and increasing) bard or sage skill levels. You can only learn to _speak_ with the bard skill. With the sage skill, you can learn both to speak _and_ to read. Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. Of course, it's impossible to learn how to read a language that doesn't have written characters. If an ad
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04472))_
-
-> An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
-
-### Technical atom 31
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04655))_
-
-> After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called **depth** . Immediately after contracting an illness, the _depth_ is 1. After the time indicated by **progression speed** has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04656))_
-
-> Even if a shaman cannot use the spell _Restore Health_ , they can still work with one type of spirit to alleviate symptoms.
-
-### Technical atom 32
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
-
-> function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05680))_
-
-> If other allies want to help, they must attack and be prepared to hit their own ally.
-
-### Technical atom 33
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05679, source-range-870a16bc-05682))_
-
-> function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the needles will not pass through to your head and you will not need to make a resistance roll. However, once the attack hits, the hanger leg will now be lodged in the victim's head, so al
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05681))_
-
-> However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
-
-### Technical atom 34
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
-
-> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05693))_
-
-> Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=16/10 (3) Mental Points/Resistance=7/9 (2) Special Abilities=Opponent’s attack is -2 Habitat=Mountains
-
-### Technical atom 35
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05695))_
-
-> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05694))_
-
-> Languages=None Perception=Five senses
-
-### Technical atom 36
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05811))_
-
-> A bear's special attack is a _bear hug_ . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it’ll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it’ll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05812))_
-
-> In this state, the bear cannot attack other opponents.
-
-### Technical atom 37
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06044))_
-
-> ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target. If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. On the next round, you must make a resistance roll using _adventurer level + strength bonus_ as the baseline score and the ethnoa's attack points (or the final score from when the attack hits) as the target score. If you fail, the poor adventurer is thrown into the pouch t
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06046))_
-
-> While the victim is still conscious, they can attack from within using a dagger, shortsword, or similar small bladed weapon.
-
-### Technical atom 38
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06059))_
-
-> If a ranger or sage succeeds on a success roll against target score 12 using _ranger/sage skill level + intelligence bonus_ as the baseline score, they will be able to see the killer creeper's true identity before it approaches, and thus avoid the encounter (this is considered a use of _plant and animal check_ and _monster check_ ). If they fail, the adventurer will have stepped into the killer creeper without realizing it. This is always a surprise attack, so for one round, only the killer cree
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06061))_
-
-> A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move.
-
-### Technical atom 39
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06062))_
-
-> A character entangled in vines can also attempt to pull the entangled vines off instead of making a normal attack. Make a success roll using _adventurer level + strength bonus_ as the baseline score and the killer creeper's attack points (10,
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06063))_
-
-> If successful, you can pull off the vines.
-
-### Technical atom 40
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06467, source-range-870a16bc-06471))_
-
-> They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. In present day Forcelia, the technique used to create stalkers has been lost. Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06469))_
-
-> Stalkers are usually ghostly beings, who can move without being blocked by physical obstacles.
-
-### Technical atom 41
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
-
-> When an opponent is too strong, and fighting normally is of no use, an adventurer can **focus wholly on defense** . When focusing on defense, an adventurer _cannot_ attack or use any magic during that round. In return, you’ll gain a +2 bonus to your _evasion speed_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
-
-> When a foe cannot evade, or if they're so cornered they have no choice
-
-### Technical atom 42
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
-
-> Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07942))_
-
-> Even if it’s a magic shield, the _only_ bonus damage you get is the
-
-### Technical atom 43
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07941))_
-
-> Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07944))_
-
-> If you’re a _fighter_ , you can also perform a shield attack as a _ram_ .
-
-### Technical atom 44
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355, source-range-870a16bc-00360))_
-
-> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00358))_
-
-| Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
-| --- | --- | --- | --- |
-| Human | ⬤Refer to the_backgrounds_table (Table 1-5) | Same as above | Same as<br>above |
-| Dwarf | ⬤Has 5 levels in a crafsman skill<br>⬤Can see in the dark<br>⬤Unable to acquire the shaman or sorcerer skill | 3000 | 2D x 300 |
-| Grassrunner | <br>⬤Has 1 level in the ranger skill<br>⬤Has 1 level in the thief skill<br>⬤Can communicate with plants and insects<br>⬤Cannot acquire anyrune master skills | 3000 | 2D x 200 |
-| Elf | ⬤Has 1 level in the shaman skill<br>⬤Cannot acquire thepriest skill | 2000 | 2D x 200 |
-| Half-Elf | ⬤When raised by elves, characteristics are the same as<br>elves, when raised by humans, they're the same as<br>humans. | <br> <br>Same as above | Same as<br>above |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-|Race|Restrictions／Special Abilities|Pre-Adventure<br>Exp. Pts.|Money|
-|---|---|---|---|
-|Human|⬤Refer to the_backgrounds_table (Table 1-5)|Same as above|Same as<br>above|
-|Dwarf|⬤Has 5 levels in a crafsman skill<br>⬤Can see in the dark<br>⬤Unable to acquire the shaman or sorcerer skill|3000|2D x 300|
-|Grassrunner|<br>⬤Has 1 level in the ranger skill<br>⬤Has 1 level in the thief skill<br>⬤Can communicate with plants and insects<br>⬤Cannot acquire anyrune master skills|3000|2D x 200|
-|Elf|⬤Has 1 level in the shaman skill<br>⬤Cannot acquire thepriest skill|2000|2D x 200|
-|Half-Elf|⬤When raised by elves, characteristics are the same as<br>elves, when raised by humans, they're the same as<br>humans.|<br> <br>Same as above|Same as<br>above|
-```
-
-</details>
-
-### Technical atom 45
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03545, source-range-870a16bc-03549))_
-
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb time, only double ones will result in a failure.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-
-| **Table 6-1: Climb by Skill** |
-| --- |
-| With Rope |
-| Climb with thief skill |
-| Climb with common adventurer<br>ability |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-|**Table 6-1: Climb by Skill**|||
-|---|---|---|
-||With Rope|Without Rope|
-|Climb with thief skill|Almost always succeeds (only double<br>ones fail)|Requires success<br>roll|
-|Climb with common adventurer<br>ability|Requires success roll|Not possible|
-```
-
-</details>
-
-### Technical atom 46
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03552))_
-
-| Base Target Score = 10 |
-| --- |
-| Modifer due to wall and clif foothold conditions:<br> *No walls or clifs, using a vertical rope=<br> Walls and clifs are vertical, very slippery, not a good foothold= |
-| Walls and clifs are vertical, easy to put feet on= |
-| Walls and clifs are somewhat slanted, but slippery (e.g., sloped rapids, etc.) |
-| Walls and clifs are somewhat slanted, easy to put feet on= |
-| Modifer due to armor worn: |
-| *Chainmail, lamellar, splint, plate= |
-| Ring mail, hard leather= |
-| Cloth, sof leather, no armor= |
-| Other conditions set by game master: |
-| Have very little luggage |
-| Have a lot of luggage, heavy |
-| Strong winds<br> Others, as appropriate depending on the situation |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-||Base Target Score = 10|||
-|---|---|---|---|
-||Modifer due to wall and clif foothold conditions:<br> *No walls or clifs, using a vertical rope=<br> Walls and clifs are vertical, very slippery, not a good foothold=|+4<br>+4||
-||Walls and clifs are vertical, easy to put feet on=|+2||
-||Walls and clifs are somewhat slanted, but slippery (e.g., sloped rapids, etc.)|+2||
-||Walls and clifs are somewhat slanted, easy to put feet on=|±0||
-||Modifer due to armor worn:|||
-||*Chainmail, lamellar, splint, plate=|+4||
-||Ring mail, hard leather=|+2||
-||Cloth, sof leather, no armor=|±0||
-||Other conditions set by game master:|||
-||Have very little luggage|-2||
-||Have a lot of luggage, heavy|+2||
-||Strong winds<br> Others, as appropriate depending on the situation|+2||
-```
-
-</details>
-
-### Technical atom 47
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
-
-| Skill Used | Base Target Score |
-| --- | --- |
-| Tief Skill (Normal High Jump) | 5 for 2 meters, +1 for every 5 cm |
-| Tief Skill (Pole High Jump) | 5 for 4 meters, +1 for every 20 cm |
-| Adventurer Level (Normal High Jump) | 5 for 1 meter, +1 for every 5 cm |
-| Adventurer Level (Pole High Jump) | Not possible |
-| Conditions due to armor worn:<br> *Chain mail, lamellar, splint, plate<br> Ring mail, hard leather<br> Cloth, sof leather, no armor | +4<br>+2<br>±0 |
-| Wind conditions:<br> Strong wind | +2 |
-| Other conditions set by the game master:<br> Have very little luggage<br>-2<br> Have a lot of luggage, heavy<br>+2<br> Insufcient run-up<br>+2<br> Dangerous place where failure could be life-threatening<br>+2<br> Others, as appropriate to the situation |  |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-|Skill Used|Base Target Score|
-|---|---|
-|Tief Skill (Normal High Jump)|5 for 2 meters, +1 for every 5 cm|
-|Tief Skill (Pole High Jump)|5 for 4 meters, +1 for every 20 cm|
-|Adventurer Level (Normal High Jump)|5 for 1 meter, +1 for every 5 cm|
-|Adventurer Level (Pole High Jump)|Not possible|
-|||
-|Conditions due to armor worn:<br> *Chain mail, lamellar, splint, plate<br> Ring mail, hard leather<br> Cloth, sof leather, no armor|+4<br>+2<br>±0|
-|Wind conditions:<br> Strong wind|+2|
-|Other conditions set by the game master:<br> Have very little luggage<br>-2<br> Have a lot of luggage, heavy<br>+2<br> Insufcient run-up<br>+2<br> Dangerous place where failure could be life-threatening<br>+2<br> Others, as appropriate to the situation||
-```
-
-</details>
-
-### Technical atom 48
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03862))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03662))_
 
 | **Table 10-2: Surprise Attack Check** |
 | --- |
@@ -778,32 +379,250 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 49
+### Technical atom 21
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06755))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03693))_
 
-> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+> When a monster, etc. attacks a sleeping adventurer, the attack will automatically hit. If the attack does not reduce life to 0, the adventurer wakes up immediately. Therefore, the quickest way to wake up your friends is to kick them.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06757))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03692))_
 
-| Sub-Ability<br>Score | Featherfolk | Merman | Dark Elf | Noble<br>Lizardman | Centaur |
-| --- | --- | --- | --- | --- | --- |
-| A<br>B<br>C<br>D<br>E<br>F<br>G<br>H | 2D<br>1D+6<br>2D<br>2D<br>1D+3<br>2D<br>1D+2<br>2D+6 | 2D<br>1D+6<br>2D<br>2D<br>1/2D<br>2D<br>2D<br>1D+6 | 1D+6<br>1D+6<br>1D+6<br>1D+6<br>1D<br>1/2D<br>1D+4<br>1D+6 | 2D<br>1D+3<br>2D<br>2D<br>2D<br>2D+6<br>2D<br>2D | 2D<br>2D<br>2D<br>2D<br>1D+6<br>1D+6<br>1D+6<br>1D |
+> If you're put to sleep by magical means such as _Sleep Cloud_ , you must make a check via mental power resistance roll each round as long as combat continues.
+
+### Technical atom 22
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
+
+> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04145))_
+
+> Of course, these services are not always available, and when they are, they are not free.
+
+### Technical atom 23
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04144))_
+
+> In some cases, adventurers may need to rely on NPCs to save them from situations that are beyond their control. You may want to have a _Remove Curse_ cast on you when you're cursed, a _Resurrection_ cast when someone dies, or have a magical item appraised using _Analyze Enchantment_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04147))_
+
+> As a rough standard, here we've listed Table 11-2: NPC Presence by Level.
+
+### Technical atom 24
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
+
+> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
+
+> If you have the magic expanded, the price will increase by double, triple......
+
+### Technical atom 25
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
+
+> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
+
+> If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels).
+
+### Technical atom 26
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157, source-range-870a16bc-04161))_
+
+> You successfully find a 10th level priest and the negotiations are settled. If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels). However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection. To be even more certain, the adventurers request an additional +3 to their final score via ritual. If you do this, the resurrection wi
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04159))_
+
+> Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
+
+### Technical atom 27
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
+
+> To be even more certain, the adventurers request an additional +3 to their final score via ritual. If you do this, the resurrection will be successful unless you roll double ones. However, in order to do so, you must donate 9000 x 5 (because the eventual final score is +4) = **45,000** gamels to the priest (temple). In this case, the average advance payment is between 4,500 and 13,500 Gamels.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
+
+> If you don't have clients, you won't get paid.
+
+### Technical atom 28
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04230, source-range-870a16bc-04233))_
+
+> Adventurers can study and learn common and normal languages other than their mother tongue. The way to do this is by acquiring (and increasing) bard or sage skill levels. You can only learn to _speak_ with the bard skill. With the sage skill, you can learn both to speak _and_ to read. Adventurers who have learned both to speak and to read can _write_ meaningful sentences using that language. Of course, it's impossible to learn how to read a language that doesn't have written characters. If an ad
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04232))_
+
+> An owner of the sorcerer skill can read low ancient, so acquiring the sage skill will quickly allow you to learn new languages (if you can read common).
+
+### Technical atom 29
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04401))_
+
+> After a certain period of time has elapsed after becoming ill, the illness either progresses further or gets better. The degree of progression of an illness is indicated by a score called **depth** . Immediately after contracting an illness, the _depth_ is 1. After the time indicated by **progression speed** has elapsed since you contracted the illness, roll two dice and look at the result. If the roll is less than the **progression intensity** , the disease gets worse and the _depth_ increases 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04402))_
+
+> Even if a shaman cannot use the spell _Restore Health_ , they can still work with one type of spirit to alleviate symptoms.
+
+### Technical atom 30
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04518))_
+
+> In these cases, adventurers can request NPCs to do this kind of work. If it’s a very simple task like those above, you can have it done for _NPC skill level x skill level x 30 gamels_ . For example, if you request an appraisal from a 5th level sage, you will have to pay 5 x 5 x 30 = **750** gamels. If the task becomes a little more complex, use numbers such as x _40_ or x _50_ instead of x 30. Also, if there’s no one available to do this for you, there is of course no point in paying any amount 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04521))_
+
+> If the work _fails_ , you do _not_ have to pay the remainder.
+
+### Technical atom 31
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
+
+> Then, needles extended from the tips of the legs are embedded into the opponent's brain. In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the nee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05230))_
+
+> If other allies want to help, they must attack and be prepared to hit their own ally.
+
+### Technical atom 32
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05229, source-range-870a16bc-05232))_
+
+> Then, needles extended from the tips of the legs are embedded into the opponent's brain. In addition to absorbing nourishing blood from the blood vessels, the needles also have the function of paralyzing the opponent’s brain and controlling their nervous system. The victim must make a life force resistance roll against target score 8, and if they fail, their body is taken from them regardless of their will. If your armor and adventurer level prevent you from suffering substantial damage, the nee
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05231))_
+
+> However, even if its opponent has human intellect, it cannot speak their languages, nor can it take their knowledge and experience as its own.
+
+### Technical atom 33
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05244))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05242))_
+
+> Evasion Points=11 (4) Defense Points=5 Life Points/Resistance=16/10 (3) Mental Points/Resistance=7/9 (2) Special Abilities=Opponent’s attack is -2 Habitat=Mountains
+
+### Technical atom 34
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05244))_
+
+> Eagles are large, carnivorous birds. They attack their opponents from the air with their claws and beak. When an adventurer attacks an eagle, they will suffer a -2 penalty to their attack because it’s airborne. An eagle can grab and carry away a medium-sized animal, such as a dog
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05243))_
+
+> Languages=None Perception=Five senses
+
+### Technical atom 35
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05350))_
+
+> A bear's special attack is a _bear hug_ . This is a technique in which it holds its opponent in its thick arms, squeezing them. Treat this as strangling (see p. 236). Bears use this attack depending on the situation. When surrounded by multiple opponents, it’ll choose to swing its arms around and try to mow down anything it happens to hit, but if there are fewer opponents, it’ll approach for a bear hug. If a bear hug attack hits, the adventurer will be held by the bear.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05351))_
+
+> In this state, the bear cannot attack other opponents.
+
+### Technical atom 36
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05560))_
+
+> An ethnoa is a plant about 3 meters tall, with six tentacles and a large, openmouthed pouch. Each tentacle is about 4 meters long, and will wrap around anything that comes near, and throw it into the pouch. The pouch contains a strong acid, which dissolves its prey. An ethnoa can attack using all six tentacles at the same time, but it can use only two against a single target. If an adventurer is hit by an ethnoa's tentacles, they will suffer damage and also become entangled in the tentacles. On 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05562))_
+
+> While the victim is still conscious, they can attack from within using a dagger, shortsword, or similar small bladed weapon.
+
+### Technical atom 37
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05574))_
+
+> If a ranger or sage succeeds on a success roll against target score 12 using _ranger/sage skill level + intelligence bonus_ as the baseline score, they will be able to see the killer creeper's true identity before it approaches, and thus avoid the encounter (this is considered a use of _plant and animal check_ and _monster check_ ). If they fail, the adventurer will have stepped into the killer creeper without realizing it. This is always a surprise attack, so for one round, only the killer cree
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05576))_
+
+> A character entangled in two or more vines cannot use ancient magic or spirit magic, because they're unable to move.
+
+### Technical atom 38
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05918, source-range-870a16bc-05921))_
+
+> They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. In present day Forcelia, the technique used to create stalkers has been lost. Therefore, all stalkers adventurers will meet are survivors from the ancient kingdom.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05920))_
+
+> Stalkers are usually ghostly beings, who can move without being blocked by physical obstacles.
+
+### Technical atom 39
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07154))_
+
+> When an adventurer is armed with a spear, etc. he or she can **charge** an opponent and use his or her weight and 264 speed to deal great damage. Since you can attack and move at the same time, you’ll also be able to attack from a slightly distant position (you can attack while performing _full movement_ ). This is resolved as follows.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07156))_
+
+> If you’re any closer than this, it's not possible to charge, and if you’re any further away, you cannot reach your opponent.
+
+### Technical atom 40
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
+
+> Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07307))_
+
+> Even if it’s a magic shield, the _only_ bonus damage you get is the usual ( _fighter/thief skill level + strength bonus_ ).
+
+### Technical atom 41
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07306))_
+
+> Adventurers may use shields for attacks. However, in this case, the shield's evasion speed modifier _cannot_ be added to evasion speed. The shield's attack power modifier must be used _as is_ . In other words, a _small_ shield is **±0** and a _large_ shield is **-1** . However, large shields with _magical power of +1 or greater_ will _no longer_ have this -1 modifier.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07308))_
+
+> If you’re a _fighter_ , you can also perform a shield attack as a _ram_ .
+
+### Technical atom 42
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
+
+> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character 
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00346))_
+
+| Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
+| --- | --- | --- | --- |
+| Human | ⬤Refer to the_backgrounds_table (Table 1-5) | Same as above | Same as<br>above |
+| Dwarf | ⬤Has 5 levels in a crafsman skill<br>⬤Can see in the dark<br>⬤Unable to acquire the shaman or sorcerer skill | 3000 | 2D x 300 |
+| Grassrunner | <br>⬤Has 1 level in the ranger skill<br>⬤Has 1 level in the thief skill<br>⬤Can communicate with plants and insects<br>⬤Cannot acquire anyrune master skills | 3000 | 2D x 200 |
+| Elf | ⬤Has 1 level in the shaman skill<br>⬤Cannot acquire thepriest skill | 2000 | 2D x 200 |
+| Half-Elf | ⬤When raised by elves, characteristics are the same as<br>elves, when raised by humans, they're the same as<br>humans. | <br> <br>Same as above | Same as<br>above |
 
 <details>
 <summary>Raw table text</summary>
 
 ```
-|Sub-Ability<br>Score|Featherfolk|Merman|Dark Elf|Noble<br>Lizardman|Centaur|
-|---|---|---|---|---|---|
-|A<br>B<br>C<br>D<br>E<br>F<br>G<br>H|2D<br>1D+6<br>2D<br>2D<br>1D+3<br>2D<br>1D+2<br>2D+6|2D<br>1D+6<br>2D<br>2D<br>1/2D<br>2D<br>2D<br>1D+6|1D+6<br>1D+6<br>1D+6<br>1D+6<br>1D<br>1/2D<br>1D+4<br>1D+6|2D<br>1D+3<br>2D<br>2D<br>2D<br>2D+6<br>2D<br>2D|2D<br>2D<br>2D<br>2D<br>1D+6<br>1D+6<br>1D+6<br>1D|
+|Race|Restrictions／Special Abilities|Pre-Adventure<br>Exp. Pts.|Money|
+|---|---|---|---|
+|Human|⬤Refer to the_backgrounds_table (Table 1-5)|Same as above|Same as<br>above|
+|Dwarf|⬤Has 5 levels in a crafsman skill<br>⬤Can see in the dark<br>⬤Unable to acquire the shaman or sorcerer skill|3000|2D x 300|
+|Grassrunner|<br>⬤Has 1 level in the ranger skill<br>⬤Has 1 level in the thief skill<br>⬤Can communicate with plants and insects<br>⬤Cannot acquire anyrune master skills|3000|2D x 200|
+|Elf|⬤Has 1 level in the shaman skill<br>⬤Cannot acquire thepriest skill|2000|2D x 200|
+|Half-Elf|⬤When raised by elves, characteristics are the same as<br>elves, when raised by humans, they're the same as<br>humans.|<br> <br>Same as above|Same as<br>above|
 ```
 
 </details>
 
-### Technical atom 50
+### Technical atom 43
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06765))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 
 | Level 1-2 | It's no big deal. Just a small problem in a small village |
 | --- | --- |
@@ -830,50 +649,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 51
+### Technical atom 44
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08053))_
-
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08056))_
-
-| Age | Modifcation |
-| --- | --- |
-| 3 – 5 | All ability scores reduced by 1/6 |
-| 6 – 8 | All ability scores reduced by 2/6 |
-| 9 – 10 | All ability scores reduced by 3/6 |
-| 11 – 12 | All ability scores reduced by 4/6 |
-| 13 – 14 | All ability scores reduced by 5/6 |
-| 51 – 60 | All ability scores reduced to 5/6, except intelligence and mental power remain the same |
-| 61 – 70 | All ability scores reduced to 4/6, except intelligence and mental power remain the same |
-| 71 – 80 | All ability scores reduced to 3/6, except intelligence and mental power remain the same |
-| 81 – 90 | All ability scores reduced to 2/6, except intelligence and mental power remain the same |
-| 91+ | All ability scores reduced to 1/6, except intelligence and mental power remain the same |
-
-<details>
-<summary>Raw table text</summary>
-
-```
-|Age|Modifcation|
-|---|---|
-|3 – 5|All ability scores reduced by 1/6|
-|6 – 8|All ability scores reduced by 2/6|
-|9 – 10|All ability scores reduced by 3/6|
-|11 – 12|All ability scores reduced by 4/6|
-|13 – 14|All ability scores reduced by 5/6|
-|51 – 60|All ability scores reduced to 5/6, except intelligence and mental power remain the same|
-|61 – 70|All ability scores reduced to 4/6, except intelligence and mental power remain the same|
-|71 – 80|All ability scores reduced to 3/6, except intelligence and mental power remain the same|
-|81 – 90|All ability scores reduced to 2/6, except intelligence and mental power remain the same|
-|91+|All ability scores reduced to 1/6, except intelligence and mental power remain the same|
-```
-
-</details>
-
-### Technical atom 52
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08385))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
 | Ability | Relevant AbilityScore | Retryinga success roll on the same target |
 | --- | --- | --- |
@@ -898,9 +676,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 53
+### Technical atom 45
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08390))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
 | AbilityScore | Bonus |
 | --- | --- |
@@ -927,13 +705,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 54
+### Technical atom 46
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
 > On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08392))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07729))_
 
 | Sub-AbilityScore | Human | Dwarf | Grassrunner | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -964,13 +742,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 55
+### Technical atom 47
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08393))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
 > On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08395))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07732))_
 
 | AbilityScore | Human | Grassrunner | Dwarf | Elf | Half-Elf |
 | --- | --- | --- | --- | --- | --- |
@@ -997,9 +775,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 56
+### Technical atom 48
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08398))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07735))_
 
 | 2D | Background | StartingSkills | Exp. Pts. | Money |
 | --- | --- | --- | --- | --- |
@@ -1036,9 +814,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 57
+### Technical atom 49
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08400))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
 | Race | Restrictions／Special Abilities | Pre-Adventure<br>Exp. Pts. | Money |
 | --- | --- | --- | --- |
@@ -1063,9 +841,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 58
+### Technical atom 50
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08402))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
 | Attained<br>Level | Sorcerer & Sage at the<br>same time | Sorcerer | Sorcerer<br>(with<br>Sage) | <br>Shaman | <br>Fighter<br>Tief<br>Priest | <br>Ranger<br>Sage<br>Bard |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -1086,9 +864,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 59
+### Technical atom 51
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08405))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07742))_
 
 | **Table 1-8: Weapons-1** |
 | --- |
@@ -1117,9 +895,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 60
+### Technical atom 52
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08408))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07745))_
 
 | **Table 1-8: Weapons-2** |
 | --- |
@@ -1156,9 +934,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 61
+### Technical atom 53
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08411))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07748))_
 
 | **Table 1-9: Armor** |
 | --- |
@@ -1179,9 +957,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 62
+### Technical atom 54
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08413))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
 | Shield Name | Req. Str. | Price |
 | --- | --- | --- |
@@ -1200,9 +978,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 63
+### Technical atom 55
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08420))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07757))_
 
 | **Table 1-11: Equipment** |
 | --- |
@@ -1237,13 +1015,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 64
+### Technical atom 56
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08424))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
 
 > When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08422))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07759))_
 
 | Expansion<br>Rate | Area Expansion<br>Length | Volume Expansion<br>Length |
 | --- | --- | --- |
@@ -1276,13 +1054,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 65
+### Technical atom 57
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08425))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
 > For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08428))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07765))_
 
 | Target Score | Difculty | Standard |
 | --- | --- | --- |
@@ -1333,13 +1111,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 66
+### Technical atom 58
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
 > **Table 9-2: Success Roll Modifiers**
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08430))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
 
 | **Table 9-2: Success Roll Modifers** |
 | --- |
@@ -1360,13 +1138,13 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 67
+### Technical atom 59
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08429))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
 > **Table 9-2: Success Roll Modifiers**
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08432))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
 
 | **Table 10-1: Attack Power and Evasion Speed Modifers** |
 | --- |
@@ -1389,9 +1167,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 68
+### Technical atom 60
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08434))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07771))_
 
 | **Table 10-2: Surprise Attack Check** |
 | --- |
@@ -1416,9 +1194,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 69
+### Technical atom 61
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08437))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
 | 10th level | Royal capital level of a large country |
 | --- | --- |
@@ -1441,9 +1219,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 70
+### Technical atom 62
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08439))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
 | Armor Name | Evasion Speed<br>Modifer | Defense<br>Modifer | Critical Target<br>Change | Anti-strangling<br>Protection |
 | --- | --- | --- | --- | --- |
@@ -1462,9 +1240,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 71
+### Technical atom 63
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08441))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07778))_
 
 | **Table 16-4 Maximum Ranges** | **Table** |
 | --- | --- |
@@ -1521,9 +1299,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 72
+### Technical atom 64
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08444))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
 | Age | Modifcation |
 | --- | --- |
@@ -1558,9 +1336,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 73
+### Technical atom 65
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08446))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
 | Fire-Type | Firebolt, Fireball, Firestorm |
 | --- | --- |
@@ -1593,9 +1371,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 74
+### Technical atom 66
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08449))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1634,9 +1412,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 75
+### Technical atom 67
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08450))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1675,9 +1453,9 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 </details>
 
-### Technical atom 76
+### Technical atom 68
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-08451))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07788))_
 
 | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number | Key Number |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1719,28 +1497,33 @@ What [[sword-world-rpg-complete-edition]] covers about adventure:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-adventurer-ability]] - shared statements and technical atoms (12 shared statement(s), 37 shared atom(s))
-- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (21 shared statement(s), 15 shared atom(s))
-- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 23 shared atom(s))
-- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (1 shared statement(s), 16 shared atom(s))
-- [[sword-world-rpg-complete-edition-13-animal]] - shared statements and technical atoms (5 shared statement(s), 5 shared atom(s))
+- [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (21 shared statement(s), 13 shared atom(s))
+- [[sword-world-rpg-complete-edition-score]] - shared statements and technical atoms (1 shared statement(s), 18 shared atom(s))
+- [[sword-world-rpg-complete-edition-target]] - shared statements and technical atoms (1 shared statement(s), 14 shared atom(s))
+- [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (9 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-power]] - shared statements and technical atoms (4 shared statement(s), 7 shared atom(s))
+- [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (10 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-final]] - shared statements and technical atoms (1 shared statement(s), 6 shared atom(s))
 - [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (1 shared statement(s), 6 shared atom(s))
-- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (3 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-force]] - shared statements and technical atoms (4 shared statement(s), 4 shared atom(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (1 shared statement(s), 5 shared atom(s))
-- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-character-creation]] - shared statements and technical atoms (5 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-16-combat-option]] - shared statements and technical atoms (4 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-13-10-magical-creature]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
-- [[sword-world-rpg-complete-edition-result]] - shared technical atoms (12 shared atom(s))
+- [[sword-world-rpg-complete-edition-fail]] - shared statements and technical atoms (2 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-agility]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-table]] - shared technical atoms (13 shared atom(s))
+- [[sword-world-rpg-complete-edition-success]] - shared technical atoms (11 shared atom(s))
+- [[sword-world-rpg-complete-edition-result]] - shared technical atoms (9 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared technical atoms (6 shared atom(s))
+- [[sword-world-rpg-complete-edition-ability]] - shared technical atoms (5 shared atom(s))
+- [[sword-world-rpg-complete-edition-addition]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-human]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-resist]] - shared technical atoms (4 shared atom(s))
+- [[sword-world-rpg-complete-edition-caster]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-spell]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-14-magical-item-list]] - shared statements (4 shared statement(s))
-- [[sword-world-rpg-complete-edition-13-undead]] - shared statements (3 shared statement(s))
-- [[sword-world-rpg-complete-edition-13-how-read-monster-catalog]] - shared statements (2 shared statement(s))
-- [[sword-world-rpg-complete-edition-13-spirit]] - shared statements (1 shared statement(s))
-- [[sword-world-rpg-complete-edition-guide-forcelia-alecrast]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-movement]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-effect]] - shared statements (1 shared statement(s))
 
 ## Source
 
