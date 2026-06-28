@@ -1,12 +1,12 @@
 ---
 page_id: sword-world-rpg-complete-edition-14-magical-item-list
 page_kind: concept
-summary: 14.4 Magical Item List: 1 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+summary: 14.4 Magical Item List: 2 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-14-magical-item-list@bc65aff7941c49b78a97e86ae14f9c0d
+projection_coverage: topic-sword-world-rpg-complete-edition-14-magical-item-list@ed6eb443d5bb9f40ec9d88eaa813ae0a
 ---
 
 # 14.4 Magical Item List
@@ -15,11 +15,18 @@ What [[sword-world-rpg-complete-edition]] covers about 14.4 magical item list:
 
 ## Statements
 
+### Chapter 14: Treasures
+
+- Here is a list of magical items commonly seen in Alecrast. Of course, these are just examples, and the game master is free to create all sorts of other magical items. The **base trade price** is the price if an adventurer is lucky enough to be able to buy it (though such opportunities are rare). When adventurers sell them to an _adventurer’s shop_ or an _academy of sages_ , they’re usually accepted at half this price. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06380))_
+
+### Chapter 14: Treasures / 14.4 Magical Item List
+
 - exceptionally high-end, it suddenly becomes an object of interest for enthusiasts, causing prices to _spike_ dramatically. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
+
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -66,7 +73,7 @@ What [[sword-world-rpg-complete-edition]] covers about 14.4 magical item list:
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -113,7 +120,7 @@ What [[sword-world-rpg-complete-edition]] covers about 14.4 magical item list:
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
@@ -160,7 +167,7 @@ What [[sword-world-rpg-complete-edition]] covers about 14.4 magical item list:
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
@@ -197,7 +204,11 @@ What [[sword-world-rpg-complete-edition]] covers about 14.4 magical item list:
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 14: Treasures / 14.4 Magical Item List
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
+
+> exceptionally high-end, it suddenly becomes an object of interest for enthusiasts, causing prices to _spike_ dramatically.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06571))_
 

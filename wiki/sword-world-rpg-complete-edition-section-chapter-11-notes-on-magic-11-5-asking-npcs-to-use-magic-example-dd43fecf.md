@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-5
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:: 24 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-5-asking-npcs-to-use-magic-example-dd43fecf@bf3780d57fb03df9cb326df9aa138dbf
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-5-asking-npcs-to-use-magic-example-dd43fecf@a4e29886408d7720c38d1cc28e9f2c76
 ---
 
 # Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:
@@ -20,29 +20,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
-- At this time, the final score required for resurrection is 19. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
-- The market price is _NPC's rune master skill level x base mental power cost for magic x 20_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
-- And of course, a certain price is required in order to have the magic cast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
-- The same goes for having a ritual performed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
-- through a ritual, you have to double, triple...... _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
-- However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
-- You successfully find a 10th level priest and the negotiations are settled. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
-- For such requests, you usually give 10% to 30% as advance payment. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_
-- The money required at this time is _18,000_ gamels. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
-- If you roll 6 or greater on a success roll, it'll be a success. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
-- The priest's mental power is 14, so it can be expanded by _double_ (final score +1). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
-- To be even more certain, the adventurers request an additional +3 to their final score via ritual. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
-- In this case, the average advance payment is between 4,500 and 13,500 Gamels. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
+- Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
+- And of course, a certain price is required in order to have the magic cast. The market price is _NPC's rune master skill level x base mental power cost for magic x 20_ . If you have the magic expanded, the price will increase by double, triple...... etc. depending on the expansion rate. The same goes for having a ritual performed. If you want to increase the final score by +1, +2...... etc. through a ritual, you have to double, triple...... etc. the price you pay. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
+- You successfully find a 10th level priest and the negotiations are settled. If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels). However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
+- For such requests, you usually give 10% to 30% as advance payment. If the _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_
+- 154 score. The priest's mental power is 14, so it can be expanded by _double_ (final score +1). The money required at this time is _18,000_ gamels. If you roll 6 or greater on a success roll, it'll be a success. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
+- To be even more certain, the adventurers request an additional +3 to their final score via ritual. If you do this, the resurrection will be successful unless you roll double ones. However, in order to do so, you must donate 9000 x 5 (because the eventual final score is +4) = **45,000** gamels to the priest (temple). In this case, the average advance payment is between 4,500 and 13,500 Gamels. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
+- These are the going rates when an _adventurer_ makes a request to an _NPC_ . Adventurers _themselves_ cannot go around charging these same rates. If you don't have clients, you won't get paid. Trying to force people to pay is, of course, a criminal act. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
 - However, in order to do so, you must donate 9000 x 5 (because the eventual final score is +4) = **45,000** gamels to the priest (temple). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
-- However, in order to do so, you must donate 9000 x 5 (because the eventual final score is +4) = **45,000** gamels to the priest (temple). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
-- These are the going rates when an _adventurer_ makes a request to an _NPC_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
-- Adventurers _themselves_ cannot go around charging these same rates. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
-- Trying to force people to pay is, of course, a criminal act. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -71,11 +64,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -98,7 +91,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -135,7 +132,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -180,7 +177,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -221,7 +222,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -262,7 +267,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -300,11 +305,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -340,7 +345,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -372,7 +381,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -409,47 +422,47 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
 
-> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
+> You successfully find a 10th level priest and the negotiations are settled. If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels). However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04156))_
 
 > If you have the magic expanded, the price will increase by double, triple......
 
-### Technical atom 12
+### Technical frame 12: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04155))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04158))_
 
-> Think about when you use _Resurrection_ to bring back a friend who lost their life on an adventure. Let's say you have a corpse that's been dead for 5 days, but has been preserved via _Preservation_ . At this time, the final score required for resurrection is 19.
+> For such requests, you usually give 10% to 30% as advance payment. If the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157))_
 
 > If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels).
 
-### Technical atom 13
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04157, source-range-870a16bc-04161))_
-
-> You successfully find a 10th level priest and the negotiations are settled. If you want to cast _Resurrection_ normally, the required money is 10 (priest's level) x 45 (base mental power cost for _Resurrection_ ) x 20 = **9000** (gamels). However, assuming the priest's intelligence bonus is +2 , a 2D roll of 7 or greater is required for a successful resurrection. To be even more certain, the adventurers request an additional +3 to their final score via ritual. If you do this, the resurrection wi
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04159))_
-
-> Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
-
-### Technical atom 14
+### Technical frame 13: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04160))_
 
 > 154 score. The priest's mental power is 14, so it can be expanded by _double_ (final score +1). The money required at this time is _18,000_ gamels. If you roll 6 or greater on a success roll, it'll be a success.
 
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04159))_
+
+> Thinking that this is not enough, the adventurers ask the priest if they can expand the magic and increase the final
+
+### Technical frame 14: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04162))_
+
+> These are the going rates when an _adventurer_ makes a request to an _NPC_ . Adventurers _themselves_ cannot go around charging these same rates. If you don't have clients, you won't get paid. Trying to force people to pay is, of course, a criminal act.
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
 
 > If you do this, the resurrection will be successful unless you roll double ones.
 
-### Technical atom 15
+### Technical frame 15: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04161))_
 
@@ -459,7 +472,11 @@ From [[sword-world-rpg-complete-edition]].
 
 > If you don't have clients, you won't get paid.
 
-### Technical atom 16
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 

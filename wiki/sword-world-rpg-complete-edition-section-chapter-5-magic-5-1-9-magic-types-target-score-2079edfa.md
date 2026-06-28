@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-9-magic-ty
 page_kind: source
 summary: Chapter 5: Magic / 5.1.9 Magic Types / 《 Target Score 》: 13 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-9-magic-types-target-score-2079edfa@5e123b5c1359b28e56be2248c1536f55
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-9-magic-types-target-score-2079edfa@be05928ae727a1758d417828f7e7d6d3
 ---
 
 # Chapter 5: Magic / 5.1.9 Magic Types / 《 Target Score 》
@@ -22,39 +22,37 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Some magic can nullify the effects of other magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01366))_
-- Most magic is automatically nullified if a nullifying spell is used, but there are some that are not. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01367))_
-- This is magic that has a _target score_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01367))_
-- If you're trying to nullify magic that has a _target score_ with another spell, you must use that other spell's 2D roll to determine your final score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01368))_
+- Some magic can nullify the effects of other magic. For example, the ancient magic _Dispel Magic_ nullifies the effects of most magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01366))_
+- Most magic is automatically nullified if a nullifying spell is used, but there are some that are not. This is magic that has a _target score_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01367))_
+- When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not. If you're trying to nullify magic that has a _target score_ with another spell, you must use that other spell's 2D roll to determine your final score. This final score equals _magic power + 2D roll_ (similar to a final score for other success rolls). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01368))_
 - If this final score is greater than or equal to the _target score_ originally set for that first magic that was cast, then that first magic can be nullified. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01369))_
+- This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 - If this final score is greater than or equal to the _target score_ originally set for that first magic that was cast, then that first magic can be nullified. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01369))_
-- This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
-- Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 - Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.9 Magic Types / 《 Target Score 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01366, source-range-870a16bc-01370))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01369))_
 
-> Some magic can nullify the effects of other magic. For example, the ancient magic _Dispel Magic_ nullifies the effects of most magic. This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nulli
+> If this final score is greater than or equal to the _target score_ originally set for that first magic that was cast, then that first magic can be nullified.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01368))_
 
 > When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not.
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1.9 Magic Types / 《 Target Score 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01368))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01369))_
 
-> When casting any magic, no matter what kind of magic it is, you must roll 2D to check whether an automatic failure (double ones) will occur or not. If you're trying to nullify magic that has a _target score_ with another spell, you must use that other spell's 2D roll to determine your final score. This final score equals _magic power + 2D roll_ (similar to a final score for other success rolls).
+> If this final score is greater than or equal to the _target score_ originally set for that first magic that was cast, then that first magic can be nullified.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 
 > However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ .
 
-### Technical atom 3
+### Technical frame 3: Chapter 5: Magic / 5.1.9 Magic Types / 《 Target Score 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 
@@ -64,21 +62,17 @@ From [[sword-world-rpg-complete-edition]].
 
 > When you use magic that nullifies other magic, if your roll is _double sixes_ , the magic will _automatically_ be nullified, no matter what the _target score_ is.
 
-### Technical atom 4
+### Technical frame 4: Chapter 5: Magic / 5.1.9 Magic Types / 《 Target Score 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01371))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01370))_
 
-> When you use magic that nullifies other magic, if your roll is _double sixes_ , the magic will _automatically_ be nullified, no matter what the _target score_ is.
+> This _target score_ equals the final score of the first magic that was cast (in other words, the magic you're about to nullify). Therefore, when an adventurer uses magic that has a _target score_ , that player should note down that score and remember it. However, if you feel this is cumbersome, or if you forget to make a note, then when it becomes necessary (nullifying magic has been used), you can roll 2D on the spot to determine a final score = _target score_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01372))_
 
 > Conversely, if the dice roll double sixes when determining the _target score_ (the success score of the first magic), you _must_ roll another double sixes in order to nullify that magic.
 
-### Technical atom 5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+### Technical frame 5: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
 
@@ -119,11 +113,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 9: Notes on Success Rolls / Setting Target Scores and Difficulties
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03601))_
 
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+> This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03603))_
 

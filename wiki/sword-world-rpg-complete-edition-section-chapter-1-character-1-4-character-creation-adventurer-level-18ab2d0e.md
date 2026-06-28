@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / [ ⑭ Adventurer Level ]: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-adventurer-level-18ab2d0e@0c8c57d6d72714d1293bead691759d63
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-adventurer-level-18ab2d0e@5155810ebc1d4ed4c1a4e599cec237a4
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / [ ⑭ Adventurer Level ]
@@ -23,11 +23,15 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Once you’ve acquired your final skills (starting skill and growth via starting experience points), you can determine your adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00521))_
-- Adventurer level is equal to the highest adventurer skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00522))_
+- Adventurer level is equal to the highest adventurer skill level. Write this number down. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00522))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

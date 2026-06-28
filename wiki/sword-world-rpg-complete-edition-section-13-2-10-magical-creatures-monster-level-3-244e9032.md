@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-mons
 page_kind: source
 summary: 13.2.10 Magical Creatures / Monster Level=3: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-monster-level-3-244e9032@681ce08dbed257c33a67a95726afd3fe
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-monster-level-3-244e9032@10421b52536143f6ea33299025cc89a1
 ---
 
 # 13.2.10 Magical Creatures / Monster Level=3
@@ -60,7 +60,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

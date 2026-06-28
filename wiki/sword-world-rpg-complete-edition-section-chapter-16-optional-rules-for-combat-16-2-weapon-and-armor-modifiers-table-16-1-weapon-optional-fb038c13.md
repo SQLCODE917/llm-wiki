@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-table-16-1-weapon-optional-fb038c13@694ae5a1678afc546cded55eaddb153e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-table-16-1-weapon-optional-fb038c13@86f61f82689a2fe3b5e43284449f8d5d
 ---
 
 # Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
@@ -24,7 +24,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -109,7 +113,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07093))_
 

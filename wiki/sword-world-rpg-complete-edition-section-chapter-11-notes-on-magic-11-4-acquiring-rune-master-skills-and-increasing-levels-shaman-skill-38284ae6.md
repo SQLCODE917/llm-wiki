@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Shaman Skill 》: 7 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-shaman-skill-38284ae6@122a3192304dcaa373e48c7238103925
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-4-acquiring-rune-master-skills-and-increasing-levels-shaman-skill-38284ae6@dab5d57fd98e9444ae9a26899a9051c4
 ---
 
 # Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Shaman Skill 》
@@ -20,10 +20,6 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The art of communicating with spirits is not based on theory, but must be learned through experience, by watching and imitating other shamans. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04127))_
-- To acquire the shaman skill, you must be taught how to communicate with spirits by a shaman with a shaman skill of 1st level or higher. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04127))_
-- Although there are no specific restrictions in the rules, training for one year or more is usually required. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04127))_
-- This is because your relationship with the spirits becomes stronger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
-- The shaman skill is increased by spending experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
-- As your shaman skill increases, your magic power increases and at the same time you also immediately gain access to higher level spells. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
+- To acquire the shaman skill, you must be taught how to communicate with spirits by a shaman with a shaman skill of 1st level or higher. The art of communicating with spirits is not based on theory, but must be learned through experience, by watching and imitating other shamans. Although there are no specific restrictions in the rules, training for one year or more is usually required. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04127))_
+- The shaman skill is increased by spending experience points. As your shaman skill increases, your magic power increases and at the same time you also immediately gain access to higher level spells. This is because your relationship with the spirits becomes stronger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_
 - This is because your relationship with the spirits becomes stronger. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04128))_

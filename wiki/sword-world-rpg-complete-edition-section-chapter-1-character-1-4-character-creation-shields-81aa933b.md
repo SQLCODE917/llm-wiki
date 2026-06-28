@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / Shields: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-shields-81aa933b@92ac3becd4c23e8e31887c484dcf2918
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-shields-81aa933b@43dcb16cea9579149e938782f9d62205
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / Shields
@@ -20,25 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- However, in terms of increasing a character's defensive ability, the effects of small and large shields are basically the same in this game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
-- In the case of shields, there are only two types: **small shields** (required strength 1) and **large shields** (required strength 13). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
-- Therefore, it is safe to choose the less expensive small shield (Table 1-10: Shields). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
+- In the case of shields, there are only two types: **small shields** (required strength 1) and **large shields** (required strength 13). If a character's strength is 13 or greater, a large shield can be chosen. However, in terms of increasing a character's defensive ability, the effects of small and large shields are basically the same in this game. Therefore, it is safe to choose the less expensive small shield (Table 1-10: Shields). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
 - In the case of shields, there are only two types: **small shields** (required strength 1) and **large shields** (required strength 13). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
 - Therefore, it is safe to choose the less expensive small shield (Table 1-10: Shields). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00426))_
-
-> 22 are several types, but choose which one you think is appropriate (Table 1-9: Armor).
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Shields
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00428))_
 
 > If a character's strength is 13 or greater, a large shield can be chosen.
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Shield 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_
 

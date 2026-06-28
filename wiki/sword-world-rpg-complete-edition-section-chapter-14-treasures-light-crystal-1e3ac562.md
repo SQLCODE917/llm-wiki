@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-light-cry
 page_kind: source
 summary: Chapter 14: Treasures / Light Crystal: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-light-crystal-1e3ac562@a884e6570fbf340b27b3867e548796b3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-light-crystal-1e3ac562@aad58a436457246247670e786ab7822b
 ---
 
 # Chapter 14: Treasures / Light Crystal
@@ -20,26 +20,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- When you chant the password, a light effect equivalent to _Light_ will appear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06720))_
+- When you chant the password, a light effect equivalent to _Light_ will appear. It’ll break after 10 uses. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06720))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Light Crystal
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06716))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06720))_
 
-> When thrown it deals strike power 20 damage within its area of effect, equivalent to _Fireball_ . Its _magic power_ is 4 and breaks after one use.
+> When you chant the password, a light effect equivalent to _Light_ will appear. It’ll break after 10 uses.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06718))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06718, source-range-870a16bc-06719))_
 
 > Rarity=13 Enchanter=Many Form=Spherical polished rainbow-colored crystal
-
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06716))_
-
-> When thrown it deals strike power 20 damage within its area of effect, equivalent to _Fireball_ . Its _magic power_ is 4 and breaks after one use.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06719))_
 
 > Base Trade Price=Remaining number of uses x 120 gamels Powers=Casts a Light spell

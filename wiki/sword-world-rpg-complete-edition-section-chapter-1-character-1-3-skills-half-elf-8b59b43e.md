@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills
 page_kind: source
 summary: Chapter 1: Character / 1.3 Skills / 【 Half-Elf 】: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills-half-elf-8b59b43e@3035100cae34f080a00a22574e428f75
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills-half-elf-8b59b43e@358336631c502600282b7a28ccd4a3dc
 ---
 
 # Chapter 1: Character / 1.3 Skills / 【 Half-Elf 】
@@ -23,18 +23,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A half-elf is one who is born of a human and an elf. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00217))_
-- Humans and elves are close as species and are able to have children, as explained in the elf section. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00217))_
-- Their ears are slightly pointed, but they also have a spot where a beard grows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00218))_
-- They are almost the same height as humans, but are more delicate. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00218))_
+- A half-elf is one who is born of a human and an elf. Humans and elves are close as species and are able to have children, as explained in the elf section. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00217))_
+- Half-elves combine characteristics of both humans and elves. Their ears are slightly pointed, but they also have a spot where a beard grows. They are almost the same height as humans, but are more delicate. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00218))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00319))_
 
-> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+> Depending on whether a half-elf was raised by humans or elves, the skills they have from the start and the limitations on the skills they can acquire differ.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00318))_
 
@@ -53,7 +51,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
 
@@ -90,11 +88,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
 
-> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00325))_
 
@@ -123,7 +121,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
+
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=5: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-monster-level-ae491201@681beb3ce7334bb84bf8ec93177b7336
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-monster-level-ae491201@effd3cfae7a7753dc45bbba2d94f7803
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=5
@@ -56,7 +56,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

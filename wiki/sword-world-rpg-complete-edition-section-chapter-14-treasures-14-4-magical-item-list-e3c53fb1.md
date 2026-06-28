@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-14-4-magi
 page_kind: source
 summary: Chapter 14: Treasures / 14.4 Magical Item List: 2 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-14-4-magical-item-list-e3c53fb1@39b04853e746efd79206ac85582e69f1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-14-4-magical-item-list-e3c53fb1@196c9019e01ccaf9b71848294d20f68b
 ---
 
 # Chapter 14: Treasures / 14.4 Magical Item List
@@ -27,7 +27,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -74,7 +74,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -121,7 +121,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
@@ -168,7 +168,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
@@ -205,7 +205,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 14: Treasures / 14.4 Magical Item List
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
+
+> exceptionally high-end, it suddenly becomes an object of interest for enthusiasts, causing prices to _spike_ dramatically.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06571))_
 

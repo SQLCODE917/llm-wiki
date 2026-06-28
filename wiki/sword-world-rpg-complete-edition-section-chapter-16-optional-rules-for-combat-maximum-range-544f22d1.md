@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / Maximum Range: 3 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-maximum-range-544f22d1@897f25632fc9a7e028e5f7c5317dd06c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-maximum-range-544f22d1@10cc71d9e1a8ba5d66b4eef96aee02cc
 ---
 
 # Chapter 16: Optional Rules for Combat / Maximum Range
@@ -20,17 +20,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+- There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / Maximum Range
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+
+> There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07137))_
 
 > **Table 16-4 Maximum Rang**
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / Maximum Range
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+
+> There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
 

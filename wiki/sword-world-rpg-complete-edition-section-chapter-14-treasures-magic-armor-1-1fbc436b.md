@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-arm
 page_kind: source
 summary: Chapter 14: Treasures / 《 Magic Armor (+1) 》: 5 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-1-1fbc436b@bf98c6eb4cc1955d866ba4733c975c3b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-1-1fbc436b@833f70ecc8d57607940593ac74de33e5
 ---
 
 # Chapter 14: Treasures / 《 Magic Armor (+1) 》
@@ -26,35 +26,31 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This is a price list for magic metal armor with +1 power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06567))_
+- This is a price list for magic metal armor with +1 power. While armor with high required strength tends to be unpopular, when it becomes _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06567))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Armor (+1) 》
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06564))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06567))_
+
+> This is a price list for magic metal armor with +1 power. While armor with high required strength tends to be unpopular, when it becomes
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06564, source-range-870a16bc-06565, source-range-870a16bc-06566))_
 
 > Enchanter=Many Form=Metal armor
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06565))_
-
 > Required Strength/Base Trade Price=See description
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06566))_
 
 > Powers=+1 to evasion speed and damage reduction
 
-### Technical atom 4
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Armor (+1) 》
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06567))_
 
 > While armor with high required strength tends to be unpopular, when it becomes
 
-### Technical atom 5
+### Technical frame 3: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
@@ -93,7 +89,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 4: Chapter 14: Treasures / 《 Magic Armor (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
 

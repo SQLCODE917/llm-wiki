@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / Example:: 13 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-example-2e542438@e8d5bbc993f7ac48d4c4968f92f53dee
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-example-2e542438@74d7f2c87b519e721948421b530fdbc6
 ---
 
 # Chapter 16: Optional Rules for Combat / Example:
@@ -20,19 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- There's a guard standing at the entrance, but he doesn't seem to notice Ducard II. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
-- Ducard II makes a strike roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
-- He _can_ continue to roll to increase the damage, but from here on the critical target will be determined as the normal _10_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
-- However, while _aiming_ , there’s a chance that your opponent will sense your presence. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07168))_
-- You must make a success roll each round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07168))_
-- If you fail, your opponent will notice you, you’ll _no longer_ receive bonuses from aiming, and you’ll also _miss_ the chance for a _surprise attack_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
-- The _difficulty_ is the opponent's _monster level_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
-- If the target’s final score is greater, or if they’re equal, the sniper’s presence will be noticed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07170))_
-- The target must make a success roll using _ranger skill level + intelligence bonus_ as the baseline score, and compare his or her final score with that of the sniper’s _hide_ / _camouflage_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07170))_
+- The adventurer Ducard II sneaks close to a goblin's cave and hides in the bushes. There's a guard standing at the entrance, but he doesn't seem to notice Ducard II. Ducard II loads an arrow into his short bow, spends three rounds aiming, and fires on the fourth round. If it hits, the critical target will be reduced by -3, making it 7. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
+- Ducard II makes a strike roll. It's an 8. That's a _critical_ . He _can_ continue to roll to increase the damage, but from here on the critical target will be determined as the normal _10_ . If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
+- However, while _aiming_ , there’s a chance that your opponent will sense your presence. To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability. You must make a success roll each round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07168))_
+- The _difficulty_ is the opponent's _monster level_ . If you fail, your opponent will notice you, you’ll _no longer_ receive bonuses from aiming, and you’ll also _miss_ the chance for a _surprise attack_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
+- When your opponent is a character, he or she can notice you by using the _sense danger_ ability. The target must make a success roll using _ranger skill level + intelligence bonus_ as the baseline score, and compare his or her final score with that of the sniper’s _hide_ / _camouflage_ . If the target’s final score is greater, or if they’re equal, the sniper’s presence will be noticed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07170))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -61,11 +61,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -88,7 +88,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -125,7 +129,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -170,7 +174,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -211,7 +219,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -252,7 +264,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -290,11 +302,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -330,7 +342,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -362,7 +378,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -399,47 +419,51 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
-
-> However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
-
-> If it hits, the critical target will be reduced by -3, making it 7.
-
-### Technical atom 12
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07164))_
-
-> However, this critical target reduction only applies to the _first_ strike roll. From the _second roll onward_ after a critical, the critical target will be _as normal_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
-
-> If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
-
-### Technical atom 13
+### Technical frame 11: Chapter 16: Optional Rules for Combat / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
 
 > Ducard II makes a strike roll. It's an 8. That's a _critical_ . He _can_ continue to roll to increase the damage, but from here on the critical target will be determined as the normal _10_ . If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07168))_
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07166))_
 
-> To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability.
+> If it hits, the critical target will be reduced by -3, making it 7.
 
-### Technical atom 14
+### Technical frame 12: Chapter 16: Optional Rules for Combat / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07168))_
 
 > However, while _aiming_ , there’s a chance that your opponent will sense your presence. To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability. You must make a success roll each round.
 
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07167))_
+
+> If he rolls a 10 or greater, more damage will be added, but if he rolls a _7, 8 or 9_ , the strike roll will end there.
+
+### Technical frame 13: Chapter 16: Optional Rules for Combat / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
+
+> The _difficulty_ is the opponent's _monster level_ . If you fail, your opponent will notice you, you’ll _no longer_ receive bonuses from aiming, and you’ll also _miss_ the chance for a _surprise attack_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07168))_
+
+> To prevent this, you can use the thief skill’s _hide_ ability or the ranger skill’s _camouflage_ ability.
+
+### Technical frame 14: Chapter 16: Optional Rules for Combat / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07169))_
+
+> The _difficulty_ is the opponent's _monster level_ . If you fail, your opponent will notice you, you’ll _no longer_ receive bonuses from aiming, and you’ll also _miss_ the chance for a _surprise attack_ .
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07170))_
 
 > When your opponent is a character, he or she can notice you by using the _sense danger_ ability.
 
-### Technical atom 15
+### Technical frame 15: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 

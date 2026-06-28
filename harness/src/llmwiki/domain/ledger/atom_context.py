@@ -14,7 +14,7 @@ from llmwiki.domain.ledger.canonical import deterministic_id
 from llmwiki.domain.ledger.common import ConfidenceBasis
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.segments import SourceSegment
-from llmwiki.domain.ledger.topic_terms import content_terms
+from llmwiki.domain.ledger.topic_terms import content_terms, topic_field_matches
 
 _CONTEXT_KINDS = {"paragraph", "list"}
 _INTRO = re.compile(
@@ -92,11 +92,13 @@ def build_technical_atom_contexts(
 
 
 def atom_context_matches(
-    contexts: tuple[TechnicalAtomContext, ...], matcher: re.Pattern[str]
+    contexts: tuple[TechnicalAtomContext, ...],
+    matcher: re.Pattern[str],
+    terms: tuple[str, ...] = (),
 ) -> bool:
     return any(
-        matcher.search(context.context_text)
-        or any(matcher.search(term) for term in context.demonstrated_concept_keys)
+        topic_field_matches(context.context_text, matcher, terms)
+        or topic_field_matches(" ".join(context.demonstrated_concept_keys), matcher, terms)
         for context in contexts
     )
 

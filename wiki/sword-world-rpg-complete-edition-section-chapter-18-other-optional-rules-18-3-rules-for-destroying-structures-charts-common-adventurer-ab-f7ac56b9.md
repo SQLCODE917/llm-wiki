@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table: 57 source-backed entries and 52 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-charts-common-adventurer-ab-f7ac56b9@a26fac24076e04296a67e56f38a5e296
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-charts-common-adventurer-ab-f7ac56b9@4ae5624ca3a720855e71c37ddb31818d
 ---
 
 # Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
@@ -20,23 +20,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
-- 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
-- In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+- On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 - Note) On the table, _expansion rate_ is the multiplier for mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
-- For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
-- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
 - For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
+- **This is a free, unofficial, fan-based translation. Please support original creators by buying Sword World books and supplements.** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07797))_
+- In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 - For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
-- **This is a free, unofficial, fan-based translation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07797))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
 
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb 121 time, only double ones will result in a failure.
+> 121 time, only double ones will result in a failure.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03376))_
 
@@ -59,11 +57,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+### Technical frame 2: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
 
@@ -104,11 +98,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -144,7 +138,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -176,7 +174,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -203,19 +205,23 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07725))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07725, source-range-870a16bc-07726))_
 
 > **Table 1-1: Ability Bonuses**
 
-### Technical atom 7
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07726))_
-
 > **Table 1-2: Skill Types**
 
-### Technical atom 8
+### Technical frame 7: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
@@ -244,7 +250,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 8: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -254,7 +260,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 1-3: Determining Sub-Ability Scores**
 
-### Technical atom 10
+### Technical frame 9: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -291,7 +297,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 10: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -301,7 +307,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 1-4: Average Ability Scores by Race**
 
-### Technical atom 12
+### Technical frame 11: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -334,13 +340,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 12: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07734))_
 
 > **Table 1-5: Backgrounds**
 
-### Technical atom 14
+### Technical frame 13: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07735))_
 
@@ -379,13 +393,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical frame 14: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07736))_
 
 > **Table 1-6: Starting Experience by Race**
 
-### Technical atom 16
+### Technical frame 15: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
@@ -412,13 +434,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 17
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07738))_
 
 > **Table 1-7: Experience Points by Skill (at Character Creation)**
 
-### Technical atom 18
+### Technical frame 17: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
@@ -441,13 +467,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 19
+### Technical frame 18: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07741))_
 
 > **Table 1-8: Weapons-1**
 
-### Technical atom 20
+### Technical frame 19: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07742))_
 
@@ -478,13 +504,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 21
+### Technical frame 20: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 > **Table 1-8: Weapons-2**
 
-### Technical atom 22
+### Technical frame 21: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07745))_
 
@@ -523,13 +549,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 23
+### Technical frame 22: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 > **Table 1-9: Armor**
 
-### Technical atom 24
+### Technical frame 23: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07748))_
 
@@ -552,13 +578,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 25
+### Technical frame 24: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07749))_
 
 > **Table 1-10: Shields**
 
-### Technical atom 26
+### Technical frame 25: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
@@ -579,13 +605,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 27
+### Technical frame 26: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07756))_
 
 > **Table 1-11: Equipment**
 
-### Technical atom 28
+### Technical frame 27: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07757))_
 
@@ -622,17 +656,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 29
+### Technical frame 28: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07758))_
 
 > **Table 5-1: Area and Size Expansion**
 
-### Technical atom 30
+### Technical frame 29: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07759))_
 
@@ -667,7 +705,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 31
+### Technical frame 30: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -677,7 +715,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 9-1: Determining Target Scores or Difficulties**
 
-### Technical atom 32
+### Technical frame 31: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -734,17 +772,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 33
+### Technical frame 32: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
 > **Table 9-2: Success Roll Modifiers**
 
-### Technical atom 34
+### Technical frame 33: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
 
@@ -767,21 +809,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 35
+### Technical frame 34: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07768))_
 
 > **Table 10-1: Attack Power and Evasion Speed Modifiers**
 
-### Technical atom 36
+### Technical frame 35: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
 
@@ -806,13 +848,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 37
+### Technical frame 36: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07770))_
 
 > **Table 10-2: Surprise Attack Check**
 
-### Technical atom 38
+### Technical frame 37: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07771))_
 
@@ -839,13 +885,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 39
+### Technical frame 38: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07773))_
 
 > **Table 11-2: NPC Presence by Level**
 
-### Technical atom 40
+### Technical frame 39: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
@@ -870,13 +916,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 41
+### Technical frame 40: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07775))_
 
 > **Table 16-3 Optional Armor Table**
 
-### Technical atom 42
+### Technical frame 41: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
@@ -897,13 +943,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 43
+### Technical frame 42: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07777))_
 
 > **Table 16-4 Maximum Ranges Table**
 
-### Technical atom 44
+### Technical frame 43: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07778))_
 
@@ -962,13 +1008,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 45
+### Technical frame 44: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07780))_
 
 > **Table 18-1: Age-Based Ability Score Modification Table**
 
-### Technical atom 46
+### Technical frame 45: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
@@ -1005,13 +1051,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 47
+### Technical frame 46: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07782))_
 
 > **Table 18-2 Types of Mag**
 
-### Technical atom 48
+### Technical frame 47: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
@@ -1046,13 +1092,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 49
+### Technical frame 48: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07785))_
 
 > **Table 4-1: Rating Table**
 
-### Technical atom 50
+### Technical frame 49: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
@@ -1093,7 +1139,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 51
+### Technical frame 50: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
@@ -1134,7 +1180,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 52
+### Technical frame 51: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07788))_
 

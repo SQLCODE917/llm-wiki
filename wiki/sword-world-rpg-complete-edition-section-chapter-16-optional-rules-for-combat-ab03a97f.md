@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat: 8 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-ab03a97f@4ae1e981efc4b1893332dcf199a4026e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-ab03a97f@3ddd847e368e398955b6a85e1e9df950
 ---
 
 # Chapter 16: Optional Rules for Combat
@@ -25,33 +25,40 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 16: Optional Rules for Combat / Projectile Range Extension
 
-- In the basic rules, the range limit is 20 meters for throwing weapons and 100 meters for shooting weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
+- In the basic rules, the range limit is 20 meters for throwing weapons and 100 meters for shooting weapons. If you follow these optional rules, you can extend these even further. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
 - In the basic rules, the range limit is 20 meters for throwing weapons and 100 meters for shooting weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
 
 ### Chapter 16: Optional Rules for Combat / Long Distance Modifiers
 
-- Hitting a distant target with a weapon is a nigh-impossible task. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07134))_
-- Throwing weapons have a **-1 modifier to attack power for every meter beyond 20 meters** , and shooting weapons have the same for **every 5 meters beyond 100** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07134))_
+- Hitting a distant target with a weapon is a nigh-impossible task. Throwing weapons have a **-1 modifier to attack power for every meter beyond 20 meters** , and shooting weapons have the same for **every 5 meters beyond 100** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07134))_
 
 ### Chapter 16: Optional Rules for Combat / Maximum Range
 
-- Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+- There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / Projectile Range Extension
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
 
 > If you follow these optional rules, you can extend these even further.
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / Maximum Range
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+
+> There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07137))_
 
 > **Table 16-4 Maximum Rang**
 
-### Technical atom 3
+### Technical frame 3: Chapter 16: Optional Rules for Combat / Maximum Range
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+
+> There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
 

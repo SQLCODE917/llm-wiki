@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-13-spirit-
 page_kind: source
 summary: Chapter 5: Magic / 5.1.13 Spirit Magic and the Shaman Skill / ⬤ Other Spirits: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-13-spirit-magic-and-the-shaman-skill-other-spirits-b3f2794d@aa283490e6d0f317ecf96a9a10f032e5
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-13-spirit-magic-and-the-shaman-skill-other-spirits-b3f2794d@b4d2932b786e70c7a52675a457f65737
 ---
 
 # Chapter 5: Magic / 5.1.13 Spirit Magic and the Shaman Skill / ⬤ Other Spirits
@@ -23,5 +23,4 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Explanations of where these are at work can be found under each individual spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02166))_
-- These are the spirits that control light, darkness, and life. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02166))_
+- These are the spirits that control light, darkness, and life. Explanations of where these are at work can be found under each individual spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02166))_

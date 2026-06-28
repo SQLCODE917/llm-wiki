@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-6-handling-monster-special-
 page_kind: source
 summary: 13.6 Handling Monster Special Abilities / 《 Magic 》: 2 source-backed entries and 15 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-magic-f2830dc2@abc6b88f539d5ebaf1fdec9b9bca643a
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-magic-f2830dc2@63d88528de178cbce244e98d30cc44fe
 ---
 
 # 13.6 Handling Monster Special Abilities / 《 Magic 》
@@ -23,16 +23,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Monsters with this ability can use magic at the indicated level and magic intensity (magic power). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
-- Those with this ability often have an intellect equal to or greater than that of a human, and although they have their own preferences for which magic they use, they do _not_ use it foolishly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
+- Monsters with this ability can use magic at the indicated level and magic intensity (magic power). Those with this ability often have an intellect equal to or greater than that of a human, and although they have their own preferences for which magic they use, they do _not_ use it foolishly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06194))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.7 Magic Expansion / 《 Volume Expansion 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01313))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+> Note: On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
 
@@ -67,11 +66,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Familiar ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
 
-> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+> If the familiar loses life points or mental points due to an attack from another, etc., the caster will suffer the same pain that the familiar felt, so they will lose the same amount of points in life force and mental power (this damage cannot be reduced by adventurer level). However, the number of points lost cannot go beyond the familiar's maximum life points or mental points. Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
 
@@ -98,7 +97,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Slow ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01920))_
+
+> 77 order and movement speed reduced by half due to changes in their agility, and their evasion speed (points) will also take a penalty. Regarding the evasion speed (points) penalty, the effect differs depending on the target's original agility. Please refer to Table 5-3: Slow: Agility and Evasion Penalties.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -125,7 +128,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Haste ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01926))_
+
+> This is a spell that doubles the target's agility from its original score. The target's action order and movement speed will be doubled, and their evasion speed (points) will also receive a bonus. Regarding the evasion speed (points) bonus, the effect differs depending on the target's original agility. Please refer to Table 5-4: Haste: Agility and Evasion Bonuses.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 
@@ -152,7 +159,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 5: Magic / 5.1.17 Special Holy Magic List
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 
@@ -179,11 +186,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03095))_
 
@@ -216,7 +223,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 
@@ -253,11 +264,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04148))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04152))_
 
-> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+> Priests are relatively easy to meet, but shamans and sorcerers are by no means easy to meet. All such decisions are made by the game master. Of course, it would be difficult to ask a single rune master to do all sorts of things again and again, and if the adventurers conclusively incur an NPC's displeasure, no amount of money will make them say yes.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04151))_
 
@@ -282,7 +293,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -329,7 +340,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -376,7 +387,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
@@ -423,7 +434,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 12
+### Technical frame 12: Chapter 14: Treasures / 14.4 Magical Item List
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
+
+> exceptionally high-end, it suddenly becomes an object of interest for enthusiasts, causing prices to _spike_ dramatically.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06571))_
 
@@ -458,7 +473,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
@@ -497,7 +512,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 14
+### Technical frame 14: Chapter 14: Treasures / 《 Magic Armor (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
 
@@ -536,7 +551,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical frame 15: Chapter 14: Treasures / 《 Magic Shield 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_
 

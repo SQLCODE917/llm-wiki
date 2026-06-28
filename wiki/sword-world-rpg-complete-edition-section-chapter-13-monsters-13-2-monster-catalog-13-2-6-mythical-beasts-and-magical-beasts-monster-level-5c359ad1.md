@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=8: 16 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-monster-level-5c359ad1@127fcfb8801232e09fd41113b06910bd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-monster-level-5c359ad1@12fbf9edc330a8beb81383da48322a9a
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=8
@@ -57,34 +57,28 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Rarity=9 Agility=12 Movement Speed=10 Number=Solo Frequency=Very Rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs:15 (8) Strike Points=18 Evasion Points=14 (7) Defense Points=12 Life Points/Resistance=25/18 (11) Mental Points/Resistance=12/16 (9) Special Abilities=Gaze (Resist target score=15, petrifying, once every 2 rounds) Poison blood (Toxicity score 15, strike power 10, bonus damage 8) Not affected by poison and illness Sleepless _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05107))_
-- A basilisk is a large lizard, about 10 meters long, with a chicken's comb on its head and eight legs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05110))_
-- Those gazed at by the basilisk must succeed on a mental power resistance roll against target score 15, or they will instantly turn to stone. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05111))_
+- A basilisk is a large lizard, about 10 meters long, with a chicken's comb on its head and eight legs. In normal combat, it’ll try to bite its enemy to death with its fangs, but if it realizes that it’s at a disadvantage, it’ll attack with its petrifying gaze. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05110))_
+- Its gaze can only be used once every two rounds, cannot be used at the same time as its fangs, and can only aim at one target. Those gazed at by the basilisk must succeed on a mental power resistance roll against target score 15, or they will instantly turn to stone. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05111))_
+- You can attempt to use a large mirror (at least the size of a small shield) to catch the basilisk's gaze and reflect it back to turn the basilisk into stone. In that case, if a character attains a final score of 19 or greater on a resistance roll against petrification, they will be able to reflect it back at the basilisk. If this happens, the basilisk will automatically be petrified. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
+- Basilisks also have a powerful poison in their blood. Weapons that deal damage to a basilisk will be soaked with the blood and become highly poisonous. Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8. If the resistance roll is successful, the strike force becomes 0. This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 - Its gaze can only be used once every two rounds, cannot be used at the same time as its fangs, and can only aim at one target. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05111))_
-- Its gaze can only be used once every two rounds, cannot be used at the same time as its fangs, and can only aim at one target. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05111))_
-- If this happens, the basilisk will automatically be petrified. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
-- In that case, if a character attains a final score of 19 or greater on a resistance roll against petrification, they will be able to reflect it back at the basilisk. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
-- You can attempt to use a large mirror (at least the size of a small shield) to catch the basilisk's gaze and reflect it back to turn the basilisk into stone. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
-- Basilisks also have a powerful poison in their blood. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
-- Weapons that deal damage to a basilisk will be soaked with the blood and become highly poisonous. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
-- If the resistance roll is successful, the strike force becomes 0. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
-- This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 - This damage can only be reduced by adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05113))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=8
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05108))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05110))_
+
+> A basilisk is a large lizard, about 10 meters long, with a chicken's comb on its head and eight legs. In normal combat, it’ll try to bite its enemy to death with its fangs, but if it realizes that it’s at a disadvantage, it’ll attack with its petrifying gaze.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05108, source-range-870a16bc-05109))_
 
 > Habitat=Deserts
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05109))_
-
 > Languages=None Perception=Five senses
 
-### Technical atom 3
+### Technical frame 2: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=8
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05112))_
 
@@ -94,7 +88,11 @@ From [[sword-world-rpg-complete-edition]].
 
 > Anyone holding a weapon with basilisk blood on it must make a life force resistance roll against target score 15 each round, and if they fail, they will suffer damage resulting from a strike power 10 strike roll plus bonus damage 8.
 
-### Technical atom 4
+### Technical frame 3: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

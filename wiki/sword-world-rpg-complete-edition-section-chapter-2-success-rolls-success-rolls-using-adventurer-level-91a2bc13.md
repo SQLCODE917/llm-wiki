@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-2-success-rolls-succes
 page_kind: source
 summary: Chapter 2: Success Rolls / Success Rolls Using Adventurer Level: 6 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-success-rolls-using-adventurer-level-91a2bc13@53b7ba7e84e96d658a5c3e27001235f8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-success-rolls-using-adventurer-level-91a2bc13@4947631dfc4886e17f356a07b8fde38b
 ---
 
 # Chapter 2: Success Rolls / Success Rolls Using Adventurer Level
@@ -20,9 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- However, in some cases, _adventurer level_ , rather than skill level, is used to calculate the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00639))_
-- For a success roll, the baseline score is usually calculated as _relevant skill level + ability bonus_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00639))_
+- For a success roll, the baseline score is usually calculated as _relevant skill level + ability bonus_ . However, in some cases, _adventurer level_ , rather than skill level, is used to calculate the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00639))_
 - For actions that _anyone_ would be able to perform if they became proficient in adventuring, the baseline score for a success roll is _adventurer level + ability bonus_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00640))_
-- Actions that fit into this category are explained in _6.6: Common Adventurer Abilities_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00641))_
-- In addition, the following _2.7: Resistance Rolls_ are also a check that uses adventurer level in its baseline score calculation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00641))_
+- Actions that fit into this category are explained in _6.6: Common Adventurer Abilities_ . In addition, the following _2.7: Resistance Rolls_ are also a check that uses adventurer level in its baseline score calculation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00641))_
 - When a character with adventurer level 0 (a character with no adventurer skills) makes these checks, the baseline score is _0_ regardless of their ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00642))_

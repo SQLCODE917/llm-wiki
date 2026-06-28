@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-s-02
 page_kind: source
 summary: 13.2.10 Magical Creatures / [ Sí ]: 8 source-backed entries and 80 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-s-02675ca4@58aeb787f192e33def7acb054d9b3def
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-s-02675ca4@26e25645ec449fc0418301a0d0dd6fc7
 ---
 
 # 13.2.10 Magical Creatures / [ Sí ]
@@ -21,21 +21,16 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Monster Level=3 Rarity=14 Agility=17 Movement Speed=17 Number=One to several Frequency=Very rare Intellect=Human Reaction=Adversarial Attack Points=Weapon:11 (4) Strike Points=4 Evasion Points=12 (5) Defense Points=5 Life Points/Resistance=4/9 (2) Mental Points/Resistance=14/11 (4) Special Abilities=3rd level ancient magic (Magic intensity/magic power=12/5) Habitat=Ruins Languages=Low ancient Perception=Five senses _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05916))_
-- They mainly live in ancient ruins and have their own villages and small homes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
-- They are highly intelligent and can handle magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
-- The sí is said to be an artificial lifeform created by the wizards of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
-- They do not willingly go outside their home (ruins). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05918))_
-- A sí's weapon is a thin sword that resembles a needle. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05918))_
-- This often includes lost spells among them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05918))_
-- They also use ancient magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05918))_
+- The sí is said to be an artificial lifeform created by the wizards of the ancient kingdom. They mainly live in ancient ruins and have their own villages and small homes. They are highly intelligent and can handle magic. Their physique and appearance is similar to that of a grassrunner, but they have long, gangly limbs and unusually thin fingers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05917))_
+- They do not willingly go outside their home (ruins). A sí's weapon is a thin sword that resembles a needle. They also use ancient magic. This often includes lost spells among them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05918))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.1 Ability Scores / 【 Ability Bonuses 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00177))_
 
-> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the
+> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00179))_
 
@@ -64,11 +59,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / For Humans and HalfElves Raised by Humans
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00347))_
 
-> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+> terms of experience points. Such special backgrounds are not allowed without the game master's permission.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00346))_
 
@@ -95,7 +90,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
@@ -130,11 +125,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
-> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+> weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
@@ -173,7 +168,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -200,7 +195,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -245,7 +240,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -286,7 +285,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -327,7 +330,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -365,11 +368,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.7 Magic Expansion / 《 Volume Expansion 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01313))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+> Note: On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
 
@@ -404,11 +407,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Familiar ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
 
-> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+> If the familiar loses life points or mental points due to an attack from another, etc., the caster will suffer the same pain that the familiar felt, so they will lose the same amount of points in life force and mental power (this damage cannot be reduced by adventurer level). However, the number of points lost cannot go beyond the familiar's maximum life points or mental points. Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
 
@@ -435,7 +438,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 12
+### Technical frame 12: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Slow ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01920))_
+
+> 77 order and movement speed reduced by half due to changes in their agility, and their evasion speed (points) will also take a penalty. Regarding the evasion speed (points) penalty, the effect differs depending on the target's original agility. Please refer to Table 5-3: Slow: Agility and Evasion Penalties.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -462,7 +469,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Haste ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01926))_
+
+> This is a spell that doubles the target's agility from its original score. The target's action order and movement speed will be doubled, and their evasion speed (points) will also receive a bonus. Regarding the evasion speed (points) bonus, the effect differs depending on the target's original agility. Please refer to Table 5-4: Haste: Agility and Evasion Bonuses.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 
@@ -489,7 +500,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 14
+### Technical frame 14: Chapter 5: Magic / 5.1.17 Special Holy Magic List
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 
@@ -516,11 +527,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical frame 15: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03095))_
 
@@ -553,11 +564,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 16
+### Technical frame 16: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
 
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb 121 time, only double ones will result in a failure.
+> 121 time, only double ones will result in a failure.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03376))_
 
@@ -580,11 +591,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 17
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+### Technical frame 17: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
 
@@ -625,11 +632,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 18
+### Technical frame 18: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -665,7 +672,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 19
+### Technical frame 19: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -697,11 +708,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 20
+### Technical frame 20: Chapter 9: Notes on Success Rolls / Setting Target Scores and Difficulties
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03601))_
 
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+> This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03603))_
 
@@ -754,11 +765,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 21
+### Technical frame 21: Chapter 9: Notes on Success Rolls
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03635))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03637))_
 
-> **Table 9-2: Success Roll Modifiers**
+> farther, but 20 meters is still a ridiculous number. Game masters should _not_ allow a success roll itself for such actions.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03636))_
 
@@ -779,7 +790,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 22
+### Technical frame 22: Chapter 10: Notes on Combat / Combat in Special Situations
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
@@ -808,7 +819,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 23
+### Technical frame 23: Chapter 10: Notes on Combat / Surprise Attacks
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
 
@@ -839,7 +850,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 24
+### Technical frame 24: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 
@@ -876,11 +891,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 25
+### Technical frame 25: Chapter 11: Notes on Magic / 11.5 Asking NPCs to Use Magic
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04148))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04152))_
 
-> Once you have found such a rune master, you must next determine whether or not your request will be granted. The higher-ranking rune masters are, the busier they are. They surely won't hear your requests too easily, and it's questionable whether they'd even allow you to meet them in the first place.
+> Priests are relatively easy to meet, but shamans and sorcerers are by no means easy to meet. All such decisions are made by the game master. Of course, it would be difficult to ask a single rune master to do all sorts of things again and again, and if the adventurers conclusively incur an NPC's displeasure, no amount of money will make them say yes.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04151))_
 
@@ -905,7 +920,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 26
+### Technical frame 26: Chapter 12: Various Checks / 12.2 Rules for Poison, Illness and Infection
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04239))_
+
+> *Holy prayer and daemon scream are basically the same thing. However, there are slight differences depending on the god (wicked god) you believe in. **Now (believed to be) lost.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04238))_
 
@@ -926,11 +945,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 27
+### Technical frame 27: 13.3 Converting Character Data to Monster Data / [ 1. The number of times the game master has to roll dice during combat will be drastically reduced ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06155))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06157))_
 
-> _Agility_ and _movement speed_ use the character's _agility_ ability score as it is.
+> For _strike points_ , apply strike power to _Table 13-1: Key Number = Expected Equivalents_ , then add bonus damage to the result. Critical target is normally 10, **Table 13-1: Key Number = Expected Equivalents**
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06158))_
 
@@ -957,11 +976,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 28
+### Technical frame 28: Representing Special Monsters with Character Data
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
 
-> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+> Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. A noble lizardman's entire body is covered in scales which adds +5 to defense power.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
 
@@ -980,7 +999,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 29
+### Technical frame 29: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 
@@ -1009,7 +1032,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 30
+### Technical frame 30: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -1056,7 +1079,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 31
+### Technical frame 31: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -1103,7 +1126,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 32
+### Technical frame 32: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
@@ -1150,7 +1173,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 33
+### Technical frame 33: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
@@ -1187,7 +1210,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 34
+### Technical frame 34: Chapter 14: Treasures / 14.4 Magical Item List
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06570))_
+
+> exceptionally high-end, it suddenly becomes an object of interest for enthusiasts, causing prices to _spike_ dramatically.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06571))_
 
@@ -1222,7 +1249,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 35
+### Technical frame 35: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
 
@@ -1259,7 +1286,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 36
+### Technical frame 36: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
@@ -1298,7 +1325,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 37
+### Technical frame 37: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06591))_
 
@@ -1335,7 +1362,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 38
+### Technical frame 38: Chapter 14: Treasures / 《 Magic Armor (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
 
@@ -1374,7 +1401,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 39
+### Technical frame 39: Chapter 14: Treasures / 《 Magic Shield 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06602))_
 
@@ -1413,7 +1440,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 40
+### Technical frame 40: Chapter 14: Treasures / Form=Iron jar
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06932))_
+
+> The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06930))_
 
@@ -1448,7 +1479,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 41
+### Technical frame 41: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -1533,7 +1568,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 42
+### Technical frame 42: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -1554,7 +1593,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 43
+### Technical frame 43: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 
@@ -1577,7 +1620,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 44
+### Technical frame 44: Chapter 16: Optional Rules for Combat / Maximum Range
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+
+> There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
 
@@ -1636,11 +1683,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 45
+### Technical frame 45: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 
@@ -1677,7 +1724,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 46
+### Technical frame 46: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 
@@ -1712,7 +1763,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 47
+### Technical frame 47: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -1765,7 +1816,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 48
+### Technical frame 48: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 
@@ -1814,7 +1865,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 49
+### Technical frame 49: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sage Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 
@@ -1847,7 +1898,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 50
+### Technical frame 50: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Bard Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07708))_
 
@@ -1876,7 +1927,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 51
+### Technical frame 51: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Merchant Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 
@@ -1899,7 +1950,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 52
+### Technical frame 52: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Craftsman Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07712))_
 
@@ -1922,7 +1973,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 53
+### Technical frame 53: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -1947,7 +1998,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 54
+### Technical frame 54: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Hunter Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
@@ -1986,7 +2037,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 55
+### Technical frame 55: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
@@ -2017,7 +2068,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 56
+### Technical frame 56: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -2044,7 +2099,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 57
+### Technical frame 57: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
@@ -2073,7 +2132,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 58
+### Technical frame 58: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -2110,7 +2169,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 59
+### Technical frame 59: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -2143,7 +2202,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 60
+### Technical frame 60: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07735))_
 
@@ -2182,7 +2245,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 61
+### Technical frame 61: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
@@ -2209,7 +2276,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 62
+### Technical frame 62: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
@@ -2232,7 +2299,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 63
+### Technical frame 63: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07742))_
 
@@ -2263,7 +2330,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 64
+### Technical frame 64: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07745))_
 
@@ -2302,7 +2369,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 65
+### Technical frame 65: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07748))_
 
@@ -2325,7 +2392,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 66
+### Technical frame 66: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
@@ -2346,7 +2413,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 67
+### Technical frame 67: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07757))_
 
@@ -2383,11 +2454,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 68
+### Technical frame 68: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07759))_
 
@@ -2422,7 +2493,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 69
+### Technical frame 69: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -2479,11 +2550,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 70
+### Technical frame 70: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
 
@@ -2506,11 +2577,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 71
+### Technical frame 71: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
 
@@ -2535,7 +2606,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 72
+### Technical frame 72: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07771))_
 
@@ -2562,7 +2633,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 73
+### Technical frame 73: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
@@ -2587,7 +2658,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 74
+### Technical frame 74: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
@@ -2608,7 +2679,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 75
+### Technical frame 75: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07778))_
 
@@ -2667,7 +2738,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 76
+### Technical frame 76: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
@@ -2704,7 +2775,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 77
+### Technical frame 77: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
@@ -2739,7 +2810,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 78
+### Technical frame 78: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
@@ -2780,7 +2851,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 79
+### Technical frame 79: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
@@ -2821,7 +2892,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 80
+### Technical frame 80: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07788))_
 

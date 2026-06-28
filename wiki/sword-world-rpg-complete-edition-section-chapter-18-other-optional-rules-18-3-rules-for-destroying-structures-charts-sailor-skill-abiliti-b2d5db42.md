@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-charts-sailor-skill-abiliti-b2d5db42@a357717bb17866caa59dc5a4ac1fd65c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-charts-sailor-skill-abiliti-b2d5db42@099ea775c56240e771e694b842497924
 ---
 
 # Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
@@ -22,7 +22,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -47,7 +47,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 

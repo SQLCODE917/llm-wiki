@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-representing-special-monsters-
 page_kind: source
 summary: Representing Special Monsters with Character Data: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-64b615b3@eb59241fd0dfc2ff883858d66e2dc76c
+projection_coverage: section-sword-world-rpg-complete-edition-section-representing-special-monsters-with-character-data-64b615b3@fe909c81a981d41dcb69d5ee219d856c
 ---
 
 # Representing Special Monsters with Character Data
@@ -20,30 +20,29 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Among monsters, there are some that have inherently strong individual differences. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06170))_
+- Among monsters, there are some that have inherently strong individual differences. Take, for example, dark elves. These monsters, like adventurers, come in a variety of strengths, so it’d be more natural to describe them by their ability scores and skill levels like adventurers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06170))_
 - Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
+- Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. A noble lizardman's entire body is covered in scales which adds +5 to defense power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
+- These rules were _not_ designed with the idea of playing monsters as characters in mind. Please be careful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06175))_
 - Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
-- A noble lizardman's entire body is covered in scales which adds +5 to defense power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
-- Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
-- These rules were _not_ designed with the idea of playing monsters as characters in mind. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06175))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Representing Special Monsters with Character Data
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
 
-> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+> Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. A noble lizardman's entire body is covered in scales which adds +5 to defense power.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06172))_
 
 > **Table 13-2: Determining Monster Sub-Ability Scores**
 
-### Technical atom 2
+### Technical frame 2: Representing Special Monsters with Character Data
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
 
-> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+> Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. A noble lizardman's entire body is covered in scales which adds +5 to defense power.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
 

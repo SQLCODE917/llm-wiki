@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Iron Stomach ]: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-iron-stomach-fc112a90@c90310e4ee730f640aec059e203f4751
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-iron-stomach-fc112a90@46a76de1f129a2becfe34c0ab685ab3e
 ---
 
 # Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Iron Stomach ]
@@ -20,43 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Iron Stomach ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03979))_
-
-> All summons are _non-removable_ magic. Therefore, _Dispel Magic_ has no effect. However, by using Pharis's special holy magic _Banish_ , it's possible to drive the summoned creatures back to where they came from.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03982))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03982, source-range-870a16bc-03983, source-range-870a16bc-03984, source-range-870a16bc-03985))_
 
 > Base Mental Power Cost=3
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03983))_
-
 > Distance=Caster
 
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
-
 > Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
-
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
-
-> Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03985))_
 
 > Type=Expansion=Resist=None
 
-### Technical atom 5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03984))_
-
-> Area=Caster Duration=1 day Effect=Digest everything that can fit in the stomach and use it as nourishment
+### Technical frame 2: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Iron Stomach ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03987))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules: 12 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-b2a2e015@ea37ca1ecc9fef6e07dbe5552a8b634e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-b2a2e015@7549d4fec304ccc9f8092a6259f1c6e1
 ---
 
 # Chapter 18: Other Optional Rules
@@ -25,13 +25,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 18: Other Optional Rules / Guidelines for Adventurer Age and Ability Score Changes
 
-- On the other hand, when you're a child, you don't have that much ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
-- Normally, adventurers are at an age when they can fully demonstrate their ability, from just after adulthood to the middle of their lives, but they may be aged or made younger unnaturally by magic, poison, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
-- Normally, adventurers are at an age when they can fully demonstrate their ability, from just after adulthood to the middle of their lives, but they may be aged or made younger unnaturally by magic, poison, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
+- As humans get older, their physical abilities decline. On the other hand, when you're a child, you don't have that much ability. Normally, adventurers are at an age when they can fully demonstrate their ability, from just after adulthood to the middle of their lives, but they may be aged or made younger unnaturally by magic, poison, etc. Also, if you’re a game master, you may need to prepare an old man or a young boy for an NPC. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
 - Here, we provide guidelines regarding the **ability scores** of characters of such unique **ages** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07406))_
-- In the case of humans, assume the ability scores of prime age (from around 15~50 years old) to be 1, and the ability scores of each age are as shown in _Table 18-1: Age-Based Ability Score Modification Table._ This is just a guideline, and game masters may set individual differences. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07407))_
-- Some may mature early and quickly develop a fine physique. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07407))_
+- In the case of humans, assume the ability scores of prime age (from around 15~50 years old) to be 1, and the ability scores of each age are as shown in _Table 18-1: Age-Based Ability Score Modification Table._ This is just a guideline, and game masters may set individual differences. Some may mature early and quickly develop a fine physique. If you constantly train your body, it’s also possible to halt aging to some extent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07407))_
 - In the case of non-human races, they are considered equal to humans _until_ they reach adulthood. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07408))_
+- Normally, adventurers are at an age when they can fully demonstrate their ability, from just after adulthood to the middle of their lives, but they may be aged or made younger unnaturally by magic, poison, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
 
 ### Chapter 18: Other Optional Rules / Elves
 
@@ -39,11 +37,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 18: Other Optional Rules / Dwarves, Grassrunners, Half-Elves
 
-- Aging begins at the age of 100. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07415))_
+- Aging begins at the age of 100. Divide the age by half and apply it to the human table. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07415))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -80,31 +82,31 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 18: Other Optional Rules / Guidelines for Adventurer Age and Ability Score Changes
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07406))_
 
-> Even when using this method, if you _cannot_ accomplish the mission, you’ll _still_ only receive 500 experience points.
+> Here, we provide guidelines regarding the **ability scores** of characters of such unique **ages** .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07405))_
 
 > Also, if you’re a game master, you may need to prepare an old man or a young boy for an NPC.
 
-### Technical atom 3
+### Technical frame 3: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07411))_
 
 > **Table 18-1: Age-Based Ability Score Modification Table**
 
-### Technical atom 4
+### Technical frame 4: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 

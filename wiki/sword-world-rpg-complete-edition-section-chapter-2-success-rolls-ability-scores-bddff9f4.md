@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-2-success-rolls-abilit
 page_kind: source
 summary: Chapter 2: Success Rolls / Ability Scores: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-ability-scores-bddff9f4@89a4c8fe982b67597625587dc66439cc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-ability-scores-bddff9f4@a73ce0acbadae7731de395262bdbed0b
 ---
 
 # Chapter 2: Success Rolls / Ability Scores
@@ -23,11 +23,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.1 Ability Scores / 【 Ability Bonuses 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00177))_
 
-> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the
+> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00179))_
 

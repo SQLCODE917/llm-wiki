@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-c588d408
 page_kind: source
 summary: Chapter 5: Magic: 0 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-c588d408@a4bcf13869df76f17383e435be7d476a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-c588d408@fb60a9574e1820042099ef2be85f126f
 ---
 
 # Chapter 5: Magic
@@ -20,11 +20,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.7 Magic Expansion / 《 Volume Expansion 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01313))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+> Note: On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
 
@@ -59,11 +59,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Familiar ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
 
-> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+> If the familiar loses life points or mental points due to an attack from another, etc., the caster will suffer the same pain that the familiar felt, so they will lose the same amount of points in life force and mental power (this damage cannot be reduced by adventurer level). However, the number of points lost cannot go beyond the familiar's maximum life points or mental points. Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
 
@@ -90,7 +90,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Slow ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01920))_
+
+> 77 order and movement speed reduced by half due to changes in their agility, and their evasion speed (points) will also take a penalty. Regarding the evasion speed (points) penalty, the effect differs depending on the target's original agility. Please refer to Table 5-3: Slow: Agility and Evasion Penalties.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -117,7 +121,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Haste ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01926))_
+
+> This is a spell that doubles the target's agility from its original score. The target's action order and movement speed will be doubled, and their evasion speed (points) will also receive a bonus. Regarding the evasion speed (points) bonus, the effect differs depending on the target's original agility. Please refer to Table 5-4: Haste: Agility and Evasion Bonuses.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 
@@ -144,7 +152,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 5: Magic / 5.1.17 Special Holy Magic List
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 

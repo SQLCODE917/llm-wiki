@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-rings-54e
 page_kind: source
 summary: Chapter 14: Treasures / 《 Rings 》: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-rings-54e8b975@44eb138493ca338d0cc40112d9ac4390
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-rings-54e8b975@b01d393983c091096d07aba9cb1ea56f
 ---
 
 # Chapter 14: Treasures / 《 Rings 》
@@ -20,7 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
@@ -57,7 +57,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
 
@@ -94,7 +94,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06591))_
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from llmwiki.domain.ledger.artifacts import ProjectionCoverageArtifact
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.projection_context import ProjectionContext
 from llmwiki.domain.ledger.source_coverage import SourceElementRecord
 from llmwiki.domain.ledger.structure import DocumentStructure
 from llmwiki.domain.ledger.topic_relations import RelatedTopicLink, related_topic_links
@@ -20,6 +21,7 @@ def build_topic_pages(
     source_locator: str,
     today: str,
     related_pages_by_topic: dict[str, tuple[RelatedTopicLink, ...]] | None = None,
+    projection_context: ProjectionContext | None = None,
 ) -> tuple[WikiPage, ...]:
     pages: list[WikiPage] = []
     related_by_topic = related_topic_links(topics, source_page_id=source_page_id)
@@ -40,6 +42,7 @@ def build_topic_pages(
             wiki_page_locator=topic_page_id,
             source_page_id=source_page_id,
             related_pages=related_pages,
+            projection_context=projection_context,
         )
         metadata = PageMetadata(
             page_id=topic_page_id,

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-9-undead-monster-level-4-
 page_kind: source
 summary: 13.2.9 Undead / Monster Level=4: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-9-undead-monster-level-4-1bfccdb4@88c26d1b8e8cdcd35ebec3362ae90eef
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-9-undead-monster-level-4-1bfccdb4@5718dbb31dbf57c6f35470a7df2486be
 ---
 
 # 13.2.9 Undead / Monster Level=4
@@ -56,40 +56,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- If a wight's attack hits, your life force will suffer damage as well as your mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
-- To wound a wight, you need a silver or magical weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
-- Normal weapons have no effect against this monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
-- The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
-- A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
-- Those whose mental power is reduced to 0 by this attack will die immediately and will then be _revived_ as a new wight 24 hours later. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
-- Wights are undead that possess people and feed on the energy of others. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
+- Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. For this, you can only reduce the damage with your character's adventurer level. Those whose mental power is reduced to 0 by this attack will die immediately and will then be _revived_ as a new wight 24 hours later. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
 - Those whose mental power is reduced to 0 by this attack will die immediately and will then be _revived_ as a new wight 24 hours later. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: 13.2.9 Undead / Monster Level=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
+
+> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05670))_
 
 > Rarity=12 Agility=14 Movement Speed=14 Number=One to several Frequency=Moderate
 
-### Technical atom 2
+### Technical frame 2: 13.2.9 Undead / Monster Level=4
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
 
-> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4.
+> Wights are undead that possess people and feed on the energy of others. Normal weapons have no effect against this monster. To wound a wight, you need a silver or magical weapon. A wight's weapon is its sharp claws, and those who are dealt damage will have their life energy drained at the same time. If a wight's attack hits, your life force will suffer damage as well as your mental power. The damage dealt to mental power is merely the result of a strike power 10 strike roll plus bonus damage 4. 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05673))_
 
 > Damage from healing magic Habitat=Ruins, graveyards Languages=Those previous Perception=Pseudo
 
-### Technical atom 3
+### Technical frame 3: 13.2.9 Undead / Monster Level=4
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05674))_
 
 > For this, you can only reduce the damage with your character's adventurer level.
 
-### Technical atom 4
+### Technical frame 4: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

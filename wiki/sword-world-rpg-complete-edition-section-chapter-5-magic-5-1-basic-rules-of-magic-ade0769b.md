@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic: 21 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-ade0769b@8bf46e0a3267038e935ca65b41e4a12e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-ade0769b@2396e404d127c484478e679ad8229a2d
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic
@@ -26,21 +26,13 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 5: Magic / 5.1 Basic Rules of Magic / Rune Masters and Rune Master Skills
 
-- Namely, Sorcerer uses **ancient magic** Shaman uses **spirit magic** Priest uses **holy magic** Dark priest uses **dark magic** and dragon priest uses **dragon roar magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_
-- Rune masters are divided into five types according to the type of magic (runes) they use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_
-- In _Sword World_ , all those who use magic utilizing runes are called **rune masters** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_
-- Those with the _sorcerer skill_ can use _ancient magic_ and are called _sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01178))_
-- Each corresponds to the skill for which it is named. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01178))_
-- Magic is not omnipotent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
-- 1st level spells are very rudimentary, while 10th level spells are very powerful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
-- It is only possible to achieve a defined and limited set of effects by weaving certain words (in runes), called **spells** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
-- Depending on the strength of their effects, spells are divided into _levels_ from _1-10_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
-- There are several types of spells, each with different effects. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
-- It is only possible to achieve a defined and limited set of effects by weaving certain words (in runes), called **spells** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
-- A rune master can use _all_ magic up to _their_ skill level, but _cannot_ use magic of a _higher_ level than their current skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01180))_
-- However, working with higher level (i.e., more advanced) spells requires a high rune master skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01180))_
+- In _Sword World_ , all those who use magic utilizing runes are called **rune masters** . Rune masters are divided into five types according to the type of magic (runes) they use. Namely, Sorcerer uses **ancient magic** Shaman uses **spirit magic** Priest uses **holy magic** Dark priest uses **dark magic** and dragon priest uses **dragon roar magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01177))_
+- Each corresponds to the skill for which it is named. Those with the _sorcerer skill_ can use _ancient magic_ and are called _sorcerers_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01178))_
+- Magic is not omnipotent. It is only possible to achieve a defined and limited set of effects by weaving certain words (in runes), called **spells** . There are several types of spells, each with different effects. Depending on the strength of their effects, spells are divided into _levels_ from _1-10_ . 1st level spells are very rudimentary, while 10th level spells are very powerful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
+- However, working with higher level (i.e., more advanced) spells requires a high rune master skill. A rune master can use _all_ magic up to _their_ skill level, but _cannot_ use magic of a _higher_ level than their current skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01180))_
 - For those who have acquired multiple rune master skills, consider the level of spells you can use for each type of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01181))_
 - If you’ve acquired _multiple_ magic skills, consider the magic power of each _separately_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01183))_
+- It is only possible to achieve a defined and limited set of effects by weaving certain words (in runes), called **spells** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01179))_
 
 ### Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
@@ -48,8 +40,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 5: Magic / 5.1 Basic Rules of Magic / Filling out the Character Sheet
 
-- Characters with rune master skills must write their _runes_ , _skill level_ , and _magic power_ in this field. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01187))_
-- On the Character Sheet, there is a _magic_ field. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01187))_
+- On the Character Sheet, there is a _magic_ field. Characters with rune master skills must write their _runes_ , _skill level_ , and _magic power_ in this field. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01187))_
 - **==> picture [348 x 407] intentionally omitted <==** _spirit_ in the _runes_ column and _1_ and _3_ (holy prayer), and _2_ and 4 (silent spirit) in the _level_ and _magic power_ columns to the right of them, respectively. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01190))_
 
 ### Chapter 5: Magic / 5.1 Basic Rules of Magic / Procedure for Casting 5.1.4.3 Non-resistible Magic
@@ -58,11 +49,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1 Basic Rules of Magic / Rune Masters and Rune Master Skills
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01181))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01183))_
 
-> For those who have acquired multiple rune master skills, consider the level of spells you can use for each type of magic.
+> If you’ve acquired _multiple_ magic skills, consider the magic power of each _separately_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01182))_
 

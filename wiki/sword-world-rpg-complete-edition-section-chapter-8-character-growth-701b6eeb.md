@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-8-character-growth-701
 page_kind: source
 summary: Chapter 8: Character Growth: 26 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-701b6eeb@380d83b8e943aa446a50602979d264ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-701b6eeb@aa50be41eb5d9026687b6a414fd79e68
 ---
 
 # Chapter 8: Character Growth
@@ -26,55 +26,51 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 8: Character Growth / How to Use Experience Points: Increasing Skill Levels
 
+- At the end of an adventure, characters gain experience points. By _spending_ these experience points, a character can increase their skill level-you pay experience points to buy skill levels. A character can advance in any number of skills and by any number of levels at once. However, in any case, a character's skill level can only reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
+- The experience points required to increase each skill are shown on Table 8- 1: Experience Points by Skill. For now, please ignore the rightmost column (reduction for acquiring sorcerer & sage at the same time). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03548))_
 - However, in any case, a character's skill level can only reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- At the end of an adventure, characters gain experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- A character can advance in any number of skills and by any number of levels at once. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- However, in any case, a character's skill level can only reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- The experience points required to increase each skill are shown on Table 8- 1: Experience Points by Skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03548))_
 
 ### Chapter 8: Character Growth / Example:
 
-- He would like to increase his fighter skill level, which is currently 2, to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- At this time, the required experience points are 2000 points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- There are 500 experience points left. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- The experience points required for this are 1000 + 1500 = _2500_ points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- He still has 3000 experience points left. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- The adventurer Ducard II gains 5000 experience points as a result of his adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- Any _remaining_ experience points can be carried over and used in addition to the experience points earned on the next adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03551))_
-- It may seem strange to carry over _experience_ , but think of it as cutting off the adventurer's growth by the amount of experience points carried over for now. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03551))_
+- The adventurer Ducard II gains 5000 experience points as a result of his adventure. He would like to increase his fighter skill level, which is currently 2, to 3rd level. At this time, the required experience points are 2000 points. He still has 3000 experience points left. He pursues his abilities as a ranger and raises his ranger skill from 1st level to 3rd level in one go. The experience points required for this are 1000 + 1500 = _2500_ points. There are 500 experience points left. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+- Any _remaining_ experience points can be carried over and used in addition to the experience points earned on the next adventure. It may seem strange to carry over _experience_ , but think of it as cutting off the adventurer's growth by the amount of experience points carried over for now. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03551))_
 
 ### Chapter 8: Character Growth / Example:
 
-- Ducard II will keep 500 experience points for future use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
-- There is a close connection between the sorcerer skill and the sage skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
-- The sorcerer skill is the mastery of _ancient_ through study and the improvement of magical ability, while the sage skill is knowledge gained primarily through the study of ancient books. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
-- This is because you can't grow from experiences you haven't had. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- Experience points _cannot_ be negative. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- You also cannot _sell_ your skill levels for experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- This is because you can't grow from experiences you haven't had. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- In fact, many sorcerers are excellent sages, and the sorcerers’ guild is also called the _academy of sages_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03557))_
-- These two skills have something in common in that their basics are the study of _ancient_ as well as ancient books. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03557))_
+- Ducard II will keep 500 experience points for future use. If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
+- There is a close connection between the sorcerer skill and the sage skill. The sorcerer skill is the mastery of _ancient_ through study and the improvement of magical ability, while the sage skill is knowledge gained primarily through the study of ancient books. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
+- Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
+- These two skills have something in common in that their basics are the study of _ancient_ as well as ancient books. In fact, many sorcerers are excellent sages, and the sorcerers’ guild is also called the _academy of sages_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03557))_
 - For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+- This is because you can't grow from experiences you haven't had. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 8: Character Growth / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
 
-> Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points.
+> There is a close connection between the sorcerer skill and the sage skill. The sorcerer skill is the mastery of _ancient_ through study and the improvement of magical ability, while the sage skill is knowledge gained primarily through the study of ancient books.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
 
 > If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance.
 
-### Technical atom 2
+### Technical frame 2: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03559))_
 
 > **Table 8-1: Experience Points by Skill**
 
-### Technical atom 3
+### Technical frame 3: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -111,11 +107,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / [ ⑬ Increase Skills ]: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-increase-skills-60a4fed0@906e55bf66ade07811e311dc7f4ebd39
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-increase-skills-60a4fed0@02c8e606d57ae979f4c0dcd57c185dff
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / [ ⑬ Increase Skills ]
@@ -20,7 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / [ ⑬ Increase Skills ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00518))_
 

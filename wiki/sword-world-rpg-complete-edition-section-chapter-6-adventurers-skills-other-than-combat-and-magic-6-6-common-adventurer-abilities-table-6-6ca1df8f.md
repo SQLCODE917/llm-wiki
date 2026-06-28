@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-6-common-adventurer-abilities-table-6-6ca1df8f@3c410db4c5cd50e528d064f77027dd0c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-6-common-adventurer-abilities-table-6-6ca1df8f@357d096ec34c596a3730bea4a8a33ac1
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
@@ -20,11 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
 

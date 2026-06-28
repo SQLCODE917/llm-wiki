@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / Thief Skill: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-thief-skill-f8c156b7@a79d4fa3e0a2225a31adb32129d2ee74
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-thief-skill-f8c156b7@0156b0a05e0ed8c7d7bc6d7490a094f7
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / Thief Skill
@@ -23,7 +23,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -76,7 +76,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 

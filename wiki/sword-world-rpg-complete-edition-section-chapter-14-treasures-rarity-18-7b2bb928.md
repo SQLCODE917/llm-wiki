@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-rarity-18
 page_kind: source
 summary: Chapter 14: Treasures / Rarity=18: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-rarity-18-7b2bb928@d3118ef3243b5bc5a862c75316c5f53e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-rarity-18-7b2bb928@956eb2a6bb6158c552e5f10d9f895f0a
 ---
 
 # Chapter 14: Treasures / Rarity=18
@@ -23,35 +23,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This staff grants its owner the power to make undead monsters obey. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
-- If the score exceeds the target undead monster’s mental point resistance, they will obey. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
+- This staff grants its owner the power to make undead monsters obey. When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ . Make a success roll using _sorcerer skill level + intelligence bonus_ as the baseline score, and reveal the final score. If the score exceeds the target undead monster’s mental point resistance, they will obey. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
 - This staff can _only_ be used by sorcerers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06456))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Rarity=18
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06452))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
+
+> This staff grants its owner the power to make undead monsters obey. When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ . Make a success roll using _sorcerer skill level + intelligence bonus_ as the baseline score, and reveal the final score. If the score exceeds the target undead monster’s mental point resistance, they will obey.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06452, source-range-870a16bc-06453))_
 
 > Enchanter=Jagrilis, "The Master of Death" Form=Mage's staff engraved with high ancient runes
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06453))_
-
 > Required Strength=5 (Strike power 10) Base Trade Price=400,000 gamels (complete)/27,000 gamels (incomplete) Powers=+1 to attack power and bonus damage. Makes undead monsters obey
 
-### Technical atom 3
+### Technical frame 2: Chapter 14: Treasures / Rarity=18
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06456))_
+
+> This staff can _only_ be used by sorcerers.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
 
 > When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ .
 
-### Technical atom 4
+### Technical frame 3: Chapter 14: Treasures / Rarity=18
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06454))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06456))_
 
-> This staff grants its owner the power to make undead monsters obey. When the staff is _incomplete_ , the undead monsters that can be made to obey are limited to those whose _total monster level_ is _less than or equal to the owner's mental power_ . Make a success roll using _sorcerer skill level + intelligence bonus_ as the baseline score, and reveal the final score. If the score exceeds the target undead monster’s mental point resistance, they will obey.
+> This staff can _only_ be used by sorcerers.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06455))_
 

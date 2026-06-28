@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-arm
 page_kind: source
 summary: Chapter 14: Treasures / 《 Magic Armor (+2) 》: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-2-ffd47814@419633df6fb15e415ae4e86d5c7f81ea
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-2-ffd47814@7416086939d29f1b0c2beb31aa6f901d
 ---
 
 # Chapter 14: Treasures / 《 Magic Armor (+2) 》
@@ -26,7 +26,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
@@ -65,7 +65,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Armor (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / Elves: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-elves-e337eea7@77ca585e03c23e0a6453d841c7b372da
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-elves-e337eea7@ba6e669dcc0ea61bafd0becd19961ef5
 ---
 
 # Chapter 18: Other Optional Rules / Elves
@@ -24,11 +24,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / For Humans and HalfElves Raised by Humans
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00347))_
 
-> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+> terms of experience points. Such special backgrounds are not allowed without the game master's permission.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00346))_
 
@@ -55,21 +55,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07411))_
 
 > **Table 18-1: Age-Based Ability Score Modification Table**
 
-### Technical atom 3
+### Technical frame 3: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 

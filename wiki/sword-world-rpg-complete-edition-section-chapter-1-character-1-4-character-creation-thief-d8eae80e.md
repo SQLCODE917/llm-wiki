@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / [ Thief ]: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-thief-d8eae80e@467cc0412d938bead32683441ef1adb1
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-thief-d8eae80e@ecbc4506f62f628b600d62a2818d4815
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / [ Thief ]
@@ -21,22 +21,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
-- Specifically, weapons and armor that require up to _half your strength (rounded up)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
+- If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ . Specifically, weapons and armor that require up to _half your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
-
-> There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled.
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / [ Thief ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
 
 > If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ .
 
-### Technical atom 2
+### Technical frame 2: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -89,7 +84,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 

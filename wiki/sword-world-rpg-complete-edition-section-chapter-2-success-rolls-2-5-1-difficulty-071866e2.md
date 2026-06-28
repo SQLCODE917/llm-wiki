@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-2-success-rolls-2-5-1-
 page_kind: source
 summary: Chapter 2: Success Rolls / 2.5.1 Difficulty: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-2-5-1-difficulty-071866e2@0efb048f5496da20e625d3481aa63a11
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-2-5-1-difficulty-071866e2@330a2dbed641e0bd72db8cc328227c57
 ---
 
 # Chapter 2: Success Rolls / 2.5.1 Difficulty
@@ -20,16 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- **Difficulty** is a score determined by the game master based on the difficulty of the actions the character attempts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00610))_
-- What makes this different from a target score is that this is _not_ the direct number the player is aiming for. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00610))_
+- **Difficulty** is a score determined by the game master based on the difficulty of the actions the character attempts. What makes this different from a target score is that this is _not_ the direct number the player is aiming for. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00610))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 9: Notes on Success Rolls / Setting Target Scores and Difficulties
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03601))_
 
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+> This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03603))_
 

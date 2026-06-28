@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Wood ]: 8 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-wood-ddbc06f5@4d003e09c807533aa690d10748bb6b5f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-wood-ddbc06f5@937588a328d2dc5beeda06e0a2ef4f5f
 ---
 
 # Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Wood ]
@@ -24,47 +24,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07455))_
-
-> Defense points = 1-7
-
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07456))_
-
-> Destruction Points = 5-15
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07457))_
-
-> Complete Immunity = Poison Gas-Type magic
-
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07458))_
-
-> No Criticals = Swords, spears, bows, crossbows, barehanded, cold-type magic
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07459))_
-
-> Normal = Axes, maces, flails, slings, rocks, war hammers, stone-type, wind cuttertype, blade-type magic
-
-### Technical atom 6
+### Technical frame 1: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Wood ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07462))_
 
 > When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07460))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07455, source-range-870a16bc-07456, source-range-870a16bc-07457, source-range-870a16bc-07458, source-range-870a16bc-07459, source-range-870a16bc-07460))_
+
+> Defense points = 1-7
+
+> Destruction Points = 5-15
+
+> Complete Immunity = Poison Gas-Type magic
+
+> No Criticals = Swords, spears, bows, crossbows, barehanded, cold-type magic
+
+> Normal = Axes, maces, flails, slings, rocks, war hammers, stone-type, wind cuttertype, blade-type magic
 
 > Ignores Defense Points = Fire-type, electrictype, earthquake-type, explosion-type, pure energy-type magic
 
-### Technical atom 7
+### Technical frame 2: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Wood ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07462))_
 

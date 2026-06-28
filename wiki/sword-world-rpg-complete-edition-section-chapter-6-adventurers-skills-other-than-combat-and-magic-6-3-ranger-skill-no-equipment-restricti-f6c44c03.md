@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (No equipment restriction): 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-no-equipment-restricti-f6c44c03@b3bf55e54b9a0d9246d690dea27d7ece
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-no-equipment-restricti-f6c44c03@c312e239efe6e57dfc67134ece50668e
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (No equipment restriction)
@@ -41,7 +41,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (No equipment restriction)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03241))_
 

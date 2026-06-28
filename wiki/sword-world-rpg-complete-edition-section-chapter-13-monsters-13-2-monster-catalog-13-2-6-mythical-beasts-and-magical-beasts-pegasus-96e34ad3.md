@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / [ Pegasus ]: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-pegasus-96e34ad3@d4b0ff0545898bb6c4c454b00a80cce6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-pegasus-96e34ad3@16d9c6b20e24de66b8e64030ce431f43
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / [ Pegasus ]
@@ -21,16 +21,15 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Monster Level=5 Rarity=10 Agility=12 Movement Speed=30/40 (air) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Heel:11 (4) Strike Points=13 Evasion Points=12 (5) Defense Points=8 Life Points/Resistance=20/14 (7) Mental Points/Resistance=15/13 (6) Special Abilities=Not affected by poison and illness _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05030))_
-- In the wild, Pegasus live on steep mountains and come down to the meadows at the foot of the mountains to feed on grass. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05032))_
-- Pegasus is a winged white horse that can fly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05032))_
+- Pegasus is a winged white horse that can fly. In the wild, Pegasus live on steep mountains and come down to the meadows at the foot of the mountains to feed on grass. Although it’s difficult to capture a pegasus alive, it’s even more difficult to tame. This is because pegasus are proud animals, even more so than 191 _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05032))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / [ Pegasus ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05028, source-range-870a16bc-05032))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05032))_
 
-> The hippogriff is said to have been born after a griffon (see p. 193) attacked a mare. A flying mythical beast, the front half of its body is an eagle and the back half is a horse. They live in grasslands and feed on small herbivores. Despite their appearance, they’re not very ferocious and will not attack humans unless they are very hungry. If you catch one as a child and tame it, you can even use it as a riding horse. Pegasus is a winged white horse that can fly. In the wild, Pegasus live on s
+> Pegasus is a winged white horse that can fly. In the wild, Pegasus live on steep mountains and come down to the meadows at the foot of the mountains to feed on grass. Although it’s difficult to capture a pegasus alive, it’s even more difficult to tame. This is because pegasus are proud animals, even more so than 191
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05031))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-6-at
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.6 Attacks From Monsters Against Characters / 【 Criticals? 】: 2 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-6-attacks-from-monsters-against-characters-criticals-fac661d7@3681abb4bbf45623fe36c5b89c7082e7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-6-attacks-from-monsters-against-characters-criticals-fac661d7@6254a25e08001e2306b99f71d52318e9
 ---
 
 # Chapter 4: Weapon Combat / 4.6 Attacks From Monsters Against Characters / 【 Criticals? 】
@@ -22,21 +22,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- No matter how high the roll, _only_ the amount of _damage reduction_ indicated by that roll is used, _nothing_ is added to it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00972))_
+- When making a defense roll, criticals do _not_ occur like they do with a strike roll. No matter how high the roll, _only_ the amount of _damage reduction_ indicated by that roll is used, _nothing_ is added to it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00972))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00970))_
-
-> When making a defense roll, if your roll is double ones, that means that you’ve been hit _extremely_ hard. Maybe the monster's attack hit a gap in your character’s armor, or one of their vital points. In this case, your character _cannot_ reduce the monster's damage (strike points) at all.
+### Technical frame 1: Chapter 4: Weapon Combat / 4.6 Attacks From Monsters Against Characters / 【 Criticals? 】
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00972))_
 
 > When making a defense roll, criticals do _not_ occur like they do with a strike roll.
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -57,7 +57,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 

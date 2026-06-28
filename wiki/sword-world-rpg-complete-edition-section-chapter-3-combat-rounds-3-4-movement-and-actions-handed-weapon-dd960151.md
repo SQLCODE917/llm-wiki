@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-mo
 page_kind: source
 summary: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Handed Weapon: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-movement-and-actions-handed-weapon-dd960151@ad728e42a52b8c4750c761935110c45b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-movement-and-actions-handed-weapon-dd960151@1e9295194f80c074fba11c7229bcd2c3
 ---
 
 # Chapter 3: Combat Rounds / 3.4 Movement and Actions / Handed Weapon
@@ -20,18 +20,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
-- Only _one_ can be switched out. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
+- Return a weapon in your hand to its sheath, etc. and ready a _different_ weapon. Only _one_ can be switched out. For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 - For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 - Only _one_ can be switched out. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
-> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+> weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
@@ -70,7 +69,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Handed Weapon
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 

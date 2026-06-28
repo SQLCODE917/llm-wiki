@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.6 Recovering Mental Power / Adventurers and Monsters: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-5-1-6-recovering-mental-power-adventurers-and-monsters-72ef9ac1@c2e64f2decdd73e5dfab9c99900ac9a6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-5-1-6-recovering-mental-power-adventurers-and-monsters-72ef9ac1@9694cabb69c1825ab7d3dc3636fd2204
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.6 Recovering Mental Power / Adventurers and Monsters
@@ -20,13 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Sometimes enemies written in the same data format as a character may also be accompanied by monsters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01266))_
-- Casting magic on such a group is handled the same way as when an adventurer casts magic on (a group of) adventurers, as described above. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01266))_
-- At this time, the monsters must _also_ roll the dice to make resist checks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01266))_
+- Sometimes enemies written in the same data format as a character may also be accompanied by monsters. For example, a sorcerer who leads undead monsters to attack villages. Casting magic on such a group is handled the same way as when an adventurer casts magic on (a group of) adventurers, as described above. At this time, the monsters must _also_ roll the dice to make resist checks. Please use the optional rules under _17.1: Changes to Magic Procedure_ (see p. 273). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01266))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

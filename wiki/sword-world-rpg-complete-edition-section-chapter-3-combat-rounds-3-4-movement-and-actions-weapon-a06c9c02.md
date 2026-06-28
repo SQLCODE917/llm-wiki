@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-mo
 page_kind: source
 summary: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Weapon: 2 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-movement-and-actions-weapon-a06c9c02@7f3908dec5890ba9286e19ae9d4aaae6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-movement-and-actions-weapon-a06c9c02@f669999eb8ba72e9d36f9391cefe6f22
 ---
 
 # Chapter 3: Combat Rounds / 3.4 Movement and Actions / Weapon
@@ -22,11 +22,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- However, bows and other projectiles cannot be used to attack while moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00783))_
+- If you already have a weapon ready, you can of course attack with that weapon. However, bows and other projectiles cannot be used to attack while moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00783))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
@@ -61,11 +61,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
-> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+> weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
@@ -104,7 +104,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -131,13 +131,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Weapon
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00783))_
 
 > If you already have a weapon ready, you can of course attack with that weapon.
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -182,7 +182,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -223,7 +227,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -264,7 +272,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -302,7 +310,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 

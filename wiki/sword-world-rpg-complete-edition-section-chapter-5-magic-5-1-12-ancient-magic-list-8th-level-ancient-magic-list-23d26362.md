@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / 8th Level Ancient Magic List: 0 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-8th-level-ancient-magic-list-23d26362@d121f6776c959ae1fa51e09dad27a291
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-8th-level-ancient-magic-list-23d26362@3a15caaa27319bfbc38c99f490f73ef8
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / 8th Level Ancient Magic List
@@ -29,11 +29,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Familiar ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
 
-> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+> If the familiar loses life points or mental points due to an attack from another, etc., the caster will suffer the same pain that the familiar felt, so they will lose the same amount of points in life force and mental power (this damage cannot be reduced by adventurer level). However, the number of points lost cannot go beyond the familiar's maximum life points or mental points. Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
 
@@ -60,7 +60,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Slow ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01920))_
+
+> 77 order and movement speed reduced by half due to changes in their agility, and their evasion speed (points) will also take a penalty. Regarding the evasion speed (points) penalty, the effect differs depending on the target's original agility. Please refer to Table 5-3: Slow: Agility and Evasion Penalties.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -87,7 +91,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Haste ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01926))_
+
+> This is a spell that doubles the target's agility from its original score. The target's action order and movement speed will be doubled, and their evasion speed (points) will also receive a bonus. Regarding the evasion speed (points) bonus, the effect differs depending on the target's original agility. Please refer to Table 5-4: Haste: Agility and Evasion Bonuses.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 

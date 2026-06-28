@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-f866e350
 page_kind: source
 summary: Chapter 14: Treasures: 32 source-backed entries and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-f866e350@2850ab005584d436800224c5ef3d237c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-f866e350@9138b1f129f9142a964e0717f61c812e
 ---
 
 # Chapter 14: Treasures
@@ -30,86 +30,74 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 14: Treasures / Rarity=5
 
-- This is the rulebook for _Sword World RPG: Complete Edition_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06395))_
-- First, the name of the item will be introduced in large print. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06396))_
-- Next, there are several game data entries, and a description at the end. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06396))_
+- This is the rulebook for _Sword World RPG: Complete Edition_ . If you read this, you can understand the rules of _Sword World RPG: Complete Edition_ , and you’ll be able to enjoy adventures in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06395))_
+- First, the name of the item will be introduced in large print. Next, there are several game data entries, and a description at the end. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06396))_
 
 ### Chapter 14: Treasures / 《 Rarity 》
 
-- However, some treasures may have more than one listed rarity. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
-- This frequently happens with cursed items, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
-- This score is the target score for a success roll when using the sage skill’s _treasure appraisal_ ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
-- In this case, the treasure appraisal may be _incomplete_ depending on the attained final score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
-- If the success roll results in a final score greater than or equal to this rarity, you will discover the true identity of the treasure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
+- This score is the target score for a success roll when using the sage skill’s _treasure appraisal_ ability. If the success roll results in a final score greater than or equal to this rarity, you will discover the true identity of the treasure. However, some treasures may have more than one listed rarity. In this case, the treasure appraisal may be _incomplete_ depending on the attained final score. This frequently happens with cursed items, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
 - If the success roll results in a final score greater than or equal to this rarity, you will discover the true identity of the treasure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06398))_
 
 ### Chapter 14: Treasures / 《 Enchanter 》
 
-- Magical items are always endowed with magical powers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
-- The enchanter’s name is written here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
+- Magical items are always endowed with magical powers. The enchanter’s name is written here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06402))_
 
 ### Chapter 14: Treasures / 《 Base Trade Price 》
 
-- If an adventurer sells it, the standard price is half this amount. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06404))_
-- This is the price at which the item is traded. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06404))_
-- If the item is marked as (not for sale), the item is extremely dangerous, is a family heirloom, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
-- and for these reasons will never be traded. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
-- You can’t even sell dangerous items because there are no buyers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06406))_
-- At best, an _academy of sages_ might take it for 1/10th the price. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06406))_
-- You can’t even sell dangerous items because there are no buyers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06406))_
+- This is the price at which the item is traded. If it’s for sale, adventurers can buy it at the price shown here. If an adventurer sells it, the standard price is half this amount. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06404))_
+- If the item is marked as (not for sale), the item is extremely dangerous, is a family heirloom, etc. and for these reasons will never be traded. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
+- You can’t even sell dangerous items because there are no buyers. At best, an _academy of sages_ might take it for 1/10th the price. If it's an heirloom and not for sale, you’re likely to find a similar case. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06406))_
 - If it's marked (estimated), the true abilities of the item are not clear, so the price is inferred based on generally understood abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06407))_
+- You can’t even sell dangerous items because there are no buyers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06406))_
 
 ### Chapter 14: Treasures / 《 Description 》
 
-- If the description written in the _Powers_ section is sufficient, this may be omitted. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06411))_
-- After a brief introduction of game data, a detailed description of the item is written. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06411))_
-- After a brief introduction of game data, a detailed description of the item is written. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06411))_
+- After a brief introduction of game data, a detailed description of the item is written. If the description written in the _Powers_ section is sufficient, this may be omitted. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06411))_
 - A (supplement) is an episode related to the item that's not directly related to the game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06412))_
+- After a brief introduction of game data, a detailed description of the item is written. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06411))_
 
 ### Chapter 14: Treasures / 《 Other 》
 
-- Depending on the item, other entries may be included in the data section. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06414))_
-- The meaning of these special entries becomes obvious when you consider what the item is like. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06414))_
-- For example, for weapons and armor, an entry called _Required Strength_ will appear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06414))_
+- Depending on the item, other entries may be included in the data section. For example, for weapons and armor, an entry called _Required Strength_ will appear. The meaning of these special entries becomes obvious when you consider what the item is like. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06414))_
 - For example, for weapons and armor, an entry called _Required Strength_ will appear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06414))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Rarity=5
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06392))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06395))_
+
+> This is the rulebook for _Sword World RPG: Complete Edition_ . If you read this, you can understand the rules of _Sword World RPG: Complete Edition_ , and you’ll be able to enjoy adventures in Alecrast.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06392, source-range-870a16bc-06393, source-range-870a16bc-06394))_
 
 > Form= An A4-sized, 352-page hardcover book
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06393))_
-
 > Enchanter=Miyuki Kiyomatsu/Group SNE Base Trade Price = 3600 Yen
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06394))_
 
 > Powers=Those who read it can know the rules of _Sword World RPG: Complete Edition_ .
 
-### Technical atom 4
+### Technical frame 2: Chapter 14: Treasures / Rarity=5
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06396))_
+
+> First, the name of the item will be introduced in large print. Next, there are several game data entries, and a description at the end.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06395))_
 
 > If you read this, you can understand the rules of _Sword World RPG: Complete Edition_ , and you’ll be able to enjoy adventures in Alecrast.
 
-### Technical atom 5
+### Technical frame 3: Chapter 14: Treasures / 《 Base Trade Price 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06406))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06405))_
 
-> You can’t even sell dangerous items because there are no buyers. At best, an _academy of sages_ might take it for 1/10th the price. If it's an heirloom and not for sale, you’re likely to find a similar case.
+> If the item is marked as (not for sale), the item is extremely dangerous, is a family heirloom, etc. and for these reasons will never be traded.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06404))_
 
 > If it’s for sale, adventurers can buy it at the price shown here.
 
-### Technical atom 6
+### Technical frame 4: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -156,7 +144,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 5: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -203,7 +191,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 6: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
@@ -250,7 +238,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 7: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / 【 Human 】: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-human-290df33d@0ac8109dc46034180c355f347a2decba
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-human-290df33d@65665d08040e7bc77a59df45be57a937
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / 【 Human 】
@@ -23,17 +23,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Humans have the most average ability scores and can do almost anything without a hitch. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00300))_
-- They have no restrictions on skill selection. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00300))_
-- This is probably the most suitable race for a beginner to choose. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00300))_
+- Humans have the most average ability scores and can do almost anything without a hitch. They have no restrictions on skill selection. This is probably the most suitable race for a beginner to choose. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00300))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / For Humans and HalfElves Raised by Humans
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00347))_
 
-> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+> terms of experience points. Such special backgrounds are not allowed without the game master's permission.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00346))_
 

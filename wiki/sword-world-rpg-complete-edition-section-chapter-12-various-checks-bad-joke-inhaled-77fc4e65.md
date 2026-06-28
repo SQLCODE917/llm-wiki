@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-12-various-checks-bad-
 page_kind: source
 summary: Chapter 12: Various Checks / [ Bad Joke (Inhaled): 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-bad-joke-inhaled-77fc4e65@b66b9901d9d9748da1b5e2f4452bea8f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-bad-joke-inhaled-77fc4e65@89b012f9a30af80269a8fefa33e4f64e
 ---
 
 # Chapter 12: Various Checks / [ Bad Joke (Inhaled)
@@ -20,16 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This is a gas that smells good. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04350))_
-- Those who fail to resist will end up laughing, unable to cast spells that round, and will suffer a -2 penalty on all checks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04350))_
+- This is a gas that smells good. Those who fail to resist will end up laughing, unable to cast spells that round, and will suffer a -2 penalty on all checks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04350))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 12: Various Checks / [ Bad Joke (Inhaled)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04347))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04350))_
 
-> This is smoke produced when the leaves of certain plants are burned. Those who fail to resist will fall asleep and have happy dreams. If you use it too many times, you may harm your health or go crazy.
+> This is a gas that smells good. Those who fail to resist will end up laughing, unable to cast spells that round, and will suffer a -2 penalty on all checks.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04349))_
 

@@ -3,10 +3,10 @@ page_id: sword-world-rpg-complete-edition-rule
 page_kind: concept
 summary: Rule: 29 statement(s) and 46 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: concepts
-projection_coverage: topic-sword-world-rpg-complete-edition-rule@c98596bd6a61b641f0ee02bdd6c011ca
+projection_coverage: topic-sword-world-rpg-complete-edition-rule@6783dc465005ceea4902bc2517b46399
 ---
 
 # Rule
@@ -15,39 +15,114 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 ## Statements
 
-- In the basic rules, a weapon's required strength _is_ its strike power, but with this rule, a weapon's strike power equals **weapon's required strength plus this strike power modifier** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
-- Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
-- This rulebook is here to help you with that. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00059))_
-- The rules set forth in this book are the fundaments that characterize Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00064))_
-- In this sense, the rulebook is written to reproduce all the laws and details in the fictional world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00070))_
-- For things that the rules cannot fully define, please use your own **common sense** to make decisions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00075))_
-- Rules that aren’t necessary from a player's point of view are included here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00088))_
-- Conversely, a game master _must_ understand the rules included here in addition to those included in Part 1. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
-- However, having additional rules to memorize often gets in the way of the speedy development that is the life of an RPG. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00092))_
-- The rules in this section are for those who already have an understanding of _Sword World RPG_ and are able to play with ease. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00093))_
-- Since some of the rules in this book you’re reading right now have been revised, there are rare cases where the descriptions are contradictory. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00115))_
-- Some rule errors that occurred during the game have been corrected and dealt with, especially in areas where they do not have a major impact. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00117))_
-- The rules do not require one character to acquire both of these skills, but if they are acquired at the same time, it gives them a significant advantage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00272))_
-- The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
+### The Meaning of the Rulebook
+
+- As stated, a role-playing game progresses according to a scenario prepared by the game master, as well as the players' decisions and random numbers. This rulebook is here to help you with that. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00059))_
+
+- The rules set forth in this book are the fundaments that characterize Forcelia. If you don't understand them, you won't be able to grasp the characteristics of Forcelia, but not _all_ of Forcelia's laws are written in this book. Please understand this. In making decisions, be sure to add your own _common sense_ to the rules. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00064))_
+
+- In this sense, the rulebook is written to reproduce all the laws and details in the fictional world. If decisions are made according to the rulebook, success or failure of the characters' abilities and actions in the fictional world can all be determined with certainty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00070))_
+
+- This is neither possible nor realistic. Rather, it's better to think of the rules set forth by the book as merely a guide. For things that the rules cannot fully define, please use your own **common sense** to make decisions. Even though it's not written in the book, _an apple that falls from a tree lands on the ground._ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00075))_
+
+### What You’ll Need to Play Sword World RPG / Part 2 Game Master Section
+
+- This is the part for the game master. A game master requires a deeper mastery of an RPG compared to players. When you’re a game master, you will have to remember rules that you wouldn’t have to remember when you’re a player. Rules that aren’t necessary from a player's point of view are included here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00088))_
+
+- Therefore, if you're solely a player, you _don't_ have to force yourself to memorize the rules of this part. Conversely, a game master _must_ understand the rules included here in addition to those included in Part 1. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
+
+### What You’ll Need to Play Sword World RPG / Part 3 Optional Rules
+
+- These are rules designed to make playing _Sword World RPG_ more interesting. However, having additional rules to memorize often gets in the way of the speedy development that is the life of an RPG. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00092))_
+
+- The rules in this section are for those who already have an understanding of _Sword World RPG_ and are able to play with ease. It's _not_ recommended for inexperienced players to use the rules here from the beginning. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00093))_
+
+### Books Related to Sword World RPG / 1. Replay Collections
+
+- First, _Sword World RPG Replay Collections_ ① _~_ ⑨ are _not_ based on this rulebook, but rather on the previously released _old_ version of the rules (see below). Since some of the rules in this book you’re reading right now have been revised, there are rare cases where the descriptions are contradictory. When you play, please follow what's written in _these_ rules. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00115))_
+
+- Finally, these replays are based on actual play and reproduction of the situations, but have been cut or edited for redundancy and other aspects in order to prioritize readability. Some rule errors that occurred during the game have been corrected and dealt with, especially in areas where they do not have a major impact. In actual play, things do not go as smoothly as this. A replay should _not_ be considered a complete manual, but merely a reference. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00117))_
+
+### Chapter 1: Character / 1.3 Skills / 【 Sorcerer 】
+
+- Many sorcerers are also sages. The rules do not require one character to acquire both of these skills, but if they are acquired at the same time, it gives them a significant advantage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00272))_
+
+### Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
+
+- The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. In this case, it wouldn’t make sense to have the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
+
+### Chapter 5: Magic / 5.1.13 Spirit Magic and the Shaman Skill / Restrictions on Using 5.1.13.1 Spirit Magic
+
 - The basic rules for casting magic are the same, but the following conditions are required in order to use the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02144))_
-- As an optional rule, you can set a target score or difficulty for text or conversations so that it cannot be understood if you fail a success roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03272))_
-- The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
-- Follow the rules for _swim_ under _common adventurer abilities_ -- replace _adventurer level_ with _sailor skill level_ --and make a check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
-- In this case, the rules require 2000 experience points (1500 points if you've acquired the sage skill). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04125))_
-- Using the rules presented here, a game master can convert data created as a _character_ into the format of a _monster_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
-- These rules were _not_ designed with the idea of playing monsters as characters in mind. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06175))_
-- With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
+
+### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.4 Sage Skill
+
+- The player chooses which language to learn, along with whether they will _speak_ or _read_ it. However, _runes_ cannot be chosen. Even in the same language, being able to read and speak is different, so if you want to become proficient in _one_ language, you need _2_ levels of experience. You can also _write_ in any language that you can read and speak. As an optional rule, you can set a target score or difficulty for text or conversations so that it cannot be understood if you fail a success roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03272))_
+
+### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities
+
+- The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
+
+### Chapter 7: General Skills / 7.6 Sailor Skill / (Equipment restriction)
+
+- Sailors have the ability to swim. Follow the rules for _swim_ under _common adventurer abilities_ -- replace _adventurer level_ with _sailor skill level_ --and make a check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03526))_
+
+### Chapter 11: Notes on Magic / 11.4 Acquiring Rune Master Skills and Increasing Levels / 《 Sorcerer Skill 》
+
+- Then, you'll be given basic knowledge as a sorcerer, such as speaking and reading in high and low ancient, thus a sorcerer who can use 1st level spells is born. In this case, the rules require 2000 experience points (1500 points if you've acquired the sage skill). Also, although there are no specific restrictions in the rules, a training period of about 3 to 5 years is required. The sorcerer skill is increased by spending experience points. As your sorcerer skill increases, your magic power increases and at the same time you also immediately gain access to higher level spells. Please interpret this as because the sorcerer's spellbook has spells that they cannot handle written down in advance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04125))_
+
+### 13.3 Converting Character Data to Monster Data
+
+- Using the rules presented here, a game master can convert data created as a _character_ into the format of a _monster_ . There are two advantages to doing this. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06147))_
+
+### Representing Special Monsters with Character Data
+
+- These rules were _not_ designed with the idea of playing monsters as characters in mind. Please be careful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06175))_
+
+### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Strike Power Modifier
+
+- **Strike power modifier** is a modifier added to a weapon’s _strike power_ . In the basic rules, a weapon's required strength _is_ its strike power, but with this rule, a weapon's strike power equals **weapon's required strength plus this strike power modifier** . In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
+
+### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Critical Target Variation
+
+- Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . This is indicated by the _critical target_ . Axes, maces, etc. do _not_ critical even if you roll a 10, but rather require an **11** or **12** . One can say that the _lower_ this score, the _more_ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
+
+### Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Defense Modifier
+
+- If you ready a shield, it’ll be easier to avoid your opponent's attacks. With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
+
+### Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage
+
 - In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
-- In the basic rules, the range limit is 20 meters for throwing weapons and 100 meters for shooting weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
+
+### Chapter 16: Optional Rules for Combat / Projectile Range Extension
+
+- In the basic rules, the range limit is 20 meters for throwing weapons and 100 meters for shooting weapons. If you follow these optional rules, you can extend these even further. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07132))_
+
+### Chapter 16: Optional Rules for Combat / Combat Options
+
 - These optional rules allow for a variety of attack methods, rather than just simple attacks _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07141))_
-- In the basic rules, characters cannot hold separate weapons in each hand. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07237))_
+
+### Holding Weapons in Both Hands
+
+- In the basic rules, characters cannot hold separate weapons in each hand. However, there are many people who admire dual wielding. This section presents extended rules for **holding weapons in both hands** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07237))_
+
+### Throwing Multiple Darts or Daggers
+
 - This optional rule increases the chance that a high-level character will defeat a low-level character or monster in one blow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
+
+### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Handling Spirit Walls
+
 - When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07504))_
-- The supreme ruler of Anoth is called the Pope, who serves both as king and holds the authority to appoint _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
+
+### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Geography
+
+- Anoth, known as the "Holy Kingdom," is a strict nation that follows Pharis as its state religion. Most of its citizens are followers of Pharis, and the Pharis temple in the royal capital of Farz is said to be the largest on the continent of Alecrast. The supreme ruler of Anoth is called the Pope, who serves both as king and holds the authority to appoint _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
+
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: What You’ll Need to Play Sword World RPG / Part 2 Game Master Section
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00089))_
 
@@ -57,41 +132,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 > When you’re a game master, you will have to remember rules that you wouldn’t have to remember when you’re a player.
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.7 Magic Expansion / 《 Volume Expansion 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01313))_
 
-> The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
-
-> If you are just riding normally, you do not need to make a success roll.
-
-### Technical atom 3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07102))_
-
-> When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
-
-> A sling can shoot every round if it fires its _own_ bullets.
-
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
-
-> If you ready a shield, it’ll be easier to avoid your opponent's attacks. With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
-
-> With this optional rule, there are differences in the way small and large shields are handled ( _Table 16-2: Shield Optional Rules_ ).
-
-### Technical atom 5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
-
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+> Note: On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
 
@@ -126,7 +171,21 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 6
+### Technical frame 3: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ① Riding [Agility] ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
+
+> **==> picture [162 x 277] intentionally omitted <==** consider the penalty for not having reins, it's effectively _15_ .
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
+
+> If you are just riding normally, you do not need to make a success roll.
+
+### Technical frame 4: Chapter 12: Various Checks / 12.2 Rules for Poison, Illness and Infection
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04239))_
+
+> *Holy prayer and daemon scream are basically the same thing. However, there are slight differences depending on the god (wicked god) you believe in. **Now (believed to be) lost.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04238))_
 
@@ -147,7 +206,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 7
+### Technical frame 5: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -232,7 +295,31 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 8
+### Technical frame 6: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Number of Projectile Shots
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
+
+> A crossbow can _only_ shoot every _other_ round due to the time it takes to wind them up. If you set a quarrel in advance, the _first_ shot will not take long. However, if you leave it set for a long time, the string will lose its elasticity, and the quarrel will easily come off if you tip the crossbow.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
+
+> A sling can shoot every round if it fires its _own_ bullets.
+
+### Technical frame 7: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Shield Modifiers
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
+
+> wearing that armor. Heavy metal armor slows down your movement and makes it more difficult to dodge your opponent's attacks.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
+
+> With this optional rule, there are differences in the way small and large shields are handled ( _Table 16-2: Shield Optional Rules_ ).
+
+### Technical frame 8: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -253,7 +340,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 
@@ -276,7 +367,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 16: Optional Rules for Combat / Maximum Range
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07136))_
+
+> There's no such thing as a bow with infinite reach. Each throwing or shooting weapon has a **maximum range** , and they will _never_ hit a target farther away than this ( _Table 16-4: Maximum Ranges_ ).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07138))_
 
@@ -335,11 +430,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 
@@ -376,7 +471,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 12
+### Technical frame 12: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 
@@ -411,7 +510,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -464,7 +563,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 14
+### Technical frame 14: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 
@@ -513,7 +612,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 15
+### Technical frame 15: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sage Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 
@@ -546,7 +645,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 16
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Bard Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07708))_
 
@@ -575,7 +674,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 17
+### Technical frame 17: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Merchant Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 
@@ -598,7 +697,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 18
+### Technical frame 18: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Craftsman Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07712))_
 
@@ -621,7 +720,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 19
+### Technical frame 19: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -646,7 +745,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 20
+### Technical frame 20: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Hunter Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
@@ -685,7 +784,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 21
+### Technical frame 21: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
@@ -716,7 +815,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 22
+### Technical frame 22: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -743,7 +846,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 23
+### Technical frame 23: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
@@ -772,7 +879,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 24
+### Technical frame 24: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -809,7 +916,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 25
+### Technical frame 25: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -842,7 +949,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 26
+### Technical frame 26: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07735))_
 
@@ -881,7 +992,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 27
+### Technical frame 27: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
@@ -908,7 +1023,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 28
+### Technical frame 28: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
@@ -931,7 +1046,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 29
+### Technical frame 29: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07742))_
 
@@ -962,7 +1077,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 30
+### Technical frame 30: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07745))_
 
@@ -1001,7 +1116,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 31
+### Technical frame 31: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07748))_
 
@@ -1024,7 +1139,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 32
+### Technical frame 32: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
@@ -1045,7 +1160,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 33
+### Technical frame 33: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07757))_
 
@@ -1082,11 +1201,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 34
+### Technical frame 34: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07759))_
 
@@ -1121,7 +1240,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 35
+### Technical frame 35: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -1178,11 +1297,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 36
+### Technical frame 36: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
 
@@ -1205,11 +1324,11 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 37
+### Technical frame 37: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
 
@@ -1234,7 +1353,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 38
+### Technical frame 38: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07771))_
 
@@ -1261,7 +1380,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 39
+### Technical frame 39: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
@@ -1286,7 +1405,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 40
+### Technical frame 40: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
@@ -1307,7 +1426,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 41
+### Technical frame 41: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07778))_
 
@@ -1366,7 +1485,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 42
+### Technical frame 42: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
@@ -1403,7 +1522,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 43
+### Technical frame 43: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
@@ -1438,7 +1557,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 44
+### Technical frame 44: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
@@ -1479,7 +1598,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 45
+### Technical frame 45: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
@@ -1520,7 +1639,7 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 </details>
 
-### Technical atom 46
+### Technical frame 46: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07788))_
 
@@ -1564,36 +1683,46 @@ What [[sword-world-rpg-complete-edition]] covers about rule:
 
 ## Related pages
 
-- [[sword-world-rpg-complete-edition-optional-rule]] - narrower topic (4 shared statement(s), 36 shared atom(s))
+- [[sword-world-rpg-complete-edition-rule-magic]] - narrower topic (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] - narrower topic (1 shared atom(s))
-- [[sword-world-rpg-complete-edition-rule-magic]] - narrower topic (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-adventure]] - shared statements and technical atoms (2 shared statement(s), 25 shared atom(s))
 - [[sword-world-rpg-complete-edition-skill]] - shared statements and technical atoms (2 shared statement(s), 10 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-cast]] - shared statements and technical atoms (1 shared statement(s), 3 shared atom(s))
 - [[sword-world-rpg-complete-edition-level]] - shared statements and technical atoms (3 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-addition]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-bonus-damage]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-critical-target-variation]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-game]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
+- [[sword-world-rpg-complete-edition-thief-skill]] - shared statements and technical atoms (1 shared statement(s), 2 shared atom(s))
 - [[sword-world-rpg-complete-edition-character]] - shared statements and technical atoms (2 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-master]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
+- [[sword-world-rpg-complete-edition-success-roll]] - shared statements and technical atoms (1 shared statement(s), 1 shared atom(s))
 - [[sword-world-rpg-complete-edition-target]] - shared technical atoms (16 shared atom(s))
 - [[sword-world-rpg-complete-edition-ability]] - shared technical atoms (15 shared atom(s))
 - [[sword-world-rpg-complete-edition-success]] - shared technical atoms (12 shared atom(s))
+- [[sword-world-rpg-complete-edition-evasion]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-power]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-result]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-score]] - shared technical atoms (4 shared atom(s))
 - [[sword-world-rpg-complete-edition-human]] - shared technical atoms (3 shared atom(s))
-- [[sword-world-rpg-complete-edition-bonus-damage]] - shared technical atoms (2 shared atom(s))
+- [[sword-world-rpg-complete-edition-type]] - shared technical atoms (3 shared atom(s))
 - [[sword-world-rpg-complete-edition-sailor-skill-ability-table]] - shared technical atoms (2 shared atom(s))
 - [[sword-world-rpg-complete-edition-spell]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-thief-skill]] - shared technical atoms (2 shared atom(s))
-- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-agility]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-hunter-skill]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-merchant-skill]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-move]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-poison]] - shared technical atoms (1 shared atom(s))
 - [[sword-world-rpg-complete-edition-strike]] - shared technical atoms (1 shared atom(s))
+- [[sword-world-rpg-complete-edition-adventurer-level]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-character-monster]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-attack-monster-character]] - shared statements (2 shared statement(s))
+- [[sword-world-rpg-complete-edition-distance-10-meter]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-monster-level]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-ranger-skill]] - shared statements (1 shared statement(s))
 - [[sword-world-rpg-complete-edition-spirit]] - shared statements (1 shared statement(s))
+- [[sword-world-rpg-complete-edition-target-score]] - shared statements (1 shared statement(s))
 
 ## Source
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-10-notes-on-combat-10-
 page_kind: source
 summary: Chapter 10: Notes on Combat / 10.3 Surprise Attacks: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-10-notes-on-combat-10-3-surprise-attacks-6b0c1822@c17c44f9a59a4e29e22a9b91ff15607c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-10-notes-on-combat-10-3-surprise-attacks-6b0c1822@4895783c653c9f69ed8def6575d8d0fb
 ---
 
 # Chapter 10: Notes on Combat / 10.3 Surprise Attacks
@@ -21,7 +21,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 10: Notes on Combat / Surprise Attacks
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03661))_
 

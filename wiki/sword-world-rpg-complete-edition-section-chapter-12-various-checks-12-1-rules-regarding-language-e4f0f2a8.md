@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1
 page_kind: source
 summary: Chapter 12: Various Checks / 12.1 Rules Regarding Language: 57 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-e4f0f2a8@94ac2171102d735bcca1278cf6949f35
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-12-various-checks-12-1-rules-regarding-language-e4f0f2a8@ffcf8821ae021440f1db03c19677bc21
 ---
 
 # Chapter 12: Various Checks / 12.1 Rules Regarding Language
@@ -45,65 +45,48 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Normal Languages 》
 
-- Normal languages are words used for communication, such as conversation and writing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
-- You usually can't cast any magic with these words. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
-- Normal language has common runes, but this is because they indirectly use the power of high ancient, and the words themselves have no magical power at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
+- Normal languages are words used for communication, such as conversation and writing. You usually can't cast any magic with these words. Normal language has common runes, but this is because they indirectly use the power of high ancient, and the words themselves have no magical power at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
 - Normal language has common runes, but this is because they indirectly use the power of high ancient, and the words themselves have no magical power at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
 - Normal languages are words used for communication, such as conversation and writing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04182))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Runes 》
 
-- The languages called runes are all quite excellent, but they lack practical application because they have too many rules and restrictions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04184))_
-- Runes have magical power, and by chanting them, a rune master can use various types of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04184))_
-- Therefore, it is almost impossible to communicate with each other using these languages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04184))_
+- Runes have magical power, and by chanting them, a rune master can use various types of magic. High ancient, silent spirit, holy prayers, daemon scream, dragon roar, etc. fall under runes. The languages called runes are all quite excellent, but they lack practical application because they have too many rules and restrictions. Therefore, it is almost impossible to communicate with each other using these languages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04184))_
 - The languages called runes are all quite excellent, but they lack practical application because they have too many rules and restrictions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04184))_
 - Therefore, it is almost impossible to communicate with each other using these languages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04184))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Regional 》
 
-- Strictly speaking, each kingdom should have its own regional language, but we don't want to place too many restrictions on language, so the rules only allow for two broad categories: **mārdan** and **gundar** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
-- Alecrast is divided into several regions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
-- For example, there is the northeast region, where three kingdoms are at war, and the central plains, which is crowded with major powers such as Orphan and Ramliearth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
-- These languages are widespread not only among humans, but also among demihumans and intelligent monsters living in the regions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
-- If the game master desires, more regional languages may be created. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
-- Each region, or even smaller kingdom, has its own language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
+- Alecrast is divided into several regions. For example, there is the northeast region, where three kingdoms are at war, and the central plains, which is crowded with major powers such as Orphan and Ramliearth. Each region, or even smaller kingdom, has its own language. These are **regional** . These languages are widespread not only among humans, but also among demihumans and intelligent monsters living in the regions. Strictly speaking, each kingdom should have its own regional language, but we don't want to place too many restrictions on language, so the rules only allow for two broad categories: **mārdan** and **gundar** . If the game master desires, more regional languages may be created. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
 - These languages are widespread not only among humans, but also among demihumans and intelligent monsters living in the regions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
 - For example, there is the northeast region, where three kingdoms are at war, and the central plains, which is crowded with major powers such as Orphan and Ramliearth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
 - Strictly speaking, each kingdom should have its own regional language, but we don't want to place too many restrictions on language, so the rules only allow for two broad categories: **mārdan** and **gundar** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04186))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Mārdan ]
 
-- Its western border is the kingdom of Eremire, but with the exception of a small village to the west called _Palmer_ , mārdan is also spoken. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04188))_
-- Mārdan (eastern) is mainly used by the people of Oran, the _kingdom of sages and adventurers_ in the east, and its surrounding kingdoms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04188))_
+- Mārdan (eastern) is mainly used by the people of Oran, the _kingdom of sages and adventurers_ in the east, and its surrounding kingdoms. Its western border is the kingdom of Eremire, but with the exception of a small village to the west called _Palmer_ , mārdan is also spoken. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04188))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Gundar ]
 
-- The two countries in the north central plains (Orphan and Ramliearth) also have gundar as their mother tongue. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04190))_
-- Gundar (western) is mainly used in the region west of the kingdom of Saine. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04190))_
+- Gundar (western) is mainly used in the region west of the kingdom of Saine. The two countries in the north central plains (Orphan and Ramliearth) also have gundar as their mother tongue. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04190))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》
 
-- Although it is now a dead language, its words are still passed down among people and monsters connected to the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04192))_
-- Also, those called sages and sorcerers study low ancient, considering it an almost essential language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04192))_
-- Low ancient is the normal language used in the _ancient kingdom_ of Kastuul, which once flourished throughout Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04192))_
+- Low ancient is the normal language used in the _ancient kingdom_ of Kastuul, which once flourished throughout Alecrast. Although it is now a dead language, its words are still passed down among people and monsters connected to the ancient kingdom. Also, those called sages and sorcerers study low ancient, considering it an almost essential language. This is because you cannot begin to understand the great civilization of the ancient kingdom unless you know low ancient. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04192))_
 - Low ancient is the normal language used in the _ancient kingdom_ of Kastuul, which once flourished throughout Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04192))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Racial 》
 
-- A **racial** language is a language used by a race different from humans. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04195))_
-- Fae such as elves and dwarves, as well as youma such as goblins and imps, each have their own unique language that has remained unchanged from ancient times to the present day, and is used to communicate among their own kind. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04195))_
+- A **racial** language is a language used by a race different from humans. Fae such as elves and dwarves, as well as youma such as goblins and imps, each have their own unique language that has remained unchanged from ancient times to the present day, and is used to communicate among their own kind. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04195))_
 - Fae such as elves and dwarves, as well as youma such as goblins and imps, each have their own unique language that has remained unchanged from ancient times to the present day, and is used to communicate among their own kind. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04195))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Elven ]
 
-- The dark elves, who are wicked elves, also use this language as their normal language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04197))_
-- This language is also used by mythical beasts and magical beasts that live in the forest. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04197))_
-- This is the language used by elves. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04197))_
+- This is the language used by elves. This language is also used by mythical beasts and magical beasts that live in the forest. The dark elves, who are wicked elves, also use this language as their normal language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04197))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Dwarven ]
 
-- This is the language used by dwarves. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04199))_
-- There are also other mythical beasts and magical beasts that live in mountains or underground that use this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04199))_
+- This is the language used by dwarves. There are also other mythical beasts and magical beasts that live in mountains or underground that use this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04199))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Impish ]
 
@@ -112,25 +95,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Centaurian ]
 
-- Other intelligent races that make their home in the meadow region also use this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04203))_
-- It is said that in the past, this had a _high_ language used as runes, but in modern times it’s almost completely lost. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04203))_
-- This is the language used by centaurs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04203))_
+- This is the language used by centaurs. Other intelligent races that make their home in the meadow region also use this language. It is said that in the past, this had a _high_ language used as runes, but in modern times it’s almost completely lost. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04203))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Goblin ]
 
-- Kobolds and hobgoblins also use this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04205))_
-- It is also said to have the same etymology as dwarven. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04205))_
+- The language spoken among goblins. Kobolds and hobgoblins also use this language. It is also said to have the same etymology as dwarven. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04205))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Giant ]
 
-- It is said that the _high_ language of giant are runes comparable to _high ancient_ for humans, but when we usually refer to _giant_ , it's the language that titans use on a normal basis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04207))_
-- This is the language used by titans such as giants, cyclops, ogres, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04207))_
+- This is the language used by titans such as giants, cyclops, ogres, etc. It is said that the _high_ language of giant are runes comparable to _high ancient_ for humans, but when we usually refer to _giant_ , it's the language that titans use on a normal basis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04207))_
 - This is the language used by titans such as giants, cyclops, ogres, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04207))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Harpy ]
 
-- Some intelligent flying races can speak this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
-- This is the language used by harpies. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
+- This is the language used by harpies. Some intelligent flying races can speak this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04209))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Fairy ]
 
@@ -139,8 +117,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Merman ]
 
-- This is the language used by mermen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04213))_
-- Other intelligent races that make their home in the sea also use this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04213))_
+- This is the language used by mermen. Other intelligent races that make their home in the sea also use this language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04213))_
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Minotaur ]
 
@@ -148,13 +125,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 12: Various Checks / 12.1 Rules Regarding Language / [ Lizardman ]
 
-- It is also said to be a lesser language of dragon roar, which are the runes of dragon roar magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
-- Lizardmen, wyrms, and elder dragons use this language as their normal language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
-- This is the language used by lizardmen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
+- This is the language used by lizardmen. It is also said to be a lesser language of dragon roar, which are the runes of dragon roar magic. Lizardmen, wyrms, and elder dragons use this language as their normal language. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04217))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 12: Various Checks / 12.1 Rules Regarding Language / 《 Low Ancient 》
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04192))_
 

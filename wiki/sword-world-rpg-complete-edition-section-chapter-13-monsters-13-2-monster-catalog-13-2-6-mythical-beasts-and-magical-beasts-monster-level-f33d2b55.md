@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=3: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-monster-level-f33d2b55@e37f0c76bfbf617603cd851ef468b06f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-6-mythical-beasts-and-magical-beasts-monster-level-f33d2b55@c3fa0f308c7c8e5a8d919d3c5c2884d2
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=3
@@ -57,19 +57,25 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Agility=16 Movement Speed=6/30 (air) Number=Several Frequency=Moderate Intellect=Low Reaction=Adversarial Attack Points=Talons: 11 (4) Strike Points=7 Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/10 (3) Mental Points/Resistance=8/10 (3) Special Abilities=None in particular Habitat=Mountains Languages=Harpy Perception=Five senses _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04965))_
-- Furia live in mountainous areas, are ugly, have low intellect, and are always aggressive. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
-- They have no special abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
-- Furia mate with male eagles and may be encountered along with them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
+- Furia live in mountainous areas, are ugly, have low intellect, and are always aggressive. Furia mate with male eagles and may be encountered along with them. They have no special abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04966))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.6 Mythical Beasts and Magical Beasts / Monster Level=3
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04965))_
+
+> Agility=16 Movement Speed=6/30 (air) Number=Several Frequency=Moderate Intellect=Low Reaction=Adversarial Attack Points=Talons: 11 (4) Strike Points=7 Evasion Points=11 (4) Defense Points=6 Life Points/Resistance=10/10 (3) Mental Points/Resistance=8/10 (3) Special Abilities=None in particular Habitat=Mountains Languages=Harpy Perception=Five senses
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04964))_
 
 > Rarity=13
 
-### Technical atom 2
+### Technical frame 2: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

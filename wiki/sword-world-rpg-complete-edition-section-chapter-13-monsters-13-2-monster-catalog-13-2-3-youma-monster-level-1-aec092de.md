@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.3 Youma / Monster Level=1: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-3-youma-monster-level-1-aec092de@d3391ed9043dfdc1b7e7fa9207b446b6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-3-youma-monster-level-1-aec092de@a21dc525ea275e06153418e56dd32d8d
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.3 Youma / Monster Level=1
@@ -56,13 +56,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.3 Youma / Monster Level=1
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04725))_
 
 > Rarity=6 Agility=14 Movement Speed=8 Number=Several to dozens Frequency=Frequent Intellect=Low
 
-### Technical atom 2
+### Technical frame 2: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-4-how-to-u
 page_kind: source
 summary: Chapter 5: Magic / 5.1.4 How to Use Magic / Basic Rules of Magic: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-4-how-to-use-magic-basic-rules-of-magic-82dd55b8@f8ccc3edd7db87cdd56df7102a57e049
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-4-how-to-use-magic-basic-rules-of-magic-82dd55b8@9e5e1e4f7479d2365b2879a04b6741de
 ---
 
 # Chapter 5: Magic / 5.1.4 How to Use Magic / Basic Rules of Magic
@@ -21,11 +21,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.7 Magic Expansion / 《 Volume Expansion 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01313))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+> Note: On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
 

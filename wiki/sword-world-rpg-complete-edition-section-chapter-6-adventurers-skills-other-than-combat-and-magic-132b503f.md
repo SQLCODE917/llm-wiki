@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-132b503f@5146c683f661ebf303df2f8251c7dcfb
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-132b503f@d7cd4d4e3492d21a6ca14b923f566d74
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic
@@ -22,12 +22,16 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - The abilities associated with these skills, including the _thief skill_ , are mostly determined by success rolls. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03136))_
-- For example, the thief skill's _lockpicking_ ability cannot be retried. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
+- Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 - For example, the thief skill's _lockpicking_ ability cannot be retried. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03139))_
+
+> Some abilities say _not retriable_ . Once you fail such an ability, you _cannot_ attempt it again on the same target. For example, the thief skill's _lockpicking_ ability cannot be retried. If a thief
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03138))_
 

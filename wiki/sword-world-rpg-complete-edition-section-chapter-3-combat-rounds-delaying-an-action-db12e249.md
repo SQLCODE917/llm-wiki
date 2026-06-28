@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-delayi
 page_kind: source
 summary: Chapter 3: Combat Rounds / Delaying an Action: 11 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-delaying-an-action-db12e249@965fd0eb9e5f0a14c86df903891add9f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-delaying-an-action-db12e249@450d88f60295a89de29ad3c760fd7257
 ---
 
 # Chapter 3: Combat Rounds / Delaying an Action
@@ -21,38 +21,45 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Characters (including NPCs and monsters) do not have to act based on their agility and can instead delay their actions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00721))_
-- In other words, they will act only at the very _end_ of the round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00723))_
-- In such a case, a character may lower their **action order** to **0** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00723))_
-- In other words, they will act only at the very _end_ of the round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00723))_
+- In such a case, a character may lower their **action order** to **0** . In other words, they will act only at the very _end_ of the round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00723))_
 - In this case, an intended attack on an enemy that is about to withdraw can be changed to another target that you’re engaged with. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00725))_
-- If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
+- If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from among those they're engaged with). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
+- In other words, they will act only at the very _end_ of the round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00723))_
 - If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 3: Combat Rounds / Delaying an Action
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00723))_
+
+> In such a case, a character may lower their **action order** to **0** . In other words, they will act only at the very _end_ of the round.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00722))_
 
 > For example, suppose you know that a fellow wizard can use magic to increase the attack power of your sword. But what if your agility is higher than theirs? The support magic will be applied after you swing your sword, and the magic will be wasted.
 
-### Technical atom 2
+### Technical frame 2: Chapter 3: Combat Rounds / Delaying an Action
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00722, source-range-870a16bc-00726))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00725))_
 
-> For example, suppose you know that a fellow wizard can use magic to increase the attack power of your sword. But what if your agility is higher than theirs? The support magic will be applied after you swing your sword, and the magic will be wasted. If the enemy that's trying to withdraw has a higher agility than you, you _must_ switch to a different target, because according to your action order, the enemy will have escaped. At this time, an attacker can choose any new target to switch to (from
+> In this case, an intended attack on an enemy that is about to withdraw can be changed to another target that you’re engaged with.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00724))_
 
 > If you want to **delay** an action, you must mention it in the action announcement phase, along with the action you intend to take.
 
-### Technical atom 3
+### Technical frame 3: Chapter 3: Combat Rounds / Delaying an Action
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00725))_
+
+> In this case, an intended attack on an enemy that is about to withdraw can be changed to another target that you’re engaged with.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
 
 > At this time, an attacker can choose any new target to switch to (from among those they're engaged with).
 
-### Technical atom 4
+### Technical frame 4: Chapter 3: Combat Rounds / Delaying an Action
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00726))_
 

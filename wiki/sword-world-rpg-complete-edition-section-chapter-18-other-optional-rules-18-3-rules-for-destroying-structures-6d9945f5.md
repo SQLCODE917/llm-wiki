@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures: 504 source-backed entries and 117 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-6d9945f5@5e2670c63c785218ffb36cbbfd8b3cda
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-6d9945f5@cab57c644582450e4ca10587545b691c
 ---
 
 # Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures
@@ -23,53 +23,39 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- However, if you specifically want to handle this numerically, please use the following rules. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
-- Basically, characters cannot destroy walls or doors, but if you really want to implement something like this, it’s fine for the game master to make decisions using his or her own common sense (“You have an ax, so you should be able to break down a wooden door”). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
+- Basically, characters cannot destroy walls or doors, but if you really want to implement something like this, it’s fine for the game master to make decisions using his or her own common sense (“You have an ax, so you should be able to break down a wooden door”). However, if you specifically want to handle this numerically, please use the following rules. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07420))_
 
 ## Statements by subsection
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Paper ]
 
-- Also, if exposed to fire, it’ll ignite immediately, and its defense points will automatically decrease by 1 point every round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07429))_
-- When its defense points reach 0, its destruction points begin to decrease, and on the next round when destruction points reach 1, the paper object will burn out. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07429))_
+- Special = If you cast " _Fire Weapon_ " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals. Also, if exposed to fire, it’ll ignite immediately, and its defense points will automatically decrease by 1 point every round. When its defense points reach 0, its destruction points begin to decrease, and on the next round when destruction points reach 1, the paper object will burn out. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07429))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Defense Points
 
-- There is a range, but the game master should decide on a specific score taking into consideration the thickness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
+- Indicates the strength of the material. There is a range, but the game master should decide on a specific score taking into consideration the thickness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
 - damage than these minimum destruction points with a _single blow_ , you will _not_ be able to destroy a structure with 0 defense points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07432))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Destruction Points
 
-- The lowest of this score is called the _minimum destruction points_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
-- In the case of paper, the score is 1~10, so the minimum destruction points are **1** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
+- As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness. The lowest of this score is called the _minimum destruction points_ . In the case of paper, the score is 1~10, so the minimum destruction points are **1** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
 - The lowest of this score is called the _minimum destruction points_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
 
-- The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07436))_
+- Consider trying to destroy a wooden wall (!) that’s 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07436))_
 - Defense points and destruction points are used in the basic system for destroying structures. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07437))_
-- If a character attacks with a weapon and deals _22 or greater_ points of damage in _one_ blow, this wooden wall will be destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- Once the destruction points reach _5 points_ , they will _no longer_ decrease.) When a character attempts to destroy something with a weapon, magic, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the result is _greater than or equal to_ the _destruction points_ , the structure is _destroyed_ by that blow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- However, this will _only_ be reduced to the _minimum_ destruction points depending on the material. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the damage is _7 points or less_ , the character's efforts are completely _wasted_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- After the defense points fall to 0, the destruction points will decrease by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- However, the structure itself is _not_ destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- damage is calculated in the same way as when an attack hits a monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the result is _greater_ than 1 but _less_ than the destruction points, the _defense points_ are _reduced_ by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the result is _0 or less_ (when damage is less than or equal to defense points), that means there was _no_ effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- Then, you subtract the defense points from the determined damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
+- If a character attacks with a weapon and deals _22 or greater_ points of damage in _one_ blow, this wooden wall will be destroyed. If the damage is _7 points or less_ , the character's efforts are completely _wasted_ . If the damage is _greater than 8_ but _less than 21 points_ , the defense points will be reduced by _1 point_ (if the defense points become _0_ , the destruction points will start to _decrease_ . Once the destruction points reach _5 points_ , they will _no longer_ decrease.) When a character attempts to destroy something with a weapon, magic, etc. damage is calculated in the same way as when an attack hits a monster. Then, you subtract the defense points from the determined damage. If the result is _greater than or equal to_ the _destruction points_ , the structure is _destroyed_ by that blow. If the result is _greater_ than 1 but _less_ than the destruction points, the _defense points_ are _reduced_ by 1 point. However, the structure itself is _not_ destroyed. If the result is _0 or less_ (when damage is less than or equal to defense points), that means there was _no_ effect at all. After the defense points fall to 0, the destruction points will decrease by 1 point. However, this will _only_ be reduced to the _minimum_ destruction points depending on the material. If you cannot deal more _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
+- **Complete Immunity, No Criticals, Normal, Ignore Defense Points** When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. This is expressed by what's given here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
+- If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+- Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+- Beyond this, game masters should also use common sense. There's no mention of entangling weapons, but there's no way they can do any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07447))_
+- _Crack_ is classified as earthquaketype, but given the way the magic is applied, it’s unlikely that it’ll be effective. Also, most walls don't move, so _Blade Net_ won't deal any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07448))_
 - After the defense points fall to 0, the destruction points will decrease by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
 - If the result is _0 or less_ (when damage is less than or equal to defense points), that means there was _no_ effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
 - Then, you subtract the defense points from the determined damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- This is expressed by what's given here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
-- **Complete Immunity, No Criticals, Normal, Ignore Defense Points** When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
-- Therefore, sometimes destruction is hopeless. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 - Therefore, sometimes destruction is hopeless. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 - Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
-- Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
-- There's no mention of entangling weapons, but there's no way they can do any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07447))_
-- _Crack_ is classified as earthquaketype, but given the way the magic is applied, it’s unlikely that it’ll be effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07448))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Special
 
@@ -81,516 +67,336 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Iron ]
 
-- If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
-- If your character accidentally touches it, he or she will suffer severe burns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
+- If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
 - If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Handling Spirit Walls
 
 - When using these rules for destroying structures to destroy the spirit magic Spirit Wall, please do so as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07504))_
-- Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07505))_
-- Without expansion, defense points are 15 and destruction points are 20. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07505))_
+- **[ Spirit Wall: Gnome ]** Treat it as a _stone_ wall. Without expansion, defense points are 15 and destruction points are 20. Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07505))_
 - Its minimum destruction points are 1 because it's stone. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07505))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Spirit Wall: Frau ]
 
-- Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07507))_
-- Without expansion, defense points are 15 and destruction points are 20. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07507))_
+- Treat it as an _ice_ wall. Without expansion, defense points are 15 and destruction points are 20. Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07507))_
 - Its minimum destruction points are 1 because it's ice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07507))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Spirit Wall: Dryad ]
 
-- Without expansion, defense points and destruction points are both 15. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07509))_
-- _Spirit Wall: Dryad_ has the power to regenerate even if it’s destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07510))_
+- Treat it as a _vegetation_ wall. Without expansion, defense points and destruction points are both 15. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07509))_
+- _Spirit Wall: Dryad_ has the power to regenerate even if it’s destroyed. Each round, _Spirit Wall: Dryad_ regenerates 1 defense point and 1 destruction point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07510))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast
 
-- Moreover, this beautiful and charismatic queen is also a cruel human who considers people from other nations as mere slaves, making it far from an ideal country for travelers to visit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07616))_
-- Queen June V has banned the use of magic within the country. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07616))_
-- Queen June V has banned the use of magic within the country. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07616))_
-- It is a nation formed by the union of several tribes, each creating their own small villages and towns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
-- Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
-- Baikal is the northernmost country in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
-- This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains people who engage in farming. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
-- The total population is slightly over 1 million. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
-- This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains people who engage in farming. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
-- While the king resides in the royal capital of Boris, he is merely a figurehead. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07618))_
-- The men of Baikal are fierce and warlike, but tribal bonds are extremely strong. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07619))_
-- Plysis is the largest fortified city in Alecrast and has become a city-state in its own right. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
-- The economy is sustained by well-developed commerce, professional guilds, and trade with neighboring villages and towns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
-- Plysis has been under invasion from Lodorille, but has continued to repel these attacks through its sturdy fortifications, large weaponry such as catapults, and the strategic brilliance of the talented military advisor Lukial, known as "The Chess Player." However, there was an incident where military advisor Lukial accepted an invitation from the great western nation of Lomar and departed, leading to rumors that the city's survival is now in jeopardy. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
+- sustained by absolute loyalty to the queen. Queen June V has banned the use of magic within the country. Moreover, this beautiful and charismatic queen is also a cruel human who considers people from other nations as mere slaves, making it far from an ideal country for travelers to visit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07616))_
+- Baikal is the northernmost country in Alecrast. It is a nation formed by the union of several tribes, each creating their own small villages and towns. The total population is slightly over 1 million. Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains people who engage in farming. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
+- While the king resides in the royal capital of Boris, he is merely a figurehead. Rather, the Pirate King Geers, one of the maritime tribal chiefs, serves as the kingdom's central figure against external threats from his base in the port city of Arma. Baikal's galley ships also serve as an extremely powerful navy protecting the country. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07618))_
+- The men of Baikal are fierce and warlike, but tribal bonds are extremely strong. If you can gain favor with the powerful tribes, Baikal can become a hospitable country for travelers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07619))_
+- Plysis is the largest fortified city in Alecrast and has become a city-state in its own right. It has a population of 40,000. The economy is sustained by well-developed commerce, professional guilds, and trade with neighboring villages and towns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
 - Plysis has been under invasion from Lodorille, but has continued to repel these attacks through its sturdy fortifications, large weaponry such as catapults, and the strategic brilliance of the talented military advisor Lukial, known as "The Chess Player." However, there was an incident where military advisor Lukial accepted an invitation from the great western nation of Lomar and departed, leading to rumors that the city's survival is now in jeopardy. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
 - South of Lodorille and east of Plysis lies the ruins of an ancient kingdom known as "Ancient Ruined City." This city, which still contains the ancient kingdom's treasures, is a forbidden place haunted by the undead and ghosts, and it is said that almost none who venture in ever return. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07622))_
+- Queen June V has banned the use of magic within the country. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07616))_
+- This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains people who engage in farming. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
+- Plysis has been under invasion from Lodorille, but has continued to repel these attacks through its sturdy fortifications, large weaponry such as catapults, and the strategic brilliance of the talented military advisor Lukial, known as "The Chess Player." However, there was an incident where military advisor Lukial accepted an invitation from the great western nation of Lomar and departed, leading to rumors that the city's survival is now in jeopardy. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07621))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Age of Mythology
 
-- In the beginning, only a single Titan existed in the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07518))_
-- This Titan was called "The Great One" or the "Creator of All Things," though their true nature remains completely shrouded in mystery. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07518))_
-- In the beginning, only a single Titan existed in the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07518))_
-- Its flesh became the earth, its final breath became the wind, and the blood that flowed from its entire body became the seas. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07519))_
-- The world began with the death of this Titan who had lived for eternity. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07519))_
-- The Titan's heart, which grieved and raged in loneliness, became fire, bringing heat and life to the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07519))_
-- From this fire, the gods were born. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520))_
-- At this time, plants sprouted from the Titan's body hair, and dragons emerged from its great scales. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520))_
-- It is said that lesser gods were also born, each inheriting different parts of the Titan's body. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520))_
-- From the Titan's right foot came the war god Myrii; from the left foot, the fortune god Cha Za; from the head emerged the knowledge god Rahda; from the torso, the earth mother goddess Marfa; from the evil right arm, the dark god Phalaris; and from the virtuous left hand the supreme god Pharis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520))_
-- Then, they made the material world for beings with physical forms to inhabit, and finally, they created an intermediate world called the fairy world to connect these two distinct realms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
-- They then created life forms such as spirits, fae, animals, and plants in their respective worlds and, with their help, completed each world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
-- First, the gods divided the world into three parts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
-- They began by organizing the chaotic forces that overflowed into the world to create the spirit world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
-- Then, they made the material world for beings with physical forms to inhabit, and finally, they created an intermediate world called the fairy world to connect these two distinct realms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
-- They then created life forms such as spirits, fae, animals, and plants in their respective worlds and, with their help, completed each world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
+- In the beginning, only a single Titan existed in the world. This Titan was called "The Great One" or the "Creator of All Things," though their true nature remains completely shrouded in mystery. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07518))_
+- The world began with the death of this Titan who had lived for eternity. Its flesh became the earth, its final breath became the wind, and the blood that flowed from its entire body became the seas. The Titan's heart, which grieved and raged in loneliness, became fire, bringing heat and life to the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07519))_
+- From this fire, the gods were born. From the Titan's right foot came the war god Myrii; from the left foot, the fortune god Cha Za; from the head emerged the knowledge god Rahda; from the torso, the earth mother goddess Marfa; from the evil right arm, the dark god Phalaris; and from the virtuous left hand the supreme god Pharis. It is said that lesser gods were also born, each inheriting different parts of the Titan's body. At this time, plants sprouted from the Titan's body hair, and dragons emerged from its great scales. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07520))_
+- Thus began the age of creation by the gods. First, the gods divided the world into three parts. They began by organizing the chaotic forces that overflowed into the world to create the spirit world. Then, they made the material world for beings with physical forms to inhabit, and finally, they created an intermediate world called the fairy world to connect these two distinct realms. They then created life forms such as spirits, fae, animals, and plants in their respective worlds and, with their help, completed each world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
 - These beings created by the gods' hands were called the ancient races, and they are said to have possessed abilities far superior to the races that exist in Forcelia today. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07522))_
+- However, after the age of creation came an age of conflict. It is said to have begun with minor differences among the gods. But these differences bred small conflicts, which evolved into great wars. Finally, it took the form of a final war in which all ancient races participated, divided between the forces of light and darkness. As a result, the gods lost their physical forms and their means to directly intervene in the material world, becoming purely mental entities or forces. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07523))_
+- years, eventually establishing a kingdom. This was the Kingdom of Kastuul. As this kingdom has already perished, it is now known as the Ancient Kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
+- This kingdom was ruled by great rune masters who were versed in various magical languages. The higher one's magical ability, the higher their status, and the kingdom was ruled through generations by powerful sorcerers known as wizard-kings. Humans with low magical ability, or those completely lacking it, were either treated as slaves or banished from the peaceful kingdom to become savages living in dangerous wilderness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07525))_
+- In the beginning, only a single Titan existed in the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07518))_
+- Then, they made the material world for beings with physical forms to inhabit, and finally, they created an intermediate world called the fairy world to connect these two distinct realms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
+- They then created life forms such as spirits, fae, animals, and plants in their respective worlds and, with their help, completed each world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07521))_
 - As a result, the gods lost their physical forms and their means to directly intervene in the material world, becoming purely mental entities or forces. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07523))_
-- But these differences bred small conflicts, which evolved into great wars. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07523))_
-- Finally, it took the form of a final war in which all ancient races participated, divided between the forces of light and darkness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07523))_
-- It is said to have begun with minor differences among the gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07523))_
-- As a result, the gods lost their physical forms and their means to directly intervene in the material world, becoming purely mental entities or forces. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07523))_
-- This was the Kingdom of Kastuul. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
-- As this kingdom has already perished, it is now known as the Ancient Kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07524))_
-- Humans with low magical ability, or those completely lacking it, were either treated as slaves or banished from the peaceful kingdom to become savages living in dangerous wilderness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07525))_
-- This kingdom was ruled by great rune masters who were versed in various magical languages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07525))_
-- The higher one's magical ability, the higher their status, and the kingdom was ruled through generations by powerful sorcerers known as wizard-kings. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07525))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / The Age of Magic = The Kingdom of Kastuul
 
-- The humans were said to have been created by the gods from their own flesh, and they were especially powerful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
-- Though many ancient races died in the Final War and lost their power, some races managed to survive. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
-- Humans excelled in all forms of magic, reportedly because they inherited not only physical form but also a portion of the gods' power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
-- Among the early humans, there were even some who were said to be half-divine. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
-- Humans excelled in all forms of magic, reportedly because they inherited not only physical form but also a portion of the gods' power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
-- However, this kingdom was ultimately destroyed by the very magical power that had formed the foundation of its development. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07529))_
-- This era is known as "The Age of Magic." It is said that three systems of magic - ancient magic, spirit magic, and holy magic - created a brilliant culture, enabled cities to float in the sky, and even commanded grown dragons as servants. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07529))_
+- Though many ancient races died in the Final War and lost their power, some races managed to survive. The humans were said to have been created by the gods from their own flesh, and they were especially powerful. Humans excelled in all forms of magic, reportedly because they inherited not only physical form but also a portion of the gods' power. Among the early humans, there were even some who were said to be half-divine. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
+- This era is known as "The Age of Magic." It is said that three systems of magic - ancient magic, spirit magic, and holy magic - created a brilliant culture, enabled cities to float in the sky, and even commanded grown dragons as servants. However, this kingdom was ultimately destroyed by the very magical power that had formed the foundation of its development. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07529))_
 - They survived through a dark age lasting hundreds or even thousands of **==> picture [354 x 329] intentionally omitted <==** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07530))_
+- Humans excelled in all forms of magic, reportedly because they inherited not only physical form but also a portion of the gods' power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07528))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / The Age of Sword = The New Kingdoms
 
+- After the fall of the Ancient Kingdom, those who became the world's leaders were the segregated people who had been despised as slaves or savages during the Ancient Kingdom era. While they certainly had lower magical abilities, they were filled with a robust life force that made up for it. The Sages believe that the two groups were likely slightly different even as species. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
+- Having survived the chaotic period after the Ancient Kingdom's fall, the New Kingdom has now continued for over 500 years. Various kingdoms with distinct characteristics have sprung up across Forcelia during this era. While magic still exists, advanced spells have been lost, and the number of Rune Masters has decreased. Instead, matters have come to be resolved through military might. Thus, the present is also called the "Age of Sword." This is also the origin of the name "Sword World." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
+- Except for the presence of magic, this era closely resembles Western society from ancient times through the medieval period in our world. To put it more simply, it's a world that emanates what is commonly called a "fantasy" atmosphere. Whether at the edge of the distant universe, in the far past (or perhaps the future), or in a realm beyond dimensions, Forcelia exists in a place unknown to us. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07535))_
 - After the fall of the Ancient Kingdom, those who became the world's leaders were the segregated people who had been despised as slaves or savages during the Ancient Kingdom era. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
-- The Sages believe that the two groups were likely slightly different even as species. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
-- While they certainly had lower magical abilities, they were filled with a robust life force that made up for it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
-- After the fall of the Ancient Kingdom, those who became the world's leaders were the segregated people who had been despised as slaves or savages during the Ancient Kingdom era. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07533))_
-- While magic still exists, advanced spells have been lost, and the number of Rune Masters has decreased. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
-- Various kingdoms with distinct characteristics have sprung up across Forcelia during this era. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
-- Thus, the present is also called the "Age of Sword." This is also the origin of the name "Sword World." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
-- Instead, matters have come to be resolved through military might. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
-- Having survived the chaotic period after the Ancient Kingdom's fall, the New Kingdom has now continued for over 500 years. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
 - Having survived the chaotic period after the Ancient Kingdom's fall, the New Kingdom has now continued for over 500 years. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
 - Thus, the present is also called the "Age of Sword." This is also the origin of the name "Sword World." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07534))_
-- To put it more simply, it's a world that emanates what is commonly called a "fantasy" atmosphere. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07535))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / World
 
-- People consider Forcelia to be the world itself. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07538))_
-- The Alecrast continent is just a small part of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07538))_
-- At these four corners, there are gates that seal off the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07539))_
-- The world of Forcelia is believed to be flat rather than spherical. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07539))_
-- It is said to be sealed by mountains of ice of infinite height. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
-- There is also a theory that it is the Gate of Earth, in which case mountain ranges of infinite height seal the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
-- It is said to be sealed by scorching flames. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
-- In the south is the Gate of Fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
-- In the east is the Gate of Wind, sealed by fierce storms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
-- The Alecrast continent is believed to be located quite far north in the world of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
-- However, this Water Gate is said to be unsealed, falling as a waterfall into the Void. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
-- And in the west is the Gate of Water. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
+- The Alecrast continent is just a small part of Forcelia. People consider Forcelia to be the world itself. The concept of a world outside Forcelia barely exists, except among some sages who acknowledge the existence of other realms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07538))_
+- The world of Forcelia is believed to be flat rather than spherical. The four corners of its square shape point to the east, west, north, and south. At these four corners, there are gates that seal off the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07539))_
+- In the north lies the Gate of Ice. It is said to be sealed by mountains of ice of infinite height. There is also a theory that it is the Gate of Earth, in which case mountain ranges of infinite height seal the world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07540))_
+- In the south is the Gate of Fire. It is said to be sealed by scorching flames. In the east is the Gate of Wind, sealed by fierce storms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07541))_
+- And in the west is the Gate of Water. However, this Water Gate is said to be unsealed, falling as a waterfall into the Void. The Alecrast continent is believed to be located quite far north in the world of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
 - The Alecrast continent is believed to be located quite far north in the world of Forcelia. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07542))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Sun, Moon, Stars
 
-- In the world of Forcelia, there is one sun, one moon, and countless stars in the sky. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
-- The moon is controlled by Pharis’s younger brother, Fenes, the god of cycles, and casts light into the night. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
-- The sun is ruled by the supreme god Pharis, and some say that the sun is the lost body of Pharis himself. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
-- The stars are the shining forces and substances that were left undifferentiated at the creation of the world, some say, and others claim that they are the shattered bodies of the gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
-- It is believed that the world of Forcelia floats within this Star Realm. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07545))_
-- The place where the sun, stars, and moon reside is called the “Star Realm”. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07545))_
+- In the world of Forcelia, there is one sun, one moon, and countless stars in the sky. The sun is ruled by the supreme god Pharis, and some say that the sun is the lost body of Pharis himself. The moon is controlled by Pharis’s younger brother, Fenes, the god of cycles, and casts light into the night. The stars are the shining forces and substances that were left undifferentiated at the creation of the world, some say, and others claim that they are the shattered bodies of the gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07544))_
+- The place where the sun, stars, and moon reside is called the “Star Realm”. It is believed that the world of Forcelia floats within this Star Realm. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07545))_
 - The place where the sun, stars, and moon reside is called the “Star Realm”. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07545))_
 - It is believed that the world of Forcelia floats within this Star Realm. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07545))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Climate
 
-- In Forcelia, climate is inseparable from spirit power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07547))_
-- On the Alecrast continent, the north is generally cold due to its proximity to the Gate of Ice, while the south is said to be temperate due to its proximity to the Gate of Fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07547))_
-- The first season of the year is a strong winter dominated by Ice Spirit power, followed by spring when Water Spirit power strengthens, bringing continuous rain. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
-- The year is roughly divided into four seasons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
+- In Forcelia, climate is inseparable from spirit power. On the Alecrast continent, the north is generally cold due to its proximity to the Gate of Ice, while the south is said to be temperate due to its proximity to the Gate of Fire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07547))_
+- The year is roughly divided into four seasons. The first season of the year is a strong winter dominated by Ice Spirit power, followed by spring when Water Spirit power strengthens, bringing continuous rain. Then comes a hot summer when fire spiritual powers flourishes, followed by autumn with its strong, howling winds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
+- However, there are regions that remain locked in snow and ice yearround, and conversely, places where hot days continue endlessly. All of these phenomena are explained by spirit power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 - Then comes a hot summer when fire spiritual powers flourishes, followed by autumn with its strong, howling winds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
-- Then comes a hot summer when fire spiritual powers flourishes, followed by autumn with its strong, howling winds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07548))_
-- However, there are regions that remain locked in snow and ice yearround, and conversely, places where hot days continue endlessly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
-- All of these phenomena are explained by spirit power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07549))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Calendar and Time
 
 - The concept of time in Forcelia is explained as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07551))_
-- As a result, of the four gates that were supposed to completely seal the world, the western gate - the Gate of Water - remained open. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
-- However, before the world's completion, the gods fought among themselves and lost their physical forms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
-- Initially, the gods intended to make the world eternal. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
-- For this purpose, time was unnecessary. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
-- However, before the world's completion, the gods fought among themselves and lost their physical forms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
-- In other words, Forcelia has become an enormous water clock. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
-- It is said that seawater and the world's constituent elements continue to flow out from the still-open Water Gate. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
-- This is what gives birth to time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
+- Initially, the gods intended to make the world eternal. For this purpose, time was unnecessary. However, before the world's completion, the gods fought among themselves and lost their physical forms. As a result, of the four gates that were supposed to completely seal the world, the western gate - the Gate of Water - remained open. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
+- It is said that seawater and the world's constituent elements continue to flow out from the still-open Water Gate. This is what gives birth to time. In other words, Forcelia has become an enormous water clock. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07553))_
 - There is a widespread and feared apocalyptic myth that, eventually, the entire world will flow through the Gate of Water and fall into the World of Nothingness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07554))_
-- A year is divided into 12 months, and each month has 30 days. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
-- To express a specific date, the common format is Year X of the New Kingdom Calendar, Month Y, and Day Z. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
-- The New Kingdom Calendar marks its first year from the fall of the ancient Kingdom of Kastuul, which occurred more than 500 years ago. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
-- The "present" in Alecrast is considered to be the year 520 of the New Kingdom Calendar. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
-- These time units are almost identical to those we use in real life (that is, on Earth). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07556))_
-- For shorter time units, 1 day is divided into 24 hours, and 1 hour into 60 minutes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07556))_
-- While seconds are used in game rules, in Alecrast, such short time units are rarely needed and therefore not used. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07556))_
+- The "present" in Alecrast is considered to be the year 520 of the New Kingdom Calendar. The New Kingdom Calendar marks its first year from the fall of the ancient Kingdom of Kastuul, which occurred more than 500 years ago. A year is divided into 12 months, and each month has 30 days. This period of 30 days also corresponds to one complete lunar cycle. To express a specific date, the common format is Year X of the New Kingdom Calendar, Month Y, and Day Z. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07555))_
+- For shorter time units, 1 day is divided into 24 hours, and 1 hour into 60 minutes. These time units are almost identical to those we use in real life (that is, on Earth). While seconds are used in game rules, in Alecrast, such short time units are rarely needed and therefore not used. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07556))_
+- However, before the world's completion, the gods fought among themselves and lost their physical forms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07552))_
 - While seconds are used in game rules, in Alecrast, such short time units are rarely needed and therefore not used. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07556))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Kingdoms
 
-- Forcelia consists of one continent called Alecrast and several large islands. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07560))_
-- Many of these countries are kingdoms ruled by hereditary monarchs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07560))_
-- The continent and islands are further divided into dozens of countries, each with its own system of governance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07560))_
-- There are also free cities without kings and nations governed by priests in the name of their deities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_
-- Each country has its own distinct character and form of government. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_
-- However, most nations' typical governance structure consists of a king at the top, with nobles and knights forming the ruling class and common citizens below them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07562))_
-- While some countries have a serf class below this, such cases are rather rare. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07562))_
+- Forcelia consists of one continent called Alecrast and several large islands. The continent and islands are further divided into dozens of countries, each with its own system of governance. Many of these countries are kingdoms ruled by hereditary monarchs. Naturally, they vary in size, from city-states controlling just one city to vast kingdoms ruling over more than ten cities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07560))_
+- There are also free cities without kings and nations governed by priests in the name of their deities. Each country has its own distinct character and form of government. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07561))_
+- However, most nations' typical governance structure consists of a king at the top, with nobles and knights forming the ruling class and common citizens below them. While some countries have a serf class below this, such cases are rather rare. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07562))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Kings
 
-- The king is an absolute ruler. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
-- All national policies are determined by the king, and as the head of judicial power, he also presides over trials. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
-- In a nation, defying the king is not permitted. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
-- This could also create opportunities for foreign invasion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
-- However, this is only on the surface - if a king were to govern poorly, movements to overthrow such a king would inevitably arise. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
-- Therefore, it is said that even kings have things they must protect and laws they must follow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
+- The king is an absolute ruler. All national policies are determined by the king, and as the head of judicial power, he also presides over trials. In a nation, defying the king is not permitted. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07564))_
+- However, this is only on the surface - if a king were to govern poorly, movements to overthrow such a king would inevitably arise. This could also create opportunities for foreign invasion. Therefore, it is said that even kings have things they must protect and laws they must follow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 - However, this is only on the surface - if a king were to govern poorly, movements to overthrow such a king would inevitably arise. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 - Therefore, it is said that even kings have things they must protect and laws they must follow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07565))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Nobles/Knights
 
-- While knights and nobles have servants under them, these servants do not have the same rights as ordinary citizens. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07567))_
-- Next, regarding nobles and knights - they are direct vassals of the king, with those who own their own land being called nobles, and those who don't being called knights. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07567))_
+- Next, regarding nobles and knights - they are direct vassals of the king, with those who own their own land being called nobles, and those who don't being called knights. While knights and nobles have servants under them, these servants do not have the same rights as ordinary citizens. In large nations, nobles take on various political roles to assist the king. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07567))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Citizens
 
-- Of course, since there are many other occupations as well, we collectively refer to all of them as citizens. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07569))_
-- During times of war, they may be conscripted into military service. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07569))_
+- Citizens work in various occupations including farmers, merchants, and craftsmen. Of course, since there are many other occupations as well, we collectively refer to all of them as citizens. In exchange for paying taxes, citizens receive protection from the king. During times of war, they may be conscripted into military service. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07569))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Slaves
 
-- They are unfortunate people who are denied even basic human rights. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07571))_
-- Slaves do not exist as a common class except in countries where the system is institutionalized. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07571))_
+- Slaves do not exist as a common class except in countries where the system is institutionalized. They are unfortunate people who are denied even basic human rights. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07571))_
 - Slaves do not exist as a common class except in countries where the system is institutionalized. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07571))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Intellectuals/Clergy/ Traveling Merchants
 
-- Somewhat separate from the four basic classes mentioned above are the clergy, such as priests and clergy, and intellectuals, like sorcerers and sages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07573))_
-- While they live freely, unrestricted by national boundaries, they must protect themselves on their own. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07573))_
+- Somewhat separate from the four basic classes mentioned above are the clergy, such as priests and clergy, and intellectuals, like sorcerers and sages. Additionally, travelers such as traveling merchants and performers occupy a unique position in this world. While they live freely, unrestricted by national boundaries, they must protect themselves on their own. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07573))_
 - Somewhat separate from the four basic classes mentioned above are the clergy, such as priests and clergy, and intellectuals, like sorcerers and sages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07573))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Adventurers
 
-- They primarily make their living by exploring the ruins of ancient kingdoms and discovering treasures. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07575))_
-- Since they can't always count on finding treasure-laden ruins, they tend to accept such requests for relatively modest compensation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07576))_
-- These people possess various abilities, including combat skills and a strong sense of independence, unbound by power structures or social constraints, and are often employed as problemsolvers for hire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07576))_
-- These people possess various abilities, including combat skills and a strong sense of independence, unbound by power structures or social constraints, and are often employed as problemsolvers for hire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07576))_
+- In "Sword World RPG", the spotlight falls on these people known as adventurers. They primarily make their living by exploring the ruins of ancient kingdoms and discovering treasures. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07575))_
+- These people possess various abilities, including combat skills and a strong sense of independence, unbound by power structures or social constraints, and are often employed as problemsolvers for hire. Since they can't always count on finding treasure-laden ruins, they tend to accept such requests for relatively modest compensation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07576))_
 - In some regions and localities, they may be viewed as criminals, and indeed, many of them (whether by choice or circumstance) are no strangers to illegal activities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07577))_
 - Of course, those who break the law will face appropriate punishment, and those who consistently cause trouble for their clients will eventually find themselves without work. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07578))_
-- At most, adventurers have a loose sense of camaraderie based on the principle of "helping each other in times of need," though even this can't be counted on too much. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
-- While breaking through checkpoints is considered a crime, it isn't punished too severely during peacetime. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
-- However, since conditions vary between countries, don't assume things will always work exactly this way. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
-- Travel between countries is relatively unrestricted, requiring only a passage tax. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
+- When misfortune befalls them, these adventurers have few other people they can rely on. At most, adventurers have a loose sense of camaraderie based on the principle of "helping each other in times of need," though even this can't be counted on too much. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
+- This summarizes the basic political and social structure of Sword World. Travel between countries is relatively unrestricted, requiring only a passage tax. While breaking through checkpoints is considered a crime, it isn't punished too severely during peacetime. However, since conditions vary between countries, don't assume things will always work exactly this way. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
+- These people possess various abilities, including combat skills and a strong sense of independence, unbound by power structures or social constraints, and are often employed as problemsolvers for hire. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07576))_
 - Travel between countries is relatively unrestricted, requiring only a passage tax. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Guilds
 
-- Without membership, one cannot learn trade-specific skills, nor are they permitted to conduct business using such skills. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
-- While guilds are typically national organizations, they may sometimes be recognized in neighboring countries. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
-- First, there are professional associations called "guilds," and anyone considered an artisan must belong to one. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
-- With the exception of some nations, guilds are sustained by the close relationship between masters and their apprentices. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07587))_
-- While the relationship between a master and their apprentices is very close, interaction between different masters is not particularly active due to fears of technical knowledge being leaked. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07587))_
+- First, there are professional associations called "guilds," and anyone considered an artisan must belong to one. Without membership, one cannot learn trade-specific skills, nor are they permitted to conduct business using such skills. While guilds are typically national organizations, they may sometimes be recognized in neighboring countries. Additionally, those who are guild members in one country may receive special privileges when joining guilds in other countries, such as only needing to pay a fee. Guilds exist for every type of artisan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
+- With the exception of some nations, guilds are sustained by the close relationship between masters and their apprentices. Each master takes on one or several apprentices to teach them their skills. While the relationship between a master and their apprentices is very close, interaction between different masters is not particularly active due to fears of technical knowledge being leaked. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07587))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Merchant's License
 
-- Without it, one cannot legally open a shop. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
-- Those who are approved receive a permit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
-- While merchants don't have a guild, to be recognized as a merchant and conduct business, they must register with the king. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
-- If someone conducts business in public without a license, they will be punished. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
+- While merchants don't have a guild, to be recognized as a merchant and conduct business, they must register with the king. Those who are approved receive a permit. This is the Merchant's License. Without it, one cannot legally open a shop. If someone conducts business in public without a license, they will be punished. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Thieves Guild/Sorcerers' Guild (Academy)
 
-- Though not official guilds, the Thieves Guild and Sorcerers' Guild (Academy) are essential organizations. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07592))_
-- Both are global organizations that regularly exchange information between headquarters and branches. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07592))_
-- In exchange, members receive substantial protection (though if you make a bad impression on the leadership, you might be quietly eliminated). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07593))_
-- The organization is tightly structured, with members having various obligations, including tribute payments, and once you join, it's extremely difficult to leave. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07593))_
-- The Thieves Guild's power is so vast that it's said to control the underworld of nations. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07593))_
-- While the advice is readily available, it might not be particularly reliable in times of crisis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07594))_
-- The Sorcerers' Guild, on the other hand, is less restrictive and operates more as a cooperative for mutual development. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07594))_
+- Though not official guilds, the Thieves Guild and Sorcerers' Guild (Academy) are essential organizations. Both are global organizations that regularly exchange information between headquarters and branches. Thieves, Sorcerers, and Sages belong to these groups. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07592))_
+- The Thieves Guild's power is so vast that it's said to control the underworld of nations. The organization is tightly structured, with members having various obligations, including tribute payments, and once you join, it's extremely difficult to leave. In exchange, members receive substantial protection (though if you make a bad impression on the leadership, you might be quietly eliminated). Think of it as similar to realworld criminal organizations. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07593))_
+- The Sorcerers' Guild, on the other hand, is less restrictive and operates more as a cooperative for mutual development. It's closest to an academic society. While the advice is readily available, it might not be particularly reliable in times of crisis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07594))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Religious Organizations
 
-- However, in many countries, these organizations seem to have little influence over secular authority. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07596))_
-- Nevertheless, in some theocratic states, religious organizations hold decisive power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07596))_
+- In Forcelia, a world where gods exist, religious organizations wield considerable power. However, in many countries, these organizations seem to have little influence over secular authority. Nevertheless, in some theocratic states, religious organizations hold decisive power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07596))_
 - Clergy members receive a certain degree of status protection, and if they have proof of their position, they can receive protection from organizations of the same faith. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07597))_
-- Due to the nature of their work, farmers typically don't travel, so having their status verified only within their own country shouldn't pose any problems. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
-- However, their social status is fundamentally the same as merchants and craftsmen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
-- Guild membership cards for craftsmen and merchant’s licenses hold significant value as proof of identity. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
-- These are the influential organizations in Sword World. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
-- Farmers are directly governed by their lords, so they have no organizations. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
-- Having these makes it relatively easy to receive status verification not only in one's own country but in other nations as well. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
+- These are the influential organizations in Sword World. Guild membership cards for craftsmen and merchant’s licenses hold significant value as proof of identity. Having these makes it relatively easy to receive status verification not only in one's own country but in other nations as well. Farmers are directly governed by their lords, so they have no organizations. However, their social status is fundamentally the same as merchants and craftsmen. Due to the nature of their work, farmers typically don't travel, so having their status verified only within their own country shouldn't pose any problems. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
 - Due to the nature of their work, farmers typically don't travel, so having their status verified only within their own country shouldn't pose any problems. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
 - Having these makes it relatively easy to receive status verification not only in one's own country but in other nations as well. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07598))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Geography
 
-- These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
-- These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
-- Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
-- Mudeel has a forest called the "Goblin Woods." It is a mystical realm inhabited by many youma and magical beasts, where humans rarely venture. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07602))_
-- Milargo is known as the "Kingdom of Meadows." It has a population of about 1 million, with its capital city being Grad. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
-- Important state affairs are decided by a tribal council where tribal chiefs gather. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
-- This kingdom is a confederation of dozens of nomadic tribes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
-- It is described as the very picture of freedom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07605))_
-- **==> picture [552 x 441] intentionally omitted <==** royal authority. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07605))_
-- Besides humans, there are tribes of centaurs who hold similar status. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07606))_
-- It is also the homeland of many grassrunners. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07606))_
-- The eastern territory of Milargo consists of vast marshlands called the "Wetlands of Oblivion," where few dare to tread. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07607))_
-- It is said to house small groups of savages and large settlements of lizardmen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07607))_
-- Anoth, known as the "Holy Kingdom," is a strict nation that follows Pharis as its state religion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
+- Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. Its capital city shares the same name, Mudeel. Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
+- Mudeel has a forest called the "Goblin Woods." It is a mystical realm inhabited by many youma and magical beasts, where humans rarely venture. Within this Youma forest lies ruins known as the City of Mara Ajanis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07602))_
+- Milargo is known as the "Kingdom of Meadows." It has a population of about 1 million, with its capital city being Grad. This kingdom is a confederation of dozens of nomadic tribes. Important state affairs are decided by a tribal council where tribal chiefs gather. This tribal council also appoints the king and ministers. In Alecrast, it would be considered a country with notably weak _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07603))_
+- **==> picture [552 x 441] intentionally omitted <==** royal authority. It is described as the very picture of freedom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07605))_
+- Besides humans, there are tribes of centaurs who hold similar status. It is also the homeland of many grassrunners. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07606))_
+- The eastern territory of Milargo consists of vast marshlands called the "Wetlands of Oblivion," where few dare to tread. It is said to house small groups of savages and large settlements of lizardmen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07607))_
+- Anoth, known as the "Holy Kingdom," is a strict nation that follows Pharis as its state religion. Most of its citizens are followers of Pharis, and the Pharis temple in the royal capital of Farz is said to be the largest on the continent of Alecrast. The supreme ruler of Anoth is called the Pope, who serves both as king and holds the authority to appoint _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
+- Priests. Furthermore, this position of Pope (King) is not hereditary, but is passed down to successive High Priests of Pharis. During peacetime, much of the governance is entrusted to the nobles (ministers), but in times of crisis, power becomes completely focused in the Pope. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
+- The Knights of Anoth, known as the "Knights of Justice," are one of the most powerful knightly orders in Alecrast. Some knights leave this order to train in other countries to spread justice. These knights are known as crusaders. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
+- To the north of Anoth lies a ruin called the "Statues of Giant." It is a massive humanoid statue with its lower half buried in the ground, but even the visible upper body above ground measures several meters in height. The true nature and purpose of this statue remain completely unknown. However, there is no doubt that it possesses some form of magical power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
+- Lodorille was once a poor country that barely survived on agriculture. However, when Queen June V, known as the "Iron Queen," ascended to the throne, the country underwent a rapid transformation, quickly becoming a military state with a powerful army while annexing neighboring countries. The population is 1.5 million, with 500,000 people concentrated in and around the royal capital of Chase. The kingdom is _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07613))_
 - The supreme ruler of Anoth is called the Pope, who serves both as king and holds the authority to appoint _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
-- Most of its citizens are followers of Pharis, and the Pharis temple in the royal capital of Farz is said to be the largest on the continent of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
-- The supreme ruler of Anoth is called the Pope, who serves both as king and holds the authority to appoint _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07608))_
-- During peacetime, much of the governance is entrusted to the nobles (ministers), but in times of crisis, power becomes completely focused in the Pope. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
-- Furthermore, this position of Pope (King) is not hereditary, but is passed down to successive High Priests of Pharis. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07609))_
-- The Knights of Anoth, known as the "Knights of Justice," are one of the most powerful knightly orders in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
-- These knights are known as crusaders. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07610))_
-- To the north of Anoth lies a ruin called the "Statues of Giant." It is a massive humanoid statue with its lower half buried in the ground, but even the visible upper body above ground measures several meters in height. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
-- The true nature and purpose of this statue remain completely unknown. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
-- However, there is no doubt that it possesses some form of magical power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07611))_
-- However, when Queen June V, known as the "Iron Queen," ascended to the throne, the country underwent a rapid transformation, quickly becoming a military state with a powerful army while annexing neighboring countries. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07613))_
-- Lodorille was once a poor country that barely survived on agriculture. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07613))_
-- The population is 1.5 million, with 500,000 people concentrated in and around the royal capital of Chase. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07613))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Oran
 
-- **(Language = Eastern/Mārdan)** Oran is the largest nation on the southern coast of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07624))_
-- It has a population of 2 million, with 100,000 concentrated in the royal capital of Oran. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07624))_
+- **(Language = Eastern/Mārdan)** Oran is the largest nation on the southern coast of the Alecrast continent. It has a population of 2 million, with 100,000 concentrated in the royal capital of Oran. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07624))_
+- Oran is an extremely prosperous nation, and its royal capital Oran is an advanced city with streets completely paved in stone and fully equipped with water and sewage systems. Research is actively conducted to enrich the nation, such as improvements to newly invented sailboats and development of agricultural tools. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07625))_
+- What brings the greatest prestige to Oran is its Sorcerers' Guild. Oran's Sorcerers' Guild was the first to be established in Alecrast and serves as the central hub connecting Sorcerers' Guilds across different regions. The position of Grand Master is held by Mana Rai, renowned as a Great Scholar. It was Mana Rai who established ancient magic as power derived from the magical element "mana," completed the currently accepted theory of magic, and developed common language magic that is activated through the common tongue. It is said that in present-day Alecrast, there exists no Sorcerer or Sage who rivals him, and perhaps none will ever appear. In northern Oran, there are ruins known as the "Fallen City." These ruins were created when Rex, one of the largest aerial cities of the ancient kingdom, fell from the sky. Although various adventurers continue to explore these ruins to this day, treasures from the ancient kingdom era still lie deep within. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
 - Research is actively conducted to enrich the nation, such as improvements to newly invented sailboats and development of agricultural tools. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07625))_
-- Oran is an extremely prosperous nation, and its royal capital Oran is an advanced city with streets completely paved in stone and fully equipped with water and sewage systems. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07625))_
-- Research is actively conducted to enrich the nation, such as improvements to newly invented sailboats and development of agricultural tools. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07625))_
-- It is said that in present-day Alecrast, there exists no Sorcerer or Sage who rivals him, and perhaps none will ever appear. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
-- Oran's Sorcerers' Guild was the first to be established in Alecrast and serves as the central hub connecting Sorcerers' Guilds across different regions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
-- What brings the greatest prestige to Oran is its Sorcerers' Guild. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
-- In northern Oran, there are ruins known as the "Fallen City." These ruins were created when Rex, one of the largest aerial cities of the ancient kingdom, fell from the sky. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
-- It was Mana Rai who established ancient magic as power derived from the magical element "mana," completed the currently accepted theory of magic, and developed common language magic that is activated through the common tongue. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
-- The position of Grand Master is held by Mana Rai, renowned as a Great Scholar. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07626))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Central Region (Language = Mārdan/Eremire Gundar/Saine)
 
-- The languages in this region are divided between East and West. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_
-- This has led to the sharing and development of technology, resulting in the production of consistently high-quality goods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07630))_
-- Eremire is known as the "Kingdom of Craftsmen." With a population of less than one million, craftsmen in this region have formed large guilds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07630))_
-- Nevertheless, the country is preparing for war. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
-- Having just experienced civil unrest, its national power is somewhat weakened. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
-- It is an agricultural nation focused on farming, livestock, and forestry. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
-- This is due to increased activity from their neighbor Lomar and deteriorating relations with Orphan after the nobles who led the civil war sought exile in the Kingdom of Orphan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
-- Saine, known as the "Kingdom of Lakesides," has a population of around 700,000. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
-- This is due to increased activity from their neighbor Lomar and deteriorating relations with Orphan after the nobles who led the civil war sought exile in the Kingdom of Orphan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
-- North of the Kingdom of Eremire lies the Khan Desert, known as the "Desert of Malice." Despite being a desert, the Khan Desert is home to creatures adapted to the dry climate and nomadic peoples. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07632))_
-- They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
-- These assassins, skilled in spirit magic abilities, are greatly feared. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
-- They are known for their extreme secrecy and rarely reveal their true nature or beliefs (they appear to worship their own deities). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
-- They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
-- To its east lies the northeastern region, while to the west is what's called the Northern Central Region. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07635))_
-- **Northern Central Region (Language = Western/Gundar)** In the central part of the northern Alecrast continent, there is a massive "Desert of Empty". _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07635))_
+- West of Oran, along the southern coast of the Alecrast continent, there exist two city-states: Eremire and Saine. The languages in this region are divided between East and West. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07629))_
+- Eremire is known as the "Kingdom of Craftsmen." With a population of less than one million, craftsmen in this region have formed large guilds. This has led to the sharing and development of technology, resulting in the production of consistently high-quality goods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07630))_
+- Saine, known as the "Kingdom of Lakesides," has a population of around 700,000. It is an agricultural nation focused on farming, livestock, and forestry. Having just experienced civil unrest, its national power is somewhat weakened. Nevertheless, the country is preparing for war. This is due to increased activity from their neighbor Lomar and deteriorating relations with Orphan after the nobles who led the civil war sought exile in the Kingdom of Orphan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
+- North of the Kingdom of Eremire lies the Khan Desert, known as the "Desert of Malice." Despite being a desert, the Khan Desert is home to creatures adapted to the dry climate and nomadic peoples. These nomads travel in groups of about 10 people as merchants and traveling performers throughout the continent, but they never adapt to other countries' customs and steadfastly maintain their own way of life. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07632))_
+- They are known for their extreme secrecy and rarely reveal their true nature or beliefs (they appear to worship their own deities). They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. These assassins, skilled in spirit magic abilities, are greatly feared. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
+- **Northern Central Region (Language = Western/Gundar)** In the central part of the northern Alecrast continent, there is a massive "Desert of Empty". To its east lies the northeastern region, while to the west is what's called the Northern Central Region. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07635))_
 - The Northern Central Region contains two major nations: Orphan and Ramliearth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07636))_
-- Orphan was founded by Rijal, a hero known as the "Dragon Slayer" and acclaimed as the strongest swordsman in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
-- Thus, Orphan is known as the "Kingdom of Heroes." The capital of Orphan remains in the city of Phan, continuing from its predecessor, the Kingdom of Phan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
+- Orphan was founded by Rijal, a hero known as the "Dragon Slayer" and acclaimed as the strongest swordsman in Alecrast. After defeating Krish, the evil dragon that destroyed the Kingdom of Phan, he proved his worth through battles during the civil war in the Kingdom of Phan, won the love of former Phan Queen Melete, and eventually established a new kingdom. Thus, Orphan is known as the "Kingdom of Heroes." The capital of Orphan remains in the city of Phan, continuing from its predecessor, the Kingdom of Phan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
+- Though Orphan started as a small nation, it has continuously expanded its territory and has now become a major power with a population of 1.5 million. Orphan's aristocratic system is unique, recognizing only knights who serve the king. This is unusual in Alecrast, where feudalism predominates and local nobles typically hold strong autonomous rights. This system can only exist because Rijal is both a warrior and a hero. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
+- This country has a mining city called Goudon. The city of Goudon is known for its large dwarf population. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07639))_
+- Orphan faces various external threats. It has serious historical tensions with Phandria, another fragment of the former Phan Kingdom. Additionally, it has earned the enmity of the Kingdom of Saine because Rijal gave protection to the nobles who had led the civil war. While Orphan maintains a close alliance with its neighbor Ramliearth, this very alliance has sparked rumors of an impending large-scale war involving multiple countries in the central region. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07640))_
+- Among the existing kingdoms in Alecrast, Ramliearth, the "Magical Kingdom," has the oldest history. This great nation, with a population of nearly 1.5 million, is called the magical kingdom not only because of its numerous Sorcerers but also due to the fact that all successive kings have been practitioners of magic. Furthermore, its unique character is partly due to the architectural influence of the ancient kingdom period, beginning with the royal capital of Lynas. The royal family of this country possesses the Van Blade, said to be the most powerful magic sword in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
+- To the east of Ramliearth lies a vast desert called the "Desert of Empty." While normal deserts are created when the spirit powers of wind and fire among the earth, water, fire, and wind spirit powers that constitute the world become too strong, the Desert of Empty is different. In this desert, no spirit power works at all! This is believed to be strongly connected to the disintegration of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07642))_
+- Ramliearth has a forest called the "Unicorn Forest." True to its name, it is known to be home to many unicorns. Ramliearth protects these mythical beasts as a national priority and has organized and dispatched woods guardian teams. Additionally, this forest contains a village of nature worshippers called druids, who show no mercy to poachers. The druids are extremely powerful Shamans. In particular, their leader Lauras is said to be unmatched in all of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
+- This is due to increased activity from their neighbor Lomar and deteriorating relations with Orphan after the nobles who led the civil war sought exile in the Kingdom of Orphan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07631))_
+- They have been known to send assassins after those who try to forcefully uncover their secrets or who accidentally witness important rituals. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07633))_
 - After defeating Krish, the evil dragon that destroyed the Kingdom of Phan, he proved his worth through battles during the civil war in the Kingdom of Phan, won the love of former Phan Queen Melete, and eventually established a new kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
-- After defeating Krish, the evil dragon that destroyed the Kingdom of Phan, he proved his worth through battles during the civil war in the Kingdom of Phan, won the love of former Phan Queen Melete, and eventually established a new kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
 - Thus, Orphan is known as the "Kingdom of Heroes." The capital of Orphan remains in the city of Phan, continuing from its predecessor, the Kingdom of Phan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07637))_
-- Though Orphan started as a small nation, it has continuously expanded its territory and has now become a major power with a population of 1.5 million. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
-- This is unusual in Alecrast, where feudalism predominates and local nobles typically hold strong autonomous rights. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
-- This system can only exist because Rijal is both a warrior and a hero. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
-- Orphan's aristocratic system is unique, recognizing only knights who serve the king. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
 - Orphan's aristocratic system is unique, recognizing only knights who serve the king. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
 - This system can only exist because Rijal is both a warrior and a hero. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07638))_
-- This country has a mining city called Goudon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07639))_
-- The city of Goudon is known for its large dwarf population. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07639))_
-- It has serious historical tensions with Phandria, another fragment of the former Phan Kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07640))_
-- While Orphan maintains a close alliance with its neighbor Ramliearth, this very alliance has sparked rumors of an impending large-scale war involving multiple countries in the central region. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07640))_
 - Additionally, it has earned the enmity of the Kingdom of Saine because Rijal gave protection to the nobles who had led the civil war. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07640))_
-- Additionally, it has earned the enmity of the Kingdom of Saine because Rijal gave protection to the nobles who had led the civil war. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07640))_
-- The royal family of this country possesses the Van Blade, said to be the most powerful magic sword in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
-- Among the existing kingdoms in Alecrast, Ramliearth, the "Magical Kingdom," has the oldest history. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
-- Furthermore, its unique character is partly due to the architectural influence of the ancient kingdom period, beginning with the royal capital of Lynas. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
 - This great nation, with a population of nearly 1.5 million, is called the magical kingdom not only because of its numerous Sorcerers but also due to the fact that all successive kings have been practitioners of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
-- This great nation, with a population of nearly 1.5 million, is called the magical kingdom not only because of its numerous Sorcerers but also due to the fact that all successive kings have been practitioners of magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07641))_
-- To the east of Ramliearth lies a vast desert called the "Desert of Empty." While normal deserts are created when the spirit powers of wind and fire among the earth, water, fire, and wind spirit powers that constitute the world become too strong, the Desert of Empty is different. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07642))_
-- This is believed to be strongly connected to the disintegration of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07642))_
-- Additionally, this forest contains a village of nature worshippers called druids, who show no mercy to poachers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
-- The druids are extremely powerful Shamans. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
-- Ramliearth has a forest called the "Unicorn Forest." True to its name, it is known to be home to many unicorns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
-- In particular, their leader Lauras is said to be unmatched in all of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
-- Ramliearth protects these mythical beasts as a national priority and has organized and dispatched woods guardian teams. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07643))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Southern Central Region (Language = Western/Gundar)
 
-- There are two powerful nations: Phandria and Lomar. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
-- They emerged after the Phan Kingdom was destroyed by the evil dragon Krish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
-- The southern coastal area is the Southern Central Region. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
-- Phandria, with a population exceeding 1.2 million people south of Orphan, is known as the "Kingdom of Chaos." Both Orphan and Phandria originated from the great nation of Phan. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
-- They emerged after the Phan Kingdom was destroyed by the evil dragon Krish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
-- Phandria is supported by various organizations. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07646))_
-- Both countries desire to reunify the former Phan Kingdom, which has led to serious conflicts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07646))_
-- While Phandria's king is Tilar II, he is merely a puppet. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07646))_
-- Among them are the Thieves Guild, the Assassins' League, and cults of the Dark Gods. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07646))_
-- In the capital city of Phandria, there is the only state-recognized temple of Phalaris in all of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07647))_
+- The southern coastal area is the Southern Central Region. There are two powerful nations: Phandria and Lomar. Phandria, with a population exceeding 1.2 million people south of Orphan, is known as the "Kingdom of Chaos." Both Orphan and Phandria originated from the great nation of Phan. They emerged after the Phan Kingdom was destroyed by the evil dragon Krish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
+- Both countries desire to reunify the former Phan Kingdom, which has led to serious conflicts. While Phandria's king is Tilar II, he is merely a puppet. Phandria is supported by various organizations. Among them are the Thieves Guild, the Assassins' League, and cults of the Dark Gods. It is because of these evil organizations' support that Phandria is called the "Kingdom of Chaos." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07646))_
 - In the capital city of Phandria, there is the only state-recognized temple of Phalaris in all of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07647))_
 - Lomar is known as the "Kingdom of Travelers." This is because its capital city Lomar is located along the "Road of Free People" that connects east and west Alecrast, and serves as a crucial transportation hub at the starting point of roads leading to the two great nations of the Northern Central Region: Orphan and Ramliearth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07648))_
-- Lomar is known as the "Kingdom of Travelers." This is because its capital city Lomar is located along the "Road of Free People" that connects east and west Alecrast, and serves as a crucial transportation hub at the starting point of roads leading to the two great nations of the Northern Central Region: Orphan and Ramliearth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07648))_
-- When the neighboring country of Raid once invaded, Lomar's military might not only repelled them but also annexed Reide. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
-- Lomar is also a powerful military nation that has assembled mercenary forces with its vast wealth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
-- With this territorial expansion, Lomar's population has reached 1.2 million. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
-- When the neighboring country of Raid once invaded, Lomar's military might not only repelled them but also annexed Reide. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
-- This black market is controlled by the Thieves Guild and other secret societies. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- These include poisons and concealed weapons for assassination. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- Sometimes, one might even spot items that should only be available through underground channels, such as unicorn horns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- The south is the downtown area where citizens live. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- This downtown area is considered the true face of Lomar. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- In Lomar's downtown, there is a massive marketplace. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- Known as "Lomar's Black Market," one can acquire various goods there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- The city of Lomar is distinctly divided into northern and southern regions by the "Road of Free People." The north is a peaceful and glamorous district lined with noble mansions and merchant houses. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- Sometimes, one might even spot items that should only be available through underground channels, such as unicorn horns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
-- Lomar has the largest arena in Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07652))_
-- Prisoners of war and criminals become gladiator slaves and fight there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07652))_
-- Powerful nobles each have their own sponsored gladiators. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07652))_
-- The city of Reide within Lomar (formerly the capital of the Kingdom of Reide before its annexation by Lomar) is known as the "City of Mercenaries." This city has a mercenary guild that brokers deals between mercenaries and clients seeking their services. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07653))_
-- Additionally, magical weapons and armor are traded in this city. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07653))_
-- The city of Reide within Lomar (formerly the capital of the Kingdom of Reide before its annexation by Lomar) is known as the "City of Mercenaries." This city has a mercenary guild that brokers deals between mercenaries and clients seeking their services. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07653))_
-- Recently, Lomar has recruited Lukial, who is renowned as a military strategist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07654))_
-- With major conflicts between Orphan and Phandria, and between Orphan and Zain, many humans are worried that Lomar's action might be a sign that they are preparing to start a new war. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07654))_
+- Lomar is also a powerful military nation that has assembled mercenary forces with its vast wealth. When the neighboring country of Raid once invaded, Lomar's military might not only repelled them but also annexed Reide. With this territorial expansion, Lomar's population has reached 1.2 million. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
+- The city of Lomar is distinctly divided into northern and southern regions by the "Road of Free People." The north is a peaceful and glamorous district lined with noble mansions and merchant houses. The south is the downtown area where citizens live. This downtown area is considered the true face of Lomar. In Lomar's downtown, there is a massive marketplace. Known as "Lomar's Black Market," one can acquire various goods there. These include poisons and concealed weapons for assassination. Sometimes, one might even spot items that should only be available through underground channels, such as unicorn horns. This black market is controlled by the Thieves Guild and other secret societies. Moreover, the king _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
+- Lomar has the largest arena in Alecrast. Prisoners of war and criminals become gladiator slaves and fight there. Among the gladiators, some voluntarily became slaves for money. Powerful nobles each have their own sponsored gladiators. In Lomar, owning strong gladiators enhances a noble's reputation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07652))_
+- The city of Reide within Lomar (formerly the capital of the Kingdom of Reide before its annexation by Lomar) is known as the "City of Mercenaries." This city has a mercenary guild that brokers deals between mercenaries and clients seeking their services. Additionally, magical weapons and armor are traded in this city. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07653))_
+- Recently, Lomar has recruited Lukial, who is renowned as a military strategist. With major conflicts between Orphan and Phandria, and between Orphan and Zain, many humans are worried that Lomar's action might be a sign that they are preparing to start a new war. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07654))_
 - For detailed information about the Far East region to the Central Plains, please refer to the "Sword World RPG World Guide". _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07655))_
+- They emerged after the Phan Kingdom was destroyed by the evil dragon Krish. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07645))_
+- In the capital city of Phandria, there is the only state-recognized temple of Phalaris in all of Alecrast. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07647))_
+- Lomar is known as the "Kingdom of Travelers." This is because its capital city Lomar is located along the "Road of Free People" that connects east and west Alecrast, and serves as a crucial transportation hub at the starting point of roads leading to the two great nations of the Northern Central Region: Orphan and Ramliearth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07648))_
+- When the neighboring country of Raid once invaded, Lomar's military might not only repelled them but also annexed Reide. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07649))_
+- Sometimes, one might even spot items that should only be available through underground channels, such as unicorn horns. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07650))_
+- The city of Reide within Lomar (formerly the capital of the Kingdom of Reide before its annexation by Lomar) is known as the "City of Mercenaries." This city has a mercenary guild that brokers deals between mercenaries and clients seeking their services. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07653))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Western Countries
 
-- In response to this clever show of force, the eastern powers mockingly bestowed upon them the unflattering name "Ten Children." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
-- **(Language: Western, except Palmer Village which uses Eastern)** To the west of the Alecrast continent, there are many small city-states. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
-- Therefore, they established a treaty called the "Tidel Alliance." This agreement states that if the eastern powers were to invade, all ten cities would unite in response. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
-- These small nations alone cannot stand against the great powers of the east. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
-- **(Language: Western, except Palmer Village which uses Eastern)** To the west of the Alecrast continent, there are many small city-states. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
-- Therefore, they established a treaty called the "Tidel Alliance." This agreement states that if the eastern powers were to invade, all ten cities would unite in response. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
+- **(Language: Western, except Palmer Village which uses Eastern)** To the west of the Alecrast continent, there are many small city-states. These small nations alone cannot stand against the great powers of the east. Therefore, they established a treaty called the "Tidel Alliance." This agreement states that if the eastern powers were to invade, all ten cities would unite in response. In response to this clever show of force, the eastern powers mockingly bestowed upon them the unflattering name "Ten Children." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
 - The western nations consist of Promisie, Tidel, Tarlant, Raban, Belldine, Gulgerise, Goba, Referl, Drecknoll, and Zarn. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07658))_
-- This village was established as a settlement by the workers who completed the "Road of Free People," and despite being at the western edge, it is known as a village of humans who speak the eastern languages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07659))_
-- Furthermore, to the west of the western nations, at the end of the "Road of Free People," there is a village called Palmer. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07659))_
-- Please refer to it for more details. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07660))_
-- For more information about the western nations, detailed settings can be found in the "Ten Children World Guide". _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07660))_
+- Furthermore, to the west of the western nations, at the end of the "Road of Free People," there is a village called Palmer. This village was established as a settlement by the workers who completed the "Road of Free People," and despite being at the western edge, it is known as a village of humans who speak the eastern languages. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07659))_
+- For more information about the western nations, detailed settings can be found in the "Ten Children World Guide". Please refer to it for more details. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07660))_
+- **(Language: Western, except Palmer Village which uses Eastern)** To the west of the Alecrast continent, there are many small city-states. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
+- Therefore, they established a treaty called the "Tidel Alliance." This agreement states that if the eastern powers were to invade, all ten cities would unite in response. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07657))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / (Language = Eastern/Mārdan)
 
-- Though once a single nation, it is now divided into three kingdoms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
-- The Islands of Azarn are an archipelago located in the southeastern part of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
-- The Islands of Azarn are an archipelago located in the southeastern part of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
+- The Islands of Azarn are an archipelago located in the southeastern part of the Alecrast continent. The total population is 800,000. Though once a single nation, it is now divided into three kingdoms. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
 - For detailed information about the Islands of Azarn, please refer to Sword World RPG Scenario Collection #4 "The Rainbow Crystal Palace". _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07664))_
+- The Islands of Azarn are an archipelago located in the southeastern part of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07663))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Island of Damned
 
-- The island suffered an invasion by daemons, which led to it being named "Accursed Island." There appears to be limited trade with the continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
-- **(Language = Native Language)** This is an island floating far south of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
-- Several nations exist in a state of turmoil, and wars appear to be ongoing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
-- The island suffered an invasion by daemons, which led to it being named "Accursed Island." There appears to be limited trade with the continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
+- **(Language = Native Language)** This is an island floating far south of the Alecrast continent. Several nations exist in a state of turmoil, and wars appear to be ongoing. The island suffered an invasion by daemons, which led to it being named "Accursed Island." There appears to be limited trade with the continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
 - For detailed information about the Accursed Island, please refer to the "Lodoss World Guide". _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07667))_
+- The island suffered an invasion by daemons, which led to it being named "Accursed Island." There appears to be limited trade with the continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07666))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Chaosland (Language = Native Language)
 
-- Very little information about this place has reached the continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07669))_
-- Chaosland's lore is currently being gradually revealed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07670))_
+- West of the Alecrast continent, beyond the Hadria Sea, lies the "Land of Chaos," Chaosland. Very little information about this place has reached the continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07669))_
+- Chaosland's lore is currently being gradually revealed. Please refer to the Fujimi Fantasia Bunko's Sword World _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07670))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / (Languages = ?)
 
-- Little is known about this mysterious isle. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07674))_
-- The Island at the Edge of the East, Eastend, is an island lying east of the Alecrast continent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07674))_
+- The Island at the Edge of the East, Eastend, is an island lying east of the Alecrast continent. Little is known about this mysterious isle. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07674))_
 - While no official setting details have been announced for this region yet, they are planned to be revealed in the future. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07675))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Farland
 
-- **(Languages = ?)** The Unreachable Land - no one knows what kind of place Farland is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07677))_
-- One of the joys of roleplaying games is that game masters and their gaming companions can create their own world from scratch through gameplay. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07678))_
-- Farland was created to address this dilemma. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07679))_
-- This will never conflict with official announcements. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07679))_
-- Farland is a region for which we, the creators, will never release official settings. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07679))_
+- **(Languages = ?)** The Unreachable Land - no one knows what kind of place Farland is. This is because Farland is a place that is "never to be defined in lore." _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07677))_
+- One of the joys of roleplaying games is that game masters and their gaming companions can create their own world from scratch through gameplay. "Sword World RPG" has a common background world called the Alecrast continent, which prevents it from offering this enjoyment. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07678))_
+- Farland was created to address this dilemma. Farland is a region for which we, the creators, will never release official settings. Therefore, you can create your own world however you like. This will never conflict with official announcements. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07679))_
 - Of course, even for the Alecrast continent, you may ignore some or all of our official announcements. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07680))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Currency
 
-- The main currency of the Alecrast continent is a silver coin called the "gamel." This silver coin was invented by Count Gamel, who was a minister of the now-extinct Moraana Kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07683))_
-- In the past, commerce relied on bartering or using precious metals like gold and silver, which were measured by weight, as intermediaries. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07683))_
-- However, this method made it difficult for commerce to develop, and fraud using cheaper metals that resembled gold and silver was common. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07683))_
+- The main currency of the Alecrast continent is a silver coin called the "gamel." This silver coin was invented by Count Gamel, who was a minister of the now-extinct Moraana Kingdom. In the past, commerce relied on bartering or using precious metals like gold and silver, which were measured by weight, as intermediaries. However, this method made it difficult for commerce to develop, and fraud using cheaper metals that resembled gold and silver was common. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07683))_
 - Count Gamel's currency, through the invention of silver coins, brought about a simpler method of trade using a "number of silver coins." Furthermore, the intricate engravings required on the silver coins made them difficult to replicate, reducing the possibility of counterfeit currency appearing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07684))_
-- Following the Count's proposal, the purity and size of the silver coins have been standardized. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07686))_
-- While production may occur in other countries, it is customary in all nations to include Count Gamel's relief on the silver coins. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07686))_
-- One gold coin is worth 50 silver coins, or 50 gamels. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07687))_
-- Its weight is almost the same as a silver coin. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07687))_
+- The coinage guild in Eremire primarily produces silver coins. While production may occur in other countries, it is customary in all nations to include Count Gamel's relief on the silver coins. Following the Count's proposal, the purity and size of the silver coins have been standardized. One silver coin weighs approximately 4 grams. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07686))_
+- In addition to these, gold coins also circulate in Alecrast. One gold coin is worth 50 silver coins, or 50 gamels. Its weight is almost the same as a silver coin. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07687))_
 
 ### Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-- In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
-- 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
-- In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+- On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 - Note) On the table, _expansion rate_ is the multiplier for mental power consumed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
-- For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
-- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+- When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
 - For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
+- **This is a free, unofficial, fan-based translation. Please support original creators by buying Sword World books and supplements.** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07797))_
+- In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 - For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
-- **This is a free, unofficial, fan-based translation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07797))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Paper ]
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07424))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07429))_
+
+> Special = If you cast " _Fire Weapon_ " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals. Also, if exposed to fire, it’ll ignite immediately, and its defense points will automatically decrease by 1 point every round. When its defense points reach 0, its destruction points begin to decrease, and on the next round when destruction points reach 1, the paper object will burn out.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07424, source-range-870a16bc-07425, source-range-870a16bc-07426, source-range-870a16bc-07427, source-range-870a16bc-07428))_
 
 > Defense points = 0~3
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07425))_
-
 > Destruction points = 1~10
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07426))_
 
 > Complete immunity = Poison Gas-Type magic No Criticals = Bow, crossbow, cold-type magic
 
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07427))_
-
 > Normal = Swords, spears, axes, maces, flails, slings, rocks, war hammers, barehanded, stone-type, wind cuttertype, blade-type magic
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07428))_
 
 > Ignore Defense Points = Fire-type, electrictype, explosion-type, pure energy-type magic
 
-### Technical atom 6
+### Technical frame 2: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Paper ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07429))_
 
 > Special = If you cast " _Fire Weapon_ " magic, strike power will become +20, and even weapons that cannot cause criticals will now be able to cause criticals.
 
-### Technical atom 7
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07431))_
-
-> Indicates the strength of the material. There is a range, but the game master should decide on a specific score taking into consideration the thickness.
+### Technical frame 3: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Destruction Points
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07434))_
 
 > As expected, it indicates the strength of the material, and the game master must determine a specific score depending on the thickness.
 
-### Technical atom 8
+### Technical frame 4: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07440))_
 
 > **Table 18-2 Types of Mag**
 
-### Technical atom 9
+### Technical frame 5: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 
@@ -625,7 +431,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 6: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 
@@ -635,75 +441,67 @@ From [[sword-world-rpg-complete-edition]].
 
 > If it says **complete immunity** , it can _never_ be destroyed by that weapon or magic.
 
-### Technical atom 11
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
-
-> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ .
-
-### Technical atom 12
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07445))_
-
-> If it says **ignores defense points** , the defense points are _not_ taken into consideration, and if the damage _exceeds_ the destruction points, it’ll be _destroyed in one blow_ .
-
-### Technical atom 13
+### Technical frame 7: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
 
 > Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
 
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ .
+
+### Technical frame 8: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+
+> Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07445))_
+
+> If it says **ignores defense points** , the defense points are _not_ taken into consideration, and if the damage _exceeds_ the destruction points, it’ll be _destroyed in one blow_ .
+
+### Technical frame 9: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07448))_
+
+> _Crack_ is classified as earthquaketype, but given the way the magic is applied, it’s unlikely that it’ll be effective. Also, most walls don't move, so _Blade Net_ won't deal any damage.
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07447))_
 
 > Beyond this, game masters should also use common sense.
 
-### Technical atom 14
+### Technical frame 10: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Special
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07450))_
+
+> Special notes are given in cases where special treatment is applied for that mate.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07451))_
 
 > When making a hole large enough for a person to fit through, at most two people can work together.
 
-### Technical atom 15
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07455))_
-
-> Defense points = 1-7
-
-### Technical atom 16
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07456))_
-
-> Destruction Points = 5-15
-
-### Technical atom 17
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07457))_
-
-> Complete Immunity = Poison Gas-Type magic
-
-### Technical atom 18
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07458))_
-
-> No Criticals = Swords, spears, bows, crossbows, barehanded, cold-type magic
-
-### Technical atom 19
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07459))_
-
-> Normal = Axes, maces, flails, slings, rocks, war hammers, stone-type, wind cuttertype, blade-type magic
-
-### Technical atom 20
+### Technical frame 11: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Wood ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07462))_
 
 > When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07460))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07455, source-range-870a16bc-07456, source-range-870a16bc-07457, source-range-870a16bc-07458, source-range-870a16bc-07459, source-range-870a16bc-07460))_
+
+> Defense points = 1-7
+
+> Destruction Points = 5-15
+
+> Complete Immunity = Poison Gas-Type magic
+
+> No Criticals = Swords, spears, bows, crossbows, barehanded, cold-type magic
+
+> Normal = Axes, maces, flails, slings, rocks, war hammers, stone-type, wind cuttertype, blade-type magic
 
 > Ignores Defense Points = Fire-type, electrictype, earthquake-type, explosion-type, pure energy-type magic
 
-### Technical atom 21
+### Technical frame 12: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Wood ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07462))_
 
@@ -713,265 +511,165 @@ From [[sword-world-rpg-complete-edition]].
 
 > Special = If you cast _Fire Weapon_ magic, not only will strike power increase by +10, even weapons that cannot cause criticals will now be able to cause criticals (defense points are effective).
 
-### Technical atom 22
+### Technical frame 13: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Brick ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07462))_
-
-> When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07464))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07464, source-range-870a16bc-07465, source-range-870a16bc-07466, source-range-870a16bc-07467, source-range-870a16bc-07468, source-range-870a16bc-07469))_
 
 > Defense points = 3-30
 
-### Technical atom 23
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07462))_
-
-> When you use fire magic or a weapon with _Fire Weapon_ cast on it, it will ignite if a critical occurs, and will be destroyed as a result.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07465))_
-
 > Destruction points = 10-20
-
-### Technical atom 24
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07466))_
 
 > - Complete Immunity = Spears, clubs, staves, bows, crossbows, fire-type, cold-type, electric-type, wind cutter-type, poison gas-type magic
 
-### Technical atom 25
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07467))_
-
 > No Criticals = Swords, axes, slings, barehanded, blade-type magic
-
-### Technical atom 26
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07468))_
 
 > - Normal Damage = Maces, flails, rocks, war hammers, stone-type magic
 
-### Technical atom 27
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07469))_
-
 > - Ignores Defense Points = Earthquake-type, explosion-type, pure energy-type magic
 
-### Technical atom 28
+### Technical frame 14: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Stone ]
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07471))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07471, source-range-870a16bc-07472, source-range-870a16bc-07473, source-range-870a16bc-07474, source-range-870a16bc-07475, source-range-870a16bc-07476))_
 
 > Defense points = 3-30
-
-### Technical atom 29
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07472))_
 
 > Destruction points = 15-25
 
-### Technical atom 30
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07473))_
-
 > Complete Immunity = Swords, spears, clubs, staves, bows, crossbows, slings, firetype, cold-type, electric-type, wind cutter-type, poison gas-type magic
-
-### Technical atom 31
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07474))_
 
 > - No Criticals = Axes, maces, flails, rocks, barehanded, stone-type, blade-type magic
 
-### Technical atom 32
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07475))_
-
 > Normal = War hammers
-
-### Technical atom 33
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07476))_
 
 > Ignores Defense Points = Earthquake-type, explosion-type, pure energy-type magic
 
-### Technical atom 34
+### Technical frame 15: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Iron ]
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
+
+> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07478, source-range-870a16bc-07479, source-range-870a16bc-07480, source-range-870a16bc-07481, source-range-870a16bc-07482, source-range-870a16bc-07483))_
 
 > Defense points = 5-50
 
-### Technical atom 35
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07479))_
-
 > Destruction points = 20-30
-
-### Technical atom 36
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07480))_
 
 > Complete Immunity = Swords, axes, spears, clubs, staves, bows, crossbows, slings, rocks, barehanded, cold-type, electrictype, wind cutter-type, blade, poison gas-type magic
 
-### Technical atom 37
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07481))_
-
 > - No Criticals = Maces, flails, war hammers, stone-type, fire-type magic
-
-### Technical atom 38
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07482))_
 
 > Normal = Pure energy-Type, earthquaketype magic Ignores Defense Points = Explosion-type magic
 
-### Technical atom 39
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07483))_
-
 > Special = When destroyed with fire-type or pure energy-type magic, its temperature becomes extremely high immediately after destruction.
 
-### Technical atom 40
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Ice ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
-
-> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07486))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07486, source-range-870a16bc-07487, source-range-870a16bc-07488, source-range-870a16bc-07489, source-range-870a16bc-07490, source-range-870a16bc-07491, source-range-870a16bc-07492))_
 
 > Defense points = 3-30
-
-### Technical atom 41
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07484))_
-
-> If your character accidentally touches it, he or she will suffer severe burns. If you try this in a closed room, there's a great possibility your character will succumb to the heat before the wall is destroyed.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07487))_
 
 > Destruction points = 1-25
 
-### Technical atom 42
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07488))_
-
 > Complete Immunity = Bows, crossbows, slings, cold-type, poison gas-type magic
-
-### Technical atom 43
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07489))_
 
 > No Criticals = Swords, spears, clubs, staves, barehanded, electric-type, wind cuttertype, blade-type magic
 
-### Technical atom 44
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07490))_
-
 > Normal = Axes, rocks, maces, flails, war hammers, stone-type, earthquake-type magic
 
-### Technical atom 45
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07491))_
-
 > Ignores Defense Points = Fire-type, explosion-type, pure energy-type magic
-
-### Technical atom 46
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07492))_
 
 > Special = If destroyed with fire-type or pure energy-type magic, it’ll melt and turn into water.
 
-### Technical atom 47
+### Technical frame 17: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / [ Vegetation ]
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07494))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07494, source-range-870a16bc-07495, source-range-870a16bc-07496, source-range-870a16bc-07497, source-range-870a16bc-07498, source-range-870a16bc-07499, source-range-870a16bc-07500))_
 
 > Defense points = 3-30
 
-### Technical atom 48
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07495))_
-
 > Destruction points = 10-20
-
-### Technical atom 49
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07496))_
 
 > Complete Immunity = Bows, crossbows, slings, barehanded, stone-type, earthquake-type magic
 
-### Technical atom 50
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07497))_
-
 > No Criticals = Swords, spears, clubs, staves, cold-type, poison gas-type magic
-
-### Technical atom 51
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07498))_
 
 > Normal = Axes, rocks, maces, flails, war hammer, electric-type, wind cuttertype, blade-type magic
 
-### Technical atom 52
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07499))_
-
 > Ignores Defense Points = Fire-type, explosion-type, pure energy-type magic
-
-### Technical atom 53
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07500))_
 
 > Special = If attacked with fire-type magic or a weapon with _Fire Weapon_ cast on it, treat it the same as wood.
 
-### Technical atom 54
+### Technical frame 18: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Adventurers
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07580))_
+
+> This summarizes the basic political and social structure of Sword World. Travel between countries is relatively unrestricted, requiring only a passage tax. While breaking through checkpoints is considered a crime, it isn't punished too severely during peacetime. However, since conditions vary between countries, don't assume things will always work exactly this way.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07579))_
 
 > When misfortune befalls them, these adventurers have few other people they can rely on.
 
-### Technical atom 55
+### Technical frame 19: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Guilds
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07587))_
+
+> With the exception of some nations, guilds are sustained by the close relationship between masters and their apprentices. Each master takes on one or several apprentices to teach them their skills. While the relationship between a master and their apprentices is very close, interaction between different masters is not particularly active due to fears of technical knowledge being leaked.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07586))_
 
 > Additionally, those who are guild members in one country may receive special privileges when joining guilds in other countries, such as only needing to pay a fee.
 
-### Technical atom 56
+### Technical frame 20: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Merchant's License
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07589))_
+
+> While merchants don't have a guild, to be recognized as a merchant and conduct business, they must register with the king. Those who are approved receive a permit. This is the Merchant's License. Without it, one cannot legally open a shop. If someone conducts business in public without a license, they will be punished.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07590))_
 
 > Of course, a Merchant's License issued in one country isn't valid everywhere, but if you wish to trade in another country, having a license typically means you can bypass strict screening and simply pay a standard fee to proceed.
 
-### Technical atom 57
+### Technical frame 21: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Geography
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07601))_
+
+> Mudeel, known as the "Farthest Kingdom," has a population of about 1.2 million. Its capital city shares the same name, Mudeel. Along with agriculture and textile industry, this country actively engages in trade using distinctive galleys. These galleys, also known as armed merchant ships, boast strength that makes ordinary pirate ships pale in comparison. These armed merchant ships frequently visit and trade with countries along the southern coast of the Alecrast continent.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07600))_
 
 > **Far East Region (Language = Eastern/ Mārdan)** At the eastern end of the Alecrast continent lie three countries: Mudeel, Milargo, and Anoth.
 
-### Technical atom 58
+### Technical frame 22: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Geography
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07613))_
+
+> Lodorille was once a poor country that barely survived on agriculture. However, when Queen June V, known as the "Iron Queen," ascended to the throne, the country underwent a rapid transformation, quickly becoming a military state with a powerful army while annexing neighboring countries. The population is 1.5 million, with 500,000 people concentrated in and around the royal capital of Chase. The kingdom is
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07612))_
 
 > **Northeast Region (Language = Eastern/Mārdan)** In the northeastern part of the Alecrast continent, there are three countries: Lodorille, Baikal, and Plysis.
 
-### Technical atom 59
+### Technical frame 23: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07617))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07620))_
 
-> Baikal is the northernmost country in Alecrast. It is a nation formed by the union of several tribes, each creating their own small villages and towns. The total population is slightly over 1 million. Among the tribes, the maritime tribes scattered along the northern Azul Bay hold more power than the tribes of the southern plains. This is because the maritime tribes generate profit through trade and piracy using galley ships called free merchant vessels, wielding incomparable power to the plains
+> Plysis is the largest fortified city in Alecrast and has become a city-state in its own right. It has a population of 40,000. The economy is sustained by well-developed commerce, professional guilds, and trade with neighboring villages and towns.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07619))_
 
 > If you can gain favor with the powerful tribes, Baikal can become a hospitable country for travelers.
 
-### Technical atom 60
+### Technical frame 24: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Guide to Forcelia & Alecrast / Farland
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07677))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07680))_
 
-> **(Languages = ?)** The Unreachable Land - no one knows what kind of place Farland is. This is because Farland is a place that is "never to be defined in lore."
+> Of course, even for the Alecrast continent, you may ignore some or all of our official announcements.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07679))_
 
 > Therefore, you can create your own world however you like.
 
-### Technical atom 61
+### Technical frame 25: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -1024,7 +722,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 62
+### Technical frame 26: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 
@@ -1073,7 +771,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 63
+### Technical frame 27: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sage Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 
@@ -1106,7 +804,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 64
+### Technical frame 28: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Bard Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07708))_
 
@@ -1135,7 +833,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 65
+### Technical frame 29: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Merchant Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 
@@ -1158,7 +856,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 66
+### Technical frame 30: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Craftsman Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07712))_
 
@@ -1181,7 +879,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 67
+### Technical frame 31: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07714))_
 
@@ -1206,7 +904,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 68
+### Technical frame 32: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Hunter Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07718))_
 
@@ -1245,7 +943,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 69
+### Technical frame 33: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sailor Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07720))_
 
@@ -1276,7 +974,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 70
+### Technical frame 34: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -1303,19 +1005,23 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 71
+### Technical frame 35: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07725))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07725, source-range-870a16bc-07726))_
 
 > **Table 1-1: Ability Bonuses**
 
-### Technical atom 72
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07726))_
-
 > **Table 1-2: Skill Types**
 
-### Technical atom 73
+### Technical frame 36: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
@@ -1344,7 +1050,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 74
+### Technical frame 37: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -1354,7 +1060,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 1-3: Determining Sub-Ability Scores**
 
-### Technical atom 75
+### Technical frame 38: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -1391,7 +1097,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 76
+### Technical frame 39: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -1401,7 +1107,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 1-4: Average Ability Scores by Race**
 
-### Technical atom 77
+### Technical frame 40: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -1434,13 +1140,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 78
+### Technical frame 41: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07734))_
 
 > **Table 1-5: Backgrounds**
 
-### Technical atom 79
+### Technical frame 42: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07735))_
 
@@ -1479,13 +1193,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 80
+### Technical frame 43: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07736))_
 
 > **Table 1-6: Starting Experience by Race**
 
-### Technical atom 81
+### Technical frame 44: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
@@ -1512,13 +1234,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 82
+### Technical frame 45: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07738))_
 
 > **Table 1-7: Experience Points by Skill (at Character Creation)**
 
-### Technical atom 83
+### Technical frame 46: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
@@ -1541,13 +1267,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 84
+### Technical frame 47: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07741))_
 
 > **Table 1-8: Weapons-1**
 
-### Technical atom 85
+### Technical frame 48: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07742))_
 
@@ -1578,13 +1304,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 86
+### Technical frame 49: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07744))_
 
 > **Table 1-8: Weapons-2**
 
-### Technical atom 87
+### Technical frame 50: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07745))_
 
@@ -1623,13 +1349,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 88
+### Technical frame 51: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07747))_
 
 > **Table 1-9: Armor**
 
-### Technical atom 89
+### Technical frame 52: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07748))_
 
@@ -1652,13 +1378,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 90
+### Technical frame 53: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07749))_
 
 > **Table 1-10: Shields**
 
-### Technical atom 91
+### Technical frame 54: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
@@ -1679,13 +1405,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 92
+### Technical frame 55: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07756))_
 
 > **Table 1-11: Equipment**
 
-### Technical atom 93
+### Technical frame 56: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07757))_
 
@@ -1722,17 +1456,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 94
+### Technical frame 57: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07758))_
 
 > **Table 5-1: Area and Size Expansion**
 
-### Technical atom 95
+### Technical frame 58: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07759))_
 
@@ -1767,7 +1505,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 96
+### Technical frame 59: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -1777,7 +1515,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 9-1: Determining Target Scores or Difficulties**
 
-### Technical atom 97
+### Technical frame 60: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -1834,17 +1572,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 98
+### Technical frame 61: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
 
 > **Table 9-2: Success Roll Modifiers**
 
-### Technical atom 99
+### Technical frame 62: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
 
@@ -1867,21 +1609,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 100
+### Technical frame 63: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07768))_
 
 > **Table 10-1: Attack Power and Evasion Speed Modifiers**
 
-### Technical atom 101
+### Technical frame 64: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
 
@@ -1906,13 +1648,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 102
+### Technical frame 65: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
+
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07770))_
 
 > **Table 10-2: Surprise Attack Check**
 
-### Technical atom 103
+### Technical frame 66: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07771))_
 
@@ -1939,13 +1685,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 104
+### Technical frame 67: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07773))_
 
 > **Table 11-2: NPC Presence by Level**
 
-### Technical atom 105
+### Technical frame 68: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
@@ -1970,13 +1716,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 106
+### Technical frame 69: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07775))_
 
 > **Table 16-3 Optional Armor Table**
 
-### Technical atom 107
+### Technical frame 70: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
@@ -1997,13 +1743,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 108
+### Technical frame 71: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07777))_
 
 > **Table 16-4 Maximum Ranges Table**
 
-### Technical atom 109
+### Technical frame 72: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07778))_
 
@@ -2062,13 +1808,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 110
+### Technical frame 73: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07780))_
 
 > **Table 18-1: Age-Based Ability Score Modification Table**
 
-### Technical atom 111
+### Technical frame 74: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
@@ -2105,13 +1851,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 112
+### Technical frame 75: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07782))_
 
 > **Table 18-2 Types of Mag**
 
-### Technical atom 113
+### Technical frame 76: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
@@ -2146,13 +1892,13 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 114
+### Technical frame 77: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07785))_
 
 > **Table 4-1: Rating Table**
 
-### Technical atom 115
+### Technical frame 78: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
@@ -2193,7 +1939,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 116
+### Technical frame 79: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
@@ -2234,7 +1980,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 117
+### Technical frame 80: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07788))_
 

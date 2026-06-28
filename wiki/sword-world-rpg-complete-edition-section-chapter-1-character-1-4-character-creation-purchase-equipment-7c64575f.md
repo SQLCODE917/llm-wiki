@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / [ ⑮ Purchase Equipment]: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-purchase-equipment-7c64575f@bf0a710c125c19a9af5b1386ffc05488
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-purchase-equipment-7c64575f@08deb451fe420a08bd2f452f2daca747
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / [ ⑮ Purchase Equipment]
@@ -20,12 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00524))_
+- Use your money to purchase equipment. Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00524))_
 - Write down the items you purchased then rewrite your money, reducing by the amount of money you spent (Table 1-11: Equipment). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00524))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / [ ⑮ Purchase Equipment]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00524))_
 

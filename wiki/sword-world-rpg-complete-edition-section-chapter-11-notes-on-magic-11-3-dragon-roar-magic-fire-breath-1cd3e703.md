@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Breath ]: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-fire-breath-1cd3e703@c929d94036aaf321839ca3fecc7a68b0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-fire-breath-1cd3e703@8e786a2ab1416076631b058a50a82a49
 ---
 
 # Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Breath ]
@@ -22,35 +22,22 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The fire's strike power is 20, and the caster's magic power equals bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04049))_
-- The fire's area of effect is a semicircle with a 10 meter forward radius. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04049))_
+- The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and the caster's magic power equals bonus damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04049))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Breath ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04042))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04049))_
 
-> When casting this spell, the caster must specify one type of spirit that controls nature. The spirits that control nature are gnome, undine, salamander, sylph, frau, will-o-wisp, and shade. While this spell's effect lasts, the caster nullifies _all_ attacks from the specified spirit. In addition, spirit magic that uses the specified spirit as its source of power will be similarly nullified.
+> The caster breathes fire from their mouth like a dragon. The fire's area of effect is a semicircle with a 10 meter forward radius. The fire's strike power is 20, and the caster's magic power equals bonus damage.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04045))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04045, source-range-870a16bc-04046, source-range-870a16bc-04047, source-range-870a16bc-04048))_
 
 > Base Mental Power Cost=20
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04046))_
-
 > Distance=Caster
 
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04047))_
-
 > Area=Semicircle with a 10 meter forward radius
-
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04048))_
 
 > Duration=Instant Effect=Breathe fire from the mouth Type=Damage (Fire-type) Expansion=Final score, area, damage certainty Resist=Reduced effect

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage: 33 source-backed entries and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-3-projectile-bonus-damage-03fef2bc@199d31ba2ac0c127ec478a25f182367c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-3-projectile-bonus-damage-03fef2bc@f2540aa3cfcda0c4e1b8cd7cf486fdf5
 ---
 
 # Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage
@@ -25,8 +25,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- likely you are to deliver a powerful strike. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
-- Weapons classified as _swords_ , _axes_ , _spears_ , _bows_ , and _crossbows_ suffer +1 to this critical target against _metal armor_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
+- likely you are to deliver a powerful strike. Weapons classified as _swords_ , _axes_ , _spears_ , _bows_ , and _crossbows_ suffer +1 to this critical target against _metal armor_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07099))_
 - In other words, these sharp weapons are less likely to deliver a powerful strike due to the armor’s metal. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07100))_
 - In the basic rules, any weapon’s bonus damage equals _fighter (or thief, ranger) skill level + strength bonus_ , but for _projectiles_ , an adventurer’s strength is not fully utilized as-is. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07126))_
 
@@ -34,100 +33,100 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Number of Projectile Shots
 
-- on the ground and use them as bullets, it _must_ be every _other_ round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
-- However, if you leave it set for a long time, the string will lose its elasticity, and the quarrel will easily come off if you tip the crossbow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
-- A crossbow can _only_ shoot every _other_ round due to the time it takes to wind them up. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
+- A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
+- A crossbow can _only_ shoot every _other_ round due to the time it takes to wind them up. If you set a quarrel in advance, the _first_ shot will not take long. However, if you leave it set for a long time, the string will lose its elasticity, and the quarrel will easily come off if you tip the crossbow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
+- Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.). But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07105))_
+- A bow can be fired _every_ round. However, this is _only_ if you have arrows ready in your quiver. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07106))_
 - But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07105))_
-- But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07105))_
-- A bow can be fired _every_ round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07106))_
-- However, this is _only_ if you have arrows ready in your quiver. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07106))_
 
 ### Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Shield Modifiers
 
-- Heavy metal armor slows down your movement and makes it more difficult to dodge your opponent's attacks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
+- wearing that armor. Heavy metal armor slows down your movement and makes it more difficult to dodge your opponent's attacks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
 
 ### Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Defense Modifier
 
-- With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
-- However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
-- If you ready a shield, it’ll be easier to avoid your opponent's attacks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
+- If you ready a shield, it’ll be easier to avoid your opponent's attacks. With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
+- **Defense power modifier** is the **defense power bonus** you receive while wearing that armor. Metal armor generally has a higher defensive effect and grants a bonus to defense. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07116))_
 - Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
-- However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
-- Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
-- Metal armor generally has a higher defensive effect and grants a bonus to defense. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07116))_
-- **Defense power modifier** is the **defense power bonus** you receive while wearing that armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07116))_
 
 ### Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
 
-- If this field says _yes_ , the _opponent's_ critical target will be +1 when they attack you with a sword, spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
-- **Critical target variation** indicates that the armor _reduces_ the chance of being dealt a strong blow from some weapons while wearing it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
+- **Critical target variation** indicates that the armor _reduces_ the chance of being dealt a strong blow from some weapons while wearing it. If this field says _yes_ , the _opponent's_ critical target will be +1 when they attack you with a sword, spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
 - **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Number of Projectile Shots
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
+
+> A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07102))_
 
 > When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Number of Projectile Shots
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07102))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
 
-> When using the _weapon modifiers_ optional rule, there is a limit to the number of times a projectile can be fired.
+> A crossbow can _only_ shoot every _other_ round due to the time it takes to wind them up. If you set a quarrel in advance, the _first_ shot will not take long. However, if you leave it set for a long time, the string will lose its elasticity, and the quarrel will easily come off if you tip the crossbow.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
 
 > A sling can shoot every round if it fires its _own_ bullets.
 
-### Technical atom 3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
-
-> A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
-
-> If you set a quarrel in advance, the _first_ shot will not take long.
-
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07103))_
-
-> A sling can shoot every round if it fires its _own_ bullets. However, if you pick up pebbles, etc. on the ground and use them as bullets, it _must_ be every _other_ round.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07105))_
-
-> Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.).
-
-### Technical atom 5
+### Technical frame 3: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Number of Projectile Shots
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07105))_
 
 > Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.). But if _not_ , they’ll take _one_ round to prepare and can only be thrown every _other_ round.
 
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07104))_
+
+> If you set a quarrel in advance, the _first_ shot will not take long.
+
+### Technical frame 4: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Number of Projectile Shots
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07106))_
+
+> A bow can be fired _every_ round. However, this is _only_ if you have arrows ready in your quiver.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07105))_
+
+> Throwing weapons can be thrown _every_ round if they're kept ready in a place that's _easy to reach_ (such as on a belt, etc.).
+
+### Technical frame 5: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Armor Modifiers
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07108))_
 
 > " _Table 16-3 Armor Optional Rules_ " is a table of numerical armor modifications.
 
-### Technical atom 6
+### Technical frame 6: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Shield Modifiers
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07115))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07112))_
 
-> If you ready a shield, it’ll be easier to avoid your opponent's attacks. With this rule, if you ready a _large_ shield, your _evasion speed_ will be +2. However, if you do use a large shield, it’s inevitable that you’ll have to neglect your attacks. Therefore, when using a large shield, you will suffer a -1 penalty to your _attack power_ . However, large shields with a _magical power_ of +1 or greater do _not_ have this penalty.
+> wearing that armor. Heavy metal armor slows down your movement and makes it more difficult to dodge your opponent's attacks.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07113))_
 
 > With this optional rule, there are differences in the way small and large shields are handled ( _Table 16-2: Shield Optional Rules_ ).
 
-### Technical atom 7
+### Technical frame 7: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07119))_
 
 > **Table 16-2 Shield Optional Rules**
 
-### Technical atom 8
+### Technical frame 8: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -148,13 +147,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07122))_
 
 > **Table 16-3 Armor Optional Rules**
 
-### Technical atom 10
+### Technical frame 10: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 

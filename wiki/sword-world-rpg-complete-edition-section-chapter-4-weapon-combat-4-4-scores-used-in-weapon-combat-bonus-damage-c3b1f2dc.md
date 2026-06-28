@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-4-sc
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.4 Scores Used in Weapon Combat / 【 Bonus Damage 】: 10 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-4-scores-used-in-weapon-combat-bonus-damage-c3b1f2dc@be06341793a86364281d06b9b1914316
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-4-scores-used-in-weapon-combat-bonus-damage-c3b1f2dc@3c9216d988985596946dde5f25f62125
 ---
 
 # Chapter 4: Weapon Combat / 4.4 Scores Used in Weapon Combat / 【 Bonus Damage 】
@@ -22,25 +22,31 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A character with excellent evasion speed will be able to evade enemy attacks more easily. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00852))_
-- Characters with deep experience in combat can handle weapons effectively. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00853))_
-- In addition, characters with high strength can wield weapons more powerfully. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00853))_
+- A character with excellent evasion speed will be able to evade enemy attacks more easily. No matter how formidable the weapon, it's not _that_ scary if it doesn't hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00852))_
+- Characters with deep experience in combat can handle weapons effectively. In addition, characters with high strength can wield weapons more powerfully. These characters can deal more damage to their foes, even when **evasion speed** = fighter (thief) skill level + agility bonus _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00853))_
 - If fighter (or thief) skill level is _0_ , then evasion speed is **0** regardless of the character's agility bonus. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00854))_
+- A character holding a _shield_ receives a +1 bonus to evasion speed. The size of the shield (whether it is a small or large shield) is completely irrelevant unless you introduce the optional rule _16.2: Weapon and Armor Modifiers_ (see p. 262). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00855))_
+- A fighter (or thief) skill level of 0 does _not_ prevent you from receiving this shield bonus. Therefore, the evasion speed of such a character will be **1** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00856))_
 - If fighter (or thief) skill level is _0_ , then evasion speed is **0** regardless of the character's agility bonus. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00854))_
-- A character holding a _shield_ receives a +1 bonus to evasion speed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00855))_
-- A fighter (or thief) skill level of 0 does _not_ prevent you from receiving this shield bonus. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00856))_
-- Therefore, the evasion speed of such a character will be **1** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00856))_
 - Therefore, the evasion speed of such a character will be **1** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00856))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 4: Weapon Combat / 4.4 Scores Used in Weapon Combat / 【 Bonus Damage 】
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00854))_
+
+> If fighter (or thief) skill level is _0_ , then evasion speed is **0** regardless of the character's agility bonus.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00853))_
 
 > These characters can deal more damage to their foes, even when **evasion speed** = fighter (thief) skill level + agility bonus
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -61,7 +67,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 

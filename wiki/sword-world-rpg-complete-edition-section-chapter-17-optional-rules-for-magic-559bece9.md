@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-17-optional-rules-for-
 page_kind: source
 summary: Chapter 17: Optional Rules for Magic: 18 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-optional-rules-for-magic-559bece9@b92132de35ea5b9cacb44d363cb9cef0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-17-optional-rules-for-magic-559bece9@82e2cc5f772cb63873ac21e586a48c4c
 ---
 
 # Chapter 17: Optional Rules for Magic
@@ -23,40 +23,30 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 17: Optional Rules for Magic
 
-- However, in this case, the master's work becomes _quite_ complicated. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07347))_
-- You can _unify_ the rules of magic, allowing for a more integrated approach to casting. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07347))_
+- You can _unify_ the rules of magic, allowing for a more integrated approach to casting. However, in this case, the master's work becomes _quite_ complicated. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07347))_
 - the caster rolls _double ones_ , the magic will _fail completely_ and have _no_ effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07348))_
 
 ### Chapter 17: Optional Rules for Magic / Monster Magic Power
 
 - Monster magic power is predetermined for each monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07350))_
-- In other words, you roll 2D and add it to your _magic power_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
-- Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
-- If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
-- The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
-- If they fail, the magic will be cast with its full effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
+- The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. In other words, you roll 2D and add it to your _magic power_ . Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. If they fail, the magic will be cast with its full effect. If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . However, if _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
 
 ### Chapter 17: Optional Rules for Magic / Monster Resistance
 
-- The baseline score for a monster's mental power resistance roll is _resistance points -7 (written in parentheses)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07353))_
-- However, a monster's resistance roll _fails_ if there’s a _tie_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07353))_
-- This is an exception to the rule in order to maintain numerical balance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07353))_
+- The baseline score for a monster's mental power resistance roll is _resistance points -7 (written in parentheses)_ . However, a monster's resistance roll _fails_ if there’s a _tie_ . The final score must _exceed_ the final score from when the character cast the spell. This is an exception to the rule in order to maintain numerical balance. Please be careful. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07353))_
 
 ### Chapter 17: Optional Rules for Magic
 
-- Of course, no matter how high-level a sorcerer is, they don't know _every_ spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
-- Not all ancient magic spells are taught in the sorcerers’ guild. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
-- There are spells known only to a limited number of sorcerers, and also spells that were lost with the fall of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
-- These are called **lost spells** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
+- Not all ancient magic spells are taught in the sorcerers’ guild. Of course, no matter how high-level a sorcerer is, they don't know _every_ spell. There are spells known only to a limited number of sorcerers, and also spells that were lost with the fall of the ancient kingdom. These are called **lost spells** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
 - There are spells known only to a limited number of sorcerers, and also spells that were lost with the fall of the ancient kingdom. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07356))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.7 Magic Expansion / 《 Volume Expansion 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01314))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01313))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column. For example, when you cast the ancient magic _Light_
+> Note: On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01312))_
 
@@ -91,11 +81,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Familiar ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01685, source-range-870a16bc-01689))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01689))_
 
-> The summoned familiar and the sorcerer are always in mental contact, so they can communicate in a way similar to telepathy and can also share sensory organs. The caster can use their familiar's sensory organs to see and hear, and vice versa. Also, when you give a command to your familiar, the familiar will try to execute it, but there are natural limits to what it can actually do depending on the familiar's physical abilities. Abilities of each familiar are listed on the table, but you can find
+> If the familiar loses life points or mental points due to an attack from another, etc., the caster will suffer the same pain that the familiar felt, so they will lose the same amount of points in life force and mental power (this damage cannot be reduced by adventurer level). However, the number of points lost cannot go beyond the familiar's maximum life points or mental points. Even if the familiar receives damage that would cause a negative result, the caster will not lose any extra points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01688))_
 
@@ -122,7 +112,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Slow ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01920))_
+
+> 77 order and movement speed reduced by half due to changes in their agility, and their evasion speed (points) will also take a penalty. Regarding the evasion speed (points) penalty, the effect differs depending on the target's original agility. Please refer to Table 5-3: Slow: Agility and Evasion Penalties.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01922))_
 
@@ -149,7 +143,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Haste ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01926))_
+
+> This is a spell that doubles the target's agility from its original score. The target's action order and movement speed will be doubled, and their evasion speed (points) will also receive a bonus. Regarding the evasion speed (points) bonus, the effect differs depending on the target's original agility. Please refer to Table 5-4: Haste: Agility and Evasion Bonuses.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01928))_
 
@@ -176,7 +174,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 5: Magic / 5.1.17 Special Holy Magic List
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 
@@ -203,11 +201,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03095))_
 
@@ -240,11 +238,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07351))_
-
-> The magic procedure is resolved the same way regardless of whether a _monster_ or an _adventurer_ is casting the spell. In other words, you roll 2D and add it to your _magic power_ . Using that as the target score, everyone on the side on which it was cast must attempt a mental power resistance roll. If they fail, the magic will be cast with its full effect. If they succeed, the magic will _not_ be cast or its effect will be _reduced_ . However, if
+### Technical frame 7: Chapter 17: Optional Rules for Magic / Monster Resistance
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07353))_
 

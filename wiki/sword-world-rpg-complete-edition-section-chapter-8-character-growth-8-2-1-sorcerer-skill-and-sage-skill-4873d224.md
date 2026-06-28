@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-8-character-growth-8-2
 page_kind: source
 summary: Chapter 8: Character Growth / 8.2.1 Sorcerer Skill and Sage Skill: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-8-2-1-sorcerer-skill-and-sage-skill-4873d224@67671a1523ed8b2dd9833141ecfbf05b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-8-2-1-sorcerer-skill-and-sage-skill-4873d224@6115cc37a1f85d1b6940c797d40a3acb
 ---
 
 # Chapter 8: Character Growth / 8.2.1 Sorcerer Skill and Sage Skill
@@ -20,7 +20,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 

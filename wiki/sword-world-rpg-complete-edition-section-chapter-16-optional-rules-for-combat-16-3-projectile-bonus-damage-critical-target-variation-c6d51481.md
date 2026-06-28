@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation: 7 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-3-projectile-bonus-damage-critical-target-variation-c6d51481@82eacd0f4271dd6bc5c957ef6e2c56f9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-3-projectile-bonus-damage-critical-target-variation-c6d51481@9733217c5d742026b6b7e6fcb950773d
 ---
 
 # Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
@@ -22,19 +22,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- If this field says _yes_ , the _opponent's_ critical target will be +1 when they attack you with a sword, spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
-- **Critical target variation** indicates that the armor _reduces_ the chance of being dealt a strong blow from some weapons while wearing it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
+- **Critical target variation** indicates that the armor _reduces_ the chance of being dealt a strong blow from some weapons while wearing it. If this field says _yes_ , the _opponent's_ critical target will be +1 when they attack you with a sword, spear, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07118))_
 - **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07119))_
 
 > **Table 16-2 Shield Optional Rules**
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -55,13 +62,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07122))_
 
 > **Table 16-3 Armor Optional Rules**
 
-### Technical atom 4
+### Technical frame 4: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 

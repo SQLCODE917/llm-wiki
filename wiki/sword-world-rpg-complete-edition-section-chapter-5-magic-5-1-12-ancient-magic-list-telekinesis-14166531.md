@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Telekinesis ]: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-telekinesis-14166531@d090f05c0a3ec589c776e8ea06a21d6b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-telekinesis-14166531@a9351b389057c5508922cecfa6c29a27
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Telekinesis ]
@@ -20,11 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01947))_
-
-> This spell can also cancel commands given to a golem. Once a golem has had its commands canceled, it becomes neutral and can be given new commands using the 9th level spell _Command Golem_ . However, the final score of commands given during the ancient kingdom period is very high, so you'll need a final score of at least 30 or greater to cancel a golem's commands.
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Telekinesis ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01950))_
 

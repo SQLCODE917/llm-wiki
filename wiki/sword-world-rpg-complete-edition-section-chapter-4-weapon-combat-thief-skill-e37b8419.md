@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-thief-
 page_kind: source
 summary: Chapter 4: Weapon Combat / 【 Thief Skill 】: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-thief-skill-e37b8419@6a0e05902d059ff9ac4f031fcafb9424
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-thief-skill-e37b8419@c92b316379db9717a012c0d08acbf9a1
 ---
 
 # Chapter 4: Weapon Combat / 【 Thief Skill 】
@@ -23,23 +23,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A thief also has the ability to fight, but only with _light_ equipment. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
-- Metal armor other than ring mail may _not_ be used, even if the required strength (half of strength) is met. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
+- A thief also has the ability to fight, but only with _light_ equipment. Specifically, you can only fight if the weapon or armor you're using requires up to _half (rounded up)_ of your character's strength. As for armor, it’s limited not only by required strength but also by _type_ . Metal armor other than ring mail may _not_ be used, even if the required strength (half of strength) is met. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
 - A thief also has the ability to fight, but only with _light_ equipment. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00807))_
-
-> To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three:
+### Technical frame 1: Chapter 4: Weapon Combat / 【 Thief Skill 】
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
 
 > Specifically, you can only fight if the weapon or armor you're using requires up to _half (rounded up)_ of your character's strength.
 
-### Technical atom 2
+### Technical frame 2: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07701))_
 
@@ -92,7 +87,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Thief Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07703))_
 

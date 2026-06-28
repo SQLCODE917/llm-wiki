@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-cre
 page_kind: source
 summary: 13.2.11 Daemons/Underworld Creatures / Monster Level=9: 9 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-monster-level-9-0dceb04e@576e0f523b152216618e499162676871
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-monster-level-9-0dceb04e@d13f5ae7281f31ee9d2b490b69918e43
 ---
 
 # 13.2.11 Daemons/Underworld Creatures / Monster Level=9
@@ -56,19 +56,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- It's slightly larger than a hellhound, about as big as a medium-sized horse. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06011))_
-- When attacking, it uses all three of its heads to bite the same target at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06011))_
-- Rarity=13 Agility=15 Movement Speed=18 Number=One Frequency=Very rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs (3 times): 15 (8) Strike Points=17x3 Evasion Points=15 (8) Defense Points=12 Life Points/Resistance=22/17 (10) Mental Points/Resistance=15/16 (9) Special Abilities=Fire breath in a 5 meter surrounding radius (Resist target score=15, strike power 20, bonus damage 8) Fire immunity Habitat=Deep within underground labyrinths Languages=None Perception=Five senses (Darkvision) A cerberus is a large black dog with three heads, and is thought to be a variant of the hellhound. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06011))_
-- Rarity=13 Agility=15 Movement Speed=18 Number=One Frequency=Very rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs (3 times): 15 (8) Strike Points=17x3 Evasion Points=15 (8) Defense Points=12 Life Points/Resistance=22/17 (10) Mental Points/Resistance=15/16 (9) Special Abilities=Fire breath in a 5 meter surrounding radius (Resist target score=15, strike power 20, bonus damage 8) Fire immunity Habitat=Deep within underground labyrinths Languages=None Perception=Five senses (Darkvision) A cerberus is a large black dog with three heads, and is thought to be a variant of the hellhound. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06011))_
-- Everyone in a 5 meter radius surrounding the cerberus will suffer damage equal to a strike power 20 strike roll plus bonus damage 8. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
-- Armor cannot protect against this fire; only adventurer level and magical defense can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
-- If a 1 is rolled on 1D, all three heads will breathe fire at the same time in three different directions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
-- Armor cannot protect against this fire; only adventurer level and magical defense can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
+- Rarity=13 Agility=15 Movement Speed=18 Number=One Frequency=Very rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs (3 times): 15 (8) Strike Points=17x3 Evasion Points=15 (8) Defense Points=12 Life Points/Resistance=22/17 (10) Mental Points/Resistance=15/16 (9) Special Abilities=Fire breath in a 5 meter surrounding radius (Resist target score=15, strike power 20, bonus damage 8) Fire immunity Habitat=Deep within underground labyrinths Languages=None Perception=Five senses (Darkvision) A cerberus is a large black dog with three heads, and is thought to be a variant of the hellhound. It's slightly larger than a hellhound, about as big as a medium-sized horse. When attacking, it uses all three of its heads to bite the same target at the same time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06011))_
+- Like a hellhound, a cerberus can also breathe fire. If a 1 is rolled on 1D, all three heads will breathe fire at the same time in three different directions. Everyone in a 5 meter radius surrounding the cerberus will suffer damage equal to a strike power 20 strike roll plus bonus damage 8. Armor cannot protect against this fire; only adventurer level and magical defense can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
 - Fire attacks have no effect on a cerberus. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06013))_
+- Rarity=13 Agility=15 Movement Speed=18 Number=One Frequency=Very rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs (3 times): 15 (8) Strike Points=17x3 Evasion Points=15 (8) Defense Points=12 Life Points/Resistance=22/17 (10) Mental Points/Resistance=15/16 (9) Special Abilities=Fire breath in a 5 meter surrounding radius (Resist target score=15, strike power 20, bonus damage 8) Fire immunity Habitat=Deep within underground labyrinths Languages=None Perception=Five senses (Darkvision) A cerberus is a large black dog with three heads, and is thought to be a variant of the hellhound. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06011))_
+- Armor cannot protect against this fire; only adventurer level and magical defense can reduce the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06012))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

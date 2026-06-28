@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities: 119 source-backed entries and 47 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-6-common-adventurer-abilities-0d98fbbd@fc43f1367b91491310f1b502e18d382d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-6-common-adventurer-abilities-0d98fbbd@eab3207cbfa9f17fc0ffa3bfc273de20
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities
@@ -35,91 +35,64 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- These abilities that any adventurer can acquire are called **common adventurer abilities** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03340))_
-- An average thief should be able to avoid taking any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
-- Those with the thief skill can reduce damage by using the _tumble_ ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
-- Of course, the height of a horse itself is less than 3 meters, but this is taking into consideration the speed of the horse and the impact of being thrown off. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
-- If you fail, you will fall off the horse. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
+- Adventurers naturally acquire various abilities due to their adventurous lifestyle. These abilities that any adventurer can acquire are called **common adventurer abilities** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03340))_
+- If you try to control your horse without using the reins, you suffer a -4 penalty. If you fail, you will fall off the horse. Falling off a horse will be treated as if you had fallen from a height of 3 meters, so you must make a damage check. For damage caused by falling, please refer to ④ Climb (see p. 121). Of course, the height of a horse itself is less than 3 meters, but this is taking into consideration the speed of the horse and the impact of being thrown off. Those with the thief skill can reduce damage by using the _tumble_ ability. An average thief should be able to avoid taking any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
 - These common abilities use _adventurer level + related ability bonus_ as the baseline score when making success roll checks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03342))_
-- At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
-- The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
-- You can think of it as actually _13_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
+- The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 - The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 
 ## Statements by subsection
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Spellsongs [Mental Power]]
 
-- Musical instruments are _always_ required to sing spellsongs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03334))_
+- Musical instruments are _always_ required to sing spellsongs. Being able to sing is also a necessary condition, but there is an exception if you choose a flute as your instrument. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03334))_
 - A bard can learn _one_ spellsong per skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03335))_
 - If the game master wants to provide the players with information in the form of ancient poems or folklore, please decide on a _rarity_ and use it as the target score when making a success roll check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03336))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ① Riding [Agility] ]
 
-- However, when jumping over obstacles, engaging in combat or similar intense movements, if necessary (every round during combat), use _adventurer level + agility bonus_ as the baseline score and make a success roll against target score 7. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
+- If you are just riding normally, you do not need to make a success roll. However, when jumping over obstacles, engaging in combat or similar intense movements, if necessary (every round during combat), use _adventurer level + agility bonus_ as the baseline score and make a success roll against target score 7. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
 - **==> picture [162 x 277] intentionally omitted <==** consider the penalty for not having reins, it's effectively _15_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
 
+- Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
+- However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
+- Also, in order to swim, you need to be as light as possible. You can only wear cloth or at most soft leather. If you’re wearing any other armor, you’ll sink immediately. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03358))_
+- Those who sink due to the weight of their armor can attempt to remove it underwater. To do so, you must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. The target scores are 13 for _ring mail, hard leather, and mithril chain mail_ , 15 for _chain mail_ , and 19 for _lamellar armor, splint armor, and plate armor_ . If you succeed, you will be able to take it off and rise to the surface. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
+- This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
+- using adventurer level as a baseline score calculation. Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb. As a formality, a success roll should still be made, but a failure _only_ occurs on double ones. For details, please refer to Table 6-1: Climb by Skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
+- When a drowning person loses consciousness, their life force immediately falls to 0, so a _death check_ must be made. If you're alive, you’ll be able to breathe again if you're rescued and treated within 30 minutes. If you’re _not_ rescued within 30 minutes, you will automatically die. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
+- When someone _with_ the thief skill climbs _without_ a rope, or someone _without_ the thief skill climbs _with_ a rope, set the target score using Table 6-2: Determining Climb Target Scores and make a success roll check. Determining the target score is almost the same in both cases. The baseline score is _thief skill level + agility bonus_ or _adventurer level + agility bonus_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03364))_
 - Therefore, you can swim across any pond that is about 25 meters in size. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
-- Basically all adventurers can swim. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
-- Therefore, you can swim across any pond that is about 25 meters in size. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
-- The game master must determine the target score by considering the difficulty of the action. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
-- The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
-- Also, in order to swim, you need to be as light as possible. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03358))_
-- To do so, you must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
-- Those who sink due to the weight of their armor can attempt to remove it underwater. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
-- The target scores are 13 for _ring mail, hard leather, and mithril chain mail_ , 15 for _chain mail_ , and 19 for _lamellar armor, splint armor, and plate armor_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
-- If you can't take off your armor in time, you'll drown. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
 - Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
 - An adventurer can only hold their breath underwater for a number of rounds equal to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
-- Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
-- An adventurer can only hold their breath underwater for a number of rounds equal to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
-- For details, please refer to Table 6-1: Climb by Skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
-- As a formality, a success roll should still be made, but a failure _only_ occurs on double ones. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
-- If you're alive, you’ll be able to breathe again if you're rescued and treated within 30 minutes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
-- When a drowning person loses consciousness, their life force immediately falls to 0, so a _death check_ must be made. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
-- If you’re _not_ rescued within 30 minutes, you will automatically die. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
 - If you’re _not_ rescued within 30 minutes, you will automatically die. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
 - If you're alive, you’ll be able to breathe again if you're rescued and treated within 30 minutes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
-- The baseline score is _thief skill level + agility bonus_ or _adventurer level + agility bonus_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03364))_
-- Determining the target score is almost the same in both cases. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03364))_
-- When someone _with_ the thief skill climbs _without_ a rope, or someone _without_ the thief skill climbs _with_ a rope, set the target score using Table 6-2: Determining Climb Target Scores and make a success roll check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03364))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ③ Ship Steering [Dexterity]]
 
-- However, sailing ships require the full-fledged _sailor skill_ , and adventurer level cannot be used as a substitute. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
-- Adventurers can handle small boats using oars or poles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
+- Adventurers can handle small boats using oars or poles. However, sailing ships require the full-fledged _sailor skill_ , and adventurer level cannot be used as a substitute. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03366))_
 - Note that when a thief climbs up or down a wall or cliff _without_ using a rope, the conditions marked * are not possible. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_
-- Any adventurer can operate a small vessel (boat, raft, etc.) that is operated using oars or poles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
-- In special cases such as _avoiding collision with an approaching ship_ or _surviving rapids_ , the adventurer operating the ship must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
-- The difficulty is determined by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
-- If you fail, the boat will capsize. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
+- Any adventurer can operate a small vessel (boat, raft, etc.) that is operated using oars or poles. If you're just going straight through calm water, you don't need a success roll. In special cases such as _avoiding collision with an approaching ship_ or _surviving rapids_ , the adventurer operating the ship must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. The difficulty is determined by the game master. If you fail, the boat will capsize. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
 - In special cases such as _avoiding collision with an approaching ship_ or _surviving rapids_ , the adventurer operating the ship must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03368))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example:
 
-- The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
-- The baseline score is _adventurer level + agility bonus_ = _6_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
+- An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
 
-- The latter allows for more advanced climbing challenges. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03373))_
-- **Climbing** is both a common adventurer ability and a thief skill ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03373))_
-- First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374))_
+- **Climbing** is both a common adventurer ability and a thief skill ability. The latter allows for more advanced climbing challenges. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03373))_
+- First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374))_
+- 121 time, only double ones will result in a failure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
+- A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to determine the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
 - First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374))_
 - 121 time, only double ones will result in a failure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
-- 121 time, only double ones will result in a failure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
-- If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-- A check must be made every 10 meters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-- If you fall, please refer to Falling Damage below to determine the damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 1:
 
-- 5 - 2 = _3 meters_ is added to the 20 meters from the two attempts, which means he has climbed **23 meters** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03383))_
-- Now he rolls 2D and gets a 5. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03383))_
-- The first and second attempts are successful, but the third attempt fails. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03383))_
-- In this case, a success roll is attempted three times. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03383))_
+- An adventurer tries to climb a 22 meter cliff. In this case, a success roll is attempted three times. The first and second attempts are successful, but the third attempt fails. Now he rolls 2D and gets a 5. 5 - 2 = _3 meters_ is added to the 20 meters from the two attempts, which means he has climbed **23 meters** . Therefore, he climbs the cliff. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03383))_
 - 5 - 2 = _3 meters_ is added to the 20 meters from the two attempts, which means he has climbed **23 meters** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03383))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
@@ -129,142 +102,131 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Falling Damage
 
 - If an adventurer falls, damage will be determined as follows. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03387))_
-- First, _fall height x 3_ is the base damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03388))_
-- The adventurer will suffer this damage to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03388))_
-- If the defense roll comes up _double ones_ , all damage reduction is lost, including adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03389))_
-- However, an adventurer can reduce this damage depending on their adventurer level and armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03389))_
+- First, _fall height x 3_ is the base damage. The adventurer will suffer this damage to their life force. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03388))_
+- However, an adventurer can reduce this damage depending on their adventurer level and armor. Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced. If the defense roll comes up _double ones_ , all damage reduction is lost, including adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03389))_
 - The base damage minus this damage reduction is the actual damage the adventurer suffers. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03390))_
-- On the other hand, if you have something like spikes sticking out, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03391))_
-- **Falling damage** = fall height x 3 - (defense roll result + adventurer level) Base falling damage (fall height x 3) is for falling on normal ground. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03391))_
-- This decision should be made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03391))_
-- Owners of the thief skill can greatly reduce this damage with their _tumble_ ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03392))_
-- If the result of this subtraction is 0 or less, even if the thief falls, they can land cleanly on their feet or stand up in one motion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03392))_
+- **Falling damage** = fall height x 3 - (defense roll result + adventurer level) Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as _fall height x 2_ , _fall height x 1_ , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03391))_
+- Owners of the thief skill can greatly reduce this damage with their _tumble_ ability. If an owner of the thief skill falls, the height can be calculated by subtracting _thief skill level + agility bonus_ meters from the height of the fall. If the result of this subtraction is 0 or less, even if the thief falls, they can land cleanly on their feet or stand up in one motion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03392))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example:
 
-- A thief with thief skill level 3 and dexterity bonus +2 can fall from a height of 5 meters or less without suffering any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03394))_
+- A thief with thief skill level 3 and dexterity bonus +2 can fall from a height of 5 meters or less without suffering any damage. If you fall from a height of 6 meters or greater, determine the base damage by _(fall height - 5) x 3_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03394))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ⑤ Long Jump/High Jump [Agility] ]
 
-- **Long jump** and **high jump** are common adventurer abilities, and are also abilities of the thief skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03396))_
-- The baseline score is _thief skill level + agility bonus_ or _adventurer level + agility bonus (Table 6-3: Determining Long Jump Target Scores)._ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03396))_
-- The latter allows you to jump farther and higher. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03396))_
-- However, to attempt a pole long jump, you need a pole that is at least _half_ as long as the distance you are attempting to jump. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03397))_
-- In this case, the distance you can jump will be further improved. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03397))_
-- In addition, the thief skill allows you to attempt _pole_ long jumps and _pole_ high jumps using a long pole. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03397))_
-- To attempt a pole high jump, you will need a pole that is about the _same length_ as the height you are attempting to jump (Table 6-4: Determining High Jump Target Scores). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03397))_
+- **Long jump** and **high jump** are common adventurer abilities, and are also abilities of the thief skill. The latter allows you to jump farther and higher. The baseline score is _thief skill level + agility bonus_ or _adventurer level + agility bonus (Table 6-3: Determining Long Jump Target Scores)._ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03396))_
+- In addition, the thief skill allows you to attempt _pole_ long jumps and _pole_ high jumps using a long pole. In this case, the distance you can jump will be further improved. However, to attempt a pole long jump, you need a pole that is at least _half_ as long as the distance you are attempting to jump. To attempt a pole high jump, you will need a pole that is about the _same length_ as the height you are attempting to jump (Table 6-4: Determining High Jump Target Scores). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03397))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 1:
 
-- An adventurer with adventurer level 4, agility bonus +2, wearing chain mail, is in a cave beneath a volcano. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03399))_
-- A narrow rocky area continues, but eventually it is interrupted by a 7 meter long chasm. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03399))_
-- Below is boiling lava. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03400))_
-- At this time, considering the following conditions: _7 meter width_ , _chain mail_ , _the rocky area is too narrow to make a proper run-up_ , and _death is inevitable if you fall_ , the target score is 20+4+2+2= **28.** The baseline score is _6_ , so anything other than _double sixes_ is a failure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03400))_
+- An adventurer with adventurer level 4, agility bonus +2, wearing chain mail, is in a cave beneath a volcano. A narrow rocky area continues, but eventually it is interrupted by a 7 meter long chasm. The _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03399))_
+- 122 adventurer tries to jump over it. Below is boiling lava. At this time, considering the following conditions: _7 meter width_ , _chain mail_ , _the rocky area is too narrow to make a proper run-up_ , and _death is inevitable if you fall_ , the target score is 20+4+2+2= **28.** The baseline score is _6_ , so anything other than _double sixes_ is a failure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03400))_
 
 ### Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-- The baseline score is 3, so it's a success if he rolls 8 or greater on 2D. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+- The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline score is 3, so it's a success if he rolls 8 or greater on 2D. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+- Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 - The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
-- The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
-- The adventurer has 1 level in the thief skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
-- Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
-- This will allow him to utilize his thief skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
-- The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
-- Jumping over obstacles with a high jump does _not_ guarantee a safe landing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
-- It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
-- However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ⑤ Folklore Knowledge [Intelligence] ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03331))_
 
 > **(Not retriable)** By the nature of their business, a bard is familiar with myths and folklore passed down in various regions, as well as ancient poetry. This is because telling these stories is an important part of their job. Also, some of these legends include things that can serve as clues for your adventures. For example, a saga that tells of a battle between a monster and a hero may contain information about the monster's weakness. Legends about the ancient kingdom can sometimes lead adventurers to ancient ruins.
 
-### Technical atom 2
+### Technical frame 2: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03342))_
+
+> These common abilities use _adventurer level + related ability bonus_ as the baseline score when making success roll checks.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03341))_
 
 > Falling off a horse will be treated as if you had fallen from a height of 3 meters, so you must make a damage check.
 
-### Technical atom 3
+### Technical frame 3: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03342))_
+
+> These common abilities use _adventurer level + related ability bonus_ as the baseline score when making success roll checks.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
 
 > When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it.
 
-### Technical atom 4
+### Technical frame 4: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ① Riding [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03352))_
 
-> The riding rules here apply when dealing with trained horses, such as riding horses, war horses, etc. When trying to ride a wild horse, you must first succeed on a success roll while attempting to mount it. At this time, the target score is 9, but since the wild horse is not wearing a rein, a -4 penalty will be imposed. You can think of it as actually _13_ . If you want to control a wild horse in combat, etc. the target score is 11. If you
+> **==> picture [162 x 277] intentionally omitted <==** consider the penalty for not having reins, it's effectively _15_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03351))_
 
 > If you are just riding normally, you do not need to make a success roll.
 
-### Technical atom 5
+### Technical frame 5: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03356))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03358))_
 
-> Basically all adventurers can swim. Therefore, you can swim across any pond that is about 25 meters in size. There is no need for a success roll (some players may choose to say _my character is sinking like a stone_ , but that's up to them).
+> Also, in order to swim, you need to be as light as possible. You can only wear cloth or at most soft leather. If you’re wearing any other armor, you’ll sink immediately.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
 
 > However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll.
 
-### Technical atom 6
+### Technical frame 6: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
 
-> However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
+> Those who sink due to the weight of their armor can attempt to remove it underwater. To do so, you must succeed on a success roll using _adventurer level + dexterity bonus_ as the baseline score. The target scores are 13 for _ring mail, hard leather, and mithril chain mail_ , 15 for _chain mail_ , and 19 for _lamellar armor, splint armor, and plate armor_ . If you succeed, you will be able to take it off and rise to the surface.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03358))_
 
 > You can only wear cloth or at most soft leather.
 
-### Technical atom 7
+### Technical frame 7: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03357))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
 
-> However, if you are trying to swim to an island many kilometers away, or trying to swim across rapids, you’ll need a success roll. The game master must determine the target score by considering the difficulty of the action. The player must make a success roll using _adventurer level + agility bonus_ as the baseline score, and if they fail, they drown.
+> This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03359))_
 
 > If you succeed, you will be able to take it off and rise to the surface.
 
-### Technical atom 8
+### Technical frame 8: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
 
-> This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
-
-> Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink.
-
-### Technical atom 9
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03360))_
-
-> This attempt takes one minute, regardless of success or failure. An adventurer can only hold their breath underwater for a number of rounds equal to their life force. Each round is 10 seconds long, so this success roll can only be made a number of times equal to your life force ÷ 6, or in other words, your life force bonus. If you can't take off your armor in time, you'll drown.
+> using adventurer level as a baseline score calculation. Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb. As a formality, a success roll should still be made, but a failure _only_ occurs on double ones. For details, please refer to Table 6-1: Climb by Skill.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
 
 > Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying something other than a weapon, the game master should consider its weight when determining the target score.
 
-### Technical atom 10
+### Technical frame 9: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
 
-> Heavy weapons and luggage also impede swimming. If you recklessly try to swim with a sword, spear, or ax, then using _adventurer level + agility bonus_ as the baseline score, make a success roll against target score 13 (this can be increased or decreased depending on the weight of your belongings. Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink. However, unlike armor, weapons can be easily discarded. Even when carrying
+> using adventurer level as a baseline score calculation. Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb. As a formality, a success roll should still be made, but a failure _only_ occurs on double ones. For details, please refer to Table 6-1: Climb by Skill.
+
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03361))_
+
+> Also, if the distance is long or there are rapids, add a few more points to the target score), and if you fail, you will sink.
+
+### Technical frame 10: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ② Swim [Agility] ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03363))_
+
+> When a drowning person loses consciousness, their life force immediately falls to 0, so a _death check_ must be made. If you're alive, you’ll be able to breathe again if you're rescued and treated within 30 minutes. If you’re _not_ rescued within 30 minutes, you will automatically die.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03362))_
 
 > Climbing with the thief skill does _not_ require rope assistance, and if you _do_ have a rope, you can almost certainly climb.
 
-### Technical atom 11
+### Technical frame 11: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ③ Ship Steering [Dexterity]]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03367))_
 
@@ -274,31 +236,31 @@ From [[sword-world-rpg-complete-edition]].
 
 > If you're just going straight through calm water, you don't need a success roll.
 
-### Technical atom 12
+### Technical frame 12: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03370))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03373))_
 
-> An adventurer with adventurer level 4 and an agility bonus +2, attempts to climb a vertical natural cliff using a rope. He's wearing chain mail armor. The baseline score is _adventurer level + agility bonus_ = _6_ . The target score is 10+2+4= _16_ , taking into account the conditions of _vertical cliff with a foothold_ and _chain mail._ In other words, if he rolls 2D and gets a score of 10 or greater, he’ll succeed at climbing.
+> **Climbing** is both a common adventurer ability and a thief skill ability. The latter allows for more advanced climbing challenges.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03372))_
 
 > If this adventurer is a thief, he can remove and discard the heavy armor he is wearing, and he can use his thief skill to attempt the climb more safely.
 
-### Technical atom 13
+### Technical frame 13: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
 
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb 121 time, only double ones will result in a failure.
+> 121 time, only double ones will result in a failure.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03375))_
 
 > **Table 6-1: Climb by Skill**
 
-### Technical atom 14
+### Technical frame 14: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03374, source-range-870a16bc-03377))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
 
-> First of all, climbing, which is a common ability of adventurers, always requires assistance such as rope. Without such a thing, it’s _not_ possible to climb 121 time, only double ones will result in a failure.
+> 121 time, only double ones will result in a failure.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03376))_
 
@@ -321,17 +283,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical frame 15: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Climb [Agility] ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03377))_
+
+> 121 time, only double ones will result in a failure.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
 
 > If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended.
 
-### Technical atom 16
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+### Technical frame 16: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
 
@@ -372,17 +334,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 17
+### Technical frame 17: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Falling Damage
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03387, source-range-870a16bc-03391))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03390))_
 
-> If an adventurer falls, damage will be determined as follows. **Falling damage** = fall height x 3 - (defense roll result + adventurer level) Base falling damage (fall height x 3) is for falling on normal ground. If you fall on soft grass or on the water surface, calculate by reducing factors, such as _fall height x 2_ , _fall height x 1_ , etc. On the other hand, if you have something like spikes sticking out, etc. increase the factor to increase the damage. This decision should be made by the
+> The base damage minus this damage reduction is the actual damage the adventurer suffers.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03389))_
 
 > Just like when reducing damage in weapon combat, make a defense roll using the armor's defense power as the key number, and add your adventurer level to the result to determine the damage reduced.
 
-### Technical atom 18
+### Technical frame 18: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Falling Damage
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03391))_
 
@@ -392,21 +354,21 @@ From [[sword-world-rpg-complete-edition]].
 
 > If an owner of the thief skill falls, the height can be calculated by subtracting _thief skill level + agility bonus_ meters from the height of the fall.
 
-### Technical atom 19
+### Technical frame 19: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03404))_
 
 > **Table 6-3: Determining Long Jump Target Scores**
 
-### Technical atom 20
+### Technical frame 20: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -442,13 +404,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 21
+### Technical frame 21: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03406))_
 
 > **Table 6-4: Determining High Jump Target Scores**
 
-### Technical atom 22
+### Technical frame 22: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -480,7 +450,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 23
+### Technical frame 23: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07722))_
 
@@ -507,7 +481,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 24
+### Technical frame 24: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07727))_
 
@@ -536,7 +514,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 25
+### Technical frame 25: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -573,7 +551,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 26
+### Technical frame 26: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
 
@@ -606,7 +584,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 27
+### Technical frame 27: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07735))_
 
@@ -645,7 +627,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 28
+### Technical frame 28: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07730))_
+
+> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07737))_
 
@@ -672,7 +658,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 29
+### Technical frame 29: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07739))_
 
@@ -695,7 +681,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 30
+### Technical frame 30: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07742))_
 
@@ -726,7 +712,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 31
+### Technical frame 31: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07745))_
 
@@ -765,7 +751,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 32
+### Technical frame 32: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07748))_
 
@@ -788,7 +774,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 33
+### Technical frame 33: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07750))_
 
@@ -809,7 +795,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 34
+### Technical frame 34: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
+
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07757))_
 
@@ -846,11 +836,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 35
+### Technical frame 35: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07761))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07760))_
 
-> When you cast a spell by consuming that multiplied amount of mental power, multiply the number in _area expansion length_ or _volume expansion length_ by the number (radius, side) that represents the spell’s _area of effect_ , and the result will be the spell’s _area_ . For spells cast on a flat surface, use the number in the _area expansion length_ column, and for spells cast into space, use the number in the _volume expansion length_ column.
+> Note) On the table, _expansion rate_ is the multiplier for mental power consumed.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07759))_
 
@@ -885,7 +875,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 36
+### Technical frame 36: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
@@ -942,11 +932,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 37
+### Technical frame 37: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07767))_
 
@@ -969,11 +959,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 38
+### Technical frame 38: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07766))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07762))_
 
-> **Table 9-2: Success Roll Modifiers**
+> For example, when you cast the ancient magic _Light_ , whose area is _A space with a 10 meter radius_ , by consuming _double_ the mental power, the resulting area will be a spherical space with a radius of _10 x 1.3 =_ _**13 meters**_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07769))_
 
@@ -998,7 +988,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 39
+### Technical frame 39: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07771))_
 
@@ -1025,7 +1015,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 40
+### Technical frame 40: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07774))_
 
@@ -1050,7 +1040,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 41
+### Technical frame 41: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07776))_
 
@@ -1071,7 +1061,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 42
+### Technical frame 42: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07778))_
 
@@ -1130,7 +1120,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 43
+### Technical frame 43: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07781))_
 
@@ -1167,7 +1157,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 44
+### Technical frame 44: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07783))_
 
@@ -1202,7 +1192,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 45
+### Technical frame 45: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07786))_
 
@@ -1243,7 +1233,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 46
+### Technical frame 46: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07787))_
 
@@ -1284,7 +1274,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 47
+### Technical frame 47: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Common Adventurer Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07788))_
 

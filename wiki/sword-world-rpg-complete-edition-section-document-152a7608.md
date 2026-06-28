@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-document-152a7608
 page_kind: source
 summary: Document: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-document-152a7608@9ac246162a99c48dd8f24228644fa2b1
+projection_coverage: section-sword-world-rpg-complete-edition-section-document-152a7608@2a93a0d50f4c503d16ab3ac8bfb3f021
 ---
 
 # Document
@@ -16,13 +16,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- 153 11.5 Asking NPCs to Use Magic ....................................... _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00005))_
-- 273 Monsters Roll Dice ................ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00007))_
-- 257 16.8 Weapons and Armor 15.1 Four Types of That Are Too Heavy ............... _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00007))_
+- 9.3 General Modifiers ..... 136 9.4 Automatic Success Restrictions ............................. 136 Chapter 10: Notes on Combat ...................................................... 137 10.1 NPC and Monster Action Announcement ......... 138 10.2 Combat in Special Situations ................................ 138 10.3 Surprise Attacks ...... 138 10.4 Water Combat ......... 139 10.5 Attacks Against the Sleeping ................................... 139 10.6 Combat Between Monsters ................................. 140 Chapter 11: Notes on Magic 141 11.1 Rune Masters’ Status 142 11.2 Dark Magic .............. 142 11.3 Dragon Roar Magic 149 11.4 Acquiring Rune Master Skills and Increasing Levels .. 153 11.5 Asking NPCs to Use Magic ....................................... 154 Chapter 12: Various Checks 156 12.1 Rules Regarding Language ................................. 157 12.2 Rules for Poison, Illness and Infection .......................... 159 12.3 Work Requests to NPCs .................................................. 168 Chapter 13: Monsters! ......... 169 13.1 Types of Monsters ... 170 13.2 Monster Catalog ...... 172 13.3 Converting Character Data to Monster Data ............ 233 13.4 Representing Special Monsters with Character Data .................................................. 234 13.5 Monster Level and Adventurer Level ................... 234 13.6 Handling Monster Special Abilities ...................... 235 Chapter 14: Treasures .......... 240 _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00005))_
+- 14.1 Treasure and Rewards in 16.4 Projectile Range Sword World ........................... 241 Extension ................................. 264 14.2 Adventure Treasure and 16.5 Combat Options ...... 264 Reward Amounts ................... 241 16.6 Holding Weapons in 14.3 Treasure Types ......... 242 Both Hands ............................. 268 14.4 Magical Item List ..... 242 16.7 Throwing Multiple Chapter 15: Experience Points Darts or Daggers .................... 268 ...................................................... 257 16.8 Weapons and Armor 15.1 Four Types of That Are Too Heavy ............... 268 Experience Points .................. 258 16.9 Special Weapons ..... 269 Part 3: Optional Rules .............. 259 Chapter 17: Optional Rules for Chapter 16: Optional Rules for Magic ............................................ 272 Combat ........................................ 260 17.1 Changes to Magic 16.1 Combat in Which Procedure ................................ 273 Monsters Roll Dice ................ 261 17.2 Lost Spells ................. 273 16.2 Weapon and Armor 17.3 Catalysts Other Than Modifiers ................................. 262 Staves ........................................ 274 16.3 Projectile Bonus 17.4 Using Magic Without a Damage ................................... 263 Catalyst .................................... 274 _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00007))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Document
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00005))_
+
+> 9.3 General Modifiers ..... 136 9.4 Automatic Success Restrictions ............................. 136 Chapter 10: Notes on Combat ...................................................... 137 10.1 NPC and Monster Action Announcement ......... 138 10.2 Combat in Special Situations ................................ 138 10.3 Surprise Attacks ...... 138 10.4 Water Combat ......... 139 10.5 Attacks Against the Sleeping ................................... 139 10.6 Combat Between Monsters ..................
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00003))_
 

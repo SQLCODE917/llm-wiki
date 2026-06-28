@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / 《 Age 》: 2 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-age-3b87ec9d@2335835dc578fb27f060cc773638e43b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-age-3b87ec9d@de65383d5ce6ee6010c65781a83d09f1
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / 《 Age 》
@@ -21,12 +21,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- In addition, in _Sword World RPG_ , newly created characters are _green youths_ , so to speak, who don’t have much experience. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
-- It is basically impossible to play as a child who has not fully grown both physically and mentally, or an old man who is clearly on the physical decline. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
+- However, you’re not completely free to decide on age. It is basically impossible to play as a child who has not fully grown both physically and mentally, or an old man who is clearly on the physical decline. In addition, in _Sword World RPG_ , newly created characters are _green youths_ , so to speak, who don’t have much experience. Therefore, making them _too old_ poses a problem in this sense as well. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00355))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -47,7 +50,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 
@@ -70,7 +77,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Sage Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07705))_
 

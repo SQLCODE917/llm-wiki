@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / [Intelligence] ]: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-intelligence-c29d8d44@ee162f9745b543a87af31ed0fb81658e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-intelligence-c29d8d44@ed994feaeb1f6ed8fcbc84bb9a5b87a2
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / [Intelligence] ]
@@ -24,5 +24,4 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- **(Equipment restriction)** This is the ability to hide behind rocks, hide in bushes, or use such things to hide something. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03225))_
-- Since it's an ability that uses natural terrain, it cannot be used indoors. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03225))_
+- **(Equipment restriction)** This is the ability to hide behind rocks, hide in bushes, or use such things to hide something. Since it's an ability that uses natural terrain, it cannot be used indoors. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03225))_

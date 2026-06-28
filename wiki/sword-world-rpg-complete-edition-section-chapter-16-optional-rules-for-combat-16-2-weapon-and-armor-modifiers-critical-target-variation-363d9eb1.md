@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Critical Target Variation: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-critical-target-variation-363d9eb1@3ac14e9313fb9b833150feae4ab9dc8a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-critical-target-variation-363d9eb1@05dfd9860cf60edfc7b8e34840b9248f
 ---
 
 # Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Critical Target Variation
@@ -22,12 +22,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This is indicated by the _critical target_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
-- Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
+- Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . This is indicated by the _critical target_ . Axes, maces, etc. do _not_ critical even if you roll a 10, but rather require an **11** or **12** . One can say that the _lower_ this score, the _more_ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07120))_
 
@@ -48,7 +51,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.3 Projectile Bonus Damage / Critical Target Variation
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07121))_
+
+> **Anti-Strangling Protection** The _anti-strangling protection_ indicates whether the armor protects you when being strangled by a garrote or arms around the neck.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07123))_
 

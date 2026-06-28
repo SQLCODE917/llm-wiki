@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Proof ]: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-fire-proof-f3866ff3@92eb4e4aeb41cad29b34e81736693f0b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-fire-proof-f3866ff3@744cb0b598fb3a5a5c5e42732a80e07a
 ---
 
 # Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Proof ]
@@ -20,33 +20,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Proof ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04020))_
-
-> Enables communication with dragon creatures such as wyverns, wyrms, and dragons (elder, lesser, ancient). If the opponent is intelligent enough, you can also negotiate. When the opponent's intelligence is low, you can only know their emotions and degree of hunger. The caster will no longer be attacked unless the opponent is enraged or extremely hungry.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04022))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04022, source-range-870a16bc-04023, source-range-870a16bc-04025))_
 
 > Base Mental Power Cost=12
 
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04020))_
-
-> Enables communication with dragon creatures such as wyverns, wyrms, and dragons (elder, lesser, ancient). If the opponent is intelligent enough, you can also negotiate. When the opponent's intelligence is low, you can only know their emotions and degree of hunger. The caster will no longer be attacked unless the opponent is enraged or extremely hungry.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04023))_
-
 > Distance=Caster Area=Caster Duration=18 rounds Effect=No longer take damage from fire and heat
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04025))_
 
 > Expansion=Duration Resist=None
 
-### Technical atom 4
+### Technical frame 2: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / [ Fire Proof ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04026))_
 

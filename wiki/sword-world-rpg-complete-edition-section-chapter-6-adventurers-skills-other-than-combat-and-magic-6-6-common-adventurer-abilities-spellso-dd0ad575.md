@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Spellsongs [Mental Power]]: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-6-common-adventurer-abilities-spellso-dd0ad575@2ebe3c1c6ebc34c64c372ec6b55ff284
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-6-common-adventurer-abilities-spellso-dd0ad575@0a7cb0df3528a949a937ed59575a9750
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / [ ④ Spellsongs [Mental Power]]
@@ -20,17 +20,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Musical instruments are _always_ required to sing spellsongs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03334))_
+- Musical instruments are _always_ required to sing spellsongs. Being able to sing is also a necessary condition, but there is an exception if you choose a flute as your instrument. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03334))_
 - A bard can learn _one_ spellsong per skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03335))_
 - If the game master wants to provide the players with information in the form of ancient poems or folklore, please decide on a _rarity_ and use it as the target score when making a success roll check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03336))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03095))_
 

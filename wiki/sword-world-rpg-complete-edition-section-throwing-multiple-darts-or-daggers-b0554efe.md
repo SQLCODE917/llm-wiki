@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-dag
 page_kind: source
 summary: Throwing Multiple Darts or Daggers: 7 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-b0554efe@27d972105f95d181fa62bad47b7a0166
+projection_coverage: section-sword-world-rpg-complete-edition-section-throwing-multiple-darts-or-daggers-b0554efe@998a780d15d544c8c629abcbf6a854dd
 ---
 
 # Throwing Multiple Darts or Daggers
@@ -20,20 +20,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- All objects thrown at the same time must have the _same weight_ (required strength). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07251))_
-- The _number_ thrown at the same time becomes a _penalty_ to attack power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07253))_
-- There must _always_ be _one_ target. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07254))_
+- 1. All objects thrown at the same time must have the _same weight_ (required strength). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07251))_
+- 3. The _number_ thrown at the same time becomes a _penalty_ to attack power. For example, if you throw _three_ at the same time, that’ll incur a -3 penalty to your attack power for each hit check. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07253))_
+- 4. You _cannot_ choose _multiple_ targets. There must _always_ be _one_ target. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07254))_
 - This optional rule increases the chance that a high-level character will defeat a low-level character or monster in one blow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07255))_
 - Never forget the limitation of projectiles: they _cannot_ be used while in an _engagement_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07256))_
 - Never forget the limitation of projectiles: they _cannot_ be used while in an _engagement_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07256))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Throwing Multiple Darts or Daggers
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07250))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07253))_
 
-> It’s possible to throw **multiple** darts or daggers at once. However, the following restrictions occur in this case:
+> 3. The _number_ thrown at the same time becomes a _penalty_ to attack power. For example, if you throw _three_ at the same time, that’ll incur a -3 penalty to your attack power for each hit check.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07252))_
 

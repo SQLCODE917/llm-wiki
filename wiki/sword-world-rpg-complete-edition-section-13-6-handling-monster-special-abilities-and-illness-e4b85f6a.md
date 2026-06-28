@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-6-handling-monster-special-
 page_kind: source
 summary: 13.6 Handling Monster Special Abilities / and Illness 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-and-illness-e4b85f6a@d97ab64897cb5c1c42db5249789cd77d
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-and-illness-e4b85f6a@c185822e7f73198f5e5e5164ae7e48f2
 ---
 
 # 13.6 Handling Monster Special Abilities / and Illness 》
@@ -20,13 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Ancient magic that alters the atmosphere ( _XX Cloud_ ) is also ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
-- These monsters are not affected by poison and illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
-- Certain mythical beasts, magical beasts, undead powered by negative life, and pseudo-life forms created by magic, are free from poison and illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
+- Certain mythical beasts, magical beasts, undead powered by negative life, and pseudo-life forms created by magic, are free from poison and illness. These monsters are not affected by poison and illness. Ancient magic that alters the atmosphere ( _XX Cloud_ ) is also ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06312))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 12: Various Checks / 12.2 Rules for Poison, Illness and Infection
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04239))_
+
+> *Holy prayer and daemon scream are basically the same thing. However, there are slight differences depending on the god (wicked god) you believe in. **Now (believed to be) lost.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04238))_
 

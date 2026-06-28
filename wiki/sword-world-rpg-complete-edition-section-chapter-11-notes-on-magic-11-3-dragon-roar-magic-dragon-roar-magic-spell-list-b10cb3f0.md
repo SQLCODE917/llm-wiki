@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Dragon Roar Magic Spell List: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-dragon-roar-magic-spell-list-b10cb3f0@e40e4feb4b65c05941ed8dbf81acf90e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-dragon-roar-magic-spell-list-b10cb3f0@11130c4189f9bedbb010276193906bc7
 ---
 
 # Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Dragon Roar Magic Spell List
@@ -20,14 +20,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Among the types of spells, there is one called **summon** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03973))_
-- Here is a list of dragon roar magic that dragon priests can use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03973))_
-- Dragon priests will not join an adventurer's party due to their religious beliefs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03974))_
-- It can be said that this skill is not suitable for a player character. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03974))_
+- Here is a list of dragon roar magic that dragon priests can use. Among the types of spells, there is one called **summon** . For this, please follow the _summon_ rules below. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03973))_
+- Dragon priests will not join an adventurer's party due to their religious beliefs. It can be said that this skill is not suitable for a player character. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03974))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 

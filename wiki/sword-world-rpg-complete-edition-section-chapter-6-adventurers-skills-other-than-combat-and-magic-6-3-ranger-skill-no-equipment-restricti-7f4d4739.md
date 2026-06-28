@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (No equipment restriction): 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-no-equipment-restricti-7f4d4739@70abab91d272b1b22a478ecf3fd76a89
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-no-equipment-restricti-7f4d4739@a5f8ccdc81d3d4dcf7f8fb09cfc51acb
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (No equipment restriction)
@@ -36,17 +36,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The ranger skill is treated the same as the fighter skill (attack power, bonus damage modifiers) _only_ when attacking with projectiles. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03257))_
-- When using the thief skill for defense, you must be lightly armed (required strength of weapons and armor must be _half_ your own strength or less). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03257))_
-- The ranger skill is _not_ relevant to the use of or defense from melee weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03257))_
+- The ranger skill is treated the same as the fighter skill (attack power, bonus damage modifiers) _only_ when attacking with projectiles. You can use any projectile as long as your strength allows it. The ranger skill is _not_ relevant to the use of or defense from melee weapons. Adventurers attack with the ranger skill and defend with the fighter or thief skill. When using the thief skill for defense, you must be lightly armed (required strength of weapons and armor must be _half_ your own strength or less). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03257))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03254))_
-
-> In other cases (such as searching for herbs), the _game master_ should determine a target score for the check.
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (No equipment restriction)
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03257))_
 

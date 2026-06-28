@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=4: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-2-fae-monster-level-4-ae17267c@e574f8b0752b6f125c9835927f56063e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-2-fae-monster-level-4-ae17267c@45c0bef77aea3e3584439369259283c3
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=4
@@ -56,23 +56,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, water spirits only) are both defeated will either join another group or flee. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04698))_
-- When this is not possible, the mermen will fight to the death. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04698))_
+- Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, water spirits only) are both defeated will either join another group or flee. When this is not possible, the mermen will fight to the death. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04698))_
 - Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, water spirits only) are both defeated will either join another group or flee. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04698))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=4
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04694))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04698))_
 
-> They use a trident as a weapon.
+> Agility=16 Movement Speed=3/20 (water) Number=One to several Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 10 (3) Strike Points=7 Evasion Points=12 (5) Defense Points=6 Life Points/Resistance=12/12 (5) Mental Points/Resistance=18/13 (6) Special Abilities=4th level spirit magic (Magic Intensity/Magic Power=13/6, water spirits only) are both defeated will either join another group or flee. When this is not possible, the mermen will fight to the death.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04697))_
 
 > Rarity=18
 
-### Technical atom 2
+### Technical frame 2: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

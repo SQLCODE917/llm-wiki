@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-1-ac
 page_kind: source
 summary: Chapter 3: Combat Rounds / 3.1 Action Announcements / Player Action Announcements: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-1-action-announcements-player-action-announcements-0db8e6fd@6866e264012bca2fe5b4813d627b3c4d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-1-action-announcements-player-action-announcements-0db8e6fd@03a7686d80c4a678256d238c8eb53d35
 ---
 
 # Chapter 3: Combat Rounds / 3.1 Action Announcements / Player Action Announcements
@@ -21,12 +21,15 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Instead of _attack with my weapon_ , they should say _attack the rightmost goblin with my sword_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00680))_
-- If the game master asks a question, be sure to answer it clearly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00682))_
-- You must be specific in this way. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00682))_
+- You must be specific in this way. If the game master asks a question, be sure to answer it clearly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00682))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 3: Combat Rounds / 3.1 Action Announcements / Player Action Announcements
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00680))_
+
+> Instead of _attack with my weapon_ , they should say _attack the rightmost goblin with my sword_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00679))_
 

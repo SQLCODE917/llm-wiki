@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-17-special
 page_kind: source
 summary: Chapter 5: Magic / 5.1.17 Special Holy Magic List / Rahda Special Holy Magic List [ Inspiration ] (Spell Level=3): 7 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-17-special-holy-magic-list-rahda-special-holy-magic-list-inspiration-spell-l-eda6a95d@a8cb9b03468fb3ef20573158d9c32380
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-17-special-holy-magic-list-rahda-special-holy-magic-list-inspiration-spell-l-eda6a95d@a715e3e3872c302118f1c12591e899ab
 ---
 
 # Chapter 5: Magic / 5.1.17 Special Holy Magic List / Rahda Special Holy Magic List [ Inspiration ] (Spell Level=3)
@@ -20,12 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02975))_
+- If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ . If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02975))_
 - This spell cannot be recast until the caster falls asleep. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02976))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.17 Special Holy Magic List
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 
@@ -52,35 +52,27 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1.17 Special Holy Magic List / Rahda Special Holy Magic List [ Inspiration ] (Spell Level=3)
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02971))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02975))_
+
+> If you cast this spell, you can turn a failure into a success only _once_ on a success roll to see if you know something, such as _appraise treasure_ or _monster check_ . If a knowledge-related success roll _fails_ , the player can optionally make it a _success_ .
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02971, source-range-870a16bc-02972, source-range-870a16bc-02973, source-range-870a16bc-02974))_
 
 > Base Mental Power Cost=3
 
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02972))_
-
 > Distance=Caster
-
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02973))_
 
 > Area=Caster
 
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02974))_
-
 > Duration=Until the caster falls asleep Effect=You can turn a failed success roll related to _knowledge_ into a success only once Type=Non-removable Expansion=Resist=None
 
-### Technical atom 6
+### Technical frame 3: Chapter 5: Magic / 5.1.17 Special Holy Magic List / Rahda Special Holy Magic List [ Inspiration ] (Spell Level=3)
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02974))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02976))_
 
-> Duration=Until the caster falls asleep Effect=You can turn a failed success roll related to _knowledge_ into a success only once Type=Non-removable Expansion=Resist=None
+> This spell cannot be recast until the caster falls asleep.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02975))_
 

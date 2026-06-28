@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Special: 2 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-special-982e10c0@10f10cf03498e661f958c319fab16748
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-special-982e10c0@7718e6a1755f8c591b0d223879f8064e
 ---
 
 # Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Special
@@ -24,7 +24,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.17 Special Holy Magic List
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02918))_
 
@@ -51,7 +51,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 10: Notes on Combat / Combat in Special Situations
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
@@ -80,11 +80,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Representing Special Monsters with Character Data
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06171))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06174))_
 
-> Here, in order to represent monsters such as featherfolk, mermen, dark elves, noble lizardmen, and centaurs as characters, we’ll show how to calculate the sub-ability scores of each monster ( _Table 13-2: Determining Monster SubAbility Scores_ ).
+> Note: A dark elf can add +4 to mental power resistance due to the blessings of the dark gods. A noble lizardman's entire body is covered in scales which adds +5 to defense power.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06173))_
 
@@ -103,7 +103,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Special
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07450))_
+
+> Special notes are given in cases where special treatment is applied for that mate.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07451))_
 

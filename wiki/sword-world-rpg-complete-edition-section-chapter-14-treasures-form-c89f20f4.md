@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-form-c89f
 page_kind: source
 summary: Chapter 14: Treasures / 《 Form 》: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-form-c89f20f4@88c2260befdf859cd1a3b772a0b9abbf
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-form-c89f20f4@4c4b82dd4c81b0f6234f3826eff71138
 ---
 
 # Chapter 14: Treasures / 《 Form 》
@@ -20,7 +20,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Form=Iron jar
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06932))_
+
+> The summoned daemon will obey the summoner's commands. Please use _Table 14-1: Daemon Jar Summon_ to determine which daemon will appear. If the summoner is gone, the daemon, according to its intrinsic nature, will begin to act violently.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06930))_
 

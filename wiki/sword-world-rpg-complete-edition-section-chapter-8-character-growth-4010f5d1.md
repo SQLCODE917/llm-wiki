@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-8-character-growth-401
 page_kind: source
 summary: Chapter 8: Character Growth: 65 source-backed entries and 19 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-4010f5d1@8260a97595f964a96046bda5e4e2c733
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-4010f5d1@f23d1b4231e765b22dc8d194e909c99d
 ---
 
 # Chapter 8: Character Growth
@@ -27,40 +27,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 8: Character Growth / Experience Points
 
-- **Character growth** is done using these experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03544))_
-- **Experience points** are points given to characters as an indicator of how much experience they have gained as a result of their adventures. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03544))_
+- **Experience points** are points given to characters as an indicator of how much experience they have gained as a result of their adventures. **Character growth** is done using these experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03544))_
 
 ### Chapter 8: Character Growth / How to Use Experience Points: Increasing Skill Levels
 
+- At the end of an adventure, characters gain experience points. By _spending_ these experience points, a character can increase their skill level-you pay experience points to buy skill levels. A character can advance in any number of skills and by any number of levels at once. However, in any case, a character's skill level can only reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
+- The experience points required to increase each skill are shown on Table 8- 1: Experience Points by Skill. For now, please ignore the rightmost column (reduction for acquiring sorcerer & sage at the same time). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03548))_
 - However, in any case, a character's skill level can only reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- At the end of an adventure, characters gain experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- A character can advance in any number of skills and by any number of levels at once. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- However, in any case, a character's skill level can only reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03547))_
-- The experience points required to increase each skill are shown on Table 8- 1: Experience Points by Skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03548))_
 
 ### Chapter 8: Character Growth / Example:
 
-- He would like to increase his fighter skill level, which is currently 2, to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- At this time, the required experience points are 2000 points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- There are 500 experience points left. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- The experience points required for this are 1000 + 1500 = _2500_ points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- He still has 3000 experience points left. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- The adventurer Ducard II gains 5000 experience points as a result of his adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
-- Any _remaining_ experience points can be carried over and used in addition to the experience points earned on the next adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03551))_
-- It may seem strange to carry over _experience_ , but think of it as cutting off the adventurer's growth by the amount of experience points carried over for now. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03551))_
+- The adventurer Ducard II gains 5000 experience points as a result of his adventure. He would like to increase his fighter skill level, which is currently 2, to 3rd level. At this time, the required experience points are 2000 points. He still has 3000 experience points left. He pursues his abilities as a ranger and raises his ranger skill from 1st level to 3rd level in one go. The experience points required for this are 1000 + 1500 = _2500_ points. There are 500 experience points left. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03550))_
+- Any _remaining_ experience points can be carried over and used in addition to the experience points earned on the next adventure. It may seem strange to carry over _experience_ , but think of it as cutting off the adventurer's growth by the amount of experience points carried over for now. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03551))_
 
 ### Chapter 8: Character Growth / Example:
 
-- Ducard II will keep 500 experience points for future use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
-- There is a close connection between the sorcerer skill and the sage skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
-- The sorcerer skill is the mastery of _ancient_ through study and the improvement of magical ability, while the sage skill is knowledge gained primarily through the study of ancient books. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
-- This is because you can't grow from experiences you haven't had. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- Experience points _cannot_ be negative. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- You also cannot _sell_ your skill levels for experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- This is because you can't grow from experiences you haven't had. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
-- In fact, many sorcerers are excellent sages, and the sorcerers’ guild is also called the _academy of sages_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03557))_
-- These two skills have something in common in that their basics are the study of _ancient_ as well as ancient books. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03557))_
+- Ducard II will keep 500 experience points for future use. If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
+- There is a close connection between the sorcerer skill and the sage skill. The sorcerer skill is the mastery of _ancient_ through study and the improvement of magical ability, while the sage skill is knowledge gained primarily through the study of ancient books. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
+- Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
+- These two skills have something in common in that their basics are the study of _ancient_ as well as ancient books. In fact, many sorcerers are excellent sages, and the sorcerers’ guild is also called the _academy of sages_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03557))_
 - For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+- This is because you can't grow from experiences you haven't had. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
 
 ### Chapter 8: Character Growth / 8.4 Increasing General Skills
 
@@ -68,59 +55,46 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 8: Character Growth / 8.4 Increasing General Skills / Example 1:
 
-- Suppose a character has a 3rd level sorcerer skill and a 1st level sage skill and increases his sage skill to 2nd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03566))_
-- At this time, the newly acquired _sage skill level 2_ is _lower_ than the already acquired _sorcerer skill level 3_ , so he can acquire it for _fewer_ experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03566))_
-- The reduction on the _2 levels_ row is _500 points_ , so the experience points spent are _1000_ points (experience points originally required for sage skill level 2) - _500_ points (reduction amount) = **500** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03566))_
-- The reduction on the _3 levels_ row is _1000 points_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03567))_
-- This character can also reduce his required experience points when increasing his sage skill to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03567))_
+- Suppose a character has a 3rd level sorcerer skill and a 1st level sage skill and increases his sage skill to 2nd level. At this time, the newly acquired _sage skill level 2_ is _lower_ than the already acquired _sorcerer skill level 3_ , so he can acquire it for _fewer_ experience points. The reduction on the _2 levels_ row is _500 points_ , so the experience points spent are _1000_ points (experience points originally required for sage skill level 2) - _500_ points (reduction amount) = **500** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03566))_
+- This character can also reduce his required experience points when increasing his sage skill to 3rd level. The reduction on the _3 levels_ row is _1000 points_ . Therefore, the experience points required to acquire a 3rd level sage skill are 1500 - _1000_ = **500** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03567))_
+- There is no reduction in experience points when increasing the sage skill to 4th level. This is because the sorcerer skill is only 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03568))_
 - Therefore, the experience points required to acquire a 3rd level sage skill are 1500 - _1000_ = **500** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03567))_
-- Therefore, the experience points required to acquire a 3rd level sage skill are 1500 - _1000_ = **500** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03567))_
-- There is no reduction in experience points when increasing the sage skill to 4th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03568))_
-- This is because the sorcerer skill is only 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03568))_
 - This is because the sorcerer skill is only 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03568))_
 
 ### Chapter 8: Character Growth / 8.4 Increasing General Skills / Example 2:
 
-- However, this perk is not available when increasing the sorcerer skill to 4th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03570))_
-- In this case, as in the example above, when increasing the sorcerer skill to 2nd and 3rd level, there is a reduction in experience points for each, and they can be increased with 3000 - _500_ = **2500** and 4000 - _1000_ = **3000** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03570))_
+- Consider a character with a 1st level sorcerer skill and a 3rd level sage skill who wants to advance his sorcerer skill. In this case, as in the example above, when increasing the sorcerer skill to 2nd and 3rd level, there is a reduction in experience points for each, and they can be increased with 3000 - _500_ = **2500** and 4000 - _1000_ = **3000** points. However, this perk is not available when increasing the sorcerer skill to 4th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03570))_
 - A character with a 3rd level sorcerer skill or a 3rd level sage skill will not receive any experience point reductions regardless of whether they reach 4th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03571))_
 
 ### Chapter 8: Character Growth / 8.4 Increasing General Skills / Example 3:
 
-- When a character who does not have either the sorcerer skill or the sage skill newly acquires a 1st level sorcerer skill, they can also acquire a 1st level sage skill at the same time _without_ spending experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03573))_
+- When a character who does not have either the sorcerer skill or the sage skill newly acquires a 1st level sorcerer skill, they can also acquire a 1st level sage skill at the same time _without_ spending experience points. If you acquire the 1st level sorcerer skill first, the experience points will be reduced when you acquire the 1st level sage skill, and as a result, the required experience points will be 500 - 500 = **0** points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03573))_
 
 ### Chapter 8: Character Growth / How to Use Experience Points: Increasing Ability Scores
 
-- Experience points can also be used to increase your character's ability scores. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03576))_
-- _Life force_ and _mental power_ are half of that (1500 points, 2500 points). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03576))_
-- To increase _dexterity_ , _agility_ , _intelligence_ , or _strength_ by 1 point, humans need 3000 experience points and non-human adventurers need 5000 experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03576))_
+- Experience points can also be used to increase your character's ability scores. To increase _dexterity_ , _agility_ , _intelligence_ , or _strength_ by 1 point, humans need 3000 experience points and non-human adventurers need 5000 experience points. _Life force_ and _mental power_ are half of that (1500 points, 2500 points). There is no maximum. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03576))_
 
 ### Chapter 8: Character Growth / Increasing General Skills
 
-- General skills are not necessary for adventurer characters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03579))_
-- However, providing general skills may lead to individualization of a character and expand the range of _role-playing_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03579))_
-- Therefore, no matter how much experience you might gain through adventuring, it would be silly for it to result in you being able to grow fine eggplant (increase in farmer skill) or result in you being able to have lots of repeat customers (increase in bartender skill). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
-- Therefore, no matter how much experience you might gain through adventuring, it would be silly for it to result in you being able to grow fine eggplant (increase in farmer skill) or result in you being able to have lots of repeat customers (increase in bartender skill). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
-- All decisions are made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
-- It's only acceptable to increase the level of a general skill if you've used that specific general skill for a long period of time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
-- It's only acceptable to increase the level of a general skill if you've used that specific general skill for a long period of time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
-- As he works in this way, he will learn things like how to be liked by people at a bar, and how to make simple dishes that pair well with drinks. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
-- Of course, different people will pick up different jobs at different speeds, but anyone would have gained some experience in that time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
-- So the game master then decides to give the character 2 levels in the bartender skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
-- He has no choice but to work as a shop clerk. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
-- So the game master then decides to give the character 2 levels in the bartender skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
-- 5th level signifies being sufficient at a general skill, so consider reaching levels beyond that to take a large amount of effort. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03585))_
+- General skills are not necessary for adventurer characters. However, providing general skills may lead to individualization of a character and expand the range of _role-playing_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03579))_
+- Now let's explain how to increase your general skill levels. Make no mistake, general skills are skills that are not directly related to adventure. Therefore, no matter how much experience you might gain through adventuring, it would be silly for it to result in you being able to grow fine eggplant (increase in farmer skill) or result in you being able to have lots of repeat customers (increase in bartender skill). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+- It's only acceptable to increase the level of a general skill if you've used that specific general skill for a long period of time. All decisions are made by the game master. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+- For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be liked by people at a bar, and how to make simple dishes that pair well with drinks. Of course, different people will pick up different jobs at different speeds, but anyone would have gained some experience in that time. So the game master then decides to give the character 2 levels in the bartender skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
+- 5th level signifies being sufficient at a general skill, so consider reaching levels beyond that to take a large amount of effort. Doing something casually in your _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03585))_
 - 131 free time would probably only let you get to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03586))_
+- Though they may be general skills, you won't find many humans, etc. who reach 10th level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03587))_
+- Therefore, no matter how much experience you might gain through adventuring, it would be silly for it to result in you being able to grow fine eggplant (increase in farmer skill) or result in you being able to have lots of repeat customers (increase in bartender skill). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03580))_
+- It's only acceptable to increase the level of a general skill if you've used that specific general skill for a long period of time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03582))_
+- So the game master then decides to give the character 2 levels in the bartender skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
 - 131 free time would probably only let you get to 3rd level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03586))_
-- Though they may be general skills, you won't find many humans, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03587))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.1 Ability Scores / 【 Ability Bonuses 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00177))_
 
-> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the
+> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00179))_
 
@@ -149,11 +123,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00319))_
 
-> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+> Depending on whether a half-elf was raised by humans or elves, the skills they have from the start and the limitations on the skills they can acquire differ.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00318))_
 
@@ -172,7 +146,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
 
@@ -209,11 +183,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
 
-> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00325))_
 
@@ -242,7 +216,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
+
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 
@@ -281,7 +259,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -310,11 +292,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 1: Character / 1.4 Character Creation / For Humans and HalfElves Raised by Humans
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00347))_
 
-> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+> terms of experience points. Such special backgrounds are not allowed without the game master's permission.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00346))_
 
@@ -341,11 +323,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -368,7 +350,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
@@ -403,11 +385,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
-> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+> weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 
@@ -446,7 +428,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -473,7 +455,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 12
+### Technical frame 12: Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+
+> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00439))_
 
@@ -494,7 +480,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -531,23 +521,31 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 14
+### Technical frame 14: Chapter 8: Character Growth / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03556))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03555))_
 
-> Experience points _cannot_ be negative. This is because you can't grow from experiences you haven't had. You also cannot _sell_ your skill levels for experience points.
+> There is a close connection between the sorcerer skill and the sage skill. The sorcerer skill is the mastery of _ancient_ through study and the improvement of magical ability, while the sage skill is knowledge gained primarily through the study of ancient books.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03554))_
 
 > If he gains 5000 experience points again on his next adventure, he can now use his 5500 experience points to advance.
 
-### Technical atom 15
+### Technical frame 15: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03559))_
 
 > **Table 8-1: Experience Points by Skill**
 
-### Technical atom 16
+### Technical frame 16: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -584,27 +582,27 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 17
+### Technical frame 17: Chapter 8: Character Growth / 8.4 Increasing General Skills
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03563))_
+
+> When a character who already has the sorcerer skill acquires the sage skill at the same level or lower, or when a character who already has the sage skill acquires the sorcerer skill at the same level or lower, the amount of experience points spent can be reduced depending on the skill level.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03564))_
 
 > Please see the rightmost column of Table 8-1: Experience Points by Skill.
 
-### Technical atom 18
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03570))_
-
-> Consider a character with a 1st level sorcerer skill and a 3rd level sage skill who wants to advance his sorcerer skill. In this case, as in the example above, when increasing the sorcerer skill to 2nd and 3rd level, there is a reduction in experience points for each, and they can be increased with 3000 - _500_ = **2500** and 4000 - _1000_ = **3000** points. However, this perk is not available when increasing the sorcerer skill to 4th level.
+### Technical frame 18: Chapter 8: Character Growth / 8.4 Increasing General Skills / Example 3:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03573))_
 
 > If you acquire the 1st level sorcerer skill first, the experience points will be reduced when you acquire the 1st level sage skill, and as a result, the required experience points will be 500 - 500 = **0** points.
 
-### Technical atom 19
+### Technical frame 19: Chapter 8: Character Growth / Increasing General Skills
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03583))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03585))_
 
-> For example, let's say a character is forced to work in a bar for two months as punishment for eating and drinking without paying. He has no choice but to work as a shop clerk. As he works in this way, he will learn things like how to be liked by people at a bar, and how to make simple dishes that pair well with drinks. Of course, different people will pick up different jobs at different speeds, but anyone would have gained some experience in that time. So the game master then decides to give th
+> 5th level signifies being sufficient at a general skill, so consider reaching levels beyond that to take a large amount of effort. Doing something casually in your
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03584))_
 

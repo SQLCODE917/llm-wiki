@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs
 page_kind: source
 summary: Chapter 5: Magic / 5.3 Spellsongs / 5.3.1 Spellsong List: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs-5-3-1-spellsong-list-4173080f@2a77751842d217a27660ba8d1608aece
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs-5-3-1-spellsong-list-4173080f@dbc0db465fb05f36a3ba7de7989573b3
 ---
 
 # Chapter 5: Magic / 5.3 Spellsongs / 5.3.1 Spellsong List
@@ -21,16 +21,15 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - The types and effects of spellsongs are shown below. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03075))_
-- On the list, spellsongs with the note that says _mind_ are spellsongs that affect the mind of the listener. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
-- These can be considered in the same way as magic that When a bard uses the ability of a spellsong, you resolve the effect in the around _mental power consumed x 1000 gamels_ as a guideline. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
+- On the list, spellsongs with the note that says _mind_ are spellsongs that affect the mind of the listener. These can be considered in the same way as magic that When a bard uses the ability of a spellsong, you resolve the effect in the around _mental power consumed x 1000 gamels_ as a guideline. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03095))_
 

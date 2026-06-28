@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-6-at
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.6 Attacks From Monsters Against Characters / Damage Reduction: 4 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-6-attacks-from-monsters-against-characters-damage-reduction-26124261@43b60d343bf790fcaad2b718080fddde
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-6-attacks-from-monsters-against-characters-damage-reduction-26124261@2bb37cd4df3012e70ad28594830084f6
 ---
 
 # Chapter 4: Weapon Combat / 4.6 Attacks From Monsters Against Characters / Damage Reduction
@@ -22,7 +22,5 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The result of your defense roll plus this **damage reduction** equals the _final_ amount of damage your character can reduce. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00977))_
-- Characters can also reduce damage using their _adventurer level_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00977))_
-- No matter how high your character's damage reduction (adventurer level), that damage _cannot_ be reduced at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00978))_
-- However, if the result of your defense roll is _double ones_ , your character’s damage reduction is _meaningless_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00978))_
+- Characters can also reduce damage using their _adventurer level_ . The result of your defense roll plus this **damage reduction** equals the _final_ amount of damage your character can reduce. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00977))_
+- However, if the result of your defense roll is _double ones_ , your character’s damage reduction is _meaningless_ . No matter how high your character's damage reduction (adventurer level), that damage _cannot_ be reduced at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00978))_

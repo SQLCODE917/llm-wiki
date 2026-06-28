@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-1-4-6-purchasing-weapons-and-armor-b43ba62e@499d47fe02683974dfc4f8761dfb1985
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-1-4-6-purchasing-weapons-and-armor-b43ba62e@5ef54c3135942e12000dc368300b40a7
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
@@ -20,12 +20,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- All that is left to do is use your money to purchase the equipment your character needs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
-- Once ability scores and skills are determined, the character is almost complete. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
+- Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
@@ -35,7 +34,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 1-8: Weapons-1**
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
@@ -70,11 +69,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / 1.4.6 Purchasing Weapons and Armor
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00408))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00405))_
 
-> Stock up on weapons, armor, and other equipment and get ready for adventure. At this time, please note the following.
+> Once ability scores and skills are determined, the character is almost complete. All that is left to do is use your money to purchase the equipment your character needs.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00409))_
 

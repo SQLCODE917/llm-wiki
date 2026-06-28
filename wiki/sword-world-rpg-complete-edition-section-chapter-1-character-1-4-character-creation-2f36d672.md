@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation: 54 source-backed entries and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-2f36d672@efd980fb3df406c4aa9849ca4094c211
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-2f36d672@172c549fa73fea0c0b03bb7fbdf20448
 ---
 
 # Chapter 1: Character / 1.4 Character Creation
@@ -30,71 +30,54 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
-- The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
+- The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. In this case, it wouldn’t make sense to have the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
+- The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at **Table 1-9: Armor** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 - For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
-- In this case, it wouldn’t make sense to have the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
-- For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
 - The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
-- The following are guidelines for purchasing weapons and armor based on which skills a character has. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
 ### Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
 
-- Specifically, it is armor that requires up to _half of your strength (rounded up)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
-- For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
-- If the equipment has both _unrestricted_ and _restricted_ skills, please understand that your equipment must conform to the _restricted_ skill if you want to take full advantage of both skills. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00441))_
-- the description of each skill and decide which weapons and armor you will buy. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00441))_
-- You should buy a weapon whose required strength is the same as your own strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
-- For weapons, there are no restrictions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
-- Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
-- On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
+- If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+- the description of each skill and decide which weapons and armor you will buy. If the equipment has both _unrestricted_ and _restricted_ skills, please understand that your equipment must conform to the _restricted_ skill if you want to take full advantage of both skills. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00441))_
+- For weapons, there are no restrictions. You should buy a weapon whose required strength is the same as your own strength. Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . Therefore, it is a good idea to choose a projectile, if you have to choose a weapon. On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
 
 ### Chapter 1: Character / 1.4 Character Creation / [ Fighter ］
 
-- Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
-- The basic idea is to choose weapons and armor whose required strength is the same as your own strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
+- There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
 
 ### Chapter 1: Character / 1.4 Character Creation / [ Thief ]
 
-- For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
-- Specifically, weapons and armor that require up to _half your strength (rounded up)_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
+- If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ . Specifically, weapons and armor that require up to _half your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
 
 ### Chapter 1: Character / 1.4 Character Creation / [ Sorcerer ]
 
+- If you want to make use of your sorcerer skill, your armor must be _cloth_ or _soft leather_ . Either of these should be the one with the greatest required strength within the character's strength range. Also, you should not buy a shield. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
+- For weapons, be sure to purchase a **mage’s staff** . This is essential when using **ancient magic** . If the character's strength is 10 or less, it is appropriate to buy one with the same required strength as the character's strength; if the character's strength is 10 or greater, it is appropriate to buy one with a required strength of 10. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 - Either of these should be the one with the greatest required strength within the character's strength range. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
-- Also, you should not buy a shield. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
-- Either of these should be the one with the greatest required strength within the character's strength range. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
-- This is essential when using **ancient magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
-- For weapons, be sure to purchase a **mage’s staff** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
 ### Chapter 1: Character / 1.4 Character Creation / [ Shaman ]
 
-- Also, you should not buy a shield. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00453))_
-- Of these, the one with the greatest required strength within the character's strength range should be chosen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00453))_
+- If you want to make use of your shaman skill, your armor is limited to _cloth_ , _soft leather_ , or _hard leather_ . Of these, the one with the greatest required strength within the character's strength range should be chosen. Also, you should not buy a shield. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00453))_
+- When choosing a weapon, since you’re not buying a shield, it's a good idea to choose a _two-handed_ weapon if at all possible. It is fundamental to match your strength to the required strength of the weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 - If you want to make use of your shaman skill, your armor is limited to _cloth_ , _soft leather_ , or _hard leather_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00453))_
-- If you want to make use of your shaman skill, your armor is limited to _cloth_ , _soft leather_ , or _hard leather_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00453))_
 - Of these, the one with the greatest required strength within the character's strength range should be chosen. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00453))_
-- It is fundamental to match your strength to the required strength of the weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454))_
 
 ### Chapter 1: Character / 1.4 Character Creation / [ Sage, Bard, Priest ]
 
-- These skills have no weapon or armor restrictions. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00456))_
+- These skills have no weapon or armor restrictions. Refer to restrictions on other skills acquired at the same time. If a character has acquired only these skills, the basic idea is to choose weapons and armor whose required strength is the same as their own strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00456))_
 
 ### Chapter 1: Character / 1.4 Character Creation / Example:
 
+- Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00458))_
+- So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+- When choosing armor, the ranger skill's limitations come into play (required strength can only be up to _half_ one's own strength, armor can only be _non-metal_ or _ring mail_ ). Our character's strength is 14, so we can buy armor with a required strength of 7. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00461))_
+- Since a broadsword is a _one-handed_ weapon, this character can _also_ hold a shield. If we have a large shield, the ranger skill will be limited, so our choice here is limited to a **small shield** . The price is **60** gamels. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00464))_
 - Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00458))_
-- Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00458))_
-- There are no restrictions on either skill when choosing a weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00458))_
-- Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00458))_
-- Here we have chosen the most typical weapon, a **broadsword** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
-- The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
-- Our character's strength is 14, so we can buy armor with a required strength of 7. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00461))_
-- If we have a large shield, the ranger skill will be limited, so our choice here is limited to a **small shield** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00464))_
-- Since a broadsword is a _one-handed_ weapon, this character can _also_ hold a shield. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00464))_
 - If we have a large shield, the ranger skill will be limited, so our choice here is limited to a **small shield** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00464))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -121,7 +104,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -131,7 +114,11 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 1-10: Shields**
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+
+> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00439))_
 
@@ -152,47 +139,43 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00441))_
 
-> For weapons, there are no restrictions. You should buy a weapon whose required strength is the same as your own strength. Ranger does _not_ include the ability to fight with _melee_ weapons, but it _does_ include the ability to handle _projectiles_ . Therefore, it is a good idea to choose a projectile, if you have to choose a weapon. On Table 1-8: Weapons, they are indicated as _throwable_ , _made for throwing_ , and _shooting_ .
+> the description of each skill and decide which weapons and armor you will buy. If the equipment has both _unrestricted_ and _restricted_ skills, please understand that your equipment must conform to the _restricted_ skill if you want to take full advantage of both skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
 
 > If you want to make use of your ranger skill, your _armor_ must be _light_ .
 
-### Technical atom 5
+### Technical frame 5: Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00441))_
 
-> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
+> the description of each skill and decide which weapons and armor you will buy. If the equipment has both _unrestricted_ and _restricted_ skills, please understand that your equipment must conform to the _restricted_ skill if you want to take full advantage of both skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00442))_
 
 > Therefore, it is a good idea to choose a projectile, if you have to choose a weapon.
 
-### Technical atom 6
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00444))_
-
-> There are no restrictions. The basic idea is to choose weapons and armor whose required strength is the same as your own strength. Weapons and armor that have a required strength less than your own strength will make your character's attack and defense incomplete, and weapons and armor with a required strength greater than your own strength cannot be handled.
+### Technical frame 6: Chapter 1: Character / 1.4 Character Creation / [ Thief ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
 
 > If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ .
 
-### Technical atom 7
+### Technical frame 7: Chapter 1: Character / 1.4 Character Creation / [ Sorcerer ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00447))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00451))_
 
-> If you want to take advantage of your thief skill, your weapons _and_ armor must be _light_ . Specifically, weapons and armor that require up to _half your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
+> For weapons, be sure to purchase a **mage’s staff** . This is essential when using **ancient magic** . If the character's strength is 10 or less, it is appropriate to buy one with the same required strength as the character's strength; if the character's strength is 10 or greater, it is appropriate to buy one with a required strength of 10.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
 
 > If you want to make use of your sorcerer skill, your armor must be _cloth_ or _soft leather_ .
 
-### Technical atom 8
+### Technical frame 8: Chapter 1: Character / 1.4 Character Creation / [ Sorcerer ]
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00450))_
 
@@ -202,62 +185,50 @@ From [[sword-world-rpg-complete-edition]].
 
 > If the character's strength is 10 or less, it is appropriate to buy one with the same required strength as the character's strength; if the character's strength is 10 or greater, it is appropriate to buy one with a required strength of 10.
 
-### Technical atom 9
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00454, source-range-870a16bc-00458))_
-
-> When choosing a weapon, since you’re not buying a shield, it's a good idea to choose a _two-handed_ weapon if at all possible. It is fundamental to match your strength to the required strength of the weapon. Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
+### Technical frame 9: Chapter 1: Character / 1.4 Character Creation / [ Sage, Bard, Priest ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00456))_
 
 > If a character has acquired only these skills, the basic idea is to choose weapons and armor whose required strength is the same as their own strength.
 
-### Technical atom 10
+### Technical frame 10: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00458))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00461))_
 
-> Ducard II has 2 levels in the fighter skill and 1 level in the ranger skill. There are no restrictions on either skill when choosing a weapon. Ranger has an advantage in projectiles, but this is consequently irrelevant because of the higher level of the _can use any weapon_ fighter.
+> When choosing armor, the ranger skill's limitations come into play (required strength can only be up to _half_ one's own strength, armor can only be _non-metal_ or _ring mail_ ). Our character's strength is 14, so we can buy armor with a required strength of 7.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
 
 > So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14).
 
-### Technical atom 11
+### Technical frame 11: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00461))_
 
-> So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
+> When choosing armor, the ranger skill's limitations come into play (required strength can only be up to _half_ one's own strength, armor can only be _non-metal_ or _ring mail_ ). Our character's strength is 14, so we can buy armor with a required strength of 7.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00460))_
 
 > The price is 14 x 20 + 40 = **320** (gamels).
 
-### Technical atom 12
+### Technical frame 12: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00459))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00464))_
 
-> So, when choosing a weapon, we'll choose one that has a required strength equal to the character's strength (14). Here we have chosen the most typical weapon, a **broadsword** . The required strength of a broadsword is 8~16, so a broadsword with a required strength of 14 certainly exists.
+> Since a broadsword is a _one-handed_ weapon, this character can _also_ hold a shield. If we have a large shield, the ranger skill will be limited, so our choice here is limited to a **small shield** . The price is **60** gamels.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00461))_
 
 > When choosing armor, the ranger skill's limitations come into play (required strength can only be up to _half_ one's own strength, armor can only be _non-metal_ or _ring mail_ ).
 
-### Technical atom 13
+### Technical frame 13: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00464))_
 
-> Here we will choose **ring mail** .
+> Since a broadsword is a _one-handed_ weapon, this character can _also_ hold a shield. If we have a large shield, the ranger skill will be limited, so our choice here is limited to a **small shield** . The price is **60** gamels.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00463))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00463, source-range-870a16bc-00465))_
 
 > The price is 7 x 30 + 30 = **240** (gamels).
-
-### Technical atom 14
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00462))_
-
-> Here we will choose **ring mail** .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00465))_
 
 > Since our starting amount was 1200 gamels, our character now has 1200 - 320 - 240 - 60 = **580 gamels** remaining.

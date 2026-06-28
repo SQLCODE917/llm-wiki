@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.6 Recovering Mental Power / If the Target Does 5.1.4.8 Not Resist: 6 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-5-1-6-recovering-mental-power-if-the-target-does-5-1-4-db6aadeb@c316a847dfcf8fee91f98915bce5f9e8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-5-1-6-recovering-mental-power-if-the-target-does-5-1-4-db6aadeb@8981e2a4b72119db7ce83c1fd5ec256c
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.6 Recovering Mental Power / If the Target Does 5.1.4.8 Not Resist
@@ -20,15 +20,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
+- Some magic can also have secondary effects. For example, the spirit magic _Fanaticism_ increases attack power, but conversely _decreases_ evasion speed. With such magic, the one on whom it is cast can _choose_ whether or not to resist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
+- If the one on whom the magic is being cast chooses _not_ to resist the magic, it will _definitely_ take effect so long as the one casting the magic does _not_ roll double ones. You’re also allowed to choose to _not resist_ magic like _Fire Bolt_ , which will definitely result in a loss if it's cast on you....... but that probably won't benefit you in any way. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01269))_
 - For example, the spirit magic _Fanaticism_ increases attack power, but conversely _decreases_ evasion speed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
-- Some magic can also have secondary effects. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
-- With such magic, the one on whom it is cast can _choose_ whether or not to resist. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
-- For example, the spirit magic _Fanaticism_ increases attack power, but conversely _decreases_ evasion speed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
-- You’re also allowed to choose to _not resist_ magic like _Fire Bolt_ , which will definitely result in a loss if it's cast on you....... _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01269))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -65,7 +67,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.6 Recovering Mental Power / If the Target Does 5.1.4.8 Not Resist
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01268))_
 

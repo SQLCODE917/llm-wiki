@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (Equipment restriction): 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-equipment-restriction-b25dbf69@976fe1329499a118dfd84064aeb52d10
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-6-3-ranger-skill-equipment-restriction-b25dbf69@5ec227c842115754450ba9075eb95359
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.3 Ranger Skill / (Equipment restriction)
@@ -36,5 +36,4 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03229))_
-- This is handed the same way as the thief's ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03229))_
+- Rangers can listen to even the smallest sounds and can choose the sound they want to hear from a wide range of sounds. This is handed the same way as the thief's ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03229))_

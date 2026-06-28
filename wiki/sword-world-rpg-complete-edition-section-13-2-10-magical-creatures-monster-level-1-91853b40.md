@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-mons
 page_kind: source
 summary: 13.2.10 Magical Creatures / Monster Level=1: 8 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-monster-level-1-91853b40@666d87b849323889792dda3f76e0dbcf
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-10-magical-creatures-monster-level-1-91853b40@05d47dcced62a631c799e423a5b9131b
 ---
 
 # 13.2.10 Magical Creatures / Monster Level=1
@@ -56,33 +56,31 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Homunculus are often created as distractions or scouts for rune masters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05834))_
-- Most resemble humans, but some are ugly, resembling gargoyles, and some have wings and can fly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05834))_
-- homunculus have their own will, and in some cases they may rebel against their creators. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
-- Their life span is only a few years. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
+- Homunculus are often created as distractions or scouts for rune masters. Most resemble humans, but some are ugly, resembling gargoyles, and some have wings and can fly. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05834))_
+- Unlike golems, etc. homunculus have their own will, and in some cases they may rebel against their creators. Their life span is only a few years. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
 - Their life span is only a few years. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05835))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: 13.2.10 Magical Creatures / Monster Level=1
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05831))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05834))_
+
+> Homunculus are often created as distractions or scouts for rune masters. Most resemble humans, but some are ugly, resembling gargoyles, and some have wings and can fly.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05831, source-range-870a16bc-05832, source-range-870a16bc-05833))_
 
 > Rarity=14
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05832))_
-
 > Agility=14 Movement Speed=4/7 (air) Number=One Frequency=Very rare Intellect=Human Reaction=Neutral Attack Points=Barehanded:8 (1) Strike Points=1
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05833))_
 
 > Evasion Points=10 (3) Defense Points=3 Life Points/Resistance=6/8 (1) Mental Points/Resistance=14/9 (2) Special Abilities=None in particular Habitat=Depends on the caster Languages=Low ancient Perception=Five senses
 
-### Technical atom 4
+### Technical frame 2: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

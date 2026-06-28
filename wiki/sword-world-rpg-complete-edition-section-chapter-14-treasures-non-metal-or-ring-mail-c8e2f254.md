@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-non-metal
 page_kind: source
 summary: Chapter 14: Treasures / Non-metal or ring mail: 8 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-non-metal-or-ring-mail-c8e2f254@8dd44da90cda5c1e2dd230bafe45a59c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-non-metal-or-ring-mail-c8e2f254@92f4e594bf176c8c6db0666f0862839f
 ---
 
 # Chapter 14: Treasures / Non-metal or ring mail
@@ -23,37 +23,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This trend is particularly noticeable in non-metallic or ring mail armor preferred by thieves and rangers, where armor with high required strength tends to be avoided. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
-- Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
-- For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
+- Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This trend is particularly noticeable in non-metallic or ring mail armor preferred by thieves and rangers, where armor with high required strength tends to be avoided. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Non-metal or ring mail
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06556))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
+
+> Similar to weapons, it's recommended to give each piece of magical armor its own name and lore by referencing the descriptions of magical armor that follow, which helps enhance the atmosphere of Alecrast. Here, we provide a price list of non-metallic or ring mail armor with _+1 power_ as a guideline for game masters when rewarding characters. For armor, items that exceed the _required strength_ often see decreased demand, so higher _required strength_ doesn't necessarily mean higher prices. This
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06556, source-range-870a16bc-06557, source-range-870a16bc-06558, source-range-870a16bc-06559))_
 
 > Rarity=12
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06557))_
-
 > Enchanter=Many
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06558))_
 
 > Form=Non-metal or ring mail armor Required Strength/Base Trade Price=See description
 
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06559))_
-
 > Powers=+1 to evasion speed and damage reduction
 
-### Technical atom 5
+### Technical frame 2: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
@@ -90,7 +80,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 3: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
 
@@ -127,7 +117,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 4: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06591))_
 

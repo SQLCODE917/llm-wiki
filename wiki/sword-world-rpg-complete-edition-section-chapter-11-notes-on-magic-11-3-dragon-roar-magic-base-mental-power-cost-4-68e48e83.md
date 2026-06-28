@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3
 page_kind: source
 summary: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4: 10 source-backed entries and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-base-mental-power-cost-4-68e48e83@e819bfe50ac433a099d22e787b357480
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-11-notes-on-magic-11-3-dragon-roar-magic-base-mental-power-cost-4-68e48e83@27ca86966578bfd486fe022101b9346f
 ---
 
 # Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
@@ -24,48 +24,34 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
-- However, while these claws are grown out, you cannot grasp or hold anything. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04002))_
-- it can also deal bonus damage equal to _dragon priest skill level + strength bonus_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04002))_
-- Claw attacks allow you to attack with both hands at the same time without penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04002))_
+- resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+- it can also deal bonus damage equal to _dragon priest skill level + strength bonus_ . Claw attacks allow you to attack with both hands at the same time without penalty. However, while these claws are grown out, you cannot grasp or hold anything. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04002))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03992))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
 
-> You will be able to communicate with reptiles such as snakes and lizards, as well as lizardmen. This spell _cannot_ give any binding commands to the opponent. If the opponent's intelligence is high enough, you can negotiate, but if the opponent's intelligence is not sufficient, you can only know about the opponent's emotions and degree of hunger. However, the risk of being attacked by the opponent is reduced. Your opponent will no longer attack you unless they're enraged or extremely hungry.
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03995, source-range-870a16bc-03996, source-range-870a16bc-03997, source-range-870a16bc-03998, source-range-870a16bc-03999))_
 
 > Distance=Caster
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03996))_
-
 > Area=Caster
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03997))_
 
 > Duration=18 rounds
 
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03998))_
-
 > Effect=Wrap your entire body in scales, increasing defense power by +5 Type=Target score Expansion=Final score, duration Resist=None
-
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03999))_
 
 > When this spell is chanted, the caster's entire body is covered with scales, **Table 11-1: Summon**
 
-### Technical atom 6
+### Technical frame 2: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 

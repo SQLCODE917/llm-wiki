@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-1-how
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2.1 How to Read the Monster Catalog / 《 Humans 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-1-how-to-read-the-monster-catalog-humans-75fee418@d309b047e9e1aa9484b8762ac657ff25
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-1-how-to-read-the-monster-catalog-humans-75fee418@343cdb387205807655495a3fce4bb630
 ---
 
 # Chapter 13: Monsters! / 13.2.1 How to Read the Monster Catalog / 《 Humans 》
@@ -23,16 +23,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- There are bandits who build strongholds in the mountains and fields and attack nearby villages and roads, and dark priests who believe in wicked gods and do evil according to their teachings. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04581))_
-- Even among humans, there are those who are called villains. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04581))_
+- Even among humans, there are those who are called villains. There are bandits who build strongholds in the mountains and fields and attack nearby villages and roads, and dark priests who believe in wicked gods and do evil according to their teachings. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04581))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / For Humans and HalfElves Raised by Humans
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00344, source-range-870a16bc-00348))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00347))_
 
-> If the player's background is _merchant/scholar_ (roll 8), they must choose either 3rd level in the merchant skill or 3rd level in the sage skill for their character to acquire. If a character has acquired the merchant skill, they must _always_ come from the merchant background. If they've acquired the sage skill, they can choose to come from _either_ the merchant _or_ scholar background. The _backgrounds_ table does not always have to be used. Players may, if they so choose, create a character
+> terms of experience points. Such special backgrounds are not allowed without the game master's permission.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00346))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs
 page_kind: source
 summary: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs-table-5-10-requiem-715f8248@031ed30b412d1312fb28268f8d78ae5a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs-table-5-10-requiem-715f8248@4da226402a62161eca8a6b2c9db864ff
 ---
 
 # Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
@@ -24,11 +24,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03093))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> With this spellsong, a bard can make those they charm take specific actions. What you want them to do must be carefully woven into the lyrics. This weaving of lyrics must be in a language that is understandable to those who hear it (conversely, it does _not_ have to be in high ancient). If forced to perform such an action, the charmed one can attempt
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03095))_
 
@@ -61,17 +61,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
+
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03097))_
 
 > a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely.
 
-### Technical atom 3
+### Technical frame 3: Chapter 5: Magic / 5.3 Spellsongs / Table 5-10: Requiem
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03097, source-range-870a16bc-03101))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03096))_
 
-> a resistance roll again If the resist is successful, not only does this save you from having to take the action, but _also_ breaks you free from the spellsong's charm effect completely. This spellsong has the effect of making the listener act in accordance with the rhythm. All those who fail to resist will act simultaneously as long as the song continues. Regardless of their original agility, everyone's action order will be the same. You _cannot_ intentionally delay your action. The bard can fre
+> take part in the effect of this spellsong must remain completely relaxed for the duration of the performance.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03099))_
 

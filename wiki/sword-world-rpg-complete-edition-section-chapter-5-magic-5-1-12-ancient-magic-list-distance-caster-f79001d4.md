@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / Distance=Caster: 6 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-distance-caster-f79001d4@b26f6db0f8040ada5e0721a11f03679c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-distance-caster-f79001d4@ce28700356a70b8bb330e65897ecf6a9
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / Distance=Caster
@@ -26,30 +26,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01899))_
-- This is a clairvoyance spell, so to speak. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01899))_
+- This is a clairvoyance spell, so to speak. By casting this spell, the caster can see things on the other side of obstacles such as walls, etc. as well as the interior of boxes, etc. As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will. The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01899))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / Distance=Caster
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01896))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01899))_
+
+> This is a clairvoyance spell, so to speak. By casting this spell, the caster can see things on the other side of obstacles such as walls, etc. as well as the interior of boxes, etc. As long as it's within the area of effect, the caster can adjust the desired range and distance they want to see at will. The clairvoyant information appears directly in your mind as an image, so you can still see even if the target location is closed in darkness.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01896, source-range-870a16bc-01897, source-range-870a16bc-01898))_
 
 > Area=A space within a 30 meter radius from the caster
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01897))_
-
 > Duration=18 rounds
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01898))_
 
 > Effect=Can see through obstacles and the interior of objects Type=Detection Expansion=Duration, area Resist=None
 
-### Technical atom 4
+### Technical frame 2: Chapter 5: Magic / 5.1.12 Ancient Magic List / Distance=Caster
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01899))_
 

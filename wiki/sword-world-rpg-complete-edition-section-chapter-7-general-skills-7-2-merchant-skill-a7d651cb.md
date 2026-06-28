@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-2-m
 page_kind: source
 summary: Chapter 7: General Skills / 7.2 Merchant Skill: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-2-merchant-skill-a7d651cb@38904a608482a31b98d1326598e967ca
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-2-merchant-skill-a7d651cb@482ba5269bc0c177d19a328bc925467e
 ---
 
 # Chapter 7: General Skills / 7.2 Merchant Skill
@@ -22,7 +22,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Charts / Merchant Skill Abilities Table
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07710))_
 

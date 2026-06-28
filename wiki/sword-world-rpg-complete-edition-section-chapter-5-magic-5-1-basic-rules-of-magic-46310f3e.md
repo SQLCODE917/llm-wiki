@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic: 3 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-46310f3e@2641e314388015849fb99d4cd69812d2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-46310f3e@3d16de904a5730be2cc3bd9fc147d998
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic
@@ -24,8 +24,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 5: Magic / 5.1 Basic Rules of Magic / How to Use Magic
 
-- They are called **common runes** and **spellsongs** , respectively. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01169))_
-- In addition to these runes, there are two others that, although weak, can still manifest magical power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01169))_
+- In addition to these runes, there are two others that, although weak, can still manifest magical power. They are called **common runes** and **spellsongs** , respectively. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01169))_
 
 ### Chapter 5: Magic / 5.1 Basic Rules of Magic / 5.1.4.1 Magic Power
 

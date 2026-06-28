@@ -1961,101 +1961,101 @@
 - [[javascriptallonge-warm-cup-string]] — Warm Cup String: 6 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
 - [[javascriptallonge-write]] — Write: 9 statement(s) and 1 atom(s) from raw/javascriptallonge.pdf.
 - [[sword-world-rpg-complete-edition-12-rule-for-poison-illness-and-infection]] — 12.2 Rules for Poison, Illness and Infection: 128 statement(s) and 37 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-14-magical-item-list]] — 14.4 Magical Item List: 1 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-14-magical-item-list]] — 14.4 Magical Item List: 2 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-ability]] — Ability: 60 statement(s) and 41 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ability-bonuse]] — 【 **Ability Bonuses** 】: 7 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ability-score]] — 1.1 Ability Scores: 29 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-ability-bonuse]] — 【 **Ability Bonuses** 】: 8 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-ability-score]] — 1.1 Ability Scores: 78 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-addition]] — Addition: 62 statement(s) and 24 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-adventure]] — Adventure: 110 statement(s) and 77 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventurer-level]] — **Adventurer Level**: 5 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-adventurer-skill-combat]] — Adventurer Skill Combat: 73 statement(s) and 28 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-adventurer-level]] — **Adventurer Level**: 79 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-agility]] — Agility: 90 statement(s) and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-attack-character-monster]] — 4.5 Attacks From Characters Against Monsters: 45 statement(s) and 24 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-attack-monster-character]] — 4.6 Attacks From Monsters Against Characters: 35 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-base-mental-power-cost]] — 《 **Base Mental Power Cost** 》: 9 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-bone-servant]] — **[ Bone Servant ]**: 3 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-bonus-damage]] — 【 **Bonus Damage** 】: 8 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-attack-character-monster]] — 4.5 Attacks From Characters Against Monsters: 178 statement(s) and 35 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-attack-monster-character]] — 4.6 Attacks From Monsters Against Characters: 167 statement(s) and 23 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-base-mental-power-cost]] — 《 **Base Mental Power Cost** 》: 38 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-body]] — Body: 45 statement(s) and 25 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-bone-servant]] — **[ Bone Servant ]**: 7 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-bonus]] — Bonus: 36 statement(s) and 31 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-bonus-damage]] — 【 **Bonus Damage** 】: 66 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-cast]] — Cast: 124 statement(s) and 129 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-caster]] — Caster: 69 statement(s) and 65 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-character]] — Character: 169 statement(s) and 78 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-climb-agility]] — **[** ⑩ **Climb [Agility] ]**: 7 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-control-spirit-lesser]] — **[ Control Spirit ] (Various lesser spirits)**: 14 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-critical-target-variation]] — **Critical Target Variation**: 5 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-damage-reduction]] — 【 **Damage Reduction** 】: 7 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-distance-10-meter]] — Distance=10 meters: 5 statement(s) and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-distance-caster]] — Distance=Caster: 23 statement(s) and 21 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-duration-instant]] — Duration=Instant: 18 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-duration-permanent]] — Duration=Permanent: 14 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-control-spirit-lesser]] — **[ Control Spirit ] (Various lesser spirits)**: 34 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-critical-target-variation]] — **Critical Target Variation**: 37 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-damage-reduction]] — 【 **Damage Reduction** 】: 21 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-distance-10-meter]] — Distance=10 meters: 51 statement(s) and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-distance-caster]] — Distance=Caster: 29 statement(s) and 21 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-duration-instant]] — Duration=Instant: 24 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-duration-permanent]] — Duration=Permanent: 16 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-effect]] — Effect: 111 statement(s) and 99 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-enchanter-unknown]] — Enchanter=Unknown: 12 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-equipment-restriction]] — **(Equipment restriction)**: 45 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-equipment-restriction-not-retriable]] — **(No equipment restriction, not retriable)**: 19 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-enchanter-unknown]] — Enchanter=Unknown: 13 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-equipment-restriction]] — **(Equipment restriction)**: 40 statement(s) and 12 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-equipment-restriction-not-retriable]] — **(No equipment restriction, not retriable)**: 20 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-evasion]] — Evasion: 43 statement(s) and 32 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-fail]] — Fail: 115 statement(s) and 59 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-filling-character-sheet]] — **Filling Out the Character Sheet**: 12 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-final-damage]] — **Final Damage**: 0 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-fire-breath]] — **[ Fire Breath ]**: 5 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-fire-immunity]] — Fire immunity: 10 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-filling-character-sheet]] — **Filling Out the Character Sheet**: 19 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-final]] — Final: 52 statement(s) and 26 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-final-damage]] — **Final Damage**: 12 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-fire-breath]] — **[ Fire Breath ]**: 14 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-fire-immunity]] — Fire immunity: 11 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-force]] — Force: 69 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-form-iron-jar]] — Form=Iron jar: 9 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-game]] — Game: 106 statement(s) and 53 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-gnome-earth-spirit]] — **(Gnome/Earth Spirit)**: 8 statement(s) and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-habitat-ruin]] — Habitat=Ruins: 7 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-hit-check]] — **4.5.1 Hit Checks**: 5 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-how-experience-increasing-skill-level]] — 8.2 How to Use Experience Points: Increasing Skill Levels: 4 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-gnome-earth-spirit]] — **(Gnome/Earth Spirit)**: 17 statement(s) and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-habitat-ruin]] — Habitat=Ruins: 21 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-hit-check]] — **4.5.1 Hit Checks**: 23 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-how-experience-increasing-skill-level]] — 8.2 How to Use Experience Points: Increasing Skill Levels: 27 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-human]] — Human: 66 statement(s) and 31 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-hunter-skill]] — 7.5 Hunter Skill: 0 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-hunter-skill]] — 7.5 Hunter Skill: 5 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-illusionary-beast]] — **[ Illusionary Beast ]**: 9 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-increasing-skill]] — 8.4 Increasing General Skills: 23 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] — **(Kraken/Greater Water Spirit)**: 12 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-language-none]] — Languages=None: 5 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-leprechaun-mind-spirit]] — **(Leprechaun/Mind Spirit)**: 14 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-increasing-skill]] — 8.4 Increasing General Skills: 27 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-kraken-greater-water-spirit]] — **(Kraken/Greater Water Spirit)**: 13 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-language-none]] — Languages=None: 48 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-leprechaun-mind-spirit]] — **(Leprechaun/Mind Spirit)**: 32 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-level]] — Level: 129 statement(s) and 45 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-low-ancient]] — 《 **Low Ancient** 》: 6 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magic-armor]] — 《 **Magic Armor (+1)** 》: 4 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magic-contraction]] — 5.1.8 Magic Contraction: 13 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magic-sword]] — 《 **Magic Sword (+1)** 》: 4 statement(s) and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-low-ancient]] — 《 **Low Ancient** 》: 25 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-magic-armor]] — 《 **Magic Armor (+1)** 》: 35 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-magic-sword]] — 《 **Magic Sword (+1)** 》: 10 statement(s) and 18 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-magical]] — Magical: 53 statement(s) and 27 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-magical-recovery]] — **Magical Recovery**: 4 statement(s) and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-master]] — Master: 108 statement(s) and 42 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-merchant-skill]] — 7.2 Merchant Skill: 0 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-monster-level]] — 《 **Monster Level** 》: 220 statement(s) and 69 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-merchant-skill]] — 7.2 Merchant Skill: 4 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-monster-level]] — 《 **Monster Level** 》: 288 statement(s) and 70 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-move]] — Move: 111 statement(s) and 23 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-non-metal-ring-mail]] — **Non-metal or ring mail**: 5 statement(s) and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-not-retriable]] — **not retriable)**: 6 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] — **NPC and Monster Action Announcements**: 16 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-optional-rule]] — **Part 3 Optional Rules**: 343 statement(s) and 121 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-non-metal-ring-mail]] — **Non-metal or ring mail**: 11 statement(s) and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-npc-and-monster-action-announcement]] — **NPC and Monster Action Announcements**: 21 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-poison]] — Poison: 58 statement(s) and 22 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-power]] — Power: 205 statement(s) and 133 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-ranger-skill]] — 【 **Ranger Skill** 】: 45 statement(s) and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-rarity-12]] — Rarity=12: 10 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-rarity-15]] — Rarity=15: 8 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-rarity-16]] — Rarity=16: 4 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-rarity-18]] — Rarity=18: 12 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-ranger-skill]] — 【 **Ranger Skill** 】: 64 statement(s) and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-rarity-12]] — Rarity=12: 62 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-rarity-15]] — Rarity=15: 38 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-rarity-16]] — Rarity=16: 29 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-rarity-18]] — Rarity=18: 30 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-recall-spirit]] — **[ Recall Spirit ]**: 12 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-recovering-mental-power]] — 5.1.6 Recovering Mental Power: 20 statement(s) and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-recovering-mental-power]] — 5.1.6 Recovering Mental Power: 208 statement(s) and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-resist]] — Resist: 139 statement(s) and 84 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-result]] — Result: 64 statement(s) and 80 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-rule]] — Rule: 29 statement(s) and 46 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-rule-magic]] — **Basic Rules of Magic**: 146 statement(s) and 42 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-rule-magic]] — **Basic Rules of Magic**: 152 statement(s) and 42 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-sailor-skill-ability-table]] — **Sailor Skill Abilities Table**: 0 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-score]] — Score: 170 statement(s) and 91 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-shade-dark-spirit]] — **[ Shade ] (Shade/Dark Spirit)**: 10 statement(s) and 9 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-shape-change]] — **[ Shape Change ]**: 13 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-skeleton-warrior]] — **[ Skeleton Warrior ]**: 8 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-shade-dark-spirit]] — **[ Shade ] (Shade/Dark Spirit)**: 23 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-shape-change]] — **[ Shape Change ]**: 20 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-skeleton-warrior]] — **[ Skeleton Warrior ]**: 16 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-skill]] — Skill: 146 statement(s) and 59 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-spell]] — Spell: 352 statement(s) and 222 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-spirit]] — Spirit: 87 statement(s) and 46 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-starting-experience]] — **Starting Experience Points**: 2 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-stone-servant]] — **[ Stone Servant ]**: 11 statement(s) and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-starting-experience]] — **Starting Experience Points**: 11 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-stone-servant]] — **[ Stone Servant ]**: 13 statement(s) and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-strike]] — Strike: 57 statement(s) and 35 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-success]] — Success: 62 statement(s) and 52 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-success-roll]] — Success Rolls: 126 statement(s) and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-sylph-wind-spirit]] — **(Sylph/Wind Spirit)**: 10 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-success-roll]] — Success Rolls: 259 statement(s) and 31 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-sylph-wind-spirit]] — **(Sylph/Wind Spirit)**: 23 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 - [[sword-world-rpg-complete-edition-target]] — Target: 147 statement(s) and 97 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-target-score]] — **Target Scores**: 7 statement(s) and 6 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-thief-skill]] — 【 **Thief Skill** 】: 2 statement(s) and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-trap-intelligence-equipment-restriction-not-retriable]] — **[** ⑯ **Find/Sense Trap [Intelligence]] (No equipment restriction, not retriable)**: 11 statement(s) and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-undine-water-spirit]] — **(Undine/Water Spirit)**: 12 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-value-check-intelligence-not-retriable]] — **[** ② **Value Check [Intelligence]] (Not retriable)**: 3 statement(s) and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
-- [[sword-world-rpg-complete-edition-wisp-light-spirit]] — **(Will-O-Wisp/Light Spirit)**: 21 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-target-score]] — **Target Scores**: 176 statement(s) and 14 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-thief-skill]] — 【 **Thief Skill** 】: 48 statement(s) and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-type]] — Type: 59 statement(s) and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-undine-water-spirit]] — **(Undine/Water Spirit)**: 28 statement(s) and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
+- [[sword-world-rpg-complete-edition-wisp-light-spirit]] — **(Will-O-Wisp/Light Spirit)**: 29 statement(s) and 10 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 
 ## Syntheses
 - [[cross-source-synthesis]] — Cross-source synthesis index: 0 shared topics.

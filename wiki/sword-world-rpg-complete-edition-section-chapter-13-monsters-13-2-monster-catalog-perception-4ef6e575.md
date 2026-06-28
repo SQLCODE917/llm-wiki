@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Perception 》: 24 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-perception-4ef6e575@99a629c140713f33797e9159906ba1a4
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-perception-4ef6e575@f49993fa50787cebf4c95f11e3a45187
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Perception 》
@@ -20,37 +20,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- There are three types: **five senses** , **pseudo** , and **magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_
-- This represents the monster's sensory abilities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_
-- Illusions that deceive monsters which lack these senses will be ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04661))_
+- This represents the monster's sensory abilities. There are three types: **five senses** , **pseudo** , and **magic** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04660))_
+- _Five senses_ refer to the same five senses that humans use to perceive the outside world: vision, hearing, smell, taste, and touch. In some cases, some of these senses may be missing. Illusions that deceive monsters which lack these senses will be ineffective. It may also include specialized features such as **darkvision** , **infravision** , **illumination** , **sonar** , and **vibration sense** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04661))_
+- ( _Darkvision_ ) means the monster can see completely in the dark. Dwarf player characters have this ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04662))_
+- ( _Illumination_ ) means the monster can see as clearly as daytime even under very weak light, such as only starlight. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04664))_
+- ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. Therefore, they have almost no restrictions on action even in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04665))_
+- ( _Vibration sense_ ) means the monster can sense vibrations in the ground and perceive things moving around it. They cannot perceive things that are flying in the air or that are not moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04666))_
+- Those whose sensory abilities are _magic_ perceive their surroundings with magical senses. These senses cannot be blocked or deceived by any means. Illusions are ineffective on monsters whose perception is _magic_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04668))_
 - It may also include specialized features such as **darkvision** , **infravision** , **illumination** , **sonar** , and **vibration sense** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04661))_
-- _Five senses_ refer to the same five senses that humans use to perceive the outside world: vision, hearing, smell, taste, and touch. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04661))_
-- In some cases, some of these senses may be missing. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04661))_
-- It may also include specialized features such as **darkvision** , **infravision** , **illumination** , **sonar** , and **vibration sense** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04661))_
-- Dwarf player characters have this ability. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04662))_
-- ( _Darkvision_ ) means the monster can see completely in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04662))_
 - ( _Darkvision_ ) means the monster can see completely in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04662))_
 - ( _Illumination_ ) means the monster can see as clearly as daytime even under very weak light, such as only starlight. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04664))_
-- ( _Illumination_ ) means the monster can see as clearly as daytime even under very weak light, such as only starlight. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04664))_
-- Therefore, they have almost no restrictions on action even in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04665))_
 - Therefore, they have almost no restrictions on action even in the dark. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04665))_
 - ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04665))_
-- ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04665))_
-- They cannot perceive things that are flying in the air or that are not moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04666))_
 - ( _Vibration sense_ ) means the monster can sense vibrations in the ground and perceive things moving around it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04666))_
-- ( _Vibration sense_ ) means the monster can sense vibrations in the ground and perceive things moving around it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04666))_
-- These senses cannot be blocked or deceived by any means. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04668))_
-- Those whose sensory abilities are _magic_ perceive their surroundings with magical senses. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04668))_
-- Illusions are ineffective on monsters whose perception is _magic_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04668))_
 - These senses cannot be blocked or deceived by any means. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04668))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Perception 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04665))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04668))_
 
-> ( _Sonar_ ) means the monster can use sound waves or ultrasonic echoes to perceive the outside world. Therefore, they have almost no restrictions on action even in the dark.
+> Those whose sensory abilities are _magic_ perceive their surroundings with magical senses. These senses cannot be blocked or deceived by any means. Illusions are ineffective on monsters whose perception is _magic_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04667))_
 

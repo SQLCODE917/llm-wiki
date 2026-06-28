@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-11-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.11 Ancient Magic and the Sorcerer Skill / 《 Base Mental Power Cost 》: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-11-ancient-magic-and-the-sorcerer-skill-base-mental-power-cost-eff41a99@5c224792b19a58fae5f36de04b56b55c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-11-ancient-magic-and-the-sorcerer-skill-base-mental-power-cost-eff41a99@fd7244a6bb2939c7e536d6db4da720f0
 ---
 
 # Chapter 5: Magic / 5.1.11 Ancient Magic and the Sorcerer Skill / 《 Base Mental Power Cost 》
@@ -24,12 +24,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The base mental power cost represents how much mental power is consumed when using that magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01454))_
-- As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01454))_
+- The base mental power cost represents how much mental power is consumed when using that magic. As previously explained, this base mental power cost divided by the corresponding rune master skill level equals the actual mental power consumed by the caster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01454))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 

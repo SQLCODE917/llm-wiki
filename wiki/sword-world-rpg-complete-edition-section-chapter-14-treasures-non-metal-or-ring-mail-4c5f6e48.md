@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-non-metal
 page_kind: source
 summary: Chapter 14: Treasures / Non-metal or ring mail: 6 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-non-metal-or-ring-mail-4c5f6e48@dd263bfcc3ef44cc00e7f3e8f8d7a97b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-non-metal-or-ring-mail-4c5f6e48@8ccd576864ea7f14a82f6647b22815c6
 ---
 
 # Chapter 14: Treasures / Non-metal or ring mail
@@ -27,7 +27,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 
@@ -64,31 +64,23 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / Non-metal or ring mail
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06574))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
+
+> Here is a list of prices of magical nonmetal or ring mail armor with +2 power.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06574, source-range-870a16bc-06575, source-range-870a16bc-06576, source-range-870a16bc-06577))_
 
 > Rarity=14
 
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06575))_
-
 > Enchanter=Many
-
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06576))_
 
 > Form=Non-metal or ring mail armor Required Strength/Base Trade Price=See description
 
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06577))_
-
 > Powers=+2 to evasion speed and damage reduction
 
-### Technical atom 6
+### Technical frame 3: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06578))_
 
@@ -125,7 +117,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 4: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06591))_
 

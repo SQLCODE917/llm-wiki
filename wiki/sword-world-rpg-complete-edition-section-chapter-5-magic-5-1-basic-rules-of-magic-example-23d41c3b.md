@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:: 9 source-backed entries and 13 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-example-23d41c3b@2ee3d325f061d36522349b67661d8dc8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-example-23d41c3b@e63be0f3b4cb69ce1ed7b897d94ebd91
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
@@ -20,17 +20,18 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A character with shaman skill level 2 uses the _Fire Bolt_ spell. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01275))_
-- The base mental power cost for _Fire Bolt_ is _5_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01275))_
-- The character must consume 5 ÷ 2 = 2.5, rounding up to _3_ points of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01275))_
-- A character can reduce their mental power to 0, but they _cannot_ make it negative. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
+- A character with shaman skill level 2 uses the _Fire Bolt_ spell. The base mental power cost for _Fire Bolt_ is _5_ . The character must consume 5 ÷ 2 = 2.5, rounding up to _3_ points of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01275))_
+- A character can reduce their mental power to 0, but they _cannot_ make it negative. For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
+- If a character’s mental power reaches _0_ , they will _lose consciousness_ . The character cannot regain consciousness unless they recover their mental power to _1 point or more_ in some way. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01277))_
 - For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
-- For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
-- If a character’s mental power reaches _0_ , they will _lose consciousness_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01277))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -59,11 +60,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -86,7 +87,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -123,7 +128,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -168,7 +173,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -209,7 +218,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -250,7 +263,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -288,7 +301,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
 
@@ -298,21 +311,21 @@ From [[sword-world-rpg-complete-edition]].
 
 > The character cannot regain consciousness unless they recover their mental power to _1 point or more_ in some way.
 
-### Technical atom 9
+### Technical frame 9: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01276))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01277))_
 
-> A character can reduce their mental power to 0, but they _cannot_ make it negative. For example, a character with 5 points of mental power remaining _can_ use magic that costs 5 points of mental power, but _cannot_ use magic that costs _6 or more_ points of mental power.
+> If a character’s mental power reaches _0_ , they will _lose consciousness_ . The character cannot regain consciousness unless they recover their mental power to _1 point or more_ in some way.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01278))_
 
 > Even if magic _fails_ , such as by rolling double ones or being resisted by the opponent, a character must _still_ consume their mental power, same as if they had actually used the magic.
 
-### Technical atom 10
+### Technical frame 10: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -348,7 +361,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -380,7 +397,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 12
+### Technical frame 12: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -417,7 +438,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 

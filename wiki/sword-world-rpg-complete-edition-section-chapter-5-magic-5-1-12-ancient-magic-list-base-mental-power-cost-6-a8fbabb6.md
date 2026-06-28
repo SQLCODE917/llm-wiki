@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=6: 9 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-base-mental-power-cost-6-a8fbabb6@b7a2a3b149c31a262a26550612da64d2
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-base-mental-power-cost-6-a8fbabb6@0a84600d40562492f11da6c75ec2437c
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=6
@@ -24,34 +24,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- At this time, sounds within the area of effect will not be heard at all from that location, and you will not be able to choose and transfer sounds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
-- This spell can also be used within a more narrow area of effect, so you can just transfer your own words. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
-- This spell can cause all sounds occurring in a space within a 1-meter radius around the caster to be generated elsewhere. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
+- This spell can cause all sounds occurring in a space within a 1-meter radius around the caster to be generated elsewhere. This spell can also be used within a more narrow area of effect, so you can just transfer your own words. At this time, sounds within the area of effect will not be heard at all from that location, and you will not be able to choose and transfer sounds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
 - At this time, sounds within the area of effect will not be heard at all from that location, and you will not be able to choose and transfer sounds. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
 - This spell can cause all sounds occurring in a space within a 1-meter radius around the caster to be generated elsewhere. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
 - This spell can also be used within a more narrow area of effect, so you can just transfer your own words. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=6
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01645))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01648))_
+
+> This spell can cause all sounds occurring in a space within a 1-meter radius around the caster to be generated elsewhere. This spell can also be used within a more narrow area of effect, so you can just transfer your own words. At this time, sounds within the area of effect will not be heard at all from that location, and you will not be able to choose and transfer sounds.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01645, source-range-870a16bc-01646, source-range-870a16bc-01647))_
 
 > Distance=30 meters
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01646))_
-
 > Area=Space with a 1 meter radius Duration=18 rounds Effect=Sounds within the area of effect can be generated elsewhere Type=Illusion
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01647))_
 
 > Countered (Overpowered) By: _Silence_ Expansion=Final score, duration, distance, area Resist=Negated effect
 
-### Technical atom 4
+### Technical frame 2: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 

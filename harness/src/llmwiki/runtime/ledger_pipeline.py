@@ -24,6 +24,7 @@ from llmwiki.domain.ledger.pointers import (
     quality_check_catalog_pointer,
 )
 from llmwiki.domain.ledger.projection import ProjectionSourceSupport, plan_source_page
+from llmwiki.domain.ledger.projection_context import build_projection_context
 from llmwiki.domain.ledger.quality import (
     LedgerQualityReport,
     build_ledger_quality_report,
@@ -180,6 +181,7 @@ def build_source_ledger(
     )
 
     section_plan = build_section_grounded_plan(ledger, structure)
+    projection_context = build_projection_context(ledger, structure)
     topics = plan_source_topics(ledger, structure, section_plan=section_plan)
     topic_index = build_topic_index(
         ledger,
@@ -213,6 +215,7 @@ def build_source_ledger(
             source_locator,
             today,
             related_pages_by_topic=related_section_links,
+            projection_context=projection_context,
         )
         topic_pages += build_section_pages(
             ledger,
@@ -221,6 +224,7 @@ def build_source_ledger(
             source_locator=source_locator,
             today=today,
             topics=topics,
+            projection_context=projection_context,
         )
         wiki_page = build_source_wiki_page(
             page_id,

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-books-related-to-sword-world-r
 page_kind: source
 summary: Books Related to Sword World RPG / 8. Game Master Screen: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-books-related-to-sword-world-rpg-8-game-master-screen-29a6dd56@fddc73eb2588f175c40c70e3bccb671c
+projection_coverage: section-sword-world-rpg-complete-edition-section-books-related-to-sword-world-rpg-8-game-master-screen-29a6dd56@3e98c57c2f307dd5e6b8116267b72db7
 ---
 
 # Books Related to Sword World RPG / 8. Game Master Screen
@@ -20,13 +20,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The _Sword World RPG Game Master Screen_ is a collection of charts (or tables) that you will need in order to play this game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00145))_
-- This can be useful for smooth game progress. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00145))_
-- In addition to these, _Sword World RPG_ is scheduled to feature a variety of other related works. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00147))_
+- The _Sword World RPG Game Master Screen_ is a collection of charts (or tables) that you will need in order to play this game. This can be useful for smooth game progress. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00145))_
+- In addition to these, _Sword World RPG_ is scheduled to feature a variety of other related works. It will also continue to be supported in magazines published by Fujimi Shobo, such as _Dragon Magazine_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00147))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Books Related to Sword World RPG / 8. Game Master Screen
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00147))_
+
+> In addition to these, _Sword World RPG_ is scheduled to feature a variety of other related works. It will also continue to be supported in magazines published by Fujimi Shobo, such as _Dragon Magazine_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00146))_
 

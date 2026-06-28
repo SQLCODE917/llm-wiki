@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers: 13 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-14109217@ff482faf7d5e03ed1b66331760f0326a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-14109217@ef5aa47cddc1326617a8d4e191b71b70
 ---
 
 # Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers
@@ -31,13 +31,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Attack Power Modifier
 
-- **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07085))_
-- Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07085))_
+- **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07085))_
 
 ### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Strike Power Modifier
 
-- In the basic rules, a weapon's required strength _is_ its strike power, but with this rule, a weapon's strike power equals **weapon's required strength plus this strike power modifier** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
-- **Strike power modifier** is a modifier added to a weapon’s _strike power_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
+- **Strike power modifier** is a modifier added to a weapon’s _strike power_ . In the basic rules, a weapon's required strength _is_ its strike power, but with this rule, a weapon's strike power equals **weapon's required strength plus this strike power modifier** . In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
 
 ### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
 
@@ -45,38 +43,37 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Critical Target Variation
 
-- This is indicated by the _critical target_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
-- Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
+- Under the basic rules, when using the _Rating Table_ to determine damage, a 10 or greater is considered a _critical_ , but with this rule, the chance of a _critical_ is _different for each weapon_ . This is indicated by the _critical target_ . Axes, maces, etc. do _not_ critical even if you roll a 10, but rather require an **11** or **12** . One can say that the _lower_ this score, the _more_ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07096))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07080))_
 
 > In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor.
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Weapon Modifiers
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07080, source-range-870a16bc-07083))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07083))_
 
-> In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor. The terms used on this table are explained below.
+> The terms used on this table are explained below.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07082))_
 
 > Here is a table of weapons commonly used by adventurers (" _Table 16-1 Weapon Optional Rules_ ").
 
-### Technical atom 3
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07085))_
-
-> **Attack power modifier** indicates the modifier added to an adventurer's attack power when using that weapon. Weapons with higher numbers are more likely to hit an opponent, while weapons with smaller numbers are less likely to hit.
+### Technical frame 3: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Strike Power Modifier
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07087))_
 
 > In other words, even if the required strength is the _same_ , one can say a weapon with a _higher_ strike power modifier will deal _greater_ damage to an opponent.
 
-### Technical atom 4
+### Technical frame 4: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 
@@ -161,7 +158,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07093))_
 

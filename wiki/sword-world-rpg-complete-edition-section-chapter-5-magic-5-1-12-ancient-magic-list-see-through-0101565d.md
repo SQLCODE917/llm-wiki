@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ See-Through ]: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-see-through-0101565d@83589f3b7c59c584444a756d5c998b86
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-see-through-0101565d@4af534d987a1d5da2ca187393f9261dd
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / [ See-Through ]
@@ -20,7 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ See-Through ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01894))_
 

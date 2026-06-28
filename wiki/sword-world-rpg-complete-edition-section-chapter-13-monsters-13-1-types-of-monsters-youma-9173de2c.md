@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-1-types
 page_kind: source
 summary: Chapter 13: Monsters! / 13.1 Types of Monsters / 《 Youma 》: 4 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-1-types-of-monsters-youma-9173de2c@4b32c8d8306a2ed868d09476464b72e6
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-1-types-of-monsters-youma-9173de2c@ea7bb96ecd9ea0fc22feae35ed111df6
 ---
 
 # Chapter 13: Monsters! / 13.1 Types of Monsters / 《 Youma 》
@@ -21,17 +21,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Youma are a race of fae that have evil personalities. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04540))_
-- They have a very strong hostile relationship with the fae, and of course they are not friendly with humans either. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04540))_
+- Youma are a race of fae that have evil personalities. They may also use spirit magic or dark magic. They have a very strong hostile relationship with the fae, and of course they are not friendly with humans either. If you encounter them, there’s a high probability that you'll get into a fight. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04540))_
 - Typical spirits include sylph, undine, and will-o-wisp. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.1 Types of Monsters / 《 Youma 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04538))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04541))_
 
-> Regardless of a spirit's rarity (a score related to how well-known the monster is, which will be explained later), a shaman knows all spirits. When encountering a spirit, a shaman can recognize a spirit without the need for a success roll.
+> Typical spirits include sylph, undine, and will-o-wisp.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04540))_
 

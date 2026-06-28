@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-cre
 page_kind: source
 summary: 13.2.11 Daemons/Underworld Creatures / Monster Level=4: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-monster-level-4-acb413a1@6616092cb635b74fd3a0428c1e75cb10
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-monster-level-4-acb413a1@6af689024fb3af55feffa38ec73c1bc7
 ---
 
 # 13.2.11 Daemons/Underworld Creatures / Monster Level=4
@@ -56,25 +56,36 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=14/12 (5) Mental Points/Resistance=16/12 (5) Special Abilities=Depends on appendages Habitat=Underground labyrinths, ruins Languages=None Perception=Five senses (illumination due to appendages) These are beasts of the daemon world, said to be creatures created by daemons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06002))_
-- They're rarely encountered in the material world, and details of them are not well understood. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06002))_
-- Although this data is general, there are many different types of aetherbeasts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
+- Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=14/12 (5) Mental Points/Resistance=16/12 (5) Special Abilities=Depends on appendages Habitat=Underground labyrinths, ruins Languages=None Perception=Five senses (illumination due to appendages) These are beasts of the daemon world, said to be creatures created by daemons. They often work as servants of daemons. They're rarely encountered in the material world, and details of them are not well understood. The few eyewitness accounts are mixed, and its shape is not clear, but it’s agreed that it looks like a combination of several animals from the material world. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06002))_
+- Although this data is general, there are many different types of aetherbeasts. If the game master wishes, they may create special aetherbeasts. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: 13.2.11 Daemons/Underworld Creatures / Monster Level=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06002))_
+
+> Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=14/12 (5) Mental Points/Resistance=16/12 (5) Special Abilities=Depends on appendages Habitat=Underground labyrinths, ruins Languages=None Perception=Five senses (illumination due to appendages) These are beasts of the daemon world, said to be creatures created by daemons. They often work as servants of daemons. They're rarely encountered in the material world, and details of them are not well understood. The few eyewitness accounts ar
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06001))_
 
 > Rarity=15 Agility=16 Movement Speed=21 Number=One Frequency=Very rare Intellect=Animal Reaction=Adversarial Attack Points=Fangs: 11 (4) Strike Points=10
 
-### Technical atom 2
+### Technical frame 2: 13.2.11 Daemons/Underworld Creatures / Monster Level=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06002))_
+
+> Evasion Points=11 (4) Defense Points=7 Life Points/Resistance=14/12 (5) Mental Points/Resistance=16/12 (5) Special Abilities=Depends on appendages Habitat=Underground labyrinths, ruins Languages=None Perception=Five senses (illumination due to appendages) These are beasts of the daemon world, said to be creatures created by daemons. They often work as servants of daemons. They're rarely encountered in the material world, and details of them are not well understood. The few eyewitness accounts ar
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06003))_
 
 > If the game master wishes, they may create special aetherbeasts.
 
-### Technical atom 3
+### Technical frame 3: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-red-eye-f
 page_kind: source
 summary: Chapter 14: Treasures / 《 Red Eye 》: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-red-eye-f797c881@d75944f3d3a0b103d89912df630a638e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-red-eye-f797c881@5853ac3239a853d151a92d4e48e6eb3e
 ---
 
 # Chapter 14: Treasures / 《 Red Eye 》
@@ -20,11 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06542))_
-
-> This magical shamshir always has dew trickling down the blade, to wash away blood and grease. Moreover, when the user gives a command with a password, it can produce 1 liter of fresh water in 1 minute. This ability can be used up to 10 times per day. The water produced by this sword also allows you to use spirit magic sourced from the power of undine. This sword may have been made for travelers crossing the desert.
+### Technical frame 1: Chapter 14: Treasures / 《 Red Eye 》
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06544))_
 

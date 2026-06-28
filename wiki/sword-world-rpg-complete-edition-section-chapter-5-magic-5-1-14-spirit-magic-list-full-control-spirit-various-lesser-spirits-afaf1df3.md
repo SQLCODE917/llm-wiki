@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-14-spirit-
 page_kind: source
 summary: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Full Control Spirit ] (Various lesser spirits): 5 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-14-spirit-magic-list-full-control-spirit-various-lesser-spirits-afaf1df3@463e7538abb0e946b8941a1b0d92617d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-14-spirit-magic-list-full-control-spirit-various-lesser-spirits-afaf1df3@4b64a2ff203edb4dae0aae76e8ffac02
 ---
 
 # Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Full Control Spirit ] (Various lesser spirits)
@@ -26,25 +26,25 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Full Control Spirit ] (Various lesser spirits)
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02555))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02559))_
+
+> Counters (Overpowers): _Control Spirit_ Countered (Overpowered) By: _Control Spirit_ Expansion=Final score, distance Resist=None
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02555, source-range-870a16bc-02556, source-range-870a16bc-02558))_
 
 > Base Mental Power Cost=35 Distance=10 meters
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02556))_
-
 > Area=One lesser spirit Duration=Permanent
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02558))_
 
 > Effect=Summon different types of spirits and take complete control of them Type=Target score
 
-### Technical atom 4
+### Technical frame 2: Chapter 5: Magic / 5.1.14 Spirit Magic List / [ Full Control Spirit ] (Various lesser spirits)
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02559))_
+
+> Counters (Overpowers): _Control Spirit_ Countered (Overpowered) By: _Control Spirit_ Expansion=Final score, distance Resist=None
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02560))_
 

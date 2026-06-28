@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Strike Points 》: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-strike-points-52c24f69@428178561feb4132b21921f6c393d4a0
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-strike-points-52c24f69@edb1081538317e52aa09d44c3cba0c68
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Strike Points 》
@@ -22,23 +22,26 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A character can reduce this damage through armor (defense rolls) and adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04636))_
-- This represents the amount of damage dealt by the monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04636))_
-- Monsters that have multiple attack methods also have multiple strike points written next to them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04637))_
+- This represents the amount of damage dealt by the monster. If a character fails to evade their attack, these strike points become damage and reduce the character's life force. A character can reduce this damage through armor (defense rolls) and adventurer level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04636))_
+- Monsters that have multiple attack methods also have multiple strike points written next to them. The arrangement of attack points also carries over to strike points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04637))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Strike Points 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04634))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04637))_
 
-> The numbers in parentheses next to each attack point score are used in the optional rule _16.1: Combat in Which Monsters Roll Dice._ (see p. 261).
+> Monsters that have multiple attack methods also have multiple strike points written next to them. The arrangement of attack points also carries over to strike points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04636))_
 
 > If a character fails to evade their attack, these strike points become damage and reduce the character's life force.
 
-### Technical atom 2
+### Technical frame 2: Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Strike Points 》
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04637))_
+
+> Monsters that have multiple attack methods also have multiple strike points written next to them. The arrangement of attack points also carries over to strike points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04638))_
 

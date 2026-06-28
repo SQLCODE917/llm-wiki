@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Monster Level 》: 3 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-monster-level-bbf9f3a6@fc5a1893b090fbb9d091f39cc08e0ce3
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-monster-level-bbf9f3a6@547535bb29769dd369c345bcf4529dfc
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 《 Monster Level 》
@@ -56,13 +56,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- If it's 10, even a seasoned adventurer will have a hard time crossing swords with it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
-- This is a score that corresponds to a character's adventurer level, and represents the general strength of that monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
-- the damage can be reduced by this monster level score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
+- This is a score that corresponds to a character's adventurer level, and represents the general strength of that monster. If it's 1, it's an extremely weak monster. If it's 10, even a seasoned adventurer will have a hard time crossing swords with it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04596))_
+- Monster level, similar to a character's adventurer level, indicates how difficult it is for a monster to die. When a monster suffers damage from magic, etc. the damage can be reduced by this monster level score. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04597))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

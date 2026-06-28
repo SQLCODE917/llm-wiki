@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monst
 page_kind: source
 summary: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=2: 9 source-backed entries and 7 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-2-fae-monster-level-2-b8217278@1407083566a9059e45084613108c1371
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-13-monsters-13-2-monster-catalog-13-2-2-fae-monster-level-2-b8217278@aa59f7a069c6f93193e680c27147f6e6
 ---
 
 # Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=2
@@ -56,57 +56,39 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- There is one mermaid shaman per combat group, and her role is to assist the merman leader. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
-- Also, if the merman leader is defeated, she will take command of the battle in his place. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
-- The result is a mermaid shaman. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
+- Habitat=Seas Languages=Merman, silent spirit Perception=Five senses (infravision, illumination) Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of the battle in his place. A combat group whose leader and shaman _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=2
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04707))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
+
+> Habitat=Seas Languages=Merman, silent spirit Perception=Five senses (infravision, illumination) Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04707, source-range-870a16bc-04708, source-range-870a16bc-04709, source-range-870a16bc-04710, source-range-870a16bc-04711))_
 
 > Rarity=11
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04708))_
-
 > Agility=16 Movement Speed=3/20 (water) Number=Several to dozens
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04709))_
 
 > Frequency=Rare Intellect=Human Reaction=Neutral Attack Points=Weapon: 9 (2) Strike Points=5 Evasion Points=10 (3) Defense Points=4
 
-### Technical atom 4
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
-
-> Habitat=Seas Languages=Merman, silent spirit Perception=Five senses (infravision, illumination) Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04710))_
-
 > Life Points/Resistance=14/10 (3) Mental Points/Resistance=16/10 (3) Special Abilities=Water adaptation Habitat=Seas
-
-### Technical atom 5
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
-
-> Habitat=Seas Languages=Merman, silent spirit Perception=Five senses (infravision, illumination) Merman tribes select girls with outstanding intelligence and mental power and train them as shamans from an early age. The result is a mermaid shaman. Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine). There is one mermaid shaman per combat group, and her role is to assist the merman leader. Also, if the merman leader is defeated, she will take command of
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04711))_
 
 > Languages=Merman Perception=Five senses (illumination) Mermen are a race that lives under the sea, with the upper body of a human
 
-### Technical atom 6
+### Technical frame 2: Chapter 13: Monsters! / 13.2 Monster Catalog / 13.2.2 Fae / Monster Level=2
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04712))_
 
 > Mermaid shamans can use spirit magic up to 4th level, which is powered by water spirits (undine).
 
-### Technical atom 7
+### Technical frame 3: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

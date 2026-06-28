@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-15-experience-points-1
 page_kind: source
 summary: Chapter 15: Experience Points / 15.1 Four Types of Experience Points / Success Rolls: 11 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-15-experience-points-15-1-four-types-of-experience-points-success-rolls-e7713309@320e83ba6b4697b4f7471ea95834cd5d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-15-experience-points-15-1-four-types-of-experience-points-success-rolls-e7713309@47bd0099d26c291bbfe6cb41ff4d50f4
 ---
 
 # Chapter 15: Experience Points / 15.1 Four Types of Experience Points / Success Rolls
@@ -22,25 +22,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This depends on how much work the adventurers did during the adventure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
-- How assertively the adventurers acted is reflected by the number of dice rolls made by the players. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
-- Also, experience points should _not_ be awarded for meaningless success rolls. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
-- Double ones when making checks for _damage dealt in combat_ or _armor defense effects_ in combat should _also_ be added to the number of times. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
-- However, _double ones after a critical_ during damage checks are _not_ included. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
-- The adventurers will earn **number of double ones x 10** experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
-- Unlike the previous two types, experience points earned in this way will _vary_ depending on the adventurer. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
-- However, it can be difficult to remember every time the dice were rolled, so only the number of times a player rolled _double ones during a success roll_ should be recorded. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
+- This depends on how much work the adventurers did during the adventure. How assertively the adventurers acted is reflected by the number of dice rolls made by the players. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07048))_
+- However, it can be difficult to remember every time the dice were rolled, so only the number of times a player rolled _double ones during a success roll_ should be recorded. Double ones when making checks for _damage dealt in combat_ or _armor defense effects_ in combat should _also_ be added to the number of times. The adventurers will earn **number of double ones x 10** experience points. However, _double ones after a critical_ during damage checks are _not_ included. Also, experience points should _not_ be awarded for meaningless success rolls. Unlike the previous two types, experience points earned in this way will _vary_ depending on the adventurer. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
 - Unlike the previous two types, experience points earned in this way will _vary_ depending on the adventurer. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
 - However, _double ones after a critical_ during damage checks are _not_ included. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
 - However, it can be difficult to remember every time the dice were rolled, so only the number of times a player rolled _double ones during a success roll_ should be recorded. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07049))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 9: Notes on Success Rolls / Setting Target Scores and Difficulties
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03601))_
 
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+> This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03603))_
 
@@ -93,11 +87,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 9: Notes on Success Rolls
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03635))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03637))_
 
-> **Table 9-2: Success Roll Modifiers**
+> farther, but 20 meters is still a ridiculous number. Game masters should _not_ allow a success roll itself for such actions.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03636))_
 

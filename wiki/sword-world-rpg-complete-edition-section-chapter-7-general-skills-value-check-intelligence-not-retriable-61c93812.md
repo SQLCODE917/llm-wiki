@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-7-general-skills-value
 page_kind: source
 summary: Chapter 7: General Skills / [ ⑩ Value Check [Intelligence]] (Not retriable): 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-general-skills-value-check-intelligence-not-retriable-61c93812@e8b0b71e557c8cad6cce7dfae15ed14e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-general-skills-value-check-intelligence-not-retriable-61c93812@b264f36f993f8bcc079ec4aa588d3a51
 ---
 
 # Chapter 7: General Skills / [ ⑩ Value Check [Intelligence]] (Not retriable)
@@ -17,23 +17,25 @@ From [[sword-world-rpg-complete-edition]].
 ## Related pages
 
 - [[sword-world-rpg-complete-edition-section-chapter-7-general-skills-5f209208]] - broader source section
-- [[sword-world-rpg-complete-edition-value-check-intelligence-not-retriable]] - topic hub
 - [[sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-3-craftsman-skill-value-check-intelligence-not-retriable-b4f9c3a4]] - same source heading
 
 ## Statements
 
-- For prey and pre-processed items, set a difficulty and have them make a success roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03499))_
-- Hunters can see how much their prey and pre-processed products are worth. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03499))_
+- Hunters can see how much their prey and pre-processed products are worth. For prey and pre-processed items, set a difficulty and have them make a success roll. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03499))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 7: General Skills / [ ⑩ Value Check [Intelligence]] (Not retriable)
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03499))_
+
+> Hunters can see how much their prey and pre-processed products are worth. For prey and pre-processed items, set a difficulty and have them make a success roll.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03498))_
 
 > Therefore, it's no good if you cannot determine the price of the game you've hunted.
 
-### Technical atom 2
+### Technical frame 2: Chapter 7: General Skills / [ ⑩ Value Check [Intelligence]] (Not retriable)
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03499))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-arm
 page_kind: source
 summary: Chapter 14: Treasures / 《 Magic Armor (+3) 》: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-3-7ceb472e@8b2a804f552be8148f5a899767212e54
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-3-7ceb472e@19043dcf27210be83374ebde70799fe7
 ---
 
 # Chapter 14: Treasures / 《 Magic Armor (+3) 》
@@ -31,7 +31,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
@@ -70,13 +70,17 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Armor (+3) 》
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
+
+> Here is a list of prices of magical metal armor with +3 power.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06595))_
 
 > Required Strength/Base Trade Price=See description Magic Power=+3 to evasion speed and damage reduction
 
-### Technical atom 3
+### Technical frame 3: Chapter 14: Treasures / 《 Magic Armor (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
 

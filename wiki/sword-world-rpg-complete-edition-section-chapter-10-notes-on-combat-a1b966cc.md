@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-10-notes-on-combat-a1b
 page_kind: source
 summary: Chapter 10: Notes on Combat: 7 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-10-notes-on-combat-a1b966cc@5b6652977460cdbaff330c1cd919bc5b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-10-notes-on-combat-a1b966cc@4fc6603cf622daa4432902e58d223035
 ---
 
 # Chapter 10: Notes on Combat
@@ -23,14 +23,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 10: Notes on Combat / Combat in Special Situations
 
-- In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
-- Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
-- If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
+- Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 - Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 10: Notes on Combat / Combat in Special Situations
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
@@ -40,7 +38,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > **Table 10-1: Attack Power and Evasion Speed Modifiers**
 
-### Technical atom 2
+### Technical frame 2: Chapter 10: Notes on Combat / Combat in Special Situations
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
 
@@ -69,7 +67,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 10: Notes on Combat / Combat in Special Situations
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03654))_
+
+> Combat often occurs in unusual locations, such as in the dark, on poor footing, etc. In such cases, a penalty (sometimes a bonus) is given to an adventurer's attack power or evasion speed, depending on the situation. If the same conditions apply to monsters, the same penalty (bonus) will be given to the monster's attack and evasion points.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03658))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-8-character-growth-8-2
 page_kind: source
 summary: Chapter 8: Character Growth / 8.2 How to Use Experience Points: Increasing Skill Levels: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-8-2-how-to-use-experience-points-increasing-skill-levels-fe81a9fb@2e642cfee53dfeb762b2625c26e3c67d
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-8-character-growth-8-2-how-to-use-experience-points-increasing-skill-levels-fe81a9fb@c644981f6fad298f3057eda19aebb42a
 ---
 
 # Chapter 8: Character Growth / 8.2 How to Use Experience Points: Increasing Skill Levels
@@ -22,7 +22,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 

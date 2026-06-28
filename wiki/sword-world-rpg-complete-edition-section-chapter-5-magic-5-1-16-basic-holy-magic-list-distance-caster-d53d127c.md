@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-16-basic-h
 page_kind: source
 summary: Chapter 5: Magic / 5.1.16 Basic Holy Magic List / Distance=Caster: 4 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-16-basic-holy-magic-list-distance-caster-d53d127c@fcabb789e7de833ba59d2f6417756d6a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-16-basic-holy-magic-list-distance-caster-d53d127c@1caef6b81e326e8f1b2a73f09c497bc7
 ---
 
 # Chapter 5: Magic / 5.1.16 Basic Holy Magic List / Distance=Caster
@@ -26,24 +26,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- This spell is an indiscriminate expansion of _Force_ , which causes an explosion centered around the caster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02848))_
+- This spell is an indiscriminate expansion of _Force_ , which causes an explosion centered around the caster. The shockwave deals strike power 30 damage to everything within a 10 meter radius. This spell deals no damage to the caster him or herself, but it _will_ deal damage to others in the area of effect, regardless of whether they're friend or foe. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02848))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.16 Basic Holy Magic List / Distance=Caster
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02845))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02848))_
+
+> This spell is an indiscriminate expansion of _Force_ , which causes an explosion centered around the caster. The shockwave deals strike power 30 damage to everything within a 10 meter radius. This spell deals no damage to the caster him or herself, but it _will_ deal damage to others in the area of effect, regardless of whether they're friend or foe.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02845, source-range-870a16bc-02846, source-range-870a16bc-02847))_
 
 > Area=A space within a 10 meter radius from the caster
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02846))_
-
 > Duration=Instant
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02847))_
 
 > Effect=Causes an explosion centered on the caster, dealing strike power 30 damage Type=Damage (Explosion-type) Expansion=Final score, area, damage certainty Resist=Reduced effect

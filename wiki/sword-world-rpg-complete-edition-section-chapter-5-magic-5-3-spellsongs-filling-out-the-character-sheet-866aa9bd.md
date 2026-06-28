@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs
 page_kind: source
 summary: Chapter 5: Magic / 5.3 Spellsongs / Filling out the Character Sheet: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs-filling-out-the-character-sheet-866aa9bd@ed5bb1ec70f7586c6184fd48e9b4b3a8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-3-spellsongs-filling-out-the-character-sheet-866aa9bd@464d3e23f9dcb9d8e723f4aef76e2d2a
 ---
 
 # Chapter 5: Magic / 5.3 Spellsongs / Filling out the Character Sheet
@@ -25,11 +25,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03076))_
-
-> On the list, spellsongs with the note that says _mind_ are spellsongs that affect the mind of the listener. These can be considered in the same way as magic that When a bard uses the ability of a spellsong, you resolve the effect in the around _mental power consumed x 1000 gamels_ as a guideline.
+### Technical frame 1: Chapter 5: Magic / 5.3 Spellsongs / Filling out the Character Sheet
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03079))_
 

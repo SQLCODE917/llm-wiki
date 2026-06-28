@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-amulet-ve
 page_kind: source
 summary: Chapter 14: Treasures / [ Amulet Versus Undead ]: 5 source-backed entries and 5 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-amulet-versus-undead-ad7d6d6a@9e989a15a0be4961c0171ce22edeaa75
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-amulet-versus-undead-ad7d6d6a@9d0b0f65591b9c55137da18ad686486c
 ---
 
 # Chapter 14: Treasures / [ Amulet Versus Undead ]
@@ -20,31 +20,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / [ Amulet Versus Undead ]
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06676))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06676, source-range-870a16bc-06677, source-range-870a16bc-06678, source-range-870a16bc-06679))_
 
 > Rarity=15 Enchanter=Many
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06677))_
-
 > Form=Amulet
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06678))_
 
 > Base Trade Price=6,000 gamels
 
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06679))_
-
 > Powers=+1 to effect checks against undead
 
-### Technical atom 5
+### Technical frame 2: Chapter 14: Treasures / [ Amulet Versus Undead ]
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06680))_
 

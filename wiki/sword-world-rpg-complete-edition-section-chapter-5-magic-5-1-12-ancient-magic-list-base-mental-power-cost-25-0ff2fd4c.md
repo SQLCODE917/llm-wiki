@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=25: 3 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-base-mental-power-cost-25-0ff2fd4c@76937574b6162bda6a0af03cd5a2e613
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-base-mental-power-cost-25-0ff2fd4c@afaecb5d7e6f2994c6da8105252c68cf
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=25
@@ -20,25 +20,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / Base Mental Power Cost=25
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01854))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01854, source-range-870a16bc-01855, source-range-870a16bc-01856))_
 
 > Distance=20 meters
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01855))_
-
 > Area=A space with a 5 meter radius Duration=Instant
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01856))_
 
 > Effect=Creates an ice storm, dealing strike power 20 damage to those within range Type=Damage (Cold-type) Expansion=Final score, distance, area, damage certainty
 
-### Technical atom 4
+### Technical frame 2: Chapter 11: Notes on Magic / 11.3 Dragon Roar Magic / Base Mental Power Cost=4
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04001))_
+
+> resulting in +5 defense power. A noble lizardman whose entire body is already covered in scales _cannot_ use this magic (even if they do not use it, their defense power will be +5 from their armor).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-04000))_
 

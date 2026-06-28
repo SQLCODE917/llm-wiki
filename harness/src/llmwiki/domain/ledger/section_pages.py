@@ -13,6 +13,11 @@ from llmwiki.domain.ledger.atoms import TechnicalAtom, atom_raw_text
 from llmwiki.domain.ledger.canonical import short_digest
 from llmwiki.domain.ledger.entries import LedgerEntry
 from llmwiki.domain.ledger.ledger import ClaimLedger
+from llmwiki.domain.ledger.projection_context import ProjectionContext
+from llmwiki.domain.ledger.projection_context_render import (
+    atom_frame_markdown,
+    evidence_block_line,
+)
 from llmwiki.domain.ledger.renderer import atom_block, atom_context_block
 from llmwiki.domain.ledger.section_navigation import (
     SectionPageRef,
@@ -56,6 +61,7 @@ def build_section_pages(
     source_locator: str,
     today: str,
     topics: tuple[SourceTopic, ...] = (),
+    projection_context: ProjectionContext | None = None,
 ) -> tuple[WikiPage, ...]:
     projections = _section_projections(ledger, structure, source_page_id)
     by_node = {projection.node.structure_node_id: projection.page_ref for projection in projections}
@@ -68,7 +74,7 @@ def build_section_pages(
         related = related_section_links(
             projection.page_ref, structure, by_node, same_topic, topic_page_ids
         )
-        body = _body(ledger, structure, projection, source_page_id, related)
+        body = _body(ledger, structure, projection, source_page_id, related, projection_context)
         metadata = PageMetadata(
             page_id=projection.page_id,
             page_kind="source",
@@ -93,6 +99,7 @@ def _body(
     projection: _SectionProjection,
     source_page_id: str,
     related_links: tuple[RelatedTopicLink, ...],
+    projection_context: ProjectionContext | None,
 ) -> str:
     lines = [f"# {projection.title}", "", f"From [[{source_page_id}]].", ""]
     if related_links:
@@ -103,26 +110,18 @@ def _body(
     direct_claims = _claim_entries(projection.direct_entries)
     if direct_claims:
         lines.extend(("## Statements", ""))
-        _append_claims(lines, direct_claims)
+        _append_claims(lines, direct_claims, projection_context)
         lines.append("")
     grouped = _group_descendant_claims(structure, projection.node, projection.rollup_entries)
     if grouped:
         lines.extend(("## Statements by subsection", ""))
         for node, claims in grouped:
             lines.extend((f"### {section_title(structure, node)}", ""))
-            _append_claims(lines, claims)
+            _append_claims(lines, claims, projection_context)
             lines.append("")
     if projection.atoms:
         lines.extend(("## Technical atoms", ""))
-        for index, atom in enumerate(projection.atoms, start=1):
-            lines.extend((f"### Technical atom {index}", ""))
-            context = best_atom_context(ledger.atom_contexts(atom.technical_atom_id))
-            if context is not None:
-                lines.extend(atom_context_block(context, atom.source_locator).strip().splitlines())
-                lines.append("")
-            rendered = atom_block(atom.technical_atom_kind, atom.payload)
-            citation = f"{atom.source_locator} ({atom.source_range_id})"
-            lines.extend((f"**Atom:** _({citation})_", "", rendered, ""))
+        _append_atoms(lines, ledger, projection.atoms, projection_context)
     return "\n".join(lines).strip() + "\n"
 
 
@@ -160,11 +159,59 @@ def _claim_entries(entries: tuple[LedgerEntry, ...]) -> tuple[LedgerEntry, ...]:
     return tuple(entry for entry in entries if entry.ledger_entry_kind != "technical-atom")
 
 
-def _append_claims(lines: list[str], claims: tuple[LedgerEntry, ...]) -> None:
+def _append_claims(
+    lines: list[str],
+    claims: tuple[LedgerEntry, ...],
+    projection_context: ProjectionContext | None,
+) -> None:
+    rendered: set[str] = set()
+    if projection_context is not None:
+        claim_ids = tuple(entry.ledger_entry_id for entry in claims)
+        for block in projection_context.blocks_for_entries(claim_ids):
+            selected = tuple(entry_id for entry_id in block.entry_ids if entry_id in claim_ids)
+            if not selected:
+                continue
+            lines.append(evidence_block_line(block))
+            rendered.update(selected)
     for entry in claims:
+        if entry.ledger_entry_id in rendered:
+            continue
         text = entry.normalized_text or entry.source_text
         citation = f"{entry.source_locator} ({entry.source_range_id})"
         lines.append(f"- {text.strip()} _({citation})_")
+
+
+def _append_atoms(
+    lines: list[str],
+    ledger: ClaimLedger,
+    atoms: tuple[TechnicalAtom, ...],
+    projection_context: ProjectionContext | None,
+) -> None:
+    rendered: set[str] = set()
+    rendered_frame_count = 0
+    if projection_context is not None:
+        atom_ids = tuple(atom.technical_atom_id for atom in atoms)
+        for index, frame in enumerate(projection_context.frames_for_atoms(atom_ids), start=1):
+            selected = tuple(atom_id for atom_id in frame.atom_ids if atom_id in atom_ids)
+            if not selected:
+                continue
+            lines.extend(atom_frame_markdown(frame, ledger, projection_context, index).splitlines())
+            lines.append("")
+            rendered_frame_count = index
+            rendered.update(selected)
+    next_index = rendered_frame_count + 1
+    for atom in atoms:
+        if atom.technical_atom_id in rendered:
+            continue
+        lines.extend((f"### Technical atom {next_index}", ""))
+        next_index += 1
+        context = best_atom_context(ledger.atom_contexts(atom.technical_atom_id))
+        if context is not None:
+            lines.extend(atom_context_block(context, atom.source_locator).strip().splitlines())
+            lines.append("")
+        rendered_block = atom_block(atom.technical_atom_kind, atom.payload)
+        citation = f"{atom.source_locator} ({atom.source_range_id})"
+        lines.extend((f"**Atom:** _({citation})_", "", rendered_block, ""))
 
 
 def _group_descendant_claims(

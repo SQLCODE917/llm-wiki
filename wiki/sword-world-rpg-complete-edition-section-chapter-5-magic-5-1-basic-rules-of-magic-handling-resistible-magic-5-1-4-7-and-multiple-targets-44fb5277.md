@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic / Handling Resistible Magic 5.1.4.7 and Multiple Targets: 1 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-handling-resistible-magic-5-1-4-7-and-multiple-targets-44fb5277@d74dd8dc5e3975327a2e959f812a7dda
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-handling-resistible-magic-5-1-4-7-and-multiple-targets-44fb5277@2c6f76ce960ae51743cc1d476356d6ef
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic / Handling Resistible Magic 5.1.4.7 and Multiple Targets
@@ -24,7 +24,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -51,7 +51,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+
+> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00439))_
 

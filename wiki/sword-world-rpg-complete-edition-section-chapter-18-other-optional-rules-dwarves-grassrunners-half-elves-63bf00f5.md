@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / Dwarves, Grassrunners, Half-Elves: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-dwarves-grassrunners-half-elves-63bf00f5@ffe13ac53df2baf303571776c0732e6c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-dwarves-grassrunners-half-elves-63bf00f5@5aa002f12a57daed41f44a822dcb43e9
 ---
 
 # Chapter 18: Other Optional Rules / Dwarves, Grassrunners, Half-Elves
@@ -20,15 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- Aging begins at the age of 100. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07415))_
+- Aging begins at the age of 100. Divide the age by half and apply it to the human table. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07415))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 18: Other Optional Rules / Elves
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07409))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07413))_
 
-> After reaching adulthood (ability scores decrease after the age of 50), please modify as follows.
+> Aging is not considered.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07412))_
 

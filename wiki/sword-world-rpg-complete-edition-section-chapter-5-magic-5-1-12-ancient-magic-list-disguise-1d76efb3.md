@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient
 page_kind: source
 summary: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Disguise ]: 5 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-disguise-1d76efb3@b6346f0582d7a0154b94cfab00bbbb05
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-12-ancient-magic-list-disguise-1d76efb3@95ab4006d7940969a2bb36a1b31bbdeb
 ---
 
 # Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Disguise ]
@@ -20,29 +20,20 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- However, this spell cannot significantly change the size or shape of your body. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01626))_
-- This spell is a type of illusion magic that works on the caster, changing their appearance into something else. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01626))_
+- This spell is a type of illusion magic that works on the caster, changing their appearance into something else. However, this spell cannot significantly change the size or shape of your body. So a thin person cannot become an obese person, and a human cannot look like a grassrunner or a dwarf. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01626))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.12 Ancient Magic List / [ Disguise ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01620))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01626))_
 
-> By casting this spell, the caster can learn of the presence of anything that has aggressive intentions towards them. Aggressive intentions in this case refers to a desire to deal physical or mental damage to the caster, so cases such as simply wanting to steal the caster's money will not be detected. However, if the theft is committed in order to cause problems for someone, you will be able to sense that intention.
+> This spell is a type of illusion magic that works on the caster, changing their appearance into something else. However, this spell cannot significantly change the size or shape of your body. So a thin person cannot become an obese person, and a human cannot look like a grassrunner or a dwarf.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01623))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01623, source-range-870a16bc-01624, source-range-870a16bc-01625))_
 
 > Base Mental Power Cost=6
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01624))_
-
 > Distance=Caster
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01625))_
 
 > Area=Caster Duration=1 hour Effect=Change the caster’s appearance Type=Illusion Expansion=Final score, duration Resist=Negated effect

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-weapons-and-armor-that-are-too
 page_kind: source
 summary: Weapons and Armor That Are Too Heavy: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-weapons-and-armor-that-are-too-heavy-b4ef4cd8@b51faee88a1a236aa3e96150848480ba
+projection_coverage: section-sword-world-rpg-complete-edition-section-weapons-and-armor-that-are-too-heavy-b4ef4cd8@e7dd2947c32aa30c892f3e4b5c02e788
 ---
 
 # Weapons and Armor That Are Too Heavy
@@ -20,7 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Weapons and Armor That Are Too Heavy
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07259))_
 

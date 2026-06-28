@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-
 page_kind: source
 summary: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Weapon Modifiers: 2 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-weapon-modifiers-d179cd8c@451c0cd25726e398104365aa35c3401a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-16-optional-rules-for-combat-16-2-weapon-and-armor-modifiers-weapon-modifiers-d179cd8c@c53b2e6b60ea8b8dea97e993d4b41124
 ---
 
 # Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Weapon Modifiers
@@ -24,17 +24,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Weapon Modifiers
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07080, source-range-870a16bc-07083))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07083))_
 
-> In the basic rules, we did not consider the finer differences based on the shape of weapons and armor, but even though the required strength is the same, swords, axes, spears, and hammers differ in ease of use and power. This rule quantifies the finer differences between weapons and armor. The terms used on this table are explained below.
+> The terms used on this table are explained below.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07082))_
 
 > Here is a table of weapons commonly used by adventurers (" _Table 16-1 Weapon Optional Rules_ ").
 
-### Technical atom 2
+### Technical frame 2: Chapter 16: Optional Rules for Combat / 16.2 Weapon and Armor Modifiers / Table 16-1 Weapon Optional Rules
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07094))_
+
+> ***The lance itself has a +5 strike power modifier, +10 during a charge, and +2 damage itself
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07089))_
 

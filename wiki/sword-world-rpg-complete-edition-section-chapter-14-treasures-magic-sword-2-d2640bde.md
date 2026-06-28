@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-swo
 page_kind: source
 summary: Chapter 14: Treasures / 《 Magic Sword (+2) 》: 7 source-backed entries and 8 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-sword-2-d2640bde@6a90a47a7b44c6fdbae8f748104cc73f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-sword-2-d2640bde@90077be73b2ea3b8f0608163b01a66ae
 ---
 
 # Chapter 14: Treasures / 《 Magic Sword (+2) 》
@@ -27,7 +27,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -74,41 +74,25 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
-> Rather than having these appear as _+1 swords_ , it might be better to refer to the descriptions of some of the following magical weapons and give each one a name and a history, as a way to enjoy the atmosphere of Alecrast. Here, as a guideline for rewards the game master should give to characters, is a list of prices of magical daggers, one-handed swords, and two-handed swords with +1 power.
+> Here’s a list of prices of magical daggers, one-handed swords, and twohanded swords with +2 power.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06428))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06428, source-range-870a16bc-06429, source-range-870a16bc-06430, source-range-870a16bc-06431, source-range-870a16bc-06432))_
 
 > Rarity=14
 
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06429))_
-
 > Enchanter=Many
-
-### Technical atom 4
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06430))_
 
 > Form=A dagger, a one-handed sword, or a two-handed sword
 
-### Technical atom 5
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06431))_
-
 > Required Strength/Base Trade Price=See description
-
-### Technical atom 6
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06432))_
 
 > Powers=+2 to attack power and bonus damage
 
-### Technical atom 7
+### Technical frame 3: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -155,7 +139,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 4: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 

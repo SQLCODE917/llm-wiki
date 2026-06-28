@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-mo
 page_kind: source
 summary: Chapter 3: Combat Rounds / 3.4 Movement and Actions: 19 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-movement-and-actions-8ad896cf@262b8502c4b937477f4b5e6514d06004
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-3-combat-rounds-3-4-movement-and-actions-8ad896cf@4f11fba1a63dda78c591a0ada324c71c
 ---
 
 # Chapter 3: Combat Rounds / 3.4 Movement and Actions
@@ -41,37 +41,35 @@ From [[sword-world-rpg-complete-edition]].
 
 ### Chapter 3: Combat Rounds / 3.4 Movement and Actions / Pick a Weapon Up off the Ground and Ready It
 
-- However, that weapon _cannot_ be used to attack this round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_
+- If a weapon or shield has fallen on the ground, you can pick it up and ready it. However, that weapon _cannot_ be used to attack this round. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_
 
 ### Chapter 3: Combat Rounds / 3.4 Movement and Actions / Handed Weapon
 
-- For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
-- Only _one_ can be switched out. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
+- Return a weapon in your hand to its sheath, etc. and ready a _different_ weapon. Only _one_ can be switched out. For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 - For example, if you have a sword and a shield, you _cannot_ return them both and ready a different weapon. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 - Only _one_ can be switched out. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 
 ### Chapter 3: Combat Rounds / 3.4 Movement and Actions / Ready a Weapon and Attack
 
-- However, bows and other projectiles _cannot_ be used to attack while moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00776))_
-- that you’re wearing and use it to attack immediately. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00776))_
+- Take a weapon out of a sheath, etc. that you’re wearing and use it to attack immediately. However, bows and other projectiles _cannot_ be used to attack while moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00776))_
 
 ### Chapter 3: Combat Rounds / 3.4 Movement and Actions / Hands and Attack
 
-- This action may be effective if you have a weapon that can be used with one or both hands. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00779))_
+- Switch a weapon you’re using with only one hand to _both_ hands and attack. This action may be effective if you have a weapon that can be used with one or both hands. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00779))_
 
 ### Chapter 3: Combat Rounds / 3.4 Movement and Actions / Weapon
 
-- However, bows and other projectiles cannot be used to attack while moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00783))_
+- If you already have a weapon ready, you can of course attack with that weapon. However, bows and other projectiles cannot be used to attack while moving. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00783))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Pick a Weapon Up off the Ground and Ready It
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00770))_
 
 > If a weapon or shield has fallen on the ground, you can pick it up and ready it.
 
-### Technical atom 2
+### Technical frame 2: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Handed Weapon
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00773))_
 
@@ -81,7 +79,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > If you do have a sword and a shield, you can drop _one_ of them on the ground, return the _other_ one, then ready a different weapon.
 
-### Technical atom 3
+### Technical frame 3: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Hands and Attack
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00779))_
 
@@ -91,7 +89,7 @@ From [[sword-world-rpg-complete-edition]].
 
 > If you’re holding a weapon in one hand and a shield in the other, and that weapon can be used with both hands, you can drop the shield on the ground and attack with both hands, since it's as if you were holding the weapon in only one hand from the beginning.
 
-### Technical atom 4
+### Technical frame 4: Chapter 3: Combat Rounds / 3.4 Movement and Actions / Weapon
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00783))_
 

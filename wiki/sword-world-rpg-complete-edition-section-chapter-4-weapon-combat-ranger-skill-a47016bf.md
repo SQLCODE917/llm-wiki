@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-ranger
 page_kind: source
 summary: Chapter 4: Weapon Combat / 【 Ranger Skill 】: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-ranger-skill-a47016bf@9cae8137b4d33f58ea0fd64250044f5c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-ranger-skill-a47016bf@7bac85559d25a36d509d98e74e7aa9de
 ---
 
 # Chapter 4: Weapon Combat / 【 Ranger Skill 】
@@ -22,13 +22,16 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- There is no ability to attack with melee weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
-- 21) - can they fight as well as a fighter when attacking. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
+- The ranger skill is proficient with projectiles, and _only_ when using a weapon that is designated as such– _throwable_ , _made for throwing_ , or _shooting_ on Table 1-8: Weapons (see p. 21) - can they fight as well as a fighter when attacking. There is no ability to attack with melee weapons. Weapons that can be used for both melee _and_ throwing, as indicated by _throwable_ on the Weapons table, are useful _only_ when used for throwing, _not_ for melee. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
 - The ranger skill cannot be used for defense. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00816))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / [ Ranger ]
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00440))_
+
+> If you want to make use of your ranger skill, your _armor_ must be _light_ . Specifically, it is armor that requires up to _half of your strength (rounded up)_ . For armor, _metal armor other than ring mail_ may _not_ be used, regardless of the character's strength or required strength. Choose non-metal armor or ring mail.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00439))_
 
@@ -49,11 +52,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 4: Weapon Combat / 【 Ranger Skill 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00813))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00816))_
 
-> weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use.
+> The ranger skill cannot be used for defense.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
 

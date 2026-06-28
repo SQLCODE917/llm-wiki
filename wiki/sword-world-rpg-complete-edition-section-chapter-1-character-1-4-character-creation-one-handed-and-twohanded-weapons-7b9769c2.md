@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons: 9 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-one-handed-and-twohanded-weapons-7b9769c2@08c0fd3e1256516847c0043b9c269dd9
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-one-handed-and-twohanded-weapons-7b9769c2@e63a7e56d36b0cc8a448b465a612bea0
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
@@ -20,40 +20,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A two-handed weapon will deal more damage to an opponent than a onehanded weapon of the same required strength. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00417))_
-- To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+- A two-handed weapon will deal more damage to an opponent than a onehanded weapon of the same required strength. Of course, if you have a twohanded weapon, you cannot hold a shield, which will make your character less capable of defense. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00417))_
+- To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+- weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 - 1~2H means the weapon can be wielded with one _or_ both hands. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
-- 1~2H means the weapon can be wielded with one _or_ both hands. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
-- _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
-- Note that these cannot be used in melee. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00414))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
 
-> Basically, the most suitable weapon is one whose _required strength equals the character's strength_ . As long as you choose that, you are guaranteed the same attack capability, even if you use a different type of weapon. Think of a sword, ax, or spear with a required strength of 14 as the same in terms of game value. Therefore, it’s a good idea to choose one based on the image of your character.
+> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00417))_
 
 > Of course, if you have a twohanded weapon, you cannot hold a shield, which will make your character less capable of defense.
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
-> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+> weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00419))_
 
 > **Table 1-8: Weapons-2**
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / One-Handed and TwoHanded Weapons
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00418))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00421))_
 
-> To determine whether a weapon is one-handed or two-handed, see the usage column on Table 1-8: Weapons. 1H stands for _one-handed_ . 2H stands for _two-handed_ . 1~2H means the weapon can be wielded with one _or_ both hands.
+> weapons. Note that these cannot be used in melee. _Throwable_ weapons are basically used in melee, although they can be thrown when the need arises.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00420))_
 

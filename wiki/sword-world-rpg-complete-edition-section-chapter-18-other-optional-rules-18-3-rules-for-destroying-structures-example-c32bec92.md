@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-18-other-optional-rule
 page_kind: source
 summary: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:: 30 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-example-c32bec92@1d5d08e80e826761f0adddbd60b93a07
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-18-other-optional-rules-18-3-rules-for-destroying-structures-example-c32bec92@1068a6ae464e167751443c61897b7ff1
 ---
 
 # Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
@@ -20,34 +20,27 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07436))_
+- Consider trying to destroy a wooden wall (!) that’s 20 cm thick. The game master considers this to have maximum strength for a wooden wall, and sets its _defense points_ and _destruction points_ to their maximums of _7_ and _15_ , respectively (see details below). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07436))_
 - Defense points and destruction points are used in the basic system for destroying structures. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07437))_
-- If a character attacks with a weapon and deals _22 or greater_ points of damage in _one_ blow, this wooden wall will be destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- Once the destruction points reach _5 points_ , they will _no longer_ decrease.) When a character attempts to destroy something with a weapon, magic, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the result is _greater than or equal to_ the _destruction points_ , the structure is _destroyed_ by that blow. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- However, this will _only_ be reduced to the _minimum_ destruction points depending on the material. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the damage is _7 points or less_ , the character's efforts are completely _wasted_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- After the defense points fall to 0, the destruction points will decrease by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- However, the structure itself is _not_ destroyed. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- damage is calculated in the same way as when an attack hits a monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the result is _greater_ than 1 but _less_ than the destruction points, the _defense points_ are _reduced_ by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- If the result is _0 or less_ (when damage is less than or equal to defense points), that means there was _no_ effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- Then, you subtract the defense points from the determined damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
+- If a character attacks with a weapon and deals _22 or greater_ points of damage in _one_ blow, this wooden wall will be destroyed. If the damage is _7 points or less_ , the character's efforts are completely _wasted_ . If the damage is _greater than 8_ but _less than 21 points_ , the defense points will be reduced by _1 point_ (if the defense points become _0_ , the destruction points will start to _decrease_ . Once the destruction points reach _5 points_ , they will _no longer_ decrease.) When a character attempts to destroy something with a weapon, magic, etc. damage is calculated in the same way as when an attack hits a monster. Then, you subtract the defense points from the determined damage. If the result is _greater than or equal to_ the _destruction points_ , the structure is _destroyed_ by that blow. If the result is _greater_ than 1 but _less_ than the destruction points, the _defense points_ are _reduced_ by 1 point. However, the structure itself is _not_ destroyed. If the result is _0 or less_ (when damage is less than or equal to defense points), that means there was _no_ effect at all. After the defense points fall to 0, the destruction points will decrease by 1 point. However, this will _only_ be reduced to the _minimum_ destruction points depending on the material. If you cannot deal more _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
+- **Complete Immunity, No Criticals, Normal, Ignore Defense Points** When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. This is expressed by what's given here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
+- If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+- Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+- Beyond this, game masters should also use common sense. There's no mention of entangling weapons, but there's no way they can do any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07447))_
+- _Crack_ is classified as earthquaketype, but given the way the magic is applied, it’s unlikely that it’ll be effective. Also, most walls don't move, so _Blade Net_ won't deal any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07448))_
 - After the defense points fall to 0, the destruction points will decrease by 1 point. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
 - If the result is _0 or less_ (when damage is less than or equal to defense points), that means there was _no_ effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
 - Then, you subtract the defense points from the determined damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07438))_
-- This is expressed by what's given here. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
-- **Complete Immunity, No Criticals, Normal, Ignore Defense Points** When it comes to destroying structures, some weapons and magic are completely unsuitable, while conversely, others are extremely effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07439))_
-- Therefore, sometimes destruction is hopeless. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 - Therefore, sometimes destruction is hopeless. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 - Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
-- Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
-- There's no mention of entangling weapons, but there's no way they can do any damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07447))_
-- _Crack_ is classified as earthquaketype, but given the way the magic is applied, it’s unlikely that it’ll be effective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07448))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -76,11 +69,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -103,7 +96,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -140,7 +137,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -185,7 +182,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -226,7 +227,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -267,7 +272,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -305,11 +310,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -345,7 +350,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -377,7 +386,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -414,13 +427,21 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07440))_
 
 > **Table 18-2 Types of Mag**
 
-### Technical atom 12
+### Technical frame 12: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 
@@ -455,7 +476,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 
@@ -465,23 +486,31 @@ From [[sword-world-rpg-complete-edition]].
 
 > If it says **complete immunity** , it can _never_ be destroyed by that weapon or magic.
 
-### Technical atom 14
+### Technical frame 14: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+
+> Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
 
 > If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ .
 
-### Technical atom 15
+### Technical frame 15: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+
+> Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07445))_
 
 > If it says **ignores defense points** , the defense points are _not_ taken into consideration, and if the damage _exceeds_ the destruction points, it’ll be _destroyed in one blow_ .
 
-### Technical atom 16
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07446))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07448))_
 
-> Otherwise, such attacks reduce defense points by 1 point (unless you roll _double ones_ on a strike roll).
+> _Crack_ is classified as earthquaketype, but given the way the magic is applied, it’s unlikely that it’ll be effective. Also, most walls don't move, so _Blade Net_ won't deal any damage.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07447))_
 

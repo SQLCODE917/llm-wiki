@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-arm
 page_kind: source
 summary: Chapter 14: Treasures / 《 Magic Armor (+2) 》: 4 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-2-3f34f093@3b5952a8a7ffabe26d557cb10c8ccdc7
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-14-treasures-magic-armor-2-3f34f093@a7ce490da9d81dc3baf3c415b69289f9
 ---
 
 # Chapter 14: Treasures / 《 Magic Armor (+2) 》
@@ -30,19 +30,19 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06582))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
+
+> Here is a list of prices of magical metal armor with +2 power.
+
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06582, source-range-870a16bc-06583))_
 
 > Enchanter=Many Form=Metal armor
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06583))_
-
 > Required Strength/Base Trade Price=See description Powers=+2 to evasion speed and damage reduction
 
-### Technical atom 3
+### Technical frame 2: Chapter 14: Treasures / 《 Magic Armor (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06584))_
 
@@ -81,7 +81,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 3: Chapter 14: Treasures / 《 Magic Armor (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06596))_
 

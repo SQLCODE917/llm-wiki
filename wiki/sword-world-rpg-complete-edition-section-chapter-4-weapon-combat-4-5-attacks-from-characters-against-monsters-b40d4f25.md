@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-5-at
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters: 5 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-5-attacks-from-characters-against-monsters-b40d4f25@23f5cc2bc03615bb02f2147d9ca9c26e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-5-attacks-from-characters-against-monsters-b40d4f25@14470d657c1530097e6407ed81d2bb9f
 ---
 
 # Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters
@@ -26,21 +26,21 @@ From [[sword-world-rpg-complete-edition]].
 ### Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 - If the base damage dealt by Ducard II is _4, 18_ , or _14_ , respectively, the final damage he could deal to the goblin would be: _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00934))_
-- The attack was prevented by thick skin or hard scales. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00937))_
+- If final damage is _0 or negative_ , it means that _no damage_ was dealt. The attack was prevented by thick skin or hard scales. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00937))_
 
 ### Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
-- Ducard II's critical target is 10. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939))_
+- Ducard II's critical target is 10. Suppose that Ducard `Ⅱ` , having hit the _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00939))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Final Damage
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00932))_
 
 > **final damage** = base damage + bonus damage - monster's defense points
 
-### Technical atom 2
+### Technical frame 2: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00934))_
 

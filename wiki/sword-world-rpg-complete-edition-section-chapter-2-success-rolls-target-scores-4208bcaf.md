@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-2-success-rolls-target
 page_kind: source
 summary: Chapter 2: Success Rolls / Target Scores: 0 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-target-scores-4208bcaf@a363d63c463d5f5fed398494732c6c9f
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-2-success-rolls-target-scores-4208bcaf@e23a19b3b6bf606df8c14ead65810fc5
 ---
 
 # Chapter 2: Success Rolls / Target Scores
@@ -22,11 +22,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03378))_
-
-> A check must be made every 10 meters. If you fail on the way, add _2D-2_ meters to the _height you climbed_ and _height you descended_ up to that point to determine the final height you climbed and descended. This is then treated as if you fell from the height you climbed or the height remaining on the way up. If the result of adding 2D-2 meters is greater than or equal to the distance required for the climb, consider the climb a success. If you fall, please refer to Falling Damage below to dete
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Table 6-2: Determining Climb Target Scores
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03380))_
 
@@ -67,11 +63,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 9: Notes on Success Rolls / Setting Target Scores and Difficulties
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03600))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03601))_
 
-> To determine a target score or difficulty, please follow Table 9-1: Determining Target Scores or Difficulties.
+> This table is written in a somewhat abstract format to accommodate all success rolls. As a game master, don't think too much about it, trust your own judgment and intuition when deciding on the target score or difficulty. It's not a good idea in an RPG to worry about situations like this and stall the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03603))_
 

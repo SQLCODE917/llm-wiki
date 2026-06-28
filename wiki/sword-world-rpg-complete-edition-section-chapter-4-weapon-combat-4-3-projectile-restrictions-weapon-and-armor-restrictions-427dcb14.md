@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-3-pr
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.3 Projectile Restrictions / Weapon and Armor Restrictions: 0 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-3-projectile-restrictions-weapon-and-armor-restrictions-427dcb14@20f13846328a7e86916da62f8464db14
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-3-projectile-restrictions-weapon-and-armor-restrictions-427dcb14@466c8b89ad6d407f751d5423207a965f
 ---
 
 # Chapter 4: Weapon Combat / 4.3 Projectile Restrictions / Weapon and Armor Restrictions
@@ -16,7 +16,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 

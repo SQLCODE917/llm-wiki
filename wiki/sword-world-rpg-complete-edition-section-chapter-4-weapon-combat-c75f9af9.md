@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-c75f9a
 page_kind: source
 summary: Chapter 4: Weapon Combat: 4 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-c75f9af9@5c4ece1751a0580ebdbe639f8f514b12
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-c75f9af9@69d4178e9bfd5f5544c40ce42da3050e
 ---
 
 # Chapter 4: Weapon Combat
@@ -21,12 +21,16 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - If you suffer damage and your life force (points) is reduced, then suffer more damage, your life force (points) will be further reduced from there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01033))_
+- Damage reduces a character's life force (or a monster's life points). This reduction is temporary and can be recovered naturally or by magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01034))_
 - If you suffer damage and your life force (points) is reduced, then suffer more damage, your life force (points) will be further reduced from there. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01033))_
-- This reduction is temporary and can be recovered naturally or by magic. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01034))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -63,7 +67,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 4: Weapon Combat
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01034))_
+
+> Damage reduces a character's life force (or a monster's life points). This reduction is temporary and can be recovered naturally or by magic.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01035))_
 

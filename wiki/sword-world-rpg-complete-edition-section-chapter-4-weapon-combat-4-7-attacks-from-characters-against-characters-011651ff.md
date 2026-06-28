@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-7-at
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters: 37 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-7-attacks-from-characters-against-characters-011651ff@45a55aaddcc187791bc6d6c892e6ae9b
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-7-attacks-from-characters-against-characters-011651ff@4c5044075bc9cc73b55ef1ba0be4a916
 ---
 
 # Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters
@@ -22,51 +22,42 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- While infighting between player characters is something you should avoid at all costs, fights against _nonplayer characters_ are common. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00993))_
+- While infighting between player characters is something you should avoid at all costs, fights against _nonplayer characters_ are common. Sometimes, especially when the mastermind behind an incident is a dark priest, you'll have to fight against someone whose data was created for a character. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00993))_
 
 ## Statements by subsection
 
 ### Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Hit Checks
 
-- The attacker adds their roll to their _attack power_ , and the defender adds their roll to their _evasion speed_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00997))_
-- If there is a tie or the defender's is greater, the attack _fails_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00999))_
+- To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their _attack power_ , and the defender adds their roll to their _evasion speed_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00997))_
+- If the attacker's final score exceeds that of the defender, the attack _hits_ . If there is a tie or the defender's is greater, the attack _fails_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00999))_
 
 ### Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
-- Ducard II has higher agility, so he attacks first. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01002))_
-- Ducard II 's attack power is _4_ , while Bucky's evasion speed is _5_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01002))_
-- In combat between characters, a tie is considered an attack failure. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01004))_
-- Ducard II 's attack was narrowly dodged. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01004))_
+- Ducard II suddenly found himself in a dispute with another adventurer, Bucky. Ducard II has higher agility, so he attacks first. Ducard II 's attack power is _4_ , while Bucky's evasion speed is _5_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01002))_
+- In combat between characters, a tie is considered an attack failure. Ducard II 's attack was narrowly dodged. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01004))_
 
 ### Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones
 
 - If a roll comes up _double sixes_ or _double ones_ during combat between characters, the situation is resolved as follows: _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01006))_
-- If the attacker's roll is _double ones_ , the attack _fails_ without question. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01007))_
-- If the attacker's roll is _double sixes_ , it’s basically an automatic hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
-- However, if the defender's roll is _also_ double sixes, the attack _fails_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
-- However, if the attacker's roll is _also_ double ones, the attack _fails_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01009))_
-- If the defender's roll is _double ones_ , it’s basically an automatic hit. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01009))_
-- It doesn’t matter even if the attacker rolls double sixes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
-- If the defender's roll is _double sixes_ , the attack will _always_ fail. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
+- If the attacker's roll is _double ones_ , the attack _fails_ without question. The defender doesn’t even have to roll the dice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01007))_
+- If the attacker's roll is _double sixes_ , it’s basically an automatic hit. However, if the defender's roll is _also_ double sixes, the attack _fails_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
+- If the defender's roll is _double ones_ , it’s basically an automatic hit. However, if the attacker's roll is _also_ double ones, the attack _fails_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01009))_
+- If the defender's roll is _double sixes_ , the attack will _always_ fail. It doesn’t matter even if the attacker rolls double sixes. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
 
 ### Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Damage Checks
 
-- This procedure is exactly the _same_ for characters as it was during combat with monsters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01014))_
+- If your attack hits, you must then determine damage. This procedure is exactly the _same_ for characters as it was during combat with monsters. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01014))_
 - The difference is the damage dealt to the defender. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01017))_
 
 ### Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
-- Bucky is wielding a battle-ax (required strength 15) with both hands, so he has a strike power of _20_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
-- His following 2D roll is _9_ (base damage _7_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
-- His bonus damage is _5_ (fighter skill level 3, strength bonus +2), which brings the total amount of damage to 9+7+5= **21** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
-- The result of his strike roll is _11_ (base damage _9_ ). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
-- After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
-- His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
+- Bucky then determines the damage he deals. Bucky is wielding a battle-ax (required strength 15) with both hands, so he has a strike power of _20_ . The result of his strike roll is _11_ (base damage _9_ ). That's a _critical_ . His following 2D roll is _9_ (base damage _7_ ). His bonus damage is _5_ (fighter skill level 3, strength bonus +2), which brings the total amount of damage to 9+7+5= **21** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01020))_
+- Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 - After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -111,7 +102,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -152,7 +147,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -193,53 +192,45 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00993))_
 
 > Sometimes, especially when the mastermind behind an incident is a dark priest, you'll have to fight against someone whose data was created for a character.
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Hit Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00994))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00999))_
 
-> In a fight between these characters, proceed as follows:
+> If the attacker's final score exceeds that of the defender, the attack _hits_ . If there is a tie or the defender's is greater, the attack _fails_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00997))_
 
 > To make a hit check, both sides must roll the dice (2D).
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Hit Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00997))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00999))_
 
-> To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their _attack power_ , and the defender adds their roll to their _evasion speed_ .
+> If the attacker's final score exceeds that of the defender, the attack _hits_ . If there is a tie or the defender's is greater, the attack _fails_ .
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00998))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00998, source-range-870a16bc-01000))_
 
 > **attacker's final score** = attack power + 2D **defender's final score** = evasion speed + 2D
 
-### Technical atom 7
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00997))_
-
-> To make a hit check, both sides must roll the dice (2D). The attacker adds their roll to their _attack power_ , and the defender adds their roll to their _evasion speed_ .
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01000))_
-
 > attacker's attack power + 2D > defender's evasion speed +2D → **attack hits** attacker's attack power + 2D ≤ defender's evasion speed +2D → **attack fails**
 
-### Technical atom 8
+### Technical frame 7: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01006))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01008))_
 
-> If a roll comes up _double sixes_ or _double ones_ during combat between characters, the situation is resolved as follows:
+> If the attacker's roll is _double sixes_ , it’s basically an automatic hit. However, if the defender's roll is _also_ double sixes, the attack _fails_ .
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01007))_
 
 > The defender doesn’t even have to roll the dice.
 
-### Technical atom 9
+### Technical frame 8: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Double Sixes and Double Ones
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01010))_
 
@@ -249,57 +240,49 @@ From [[sword-world-rpg-complete-edition]].
 
 > Please refer to Table 4-4: Attack Checks.
 
-### Technical atom 10
+### Technical frame 9: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Damage Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01016))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01017))_
 
-> The defender must make a defense roll, then add their damage reduction to the result to determine how much damage they reduced.
+> The difference is the damage dealt to the defender.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01014))_
 
 > If your attack hits, you must then determine damage.
 
-### Technical atom 11
+### Technical frame 10: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Damage Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01014, source-range-870a16bc-01016))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01017))_
 
-> If your attack hits, you must then determine damage. This procedure is exactly the _same_ for characters as it was during combat with monsters. The defender must make a defense roll, then add their damage reduction to the result to determine how much damage they reduced.
+> The difference is the damage dealt to the defender.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01015))_
 
 > The attacker must make a strike roll to determine their base damage, then add their bonus damage.
 
-### Technical atom 12
+### Technical frame 11: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Damage Checks
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01015))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01017))_
 
-> The attacker must make a strike roll to determine their base damage, then add their bonus damage.
+> The difference is the damage dealt to the defender.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01016))_
 
 > The defender must make a defense roll, then add their damage reduction to the result to determine how much damage they reduced.
 
-### Technical atom 13
+### Technical frame 12: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
 > Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01022))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01022, source-range-870a16bc-01023))_
 
 > As a result, the damage that Ducard II suffers is 21-5= **16 points** .
 
-### Technical atom 14
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
-
-> Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01023))_
-
 > **Table 4-4: Attack Checks**
 
-### Technical atom 15
+### Technical frame 13: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -337,7 +320,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 16
+### Technical frame 14: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
+
+> Ducard II now determines how much damage his armor prevents. His defense roll result is _7_ , and his armor's defense power is 7, so the damage that’ll be reduced by his armor is _3_ . After adding his damage reduction of _2_ , 3+2= **5 points** is the final amount of damage Ducard II is able to reduce.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01026))_
 

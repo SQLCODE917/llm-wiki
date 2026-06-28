@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / [ ⑤ Ability Bonuses ]: 2 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-ability-bonuses-2c9937bb@9f38f0e9c8b99672624da09c211b243e
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-ability-bonuses-2c9937bb@31e19e55314fd803ce3175a9c464cb84
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / [ ⑤ Ability Bonuses ]
@@ -22,16 +22,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- A bonus is an ability score divided by 6 (rounded down). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
-- Once ability scores have been calculated, the next step is the ability bonuses. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
+- Once ability scores have been calculated, the next step is the ability bonuses. A bonus is an ability score divided by 6 (rounded down). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00501))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.1 Ability Scores / 【 Ability Bonuses 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00177))_
 
-> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the
+> An ability score value is related to the success or failure of an action that an adventurer tries to perform, but in _Sword World RPG_ , success or failure is determined by a **bonus** derived from the ability score, rather than the ability score itself. The result of each ability score divided by 6 (rounded down) will be the bonus for that ability score (Table 1-1: Ability Bonuses). Each of these numbers is referred to as a _dexterity bonus_ , _intelligence bonus_ , etc., using the name of the 
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00179))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills
 page_kind: source
 summary: Chapter 1: Character / 1.3 Skills / Adventurer Level: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills-adventurer-level-03c56e9e@b80b3e32199b6292ec00f712cc1520de
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-3-skills-adventurer-level-03c56e9e@be060d11a7e3b588f373539386a39fe7
 ---
 
 # Chapter 1: Character / 1.3 Skills / Adventurer Level
@@ -22,15 +22,17 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The highest level among the adventurer skills that a character has is called that character's **adventurer level** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
-- In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
-- For example, a character with priest skill level 1, fighter skill level 4 (these are adventurer skills), sailor skill level 5, and fisher skill level 2 (these are general skills) would be at adventurer level **4** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
+- In Sword World RPG, a character's capability as an adventurer is determined by their adventurer skill level. The highest level among the adventurer skills that a character has is called that character's **adventurer level** . For example, a character with priest skill level 1, fighter skill level 4 (these are adventurer skills), sailor skill level 5, and fisher skill level 2 (these are general skills) would be at adventurer level **4** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
 - The highest level among the adventurer skills that a character has is called that character's **adventurer level** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
 - For example, a character with priest skill level 1, fighter skill level 4 (these are adventurer skills), sailor skill level 5, and fisher skill level 2 (these are general skills) would be at adventurer level **4** . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00241))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Monster Level and Adventurer Level
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06182))_
+
+> Of course, combat balance will vary depending on the special abilities of the monsters and the composition of the
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06181))_
 

@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-8-plants-giant-octopus-d7
 page_kind: source
 summary: 13.2.8 Plants / Giant Octopus: 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-8-plants-giant-octopus-d7dd206d@20c3f285dc022405ae6c1d9f3b724544
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-8-plants-giant-octopus-d7dd206d@231fb2894a8eb1bdbd45b8ce820832a5
 ---
 
 # 13.2.8 Plants / Giant Octopus
@@ -21,17 +21,16 @@ From [[sword-world-rpg-complete-edition]].
 ## Statements
 
 - Monster Level=7 Rarity=12 Agility=10 Movement Speed=5/20 (water) Number=One Frequency=Very Rare Intellect=Animal Reaction=Hunger-based Attack Points=Strangle (8 times):16 (9) Strike Points=16 Evasion Points=12 (5) Defense Points=9 Life Points/Resistance=50/21 (14) Mental Points/Resistance=10/14 (7) Special Abilities=Strangling Habitat=Seas _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05541))_
-- The giant octopus is almost legendary, feared by fishermen and sailors as the devil of the sea. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
-- Its tentacles, which are up to 10 meters long, can entangle boats and sink them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
-- If you deal 5 or more points of damage (14 or more points of damage if defense points are taken into account) to a giant octopus with a bladed weapon, you’ll have cut off one of its tentacles, and the octopus’ number of attacks will be reduced by one. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05544))_
+- The giant octopus is almost legendary, feared by fishermen and sailors as the devil of the sea. Its tentacles, which are up to 10 meters long, can entangle boats and sink them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
+- A giant octopus can use each of its eight tentacles to perform a strangling (see p. 236) attack on separate targets. If you deal 5 or more points of damage (14 or more points of damage if defense points are taken into account) to a giant octopus with a bladed weapon, you’ll have cut off one of its tentacles, and the octopus’ number of attacks will be reduced by one. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05544))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: 13.2.8 Plants / Giant Octopus
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05539))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05543))_
 
-> A killer octopus will use all of its tentacles to attack one target, constricting the opponent with its entire body. Please follow the rules for strangling (see p. 236).
+> The giant octopus is almost legendary, feared by fishermen and sailors as the devil of the sea. Its tentacles, which are up to 10 meters long, can entangle boats and sink them.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-05542))_
 

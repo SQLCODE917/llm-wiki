@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-6-s
 page_kind: source
 summary: Chapter 7: General Skills / 7.6 Sailor Skill / [Intelligence] ]: 2 source-backed entries and 0 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-6-sailor-skill-intelligence-ed3ec53a@d068cb3ed1d572669c924f71bc39fa8c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-7-general-skills-7-6-sailor-skill-intelligence-ed3ec53a@e4ed7234c7f84e8753f435f7929a64e3
 ---
 
 # Chapter 7: General Skills / 7.6 Sailor Skill / [Intelligence] ]
@@ -24,5 +24,4 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- As a major premise, large ships (fishing ships, trading ships, battleships, etc.) cannot be operated by one person. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03523))_
-- For these ships, at least _half_ of the crew must have the sailor skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03523))_
+- As a major premise, large ships (fishing ships, trading ships, battleships, etc.) cannot be operated by one person. For these ships, at least _half_ of the crew must have the sailor skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03523))_

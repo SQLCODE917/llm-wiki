@@ -83,6 +83,45 @@ def topic_matcher(terms: tuple[str, ...]) -> re.Pattern[str] | None:
     return re.compile(r"\b(?:" + "|".join(parts) + r")", re.IGNORECASE)
 
 
+def topic_field_matches(
+    text: str,
+    matcher: re.Pattern[str],
+    terms: tuple[str, ...] = (),
+) -> bool:
+    if not text.strip():
+        return False
+    required_terms = required_topic_terms(terms)
+    if len(required_terms) <= 1:
+        return matcher.search(text) is not None
+    return len(matching_topic_terms(text, required_terms)) >= required_topic_hit_count(
+        required_terms
+    )
+
+
+def required_topic_terms(terms: tuple[str, ...]) -> tuple[str, ...]:
+    return tuple(
+        dict.fromkeys(
+            term
+            for term in terms
+            if term and topic_term_role(term) not in ("discourse-container", "structural-container")
+        )
+    )
+
+
+def matching_topic_terms(text: str, terms: tuple[str, ...]) -> tuple[str, ...]:
+    return tuple(
+        term
+        for term in terms
+        if re.search(r"\b" + re.escape(term), text, re.IGNORECASE) is not None
+    )
+
+
+def required_topic_hit_count(terms: tuple[str, ...]) -> int:
+    if len(terms) <= 1:
+        return len(terms)
+    return max(2, (len(terms) * 3 + 4) // 5)
+
+
 def topic_term_role(term: str) -> TopicTermRole:
     lowered = singular(term.lower())
     if lowered in _DISCOURSE_CONTAINER_TERMS:

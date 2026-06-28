@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-16-basic-h
 page_kind: source
 summary: Chapter 5: Magic / 5.1.16 Basic Holy Magic List / [ Exorcism ]: 3 source-backed entries and 3 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-16-basic-holy-magic-list-exorcism-aa4ee0f5@326c4b315c94cc9b14242544e44181a8
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-16-basic-holy-magic-list-exorcism-aa4ee0f5@2e900bb083884108de3c9ff0cd5e3c5a
 ---
 
 # Chapter 5: Magic / 5.1.16 Basic Holy Magic List / [ Exorcism ]
@@ -20,24 +20,12 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 5: Magic / 5.1.16 Basic Holy Magic List / [ Exorcism ]
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02824))_
-
-> This spell negates all magic except for _non-removable_ . It's especially often used for spells with curse effects, such as _Curse_ and _Geas_ . However, you can only attempt to remove one spell's effect _once_ . If the attempt fails, the caster cannot try again until their magic power increases.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02827))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02827, source-range-870a16bc-02828, source-range-870a16bc-02829))_
 
 > Base Mental Power Cost=30
 
-### Technical atom 2
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02828))_
-
 > Distance=10 meters
-
-### Technical atom 3
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-02829))_
 
 > Area=1 haunt

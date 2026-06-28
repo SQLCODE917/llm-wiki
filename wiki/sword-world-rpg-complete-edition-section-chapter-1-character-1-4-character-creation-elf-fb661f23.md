@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / 【 Elf 】: 0 source-backed entries and 4 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-elf-fb661f23@b1667a22541176138def0411588909dc
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-elf-fb661f23@6581e810478c261722b3c538374bcf33
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / 【 Elf 】
@@ -23,11 +23,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00319))_
 
-> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+> Depending on whether a half-elf was raised by humans or elves, the skills they have from the start and the limitations on the skills they can acquire differ.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00318))_
 
@@ -46,7 +46,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
 
@@ -83,11 +83,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
 
-> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00325))_
 
@@ -116,7 +116,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
+
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 

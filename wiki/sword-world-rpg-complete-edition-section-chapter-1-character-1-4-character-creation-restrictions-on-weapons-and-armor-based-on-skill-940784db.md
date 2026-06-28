@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill: 8 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-restrictions-on-weapons-and-armor-based-on-skill-940784db@935e1425c2306eb74ba51e2250c5c5da
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-restrictions-on-weapons-and-armor-based-on-skill-940784db@1ba848d7a31af045ec9dc62cfc729744
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
@@ -20,16 +20,14 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
+- The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. In this case, it wouldn’t make sense to have the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
+- The following are guidelines for purchasing weapons and armor based on which skills a character has. For characters with multiple skills, look at **Table 1-9: Armor** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 - For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
-- In this case, it wouldn’t make sense to have the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
-- For example, if one with the shaman skill wears metal armor, they cannot use spirit magic, which is the primary ability of the shaman skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
 - The general rule is to _choose one whose required strength equals the character's strength_ , but a character may be substantially limited by the skills they have. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00434))_
-- The following are guidelines for purchasing weapons and armor based on which skills a character has. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 
@@ -56,7 +54,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Restrictions on Weapons and Armor Based on Skill
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00435))_
 

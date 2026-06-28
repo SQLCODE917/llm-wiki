@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-cre
 page_kind: source
 summary: 13.2.11 Daemons/Underworld Creatures / Ragnakang: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-ragnakang-6381f8c2@225a378862a02c071a150f4873b06407
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-2-11-daemons-underworld-creatures-ragnakang-6381f8c2@2b85d4a06df7ee27ac088ba941406625
 ---
 
 # 13.2.11 Daemons/Underworld Creatures / Ragnakang
@@ -20,7 +20,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: 13.2.11 Daemons/Underworld Creatures / Ragnakang
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06042))_
 

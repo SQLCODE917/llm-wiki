@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-o
 page_kind: source
 summary: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / (No equipment restriction, not retriable): 5 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-no-equipment-restriction-not-retriable-5a56b246@d29f1c1a475997b633c2c5950d2d8251
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-6-adventurers-skills-other-than-combat-and-magic-no-equipment-restriction-not-retriable-5a56b246@95b41b453e5f6ac38b1c9fe235e4f022
 ---
 
 # Chapter 6: Adventurers’ Skills Other Than Combat And Magic / (No equipment restriction, not retriable)
@@ -26,18 +26,11 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- The game master should determine the target score based on the contents being recalled and the time since you witnessed it. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
-- This is the ability to remember what you witness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
-- A success roll should be made when _recalling_ something, not when _trying to memorize_ something. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
-- Thieves do this habitually all the time. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
+- This is the ability to remember what you witness. For example, even if a book is written in a language you don't know, by using this ability you can memorize the shape of each letter exactly as it is, even if you don't know the meaning, and can write it down later. Thieves do this habitually all the time. A success roll should be made when _recalling_ something, not when _trying to memorize_ something. The game master should determine the target score based on the contents being recalled and the time since you witnessed it. Add a +2 modifier to the success roll when you try to recall something you’ve already specifically tried to consciously memorize. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03158))_
-
-> Each time a character performs such an action, the game master must set a target score and ask for a success roll check.
+### Technical frame 1: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / (No equipment restriction, not retriable)
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03161))_
 

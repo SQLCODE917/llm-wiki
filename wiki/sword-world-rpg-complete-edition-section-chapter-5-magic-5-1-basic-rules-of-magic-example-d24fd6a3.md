@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rule
 page_kind: source
 summary: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:: 8 source-backed entries and 17 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-example-d24fd6a3@af2f6c7656db94c736fb45646620b42a
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-5-magic-5-1-basic-rules-of-magic-example-d24fd6a3@1eca1c5c97339032e817d2ac883dad94
 ---
 
 # Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
@@ -20,12 +20,15 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- In other words, if the 2D roll is _5 or mor_ e, _Fire Bolt_ will take its full effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
-- The baseline score is _4_ (magic power) and the target score is _9_ (goblin's mental point resistance). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
+- In this case, the adventurer (the player controlling them) must make a success roll. The baseline score is _4_ (magic power) and the target score is _9_ (goblin's mental point resistance). In other words, if the 2D roll is _5 or mor_ e, _Fire Bolt_ will take its full effect. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -54,11 +57,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -81,7 +84,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -118,7 +125,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -163,7 +170,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -204,7 +215,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -245,7 +260,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -283,71 +298,59 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 8
+### Technical frame 8: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01204))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
 
-> Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
+> In this case, the adventurer (the player controlling them) must make a success roll. The baseline score is _4_ (magic power) and the target score is _9_ (goblin's mental point resistance). In other words, if the 2D roll is _5 or mor_ e, _Fire Bolt_ will take its full effect.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01205))_
 
 > _Fire Bolt_ is _resistible_ magic, so if it’s _resisted_ by the opponent, its effect will be reduced.
 
-### Technical atom 9
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01204))_
-
-> Consider an adventurer with shaman skill level 2 and a +2 intelligence bonus (magic power 4) who casts the _Fire Bolt_ spell, which shoots a flaming bullet at the opponent, on a goblin (mental point resistance 9).
+### Technical frame 9: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
 
 > In this case, the adventurer (the player controlling them) must make a success roll.
 
-### Technical atom 10
+### Technical frame 10: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01209))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
 
-> Roll of 5 or greater: _Fire Bolt_ takes its full effect.
+> In this case, the adventurer (the player controlling them) must make a success roll. The baseline score is _4_ (magic power) and the target score is _9_ (goblin's mental point resistance). In other words, if the 2D roll is _5 or mor_ e, _Fire Bolt_ will take its full effect.
 
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01210))_
+**Atoms:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01210, source-range-870a16bc-01212))_
 
 > Roll of 3-4: _Fire Bolt_ takes an incomplete effect.
 
-### Technical atom 11
+> magic power + 2D ≥ monster's mental point resistance → **magic takes full effect** magic power + 2D < monster's mental point resistance → **magic takes an incomplete effect (some take no effect at all)** When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01211))_
+### Technical frame 11: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
-> Roll of 2 (double ones): _Fire Bolt_ does not work at all.
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
+
+> In this case, the adventurer (the player controlling them) must make a success roll. The baseline score is _4_ (magic power) and the target score is _9_ (goblin's mental point resistance). In other words, if the 2D roll is _5 or mor_ e, _Fire Bolt_ will take its full effect.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01212))_
 
 > magic power + 2D ≥ monster's mental point resistance → **magic takes full effect** magic power + 2D < monster's mental point resistance → **magic takes an incomplete effect (some take no effect at all)** When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
 
-### Technical atom 12
+### Technical frame 12: Chapter 5: Magic / 5.1 Basic Rules of Magic / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01211))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01206))_
 
-> Roll of 2 (double ones): _Fire Bolt_ does not work at all.
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01212))_
-
-> magic power + 2D ≥ monster's mental point resistance → **magic takes full effect** magic power + 2D < monster's mental point resistance → **magic takes an incomplete effect (some take no effect at all)** When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
-
-### Technical atom 13
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01212))_
-
-> magic power + 2D ≥ monster's mental point resistance → **magic takes full effect** magic power + 2D < monster's mental point resistance → **magic takes an incomplete effect (some take no effect at all)** When the 2D roll is _double sixes_ , the magic will _automatically_ take its _full_ effect.
+> In this case, the adventurer (the player controlling them) must make a success roll. The baseline score is _4_ (magic power) and the target score is _9_ (goblin's mental point resistance). In other words, if the 2D roll is _5 or mor_ e, _Fire Bolt_ will take its full effect.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01213))_
 
 > When the 2D roll is _double ones_ , the magic _unconditionally_ takes _no_ effect at all.
 
-### Technical atom 14
+### Technical frame 13: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -383,7 +386,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical frame 14: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -415,7 +422,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 16
+### Technical frame 15: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -452,7 +463,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 17
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 

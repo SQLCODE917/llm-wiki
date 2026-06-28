@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-1-character-1-4-charac
 page_kind: source
 summary: Chapter 1: Character / 1.4 Character Creation / Example:: 25 source-backed entries and 16 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-example-25674efc@d24d53dce97ae142e3200af3b5f3847c
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-1-character-1-4-character-creation-example-25674efc@ae2d8f55ea323ed2278ed8fb2add9b00
 ---
 
 # Chapter 1: Character / 1.4 Character Creation / Example:
@@ -20,29 +20,28 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- In addition, we can even acquire 2 levels in thief at once (2500-1000-1500= _0_ remaining). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
-- Ducard II has 2500 experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
-- With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
-- With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
+- Ducard II has 2500 experience points. With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). In addition, we can even acquire 2 levels in thief at once (2500-1000-1500= _0_ remaining). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
 - However, the skills that can be acquired or increased are limited to those of adventurer skills, and general skills _cannot_ be acquired or increased. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00392))_
-- However, the skills that can be acquired or increased are limited to those of adventurer skills, and general skills _cannot_ be acquired or increased. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00392))_
-- This leaves us 500 points, which we’ll save for future use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00394))_
-- For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
-- For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
-- When you have the sorcerer skill, there's a few things to be careful of. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
-- You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
-- This skill is closely related to the sage skill and requires fewer experience points when acquiring both. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
-- You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
-- The sage skill is useful enough on its own. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00400))_
-- Of course, having the sage skill does not mean that you're required to have the sorcerer skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00400))_
-- It is important to note that _it is against the rules for a character who has neither the sorcerer nor sage skills to acquire only the sorcerer skill for 1500 points._ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00401))_
+- Here, we'll increase fighter to 2nd level and also acquire 1 level in ranger. This leaves us 500 points, which we’ll save for future use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00394))_
+- Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+- When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
+- If a character has 1 level in the sage skill (so if they're a human or half-elf, and if _merchant/scholar_ or _noble_ was rolled on Table 1-5: Backgrounds), they can acquire 1 level in the sorcerer skill for 1500 points. Of course, having the sage skill does not mean that you're required to have the sorcerer skill. The sage skill is useful enough on its own. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00400))_
 - It is important to note that _it is against the rules for a character who has neither the sorcerer nor sage skills to acquire only the sorcerer skill for 1500 points._ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00401))_
 - Table 1-7: Experience Points by Skill (at Character Creation) is almost identical to a segment of Table 8-1: Experience Points by Skill, which is used for character growth as explained in chapter 8. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00402))_
 - As this shows, the use of starting experience points is exactly the same as the use of experience points during character growth, so it might be a good idea to read the explanation in chapter 8 first. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00403))_
+- With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
+- However, the skills that can be acquired or increased are limited to those of adventurer skills, and general skills _cannot_ be acquired or increased. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00392))_
+- For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+- You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
+- It is important to note that _it is against the rules for a character who has neither the sorcerer nor sage skills to acquire only the sorcerer skill for 1500 points._ _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00401))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -71,41 +70,41 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00391))_
-
-> Ducard II has 2500 experience points. With these, for example, we could acquire 1 level in sorcerer (25002000= _500_ remaining) or increase fighter to 2 levels (2500-1500= _1000_ remaining). In addition, we can even acquire 2 levels in thief at once (2500-1000-1500= _0_ remaining).
-
-**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00393))_
-
-> The experience points required to increase a skill are shown in Table 1-7: Experience Points by Skill (at Character Creation).
-
-### Technical atom 3
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00394))_
 
 > Here, we'll increase fighter to 2nd level and also acquire 1 level in ranger. This leaves us 500 points, which we’ll save for future use.
 
+**Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00393))_
+
+> The experience points required to increase a skill are shown in Table 1-7: Experience Points by Skill (at Character Creation).
+
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
+
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
+
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
 
 > Characters can spend their starting experience points to gain skill levels.
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00396))_
 
 > **Table 1-7: Experience Points by Skill (at Character Creation)**
 
-### Technical atom 5
+### Technical frame 5: Chapter 1: Character / 1.4 Character Creation / Example:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00395))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
-> Characters can spend their starting experience points to gain skill levels. For example, if you want to acquire 1 level in ranger, you can do so by subtracting 500 from your starting experience points.
+> When you have the sorcerer skill, there's a few things to be careful of. This skill is closely related to the sage skill and requires fewer experience points when acquiring both. If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points. You may acquire sorcerer only, but it's better to avoid this, as it will put you at a disadvantage during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00397))_
 
@@ -128,19 +127,31 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
+### Technical frame 6: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00400))_
+
+> If a character has 1 level in the sage skill (so if they're a human or half-elf, and if _merchant/scholar_ or _noble_ was rolled on Table 1-5: Backgrounds), they can acquire 1 level in the sorcerer skill for 1500 points. Of course, having the sage skill does not mean that you're required to have the sorcerer skill. The sage skill is useful enough on its own.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00399))_
 
 > If a character has neither the sorcerer nor sage skill, they can acquire 1 level in both the sorcerer and sage skills by spending 2000 experience points.
 
-### Technical atom 7
+### Technical frame 7: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00401))_
+
+> It is important to note that _it is against the rules for a character who has neither the sorcerer nor sage skills to acquire only the sorcerer skill for 1500 points._
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00400))_
 
 > If a character has 1 level in the sage skill (so if they're a human or half-elf, and if _merchant/scholar_ or _noble_ was rolled on Table 1-5: Backgrounds), they can acquire 1 level in the sorcerer skill for 1500 points.
 
-### Technical atom 8
+### Technical frame 8: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00481))_
+
+> We won’t buy preserved food yet. There’s still no adventure in store for Ducard II.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00485))_
 
@@ -177,7 +188,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
 
@@ -222,7 +233,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00891))_
 
@@ -263,7 +278,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00887))_
+
+> His player rolls the dice to make a hit check. The roll is 8. 4+8= **12** , which is more than 10. The attack hit the target perfectly.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00892))_
 
@@ -304,7 +323,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 12
+### Technical frame 12: Chapter 4: Weapon Combat / 4.7 Attacks From Characters Against Characters / Example:
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-01021))_
 
@@ -342,11 +361,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 13
+### Technical frame 13: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03402))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
 
-> The adventurer has 1 level in the thief skill. Thinking it'd be impossible to jump like this, he takes off his heavy chain mail. This will allow him to utilize his thief skill. The adventurer throws away his luggage and takes on a light outfit with only a short sword strapped to his waist. The target score at this time is 9 + 0 - 2 + 2 + 2 = **11** , taking into account the following conditions: _7 meters wide_ , _no armor_ , _no luggage_ , _insufficient run-up_ , and _danger_ . The baseline sco
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03405))_
 
@@ -382,7 +401,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 14
+### Technical frame 14: Chapter 6: Adventurers’ Skills Other Than Combat And Magic / 6.6 Common Adventurer Abilities / Example 2:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03403))_
+
+> Jumping over obstacles with a high jump does _not_ guarantee a safe landing. Apply damage to an adventurer as if they had fallen from the height he jumped. It usually doesn't cause much damage, and if you're a thief, you'll be able to land it perfectly. However, this can be a problem if the ground you jump over is significantly lower than the ground you took off from.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03407))_
 
@@ -414,7 +437,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 15
+### Technical frame 15: Chapter 8: Character Growth / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03558))_
+
+> For this reason, a character can spend _fewer_ experience points _only_ when acquiring both the sorcerer _and_ sage skills.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-03560))_
 
@@ -451,7 +478,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 16
+### Technical frame 16: Chapter 18: Other Optional Rules / 18.3 Rules for Destroying Structures / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07444))_
+
+> If it says **no criticals** , bonus damage _cannot_ be dealt by a _critical_ . Therefore, sometimes destruction is hopeless.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-07441))_
 

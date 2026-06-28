@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-e2d24e
 page_kind: source
 summary: Chapter 4: Weapon Combat: 13 source-backed entries and 11 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-e2d24e3a@afefb24b11cba24e9c21b5a0f9e25ffd
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-e2d24e3a@751a8d40762f50cde9b547c0eae02d2e
 ---
 
 # Chapter 4: Weapon Combat
@@ -23,36 +23,32 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Statements
 
-- To be good at weapon combat, a character must have skills. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00807))_
+- To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three: _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00807))_
 
 ## Statements by subsection
 
 ### Chapter 4: Weapon Combat / 【 Thief Skill 】
 
-- A thief also has the ability to fight, but only with _light_ equipment. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
-- Metal armor other than ring mail may _not_ be used, even if the required strength (half of strength) is met. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
+- A thief also has the ability to fight, but only with _light_ equipment. Specifically, you can only fight if the weapon or armor you're using requires up to _half (rounded up)_ of your character's strength. As for armor, it’s limited not only by required strength but also by _type_ . Metal armor other than ring mail may _not_ be used, even if the required strength (half of strength) is met. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
 - A thief also has the ability to fight, but only with _light_ equipment. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
 
 ### Chapter 4: Weapon Combat / 【 Fighter Skill 】
 
-- The fighter skill is the most basic skill for weapon combat. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00812))_
-- weapon + shield + armor or two-handed weapon + armor. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00813))_
-- Of course, one-handed weapon + armor, two-handed weapon without armor, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00813))_
-- However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00813))_
+- The fighter skill is the most basic skill for weapon combat. In the following explanation, we will focus on this skill. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00812))_
+- weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00813))_
 
 ### Chapter 4: Weapon Combat / 【 Ranger Skill 】
 
-- There is no ability to attack with melee weapons. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
-- 21) - can they fight as well as a fighter when attacking. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
+- The ranger skill is proficient with projectiles, and _only_ when using a weapon that is designated as such– _throwable_ , _made for throwing_ , or _shooting_ on Table 1-8: Weapons (see p. 21) - can they fight as well as a fighter when attacking. There is no ability to attack with melee weapons. Weapons that can be used for both melee _and_ throwing, as indicated by _throwable_ on the Weapons table, are useful _only_ when used for throwing, _not_ for melee. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
 - The ranger skill cannot be used for defense. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00816))_
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00316))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00319))_
 
-> Table 1-3: Determining Sub-Ability Scores shows how to determine subability scores for each race.
+> Depending on whether a half-elf was raised by humans or elves, the skills they have from the start and the limitations on the skills they can acquire differ.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00318))_
 
@@ -71,7 +67,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 2
+### Technical frame 2: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
 
@@ -108,11 +104,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 3
+### Technical frame 3: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00322))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
 
-> On the table, "D" stands for _dice_ . 1D stands for _one die_ , 2D stands for _two dice_ and 1/2D stands for _half the result of one dice (rounded up)_ . In addition, a notation such as 1D+6 means _to roll one dice and add 6 to the result_ .
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00325))_
 
@@ -141,7 +137,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 4
+### Technical frame 4: Chapter 1: Character / 1.4 Character Creation / 【 Half-Elf 】
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00328))_
+
+> Once ability scores are determined, sub-ability scores are _never_ used during the game.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00327))_
 
@@ -180,7 +180,11 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 5
+### Technical frame 5: Chapter 1: Character / 1.4 Character Creation / Example:
+
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00338))_
+
+> The average for a human is 14 in all ability scores, so other than a slightly higher life force, this character seems to be pretty average.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00337))_
 
@@ -209,27 +213,23 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 6
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00807))_
-
-> To be good at weapon combat, a character must have skills. The skills that can be used for this purpose are limited to the following three:
+### Technical frame 6: Chapter 4: Weapon Combat / 【 Thief Skill 】
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00809))_
 
 > Specifically, you can only fight if the weapon or armor you're using requires up to _half (rounded up)_ of your character's strength.
 
-### Technical atom 7
+### Technical frame 7: Chapter 4: Weapon Combat / 【 Ranger Skill 】
 
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00813))_
+**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00816))_
 
-> weapon + shield + armor or two-handed weapon + armor. Of course, one-handed weapon + armor, two-handed weapon without armor, etc. are also possible, and it is acceptable to carry a spare weapon on your waist or back, as long as it is within the bounds of common sense. However, you may not hold two weapons in both hands or hold a shield in each hand-- it is fine to do so, but a shield in your dominant hand or a weapon in your non-dominant hand is of no use.
+> The ranger skill cannot be used for defense.
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00815))_
 
 > Weapons that can be used for both melee _and_ throwing, as indicated by _throwable_ on the Weapons table, are useful _only_ when used for throwing, _not_ for melee.
 
-### Technical atom 8
+### Technical frame 8: Chapter 14: Treasures / 《 Magic Sword (+1) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06425))_
 
@@ -276,7 +276,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 9
+### Technical frame 9: Chapter 14: Treasures / 《 Magic Sword (+2) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06434))_
 
@@ -323,7 +323,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 10
+### Technical frame 10: Chapter 14: Treasures / 《 Magic Sword (+3) 》
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06442))_
 
@@ -370,7 +370,7 @@ From [[sword-world-rpg-complete-edition]].
 
 </details>
 
-### Technical atom 11
+### Technical frame 11: Chapter 14: Treasures / Non-metal or ring mail
 
 **Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06560))_
 

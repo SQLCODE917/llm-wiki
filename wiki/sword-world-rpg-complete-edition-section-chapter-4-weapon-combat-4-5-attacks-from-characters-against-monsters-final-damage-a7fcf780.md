@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-5-at
 page_kind: source
 summary: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Final Damage: 1 source-backed entries and 1 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-5-attacks-from-characters-against-monsters-final-damage-a7fcf780@04c87167894810f185dac2e3077b9271
+projection_coverage: section-sword-world-rpg-complete-edition-section-chapter-4-weapon-combat-4-5-attacks-from-characters-against-monsters-final-damage-a7fcf780@e2bafb18c4ece8bf9565a908bbda56c3
 ---
 
 # Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Final Damage
@@ -22,7 +22,7 @@ From [[sword-world-rpg-complete-edition]].
 
 ## Technical atoms
 
-### Technical atom 1
+### Technical frame 1: Chapter 4: Weapon Combat / 4.5 Attacks From Characters Against Monsters / Final Damage
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-00932))_
 

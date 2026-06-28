@@ -3,7 +3,7 @@ page_id: sword-world-rpg-complete-edition
 page_kind: source
 summary: Claim-ledger projection (general-prose): 10593 usable entries, 2607 technical atoms, 1135 needs-review, 1744 linked page(s); write decision write-with-review-work.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources
 source_id: Sword World RPG - Complete Edition.pdf

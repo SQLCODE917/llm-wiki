@@ -3,11 +3,11 @@ page_id: sword-world-rpg-complete-edition-section-13-6-handling-monster-special-
 page_kind: source
 summary: 13.6 Handling Monster Special Abilities: 21 source-backed entries and 2 atom(s) from raw/Sword World RPG - Complete Edition.pdf.
 sources: raw/Sword World RPG - Complete Edition.pdf
-updated: 2026-06-27
+updated: 2026-06-28
 domain: sword-world-rpg-complete-edition
 category_path: sources/sword-world-rpg-complete-edition/sections
 source_id: Sword World RPG - Complete Edition.pdf
-projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-7dd8b529@b4b1cd15bfb372dba8f69cf7a33b0149
+projection_coverage: section-sword-world-rpg-complete-edition-section-13-6-handling-monster-special-abilities-7dd8b529@d5469b0ef5316b52f85c39ac63f68043
 ---
 
 # 13.6 Handling Monster Special Abilities
@@ -33,24 +33,21 @@ From [[sword-world-rpg-complete-edition]].
 
 ### 13.6 Handling Monster Special Abilities / 《 Physical Attack Immunity 》
 
-- It's also not affected by poison and illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06258))_
-- Since it has no substance, it has no life points, so any attack methods that deal damage to life points (weapons, damage magic, etc.) are ineffective. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06258))_
+- Since it has no substance, it has no life points, so any attack methods that deal damage to life points (weapons, damage magic, etc.) are ineffective. It's also not affected by poison and illness. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06258))_
 - You cannot touch this kind of monster directly, but it is possible to cast spells with a distance of _touch_ . _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06259))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Weapon Immunity 》
 
-- Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
+- Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. Even in combat between monsters, it’s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Normal Weapon Immunity 》
 
-- In the case of combat between monsters, if a monster can _also_ only be wounded by silver or magical weapons, or has a greater monster level than its opponent, it _can_ deal damage to such a monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06263))_
-- A silver or magical weapon is needed to defeat them. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06263))_
+- A silver or magical weapon is needed to defeat them. Normal weapons, no matter how powerful, cannot deal damage. In the case of combat between monsters, if a monster can _also_ only be wounded by silver or magical weapons, or has a greater monster level than its opponent, it _can_ deal damage to such a monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06263))_
 - In the case of combat between monsters, if a monster can _also_ only be wounded by silver or magical weapons, or has a greater monster level than its opponent, it _can_ deal damage to such a monster. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06263))_
 
 ### 13.6 Handling Monster Special Abilities / Certain Weapons 》
 
-- Attacks with the indicated weapon, no matter how powerful or magical it is, will have no effect at all. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06266))_
-- There are types of weapons that are completely ineffective due to their form, material, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06266))_
+- There are types of weapons that are completely ineffective due to their form, material, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will have no effect at all. Even in combat between monsters, if an opponent monster's attack method is equivalent to an ineffective weapon, it will not deal damage. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06266))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Weapons Cannot Critical 》
 
@@ -58,44 +55,38 @@ From [[sword-world-rpg-complete-edition]].
 
 ### 13.6 Handling Monster Special Abilities / Critical 》
 
-- There are weapons that cannot deliver effective strikes due to their form, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06271))_
-- Attacks with the indicated weapon, no matter how powerful or magical it is, will never cause a critical. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06271))_
+- There are weapons that cannot deliver effective strikes due to their form, etc. Attacks with the indicated weapon, no matter how powerful or magical it is, will never cause a critical. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06271))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Darkness/Invisible 》
 
-- you will not suffer this penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06273))_
-- If you have the ability to see in darkness or through invisibility, etc. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06273))_
+- They’re very difficult to hit with a weapon, because they’re under the cover of darkness, invisible, etc. When attacking such an enemy with a weapon you’ll suffer a -4 penalty to attack power (points). If you have the ability to see in darkness or through invisibility, etc. you will not suffer this penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06273))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Keen Perception/Airborne 》
 
-- They have keen perception and react very well to approaching weapons, etc., or can move quickly through the air. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06275))_
+- They have keen perception and react very well to approaching weapons, etc., or can move quickly through the air. Therefore, they're difficult to hit with a weapon, so when you attack with a weapon, you’ll suffer a -2 penalty to attack power (points). _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06275))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Water Adaptation 》
 
-- 139), but monsters with this ability can act underwater without any penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06277))_
+- Adapted to water. Characters will suffer a penalty according to 10.4: Water Combat (see p. 139), but monsters with this ability can act underwater without any penalty. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06277))_
 - Some monsters with this ability may not be able to go on land at all, or may not be suited for land combat, so they’ll suffer a -4 penalty to attack and evasion. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06278))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Ice Adaptation 》
 
-- Characters suffer a -2 penalty to attack and evasion, even if they’re equipped for ice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06280))_
+- Adapted to ice, and can act on ice fields without penalty. Characters suffer a -2 penalty to attack and evasion, even if they’re equipped for ice. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06280))_
 
 ### 13.6 Handling Monster Special Abilities / 《 Snow Adaptation 》
 
-- Characters suffer a -2 penalty to attack and evasion, even if they’re equipped for snow and cold. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06283))_
+- Adapted to snow, and can act in snow fields without penalty. Characters suffer a -2 penalty to attack and evasion, even if they’re equipped for snow and cold. _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06283))_
 
 ## Technical atoms
 
-### Technical atom 1
-
-**Context:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06261))_
-
-> Attacks with weapons, no matter how powerful they are, or even if they’re magical weapons, will have no effect at all. Even in combat between monsters, it’s not possible for monsters that only have attack methods similar to weapons, such as fangs or claws, etc. to fight against them.
+### Technical frame 1: 13.6 Handling Monster Special Abilities / 《 Normal Weapon Immunity 》
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06263))_
 
 > Normal weapons, no matter how powerful, cannot deal damage.
 
-### Technical atom 2
+### Technical frame 2: 13.6 Handling Monster Special Abilities / Certain Weapons 》
 
 **Atom:** _(Sword World RPG - Complete Edition.pdf (source-range-870a16bc-06266))_
 
